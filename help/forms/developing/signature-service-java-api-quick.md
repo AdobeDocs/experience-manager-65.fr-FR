@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Les opérations AEM Forms JEE peuvent être effectuées à l’aide de l’API f
 
 >[!NOTE]
 >
->Le démarrage rapide de la programmation avec AEM Forms est basé sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides de Programmation avec AEM Forms sont basés sur le serveur Forms Server déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : ajout d’un champ de signature à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
@@ -163,7 +163,7 @@ L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureF
 
 ## Didacticiel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-L’exemple de code Java suivant récupère les noms des champs de signature dans un document de PDF nommé *LoanSig.pdf*. (Consultez la section [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)).
+L’exemple de code Java suivant récupère les noms des champs de signature dans un document PDF nommé *LoanSig.pdf*. (Consultez la section [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)).
 
 ```java
  /*
@@ -907,7 +907,7 @@ L’exemple de code Java suivant certifie un document PDF basé sur un fichier P
 
 ## Didacticiel de mise en route (mode SOAP) : vérification d’une signature numérique à l’aide de l’API Java {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-L’exemple de code Java suivant vérifie une signature numérique contenue dans un document de PDF signé basé sur un fichier de PDF nommé LoanSigned.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification des signatures numériques](#verifying-digital-signatures)).
+L’exemple de code Java suivant vérifie une signature numérique située dans un document PDF basé sur un fichier PDF nommé LoanSigned.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification des signatures numériques](#verifying-digital-signatures)).
 
 ```java
  /*
@@ -1071,7 +1071,7 @@ L’exemple de code Java suivant vérifie une signature numérique contenue dans
 
 ## Didacticiel de mise en route (mode SOAP) : vérification de plusieurs signatures numériques à l’aide de l’API Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-L’exemple de code Java suivant vérifie plusieurs signatures numériques qui se trouvent dans un document de PDF signé basé sur un fichier de PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification de plusieurs signatures numériques](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)).
+L&#39;exemple de code Java suivant vérifie plusieurs signatures numériques contenues dans un document PDF signé basé sur un fichier PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie comme l’heure actuelle et l’option de vérification de révocation est définie comme le meilleur effort. (Consultez la section [Vérification de plusieurs signatures numériques](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)).
 
 ```java
  /*

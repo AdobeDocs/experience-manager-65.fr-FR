@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ La mise en œuvre du tutoriel utilise de nombreuses fonctionnalités puissantes 
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Modèles modifiables](/help/sites-developing/page-templates-editable.md)
 
-Suivez le tutoriel avant de passer en détail aux concepts ci-dessus.
+Suivez le tutoriel avant de voir les concepts ci-dessus en détail.
 
 ## Étapes suivantes {#next-steps}
 

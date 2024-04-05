@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
 workflow-type: tm+mt
 source-wordcount: '3652'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -137,7 +137,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
 1. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
-   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de celle de Microsoft® SQL Server 2019.
+   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019.
 1. Non pris en charge pour AEM Forms.
 
 >[!NOTE]
@@ -185,8 +185,8 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 
 1. Recommandé pour les déploiements avec AEM Forms.
 1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
-1. AEM Forms applicable uniquement :
-   * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de celle de JBoss® EAP 7.4.10.
+1. Applicable à AEM Forms uniquement :
+   * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de la prise en charge de JBoss® EAP 7.4.10.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
@@ -209,7 +209,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 
    >[!NOTE]
    >
-   >Pour les serveurs basés sur Linux (pile OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
+   >Pour les serveurs basés sur Linux (piles OSGI et JEE), le module complémentaire AEM Forms nécessite des dépendances d’exécution telles que :
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -239,7 +239,7 @@ Pour un environnement natif dans le cloud, passez en revue la dernière offre de
 
 Adobe propose également l’utilisation d’Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
 
-Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. En d’autres termes, sauf si le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
+Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. Sauf dans le cas où le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
 
 Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou le partenaire cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
 
@@ -362,11 +362,11 @@ Tout fonctionne sans problème, dans la mesure où aucune configuration particul
 
 Lorsqu’une adresse IP doit être spécifiée, vous pouvez effectuer une sélection (au besoin) parmi les options suivantes :
 
-* Adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`.
+* Une adresse IPv6. Par exemple, `https://[ab12::34c5:6d7:8e90:1234]:4502`.
 
-* Adresse IPv4. Par exemple, `https://123.1.1.4:4502`.
+* Une adresse IPv4. Par exemple, `https://123.1.1.4:4502`.
 
-* Nom du serveur. Par exemple, `https://www.yourserver.com:4502`.
+* Un nom de serveur. Par exemple, `https://www.yourserver.com:4502`.
 
 * le scénario par défaut de `localhost` est interprété pour les installations réseau IPv4 et IPv6. Par exemple, `https://localhost:4502`.
 
@@ -387,7 +387,7 @@ Lorsque Dynamic Media est activé, des exigences techniques supplémentaires so
 Les exigences matérielles suivantes s’appliquent à Linux® et Windows :
 
 * Processeur Intel Xeon® ou AMD® Opteron avec au moins quatre cœurs
-* Au moins 16 Go de RAM
+* 16 Go de RAM minimum
 
 #### Linux® {#linux}
 
@@ -533,8 +533,8 @@ Pour Windows x86 :
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Droits d’administration pour l’installation de Designer
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour la pile OSGI et JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour les piles OSGI et JEE)
 
 [Installation et configuration du concepteur AEM Forms](/help/forms/using/installing-configuring-designer.md)
 
@@ -551,6 +551,6 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Formats de fichier :** JPEG, PNG, TIFF, PDF, INDD, AI et EPS.
 
-### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
+### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® qui contient GLIBC_2.14, par exemple, le noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers de PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

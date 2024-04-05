@@ -5,7 +5,7 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 * Le rail [Référence](/help/sites-authoring/author-environment-tools.md#references) comporte une nouvelle section permettant de répertorier les liens internes pointant vers la page sélectionnée. Cela s’avère utile lorsque vous envisagez de mettre une page hors ligne ou de la supprimer, afin de déterminer les pages à ajuster avant de les mettre hors ligne.
 * La vue [Liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow indiquant le statut de la page dans un workflow.
-* Dans le [propriétés de page](/help/sites-authoring/editing-page-properties.md), il est désormais possible de rechercher des ressources existantes lors de l’attribution d’une miniature à la page (onglet Miniature).
+* Dans les [propriétés de page](/help/sites-authoring/editing-page-properties.md), il est désormais possible de rechercher des ressources existantes lors de l’attribution d’une miniature à la page (onglet Miniature).
 
 #### Éditeur de page {#page-editor}
 
@@ -218,7 +218,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 #### Gestion multisite (MSM, Multi-Site Management) {#multi-site-management-msm}
 
-* Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page afin d’éviter un état incohérent.
+* Pour les configurations de déploiement utilisant PushOnModify : amélioration de la gestion de l’opération de déplacement de page pour éviter les incohérences.
 * La création d’une page dans la structure de Live Copy crée une page autonome par défaut.
 * Utilisez les fonctionnalités MSM dans les applications monopages utilisant le SDK JS (également appelé Editeur de SPA).
 
@@ -308,7 +308,7 @@ Les administrateurs de site peuvent créer un groupe à n’importe quel niveau 
 La fonctionnalité d’activation d’AEM 6.5 Communities prend en charge le moteur de modèle de référence des objets de contenu partageables [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
 * Prise en charge de la navigation au clavier sur les composants d’activation
-* Les composants d’activation (par exemple, Lecture de catalogue et de cours, Affectations, Bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation clavier pour une meilleure accessibilité.
+* Les composants d’activation (par exemple, la lecture de catalogue et de cours, les affectations, la bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation au clavier pour améliorer l’accessibilité.
 
 ##### Autres améliorations {#other-enhancements}
 
@@ -487,7 +487,7 @@ L’interface utilisateur de est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Portugais du Brésil
+* Portugais brésilien
 * Japonais
 * Chinois simplifié
 * Chinois traditionnel (prise en charge limitée)
@@ -507,7 +507,7 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 >[!NOTE]
 >
->Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java™ SE. Java™ 9 et 10 sont des versions non-LTS par Oracle. Voir [Feuille de route du support Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe assure uniquement la prise en charge des versions LTS de Java™ pour n’exécuter AEM qu’en exploitation. La version 11 de Java™ est recommandée pour une utilisation avec AEM 6.5.
+>Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java™ SE. Java™ 9 et 10 sont des versions non-LTS par Oracle. Voir [Feuille de route du support Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe assure uniquement la prise en charge des versions LTS de Java™ pour n’exécuter AEM qu’en exploitation. La version 11 de Java™ est recommandée pour une utilisation avec AEM 6.5.
 
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 

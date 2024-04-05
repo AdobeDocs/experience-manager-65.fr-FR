@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1710'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Pour modifier le planning de publication, procédez comme suit :
 1. Redémarrez l’instance de serveur d’AEM Forms.
 
 1. Arrêtez l’instance du serveur d’AEM Forms.
-1. Connectez-vous à la console d’administration WebSphere®. Dans l’arborescence de navigation, cliquez sur **Serveurs** > **Serveurs d’application** puis, dans le volet de droite, cliquez sur le nom du serveur.
+1. Connectez-vous à la console d’administration WebSphere®. Dans l’arborescence de navigation, cliquez sur **Serveurs** > **Serveurs d’applications**, puis sur le nom du serveur dans le volet de droite.
 
 1. Sous Server Infrastructure, cliquez sur **Java™ and Process Management** > **Process Definition**.
 
@@ -99,7 +99,7 @@ Pour modifier le planning de publication, procédez comme suit :
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ### Service ProcessDataStorage {#processdatastorage-service}
 

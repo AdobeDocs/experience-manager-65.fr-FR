@@ -1,6 +1,6 @@
 ---
 title: Référence sur les étapes de workflow
-description: Reportez-vous à cette référence d’étape pour les workflows dans Adobe Experience Manager.
+description: Reportez-vous à cette référence d’étape pour les workflows dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem

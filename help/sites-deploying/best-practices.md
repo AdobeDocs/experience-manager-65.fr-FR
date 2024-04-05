@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques de déploiement
-description: Découvrez comment déployer et gérer Adobe Experience Manager (AEM) de la manière la plus efficace possible.
+title: Bonnes pratiques de déploiement
+description: Découvrez comment déployer et gérer Adobe Experience Manager (AEM) de la manière la plus efficace possible.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Meilleures pratiques de déploiement{#deploying-best-practices}
+# Bonnes pratiques de déploiement{#deploying-best-practices}
 
-Les bonnes pratiques de déploiement décrivent comment déployer ou gérer Adobe Experience Manager (AEM) de la manière la plus efficace possible. Cette liste croissante de sujets englobe divers domaines d’AEM.
+Les bonnes pratiques de déploiement expliquent comment déployer ou garder à jour AEM de la façon la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 
-Les recommandations et meilleures pratiques de déploiement et de maintenance sont documentées pour les aspects suivants :
+Les recommandations et bonnes pratiques de déploiement et de maintenance sont documentées pour les aspects suivants :
 
 * [Oak](#oak)
 * [Communities](#communities)
@@ -40,12 +40,12 @@ Les documents spécifiques sont décrits et associés dans les tableaux qui suiv
 <table>
  <tbody>
   <tr>
-   <td><p>Évolutivité, performance et reprise sur sinistre</p> </td>
+   <td><p>Évolutivité, performances et reprise après sinistre</p> </td>
    <td><a href="/help/sites-deploying/performance.md">Performance et évolutivité</a></td>
    <td>Livre blanc sur l’agilité technique, les performances élevées et les fonctionnalités fiables de reprise après sinistre.</td>
   </tr>
   <tr>
-   <td>Déploiements Oak recommandés</td>
+   <td>Déploiements OAK recommandés</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Déploiements recommandés</a></td>
    <td>Décrit les scénarios de déploiement</td>
   </tr>
@@ -57,10 +57,10 @@ Les documents spécifiques sont décrits et associés dans les tableaux qui suiv
   <tr>
    <td>Options de magasin de données</td>
    <td><a href="/help/sites-deploying/data-store-config.md">Configuration des entrepôts de nœuds et des magasins de données</a></td>
-   <td>Ce document explique les bonnes pratiques relatives au stockage de données binaires et de nœuds de contenu. Inclut des informations sur l’utilisation de l’entrepôt de données Amazon S3.</td>
+   <td>Ce document explique les bonnes pratiques relatives au stockage de données binaires et de nœuds de contenu. Inclut des informations sur l’utilisation du magasin de données Amazon S3.</td>
   </tr>
   <tr>
-   <td>Recherche dans Oak</td>
+   <td>Rechercher dans OAK</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Bonnes pratiques relatives aux requêtes et à l’indexation</a><br /> </td>
    <td>Décrit les bonnes pratiques relatives à l’indexation du contenu.</td>
   </tr>
@@ -71,7 +71,7 @@ Les documents spécifiques sont décrits et associés dans les tableaux qui suiv
 
 AEM Communities simplifie la création et la gestion des communautés sur site. Les bonnes pratiques pour AEM Communities sont présentées ici :
 
-[Community Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour le choix du sous-jacent [topologie](/help/communities/topologies.md).
+[Magasin de contenu de la communauté](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur ou l’utilisatrice et des considérations à prendre en compte pour le choix de la [topologie](/help/communities/topologies.md) sous-jacente.
 
 [Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Décrit les déploiements recommandés pour les communautés. |
 
@@ -85,14 +85,14 @@ AEM dispose actuellement de deux interfaces utilisateur : l’IU classique et l
 
 ## Performances {#performance}
 
-Les bonnes pratiques relatives aux performances sont répertoriées ici :
+Les bonnes pratiques relatives aux performances sont répertoriées ici :
 
 <table>
  <tbody>
   <tr>
    <td>Bonnes pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Bonnes pratiques pour l’assurance qualité</a></td>
-   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cela intéresse principalement les ingénieurs d’assurance qualité, les chefs de projet et les administrateurs système.</td>
+   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Elles s’adressent principalement aux équipes d’ingénierie en assurance qualité, de gestion de projet et d’administration système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
@@ -102,7 +102,7 @@ Les bonnes pratiques relatives aux performances sont répertoriées ici :
   <tr>
    <td>Optimisation des performances</td>
    <td><a href="/help/sites-deploying/configuring-performance.md">Optimisation des performances</a></td>
-   <td>L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses.</td>
+   <td>L’un des problèmes majeurs est le temps que met votre site Web pour répondre aux requêtes des visiteurs et visiteuses.</td>
   </tr>
   <tr>
    <td>Test de performance</td>

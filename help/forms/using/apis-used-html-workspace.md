@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1059'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -386,7 +386,7 @@ L’espace de travail AEM Forms utilise les API suivantes.
    <td>Elle télécharge une note sur le serveur pour une tâche.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (également appelé directement à partir d’un modèle HTML)<br /> </td>
+   <td>uploadRMAToServer (également appelée directement à partir d’un modèle HTML)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Elle télécharge une pièce jointe sur le serveur pour une tâche.</td>

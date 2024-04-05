@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1077'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Avant de pouvoir importer des informations d’identification par programmation 
 
 **Référencer les informations d’identification**
 
-Référencez les informations d’identification à importer dans AEM Forms. Le démarrage rapide associé à cette section fait référence à un fichier P12 dans le système de fichiers.
+Référencez les informations d’identification à importer dans AEM Forms. Le démarrage rapide correspondant à cette section fait référence à un fichier P12 situé dans le système de fichiers.
 
 **Effectuer lʼopération dʼimportation**
 

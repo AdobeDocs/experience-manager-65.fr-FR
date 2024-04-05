@@ -1,6 +1,6 @@
 ---
 title: Affichage des données supplémentaires dans la liste de tâches
-description: Comment personnaliser l’affichage de la liste des tâches de l’espace de travail AEM Forms LiveCycle pour afficher plus d’informations que la liste par défaut.
+description: Personnalisation de l’affichage de la liste de tâches de l’espace de travail AEM Forms LiveCycle pour afficher plus d’informations que la liste par défaut.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -20,20 +20,20 @@ Par défaut, la liste des tâches de l’espace de travail AEM Forms affiche le 
 
 ![Aperçu de l’onglet Tâches de Workspace HTML affichant la configuration par défaut](assets/html-todo-list.png)
 
-Cet article décrit les étapes à suivre pour ajouter des informations à afficher pour chaque tâche dans la liste Tâches.
+Cet article décrit les étapes à suivre pour ajouter des informations à afficher pour chaque tâche dans la liste de tâches.
 
-## Éléments pouvant être ajoutés {#what-can-be-added}
+## Ajouts possibles {#what-can-be-added}
 
-Vous pouvez ajouter les informations disponibles dans `task.json` envoyées par le serveur. Les informations peuvent être ajoutées en texte brut ou vous pouvez utiliser des styles pour formater les informations.
+Vous pouvez ajouter les informations disponibles dans `task.json` envoyées par le serveur. Les informations peuvent être ajoutées en texte brut ou vous pouvez utiliser des styles pour les mettre en forme.
 
-Pour plus d’informations sur la description de l’objet JSON, voir [this](/help/forms/using/html-workspace-json-object-description.md) article.
+Pour plus d’informations sur la description de l’objet JSON, reportez-vous à [cet](/help/forms/using/html-workspace-json-object-description.md) article.
 
 ## Affichage des informations sur une tâche {#displaying-information-on-a-task}
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
 
-   Par exemple, modifiez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
+   Par exemple, modifiez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
    ```json
    "task" : {
@@ -109,7 +109,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [this](/he
    >
    >Ajoutez les paires clé-valeur correspondantes pour toutes les langues prises en charge.
 
-1. Par exemple, ajoutez des informations dans le bloc de tâche :
+1. Par exemple, ajoutez des informations dans le bloc de tâche :
 
    ```json
    "stepname" : {
@@ -118,11 +118,11 @@ Pour plus d’informations sur la description de l’objet JSON, voir [this](/he
    }
    ```
 
-## Définition de CSS pour la nouvelle propriété {#defining-css-for-the-new-property}
+## Définition de la feuille CSS de la nouvelle propriété {#defining-css-for-the-new-property}
 
 1. Vous pouvez appliquer un style aux informations (propriété) ajoutées à une tâche. Pour ce faire, vous devez ajouter des informations de style pour la nouvelle propriété ajoutée à `/apps/ws/css/newStyle.css`.
 
-   Par exemple, ajoutez :
+   Par exemple, ajoutez :
 
    ```css
    .task .taskProperties .stepname{
@@ -132,9 +132,9 @@ Pour plus d’informations sur la description de l’objet JSON, voir [this](/he
    }
    ```
 
-## Ajout d’une entrée dans le modèle de HTML {#adding-entry-in-the-html-template}
+## Ajout d’une entrée dans le modèle HTML {#adding-entry-in-the-html-template}
 
-Enfin, vous devez inclure une entrée dans le package de développement pour chaque propriété que vous souhaitez ajouter à la tâche. Pour en créer un, reportez-vous à la section Création du code de l’espace de travail AEM Forms .
+Enfin, vous devez inclure une entrée dans le package de développement pour chaque propriété que vous souhaitez ajouter à la tâche. Pour en créer une, reportez-vous à « Création du code de l’espace de travail AEM Forms ».
 
 1. Copier :`task.html`
 

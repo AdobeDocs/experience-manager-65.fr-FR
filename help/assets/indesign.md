@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1555'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -43,8 +43,8 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Exécuter les commandes [!DNL InDesign Server] :
 
       * La structure, le texte et tous les fichiers multimédias sont extraits.
-      * Des rendus de PDF et de JPG sont générés.
-      * Les rendus HTML et IDML sont générés.
+      * Des rendus PDF et JPG sont générés.
+      * Des rendus HTML et IDML sont générés.
 
    * Republier les fichiers résultants dans [!DNL Experience Manager Assets].
 
@@ -54,7 +54,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
 
    >[!CAUTION]
    >
-   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés sont limités au format PNG et JPEG. Vous ne pourrez pas générer les rendus de HTML, .idml ou de page.
+   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés sont limités au format PNG et JPEG. Vous ne pourrez pas générer les rendus HTML, .idml ou de page.
 
 1. Après l’extraction et la génération du rendu :
 
@@ -67,7 +67,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
 Pour intégrer [!DNL InDesign Server] afin de l’utiliser avec [!DNL Experience Manager Assets], après la configuration de votre proxy, vous devez :
 
 1. [installer InDesign Server](#installing-the-indesign-server) ;
-1. Si nécessaire, [configuration du processus Experience Manager Assets](#configuring-the-aem-assets-workflow).
+1. Si nécessaire, [configurez le workflow Experience Manager Assets](#configuring-the-aem-assets-workflow).
 Cette opération n’est nécessaire que si les valeurs par défaut ne sont pas adaptées à votre instance.
 1. Configurer un [programme de traitement du proxy pour InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -77,7 +77,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 
 1. Téléchargez et installez [!DNL InDesign Server].
 
-1. Si nécessaire, vous pouvez personnaliser la configuration de votre [!DNL InDesign Server] instance.
+1. Si nécessaire, vous pouvez personnaliser la configuration de votre instance [!DNL InDesign Server].
 
 1. À partir de la ligne de commande, démarrez le serveur :
 
@@ -142,7 +142,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
 * **Titre de la page** : indique le titre que vous souhaitez attribuer à la page résultante.
 
-* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si rien n’est indiqué, le noeud contenant les rendus de la ressource est utilisé.
+* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si vous laissez le champ vide, le nœud contenant les rendus de la ressource sera utilisé.
 
 * **Modèle de page** : modèle à utiliser lors de la génération de la page résultante.
 
@@ -186,9 +186,9 @@ Vous pouvez désormais activer le traitement parallèle des tâches pour IDS. D�
 * Sur une machine unique à processeur multi-cœurs, le nombre maximum de tâches parallèles (`x`) qu’[!DNL InDesign Server] peut traiter est égal au nombre de processeurs qui exécutent IDS, moins un.
 * Lorsque vous exécutez IDS sur plusieurs machines, vous devez comptabiliser le nombre total de processeurs disponibles (c’est-à-dire sur toutes les machines), puis soustraire le nombre total de machines.
 
-Pour configurer le nombre de tâches IDS parallèles :
+Pour configurer le nombre de traitements IDS parallèles :
 
-1. Ouvrez le **[!UICONTROL Configurations]** de la console Felix, par exemple : `https://[aem_server]:[port]/system/console/configMgr`.
+1. Ouvrez l’onglet **[!UICONTROL Configurations]** de la console Felix ; par exemple : `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Sélectionnez la file d’attente du traitement d’IDS sous `Apache Sling Job Queue Configuration`.
 
@@ -234,8 +234,8 @@ Pour [!DNL InDesign Server] 10.0 ou une version ultérieure, suivez les étapes
 Vous pouvez modifier les informations d’identification administrateur par défaut (nom d’utilisateur et mot de passe) qui permettent d’accéder à [!DNL InDesign Server] depuis votre déploiement [!DNL Experience Manager] sans interrompre l’intégration à [!DNL InDesign Server].
 
 1. Accédez à `/etc/cloudservices/proxy.html`.
-1. Dans la boîte de dialogue, indiquez le nouveau nom d’utilisateur et le nouveau mot de passe.
-1. Enregistrez les identifiants.
+1. Dans la boîte de dialogue, indiquez le nouveau nom d’utilisateur ou d’utilisatrice et le nouveau mot de passe.
+1. Enregistrez les informations d’identification.
 
 >[!MORELIKETHIS]
 >

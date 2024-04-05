@@ -1,6 +1,6 @@
 ---
-title: Personnaliser l’interface de création de correspondance
-description: Découvrez comment personnaliser une interface utilisateur (IU) de correspondance telle que le logo dans l’environnement AEM Forms.
+title: Personnaliser l’interface utilisateur de création de correspondance
+description: Découvrez comment personnaliser une interface utilisateur (IU) de correspondance telle que le logo dans l’environnement AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
       >[!NOTE]
       >
-      >Ne modifiez pas la branche `/libs`. Toute modification que vous apportez peut être perdue, car cette branche est sujette à toute modification lorsque vous :
+      >Ne modifiez pas la branche `/libs`. Toute modification que vous apportez peut être perdue, car cette branche est sujette à des modifications lorsque vous :
       >
       >    
       >    
@@ -84,7 +84,7 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
    1. Cliquez sur **OK**. Le dossier CSS est créé au niveau du chemin d’accès indiqué.
 
-1. Dans le dossier des applications, créez un dossier nommé `imgs` avec un chemin/une structure similaire à la propriété `imgs` (dans le dossier ccrui).
+1. Dans le dossier des applications, créez un dossier nommé `imgs` dont le chemin d’accès/la structure est similaire au dossier `imgs` (situé dans le dossier ccrui).
 
    1. Cliquez avec le bouton droit sur le dossier **imgs** dans le chemin d’accès suivant et sélectionnez **Nœud de recouvrement** : `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :

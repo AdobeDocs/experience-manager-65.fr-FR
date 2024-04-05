@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2372'
-ht-degree: 71%
+ht-degree: 81%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 71%
 
 Bien que chaque formulaire soit conçu à des fins spécifiques, certains segments sont communs à la plupart des formulaires, comme pour fournir des détails personnels tels que le nom et l’adresse, les détails de famille et les informations sur les revenus. Les développeurs et développeuses de formulaires doivent créer ces segments communs chaque fois qu’un nouveau formulaire est créé.
 
-Les formulaires adaptatifs offrent un mécanisme pratique pour créer un segment de formulaire tel qu’un panneau ou un groupe de champs une seule fois et le réutiliser dans les formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
+Les formulaires adaptatifs incluent un mécanisme pratique pour créer un segment de formulaire, comme un panneau ou un groupe de champs, une seule fois et le réutiliser dans des formulaires adaptatifs. Ces segments réutilisables et autonomes s’appellent des fragments de formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Vous pouvez créer entièrement un fragment de formulaire adaptatif ou enregistr
 
      >[!NOTE]
      >
-     > Dans les Forms adaptatives basées sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sur des éléments non basés sur des schémas.
+     > Dans les formulaires adaptatifs basés sur les composants principaux, vous pouvez utiliser plusieurs fois un fragment de formulaire unique dans un formulaire. Il prend en charge les fragments de formulaire basés sur des schémas et sans modèle.
 
    * **Modèle de formulaire** : indique que le fragment doit être créé à l’aide d’un modèle XDP chargé dans AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
 
@@ -105,7 +105,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
    * **Racine du modèle de fragment** : s’affiche uniquement dans les formulaires adaptatifs XSD. Cette action spécifie la racine du modèle de fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Vous ne pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous sélectionnez le type complexe comme racine du modèle de fragment.
-Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet Modèle de données de formulaire adaptatif . Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
+Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
 
    * **Référence de schéma XSD** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML.
 
@@ -171,19 +171,19 @@ Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui sign
 
 Vous pouvez remplacer ou modifier un fragment de formulaire adaptatif par un autre fragment à l’aide de la propriété **Sélectionner propriété de ressource du fragment** dans la boîte de dialogue Modifier le composant, pour un panneau de fragment de formulaire adaptatif.
 
-### Générer un document d’enregistrement pour le fragment de formulaire adaptatif {#generate-DOR-for-fragments}
+### Générer un document d’enregistrement pour les formulaires adaptatifs {#generate-DOR-for-fragments}
 
 Le document d’enregistrement (DOR) vous permet de conserver les informations de vos formulaires au format d’impression ou de document. Ainsi, il vous permet de suivre les informations relatives à vos clients à tout moment par la suite. Vous pouvez également utiliser le document d’enregistrement pour archiver les formulaires et le contenu ensemble au format PDF. [Découvrez comment générer un document d’enregistrement pour les fragments de formulaire adaptatif](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
-### Utilisation d’un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
+### Utiliser un fragment de formulaire plusieurs fois dans un formulaire adaptatif {#using-form-fragment-mutiple-times-in-af}
 
 Vous pouvez utiliser plusieurs fois un fragment de formulaire basé sur un schéma dans un formulaire adaptatif pour enregistrer les données de manière unique pour chaque champ de fragment de formulaire. Par exemple, vous pouvez utiliser un fragment de formulaire d’adresse pour collecter les détails des adresses pour les adresses permanentes, les communications et les adresses actives présentes dans un formulaire de demande de prêt.
 
-![utilisation de plusieurs fragments dans un formulaire adaptatif](/help/forms/using/assets/using-multiple-fragment-af.gif)
+![Utiliser plusieurs fragments dans un formulaire adaptatif](/help/forms/using/assets/using-multiple-fragment-af.gif)
 
 >[!NOTE]
 >
-> * Si vous utilisez plusieurs fois des fragments de formulaire sans base dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Le problème de synchronisation des données ne se produit pas dans les fragments de formulaire basés sur des composants principaux, où vous pouvez utiliser un fragment à plusieurs reprises, basé sur un schéma ou basé sur aucun fragment dans un formulaire.
+> * Si vous utilisez plusieurs fois des fragments de formulaire sans modèle dans un formulaire adaptatif, la synchronisation des données entre les champs des fragments se produit. Le problème de synchronisation des données ne se produit pas dans les fragments de formulaire basés sur des composants principaux, où vous pouvez utiliser un fragment à plusieurs reprises, basé sur un schéma ou sans modèle dans un formulaire.
 
 ## Correspondance automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 

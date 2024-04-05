@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 ## Modification de pages de lancement {#editing-launch-pages}
 
-Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
+Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
 
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
 1. Sélectionner **Accéder à la page** pour ouvrir la page à modifier.

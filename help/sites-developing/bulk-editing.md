@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ La [modification en masse des propriétés de page](/help/sites-authoring/editin
 
 En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Elles doivent être explicitement autorisées (activées). Lorsque vous définissez les propriétés de la page qui seront disponibles pour la modification en masse, vous devez tenir compte de certaines implications, comme :
 
-* Certains champs sont généralement uniques ; par exemple, un titre de page. Déterminez s’il est pertinent d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
+* Certains champs sont généralement uniques, par exemple un titre de page. Décidez s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
 * Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu.
 
   Par exemple, une case à cocher indiquant « Prêt pour publication ». Ce champ peut avoir plusieurs valeurs avant la modification en masse (par exemple, prêt, en révision, en cours).

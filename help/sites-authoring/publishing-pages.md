@@ -1,12 +1,12 @@
 ---
 title: Publication de pages de contenu
-description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5.
+description: Découvrez comment publier des pages de contenu dans Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1673'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -61,9 +61,9 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
    * La page sera publiée directement, s’il n’y a aucune référence à publier.
    * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
 
-      * Indiquez les ressources ou balises que vous souhaitez publier avec la page, puis utilisez **Publier** pour terminer le processus.
+      * Spécifiez les ressources ou les balises à publier conjointement avec la page, puis utilisez **Publier** pour terminer l’opération.
 
-      * Sélectionner **Annuler** pour abandonner l’opération.
+      * Sélectionnez **Annuler** pour abandonner l’opération.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -77,11 +77,11 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->La publication à partir de l’éditeur est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
+>Une publication à partir de l’éditeur est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
 
 >[!NOTE]
 >
->Pages accessibles par [alias](/help/sites-authoring/editing-page-properties.md#advanced) dans l’éditeur ne peut pas être publié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Les pages accessibles par [alias](/help/sites-authoring/editing-page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Publication à partir de la console {#publishing-from-the-console}
 
@@ -96,7 +96,7 @@ L’option **Publication rapide** concerne les cas simples. Elle publie immédia
 
 Pour publier une page avec publication rapide :
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Publication rapide** bouton .
+1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
 
    ![pp-02](assets/pp-02.png)
 
@@ -112,11 +112,11 @@ Pour publier une page avec publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-**Gérer la publication** offre plus d’options que Publication rapide, ce qui permet l’inclusion de pages enfants, la personnalisation des références et le démarrage de tout processus applicable, ainsi que la possibilité de publier à une date ultérieure.
+**Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
+1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication**.
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -183,7 +183,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice. Voir [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication et [Gestion des accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) pour plus d’informations.
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice. Pour plus d’informations, reportez-vous à la [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication, ainsi qu’aux sections [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 
@@ -210,13 +210,13 @@ Lors de la modification d’une page, si vous la dépubliez, sélectionnez **Dé
 
 >[!NOTE]
 >
->Pages accessibles par [alias](/help/sites-authoring/editing-page-properties.md#advanced) dans l’éditeur ne peut pas être dépublié. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
+>Les pages accessibles par [alias](/help/sites-authoring/editing-page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Dépublication à partir de la console {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](/help/sites-authoring/publishing-pages.md#manage-publication), vous pouvez l’utiliser pour la dépublication.
 
-1. Sélectionnez la ou les pages dans la console Sites, puis cliquez sur le bouton **Gérer la publication** bouton .
+1. Sélectionnez la ou les pages dans la console des sites et cliquez sur le bouton **Gérer la publication**.
 1. L’assistant **Gérer la publication** démarre. Dans la première étape, **Options**, sélectionnez **Dépublier** au lieu de l’option par défaut, à savoir **Publier**.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)

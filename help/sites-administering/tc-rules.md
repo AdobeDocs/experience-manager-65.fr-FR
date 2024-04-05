@@ -1,6 +1,6 @@
 ---
 title: Identification du contenu à traduire
-description: Découvrez comment identifier le contenu à traduire dans Adobe Experience Manager.
+description: Découvrez comment identifier le contenu à traduire dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Le fichier s’applique à tous les projets de traduction.
 Les règles comprennent les informations suivantes :
 
 * Le chemin d’accès au nœud auquel la règle s’applique. La règle s’applique également aux descendants du nœud.
-* Les noms des propriétés du noeud qui contiennent le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
+* Le nom des propriétés de nœud contenant le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
@@ -102,7 +102,7 @@ Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont inco
 
 Chaque élément `assetNode` présente les caractéristiques suivantes :
 
-* One `resourceType` qui est égal au chemin d’accès qui fait référence au composant.
+* Un attribut `resourceType` qui est égal au chemin d’accès correspondant au composant.
 * Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée
 
 L’exemple suivant extrait les images à partir du composant de base de l’image :
@@ -161,7 +161,7 @@ De là, vous pouvez **Ajouter du contexte**. Vous pouvez ainsi ajouter un chemin
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cela ouvre l’éditeur de règles de traduction.
+Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cette action ouvre l’éditeur de règles de traduction.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
@@ -193,7 +193,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 

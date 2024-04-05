@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Modes d’exécution{#run-modes}
 
-Les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques ; par exemple, pour créer ou publier, tester, développer, intranet ou autre.
+Les modes d’exécution vous permettent d’ajuster votre instance d’AEM à des fins spécifiques, par exemple pour la création ou la publication, le test, le développement, l’intranet et plus encore.
 
 Vous pouvez :
 
@@ -70,11 +70,11 @@ Les modes d’exécution personnalisés peuvent également être sélectionnés 
 
 ## Utiliser samplecontent et nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc. :
+Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des packages, des configurations, etc :
 
-* La variable `samplecontent` le mode d’exécution installe ce contenu (le mode par défaut).
+* Le mode d’exécution `samplecontent` (mode par défaut) installe ce contenu.
 
-* La variable `nosamplecontent` Le mode n’installe pas l’exemple de contenu.
+* Le mode d’exécution `nosamplecontent` n’installe pas l’exemple de contenu.
 
 Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 
@@ -150,7 +150,7 @@ java -jar cq-56-p4545.jar -r dev
 
 Une propriété système dans le script de démarrage peut être utilisée pour spécifier le mode d’exécution.
 
-* Par exemple, utilisez ce qui suit pour lancer une instance en tant qu’instance de publication de production aux États-Unis :
+* Par exemple, utilisez le code ci-dessous pour lancer une instance de publication de production localisée aux États-Unis :
 
   `-Dsling.run.modes=publish,prod,us`
 

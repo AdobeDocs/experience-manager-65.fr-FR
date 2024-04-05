@@ -1,6 +1,6 @@
 ---
 title: Mappage du modèle dynamique avec les composants pour les SPA
-description: Découvrez comment le mappage du modèle dynamique avec les composants se produit dans le SDK JavaScript SPA pour Adobe Experience Manager.
+description: Découvrez comment s’effectue le mappage du modèle dynamique aux composants dans le SDK JavaScript SPA pour Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Mappage du modèle dynamique avec les composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
+# Mappage du modèle dynamique aux composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
 
-Ce document décrit comment le mappage du modèle dynamique avec les composants se produit dans le SDK JavaScript SPA pour Adobe Experience Manager (AEM).
+Ce document décrit comment s’effectue le mappage entre le modèle aux composants dans le SDK JavaScript SPA pour Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Module ComponentMapping {#componentmapping-module}
 
@@ -28,7 +28,7 @@ Le module `ComponentMapping` est fourni au projet front-end sous la forme d’un
 
 Chaque élément présent dans le modèle contient un champ `:type` qui expose un type de ressource AEM. Une fois monté, le composant front-end peut être rendu à l’aide du fragment de modèle reçu des bibliothèques associées.
 
-Voir [Blueprint SPA](/help/sites-developing/spa-blueprint.md) pour plus d’informations sur l’analyse des modèles et l’accès des composants front-end au modèle.
+Pour plus d’informations sur l’analyse des modèles et l’accès des composants front-end au modèle, consultez le document [Plan directeur SPA](/help/sites-developing/spa-blueprint.md).
 
 Consultez également le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping).
 
@@ -39,7 +39,7 @@ Les applications monopages qui utilisent le SDK JavaScript d’application monop
 1. Les composants front-end s’enregistrent eux-mêmes dans le [magasin de mappage de composants](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Ensuite, le [conteneur](/help/sites-developing/spa-blueprint.md#container), qui a reçu un modèle du [fournisseur de modèles](/help/sites-developing/spa-blueprint.md#the-model-provider), effectue une itération sur son contenu de modèle (`:items`).
 
-1. S’il existe une page, ses enfants ( `:children`) Commencez par obtenir une classe de composant à partir de la propriété [Mappage des composants](/help/sites-developing/spa-blueprint.md#componentmapping) puis instanciez-le.
+1. S’il y a une page, ses enfants (`:children`) obtiennent d’abord une classe de composant du [mappage des composants](/help/sites-developing/spa-blueprint.md#componentmapping), puis l’instancient.
 
 ## Initialisation de l’application {#app-initialization}
 

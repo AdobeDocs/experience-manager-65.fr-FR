@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2770'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 Vous pouvez créer le contenu d’un e-mail dans AEM et le traiter dans les e-mails Adobe Campaign. À cet effet, vous devez suivrez cette procédure :
 
-1. Créez une newsletter dans AEM depuis un modèle spécifique à Adobe Campaign.
+1. Créez une newsletter dans AEM à partir d’un modèle spécifique à Adobe Campaign.
 1. Sélectionnez [un service Adobe Campaign](#selecting-the-adobe-campaign-cloud-service-and-template) avant de modifier le contenu pour accéder à toutes les fonctionnalités.
 1. Modifiez le contenu.
 1. Validez le contenu.
@@ -56,7 +56,7 @@ Ce document contient des instructions détaillées.
 
    >[!NOTE]
    >
-   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
+   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir du partage de modules.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -103,7 +103,7 @@ En mode Création, à partir de la newsletter ou de l’e-mail, vous ne pourrez 
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Sélectionnez **Services Cloud** et cliquez sur le signe « **+** » pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez sur le bouton **+** signer pour ajouter une autre configuration, puis sélectionner **Adobe Campaign**.
+1. Sélectionnez **Services Cloud** et cliquez sur le signe « **+** » pour ajouter une configuration. Sélectionnez une des configurations affichées (peu importe laquelle). Cliquez sur le signe « **+** » pour ajouter une autre configuration, puis sélectionnez **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -146,8 +146,8 @@ Pour modifier le contenu d’un email :
 
 Lorsque vous éditez votre contenu, vous pouvez insérer :
 
-* Des champs de contexte Adobe Campaign. Il s&#39;agit de champs que vous pouvez insérer dans votre texte qui s&#39;adaptent aux données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
-* Des blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfinis qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
+* Des champs de contexte Adobe Campaign. Ces champs peuvent être insérés dans votre texte et s’adaptent en fonction des données de la personne destinataire (par exemple, le prénom, le nom, ou toute autre donnée de la dimension cible).
+* Des blocs de personnalisation Adobe Campaign. Ces blocs de contenu prédéfini ne sont pas liés aux données de la personne destinataire, tels que le logo d’une marque ou un lien vers une page miroir.
 
 Consultez [Composants d’Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) pour une description complète des composants de Campaign.
 
@@ -188,7 +188,7 @@ Pour insérer une personnalisation :
 
 ### Prévisualisation d’une newsletter {#previewing-a-newsletter}
 
-Vous pouvez prévisualiser l’aspect de la newsletter et prévisualiser la personnalisation.
+Vous pouvez prévisualiser l’apparence de la newsletter et prévisualiser la personnalisation.
 
 1. La newsletter étant affichée, cliquez sur **Aperçu** dans le coin supérieur droit d’AEM. AEM affiche la newsletter telle qu’elle se présente lorsque les utilisateurs la reçoivent.
 
@@ -202,7 +202,7 @@ Vous pouvez prévisualiser l’aspect de la newsletter et prévisualiser la pers
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. Vous pouvez afficher les données sources provenant d’Adobe Campaign associées au personna actuellement sélectionné. Pour ce faire, cliquez sur le module Adobe Campaign dans la barre ContextHub. Une boîte de dialogue s’ouvre alors, affichant toutes les données sources du profil actuel. Là encore, les données s’adaptent lors du changement pour un autre persona.
+1. Vous pouvez afficher les données sources provenant d’Adobe Campaign associées au personna actuellement sélectionné. Pour ce faire, cliquez sur le module Adobe Campaign dans la barre ContextHub. Une boîte de dialogue s’ouvre alors, affichant toutes les données sources du profil actuel. Là encore, les données s’adaptent lors du changement pour un autre persona.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 
@@ -258,7 +258,7 @@ Si une newsletter est liée à plusieurs diffusions, le nombre de diffusions li�
 
 Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les étapes suivantes :
 
-1. Créez un email basé sur un modèle d&#39;email spécifique à une AEM. Pour plus d’informations, reportez-vous à la section [Création d’e-mails dans Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html).
+1. Créez un e-mail en utilisant un modèle d’e-mail spécifique à AEM. Pour plus d’informations, reportez-vous à la section [Création d’e-mails dans Adobe Campaign Standard](https://helpx.adobe.com/fr/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -352,13 +352,13 @@ Pour synchroniser du contenu créé dans AEM avec une diffusion à partir d’A
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
-1. Spécifiez les autres paramètres de votre diffusion (cible, etc.)
-1. Au besoin, lancez le processus d’approbation de la diffusion dans Adobe Campaign. La validation du contenu dans AEM est nécessaire en plus des validations configurées dans Adobe Campaign (budget, cible, etc.). L’approbation du contenu dans Adobe Campaign n’est possible que si le contenu a déjà été approuvé dans AEM.
+1. Indiquez les autres paramètres de votre diffusion (cible, etc.).
+1. Au besoin, lancez le processus d’approbation de la diffusion dans Adobe Campaign. L’approbation du contenu dans AEM est nécessaire en plus des approbations configurées dans Adobe Campaign (budget, cible, etc.). L’approbation du contenu dans Adobe Campaign n’est possible que si le contenu a déjà été approuvé dans AEM.
 1. Exécutez la diffusion. Lors de l’analyse de la diffusion, la version la plus récente du contenu AEM est récupérée.
 
    >[!NOTE]
    >
-   * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign passe en lecture seule. L&#39;objet de l&#39;email et son contenu ne peuvent plus être modifiés.
+   * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign passe en lecture seule. L’objet de l’e-mail ainsi que son contenu ne peuvent plus être modifiés.
    * Si le contenu est mis à jour dans AEM alors qu’il est lié à une diffusion dans Adobe Campaign, il est automatiquement mis à jour dans la diffusion lors de l’analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant**.
    * Vous pouvez annuler la synchronisation entre une diffusion et le contenu d’AEM à l’aide du bouton **Désynchroniser**. Cette option n’est disponible que si un contenu est déjà synchronisé avec la diffusion. Pour synchroniser un contenu différent avec une diffusion, vous devez annuler la synchronisation de contenu actuelle avant de pouvoir établir un nouveau lien.
    * Si le contenu local est désynchronisé, il est conservé et peut être modifié dans Adobe Campaign. Si vous resynchronisez le contenu après l’avoir modifié, vous perdrez toutes vos modifications.

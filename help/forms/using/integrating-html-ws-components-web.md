@@ -1,6 +1,6 @@
 ---
-title: Intégration des composants de l’espace de travail AEM Forms dans des applications Web
-description: Comment réutiliser les composants de l’espace de travail AEM Forms dans vos propres applications web pour utiliser les fonctionnalités et fournir une intégration étroite.
+title: Intégration des composants de l’espace de travail AEM Forms dans des applications web
+description: Comment réutiliser les composants de l’espace de travail AEM Forms dans vos propres applications web pour utiliser les fonctionnalités et fournir une intégration étroite.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,23 +10,23 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Intégration des composants de l’espace de travail AEM Forms dans des applications Web {#integrating-aem-forms-workspace-components-in-web-applications}
+# Intégration des composants de l’espace de travail AEM Forms dans des applications web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Vous pouvez utiliser l’espace de travail AEM Forms [components](/help/forms/using/description-reusable-components.md) dans votre propre application web. L’exemple d’implémentation suivant utilise des composants d’un package de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList` dans un portail Web.
+Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application web. L’exemple d’implémentation suivant utilise des composants d’un package de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList` dans un portail Web.
 
 1. Connectez-vous à l’environnement CRXDE Lite à l’adresse `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
 1. Créez un chemin d’accès `/apps/sampleApplication/wscomponents`.
 1. Copiez css, images, js/libs, js/runtime et js/registry.js
 
    * de `/libs/ws`
-   * to `/apps/sampleApplication/wscomponents`.
+   * vers `/apps/sampleApplication/wscomponents`.
 
 1. Créez un fichier demomain.js dans le dossier /apps/sampleApplication/wscomponents/js. Copiez le code de /libs/ws/js/main.js dans demomain.js.
-1. Dans demomain.js, supprimez le code pour initialiser le routeur et ajoutez le code suivant :
+1. Dans demomain.js, supprimez le code pour initialiser le routeur et ajoutez le code suivant :
 
    ```javascript
    require(['initializer','runtime/util/usersession'],
@@ -50,13 +50,13 @@ Vous pouvez utiliser l’espace de travail AEM Forms [components](/help/forms/us
    <div class="taskListView gcomponent" data-name="tasklist"></div>
    ```
 
-   Incluez également les fichiers CSS requis pour les composants de l’espace de travail AEM Forms.
+   Incluez également les fichiers CSS requis pour les composants de l’espace de travail AEM Forms.
 
    >[!NOTE]
    >
    >Chaque composant est ajouté à la balise du composant (ayant la classe gcomponent) pendant le rendu. Assurez-vous que votre page d’accueil contient ces balises. Voir le fichier `html.jsp` de l’espace de travail AEM Forms pour en savoir plus sur les balises de contrôle de base.
 
-1. Pour personnaliser les composants, vous pouvez étendre les vues existantes pour le composant requis comme suit :
+1. Pour personnaliser les composants, vous pouvez étendre les vues existantes pour le composant requis comme suit :
 
    ```javascript
    define([

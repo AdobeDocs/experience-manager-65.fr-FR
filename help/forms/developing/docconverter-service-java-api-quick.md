@@ -1,6 +1,6 @@
 ---
-title: DocConverter Service Java&trade ; API QuickStart(SOAP)
-description: Découvrez comment convertir un document en document PDF/A et gérer la conformité à l’aide de Java&trade; API Quick Start (SOAP).
+title: Démarage rapide (SOAP) de l’API DocConverter Service Java™
+description: Découvrez comment convertir un document en document PDF/A et gérer la conformité à l’aide du Démarrage rapide (SOAP) d’API Java™.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,27 +11,27 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
-# DocConverter Service API Java™ Quick Start (SOAP) {#docconverter-service-java-api-quickstart-soap}
+# Démarage rapide (SOAP) de l’API DocConverter Service Java™ {#docconverter-service-java-api-quickstart-soap}
 
-L’API Java™ Quick Start (SOAP) est disponible pour le service DocConverter.
+Le Démarrage rapide (SOAP) d’’API Java™ est disponible pour le service DocConverter.
 
-[Démarrage rapide (mode SOAP) : Détermination de la conformité du PDF/A à l’aide de Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Démarrage rapide (mode SOAP) : déterminer la conformité du PDF/A à l’aide de l’API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : conversion d’un document en document de PDF/A à l’aide de Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Démarrage rapide (mode SOAP) : convertir un document en document PDF/A à l’aide de l’API Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les didacticiels de mise en route de la programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss® Application Server et le système d’exploitation Windows Microsoft®. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides dans Programmation avec AEM Forms se fondent sur le serveur Forms déployé sur le serveur d’applications JBoss® et le système d’exploitation Microsoft® Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : conversion d’un document en document PDF/A à l’aide de l’API Java™ {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Démarrage rapide (mode SOAP) : convertir un document en document PDF/A à l’aide de l’API Java™ {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-L’exemple de code Java™ suivant convertit un document PDF nommé *Loan.pdf* dans un document PDF/A enregistré en tant que fichier PDF nommé *LoanArchive.pdf*. (Voir [Convertir des documents en documents PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+L’exemple de code Java™ suivant convertit un document PDF nommé *Loan.pdf* en document PDF/A enregistré en tant que fichier PDF nommé *LoanArchive.pdf*. (Voir [Convertir des documents en documents PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -132,9 +132,9 @@ L’exemple de code Java™ suivant convertit un document PDF nommé *Loan.pdf* 
  }
 ```
 
-## Démarrage rapide (mode SOAP) : détermination de la conformité du PDF/A à l’aide de l’API Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
+## Démarrage rapide (mode SOAP) : déterminer la conformité d’un document PDF/A à l’aide de l’API Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-L’exemple de code Java™ suivant détermine si le document du PDF d’entrée est compatible avec PDF/A. Le document PDF d’entrée transmis au service DocConverter est nommé *LoanArchive.pdf*. Les résultats de la validation sont écrits dans un fichier XML nommé *ValidationResults.xml*. (Voir [Déterminer par programme la conformité PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+L’exemple de code Java™ suivant détermine si le document PDF d’entrée est compatible PDF/A. Le document PDF d’entrée transmis au service DocConverter est nommé *LoanArchive.pdf*. Les résultats de la validation sont écrits dans un fichier XML nommé *ValidationResults.xml*. (Voir [Déterminer par programme la conformité PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

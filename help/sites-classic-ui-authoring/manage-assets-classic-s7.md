@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3545'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -131,7 +131,7 @@ Adobe recommande de publier des ressources dans Dynamic Media Classic (Scene7)
 Les composants Dynamic Media Classic (Scene7) suivants sont disponibles dans Experience Manager :
 
 * Zoom
-* Fenêtre déroulante (zoom)
+* Zoom sur la fenêtre déroulante
 * Modèle d’image
 * Image
 * Vidéo
@@ -237,7 +237,7 @@ Le composant d’image Dynamic Media Classic (Scene7) vous permet d’ajouter 
 
 **Paramètre prédéfini d’image** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**Format de sortie** - Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez les Bonnes pratiques relatives aux paramètres prédéfinis d’image.
+**Format de sortie** : sélectionnez le format de sortie de l’image, par exemple JPEG. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez les Bonnes pratiques relatives aux paramètres prédéfinis d’image.
 
 **Accentuation** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détails dans les rubriques Bonnes pratiques relatives aux paramètres prédéfinis d’image et Bonnes pratiques relatives à l’accentuation.
 

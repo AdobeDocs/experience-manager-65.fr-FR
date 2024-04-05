@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3667'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de processus s’ouvre.
 1. Saisissez **Titre** et **Nom** (facultatif). par exemple, une demande de prêt immobilier. Sélectionnez **Terminé**.
-1. Sélectionnez le modèle de workflow nouvellement créé et sélectionnez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
+1. Sélectionnez le workflow que vous venez de créer, puis choisissez **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * Les étapes Début de flux et Fin de flux. Ces étapes définissent le début et la fin du workflow. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
    * Un exemple d’étape Participant, dont le nom est Étape 1. Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
@@ -80,7 +80,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
 1. Créez des étapes de workflow. Un workflow peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du workflow.
 
-   Pour définir une étape, sélectionnez la ![info-circle](assets/info-circle.png) pour ouvrir les propriétés du modèle de processus, ouvrez l’icône **Phases** , ajoutez des étapes pour le modèle de workflow, puis sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
+   Pour définir une étape, sélectionnez l’icône ![info-circle](assets/info-circle.png) pour ouvrir les propriétés de modèle de workflow, ouvrez l’onglet **Étapes**, ajoutez des étapes au modèle de workflow et sélectionnez **Enregistrer et fermer**. Pour l’exemple de demande de prêt immobilier, créez des étapes : demande de prêt, état de la demande de prêt, documents à signer et document de prêt signé.
 
 1. Glissez-déposez l’explorateur d’étapes **Affecter une tâche** dans le modèle de processus. Faites-en la première étape du modèle.
 
@@ -92,7 +92,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données de chaîne et spécifiez la variable en tant que **Variable d’itinéraire**. Par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le workflow sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur ou l’utilisatrice.
 
-   Vous pouvez importer l’exemple de package, disponible au téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape Affecter une tâche configurée par exemple, une demande de prêt immobilier.
+   Vous pouvez importer l’exemple de package, disponible pour téléchargement au début de la section, pour l’ensemble complet des valeurs de tous les champs de l’étape configurée Attribuer une tâche, par exemple la demande de prêt immobilier.
 
 1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de workflow. L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -118,7 +118,7 @@ Cet exemple crée un modèle de workflow pour une demande de prêt immobilier à
 
    Pour l’exemple de prêt immobilier, ajoutez un document d’enregistrement généré, deux étapes Affecter une tâche et une étape de signature de document pour la Branche 1 du modèle, comme affiché dans l’image ci-dessous. Une étape Affecter une tâche consiste à afficher et envoyer des **documents de prêt à signer au demandeur** et un autre composant de tâche consiste à **afficher les documents signés**. Ajoutez également un composant Affecter une tâche à la branche 2. Il est activé lorsqu’un utilisateur clique sur Refuser dans la boîte de réception AEM.
 
-   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, de l’étape Document d’enregistrement et de l’étape Signer un document paramétrée, par exemple, la demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
+   Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Attribuer une tâche, de l’étape Document d’enregistrement et de l’étape Signer le document configurées pour l’exemple de demande de prêt immobilier, importez l’exemple de package, disponible pour téléchargement au début de cette section.
 
    Le modèle de workflow est prêt. Vous pouvez lancer le workflow via différentes méthodes. Pour plus de détails, consultez [Lancement d’un workflow basé sur l’utilisation de Forms on OSGi](#launch).
 
@@ -202,7 +202,7 @@ La demande de processus que vous avez créée est disponible en tant qu’applic
 
 ### Envoyant une demande depuis l’application AEM Forms {#afa}
 
-L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les applications de workflow et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
+L’application AEM Forms se synchronise avec un serveur AEM Forms et vous permet de modifier les données de formulaire, les tâches, les applications de workflow et les informations enregistrées (brouillons/modèles) dans votre compte. Pour plus d’informations, consultez [Application AEM Forms](/help/forms/using/aem-forms-app.md) et les articles connexes.
 
 ### Envoi d’un formulaire adaptatif {#af}
 
@@ -215,7 +215,7 @@ Vous pouvez configurer la synchronisation, l’envoi et le déclenchement d’un
 Un administrateur ou une administratrice (un membre du groupe administrateur-fd) peut configurer un dossier réseau pour exécuter un workflow préconfiguré lorsqu’un utilisateur ou une utilisatrice y place un fichier (tel qu’un fichier PDF). Une fois que le workflow est terminé, vous pouvez enregistrer le fichier de sortie dans un dossier de sortie spécifié. Un tel dossier est appelé [Dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md). Effectuez la procédure suivante pour configurer un dossier de contrôle afin de lancer un workflow :
 
 1. Sur votre instance d’auteur AEM, accédez à ![Outils-1](assets/tools-1.png) > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
-1. Sélectionner **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un workflow :
+1. Sélectionnez **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un workflow :
 
 <table>
  <tbody>
@@ -246,7 +246,7 @@ Un administrateur ou une administratrice (un membre du groupe administrateur-fd)
  </tbody>
 </table>
 
-1. Sélectionner **Avancé**. Spécifiez une valeur pour le champ suivant puis cliquez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
+1. Sélectionnez **Avancé**. Spécifiez une valeur pour le champ suivant puis cliquez sur **Créer**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
    | Champ | Description |
    |---|---|
@@ -270,13 +270,13 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un e-mail des wo
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular) purge des instances de workflow.
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflow. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular).
 
 ## Paramétrer les données sensibles aux variables de workflow et les stocker dans des magasins de données externes {#externalize-wf-variables}
 
-Toutes les données envoyées à partir de formulaires adaptatifs vers des workflows [!DNL Experience Manager] peuvent avoir des PII (informations d’identification personnelles) ou SPD (données personnelles sensibles) des utilisateurs et utilisatrices finaux de votre entreprise. Toutefois, il n’est pas obligatoire de stocker vos données dans le [Référentiel JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=fr) d’[!DNL Adobe Experience Manager]. Vous pouvez externaliser le stockage des données de l’utilisateur final dans votre stockage de données géré (par exemple, le stockage Azure Blob) en paramétrant les informations dans [variables de workflow](/help/forms/using/variable-in-aem-workflows.md).
+Toutes les données envoyées à partir de formulaires adaptatifs vers des workflows [!DNL Experience Manager] peuvent avoir des PII (informations d’identification personnelles) ou SPD (données personnelles sensibles) des utilisateurs et utilisatrices finaux de votre entreprise. Toutefois, il n’est pas obligatoire de stocker vos données dans le [Référentiel JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=fr) d’[!DNL Adobe Experience Manager]. Vous pouvez externaliser le stockage des données des utilisateurs et utilisatrices finaux dans votre stockage de données géré (par exemple, le stockage Azure Blob) en paramétrant les informations dans les [variables de workflow](/help/forms/using/variable-in-aem-workflows.md).
 
-Dans un workflow [!DNL Adobe Experience Manager] Forms, les données sont traitées et transmises par une série d’étapes de workflow au moyen de variables de workflow. Ces variables sont des propriétés nommées ou des paires clé-valeur qui sont stockées dans le noeud de métadonnées des instances de workflow ; par exemple, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Ces variables de workflow peuvent être externalisées dans un référentiel autre que JCR, puis traitées par des workflows [!DNL Adobe Experience Manager]. [!DNL Adobe Experience Manager] fournit une API `[!UICONTROL UserMetaDataPersistenceProvider]` pour stocker les variables de workflow dans votre stockage externe géré. Pour en savoir plus sur l’utilisation de variables de workflow pour les magasins de données détenus par les client(e)s dans [!DNL Adobe Experience Manager], reportez-vous à [Administration des variables de workflow pour les magasins de données externes](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Dans un workflow [!DNL Adobe Experience Manager] Forms, les données sont traitées et transmises par une série d’étapes de workflow au moyen de variables de workflow. Ces variables sont des propriétés nommées ou des paires clé-valeur stockées dans le nœud de métadonnées des instances de workflow ; par exemple, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Ces variables de workflow peuvent être externalisées dans un référentiel autre que JCR, puis traitées par des workflows [!DNL Adobe Experience Manager]. [!DNL Adobe Experience Manager] fournit une API `[!UICONTROL UserMetaDataPersistenceProvider]` pour stocker les variables de workflow dans votre stockage externe géré. Pour en savoir plus sur l’utilisation de variables de workflow pour les magasins de données détenus par les client(e)s dans [!DNL Adobe Experience Manager], reportez-vous à [Administration des variables de workflow pour les magasins de données externes](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] fournit l’[exemple](https://github.com/adobe/workflow-variable-externalizer) suivant pour stocker des variables d’un mappage de métadonnées de workflow vers le stockage Azure Blob, à l’aide de l’API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Sur les lignes similaires, vous pouvez utiliser l’exemple comme guide d’utilisation de l’API [UserMetaDataPersistenceProvider] afin d’externaliser les variables de workflow de tout autre stockage de données externe vers [!DNL Adobe Experience Manager] et les gérer.
 
 >[!NOTE]
@@ -310,11 +310,11 @@ Voici les objectifs (et exemples) de ces propriétés :
 
 * **accountName** est le compte Azure où les données doivent être stockées.
 
-* **endpointSuffix**, par exemple : `core.windows.net`.
+* **endpointSuffix**, par exemple `core.windows.net`.
 
 * **containerName** est le conteneur dans le compte où les données doivent être stockées. L’exemple suppose que le conteneur existe.
 
-* **protocol**, par exemple : `https` ou `http`.
+* **protocol**, par exemple `https` ou `http`.
 
 1. Configurez le modèle de workflow dans [!DNL Adobe Experience Manager]. Pour savoir comment configurer le modèle de workflow pour un stockage externe, reportez-vous à [Configurer le modèle de workflow](#configure-aem-wf-model).
 
@@ -334,7 +334,7 @@ Pour configurer un modèle de workflow AEM pour le stockage de données externe
 
 ### Recommandations pour les workflows d’AEM pour le stockage de données externes {#guidelines-workflows-external-data-storage}
 
-Voici les instructions à suivre lorsque vous utilisez [!DNL Adobe Experience Manager] workflows et stockage des données dans des entrepôts de données externes (par exemple, serveur de stockage Microsoft Azure) :
+Voici nos recommandations concernant l’utilisation des workflows [!DNL Adobe Experience Manager] et le stockage de données externe (par exemple, le serveur de stockage Microsoft Azure) :
 
 * Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Les options **[!UICONTROL Relatif à la payload]** et **[!UICONTROL Disponible sur un chemin absolu]** ne s’affichent pas automatiquement lorsque vous [configurez un modèle de workflow  [!DNL Adobe Experience Manager]  pour le stockage de données externe](#configure-aem-wf-model).
 

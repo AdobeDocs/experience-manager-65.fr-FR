@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10038'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs n
 
 Si vous chargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous chargez la ressource, un message d’avertissement s’affiche.
 
-Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotation ou recadrage, par exemple) que vous avez apportées à la ressource existante sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée en ajoutant le chiffre `1` à son nom.
+Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (par exemple les annotations et le recadrage) apportées à une ressource existante sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée en ajoutant le chiffre `1` à son nom.
 
 ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/resolve-naming-conflict.png)
 
@@ -579,7 +579,7 @@ Pour supprimer une ressource ou un dossier contenant une ressource, procédez co
 
    * Si la ressource ne comporte aucune référence, elle est supprimée.
 
-   * Si la ressource comporte des références, un message d’erreur vous informe que **Une ou plusieurs ressources sont référencées.**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+   * Si la ressource comporte des références, un message d’erreur vous informe que **une ou plusieurs ressources sont référencées.**. Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
@@ -656,7 +656,7 @@ Pour des recherches simples, avancées et personnalisées pour découvrir et uti
 
 Les icônes d’action rapide sont disponibles pour une ressource à la fois. Selon l’appareil, effectuez les actions suivantes pour afficher les icônes d’action rapide :
 
-* Appareils tactiles : appuyez longuement. Par exemple, sur une iPad, vous pouvez sélectionner une ressource et la maintenir enfoncée afin que les actions rapides s’affichent.
+* Appareils tactiles : appuyez longuement. Par exemple, sur un iPad, vous pouvez appuyer longuement sur une ressource pour afficher les actions rapides.
 * Appareils non tactiles : survolez avec le pointeur. Par exemple, sur un poste de travail, la barre d’actions rapides s’affiche si vous survolez la miniature de la ressource avec le pointeur de la souris.
 
 ### Navigation et sélection des ressources {#navigating-and-selecting-assets}
@@ -740,7 +740,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Cliquez sur l’option **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](/help/assets/manage-assets.md#quick-actions)
-   * Dans la barre d’outils après avoir sélectionné la ressource ou accédé à la page de la ressource.
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
@@ -840,7 +840,7 @@ Pour imprimer les annotations et le statut de révision, cliquez sur **[!UICONTR
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier de PDF rendu, par exemple, la couleur, la taille et le style de la police, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-assets.md#annotating).
+   Pour modifier l’aspect du fichier PDF généré (par exemple, la couleur, la taille et le style de la police), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans le gestionnaire de configuration et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-assets.md#annotating).
 
    ![Configuration pour imprimer une annotation de ressource sur un document PDF](assets/annotation-print-pdf-config.png)
 

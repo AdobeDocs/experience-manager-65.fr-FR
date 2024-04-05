@@ -1,6 +1,6 @@
 ---
-title: Personnaliser le thème
-description: Découvrez comment personnaliser le thème de l’application AEM Forms. Vous pouvez personnaliser le code de HTML et le fichier CSS pour donner à l’organisation un aspect spécifique.
+title: Personnalisation du thème
+description: Découvrez comment personnaliser le thème de l’application AEM Forms. Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’organisation et l’aspect de l’application AEM Forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Personnaliser le thème {#theme-customization}
+# Personnalisation du thème {#theme-customization}
 
-Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’organisation et l’aspect de l’application AEM Forms. Vous pouvez, par exemple, modifier la couleur du fond d’écran ainsi que la hauteur des tâches ou des points de départ. L’exemple suivant fournit des instructions de modification :
+Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’organisation et l’aspect de l’application AEM Forms. Vous pouvez, par exemple, modifier la couleur du fond d’écran ainsi que la hauteur des tâches ou des points de départ. L’exemple suivant fournit des instructions de modification :
 
 * Afficher les instructions au lieu de la description
 * nombre d’itinéraires d’affichage
-* dégradé de fond
+* Couleur de dégradé d’arrière-plan
 
 ## Étapes {#steps}
 
@@ -78,6 +78,6 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 1. Ouvrez le fichier `_style.css` pour le modifier.
 1. Pour l’image d’arrière-plan, remplacez `#323232` par `#fff`.
 1. Enregistrez les modifications apportées, puis fermez le fichier `_style.css`.
-1. Ouvrez l’application AEM Forms.
+1. Ouvrez l’application AEM Forms.
 
-   L’application AEM Forms affiche désormais des instructions au lieu d’une description.
+   L’application AEM Forms affiche désormais des instructions au lieu d’une description.

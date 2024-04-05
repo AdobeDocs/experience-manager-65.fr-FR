@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7848'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -589,7 +589,7 @@ Ce document utilise le terme *application native* pour indiquer l’application 
 1. Ouvrir la boîte de dialogue Imprimer en sélectionnant Fichier > Imprimer.
 1. Vérifier que la boîte de dialogue Imprimer s’affiche.
 
-AppMon utilise des API Win32 standard pour interagir avec des applications tierces afin de transférer des événements d’interface utilisateur tels que des touches et des clics de souris, ce qui est utile pour contrôler ces applications afin de produire des fichiers PDF à partir de ces applications.
+AppMon utilise des API Win32 standard pour interagir avec des applications tierces afin de transférer des événements d’interface utilisateur tels que des touches et des clics de souris, ce qui est utile pour contrôler ces applications afin de produire des fichiers PDF à partir de celles-ci.
 
 En raison d’une limitation de ces API Win32, AppMon ne peut pas distribuer ces événements d’interface utilisateur à certains types spécifiques de fenêtres, tels que les barres de menus flottantes (présentes dans certaines applications telles que TextPad), ni certains types de boîtes de dialogue dont le contenu ne peut pas être récupéré à l’aide des API Win32.
 
@@ -631,7 +631,7 @@ Ce tableau répertorie le type d’informations utilisées pour imprimer des for
   <tr>
    <td><p>Instructions relatives aux boîtes de dialogue supplémentaires spécifiques à l’application </p></td>
    <td><p>Spécifie les remplacements et les ajouts aux instructions de boîte de dialogue spécifiques à l’application. Cette section présente un exemple de ces informations. </p><p>Le fichier contenant ces informations est appmon.<i>`[appname]`</i>.addition.<i>`[locale]`</i>.xml. Par exemple, appmon.addition.en_US.xml.</p></td>
-   <td><p>Les fichiers de ce type peuvent être créés et modifiés à l’aide dʼune application dʼédition XML. (Consultez la section <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native</a>). </p><p><strong>Important</strong>: créez une boîte de dialogue supplémentaire spécifique à l’application pour chaque application native que votre serveur prendra en charge. </p></td>
+   <td><p>Les fichiers de ce type peuvent être créés et modifiés à l’aide dʼune application dʼédition XML. (Consultez la section <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Créer ou modifier un fichier XML de boîte de dialogue supplémentaire pour une application native</a>). </p><p><strong>Important</strong> : créez des instructions de boîte de dialogue supplémentaires spécifiques à l’application pour chaque application native que votre serveur prendra en charge. </p></td>
   </tr>
  </tbody>
 </table>
@@ -670,7 +670,7 @@ Le service Generate PDF prend en charge les fichiers XML de script afin de perm
 
 Les étapes dʼun fichier XML de script sont exécutées dans lʼordre et chacune dʼentre elles doit obligatoirement être réalisée avant de passer à la suivante. Le seul test conditionnel pris en charge est le délai d’expiration/de nouvelle tentative, qui entraîne l’arrêt d’un script si une étape ne se termine pas correctement dans un délai spécifique et après un certain nombre de tentatives.
 
-Outre le fait que les étapes sont séquentielles, les instructions d’une étape sont également exécutées dans l’ordre. Assurez-vous que les étapes et les instructions correspondent à l’ordre dans lequel un utilisateur effectue les mêmes étapes.
+Outre le fait que les étapes sont séquentielles, les instructions d’une étape sont également exécutées dans l’ordre. Vous devez vous assurer que les étapes et les instructions reflètent lʼordre dans lequel une personne exécuterait ces mêmes étapes.
 
 Chaque étape d’un fichier XML de script identifie l’élément de fenêtre qui doit apparaître si les instructions de l’étape sont correctement exécutées. Si une boîte de dialogue inattendue apparaît lors de l’exécution d’une action de script, le service Generate PDF recherche les fichiers XML de boîte de dialogue, comme décrit dans la section suivante.
 
@@ -793,7 +793,7 @@ Vous pouvez utiliser des expressions régulières dans les spécifications des l
 
 #### Organiser les éléments windowList et window {#ordering-the-window-and-windowlist-elements}
 
-Commande `window` et `windowList` comme suit :
+Organsez les éléments `window` et `windowList` comme suit :
 
 * Lorsque plusieurs éléments `window` apparaissent en tant qu’enfants dans un élément `windowList` ou `dialog`, ordonnez ces éléments `window` par ordre décroissant, la longueur des noms `caption` indiquant la position dans l’ordre.
 * Lorsque plusieurs éléments `windowList` apparaissent dans un élément `window`, ordonnez ces éléments `windowList` par ordre décroissant, les longueurs des attributs `caption` du premier élément `indexes/` indiquant la position dans l’ordre.
@@ -861,7 +861,7 @@ Le nom du fichier XML de boîte de dialogue supplémentaire doit employer le for
 >
 >Aucune des applications génériques spécifiées dans le fichier de configuration native2pdfconfig.xml ne possède de fichier XML de boîte de dialogue principal. La section [Ajouter ou modifier la prise en charge d’un format de fichier natif](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) décrit de telles spécifications.
 
-Commande `windowList` éléments qui apparaissent comme enfants dans un `window` élément . (Consultez la section [Ordonner les éléments window et windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)).
+Organisez les éléments `windowList` qui apparaissent en tant qu’enfants dans un élément `window`. (Consultez la section [Ordonner les éléments window et windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)).
 
 ### Modifier le fichier XML de la boîte de dialogue générale {#modifying-the-general-dialog-xml-file}
 

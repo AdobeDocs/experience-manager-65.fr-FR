@@ -1,6 +1,6 @@
 ---
 title: Utiliser les API pour accéder aux instances de lettre
-description: Découvrez les API et utilisez-les pour accéder par programmation aux instances de lettre dans l’environnement AEM Forms.
+description: Découvrez les API et utilisez-les pour accéder par programmation aux instances de lettre dans l’environnement AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -136,8 +136,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture des deux types d’instance de lettre présente deux cas de figure différents :
 
-* S’il existe une instance de lettre envoyée, un PDF représentant l’instance de lettre est ouvert. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées qui peuvent être utilisées à des fins d’exécution et de personnalisation selon les cas d’utilisation, comme la création d’un PDF/A.
-* S’il existe une instance Brouillon de lettre, l’interface utilisateur de création de correspondance est rechargée à l’état précédent exact tel qu’il était lors de la création du brouillon.
+* Dans le cas d’une instance de lettre envoyée, un PDF représentant l’instance de lettre s’ouvre. L’instance de lettre envoyée conservée sur le serveur contient également les données XML et XDP traitées qui peuvent être utilisées à des fins d’exécution et de personnalisation selon les cas d’utilisation, comme la création d’un PDF/A.
+* Dans le cas d’un brouillon d’instance de lettre, l’interface utilisateur de création de correspondance réapparaît exactement comme elle se présentait au moment où le brouillon a été créé.
 
 ### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
 

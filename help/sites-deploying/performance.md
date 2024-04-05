@@ -1,6 +1,6 @@
 ---
 title: Performance et évolutivité
-description: Ce livre blanc décrit les façons dont l’évolutivité a été intégrée à AEM, ainsi que les indicateurs de performances et les fonctionnalités de reprise sur sinistre.
+description: Cet article technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance pertinents et d’excellentes fonctions de reprise sur sinistre.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Performance et évolutivité{#performance-scalability}
 
-## Livre blanc : Évolutivité, performance AEM reprise sur sinistre {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## Article technique : évolutivité, performance et reprise sur sinistre d’AEM {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 Ce document technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance pertinents et d’excellentes fonctions de reprise sur sinistre.
 

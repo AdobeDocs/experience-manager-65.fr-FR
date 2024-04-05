@@ -1,6 +1,6 @@
 ---
 title: ClientContext
-description: Découvrez comment utiliser ClientContext pour afficher des informations sur la page active et le visiteur dans Adobe Experience Manager.
+description: Découvrez comment utiliser ClientContext pour afficher des informations sur la page active et le visiteur ou la visiteuse dans Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1961'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Les icônes (disponibles uniquement dans l’environnement de création) vous pe
 ![Icônes Modifier, Charger et Réinitialiser de la fenêtre ClientContext](do-not-localize/clientcontext_icons.png)
 
 * **Modifier**
-Une nouvelle page s’ouvre, vous permettant de [modification, ajout ou suppression d’une propriété de profil](#editingprofiledetails).
+Une nouvelle page s’ouvre, vous permettant de [modifier, d’ajouter ou de supprimer une propriété de profil](#editingprofiledetails).
 
 * **Charger**
 Vous pouvez [effectuer un choix dans une liste de profils et charger le profil](#loading-a-new-user-profile) que vous souhaitez tester.
@@ -62,13 +62,13 @@ Affiche les informations côté client suivantes :
 * La position **X de la souris**
 * La position **Y de la souris**
 
-**Flux d’activités** Cette section fournit des informations sur l’activité sociale de l’utilisateur sur différentes plateformes, par exemple les forums AEM, les blogs, les évaluations, etc.
+**Flux d’activités** Fournit des informations sur les activités sociales de l’utilisateur ou de l’utilisatrice sur différentes plateformes, telles que les forums AEM, les blogs, les évaluations, etc.
 
 **Campagne** Permet aux auteurs de simuler une expérience spécifique pour une campagne. Ce composant remplace la sélection normale de résolution et d’expérience de campagne pour permettre de tester différentes variantes.
 
 La résolution de campagne est normalement basée sur la propriété de priorité de la campagne. L’expérience est normalement sélectionnée en fonction de la segmentation.
 
-**Panier** Affiche des informations sur le panier d’achat, notamment les entrées de produit (titre, quantité, prixFormatted, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
+**Panier** Affiche des informations sur le panier, notamment les entrées de produit (titre, quantité, priceFormatted, etc.), les promotions résolues (titre, message, etc.) et les bons (code, description, etc.).
 
 Le magasin de sessions de panier informe également le serveur des modifications de promotion résolues (en fonction des modifications de segmentation) à l’aide de ClientContextCartServlet.
 
@@ -90,7 +90,7 @@ Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API 
 
 **Magasin JSONP** Un composant qui affiche le contenu qui dépend de votre installation.
 
-La norme JSONP est un complément de JSON qui permet de contourner la politique de même origine (ce qui empêche les applications Web de communiquer avec les serveurs se trouvant sur un autre domaine). Il consiste à encapsuler l’objet JSON dans un appel de fonction pour pouvoir le charger en tant que `<script>` de l’autre domaine (qui est une exception autorisée à la même stratégie d’origine).
+La norme JSONP est un complément de JSON qui permet de contourner la politique de même origine (ce qui empêche les applications Web de communiquer avec les serveurs se trouvant sur un autre domaine). Elle consiste à envelopper l’objet JSON dans un appel de fonction afin de pouvoir le charger sous forme de `<script>` à partir de l’autre domaine (ce qui est une exception autorisée de la politique de même origine).
 
   La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Consultez l’exemple figurant dans la section [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
@@ -98,7 +98,7 @@ La norme JSONP est un complément de JSON qui permet de contourner la politique 
 >
 >La boutique JSONP ne met pas en cache les informations figurant dans le cookie, mais récupère ces données à chaque chargement de la page.
 
-**Données de profil** Affiche les informations collectées dans le profil utilisateur. Par exemple, le genre, l’âge, l’adresse électronique, etc.
+**Données de profil** Affiche les informations collectées dans le profil utilisateur. Par exemple, le genre, l’âge ou l’adresse e-mail.
 
 **Segments résolus** Indique quels segments sont actuellement résolus (souvent selon d’autres informations affichées dans le contexte client). Ceci s’avère utile lors de la configuration d’une campagne.
 
@@ -152,7 +152,7 @@ Lorsque vous avez terminé, vous pouvez [réinitialiser le profil](#resetting-th
 
    ![Icône Charger le profil de ClientContext](do-not-localize/clientcontext_loadprofile.png)
 
-1. La boîte de dialogue s’ouvre, dans laquelle vous pouvez sélectionner le profil à charger :
+1. Cette action ouvre la boîte de dialogue, où vous pouvez sélectionner le profil à charger :
 
    ![La boîte de dialogue Chargeur de profil affiche la liste déroulante pour sélectionner un profil.](assets/clientcontext_profileloader.png)
 
@@ -162,7 +162,7 @@ Lorsque vous avez terminé, vous pouvez [réinitialiser le profil](#resetting-th
 
 Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
-1. Double-cliquez sur l’icône représentant l’utilisateur actuel. Le sélecteur s’ouvre. Utilisez les flèches pour parcourir les profils disponibles :
+1. Double-cliquez sur l’icône représentant l’utilisateur ou l’utilisatrice en cours. Le sélecteur s’ouvre ; utilisez les flèches pour passer en revue les profils disponibles :
 
    ![Sélecteur d’utilisateurs et d’utilisatrices](assets/clientcontext_profileselector.png)
 
@@ -176,7 +176,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 ### Modification de la plateforme du navigateur {#changing-the-browser-platform}
 
-1. Double-cliquez sur l’icône représentant la plateforme du navigateur. Le sélecteur s’ouvre. Utilisez les flèches pour naviguer et voir les plateformes/navigateurs disponibles :
+1. Double-cliquez sur l’icône représentant la plateforme de navigateur. Le sélecteur s’ouvre ; utilisez les flèches pour passer en revue les plateformes/navigateurs disponibles :
 
    ![Sélecteur de plateforme de navigateur](assets/clientcontext_browserplatform.png)
 
@@ -184,7 +184,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 ### Modification de la géolocalisation {#changing-the-geolocation}
 
-1. Double-cliquez sur l’icône de géolocalisation. Une carte étendue s’ouvre. Vous pouvez y faire glisser le marqueur vers un nouvel emplacement :
+1. Double-cliquez sur l’icône de géolocalisation. Une carte étendue s’ouvre ; vous pouvez y faire glisser le marqueur vers un nouvel emplacement :
 
    ![Détails de géolocalisation](assets/clientcontext_geomocationrelocate.png)
 
@@ -192,7 +192,7 @@ Vous pouvez également sélectionner un profil avec le curseur de sélection :
 
 ### Modification de la sélection des balises {#changing-the-tag-selection}
 
-1. Double-cliquez sur la section Nuage de balises de ClientContext. La boîte de dialogue s’ouvre, dans laquelle vous pouvez sélectionner des balises :
+1. Double-cliquez sur la section Nuage de balises de ClientContext. La boîte de dialogue s’ouvre, et vous pouvez y sélectionner des balises :
 
    ![Boîte de dialogue Nuage de balises](assets/clientcontext_tagselection.png)
 
@@ -210,7 +210,7 @@ La modification du contexte client peut être utilisée pour définir (ou réini
 
 ### Ajout d’un composant de propriété {#adding-a-property-component}
 
-Après avoir ouvert la **Page de conception de ClientContext**, vous pouvez également **Ajouter** une propriété entièrement nouvelle à l’aide des composants disponibles (les composants sont répertoriés dans le sidekick ou dans la variable **Insérer un nouveau composant** qui s’ouvre après un double-clic sur la **Faire glisser des composants ou des ressources ici** box) :
+Après avoir ouvert la **page de conception ClientContext**, vous pouvez également **Ajouter** une nouvelle propriété à l’aide des composants disponibles (les composants sont répertoriés dans le sidekick ou la boîte de dialogue **Insérer un nouveau composant** qui s’affiche si vous double-cliquez dans la zone **Faire glisser des composants ou éléments ici**) :
 
 ![Ajout d’une propriété à la fenêtre ClientContext](assets/clientcontext_alisonparker_new.png)
 

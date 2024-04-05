@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez définir :
 
 ## Notation d’en-tête {#heading-notation}
 
-Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Une balise de hachage (#) est utilisée pour un H1, deux balises de hachage (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
+Pour créer un en-tête en plaçant un hashtag (#) devant le titre, Un hashtag (#) est utilisé pour un H1, deux hashtags (##) pour un H2, etc. Vous pouvez utiliser jusqu’à six hashtags. Par exemple :
 
     `## This is an H2`
 

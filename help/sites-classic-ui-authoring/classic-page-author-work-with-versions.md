@@ -1,6 +1,6 @@
 ---
 title: Utiliser les versions de pages
-description: Découvrez le contrôle de version et comment créer un instantané d’une page à un moment donné.
+description: Découvrez le contrôle de version et apprenez à créer un instantané d’une page à un moment donné.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1351'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 70%
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créez une version d’une page.
-* Restaurez une page à une version précédente afin d’annuler une modification que vous avez apportée à une page.
+* Restaurez une version précédente d’une page, notamment afin d’annuler une modification que vous avez apportée à une page.
 * Comparez la version actuelle d’une page à une version précédente avec les différences mises en surbrillance dans le texte et les images.
 
 ## Création d’une version {#creating-a-new-version}
 
-Pour créer une version d’une page :
+Pour créer une version d’une page :
 
-1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez créer une version.
-1. Dans le Sidekick, sélectionnez la variable **Contrôle de version** , puis la variable **Créer une version** sous-onglet.
+1. Dans votre navigateur, ouvrez la page pour laquelle créer une version.
+1. Dans le sidekick, sélectionnez l’onglet **Contrôle de version**, puis le sous-onglet **Créer une version**.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -57,7 +57,7 @@ Pour restaurer la version précédente d’une page :
 Appliquez cette méthode pour restaurer une version de page. Elle peut également être utilisée pour restaurer des pages qui ont été supprimées :
 
 1. Dans la console **Sites web**, accédez à la page à restaurer et sélectionnez-la.
-1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer**:
+1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer** :
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
@@ -73,7 +73,7 @@ Appliquez cette méthode pour restaurer une version de page. Elle peut égalemen
 
 1. Dans la console **Sites web**, accédez au dossier à restaurer et sélectionnez-le.
 1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer**.
-1. Sélection **Restaurer l’arborescence...** ouvre la boîte de dialogue pour vous permettre de sélectionner l’arborescence à restaurer :
+1. Sélectionnez **Restaurer l’arborescence...** pour afficher une boîte de dialogue qui permet de sélectionner l’arborescence à restaurer :
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
@@ -84,7 +84,7 @@ Appliquez cette méthode pour restaurer une version de page. Elle peut égalemen
 Comparer la version actuelle d’une page à une version précédente :
 
 1. Dans votre navigateur, ouvrez la page que vous souhaitez comparer à une version précédente.
-1. Dans le Sidekick, sélectionnez la variable **Contrôle de version** , puis la variable **Restaurer la version** Sous-onglet .
+1. Dans le sidekick, sélectionnez l’onglet **Contrôle de version**, puis le sous-onglet **Restaurer une version**.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -97,7 +97,7 @@ Comparer la version actuelle d’une page à une version précédente :
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Dans le Sidekick, sélectionnez la variable **Restaurer la version** et cliquez sur le sous-onglet **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> pour afficher la version actuelle.**
+1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer une version** et cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
 
 ## Distorsion du temps Timewarp {#timewarp}
 
@@ -109,8 +109,8 @@ Pour ce faire :
 
 * Le système recherche la version de page qui était active à l’heure sélectionnée.
 * Ceci signifie que la version affichée a été créée/activée *avant* l’heure sélectionnée dans Timewarp.
-* Lorsque vous accédez à une page qui a été supprimée, celle-ci s’affiche également, à condition que les anciennes versions de la page soient toujours disponibles dans le référentiel.
-* Si aucune version publiée n’est trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (ceci afin d’éviter une erreur/page 404, ce qui signifie que vous ne pouvez plus naviguer).
+* Si vous accédez à une page qui a été supprimée, celle-ci sera également affichée, à condition toutefois que ses anciennes versions soient toujours disponibles dans le référentiel.
+* Si aucune version publiée n’est disponible, Timewarp revient à l’état actuel de la page dans l’environnement de création (cela permet d’éviter une erreur 404 qui vous empêcherait de continuer à naviguer).
 
 >[!NOTE]
 >
@@ -128,19 +128,19 @@ La version calendrier sert à afficher un jour spécifique :
 
 1. À l’aide des sélecteurs de date et d’heure, spécifiez la date/l’heure de votre choix, puis cliquez sur **Ouvrir**.
 
-   Timewarp affiche la page telle qu’elle se présentait dans son état publié avant/à la date choisie.
+   Timewarp affiche la page telle qu’elle était publiée avant/à la date choisie.
 
    >[!NOTE]
    >
-   >La fonction Timewarp ne fonctionne entièrement que si vous avez déjà publié la page. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+   >Timewarp ne fonctionne entièrement que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page actuelle dans l’environnement de création.
 
    >[!NOTE]
    >
-   >Si vous accédez à une page qui a été supprimée du référentiel, elle est correctement rendue si d’anciennes versions de la page sont toujours disponibles dans le référentiel.
+   >Si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez effectuer cette opération manuellement à l’aide de [Restaurer](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez procéder manuellement à l’aide de la fonction [Restaurer](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Une fois la consultation de la page terminée, cliquez sur :
 
@@ -169,26 +169,26 @@ Si vous souhaitez afficher la frise chronologique du document :
 
    * Toutes les lignes indiquent les versions publiées.
 Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.
-Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée pendant la période de la version verte initiale. La ligne jaune indique que la page a été modifiée à un moment donné pendant la version rouge, etc.
+Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale. La ligne jaune indique que la page a été modifiée pendant la version rouge, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Cliquez sur :
 
    1. Cliquez sur **Aller** pour afficher le contenu de la page publiée au moment sélectionné.
-   1. Lors de l’affichage de ce contenu, utilisez **Quitter Timewarp** pour quitter et revenir à la page de création actuelle.
+   1. Lorsque ce contenu s’affiche, utilisez **Quitter Timewarp** pour quitter la fonctionnalité et revenir à la page de création en cours.
 
 ### Limites du mode Timewarp {#timewarp-limitations}
 
 Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
-* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page actuelle dans l’environnement de création.
 * **Timewarp utilise des versions de page** : si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
-* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous pouvez effectuer cette opération manuellement à l’aide de [Restaurer](#main-pars-title-1).
+* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](#main-pars-title-1).
 
-* **La fonction Timewarp est uniquement basée sur le contenu de la page.** - Si des éléments (tels que des ressources de code, css et d’image) pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement. La raison est que ces éléments ne sont pas versionnés dans le référentiel.
+* **Timewarp est uniquement basé sur le contenu de la page.** Si des éléments (tels que des ressources de code, css et d’image) pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement. En effet, ces éléments ne sont pas versionnés dans le référentiel.
 
 >[!CAUTION]
 >

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2357'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Le code ci-dessous illustre la structure de réponse d’échec existante :
 
 Où :
 
-* `errorCausedBy` décrit la raison de l’échec.
+* `errorCausedBy` décrit le motif de l’échec.
 * `errors` mentionne l’expression SOM des champs qui ont échoué aux critères de validation avec le message d’erreur de validation.
 * Champ `originCode` ajouté par AEM et contenant le code d’état http renvoyé par le service externe.
 * Champ `originMessage` ajouté par AEM et contenant les données d’erreur brutes renvoyées par le service externe.
@@ -204,7 +204,7 @@ L’éditeur de règles vous permet d’effectuer les opérations suivantes :
 Un gestionnaire d’erreurs par défaut est pris en charge pour afficher les messages d’erreur sur les champs si la réponse d’erreur se trouve dans le schéma standard ou dans un échec de validation côté serveur.
 Pour comprendre comment créer et utiliser un gestionnaire d’erreurs par défaut à l’aide de l’action [Appeler un service de l’éditeur de règles](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=fr#invoke), prenons un exemple de formulaire adaptatif simple à deux champs, **Identifiant de l’animal domestique** et **Nom de l’animal domestique** et utilisons un gestionnaire d’erreurs standard sur le champ **Identifiant de l’animal domestique** pour vérifier les différentes erreurs renvoyées par le point d’entrée REST configuré pour appeler un service externe, par exemple, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Pour ajouter un gestionnaire d’erreur par défaut à l’aide de l’action Appeler un service de l’éditeur de règles, procéder comme suit :
 
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire, puis sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
+1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
 1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, **lorsque le [Nom du champ Identifiant de l&#39;animal domestique]** est modifié. L’option Sélectionner est modifiée à partir de la liste déroulante **Sélectionner un état**.
 1. Dans la section **Alors**, sélectionnez **[!UICONTROL Appeler un service]** dans la liste déroulante **Sélectionner une action**. 
@@ -308,7 +308,7 @@ Dans ce cas, le nom de la bibliothèque cliente est fourni comme `customfunction
 
 Pour utiliser un gestionnaire d’erreurs personnalisé à l’aide de l’action **[!UICONTROL Service Invoke de l’éditeur de règles]** :
 
-1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire, puis sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir l’éditeur de règles.
+1. Ouvrez un formulaire adaptatif en mode création, sélectionnez un composant de formulaire et sélectionnez **[!UICONTROL Éditeur de règles]** pour ouvrir ce dernier.
 1. Sélectionnez **[!UICONTROL Créer]**.
 1. Définissez une condition dans la section **Lorsque** de la règle. Par exemple, lorsque **[Nom du champ Identifiant de l’animal]** est modifié, sélectionnez **est modifié** dans la liste déroulante **Sélectionner un état**.
 1. Dans la section **Alors**, sélectionnez **[!UICONTROL Service Invoke]** dans la liste déroulante **Sélectionner une action**.

@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Affichage des composants en fonction du modèle utilisé{#displaying-components-based-on-the-template-used}
 
-Lorsqu’un auteur de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](../../forms/using/template-editor.md), l’auteur du formulaire peut afficher et utiliser des composants spécifiques en fonction de la stratégie de modèle. Vous pouvez spécifier une stratégie de contenu de modèle qui vous permet de choisir un groupe de composants visible par l’auteur du formulaire au moment de la création du formulaire.
+Lorsqu’un créateur ou une créatrice de formulaire crée un formulaire adaptatif à l’aide d’un [modèle](../../forms/using/template-editor.md), il ou elle peut afficher et utiliser des composants spécifiques en fonction de la politique de modèle. Vous pouvez spécifier une politique de contenu de modèle qui vous permet de choisir un groupe de composants visible par l’auteur ou l’autrice du formulaire au moment de la création du formulaire.
 
-## Modification de la stratégie de contenu d’un modèle {#changing-the-content-policy-of-a-template}
+## Modification de la politique de contenu d’un modèle {#changing-the-content-policy-of-a-template}
 
 Lorsque vous créez un modèle, il est créé sous `/conf` dans le référentiel de contenu. En fonction des dossiers que vous avez créés dans le répertoire `/conf`, le chemin d’accès à votre modèle est : `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
@@ -33,7 +33,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
 1. Dans CRXDE, accédez à : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/`.
 
-   Pour sélectionner un groupe de composants, une nouvelle stratégie de contenu est requise. Pour créer une stratégie, copiez-collez-la et renommez-la.
+   Pour sélectionner un groupe de composants, une nouvelle politique de contenu est nécessaire. Pour créer une politique, copiez-collez la politique par défaut et renommez-la.
 
    Le chemin d’accès à la politique de contenu par défaut est : `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`.
 
@@ -43,7 +43,7 @@ Effectuez les étapes suivantes pour afficher les composants dans la barre laté
 
 1. Sélectionnez la nouvelle politique que vous créez puis sélectionnez la propriété **composants** dans le panneau de droite avec le type `string[]`.
 
-   Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. La boîte de dialogue Modifier les composants vous permet d’ajouter ou de supprimer des groupes de composants à l’aide du **+** et **-** des boutons. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
+   Lorsque vous sélectionnez et ouvrez la propriété de composants, la boîte de dialogue Modifier les composants s’affiche. La boîte de dialogue Modifier les composants vous permet d’ajouter ou de supprimer des groupes de composants à l’aide des boutons **+** et **-**. Vous pouvez ajouter le groupe de composants qui comprend des composants du formulaire que vous souhaitez que les auteurs utilisent.
 
    ![Ajouter ou supprimer des composants dans la politique](assets/add-components-list1.png)
 

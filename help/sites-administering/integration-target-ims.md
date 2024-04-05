@@ -1,12 +1,12 @@
 ---
 title: Intégration à Adobe Target à l’aide d’IMS
-description: Découvrez comment intégrer AEM à Adobe Target à l’aide d’IMS.
+description: Découvrez l’intégration d’AEM à Adobe Target à l’aide d’IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1533'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Pour créer un projet avec Adobe Target qu’AEM peut utiliser, ouvrez Adobe D
 
 1. Vérifiez les informations d’identification, puis sélectionnez **Suivant** :
 
-   ![Création d’un projet](assets/integration-target-io-15.png)
+   ![Créer un projet](assets/integration-target-io-15.png)
 
 1. Sélectionnez les profils de produit requis et continuez avec **Enregistrer l’API configurée** :
 

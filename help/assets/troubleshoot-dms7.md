@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1393'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
 
 Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
-### Problème : les paramètres prédéfinis de la visionneuse ne sont pas publiés {#viewers-not-published}
+### Problème : les paramètres prédéfinis de la visionneuse ne sont pas publiés. {#viewers-not-published}
 
 **Débogage**
 
@@ -243,7 +243,7 @@ Dans CRXDE Lite, procédez comme suit :
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Exemple : `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Exemple : `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solution**
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2331'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Avant d’effectuer une opération DocConverter par programmation, vous devez cr
 
 **Référencer un document PDF utilisé pour déterminer la conformité au format PDF/A**
 
-Un document de PDF doit être référencé et transmis au service DocConverter pour déterminer si le document de PDF est compatible avec le PDF/A.
+Un document PDF doit être référencé et transmis au service DocConverter afin de déterminer si le document PDF est conforme au format PDF/A.
 
 **Définir des options d’exécution**
 

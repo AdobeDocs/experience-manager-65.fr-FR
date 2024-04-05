@@ -1,6 +1,6 @@
 ---
 title: Administration d’instances de workflow
-description: Découvrez comment la console de workflow fournit plusieurs outils pour administrer les instances de workflow afin de vous assurer qu’elles s’exécutent comme prévu.
+description: Découvrez la façon dont la console de workflow fournit plusieurs outils permettant d’administrer les instances de workflow pour vérifier qu’elles s’exécutent comme prévu.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -33,8 +33,8 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
-1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionner **Instances** vous pouvez ainsi afficher la liste des instances de workflow en cours.
+1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
+1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
 
    ![wf-96](assets/wf-96.png)
 
@@ -62,8 +62,8 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Suspension, reprise ou arrêt d’une instance de workflows {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionner **Instances** vous pouvez ainsi afficher la liste des instances de workflow en cours.
+1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
+1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -73,8 +73,8 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
 
-1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionner **Archiver** vous pouvez ainsi afficher la liste des instances de workflow qui se sont terminées avec succès.
+1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
+1. Sélectionnez **Archiver** pour afficher la liste des instances de workflow qui se sont terminées avec succès.
 
    ![wf-98](assets/wf-98.png)
 
@@ -83,7 +83,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ou de l’utilisatrice, comme par exemple :
    >
    >* L’utilisation de la fonction **Arrêter**
-   >* lorsqu’une page soumise à un workflow est (forcée) supprimée, le workflow est arrêté.
+   >* Lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
 
@@ -99,14 +99,14 @@ Ouvre une fenêtre pour afficher **Message d’échec**, **Étape**, et **Pile d
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
 
-* **Étape de reprise** - Exécute à nouveau l’instance du composant Étape de script. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
-* **Arrêter** - Arrêtez le workflow si l’erreur a provoqué une situation irréconciliable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
-* **Arrêter et réessayer** - Similaire à **Arrêter** mais qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
+* **Relancer l’étape** : exécute à nouveau l’instance du composant de l’étape de script. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
+* **Arrêter** : arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour celui-ci. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
+* **Arrêter et réessayer** : similaire à **Arrêter**, à ceci près qu’une nouvelle instance de workflow est lancée à l’aide de la payload, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionner **Échecs** vous pouvez ainsi afficher la liste des instances de workflow qui ne se sont pas terminées avec succès.
+1. Sélectionnez **Échecs** pour afficher la liste des instances de workflow qui ne se sont pas terminées correctement.
 1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
    ![wf-47](assets/wf-47.png)
@@ -117,7 +117,7 @@ Réduire le nombre d’instances de workflow améliore les performances du moteu
 
 Configurez la **configuration de la purge du workflow Adobe Granite** pour purger les instances de workflows en fonction de leur âge et de leur statut. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
 
-Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow spécifique lorsqu’elles s’exécutent pendant plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours afin de minimiser la taille du référentiel.
+Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours afin de minimiser la taille du référentiel.
 
 Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [ajouter une configuration OSGi au référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre de ces méthodes.
 
@@ -160,7 +160,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
   <tr>
    <td>Âge du workflow</td>
    <td>scheduledpurge.daysell</td>
-   <td>L’âge des instances de workflow à purger en jours.</td>
+   <td>L’âge des instances de workflow à purger, exprimé en jours.</td>
   </tr>
  </tbody>
 </table>
@@ -179,7 +179,7 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |
 
-## Utilisation de variables Workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
+## Utilisation de variables de workflow pour les banques de données détenues par le client ou la cliente {#using-workflow-variables-customer-datastore}
 
 Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur ou l’utilisatrice dans votre propre espace de stockage géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
 
@@ -195,7 +195,7 @@ L’illustration ci-dessous montre comment définir l’indicateur dans un workf
 
 ### API pour les métadonnées dans un enregistrement externe {#apis-for-metadata-external-storage}
 
-Pour stocker les variables en externe, implémentez les API exposées par le workflow.
+Pour stocker les variables en externe, implémentez les API exposées par le workflow.
 
 UserMetaDataPersistenceContext
 

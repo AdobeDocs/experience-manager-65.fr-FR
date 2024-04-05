@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1106'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Pour publier votre e-mail auprès du fournisseur de services de messagerie, vous
 
 Un e-mail ou une newsletter que vous souhaitez diffuser sur un service de messagerie, tel qu’ExactTarget, peut être créé(e) sous une campagne, à l’aide du modèle **Newsletter Geometrixx**. Vous pouvez également utiliser le modèle **E-mail Geometrixx Outdoors**. L’exemple d’e-mail ou de newsletter basé sur le modèle **E-mail Geometrixx Outdoors** est disponible à l’adresse suivante : `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Pour créer un email publié sur le service de messagerie configuré :
+Pour créer un e-mail qui sera publié sur le service de messagerie configuré :
 
 1. Sélectionnez **Sites web**, puis **Campagnes**. Sélectionnez une campagne.
 1. Cliquez sur **Nouveau** pour ouvrir la fenêtre **Créer une page**.
@@ -149,7 +149,7 @@ Les e-mails/newsletters peuvent être publiés sur votre service de messagerie e
 
    Si la publication se déroule correctement, AEM confirme que vous pouvez afficher l’e-mail dans ExactTarget ou Engagement Silverpop.
 
-   S’il existe ExactTarget, l’email publié peut être consulté en cliquant sur **Afficher le courrier électronique publié**. Vous accédez alors directement à la newsletter publiée dans ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Dans le cas d’ExactTarget, l’e-mail publié s’affiche en cliquant sur **Afficher l’e-mail publié**. Vous accédez alors directement à la newsletter publiée dans ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >

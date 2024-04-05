@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 ### Création d’une page {#creating-a-new-page}
 
-Avant de procéder à la modification, vous devez [création d’une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Avant de procéder à la modification, vous devez [créer une page](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
 ### Ouvrir une page {#opening-a-page}
 
@@ -42,7 +42,7 @@ Pour de nombreuses actions, telles que la modification, vous devez [ouvrir une p
 
 ### Modifier une page {#editing-a-page}
 
-Si votre instance comporte déjà des pages ou si vous avez créé une page, vous pouvez : [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) par :
+Si votre instance comporte déjà des pages existantes ou si vous venez de créer une page, vous pouvez [modifier la page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en procédant comme suit :
 
 * [Insertion d’un composant (paragraphe)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Modification d’un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)

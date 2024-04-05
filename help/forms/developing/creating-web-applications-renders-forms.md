@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ De même, si l’utilisateur sélectionne des données canadiennes, le formulair
 
 **Exemples de fichiers**
 
-Cette section utilise des fichiers d’exemple qui peuvent se trouver à l’emplacement suivant :
+Cette section utilise des fichiers d’exemple qui peuvent se trouver à l’emplacement suivant :
 
 &lt;*Répertoire d’installation de Forms Designe*>/Exemples/Forms/Bon de commande/Fragments de formulaire
 
@@ -142,13 +142,13 @@ En règle générale, vous ne devez pas placer de code client dans la méthode `
 Pour restituer un formulaire reposant sur les fragments à l’aide de l’API du service Forms, procédez comme suit :
 
 1. Incluez les fichiers JAR du client, tels que adobe-forms-client.jar, dans le chemin d’accès aux classes de votre projet Java. Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Récupérez la valeur du bouton radio qui est envoyé à partir du formulaire HTML, qui spécifie sʼil faut utiliser les données américaines ou canadiennes. Si American est envoyé, créez une `com.adobe.idp.Document` qui stocke les données dans la variable *Purchase Order US.xml*. De même, si la variable `com.adobe.idp.Document` qui stocke les données dans la variable *Purchase Order Canada.xml* fichier .
+1. Récupérez la valeur du bouton radio qui est envoyé à partir du formulaire HTML, qui spécifie sʼil faut utiliser les données américaines ou canadiennes. Si « American » est envoyé, créez un `com.adobe.idp.Document` qui stocke les données situées dans le fichier *Purchase Order US.xml*. Au cas où « Canadian » est envoyé, créez un `com.adobe.idp.Document` qui stocke les données situées dans le fichier *Purchase Order Canada.xml*.
 1. Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 1. Créez un objet `URLSpec` qui stocke les valeurs URI en utilisant son constructeur.
 1. Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
-1. Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Assurez-vous que la conception de formulaire et les fragments se trouvent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
-1. Appelez la méthode `setTargetURL` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URL cible vers laquelle les données du formulaire sont affichées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL vers laquelle un formulaire est envoyé pour effectuer les calculs.
+1. Appelez la méthode `setContentRootURI` de l’objet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de la racine du contenu URI. Vérifiez que la conception et les fragments du formulaire apparaissent dans l’URI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
+1. Appelez la méthode `setTargetURL` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URL cible vers laquelle les données du formulaire sont affichées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL où est envoyé un formulaire pour effectuer des calculs.
 1. Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
@@ -328,7 +328,7 @@ Le servlet Java capture les données publiées à partir de la page HTML en util
              }
 ```
 
-Le code de HTML suivant se trouve dans le fichier index.html qui a été créé lors de la configuration de l’environnement de développement. (Voir [Créer un projet web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+Le code HTML suivant se trouve dans le fichier index.html qui a été créé lors de la configuration de l’environnement de développement. (Voir [Créer un projet web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

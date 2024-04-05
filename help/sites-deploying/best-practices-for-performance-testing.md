@@ -59,7 +59,7 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 * **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
 
-* Outils de test de chargement de site web, tels que [Vercara](https://vercara.com/website-performance-management) peut également être utilisé.
+* Des outils de test de chargement de site web tels que [Vercara](https://vercara.com/website-performance-management) peuvent également être utilisés.
 * Lors du test de sites web mobiles ou réactifs, un ensemble distinct d’outils doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme la 3G ou EDGE. Parmi les outils les plus utilisés, on peut citer :
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.

@@ -1,6 +1,6 @@
 ---
 title: Contrôler l’accès à un document protégé par une politique
-description: Découvrez comment afficher, gérer et contrôler l’accès à vos documents protégés par une stratégie.
+description: Découvrez comment afficher, gérer et contrôler l’accès à vos documents protégés par une politique.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
@@ -11,35 +11,35 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2167'
-ht-degree: 22%
+ht-degree: 98%
 
 ---
 
 # Contrôler l’accès à un document protégé par une politique {#controlling-access-to-policy-protected-documents}
 
-Vous pouvez contrôler la manière dont les destinataires utilisent vos documents protégés par une stratégie, quelle que soit la manière dont vous les distribuez.
+Vous pouvez contrôler la manière dont les destinataires utilisent vos documents protégés par une politique, quel que soit leur mode de distribution.
 
-La page Documents vous permet d’effectuer les tâches suivantes :
+La page Documents vous permet d’effectuer les tâches suivantes :
 
-* Recherchez et affichez les détails des documents protégés par une stratégie. Vous pouvez afficher des informations sur le nom du document, le nom de l’éditeur, le nom de la stratégie et la date d’application de la stratégie. Si la stratégie qui protégeait un document est supprimée, vous pouvez également voir l’ID de stratégie supprimé sous le nom de la stratégie. Les utilisateurs peuvent afficher et gérer leurs propres documents protégés par une stratégie. Les administrateurs peuvent afficher et gérer tous les documents protégés par une stratégie.
-* Modifiez les détails de la stratégie appliquée à un document. Les utilisateurs peuvent modifier leurs propres stratégies, les administrateurs peuvent modifier des stratégies partagées et personnelles et les coordinateurs de jeux de stratégies peuvent modifier des stratégies partagées dans les jeux de stratégies pour lesquels ils disposent d’autorisations. Vous pouvez accéder à la stratégie associée à un document directement à partir de la page Détails du document .
-* Révoquez et rétablissez l’accès à un document protégé par une stratégie. Les administrateurs peuvent révoquer et rétablir l’accès à n’importe quel document. Les coordinateurs de jeux de stratégies (qui sont autorisés à gérer des documents) peuvent révoquer et rétablir l’accès aux documents protégés par une stratégie qui utilisent des stratégies partagées de leurs jeux de stratégies. Les utilisateurs peuvent révoquer l’accès à leurs documents protégés par une stratégie s’ils ont créé la stratégie qui protège le document ou si la stratégie est partagée et autorise cette fonctionnalité.
-* Changer la stratégie appliquée à un document. Les utilisateurs qui appliquent des stratégies à des documents peuvent changer de stratégie s’ils les ont créées ou s’il s’agit d’une stratégie partagée qui active cette fonctionnalité. Les coordinateurs de jeux de stratégies peuvent changer de stratégie à partir de leurs jeux de stratégies. Les administrateurs peuvent changer de stratégie appliquée à n’importe quel document.
+* Rechercher et afficher les détails des documents protégés par une politique. Les informations disponibles englobent le nom du document, le nom de l’éditeur, le nom de la politique et la date d’application de la politique. Si la politique qui protégeait un document est supprimée, vous pouvez également voir l’ID de la politique supprimé sous le nom de la politique. Les utilisateurs et utilisatrices peuvent afficher et gérer leurs propres documents protégés par une politique. Les administrateurs et administratrices peuvent afficher et gérer tous les documents protégés par une politique.
+* Modifiez les détails de la politique appliquée à un document. Les utilisateurs et utilisatrices peuvent modifier leurs propres politiques, les administrateurs et administratrices peuvent modifier des politiques partagées et personnelles et les coordinateurs et coordinatrices de jeux de politiques peuvent modifier des politiques partagées dans les jeux de politiques pour lesquels ils disposent d’autorisations. Vous pouvez accéder à la politique associée à un document directement à partir de la page Détails du document.
+* Révoquer et rétablir l’accès à un document protégé par une politique. Les administrateurs et administratrices peuvent révoquer et rétablir l’accès à n’importe quel document. Les coordinateurs et coordinatrices de jeux de politiques (qui sont autorisés à gérer des documents) peuvent révoquer et rétablir l’accès aux documents protégés par une politique qui utilisent des politiques partagées de leurs jeux de politiques. Les utilisateurs et utilisatrices peuvent révoquer l’accès à leurs documents protégés par une politique s’ils ont créé la politique qui protège le document ou si la politique est partagée et autorise cette fonctionnalité.
+* Changer la politique appliquée à un document. Les utilisateurs et utilisatrices qui appliquent des politiques à des documents peuvent changer de politique s’ils les ont créées ou s’il s’agit d’une politique partagée qui active cette fonctionnalité. Les coordinateurs et coordinatrices de jeux de politiques peuvent changer de politique dans leurs jeux de politiques. Les administrateurs et administratrices peuvent changer de politique appliquée à n’importe quel document.
 
-Lorsqu’un document est protégé par une stratégie et que vous révoquez des privilèges d’accès ou changez de stratégie appliquée, les modifications prennent effet comme suit :
+Lorsqu’un document est protégé par une politique et que vous révoquez des privilèges d’accès ou changez de politique appliquée, les modifications prennent effet comme suit :
 
-* Si le document est en ligne, les modifications sont appliquées immédiatement, sauf si l’utilisateur l’a ouvert. Dans ce cas, l’utilisateur doit fermer le document pour que les modifications soient prises en compte.
-* Si un destinataire utilise le document hors connexion (par exemple, sur un ordinateur portable), les modifications prennent effet la prochaine fois que le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
+* Si le document est en ligne, les modifications sont appliquées immédiatement, sauf si l’utilisateur ou l’utilisatrice l’a ouvert. Dans ce cas, l’utilisateur ou l’utilisatrice doit fermer le document pour que les modifications soient prises en compte.
+* Si un ou une destinataire utilise le document hors connexion (par exemple, sur un ordinateur portable), les modifications prennent effet la prochaine fois que le ou la destinataire se synchronise avec Document Security en ouvrant un document protégé par une politique.
 
 ## Affichage des informations sur un document {#view-information-about-a-document}
 
-Pour chaque document répertorié dans la page Documents, vous pouvez afficher le nom du document, le nom de l’éditeur, le nom de la stratégie et la date à laquelle le document a été protégé. Si la stratégie qui protégeait un document a été supprimée, l’ID de la stratégie est répertorié sous Nom de la stratégie.
+Pour chaque document répertorié dans la page Documents, vous pouvez afficher le nom du document, le nom de l’éditeur, le nom de la politique et la date à laquelle le document a été protégé. Si la politique qui protégeait un document a été supprimée, l’ID de la politique est répertorié sous Nom de la politique.
 
-Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un document particulier sur la page Détails du document :
+Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un document particulier sur la page Détails du document :
 
 >[!NOTE]
 >
->Utilisez le lien Nom de la stratégie sur la page Détails du document pour accéder aux stratégies générées automatiquement dans Microsoft Outlook pour les destinataires d’un document joint à un message électronique. Ces stratégies n’apparaissent pas dans la page des stratégies.
+>Utilisez le lien Nom de la politique sur la page Détails du document pour accéder aux politiques générées automatiquement dans Microsoft Outlook pour les destinataires d’un document joint à un e-mail. Ces politiques n’apparaissent pas dans la page des politiques.
 
 **Nom du document :** nom du document sélectionné.
 
@@ -49,7 +49,7 @@ Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un do
 
 **Éditeur :** nom de l’utilisateur qui a appliqué la politique au document.
 
-**Nom de la politique :** nom de la politique utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la stratégie. Utilisez ce lien pour accéder aux stratégies générées par Acrobat pour les destinataires d’un document joint à un message électronique dans Outlook. Ces stratégies n’apparaissent pas dans la page Stratégies .
+**Nom de la politique :** nom de la politique utilisée pour protéger le document. Vous pouvez cliquer sur le nom pour ouvrir la politique. Utilisez ce lien pour accéder aux politiques générées par Acrobat pour les destinataires d’un document joint à un e-mail dans Outlook. Ces politiques n’apparaissent pas dans la page Politiques.
 
 **Type de politique :** type de la politique appliquée au document.
 
@@ -57,33 +57,33 @@ Vous pouvez également afficher plus de détails, décrits ci-dessous, sur un do
 
 **Itérations associées :** si des itérations sont associées au document, elles apparaissent aussi dans la liste. Cliquez sur le lien pour afficher la liste des itérations associées pour le document.
 
-Les utilisateurs peuvent afficher des informations sur leurs documents protégés. Les administrateurs peuvent afficher des informations sur les documents protégés par une stratégie par un utilisateur. Les coordinateurs de jeux de stratégies peuvent afficher des informations sur les documents protégés par des stratégies provenant de leurs jeux de stratégies.
+Les utilisateurs et utilisatrices peuvent afficher des informations sur leurs documents protégés. Les administrateurs et administratrices peuvent afficher des informations sur les documents protégés par une politique par un utilisateur ou une utilisatrice. Les coordinateurs et coordinatrices de jeux de politiques peuvent afficher des informations sur les documents protégés par des politiques provenant de leurs jeux de politiques.
 
-1. Dans la page Document Security, cliquez sur Documents.
-1. Dans la liste des documents, cliquez sur le document approprié. La page Détails du document s’ouvre, affichant des informations détaillées sur le document. Cette page fournit également des options permettant de révoquer l’accès au document, de changer de stratégie et d’afficher les événements liés à ce document.
+1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la liste des documents, cliquez sur le document approprié. La page Détails du document s’ouvre, affichant des informations détaillées relatives au document. Cette page fournit également des options permettant de révoquer l’accès au document, de changer de politique et d’afficher les événements liés à ce document.
 
 ## Affichage des itérations associées pour un document {#view-related-iterations-for-a-document}
 
-Si le suivi des itérations associées est activé, vous pouvez effectuer le suivi des versions d’un document enregistrées par différents utilisateurs. Cette fonctionnalité est prise en charge uniquement par certaines applications, telles que PTC Pro/ENGINEER Wildfire.
+Si le suivi des itérations associées est activé, vous pouvez suivre les versions d’un document enregistrées par différents utilisateurs ou différentes utilisatrices. Cette fonctionnalité n’est prise en charge que par certaines applications, telles que PTC Pro/ENGINEER Wildfire.
 
-Cette fonctionnalité est utile lorsque plusieurs utilisateurs collaborent et enregistrent différentes versions du même document. Document Security peut effectuer le suivi des différentes itérations. Par conséquent, vous pouvez facilement afficher les informations sur les documents pour les différentes versions.
+Cette fonctionnalité est utile lorsque plusieurs utilisateurs ou utilisatrices collaborent et enregistrent différentes versions du même document. Document Security peut effectuer le suivi des différentes itérations. Par conséquent, vous pouvez facilement afficher les informations sur les documents pour les différentes versions.
 
-Si cette fonction est activée, vous pouvez afficher les itérations associées d’un document à partir de la page Documents.
+Si cette fonctionnalité est activée, vous pouvez afficher les itérations associées d’un document à partir de la page Documents.
 
-1. Affichez la page Détails du document d’un document. (Voir [Affichage des informations sur un document](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
-1. Cliquez sur Afficher les itérations associées. Cette option n’est disponible que si la fonction est activée. La liste des itérations associées s’affiche. Pour chaque itération, vous pouvez afficher les informations suivantes :
+1. Affichez la page Détails du document pour un document. (voir [Affichage des informations sur un document](controlling-access-policy-protected-documents.md#view-information-about-a-document)).
+1. Cliquez sur Afficher les itérations associées. Cette option n’est disponible que si la fonctionnalité est activée. La liste des itérations associées s’affiche. Pour chaque itération, vous pouvez afficher les informations suivantes :
 
    * **Itération :** nom de fichier Il peut différer du nom de fichier d’origine et se termine généralement par un numéro de version.
    * **Editeur :** éditeur du document d’origine
    * **Créé par :** utilisateur qui a enregistré l’itération
    * **Date de création :** date et heure d’enregistrement de l’itération
-   * **Politique :** politique qui protège l’itération Différentes itérations peuvent être protégées par différentes stratégies.
+   * **Politique :** politique qui protège l’itération Différentes itérations peuvent être protégées par différentes politiques.
 
 1. Pour afficher la page Détails du document de cette itération, cliquez sur le nom de fichier d’une itération.
 
 ## Révocation et rétablissement de l’accès aux documents {#revoking-and-reinstating-access-to-documents}
 
-Vous pouvez révoquer et rétablir l’accès aux documents protégés par une stratégie :
+Vous pouvez révoquer et rétablir l’accès aux documents protégés par une politique :
 
 **Utilisateurs :** peuvent révoquer ou rétablir l’accès aux documents qu’ils protègent avec leurs propres politiques personnelles ou avec des politiques partagées pour lesquelles le droit de révocation est activé pour les utilisateurs qui appliquent la politique. les utilisateurs qui ne peuvent pas révoquer l’accès à un document ou changer de politique doivent contacter un administrateur.
 
@@ -91,57 +91,57 @@ Vous pouvez révoquer et rétablir l’accès aux documents protégés par une s
 
 **Coordinateurs de jeux de politiques :** peuvent révoquer ou rétablir les privilèges d’accès aux documents protégés par des politiques appartenant à leurs jeux.
 
-Lorsque vous révoquez ou rétablissez des privilèges d’accès aux documents, la modification prend effet aux moments suivants :
+Lorsque vous révoquez ou rétablissez des privilèges d’accès à des documents, l’application de la modification varie selon l’état du document :
 
-* Si le document est en ligne et fermé, la modification prend effet la prochaine fois que le destinataire se synchronise avec Document Security en ouvrant un document protégé par une stratégie.
-* Si le document est en ligne et ouvert, la modification prend effet lorsque le destinataire ferme le document.
+* Si le document est en ligne et fermé, la modification est appliquée lorsque le ou la destinataire se synchronise avec Document Security en ouvrant un document protégé par une politique.
+* Si le document est en ligne et ouvert, la modification prend effet lorsque le ou la destinataire le ferme.
 * Si le document est hors ligne (c’est-à-dire utilisé sans connexion Internet, par exemple sur un ordinateur portable), la modification prend effet lors de la prochaine synchronisation du destinataire avec Document Security.
 
-**Révocation de l’accès à un document protégé par une stratégie**
+**Révocation de l’accès à un document protégé par une politique**
 
-1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la page Document Security, cliquez sur Documents.
 1. Cochez la case en regard du document approprié, puis cliquez sur Révoquer. Vous pouvez révoquer l’accès à plusieurs documents à la fois.
-1. Sélectionnez un message à afficher pour les utilisateurs qui tentent d’ouvrir le document après sa révocation :
+1. Sélectionnez un message à afficher pour les personnes qui tentent d’ouvrir le document après sa révocation :
 
    * **Message général :** indique que l’auteur a révoqué le document.
    * **Document arrêté :** indique que l’auteur a arrêté le document.
-   * **Document révisé**: indique que l’auteur a modifié le document.
+   * **Document révisé** : indique que l’auteur ou l’autrice a révisé le document.
 
 1. (Facultatif) Si une version plus récente du document est disponible, saisissez l’URL et cliquez sur Tester pour vérifier l’URL.
-1. Cliquez sur OK, puis de nouveau sur OK pour revenir à la page Documents.
+1. Cliquez sur OK, puis de nouveau sur OK pour revenir à la page Documents.
 
-**Rétablissement des privilèges d’accès aux documents**
+**Rétablissement de privilèges d’accès aux documents**
 
-1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la page Document Security, cliquez sur Documents.
 1. Dans la liste des documents, cliquez sur le document approprié.
-1. Cliquez sur Annuler la révocation, puis sur OK.
+1. Cliquez sur Annuler la révocation, puis sur OK.
 
-## changer une stratégie appliquée à un document ; {#switch-a-policy-that-is-applied-to-a-document}
+## Changement de la politique appliquée à un document {#switch-a-policy-that-is-applied-to-a-document}
 
-Les utilisateurs, les coordinateurs de jeux de stratégies et les administrateurs peuvent changer la stratégie appliquée à un document protégé par une stratégie (vous ne pouvez appliquer qu’une seule stratégie à la fois à un document). Les utilisateurs peuvent changer de stratégie appliquée à leurs propres documents protégés par une stratégie s’ils ont créé la stratégie ou si la stratégie est partagée et que cette fonctionnalité est activée. Dans le cas contraire, l’administrateur ou le coordinateur de jeux de stratégies doit changer de stratégie. Les administrateurs peuvent changer de stratégie pour les documents protégés par une stratégie de n’importe quel utilisateur. Les coordinateurs de jeux de stratégies peuvent changer de stratégie à partir de leurs jeux de stratégies.
+Les utilisateurs et utilisatrices, les coordinateurs et coordinatrices de jeux de politiques et les équipes d’administration peuvent changer la politique appliquée à un document protégé par une politique (vous ne pouvez appliquer qu’une seule politique à la fois à un document). Les utilisateurs et utilisatrices peuvent changer la politique appliquée à leurs propres documents protégés par une politique s’ils ont créé la politique ou si la politique est partagée et que cette fonctionnalité est activée. Dans le cas contraire, l’équipe d’administration, le coordinateur ou la coordinatrice de jeux de politiques doit changer de politique. Les administrateurs et administratrices peuvent changer la politique des documents protégés de l’ensemble des utilisateurs et utilisatrices. Les coordinateurs et coordinatrices de jeux de politiques peuvent changer de politique dans leurs jeux de politiques.
 
-Lorsque vous changez de stratégie, la nouvelle stratégie est appliquée comme suit :
+Lorsque vous changez de politique, la nouvelle politique est appliquée comme suit :
 
-* Si le document est en ligne et fermé, la modification prend effet la prochaine fois que le destinataire se synchronise avec Document Security en ouvrant un document en ligne protégé par une stratégie.
-* Si le document est en ligne et ouvert, la modification prend effet lorsque l’utilisateur ferme le document.
-* Si le document est hors ligne (utilisé sans connexion Internet ou réseau active, sur un ordinateur portable par exemple), la modification est appliquée la prochaine fois que l’utilisateur se synchronise avec Document Security en ouvrant un document en ligne protégé par une stratégie.
+* Si le document est en ligne et fermé, la modification prend effet la prochaine fois que le ou la destinataire se synchronise avec Document Security en ouvrant un document en ligne protégé par une politique.
+* Si le document est en ligne et ouvert, la modification prend effet lorsque la personne ferme le document.
+* Si le document est hors ligne (utilisé sans connexion à Internet ou au réseau, sur un ordinateur portable par exemple), la modification est appliquée lorsque la personne se synchronise avec Document Security en ouvrant un document en ligne protégé par une politique.
 
 >[!NOTE]
 >
->Pour autoriser l’accès anonyme à un document protégé par une stratégie qui ne dispose actuellement pas de cet accès, supprimez la stratégie existante dans l’application cliente, puis appliquez une stratégie qui autorise l’accès anonyme. Si vous changez de stratégie, les utilisateurs doivent toujours se connecter pour accéder au document.
+>Si vous souhaitez autoriser un accès anonyme à un document protégé par une politique qui ne permet pas ce type d’accès, vous devez supprimer la politique existante dans l’application cliente, puis en appliquer une qui autorise l’accès anonyme. Si vous changez de politique, les utilisateurs et utilisatrices doivent ouvrir une session pour accéder au document.
 
-1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la page Document Security, cliquez sur Documents.
 1. Dans la liste des documents, cliquez sur le document approprié.
-1. Cliquez sur Changer de stratégie. Une liste de 100 stratégies au maximum s’affiche.
-1. Si la stratégie souhaitée ne s’affiche pas, sélectionnez Nom de la stratégie ou ID de la stratégie dans la liste Rechercher, saisissez le nom ou l’identifiant, puis cliquez sur Rechercher.
-1. Cliquez sur une nouvelle stratégie dans la liste.
-1. Cliquez sur Changer de stratégie, puis sur OK pour revenir à la page Documents.
+1. Cliquez sur Changer de politique. Une liste proposant jusqu’à 100 politique apparaît.
+1. Si la politique souhaitée n’apparaît pas, sélectionnez Nom de la politique ou ID de la politique dans la liste Rechercher, saisissez le nom ou l’ID de la politique, puis cliquez sur Rechercher.
+1. Cliquez sur une nouvelle politique dans la liste.
+1. Cliquez sur Changer de politique, puis sur OK pour revenir à la page Documents.
 
 ## Recherche d’un document {#search-for-a-document}
 
-Vous pouvez rechercher des documents sur la page Documents en combinant des critères de période et des critères de recherche disponibles dans la liste. Ces critères incluent le nom du document, le nom de la stratégie ou tous les documents.
+Vous pouvez rechercher des documents dans la page Documents en combinant des critères de périodes et de recherche disponibles dans la liste. Ces critères incluent le nom du document, le nom de la politique ou tous les documents.
 
-Certaines options de recherche supplémentaires ne sont disponibles que pour les administrateurs :
+Certaines options de recherche supplémentaires ne sont disponibles que pour les administrateurs et administratrices :
 
 **ID du document :** numéro d’ID unique attribué par Document Security au document lorsque la politique est appliquée.
 
@@ -153,45 +153,45 @@ Certaines options de recherche supplémentaires ne sont disponibles que pour les
 
 **Nom de la politique :** nom de la politique appliquée au document.
 
-**Tous les documents :** tous les documents protégés par les administrateurs et les utilisateurs. L’utilisation de l’option Tous les documents pour effectuer une recherche peut renvoyer une longue liste de documents.
+**Tous les documents :** tous les documents protégés par les administrateurs et les utilisateurs. L’utilisation de cette option risque de renvoyer une liste de documents particulièrement longue.
 
-1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la page Document Security, cliquez sur Documents.
 1. Dans la liste Rechercher, sélectionnez les critères de recherche requis.
 
-   Vous pouvez spécifier les critères comme ID de document, nom du document, nom de l’éditeur, identifiant de la stratégie, nom de la stratégie ou tous les documents.
+   Vous pouvez spécifier les critères tels que l’ID du document, le nom du document, le nom de l’éditeur ou de l’éditrice, l’ID de la politique, le nom de la politique ou tous les documents.
 
-   Si vous indiquez le nom de l’éditeur, cliquez sur l’icône Carnet d’adresses, indiquez le domaine dans lequel vous souhaitez rechercher l’utilisateur, puis cliquez sur OK pour revenir à la page de recherche Documents.
+   Si vous indiquez le nom de l’éditeur ou de l’éditrice, cliquez sur l’icône Carnet d’adresses, indiquez le domaine dans lequel rechercher l’utilisateur ou l’utilisatrice, puis cliquez sur OK pour revenir à la page de recherche Documents.
 
-1. (Facultatif) Dans la liste Date, sélectionnez une option de période. Si vous sélectionnez Dates personnalisées, saisissez la date au format aaaa/mm/jj dans les zones qui s’affichent ou utilisez le sélecteur de date pour spécifier la période :
+1. (Facultatif) Dans la liste Date, sélectionnez une option de période. Si vous sélectionnez Dates personnalisées, saisissez la date au format aaaa/mm/jj dans les zones qui s’affichent ou utilisez le sélecteur de date pour spécifier la période :
 
-   * Cliquez sur le calendrier pour ouvrir le sélecteur de date.
-   * Utilisez les flèches pour trouver un an et un mois.
+   * Cliquez sur le calendrier pour ouvrir le Sélecteur de date.
+   * Utilisez les flèches pour sélectionner l’année et le mois.
    * Cliquez sur un jour du mois dans le calendrier.
-   * Cliquez sur OK pour fermer le sélecteur de date.
+   * Cliquez sur OK pour fermer le Sélecteur de date.
 
 1. Cliquez sur Rechercher.
 
 ## Tri de la liste des documents {#sort-the-document-list}
 
-Vous pouvez trier la liste des documents par en-tête de colonne. Les icônes en forme de triangle en regard de l’en-tête de colonne indiquent la colonne à trier. Un triangle orienté vers le haut indique l’ordre croissant, tandis qu’un triangle orienté vers le bas indique l’ordre décroissant.
+Vous pouvez trier la liste des documents par en-tête de colonne. Le triangle situé à côté de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 
-1. Dans la page Document Security, cliquez sur Documents.
+1. Dans la page Document Security, cliquez sur Documents.
 1. Cliquez sur l’en-tête de colonne approprié.
 1. Pour modifier l’ordre de tri, cliquez de nouveau sur la colonne.
 
-## Ajout d’une page de garde à des documents protégés par une stratégie {#add-cover-page-to-policy-protected-documents}
+## Ajout d’une page de garde à un document protégé par une police {#add-cover-page-to-policy-protected-documents}
 
-Si la plupart des visionneuses ne sont pas Adobe PDF, si vous ouvrez un document protégé par Document Security, la première page s’affiche sous la forme d’une page vierge ou l’application s’arrête sans ouvrir le document.
+Dans la plupart des visionneuses PDF autres qu’Adobe, si vous ouvrez un document protégé par Document Security, la première page est vide ou l’application s’interrompt sans ouvrir le document.
 
-Vous pouvez utiliser la prise en charge de la page 0 (Wrapper Document) pour permettre aux visionneuses non Adobe PDF d’ouvrir un document protégé et d’afficher une page de garde dans le document.
+Vous pouvez utiliser la prise en charge Page 0 (Wrapper Document) pour permettre aux visionneuses PDF autres qu’Adobe d’ouvrir un document protégé et d’afficher la page de garde du document.
 
 >[!NOTE]
 >
->Lors de l’affichage de tels documents (contenant une page 0) dans Adobe Reader/Acrobat ou Mobile Reader, le document protégé est ouvert par défaut.
+>Lors de l’affichage de tels documents (contenant une page 0) dans Adobe Reader/Acrobat ou Mobile Reader, le document protégé est ouvert par défaut.
 
-**Pour ajouter une page de garde à un document protégé par une stratégie**
+**Pour ajouter une page de garde à un document protégé par une police**
 
-Utilisez les processus suivants dans Workbench :
+Utilisez les processus suivants dans Workbench :
 
 **Protection
 du document avec une page de garde :** sécurise un document PDF avec la politique spécifiée et ajoute une page de garde au document.

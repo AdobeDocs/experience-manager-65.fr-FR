@@ -5,7 +5,7 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -108,7 +108,7 @@ Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informatio
 
 #### Utilisation des chemins et des balises pour limiter les modèles de fragment de contenu disponibles dans le dossier {#tags-paths-for-models-in-folder}
 
-Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous commencez à essayer des choses, mais il est plus utile lorsque vous avez beaucoup de fragments. Il est donc bon de savoir qu’elle est là, même si vous ne l’exploiterez pas encore à son plein potentiel.
+Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous venez juste de commencer, mais cela peut s’avérer très utile lorsque vous avez de nombreux fragments. Il est donc bon de savoir qu’elle est là, même si vous ne l’exploiterez pas encore à son plein potentiel.
 
 Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier les choses ainsi qu’aux autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
@@ -199,9 +199,9 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 * **Contenu associé**
 
-  Celui-ci est assez évident car il s&#39;agit d&#39;un onglet de l&#39;éditeur.
+  Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
 
-  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (par exemple, des images) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
+  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour le créateur ou la créatrice lors de la création d’une page.
 
 * **Aperçu**
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -50,30 +50,30 @@ Cliquez sur le lien **[!UICONTROL Cliquez ici pour configurer votre expérience]
 
 La page d’accueil [!DNL Assets] inclut les sections suivantes :
 
-* Section d’accueil
+* Section Bievenue
 * Section Widget
 
-**Section d’accueil**
+**Section Bienvenue**
 
-Si votre profil existe, la section Bienvenue affiche un message de bienvenue qui vous est adressé. Elle affiche également votre image de profil et une image de bienvenue (si celle-ci est déjà configurée).
+Si votre profil existe, la section Bienvenue affiche un message de bienvenue à votre intention. Elle affiche également votre image de profil et une image de bienvenue (si celle-ci est déjà configurée).
 
 Si votre profil est incomplet, la section Bienvenue affiche un message de bienvenue générique et un espace réservé pour votre image de profil.
 
 **Section Widget**
 
-Cette section apparaît sous la section Bienvenue et affiche des widgets prêts à l’emploi sous les sections suivantes :
+Cette section apparaît sous la section Bienvenue et affiche des widgets prêts à l’emploi sous les sections suivantes :
 
 * Activité
 * Récent
-* Découvrez
+* Découvrir
 
-**Activité**: dans cette section, la variable **[!UICONTROL Mon activité]** Le widget affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendu), par exemple les chargements de ressources, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**Activité** : dans cette section, le widget **[!UICONTROL Mon activité]** affiche les activités récentes effectuées avec les ressources (y compris les ressources sans rendu) par la personne connectée (par exemple, les chargements de ressources, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages).
 
 **Récent** : le widget **[!UICONTROL Récemment consultés]** de cette section affiche les entités auxquelles l’utilisateur connecté a récemment accédé, y compris les dossiers, les collections et les projets.
 
 **Découvrir** : le widget **[!UICONTROL Nouveau]** de cette section affiche les ressources et les rendus récemment chargés vers le déploiement [!DNL Assets].
 
-Pour permettre la purge des données d’activité d’utilisateur, activez le **[!UICONTROL service de purge d’événement de gestion des ressources numériques]** dans le gestionnaire de configuration. Une fois ce service activé, les activités de l’utilisateur connecté dépassant un nombre spécifié sont supprimées par le système.
+Pour permettre la purge des données d’activité d’utilisateur, activez le **[!UICONTROL service de purge d’événement de gestion des ressources numériques]** dans le gestionnaire de configuration. Une fois ce service activé, les activités de la personne connectée dépassant un nombre spécifié sont supprimées par le système.
 
 L’écran de bienvenue fournit des aides à la navigation, par exemple des icônes dans la barre d’outils pour accéder aux dossiers, aux collections et aux catalogues.
 
@@ -83,8 +83,8 @@ L’écran de bienvenue fournit des aides à la navigation, par exemple des icô
 
 >[!CAUTION]
 >
->Les activités de collecte, de filtrage et de purge effectuées par l’utilisateur, requises pour la page d’accueil [!DNL Assets], génèrent une charge qui peut affecter les performances. Par conséquent, les administrateurs doivent configurer efficacement la page d’accueil pour les utilisateurs cibles.
+>Les activités de collecte, de filtrage et de purge effectuées par l’utilisateur, requises pour la page d’accueil [!DNL Assets], génèrent une charge qui peut affecter les performances. Par conséquent, les administrateurs et administratrices doivent configurer efficacement la page d’accueil pour les utilisateurs et utilisatrices cibles.
 >
->Adobe recommande aux administrateurs et aux utilisateurs qui effectuent des opérations en bloc d’éviter d’utiliser la fonction Page d’accueil des ressources pour éviter d’augmenter les activités des utilisateurs. De plus, les administrateurs peuvent exclure les activités d’enregistrement de certains utilisateurs en configurant l’[!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] à partir du [!UICONTROL gestionnaire de configuration].
+>Adobe recommande aux administrateurs et administratrices et aux utilisateurs et utilisatrices qui effectuent des opérations en bloc d’éviter d’utiliser la fonction Page d’accueil des ressources pour éviter d’augmenter les activités des utilisateurs et utilisatrices. De plus, les administrateurs peuvent exclure les activités d’enregistrement de certains utilisateurs en configurant l’[!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] à partir du [!UICONTROL gestionnaire de configuration].
 >
 >Si vous utilisez la fonction, Adobe recommande de planifier la fréquence de purge par rapport à la charge du serveur.

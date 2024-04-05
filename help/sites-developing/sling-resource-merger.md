@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation pour les deux éléments ci-après :
 
-* **[Recouvrements](/help/sites-developing/overlays.md)** de ressources utilisant la fonction [chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* Les **[recouvrements](/help/sites-developing/overlays.md)** de ressources à l’aide de [chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Remplacements** de boîtes de dialogue de composant pour l’interface utilisateur tactile (`cq:dialog`), à l’aide de la hiérarchie des types de ressource (par le biais de la propriété `sling:resourceSuperType`).
 
@@ -34,7 +34,7 @@ Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/re
 >
 >Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
->Les recouvrements/remplacements pour d’autres zones (y compris d’autres aspects d’un composant tactile ou de l’IU classique) impliquent la copie du noeud et de la structure appropriés de l’original à l’endroit où la personnalisation sera définie.
+>Les recouvrements/remplacements pour d’autres zones (y compris d’autres aspects d’un composant tactile ou de l’IU classique) consistent à copier le nœud et la structure appropriés de l’original à l’endroit où la personnalisation sera définie.
 
 ### Objectifs pour AEM {#goals-for-aem}
 
@@ -202,7 +202,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le noeud et ses propriétés sont requis dans la variable `/apps` overlay/override, mais certains ou tous les noeuds enfants ne sont pas nécessaires dans la variable `/apps` superposition/remplacement.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
@@ -256,7 +256,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 
 ### Exemple d’utilisation {#example-of-usage}
 
-Voici quelques exemples :
+Voici quelques exemples traités :
 
 * Recouvrement :
 

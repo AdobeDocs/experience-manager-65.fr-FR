@@ -1,6 +1,6 @@
 ---
 title: Effectuer une mise à niveau statique
-description: Découvrez comment effectuer une mise à niveau statique pour AEM 6.5.
+description: Découvrez comment effectuer une mise à niveau statique pour AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 82%
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Avant d’exécuter votre mise à niveau, plusieurs étapes doivent être réali
 
 Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à la version 6.3, Adobe fournit un outil qui peut être utilisé pour migrer le référentiel vers la nouvelle version de Oak Segment Tar présent dans AEM 6.3. Il est fourni avec le module de démarrage rapide et est obligatoire pour toutes les mises à niveau qui utiliseront TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK ne nécessitent pas de migration du référentiel. Pour plus d’informations sur les avantages du nouveau format Segment Tar, voir la section [Questions fréquentes sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-La migration réelle est effectuée à l’aide du fichier jar de démarrage rapide standard d’AEM, exécuté avec une nouvelle `-x crx2oak` qui exécute l&#39;outil crx2oak pour simplifier la mise à niveau et la rendre plus robuste.
+La migration réelle est effectuée à l’aide du fichier JAR de démarrage rapide d’AEM, exécuté avec une nouvelle option `-x crx2oak`, qui exécute l’outil crx2oak afin de simplifier la mise à niveau et de la rendre plus robuste.
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 **Vous pouvez également avoir besoin de commutateurs supplémentaires pour les scénarios suivants :**
 
-* Si vous effectuez la mise à niveau sur un système Windows où le mappage de la mémoire Java n’est pas géré correctement, ajoutez le `--disable-mmap` à la commande.
+* Si vous effectuez la mise à niveau sur un système Windows, sur lequel le mappage de la mémoire Java n’est pas géré correctement, ajoutez le paramètre `--disable-mmap` à la commande.
 
-Pour plus d’informations sur l’utilisation de l’outil crx2oak, voir Utilisation de l’[outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR d’assistance crx2oak peut être mis à niveau manuellement si nécessaire, en le remplaçant manuellement par des versions plus récentes après avoir décompressé le démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant : `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Pour plus d’informations sur l’utilisation de l’outil crx2oak, voir Utilisation de l’[outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR d’assistance crx2oak peut être mis à niveau manuellement si nécessaire, en le remplaçant manuellement par des versions plus récentes après avoir décompressé le démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant : `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Si la migration a réussi, l’outil quitte avec un code de sortie égal à 0. Cherchez également des messages AVERTISSEMENT et ERREUR dans le fichier `upgrade.log`, disponible sous `crx-quickstart/logs` dans le répertoire d’installation d’AEM, car ils peuvent indiquer des erreurs non fatales qui se sont produites lors de la migration.
 
@@ -128,11 +128,11 @@ Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installation
 
 ## Résolution des problèmes de migration {#troubleshooting-migration-issues}
 
-Ignorez cette section si vous effectuez une mise à niveau depuis la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
+Ignorez cette section si vous effectuez une mise à niveau à partir de la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clientes et clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
 
 **Les points de contrôle ne sont pas copiés, car aucun entrepôt de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
 
-Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires dans le magasin de données et ne peut pas les trouver. Pour spécifier la configuration de votre banque de données, incluez les indicateurs suivants dans la variable `<<ADDITIONAL_FLAGS>>` partie de la commande de migration :
+Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires dans le magasin de données et ne peut pas les trouver. Pour spécifier la configuration du magasin de données, incluez les indicateurs ci-dessous dans la partie `<<ADDITIONAL_FLAGS>>` de la commande de migration :
 
 **Pour les magasins de données S3 :**
 
@@ -162,13 +162,13 @@ Où `/path/to/datastore` représente le chemin d’accès à votre magasin de do
 
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
-Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour faire apparaître l’instance. Pour passer à la version 6.5, voir les autres options de migration et de restructuration de contenu dans [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) que vous pouvez choisir avec la commande de mise à niveau.
+Pour exécuter la mise à niveau, il est important de démarrer AEM à l’aide du fichier jar pour faire apparaître l’instance. Pour passer à la version 6.5, consultez également d’autres options de migration et de restructuration de contenu dans la [Migration de contenu différée](/help/sites-deploying/lazy-content-migration.md) que vous pouvez sélectionner avec la commande de mise à niveau.
 
 >[!IMPORTANT]
 >
->Si vous exécutez Oracle Java 11 (ou généralement des versions de Java plus récentes que 8), des commutateurs supplémentaires doivent être ajoutés à votre ligne de commande lors du démarrage de l’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage afin d’inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
+Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clientes et clients démarre AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage pour inclure des commutateurs pour les configurations d’environnement telles que les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, Adobe recommande de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
 1. Sur une instance d’AEM en cours d’exécution, exécutez les opérations ci-dessous dans une ligne de commande :
 

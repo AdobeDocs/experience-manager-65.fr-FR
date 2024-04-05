@@ -11,17 +11,17 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1892'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
 # Récupération de l’espace mémoire de l’entrepôt de données {#data-store-garbage-collection}
 
-Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement de magasin de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les cas où plusieurs ressources de mémoire existent, il est préférable de les éliminer pour préserver de l’espace et optimiser les performances de sauvegarde et de maintenance du système de fichiers.
+Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement de magasin de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les cas où il existe plusieurs ressources de mémoire, il est préférable de les supprimer afin de préserver de l’espace et d’optimiser les performances de sauvegarde et de maintenance du système de fichiers.
 
 Le plus souvent, une application WCM tend à collecter des informations, mais à ne pas les supprimer aussi souvent. Bien que de nouvelles images soient ajoutées qui remplacent même les anciennes versions, le système de contrôle de version conserve encore l’ancienne version et prend sa restauration en charge si nécessaire. Ainsi, la majorité du contenu que nous pensons ajouter au système est définitivement stocké. Quelle est donc la source classique de « mémoire » dans le référentiel que nous pourrions vouloir nettoyer ?
 
-AEM utilise le référentiel comme stockage pour plusieurs activités internes et de maintenance :
+AEM utilise le référentiel comme stockage pour plusieurs activités internes et de maintenance :
 
 * Packages créés et téléchargés
 * Fichiers temporaires créés pour la réplication de la publication
@@ -42,7 +42,7 @@ Si le référentiel a été configuré avec un entrepôt de données externe, le
 
 Le nettoyeur de la mémoire d’entrepôt de données prend d’abord note de l’horodatage actuel lorsque le processus commence. La récupération est ensuite effectuée à l’aide d’un algorithme de modèle de marquage/balayage à plusieurs passages.
 
-Lors de la première phase, le collecteur de mémoire d’entrepôt de données effectue une traversée complète de tout le contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de base initial.
+Lors de la première phase, le nettoyeur de la mémoire du magasin de données traverse entièrement le contenu du référentiel. Pour chaque objet de contenu qui contient une référence à un enregistrement d’entrepôt de données, il localise le fichier dans le système de fichiers, exécutant une mise à jour de métadonnées (en modifiant l’attribut « dernière modification » ou MTIME). À ce stade, les fichiers accessibles par cette phase deviennent plus récents que l’horodatage de base initial.
 
 Lors de la seconde phase, le nettoyeur de la mémoire d’entrepôt de données traverse la structure de répertoires physique d’un entrepôt de données à peu près comme une opération de recherche. Il examine l’attribut « dernière modification » ou MTIME du fichier et détermine ce qui suit :
 
@@ -106,12 +106,12 @@ Si vous devez exécuter la récupération de l’espace mémoire du magasin de d
 
 Avant d’exécuter la récupération de l’espace mémoire du magasin de données, vous devez vérifier qu’aucune sauvegarde n’est en cours d’exécution à ce moment-là.
 
-1. Ouvrez le tableau de bord des opérations en procédant comme suit : **Navigation** > **Outils** > **Opérations** > **Maintenance**.
-1. Cliquez sur le bouton **Période de maintenance hebdomadaire**.
+1. Ouvrez le tableau de bord des opérations en procédant comme suit : **Navigation** > **Outils** > **Opérations** > **Maintenance**.
+1. Cliquez sur la **Fenêtre de maintenance hebdomadaire**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Sélectionnez la variable **Nettoyage de la mémoire d’entrepôt de données** puis cliquez sur le bouton **Exécuter** Icône
+1. Sélectionnez la tâche **Récupération de l’espace mémoire du magasin de données**, puis cliquez sur l’icône **Exécuter**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -136,7 +136,7 @@ Pour exécuter la récupération de l’espace mémoire :
 1. Dans la console de gestion OSGi Apache Felix, mettez en surbrillance l’onglet **Principal** et sélectionnez **JMX** dans le menu suivant.
 1. Ensuite, recherchez puis cliquez sur le bouton **Gestionnaire de référentiel** MBean (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Cliquez sur **startDataStoreGC(boolean markOnly)**.
-1. enter &quot;`true`&quot; pour la variable `markOnly` si nécessaire :
+1. Saisissez `true` comme paramètre `markOnly` si nécessaire :
 
    | **Option** | **Description** |
    |---|---|
@@ -154,7 +154,7 @@ Pour exécuter la récupération de l’espace mémoire :
 
 ## Automatisation de la récupération de l’espace mémoire du magasin de données {#automating-data-store-garbage-collection}
 
-Si possible, le nettoyage de la mémoire d’entrepôt de données doit être exécuté lorsque la charge du système est faible, par exemple, le matin.
+Si possible, la récupération de l’espace mémoire du magasin de données doit être exécutée lorsque la charge du système est faible, par exemple le matin.
 
 La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire d’entrepôt de données à 1 heure du matin le dimanche. Vous devez également vérifier qu’aucune sauvegarde n’est en cours à ce moment. Le lancement de la fenêtre de maintenance peut être personnalisé à partir du tableau de bord.
 

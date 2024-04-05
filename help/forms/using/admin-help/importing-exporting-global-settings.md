@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1196'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -72,12 +72,12 @@ Le fichier de paramètres globaux de Workspace inclut les paramètres suivants 
 
 Les paramètres *specialRoutes* spécifient les propriétés des itinéraires spéciaux, approbation et refus, dans Workspace. Dans certaines situations, les boutons de ces itinéraires s’affichent sur les cartes de tâches dans Workspace. L’utilisateur ou l’utilisatrice peut alors les sélectionner sans ouvrir le formulaire. Vous pouvez modifier les paramètres specialRoutes dans le fichier de paramètres globaux pour ajouter des noms personnalisés à approuver et à refuser, ou pour créer des itinéraires supplémentaires.
 
-**client_specialRoutes_routes_approve_style:** Nom du style qui se trouve dans le thème Workspace, qui identifie les icônes de bouton d’approbation. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Le fichier CSS Workspace est incorporé dans le fichier workspace-theme.swf, qui se trouve dans le fichier adobe-workspace-client.ear > adobe-workspace-client.war . Pour modifier l’aspect de Workspace, vous devez recompiler le fichier workspace-theme.swf.
+**client_specialRoutes_routes_approve_style :** nom du style dans le thème de Workspace, qui identifie les icônes des boutons d’approbation. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Le fichier CSS de Workspace est incorporé au fichier workspace-theme.swf, qui est dans le fichier adobe-workspace-client.ear > adobe-workspace-client.war. Pour modifier l’aspect de Workspace, vous devez recompiler le fichier workspace-theme.swf.
 
 **client_specialRoutes_routes_deny_names :** diverses chaînes qu’un utilisateur de Workbench peut utiliser pour être interprétées comme « refuser ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est deny. Si l’utilisateur de Workbench emploie le terme Deny (refuser) dans un processus, ce terme ne sera pas reconnu. Le terme Deny doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
 
-**client_specialRoutes_routes_deny_style :** Nom du style qui se trouve dans le fichier de thème de Workspace, qui identifie les icônes du bouton d’opposition. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
+**client_specialRoutes_routes_deny_style :** nom du style dans le fichier de thème de Workspace, qui identifie les icônes des boutons de refus. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
 `  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** diverses chaînes qu’un utilisateur ou une utilisatrice de Workbench peut utiliser pour être interprétées comme « approuver ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est approve (approuver). Si l’utilisateur de Workbench emploie le terme Approve dans un processus, ce terme ne sera pas reconnu. Le terme Approve doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
 
 **client_specialRoutes_names :** les clés utilisées pour localiser la valeur de chaîne personnalisée dans les fichiers ressource. Chaque entrée de ce paramètre doit inclure les valeurs de noms et de style.
@@ -110,13 +110,13 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### Paramètres formView {#formview-settings}
 
-**client_formView_openFormInFullScreen :** pour afficher tous les formulaires de Workspace en mode plein écran, définissez cette option sur true. Par défaut, cette option est définie sur false, et les formulaires ne s’affichent pas en mode plein écran. Le service User contient une option pour ouvrir le document associé à une tâche en mode plein écran. Cela vous permet de contrôler l’affichage sur une base de processus individuel.
+**client_formView_openFormInFullScreen :** pour afficher tous les formulaires de Workspace en mode plein écran, définissez cette option sur true. Par défaut, cette option est définie sur false, et les formulaires ne s’affichent pas en mode plein écran. Veuillez noter que le service Utilisateur ou utilisatrice comporte une option permettant d’ouvrir en mode plein écran le document associé à une tâche. Cela vous permet de contrôler l’affichage sur une base de processus individuel.
 
 **client_routes_formViewOnly :** lorsqu’ils sont définis sur True, les itinéraires ne sont pas affichés dans la vue Carte ou Liste de Workspace. La valeur par défaut est False, ce qui signifie que les itinéraires sont affichés dans la vue Carte et dans la vue Liste.
 
 ### Autres paramètres {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser :** Type MIME des documents qui s’ouvre en dehors de l’instance du navigateur de Workspace. Si les processus de votre entreprise nécessitent un type MIME supplémentaire, indiquez-le ici. Les valeurs par défaut sont :
+**client_mimeTypes_openOutsideBrowser :** type MIME de documents qui s’ouvriront en dehors de l’instance du navigateur de Workspace. Si les processus de votre entreprise nécessitent un type MIME supplémentaire, indiquez-le ici. Les valeurs par défaut sont :
 
 * `application/msword`
 * `application/msexcel`

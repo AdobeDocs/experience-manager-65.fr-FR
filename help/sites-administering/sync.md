@@ -1,6 +1,6 @@
 ---
 title: Synchronisation des utilisateurs
-description: Découvrez le fonctionnement interne de la synchronisation des utilisateurs dans AEM.
+description: Découvrez le fonctionnement interne de la synchronisation des utilisateurs et des utilisatrices dans AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security

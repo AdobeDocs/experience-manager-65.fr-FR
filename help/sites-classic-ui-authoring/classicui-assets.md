@@ -1,6 +1,6 @@
 ---
 title: Utiliser les ressources
-description: La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et utiliser des ressources lors de la modification des pages. AEM Assets fournit d’autres méthodes pour utiliser des ressources.
+description: 'La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources :'
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 

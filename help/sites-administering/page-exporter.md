@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Le nœud design est utilisé pour copier la conception utilisée pour la page ex
    * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
 
 * `generic`
-Un noeud générique est utilisé pour copier des ressources telles que clientlibs. `.js` ou `.css` dans le fichier zip. Il possède les caractéristiques suivantes :
+Un nœud générique sert à copier des ressources telles que des fichiers `.js` ou `.css` de bibliothèques clientes dans le fichier zip. Il possède les caractéristiques suivantes :
 
    * Facultatif.
    * Situé sous `/etc/contentsync/templates/<mysite>`.
@@ -157,7 +157,7 @@ Un noeud générique est utilisé pour copier des ressources telles que clientli
    * Le type de nœud est `nt:unstructured`.
    * Comporte une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  Par exemple, le noeud de configuration suivant copie la propriété `mysite.clientlibs.js` dans le fichier zip :
+  Par exemple, le nœud de configuration ci-dessous copie les fichiers `mysite.clientlibs.js` dans le fichier zip :
 
   ```xml
   "mysite.clientlibs.js": {

@@ -1,6 +1,6 @@
 ---
 title: Utiliser un formulaire
-description: Afficher et mettre à jour le formulaire associé à une tâche ou à un point de départ dans l’application AEM Forms
+description: Affichage et mise à jour d’un formulaire associé à une tâche ou à un point de départ dans l’application AEM Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
@@ -9,23 +9,23 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 # Utiliser un formulaire {#working-with-a-form}
 
-Si un formulaire est activé pour la synchronisation dans l’application de formulaires, il est téléchargé et vous pouvez l’utiliser directement.
+Les formulaires activés pour la synchronisation dans l’application sont téléchargés et peuvent être utilisés directement.
 
-Les formulaires sont téléchargés sur votre application et sont disponibles hors ligne. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande sur votre site. La demande est un formulaire adaptatif qui accepte les informations de vos clients et les stocke pour révision. L’administrateur examine le formulaire et crée un formulaire de vérification dans AEM instance d’auteur. L’administrateur active la synchronisation du formulaire avec l’application AEM Forms. Si le formulaire de vérification est disponible dans l’application AEM Forms, votre agent de terrain peut utiliser un appareil mobile pour vérifier les détails de votre client. L’appareil mobile se synchronise avec le serveur et le formulaire de vérification est chargé dans l’application. Votre agent de terrain peut rendre visite à votre client, vérifier les détails, enregistrer les données en tant que brouillon ou envoyer le formulaire de vérification. Le formulaire est synchronisé avec le serveur chaque fois que votre application est en ligne.
+Les formulaires sont téléchargés sur votre application et sont disponibles hors ligne. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande sur votre site. La demande est un formulaire adaptatif qui accepte les informations de vos clientes et clients et les stocke pour révision. L’administrateur ou l’administratrice examine le formulaire et crée un formulaire de vérification dans une instance de création AEM. L’administrateur ou l’administratrice active la synchronisation du formulaire avec l’application AEM Forms. Si le formulaire de vérification est disponible dans l’application AEM Forms, votre agent ou agente de terrain peut utiliser un appareil mobile pour vérifier les détails de votre client ou cliente. L’appareil mobile se synchronise avec le serveur et le formulaire de vérification est chargé dans l’application. Votre agent ou agente de terrain peut rendre visite à votre client ou votre cliente, vérifier les détails, enregistrer les données en tant que brouillon ou envoyer le formulaire de vérification. Le formulaire est synchronisé avec le serveur chaque fois que votre application est en ligne.
 
 Pour synchroniser votre formulaire dans l’application AEM Forms :
 
 1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**. 
 1. Dans la page des propriétés, cliquez sur **Avancé.** 
-1. Sous Avancé, activez l’option : **Synchronisation avec l’application AEM Forms**, puis sélectionnez **Enregistrer**.
+1. Dans la section Avancé, activez l’option : **Synchroniser avec l’application AEM Forms** et sélectionnez **Enregistrer**.
 
-Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires, puis sélectionnez **Synchronisation avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
+Pour synchroniser plusieurs formulaires, dans l’instance de création, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et sélectionnez **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
 
 Si la synchronisation de votre application AFA (application AEM Forms) échoue, procédez comme suit pour résoudre le problème de synchronisation :
 
@@ -38,15 +38,15 @@ Si la synchronisation de votre application AFA (application AEM Forms) échoue, 
 
 >[!NOTE]
 >
->Formulaires pris en charge :
+>Formulaires pris en charge :
 >
 >* Formulaires adaptatifs (sans chargement différé)
 >* Formulaires mobiles
 >
->Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans les formulaires adaptatifs récupérés dans l’application AEM Forms synchronisée avec le serveur AEM Forms OSGi. Les utilisateurs peuvent joindre des fichiers dans un champ si l’auteur a activé les pièces jointes au niveau du champ au moment de la création du formulaire.
+>Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans les formulaires adaptatifs extraits dans l’application AEM Forms synchronisée avec le serveur AEM Forms OSGi. Les utilisateurs et les utilisatrices peuvent ajouter des pièces jointes à un champ si l’auteur ou l’autrice a activé les pièces jointes au niveau du formulaire au moment de sa création.
 
 
-**Pour ouvrir et mettre à jour un formulaire**
+**Ouvrir et mettre à jour un formulaire**
 
-1. Pour ouvrir un formulaire, sélectionnez la **[!UICONTROL Formulaire]** dans l’écran d’accueil.
-1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, enregistrer en tant que brouillon et l’envoyer.
+1. Pour ouvrir un formulaire, sélectionnez le **[!UICONTROL formulaire]** sur l’écran d’accueil.
+1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, l’enregistrer en tant que brouillon et l’envoyer.

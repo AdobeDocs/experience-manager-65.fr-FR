@@ -1,6 +1,6 @@
 ---
-title: Gérer les informations d’identification locales
-description: Découvrez comment gérer les informations d’identification locales à l’aide de Trust Store Management. AEM forms prennent en charge les informations d’identification RSA et DSA dans le formulaire PKCS12 standard.
+title: Gestion des informations d’identification locales
+description: Découvrez comment gérer les informations d’identification locales à l’aide de Trust Store Management. AEM Forms prend en charge les informations d’identification RSA et DSA au format PKCS12 standard.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

@@ -8,7 +8,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Le module complémentaire et les [Composants principaux CIF](https://github.com/
 
 Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM, accédez à Outils > Cloud Service > Configuration CIF
+1. Dans AEM, accédez à Outils > Services Cloud > Configuration CIF.
 
 2. Sélectionnez la configuration commerciale à modifier.
 

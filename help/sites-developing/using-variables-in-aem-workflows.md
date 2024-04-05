@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1941'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -48,8 +48,8 @@ Pour obtenir des types de données complexes supplémentaires disponibles dans l
 Pour créer une variable,
 
 1. Sur une instance AEM, accédez à Outils > Workflows > Modèles.
-1. Sélectionner **[!UICONTROL Créer]** et indiquez le titre et un nom facultatif pour le modèle de workflow. Sélectionnez le modèle, puis sélectionnez **[!UICONTROL Modifier]**.
-1. Sélectionnez l’icône de variables disponible dans le sidekick du modèle de workflow, puis sélectionnez **[!UICONTROL Ajouter une variable]**.
+1. Sélectionnez **[!UICONTROL Créer]** et spécifiez le titre et un nom facultatif pour le modèle de workflow. Sélectionnez le modèle, puis **[!UICONTROL Modifier]**.
+1. Sélectionnez l’icône des variables disponible dans le sidekick du modèle de workflow et sélectionnez **[!UICONTROL Ajouter une variable]**.
 
    ![Ajouter une variable](assets/variables_add_variable_new.png)
 
@@ -61,7 +61,7 @@ Pour créer une variable,
    * Modèle de données de formulaire : indiquez un chemin d’accès au modèle de données de formulaire.
    * ArrayList : spécifiez un sous-type pour la collection.
 
-1. Spécifiez une description facultative de la variable et sélectionnez ![Icône Enregistrer indiquée par une coche dans une case.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
+1. Spécifiez une description facultative pour la variable et sélectionnez l’icône Enregistrer![ représentée par une case cochée.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
@@ -90,11 +90,11 @@ Vous pouvez également mettre à jour des éléments spécifiques d’une variab
 
 Pour ajouter un mappage entre les variables, procédez comme suit :
 
-1. Sur la page de modification du workflow, sélectionnez l’icône Étapes disponible dans le sidekick du modèle de workflow.
-1. Faites glisser et déposez le **Définir la variable** dans l’éditeur de processus, sélectionnez l’étape, puis sélectionnez ![Icône Configurer indiquée par une clé à molette.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurer).
+1. Dans la page de modification du workflow, sélectionnez l’icône Étapes disponible dans le sidekick du modèle de workflow.
+1. Faites un glisser-déposer de l’étape **Définir une variable** vers l’éditeur de workflow, sélectionnez l’étape, puis l’icône ![Configurer représentée par une clé à molette.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurer).
 1. Dans la boîte de dialogue Définir une variable, sélectionnez **[!UICONTROL Mappage]** > **[!UICONTROL Ajouter un mappage]**.
 1. Dans la section **Mapper une variable**, sélectionnez la variable dans laquelle stocker des données, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
-1. Mappez plus de variables afin de pouvoir créer une expression significative. Sélectionner ![Icône Enregistrer indiquée par une coche dans une case.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications.
+1. Mappez plus de variables afin de pouvoir créer une expression significative. Sélectionnez l’icône ![Enregistrer représentée par une case cochée.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications.
 
 ### Exemple 1 : exécutez une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -163,7 +163,7 @@ Dans cet exemple, avant de définir l’expression de routage, utilisez [exemple
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionner **[!UICONTROL Renommer la branche]** pour spécifier un autre nom pour la branche.
+De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionnez **[!UICONTROL Renommer la branche]** pour définir un autre nom pour la branche.
 
 Pour consulter d’autres exemples, consultez la section [Créer un modèle de workflow](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
@@ -248,9 +248,9 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ## Modification d’une variable {#edit-a-variable}
 
-1. Sur la page Modifier le processus , sélectionnez l’icône Variables disponible dans le sidekick du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
-1. Sélectionnez la variable ![Icône Modifier indiquée par un symbole de crayon.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) Icône (Modifier) en regard du nom de la variable que vous souhaitez modifier.
-1. Modifiez les informations de la variable et sélectionnez ![Icône Enregistrer indiquée par une coche.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
+1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
+1. Sélectionnez l’icône ![Modifier représentée par un symbole de crayon.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) Icône (Modifier) en regard du nom de la variable que vous souhaitez modifier.
+1. Modifiez les informations de la variable et sélectionnez l’icône ![Enregistrer représentée par une coche.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
 ## Supprimer une variable {#delete-a-variable}
 
@@ -258,6 +258,6 @@ Avant de supprimer la variable, supprimez toutes les références de la variable
 
 Pour supprimer une variable :
 
-1. Sur la page Modifier le processus , sélectionnez l’icône Variables disponible dans le sidekick du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
+1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
 1. Sélectionnez l’icône Supprimer en regard du nom de la variable que vous souhaitez supprimer.
-1. Sélectionner ![Icône Terminé indiquée par une coche.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour confirmer et supprimer la variable.
+1. Sélectionnez l’icône ![Terminé représentée par une coche.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) pour confirmer et supprimer la variable.

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Un framework Adobe Analytics est un ensemble de mappages entre les variables Ado
 
    >[!NOTE]
    >
-   >Cela peut prendre jusqu’à 10 secondes de plus pour que l’opération de récupération du rapport expire, puis le nombre de secondes spécifié.
+   >Il peut s’écouler jusqu’à 10 secondes de plus que le nombre de secondes indiqué pour que l’opération de récupération du rapport expire.
 
 1. Répétez l’étape 1-3 sur l’instance à publier pour configurer les analyses.
 
@@ -186,4 +186,4 @@ Vous pouvez désormais activer les analyses pour les formulaires et générer un
 
    **A.** Bouton Activer Analytics **B.** Formulaire sélectionné
 
-   Pour obtenir des informations détaillées sur l’affichage des rapports Forms Analytics, voir [Affichage et compréhension des rapports d’analyse d’AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+   Pour obtenir des informations détaillées sur l’affichage des rapports d’analyse Forms, voir [Affichage et compréhension des rapports d’analyse d’AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).

@@ -1,12 +1,12 @@
 ---
 title: Utiliser les versions de page de contenu
-description: Créez, comparez et restaurez des versions d’une page dans Adobe Experience Manager.
+description: Créez, comparez et restaurez des versions d'une page dans Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 68%
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créez une version d’une page.
-* Restaurer une page sur une version précédente ; par exemple :
+* Restaurer une version précédente d’une page. Par exemple :
    * pour annuler une modification que vous avez apportée à la page.
-* Comparer la version actuelle d’une page avec une version précédente :
-   * pour mettre en évidence les différences entre le texte et les images.
+* Comparer la version actuelle d’une page à une version précédente :
+   * pour mettre en évidence des différences dans le texte et les images.
 
 ## Création d’une version {#creating-a-new-version}
 
@@ -32,14 +32,14 @@ Vous pouvez créer une version de votre ressource depuis :
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**.
-1. Cliquez sur la pointe de la flèche près du champ de commentaire pour afficher les options :
+1. Cliquez sur la flèche près du champ de commentaire pour afficher les options :
 
-   ![Chronologie : Enregistrer comme version](assets/screen-shot_2019-03-05at112335.png)
+   ![Chronologie - Enregistrer comme version](assets/screen-shot_2019-03-05at112335.png)
 
 1. Sélectionnez **Enregistrer comme version**.
-1. Saisissez un **Libellé** et **Commentaire** si nécessaire.
+1. Saisissez un **Libellé** et un **Commentaire** si nécessaire.
 
-   ![Créer une version : ajoutez un libellé et un commentaire.](assets/chlimage_1-42.png)
+   ![Créer une version - ajouter un libellé et un commentaire](assets/chlimage_1-42.png)
 
 1. Confirmez la nouvelle version avec l’option **Créer**.
 
@@ -49,10 +49,10 @@ Vous pouvez créer une version de votre ressource depuis :
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Sélectionnez la variable **Créer** dans la barre d’outils pour ouvrir la boîte de dialogue.
-1. Dans la boîte de dialogue, vous pouvez saisir une **Libellé** et un **Commentaire**, si nécessaire :
+1. Sélectionnez l’option **Créer** dans la barre d’outils pour ouvrir la boîte de dialogue.
+1. Dans la boîte de dialogue, vous pouvez saisir un **libellé** et un **commentaire** si nécessaire.
 
-   ![Saisir un libellé et un commentaire ;](assets/screen_shot_2012-02-15at105050am.png)
+   ![Saisir un libellé et un commentaire](assets/screen_shot_2012-02-15at105050am.png)
 
 1. Confirmez la nouvelle version avec l’option **Créer**.
 
@@ -83,10 +83,10 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 >Illustration :
 >
 >1. Créez des versions d’une page.
->1. Les libellés et les noms de noeud de version initiaux sont 1.0, 1.1, 1.2, etc.
->1. Rétablissez la première version ; dans ce cas, 1.0.
+>1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
+>1. Rétablissez la première version, soit, dans ce cas, 1.0.
 >1. Créez à nouveau de nouvelles versions.
->1. Les libellés et les noms de noeud générés seront désormais 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Les libellés et noms de nœud générés sont désormais 1.0.0, 1.0.1, 1.0.2, etc.
 
 ### Rétablissement d’une version {#revert-to-a-version}
 
@@ -99,7 +99,7 @@ Pour **rétablir** la version précédente d’une page sélectionnée :
 
    ![Revenir à cette version](assets/screen-shot_2019-03-05at112505.png)
 
-1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations de la chronologie mises à jour.
+1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations de la chronologie sont mises à jour.
 
 ### Restaurer la version {#restore-version}
 
@@ -111,12 +111,12 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
 
    >[!NOTE]
    >
-   >Si :
+   >Si :
    >
-   >* vous avez sélectionné une seule page qui n’a jamais eu de pages enfants,
+   >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
    >
-   >L’affichage est alors vide, car aucune version n’est applicable.
+   >l’affichage sera vide, car aucune version n’est applicable.
 
 1. Les versions disponibles sont répertoriées :
 
@@ -150,9 +150,9 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 1. Définissez l’indicateur **Pages non versionnées préservées** selon les besoins :
 
-   * Si cette option est active (sélectionnée), toutes les pages non versionnées sont conservées et ne sont pas affectées par la restauration.
+   * Si cette option est active (sélectionnée), toute page non versionnée est conservée et n’est pas concernée par la restauration.
 
-   * Si elle est inactive (non sélectionnée), toutes les pages non versionnées sont supprimées, car elles n’existaient pas dans l’arborescence versionnée.
+   * Si elle est inactive (non sélectionnée), toute page non versionnée est supprimée, car elle n’existait pas dans l’arborescence versionnée.
 
 1. Sélectionnez **Restaurer** pour la version sélectionnée de l’arborescence à restaurer comme version *actuelle*.
 
@@ -184,9 +184,9 @@ Pour comparer une version précédente à la page actuelle :
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
 1. Les versions de page sont répertoriées. Sélectionnez la version que vous souhaitez comparer :
 
-   ![Versions de page répertoriées - Sélection de la version](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Versions de page répertoriées - sélectionner la version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Sélectionner **Comparer avec la version actuelle**. La variable [comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre pour afficher les différences.
+1. Sélectionner **Comparer avec la version actuelle**. L’[outil de comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
 
 ## Distorsion du temps Timewarp {#timewarp}
 
@@ -196,12 +196,12 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 >
 >[Timewarp peut également être utilisé avec les lancements pour prévisualiser les futurs](/help/sites-authoring/launches.md) lors de l’exécution d’AEM version 6.5.10.0 ou supérieure.
 
-La création de contenu est un processus continu et collaboratif. L’objectif de Timewarp est de permettre aux auteurs de suivre le site web publié au fil du temps, afin de les aider à comprendre comment le contenu a changé. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication :
+La création de contenu est un processus continu et collaboratif. Le but de Timewarp est de permettre aux auteurs et aux autrices de suivre le site web publié au fil du temps, pour les aider à comprendre les changements du contenu. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication :
 
 * Le système recherche la version de page qui était active à l’heure sélectionnée.
-   * Cette version de page a été créée/activée. *before* point dans le temps sélectionné dans Timewarp.
-* Lorsque vous accédez à une page qui a été supprimée, elle est également rendue, à condition que les anciennes versions de la page soient toujours disponibles dans le référentiel.
-* Si aucune version publiée n’est trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (afin d’éviter une erreur/page 404, ce qui empêcherait la navigation).
+   * Cette version de page a été créée/activée *avant* le moment sélectionné dans Timewarp.
+* Si vous accédez à une page qui a été supprimée, celle-ci sera également affichée, à condition toutefois que ses anciennes versions soient toujours disponibles dans le référentiel.
+* Si aucune version publiée n’a été trouvée, Timewarp revient à l’état actuel de la page dans l’environnement de création (et ce, afin d’éviter une erreur/page 404 qui rendrait impossible la navigation).
 
 ### Utilisation de Timewarp {#using-timewarp}
 
@@ -209,7 +209,7 @@ Timewarp est un [mode](/help/sites-authoring/author-environment-tools.md#page-mo
 
 1. Démarrez l’éditeur de la page sur laquelle vous souhaitez démarrer Timewarp, puis sélectionnez **Timewarp** dans la sélection de mode.
 
-   ![Sélectionnez Timewarp dans la sélection de mode.](assets/wwpv-01.png)
+   ![Sélectionner Timewarp dans la sélection du mode](assets/wwpv-01.png)
 
 1. Dans la boîte de dialogue, définissez une date et une heure cibles, puis cliquez sur **Définir la date**. Si vous ne sélectionnez pas d’heure, l’heure actuelle est utilisée par défaut.
 
@@ -217,19 +217,19 @@ Timewarp est un [mode](/help/sites-authoring/author-environment-tools.md#page-mo
 
 1. La page s’affiche en fonction de la date définie. Le mode Timewarp est indiqué à partir de la barre d’état bleue située en haut de la fenêtre. Utilisez les liens de la barre d’état pour sélectionner une nouvelle date cible ou quitter le mode Timewarp.
 
-   ![Indicateur de distorsion du temps](assets/wwpv-03.png)
+   ![Indicateur Timewarp](assets/wwpv-03.png)
 
 ### Limites du mode Timewarp {#timewarp-limitations}
 
-Timewarp s’efforce de reproduire au mieux une page à un moment donné. Cependant, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
+Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
-* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page active dans l’environnement de création.
+* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page actuelle dans l’environnement de création.
 * **Timewarp utilise des versions de page** : si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
 * **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
-* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devez effectuer cette opération manuellement à l’aide de [Restaurer](#reverting-to-a-page-version).
+* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](#reverting-to-a-page-version).
 
-* **La fonction Timewarp est uniquement basée sur le contenu de la page.** - Si les éléments pour le rendu du site web ont été modifiés, la vue diffère de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel. Ces éléments incluent du code, des feuilles de style CSS, des ressources/des images, entre autres.
+* **Timewarp est basé uniquement sur le contenu de page** : si des éléments destinés au rendu du site web ont été modifiés, la vue est différente de ce qu’elle était initialement, étant donné que ces éléments n’ont pas de suivi de version dans le référentiel. Ces éléments incluent le code, les éléments CSS et les ressources/images, entre autres.
 
 >[!CAUTION]
 >

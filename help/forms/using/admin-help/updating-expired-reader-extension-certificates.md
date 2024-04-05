@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Les client(e)s Adobe Experience Manager Forms (AEM Forms) disposant de licences Adobe Managed Services ou On-premise Enterprise Base ont le droit d’utiliser le service Extensions d’Acrobat Reader DC. Le service permet à une organisation de partager facilement des documents PDF interactifs en optimisant la fonctionnalité d’Acrobat Reader avec des droits d’utilisation supplémentaires. Le service ajoute des droits d’utilisation à un document PDF et active des fonctionnalités qui ne sont généralement pas disponibles à l’ouverture d’un document PDF dans Adobe Acrobat Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur ou une utilisatrice qui ouvre un document PDF dont les droits sont activés dans Acrobat Reader peut effectuer les opérations qui sont autorisées pour ce document.
 
-Adobe utilise une infrastructure à clé publique (PKI) pour émettre des certificats numériques à utiliser dans les licences et l’activation des fonctionnalités. Adobe a émis des certificats sous l’autorité de certification **Adobe Root CA**, qui arrivera à expiration le 7 janvier 2023. L’expiration de certificat n’a aucune incidence sur les documents PDF étendus utilisant des certificats de type Production émis à partir des certificats basés sur **Adobe Root CA** (anciens certificats). Tous les documents PDF dotés d’extensions Reader utilisant des anciens certificats avant le 7 janvier 2023, y compris ceux téléchargés par vos clientes et clients, continueront à fonctionner avec tous les droits d’utilisation qui leur sont appliqués et ne nécessitent aucune mise à jour.
+Adobe exploite une infrastructure à clé publique (PKI) pour émettre les certificats numériques à utiliser dans le cadre de l’activation de licences et de fonctionnalités. Adobe a émis des certificats sous l’autorité de certification **Adobe Root CA**, qui arrivera à expiration le 7 janvier 2023. L’expiration de certificat n’a aucune incidence sur les documents PDF étendus utilisant des certificats de type Production émis à partir des certificats basés sur **Adobe Root CA** (anciens certificats). Tous les documents PDF dotés d’extensions Reader utilisant des anciens certificats avant le 7 janvier 2023, y compris ceux téléchargés par vos clientes et clients, continueront à fonctionner avec tous les droits d’utilisation qui leur sont appliqués et ne nécessitent aucune mise à jour.
 
 Une nouvelle autorité de certification, **Adobe Root CA G2**, et des certificats basés sur la nouvelle autorité de certification sont désormais disponibles. Commencez à utiliser les nouveaux certificats avant ou à partir du 7 janvier 2023, ceux basés sur **Adobe Root CA G2**, pour doter vos nouveaux documents PDF de l’extension Reader.  Vous pouvez [obtenir de nouveaux certificats à partir du site Adobe Licensing Website](https://licensing.adobe.com/) ou de l’assistance d’Adobe.
 
@@ -39,7 +39,7 @@ R. Tous les documents PDF étendus à l’aide de certificats de production dél
 
 **Q. La description des nouveaux certificats est-elle différente de celle des anciens certificats ?**
 
-R. La description des nouveaux certificats Extensions d’Acrobat Reader mentionne **G3-P24** comme nom du programme. Dans la description des anciens certificats (certificats basés sur &quot;Adobe Root CA&quot;), **P24** est mentionné comme nom du programme.
+R. La description des nouveaux certificats Extensions d’Acrobat Reader mentionne **G3-P24** comme nom du programme. Dans la description des anciens certificats (certificats basés sur « Adobe Root CA »), **P24** est mentionné comme nom du programme.
 
 **Q. Comment obtenir les derniers certificats ?**
 

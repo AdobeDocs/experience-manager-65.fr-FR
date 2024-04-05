@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1978'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -57,11 +57,11 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 ### Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]** puis cliquez sur **[!UICONTROL Créer]**.
-1. Saisissez un titre pour le profil, par exemple : `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. La page [!UICONTROL Modifier le formulaire] pour le profil de métadonnées s’affiche.
+1. Saisissez un titre pour le profil, par exemple `Sample Metadata`, puis cliquez sur **[!UICONTROL Créer]**. La page [!UICONTROL Modifier le formulaire] pour le profil de métadonnées s’affiche.
 
    ![Modification d’un formulaire de métadonnées](assets/metadata-edit-form.png)
 
-1. Cliquez sur un composant et configurez ses propriétés dans le **[!UICONTROL Paramètres]** . Par exemple, cliquez sur le bouton **[!UICONTROL Description]** et modifiez ses propriétés.
+1. Cliquez sur un composant et configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Par exemple, cliquez sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
 
    ![Définition d’un composant dans le profil de métadonnées](assets/metadata-profile-component-setting.png)
 
@@ -94,7 +94,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 | [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
 | [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
 
-1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils dans la variable **[!UICONTROL Profils de métadonnées]** page.<br>
+1. Cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
 
    ![Profil de métadonnées ajouté à la page Profils de métadonnées](assets/MetadataProfiles-page.png)
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 78%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Traditionnellement, les formulaires web sont configurés à des fins d’envoi synchrone. Lors d’un envoi synchrone, lorsque les utilisateurs envoient un formulaire, ils sont redirigés vers une page d’accusé de réception, une page de remerciement ou, en cas d’échec de l’envoi, une page d’erreur. Toutefois, les expériences Web modernes telles que les applications d’une seule page gagnent en popularité. Dans une application de ce type, la page Web reste statique tandis que l’interaction entre le client et le serveur se déroule en arrière-plan. Vous pouvez désormais fournir cette expérience avec des formulaires adaptatifs en configurant l’envoi asynchrone.
+Traditionnellement, les formulaires web sont configurés à des fins d’envoi synchrone. Dans un envoi synchrone, lorsque les utilisateurs et les utilisatrices envoient un formulaire, ils ou elles sont redirigés vers une page d’accusé de réception, une page de remerciement ou, en cas d’échec de l’envoi, une page d’erreur. Toutefois, les expériences Web modernes telles que les applications d’une seule page gagnent en popularité. Dans une application de ce type, la page Web reste statique tandis que l’interaction entre le client et le serveur se déroule en arrière-plan. Vous pouvez désormais fournir cette expérience avec des formulaires adaptatifs en configurant l’envoi asynchrone.
 
-Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également ajouter des services distincts comme l’envoi de données à un autre magasin de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données du formulaire envoyé sont validées sur le serveur.
+Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, notamment la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également ajouter des services distincts comme l’envoi de données à un autre magasin de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone d’un formulaire adaptatif, celui-ci se comporte comme une application d’une seule page, puisqu’il ne se recharge pas et que son adresse URL ne change pas lorsque ses données sont validées sur le serveur.
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
@@ -34,14 +34,14 @@ Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulair
 
 Pour configurer l’envoi asynchrone d’un formulaire adaptatif :
 
-1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires et choisissez ![cmppr1](assets/cmppr1.png) pour ouvrir ses propriétés.
+1. En mode de création de formulaire adaptatif, sélectionnez l’objet Conteneur de formulaires, puis ![cmppr1](assets/cmppr1.png) pour afficher ses propriétés.
 1. Dans la section des propriétés **[!UICONTROL Envoi]**, activez **[!UICONTROL Utiliser l’envoi asynchrone]**.
 1. Dans la section **[!UICONTROL Lors de l’envoi]**, sélectionnez l’une des options suivantes pour effectuer un envoi de formulaire réussi.
 
    * **[!UICONTROL Rediriger vers l’URL]** : redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou sélectionner le chemin d’accès à une page dans le champ **[!UICONTROL URL/Chemin d’accès restreint.]**
    * **[!UICONTROL Afficher le message]** : affiche un message lors de l’envoi d’un formulaire. Vous pouvez rédiger un message dans le champ de texte situé en dessous de l’option Afficher le message. Le champ de texte prend en charge la mise en forme de texte enrichi.
 
-1. Sélectionner ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
+1. Sélectionnez ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
@@ -64,7 +64,7 @@ La structure de la réponse du serveur pour l’événement de succès de l’en
 }
 ```
 
-La réponse du serveur en cas d’envoi de formulaire réussi comprend :
+La réponse du serveur en cas d&#39;envoi réussi du formulaire comprend les éléments suivants :
 
 * Type de format de données du formulaire : XML ou JSON
 * Données du formulaire au format XML ou JSON
@@ -90,7 +90,7 @@ La structure de la réponse du serveur pour l’événement d’erreur d’envoi
  }
 ```
 
-La réponse du serveur en cas d’erreur lors de l’envoi du formulaire comprend :
+La réponse du serveur en cas d’erreur d’envoi du formulaire inclut les éléments suivants :
 
 * Raison de l’erreur, échec de la validation CAPTCHA ou côté serveur
 * Liste des objets d’erreur, qui inclut l’expression SOM du champ dont la validation a échoué et le message d’erreur correspondant
@@ -103,9 +103,9 @@ Les développeurs et développeuses, ainsi que les auteurs et autrices de formul
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 
-1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis sélectionnez ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
-1. Sélectionner **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et sélectionnez **[!UICONTROL Créer]**.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez n’importe quel objet du formulaire, puis ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
+1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire, puis **[!UICONTROL Créer]**.
 1. Sélectionnez l’**[!UICONTROL éditeur de code]** dans la liste déroulante de sélection de mode.
-1. Dans l’éditeur de code, sélectionnez **[!UICONTROL Modifier le code]**. Sélectionner **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
+1. Dans l’éditeur de code, sélectionnez **[!UICONTROL Modifier le code]**. Sélectionnez **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
 1. Choisissez **[!UICONTROL Envoi réussi]** ou **[!UICONTROL Erreur d’envoi]** dans la liste déroulante **[!UICONTROL Événement]**.
-1. Créez une règle pour l’événement sélectionné et sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle.
+1. Rédigez une règle pour l’événement sélectionné et sélectionnez **[!UICONTROL Terminé]** pour l’enregistrer.

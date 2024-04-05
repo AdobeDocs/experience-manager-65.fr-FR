@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ La recherche est disponible dans la barre d’outils supérieure :
 
 ![Recherche](do-not-localize/chlimage_1-17.png)
 
-Avec le rail de recherche, vous pouvez accomplir ce qui suit :
+Avec le rail de recherche, vous pouvez effectuer les opérations suivantes :
 
-* Recherchez un mot-clé, chemin ou balise spécifique.
-* Filtrez selon des critères spécifiques à une ressource, tels que les dates de modification, l’état de la page, la taille du fichier, etc.
-* Définissez et utilisez un [recherche enregistrée](#saved-searches) - selon les critères ci-dessus.
+* rechercher un mot-clé, un chemin ou une balise ;
+* filtrer selon des critères spécifiques aux ressources, tels que dates de modification, statut de la page, taille du fichier, etc. ;
+* définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
 
 >[!NOTE]
 >
@@ -47,14 +47,14 @@ Pour rechercher et filtrer vos ressources :
 
    ![s-01](assets/s-01.png)
 
-   Par défaut, les résultats de la recherche sont limités à votre emplacement actuel (c’est-à-dire la console et le type de ressource associé) :
+   Par défaut, les résultats de la recherche sont limités à votre emplacement actuel (c’est-à-dire la console et le type de ressource associé) :
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. Si nécessaire, vous pouvez supprimer le filtre d’emplacement (sélectionnez **X** sur le filtre que vous souhaitez supprimer) pour effectuer une recherche dans toutes les consoles/tous les types de ressources.
 1. Les résultats s’affichent, regroupés selon la console et le type de ressource associé.
 
-   Vous pouvez sélectionner une ressource spécifique (pour effectuer d’autres actions) ou effectuer une analyse en sélectionnant le type de ressource requis ; par exemple : **Afficher tous les sites**:
+   Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1333'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments dans le dossier de sélection en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblable au dossier d’éléments situé dans le dossier de sélection. Pour ce faire, procédez comme suit :
 
    1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -137,7 +137,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
         </tbody>
        </table>
 
-1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments dans le dossier admin en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé js avec un chemin/une structure semblable au dossier d’éléments dans le dossier admin. Pour cela, suivez les étapes ci-après :
 
    1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
 
@@ -227,7 +227,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       Le code ci-dessus est destiné au traitement des actions spécifiques aux lettres de la commande créée dans cette procédure. Pour gérer les actions d’autres ressources, modifiez le code JavaScript.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments dans le dossier actionhandlers. Pour cela, procédez comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblable au dossier d’éléments dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
    1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** : 
 

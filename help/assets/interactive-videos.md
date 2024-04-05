@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5926'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -449,7 +449,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Consultez la capture d’écran ci-dessous.</p> <p>Le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
       </tr> 
       <tr> 
-      <td>Pour annuler une modification :</td> 
+      <td>Pour rétablir une modification :</td> 
       <td>Près de l’angle droit supérieur de la page, sélectionnez <strong>Annuler</strong> ou <strong>Rétablir</strong>.</td> 
       </tr> 
     </tbody> 
@@ -534,7 +534,7 @@ Le code incorporé copié est défini pour un environnement réactif afin qu’i
 >
 >À ce stade, si vous avez ajouté l’interactivité avec seulement des pages web connectées par liens hypertexte, votre travail est terminé.
 >
->Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez intégrer la vidéo interactive à l’aperçu rapide existant sur votre site web.
+>Toutefois, si vous avez ajouté l’interactivité pour déclencher un aperçu rapide, les miniatures adjacentes à la vidéo interactive sont à des fins d’affichage uniquement ; elles ne sont pas encore intégrées à vos aperçus rapides existants. Dans ce cas, vous devez désormais intégrer la vidéo interactive à des aperçus rapides existants sur votre site Web.
 
 **Exemple**
 

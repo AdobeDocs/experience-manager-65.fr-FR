@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1301'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -242,10 +242,10 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes suivantes :
 
 * Activez votre point d’entrée ;
-   * Utilisez Outils > Ressources > GraphQL .
-   * [Activer votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+   * Utilisez Outils -> Ressources -> GraphQL.
+   * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
-* Accéder à GraphiQL (si nécessaire)
+* Accédez à GraphiQL (si nécessaire).
    * [Interface d’AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Exemple de structure {#sample-structure}
@@ -262,14 +262,14 @@ Pour utiliser l’API AEM GraphQL dans une requête, nous pouvons utiliser les d
 
 Comme vous pouvez le voir, les champs PDG et Employés font référence aux fragments de personne.
 
-Les modèles de fragment sont utilisés :
+Les modèles de fragment sont utilisés :
 
 * lors de la création du contenu dans l’éditeur de fragment de contenu ;
 * pour générer les schémas GraphQL que vous interrogerez.
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple, à l’adresse :
+Les requêtes peuvent être entrées dans l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple à l’adresse :
 
 * `http://localhost:4502/aem/graphiql.html`
 

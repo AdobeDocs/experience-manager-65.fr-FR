@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ L’environnement de création d’AEM comporte divers mécanismes de recherche 
 
 ## Principes de base de la recherche {#search-basics}
 
-Pour accéder au panneau de recherche, cliquez sur le **Rechercher** dans la partie supérieure du volet gauche de la console appropriée.
+Pour accéder au panneau de recherche, cliquez sur l’onglet **Rechercher** dans la partie supérieure du volet de gauche de la console appropriée.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 

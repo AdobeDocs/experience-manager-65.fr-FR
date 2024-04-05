@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ La console de lancements fournit une vue d’ensemble de vos lancements et perme
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Ou directement avec [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
+* Ou directement à l’adresse suivante : [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html?lang=fr)
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
@@ -122,6 +122,6 @@ La console de lancements fournit une vue d’ensemble de vos lancements et perme
 
    ![Onglet Référence - Lancements](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Cliquez sur le lancement correspondant, la liste des actions possibles s&#39;affiche :
+1. Cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
    ![Sélectionner le lancement pour afficher les actions possibles](assets/screen-shot_2019-03-05at121952-1.png)

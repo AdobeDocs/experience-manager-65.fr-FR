@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2728'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 # Guide de réglage des performances pour [!DNL Adobe Experience Manager Assets] {#assets-performance-tuning-guide}
 
-Un [!DNL Experience Manager Assets] La configuration contient plusieurs composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
+La configuration de [!DNL Experience Manager Assets] compte plusieurs composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
 
 En outre, l’identification et le respect de certaines instructions en termes d’optimisation des composants matériels et logiciels permettent de créer une base solide afin que votre déploiement de [!DNL Experience Manager Assets] réponde aux attentes en matière de performances, d’évolutivité et de fiabilité.
 
@@ -30,11 +30,11 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 ## Plateforme {#platform}
 
-Bien que Experience Manager soit pris en charge sur plusieurs plateformes, Adobe a trouvé la meilleure prise en charge des outils natifs sous Linux et Windows, ce qui contribue à des performances optimales et à une facilité d’implémentation. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement d’[!DNL Experience Manager Assets]. A l’instar de tout déploiement d’Experience Manager, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’[!DNL Experience Manager Assets].
+Bien qu’Experience Manager soit pris en charge sur plusieurs plateformes, Adobe a trouvé le meilleur moyen de prendre en charge les outils natifs sous Linux et Windows, ce qui contribue à offrir des performances optimales et à faciliter l’implémentation. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement d’[!DNL Experience Manager Assets]. A l’instar de tout déploiement d’Experience Manager, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’[!DNL Experience Manager Assets].
 
 ### Dossier temporaire {#temp-folder}
 
-Afin de réduire les délais de chargement des ressources, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. Par exemple, dans Amazon EC2, une [disque éphémère](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) Le lecteur peut être utilisé pour le dossier temporaire.
+Afin de réduire les délais de chargement des ressources, utilisez un stockage haute performance pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. Par exemple, dans Amazon EC2, un [disque éphémère](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) peut être utilisé pour le dossier temporaire.
 
 En supposant que le serveur dispose de suffisamment de mémoire, configurez un disque RAM. Sous Linux, exécutez les commandes suivantes pour créer un disque RAM de 8 Go :
 
@@ -154,15 +154,15 @@ Par exemple, après l’exécution d’un grand nombre de workflows transitoires
 
 ### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
-Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] workflows, ralentissement de la réactivité de l’interface utilisateur et prévention [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
+Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
 1. Dans l’Auteur d’[!DNL Experience Manager], accédez à `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Cliquez sur **[!UICONTROL Modifier]** sur chaque file d’attente de workflow pertinente pour votre mise en oeuvre, par exemple : **[!UICONTROL File d’attente des workflows transitoires Granite]**.
+1. Cliquez sur **[!UICONTROL Modifier]** sur chaque file d’attente de workflow appropriée à votre implémentation (par exemple, la **[!UICONTROL file d’attente de workflow transitoire de Granite]**).
 
 1. Modifiez la valeur des **[!UICONTROL Tâches parallèles maximales]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires et d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour garantir une efficacité maximale sans sacrifier la stabilité du serveur.
+Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires, ainsi que d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour garantir une efficacité maximale sans sacrifier la stabilité du serveur.
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
@@ -229,7 +229,7 @@ L’importation d’une grande quantité de métadonnées peut entraîner une ac
 
 ## Réplication {#replication}
 
-Lors de la réplication de ressources sur un grand nombre d’instances de publication, par exemple, dans une implémentation Sites, Adobe vous recommande d’utiliser la réplication en chaîne. Dans ce cas, l’instance de création se réplique sur une instance de publication unique qui, à son tour, se réplique sur les autres instances de publication, libérant ainsi l’instance de création.
+Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation Sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance de création se réplique sur une instance de publication unique qui, à son tour, se réplique sur les autres instances de publication, libérant ainsi l’instance de création.
 
 ### Configuration de la réplication en chaîne    {#configure-chain-replication}
 

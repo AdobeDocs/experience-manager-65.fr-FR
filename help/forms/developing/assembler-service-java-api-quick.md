@@ -1,6 +1,6 @@
 ---
-title: Assembler Service Java&trade ; API QuickStart (SOAP)
-description: Découvrez comment assembler, désassembler et créer dynamiquement un document de PDF à l’aide du service Assembler Java&trade ; API QuickStart (SOAP).
+title: Démarrage rapide (SOAP) pour l’API Java™ Assembler Service
+description: Découvrez comment assembler, désassembler et créer dynamiquement un document PDF à l’aide du démarrage rapide (SOAP) pour l’API Java™ Assembler Service.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,11 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1007'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# API Java™ du service Assembler QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap}
+# Démarrage rapide (SOAP) pour l’API Java™ Assembler Service {#assembler-service-java-api-quickstart-soap}
 
 Le démarrage rapide (SOAP) de l’API Java est disponible pour le service Assembler.
 
@@ -45,7 +45,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les didacticiels de mise en route de la programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss® Application Server et le système d’exploitation Windows Microsoft®. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Les démarrages rapides dans Programmation avec AEM Forms se fondent sur le serveur Forms déployé sur le serveur d’applications JBoss® et le système d’exploitation Microsoft® Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Démarrage rapide (mode SOAP) : assembler un document PDF à l’aide de l’API Java. {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -737,7 +737,7 @@ L’exemple de code Java suivant assemble un document PDF non interactif. Le doc
 
 ## Démarrage rapide (mode SOAP) : déterminer si un document est conforme au format PDF/A à l’aide de l’API Java. {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-L’exemple de code Java suivant détermine si le document PDF d’entrée est conforme au format PDF/A. Le document PDF d’entrée transmis au service Assembler est nommé *Loan.pdf*. Le nom du document DDX est shell_PDFA.xml. Le document XML renvoyé par le service Assembler et précisant si le document du PDF d’entrée est compatible avec le PDF/A est enregistré sous la forme d’un fichier XML nommé result.xml. Pour plus d’informations à propos du document DDX *shell_PDFA.xml* utilisé dans cet exemple de code, voir [Déterminer si les documents sont conformes au format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+L’exemple de code Java suivant détermine si le document PDF d’entrée est conforme au format PDF/A. Le document PDF d’entrée transmis au service Assembler est nommé *Loan.pdf*. Le nom du document DDX est shell_PDFA.xml. Le document XML renvoyé par le service Assembler, qui indique si le document PDF d’entrée est conforme au format PDF/A, est enregistré sous la forme d’un fichier XML nommé result.xml. Pour plus d’informations à propos du document DDX *shell_PDFA.xml* utilisé dans cet exemple de code, voir [Déterminer si les documents sont conformes au format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```java
  /*
@@ -1184,7 +1184,7 @@ L’exemple de code Java suivant assemble un document PDF contenant des signets.
 
 ## Démarrage rapide (mode SOAP) : création dynamique d’un document DDX à l’aide de l’API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-L’exemple de code Java suivant crée dynamiquement un document DDX qui déassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
+L’exemple de code Java suivant crée dynamiquement un document DDX qui désassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
 
 * `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
 * `convertDDX` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
@@ -1684,11 +1684,11 @@ L’exemple de code Java suivant assemble des fragments XDP basés sur les fichi
 
 ## Démarrage rapide (mode SOAP) : supprimer un document PDF à l’aide de l’API Java. {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant supprime un document PDF à l’aide de la fonction `PDFUtility`.
+L’exemple de code suivant rédige un document PDF à l’aide de `PDFUtility`.
 
 >[!NOTE]
 >
->La variable `PDFUtility` ne peuvent supprimer que les PDF marqués pour modification à l’aide d’Acrobat.
+>`PDFUtility` ne peut rédiger que les PDF marqués pour rédaction à l’aide d’Acrobat.
 
 ```java
 /*

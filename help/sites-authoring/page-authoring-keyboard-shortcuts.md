@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 71%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculer entre **Aperçu** et la valeur sélectionnée [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (par exemple, **Modifier**, **Disposition**, etc.) |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculez entre le mode **Aperçu** et le [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple : **Modifier**, **Disposition**, etc.). |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
@@ -40,7 +40,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->&amp;ast; Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
+>&amp;ast; Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur ou l’utilisatrice doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

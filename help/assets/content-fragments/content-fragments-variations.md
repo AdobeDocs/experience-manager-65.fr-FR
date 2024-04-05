@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer les actions suivantes :
 
 ### Éditeur plein écran {#full-screen-editor}
 
-Lors de la modification d’un champ de texte multiligne, vous pouvez ouvrir l’éditeur plein écran ; cliquez dans le texte réel, puis sélectionnez l’icône d’action suivante :
+Lors de la modification d’un champ de plusieurs lignes de texte, vous pouvez ouvrir l’éditeur plein écran ; cliquez dans le texte, puis sélectionnez l’icône d’action suivante :
 
 ![Icône de l’éditeur plein écran](assets/cfm-variations-03.png)
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '9036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Prenons l’exemple de l’application Forms suivante nommée *Applications/Form
 
 ![www_www_formrepository](assets/ww_ww_formrepository.png)
 
-Notez qu’il existe un fichier nommé Loan.xdp dans le dossier Forms. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+Notez qu’un fichier nommé Loan.xdp se trouve dans le dossier Forms. Pour accéder à cette conception de formulaire, vous devez spécifier le chemin d’accès complet (y compris la version) : `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
 >Pour plus d’informations sur la création d’une application Forms à l’aide de Workbench, voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
-Le chemin d’accès à une ressource dans le référentiel AEM Forms est le suivant :
+Le chemin d’accès à une ressource dans le référentiel AEM Forms est :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -47,7 +47,7 @@ Les valeurs suivantes présentent quelques exemples de valeurs URI :
 >
 >Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats de démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez afficher le contenu dans un navigateur web. (Voir [Démarrage rapide (mode SOAP) : écrire une ressource en utilisant l’API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-L’API de référentiel fournit plusieurs opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste des ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
+L’API Repository fournit un certain nombre d’opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste des ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
 
 >[!NOTE]
 >
@@ -302,7 +302,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 1. Enregistrer la ressource dans le dossier cible
 
-   Appeler la variable `ResourceRepositoryClient` de `writeResource` et transmettez l’URI du dossier, ainsi que la variable `Resource` .
+   Appelez la méthode `writeResource` de lʼobjet `ResourceRepositoryClient` et transmettez lʼURI du dossier, ainsi que lʼobjet `Resource`.
 
 **Voir également**
 
@@ -351,7 +351,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 1. Enregistrer la ressource dans le dossier cible
 
-   Appeler la variable `RepositoryServiceService` de `writeResource` et transmettez l’URI du dossier, ainsi que la variable `Resource` . Transmettez `null` pour les deux autres paramètres.
+   Appelez la méthode `writeResource` de l’objet `RepositoryServiceService` et transmettez l’URI du dossier, et l’objet `Resource`. Transmettez `null` pour les deux autres paramètres.
 
 **Voir également**
 
@@ -471,7 +471,7 @@ Inscription de ressources à l’aide de l’API du service Repository (service 
 
 ## Lecture des ressources {#reading-resources}
 
-Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel pour lire leur contenu et leurs métadonnées. Le workflow est dirigé par un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
+Vous pouvez récupérer des ressources à partir d’un emplacement donné dans le référentiel afin de lire leur contenu et leurs métadonnées. Le workflow est dirigé par un formulaire d’initialisation. Le processus a toutes les permissions nécessaires pour lire le formulaire. Le système récupère le formulaire de données et lit le contenu du référentiel. Le référentiel donne accès au contenu et aux métadonnées (la possibilité de savoir que la ressource existe).
 
 Le référentiel dispose des quatre types d’autorisations suivants :
 
@@ -539,7 +539,7 @@ Lire une ressource à l’aide de l’API du service Repository (Java) :
 
 1. Spécifier l’URI de la ressource à lire
 
-   Spécifiez une valeur de chaîne qui représente l’URI de la ressource à récupérer. Par exemple, en supposant que la ressource soit nommée *testResource* qui se trouve dans un dossier nommé *testFolder*, spécifiez `/testFolder/testResource`.
+   Spécifiez une valeur de chaîne qui représente l’URI de la ressource à récupérer. Par exemple, si la ressource s’appelle *testResource* et se trouve dans un dossier nommé *testFolder*, spécifiez `/testFolder/testResource`.
 
 1. Lire la ressource
 
@@ -590,7 +590,7 @@ Lorsque vous mettez à jour une ressource, la nouvelle version est créée en fo
 
 Par exemple, si vous mettez à jour un fichier XDP qui contient des références à d’autres ressources, ces références supplémentaires seront également enregistrées. Supposons que la version 1.0 de form.xdp possède deux références externes : un logo et une feuille de style. Vous mettez à jour le fichier form.xdp, de sorte quʼil possède maintenant trois références : un logo, une feuille de style et un fichier de schéma. Lors de la mise à jour, le référentiel ajoute la troisième relation (au fichier de schéma) à sa table de relations en attente. Une fois que le fichier de schéma est présent dans le référentiel, la relation est automatiquement formée. Cependant, si la version 2.0 de form.xdp n’utilise plus le logo, la version 2.0 de form.xdp nʼaura pas de relation avec le logo.
 
-Toutes les opérations de mise à jour sont de nature atomique et transactionnelle. Par exemple, si deux utilisateurs lisent la même ressource et décident tous deux de mettre à jour la version 1.0 vers la version 2.0, lʼun dʼeux réussira et lʼautre échouera, lʼintégrité du référentiel sera maintenue et les deux utilisateurs recevront un message confirmant le succès ou lʼéchec. Si la transaction n’est pas validée, elle sera restaurée en cas d’échec de la base de données et expirera ou restaurera selon le serveur d’applications.
+Toutes les opérations de mise à jour sont de nature atomique et transactionnelle. Par exemple, si deux utilisateurs lisent la même ressource et décident tous deux de mettre à jour la version 1.0 vers la version 2.0, lʼun dʼeux réussira et lʼautre échouera, lʼintégrité du référentiel sera maintenue et les deux utilisateurs recevront un message confirmant le succès ou lʼéchec. Si la transaction n’est pas validée, elle sera restaurée en cas de défaillance de la base de données et expirera ou sera restaurée en fonction du serveur d’applications.
 
 Vous pouvez mettre à jour les ressources par programmation à l’aide de l’API Java du service Repository ou de l’API de service web.
 
@@ -713,7 +713,7 @@ Vous pouvez récupérer les ressources associées pour déterminer les dépendan
 
 **Instructions de requête**
 
-Une *requête* contient une ou plusieurs instructions associées à des conditions de façon logique. Une *instruction* est constituée d’un opérande gauche, d’un opérateur et d’un opérande droit. De plus, vous pouvez spécifier l’ordre de tri à utiliser pour les résultats de la recherche. La variable *ordre de tri* contient des informations équivalentes à un SQL `ORDER BY` La clause et est composée d’éléments qui contiennent les attributs sur lesquels la recherche a été basée et d’une valeur indiquant si l’ordre croissant ou décroissant doit être utilisé.
+Une *requête* contient une ou plusieurs instructions associées à des conditions de façon logique. Une *instruction* est constituée d’un opérande gauche, d’un opérateur et d’un opérande droit. De plus, vous pouvez spécifier l’ordre de tri à utiliser pour les résultats de la recherche. Lʼ&#x200B;*ordre de tri* contient des informations équivalentes à une clause SQL `ORDER BY` et est composé dʼéléments qui contiennent les attributs sur lesquels la recherche a été basée, ainsi quʼune valeur indiquant si lʼordre ascendant ou descendant doit être utilisé.
 
 Vous pouvez rechercher des ressources par programmation à l’aide de l’API Java du service Repository. Actuellement, il n’est pas possible d’utiliser l’API de service web pour rechercher des ressources.
 
@@ -839,7 +839,7 @@ Recherchez une ressource à l’aide de l’API Repository Service (Java) :
 
 1. Récupérer les ressources à partir des résultats de recherche
 
-   Pour récupérer les ressources contenues dans le résultat de la recherche, procédez comme suit : `List` et convertit chaque objet en `Resource` pour extraire ses informations. Dans cet exemple, le nom de chaque ressource est affiché.
+   Pour récupérer les ressources contenues dans les résultats de recherche, il faut itérer au sein de `List` et convertir chaque objet en `Resource` afin d’extraire ses informations. Dans cet exemple, le nom de chaque ressource est affiché.
 
 **Voir également**
 
@@ -918,7 +918,7 @@ Créez des ressources de relation à l’aide de l’API Java Repository Service
 
 1. Spécification des URI des ressources à relier
 
-   Spécifiez les URI des ressources à relier. Dans ce cas, car les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Les URI sont stockés en tant qu’objets `java.lang.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez les URI des ressources à relier. Dans ce cas, comme les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Les URI sont stockés en tant qu’objets `java.lang.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Création de la relation
 
@@ -962,7 +962,7 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
 1. Spécification des URI des ressources à relier
 
-   Spécifiez les URI des ressources à relier. Dans ce cas, car les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez les URI des ressources à relier. Dans ce cas, étant donné que les ressources sont nommées `testResource1` et `testResource2` et se trouvent dans le dossier nommé `testFolder`, leurs URI sont `"/testFolder/testResource1"` et `"/testFolder/testResource2"`. Lors de l’utilisation d’un langage conforme à Microsoft .NET Framework (C#, par exemple), les URI sont stockés sous la forme d’un objet `System.String`. Dans cet exemple, les ressources sont d’abord écrites dans le référentiel et leurs URI sont récupérés. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Création de la relation
 
@@ -996,7 +996,7 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
 Vous pouvez verrouiller une ressource ou un ensemble de ressources pour une utilisation exclusive par un utilisateur particulier ou une utilisation partagée entre plusieurs utilisateurs. Un verrou partagé est une indication que quelque chose va se produire avec la ressource, mais cela n’empêche personne d’autre de prendre des mesures avec cette ressource. Un verrou partagé doit être considéré comme un mécanisme de signalisation. Un verrou exclusif signifie que l’utilisateur qui a verrouillé la ressource va la modifier. Le verrou garantit que personne d’autre ne peut le faire jusqu’à ce que l’utilisateur n’ait plus besoin d’accéder à la ressource et ait libéré le verrou. Si un administrateur de référentiel déverrouille une ressource, tous les verrous exclusifs et partagés de cette ressource sont automatiquement supprimés. Ce type d’action est destiné aux situations dans lesquelles un utilisateur n’est plus disponible et n’a pas déverrouillé la ressource.
 
-Lorsqu’une ressource est verrouillée, une icône de verrouillage s’affiche lorsque vous affichez l’onglet Ressources dans Workbench, comme illustré ci-dessous.
+Lorsqu’une ressource est verrouillée, une icône de verrou s’affiche lorsque vous affichez l’onglet Ressources situé dans Workbench, comme illustré ci-dessous.
 
 ![lr_lr_lockrepository](assets/lr_lr_lockrepository.png)
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les opérations de développement visent à éviter les problèmes tels que :
 
 ## Environnements {#environments}
 
-Un déploiement Adobe Experience Manager (AEM) se compose généralement de plusieurs environnements, utilisés à des fins différentes à différents niveaux :
+Un déploiement Adobe Experience Manager (AEM) implique généralement plusieurs environnements, utilisés à diverses fins et à différents niveaux :
 
 * [Développement](#development)
 * [Assurance qualité](#quality-assurance)
@@ -50,10 +50,10 @@ Les personnes en charge du développement doivent développer et personnaliser l
 * réalisent la conception ;
 * développent les services et les scripts nécessaires pour mettre en œuvre les fonctionnalités requises.
 
-La configuration de la variable [development](/help/sites-developing/best-practices.md) L’environnement peut dépendre de divers facteurs, bien qu’il se compose des éléments suivants :
+La configuration de l’environnement de [développement](/help/sites-developing/best-practices.md) peut dépendre de divers facteurs, bien qu’elle soit généralement composée des éléments suivants :
 
-* Un système de développement intégré avec contrôle de version pour fournir une base de code intégrée. Il est utilisé pour fusionner et consolider le code des différents environnements de développement utilisés par chaque développeur.
-* Un environnement personnel pour chaque développeur, résidant habituellement sur son ordinateur local. Le code est synchronisé avec le système de contrôle de version à des intervalles appropriés.
+* Un système de développement intégré avec contrôle de version pour fournir une base de code intégrée. Il est utilisé pour fusionner et consolider le code des différents environnements de développement utilisés par chaque développeur et développeuse.
+* Un environnement personnel pour chaque développeur, résidant habituellement sur son ordinateur local. Le code est synchronisé avec le système de contrôle des versions à des intervalles appropriés.
 
 Selon l’échelle de votre système, l’environnement de développement peut comprendre une instance de création et une instance de publication.
 
@@ -78,11 +78,11 @@ Un environnement de production comprend au moins une instance de création et un
 * Une instance de [création](#author) pour la saisie du contenu.
 * Une instance de [publication](#publish) pour le contenu mis à la disposition de vos visiteurs/utilisateurs.
 
-Selon l’échelle du projet, il se compose souvent de plusieurs instances d’auteur, de plusieurs instances de publication ou des deux. À un niveau inférieur, le référentiel peut également être mis en cluster sur plusieurs instances.
+Selon l’échelle du projet, il se compose bien souvent de plusieurs instances de création et/ou de publication. À un niveau inférieur, le référentiel peut également être mis en cluster sur plusieurs instances.
 
 #### Création {#author}
 
-Les instances d’auteur se trouvent généralement derrière le pare-feu interne. Il s’agit de l’environnement dans lequel vous et vos collègues effectuerez des tâches de création, telles que :
+Les instances de création se trouvent généralement derrière le pare-feu interne. Il s’agit de l’environnement dans lequel vous et vos collègues effectuez des tâches de création, telles que :
 
 * administrer l’ensemble du système ;
 * saisir votre contenu ;
@@ -91,31 +91,31 @@ Les instances d’auteur se trouvent généralement derrière le pare-feu intern
 
 Le contenu qui a été activé est mis en package et placé dans la file d’attente de réplication de l’environnement de création. Le processus de réplication transporte ensuite ce contenu dans l’environnement de publication.
 
-Pour répliquer à l’inverse les données générées dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère ce contenu dans la boîte d’envoi de réplication inverse de l’environnement de publication.
+Pour répliquer à l’inverse les données générées dans un environnement de publication vers l’environnement de création, un listener de réplication dans l’environnement de création interroge l’environnement de publication et récupère ce contenu dans la boîte d’envoi de réplication inversée de l’environnement de publication.
 
 #### Publier {#publish}
 
-Un environnement de publication se trouve dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accèdent à votre contenu (par exemple, via un site web ou sous la forme d’une application mobile) et interagissent avec celui-ci, qu’il soit public ou dans votre intranet. Un environnement de publication :
+Un environnement de publication se trouve dans la « zone démilitarisée » (DMZ). Il s’agit de l’environnement où les personnes accèdent à votre contenu (par exemple, par le biais d’un site Web ou sous la forme d’une application mobile) et interagissent avec celui-ci, qu’il soit public ou dans votre intranet. Un environnement de publication :
 
 * contient du contenu répliqué à partir de l’environnement de création ;
 * met ce contenu à la disposition des visiteurs et visiteuses ;
 * stocke les données d’utilisation générées par vos visiteurs et visiteuses, telles que les commentaires ou autres envois de formulaire ;
 * peut être configuré pour ajouter de telles données d’utilisation à une boîte d’envoi, afin que la réplication inversée soit rétablie dans l’environnement de création
 
-L’environnement de publication génère votre contenu dynamiquement en temps réel et le contenu peut être personnalisé pour chaque utilisateur.
+L’environnement de publication génère votre contenu dynamiquement en temps réel et le contenu peut être personnalisé pour chaque personne.
 
 ## Mouvement de code  {#code-movement}
 
-toujours propager le code du bas vers le haut :
+Propagez toujours le code du bas vers le haut :
 
 * le code est initialement développé sur les environnements de développement locaux puis intégrés
 * ...avant d’être soumis de tests approfondis sur les environnements d’assurance qualité...
 * ...puis d’être testé à nouveau sur les environnements d’évaluation
 * À ce stade seulement, le code doit être déployé dans les environnements de production.
 
-Le code (par exemple, la fonctionnalité d’application web personnalisée et les modèles de conception) est transféré en exportant et en important des modules entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
+Le code (par exemple, les fonctionnalités d’applications web et les modèles de conception personnalisés) est transféré en exportant et en important des modules entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
 
-Les projets AEM déclenchent souvent le déploiement du code :
+Les projets AEM déclenchent souvent le déploiement du code :
 
 * Automatiquement : pour le transfert vers les environnements de développement et d’assurance qualité.
 * Manuellement : les déploiements sur les environnements d’évaluation et de production sont effectués de manière plus contrôlée, souvent manuelle ; l’automatisation reste toutefois possible, si nécessaire.
@@ -132,11 +132,11 @@ Le contenu de production doit être déplacé à partir de l’environnement de 
 
 >[!NOTE]
 >
->Cela ne signifie pas que le contenu intermédiaire doit être continuellement synchronisé avec la production, les mises à jour régulières sont suffisantes, mais surtout avant de tester une nouvelle itération du code. Le contenu des environnements d’assurance qualité et de développement n’a pas besoin d’être mis à jour aussi fréquemment. Il doit s’agir d’une bonne représentation du contenu de production.
+>Cela ne signifie pas que le contenu d’évaluation doit être continuellement synchronisé avec la production ; les mises à jour régulières sont suffisantes, mais le contenu doit être synchronisé surtout avant de tester une nouvelle itération du code. Le contenu des environnements d’assurance qualité et de développement n’a pas besoin d’être mis à jour aussi fréquemment. Il doit s’agir d’une bonne représentation du contenu de production.
 
-Le contenu peut être transféré :
+Le contenu peut être transféré :
 
 * entre les différents environnements, en exportant et en important des packages ;
-* entre différentes instances, en répliquant directement ([Réplication AEM](/help/sites-deploying/replication.md)), le contenu (à l’aide d’une connexion HTTP ou HTTPS).
+* entre différentes instances, en répliquant directement ([réplication AEM](/help/sites-deploying/replication.md)) le contenu (à l’aide d’une connexion HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

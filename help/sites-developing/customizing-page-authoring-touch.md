@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -221,7 +221,7 @@ Il est possible de configurer un composant de sorte qu’il dispose de plusieurs
 
 ## Ajouter une nouvelle action de page {#add-a-new-page-action}
 
-Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple, une **Retour à Sites** (console).
+Pour ajouter une nouvelle action de page à la barre d’outils de la page, par exemple une action **Retour à Sites** (console).
 
 ### Exemple de code {#code-sample-3}
 

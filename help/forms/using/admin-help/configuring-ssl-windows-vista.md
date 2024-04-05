@@ -1,6 +1,6 @@
 ---
 title: Configurer SSL sous Windows Vista
-description: Découvrez comment configurer SSL sous Windows Vista. Utilisez et exécutez l’outil Java Keytool pour générer le certificat SSL avec des clés RSA pour l’authentification.
+description: Découvrez comment configurer SSL sous Windows Vista. Utilisez et exécutez Java Keytool pour générer le certificat SSL avec les clés RSA pour l’authentification.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
@@ -10,21 +10,21 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Configurer SSL sous Windows Vista {#configuring-ssl-on-windows-vista}
 
-Pour configurer SSL sous Windows Vista™, vous avez besoin d’un certificat SSL avec des clés RSA à des fins d’authentification. Vous pouvez utiliser l’outil Java keytool pour créer le certificat.
+Pour configurer SSL sous Windows Vista™, vous avez besoin d’un certificat SSL avec des clés RSA pour l’authentification. Vous pouvez utiliser l’outil Java Keytool pour créer ce certificat.
 
 >[!NOTE]
 >
->Windows Vista ne fonctionnera pas avec les clés DSA.
+>Windows Vista ne fonctionnera pas avec les clés DSA.
 
-Vous pouvez exécuter keytool en utilisant une seule commande qui comprend toutes les informations requises pour créer le certificat et le KeyStore.
+Vous pouvez exécuter Keytool à l’aide d’une seule commande qui inclut toutes les informations requises pour créer le certificat et le fichier de stockage de clés.
 
-**Création d’un certificat SSL**
+**Créer un certificat SSL**
 
 1. Dans une invite de commande, naviguez jusqu’à *`[JAVA HOME]`*/bin et tapez la commande ci-dessous pour créer le certificat et le fichier de stockage des clés :
 

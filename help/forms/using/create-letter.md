@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3982'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Ce document d’avis d’annulation est un exemple type de correspondance :
   </tr> 
   <tr> 
    <td>Images stockées<br /> du référentiel central</td> 
-   <td>Images (logos et signatures). Les images telles que les logos de l’entreprise apparaissent dans la plupart ou dans la totalité des correspondances. Les images de signatures sont quant à elles spécifiques à la lettre et à la personne au nom de laquelle est envoyé le courrier.</td> 
+   <td>Images (logos et signatures). Les images comme les logos de l’entreprise sont présentes dans la majorité des correspondances. Les images de signatures sont quant à elles spécifiques à la lettre et à la personne au nom de laquelle est envoyé le courrier.</td> 
    <td><p>Images stockées dans les ressources AEM (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +167,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 
 **Créer le dictionnaire de données** : certaines valeurs de données telles que « Identifiant client » et « Nom du client » sont communes à de nombreuses lettres. Vous pouvez établir une liste consolidée de toutes ces valeurs de données. En règle générale, on consulte une personne de l’équipe middleware de l’entreprise lors de la planification de la structure. Ces valeurs de données constituent la base à partir de laquelle est créé le dictionnaire de données.
 
-**Approvisionnement des données à partir des systèmes d’arrière-plan de l’entreprise** Vous connaissez également toutes les valeurs de données nécessaires et d’où proviennent les données du système d’entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
+**Obtenir des données des systèmes d’arrière-plan de l’entreprise** : vous connaîtrez également toutes les valeurs de données nécessaires et saurez où obtenir les données du système d’entreprise. Vous pouvez ensuite architecturer l’implémentation permettant d’extraire les données du système d’entreprise pour alimenter la solution Lettres.
 
 **Estimer la complexité des lettres** : il est important de définir la complexité que représente la création d’une correspondance particulière. Cette analyse permet de déterminer le temps et les ensembles de compétences nécessaires pour créer les modèles de lettre. Cela vous permettra ensuite d’estimer les ressources et les coûts nécessaires à l’implémentation de la solution Lettres.
 
@@ -242,11 +242,11 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
    ![create-letter](assets/create-letter.png)
 
-1. Sélectionnez une mise en page en appuyant dessus, puis sélectionnez **Suivant**.
+1. Choisissez une disposition en cliquant dessus, puis sélectionnez **Suivant**.
 
    ![Sélection de la mise en page pour créer une lettre](assets/selectlayout.png)
 
-1. Saisissez les propriétés de la correspondance et sélectionnez **Enregistrer :**
+1. Saisissez les propriétés de la correspondance, puis sélectionnez **Enregistrer :**
 
    * **Titre (facultatif) :** saisissez le titre de la lettre. Le titre ne doit pas nécessairement être unique et peut contenir des caractères spéciaux et des caractères dans une langue autre que l’anglais.
    * **Nom :** nom unique de la lettre. Deux lettres ne peuvent en aucun cas porter le même nom. Dans le champ Nom, vous pouvez saisir uniquement des caractères, des chiffres et des tirets de langue anglaise. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
@@ -257,21 +257,21 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
    ![Propriétés de correspondance](assets/createcorrespondenceproperties.png)
 
-1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’alerte) Sélectionnez **Ouvrir** pour configurer les modules de données et les fragments de mise en page. Ou sélectionnez **Terminé** pour revenir à la page précédente.
+1. Le système affiche le message suivant : « Lettre créée avec succès » (dans le message d’alerte) Sélectionnez **Ouvrir** afin de configurer les modules de données et les fragments de disposition à l’intérieur. Vous pouvez également cliquer sur **Terminé** pour revenir à la page précédente.
 
    ![Message d’avertissement : lettre créée avec succès](assets/createcorrespondencecreated.png)
 
-   **Suivant**: lorsque vous sélectionnez **Ouvrir**, Correspondence Management affiche une représentation de la mise en page répertoriant tous les composants de la mise en page (XDP). Poursuivez en insérant les [Modules de données et fragments de disposition et configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Suivant** : lorsque vous sélectionnez **Ouvrir**, Correspondence Management affiche une représentation de la disposition répertoriant tous les composants présents dans la disposition (XDP). Poursuivez en insérant les [Modules de données et fragments de disposition et configuration](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Insérez des modules de données et des fragments de disposition dans une lettre puis configurez-les. {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
-Après la création d’une correspondance, lorsque vous sélectionnez Ouvrir, Correspondence Management affiche une représentation de la mise en page répertoriant tous les sous-formulaires/zones cible de la mise en page (XDP). Dans chaque zone cible, vous pouvez choisir d’insérer un module de données ou un fragment de disposition (puis des modules de données dans le fragment de disposition).
+Une fois la correspondance créée, sélectionnez Ouvrir pour afficher dans Correspondence Management une représentation de la disposition répertoriant tous les sous-formulaires/zones cible de la disposition (XDP). Dans chaque zone cible, vous pouvez choisir d’insérer un module de données ou un fragment de disposition (puis des modules de données dans le fragment de disposition).
 
 >[!NOTE]
 >
->Vous pouvez également sélectionner l’icône Modifier d’une lettre dans la page Lettres pour Insérer des modules de données et des fragments de mise en page dans une lettre et les configurer.
+>Vous pouvez également sélectionner l’icône Modifier d’une lettre dans la page Lettres pour insérer des modules de données et des fragments de disposition dans une lettre avant de les configurer.
 
-1. Sélectionner **Insérer** pour chacun des sous-formulaires et sélectionnez des modules de données ou un fragment de mise en page à insérer dans chacun des sous-formulaires.
+1. Sélectionnez **Insérer** pour chacun des sous-formulaires et sélectionnez des modules de données ou un fragment de disposition à insérer dans chaque sous-formulaire.
 
    ![Insertion de modules de données et de fragments de mise en page](assets/insertdmandlf.png)
 
@@ -280,7 +280,7 @@ Après la création d’une correspondance, lorsque vous sélectionnez Ouvrir, C
    ![nestedlf](assets/nestedlf.png)
 
 1. Si vous insérez un fragment de disposition, le nom du fragment de disposition s’affiche dans le sous-formulaire. Et selon le fragment sélectionné, les sous-formulaires imbriqués s’affichent dans le sous-formulaire.
-1. Une fois les modules de données sélectionnés insérés dans la mise en page, vous pouvez sélectionner le mode de configuration et définir les éléments suivants après avoir appuyé sur l’icône Modifier pour chacun des modules :
+1. Après avoir inséré les modules de données sélectionnés dans la disposition, vous pouvez sélectionner Configurer le mode et définir les éléments suivants pour chaque module après avoir appuyé sur l’icône Modifier :
 
    1. **Modifiable** : lorsque cette option est sélectionnée, le contenu peut être modifié dans l’interface utilisateur de création de correspondance. Marquez le contenu comme modifiable uniquement s’il doit obligatoirement être modifié par un utilisateur ou une utilisatrice de l’entreprise (un expert ou une experte en assurance, par exemple).
    1. **Obligatoire** : lorsque cette option est sélectionnée, le contenu est obligatoire dans l’interface utilisateur de création de correspondance.
@@ -291,18 +291,18 @@ Après la création d’une correspondance, lorsque vous sélectionnez Ouvrir, C
 
    ![Modules de données et fragments de mise en page insérés](assets/insertdmandlf2.png)
 
-1. Pour modifier un module, cliquez sur l’icône Modifier située en regard de celui-ci. Après avoir modifié les modules, sélectionnez **Enregistrer**.
+1. Pour modifier un module, sélectionnez l’icône Modifier située en regard de celui-ci. Après modification des modules, sélectionnez **Enregistrer**.
 
    Dans cette page, vous pouvez également procéder comme suit pour les sous-formulaires :
 
-   1. **Activation du texte libre** : quand le texte libre est activé, un utilisateur peut ajouter du texte en ligne dans la lettre grâce à la vue CCR. Dans la vue CCR, une action &quot;T&quot; est activée pour les zones cible pour lesquelles l’option Autoriser le texte libre est activée. Lorsque l’utilisateur la sélectionne, il demande le nom et la description du texte, puis, en appuyant sur OK, il ouvre ce texte en mode d’édition où l’utilisateur peut ajouter du texte. Il s’agit donc du même fonctionnement que pour d’autres modules de texte.
+   1. **Activation du texte libre** : quand le texte libre est activé, un utilisateur peut ajouter du texte en ligne dans la lettre grâce à la vue CCR. Dans la vue CCR, une action « T » est activée pour ces zones cible. Le texte libre est activé dans cette action et lorsque l’utilisateur ou l’utilisatrice appuie dessus, le nom et la description du texte lui seront demandés. En appuyant sur OK, ce texte s’ouvre en mode de modification où l’utilisateur ou l’utilisatrice peut ajouter du texte. Il s’agit donc du même fonctionnement que pour d’autres modules de texte.
    1. **Verrouillage de l’ordre** : verrouille l’ordre des sous-formulaires dans la lettre. L’auteur ou l’autrice n’est pas autorisée à réorganiser les sous-formulaires et composants lors de la création de la lettre.
 
    Dans cette page, vous pouvez également procéder comme suit pour chaque actif des sous-formulaires :
 
    1. **Modifier l’ordre des ressources** : faites glisser et déposez une ressource contenant l’icône de réorganisation d’une ressource (![glisser-déposer](assets/dragndrop.png)).
-   1. **Suppression de ressources**: sélectionnez l’icône Supprimer en regard d’une ressource pour la supprimer.
-   1. **Aperçu des ressources**: sélectionnez l’icône d’aperçu ( ![showpreview](assets/showpreview.png)) en regard d’une ressource.
+   1. **Supprimer des ressources** : sélectionnez l’icône de suppression en regard d’une ressource pour la supprimer.
+   1. **Prévisualiser des ressources** : sélectionnez l’icône d’aperçu (![showpreview](assets/showpreview.png)) en regard d’une ressource.
 
 1. Sélectionnez **Suivant**.
 1. La page de données détaille la façon dont les champs de données et les variables sont utilisés dans le modèle. Les données peuvent être associées à des sources de données comme un dictionnaire de données ou des entrées utilisateur. Chaque champ définit des propriétés que le dictionnaire de données associe aux données ou aux légendes affichées pour les champs d’entrée utilisateur.
@@ -339,10 +339,10 @@ Après la création d’une correspondance, lorsque vous sélectionnez Ouvrir, C
 ### Configurez les pièces jointes {#set-up-the-attachments}
 
 1. Sélectionnez **Ajouter un actif**.
-1. Dans l’écran Sélectionner une ressource, sélectionnez les ressources à joindre à la lettre, puis sélectionnez **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est conseillé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour en savoir plus sur le téléchargement des ressources dans la gestion des ressources numériques, consultez la section [Télécharger des ressources](/help/assets/manage-assets.md).
-1. Pour verrouiller l’ordre des actifs dans la liste de sorte que l’expert en assurance ne puisse pas modifier l’ordre, sélectionnez **Ordre de verrouillage**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
+1. Dans l’écran de sélection des ressources, sélectionnez les ressources à joindre à la lettre et choisissez **Terminé**. Les actifs doivent d’abord être chargés dans Actifs. Il est conseillé de joindre uniquement des documents PDF et Microsoft Office, mais vous pouvez également joindre des images. Pour en savoir plus sur le téléchargement des ressources dans la gestion des ressources numériques, consultez la section [Télécharger des ressources](/help/assets/manage-assets.md).
+1. Pour verrouiller l’ordre des ressources dans la liste et empêcher l’expert ou l’experte en sinistre de le modifier, sélectionnez **Verrouiller l’ordre**. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
 1. Pour modifier l’ordre des ressources, faites glisser et déposez une ressource contenant l’icône de réorganisation d’une ressource (![dragndrop](assets/dragndrop.png)).
-1. Sélectionner **Modifier** devant une pièce jointe et indiquez qu’une pièce jointe est obligatoire si vous ne souhaitez pas que l’auteur puisse la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
+1. Sélectionnez **Modifier** en regard d’une pièce jointe et indiquez que celle-ci est obligatoire si vous souhaitez que l’auteur ou autrice ne puisse pas la supprimer. Indiquez qu’une pièce jointe est sélectionnée si vous souhaitez qu’elle soit présélectionnée dans l’interface CCR.
 1. Sélectionnez **Accès à la bibliothèque** pour donner accès à la bibliothèque. Si Accès à la bibliothèque est activé, l&#39;expert ou l’experte en sinistre peut accéder à la bibliothèque de contenu lors de la création d&#39;une lettre et insérer des pièces jointes.
 1. Sélectionnez **Configuration de pièces jointes** et spécifiez le nombre maximal de pièces jointes.
 

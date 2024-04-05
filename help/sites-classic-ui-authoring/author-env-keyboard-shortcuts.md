@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '114'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (sur la page requise)</td>
-   <td>Ouvrez la page dans une nouvelle fenêtre.<br /> <strong>Remarque :</strong> cela fonctionne si la variable <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriétés de l’utilisateur</a> sont définis sur Une seule fenêtre ; si l’option Fenêtres multiples est définie, il s’agit du comportement par défaut.</td>
+   <td>Ouvrir la page dans une nouvelle fenêtre.<br /> <strong>Remarque</strong> : cela fonctionne si les <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriétés de l’utilisateur ou de l’utilisatrice</a> sont définies sur « Une seule fenêtre » ; si l’option « Fenêtres multiples » est définie, il s’agit du comportement par défaut.</td>
   </tr>
  </tbody>
 </table>
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui se servent de l’[éditeur de page](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour créer des pages.
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices d’ordinateur de bureau qui se servent de l’[éditeur de page](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour créer des pages.

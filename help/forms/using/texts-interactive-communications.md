@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2474'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -77,21 +77,21 @@ Vous pouvez modifier un fragment de document texte existant en suivant les étap
 1. Accédez à un fragment de document texte et sélectionnez-le.
 1. Sélectionnez **[!UICONTROL Modifier]**.
 1. Effectuez les modifications nécessaires. Pour plus d’informations sur les options dans le texte, consultez [Créer du texte](#createtext).
-1. Sélectionner **[!UICONTROL Enregistrer]** puis sélectionnez **[!UICONTROL Fermer]**.
+1. Sélectionnez **[!UICONTROL Enregistrer]**, puis **[!UICONTROL Fermer]**.
 
 ## Personnalisation d’un fragment de document texte à l’aide des propriétés de modèle de données de formulaire {#formdatamodel}
 
 Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans le texte, vous pouvez extraire et remplir des données spécifiques au destinataire à partir de la source de données associée tout en prévisualisant une communication interactive. Pour plus d’informations sur le modèle de données de formulaire, consultez [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
-Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié doit être le même pour le fragment de document texte et la communication interactive qui l’inclut.
+Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Spécifiez le même modèle de données de formulaire pour le fragment de document texte et pour la communication interactive qui l’inclut.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Pour insérer une propriété de modèle de données de formulaire dans du texte, placez le curseur à l’endroit où vous souhaitez insérer la propriété, puis sélectionnez la propriété **[A]** dans le volet de gauche en appuyant dessus, puis sélectionnez **[!UICONTROL [B] Ajouter la sélection]**. Vous pouvez également double-sélectionner la propriété pour l’insérer au niveau de la propriété **[C]** position du curseur. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
+* Pour insérer une propriété de modèle de données de formulaire dans le texte, placez le curseur à l’endroit où vous voulez l’insérer, puis sélectionnez la propriété **[A]** dans le volet de gauche en appuyant dessus, puis sélectionnez **[!UICONTROL [B] Ajouter la sélection]**. Vous pouvez aussi tout simplement sélectionner deux fois la propriété pour l’insérer à l’emplacement du curseur **[C]**. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
 
 Vous pouvez également rechercher et ajouter une propriété de modèle de données de formulaire à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la propriété. Saisissez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de document. Les propriétés ou variables contenant la chaîne de recherche sont récupérées et affichées sous forme de liste déroulante. Parcourez les résultats de la recherche et cliquez sur la propriété à insérer à l’emplacement du curseur. Appuyez sur Échap pour masquer les résultats de la recherche.
 
-* Pour permettre aux agents de modifier la valeur d’une propriété de modèle de données de formulaire dans l’interface utilisateur de l’agent pendant que [Préparation et envoi d’une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’interface utilisateur de l’agent, sélectionnez la variable **[D]** icône de verrouillage pour cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
+* Pour permettre aux agents ou agentes de modifier la valeur d’une propriété de modèle de données de formulaire dans l’interface utilisateur de l’agent tout en [préparant et en envoyant une communication interactive](/help/forms/using/prepare-send-interactive-communication.md) à l’aide de l’IU de l’agent, sélectionnez l’icône de verrouillage **[D]** de cette propriété et assurez-vous qu’elle est à l’état déverrouillé. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
 
 Vous pouvez également utiliser les propriétés de modèle de données de formulaire pour créer des règles d’affichage ou de masquage de parties de contenu. Pour plus d’informations, voir [Créer des règles dans le texte](#rules).
 
@@ -119,7 +119,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Le volet Créer des variables apparaît.
 
-1. Saisissez les informations suivantes et sélectionnez **[!UICONTROL Créer]**:
+1. Saisissez les informations suivantes et sélectionnez **[!UICONTROL Créer]** :
 
    * **[!UICONTROL Nom]** : nom de la variable.
    * **[!UICONTROL Description]** : entrez éventuellement une description de la variable.
@@ -130,7 +130,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    La variable est créée et répertoriée dans le volet Variables.
 
-1. Pour insérer une variable dans le texte, placez le curseur à l’endroit approprié, sélectionnez la variable, puis sélectionnez **[!UICONTROL Ajouter la sélection]**.
+1. Pour insérer une variable dans le texte, placez le curseur à l’endroit approprié, sélectionnez la variable et **[!UICONTROL Ajouter la sélection]**.
 
    ![variableinserted](assets/variableinserted.png)
 
@@ -157,7 +157,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Sélectionner **[!UICONTROL Créer une règle]**.
+1. Sélectionnez **[!UICONTROL Créer une règle]**.
 
    La boîte de dialogue Créer une règle s’affiche. En plus de la chaîne, du nombre, de l’expression mathématique et de la date, les éléments suivants sont également disponibles dans l’éditeur de règles pour la création d’instructions :
 
@@ -182,7 +182,7 @@ L’éditeur de règles dans un texte permet de créer des règles pour afficher
 
    Règle d’affichage du texte sélectionné si le destinataire se situe aux Etats-Unis selon les données source FDM
 
-   * Lorsque vous créez ou modifiez une règle, vous pouvez également sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle . La boîte de dialogue développée, pleine fenêtre, vous permet de glisser-déposer des propriétés de modèle de données de formulaire et des variables pour construire des règles. Sélectionnez Redimensionner pour revenir à la boîte de dialogue Créer une règle .
+   * Lors de la création ou de la modification d’une règle, vous pouvez également sélectionner ![icon_resize](assets/icon_resize.png) (Redimensionner) pour développer la boîte de dialogue Créer une règle/Modifier la règle. La boîte de dialogue développée, pleine fenêtre, vous permet de glisser-déposer des propriétés de modèle de données de formulaire et des variables pour construire des règles. Sélectionnez à nouveau Redimensionner pour revenir à la boîte de dialogue Créer une règle.
    * Vous pouvez également créer plusieurs conditions dans une règle.
    * Vous pouvez également créer des règles qui se chevauchent, dans lesquelles une règle s’applique à une partie d’un contenu auquel s’applique déjà une règle.
 
@@ -216,13 +216,13 @@ Barre d’outils Liste
 
 ### Mettre en surbrillance/en évidence des parties de texte {#highlight}
 
-Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fragment de document modifiable, sélectionnez le texte et choisissez Couleur de surbrillance.
+Pour mettre en surbrillance\en évidence des parties de texte dans un fragment de document modifiable, sélectionnez le texte puis Couleur de surbrillance.
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-Vous pouvez sélectionner directement une couleur de base. `**[A]**` dans la palette Couleurs de base ou sélectionnez **Sélectionner** après avoir utilisé le curseur `**[B]**` pour choisir l’nuance appropriée de la couleur.
+Vous pouvez soit directement sélectionner une couleur de base `**[A]**` présente dans la palette de couleurs correspondante soit choisir **Sélectionner** après avoir utilisé le curseur `**[B]**` pour sélectionner la teinte de couleur appropriée.
 
-Vous pouvez également accéder à l’onglet Avancé pour sélectionner la teinte, la luminosité et la saturation appropriées. `**[C]**` pour créer une couleur précise, puis sélectionnez Sélectionner `**[D]**` pour appliquer la couleur pour mettre le texte en surbrillance.
+De manière facultative, vous pouvez également vous connecter à l’onglet Avancé pour choisir la teinte, la luminosité et la saturation `**[C]**` appropriées pour créer la couleur précise, puis choisir Sélectionner `**[D]**` pour appliquer la couleur afin de mettre le texte en surbrillance.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -244,7 +244,7 @@ Vous pouvez directement copier et coller le texte à partir du document Microsof
 
 ## Insérer des caractères spéciaux dans le texte {#special}
 
-Au besoin, insérez des caractères spéciaux dans le fragment de document. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
+Si nécessaire, insérez des caractères spéciaux dans le fragment de document. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 
 * Symboles de devise tels que €,￥et £
 * Symboles mathématiques tels que ∑, √, ∂ et ^
@@ -261,15 +261,15 @@ Lorsque vous travaillez avec des fragments de document texte contenant une grand
 La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) n’importe quelle chaîne de caractères dans un fragment de document de texte. La fonction comprend également une recherche d’expression régulière puissante.
 
 1. Ouvrez un fragment de document texte pour [modification](#edittext).
-1. Sélectionner **[!UICONTROL Rechercher et remplacer]**.
+1. Sélectionnez **[!UICONTROL Rechercher et remplacer]**.
 
-1. Entrez le texte à rechercher dans la variable **[!UICONTROL Rechercher]** et le nouveau texte (texte de remplacement) dans la **[!UICONTROL Remplacer]** zone de texte et sélectionnez **[!UICONTROL Remplacer]**.
+1. Saisissez le texte à rechercher dans la zone de texte **[!UICONTROL Rechercher]** et le nouveau texte (texte de remplacement) dans la zone de texte **[!UICONTROL Remplacer]** puis sélectionnez **[!UICONTROL Remplacer]**.
 
 1. Si le texte recherché est trouvé, il est remplacé par le texte de remplacement.
 
-   * Si une autre instance du texte de recherche est trouvée, elle est mise en surbrillance dans le fragment de document texte. Si vous sélectionnez **[!UICONTROL Remplacer]** une fois de plus, l’instance mise en surbrillance est remplacée et le curseur se déplace vers l’avant, si une troisième instance est trouvée.
+   * Si une autre instance du texte de recherche est trouvée, elle est mise en surbrillance dans le fragment de document texte. Si vous sélectionnez à nouveau **[!UICONTROL Remplacer]**, l’instance mise en surbrillance est remplacée et, si une troisième instance est trouvée, le curseur se déplace vers le bas.
    * Si aucune autre instance n’est trouvée, la boîte de dialogue Rechercher et remplacer affiche un message : Fin du module atteinte.
 
    Vous pouvez également sélectionner Remplacer tout pour remplacer toutes les correspondances en une seule fois.
 
-   La fonction Rechercher et remplacer comprend également une recherche d’expression régulière puissante. Pour utiliser l’expression régulière dans votre recherche, sélectionnez **[!UICONTROL Reg ex]** puis sélectionnez **[!UICONTROL Rechercher]** ou **[!UICONTROL Remplacer]**.
+   La fonction Rechercher et remplacer comprend également une recherche d’expression régulière puissante. Pour utiliser une expression RegEx dans votre recherche, sélectionnez **[!UICONTROL Exp. rég.]**, puis appuyez sur **[!UICONTROL Rechercher]** ou **[!UICONTROL Remplacer]**.

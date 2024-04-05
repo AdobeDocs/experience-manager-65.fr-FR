@@ -1,6 +1,6 @@
 ---
 title: Élaborer un plan de tests
-description: Les cas de test individuels sont fusionnés dans votre plan de test.
+description: Les cas de test individuels sont amalgamés dans votre plan de test.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 # Élaborer un plan de tests{#compiling-your-test-plan}
 
-Les cas de test individuels sont ensuite fusionnés dans votre plan de test, qui définit également :
+Les cas de test individuels sont ensuite amalgamés dans votre plan de test, qui définit également :
 
 **Priorités**
 
@@ -27,20 +27,20 @@ Par exemple, certains tests peuvent affecter une décision Go/No-Go et doivent d
 
 **Itérations**
 
-Si votre projet utilise une forme d’itération de développement (impliquant la mise à disposition de plusieurs versions), une indication des résultats pour chaque itération peut se révéler utile ou nécessaire. Elle peut être utilisée pour indiquer :
+Si votre projet utilise une forme d’itération de développement (impliquant la mise à disposition de plusieurs versions), une indication des résultats pour chaque itération peut se révéler utile ou nécessaire. Cela peut être utilisé pour indiquer les éléments suivants :
 
-* quels tests seront couverts dans quelle itération.
-* les résultats vus pour les tests répétés dans diverses itérations.
-* que les tests de priorité et les tests sur les fonctionnalités de base sont répétés à intervalles réguliers.
+* Les tests qui seront couverts dans telle ou telle itération.
+* Les résultats vus pour les tests répétés dans diverses itérations.
+* Que les tests de priorité et les tests sur les fonctionnalités de base sont répétés à intervalles réguliers.
 
-**Tester**
+**Testeur**
 
-À un moment donné, vous pouvez affecter soit l’équipe de test appropriée, soit une personne spécifique au test (selon la disponibilité et/ou l’expérience).
+À un moment donné, vous pouvez affecter soit l’équipe de test appropriée, soit une personne spécifique au test (en fonction des disponibilités et/ou de l’expérience).
 
-**Résumé ou aperçu**
+**Résumé ou vue d’ensemble**
 
-À des fins de création de rapports, vous souhaitez fournir un aperçu des résultats de test :
+Afin de créer des rapports, vous souhaitez fournir une vue d’ensemble des résultats de test :
 
 * Pourcentage de tests déjà couverts.
-* Pourcentage de succès/échec.
+* Pourcentage de réussite/échec.
 * Chiffres spécifiques relatifs aux tests de priorité.

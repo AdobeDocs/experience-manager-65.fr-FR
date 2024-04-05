@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le
 
 Pour incorporer un formulaire adaptatif ou une communication interactive dans une page AEM Sites qui utilise un modèle modifiable, vérifiez que le composant AEM Forms est configuré en tant que composant autorisé dans le modèle associé. Pour plus d’informations, voir **Politique et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
 
-Si une page Sites utilise un modèle statique, vous devez la configurer dans le système de paragraphes de la page du site. Pour plus d’informations, consultez [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
+Si une page Sites utilise un modèle statique, vous devez le configurer dans le système de paragraphes de la page du site. Pour plus d’informations, consultez [Configuration des composants en mode Création](/help/sites-authoring/default-components-designmode.md).
 
 ## Incorporer un formulaire adaptatif ou une communication interactive {#af-component}
 
@@ -56,7 +56,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
    >
    >Les composants de plusieurs conteneurs d’AEM Forms sur une page ne sont pas pris en charge.
 
-1. Sélectionnez le composant Conteneur AEM Forms incorporé dans la page Sites, puis sélectionnez ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **[!UICONTROL Modifier le conteneur d’AEM Forms]** s’affiche.
+1. Sélectionnez le composant Conteneur d’AEM Forms sur la page de sites, puis sélectionnez ![settings_icon](assets/settings_icon.png) dans la barre d’action. La boîte de dialogue **[!UICONTROL Modifier le conteneur d’AEM Forms]** s’affiche.
 1. Dans la boîte de dialogue Modifier le conteneur d’AEM Forms, précisez ce qui suit.
 
    * **Type de ressource :** sélectionnez le type de ressource à incorporer. Vous pouvez choisir entre formulaire adaptatif et communication interactive
@@ -65,7 +65,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 
       * **Message de remerciement** : rédigez un message à l’aide de l’éditeur de texte enrichi à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.
       * **Page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
-      * **Actualiser la page lors de l’envoi**: activez cette option pour pouvoir actualiser la page contenant le formulaire adaptatif incorporé afin d’afficher la page de remerciement. Dans le cas contraire, la page de remerciement remplace le formulaire adaptatif dans le conteneur d’AEM Forms sans actualiser la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
+      * **Actualiser la page lors de l’envoi** : activez cette option pour actualiser la page contenant le formulaire adaptatif incorporé afin d’afficher la page de remerciement. Dans le cas contraire, la page de remerciement remplace le formulaire adaptatif dans le conteneur d’AEM Forms sans actualiser la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
 
    * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif ou de votre communication interactive. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement.
    * **Hauteur** : indiquez la hauteur du conteneur. Laissez ce champ vide pour redimensionner automatiquement le conteneur.
@@ -88,7 +88,7 @@ La page AEM Sites conserve une référence au formulaire adaptatif et à la com
 Pour modifier une configuration ou une propriété du formulaire adaptatif ou de la communication interactive incorporés, effectuez l’une des opérations suivantes.
 
 * Ouvrez le formulaire d’origine dans des formulaires adaptatifs ou une communication interactive dans les éditeurs respectifs et modifiez-les.
-* Sélectionnez le formulaire adaptatif ou la communication interactive dans la page du site en mode d’édition, puis sélectionnez **[!UICONTROL Modifier dans une nouvelle fenêtre]**. Le formulaire d’origine s’affiche en mode d’édition, et vous pouvez alors le modifier.
+* Sélectionnez le formulaire adaptatif ou la communication interactive à partir de la page du site en mode d’édition, puis sélectionnez **[!UICONTROL Modifier dans une nouvelle fenêtre]**. Le formulaire d’origine s’affiche en mode d’édition, et vous pouvez alors le modifier.
 
 >[!NOTE]
 >

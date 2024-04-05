@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques pour les développeurs AEM
+title: Bonnes pratiques pour les développeurs et développeuses AEM
 description: Les équipes d’ingénierie et de conseil d’Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs et développeuses d’AEM.
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

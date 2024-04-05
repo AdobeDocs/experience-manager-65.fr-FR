@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -390,7 +390,7 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 
 ### Package de renforcement des autorisations anonymes {#anonymous-permission-hardening-package}
 
-Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de nœud, en regard du contenu normal, dans le référentiel. Selon la configuration et la configuration du contrôle d’accès, cela peut, dans certains cas, entraîner l’exposition des informations d’identification personnelle (PII), par exemple, lorsque ces noeuds sont rendus au format JSON ou XML brut.
+Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de nœud, en regard du contenu normal, dans le référentiel. Selon la configuration et la définition du contrôle d’accès, cela peut dans certains cas entraîner l’exposition des informations d’identification personnelle (PII), par exemple lorsque ces nœuds sont rendus au format JSON ou XML brut.
 
 Comme toutes les données de référentiel, ces propriétés sont arbitrées par la pile d’autorisations Oak. Leur accès doit être restreint conformément au principe du moindre privilège.
 
@@ -404,7 +404,7 @@ avec celles qui sont visibles après l’installation du package, où `jcr:creat
 
 ![Après l’installation du package](/help/sites-administering/assets/after_resized.png)
 
-Pour plus d’informations, voir les Notes de mise à jour du module .
+Pour plus d’informations, consultez les notes de mise à jour du package.
 
 ### Prévention du détournement de clic {#prevent-clickjacking}
 

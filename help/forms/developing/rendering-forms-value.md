@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1822'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Avant de pouvoir importer des données par programmation dans une API client de 
 
 **Référencer la conception de formulaire**
 
-Lors du rendu d’un formulaire par valeur, vous devez créer un objet `com.adobe.idp.Document` contenant la conception de formulaire à générer. Vous pouvez référencer un fichier XDP existant ou créer dynamiquement une conception de formulaire au moment de l’exécution et renseigner une `com.adobe.idp.Document` avec ces données.
+Lors du rendu d’un formulaire par valeur, vous devez créer un objet `com.adobe.idp.Document` contenant la conception de formulaire à générer. Vous pouvez référencer un fichier XDP existant ou créer de façon dynamique une conception de formulaire au moment de l’exécution et renseigner un élément `com.adobe.idp.Document` avec ces données.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Lors du rendu d’un formulaire par valeur, vous devez créer un objet `com.adob
 
 **Rendre un formulaire par valeur**
 
-Pour générer un formulaire par valeur, transmettez une `com.adobe.idp.Document` qui contient la conception de formulaire pour la méthode de rendu `inDataDoc` (peut correspondre à l’un des paramètres suivants : `FormsServiceClient` les méthodes de rendu d’objet telles que `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Cette valeur de paramètre est normalement réservée aux données fusionnées avec le formulaire. De même, transmettez une valeur de chaîne vide au paramètre `formQuery`. Normalement, ce paramètre nécessite une valeur de chaîne qui spécifie le nom de la conception de formulaire.
+Pour effectuer le rendu d’un formulaire par valeur, transmettez une instance `com.adobe.idp.Document` qui contient la conception de formulaire au paramètre `inDataDoc` de la méthode de rendu (il peut s’agir d’une des méthodes de rendu de l’objet `FormsServiceClient`, telles que `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Cette valeur de paramètre est normalement réservée aux données fusionnées avec le formulaire. De même, transmettez une valeur de chaîne vide au paramètre `formQuery`. Normalement, ce paramètre nécessite une valeur de chaîne qui spécifie le nom de la conception de formulaire.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre chemin de classe de projet Java.
 
 1. Créer un objet API Forms client
 
@@ -130,14 +130,14 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
-   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et affectez la taille de l’objet `InputStream`. Appeler la variable `InputStream` de `available` pour obtenir la taille de la variable `InputStream` .
-   * Renseignez le tableau d’octets avec le flux de données de formulaire en appelant la variable `InputStream` de `read`et transmission du tableau d’octets en tant qu’argument.
-   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et affectez la taille de l’objet `InputStream`. Appelez la méthode `available` de l’objet `InputStream` pour obtenir la taille de l’objet `InputStream`.
+   * Renseignez le tableau d’octets avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -166,8 +166,8 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne spécifiant l’emplacement du fichier XDP.
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF chiffré avec un mot de passe.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `java.io.FileInputStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la variable `java.io.FileInputStream` taille de l’objet à l’aide de son `available` .
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `java.io.FileInputStream` de `read` et transmission du tableau d’octets.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `java.io.FileInputStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la taille de l’objet `java.io.FileInputStream` à l’aide de sa méthode `available`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `read` de l’objet `java.io.FileInputStream` et en transmettant le tableau d’octets.
    * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets.
 
 1. Rendre un formulaire par valeur
@@ -188,13 +188,13 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `FormResult` en obtenant la valeur de la variable `com.adobe.idp.services.holders.FormsResultHolder` de `value` membre de données.
-   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
-   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `BLOB` qui contient les données du formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

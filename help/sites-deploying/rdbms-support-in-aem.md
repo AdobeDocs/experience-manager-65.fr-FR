@@ -1,6 +1,6 @@
 ---
 title: Prise en charge RDBMS dans AEM 6.4
-description: Découvrez la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles.
+description: Découvrez la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -20,29 +20,29 @@ ht-degree: 58%
 
 ## Présentation {#overview}
 
-La prise en charge de la persistance de la base de données relationnelle dans AEM est mise en oeuvre à l’aide de Document Microkernel. Document Microkernel est la base qui est également utilisée pour mettre en oeuvre la persistance de MongoDB.
+La prise en charge de la persistance de la base de données relationnelle dans AEM est implémentée à l’aide de Document Microkernel. Document Microkernel est la base qui est également utilisée pour implémenter la persistance de MongoDB.
 
-Il se compose d’une API Java basée sur l’API Java Mongo. Une implémentation d’une API BlobStore est également fournie. Par défaut, les blobs sont stockés dans la base de données.
+Il se compose d’une API Java basée sur l’API Java Mongo. Une implémentation d’une API BlobStore est également fournie. Par défaut, les objets blobs sont stockés dans la base de données.
 
-Pour plus d’informations sur les détails de mise en oeuvre, voir la section [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) et [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) la documentation.
+Pour plus d’informations sur l’implémentation, consultez les documents [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) et [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
 
 >[!NOTE]
 >
->Prise en charge de **PostgreSQL 9.4** est également fourni, mais uniquement à des fins de démonstration. Elle ne sera pas disponible pour les environnements de production.
+>La prise en charge de **PostgreSQL 9.4** est également fournie, mais à des fins de démonstration uniquement. Elle ne sera pas disponible pour les environnements de production.
 
 ## Bases de données prises en charge {#supported-databases}
 
-Pour plus d’informations sur le niveau de prise en charge de la base de données relationnelle dans AEM, voir la section [Page Exigences techniques](/help/sites-deploying/technical-requirements.md).
+Pour plus d’informations sur le niveau de prise en charge de la base de données relationnelle dans AEM, consultez la [page des exigences techniques](/help/sites-deploying/technical-requirements.md).
 
 ## Étapes de configuration {#configuration-steps}
 
 Le référentiel est créé lors de la configuration du service OSGi `DocumentNodeStoreService`. Il a été étendu pour prendre en charge la persistance de la base de données relationnelle en plus de MongoDB.
 
-Pour qu’elle fonctionne, une source de données doit être configurée avec AEM. Cela s’effectue via le fichier `org.apache.sling.datasource.DataSourceFactory.config`. Les pilotes JDBC pour les bases de données respectives doivent être fournis séparément en tant que lots OSGi dans la configuration locale.
+Pour qu’il puisse fonctionner, une source de données doit être configurée avec AEM. Cela s’effectue via le fichier `org.apache.sling.datasource.DataSourceFactory.config`. Les pilotes JDBC pour les bases de données respectives doivent être fournis séparément en tant que lots OSGi dans la configuration locale.
 
-Pour obtenir des instructions sur la création de lots OSGi pour les pilotes JDBC, voir ceci [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web Apache Sling.
+Pour obtenir des instructions sur la création des lots OSGi pour les pilotes JDBC, consultez cette [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web d’Apache Sling.
 
-Une fois les lots en place, suivez les étapes ci-dessous pour configurer AEM avec la persistance RDB :
+Une fois les lots en place, suivez les étapes ci-dessous pour configurer AEM avec la persistance RDB :
 
 1. Assurez-vous que la base de données daemon est lancée et que votre base de données est active et prête à être utilisée avec AEM.
 1. Copiez le jar AEM 6.3 dans le répertoire de l’installation.
@@ -95,7 +95,7 @@ Les options de configuration suivantes sont disponibles :
 
 ### Formats de chaîne d’URL {#url-string-formats}
 
-Un format de chaîne URL différent est utilisé dans la configuration de la source de données en fonction du type de base de données à utiliser. Vous trouverez ci-dessous une liste de formats pour les bases de données actuellement prises en charge par AEM :
+Un format de chaîne d’URL différent est utilisé dans la configuration de la source de données, en fonction du type de base de données à utiliser. Vous trouverez ci-dessous une liste de formats pour les bases de données actuellement prises en charge par AEM :
 
 * `jdbc:postgresql:databasename` pour PostgreSQL
 * `jdbc:db2://localhost:port/databasename` pour DB2
@@ -105,6 +105,6 @@ Un format de chaîne URL différent est utilisé dans la configuration de la sou
 
 ## Limites connues {#known-limitations}
 
-Bien que l’utilisation simultanée de plusieurs instances d’AEM avec une seule base de données soit prise en charge par la persistance du SGBDR, les installations simultanées ne le sont pas.
+RDBMS prend en charge l’utilisation simultanée de plusieurs instances d’AEM avec une seule base de données, mais pas les installations simultanées.
 
 Pour contourner ce problème, assurez-vous d’exécuter d’abord l’installation avec un seul membre et d’ajouter les autres à la fin de l’installation.

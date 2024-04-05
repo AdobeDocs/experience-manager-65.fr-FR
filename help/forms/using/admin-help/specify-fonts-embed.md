@@ -1,6 +1,6 @@
 ---
 title: Spécifier les polices à incorporer
-description: Découvrez comment spécifier les polices à incorporer dans un formulaire adaptatif. Vous pouvez spécifier les polices qui sont incorporées ou jamais incorporées dans des formulaires générés par le service Forms.
+description: Découvrez comment spécifier les polices à incorporer dans un formulaire adaptatif. Vous pouvez spécifier les polices qui sont incorporées ou ne le sont jamais dans des formulaires générés par le service Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 # Spécifier les polices à incorporer{#specify-fonts-to-embed}
 
-Vous pouvez spécifier les polices qui sont toujours incorporées ou jamais incorporées avec les formulaires utilisés par Output. L’incorporation de polices augmente la taille de fichier des formulaires. Incorporez les polices inhabituelles que les utilisateurs ne sont pas susceptibles de posséder sur leurs systèmes et n’incorporez pas les polices courantes qu’ils auront installées.
+Vous pouvez spécifier les polices qui sont toujours ou jamais incorporées avec les formulaires utilisés par le service Output. L’incorporation de polices augmente la taille de fichier des formulaires. Incorporez les polices inhabituelles dont les utilisateurs et les utilisatrices disposent rarement sur leurs systèmes mais n’incorporez pas les polices courantes qui sont généralement installées.
 
 >[!NOTE]
 >
->Si vous avez spécifié un fichier XCI personnalisé pour Output, l’option d’incorporation de polices dans le fichier XCI remplace ces paramètres. (Voir [Définition des emplacements de fichiers pour Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>Si vous avez spécifié un fichier XCI personnalisé pour Output, l’option d’incorporation de polices dans le fichier XCI remplace ces paramètres. (Voir [Définir les emplacements de fichiers pour Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)).
 
 1. Dans Administration Console, cliquez sur Services > Output.
 1. Sous Paramètres d’incorporation des polices, dans le champ Toujours incorporer les polices, saisissez les noms des polices à incorporer aux formulaires (en les séparant par des virgules). Les polices que vous spécifiez ne sont incorporées dans le formulaire généré que si elles sont utilisées dans le formulaire. Ce paramètre est ignoré si l’option d’incorporation des polices a été activée dans le fichier XCI transmis au service. Dans ce cas, toutes les polices utilisées dans le PDF sont toujours incorporées.

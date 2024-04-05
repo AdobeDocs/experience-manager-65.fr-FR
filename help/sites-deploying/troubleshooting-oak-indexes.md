@@ -1,6 +1,6 @@
 ---
 title: Dépannage des index Oak
-description: Découvrez comment identifier si l’indexation est lente, trouver la cause et résoudre le problème.
+description: Découvrez comment savoir si l’indexation est lente, en trouver la cause et résoudre le problème.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1387'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 Le processus de réindexation interne d’AEM collecte les données du référentiel et les stocke dans les index Oak afin de prendre en charge l’interrogation performante du contenu. Dans des circonstances exceptionnelles, le processus peut être lent, voire bloqué. Cette page sert de guide de dépannage pour aider à identifier si l’indexation est lente, trouver la cause et résoudre le problème.
 
-Il est important de faire la distinction entre la réindexation qui prend un temps incorrectement long et la réindexation qui prend beaucoup de temps car elle permet d’indexer de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu est proportionnel à la quantité de contenu, de sorte que les référentiels de production volumineux prennent plus de temps à réindexer que les petits référentiels de développement.
+Il est important de faire la distinction entre une réindexation qui prend trop de temps et une réindexation qui prend beaucoup de temps parce qu’elle indexe de grandes quantités de contenu. Par exemple, le temps nécessaire pour indexer le contenu est proportionnel à la quantité de contenu, de sorte que les référentiels de production volumineux prennent plus de temps à réindexer que les petits référentiels de développement.
 
 Voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md) pour plus d’informations sur quand et comment réindexer le contenu.
 

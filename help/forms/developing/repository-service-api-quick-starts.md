@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ La plupart des démarrages rapides du service de référentiel AEM Forms interag
 
 Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir [Démarrage rapide (mode SOAP) : créer un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
-Le chemin d’accès à une ressource dans le référentiel AEM Forms est le suivant :
+Le chemin d’accès à une ressource dans le référentiel AEM Forms est :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 

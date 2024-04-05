@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Les tutoriels de démarrage rapide suivants sont disponibles pour le service Doc
 
 >[!NOTE]
 >
->À compter du 5 août 2011, Adobe migre les clients Content Services ES vers Adobe Digital Enterprise Platform Experience Services. La feuille de route du produit destinée aux clients qui utilisent Content Services consiste à passer aux nouveaux services de base d’ADEP Experience Services, lesquels comprennent un référentiel de contenu natif basé sur l’architecture modulaire CRX moderne, obtenue via l’acquisition par Adobe du logiciel Day.
+>À compter du 5 août 2011, Adobe migre les clientes et les clients Content Services ES vers les services Adobe Digital Enterprise Platform Experience. La feuille de route du produit destinée aux clients qui utilisent Content Services consiste à passer aux nouveaux services de base d’ADEP Experience Services, lesquels comprennent un référentiel de contenu natif basé sur l’architecture modulaire CRX moderne, obtenue via l’acquisition par Adobe du logiciel Day.
 
 [Démarrage rapide (mode SOAP) : créer des espaces Content Services à l’aide de l’API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -43,11 +43,11 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Les démarrages rapides de la programmation avec AEM forms sont basés sur le serveur Forms déployé sur JBoss et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides dans Programmation avec AEM Forms sont basés sur le serveur Forms, déployé sur JBoss, et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : créer des espaces Content Services à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-L’exemple de code Java suivant crée un espace nommé *Répertoire de test* dans la page d’accueil de la société. La valeur d’identification du nouvel espace est écrite dans la console.
+L’exemple de code Java suivant crée un nouvel espace nommé *Répertoire de test* situé dans Company Home. La valeur d’identification du nouvel espace est écrite dans la console.
 
 ```java
  /*
@@ -573,7 +573,7 @@ L’exemple de code Java suivant déplace un fichier PDF nommé *MortgageForm.pd
 
 ## Démarrage rapide (mode SOAP) : établir une liste du contenu des services de contenu à l’aide de l’API Java (obsolète) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
-L’exemple de code Java suivant répertorie le contenu qui se trouve dans /Company Home. Chaque type de nœud et nom de nœud s’affiche.
+L’exemple de code Java suivant répertorie le contenu situé dans /Company Home. Chaque type de nœud et nom de nœud s’affiche.
 
 ```java
  /*

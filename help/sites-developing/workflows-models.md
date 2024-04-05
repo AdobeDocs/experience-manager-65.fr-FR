@@ -1,6 +1,6 @@
 ---
 title: Création de modèles de workflow
-description: Vous créez un modèle de workflow pour définir la série d’étapes qui sont exécutées lorsqu’un utilisateur lance le workflow.
+description: Vous créez un modèle de workflow pour définir les étapes exécutées lorsqu’un utilisateur ou une utilisatrice lance le workflow.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2462'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
->Pour utiliser l’IU classique, voir la section [Documentation AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/help/sites-developing/workflows-models.html) à titre de référence.
+>Pour utiliser l’interface utilisateur classique, reportez-vous à la [documentation AEM 6.3](https://helpx.adobe.com/fr/experience-manager/6-3/help/sites-developing/workflows-models.html) à titre de référence.
 
 Vous créez un [modèle de workflow](/help/sites-developing/workflows.md#model) pour définir les étapes exécutées lorsqu’un utilisateur lance le workflow. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le workflow est transitoire ou s’il utilise plusieurs ressources.
 
@@ -27,14 +27,14 @@ Lorsqu’un utilisateur ou une utilisatrice démarre un workflow, une instance e
 
 ## Créer un workflow {#creating-a-new-workflow}
 
-Lorsque vous créez un modèle de processus pour la première fois, il contient :
+Lorsque vous créez un modèle de workflow pour la première fois, il contient :
 
 * Les étapes **Début de flux** et **Fin de flux**.
 Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
 * Un exemple d’étape **Participant**, dont le nom est **Étape 1**.
 Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
 
-Pour créer un workflow avec l’éditeur :
+Pour créer un workflow avec l’éditeur, procédez comme suit :
 
 1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles**, ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
 1. Sélectionnez **Créer**, puis **Créer un modèle**.
@@ -72,7 +72,7 @@ Lorsque vous (ou toute autre personne) apportez des modifications au workflow, v
 
 Lorsque les modifications sont synchronisées avec le modèle d’exécution (enregistré), **Synchronisé** s’affiche à la place.
 
-Certaines étapes comportent des champs obligatoires et/ou une validation intégrée. Lorsque ces conditions ne sont pas remplies, une erreur s’affiche lorsque vous tentez de **Synchronisation** le modèle. Par exemple, si aucun participant n’a été défini pour une étape **Participant** :
+Certaines étapes comportent des champs obligatoires et/ou une validation intégrée. Lorsque ces conditions ne sont pas remplies, une erreur s’affiche quand vous tentez de **Synchroniser** le modèle. Par exemple, si aucun participant n’a été défini pour une étape **Participant** :
 
 ![wf-21](assets/wf-21.png)
 
@@ -83,9 +83,9 @@ Lorsque vous ouvrez un [Modèle par défaut et/ou hérité](/help/sites-developi
 * le navigateur d’étapes n’est pas disponible (côté gauche) ;
 * une action **Modifier** est disponible dans la barre d’outils (côté droit).
 * Au départ, le modèle et ses propriétés sont présentés en mode lecture seule comme suit :
-   * Les workflows par défaut sont dans `/libs`
-   * Les workflows hérités se trouvent dans `/etc`
-Sélection **Modifier** Will :
+   * Les workflows par défaut sont situés dans `/libs`.
+   * Les workflows hérités se trouvent dans `/etc`.
+Sélectionner **Modifier** aura les effets suivants :
 * une copie du workflow est réalisée dans `/conf` ;
 * le navigateur d’étapes devient accessible ;
 * vous pourrez effectuer des modifications.
@@ -98,7 +98,7 @@ Sélection **Modifier** Will :
 
 ### Ajouter une étape à un modèle {#adding-a-step-to-a-model}
 
-Ajoutez des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Il est possible de sélectionner des composants d’étape dans une instance AEM standard.
+Ajoutez des étapes à votre modèle pour représenter l’activité à exécuter : chaque étape effectue une activité spécifique. Il est possible de sélectionner des composants d’étape dans une instance AEM standard.
 
 Lorsque vous modifiez un modèle, les étapes disponibles s’affichent dans les différents groupes de l’**Explorateur d’étapes**. Par exemple :
 
@@ -114,7 +114,7 @@ Pour ajouter des étapes à votre modèle de workflow :
 1. Ouvrez le l’explorateur d’étapes à l’aide de l’option **Activer/désactiver le panneau latéral**, à l’extrémité gauche de la barre d’outils supérieure. Vous pouvez effectuer les opérations suivantes :
 
    * Utiliser le **Filtre** pour trouver des étapes spécifiques.
-   * Utilisez le sélecteur de liste déroulante pour limiter la sélection à un groupe d’étapes spécifique.
+   * Utilisez le sélecteur de la liste déroulante pour limiter la sélection à un groupe d’étapes spécifique.
    * Sélectionnez l’icône Afficher la description ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) pour afficher des informations plus détaillées sur l’étape appropriée.
 
    ![wf-02](assets/wf-02.png)
@@ -145,7 +145,7 @@ Vous pouvez **configurer** et personnaliser le comportement d’une étape de wo
 
 1. Pour ouvrir la boîte de dialogue **Propriétés de l’étape** pour une étape :
 
-   * Cliquez sur l’étape* *dans le modèle de workflow et sélectionnez **Configurer** dans la barre d’outils du composant.
+   * Cliquez sur l’étape* *dans le modèle de workflow et sélectionnez ensuite **Configurer** dans la barre d’outils du composant.
 
    * Double-cliquez sur l’étape.
 
@@ -164,11 +164,11 @@ Vous pouvez **configurer** et personnaliser le comportement d’une étape de wo
 
 ### Créer un workflow transitoire {#creating-a-transient-workflow}
 
-Vous pouvez créer un [Transitoire](/help/sites-developing/workflows.md#transient-workflows) modèle de workflow lors de la création d’un modèle ou en modifiant un modèle existant :
+Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/workflows.md#transient-workflows) lors de la création d’un modèle ou en modifiant un modèle existant :
 
 1. Ouvrez le modèle de workflow pour le [modifier](#editinganexistingworkflow).
 1. Sélectionnez **Propriétés du modèle de workflow** dans la barre d’outils.
-1. Dans la boîte de dialogue, activez **Processus transitoire** (ou désactivez-la si nécessaire) :
+1. Dans la boîte de dialogue, activez **Workflow transitoire** (ou désactivez cette option si nécessaire) :
 
    ![wf-07](assets/wf-07.png)
 
@@ -204,12 +204,12 @@ Si un modèle de workflow présent dans l’interface utilisateur classique est 
 
 ### Configurer un workflow pour prendre en charge plusieurs ressources {#configuring-a-workflow-for-multi-resource-support}
 
-Vous pouvez configurer un modèle de workflow pour [Prise en charge multi-ressource](/help/sites-developing/workflows.md#multi-resource-support) lors de la création d’un modèle ou en modifiant un modèle existant :
+Vous pouvez configurer un modèle de workflow pour [prendre en charge plusieurs ressources](/help/sites-developing/workflows.md#multi-resource-support) lors de la création d’un modèle ou en modifiant un modèle existant :
 
 1. Ouvrez le modèle de workflow pour le [modifier](#editinganexistingworkflow).
 1. Sélectionnez **Propriétés du modèle de workflow** dans la barre d’outils.
 
-1. Dans la boîte de dialogue, activez **Prise en charge multi-ressource** (ou désactivez-la si nécessaire) :
+1. Dans la boîte de dialogue, activez **Prise en charge multi-ressource** (ou désactivez cette option si nécessaire) :
 
    ![wf-08](assets/wf-08.png)
 
@@ -261,7 +261,7 @@ Pour définir les **Phases** pour votre workflow :
 
 Pour exporter un modèle de workflow dans un package, procédez comme suit :
 
-1. Créez un module à l’aide de la fonction [Gestionnaire de modules](/help/sites-administering/package-manager.md#package-manager):
+1. Créez un package à l’aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md#package-manager) :
 
    1. Accédez au Gestionnaire de modules via **Outils**, **Déploiement**, **Packages**.
 
@@ -325,7 +325,7 @@ Vous pouvez également configurer AEM pour qu’il affiche des messages **DEBUG
 
 Pour illustrer certaines des possibilités de création d’un workflow, l’exemple suivant crée une variante du workflow `Publish Example`.
 
-1. [Création d’un modèle de workflow](#creating-a-new-workflow).
+1. [Créez un modèle de workflow](#creating-a-new-workflow).
 
    Le nouveau workflow contiendra :
 
@@ -341,7 +341,7 @@ Pour illustrer certaines des possibilités de création d’un workflow, l’exe
 1. Pour ouvrir la boîte de dialogue des propriétés, deux possibilités s’offrent à vous :
 
    * Cliquez sur l’étape de participant et sélectionnez ensuite **Configurer** dans la barre d’outils du composant.
-   * Double-cliquez sur l’étape de participant.
+   * Double-cliquez sur l’étape du participant ou de la participante.
 
 1. Dans l’onglet **Commun**, saisissez `Validate Content` pour le **Titre** et la **Description**.
 1. Ouvrez l’onglet **Utilisateur/Groupe** :
@@ -393,13 +393,13 @@ Pour illustrer certaines des possibilités de création d’un workflow, l’exe
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Exemple : définition d’une règle pour une division OU à l’aide d’un script ECMA {#defineruleecmascript}
+### Exemple : définition d’une règle pour une division OU à l’aide d’un script ECMA {#defineruleecmascript}
 
 Les étapes **Division OU** vous permettent d’introduire des chemins de traitement conditionnel dans votre workflow.
 
 Pour définir une règle OU, procédez comme suit :
 
-1. Créez deux scripts et enregistrez-les dans le référentiel, par exemple sous :
+1. Créez deux scripts et enregistrez-les dans le référentiel, par exemple sous :
 
    `/apps/myapp/workflow/scripts`
 
@@ -417,7 +417,7 @@ Pour définir une règle OU, procédez comme suit :
 
    >[!NOTE]
    >
-   >Si nécessaire, vous pouvez changer l’ordre des branches.
+   >Vous pouvez changer l’ordre des branches si nécessaire.
 
 1. Modifiez les propriétés de la **Branche 2** de la **Division OU**.
 

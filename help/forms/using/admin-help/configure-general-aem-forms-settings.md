@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ La page Configurations de base dans la console d’administration fournit des pa
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, voir [Activation et désactivation du mode de sauvegarde sécurisé](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -30,8 +30,8 @@ Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, 
 >Les fichiers du répertoire temporaire et les documents de longue durée du répertoire racine de stockage global de documents peuvent contenir des informations utilisateur sensibles, telles que des informations qui nécessitent des informations d’identification spéciales lors de l’accès à l’aide des API ou des interfaces utilisateur. Par conséquent, il est important que ce répertoire soit correctement sécurisé à l’aide des méthodes disponibles pour le système d’exploitation. Il est recommandé que seul le compte du système d’exploitation utilisé pour exécuter le serveur d’applications dispose d’un accès en lecture et écriture à ce répertoire.
 
 
-1. Dans Administration Console, sélectionnez **[!UICONTROL Paramètres > Paramètres de Core System > Configurations]**.
-1. Sur la page Configurations de base , modifiez les options selon les besoins, puis sélectionnez **[!UICONTROL OK]**. Pour plus d’informations sur les options, voir [Options des configurations de base](configure-general-aem-forms-settings.md#core-configurations-options).
+1. Dans la console d’administration, sélectionnez **[!UICONTROL Paramètres > Paramètres du système principal > Configurations]**.
+1. Sur la page Configurations principales, modifiez les options selon vos besoins, puis sélectionnez **[!UICONTROL OK]**. Pour plus d’informations sur les options, voir [Options des configurations de base](configure-general-aem-forms-settings.md#core-configurations-options).
 
 
 ## Options des configurations de base {#core-configurations-options}
@@ -42,9 +42,9 @@ Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, 
 >
 >Assurez-vous que le répertoire temporaire se trouve sur le système de fichiers local. AEM Forms ne prend pas en charge de répertoire temporaire à un emplacement distant.
 
-**Répertoire racine de stockage global de documents** *ndash ; Le répertoire racine de stockage global de documents est utilisé aux fins suivantes :
+**Répertoire racine de stockage global de documents** Le répertoire racine de stockage global de documents est utilisé aux fins suivantes :
 
-* Stockez des documents de longue durée. Les documents de longue durée n’ont pas de délai d’expiration et persistent jusqu’à leur suppression (par exemple, les fichiers PDF utilisés dans un processus de workflow). Ils participent pleinement au statut global du système. Si certains de ces documents sont perdus ou corrompus, le serveur Forms peut devenir instable. Par conséquent, il est important que ce répertoire soit stocké sur un périphérique RAID.
+* Stockez des documents de longue durée. Les documents de longue durée n’ont pas de délai d’expiration et persistent jusqu’à leur suppression (par exemple, les fichiers PDF utilisés dans un processus de workflow). Ils participent pleinement au statut global du système. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Par conséquent, il est important que ce répertoire soit stocké sur un périphérique RAID.
 * Stockez les documents temporaires nécessaires pendant le traitement.
 
 >[!NOTE]
@@ -62,7 +62,7 @@ Si vous ne spécifiez pas de répertoire racine de stockage global de documents,
 
 >[!NOTE]
 >
->La modification de la valeur du paramètre de répertoire racine de stockage global de documents doit faire l’objet d’une mûre réflexion. Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus et les composants de produit d’AEM forms critiques. Le changement de l’emplacement du répertoire de stockage global de documents représente une modification majeure du système. Une configuration incorrecte de l’emplacement du répertoire de stockage global de documents rend AEM Forms inopérant et peut nécessiter une réinstallation complète de l’application. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur ou l’administratrice système doit déplacer tous les fichiers de l’ancien emplacement vers le nouveau, tout en conservant la structure de répertoires interne.
+>La modification de la valeur du paramètre de répertoire racine de stockage global de documents doit faire l’objet d’une mûre réflexion. Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus, ainsi que les composants critiques du produit AEM Forms. Le changement de l’emplacement du répertoire de stockage global de documents représente une modification majeure du système. Une configuration incorrecte de l’emplacement du répertoire de stockage global de documents rend AEM Forms inopérant et peut nécessiter une réinstallation complète de l’application. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur ou l’administratrice système doit déplacer tous les fichiers de l’ancien emplacement vers le nouveau, tout en conservant la structure de répertoires interne.
 
 >[!NOTE]
 >
@@ -70,33 +70,33 @@ Si vous ne spécifiez pas de répertoire racine de stockage global de documents,
 
 Pour plus d’informations sur le répertoire de stockage global de documents, consultez [Préparation à l’installation d’AEM Forms sur un seul serveur](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr).
 
-**Emplacement du répertoire des polices du serveur Adobe** *ndash; saisissez le chemin d’accès au répertoire contenant les polices du serveur d’Adobe. Ces polices sont installées avec AEM forms. L’emplacement par défaut de ces polices est le répertoire [racine aem-forms]/fonts. Si ce répertoire n’est pas accessible, vous pouvez copier les polices dans un autre répertoire et utiliser ce paramètre pour spécifier son nouvel emplacement.
+**Emplacement du répertoire des polices du serveur Adobe** *ndash; Saisissez le chemin d’accès au répertoire qui contient les polices du serveur Adobe. Ces polices sont installées avec AEM forms. L’emplacement par défaut de ces polices est le répertoire [racine aem-forms]/fonts. Si ce répertoire n’est pas accessible, vous pouvez copier les polices dans un autre répertoire et utiliser ce paramètre pour spécifier son nouvel emplacement.
 
-**Emplacement du répertoire des polices du client** *ndash; saisissez le chemin d’accès à un répertoire contenant les polices supplémentaires que vous souhaitez utiliser.
+**Emplacement du répertoire des polices du client** *ndash; Saisissez le chemin d’accès à un répertoire contenant les polices supplémentaires que vous souhaitez utiliser.
 
 ***Remarque ** : les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM forms est installé.*
 
-**Emplacement du répertoire des polices système** *ndash; saisissez le chemin d’accès au répertoire des polices fourni par votre système d’exploitation. Vous pouvez ajouter plusieurs répertoires en les séparant par des points-virgules **;**.
+**Emplacement du répertoire des polices système** *ndash; Saisissez le chemin d’accès au répertoire des polices fourni par votre système d’exploitation. Vous pouvez ajouter plusieurs répertoires en les séparant par des points-virgules **;**.
 
-**Emplacement du fichier de configuration des services de données** *ndash; spécifie l’emplacement du fichier services-config.xml. Par défaut, ce fichier est incorporé au fichier adobe-core-appserver.ear et n’est pas accessible aux utilisateurs. Une copie du fichier services-config.xml par défaut se trouve dans [racine aem-forms]\sdk\misc\DataServices\Server-Configuration. Si vous avez modifié ce fichier et que vous l’avez déplacé, saisissez le nouvel emplacement dans ce champ.
+**Emplacement du fichier de configuration des services de données** *ndash; Indique l’emplacement du fichier services-config.xml. Par défaut, ce fichier est incorporé dans le fichier adobe-core-appserver.ear et n’est pas accessible aux utilisateurs et utilisatrices. Une copie du fichier services-config.xml par défaut se trouve dans [racine aem-forms]\sdk\misc\DataServices\Server-Configuration. Si vous avez modifié ce fichier et que vous l’avez déplacé, saisissez le nouvel emplacement dans ce champ.
 
 Le fichier de configuration des services de données permet de personnaliser les paramètres de ces derniers, tels que le type d’authentification et la sortie de débogage.
 
 Ce paramètre est vide par défaut.
 
-**Taille maximale par défaut de la ligne d’entrée du document (octets)** *ndash ; nombre maximal d’octets conservés en mémoire lors de la transmission de documents entre différents composants d’AEM forms. Utilisez ce paramètre pour optimiser les performances. Les documents d’une taille inférieure à cette valeur sont stockés en mémoire et conservés dans la base de données. Les documents qui dépassent cette valeur sont stockés sur le disque dur.
+**Taille maximale du document en ligne par défaut (en octets)** *ndash; Le nombre maximal d’octets conservés en mémoire lors de la transmission de documents entre divers composants d’AEM Forms. Utilisez ce paramètre pour optimiser les performances. Les documents d’une taille inférieure à cette valeur sont stockés en mémoire et conservés dans la base de données. Les documents qui dépassent cette valeur sont stockés sur le disque dur.
 
 Ce paramètre est obligatoire. La valeur par défaut est 65 536 octets.
 
-**Délai d’expiration par défaut de l’élimination du document (secondes)** *ndash : durée maximale, en secondes, pendant laquelle un document transmis entre différents composants d’AEM forms est considéré comme actif. Lorsque ce délai est écoulé, les fichiers utilisés pour stocker ce document peuvent être supprimés. Utilisez ce paramètre pour gérer l’espace disque disponible.
+**Délai par défaut avant suppression du document (en secondes)** *ndash; Durée maximale, en secondes, pendant laquelle un document transmis entre divers composants d’AEM Forms est considéré comme actif. Lorsque ce délai est écoulé, les fichiers utilisés pour stocker ce document peuvent être supprimés. Utilisez ce paramètre pour gérer l’espace disque disponible.
 
 Ce paramètre est obligatoire. La valeur par défaut est de 600 secondes.
 
-**Intervalle de balayage du document (secondes)** *ndash ; durée, en secondes, entre les tentatives de suppression de fichiers devenues inutiles et utilisés pour transmettre des données de document entre les services.
+**Intervalle de balayage du document (en secondes)** *ndash; La durée, en secondes, entre les tentatives de suppression des fichiers obsolètes et qui étaient utilisés pour transmettre les données du document entre les services.
 
 Ce paramètre est obligatoire. La valeur par défaut est de 30 secondes.
 
-**Activer FIPS** *ndash ; sélectionnez cette option pour activer le mode FIPS. Le FIPS (Federal Information Processing Standard) 140-2 est un standard de chiffrement défini par le gouvernement des États-Unis. En mode FIPS, AEM Forms limite la protection des données aux algorithmes approuvés FIPS 140-2 en utilisant le module de chiffrement RSA BSAFE Crypto-C 2.1.
+**Activer le FIPS** *ndash; Sélectionnez cette option pour activer le mode FIPS. Le FIPS (Federal Information Processing Standard) 140-2 est un standard de chiffrement défini par le gouvernement des États-Unis. En mode FIPS, AEM Forms limite la protection des données aux algorithmes approuvés FIPS 140-2 en utilisant le module de chiffrement RSA BSAFE Crypto-C 2.1.
 
 Le mode FIPS ne prend pas en charge les algorithmes de chiffrement utilisés dans les versions Adobe Acrobat® antérieures à la version 7.0. Si le mode FIPS est activé et que vous utilisez le service Encryption pour chiffrer le PDF à l’aide d’un mot de passe avec un niveau de compatibilité défini sur Acrobat 5, vous obtenez une erreur de chiffrement.
 
@@ -106,18 +106,18 @@ En général, lorsque le mode FIPS est activé, le service Assembler n’appliqu
 >
 >Le logiciel AEM Forms ne valide pas le code pour assurer la compatibilité FIPS. Il fournit un mode de fonctionnement FIPS permettant d’utiliser les algorithmes certifiés FIPS pour les services de chiffrement des bibliothèques certifiées FIPS (RSA).
 
-**Activer WSDL** *ndash; sélectionnez cette option pour activer la génération WSDL (Web Service Definition Language) pour tous les services faisant partie d’AEM forms.
+**Activer le WSDL** *ndash; Sélectionnez cette option pour activer la génération du Web Service Definition Language (WSDL) pour tous les services qui font partie d’AEM Forms.
 
 Activez cette option dans les environnements de développement, dans lesquels l’équipe de développement fait appel à une génération WSDL pour créer ses applications clientes. Vous pouvez choisir de désactiver la génération WSDL dans un environnement de production pour éviter d’exposer les détails internes d’un service.
 
-**Activer le stockage de documents dans la base de données** *ndash ; sélectionnez cette option pour stocker des documents de longue durée dans la base de données d’AEM forms. L’activation de cette option ne supprime pas la nécessité d’utiliser un répertoire de stockage global de documents. Cependant, la sélection de cette option simplifie les sauvegardes d’AEM Forms. Pour effectuer une sauvegarde lorsque vous utilisez uniquement le répertoire de stockage global de documents, vous devez définir le système AEM Forms en mode de sauvegarde, puis effectuer les sauvegardes de la base de données et du répertoire de stockage global de documents. Si vous sélectionnez l’option de base de données, il est nécessaire, pour effectuer une sauvegarde, d’effectuer la sauvegarde de la base de données pour une nouvelle installation ou d’effectuer la sauvegarde de la base de données et la sauvegarde individuelle du répertoire de stockage global de documents pour une mise à niveau. Par rapport à une configuration impliquant uniquement un répertoire de stockage global de documents, une gestion plus approfondie de la base de données peut être requise pour purger les travaux et les données (voir Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents).
+**Activer le stockage de documents dans la base de données** *ndash; Sélectionnez cette option pour stocker les documents de longue durée dans la base de données d’AEM Forms. L’activation de cette option ne supprime pas la nécessité d’utiliser un répertoire de stockage global de documents. Cependant, la sélection de cette option simplifie les sauvegardes d’AEM Forms. Pour effectuer une sauvegarde lorsque vous utilisez uniquement le répertoire de stockage global de documents, vous devez définir le système AEM Forms en mode de sauvegarde, puis effectuer les sauvegardes de la base de données et du répertoire de stockage global de documents. Si vous sélectionnez l’option de base de données, il est nécessaire, pour effectuer une sauvegarde, d’effectuer la sauvegarde de la base de données pour une nouvelle installation ou d’effectuer la sauvegarde de la base de données et la sauvegarde individuelle du répertoire de stockage global de documents pour une mise à niveau. Par rapport à une configuration impliquant uniquement un répertoire de stockage global de documents, une gestion plus approfondie de la base de données peut être requise pour purger les travaux et les données (voir Options de sauvegarde dans le cas de l’utilisation de la base de données pour le stockage de documents).
 
-**Activer la statistique d’appel DSC** *ndash : lorsque cette option est sélectionnée, AEM forms effectue le suivi des statistiques d’appel telles que le nombre d’appels, le temps nécessaire pour appeler et le nombre d’erreurs dans les appels. Ces informations sont stockées dans un fichier bean JMX afin que vous puissiez utiliser l’outil JConsole Java™ ou un logiciel tiers pour consulter les statistiques. Si vous ne souhaitez pas consulter ces statistiques, désélectionnez cette option afin d’améliorer les performances d’AEM Forms.
+**Activer la statistique d’appel de DSC** *ndash; Lorsque cette option est sélectionnée, AEM Forms effectue le suivi des statistiques d’appels, telles que le nombre d’appels, la durée de ces derniers et le nombre d’erreurs dans les appels. Ces informations sont stockées dans un fichier bean JMX afin que vous puissiez utiliser l’outil JConsole Java™ ou un logiciel tiers pour consulter les statistiques. Si vous ne souhaitez pas consulter ces statistiques, désélectionnez cette option afin d’améliorer les performances d’AEM Forms.
 
-**Activer RDS** *ndash ; la sélection de cette option active le servlet RDS (Remote Development Services) dans AEM forms. Lorsque cette option est activée, les outils côté client peuvent interagir avec les services de données dans le but de déployer ou d’annuler le déploiement de modèles afin de créer des destinations et des points d’entrée, ou de déterminer quel modèle a été déployé dans quel point d’entrée. Par défaut, cette option n’est pas sélectionnée.
+**Activer RDS** *ndash; La sélection de cette option active le servlet RDS (Remote Development Services) dans AEM Forms. Lorsque cette option est activée, les outils côté client peuvent interagir avec les services de données dans le but de déployer ou d’annuler le déploiement de modèles afin de créer des destinations et des points d’entrée, ou de déterminer quel modèle a été déployé dans quel point d’entrée. Par défaut, cette option n’est pas sélectionnée.
 
-**Autoriser une requête RDS non sécurisée** *ndash : lorsque cette option est sélectionnée, les requêtes RDS n’ont pas besoin d’utiliser https. Par défaut, cette option n’est pas sélectionnée et toutes les communications destinées à Data Services ont recours à des demandes en mode https.
+**Autoriser les requêtes RDS non sécurisées** *ndash; Lorsque cette option est sélectionnée, les requêtes RDS n’ont pas besoin d’utiliser https. Par défaut, cette option n’est pas sélectionnée et toutes les communications avec Data Services doivent avoir recours à des requêtes https.
 
-**Autorisation du téléchargement de documents non sécurisés à partir d’applications Flex** *ndash ; le servlet de téléchargement de fichiers utilisé pour charger des documents à partir des applications Adobe Flex® vers AEM forms nécessite que les utilisateurs soient authentifiés et autorisés avant de pouvoir télécharger des documents. La personne doit disposer d’un rôle Utilisateur de l’application de chargement de documents ou d’un autre rôle incluant l’autorisation de chargement de documents. Cela permet d’empêcher les utilisateurs non autorisés de télécharger des documents vers le serveur AEM Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonctionnalité de sécurité dans un environnement de développement ou dans une rétrocompatibilité avec des versions antérieures d’AEM Forms. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide d’AEM Forms Remoting » dans Programmation avec AEM Forms.
+**Autoriser le chargement de documents non sécurisés à partir d’applications Flex :** *ndash; Le servlet de chargement de fichiers utilisé pour charger des documents depuis des applications Adobe Flex® vers AEM Forms nécessite que les personnes soient authentifiées et autorisées avant de pouvoir charger des documents. La personne doit disposer d’un rôle Utilisateur ou utilisatrice de l’application de chargement de documents ou d’un autre rôle incluant l’autorisation de chargement de documents. Cela empêche des personnes non autorisées de charger des documents vers le serveur AEM Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonctionnalité de sécurité dans un environnement de développement ou dans une rétrocompatibilité avec des versions antérieures d’AEM Forms. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide d’AEM Forms Remoting » dans Programmation avec AEM Forms.
 
-**Autorisation du téléchargement de documents non sécurisés à partir d’applications Java SDK** *ndash ; les téléchargements HTTP DocumentManager doivent être sécurisés. Par défaut, les chargements HTTP nécessitent l’authentification et l’autorisation des utilisateurs et des utilisatrices pour charger les documents. L’utilisateur ou l’utilisatrice doit se voir attribuer le rôle Utilisateur des services ou un autre rôle contenant l’autorisation Service Invoke. Cela permet d’empêcher les utilisateurs non autorisés de télécharger des documents vers le serveur Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonctionnalité de sécurité dans un environnement de développement, pour une rétrocompatibilité avec les versions précédentes d’AEM Forms ou en fonction de la configuration de votre pare-feu. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide de l’API Java » dans Programmation avec AEM Forms.
+**Autoriser le chargement de documents non sécurisés à partir d’applications Java SDK :** les chargements HTTP de DocumentManager doivent être sécurisés. Par défaut, les chargements HTTP nécessitent l’authentification et l’autorisation des utilisateurs et des utilisatrices pour charger les documents. L’utilisateur ou l’utilisatrice doit se voir attribuer le rôle Utilisateur des services ou un autre rôle contenant l’autorisation Service Invoke. Cela permet d’empêcher les personnes non autorisées de charger des documents vers le serveur Forms. Sélectionnez cette option si vous souhaitez désactiver cette fonctionnalité de sécurité dans un environnement de développement, pour une rétrocompatibilité avec les versions précédentes d’AEM Forms ou en fonction de la configuration de votre pare-feu. Par défaut, cette option n’est pas sélectionnée. Pour plus d’informations, consultez la section « Appeler AEM Forms à l’aide de l’API Java » dans Programmation avec AEM Forms.

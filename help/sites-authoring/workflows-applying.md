@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devez :
+Dans les deux cas vous devez :
 
 * [indiquer les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -112,12 +112,12 @@ Indiquez les détails suivants :
 
 1. À l’étape **Domaine**, vous pouvez sélectionner :
 
-   * **Ajouter du contenu** pour ouvrir le [navigateur de chemin](/help/sites-authoring/author-environment-tools.md#path-browser) et sélectionner des ressources supplémentaires ; lorsque vous vous trouvez dans le navigateur, cliquez sur **Sélectionner** pour ajouter le contenu à l’instance de workflow.
+   * **Ajoutez du contenu** pour ouvrir l’[explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) et sélectionnez des ressources supplémentaires. Lorsque vous êtes dans l’explorateur, cliquez sur l’**option de sélection** pour ajouter du contenu à l’instance de workflow.
 
    * Une ressource existante pour afficher d’autres actions :
 
       * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
-Une boîte de dialogue s’ouvre, vous permettant d’affiner la sélection en fonction des éléments suivants :
+Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
          * Inclure seulement les enfants immédiats
          * Inclure seulement les pages modifiées
@@ -137,6 +137,6 @@ Une boîte de dialogue s’ouvre, vous permettant d’affiner la sélection en f
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Une boîte de dialogue s’ouvre, dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![wf-54](assets/wf-54.png)

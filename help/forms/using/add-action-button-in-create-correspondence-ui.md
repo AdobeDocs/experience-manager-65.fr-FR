@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1854'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ L’ajout d’un bouton avec une action (ici, envoyer une lettre pour révision)
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier des applications, créez un dossier nommé `defaultApp` avec un chemin/une structure similaires au dossier defaultApp (dans le dossier config). Procédez comme suit pour créer le dossier :
+1. Dans le dossier des applications, créez un dossier appelé `defaultApp` avec un chemin d’accès/structure similaire au dossier defaultApp (situé dans le dossier de configuration). Procédez comme suit pour créer le dossier :
 
    1. Faites un clic droit sur le dossier **defaultApp** à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
 

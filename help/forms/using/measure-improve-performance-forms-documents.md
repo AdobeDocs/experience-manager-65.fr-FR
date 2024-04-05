@@ -148,7 +148,7 @@ Voici quelques recommandations à propos de la conception des formulaires et l�
 * Utilisez des terminologies standard ou courantes pour les champs du formulaire.
 * Expliquez le champ et l’entrée requise, avec des exemples ou une aide, là où les utilisateurs risquent d’être déconcertés.
 * Validez les entrées des utilisateurs et utilisatrices au moment de la saisie, si possible, pour éviter des erreurs lors de l’envoi du formulaire.
-* Optimisez les mises en page pour les ordinateurs de bureau et les appareils mobiles.
+* Optimisez les dispositions pour les ordinateurs de bureau et les appareils mobiles.
 * Renseignez automatiquement les informations concernant les utilisateurs et utilisatrices connus.
 
 **Tests A/B**

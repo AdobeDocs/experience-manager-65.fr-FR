@@ -1,6 +1,6 @@
 ---
-title: Intégrer à Silverpop Engage
-description: Découvrez comment intégrer Adobe Experience Manager à Silverpop Engage.
+title: Intégration à Silverpop Engage
+description: Découvrez comment intégrer Adobe Experience Manager à Silverpop Engage.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,11 +11,11 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Intégrer à Silverpop Engage{#integrating-with-silverpop-engage}
+# Intégration à Silverpop Engage{#integrating-with-silverpop-engage}
 
 <!-- THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
 >[!NOTE]
@@ -39,7 +39,7 @@ Les configurations Silverpop peuvent être ajoutées au moyen de **Cloud Servic
 
 Pour créer une configuration Dynamic Media dans Cloud Services :
 
-1. Dans AEM, cliquez sur **Outils** > **Déploiement** > **Cloud Service**. (Ou accédez directement à `https://<hostname>:<port>/etc/cloudservices.html`).
+1. Dans AEM, cliquez sur **Outils** > **Déploiement** > **Services cloud**. (Ou accédez directement à `https://<hostname>:<port>/etc/cloudservices.html`).
 1. Sous les services tiers, cliquez sur **Silverpop Engage** et ensuite sur **Configurer**. La fenêtre de configuration Silverpop s’ouvre.
 
    >[!NOTE]
@@ -58,7 +58,7 @@ Pour créer une configuration Dynamic Media dans Cloud Services :
 
 Pour créer une configuration Silverpop dans Outils :
 
-1. Dans AEM, cliquez sur **Outils** > **Déploiement** > **Cloud Service**. Ou accédez-y directement sur `https://<hostname>:<port>/misadmin#/etc`.
+1. Dans AEM, cliquez sur **Outils** > **Déploiement** > **Services cloud**. Ou accédez-y directement sur `https://<hostname>:<port>/misadmin#/etc`.
 1. Sélectionnez **Outils**, puis **Configuration des services cloud** et ensuite **Silverpop Engage**.
 1. Cliquez sur **Nouveau**.
 

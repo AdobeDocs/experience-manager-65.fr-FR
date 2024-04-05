@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -216,7 +216,7 @@ Pour vérifier si la connexion persistante fonctionne :
 
 **Recherche de requêtes perdues**
 
-Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple, avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il y a un pare-feu :
+Si vous perdez des requêtes dans une configuration de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour savoir où la requête a été perdue. S’il y a un pare-feu :
 
 * Démarrez un proxy avant un pare-feu.
 * Démarrez un autre proxy après un pare-feu.

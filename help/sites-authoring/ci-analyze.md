@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Ouvrez la page [Content Insight](/help/sites-authoring/content-insights.md) pour
 Procédez comme suit pour afficher Analytics et recommendations concernant une page :
 
 1. Accédez à la page que vous souhaitez analyser.
-1. Dans la barre d’outils, cliquez sur **Analytics et Recommendations**.
+1. Dans la barre d’outils, cliquez sur **Analyses et recommandations**.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Modifiez la période de création de rapports de la page Content Insight afin de
 
 Pour modifier la période de création de rapports d’une page Content Insight :
 
-1. Si la période n’apparaît pas en haut de la page, cliquez sur l’icône Activer/désactiver la période .
+1. Si le délai n’apparaît pas en haut de la page, cliquez sur l’icône Activer/désactiver le délai.
 
    ![Activer/désactiver le délai.](do-not-localize/chlimage_1-22.png)
 
@@ -67,11 +67,11 @@ Modifiez la durée de chaque point de données dans un rapport. Par exemple, lor
 
 La granularité affecte les rapports qui tracent les données par rapport au temps, tels que les rapports Vues et Moyenne des minutes d’engagement sur la page. La granularité affecte également l’échelle du délai.
 
-1. Si le contrôle de granularité n’apparaît pas, cliquez sur l’icône Activer/désactiver la granularité .
+1. Si le contrôle de granularité n’apparaît pas, cliquez sur l’icône Activer/désactiver la granularité.
 
    ![chlimage_1-128](assets/chlimage_1-128.png)
 
-1. Cliquez sur la granularité de votre choix. Une fois sélectionné, le rapport est automatiquement mis à jour pour refléter la granularité.
+1. Cliquez sur la granularité souhaitée. Une fois sélectionné, le rapport est automatiquement mis à jour pour refléter la granularité.
 
 ### Attribuer des tâches pour les Recommandations d’optimisation du moteur de recherche {#assigning-tasks-for-seo-recommendations}
 
@@ -87,7 +87,7 @@ Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. 
 
 Utilisez la procédure suivante pour créer une tâche pour une recommandation d’optimisation du moteur de recherche.
 
-1. Cliquez sur l’icône d’informations de la recommandation d’optimisation pour les moteurs de recherche.
+1. Cliquez sur l’icône d’informations de la recommandation d’optimisation du moteur de recherche.
 
    ![Icône Informations.](do-not-localize/chlimage_1-23.png)
 
@@ -95,7 +95,7 @@ Utilisez la procédure suivante pour créer une tâche pour une recommandation d
 
    ![chlimage_1-131](assets/chlimage_1-131.png)
 
-1. Renseignez les champs de formulaire qui s’affichent, puis sélectionnez Créer :
+1. Renseignez les champs de formulaire qui s’affichent, puis sélectionnez Créer :
 
    * Projet : sélectionnez le projet dans lequel créer la tâche.
    * Nom : nom qui identifie la tâche. Le nom par défaut est le titre de la recommandation d’optimisation du moteur de recherche.
@@ -106,4 +106,4 @@ Utilisez la procédure suivante pour créer une tâche pour une recommandation d
 
    **Remarque :** la tâche créée inclut également le chemin d’accès à la page à laquelle la recommandation d’optimisation pour les moteurs de recherche s’applique.
 
-1. Cliquez sur Terminé pour fermer le message Tâche créée .
+1. Cliquez sur Terminé pour fermer le message Tâche créée.

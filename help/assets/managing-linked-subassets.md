@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1382'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Cette procédure est similaire à l’[ajout de ressources en tant que référen
 
 ### Création de références dans les ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Suivez la procédure décrite à la section [Création de modèles de workflow](/help/sites-developing/workflows-models.md) pour créer un workflow.
+1. Pour créer un workflow, suivez la procédure décrite dans [Création de modèles de workflows](/help/sites-developing/workflows-models.md).
 1. Utilisez la fonctionnalité [Package](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) d’[!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` dans lequel se trouvent des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et chargez-le dans le référentiel [!DNL Experience Manager].
 1. Lancez le workflow `Unarchiver`.
@@ -79,7 +79,7 @@ Cette procédure est similaire à l’[ajout de ressources en tant que référen
 
    Pour afficher les ressources référencées, fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector) dans la page des détails de la ressource.
 
-1. Les ressources référencées contiennent également la liste des ressources à partir desquelles elles sont référencées. Pour afficher la liste des ressources référencées, accédez à la page des détails de la ressource et fermez le [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Les ressources référencées contiennent également la liste des ressources à partir desquelles elles sont référencées. Pour afficher la liste des ressources référencées, accédez à la page des détails des ressources et fermez le [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 >[!NOTE]
 >

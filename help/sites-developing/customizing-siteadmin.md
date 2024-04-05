@@ -1,6 +1,6 @@
 ---
 title: Personnaliser la console Sites web (IU classique)
-description: La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées.
+description: La console d’administration Sites web peut être étendue pour afficher des colonnes personnalisées.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -11,27 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '720'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 # Personnaliser la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
-## Ajout d’une colonne personnalisée à la console Sites web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Ajouter une colonne personnalisée à la console Sites web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
-La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées. La console est générée sur la base d’un objet JSON qui peut être étendu en créant un service OSGI qui implémente l’interface `ListInfoProvider`. Un tel service modifie l’objet JSON envoyé au client pour créer la console.
+La console d’administration Sites web peut être étendue pour afficher des colonnes personnalisées. La console est générée sur la base d’un objet JSON qui peut être étendu en créant un service OSGI qui implémente l’interface `ListInfoProvider`. Un tel service modifie l’objet JSON envoyé au client pour créer la console.
 
-Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la console Administration de sites Web en implémentant l’interface `ListInfoProvider`. Il comprend les étapes suivantes :
+Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la console Administration de sites Web en implémentant l’interface `ListInfoProvider`. Il se compose des étapes suivantes :
 
-1. [Création du service OSGI](#creating-the-osgi-service) et le déploiement du lot qui le contient sur le serveur AEM.
-1. (facultatif) [Test du nouveau service](#testing-the-new-service) en effectuant un appel JSON pour demander l’objet JSON utilisé pour créer la console.
-1. [Afficher la nouvelle colonne](#displaying-the-new-column) en étendant la structure de noeud de la console dans le référentiel.
+1. [Création du service OSGI](#creating-the-osgi-service) et déploiement du lot qui le contient sur le serveur AEM.
+1. (facultatif) [Test du nouveau service](#testing-the-new-service) en effectuant un appel JSON pour demander l’objet JSON utilisé pour créer la console.
+1. [Affichage de la nouvelle colonne](#displaying-the-new-column) en étendant la structure des nœuds de la console dans le référentiel.
 
 >[!NOTE]
 >
->Ce tutoriel peut également être utilisé pour étendre les consoles d’administration suivantes :
+>Ce tutoriel peut également être utilisé pour étendre les consoles d’administration suivantes :
 >
->* Console Ressources numériques
+>* la console Ressources numériques
 >* Console Community
 >
 
@@ -48,15 +48,15 @@ Les arguments pour les deux méthodes sont les suivants :
 * `info`, l’objet JSON à mettre à jour, à savoir la liste globale ou l’élément de liste en cours,
 * `resource`, une ressource Sling.
 
-L’exemple de mise en oeuvre est le suivant :
+L’exemple d’implémentation est le suivant :
 
 * ajoute une propriété *starred* pour chaque élément, à savoir `true` si le nom de page commence par un *e* et `false` dans les autres cas ;
 
-* Ajoute un *starredCount* , qui est globale pour la liste et contient le nombre d’éléments de liste démarrée.
+* Ajoute une propriété *starredCount*, qui est globale pour la liste et contient le nombre d’éléments starred de la liste.
 
-Pour créer le service OSGI :
+Pour créer le service OSGi :
 
-1. En CRXDE Lite, [création d’un lot](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. Dans CRXDE Lite, [créez un lot](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Ajoutez l’exemple de code ci-dessous.
 1. Créez le lot.
 
@@ -105,13 +105,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Votre implémentation doit déterminer, sur la base de la requête et/ou de la ressource fournies, si elle doit ou non ajouter les informations à l’objet JSON.
->* Si votre `ListInfoProvider` La mise en oeuvre définit une propriété qui existe dans l’objet de réponse, sa valeur est écrasée par celle que vous fournissez.
+>* Si votre implémentation de `ListInfoProvider` définit une propriété qui existe déjà dans l’objet de réponse, sa valeur est remplacée par celle que vous fournissez.
 >
 >   Vous pouvez utiliser le [classement de service](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
 
-### Test du nouveau service {#testing-the-new-service}
+### Tester le nouveau service {#testing-the-new-service}
 
-Lorsque vous ouvrez la console d’administration des sites web et parcourez votre site, le navigateur émet un appel Ajax pour obtenir l’objet JSON utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
+Lorsque vous ouvrez la console d’administration Sites web et parcourez votre site, le navigateur émet un appel Ajax pour obtenir l’objet JSON utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -136,14 +136,14 @@ La dernière étape consiste à adapter la structure de nœuds de la console Adm
 
    * Supprimez **pageText**.
 
-   * Définir **pathRegex** to `/content/geometrixx(/.*)?`
-La configuration de la grille est ainsi active pour tous les sites web de Geometrixx.
+   * Définissez **pathRegex** sur `/content/geometrixx(/.*)?`.
+De cette manière, la configuration de grille sera active pour tous les sites web Geometrixx.
 
    * Définissez **storeProxySuffix** sur `.pages.json`.
 
    * Modifiez la propriété à plusieurs valeurs **storeReaderFields** et ajoutez la valeur `starred`.
 
-   * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété multi-String . **storeReaderFields**:
+   * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété **storeReaderFields** à plusieurs chaînes :
 
       * **msm:isSource**
       * **msm:isInBlueprint**
@@ -157,10 +157,10 @@ La configuration de la grille est ainsi active pour tous les sites web de Geomet
 
    * **xtype** : `gridcolumn` de type Chaîne
 
-1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à l’adresse `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à l’emplacement suivant : `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`.
 
 1. `/siteadmin` est un chemin vanity qui, par défaut, pointe vers `/libs/wcm/core/content/siteadmin`.
-Pour le rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété . `sling:vanityOrder` avoir une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+Pour rediriger l’ensemble vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
 1. Accédez à la console Administration de sites Web et rendez-vous sur le site de Geometrixx à l’adresse :
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -171,7 +171,7 @@ Pour le rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/si
 
 >[!CAUTION]
 >
->Si plusieurs configurations de grille correspondent au chemin d’accès demandé défini par la variable **pathRegex** , la première est utilisée, et non la plus spécifique, ce qui signifie que l’ordre des configurations est important.
+>Si plusieurs configurations de grille correspondent au chemin d’accès demandé défini par la propriété **pathRegex**, la configuration utilisée est la première, et non la plus spécifique, ce qui signifie que l’ordre des configurations est important.
 
 ### Exemple de package {#sample-package}
 

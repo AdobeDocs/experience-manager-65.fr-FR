@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2621'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Lors de la création d’une communication interactive, vous pouvez ajouter des 
 
 Pour ajouter et configurer un graphique dans une communication interactive, procédez comme suit :
 
-1. Sélectionner **Composants** à partir du sidekick de la communication interactive.
+1. Sélectionnez **Composants** dans le sidekick de la communication interactive.
 1. Faites glisser, puis déposez le composant de **Graphique** sur l’un des composants suivants :
 
    * Canal d’impression : zone cible et champ Image
    * Canal web : panneau ou zone cible
 
-1. Sélectionnez le composant de graphique dans l’éditeur de communication interactive, puis sélectionnez **[!UICONTROL Configurer (]** ![configure_icon](assets/configure_icon.png)) dans la barre d’outils Composant.
+1. Sélectionnez le composant de graphique dans l’éditeur de communication interactive et sélectionnez **[!UICONTROL Configurer (]** ![configure_icon](assets/configure_icon.png)) dans la barre d’outils Composant.
 
    Les propriétés du graphique s’affichent dans le volet gauche.
 
@@ -44,13 +44,13 @@ Pour ajouter et configurer un graphique dans une communication interactive, proc
    Propriétés de base d’un graphique en ligne dans le canal web
 
 1. Configurez les [propriétés du graphique](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) selon le type de canal.
-1. (Canal d’impression uniquement) Dans les **[!UICONTROL Paramètres d’agent]**, indiquez si l’utilisation de ce graphique est obligatoire pour l’agent. Si i **[!UICONTROL Il est obligatoire que l’agent utilise ce graphique]** n’est pas sélectionnée, l’agent peut sélectionner l’icône représentant un oeil pour le graphique dans la **[!UICONTROL Contenu]** de l’interface utilisateur de l’agent pour afficher ou masquer le graphique.
+1. (Canal d’impression uniquement) Dans les **[!UICONTROL Paramètres d’agent]**, indiquez si l’utilisation de ce graphique est obligatoire pour l’agent. Si l’option **[!UICONTROL L’utilisation de ce graphique est obligatoire pour l’agent]** n’est pas sélectionnée, l’agent ou l’agente peut sélectionner l’icône du graphique représentant un œil dans l’onglet **[!UICONTROL Contenu]** de l’interface utilisateur de l’agent pour afficher/masquer le graphique.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
-1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
+1. Sélectionnez ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
 
-   Sélectionner **[!UICONTROL Aperçu]** pour afficher l’aspect et les données associées au graphique. Sélectionner **[!UICONTROL Modifier]** pour reconfigurer les propriétés du graphique.
+   Sélectionnez **[!UICONTROL Prévisualisation]** pour afficher l’aspect et les données associées au graphique. Sélectionnez **[!UICONTROL Modifier]** pour reconfigurer les propriétés du graphique.
 
 ## Configurer les propriétés du graphique {#configure-chart-properties}
 
@@ -158,7 +158,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
    <td><p>En plus des configurations courantes, la configuration spécifique au graphique suivante est disponible :</p>
     <ul>
      <li><strong>Afficher une légende : </strong>affiche une légende pour le graphique circulaire ou en anneau lorsqu’il est activé.</li>
-     <li><strong>Position de la légende : </strong>spécifie la position de la légende par rapport au graphique. Les options disponibles sont Droite, Gauche, Haut et Bas. Utilisez la légende du côté droit dans le canal d’impression.</li>
+     <li><strong>Position de la légende : </strong>spécifie la position de la légende par rapport au graphique. Les options disponibles sont Droite, Gauche, Haut et Bas. Utilisez la légende de droite dans le canal d’impression.</li>
      <li><strong>Rayon interne</strong> : disponible pour les graphiques en anneau pour indiquer le rayon (en pixels) du cercle intérieur dans le graphique.</li>
      <li><strong>Couleur de la ligne</strong> : disponible pour les graphiques linéaires, linéaires et à points, ou en aires pour spécifier la couleur de la ligne dans le graphique.</li>
      <li><strong>Couleur du point</strong> : disponible pour les graphiques à points et linéaires et à points, pour spécifier la couleur des points dans le graphique.<br /> </li>

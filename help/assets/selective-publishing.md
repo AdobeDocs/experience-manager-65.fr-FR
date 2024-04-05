@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3000'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -103,8 +103,8 @@ Reportez-vous à [Créer une configuration Dynamic Media](#configuring-dynamic-
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale. Sur le côté gauche, sélectionnez l’icône Navigation (juste au-dessus de l’icône Outils), puis sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]**, effectuez l’une des opérations suivantes :
-   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’une ressource spécifique.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’un dossier en particulier.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’une ressource en particulier.
 
      >[!NOTE]
      >
@@ -135,8 +135,8 @@ Reportez-vous à [Créer une configuration Dynamic Media](#configuring-dynamic-
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale. Sur le côté gauche, sélectionnez l’icône Navigation (juste au-dessus de l’icône Outils), puis sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]**, effectuez l’une des opérations suivantes :
-   * Accédez à un dossier dont vous souhaitez dépublier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez à un dossier dont vous souhaitez dépublier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’une ressource spécifique.
+   * Accédez à un dossier dont vous souhaitez dépublier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’un dossier en particulier.
+   * Accédez à un dossier dont vous souhaitez dépublier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’une ressource en particulier.
 
      >[!NOTE]
      >
@@ -174,8 +174,8 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale. Sur le côté gauche de la page, sélectionnez l’icône de Navigation (juste au-dessus de l’icône Outils) puis, sur le côté droit de la page, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]**, effectuez l’une des opérations suivantes :
-   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisation **[!UICONTROL Mode Liste]** vous pouvez ainsi vérifier plus facilement l’état de publication d’une ressource spécifique.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’un dossier en particulier.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**. Utilisez la **[!UICONTROL vue Liste]** pour vérifier plus facilement le statut de publication d’une ressource en particulier.
 
      >[!NOTE]
      >
@@ -255,11 +255,11 @@ Vous pouvez éventuellement utiliser ces cases à cocher avec le prédicat de re
    * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication – Portée]**, sélectionnez **[!UICONTROL Publier]** ou **[!UICONTROL Dépublier]** pour lancer l’action.
 1. **[!UICONTROL Cliquez sur OK]**.
 
-## Vérification de l’état de publication d’une ressource {#check-publish-status-of-asset}
+## Vérification du statut de publication d’une ressource {#check-publish-status-of-asset}
 
 Vous pouvez utiliser **[!UICONTROL Chronologie]** dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]** dans Experience Manager afin de vérifier rapidement l’état de publication d’une ressource.
 
-**Pour vérifier l’état de publication d’une ressource :**
+**Pour vérifier le statut de publication d’une ressource :**
 
 1. Dans Experience Manager, dans le coin supérieur gauche de la page, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale. Sur le côté gauche de la page, sélectionnez l’icône de Navigation (juste au-dessus de l’icône Outils), puis sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 1. Dans la vue **[!UICONTROL Carte]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Liste]** (la capture d’écran ci-dessous présente la vue **[!UICONTROL Liste]**), ouvrez un dossier contenant les ressources que vous avez publiées ou dépubliées.

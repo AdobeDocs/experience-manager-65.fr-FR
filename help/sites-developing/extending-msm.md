@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une co
 
 * Les classes `LiveAction` incluent les méthodes suivantes :
 
-   * `getName`: renvoie le nom de l’action. Le nom est utilisé pour faire référence à l’action, par exemple, dans les configurations de déploiement.
+   * `getName` : renvoie le nom de l’action. Le nom est utilisé pour faire référence à l’action, par exemple, dans les configurations de déploiement.
    * `execute` : réalise les tâches de l’action.
 
 * Les classes `LiveActionFactory` incluent les méthodes suivantes :
@@ -150,7 +150,7 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
 
 * La valeur reset indique le mode de réinitialisation du déploiement.
 
-À partir de ces objets, vous pouvez obtenir toutes les informations sur la variable `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
+À partir de ces objets, vous pouvez obtenir toutes les informations sur la `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
 
 Dans la première ligne du code suivant, source est l’objet `Resource` de la page source :
 
@@ -201,7 +201,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 
 1. Dessous, **Créez** un nœud avec les propriétés suivantes :
 
-   * **Nom** : nom de nœud de l’action de synchronisation. md#installed-sync-actions), par exemple, `contentCopy` ou `workflow`.
+   * **Nom** : nom de nœud de l’action de synchronisation. md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
    * **Type** : `cq:RolloutConfig`
 
 1. Ajoutez les propriétés suivantes à ce nœud :
@@ -235,7 +235,7 @@ Ajoutez des nœuds enfants de type `cq:LiveSyncAction` pour ajouter des actions 
 1. **Créez** un nœud avec les propriétés de nœud suivantes :
 
    * **Nom** : nom de nœud de l’action de synchronisation.
-Le nom doit être identique au nom **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple : `contentCopy` ou `workflow`.
+Le nom doit être identique au **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
    * **Type** : `cq:LiveSyncAction`
 
 1. Ajoutez et configurez autant de nœuds d’action de synchronisation que vous le souhaitez. Réorganisez les nœuds d’action afin que leur ordre corresponde à celui dans lequel vous souhaitez qu’ils se produisent. Le nœud d’action le plus haut se produit en premier.
@@ -616,11 +616,11 @@ AEM utilise un ensemble par défaut de codes de langue et de pays.
 * Le code de langue par défaut est le code à deux lettres en minuscules, tel que défini par la norme ISO-639-1.
 * Le code de pays par défaut est le code à deux lettres, en minuscules ou en majuscules, comme défini par la norme ISO 3166.
 
-MSM utilise une liste stockée de codes de langue et de pays pour déterminer le nom du pays associé au nom de la version linguistique de votre page. Si nécessaire, vous pouvez modifier les aspects suivants de la liste :
+MSM utilise une liste stockée de codes de langue et de pays pour déterminer le nom du pays associé au nom de la version linguistique de votre page. Si nécessaire, vous pouvez modifier les aspects suivants de la liste :
 
 * Titres de langue
 * Noms de pays
-* Pays par défaut pour les langues (pour les codes tels que `en`, `de`, entre autres)
+* Pays par défaut pour les langues (pour les codes tels que `en`, `de` entre autres)
 
 La liste des langues est stockée sous le nœud `/libs/wcm/core/resources/languages`. Chaque nœud enfant représente une langue ou un code langue-pays :
 
@@ -661,7 +661,7 @@ Par exemple, si deux nouvelles propriétés de page sont ajoutées :
 
 * Style visuel clé :
 
-   * Le projet exige que cette propriété soit déployée telle qu’elle est (généralement) commune à tous les pays (ou marques, etc.).
+   * Cette propriété doit être déployée, car elle est (généralement) commune à tous les pays (ou marques, etc.).
 
 Assurez-vous ensuite que les propriétés suivantes sont correctement configurées :
 
@@ -690,11 +690,11 @@ Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la cha�
 
 * Si la valeur de `cq-msm-lockable` est :
 
-   * **Relatif** (par exemple, `myProperty` ou `./myProperty`)
+   * **Relative** (par exemple, `myProperty` ou `./myProperty`)
 
       * il ajoute et supprime la propriété de `cq:propertyInheritanceCancelled`.
 
-   * **Absolu** (par exemple, `/image`)
+   * **Absolue** (par exemple, `/image`)
 
       * la rupture de la chaîne annule l’héritage en ajoutant le mixin `cq:LiveSyncCancelled` à `./image` et en définissant `cq:isCancelledForChildren` sur `true` ;
 

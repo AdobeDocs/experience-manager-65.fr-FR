@@ -7,7 +7,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 86%
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 
 ## Déploiement d’autres mises en œuvre {#deploying-other-implementations}
 
-Pour AEM et Adobe Commerce, voir [Intégration AEM et Adobe Commerce](/help/commerce/cif/integrating/magento.md) en utilisant la variable [Commerce integration framework](/help/commerce/cif/introduction.md).
+Pour AEM et Adobe Commerce, consultez [Intégration d’AEM et d’Adobe Commerce](/help/commerce/cif/integrating/magento.md) à l’aide du [framework d’intégration de Commerce (CIF)](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

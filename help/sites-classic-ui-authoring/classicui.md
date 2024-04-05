@@ -1,6 +1,6 @@
 ---
 title: Création dans l’IU classique
-description: L’interface utilisateur classique est l’interface utilisateur orientée bureau disponible depuis CQ5. La documentation suivante relative à la création est axée sur cette interface. L’interface utilisateur tactile est la nouvelle interface utilisateur standard pour AEM, conçue pour être utilisée à la fois sur les appareils tactiles et de bureau. Pour plus d’informations, consultez la documentation de création standard .
+description: L’IU classique est l’interface utilisateur destinée aux ordinateurs de bureau, disponible depuis CQ5. La documentation suivante relative à la création est axée sur cette interface. L’IU tactile est la nouvelle interface utilisateur standard pour AEM. Elle est conçue pour être utilisée à la fois sur les appareils à écran tactile et les ordinateurs de bureau. Pour plus d’informations, consultez la documentation de création standard.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 56%
 
 L’IU classique est l’interface utilisateur destinée aux ordinateurs de bureau, disponible depuis CQ5 (le prédécesseur d’AEM). La documentation suivante relative à la création est axée sur cette interface. 
 
-L’IU tactile est la nouvelle interface utilisateur standard pour AEM. Elle est conçue pour être utilisée à la fois sur les appareils à écran tactile et les ordinateurs de bureau. Voir [documentation de création standard](/help/sites-authoring/author.md) pour plus d’informations.
+L’IU tactile est la nouvelle interface utilisateur standard pour AEM. Elle est conçue pour être utilisée à la fois sur les appareils à écran tactile et les ordinateurs de bureau. Pour plus d’informations, consultez la [documentation de création standard](/help/sites-authoring/author.md).
 
 >[!NOTE]
 >
 >L’IU tactile étant l’interface standard d’AEM, l’IU classique n’est plus gérée. Cela signifie que certaines fonctionnalités ne sont pas disponibles dans l’IU classique.
 
-## Concept de création (et de publication) {#concept-of-authoring-and-publishing}
+## Principe de création (et de publication) {#concept-of-authoring-and-publishing}
 
-Quel que soit le choix de l’interface utilisateur, il existe certains concepts et idées communs à la création, qui sont bien décrits. [ici dans la documentation de création standard](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+Quel que soit le choix d’IU, il existe certains concepts et idées communs à la création, qui sont bien décrits [ici dans la documentation de création standard](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
 1. **Sélectionner un profil auquel ajouter des styles personnalisés**
 
-   Accédez à l’interface de CRX DE à lʼadresse suivante :**https://&lt;server>:&lt;port>/crx/de** et créez un profil ou sélectionnez un profil existant. Pour savoir comment créer un profil, voir [Création d’un profil](/help/forms/using/custom-profile.md)
+   Accédez à l’interface de CRX DE à lʼadresse suivante :**https://&lt;server>:&lt;port>/crx/de** et créez un profil ou sélectionnez un profil existant. Pour savoir comment créer un profil, consultez [Création d’un profil](/help/forms/using/custom-profile.md).
 
 1. **Création d’une feuille de style CSS pour le style des formulaires HTML5**
 
@@ -37,7 +37,7 @@ Les deux images qui suivent montrent la différence entre les styles par défaut
 
    1. Cliquez avec le bouton droit sur le dossier et sélectionnez **Créer** -> **Créer un fichier** à partir du menu
 
-   1. Dans la boîte de dialogue Création de fichier, entrez le nom de la feuille de style. Veillez à utiliser l’extension .css (par exemple, stylesheet.css).
+   1. Dans la boîte de dialogue Création de fichier, entrez le nom de la feuille de style. Assurez-vous d’utiliser l’extension .css (par exemple stylesheet.css)
    1. Dans le volet du navigateur, ouvrez le fichier CSS que vous avez créé.
    1. Définissez les classes CSS des composants dont vous souhaitez modifier le style et ajoutez des styles dans ces classes.
 

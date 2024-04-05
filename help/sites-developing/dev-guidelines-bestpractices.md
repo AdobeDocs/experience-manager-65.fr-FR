@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 94%
 
 Les composants et les modèles Adobe Experience Manager (AEM) se composent d’une boîte à outils puissante. Ils peuvent être utilisés par les développeurs et développeuses pour offrir aux utilisateurs et utilisatrices, aux éditeurs et éditrices, ainsi qu’aux administrateurs et administratrices de sites web la possibilité d’adapter leurs sites web aux besoins changeants de l’entreprise (agilité du contenu). Ils permettent en outre de conserver la disposition uniforme des sites (protection de la marque).
 
-Un défi classique pour une personne responsable d’un site web, ou d’un ensemble de sites web (par exemple, dans une succursale d’une entreprise globale), est d’introduire un nouveau type de présentation de contenu sur leurs sites web.
+Il arrive souvent que la personne responsable d’un site web ou d’un ensemble de sites web (par exemple au niveau de la succursale d’une entreprise internationale) ait pour mission d’introduire un nouveau type de présentation de contenu dans les sites web.
 
 Supposons qu’il soit nécessaire d’ajouter aux sites web une page de liste d’actualités, qui répertorie des extraits d’autres articles déjà publiés. La page doit avoir la même conception et la même structure que le reste du site web.
 
 La méthode recommandée dans ces cas est la suivante :
 
-* Réutiliser un modèle existant pour créer un type de page. Le modèle définit grossièrement la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
+* Réutilisez un modèle existant pour créer un type de page. Le modèle définit grossièrement la structure de la page (éléments de navigation, panneaux, etc.), qui est affinée par sa conception (CSS, graphiques).
 * Utilisez le système de paragraphes (parsys/iparsys) sur les nouvelles pages.
 * Définissez le droit d’accès au mode Conception des systèmes de paragraphes, de sorte que seules les personnes autorisées (généralement l’administrateur ou l’administratrice) puissent les modifier.
 * Définissez les composants autorisés dans le système de paragraphes donné afin que les éditeurs et éditrices puissent ensuite placer les composants requis sur la page. Dans ce cas, il peut s’agir d’un composant de liste, qui peut parcourir une sous-arborescence de pages et extraire les informations en fonction de règles prédéfinies.
@@ -47,7 +47,7 @@ Dans la plupart des projets courants, les règles générales suivantes s’appl
 
 ### Personnalisation des composants et autres éléments {#customizing-components-and-other-elements}
 
-Lors de la création de vos propres composants ou de la personnalisation d’un composant existant, il est souvent plus facile (et plus sûr) de réutiliser des définitions existantes. Les mêmes principes s’appliquent également à d’autres éléments d’AEM, par exemple le gestionnaire d’erreurs.
+Lors de la création de vos propres composants ou de la personnalisation d’un composant existant, il est souvent plus facile (et plus sûr) de réutiliser des définitions existantes. Ces principes s’appliquent également à d’autres éléments dans AEM, par exemple le gestionnaire d’erreurs.
 
 Cela peut être effectué en copiant et en remplaçant la définition existante. En d’autres termes, en copiant la définition de `/libs` vers `/apps/<your-project>`. Cette nouvelle définition, dans `/apps`, peut être mise à jour en fonction de vos besoins.
 

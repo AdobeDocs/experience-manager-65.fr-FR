@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 86%
 
 Granite intègre l’implémentation du référentiel CRX de la spécification API JCR. Elle dispose de sa propre administration d’utilisateurs et utilisatrices et de groupes.
 
-Ces comptes constituent la base sous-jacente de la [Comptes AEM](/help/sites-administering/security.md) et toutes les modifications apportées au compte avec l’administration Granite sont répercutées si/quand les comptes sont accessibles depuis la variable [AEM console Utilisateurs](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). Dans la console Utilisateurs d’AEM, vous pouvez également gérer les privilèges et d’autres spécificités d’AEM.
+Ces comptes constituent la base des [comptes AEM](/help/sites-administering/security.md) et toute modification de compte apportée avec l’administration Granite est reflétée si/lorsque l’accès aux comptes s’effectue à partir de la [console Utilisateurs AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). Dans la console Utilisateurs d’AEM, vous pouvez également gérer les privilèges et d’autres spécificités d’AEM.
 
 Les consoles d’administration des utilisateurs et utilisatrices et des groupes Granite sont toutes deux disponibles dans la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’UI optimisée pour les écrans tactiles :
 
 ![Console Outils](assets/chlimage_1-72a.png)
 
-Choix de l’une ou l’autre **Utilisateurs** ou **Groupes** dans la console Outils , ouvrez la console appropriée. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
+Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la console correspondante. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
 
 * [Administration des utilisateurs](#user-administration)
 
@@ -54,11 +54,11 @@ Choix de l’une ou l’autre **Utilisateurs** ou **Groupes** dans la console Ou
 
 1. Utilisez l’icône **Ajouter un utilisateur ou une utilisatrice** :
 
-   ![Icône Ajouter un utilisateur](do-not-localize/chlimage_1-1.png)
+   ![Icône Ajouter un utilisateur ou une utilisatrice](do-not-localize/chlimage_1-1.png)
 
-1. La variable **Créer un utilisateur** le formulaire s’ouvre :
+1. Le formulaire **Créer un utilisateur ou une utilisatrice** s’ouvre :
 
-   ![Formulaire de détails utilisateur](assets/chlimage_1-75a.png)
+   ![Formulaire de détails utilisateur et utilisatrice](assets/chlimage_1-75a.png)
 
    Vous pouvez y saisir les détails de l’utilisateur pour le compte (la plupart sont des détails standard et explicites) :
 
@@ -90,8 +90,8 @@ Choix de l’une ou l’autre **Utilisateurs** ou **Groupes** dans la console Ou
    * **À propos**
    * **Paramètres du compte**
 
-      * **État**
-Vous pouvez marquer le compte comme **active** ou **inactive**.
+      * **Statut**
+Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    * **Photo**
 
@@ -132,7 +132,7 @@ Vous pouvez marquer le compte comme **active** ou **inactive**.
 
    ![Boîte de dialogue Paramètres du compte](assets/chlimage_1-76a.png)
 
-1. La variable **Modifier le mot de passe** s’ouvre. Saisissez et confirmez le nouveau mot de passe, ainsi que votre mot de passe. Cliquez sur **OK** pour confirmer les modifications.
+1. La boîte de dialogue **Modifier le mot de passe** s’ouvre. Saisissez et confirmez le nouveau mot de passe, ainsi que votre mot de passe. Cliquez sur **OK** pour confirmer les modifications.
 
    ![Boîte de dialogue Modifier le mot de passe](assets/chlimage_1-77a.png)
 
@@ -145,7 +145,7 @@ Vous pouvez marquer le compte comme **active** ou **inactive**.
 
    ![Utilisation de l’icône Groupes](do-not-localize/chlimage_1-2.png)
 
-   Pour ouvrir la liste déroulante de sélection de groupe :
+   Pour ouvrir le menu déroulant de sélection de groupe :
 
    ![Sélecteur de groupes](assets/chlimage_1-78a.png)
 
@@ -173,7 +173,7 @@ Vous pouvez marquer le compte comme **active** ou **inactive**.
 
    ![Ajouter un nouveau groupe](do-not-localize/chlimage_1-4.png)
 
-1. La variable **Créer un groupe** le formulaire s’ouvre :
+1. Le formulaire **Créer un groupe** s’ouvre :
 
    ![Formulaire Détails du groupe](assets/chlimage_1-79a.png)
 
@@ -185,7 +185,7 @@ Vous pouvez marquer le compte comme **active** ou **inactive**.
 
    * **Nom**
 
-     Nom du groupe. Il s’affiche dans la console Groupes .
+     Nom du groupe. Il est affiché dans la console Groupes.
 
    * **Description**
 
@@ -219,7 +219,7 @@ Vous pouvez marquer le compte comme **active** ou **inactive**.
 
 1. Le formulaire **Modifier les paramètres de groupe** s’ouvre.
 
-   L’identifiant de groupe est identique à l’identifiant d’origine, mais comporte le préfixe `Copy of`. Modifiez cet identifiant car il ne peut pas contenir d’espaces. Tous les autres détails sont identiques à l’original.
+   L’identifiant de groupe est identique à l’identifiant d’origine, mais comporte le préfixe `Copy of`. Modifiez cet identifiant, car il ne peut pas comporter d’espaces. Tous les autres détails sont identiques aux détails d’origine.
 
    Vous pouvez à présent modifier les détails comme indiqué dans la rubrique [Ajout d’un nouveau groupe](#adding-a-new-group).
 

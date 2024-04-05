@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Vous pouvez créer efficacement du contenu pour les sites internationaux et mult
 * Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
    * Réutilisez le contenu du site principal et ses traductions afin de créer des sites pour d’autres pays et cultures.
-   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple, le gabarit anglais > branches de langue anglaise dans les sites de pays, le gabarit français > branches de langue française dans les sites de pays.
+   * Veillez à limiter l’utilisation de Multi Site Manager à du contenu dans une langue, par exemple, gabarit anglais -> branches de langue anglaise dans les sites de pays, gabarit français -> branches de langue française dans les sites de pays.
    * Si nécessaire, désolidarisez les éléments des Live Copies pour ajouter les détails de localisation.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
@@ -57,7 +57,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Bonnes pratiques pour MSM](/help/sites-administering/msm-best-practices.md), en particulier :
+>* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md), notamment :
 >
 >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
 >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

@@ -1,6 +1,6 @@
 ---
 title: Résolution des problèmes de lenteur des requêtes
-description: Découvrez comment résoudre les problèmes de requêtes lentes dans Adobe Experience Manager.
+description: Découvrez comment résoudre les problèmes de lenteur des requêtes dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2237'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Actuellement, le mode de modification intégré est activé pour les éléments 
 
 >[!NOTE]
 >
->Le composant [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode d’édition statique, la saisie d’un saut de ligne ouvre une nouvelle **Texte** sous le titre.
+>Le composant [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode de modification intégré, la saisie d’un saut de ligne ouvre un nouveau composant **Texte** sous le titre.
 
 ## Fonctionnalités de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
 
@@ -77,7 +77,7 @@ Tous fonctionnent comme un bouton bascule. La résélection supprime donc le for
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec la fonction **[!UICONTROL Style]** et **[!UICONTROL Format]** liste déroulante et peut être appliqué au texte que vous avez sélectionné.
+Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec les listes déroulantes **[!UICONTROL Style]** et **[!UICONTROL Format]** et peuvent être appliqués au texte que vous avez sélectionné.
 
 Un style peut être appliqué à une chaîne spécifique (un style correspond à CSS) :
 
@@ -89,7 +89,7 @@ Tandis qu’une disposition est appliquée à l’intégralité d’un paragraph
 
 Seul un format spécifique peut être modifié (la valeur par défaut est **[!UICONTROL Paragraphe]**).
 
-Un style peut être supprimé. Placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
+Un style peut être supprimé. Placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
 
 >[!CAUTION]
 >
@@ -114,7 +114,7 @@ Mécanisme de collage par défaut (Ctrl-V) pour le composant ; dans le cas d’
 
 ![Annuler, rétablir la barre d’outils](do-not-localize/cq55_rte_undoredo.png)
 
-AEM conserve un enregistrement de vos 50 dernières actions dans le composant actuel, dans l’ordre chronologique. Au besoin, ces actions peuvent être annulées (puis rétablies) dans un ordre strict.
+AEM conserve un enregistrement de vos 50 dernières actions dans le composant actuel, dans l’ordre chronologique. Si nécessaire, ces actions peuvent être annulées (puis rétablies) dans un ordre strict.
 
 >[!CAUTION]
 >
@@ -156,7 +156,7 @@ Vous pouvez modifier le style d’une liste en positionnant simplement le curseu
 
 ![Barre d’outils de liens](do-not-localize/cq55_rte_links.png)
 
-Un lien vers une URL (que ce soit dans votre site web ou un emplacement externe) est généré en mettant en surbrillance le texte requis, puis en cliquant sur l’icône de lien hypertexte :
+Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site web ou dans un emplacement externe), mettez le texte requis en surbrillance, puis cliquez sur l’icône du lien hypertexte :
 
 ![Icône Lien hypertexte](do-not-localize/chlimage_1-9.png)
 
@@ -184,7 +184,7 @@ Pour rompre le lien, placez le curseur n’importe où dans le texte du lien et 
 
 ![Barre d’outils des ancres](do-not-localize/cq55_rte_anchor.png)
 
-Vous pouvez créer une ancre n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur le bouton **Ancre** s’affiche.
+Vous pouvez créer une ancre n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur l’icône **Ancre** pour ouvrir la boîte de dialogue.
 
 Saisissez le nom de l’ancre, puis cliquez sur **OK** pour enregistrer.
 
@@ -218,7 +218,7 @@ Vous pouvez faire glisser des images à partir de l’outil de recherche de cont
 
 >[!NOTE]
 >
->AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, la variable **Image** et **Image texte** sont disponibles.
+>AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Les composants **Image** et **Image de texte** par exemple sont disponibles.
 
 ### Vérificateur orthographique {#spelling-checker}
 
@@ -232,7 +232,7 @@ Toute faute d’orthographe est mise en surbrillance :
 
 >[!NOTE]
 >
->Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la variable `en` la branche est vérifiée pour l’anglais et la variable `de` branche pour l’allemand.
+>Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la vérification sera effectuée en anglais pour la branche `en` et en allemand pour la branche `de`.
 
 ### Tableaux {#tables}
 

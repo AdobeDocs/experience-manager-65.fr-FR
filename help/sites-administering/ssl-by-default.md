@@ -1,6 +1,6 @@
 ---
 title: SSL/TLS par défaut
-description: Découvrez comment utiliser SSL par défaut dans AEM 6.5.
+description: Découvrez comment utiliser la fonctionnalité SSL par Défaut dans AEM 6.5.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Dans un effort d’améliorer continuellement la sécurité d’AEM, Adobe a int
 
 ## Activation de SSL/TLS par défaut {#enabling-ssl-tls-by-default}
 
-Vous pouvez commencer à configurer la fonctionnalité SSL/TLS par défaut en cliquant sur le message correspondant dans la boîte de réception de l’écran d’accueil d’AEM. Pour accéder à la boîte de réception, appuyez sur l’icône de cloche dans le coin supérieur droit de l’écran. Cliquez ensuite sur **Afficher tout**. Cette action affiche la liste de toutes les alertes classées, en vue liste.
+Vous pouvez commencer à configurer la fonctionnalité SSL/TLS par défaut en cliquant sur le message correspondant dans la boîte de réception de l’écran d’accueil d’AEM. Pour accéder à la boîte de réception, appuyez sur l’icône de cloche dans le coin supérieur droit de l’écran. Ensuite, cliquez sur **Afficher tout**. Cette action affiche la liste de toutes les alertes classées, en vue liste.
 
 Dans la liste, sélectionnez et ouvrez l’alerte **Configurer HTTPS** :
 
@@ -160,7 +160,7 @@ Vous trouverez ci-dessous un exemple de création de certificat autosigné au fo
 
 >[!NOTE]
 >
->L’utilisation d’un certificat auto-signé est fournie à titre d’exemple uniquement. Ne pas utiliser en production.
+>L’utilisation d’un certificat auto-signé est uniquement à des fins d’exemple. Ne pas utiliser lors de la production.
 
 1. Créez tout d’abord la clé privée :
 
@@ -199,7 +199,7 @@ Vous pouvez également automatiser la configuration SSL à l’aide de l’outi
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
-Vous trouverez ci-dessous les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
+Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
 * `-F "keystorePassword=password"` - Le mot de passe du KeyStore ;
 
@@ -220,7 +220,7 @@ Vous trouverez ci-dessous les paramètres que vous pouvez utiliser pour modifier
 >
 >Pour exécuter le cURL afin d’automatiser la configuration SSL/TLS, la solution la plus rapide est de partir du dossier dans lequel se trouvent les fichiers DER et CRT. Vous pouvez également spécifier le chemin d’accès dans les arguments `privatekeyFile` et certificateFile.
 >
->Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL à l’événement `-u user:passeword` .
+>Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL avec le paramètre `-u user:passeword` .
 >
 >Une commande POST cURL appropriée doit se présenter comme suit :
 
@@ -234,7 +234,7 @@ Vous pouvez envoyer au servlet une chaîne de certificats en répétant le param
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez les **Keystore** entrées de :
+Une fois la commande exécutée, vérifiez que tous les certificats ont été ajoutés au KeyStore. Vérifiez les entrées du **fichier de stockage de clés** à partir de :
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Activer une connexion TLS 1.3 {#enabling-tls-connection}

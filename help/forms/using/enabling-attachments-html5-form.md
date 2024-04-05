@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
    >[!NOTE]
    >
-   >Dans Microsoft Internet Explorer 9, les utilisateurs peuvent joindre des fichiers supérieurs à la limite spécifiée. C&#39;est un problème connu.
+   >Dans Microsoft Internet Explorer 9, les utilisateurs et utilisatrices peuvent joindre des fichiers supérieurs à la limite spécifiée. C’est un problème connu.
 
 1. Utilisez [l’éditeur de métadonnées](/help/forms/using/manage-form-metadata.md) pour sélectionner le profil personnalisé que vous avez créé ci-dessus pour les formulaires HTML5.
 1. Effectuez le rendu de votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît dans la barre d’outils de formulaires.

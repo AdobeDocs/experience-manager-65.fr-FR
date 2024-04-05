@@ -11,11 +11,11 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4257'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
-# Générer un document d’enregistrement pour les formulaires adaptatifs ou les fragments de formulaire adaptatif {#generate-document-of-record-for-adaptive-forms}
+# Générer un document d’enregistrement pour les formulaires adaptatifs ou les fragments de formulaires adaptatifs {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
 Après l’envoi d’un formulaire, vos clients veulent généralement conserver un enregistrement, sous forme imprimée ou de document, des informations qu’ils ont intégrées au formulaire pour s’y reporter ultérieurement. On parle ici de document d’enregistrement.
 
-Cet article explique comment générer un document d’enregistrement pour le Forms adaptatif ou le fragment de formulaire adaptatif.
+Cet article explique comment générer un document d’enregistrement pour les formulaires adaptatifs ou un fragment de formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Pour générer un document d’enregistrement pour les formulaires adaptatifs, i
 
 **Formulaire adaptatif** : un formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
 
-**Fragment de formulaire adaptatif** Fragment de formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
+**Fragment de formulaire adaptatif** Un fragment de formulaire adaptatif pour lequel vous souhaitez générer un document d’enregistrement.
 
 **Modèle de base (recommandé)** : modèle XFA (fichier XDP) créé dans AEM Designer. Le modèle de base est utilisé pour spécifier les informations en termes de style et d’identité graphique pour le modèle de document d’enregistrement.
 
@@ -220,7 +220,7 @@ Les composants des tableaux de formulaires adaptatifs, comme l’en-tête, le pi
 
 Le modèle de base fournit les informations de style et d’aspect au document d’enregistrement. Il permet de personnaliser l’aspect par défaut d’un document d’enregistrement généré automatiquement. Par exemple, imaginons que vous souhaitiez ajouter le logo de votre entreprise dans l’en-tête et les informations sur les droits d’auteur dans le pied de page du document d’enregistrement. Le gabarit de page du modèle de base est utilisé comme gabarit pour le modèle de document d’enregistrement. Le gabarit de page peut comporter des informations comme l’en-tête, le pied de page et le numéro de page, que vous pouvez appliquer au document d’enregistrement. Vous pouvez appliquer ces informations au document d’enregistrement à l’aide d’un modèle de base pour générer automatiquement un document d’enregistrement. L’utilisation d’un modèle de base permet de modifier les propriétés par défaut des champs.
 
-Veillez à suivre [Conventions relatives aux modèles de base](#base-template-conventions) lorsque vous concevez un modèle de base.
+Respectez toujours les [conventions relatives aux modèles de base](#base-template-conventions) lorsque vous concevez un modèle de base.
 
 ## Conventions relatives aux modèles de base {#base-template-conventions}
 
@@ -236,7 +236,7 @@ Un modèle de base sert à définir l’en-tête, le pied de page, le style et l
 
 **Conventions an matière de style des champs**
 
-* Pour appliquer un style aux champs du document d’enregistrement, le modèle de base fournit les champs dans la variable `AF_FIELDSSUBFORM` Sous-formulaire sous `AF_METATEMPLATE` sous-formulaire racine.
+* Pour appliquer un style aux champs du document d’enregistrement, sachez que le modèle de base fournit les champs situés dans le sous-formulaire `AF_FIELDSSUBFORM` sous le sous-formulaire racine `AF_METATEMPLATE`.
 
 * Les propriétés de ces champs sont appliquées aux champs du document d’enregistrement. Ces champs doivent respecter la convention d’affectation des noms de `AF_<name of field in all caps>_XFO`. Par exemple, le champ contenant une case à cocher doit être nommé `AF_CHECKBOX_XFO`.
 
@@ -279,7 +279,7 @@ Vous pouvez également sélectionner un modèle de formulaire lorsque vous crée
    >
    >Sous l’onglet Modèle de formulaire, veillez à sélectionner **Schéma** ou **Aucun** dans la liste déroulante **Choisir parmi**. **[!UICONTROL Les documents d’enregistrement ne sont pas pris en charge dans le cadre de formulaires basés sur XFA ou de formulaires adaptatifs auxquels un modèle de formulaire est appliqué.]**
 
-1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
+1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
    **Aucun** Sélectionnez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
 
@@ -308,15 +308,15 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 
 Pour localiser les informations d’image de marque que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’mage graphique du document d’enregistrement, procédez comme suit :
 
-1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis sélectionnez ![configure](assets/configure.png).
-1. Sélectionner ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
+1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis ![Configurer](assets/configure.png).
+1. Sélectionnez ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement apparaît sous la liste déroulante Modèle.
 
    ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur AEM Forms, vous devez au préalable télécharger le fichier XDP sur votre serveur AEM Forms.
 
-1. Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés suivantes s’affichent dans l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
+1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affiche dans l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
 
    * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
    * **Titre du formulaire**
@@ -354,9 +354,9 @@ Pour localiser les informations d’image de marque que vous saisissez dans l’
    </proto>
    ```
 
-1. Pour enregistrer les modifications de marque, sélectionnez Terminé.
+1. Pour enregistrer les modifications d’image de marque, appuyez sur Terminé.
 
-## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
+## Dispositions de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 
 Votre formulaire adaptatif peut être long et comporter plusieurs champs. Vous ne voudrez peut-être pas enregistrer un document d’enregistrement comme copie exacte du formulaire adaptatif. Vous pouvez maintenant choisir une disposition de tableau ou de colonne pour enregistrer un ou plusieurs panneaux de formulaires adaptatifs dans le document d’enregistrement PDF.
 
@@ -404,7 +404,7 @@ Les paramètres du document d’enregistrement d’un composant sont disponibles
 
   >[!NOTE]
   >
-  > La propriété Pagination n’est pas disponible pour les fragments de formulaire adaptatif.
+  > La propriété de pagination n’est pas disponible pour les fragments de formulaire adaptatif.
 
 Pour plus d’informations sur la manière d’appliquer des sauts de page et d’appliquer plusieurs gabarits de page dans un document d’enregistrement, voir [Appliquer un saut de page dans un document d’enregistrement](#apply-page-breaks-in-dor) et [Appliquer plusieurs gabarits de page à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
@@ -419,12 +419,12 @@ Vous pouvez appliquer des sauts de page dans un document d’enregistrement à l
 
 Pour appliquer un saut de page à un document d’enregistrement :
 
-1. Sélectionnez le panneau, puis sélectionnez ![Configurer](/help/forms/using/assets/configure.png)
+1. Sélectionnez le panneau, puis ![Configurer](/help/forms/using/assets/configure.png).
 1. Développez le **[!UICONTROL Document d’enregistrement]** pour afficher les propriétés.
 
-1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Placer]** champ .
-1. Sélectionner **[!UICONTROL Haut de la page suivante]** et sélectionnez **[!UICONTROL Sélectionner]**. Vous pouvez également sélectionner **[!UICONTROL Haut de la page]**, sélectionnez le gabarit, puis **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
-1. Sélectionner ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
+1. Dans la section **[!UICONTROL Pagination]**, sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
+1. Sélectionnez **[!UICONTROL Haut de la page suivante]**, puis **[!UICONTROL Sélectionner]**. Vous pouvez également sélectionner **[!UICONTROL Haut de la page]**, sélectionnez le gabarit de page, puis **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
+1. Sélectionnez ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 
 Le panneau sélectionné passe à la page suivante.
 
@@ -439,13 +439,13 @@ vous téléchargez un modèle XDP qui comprend quatre gabarits de page dans le s
 
 Pour appliquer les propriétés du deuxième gabarit de page à un panneau et les propriétés du troisième gabarit de page aux panneaux qui suivent, procédez comme suit :
 
-1. Sélectionnez le panneau auquel appliquer le deuxième gabarit, puis sélectionnez ![Configurer](assets/cmppr.png).
-1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Placer]** champ .
-1. Sélectionner **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit, puis **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le panneau pour appliquer le deuxième gabarit de page, puis sélectionnez ![Configurer](assets/cmppr.png).
+1. Dans la section **[!UICONTROL Pagination]**, sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
+1. Sélectionnez **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit de page, puis **[!UICONTROL Sélectionner]**.
 AEM Forms applique le deuxième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
-1. Dans le **[!UICONTROL Pagination]** , sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le **[!UICONTROL Après]** champ .
-1. Sélectionner **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit, puis **[!UICONTROL Sélectionner]**.
-1. Sélectionner ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
+1. Dans la section **[!UICONTROL Pagination]**, sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Après]**.
+1. Sélectionnez **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit de page, puis **[!UICONTROL Sélectionner]**.
+1. Sélectionnez ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 AEM Forms applique le troisième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
 
 >[!NOTE]

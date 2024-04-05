@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,15 +44,15 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 ### Considérations relatives à Java 11 {#java-considerations}
 
-Si vous exécutez Oracle Java 11 (ou généralement des versions de Java plus récentes que 8), des commutateurs supplémentaires doivent être ajoutés à votre ligne de commande lors du démarrage de l’AEM.
+Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM.
 
-* Les éléments suivants : `-add-opens` des commutateurs doivent être ajoutés pour empêcher les messages d’avertissement relatifs à l’accès aux réflexions dans la variable `stdout.log`
+* Les commutateurs - `-add-opens` suivants doivent être ajoutés pour éviter les messages d’avertissement relatifs à l’accès à la réflexion dans `stdout.log`.
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* En outre, vous devez utiliser la variable `-XX:+UseParallelGC` basculez pour atténuer tout problème de performances potentiel.
+* Vous devez également utiliser le commutateur `-XX:+UseParallelGC` afin de limiter tous les problèmes de performance potentiels.
 
 Voici à quoi doivent ressembler les paramètres supplémentaires JVM au démarrage d’AEM sur Java 11 :
 
@@ -66,7 +66,7 @@ Enfin, si vous exécutez une instance mise à jour d’AEM 6.3, assurez-vous qu
 
 ## Modes d’exécution {#run-modes}
 
-**Modes d’exécution** vous permet d’ajuster votre instance AEM à des fins spécifiques ; par exemple, création ou publication, test, développement, intranet, etc. Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. Cet exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc. Cela peut s’avérer particulièrement utile pour les installations prêtes pour la production lorsque vous souhaitez maintenir votre installation légère et sans exemple de contenu. Pour en savoir plus, voir :
+Les **modes d’exécution** vous permettent d’ajuster votre instance d’AEM à des fins spécifiques. Par exemple, pour la création ou la publication, le test, le développement, l’intranet et plus encore. Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. Cet exemple de contenu est défini avant la création du démarrage rapide et peut inclure des packages, des configurations, etc. Cela peut s’avérer particulièrement utile pour les installations prêtes pour la production lorsque vous souhaitez maintenir votre installation légère et sans exemple de contenu. Pour en savoir plus, voir :
 
 * [Modes d’exécution](/help/sites-deploying/configure-runmodes.md)
 
@@ -142,7 +142,7 @@ Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de comma
 
 ## Redéfinition de l’emplacement du répertoire de travail temporaire {#redefining-the-location-of-the-temporary-work-directory}
 
-L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple, lors de la création de modules.
+L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple lors de la création de packages.
 
 Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple si vous avez besoin d’un répertoire avec plus d’espace libre), définissez un chemin * `<new-tmp-path>` * en ajoutant le paramètre JVM :
 

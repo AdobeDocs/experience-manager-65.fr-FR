@@ -11,13 +11,13 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 # Développeur d’AEM Commerce {#develop}
 
-Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets d’AEM. Commencez par les examiner :
+Le développement de projets AEM Commerce basés sur Commerce Integration Framework (CIF) pour AEM suit les mêmes règles et bonnes pratiques que les autres projets d’AEM. Veuillez d’abord examiner les éléments suivants :
 
 - [Guide de l’utilisateur pour le développement d’AEM 6.5](/help/sites-developing/getting-started.md)
 - [Concepts de base d’AEM](/help/sites-developing/the-basics.md)
@@ -30,7 +30,7 @@ Un environnement de développement local est recommandé pour travailler avec de
 
 >[!NOTE]
 >
->Les instructions suivantes vous aident à configurer un environnement de développement d’AEM local pour AEM Commerce à l’aide de CIF avec la cible d’action pour la version 6.5 d’AEM). Si vous utilisez AEM as a Cloud Service, reportez-vous au [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr) la documentation.
+>Les instructions suivantes vous aident à configurer un environnement de développement d’AEM local pour AEM Commerce à l’aide de CIF avec la cible d’action pour la version 6.5 d’AEM). Si vous utilisez AEM as a Cloud Service, reportez-vous à la documentation [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=fr).
 
 Le module complémentaire AEM Commerce pour AEM 6.5, alias CIF, est également disponible pour le développement local et est fourni sous la forme d’un package AEM. Il peut être téléchargé à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en tant que pack de fonctionnalités.
 

@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-description: Découvrez comment utiliser les Admin Console disponibles dans Adobe Experience Manager.
+description: Découvrez comment utiliser les consoles d’administration disponibles dans Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
-# Admin Consoles{#admin-consoles}
+# Consoles d’administration{#admin-consoles}
 
-Par défaut, la possibilité de passer à l’IU classique au moyen des consoles d’administration est désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lorsque vous survoliez certaines icônes de la console, permettant d’accéder à l’IU classique, ne s’affichent plus.
+Par défaut, la possibilité de basculer vers l’interface utilisateur classique au moyen des consoles d’administration est désactivée. Par conséquent, les icônes pop-up qui s’affichaient lorsque vous survoliez certaines icônes de console, permettant d’accéder à l’interface utilisateur classique, ne s’affichent plus.
 
 Chaque console qui possède une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche à nouveau lors du survol du curseur sur l’icône de la console.
 
-Dans cet exemple, vous réactivez l’IU classique pour la console Sites.
+Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
-1. À l’aide de CRXDE Lite, recherchez le noeud correspondant au Admin Console pour lequel vous souhaitez réactiver l’IU classique. Il se trouve sous :
+1. À l’aide de CRXDE Lite, recherchez le nœud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’IU classique. Il se trouve sous :
 
    `/libs/cq/core/content/nav`
 
@@ -46,7 +46,7 @@ Dans cet exemple, vous réactivez l’IU classique pour la console Sites.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. La variable **IU classique** est à nouveau disponible en tant qu’option contextuelle dans le Admin Console.
+1. L’option **IU classique** est à nouveau disponible sous la forme d’une option contextuelle dans la console d’administration.
 
    ![pption contextuelle de l’UI classique](assets/syui-01-2019-02-27-15-16-55.png)
 

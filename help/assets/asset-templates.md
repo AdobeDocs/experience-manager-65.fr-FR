@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1576'
-ht-degree: 55%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Les modèles de ressources sont une classe spéciale de ressources qui facilite 
 
 Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire le coût de gestion des canaux papier et numériques et de proposer des expériences globales et cohérentes sur ces canaux.
 
-En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de documents marketing, notamment des brochures, des prospectus, des cartes postales, des cartes de visite, etc., afin de transmettre votre message marketing à vos clients de manière lucide. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Par-dessus tout, vous pouvez diffuser facilement des expériences digitales et papier simultanément afin de fournir une expérience cohérente et intégrée aux utilisateurs.
+En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de documents marketing, notamment des brochures, des prospectus, des cartes postales, des cartes de visite, etc., afin de transmettre votre message marketing à vos clients de manière lucide. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Surtout, vous pouvez facilement proposer simultanément des expériences numériques et imprimées pour offrir une expérience cohérente et intégrée aux utilisateurs et utilisatrices.
 
 Si les modèles de ressources sont pour la plupart des fichiers [!DNL Adobe InDesign], il n’est pas nécessaire de maîtriser [!DNL Adobe InDesign] pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre [!DNL Adobe InDesign] modèle avec vos champs de produit que vous devez normalement utiliser lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour qu’[!DNL Adobe InDesign] puisse traiter vos modifications, vous devez configurer [!DNL Experience Manager Assets] pour qu’il intègre [!DNL Adobe InDesign Server].
 
@@ -28,7 +28,7 @@ La possibilité de modifier des modèles [!DNL Adobe InDesign] dans l’interfac
 Avec les modèles de ressources, vous pouvez réaliser les choses suivantes :
 
 * Modifier des champs de modèle modifiables depuis l’interface Web
-* Contrôlez le style de base du texte, par exemple la taille de police, le style et le type au niveau de la balise.
+* Contrôlez les paramètres de base de style du texte, par exemple, la taille, le style et le type de police au niveau des balises.
 * Modifier les images du modèle à l’aide du sélecteur de contenu
 * Prévisualiser les modifications du modèle
 * Fusionnez plusieurs fichiers de modèle afin de pouvoir créer un artefact multi-page.
@@ -39,7 +39,7 @@ Vous pouvez exporter le fichier mis à jour dans le dossier parent au format IND
 
 ## Création d’une pièce jointe {#creating-a-collateral}
 
-Supposons que vous souhaitiez créer des documents numériques imprimables, tels que des brochures, prospectus et publicités, pour une campagne à venir et les partager avec les magasins de vente à l’échelle mondiale. La création de documents reposant sur un modèle permet d’offrir une expérience client unifiée sur l’ensemble des canaux. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme [!DNL InDesign], et les charger vers [!DNL Experience Manager Assets] pour vous. Avant de créer une pièce jointe, vous devez charger un ou plusieurs modèles INDD et les rendre disponibles dans [!DNL Experience Manager] à l&#39;avance.
+Imaginez un scénario dans lequel vous souhaitez créer des supports numériques imprimables, tels que des brochures, des dépliants et des publicités pour une campagne à venir, et les partager avec les magasins d’usine du monde entier. La création de supports basés sur un modèle permet d’offrir une expérience client unifiée sur tous les canaux. Les graphistes peuvent créer des modèles pour la campagne (document d’une seule page ou de plusieurs pages) à l’aide d’une solution de création, comme [!DNL InDesign], et les charger vers [!DNL Experience Manager Assets] pour vous. Avant de créer une pièce jointe, vous devez charger un ou plusieurs modèles INDD et les rendre disponibles dans [!DNL Experience Manager] à l&#39;avance.
 
 1. Dans le [!DNL Experience Manager] interface, sélectionnez [!UICONTROL Ressources].
 
@@ -57,11 +57,11 @@ Supposons que vous souhaitiez créer des documents numériques imprimables, tels
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Balises]** et sélectionnez une ou plusieurs balises pour la brochure. Cliquez sur **[!UICONTROL Confirmer]** pour confirmer votre sélection.
-1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue confirme la création d’une brochure. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode Édition.
+1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue confirme qu’une nouvelle brochure est créée. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir la brochure en mode Édition.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   Vous pouvez également fermer la boîte de dialogue et accéder au dossier dans la page Modèles à laquelle vous avez commencé pour afficher la brochure que vous avez créée. Le type de document apparaît sur sa miniature en mode Carte. Par exemple, dans ce cas, le mot [!UICONTROL Brochure] est affiché dans la miniature.
+   Vous pouvez également fermer la boîte de dialogue et accéder au dossier de la page Modèles avec lequel vous avez commencé pour afficher la brochure que vous avez créée. Le type d’élément apparaît sur sa vignette en mode carte. Par exemple, dans ce cas, le mot [!UICONTROL Brochure] est affiché dans la miniature.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
@@ -80,7 +80,7 @@ Vous pouvez modifier une pièce jointe immédiatement après sa création. Vous 
 
    L’outil de recherche de ressources et l’éditeur de texte s’affichent à gauche de la page. L’éditeur de texte s’ouvre par défaut.
 
-   Utilisez l’éditeur de texte pour modifier le texte que vous souhaitez afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de la police au niveau de la balise.
+   Utilisez l’éditeur de texte pour modifier le texte que vous souhaitez afficher dans le champ de texte. Vous pouvez modifier la taille, le style, la couleur et le type de police au niveau de la balise.
 
    Pour utiliser l’outil de recherche de ressources, vous pouvez rechercher des images dans [!DNL Experience Manager Assets] et remplacez les images modifiables dans le modèle par les images de votre choix.
 
@@ -96,7 +96,7 @@ Vous pouvez modifier une pièce jointe immédiatement après sa création. Vous 
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
-   Vous pouvez modifier les propriétés du texte, par exemple le style, la couleur et la taille de la police à l’aide des options fournies.
+   Vous pouvez modifier les propriétés de texte, par exemple la taille, la couleur ou le style de police à l’aide des options fournies.
 
 1. Sélectionner **[!UICONTROL Aperçu]** pour pouvoir prévisualiser les modifications de texte.
 
@@ -106,7 +106,7 @@ Vous pouvez modifier une pièce jointe immédiatement après sa création. Vous 
 
    ![chlimage_1-114](assets/chlimage_1-319.png)
 
-   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises et en fonction de leur état de publication. Vous pouvez parcourir le référentiel d’[!DNL Experience Manager Assets] et accéder à l’emplacement de l’image souhaitée.
+   Vous pouvez également rechercher des images à l’aide de mots-clés, de balises ou selon leur statut de publication. Vous pouvez parcourir le référentiel d’[!DNL Experience Manager Assets] et accéder à l’emplacement de l’image souhaitée.
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
@@ -130,7 +130,7 @@ Vous pouvez modifier une pièce jointe immédiatement après sa création. Vous 
    >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], reportez-vous à la section [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
-1. La pièce jointe est créée dans le dossier avec lequel vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
+1. La pièce jointe est créée dans le dossier avec lequel vous avez commencé. Pour afficher les rendus, ouvrez l’élément et choisissez **[!UICONTROL Rendus]** de la liste GlobalNav.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
@@ -158,10 +158,10 @@ Vous pouvez modifier une pièce jointe immédiatement après sa création. Vous 
 
    Vous pouvez parcourir le référentiel ou les collections d’[!DNL Experience Manager Assets], puis accéder à l’emplacement des modèles souhaités et les sélectionner pour les fusionner.
 
-   Vous pouvez appliquer différents filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction du type de fichier ou des balises.
+   Vous pouvez appliquer divers filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction du type de fichier ou des balises.
 
 1. Sélectionner **[!UICONTROL Suivant]** dans la barre d’outils.
-1. Dans le **[!UICONTROL Aperçu et réorganisation]** réorganisez les modèles si nécessaire et prévisualisez la sélection des modèles à fusionner. Dans la barre d’outils, sélectionnez **[!UICONTROL Suivant]**.
+1. Dans l’écran **[!UICONTROL Aperçu et réorganisation]**, réorganisez les modèles si nécessaire et prévisualisez la sélection de modèles à fusionner. Dans la barre d’outils, sélectionnez **[!UICONTROL Suivant]**.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Configurer la sortie de formulaire
-description: Découvrez comment configurer la sortie de formulaire. Pour configurer la sortie du formulaire et activer la fonction, utilisez les scripts personnalisés avant l’envoi du formulaire.
+description: Découvrez comment configurer la sortie de formulaire. Pour configurer la sortie du formulaire et activer la fonctionnalité, utilisez les scripts personnalisés avant l’envoi du formulaire.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -10,41 +10,41 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 # Configurer la sortie de formulaire{#configuring-form-output}
 
-## Spécifiez le type de sortie de HTML renvoyée au navigateur web. {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Définition du type de sortie HTML renvoyée au navigateur web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
-1. Dans Administration Console, cliquez sur Services > Forms.
-1. Sous Sortie de formulaire, sélectionnez l’une des options suivantes dans la liste Type de sortie :
+1. Dans la console d’administration, cliquez sur Services > Formulaires.
+1. Sous Sortie de formulaire, dans la liste Type de sortie, sélectionnez l’une des options suivantes :
 
-   **HTML complet :** Pour effectuer le rendu du formulaire dans des balises de HTML complet (une page de HTML complète). Cette valeur est la valeur par défaut.
+   **HTML complet :** pour effectuer le rendu du formulaire avec des balises HTML complètes (page HTML complète). Il s’agit de la valeur par défaut.
 
    **Corps de formulaire :** pour effectuer le rendu du formulaire avec des balises `<BODY>` (page HTML incomplète).
 
 1. Cliquez sur Enregistrer.
 
-## Spécifiez l’emplacement de rendu du contenu du PDF. {#specify-the-location-where-pdf-content-is-rendered}
+## Définir l’emplacement du rendu du contenu PDF {#specify-the-location-where-pdf-content-is-rendered}
 
-1. Sous Sortie de formulaire, sélectionnez l’une des options suivantes dans la liste Rendu au :
+1. Dans Sortie de formulaire, dans la liste Rendu vers, sélectionnez l’une des options suivantes :
 
-   **Client :** Pour effectuer le rendu des PDF forms dans Adobe Acrobat ou Adobe Reader. Le rendu côté client améliore les performances d’AEM forms et s’applique uniquement à la transformation PDFForm.
+   **Client :** pour effectuer le rendu des PDF forms dans Adobe Acrobat ou Adobe Reader. Le rendu côté client améliore les performances d’AEM Forms et ne s’applique qu’à la transformation PDFForm.
 
-   **Serveur :** Pour effectuer le rendu des PDF forms sur le serveur d’applications.
+   **Serveur :** pour effectuer le rendu des PDF forms sur le serveur d’applications.
 
-   **Automatique :** pour effectuer le rendu du formulaire au format PDF à l’emplacement indiqué par la valeur de configuration `dynamicRender` du formulaire XDP. Cette valeur est la valeur par défaut.
+   **Automatique :** pour effectuer le rendu du formulaire au format PDF à l’emplacement indiqué par la valeur de configuration `dynamicRender` du formulaire XDP. Il s’agit de la valeur par défaut.
 
 1. Cliquez sur Enregistrer.
 
-## Configuration de l’appel de scripts personnalisés avant envoi de formulaire {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configuration de l’appel de scripts personnalisés avant l’envoi de formulaire {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Pour activer cette fonction, effectuez les étapes suivantes :
 
-1. Connectez-vous à Administration Console.
-1. Accédez à **Services** > **formulaires**.
+1. Connectez-vous à la console d’administration.
+1. Accédez à **Services** > **Forms**.
 1. Définissez le type de sortie sur Corps de formulaire.
 1. Enregistrez les paramètres.
 1. Saisissez une variable JavaScript, (__CUSTOM_SCRIPTS_VERSION) dans l’en-tête du code HTML et donnez-lui la valeur 1.

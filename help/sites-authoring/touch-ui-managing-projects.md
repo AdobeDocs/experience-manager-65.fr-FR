@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 79%
+ht-degree: 98%
 
 ---
 
@@ -33,14 +33,14 @@ Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** 
 
 ## Création d’un projet {#creating-a-project}
 
-Pour créer un projet, procédez comme suit.
+Suivez ces étapes pour créer un projet.
 
-1. Dans le **Projets** console, cliquez sur **Créer** pour ouvrir le **Créer un projet** assistant.
+1. Dans la console **Projets**, cliquez sur **Créer** pour ouvrir l’assistant **Créer un projet**.
 1. Sélectionnez le modèle, puis cliquez sur **Suivant**. Vous pouvez en savoir plus sur les modèles de projet standard [ici.](/help/sites-authoring/projects.md#project-templates)
 
    ![Assistant Créer un projet](assets/create-project-wizard.png)
 
-1. Définissez la variable **Titre** et **Description** et ajoutez une **Miniature** image si nécessaire. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent.
+1. Définissez le **titre** et la **description**, puis ajoutez une **miniature** s’il y a lieu. Vous pouvez également ajouter ou supprimer des utilisateurs et définir le groupe auquel ils appartiennent.
 
    ![Étape Propriétés de l’assistant](assets/create-project-wizard-properties.png)
 
@@ -50,12 +50,12 @@ La procédure de création d’un projet est la même pour tous les modèles de 
 
 ### Association de ressources à un projet {#associating-resources-with-your-project}
 
-Les projets vous permettent de regrouper des ressources dans une seule entité pour les gérer dans leur ensemble. Par conséquent, vous devez associer des ressources à votre projet. Ces ressources sont regroupées dans le projet sous la forme **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits à la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité afin de les gérer dans leur ensemble. Par conséquent, vous devez associer des ressources à votre projet. Ces ressources sont regroupées dans le projet sous la forme **Mosaïques**. Les types de ressources que vous pouvez ajouter sont décrits à la section [Mosaïques de projet](/help/sites-authoring/projects.md#project-tiles).
 
 Pour associer des ressources à votre projet :
 
 1. Ouvrez votre projet à partir de la console **Projets**.
-1. Cliquez sur **Ajouter une mosaïque** et sélectionnez la mosaïque à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
+1. Cliquez sur **Ajouter une mosaïque** et sélectionnez la vignette à lier à votre projet. Vous pouvez sélectionner plusieurs types de mosaïque.
 
    ![Ajouter une mosaïque](assets/project-add-tile.png)
 
@@ -69,15 +69,15 @@ Pour ajouter des éléments à une mosaïque, procédez comme suit :
 
 1. Dans **Projets**, accédez au projet, puis cliquez sur l’icône en forme de chevron descendant en haut à droite de la mosaïque à laquelle vous souhaitez ajouter un élément et sélectionnez l’option appropriée.
 
-   * L’option dépend du type de mosaïque. Par exemple, elle peut être **Créer une tâche** pour le **Tâche** ou **Démarrer le processus** pour le **Workflows** mosaïque.
+   * L’option dépend du type de mosaïque. Par exemple, cela peut être **Créer une tâche** pour la mosaïque **Tâches** ou **Démarrer le workflow** pour la mosaïque **Workflows**.
 
    ![Chevron sur la mosaïque](assets/project-tile-create-task.png)
 
-1. Ajoutez l’élément à la mosaïque comme vous le feriez lors de la création d’une mosaïque. Les mosaïques de projets sont décrites [ici.](/help/sites-authoring/projects.md#project-tiles)
+1. Ajoutez un élément à la mosaïque comme vous le feriez pour créer une mosaïque. Les mosaïques de projets sont décrites [ici.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Affichage des informations du projet {#viewing-project-info}
 
-L’objectif principal des projets est de regrouper les informations associées dans un seul endroit afin de les rendre plus accessibles et exploitables. Vous pouvez accéder à ces informations de plusieurs façons.
+L’objectif principal des projets est de regrouper les informations associées dans un seul endroit afin de les rendre plus accessibles et exploitables. Vous pouvez accéder à ces informations de différentes manières.
 
 ### Ouverture d’une mosaïque {#opening-a-tile}
 
@@ -97,7 +97,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, procédez comme suit.
 
-1. Dans le **Projets** console, cliquez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
+1. Dans la console **Projets**, sélectionnez **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
    ![Sélection du mode Chronologie](assets/projects-timeline-rail.png)
 2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher la chronologie.
    ![Mode Chronologie du projet](assets/project-timeline-view.png)
@@ -120,7 +120,7 @@ Plusieurs options permettent d’organiser vos projets de manière à faciliter 
 
 Vous pouvez créer des dossiers dans la console **Projets** pour regrouper et organiser des projets similaires.
 
-1. Dans le **Projets** clic sur la console **Créer** puis **Créer un dossier**.
+1. Dans la console **Projets**, cliquez sur **Créer**, puis sur **Créer un dossier**.
 
    ![Créer un dossier](assets/project-create-folder.png)
 
@@ -132,7 +132,7 @@ Vous pouvez désormais créer des projets dans ce dossier. Vous pouvez créer pl
 
 ### Désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez marquer un projet comme inactif s’il est terminé, mais vous souhaitez tout de même conserver les informations le concernant. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
+Vous pouvez vouloir désactiver un projet si vous l’avez terminé mais que vous souhaitez conserver ses informations. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
 
 Pour rendre un projet inactif, procédez comme suit.
 
@@ -148,7 +148,7 @@ Pour rendre un projet inactif, procédez comme suit.
 
 Pour supprimer un projet, procédez comme suit.
 
-1. Accédez au niveau supérieur de la **Projets** console.
+1. Accédez au niveau supérieur de la console **Projets**.
 1. Sélectionnez votre projet dans la console.
 1. Cliquez sur **Supprimer** dans la barre d’outils.
 1. AEM peut supprimer ou modifier les données associées au projet lors de la suppression du projet. Sélectionnez les options dont vous avez besoin dans la boîte de dialogue **Supprimer le projet**.

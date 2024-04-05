@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Les communications interactives centralisent et gèrent la création, l’assemb
 
 ## Fonctionnalités essentielles {#key-capabilities}
 
-Voici les principales fonctionnalités des communications interactives :
+Les principales fonctionnalités des communications interactives sont indiquées ci-après :
 
-- Intégration prête à l’emploi avec le modèle de données de formulaire pour permettre un accès facile et simplifié aux bases de données principales et à d’autres systèmes CRM, tels que MS® Dynamics
-- Interface de création intégrée pour les canaux d’impression et web avec possibilité de générer automatiquement un canal web à partir du canal d’impression
-- Graphiques pour présenter des informations dans des formats visuels facilement compréhensibles sur papier et sur le web
+- Intégration prête à l’emploi au modèle de données de formulaire pour permettre un accès facile et simplifié aux bases de données back-end et à d’autres systèmes CRM tels que MS® Dynamics.
+- Interface de création intégrée pour les canaux d’impression et Web avec fonction de génération automatique d’un canal Web à partir du canal d’impression.
+- Graphiques de présentation des informations dans des formats visuels facilement compréhensibles sur papier et sur le Web.
 - Les fragments de document prennent en charge l’éditeur de règles et le modèle de données de formulaire.
 - L’interface utilisateur de l’agent affiche un aperçu web et un aperçu avant impression de la communication interactive.
 - Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
@@ -46,19 +46,19 @@ Pour créer une communication interactive, préparez les [blocs de construction]
 1. Spécifiez le [modèle de données de formulaire](/help/forms/using/data-integration.md), le service de préremplissage et les [modèles des canaux d’impression et web](/help/forms/using/web-channel-print-channel.md). Vous pouvez choisir de générer le canal web à partir du canal d’impression.
 
 1. Via [l’interface glisser-déposer](/help/forms/using/introduction-interactive-communication-authoring.md), ajoutez des fragments de document, des images, des composants des canaux d’impression et web de la communication interactive selon les besoins.
-1. Configurez les propriétés des composants insérés, par exemple :
+1. Configurez les propriétés suivantes des composants insérés :
 
    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
    1. [Tableaux](/help/forms/using/create-interactive-communication.md#tables) (y compris les fragments de mise en page).
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Prévisualisez les canaux web et d’impression et, au besoin, modifiez la communication interactive.
-1. L’agent utilise l’interface utilisateur de l’agent pour [préparer la communication interactive](/help/forms/using/prepare-send-interactive-communication.md) pour l’envoyer au destinataire/post-traitement.
+1. Prévisualisez les canaux Web et d’impression et, si nécessaire, modifiez la communication interactive.
+1. L’agent utilise l’interface utilisateur de l’agent pour [préparer la communication interactive](/help/forms/using/prepare-send-interactive-communication.md) en vue de son envoi au ou à la destinataire/en post-traitement.
 
 ### Blocs de création {#buildingblocks}
 
-Vous trouverez ci-dessous les blocs de création nécessaires à la création d’une communication interactive :
+Les blocs de création nécessaires à la création d’une communication interactive sont indiqués ci-après :
 
 - [Modèle de données de formulaire](/help/forms/using/data-integration.md)
 - [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
@@ -83,7 +83,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Impression</td>
   </tr>
   <tr>
-   <td>Schéma</td>
+   <td>Schema</td>
    <td>Modèle de données de formulaire </td>
    <td>Dictionnaire de données </td>
   </tr>
@@ -108,13 +108,13 @@ La communication interactive est l’approche par défaut et recommandée pour c
   </tr>
   <tr>
    <td>Graphiques</td>
-   <td>Graphiques pris en charge dans les canaux papier et web</td>
+   <td>Graphiques pris en charge dans les canaux d’impression et web</td>
    <td>Pas de prise en charge</td>
   </tr>
   <tr>
    <td>Thèmes</td>
-   <td>Utilisation de thèmes pour définir le style du canal web</td>
-   <td>Ne prend pas en charge les thèmes</td>
+   <td>Utilise des thèmes pour définir le style du canal web.</td>
+   <td>Ne prend pas en charge les thèmes.</td>
   </tr>
    <tr>
    <td>Brouillons</td>
@@ -142,7 +142,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Pris en charge</td>
   </tr>
   <tr>
-   <td>Signature de l’agent</td>
+   <td>Signature de l’agent ou de l’agente</td>
    <td>Pas de prise en charge</td>
    <td>Pris en charge</td>
   </tr>

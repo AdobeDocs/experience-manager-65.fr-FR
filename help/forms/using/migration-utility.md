@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1736'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,19 +28,19 @@ L’utilitaire de migration convertit les [ressources des formulaires adaptatifs
 
 >[!NOTE]
 >
->S’il existe une mise à niveau dynamique pour les actifs de Correspondence Management, vous pouvez exécuter la migration à chaque importation des actifs. Pour la migration de Correspondence Management, le package de compatibilité des formulaires doit être installé.
+>Dans le cas d’une mise à niveau dynamique, pour les ressources de Correspondence Management, vous pouvez exécuter la migration à chaque importation des ressources. Pour la migration de Correspondence Management, le package de compatibilité des formulaires doit être installé.
 
 ## Approche de la migration {#approach-to-migration}
 
 Vous pouvez effectuer une [mise à niveau](../../forms/using/upgrade.md) vers la dernière version d’AEM Forms 6.5 à partir d’AEM Forms 6.4, 6.3 ou 6.2, ou effectuer une nouvelle installation. Selon que vous avez mis à niveau votre installation précédente ou procédé à une nouvelle installation, vous devez effectuer l’une des opérations suivantes :
 
-**En cas de mise à niveau statique**
+**Dans le cas d’une mise à niveau statique**
 
 Si vous avez effectué une mise à niveau statique, l’instance mise à niveau contient déjà les ressources et les documents. Toutefois, avant de pouvoir utiliser les ressources et les documents, vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) (comprend le package de compatibilité Correspondence Management).
 
 Vous devez ensuite mettre à jour les ressources et les documents en [exécutant l’utilitaire de migration](#runningmigrationutility).
 
-**S’il existe une installation dynamique**
+**Dans le cas d’une installation dynamique**
 
 S’il s’agit d’une nouvelle installation, afin de pouvoir utiliser les ressources et les documents, vous devez installer le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) (comprend le package de compatibilité Correspondence Management).
 
@@ -92,7 +92,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
 1. Procédez comme suit pour effectuer la migration :
 
-   * Pour migrer **ressources**, sélectionnez Migration des ressources AEM Forms et, dans l’écran suivant, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
+   * Pour migrer les **ressources**, sélectionnez Migration des ressources d’AEM Forms et dans l’écran suivant, sélectionnez **Lancer la migration**. Les éléments suivants sont migrés :
 
       * Formulaires adaptatifs
       * Fragments de document
@@ -104,18 +104,18 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
    >
    >Pendant la migration des ressources, des messages d’avertissement tels que « Conflit détecté pour... » peuvent s’afficher. Ces messages indiquent que les règles de certains composants des formulaires adaptatifs n’ont pas pu être migrées. Par exemple, si le composant possède un événement qui contient à la fois des règles et des scripts, si les règles se produisent après un script, aucune des règles du composant n’est migrée. Vous pouvez [migrer ces règles en ouvrant l’éditeur de règles](#migrate-rules) dans la création de formulaires adaptatifs.
 
-   * Pour migrer les composants personnalisés de formulaire adaptatif, sélectionnez **Migration des composants personnalisés de Forms adaptatif** et dans la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
+   * Pour migrer les composants personnalisés des formulaires adaptatifs, sélectionnez **Migration des composants personnalisés des formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
       * Composants personnalisés écrits pour les formulaires adaptatifs
       * Superpositions de composants, le cas échéant.
 
-   * Pour migrer des modèles de formulaires adaptatifs, sélectionnez **Migration de modèles de Forms adaptatif** et dans la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
+   * Pour migrer les modèles de formulaires adaptatifs, sélectionnez **Migration des modèles de formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
       * Les modèles de formulaire adaptatif créés sous `/apps` ou `/conf` à l’aide de l’éditeur de modèles AEM.
 
    * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous `/conf`). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans `/etc` sont déplacés vers `/conf`. Si aucune de vos personnalisations de services cloud ne dépendent de chemins d’accès existants (`/etc`), Adobe recommande d’exécuter l’utilitaire de migration après la mise à niveau vers la version 6.5 et d’utiliser l’interface utilisateur tactile de la configuration cloud pour tout travail ultérieur. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (`/conf`), puis exécutez l’utilitaire de migration.
 
-   Pour migrer **Services cloud AEM Forms**, qui comprend les éléments suivants, sélectionnez Migration de la configuration cloud AEM Forms (la migration de la configuration cloud est indépendante du package de compatibilité AEMFD). Sélectionnez Migration des configurations du cloud AEM Forms puis, sur la page Migration de la configuration, sélectionnez **Démarrer la migration**:
+   Pour migrer les **services cloud AEM Forms**, qui comprennent les éléments suivants, sélectionnez Migration de la configuration cloud AEM Forms (la migration de la configuration cloud est indépendante du package de compatibilité AEMFD). Sélectionnez Migration des configurations cloud AEM Forms, puis dans la page Migration de la configuration, sélectionnez **Démarrer la migration**.
 
    * Services cloud du modèle de données de formulaire
 
@@ -153,13 +153,13 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
 Ces composants peuvent être migrés en les ouvrant dans l’éditeur de règles dans l’éditeur de formulaires adaptatifs.
 
-* Pour migrer des règles et des scripts (non requis lors de la mise à niveau à partir de la version 6.3) dans des composants personnalisés, sélectionnez Migration des composants personnalisés de Forms adaptatif puis, dans l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
+* Pour migrer les règles et les scripts (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3) dans les composants personnalisés, sélectionnez Migration des composants personnalisés des formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
    * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
 
    * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
 
-* Pour migrer des modèles (non requis si vous effectuez une mise à niveau à partir des versions 6.3 et 6.4), sélectionnez Migration de modèles de Forms adaptatif, puis, dans l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
+* Pour migrer les modèles (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3 ou 6.4), sélectionnez Migration de modèles de formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
    * Anciens modèles : les modèles de formulaires adaptatifs créés sous /apps en utilisant AEM 6.1 Forms ou une version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
 

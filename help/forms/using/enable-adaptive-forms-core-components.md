@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 80%
+ht-degree: 88%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 80%
 
 L’activation des composants principaux des formulaires adaptatifs vous permet de commencer à créer, à publier et à diffuser des [formulaires adaptatifs basés sur les composants principaux](create-an-adaptive-form-core-components.md) et des [formulaires adaptatifs découplés](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) de votre environnement AEM Forms 6.5.
 
-Pour activer les composants principaux Forms adaptatifs sur votre environnement Forms 6.5 AEM, configurez et déployez une [AEM Archetype 41 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) basé sur un projet (avec les options de formulaire activées) sur toutes vos instances d’auteur et de publication.
+Pour activer les composants principaux des formulaires adaptatifs sur votre environnement AEM Forms 6.5, configurez et déployez un [archétype AEM 41 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) basé sur un projet (avec les options de formulaire activées) sur toutes vos instances de création et de publication.
 
-Cet article fournit des instructions détaillées sur la configuration et le déploiement d’AEM archetype 41 ou version ultérieure sur votre environnement Forms AEM 6.5 pour activer les composants principaux Forms adaptatif. Reportez-vous à la liste ci-dessous pour **AEM 6.5** versions compatibles pour activer les composants principaux Forms :
+Cet article fournit des instructions détaillées sur la configuration et le déploiement de l’archétype AEM 41 ou version ultérieure sur votre environnement AEM Forms 6.5 pour activer les composants principaux des formulaires adaptatifs. Vous pouvez vous référer à la liste ci-dessous pour les versions compatibles avec **AEM 6.5** pour activer les composants principaux de Forms :
 
 ## Conditions préalables requises {#prerequisites}
 

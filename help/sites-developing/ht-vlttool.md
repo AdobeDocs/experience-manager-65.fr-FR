@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Utilisation de l’outil VLT {#how-to-use-the-vlt-tool}
 
-L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires comme client du système de contrôle de code source (tel qu’un client Subversion (SVN)), offrant des opérations d’archivage, d’extraction et de gestion normales, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
+L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires à celles d’un client du système de contrôle de code source (tel qu’un client Subversion [SVN]), offrant des opérations normales d’archivage, d’extraction et de gestion, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
 
-L’outil VLT s’exécute à partir de la ligne de commande. Ce document décrit l’utilisation de l’outil, notamment la prise en main et l’obtention d’une aide, ainsi qu’une liste de tous les éléments [Commandes](#vlt-commands) et disponibles [options](#vlt-global-options).
+L’outil VLT s’exécute à partir de la ligne de commande. Ce document explique comment utiliser l’outil, notamment comment le démarrer et obtenir de l’aide. Il décrit également toutes les [commandes](#vlt-commands) et [options](#vlt-global-options) disponibles.
 
 ## Concepts et architecture {#concepts-and-architecture}
 
@@ -314,7 +314,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 | Commande | Commande abrégée | Description |
 | `export` |  | Exporte à partir d’un référentiel JCR (système de fichiers Vault) vers le système de fichiers local, sans fichiers de contrôle. |
 | `import` |  | Importe un système de fichiers local dans un référentiel JCR (système de fichiers Vault). |
-| `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : commencez par extraire le référentiel dans subversion.) |
+| `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : extrayez d’abord le référentiel dans Subversion.) |
 | `analyze` |  | Analyse les packages. |
 | `status` | `st` | Imprime le statut des fichiers et des répertoires de travail. |
 | `update` | `up` | Importe les modifications du référentiel dans la copie de travail. |
@@ -334,7 +334,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 
 ### Exportation {#export}
 
-Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Une &lt;jcr-path> peut être spécifié pour exporter uniquement une sous-arborescence.
+Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Vous pouvez spécifier un &lt;jcr-path> facultatif afin d’exporter une sous-arborescence uniquement.
 
 #### Syntaxe {#syntax}
 
@@ -441,7 +441,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom,id), par exemple, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, ID), par exemple `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | Sortie verbose |
 | `-q (--quiet)` | Imprime aussi petit que possible. |
 | `<localPaths> [<localPaths> ...]` | chemin local |
@@ -743,7 +743,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sync {#sync}
 
-Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. S’il est exécuté dans un passage en caisse vlt, il utilise le filtre et l’hôte respectifs pour configurer la synchronisation. S’il est exécuté en dehors d’un passage en caisse vlt, il enregistre le dossier actif pour synchronisation uniquement si le répertoire est vide.
+Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. Si elle est exécutée dans une extraction VLT, elle utilise le filtre et l’hôte respectifs pour configurer la synchronisation. Si elle est exécutée en dehors d’une extraction VLT, elle n’enregistre le dossier actif pour la synchronisation que si le répertoire est vide.
 
 #### Syntaxe {#syntax-18}
 
@@ -782,7 +782,7 @@ Le service de synchronisation Vault sert à synchroniser le contenu du référen
 
 >[!NOTE]
 >
->Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. En outre, le service ne peut être synchronisé qu’avec le système de fichiers local et ne peut pas être utilisé pour le développement à distance.
+>Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. Notez également que le service ne peut être synchronisé qu’avec le système de fichiers local et ne peut pas être utilisé pour le développement à distance.
 
 ### Installation du service à l’aide de VLT {#installing-the-service-using-vlt}
 
@@ -855,7 +855,7 @@ Une fois le service en cours d’exécution, il peut être configuré avec les p
 >
 >Le service peut être configuré avec la console web ou un nœud `sling:OsgiConfig` (portant le nom `com.day.jcr.sync.impl.VaultSyncServiceImpl`) dans le référentiel.
 >
->Lorsque vous utilisez AEM, il existe plusieurs méthodes de gestion des paramètres de configuration pour de tels services ; voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails.
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Configuration du dossier de synchronisation {#sync-folder-configuration}
 
@@ -945,4 +945,4 @@ Votre dossier local est désormais synchronisé avec le référentiel. La synchr
 
 >[!NOTE]
 >
->La fonction de synchronisation VLT ne prend en charge que les fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Il est donc possible d’utiliser la synchronisation Vault sur une extraction VLT par défaut.
+>La fonction de synchronisation VLT prend uniquement en charge des fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Il est donc possible d’utiliser la synchronisation Vault sur une extraction VLT par défaut.

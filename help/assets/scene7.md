@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2851'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Vous pouvez publier des ressources numériques dans Dynamic Media Classic comm
 Les composants Dynamic Media Classic suivants sont disponibles dans Experience Manager :
 
 * Zoom
-* Fenêtre déroulante (zoom)
+* Zoom sur la fenêtre déroulante
 * Modèle d’image
 * Image
 * Vidéo
@@ -175,7 +175,7 @@ Le composant **[!UICONTROL Image]** Dynamic Media Classic vous permet d’ajou
 
 **[!UICONTROL Paramètre prédéfini d’image]** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devez le rendre visible. Consultez la section [Gestion des paramètres prédéfinis d’image](/help/assets/managing-image-presets.md). Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**[!UICONTROL Format de sortie]** - Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez la section [Bonnes pratiques relatives aux paramètres prédéfinis d’image](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Format de sortie]** – Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez la section [Bonnes pratiques relatives aux paramètres prédéfinis d’image](/help/assets/managing-image-presets.md#image-preset-options).
 
 **[!UICONTROL Accentuation]** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détails dans les rubriques [Bonnes pratiques relatives aux paramètres prédéfinis d’image](/help/assets/managing-image-presets.md#image-preset-options) et [Bonnes pratiques relatives à l’accentuation](/help/assets/assets/sharpening_images.pdf).
 
@@ -274,7 +274,7 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche la [co
 
 ### Parcours du contenu dans l’interface utilisateur optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}
 
-Vous pouvez accéder à l’explorateur de contenu dans l’IU optimisée pour les écrans tactiles ou l’IU classique. Actuellement, l’optimisation pour les écrans tactiles présente la limite suivante :
+Vous pouvez accéder à l’explorateur de contenu dans l’IU optimisée pour les écrans tactiles ou l’IU classique. Actuellement, l’IU optimisée pour les écrans tactiles présente la limite suivante :
 
 * Les ressources FXG et Flash à partir de Dynamic Media Classic ne sont pas prises en charge.
 

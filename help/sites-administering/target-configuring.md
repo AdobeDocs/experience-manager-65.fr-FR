@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2122'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,8 @@ L’[assistant de souscription](/help/sites-administering/opt-in.md) qui [intèg
 
 Vous pouvez également configurer Adobe Target pour utiliser Adobe Target en tant que source de création de rapports lors du ciblage de contenu en configurant la configuration d’Analytics Cloud A4T.
 
-Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Sous Adobe Target, cliquez sur **Afficher les configurations**.
+Pour trouver la configuration et le framework de cloud, accédez à **Services cloud** via **Outils** > **Déploiement** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Sous Adobe Target, cliquez ou appuyez sur **Afficher les configurations**.
 
 ### Propriétés de configuration de Target configurée {#provisioned-target-configuration-properties}
 
@@ -241,7 +242,7 @@ Lorsque vous associez une page au framework, les pages enfants héritent de l’
 1. À l’aide des [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ou du [mode de sélection](/help/sites-authoring/basic-handling.md), sélectionnez **Afficher les propriétés.**
 1. Sélectionnez l’onglet **Services cloud**.
 1. Cliquez sur **Modifier**.
-1. Cliquez sur **Ajouter une configuration** under **Configurations de Cloud Service** et sélectionnez **Adobe Target**.
+1. Appuyez/cliquez sur **Ajouter une configuration** sous **Configurations du service cloud** et sélectionnez **Adobe Target**.
 
    ![Ajouter la configuration](assets/chlimage_1-165.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Importer et gérer des archives
-description: Découvrez comment importer et gérer des archives. Archives importe et gère les fichiers LCA créés dans Workbench. Vous pouvez importer, configurer, utiliser et supprimer une archive.
+title: Importation et gestion des archives
+description: Découvrez comment importer et gérer des archives. L’option Archives permet d’importer et de gérer les fichiers LCA créés dans Workbench. Vous pouvez importer, configurer, utiliser et supprimer une archive.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 1. Cliquez sur Parcourir pour localiser l’archive à importer puis sur Aperçu.
 1. Passez en revue la liste des ressources et des objets qui seront installés avec l’archive. Assurez-vous de l’absence de conflits avec des ressources, objets ou configurations de services existants, car il n’existe pas de fonctionnalité d’annulation.
 
-   Si vous choisissez d’importer les configurations de service, AEM forms importe tous les fichiers de configuration de processus (points de terminaison, profils de sécurité et paramètres de configuration de service) utilisés par les processus dans l’archive LCA.
+   Si vous choisissez d’importer les configurations de services, AEM Forms importe tous les fichiers de configuration de processus (points d’entrée, profils de sécurité et paramètres de configuration des services) utilisés par les processus dans l’archive LCA.
 
 1. Cliquez sur Importer.
 1. Vérifiez les résultats de l’import, puis cliquez sur Ignorer la configuration pour terminer le processus d’import ou sur Configurer pour configurer l’archive.
@@ -78,7 +78,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
      **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
 
-     **CREATE_VERSION_PERM :** Pour créer une version du service
+     **CREATE_VERSION_PERM :** création d’une version du service.
 
      **DELETE_VERSION_PERM :** suppression d’une version du service.
 
@@ -145,7 +145,7 @@ Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Arch
 
      **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
 
-     **CREATE_VERSION_PERM :** Pour créer une version du service
+     **CREATE_VERSION_PERM :** création d’une version du service.
 
      **DELETE_VERSION_PERM :** suppression d’une version du service.
 

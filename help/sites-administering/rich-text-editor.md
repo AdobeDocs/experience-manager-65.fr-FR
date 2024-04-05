@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Une fois ouvert (à l’aide d’un double clic lent), le contenu peut être mod
 
 * : modification en ligne avec une barre d’outils basiques dans l’IU tactile*
 
-Dans l’interface utilisateur classique, un double-clic lent sur le composant permet la modification en ligne et un contour orange met le contenu en surbrillance. Si l’outil de recherche de contenu est ouvert, une barre d’outils contenant les différentes options de mise en forme d’éditeur de texte enrichi s’affiche en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas et vous pouvez uniquement effectuer des modifications de base sur le texte.
+Dans l’UI classique, un double-clic lent sur le composant permet la modification en ligne et un contour orange met le contenu en surbrillance. Si l’outil de recherche de contenu est ouvert, une barre d’outils contenant les différentes options de mise en forme d’éditeur de texte enrichi s’affiche en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas et vous pouvez uniquement effectuer des modifications de base sur le texte.
 
 ### Modification en plein écran {#full-screen-editing}
 
@@ -183,7 +183,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 >
 >Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
->Pour plus d’informations, voir [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu](/help/sites-administering/rich-text-editor.md) de ce document et [Création de modèles de page](/help/sites-authoring/templates.md) et la variable [Documentation destinée aux développeurs sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+>Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation destinée aux développeurs et développeuses de composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >[!NOTE]
 >

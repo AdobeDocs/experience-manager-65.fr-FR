@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 
 Vous pouvez créer le contenu d’un courrier électronique dans AEM et le traiter dans les courriers électroniques Adobe Campaign. À cet effet, vous devez suivrez cette procédure :
 
-1. Créez une newsletter dans AEM depuis un modèle spécifique à Adobe Campaign.
+1. Créez une newsletter dans AEM à partir d’un modèle spécifique à Adobe Campaign.
 1. Sélectionnez [un service Adobe Campaign](#selectingtheadobecampaigncloudservice) avant de modifier le contenu pour accéder à toutes les fonctionnalités.
 1. Modifiez le contenu.
 1. Validez le contenu.
@@ -53,7 +53,7 @@ Ce document contient des instructions détaillées.
 
    >[!NOTE]
    >
-   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
+   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu Geometrixx à partir du partage de modules.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -82,7 +82,7 @@ En outre, vous devrez peut-être également sélectionner le modèle Adobe Camp
 
    >[!NOTE]
    >
-   >Veillez à cliquer sur **OK** ou **Appliquer** après avoir ajouté le service cloud. Cela permet à l’onglet **Adobe Campaign** de fonctionner correctement.
+   >Veillez à cliquer sur **OK** ou sur **Appliquer** après avoir ajouté le service cloud. Cela permet à l’onglet **Adobe Campaign** de fonctionner correctement.
 
 1. Si vous souhaitez appliquer un modèle de diffusion par e-mail spécifique (à partir d’Adobe Campaign), autre que le modèle d’**e-mail** par défaut, sélectionnez de nouveau **Propriétés de la page**. Sous l’onglet **Adobe Campaign**, entrez le nom interne du modèle de diffusion par e-mail dans l’instance Adobe Campaign associée.
 
@@ -112,8 +112,8 @@ Vous pouvez modifier le contenu d’un e-mail dans l’interface utilisateur cla
 
 Lorsque vous éditez votre contenu, vous pouvez insérer :
 
-* Des champs de contexte Adobe Campaign. Il s&#39;agit de champs que vous pouvez insérer dans votre texte qui s&#39;adaptera en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
-* Des blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfinis qui ne sont pas liés aux données du destinataire, comme le logo d’une marque ou un lien vers une page miroir.
+* Des champs de contexte Adobe Campaign. Ce sont des champs que vous pouvez insérer dans votre texte, qui seront adaptés en fonction des données du ou de la destinataire (par exemple, prénom, nom de famille ou données de dimension cible).
+* Des blocs de personnalisation Adobe Campaign. Ces blocs de contenu prédéfini ne sont pas liés aux données de la personne destinataire, tels que le logo d’une marque ou un lien vers une page miroir.
 
 Consultez [Composants d’Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) pour une description complète des composants de Campaign.
 
@@ -144,7 +144,7 @@ Consultez [Composants d’Adobe Campaign](/help/sites-classic-ui-authoring/class
 
 ### Prévisualisation d’une newsletter {#previewing-a-newsletter}
 
-Vous pouvez prévisualiser l’aspect de la newsletter et prévisualiser la personnalisation.
+Vous pouvez prévisualiser l’apparence de la newsletter et prévisualiser la personnalisation.
 
 1. Ouvrez la newsletter pour laquelle vous souhaitez afficher un aperçu et cliquez sur Aperçu (la loupe) pour réduire le sidekick.
 1. Cliquez sur l’une des icônes de client de messagerie pour découvrir comment se présente votre newsletter dans les différents clients de messagerie.

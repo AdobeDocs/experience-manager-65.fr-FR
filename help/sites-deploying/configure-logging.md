@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '650'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres globaux pour le service de journalisation centrale
 * la journalisation des données de requête ; une configuration de journalisation spécialisée pour les informations de requête
-* des paramètres spécifiques pour les services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
+* des paramètres spécifiques pour les services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -102,7 +102,7 @@ Le premier est un cas particulier car il contrôle à la fois les fichiers `requ
 
    * Écrit les messages dans `request.log` ou `access.log`.
 
-Ils peuvent être personnalisés si nécessaire, bien que la configuration standard soit adaptée à la plupart des installations.
+Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations.
 
 Les autres paires adoptent la configuration standard :
 
@@ -132,13 +132,13 @@ Les autres paires adoptent la configuration standard :
 
 Vous pouvez définir votre propre paire enregistreur/rédacteur :
 
-1. Création d’une instance de la configuration d’usine [Configuration de l’enregistreur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Créez une instance de la configuration d’usine [Configuration de l’enregistreur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Spécifiez le fichier journal.
    1. Définissez l’enregistreur.
    1. Configurez les autres paramètres en fonction de vos besoins.
 
-1. Création d’une instance de la configuration d’usine [Configuration de l’auteur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Créez une instance de la configuration d’usine [Configuration du rédacteur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Spécifiez le fichier journal. Celui-ci doit correspondre à celui spécifié pour l’enregistreur.
    1. Configurez les autres paramètres en fonction de vos besoins.

@@ -1,6 +1,6 @@
 ---
 title: API pour appeler le service de modèle de données de formulaire à partir de formulaires adaptatifs
-description: Explique l’API invokeWebServices que vous pouvez utiliser pour appeler les services Web écrits dans WSDL depuis un champ de formulaire adaptatif.
+description: Décrit l’API invokeWebServices que vous pouvez utiliser pour appeler les services web écrits dans WSDL depuis un champ de formulaire adaptatif.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 87%
 
 ## Présentation {#overview}
 
-AEM Forms permet aux auteurs de formulaires de simplifier et d’améliorer davantage l’expérience de remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](/help/forms/using/rule-editor.md).
+AEM Forms permet aux créateurs et créatrices de formulaires de simplifier et d’améliorer le remplissage de formulaire en appelant les services configurés dans un modèle de données de formulaire depuis un champ de formulaire adaptatif. Pour appeler un service de modèle de données, vous pouvez créer une règle dans l’éditeur visuel ou spécifier un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` dans l’éditeur de code de l’[éditeur de règles](/help/forms/using/rule-editor.md).
 
 Ce document se concentre sur l’écriture d’un script JavaScript en utilisant l’API `guidelib.dataIntegrationUtils.executeOperation` pour appeler un service.
 
@@ -32,7 +32,7 @@ L’API `guidelib.dataIntegrationUtils.executeOperation` appelle un service depu
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La structure de l’API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails sur l’opération de service. La syntaxe de la structure est la suivante.
+La structure de l’API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails sur l’opération de service. La syntaxe de la structure se présente comme suit.
 
 ```javascript
 var operationInfo = {
@@ -50,7 +50,7 @@ outputFieldN
 }
 ```
 
-La structure de l’API spécifie les détails suivants sur l’opération de service.
+La structure de l’API spécifie les détails suivants concernant l’opération de service.
 
 <table>
  <tbody>

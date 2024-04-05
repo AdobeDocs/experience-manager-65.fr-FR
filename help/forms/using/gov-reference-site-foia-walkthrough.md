@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Dans le cadre de la loi sur l’accès à l’information, Sarah demande une cop
 
 ### Démonstration {#see-it-yourself}
 
-Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, sélectionnez Applications > Toutes les applications. Dans la page Toutes les applications, sélectionnez Demander sous Demande d’accès à l’information (FOIA Request).
+Dans votre navigateur, ouvrez `https://<hostname>:<PublishPort>/wegov`. Sur le site We.Gov, sélectionnez Applications> Toutes les applications. Dans la page Toutes les applications, sélectionnez Appliquer sous Application dans le cadre de la loi sur l’accès à l’information.
 
 ## Sarah commence sa demande d’informations dans le cadre de la loi sur l’accès à l’information {#sarah-starts-her-application-for-information-under-foia}
 
@@ -55,7 +55,7 @@ Sarah clique sur **Appliquer** et sur la page Formulaire de demande dans le cadr
 
 Demande de copie des registres des cas de l’Administration pour les enfants et les familles pour les années 2013 à 2016
 
-À tout moment, Sarah peut sélectionner **Enregistrer** pour enregistrer un brouillon du formulaire et y revenir ultérieurement pour remplir le formulaire et l’envoyer. Sarah envoie le formulaire.
+À tout moment, Sarah peut sélectionner **Enregistrer** pour enregistrer le brouillon du formulaire et y revenir plus tard pour remplir le formulaire et l’envoyer. Sarah envoie le formulaire.
 
 >[!NOTE]
 >

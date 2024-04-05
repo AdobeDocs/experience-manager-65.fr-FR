@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2100'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 ## Présentation {#introduction}
 
-Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Les Forms adaptatives comprennent plusieurs fonctionnalités qui améliorent la convivialité pour les utilisateurs avec des fonctionnalités différentes. L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit, en effet, d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
+Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Les formulaires adaptatifs comprennent différentes fonctionnalités qui facilitent l’utilisation pour les utilisateurs et utilisatrices ayant des compétences différentes. L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit, en effet, d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
 
 Lors de la création d’un formulaire adaptatif, le créateur ou la créatrice doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
 
@@ -47,11 +47,11 @@ L’outil ANDI fonctionne avec tous les grands navigateurs Internet. Pour des in
 
 ### Téléchargement et installation du thème Ultramarine-Accessible
 
-Le thème Ultramarine-Accessible est un thème de référence. Il permet de montrer comment corriger le contraste des couleurs et d’autres problèmes liés à l’accessibilité dans un formulaire adaptatif. Adobe vous recommande de créer un thème personnalisé pour l’environnement de production en fonction des styles approuvés par votre organisation. Pour charger le thème dans votre instance AEM :
+Le thème Ultramarine-Accessible est un thème de référence. Il permet de montrer comment corriger le contraste des couleurs et d’autres problèmes liés à l’accessibilité dans un formulaire adaptatif. Adobe recommande de créer un thème personnalisé pour l’environnement de production en fonction des styles approuvés par votre organisation. Pour charger le thème dans votre instance AEM :
 
 1. Téléchargez le package du thème.
 1. Sélectionnez **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** dans votre instance AEM.
-1. Sélectionner **[!UICONTROL Créer]** > **[!UICONTROL Téléchargement du fichier]**. Sélectionnez et chargez le fichier x Ultramarine-Accessible-Theme.zip. Il télécharge le thème dans votre instance AEM.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Charger un fichier]**. Sélectionnez et chargez le fichier x Ultramarine-Accessible-Theme.zip. Il télécharge le thème dans votre instance AEM.
 
 ## Rendre un formulaire adaptatif accessible
 
@@ -62,8 +62,8 @@ Vous devez vous focaliser sur quatre aspects clés : navigation au clavier, con
 Appliquez le thème Ultramarine-Accessible à votre formulaire adaptatif existant. Pour appliquer le thème :
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
-1. Sélectionnez un composant et l’icône parent. Dans le menu contextuel, sélectionnez **[!UICONTROL Conteneur de formulaires adaptatifs]** puis sélectionnez l’icône de configuration.
-1. Sélectionnez le thème Ultramarine-Accessible dans l’explorateur de propriétés et sélectionnez **[!UICONTROL Enregistrer]** Icône
+1. Sélectionnez un composant et sélectionnez l’icône parent. Dans le menu contextuel, sélectionnez **[!UICONTROL Conteneur de formulaire adaptatif]**, puis l’icône Configurer.
+1. Sélectionnez le thème Ultramarine-Accessible dans le navigateur de propriétés et sélectionnez l’icône **[!UICONTROL Enregistrer]**.
 1. Actualisez la fenêtre du navigateur. Le thème est appliqué au formulaire adaptatif.
 
 Après avoir appliqué un thème accessible, effectuez les corrections supplémentaires mentionnées ci-dessous. Les corrections s’ajoutent aux corrections liées à l’accessibilité couvertes dans le thème accessible :
@@ -90,7 +90,7 @@ Après avoir appliqué un thème accessible, effectuez les corrections suppléme
 
 1. Définissez le texte d’accessibilité personnalisé pour le composant Sélecteur de date. Par exemple, « Entrez votre date de naissance ». Les lecteurs d’écran lisent ces textes d’accessibilité personnalisés.
 
-1. Utilisez une description brève plutôt qu’une description longue pour les composants de formulaire adaptatif. Une description longue ajoute le bouton d’aide. Assurez-vous que les adaptatifs n’ont pas de bouton d’aide.
+1. Utilisez une description brève plutôt qu’une description longue pour les composants de formulaire adaptatif. Une description longue ajoute le bouton d’aide. Assurez-vous que le formulaire adaptatif ne comporte pas de bouton d’aide.
 
 1. Ajoutez du texte d’accessibilité personnalisé à toutes les cellules en lecture seule des tableaux. Désactivez également toutes les cellules de tableaux en lecture seule.
 
@@ -104,7 +104,7 @@ Le libellé perçu par les lecteurs d’écran n’a pas besoin d’être identi
 
 Pour utiliser l’option d’accessibilité, procédez comme suit :
 
-1. Sélectionnez un composant et sélectionnez ![cmppr](assets/cmppr.png).
+1. Sélectionnez un composant, puis ![cmppr](assets/cmppr.png).
 1. Cliquez sur **[!UICONTROL Accessibilité]** dans la barre latérale pour sélectionner l’option d’accessibilité de votre choix.
 
 ### Options d’accessibilité dans des composants de formulaire {#accessibility-options-in-form-components}
@@ -161,7 +161,7 @@ Les raccourcis clavier suivants sont disponibles dans AEM Forms.
 | Réinitialiser les données saisies dans un formulaire | Alt+R |
 | Envoyer un formulaire | Alt+S |
 
-En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les raccourcis clavier, sélectionnez l’option **[!UICONTROL Sélecteur de date]** composant et sélectionnez ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]**, sélectionnez un modèle d’affichage à l’aide des listes déroulantes **[!UICONTROL Type]** et **[!UICONTROL Modèle]**. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
+En outre, plusieurs raccourcis clavier sont disponibles pour le composant **[!UICONTROL Sélecteur de date]** dans les formulaires adaptatifs. Pour activer les touches de raccourci, sélectionnez le composant **[!UICONTROL Sélecteur de date]**, puis ![Configurer](assets/configure-icon.svg) pour ouvrir les propriétés. Dans la section **[!UICONTROL Modèles]**, sélectionnez un modèle d’affichage à l’aide des listes déroulantes **[!UICONTROL Type]** et **[!UICONTROL Modèle]**. Enregistrez les propriétés pour activer l’utilisation de raccourcis clavier pour le composant **[!UICONTROL Sélecteur de date]**.
 
 Les touches de raccourci clavier suivantes sont disponibles pour le composant Sélecteur de date dans les formulaires adaptatifs :
 

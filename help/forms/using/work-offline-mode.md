@@ -1,6 +1,6 @@
 ---
 title: Utiliser en mode hors ligne
-description: Mettez votre appareil mobile hors ligne en dehors de votre plage de réseau AEM Forms ou en mode hors ligne complet et travaillez sur l’application AEM Forms
+description: Mettre votre appareil mobile hors ligne en dehors de votre plage de réseau AEM Forms ou en mode hors ligne complet et travailler sur l’application AEM Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 58%
 
 Le mode hors ligne de l’application d’AEM Forms permet de travailler en toute facilité, même lorsque l’application se déconnecte. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 
-Commencez à travailler dans l’application AEM Forms en la synchronisant avec le serveur AEM Forms. Tous les formulaires qui vous sont assignés sont téléchargés dans votre application. Pour AEM Forms on JEE, les tâches sont récupérées dans l’onglet Tâches et les formulaires associés aux points de départ et autres formulaires dans l’onglet Forms. Pour AEM Forms sur OSGi, seul Forms est chargé dans l’onglet Forms.
+Commencez à travailler dans l’application AEM Forms en la synchronisant avec le serveur AEM Forms. Tous les formulaires qui vous sont assignés sont téléchargés dans votre application. Pour AEM Forms on JEE, les tâches sont récupérées dans l’onglet Tâches et les formulaires associés aux points de départ et autres formulaires dans l’onglet Formulaires. Pour AEM Forms on OSGi, seuls les formulaires sont chargés dans l’onglet Formulaires.
 
-Pour plus d’informations sur la synchronisation de l’application, voir [Synchronisation de l’application](/help/forms/using/sync-app.md).
+Pour plus d’informations sur les modalités de synchronisation de l’application, consultez [Synchronisation de l’application](/help/forms/using/sync-app.md).
 
-## Mise à disposition de Forms hors ligne {#making-forms-available-offline}
+## Rendre Forms disponible hors ligne {#making-forms-available-offline}
 
 Lorsque vous synchronisez votre application avec le serveur AEM Forms, les formulaires sont téléchargés sur votre appareil mobile. Cependant, par défaut, les pièces jointes associées avec le formulaire ne sont pas téléchargées. Cela signifie que si vous êtes en ligne, vous pouvez afficher les pièces jointes. Toutefois, pour vous assurer que vous pouvez afficher la pièce jointe en mode hors ligne, modifiez les paramètres par défaut de votre application.
 
@@ -39,11 +39,11 @@ Pour configurer le composant hors ligne côté serveur de l’application AEM Fo
 
    URL : `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
-1. Sous Paramètres généraux, vous pouvez effectuer les opérations suivantes :
+1. Sous Paramètres généraux, vous pouvez effectuer les opérations suivantes :
 
-   * **Effacer le cache**: efface le cache côté serveur des dépendances de formulaire.
+   * **Effacer le cache** : efface le cache côté serveur des dépendances de formulaire.
    * **Réinitialiser la configuration** : réinitialise la configuration hors ligne de l’application AEM Forms.
-   * **Validité du cache**: indique la période de validité du cache hors ligne côté serveur.
-   * **Chemins d’observation des ressources**: spécifie les chemins où le service hors ligne surveille les modifications de ressources. Si des modifications se produisent dans les chemins d’accès spécifiés, le cache hors ligne de tous les formulaires dépendants est mis à jour. Par exemple, `/etc/clientlibs/fd,/content/dam/images`.
+   * **Validité du cache** : indique la période de validité du cache hors ligne côté serveur.
+   * **Chemins d’observation des ressources** : spécifie les chemins où le service hors ligne surveille les modifications de ressources. Si des modifications se produisent dans les chemins d’accès spécifiés, le cache hors ligne de tous les formulaires dépendants est mis à jour. Par exemple, `/etc/clientlibs/fd,/content/dam/images`.
 
-1. Dans le **Cache de ressource manuel** , spécifiez les dépendances de formulaire que le service hors ligne ne peut pas identifier. Vous pouvez spécifier des ressources telles que des images chargées à partir de JavaScript. L’application AEM Forms téléchargera également ces ressources pour le mode hors ligne.
+1. Dans l’onglet **Cache de ressource manuel**, spécifiez les dépendances de formulaire que le service hors ligne ne peut pas identifier. Vous pouvez spécifier des ressources telles que des images chargées à partir de JavaScript. L’application AEM Forms téléchargera également ces ressources pour le mode hors ligne.

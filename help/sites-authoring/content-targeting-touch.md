@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Les activités et les expériences qui s’affichent en mode Ciblage se répercu
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne ; les noms de campagne ne peuvent pas être réutilisés dans différents types de campagne.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
 >
->Si vous utilisez le même nom dans le même type de campagne, vous remplacez la campagne existante.
+>Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
 >Lors de la synchronisation, si le message d’erreur « Échec de la demande. `thirdPartyId` existe déjà. » s’affiche, modifiez le nom de la campagne et resynchronisez-la.
 
@@ -56,7 +56,7 @@ Passez en mode Cible pour accéder aux outils de création de contenu ciblé.
 Pour passer en mode Ciblage :
 
 1. Ouvrez la page pour laquelle vous souhaitez créer du contenu ciblé.
-1. Dans la barre d’outils supérieure de la page, cliquez sur le menu déroulant Mode pour afficher les types de mode disponibles.
+1. Dans la barre d’outils, en haut de la page, cliquez sur le menu déroulant des modes pour afficher les types de modes disponibles.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -80,17 +80,17 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Adobe vous recommande de [créer des marques dans la console activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe vous recommande de [créer des marques dans la console Activités](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Si vous créez une marque en utilisant un autre procédé, assurez-vous que le nœud `/campaigns/<brand>/master` existe pour éviter qu’une erreur ne se produise lorsque vous tenterez de créer une activité.
 
-1. Cliquez sur + en regard de l’option **Activité** menu déroulant.
+1. Cliquez sur « + » à côté du menu déroulant **Activité**.
 1. Saisissez un nom pour l’activité.
 
    >[!NOTE]
    >
-   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à l’un de ses parents, AEM considère automatiquement Adobe Target comme le moteur.
+   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à une page parente, AEM considère automatiquement Adobe Target comme le moteur.
 
 1. Dans le menu déroulant du moteur **Ciblage**, sélectionnez votre moteur de ciblage.
 
@@ -123,7 +123,7 @@ Pour ajouter une activité :
 
 1. Dans le menu déroulant **Marque**, sélectionnez la marque contenant l’activité sur laquelle vous travaillez.
 1. Dans le menu déroulant **Activité**, sélectionnez l’activité pour laquelle vous créez du contenu ciblé.
-1. Pour afficher les contrôles qui vous guident tout au long du processus de ciblage, cliquez sur **Commencer le ciblage**.
+1. Pour afficher les commandes qui vous guideront tout au long du processus de ciblage, cliquez sur **Commencer le ciblage**.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -181,14 +181,14 @@ Vous pouvez enregistrer des offres personnalisées dans une bibliothèque d’of
 
 Pour ajouter une expérience :
 
-1. Pour ajouter une expérience, cliquez sur **+** **Ajout du ciblage d’expérience** qui apparaît sous les expériences existantes dans la variable **Audiences** volet.
+1. Pour ajouter une expérience, cliquez sur **+** **Ajouter un ciblage d’expérience**, qui s’affiche en dessous des expériences existantes dans le volet **Audiences**.
 1. Sélectionnez une audience. Par défaut, ce nom correspond au nom de l’expérience. Si vous le souhaitez, vous pouvez saisir un autre nom. Cliquez sur **OK**.
 
 #### Suppression d’expériences à l’aide du mode Ciblage {#removing-experiences-using-targeting-mode}
 
 Pour supprimer une expérience :
 
-1. Cliquez sur la flèche en regard du nom de l’expérience.
+1. Cliquez sur la flèche à côté du nom de l’expérience.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -198,15 +198,15 @@ Pour supprimer une expérience :
 
 Pour renommer des expériences à l’aide du mode Ciblage :
 
-1. Cliquez sur la flèche en regard du nom de l’expérience.
+1. Cliquez sur la flèche à côté du nom de l’expérience.
 1. Cliquez sur **Renommer l’expérience** et entrez le nouveau nom.
-1. Cliquez ailleurs dans l’écran pour enregistrer les modifications.
+1. Cliquez ailleurs sur l’écran pour enregistrer les modifications.
 
 #### Modification des audiences à l’aide du mode Ciblage {#editing-audiences-using-targeting-mode}
 
 Pour modifier les audiences à l’aide du mode Ciblage :
 
-1. Cliquez sur la flèche en regard du nom de l’expérience.
+1. Cliquez sur la flèche à côté du nom de l’expérience.
 1. Cliquez sur **Modifier l’audience** et sélectionnez une nouvelle audience.
 1. Cliquez sur **OK**.
 
@@ -214,7 +214,7 @@ Pour modifier les audiences à l’aide du mode Ciblage :
 
 Pour copier des expériences à l’aide du mode Ciblage :
 
-1. Cliquez sur la flèche en regard du nom de l’expérience.
+1. Cliquez sur la flèche à côté du nom de l’expérience.
 1. Cliquez sur **Dupliquer** et sélectionnez l’audience.
 1. Renommez l’expérience, si vous le souhaitez, puis cliquez sur **OK**.
 
@@ -248,7 +248,7 @@ Effectuez la procédure suivante après [avoir lancé le processus de ciblage](/
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Cliquez sur l’icône Cible .
+1. Cliquez sur l’icône Cible.
 
    ![Cible](do-not-localize/chlimage_1.png)
 
@@ -282,17 +282,17 @@ Lorsque vous ajoutez un composant au composant cible, il fournit du contenu pour
 
 Vous pouvez ajouter un composant cible à la page en mode édition ou en mode Ciblage. Vous pouvez ajouter des composants au composant cible uniquement en mode Ciblage. Le composant cible appartient au groupe de composants de personnalisation.
 
-Si vous modifiez le contenu ciblé, vous devez cliquer sur **Commencer le ciblage** avant que vous ne puissiez le faire.
+Si vous devez modifier du contenu ciblé, vous devez cliquer sur **Commencer le ciblage** avant de pouvoir commencer à le faire.
 
 1. Faites glisser le composant cible vers la page où vous voulez faire apparaître l’offre.
-1. Par défaut, aucun identifiant d’emplacement n’est défini. Cliquez sur la roulette de configuration pour définir l’emplacement.
+1. Par défaut, aucun identifiant d’emplacement n’est défini. Cliquez sur l’engrenage de configuration pour définir l’emplacement.
 
    >[!NOTE]
    >
-   >S’il est défini par l’administrateur, vous pouvez avoir besoin de définir explicitement l’emplacement.
+   >S’il est défini par l’équipe d’administration, vous pouvez avoir besoin de définir explicitement l’emplacement.
    >
    >
-   >Les administrateurs peuvent déterminer si la définition de cette configuration est requise à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Les administrateurs et administratrices peuvent décider si la définition de cette configuration est requise à l’adresse **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**.
    >
    >
    Pour obliger les utilisateurs à saisir un emplacement, cochez la case **Forcer à indiquer l’emplacement**.
@@ -310,15 +310,15 @@ Créez une offre en créant le contenu d’un composant ciblé en mode Ciblage. 
 Si vous décidez que l’offre peut être utilisée pour d’autres expériences, vous pouvez créer une offre personnalisée et l’[ajouter à la bibliothèque](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, reportez-vous à la section [Ajout d’une offre à une bibliothèque d’offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Sélectionnez l’expérience à laquelle vous ajoutez l’offre.
-1. Pour afficher le menu du composant, cliquez sur le composant ciblé auquel vous ajoutez l’offre.
+1. Pour afficher le menu du composant, cliquez ou appuyez sur le composant ciblé auquel vous ajoutez l’offre.
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Cliquez sur l’icône + .
+1. Cliquez sur l’icône +.
 
    Le contenu de l’offre par défaut est utilisé comme offre pour l’expérience actuelle.
 
-1. Cliquez sur l&#39;offre pour afficher le menu de l&#39;offre, puis cliquez sur l&#39;icône d&#39;édition.
+1. Cliquez ou appuyez sur l’offre pour afficher le menu de l’offre, puis cliquez ou appuyez sur l’icône Modifier.
 
    ![Menu Offre](do-not-localize/chlimage_1-2.png)
 
@@ -331,25 +331,25 @@ Ajoutez une offre de la [bibliothèque d’offres](/help/sites-authoring/offerli
 Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par défaut.
 
 1. Sélectionnez l’expérience à laquelle vous ajoutez l’offre.
-1. Pour afficher le menu du composant, cliquez sur le composant ciblé auquel vous ajoutez l’offre.
+1. Pour afficher le menu du composant, cliquez ou appuyez sur le composant ciblé auquel vous ajoutez l’offre.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Cliquez sur l’icône de dossier.
+1. Cliquez sur l’icône Dossier.
 
-   ![Icône Dossier.](do-not-localize/chlimage_1-3.png)
+   ![Icône Dossier](do-not-localize/chlimage_1-3.png)
 
-1. Sélectionnez l’offre dans la bibliothèque, puis cliquez sur l’icône en forme de coche.
+1. Sélectionnez l’offre dans la bibliothèque, puis cliquez ou appuyez sur l’icône Coche.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-   Le sélecteur d’offres vous permet de rechercher ou de filtrer des offres. Lors de la navigation ou du filtrage, vous pouvez également trier les offres et modifier leur mode d’affichage. Le nombre dans le coin supérieur droit indique le nombre d’offres disponibles dans la bibliothèque actuelle.
+   Le sélecteur d’offres vous permet de rechercher ou de filtrer des offres. Lors de la navigation ou du filtrage, vous pouvez également trier les offres et modifier leur mode d’affichage. Le nombre dans l’angle supérieur droit indique le nombre d’offres disponibles dans la bibliothèque actuelle.
 
-   * Cliquez sur **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Cliquez sur **Parcourir** pour fermer le volet de navigation.
+   * Cliquez ou appuyez sur **Parcourir** pour accéder à un autre dossier. Le volet de navigation s’affiche. Cliquez sur la flèche pour accéder aux dossiers. Cliquez ou appuyez sur **Parcourir** pour fermer le volet de navigation.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-   * Cliquez sur **Filtrer** pour filtrer les offres par rapport aux mots-clés ou aux balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Cliquez sur **Filtrer** pour fermer le volet de filtrage.
+   * Cliquez ou appuyez sur **Filtrer** pour filtrer les offres par rapport aux mots-clés ou aux balises. Vous saisissez des mots-clés et sélectionnez des balises dans le menu déroulant. Cliquez ou appuyez à nouveau sur **Filtrer** pour fermer le volet de filtrage.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -357,7 +357,7 @@ Vous ne pouvez pas ajouter d’offres de bibliothèque à l’expérience par d�
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-   Cliquez sur l’icône en regard de **Afficher sous** pour afficher les offres sous forme de mosaïques ou de liste.
+   Cliquez sur l’icône en regard de **Afficher sous** pour afficher les offres sous forme de mosaïque ou de liste.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -368,18 +368,18 @@ Ajoutez une offre personnalisée à la [bibliothèque d’offres](/help/sites-au
 Pour plus d’informations sur l’utilisation de la console Offres pour créer une offre réutilisable, reportez-vous à la section [Ajout d’une offre à une bibliothèque d’offres](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
 
 1. Sélectionnez l’expérience pour afficher l’offre personnalisée.
-1. Cliquez sur l’offre personnalisée pour afficher le menu de l’offre, puis cliquez sur le bouton **Enregistrer l’offre dans la bibliothèque des offres** Icône
+1. Cliquez sur l’offre personnalisée pour afficher le menu d’offre, puis cliquez sur l’icône **Enregistrer l’offre dans la bibliothèque des offres**.
 
-   ![Enregistrement de l’offre dans la bibliothèque d’offres.](do-not-localize/chlimage_1-4.png)
+   ![Enregistrement de l’offre dans la bibliothèque des offres](do-not-localize/chlimage_1-4.png)
 
-1. Saisissez le nom de l’offre, sélectionnez la bibliothèque à laquelle vous ajoutez l’offre, puis cliquez sur l’icône en forme de coche.
+1. Saisissez le nom de l’offre et sélectionnez la bibliothèque à laquelle vous ajoutez l’offre, puis cliquez sur l’icône en forme de coche.
 
 #### Conversion d’une offre de bibliothèque en bibliothèque personnalisée {#converting-a-library-offer-to-a-custom-library}
 
 Convertissez une offre de bibliothèque en offre personnalisée pour modifier l’offre en fonction de l’expérience actuelle et sans modifier l’offre dans d’autres expériences.
 
 1. Sélectionnez l’expérience pour afficher l’offre de bibliothèque.
-1. Cliquez sur l’offre de la bibliothèque pour afficher le menu d’offres, puis cliquez sur l’icône Convertir en offre intégrée .
+1. Cliquez sur l’offre de bibliothèque pour afficher le menu d’offre, puis cliquez sur l’icône Convertir en offre intégrée.
 
    ![Convertir en offre intégrée.](do-not-localize/chlimage_1-5.png)
 
@@ -403,7 +403,7 @@ Les audiences s’affichent dans la partie gauche du diagramme de mappage, tandi
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Définissez une audience à l’aide d’un segment. La configuration du cloud de la page détermine les segments qui vous sont disponibles. Lorsque la page n’est pas associée à une configuration cloud Adobe Target, les segments AEM sont disponibles pour définir des audiences. Lorsque la page est associée à une configuration cloud Adobe Target, vous utilisez des segments Target.
+Définissez une audience à l’aide d’un segment. La configuration du cloud de la page détermine les segments à votre disposition. Lorsque la page n’est pas associée à une configuration cloud Adobe Target, les segments AEM sont disponibles pour définir des audiences. Lorsque la page est associée à une configuration cloud Adobe Target, vous utilisez des segments Target.
 
 Pour plus d’informations sur les moteurs de ciblage, consultez [Moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine).
 
@@ -415,11 +415,11 @@ N’utilisez pas plus d’une expérience pour une audience. Un symbole d’aver
 
 Procédez comme suit pour associer une expérience à une audience lors de l’utilisation du ciblage AEM (ou du ciblage d’expérience Adobe Target) :
 
-1. Cliquez sur la flèche de liste déroulante située en regard de la zone d’audience associée à l’expérience.
-1. (Facultatif) Cliquez sur **Modifier** puis saisissez un mot-clé pour rechercher le segment souhaité.
-1. Dans la liste des audiences, sélectionnez l’audience et cliquez sur **OK**.
+1. Cliquez sur la flèche de liste déroulante en regard de la zone d’audience mappée à l’expérience.
+1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
+1. Dans la liste d’audiences, sélectionnez l’audience et cliquez sur **OK**.
 
-### Si vous utilisez des tests A/B (Adobe Target)…  {#if-you-are-using-a-b-testing-adobe-target}
+### Si vous utilisez des tests A/B (Adobe Target)… {#if-you-are-using-a-b-testing-adobe-target}
 
 Si vous avez une activité de test A/B, les audiences se trouvent à votre gauche, le pourcentage de vue de chaque expérience au milieu et les expériences à droite.
 
@@ -429,9 +429,9 @@ Vous pouvez modifier les pourcentages, à condition que leur somme reste égale 
 
 ### Association d’audiences et de pourcentages de trafic avec un test A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Cliquez sur la liste déroulante en regard de l’audience mappée à l’expérience.
-1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour chercher le segment souhaité.
-1. Cliquez sur **OK.**
+1. Cliquez sur la zone déroulante en regard de l’audience mappée à l’expérience.
+1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
+1. Cliquez sur **OK**.
 1. Saisissez des pourcentages pour configurer le mode de routage du trafic d’audience vers chaque expérience. Le nombre total doit être égal à 100.
 1. (Facultatif) Modifiez le nom de l’expérience en cliquant sur le menu déroulant en regard de son nom.
 
@@ -461,7 +461,7 @@ Les mesures de succès ci-dessous sont disponibles (pour la publication uniqueme
  <tbody>
   <tr>
    <td><strong>Conversion</strong></td>
-   <td><p>Pourcentage de visiteurs ayant cliqué sur n’importe quelle partie de l’expérience testée. Une conversion peut être comptabilisée une fois par visiteur ou visiteuse ou chaque fois qu’un visiteur ou une visiteuse effectue une conversion. La mesure de conversion est définie sur l’une des valeurs suivantes :</p>
+   <td><p>Pourcentage de visiteurs ayant cliqué sur n’importe quelle partie de l’expérience testée. Une conversion peut être comptabilisée une fois par visiteur ou visiteuse ou chaque fois qu’un visiteur ou une visiteuse effectue une conversion. La mesure de conversion est définie sur l’une des options suivantes :</p>
     <ul>
      <li><strong>A affiché une page</strong> : vous pouvez définir la page que l’audience a consultée en sélectionnant l’option <strong>L’URL est</strong>, puis en indiquant la ou les URL, ou en sélectionnant <strong>L’URL contient</strong> et en ajoutant un chemin d’accès ou un mot-clé.</li>
      <li><strong>A affiché une mbox</strong> : vous pouvez définir la mbox que l’audience a consultée en saisissant le nom de la mbox. Vous pouvez saisir plusieurs mbox en cliquant sur <strong>Ajouter une mbox</strong>.</li>
@@ -479,7 +479,7 @@ Les mesures de succès ci-dessous sont disponibles (pour la publication uniqueme
   </tr>
   <tr>
    <td><strong>Engagement</strong></td>
-   <td><p>Vous pouvez mesurer trois types d’engagement :</p>
+   <td><p>Vous pouvez mesurer trois types d’engagements :</p>
     <ul>
      <li>Pages vues</li>
      <li>Score personnalisé</li>
@@ -509,7 +509,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Incrémenter le décompte, libérer l’utilisateur et autoriser la rentrée</strong></td>
+   <td><strong>Incrémenter le décompte, Libérer l’utilisateur et Autoriser la reprise</strong></td>
    <td>Sélectionnez l’expérience que voit le visiteur s’il entre à nouveau dans l’activité :
     <ul>
      <li>Même expérience</li>
@@ -518,7 +518,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Incrémenter le décompte, libérer l’utilisateur et bloquer la rentrée</strong></td>
+   <td><strong>Incrémenter le décompte, Libérer l’utilisateur et Bloquer la reprise</strong></td>
    <td>Déterminez ce que l’utilisateur voit au lieu du contenu de l’activité :
     <ul>
      <li>Même expérience, sans suivi</li>
@@ -537,12 +537,12 @@ Pour configurer les paramètres en cas d’utilisation du ciblage AEM :
 1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’elle est activée** :l’activité commence lorsque la page qui contient le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant **Fin** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’elle est désactivée** : l’activité se termine lorsque la page qui contient le contenu ciblé est désactivée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et spécifiez l’heure de fin de l’activité.
 
 1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normale** ou **Élevée**.
 
@@ -553,12 +553,12 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’elle est activée** :l’activité commence lorsque la page qui contient le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant **Fin** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’elle est désactivée** : l’activité se termine lorsque la page qui contient le contenu ciblé est désactivée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez sur l’icône de calendrier, sélectionnez une date et spécifiez l’heure de fin de l’activité.
 
 1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normale** ou **Élevée**.
 1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
@@ -593,7 +593,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
    >
    Vous pouvez supprimer d’autres objectifs en cliquant ou en appuyant sur les points de suspension ou sur **Supprimer**. AEM nécessite qu’au moins un objectif soit défini.
 
-1. Si vous souhaitez mieux contrôler le mode de comptabilisation des mesures de succès, cliquez sur **Paramètres avancés** pour y accéder.
+1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
 
 Après la configuration, vous pouvez [afficher les performances de vos activités](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) qui utilisent Adobe Target (ciblage d’expérience ou de test A/B). En outre, avec le ciblage des tests A/B, vous pouvez [convertir les gagnants](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test).
@@ -621,24 +621,24 @@ Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils
 * Activité de simulation en mode Ciblage : la page affiche les offres destinées à la personne utilisatrice actuellement sélectionnée dans ContextHub. Vous pouvez modifier les offres qui ciblent la personne utilisatrice.
 * Mode Aperçu : utilisez ContextHub pour sélectionner les utilisateurs et utilisatrices et les emplacements qui répondent aux critères des segments sur lesquels vos expériences sont basées. Lorsque vos sélections ContextHub changent, le contenu ciblé change en conséquence.
 
-1. Pour passer en mode Aperçu, cliquez sur la barre d’outils **Aperçu**.
+1. Pour passer en mode Aperçu, dans la barre d’outils, cliquez sur **Aperçu**.
 1. Dans la barre d’outils, cliquez sur l’icône ContextHub.
 
    ![ContextHub](do-not-localize/chlimage_1-7.png)
 
-1. Utilisez ContextHub pour modifier les propriétés du contexte. Par exemple, cliquez sur la propriété Persona pour sélectionner un autre utilisateur.
+1. Utilisez ContextHub pour modifier les propriétés du contexte. Par exemple, cliquez sur la propriété de persona pour sélectionner un autre utilisateur ou une autre utilisatrice.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
    La page se modifie pour afficher le contenu ciblé pour le contexte actuel.
 
-1. Pour modifier les offres affichées, passez en mode Ciblage . Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
+1. Pour apporter des modifications aux offres affichées, passez en mode Ciblage. Pour l’activité de simulation sélectionnée, modifiez les offres pour le contexte que vous avez configuré en mode Aperçu.
 
 ## Configuration des options du composant cible {#configuring-target-component-options}
 
 Vous pouvez personnaliser le composant cible en accédant aux options du composant de l’une des deux façons suivantes :
 
-1. Après avoir ciblé le composant, dans le composant cible, cliquez sur le composant, puis sur l’icône de paramètres (engrenage).
+1. Une fois que vous avez ciblé le composant, dans le composant cible, cliquez sur le composant, puis sur l’icône Paramètres (en forme d’engrenage).
 
    ![Menu du composant cible.](do-not-localize/chlimage_1-8.png)
 
@@ -646,7 +646,7 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Pour accéder à ces paramètres en mode Plein écran, dans la fenêtre Options du composant cible , cliquez sur l’icône Plein écran.
+1. Autrement, pour accéder à ces paramètres en mode Plein écran, dans la fenêtre Options du composant cible, cliquez sur l’icône Plein écran.
 
    ![Fenêtre des options du composant cible](do-not-localize/chlimage_1-9.png)
 
@@ -697,11 +697,11 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Paramètres de contexte</strong></td>
-   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres contextuels supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans le framework.</td>
+   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans le framework.</td>
   </tr>
   <tr>
    <td><strong>Paramètres statiques</strong></td>
-   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans l’infrastructure Target). Les paramètres statiques ajoutés au composant concernent <i>uniquement</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à le framework. Les paramètres statiques ne proviennent pas du contexte (contexte client du contenu du hub).</td>
+   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres statiques ajoutés au composant concernent <i>uniquement</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à le framework. Les paramètres statiques ne proviennent pas du contexte (contexte client du contenu du hub).</td>
   </tr>
  </tbody>
 </table>

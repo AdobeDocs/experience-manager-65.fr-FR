@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4130'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Regardez une présentation détaillée concernant [les méthodes de création de
 
 La description suivante du workflow étape par étape est conçue pour vous aider à mettre en route rapidement les images interactives dans Adobe Experience Manager Assets.
 
-Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel basé sur l’exemple de page web suivant qui ne contient pas encore d’images interactives :
+Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel basé sur l’exemple de page web suivant, qui ne contient pas encore d’images interactives.
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr)
 
@@ -209,7 +209,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
    Assurez-vous de publier le nouveau paramètre prédéfini de la visionneuse.
 
-   Voir [Publication des paramètres prédéfinis de visionneuse que vous avez ajoutés](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
+   Voir [Publication des paramètres prédéfinis de la visionneuse que vous avez ajoutés](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
@@ -266,7 +266,7 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Sélectionnez l’image pour pouvoir l’ouvrir dans la page Affichage des détails. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 
-1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône de sélection à l’aide du doigt) pour ouvrir la page de gestion des zones réactives.
+1. Près du coin supérieur gauche de la page, sélectionnez **[!UICONTROL Ajouter une zone réactive]** (icône Appuyer avec le doigt) pour ouvrir la page de gestion des zones réactives.
 1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Zone réactive]**.
 
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.
@@ -514,7 +514,7 @@ Voici le code source complet :
  s7interactiveimageviewer.init();
 ```
 
-Le dernier site web de démonstration avec l’image interactive entièrement intégrée ressemble à ce qui suit :
+Le dernier site Web de démonstration avec l’image interactive totalement intégrée se présente comme suit :
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=fr)
 

@@ -1,6 +1,6 @@
 ---
 title: Portails et portlets AEM
-description: Découvrez comment configurer et administrer AEM en tant que portail et comment configurer et afficher AEM contenu dans un portlet.
+description: Découvrez comment configurer et administrer AEM en tant que portail et comment configurer et afficher le contenu AEM dans un portlet.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6074'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ Le portlet peut être configuré avec les préférences suivantes :
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Il s’agit du chemin de démarrage du portlet : il définit le contenu affiché initialement.</p> <p><strong>Important</strong>: si le portlet est configuré pour se connecter à AEM instances de création et de publication qui s’exécutent sur un chemin de contexte différent de<strong> /</strong>, vous devez activer la force. <strong>CQUrlInfo</strong> dans la configuration du Gestionnaire de bibliothèques Html de ces instances AEM (par exemple, via la console web Felix) ou la modification ne fonctionnera pas et la boîte de dialogue Préférences ne s’affichera pas.</p> </td>
+   <td><p>Il s’agit du chemin de démarrage du portlet : il définit le contenu affiché initialement.</p> <p><strong>Important</strong> : si le portlet est configuré de manière à se connecter aux instances de création et de publication AEM exécutées sur un chemin d’accès contextuel autre que<strong> /</strong>, vous devez forcer <strong>CQUrlInfo</strong> dans la configuration HTML du Gestionnaire de bibliothèques de ces instances AEM (via Felix Webconsole, par exemple) ou la modification ne fonctionnera pas et la boîte de dialogue Préférences ne s’affichera pas.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -127,7 +127,7 @@ Le portlet peut être configuré avec les préférences suivantes :
   </tr>
   <tr>
    <td>preferenceDialog</td>
-   <td>Chemin d’accès à la boîte de dialogue Préférences dans AEM. Si elle est vide, la boîte de dialogue Préférences intégrée est utilisée. Par défaut, cette valeur est définie sur /libs/portal/content/prefs.html.</td>
+   <td>Chemin d’accès à la boîte de dialogue Préférences dans AEM. Si cette préférence n’est pas renseignée, la boîte de dialogue Préférences intégrée est utilisée. Par défaut, cette valeur est définie sur /libs/portal/content/prefs.html.</td>
   </tr>
   <tr>
    <td>initialRedirect</td>
@@ -150,7 +150,7 @@ Ouvrez l’onglet **Configurations** et sélectionnez **Configuration du serveur
 
 Pour prendre en charge les déploiements automatisés et la configuration, le portlet de contenu AEM dispose d’une prise en charge de la configuration intégrée qui tente de lire les configurations du chemin d’accès aux classes fourni à l’application du portlet.
 
-Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété ressemble à **dev**, **prod**, **test**, etc. Si aucun environnement n’est défini, aucune configuration n’est lue.
+Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété est du type **dev**, **prod**, **test** et ainsi de suite. Si aucun environnement n’est défini, aucune configuration n’est lue.
 
 Si un environnement est défini, le système cherche un fichier config dans le chemin d’accès aux classes sous** **com/day/cq/portlet/{env}.config**, où **env** est remplacé par la valeur actuelle pour l’environnement. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne `my.service.xml,`, ce fichier est lu à partir du chemin d’accès aux classes sous `com/day/cq/portlet/my.service.config.`. Le nom du fichier est composé de l’identifiant de persistance du service, suivi de **.config**. Dans l’exemple précédent, l’ID de persistance est **my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
 
@@ -244,7 +244,7 @@ Les options de configuration d’authentification que le portlet utilise dans le
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour les services OSGi (noeuds de console ou de référentiel).
+>Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration des services OSGi (nœuds de console ou de référentiel).
 >
 >Pour plus d’informations, voir [Configurer OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -340,7 +340,7 @@ Pour chaque demande que reçoit AEM WCM, l’authentification SSO est tentée e
 
 #### Activation de l’authentification SSO dans un portlet AEM {#enabling-sso-authentication-in-a-aem-portlet}
 
-Pour que l’instance WCM d’AEM sous-jacente accepte les demandes d’authentification unique, le mode d’authentification du portlet doit être activé à partir de **Technique** to **SSO**.
+Pour que cette instance de gestion de contenu web AEM sous-jacente accepte des requêtes SSO, le mode d’authentification du portlet doit être défini non plus sur **Technique**, mais sur **Connexion unique**.
 
 Pour activer l’authentification SSO dans un portlet AEM :
 
@@ -392,7 +392,7 @@ Pour afficher la page d’administration du site web ou modifier une page du por
 
 ### Autorisations {#privileges}
 
-Certaines fonctions du portlet sont protégées par des autorisations. L’utilisateur actuel doit disposer de ce privilège pour pouvoir accéder à cette fonction. Les autorisations ci-dessous sont prédéfinies :
+Certaines fonctions du portlet sont protégées par des autorisations. L’utilisateur ou l’utilisatrice en cours doit disposer de cette autorisation pour pouvoir accéder à cette fonction. Les autorisations ci-dessous sont prédéfinies :
 
 * « toolbar » : il s’agit du privilège général d’afficher/utiliser la barre d’outils dans le portlet.
 * « prefs » : si l’utilisateur ou l’utilisatrice dispose de ce privilège, il lui est possible de voir/modifier les préférences du portlet.
@@ -406,7 +406,7 @@ De plus, il est possible de définir cet accès en fonction des rôles pour chaq
 
 ### Personnalisation de l’application de portlet AEM {#customizing-the-aem-portlet-application}
 
-L’application du portlet AEM indiquée lance un conteneur OSGi dans l’application web comme le fait AEM. Cette architecture vous permet d’utiliser tous les avantages d’OSGi :
+L’application du portlet AEM indiquée lance un conteneur OSGi dans l’application web comme le fait AEM. Cette architecture vous permet de profiter de tous les avantages d’OSGi :
 
 * Facile à mettre à jour et à étendre
 * Fourniture de mises à jour dynamiques dans le portlet sans intervention du serveur du portail
@@ -502,7 +502,7 @@ Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont rem
 
 | Chaîne de l’espace réservé | Description |
 |---|---|
-| {name} | Nom du bouton, par exemple :**auteur, Précédent, Actualiser**, etc. |
+| {name} | Nom du bouton, par exemple **auteur, précédent, actualiser**, etc. |
 | {id} | Identifiant CSS du bouton. |
 | {url} | URL de la cible du bouton. |
 | {text} | Libellé du bouton. |
@@ -524,7 +524,7 @@ title="{text}"/>
 
 #### Installation d’une disposition personnalisée {#installing-a-custom-layout}
 
-Pour installer une disposition personnalisée, accédez à la section **Lots** de la console web OSGI du portlet et chargez le lot.
+Pour installer une disposition personnalisée, accédez à la section **Lots** de la console Web OSGI du portlet et chargez le lot.
 
 #### Packages {#packages}
 
@@ -545,7 +545,7 @@ Le portlet de contenu AEM dispose d’une fonction de localisation intégrée, q
 Deux étapes sont nécessaires :
 
 1. Le service Portal Directory Locale Detector détecte les paramètres régionaux du portail en extrayant le paramètre des paramètres régionaux du portail. Ce service doit être configuré avec la liste des langues disponibles dans AEM.
-1. Le service Portal Director Locale Handler gère la localisation de la demande actuelle. Il suit le chemin du contenu demandé, par exemple : `/content/geometrixx/en/company.html`et selon la configuration, il réécrit la variable **en** avec les paramètres régionaux réels de l’utilisateur.
+1. Le service Portal Director Locale Handler gère la localisation de la demande actuelle. Il utilise le chemin d’accès au contenu demandé, par exemple, `/content/geometrixx/en/company.html`, et conformément à la configuration, il remplace les paramètres régionaux **en** par les paramètres régionaux de l’utilisateur ou l’utilisatrice.
 
 Le service Portal Director Locale Handler peut être configuré avec les chemins d’accès pour vérifier les informations des paramètres régionaux, qui incluent généralement tout ce qui se trouve sous `/content` et avec la position des informations des paramètres régionaux dans le chemin d’accès. Par défaut, le gestionnaire des paramètres régionaux suit la recommandation de structure des sites multilingues dans AEM.
 
@@ -658,7 +658,7 @@ Le fichier JAR d’AEM Quickstart contient les fichiers du composant Portlet. P
 
    Le package installe cq-portlet-director-sharedlibs-x.x.x.jar dans le dossier /libs/portal/director dans le référentiel.
 
-1. Copiez cq-portlet-director-sharedlibs-x.x.x.jar sur votre disque dur. Utilisez tous les moyens pour obtenir le fichier, par exemple, FileVault ou un client WebDAV.
+1. Copiez cq-portlet-director-sharedlibs-x.x.x.jar sur votre disque dur. Utilisez tous les moyens pour obtenir le fichier, par exemple FileVault ou un client WebDAV.
 1. Déplacez le fichier cq-portlet-director-sharedlibs.x.x.x.jar vers le dossier de bibliothèque partagée de votre serveur d’applications afin que les classes soient disponibles pour les applications de portlet déployées.
 
 ### Ajouter le composant Portlet à Sidekick {#adding-the-portlet-component-to-sidekick}
@@ -728,7 +728,7 @@ Utilisez le composant Portail pour ajouter une fenêtre du portlet à votre page
 
 Pour accéder au contenu fourni par AEM WCM, le serveur du portail peut disposer d’AEM Portal Director Portlet. Pour ce faire, installez, configurez et ajoutez le portlet à la page du portail à l’aide des étapes fournies dans cette section.
 
-Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et l’instance de création sur locahost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
+Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et l’instance de création sur locahost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
 
 ### Téléchargement du fichier WAR {#downloading-the-war-file}
 
@@ -738,7 +738,7 @@ Par défaut, le portlet se connecte à l’instance de publication sur localhost
 
 >[!NOTE]
 >
->Ces procédures utilisent le portail WebSphere comme exemple, bien qu’elles soient aussi génériques que possible ; les procédures varient pour d’autres portails web. Bien que les étapes soient essentiellement identiques pour tous les portails web, vous devez adapter les étapes à votre portail web spécifique.
+>Ces procédures utilisent le portail WebSphere à titre d’exemple même si elles sont aussi génériques que possible. N’oubliez pas que les procédures varient pour les autres portails web. Bien que les étapes soient essentiellement identiques pour tous les portails web, vous devez adapter les étapes à votre portail web spécifique.
 
 #### Installation du portlet {#installing-the-portlet}
 
@@ -763,7 +763,7 @@ Pour configurer le portlet :
 
    >[!NOTE]
    >
-   >Si le portlet est configuré pour se connecter à AEM instances de création et de publication qui s’exécutent sur un chemin de contexte différent de **/**, vous devez activer la force. **CQUrlInfo** dans la configuration du Gestionnaire de bibliothèques Html de ces instances AEM (par exemple, via la console web Felix) ou la modification ne fonctionnera pas et la boîte de dialogue Préférences ne s’affichera pas.
+   >Si le portlet est configuré pour se connecter à des instances de création et de publication AEM qui s’exécutent sur un chemin contextuel différent de **/**, vous devez activer l’option consistant à forcer **CQUrlInfo** dans la configuration du gestionnaire de bibliothèques HTML de ces instances AEM (par exemple, via Felix Webconsole). Dans le cas contraire, toute modification sera impossible et la boîte de dialogue des préférences ne s’affichera pas.
 
 1. Enregistrez les modifications apportées à la configuration sur le serveur d’applications.
 
@@ -796,7 +796,7 @@ Généralement, le chemin d’accès de début pointe directement vers le conten
 Pour ajouter le portlet à la page de portail :
 
 1. Assurez-vous que vous êtes dans la fenêtre administration du serveur d’applications et accédez à l’emplacement de gestion des pages. (par exemple, dans WebSphere 6.1, cliquez sur **Gérer les pages**).
-1. Sélectionnez le nom du portlet, puis sélectionnez une page existante ou créez une page.
+1. Sélectionnez le nom du portlet, puis une page existante ou créez-en une.
 1. Modifiez la mise en page.
 1. Sélectionnez le portlet et ajoutez-le à un conteneur.
 1. Enregistrez vos modifications.

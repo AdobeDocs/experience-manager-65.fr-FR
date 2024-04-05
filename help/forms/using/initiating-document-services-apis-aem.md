@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,14 +51,14 @@ L’onglet Environment Options permet de définir différentes options de traite
 * *Job Log Level* : indique le niveau de journal pour les journaux de traitement.
 * *Validate Only* : vérifie la validité d’input DDX.
 
-* *Échec en cas d’erreur*: indique si l’appel au service Assembler doit échouer en cas d’erreur. La valeur par défaut est False.
+* *Fail On Error* : indique si l’appel au service Assembler peut échouer en cas d’erreur. La valeur par défaut est False.
 
 #### Documents de sortie {#output-documents}
 
 Selon l’entrée DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
 1. *Save Output dans Payload* : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
-1. *Output Document&#39;s Map*: vous permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Un document de sortie peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
+1. *Output Document&#39;s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Un document de sortie peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
 

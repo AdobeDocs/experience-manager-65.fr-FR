@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 ## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. En mode d’édition, sélectionnez un panneau, puis sélectionnez ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
+1. En mode de modification, sélectionnez un panneau, puis ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
    Le champ Maximum spécifie le nombre maximum de fois qu’un panneau peut apparaître sur la page. Vous pouvez spécifier -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre infini de fois.
 
@@ -38,7 +38,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 1. Le parent du panneau, qui doit être répété, doit contenir des boutons d’ajout et de suppression pour gérer les instances des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant, puis sélectionnez ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
+   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant, puis ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
    1. Dans la fenêtre Éditeur de règles, cliquez sur **Créer**.
 
       Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -92,13 +92,13 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
       >[!NOTE]
       >
-      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et utilisez l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
+      >Lorsque toutes les instances d’un panneau sont supprimées d’un formulaire adaptatif, pour ajouter une instance du panneau supprimé, utilisez la syntaxe _panelName pour capturer le gestionnaire d’instances du panneau et l’API addInstance du gestionnaire d’instances pour ajouter l’instance supprimée. Par exemple, _panelName.addInstance(). Elle ajoute une instance du panneau supprimé.
 
 ## Utilisation de la mise en page en accordéon pour le panneau parent  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Un panneau comporte différentes options de disposition. La disposition de l’option de conception en accordéon prend en charge les panneaux répétables. Pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon, procédez comme suit :
 
-1. Sur le parent du panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
+1. Dans le parent du panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
 1. Dans un panneau à répéter, sélectionnez ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez l’onglet **Activer la répétition du panneau** et spécifiez des valeurs pour les champs **Maximum** et **Minimum**.
 
    Vous pouvez désormais utiliser les boutons plus (+) et Supprimer (![delete-panel](assets/delete-panel.png)) pour ajouter ou supprimer des panneaux.

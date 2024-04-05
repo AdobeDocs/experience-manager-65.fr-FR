@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.18.0 Forms on JEE fournit deux types d’installation : [Programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et [Programme d’installation des correctifs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+AEM 6.5.18.0 Forms on JEE fournit deux types de programme d’installation : le [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et le [programme d’installation des correctifs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
 **Programme d’installation complet** : vous pouvez utiliser le programme d’installation complet pour configurer de nouvelles instances d’AEM Forms ou effectuer des mises à niveau depuis AEM 6.5.x.x Forms on JEE vers AEM 6.5.18.0 Forms on JEE.
 
@@ -70,7 +70,7 @@ L’image suivante illustre les scénarios d’utilisation du programme d’inst
 
 ![Programme d’installation complet et programme d’installation de correctifs](/help/forms/using/assets/full-and-patch-installer.png)
 
-Voir [Instructions d’installation d’AEM 6.5 Service Pack Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr) article pour installer le dernier Service Pack pour l’environnement JEE.
+Consultez l’article [Instructions d’installation du Pack de services AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr) pour installer le dernier pack de services pour l’environnement JEE.
 
 <!--
 [Work in Progress]

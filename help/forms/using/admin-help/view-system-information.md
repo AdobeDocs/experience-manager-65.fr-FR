@@ -1,6 +1,6 @@
 ---
 title: Afficher les informations du système
-description: Découvrez comment afficher des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM forms.
+description: Découvrez comment afficher des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -10,29 +10,29 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Afficher les informations du système {#view-system-information}
 
-L’onglet Système affiche des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM forms. Pour accéder à ces informations, dans Administration Console, cliquez sur Health Monitor dans le coin supérieur droit de la page. Si vous exécutez AEM forms dans un environnement organisé en grappes, les informations affichées concernent le noeud sélectionné dans la liste Serveur .
+L’onglet Système affiche des graphiques de surveillance des ressources et des informations sur le serveur qui exécute AEM Forms. Pour accéder à ces informations, dans la console d’administration, cliquez sur Health Monitor en haut à droite de la page. Si vous exécutez AEM Forms dans un environnement organisé en clusters, les informations affichées concernent le nœud sélectionné dans la liste des serveurs.
 
 Pour enregistrer les informations système actuelles en tant que fichier de propriétés, cliquez sur Enregistrer.
 
-Le volet de droite de l’onglet Système affiche des représentations graphiques des informations suivantes :
+Le volet de droite de l’onglet Système affiche des représentations graphiques des informations suivantes :
 
-* Éléments de tâche et de travail
+* Dénombrement des tâches et des travaux
 * Utilisation du tas et du tas validé
 * Utilisation de non-tas et de non-tas validés
 
-Vous pouvez faire glisser le pointeur le long de la chronologie pour obtenir des valeurs pour un moment donné.
+Déplacez le curseur pour obtenir les valeurs d’un moment particulier.
 
 >[!NOTE]
 >
->Les données graphiques, les valeurs des informations sur le serveur et l’heure de l’horloge sont mises à jour toutes les 10 minutes. Les informations ne sont pas affichées en temps réel.
+>Les données graphiques, les valeurs des informations sur le serveur et l’heure de l’horloge sont mises à jour toutes les 10 minutes. Les informations ne sont pas affichées en temps réel.
 
-Le volet gauche de l’onglet Système affiche les informations suivantes sur le serveur ou le noeud :
+Le volet gauche de l’onglet Système affiche les informations suivantes sur le serveur ou le nœud :
 
 **Machine virtuelle :** version de la machine virtuelle Java (JVM) sur le serveur.
 
@@ -60,9 +60,9 @@ Le volet gauche de l’onglet Système affiche les informations suivantes sur le
 
 **Tas maximum :** quantité maximale de tas utilisée.
 
-**Nom du système d’exploitation :** Nom du système d’exploitation exécuté sur le serveur AEM Forms.
+**Nom du système d’exploitation :** nom du système d’exploitation s’exécutant sur le serveur AEM Forms.
 
-**Version du système d’exploitation :** Numéro de version du système d’exploitation s’exécutant sur le serveur AEM Forms.
+**Version du système d’exploitation :** numéro de version du système d’exploitation s’exécutant sur le serveur AEM Forms.
 
 **Architecture du système d’exploitation :** architecture du système d’exploitation sur lequel la JVM est en cours d’exécution.
 

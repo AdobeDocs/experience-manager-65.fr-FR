@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1911'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Pour plus d’informations sur le service Barcoded Forms, Consultez la section [
 
 ## Décoder les données Barcoded Forms {#decoding-barcoded-form-data}
 
-Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les données d’un formulaire PDF ou d’une image contenant un code à barres. Le décodage des données de formulaire consiste à extraire les données contenues dans le code à barres. Avant que les données puissent être décodées d’un formulaire PDF (ou d’une image), un utilisateur doit remplir le formulaire avec des données.
+Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les données d’un formulaire PDF ou d’une image contenant un code à barres. Le décodage des données de formulaire consiste à extraire les données qui se trouvent dans le code à barres. Avant que les données puissent être décodées d’un formulaire PDF (ou d’une image), un utilisateur doit remplir le formulaire avec des données.
 
 >[!NOTE]
 >
@@ -50,16 +50,16 @@ Pour décoder les données d’un formulaire PDF, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Vous devez ajouter les fichiers JAR suivants au chemin d’accès aux classes de votre projet :
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
-* xercesImpl.jar (dans &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* xercesImpl.jar (situé dans &lt;répertoire dʼinstallation>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
-Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBOSS, vous devez remplacer adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de tous les fichiers JAR AEM Forms, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de tous les fichiers JAR AEM Forms, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet API client Barcoded Forms**
 
@@ -67,7 +67,7 @@ Avant de pouvoir effectuer par programmation une opération de service Barcoded�
 
 **Obtenir un formulaire PDF contenant des données à code à barres**
 
-Obtenez un formulaire de PDF contenant un code à barres contenant des données utilisateur.
+Obtenez un formulaire PDF doté dʼun code à barres contenant des données utilisateur.
 
 **Décoder les données du formulaire PDF**
 
@@ -112,7 +112,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR clients dans le chemin de classe de votre projet Java.
 
 1. Créer un objet API client Barcoded Forms
 
@@ -125,7 +125,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Décoder les données du formulaire PDF
 
-   Décodez les données du formulaire en appelant la fonction `BarcodedFormsServiceClient` de `decode` et transmission des valeurs suivantes :
+   Décodez les données du formulaire en appelant la méthode `decode` de l’objet `BarcodedFormsServiceClient` et en transmettant les valeurs suivantes :
 
    * L’objet `com.adobe.idp.Document` contenant le formulaire PDF.
    * Un objet `java.lang.Boolean` spécifiant s’il faut décoder un code à barres PDF417.
@@ -142,9 +142,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Convertir les données en source de données XML
 
-   Convertissez les données décodées en données XDP ou XFDF en appelant la fonction `BarcodedFormsServiceClient` de `extractToXML` et transmission des valeurs suivantes :
+   Convertissez les données décodées en données XDP ou XFDF en appelant la méthode `extractToXML` de l’objet `BarcodedFormsServiceClient` et en transmettant les valeurs suivantes :
 
-   * La variable `org.w3c.dom.Document` qui contient des données décodées (veillez à utiliser l’objet `decode` valeur renvoyée par la méthode ).
+   * L’objet `org.w3c.dom.Document` qui contient des données décodées (veillez à utiliser la valeur de retour de la méthode `decode`).
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.Delimiter` spécifiant le délimiteur de ligne. Il est recommandé de spécifier `Delimiter.Carriage_Return`.
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.Delimiter` spécifiant le délimiteur de champ. Par exemple, spécifiez `Delimiter.Tab`.
    * Une valeur d’énumération `com.adobe.livecycle.barcodedforms.XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.
@@ -157,9 +157,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Traiter les données décodées
 
-   * Effectuez une itération à l’aide du `java.util.List` pour obtenir chaque objet `org.w3c.dom.Document` qui se trouve dans la liste.
+   * Effectuez une itération au sein de l’objet `java.util.List` pour obtenir chaque objet `org.w3c.dom.Document` qui se trouve dans la liste.
    * Pour chaque élément de la liste, convertissez l’objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. (La logique d’application qui convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document` est illustrée dans l’exemple Décoder des données de formulaire à code à barres à l’aide de l’API Java).
-   * Enregistrez les données XML en tant que fichier XML en appelant la méthode `com.adobe.idp.Document` de `copyToFile`, et transmission d’un objet File représentant le fichier XML.
+   * Enregistrez les données XML en tant que fichier XML en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant un objet File représentant le fichier XML.
 
 **Voir également**
 
@@ -192,7 +192,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Décoder les données du formulaire PDF
 
-   Décodez les données du formulaire en appelant la fonction `BarcodedFormsServiceService` de `decode` et transmission des valeurs suivantes :
+   Décodez les données du formulaire en appelant la méthode `decode` de l’objet `BarcodedFormsServiceService` et en transmettant les valeurs suivantes :
 
    * L’objet `BLOB` contenant le formulaire PDF.
    * Un objet `Boolean` spécifiant s’il faut décoder un code à barres PDF417.
@@ -209,9 +209,9 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 
 1. Convertir les données en source de données XML
 
-   Convertissez les données décodées en données XDP ou XFDF en appelant la fonction `BarcodedFormsServiceService` de `extractToXML` et transmission des valeurs suivantes :
+   Convertissez les données décodées en données XDP ou XFDF en appelant la méthode `extractToXML` de l’objet `BarcodedFormsServiceService` et en transmettant les valeurs suivantes :
 
-   * Une valeur string qui contient des données décodées (veillez à utiliser la variable `decode` valeur renvoyée par la méthode ).
+   * Une valeur de chaîne qui contient des données décodées (veillez à utiliser la valeur de retour de la méthode `decode`).
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de ligne. Il est recommandé de spécifier `Delimiter.Carriage_Return`.
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de champ. Par exemple, spécifiez `Delimiter.Tab`.
    * Une valeur d’énumération `XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.

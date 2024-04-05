@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 83%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Pour les composants principaux AEM CIF, la mise en cache étant configurée comp
 
 ### Configuration
 
-Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, de l’importance cruciale qu’un composant affiche toujours les dernières données possibles, etc. Notez qu’il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
+Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, du degré auquel il est important qu’un composant affiche toujours les dernières données possibles, etc. Notez qu’il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
@@ -28,7 +28,7 @@ Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **e
 
 ### Exemples
 
-Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté aux produits. Par conséquent, la durée de cette entrée de cache peut être &quot;importante&quot; si l’ensemble des attributs de produit ne change pas souvent. Bien que ce soit spécifique au projet, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
+Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien que ce soit spécifique au projet, Adobe recommande des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
 
 Ces valeurs sont généralement configurées avec l’entrée de cache suivante :
 

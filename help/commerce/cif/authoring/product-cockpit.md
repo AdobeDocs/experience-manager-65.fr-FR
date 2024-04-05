@@ -1,12 +1,12 @@
 ---
-title: Console du produit
-description: Utilisation de Product Cockpit qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
+title: Cockpit de produits
+description: Utilisation du cockpit de produits qui fournit une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez désassembler un document PDF en le transmettant au service Assemble
 
 ![pd_pd_pdfsfrombookmarks](assets/pd_pd_pdfsfrombookmarks.png)
 
-Pour désassembler un document de PDF, assurez-vous que la variable `PDFsFromBookmarks` est dans le document DDX. L’élément `PDFsFromBookmarks` est un élément généré et ne peut être qu’un élément enfant de l’élément `DDX`. Il ne comporte pas d’attribut `result` car cela peut entraîner la génération de plusieurs documents.
+Pour désassembler un document PDF, assurez-vous que l’élément `PDFsFromBookmarks` se trouve dans le document DDX. L’élément `PDFsFromBookmarks` est un élément généré et ne peut être qu’un élément enfant de l’élément `DDX`. Il ne comporte pas d’attribut `result` car cela peut entraîner la génération de plusieurs documents.
 
 L’élément `PDFsFromBookmarks` entraîne la génération d’un seul document pour chaque signet de niveau 1 dans le document source.
 

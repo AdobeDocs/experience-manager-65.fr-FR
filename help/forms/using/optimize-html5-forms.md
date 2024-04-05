@@ -11,25 +11,25 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 # Optimiser les formulaires HTML5 {#optimizing-html-forms}
 
-HTML5 forms effectue le rendu des formulaires au format HTML5. La sortie générée peut être volumineuse en fonction de facteurs tels que la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse du HTML à l’aide du serveur web à partir duquel la requête est traitée. Cette approche réduit la taille de la réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre le serveur et les ordinateurs clients.
+HTML5 Forms effectue le rendu des formulaires au format HTML5. La sortie générée peut être volumineuse en fonction de facteurs tels que la taille du formulaire et les images qu’il contient. Pour optimiser le transfert des données, l’approche recommandée consiste à compresser la réponse HTML à l’aide du serveur web à partir duquel la demande est traitée. Cette approche réduit la taille de la réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre les ordinateurs serveur et client.
 
-Cet article décrit les étapes requises pour activer la compression sur le serveur web Apache 2.0 32 bits, avec JBoss.
+Cet article décrit les étapes requises pour activer la compression sur le serveur web Apache 2.0 32 bits, avec JBoss.
 
 >[!NOTE]
 >
 >Les instructions suivantes ne concernent que le serveur web Apache 2.0 32 bits.
 
-Procurez-vous le logiciel du serveur web Apache correspondant à votre système d’exploitation :
+Procurez-vous le logiciel du serveur web Apache correspondant à votre système d’exploitation :
 
-* Pour Windows, téléchargez le serveur web Apache à partir du site Apache HTTP Server Project.
-* Pour Solaris 64 bits, téléchargez le serveur web Apache à partir du site Web Sunfreeware for Solaris.
-* Pour Linux, le serveur web Apache est préinstallé sur un système Linux.
+* Windows : téléchargez le serveur web Apache à partir du site Apache HTTP Server Project.
+* Solaris 64 bits : téléchargez le serveur web Apache à partir du site web Sunfreeware for Solaris.
+* Linux : le serveur web Apache est préinstallé sur les systèmes Linux.
 
 Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
 
@@ -45,7 +45,7 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >
    >Pour Linux, le répertoire APACHE_HOME par défaut est /etc/httpd/.
 
-1. Configurez le proxy sur le port 8080 de JBoss.
+1. Configurez le proxy sur le port 8080 de JBoss.
 
    Ajoutez la configuration suivante au fichier de configuration *APACHE_HOME/conf/httpd.conf*.
 
@@ -59,7 +59,7 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >Lorsque vous utilisez un proxy, les modifications de configuration suivantes sont requises :
    >
    >* Accès : *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Modification de la configuration pour Apache Sling Referrer Filter
+   * Modifier la configuration pour Apache Sling Referrer Filter
    * Dans le champ Autoriser les hôtes, ajoutez l’entrée pour le serveur proxy.
 
 1. Activez la compression.

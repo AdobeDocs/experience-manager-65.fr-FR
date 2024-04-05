@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -44,12 +44,12 @@ Assurez-vous d’avoir configuré les sources de données que vous avez l’inte
 
    * Spécifiez un nom pour le modèle de données de formulaire.
    * (**Facultatif**) Spécifiez le titre, la description et les balises du modèle de données de formulaire.
-   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Sélectionnez l’icône en forme de coche en regard de l’option **[!UICONTROL Configuration des sources de données]** et sélectionnez le noeud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Cela limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le nœud de configuration sélectionné. Cependant, toutes les bases de données JDBC et les sources de données des profils d’utilisateurs sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
+   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Sélectionnez l’icône en forme de coche en regard du champ **[!UICONTROL Configuration des sources de données]** et sélectionnez le nœud de configuration où résident les services cloud pour les sources de données que vous souhaitez utiliser. Cela limite la liste des sources de données disponibles pour sélection sur la page suivante à celles disponibles dans le nœud de configuration sélectionné. Cependant, toutes les bases de données JDBC et les sources de données des profils d’utilisateurs sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
 
    Sélectionnez **[!UICONTROL Suivant]**.
 
 1. (**Applicable uniquement si les sources de données sont configurées**) L’écran **[!UICONTROL Sélectionner la source de données]** répertorie les sources de données disponibles, le cas échéant. Sélectionnez les sources de données à utiliser dans le modèle de données de formulaire.
-1. Sélectionner **[!UICONTROL Créer]** et dans la boîte de dialogue de confirmation, sélectionnez **[!UICONTROL Ouvrir]** pour ouvrir l’éditeur de modèle de données de formulaire.
+1. Cliquez sur **[!UICONTROL Créer]**, puis dans la boîte de dialogue de confirmation, sélectionnez **[!UICONTROL Ouvrir]** pour lancer l’éditeur de modèles de données de formulaire.
 
 Passons en revue les différents composants de l’interface utilisateur de l’éditeur de modèles de données de formulaire.
 
@@ -73,21 +73,21 @@ Pour plus d’informations sur l’éditeur de modèles de données de formulair
 
 Pour ajouter ou mettre à jour des sources de données dans un modèle de données de formulaire existant, procédez comme suit.
 
-1. Accédez à **[!UICONTROL Forms > Intégrations de données]**, sélectionnez le modèle de données de formulaire dans lequel vous souhaitez ajouter ou mettre à jour des sources de données, puis sélectionnez **[!UICONTROL Propriétés]**.
+1. Accédez à **[!UICONTROL Formulaires > Intégrations de données]**, sélectionnez le modèle de données de formulaire dans lequel vous souhaitez ajouter ou mettre à jour des sources de données, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans les propriétés du modèle de données de formulaire, accédez à l’onglet **[!UICONTROL Mettre à jour la source]**.
 
    Dans l’onglet Mettre à jour la source :
 
-   * Sélectionnez l’icône de navigation dans le **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un noeud de configuration où réside la configuration cloud pour la source de données que vous souhaitez ajouter. Si vous ne sélectionnez pas de noeud, les configurations cloud résidant uniquement dans le `global` sont répertoriés lorsque vous sélectionnez **[!UICONTROL Ajouter des sources]**.
+   * Sélectionnez l’icône de navigation dans le champ **[!UICONTROL Configuration tenant compte du contexte]** et sélectionnez un nœud de configuration où se trouve la configuration cloud de la source de données que vous voulez utiliser. Si vous ne sélectionnez pas de nœud, les configurations cloud qui se trouvent uniquement dans le nœud `global` sont répertoriées lorsque vous sélectionnez **[!UICONTROL Ajouter des sources]**.
 
-   * Pour ajouter une nouvelle source de données, sélectionnez **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
+   * Pour ajouter une nouvelle source de données, sélectionnez **[!UICONTROL Ajouter des sources]** et sélectionnez les sources de données à ajouter au modèle de données de formulaire. Toutes les sources de données configurées en `global` et le nœud de configuration sélectionné, le cas échéant, s’affichent.
 
-   * Pour remplacer une source de données existante par une autre source de données du même type, sélectionnez l’option **[!UICONTROL Modifier]** pour la source de données et sélectionnez dans la liste des sources de données disponibles.
-   * Pour supprimer une source de données existante, sélectionnez l’option **[!UICONTROL Supprimer]** pour la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
+   * Pour remplacer une source de données existante par une autre source de données du même type, sélectionnez l’icône **[!UICONTROL Modifier]** de la source de données et sélectionnez-en une dans la liste des sources de données disponibles.
+   * Pour supprimer une source de données existante, sélectionnez l’icône **[!UICONTROL Supprimer]** de la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
 
    ![fdm-properties](assets/fdm-properties.png)
 
-1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
+1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
 
 >[!NOTE]
 >

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4024'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +183,7 @@ Vous pouvez avoir l’autorisation d’ajouter, de mettre à jour, de supprimer 
 
 ### Enregistrer votre travail sans terminer la tâche {#save-your-work-without-completing-the-task}
 
-1. Dans n’importe quel onglet, sélectionnez **Enregistrer**.
+1. Sur n’importe quel onglet, sélectionnez **Enregistrer**.
 
    La boîte de dialogue Enregistrer comme brouillon s’affiche. Le nom par défaut du brouillon est le nom de la tâche du modèle de la tâche.
 
@@ -191,12 +191,12 @@ Vous pouvez avoir l’autorisation d’ajouter, de mettre à jour, de supprimer 
 
    >[!NOTE]
    >
-   >vous pouvez configurer l’espace de travail afin qu’il enregistre automatiquement les informations saisies par l’utilisateur en tant que brouillon. Si l’enregistrement automatique est activé et qu’un utilisateur travaille sur un brouillon, ce dernier est enregistré de manière périodique. En cas d’enregistrement automatique, le nom par défaut de la tâche est automatiquement renseigné.
+   >vous pouvez configurer l’espace de travail afin qu’il enregistre automatiquement les informations saisies par l’utilisateur en tant que brouillon. Si l’enregistrement automatique est activé et qu’un utilisateur travaille sur un brouillon, ce dernier est enregistré de manière périodique. Si l’enregistrement automatique est activé, le nom par défaut de la tâche est automatiquement utilisé.
    >
    >
    >Pour en savoir plus, consultez Enregistrer régulièrement le brouillon dans [Gestion des préférences](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Dans la boîte de dialogue Enregistrer en tant que brouillon, spécifiez un nom unique pour la tâche et sélectionnez **OK**.
+1. Dans la boîte de dialogue Enregistrer comme brouillon, spécifiez un nom unique pour la tâche et sélectionnez **OK**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 
@@ -371,7 +371,7 @@ Si vous avez accès à la liste des tâches d’un autre utilisateur, vous ne po
 
 Si vous envisagez de vous absenter du bureau, vous pouvez spécifier les actions à entreprendre pour les tâches qui vous sont affectées pendant cette période.
 
-Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous vous trouvez dans un fuseau horaire différent du serveur, le fuseau horaire utilisé est celui du serveur.
+Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Si vous êtes dans un fuseau horaire différent de celui du serveur, le fuseau horaire utilisé est celui du serveur.
 
 Vous pouvez définir une personne par défaut à laquelle toutes vos tâches sont envoyées. Vous pouvez également spécifier des exceptions pour que des tâches issues de processus spécifiques soient envoyées à un utilisateur différent ou pour qu’elles restent dans votre liste de tâches jusqu’à votre retour. Si la personne désignée est également absente du bureau, la tâche passe à l’utilisateur qu’elle a désigné. Si la tâche ne peut pas être affectée à une personne présente, elle demeure dans votre liste de tâches.
 

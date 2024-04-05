@@ -1,5 +1,5 @@
 ---
-title: Création de vidéos dans Sites Classic
+title: Vidéo dans la création de sites Classic
 description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez charger des vidéos directement dans les ressources pour un codage automatique sur Dynamic Media Classic et accéder aux vidéos Dy directement depuis les Assets à des fins de création de page.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1662'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
 #### Configuration de la conception {#configuring-design}
 
-Le composant vidéo de base doit connaître les profils vidéo à utiliser pour créer la liste des sources vidéo. Ouvrez la boîte de dialogue de conception des composants vidéo et configurez la conception des composants pour l’utilisation des nouveaux profils vidéo.
+Le composant vidéo de base doit connaître les profils vidéo à utiliser afin de créer la liste des sources vidéo. Ouvrez la boîte de dialogue de conception des composants vidéo et configurez la conception des composants pour l’utilisation des nouveaux profils vidéo.
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Le composant vidéo de base doit connaître les profils vidéo à utiliser pour 
 
 >[!NOTE]
 >
->Les modifications apportées à la conception nécessitent l’activation de la conception pour qu’elle prenne effet lors de la publication.
+>Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
 
 1. Ouvrez la boîte de dialogue de conception des composants vidéo de base et sélectionnez l’onglet **[!UICONTROL Profils]**. Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo Dynamic Media Classic. L’ordre de la liste des profils de la boîte de dialogue de conception définit également l’ordre des sources vidéo lors du rendu.
 1. Pour les navigateurs ne prenant pas en charge HTML5, le composant vidéo permet de configurer Flash comme solution de secours. Ouvrez la boîte de dialogue de conception des composants vidéo et sélectionnez l’onglet **[!UICONTROL Flash]**. Configurez les paramètres du lecteur Flash Player et attribuez-lui un profil de secours.

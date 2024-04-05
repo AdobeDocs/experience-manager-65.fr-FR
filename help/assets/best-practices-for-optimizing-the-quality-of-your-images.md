@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques relatives à l’optimisation de la qualité des images dans Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
-L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif parce que les individus perçoivent différemment la qualité de l&#39;image. L&#39;expérimentation structurée est la clé.
+L’optimisation de la qualité des images peut être un processus chronophage, car de nombreux facteurs contribuent à l’obtention de résultats acceptables. Le résultat est en partie subjectif parce que les individus perçoivent différemment la qualité de l’image. L’expérimentation structurée est essentielle.
 
 Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images Dynamic Media permettant d’affiner et d’optimiser les images et les rendus. Les instructions suivantes peuvent vous aider à rationaliser le processus et à obtenir de bons résultats rapidement à l’aide de commandes essentielles et de pratiques recommandées.
 
@@ -26,10 +26,10 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 
 * JPG ou PNG sont les meilleurs choix pour diffuser des images de bonne qualité avec une taille et un poids gérables.
 * Si aucune commande de format n’est fournie dans l’URL, la diffusion d’images Dynamic Media est configurée par défaut sur JPG pour la diffusion.
-* JPG compresse les images à un ratio de 10:1 et produit généralement des images de plus petite taille. Le format PNG compresse selon un ratio d’environ 2:1, sauf dans certains cas, par exemple lorsque les images comportent un arrière-plan blanc. En règle générale, cependant, les fichiers PNG sont plus volumineux que les fichiers JPG.
-* JPG utilise la compression avec perte, ce qui signifie que les éléments d’image (pixels) sont déposés pendant la compression. Le format PNG, en revanche, utilise une compression sans perte.
-* JPG compresse souvent les images photographiques avec une meilleure fidélité que les images synthétiques avec des bords nets et un contraste.
-* Si vos images contiennent de la transparence, utilisez PNG, car JPG ne prend pas en charge la transparence.
+* Le format JPG se compresse à un ratio de 10:1 et produit généralement des fichiers image de plus petite taille. Le format PNG compresse selon un ratio d’environ 2:1, sauf dans certains cas, par exemple lorsque les images comportent un arrière-plan blanc. En règle générale, les fichiers PNG sont cependant plus volumineux que les fichiers JPG.
+* Le format JPG utilise la compression avec perte, ce qui signifie que les éléments d’image (pixels) sont supprimés pendant la compression. Le format PNG, en revanche, utilise une compression sans perte.
+* Le format JPG compresse souvent les images photographiques avec une meilleure fidélité que les images synthétiques aux contours et au contraste nets.
+* Si vos images contiennent de la transparence, utilisez le format PNG, car le format JPG ne prend pas en charge la transparence.
 
 La pratique recommandée pour le format d’image consiste à commencer par le paramètre le plus courant : `&fmt=JPG`.
 
@@ -53,10 +53,10 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 
 Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion, lors de la diffusion, ou les deux. En général, cependant, accentuez les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la diffusion, sur une URL, vous donne généralement les meilleurs résultats.
 
-Vous pouvez utiliser deux méthodes d’accentuation d’image :
+Vous pouvez utiliser deux méthodes d’accentuation d’image :
 
 * Accentuation simple (`&op_sharpen`) : à l’instar du filtre d’accentuation utilisé dans Photoshop, l’accentuation simple applique une accentuation de base à l’affichage final de l’image à la suite d’un redimensionnement dynamique. Cependant, cette méthode ne peut pas être configurée par l’utilisateur. Il est recommandé de ne pas utiliser &amp;op_sharpen sauf si cette méthode est requise.
-* Masquage flou (`&op_USM`) : le masquage flou est un filtre d’accentuation standard. La bonne pratique consiste à accentuer les images à l’aide d’un masquage flou en suivant les instructions ci-dessous. Le masquage flou permet de contrôler les trois paramètres suivants :
+* Masquage flou (`&op_USM`) : le masquage flou est un filtre d’accentuation standard. La bonne pratique consiste à accentuer les images à l’aide de l’accentuation en suivant les instructions ci-dessous. L’accentuation permet de contrôler les trois paramètres suivants :
 
    * `&op_sharpen=amount,radius,threshold`
 
@@ -77,14 +77,14 @@ Vous pouvez utiliser deux méthodes d’accentuation d’image :
 
       * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 
-Il est recommandé de commencer par le paramètre rayon du masque flou. Les paramètres de rayon que vous pouvez commencer par sont les suivants :
+Il est recommandé de commencer par le paramètre rayon d’accentuation. Les paramètres rayon avec lesquels vous pouvez commencer sont les suivants :
 
 * **[!UICONTROL Site Web]** - 0,2 à 0,3 pixel
 * **[!UICONTROL Impression photographique (250 à 300 ppp)]** - 0,3 à 0,5 pixel
 * **[!UICONTROL Impression offset (266 à 300 ppp)]** - 0,7 à 1,0 pixel
 * **[!UICONTROL Impression sur toile (150 ppp)]** - 1,5 à 2,0 pixels
 
-Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne correspond toujours pas à votre choix, augmentez le rayon d’un point décimal et réexécutez la quantité de 1,75 à 4. Répétez l’opération si nécessaire.
+Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne vous convient toujours pas, augmentez le rayon d’un point décimal, puis réexécutez la quantité de 1,75 à 4. Recommencez si nécessaire.
 
 Laissez le paramètre monochrome sur 0.
 
@@ -118,7 +118,7 @@ En règle générale, pour obtenir une image de qualité élevée mais un fichie
 
 Cette combinaison de paramètres produit d’excellents résultats dans la plupart des cas.
 
-Si l’image nécessite une optimisation supplémentaire, affinez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez graduellement la quantité de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
+Si l’image nécessite davantage d’optimisation, ajustez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez graduellement la quantité de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
 
 Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, relancez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
 

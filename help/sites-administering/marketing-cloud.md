@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Intégrer à Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/fr/products/marketing-cloud/main.html) comprend des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des commerces en ligne. Le cloud est constitué d’applications intégrées permettant de collecter et de libérer la puissance des informations sur les clients afin d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la distribution de contenu.
+[Adobe Experience Cloud](https://business.adobe.com/fr/products/marketing-cloud/main.html) comprend des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des commerces en ligne. Le cloud se compose d’applications intégrées permettant de collecter et de libérer la puissance des informations sur la clientèle, afin d’optimiser les efforts d’acquisition, de conversion et de rétention de la clientèle, ainsi que la création et la distribution de contenu.
 
 Intégrez Adobe Experience Manager (AEM) de manière transparente aux produits suivants de la solution Adobe Experience Cloud :
 
@@ -37,8 +37,8 @@ Adobe Analytics vous permet d’analyser les données de vos sites.
 
 L’intégration à Adobe Analytics vous permet d’effectuer les opérations suivantes :
 
-* Activer le suivi des utilisateurs d’Adobe Analytics
-* Mappez vos modes d’exécution (par exemple, création, publication) à différentes suites de rapports.
+* Activer le suivi des utilisateurs et utilisatrices d’Adobe Analytics.
+* Mapper vos modes d’exécution (par exemple, création et publication) à différentes suites de rapports.
 * Envoyez les variables ClientContext en tant que variables de conversion ou propriétés de trafic.
 * Utilisez des mappages de variables prédéfinis.
 * Configurez des sections de site entières en une seule fois.

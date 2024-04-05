@@ -1,6 +1,6 @@
 ---
 title: Obtention d’informations sur la page au format JSON
-description: Pour obtenir les informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
+description: Pour obtenir les informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Obtention d’informations sur la page au format JSON{#obtaining-page-information-in-json-format}
 
-Pour obtenir les informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
+Pour obtenir les informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
 
 Le servlet PageInfo renvoie des informations sur les ressources dans le référentiel. Le servlet est lié à l’URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise le paramètre `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur le nœud `/content/we-retail/us/en` :
 
@@ -26,7 +26,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Si vous avez besoin d’informations sur les pages au format JSON pour fournir la diffusion de contenu aux canaux qui ne sont pas des pages web AEM traditionnelles, par exemple :
+>Si vous avez besoin d’informations sur la page au format JSON pour fournir la diffusion de contenu aux canaux qui ne sont pas des pages web AEM traditionnelles, par exemple :
 >
 >* des applications sur une seule page ;
 >* des applications mobiles natives ;
@@ -36,30 +36,30 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 ## Fournisseurs d’informations sur la page {#page-information-providers}
 
-Les composants de page peuvent être associés à un ou plusieurs services `com.day.cq.wcm.api.PageInfoProvider` qui génèrent des métadonnées de page. Le servlet PageInfo appelle chaque service PageInfoProvider et agrège les métadonnées :
+Les composants de page peuvent être associés à un ou plusieurs services `com.day.cq.wcm.api.PageInfoProvider` qui génèrent des métadonnées de page. Le servlet PageInfo appelle chaque service PageInfoProvider et agrège les métadonnées :
 
-1. Le client HTTP envoie une requête au servlet PageInfo, qui inclut l’URL de la page.
+1. Le client HTTP envoie une requête au servlet PageInfo, qui inclut l’URL de la page.
 1. Le servlet PageInfo détecte le composant qui effectue le rendu de la page.
 1. Le servlet PageInfo appelle chaque PageInfoProvider associé au composant.
-1. Le servlet regroupe les métadonnées que chaque PageInfoProvider renvoie et ajoute les métadonnées à la réponse HTTP dans un objet JSON.
+1. Le servlet agrège les métadonnées que chaque PageInfoProvider renvoie et ajoute les métadonnées à la réponse HTTP dans un objet JSON.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
->Tout comme PageInfoProviders, utilisez ListInfoProviders pour mettre à jour les listes d’informations au format JSON. (Voir [Personnalisation de la console d’administration des sites web](/help/sites-developing/customizing-siteadmin.md).)
+>Comme pour PageInfoProviders, utilisez ListInfoProviders pour mettre à jour les listes d’informations au format JSON. (Voir [Personnalisation de la console d’administration des sites web](/help/sites-developing/customizing-siteadmin.md).)
 
 ## Fournisseurs d’informations de page par défaut {#default-page-information-providers}
 
 Le composant `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
 
-* **Fournisseur d’état de page par défaut :** Informations sur l’état de la page, telles que son verrouillage, si la page est la charge utile d’un workflow actif et les workflows disponibles pour la page.
-* **Fournisseur d’informations sur la relation en direct :** Informations concernant la gestion multisite (MSM), par exemple si la page fait partie d’une impression bleue et s’il s’agit d’une Live Copy.
+* **Fournisseur de statut de page par défaut :** informations sur le statut de la page, telles que son verrouillage, si la page est la payload d’un workflow actif et les workflows disponibles pour la page.
+* **Fournisseur d’informations sur la relation en direct :** informations concernant la gestion multisite (MSM), par exemple si la page fait partie d’un plan directeur et s’il s’agit d’une Live Copy.
 * **Servlet de langue du contenu** : langue de la page en cours et informations sur chacune des langues dans lesquelles la page est disponible.
 * **Fournisseur de statut du workflow** : informations de statut sur le workflow en cours dont la page fait partie du payload.
 * **Fournisseur d’informations sur le package de workflow** : fournit des informations sur chaque package de workflow stocké dans le référentiel et indique si chaque package contient la ressource actuelle.
-* **Fournisseur d’informations sur l’émulateur :** Informations sur les émulateurs d’appareil mobile disponibles pour cette ressource. Si le composant de page n’effectue pas le rendu des pages mobiles, aucun émulateur n’est disponible.
-* **Fournisseur d’informations sur les annotations :** Informations sur les annotations figurant sur la page.
+* **Fournisseur d’informations sur l’émulateur :** informations sur les émulateurs d’appareil mobile disponibles pour cette ressource. Si le composant de page n’effectue pas le rendu des pages mobiles, aucun émulateur n’est disponible.
+* **Fournisseur d’informations sur les annotations :** informations sur les annotations figurant sur la page.
 
 Par exemple, le servlet PageInfo renvoie la réponse JSON suivante pour le nœud `/content/we-retail/us/en` :
 
@@ -472,18 +472,18 @@ Configurez le service Fournisseur d’informations sur le package de workflow de
 
 >[!NOTE]
 >
->L’onglet Workflow de Sidekick utilise le servlet PageInfo pour obtenir une liste des packages de workflow. Dans la liste, vous pouvez sélectionner le package auquel ajouter la page active. Les filtres que vous créez affectent cette liste.
+>L’onglet Workflow du Sidekick utilise le servlet PageInfo pour obtenir une liste des packages de workflow. Dans la liste, vous pouvez sélectionner le package auquel ajouter la page active. Les filtres que vous créez affectent cette liste.
 >
 
 L’ID du service est `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Pour créer un filtre, indiquez une valeur pour une propriété `workflowpackageinfoprovider.filter`.
 
-Les valeurs de propriété comportent le préfixe + ou - , suivi du chemin d’accès au package :
+Les valeurs de propriété comportent le caractère + ou - , suivi du chemin d’accès au package :
 
-* Le chemin d’accès est le chemin d’accès du noeud racine du module de processus. Le chemin d’accès utilise la syntaxe FileVault.
-* Pour inclure un package, utilisez le préfixe + .
-* Pour exclure un package, utilisez le préfixe - .
+* Le chemin d’accès est le chemin du nœud racine du package de workflow. Le chemin d’accès utilise la syntaxe FileVault.
+* Pour inclure un package, utilisez le préfixe +.
+* Pour exclure un package, utilisez le préfixe -.
 
-Le service applique le résultat cumulé de tous les filtres. Par exemple, les valeurs de filtre suivantes excluent tous les modules de processus, à l’exception de ceux du dossier Editions :
+Le service applique le résultat cumulé de tous les filtres. Par exemple, les valeurs de filtre suivantes excluent tous les packages de workflow, à l’exception de ceux du dossier Editions :
 
 ```
 -/etc/workflow/packages(/.*)?
@@ -492,12 +492,12 @@ Le service applique le résultat cumulé de tous les filtres. Par exemple, les v
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Pour plus d’informations, voir [Configurer OSGi](/help/sites-deploying/configuring-osgi.md).
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configurer OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
-1. Ouvrez le CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Dans le dossier config de votre application, créez un noeud :
+1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Dans le dossier de configuration de votre application, créez un nœud :
 
    * Nom : `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
    * Type : `sling:OsgiConfig`
@@ -506,17 +506,17 @@ Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
    * Nom : `workflowpackageinfoprovider.filter`
    * Type : `String[]`
-   * Valeur : chemin d’accès au module de workflow au format correct.
+   * Valeur : chemin d’accès au package de workflow au bon format.
 
 1. Cliquez sur Enregistrer tout.
 
-Pour configurer le service dans la source de votre projet :
+Pour configurer le service dans la source de votre projet :
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source de votre projet.
 
    Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
-1. Copiez le texte suivant dans le fichier :
+1. Copiez le texte suivant dans le fichier :
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -532,7 +532,7 @@ Pour configurer le service dans la source de votre projet :
 
 1. Enregistrez le fichier.
 
-## Création d’un fournisseur d’informations sur la page {#creating-a-page-information-provider}
+## Créer un fournisseur d’informations sur la page {#creating-a-page-information-provider}
 
 Créez un service Fournisseur d’informations sur la page personnalisé pour ajouter des métadonnées de page que votre application peut facilement obtenir.
 
@@ -541,16 +541,16 @@ Créez un service Fournisseur d’informations sur la page personnalisé pour aj
 1. Créez un composant de page dans votre application. Utilisez `foundation/components/page` comme valeur de la propriété `sling:resourceSuperType`.
 
 1. Ajoutez un nœud sous le nœud de composant nommé `cq:infoProviders`.
-1. Sous le nœud `cq:infoProviders`, ajoutez un nœud pour votre service PageInfoProvider. Vous pouvez spécifier n’importe quel nom pour le noeud.
-1. Ajoutez la propriété suivante à votre noeud PageInfoProvider :
+1. Sous le nœud `cq:infoProviders`, ajoutez un nœud pour votre service PageInfoProvider. Vous pouvez spécifier n’importe quel nom pour le nœud.
+1. Ajoutez la propriété suivante à votre nœud PageInfoProvider :
 
-   * Nom : className
+   * Nom : className
    * Type : chaîne
-   * Valeur : PID de votre service PageInfoProvider.
+   * Valeur : PID de votre service PageInfoProvider.
 
 Dans le cas des ressources qui utilisent votre composant de page d’application comme `sling:resourceType`, le servlet PageInfo renvoie les métadonnées PageInfoProvider personnalisées en plus des métadonnées PageInfoProvider par défaut.
 
-### Exemple d’implémentation de PageInfoProvider {#example-pageinfoprovider-implementation}
+### Exemple de mise en œuvre de PageInfoProvider {#example-pageinfoprovider-implementation}
 
 La classe Java suivante implémente [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) et renvoie l’URL publiée de la ressource de page active.
 
@@ -599,7 +599,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-L’exemple suivant, en CRXDE Lite, montre le composant de page configuré pour utiliser le service PageUrlInfoProvider :
+L’exemple suivant, dans CRXDE Lite, montre le composant de page configuré pour utiliser le service PageUrlInfoProvider :
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

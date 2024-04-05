@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -22,12 +22,12 @@ Les nœuds dans le référentiel sont soumis aux conventions de dénomination de
 
 L’IU classique impose des restrictions plus strictes :
 
-* Valide le nom de la ressource lorsqu’un nom de noeud explicite est utilisé dans l’une des situations suivantes :
+* Valide le nom de la ressource avec un nom de nœud explicite lorsque l’une des conditions suivantes se vérifie :
 
-   * un titre de ressource est fourni pour la conversion dans le nom de noeud.
+   * un titre de ressource est fourni pour une conversion en nom de nœud ;
    * un nom de nœud explicite est fourni.
 
-* Caractères valides (seuls ces caractères sont réellement valides lors de la création d’une ressource dans l’interface utilisateur classique) :
+* Caractères valides (seuls ces caractères sont réellement valides lors de la création d’une ressource dans l’interface utilisateur classique) :
 
    * « a » à « z »
    * « A » à « Z »

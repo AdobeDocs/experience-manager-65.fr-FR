@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Avant d’effectuer par programmation une opération d’API client de service F
 Vous pouvez définir les options d’exécution de performances suivantes afin d’améliorer les performances du service Forms :
 
 * **Mettre les formulaires en cache**: vous pouvez mettre en cache un formulaire rendu en tant que PDF dans le cache du serveur. Chaque formulaire est mis en cache après avoir été généré pour la première fois. Lors d’un rendu ultérieur, si le formulaire mis en cache est plus récent que l’horodatage de la conception de formulaire, le formulaire est récupéré dans le cache. En mettant en cache des formulaires, vous améliorez les performances du service Forms car il n’a pas besoin de récupérer la conception de formulaire dans un référentiel.
-* Le rendu des guides de formulaire (obsolète) peut prendre plus de temps que les autres types de transformation. Il est recommandé de mettre en cache les guides de formulaire (obsolète) pour améliorer les performances.
+* Le rendu des guides de formulaire (obsolète) peut prendre plus de temps que les autres types de transformation. Il est recommandé de mettre en cache les guides de formulaires (obsolète) afin d’améliorer les performances.
 * **Option autonome** : si vous n’avez pas besoin du service Forms pour effectuer des calculs côté serveur, vous pouvez définir l’option Autonome sur `true`, ce qui entraîne la génération de formulaires sans informations d’état. Les informations d’état sont nécessaires si vous souhaitez générer un formulaire interactif à un utilisateur final qui saisit ensuite les informations dans le formulaire et le renvoie au service Forms. Le service Forms effectue ensuite une opération de calcul et renvoie le formulaire à l’utilisateur avec les résultats affichés dans le formulaire. Si un formulaire sans informations d’état est renvoyé au service Forms, seules les données XML sont disponibles et les calculs côté serveur ne sont pas effectués.
 * **PDF linéarisé** : un document PDF linéarisé est organisé pour autoriser l’accès incrémental efficace dans un environnement réseau. Le fichier PDF est un PDF valide à tous les égards et est compatible avec toutes les visionneuses et autres applications de PDF existantes. En d’autres termes, un PDF linéarisé peut être affiché pendant son téléchargement.
 * Cette option n’améliore pas les performances lorsqu’un formulaire PDF est rendu sur le client.

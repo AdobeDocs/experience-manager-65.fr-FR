@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2939'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -267,7 +267,7 @@ Suivez les directives de performance dans les cas suivants :
 * **Mise à niveau vers une nouvelle version** : lors de la mise à niveau vers une nouvelle version, il est important de comprendre les différences de performance par rapport à l’environnement en cours d’exécution. Il s’agit par exemple de la mise à niveau d’AEM 6.1 vers 6.2 ou d’AEM 6.0 CRX2 vers 6.2 OAK.
 * **Temps de réponse lent** : lorsque l’architecture Nodestore sélectionnée ne répond pas à vos besoins, il est important de comprendre les différences de performance par rapport aux autres options de topologie. Il s’agit par exemple du déploiement de TarMK au lieu de MongoMK ou de l’utilisation d’un magasin de données de fichiers au lieu d’un magasin de données Amazon S3 ou Microsoft® Azure.
 * **Ajout d’autres auteurs et autrices** : lorsque la topologie TarMK recommandée ne répond pas aux exigences de performance et que la mise à niveau du nœud d’instance de création a atteint la capacité maximale disponible, comprenez bien les différences de performance. Comparez l’utilisation de MongoMK avec trois nœuds d’instance de création ou plus. Par exemple, le déploiement de MongoMK au lieu de TarMK.
-* **Ajouter plus de contenu**: lorsque l’architecture de l’entrepôt de données recommandée ne répond pas à vos besoins, il est important de comprendre les différences de performances par rapport aux autres options de l’entrepôt de données. Exemple : utilisation du magasin de données Amazon S3 ou Microsoft® Azure au lieu d’un magasin de données de fichiers.
+* **Ajouter plus de contenu** : lorsque l’architecture recommandée de magasin de données ne répond pas à vos besoins, il est important de comprendre les différences de performance par rapport à d’autres options de magasin de données. Exemple : utilisation du magasin de données Amazon S3 ou Microsoft® Azure au lieu d’un magasin de données de fichiers.
 
 ## Présentation {#introduction}
 

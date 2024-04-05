@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Le contenu de votre site web est conservé dans une structure en arborescence. P
 
 ### Création d’une page {#creating-a-new-page}
 
-Avant de procéder à la modification, vous devez [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Avant de procéder à la modification, vous devez [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
 ### Ouvrir une page {#opening-a-page}
 
@@ -46,7 +46,7 @@ Pour de nombreuses actions, telles que la modification, vous devez [ouvrir une p
 
 ### Modifier une page {#editing-a-page}
 
-Si votre instance comporte déjà des pages ou si vous avez créé une page, vous pouvez : [modification d’une page](/help/sites-authoring/editing-content.md) par :
+Si votre instance comporte déjà des pages existantes ou si vous venez de créer une page, vous pouvez [modifier la page](/help/sites-authoring/editing-content.md) en procédant comme suit :
 
 * [Insertion d’un composant (paragraphe)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Modifier/Configurer/Copier/Couper/Supprimer/Coller](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant

@@ -1,6 +1,6 @@
 ---
 title: FAQ sur la diffusion de contenu HTTP/2
-description: Découvrez la diffusion de contenu HTTP2 et comment elle peut améliorer les performances globales de votre contenu web.
+description: Découvrez la diffusion de contenu HTTP2 et comment celle-ci peut améliorer les performances globales de votre contenu web.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # FAQ sur la diffusion de contenu HTTP/2{#http-delivery-of-content-faq}
 
-Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP/2. Lorsque vous utilisez HTTP/2, une augmentation globale des performances est remarquée.
+Adobe se réjouit d’annoncer la disponibilité de la diffusion de contenu HTTP/2. Lorsque vous utilisez HTTP/2, les performances globales augmentent.
 
 ## Qu’est-ce que le HTTP/2 ?  {#what-is-http}
 
@@ -33,7 +33,7 @@ L’amélioration des performances varie considérablement en fonction de facteu
 Les tests effectués par Adobe ont donné les résultats suivants :
 
 * Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performances les plus notables ont été enregistrés sur les appareils iOS.
-* Pour les visionneuses, les performances de chargement ont augmenté de 15 %.
+* Pour les visionneuses, les performances de chargement ont été améliorées jusqu’à 15 %.
 
 La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
 
@@ -67,9 +67,9 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 1. L’assistance clientèle Adobe vous ajoute à la liste d’attente des clients HTTP/2 par ordre chronologique d’envoi des demandes.
 1. Lorsqu’Adobe est prêt à traiter votre demande, l’assistance clientèle vous contacte pour coordonner la transition et définir une date cible.
-1. Vous recevez une notification à l’issue du processus et pouvez vérifier que la transition vers HTTP/2 a abouti.
+1. Vous recevez une notification à l’issue du processus et pouvez vérifier que la transition vers HTTP/2 a bien été effectuée.
 
-## Quand puis-je espérer passer à HTTP/2 ? {#when-can-i-expect-to-be-transitioned-over-to-http}
+## Quand puis-je espérer passer à HTTP/2 ? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 Les demandes sont traitées dans l’ordre dans lequel l’assistance clientèle Adobe les reçoit.
 

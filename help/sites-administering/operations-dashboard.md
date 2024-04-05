@@ -1,6 +1,6 @@
 ---
 title: Tableau de bord des opérations
-description: Découvrez comment utiliser le tableau de bord des opérations dans Adobe Experience Manager.
+description: Découvrez comment utiliser le tableau de bord des opérations dans Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -425,7 +425,7 @@ Exemples :
 * Si vous envisagez d’enregistrer tous les messages **ERREUR**, aucune configuration n’est nécessaire. Tous les messages ERREUR sont capturés par défaut.
 * Si vous envisagez de capturer tous les messages **ERREUR**, **AVERTISSEMENT** et **INFOS** : le nom de la journalisation doit être défini sur : **root**, et le niveau de journalisation défini sur : **INFOS**.
 
-* Si vous envisagez de capturer tous les messages provenant d’un certain package (par exemple, com.adobe.granite), le nom de l’enregistreur doit être défini sur : &quot;com.adobe.granite&quot;. Et le niveau de l’enregistreur est défini sur : **DEBUG** (ce qui capture tous les messages **ERREUR**, **AVERTISSEMENT**, **INFOS** et **DEBUG**), comme illustré dans l’image ci-dessous.
+* Si vous envisagez de capturer tous les messages provenant d’un certain package (par exemple com.adobe.granite), le nom de l’enregistreur doit être défini sur : « com.adobe.granite ». Et le niveau de l’enregistreur est défini sur : **DEBUG** (ce qui capture tous les messages **ERREUR**, **AVERTISSEMENT**, **INFOS** et **DEBUG**), comme illustré dans l’image ci-dessous.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -439,7 +439,7 @@ Exemples :
 
 >[!NOTE]
 >
->Les paramètres de la page de diagnostic n’ont aucune incidence sur ce qui est enregistré dans les fichiers journaux et inversement. Ainsi, même si le journal d’erreurs peut capturer des messages INFO, il est possible qu’ils ne s’affichent pas dans l’interface utilisateur des messages du journal. De plus, par le biais de l’interface utilisateur, il est possible d’attraper les messages DEBUG de certains packages sans affecter le journal des erreurs. Pour plus d’informations sur la configuration des fichiers journaux, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
+>Les paramètres de la page de diagnostic n’ont aucune incidence sur ce qui est enregistré dans les fichiers journaux et inversement. Ainsi, même si le journal d’erreurs peut capturer des messages INFO, il est possible qu’ils ne s’affichent pas dans l’interface utilisateur des messages du journal. Par ailleurs, par le biais de l’interface utilisateur, il est possible de capturer des messages DÉBOGAGE provenant de certains packages sans que cela affecte le journal des erreurs. Pour plus d’informations sur la configuration des fichiers journaux, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >

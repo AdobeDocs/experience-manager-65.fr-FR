@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la **[!UICONTROL Cible]** , indiquez où afficher la zone cliquable, par exemple le même onglet, un nouvel onglet ou un iFrame. Saisissez par exemple `https://www.adobe.com` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
+1. Cliquez sur la zone réactive et saisissez l’URL et le texte de remplacement. Dans la liste **[!UICONTROL Cible]**, spécifiez l’emplacement où vous souhaitez que la zone cliquable s’affiche (par exemple, le même onglet, un nouvel onglet ou un iFrame). Saisissez par exemple `https://www.adobe.com` comme URL, `Adobe website` comme texte de remplacement et spécifiez **[!UICONTROL Nouvel onglet]** dans la liste **[!UICONTROL Cible]** pour que la zone cliquable s’ouvre dans un nouvel onglet.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

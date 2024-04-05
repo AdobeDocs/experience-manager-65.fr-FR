@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ Par exemple, un rappel de tâche est configuré pour se produire trois jours ouv
 
 >[!NOTE]
 >
->Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h 00 sur un serveur s’exécutant à Londres, mais que l’utilisateur recevant le rappel se trouve à New York, l’utilisateur recevra le rappel à 5 h 00 (heure locale).
+>Lors du calcul des dates et heures à l’aide de calendriers professionnels, AEM Forms utilise la date et l’heure du serveur sur lequel il s’exécute et ne s’adapte pas à la différence entre les fuseaux horaires. Par exemple, si un rappel de tâche est planifié à 10 h 00 sur un serveur s’exécutant à Londres, mais que l’utilisateur ou l’utilisatrice recevant le rappel est à New York City, il ou elle recevra le rappel à 5 h 00 (heure locale).
 
 ## Utiliser le calendrier professionnel par défaut {#using-the-default-business-calendar}
 
-AEM Forms fournit un calendrier professionnel par défaut (*le calendrier intégré*) qui désigne les samedis et dimanches en tant que jours non ouvrés. Si tous les utilisateurs de votre entreprise ont les mêmes jours non ouvrés, vous pouvez mettre à jour le calendrier professionnel par défaut en fonction de votre entreprise. Lorsque vous utilisez uniquement le calendrier professionnel par défaut, vous n’avez pas besoin d’activer les calendriers professionnels dans User Management ni de fournir des mappages. Lorsqu’aucun autre calendrier professionnel n’est défini, AEM Forms utilise le calendrier professionnel par défaut.
+AEM Forms fournit un calendrier professionnel par défaut (*le calendrier intégré*) qui désigne les samedis et dimanches en tant que jours non ouvrés. Si tous les utilisateurs et utilisatrices de votre entreprise ont les mêmes jours non ouvrés, vous pouvez mettre à jour le calendrier professionnel par défaut en fonction de votre entreprise. Lorsque vous utilisez uniquement le calendrier professionnel par défaut, vous n’avez pas besoin d’activer les calendriers professionnels dans User Management ni de fournir des mappages. Lorsqu’aucun autre calendrier professionnel n’est défini, AEM Forms utilise le calendrier professionnel par défaut.
 
 ## Configurer plusieurs calendriers professionnels {#setting-up-multiple-business-calendars}
 
@@ -36,7 +36,7 @@ Si certains utilisateurs ou utilisatrices de votre entreprise ont des jours non 
 
 1. Choisissez comment vous associerez le calendrier professionnel approprié à un utilisateur ou une utilisatrice. Il existe deux manières d’associer un calendrier professionnel à un utilisateur ou une utilisatrice :
 
-   **Appartenance à un groupe :** Vous pouvez affecter un calendrier professionnel à un utilisateur en fonction de son appartenance à un groupe. Dans ce cas, chaque utilisateur et utilisatrice du groupe utilisera le même calendrier professionnel.
+   **Appartenance à un groupe :** vous pouvez attribuer un calendrier professionnel à un utilisateur ou une utilisatrice selon son appartenance à un groupe. Dans ce cas, chaque utilisateur et utilisatrice du groupe utilisera le même calendrier professionnel.
 
    Si un utilisateur ou une utilisatrice est membre de deux groupes différents et que ces groupes sont mappés à deux calendriers professionnels différents, AEM Forms utilise le premier calendrier qui apparaît dans les résultats de recherche. Dans ce cas, pensez à utiliser des clés de calendrier professionnel pour associer des utilisateurs et utilisatrices à des calendriers professionnels.
 
@@ -62,7 +62,7 @@ Si votre organisation comprend différents groupes d’utilisateurs et utilisatr
 
 >[!NOTE]
 >
->Si vous ne créez pas de calendrier professionnel, le calendrier par défaut est utilisé.
+>Si vous ne créez pas de nouveau calendrier professionnel, le calendrier par défaut est utilisé.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Calendriers professionnels.
 1. Pour ajouter un nouveau calendrier professionnel, cliquez sur ![bus_cal_plus](assets/bus_cal_plus.png). Le texte *Nouveau calendrier* s’affiche dans la liste déroulante. Sélectionnez le texte et saisissez un autre nom pour votre calendrier.
@@ -125,7 +125,7 @@ AEM Forms vous permet d’exporter et d’importer vos calendriers professionne
 
 >[!NOTE]
 >
->Cette fonctionnalité exporte et importe tous les calendriers professionnels définis, y compris le calendrier professionnel par défaut fourni par AEM forms. Un calendrier professionnel importé portant le même nom qu’un calendrier existant remplace le calendrier existant.
+>Cette fonctionnalité exporte et importe tous les calendriers professionnels définis, y compris le calendrier professionnel par défaut fourni par AEM Forms. Un calendrier professionnel importé portant le même nom qu’un calendrier existant remplace le calendrier existant.
 
 ### Exportation de calendriers professionnels {#export-business-calendars}
 
@@ -140,7 +140,7 @@ AEM Forms vous permet d’exporter et d’importer vos calendriers professionne
 
 ## Suppression d’un calendrier professionnel {#delete-a-business-calendar}
 
-Vous pouvez supprimer les calendriers professionnels dont votre entreprise n’a plus besoin. Si vous supprimez un calendrier professionnel qui est toujours mappé à des utilisateurs et à des groupes, le calendrier par défaut est utilisé.
+Vous pouvez supprimer les calendriers professionnels dont votre entreprise n’a plus besoin. Si vous supprimez un calendrier professionnel qui est toujours mappé à des personnes et à des groupes, le calendrier par défaut sera utilisé.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Calendriers professionnels.
 1. Sélectionnez le calendrier.

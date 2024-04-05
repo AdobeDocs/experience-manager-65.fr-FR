@@ -1,16 +1,16 @@
 ---
 title: Développement de projets AEM à l’aide d’Eclipse
-description: Ce guide décrit l’utilisation d’Eclipse pour le développement de projets basés sur AEM
+description: Ce guide explique comment utiliser Eclipse pour développer des projets basés sur AEM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cdf82b91518d656442d0ef842596c2e72690f7dc
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -24,42 +24,42 @@ Ce guide explique comment utiliser Eclipse pour développer des projets basés s
 
 ## Présentation {#overview}
 
-Pour commencer AEM développement sur Eclipse, les étapes suivantes sont nécessaires.
+Pour commencer un développement AEM sur Eclipse, les étapes suivantes sont nécessaires.
 
-Chacune d’elles est expliquée plus en détail dans le reste de cette rubrique pratique.
+Chacune d’entre elles est expliquée en détail dans la suite de ce guide.
 
-* Installer Eclipse 4.3 (Kepler)
+* Installer Eclipse 4.3 (Kepler)
 * Configurer votre projet AEM basé sur Maven
-* Préparation de la prise en charge JSP d’Eclipse dans le fichier POM Maven
-* Importation du projet Maven dans Eclipse
+* Préparer la prise en charge JSP pour Eclipse dans le fichier POM Maven
+* Importer le projet Maven dans Eclipse
 
 >[!NOTE]
 >
->Ce guide est basé sur Eclipse 4.3 (Kepler) et AEM 5.6.1.
+>Ce guide est basé sur Eclipse 4.3 (Kepler) et AEM 5.6.1.
 
 ## Installer Eclipse {#install-eclipse}
 
 Téléchargez l’« IDE Eclipse pour le développement Java EE » depuis la [page des téléchargements d’Eclipse](https://www.eclipse.org/downloads/).
 
-Installez Eclipse en suivant la procédure [Instructions d’installation](https://wiki.eclipse.org/Eclipse/Installation).
+Installez Eclipse en suivant les [instructions d’installation](https://wiki.eclipse.org/Eclipse/Installation).
 
 ## Configurer votre projet AEM basé sur Maven {#set-up-your-aem-project-based-on-maven}
 
 Ensuite, configurez le projet en utilisant Maven comme décrit dans la rubrique [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-## Préparation de la prise en charge JSP pour Eclipse {#prepare-jsp-support-for-eclipse}
+## Préparer la prise en charge JSP pour Eclipse {#prepare-jsp-support-for-eclipse}
 
-Eclipse peut également fournir une assistance lors de l’utilisation de JSP, par exemple :
+Eclipse peut également fournir une assistance sur l’utilisation de JSP, par exemple :
 
-* le remplissage automatique des bibliothèques de balises ;
-* Connaissance Eclipse des objets définis par &lt;cq:defineobjects /> et &lt;sling:defineobjects />
+* Remplissage automatique des bibliothèques de balises
+* Prise en compte par Eclipse des objets définis par &lt;cq:defineObjects /> et &lt;sling:defineObjects />
 
-Pour que cela fonctionne :
+Pour que cela fonctionne :
 
 1. Suivez les instructions de la section [Comment travailler avec des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) de la rubrique [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
-1. Ajoutez ce qui suit au &lt;build /> dans le POM de votre module de contenu.
+1. Ajoutez ce qui suit à la section &lt;build /> dans le POM de votre module de contenu.
 
-   Le module externe de prise en charge Maven d’Eclipse, m2e, ne fournit pas de prise en charge pour le module externe maven-jspc-plugin, et cette configuration indique à m2e d’ignorer le module externe et la tâche connexe de nettoyer les résultats de la compilation temporaire.
+   Le plugin de prise en charge Maven d’Eclipse, m2e, ne fournit pas de prise en charge pour le plugin maven-jspc-plugin. Cette configuration indique à m2e d’ignorer le plugin et la tâche connexe de nettoyer les résultats de la compilation temporaire.
 
    Ce n’est pas un problème : comme indiqué dans la section [Comment travailler avec des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), le plugin maven-jspc-plugin de cette configuration n’est utilisé que pour valider la compilation des JSP dans le cadre du processus de création. Eclipse signale déjà les problèmes rencontrés dans les JSP et ne se repose pas sur ce plugin Maven pour le faire.
 
@@ -113,7 +113,7 @@ Pour que cela fonctionne :
    </build>
    ```
 
-### Importation du projet Maven dans Eclipse {#import-the-maven-project-into-eclipse}
+### Importer le projet Maven dans Eclipse {#import-the-maven-project-into-eclipse}
 
 1. Dans Eclipse, sélectionnez File (Ficher) > Import (Importer)...
 1. Dans la boîte de dialogue d’importation, sélectionnez Maven > Existing Maven Projects (Projets Maven existants), puis cliquez sur Next (Suivant).
@@ -130,4 +130,4 @@ Pour que cela fonctionne :
 
    >[!NOTE]
    >
-   >Si vous incluez `/libs/foundation/global.jsp` ou d’autres JSP dans `/libs`, vous devez le copier dans votre projet afin qu’Eclipse puisse résoudre l’inclusion. En même temps, vous devez vous assurer qu’ils ne sont pas inclus dans le package de contenu Maven. La rubrique [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md) décrit comment réaliser cette opération.
+   >Si vous incluez `/libs/foundation/global.jsp` ou d’autres JSP dans `/libs`, vous devez les copier dans le projet afin qu’Eclipse puisse résoudre l’inclusion. En même temps, vous devez vous assurer qu’ils ne sont pas inclus dans le package de contenu Maven. La rubrique [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md) décrit comment réaliser cette opération.

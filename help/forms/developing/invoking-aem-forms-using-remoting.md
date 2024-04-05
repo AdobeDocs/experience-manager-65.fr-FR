@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4604'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 ## Inclure le fichier de bibliothèque Flex AEM Forms {#including-the-aem-forms-flex-library-file}
 
-Pour appeler par programmation les processus d’AEM Forms à l’aide de Remoting, ajoutez le fichier adobe-remoting-provider.swc au chemin d’accès de classe de votre projet Flex. Ce fichier SWC se trouve à l’emplacement suivant :
+Pour appeler par programmation les processus d’AEM Forms à l’aide de Remoting, ajoutez le fichier adobe-remoting-provider.swc au chemin d’accès de classe de votre projet Flex. Ce fichier SWC se trouve à l’emplacement suivant :
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
@@ -312,7 +312,7 @@ Pour activer l’authentification personnalisée dans la console d’administrat
 >
 Dans la version précédente d’AEM Forms, vous avez envoyé des informations d’identification à une destination en appelant la méthode `RemoteObject.setCredentials`. La méthode `setCredentials` ne transmettait pas réellement les informations d’identification au serveur avant la première tentative du composant pour se connecter au serveur. Par conséquent, si le composant a généré un événement d’erreur, vous ne pouvez pas être certain que l’erreur s’est produite en raison d’une erreur d’authentification ou pour une autre raison. La méthode `ChannelSet.login` établit la connexion avec le serveur lorsque vous l’appelez afin que vous puissiez gérer un problème d’authentification immédiatement. Bien que vous puissiez continuer à utiliser la méthode `setCredentials`, il est recommandé d’utiliser la méthode `ChannelSet.login`.
 
-Comme plusieurs destinations peuvent utiliser les mêmes canaux et l’objet ChannelSet correspondant, la connexion à une destination se connecte aux journaux de l’utilisateur à toute autre destination qui utilise le même canal ou canal. Si deux composants appliquent des informations d’identification différentes au même objet ChannelSet, les dernières informations d’identification appliquées sont utilisées. Si plusieurs composants utilisent le même objet ChannelSet authentifié, l’appel de la méthode `logout` déconnecte tous les composants des destinations.
+Comme plusieurs destinations peuvent utiliser les mêmes canaux et l’objet ChannelSet correspondant, la connexion à une destination entraîne l’ouverture d’une session de l’utilisateur ou de l’utilisatrice vers toute autre destination qui utilise le même canal ou les mêmes canaux. Si deux composants appliquent des informations d’identification différentes au même objet ChannelSet, les dernières informations d’identification appliquées sont utilisées. Si plusieurs composants utilisent le même objet ChannelSet authentifié, l’appel de la méthode `logout` déconnecte tous les composants des destinations.
 
 L’exemple suivant utilise les méthodes `ChannelSet.login` et `ChannelSet.logout` avec un contrôle RemoteObject. Cette application effectue les actions suivantes :
 
@@ -547,11 +547,11 @@ Vous pouvez démarrer une application cliente créée avec Flex et utiliser le s
 
 Vous pouvez transmettre des documents sécurisés à AEM Forms lors de l’appel d’un processus qui nécessite un ou plusieurs documents. En transmettant un document sécurisé, vous protégez les informations commerciales et les documents confidentiels. Dans ce cas, un document peut faire référence à un document PDF, un document XML, un document Word, etc. La transmission d’un document sécurisé à AEM Forms à partir d’une application cliente écrite dans Flex est nécessaire lorsqu’AEM Forms est configuré pour autoriser les documents sécurisés. (Voir [Configurer AEM Forms pour accepter des documents sécurisés et non sécurisés](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-Lors de la transmission d’un document sécurisé, utilisez l’authentification unique et spécifiez un utilisateur de formulaires AEM qui dispose de la variable *Utilisateur de l’application de téléchargement de document* rôle. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Vous pouvez attribuer par programmation un rôle à un utilisateur. (Voir [Gérer des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Lors de la transmission d’un document sécurisé, utilisez l’authentification unique et spécifiez un utilisateur ou une utilisatrice d’AEM Forms tenant le rôle *Utilisateur de l’application de chargement de documents*. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Vous pouvez attribuer par programmation un rôle à un utilisateur. (Voir [Gérer des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >
-Lorsque vous créez un rôle et que vous souhaitez que les membres de ce rôle chargent des documents sécurisés, assurez-vous de spécifier l’autorisation de téléchargement de documents.
+Lorsque vous créez un nouveau rôle et que vous souhaitez que les personnes membres de ce rôle chargent des documents sécurisés, assurez-vous de spécifier l’autorisation de chargement de documents.
 
 AEM Forms prend en charge une opération nommée `getFileUploadToken` qui renvoie un jeton transmis à la servlet de chargement. La méthode `DocumentReference.constructRequestForUpload` requiert une URL vers AEM Forms ainsi que le jeton renvoyé par la méthode `LC.FileUploadAuthenticator.getFileUploadToken`. Cette méthode renvoie un objet `URLRequest` qui est utilisé pour appeler au servlet de chargement. Le code suivant illustre cette logique d’application.
 
@@ -621,7 +621,7 @@ Vous pouvez utiliser la console d’administration pour définir si les document
 >[!NOTE]
 >
 * Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
-* Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+* Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 
 ### Démarrage rapide : appeler un processus de courte durée en transmettant un document sécurisé à l’aide de Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -892,7 +892,7 @@ Si AEM Forms est configuré pour autoriser uniquement le chargement de documents
 
 ## Appeler des services de composants personnalisés à l’aide de Remoting {#invoking-custom-component-services-using-remoting}
 
-Vous pouvez appeler des services dans un composant personnalisé à l’aide de Remoting. Prenons l’exemple du composant Banque qui contient le service client. Vous pouvez appeler des opérations appartenant au service client à l’aide d’une application cliente écrite dans Flex. Avant de pouvoir exécuter le démarrage rapide associé à cette section, vous devez créer le composant personnalisé Banque.
+Vous pouvez appeler les services situés dans un composant personnalisé à l’aide de Remoting. Prenons l’exemple du composant Banque qui contient le service client. Vous pouvez appeler des opérations appartenant au service client à l’aide d’une application cliente écrite dans Flex. Avant de pouvoir exécuter le démarrage rapide associé à cette section, vous devez créer le composant personnalisé Banque.
 
 Le service client expose une opération nommée `createCustomer`. Cette discussion décrit la création d’une application cliente Flex qui appelle le service client et crée un client. Cette opération nécessite un objet complexe de type `com.adobe.livecycle.sample.customer.Customer`, représentant le nouveau client. L’illustration suivante présente l’application cliente qui appelle le service client et crée un nouveau client. L’opération `createCustomer` renvoie une valeur d’identifiant de client. La valeur de l’identifiant s’affiche dans la zone de texte Identifiant de client.
 
@@ -972,7 +972,7 @@ La classe ActionScript suivante nommée Customer indique comment mapper le type 
 
 Le type de données complet du type complexe AEM Forms est affecté à la balise alias.
 
-Les champs de la classe ActionScript correspondent aux champs appartenant au type complexe AEM Forms. Les six champs de la classe ActionScript client correspondent aux champs appartenant à `com.adobe.livecycle.sample.customer.Customer`.
+Les champs de la classe ActionScript correspondent aux champs appartenant au type complexe AEM Forms. Les six champs situés dans la classe ActionScript cliente correspondent aux champs appartenant à `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

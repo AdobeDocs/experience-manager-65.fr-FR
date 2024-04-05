@@ -1,6 +1,6 @@
 ---
 title: Console web dans Adobe Experience Manager
-description: Découvrez comment utiliser la console web Adobe Experience Manager (AEM).
+description: Découvrez comment utiliser la console web d’Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Console web{#web-console}
 
-La console Web de Adobe Experience Manager (AEM) est basée sur la variable [Console de gestion Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un travail de la communauté pour mettre en œuvre la plateforme de service OSGi R4, qui inclut le cadre OSGi et les services standard.
+La console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un travail de la communauté pour mettre en œuvre la plateforme de service OSGi R4, qui inclut le framework OSGi et les services standard.
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ L’onglet **Configuration** est accessible soit via :
 
   `http://localhost:4502/system/console/configMgr`
 
-Une liste des configurations s’affiche :
+Une liste des configurations s’affiche :
 
 ![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
 
-Deux types de configurations sont disponibles dans les listes déroulantes de cet écran :
+Il existe deux types de configurations disponibles à partir des listes déroulantes de cet écran :
 
 * **Configurations**
 Vous permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
@@ -70,9 +70,9 @@ Vous permet de mettre à jour les configurations existantes. Elles possèdent un
 * **Configurations d’usine**
 Vous permet de créer une instance de l’objet de la fonctionnalité requise.
 
-  Il est attribué à une identité persistante, puis répertorié dans la liste déroulante Configurations .
+  Elle se verra attribuer une identité permanente, puis sera répertoriée dans la liste déroulante des configurations.
 
-La sélection d’une entrée de la liste affiche les paramètres liés à cette configuration :
+En sélectionnant une entrée quelconque dans la liste, vous pourrez voir les paramètres associés à cette configuration :
 
 ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -82,11 +82,11 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
   Enregistrez les modifications apportées.
 
-  Pour une configuration d’usine, cela crée une instance avec une identité persistante. La nouvelle instance est ensuite répertoriée sous Configurations.
+  Pour une configuration d’usine, cela crée une instance avec une identité permanente. La nouvelle instance est ensuite répertoriée sous Configurations.
 
 * **Réinitialiser**
 
-  Réinitialisez les paramètres affichés à l’écran en fonction de ceux enregistrés en dernier.
+  Réinitialisez les paramètres affichés sur l’écran pour revenir à ceux enregistrés en dernier.
 
 * **Supprimer**
 
@@ -112,7 +112,7 @@ L’onglet **Lots** correspond au mécanisme permettant d’installer les lots O
 
   `http://localhost:4502/system/console/bundles`
 
-Une liste de lots s’affiche :
+Une liste de lots s’affiche :
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
@@ -128,9 +128,9 @@ En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
 * **Actualiser les packages**
 
-  Cette opération vérifie les références de tous les packages et les actualise, si nécessaire.
+  Cela permet de vérifier les références de tous les packages et de les actualiser au besoin.
 
-  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option vérifie et déplace toutes les références à la nouvelle version, ce qui permet à l’ancienne version de s’arrêter.
+  Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, afin d’arrêter l’ancienne version.
 
 * **Démarrer**
 
@@ -146,11 +146,11 @@ En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
 * **Afficher le statut**
 
-  La liste spécifie l’état du lot ; cliquez sur le nom d’un lot spécifique avec des informations supplémentaires.
+  La liste indique le statut du lot. Cliquez sur le nom d’un lot spécifique pour obtenir des informations supplémentaires.
 
 >[!NOTE]
 >
->Après **Mettre à jour**, Adobe vous recommande d’effectuer une **Actualisation des modules**.
+>Après la **mise à jour**, Adobe vous recommande d’effectuer une **actualisation des packages**.
 
 ## Composants {#components}
 
@@ -164,16 +164,16 @@ L’onglet **Composants** vous permet d’activer et de désactiver divers compo
 
   `http://localhost:4502/system/console/components`
 
-Une liste des composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique.
+Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Cliquer sur le nom d’un composant spécifique affiche des informations supplémentaires sur son état. Vous pouvez également activer, désactiver ou recharger le composant.
+Cliquez sur le nom d’un composant spécifique pour afficher des informations supplémentaires sur son statut. Vous pouvez également activer, désactiver ou recharger le composant.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
->L’activation ou la désactivation d’un composant s’applique uniquement jusqu’au redémarrage d’AEM/CRX.
+>L’activation ou la désactivation d’un composant ne s’applique que jusqu’au redémarrage d’AEM/CRX.
 >
 >L’état de départ est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le lot au moment de la création du lot.

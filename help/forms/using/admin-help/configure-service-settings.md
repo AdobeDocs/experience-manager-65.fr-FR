@@ -1,6 +1,6 @@
 ---
 title: Configurer les paramètres du service
-description: Découvrez comment configurer les paramètres du service. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM forms.
+description: Découvrez comment configurer les paramètres des services. Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services faisant partie d’AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
    >[!NOTE]
    >
-   >Tous les services répertoriés dans la page Gestion des services ne disposent pas d’un onglet Configuration . Pour les processus que vous avez créés, l’onglet Configuration ne s’affiche que si vous avez ajouté un paramètre de configuration au processus dans Workbench. (voir « Paramètres de configuration » dans l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr)).
+   >Tous les services répertoriés dans la page Gestion des services ne disposent pas d’un onglet Configuration. Pour les processus que vous avez créés, l’onglet Configuration ne s’affiche que si vous avez ajouté un paramètre de configuration au processus dans Workbench. (voir « Paramètres de configuration » dans l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr)).
 
 
 1. Cliquez sur l’onglet Sécurité et définissez les paramètres de sécurité du service. Voir [Modification des paramètres de sécurité d’un service](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -108,7 +108,7 @@ La valeur par défaut de ce paramètre est `/LiveCycleES/ConnectorforIBMFileNet/
 
 ## Paramètres du service Convert PDF {#convert-pdf-service-settings}
 
-Le service Convert PDF ( `ConvertPdfService`) convertit des documents PDF au format PostScript et dans plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
+Le service Convert PDF (`ConvertPdfService`) convertit des documents PDF en PostScript® et en de nombreux formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
 
 Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
@@ -148,7 +148,7 @@ Les paramètres ci-dessous sont disponibles pour le service Distiller.
 
 Vous pouvez créer des paramètres dans l’interface utilisateur de PDF Generator.
 
-**Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Créez des paramètres de sécurité à l’aide de PDF Generator, puis saisissez le paramètre ici.
+**Paramètres de protection :** paramètres de protection préconfigurés appliqués aux documents PDF générés. La valeur par défaut est No Security. Créez des paramètres de sécurité dans PDF Generator, puis saisissez ce paramètre ici.
 
 **Taille du pool :** taille initiale du pool. Lors du déploiement du service Distiller, cette valeur permet de déterminer le nombre d’instances d’implémentation du service à créer et à affecter au pool libre en attente de demandes d’appel. Le conteneur de services peut alors répondre immédiatement aux demandes d’appel sans avoir à initialiser au préalable une instance de service.
 
@@ -242,7 +242,7 @@ Les paramètres ci-dessous sont disponibles pour le service FTP.
 
 ## Paramètres du service Generate PDF {#generate-pdf-service-settings}
 
-Le service Generate PDF ( `GeneratePDFService`) convertit des fichiers dans divers formats natifs en documents PDF et convertit des documents PDF dans plusieurs formats de fichiers.
+Le service Generate PDF (`GeneratePDFService`) convertit des fichiers de nombreux formats natifs en documents PDF et convertit des documents PDF en différents formats de fichier.
 
 Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
@@ -258,7 +258,8 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat X Pro pour toutes les conversions de fichiers DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
 
-**Expressions Régulières Pour Trouver Des Caractères Spéciaux Interdits Dans Le Nom D’Utilisateur (Windows Uniquement) :** Indique les caractères qui interfèrent avec les opérations d’Export PDF et de Optimize PDF lorsque les caractères apparaissent dans le nom d’un utilisateur.
+**Expressions régulières pour trouver les caractères spéciaux interdits
+dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qui interfèrent avec les opérations Exporter un PDF et Optimiser un PDF lorsque ces caractères apparaissent dans le nom d’un utilisateur ou d’une utilisatrice.
 
 **Taille du pool ImageToPDF :** taille du pool du convertisseur Image en PDF (Java pur) par défaut dans le service Generate PDF. Ce paramètre contrôle le nombre maximal de conversions Image en PDF qui peuvent être exécutées simultanément par le service Generate PDF. La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs.
 
@@ -266,7 +267,7 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Taille du pool OCR :** taille du pool PaperCaptureService que PDF Generator utilise pour la reconnaissance optique de caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
-**Famille De Polices De Secours Pour Les Conversions HTML Vers PDF :** Nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le HTML d’origine n’est pas disponible pour le serveur AEM Forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
+**Famille de polices de remplacement pour les conversions de fichiers HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le fichier HTML d’origine n’est pas disponible pour le serveur AEM Forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
 
 **Logique de nouvelle tentative pour les conversions natives** : définit la logique des nouvelles tentatives de génération de fichiers PDF en cas d’échec de la première tentative de conversion.
 
@@ -284,7 +285,7 @@ Effectuez une nouvelle tentative de conversion PDF si la première tentative de 
 
 ## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
-Lorsque vous créez un Guide, certaines ressources, telles que sa définition, sont intégrées dans ce Guide. Les ressources peuvent également exister en tant que références aux ressources d’application stockées localement ou sur le serveur AEM Forms. Le Guide ne contient aucune donnée, et les valeurs des entrées et de l’emplacement d’envoi ne sont pas adaptées à tous les environnements externes.
+Lorsque vous créez un Guide, certaines ressources, telles que sa définition, sont intégrées dans ce Guide. Les ressources peuvent également se présenter sous la forme de références aux éléments d’application stockés localement ou sur le serveur AEM Forms. Le Guide ne contient aucune donnée, et les valeurs des entrées et de l’emplacement d’envoi ne sont pas adaptées à tous les environnements externes.
 
 Dans la plupart des cas, les services de rendu de Guides par défaut suffisent pour préparer un Guide en vue de son utilisation dans Workspace ou dans d’autres environnements externes. (Dans l’affichage Services de Workbench, le service par défaut est Guides (system)/Processes/Render Guide - 1.0). Le service Guide Utilities (`GuidesUtility`) vous permet de créer un processus personnalisé pour le rendu d’un Guide, si nécessaire.
 
@@ -325,7 +326,7 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 ### Utiliser des guides dans un cluster de serveurs {#using-guides-in-a-server-cluster}
 
-Le rendu d’un guide dans un cluster de serveurs qui n’utilise pas l’affinité de session échoue et génère une exception NullPointerException. Une requête Guides utilise des URL sécurisées qui, par défaut, sont propres au serveur sur lequel elles sont générées. Dans un cluster utilisant l’affinité de session, quand une demande a atteint un nœud du cluster, toutes les demandes suivantes de cette session ou de l’utilisateur ou utilisatrice sont acheminées exclusivement à ce serveur. Dans le cas d’un cluster n’utilisant pas l’affinité de session, les demandes suivantes peuvent atteindre n’importe quel serveur du cluster. Si le serveur atteint par les demandes n’est pas le serveur d’origine, ces dernières ne parviennent pas à résoudre l’URL sécurisée.
+Le rendu d’un guide dans un cluster de serveurs qui n’utilise pas l’affinité de session échoue et génère une exception NullPointerException. Les demandes de guide utilisent des URL sécurisées qui, par défaut, sont uniques au serveur sur lequel elles sont générées. Dans un cluster utilisant l’affinité de session, quand une demande a atteint un nœud du cluster, toutes les demandes suivantes de cette session ou de l’utilisateur ou utilisatrice sont acheminées exclusivement à ce serveur. Dans le cas d’un cluster n’utilisant pas l’affinité de session, les demandes suivantes peuvent atteindre n’importe quel serveur du cluster. Si le serveur atteint par les demandes n’est pas le serveur d’origine, ces dernières ne parviennent pas à résoudre l’URL sécurisée.
 
 Si vous utilisez des guides dans un cluster de serveurs sans affinité de session, définissez la valeur macKeySeed pour le service GuidesUtility, puis arrêtez et redémarrez le cluster.
 
@@ -333,7 +334,7 @@ La valeur macKeySeed constitue le point de départ du générateur de nombres al
 
 Modifiez la valeur macKeySeed lorsqu’il est nécessaire d’actualiser les URL sécurisées. L’actualisation des URL sécurisées dépend de votre politique de sécurité. Elle est similaire à la politique d’actualisation permettant de changer le mot de passe racine principal du serveur. La valeur macSeedValue est analogue au mot de passe principal pour les URL sécurisées, car elle est utilisée pour générer un numéro aléatoire unique utilisé pour la génération et la récupération des URL sécurisées.
 
-Redémarrez la grappe, car macSeedValue est en lecture seule au démarrage du système. Tous les nœuds nécessitent un redémarrage afin de lire la valeur, car ils utilisent cette dernière indépendamment afin d’initialiser leurs nombres aléatoires internes avec la valeur de départ.
+Redémarrez le cluster, car macSeedValue est en lecture seule au démarrage du système. Tous les nœuds nécessitent un redémarrage afin de lire la valeur, car ils utilisent cette dernière indépendamment afin d’initialiser leurs nombres aléatoires internes avec la valeur de départ.
 
 ## Paramètres du service JDBC {#jdbc-service-settings}
 
@@ -424,13 +425,13 @@ Les paramètres suivants sont disponibles pour le service de configuration Micro
 
 **Application Tasks :** active la fonctionnalité Tasks dans les applications clientes mobiles. Lorsque cette option est sélectionnée, les utilisateurs peuvent accéder à la liste des tâches et les effectuer à partir de leurs appareils mobiles.
 
-**Application Content Services :** active la fonctionnalité Content Services dans l’application cliente mobile. Cette fonctionnalité n’est disponible que sur iOS. Lorsque cette option est sélectionnée, les utilisateurs d’iPhone et d’iPad peuvent accéder aux fichiers stockés sur le serveur WebDAV de votre entreprise.
+**Application Content Services :** active la fonctionnalité Content Services dans l’application cliente mobile. Cette fonctionnalité n’est disponible que sur iOS. Lorsque cette option est sélectionnée, les utilisateurs et utilisatrices d’iPhone et d’iPad peuvent accéder aux fichiers stockés sur le serveur WebDAV de votre entreprise.
 
 **Prise en charge hors connexion :** permet aux utilisateurs de continuer à utiliser les applications clientes mobiles même lorsqu’ils ne disposent pas dʼune connexion au serveur (par exemple, s’ils sont hors couverture réseau ou en mode avion). Les utilisateurs doivent également activer le paramètre Prise en charge hors connexion sur leurs appareils mobiles. Cette fonctionnalité est disponible pour les appareils Android et iOS. Par défaut, cette fonctionnalité est désactivée.
 
 >[!NOTE]
 >
->Si la prise en charge hors ligne a été activée, puis que vous la désactivez, les profils d’approvisionnement des utilisateurs sont mis à jour immédiatement ou dès qu’ils sont en ligne. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
+>Si la prise en charge hors connexion a été activée et que vous la désactivez ensuite, les profils d’approvisionnement des utilisateurs et des utilisatrices sont mis à jour immédiatement ou dès qu’ils se connectent. Si un utilisateur a travaillé hors connexion, toutes les tâches en attente sont renvoyées à leur liste des tâches et tous les éléments dans leur file d’attente, y compris les formulaires en attente, les tâches et les formulaires contenant des erreurs de validation sont supprimés de la file d’attente.
 
 **Android :** autorise les appareils Android à se connecter au serveur.
 
@@ -483,7 +484,7 @@ Les paramètres ci-dessous sont disponibles pour le service PDFG Config ( `PDFGC
 
 **Server Conversion Timeout :** délai d’expiration de conversion de tâches maximal (en secondes) pour les services Generate PDF et Distiller. Ce paramètre limite le délai d’expiration de conversion maximal qui peut être spécifié dans le fichier config.xml et dans les pages d’Administration Console pour PDF Generator. La valeur par défaut est 270.
 
-**Server Global Timeout :** Lors des conversions de PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
+**Server Global Timeout :** pendant les conversions PDF, un serveur Forms prend en compte le délai d’expiration. Configurez la valeur du délai d’expiration pour résoudre ce problème.
 
 **Job Options Prefix :** préfixe utilisé par le service Generate PDF pour ajouter une courte chaîne devant les fichiers d’options de tâche qu’il crée temporairement pour l’utilisation avec Acrobat Distiller. La valeur par défaut est pdfg.
 
@@ -615,9 +616,9 @@ Validation Of Signatures :** lorsque cette option est sélectionnée, les infor
 
 **URL du serveur TSP :** l’URL du fournisseur d’horodatage par défaut. Utilisé uniquement si une valeur valide est fournie. Pas de valeur par défaut.
 
-**Nom d’utilisateur du serveur TSP :** Nom d’utilisateur si nécessaire par le fournisseur d’horodatage. Utilisé uniquement si une valeur valide est fournie pour l’URL. Pas de valeur par défaut.
+**Nom d’utilisateur du serveur TSP :** le nom d’utilisateur ou d’utilisatrice si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est fournie pour l’URL. Pas de valeur par défaut.
 
-**TSP Server Password :** mot de passe du nom d’utilisateur ci-dessus si nécessaire par le fournisseur d’horodatage. Utilisé uniquement si une valeur valide est fournie pour l’URL et le nom d’utilisateur. Pas de valeur par défaut.
+**Mot de passe du serveur TSP :** le mot de passe du nom d’utilisateur ou d’utilisatrice ci-dessus si le fournisseur d’horodatage l’exige. Utilisé uniquement si une valeur valide est fournie pour l’URL et le nom d’utilisateur. Pas de valeur par défaut.
 
 **Request Hash Algorithm :** indique l’algorithme de hachage à utiliser lors de la création de la demande pour le fournisseur d’horodatage. La valeur par défaut est SHA1.
 
@@ -667,7 +668,7 @@ Validation Of Signatures :** lorsque cette option est sélectionnée, les infor
 
 **Go Online :** indique s’il convient de se connecter pour effectuer une vérification de la révocation. La valeur par défaut est true.
 
-**Ignorez les heures thisUpdate et nextUpdate de la réponse :** Indique s’il faut ignorer les heures thisUpdate et nextUpdate de la réponse, ce qui empêche ces heures d’avoir un effet négatif sur la validité de la réponse. La valeur par défaut est false. 
+**Ignore the response’s thisUpdate and nextUpdate times :** indique si les heures thisUpdate et nextUpdate de la réponse doivent être ignorées, pour les empêcher d’avoir une incidence négative sur la validité de la réponse. La valeur par défaut est false. 
 
 **Allow OCSPNoCheck extension :** indique si l’extension OCSPNoCheck est autorisée dans le certificat de signature de la réponse. La valeur par défaut est true.
 
@@ -709,7 +710,7 @@ Dans une configuration en cluster, la taille du lot d’un point d’entrée d�
 
 **Remplacer les noms des fichiers en double :** une chaîne booléenne qui spécifie si le dossier de contrôle remplace les noms de fichiers de résultats en double et si les documents conservés du même nom doivent être remplacés.
 
-**Dossier des fichiers conservés :** la valeur par défaut du dossier des fichiers conservés. Ce dossier est utilisé pour copier les fichiers source dans en cas de traitement réussi de l’entrée. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
+**Dossier des fichiers conservés :** la valeur par défaut du dossier des fichiers conservés. Ce dossier est utilisé pour copier les fichiers source en cas de traitement réussi de l’entrée. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
 
 **Dossier des fichiers en échec :** le nom du dossier où sont copiés les fichiers en échec. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu avec un modèle de fichier, tel que décrit pour le paramètre Result Folder.
 
@@ -750,17 +751,17 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 
 Le service Web Service (`WebService`) permet aux processus d’appeler les opérations correspondantes.
 
-Le service Service Web permet aux processus d’appeler les opérations correspondantes. Par exemple, une organisation peut souhaiter intégrer un processus pour stocker et récupérer des informations telles que les détails des contacts et des comptes en appelant les services Web exposés d’un fournisseur de services. Le service Service Web appelle un service web spécifié et transmet des valeurs pour chacun de ses paramètres. Il enregistre ensuite les valeurs renvoyées de l’opération dans une variable désignée au sein d’un processus.
+Le service Service Web permet aux processus d’appeler les opérations correspondantes. Par exemple, une organisation peut souhaiter intégrer un processus pour stocker et récupérer des informations telles que les coordonnées et des informations sur les comptes en appelant les services web exposés d’un fournisseur de services. Le service Service Web appelle un service web spécifié et transmet des valeurs pour chacun de ses paramètres. Il enregistre ensuite les valeurs renvoyées de l’opération dans une variable désignée au sein d’un processus.
 
 Le service Service Web interagit avec les services web en envoyant et en recevant des messages SOAP. Le service prend également en charge l’envoi de pièces jointes MIME, MTOM et SwaRef avec des messages SOAP à l’aide du protocole WS-Attachment. Les interactions avec le service Service Web sont compatibles avec les systèmes SAP et les services web .NET.
 
 Les paramètres ci-dessous sont disponibles pour le service Service Web.
 
-**Stockage des clés :** le chemin d’accès complet au fichier de stockage des clés qui contient la clé privée à utiliser pour l’authentification. Le serveur Forms doit pouvoir accéder au fichier .
+**Stockage des clés :** le chemin d’accès complet au fichier de stockage des clés qui contient la clé privée à utiliser pour l’authentification. Le serveur Forms doit être en mesure d’accéder au fichier.
 
 **Mot de passe du stockage des clés :** le mot de passe du fichier de stockage des clés.
 
-**Type de stockage des clés :** le type de fichier de stockage des clés. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM qui exécute le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
+**Type de stockage des clés :** le type de fichier de stockage des clés. N’indiquez aucune valeur pour utiliser le type de stockage de clés par défaut configuré pour la JVM exécutant le serveur de formulaires. Dans le cas contraire, indiquez l’une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -771,7 +772,7 @@ Les paramètres ci-dessous sont disponibles pour le service Service Web.
 
 **Mot de passe du Trust Store :** le mot de passe du fichier truststore.
 
-**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de fichier de stockage de clés par défaut configuré pour la JVM qui exécute le serveur Forms. Dans le cas contraire, indiquez l’une des valeurs suivantes :
+**Type de Trust Store :** le type de truststore. N’indiquez aucune valeur pour utiliser le type de stockage de clés par défaut configuré pour la JVM exécutant le serveur de formulaires. Dans le cas contraire, indiquez l’une des valeurs suivantes :
 
 * jks
 * pkcs12
@@ -784,11 +785,11 @@ Le service XSLT Transformation (`XSLTService`) permet aux processus d’applique
 
 Le paramètre ci-dessous est disponible pour le service XSLT Transformation.
 
-**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la fabrique par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
+**Nom de l’usine :** le nom complet de la classe Java à utiliser pour exécuter les transformations XSLT. Si aucune valeur n’est spécifiée, la valeur d’usine par défaut configurée dans la machine virtuelle Java exécutant le serveur Forms est utilisée.
 
 ## Modifier les paramètres de sécurité d’un service {#modifying-security-settings-for-a-service}
 
-Forms Server permet de configurer les paramètres de sécurité de chaque service, ce qui permet de configurer un contrôle d’accès affiné au niveau service par service.
+Le serveur Forms vous permet de configurer les paramètres de sécurité de chaque service, ce qui vous permet de configurer un contrôle d’accès précis, service par service.
 
 Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être configurés pour répondre aux besoins de votre système. Chaque profil de sécurité est associé à un domaine et est créé au niveau de l’utilisateur, de l’utilisatrice ou du groupe.
 
@@ -829,7 +830,7 @@ Les profils de sécurité par défaut sont installés. Ils peuvent ensuite être
    * **SUPERVISOR_PERM :** affichage des données d’instance de processus d’un service créé à partir d’un processus.
    * **START_STOP_PERM :** démarrage et arrêt d’un service.
    * **ADD_REMOVE_ENDPOINTS_PERM :** ajout, suppression et modification des points d’entrée d’un service.
-   * **CREATE_VERSION_PERM :** Pour créer une version du service
+   * **CREATE_VERSION_PERM :** création d’une version du service.
    * **DELETE_VERSION_PERM :** suppression d’une version du service.
    * **MODIFY_VERSION_PERM :** modification d’une version du service.
    * **READ_PERM :** affichage du service.

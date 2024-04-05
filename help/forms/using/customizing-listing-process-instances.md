@@ -1,6 +1,6 @@
 ---
 title: Personnaliser la liste des instances de processus
-description: Comment personnaliser les propriétés affichées dans l’instance de processus dans l’espace de travail AEM Forms.
+description: Comment personnaliser les propriétés affichées dans l’instance de processus dans l’espace de travail AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,13 +9,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Personnaliser la liste des instances de processus {#customizing-the-listing-of-process-instances}
 
-La liste des instances de processus s’affiche dans l’onglet Tracking de l’espace de travail AEM Forms.
+La liste des instances de processus est affichée dans l’onglet Suivi de l’espace de travail AEM Forms.
 
 Dans la liste des instances de processus, pour chaque instance de processus, l’espace de travail AEM Forms indique certaines propriétés de cette instance. Les propriétés suivantes sont disponibles pour chaque instance de processus. Ces propriétés sont stockées en tant qu’attributs dans le modèle du composant de l’instance de processus et peuvent être utilisées dans sa vue et son modèle.
 
@@ -30,12 +30,12 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
    <td>Description de l’instance de processus.</td>
   </tr>
   <tr>
-   <td>initiateur</td>
-   <td>Nom de l’initiateur de l’instance de processus.</td>
+   <td>initiator</td>
+   <td>Nom de l’initiateur ou de l’initiatrice de l’instance de processus.</td>
   </tr>
   <tr>
    <td>initiatorId</td>
-   <td>ID de l’initiateur de l’instance de processus.</td>
+   <td>ID de l’initiateur ou de l’initiatrice de l’instance de processus.</td>
   </tr>
   <tr>
    <td>processCompleteTime</td>
@@ -47,7 +47,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Lancé<br /> 1 = En cours<br /> 2 = Terminé<br /> 3 = Fin<br /> 4 = Interrompu<br /> 5 = Interruption<br /> 6 = Suspendu<br /> 7 = Suspendre<br /> 8 = Sans suspension</td>
+   <td>0 = Initié<br /> 1 = En cours d’exécution<br /> 2 = Terminé<br /> 3 = En cours d’achèvement<br /> 4 = Interrompu<br /> 5 = En cours d’interruption<br /> 6 = Suspendu<br /> 7 = En cours de suspension<br /> 8 = En cours d’annulation de suspension</td>
   </tr>
   <tr>
    <td>processName</td>

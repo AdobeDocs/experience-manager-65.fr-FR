@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 6.5 est un outil flexible pour le modèle d’implémentation découplée e
 
 ## Vos premiers pas avec AEM découplé {#first-steps}
 
-Vous disposez de plusieurs ressources pour commencer à utiliser AEM fonctionnalités sans interface. Elles sont conçues pour différents cas d’utilisation, mais donnent toutes une vue d’ensemble complète des fonctionnalités d’AEM découplé.
+Plusieurs ressources sont disponibles pour que vous commenciez à utiliser les fonctionnalités découplées d’AEM. Elles sont conçues pour différents cas d’utilisation, mais donnent toutes une vue d’ensemble complète des fonctionnalités d’AEM découplé.
 
 | Ressource | Description | Type | Public | Temps estimé |
 |---|---|---|---|---|

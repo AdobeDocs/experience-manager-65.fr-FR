@@ -1,12 +1,12 @@
 ---
-title: Étapes supplémentaires pour obtenir des courriers électroniques avec des pièces jointes
-description: Découvrez comment corriger l’erreur lorsque vous ne parvenez pas à récupérer des courriers électroniques avec des pièces jointes pour les plateformes AEM Forms on JEE.
+title: Étapes supplémentaires pour obtenir un e-mail avec des pièces jointes
+description: Découvrez comment corriger l’erreur lorsque vous ne parvenez pas à récupérer des e-mails avec des pièces jointes pour les plateformes AEM Forms sur JEE.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ L’utilisateur ou l’utilisatrice ne peut pas effectuer d’opérations telles
 
 1. Installez `java.mail-1.5.jar` obtenu à l’étape 3. Cette étape redémarre les propriétés sling du déploiement JEE. Attendez que les lots installés sur `http://<server name>:<port>/lc/system/console/bundles` affichent le statut **Actif**.
 
-   >Si l’état est toujours **InActive**, redémarrez   **JBoss ®** de la **Console des services**.
+   >Si le statut est toujours **inactif**, redémarrez **JBoss®** à partir de la **console de services**.
 
 
 1. Installez le fichier `javax.mail-1.5.6.redhat-1.jar` téléchargé à l’étape 5.
@@ -52,4 +52,4 @@ L’utilisateur ou l’utilisatrice ne peut pas effectuer d’opérations telles
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.

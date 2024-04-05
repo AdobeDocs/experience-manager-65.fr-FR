@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1790'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Ces sous-formulaires sont affichés en tant que zones cibles dans le modèle d�
 
 Pour créer un modèle XDP pour le canal d’impression, procédez comme suit :
 
-1. Ouvrez Forms Designer, puis sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge,** select **Suivant**, puis sélectionnez **Terminer** pour ouvrir le formulaire à des fins de création de modèle.
+1. Ouvrez Forms Designer, sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge**, cliquez sur **Suivant**, puis sur **Terminer** pour ouvrir le formulaire afin de créer le modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
@@ -116,15 +116,15 @@ Pour créer un modèle XDP pour le canal d’impression, procédez comme suit :
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le charger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionner **Créer** > **Téléchargement du fichier**.
+1. Sélectionnez **Créer** > **Chargement de fichier**.
 
-   Naviguez et sélectionnez le **create_first_ic_print_template** template (XDP) et select **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
+   Accédez au modèle XDP **create_first_ic_print_template**, sélectionnez-le et choisissez **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
 
 ### Créer un modèle XDP pour des fragments de disposition {#create-xdp-template-for-layout-fragments}
 
 Pour créer un fragment de disposition pour le canal d’impression de la communication interactive, créez un XDP à l’aide de Forms Designer et chargez-le sur le serveur AEM Forms.
 
-1. Ouvrez Forms Designer, puis sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge,** select **Suivant**, puis sélectionnez **Terminer** pour ouvrir le formulaire à des fins de création de modèle.
+1. Ouvrez le concepteur de formulaires, sélectionnez **Fichier** > **Nouveau** > **Utiliser un formulaire vierge**, sélectionnez **Suivant**, puis sélectionnez **Terminer** pour ouvrir le formulaire de création de modèle.
 
    Assurez-vous que les options **Bibliothèque d’objets** et **Objet** sont sélectionnées dans le menu **Fenêtre**.
 
@@ -136,7 +136,7 @@ Pour créer un fragment de disposition pour le canal d’impression de la commun
    1. Cochez la case **Inclure la rangée d’en-tête dans le tableau**.
    1. Appuyez sur **OK**.
 
-1. Sélectionner **+** dans le volet de gauche en regard de **Tableau** 1 et clic droit **Cell1** et sélectionnez **Rename Object** to **Date**.
+1. Sélectionnez **+** dans le volet gauche en regard du **Tableau** 1 et cliquez avec le bouton droit de la souris sur **Cell1**, sélectionnez **Renommer l’objet** et remplacez le nom Cell1 par **Date**.
 
    De même, renommez respectivement **Cell2**, **Cell3**, **Cell4** et **Cell5** en **Heure**, **Numéro**, **Durée** et **Frais**.
 
@@ -178,10 +178,10 @@ Pour créer un modèle de canal web, définissez un dossier dans lequel vous pou
 
 Pour créer un dossier pour les modèles modifiables, procédez comme suit :
 
-1. Sélectionner **Outils** ![icône en forme de marteau](assets/hammer-icon.svg) > **Explorateur de configuration**.
+1. Sélectionnez **Outils** ![hammer-icon](assets/hammer-icon.svg) > **Navigateur de configuration**.
    * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
-1. Dans la page du navigateur de configuration, sélectionnez **Créer**.
-1. Dans le **Créer une configuration** dialog, spécifiez **Create_First_IC_templates** comme titre du dossier, cochez **Modèles modifiables**, puis sélectionnez **Créer**.
+1. Sur la page Navigateur de configuration, sélectionnez **Créer**.
+1. Dans la boîte de dialogue **Créer une configuration**, spécifiez le titre **Create_First_IC_templates** pour le dossier, cochez **Modèles modifiables**, puis sélectionnez **Créer**.
 
    ![Configurer des modèles web](assets/create_first_ic_web_template_new.png)
 
@@ -207,23 +207,23 @@ Pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templ
 
 1. Accédez au dossier de modèle approprié en sélectionnant le dossier **Outils** > **Modèles** > **Create_First_IC_templates**.
 1. Sélectionnez **Créer**.
-1. Sur le **Sélection d’un type de modèle** assistant de configuration, sélectionnez **Communication interactive - Canal web** et sélectionnez **Suivant**.
-1. Dans l’assistant de configuration **Détails du modèle**, spécifiez comme titre pour le modèle **Create_First_IC_Web_Template**. Spécifiez une description facultative et sélectionnez **Créer**.
+1. Dans l’assistant de configuration **Choisir un type de modèle**, sélectionnez **Communication interactive - Canal web**, puis **Suivant**.
+1. Dans l’assistant de configuration **Détails du modèle**, spécifiez **Create_First_IC_Web_Template** comme titre pour le modèle. Spécifiez une description facultative et choisissez **Créer**.
 
-   Un message de confirmation indiquant que **Create_First_IC_Web_Template** sʼaffiche.
+   Un message de confirmation indiquant que **Create_First_IC_Web_Template** est le titre du modèle sʼaffiche.
 
-1. Sélectionner **Ouvrir** pour ouvrir le modèle dans l’éditeur de modèles.
+1. Sélectionnez **Ouvrir** pour ouvrir le modèle dans l’éditeur de modèles.
 1. Sélectionnez **Contenu initial** dans la liste déroulante en regard de l’option **Aperçu**.
 
    ![Éditeur de modèles](assets/template_editor_initial_content_new.png)
 
-1. Sélectionner **Panneau racine** puis sélectionnez **+** pour afficher la liste des composants à ajouter au modèle.
+1. Sélectionnez **Panneau racine**, puis **+** afin dʼafficher la liste des composants que vous pouvez ajouter au modèle.
 1. Pour ajouter un panneau au-dessus du **Panneau racine**, sélectionnez **Panneau** dans la liste.
 1. Sélectionnez l’onglet **Contenu** dans le volet gauche. Le nouveau panneau ajouté à l’étape 8 est affiché sous le **panneau racine** dans l’arborescence de contenu.
 
    ![Arborescence de contenu](assets/content_tree_root_panel_new.png)
 
-1. Sélectionnez le panneau, puis sélectionnez ![configure_icon](assets/configure_icon.png) (Configuration).
+1. Sélectionnez le panneau et choisissez ![configure_icon](assets/configure_icon.png) (Configurer).
 1. Dans le volet Propriétés :
 
    1. Spécifiez **billdetails** dans le champ Nom.
@@ -255,9 +255,9 @@ Une fois que vous avez créé le modèle web, vous devez l’activer pour utilis
 
 Pour activer le modèle web, procédez comme suit :
 
-1. Sélectionner **Outils** ![icône en forme de marteau](assets/hammer-icon.svg) > **Modèles**.
-1. Accédez au **Create_First_IC_Web_Template** modèle, sélectionnez-le, puis sélectionnez **Activer**.
-1. Sélectionner **Activer** pour confirmer.
+1. Sélectionnez **Outils** ![hammer-icon](assets/hammer-icon.svg) > **Modèles**.
+1. Accédez au modèle **Create_First_IC_Web_Template**, sélectionnez-le, puis choisissez **Activer**.
+1. Sélectionnez à nouveau **Activer** pour confirmer.
 
    Le modèle est activé et son statut s’affiche comme Activé. Vous pouvez utiliser ce modèle lors de la création de la communication interactive pour le canal web.
 
@@ -266,7 +266,7 @@ Pour activer le modèle web, procédez comme suit :
 En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maintenant** et **S’abonner** (composants de formulaires adaptatifs) dans la communication interactive. Pour activer l’utilisation de ces boutons dans la communication interactive, procédez comme suit :
 
 1. Sélectionnez **Structure** dans la liste déroulante en regard de l’option **Prévisualisation**.
-1. Sélectionnez la variable **Conteneur de documents** panneau racine à l’aide de l’arborescence de contenu et sélectionnez **Stratégie** pour sélectionner les composants autorisés à être utilisés dans la communication interactive.
+1. Sélectionnez le panneau racine **Conteneur de documents** en utilisant l’arborescence de contenu et choisissez **Politique** pour sélectionner les composants qui sont autorisés à être utilisés dans la communication interactive.
 
    ![Configuration de la politique](assets/structure_configure_policy_new.png)
 
@@ -274,4 +274,4 @@ En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maint
 
    ![Composants autorisés](assets/allowed_components_af_new.png)
 
-1. Pour enregistrer les propriétés, sélectionnez ![save](assets/done_icon.png).
+1. Pour enregistrer les propriétés, sélectionnez ![Enregistrer](assets/done_icon.png).

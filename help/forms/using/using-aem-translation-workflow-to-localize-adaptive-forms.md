@@ -1,6 +1,6 @@
 ---
 title: Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement
-description: Découvrez comment utiliser AEM processus de traduction pour localiser les formulaires adaptatifs et le document d’enregistrement.
+description: Découvrez comment utiliser les workflows de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement.
 content-type: reference
 topic-tags: develop
 noindex: true
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 76%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-Les formulaires localisés permettent de servir un public plus large dans plusieurs zones géographiques. Le processus de traduction Adobe Experience Manager vous aide à localiser les formulaires adaptatifs et leurs documents d’enregistrement . Vous pouvez utiliser **traduction automatique** ou **traducteurs humains** pour localiser un formulaire adaptatif.
+Les formulaires localisés permettent de servir un public plus large dans plusieurs zones géographiques. Le workflow de traduction Adobe Experience Manager vous permet de localiser des formulaires adaptatifs et leurs documents d’enregistrement. Vous pouvez faire appel à la **traduction automatique** ou à des **traducteurs humains** pour localiser un formulaire adaptatif.
 
-Cet article explique le processus d’utilisation AEM processus de traduction avec des formulaires adaptatifs et des documents d’enregistrement.
+Cet article décrit la procédure d’utilisation du workflow de traduction AEM avec des formulaires adaptatifs et des documents d’enregistrement.
 
-## Localisation d’un formulaire et d’un document adaptatif à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Le service de traduction automatique traduit immédiatement votre contenu dans un formulaire adaptatif et un document d’enregistrement. AEM Forms est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Effectuez les étapes suivantes pour activer la traduction automatique de vos formulaires adaptatifs et documents d’enregistrement :
+Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et documents d’enregistrement. AEM Forms est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement, procédez comme suit :
 
-1. Dans l’interface utilisateur d’AEM Forms, sélectionnez un formulaire, puis le **Ajouter un dictionnaire** .
+1. Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis l’option **Ajouter un dictionnaire**.
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
 1. Dans le champ **Titre du projet**, indiquez le titre, par exemple `Government Reference Site - German locale.`
 1. Dans le champ **Langues cibles**, spécifiez un paramètre régional (par exemple `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
@@ -49,16 +49,16 @@ Le service de traduction automatique traduit immédiatement votre contenu dans u
 
 [Paramètres d’un document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personnalisation des informations de marque du document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) et assurez-vous que les paramètres régionaux du navigateur sont définis dans la même langue que celle dans laquelle vous avez localisé le formulaire adaptatif à l’aide de la langue de la machine. Les paramètres régionaux du navigateur permettent de localiser les informations de marque dans le document d’enregistrement.
+1. [Personnalisez les informations de marque du document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) et assurez-vous que les paramètres régionaux du navigateur correspondent à la langue dans laquelle vous avez localisé le formulaire adaptatif à l’aide de la traduction automatique. Les paramètres régionaux du navigateur permettent de localiser les informations de marque dans le document d’enregistrement.
 1. Pour afficher le document d’enregistrement localisé, sélectionnez Générer l’aperçu. Le document d’enregistrement PDF est généré et ouvert dans un nouvel onglet de votre navigateur.
 
 ## Localiser un formulaire adaptatif et son document d’enregistrement à l’aide de la traduction humaine {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
 Avec la traduction humaine, le contenu est envoyé à un prestataire de traduction et traduit par des traducteurs et des traductrices professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement transféré entre AEM et le fournisseur de traduction.
 
-Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque langue. Chaque fichier XLIFF contient du texte qui sera affiché pour les utilisateurs finaux et des espaces réservés pour le texte localisé correspondant.
+Pour la traduction, un dictionnaire contenant les fichiers au format XLIFF est partagé avec les traducteurs et les traductrices professionnels. Le dictionnaire contient un fichier XLIFF distinct pour chaque langue. Chaque fichier XLIFF contient du texte visible par les utilisateurs finaux, ainsi que des espaces réservés pour le texte localisé correspondant.
 
-Effectuez les étapes suivantes pour localiser un formulaire et son document d’enregistrement à l’aide de traducteurs et traductrices humains :
+Pour localiser un formulaire et son document d’enregistrement à l’aide de traducteurs et traductrices humains, procédez comme suit :
 
 1. [Connectez AEM à votre fournisseur de service de traduction](/help/sites-administering/tc-tic.md) et [créez des configurations de structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 

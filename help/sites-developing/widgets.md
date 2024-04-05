@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4896'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,12 +96,12 @@ Pour inclure la bibliothèque cliente dans le fichier jsp du composant de page, 
 
 * pour inclure le code JavaScript et les feuilles de style :
   `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-where `<category-nameX>` est le nom de la bibliothèque côté client.
+où `<category-nameX>` est le nom de la bibliothèque côté client.
 
 * pour inclure uniquement le code JavaScript :
   `<ui:includeClientLib js="<category-name>"/>`
 
-Pour plus d’informations, voir la description de la variable [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) balise .
+Pour plus d’informations, reportez-vous à la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 Parfois, une bibliothèque cliente ne doit être disponible qu’en mode création et doit être exclue du mode publication. Cela peut se faire comme suit :
 
@@ -462,7 +462,7 @@ Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul 
 
 #### Exemple 3 : module externe Éditeur de texte enrichi (RTE) {#example-rich-text-editor-rte-plug-in}
 
-La boîte de dialogue basée sur le **module externe Éditeur de texte enrichi (RTE)** dispose d’un bouton personnalisé permettant d’insérer du texte personnalisé entre crochets. Le texte personnalisé peut être analysé par une logique côté serveur (non implémentée dans cet exemple), par exemple, pour ajouter du texte défini au chemin donné :
+La boîte de dialogue basée sur le **module externe Éditeur de texte enrichi (RTE)** dispose d’un bouton personnalisé permettant d’insérer du texte personnalisé entre crochets. Le texte personnalisé peut être analysé par une logique côté serveur (non implémentée dans cet exemple), par exemple pour ajouter du texte défini au chemin donné :
 
 Boîte de dialogue basée sur le **module externe de RTE** :
 

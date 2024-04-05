@@ -1,6 +1,6 @@
 ---
 title: Structuration de la gestion multisite du contenu ciblé
-description: Un diagramme illustre la structure de la prise en charge de sites multiples pour le contenu ciblé
+description: Le diagramme suivant indique comment est structurée la prise en charge multisite du contenu ciblé.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
@@ -22,12 +22,12 @@ Les zones apparaissent sous **/content/campaigns/&lt;marque>** et par défaut ch
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-Pour rechercher du contenu ciblé, les pages ou les sites peuvent correspondre à une zone. Si aucune zone n’est configurée, AEM revient à la zone maître de cette marque spécifique.
+Pour rechercher du contenu ciblé, les pages ou les sites peuvent correspondre à une zone. Si aucune zone n’est configurée, AEM revient à la zone principale pour cette marque spécifique.
 
 Le diagramme suivant illustre le fonctionnement de la logique pour trois sites, nommés site1, site2 et site3.
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-* site1 recherche myarea1 pour brand1 et otherarea2 pour brand2 en fonction du mappage des zones.
-* site2 recherche myarea1 pour la marque1 et la zone maître pour la marque2, car seul le mappage de zone pour la marque1 est défini.
-* site3 recherche la zone maître pour brand1 et brand2, car aucun autre mappage de zone n’est défini pour ce site.
+* site1 recherche myarea1 pour brand1 et otherarea2 pour brand2 en fonction du mappage de la zone.
+* site2 recherche myarea1 pour brand1 et la zone principale pour brand2 car seul le mappage de zone pour brand1 est défini.
+* site3 recherche la zone principale pour brand1 et brand2 car aucun autre mappage de zone n’est défini pour ce site.

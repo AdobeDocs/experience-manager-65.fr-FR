@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Vous pouvez activer des pages dans la console Sites web. Après avoir ouvert une
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. La gestion du contenu web d’AEM active le contenu sélectionné. La ou les pages publiées s’affichent dans la [Console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (en vert) avec des informations sur l’utilisateur ayant activé le contenu, ainsi que la date et l’heure de l’activation.
+1. La gestion du contenu web d’AEM active le contenu sélectionné. La ou les pages publiées s’affichent dans la [console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (en vert) avec des informations sur l’utilisateur ou l’utilisatrice qui a activé le contenu, ainsi que la date et l’heure d’activation.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -151,7 +151,7 @@ Dans l’onglet **Sites web**, vous pouvez activer les pages individuelles. Lors
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. Sur le **Réplication** console, cliquez sur **Activer l’arborescence**.
+1. Dans la console **Réplication**, cliquez sur **Activer l’arborescence**.
 
    La fenêtre suivante (`https://localhost:4502/etc/replication/treeactivation.html`) s’affiche.
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
    <td><a href="/help/assets/organize-assets.md">Bonnes pratiques relatives à la gestion des fichiers</a></td>
-   <td>La plupart des profils de traitement sont basés sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document sur les bonnes pratiques décrit comment définir et configurer votre hiérarchie des dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td>
+   <td>La plupart des profils de traitement reposent sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document sur les bonnes pratiques décrit comment définir et configurer votre hiérarchie des dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td>
   </tr>
   <tr>
    <td>Intégration de Scene7 avec AEM</td>

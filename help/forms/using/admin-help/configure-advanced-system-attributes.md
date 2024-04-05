@@ -1,6 +1,6 @@
 ---
 title: Configurer les attributs système avancés
-description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier.
+description: Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Configurer les attributs système avancés {#configure-advanced-system-attributes}
 
-Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans avoir à exporter, modifier et importer le fichier. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer. (Voir [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 1. Dans la console d’administration, cliquez sur **[!UICONTROL Paramètres > User Management > Configuration > Configurer les attributs système avancés]**.
 1. (Facultatif) Modifiez l’un des attributs de session suivants :

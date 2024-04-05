@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +146,7 @@ Créez un document DDX de façon dynamique et désassemblez un document PDF à l
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur. Transmettez l’objet `org.w3c.dom.Document` qui représente le document DDX.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
    * Renseignez l’objet `ByteArrayOutputStream` Java en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer`. Transmettez les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
-   * Créez un tableau d’octets et attribuez-lui la taille de l’objet `ByteArrayOutputStream`.
+   * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
    * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant le tableau d’octets.
 
@@ -235,7 +235,7 @@ Créez de manière dynamique un document DDX et désassemblez un document PDF à
 
    * Créez un objet `System.IO.MemoryStream` en utilisant son constructeur.
    * Renseignez l’objet `MemoryStream` avec le document DDX en utilisant l’objet `XmlElement` qui représente le document DDX. Appelez la méthode `Save` de l’objet `XmlElement` et transmettez l’objet `MemoryStream`.
-   * Créez un tableau d’octets et renseignez-le avec des données dans la variable `MemoryStream` . Le code suivant présente la logique de cette application :
+   * Créez un tableau d’octets et renseignez-le avec les données contenues dans l’objet `MemoryStream`. Le code suivant présente la logique de cette application :
 
      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 

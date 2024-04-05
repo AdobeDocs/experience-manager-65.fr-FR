@@ -1,6 +1,6 @@
 ---
 title: Présentation de la structure de dossiers
-description: Découvrez comment comprendre la structure de dossiers du code source de l’espace de travail AEM Forms à personnaliser.
+description: Description de la structure des dossiers du code source de l’espace de travail AEM Forms à personnaliser.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # Présentation de la structure de dossiers {#understanding-the-folder-structure}
 
-Les composants de l’espace de travail AEM Forms reposent sur une architecture MVC (modèle-vue-contrôleur) utilisant le modèle Backbone. Chaque composant possède un fichier pour :
+Les composants de l’espace de travail AEM Forms reposent sur une architecture MVC (modèle-vue-contrôleur) utilisant le modèle Backbone. Chaque composant possède un fichier pour :
 
-* Modèle, qui contient la logique commerciale.
-* Modèle, c’est-à-dire un fichier de HTML contenant des commandes d’interface.
-* Vue, qui agit comme une classe Controller sur Template.
+* un modèle contenant une logique commerciale ;
+* un template, c’est-à-dire un fichier HTML contenant des commandes d’interface ;
+* une vue agissant comme une classe Controller sur le template.
 
 Les actifs de tous les composants sont placés dans la structure de dossiers décrite ci-dessous. Pour accéder aux ressources, connectez-vous à CRXDE Lite et accédez à `/libs/ws/js/runtime/`.
 

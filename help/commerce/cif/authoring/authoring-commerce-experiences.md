@@ -1,12 +1,12 @@
 ---
 title: Création d’expériences commerciales
-description: Le module complémentaire CIF étend la création Adobe Experience Manager avec des fonctionnalités spécifiques au commerce.
+description: Le module complémentaire CIF étend la création d’Adobe Experience Manager avec des fonctionnalités spécifiques au commerce.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Les sélecteurs de produits et de catégories sont des boîtes de dialogue modal
 
 ### Sélecteur de produits {#product-picker}
 
-Ce sélecteur permet de parcourir la structure du catalogue ou la recherche de texte intégral pour trouver le produit. Les produits avec variation offrent une icône de dossier dans la colonne « Type ». Cliquez sur l’icône de dossier pour ouvrir les variantes du produit sélectionné.
+Ce sélecteur peut permettre de parcourir la structure du catalogue ou la recherche en texte intégral pour trouver le produit. Les produits avec variation offrent une icône de dossier dans la colonne « Type ». Cliquez sur l’icône de dossier pour ouvrir les variantes du produit sélectionné.
 
 ![Sélecteur de produit](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -34,13 +34,13 @@ Cliquer sur la catégorie parent ramène l’auteur au niveau du produit.
 
 ![Composant Teaser sans sélection](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produits. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
+La boîte de dialogue de configuration de ce composant nécessite un produit. CIF utilise le SKU comme identifiant de produit. Les auteurs et autrices peuvent saisir le SKU manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de produit. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom du produit sélectionné.
 
 ![Composant Teaser avec sélection](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### Sélecteur de catégories {#category-picker}
 
-Ce sélecteur permet de parcourir la structure du catalogue pour trouver la catégorie.
+Ce sélecteur peut permettre de parcourir la structure du catalogue pour trouver la catégorie.
 
 ![Sélecteur de catégorie](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -48,7 +48,7 @@ Ce sélecteur permet de parcourir la structure du catalogue pour trouver la cat�
 
 ![Composant Carrousel sans sélection](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-La boîte de dialogue de configuration de ce composant nécessite 1 : n catégories. CIF utilise l’UID/ID comme identifiant de catégorie. Les auteurs peuvent saisir l’UID manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de catégorie. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom de la catégorie sélectionnée.
+La boîte de dialogue de configuration de ce composant nécessite 1 : n catégories. CIF utilise l’UID/ID comme identifiant de catégorie. Les auteurs et autrices peuvent saisir l’UID manuellement ou cliquer sur l’icône de dossier pour ouvrir le sélecteur de catégorie. Après avoir sélectionné et fermé le sélecteur, la boîte de dialogue du composant affiche le nom de la catégorie sélectionnée.
 
 ![Composant Carrousel avec sélection](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 

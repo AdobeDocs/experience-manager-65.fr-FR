@@ -11,7 +11,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de m
 
 3. Créez une configuration enfant de la configuration de CIF Cloud Service en procédant comme suit :
 
-   * Dans AEM, accédez à Outils > Général > [Explorateur de configuration](/help/sites-administering/configurations.md#using-configuration-browser)
+   * Dans AEM, accédez à Outils > Général > [Explorateur de configurations](/help/sites-administering/configurations.md#using-configuration-browser).
    * Sélectionnez la configuration de base que vous avez créée.
    * Créez une configuration en suivant les étapes décrites au point 2 ci-dessus.
 
-   Cette nouvelle configuration est créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils > Général > Explorateur de configurations et créer les paramètres de configuration.
+   Cette nouvelle configuration est créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils  > Général  > Explorateur de configurations et créer les paramètres de configuration.
 
    >[!TIP]
    >
@@ -50,7 +50,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de m
 4. Affectez la configuration enfant à un site AEM.
 
    * Accédez à la console AEM Sites.
-   * Accédez à la racine de région ou de langue de la structure de votre site, par exemple /content/venia/us _ou_ /content/venia/us/en pour la page d’exemple Venia
+   * Accédez à la racine de région ou de langue de la structure de votre site, par exemple, /content/venia/us _ou_ /content/venia/us/en pour la page d’exemple Venia.
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
    * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape.

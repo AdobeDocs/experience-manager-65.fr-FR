@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Si le fichier source est mis en relation avec une autre ressource, [!DNL Experie
 
 *Image : ressource source des ressources connexes à inclure pour la traduction*
 
-1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes décrites dans la section [Création d’un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, ici, traduisez vos ressources en français.
+1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes décrites dans [Création d’un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, ici, traduisez vos ressources en français.
 
 1. Sur la page [!UICONTROL Projets], ouvrez le dossier de traduction.
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '955'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Imaginons, par exemple, un scénario où vous êtes connecté(e) à la console d
 **Référent de valeur NULL :** lorsque vous ouvrez une nouvelle fenêtre ou un nouvel onglet de navigation et saisissez une adresse puis appuyez sur Entrée, la valeur du référent est NULL. La requête est totalement nouvelle et ne provient d’aucune page web parente ; il n’existe donc aucun référent pour la requête. La valeur d’un référent reçu par le serveur Forms peut être NULL dans plusieurs cas :
 
 * lorsqu’une requête est effectuée sur un point d’entrée SOAP ou REST à partir d’Acrobat ;
-* tout client de bureau effectuant une requête HTTP sur un point de terminaison SOAP ou REST AEM forms
+* lorsqu’un client de bureau effectue une requête HTTP sur un point d’entrée SOAP ou REST d’AEM Forms ;
 * lorsque vous ouvrez une nouvelle fenêtre de navigation et que l’URL de la page de connexion d’une application web AEM Forms est déjà saisie.
 
 Autorisez la valeur de référent NULL sur les points de fin SOAP et REST. Autorisez également la valeur de référent NULL sur toutes les pages de connexion URI telles que /adminui et /contentspace, ainsi que leurs ressources mappées correspondantes. Par exemple, la servlet mappée pour /contentspace est /contentspace/faces/jsp/login.jsp ; sa valeur de référent doit pouvoir être NULL. Cette exception est obligatoire uniquement si vous activez le filtrage GET pour votre application web. Vos applications peuvent indiquer s’il convient d’autoriser des référents de valeur NULL Voir « Protection contre les attaques multisites par usurpation de requête (CSRF) » dans [Renforcement et sécurité dʼAEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html).

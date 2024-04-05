@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Si la base de données s’exécute dans un mode de consignation tel que décrit
 
 ## Sauvegarde de la base de données, du répertoire de stockage global de documents, du référentiel AEM et des répertoires racine de stockage de contenu. {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-Placez AEM Forms en mode de sauvegarde sécurisé (instantané) ou de sauvegarde restauration (couverture continue). Avant de définir AEM Forms sur l’un de ces modes de sauvegarde, assurez-vous que les conditions suivantes sont remplies :
+Vous pouvez mettre AEM Forms en mode de sauvegarde sécurisé (instantané) ou en mode de sauvegarde restauration (couverture continue). Avant de définir AEM Forms sur l’un de ces modes de sauvegarde, assurez-vous que les conditions suivantes sont remplies :
 
 * Vérifiez la version du système et notez les correctifs et mises à jour appliqués depuis la dernière sauvegarde d’image système complète.
 * Si vous utilisez des sauvegardes en mode instantané ou de type restauration, vérifiez que votre base de données est configurée avec des paramètres de consignation corrects pour autoriser les sauvegardes à chaud de la base de données. (Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
@@ -138,7 +138,7 @@ Vous pouvez utiliser l’interface de ligne de commande pour faire sortir AEM F
 
    >[!NOTE]
    >
-   >Définissez le répertoire JAVA_HOME comme décrit dans le chapitre correspondant pour votre serveur d’applications dans [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr)*.*
+   >Définissez le répertoire JAVA_HOME tel qu’indiqué dans le chapitre correspondant relatif au serveur d’applications, dans le document [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_fr)*.*
 
 1. Exécutez la commande suivante sur une même ligne :
 

@@ -1,6 +1,6 @@
 ---
 title: Activer la prise en charge du format PDF/A
-description: Découvrez comment activer la prise en charge de PDF/A. Les fichiers compatibles avec PDF/A peuvent être créés à partir de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
+description: Découvrez comment activer la prise en charge du format PDF/A. Des fichiers compatibles PDF/A peuvent être créés à partir de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 # Activer la prise en charge du format PDF/A {#enable-pdf-a-support}
 
-PDF Generator prend en charge la création de fichiers conformes à PDF/A à partir de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
+PDF Generator prend en charge la création de fichiers compatibles PDF/A issus de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Paramètres de type de fichier.
 1. Cliquez sur Nouveau ou sélectionnez un paramètre de type de fichier existant.
-1. Cliquez sur Microsoft Excel, Microsoft PowerPoint ou Microsoft Word, puis sélectionnez Créer un fichier compatible avec le PDF/A-1a et enregistrez vos modifications.
-1. Dans l’application native (telle que Microsoft Word), cliquez sur Adobe PDF > Modifier les paramètres de conversion, puis sélectionnez PDF/A-1b.
+1. Cliquez sur Microsoft Excel, Microsoft PowerPoint ou Microsoft Word, puis sélectionnez Créer un fichier compatible avec le format PDF/A-1a et enregistrez vos modifications.
+1. Dans l’application native (telle que Microsoft Word), cliquez sur Adobe PDF > Modifier les paramètres de conversion, puis sélectionnez PDF/A-1b.

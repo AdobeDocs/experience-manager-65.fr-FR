@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2203'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 82%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Présentation {#introduction}
 
-Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Pour préremplir les données dans un formulaire adaptatif, rendez les données utilisateur disponibles en tant que XML/JSON prérempli au format conforme à la structure de données préremplie des formulaires adaptatifs.
+Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Pour préremplir les données utilisateur dans un formulaire adaptatif, définissez-les sous la forme d’un fichier XML/JSON prérempli au format respectant la structure de données de préremplissage des formulaires adaptatifs.
 
 ## Structure des données de préremplissage {#the-prefill-structure}
 
@@ -34,11 +34,11 @@ Un formulaire adaptatif peut contenir un mélange de champs liés et non liés. 
 
 Vous pouvez préremplir les champs liés et non liés d’un formulaire adaptatif. Les données de préremplissage contiennent les sections afBoundData et afUnBoundData pour préremplir les champs liés et non liés d’un formulaire adaptatif. La section `afBoundData` contient les données de préremplissage pour les champs liés et les panneaux. Ces données doivent être conformes au schéma de modèle de formulaire associé :
 
-* Pour les formulaires adaptatifs qui utilisent la variable [Modèle de formulaire XFA](../../forms/using/prepopulate-adaptive-form-fields.md), utilisez le code XML de préremplissage conforme au schéma de données du modèle XFA.
-* Pour les formulaires adaptatifs utilisant [Schéma XML](#xml-schema-af), utilisez le code XML de préremplissage conforme à la structure du schéma XML.
-* Pour les formulaires adaptatifs utilisant [Schéma JSON](#json-schema-based-adaptive-forms), utilisez le code JSON de préremplissage conforme au schéma JSON.
-* Pour les formulaires adaptatifs utilisant le schéma FDM, utilisez le code JSON de préremplissage compatible avec le schéma FDM.
-* Pour les formulaires adaptatifs avec [aucun modèle de formulaire](#adaptive-form-with-no-form-model), il n’existe aucune donnée liée. Chaque champ est un champ non lié qui est prérempli à l’aide du code XML non lié.
+* Pour les formulaires adaptatifs utilisant le [modèle de formulaire XFA](../../forms/using/prepopulate-adaptive-form-fields.md), utilisez le code XML de préremplissage compatible avec le schéma de données du modèle XFA.
+* Pour les formulaires adaptatifs utilisant le [schéma XML](#xml-schema-af), utilisez le code XML de préremplissage compatible avec la structure du schéma XML.
+* Pour les formulaires adaptatifs utilisant le [schéma JSON](#json-schema-based-adaptive-forms), utilisez le code JSON de préremplissage compatible avec le schéma JSON.
+* Pour les formulaires adaptatifs utilisant le schéma FDM, utilisez le code JSON de préremplissage compatible avec le schéma FDM.
+* Pour les formulaires adaptatifs [sans modèle de formulaire](#adaptive-form-with-no-form-model), il n’existe aucune donnée liée. Chaque champ est un champ non lié qui est prérempli à l’aide du code XML non lié.
 
 ### Exemple de structure XML de préremplissage {#sample-prefill-xml-structure}
 
@@ -95,9 +95,9 @@ Prefill-Submit-Data-ContentPackage.zip
 [Obtenir le fichier](assets/prefill-submit-data-contentpackage.zip)
 Exemple de données contenant un préremplissage et de données envoyées
 
-### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
+### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
 
-La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur le schéma XML est la suivante :
+La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur le schéma XML se présente comme suit :
 
 * **Structure XML de préremplissage** : le code XML de préremplissage doit être conforme au schéma XML associé. Pour préremplir des champs non liés, placez la structure XML de préremplissage dans la balise /afData/afBoundData.
 * **Structure XML envoyée** : si aucun code XML de préremplissage n’est utilisé, le code XML envoyé contient des données pour les champs liés et non liés dans la balise wrapper `afData`. Si du code XML de préremplissage est utilisé, le code XML envoyé possède la même structure que celui-ci. Si le code XML de préremplissage commence par la balise racine `afData`, le code XML de sortie possède également le même format. Si le code XML de préremplissage ne dispose pas du wrapper `afData/afBoundData` et commence plutôt directement par la balise racine du schéma telle que `employeeData`, le code XML envoyé commence également par la balise `employeeData`.
@@ -148,9 +148,9 @@ Pour les champs dont le modèle est le schéma XML, les données sont remplies d
 </config>
 ```
 
-### Formulaires adaptatifs basés sur un schéma JSON {#json-schema-based-adaptive-forms}
+### Formulaires adaptatifs basés sur un schéma JSON {#json-schema-based-adaptive-forms}
 
-Pour les formulaires adaptatifs basés sur le schéma JSON, la structure du code JSON de préremplissage et du code JSON envoyé est décrite ci-dessous. Pour plus d’informations, voir [Création de formulaires adaptatifs à l’aide du schéma JSON](../../forms/using/adaptive-form-json-schema-form-model.md).
+Pour les formulaires adaptatifs basés sur un schéma JSON, la structure du code JSON de préremplissage et du code JSON envoyé est décrite ci-dessous. Pour plus d’informations, reportez-vous à la section [Création de formulaires adaptatifs à l’aide d’un schéma JSON](../../forms/using/adaptive-form-json-schema-form-model.md).
 
 * **Structure du préremplissage JSON** : le préremplissage JSON doit être conforme au schéma JSON associé. Il peut éventuellement être encapsulé dans l’objet /afData/afBoundData si vous souhaitez préremplir aussi des champs non liés.
 * **Structure JSON envoyée** : si aucun code JSON de préremplissage n’est utilisé, le code JSON envoyé contient des données pour les champs liés et non liés dans la balise wrapper afData. Si le code JSON de préremplissage est utilisé, le code JSON envoyé possède la même structure que celui-ci. Si le code JSON de préremplissage commence par l’objet racine afData, le code JSON de sortie possède également le même format. Si le code JSON de préremplissage ne dispose pas du wrapper afData/afBoundData et commence plutôt directement par l’objet racine du schéma tel que l’utilisateur, le code JSON envoyé commence également par l’objet utilisateur.
@@ -237,7 +237,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 
 >[!NOTE]
 >
->La configuration du service de préremplissage s’applique aux formulaires adaptatifs, aux formulaires HTML5 et aux jeux de formulaires HTML5.
+>La configuration du service de préremplissage s’applique aux formulaires adaptatifs, aux formulaires HTML5 et aux ensembles de formulaires HTML5.
 
 1. Ouvrez la **[!UICONTROL configuration de la console web d’Adobe Experience Manager]** à l’aide de l’URL :\
    https://&lt;serveur>:&lt;port>/system/console/configMgr
@@ -262,9 +262,9 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 
 ## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
 
-En règle générale, les champs liés (schéma de formulaire) et non liés sont créés dans le même formulaire adaptatif, mais voici quelques exceptions au cas où les liaisons sont répétables :
+En règle générale, les champs liés (schéma de formulaire) et non liés sont créés dans un même formulaire adaptatif. Les éléments suivants constituent cependant quelques exceptions lorsque les liaisons sont répétables :
 
-* Les panneaux répétables non liés ne sont pas pris en charge pour les formulaires adaptatifs utilisant le modèle de formulaire XFA, le schéma XSD, JSON ou le schéma FDM.
+* Les panneaux répétables non liés ne sont pas pris en charge pour les formulaires adaptatifs utilisant le modèle de formulaire XFA, XSD, le schéma JSON ou le schéma FDM.
 * N’utilisez pas de champs non liés dans les panneaux répétables liés.
 
 >[!NOTE]
@@ -273,7 +273,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
-Les formulaires adaptatifs peuvent être préremplis avec des données utilisateur au format de données préremplies via les protocoles suivants lorsqu’ils sont configurés avec une expression régulière valide :
+Les formulaires adaptatifs peuvent être préremplis avec des données utilisateur au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une regex valide :
 
 ### Protocole crx://  {#the-crx-protocol}
 
@@ -343,11 +343,11 @@ Exemple de prefill.jsp dans le composant de page
 
 ## Service de préremplissage personnalisé d’AEM Forms {#aem-forms-custom-prefill-service}
 
-Vous pouvez utiliser le service de préremplissage personnalisé pour les scénarios, où vous lisez en permanence des données à partir d’une source prédéfinie. Le service de préremplissage lit les données provenant de sources de données définies et préremplit les champs du formulaire adaptatif avec le contenu du fichier de données de préremplissage. Il vous permet également d’associer de manière permanente des données de préremplissage à un formulaire adaptatif.
+Vous pouvez utiliser le service de préremplissage personnalisé pour les scénarios, où vous lisez en permanence des données à partir d’une source prédéfinie. Le service de préremplissage lit des données provenant de sources de données définies et préremplit les champs du formulaire adaptatif avec le contenu du fichier de données de préremplissage. Il vous permet également d’associer de manière permanente des données de préremplissage à un formulaire adaptatif.
 
 ### Création et exécution d’un service de préremplissage {#create-and-run-a-prefill-service}
 
-Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le lot OSGi, le téléchargez et l’installez sur les lots AEM Forms. Avant de débuter la création du bundle :
+Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le lot OSGi, vous le chargez et l’installez sur les lots AEM Forms. Avant de débuter la création du bundle :
 
 * [Téléchargez l’AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * Téléchargement du package standard
@@ -358,7 +358,7 @@ Le service de préremplissage est un service OSGi et fait partie du bundle OSGi.
 
 #### Création d’un service de préremplissage {#create-a-prefill-service}
 
-Le package standard (exemple de package de service de préremplissage) contient un exemple d’implémentation du service de préremplissage AEM Forms. Ouvrez le package standard dans un éditeur de code. Par exemple, ouvrez le projet standard dans Eclipse pour le modifier. Après avoir ouvert le package standard dans un éditeur de code, procédez comme suit pour créer le service.
+Le package standard (exemple de package de services de préremplissage) contient un exemple d’implémentation du service de préremplissage d’AEM Forms. Ouvrez le package standard dans un éditeur de code. Par exemple, ouvrez le projet standard dans Eclipse pour le modifier. Après avoir ouvert le package standard dans un éditeur de code, procédez comme suit pour créer le service.
 
 1. Ouvrez le fichier src\main\java\com\adobe\test\Prefill.java pour le modifier.
 1. Dans le code, définissez la valeur de :
@@ -372,9 +372,9 @@ Le package standard (exemple de package de service de préremplissage) contient 
 
 #### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
 
-Pour démarrer le service de préremplissage, chargez le fichier JAR dans la console web d’AEM Forms et activez le service. Désormais, le service commence à apparaître dans l’éditeur de formulaires adaptatifs. Pour associer un service de préremplissage à un formulaire adaptatif :
+Pour démarrer le service de préremplissage, chargez le fichier JAR dans la console web d’AEM Forms et activez le service. Désormais, le démarrage du service s’affiche dans l’éditeur de formulaires adaptatifs. Pour associer un service de préremplissage à un formulaire adaptatif :
 
-1. Ouvrez le formulaire adaptatif dans l’éditeur de Forms et ouvrez le panneau Propriétés du conteneur de formulaires.
+1. Ouvrez le formulaire adaptatif dans l’éditeur de formulaires et ouvrez le panneau des propriétés du conteneur de formulaires.
 1. Dans la console des propriétés, accédez au conteneur d’AEM Forms > de base > service de préremplissage.
 1. Sélectionnez le service de préremplissage par défaut et cliquez sur **[!UICONTROL Enregistrer]**. Le service est associé au formulaire.
 

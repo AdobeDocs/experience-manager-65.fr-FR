@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3674'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Le processus `FirstAppSolution/PreLoanProcess` est appelé lorsqu’un demandeur
  </LoanApp>
 ```
 
-Les données XML transmises à un processus doivent correspondre aux champs du formulaire utilisé dans le processus. Dans le cas contraire, les données ne s’affichent pas dans le formulaire. Toutes les applications qui invoquent le processus `FirstAppSolution/PreLoanProcess` doivent transmettre cette source de données XML. Les applications créées dans *Appel de processus de longue durée pour des intervenants humains* créent dynamiquement la source de données XML à partir des valeurs saisies par un utilisateur dans un client web.
+Les données XML transmises à un processus doivent correspondre aux champs situés dans le formulaire utilisé dans le processus. Dans le cas contraire, les données ne s’affichent pas dans le formulaire. Toutes les applications qui invoquent le processus `FirstAppSolution/PreLoanProcess` doivent transmettre cette source de données XML. Les applications créées dans *Appel de processus de longue durée pour des intervenants humains* créent dynamiquement la source de données XML à partir des valeurs saisies par un utilisateur dans un client web.
 
 À l’aide d’une application cliente, vous pouvez envoyer au processus *FirstAppSolution/PreLoanProcess* les données XML obligatoires. Un processus de longue durée renvoie une valeur d’identifiant d’appel comme valeur renvoyée. L’illustration suivante présente les applications clientes appelant le processus de longue durée *FirstAppSolution/PreLoanProcess. Les applications clientes envoient des données XML et récupèrent une valeur string qui représente la valeur de l’identifiant d’appel.
 
@@ -515,7 +515,7 @@ Notez que sous Références du service, il existe deux éléments. Le premier é
 
 ### Créer une page ASP qui appelle FirstAppSolution/PreLoanProcess {#create-an-asp-page-that-invokes-firstappsolution-preloanprocess}
 
-Dans le projet ASP.NET, ajoutez un formulaire web (un fichier ASPX) responsable de l’affichage d’une page HTML au demandeur de prêt. Le formulaire web est basé sur une classe dérivée de `System.Web.UI.Page`. La logique de l’application C# qui appelle `FirstAppSolution/PreLoanProcess` se trouve dans la variable `Button1_Click` (ce bouton représente le bouton Submit Application).
+Dans le projet ASP.NET, ajoutez un formulaire web (un fichier ASPX) responsable de l’affichage d’une page HTML au demandeur de prêt. Le formulaire web est basé sur une classe dérivée de `System.Web.UI.Page`. La logique de l’application C# qui appelle `FirstAppSolution/PreLoanProcess` se trouve dans la méthode `Button1_Click` (ce bouton représente le bouton Envoyer la demande).
 
 L’illustration suivante présente l’application ASP.NET.
 
@@ -556,7 +556,7 @@ Le tableau suivant répertorie les contrôles qui font partie de cette applicati
  </tbody>
 </table>
 
-La logique d’application qui fait partie de l’application ASP.NET doit créer de manière dynamique une source de données XML à transmettre au processus `FirstAppSolution/PreLoanProcess`. Les valeurs saisies par le demandeur dans la page HTML doivent être spécifiées dans la source de données XML. Ces valeurs de données sont fusionnées dans le formulaire lorsque le formulaire est affiché dans Workspace. Les classes dans la variable `System.Xml` Les espaces de noms sont utilisés pour créer la source de données XML.
+La logique d’application qui fait partie de l’application ASP.NET doit créer de manière dynamique une source de données XML à transmettre au processus `FirstAppSolution/PreLoanProcess`. Les valeurs saisies par le demandeur dans la page HTML doivent être spécifiées dans la source de données XML. Ces valeurs de données sont fusionnées dans le formulaire lorsque le formulaire est affiché dans Workspace. Les classes situées dans l’espace de noms `System.Xml` servent à créer la source de données XML.
 
 Lors de l’appel d’un processus qui nécessite des données XML d’une application ASP.NET, vous pouvez utiliser un type de données XML. En d’autres termes, vous ne pouvez pas transmettre une instance `System.Xml.XmlDocument` au processus. Le nom qualifié complet de cette instance XML à transmettre au processus est `InvokePreLoanProcess.PreLoanProcess.XML`. Convertissez l’instance `System.Xml.XmlDocument` en `InvokePreLoanProcess.PreLoanProcess.XML`. Vous pouvez effectuer cette tâche à l’aide du code ci-après.
 
@@ -812,7 +812,7 @@ L’exemple de code C# suivant appelle le processus `FirstAppSolution/PreLoanPro
 
 >[!NOTE]
 >
->Les valeurs de la méthode définie par l’utilisateur getJobDescription correspondent aux valeurs renvoyées par le service Job Manager.
+>Les valeurs se trouvant dans la méthode getJobDescription définie par l’utilisateur ou l’utilisatrice correspondent aux valeurs renvoyées par le service Job Manager.
 
 ### Exécuter l’application ASP.NET {#run-the-asp-net-application}
 

@@ -1,6 +1,6 @@
 ---
 title: Migration vers l’interface utilisateur tactile
-description: Découvrez la migration Adobe Experience Manager vers l’interface utilisateur tactile et comment elle vous affecte.
+description: Découvrez la migration d’Adobe Experience Manager vers l’IU tactile et les conséquences pour vous.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 70%
+ht-degree: 95%
 
 ---
 
 # Migration vers l’interface utilisateur tactile{#migration-to-the-touch-ui}
 
-À compter de la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée *IU optimisée pour les écrans tactiles* (également appelée simplement *IU tactile*). Il est aligné sur Adobe Experience Cloud et sur les directives générales de l’interface utilisateur de l’Adobe. Il s’agit dorénavant de l’interface utilisateur standard d’AEM, l’ancienne interface orientée bureau désormais appelée *IU classique*.
+À compter de la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée *IU optimisée pour les écrans tactiles* (également appelée simplement *IU tactile*). Elle respecte les directives concernant l’interface utilisateur d’Adobe Experience Cloud et plus généralement d’Adobe. Il s’agit dorénavant de l’interface utilisateur standard d’AEM, l’ancienne interface orientée bureau désormais appelée *IU classique*.
 
-Si vous avez utilisé AEM avec l’interface utilisateur classique, prenez des mesures pour migrer votre instance. Cette page vous accompagnera à cet effet en vous fournissant des liens vers plusieurs ressources individuelles.
+Si vous utilisiez AEM avec l’IU classique, prenez des mesures pour migrer votre instance. Cette page vous accompagnera à cet effet en vous fournissant des liens vers plusieurs ressources individuelles.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Si vous avez utilisé AEM avec l’interface utilisateur classique, prenez des m
 
 ## Principes élémentaires {#the-basics}
 
-Lors de la migration, tenez compte des principales différences suivantes entre l’IU classique et l’IU tactile :
+Lors de la migration, tenez compte des différences majeures suivantes entre l’IU classique et l’IU tactile :
 
 <table>
  <tbody>
@@ -37,7 +37,7 @@ Lors de la migration, tenez compte des principales différences suivantes entre 
   </tr>
   <tr>
    <td>Décrite dans le référentiel JCR comme une structure de nœuds. Chaque nœud qui représente un élément de l’interface utilisateur est appelé une <em>Widget ExtJS</em> et rendu côté client par <code>ExtJS</code>.</td>
-   <td>Également décrite dans le référentiel JCR comme une structure de nœuds. Cependant, dans ce cas, chaque noeud fait référence à un type de ressource Sling (composant Sling), responsable de son rendu. L’interface utilisateur est (en fait) rendue côté serveur.</td>
+   <td>Également décrite dans le référentiel JCR comme une structure de nœuds. Cependant, dans ce cas, chaque nœud fait référence à un type de ressource Sling (composant Sling), responsable de son rendu. L’interface utilisateur est (en fait) rendue côté serveur.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
@@ -63,11 +63,11 @@ Lors de la migration, tenez compte des principales différences suivantes entre 
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Emplacement JavaScript :</p>
+   <td><p>Emplacement JavaScript :</p>
     <ul>
-     <li>Les parties nécessaires sont directement incorporées à l’aide de listeners ou gérées dans des bibliothèques clientes.</li>
+     <li>Les parties nécessaires sont directement incorporées à l’aide d’écouteurs ou gérées dans des bibliothèques clientes.</li>
     </ul> </td>
-   <td><p>Emplacement JavaScript :</p>
+   <td><p>Emplacement JavaScript :</p>
     <ul>
      <li>Les parties nécessaires ne peuvent pas être incorporées dans la définition de boîte de dialogue, du fait de la séparation des responsabilités.</li>
     </ul> </td>
@@ -79,7 +79,7 @@ Lors de la migration, tenez compte des principales différences suivantes entre 
     </ul> </td>
    <td><p>Gestion des événements :</p>
     <ul>
-     <li>JavaScript surveille les événements de boîte de dialogue.</li>
+     <li>Javascript observe les événements de boîte de dialogue.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ Avant de commencer, vérifiez le statut et les recommandations associées :
 * [Statut des fonctionnalités de l’IU tactile](/help/release-notes/touch-ui-features-status.md)
 * [Recommandations d’interfaces utilisateur aux clients](/help/sites-deploying/ui-recommendations.md)
 
-Les principes de base du développement de l’interface utilisateur tactile constituent une base solide :
+Les principes fondamentaux du développement de l’IU tactile fournissent une base solide :
 
 * [Concepts de l’interface utilisateur (IU) tactile d’AEM](/help/sites-developing/touch-ui-concepts.md)
 * [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md)
@@ -117,7 +117,7 @@ Les boîtes de dialogue constituent un élément majeur de la migration de vos c
 * [Migration à partir d’un composant classique](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) - Pour vous aider à convertir les boîtes de dialogue de vos composants d’IU classique en IU tactile
 
-   * Il existe une couche de compatibilité dans l’interface utilisateur tactile pour ouvrir une boîte de dialogue d’interface utilisateur classique dans un &quot;wrapper d’interface utilisateur tactile&quot;, mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
+   * Il existe une couche de compatibilité dans l’IU tactile permettant d’ouvrir une boîte de dialogue d’IU classique dans un « wrapper d’IU tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
 * [Personnalisation des champs de boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md)
@@ -125,7 +125,7 @@ Les boîtes de dialogue constituent un élément majeur de la migration de vos c
 
 ## Migration des consoles {#migrating-consoles}
 
-Vous pouvez également personnaliser les consoles :
+Vous pouvez également personnaliser les consoles :
 
 * [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md) (pour l’interface utilisateur tactile)
 
@@ -154,4 +154,4 @@ Pour plus d’informations sur le développement d’AEM, consultez la collectio
 
 >[!CAUTION]
 >
->Les outils de modernisation AEM sont un effort communautaire et ne sont ni soutenus ni garantis par Adobe.
+>Les outils de modernisation d’AEM ont été créés par la communauté et ne sont ni pris en charge ni garantis par Adobe.

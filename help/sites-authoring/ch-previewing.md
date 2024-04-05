@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ La barre d’outils ContextHub est disponible en mode Aperçu. La barre d’outi
 
 ![screen_shot_2018-03-23at093730](assets/screen_shot_2018-03-23at093730.png)
 
-1. Une fois la page ouverte pour modification, cliquez sur Aperçu dans la barre d’outils.
+1. Avec votre page ouverte pour édition, cliquez sur Aperçu dans la barre d’outils.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
@@ -63,6 +63,6 @@ La fenêtre contextuelle d’un module peut inclure des éléments de formulaire
 
 ### Mode Plein écran {#fullscreen-mode}
 
-Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez pour développer le contenu de la fenêtre contextuelle qui couvre l’intégralité de la fenêtre ou de l’écran du navigateur.
+Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez afin que le contenu de la fenêtre contextuelle remplisse l’intégralité de la fenêtre du navigateur.
 
 ![Plein écran](do-not-localize/chlimage_1-18.png)

@@ -1,6 +1,6 @@
 ---
 title: Les pièges du codage
-description: Pièges de codage courants à éviter lors du développement pour AEM
+description: Pièges de codage courants à éviter lors du développement pour AEM
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 28%
 
 ## Éviter les liaisons Sling dans le code Java {#avoid-sling-bindings-in-java-code}
 
-Les liaisons Sling constituent un moyen inapproprié d’accéder à un service dans 90 % des cas. Vous devez utiliser à la place *@Reference* ou *@Inject* annotations.
+Les liaisons Sling constituent un moyen inapproprié d’accéder à un service dans 90 % des cas. Vous devez utiliser à la place les annotations *@Reference* ou *@Inject*.
 
 ## Éviter d’insérer Thread.interrupt dans le code Java {#avoid-thread-interrupt-in-java-code}
 
-*Thread.interrupt* est dangereux, car il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers de cache persistants, lorsqu’il est appelé au mauvais moment.
+*Thread.interrupt* est dangereux, car, appelé au mauvais moment, il peut fermer des fichiers, y compris des fichiers Lucene et des fichiers de cache persistants.
 
-## Évitez de mélanger la synchronisation Java avec ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Éviter de mélanger la synchronisation Java avec ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
-Cela peut entraîner une situation de concurrence dans laquelle le code finira par se bloquer.
+La situation peut entraîner une condition de concurrence dans laquelle le code finira par se bloquer.

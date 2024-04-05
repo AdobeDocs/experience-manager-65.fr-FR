@@ -1,6 +1,6 @@
 ---
 title: Test des composants principaux dans We.Retail
-description: Découvrez comment tester les composants principaux dans Adobe Experience Manager à l’aide de We.Retail.
+description: Découvrez comment tester les composants principaux dans Adobe Experience Manager à l’aide de We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
 ## Essayer de le faire {#trying-it-out}
 
-1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu We.Retail et ouvrez le [Console Composants](/help/sites-authoring/default-components-console.md).
+1. Démarrez Adobe Experience Manager (AEM) avec l’exemple de contenu We.Retail et ouvrez la [console Composants](/help/sites-authoring/default-components-console.md).
 
    **Navigation globale > Outils > Composants**
 
@@ -33,29 +33,29 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tous les composants principaux sont nommés **v1**, ce qui indique qu’il s’agit de la première version de ce composant principal. Des versions régulières seront publiées à l’avenir, qui seront compatibles avec AEM version et vous permettront de mettre à niveau facilement afin de profiter des dernières fonctionnalités.
-1. Cliquez sur **Texte (v1)**.
+1. Tous les composants principaux sont nommés **v1**, ce qui indique qu’il s’agit de la première version de ce composant principal. Des versions régulières seront publiées à l’avenir. Elles seront compatibles avec la version d’AEM et vous permettront une mise à niveau facile afin de profiter des dernières fonctionnalités.
+1. Cliquez sur **Texte (v1)**.
 
    Veillez à ce que le **Type de ressource** du composant soit `/apps/core/wcm/components/text/v1/text`. Les composants principaux sont disponibles sous `/apps/core/wcm/components` et versionnés par composant.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Cliquez sur le bouton **Documentation** pour afficher la documentation destinée aux développeurs du composant.
+1. Cliquez sur l’onglet **Documentation** afin d’afficher la documentation du développeur ou de la développeuse pour le composant.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Revenez à la console de composants. Filtre pour le groupe **We.Retail** et sélectionnez la variable **Texte** composant.
+1. Revenez à la console Composants. Filtrez pour le groupe **We.Retail** et sélectionnez le composant **Texte**.
 1. Vérifiez que le **Type de ressource** pointe comme prévu vers un composant sous `/apps/weretail`, mais que le **Type de super-ressource** repointe vers le composant principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Cliquez sur le bouton **Utilisation en direct** pour voir sur quelles pages ce composant est utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
+1. Cliquez sur l’onglet **Utilisation en direct** pour voir les pages sur lesquelles ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-1. Sur la page de remerciement, sélectionnez le composant de texte et, dans le menu de modification du composant, cliquez sur l’icône Annuler l’héritage .
+1. Sur la page de remerciement, sélectionnez le composant de texte et, dans le menu de modification du composant, cliquez sur l’icône Annuler l’héritage.
 
-   [We.Retail possède une structure de site globalisée.](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis des gabarits de langue à [Live Copies par le biais d’un mécanisme appelé héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à un utilisateur de modifier manuellement le texte.
+   [We.Retail possède une structure de site globalisée](/help/sites-developing/we-retail-globalized-site-structure.md) où le contenu est transmis des gabarits de langue aux [Live Copies par le biais d’un mécanisme appelé l’héritage](/help/sites-administering/msm.md). Pour cette raison, l’héritage doit être annulé pour permettre à une personne de modifier manuellement le texte.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -63,7 +63,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Une fois l’héritage annulé et que vous sélectionnez les composants de texte, de nombreuses autres options sont disponibles. Cliquez sur **Modifier**.
+1. Une fois que vous avez annulé l’héritage et sélectionné les composants de texte, bien d’autres options sont disponibles. Cliquez sur **Modifier**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -71,19 +71,19 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Dans la **Informations sur la page** menu, sélectionnez **Modifier le modèle**.
-1. Dans l’éditeur de modèles de la page, cliquez sur le bouton **Stratégie** de l’icône du composant Texte dans la **Conteneur de mises en page** de la page.
+1. Dans le menu **Informations sur la page**, sélectionnez **Modifier le modèle**.
+1. Dans l’éditeur de modèles de la page, cliquez sur l’icône **Politique** du composant Texte dans le **Conteneur de disposition** de la page.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Les composants principaux permettent à un auteur de modèles de configurer les propriétés disponibles pour les auteurs de pages. Il s’agit notamment de fonctionnalités telles que les sources de collage autorisées, les options de mise en forme et les styles de paragraphe disponibles.
+1. Les composants principaux permettent à un créateur ou à une créatrice de modèles de configurer les propriétés disponibles pour les créateurs et créatrices de pages. Il s’agit notamment de fonctionnalités telles que les sources de collage autorisées, les options de mise en forme et les styles de paragraphe disponibles.
 
-   Ces boîtes de dialogue de conception sont disponibles pour de nombreux composants principaux et fonctionnent main dans la main avec l’éditeur de modèles. Une fois activés, ils sont disponibles pour l’auteur via les éditeurs de composant.
+   Ces boîtes de dialogue de conception sont disponibles pour de nombreux composants principaux et fonctionnent main dans la main avec l’éditeur de modèles. Une fois activés, ils sont disponibles pour le créateur ou la créatrice via les éditeurs de composant.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les composants principaux, voir le document de création [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) pour une présentation des fonctionnalités des composants principaux et du document destiné aux développeurs [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour une présentation technique.
+Pour plus d’informations sur les composants principaux, consultez le document de création des [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) afin d’obtenir une vue d’ensemble des fonctionnalités des composants principaux ou le document de développement intitulé [Développement de composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour une vue d’ensemble technique.
 
 Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Reportez-vous au document [Création de modèles de page](/help/sites-authoring/templates.md) ou à la page de documentation de développement [Modèles – Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des informations complètes sur les modèles modifiables.

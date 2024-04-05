@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2728'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Selon le type de fragment, des modèles sont également utilisés :
    * Les modèles de fragment de contenu définissent la structure d’un fragment de contenu lors de sa création.
    * Un fragment référençant le modèle, les modifications du modèle peuvent impacter tous les fragments dépendants.
    * Les modèles sont composés de types de données.
-   * Les fonctions permettant d’ajouter de nouvelles variations, etc., doivent mettre à jour le fragment en conséquence.
+   * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
 
   >[!CAUTION]
   >
@@ -61,8 +61,8 @@ Selon le type de fragment, des modèles sont également utilisés :
    * utilisés pour définir des fragments de contenu simples.
    * Les modèles définissent la structure (de base, texte seul) d’un fragment de contenu lors de sa création.
    * Le modèle est copié dans le fragment lors de sa création. De ce fait, les modifications supplémentaires apportées au modèle ne seront pas répercutées dans les fragments existants.
-   * Les fonctions permettant d’ajouter de nouvelles variations, etc., doivent mettre à jour le fragment en conséquence.
-   * [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md) fonctionnent différemment des autres mécanismes de création de modèles au sein de l’écosystème AEM (par exemple, les modèles de page, etc.). C’est la raison pour laquelle ils doivent être pris en compte séparément.
+   * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
+   * Les [modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md) fonctionnent différemment des autres mécanismes de création de modèles de l’écosystème AEM (par exemple, les modèles de page, etc.). C’est la raison pour laquelle ils doivent être pris en compte séparément.
    * S’il est basé sur un modèle, le type MIME du contenu est géré sur le contenu. Cela signifie que chaque élément et variation peut présenter un type MIME différent.
 
 ### Intégrer à Assets {#integration-with-assets}
@@ -77,7 +77,7 @@ La gestion des fragments de contenu fait partie d’AEM Assets, car :
 
 ![fragment-to-assets-structured](assets/fragment-to-assets-structured.png)
 
-Les fragments de contenu avec du contenu structuré (c’est-à-dire basé sur un modèle de fragment de contenu) sont mappés à une ressource unique :
+Les fragments de contenu avec du contenu structuré (c’est-à-dire basé sur un modèle de fragment de contenu) sont mappés à une ressource unique :
 
 * L’ensemble du contenu est stocké sous le nœud `jcr:content/data` de la ressource :
 
@@ -162,7 +162,7 @@ L’implémentation principale des fragments de contenu est, par exemple, charg�
 Les paramètres correspondants peuvent être configurés dans la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) pour le lot OSGi **Configuration des composants de fragments de contenu**.
 
 * **Types de ressources**
-Une liste de `sling:resourceTypes` peut être fourni pour définir les composants utilisés pour le rendu des fragments de contenu et l’emplacement auquel le traitement en arrière-plan doit être appliqué.
+Une liste de `sling:resourceTypes` peut être fournie de façon à définir les composants qui sont utilisés pour le rendu des fragments de contenu et l’endroit où le traitement en arrière-plan doit être appliqué.
 
 * **Propriétés de référence**
 Une liste de propriétés peut être configurée pour spécifier l’emplacement où la référence au fragment est stockée pour le composant correspondant.
@@ -183,7 +183,7 @@ Il existe d’autres instructions que vous devez respecter pour vous assurer que
 
 * Si la sortie de plusieurs éléments est prise en charge (à l’aide de `elementNames` pour spécifier plusieurs éléments), le mode d’affichage est défini par la propriété`displayMode` :
 
-   * Si la valeur est `singleText` (et il n’y a qu’un seul élément configuré), l’élément est rendu sous forme de texte avec du contenu intermédiaire, la prise en charge de la mise en page, etc. Il s’agit de la valeur par défaut des fragments dans lesquels un seul élément est rendu.
+   * Si la valeur est `singleText` (et qu’il n’y a qu’un seul élément configuré), l’élément est rendu en tant que texte avec du contenu intermédiaire, la prise en charge de la disposition, etc. Il s’agit de la valeur par défaut des fragments dans lesquels un seul élément est rendu.
    * Dans le cas contraire, une approche beaucoup plus simple est utilisée (qui peut être qualifiée de « vue de formulaire »), dans laquelle aucun contenu intermédiaire n’est pris en charge et le contenu du fragment est rendu « tel quel ».
 
 * Si le fragment est rendu pour `displayMode` == `singleText` (de manière implicite ou explicite), les propriétés supplémentaires suivantes entrent en jeu :
@@ -255,7 +255,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 * **Modèle de fragment** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Utilisation `FragmentTemplate.createFragment()` pour créer un fragment.
+  Utilisez `FragmentTemplate.createFragment()` pour créer un fragment.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -324,7 +324,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Ajouter des collections
       * Supprimer des collections
 
-   * Accès au modèle ou au modèle du fragment
+   * Accéder au modèle du fragment
 
   Les interfaces qui représentent les éléments principaux d’un fragment sont les suivantes :
 
@@ -493,9 +493,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
+### Exemple : création d’un fragment de contenu {#example-creating-a-new-content-fragment}
 
-Pour créer un fragment de contenu par programmation, vous devez utiliser :
+Pour créer un fragment de contenu par programmation, vous devez utiliser :
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

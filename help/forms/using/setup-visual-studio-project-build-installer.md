@@ -1,6 +1,6 @@
 ---
 title: Configuration du projet Visual Studio et création d’une application Windows
-description: Découvrez comment configurer un projet Visual Studio pour créer l’application pour périphérique mobile AEM Forms Windows.
+description: Découvrez comment configurer un projet Visual Studio pour créer l’application AEM Forms pour périphériques mobiles Windows.
 topic-tags: forms-app
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ AEM Forms fournit le code source complet de l’application AEM Forms. La source
 Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
-1. Sélectionner **[!UICONTROL Adobe Experience Manager]** disponibles dans le menu d’en-tête.
+1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Sélectionnez le nom du package correspondant à votre système d’exploitation, puis sélectionnez **[!UICONTROL Accepter les termes du contrat de licence de l’utilisateur]**, puis sélectionnez **[!UICONTROL Télécharger]**.
+1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
@@ -40,32 +40,32 @@ L’image suivante affiche la structure du répertoire dans le dossier `windows`
 
 ## Configuration de l’environnement {#setting-up-the-environment}
 
-Pour les périphériques Windows, vous avez besoin des éléments suivants :
+Pour les périphériques Windows, vous avez besoin des éléments suivants :
 
-* Microsoft Windows 8.1 ou Windows 10
-* Microsoft Visual Studio 2015
-* Outils Visual Studio Microsoft pour Apache Cordova
+* Microsoft Windows 8.1 ou Windows 10
+* Microsoft Visual Studio 2015
+* Outils de Microsoft Visual Studio pour Apache Cordova
 
-## Configuration du projet Visual Studio pour l’application AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
+## Configuration du projet Visual Studio pour l’application AEM Forms {#setting-up-visual-studio-project-for-aem-forms-app}
 
-Effectuez les étapes suivantes pour configurer le projet d’application AEM Forms dans Visual Studio.
+Exécutez les étapes suivantes pour configurer le projet de l’application AEM Forms dans Visual Studio.
 
 1. Copiez l’archive `adobe-lc-mobileworkspace-src-<version>.zip` du dossier `%HOMEPATH%\Projects` dans l’appareil utilisant Windows 8.1 ou Windows 10 avec Visual Studio 2015 installé et configuré.
 1. Extrayez l’archive dans le répertoire `%HOMEPATH%\Projects\MobileWorkspace`.
 1. Accédez au répertoire `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows`.
 1. Ouvrez le fichier `CordovaApp.sln` à l’aide de Visual Studio 2015 et continuez à créer l’application AEM Forms.
 
-## Création d’une application AEM Forms {#build-aem-forms-app}
+## Création de l’application AEM Forms {#build-aem-forms-app}
 
-Effectuez les étapes suivantes pour créer et déployer l’application AEM Forms.
+Exécutez les étapes suivantes pour créer et déployer l’application AEM Forms.
 
 >[!NOTE]
 >
->Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Nous vous recommandons d’utiliser un outil tiers comme Windows BitLocker Drive Encryption pour chiffrer des données du disque.
+>Les données stockées sur le système de fichiers Windows de l’application AEM Forms ne sont pas chiffrées. Nous vous recommandons d’utiliser un outil tiers comme Windows BitLocker Drive Encryption pour chiffrer des données du disque.
 
 1. Dans la barre d’outils standard de Visual Studio, sélectionnez **Version** dans le menu déroulant du mode de création. 
 
-1. Sélectionnez Windows-AnyCPU, Windows-x64 ou Windows-x86 en fonction de votre plateforme. Windows-AnyCPU est recommandé.
+1. Sélectionnez Windows-AnyCPU, Windows-x64 ou Windows-x86 en fonction de votre plateforme. Il est conseillé d’utiliser Windows-AnyCPU.
 1. Dans Visual Studio Solution Explorer, effectuez un clic droit sur le projet **CordovaApp.Windows** et sélectionnez **Store > Créer des packages d’application**.
 
    ![createapppackages](assets/createapppackages.png)
@@ -86,7 +86,7 @@ Effectuez les étapes suivantes pour créer et déployer l’application AEM For
 
    ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
-1. Une fois le projet créé, vous pouvez installer l’application à l’aide de :
+1. Une fois que le projet est créé, vous pouvez installer l’application à l’aide de :
 
    * Windows PowerShell
    * Visual Studio
@@ -94,8 +94,8 @@ Effectuez les étapes suivantes pour créer et déployer l’application AEM For
    Le package `.appx` nécessite les éléments suivants pour s’installer correctement :
 
    1. Bibliothèque WinJS
-   1. Assurez-vous que le package s’accompagne d’un certificat auto-signé ou qu’une autorité de confiance a signé un certificat public tel que VeriSign.
-   1. Licence de développeur
+   1. Assurez-vous que le package s’accompagne d’un certificat auto-signé ou qu’une autorité approuvée, telle que VeriSign, a signé le certificat public.
+   1. Licence de développement
 
    Le répertoire Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contient les quatre principaux composants :
 
@@ -110,19 +110,19 @@ Il existe deux manières d’installer l’application sur un périphérique Win
 
 ### Via l’acquisition d’une licence développeur {#by-acquiring-the-developer-license}
 
-1. Cliquez avec le bouton droit sur le fichier PowerShell ( `Add-AppDevPackage.ps1)`, puis choisissez **Exécution avec PowerShell**.
+1. Effectuez un clic droit sur le fichier PowerShell `Add-AppDevPackage.ps1)` et sélectionnez **Exécuter avec PowerShell**.
 
-1. La configuration vous invite à obtenir une licence de développeur. Utilisez les informations d’identification du compte Microsoft pour acquérir une licence de développeur.\
+1. La configuration vous invite à obtenir une licence de développement. Utilisez les informations de connexion de votre compte Microsoft pour l’acquérir.\
    Cette licence est valable pendant 30 jours et peut être renouvelée gratuitement.
-1. Lorsque vous acquérez la licence de développeur, la configuration installe le certificat auto-signé sur le système et l’application s’installe correctement.
+1. Lors de l’acquisition de la licence de développement, la configuration entraîne l’installation d’un certificat auto-signé sur le système et l’application s’installe correctement.
 
-### En utilisant des périphériques d’entreprise {#by-using-enterprise-owned-devices}
+### Via des périphériques d’entreprise {#by-using-enterprise-owned-devices}
 
-Pour les périphériques d’entreprise connectés au domaine de l’entreprise, l’acquisition d’une licence de développeur n’est pas requise.
+Pour les périphériques d’entreprise connectés au domaine de l’entreprise, la licence de développement n’est pas obligatoire.
 
-Les périphériques d’entreprise utilisent les éditions Professional et Enterprise de Windows.
+Les périphériques d’entreprise utilisent Windows Professionnel et Windows Entreprise.
 
-Microsoft vous recommande d’installer un certificat public émis par une autorité de confiance, tel que VeriSign.
+Microsoft vous recommande d’installer un certificat public émis par une autorité de confiance, telle que VeriSign.
 
 Pour déployer l’application :
 
@@ -132,28 +132,28 @@ Pour déployer l’application :
 **Pour activer le paramètre de politiques de groupe :**
 
 1. Sur votre appareil, exécutez `gpedit.msc`.
-1. Accédez à **Configuration de l’ordinateur > Modèles d’administration > Composant Windows > Déploiement du module d’application**.
-1. Clic droit **Autoriser l’installation de toutes les applications approuvées**.
-1. Cliquez sur **Modifier** et sélectionnez **Activé**.
+1. Accédez à **Configuration de l’ordinateur > Modèles d’administration > Composant Windows > Déploiement du package d’application**.
+1. Cliquez avec le bouton droit de la souris sur **Autoriser toutes les applications de confiance pour l’installation**.
+1. Cliquez sur **Modifier** puis sélectionnez **Activé**.
 
 1. Cliquez sur **OK**.
 
-Modifiez le script PowerShell généré par Visual Studio pour l’empêcher d’acquérir la licence de développeur.
+Modifiez le script PowerShell généré par Visual Studio pour l’empêcher d’acquérir la licence de développement.
 
 Dans le script de PowerShell, définissez la variable `$NeedDeveloperLicense = $false`.
 
-Pour les appareils qui ne sont pas connectés au domaine, une clé d’activation de produit de chargement latéral est requise. Vous pouvez l’acheter auprès d’un revendeur Windows.
+Pour les périphériques non connectés à un domaine, la clé de sideloading d’activation du produit est requise. Vous pouvez l’acheter auprès d’un revendeur Windows.
 
-Pour l’édition d’accueil de Windows 8.1, il n’existe aucune stratégie de groupe, le chargement latéral d’entreprise n’est pas autorisé et vous ne pouvez pas le joindre au domaine d’entreprise. Déployez l’application sur un appareil Windows 8.1 Home Edition à l’aide de la licence de développeur.
+Pour Windows 8.1 Famille, il n’y a aucune stratégie de groupe. Le sideloading d’entreprise n’est pas activé et vous ne pouvez pas effectuer de connexion avec le domaine d’entreprise. Déployez l’application sur un appareil Windows 8.1 Famille à l’aide de la licence de développement.
 
-Pour plus d’informations, cliquez sur [here](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
+Pour plus d’informations, cliquez [ici](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
 ## Déploiement d’une application à l’aide de Visual Studio {#deploying-an-app-using-visual-studio}
 
-Pour installer l’application sous Windows à l’aide de Visual Studio :
+Pour installer l’application sous Windows à l’aide de Visual Studio :
 
 1. Connectez l’appareil à l’aide du débogueur à distance.\
    Pour plus d’informations, voir [Exécution d’applications Windows Store sur un ordinateur distant](https://docs.microsoft.com/fr-fr/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
-1. Lorsque votre application est ouverte dans Visual Studio, sélectionnez Windows-x64, Windows-x86 ou Windows-AnyCPU dans la liste Plateformes de solution, puis sélectionnez **Machine distante**.
+1. Avec l’application ouverte dans Visual Studio, sélectionnez Windows-x64, Windows-x86 ou Windows-AnyCPU à partir de la liste des plateformes de solution, puis sélectionnez **Ordinateur distant**.
 1. Votre application est déployée sur l’ordinateur distant.

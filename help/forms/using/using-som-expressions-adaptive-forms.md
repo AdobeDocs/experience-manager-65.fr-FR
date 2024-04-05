@@ -1,6 +1,6 @@
 ---
 title: Utiliser des expressions SOM dans des formulaires adaptatifs
-description: Découvrez comment extraire les expressions SOM d’un panneau d’un formulaire adaptatif.
+description: Découvrez comment extraire des expressions SOM d’un panneau de formulaire adaptatif.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Utiliser des expressions SOM dans des formulaires adaptatifs{#using-som-expressions-in-adaptive-forms}
 
-Les formulaires adaptatifs sont modélisés comme AEM Page qui est représenté comme structure de contenu JCR dans AEM référentiel. L’élément clé de la structure de contenu est le noeud guideContainer . Sous le guideContainer, il existe un rootPanel qui peut contenir un panneau et des champs imbriqués.
+Les formulaires adaptatifs sont modélisés comme des pages AEM, représentées par des structures de contenu JCR dans le référentiel AEM. L’élément clé de la structure de contenu est le nœud guideContainer. Sous guideContainer, il existe un rootPanel qui peut contenir un panneau et des champs imbriqués.
 
 Vous pouvez utiliser un modèle d’objet de script (SOM) pour référencer des valeurs, des propriétés et des méthodes dans un modèle d’objet de document (DOM) particulier. Un DOM organise les objets et les propriétés de mémoire dans une hiérarchie d’arborescence. Une expression SOM référence des champs/éléments de dessin et des panneaux.
 
@@ -33,7 +33,7 @@ Une expression SOM pour tout élément dans un formulaire adaptatif est précéd
 
 Arborescence DOM à deux boutons radio
 
-L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. En mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Afficher l’expression SOM . L’option apparaît dans le panneau et lorsque vous cliquez avec le bouton droit sur le champ ou sur l’élément.
+L’expression SOM change lorsque vous modifiez la position des boutons radio dans le formulaire adaptatif. En mode création, vous pouvez afficher l’expression SOM d’un champ ou d’un élément dans AEM Forms à l’aide de l’option Afficher l’expression SOM. L’option apparaît dans le panneau et lorsque vous cliquez avec le bouton droit sur le champ ou sur l’élément.
 
 ![Extraction des expressions SOM dans un formulaire adaptatif](assets/som-expressions.png)
 

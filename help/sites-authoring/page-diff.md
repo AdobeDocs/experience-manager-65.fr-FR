@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
+Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 
 ![Icône du mode Plein écran](do-not-localize/chlimage_1-18.png)
 
@@ -87,7 +87,7 @@ Vous pouvez quitter le mode de comparaison côte à côte à tout moment en cliq
 
 Dans certains cas, l’outil de comparaison des pages peut ne pas détecter toutes les différences.
 
-* Lors de la comparaison de versions et de lancements, la comparaison ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
+* Lors de la comparaison des versions et des lancements, celle-ci ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
 * Pour les versions, l’outil de comparaison ne recrée pas la politique de contrôle d’accès ni les relations Live Copy.
 * Si une page a été déplacée, vous ne pouvez plus la comparer à des versions antérieures au déplacement.
 
@@ -95,8 +95,8 @@ Dans certains cas, l’outil de comparaison des pages peut ne pas détecter tout
 
 >[!NOTE]
 >
->Les versions ne peuvent pas être comparées les unes aux autres. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
+>Les versions ne peuvent pas être comparées entre elles. Seule la version en cours peut être comparée aux autres versions de la page. La version dont les modifications sont mises en surbrillance est toujours la version en cours.
 
 >[!NOTE]
 >
->Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages et les limites qui peuvent affecter cette comparaison, voir [documentation destinée aux développeurs](/help/sites-developing/pagediff.md) de cette fonctionnalité.
+>Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages et des limites pouvant affecter cette comparaison, consultez la [documentation de développement](/help/sites-developing/pagediff.md) liée à cette fonctionnalité.

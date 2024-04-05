@@ -10,7 +10,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '2907'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    ![console produits avec les références ouvertes](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Cliquez sur le type de référence (par exemple, Pages de produits) pour développer la liste.
+1. Cliquez sur le type de référence (par exemple, pages de produits) pour développer la liste.
 1. Sélectionnez une référence spécifique pour afficher les options :
 
    * Accéder à la page produits
@@ -265,7 +265,7 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 Deux ressources sont désormais stockées dans votre composant de produit. Vous pouvez configurer celle qui apparaît sur la page du produit. Cela fonctionne avec un système de catégorie. Vous devez d’abord ajouter une catégorie aux ressources individuelles :
 
 1. Sélectionnez **Afficher les données du produit**.
-1. Saisissez un **Catégorie de ressources** sous les ressources, par exemple : `cat1` et `cat2`.
+1. Saisissez une **catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
 
    >[!NOTE]
    >
@@ -464,7 +464,7 @@ Pour générer un catalogue :
    ![assistant de création de catalogue](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Accédez au plan directeur de catalogue requis.
-1. Sélectionnez la variable **Sélectionner** et cliquez sur le plan directeur de catalogue requis.
+1. Sélectionnez le bouton **Sélectionner** et cliquez sur le plan directeur de catalogue requis.
 1. Sélectionnez **Suivant**.
 
    ![assistant de propriétés de catalogue](/help/sites-administering/assets/chlimage_1-100.png)
@@ -476,9 +476,9 @@ Pour générer un catalogue :
 
 1. En sélectionnant le bouton **Terminé**, vous êtes renvoyé vers la console Sites où vous pouvez voir votre catalogue.
 
-   Appuyer/cliquer **Ouvrir le catalogue** ouvre votre catalogue (par exemple, `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Cliquez sur le bouton **Ouvrir le catalogue** pour ouvrir votre catalogue (par exemple, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
-#### Génération d’un catalogue : UI classique {#generating-a-catalog-classic-ui}
+#### Génération d’un catalogue : IU classique {#generating-a-catalog-classic-ui}
 
 >[!NOTE]
 >
@@ -550,7 +550,7 @@ Pour déployer un catalogue :
 
    ![Icône Importer les plans directeurs](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Dans l’assistant, sélectionnez la Source selon les besoins, puis cliquez sur **Suivant**.
+1. Dans l’assistant, sélectionnez la source requise, puis cliquez sur **Suivant**.
 
    ![assistant de plan directeur](/help/sites-administering/assets/chlimage_1-102.png)
 

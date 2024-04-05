@@ -1,6 +1,6 @@
 ---
 title: Personnalisation des onglets d’une tâche
-description: Comment personnaliser les noms des onglets de vos tâches, dans l’espace de travail AEM Forms LiveCycle.
+description: Comment personnaliser les noms des onglets de vos tâches dans l’espace de travail AEM Forms LiveCycle.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 

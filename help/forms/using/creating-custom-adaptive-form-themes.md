@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    * Le dossier `less` contient les fichiers de variables `less` dans lesquels vous définissez les variables `less` et les éléments `less mixins` utilisés pour gérer les styles .css.
 
-     Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces `less` Les fichiers sont ensuite importés dans styles.less.
+     Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces fichiers `less` sont ensuite importés dans styles.less.
 
    * dossier`css` : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
 
@@ -75,7 +75,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Vous pouvez utiliser la variable `less` variables fournies avec les formulaires adaptatifs, vous pouvez remplacer ces variables ou créer des `less` .
+   Vous pouvez utiliser les variables `less` fournies avec les formulaires adaptatifs, vous pouvez remplacer ces variables ou créer de nouvelles variables `less`.
 
    >[!NOTE]
    >
@@ -132,11 +132,11 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
    }
    ```
 
-   **Fichier Styles.less :** Utilisez ce fichier pour inclure tous les `less` fichiers (variables, mixins, styles) que vous devez utiliser dans la bibliothèque cliente.
+   **Fichier styles.less :** utilisez ce fichier pour inclure tous les fichiers `less` (variables, mixins, styles) que vous devez utiliser dans la bibliothèque cliente.
 
-   Dans l’exemple de fichier`styles.less` suivant, les instructions d’importation peuvent être placées dans n’importe quel ordre.
+   Dans l’exemple de fichier `styles.less` suivant, les instructions d’importation peuvent être placées dans n’importe quel ordre.
 
-   Les instructions pour importer les éléments suivants `.less` Les fichiers sont obligatoires :
+   Les instructions pour importer les fichiers `.less` suivants sont obligatoires :
 
    * `globalvariables.less`
    * `layoutvariables.less`

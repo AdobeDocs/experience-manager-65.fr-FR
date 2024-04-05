@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ L’outil de détection des motifs est publié séparément sous forme de [packa
 
 >[!NOTE]
 >
->L’outil de détection des motifs peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Toutefois, pour :
+>L’outil de détection des motifs peut être exécuté sur n’importe quel environnement, y compris sur les instances locales de développement. Cependant, pour :
 >
 >* augmenter le taux de détection ;
 >* éviter les ralentissements sur les instances critiques de l’entreprise
@@ -221,4 +221,4 @@ Actuellement, l’outil de détection des motifs vous permet de vérifier les é
 
 >[!NOTE]
 >
->L’outil de détection des motifs tente de prédire précisément les avertissements à mettre à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.
+>L’outil de détection des motifs tente de prévoir avec précision les avertissements pour la mise à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.

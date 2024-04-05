@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >Sélection multiple sur un ordinateur de bureau :
 >
->* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
->* Mac : Cmd+clic sur les composants requis.
+>* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
+>* Mac : maintenez la touche Cmd enfoncée tout en cliquant sur les composants requis.
 >
 
 ## Raccourcis clavier d’édition {#editing-keyboard-shortcuts}
@@ -62,17 +62,17 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copier les paragraphes sélectionnés.</td>
+   <td>Copiez les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Couper les paragraphes sélectionnés. <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
+   <td>Coupez les paragraphes sélectionnés. <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement. </td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Collez des paragraphes à partir du Presse-papiers.</td>
+   <td>Collez des paragraphes à partir du presse-papiers.</td>
   </tr>
   <tr>
    <td> </td>
@@ -82,17 +82,17 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Supprimer les paragraphes sélectionnés.</td>
+   <td>Supprimez les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Supprimer les paragraphes sélectionnés.</td>
+   <td>Supprimez les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forcer le menu contextuel par défaut (navigateur).<br /> <strong>Remarque :</strong> Les menus contextuels AEM apparaissent uniquement dans l’IU classique.</td>
+   <td>Forcez le menu contextuel par défaut (navigateur).<br /> <strong>Remarque :</strong> les menus contextuels AEM apparaissent uniquement dans l’IU classique.</td>
   </tr>
   <tr>
    <td> </td>

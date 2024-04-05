@@ -1,6 +1,6 @@
 ---
 title: Comment développer des projets AEM à l’aide d’IntelliJ IDEA
-description: Découvrez comment utiliser IntelliJ IDEA pour développer des projets Adobe Experience Manager.
+description: Découvrez comment utiliser IntelliJ IDEA pour développer des projets Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Pour que cela fonctionne, suivez les instructions de la section [Comment travail
 1. Ouvrez la boîte de dialogue d’**importation** dans IntelliJ IDEA en
 
    * sélectionnant **Importer un projet** dans l’écran de bienvenue si aucun projet n’est ouvert ;
-   * Sélection **Fichier > Importer un projet** depuis le menu principal
+   * sélectionnant **Fichier -> Importer projet** dans le menu principal.
 
 1. Dans la boîte d’importation, sélectionnez le fichier POM du projet.
 
@@ -85,7 +85,7 @@ Les étapes suivantes sont nécessaires pour déboguer des JSP avec IntelliJ IDE
 
 IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant donné que IDEA ne peut pas interpréter les paramètres `content-package-maven-plugin`, il doit être configuré manuellement.
 
-1. Accédez à **Fichier > Structure de projet**
+1. Accédez à **Fichier > Structure du projet**.
 1. Sélectionnez le module **Content**.
 1. Cliquez sur **+** au-dessus de la liste des modules et sélectionnez **Web**.
 1. Sélectionnez le `content/src/main/content/jcr_root subdirectory` de votre projet en tant que répertoire de ressources web, comme illustré dans la capture d’écran ci-dessous.
@@ -103,7 +103,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 
 #### Configuration d’un profil de débogage {#configure-a-debug-profile}
 
-1. Accédez à **Exécuter > Modifier les configurations**
+1. Accédez à **Exécuter > Modifier les configurations**.
 1. Appuyez sur **+** et sélectionnez **JSR45 à distance**.
 1. Dans la boîte de configuration, sélectionnez **Configurer** en face de **Serveur d’applications** et configurez un serveur Générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
@@ -117,7 +117,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 
 La dernière étape requise consiste à démarrer AEM avec les options JVM proposées par IntelliJ IDEA.
 
-Démarrez directement le fichier jar AEM et ajoutez ces options, par exemple, avec la ligne de commande suivante :
+Lancez directement le fichier JAR d’AEM et ajoutez ces options, par exemple avec la ligne de commande suivante :
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -140,7 +140,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 La configuration est à présent terminée pour le débogage de vos JSP dans AEM.
 
-1. Sélectionner **Exécutez > Débogage > Votre profil de débogage**
+1. Sélectionnez **Exécuter -> Déboguer -> Votre profil de débogage**.
 1. Définissez des points d’arrêt dans votre code de composant.
 1. Accédez à une page dans votre navigateur.
 

@@ -1,6 +1,6 @@
 ---
 title: Afficher une liste des formulaires sur une page Web à l’aide d’API
-description: Effectuez une requête par programmation sur Forms Manager pour récupérer une liste filtrée de formulaires et l’afficher sur vos propres pages web.
+description: Interrogez Forms Manager par programmation pour récupérer une liste de formulaires filtrée et l’afficher sur vos propres pages web.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,13 +9,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 # Afficher une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour rechercher des formulaires en fonction de différents filtres. L’objet de réponse contient des attributs de formulaire, des propriétés et des points de fin de rendu des formulaires.
+AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points d’entrée de rendu.
 
 Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’adresse `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
@@ -24,7 +24,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
 <table>
  <tbody>
   <tr>
-   <td><strong>Nom de l’attribut<br /> </strong></td>
+   <td><strong>Nom d’attribut<br /> </strong></td>
    <td><strong>Description<br /> </strong></td>
   </tr>
   <tr>
@@ -35,11 +35,11 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du noeud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête de recherche. Plusieurs chemins distincts avec une barre verticale (|).  </p> </td>
+   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du nœud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête. Plusieurs chemins distincts avec une barre verticale (|).  </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Spécifie les propriétés à récupérer avec les ressources. Vous pouvez utiliser un astérisque (*) pour récupérer toutes les propriétés à la fois. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
+   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
     <ul>
      <li><em>Les propriétés telles que l’ID, le chemin et le nom sont toujours récupérées. </em></li>
      <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Elles dépendent du type de ressource et sont récupérées en conséquence. </em></li>
@@ -47,11 +47,11 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>relation<br /> </td>
-   <td>Spécifie les ressources connexes à récupérer avec les résultats de recherche. Vous pouvez choisir l’une des options suivantes pour récupérer les ressources connexes :
+   <td>Indique les ressources connexes à récupérer avec les résultats de la recherche. Vous pouvez sélectionner l’une des options suivantes pour récupérer les ressources connexes :
     <ul>
-     <li><strong>NO_RELATION</strong>: ne pas récupérer les ressources connexes.</li>
-     <li><strong>IMMEDIATE</strong>: récupère les ressources directement liées aux résultats de recherche.</li>
-     <li><strong>TOUT</strong>: récupération directe et indirecte des ressources liées.</li>
+     <li><strong>NO_RELATION</strong> : ne pas récupérer les ressources connexes.</li>
+     <li><strong>IMMEDIATE</strong> : récupérer les ressources liées directement aux résultats de la recherche.</li>
+     <li><strong>ALL</strong> : récupérer toutes les ressources liées (directement et indirectement).</li>
     </ul> </td>
   </tr>
   <tr>
@@ -60,50 +60,50 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>offset</td>
-   <td>Indique le nombre de formulaires à ignorer à partir du début.</td>
+   <td>Indique le nombre de formulaires à ignorer depuis le début.</td>
   </tr>
   <tr>
    <td>returnCount</td>
    <td>Indique s’il faut renvoyer ou non les résultats de recherche correspondant aux critères spécifiés. </td>
   </tr>
   <tr>
-   <td>statement</td>
-   <td><p>Indique la liste des instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td>statements</td>
+   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Dans l’exemple ci-dessus, </p>
     <ul>
-     <li><strong>name</strong>: spécifie le nom de la propriété à rechercher.</li>
-     <li><strong>value</strong>: spécifie la valeur de la propriété à rechercher.</li>
-     <li><strong>operator</strong>: spécifie l’opérateur à appliquer lors de la recherche. Les opérateurs supportés sont les suivants :
+     <li><strong>name</strong> : spécifie le nom de la propriété à rechercher.</li>
+     <li><strong>value</strong> : spécifie la valeur de la propriété à rechercher.</li>
+     <li><strong>operator</strong> : spécifie l’opérateur à appliquer lors de la recherche. Les opérateurs ci-dessous sont pris en charge :
       <ul>
        <li>EQ - Est égal à </li>
-       <li>NEQ - Différent de</li>
-       <li>GT - Supérieur à</li>
-       <li>LT - Inférieur à</li>
-       <li>GTEQ - Est supérieur ou égal à</li>
-       <li>LTEQ - Est inférieur ou égal à</li>
-       <li>CONTAINS - A contient B si B fait partie de A</li>
-       <li>FULLTEXT - Recherche de texte intégral</li>
-       <li>STARTSWITH - A commence par B si B est la partie initiale de A</li>
-       <li>ENDSWITH - A se termine par B si B est la fin de A</li>
-       <li>LIKE - Implémente l’opérateur LIKE</li>
-       <li>AND - Combine plusieurs instructions</li>
-      </ul> <p><strong>Remarque :</strong> <em>Les opérateurs GT, LT, GTEQ et LTEQ s’appliquent aux propriétés de type linéaire telles que LONG, DOUBLE et DATE.</em></p> </li>
+       <li>NEQ – Est différent de</li>
+       <li>GT – Supérieur à</li>
+       <li>LT – Inférieur à</li>
+       <li>GTEQ – Supérieur ou égal à</li>
+       <li>LTEQ – Inférieur ou égal à</li>
+       <li>CONTAINS – A contient B si B fait partie de A</li>
+       <li>FULLTEXT – Recherche de texte intégral</li>
+       <li>STARTSWITH – A commence par B si B est la partie initiale de A</li>
+       <li>ENDSWITH – A se termine par B si B est la fin de A</li>
+       <li>LIKE – Implémente l’opérateur LIKE</li>
+       <li>AND – Combine plusieurs instructions</li>
+      </ul> <p><strong>Remarque :</strong> <em>les opérateurs GT, LT, GTEQ et LTEQ s’appliquent aux propriétés de type linéaire telles que LONG, DOUBLE et DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>Indique les critères d’ordre pour les résultats de recherche. Les critères sont définis au format JSON. Vous pouvez trier les résultats de la recherche sur plusieurs champs. Les résultats sont triés dans l’ordre selon l’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête selon la propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez trier les résultats de la recherche sur plusieurs champs. Les résultats sont triés dans l’ordre selon l’apparition des champs dans la requête.</p> <p>Par exemple,</p> <p>Pour récupérer les résultats de la requête selon la propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>name</strong>: spécifie le nom de la propriété à utiliser pour classer les résultats de la recherche.</li>
-     <li><strong>critères</strong>: spécifie l’ordre des résultats. L’attribut d’ordre accepte les valeurs suivantes :
+     <li><strong>Nom</strong> : spécifie le nom de la propriété à utiliser pour classer les résultats de la recherche.</li>
+     <li><strong>Critères</strong> : spécifie l’ordre des résultats. L’attribut d’ordre accepte les valeurs suivantes :
       <ul>
        <li>ASC – Utilisez l’attribut ASC pour classer les résultats dans l’ordre croissant.<br /> </li>
        <li>DES - Utilisez l’attribut DES pour classer les résultats dans l’ordre décroissant.</li>
@@ -116,7 +116,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>assetType</td>
-   <td>Indique les types de ressources à récupérer de toutes les ressources publiées. Utilisez la barre verticale (|) pour spécifier plusieurs types de ressources. Les types de ressource valides sont FORM, PDFFORM, PRINTFORM, RESOURCE et GUIDE.</td>
+   <td>Indique les types de ressources à récupérer de toutes les ressources publiées. Utilisez la barre verticale (|) pour indiquer plusieurs types de ressources. Les types de ressources valides sont FORM, PDFFORM, PRINTFORM, RESOURCE et GUIDE.</td>
   </tr>
  </tbody>
 </table>

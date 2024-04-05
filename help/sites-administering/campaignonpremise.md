@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Cette intégration permet d’utiliser AEM et Adobe Campaign Classic indépendam
 
 ## Étapes d’intégration {#integration-steps}
 
-L&#39;intégration entre AEM et Campaign requiert plusieurs étapes dans les deux solutions.
+L’intégration entre AEM et Campaign requiert plusieurs étapes dans les deux solutions.
 
 1. [Installer le package d’intégration AEM dans Campaign](#install-package)
 1. [Créer un opérateur pour AEM dans Campaign](#create-operator)
@@ -42,12 +42,12 @@ Ce document vous guide de façon détaillée à travers chacune de ces étapes.
 
 * Accès des administrateurs à Adobe Campaign Classic
    * Pour effectuer l’intégration, vous avez besoin d’une instance Adobe Campaign Classic opérationnelle, y compris d’une base de données configurée.
-   * Si vous avez besoin de détails supplémentaires sur la configuration de Adobe Campaign Classic, reportez-vous à la section [Documentation Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr) notamment le guide Installation et configuration .
+   * Si vous avez besoin de détails supplémentaires sur l’installation et la configuration d’Adobe Campaign Classic, consultez la [documentation d’Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr), et particulièrement le Guide d’installation et de configuration.
 * Accès de l’administrateur à AEM
 
 ## Installer le module d’intégration AEM dans Campaign {#install-package}
 
-La variable **Intégration AEM** dans Adobe Campaign comprend plusieurs configurations standard nécessaires pour se connecter à AEM.
+Le package d’**intégration d’AEM** à Adobe Campaign comprend plusieurs configurations standard nécessaires pour se connecter à AEM.
 
 1. En tant qu’administrateur, connectez-vous à l’instance Adobe Campaign à l’aide de la console cliente.
 
@@ -73,9 +73,9 @@ Le package d’intégration est maintenant installé.
 
 Le package d’intégration crée automatiquement l’opérateur `aemserver` qu’AEM utilise pour se connecter à Adobe Campaign. Définissez une zone de sécurité pour cet opérateur et définissez son mot de passe.
 
-1. Connectez-vous à Adobe Campaign en tant qu’administrateur à l’aide de la console cliente.
+1. Connectez-vous à Adobe Campaign en tant qu’administrateur ou administratrice à l’aide de la console cliente.
 
-1. Sélectionner **Outils** > **Explorateur** dans la barre de menus.
+1. Sélectionnez **Outils** > **Explorateur** dans la barre de menus.
 
 1. Dans l’explorateur, accédez au nœud **Administration** > **Gestion des accès** > **Opérateurs**.
 
@@ -113,7 +113,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
    >
    >Par défaut, aucune zone de sécurité n’est configurée pour l’opérateur. Pour qu’AEM se connecte à Adobe Campaign, vous devez sélectionner une zone comme décrit dans les étapes précédentes.
    >
-   >Adobe recommande vivement de créer une zone de sécurité dédiée à AEM afin d’éviter tout problème de sécurité. Pour plus d’informations sur cette rubrique, voir [Documentation Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=fr)
+   >Adobe recommande vivement de créer une zone de sécurité dédiée à AEM afin d’éviter tout problème de sécurité. Pour plus d’informations à ce sujet, consultez la [documentation d’Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=fr).
 
 1. Dans le client Campaign, revenez à l’opérateur `aemserver` et sélectionnez l’onglet **Général**.
 
@@ -125,7 +125,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
 
 ## Configurer l’intégration de Campaign dans AEM {#campaign-integration}
 
-Utilisations AEM [l&#39;opérateur que vous avez déjà configuré dans Campaign.](#create-operator) pour communiquer avec Campaign
+AEM utilise [l’opérateur que vous avez déjà configuré dans Campaign](#create-operator) afin de communiquer avec Campaign.
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 
@@ -163,17 +163,17 @@ Pour configurer la réplication de votre instance d’auteur AEM vers l’instan
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 
-1. Dans le rail latéral de navigation globale, sélectionnez **Outils** > **Déploiement** > **Réplication** > **Agents sur l’auteur**, puis cliquez sur **Agent par défaut (publication)**.
+1. Dans le rail latéral de navigation globale, sélectionnez **Outils** > **Déploiement** > **Réplication** > **Agents de création**, puis cliquez sur **Agent par défaut (publication)**.
 
-   ![Configurer l’agent de réplication.](assets/acc-replication-config.png)
+   ![Configurer l’agent de réplication](assets/acc-replication-config.png)
 
-1. Cliquez sur **Modifier** et sélectionnez ensuite l’onglet **Transfert**.
+1. Cliquez sur **Modifier**, puis sélectionnez l’onglet **Transfert**.
 
 1. Configurez le champ **URI** en remplaçant la valeur par défaut `localhost` avec l’adresse IP de l’instance de publication AEM.
 
    ![Onglet Transport.](assets/acc-transport-tab.png)
 
-1. Cliquez sur **OK** pour enregistrer les modifications apportées aux paramètres de l’agent.
+1. Cliquez sur **OK** pour enregistrer les modifications des paramètres de l’agent.
 
 Vous avez configuré la réplication sur l’instance de publication AEM afin que les destinataires de vos campagnes puissent accéder à votre contenu.
 
@@ -185,13 +185,13 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 
 ## Configurer l’externaliseur AEM {#externalizer}
 
-[L’externaliseur](/help/sites-developing/externalizer.md) est un service OSGi d’AEM qui transforme un chemin d’accès aux ressources en URL externe et absolue, ce qui est nécessaire pour qu’AEM diffuse du contenu que Campaign peut utiliser. Configurez-le pour que l’intégration de Campaign fonctionne.
+[L’externaliseur](/help/sites-developing/externalizer.md) est un service OSGi d’AEM qui transforme un chemin d’accès aux ressources en URL externe et absolue, ce qui est nécessaire pour qu’AEM diffuse du contenu que Campaign peut utiliser. Configurez-les pour que l’intégration de Campaign fonctionne.
 
 1. Connectez-vous à l’instance de création AEM en tant qu’administrateur.
 1. Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Day CQ Link Externalizer**.
-1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Modifier l’URL à partir de la valeur par défaut `http://localhost:4503` à votre instance de publication publique.
+1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Modifiez l’URL du `http://localhost:4503` par défaut sur votre instance de publication publiquement disponible.
 
-   ![Configuration de l’externaliseur.](assets/acc-externalizer-config.png)
+   ![Configuration de l’externaliseur](assets/acc-externalizer-config.png)
 
 1. Cliquez sur **Enregistrer**.
 
@@ -219,9 +219,9 @@ Pour que Campaign puisse communiquer avec AEM, vous devez définir un mot de pas
 
 Lors de [l’installation du package **Intégration AEM** dans Campaign,](#install-package) un compte externe est créé pour AEM. En configurant ce compte externe, Adobe Campaign peut se connecter à AEM, ce qui permet une communication bidirectionnelle entre les solutions.
 
-1. Connectez-vous à Adobe Campaign en tant qu’administrateur à l’aide de la console cliente.
+1. Connectez-vous à Adobe Campaign en tant qu’administrateur ou administratrice à l’aide de la console cliente.
 
-1. Sélectionner **Outils** > **Explorateur** dans la barre de menus.
+1. Sélectionnez **Outils** > **Explorateur** dans la barre de menus.
 
 1. Dans l’explorateur, accédez au nœud **Administration** > **Plateforme** > **Comptes externes**.
 

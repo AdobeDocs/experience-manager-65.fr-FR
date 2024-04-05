@@ -1,6 +1,6 @@
 ---
 title: Aide-mémoire pour Sling
-description: Découvrez Apache Sling, une technologie de base de Adobe Experience Manager, à l’aide de ce diagramme de référence.
+description: Découvrez Apache Sling, une technologie de base d’Adobe Experience Manager, à l’aide de ce diagramme de référence.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 

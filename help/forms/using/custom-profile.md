@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 Après avoir créé un profil personnalisé, ajoutez-lui des informations du moteur de rendu. Lors de la réception d’une demande concernant le nouveau profil, CRX vérifie l’existence du dossier /apps pour la page JSP à rendre. Créez la page JSP dans le dossier /apps.
 
 1. Dans le volet de gauche, accédez au dossier `/apps`.
-1. Cliquez avec le bouton droit de la souris sur le `/apps` et choisissez de créer un dossier portant le nom **hrform**.
+1. Cliquez avec le bouton droit sur le dossier `/apps` et créez un dossier appelé **hrform**.
 1. Dans le dossier **hrform**, créez un dossier intitulé **demo**.
 1. Cliquez sur le bouton **Enregistrer tout**.
 1. Accédez à `/libs/xfaforms/profile/html.jsp` et copiez le nœud **html.jsp**.

@@ -1,6 +1,6 @@
 ---
 title: Émulateurs
-description: AEM permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page.
+description: AEM permet aux auteurs et aux autrices d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final ou une utilisatrice finale consultera la page.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 58%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page, par exemple sur un appareil mobile ou dans un client de messagerie.
+Adobe Experience Manager (AEM) permet aux auteurs et aux autrices d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final ou une utilisatrice finale consultera la page, par exemple sur un appareil mobile ou dans un client de messagerie.
 
 Le framework de l’émulateur AEM :
 
-* Permet la création de contenu dans une interface utilisateur (IU) simulée, par exemple, un appareil mobile ou un client de messagerie électronique (utilisé pour créer des newsletters).
+* fournit des fonctions de création de contenu dans une interface utilisateur (IU) simulée, par exemple, un appareil mobile ou un client de messagerie électronique (utilisé pour rédiger des newsletters) ;
 * adapte le contenu de la page selon l’IU simulée ;
 * permet de créer des émulateurs personnalisés.
 
@@ -35,13 +35,13 @@ Le framework de l’émulateur AEM :
 
 ## Caractéristiques des émulateurs {#emulators-characteristics}
 
-Un émulateur :
+Un émulateur :
 
-* est basé sur ExtJS ;
-* Fonctionne sur le DOM de la page.
-* Son aspect est réglé au moyen de CSS.
-* Prend en charge les modules externes (par exemple, le module externe de rotation de l’appareil mobile).
-* Est uniquement actif sur l’auteur.
+* est basé sur ExtJS ;
+* fonctionne sur le DOM de la page.
+* Son apparence est gérée par du CSS.
+* Prend en charge les plug-ins (par exemple, le plug-in de rotation de l’écran d’un appareil mobile).
+* Est uniquement actif pour l’auteur ou l’autrice.
 * possède son composant de base à l’adresse `/libs/wcm/emulator/components/base`.
 
 ### Comment l’émulateur transforme le contenu {#how-the-emulator-transforms-the-content}
@@ -98,13 +98,13 @@ De cette manière, l’aspect complet de l’émulateur peut être contrôlé à
 
 >[!NOTE]
 >
->Il est recommandé que le HTML du projet encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, des résultats imprévisibles peuvent s’afficher.
+>Il est recommandé que le HTML du projet encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, des résultats imprévisibles peuvent se produire.
 
 ### Émulateurs mobiles {#mobile-emulators}
 
-Les émulateurs mobiles existants :
+Les émulateurs mobiles existants :
 
-* Sont sous /libs/wcm/mobile/components/emulators.
+* se trouvent dans /libs/wcm/mobile/components/emulators.
 * sont disponibles par le biais de la servlet JSON à l’adresse :
 
   http://localhost:4502/bin/wcm/mobile/emulators.json
@@ -115,9 +115,9 @@ Lorsque le composant de page s’appuie sur le composant de page mobile (`/libs/
 
   `deviceGroup.drawHead(pageContext);`
 
-* La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant init de l’émulateur, c’est-à-dire qu’elle appelle la fonction `init.html.jsp` du composant d’émulateur. Si le composant d’émulateur ne possède pas son propre `init.html.jsp` et s’appuie sur l’émulateur mobile de base (`wcm/mobile/components/emulators/base)`, le script init de l’émulateur mobile de base est appelé (`/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant init de l’émulateur, c’est-à-dire qu’elle appelle le `init.html.jsp` du composant de l’émulateur. Si le composant d’émulateur ne possède pas son propre `init.html.jsp` et s’appuie sur l’émulateur mobile de base (`wcm/mobile/components/emulators/base)`, le script init de l’émulateur mobile de base est appelé (`/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* Le script init de l’émulateur de base mobile définit via JavaScript :
+* Le script init de l’émulateur mobile de base définit, via un code JavaScript :
 
    * la configuration de tous les émulateurs qui sont définis pour la page (emulatorConfigs) ;
    * le gestionnaire d’émulateur qui intègre la fonctionnalité de l’émulateur dans la page via :
@@ -128,9 +128,9 @@ Lorsque le composant de page s’appuie sur le composant de page mobile (`/libs/
 
      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
-#### Création d’un émulateur mobile personnalisé {#creating-a-custom-mobile-emulator}
+#### la création d’un émulateur mobile personnalisé. {#creating-a-custom-mobile-emulator}
 
-Pour créer un émulateur mobile personnalisé :
+Pour créer un émulateur mobile personnalisé :
 
 1. En-dessous de `/apps/myapp/components/emulators`, créez le composant ; `myemulator` (type de nœud : `cq:Component`).
 
@@ -140,7 +140,7 @@ Pour créer un émulateur mobile personnalisé :
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/iPhone/css`.
 
-1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : name = js, type de noeud = cq:ClientLibrary
+1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple, pour définir un plug-in externe spécifique : nom = js, type de nœud = cq:ClientLibrary
 
    À titre d’exemple, vous pouvez vous reporter au nœud `/libs/wcm/mobile/components/emulators/base/js`.
 

@@ -8,29 +8,29 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Créer une racine de langue à l’aide de l’interface utilisateur classique{#creating-a-language-root-using-the-classic-ui}
 
-La procédure ci-dessous utilise l’interface utilisateur classique pour créer la racine de langue d’un site. Pour plus d’informations, voir [Création d’une racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root).
+La procédure ci-dessous utilise l’interface utilisateur classique pour créer la racine de langue d’un site. Pour plus d’informations, consultez [Création d’une racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. Dans la console Sites web, dans l’arborescence des sites web, sélectionnez la page racine du site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
-1. Ajoutez une nouvelle page enfant qui représente la version linguistique du site :
+1. Ajoutez une nouvelle page enfant qui représente la version de la langue du site :
 
-   1. Cliquez sur Nouveau > Nouvelle page.
-   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format de `<language-code>` ou `<language-code>_<country-code>`, par exemple, en, en_US, en_us, en_GB, en_gb.
+   1. Cliquez sur Nouveau > Nouvelle page
+   1. Dans la boîte de dialogue, spécifiez le titre et le nom. Le nom doit être au format `<language-code>` ou `<language-code>_<country-code>`, par exemple, en, en_US, en_us, en_GB, en_gb.
 
-      * Le code de langue pris en charge est un code à deux lettres en minuscules, défini par la norme ISO-639-1.
-      * Le code de pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, comme défini par la norme ISO 3166.
+      * Le code de langue pris en charge est le code à deux lettres en minuscules, tel que défini par la norme ISO-639-1.
+      * Le code de pays pris en charge est le code à deux lettres, en minuscules ou en majuscules, comme défini par la norme ISO 3166.
 
-   1. Sélectionnez le modèle, puis cliquez sur Créer.
+   1. Sélectionnez un modèle, puis cliquez sur Créer.
 
    ![newpagefr](assets/newpagefr.png)
 
 1. Dans la console Sites web, dans l’arborescence des sites web, sélectionnez la page racine du site.
-1. Dans le menu Outils, sélectionnez Copie de la langue.
+1. Dans le menu Outils, sélectionnez Copie de langue.
 
    ![toolslanguagecopy](assets/toolslanguagecopy.png)
 
@@ -40,7 +40,7 @@ La procédure ci-dessous utilise l’interface utilisateur classique pour créer
 
 1. Pour copier une page existante ou une arborescence de pages d’une version de langue, sélectionnez la cellule de la page en question dans la colonne de langue. Cliquez sur la flèche et sélectionnez le type de copie à créer.
 
-   Dans l&#39;exemple suivant, la page équipement/lunettes de soleil/irian est copiée dans la version en français.
+   Dans l&#39;exemple suivant, la page equipment/sunglasses/irian est copiée dans la version en français.
 
    ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 

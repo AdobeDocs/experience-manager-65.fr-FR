@@ -1,12 +1,12 @@
 ---
 title: Créer des pages de contenu dans AEM
-description: Tâches impliquées lors de la création d’une page de contenu dans Adobe Experience Manager 6.5.
+description: Les tâches liées à la création d’une page de contenu dans Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -39,10 +39,10 @@ Vous pouvez modifier les composants Texte et Image directement sur la page web s
 Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des composants sur la page, puis les modifier.
 
 * **[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Sur le côté gauche d’une page modifiable, un navigateur coulissant peut être ouvert ; des ressources peuvent être glissées sur la page, par exemple pour positionner des ressources ou créer des liens vers d’autres pages.
+Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des ressources sur la page, par exemple pour positionner des ressources ou créer des liens vers d’autres pages.
 
-* **Barre d’outils de composant**
-Un double-clic lent ou unique affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
+* **Barre d’outils de composants**
+Un seul clic ou un double-clic lent fera apparaître la barre d’outils appropriée. (Un clic pour la barre d’outils du mode d’édition statique, un double-clic lent pour la barre d’outils complète).
 
 * **[Disposition réactive](/help/sites-authoring/responsive-layout.md)**
 Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.

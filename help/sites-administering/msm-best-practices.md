@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1599'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Les avantages supplémentaires liés à l’utilisation d’une configuration de
 
 Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements ne peuvent être lancés qu’à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
 
-Lors de la création d’un site avec Live Copy, il est avantageux de créer des configurations de plan directeur pour assurer la disponibilité de l’ensemble de fonctionnalités MSM complet.
+Lors de la création d’un site avec une Live Copy, il est pratique de créer des configurations de plan directeur pour garantir la disponibilité du jeu complet de fonctions MSM.
 
 >[!NOTE]
 >
->Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Planifiez la configuration de la Live Copy.
+>Notez que les groupes d’utilisateurs et d’utilisatrices fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Tenez-en compte lors de la configuration de la Live Copy.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
@@ -88,7 +88,7 @@ Notez qu’AEM propose deux méthodes principales pour créer des Live Copies 
 
 Voici quelques points à garder à l’esprit lors de la création d’un site :
 
-* Pour créer un site, vous devez disposer d’un [configuration du plan directeur](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Pour créer un site, vous avez besoin d’une [configuration de plan directeur](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Pour permettre la sélection des chemins de langue afin de créer un site, les racines de langue correspondantes doivent exister dans le plan directeur (source).
 * Une fois qu’un [site a été créé comme une Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (en sélectionnant **Créer**, puis **Site**), les deux premiers niveaux de cette Live Copy sont *superficiels*. Les enfants de la page n’appartiennent pas à la relation activée, mais un déploiement descend toujours si une relation activée correspondant au déclencheur est détectée.
 
@@ -104,7 +104,7 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 * Lors de la création de gabarits de langue.
 
-   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Notez que :
+   * Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Notez que :
 
       * MSM vous permet d’annuler l’héritage au niveau des pages et/ou des composants. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
@@ -161,7 +161,7 @@ Les modifications apportées à la structure du contenu dans un plan directeur/u
 
 ## Personnalisation des déploiements {#customizing-rollouts}
 
-Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir des conséquences de grande envergure. Il est recommandé de planifier *très* soigneusement avant, par exemple :
+Les configurations de déploiement MSM sont fortement personnalisables. L’automatisation des déploiements peut avoir d’importantes conséquences. Il est recommandé de planifier *très* soigneusement avant, par exemple :
 
 * L’automatisation des déploiements, par exemple, avec les [déclencheurs onModify](#onmodify)
 * La personnalisation des [propriétés/types de nœuds](#node-types-properties)

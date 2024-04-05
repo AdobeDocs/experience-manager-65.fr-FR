@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au nive
 
 Pour créer les informations d’identification du compte de service et la payload JWT, procédez comme suit :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur ou d’administratrice système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -257,7 +257,7 @@ Pour configurer le compte IMS, procédez comme suit :
 
 1. Spécifiez un **[!UICONTROL titre]** pour le compte IMS.
 
-   Dans le **[!UICONTROL Serveur d’autorisation]** , indiquez l’URL : [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
+   Dans le champ **[!UICONTROL Serveur d’autorisation]**, spécifiez l’adresse URL : [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
 
    Spécifiez l’ID client dans le champ **[!UICONTROL Clé API]**, le **[!UICONTROL Secret client]** et la **[!UICONTROL Charge utile]** (charge utile JWT) que vous avez copiés lors de la [création d’une connexion au compte de service (JWT)](#createnewintegration).
 

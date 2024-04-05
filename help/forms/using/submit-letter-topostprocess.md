@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 73%
 
 ## Post-traitement {#post-processing}
 
-Les agents peuvent associer et exécuter des workflows de post-traitement sur des lettres et des communications interactives. Le post-traitement à exécuter peut être sélectionné dans la vue Propriétés du modèle de lettre. Vous pouvez configurer des post-traitements pour envoyer par courrier électronique, imprimer, télécopier ou archiver vos lettres finales.
+Les agents ou agentes peuvent associer et exécuter des workflows de post-traitement sur des lettres et des communications interactives. Le post-traitement à exécuter peut être sélectionné dans la vue Propriétés du modèle de lettre. Vous pouvez configurer des post-traitements pour envoyer par e-mail, imprimer, télécopier ou archiver vos lettres finales.
 
 ![Post-traitement](assets/ppoverview.png)
 
@@ -53,7 +53,7 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
    Par exemple, si la liste déroulante de la page Propriétés affiche le nom du processus comme Forms Workflow -> ValidCCPostProcess/SaveXML, ajoutez un nom de service en tant que `ValidCCPostProcess/SaveXML`.
 
-1. Pour utiliser les processus AEM Forms on JEE pour le post-traitement, configurez les paramètres et les sorties nécessaires. Les valeurs par défaut des paramètres sont indiquées ci-dessous.
+1. Pour utiliser les workflows AEM Forms on JEE pour le post-traitement, configurez les paramètres et les sorties nécessaires. Les valeurs par défaut des paramètres sont indiquées ci-dessous.
 
    Accédez à la page des configurations de la console web d’Adobe Experience Manager > **[!UICONTROL Configurations de Correspondence Management]** et définissez les paramètres suivants :
 
@@ -69,7 +69,7 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
 1. Se connecter à `https://localhost:publishport/aem/forms`.
 1. Accédez à **[!UICONTROL Lettres]** pour afficher la lettre publiée disponible sur l’instance de publication.
-1. Configurez les paramètres AEM DS. Voir [Configuration des paramètres d’AEM DS](../../forms/using/configuring-the-processing-server-url.md).
+1. Configurez les paramètres AEM DS. Voir [Configuration des paramètres AEM DS](../../forms/using/configuring-the-processing-server-url.md).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
 ## Récupération des instances de lettre {#letter-instances-retrieval}
 
-Les instances de lettre enregistrées peuvent être manipulées ultérieurement, comme la récupération des instances de lettre et la suppression des instances de lettre, à l’aide des API suivantes définies dans LetterInstanceService.
+Les instances de lettre enregistrées peuvent être manipulées davantage, elles peuvent par exemple être récupérées ou supprimées, à l’aide des API suivantes définies dans LetterInstanceService.
 
 <table>
  <tbody>
@@ -111,22 +111,22 @@ Les instances de lettre enregistrées peuvent être manipulées ultérieurement,
 
 ## Association d’un post-traitement à une lettre {#associating-a-post-process-with-a-letter}
 
-Dans l’interface utilisateur CCR, procédez comme suit pour associer un post-traitement à une lettre :
+Dans l’interface utilisateur CCR, procédez comme suit pour associer un post-traitement à une lettre :
 
-1. Pointez sur une lettre et sélectionnez **Afficher les propriétés**.
+1. Pointez sur une lettre et sélectionnez **Afficher les propriétés**.
 1. Sélectionnez **Modifier**.
-1. Dans la liste déroulante Propriétés de base , sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés à Forms et à AEM sont répertoriés dans la liste déroulante.
+1. Dans Propriétés de base, sélectionnez le post-traitement à associer à la lettre dans la liste déroulante Post-traitement. Les post-traitements liés à Forms et à AEM sont répertoriés dans la liste déroulante.
 1. Sélectionnez **Enregistrer**.
 1. Après avoir configuré la lettre avec le post-traitement, publiez la lettre et, sur l’instance de publication, spécifiez éventuellement l’URL de traitement dans le service Paramètres AEM DS. Cela garantit que le post-traitement est exécuté sur une instance de traitement.
 
 ## Rechargement d’une instance de lettre Brouillon  {#reloaddraft}
 
-Une instance de lettre Brouillon peut être rechargée dans l’interface utilisateur à l’aide de l’URL suivante :
+Un brouillon d’instance de lettre peut être rechargé dans l’interface utilisateur à l’aide de l’URL suivante :
 
 `https://<server>:<port>/aem/forms/`
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 
-LetterInstaceID : identifiant unique de l’instance de lettre envoyée.
+LetterInstaceID : ID unique de l’instance de lettre envoyée.
 
 Pour plus d’informations sur l’enregistrement d’un brouillon de lettre, voir [Enregistrement de brouillons et envoi d’instances de lettre](../../forms/using/create-correspondence.md#savingdrafts).

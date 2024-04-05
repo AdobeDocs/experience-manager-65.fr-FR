@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2837'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Ce document contient les informations suivantes :
 
 Pour configurer la manière dont vos sites partagent du contenu personnalisé, vous devez effectuer les étapes suivantes :
 
-1. [Création d’une zone](#creating-new-areas) ou [création d’une zone comme Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
+1. [Créez une zone](#creating-new-areas) ou [créez une zone en tant que Live Copy](#creating-new-areas). Une zone comprend toutes les activités disponibles pour une *zone* de la page, c’est-à-dire l’emplacement sur la page où le composant est ciblé. La création d’une zone crée une zone vide, tandis que la création d’une zone en tant que Live Copy vous permet d’hériter du contenu entre les structures du site.
 
 1. [Lier votre site ou votre page](#linking-sites-to-an-area) à une zone.
 
@@ -57,7 +57,7 @@ Un site ou une Live Copy est lié à une zone contenant les activités qui doive
 
 ## Scénarios d’utilisation {#use-cases}
 
-Vous pouvez configurer la prise en charge de sites multiples pour le contenu ciblé de plusieurs manières, en fonction de votre cas d’utilisation. Cette section décrit comment cela fonctionnerait théoriquement avec une seule marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
+Selon votre cas d’utilisation, vous pouvez configurer la prise en charge multisite pour le contenu ciblé de différentes manières. Cette section décrit comment cela fonctionnerait théoriquement avec une seule marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
 
 Le contenu ciblé est encapsulé dans ce que l’on appelle des zones qui définissent la portée des sites ou des pages. Ces zones sont définies au niveau de la marque. Une marque peut contenir plusieurs zones. Les zones peuvent être distinctes entre les marques. Bien qu’une marque ne contienne que la zone principale et soit donc partagée entre toutes les marques, une autre marque peut contenir plusieurs marques (par exemple, par zone géographique). Par conséquent, les marques n’ont pas besoin de refléter l’ensemble des zones entre elles.
 
@@ -127,11 +127,11 @@ Vous pouvez à tout moment suspendre ou désolidariser complètement l’hérita
 >
 >Pour une approche plus technique de cette fonction, voir [Structure de la gestion de sites multiples pour le contenu ciblé](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Comparaison de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Création d’une zone et création d’une zone en tant que Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-Dans AEM, vous avez la possibilité de créer une zone ou une zone comme Live Copy. La création d’une zone regroupe les activités et tout ce qui appartient à ces activités, comme les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou partager un ensemble de contenu ciblé.
+Dans AEM, vous avez la possibilité de créer une zone ou de créer une zone en tant que Live Copy. La création d’une zone regroupe les activités et tout ce qui appartient à ces activités, comme les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou partager un ensemble de contenu ciblé.
 
-Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone comme Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
+Si, toutefois, vous disposez d’un héritage configuré via le MSM entre les deux sites, vous pouvez hériter des activités. Dans ce cas, vous créez une zone en tant que Live Copy, où Y est une Live Copy de X et hérite donc également de toutes les activités.
 
 >[!NOTE]
 >
@@ -154,9 +154,9 @@ Les zones peuvent couvrir des activités et des offres. Après avoir créé une 
 
 >[!NOTE]
 >
->La zone par défaut appelée Zone de Principal est réduite par défaut lorsque vous cliquez sur le nom d’une marque. **Jusqu’à** vous créez une autre zone. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
+>La zone par défaut appelée Zone principale est réduite par défaut lorsque vous cliquez sur le nom d’une marque **jusqu’à ce que** vous en créiez une autre. Ensuite, lorsque vous sélectionnez une marque dans la console **Activité** ou **Offres**, la console **Zone** s’affiche.
 
-Pour créer une zone :
+Pour créer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
 1. Cliquez sur **Créer une zone**.
@@ -171,7 +171,7 @@ Pour créer une zone :
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-## Création de zones comme Live Copies {#creating-areas-as-live-copies}
+## Création de zones comme Live Copy {#creating-areas-as-live-copies}
 
 Vous créez une zone en tant que Live Copy pour hériter du contenu ciblé sur l’ensemble des structures du site.
 
@@ -220,12 +220,12 @@ Pour lier un site à une zone :
 
 1. Accédez au site (ou à la page) que vous souhaitez lier à une zone.
 1. Sélectionnez le site ou la page, puis cliquez sur **Afficher les propriétés**.
-1. Cliquez sur le bouton **Personnalisation** .
+1. Cliquez sur l’onglet **Personnalisation**.
 1. Dans le menu **Marque**, sélectionnez la marque à laquelle vous souhaitez lier votre zone. Une fois la marque sélectionnée, les zones disponibles sont accessibles dans le menu **Référence de zone**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Sélectionnez la zone dans la **Référence de zone** menu déroulant, puis cliquez sur **Enregistrer**.
+1. Sélectionnez la zone dans le menu déroulant **Référence de zone** et cliquez sur **Enregistrer**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -249,8 +249,8 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 
 Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage, puis cliquez sur **Ciblage** dans le menu déroulant du mode.
-1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Cliquez sur **Commencer le ciblage**.
+1. Accédez à la page sur laquelle vous souhaitez désolidariser ou suspendre l’héritage et cliquez sur **Ciblage** dans le menu déroulant de mode.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Cliquez sur **Commencer le ciblage**.
 1. Pour suspendre une activité, effectuez l’une des opérations suivantes :
 
    1. Sélectionnez un élément de l’activité, tel que l’audience. AEM affiche automatiquement une boîte de confirmation Suspendre la Live Copy. (Vous pouvez suspendre la Live Copy en appuyant ou en cliquant sur un élément tout au long du processus de ciblage.)
@@ -266,8 +266,8 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy du gabarit, puis cliquez sur **Ciblage** dans le menu déroulant du mode.
-1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir l’état d’héritage. Cliquez sur **Commencer le ciblage**.
+1. Accédez à la page sur laquelle vous souhaitez désolidariser la Live Copy de la zone principale, puis cliquez sur **Ciblage** dans le menu déroulant du mode.
+1. Si votre page est liée à une zone qui est une Live Copy, vous pouvez voir le statut d’héritage. Cliquez sur **Commencer le ciblage**.
 1. Sélectionnez **Désolidariser une Live Copy** dans le menu déroulant de la barre d’outils. AEM confirme que vous souhaitez détacher la Live Copy.
 1. Cliquez sur **Désolidariser** pour désolidariser la Live Copy de l’activité. Une fois la désolidarisation effectuée, le menu déroulant relatif à l’héritage disparaît. L’activité est désormais locale.
 
@@ -279,13 +279,13 @@ Si vous avez suspendu l’héritage du contenu ciblé dans une activité, vous p
 
 Pour restaurer l’héritage du contenu ciblé dans une activité :
 
-1. Accédez à la page sur laquelle vous souhaitez restaurer l’héritage, puis cliquez sur **Ciblage** dans le menu déroulant du mode.
+1. Accédez à la page où vous souhaitez restaurer l’héritage et cliquez sur **Ciblage** dans le menu déroulant de mode.
 1. Cliquez sur **Commencer le ciblage**.
 1. Sélectionnez **Reprendre la Live Copy** dans le menu déroulant de la barre d’outils.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
+1. Cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de la Live Copy. Toute modification apportée à l’activité actuelle est perdue si vous reprenez l’héritage.
 
 ## Suppression de zones {#deleting-areas}
 
@@ -294,5 +294,5 @@ Lorsque vous supprimez une zone, vous supprimez toutes les activités qu’elle 
 Pour supprimer une zone :
 
 1. Accédez à **Personnalisation** > **Activités** ou **Offres** et sélectionnez ensuite votre marque.
-1. Cliquez sur l’icône située en regard de la zone à supprimer.
+1. Cliquez sur l’icône en regard de la zone à supprimer.
 1. Cliquez sur **Supprimer** et confirmez que vous souhaitez supprimer la zone.

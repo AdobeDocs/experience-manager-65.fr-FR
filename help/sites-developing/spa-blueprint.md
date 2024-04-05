@@ -1,6 +1,6 @@
 ---
 title: Plan directeur d’applications d’une seule page (SPA)
-description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA doit respecter pour mettre en oeuvre des composants SPA modifiables dans les AEM d’.
+description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modi
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout framework SPA doit respecter (c’est-à-dire le type de couche de prise en charge AEM) pour mettre en oeuvre des composants de SPA modifiables dans.
+Ce document décrit le contrat général que tout framework SPA devrait respecter (c’est-à-dire le type de calque de prise en charge AEM) afin de mettre en œuvre des composants SPA modifiables dans AEM.
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ Le reste de ce document, supposé être indépendant du framework, décrit les e
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application sur une seule page (SPA). Les développeurs d’applications sur une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Ils utilisent pour cela le type de ressource (ou le chemin d’accès au composant AEM) comme clé unique.
 
-Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle utilisant des composants dynamiques doit être utilisé pour instancier des composants à la volée en suivant la structure de modèle de page fournie.
+Les composants de la SPA doivent être synchronisés avec le modèle de page et mis à jour avec toute modification apportée au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
 ### Champs Meta {#meta-fields}
 

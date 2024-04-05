@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1653'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -69,11 +69,11 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionnez **modèle de données de formulaire** dans la section **Modèle de données**.
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
+   1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et choisissez **Sélectionner**.
 
    1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
+1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis sélectionnez **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Saisissez **Invoicenumber** comme nom de la variable.
@@ -133,11 +133,11 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionnez **modèle de données de formulaire** dans la section **Modèle de données**.
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
+   1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et choisissez **Sélectionner**.
 
    1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
+1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis sélectionnez **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Saisissez **Placesupply** comme nom de la variable.
@@ -196,11 +196,11 @@ Pour créer des variables pour les champs dont la source de données est l’int
 
    1. Sélectionnez **modèle de données de formulaire** dans la section **Modèle de données**.
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
+   1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et choisissez **Sélectionner**.
 
    1. Sélectionnez **Suivant**.
 
-1. Sélectionnez la variable **Variables** dans le volet de gauche, puis sélectionnez **Créer**.
+1. Sélectionnez l’onglet **Variables** dans le volet gauche, puis sélectionnez **Créer**.
 1. Dans la section **Créer une variable** :
 
    1. Saisissez **Previousbalance** comme nom de la variable.
@@ -263,7 +263,7 @@ Pour créer du texte statique et utiliser des éléments de modèle de données 
 
    1. Sélectionnez un **modèle de données de formulaire** dans la section **Modèle de données**.
 
-   1. Sélectionner **FDM_Create_First_IC** comme modèle de données de formulaire et sélectionnez **Sélectionner**.
+   1. Sélectionnez **FDM_Create_First_IC** comme modèle de données de formulaire et choisissez **Sélectionner**.
 
    1. Sélectionnez **Suivant**.
 
@@ -294,7 +294,7 @@ Pour créer du texte statique et utiliser des éléments de modèle de données 
 
    ![Récapitulatif des frais](assets/summary_charges_static_fdm_new.png)
 
-1. Sélectionnez le texte dans le **Frais de services à valeur ajoutée** ligne et sélectionnez **Créer une règle** pour créer une condition d’après laquelle la ligne est affichée dans la communication interactive :
+1. Sélectionnez le texte dans la ligne **Frais de services à valeur ajoutée** et sélectionnez **Créer une règle** afin de créer une condition basée sur la ligne affichée dans la communication interactive :
 1. Dans la fenêtre contextuelle **Créer une règle** :
 
    1. Sélectionnez **Modèles et variables de données** puis **bills** > **callcharges**.

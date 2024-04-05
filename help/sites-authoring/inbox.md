@@ -1,12 +1,12 @@
 ---
 title: Votre boîte de réception pour gérer les tâches
-description: Gestion de vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5.
+description: Gestion de vos tâches avec la boîte de réception dans Adobe Experience Manager 6.5
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
-Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant des actions ou un accès à la boîte de réception :
+Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant des actions ou un accès à la boîte de réception :
 
 ![wf-80](assets/wf-80.png)
 
@@ -68,7 +68,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 1. Cliquez sur l’indicateur dans la barre d’outils.
 
-1. Sélectionnez **Afficher tout**. La variable **Boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
+1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux vues. Les options disponibles dépendent de l’affichage actuel.
@@ -139,8 +139,8 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
 * **Personnalisation des colonnes** : personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
    * **Ajouter une colonne** : sélectionnez une colonne à ajouter dans la boîte de réception AEM.
-   * **Modifier la colonne**: placez le curseur sur le titre de la colonne et sélectionnez ![edit](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
-   * **Supprimer la colonne**: sélectionnez la variable ![delete](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
+   * **Modifier une colonne** : passez la souris sur le titre de la colonne et cliquez sur l’icône ![modifier](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
+   * **Supprimer une colonne** : cliquez sur l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception AEM.
    * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
@@ -153,7 +153,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
 * **Navigation de l’utilisateur**
    * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien Aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
-* **Enregistrer :** Cliquez sur cette option pour enregistrer les paramètres.
+* **Enregistrer :** cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
 
@@ -168,7 +168,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
-   * **Terminer** par exemple, une tâche ou un élément de workflow.
+   * L’action **Terminer** ; par exemple une tâche ou un élément de workflow.
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
@@ -192,7 +192,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    * un assistant d’action démarre ;
    * une page de documentation s’ouvre.
 
-   Par exemple : **Réaffecter** ouvre une boîte de dialogue :
+   Par exemple, la fonction **Réaffecter** ouvre une boîte de dialogue :
 
    ![wf-85](assets/wf-85.png)
 
@@ -224,7 +224,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom**: il est utilisé pour former l’URL ; s’il est vide, il est basé sur la variable **Titre**.
+      * **Nom** : ce champ est utilisé pour former l’URL. S’il est vide, le nom est basé sur le champ **Titre**.
 
    ![wf-87](assets/wf-87.png)
 

@@ -1,6 +1,6 @@
 ---
 title: À propos de la gestion des ressources Dynamic Media
-description: Découvrez comment utiliser des ressources Dynamic Media, telles que des vidéos et des images, après leur téléchargement. Vous pouvez prévisualiser, télécharger ou publier des ressources.
+description: Découvrez comment utiliser des ressources Dynamic Media, telles que des vidéos et des images, après leur chargement. Vous pouvez prévisualiser, télécharger ou publier des ressources.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 

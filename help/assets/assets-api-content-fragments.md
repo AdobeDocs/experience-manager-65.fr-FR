@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1902'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -205,7 +205,7 @@ La réponse contiendra les informations de pagination dans la section `propertie
 
 Les dossiers servent de conteneurs pour les ressources et d’autres dossiers. Ils reflètent la structure du référentiel de contenu AEM.
 
-L’API REST Assets expose l’accès aux propriétés d’un dossier, par exemple son nom, son titre, etc. Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
+L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemple, son nom, son titre, etc.). Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exp
 
 ### Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Ils peuvent être utilisés pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
@@ -236,9 +236,9 @@ Les fragments de contenu :
 
 #### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
-Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, *client* doit connaître le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (comme les types de données, etc.). Ces dernières font par ailleurs partie de la définition.
+Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, *la cliente ou le client* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la payload (par exemple, les types de données, etc.). Ces dernières font par ailleurs partie de la définition.
 
-Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être fourni.
+Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être indiqué.
 
 #### Contenu associé {#associated-content}
 
@@ -308,7 +308,7 @@ Mode d’utilisation :
 
 Il existe quelques restrictions :
 
-* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu ou en mettre à jour un existant, les développeurs doivent connaître le chemin d’accès correct au modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
+* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer ou mettre à jour un fragment de contenu, les développeurs et développeuses doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
 * **Les références sont ignorées**. Actuellement, il n’existe aucune vérification pour savoir si un fragment de contenu existant est référencé. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
 * **Type de données JSON** L’API REST définit actuellement la sortie du *type de données JSON* sur *chaîne de caractères*.
 
@@ -327,7 +327,8 @@ Retourné lorsque :
 
    * création réussie d’un fragment de contenu via `POST`
 
-* **404** (Introuvable) Renvoie lorsque :
+* **404** (Introuvable)
+Retourné lorsque :
 
    * le fragment de contenu demandé n’existe pas
 

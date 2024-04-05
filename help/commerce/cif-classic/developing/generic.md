@@ -1,13 +1,13 @@
 ---
 title: Développement (générique)
-description: La structure d’intégration comprend une couche d’intégration avec une API, ce qui vous permet de créer AEM composants pour les fonctionnalités d’e-commerce.
+description: Le framework d’intégration comprend une couche d’intégration à une API, ce qui vous permet de créer des composants AEM pour les fonctionnalités d’e-commerce.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Accès WebDAV
-description: Découvrez comment accéder à Adobe Experience Manager à l’aide de WebDAV.
+description: Découvrez comment accéder à Adobe Experience Manager à l’aide de WebDAV.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 

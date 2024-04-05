@@ -44,7 +44,7 @@ De nombreux problèmes peuvent être résolus en restructurant le contenu. Garde
 
 * **Affiner la structure du contenu**
 
-   * Déplacez-le vers d’autres emplacements, par exemple, où le contrôle d’accès correspond aux sessions de requête disponibles ;
+   * Déplacez-le vers d’autres emplacements, par exemple lorsque le contrôle d’accès correspond aux sessions de requête disponibles.
    * Modifiez la granularité du contenu.
 
 * **Refactorisation du code afin qu’il corresponde à un service approprié**

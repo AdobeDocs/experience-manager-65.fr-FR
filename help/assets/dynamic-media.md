@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Les ressources compatibles avec Dynamic Media comprennent les `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur le `+` et `-` des boutons. Vous pouvez également cliquer pour effectuer un zoom sur une zone spécifique. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. L’option Dynamic Media activée ressemble à ceci :
+Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer pour effectuer un zoom sur une zone spécifique. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. L’option Dynamic Media activée ressemble à celle-ci :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

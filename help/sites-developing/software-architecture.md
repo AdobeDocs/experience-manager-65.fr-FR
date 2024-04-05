@@ -1,6 +1,6 @@
 ---
 title: Architecture logicielle
-description: Découvrez quelques bonnes pratiques pour la conception de vos logiciels pour Adobe Experience Manager.
+description: Découvrez quelques bonnes pratiques pour concevoir l’architecture de votre logiciel pour Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->Il est recommandé d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
+>Nous vous recommandons d’utiliser [Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
 
 Les utilisateurs peuvent être invités à s’abonner à des listes de publipostage de **fournisseurs de services de messagerie** à l’aide du composant **Formulaire** utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 

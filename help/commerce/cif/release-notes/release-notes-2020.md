@@ -1,12 +1,12 @@
 ---
 title: Notes de mise à jour d’AEM Content and Commerce 2020
-description: Notes de mise à jour de Adobe Experience Manager Content and Commerce 2020.
+description: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 * Ajout d’un nouveau composant de carrousel de catégorie pour permettre aux utilisateurs et aux utilisatrices professionnelles de faire glisser et de déposer ce composant sur les pages de contenu AEM afin d’enrichir les pages de contenu avec des données commerciales.
 
-* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyse numérique et de création de rapports. Pour plus d’informations, voir [Adobe de la couche de données client](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Composants principaux CIF étendus pour décompresser la couche de données client Adobe en envoyant des données commerciales. La couche de données client Adobe est une méthode normalisée pour collecter des données et communiquer les données aux serveurs d’analyse numérique et de création de rapports. Pour plus d’informations, voir [Couche de données cliente Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pages Détails du produit et Liste de produits étendues pour renseigner automatiquement les métadonnées d’optimisation pour les moteurs de recherche (telles que le titre, la méta-description, les méta-mots-clés) configurées dans l’interface utilisateur d’administration d’Adobe Commerce
 
@@ -144,7 +144,7 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Ajout du filtrage de catégorie en tant que facette pour permettre aux acheteurs de filtrer par catégorie.
 
-* Ajout du mappage des utilisateurs du service dans le cadre des exigences de sécurité afin d’assurer l’accès à /conf par le bais des utilisateurs du service, et non en manipulant directement les listes de contrôle d’accès. CIF composants principaux doivent utiliser un utilisateur de service pour accéder aux configurations.
+* Ajout du mappage des utilisateurs du service dans le cadre des exigences de sécurité afin d’assurer l’accès à /conf par le bais des utilisateurs du service, et non en manipulant directement les listes de contrôle d’accès. Les composants principaux CIF doivent utiliser un utilisateur du service pour accéder aux configurations.
 
 ### Améliorations {#what-is-improved-june}
 

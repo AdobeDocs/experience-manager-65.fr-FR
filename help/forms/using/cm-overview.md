@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
@@ -18,30 +18,30 @@ ht-degree: 23%
 
 ## Présentation {#introduction}
 
-Correspondence Management centralise et gère la création, l’assemblage et la diffusion de correspondances sécurisées, personnalisées et interactives. Il vous permet d’assembler rapidement une correspondance à partir de contenu prévalidé et personnalisé dans un processus simplifié allant de la création à l’archivage. Vos clients reçoivent ainsi les communications appropriées au bon moment et de la bonne manière : ponctualité, précision, confort, sécurité et pertinence. Votre entreprise optimise la valeur des interactions client et réduit les coûts et les risques grâce à un processus simplifié pour faciliter, accélérer et accroître la productivité.
+Correspondence Management centralise et gère la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives. Elle vous permet d’assembler rapidement une correspondance à partir de contenu prévalidé et personnalisé dans un processus simplifié allant de la création à l’archivage. Vos clients reçoivent ainsi les communications appropriées au bon moment et de la bonne manière : ponctualité, précision, confort, sécurité et pertinence. Votre entreprise optimise la valeur des interactions client et réduit les coûts et les risques grâce à un processus simplifié pour faciliter, accélérer et accroître la productivité.
 
 ## Avantages {#benefits}
 
-### Efficace et productive {#efficient-and-productive}
+### Efficacité et productivité {#efficient-and-productive}
 
-Il simplifie le traitement, ce qui vous permet d’effectuer les opérations suivantes :
+Le traitement est simplifié, ce qui vous permet de :
 
-* Déployer et gérer des modèles et du contenu dans une interface intuitive conçue pour les utilisateurs professionnels
+* déployer et gérer des modèles et du contenu dans une interface intuitive conçue pour les utilisateurs et utilisatrices professionnels ;
 * Assemblez rapidement la correspondance à partir de contenu prévalidé ou personnalisé.
 
-### Géré {#managed}
+### Gestion {#managed}
 
-Il fournit des communications de meilleure qualité, ce qui vous permet d’effectuer les opérations suivantes :
+Des communications de meilleure qualité sont fournies, ce qui vous permet de :
 
-* Gérer les règles de fonctionnement et le contenu approuvé dans un référentiel de contenu centralisé
-* Utiliser AEM DAM pour la gestion des images
-* Création de fichiers Adobe PDF pour l’archivage et l’audit
+* gérer les règles commerciales et le contenu approuvé dans un référentiel de contenu centralisé ;
+* utiliser la DAM d’AEM pour la gestion des images ;
+* créer des fichiers Adobe PDF pour l’archivage et l’audit ;
 * Créez des messages conformes sur le plan organisationnel à l’aide de contenu prévalidé par le biais de règles commerciales intégrées.
 
-### Étendu {#extensive}
+### Étendue {#extensive}
 
-Il améliore l’engagement des clients, ce qui vous permet d’effectuer les opérations suivantes :
+L’engagement des clientes et clients est amélioré, ce qui vous permet de :
 
-* Ajout de technologies interactives pour activer un canal bidirectionnel, réduisant les envois papier
-* Informations sensibles Protect avec sécurité des documents intégrée de bout en bout
-* Envoyez la correspondance par le biais du canal de communication préféré du client, que ce soit par courrier électronique, courrier, mobile ou fax.
+* ajouter des technologies interactives pour activer un canal bidirectionnel, réduisant les envois au format papier ;
+* protéger les informations sensibles grâce à une sécurité des documents intégrée de bout en bout ;
+* envoyer de la correspondance en utilisant le canal de communication privilégié par la cliente ou le client (électronique, courrier, mobile ou fax).

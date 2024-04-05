@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 84%
+ht-degree: 98%
 
 ---
 
@@ -21,14 +21,14 @@ Cela évite d’avoir à développer un composant personnalisé pour chaque styl
 
 ## Cas d’utilisation {#use-case}
 
-Les créateurs de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs de contenu, mais aussi configurer plusieurs variantes visuelles d’un composant.
+Les créateurs et créatrices de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs et créatrices de contenu, mais aussi configurer un certain nombre de variantes visuelles d’un composant.
 
 De même, les créateurs et créatrices de contenu doivent non seulement pouvoir structurer et organiser leur contenu, mais aussi sélectionner la manière dont il est présenté visuellement.
 
 Le système de style constitue une solution unifiée pour répondre à la fois aux exigences des auteurs de contenus et de modèles :
 
 * Les créateurs et créatrices de modèles peuvent définir des classes de style dans la stratégie de contenu des composants.
-* Les auteurs de contenu peuvent ensuite sélectionner ces classes dans une liste déroulante lors de la modification du composant sur une page pour appliquer les styles correspondants.
+* Les créateurs et créatrices de contenu peuvent ensuite sélectionner ces classes dans une liste déroulante lors de la modification du composant sur une page afin qu’ils puissent appliquer les styles correspondants.
 
 La classe de style est ensuite insérée sur l’élément wrapper du composant, de sorte que le développeur ou la développeuse de composants n’ait pas à gérer les styles au-delà de la fourniture de leurs règles CSS.
 
@@ -77,7 +77,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Système de style pour l’auteur](assets/style-system-author.png)
 
-1. Cliquez sur le bouton **Styles** dans la barre d’outils de la fonction **Liste** pour ouvrir le menu de style et modifier l’aspect du composant.
+1. Appuyez ou cliquez sur le bouton **Styles** dans la barre d’outils du composant **Liste** pour ouvrir le menu des styles et changer l’apparence du composant.
 
    ![Sélection de styles](assets/style-system-author2.png)
 
@@ -87,7 +87,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 ### En tant qu’auteur de modèles {#as-a-template-author}
 
-1. Lors de la modification de la page d’accueil principale en anglais de WKND à l’adresse `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modifiez le modèle de la page via **Informations sur la page > Modifier le modèle**.
+1. Alors que vous modifiez la page d’accueil de WKND (`http://<host>:<port>/sites.html/content/wknd/language-masters/en`) (en anglais), modifiez le modèle de la page via **Informations sur la page -> Modifier le modèle**.
 
    ![Modifier le modèle](assets/style-system-edit-template.png)
 
@@ -108,7 +108,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 >[!CAUTION]
 >
->Les classes CSS (et tout code JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composant doivent être déployées comme [Bibliothèques clientes](/help/sites-developing/clientlibs.md) au travail.
+>Pour pouvoir fonctionner, les classes CSS, ainsi que toute classe JavaScript nécessaire, configurées en tant que propriétés de style d’une politique de composants doivent être déployées comme [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 
 ## Configuration {#setup}
 
@@ -123,7 +123,7 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Une fois le composant configuré, les styles configurés par les auteurs de pages seront automatiquement insérés par AEM sur l’élément décoratif qui AEM automatiquement encapsulé autour de chaque composant modifiable. Le composant lui-même n’a rien à faire d’autre pour que cela se produise.
+Une fois le composant configuré, les styles configurés par les auteurs et autrices de pages sont automatiquement insérés par AEM sur l’élément décoratif qu’AEM encapsule automatiquement autour de chaque composant modifiable. Le composant lui-même n’a rien à faire d’autre pour que cela se produise.
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
@@ -155,6 +155,6 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 >1. Enfin, le nom `cq:htmlTag`/ `cq:tagName` du composant est considéré comme une valeur de repli.
 >
 
-Cette possibilité de définir des noms de style est utile pour les composants très génériques, tels que le conteneur de mises en page ou le composant Fragment de contenu, afin de leur donner une signification supplémentaire.
+Cette capacité à définir des noms de styles est utile pour les composants génériques, tels que les composants Conteneur de disposition ou Fragment de contenu. Cela permet de leur donner davantage de sens.
 
-Par exemple, il permet d’attribuer une sémantique à un conteneur de mises en page, comme `<main>`, `<aside>`, `<nav>`, etc.
+Cela permet, par exemple, d’attribuer au conteneur de disposition des sémantiques telles que `<main>`, `<aside>`, `<nav>`, etc.

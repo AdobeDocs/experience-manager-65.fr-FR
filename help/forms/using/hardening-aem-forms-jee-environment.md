@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7608'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ Cette section décrit des techniques que vous pouvez utiliser pendant le process
 
 Une fois AEM Forms sur JEE installé avec succès, il est important que vous assuriez une maintenance régulière de l’environnement pour en optimiser la sécurité.
 
-La section suivante décrit en détail les différentes tâches recommandées pour sécuriser le serveur Forms déployé.
+La section suivante décrit en détail les différentes tâches recommandées pour sécuriser le serveur Forms Server déployé.
 
 ### Sécurité d’AEM Forms {#aem-forms-security}
 
@@ -166,7 +166,7 @@ AEM Forms sur JEE installe un service par défaut en utilisant le compte systè
 
 Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms sur JEE, appliquez les instructions suivantes en utilisant un compte non administratif spécifique :
 
-1. Dans Microsoft Management Console (MMC), créez un utilisateur local pour que le service Forms Server se connecte en tant que :
+1. Dans Microsoft Management Console (MMC), créez un utilisateur local ou une utilisatrice locale que le service Forms Server peut utiliser pour se connecter :
 
    * Sélectionnez **L’utilisateur ne peut pas changer de mot de passe**.
    * Vérifiez que le groupe **Utilisateurs** figure dans l’onglet **Membre de**.
@@ -179,7 +179,7 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms s
 1. Double-cliquez sur l’application JBoss pour AEM Forms sur JEE et arrêtez le service.
 1. Sur l’onglet **Connexion**, sélectionnez **Ce compte**, recherchez le compte d’utilisateur que vous avez créé et saisissez le mot de passe du compte.
 1. Dans MMC, ouvrez **Paramètres de sécurité locaux** et sélectionnez **Politiques locales** > **Attribution des droits utilisateur**.
-1. Attribuez les droits suivants au compte utilisateur sous lequel le serveur Forms est exécuté :
+1. Attribuez les droits suivants au compte d’utilisateur avec lequel le serveur Forms Server est exécuté :
 
    * Interdire l’ouverture de session par les services Terminal
    * Interdire l’ouverture d’une session locale
@@ -267,11 +267,11 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 
 Configuration Manager vous permet de télécharger des informations d’identification d’extensions Acrobat Reader DC dans le Trust Store d’AEM Forms sur JEE. Cela signifie que l’accès au service d’informations d’identification du Trust Store sur les protocoles distants (SOAP et EJB) a été activé par défaut. Cet accès n’est plus nécessaire après avoir téléchargé les informations d’identification des droits en utilisant Configuration Manager, ou si vous décidez d’utiliser la console d’administration ultérieurement pour gérer les informations d’identification.
 
-Vous pouvez désactiver l’accès distant à tous les services Trust Store en suivant les étapes de la section . [Désactivation de l’accès distant non essentiel aux services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Vous pouvez désactiver l’accès distant à tous les services de Trust Store en suivant les étapes de la section [Désactivation des accès distants facultatifs à des services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 **Désactivation de tous les accès anonymes non indispensables**
 
-Certains services Forms Server comportent des opérations qui peuvent être invoquées par un appelant anonyme. Si l’accès anonyme à ces services n’est pas obligatoire, désactivez-le en suivant les étapes de [Désactivation des accès anonymes non indispensables à des services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Certains services Server Forms comportent des opérations qu’une personne anonyme peut appeler. Si l’accès anonyme à ces services n’est pas obligatoire, désactivez-le en suivant les étapes de [Désactivation des accès anonymes non indispensables à des services](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 #### Modifier le mot de passe d’administration par défaut {#change-the-default-administrator-password}
 
@@ -316,8 +316,8 @@ La génération WSDL (Web Service Definition Language) ne doit être activée qu
    https://[host name]:[port]/adminui
    ```
 
-1. Sélectionner **Paramètres > Paramètres de Core System > Configurations**.
-1. Désélectionner **Activer WSDL**, puis sélectionnez **OK**.
+1. Cliquez sur **Paramètres > Paramètres de Core System > Configurations**.
+1. Désélectionnez **Activer WSDL**, puis sélectionnez **OK**.
 
 ### Sécurité du serveur d’applications {#application-server-security}
 
@@ -399,7 +399,7 @@ Sur WebSphere, vous pouvez configurer la sécurité intégrée uniquement lorsqu
 
 ### Protection de l’accès aux contenus sensibles dans la base de données {#protecting-access-to-sensitive-content-in-the-database}
 
-Le schéma de la base de données AEM Forms contient des informations sensibles relatives à la configuration du système et aux processus métier et doit être protégé par un pare-feu. La base de données doit être considérée dans la même limite de confiance que le serveur Forms. Pour éviter tout risque de divulgation d’informations et de vol de données d’entreprise, la base de données doit être configurée par l’administrateur ou l’administratrice de base de données (DBA) pour donner l’accès aux administrateurs et administratrices autorisés uniquement.
+Le schéma de la base de données AEM Forms contient des informations sensibles relatives à la configuration du système et aux processus métier et doit être protégé par un pare-feu. La base de données doit être considérée comme faisant partie de la même zone de confiance que Forms Server. Pour éviter tout risque de divulgation d’informations et de vol de données d’entreprise, la base de données doit être configurée par l’administrateur ou l’administratrice de base de données (DBA) pour donner l’accès aux administrateurs et administratrices autorisés uniquement.
 
 Pour une sécurité accrue, prévoyez d’utiliser des outils spécifiques au revendeur de votre base de données pour chiffrer les colonnes des tableaux contenant les données suivantes :
 
@@ -428,7 +428,7 @@ Vous pouvez définir le nombre de tentatives d’authentification maximum autori
 
 ### Contrôle et journalisation {#auditing-and-logging}
 
-L’utilisation appropriée et sécurisée des capacités de contrôle et de journalisation des applications peut contribuer au suivi et à la détection rapides des événements liés à la sécurité et autres anomalies. L’utilisation efficace de l’audit et de la journalisation dans une application inclut des éléments tels que le suivi des connexions réussies et échouées, ainsi que des événements d’application clés tels que la création ou la suppression d’enregistrements clés.
+L’utilisation appropriée et sécurisée des capacités de contrôle et de journalisation des applications peut contribuer au suivi et à la détection rapides des événements liés à la sécurité et autres anomalies. L’utilisation efficace des options d&#39;audit et de journalisation dans une application implique notamment le suivi des connexions ayant réussi et échoué, ainsi que des événements clés de l’application comme la création ou la suppression d’enregistrements clés.
 
 Vous pouvez utiliser les capacités de contrôle pour détecter de nombreux types d’attaques, parmi lesquels :
 
@@ -469,7 +469,7 @@ Vous pouvez permettre à un utilisateur non administrateur ou une utilisatrice n
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Configuration d’AEM Forms on JEE pour un accès au-delà de l’entreprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -539,13 +539,13 @@ Certaines URL sont présentées comme des applications Web accessibles par les u
   </tr> 
   <tr> 
    <td><p>/soap/*</p> </td> 
-   <td><p>Page d’informations sur les services Web Forms Server</p> </td> 
+   <td><p>Page d’informations pour les services web Forms Server.</p> </td> 
    <td><p>Non</p> </td> 
    <td><p>Non</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>URL de service Web de tous les services de serveur Forms</p> </td> 
+   <td><p>URL de service web pour tous les services Forms Server.</p> </td> 
    <td><p>Non</p> </td> 
    <td><p>Non</p> </td> 
   </tr> 
@@ -664,7 +664,7 @@ Certaines URL sont présentées comme des applications Web accessibles par les u
 
 Un Cross-site request forgery (CSRF) exploite la confiance d’un site web envers l’utilisateur dans le but de transmettre des instructions non autorisées à son insu. Le principe de l’attaque consiste à inclure un lien ou un script dans une page web ou une URL dans un courrier électronique afin d’accéder à un autre site sur lequel l’utilisateur a déjà été authentifié.
 
-Par exemple, vous pouvez être connecté à la console d’administration tout en explorant un autre site web. L’une des pages Web peut inclure une balise d’image HTML avec un attribut `src` visant un script côté serveur sur le site Web de la victime. En utilisant le mécanisme d’authentification de session basé sur les cookies fourni par les navigateurs web, le site web d’attaque peut envoyer des requêtes malveillantes à ce script côté serveur victime, se faisant passer pour un utilisateur légitime. Pour obtenir d’autres exemples, voir [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Par exemple, vous pouvez être connecté à la console d’administration tout en explorant un autre site web. L’une des pages Web peut inclure une balise d’image HTML avec un attribut `src` visant un script côté serveur sur le site Web de la victime. En utilisant le mécanisme d’authentification de session basé sur les cookies que fournissent les navigateurs web, le site web attaquant peut envoyer des requêtes malveillantes au script côté serveur ciblé en les faisant passer pour les requêtes de l’utilisateur ou de l&#39;utilisatrice légitime. Pour obtenir d’autres exemples, voir [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 Les caractéristiques suivantes sont communes aux cas de CSRF :
 
@@ -676,7 +676,7 @@ Les caractéristiques suivantes sont communes aux cas de CSRF :
 AEM Forms on JEE utilise la fonctionnalité de filtrage des référents pour bloquer les attaques CSRF. Les termes suivants sont utilisés dans cette section pour décrire ce dispositif de filtrage des référents :
 
 * **Référent autorisé :** un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, ce référent est généralement la page précédente dans l’historique de navigation. Les référents pour les images sont généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les référents autorisés à accéder à votre serveur en les ajoutant à la liste de référents autorisés.
-* **Exceptions aux référents autorisés :** si vous souhaitez restreindre l’accès pour un référent particulier dans votre liste de référents autorisés. Pour mettre en place cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent vers la liste des exceptions aux référents autorisés. Les requêtes provenant des chemins d’accès de la liste des exceptions aux référents autorisés ne peuvent pas appeler de ressource sur le serveur Forms. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et également utiliser une liste globale des exceptions s’appliquant à toutes les applications.
+* **Exceptions aux référents autorisés :** si vous souhaitez restreindre l’accès pour un référent particulier dans votre liste de référents autorisés. Pour mettre en place cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent vers la liste des exceptions aux référents autorisés. Les requêtes provenant de chemins d’accès de la liste des exceptions aux référents autorisés ne peuvent appeler aucune ressource du serveur Forms Server. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et également utiliser une liste globale des exceptions s’appliquant à toutes les applications.
 * **URI autorisés :** il s’agit d’une liste des ressources générées sans vérification de l’en-tête référent. Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources figurant dans la liste des URI autorisés ne sont jamais bloquées par le filtrage des référents, quel que soit le référent.
 * **Référent de valeur NULL (null referer) :** une requête serveur qui n’est pas associée ou ne provient pas d’une page web parente est considérée comme une requête de référent de valeur NULL. Par exemple, lorsque vous ouvrez une nouvelle fenêtre de navigateur, saisissez une adresse puis appuyez sur la touche Entrée, le référent envoyé au serveur est nul. Une application de bureau (.NET ou SWING) envoyant une requête HTTP à un serveur web envoie également un référent de valeur NULL au serveur.
 
@@ -684,12 +684,12 @@ AEM Forms on JEE utilise la fonctionnalité de filtrage des référents pour blo
 
 Le processus de filtrage des référents peut être décrit comme suit :
 
-1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
+1. Le serveur Forms Server vérifie la méthode HTTP utilisée pour l’appel :
 
-   1. S’il est POST, le serveur Forms vérifie l’en-tête du référent.
-   1. S’il est GET, le serveur Forms ignore la vérification du référent, sauf si *CSRF_CHECK_GETS* est définie sur true, auquel cas elle vérifie l’en-tête du référent. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
+   1. S’il s’agit d’une méthode POST, le serveur Forms Server vérifie l’en-tête du référent.
+   1. S’il s’agit d’une méthode GET, le serveur Forms Server ignore la vérification du référent, à moins que la variable *CSRF_CHECK_GETS* ne soit définie sur True. Dans ce cas, il vérifie l’en-tête du référent. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
 
-1. Le serveur Forms vérifie si l’URI requis existe en liste autorisée :
+1. Le serveur Forms Server vérifie si l’URI requis existe dans la liste autorisée :
 
    1. Si l’URI est autorisé, le serveur transmet la requête.
    1. Si l’URI requis n’est pas autorisé, le serveur récupère le référent de la requête.
@@ -708,7 +708,7 @@ Le processus de filtrage des référents peut être décrit comme suit :
 
 AEM Forms on JEE effectue un filtrage des référents afin de spécifier les référents qui sont autorisés à accéder aux ressources du serveur. Par défaut, le filtrage des référents ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple GET, sauf si *CSRF_CHECK_GETS* est défini sur true. Si le numéro de port pour un référent autorisé est défini sur 0, AEM Forms on JEE autorisera toutes les requêtes des référents provenant de cet hôte quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
 
-Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur Forms dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
+Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur Forms Server dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
 
 **Gérer la liste de référents autorisés**
 
@@ -729,7 +729,7 @@ AEM Forms on JEE fournit des API pour gérer la liste des exceptions aux référ
 
 Pour plus d’informations sur les API, reportez-vous à la référence API d’AEM Forms on JEE.
 
-Utilisez la variable ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste des exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir les exceptions applicables à toutes les applications. Cette liste contient uniquement des URI ayant soit un chemin absolu (par exemple `/index.html`), soit un chemin relatif (par exemple `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex, `/sample/(.)*`.
+Utilisez la liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** pour les exceptions aux référents autorisés au niveau global, c’est-à-dire pour définir les exceptions qui s’appliquent à toutes les applications. Cette liste contient uniquement des URI ayant soit un chemin absolu (par exemple `/index.html`), soit un chemin relatif (par exemple `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex, `/sample/(.)*`.
 
 L’ID de liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** est définie comme une constante dans la classe `UMConstants` de l’espace de noms `com.adobe.idp.um.api`, figurant dans `adobe-usermanager-client.jar`. Vous pouvez utiliser les API AEM Forms pour créer, modifier ou éditer cette liste. Par exemple, pour créer la liste globale des exceptions aux référents autorisés, utilisez :
 
@@ -741,17 +741,17 @@ Utilisez la liste ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** pour les exceptions spé
 
 **Désactiver le filtrage des référents**
 
-Si le filtre de référent bloque complètement l’accès au serveur Forms et que vous ne pouvez pas modifier la liste de référents autorisés, vous pouvez mettre à jour le script de démarrage du serveur et désactiver le filtrage des référents.
+Dans le cas où le filtrage des référents bloque complètement l’accès au serveur Forms Server et que vous ne pouvez pas modifier la liste des référents autorisés, vous pouvez mettre à jour le script de démarrage du serveur et désactiver le filtrage des référents.
 
 Incluez l’argument JAVA `-Dlc.um.csrffilter.disabled=true` dans le script de démarrage et redémarrez le serveur. Assurez-vous de supprimer l’argument JAVA après avoir correctement reconfiguré la liste de référents autorisés.
 
 **Filtrer les référents pour les fichiers WAR personnalisés**
 
-Vous avez peut-être créé des fichiers WAR personnalisés pour travailler avec AEM Forms on JEE afin de répondre aux besoins de votre entreprise. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, vous devez inclure ***adobe-usermanager-client.jar*** dans le chemin de classe pour les fichiers WAR et inclure une entrée de filtre dans le fichier « web.xml » avec les paramètres suivants :
+Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms on JEE pour répondre aux besoins de votre entreprise. Pour activer le filtrage des référents pour vos fichiers WAR personnalisés, vous devez inclure ***adobe-usermanager-client.jar*** dans le chemin de classe pour les fichiers WAR et inclure une entrée de filtre dans le fichier « web.xml » avec les paramètres suivants :
 
 **CSRF_CHECK_GETS** contrôle la vérification du référent pour les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’identifiant de la liste des exceptions aux référents autorisés. Le filtre de référent empêche les requêtes provenant de référents de la liste identifiés par l’identifiant de liste d’appeler toute ressource sur le serveur Forms.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’identifiant de la liste des exceptions aux référents autorisés. Le filtrage des référents empêche les requêtes provenant de référents de la liste identifiée par l’identifiant de la liste d’appeler toute ressource du serveur Forms Server.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** est l’ID de la liste des URI autorisés. Le filtrage des référents ne bloque pas les requêtes concernant les ressources de la liste identifiées par l’ID de liste, quelle que soit la valeur de l’en-tête référent dans la requête.
 
@@ -837,7 +837,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
     <ul> 
      <li><p>Applications clientes de services web telles que les applications .NET.</p> </li> 
      <li><p>Adobe Reader® utilise SOAP pour les services web du serveur AEM Forms on JEE.</p> </li> 
-     <li><p>Les applications Adobe Flash® utilisent SOAP pour les services Web de Forms Server</p> </li> 
+     <li><p>Les applications Adobe Flash® utilisent SOAP pour les services web Forms Server.</p> </li> 
      <li><p>Appels SDK AEM Forms on JEE en mode SOAP.</p> </li> 
      <li><p>Environnement de conception de Workbench.</p> </li> 
     </ul> </td> 
@@ -955,7 +955,7 @@ Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE,
 
 ### Configuration de SSL {#configuring-ssl}
 
-Référence à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), vous devez configurer SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
+En vous référant à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), configurez SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs et des utilisatrices soient exposées sur un réseau.
 
 Pour obtenir des instructions sur la manière de configurer SSL sur JBoss, WebLogic et WebSphere, consultez « Configuration de SSL » dans l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_64_fr).
 
@@ -997,7 +997,7 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
 
 #### Exécution du serveur d’applications à l’aide d’un compte non administratif spécifique {#run-the-application-server-using-a-non-administrative-account}
 
-1. Dans Microsoft Management Console (MMC), créez un utilisateur local pour que le service Forms Server se connecte en tant que :
+1. Dans Microsoft Management Console (MMC), créez un utilisateur local ou une utilisatrice locale que le service Forms Server peut utiliser pour se connecter :
 
    * Sélectionnez **L’utilisateur ne peut pas changer de mot de passe**.
    * Vérifiez que le groupe Utilisateurs figure dans l’onglet **Membre de**.
@@ -1005,7 +1005,7 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
 1. Sélectionnez **Paramètres** > **Outils d’administration** > **Services**.
 1. Cliquez deux fois sur le service de serveur d’applications et arrêtez ce service.
 1. Sur l’onglet **Connexion**, sélectionnez **Ce compte**, recherchez le compte d’utilisateur que vous avez créé et saisissez le mot de passe du compte.
-1. Dans la fenêtre Paramètres de sécurité locaux, sous Attribution des droits utilisateur , attribuez les droits suivants au compte utilisateur sous lequel le serveur Forms est exécuté :
+1. Dans la fenêtre Paramètres de sécurité locaux, dans Attribution des droits utilisateur, attribuez les droits suivants au compte d’utilisateur avec lequel est exécuté le serveur Forms Server :
 
    * Interdire l’ouverture de session par les services Terminal
    * Interdire l’ouverture d’une session locale
@@ -1043,7 +1043,7 @@ AEM Forms sur JEE utilise le système de fichiers comme suit :
 * stocke dans une banque d’archivage globale les fichiers utilisés pour prendre en charge les composants de la solution qui sont installés ;
 * les dossiers de contrôle stockent les fichiers utilisés en entrée dans un service à partir d’un emplacement de dossier du système de fichiers.
 
-Lorsque vous utilisez des dossiers de contrôle comme moyen d’envoyer et de recevoir des documents avec un service de serveur Forms, prenez des précautions supplémentaires avec la sécurité du système de fichiers. Lorsqu’un utilisateur ou une utilisatrice dépose des contenus dans le dossier de contrôle, ces contenus sont exposés via le dossier de contrôle. Dès lors, le service n’authentifie pas l’utilisateur final réel ou l’utilisatrice finale réelle. Au lieu de cela, il considère que la sécurité par liste de contrôle d’accès et par niveau de dossier a été définie au niveau des dossiers pour déterminer qui peut effectivement appeler le service.
+Lorsque vous utilisez des dossiers de contrôle comme moyen d’envoi et de réception de documents avec un service Forms Server, soyez très prudent quant à la sécurité du système de fichiers. Lorsqu’un utilisateur ou une utilisatrice dépose des contenus dans le dossier de contrôle, ces contenus sont exposés via le dossier de contrôle. Dès lors, le service n’authentifie pas l’utilisateur final réel ou l’utilisatrice finale réelle. Au lieu de cela, il considère que la sécurité par liste de contrôle d’accès et par niveau de dossier a été définie au niveau des dossiers pour déterminer qui peut effectivement appeler le service.
 
 ## Recommandations de sécurité spécifiques à JBoss {#jboss-specific-security-recommendations}
 

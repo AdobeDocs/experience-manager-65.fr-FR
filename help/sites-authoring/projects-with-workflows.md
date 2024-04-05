@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Cette section décrit les workflows disponibles pour les projets.
 
 Ce workflow permet de demander un manuscrit à un utilisateur ou une utilisatrice, puis de l’approuver. Pour démarrer le workflow de demande de copie :
 
-1. Dans un projet de média, cliquez sur le chevron descendant en haut à droite de la page **Workflows** mosaïque et sélectionnez **Démarrer le processus**.
+1. Dans un projet multimédia, cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Demander la copie** et cliquez sur **Suivant**.
 1. Saisissez un titre de manuscrit et un bref résumé de ce que vous demandez. Le cas échéant, entrez le nombre de mots cibles, la priorité de tâche et la date d’échéance.
 
@@ -78,7 +78,7 @@ Les workflows **Séance photo du produit** (avec commerce et sans commerce) sont
 
 Dans le workflow d’**approbation de projet**, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
 
-1. Dans un projet simple, cliquez sur le chevron vers le bas situé en haut à droite de la page **Workflows** mosaïque et sélectionnez **Démarrer le processus**.
+1. Dans un projet simple, cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Workflow d’approbation de projet** et cliquez sur **Suivant**.
 1. Saisissez un titre et sélectionnez la personne à qui l’affecter. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
 
@@ -92,7 +92,7 @@ Le workflow commence. La tâche apparaît sur la carte **Tâches**.
 
 Ce workflow vous permet de demander un lancement.
 
-1. Dans un projet simple, cliquez sur le chevron vers le bas situé en haut à droite de la page **Workflows** mosaïque et sélectionnez **Démarrer le processus**.
+1. Dans un projet simple, cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Workflow de lancement de requête** et cliquez sur **Suivant**.
 1. Saisissez un titre pour le lancement et indiquez le chemin d’accès source de ce dernier. Vous pouvez également ajouter une description et une date d’activation, le cas échéant. Sélectionnez Hériter des données actives de la page source ou excluez des sous-pages selon le comportement souhaité du lancement.
 
@@ -106,7 +106,7 @@ Le workflow commence. Le workflow apparaît dans la liste **Workflows**.
 
 Ce workflow vous permet de demander une page de destination.
 
-1. Dans un projet simple, cliquez sur le chevron vers le bas situé en haut à droite de la page **Workflows** mosaïque et sélectionnez **Démarrer le processus**.
+1. Dans un projet simple, cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Demander la page de destination** et cliquez sur **Suivant**.
 1. Saisissez un titre pour votre page de destination et le chemin parent. Le cas échéant, saisissez une date d’activation ou choisissez un fichier pour votre page de destination.
 
@@ -120,9 +120,9 @@ Le workflow commence. La tâche apparaît sur la carte **Tâches**.
 
 Ce workflow permet de demander un e-mail. Il s’agit du même workflow qui apparaît dans la vignette **E-mails**.
 
-1. Dans un projet simple, cliquez sur le chevron vers le bas situé en haut à droite de la page **Workflows** mosaïque et sélectionnez **Démarrer le processus**.
+1. Dans un projet simple, cliquez sur le chevron descendant en haut à droite de la mosaïque **Workflows** et sélectionnez **Démarrer le workflow**.
 1. Dans l’assistant de workflow, sélectionnez **Demander l’e-mail** et cliquez sur **Suivant**.
-1. Saisissez un titre d’email, ainsi que les chemins d’accès aux campagnes et aux modèles. En outre, vous pouvez fournir un nom, une description et une date d’activation.
+1. Saisissez un titre d’e-mail et les chemins d’accès aux campagnes et aux modèles. En outre, vous pouvez fournir un nom, une description et une date d’activation.
 
    ![Workflow de demande d’e-mail](assets/project-request-email-workflow.png)
 

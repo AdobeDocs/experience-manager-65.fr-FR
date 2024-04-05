@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2093'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 
 >[!NOTE]
 >
->La configuration d’AEM est simple. Cependant, certaines modifications peuvent avoir un impact majeur sur les applications. Pour cette raison, assurez-vous de disposer de l’expérience et des connaissances nécessaires avant de commencer à configurer AEM et n’apportez que les modifications que vous savez requises. Toutes les modifications effectuées via la console OSGi sont **immédiatement** appliquées au système en cours d’exécution (aucun redémarrage n’est requis).
+>La configuration d’AEM est simple. Certaines modifications peuvent toutefois avoir un impact majeur sur les applications. Pour cette raison, assurez-vous de disposer de l’expérience et des connaissances nécessaires avant de commencer à configurer AEM et n’apportez que les modifications que vous savez requises. Toutes les modifications effectuées via la console OSGi sont **immédiatement** appliquées au système en cours d’exécution (aucun redémarrage n’est requis).
 
 ## Considérations relatives à la configuration principale {#primary-configuration-considerations}
 
@@ -118,7 +118,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres globaux pour le service de journalisation centrale
 * la journalisation des données de requête ; une configuration de journalisation spécialisée pour les informations de requête
-* des paramètres spécifiques pour les services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
+* des paramètres spécifiques pour les services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Consultez [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
 
@@ -288,7 +288,7 @@ Pour plus d’informations, consultez [Principes de base de la personnalisation 
 
 CQ envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 
-* ont souscrit aux événements de page, par exemple la modification ou la réplication ;
+* Ont souscrit à des événements de page, par exemple une modification ou une réplication.
 * Ont souscrit aux événements de forum.
 * doivent effectuer une opération dans un workflow.
 

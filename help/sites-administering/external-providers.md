@@ -1,6 +1,6 @@
 ---
 title: Analytics avec des fournisseurs externes
-description: Découvrez comment configurer votre propre instance de fragments de code Analytics générique pour définir une nouvelle configuration de service.
+description: Découvrez comment configurer votre propre instance d’extraits de code Analytics génériques pour définir une nouvelle configuration de service.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Différentes configurations sont disponibles par défaut pour l’intégration a
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Vous pouvez également configurer votre propre instance de la variable **Fragments de code Analytics générique** pour définir une nouvelle configuration de service.
+Vous pouvez également configurer votre propre instance d’**extraits de code Analytics génériques** pour définir une nouvelle configuration de service.
 
-Les informations sont ensuite collectées par de petits fragments de code ajoutés aux pages web. Par exemple :
+Les informations sont alors collectées au moyen de petits extraits de code, qui sont ajoutés à des pages web. Par exemple :
 
 >[!CAUTION]
 >
->Ne pas placer de scripts dans `script` balises.
+>Ne pas inclure de scripts dans les balises `script`.
 
 ```
 var _gaq = _gaq || [];
@@ -45,36 +45,36 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Ces fragments de code permettent de collecter des données et de générer des rapports. Les données réelles collectées dépendent du fournisseur et du fragment de code réel utilisé. Voici des exemples de statistiques :
+Ces fragments de code permettent de collecter des données et de générer des rapports. Les données réelles collectées dépendent du fournisseur et du fragment de code réel utilisé. Voici des exemples de statistiques :
 
-* combien de visiteurs au fil du temps
+* le nombre de visiteurs et visiteuses au fil du temps
 * le nombre de pages visitées
-* termes de recherche utilisés
-* landing pages
+* les termes de recherche utilisés
+* les pages de destination
 
 >[!CAUTION]
 >
->Le site de démonstration de Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise `</html>` (balise de fin) dans la balise `js` script.
+>Le site de démonstration de Geometrixx-Outdoors est configuré de manière à ajouter les attributs indiqués dans Propriétés de la page au code source html (juste avant la balise de fin `</html>`) dans le script `js` correspondant.
 >
->Si vous le souhaitez `/apps` n’héritez pas du composant de page par défaut ( `/libs/foundation/components/page`) vous (ou vos développeurs) devez vous assurer que la variable `js` les scripts sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents`ou en utilisant un mécanisme similaire.
+>Si votre propre dossier `/apps` n’hérite pas du composant Page par défaut (`/libs/foundation/components/page`), vous (ou les développeurs et développeuses) devez vous assurer que les scripts `js` sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents` ou en utilisant un mécanisme similaire.
 >
->Sans cela, aucun des services (Générique, Analytics, Target, etc.) ne fonctionnera.
+>Autrement, aucun des services (Générique, Analytics, Target, etc.) ne fonctionnera.
 
-## Création d’un service avec un fragment de code générique {#creating-a-new-service-with-a-generic-snippet}
+## Création d’un service à l’aide d’un extrait de code générique {#creating-a-new-service-with-a-generic-snippet}
 
 Pour la configuration de base, suivez les étapes suivantes :
 
 1. Ouvrez la console **Outils**.
-1. Dans le volet de gauche, développez **Configurations de Cloud Service**.
-1. Double-cliquez **Fragment de code Analytics générique** pour ouvrir la page :
+1. Dans le volet de gauche, développez les **Configurations des Services cloud**.
+1. Double-cliquez sur **Extrait de code Analytics générique** pour ouvrir la page :
 
-   ![Fragment de code Analytics générique](assets/analytics_genericoverview.png)
+   ![Extrait de code Analytics générique](assets/analytics_genericoverview.png)
 
-1. Cliquez sur + pour ajouter une nouvelle configuration à l’aide de la boîte de dialogue. Attribuez au minimum un nom, par exemple Google Analytics :
+1. Cliquez sur + pour ajouter une nouvelle configuration à l’aide de la boîte de dialogue. Attribuez au minimum un nom, par exemple Google Analytics :
 
    ![Création d’une configuration](assets/analytics_addconfig.png)
 
-1. Cliquez sur **Créer**, la boîte de dialogue Fragment de code s’ouvre immédiatement. Collez le fragment de code JavaScript approprié dans le champ :
+1. Cliquez sur **Créer**, la boîte de dialogue Extrait de code s’affiche immédiatement. Collez l’extrait de code JavaScript approprié dans le champ :
 
    ![Modification du composant](assets/analytics_snippet.png)
 
@@ -82,24 +82,24 @@ Pour la configuration de base, suivez les étapes suivantes :
 
 ## Utilisation de votre nouveau service dans des pages {#using-your-new-service-on-pages}
 
-Après avoir créé la configuration du service, vous devez configurer les pages requises pour l’utiliser :
+Après avoir créé la configuration de service, vous devez maintenant configurer les pages nécessaires pour l’utiliser :
 
 1. Accédez à la page.
 1. Ouvrez les **Propriétés de page** dans le sidekick, puis l’onglet **Services cloud**.
-1. Cliquez sur **Ajouter un service**, puis sélectionnez le service requis. Par exemple, la variable **Fragment de code Analytics générique**:
+1. Cliquez sur **Ajouter un service**, puis sélectionnez le service requis. Par exemple, l’**extrait de code Analytics générique** :
 
    ![Ajout d’un service cloud](assets/analytics_selectservice.png)
 
 1. Cliquez sur **OK** pour enregistrer.
-1. Vous revenez alors à la variable **Cloud Service** . Le **fragment de code Analytics générique** figure maintenant dans la liste avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique. Par exemple, google-analytics :
+1. Vous revenez à l’onglet **Services cloud**. L’**extrait de code Analytics générique** figure maintenant dans la liste avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique. Par exemple, google-analytics :
 
-   ![Ajout de la configuration du service cloud](assets/analytics_selectspecificservice.png)
+   ![Ajout d’une configuration de service cloud](assets/analytics_selectspecificservice.png)
 
 1. Cliquez sur **OK** pour enregistrer.
 
-   Le fragment de code s’affiche désormais si vous affichez la source de la page.
+   L’extrait de code est désormais visible si vous affichez la source de la page.
 
-   Une fois le temps écoulé, vous pouvez afficher les statistiques collectées.
+   Après un certain laps de temps, vous pouvez afficher les statistiques collectées.
 
    >[!NOTE]
    >

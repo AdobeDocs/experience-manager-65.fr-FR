@@ -11,19 +11,19 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1646'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’éditeur de SPA et de la synchronisation entre le framework SPA et AEM.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -44,7 +44,7 @@ Le composant de page d’une application sur une seule page ne fournit pas les c
 
 ### Gestion du modèle de page {#page-model-management}
 
-La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. Le SPA doit utiliser la bibliothèque de modèle de page pour être initialisé et créé par l’éditeur SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajouté pour activer la communication avec l’éditeur de page.
+La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. La SPA doit utiliser la bibliothèque de modèle de page pour pouvoir être initialisée et créée par l’éditeur de SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
@@ -156,7 +156,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Voir [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) au minimum que vous devez savoir pour que la vôtre soit opérationnelle.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -169,7 +169,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Voir [Blueprint SPA](/help/sites-developing/spa-blueprint.md) pour les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le [Plan directeur d’applications monopages (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’un framework doit satisfaire pour créer une couche spécifique composée des modules, composants et services nécessaires pour travailler avec l’éditeur de SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
@@ -179,7 +179,7 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
-1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. S’il existe un exemple de contenu du journal WKND, il s’agit d’un `<div>` et le sélecteur utilisé est `data-rte-editelement`.
+1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du contenu d’exemple Journal WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
 Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu Journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
@@ -196,6 +196,6 @@ Le SDK de l’éditeur de SPA d’AEM a été introduit avec le pack de services
 * Modification des configurations (ex. listeners)
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
-* Fonctionnalités de réécriture de HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
+* Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
 * Mode Développeur
 * Lancements AEM

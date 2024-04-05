@@ -1,12 +1,12 @@
 ---
 title: Gestion de projets de traduction
-description: Découvrez comment gérer des projets de traduction dans Adobe Experience Manager.
+description: Découvrez comment gérer des projets de traduction dans Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3506'
-ht-degree: 81%
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Sélectionnez Copies de langue, puis sélectionnez les copies de langue pour lesquelles vous traduisez les pages source.
-1. Cliquez sur Créer et traduire , puis configurez la tâche de traduction :
+1. Cliquez sur Créer et traduire, puis configurez la tâche de traduction :
 
    * Utilisez la liste déroulante Langues pour sélectionner une copie de langue à traduire. Sélectionnez d’autres langues, au besoin. Les langues qui apparaissent dans la liste correspondent aux [racines de langue que vous avez créées](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
@@ -108,7 +108,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Sélectionnez Copies de langue, puis sélectionnez les copies de langue pour lesquelles vous traduisez les pages source.
-1. Cliquez sur Mettre à jour les copies de langue , puis configurez la tâche de traduction :
+1. Cliquez sur Mettre à jour des copies de langue, puis configurez la tâche de traduction :
 
    * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour les projets, sélectionnez Créer un projet de traduction.
@@ -124,7 +124,7 @@ Après avoir créé un projet de traduction, vous pouvez utiliser le volet Resso
 
 Lorsque vous ajoutez des pages à un projet de traduction, les pages sont incorporées à une nouvelle tâche de traduction. Vous pouvez également [ajouter des pages à une tâche existante](#adding-pages-assets-to-a-translation-job).
 
-Comme lors de la création d’un projet, lors de l’ajout de pages, des copies des pages sont ajoutées à un lancement si nécessaire afin d’éviter de remplacer des copies de langue existantes. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
+Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des copies de pages sont ajoutées à un lancement, si nécessaire, afin d’éviter de remplacer des copies de langue. (Voir [Création de projets de traduction pour des copies de langue existantes](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Utilisez la console Sites pour sélectionner la page que vous ajoutez au projet de traduction.
 
@@ -138,7 +138,7 @@ Comme lors de la création d’un projet, lors de l’ajout de pages, des copies
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Cliquez sur Mettre à jour les copies de langue , puis configurez les propriétés :
+1. Cliquez sur Mettre à jour les copies de langue, puis configurez les propriétés :
 
    * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour le projet, sélectionnez Ajouter à un projet de traduction existant.
@@ -156,15 +156,15 @@ Comme lors de la création d’un projet, lors de l’ajout de pages, des copies
 
 Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter des pages ou des ressources, procédez comme suit :
 
-1. Au bas de la mosaïque Tâche de traduction de votre projet de traduction, cliquez sur les points de suspension.
+1. Dans la partie inférieure de la vignette Tâche de traduction du projet de traduction, cliquez sur le bouton représentant des points de suspension.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Cliquez sur Ajouter et Pages/Ressources.
+1. Cliquez sur Ajouter et Pages/ressources.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Sélectionnez l’élément le plus en haut de la branche que vous souhaitez ajouter, puis cliquez sur l’icône en forme de coche. Vous pouvez effectuer une sélection multiple.
+1. Sélectionnez l’élément le plus élevé de la branche à ajouter, puis cliquez sur l’icône de coche. Vous pouvez effectuer une sélection multiple.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -178,15 +178,15 @@ Les pages et/ou les ressources sont ajoutées à la tâche de traduction.
 
 Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter un dictionnaire i18n :
 
-1. Au bas de la mosaïque Tâche de traduction de votre projet de traduction, cliquez sur les points de suspension.
+1. Dans la partie inférieure de la vignette Tâche de traduction du projet de traduction, cliquez sur le bouton représentant des points de suspension.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Cliquez sur Ajouter et I18N-Dictionary.
+1. Cliquez sur Ajouter et dictionnaire I18N.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Sélectionnez le dictionnaire à ajouter, puis cliquez sur le bouton Ajouter .
+1. Sélectionnez le dictionnaire à ajouter, puis cliquez sur le bouton Ajouter.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -202,15 +202,15 @@ Le dictionnaire se trouve maintenant dans la tâche de traduction.
 
 Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter des balises :
 
-1. Au bas de la mosaïque Tâche de traduction de votre projet de traduction, cliquez sur les points de suspension.
+1. Dans la partie inférieure de la vignette Tâche de traduction du projet de traduction, cliquez sur le bouton représentant des points de suspension.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Cliquez sur Ajouter , puis sur Balises.
+1. Cliquez sur Ajouter, puis sur Balises.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Sélectionnez les balises à ajouter, puis cliquez sur l’icône en forme de coche. Vous pouvez effectuer une sélection multiple.
+1. Sélectionnez les balises à ajouter, puis cliquez sur l’icône de coche. Vous pouvez effectuer une sélection multiple.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -235,7 +235,7 @@ Lors de la création d’un projet à l’aide du volet Ressources d’une page,
 
 ## Suivi du statut d’une tâche de traduction {#monitoring-the-status-of-a-translation-job}
 
-La mosaïque Tâche de traduction d’un projet de traduction indique l’état d’une tâche de traduction, ainsi que le nombre de pages et de ressources de la tâche.
+La vignette Tâche de traduction d’un projet de traduction fournit le statut d’une tâche de traduction, ainsi que le nombre de pages et les ressources de la tâche.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -256,7 +256,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 | Erreur de mise à jour | Une erreur s’est produite lors du transfert de fichiers entre AEM et le service de traduction. |
 | Statut indéterminé | Une erreur inconnue est survenue. |
 
-Pour afficher l’état de chaque fichier dans la tâche, cliquez sur les points de suspension en bas de la mosaïque.
+Pour afficher le statut des différents fichiers de la tâche, cliquez sur les trois points au bas de la vignette.
 
 ## Définition du délai des tâches de traduction {#setting-the-due-date-of-translation-jobs}
 
@@ -269,7 +269,7 @@ La définition du délai ne fonctionne correctement que lorsque le fournisseur d
 
 La procédure suivante définit la date d’échéance d’un projet.
 
-1. Cliquez sur les points de suspension en bas de la mosaïque Résumé de traduction .
+1. Cliquez sur le bouton représentant des points de suspension de la vignette Résumé de traduction.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -281,11 +281,11 @@ La procédure suivante définit la date d’échéance d’un projet.
 
 La procédure suivante définit la date d’échéance d’une tâche de traduction.
 
-1. Sur la mosaïque Tâche de traduction , cliquez sur le menu Commandes, puis sur Échéance.
+1. Sur la vignette Tâche de traduction, cliquez le menu Commandes, puis sur Date d’échéance.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. Dans la boîte de dialogue, cliquez sur l’icône du calendrier, sélectionnez la date et l’heure à utiliser comme date d’échéance, puis cliquez sur Enregistrer.
+1. Dans la boîte de dialogue, cliquez sur l’icône de calendrier, sélectionnez la date et l’heure à utiliser comme date d’échéance, puis cliquez sur Enregistrer.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -304,11 +304,11 @@ Lorsque vous définissez la portée d’une tâche de traduction, le statut de l
 La définition de la portée ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
 1. Dans la console Projets, ouvrez votre projet de traduction.
-1. Sur la mosaïque Tâche de traduction , cliquez sur le menu Commandes, puis sur Portée de la requête.
+1. Sur la vignette Tâche de traduction, cliquez le menu Commandes, puis sur Portée de la requête.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Lorsque l’état de la tâche passe à SCOPE_COMPLETED, dans la mosaïque Tâche de traduction, cliquez sur le menu Commandes, puis sur Afficher la portée.
+1. Lorsque le statut de la tâche devient SCOPE_COMPLETED, cliquez sur le menu Commandes dans la vignette Tâche de traduction, puis cliquez sur Afficher la portée.
 
 ## Commencer une tâche de traduction {#starting-a-translation-job}
 
@@ -319,7 +319,7 @@ Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. Dans la console Projets, ouvrez le projet de traduction.
-1. Sur la mosaïque Tâche de traduction , cliquez sur le menu Commandes, puis sur Démarrer.
+1. Sur la vignette Tâche de traduction, cliquez le menu Commandes, puis sur Démarrer.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
@@ -330,7 +330,7 @@ Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de
 Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche dispose du statut `Committed For Translation` ou `Translation In Progress`.
 
 1. Dans la console Projets, ouvrez le projet de traduction.
-1. Sur la mosaïque Tâche de traduction , cliquez sur le menu Commandes, puis sur Annuler.
+1. Sur la vignette Tâche de traduction, cliquez le menu Commandes, puis sur Annuler.
 1. Dans la boîte de dialogue Action qui confirme l’annulation de la traduction, cliquez sur OK.
 
 ## Workflow Accepter/Rejeter {#accept-reject-workflow}
@@ -351,18 +351,18 @@ Lorsque le contenu est traduit pour une copie de langue existante, révisez les 
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Sélectionnez la page dans le gabarit de langue, cliquez sur Références, puis sur Copies de langue.
+1. Sélectionnez la page dans le gabarit de langue, cliquez sur Référence, puis sur Copies de langue.
 1. Cliquez sur la copie de langue à réviser.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Cliquez sur Lancer pour afficher les commandes liées au lancement.
+1. Cliquez sur Lancement pour afficher les commandes liées au lancement.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Pour ouvrir la copie de lancement de la page pour réviser et modifier le contenu, cliquez sur Ouvrir la page.
 1. Après avoir révisé le contenu et apporté les modifications nécessaires, pour convertir la copie du lancement, cliquez sur Convertir.
-1. Sur la page Convertir le lancement , spécifiez les pages à convertir, puis cliquez sur Convertir.
+1. Dans la page Promouvoir le lancement, spécifiez les pages à convertir, puis cliquez sur Convertir.
 
 ## Comparaison des copies de langue {#comparing-language-copies}
 
@@ -402,7 +402,7 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Cliquez sur Mettre à jour les copies de langue pour afficher les outils de traduction et configurer les propriétés :
+1. Cliquez sur Mettre à jour des copies de langue pour afficher les outils de traduction et configurez les propriétés :
 
    * Sélectionnez l’option Sélectionner toutes les pages secondaires.
    * Pour un Projet, sélectionnez Créer uniquement la structure.
@@ -413,7 +413,7 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page une fois le déplacement effectué crée une copie de langue basée sur le nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
+Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
 
 1. Déplacez une page qui comporte une copie de langue.
 1. Sélectionnez la racine de la copie de langue.
@@ -430,9 +430,9 @@ Si une page source déjà traduite doit être [renommé ou déplacé](/help/site
 
    ![promote-launch-translation](assets/promote-launch-translation.png)
 
-1. Cliquez sur le lancement qui a été créé, puis sur **Convertir le lancement**.
+1. Cliquez sur le lancement que avez créé, puis sur **Promouvoir le lancement**.
 
-Désormais, la page source a été déplacée et la copie de langue associée.
+Désormais, la page source a été déplacée, ainsi que la copie de langue associée.
 
 ## Création d’un projet de traduction à l’aide de la console Projets {#creating-a-translation-project-using-the-projects-console}
 
@@ -444,29 +444,29 @@ Vous pouvez créer manuellement un projet de traduction si vous préférez utili
 
 Lorsque vous créez manuellement un projet de traduction, vous devez fournir des valeurs pour les propriétés associées à la traduction ci-dessous en complément des [propriétés de base](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) :
 
-* **Nom :** Nom du projet.
+* **Nom** : nom du projet.
 * **Langue source** : langue du contenu source.
 * **Langue cible** : langue vers laquelle le contenu est traduit.
 * **Méthode de conversion** : sélectionnez Traduction humaine pour indiquer que la traduction doit être effectuée manuellement.
 
 1. Dans la barre d’outils de la console Projets, cliquez sur Créer.
-1. Sélectionnez le modèle Projet de traduction , puis cliquez sur Suivant.
+1. Sélectionnez le modèle Projet de traduction, puis cliquez sur Suivant.
 1. Saisissez les valeurs pour les propriétés de base.
-1. Cliquez sur Avancé et indiquez des valeurs pour les propriétés liées à la traduction.
-1. Cliquez sur Créer. Dans la boîte de confirmation, cliquez sur Terminé pour revenir à la console Projets ou cliquez sur Ouvrir le projet pour ouvrir et commencer à gérer le projet.
+1. Cliquez sur Avancé et saisissez les valeurs pour les propriétés liées à la traduction.
+1. Cliquez sur Créer. Dans la boîte de dialogue de confirmation, cliquez sur Terminé pour revenir à la console Projets, ou cliquez sur Ouvrir un projet pour ouvrir le projet et commencer à le gérer.
 
 ## Exportation d’une tâche de traduction {#exporting-a-translation-job}
 
-Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM via un connecteur, ou pour revoir le contenu.
+Vous pouvez télécharger le contenu d’une tâche de traduction, par exemple, pour l’envoyer à un fournisseur de traduction qui n’est pas intégré à AEM par le biais d’un connecteur ou pour réviser le contenu.
 
-1. Dans le menu déroulant de la mosaïque Tâche de traduction , cliquez sur Exporter.
-1. Dans la boîte de dialogue Exporter, cliquez sur Télécharger le fichier exporté et, au besoin, utilisez la boîte de dialogue du navigateur Web pour enregistrer le fichier.
+1. Dans le menu déroulant de la vignette Tâche de traduction, cliquez sur Exporter.
+1. Dans la boîte de dialogue Exporter, cliquez sur Télécharger le fichier exporté et, si nécessaire, utilisez la boîte de dialogue du navigateur web pour enregistrer le fichier.
 1. Dans la boîte de dialogue Exporter, cliquez sur Fermer.
 
 ## Importation d’une tâche de traduction {#importing-a-translation-job}
 
-Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM via un connecteur.
+Vous pouvez importer du contenu traduit dans AEM, par exemple, lorsque votre fournisseur de traduction vous l’envoie, car il n’est pas intégré à AEM par le biais d’un connecteur.
 
-1. Dans le menu déroulant de la mosaïque Tâche de traduction, cliquez sur Importer.
+1. Dans le menu déroulant de la vignette Tâche de traduction, cliquez sur Importer.
 1. Utilisez la boîte de dialogue du navigateur web pour sélectionner le fichier à importer.
 1. Dans la boîte de dialogue Importer, cliquez sur Fermer.

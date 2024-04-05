@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4520'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Bien que toutes les requêtes soient converties en SQL2 avant d’être exécut�
 
 ### Outil Expliquer la requête {#the-explain-query-tool}
 
-Comme pour tout langage de requête, la première étape pour optimiser une requête consiste à comprendre comment elle sera exécutée. Pour effectuer cette activité, vous pouvez utiliser l’[outil Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) qui fait partie du tableau de bord des opérations. Grâce à cet outil, une requête peut être expliquée. Un avertissement s’affiche si la requête entraîne des problèmes avec un référentiel volumineux et l’heure d’exécution, ainsi que les index utilisés. L’outil peut également charger une liste de requêtes lentes et populaires qui peuvent ensuite être expliquées et optimisées.
+Comme pour tout langage de requête, la première étape pour optimiser une requête consiste à comprendre comment elle sera exécutée. Pour effectuer cette activité, vous pouvez utiliser l’[outil Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) qui fait partie du tableau de bord des opérations. Grâce à cet outil, une requête peut être expliquée. Un avertissement s’affiche si la requête entraîne des problèmes avec un référentiel volumineux, ainsi que le temps d’exécution et les index qui seront utilisés. L’outil peut également charger une liste de requêtes lentes et populaires qui peuvent ensuite être expliquées et optimisées.
 
 ### Journalisation DEBUG pour les requêtes {#debug-logging-for-queries}
 
@@ -106,13 +106,13 @@ Lucene enregistre un bean JMX qui fournit des détails sur le contenu indexé, y
 
 Vous pouvez le consulter en accédant à la console JMX à l’adresse `https://server:port/system/console/jmx`.
 
-Une fois connecté à la console JMX, recherchez **Statistiques de l’index Lucene** pour le trouver. D’autres statistiques d’index sont disponibles dans le MBean **IndexStats**.
+Une fois la connexion à la console JMX effectuée, recherchez les **Statistiques de l’index Lucene** pour le trouver. D’autres statistiques d’index sont disponibles dans le MBean **IndexStats**.
 
 Pour les statistiques de requête, consultez le MBean nommé **Statistiques de requête Oak**.
 
-Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/archive/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour obtenir des instructions sur la façon de procéder, lisez la section [Documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/archive/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour obtenir des instructions sur la façon de procéder, consultez la [documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Vous pouvez également extraire les index de votre système au format JSON. Pour cela, vous devez accéder à `https://server:port/oak:index.tidy.-1.json`
+Vous pouvez également extraire les index de votre système au format JSON. Pour ce faire, accédez à `https://server:port/oak:index.tidy.-1.json`.
 
 ### Limites des requêtes {#query-limits}
 
@@ -159,7 +159,7 @@ En outre, les index ne sont utiles que si les données contenues dans ceux-ci so
 
 Les index Lucene ont été introduits dans Oak 1.0.9 et proposent de puissantes optimisations par rapport aux index de propriété introduits lors du lancement initial d’AEM 6. Lorsque vous décidez d’utiliser des index Lucene ou des index de propriété, veuillez tenir compte des points suivants :
 
-* Les index Lucene proposent bien plus de fonctionnalités que les index de propriété. Par exemple, un index de propriété ne peut indexer qu’une seule propriété, tandis qu’un index Lucene peut en inclure plusieurs. Pour plus d’informations sur toutes les fonctionnalités disponibles dans les index Lucene, consultez la section [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Les index Lucene proposent bien plus de fonctionnalités que les index de propriété. Par exemple, un index de propriété ne peut indexer qu’une seule propriété, tandis qu’un index Lucene peut en inclure plusieurs. Pour plus d’informations sur toutes les fonctionnalités disponibles dans les index Lucene, veuillez consulter la [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Les index Lucene sont asynchrones. Bien que cela représente une amélioration considérable des performances, cela peut également entraîner un délai entre le moment où les données sont écrites dans le référentiel et celui où l’index est mis à jour. S’il est essentiel que les requêtes renvoient des résultats 100 % exacts, un index de propriété est requis.
 * Étant asynchrones, les index Lucene ne peuvent pas imposer des contraintes d’unicité. Si leur utilisation est un impératif, un index de propriété doit être créé.
 
@@ -167,7 +167,7 @@ En règle générale, il est recommandé d’utiliser les index Lucene à moins 
 
 ### Indexation Solr {#solr-indexing}
 
-AEM prend également en charge l’indexation Solr par défaut. Il est utilisé pour prendre en charge la recherche de texte intégral, mais il peut également être utilisé pour prendre en charge n’importe quel type de requête JCR. Solr doit être pris en compte lorsque les instances AEM n’ont pas la capacité du processeur pour gérer le nombre de demandes requises dans les déploiements intensifs en recherche, tels que les sites web pilotés par la recherche avec un grand nombre d’utilisateurs et d’utilisatrices en même temps. Alternativement, Solr peut être implémenté dans une approche basée sur un robot d’exploration pour tirer parti de certaines des fonctionnalités les plus avancées de la plateforme.
+AEM prend également en charge l’indexation Solr par défaut. L’outil prend en charge la recherche de texte intégral, mais aussi tout type de requête JCR. Solr doit être pris en compte lorsque les instances AEM n’ont pas la capacité du processeur pour gérer le nombre de demandes requises dans les déploiements intensifs en recherche, tels que les sites web pilotés par la recherche avec un grand nombre d’utilisateurs et d’utilisatrices en même temps. Alternativement, Solr peut être implémenté dans une approche basée sur un robot d’exploration pour tirer parti de certaines des fonctionnalités les plus avancées de la plateforme.
 
 Les index Solr peuvent être configurés pour être exécutés de manière intégrée sur le serveur AEM pour les environnements de développement ou peuvent être déchargés sur une instance distante afin d’améliorer l’évolutivité de la recherche dans les environnements de production et d’évaluation. Bien que la recherche de déchargement améliore l’évolutivité, elle introduit également une latence et elle n’est pour cette raison pas recommandée sauf si nécessaire. Pour plus d’informations sur la configuration de l’intégration Solr et sur la création d’index Solr, voir [Documentation sur l’indexation et les requêtes Oak](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
@@ -190,7 +190,7 @@ La documentation Oak pour les index Lucene répertorie plusieurs points à prend
 * Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. L’interrogation d’une propriété `nodeType` ou `mixin` spécifique est plus performante que celle d’une propriété `nt:base`. Si vous suivez cette approche, définissez `indexRules` pour les `nodeTypes` en question.
 
 * Si vos requêtes sont exécutées uniquement sous certains chemins, créez ces index sous ces chemins. Il n’est pas nécessaire que les index se trouvent à la racine du référentiel.
-* Utilisez un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer nativement autant de restrictions de propriété que possible. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
+* Utilisez un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer autant de restrictions de propriété que possible en mode natif. En outre, une requête n’utilise qu’un seul index, même lors de l’exécution d’une jointure.
 
 ### CopyOnRead {#copyonread}
 
@@ -298,7 +298,7 @@ Problèmes possibles et solutions :
 
       * Sinon, [réindexez](#how-to-re-index) l’index Lucene.
 
-         * Remarque : L’état de l’index de la dernière bonne réindexation (ou indexation initiale) est utilisé jusqu’au déclenchement d’une nouvelle réindexation.
+         * Remarque : l’état de l’index de la dernière bonne réindexation (ou l’indexation initiale) est utilisé jusqu’au déclenchement d’une nouvelle réindexation.
 
 ### Erreurs et situations exceptionnelles {#erring-and-exceptional-situations}
 
@@ -394,7 +394,7 @@ Problèmes possibles et solutions :
 #### Réindexation des index de propriété Lucene {#re-indexing-lucene-property-indexes}
 
 * Utilisez [oak-run.jar pour réindexer](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) l’index de propriété Lucene.
-* Définissez la propriété async-reindex sur true sur l’index de propriété Lucene.
+* Définissez la propriété async-reindex sur true dans l’index de propriété Lucene.
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
@@ -427,7 +427,7 @@ La pré-extraction de texte ne peut pas être utilisée pour un nouveau contenu 
 
 Le nouveau contenu est ajouté au référentiel. Il sera indexé de manière naturelle et incrémentielle par le processus d’indexation de texte intégral asynchrone (par défaut, toutes les 5 secondes).
 
-Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’interface utilisateur web ou en programmant l’ingestion des ressources, AEM indexe automatiquement et progressivement le nouveau contenu binaire. Étant donné que la quantité de données est incrémentielle et relativement petite (environ la quantité de données pouvant être conservées dans le référentiel en 5 secondes), AEM peut effectuer l’extraction de texte intégral à partir des fichiers binaires pendant l’indexation sans affecter les performances globales du système.
+Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’IU web ou en programmant l’ingestion des ressources, AEM indexe automatiquement et progressivement le nouveau contenu binaire en texte intégral. Étant donné que la quantité de données est incrémentielle et relativement petite (environ la quantité de données pouvant être conservées dans le référentiel en 5 secondes), AEM peut effectuer l’extraction de texte intégral à partir des fichiers binaires pendant l’indexation sans affecter les performances globales du système.
 
 #### Conditions préalables à l’utilisation de la pré-extraction de texte {#prerequisites-to-using-text-pre-extraction}
 

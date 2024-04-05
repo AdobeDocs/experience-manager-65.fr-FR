@@ -1,6 +1,6 @@
 ---
 title: Convertir des PDF en fichiers Postscript et dʼimage
-description: Utilisez le service Convert PDF pour convertir des documents de PDF en PostScript et dans plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF) à l’aide de l’API Java et de l’API Web Service.
+description: Utilisez le service Convert PDF pour convertir des documents PDF en PostScript et en plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF) à l’aide de l’API Java et de l’API de service web.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2774'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 **À propos du service Convert PDF**
 
-Le service Convert PDF convertit les documents du PDF en PostScript et en plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document de PDF en fichier de TIFF multi-pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents de PDF.
+Le service Convert PDF convertit des documents PDF en fichiers PostScript ou en plusieurs formats d’image (JPEG, JPEG 2000, PNG et TIFF). La conversion d’un document PDF en PostScript est utile pour les impressions sans assistance reposant sur un serveur exécutées sur n’importe quelle imprimante PostScript. La conversion d’un document PDF en fichier TIFF comportant plusieurs pages est pratique lors de l’archivage de documents dans des systèmes de gestion de contenu qui ne prennent pas en charge les documents PDF.
 
 Le service Convert PDF vous permet dʼeffectuer les tâches suivantes :
 
@@ -103,7 +103,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-convertpdf-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client PDF Convert.
 
@@ -118,11 +118,11 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 1. Définissez les options d’exécution de conversion.
 
    * Créez un objet `ToPSOptionsSpec` en utilisant son constructeur.
-   * Définissez les options d’exécution en appelant une méthode appropriée appartenant à l’objet `ToPSOptionsSpec`. Par exemple, pour définir le niveau PostScript créé, appelez la méthode `ToPSOptionsSpec` de `setPsLevel` et transmettre une `PSLevel` valeur d’énumération spécifiant le niveau PostScript. Pour plus d’informations sur toutes les valeurs d’exécution que vous pouvez définir, voir la référence de classe `ToPSOptionsSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Définissez les options d’exécution en appelant une méthode appropriée appartenant à l’objet `ToPSOptionsSpec`. Par exemple, pour définir le niveau PostScript créé, appelez la méthode `setPsLevel` de l’objet `ToPSOptionsSpec` et transmettez une valeur d’énumération `PSLevel` spécifiant le niveau PostScript. Pour plus d’informations sur toutes les valeurs d’exécution que vous pouvez définir, voir la référence de classe `ToPSOptionsSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Convertissez un document PDF en fichier PostScript.
 
-   Appeler la variable `ConvertPdfServiceClient`de `toPS2` et transmettez les valeurs suivantes :
+   Appelez la méthode `toPS2` de l’objet `ConvertPdfServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le document PDF à convertir en fichier PostScript.
    * Objet `ToPSOptionsSpec` spécifiant les options d’exécution PostScript.
@@ -132,7 +132,7 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
 1. Enregistrez le fichier PostScript.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est .ps.
-   * Appeler la variable `Document` de `copyToFile` pour copier le contenu de la méthode `Document` dans le fichier (assurez-vous d’utiliser la variable `Document` qui a été renvoyé par l’objet `toPS2` ).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` qui a été renvoyé par la méthode `toPS2`).
 
 **Voir également**
 
@@ -174,13 +174,13 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
    * Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker un document PDF converti en fichier PostScript.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne, qui représente l’emplacement du fichier du document PDF à convertir et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la variable `System.IO.FileStream` de `Read` et transmission du tableau d’octets, de la position de départ et de la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution de conversion.
 
    * Créez un objet `ToPSOptionsSpec` en utilisant son constructeur.
-   * Définissez les options d’exécution en attribuant une valeur à la variable `ToPSOptionsSpec` membre de données de l’objet. Par exemple, pour définir le niveau PostScript créé, affectez une `PSLevel` de la valeur de l’énumération `ToPSOptionsSpec` de `psLevel` membre de données.
+   * Définissez les options d’exécution en affectant une valeur au membre de données de l’objet `ToPSOptionsSpec`. Par exemple, pour définir le niveau PostScript créé, affectez une valeur d’énumération `PSLevel` au membre de données `psLevel` de l’objet `ToPSOptionsSpec`.
 
 1. Convertissez un document PDF en fichier PostScript.
 
@@ -189,14 +189,14 @@ Convertissez un document PDF en PostScript à l’aide de l’API Convert PDF Se
    * Objet `BLOB` représentant le document PDF à convertir en fichier PostScript.
    * Objet `ToPSOptionsSpec` spécifiant les options d’exécution.
 
-   Une fois la conversion terminée, extrayez les données binaires représentant le document PostScript en y accédant. `BLOB` de `MTOM` . Cette opération renvoie un tableau d’octets que vous pouvez écrire dans un fichier PostScript.
+   Une fois la conversion terminée, extrayez les données binaires représentant le document PostScript en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez écrire dans un fichier PostScript.
 
 1. Enregistrez le fichier PostScript.
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier PS.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans le fichier PostScript en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans le fichier PostScript en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -237,11 +237,11 @@ Avant d’effectuer par programmation une opération du service Convert PDF, vou
 
 **Récupérer un document PDF à convertir**
 
-Récupérez le document du PDF à convertir en image. Vous ne pouvez pas convertir un document PDF interactif en image. Si vous tentez de le faire, une exception est générée. Pour convertir un document PDF interactif en fichier image, vous devez aplatir le document PDF avant de le convertir. (Voir [Aplatir les documents PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Récupérez le document PDF à convertir en image. Vous ne pouvez pas convertir un document PDF interactif en image. Si vous tentez de le faire, une exception est générée. Pour convertir un document PDF interactif en fichier image, vous devez aplatir le document PDF avant de le convertir. (Voir [Aplatir les documents PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Définir des options d’exécution**
 
-Définissez des options d’exécution telles que le format d’image et les valeurs de résolution. Pour plus d’informations sur les valeurs d’exécution, voir la référence de classe `ToImageOptionsSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Définissez les options d’exécution, telles que le format de l’image et les valeurs de résolution. Pour plus d’informations sur les valeurs d’exécution, voir la référence de classe `ToImageOptionsSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Convertir le PDF en image**
 
@@ -267,7 +267,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-convertpdf-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un client PDF Convert.
 
@@ -299,7 +299,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
 1. Récupérez les fichiers image d’une collection.
 
-   Effectuez une itération à l’aide de l’objet `java.util.List` pour déterminer si des images sont présentes. Chaque élément est une instance `com.adobe.idp.Document`. Enregistrez l’image en appelant la fonction `com.adobe.idp.Document` de `copyToFile` et transmission d’une `java.io.File` .
+   Effectuez une itération à l’aide de l’objet `java.util.List` pour déterminer si des images sont présentes. Chaque élément est une instance `com.adobe.idp.Document`. Enregistrez l’image en appelant la méthode `copyToFile` de l’objet `com.adobe.idp.Document` et en transmettant un objet `java.io.File`.
 
 **Voir également**
 
@@ -334,7 +334,7 @@ Convertissez un document PDF en format d’image à l’aide de l’API Convert 
 
    * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` sert à stocker le formulaire PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur string qui spécifie l’emplacement du formulaire PDF et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
 

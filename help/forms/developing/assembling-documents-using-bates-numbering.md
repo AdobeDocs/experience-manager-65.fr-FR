@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 Vous pouvez assembler des documents PDF qui contiennent des identifiants de page uniques à l’aide de la numérotation Bates. La *numérotation Bates* est une méthode d’application d’identifiants uniques à un lot de documents associés. Chaque page du document (ou ensemble de documents) se voit attribuer un numéro Bates qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. La chaîne préfixe+numérique+suffixe est appelée *modèle bates*.
 
-L’illustration suivante présente un document de PDF qui contient un identifiant unique dans l’en-tête du document.
+L’illustration suivante montre un document PDF qui contient un identifiant unique dans l’en-tête du document.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 

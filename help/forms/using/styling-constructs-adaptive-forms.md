@@ -1,6 +1,6 @@
 ---
 title: Mettre en forme des éléments pour les formulaires adaptatifs
-description: Utilisez la structure LESS pour personnaliser l’aspect des formulaires adaptatifs.
+description: Le cadre LESS permet de personnaliser l’apparence des formulaires adaptatifs.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2352'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -24,13 +24,13 @@ Connaissances en matière de CSS et structure LESS.
 
 ## Éléments personnalisables {#what-can-be-customized}
 
-L’article répertorie les classes CSS de formulaires adaptatifs disponibles publiquement. Vous pouvez utiliser ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou LESS) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thème](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
+Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez les utiliser pour appliquer un style aux divers composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou LESS) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thème](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 
-La structure LESS simplifie le cas d’utilisation pour personnaliser les styles dans les formulaires adaptatifs. La structure vous permet de définir des styles à l’aide d’un ensemble de variables et de fonctions (mixins). La structure LESS aide à réduire la taille du code imbriqué et augmente sa réemployabilité.
+Le cadre LESS simplifie le cas d’utilisation permettant de personnaliser les styles dans les formulaires adaptatifs. La structure vous permet de définir des styles à l’aide d’un ensemble de variables et de fonctions (mixins). La structure LESS aide à réduire la taille du code imbriqué et augmente sa réemployabilité.
 
-Vous pouvez personnaliser les styles des formulaires adaptatifs comme suit :
+Vous pouvez personnaliser les styles des formulaires adaptatifs des manières suivantes :
 
 * Modification du thème
 * Modification du style d’un composant
@@ -51,11 +51,11 @@ Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème
 * Taille de police
 * Hauteur de ligne
 
-Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments d’un formulaire adaptatif.
+Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments d’un formulaire adaptatif.
 
 ## Modification du style de composant {#changing-component-style}
 
-Vous pouvez modifier l’aspect, la mise en page, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
+Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour réaliser cette tâche, créez ou mettez à jour vos fichiers .css personnalisés pour inclure les mises en forme répertoriées dans cet article.
 
 Pour appliquer un style à un formulaire adaptatif, ouvrez le formulaire adaptatif pour l’édition, ouvrez les propriétés du conteneur de formulaires adaptatifs et spécifiez le chemin du fichier CSS personnalisé dans l’onglet de base. Mises en forme par défaut du formulaire adaptatif remplacé par les mises en forme répertoriées dans le fichier .css personnalisé.
 
@@ -103,7 +103,7 @@ Un conteneur est le composant de niveau supérieur. D’autres panneaux et champ
 
 ## Définition de style du champ {#field-styling}
 
-Les formulaires adaptatifs incluent différents types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ possède également un nom de classe commun `guideFieldNode`.
+Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ possède également un nom de classe commun `guideFieldNode`.
 
 Les champs incluent des libellés, des widgets, des descriptions d’aide (descriptions longues et courtes), ainsi que des icônes d’aide de champ (point d’interrogation).
 
@@ -351,7 +351,7 @@ Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les term
 
 ## Bouton {#button}
 
-Les boutons sont également des widgets. Toutefois, leur définition de style est légèrement différente des widgets. Dans les formulaires adaptatifs, l’un des éléments suivants constitue un bouton :
+Les boutons sont également des widgets. Toutefois, leur définition de style est légèrement différente des widgets. Dans les formulaires adaptatifs, n’importe lequel des éléments suivants constitue un bouton :
 
 * input[type = text]
 * Bouton
@@ -534,7 +534,7 @@ Vous pouvez modifier le thème de couleur de l’en-tête et des rangées de con
 
 ## Pièce jointe {#file-attachment}
 
-Le widget Pièce jointe des formulaires adaptatifs vous permet de télécharger des fichiers. Vous pouvez également personnaliser le widget à l’aide des variables.
+Le widget de pièce jointe des formulaires adaptatifs vous permet de charger des fichiers. Vous pouvez également personnaliser le widget à l’aide des variables.
 
 <table>
  <tbody>

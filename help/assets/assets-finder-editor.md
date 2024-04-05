@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2088'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 Ce document répond aux questions suivantes :
 
 * Pourquoi créer des pages Éditeur de ressources personnalisées ?
-* Comment créer et personnaliser des pages Éditeur de ressources, qui sont des pages de gestion de contenu web qui vous permettent d’afficher et de modifier des métadonnées et d’effectuer des actions sur la ressource.
+* Comment créer et personnaliser des pages Éditeur de ressources (ou pages de gestion de contenu web permettant d’afficher et de modifier des métadonnées) et effectuer des actions sur la ressource.
 * Comment modifier plusieurs ressources simultanément ?
 
 <!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
@@ -424,7 +424,7 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
 
    Cliquez sur **OK** pour écrire les modifications dans le formulaire. La case en regard du champ **Balises** est automatiquement activée.
 
-1. Modifiez le champ Description. Par exemple, définissez-le sur :
+1. Modifiez le champ Description. Saisissez par exemple :
 
    `This is a common description`
 

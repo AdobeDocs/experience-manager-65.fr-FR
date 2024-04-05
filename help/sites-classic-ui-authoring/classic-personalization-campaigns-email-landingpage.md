@@ -1,6 +1,6 @@
 ---
 title: Création d’une page de destination efficace pour une newsletter
-description: Une page d’entrée efficace pour newsletter vous permet d’obtenir le plus de personnes possible pour s’inscrire à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des pistes.
+description: Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -11,29 +11,29 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 # Création d’une page de destination efficace pour une newsletter{#creating-an-effective-newsletter-landing-page}
 
-Une page d’entrée efficace pour newsletter vous permet d’obtenir le plus de personnes possible pour s’inscrire à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des pistes.
+Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
 
-Pour créer une landing page de newsletter efficace, vous devez effectuer les opérations suivantes :
+Pour créer une page de destination efficace pour une newsletter, vous devez effectuer les opérations suivantes :
 
-1. Créez une liste pour la newsletter afin que les utilisateurs puissent s’abonner à cette dernière.
-1. Créez le formulaire d’inscription. Pour ce faire, ajoutez une étape de workflow qui ajoute automatiquement la personne qui s’inscrit à la newsletter à votre liste de pistes.
-1. Créez une page de confirmation qui remercie les utilisateurs de s’être inscrits et leur fournit éventuellement une promotion.
+1. Créez une liste pour la newsletter afin que les utilisateurs et les utilisatrices puissent s’y abonner.
+1. Créez le formulaire d’inscription. Pour ce faire, ajoutez une étape de workflow qui ajoute automatiquement la personne qui s’inscrit à la newsletter à votre liste de prospects.
+1. Créez une page de confirmation qui remercie les utilisateurs et les utilisatrices pour leur inscription et leur accorde éventuellement une réduction.
 1. Ajoutez des teasers.
 
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (Gestion des prospects et des listes).
->Il est recommandé d’utiliser [Adobe Campaign et intégration à AEM](/help/sites-administering/campaign.md).
+>Il est conseillé d’utiliser [Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-## Création d’une liste pour la newsletter {#creating-a-list-for-the-newsletter}
+## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
-Créez une liste, par exemple : **Newsletter sur les Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists). 
+Créez une liste, par exemple, **Newsletter Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs et les utilisatrices doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists). 
 
 Voici un exemple de liste :
 
@@ -41,11 +41,11 @@ Voici un exemple de liste :
 
 ## Créer un formulaire d’inscription {#create-a-sign-up-form}
 
-Créez un formulaire d’inscription à la newsletter qui permet aux utilisateurs de s’abonner aux balises. L’exemple de site web de Geometrixx fournit une page de newsletter dans la barre d’outils de Geometrixx où vous pouvez créer votre formulaire.
+Créez un formulaire d’inscription à la newsletter qui permet aux utilisateurs et aux utilisatrices de s’abonner aux balises. L’exemple de site web de Geometrixx fournit une page de newsletter dans la barre d’outils de Geometrixx où vous pouvez créer votre formulaire.
 
-Pour créer votre propre formulaire de newsletter, reportez-vous aux informations sur la création de formulaires dans le [Documentation Forms](/help/sites-authoring/default-components.md#form). La newsletter utilise les balises de la bibliothèque de balises. Pour ajouter des balises supplémentaires, reportez-vous à la section [Administration des balises](/help/sites-authoring/tags.md#tagadministration).
+Pour créer votre propre formulaire de newsletter, reportez-vous aux informations sur la création de formulaires dans la [documentation sur Forms](/help/sites-authoring/default-components.md#form). La newsletter utilise les balises de la bibliothèque de balises. Pour ajouter des balises supplémentaires, reportez-vous à la section [Administration des balises](/help/sites-authoring/tags.md#tagadministration).
 
-Les champs masqués de l&#39;exemple suivant fournissent le minimum d&#39;informations (email). De plus, vous pourrez ajouter d&#39;autres champs ultérieurement, mais cela aura une incidence sur le taux de conversion.
+Les champs masqués de l’exemple suivant fournissent le minimum d’informations (e-mail). De plus, vous pourrez ajouter d’autres champs ultérieurement, mais cela aura une incidence sur le taux de conversion.
 
 L’exemple suivant est un formulaire créé à l’adresse URL https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
@@ -63,9 +63,9 @@ L’exemple suivant est un formulaire créé à l’adresse URL https://localhos
 
 ### Créer une page de remerciement {#creating-a-thank-you-page}
 
-Lorsque les utilisateurs cliquent **S’abonner maintenant**, vous souhaitez qu’une page de remerciement s’ouvre automatiquement. Créez la page de remerciement dans la page Newsletter Geometrixx. Après avoir créé le formulaire Newsletter, modifiez le composant Formulaire et ajoutez le chemin d’accès à la page de remerciement.
+Lorsque les utilisateurs et les utilisatrices cliquent sur **S’abonner maintenant**, vous pouvez mettre en place une page de remerciement qui s’ouvre automatiquement. Créez la page de remerciement dans la page Newsletter Geometrixx. Après avoir créé le formulaire Newsletter, modifiez le composant Formulaire et ajoutez le chemin d’accès à la page de remerciement.
 
-L’envoi de la requête conduit l’utilisateur à une **Merci** après laquelle ils recevront un e-mail. Cette page de remerciement a été créée sous /content/geometrixx/en/toolbar/newsletter/thanks_you.
+Envoyer une requête conduit l’utilisateur ou l’utilisatrice à une page de **remerciement** après laquelle il ou elle recevra un e-mail. Cette page de remerciement a été créée sous /content/geometrixx/en/toolbar/newsletter/thank_you.
 
 ![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
@@ -73,20 +73,20 @@ L’envoi de la requête conduit l’utilisateur à une **Merci** après laquell
 
 Ajoutez des [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) pour cibler des audiences spécifiques. Par exemple, vous pouvez ajouter des teasers aux pages de remerciement et d’inscription à la newsletter.
 
-Pour ajouter des teasers afin de créer une page d’entrée efficace pour newsletter :
+Pour ajouter des teasers afin de créer une page de destination efficace pour newsletter :
 
-1. Créez un paragraphe de teaser pour un cadeau d’inscription. Sélectionner **First** comme stratégie et inclure du texte qui les informe du cadeau qu’ils recevront.
+1. Créez un paragraphe de teaser pour un cadeau d’inscription. Sélectionnez **First** comme stratégie et ajoutez un texte sur le cadeau offert.
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. Créez un paragraphe de teaser pour la page de remerciement. Sélectionner **First** comme stratégie et inclure du texte indiquant que le cadeau est en route.
+1. Créez un paragraphe de teaser pour la page de remerciement. Sélectionnez **First** comme stratégie et ajoutez un texte qui informe l’utilisateur ou l’utilisatrice que son cadeau arrive.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Créez une campagne avec les deux teasers — marquez l’un avec l’activité et l’autre sans balise.
+1. Créez une campagne avec les deux teasers : étiquetez l’un avec entreprise et laissez l’autre sans étiquette.
 
-### Envoyer du contenu aux abonnés {#pushing-content-to-subscribers}
+### Envoi de contenu aux personnes abonnées {#pushing-content-to-subscribers}
 
-Envoyez les modifications aux pages par le biais de la fonctionnalité Newsletter dans MCM. Vous pouvez ensuite envoyer du contenu mis à jour aux abonnés.
+Envoyez les modifications apportées aux pages par le biais de la fonctionnalité Newsletter dans le MCM. Vous pouvez ensuite envoyer du contenu mis à jour aux personnes abonnées.
 
 Voir [Envoi de newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).

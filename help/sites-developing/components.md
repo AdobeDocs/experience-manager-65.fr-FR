@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 * sont développés comme des unités autonomes dans un seul dossier du référentiel ;
 * ne comportent aucun fichier de configuration masqué ;
 * peuvent contenir d’autres composants ;
-* Peut s’exécuter n’importe où dans n’importe quel système AEM. Elles peuvent également être limitées à l’exécution sous des composants spécifiques.
+* peuvent s’exécuter n’importe où dans n’importe quel système AEM. Ils peuvent également être limités à des composants spécifiques.
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
 * utilisent des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’interface utilisateur Granite ;
 * peuvent être développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) (recommandé) ou de JSP.
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
-Les composants étant modulaires, vous pouvez :
+Les composants étant modulaires, vous pouvez :
 
-* Développez un nouveau composant sur votre instance locale.
+* développer un nouveau composant sur votre instance locale ;
 * Déployer ce composant sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
-* Déployer le composant sur votre (vos) environnement(s) de publication actif(s), où il est utilisé pour effectuer le rendu du contenu à l’intention des visiteurs de votre site Web. Certains composants, par exemple, pour Communities, acceptent également la saisie de vos utilisateurs.
+* Déployer le composant sur votre (vos) environnement(s) de publication actif(s), où il est utilisé pour effectuer le rendu du contenu à l’intention des visiteurs de votre site Web. Certains composants (c’est le cas de Communities, par exemple) acceptent la saisie de contenu de la part des utilisateurs et utilisatrices.
 
 Chaque composant AEM :
 
@@ -47,7 +47,7 @@ Chaque composant AEM :
 
 ## Composants prêts à l’emploi dans AEM {#out-of-the-box-components-within-aem}
 
-AEM est fourni avec une variété de [Composants prêts à l’emploi](/help/sites-authoring/default-components.md) qui offrent des fonctionnalités complètes, notamment :
+Des [composants prêts à l’emploi](/help/sites-authoring/default-components.md) sont fournis avec AEM. Ils procurent des fonctionnalités complètes telles que :
 
 * Système de paragraphes (`parsys`)
 * Page (`responsivegrid` ; IU tactile uniquement)
@@ -55,11 +55,11 @@ AEM est fourni avec une variété de [Composants prêts à l’emploi](/help/sit
 * Image, avec texte d’accompagnement
 * Barre d’outils
 
-Les composants fournis et leur utilisation dans la variable [exemples de sites web We.Retail](/help/sites-developing/we-retail.md) fournies illustrent la mise en oeuvre et l’utilisation des composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
+Les composants fournis et leur utilisation dans l’[exemple de sites web We.Retail](/help/sites-developing/we-retail.md) fourni illustrent l’implémentation et l’utilisation des composants. Les composants sont fournis avec l’intégralité du code source et peuvent être utilisés tels quels ou comme points de départ pour des composants modifiés ou étendus.
 
 ### Composants principaux et composants de base {#core-components-and-foundation-components}
 
-Deux ensembles de composants d’AEM fournis par l’Adobe sont disponibles :
+Deux ensembles de composants AEM fournis par Adobe sont disponibles :
 
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Composants de base](/help/sites-authoring/default-components-foundation.md)
@@ -76,9 +76,9 @@ Les **composants de base** sont fournis avec AEM depuis de nombreuses versions e
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
-Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-authoring/default-components-console.md).
+Pour obtenir une vue d’ensemble de tous les composants disponibles dans votre instance AEM, utilisez la [Console Composants](/help/sites-authoring/default-components-console.md).
 
-Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
+Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
 1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Requête]** pour ouvrir l’onglet **[!UICONTROL Requête]**.
 

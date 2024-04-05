@@ -1,6 +1,6 @@
 ---
 title: Ajouter et supprimer des informations d’identification d’utilisateur et de mot de passe
-description: Découvrez comment ajouter et supprimer des informations d’identification d’utilisateur et de mot de passe.
+description: Découvrez comment ajouter et supprimer des noms d’utilisateur ou d’utilisatrice et des mots de passe.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Ajouter et supprimer des informations d’identification d’utilisateur et de mot de passe {#adding-and-removing-user-name-and-password-credentials}
 
-Sur la page Trust Store Management, vous pouvez ajouter et supprimer les informations d’identification d’utilisateur et de mot de passe utilisées par le service Forms lorsqu’il reçoit une demande avec une sécurité de niveau SOAP.
+Sur la page Trust Store Management, vous pouvez ajouter et supprimer les noms d’utilisateur ou d’utilisatrice et les mots de passe utilisés par le service Forms lorsqu’il reçoit une demande avec une sécurité de niveau SOAP.
 
-## Ajout d’informations d’identification d’utilisateur et de mot de passe {#add-a-user-name-and-password-credential}
+## Ajouter des noms d’utilisateur ou d’utilisatrice et des mots de passe {#add-a-user-name-and-password-credential}
 
 1. Dans la Console d’administration, cliquez sur **[!UICONTROL Paramètres > Trust Store Management > Informations d’identification de l’utilisateur et mot de passe]**, puis sur **[!UICONTROL Ajouter]**.
 1. Dans le boîte de dialogue **[!UICONTROL Nom du profil]**, saisissez un nom pour les informations d’identification.

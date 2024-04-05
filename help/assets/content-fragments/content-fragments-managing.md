@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1712'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 1. Pour ouvrir l’assistant, sélectionnez **Créer**, puis **Fragment de contenu**.
 1. La première étape de l’assistant nécessite de spécifier la base du nouveau fragment.
 
-   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) - utilisé pour créer un fragment qui nécessite du contenu structuré ; par exemple, la fonction **Adventure** model
+   * [Modèle](/help/assets/content-fragments/content-fragments-models.md) : utilisé pour créer un fragment qui nécessite du contenu structuré, par exemple, le modèle **Adventure**.
 
       * Tous les modèles disponibles s’affichent.
 
@@ -143,7 +143,7 @@ Pour ouvrir votre fragment à des fins de modification :
    * Cliquer/appuyer sur le fragment ou le lien du fragment (cela dépend de l’affichage de la console).
    * Sélectionnez le fragment, puis cliquez sur **Modifier** dans la barre d’outils.
 
-1. L’éditeur de fragments s’ouvre. Apportez les modifications nécessaires :
+1. L’éditeur de fragment s’ouvre. Apportez les modifications nécessaires :
 
    ![éditeur de fragment](assets/cfm-managing-03.png)
 
@@ -187,7 +187,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 * Sous le nom du fragment, vous pouvez voir le nom du [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) utilisé pour créer le fragment actif :
 
-   * Le nom est également un lien qui ouvre l’éditeur de modèles.
+   * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
 * Consultez le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication.
 
@@ -238,7 +238,7 @@ L’éditeur possède différentes options :
   >
   >En plus de simplement enregistrer vos modifications, ces actions mettent également à jour les références éventuelles et s’assurent que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre du temps. Cela peut avoir un impact sur les performances d’un système volumineux/complexe/lourdement chargé.
   >
-  >Gardez cela à l’esprit lorsque vous utilisez **Enregistrer et fermer** puis saisissez à nouveau rapidement l’éditeur de fragments pour effectuer et enregistrer d’autres modifications.
+  >Prenez cela en compte lorsque vous exécutez **Enregistrer et fermer** puis rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
 
 * **Fermer**
 
@@ -320,7 +320,7 @@ Par exemple :
 
 L’action **Comparer avec la version actuelle** est disponible à partir du [Journal](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
-Cette action s’ouvre :
+Cette action ouvre :
 
 * la version **actuelle** (la plus récente) (à gauche) ;
 

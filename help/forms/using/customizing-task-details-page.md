@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les détails de la tâche
-description: Comment personnaliser la page des détails de la tâche dans l’espace de travail AEM Forms pour modifier les informations par défaut affichées sur une tâche.
+description: Comment personnaliser la page Détails de la tâche dans l’espace de travail AEM Forms pour modifier les informations par défaut affichées relatives à une tâche.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 34%
 
 La page Détails de la tâche contient des informations relatives à une tâche et à ses processus. Cependant, vous pouvez personnaliser la page Détails de la tâche pour ajouter ou supprimer des informations.
 
-Vous pouvez ajouter les informations suivantes à la page Détails de la tâche :
+Vous pouvez ajouter les informations ci-dessous à la page Détails de la tâche :
 
-* Informations disponibles dans l’objet JSON d’une tâche (section Tâche dans [Description de l’objet JSON de l’espace de travail AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informations disponibles dans l’objet JSON d’une tâche (section Tâche dans [Description de l’objet JSON de l’espace de travail AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 * Informations disponibles dans l’objet JSON d’une instance de processus (section Instance de processus dans [Description de l’objet JSON de l’espace de travail AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
-Pour personnaliser la page des détails de la tâche :
+Pour personnaliser la page Détails de la tâche :
 
-1. Suivez [Procédure générique de personnalisation de l’espace de travail AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Pour afficher d’autres informations, ajoutez les paires clé-valeur correspondantes au `translation.json` fichier à l’emplacement `todo`block > `details`block > `app`block > [`required`block].
+1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Pour afficher des informations supplémentaires, ajoutez les paires clé-valeur correspondantes au fichier `translation.json` dans le bloc `todo` > bloc `details` > bloc `app` > bloc [`required`].
 
-   La variable [`required`block] fait référence aux blocs disponibles, tels que le bloc de tâche pour les informations sur la tâche, le bloc de processus pour les informations sur le processus et le bloc de tâche en attente pour les informations sur les tâches en attente.
+   Le [`required`bloc] fait référence aux blocs disponibles tels que le bloc de tâche pour les informations de tâche, le bloc de processus pour le traitement des informations et le bloc de tâches en attente pour les informations de tâches en attente.
 
-   Par exemple, pour ajouter des informations sur la sélection d’itinéraire requise dans la page des détails de la tâche, vous pouvez ajouter la paire clé-valeur suivante dans le bloc de tâche :
+   Par exemple, pour ajouter des informations sur la sélection d’itinéraire requise dans la page Détails de la tâche, vous pouvez ajouter la paire clé-valeur suivante dans le bloc de tâche :
 
    ```json
    "todo" : {

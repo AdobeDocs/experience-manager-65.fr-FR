@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -397,7 +397,7 @@ Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestio
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](../../forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. AEM boîte de réception fonctionne uniquement avec [Workflows basés sur l’utilisation de Forms](../../forms/using/aem-forms-workflow.md) pendant que l’application AEM Forms fonctionne avec les processus Forms et la gestion des processus.
+Deux des moyens principaux de lancer un workflow basé sur l’utilisation de Forms sont la [boîte de réception AEM](../../forms/using/manage-applications-inbox.md) et l’application AEM Forms. Les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms sont cependant différentes. La boîte de réception AEM ne fonctione qu’avec les [workflows axés sur Forms](../../forms/using/aem-forms-workflow.md) tandis que l’application AEM Forms fonctionne avec les workflows axés sur Forms et le traitement de processus.
 
 La table suivante répertorie les fonctionnalités de la boîte de réception AEM et de l’application AEM Forms :
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 ## Présentation {#overview}
 
-Vous pouvez personnaliser l’éditeur de texte, dans l’interface utilisateur de gestion des actifs et de création de correspondance, pour ajouter davantage de polices et de tailles de police. Ces polices comprennent des polices anglaises et non anglaises, comme les polices japonaises.
+Vous pouvez personnaliser l’éditeur de texte, dans l’interface utilisateur de gestion des ressources et de création de correspondances, afin d’ajouter davantage de polices et de tailles de police. Ces polices comprennent des polices anglaises et non anglaises, comme les polices japonaises.
 
 Vous pouvez personnaliser pour modifier les paramètres de police suivants :
 
@@ -158,14 +158,14 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
       </editorConfig>
       ```
 
-   1. Effectuez les modifications requises dans le fichier afin de pouvoir modifier les éléments suivants dans les paramètres de police :
+   1. Effectuez les modifications nécessaires dans le fichier afin de changer les éléments suivants dans les paramètres de la police :
 
       * Ajouter ou supprimer la famille et la taille de police
       * Propriétés telles que la hauteur et l’interlettrage
       * Valeurs par défaut de la famille et de la taille de police, de la hauteur, de l’interlettrage et du format de date
       * Retraits de puces
 
-      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans le fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à la personnalisation de la police et l’utiliser. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
+      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer la saisie suivante dans le fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder et travailler avec la personnalisation de la police. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
 
       Vous pouvez également modifier les valeurs par défaut de divers aspects du texte et, en supprimant les entrées, supprimer les polices de l’éditeur de texte.
 
@@ -173,7 +173,7 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 
 ## Ajouter des polices personnalisées sur l’ordinateur client {#addcustomfonts}
 
-Lorsque vous accédez à une police dans l’éditeur de texte de Correspondence Management, elle doit être présente sur l’ordinateur client que vous utilisez pour accéder à Correspondence Management. Pour pouvoir utiliser une police personnalisée dans l’éditeur de texte, vous devez d’abord l’installer sur l’ordinateur client.
+Lorsque vous accédez à une police dans l’éditeur de texte Correspondence Management, elle doit être présente sur l’ordinateur client que vous utilisez pour accéder à Correspondence Management. Pour pouvoir utiliser une police personnalisée dans l’éditeur de texte, vous devez d’abord l’installer sur l’ordinateur client.
 
 Pour plus d’informations sur l’installation des polices, consultez les articles suivants :
 
@@ -182,7 +182,7 @@ Pour plus d’informations sur l’installation des polices, consultez les artic
 
 ## Accéder à la personnalisation des polices {#access-font-customizations}
 
-Après avoir modifié les polices dans la variable `tbxeditor-config.xml` dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder à AEM Forms, les modifications apparaissent dans l’éditeur de texte.
+Après avoir modifié les polices dans le fichier `tbxeditor-config.xml` dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder à AEM Forms, les modifications apparaissent dans l’éditeur de texte.
 
 Par exemple, la police Sazanami Mincho Medium ajoutée lors de la procédure [Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts) apparaît dans l’interface utilisateur de l’éditeur de texte comme dans la capture d’écran suivante :
 

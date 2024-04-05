@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les périphériques sont regroupés dans les catégories fonctionnalité, intell
 Utilisez la procédure suivante pour créer une page mobile :
 
 1. À partir de la navigation globale, ouvrez la console **Sites**.
-1. Ouvrir la page **We.Retail** > **États-Unis** > **Anglais**.
+1. Ouvrez la page **We.Retail** -> **États-Unis** -> **Anglais**.
 
 1. Basculez en mode **Aperçu**.
 1. Basculez vers l’émulateur de votre choix en cliquant sur l’icône du périphérique en haut de la page.

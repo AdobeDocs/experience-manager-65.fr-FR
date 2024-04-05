@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
 1. Ouvrez un formulaire adaptatif en mode d’**[!UICONTROL édition]**.
 
-1. Dans le **[!UICONTROL Contenu]** onglet, sélectionnez **[!UICONTROL Conteneur de formulaires]** et sélectionnez ![configure](assets/configure-icon.svg) pour afficher les propriétés du formulaire adaptatif.
+1. Dans l’onglet **[!UICONTROL Contenu]**, sélectionnez **[!UICONTROL Conteneur de formulaires]**, puis ![configurer](assets/configure-icon.svg) pour afficher les propriétés du formulaire adaptatif.
 
 1. Dans la section **[!UICONTROL Envoi]**, sélectionnez **[!UICONTROL Envoyer un e-mail]** dans la liste déroulante **[!UICONTROL Action Envoyer]**.
 

@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Les auteurs et autrices de contenu créeront n’importe quel nombre de fragments de contenu pour représenter le contenu créé. Ce sera leur principale tâche dans AEM. Pour les besoins de ce guide de prise en main, nous n’aurons besoin d’en créer qu’un.
 
-1. Connectez-vous à AEM et sélectionnez dans le menu principal **Navigation > Ressources**.
+1. Connectez-vous à AEM et dans le menu principal, sélectionnez **Navigation > Ressources**.
 1. Accédez au [dossier que vous avez créé précédemment.](create-assets-folder.md)
-1. Cliquez sur **Créer > Fragment de contenu**.
-1. La création d’un fragment de contenu est présentée sous la forme d’un assistant en deux étapes. Sélectionnez d’abord le modèle que vous souhaitez utiliser pour créer votre fragment de contenu, puis cliquez sur **Suivant**.
+1. Cliquez sur **Créer > Fragment de contenu**.
+1. La création d’un fragment de contenu est présentée sous la forme d’un assistant en deux étapes. Commencez par sélectionner le modèle à utiliser pour créer votre fragment de contenu, puis cliquez sur **Suivant**.
    * Les modèles disponibles dépendent de la [**configuration du cloud** que vous avez définie pour le dossier de ressources](create-assets-folder.md) dans lequel vous créez le fragment de contenu.
    * Si vous recevez le message `We could not find any models`, vérifiez la configuration de votre dossier de ressources.
 
    ![Sélectionner un modèle de fragment de contenu](assets/content-fragment-model-select.png)
-1. Fournissez une **Titre**, **Description**, et **Balises** Si nécessaire, cliquez sur **Créer**.
+1. Définissez un **titre**, une **description** et des **balises** si nécessaire, puis cliquez sur **Créer**.
 
    ![Créer un fragment de contenu](assets/content-fragment-create.png)
 1. Cliquez sur **Ouvrir** dans la fenêtre de confirmation.
@@ -43,7 +43,7 @@ Les auteurs et autrices de contenu créeront n’importe quel nombre de fragment
 1. Fournissez les détails du fragment de contenu dans l’éditeur de fragment de contenu.
 
    ![Éditeur de fragment de contenu](assets/content-fragment-edit.png)
-1. Cliquez sur **Enregistrer** ou  **Enregistrer et fermer**.
+1. Cliquez sur **Enregistrer** ou **Enregistrer et fermer**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriquée si nécessaire.
 

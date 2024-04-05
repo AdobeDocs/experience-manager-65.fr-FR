@@ -6,13 +6,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
 # Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML {#using-execute-script-service-forms-jee-workbench}
 
-Il y a beaucoup de code XML impliqué dans les processus de gestion des processus d’AEM Forms on JEE, par exemple : les informations XML peuvent être créées dans un processus et envoyées à une application Flex dans l’espace de travail d’AEM Forms on JEE, utilisées pour les paramètres du système, ou encore transmises des informations à et depuis des formulaires. Il existe de nombreux cas où un développeur d’AEM Forms on JEE doit gérer du XML, ce qui nécessite souvent que le XML soit géré via un processus AEM Forms on JEE.
+Il existe beaucoup de données XML associées aux workflows Process Management d’AEM Forms on JEE. Par exemple, les informations XML peuvent être créées dans un processus et envoyées à une application Flex dans un espace de travail AEM Forms on JEE , utilisées pour les paramètres du système ou pour transmettre des informations à et depuis des formulaires. Il existe de nombreux cas où un développeur d’AEM Forms on JEE doit gérer du XML, ce qui nécessite souvent que le XML soit géré via un processus AEM Forms on JEE.
 
 Lorsque vous utilisez des paramètres XML simples, vous pouvez utiliser le service `Set Value` par défaut d’AEM Forms on JEE. Ce service définit la valeur d’un ou plusieurs éléments de données dans le modèle de données de processus. Pour une logique conditionnelle simple « si ceci, alors cela », ce service peut répondre à l’objectif.
 
@@ -106,7 +106,7 @@ Le résultat de ce script simple est un nouveau document XML avec un nœud de va
 
 **Utiliser une boucle itérative pour ajouter des nœuds au XML**
 
-Il est également possible d’ajouter des nœuds à une variable XML existante dans le processus. La variable, le noeud , contient l’objet XML qui a été créé.
+Il est également possible d’ajouter des nœuds à une variable XML existante dans le processus. La variable, le nœud, contient l’objet XML venant d’être créé.
 
 ```xml
 Document document = patExecContext.getProcessDataValue("/process_data/node");

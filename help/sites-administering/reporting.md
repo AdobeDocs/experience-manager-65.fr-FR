@@ -1,6 +1,6 @@
 ---
 title: Création de rapports
-description: Découvrez comment utiliser la création de rapports dans Adobe Experience Manager (AEM).
+description: Découvrez comment utiliser la création de rapports dans Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 >[!NOTE]
 >
->Les rapports préconfigurés ne sont pas exigeants en termes de performances, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où il n’y a pas beaucoup d’activité sur votre site web. Cela peut être défini à l’aide de la fonction `Daily snapshots (repconf.hourofday)` paramètre pour **Configuration des rapports Day CQ**. Voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
+>Les rapports préconfigurés ne sont pas exigeants en termes de performances, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où il n’y a pas beaucoup d’activité sur votre site web. Cela peut être défini à l’aide du paramètre `Daily snapshots (repconf.hourofday)` pour **Configuration des rapports Day CQ**. Voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
 
 #### Limites d’affichage {#display-limits}
 
@@ -406,7 +406,7 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 * Page
 * Référent
 * Type
-* Identifiant de l&#39;utilisateur
+* Identifiant de l&#39;utilisateur ou de l’utilisatrice
 
 Permet de :
 

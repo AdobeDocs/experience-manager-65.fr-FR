@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 # Spécifier des paramètres de sécurité {#specifying-security-settings}
 
-Forms vous permet de contrôler la résolution des entités externes dans les entrées XML. Par défaut, ils sont résolus, mais vous pouvez modifier ce comportement pour accroître la sécurité de votre système AEM forms.
+Forms vous permet de contrôler la résolution des entités externes dans les entrées XML. Par défaut, elles sont résolues, mais vous pouvez modifier ce comportement pour accroître la sécurité de votre système AEM Forms.
 
 **Empêcher le traitement des fichiers de données XML contenant des références à des entités externes**
 

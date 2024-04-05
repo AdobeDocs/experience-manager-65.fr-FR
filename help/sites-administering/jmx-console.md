@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4830'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -27,53 +27,53 @@ Pour plus d’informations sur la création de MBeans pour gérer vos services �
 
 Opérations d’administration des instances de workflow en cours d’exécution, terminées, obsolètes et ayant échoué.
 
-* Domaine : com.adobe.granite.workflow
-* Type : maintenance
+* Domaine : com.adobe.granite.workflow
+* Type : maintenance
 
 >[!NOTE]
 >
->Voir [console de workflow](/help/sites-administering/workflows-administering.md) pour accéder à d’autres outils d’administration de workflow et à des descriptions des états d’instance de workflow possibles.
+>Voir la [console de workflow](/help/sites-administering/workflows-administering.md) pour accéder à d’autres outils d’administration de workflow et à des descriptions des statuts d’instance de workflow possibles.
 
 ### Opérations {#operations}
 
 **listRunningWorkflowsPerModel** Indique le nombre d’instances de workflows exécutées pour chaque modèle de workflow.
 
-* Arguments : aucun
-* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
 
 **listCompletedWorkflowsPerModel** Indique le nombre d’instances de workflows terminées pour chaque modèle de workflow.
 
-* Arguments : aucun
-* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes Count et ModelId.
 
 **returnWorkflowQueueInfo** Répertorie les informations sur les éléments de workflows traités et mis en file d’attente pour le traitement.
 
-* Arguments : aucun
-* Valeur renvoyée : données sous forme de tableau contenant les colonnes suivantes :
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
 
    * Tâches
-   * Nom de la file
-   * Activer les tâches
+   * Nom de la file d’attente
+   * Traitements actifs
    * Temps de traitement moyen
    * Temps d’attente moyen
-   * Tâches annulées
-   * Tâches en échec
-   * Tâches terminées
-   * Tâches traitées
-   * Tâches en file d’attente
+   * Traitements annulés
+   * Traitements en échec
+   * Traitements terminés
+   * Traitements traités
+   * Traitements en file d’attente
 
 **returnWorkflowJobTopicInfo** Répertorie les informations de traitement des tâches de workflow, organisées par rubrique.
 
-* Arguments : aucun
-* Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires contenant les colonnes suivantes :
 
    * Nom de la rubrique
    * Temps de traitement moyen
    * Temps d’attente moyen
-   * Tâches annulées
-   * Tâches en échec
-   * Tâches terminées
-   * Tâches traitées
+   * Traitements annulés
+   * Traitements en échec
+   * Traitements terminés
+   * Traitements traités
 
 **returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou extraire les informations pour tous les modèles de workflow.
 
@@ -87,10 +87,10 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 **returnFailedWorkflowCountPerModel** Affiche le nombre d’instances de workflow ayant échoué pour chaque modèle de workflow.
 
-* Arguments : aucun.
-* Valeur renvoyée : données tabulaires contenant les colonnes Nombre et ID de modèle.
+* Arguments : aucun.
+* Valeur renvoyée : données tabulaires contenant les colonnes Nombre et ID de modèle.
 
-**terminateFailedInstances** Interrompt les instances de workflow ayant échoué. Vous pouvez interrompre toutes les instances ayant échoué ou uniquement les instances ayant échoué pour un modèle spécifique. Vous avez la possibilité de redémarrer les instances après les avoir interrompues. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**terminateFailedInstances** Interrompt les instances de workflow ayant échoué. Vous pouvez interrompre toutes les instances ayant échoué ou uniquement les instances ayant échoué pour un modèle spécifique. Vous avez la possibilité de redémarrer les instances après les avoir interrompues. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -100,7 +100,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valeur renvoyée : données sous forme de tableau concernant les instances interrompues, contenant les colonnes suivantes :
+* Valeur renvoyée : données tabulaires concernant les instances interrompues, contenant les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -118,7 +118,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valeur renvoyée : données sous forme de tableau relatives aux tâches ayant échoué et qui ont fait l’objet d’une nouvelle tentative, notamment les colonnes suivantes :
+* Valeur renvoyée : données tabulaires relatives aux éléments ayant échoué et qui ont fait l’objet d’une nouvelle tentative, notamment les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -137,7 +137,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Nombre de jours écoulés depuis le début du workflow : ancienneté des instances de workflows à purger, exprimée en jours.
    * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
-* Valeur renvoyée : données tabulaires sur les instances de workflow actives purgées, y compris les colonnes suivantes :
+* Valeur renvoyée : données tabulaires sur les instances de workflow actives purgées, y compris les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -156,7 +156,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : nombre d’instances de workflows obsolètes.
 
-**restartStaleWorkflows** Redémarrez les instances de workflows obsolètes. Vous pouvez redémarrer toutes les instances obsolètes ou seulement les instances obsolètes pour un modèle spécifique. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**restartStaleWorkflows** Redémarrez les instances de workflows obsolètes. Vous pouvez redémarrer toutes les instances obsolètes ou seulement les instances obsolètes pour un modèle spécifique. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -169,8 +169,8 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 **fetchModelList** Répertorie tous les modèles de workflows.
 
-* Arguments : aucun
-* Valeur renvoyée : données sous forme de tableau qui identifie les modèles de workflow, y compris les colonnes ModelId et ModelName .
+* Arguments : aucun
+* Valeur renvoyée : données tabulaires qui identifient les modèles de workflow, y compris les colonnes ModelId et ModelName.
 
 **countRunningWorkflows** Renvoie le nombre d’instances de workflows en cours d’exécution. Vous pouvez récupérer le nombre d’instances en cours d’exécution pour tous les modèles de workflow ou pour un modèle spécifique.
 
@@ -202,7 +202,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Nombre de jours écoulés depuis la fin du workflow : nombre de jours pendant lesquels les instances de workflows ont eu le statut Terminé.
    * Exécution d’essai : (facultatif) spécifiez la valeur `true` pour afficher les résultats de l’opération sans effectuer réellement l’opération. La valeur par défaut `false` entraîne l’exécution de l’opération.
 
-* Valeur renvoyée : données tabulaires sur les instances de workflow terminées purgées, y compris les colonnes suivantes :
+* Valeur renvoyée : données tabulaires sur les instances de workflow terminées purgées, y compris les colonnes suivantes :
 
    * Initiateur
    * InstanceId
@@ -215,8 +215,8 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 Informations sur le référentiel CRX
 
-* Domaine : com.adobe.granite
-* Type : référentiel
+* Domaine : com.adobe.granite
+* Type : référentiel
 
 ### Attributs {#attributes}
 
@@ -246,16 +246,16 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.node.and.property.with.same.name.supported</td>
-   <td>Indique si un nœud et une propriété du nœud peuvent porter le même nom. La valeur true indique que les mêmes noms sont pris en charge, la valeur false indique qu’il n’est pas pris en charge. </td>
+   <td>Indique si un nœud et une propriété du nœud peuvent porter le même nom. La valeur true indique qu’ils peuvent porter le même nom, la valeur false indique qu’ils ne peuvent pas. </td>
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs possibles sont les suivantes :
+   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs suivantes sont valides :
     <ul>
-     <li>identifier.stability.indefined.duration : les identifiants ne changent pas.</li>
-     <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
-     <li>identifier.stability.save.duration : les identifiants ne changent pas au cours d’un cycle d’enregistrement/actualisation.</li>
-     <li>identifier.stability.session.duration : les identifiants ne changent pas au cours d’une session.</li>
+     <li>identifier.stability.indefinite.duration : les identifiants ne changent pas.</li>
+     <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
+     <li>identifier.stability.save.duration : les identifiants ne changent pas au cours d’un cycle d’enregistrement/actualisation.</li>
+     <li>identifier.stability.session.duration : les identifiants ne changent pas au cours d’une session.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -276,7 +276,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.update.primary.node.type.supported</td>
-   <td>Indique si le type de nœud principal d’un nœud peut être modifié. La valeur true indique que vous pouvez modifier le type de noeud principal et la valeur false indique que la modification n’est pas prise en charge.</td>
+   <td>Indique si le type de nœud principal d’un nœud peut être modifié. La valeur true indique que vous pouvez modifier le type de nœud principal et la valeur false indique que la modification n’est pas prise en charge.</td>
   </tr>
   <tr>
    <td>option.node.type.management.supported</td>
@@ -296,7 +296,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.simple.versioning.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le contrôle de version simple. Avec le contrôle de version simple, le référentiel conserve une série séquentielle de versions d’un noeud.</td>
+   <td>La valeur true indique que le référentiel prend en charge le contrôle de version simple. Avec le contrôle de version simple, le référentiel conserve une série séquentielle de versions d’un nœud.</td>
   </tr>
   <tr>
    <td>option.workspace.management.supported</td>
@@ -304,7 +304,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.update.mixin.node.types.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’ajout et la suppression de types de noeuds mixin d’un noeud existant.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’ajout et la suppression de types de nœuds mixin d’un nœud existant.</td>
   </tr>
   <tr>
    <td>node.type.management.primary.item.name.supported</td>
@@ -316,63 +316,63 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>write.supported</td>
-   <td>La valeur true indique que le référentiel fournit un accès en écriture à l’aide de l’API. false indique un accès en lecture seule.</td>
+   <td>La valeur true indique que le référentiel fournit un accès en écriture à l’aide de l’API. La valeur false indique un accès en lecture seule.</td>
   </tr>
   <tr>
    <td>node.type.management.update.in.use.supported</td>
-   <td>La valeur true indique que vous pouvez modifier les définitions de noeud utilisées par les noeuds existants.</td>
+   <td>La valeur true indique que vous pouvez modifier les définitions de nœud utilisées par les nœuds existants.</td>
   </tr>
   <tr>
    <td>jcr.specification.version</td>
-   <td>Version de la spécification JCR mise en oeuvre par le référentiel.</td>
+   <td>Version de la spécification JCR mise en œuvre par le référentiel.</td>
   </tr>
   <tr>
    <td>option.journaled.observation.supported</td>
-   <td>La valeur true indique que les applications peuvent effectuer une observation journalisée du référentiel. avec l’observation journalisée, un ensemble de notifications de modification peut être obtenu pendant une période spécifique. </td>
+   <td>La valeur true indique que les applications peuvent effectuer une observation journalisée du référentiel. Avec l’observation journalisée, un ensemble de notifications de modification peut être obtenu pendant une période spécifique. </td>
   </tr>
   <tr>
    <td>query.languages</td>
-   <td>Langages de requête pris en charge par le référentiel. Aucune valeur n’indique qu’aucune requête n’est prise en charge.</td>
+   <td>Langages de requête pris en charge par le référentiel. L’absence de valeur indique qu’aucune requête n’est prise en charge.</td>
   </tr>
   <tr>
    <td>option.xml.export.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’exportation de noeuds en tant que code XML.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’export de nœuds en tant que code XML.</td>
   </tr>
   <tr>
    <td>node.type.management.multiple.binary.properties.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’enregistrement des types de nœuds comportant plusieurs propriétés de fichier binaire. La valeur false indique qu’une seule propriété binaire est prise en charge pour un type de noeud.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’enregistrement des types de nœuds comportant plusieurs propriétés de fichier binaire. La valeur false indique qu’une seule propriété binaire est prise en charge pour un type de nœud.</td>
   </tr>
   <tr>
    <td>option.access.control.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le contrôle d’accès pour définir et déterminer les privilèges d’utilisateur pour l’accès aux noeuds.</td>
+   <td>La valeur true indique que le référentiel prend en charge le contrôle d’accès pour définir et déterminer les privilèges d’utilisateur ou d’utilisatrice pour l’accès aux nœuds.</td>
   </tr>
   <tr>
    <td>option.baselines.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les configurations et les lignes de base.</td>
+   <td>La valeur true indique que le référentiel prend en charge à la fois les configurations et les lignes de base.</td>
   </tr>
   <tr>
    <td>option.shareable.nodes.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge la création de noeuds partageables.</td>
+   <td>La valeur true indique que le référentiel prend en charge la création de nœuds pouvant être partagés.</td>
   </tr>
   <tr>
    <td>crx.cluster.id</td>
-   <td>Identifiant de la grappe de référentiel.</td>
+   <td>Identifiant du cluster de référentiel.</td>
   </tr>
   <tr>
-   <td>query.stored.queries.supported</td>
+   <td>query.stored.query.supported</td>
    <td>La valeur true indique que le référentiel prend en charge les requêtes stockées.</td>
   </tr>
   <tr>
    <td>query.full.text.search.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge la recherche de texte intégral.</td>
+   <td>La valeur true indique que le référentiel prend en charge la recherche en texte intégral.</td>
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Indique le niveau de prise en charge du référentiel pour l’héritage du type de nœud. Les valeurs possibles sont les suivantes :</p> <p>node.type.management.inheritance.minimal : l’enregistrement des types de nœuds principaux se limite aux types qui contiennent uniquement le supertype nt:base. L’enregistrement des types de noeuds mixin est limité aux types sans supertype.</p> <p>node.type.management.inheritance.single : l’enregistrement des types de nœuds principaux se limite aux types comportant un seul supertype. L’enregistrement des types de nœuds Mixin se limite aux types comportant un supertype au maximum.</p> <p><br /> node.type.management.inheritance.multiple : les types de nœuds principaux peuvent être enregistrés avec un ou plusieurs supertypes. Les types de noeuds Mixin peuvent être enregistrés avec aucun ou plusieurs supertypes.</p> </td>
+   <td><p>Indique le niveau de prise en charge du référentiel pour l’héritage du type de nœud. Les valeurs suivantes sont valides :</p> <p>node.type.management.inheritance.minimal : l’enregistrement des types de nœuds principaux se limite aux types qui contiennent uniquement le supertype nt:base. L’enregistrement des types de nœuds mixin se limite aux types ne comportant pas de supertype.</p> <p>node.type.management.inheritance.single : l’enregistrement des types de nœuds principaux se limite aux types comportant un seul supertype. L’enregistrement des types de nœuds Mixin se limite aux types comportant un supertype au maximum.</p> <p><br /> node.type.management.inheritance.multiple : les types de nœuds principaux peuvent être enregistrés avec un ou plusieurs supertypes. Les types de nœuds mixin peuvent être enregistrés avec zéro ou plusieurs supertypes.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>La valeur true indique que ce noeud est le maître préféré de la grappe.</td>
+   <td>La valeur true indique que ce nœud est le nœud principal du cluster.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -383,8 +383,8 @@ Informations sur le référentiel CRX
    <td>URL du fournisseur du référentiel.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les contraintes de valeur pour les propriétés de noeud.</td>
+   <td>node.type.management.value.contraintes.supported</td>
+   <td>La valeur true indique que le référentiel prend en charge les contraintes de valeur pour les propriétés de nœud.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
@@ -392,19 +392,19 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>node.type.management.orderable.child.nodes.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge la conservation de l’ordre des noeuds enfants.</td>
+   <td>La valeur true indique que le référentiel prend en charge la conservation de l’ordre des nœuds enfants.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor</td>
-   <td>Nom du fournisseur du référentiel.</td>
+   <td>Nom du fournisseur de référentiel.</td>
   </tr>
   <tr>
-   <td>query.joins</td>
-   <td><p>Niveau de prise en charge des jointures dans les requêtes. Les valeurs possibles sont les suivantes :</p>
+   <td>query.jins</td>
+   <td><p>Niveau de prise en charge des jointures dans les requêtes. Les valeurs suivantes sont valides :</p>
     <ul>
      <li>query.joins.none : jointures non prises en charge. Les requêtes peuvent utiliser un seul sélecteur.</li>
-     <li>query.joins.inner : prise en charge des jointures internes.</li>
-     <li>query.joins.inner.outer : prise en charge des jointures internes et externes.</li>
+     <li>query.joins.inner : prise en charge des jointures internes.</li>
+     <li>query.joins.inner.outer : prise en charge des jointures internes et externes.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -413,7 +413,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>query.xpath.doc.order</td>
-   <td>La valeur true indique que le référentiel prend en charge le langage de requête XPath 1.0.</td>
+   <td>La valeur true indique que le référentiel prend en charge le langage de requête XPath 1.0.</td>
   </tr>
   <tr>
    <td>query.jcrpath</td>
@@ -421,39 +421,39 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.xml.import.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’importation de code XML en tant que contenu.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’import de code XML en tant que contenu.</td>
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les noeuds frères (noeuds ayant le même parent) portant le même nom.</td>
+   <td>La valeur true indique que le référentiel prend en charge les nœuds frères (nœuds ayant le même parent) portant le même nom.</td>
   </tr>
   <tr>
    <td>node.type.management.residual.definitions.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les propriétés de nom avec des définitions résiduelles. Lorsqu’il est pris en charge, l’attribut name d’une définition d’élément peut être un astérisque ("*").</td>
+   <td>La valeur true indique que le référentiel prend en charge les propriétés de nom avec des définitions résiduelles. Lorsqu’il est pris en charge, l’attribut name d’une définition d’élément peut être un astérisque (« * »).</td>
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge la création automatique d’éléments enfants (noeuds ou propriétés) d’un noeud lors de sa création.</td>
+   <td>La valeur true indique que le référentiel prend en charge la création automatique d’éléments enfants (nœuds ou propriétés) d’un nœud lors de sa création.</td>
   </tr>
   <tr>
    <td>crx.cluster.master</td>
-   <td>La valeur true indique que ce noeud de référentiel est le noeud maître de la grappe.</td>
+   <td>La valeur true indique que ce nœud de référentiel est le nœud principal du cluster.</td>
   </tr>
   <tr>
    <td>level.1.supported</td>
    <td>La valeur true indique que option.xml.export.support est true et que query.languages a une longueur non nulle.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le contenu non classé. Les noeuds non classés ne font pas partie de la hiérarchie du référentiel.</td>
+   <td>option.unfield.content.supported</td>
+   <td>La valeur true indique que le référentiel prend en charge le contenu non classé. Les nœuds non classés ne font pas partie de la hiérarchie du référentiel.</td>
   </tr>
   <tr>
    <td>jcr.specification.name</td>
-   <td>Nom de la spécification JCR mise en oeuvre par le référentiel.</td>
+   <td>Nom de la spécification JCR mise en œuvre par le référentiel.</td>
   </tr>
   <tr>
    <td>option.versioning.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le contrôle de version complet.</td>
+   <td>La valeur true indique que le référentiel prend en charge le contrôle de version intégral.</td>
   </tr>
   <tr>
    <td>jcr.repository.name</td>
@@ -461,7 +461,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.locking.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge le verrouillage des noeuds. Le verrouillage permet à un utilisateur d’empêcher temporairement d’autres utilisateurs d’apporter des modifications.</td>
+   <td>La valeur true indique que le référentiel prend en charge le verrouillage des nœuds. Le verrouillage permet à un utilisateur ou une utilisatrice d’empêcher temporairement d’autres utilisateurs et utilisatrices d’apporter des modifications.</td>
   </tr>
   <tr>
    <td>jcr.repository.version.display</td>
@@ -469,15 +469,15 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les activités. Les activités sont un ensemble de modifications effectuées dans un espace de travail qui sont fusionnées dans un autre espace de travail.</td>
+   <td>La valeur true indique que le référentiel prend en charge les activités. Les activités sont un ensemble de modifications apportées à un espace de travail, qui sont fusionnées dans un autre espace de travail.</td>
   </tr>
   <tr>
-   <td>node.type.management.multivalued.properties.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge les propriétés de noeud qui peuvent comporter aucune ou plusieurs valeurs.</td>
+   <td>node.type.management.multivalu.properties.supported</td>
+   <td>La valeur true indique que le référentiel prend en charge les propriétés de nœud qui peuvent comporter aucune ou plusieurs valeurs.</td>
   </tr>
   <tr>
    <td>option.retention.supported</td>
-   <td>La valeur true indique que le référentiel prend en charge l’utilisation d’applications de gestion de la rétention externes pour appliquer des stratégies de rétention au contenu et prend en charge la rétention et la mise à jour.</td>
+   <td>La valeur true indique que le référentiel prend en charge l’utilisation d’applications de gestion de la rétention externes pour appliquer des politiques de rétention au contenu et prend en charge la rétention et la publication.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
@@ -500,13 +500,13 @@ Informations sur le référentiel CRX
 
 **BackupWasSuccessful** La valeur true indique qu’aucune erreur ne s’est produite lors de la sauvegarde actuelle ou qu’aucune sauvegarde n’est en cours. La valeur false indique qu’une erreur s’est produite lors de la sauvegarde actuelle. Lecture seule.
 
-**BackupResult** Statut de la sauvegarde actuelle. Les valeurs possibles sont les suivantes :
+**BackupResult** Statut de la sauvegarde actuelle. Les valeurs suivantes sont valides :
 
-* Sauvegarde en cours : une sauvegarde est en cours d&#39;exécution.
-* Sauvegarde annulée : la sauvegarde a été annulée.
+* Sauvegarde en cours : une sauvegarde est en cours d’exécution.
+* Sauvegarde annulée : la sauvegarde a été annulée.
 * Sauvegarde terminée avec une erreur : une erreur s’est produite lors de la sauvegarde. Le message d’erreur fournit des informations sur la cause.
-* Sauvegarde terminée : la sauvegarde a réussi.
-* Aucune sauvegarde exécutée jusqu’à présent : aucune sauvegarde en cours.
+* Sauvegarde terminée : la sauvegarde a réussi.
+* Aucune sauvegarde exécutée jusqu’à présent : aucune sauvegarde en cours.
 
 Lecture seule.
 
@@ -530,7 +530,7 @@ Lecture seule.
 
 * Arguments :
 
-   * name : valeur String qui représente le nom du nouvel espace de travail.
+   * nom : valeur String qui représente le nom du nouvel espace de travail.
 
 * Valeur renvoyée : aucune
 
@@ -538,20 +538,20 @@ Lecture seule.
 
 * Arguments :
 
-   * delete : valeur booléenne, qui indique si les éléments inutilisés du référentiel doivent être supprimés. La valeur true entraîne la suppression des nœuds et des propriétés inutilisés. La valeur false entraîne l’analyse de tous les noeuds, mais aucun n’est supprimé.
+   * delete : valeur booléenne, qui indique si les éléments inutilisés du référentiel doivent être supprimés. La valeur true entraîne la suppression des nœuds et des propriétés inutilisés. La valeur false entraîne l’analyse de tous les nœuds, mais aucun n’est supprimé.
 
 * Valeur renvoyée : aucune
 
 **stopDataStoreGarbageCollection** Arrête le nettoyage en cours d’un entrepôt de données.
 
-* Arguments : aucun
-* Valeur renvoyée : représentation sous forme de chaîne de l’état actuel
+* Arguments : aucun
+* Valeur renvoyée : représentation sous forme de chaîne du statut actuel.
 
 **startBackup** Sauvegarde les données du référentiel dans un fichier ZIP.
 
 * Arguments :
 
-   * `target` : (facultatif) valeur de `String`, qui représente le nom du fichier ZIP ou d’un répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez pas d’extension de nom de fichier.
+   * `target` : (facultatif) valeur de `String`, qui représente le nom du fichier ZIP ou d’un répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez aucune extension de nom de fichier.
 
      Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
 
@@ -563,27 +563,27 @@ Lecture seule.
 
 **cancelBackup** Arrête le processus de sauvegarde en cours et supprime l’archive temporaire créée par le processus pour archiver les données.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
-**blockRepositoryWrites** Empêche d’apporter des modifications aux données du référentiel. Tous les écouteurs de sauvegarde du référentiel sont informés du bloc.
+**blockRepositoryWrites** Empêche d’apporter des modifications aux données du référentiel. Tous les listeners de sauvegarde du référentiel sont informés du bloc.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
-**unblockRepositoryWrites** Supprime le blocage du référentiel. Tous les écouteurs de sauvegarde du référentiel sont informés de la suppression du bloc.
+**unblockRepositoryWrites** Supprime le blocage du référentiel. Tous les listeners de sauvegarde du référentiel sont informés de la suppression du bloc.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **startTarOptimization** Commence le processus d’optimisation du fichier TAR à l’aide de la valeur par défaut pour tarOptimizationDelay.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **stopTarOptimization** Interrompt l’optimisation du fichier TAR.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
@@ -594,12 +594,12 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**becomeClusterMaster** Définit ce nœud de référentiel comme nœud maître du cluster. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce noeud est ensuite défini comme noeud maître et redémarre, ce qui entraîne tous les autres noeuds de la grappe (c’est-à-dire ceux qui sont contrôlés par le maître) à se connecter à cette instance.
+**becomeClusterMaster** Définit ce nœud de référentiel comme nœud maître du cluster. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce nœud est ensuite défini comme nœud principal et redémarre, ce qui fait que tous les autres nœuds du cluster (c’est-à-dire ceux qui sont contrôlés par le nœud principal) se connectent à cette instance.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
-**joinCluster** Ajoute ce référentiel à un cluster en tant que nœud contrôlé par le nœud principal du cluster. Indiquez un nom d’utilisateur et un mot de passe à des fins d’authentification. La connexion utilise l’authentification de base. Les informations d’identification de sécurité sont codées en base 64 avant d’être envoyées au serveur.
+**joinCluster** Ajoute ce référentiel à un cluster en tant que nœud contrôlé par le nœud principal du cluster. Vous devez fournir un nom d’utilisateur ou d’utilisatrice et un mot de passe pour l’authentification. La connexion utilise l’authentification de base. Les informations d’identification de sécurité sont codées en base 64 avant d’être envoyées au serveur.
 
 * Arguments :
 
@@ -646,7 +646,7 @@ Valeur du champ TimeSeries pour chaque type de statistiques défini par `org.apa
 
 ### Attributs {#attributes-1}
 
-Les attributs suivants sont fournis pour chaque type de statistique signalé :
+Les attributs suivants sont fournis pour chaque type de statistique signalé :
 
 * ValuePerSecond : valeur mesurée par seconde au cours de la dernière minute. Lecture seule.
 * ValuePerMinute : valeur mesurée par minute au cours de la dernière heure. Lecture seule.
@@ -657,8 +657,8 @@ Les attributs suivants sont fournis pour chaque type de statistique signalé :
 
 Informations statistiques sur les requêtes de référentiel.
 
-* Domaine : com.adobe.granite
-* Type : QueryStat
+* Domaine : com.adobe.granite
+* Type : QueryStat
 
 ### Attributs {#attributes-2}
 
@@ -674,12 +674,12 @@ Informations statistiques sur les requêtes de référentiel.
 
 **clearSlowQueriesQueue** Supprime toutes les requêtes de la liste SlowQueries.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **clearPopularQueriesQueue** Supprime toutes les requêtes de la liste PopularQueries.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 ## Agents de réplication {#replication-agents}
@@ -735,21 +735,21 @@ Lecture-écriture.
 
 **queueForceRetry** Pour les files d’attente bloquées, exécute la commande retry dans la file d’attente.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **queueClear** Supprime toutes les tâches de la file d’attente.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 ## Moteur Sling {#sling-engine}
 
 Fournit des statistiques sur les requêtes HTTP afin que vous puissiez surveiller les performances du service SlingRequestProcessor.
 
-* Domaine : org.apache.sling
-* Type : moteur
-* Propriétés : {service=RequestProcessor}
+* Domaine : org.apache.sling
+* Type : moteur
+* Propriétés : {service=RequestProcessor}
 
 ### Attributs {#attributes-4}
 
@@ -767,7 +767,7 @@ Fournit des statistiques sur les requêtes HTTP afin que vous puissiez surveille
 
 **resetStatistics** Définit toutes les statistiques sur zéro. Réinitialisez les statistiques lorsque vous devez analyser les performances de traitement des requêtes pendant une période spécifique.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **id** Représentation sous forme de chaîne de l’ID du package.
@@ -788,8 +788,8 @@ Fournit des statistiques sur les requêtes HTTP afin que vous puissiez surveille
 
 Informations sur le processus de démarrage et le lanceur de démarrage rapide.
 
-* Domaine : com.adobe.granite.quickstart
-* Type : lanceur
+* Domaine : com.adobe.granite.quickstart
+* Type : lanceur
 
 ### Opérations {#operations-5}
 
@@ -806,7 +806,7 @@ Arguments :
 
 Appelle la méthode startupFinished du lanceur du serveur. La méthode tente d’ouvrir la page d’accueil dans un navigateur web.
 
-* Arguments : aucun
+* Arguments : aucun
 * Valeur renvoyée : aucune
 
 **startupProgress**
@@ -814,7 +814,7 @@ Appelle la méthode startupFinished du lanceur du serveur. La méthode tente d�
 Définit la valeur de fin du processus de démarrage du serveur. La barre de progression de la fenêtre QuickStart représente la valeur de fin.
 
 * Arguments :
-   * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que 30 % a terminé.
+   * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que le processus est à 30 % d’achèvement.
 * Valeur renvoyée : aucune.
 
 ## Services tiers {#third-party-services}
@@ -829,7 +829,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
    <th>Classe MBean</th>
   </tr>
   <tr>
-   <td>Mise en oeuvre JMI</td>
+   <td>JMImplementation</td>
    <td>MBeanServerDelegate</td>
    <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerDelegate.html">javax.management.MBeanServerDelegate</a></td>
   </tr>
@@ -850,7 +850,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
      <li>MemoryPool</li>
      <li>OperatingSystem</li>
      <li>Runtime</li>
-     <li>Thread</li>
+     <li>Threading</li>
     </ul> </td>
    <td>package <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>
   </tr>
@@ -864,7 +864,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
    <td>
     <ul>
      <li>bundleState</li>
-     <li>structure</li>
+     <li>framework</li>
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
@@ -873,29 +873,29 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
  </tbody>
 </table>
 
-## Utilisation de la console JMX {#using-the-jmx-console}
+## Utiliser la console JMX {#using-the-jmx-console}
 
-La console JMX affiche des informations sur plusieurs services exécutés sur le serveur :
+La console JMX affiche des informations sur plusieurs services exécutés sur le serveur :
 
 * Attributs : propriétés de service, comme des configurations ou des données d’exécution. Les attributs peuvent être en lecture seule ou en lecture-écriture.
-* Opérations : commandes que vous pouvez appeler sur le service.
+* Opérations : commandes que vous pouvez appeler sur le service.
 
 Les MBeans déployés avec un service OSGi exposent les attributs et les opérations du service dans la console. Le MBean détermine les attributs et les opérations exposés et si les attributs sont en lecture seule ou en lecture/écriture.
 
 La page principale de la console JMX comporte un tableau des services. Chaque ligne du tableau représente un service exposé par un MBean.
 
-1. Ouvrez la console web et cliquez sur l’onglet JMX . ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Ouvrez la console web et cliquez sur l’onglet JMX. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Cliquez sur une valeur de cellule pour un service afin d’afficher les attributs et les opérations du service.
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
-4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Invoquer.
+4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.
 
-## Utilisation d’applications JMX externes pour la surveillance {#using-external-jmx-applications-for-monitoring}
+## Utiliser des applications JMX externes pour la surveillance {#using-external-jmx-applications-for-monitoring}
 
-CRX permet aux applications externes d’interagir avec les beans gérés (MBeans) par le biais de [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utilisation de consoles génériques telles que [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou des applications de surveillance spécifiques à un domaine, permet d’obtenir et de définir des configurations et des propriétés CRX, ainsi que de surveiller les performances et l’utilisation des ressources.
+CRX permet aux applications externes d’interagir avec les beans gérés (MBeans) par le biais de [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Utiliser des consoles génériques telles que [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou des applications de surveillance spécifiques à un domaine permet d’obtenir et de définir des configurations et des propriétés CRX, ainsi que de surveiller les performances et l’utilisation des ressources.
 
-### Utilisation de JConsole pour se connecter à CRX {#using-jconsole-to-connect-to-crx}
+### Utiliser JConsole pour se connecter à CRX {#using-jconsole-to-connect-to-crx}
 
-Pour vous connecter à CRX à l’aide de JConsole, procédez comme suit :
+Pour vous connecter à CRX à l’aide de JConsole, procédez comme suit :
 
 1. Ouvrez une fenêtre de terminal.
 1. Saisissez la commande suivante :
@@ -906,7 +906,7 @@ JConsole démarre et la fenêtre JConsole s’affiche.
 
 ### Connexion à un processus CRX local {#connecting-to-a-local-crx-process}
 
-JConsole affiche une liste des processus locaux de machine virtuelle Java. La liste contient deux processus QuickStart. Sélectionnez le processus &quot;ENFANT&quot; de démarrage rapide dans la liste des processus locaux (généralement celui avec le PID supérieur).
+JConsole affiche une liste des processus locaux de machine virtuelle Java. La liste contient deux processus QuickStart. Sélectionnez le processus « ENFANT » de démarrage rapide dans la liste des processus locaux (généralement celui avec la PID supérieure).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
@@ -918,9 +918,9 @@ Pour se connecter à un processus CRX distant, la JVM qui héberge le processus 
 
 `com.sun.management.jmxremote.port=portNum`
 
-Dans la propriété ci-dessus, `portNum` correspond au numéro de port sur lequel vous souhaitez activer les connexions RMI JMX. Veillez à spécifier un numéro de port inutilisé. Outre la publication d’un connecteur RMI pour l’accès local, la définition de cette propriété publie un connecteur RMI supplémentaire dans un registre privé en lecture seule sur le port spécifié à l’aide d’un nom bien connu, &quot;jmxrmi&quot;.
+Dans la propriété ci-dessus, `portNum` correspond au numéro de port sur lequel vous souhaitez activer les connexions RMI JMX. Veillez à spécifier un numéro de port inutilisé. Outre la publication d’un connecteur RMI pour l’accès local, la définition de cette propriété publie un connecteur RMI supplémentaire dans un registre privé en lecture seule sur le port spécifié à l’aide d’un nom bien connu, « jmxrmi ».
 
-Par défaut, lorsque vous activez l’agent JMX pour la surveillance à distance, il utilise l’authentification par mot de passe basée sur un fichier de mot de passe qui doit être spécifié à l’aide de la propriété système suivante lors du démarrage de la machine virtuelle Java :
+Par défaut, lorsque vous activez l’agent JMX pour la surveillance à distance, il utilise l’authentification par mot de passe basée sur un fichier de mot de passe qui doit être spécifié à l’aide de la propriété système suivante lors du démarrage de la machine virtuelle Java :
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
@@ -941,7 +941,7 @@ Après la connexion au processus de démarrage rapide, JConsole fournit une gamm
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Pour accéder aux options de configuration et de surveillance internes de CRX, accédez à l’onglet MBeans , puis, dans l’arborescence de contenu hiérarchique à gauche, sélectionnez la section Attributs ou Opérations qui vous intéresse. Par exemple, la section com.adobe.granite/Repository/Operations .
+Pour accéder aux options de surveillance et de configuration internes de CRX, accédez à l’onglet MBeans et, dans l’arborescence à gauche, sélectionnez la section Attributs ou Opérations qui vous intéresse. Par exemple, la section com.adobe.granite/Repository/Operations.
 
 Dans cette section, sélectionnez l’attribut ou l’opération de votre choix dans le volet de gauche.
 

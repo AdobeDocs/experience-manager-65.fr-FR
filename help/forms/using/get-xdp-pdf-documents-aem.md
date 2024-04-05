@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '671'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 
 1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier dans lequel vous souhaitez charger le formulaire ou le dossier contenant les formulaires.
-1. Dans la barre d’outils Actions, sélectionnez **Créer > Téléchargement du fichier**.
+1. Dans la barre d’outils Actions, sélectionnez **Créer > Charger le fichier**.
 
    ![Fichiers de l’option de stockage local dans l’onglet Créer](assets/step.png)
 

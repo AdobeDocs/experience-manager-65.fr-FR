@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '11187'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
 
 1. **Chargez les vidéos Dynamic Media** en procédant comme suit :
 
-   * Créez votre propre profil de codage vidéo. Vous pouvez également simplement utiliser la variable prédéfinie _Codage vidéo adaptatif_ qui est fourni avec Dynamic Media.
+   * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptif_ prédéfini fourni avec Dynamic Media.
 
       * [Création d’un profil de codage vidéo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * En savoir plus sur les [bonnes pratiques relatives au codage vidéo](#best-practices-for-encoding-videos).
@@ -148,7 +148,7 @@ Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les 
 * Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android™, BlackBerry® et Windows Phone notamment).
 
-La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html/lang=fr#video).
 
 Dynamic Media prend en charge la lecture vidéo mobile pour la vidéo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -513,7 +513,7 @@ Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite 
 
 **Pour afficher un rapport vidéo, procédez comme suit :**
 
-1. Dans le coin supérieur gauche de Experience Manager, sélectionnez le logo du Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports vidéo]**.
 1. Dans la page Rapport vidéo, effectuez l’une des opérations suivantes :
 
    * Dans le coin supérieur droit, sélectionnez l’icône **Actualiser le rapport vidéo**.
@@ -877,7 +877,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
    Reportez-vous à la section [WebVTT : The web video text tracks format](https://w3c.github.io/webvtt/).
 
-   De nombreux sites web offrent des outils et des services gratuits et de grande qualité que vous pouvez utiliser pour créer des fichiers de sous-titres/sous-titres WebVTT en dehors de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   De nombreux sites Web proposent des outils et des services gratuits et payants que vous pouvez utiliser pour créer des fichiers de sous-titres WebVTT en dehors de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -885,7 +885,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
-   Suivez les instructions à l’écran d’un site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
+   Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
 
    >[!NOTE]
    >
@@ -902,7 +902,7 @@ Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL,
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour une expérience de visionneuse de vidéos contextuelle, sélectionnez **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos pop-up, sélectionnez **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -973,7 +973,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <ol>
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
-       <li>Dans le rail de gauche, cliquez sur le nom du paramètre prédéfini de visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
+       <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
        <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur <strong>URL</strong>.</li>
        <li>Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un simple éditeur de texte.</li>
        <li>Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
@@ -985,7 +985,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <ol>
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
-       <li>Dans le rail de gauche, cliquez sur le nom du paramètre prédéfini de visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
+       <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
        <li>En bas du rail gauche, cliquez sur <strong>Intégrer</strong>.</li>
        <li>Dans la boîte de dialogue Code intégré, sélectionnez et copiez le code entier dans le Presse-papiers, puis collez-le dans un simple éditeur de texte.</li>
        <li>Ajoutez le code intégré de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
@@ -1022,22 +1022,22 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode �
    * [Téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Accédez à une ressource vidéo chargée pour laquelle vous souhaitez modifier l’image miniature.
-1. En mode de sélection de ressources, soit **[!UICONTROL Mode Liste]** ou **[!UICONTROL Mode Carte]**, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez la **[!UICONTROL Propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. En mode de sélection de ressources, soit **[!UICONTROL Vue liste]** soit **[!UICONTROL Vue carte]**, sélectionnez la ressource vidéo.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Propriétés]** (cercle contenant un « i »).
 1. Sur la page Propriétés de la vidéo, sélectionnez **[!UICONTROL Modifier la miniature]**.
 1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
 
    * Pour utiliser une image de la vidéo comme nouvelle miniature :
 
-      * Dans la barre d’outils, sélectionnez **[!UICONTROL Sélectionner une image dans la vidéo]**.
-      * Sélectionnez le bouton Lecture , puis le bouton Pause sur l’image que vous souhaitez capturer comme nouvelle miniature de la vidéo.
+      * Dans la barre d’outils, choisissez **[!UICONTROL Sélectionner une image dans la vidéo]**.
+      * Sélectionnez le bouton Lecture, puis le bouton Pause sur l’image à capturer comme nouvelle miniature de la vidéo.
 
    * Pour utiliser une ressource image comme nouvelle miniature :
 
-      * Dans la barre d’outils, sélectionnez **[!UICONTROL Sélectionner une miniature dans Assets]**.
-      * Sélectionner **[!UICONTROL Sélectionner la miniature]**.
+      * Dans la barre d’outils, choisissez **[!UICONTROL Sélectionner une miniature dans Ressources]**.
+      * Choisissez **[!UICONTROL Sélectionner la miniature]**.
       * Accédez à une ressource d’image téléchargée et publiée précédemment que vous souhaitez utiliser. La ressource est automatiquement redimensionnée afin de servir d’image miniature pour la vidéo.
-      * Sélectionnez la ressource image, puis sélectionnez **[!UICONTROL Sélectionner]**.
+      * Sélectionnez la ressource image, puis choisissez **[!UICONTROL Sélectionner]**.
 
 1. Sur la page Modifier la miniature, sélectionnez **[!UICONTROL Enregistrer la modification]**.
 1. Sur la page Propriétés de la vidéo, dans le coin supérieur droit, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
@@ -1061,15 +1061,15 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo, procédez comme suit :**
 
 1. Accédez à une ressource vidéo téléchargée à laquelle vous souhaitez ajouter une miniature.
-1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Afficher les propriétés]** (cercle contenant un « i »).
 1. Sur la page Propriétés de la vidéo, sélectionnez **[!UICONTROL Modifier la miniature]**.
-1. Sur la page Modifier la miniature, dans la barre d’outils, sélectionnez **[!UICONTROL Sélectionner une image]**.
+1. Sur la page Modifier la miniature, dans la barre d’outils, choisissez **[!UICONTROL Sélectionner une image]**.
 
    Dynamic Media génère une série de miniatures de votre vidéo, en fonction de l’intervalle par défaut ou personnalisé.
 
 1. Prévisualisez les images miniatures générées, puis sélectionnez celle que vous souhaitez ajouter à votre vidéo.
-1. Sélectionner **[!UICONTROL Enregistrer la modification]**.
+1. Sélectionnez **[!UICONTROL Enregistrer la modification]**.
 
    La miniature de la vidéo est mise à jour afin d’utiliser la miniature que vous avez sélectionnée. Si vous décidez par la suite de modifier la miniature, vous pouvez revenir à la page **[!UICONTROL Modifier la miniature]** et en sélectionner une nouvelle.
 
@@ -1085,21 +1085,21 @@ Consultez la section [Ajout d’une miniature de vidéo](#adding-a-video-thumbna
 
 **Pour configurer l’intervalle par défaut auquel les miniatures vidéo sont créées, procédez comme suit :**
 
-1. Dans Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Dans la page CRXDE Lite, dans le panneau de répertoire à gauche, accédez à `o etc/dam/imageserver/configuration/jcr:content/settings.`.
 
-   si le panneau des répertoires n’est pas visible, sélectionnez l’icône &quot; située à gauche de l’onglet Accueil .
+   Si le panneau des répertoires n’est pas visible, sélectionnez l’icône >> à gauche de l’onglet Accueil.
 
-1. Dans le panneau inférieur droit, dans l’onglet Propriétés, double-sélectionnez `thumbnailtime`.
+1. Sur le panneau en bas à droite, dans l’onglet Propriétés, double-cliquez sur `thumbnailtime`.
 1. Dans la boîte de dialogue **[!UICONTROL Modifier thumbnailtime]**, utilisez les champs de texte pour saisir des valeurs d’intervalle sous la forme de pourcentages.
 
-   * Sélectionnez l’icône plus (+) si vous souhaitez ajouter un ou plusieurs champs de valeur d’intervalle. Si nécessaire, faites défiler la page jusqu’en bas de la boîte de dialogue pour afficher l’icône.
-   * Sélectionnez l’icône représentant un signe moins (-) à droite d’un champ de valeur d’intervalle si vous souhaitez le supprimer de la liste.
-   * Sélectionnez l’icône de flèche vers le haut et l’icône de flèche vers le bas si vous souhaitez réorganiser les valeurs de l’intervalle.
+   * Sélectionnez l’icône plus (+) pour ajouter un ou plusieurs champs de valeur d’intervalle. Si nécessaire, faites défiler la page jusqu’en bas de la boîte de dialogue pour afficher l’icône.
+   * Sélectionnez l’icône du signe moins (-) à droite du champ de valeur d’intervalle si vous souhaitez le supprimer de la liste.
+   * Sélectionnez la flèche vers le haut ou vers le bas si vous souhaitez réorganiser les valeurs d’intervalle.
 
-1. Sélectionner **[!UICONTROL OK]** et revenez à l’onglet Propriétés .
-1. Dans le coin supérieur gauche de la page du CRXDE Lite, sélectionnez **[!UICONTROL Enregistrer tout]**, puis sélectionnez l’icône Retour à l’accueil dans le coin supérieur gauche pour revenir au Experience Manager.
+1. Sélectionnez **[!UICONTROL OK]** pour retourner à l’onglet Propriétés.
+1. Près du coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Enregistrer tout]**, puis l’icône Retour à l’accueil dans le coin supérieur gauche pour revenir à Experience Manager.
 
    Consultez la section [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 
@@ -1110,12 +1110,12 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo personnalisée, procédez comme suit :**
 
 1. Accédez à une ressource vidéo chargée à laquelle vous souhaitez ajouter une miniature vidéo personnalisée.
-1. En mode de sélection des ressources, en mode Liste ou Carte, sélectionnez la ressource vidéo.
-1. Dans la barre d’outils, sélectionnez la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. En mode de sélection des ressources, en vue Liste ou Carte, sélectionnez la ressource vidéo.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Afficher les propriétés]** (cercle contenant un « i »).
 1. Sur la page Propriétés de la vidéo, sélectionnez **[!UICONTROL Modifier la miniature]**.
 1. Sur la page Modifier la miniature, dans la barre d’outils, sélectionnez **[!UICONTROL Charger une nouvelle miniature]**.
-1. Accédez à une miniature que vous souhaitez utiliser, sélectionnez-la, puis sélectionnez **[!UICONTROL Ouvrir]** pour commencer à charger l’image dans Experience Manager. Après le téléchargement, veillez à publier l’image.
-1. Une fois l’image téléchargée et publiée, dans la page Modifier la miniature, sélectionnez **[!UICONTROL Enregistrer les modifications]**.
+1. Naviguez jusqu’à la miniature que vous souhaitez utiliser, sélectionnez-la, puis sélectionnez **[!UICONTROL Ouvrir]** pour commencer à charger l’image dans Experience Manager. Après le chargement, veillez à publier l’image.
+1. Une fois l’image chargée et publiée, sur la page Modifier la miniature, sélectionnez **[!UICONTROL Enregistrer les modifications]**.
 
    La miniature personnalisée est ajoutée à votre vidéo.
 

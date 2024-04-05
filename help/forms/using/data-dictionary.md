@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3842'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -45,10 +45,10 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 
 >[!NOTE]
 >
->Lorsque plusieurs lettres requièrent des éléments similaires, vous pouvez créer un dictionnaire de données commun. Cependant, un dictionnaire de données volumineux contenant un grand nombre d’éléments peut entraîner des problèmes de performances lors de l’utilisation du dictionnaire de données et du chargement des éléments, comme dans les lettres et les fragments de document. Si vous rencontrez des problèmes de performances, essayez de créer des dictionnaires de données distincts pour chaque lettre.
+>Lorsque plusieurs lettres requièrent des éléments similaires, vous pouvez créer un dictionnaire de données commun. Toutefois, un dictionnaire de données volumineux, contenant un grand nombre d’éléments, peut provoquer des problèmes de performances lors de son utilisation et du chargement des éléments, notamment dans les lettres et les fragments de document. Si vous rencontrez des problèmes de performances, essayez de créer des dictionnaires de données distincts pour chaque lettre.
 
 1. Choisissez **Formulaires** > **Dictionnaires de données**.
-1. Sélectionner **Créer un dictionnaire de données**.
+1. Sélectionnez **Créer un dictionnaire de données**.
 1. Dans l’écran de propriétés, ajoutez ce qui suit :
 
    * **Titre :** (facultatif) Saisissez le titre pour le dictionnaire de données. Le titre ne doit pas nécessairement être unique et peut contenir des caractères spéciaux et des caractères dans une langue autre que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
@@ -56,11 +56,11 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 
    * **Description** : (facultatif) Description du dictionnaire de données.
    * **Balises :** (facultatif) Pour créer une balise personnalisée, saisissez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez voir votre balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
-   * **Propriétés étendues**: (facultatif) sélectionnez **Ajouter un champ** pour spécifier des attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
+   * **Propriétés étendues** : (facultatif) sélectionnez **Ajouter un champ** pour spécifier des attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
 
    ![Propriétés du dictionnaire de données spécifiées en allemand](do-not-localize/1_ddproperties.png)
 
-1. (Facultatif) Pour charger une définition de schéma XSD pour votre dictionnaire de données, dans le volet Structure du dictionnaire de données, sélectionnez **Chargement d’un schéma XML**. Accédez au fichier XSD, sélectionnez-le, puis sélectionnez **Ouvrir**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez ajuster les noms d’affichage et les descriptions des éléments dans le dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
+1. (Facultatif) Pour charger une définition de schéma XSD pour votre dictionnaire de données, sélectionnez **Charger un schéma XML** dans le volet Structure du dictionnaire de données. Recherchez le fichier XSD, sélectionnez-le et cliquez sur **Ouvrir**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez ajuster les noms d’affichage et les descriptions des éléments dans le dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
 
    Pour plus d’informations sur les éléments de dictionnaire de données calculés, consultez la section [Eléments de dictionnaire de données calculés](#computedddelements).
 
@@ -71,7 +71,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 1. Sélectionnez **Suivant**.
 1. Dans l’écran Ajouter des propriétés, ajoutez les éléments au dictionnaire de données. Vous pouvez également ajouter/supprimer des éléments et modifier leurs détails si vous avez chargé un schéma pour obtenir une structure de base du dictionnaire de données.
 
-   Vous pouvez sélectionner les trois points sur le côté droit d’un élément et ajouter un élément à la structure du dictionnaire de données.
+   Vous pouvez appuyer sur les trois points à droite d’un élément et ajouter un élément à la structure du dictionnaire de données.
 
    ![1_2_createanelement](assets/1_2_createanelement.png)
 
@@ -95,7 +95,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 
    ![2_addddproperties_basic](assets/2_addddpropertiesbasic.png)
 
-1. (Facultatif) Après la sélection d’un élément, vous pouvez ajouter des propriétés dans l’onglet Avancé (attributs). Vous pouvez également sélectionner **Ajouter un champ** et étendez les propriétés d’un élément DD.
+1. (Facultatif) Après la sélection d’un élément, vous pouvez ajouter des propriétés dans l’onglet Avancé (attributs). Vous pouvez également sélectionner **Ajouter un champ** et étendre les propriétés d’un élément de dictionnaire de données.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -126,11 +126,11 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 1. Procédez de l’une des manières suivantes pour modifier le dictionnaire de données :
 
-   * Pointez sur un dictionnaire de données et sélectionnez Modifier.
-   * Sélectionnez un dictionnaire de données, puis cliquez sur Modifier dans l’en-tête.
-   * Pointez sur un dictionnaire de données et sélectionnez Sélectionner. Sélectionnez ensuite Modifier dans l’en-tête.
+   * Pointez sur un dictionnaire de données, puis sélectionnez Modifier.
+   * Sélectionnez un dictionnaire de données, puis sélectionnez Modifier dans l’en-tête.
+   * Pointez sur un dictionnaire de données, puis sélectionnez Sélectionner. Ensuite, sélectionnez Modifier dans l’en-tête.
 
-   Ou sélectionnez sur un dictionnaire de données pour l’afficher.
+   Ou sélectionnez un dictionnaire de données pour l’afficher.
 
 1. Dans le dictionnaire de données, sélectionnez un élément simple pour le sélectionner. Les éléments composites et de collection ne comportent pas de références.
 
@@ -144,14 +144,14 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
    ![lentcontent](assets/lentcontent.png)
 
-1. Pour afficher le contenu prêté pour un autre élément, sélectionnez l’élément .
+1. Pour afficher le contenu prêté pour un autre élément, sélectionnez l’élément.
 1. Pour afficher une ressource qui fait référence à l’élément, sélectionnez son nom. Le navigateur affiche la ressource, la lettre ou la communication interactive.
 
 ## Utilisation des données de test {#working-with-test-data}
 
-1. Sur la page Dictionnaires de données, sélectionnez **Sélectionner**.
-1. Sélectionnez un dictionnaire de données pour lequel vous souhaitez télécharger des données de test, puis sélectionnez **Télécharger des exemples de données XML**.
-1. Sélectionner **OK** dans le message d’alerte. Un fichier XML se télécharge.
+1. Sur la page Dictionnaires de données, sélectionnez **Sélectionner**.
+1. Sélectionnez un dictionnaire de données dont vous souhaitez télécharger les données de test, puis sélectionnez **Télécharger lʼexemple de données XML**.
+1. Sélectionnez **OK** dans le message d’alerte. Un fichier XML se télécharge.
 1. Ouvrez le fichier XML avec le Bloc-notes ou un autre éditeur XML. Le fichier XML a la même structure que le dictionnaire de données et les chaînes d’espaces réservés dans les éléments. Remplacez les chaînes d’espace réservé par les données avec lesquelles vous souhaitez tester une lettre.
 
    ```xml
@@ -197,7 +197,8 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 1. Une fois les entrées de données réalisées, vous pouvez utiliser ce fichier XML lorsque vous prévisualisez une lettre avec des données de test.
 
-   Vous pouvez ajouter ces données de test avec DD (sélectionnez DD, Télécharger les données de test et charger ce fichier XML). Après cette étape, lorsque vous prévisualisez une lettre normalement (et non de manière personnalisée), ces données XML sont utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis télécharger ce fichier XML.
+   Vous pouvez ajouter ces données de test avec DD (sélectionnez DD, cliquez sur Charger des données de test et chargez ce fichier XML).
+Après cette étape, lorsque vous prévisualiserez une lettre normalement (et non de façon personnalisée), ces données XML seront utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis charger ce fichier XML.
 
 ## Exemples {#samples}
 
@@ -410,9 +411,9 @@ L’exportation d’un schéma XSD nécessite un mappage de données spécifique
 
 Une fois que vous avez créé un dictionnaire de données, vous pouvez le télécharger sous forme d’un fichier de données d’exemple XML pour y effectuer des entrées de texte.
 
-1. Dans la page Dictionnaires de données, sélectionnez **Sélectionner** puis sélectionnez un dictionnaire de données pour le sélectionner.
+1. Dans la page Dictionnaires de données, sélectionnez **Sélectionner**, puis sélectionnez un dictionnaire de données.
 1. Sélectionnez **Télécharger l’exemple de données XML**.
-1. Sélectionner **OK** dans le message d’alerte.
+1. Sélectionnez **OK** dans le message d’alerte.
 
    Correspondence Management crée un fichier XML basé sur la structure du dictionnaire de données sélectionné et le télécharge vers votre ordinateur avec le nom &lt;nom-du-dictionnaire-de-données>-SampleData. Vous pouvez désormais modifier ce fichier dans un éditeur XML ou de texte pour créer des entrées de données lors de la [création d’une lettre](../../forms/using/create-letter.md).
 
@@ -422,9 +423,9 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votr
 
 ### Localisation du dictionnaire de données {#localize-data-dictionary}
 
-1. Sur la page Dictionnaires de données, sélectionnez **Sélectionner** puis sélectionnez un dictionnaire de données pour le sélectionner.
-1. Sélectionner **Télécharger les données de localisation**.
-1. Sélectionner **OK** dans l’alerte. Correspondence Management télécharge un fichier zip dans votre ordinateur avec pour nom DataDictionary-&lt;DDname>.zip.
+1. Sur la page de dictionnaires de données, sélectionnez **Sélectionner** puis sélectionnez un dictionnaire de données.
+1. Sélectionnez **Télécharger des données de localisation**.
+1. Sélectionnez **OK** dans l’alerte. Correspondence Management télécharge un fichier zip dans votre ordinateur avec pour nom DataDictionary-&lt;DDname>.zip.
 1. Le fichier .zip contient un fichier .properties. Ce fichier définit le dictionnaire de données téléchargé. Le contenu du fichier de propriétés est semblable au contenu suivant :
 
    ```ini

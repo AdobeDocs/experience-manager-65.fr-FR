@@ -1,6 +1,6 @@
 ---
-title: Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA
-description: Découvrez comment synchroniser les formulaires avec les fichiers XFA/XDP. Il réutilise les champs des formulaires synchronisés avec les modifications apportées aux champs correspondants dans les fichiers XFA/XDP.
+title: Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA
+description: Découvrez comment synchroniser des formulaires avec des fichiers XFA/XDP. Les champs des formulaires synchronisés sont réutilisés avec les modifications apportées aux champs correspondants dans les fichiers XFA/XDP.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
-# Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 ## Présentation {#introduction}
 
-Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`.). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, consultez la section [Créer un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, consultez la section [Créer un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 

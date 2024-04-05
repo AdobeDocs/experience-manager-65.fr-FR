@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Lorsque vous utilisez des ressources numériques dans [!DNL Experience Manager],
 
 * **Balisage** : les ressources [!DNL Assets] peuvent être balisées et classifiées. Consultez [Organisation des ressources](/help/assets/organize-assets.md).
 
-* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier chargé. Il peut y avoir un certain nombre de représentations supplémentaires qui sont créées, par exemple, par des étapes de workflow personnalisées ou lorsqu’une ressource est chargée. Les rendus peuvent avoir une taille différente, une résolution différente, un filigrane ajouté ou une autre caractéristique modifiée.
+* **Rendus** : un rendu est une représentation binaire d’une ressource. Les ressources [!DNL Assets] possèdent une représentation principale, à savoir celle du fichier chargé. Elles peuvent en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du chargement de la ressource, par exemple. Les rendus peuvent avoir une taille différente, une résolution différente, un filigrane ajouté ou une autre caractéristique modifiée.
 
 * **Versions** : le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Consultez [Contrôle de version dans  [!DNL Assets]](manage-assets.md#asset-versioning).
 

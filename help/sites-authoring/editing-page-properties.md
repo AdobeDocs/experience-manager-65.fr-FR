@@ -1,12 +1,12 @@
 ---
-title: Modifier les propriétés d’une page de contenu
-description: Définissez les propriétés requises pour une page dans Adobe Experience Manager.
+title: Modification des propriétés d’une page de contenu
+description: Définissez les propriétés requises pour une page dans Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -258,7 +258,7 @@ Vous pouvez définir les propriétés de page :
 
 * Dans la console **Sites** :
 
-   * [Créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un sous-ensemble des propriétés)
+   * [Créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
 
    * En cliquant ou en appuyant sur **Propriétés**
 
@@ -353,7 +353,7 @@ Une fois en mode de modification en bloc, vous pouvez effectuer les opérations 
    * Propriétés communes partageant une valeur commune
 
       * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *all* sont courantes. Si seulement certaines d’entre elles sont communes, elles s’affichent uniquement lors de la modification.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que si elles sont *toutes* communes. Si seulement certaines d’entre elles sont communes, elles s’affichent uniquement lors de la modification.
 
   En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
@@ -370,4 +370,4 @@ Une fois en mode de modification en bloc, vous pouvez effectuer les opérations 
 
 >[!NOTE]
 >
->Le composant de page peut être configuré pour spécifier les champs disponibles pour la modification en masse. Voir [Configuration de votre page pour la modification en masse des propriétés de page](/help/sites-developing/bulk-editing.md).
+>Le composant de page peut être configuré pour spécifier les champs disponibles pour une modification en masse. Voir [Configurer votre page pour une modification en masse des propriétés de page](/help/sites-developing/bulk-editing.md).

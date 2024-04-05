@@ -5,7 +5,7 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2999'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 * L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou, voir la [ressources supplémentaires](#additional-resources) pour plus d’informations.
+Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Vous pouvez également consulter la section [Ressources supplémentaires](#additional-resources) pour plus d’informations.
 
 ## Niveaux d’intégration en mode découplé {#integration-levels}
 
@@ -115,7 +115,7 @@ Ce niveau d’intégration repose sur le niveau 2 en permettant de modifier l�
 
 Si votre objectif est de créer une SPA qui consomme du contenu en toute sécurité depuis AEM, vous pouvez utiliser des fonctionnalités telles que les fragments de contenu pour gérer votre contenu découplé et créer également une SPA avec le framework de l’éditeur de SPA d’AEM.
 
-Avec cet éditeur, la SPA consomme non seulement des contenus issus d’AEM, mais elle est en outre entièrement modifiable dans AEM par les personnes chargées de la création de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
+Avec cet éditeur, la SPA consomme non seulement du contenu issu d’AEM, mais elle est en outre entièrement modifiable dans AEM par les auteurs ou autrices de contenu, ce qui vous donne à la fois la flexibilité d’une diffusion découplée et de la modification replacée dans son contexte au sein d’AEM.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
@@ -195,7 +195,7 @@ Les dossiers peuvent également être limités de manière à n’autoriser que 
 * Empêche les auteurs de créer du contenu n’appartenant pas au dossier.
 * Optimise le processus de création de contenu en filtrant les types de contenu autorisés dans le dossier au cours de la création pour n’afficher que les types de contenu valides.
 
-En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenu headless sur plusieurs canaux afin d’optimiser la réutilisation du contenu. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
+En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenus découplés sur plusieurs canaux afin d’optimiser la réutilisation de ces contenus. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
 
 ##### Définir de bonnes conventions d’affectation de noms {#naming-conventions}
 
@@ -240,7 +240,7 @@ Pour une [mise en œuvre découplée de type général à l’aide d’AEM,](#le
 
 Pour la réussite d’un projet, les performances doivent être prises en compte avant la création d’un contenu.
 
-Assurez-vous de bien comprendre les attentes de vos utilisateurs/visiteurs et concevez-les. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs.
+Veillez à comprendre les attentes de vos utilisateurs et utilisatrices ou visiteurs et visiteuses et concevoir le projet pour eux. Définissez des objectifs de niveau de service (SLO) et mesurez-les pour savoir si vous répondez aux attentes de vos utilisateurs et utilisatrices.
 
 #### Modèles de trafic {#traffic-patterns}
 

@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Dans une visionneuse d’images, vous pouvez également créer des échantillons
 
 Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
 
-Supposons, par exemple, que vous souhaitiez présenter des images de calques avec des couleurs différentes ; les calques sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d&#39;une prise avec un rouge, une avec un vert, et une avec une facture bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs sélectionnent la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
+Supposons que vous souhaitiez présenter des images de casquettes avec des visières de couleurs différentes ; les visières sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise avec une visière rouge, une avec une verte, et une avec une bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs sélectionnent la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 1. [Liez des URL à l’application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
 
-   Experience Manager Assets crée des appels URL pour les visionneuses d’images et les active une fois que vous avez publié la visionneuse d’images. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site web.
+   Experience Manager Assets crée des appels URL pour les visionneuses d’images et les active une fois que vous avez publié la visionneuse d’images. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. En outre, vous pouvez également les intégrer à votre site web.
 
    Sélectionnez la visionneuse d’images, puis, dans le menu déroulant du rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
@@ -112,22 +112,22 @@ Consultez la section [Dynamic Media - Formats d’image matricielle pris en cha
 
 Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
 
-Pour créer une visionneuse d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en évidence les fonctionnalités importantes d’un élément afin que les visiteurs puissent avoir une vue d’ensemble complète de ce qu’il ressemble ou fait.
+Pour créer une visionneuse d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en évidence les caractéristiques importantes d’un élément afin que les utilisateurs et les utilisatrices puissent se faire une idée complète de son aspect ou de ses fonctions.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous qu’elles font au moins 2 000 pixels dans leur dimension la plus grande. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
+Comme les utilisateurs et les utilisatrices peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la plus grande taille des images comporte au moins 2 000 pixels. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
 >[!NOTE]
 >
 >En outre, si vous utilisez des miniatures pour indiquer des échantillons de produit, vous devez effectuer les opérations suivantes :
 >
->Vous avez besoin de vignettes ou de différents clichés d’une même image qui apparaissent dans différentes couleurs, motifs ou finitions. Vous avez également besoin de fichiers miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images présentant la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
+>Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images pour la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
 >
->* Une prise de vue noire, marron et verte de la même veste.
->* Miniature en noir, marron et vert.
+>* Une prise de vue de la même veste en noir, marron et vert.
+>* Une miniature de la veste en noir, marron et vert.
 
 ## Création d’une visionneuse d’images {#creating-image-sets}
 
-Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou de l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
+Vous pouvez créer des visionneuses d’images par le biais de l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Ajouter des images à la visionneuse d’images.
 * Réorganiser des images dans la visionneuse d’images.
 * Supprimer des ressources de la visionneuse d’images.
-* Appliquez des paramètres prédéfinis de visionneuse.
+* Appliquez les paramètres d’affichage prédéfinis.
 * Supprimez la visionneuse d’images.
 
 **Pour modifier une visionneuse d’images, procédez comme suit :**
@@ -243,9 +243,9 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis **[!UICONTROL Modifier]** sur la barre d’outils.
    * Sélectionnez une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon) dans la barre d’outils.
 
-1. Pour modifier les images de la visionneuse d’images, effectuez l’une des opérations suivantes :
+1. Pour modifier les images dans la visionneuse d’images, procédez d’une des manières suivantes :
 
-   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer les éléments).
+   * Pour réorganiser les images, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône Réorganiser pour déplacer des éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, sélectionnez l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, sélectionnez **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]** en haut à droite de la page.
      >[!NOTE]

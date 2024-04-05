@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2246'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ L’apparence et la gestion dépendent du type d’appareil utilisé :
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
-  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer sur l’icône d’information en regard du composant dans la variable **Composants** navigateur (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
+  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer sur l’icône d’informations à côté du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de disposition** :
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -130,7 +130,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
 >[!NOTE]
 >
->Cette option est disponible pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour plus d’informations.
+>Cette option est disponible pour des ressources et des types de composants spécifiques. Reportez-vous à [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-authoring/editing-content.md#inserting-a-component-using-the-assets-browser) pour plus d’informations.
 
 Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
 
@@ -175,7 +175,7 @@ L’arborescence de contenu est un onglet du panneau latéral (ainsi que l’exp
 
 ![Arborescence de contenu](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Une fois ouvert, vous pouvez voir une représentation en arborescence de votre page ou modèle, de sorte qu’il soit plus facile de comprendre comment son contenu est structuré de manière hiérarchique. En outre, sur une page complexe, il est plus facile de passer d’un composant à l’autre de la page.
+Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Lorsqu’il est ouvert, vous pouvez voir une représentation en arborescence de votre page ou modèle. Il est ainsi plus simple de comprendre comment son contenu est structuré de manière hiérarchique. En outre, sur une page complexe, il est plus facile de passer d’un composant à l’autre de la page.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -235,9 +235,9 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez *
 
 Sélectionnez le type de référence approprié pour en savoir plus. Dans certains cas, d’autres actions sont disponibles lorsque vous sélectionnez une référence particulière, notamment :
 
-* **Liens entrants** fournit une liste des pages qui font référence à la page, ainsi qu’un accès direct à **Modifier** l’une de ces pages lorsque vous sélectionnez un lien spécifique.
+* **Liens entrants** fournit une liste des pages qui font référence à cette page, ainsi qu’un lien direct vers l’option **Modifier** pour l’une de ces pages lorsque vous sélectionnez un lien spécifique.
 
-   * Cela peut uniquement afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste .
+   * Cette option permet uniquement d’afficher des liens statiques, et non des liens générés dynamiquement, par exemple, à partir du composant Liste.
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 
@@ -345,7 +345,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez pour confirmer la sélection ou **Annuler** pour abandonner.
+* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez pour confirmer la sélection. **Annulez** pour abandonner.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
 * Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.
 * Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.

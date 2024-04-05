@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1306'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Ensuite, utilisez le vidage d’index ci-dessus pour renseigner le magasin :
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
 ```
 
-Où `oak-index-name` est le nom de l’index de texte intégral, par exemple, &quot;lucene&quot;.
+Où `oak-index-name` est le nom de l’index de texte intégral, par exemple « lucene ».
 
 **3. Exécutez le processus d’extraction de texte à l’aide de la bibliothèque tika pour les fichiers binaires manqués à l’étape ci-dessus.**
 
@@ -102,7 +102,7 @@ Pour plus d’informations sur le processus d’extraction de texte, consultez l
 
 Créez l’index Lucene hors ligne avant la mise à niveau. Si vous utilisez MongoMK, il est recommandé de l’exécuter directement sur l’un des nœuds MongoMk, car cela évite la surcharge du réseau.
 
-Pour créer l’index hors ligne, procédez comme suit :
+Pour créer l’index hors ligne, procédez comme suit :
 
 **1. Générez des définitions d’index Oak Lucene pour la version d’AEM cible**.
 
@@ -161,7 +161,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 L’utilisation du paramètre `--doc-traversal-mode` est pratique pour les installations d’MongoMK car il réduit considérablement le temps de réindexation en mettant en file d’attente le contenu du référentiel dans un fichier plat local. Toutefois, il nécessite un espace disque supplémentaire deux fois plus grand que celui du référentiel.
 
-S’il existe MongoMK, ce processus peut être accéléré si cette étape est exécutée dans une instance plus proche de l’instance MongoDB. Si elle est exécutée sur le même ordinateur, la surcharge réseau peut être évitée.
+Dans le cas de MongoMK, ce processus peut être plus rapide si vous exécutez cette étape dans une instance plus proche de l’instance MongoDB. Si elle est exécutée sur le même ordinateur, la surcharge réseau peut être évitée.
 
 Vous trouverez des informations techniques supplémentaires dans la [documentation oak-run pour l’indexation](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

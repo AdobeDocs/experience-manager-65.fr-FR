@@ -1,6 +1,6 @@
 ---
 title: Service Barcoded Forms
-description: Utilisez le service AEM Forms Barcoded Forms pour extraire des données à partir d’images électroniques de codes à barres.
+description: Utilisez le service AEM Forms Barcoded Forms pour extraire des données à partir d’images électroniques de codes-barres.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 44%
 
 ## Présentation {#overview}
 
-Le service Barcoded Forms extrait des données depuis des images électroniques de code à barres. Il accepte en entrée des fichiers PDF et TIFF qui contiennent un ou plusieurs codes à barres et extrait les données de code à barres. Les données de code à barres peuvent être formatées de différentes manières, notamment au format XML, chaîne délimitée ou tout format personnalisé créé avec JavaScript.
+Le service Barcoded Forms extrait des données depuis des images électroniques de code à barres. Il accepte en entrée des fichiers PDF et TIFF qui contiennent un ou plusieurs codes à barres et extrait les données de code à barres. Les données de code-barres peuvent être formatées de différentes manières, notamment au format XML, chaîne délimitée ou tout format personnalisé créé avec JavaScript.
 
 Le service Barcoded Forms prend en charge les symbologies **bidimensionnelles (2D)** ci-après, fournies sous la forme de documents TIFF ou PDF numérisés :
 
@@ -31,7 +31,7 @@ Ce service prend également en charge les symbologies **unidimensionnelles** fou
 
 * Codabar
 * Code128
-* Code 3 sur 9
+* Code 3 sur 9
 * EAN13
 * EAN8
 
@@ -40,11 +40,11 @@ Vous pouvez utiliser le service Barcoded Forms pour effectuer les tâches suivan
 * Extraire des données de code à barres depuis des images de code à barres (TIFF ou PDF). Les données sont stockées sous forme de texte délimité.
 * Convertir des données dans un format de texte délimité en données XML (XDP ou XFDF). Les données XML sont plus faciles à analyser que le texte délimité. En outre, les données au format XDP ou XFDF peuvent être utilisées comme entrée pour d’autres services dans AEM Forms.
 
-Le service Barcoded Forms recherche les codes à barres d’une image, les décode et en extrait les données. Le service renvoie les données de code à barres (à l’aide d’un codage d’entité lorsqu’il y a lieu) dans un élément content d’un document XML. Par exemple, l’image de TIFF numérisée suivante d’un formulaire contient deux codes à barres :
+Le service Barcoded Forms recherche les codes à barres d’une image, les décode et en extrait les données. Le service renvoie les données de code à barres (à l’aide d’un codage d’entité lorsqu’il y a lieu) dans un élément content d’un document XML. Par exemple, l’image TIFF numérisée suivante d’un formulaire contient deux codes-barres :
 
 ![exemple](assets/example.png)
 
-Le service Barcoded Forms renvoie le document XML suivant après le décodage des codes à barres :
+Le service Barcoded Forms renvoie le document XML suivant après le décodage des codes-barres :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>  
@@ -91,56 +91,56 @@ Le service Barcoded Forms renvoie le document XML suivant après le décodage de
 
 ## Observations relatives au service {#considerations}
 
-### Processus qui utilisent des formulaires à code à barres {#workflows-that-use-barcoded-forms}
+### Workflows qui utilisent des formulaires à code-barres {#workflows-that-use-barcoded-forms}
 
-Les auteurs de formulaires créent des formulaires à code-barres interactifs à l’aide de Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).) Lorsqu’un utilisateur remplit un formulaire à code à barres à l’aide d’Adobe Reader ou d’Acrobat, le code à barres est automatiquement mis à jour pour coder les données du formulaire.
+Les créateurs et créatrices de formulaires créent des formulaires à code-barres interactifs à l’aide de Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).) Lorsqu’un utilisateur ou une utilisatrice remplit un formulaire à code-barres en utilisant Adobe Reader ou Acrobat, le code-barres est automatiquement mis à jour afin de coder les données de formulaire.
 
-Le service Barcoded Forms permet de convertir dans un format électronique des données qui existent sur papier. Par exemple, lorsqu’un formulaire à code-barres est rempli et imprimé, la copie imprimée peut être numérisée et utilisée comme entrée du service Forms à code-barres.
+Le service Barcoded Forms permet de convertir dans un format électronique des données qui existent sur papier. Par exemple, lorsqu’un formulaire à code-barres est rempli et imprimé, la copie imprimée peut être numérisée et utilisée comme entrée du service Barcoded Forms.
 
-Des points d’entrée Watched Folder sont généralement utilisés pour lancer des applications qui utilisent le service Barcoded Forms. Par exemple, les scanners de documents peuvent enregistrer les images TIFF ou PDF de formulaires à code à barres dans un dossier de contrôle. Le point de fin du dossier de contrôle transmet les images au service pour le décodage.
+Des points d’entrée Watched Folder sont généralement utilisés pour lancer des applications qui utilisent le service Barcoded Forms. Par exemple, les scanners de documents peuvent enregistrer les images TIFF ou PDF de formulaires à code à barres dans un dossier de contrôle. Le point d’entrée du dossier de contrôle transmet les images au service pour le décodage.
 
 ### Formats de codage et de décodage recommandés {#recommended-encoding-and-decoding-formats}
 
-Les auteurs de formulaires à code à barres sont encouragés à utiliser un format simple et délimité (délimité par des tabulations, par exemple) lors du codage de données dans des codes à barres. Évitez également d’utiliser le retour chariot comme délimiteur de champ. Designer propose une sélection de codages délimités qui génèrent automatiquement du script JavaScript pour le codage de code à barres. Les données décodées comportent les noms des champs sur la première ligne et leurs valeurs sur la deuxième ligne, avec des tabulations entre chaque champ.
+Les créateurs et créatrices de formulaires à code-barres sont encouragés à utiliser un format simple et délimité (délimité par des tabulations, par exemple) lors du codage de données dans des codes-barres. Évitez également d’utiliser le retour chariot comme délimiteur de champ. Designer propose une sélection de codages délimités qui génèrent automatiquement du script JavaScript pour le codage de code à barres. Les données décodées comportent les noms des champs sur la première ligne et leurs valeurs sur la deuxième ligne, avec des tabulations entre chaque champ.
 
-Lors du décodage de code à barres, vous devez indiquer le caractère utilisé pour délimiter les champs. Le caractère spécifié pour le décodage du code à barres doit être identique à celui utilisé pour son codage. Par exemple, lorsque vous utilisez le format délimité par des tabulations recommandé, l’opération Extract to XML doit utiliser la valeur par défaut Tab pour le délimiteur de champ.
+Lors du décodage de code à barres, vous devez indiquer le caractère utilisé pour délimiter les champs. Le caractère spécifié pour le décodage du code à barres doit être identique à celui utilisé pour son codage. Par exemple, lorsque vous utilisez le format délimité par des tabulations recommandé, l’opération d’extraction au format XML doit utiliser la valeur par défaut Tabulation pour le délimiteur de champ.
 
-### Jeux de caractères définis par l’utilisateur {#user-specified-character-sets}
+### Jeux de caractères définis par l’utilisateur ou l’utilisatrice {#user-specified-character-sets}
 
 Lorsque les auteurs de formulaires ajoutent des objets codes à barres à leurs formulaires à l’aide de Designer, ils peuvent spécifier un codage de caractères. Les encodages reconnus sont UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-5, GB-2312, UTF-16. Par défaut, toutes les données sont codées dans des codes à barres au format UTF-8.
 
-Lors du décodage de code à barres, vous pouvez spécifier le jeu de caractères à utiliser. Pour garantir le décodage correct de toutes les données, spécifiez le même jeu de caractères que celui spécifié par l’auteur du formulaire lors de la conception du formulaire.
+Lors du décodage de code à barres, vous pouvez spécifier le jeu de caractères à utiliser. Pour garantir le décodage correct de toutes les données, spécifiez le même jeu de caractères que celui spécifié par le créateur ou la créatrice du formulaire lors de sa conception.
 
-### Limites de l’API {#api-limitations}
+### Limites des API {#api-limitations}
 
-Lorsque vous utilisez les API BCF, tenez compte des limites suivantes :
+Lorsque vous utilisez les API BCF, tenez compte des limites suivantes :
 
 * Les formulaires dynamiques ne sont pas pris en charge.
 * Les formulaires interactifs ne sont pas décodés correctement, sauf s’ils sont aplatis.
 * Les codes à barres 1-D ne doivent contenir que des valeurs alphanumériques (si pris en charge). Les codes à barres 1-D contenant des symboles spéciaux ne sont pas décodés.
 
-### Autres restrictions {#other-limitations}
+### Autres limites {#other-limitations}
 
 En outre, considérez les restrictions suivantes lorsque vous utilisez le service Barcoded Forms :
 
-* Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le comme document de PDF ou de TIFF numérisé.
-* Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le en tant que document de PDF ou de TIFF numérisé.
+* Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le comme document PDF ou TIFF numérisé.
+* Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le en tant que document PDF ou TIFF numérisé.
 
 En outre, le service peut décoder tout code à barres qui utilise une symbologie prise en charge si les restrictions indiquées ci-dessus sont respectées. Pour plus d’informations sur la manière de créer des formulaires à code-barres interactifs, voir [l’Aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
-## Configurer les propriétés du service   {#configureproperties}
+## Configurer les propriétés du service {#configureproperties}
 
-Vous pouvez utiliser la variable **AEMFD Barcoded Forms Service** dans AEM Console pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
+Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
 
 ## Utiliser le service {#using}
 
-Le service Barcoded Forms fournit les deux API suivantes :
+Le service Barcoded Forms fournit les deux API suivantes :
 
 * **[decode](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données extraites à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
 
 * **[extractToXML](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste de documents XML, un pour chaque code à barres.
 
-### Utilisation d’un service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
+### Utiliser un service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
 L’exemple de code suivant décode un code à barres dans document et enregistre la sortie XML sur le disque.
 
@@ -229,13 +229,13 @@ L’exemple de code suivant décode un code à barres dans document et enregist
 %>
 ```
 
-### Utilisation du service BCF avec des processus AEM {#using-the-bcf-service-with-aem-workflows}
+### Utiliser le service BCF avec des workflows AEM {#using-the-bcf-service-with-aem-workflows}
 
 L’exécution du service Barcoded Forms à partir d’un workflow est similaire à l’exécution du service à partir de JSP/Servlet. La seule différence est que lors de l’exécution du service à partir de JSP/Servlet, l’objet document récupère automatiquement une instance de l’objet ResourceResolver de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un workflow.
 
 Pour un workflow, transmettez explicitement une instance de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet de document utilise l’objet ResourceResolver fourni pour lire le contenu à partir du référentiel.
 
-L’exemple de processus de workflow suivant décode un code-barres dans un document et enregistre le résultat sur le disque. Le code est écrit dans ECMAScript et le document est transmis en tant que charge utile de workflow :
+L’exemple de workflow suivant décode un code à barres dans un document et enregistre le résultat sur le disque. Le code est écrit en ECMAScript et le document est transmis en tant que payload de workflow :
 
 ```javascript
 /*

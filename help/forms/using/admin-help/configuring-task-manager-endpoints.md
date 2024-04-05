@@ -1,6 +1,6 @@
 ---
 title: Configurer des points d’entrée TaskManager
-description: Découvrez comment configurer des points de fin Task Manager pour appeler le service. Différents paramètres sont requis pour la configuration des points de fin Task Manager.
+description: Découvrez comment configurer des points d’entrée Task Manager pour appeler le service. Différents paramètres sont requis pour la configuration des points d’entrée Task Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Configuration des points d’entrée TaskManager {#configuring-task-manager-endpoints}
 
-Les points de fin TaskManager permettent aux utilisateurs de Workspace d’appeler le service.
+Les points d’entrée Task Manager permettent aux utilisateurs et utilisatrices de Workspace d’appeler le service.
 
-**Paramètres des points de fin TaskManager**
+**Paramètres des points d’entrée de Task Manager**
 
-Utilisez les paramètres suivants pour configurer un point de fin TaskManager.
+Utilisez les paramètres suivants pour configurer un point d’entrée Task Manager.
 
 **Nom :** (obligatoire) identifie le point d’entrée. Le nom est affiché dans l’affichage carte de Workspace. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point d’entrée, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
 

@@ -1,6 +1,6 @@
 ---
 title: Modèles de fragment de contenu
-description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation
+description: Les modèles sont sélectionnés lors de la création d’un fragment de contenu et fournissent au nouveau fragment la structure de base, l’élément et la variation.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >1. Apportez les modifications désirées dans `/apps`.
 >
 
-La structure de base d’un modèle est conservée sous :
+La structure de base d’un modèle est conservée sous :
 
 ```xml
 conf
@@ -71,7 +71,7 @@ conf
               ...
 ```
 
-Avec la structure spécifique :
+Avec la structure spécifique :
 
 ```xml
 + <template-name>

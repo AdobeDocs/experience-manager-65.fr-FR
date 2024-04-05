@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez util
 
 >[!WARNING]
 >
->Les exemples de candidats de magasin sont fournis en tant que configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ne les utilisez pas directement.
+>Les exemples de magasins candidats sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet. Ne les utilisez pas directement.
 
 ## Exemple de magasin candidat aem.segmentation {#aem-segmentation-sample-store-candidate}
 
-Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments à partir de ContextHub SegmentManager.
+Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments de SegmentManager ContextHub.
 
 ### Emplacement du code source {#source-location-segmentation}
 
@@ -54,7 +54,7 @@ Lorsque vous créez un magasin aem.segmentation, vous n’avez pas besoin de fou
 
 ## Exemple de magasin candidat contexthub.geolocation {#contexthub-geolocation-sample-store-candidate}
 
-L’exemple de magasin candidat contexthub.geolocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
+L’exemple de magasin candidat contexthub.gelocation utilise Google Maps pour obtenir et stocker des informations sur l’emplacement du client.
 
 ### Emplacement du code source {#source-location-geolocation}
 
@@ -108,7 +108,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 >[!NOTE]
 >
->Une politique de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé pour se conformer à la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
+>Une politique de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
 ## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 

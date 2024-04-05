@@ -7,7 +7,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Cette complexité ouvre la porte à de potentielles défaillances, à une augmen
 
 ## Prise en charge efficace des clients par le module CIF depuis 2013
 
-Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Les projets clients récents décrivent CIF comme un &quot;grand accélérateur et un gain de temps considérable avec une grande valeur&quot;.
+Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Comme le décrivent des projets récents de clientes et clients, CIF est un « incroyable accélérateur de développement et offre un gain de temps considérable pour générer une valeur importante ».
 
 ## Avantages de CIF {#cif-benefits}
 

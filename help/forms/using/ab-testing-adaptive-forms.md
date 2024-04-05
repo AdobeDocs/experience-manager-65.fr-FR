@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1558'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -85,9 +85,9 @@ En plus du serveur JBoss®, vous pouvez ajouter l’argument jvm -Dabtesting.ena
 
 AEM vous permet de créer une audience et de l’utiliser pour un test A/B. L’audience que vous créez dans AEM est disponible dans AEM Forms. Pour créer des audiences dans AEM, procédez comme suit :
 
-1. Dans l’instance de création, sélectionnez **Adobe Experience Manager** > **Personnalisation** > **Audiences**.
+1. Dans l’instance de création, sélectionnez **Adobe Experience Manager** > **Personnalisation** > **Audiences**.
 
-1. Dans la page Audiences, sélectionnez **Créer une audience > Créer une audience cible**.
+1. Dans la page Audiences, sélectionnez **Créer une audience > Créer une audience cible**.
 1. Dans la boîte de dialogue Configuration d’Adobe Target, sélectionnez une configuration Cible et cliquez sur **Ok**.
 1. Sur la page Créer une audience, créez des règles. Les règles vous permettent de catégoriser l’audience. Par exemple, vous souhaitez catégoriser les audiences en fonction du système d’exploitation. Votre audience A provient de Windows et l’audience B de Linux®.
 
@@ -99,7 +99,7 @@ AEM vous permet de créer une audience et de l’utiliser pour un test A/B. L’
 
 Vous pouvez sélectionner l’audience lorsque vous configurez le test A/B d’un formulaire, comme illustré ci-dessous.
 
-## Création d’un test A/B pour un formulaire adaptatif {#create-a-b-test}
+## Créer un test A/B pour un formulaire adaptatif {#create-a-b-test}
 
 1. Accédez à **Formulaires et Documents** à l’adresse https://&lt;*nom de lʼhôte*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
 

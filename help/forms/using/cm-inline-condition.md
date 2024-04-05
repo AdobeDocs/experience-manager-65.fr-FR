@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 >
 >Si vos actifs existants incluent les anciennes expressions de condition/répétition (antérieures à 6.2 SP1 CFP 4), les actifs affichent l’ancienne syntaxe de condition et de répétition. Toutefois, l’ancienne condition/répétition fonctionne. Les nouvelles et anciennes expressions de condition/répétition sont compatibles entre elles pour créer un mélange d’expressions de condition/répétition anciennes et nouvelles.
 
-1. Dans le module de texte approprié, sélectionnez la partie de texte que vous souhaitez conditionner et sélectionnez **Condition**.
+1. Dans le module de texte approprié, sélectionnez la partie de texte à laquelle vous voulez appliquer des conditions et appuyez sur **Condition**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -57,9 +57,9 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
    >
    >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Il doit y avoir une expression conditionnelle valide à l’intérieur de `${}` pour enregistrer l’expression.
 
-1. Procédez comme suit pour créer une condition permettant d’évaluer si le texte sélectionné/conditionnel apparaît dans la lettre, puis cochez la case pour enregistrer l’expression :
+1. Procédez comme suit pour créer une condition pour déterminer si le texte sélectionné/soumis à une condition apparaît dans la lettre, puis sélectionnez la coche pour enregistrer l’expression :
 
-   Double-sélectionnez un élément DD pour l’insérer dans la condition. Insérez l’opérateur adéquat et créez la condition suivante dans la boîte de dialogue.
+   Appuyez deux fois sur un élément DD pour l’insérer dans la condition. Insérez l’opérateur adéquat et créez la condition suivante dans la boîte de dialogue.
 
    ```javascript
    ${DD_creditcard_Gender=="Male"}
@@ -67,7 +67,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    Pour plus d’informations sur la création de l’expression, consultez **Création d’expressions et de fonctions distantes avec le Générateur d’expression** dans [Expression Builder](../../forms/using/expression-builder.md). La valeur indiquée dans l’expression doit être prise en charge pour l’élément du dictionnaire de données. Pour de plus amples informations, voir [Dictionnaires de données](../../forms/using/data-dictionary.md).
 
-   Une fois la condition insérée, vous pouvez placer le pointeur de la souris sur la poignée située à gauche de la condition pour afficher la condition. Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la condition, qui vous permet de modifier ou de supprimer la condition.
+   Une fois la condition insérée, vous pouvez placer le pointeur de la souris sur la poignée située à gauche de la condition pour afficher la condition. Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la condition, qui permet de modifier ou de supprimer la condition.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -165,15 +165,15 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    Pour répéter le texte statique avec les éléments DD, vous devez appliquer la répétition comme expliqué dans les étapes supplémentaires.
 
-1. Sélectionnez le texte statique et les éléments DD à répéter, comme illustré ci-dessous :
+1. Sélectionnez le texte statique ainsi que les éléments DD à répéter, comme illustré ci-dessous :
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Sélectionner **Répéter**. La boîte de dialogue Répéter s’affiche avec une condition intégrée vide.
+1. Sélectionnez **Répéter**. La boîte de dialogue Répéter s’affiche avec une condition intégrée vide.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
-1. Si nécessaire, insérez une condition pour effectuer le rendu sélectif des transactions, par exemple pour afficher les montants des transactions supérieurs à 50 centimes :
+1. Si nécessaire, insérez une condition pour effectuer le rendu sélectif des transactions, par exemple pour effectuer le rendu des montants de transaction supérieurs à 50 centimes :
 
    ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
@@ -181,7 +181,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    Sinon, si vous n’avez pas besoin d’effectuer un rendu des informations (ici les transactions) de manière sélective, laissez la condition vide en supprimant ce qui suit dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune de répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
 
-1. Sélectionnez un séparateur pour le formatage du texte dynamique et cochez la case à cocher à enregistrer :
+1. Sélectionnez un séparateur pour mettre en forme le texte dynamique et sélectionnez la coche pour enregistrer :
 
    * **Saut de ligne** : insère un saut de ligne après chaque entrée de transaction dans la lettre de sortie.
    * **Texte** : insère le caractère de texte spécifié après chaque entrée de transaction dans la lettre de sortie.
@@ -190,7 +190,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la répétition, qui vous permet de modifier ou supprimer la structure de la répétition.
+   Vous pouvez sélectionner la poignée pour afficher le menu contextuel de la répétition, qui permet de modifier ou de supprimer la structure de la répétition.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 

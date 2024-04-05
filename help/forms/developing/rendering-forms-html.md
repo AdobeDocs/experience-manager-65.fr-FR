@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4104'
-ht-degree: 79%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Pour générer un formulaire en format HTML, la conception de formulaire doit ê
 
 >[!NOTE]
 >
->Lors du rendu d’un formulaire contenant des images de TIFF à l’aide de la variable `FormServiceClient` de `(Deprecated) renderHTMLForm` et `renderHTMLForm2` , les images de TIFF ne sont pas visibles dans le formulaire de HTML rendu affiché dans les navigateurs Internet Explorer ou Mozilla Firefox. Ces navigateurs ne fournissent pas de prise en charge native des images TIFF.
+>Lors du rendu d’un formulaire contenant des images TIFF à l’aide des méthodes `(Deprecated) renderHTMLForm` et `renderHTMLForm2` de l’objet `FormServiceClient`, les images TIFF ne sont pas visibles dans le formulaire HTML rendu affiché dans les navigateurs Internet Explorer ou Mozilla Firefox. Ces navigateurs ne fournissent pas de prise en charge native des images TIFF.
 
 ## Pages HTML {#html-pages}
 
@@ -64,13 +64,13 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 >
 >Si vous souhaitez personnaliser l’aspect du bouton Signature numérique HTML sur un formulaire HTML, vous devez modifier les propriétés suivantes dans le fichier fscdigsig.css (dans le fichier adobe-forms-ds.ear > adobe-forms-ds.war) :
 
-**.fsc-ds-ssb**: cette feuille de style s’applique en cas de champ de signe vide.
+**.fsc-ds-ssb** : cette feuille de style s’applique en cas de champ de signature vide.
 
-**.fsc-ds-ssv**: cette feuille de style s’applique en cas de champ de signe valide.
+**.fsc-ds-ssb** : cette feuille de style s’applique en cas de champ de signature valide.
 
-**.fsc-ds-ssc**: cette feuille de style s’applique si un champ de signe valide existe mais que les données ont changé.
+**.fsc-ds-ssc** : cette feuille de style s’applique en cas de champ de signature valide, dont les données ont été modifiées.
 
-**.fsc-ds-ssi**: cette feuille de style s’applique en cas de champ de signature non valide.
+**.fsc-ds-ssb** : cette feuille de style s’applique en cas de champ de signature non valide.
 
 **.fsc-ds-popup-bg** : cette propriété de feuille de style n’est pas utilisée.
 
@@ -80,15 +80,15 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 
 Un auteur de formulaire indique si un script s’exécute sur le serveur ou sur le client. Le service Forms crée un environnement de traitement des événements distribué pour l’exécution des renseignements sur les formulaires qui peuvent être distribués entre le client et le serveur à l’aide de l’attribut `runAt`. Pour plus d’informations sur cet attribut ou la création de scripts dans les conceptions de formulaire, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr)
 
-Le service Forms peut exécuter des scripts pendant la génération du formulaire. Par conséquent, vous pouvez préremplir un formulaire avec des données en vous connectant à une base de données ou à des services web qui pourraient ne pas être disponibles côté client. Vous pouvez également définir une `Click` pour exécuter sur le serveur afin que le client puisse arrondir les données du parcours au serveur. Cela permet au client d’exécuter des scripts qui peuvent nécessiter des ressources serveur, telles qu’une base de données d’entreprise, lorsqu’un utilisateur interagit avec un formulaire. Pour les formulaires HTML, les scripts formcalc ne peuvent être exécutés que sur le serveur. Par conséquent, vous devez marquer ces scripts pour qu’ils s’exécutent sur `server` ou `both`.
+Le service Forms peut exécuter des scripts pendant la génération du formulaire. Par conséquent, vous pouvez préremplir un formulaire avec des données en vous connectant à une base de données ou à des services web qui pourraient ne pas être disponibles côté client. Vous pouvez également définir un événement `Click` de bouton à exécuter sur le serveur afin que le client puisse envoyer et reprendre des données au serveur. Cela permet au client d’exécuter des scripts qui peuvent nécessiter des ressources serveur, telles qu’une base de données d’entreprise, lorsqu’un utilisateur interagit avec un formulaire. Pour les formulaires HTML, les scripts formcalc ne peuvent être exécutés que sur le serveur. Par conséquent, vous devez marquer ces scripts pour qu’ils s’exécutent sur `server` ou `both`.
 
-Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneaux) en appelant les méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Ce script est placé dans le `Click` et la variable `runAt` est défini sur `Both`. Le motif de votre choix de `Both` permet à Adobe Reader ou Acrobat (pour les formulaires rendus en format PDF) de modifier les pages sans passer par le serveur et les formulaires HTML peuvent modifier les pages en envoyant et en reprenant les données au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu en format HTML avec la nouvelle page affichée.
+Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneaux) en appelant les méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Ce script est placé dans l’événement `Click` du bouton et l’attribut `runAt` est défini sur `Both`. Le motif de votre choix de `Both` permet à Adobe Reader ou Acrobat (pour les formulaires rendus en format PDF) de modifier les pages sans passer par le serveur et les formulaires HTML peuvent modifier les pages en envoyant et en reprenant les données au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu en format HTML avec la nouvelle page affichée.
 
 Il est recommandé de ne pas donner les mêmes noms aux variables de script et aux champs de formulaire, par exemple élément. Certains navigateurs web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Une bonne pratique consiste à donner des noms différents aux champs de formulaire et aux variables de script.
 
-Lors du rendu de formulaires de HTML contenant à la fois la fonctionnalité de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est généré), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate au lieu de l’événement form:readyevent.
+Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalités de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est rendu), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate au lieu de form:readyevent.
 
-Les scripts de formulaire qui se trouvent dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
+Les scripts de formulaire situés dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
 
 >[!NOTE]
 >
@@ -96,9 +96,9 @@ Dans un formulaire de plusieurs pages, les modifications apportées par JavaScri
 
 Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. Cette fonctionnalité fonctionne sur tous les navigateurs disponibles. Cependant, elle ne peut être utilisée que lorsque les utilisateurs effectuent le rendu du formulaire HTML dont la propriété `Output Type` est définie sur `Form Body`. Cela ne fonctionne pas lorsque la propriété `Output Type` est définie sur `Full HTML`. Pour connaître les étapes de configuration de cette fonctionnalité, consultez la section Configurer des formulaires dans l’aide d’administration.
 
-Commencez par définir une fonction de rappel appelée avant d’envoyer le formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
+Définissez d’abord une fonction de rappel appelée avant l’envoi du formulaire, où le nom de la fonction est `_user_onsubmit`. On suppose que la fonction ne renvoie aucune exception ou que, dans ce cas, l’exception est ignorée. Il est recommandé de placer la fonction JavaScript dans la section HEAD du fichier HTML. Vous pouvez toutefois la déclarer n’importe où avant la fin des balises de script qui incluent `xfasubset.js`.
 
-Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur envoie le formulaire, toutes les données de la liste déroulante sont envoyées. En supposant que vous ne souhaitiez pas envoyer autant de données à chaque fois, vous pouvez écrire un script personnalisé pour le désactiver. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv` et est placé sous l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
+Lorsque le serveur de formulaires effectue le rendu d’un fichier XDP contenant une liste déroulante, il crée deux champs de texte masqués en plus de créer la liste déroulante. Ces champs de texte stockent les données de la liste déroulante (l’un stocke le nom d’affichage des options et l’autre stocke la valeur des options). Par conséquent, chaque fois qu’un utilisateur ou une utilisatrice envoie le formulaire, toutes les données de la liste déroulante sont envoyées. En supposant que vous ne souhaitiez pas envoyer autant de données à chaque fois, vous pouvez écrire un script personnalisé pour le désactiver. Par exemple : le nom de la liste déroulante est `drpOrderedByStateProv`. Il est encapsulé dans l’en-tête de sous-formulaire. Le nom de l’élément d’entrée HTML est `header[0].drpOrderedByStateProv[0]`. Les noms des champs masqués qui stockent et envoient les données de la liste déroulante sont les suivants : `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`.
 
 Vous pouvez désactiver ces éléments d’entrée de la manière suivante si vous ne souhaitez pas publier les données. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -122,9 +122,9 @@ Lors de la création de conceptions de formulaire pour le rendu HTML, vous devez
 
 Les scripts qui s’exécutent sur le client ou à la fois sur le client et le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
-Lors de l’exécution de scripts sur le client, seul le panneau actuel affiché peut utiliser un script ; par exemple, vous ne pouvez pas créer de script pour les champs du panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
+Lors de l’exécution de scripts côté client, seul le panneau actuellement affiché peut utiliser le script. Par exemple, vous ne pouvez pas utiliser de script pour les champs situés dans le panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
 
-Soyez prudent lorsque vous utilisez des expressions SOM (Scripting Object Model) dans des scripts exécutés sur le client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
+Faites attention lorsque vous utilisez des expressions de modèle d’objet de script (SOM) dans des scripts exécutés côté client. Seul un sous-ensemble simplifié d’expressions SOM est pris en charge par les scripts qui s’exécutent sur le client.
 
 ## Durée d’événement {#event-timing}
 
@@ -153,9 +153,9 @@ Il est recommandé de placer votre logique de formulaire dans les événements d
 
 ## Conserver les modifications de présentation {#maintaining-presentation-changes}
 
-Lorsque vous passez d’une page HTML à l’autre (panneaux), seul l’état des données est conservé. Les paramètres tels que la couleur d’arrière-plan ou les paramètres de champ obligatoires ne sont pas conservés (s’ils diffèrent des paramètres initiaux). Pour conserver l’état de présentation, vous devez créer des champs (généralement masqués) qui représentent l’état de présentation des champs. Si vous ajoutez un script à la fonction `Calculate` qui modifie la présentation en fonction des valeurs de champ masquées, vous pouvez conserver l’état de la présentation lorsque vous passez d’une page de HTML à l’autre (panneaux).
+Lorsque vous passez d’une page HTML à l’autre (panneaux), seul l’état des données est conservé. Les paramètres tels que la couleur d’arrière-plan ou les paramètres de champ obligatoires ne sont pas conservés (s’ils sont différents des paramètres initiaux). Pour conserver l’état de présentation, vous devez créer des champs (généralement masqués) qui représentent l’état de présentation des champs. Si vous ajoutez un script à l’événement `Calculate` d’un champ qui modifie la présentation en fonction des valeurs de champ masquées, vous pouvez conserver l’état de présentation lorsque vous passez d’une page HTML à l’autre (panneaux).
 
-Le script suivant conserve la fonction `fillColor` d’un champ en fonction de la valeur de `hiddenField`. Supposons que ce script se trouve dans le champ `Calculate` .
+Le script suivant conserve la fonction `fillColor` d’un champ en fonction de la valeur de `hiddenField`. Supposons que ce script se trouve dans l’événement `Calculate` d’un champ.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -185,7 +185,7 @@ Vous pouvez générer un formulaire HTML complet conforme aux directives d’acc
 
 ## Valider des données de formulaire {#validating-form-data}
 
-Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à une variable `Date/Time` qui se trouve dans une conception de formulaire rendue sous la forme d’un formulaire de HTML, elle ne fonctionne pas correctement, même si la date est correctement saisie. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
+Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à un champ `Date/Time` qui se trouve dans une conception de formulaire générée sous la forme HTML, il ne fonctionne pas correctement, même si la date est saisie correctement. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Avant de pouvoir importer des données par programmation dans une API formClient
 
 Vous définissez les options d’exécution HTML lors de la génération d’un formulaire HTML. Par exemple, vous pouvez ajouter une barre d’outils à un formulaire HTML pour permettre aux utilisateurs de sélectionner les pièces jointes situées sur l’ordinateur client ou de récupérer les pièces jointes générées avec le formulaire HTML. Par défaut, une barre d’outils HTML est désactivée. Pour ajouter une barre d’outils à un formulaire HTML, vous devez définir par programmation les options d’exécution. Par défaut, une barre d’outils HTML se compose des boutons suivants :
 
-* `Home`: fournit un lien vers la racine web de l’application.
+* `Home` : fournit un lien vers la racine web de l’application.
 * `Upload` : fournit une interface utilisateur pour sélectionner les fichiers à joindre au formulaire actif.
 * `Download` : fournit une interface utilisateur pour afficher les fichiers joints.
 
@@ -233,7 +233,7 @@ Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de b
 
 **Rendre un formulaire au format HTML**
 
-Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation de HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
+Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
 Le rendu d’un formulaire HTML nécessite également des valeurs, telles que des valeurs URI requises pour effectuer le rendu d’autres types de formulaire.
 
@@ -265,7 +265,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre chemin de classe de projet Java.
 
 1. Créer un objet API Forms client
 
@@ -275,13 +275,13 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
 1. Définir les options d’exécution HTML
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour générer un HTML de formulaire avec une barre d’outils, appelez la méthode `HTMLRenderSpec` de `setHTMLToolbar` et transmettez une `HTMLToolbar` valeur enum. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
-   * Pour définir les paramètres régionaux du HTML, appelez la méthode `HTMLRenderSpec` de `setLocale` et transmettez une valeur string qui spécifie la valeur locale. (Ce réglage est facultatif.)
-   * Pour effectuer le rendu du HTML dans des balises de HTML complètes, appelez la méthode `HTMLRenderSpec` de `setOutputType` méthode et transmission `OutputType.FullHTMLTags`. (Ce réglage est facultatif.)
+   * Pour générer un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
+   * Pour définir les paramètres régionaux HTML, appelez la méthode `setLocale` de l’objet `HTMLRenderSpec` et transmettez une valeur de chaîne qui spécifie les paramètres régionaux. (Ce paramétrage est facultatif.)
+   * Pour effectuer le rendu du formulaire HTML dans des balises HTML complètes, appelez la méthode `setOutputType` de l’objet `HTMLRenderSpec` et transmettez `OutputType.FullHTMLTags`. (Ce paramétrage est facultatif.)
 
    >[!NOTE]
    >
-   Forms ne s’affiche pas correctement en HTML lorsque la variable `StandAlone` option est `true` et la variable `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (le `ApplicationWebRoot` est spécifiée à l’aide de la propriété `URLSpec` qui est transmis à l’objet `FormsServiceClient` de `(Deprecated) renderHTMLForm` ). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les formulaires AEM (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
@@ -299,13 +299,13 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
-   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
-   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -333,13 +333,13 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
 1. Définir les options d’exécution HTML
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour générer un HTML de formulaire avec une barre d’outils, appelez la méthode `HTMLRenderSpec` de `setHTMLToolbar` et transmettez une `HTMLToolbar` valeur enum. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
-   * Pour définir les paramètres régionaux du HTML, appelez la méthode `HTMLRenderSpec` de `setLocale` et transmettez une valeur string qui spécifie la valeur locale. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Pour effectuer le rendu du HTML dans des balises de HTML complètes, appelez la méthode `HTMLRenderSpec` de `setOutputType` méthode et transmission `OutputType.FullHTMLTags`.
+   * Pour générer un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
+   * Pour définir les paramètres régionaux HTML, appelez la méthode `setLocale` de l’objet `HTMLRenderSpec` et transmettez une valeur de chaîne qui spécifie les paramètres régionaux. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Pour générer le formulaire HTML avec des balises HTML complètes, appelez la méthode `setOutputType` de l’objet `HTMLRenderSpec` et transmettez `OutputType.FullHTMLTags`.
 
    >[!NOTE]
    >
-   Forms ne s’affiche pas correctement en HTML lorsque la variable `StandAlone` option est `true` et la variable `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (le `ApplicationWebRoot` est spécifiée à l’aide de la propriété `URLSpec` qui est transmis à l’objet `FormsServiceClient` de `(Deprecated) renderHTMLForm` ). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
@@ -363,13 +363,13 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `FormResult` en obtenant la valeur de la variable `com.adobe.idp.services.holders.FormsResultHolder` de `value` membre de données.
-   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
-   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `BLOB` qui contient les données du formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

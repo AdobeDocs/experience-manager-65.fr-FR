@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 90%
 AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles et la [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md) de votre instance de création.
 
 * Clientlibs
-Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
+Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
 
 * Recouvrements
 Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs` ) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, il n’est pas nécessaire de disposer d’une copie 1:1 de l’original, car Sling Resource Merger autorise l’héritage.
@@ -157,6 +157,6 @@ Pour personnaliser les colonnes dans la vue Liste :
 
 ### Filtrer les ressources {#filtering-resources}
 
-Lors de l’utilisation d’une console, un cas d’utilisation courant se présente lorsque l’utilisateur doit effectuer une sélection dans des ressources (par exemple, pages, composants, ressources, etc.). Cela peut prendre la forme d’une liste, par exemple, à partir de laquelle l’auteur doit choisir un élément.
+Lors de l’utilisation d’une console, un cas d’utilisation courant se présente lorsque l’utilisateur ou l’utilisatrice doit effectuer un choix parmi des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste, par exemple à partir de laquelle l’auteur ou l’autrice doit choisir un élément.
 
 Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Voir [cet article](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) pour plus d’informations.

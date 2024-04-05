@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2340'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
    * Utilisez CRXDE Lite pour ajouter la valeur `<path-to-component>` (par exemple : `/apps/geometrixx/components/myComponent`) à la propriété Composants du nœud `/etc/designs/geometrixx/jcr:content/contentpage/par`.
    * Suivez les instructions de la section [Ajout de nouveaux composants aux systèmes de paragraphes](#adding-a-new-component-to-the-paragraph-system-design-mode).
 
-1. Dans AEM WCM, ouvrez une page de votre site web et insérez un paragraphe du type que vous avez créé pour vous assurer que le composant fonctionne correctement.
+1. Dans la gestion de contenu web AEM, ouvrez une page de votre site web et insérez un paragraphe du type de celui que vous avez créé, afin de vous assurer que le composant fonctionne correctement.
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
 
 Une fois le composant développé, vous l’ajoutez au système de paragraphes, ce qui permet aux auteurs et autrices de sélectionner et d’utiliser le composant lors de la modification d’une page.
 
-1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes, par exemple : `<contentPath>/Test.html`.
+1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes ; par exemple, `<contentPath>/Test.html`.
 1. Pour basculer vers le mode Création, effectuez l’une des opérations suivantes :
 
    * Ajoutez `?wcmmode=design` à la fin de l’URL et accédez-y à nouveau. Par exemple :

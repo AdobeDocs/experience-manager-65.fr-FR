@@ -1,6 +1,6 @@
 ---
 title: Configuration du suivi vidéo pour Adobe Analytics
-description: Découvrez comment configurer le suivi vidéo pour SiteCatalyst.
+description: Découvrez la configuration du suivi vidéo pour SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
 >[!NOTE]
 >
->Pour les nouvelles mises en œuvre, il est recommandé de **ne pas utiliser** les options héritées pour le suivi vidéo. Utilisez la variable **Jalons** à la place.
+>Pour les nouvelles mises en œuvre, il est recommandé de **ne pas utiliser** les options héritées pour le suivi vidéo. Utilisez plutôt la méthode **Jalons**.
 
 ## Étapes communes {#common-steps}
 
@@ -52,9 +52,9 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
 ## Jalons {#milestones}
 
-La méthode Jalons effectue le suivi du plus grand nombre d’informations sur la vidéo, est hautement personnalisable et facile à configurer.
+La méthode Jalons suit la plupart des informations sur la vidéo, est hautement personnalisable et facile à configurer.
 
-Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le nom de ces variables CQ utilise le format suivant :
+Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le nom de ces variables CQ utilise le format suivant :
 
 ```shell
 eventdata.events.milestoneXX
@@ -127,7 +127,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 >
 >Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix.
 
-1. Après avoir sélectionné les jalons comme méthode de suivi, dans la boîte de dialogue des décalages de suivi, saisissez une liste de décalages de suivi, exprimés en secondes, séparés par des virgules. Par exemple, la valeur suivante définit des jalons à 4, 8, 16, 20 et 28 secondes après le début de la vidéo :
+1. Après avoir sélectionné les jalons comme méthode de suivi, dans la boîte de dialogue des décalages de suivi, saisissez une liste de décalages de suivi, exprimés en secondes, séparés par des virgules. Par exemple, la valeur suivante définit des jalons à 4, 8, 16, 20 et 28 secondes après le début de la vidéo :
 
    ```xml
    4,8,16,20,24
@@ -243,15 +243,15 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ## Jalons non hérités {#non-legacy-milestones}
 
-La méthode Jalons non hérités est similaire à la méthode Jalons, excepté que les jalons sont définis à l’aide de pourcentages de la durée du suivi. Les points communs sont les suivants :
+La méthode Jalons non hérités est similaire à la méthode Jalons, excepté que les jalons sont définis à l’aide de pourcentages de la durée du suivi. Les points communs sont les suivants :
 
 * Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement.
 * L’[ensemble statique des variables CQ](#cqvars) définies pour le mappage à des propriétés Adobe Analytics.
-* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
+* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
 
-Le nom de ces variables CQ utilise le format suivant :
+Le nom de ces variables CQ utilise le format suivant :
 
-Le suffixe XX correspond au pourcentage de la durée du suivi, qui définit le jalon. Par exemple, la spécification de pourcentages de 10, 25, 50 et 75 génère les variables CQ suivantes :
+Le suffixe XX correspond au pourcentage de la durée du suivi, qui définit le jalon. Par exemple, la spécification de pourcentages 10, 25, 50 et 75 génère les variables CQ suivantes :
 
 * `eventdata.events.milestone10`
 * `eventdata.events.milestone25`
@@ -262,7 +262,7 @@ Le suffixe XX correspond au pourcentage de la durée du suivi, qui définit le 
 eventdata.events.milestoneXX
 ```
 
-1. Après avoir sélectionné la méthode de suivi Jalons non hérités, dans la zone Décalage de suivi, saisissez une liste de pourcentages de durée du suivi séparés par des virgules. Par exemple, la valeur par défaut suivante définit des jalons à 10, 25, 50 et 75 % de la durée du suivi :
+1. Après avoir sélectionné la méthode de suivi Jalons non hérités, dans la zone Décalage de suivi, saisissez une liste de pourcentages de durée du suivi séparés par des virgules. Par exemple, la valeur par défaut suivante définit des jalons à 10 %, 25 %, 50 % et 75 % de la longueur de la piste :
 
    ```xml
    10,25,50,75
@@ -279,15 +279,15 @@ eventdata.events.milestoneXX
 
 ## Jalons hérités {#legacy-milestones}
 
-Cette méthode est similaire à la méthode Jalons avec la différence que les jalons spécifiés dans la variable *Décalage de suivi* sont des pourcentages au lieu de définir des points dans la vidéo.
+Cette méthode est similaire à la méthode Milestones, à la différence que les jalons spécifiés dans le champ *Décalage de suivi* sont des pourcentages et non des points de consigne dans la vidéo.
 
 >[!NOTE]
 >
->Le champ Décalage de suivi accepte uniquement une liste séparée par des virgules contenant des nombres entiers compris entre 1 et 100.
+>Le champ Décalage de suivi accepte uniquement une liste séparée par des virgules contenant des nombres entiers compris entre 1 et 100.
 
 1. Définissez le décalage de suivi.
 
-   * par exemple, 10,50,75,100
+   * par exemple, 10, 50, 75, 100
 
    De même, les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
@@ -340,11 +340,11 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
 1. Définissez le décalage de suivi sur un nombre de secondes déterminé.
 
-   * par exemple, 6
+   * Par exemple, 6.
 
    >[!NOTE]
    >
-   >Le champ Décalage de suivi accepte uniquement les nombres entiers supérieurs à 0
+   >Le champ Décalage de suivi n’accepte que les nombres entiers supérieurs à 0.
 
    Les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
@@ -369,16 +369,16 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 >
 >Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
-1. Mapper ces variables à prop1, prop2 et prop3
+1. Mappez ces variables sur prop1, prop2 et prop3.
 
-   La variable **reste des informations pertinentes** dans l’appel sera envoyé dans **one** variable nommée **pev3**.
+   Le **reste des informations pertinentes** de l’appel sera envoyé concaténé dans **une** variable nommée **pev3**.
 
    Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se présenter comme suit lorsqu’ils sont affichés avec DigitalPulse Debugger :
 
    ![lseconds](assets/lseconds.png)
 
-   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations sur pev3 **[fourni ici](/help/sites-administering/adobeanalytics.md)**.*
+   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Voir les informations sur pev3 **[fournies ici](/help/sites-administering/adobeanalytics.md)**.*
 
-**Références utilisées dans ce tutoriel :**
+**Références utilisées dans ce tutoriel :**
 
 [0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)

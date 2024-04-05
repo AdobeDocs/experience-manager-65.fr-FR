@@ -11,40 +11,40 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1797'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Mettre à niveau les formulaires de recherche personnalisés{#upgrading-custom-search-forms}
 
-Dans AEM 6.2, l’emplacement de stockage des Forms de recherche personnalisée dans le référentiel a changé. Lors de la mise à niveau, ils sont déplacés de leur emplacement dans la version 6.1 à l’adresse :
+Dans AEM 6.2, l’emplacement de stockage des formulaires de recherche personnalisés dans le référentiel n’est plus le même. Lors de la mise à niveau, ils sont déplacés de leur emplacement dans la version 6.1 vers :
 
 * /apps/cq/gui/content/facets
 
-à un nouvel emplacement sous :
+vers un nouvel emplacement dans :
 
 * /conf/global/settings/cq/search/facets
 
-Pour cette raison, des ajustements manuels sont nécessaires après une mise à niveau pour que les formulaires continuent à fonctionner.
+Des ajustements manuels sont donc nécessaires après une mise à niveau pour que les formulaires continuent à fonctionner.
 
-Cela s’applique aux nouveaux Forms de recherche et aux Forms par défaut qui ont été personnalisés.
+Cela s’applique aux nouveaux formulaires de recherche et aux formulaires par défaut qui ont été personnalisés.
 
 Pour plus d’informations, voir la documentation sur [Facettes de recherche](/help/assets/search-facets.md).
 
 ## Modification de la propriété resourceType {#changing-the-resourcetype-property}
 
-Sauf indication contraire, la plupart des réglages qui doivent être effectués après la mise à niveau nécessitent de modifier la propriété `sling:resourceType` pour les formulaires de recherche personnalisée configurés. Cela est nécessaire afin que la propriété pointe vers l’emplacement correct du script de rendu.
+Sauf indication contraire, la plupart des réglages qui doivent être effectués après la mise à niveau nécessitent de modifier la propriété `sling:resourceType` pour les formulaires de recherche personnalisée configurés. Cela est nécessaire afin que la propriété pointe vers le bon emplacement du script de rendu.
 
-Vous pouvez modifier la propriété en procédant comme suit :
+Vous pouvez changer la propriété en procédant comme suit :
 
 1. Ouvrez CRXDE Lite en accédant à `https://server:port/crx/de/index.jsp`.
-1. Accédez à l’emplacement du noeud qui doit être ajusté, comme indiqué dans la liste de [Forms de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) ci-dessous
-1. Cliquez sur le nœud. Dans le volet des propriétés de droite, cliquez sur et modifiez la variable **sling:resourceType** .
-1. Enfin, enregistrez les modifications en appuyant sur la touche **Enregistrer tout** bouton .
+1. Accédez à l’emplacement du nœud qui doit être ajusté, comme indiqué dans la liste de [formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) ci-dessous.
+1. Cliquez sur le nœud. Dans le volet des propriétés de droite, cliquez sur la propriété **sling:resourceType** et modifiez-la.
+1. Enfin, enregistrez les modifications en appuyant sur le bouton **Enregistrer tout**.
 
-## Liste des Forms de recherche personnalisée {#list-of-custom-search-forms}
+## Liste des formulaires de recherche personnalisés {#list-of-custom-search-forms}
 
-Vous trouverez ci-dessous une liste de toutes les Forms de recherche personnalisées et des modifications dont elles ont besoin après la mise à niveau. Ils font référence aux noms figurant dans la section `/conf/global/settings/cq/search/facets/sites/items`.
+Vous trouverez ci-dessous la liste de tous les formulaires de recherche personnalisés et des modifications nécessaires après la mise à niveau. Ils font référence aux noms figurant dans la section `/conf/global/settings/cq/search/facets/sites/items`.
 
 ### Prédicat de texte intégral avec pour nom de nœud « fulltext » {#fulltext-predicate-with-node-name-fulltext}
 
@@ -65,16 +65,16 @@ Vous trouverez ci-dessous une liste de toutes les Forms de recherche personnalis
  </tbody>
 </table>
 
-Dans AEM 6.1, le prédicat de texte intégral standard faisait partie du formulaire de recherche. Dans la version 6.2, le champ de texte intégral a été remplacé par OmniSearch. Ce prédicat est ignoré par programmation et peut être supprimé.
+Dans AEM 6.1, le prédicat de texte intégral standard faisait partie du formulaire de recherche. Dans la version 6.2, le champ de texte intégral a été remplacé par OmniSearch. Ce prédicat est ignoré par programmation et peut être supprimé.
 
-**Action :** Supprimez entièrement le noeud.
+**Action :** supprimez entièrement le nœud.
 
 ### Autres prédicats de texte intégral {#other-fulltext-predicates}
 
 <table>
  <tbody>
   <tr>
-   <td>Noeud(s) dans la recherche par défaut dans la version 6.1</td>
+   <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1</td>
    <td>n/a</td>
   </tr>
   <tr>
@@ -168,7 +168,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
 
 * Assurez-vous de définir la propriété `listOrder` pour le nœud `analyticspredicate` sur « **8** ». Cela est nécessaire pour éviter les conflits.
 
-### Prédicats de période {#date-range-predicates}
+### Prédicat de période {#date-range-predicates}
 
 <table>
  <tbody>
@@ -208,9 +208,9 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Rien à ajuster.
+**Action :** rien à ajuster.
 
-### Prédicat Analyses {#analytics-predicate}
+### Prédicat d’analyse {#analytics-predicate}
 
 <table>
  <tbody>
@@ -254,7 +254,7 @@ Le statut de page a été remplacé par deux prédicats de propriétés d’opti
 
 >[!NOTE]
 >
->Remarque : Contrairement à la version 6.1, le prédicat de plage n’affiche plus de balise dans la barre de recherche.
+>Remarque : contrairement à la version 6.1, le prédicat de plage n’affiche plus de balise dans la barre de recherche.
 
 ### Prédicat de propriété d’options {#options-property-predicate}
 
@@ -372,9 +372,9 @@ Les nœuds ci-dessous font référence aux noms dans `/conf/global/settings/dam/
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/fulltextpredicate |
 | Type de ressource dans la version 6.2 | n/a |
 
-Dans la version 6.1, le prédicat de texte intégral standard faisait partie du formulaire de recherche. Dans la version 6.2, le champ de texte intégral a été remplacé par OmniSearch. Ce prédicat est ignoré par programmation et peut être supprimé.
+Dans la version 6.1, le prédicat de texte intégral standard faisait partie du formulaire de recherche. Dans la version 6.2, le champ de texte intégral a été remplacé par OmniSearch. Ce prédicat est ignoré par programmation et peut être supprimé.
 
-**Action :** Supprimez le noeud mentionné ci-dessus.
+**Action :** supprimez le nœud mentionné ci-dessus.
 
 ### Prédicats de navigateur de chemin d’accès {#path-browser-predicates-1}
 

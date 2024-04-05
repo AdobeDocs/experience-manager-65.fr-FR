@@ -1,6 +1,6 @@
 ---
 title: Test des fragments de contenu dans We.Retail
-description: Découvrez comment tester les fragments de contenu dans Adobe Experience Manager à l’aide de We.Retail.
+description: Découvrez comment tester les fragments de contenu dans Adobe Experience Manager à l’aide de We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Workfront
 source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -64,9 +64,9 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Configurer les autorisations : Ajouter `jcr:all permissions` autorisations pour `/conf/workfront-tools/settings/cloudconfigs` pour `wf-workfront-users` groupe.
 1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
-1. État du projet : sélectionnez l’état du projet pour créer le dossier lié.
-1. Créez un dossier lié dans les projets avec portfolio : liste des Portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
-1. Créez un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et sa valeur correspondante que le projet doit obligatoirement créer le dossier lié. Cette configuration est ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
+1. Statut du projet : sélectionnez le statut du projet pour créer le dossier lié.
+1. Créer un dossier lié dans les projets avec un portfolio : liste des portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
+1. Créer un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour créer le dossier lié. Cette configuration est ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
 1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux événements, un événement de création est désormais disponible.
 
 ![configuration des dossiers liés](/help/assets/assets/wf-linked-folder-config.png)
@@ -79,7 +79,7 @@ Le mappage des métadonnées entre les projets Workfront et les dossiers AEM est
 
 Pour configurer les mappages, procédez comme suit :
 
-1. Ajouter `jcr:read` autorisations pour `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour `wf-workfront-users` groupe.
+1. Ajoutez des autorisations `jcr:read` à `/conf/global/settings/dam/adminui-extension/foldermetadataschema` pour le groupe `wf-workfront-users`.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sélectionnez le formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis cliquez sur Modifier.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées de dossier que vous souhaitez modifier, puis sélectionnez l’onglet Paramètres dans le panneau de droite.
@@ -97,7 +97,7 @@ Le mappage des métadonnées entre les documents Adobe Workfront et les ressour
 Pour configurer les mappages, procédez comme suit :
 
 1. Accédez à **Outils** > **Ressources** > **Schémas de métadonnées**.
-1. Sélectionnez le formulaire de schéma de métadonnées à modifier, puis cliquez sur **Modifier** ou créer entièrement un schéma de métadonnées.
+1. Sélectionnez le formulaire du schéma de métadonnées que vous souhaitez modifier, puis cliquez sur **Modifier** ou créez un schéma de métadonnées entièrement nouveau.
 1. Sélectionnez le champ de formulaire de schéma de métadonnées que vous souhaitez modifier, puis sélectionnez l’onglet **Paramètres** dans le panneau de droite.
 1. Dans Champ de formulaire personnalisé [!DNL Workfront], sélectionnez le nom du champ [!DNL Workfront] que vous souhaitez mapper à la propriété AEM sélectionnée. Les options disponibles sont les suivantes :
 
@@ -175,7 +175,7 @@ Pour conserver l’historique des versions des ressources dans AEM, configurez l
 
 1. Sélectionnez l’option **[!UICONTROL Stocker les ressources portant le même nom que les versions de la ressource existante]**. Lorsque cette option est cochée, elle permet de stocker les ressources chargées avec le même nom et au même emplacement que la version de la ressource existante. Si cette option n’est pas cochée, une nouvelle ressource est créée avec un nom différent (par exemple, `asset-name.pdf` et `asset-name-1.pdf`).
 
-1. Option Sélectionner **[!UICONTROL Mise à jour des métadonnées de ressource lors de la création d’une version]**. Lorsque cette option est cochée, les métadonnées de la ressource sont mises à jour chaque fois qu’une nouvelle version de la ressource est créée. Si cette option n’est pas cochée, la ressource conserve les métadonnées qu’elle possédait avant de créer la nouvelle version.
+1. Sélectionnez l’option **[!UICONTROL Mise à jour des métadonnées de ressource lors de la création d’une version]**. Lorsque cette option est cochée, les métadonnées de la ressource sont mises à jour chaque fois qu’une nouvelle version de la ressource est créée. Si cette option n’est pas cochée, la ressource conserve les métadonnées qu’elle possédait avant de créer la nouvelle version.
 
 ![configurer le contrôle de version des ressources](/help/assets/assets/wf-config-versioning.png)
 

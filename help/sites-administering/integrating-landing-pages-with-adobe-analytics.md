@@ -1,6 +1,6 @@
 ---
 title: Intégration des pages de destination à Adobe Analytics
-description: Découvrez comment intégrer des landing pages à Adobe Analytics.
+description: Découvrez comment intégrer des pages de destination à Adobe Analytics.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 56%
 AEM a intégré la solution des pages de destination à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
 
 1. Composant Clic publicitaire
-1. Composant de lien graphique
+1. Composant Lien graphique
 
 Ces composants exposent certains attributs pouvant être mappés via les variables Adobe Analytics (variables de trafic, de conversion) et des événements de réussite pour envoyer des informations à Adobe Analytics.
 
@@ -33,12 +33,12 @@ Dans AEM, les composants **Appel à l’action** (**ClickThroughLink** et **Grap
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
-### Mappage des composants de page d’entrée à Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### Mappage des composants Page de destination à Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
-Pour mapper des composants de page d’entrée à Adobe Analytics :
+Pour mapper des composants Page de destination à Adobe Analytics :
 
-1. Après avoir créé la configuration Adobe Analytics et créé une structure, sélectionnez la suite de rapports appropriée dans le menu déroulant. Les variables Adobe Analytics sont alors récupérées et affichées dans l’outil de recherche de contenu.
-1. Faites glisser les composants CTA (Appel à l’action) du sidekick vers la zone de mappage située au milieu de la page, le cas échéant.
+1. Après avoir créé la configuration Adobe Analytics ainsi qu’un nouveau framework, sélectionnez la suite de rapports appropriée dans le menu déroulant. Les variables Adobe Analytics sont alors récupérées et affichées dans l’outil de recherche de contenu.
+1. Faites glisser les composants CTA (appel à l’action) du sidekick vers la zone de mappage située au milieu de la page, le cas échéant.
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ Pour mapper des composants de page d’entrée à Adobe Analytics :
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
-   <td>Destination à laquelle vous accédez lorsque vous cliquez sur le lien </td>
+   <td>Destination à laquelle vous accédez lorsque vous cliquez sur le lien. </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -86,7 +86,7 @@ Pour mapper des composants de page d’entrée à Adobe Analytics :
 </table>
 
 1. Mappez ces attributs exposés avec toute variable Adobe Analytics issue de l’outil de recherche de contenu. Le framework est maintenant prêt à être utilisé.
-1. Vous pouvez maintenant créer une landing page ou ouvrir une landing page existante avec des composants CTA existants, puis cliquer sur **Cloud Service** dans **Propriétés de la page** dans le sidekick (dans l’IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés** et cliquez sur **Cloud Service**) et configurez la structure à utiliser avec la landing page. Sélectionnez le framework dans la liste déroulante.
+1. Vous pouvez à présent créer une nouvelle page de destination ou en ouvrir une existante avec des composants CTA existants et cliquer sur l’onglet **Services cloud** dans **Propriétés de page** dans le sidekick (dans l’IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés** et cliquez sur **Services cloud**), puis configurer le framework à utiliser avec la page de destination. Sélectionnez le framework dans la liste déroulante.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

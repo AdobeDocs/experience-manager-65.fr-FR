@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Mettre à niveau vers AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.18.0 Forms on JEE fournit deux types d’installation : programme d’installation complet et programme d’installation des correctifs.
+AEM 6.5.18.0 Forms on JEE fournit deux types de programmes d’installation : le programme d’installation complet et le programme d’installation des correctifs.
 
 **Programme d’installation complet** : vous pouvez utiliser le [programme d’installation complet d’AEM 6.5.18.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau à partir d’AEM 6.5.x.x Forms on JEE vers AEM 6.5.18.0 Forms on JEE.
 

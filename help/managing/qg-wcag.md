@@ -1,12 +1,12 @@
 ---
 title: Guide rapide relatif à WCAG 2.1
-description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
+description: Guide rapide relatif à WCAG version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '1734'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) a été développé afin de maximiser la confor
 >
 >Une [version mise à jour des instructions, WCAG 2.2](https://www.w3.org/TR/WCAG22/) est actuellement en cours de développement, mais ne sera pas prise en compte pour l’instant.
 
-WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Ils conseillent les auteurs, les concepteurs et les développeurs de contenu web de s’assurer que les ressources qu’ils produisent sont aussi accessibles que possible au plus grand nombre de personnes, quel que soit le handicap qu’elles ont ; par exemple, une déficience visuelle, une perte de l’audition, des difficultés d’apprentissage, des limitations liées à l’âge, etc.
+WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Ils fournissent aux personnes chargées de la création, de la conception et du développement de contenu web des conseils à suivre afin de s’assurer que les ressources que ces personnes produisent sont aussi accessibles que possible pour autant de personnes que possible, quel que soit le handicap qu’elles peuvent avoir ; par exemple, des troubles visuels ou auditifs, des difficultés d’apprentissage ou des restrictions liées à l’âge.
 
 Par exemple, la description d’une image (ou de tout autre contenu non textuel) à l’aide de l’attribut `alt` dans le code HTML avantage considérablement les personnes non voyantes ou malvoyantes. La description textuelle dans l’attribut `alt` peut être convertie en sortie vocale ou transmise aux affichages électroniques en braille actualisables.
 
@@ -43,7 +43,7 @@ En d’autres termes, des consignes qui peuvent être appliquées à divers form
 Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
 * Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept de *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure façon d’utiliser les technologies web qui peuvent ne pas bénéficier d’une prise en charge complète de l’accessibilité, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques pour bénéficier des fonctionnalités d’accessibilité.
+les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept d’*accessibilité prise en charge* est introduit. Cela permet aux auteurs et autrices de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas prendre en charge l’accessibilité totale, ou peut nécessiter que les utilisateurs et utilisatrices disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 

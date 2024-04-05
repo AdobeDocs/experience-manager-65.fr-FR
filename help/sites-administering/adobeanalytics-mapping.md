@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1449'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -31,12 +31,12 @@ Vous pouvez associer plusieurs variables Analytics à une même **variable CQ**
 
 Les données mappées sont envoyées vers Adobe Analytics lorsque la page se charge et que les conditions ci-dessous sont remplies :
 
-* La page est associée à la structure.
-* La page utilise les composants qui sont ajoutés à la structure.
+* La page est associée au framework.
+* La page utilise les composants ajoutés au framework.
 
 Appliquez la procédure ci-dessous pour mapper des variables de composants CQ à des propriétés de rapport Adobe Analytics.
 
-1. Dans la **vue AEM**, faites glisser un composant de suivi du sidekick vers le framework. Par exemple, faites glisser le **Page** du composant **Général** catégorie.
+1. Dans la **vue AEM**, faites glisser un composant de suivi du sidekick vers le framework. Par exemple, faites glisser le composant **Page** à partir de la catégorie **Général**.
 
    ![aa-13](assets/aa-13.png)
 
@@ -54,7 +54,7 @@ Appliquez la procédure ci-dessous pour mapper des variables de composants CQ �
 
    >[!NOTE]
    >
-   >Vous pouvez mapper plusieurs variables Analytics (par exemple : `props`, `eVars`, `events`) à la même variable CQ (par exemple, `pagedata.title`)
+   >Vous pouvez mapper plusieurs variables Analytics (par exemple, `props`, `eVars`, `events`) à une même variable CQ (par exemple, `pagedata.title`).
 
    >[!CAUTION]
    >
@@ -90,7 +90,7 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
 1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
 
-1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, aubergine dans l’exemple.
+1. En fonction de la version d’Adobe Analytics que vous utilisez, vous devez attendre 45 minutes, en moyenne, pour que le rapport soit mis à jour avec le terme recherché utilisé (« aubergine » dans l’exemple).
 
 ## Utilisation de l’outil de recherche de contenu (cf#) avec les frameworks Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -101,35 +101,35 @@ Au départ, lorsque vous ouvrez un framework Adobe Analytics, l’outil de rech
 * Événements
 
 Lorsqu’un RSID est sélectionné, toutes les variables appartenant à ce RSID sont ajoutées à la liste.\
-La variable `cf#` est nécessaire pour mapper les variables Analytics aux variables CQ présentes sur les différents composants de suivi. Consultez Configuration d’un framework pour le suivi de base.
+L’élément `cf#` est nécessaire pour mapper des variables Analytics aux variables CQ présentes dans les différents composants de suivi. Consultez Configuration d’un framework pour le suivi de base.
 
 En fonction de la vue sélectionnée pour le framework, l’outil de recherche de contenu est renseigné par des variables Analytics (dans la vue AEM) ou des variables CQ (dans la vue Analytics).
 
-La liste peut être manipulée comme suit :
+Vous pouvez effectuer plusieurs opérations sur la liste :
 
-1. Dans **AEM vue**, la liste peut être filtrée en fonction du type de variable sélectionné à l&#39;aide des trois boutons de filtrage :
+1. Dans la **vue AEM**, la liste peut être filtrée en fonction du type de variable sélectionné à l’aide des trois boutons de filtrage :
 
    * Si *aucun bouton* n’est sélectionné, la liste complète s’affiche.
    * Si vous sélectionnez le bouton **Trafic**, seules les variables appartenant à la section Trafic sont répertoriées dans la liste..
    * Si vous sélectionnez le bouton **Conversion**, seules les variables appartenant à la section Conversion sont répertoriées dans la liste.
-   * Si la variable **Événements** est sélectionné, la liste affiche uniquement les variables appartenant à la section Événements .
+   * Si vous sélectionnez le bouton **Événéments**, la liste n’affiche que les variables qui appartiennent à la section Événements.
 
    >[!NOTE]
    >
    >Un seul bouton de filtre peut être actif à la fois.
 
    1. La liste comporte également une fonction de recherche qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
-   1. Si une option de filtrage est activée lors de la recherche d&#39;éléments dans la liste, les résultats affichés seront également filtrés en fonction du bouton actif.
-   1. La liste peut être rechargée à tout moment à l’aide des flèches rapides.
-   1. Si plusieurs RSID sont sélectionnés dans la structure, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
+   1. Si vous activez une option de filtrage lors de la recherche d’éléments dans la liste, les résultats affichés seront également filtrés en fonction du bouton actif.
+   1. Vous pouvez recharger la liste à tout moment à l’aide du bouton en forme de flèche.
+   1. Si vous sélectionnez plusieurs RSID dans le framework, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
 
 1. Dans la vue Adobe Analytics, l’outil de recherche de contenu répertorie toutes les variables CQ appartenant aux composants de suivi que vous faites glisser dans la vue CQ.
 
-   * Par exemple, dans le cas où la variable **Composant de téléchargement** est la valeur *une seule traînée* dans la vue CQ (qui comporte deux variables mappables). *eventdata.downloadLink* et *eventdata.events.startDownload*), l’outil de recherche de contenu ressemblera à ceci lors du passage à la vue Adobe Analytics :
+   * Par exemple, si le **composant Téléchargement** est le *seul composant déplacé* dans la vue CQ (qui comporte deux variables mappables, *eventdata.downloadLink* et *eventdata.events.startDownload*), l’outil de recherche de contenu se présente comme suit lorsque vous passez à la vue Adobe Analytics :
 
    ![aa-22](assets/aa-22.png)
 
-   * Les variables peuvent être glissées-déposées dans une variable Adobe Analytics appartenant à l’une des trois sections de variable (**Trafic**, **Conversion** et **Événements**).
+   * Vous pouvez faire glisser les variables et les déposer sur une variable Adobe Analytics appartenant à l’une des trois sections de variables (**Trafic**, **Conversion** et **Événements**).
 
    * Lorsque vous faites glisser un nouveau composant de suivi sur le framework dans la vue CQ, les variables CQ appartenant au composant sont ajoutées automatiquement à l’outil de recherche de contenu (cf#) dans la vue Adobe Analytics.
 
@@ -139,54 +139,54 @@ La liste peut être manipulée comme suit :
 
 ## Utilisation de la vue AEM et de la vue Analytics {#using-aem-view-and-analytics-view}
 
-À tout moment, les utilisateurs peuvent basculer entre deux manières d’afficher les mappages Adobe Analytics sur une page de structure. Les deux vues offrent une meilleure vue d’ensemble des mappages dans la structure, à partir de deux perspectives distinctes.
+À tout moment, les utilisateurs et les utilisatrices peuvent alterner entre les deux vues des mappages Adobe Analytics sur une page du framework. Les deux vues offrent une bonne présentation des mappages dans le framework, de deux points de vue différents.
 
 ### Vue AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-En prenant comme exemple l’image ci-dessus, la variable **AEM vue** possède les propriétés suivantes :
+En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propriétés suivantes :
 
-1. Il s’agit de la vue par défaut à l’ouverture de la structure.
+1. Il s’agit de la vue par défaut à l’ouverture du framework.
 1. Sur la gauche de l’écran : l’outil de recherche de contenu (cf#) est renseigné par des variables Adobe Analytics en fonction des RSID sélectionnés.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
 1. **Vue AEM** :
 
-   1. Si la structure comporte des composants hérités de son parent, ils sont répertoriés ici, ainsi que les variables mappées aux composants.
+   1. Si le framework comporte des composants hérités de son parent, ils sont répertoriés ici, ainsi que les variables mappées aux composants.
 
       1. Les composants hérités sont verrouillés.
-      1. Pour déverrouiller un composant hérité, double-cliquez sur le cadenas en regard de son nom.
-      1. Pour rétablir l’héritage, supprimez le composant déverrouillé, après quoi il retrouve son état verrouillé.
+      1. Pour déverrouiller un composant hérité, double-cliquez sur le cadenas à côté de son nom.
+      1. Pour rétablir l’héritage, supprimez le composant déverrouillé, qui retrouvera son statut verrouillé.
 
-   1. **Faites glisser des composants ici pour les inclure dans la structure d’analyse.**: les composants peuvent être déplacés à partir du Sidekick et déposés ici.
-   1. Vous trouverez tous les composants actuellement inclus dans la structure d’analyse :
+   1. **Faire glisser des composants ici pour les inclure dans le framework Analytics** : vous pouvez faire glisser les composants à partir du sidekick et les déposer ici.
+   1. Vous trouverez tous les composants actuellement inclus dans le framework Analytics :
 
       1. Pour ajouter un composant, faites-le glisser depuis l’onglet Composants du sidekick.
       1. Pour supprimer un composant et tous ses mappages, sélectionnez Supprimer dans le menu contextuel correspondant, puis acceptez la suppression dans la boîte de dialogue de confirmation.
-      1. Gardez à l’esprit qu’un composant ne peut être supprimé que de la structure dans laquelle il a été créé et ne peut pas être supprimé des structures enfants au sens traditionnel du terme (elles ne peuvent être remplacées que).
+      1. Gardez à l’esprit qu’un composant ne peut être supprimé que du framework dans lequel il a été créé et ne peut pas être supprimé des frameworks enfants au sens traditionnel du terme (ils ne peuvent être que remplacés).
 
 ### Vue Analytics {#analytics-view}
 
 ![aa-24](assets/aa-24.png)
 
 1. Cette vue est accessible en cliquant sur l’onglet **vue Analytics** du framework.
-1. Côté gauche : Outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur la structure dans la vue CQ.
+1. Côté gauche : outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur le framework dans la vue CQ.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
-1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
+1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
 
    * **Trafic** :
 
       * Variable de trafic (`prop1`) mappée à une variable CQ (`eventdata.downloadLink`)
 
-      * Lorsque le composant est associé à un cadenas, cela signifie qu’il est hérité d’une structure parente et ne peut donc pas être modifié.
+      * Lorsque le composant est accompagné d’un cadenas, cela signifie qu’il est hérité d’un framework parent et ne peut donc pas être modifié.
 
    * **Conversion** :
 
       * Variable de conversion (`eVar1`) mappée à une variable CQ (`pagedata.title`)
 
-      * Variable de conversion ( `eVar3`) mappé à une expression JavaScript ajoutée en ligne en double-cliquant sur le champ de variable CQ et en saisissant le code manuellement.
+      * La variable de conversion (`eVar3`) est mappée à une expression JavaScript ajoutée en ligne en double-cliquant sur le champ Variable CQ et en saisissant manuellement le code.
 
    * **Événement** :
 
@@ -194,7 +194,7 @@ En prenant comme exemple l’image ci-dessus, la variable **AEM vue** possède l
 
 >[!NOTE]
 >
->Vous pouvez également remplir la colonne Variable CQ d’un tableau en ligne en double-cliquant sur le champ et en y ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
+>La colonne Variable CQ de chaque table peut également être renseignée en ligne en double-cliquant sur le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
 >Par exemple, à côté de `prop3`, vous pouvez ajouter :
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\

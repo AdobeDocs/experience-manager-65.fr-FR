@@ -1,6 +1,6 @@
 ---
 title: Ajouter, activer, modifier ou supprimer des points d’entrée
-description: Découvrez comment ajouter, activer, modifier et supprimer des points de fin.
+description: Découvrez comment ajouter, activer, modifier et supprimer des points d’entrée.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
@@ -10,24 +10,24 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
 # Ajouter, activer, modifier ou supprimer des points d’entrée {#adding-enabling-modifying-or-removing-endpoints}
 
-## Ajout d’un point de fin à un service {#add-an-endpoint-to-a-service}
+## Ajouter un point d’entrée à un service {#add-an-endpoint-to-a-service}
 
-Les points de fin peuvent uniquement être ajoutés aux services. Un point de terminaison ne peut pas exister seul ; il doit être associé à un service.
+Les points d’entrée peuvent uniquement être ajoutés aux services. Un point d’entrée ne peut pas exister seul. Il doit être associé à un service.
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser des noms uniques lors de l’ajout de points de fin.
+>Il est recommandé d’utiliser des noms uniques lors de l’ajout de points d’entrée.
 
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Dans la page Gestion des services, sélectionnez le service à configurer.
-1. Dans la liste de l’onglet Points de fin , sélectionnez le type de point de fin à ajouter, puis cliquez sur Ajouter.
-1. Selon le type de point de fin, configurez des paramètres de point de fin supplémentaires.
+1. Dans la liste de l’onglet Points d’entrée, sélectionnez le type de point d’entrée à ajouter, puis cliquez sur Ajouter.
+1. Selon le type de point d’entrée, configurez des paramètres de point d’entrée supplémentaires.
 
 [Paramètres des points d’entrée Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
@@ -39,34 +39,34 @@ Les points de fin peuvent uniquement être ajoutés aux services. Un point de te
 
 1. Cliquez sur Ajouter.
 
-## Activation ou désactivation d’un point de fin {#enable-or-disable-an-endpoint}
+## Activer ou désactiver un point d’entrée {#enable-or-disable-an-endpoint}
 
-Par défaut, les nouveaux points de fin sont automatiquement activés. Mais si vous avez désactivé un point de terminaison, vous devez l’activer pour qu’il soit opérationnel.
+Par défaut, les nouveaux points d’entrée sont automatiquement activés. Mais si vous avez désactivé un point d’entrée, vous devez l’activer pour qu’il soit opérationnel.
 
-Si vous rencontrez des problèmes avec les services, désactivez les points de terminaison associés afin de mieux résoudre le problème. Vous pouvez également désactiver les points de fin lors de la maintenance régulière du système ou lors de la mise à niveau d’un service.
+Si vous rencontrez des difficultés avec les services, désactivez les points d’entrée associés afin de mieux résoudre le problème. Vous pouvez également désactiver les points d’entrée lors de la maintenance régulière du système ou de la mise à niveau d’un service.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
-1. Sur la page Gestion des points de fin, cochez la case correspondant au point de fin à activer ou désactiver, puis cliquez sur Activer ou Désactiver.
+1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des points d’entrée.
+1. Sur la page Gestion des points d’entrée, cochez la case correspondant au point d’entrée à activer ou désactiver, puis cliquez sur Activer ou Désactiver.
 
-## Modification d’un point de fin {#modify-an-endpoint}
+## Modifier un point d’entrée {#modify-an-endpoint}
 
 >[!NOTE]
 >
->Les modifications apportées à une configuration de point de terminaison à l’aide d’Administration Console ne sont pas répercutées dans les copies au moment de la conception de vos applications. Si vous redéployez une application, toute modification apportée à ses points de fin à l’aide d’Administration Console sera perdue.
+>Les modifications apportées à une configuration de point d’entrée à l’aide de la console d’administration ne sont pas répercutées dans les copies de vos applications au moment de la conception. Si vous redéployez une application, toute modification apportée à ses points d’entrée à l’aide de la console d’administration sera perdue.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
-1. Sur la page Gestion des points de fin, cliquez sur le point de fin à modifier.
-1. Sur la page Mettre à jour le point de fin , modifiez le nom, la description et les paramètres du point de fin.
+1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des points d’entrée.
+1. Sur la page Gestion des points d’entrée, cliquez sur le point d’entrée à modifier.
+1. Sur la page Mettre à jour le point d’entrée, modifiez le nom, la description et les paramètres du point d’entrée.
 
    >[!NOTE]
    >
-   >N’incluez pas de caractère &lt; dans le nom ou la description, car cela tronquera le nom ou la description affiché dans Workspace.
+   >N’incluez pas de caractère &lt; dans le nom ou la description, car cela tronquerait le nom ou la description apparaissant dans Workspace.
 
 1. Pour enregistrer vos modifications, cliquez sur Mettre à jour.
 
-Vous pouvez également effectuer cette tâche à partir de la page Gestion des services en sélectionnant un service, puis en cliquant sur l’onglet Points de fin .
+Vous pouvez également effectuer cette tâche à partir de la page Gestion des services en sélectionnant un service, puis en cliquant sur l’onglet Points d’entrée.
 
-## Suppression d’un point de fin {#remove-an-endpoint}
+## Supprimer un point d’entrée {#remove-an-endpoint}
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des points de fin.
-1. Sur la page Gestion des points de fin, cochez la case correspondant au point de fin à supprimer, puis cliquez sur Supprimer. Le point de terminaison n’est plus affiché.
+1. Dans la console d’administration, cliquez sur Services > Applications et services > Gestion des points d’entrée.
+1. Dans la page Gestion des points d’entrée, cochez la case correspondant au point d’entrée à supprimer, puis cliquez sur Supprimer. Le point d’entrée n’est plus affiché.

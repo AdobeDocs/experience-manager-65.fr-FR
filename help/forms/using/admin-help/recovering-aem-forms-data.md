@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1118'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ Si votre répertoire de stockage global de documents est restauré à un emplace
 
 >[!NOTE]
 >
->Le déploiement des composants échoue sous Windows si le répertoire de stockage global de documents se trouve à la racine du disque (par exemple, D:\). Pour le répertoire de stockage global de documents, vous devez vous assurer que le répertoire ne se trouve pas à la racine du lecteur, mais dans un sous-répertoire. Par exemple, le répertoire doit être D:\GDS et pas uniquement D:\.
+>Le déploiement des composants échoue sous Windows si le répertoire de stockage global de documents se trouve à la racine du disque (par exemple, D:\). Pour le répertoire de stockage global de documents, assurez-vous que le répertoire ne se trouve pas à la racine du disque, mais dans un sous-répertoire. Par exemple, le répertoire doit être D:\GDS et pas uniquement D:\.
 
 ## Récupération du répertoire de stockage global de documents dans un environnement en cluster {#recovering-the-gds-to-a-clustered-environment}
 

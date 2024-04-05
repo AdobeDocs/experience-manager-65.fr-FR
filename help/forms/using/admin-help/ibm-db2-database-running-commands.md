@@ -10,19 +10,19 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard {#ibm-db-database-running-commands-for-regular-maintenance}
 
-Les commandes IBM DB2 suivantes sont recommandées pour une maintenance régulière de votre base de données forms AEM. Pour plus d’informations sur la maintenance et l’optimisation des performances de votre base de données DB2, voir *Guide d’administration d’IBM DB2*.
+Il est recommandé d’exécuter régulièrement les commandes IBM DB2 suivantes dans le cadre des opérations de maintenance standard de votre base de données AEM Forms. Pour obtenir des informations détaillées sur la maintenance et l’amélioration des performances de la base de données DB2, reportez-vous au *Guide d’administration d’IBM DB2*.
 
 * **runstats :** cette commande met à jour les statistiques décrivant les caractéristiques physiques d’une table de base de données et des index associés. Les instructions SQL dynamiques générées par AEM forms utilisent automatiquement ces statistiques mises à jour, mais pour les instructions SQL statiques intégrées à une base de données, l’instruction `db2rbind` doit également être exécutée.
 * **db2rbind :** cette commande recrée les liaisons de tous les packages dans la base de données. Utilisez cette commande après avoir exécuté l’utilitaire `runstats` pour revalider tous les packages dans la base de données.
 * **reorg table ou index :** cette commande vérifie si une réorganisation de certains index et de certaines tables est nécessaire.
 
-  Au fur et à mesure que vos bases de données se développent et changent, il est essentiel de recalculer les statistiques tabulaires pour améliorer les performances des bases de données et cela doit être fait régulièrement. Ces commandes peuvent être exécutées manuellement à l’aide de scripts ou d’une tâche cron.
+  À mesure que la taille de vos bases de données augmente et qu’elles subissent des modifications, il est important de recalculer régulièrement les statistiques des tables pour améliorer les performances. Ces commandes peuvent être exécutées manuellement en utilisant des scripts ou une tâche cron.
 
 >[!NOTE]
 >
@@ -38,9 +38,9 @@ Exécutez la commande `runstats` sur les tables et index de base de données AEM
 
 >[!NOTE]
 >
->la commande `runstats` ne doit être exécutée que lors de la première synchronisation de base de données. Toutefois, il doit être exécuté deux fois au cours de ce processus : une fois lors de la synchronisation des utilisateurs et des groupes, puis lors de la synchronisation des membres du groupe. Assurez-vous que le script s’exécute complètement chaque fois que vous l’exécutez.
+>la commande `runstats` ne doit être exécutée que lors de la première synchronisation de base de données. Toutefois, elle doit être exécutée à deux reprises pendant ce processus : la première fois pendant la synchronisation des utilisateurs, des utilisatrices et des groupes, puis la seconde fois lors de la synchronisation des membres de groupe. Vérifiez que le script s’exécute totalement chaque fois que vous le lancez.
 
-Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données. Ci-dessous, `<schema>` représente le schéma associé à votre nom d’utilisateur DB2. Si vous disposez d’une installation DB2 par défaut simple, il s’agit du nom du schéma de base de données.
+Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données. Ci-dessous, `<schema>` représente le schéma associé à votre nom d’utilisateur DB2. Si vous disposez d’une installation DB2 par défaut, il s’agit du nom de schéma de la base de données.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
@@ -64,7 +64,7 @@ Pour une syntaxe et une utilisation correctes, consultez la documentation du fab
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Exécution de la commande reorg sur votre base de données AEM forms {#run-the-reorg-command-on-your-aem-forms-database}
+## Exécution de la commande reorg sur la base de données AEM Forms {#run-the-reorg-command-on-your-aem-forms-database}
 
 Exécutez la commande `reorg` sur les tables et index de base de données AEM forms suivants. Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données.
 

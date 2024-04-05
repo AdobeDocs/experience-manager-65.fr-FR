@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 88%
 
 La protection du document vous permet de distribuer en toute sécurité toute information enregistrée dans un format pris en charge. Seuls les utilisateurs autorisés peuvent accéder aux documents protégés.
 
-La sécurité des documents Adobe Experience Manager Forms garantit que seuls les utilisateurs et utilisatrices autorisés peuvent utiliser vos documents. Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Les formats de fichiers pris en charge sont Adobe Portable Document Format (PDF) et Microsoft Word, Excel et PowerPoint.
+La sécurité des documents Adobe Experience Manager Forms garantit que seuls les utilisateurs et utilisatrices autorisés peuvent utiliser vos documents. Document Security vous permet de distribuer en toute sécurité toute information enregistrée sous un format pris en charge. Les formats de fichiers pris en charge sont Adobe Portable Document Format (PDF) et Microsoft Word, Excel et PowerPoint.
 
-Vous pouvez protéger les documents à l’aide de politiques. Les paramètres de confidentialité que vous spécifiez dans une stratégie déterminent comment un destinataire peut utiliser un document auquel vous appliquez la stratégie. Par exemple, vous pouvez spécifier si les destinataires et destinatrices sont autorisés à imprimer ou copier du texte, effectuer des modifications ou ajouter des signatures et des commentaires dans des documents protégés.
+Vous pouvez protéger les documents à l’aide de politiques. Les paramètres de confidentialité que vous spécifiez dans une politique déterminent la mesure dans laquelle un destinataire ou une destinatrice peut utiliser un document auquel vous appliquez cette politique. Par exemple, vous pouvez spécifier si les destinataires et destinatrices sont autorisés à imprimer ou copier du texte, effectuer des modifications ou ajouter des signatures et des commentaires dans des documents protégés.
 
-Les stratégies sont stockées sur le serveur Document Security ; vous appliquez les stratégies aux documents par le biais de votre application cliente. Lorsque vous appliquez une politique à un document, les paramètres de confidentialité spécifiés dans la politique protègent les informations que le document contient. Vous pouvez distribuer le document protégé par une politique aux destinataires et destinatrices autorisés par la politique.
+Les politiques sont stockées sur le serveur Document Security. Vous appliquez les politiques aux documents par le biais de votre application cliente. Lorsque vous appliquez une politique à un document, les paramètres de confidentialité spécifiés dans la politique protègent les informations que le document contient. Vous pouvez distribuer le document protégé par une politique aux destinataires et destinatrices autorisés par la politique.
 
 La protection du document fournit également des clients, des observateurs et des indexeurs pour protéger les documents, afficher et indexer les documents protégés. Pour plus d’informations sur la protection du document, voir [à propos de la protection du document](/help/forms/using/admin-help/document-security.md).
 
@@ -34,7 +34,7 @@ La fonctionnalité Protection du document est disponible uniquement dans AEM For
 
 Le diagramme suivant illustre l’architecture standard pour AEM Forms Document Security :
 
-![Environnement typique de la sécurité des documents](do-not-localize/document-security-typical-environment.png)
+![Environnement typique de Document Security](do-not-localize/document-security-typical-environment.png)
 
 ## Installation d’AEM Forms on JEE {#installing-aem-forms-on-jee}
 

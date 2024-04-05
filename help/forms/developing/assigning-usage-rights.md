@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3897'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Vous pouvez accomplir ces tâches à l’aide du service Extensions Acrobat Read
 
 ## Appliquer des droits d’utilisation aux documents PDF {#applying-usage-rights-to-pdf-documents}
 
-Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide de l’API client Java Extensions Reader et Web Service. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents de PDF auxquels des droits d’utilisation sont appliqués sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer des opérations qui sont activées pour ce document spécifique.
+Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide de l’API client Java Extensions Reader et Web Service. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents PDF dotés de droits d’utilisation sont appelés documents avec droits d’utilisation activés. Un utilisateur ou une utilisatrice qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce document spécifique.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Pour effectuer par programmation une opération de service Extensions Acrobat Re
 
 **Récupérer un document PDF**
 
-Récupérez un document de PDF pour appliquer des droits d’utilisation. Les documents PDF définis avec des droits d’utilisation contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
+Récupérez un document PDF pour appliquer des droits d’utilisation. Les documents PDF définis avec des droits d’utilisation contiennent un dictionnaire de droits d’utilisation. Lorsqu’Adobe Reader ouvre un document contenant un tel dictionnaire, il active uniquement les droits d’utilisation spécifiés dans le dictionnaire pour ce document. Si le document ne contient pas de dictionnaire des droits d’utilisation, le service Extensions Acrobat Reader DC en crée un. S’il contient déjà un dictionnaire, le service Extensions Acrobat Reader DC remplace les droits d’utilisation existants par ceux que vous spécifiez. Le dictionnaire spécifie les droits d’utilisation activés. Lorsqu’un utilisateur ouvre le document dans Adobe Reader, seuls les droits d’utilisation spécifiés dans le dictionnaire sont autorisés.
 
 **Spécifier des droits d’utilisation à appliquer**
 
@@ -221,7 +221,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 ## Suppression des droits d’utilisation des documents PDF {#removing-usage-rights-from-pdf-documents}
 
-Vous pouvez supprimer des droits d’utilisation d’un document défini avec des droits d’utilisation. La suppression des droits d’utilisation d’un document de PDF dont les droits sont activés est également nécessaire pour effectuer d’autres opérations AEM Forms sur celui-ci. Vous devez par exemple signer numériquement (ou certifier) un document PDF avant de définir ses droits d’utilisation. Par conséquent, pour effectuer des opérations sur un document défini avec des droits d’utilisation, vous devez supprimer les droits du document PDF, effectuer les autres opérations, comme la signature numérique d’un document, puis réappliquer des droits d’utilisation à ce document.
+Vous pouvez supprimer des droits d’utilisation d’un document défini avec des droits d’utilisation. La suppression des droits d’utilisation d’un document PDF dont les droits sont activés est également nécessaire pour exécuter d’autres opérations AEM Forms sur le document. Vous devez par exemple signer numériquement (ou certifier) un document PDF avant de définir ses droits d’utilisation. Par conséquent, pour effectuer des opérations sur un document défini avec des droits d’utilisation, vous devez supprimer les droits du document PDF, effectuer les autres opérations, comme la signature numérique d’un document, puis réappliquer des droits d’utilisation à ce document.
 
 >[!NOTE]
 >
@@ -247,7 +247,7 @@ Avant d’effectuer par programmation une opération de service d’extensions A
 
 **Récupérer un document PDF défini avec des droits d’utilisation**
 
-Récupérez un document de PDF dont les droits sont activés pour supprimer les droits d’utilisation.
+Récupérez un document PDF dont les droits sont activés afin de supprimer les droits d’utilisation.
 
 **Supprimer des droits d’utilisation du document PDF**
 
@@ -385,7 +385,7 @@ Avant d’effectuer par programmation une opération de service d’extensions A
 
 **Récupérer un document PDF défini avec des droits d’utilisation**
 
-Récupérez un document de PDF dont les droits sont activés pour récupérer des informations sur les informations d’identification. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur des informations d’identification qui ont été utilisées pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
+Pour récupérer des informations sur les informations d’identification, vous devez récupérer un document PDF dont les droits sont activés. Vous pouvez également récupérer des informations sur une information d’identification en spécifiant son alias. Toutefois, si vous souhaitez récupérer des informations sur des informations d’identification qui ont été utilisées pour appliquer des droits d’utilisation à un document PDF spécifique dont les droits sont activés, vous devez récupérer le document.
 
 **Récupérer des informations sur les informations d’identification**
 

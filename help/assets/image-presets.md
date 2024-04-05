@@ -1,6 +1,6 @@
 ---
 title: Application de paramètres prédéfinis d’image Dynamic Media
-description: Découvrez comment vous pouvez activer les ressources pour diffuser dynamiquement des images selon différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement.
+description: Découvrez comment activer des ressources pour afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Application de paramètres prédéfinis d’image Dynamic Media {#applying-image-presets}
 
-Les paramètres d’image prédéfinis permettent aux ressources de diffuser des images de manière dynamique selon différentes tailles, dans différents formats ou avec d’autres propriétés d’image générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images. Le paramètre prédéfini reformate les images selon les spécifications définies par votre administration.
+Les paramètres d’image prédéfinis permettent aux ressources d’afficher des images selon des tailles et des formats différents, ou avec d’autres propriétés d’image générées dynamiquement. Vous pouvez choisir un paramètre prédéfini lorsque vous exportez des images. Le paramètre prédéfini reformate les images selon les spécifications définies par votre administration.
 
 Vous pouvez en outre sélectionner un paramètre prédéfini d’image réactif (signalé par le bouton **[!UICONTROL RESS]** une fois que vous l’avez sélectionné).
 
@@ -40,7 +40,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
    >[!NOTE]
    >
-   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec les rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. La variable **[!UICONTROL URL]** n’apparaît que si vous sélectionnez un rendu dynamique. La variable **[!UICONTROL RESS]** s’affiche uniquement si vous sélectionnez un paramètre d’image prédéfini réactif.
+   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Vous ne pouvez utiliser l’URL pour afficher l’image qu’avec les rendus dynamiques.  Le bouton **[!UICONTROL URL]** n’apparaît que si vous sélectionnez un rendu dynamique. Le bouton **[!UICONTROL RESS]** s’affiche uniquement si vous sélectionnez un paramètre d’image prédéfini réactif.
    >
    >* Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Consultez la section [Augmentation du nombre de paramètres prédéfinis d’image affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 

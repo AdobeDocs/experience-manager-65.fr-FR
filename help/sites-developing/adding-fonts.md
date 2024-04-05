@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Actuellement, toutes les implémentations de la plateforme Java prennent en char
 
    `/apps/<your-project>/`
 
-1. Sous `/apps/<your-project>/` créez un noeud :
+1. Sous `/apps/<your-project>/`, créez un nœud :
 
    * **Nom** : `fonts`
    * **Type** : `sling:Folder`
@@ -39,7 +39,7 @@ Actuellement, toutes les implémentations de la plateforme Java prennent en char
    >
    >Les fichiers de polices du référentiel doivent comporter le suffixe `*.ttf` ou `*.TTF`.
 
-1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices, à savoir : `/apps/<your-project>/fonts`.
+1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices, à savoir `/apps/<your-project>/fonts`.
 
 1. Revenez à CRXDE Lite. Vous devez alors voir un nœud `.fontlist` dabs votre dossier contenant le nom des polices importées.
 

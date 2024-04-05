@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Ce document traite de la configuration de la segmentation telle qu’utilisée avec ClientContext. Pour configurer des segments avec ContextHub à l’aide de l’interface utilisateur tactile, voir [Configuration de la segmentation avec ContextHub](/help/sites-administering/segmentation.md).
+>Ce document traite de la configuration de la segmentation telle qu’utilisée avec ClientContext. Pour configurer des segments avec ContextHub à l’aide de l’interface utilisateur tactile, consultez [Configuration de la segmentation avec ContextHub](/help/sites-administering/segmentation.md).
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Glossaire de la segmentation](/help/sites-authoring/segmentation-overview.md) pour plus d’informations sur le fonctionnement de la segmentation et les mots clés.
 
-En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies nécessaires au contenu ciblé.
+En fonction des informations que vous avez déjà collectées sur les visiteurs et visiteuses de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) du site web. Les pages Teaser définies ici peuvent être ajoutées en tant que paragraphe teaser sur n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs et aux visiteuses du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) du site web. Les pages Teaser définies ici peuvent être ajoutées en tant que paragraphe teaser sur n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de facilement créer et mettre à jour des segments, des teasers et des campagnes. Il vous permet également de vérifier les résultats de vos définitions.
 
@@ -107,11 +107,11 @@ Les caractéristiques de segment suivantes sont disponibles et prêtes à l’em
 
 Vous pouvez combiner ces caractéristiques avec les opérateurs booléens OU et ET (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) afin de définir le scénario exact pour sélectionner ce segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, la variable **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
+Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, le facteur **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé. 
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui, à son tour, fait référence au segment A. Assurez-vous que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
 >[!NOTE]
 >
@@ -128,10 +128,10 @@ Pour définir votre nouveau segment :
 1. Créez [une nouvelle page](/help/sites-authoring/editing-content.md#creatinganewpage) à l’aide du modèle de **Segment**.
 1. Ouvrez la nouvelle page pour afficher l’éditeur de segments :
 
-   ![Première étape de la création d’un segment dans l’éditeur de segments](assets/screen_shot_2012-02-02at101726am.png)
+   ![Première étape de la création d’un segment dans l’éditeur de segment](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Utilisez le sidekick ou le menu contextuel (en général, cliquez avec le bouton droit de la souris, puis sélectionnez **Nouveau** pour ouvrir la fenêtre Insérer un nouveau composant) et recherchez la caractéristique de segment dont vous avez besoin. Puis faites-le glisser sur **l&#39;éditeur de segment** il apparaît dans le conteneur **ET** par défaut.
-1. Double-cliquez sur la nouvelle caractéristique pour modifier les paramètres spécifiques, par exemple la position de la souris :
+1. Double-cliquez sur la nouvelle caractéristique pour modifier les paramètres spécifiques, par exemple la position de la souris :
 
    ![Modification d’un composant dans l’éditeur de segment](assets/screen_shot_2012-02-02at103135am.png)
 
@@ -140,13 +140,13 @@ Pour définir votre nouveau segment :
 
    ![Modification des paramètres de segment dans l’éditeur de segment](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Ajoutez d’autres caractéristiques si nécessaire. Vous pouvez formuler des expressions booléennes à l’aide des composants **Conteneur ET** et **Conteneur OU** figurant dans **Logique de segment**. Avec l’éditeur de segment, vous pouvez supprimer les caractéristiques ou les conteneurs qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
+1. Ajoutez des caractéristiques si nécessaire. Vous pouvez formuler des expressions booléennes à l’aide des composants **Conteneur ET** et **Conteneur OU** figurant dans **Logique de segment**. Avec l’éditeur de segment, vous pouvez supprimer les caractéristiques ou les conteneurs qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
 Vous pouvez créer des segments complexes dans AEM. Il est utile de tenir compte de quelques points de base :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être modifié, mais n’a pas d’effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur AND qui est initialement créé ; cela n’est pas modifiable, mais n’a pas d’effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs et les visiteuses qui sont soit :

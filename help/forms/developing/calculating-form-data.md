@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1858'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 81%
 
 Le service Forms peut calculer les valeurs qu’un utilisateur saisit dans un formulaire et afficher les résultats. Pour calculer les données d’un formulaire, deux tâches sont nécessaires. Commencez par créer un script de conception de formulaire qui calcule les données du formulaire. Une conception de formulaire prend en charge trois types de scripts. Un type de script s’exécute sur le client, un autre sur le serveur et le troisième à la fois sur le serveur et sur le client. Le type de script décrit ici s’exécute sur le serveur. Les calculs côté serveur sont pris en charge pour les transformations HTML, PDF et Form Guide (obsolète).
 
-Dans le cadre du processus de conception de formulaire, vous pouvez utiliser des calculs et des scripts pour offrir une expérience utilisateur plus riche. Il est possible d’ajouter des calculs et des scripts à la plupart des champs et objets de formulaire. Créez un script de conception de formulaire pour effectuer des opérations de calcul sur les données qu’un utilisateur saisit dans un formulaire interactif.
+Dans le cadre du processus de conception de formulaire, vous pouvez utiliser des calculs et des scripts pour offrir une expérience client plus riche. Il est possible d’ajouter des calculs et des scripts à la plupart des champs et objets de formulaire. Créez un script de conception de formulaire pour effectuer des opérations de calcul sur les données qu’une personne saisit dans un formulaire interactif.
 
 L’utilisateur saisit des valeurs dans le formulaire et clique ensuite sur le bouton Calculer pour afficher les résultats. Le processus suivant décrit un exemple d’application qui permet à un utilisateur de calculer des données :
 
-* L’utilisateur accède à une page de HTML nommée StartLoan.html qui fait office de page de démarrage de l’application web. Cette page appelle une servlet Java nommée `GetLoanForm`.
+* La personne accède à une page HTML nommée StartLoan.html, qui fait office de page de démarrage de l’application web. Cette page appelle une servlet Java nommée `GetLoanForm`.
 * La servlet `GetLoanForm` renvoie un formulaire de prêt. Ce formulaire contient un script, des champs interactifs, un bouton de calcul et un bouton d’envoi.
-* L’utilisateur saisit des valeurs dans les champs du formulaire et clique sur le bouton Calculer . Le formulaire est envoyé à la servlet Java `CalculateData` où le script est exécuté. Le formulaire est renvoyé à l’utilisateur avec les résultats du calcul affichés dans le formulaire.
+* La personne saisit des valeurs dans les champs du formulaire et clique ensuite sur le bouton Calculer. Le formulaire est envoyé à la servlet Java `CalculateData` où le script est exécuté. Le formulaire est renvoyé à l’utilisateur avec les résultats du calcul affichés dans le formulaire.
 * Lʼutilisateur continue à saisir et calculer des valeurs jusquʼà lʼobtention du résulat désiré. Une fois satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à une autre servlet Java nommée `ProcessForm`, qui est chargée de la récupération des données envoyées. (Consultez la section [Gestion des formulaires envoyés](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
 
 
-Le diagramme suivant illustre le flux logique de l’application.
+Le diagramme suivant montre le flux logique de l’application.
 
 ![cf_cf_finsrv_loancalcapp_v1](assets/cf_cf_finsrv_loancalcapp_v1.png)
 
@@ -77,13 +77,13 @@ Pour illustrer l’utilisation d’un script de conception de formulaire, cette 
 
 **A.** Un champ nommé NumericField1 **B.** Un champ nommé NumericField2 **C.** Un champ nommé NumericField3
 
-La syntaxe du script dans cette conception de formulaire est la suivante :
+La syntaxe du script situé dans cette conception de formulaire est la suivante :
 
 ```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
-Dans cette conception de formulaire, le bouton Calculer est un bouton de commande et le script se trouve dans le de `Click` . Lorsqu’un utilisateur saisit des valeurs dans les deux premiers champs (NumericField1 et NumericField2) et clique sur le bouton Calculer, le formulaire est envoyé au service Forms, où le script est exécuté. Le service Forms restitue le formulaire à l’appareil client avec les résultats du calcul affichés dans le champ NumericField3.
+Dans cette conception de formulaire, le bouton Calculer est un bouton de commande et le script se trouve dans l’événement `Click` de ce bouton. Lorsqu’un utilisateur saisit des valeurs dans les deux premiers champs (NumericField1 et NumericField2) et clique sur le bouton Calculer, le formulaire est envoyé au service Forms, où le script est exécuté. Le service Forms restitue le formulaire à l’appareil client avec les résultats du calcul affichés dans le champ NumericField3.
 
 >[!NOTE]
 >
@@ -122,13 +122,13 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 
 **Voir également**
 
-[Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de la bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Calcul des données de formulaire à l’aide de l’API de service Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Calcul des données de formulaire à l’aide de l’API Web Service](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Démarrages rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Création d’applications web qui renvoient Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Démarrages rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Renvoi de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Création d’applications web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcul des données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
 
@@ -136,7 +136,7 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
 1. Inclure des fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
 1. Créer un objet API Forms client
 
@@ -145,30 +145,30 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
 1. Récupération d’un formulaire contenant un script de calcul
 
-   * Pour récupérer des données de formulaire contenant un script de calcul, créez une `com.adobe.idp.Document` en utilisant son constructeur et en appelant la propriété `javax.servlet.http.HttpServletResponse` de `getInputStream` à partir du constructeur.
+   * Pour récupérer des données de formulaire contenant un script de calcul, créez un objet `com.adobe.idp.Document` à l’aide de son constructeur et en appelant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse` à partir du constructeur.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * L’objet `com.adobe.idp.Document` qui contient les données du formulaire.
+      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
       * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` stockant les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
-   * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant le `FormsResult` de `getAction` . Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
+   * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
-   * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
-   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
 
-[Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calculer les données du formulaire en utilisant l’API Web Service {#calculate-form-data-using-the-web-service-api}
@@ -187,12 +187,12 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 1. Récupérer un formulaire contenant un script de calcul
 
    * Pour récupérer les données du formulaire qui ont été publiées dans une servlet Java, créez un objet `BLOB` en utilisant son constructeur.
-   * Créez un `java.io.InputStream` en utilisant l’objet `javax.servlet.http.HttpServletResponse` de `getInputStream` .
+   * Créez un objet `java.io.InputStream` en utilisant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.ByteArrayOutputStream` en utilisant son constructeur et en transmettant la longueur de l’objet `java.io.InputStream`.
    * Copiez le contenu de l’objet `java.io.InputStream` dans l’objet `java.io.ByteArrayOutputStream`.
-   * Créez un tableau d’octets en appelant la méthode `java.io.ByteArrayOutputStream` de `toByteArray` .
+   * Créez un tableau d’octets en appelant la méthode `toByteArray` de l’objet `java.io.ByteArrayOutputStream`.
    * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
-   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la variable `RenderOptionsSpec` de `setLocale` et transmission d’une valeur string qui spécifie la valeur locale.
+   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Objet `BLOB` contenant les données du formulaire.
@@ -209,14 +209,14 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 
      La méthode `processFormSubmission` remplit le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
-   * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant le `FormsResult` de `getAction` . Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
+   * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
-   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
-   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Consultez également la section**
 [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

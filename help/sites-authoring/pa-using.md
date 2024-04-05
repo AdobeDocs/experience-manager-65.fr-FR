@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -34,10 +34,10 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Ouvrez le **Sites** console, par exemple : [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Dans l’extrême droite de la barre d’outils (coin supérieur droit), cliquez sur l’icône pour sélectionner **Mode Liste** (l’icône affichée dépend de la variable [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Ouvrez la console **Sites** (par exemple, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. À l’extrême droite de la barre d’outils (dans le coin supérieur droit), cliquez sur l’icône pour sélectionner **Vue Liste** (l’icône affichée dépend de la [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Cliquez de nouveau sur l’icône située à l’extrême droite de la barre d’outils (dans le coin supérieur droit), puis sélectionnez **Paramètres d’affichage**. La variable **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. À l’extrémité droite de la barre d’outils (coin supérieur droit), cliquez à nouveau sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -49,7 +49,7 @@ Sélectionnez la période de création de rapports pour laquelle les données An
 * Données des 90 derniers jours
 * Données de cette année
 
-La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez la liste déroulante pour sélectionner la période de création de rapports requise.
+La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez le menu déroulant pour sélectionner la période de création de rapports requise.
 ![aa-05](assets/aa-05.png)
 
 ### Configurer les colonnes de données disponibles {#configuring-available-data-columns}
@@ -79,11 +79,11 @@ Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir d
 
    ![Icône Analytics et Recommendations](do-not-localize/chlimage_1-16a.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Analytics visible dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Cela s’affiche si la variable [Activity Map a été configuré.](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) pour votre site web.
+>S’affiche si [Activity Map a été configuré](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) pour votre site Web.
 
 >[!NOTE]
 >

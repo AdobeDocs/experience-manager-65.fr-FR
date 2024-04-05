@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1733'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Les formulaires adaptatifs vous permettent de créer des formulaires attrayants,
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer le Forms adaptatif.
+* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer des formulaires adaptatifs.
 
 * [Composants de base des formulaires adaptatifs](creating-adaptive-form.md) : il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires adaptatifs, Adobe recommande d’utiliser les [composants principaux de formulaires adaptatifs](/help/forms/using/create-adaptive-form.md).
 
@@ -64,9 +64,9 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 1. Connectez-vous à votre [instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr#author-and-publish-installs) locale.
 
-1. Entrez vos informations d’identification sur la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents]**.
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Une fois connecté, dans le coin supérieur gauche, sélectionnez **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
 
-1. Sélectionner **[!UICONTROL Créer]**  > **[!UICONTROL Créer un Forms adaptatif]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Créer des formulaires adaptatifs]**.
 
 1. Sélectionnez un modèle de composant principal de formulaire adaptatif et cliquez sur **[!UICONTROL Suivant]**.
 
@@ -81,7 +81,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 1. Sélectionnez **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
 
-1. Sélectionner **[!UICONTROL Modifier]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour être modifié et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé.
+1. Sélectionnez **[!UICONTROL Modifier]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour être modifié et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé.
 
 
 ## Utiliser des composants principaux des formulaires adaptatifs pour créer votre formulaire

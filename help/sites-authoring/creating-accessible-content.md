@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Par ailleurs, les alternatives textuelles ont l’avantage de permettre l’inde
 
 #### Comment procéder – Contenu non textuel (1.1.1) {#how-to-meet-non-text-content}
 
-Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez le faire dans la variable **Texte de remplacement** champ . Voir, par exemple, le composant principal **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr)**.
+Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Cela est possible dans le champ **Texte alternatif**. Observez par exemple, le composant principal **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr)**.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Photos illustratives : il s’agit de photos de personnes, d’objets ou de lieux. Il est important de réfléchir au rôle de la photo dans la page. En général, il est recommandé de décrire le contenu de l’image, car la technologie d’assistance annonce le type d’élément (par exemple, `graphic` ou `image`) ; l’utilisation d’éléments `screenshot` ou `illustration` peut clarifier les descriptions des textes secondaires, mais cela dépend du contexte. La cohérence est un facteur important. Il faut prendre la même décision pour l’ensemble de l’équipe de création et l’appliquer tout au long de l’expérience du client ou de la cliente.
 * Icônes : certains petits pictogrammes (images) communiquent parfois des informations spécifiques. Ils doivent être utilisés de manière uniforme sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même texte secondaire bref et succinct, sauf si cela duplique de manière superflue le texte adjacent.
-* Tableaux et graphiques : ils représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
+* Graphiques et diagrammes : il représentent habituellement des données numériques. Il est donc possible de fournir un texte alternatif en fournissant, par exemple, un bref résumé des principales tendances affichées dans le graphique ou le diagramme. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet des propriétés d’image **Avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 * Cartes, diagrammes, organigrammes : pour les graphiques produisant des données spatiales (par exemple, pour la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte et que ces informations textuelles sont placées à proximité de chaque point de données associé. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte secondaire de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
 * CAPTCHA : un CAPTCHA est un *test public de Turing entièrement automatisé destiné à distinguer les ordinateurs des humains*. Ce contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants peut toutefois entraîner des barrières à l’accessibilité. Le CAPTCHA, sous forme d’images, nécessite que les utilisateurs et utilisatrices décrivent ce qu’ils voient pour réussir le test de sécurité. Il n’est évidemment pas possible de fournir un texte secondaire à l’image. Vous devrez donc envisager d’autres solutions non graphiques. Le W3C propose quelques suggestions, telles que les suivantes :
    * Puzzles logiques
@@ -282,7 +282,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : créer du contenu qui peut être présenté de différentes manières (par exemple, avec une mise en page plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG/#adaptable)
+[Règle 1.3 - Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG/#adaptable)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -439,7 +439,7 @@ De la même manière, les informations qui impliquent de distinguer différents 
 
 Assurez-vous que toutes les informations qui reposent sur les caractéristiques visuelles du contenu de la page sont également présentées dans un autre format.
 
-* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne reportez-vous pas à la section *le menu de droite ;*; au lieu de cela, nommez le menu (par exemple, au moyen d’un en-tête) et faites référence à ce nom dans le texte.
+* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs et les utilisatrices vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne faites pas référence au *menu de droite* ; au lieu de cela, nommez le menu (par exemple au moyen d’un en-tête) et faites référence à ce nom dans le texte.
 * Ne vous limitez pas au style de texte (texte en gras ou en italique, par exemple) comme seul moyen de transmettre l’information.
 
 >[!NOTE]
@@ -463,9 +463,9 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 >[!NOTE]
 >
->Ce critère de réussite traite spécifiquement de la perception des couleurs. D’autres formes de perception sont abordées dans la section [Adaptable (1.3)](#adaptable); y compris l’accès programmatique à la couleur et à d’autres codes de présentation visuelle.
+>Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées dans la règle [Adaptable (1.3)](#adaptable), incluant l’accès à la couleur via un programme informatique et les autres formes de codage de la présentation visuelle.
 
-#### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
+#### Objectif - Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
 La couleur est un moyen efficace d’améliorer l’aspect esthétique des pages web et est également utile pour véhiculer l’information. Cependant, il existe une plage de déficiences visuelles, de la cécité au daltonisme, ce qui signifie que certaines personnes sont incapables de distinguer certaines couleurs. Cela fait du codage par couleur un moyen peu fiable de fournir des informations.
 
@@ -704,8 +704,8 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Remarques :
 
-1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir Ne pas concevoir de contenu susceptible de provoquer des crises (2.3).
-1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à utiliser la page entière, tout le contenu de la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire à ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
+1. Pour les exigences relatives au contenu scintillant ou clignotant, se référer à la règle Ne pas concevoir de contenu susceptible de provoquer des crises d’épilepsie (2.3).
+1. Comme tout contenu qui ne remplit pas ce critère de réussite peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
 
@@ -844,7 +844,7 @@ Avant tout, veillez à ce que l’objectif d’un lien soit clairement décrit d
    * Texte : Cours du soir de l’automne 2010 – Détails.
    * Motif : il est possible d’améliorer le texte du lien en adaptant légèrement le texte et sa position.
 
-Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur d’autres pages pour garantir la cohérence.
+Les liens doivent être formulés de manière cohérente sur toutes les pages, en particulier pour les barres de navigation. Par exemple, si un lien vers une page spécifique est nommé **Publications** sur une page, utilisez ce texte sur les autres pages pour garantir la cohérence.
 
 Au moment de la rédaction de cet article, l’utilisation des attributs de titre pose certains problèmes. Ils ne permettent pas de s’assurer que des liens similaires présentés sur une page donnent des informations uniques sur la destination (par exemple, la mention « en savoir plus » se rapporte souvent à plusieurs destinations différentes) :
 
@@ -854,7 +854,7 @@ Au moment de la rédaction de cet article, l’utilisation des attributs de titr
 
 Ainsi, bien que l’attribut de titre puisse fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
-Lorsque le lien est composé d’une image, assurez-vous que le texte secondaire de l’image décrit la destination du lien. Par exemple, si une image d’une bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit être lu : **Publications de John Smith** et non **Bibliothèque**.
+Lorsque le lien est composé d’une image, assurez-vous que le texte de remplacement de l’image décrit la destination du lien. Par exemple, si une image représentant une bibliothèque est définie comme lien vers les publications d’une personne, le texte alternatif doit stipuler : **Publications de John Smith** et non **Bibliothèque**.
 
 Si l’ancre de lien contient du texte qui décrit la destination du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut de remplacement vide pour l’image :
 
@@ -991,9 +991,9 @@ Dans AEM, la langue par défaut de la page est définie lors de la création de 
 
 * [Compréhension du critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
-* Les codes sont basés sur la norme ISO 639-1. Vous trouverez une liste plus complète de codes pour chaque langue à l’adresse [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* Les codes sont basés sur la norme ISO 639-1. Une liste plus exhaustive des codes pour chaque langue est disponible sur le [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Langue d’un passage (3.1.2)  {#language-of-parts}
+### Langue des parties (3.1.2)  {#language-of-parts}
 
 * Critère de réussite 3.1.2
 * Niveau AA
@@ -1031,7 +1031,7 @@ De même, le navigateur peut restituer correctement un mot ou une expression emp
 
 >[!NOTE]
 >
->Il n’est pas nécessaire de suivre ce critère de réussite lors de l’inclusion de noms ou de villes dans différentes langues. Ou, lorsque vous utilisez des mots ou expressions empruntés qui sont devenus courants dans la langue par défaut, comme *schadenfreude* en anglais.
+>Il n’est pas nécessaire de respecter ce critère de réussite lors de l’inclusion de noms ou de villes dans différentes langues. Ou bien, lorsque vous utilisez des mots ou expressions empruntés devenus courants dans la langue par défaut, tels que *schadenfreude* en anglais.
 
 Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifier manuellement votre balisage HTML en mode d’édition source de l’éditeur de texte enrichi afin qu’il se lise comme ci-dessus. Vous pouvez également inclure l’attribut `lang` dans l’éditeur de texte enrichi par un administrateur système (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -1100,7 +1100,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Ce critère de succès a pour but d’encourager l’utilisation d’une présentation et d’une mise en page cohérentes pour les utilisateurs et utilisatrices qui interagissent avec du contenu répété dans un ensemble de pages web et qui ont besoin de trouver à plusieurs reprises des informations ou des fonctionnalités spécifiques. Les personnes malvoyantes qui utilisent la loupe pour agrandir une petite partie de l’écran utilisent souvent des repères visuels et des limites de pages pour localiser rapidement un contenu répété. De même, la présentation d’un contenu répété dans le même ordre est importante pour les utilisateurs visuels qui font appel à leur mémoire spatiale ou à des repères visuels dans la représentation graphique pour localiser ce contenu.
 
-L’utilisation de l’expression &quot;même ordre&quot; dans cette section ne signifie pas que les menus de sous-navigation ne peuvent pas être utilisés ou que des blocs de navigation secondaire ou une structure de page ne peuvent pas être utilisés. Ce critère de succès vise plutôt à aider les utilisateurs et utilisatrices qui interagissent avec du contenu répété sur plusieurs pages web à prévoir l’emplacement du contenu qu’ils recherchent. Il leur permet également de le trouver plus rapidement quand ils le redécouvrent.
+L’expression « dans le même ordre » de cette section ne signifie pas qu’il est impossible d’utiliser des sous-menus, des blocs de navigation secondaires ou une structure de page complémentaire. Ce critère de succès vise plutôt à aider les utilisateurs et utilisatrices qui interagissent avec du contenu répété sur plusieurs pages web à prévoir l’emplacement du contenu qu’ils recherchent. Il leur permet également de le trouver plus rapidement quand ils le redécouvrent.
 
 Les utilisateurs et utilisatrices peuvent effectuer une modification de l’ordre en faisant appel à des agents utilisateur adaptatifs ou en définissant des préférences pour que les informations soient présentées de la manière la plus utile pour eux.
 
@@ -1150,7 +1150,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 #### Objectif – Identification des erreurs (3.3.1) {#purpose-error-identification}
 
-Ce critère de réussite a pour but de s’assurer que les utilisateurs sont conscients qu’une erreur s’est produite et qu’ils peuvent déterminer ce qui ne va pas. Le message d’erreur doit être aussi précis que possible. En cas d’échec de l’envoi du formulaire, la réaffichage du formulaire et l’indication des champs en erreur ne suffisent pas à certains utilisateurs pour percevoir qu’une erreur s’est produite. Les utilisateurs et utilisatrices de lecteurs d’écran, par exemple, ne savent pas qu’une erreur s’est produite tant qu’ils ou elles n’ont pas identifié l’un des indicateurs. Il est possible qu’ils abandonnent complètement le formulaire avant d’identifier l’indicateur d’erreur, en pensant que la page n’est tout simplement pas fonctionnelle. Selon la définition des règles WCAG, une [erreur de saisie](https://www.w3.org/TR/WCAG/#dfn-input-error) correspond à une information fournie par l’utilisateur et qui n’est pas acceptée. Cela inclut les éléments suivants :
+Ce critère de réussite a pour but de s’assurer que les utilisateurs sont conscients qu’une erreur s’est produite et qu’ils peuvent déterminer ce qui ne va pas. Le message d’erreur doit être aussi précis que possible. Dans le cas d’un échec d’envoi de formulaire, le réaffichage du formulaire avec les champs erronés indiqués ne suffit pas, pour certains utilisateurs et utilisatrices, à constater qu’une erreur s’est produite. Les utilisateurs et utilisatrices de lecteurs d’écran, par exemple, ne savent pas qu’une erreur s’est produite tant qu’ils ou elles n’ont pas identifié l’un des indicateurs. Il est possible qu’ils abandonnent complètement le formulaire avant d’identifier l’indicateur d’erreur, en pensant que la page n’est tout simplement pas fonctionnelle. Selon la définition des règles WCAG, une [erreur de saisie](https://www.w3.org/TR/WCAG/#dfn-input-error) correspond à une information fournie par l’utilisateur et qui n’est pas acceptée. Cela inclut les éléments suivants :
 
 Les informations requises par la page web, mais omises par l’utilisateur ou l’utilisatrice, ou les informations fournies par l’utilisateur ou l’utilisatrice, mais non conformes au format de données requis ou aux valeurs autorisées.
 Par exemple :
@@ -1212,7 +1212,7 @@ Les libellés sont positionnés immédiatement à droite du champ.
 * Tous les autres composants de formulaire (par exemple, zones de texte, zones de liste modifiable) :
 les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples avec des fonctionnalités limitées, étiquetez correctement une `Submit` peut agir comme libellé pour le champ adjacent (par exemple : `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples aux fonctionnalités limitées, l’ajout d’un libellé approprié pour un bouton `Submit` peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 
@@ -1229,7 +1229,7 @@ Dans les formulaires simples avec des fonctionnalités limitées, étiquetez cor
 
 Ce critère de réussite a pour but de s’assurer que les utilisateurs reçoivent des suggestions appropriées pour corriger, si possible, une erreur de saisie. Selon les règles WCAG, une [erreur de saisie](https://www.w3.org/TR/WCAG/#dfn-input-error) indique que « l’information fournie par l’utilisateur n’est pas acceptée » par le système. À titre d’exemples de saisies non acceptées, figurent les informations requises, mais omises par l’utilisateur, et celles fournies par l’utilisateur, mais non conformes au format de données requis ou aux valeurs autorisées.
 
-Le critère de réussite 3.3.1 prévoit la notification des erreurs. Cependant, les personnes atteintes de limitations cognitives peuvent avoir du mal à comprendre comment corriger les erreurs. Celles atteintes de déficiences visuelles ne seront peut-être pas en mesure de déterminer exactement comment corriger l’erreur. En cas d’échec de l’envoi du formulaire, les utilisateurs peuvent abandonner le formulaire car ils ne savent peut-être pas comment corriger l’erreur, même s’ils savent qu’elle s’est produite.
+Le critère de réussite 3.3.1 prévoit la notification des erreurs. Cependant, les personnes atteintes de limitations cognitives peuvent avoir du mal à comprendre comment corriger les erreurs. Celles atteintes de déficiences visuelles ne seront peut-être pas en mesure de déterminer exactement comment corriger l’erreur. Dans le cas d’un envoi de formulaire infructueux, les utilisateurs et utilisatrices risquent d’abandonner faute de savoir comment corriger l’erreur, même s’ils savent qu’elle s’est produite.
 
 La personne en charge de la création du contenu peut donner la description de l’erreur ou l’agent utilisateur peut fournir la description de l’erreur en fonction d’informations spécifiques à la technologie et déterminées par programmation.
 

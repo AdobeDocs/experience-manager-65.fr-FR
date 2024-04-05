@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -68,9 +68,9 @@ Pour activer le point d’entrée correspondant :
 
    >[!NOTE]
    >
-   >L’avertissement suivant s’affiche dans la boîte de dialogue :
+   >L’avertissement suivant s’affiche dans la boîte de dialogue :
    >
-   >* *Les points d’entrée GraphQL peuvent introduire des problèmes de sécurité et de performances des données s’ils ne sont pas gérés avec précaution. Veillez à définir les autorisations appropriées après la création d’un point de fin.*
+   >* *Les points d’entrée GraphQL peuvent introduire des problèmes de sécurité et de performances des données s’ils ne sont pas gérés avec précaution. Veillez à définir les autorisations appropriées après la création d’un point d’entrée.*
 
 1. Confirmez avec **Créer**.
 1. La boîte de dialogue **Étapes suivantes** fournit un lien direct vers la console de sécurité afin que vous puissiez vous assurer que le nouveau point d’entrée dispose des autorisations appropriées.
@@ -91,4 +91,4 @@ Sélectionnez le nouveau point d’entrée et **Publier** pour le rendre entièr
 >
 >Cela peut entraîner un problème de sécurité sur les instances de publication, car les requêtes GraphQL peuvent imposer une charge importante au serveur.
 >
->Configurez les listes de contrôle d’accès appropriées à votre cas d’utilisation sur le point de terminaison .
+>Vous devez configurer des listes de contrôle d’accès pour le point d’entrée en fonction de votre cas d’utilisation.

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -55,13 +55,13 @@ Composant Search &amp; Lister dans une page avec une disposition Grille
 
 La zone de liste contient vos formulaires répertoriés. Le composant Search &amp; Lister fournit différentes options de configuration à utiliser pour contrôler l’affichage de formulaires dans le volet Liste.
 
-Pour configurer le volet Liste , sélectionnez le composant Search and Lister , puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
+Pour configurer le volet Liste, sélectionnez le composant Search and Lister, puis ![settings_icon](assets/settings_icon.png). La boîte de dialogue **[!UICONTROL Modifier le composant]** s’ouvre.
 
 ![Volet Liste en mode d’édition](assets/edit-list.png)
 
 Volet Liste en mode d’édition
 
-La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Sélectionner **OK** pour enregistrer la configuration, une fois cette opération terminée.
+La boîte de dialogue **Modifier** comprend plusieurs onglets fournissant des options de configuration décrites dans le tableau ci-dessous. Une fois la configuration terminée, sélectionnez **OK** pour l’enregistrer.
 
 <table>
  <tbody>
@@ -174,7 +174,7 @@ Une fois ajouté, l’attribut de date permet d’effectuer une recherche dans l
 
 Pour configurer l’attribut de prédicat de date :
 
-1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis ![settings_icon](assets/settings_icon.png). La boîte de dialogue Modifier s’ouvre.
 1. Indiquez les informations suivantes :
 
    * **Type** : la seule option disponible est **Date de la dernière modification**.
@@ -185,7 +185,7 @@ Pour configurer l’attribut de prédicat de date :
    * **Libellé Date de fin** : libellé ou légende correspondant au champ de date de fin.
    * **Masquer** : permet d’appliquer le filtre de date par défaut permettant de répertorier les formulaires. 
 
-1. Sélectionner **OK**
+1. Sélectionnez **OK**.
 
 #### Prédicat de texte intégral {#full-text-predicate}
 
@@ -193,9 +193,9 @@ Le composant Prédicat de texte intégral permet d’effectuer une recherche de 
 
 Pour configurer le composant Prédicat de texte intégral, procédez comme suit :
 
-1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Modifier s’ouvre.
 1. Indiquez le titre dans le champ **Titre principal**.
-1. Sélectionner **Ok**
+1. Sélectionnez **OK**.
 
 #### Prédicat de propriétés {#properties-predicate}
 
@@ -203,15 +203,15 @@ Le composant Prédicat de propriétés permet d’effectuer une recherche dans l
 
 Pour configurer le composant Prédicat de propriétés, procédez comme suit :
 
-1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
+1. Sélectionnez le composant, puis ![settings_icon](assets/settings_icon.png). La boîte de dialogue Modifier s’ouvre.
 1. Dans l’onglet Général, indiquez le libellé de la recherche. La valeur par défaut est **Propriétés**.
 
-1. Dans l’onglet Options, sélectionnez **Ajouter un élément.**
+1. Dans l’onglet Options, sélectionnez **Ajouter un élément**.
 1. Sélectionnez une propriété dans la liste déroulante et spécifiez un libellé de recherche pour la propriété dans le champ situé sous la liste déroulante.
 1. Répétez l’étape 4 pour ajouter d’autres propriétés. Vous pouvez également indiquer une valeur de filtre par défaut pour répertorier les formulaires basés sur les critères spécifiés et masquer la propriété pour les recherches effectuées par les utilisateurs finaux. Cochez la case Hide (Masquer) d’une propriété et spécifiez la valeur de filtre par défaut.
 Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. Spécifiez également « Voyage » dans la zone de texte Valeur de filtre par défaut.
 
-1. Sélectionner **OK**
+1. Sélectionnez **OK**.
 
 #### Prédicat de balises {#tags-predicate}
 
@@ -219,10 +219,10 @@ Le composant Prédicat de balises permet d’effectuer une recherche dans les fo
 
 Pour configurer le composant Prédicat de balises, procédez comme suit :
 
-1. Sélectionnez le composant, puis sélectionnez ![settings_icon](assets/settings_icon.png). La boîte de dialogue Edit (Modification du composant) s’ouvre.
-1. Sélectionnez la flèche vers le bas située en regard du champ Balises .
+1. Sélectionnez le composant, puis ![settings_icon](assets/settings_icon.png). La boîte de dialogue Modifier s’ouvre.
+1. Cliquez sur le bouton de flèche vers le bas situé en regard du champ Balises.
 1. Sélectionner les balises appropriées
-1. Sélectionner **OK**
+1. Sélectionnez **OK**.
 
 Les balises sélectionnées s’affichent dans le volet Rechercher, avec les cases à cocher de sélection. Les utilisateurs peuvent affiner leur recherche en fonction des balises.
 

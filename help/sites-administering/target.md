@@ -1,6 +1,6 @@
 ---
 title: Intégration à Adobe Target
-description: Découvrez comment intégrer Adobe Experience Manager à Adobe Target.
+description: Découvrez comment intégrer Adobe Experience Manager à Adobe Target.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 1. Vous pouvez effectuer les actions suivantes :
 
-   1. [Adhérez à Adobe Target](/help/sites-administering/opt-in.md) : l’assistant d’inclusion récupère les informations de votre compte Target et crée une configuration cloud Adobe Target et une structure Target. L’assistant associe également vos sites à la structure Target. Si l’assistant ne parvient pas à se connecter à Target, voir [problème de connexion](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) . Vous pouvez ensuite [modifier les configurations cloud par défaut](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations) : si nécessaire, modifiez la configuration et la structure cloud créées par l’assistant de souscription. Par exemple, modifiez la structure pour envoyer des données contextuelles supplémentaires à Target. Si vous souhaitez utiliser Adobe Analytics comme source de création de rapports pour Adobe Target, vous devez modifier la configuration cloud pour qu’elle pointe vers la configuration A4T.
+   1. [Adhérez à Adobe Target](/help/sites-administering/opt-in.md) : l’assistant d’inclusion récupère les informations de votre compte Target et crée une configuration cloud Adobe Target et une structure Target. L’assistant associe également vos sites à la structure Target. Si l’assistant ne parvient pas à se connecter à Target, consultez la section [Résolution des incidents de connexion](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems). Vous pouvez ensuite [modifier les configurations cloud par défaut](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations) : si nécessaire, modifiez la configuration et la structure cloud créées par l’assistant de souscription. Par exemple, modifiez la structure pour envoyer des données contextuelles supplémentaires à Target. Si vous souhaitez utiliser Adobe Analytics comme source de création de rapports pour Adobe Target, vous devez modifier la configuration cloud pour qu’elle pointe vers la configuration A4T.
    1. [Réalisez une intégration manuelle à Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurez les activités](/help/sites-authoring/activitylib.md) : associez vos activités à la configuration cloud Target.

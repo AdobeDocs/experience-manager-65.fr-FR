@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Le vérificateur de liens s’exécute automatiquement pour aider les créateurs
 * L’affichage d’une liste de tous les liens externes dans le contenu
 * La réalisation des transformations de lien
 
-Le vérificateur de liens comporte plusieurs [options de configuration](#configuring) par exemple, la définition de la validation interne, ce qui permet à certains liens ou à certains modèles de liens d’être omis de la validation et la réécriture des règles de réécriture de liens.
+Le vérificateur de liens comporte un certain nombre d’[options de configuration](#configuring), par exemple la définition de la validation interne, le pouvoir d’omettre certains liens ou certains modèles de liens de la validation, et la réécriture des règles de réécriture de liens.
 
 Le vérificateur de liens valide les [liens internes](#internal) comme les [liens externes.](#external)
 
@@ -89,7 +89,7 @@ Vous pouvez manipuler le contenu de la fenêtre en utilisant les deux boutons si
 
 ### Fonctionnement du Vérificateur de lien externe {#how-it-works}
 
-Bien qu’il soit facile à utiliser, le vérificateur de lien externe s’appuie sur plusieurs services et comprend leur fonctionnement pour vous aider à comprendre comment [configuration du vérificateur de liens](#configuring) pour répondre à vos besoins.
+Bien qu’il soit facile à utiliser, le Vérificateur de lien externe repose sur plusieurs services, et comprendre leur fonctionnement peut vous aider à comprendre comment [configurer le Vérificateur de lien](#configuring) pour qu’il réponde à vos besoins.
 
 1. Chaque fois qu’un auteur de contenu enregistre un lien vers une page, un gestionnaire d’événements est déclenché.
 1. Le gestionnaire d’événements parcourt tout le contenu sous `/content` et recherche les liens nouveaux ou mis à jour et les ajoute à un cache pour le Vérificateur de liens.
@@ -100,7 +100,7 @@ Bien qu’il soit facile à utiliser, le vérificateur de lien externe s’appui
 
 ## Configuration du Vérificateur de lien {#configuring}
 
-Le Vérificateur de lien est automatiquement disponible dans AEM. Cependant, plusieurs configurations OSGi peuvent être modifiées pour modifier son comportement :
+Le Vérificateur de lien est automatiquement disponible dans AEM. Cependant, plusieurs configurations OSGi peuvent être modifiées pour modifier son comportement :
 
 * **Service de stockage d’informations du Vérificateur de lien Day CQ** - Ce service définit la taille du cache du Vérificateur de liens dans le référentiel.
 * **Service de vérification de lien Day CQ** - Ce service effectue une vérification asynchrone de la syntaxe des liens externes. Vous pouvez définir la période de vérification et les types de liens qui sont ignorés par le Vérificateur, parmi d’autres options.

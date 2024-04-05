@@ -1,6 +1,6 @@
 ---
 title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
-description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de bonnes pratiques pour la diffusion du projet. Elles vous guident tout au long du cycle de vie du projet et vous permettent de surveiller de haut niveau votre état.
+description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de bonnes pratiques pour la diffusion du projet. Elles vous guident tout au long du cycle de vie du projet et vous offrent une surveillance détaillée de votre statut.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager 6.5
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '3214'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Gestion des projets : liste de contrôle des bonnes pratiques{#managing-projects-best-practices-checklist}
 
-La gestion d’un projet pour mettre en oeuvre Adobe Experience Manager (AEM) nécessite une planification et une compréhension afin que vous soyez conscient des problèmes et des décisions (associées) que vous devez prendre, avant et pendant la mise en oeuvre de votre projet.
+La gestion d’un projet pour mettre en œuvre Adobe Experience Manager (AEM) nécessite planification et compréhension afin que vous ayez conscience des problèmes et des décisions (associées) que vous devez prendre, avant et pendant la mise en œuvre de votre projet.
 
 Pour vous aider, les bonnes pratiques sont les suivantes :
 
@@ -26,7 +26,7 @@ Pour vous aider, les bonnes pratiques sont les suivantes :
    * Définit les entrées et les livrables en fonction de la phase, du jalon et du persona.
    * Fournit des aperçus automatisés (qualité, intégrité et exhaustivité) pour indiquer la progression et l’intégrité du projet.
 
-* Documentation basée sur la variable [liste de contrôle](/help/managing/best-practices-checklist.md) qui détaille :
+* Documentation basée sur la [liste de contrôle](/help/managing/best-practices-checklist.md) qui détaille :
 
    * l’analyse de [pulsation du projet](#projectheartbeat) ;
    * l’aperçu du [Statut par rôle](#status-by-role) ;
@@ -118,7 +118,7 @@ Les quatre facteurs :
 
 ### Planification {#planning}
 
-La planification du projet consolide la préparation. Vous devriez commencer à transformer les objectifs et les attentes en une feuille de route bien définie, composée de tâches concrètes, liées par une communication claire, avec des révisions rigoureuses pour mesurer les progrès.
+La planification du projet consolide la préparation. Vous devez ici commencer à transformer les objectifs et les attentes en une feuille de route bien définie, composée de tâches concrètes, liées par une communication claire, avec des révisions rigoureuses pour mesurer la progression du projet.
 
 #### Jalons {#milestones-1}
 
@@ -136,7 +136,7 @@ La planification du projet consolide la préparation. Vous devriez commencer à 
 
 * **Communication**
 
-  La communication est toujours essentielle au succès d’un projet. Communiquez clairement et efficacement pour vous assurer que chacun :
+  La communication est toujours essentielle au succès d’un projet. Communiquez de manière claire et efficace pour vous assurer que tout le monde :
 
    * Utilise les mêmes objectifs de base
    * à partir de la même base d’informations
@@ -170,7 +170,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * l’arborescence de contenu, y compris les ressources ;
    * les structures de base, y compris les campagnes, etc. ;
-   * Structures multisites et multilingues (MSM, Traduction, etc.)
+   * les structures multisites et multilingues (MSM, traduction, etc.) ;
    * le contenu pris en charge (y compris les balises et les concepts de balisage) ;
    * les stratégies de cache et de réutilisation du contenu.
 
@@ -204,7 +204,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    * la structure de code de base du projet ;
    * les artefacts de code (bundles, packages, etc.) ;
    * les pannes des modèles/composants et de leurs relations ;
-   * Détails de haut niveau sur les personnalisations requises (des superpositions spécifiques suivent ultérieurement)
+   * les détails de haut niveau sur les personnalisations requises (des superpositions spécifiques suivront ultérieurement) ;
    * la conception des workflows requis par la solution (par exemple, création de contenu, approbation, publication, transformations, imports et exports) ;
    * la considération spéciale pour tout module complexe, tel que MSM, Commerce, intégration tierce.
 
@@ -212,8 +212,8 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   L’intégration système requiert que vous planifiiez (puis que vous mettiez en œuvre) :
 
-   * Comment tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) sont regroupées pour fonctionner comme un système unique et cohérent.
-   * Comment les systèmes tiers sont-ils intégrés, ainsi que toute considération spéciale, telle que hors ligne/en ligne, côté client/côté navigateur ou la gestion des basculements lorsqu’un système tiers est hors service ?
+   * la façon dont tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) seront rassemblés pour fonctionner comme un système cohérent ;
+   * la façon dont les éventuels systèmes tiers sont intégrés, ainsi que toute considération spéciale, telle que hors ligne ou en ligne, côté client ou côté navigateur, ou encore la gestion des basculements lorsqu’un système tiers est hors service.
 
 * **Concept test**
 
@@ -352,7 +352,7 @@ Le développement est une phase cruciale qui nécessite plus que du simple codag
 
 ### les performances et les tests ; {#performance-and-testing}
 
-Une fois la nouvelle application disponible, elle doit subir des tests stricts, tant pour ses fonctionnalités que pour les [performance](/help/sites-deploying/configuring-performance.md).
+Une fois la nouvelle application disponible, elle doit subir des tests stricts, tant pour son fonctionnement que pour ses [performances](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >

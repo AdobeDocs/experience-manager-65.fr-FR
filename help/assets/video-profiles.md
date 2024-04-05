@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition &quot;Paysage mobile&quot; avec un format de 16×9 et une définition &quot;Portrait mobile&quot; avec un format de 9×16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
+Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition « Paysage mobile » avec des proportions de 16x9 et une définition « Portrait mobile » avec un format de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 

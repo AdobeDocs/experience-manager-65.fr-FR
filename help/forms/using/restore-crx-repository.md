@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ Effectuez la sauvegarde de votre référentiel CRX avant d’effectuer les étap
 
 ## Application {#applies-to}
 
-Cette solution s’applique à la grappe AEM Forms on JEE.
+Cette solution s’applique au cluster AEM Forms on JEE.

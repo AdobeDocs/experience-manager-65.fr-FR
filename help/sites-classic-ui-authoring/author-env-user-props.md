@@ -1,6 +1,6 @@
 ---
 title: Configuration de l’environnement du compte
-description: Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
+description: Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Configuration de l’environnement du compte{#configuring-your-account-environment}
 
-Adobe Experience Manager (AEM) vous permet de configurer votre compte et certains aspects de l’environnement de création.
+Adobe Experience Manager (AEM) vous procure les outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous donne la possibilité de **Copier**, **Couper**, **Coller**, **Supprimer** des boutons utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, comprend des boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les composants de paragraphe sur cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
-   * Conserver les éléments masqués
+   * Garder masqué
 
-* **Se faire passer pour**
-Les fonctionnalités de [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
+* **Emprunter l’identité de**
+La fonctionnalité [Emprunter l’identité de](/help/sites-administering/security.md#impersonating-another-user) permet à une personne de travailler au nom d’une autre.
 
 * **Langue**
 Langue à utiliser dans l’interface utilisateur de l’environnement de création. Sélectionnez la langue requise dans la liste.
@@ -36,12 +36,14 @@ Langue à utiliser dans l’interface utilisateur de l’environnement de créat
 * **Gestion des fenêtres**
 Sélectionnez :
 
-   * Plusieurs pages Windows (par défaut) s’ouvrent dans une nouvelle fenêtre.
-   * Les pages à une seule fenêtre s’ouvrent dans la fenêtre active.
+   * Fenêtres multiples (par défaut)
+Les pages s’ouvrent dans une nouvelle fenêtre.
+   * Une seule fenêtre
+Les pages s’ouvrent dans la fenêtre active.
 
 ## Paramètres du compte {#account-settings}
 
-L’icône utilisateur permet d’accéder aux options suivantes :
+L’icône utilisateur permet d’accéder aux options suivantes :
 
 * Se déconnecter
 * [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user)
@@ -52,7 +54,7 @@ L’icône utilisateur permet d’accéder aux options suivantes :
 
 ### Préférences utilisateur {#user-preferences}
 
-Chaque utilisateur peut définir certaines propriétés pour lui-même. Cette option est disponible à partir du **Préférences** dans le coin supérieur droit des consoles.
+Chaque utilisateur ou utilisatrice peut définir certaines propriétés pour lui-même ou pour elle-même. Cette option est disponible à partir de la boîte de dialogue **Préférences** dans le coin supérieur droit des consoles.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

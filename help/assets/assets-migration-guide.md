@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Lors de la migration des ressources dans [!DNL Adobe Experience Manager], il exi
 
 ## Prérequis {#prerequisites}
 
-Avant de suivre toute étape de cette méthode, consultez et mettez en œuvre les instructions du document [Conseils relatifs à l’optimisation des performances des ressources](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration de tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration d’un magasin de données basé sur les fichiers, sont beaucoup plus difficiles à exécuter une fois le système chargé avec des ressources.
+Avant de suivre toute étape de cette méthode, consultez et mettez en œuvre les instructions du document [Conseils relatifs à l’optimisation des performances des ressources](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration de tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur lors de la charge. D’autres étapes, telles que la configuration d’un magasin de données basé sur les fichiers, sont beaucoup plus difficiles à exécuter une fois le système chargé avec des ressources.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ La migration des ressources vers [!DNL Experience Manager] se déroule en plusie
 
 ### Désactivation des workflows {#disabling-workflows}
 
-Avant de commencer la migration, désactivez les lanceurs du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Il est préférable d’ingérer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en production pendant la migration, vous pouvez planifier l’exécution de ces activités pendant les heures creuses.
+Avant de commencer la migration, désactivez les lanceurs du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Il est préférable d’intégrer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en production pendant la migration, vous pouvez planifier l’exécution de ces activités pendant les heures creuses.
 
 ### Chargement des balises {#loading-tags}
 
@@ -56,13 +56,13 @@ Vous avez peut-être déjà mis en place une taxonomie de balises que vous appli
 
 ### Assimilation des ressources {#ingesting-assets}
 
-Les performances et la stabilité sont des considérations importantes lors de l’ingestion de ressources dans le système. Étant donné que vous chargez une grande quantité de données dans le système, vous souhaitez vous assurer que le système fonctionne correctement pour réduire le temps nécessaire et éviter de surcharger le système, ce qui peut entraîner un blocage du système, en particulier dans les systèmes déjà en production.
+Les performances et la stabilité sont des considérations importantes lors de l’ingestion de ressources dans le système. Parce que vous chargez une grande quantité de données dans le système, vous devez vous assurer que le système fonctionne de la manière la plus efficace possible afin de réduire le temps nécessaire et d’éviter de surcharger le système, ce qui peut entraîner un crash, en particulier dans les systèmes déjà en production.
 
 Il existe deux approches pour charger les ressources dans le système : une basée sur les notifications push qui utilise HTTP et une basée sur les extractions qui utilise les API JCR.
 
 #### Envoyer via HTTP {#pushing-through-http}
 
-L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger des données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’un déploiement [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
+L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’un déploiement [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
@@ -83,14 +83,14 @@ Après avoir chargé les ressources dans le système, vous devez les traiter via
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
-1. L’approche la plus simple est la suivante : [Gestionnaire de processus en bloc d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Des options pour définir les tailles de lots sont également proposées.
+1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Des options pour définir les tailles de lots sont également proposées.
 1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus [!DNL Experience Manager], tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activating-assets}
 
 Pour les déploiements comportant un niveau de publication, vous devez activer les ressources vers la ferme de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après avoir déclenché une activation d’arborescence, vous devrez peut-être intervenir. En effet, lors du déclenchement des activations, les éléments sont ajoutés à la file d’attente des tâches et des événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Une fois que la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à en pâtir.
 
-Afin de contourner ce problème, vous pouvez utiliser [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Celle-ci fonctionne sans utiliser les files d’attente Sling, ce qui réduit les frais tout en diminuant la charge de travail pour empêcher la surcharge du serveur. Un exemple d’utilisation de FAM pour gérer la réplication est présenté sur la page de documentation de la fonctionnalité.
+Afin de contourner ce problème, vous pouvez utiliser [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Celle-ci fonctionne sans utiliser les files d’attente Sling, ce qui réduit les frais tout en diminuant la charge de travail pour empêcher la surcharge du serveur. Un exemple d’utilisation de Fast Action Manager pour gérer la réplication est présenté sur la page de documentation de la fonctionnalité.
 
 D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil open-source pour votre infrastructure [!DNL Experience Manager], à savoir [Grabbit](https://github.com/TWCable/grabbit), qui se targue d’être plus rapide que vlt.
 

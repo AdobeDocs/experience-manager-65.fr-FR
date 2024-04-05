@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Il ne s’agit pas nécessairement d’un choix binaire. AEM offre une flexibili
 
 ![Modèles d’implémentation AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-Dans un modèle plein ou en tête, le contenu est géré dans le référentiel AEM et les composants AEM basés sur Java, HTL, etc., sont utilisés pour effectuer le rendu du contenu pour l’expérience utilisateur. Dans ce modèle, la création du contenu, sa mise en forme, sa présentation et sa diffusion sont traitées dans AEM.
+Dans un modèle couplé ou full stack, le contenu est géré dans le référentiel AEM et les composants AEM basés sur Java, HTL, etc., servent à effectuer le rendu du contenu pour l’expérience client. Dans ce modèle, la création du contenu, sa mise en forme, sa présentation et sa diffusion sont traitées dans AEM.
 
 Dans un modèle découplé, le contenu est géré dans le référentiel AEM, mais diffusé à l’aide d’API telles que REST et GraphQL vers un autre système afin de générer le contenu pour l’expérience utilisateur. Dans ce modèle, le contenu est créé dans AEM, mais il est mis en forme, présenté et diffusé sur une autre plateforme.
 
@@ -44,7 +44,7 @@ La section suivante examine ces niveaux d’intégration de manière plus détai
 
 >[!NOTE]
 >
->Vous pouvez bien entendu réimplémenter l’application sur une seule page de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM.](/help/sites-developing/spa-walkthrough.md) Si vous disposez déjà d’AEM et que vous souhaitez créer un webshop ou un autre SPA, il s’agit de la méthode recommandée, mais elle n’a pas de portée pour ce document.
+>Vous pouvez bien entendu réimplémenter l’application sur une seule page de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM.](/help/sites-developing/spa-walkthrough.md) Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Toutefois, elle n’est pas abordée dans ce document.
 
 ## Niveaux d’intégration SPA {#integration-levels}
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Vous pouvez modifier les composants Texte et Image directement sur la page web s
 Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis cette fenêtre, vous pouvez faire glisser des composants sur la page et procéder à des opérations spécifiques à la page.
 
 * **[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés vers la page ; par exemple, pour positionner des ressources ou créer des liens vers d’autres pages.
+Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
 
 * **Menu contextuel**
-Cliquez avec le bouton droit de la souris sur la plupart des éléments à l’écran (par exemple, paragraphes sur la page) pour afficher un menu contextuel avec les options d’action appropriées.
+Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.

@@ -1,6 +1,6 @@
 ---
 title: Personnalisation
-description: Découvrez la personnalisation dans Adobe Experience Manager afin de fournir à l’utilisateur un environnement sur mesure affichant du contenu dynamique.
+description: Découvrez la personnalisation dans Adobe Experience Manager permettant de fournir à l’utilisateur ou l’utilisatrice un environnement sur mesure affichant du contenu dynamique.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -64,10 +64,10 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 
 ### Des groupes d’utilisateurs spécifiques, restreints et ciblés - En extranet {#extranets}
 
-* Les utilisateurs ont besoin d’une connexion pour l’autorisation. Celle-ci est liée à un profil qui fournit les informations nécessaires à la personnalisation ; des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
+* Les utilisateurs et utilisatrices ont besoin d’une connexion pour l’autorisation. Celle-ci sera liée à un profil qui fournit les informations nécessaires à la personnalisation. Elle comprendra éventuellement des détails tels que leur emplacement, leur relation avec le produit, l’historique d’utilisation, les responsabilités budgétaires, etc.
 * Ces instances peuvent s’étendre sur plusieurs sites, tels que :
 * Des entreprises qui fournissent des sites web à une partie hautement spécialisée de leur marché, par exemple, une entreprise pharmaceutique qui fournit un site web spécialisé pour les médecins.
-* Les entreprises qui fournissent des sites web permettant à leurs clients de consulter les informations de compte et de facturation actuelles ; par exemple, les opérateurs téléphoniques.
+* Les entreprises qui fournissent des sites web permettant au client ou à la cliente de visualiser son compte et ses informations de facturation actuels (par exemple, les opérateurs de téléphonie).
 
 ### Sur des sites web de vente et de distribution {#sales-site}
 
@@ -112,7 +112,7 @@ Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
 * La personnalisation réalisée en suivant le comportement de l’utilisateur ou l’utilisatrice, ou en définissant des règles basées sur le profil de l’utilisateur ou l’utilisatrice doit être précise et logique.
 * Il n’y a rien de plus frustrant pour l’utilisateur ou l’utilisatrice que de se voir imposer ou refuser du contenu en raison de la logique inexacte d’une règle.
-* Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cela peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimé ; la définition des règles de fonctionnement l’emporte souvent sur l’effort technique lors de la mise en oeuvre de la personnalisation.
+* Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles métier est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
 
 #### Le moment où l’utiliser {#when-to-use}
 
@@ -154,7 +154,7 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Champ de texte de formulaire | Champ de texte qui permet aux utilisateurs de saisir des informations. |
 | Mes gadgets | Permet d’inclure l’une des sélections de gadgets disponibles. |
 | Photo de l’avatar du profil | Permet le chargement d’une photo d’avatar. |
-| Nom détaillé du profil | Saisie des détails du nom, y compris des éléments tels que le titre, le deuxième nom et le suffixe si nécessaire. |
+| Nom détaillé du profil | Saisie des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe, le cas échéant. |
 | Nom d’affichage du profil | Nom à afficher. |
 | E-mail du profil | Saisie d’une adresse électronique. |
 | Genre du profil | Permet la saisie du genre. |
@@ -177,4 +177,4 @@ Sans l’extension Communities, les différentes méthodes à examiner pour rés
 * Synchroniser de multiples instances de publication si nécessaire
 * Envoyer le contenu créé par l’utilisateur de l’instance de publication à l’environnement de création, à partir duquel il peut être publié de façon similaire à la publication du contenu des pages
 
-La méthode utilisée pour obtenir la cohérence du contenu généré par l’utilisateur dans un environnement de publication constitué de plusieurs instances de publication doit être soigneusement conçue et testée pour assurer les performances et la cohérence.
+La méthode utilisée pour obtenir l’homogénéité du contenu créé par l’utilisateur ou l’utilisatrice dans tout l’environnement de publication consistant en plusieurs instances de publication doit être soigneusement conçue et testée en termes de performances et d’homogénéité.

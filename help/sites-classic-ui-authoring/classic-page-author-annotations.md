@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Les annotations créées dans l’IU classique s’affichent dans l’IU optimisée pour les écrans tactiles. Toutefois, les schémas sont spécifiques à l’interface utilisateur et ne s’affichent que dans l’interface utilisateur dans laquelle ils ont été créés.
+>Les annotations créées dans l’interface utilisateur classique s’affichent dans l’interface utilisateur optimisée pour les écrans tactiles. Toutefois, les esquisses sont spécifiques à l’interface utilisateur et ne s’affichent que dans l’interface dans laquelle elles ont été créées.
 
 >[!CAUTION]
 >

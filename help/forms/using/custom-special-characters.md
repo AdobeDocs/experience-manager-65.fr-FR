@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -136,7 +136,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>
     <ol>
      <li>Ajoutez un nœud enfant sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters » avec les propriétés obligatoires. </li>
-     <li>Ajoutez la propriété "sling:orderBefore (String)" au noeud enfant nouvellement créé. </li>
+     <li>Ajoutez la propriété « sling:orderBefore (String) » au nœud enfant qui vient d’être créé. </li>
      <li>Ajoutez le nom du nœud comme valeur devant laquelle le caractère spécial récemment ajouté doit être affiché. </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>

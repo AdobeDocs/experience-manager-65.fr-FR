@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Les formulaires incluent certains champs et sections qui ne s’appliquent pas �
 Suivez les étapes ci-après pour activer le chargement différé sur un fragment de formulaire adaptatif :
 
 1. Ouvrez le formulaire adaptatif en mode création contenant le fragment que vous souhaitez activer pour le chargement différé.
-1. Sélectionnez le fragment de formulaire adaptatif et sélectionnez ![cmppr](assets/cmppr.png).
+1. Sélectionnez le fragment de formulaire adaptatif, puis ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, activez **[!UICONTROL Chargement différé du fragment]** et sélectionnez **Terminé**.
 
    ![Activer le chargement différé du fragment de formulaire adaptatif](assets/lazy-loading-fragment.png)
@@ -63,7 +63,7 @@ Suivez les étapes ci-après pour activer le chargement différé sur un fragmen
 Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme globales, de manière à pouvoir les utiliser dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
 
 1. Ouvrez le fragment de formulaire adaptatif en mode création.
-1. Sélectionnez le champ dont vous souhaitez marquer la valeur comme globale, puis sélectionnez ![cmppr](assets/cmppr.png).
+1. Sélectionnez le champ dont la valeur est à marquer comme globale, puis sélectionnez ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, activez **Utiliser la valeur pendant le chargement différé**.
 
    ![Champ de chargement différé dans la barre latérale](assets/enable-lazy-loading.png)
@@ -74,7 +74,7 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
-* Utilisez des formulaires adaptatifs basés sur un schéma XSD plutôt que des formulaires adaptatifs basés sur XFA pour configurer le chargement différé sur des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
+* Utilisez les formulaires adaptatifs basés sur un schéma XSD plutôt que les formulaires adaptatifs basés sur XFA pour configurer le chargement différé des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
 * Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilise une disposition **[!UICONTROL réactive - tous sur une page sans navigation]** pour le panneau racine. En raison de la configuration de la disposition réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Vous risqueriez également de causer une baisse des performances.
 * Il est recommandé de ne pas configurer le chargement différé sur le premier fragment d’un formulaire adaptatif.
 * Il est recommandé de ne pas configurer le chargement différé sur des fragments du premier panneau s’affichant au chargement du formulaire adaptatif.
@@ -88,7 +88,7 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
 * Assurez-vous que les scripts initialize et calculate utilisés sur les champs d’un fragment à chargement différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet, même après plusieurs exécutions.
-* Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs d’un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
+* Utilisez la propriété disponible globalement des champs pour que la valeur des champs d’un panneau à chargement différé soit disponible pour tous les autres panneaux d’un formulaire.
 * Ne transférez pas la valeur de référence d’un champ dans un panneau différé, peu importe que le champ soit ou non marqué globalement sur tous les fragments.
 * Utilisez la fonction de réinitialisation des panneaux pour réinitialiser tout élément visible sur le panneau à l’aide de l’expression de clic suivante.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

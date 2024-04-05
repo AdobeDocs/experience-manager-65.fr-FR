@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -17,13 +17,13 @@ Lors du rendu d’un composant d’une page web, un élément HTML peut être g�
 * Un composant ne peut être modifié que s’il est encapsulé avec un élément HTML.
 * L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
 
-   * informations de mise en page
-   * informations de style
+   * des informations de disposition ;
+   * des informations de style.
 
 Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative est défini par la combinaison de deux facteurs, détaillés sur cette page :
 
 * Le composant peut configurer sa balise décorative avec un ensemble de propriétés.
-* Les scripts qui incluent des composants (HTL, JSP, dispatcher, etc.) peuvent définir les aspects de la balise décorative avec des paramètres d’inclusion.
+* Les scripts qui contiennent des composants (HTL, JSP, Dispatcher, etc.) peuvent définir les aspects de la balise décorative avec des paramètres d’inclusion.
 
 ## Recommandations {#recommendations}
 

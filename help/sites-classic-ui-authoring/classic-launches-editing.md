@@ -1,6 +1,6 @@
 ---
 title: Modification de lancements
-description: Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
+description: Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 75%
 
 ## Modification de pages de lancement {#editing-launch-pages}
 
-Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
+Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
 
 1. Ouvrez la page pour modification.
 1. Dans le sidekick, sélectionnez l’onglet **Contrôle de version**, puis développez le groupe **Lancements**. Le titre du lancement en cours de modification utilise une police en gras.
@@ -31,7 +31,7 @@ Une fois un lancement créé pour une page (ou un ensemble de pages), vous pouve
 
    >[!NOTE]
    >
-   >Vous pouvez utiliser la variable **Page** de sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres.
+   >Vous pouvez utiliser l’onglet **Page** du sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres.
 
 ## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 

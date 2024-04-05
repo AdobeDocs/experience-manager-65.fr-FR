@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
    >[!NOTE]
    >
-   >Si le modèle n’est pas disponible, reportez-vous au [Mettre un modèle à disposition](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate) .
+   >Si le modèle n’est pas disponible, consultez la section [Rendre un modèle disponible](/help/sites-classic-ui-authoring/classic-personalization-ac.md#activatingatemplate).
 
 1. Cliquez sur **Créer** pour créer le formulaire.
 
@@ -80,7 +80,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
 
 1. Accédez au formulaire que vous souhaitez modifier.
 1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de page…** et accédez ensuite à l’onglet **Services cloud** de la fenêtre pop-up.
-1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service**, puis en sélectionnant la configuration correspondant à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, consultez [Connexion d’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
+1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service** et en choisissant ensuite la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, consultez [Connexion d’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
    >
@@ -106,7 +106,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    >
    >Le **Nom de l’élément** doit être différent pour chaque champ de formulaire. Modifiez-le si nécessaire.
    >
-   >Chaque formulaire doit contenir un **Clé de Principal chiffrée** pour gérer correctement les destinataires dans la base de données Adobe Campaign.
+   >Chaque formulaire doit contenir un composant **Clé primaire chiffrée** afin de gérer correctement les personnes destinataires dans la base de données Adobe Campaign.
 
 1. Activez la page en choisissant **Page** > **Activer la page** dans la boîte à outils. La page est activée sur votre site. Vous pouvez l’afficher en accédant à votre instance de publication AEM. Les données de la base de données d’Adobe Campaign sont mises à jour une fois qu’un formulaire est validé.
 

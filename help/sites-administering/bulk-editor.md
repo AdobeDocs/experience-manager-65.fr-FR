@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ Par exemple, si vous avez besoin de tous les noms et adresses e-mail des utilisa
 Le site web de Geometrixx fournit un exemple illustrant ce cas d’utilisation :
 
 1. Accédez à la page **Assistance**, puis à l’enquête **Satisfaction relative au service clientèle**.
-1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur le bouton **Avancé** , développez la **Configuration d’action**, puis cliquez sur **Afficher les données...**.
+1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur l’onglet **Avancé**, développez la **Configuration de l’action**, puis cliquez sur **Afficher les données…**.
 
    ![Exemple d’enquête sur la satisfaction de la clientèle](assets/custsatsurvey.png)
 
@@ -64,7 +64,7 @@ L’éditeur en bloc vous permet :
 Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simultanément :
 
 1. Dans la console **Outils**, cliquez sur le dossier **Importateurs** pour le développer.
-1. Double-cliquez sur le **Éditeur en bloc**.
+1. Double-cliquez sur l’**éditeur en bloc**.
 1. Saisissez vos exigences de sélection :
 
 <table>
@@ -79,11 +79,11 @@ Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simulta
   </tr>
   <tr>
    <td>Paramètres de requête</td>
-   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel. Par exemple : <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
+   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel. Par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot « professional » et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est « English ». Vous pouvez rechercher uniquement des chaînes.</td>
   </tr>
   <tr>
    <td>Case à cocher Mode Contenu</td>
-   <td>Cochez cette case pour pouvoir lire les propriétés dans la variable <code>jcr:content</code> sous-noeud des résultats de la recherche s’il existe. À utiliser uniquement pour des pages. Les noms de propriété comportent le préfixe <code>"jcr:content/"</code></td>
+   <td>Cochez cette case pour lire les propriétés dans le sous-nœud <code>jcr:content</code> des résultats de recherche, si celui-ci existe. À utiliser uniquement pour des pages. Les noms de propriété comportent le préfixe <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propriétés/Colonnes</td>
@@ -109,7 +109,7 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
    ![Modification en bloc](assets/srchresultedit.png)
 
-1. Cliquez sur **Enregistrer** pour enregistrer vos modifications (le **Enregistrer** est activé après avoir modifié une cellule).
+1. Cliquez sur **Enregistrer** pour enregistrer les modifications (le bouton **Enregistrer** est activé une fois que vous avez modifié une cellule).
 
    >[!CAUTION]
    >
@@ -118,19 +118,19 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme est pris en compte.
-* **type :** renvoie uniquement les noeuds du type de noeud donné. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds de l’un des types spécifiés.
+* **type :** renvoie uniquement les nœuds du type déterminé. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également l’ordre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier une ouverture `interval:limit:10..` ou `limit:..20`
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10..20. L’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier une ouverture `interval:limit:10..` ou `limit:..20`
 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au plus ce nombre de résultats. Par exemple : `limit:10` (renvoie les dix premiers résultats).
 
 ### Export de contenu {#exporting-content}
 
-Si nécessaire, exportez le contenu dans une feuille de calcul Excel pour apporter des modifications. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou ajouter des lignes supplémentaires.
+Si nécessaire, exportez le contenu vers une feuille de calcul Excel pour apporter des modifications. Par exemple, vous pouvez exporter une liste de publipostage et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou encore ajouter des lignes supplémentaires.
 
 Pour exporter du contenu :
 
 1. Recherchez du contenu comme décrit dans [Recherche et modification de contenu](#searching-and-editing-content).
-1. Cliquez sur **Exporter** vous pouvez ainsi exporter les modifications dans une feuille de calcul Excel séparée par des tabulations. La gestion de contenu web d’AEM vous demande où vous souhaitez télécharger le fichier.
+1. Cliquez sur **Exporter** pour exporter les modifications vers une feuille de calcul Excel de données séparées par des tabulations. La gestion de contenu web d’AEM vous demande où vous souhaitez télécharger le fichier.
 
    >[!NOTE]
    >

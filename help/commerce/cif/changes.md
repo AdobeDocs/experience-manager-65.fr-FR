@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -58,4 +58,4 @@ AEM effectue le rendu à la volée des expériences de catalogue de produits à 
 
 >[!NOTE]
 >
->Pour obtenir de la documentation supplémentaire sur l’utilisation de CIF avec AEM Managed Service ou Adobe On-Premise, voir [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Pour obtenir de la documentation supplémentaire sur l’utilisation de CIF avec AEM Managed Service ou AEM On-Premise, voir [Framework d’intégration de Commerce (Commerce Integration Framework, CIF)](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

@@ -9,7 +9,7 @@ feature: Proxy Workers
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 95%
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
 
-Un proxy est une instance Experience Manager spécifique (et parfois distincte) qui utilise des programmes de travail par de proxy comme des processeurs chargés de gérer une tâche et de produire un résultat. Un programme de travail par proxy peut être utilisé pour de nombreuses tâches. Si une variable [!DNL Assets] proxy qui peut être utilisé pour charger des ressources à des fins de rendu dans Assets. Par exemple, le [programme de travail par proxy IDS](indesign.md) utilise un serveur [!DNL Adobe InDesign] pour traiter les fichiers à utiliser dans Assets.
+Un proxy est une instance Experience Manager spécifique (et parfois distincte) qui utilise des programmes de travail par de proxy comme des processeurs chargés de gérer une tâche et de produire un résultat. Un programme de travail par proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy [!DNL Assets], il peut être utilisé pour le chargement de ressources pour afficher leurs rendus dans Assets. Par exemple, le [programme de travail par proxy IDS](indesign.md) utilise un serveur [!DNL Adobe InDesign] pour traiter les fichiers à utiliser dans Assets.
 
 Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il contribue à réduire la charge sur la ou les instances de création [!DNL Experience Manager]. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée via proxy) pour réduire la charge sur l’instance de création [!DNL Experience Manager].
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré pour accepter des tâches de traitement à l’adresse : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au secondaire de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les traitements dans : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Il est ensuite ajouté à la file d’attente des tâches de proxy et connecté au secondaire de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
@@ -166,7 +166,7 @@ Le diagramme et les étapes suivants décrivent la marche à suivre :
 
    Par exemple, consultez `IDSJob.IDS_EXTENDSCRIPT_JOB` pour le programme de travail de proxy IDS.
 
-1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Développez votre propre étape pour mettre en oeuvre de nouvelles fonctionnalités.
+1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Vous devez développer votre propre étape pour mettre en œuvre de nouvelles fonctionnalités.
 
    Mettez en œuvre une API `WorkflowExternalProcess`, puis utilisez l’API JobService et votre rubrique de tâche pour préparer un événement de tâche et le distribuer à l’API JobService (un service OSGi).
 

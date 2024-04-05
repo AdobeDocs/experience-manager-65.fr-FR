@@ -1,6 +1,6 @@
 ---
 title: Rendus vidéo
-description: Découvrez comment utiliser Adobe Experience Manager Assets pour générer des rendus vidéo pour des ressources vidéo de différents formats, notamment OGG, FLV, etc.
+description: Découvrez comment utiliser Adobe Experience Manager Assets pour générer des rendus vidéo pour les ressources vidéo de différents formats, dont OGG, FLV, etc.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
@@ -9,7 +9,7 @@ feature: Video
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez sa page de
 
 Pour configurer le serveur proxy des rendus codés DM, [configurez les services cloud Dynamic Media](config-dynamic.md).
 
-Pour générer des rendus vidéo avec les paramètres souhaités, procédez comme suit : [créer un profil vidéo correspondant ;](video-profiles.md).
+Pour générer des rendus vidéo avec les paramètres souhaités, [créez un profil vidéo correspondant ;](video-profiles.md).
 
 Une fois que vous avez configuré le serveur proxy et créé les profils vidéo, vous pouvez inclure ce paramètre vidéo prédéfini dans un profil de traitement et appliquer le profil de traitement à un dossier.
 

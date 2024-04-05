@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Activation de la détection des ressources en double {#enable-detection-of-duplicate-assets}
 
-Si vous essayez de charger une ressource qui existe dans [!DNL Adobe Experience Manager Assets], la fonctionnalité de détection des doublons l’identifie comme un doublon. La détection des doublons est désactivée par défaut. Pour activer la fonction, procédez comme suit :
+Si vous essayez de charger une ressource qui existe dans [!DNL Adobe Experience Manager Assets], la fonctionnalité de détection des doublons l’identifie comme un doublon. Par défaut, la détection des doublons est désactivée. Pour activer la fonctionnalité, procédez comme suit :
 
 1. Ouvrez la page d’[!DNL Experience Manager] de configuration de la console Web en accédant à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Modifiez la configuration du servlet **[!UICONTROL Ressource de création de gestion des ressources numériques Day CQ]**.
@@ -31,4 +31,4 @@ La fonctionnalité de détection des doublons est maintenant activée dans [!DNL
 >[!MORELIKETHIS]
 >
 >* [Duplication de ressources dans un référentiel existant (tutoriel d’un membre de la communauté)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [Détecter les ressources en double dans AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)
+>* [Détection des ressources en double dans AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=fr)

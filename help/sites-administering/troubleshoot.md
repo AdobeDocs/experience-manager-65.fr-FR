@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -109,7 +109,7 @@ Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ou
 * Vous constatez qu’il y a de nombreuses entrées CacheManager: resizeAll dans le fichier journal. Le nombre (size=&lt;x>) ci-dessous affiche le nombre de caches. Chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
-Pour analyser les sessions non fermées et déterminer le code qui ne ferme pas une session, consultez l’article de la base de connaissances [Analyse des sessions non fermées](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Pour analyser les sessions non fermées et déterminer le code qui ne ferme pas une session, consultez l’article de la base de connaissances [Analyser les sessions non fermées](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Utiliser la console web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Contrôle des paramètres principaux :** permet de gérer les paramètres de la page Paramètres principaux du système dans la console d’administration.
 
-**CREATE_VERSION_PERM :** Création d’une version d’un service
+**CREATE_VERSION_PERM :** permet de créer une version d’un service.
 
 **Modifier les informations d’identification :** permet de modifier toute information d’identification de signature dans Trust Store.
 
@@ -288,7 +288,7 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Rights Management Policy Set Add Coordinator :** permet d’ajouter, de supprimer et de modifier des autorisations pour les coordinateurs de jeux de politiques.
 
-**Création d’un jeu de stratégies de Rights Management :** Création d’une stratégie pour un jeu de stratégies
+**Rights Management Policy Set Create Policy :** permet de créer une politique pour un jeu de politiques.
 
 **Rights Management Policy Set Delete Policy :** permet de supprimer une politique à partir d’un jeu de politiques.
 

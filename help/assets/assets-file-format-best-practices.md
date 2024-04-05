@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ Pour les formats de fichiers pris en charge, consultez [Formats pris en charge p
 
 Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
 
-[!DNL Adobe Camera Raw] prend en charge le profil colorimétrique CMJN en entrée. Cependant, il génère la sortie dans l’espace colorimétrique RGB et ne prend en charge que la sortie au format JPEG. Il ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
+[!DNL Adobe Camera Raw] prend en charge le profil colorimétrique CMJN en entrée. Cependant, cela génère la sortie dans l’espace colorimétrique RGB et ne prend en charge que la sortie au format JPEG. Cela ne permet pas de conserver l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
 Pour plus d’informations, consultez [Prise en charge de Camera Raw](/help/assets/camera-raw.md).
 
-## Bibliothèque Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
+## Bibliothèque Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
-Pour de meilleurs résultats, Adobe recommande d’utiliser la bibliothèque Adobe PDF Rasterizer pour les fichiers suivants :
+Pour de meilleurs résultats, Adobe recommande d’utiliser la bibliothèque Adobe PDF Rasterizer pour les fichiers suivants :
 
-* Fichiers de PDF lourds et gourmands en contenu
+* Fichiers PDF volumineux et gourmands en contenu
 * Fichiers AI avec des miniatures non générées prêtes à l’emploi
 * Pour les fichiers AI avec des couleurs SPOT (PMS)
 
-Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de meilleure qualité par rapport à la sortie de pixellisation prête à l’emploi. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, PDF Rasterizer d’Adobe génère la sortie RVB uniquement.
+Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont de meilleure qualité par rapport à la sortie matricielle prête à l’emploi. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, PDF Rasterizer d’Adobe génère la sortie RVB uniquement.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -53,23 +53,23 @@ Actuellement, [!DNL Dynamic Media] peut prendre en charge jusqu’à 15 Go de c
 
 ## Bibliothèque ImageMagick {#imagemagick-library}
 
-Adobe recommande d’utiliser la bibliothèque ImageMagick dans les scénarios suivants :
+Adobe recommande d’utiliser la bibliothèque ImageMagick dans les scénarios suivants :
 
 * Pour générer des rendus de miniature pour les fichiers EPS.
 * Pour conserver les informations sur les profils d’image
 * Pour conserver la transparence
 * Pour traiter des fichiers PSD et PSB
 
-Pour savoir comment installer la bibliothèque [!DNL ImageMagick] dans [!DNL Experience Manager], consultez [Fonctionnement d’ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour la configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Pour savoir comment installer la bibliothèque [!DNL ImageMagick] dans [!DNL Experience Manager], consultez [Fonctionnement d’ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, consultez [Bonnes pratiques pour la configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Bibliothèque de transcodage d’image {#image-transcoding-library}
 
 La bibliothèque de transcodage d’imagerie d’Adobe est une solution de traitement des images qui exécute des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage, le redimensionnement des images et ainsi de suite.
 
-La bibliothèque ITL prend en charge les types MIME suivants :
+La bibliothèque de transcodage d’imagerie prend en charge les types MIME suivants :
 
 * JPG/JPEG
-* PNG (8 bits et 16 bits)
+* PNG (8 bits et 16 bits)
 * GIF
 * BMP
 * TIFF/TIFF compressé (hormis pour les images Tiff et PTiff 32 bits)

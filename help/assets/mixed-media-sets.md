@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les visionneuses de médias mixtes sont désignées par une bannière contenant 
 
 Pour démarrer rapidement, procédez comme suit :
 
-1. [Chargement de vos ressources](#uploading-assets).
+1. [Chargez vos ressources](#uploading-assets).
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuses à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
@@ -95,7 +95,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
-1. Dans le **[!UICONTROL Titre]** de la visionneuse de médias mixtes, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière de la visionneuse de médias mixtes. Vous pouvez aussi saisir une description.
+1. Dans le **[!UICONTROL Titre]** de la visionneuse de médias mixtes, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière de la visionneuse de supports variés. Vous pouvez aussi saisir une description.
 
    ![chlimage_1-139](assets/chlimage_1-350.png)
 
@@ -132,7 +132,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 * Ajouter des ressources à la visionneuse de médias mixtes.
 * Réorganiser des ressources de la visionneuse de médias mixtes.
 * Supprimer des ressources de la visionneuse de médias mixtes.
-* Appliquez des paramètres prédéfinis de visionneuse.
+* Appliquez les paramètres d’affichage prédéfinis.
 * Modifiez la miniature par défaut.
 
 **Modification d’une visionneuse de médias mixtes :**
@@ -163,7 +163,7 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 
    >[!NOTE]
    >
-   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Sélectionnez la visionneuse (ne la sélectionnez pas) pour qu’elle s’ouvre dans la page Aperçu de la visionneuse de Experience Manager. Dans le rail de gauche, sélectionnez l’icône lambda vers le bas pour ouvrir la liste déroulante, puis sélectionnez **[!UICONTROL Définir les membres]**. Dans la page Définir des membres, passez la souris sur une ressource, puis sélectionnez **[!UICONTROL Modifier]** (icône représentant un crayon) pour ouvrir la page de modification.
+   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Sélectionnez (ne sélectionnez pas) la visionneuse pour pouvoir l’ouvrir dans la page Aperçu de la visionneuse Experience Manager. Dans le rail de gauche, sélectionnez l’icône lambda vers le bas pour ouvrir la liste déroulante, puis sélectionnez **[!UICONTROL Définir les membres]**. Dans la page Définir des membres, passez la souris sur une ressource, puis sélectionnez **[!UICONTROL Modifier]** (icône représentant un crayon) pour ouvrir la page de modification.
    >
    >* Pour supprimer une visionneuse de médias mixtes dans son ensemble – À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de médias mixtes. Pointez sur la visionneuse, puis sélectionnez **Sélectionner** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sélectionnez **[!UICONTROL Plus]** (trois points de suspension), puis **[!UICONTROL Supprimer]**.
 

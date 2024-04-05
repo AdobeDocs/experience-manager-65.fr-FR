@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: cdf82b91518d656442d0ef842596c2e72690f7dc
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ La fonctionnalité d’intégration d’applications tierces peut permettre d’
 
 ## Prise en charge de tâches personnalisées basées sur l’appareil de l’utilisateur final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-L’espace de travail AEM Forms prend en charge le rendu par HTML des formulaires XDP. Cette prise en charge, lorsqu’elle est utilisée dans un processus de rendu qui achemine vers des rendus différents de XDP sur l’appareil ou l’utilisateur-agent, permet aux utilisateurs d’afficher un formulaire XDP au format HTML sur les appareils mobiles et au format PDF sur un bureau. Cela permet de fournir une couverture de gestion des processus ininterrompue pour les personnes qui utilisent différents environnements sur différents périphériques.
+L’espace de travail AEM Forms prend en charge le rendu HTML des formulaires XDP. Cette prise en charge, lorsqu’elle est utilisée dans un processus de rendu qui achemine vers des rendus différents de XDP sur l’appareil ou l’utilisateur-agent, permet aux utilisateurs d’afficher un formulaire XDP au format HTML sur les appareils mobiles et au format PDF sur un bureau. Cela permet de fournir une couverture de gestion des processus ininterrompue pour les personnes qui utilisent différents environnements sur différents périphériques.

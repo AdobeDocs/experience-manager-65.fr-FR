@@ -1,6 +1,6 @@
 ---
 title: Sites Web de serveurs d’applications
-description: Ce document contient des liens vers les sites web des éditeurs pour tous les serveurs d’applications pris en charge.
+description: Ce document contient des liens vers les sites Web des fabricants pour tous les serveurs d’applications pris en charge.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Sites Web de serveurs d’applications {#application-server-websites}
 
-Cette liste contient des liens vers les sites web des éditeurs pour tous les serveurs d’applications pris en charge.
+Cette liste contient des liens vers les sites Web des fabricants pour tous les serveurs d’applications pris en charge.
 
 **JBoss :** https://www.jboss.com/products/platforms/application
 

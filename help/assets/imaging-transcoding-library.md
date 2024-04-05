@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,10 +57,10 @@ Les arguments de la ligne de commande pour la Bibliothèque de transcodage d’i
 
 Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
-* `X` : fonctionne comme [!DNL Experience Manager]. Par exemple, -resize 319.
-* `WxH`: le rapport L/H n’est pas conservé, par exemple, `-resize 319x319`.
-* `Wx` : définit la largeur et calcule la hauteur en conservant le rapport d’aspect. Par exemple, `-resize 319x`.
-* `xH` : définit la hauteur et calcule la largeur en conservant le rapport d’aspect. Par exemple, `-resize x319`.
+* `X` : fonctionne comme [!DNL Experience Manager]. Par exemple, -resize 319.
+* `WxH` : le format n’est pas conservé, par exemple `-resize 319x319`.
+* `Wx` : définit la largeur et calcule la hauteur en conservant le format. Par exemple, `-resize 319x`.
+* `xH` : définit la hauteur et calcule la largeur en conservant le format. Par exemple, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

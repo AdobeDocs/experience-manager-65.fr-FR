@@ -1,5 +1,5 @@
 ---
-title: Guides de l’API
+title: Guides des API
 description: Documentation sur les API fournies par AEM pour le développement d’applications
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
-# Guides de l’API {#api-guides}
+# Guides des API {#api-guides}
 
-Adobe Experience Manager (AEM) fournit plusieurs API pour développer des applications et étendre AEM. La liste suivante fournit la documentation pour les API prises en charge par AEM :
+Adobe Experience Manager (AEM) fournit plusieurs API pour développer des applications et étendre AEM. La liste suivante fournit la documentation pour les API prises en charge par AEM :
 
 * [API Adobe AEM 6.5.0](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [Documentation de l’API de l’IU (compatible avec les écrans tactiles) Granite](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
@@ -34,7 +34,7 @@ Références de l’API JavaScript de framework du SDK de l’éditeur d’appli
 * [Composants modifiables React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Composants modifiables Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-API de diffusion AEM et de gestion de contenu :
+API de diffusion et de gestion de contenu AEM :
 
 * Composants principaux (JSON)
 
@@ -42,11 +42,11 @@ API de diffusion AEM et de gestion de contenu :
    * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](/help/sites-developing/getting-started.md).
 
-* **Ressources**: l’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur les ressources, y compris les fichiers binaires, les métadonnées, les rendus et les commentaires. Voir [API HTTP AEM ASSETS](/help/assets/mac-api-assets.md)
+* **Assets** : l’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources, y compris des fichiers binaires, des métadonnées, des rendus et des commentaires. Voir [API HTTP AEM Assets](/help/assets/mac-api-assets.md)
 
-* **Fragments de contenu** (CF) : [Prise en charge des FC dans l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) et [API AEM Assets : fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **Fragments de contenu** (CF) : [prise en charge des CF dans l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) et l’[API AEM Assets : fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
-Les ressources externes suivantes sont proposées à titre de référence uniquement :
+Les ressources externes suivantes sont proposées à titre de référence uniquement :
 
 * [API Apache Sling 11](https://sling.apache.org/apidocs/sling11/)
 * [API Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)

@@ -1,6 +1,6 @@
 ---
 title: SPA et rendu côté serveur (SSR)
-description: Découvrez SPA et le rendu côté serveur dans Adobe Experience Manager.
+description: Découvrez les SPA et le rendu côté serveur dans Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1659'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 >[!NOTE]
 >
->Adobe Experience Manager (AEM) 6.5.1.0 ou version ultérieure est requis pour utiliser les fonctionnalités de rendu SPA côté serveur, comme décrit dans ce document.
+>La version 6.5.1.0 ou une version ultérieure d’Adobe Experience Manager (AEM) est requise pour utiliser les fonctionnalités de rendu de SPA côté serveur telles que décrites dans ce document.
 
 ## Présentation {#overview}
 
@@ -50,8 +50,8 @@ Si vous [êtes certain(e) que votre projet nécessite la mise en œuvre du rendu
 
 Pour plus d’informations sur Adobe I/O Runtime, consultez les informations suivantes :
 
-* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) - pour un aperçu du service
-* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) - pour une documentation détaillée sur la plateforme
+* [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) – Pour une vue d’ensemble du service
+* [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) – Pour obtenir une documentation détaillée sur la plateforme
 
 Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé afin d’implémenter la technologie du rendu côté serveur pour votre SPA dans deux modèles différents :
 
@@ -66,7 +66,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 ## Configuration du moteur de rendu distant {#remote-renderer-configuration}
 
-AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. Indépendamment de [le modèle que vous choisissez de mettre en oeuvre pour le rendu côté serveur,](#adobe-i-o-runtime), vous devez indiquer pour AEM comment accéder à ce service de rendu distant.
+AEM doit savoir à quel emplacement le contenu rendu distant peut être récupéré. Quel que soit [le modèle que vous choisissez de mettre en œuvre pour le rendu côté serveur](#adobe-i-o-runtime), vous devrez indiquer à AEM comment accéder à ce service de rendu distant.
 
 Cela s’effectue via le **service RemoteContentRenderer – Configuration d’usine OSGi**. Recherchez la chaîne « RemoteContentRenderer » dans la console de configuration de la console web à `http://<host>:<port>/system/console/configMgr`.
 
@@ -125,7 +125,7 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
    <td>
     <ul>
      <li>AEM gère les bibliothèques d’injection si nécessaire.</li>
-     <li>Conserver les ressources uniquement sur les AEM<br /> </li>
+     <li>Conserver les ressources sur AEM uniquement<br />. </li>
     </ul> </td>
    <td>
     <ul>
@@ -140,7 +140,7 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
     </ul> </td>
    <td>
     <ul>
-     <li>Les ressources clientlib requises par l’application, telles que CSS et JavaScript, doivent être mises à disposition par le développeur AEM au moyen de la fonction <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code> property<br /> </li>
+     <li>Les ressources clientlib requises par l’application, telles que CSS et JavaScript, doivent être mises à disposition par l’équipe de développement AEM via la propriété <code><a href="/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet">allowProxy</a></code><br />. </li>
      <li>Les ressources doivent être synchronisées entre AEM et Adobe I/O Runtime.<br /> </li>
      <li>Afin de permettre de créer la SPA, un serveur proxy pour Adobe I/O Runtime peut être nécessaire.</li>
     </ul> </td>
@@ -150,15 +150,15 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 ## Planification du rendu côté serveur {#planning-for-ssr}
 
-Une seule partie d’une application doit être rendue côté serveur. L’exemple courant réside dans le contenu allant s’afficher au-dessus du pli lors du chargement initial de la page rendue côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur ou l’utilisatrice interagit avec la SPA, le contenu supplémentaire est rendu par le client.
+Seule une partie d’une application doit être rendue côté serveur. L’exemple courant réside dans le contenu allant s’afficher au-dessus du pli lors du chargement initial de la page rendue côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur ou l’utilisatrice interagit avec la SPA, le contenu supplémentaire est rendu par le client.
 
 Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, passez en revue les parties de l’application qui sont nécessaires.
 
 ## Développement d’une SPA avec le rendu côté serveur {#developing-an-spa-using-ssr}
 
-Les composants SPA peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’ils sont rendus côté serveur, les propriétés du navigateur telles que la taille de fenêtre et l’emplacement ne sont pas présentes. Par conséquent, SPA composants doivent être isomorphes, sans présumer de l’emplacement où ils seront rendus.
+Les composants SPA peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’ils sont rendus côté serveur, les propriétés du navigateur telles que la taille de fenêtre et l’emplacement ne sont pas présentes. Par conséquent, les composants SPA doivent être isomorphes, sans présumer de l’emplacement où ils seront rendus.
 
-Pour utiliser le rendu côté serveur, déployez votre code dans AEM et sur Adobe I/O Runtime, qui est responsable du rendu côté serveur. La plupart du code sera identique, mais les tâches spécifiques au serveur différeront.
+Pour utiliser le rendu côté serveur, déployez votre code dans AEM et sur Adobe I/O Runtime, qui est responsable du rendu côté serveur. Le code sera majoritairement identique, mais les tâches spécifiques au serveur différeront.
 
 ## Rendu côté serveur pour les SPA dans AEM {#ssr-for-spas-in-aem}
 
@@ -169,7 +169,7 @@ Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main,
 * React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Pour un exemple simpliste, voir [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Elle effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, elle illustre ce qui est nécessaire à la mise en œuvre du rendu côté serveur.
+Pour un exemple simple, consultez [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Elle effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, elle illustre ce qui est nécessaire à la mise en œuvre du rendu côté serveur.
 
 >[!CAUTION]
 >
@@ -177,7 +177,7 @@ Pour un exemple simpliste, voir [Application We.Retail Journal](https://github.c
 
 >[!NOTE]
 >
->Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
+>Tout projet AEM doit utiliser l’[archetype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
 ## Utilisation de Node.js {#using-node-js}
 
@@ -191,7 +191,7 @@ Pour les instances d’AEM sur site, il est également possible d’implémenter
 
 >[!NOTE]
 >
->Si le rendu côté serveur doit être implémenté via Node.js, Adobe recommande une instance Node.js distincte pour chaque environnement AEM (auteur, publication, évaluation, etc.).
+>Si le rendu côté serveur doit être implémenté via Node.js, Adobe recommande une instance Node.js distincte pour chaque environnement AEM (création, publication, évaluation, etc.).
 
 ## Moteur de rendu de contenu distant {#remote-content-renderer}
 
@@ -207,7 +207,7 @@ Ce service est utilisé en interne par le servlet [RemoteContentRendererRequestH
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Le servlet `RemoteContentRendererRequestHandlerServlet` peut être utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi pour mapper un emplacement de la structure de contenu à un point de terminaison distant.
+Le servlet `RemoteContentRendererRequestHandlerServlet` peut être utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi pour mapper un emplacement dans la structure de contenu à un point d’entrée distant.
 
 Pour ajouter un gestionnaire de requêtes personnalisé, implémentez l’interface de `RemoteContentRendererRequestHandler`. Veillez à définir la propriété du composant `Constants.SERVICE_RANKING` sur un nombre entier supérieur à 100, qui correspond au classement du servlet `DefaultRemoteContentRendererRequestHandlerImpl`.
 

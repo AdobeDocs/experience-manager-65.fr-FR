@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6664'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -468,7 +468,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Il est possible d’utiliser n’importe quel type de variable pris en charge par Adobe Analytics. La décision concernant le type de variable (tel que les [props] de trafic personnalisé et les [eVar] de conversion) doit être prise en fonction des besoins spécifiques à votre implémentation Analytics.
 
-   Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
+   Voir [Vue d’ensemble des props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
 
    Pour les besoins de cette documentation, seule une variable de trafic personnalisé (props) est utilisée car elle est disponible dans un rapport Analytics quelques minutes après qu’une action a lieu sur une page web.
 
@@ -537,7 +537,7 @@ Pour installer une extension, sélectionner **[!UICONTROL Installer]**. Si néce
 
 Le cas échéant, les extensions suivantes doivent être installées et configurées :
 
-* (Obligatoire) *Service d’ID d’Experience Cloud* extension .
+* (Obligatoire) Extension *Experience Cloud ID Service*
 
 Aucune configuration supplémentaire n’est nécessaire, acceptez les valeurs proposées. Lorsque vous avez terminé, veillez à sélectionner **[!UICONTROL Enregistrer]**.
 
@@ -579,7 +579,7 @@ Au moment de la rédaction de cet article, l’extension *Visionneuses Dynamic 
 
 Consultez [Création d’une propriété dans Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) sont répertoriées dans la zone Extensions > Installées .
+Une fois les extensions installées et configurées, les cinq extensions suivantes, au minimum (quatre si vous n’effectuez pas le suivi vidéo), seront répertoriées dans la zone Extensions > Installées.
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -827,7 +827,7 @@ Par exemple : `https://ims-na1.adobelogin.com/`
 
    Dans le champ **[!UICONTROL URI de bibliothèque]** (Uniform Resource Identifier), vérifiez l’emplacement de la version d’évaluation de votre bibliothèque Experience Platform Tags. Experience Manager remplit ce champ automatiquement.
 
-   À titre d’exemple uniquement, cette étape utilise des bibliothèques de balises Experience Platform déployées sur le réseau de diffusion de contenu Adobe.
+   À titre d’exemple uniquement, cette étape utilise les bibliothèques de balises Experience Platform déployées sur le réseau CDN Adobe.
 
    >[!NOTE]
    >

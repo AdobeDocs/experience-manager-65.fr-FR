@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -52,13 +52,13 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![etc-01](assets/etc-01.png)
 
-La création **Rapport CSV** est disponible lors de la navigation dans la **Sites** console (en mode Liste) : il s’agit d’une option de la **Créer** menu déroulant :
+L’option **Créer une exportation CSV** est disponible lorsque vous naviguez sur la console **Sites** (dans la vue Liste) : il s’agit d’une option du menu déroulant **Créer** :
 
 ![etc-02](assets/etc-02.png)
 
 Pour créer une exportation CSV :
 
-1. Ouvrez le **Sites** , accédez à l’emplacement requis si nécessaire.
+1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
 1. Dans la barre d’outils, sélectionnez **Créer** puis **Rapport CSV** pour ouvrir l’assistant :
 
    ![etc-03](assets/etc-03.png)

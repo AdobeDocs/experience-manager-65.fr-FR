@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les actions de tâche
-description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions et personnaliser les images utilisées dans les actions d’itinéraire.
+description: Vous pouvez personnaliser l’apparence des actions de tâche, utiliser uniquement des images pour les actions et personnaliser les images utilisées dans des actions d’acheminement.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans l
 
 ## Personnalisation des images {#customizing-images}
 
-Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour la variable *lock* action :
+Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css`. Le fragment de code suivant personnalise l’image pour l’action *lock* :
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -117,7 +117,7 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 
 >[!NOTE]
 >
->ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action &quot;lock&quot; :
+>ajoutez des styles distincts pour afficher des images différentes ou des images de résolutions différentes pour les actions Liste de tâches et Détails de la tâche. Par exemple, pour modifier l’action « lock » :
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -356,5 +356,5 @@ Effectuez les étapes suivantes pour personnaliser le menu pop-up des actions de
 ```
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
-* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Localisez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.

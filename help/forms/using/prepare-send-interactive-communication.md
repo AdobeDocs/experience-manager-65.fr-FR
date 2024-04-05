@@ -1,6 +1,6 @@
 ---
 title: Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent
-description: L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent effectue les modifications requises comme autorisé et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
+description: L’interface utilisateur de l’agent permet aux agentes et aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent ou l’agente apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un e-mail ou une impression.
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Interactive Communication
@@ -9,13 +9,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2010'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent effectue les modifications requises comme autorisé et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
+L’interface utilisateur de l’agent permet aux agentes et aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent ou l’agente apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un e-mail ou une impression.
 
 ## Présentation {#overview}
 
@@ -23,14 +23,14 @@ Après la création d’une communication interactive, l’agent peut ouvrir la 
 
 Tout en préparant la communication interactive à l’aide de l’interface utilisateur de l’agent, l’agent gère les aspects suivants de la communication interactive dans l’interface utilisateur de l’agent avant de l’envoyer en post-traitement :
 
-* **Données**: l’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés de modèle de données de formulaire déverrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de document inclus dans la communication interactive. L’onglet Données comprend également tous les champs qui sont créés dans le modèle de canal XDP/impression. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
+* **Données** : l’onglet Données de l’interface utilisateur de l’agent ou de l’agente affiche toutes les variables modifiables par l’agent ou l’agente et les propriétés de modèle de données de formulaire déverrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de document inclus dans la communication interactive. L’onglet Données comprend également tous les champs qui sont créés dans le modèle de canal XDP/impression. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
 * **Contenu** : dans l’onglet Contenu, l’agent gère le contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive. L’agent peut effectuer les modifications dans le fragment de document, comme autorisé, tout en créant la communication interactive dans les propriétés de ces fragments de document. L’agent peut également réorganiser, ajouter/supprimer un fragment de document et ajouter des sauts de page, si cela est autorisé.
 * **Pièces jointes** : l’onglet Pièces jointes apparaît dans l’interface utilisateur de l’agent uniquement si la communication interactive comporte des pièces jointes ou si l’agent a accès à la bibliothèque. L’agent peut être autorisé ou non à modifier les pièces jointes.
 
 ## Préparation d’une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Sélectionnez la communication interactive appropriée et sélectionnez **[!UICONTROL Ouvrir l’interface utilisateur de l’agent]**.
+1. Sélectionnez la communication interactive appropriée et appuyez sur **[!UICONTROL Ouvrir l’interface utilisateur de l’agent ou de l’agente]**.
 
    >[!NOTE]
    >
@@ -46,19 +46,19 @@ Tout en préparant la communication interactive à l’aide de l’interface uti
 
 ### Saisir des données {#enter-data}
 
-1. Dans l’onglet Données , saisissez les données des variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (*) pour activer le bouton **Envoyer**.
+1. Dans l’onglet Données, saisissez les données des variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (*) pour activer le bouton **Envoyer**.
 
-   Sélectionnez une valeur de champ de données dans l’aperçu de la communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données ou à l’inverse.
+   Sélectionnez une valeur de champ de données dans l’aperçu de la communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données et vice versa.
 
 ### Gérer le contenu {#manage-content}
 
-Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et les variables de contenu dans la communication interactive.
+Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et les variables de contenu dans la communication interactive.
 
 1. Sélectionnez **[!UICONTROL Contenu]**. L’onglet des Contenus de la communication interactive s’affiche.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
-1. Modifiez les fragments de document, selon les besoins, dans l’onglet Contenu. Pour mettre l’accent sur le fragment approprié dans la hiérarchie de contenu, vous pouvez sélectionner la ligne ou le paragraphe approprié dans l’aperçu de la communication interactive ou sélectionner le fragment directement dans la hiérarchie Contenu .
+1. Modifiez les fragments de document, selon les besoins, dans l’onglet Contenu. Pour focaliser l’attention sur le fragment approprié dans la hiérarchie des contenus, vous pouvez sélectionner la ligne ou le paragraphe qui correspond dans l’aperçu de la communication interactive ou sélectionner le fragment directement dans la hiérarchie des contenus.
 
    Par exemple, le fragment de document avec la ligne « Effectuer un paiement en ligne dès maintenant… » est sélectionné dans l’aperçu du graphique ci-dessous et le même fragment de document est sélectionné dans l’onglet Contenu.
 
@@ -66,7 +66,7 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 
    Dans l’onglet Contenu ou Données, en appuyant sur Mettre en surbrillance les modules sélectionnés dans les Contenus (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) dans le coin supérieur gauche de l’aperçu, vous pouvez activer ou désactiver la fonctionnalité d’accès au fragment de document lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans l’aperçu.
 
-   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive ont l’option Modifier le contenu sélectionné ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Sélectionnez l’icône Modifier le contenu sélectionné pour lancer le fragment en mode d’édition et y apporter des modifications. Utilisez les options suivantes pour mettre en forme et gérer le texte :
+   Les fragments qui peuvent être modifiés par l’agent ou l’agente lors de la création de la communication interactive comportent l’icône Modifier le contenu sélectionné (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Sélectionnez l’icône Modifier le contenu sélectionné pour lancer le fragment en mode d’édition et y apporter des modifications. Utilisez les options suivantes pour mettre en forme et gérer le texte :
 
    * [Options de mise en forme](#formattingtext)
 
@@ -80,21 +80,21 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 
 1. Pour insérer un saut de page sur la communication interactive imprimée, placez le curseur à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après (![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Un espace réservé de saut de page explicite est inséré dans la communication interactive. Pour voir comment un saut de page explicite affecte la communication interactive, consultez l’aperçu avant impression.
+   Un espace réservé explicite de saut de page est inséré dans la communication interactive. Pour voir l’impact d’un saut de page explicite sur la communication interactive, reportez-vous à l’aperçu avant impression.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
-   Passez à la gestion des pièces jointes de la communication interactive.
+   Procédez à la gestion des pièces jointes de la communication interactive.
 
 ### Gestion des pièces jointes {#manage-attachments}
 
 1. Sélectionnez **[!UICONTROL Pièce jointe]**. L’interface utilisateur de l’agent affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création de la communication interactive.
 
-   Vous pouvez choisir de ne pas envoyer de pièce jointe avec la communication interactive en appuyant sur l’icône d’affichage et vous pouvez sélectionner la croix dans la pièce jointe pour la supprimer (si l’agent est autorisé à supprimer ou masquer la pièce jointe) de la communication interactive. Pour les pièces jointes spécifiées comme obligatoires, lors de la création de la communication interactive, les icônes Afficher et Supprimer sont désactivées.
+   Vous pouvez choisir de ne pas envoyer de pièce jointe avec la communication interactive en appuyant sur l’icône Aperçu et vous pouvez sélectionner la croix dans la pièce jointe pour la supprimer de la communication interactive (si l’agent ou l’agente a le droit de supprimer ou de masquer la pièce jointe). Pour les pièces jointes spécifiées comme obligatoires, lors de la création de la communication interactive, les icônes Afficher et Supprimer sont désactivées.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Sélectionnez Accès à la bibliothèque ( ![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu afin d’insérer des ressources DAM en tant que pièces jointes.
+1. Sélectionnez l’icône Accès à la bibliothèque (![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu et insérer des ressources DAM comme pièces jointes.
 
    >[!NOTE]
    >
@@ -103,11 +103,11 @@ Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et
 1. Si l’ordre des pièces jointes n’a pas été verrouillé lors de la création de la communication interactive, vous pouvez réorganiser les pièces jointes en sélectionnant une pièce jointe et en appuyant sur les flèches haut et bas.
 1. Utilisez Aperçu web et Aperçu avant impression pour voir si les deux sorties sont conformes à vos besoins.
 
-   Si vous trouvez les aperçus satisfaisants, sélectionnez **[!UICONTROL Envoyer]** pour envoyer/envoyer la communication interactive à un post-traitement. Sinon, quittez l’aperçu pour revenir aux modifications.
+   Si vous trouvez les aperçus satisfaisants, sélectionnez **[!UICONTROL Envoyer]** pour soumettre/envoyer la communication interactive en post-traitement. Sinon, quittez l’aperçu pour revenir aux modifications.
 
 ## Mise en forme du texte {#formattingtext}
 
-Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type de modifications que vous choisissez d’effectuer : Police, Paragraphe ou Liste :
+Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent ou de l’agente, la barre d’outils change en fonction du type de modifications que vous choisissez d’effectuer : police, paragraphe ou liste :
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barre d’outils des polices](do-not-localize/fonttoolbar.png)
 
@@ -121,9 +121,9 @@ Barre d’outils Paragraphe
 
 Barre d’outils de la liste
 
-### Mettre en surbrillance/en évidence des parties de texte {#highlightemphasize}
+### Mettre des parties de texte en surbrillance/en évidence {#highlightemphasize}
 
-Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fragment modifiable, sélectionnez le texte et choisissez Couleur de surbrillance.
+Pour mettre des parties de texte en surbrillance/en évidence dans un fragment modifiable, sélectionnez le texte, puis la couleur de surbrillance.
 
 ![surlignttextagentui](assets/highlighttextagentui.png)
 
@@ -133,21 +133,21 @@ Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fra
 
 ### Insérer des caractères spéciaux dans le texte {#specialcharacters}
 
-L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](/help/forms/using/custom-special-characters.md).
+L’interface utilisateur de l’agent ou de l’agente offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](/help/forms/using/custom-special-characters.md).
 
 #### Livraison des pièces jointes {#attachmentdelivery}
 
 * Si la communication interactive est générée à l’aide des API côté serveur sous la forme d’un PDF, interactif ou non, alors le PDF généré contient des pièces jointes au format PDF.
 * Si un post-traitement associé à une communication interactive est chargé dans le cadre des opérations d’envoi à l’aide de l’interface utilisateur de l’agent, les pièces jointes sont transmises en tant que paramètre List&lt;com.adobe.idp.Document> inAttachmentDocs.
-* Les workflows du mécanisme de diffusion, tels que l’envoi par courrier électronique et l’impression, livrent également les pièces jointes avec la version PDF de la communication interactive.
+* Les workflows du mécanisme de diffusion, tels que l’envoi par e-mail et l’impression, diffusent également les pièces jointes avec la version PDF de la communication interactive.
 
-## Actions et informations disponibles dans l’interface utilisateur de l’agent {#actionsagentui}
+## Actions et informations disponibles dans l’interface utilisateur de l’agent ou de l’agente {#actionsagentui}
 
 ### Fragments de document {#document-fragments}
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **Flèches haut/bas**: flèches permettant de déplacer des fragments de document vers le haut ou vers le bas dans la communication interactive.
+* **Flèches haut/bas** : flèches permettant de déplacer les fragments de document vers le haut ou vers le bas dans la communication interactive.
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
 * **Saut de page avant** (applicable aux modules enfant de la zone cible) : insère un saut de page avant le fragment de document.
 * **Retrait** : augmente ou réduit le retrait d’un fragment de document.
@@ -160,13 +160,13 @@ L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux
 * Sélection (icône représentant un œil) : inclut\exclut le fragment de document de la communication interactive.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
-### Lister des fragments de document {#list-document-fragments}
+### Fragments de document de la liste {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
 * Sélection (icône représentant un œil) : inclut\exclut le fragment de document de la communication interactive.
-* Ignorer les puces/numéros : activez cette option si vous souhaitez ignorer les puces/numéros dans le fragment de document de liste.
+* Ignorer les puces/numérotations : permet d’ignorer les puces/numéros dans le fragment de document de la liste.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
 ## Enregistrer des communications interactives en tant que brouillons {#save-as-draft}
@@ -184,22 +184,22 @@ Par défaut, la fonction Enregistrer en tant que brouillon n’est pas activée.
    La SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon comme identifiant unique. Ces instructions supposent que vous ayez des connaissances préalables sur la création d’un lot OSGi à l’aide d’un projet Maven.
 
    Pour obtenir un exemple d’implémentation de SPI, voir [Exemple d’implémentation SPI ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Ouvrir `http://<hostname>:<port>/ system/console/bundles` et sélectionnez **[!UICONTROL Installer/Mettre à jour]** pour charger le lot OSGi. Vérifiez que l’état du package chargé s’affiche comme étant **Actif**. Redémarrez le serveur si l’état du package ne s’affiche pas comme étant **Actif**.
+1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et sélectionnez **[!UICONTROL Installer/Mettre à jour]** pour charger le lot OSGi. Vérifiez que l’état du package chargé s’affiche comme étant **Actif**. Redémarrez le serveur si l’état du package ne s’affiche pas comme étant **Actif**.
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
-1. Sélectionner **[!UICONTROL Configuration de la création de correspondance]**.
-1. Sélectionner **[!UICONTROL Activation de l’enregistrement à l’aide de CCRDDocumentInstanceService]** et sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionnez **[!UICONTROL Créer la configuration de correspondance]**.
+1. Sélectionnez **[!UICONTROL Activer l’enregistrement à l’aide de CCRDocumentInstanceService]**, puis **[!UICONTROL Enregistrer]**.
 
 ### Enregistrer une communication interactive en tant que brouillon {#save-as-draft-agent-ui}
 
 Effectuez les étapes suivantes pour enregistrer une communication interactive en tant que brouillon :
 
-1. Sélectionnez une communication interactive dans Forms Manager et sélectionnez **[!UICONTROL Ouvrir l’interface utilisateur de l’agent]**.
+1. Sélectionnez une communication interactive dans Forms Manager, puis **[!UICONTROL Ouvrir l’interface utilisateur de l’agent]**.
 
-1. Apportez les modifications appropriées dans l’interface utilisateur de l’agent et sélectionnez **[!UICONTROL Enregistrer en tant que brouillon]**.
+1. Apportez les modifications appropriées dans l’interface utilisateur de l’agent ou de l’agente et sélectionnez **[!UICONTROL Enregistrer en tant que brouillon]**.
 
-1. Spécifiez le nom du brouillon dans la variable **[!UICONTROL Nom]** champ et sélectionnez **[!UICONTROL Terminé]**.
+1. Spécifiez le nom du brouillon dans le champ **[!UICONTROL Nom]** et sélectionnez **[!UICONTROL Terminé]**.
 
-Une fois la communication interactive enregistrée en tant que brouillon, sélectionnez **[!UICONTROL Enregistrer les modifications]** pour enregistrer d’autres modifications apportées au brouillon.
+Une fois que vous avez enregistré la communication interactive en tant que brouillon, sélectionnez **[!UICONTROL Enregistrer les modifications]** pour enregistrer d’autres modifications apportées au brouillon.
 
 ### Récupérer le brouillon d’une communication interactive {#retrieve-draft}
 

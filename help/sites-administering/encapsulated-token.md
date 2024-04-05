@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 89%
 
 ## Présentation {#introduction}
 
-Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Toutefois, pour répondre aux demandes d’authentification, le gestionnaire d’authentification des jetons requiert l’accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. En toute logique, l’état doit être conservé dans le référentiel pour valider les requêtes suivantes. Dans les faits, cela signifie que le mécanisme d’authentification est avec état.
+Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Cependant, pour traiter des demandes d’authentification, le gestionnaire d’authentification des jetons doit avoir accès au référentiel pour chaque demande. Cela est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. Logiquement, l’état doit perdurer dans le référentiel afin de valider les demandes ultérieures. Dans les faits, cela signifie que le mécanisme d’authentification est avec état.
 
-Cela est particulièrement important pour l’évolutivité horizontale. Dans une configuration multi-instances comme la ferme de publication décrite ci-dessous, l’équilibrage de charge ne peut pas être réalisé de manière optimale. Avec l’authentification avec état, l’état d’authentification persistant n’est disponible que sur l’instance où la personne est authentifiée pour la première fois.
+Cela est particulièrement important pour l’évolutivité horizontale. Dans une configuration comportant plusieurs instances, comme la batterie de publication représentée ci-dessous, la répartition de charge ne peut pas être exécutée de façon optimale. Avec l’authentification avec état, l’état d’authentification persistant n’est disponible que sur l’instance où la personne est authentifiée pour la première fois.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 
@@ -44,7 +44,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 
 >[!NOTE]
 >
->Le jeton encapsulé concerne l’authentification. Il permet de s’assurer que le cookie peut être validé sans avoir à accéder au référentiel. Cependant, il est toujours nécessaire que l’utilisateur ou l’utilisatrice existe sur toutes les instances et que les informations stockées sous cet utilisateur ou utilisatrice soient accessibles par chaque instance.
+>Le jeton encapsulé est relatif à l’authentification. Il permet de s’assurer que le cookie peut être validé sans avoir à accéder au référentiel. Cependant, il est toujours nécessaire que l’utilisateur ou l’utilisatrice existe sur toutes les instances et que les informations stockées sous cet utilisateur ou utilisatrice soient accessibles par chaque instance.
 >
 >Par exemple, si un nouvel utilisateur est créé sur l’instance de publication 1, en raison du fonctionnement du jeton encapsulé, il est authentifié correctement sur l’instance de publication 2. Si l’utilisateur ou l’utilisatrice n’existe pas sur la deuxième instance de publication, la requête échoue toujours.
 >
@@ -60,12 +60,12 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 
 Lors de la configuration du jeton encapsulé, vous devez prendre en compte quelques points :
 
-1. En raison de la cryptographie impliquée, toutes les instances doivent avoir la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Pour plus d’informations, consultez « Réplication de la clé HMAC » ci-dessous.
+1. Compte tenu du chiffrement impliqué, toutes les instances doivent posséder la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Pour plus d’informations, consultez « Réplication de la clé HMAC » ci-dessous.
 1. Le jeton encapsulé doit être activé. Vous pouvez l’activer avec la console web.
 
 ### Réplication de la clé HMAC {#replicating-the-hmac-key}
 
-Pour répliquer la clé sur plusieurs instances, vous devez :
+Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 
 1. Accédez à l’instance AEM, généralement une instance de création, et qui contient le matériel des clés à copier.
 1. Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :

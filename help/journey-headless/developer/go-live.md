@@ -5,7 +5,7 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -96,11 +96,11 @@ Une fois l’environnement de développement local configuré, vous pouvez simul
 
 Pour plus d’informations sur la configuration d’un environnement de développement local et sur toutes les dépendances nécessaires à la prévisualisation du contenu, consultez la section [Documentation sur le déploiement en production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
-## Préparation de votre application découplée AEM pour la mise en ligne {#prepare-your-aem-headless-application-for-golive}
+## Préparer votre application AEM Headless pour la mise en ligne {#prepare-your-aem-headless-application-for-golive}
 
 <!-- Start of CDN Review -->
 
-Il est maintenant temps de préparer votre application AEM sans interface pour le lancement, en suivant les bonnes pratiques décrites ci-dessous.
+Il est temps maintenant de préparer votre application AEM Headless pour son lancement, en observant les bonnes pratiques décrites ci-dessous.
 
 ### Sécurisation de votre application découplée avant son lancement {#secure-and-scale-before-launch}
 

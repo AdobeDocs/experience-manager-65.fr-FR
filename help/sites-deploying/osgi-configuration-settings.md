@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -209,7 +209,7 @@ La **Resource Resolver Factory d’Apache Sling** configure les aspects centr
 
 * Les **URL virtuelles** pour définir vos mappages aux URL de redirection.
 
-* **Mappages d’URL** pour définir les alias. Par exemple, à partir de `/content` to `/`.
+* **Mappages d’URL** pour définir les alias. Par exemple, renommez `/content` en `/`.
 
 * L’**Emplacement du mappage**, la configuration du mappeur extériorisée dans `/etc/map`
 
@@ -337,7 +337,7 @@ Différentes propriétés de configuration sont disponibles :
 Chemin pour lequel ce gestionnaire d’authentification est actif. Si ce paramètre n’est pas renseigné, le gestionnaire d’authentification est désactivé. Par exemple, si vous utilisez le chemin /, le gestionnaire d’authentification est utilisé pour l’ensemble du référentiel.
 
 * **Classement de service**
-La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une `int` lorsque les valeurs plus élevées désignent une priorité plus élevée.
+La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur `int` où les valeurs supérieures désignent une plus grande priorité.
 La valeur par défaut est `0`.
 
 * **Noms des en-têtes**
@@ -350,7 +350,7 @@ Les noms de cookies pouvant contenir un identifiant utilisateur.
 Les noms de paramètres de requête pouvant fournir l’identifiant utilisateur.
 
 * **La carte utilisateur**
-Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît de chaque côté de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
+Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
 
 * **Format**
 Indique le format dans lequel l’identifiant utilisateur est fourni. Utilisez :

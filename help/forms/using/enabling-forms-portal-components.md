@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -27,15 +27,15 @@ Les composants du portail Formulaires prêts à l’emploi ne sont pas disponibl
 
 1. Pour les pages utilisant un modèle statique, procédez comme suit :
 
-   1. Dans l’en-tête de la page, sélectionnez ![liste déroulante canevas](assets/canvas-drop-down.png) > **Conception** pour ouvrir la page en mode Conception.
-   1. Sélectionnez un composant (avec une bordure bleue), puis sélectionnez ![champ-level](assets/field-level.png) pour sélectionner le système de paragraphes contenant le composant actif.
-   1. Dans le système de paragraphes, sélectionnez ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du système de paragraphes.
+   1. Dans l’en-tête de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) > **Conception** pour ouvrir la page en mode Conception.
+   1. Sélectionnez n’importe quel composant (avec une bordure bleue), puis ![field-level](assets/field-level.png) pour choisir le système de paragraphe contenant le composant actif.
+   1. Dans le système de paragraphes, sélectionnez ![settings-icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier pour le système de paragraphe.
    1. Dans la liste **[!UICONTROL Composants autorisés]**, cochez les cases des composants **[!UICONTROL Services de document]** et **[!UICONTROL Prédicats de services de document]**. Sélectionnez **[!UICONTROL OK]**.
 
 1. Pour les pages utilisant un modèle dynamique, procédez comme suit :
 
-   1. Dans l’en-tête de la page, sélectionnez ![properties](assets/properties.png) > **Modifier le modèle** pour ouvrir le modèle de la page.
-   1. Sélectionner **Conteneur de mises en page** et sélectionnez ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Dans le **Composants autorisés** , activez l’option **Services de document et prédicats de services de document** et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Dans l’en-tête de la page, sélectionnez ![Propriétés](assets/properties.png) > **Modifier le modèle** pour ouvrir le modèle de la page.
+   1. Sélectionnez **Conteneur de dispositions**, puis ![FeedManagement](/help/forms/using/assets/feedmanagement.png). Dans l’onglet **Composants autorisés**, activez les options **Services de document et Prédicats de services de document**, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >

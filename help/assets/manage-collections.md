@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] des métadonnées, et notam
 
 Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omni-recherche, [!DNL Assets] recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
 
-Si vous recherchez des collections de niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les [!DNL Assets] ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), toutes les ressources, dossiers et collections appropriés sont renvoyés.
+Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les [!DNL Assets] ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), toutes les ressources, dossiers et collections appropriés sont renvoyés.
 
 ## Recherche dans les collections {#searching-within-collections}
 
@@ -197,7 +197,7 @@ Dans une collection, la recherche [!DNL Experience Manager] se limite aux ressou
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
 1. Sélectionnez une collection et cliquez sur les **[!UICONTROL Paramètres]** dans la barre d’outils. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
-1. Modifiez les paramètres de la collection sur la page **[!UICONTROL Paramètres de la collection]**. Par exemple, modifiez le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans la section [Ajout de collections](#creating-a-collection).
+1. Modifiez les paramètres de la collection sur la page **[!UICONTROL Paramètres de la collection]**. Vous pouvez par exemple modifier le titre, les descriptions, les membres et les autorisations de la collection, comme décrit dans [Ajout de collections](#creating-a-collection).
 
 1. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -223,7 +223,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 ## Création de collections imbriquées {#creating-nested-collections}
 
-Vous pouvez ajouter une collection à une autre collection afin de créer une collection imbriquée.
+Vous pouvez ajouter une collection à une autre collection pour créer une collection imbriquée.
 
 1. Dans la console Collections, sélectionnez la collection ou le groupe de collections désiré, et cliquez sur **[!UICONTROL À la collection]** dans la barre d’outils.
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 85%
 
 <div class="preview">
 
-Adobe a publié un [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation du correctif ne comprend que des correctifs.
+Adobe a publié un [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation de correctif ne comprend que des correctifs.
 Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le [programme d’installation complet d’AEM 6.5.18.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019 ou le programme d’installation d’AEM 6.5.12 sorti le 3 mars 2022.
 
 </div>
@@ -38,21 +38,21 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >- Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, consultez [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 
-### Stratégie de mise à niveau et de support
+### Politique de mise à niveau et de prise en charge
 
-#### Programme complet
+#### Programme d’installation complet
 
-- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est lancé avec chaque sixième version AEM Service Pack. Par exemple, un programme d’installation complet a été publié avec les versions 6.5.12.0 et 6.5.18.0 SP. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
+- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est lancé avec chaque sixième version AEM Service Pack. Par exemple, un programme d’installation complet a été publié avec les versions des Packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, soit 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une version antérieure, vous pouvez effectuer une mise à niveau en plusieurs étapes pour accéder en premier lieu à une version du programme d’installation complet prise en charge, puis à la dernière version.
 
-- **Obsolescence et suppression**: la prise en charge de la plateforme est mise à jour à chaque version complète du programme d’installation. Tout logiciel marqué comme obsolète dans la matrice des plates-formes lors d’une version complète du programme d’installation peut être supprimé de la matrice des plates-formes prises en charge dans une version ultérieure complète du programme d’installation, indiquant la fin de la prise en charge du logiciel.
+- **Obsolescence et suppression** : la prise en charge des plateformes est mise à jour avec chaque version du programme d’installation complet. Tout logiciel indiqué comme obsolète dans la matrice des plateformes dans une version de programme d’installation complet est autorisé à être supprimé de la matrice des plateformes prises en charge dans une version ultérieure du programme d’installation complet, ceci indiquant la fin de la prise en charge du logiciel.
 
-#### Service Packs
+#### Packs de services
 
-- **Couverture du Service Pack**: Adobe fournit une assistance technique pour les environnements AEM Forms à l’aide des six derniers Service Packs. Si votre version actuelle est antérieure aux six derniers Service Packs, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la prise en charge continue.
+- **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
 
-- **Instructions du programme d’installation des correctifs**: lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que la version sous-jacente complète du programme d’installation n’a pas plus de deux versions. Par exemple, pendant l’installation du Service Pack 6.5.19.0, assurez-vous que la version sous-jacente du programme d’installation complet est 6.5.18.0 ou 6.5.12.0.
+- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du Pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
-- **Prise en charge de la mise à niveau des correctifs**: vous pouvez continuer la mise à niveau vers le dernier Service Pack jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du Service Pack 6.5.12.0 vers 6.5.19.0 est possible, à condition que vous passiez à une combinaison de plateformes prise en charge pour la version 6.5.19.0.
+- **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du Pack de services 6.5.12.0 vers le version 6.5.19.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.19.0.
 
 ### Configurations recommandées {#recommendedconfigurations}
 
@@ -111,7 +111,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr> 
-   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Versions et mises à jour mineures </p> </td>
   </tr>
@@ -248,12 +248,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td><p><strong>Définitions de correctif prises en charge</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsolète) <sup>[9]</sup></td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (obsolète) <sup>[9]</sup></td>
    <td>A : Pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
+   <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
    <td>A : Pris en charge</td>
    <td>Pack de services et mises à jour critiques</td>
   </tr>
@@ -361,7 +361,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend pas en charge le serveur d’applications WebSphere® sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
 1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4.
-1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
+1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
 1. JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seuls les JDK 11.0.19 ou les versions antérieures sont pris en charge pour installer le programme d’installation d’AEM Forms on JEE.
 
 <!-- 
@@ -483,13 +483,13 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >
 >PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >
->En outre :
+>En outre :
 >
 >- PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
 >- PDF Generator ne prend pas en charge Microsoft® Office 365.
 >- Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 >- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->- Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>- Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >- Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019.
@@ -836,15 +836,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 ### Version 6.5.19.1 (15 décembre 2023)
 
-| Ajout de la prise en charge | Suppression de la prise en charge | Prise en charge obsolète |
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 6.0 | MongoDB Enterprise 4.4 |  |
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### Version 6.5.18.0 (31 août 2023)
+### Version 6.5.18.0 (31 août 2023)
 
-| Ajout de la prise en charge | Suppression de la prise en charge | Prise en charge obsolète |
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016 (64 bits) | Microsoft® Windows Server 2019 (64 bits) |
 | Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
@@ -857,7 +857,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Pilote Microsoft® SQL Server JDBC 6.2.2.0 |  |
 |  | Pilote Microsoft® JDBC 8.x pour SQL Server |  |
 |  |  |  |
-|  | **Suppression de l’assistance (PDF Generator et en général) :** |  |
+|  | **Suppression de la prise en charge (PDF Generator et en général) :** |  |
 |  | Microsoft® SharePoint 2016 |  |
 |  | Microsoft® Office 2016 |  |
 |  | Microsoft® Office Visio 2016 |  |
@@ -867,34 +867,34 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | Acrobat 2017 (Suivi classique) version 17.011.30078 ou ultérieure |  |
 
 
-### Version 6.5.13.0 (2 juin 2022)
+### Version 6.5.13.0 (2 juin 2022)
 
-| Ajout de la prise en charge | Suppression de la prise en charge | Prise en charge obsolète |
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 |  |  | Microsoft® SharePoint 2016 |
 
 
-### Version 6.5.12.0 (3 mars 2022)
+### Version 6.5.12.0 (3 mars 2022)
 
-| Ajout de la prise en charge | Suppression de la prise en charge | Prise en charge obsolète |
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
-|  | IBM® J9 Virtual Machine (version 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
-|  | Oracle Database 12c Version 1 | MongoDB Enterprise 4.2 |
+|  | IBM® J9 Virtual Machine (version 2.8, JRE 1.8.0) | MongoDB Enterprise 4.0 |
+|  | Oracle Database 12c Release 1 | MongoDB Enterprise 4.2 |
 |  | Oracle Database 18c | IBM® DB2® 11.1 |
-|  | Oracle Unified Directory (OUD) 11g Version 2 | Oracle Database 12c Version 2 |
+|  | Oracle Unified Directory (OUD) 11g Release 2 | Oracle Database 12c Release 2 |
 |  | IBM® Lotus Domino 9.0 | MySQL 5.7.35 |
-|  | IBM® FileNet 5.2 | Pilote Microsoft® SQL Server JDBC 6.2.1.0 |
+|  | IBM® FileNet 5.2 | Pilote Microsoft® SQL Server JDBC 6.2.1.0 |
 |  | Adobe Flash Player | JBoss® Enterprise Application Platform (EAP) 7.1.4 |
 |  | | IBM® Content Manager Server 8.5 pack correctif 2 |
 |  | | IBM®Content Manager Client 8.5 |
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
-### Version 6.5.10.0 (10 septembre 2022)
+### Version 6.5.10.0 (1er septembre 2022)
 
-| Ajout de la prise en charge | Suppression de la prise en charge | Prise en charge obsolète |
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
-| SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022.](https://helpx.adobe.com/fr/support/programs/eol-matrix.html) |
+| SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4. | | [Adobe Acrobat 2017 - La prise en charge principale d’Adobe Acrobat 2017 prend fin le 6 juin 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html). |
 |  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) |
 |  | | Microsoft® Windows Server 2016 (64 bits) |
 |  | | Microsoft® Office 2016 |
@@ -903,7 +903,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
-> Une plateforme obsolète continue de recevoir une assistance jusqu’à la prochaine version complète du programme d’installation ou jusqu’à ce que la prise en charge d’un fournisseur tiers pour la plateforme atteigne sa fin de vie, selon la version antérieure.
+> Une plateforme obsolète continue à bénéficier d’une prise en charge jusqu’à la prochaine version du programme d’installation complet ou jusqu’à ce que la prise en charge d’un fournisseur tiers pour la plateforme atteigne sa fin de vie, selon la première éventualité.
 
 <!-- 
 - Oct 10, 2021

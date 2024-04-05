@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 40%
 
 L’opération de téléchargement, comme son nom l’indique, vous permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de chargement, cette opération vous permet de migrer vos formulaires d’un référentiel vers un autre.
 
-Dans AEM Forms, l’opération de téléchargement est prise en charge pour les types de ressources suivants :
+Dans AEM Forms, l’opération de téléchargement est prise en charge pour les types de ressource suivants :
 
-* Modèles de formulaire (XFA Forms)
+* Modèles de formulaire (formulaires XFA)
 * Formulaires PDF
-* Documents (fichiers de PDF plats)
+* Documents (fichiers PDF plats)
 
-AEM Forms prend en charge le téléchargement de ces types de formulaires individuellement ou dans un dossier contenant un ou plusieurs formulaires pris en charge.
+AEM Forms prend en charge le téléchargement de ces types de formulaires individuellement ou dans un dossier contenant un ou plusieurs formulaires pris en charge.
 
 Outre ces ressources, vous pouvez télécharger le type `Resource` de ressources s’il est présent dans un dossier. L’objectif de cette fonctionnalité est de vous permettre de télécharger la ressource à laquelle fait référence un formulaire XFA, ainsi que le formulaire proprement dit.
 
@@ -42,7 +42,7 @@ Outre ces ressources, vous pouvez télécharger le type `Resource` de ressources
 
 1. Dans la boîte de dialogue qui s’affiche, cliquez sur **[!UICONTROL Télécharger]**.
 
-   AEM Forms génère un fichier ZIP contenant le fichier sélectionné ou le dossier sélectionné.
+   AEM Forms génère un fichier ZIP contenant le fichier sélectionné ou le dossier sélectionné.
 
    Si vous téléchargez un dossier, les ressources prises en charge dans le dossier sont téléchargées dans leur hiérarchie existante.
 

@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
-Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple les fournisseurs Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
+Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * **Nom** : templates
    * **Type** : `sling:Folder`
 
-1. Clic droit `/apps/acs/analytics/components`. Sélectionnez **Créer...**, puis **Créer un composant...**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
+1. Cliquez avec le bouton droit sur `/apps/acs/analytics/components`. Sélectionnez **Créer...**, puis **Créer un composant...**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
 
    * **Libellé** : `googleanalyticspage`
    * **Titre** : `Google Analytics Page`
@@ -209,6 +209,6 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
 
    Sélectionnez **Google Analytics Configuration**, puis cliquez sur **Créer**.
 
-1. Saisissez un **Identifiant de compte**, par exemple : `AA-11111111-1`. Cliquez sur **OK**.
+1. Saisissez un **ID de compte**, par exemple `AA-11111111-1`. Cliquez sur **OK**.
 1. Accédez à une page et ajoutez la configuration nouvellement créée dans les propriétés de page, sous l’onglet **Services de cloud**.
 1. Les balises personnalisées sont ajoutées à la page.

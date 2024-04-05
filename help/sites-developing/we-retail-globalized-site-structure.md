@@ -1,6 +1,6 @@
 ---
-title: Test de la structure de site globalisée dans We.Retail
-description: Découvrez comment tester une structure de site globalisée dans Adobe Experience Manager à l’aide de We.Retail.
+title: Test de la structure de site globalisé dans We.Retail
+description: Découvrez comment tester une structure de site globalisé dans Adobe Experience Manager à l’aide de We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Test de la structure de site globalisée dans We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
+# Test de la structure de site globalisé dans We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 We.Retail a été créé avec une structure de site globalisée offrant un gabarit de langue qui peut être copié en direct sur des sites web spécifiques à un pays. Tout est prêt à l’emploi pour vous permettre d’expérimenter cette structure et les fonctionnalités de traduction intégrées.
 
 ## Essayer de le faire {#trying-it-out}
 
-1. Ouvrez la console Sites à partir de **Navigation globale > Sites**.
+1. Ouvrez la console des sites à partir de **Navigation globale > Sites**.
 1. Passez en vue Colonnes (si elle n’est pas déjà active) et sélectionnez We.Retail. Notez l’exemple de structure pour la Suisse, les États-Unis, la France, etc. avec les gabarits de langue.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -47,7 +47,7 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Un projet est créé pour chaque langue traduite. Les afficher sous **Navigation > Projets**.
+1. Un projet est créé pour chaque langue traduite. Vous pouvez les afficher sous **Navigation > Projets**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -69,4 +69,4 @@ We.Retail a été créé avec une structure de site globalisée offrant un gabar
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations, voir le document de création [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des informations techniques complètes.
+Pour plus d’informations et obtenir tous les détails techniques, reportez-vous au document de création [Traduction de contenu pour des sites multilingues](/help/sites-administering/translation.md).

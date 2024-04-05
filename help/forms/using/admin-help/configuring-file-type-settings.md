@@ -1,6 +1,6 @@
 ---
 title: Configuration des paramètres de type de fichier
-description: Découvrez comment configurer les paramètres de type de fichier. Dans PDF Generator, vous pouvez configurer le paramètre de l’application pour les types de fichiers pris en charge afin de configurer les paramètres de type de fichier.
+description: Découvrez comment configurer les paramètres de type de fichier. Dans PDF Generator, vous pouvez définir les paramètres de l’application pour les types de fichiers pris en charge.
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6188'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -187,7 +187,7 @@ Ces options permettent de définir le mode d’affichage du contenu et des pages
 
 **Mise en page :** permet de sélectionner le type de mise en page du document PDF.
 
-**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut indique que l’agrandissement Acrobat par défaut est utilisé.
+**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut implique l’utilisation du zoom par défaut d’Acrobat.
 
 **Ouvrir à la page :** permet d’indiquer le numéro de page auquel le PDF doit s’ouvrir.
 
@@ -215,7 +215,7 @@ Ces options permettent de définir l’apparence de la fenêtre :
 
 ## Paramètres de conversion des vidéos Flash en PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation du Flash Player d’Adobe sur le serveur Forms. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation d’Adobe Flash Player sur le serveur Forms Server. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensions de nom de fichier :** liste des extensions de fichier, séparées par des virgules, pouvant être converties.
 
@@ -312,7 +312,7 @@ Conserver la surimpression : fusionne la couleur des illustrations transparente
 
 Le tableau suivant répertorie les types d’imprimantes courants ainsi que leur résolution mesurée en dpi, leur lignage de trame par défaut mesuré en lpi, et une résolution de rééchantillonnage des images mesurée en ppp. Par exemple, si vous imprimez sur une imprimante laser 600 dpi, vous devez saisir 170 pour la résolution de rééchantillonnage des images.
 
-**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie, mais l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer notablement la qualité de l’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
+**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie ; toutefois, enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité d’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
 
 >[!NOTE]
 >

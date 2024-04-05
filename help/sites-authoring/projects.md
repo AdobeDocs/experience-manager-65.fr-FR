@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 ![Console Projets](assets/screen-shot_2019-03-05at125110.png)
 
-La console Projets est similaire aux autres consoles d’AEM, elle permet plusieurs actions sur des projets individuels et permet d’ajuster l’affichage des projets.
+La console Projets est similaire aux autres consoles d’AEM. Elle permet d’agir sur des projets individuels et d’ajuster l’affichage des projets.
 
 ### Activation et désactivation de mode {#modes}
 

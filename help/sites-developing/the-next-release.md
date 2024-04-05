@@ -1,6 +1,6 @@
 ---
 title: La prochaine version…
-description: Une version ultérieure est presque toujours prévue et peut même commencer pendant les dernières étapes de la mise en oeuvre actuelle.
+description: Une version ultérieure est presque toujours prévue et peut même commencer pendant les dernières étapes de la mise en œuvre actuelle.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -10,20 +10,20 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # La prochaine version…{#the-next-release}
 
-La mise en oeuvre d’un projet est rarement la fin du processus. Une version ultérieure est (presque) toujours prévue, et peut même commencer pendant les dernières étapes de la mise en oeuvre actuelle.
+La mise en œuvre d’un projet est rarement la fin du processus. Une version ultérieure est (presque) toujours prévue, et peut même commencer pendant les dernières étapes de la mise en œuvre actuelle.
 
-Dans tous les cas, il peut être utile de planifier la prochaine version en procédant comme suit :
+Dans tous les cas, il peut être utile de planifier la prochaine version en procédant comme suit :
 
-* Documenter et stocker soigneusement vos cas de test afin qu’ils puissent être référencés ou, espérons-le, réutilisés.
-* Développement de tests qui peuvent être utilisés comme tests de régression pour la prochaine version.
-* Collecter toutes les informations que vous, ou le client, avez acquises grâce à l’expérience du processus de test.
+* Documentez et stockez soigneusement vos cas de test afin qu’ils puissent être référencés ou, espérons-le, réutilisés.
+* Développez des tests qui peuvent servir de tests de régression pour la prochaine version.
+* Collectez toutes les informations que vous, ou la clientèle, avez acquises grâce à l’expérience du processus de test.
 
-  Cela peut contribuer à créer les exigences de la prochaine version, par exemple, car l’expérience du client sur le produit a augmenté au cours des tests.
+  Cela peut contribuer à créer les exigences de la prochaine version, par exemple si l’expérience du client ou de la cliente sur le produit a augmenté au cours des tests.
 
-Comme la prochaine version peut bien être une migration, toute information y relative s’avérera utile.
+Comme la prochaine version peut être une migration, toute information sur le sujet s’avérera utile.

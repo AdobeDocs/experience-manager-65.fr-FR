@@ -1,6 +1,6 @@
 ---
 title: Publication de collections sur Brand Portal
-description: Découvrez comment publier des collections et en annuler la publication sur Brand Portal.
+description: Découvrez comment publier ou annuler la publication des ressources sur Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: brand-portal
@@ -13,13 +13,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Publication de collections sur Brand Portal {#publish-collections-to-brand-portal}
 
-En tant qu’administrateur Adobe Experience Manager (AEM) Assets, vous pouvez publier des collections sur l’instance AEM Assets Brand Portal pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, consultez [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+En tant qu’administrateur ou administratrice Adobe Experience Manager (AEM) Assets, vous pouvez publier des collections sur l’instance AEM Assets Brand Portal pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, consultez [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Si vous apportez des modifications ultérieures à la collection d’origine dans AEM Assets, les changements ne sont reflétés dans Brand Portal que lorsque vous republiez la collection. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
 
@@ -27,7 +27,7 @@ Si vous apportez des modifications ultérieures à la collection d’origine dan
 >
 >Les fragments de contenu ne peuvent pas être publiés sur Brand Portal. Par conséquent, si vous sélectionnez un ou plusieurs fragments de contenu sur l’auteur AEM, l’action **Publier sur Brand Portal** n’est pas disponible.
 >
->Si des collections contenant des fragments de contenu sont publiées de AEM Auteur vers Brand Portal, tout le contenu du dossier, à l’exception des fragments de contenu, est répliqué vers l’interface Brand Portal.
+>Si des collections contenant des fragments de contenu sont publiées sur Brand Portal à partir de l’instance de création AEM, tout le contenu du dossier, à l’exception des fragments de contenu, est répliqué sur l’interface Brand Portal.
 
 ## Publication d’une collection dans Brand Portal {#publish-a-collection-to-brand-portal}
 

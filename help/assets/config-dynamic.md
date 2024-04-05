@@ -15,7 +15,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '7738'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ Si vous utilisez déjà Dynamic Media, il vous est demandé d’utiliser la pub
 
 ## Configurations Dynamic Media prises en charge {#supported-dynamic-media-configurations}
 
-Les tâches de configuration qui suivent font référence aux termes suivants :
+Les tâches de configuration qui suivent font référence aux termes suivants :
 
 | **Terme** | **Dynamic Media activé** | **Description** |
 |---|---|---|
@@ -98,7 +98,7 @@ Les tâches de configuration qui suivent font référence aux termes suivants :
 | Nœud de publication Experience Manager | « X » blanc dans un carré rouge. | Nœud de publication que vous déployez sur On-Premise ou via les Managed Services. |
 | Nœud de publication du service d’image | Coche blanche dans un cercle vert. | Nœud de publication que vous exécutez dans les data centers gérés par Adobe. Renvoie à l’URL du service d’images. |
 
-Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, uniquement pour les vidéos ou à la fois pour les images et les vidéos. Pour déterminer les étapes de configuration de Dynamic Media pour votre scénario spécifique, reportez-vous au tableau suivant.
+Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, uniquement pour les vidéos ou à la fois pour les images et les vidéos. Pour déterminer les étapes à suivre pour configurer Dynamic Media pour votre scénario, reportez-vous au tableau suivant.
 
 <table>
  <tbody>
@@ -108,12 +108,12 @@ Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, 
    <td><strong>Étapes de configuration</strong></td>
   </tr>
   <tr>
-   <td>Diffuser UNIQUEMENT des images en production</td>
-   <td>Les images sont diffusées via des serveurs situés dans les centres de données mondiaux d’Adobe, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</td>
+   <td>Diffusion UNIQUEMENT d’images en production</td>
+   <td>Les images sont diffusées via des serveurs situés dans les centres de données mondiaux d’Adobe, puis mises en cache par un CDN pour une portée globale et des performances adaptatives.</td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
-     <li>Configuration de l’imagerie dans <a href="#configuring-dynamic-media-cloud-services">Cloud Service Dynamic Media</a>.</li>
+     <li>Configuration des images dans les <a href="#configuring-dynamic-media-cloud-services">Services cloud Dynamic Media</a>.</li>
      <li><a href="#configuring-image-replication">Configurer la réplication de l’image</a>.</li>
      <li><a href="#replicating-catalog-settings">Répliquer les paramètres du catalogue</a>.</li>
      <li><a href="#replicating-viewer-presets">Répliquer les paramètres prédéfinis de la visionneuse</a>.</li>
@@ -123,39 +123,39 @@ Vous pouvez choisir d’implémenter Dynamic Media uniquement pour les images, 
     </ol> </td>
   </tr>
   <tr>
-   <td>Diffuser UNIQUEMENT des images en préproduction (développement, QE, évaluation, etc.)</td>
-   <td>Les images sont livrées via le nœud de publication d’Experience Manager. Dans ce scénario, le trafic étant minimal, il n’est pas nécessaire de diffuser des images vers le centre de données d’Adobe. Il permet également un aperçu sécurisé du contenu avant le lancement de l’exploitation.</td>
+   <td>Diffusion UNIQUEMENT d’images en préproduction (développement, QE, test, etc.)</td>
+   <td>Les images sont livrées via le nœud de publication d’Experience Manager. Dans ce scénario, puisque le trafic est minimal, il n’est pas nécessaire d’envoyer les images vers le centre données d’Adobe. Il permet également un aperçu sécurisé du contenu avant le lancement de l’exploitation.</td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
      <li>Sur le nœud de <strong>publication</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
      <li><a href="#replicating-viewer-presets">Répliquer les paramètres prédéfinis de la visionneuse</a>.</li>
-     <li>Configuration <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">filtre de ressources pour les images hors production</a>.</li>
+     <li>Configuration du <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">filtre de ressources pour les images hors production</a>.</li>
      <li><a href="#configuring-dynamic-media-image-server-settings">Configurez les paramètres du serveur d’images Dynamic Media.</a></li>
      <li><a href="#delivering-assets">Livrez les ressources.</a></li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Diffuser UNIQUEMENT de la vidéo dans n’importe quel environnement (production, développement, QE, évaluation, etc.)</td>
-   <td>Les vidéos sont diffusées et mises en cache par un réseau de diffusion de contenu pour des performances évolutives et une portée globale. L’image d’affiche de la vidéo (la miniature de la vidéo qui s’affiche avant le début de la lecture) sera livrée par l’instance de publication d’Experience Manager.</td>
+   <td>Diffusion UNIQUEMENT de vidéos dans n’importe quel environnement (production, développement, QE, test, etc.)</td>
+   <td>Les vidéos sont diffusées et mises en cache par un CDN pour des performances adaptatives et une portée globale. L’image d’affiche de la vidéo (la miniature de la vidéo qui s’affiche avant le début de la lecture) sera livrée par l’instance de publication d’Experience Manager.</td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
      <li>Sur le nœud de <strong>publication</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a> (l’instance de publication envoie l’image d’affiche de la vidéo et fournit les métadonnées pour la lecture de la vidéo).</li>
-     <li>Configurer la vidéo dans <a href="#configuring-dynamic-media-cloud-services">Cloud Service Dynamic Media.</a></li>
+     <li>Configuration des vidéos dans les <a href="#configuring-dynamic-media-cloud-services">Services cloud Dynamic Media.</a></li>
      <li><a href="#replicating-viewer-presets">Répliquer les paramètres prédéfinis de la visionneuse</a>.</li>
-     <li>Configuration <a href="#setting-up-asset-filters-for-video-only-deployments">filtre de ressources pour la vidéo uniquement</a>.</li>
+     <li>Configuration du <a href="#setting-up-asset-filters-for-video-only-deployments">filtre de ressources pour la vidéo uniquement</a>.</li>
      <li><a href="#delivering-assets">Livrez les ressources.</a></li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Diffuser À LA FOIS des images et des vidéos en production</td>
-   <td><p>Les vidéos sont diffusées et mises en cache par un réseau de diffusion de contenu pour des performances évolutives et une portée globale. Les images et les images d’affiche vidéo sont diffusées via les serveurs des centres de données mondiaux d’Adobe, puis mises en cache par un réseau de diffusion de contenu pour une portée globale et des performances évolutives.</p> <p>Reportez-vous aux sections précédentes pour configurer les images ou les vidéos en préexploitation. </p> </td>
+   <td>Diffusion d’images ET de vidéos en production</td>
+   <td><p>Les vidéos sont diffusées et mises en cache par un CDN pour des performances adaptatives et une portée globale. Les images et les miniatures des vidéos sont diffusées via les serveurs des centres de données mondiaux d’Adobe, puis mises en cache par un CDN pour une portée globale et des performances adaptatives.</p> <p>Reportez-vous aux sections précédentes pour configurer les images ou les vidéos en préexploitation. </p> </td>
    <td>
     <ol>
      <li>Sur le nœud <strong>auteur</strong> d’Experience Manager, <a href="#enabling-dynamic-media">activez Dynamic Media</a>.</li>
-     <li>Configurer la vidéo dans <a href="#configuring-dynamic-media-cloud-services">Cloud Service Dynamic Media.</a></li>
-     <li>Configuration de l’imagerie dans <a href="#configuring-dynamic-media-cloud-services">Cloud Service Dynamic Media.</a></li>
+     <li>Configuration des vidéos dans les <a href="#configuring-dynamic-media-cloud-services">Services cloud Dynamic Media.</a></li>
+     <li>Configuration des images dans les <a href="#configuring-dynamic-media-cloud-services">Services cloud Dynamic Media.</a></li>
      <li><a href="#configuring-image-replication">Configurer la réplication de l’image</a>.</li>
      <li><a href="#replicating-catalog-settings">Répliquer les paramètres du catalogue</a>.</li>
      <li><a href="#replicating-viewer-presets">Répliquer les paramètres prédéfinis de la visionneuse</a>.</li>
@@ -290,7 +290,7 @@ Après avoir configuré l’agent de réplication, vous devez [valider et tester
 
 >[!NOTE]
 >
-La limite de mémoire par défaut pour la création de fichiers PTIFF est de 3 Go pour tous les workflows. Par exemple, vous pouvez traiter une image qui nécessite 3 Go de mémoire pendant que d’autres workflows sont en pause, ou traiter 10 images en parallèle qui nécessitent chacune 300 Mo de mémoire.
+La limite de mémoire par défaut pour la création de fichiers PTIFF est de 3 Go pour tous les workflows. Par exemple, vous pouvez traiter une image qui nécessite 3 Go de mémoire pendant que les autres workflows sont en pause, ou traiter 10 images en parallèle qui nécessitent chacune 300 Mo de mémoire.
 >
 La limite de la mémoire peut être configurée et s’adapte en fonction de la disponibilité des ressources du système et du type de contenu d’image traité. Si vous avez plusieurs ressources volumineuses et que vous avez suffisamment de mémoire dans le système, vous pouvez augmenter cette limite pour être certain de pouvoir traiter les images en parallèle.
 >
@@ -330,7 +330,7 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
    * Sélectionnez le **[!UICONTROL fichier KeyStore]**. Accédez au fichier KeyStore fourni par Adobe, sélectionnez-le puis sélectionnez **[!UICONTROL Ouvrir]**.
    * Dans le champ **[!UICONTROL Mot de passe du fichier KeyStore]**, entrez le mot de passe du fichier KeyStore. Ce n’est **pas** le mot de passe du KeyStore que vous avez créé à l’étape 5. C’est le mot de passe du fichier KeyStore fourni par Adobe dans l’e-mail de bienvenue qui vous a été envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu le mot de passe du fichier KeyStore.
    * Dans le champ **[!UICONTROL Mot de passe de la clé privée]**, entrez le mot de passe de la clé privée (ce peut être le même mot de passe de clé privée que celui fourni à l’étape précédente). Adobe vous fournit ce mot de passe de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu le mot de passe de clé privée.
-   * Dans le **[!UICONTROL Alias de clé privée]** , saisissez l’alias de la clé privée. Par exemple, `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu d’alias de clé privée.
+   * Dans le champ **[!UICONTROL Alias de la clé privée]**, entrez l’alias de la clé privée. Par exemple, `*companyname*-alias`. Adobe vous fournit cet alias de clé privée dans l’e-mail de bienvenue qui vous est envoyé pendant le provisionnement. Contactez le service clientèle Adobe si vous n’avez pas reçu d’alias de clé privée.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -361,7 +361,7 @@ Configurez l’authentification de réplication sur l’auteur afin de pouvoir r
 
 Pour valider l’agent de réplication pour Dynamic Media, procédez de la façon suivante :
 
-Sélectionnez **[!UICONTROL Tester la connexion]**. Voici un exemple de sortie :
+Sélectionnez **[!UICONTROL Tester la connexion]**. Voici un exemple de sortie :
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -379,7 +379,7 @@ Replication test succeeded
 
 >[!NOTE]
 >
-Vous pouvez également vérifier en effectuant l’une des opérations suivantes :
+Vous pouvez également vérifier en effectuant l’une des opérations suivantes :
 >
 * Vérifiez les journaux de réplication pour vous assurer que la ressource a été répliquée.
 * Publiez une image. Sélectionnez l’image puis sélectionnez **[!UICONTROL Visionneuses]** dans le menu déroulant, puis sélectionnez un paramètre prédéfini de visionneuse. Sélectionnez **[!UICONTROL URL]**. Pour vérifier que vous pouvez voir l’image, copiez et collez le chemin de l’URL dans le navigateur.
@@ -429,18 +429,18 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 ```
 
 **Solution** :
-vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même mot de passe que celui utilisé pour créer le KeyStore.
+vérifiez le mot de passe. Le mot de passe enregistré dans l’agent de réplication n’est pas le même que celui utilisé pour créer le KeyStore.
 
-#### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### Problème : InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-Ce problème est causé par une erreur de configuration dans votre instance Auteur Experience Manager. Le `javax.net.ssl.trustStore` obtenu par le processus Java™ sur l’auteur n’est pas correct. Cette erreur s’affiche dans le journal de réplication :
+Ce problème est causé par une erreur de configuration dans votre instance Auteur Experience Manager. Le `javax.net.ssl.trustStore` obtenu par le processus Java™ sur l’auteur n’est pas correct. Vous rencontrez l’erreur suivante dans le journal de réplication :
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
 14.04.2016 09:37:43 - Error while replicating: com.day.cq.replication.ReplicationException: Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
 ```
 
-Ou le journal des erreurs :
+Ou le journal des erreurs :
 
 ```shell
 07.25.2019 12:00:59.893 *ERROR* [sling-threadpool-db2763bb-bc50-4bb5-bb64-10a09f432712-(apache-sling-job-thread-pool)-90-com_day_cq_replication_job_s7delivery(com/day/cq/replication/job/s7delivery)] com.day.cq.replication.Agent.s7delivery.queue Error during processing of replication.
@@ -485,7 +485,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 Le problème peut être dû à un correctif ou à un Pack de fonctionnalités qui ne s’est pas installé correctement ou qui a écrasé les paramètres.
 
-Exemple de log de réplication :
+Exemple de journal de réplication :
 
 ```shell
 01.08.2016 18:42:59 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1470073379634, userId='admin', revision='null'}
@@ -519,7 +519,7 @@ Adobe vous recommande d’effectuer un test complet de la configuration :
 Assurez-vous d’avoir déjà effectué les étapes suivantes avant de commencer ce test :
 
 * Ajout de paramètres d’image prédéfinis.
-* Configurer **[!UICONTROL Configuration de Dynamic Media (version antérieure à 6.3)]** sous Cloud Service. L’URL du service d’images est requise pour ce test.
+* Configuration de la **[!UICONTROL Configuration de Dynamic Media (version antérieure à 6.3)]** dans les services Cloud. L’URL du service d’images est requise pour ce test.
 
 **Pour tester votre configuration :**
 
@@ -532,7 +532,7 @@ Assurez-vous d’avoir déjà effectué les étapes suivantes avant de commencer
 
 1. Sélectionnez n’importe quel rendu dynamique.
 1. Pour obtenir l’URL de cette ressource, sélectionnez **[!UICONTROL URL]**.
-1. Accédez à l’URL sélectionnée et vérifiez si l’image se comporte comme prévu.
+1. Accédez à l’URL sélectionnée et vérifiez si l’image s’affiche comme prévu.
 
 Une autre manière de tester la diffusion de vos ressources consiste à ajouter req=exists à votre URL.
 
@@ -550,13 +550,13 @@ Avant de configurer les services cloud Dynamic Media, assurez-vous d’avoir co
 
 1. Dans Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de Dynamic Media (version antérieure à 6.3)]**.
 1. Sur la page Navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**, puis cliquez sur **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Création d’une configuration Dynamic Media]** dans le champ Titre, saisissez un titre.
+1. Dans la boîte de dialogue **[!UICONTROL Création d’une configuration Dynamic Media]**, saisissez un titre dans le champ Titre.
 1. Si vous configurez Dynamic Media pour la vidéo :
 
    * dans le champ **[!UICONTROL ID d’enregistrement]**, entrez votre ID d’enregistrement ;
    * dans le champ **[!UICONTROL URL du service vidéo]**, entrez l’URL du service vidéo pour la passerelle Dynamic Media.
 
-1. Si vous configurez Dynamic Media pour l’imagerie, dans la variable **[!UICONTROL URL du service d’images]** , saisissez l’URL du service d’image pour la passerelle Dynamic Media.
+1. Si vous configurez Dynamic Media pour des images, dans le champ **[!UICONTROL URL du service d’images]**, saisissez l’URL du service d’images pour la passerelle Dynamic Media.
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour revenir à la page Navigateur de configuration Dynamic Media.
 1. Pour accéder à la console de navigation globale, sélectionnez le logo d’Experience Manager.
 
@@ -566,9 +566,9 @@ Vous pouvez configurer les rapports vidéo pour plusieurs installations d’Expe
 
 **Utilisation :** au moment de la configuration de Dynamic Media (version antérieure à 6.3), de nombreuses fonctionnalités démarrent, dont celle des rapports vidéo. La configuration crée une suite de rapports dans une entreprise Analytics régionale. Si vous configurez plusieurs nœuds Auteur, vous créez une suite de rapport séparée pour chacun. Par conséquent, les données de rapport sont incohérentes entre les installations. En outre, si chaque nœud Auteur se réfère au même serveur Hybrid Publish, la dernière installation Auteur modifie la suite de rapports de destination pour tous les rapports vidéo. Ce problème surcharge le système d’analyses avec de trop nombreuses suites de rapports.
 
-**Prise en main :** Configurez les rapports vidéo en effectuant les trois tâches suivantes.
+**Prise en main :** configurez les rapports vidéo en effectuant les trois tâches suivantes.
 
-1. Créez un package de paramètres prédéfinis d’analyses vidéo après avoir configuré la configuration de Dynamic Media (version antérieure à 6.3) sur le premier noeud Auteur. Cette première tâche est importante car elle permet à une nouvelle configuration de continuer à utiliser la même suite de rapports.
+1. Créez un package de paramètres prédéfinis d’analyses vidéo après avoir configuré la Configuration de Dynamic Media (version antérieure à 6.3) sur le premier nœud de création. Cette première tâche est importante car elle permet à une nouvelle configuration de continuer à utiliser la même suite de rapports.
 1. Installez le package de paramètres prédéfinis d’analyses vidéo sur tout ***nouveau*** nœud Auteur ***avant*** de paramétrer la Configuration Dynamic Media (version antérieure à 6.3). 
 1. Vérifiez et déboguez l’installation du package.
 
@@ -576,15 +576,15 @@ Vous pouvez configurer les rapports vidéo pour plusieurs installations d’Expe
 
 Lorsque vous avez terminé cette tâche, vous disposez d’un fichier de package contenant les paramètres prédéfinis d’analyses vidéo. Ces paramètres prédéfinis comportent une suite de rapports, le serveur de suivi, les espaces de noms de suivi et l’ID d’organisation Experience Cloud, le cas échéant.
 
-1. Si vous ne l’avez pas déjà fait, configurez la configuration de Dynamic Media (version antérieure à 6.3).
-1. (Facultatif) Affichez et copiez l’ID de suite de rapports (vous devez avoir accès au JCR). Bien que disposer de l’identifiant de suite de rapports ne soit pas obligatoire, cela facilite la validation.
-1. Créez un module à l’aide de Package Manager.
-1. Editez le package pour inclure un filtre.
+1. Si vous ne l’avez pas déjà fait, configurez la Configuration de Dynamic Media (version antérieure à 6.3).
+1. (Facultatif) Affichez et copiez l’ID de suite de rapports (vous devez avoir accès au JCR). Bien que disposer de l’identifiant de la suite de rapports ne soit pas nécessaire, cela facilite la validation.
+1. Créez un package à l’aide du Gestionnaire de modules.
+1. Modifiez le package pour inclure un filtre.
 
    Dans Experience Manager : `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. Créez le package.
-1. Téléchargez ou partagez le package de paramètres prédéfinis d’analyses vidéo afin qu’il puisse être partagé avec les nouveaux noeuds d’auteur suivants.
+1. Téléchargez ou partagez le package de paramètres prédéfinis d’analyses vidéo afin qu’il puisse être partagé avec de futurs nouveaux nœuds de création.
 
 ### Installation du package de paramètres prédéfinis d’analyses vidéo préalable à la configuration des nœuds auteur additionnels {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
@@ -593,8 +593,8 @@ Assurez-vous d’avoir effectué cette tâche ***avant*** de paramétrer la Conf
 Vérifiez que le package de paramètres prédéfinis d’analyses vidéo du premier nœud Auteur est accessible sur le nouveau nœud Auteur.
 
 1. Téléchargez le package de paramètres prédéfinis d’analyses vidéo que vous avez créé précédemment sur le gestionnaire de packages.
-1. Installez le package de paramètres prédéfinis Video Analytics.
-1. Configuration de Dynamic Media (version antérieure à 6.3).
+1. Installez le package de paramètres prédéfinis d’analyses vidéo.
+1. Configurez la Configuration de Dynamic Media (version antérieure à 6.3).
 
 ### Vérification et débogage de l’installation du package {#verifying-and-debugging-the-package-installation}
 
@@ -634,7 +634,7 @@ Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTRO
 
    ![screen_shot_2018-05-23at52254pm](assets/screen_shot_2018-05-23at52254pm.png)
 
-   Pour générer des données de rapport, téléchargez et publiez une vidéo. Utilisation **[!UICONTROL Copier l’URL]** et exécutez la vidéo au moins une fois.
+   Pour générer des données de rapport, chargez et publiez une vidéo. Utilisez la fonction **[!UICONTROL Copier l’URL]** et lancez la vidéo au moins une fois.
 
    Cela peut prendre jusqu’à 12 h avant que les données de rapport soient remplies par l’utilisation de la visionneuse vidéo.
 
@@ -646,15 +646,15 @@ Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTRO
 
 ### Dépannage de la configuration de rapport vidéo {#troubleshooting-the-video-reporting-configuration}
 
-* Pendant l’installation, les connexions au serveur API Analytics expirent. L’installation tente de relancer la connexion 20 fois, mais échoue toujours. Dans ce cas, le fichier journal enregistre plusieurs erreurs. Recherchez `SiteCatalystReportService`.
+* Pendant l’installation, les connexions au serveur API Analytics expirent. Lors de l’installation, la connexion tente d’être établie 20 fois, mais échoue malgré tout. Dans ce cas, le fichier journal enregistre plusieurs erreurs. Recherchez `SiteCatalystReportService`.
 * Le fait de ne pas installer le package de paramètres prédéfinis d’analyses en premier peut causer la création d’une nouvelle suite de rapports.
 * La mise à niveau d’Experience Manager 6.3 vers Experience Manager 6.4 ou Experience Manager 6.4.1, puis le paramétrage de la configuration de Dynamic Media (version antérieure à 6.3), crée toujours une suite de rapports. Ce problème est connu et sa réparation est prévue pour Experience Manager 6.4.2.
 
-### À propos du paramètre prédéfini Video Analytics {#about-the-video-analytics-preset}
+### À propos du paramètre prédéfini d’analyses vidéo {#about-the-video-analytics-preset}
 
 Les paramètres prédéfinis d’analyses vidéo, parfois simplement appelés paramètres prédéfinis d’analyses, sont stockés près des paramètres prédéfinis de la visionneuse dans Dynamic Media. Il s’agit essentiellement de la même chose qu’un paramètre prédéfini de visionneuse, mais avec des informations utilisées pour configurer les rapports AppMeasurement et Video Heartbeat.
 
-Les propriétés du paramètre prédéfini sont les suivantes :
+Les propriétés du paramètre prédéfini sont les suivantes :
 
 * `reportSuite`
 * `trackingServer`
@@ -667,7 +667,7 @@ Experience Manager 6.4 et les versions plus récentes enregistrent ce paramèt
 
 Publiez vos propres paramètres de catalogue par défaut lors du processus de configuration via le JCR. Pour répliquer les paramètres de catalogue :
 
-1. Dans une fenêtre de terminal, exécutez ce qui suit :
+1. Dans une fenêtre de terminal, exécutez ce qui suit :
 
    `curl -u admin:admin localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -790,7 +790,7 @@ Ces étapes permettent de configurer l’instance de publication d’Experience�
 
 >[!NOTE]
 >
-S’il existe de nombreux filtres dans un auteur, chaque agent nécessite qu’un autre utilisateur lui soit attribué. Le code granite applique un modèle de filtre par utilisateur. Prévoyez toujours un utilisateur différent pour chaque filtre configuré.
+S’il existe de nombreux filtres dans un auteur, chaque agent nécessite qu’un autre utilisateur lui soit attribué. Le code Granite impose la règle d’un seul filtre par utilisateur ou par utilisatrice. Prévoyez toujours un utilisateur différent pour chaque filtre configuré.
 >
 Utilisez-vous plusieurs filtres sur un serveur ? Par exemple, un filtre pour la réplication à publier et un second filtre pour s7delivery. Si c’est le cas, vous devez vous assurer que ces deux filtres ont un **userId** différents qui leur sont affecté dans le nœud `jcr:content`. Voir l’image suivante :
 
@@ -837,7 +837,7 @@ Utilisez-vous plusieurs filtres sur un serveur ? Par exemple, un filtre pour la
 
    Si vous souhaitez uniquement répliquer l’original, vous devez entrer `+original`.
 
-## Configuration des paramètres du serveur d’images Dynamic Media {#configuring-dynamic-media-image-server-settings}
+## Configuration des paramètres du serveur d’images Dynamic Media {#configuring-dynamic-media-image-server-settings}
 
 La configuration du serveur d’images Dynamic Media implique la modification du lot Adobe CQ Scene7 ImageServer et du lot Adobe CQ Scene7 PlatformServer.
 
@@ -884,8 +884,8 @@ Pour configurer les paramètres du serveur d’images Dynamic Media :
    | Propriété | Valeur par défaut | Description |
    |---|---|---|
    | Cache enabled | Cochée | Indique si le cache de réponse est activé. |
-   | Cache roots | cache | Un ou plusieurs chemins d’accès aux dossiers du cache de réponse. Les chemins d’accès relatifs sont résolus par rapport au dossier de lot s7imagerie interne. |
-   | Taille max. du cache | 200000000 | Taille maximale du cache de réponse en octets. |
+   | Cache roots | cache | Un ou plusieurs chemins d’accès aux dossiers du cache de réponse. Les chemins d’accès relatifs sont résolus par rapport au dossier de lots s7imagerie interne. |
+   | Cache Max Size | 200000000 | Taille maximale du cache de réponse, en octets. |
    | Cache Max Entries | 100 000 | Nombre maximal d’entrées autorisées dans le cache. |
 
 ### Paramètres du manifeste par défaut {#default-manifest-settings}
@@ -911,20 +911,20 @@ Tableau des paramètres du manifeste et leurs valeurs par défaut :
 | Propriété | Valeur par défaut | Description |
 | --- | --- | --- |
 | `bkgcolor` | `FFFFFF` | Couleur d’arrière-plan par défaut. La valeur RVB est utilisée pour remplir toutes les zones d’une image de réponse qui ne contiennent aucune donnée d’image actuelle. Consultez également la section [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `defaultpix` | `300,300` | Taille d’affichage par défaut. Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur si la requête ne spécifie pas la taille d’affichage explicitement à l’aide de wid=, hei= ou scl=.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter. Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=fr#image-serving-api) dans l’API du service d’images.<br>Habituellement, cependant, vous utilisez un paramètre de visionneuse ou d’image prédéfini pour fournir la ressource. Defaultpix ne s’applique qu’à une ressource qui n’utilise pas de paramètre de visionneuse ou d’image prédéfini. |
+| `defaultpix` | `300,300` | Taille d’affichage par défaut. Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur si la requête ne spécifie pas explicitement la taille d’affichage à l’aide de wid=, hei=, ou scl=.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter. Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=fr#image-serving-api) dans l’API du service d’images.<br>Habituellement, cependant, vous utilisez un paramètre de visionneuse ou d’image prédéfini pour fournir la ressource. Defaultpix ne s’applique qu’à une ressource qui n’utilise pas de paramètre de visionneuse ou d’image prédéfini. |
 | `defaultthumbpix` | `100,100` | Taille de miniature par défaut. Utilisé à la place d’attribute::DefaultPix pour les requêtes de miniature (`req=tmb`).<br>Le serveur oblige les images de réponse à ne pas dépasser cette largeur et cette hauteur. Cette action est définie sur true si une demande de miniature (`req=tmb`) ne spécifie pas explicitement la taille et ne spécifie pas la taille d’affichage explicitement à l’aide de `wid=`, `hei=`ou `scl=`.<br>Spécifiée sous la forme de deux nombres entiers de valeur supérieure ou égale à zéro, séparés par une virgule. Largeur et hauteur en pixels. Vous pouvez définir sur 0 les deux valeurs, ou une seule des deux, pour ne pas les limiter.<br>Ne s’applique pas aux requêtes imbriquées/intégrées.<br>Consultez également la section [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `expiration` | `36000000` | Durée de vie par défaut du cache client. Fournit un intervalle d’expiration par défaut au cas où un enregistrement de catalogue particulier ne contiendrait pas de valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes avant expiration depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, cette valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faut 10 heures pour que l’ancienne image quitte le cache de l’utilisateur. Contactez le service clientèle si vous avez besoin que la mémoire cache soit effacée plus rapidement.<br>Consultez également la section [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=fr) dans l’API du service d’images. |
-| `jpegquality` | `80` | Attributs de codage du JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être égale à 0 par défaut, ou à 1 pour désactiver la réduction de la résolution chromatique RVB utilisée par les encodeurs JPEG.<br>Consultez également la section [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `maxpix` | `2000,2000` | Renvoie la limite de taille des images. Largeur et hauteur maximales de l’image de réponse renvoyée au client.<br>Le serveur renvoie une erreur si une requête provoque la création d’une image de réponse dont la largeur ou la hauteur est plus importante que la valeur d’attribute::MaxPix.<br>Consultez également la section [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `resmode` | `SHARP2` | Mode de rééchantillonnage par défaut. Indique les attributs de rééchantillonnage et d’interpolation par défaut à utiliser pour le dimensionnement des données d’image.<br>Utilisé lorsque `resMode=` n’est pas spécifié dans une requête.<br>Les valeurs autorisées comprennent `BILIN`, `BICUB` ou `SHARP2`.<br>Enum. définie sur 2 pour le mode d’interpolation `bilin`, 3 pour le `bicub` ou 4 pour le `sharp2`. Utilisez `sharp2` pour obtenir de meilleurs résultats.<br>Consultez également la section [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=fr#image-serving-api) dans l’API du service d’images. |
-| `resolution` | `72` | Résolution d’objet par défaut. Fournit une résolution d’objet par défaut au cas où un enregistrement de catalogue particulier ne contiendrait pas de valeur catalog::Resolution valide.<br>Nombre réel, supérieur à 0. Généralement exprimé en pixels par pouce, mais peut également être exprimé dans d’autres unités, comme les pixels par mètre.<br>Consultez également la section [Résolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `expiration` | `36000000` | Durée de vie par défaut du cache. Fournit un intervalle d’expiration par défaut en heures au cas où un enregistrement de catalogue spécifique ne contient pas de valeur catalog::Expiration valide.<br>Nombre réel, supérieur ou égal à zéro. Nombre de millisecondes avant expiration depuis la génération des données de réponse. Définissez la valeur sur zéro pour que l’image de réponse expire immédiatement, ce qui permet de désactiver efficacement la mise en cache de client. Par défaut, cette valeur est définie sur 10 heures, ce qui signifie que si une nouvelle image est publiée, il faut 10 heures pour que l’ancienne image quitte le cache de l’utilisateur ou de l’utilisatrice. Contactez le service clientèle si vous avez besoin que la mémoire cache soit effacée plus rapidement.<br>Consultez également la section [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=fr) dans l’API du service d’images. |
+| `jpegquality` | `80` | Attributs de codage JPEG par défaut. Indique l’attribut par défaut des images de réponse au format JPEG.<br>Nombre entier et indicateur, séparés par une virgule. La première valeur est comprise dans la plage 1..100 et définit la qualité. La seconde valeur peut être égale à 0 par défaut, ou à 1 pour désactiver la réduction de la résolution chromatique RVB utilisée par les encodeurs JPEG.<br>Consultez également la section [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `maxpix` | `2000,2000` | Renvoie la limite de taille des images. Largeur et hauteur maximales de l’image de réponse renvoyée au client ou à la cliente.<br>Le serveur renvoie une erreur si une requête provoque la création d’une image de réponse dont la largeur ou la hauteur est plus importante que la valeur d’attribute::MaxPix.<br>Consultez également la section [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `resmode` | `SHARP2` | Mode de rééchantillonnage par défaut. Indique les attributs de rééchantillonnage et d’interpolation par défaut à utiliser pour le redimensionnement des données d’image.<br>Utilisé lorsque `resMode=` n’est pas spécifié dans une requête.<br>Les valeurs autorisées comprennent `BILIN`, `BICUB` ou `SHARP2`.<br>Enum. définie sur 2 pour le mode d’interpolation `bilin`, 3 pour le `bicub` ou 4 pour le `sharp2`. Utilisez `sharp2` pour obtenir de meilleurs résultats.<br>Consultez également la section [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=fr#image-serving-api) dans l’API du service d’images. |
+| `resolution` | `72` | Résolution d’objet par défaut. Fournit une résolution d’objet par défaut au cas où un enregistrement de catalogue particulier ne contient pas de valeur catalog::Resolution valide.<br>Nombre réel, supérieur à 0. Généralement exprimé en pixels par pouce, mais peut également être exprimé dans d’autres unités, comme les pixels par mètre.<br>Consultez également la section [Résolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=fr#image-serving-api) dans l’API du service d’images. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Ces valeurs représentent un instantané du temps de lecture de la vidéo et sont transférées à [encoding.com](https://www.encoding.com/). Reportez-vous à la section [À propos des miniatures vidéo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) pour plus d’informations. |
 
 ## Configuration de la gestion des couleurs Dynamic Media {#configuring-dynamic-media-color-management}
 
 La gestion des couleurs Dynamic Media vous permet de corriger les couleurs des ressources pour leur prévisualisation.
 
-Avec la correction des couleurs, les ressources ingérées conservent leur espace colorimétrique (RGB, CMJN, gris) et leur profil de couleur intégré dans le rendu de TIFF pyramidal généré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible. Vous configurez le profil de couleurs cible dans les paramètres de publication Dynamic Media dans le JCR.
+Avec la correction des couleurs, les ressources ingérées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré dans le rendu pyramidal TIFF généré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible. Vous configurez le profil de couleurs cible dans les paramètres de publication Dynamic Media dans le JCR.
 
 La gestion des couleurs d’Adobe utilise des profils ICC (International Color Consortium), un format défini par l’ICC.
 
@@ -951,7 +951,7 @@ Pour utiliser les fonctionnalités de gestion des couleurs de Dynamic Media, in
 
    Pour plus d’informations sur l’utilisation des packages dans [!DNL Adobe Experience Manager], consultez [Utilisation des packages](/help/sites-administering/package-manager.md).
 
-1. Installez le Feature Pack.
+1. installez le Pack de fonctionnalités.
 
 ### Configuration des profils de couleurs par défaut {#configuring-the-default-color-profiles}
 
@@ -965,7 +965,7 @@ Une fois que vous avez installé le pack de fonctionnalités, configurez les pro
 
 1. Ajoutez une propriété de correction des couleurs en faisant défiler l’écran vers le bas de l’onglet **[!UICONTROL Propriétés]**. Saisissez manuellement le nom, le type et la valeur de la propriété, qui sont décrits dans les tableaux suivants. Une fois que vous avez entré les valeurs, sélectionnez **[!UICONTROL Ajouter]**, puis **[!UICONTROL Tout enregistrer]** pour les enregistrer.
 
-   Les propriétés de correction des couleurs sont décrites dans la section **Propriétés de correction des couleurs** table. Les valeurs que vous pouvez attribuer aux propriétés de correction des couleurs se trouvent dans la variable **Profil colorimétrique** table.
+   Les propriétés de correction des couleurs sont décrites dans le tableau **Propriétés de correction des couleurs**. Les valeurs que vous pouvez attribuer aux propriétés de correction des couleurs se trouvent dans le tableau **Profil colorimétrique**.
 
    Par exemple, dans **[!UICONTROL Nom]**, ajoutez `iccprofilecmyk`, sélectionnez **[!UICONTROL Type]** `String` puis ajoutez `WebCoated` en tant que **[!UICONTROL Valeur]**. Sélectionnez ensuite **[!UICONTROL Ajouter]** et **[!UICONTROL Tout enregistrer]** pour enregistrer vos valeurs.
 
@@ -1042,9 +1042,9 @@ Une fois que vous avez installé le pack de fonctionnalités, configurez les pro
 >
 Les noms des propriétés sont sensibles à la casse et doivent être tous en minuscules.
 
-**Tableau de profils de couleurs**
+**Tableau de profil colorimétrique**
 
-Les profils de couleurs suivants sont installés :
+Les profils colorimétriques suivants sont installés :
 
 <table>
  <tbody>
@@ -1220,9 +1220,9 @@ Les profils de couleurs suivants sont installés :
 
 Par exemple, vous pouvez définir **[!UICONTROL iccprofilergb]** sur `sRGB` et **[!UICONTROL iccprofilecmyk]** sur **[!UICONTROL WebCoated]**.
 
-Cela permet d’effectuer les opérations suivantes :
+Les conséquences sont les suivantes :
 
-* Active la correction des couleurs pour les images RGB et CMJN.
+* Active la correction des couleurs pour les images RVB et CMJN.
 * Les images RVB qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *sRVB*.
 * Les images CMJN qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *WebCoated*.
 * Les rendus dynamiques qui renvoient une sortie RVB le font dans l’espace colorimétrique *sRVB*.
@@ -1242,14 +1242,14 @@ Reportez-vous à la section [Diffusion de ressources Dynamic Media](/help/asset
   </tr>
   <tr>
    <td>Copier l’URL d’une image</td>
-   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>où <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
+   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>où <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
   <tr>
-   <td>Copie de l’URL d’une visionneuse</td>
-   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
+   <td>Copier l’URL de la visionneuse</td>
+   <td><p>La boîte de dialogue Copier l’URL affiche une URL similaire à celle qui suit (l’URL est utilisée à des fins de démonstration uniquement) :</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
   <tr>
-   <td>Copie du code incorporé d’une visionneuse</td>
+   <td>Copier le code incorporé d’une visionneuse</td>
    <td><p>La boîte de dialogue Copier le code affiche un fragment de code similaire à celui qui suit (le code est utilisé à des fins de démonstration uniquement) :</p> <p><code class="code">&lt;style type="text/css"&gt;
        #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
@@ -1268,11 +1268,11 @@ Reportez-vous à la section [Diffusion de ressources Dynamic Media](/help/asset
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
        "asset" : "/content/dam/path/to/Image.jpg" }
        }).init();
-       &lt;/script&gt;</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
+       &lt;/script&gt;</code></p> <p>où <code>PUBLISHNODE</code> désigne le nœud de publication standard d’Experience Manager et <code>IMAGESERVICEPUBLISHNODE</code> fait référence à l’URL du service d’images.</p> <p>Voir aussi <a href="/help/assets/delivering-dynamic-media-assets.md">Diffusion de ressources Dynamic Media</a>.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Composants WCM Dynamic Media et Interactive Media {#wcm-dynamic-media-and-interactive-media-components}
+### Composants WCM Dynamic Media et Interactive Media {#wcm-dynamic-media-and-interactive-media-components}
 
-Les pages WCM qui font référence aux composants Dynamic Media et Interactive Media font référence au service de diffusion.
+Les pages WCM qui font référence aux composants Dynamic Media et Interactive Media font référence au service de diffusion.

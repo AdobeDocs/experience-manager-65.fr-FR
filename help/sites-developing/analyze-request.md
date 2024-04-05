@@ -1,6 +1,6 @@
 ---
 title: Script d’analyse des requêtes
-description: Le script d’analyse des requêtes est conçu pour faciliter l’analyse des fichiers access.log et produire un rapport lisible en vue d’un traitement ultérieur.
+description: Ce script facilite l’analyse des fichiers access.log et génère un rapport lisible pour vos activités de traitement ultérieures.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 

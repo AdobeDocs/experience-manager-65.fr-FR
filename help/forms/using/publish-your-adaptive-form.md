@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Tutoriel : publier votre formulaire adaptatif {#tutorial-publish-your-adaptive-form}
 
-![Hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
+![hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 Ce tutoriel fait partie de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et accomplir le cas d’utilisation complet du tutoriel.
 
@@ -39,7 +39,7 @@ Lorsque le formulaire adaptatif est publié comme une page AEM, la page web enti
 
 1. Connectez-vous à lʼinstance dʼauteur AEM [!DNL Forms] et recherchez le formulaire adaptatif shipping-address-add-update-form dans l’interface utilisateur dʼAEM [!DNL Forms].
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
-1. Sélectionnez le formulaire adaptatif shipping-address-add-update-form et sélectionnez **[!UICONTROL Publier]**. Une boîte de dialogue contenant les ressources liées au formulaire adaptatif s’affiche. Sélectionner **[!UICONTROL Publier]**. Le formulaire adaptatif est publié et une boîte de dialogue de réussite s’affiche.
+1. Sélectionnez le formulaire adaptatif shipping-address-add-update-form et sélectionnez **[!UICONTROL Publier]**. Une boîte de dialogue contenant les ressources liées au formulaire adaptatif s’affiche. Sélectionnez **[!UICONTROL Publier]**. Le formulaire adaptatif est publié et une boîte de dialogue de réussite s’affiche.
 1. Ouvrez le formulaire sur l’instance de publication. Le formulaire peut être complété et envoyé par l’utilisateur final.
    `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
@@ -55,11 +55,11 @@ AEM [!DNL Forms] fournit un composant, le conteneur AEM [!DNL Forms], pour incor
 
    Le site We.Retail est présent nativement dans AEM. Si vous nʼavez pas installé le site We.Retail, consultez la section [Implémentation de référence de We.Retail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour installer le site.
 
-1. Sélectionner ![properties](assets/properties.png) et sélectionnez la variable **[!UICONTROL Modifier le modèle]** dans la page de site We.Retail que vous venez de créer. Le modèle de la page s’ouvre dans un nouvel onglet du navigateur.
-1. Sélectionnez dans le **[!UICONTROL conteneur de mises en page]** et sélectionnez ![gestion des flux](assets/feedmanagement.png). Dans le **[!UICONTROL Composants autorisés]** , développez la **[!UICONTROL Général]** en accordéon, sélectionnez **[!UICONTROL Formulaire AEM]** et sélectionnez ![save_icon](assets/save_icon.svg). Le composant Conteneur AEM [!DNL Forms] est alors activé pour la page.
+1. Sélectionnez les informations de la page ![propriétés](assets/properties.png) et sélectionnez l’option **[!UICONTROL Modifier le modèle]** sur la page du site We.Retail que vous avez créée. Le modèle de la page s’ouvre dans un nouvel onglet du navigateur.
+1. Sélectionnez le champ **[!UICONTROL conteneur de disposition]**, puis sélectionnez ![gestiondesflux](assets/feedmanagement.png). Dans l’onglet **[!UICONTROL Composants autorisés]**, développez le menu en accordéon **[!UICONTROL Général]**, sélectionnez l’option **[!UICONTROL Formulaire AEM]**, puis sélectionnez ![icône_denregistrement](assets/save_icon.svg). Le composant Conteneur AEM [!DNL Forms] est alors activé pour la page.
 
-1. Ouvrez l’onglet du navigateur contenant la page AEM [!DNL Sites] ouverte à l’étape 1. Sélectionnez la variable **[!UICONTROL Faire glisser des composants ici]** et sélectionnez **+.** Dans le **[!UICONTROL Insérer un nouveau composant]** , sélectionnez **[!UICONTROL Formulaire AEM]**. Le composant **[!UICONTROL Conteneur AEM Forms]** est alors ajouté à la page.
-1. Sélectionnez la variable **[!UICONTROL Conteneur AEM Forms]** composant et sélectionnez ![configure-icon](assets/configure-icon.svg). Une boîte de dialogue contenant les propriétés du conteneur AEM [!DNL Forms] s’affiche. Dans le champ **[!UICONTROL Chemin d’accès à la ressource]**, recherchez et sélectionnez le formulaire adaptatif shipping-address-add-update-form. Sélectionner ![save_icon](assets/save_icon.svg). Le formulaire adaptatif est incorporé dans la page 
+1. Ouvrez l’onglet du navigateur contenant la page AEM [!DNL Sites] ouverte à l’étape 1. Sélectionnez le champ **[!UICONTROL Faire glisser les composants ici]**, puis sélectionnez **+.** Dans le champ **[!UICONTROL Insérer un nouveau composant]**, sélectionnez **[!UICONTROL Formulaire AEM]**. Le composant **[!UICONTROL Conteneur AEM Forms]** est alors ajouté à la page.
+1. Sélectionnez le composant **[!UICONTROL Conteneur AEM Forms]**, puis sélectionnez ![icône-de-configuration](assets/configure-icon.svg). Une boîte de dialogue contenant les propriétés du conteneur AEM [!DNL Forms] s’affiche. Dans le champ **[!UICONTROL Chemin d’accès à la ressource]**, recherchez et sélectionnez le formulaire adaptatif shipping-address-add-update-form. Sélectionnez ![icône_d’enregistrement](assets/save_icon.svg). Le formulaire adaptatif est incorporé dans la page 
 1. Publiez le formulaire adaptatif et la page [!DNL Sites]. Voici quelques points à prendre en considération :
 
    * Si vous publiez la page AEM [!DNL Sites] pour la première fois et qu’elle comprend un formulaire incorporé, publiez la page [!DNL Sites] et le formulaire incorporé.

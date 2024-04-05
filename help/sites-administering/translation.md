@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Si votre fournisseur de services de traduction ne fournit pas de connecteur pour
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du groupe projects-administrators pour utiliser les fonctionnalités de copie de langue.
+>Votre utilisateur ou utilisatrice doit être membre du groupe projects-administrators pour utiliser les fonctionnalités de copie de langue.
 
 ## Bonnes pratiques {#best-practices}
 

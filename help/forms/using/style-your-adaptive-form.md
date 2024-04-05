@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2038'
-ht-degree: 73%
+ht-degree: 88%
 
 ---
 
@@ -54,7 +54,7 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Ouvrez les propriétés du **[!UICONTROL conteneur de formulaires adaptatifs]**. Dans l’explorateur de propriétés, accédez à **[!UICONTROL De base]** > **[!UICONTROL Thème de formulaire adaptatif]**. Le champ **[!UICONTROL Thème de formulaire adaptatif]** répertorie tous les thèmes prêts à l’emploi et personnalisés. Par défaut, le thème Zone de travail est appliqué.
-1. Sélectionnez votre thème dans le champ **[!UICONTROL Thème de formulaire adaptatif]**. Par exemple, **Thème Enquête**. Sélectionner ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour que vous puissiez appliquer le thème sélectionné.
+1. Sélectionnez votre thème dans le champ **[!UICONTROL Thème de formulaire adaptatif]**. Par exemple, **Thème Enquête**. Sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour appliquer le thème sélectionné.
 
    ![Formulaire adaptatif avec le thème par défaut](assets/default-adaptive-form.png)
 
@@ -76,17 +76,17 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Sélectionnez l’image de logo dans la [!UICONTROL header] composant et sélectionnez ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. Dans le [!UICONTROL image] , sélectionnez X pour supprimer l’image de logo existante.
-   1. Sélectionner **[!UICONTROL charger]**, sélectionnez le fichier logo.png, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start).
-   1. Sélectionner le texte de l’en-tête, `We.Retail`, puis sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Modifiez le texte de l’en-tête par `we retail`. Appliquez le format Gras uniquement à `we` dans `we retail`.
+   1. Cliquez sur l’image du logo dans le composant d’[!UICONTROL en-tête], puis sur **[!UICONTROL Propriétés]** ![cmppr](assets/cmppr.png). Dans la propriété [!UICONTROL image], sélectionnez X pour supprimer l’image du logo existant.
+   1. Cliquez sur **[!UICONTROL charger]**, sélectionnez le fichier logo.png, puis choisissez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start).
+   1. Cliquez sur le texte de l’en-tête, `We.Retail`, puis sur **[!UICONTROL modifier]** ![aem_6_3_edit](assets/aem_6_3_edit.png). Modifiez le texte de l’en-tête par `we retail`. Appliquez le format Gras uniquement à `we` dans `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Supprimez le titre et ajouter un texte d’espace réservé :
 
-   1. Sélectionnez le champ ID de client et sélectionnez ![cmppr](assets/cmppr.png) propriétés.
+   1. Cliquez sur le champ identifiant de client et sur Propriétés ![cmppr](assets/cmppr.png).
    1. Copiez le contenu du champ **[!UICONTROL Titre]** dans le champ **[!UICONTROL Texte d’espace réservé]**.
-   1. Supprimer le contenu de la **[!UICONTROL Titre]** champ et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Supprimez le contenu du champ **[!UICONTROL Titre]** et cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Répétez les trois étapes précédentes pour toutes les zones de texte, la zone numérique et le champ d’adresse électronique du formulaire.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -102,16 +102,16 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 ### Création d’un thème {#create-a-theme}
 
 1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Sélectionner **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
+1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
 
    * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
    * **Nom :** spécifiez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
 
-1. Sélectionnez **[!UICONTROL Créer]**. Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Sélectionner **[!UICONTROL Ouvrir]** pour ouvrir le thème nouvellement créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM [!DNL Forms].
+1. Sélectionnez **[!UICONTROL Créer]**. Un thème est créé et une boîte de dialogue permettant d’ouvrir le formulaire à modifier s’affiche. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir le thème créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM [!DNL Forms].
 
    Pour plus d’informations sur l’utilisation de l’interface utilisateur de l’éditeur de thèmes, voir [À propos de l’éditeur de thèmes](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Sélectionner **[!UICONTROL Options du thème]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurer]**. Dans le **[!UICONTROL Aperçu du formulaire]** , sélectionnez le champ **shipping-address-add-update-form** formulaire adaptatif, sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), sélectionnez **[!UICONTROL Enregistrer]**. L’éditeur de thème est maintenant configuré pour utiliser votre propre formulaire adaptatif au lieu du formulaire adaptatif par défaut. Sélectionner **[!UICONTROL Annuler]** pour revenir à l’éditeur de thèmes.
+1. Sélectionnez **[!UICONTROL Options du thème]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurer]**. Dans le champ **[!UICONTROL Prévisualisation du formulaire]**, sélectionnez le formulaire adaptatif **shipping-address-add-update-form**, sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), puis **[!UICONTROL Enregistrer]**. L’éditeur de thème est maintenant configuré pour utiliser votre propre formulaire adaptatif au lieu du formulaire adaptatif par défaut. Sélectionnez **[!UICONTROL Annuler]** pour revenir à l’éditeur de thèmes.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -125,9 +125,9 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 
 L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En règle générale, l’en-tête contient le logo et le nom de l’organisation, le pied-de-page contient des informations de copyright, lesquelles restent identiques dans plusieurs formulaires d’une organisation. Pour appliquer un style à l’en-tête et au pied-de-page du formulaire adaptatif shipping-address-add-update-form :
 
-1. Accédez à l’option **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, sélectionnez ![bouton bascule-côté-panneau](assets/toggle-side-panel.png) Active/désactive le panneau latéral.
+1. Accédez à l’option **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, sélectionnez le panneau latéral Activer/désactiver ![toggle-side-panel](assets/toggle-side-panel.png).
 
-1. Définissez les propriétés suivantes dans le **[!UICONTROL Texte]** accordéon et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Définissez les propriétés suivantes dans l’accordéon **[!UICONTROL Texte]** et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriété | Valeur |
    |---|---|
@@ -135,10 +135,10 @@ L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un 
    | Couleur de la police | FFFFFF |
    | Taille de la police | 54 px |
 
-1. Sélectionnez la variable [!UICONTROL header] widget et sélectionnez **[!UICONTROL En-tête]**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’objet **[!UICONTROL Dimensions et position]** en accordéon, définissez la variable **[!UICONTROL Hauteur]** to `120px`, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sélectionnez le widget [!UICONTROL d’en-tête], puis sélectionnez **[!UICONTROL En-tête]**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **[!UICONTROL Dimensions et position]**, définissez la **[!UICONTROL Hauteur]** sur `120px`, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Développez l’accordéon **[!UICONTROL Arrière-plan]** du widget d’en-tête, définissez la **[!UICONTROL couleur d’arrière-plan]** sur `F6921E.`.
 
-   Survol **[!UICONTROL Image et dégradé]** > **[!UICONTROL + Ajouter]**, sélectionnez **[!UICONTROL Image]**. Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Pointez sur **[!UICONTROL Image et dégradé]** > **[!UICONTROL + Ajouter]** et sélectionnez **[!UICONTROL Image]**. Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propriété | Valeur |
    |---|---|
@@ -146,7 +146,7 @@ L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un 
    | Position | En bas à droite |
    | Répétition | Pas de répétition |
 
-1. Dans l’éditeur de thèmes, sélectionnez le logo dans l’en-tête et sélectionnez **[!UICONTROL Logo d’en-tête]**. Développez l’accordéon Dimensions et position , définissez les propriétés suivantes, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Dans l’éditeur de thème, sélectionnez le logo dans l’en-tête puis sélectionnez **[!UICONTROL Logo de l’en-tête]**. Développez l’accordéon Dimensions et position, définissez les propriétés suivantes, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -161,7 +161,7 @@ L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un 
         <li>Haut : 1,5 rem</li> 
         <li>Bas : -35 px</li> 
         <li>Gauche : 1 rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Conseil :</strong> Sélectionnez la variable <img src="assets/link.png"> icône de lien pour fournir une valeur différente à chaque champ.<br /> </p> </td> 
+       </ul> <p><strong>Conseil :</strong> appuyez sur l’icône de lien <img src="assets/link.png"> pour fournir une valeur différente à chaque champ.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Hauteur</td> 
@@ -170,13 +170,13 @@ L’en-tête et le pied-de-page donnent un aspect cohérent et distinctif à un 
     </tbody> 
    </table>
 
-1. Sélectionnez le widget de pied de page, puis sélectionnez **[!UICONTROL Pied de page]**. Développez l’objet **[!UICONTROL Contexte]** en accordéon, définissez la variable **[!UICONTROL Couleur d’arrière-plan]** to `F6921E`, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sélectionnez le widget de pied de page, puis **[!UICONTROL Pied de page]**. Développez l’accordéon **[!UICONTROL Arrière-plan]**, définissez la **[!UICONTROL Couleur d’arrière-plan]** sur `F6921E`, puis cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Application d’un style au composant de capture de données et application d’un arrière-plan au formulaire adaptatif {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct à chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour appliquer un style aux composants de capture de données :
 
-1. Sélectionnez la variable **[!UICONTROL ID de client]** et sélectionnez le champ **[!UICONTROL Widget de champ]** . Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sélectionnez le champ **[!UICONTROL ID client]**, puis l’option **[!UICONTROL Widget de champ]**. Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -232,7 +232,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </tbody> 
     </table>
 
-1. Sélectionnez la zone vide au-dessus de la zone **[!UICONTROL ID de client]** champ et sélectionnez **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionner ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
@@ -240,7 +240,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
 
 Vous pouvez utiliser un thème personnalisé pour appliquer un style identique à tous les boutons du formulaire adaptatif et un [style en ligne](/help/forms/using/inline-style-adaptive-forms.md) pour appliquer un style à un bouton spécifique. Pour appliquer un style aux boutons :
 
-1. Sélectionnez la variable **[!UICONTROL Envoyer]** et sélectionnez l’option **[!UICONTROL Bouton]** . Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Sélectionnez le bouton **[!UICONTROL Soumettre]** et choisissez l’option **[!UICONTROL Bouton]**. Définissez les propriétés suivantes et sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -301,14 +301,14 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
 
    ![style-option](assets/style-option.png)
 
-1. Sélectionnez la variable **[!UICONTROL Joindre]** et sélectionnez l’option ![aem_6_3_edit](assets/aem_6_3_edit.png)Icône Définissez les propriétés suivantes dans l’accordéon **[!UICONTROL Dimensions et position]** :
+1. Sélectionnez le bouton **[!UICONTROL Joindre]** et sélectionnez l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes dans l’accordéon **[!UICONTROL Dimensions et position]** :
 
    | Propriété | Valeur |
    |---|---|
    | Flottant | Gauche |
    | Largeur | 10% |
 
-1. Sélectionnez la variable **[!UICONTROL Preuve d&#39;adresse approuvée par le gouvernement]** et sélectionnez l’option ![aem_6_3_edit](assets/aem_6_3_edit.png)Icône Définissez les propriétés suivantes :
+1. Sélectionnez l’option **[!UICONTROL Preuve d’adresse approuvée par le gouvernement]** et sélectionnez l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
 
    <table> 
     <tbody> 
@@ -398,7 +398,7 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
     </tbody> 
    </table>
 
-1. Sélectionnez la variable **[!UICONTROL Envoyer]** et sélectionnez l’option ![aem_6_3_edit](assets/aem_6_3_edit.png) Icône Définissez les propriétés suivantes :
+1. Sélectionnez le bouton **[!UICONTROL Soumettre]**, puis choisissez l’icône ![aem_6_3_edit](assets/aem_6_3_edit.png). Définissez les propriétés suivantes :
 
    <table> 
     <tbody> 

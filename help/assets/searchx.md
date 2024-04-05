@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
    >[!NOTE]
    >
-   >Lorsque vous créez une seconde `siteadminsearchpanel`, veillez à définir une `id` pour éviter les conflits de formulaire.
+   >Lorsque vous créez un second `siteadminsearchpanel`, assurez-vous de définir une propriété `id` afin d’éviter tout conflit de formulaire.
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
@@ -54,13 +54,13 @@ En plus d’utiliser des prédicats préexistants, l’équipe de développement
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La bonne pratique consiste à copier un prédicat existant et à l’ajuster. Des exemples de prédicats se trouvent dans **/libs/cq/search/components/predicates**.
+La bonne pratique consiste à copier un prédicat existant et à l’ajuster. Les exemples de prédicats se trouvent dans **/libs/cq/search/components/predicates**.
 
-### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
+### Exemple : création d’un prédicat de propriété simple {#example-build-a-simple-property-predicate}
 
 Pour créer un prédicat de propriété :
 
-1. Créez un dossier de composants dans votre répertoire de projets, par exemple : **/apps/weretail/components/titlepredicate**.
+1. Créez un dossier de composant dans votre répertoire de projets, par exemple **/apps/weretail/components/titlepredicate**.
 1. Ajoutez **content.xml** :
 
    ```xml
@@ -153,7 +153,7 @@ Pour créer un prédicat de propriété :
 
 Pour créer un prédicat de groupe :
 
-1. Créez un dossier de composants dans votre répertoire de projets, par exemple : **/apps/weretail/components/picspredicate**.
+1. Créez un dossier de composants dans votre répertoire de projets, par exemple **/apps/weretail/components/picspredicate**.
 1. Ajoutez **content.xml** :
 
    ```xml
