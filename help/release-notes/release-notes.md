@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
-workflow-type: ht
-source-wordcount: '3688'
-ht-degree: 100%
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+workflow-type: tm+mt
+source-wordcount: '3735'
+ht-degree: 99%
 
 ---
 
@@ -462,6 +462,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le lot ```org.apache.servicemix.bundles.rhino``` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon ils ne seront pas exécutés et génèreront une erreur d’exécution.
 
+* L’installation du balisage du contenu prêt à l’emploi par le biais d’un module de mise à jour officiel (y compris les Service Packs, les Service Packs de sécurité, les Feature Packs étendus, les Cumulative Feature Packs, les correctifs etc.) réinitialise la propriété languages de la propriété `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6520}
 

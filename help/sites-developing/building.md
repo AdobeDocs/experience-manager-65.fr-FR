@@ -8,10 +8,10 @@ content-type: reference
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 100%
+source-wordcount: '868'
+ht-degree: 95%
 
 ---
 
@@ -199,4 +199,4 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 
 >[!CAUTION]
 >
->Installer un pack de services rétablit les propriétés de langues du nœud /content/cq:tags par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
+>L’installation du balisage du contenu prêt à l’emploi par le biais d’un module de mise à jour officiel (y compris les Service Packs, les Service Packs de sécurité, les Feature Packs étendus, les Cumulative Feature Packs, les correctifs etc.) réinitialise la propriété languages de la propriété `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
