@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '4520'
 ht-degree: 98%
@@ -141,7 +143,7 @@ Les valeurs recommandées sont les suivantes :
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-Dans AEM 6.3, les deux paramètres ci-dessus sont préconfigurés prêts à l’emploi et peuvent être conservés via les paramètres OSGi QueryEngineSettings.
+Dans AEM 6.3, les deux paramètres ci-dessus sont préconfigurés prêts à l’emploi et peuvent être conservés dans les paramètres OSGi QueryEngineSettings.
 
 Plus d’informations disponibles sous : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -404,7 +406,7 @@ Problèmes possibles et solutions :
 
 ### Pré-extraction de texte des fichiers binaires {#text-pre-extraction-of-binaries}
 
-La pré-extraction de texte est le processus d’extraction et de traitement de texte à partir de binaires, directement à partir de l’entrepôt de données par le biais d’un processus isolé, et d’exposition directe du texte extrait aux réindexations/réindexation ultérieures des index Oak.
+La pré-extraction du texte est le processus d’extraction et de traitement du texte des binaires, directement à partir du magasin de données par le biais d’un processus isolé, et d’exposition directe du texte extrait aux réindexations ultérieures des index Oak.
 
 * La pré-extraction de texte Oak est recommandée pour l’indexation ou la réindexation des index Lucene sur les référentiels contenant de grands volumes de fichiers (binaires) qui comportent du texte extractible (par exemple, des PDF, des documents Word, des PPT, TXT, etc.) pouvant faire l’objet d’une recherche en texte intégral via des index Oak déployés ; par exemple, `/oak:index/damAssetLucene`.
 * La pré-extraction de texte ne bénéficie qu’à l’indexation/la réindexation des index Lucene et NON PAS aux index de propriété Oak, étant donné que les index de propriété n’extraient pas de texte à partir de fichiers binaires.

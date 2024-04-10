@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: deploying
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 39%
@@ -18,9 +20,9 @@ ht-degree: 39%
 
 ## Démarrage de Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
 
-Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script démarre l’instance installée dans *&lt;cq-installation>* répertoire .
+Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script démarre l’instance installée dans *&lt;cq-installation>* répertoire.
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et ajuster l’instance Adobe Experience Manager (AEM).
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et régler l’instance Adobe Experience Manager (AEM).
 
 <table>
  <tbody>
@@ -65,15 +67,15 @@ Ces deux versions prennent en charge une liste de variables d’environnement qu
 
 >[!CAUTION]
 >
->Certains modes d’exécution, dont l’auteur et la publication, doivent être définis avant le premier AEM de démarrage et ne peuvent pas être modifiés par la suite. Avant de configurer une instance d’AEM utilisée en production, voir [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
+>Certains modes d’exécution, dont les modes de création et de publication, doivent être définis avant le premier démarrage d’AEM et ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM utilisée en production, voir [documentation modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus de détails.
 
-### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
+### Exemple de script start.bat de la plateforme Windows {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Exemple de script de démarrage de plateforme UNIX® {#unix-platform-start-script-example}
+### Exemple de script de démarrage de la plateforme UNIX® {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -92,7 +94,7 @@ Pour arrêter AEM, effectuez l’une des opérations suivantes :
    * Si vous avez démarré AEM à partir d’un script ou d’une ligne de commande, appuyez sur **Ctrl + C** pour arrêter le serveur.
    * Si vous avez utilisé le script start sous UNIX®, vous devez utiliser le script stop pour arrêter AEM.
 
-* Si vous avez commencé AEM en double-cliquant sur le fichier jar, cliquez sur le bouton **Activé** dans la fenêtre de démarrage (le bouton devient alors **Off**) pour arrêter le serveur.
+* Si vous avez démarré AEM en double-cliquant sur le fichier jar, cliquez sur **Le** sur la fenêtre de démarrage (le bouton devient alors **Désactivé**) pour arrêter le serveur.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -106,15 +108,15 @@ Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. 
 ./stop
 ```
 
-### Exemple de script stop.bat pour la plateforme Windows {#windows-platform-stop-bat-script-example}
+### Exemple de script stop.bat de plateforme Windows {#windows-platform-stop-bat-script-example}
 
 ```shell
 ./stop.bat
 ```
 
-Si vous souhaitez uniquement préconfigurer le référentiel (sans le relocaliser), il vous suffit d’effectuer les opérations suivantes :
+Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer), il vous suffit de :
 
-* Extract `repository.xml` à l’emplacement requis.
+* Extraire `repository.xml` à l’emplacement requis ;
 
 * mettre à jour `repository.xml` selon les besoins ;
 

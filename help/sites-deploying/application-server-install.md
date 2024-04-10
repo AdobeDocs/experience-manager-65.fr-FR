@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Deploying
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 98%
@@ -176,7 +178,7 @@ Cette opération utilise une disposition de serveur simple avec uniquement un se
    * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
    * Recompressez le fichier Web.xml.
 
-* Déployer AEM fichier war en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
+* Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut).
 * L’installation peut prendre du temps...
 * Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la section Description générale (par exemple, en suivant le fichier error.log).
 * Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.

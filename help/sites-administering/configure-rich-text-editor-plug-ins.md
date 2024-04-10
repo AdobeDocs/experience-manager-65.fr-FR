@@ -4,7 +4,9 @@ description: Apprenez à configurer les modules externes d’éditeur de texte e
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 99%
@@ -328,7 +330,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 >[!NOTE]
 >
->Si une balise block, par exemple, une &lt;hr> , ne peut pas être affectée à un paragraphe, il ne s’agit pas d’un cas d’utilisation valide pour un module externe paraformat.
+>Si une balise block, par exemple, une balise &lt;hr> , ne peut pas être affecté à un paragraphe, ce n’est pas un cas d’utilisation valide pour un plug-in paraformat.
 
 Lorsque le plug-in Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs et autrices, procédez comme suit :
 

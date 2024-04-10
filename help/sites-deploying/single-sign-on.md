@@ -5,10 +5,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
-feature: Configuring
+feature: Security
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 40%
@@ -19,7 +20,7 @@ ht-degree: 40%
 
 L’authentification unique (SSO) permet à une personne d’accéder à plusieurs systèmes après avoir fourni une seule fois des informations d’identification d’authentification (telles qu’un nom d’utilisateur ou d’utilisatrice et un mot de passe). Un système distinct (appelé authentificateur approuvé) effectue l’authentification et fournit à Experience Manager les informations d’identification de l’utilisateur ou utilisatrice. Experience Manager vérifie les autorisations d’accès et les applique pour l’utilisateur ou l’utilisatrice (c’est-à-dire, détermine les ressources auxquelles l’utilisateur ou l’utilisatrice est autorisé à accéder).
 
-Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résultats de l’authentification fournis par l’authentificateur de confiance. Le gestionnaire d’authentification SSO recherche un identificateur SSO (SSID) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
+Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résultats de l’authentification fournis par l’authentificateur de confiance. Le gestionnaire d’authentification SSO recherche un identifiant SSO (SSID) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
 
 1. En-têtes de requête
 1. Cookies
@@ -27,20 +28,20 @@ Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.i
 
 Lorsqu’une valeur est trouvée, la recherche est terminée et cette valeur est utilisée.
 
-Configurez les deux services suivants pour reconnaître le nom de l’attribut qui stocke le SSID :
+Configurez les deux services suivants pour reconnaître le nom de l&#39;attribut qui stocke le SSID :
 
-* Module de connexion.
+* Le module de connexion.
 * Service d’authentification SSO.
 
-Indiquez le même nom d’attribut pour les deux services. L’attribut est inclus dans les `SimpleCredentials` fournies dans `Repository.login`. La valeur de l’attribut n’est pas pertinente et ignorée, la simple présence de l’attribut est importante et vérifiée.
+Spécifiez le même nom d’attribut pour les deux services. L’attribut est inclus dans les `SimpleCredentials` fournies dans `Repository.login`. La valeur de l’attribut n’est pas pertinente et est ignorée. La simple présence de cet attribut est importante et vérifiée.
 
-## Configuration d’authentification unique {#configuring-sso}
+## Configuration de la connexion unique {#configuring-sso}
 
-Pour configurer l’authentification unique pour une instance AEM, vous devez configurer la variable [Gestionnaire d’authentification SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Pour configurer la connexion unique pour une instance AEM, configurez le [Gestionnaire d’authentification SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+1. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et pour connaître les pratiques recommandées.
 
-   Par exemple, pour l’ensemble NTLM :
+   Par exemple, pour NTLM, définissez :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
    * **Noms d’en -tête** : `LOGON_USER`
@@ -66,26 +67,26 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 >
 >Assurez-vous que les utilisateurs ne peuvent pas accéder directement à AEM si SSO est configuré.
 >
->En obligeant les utilisateurs à passer par un serveur web qui exécute l’agent de votre système SSO, il est garanti qu’aucun utilisateur ne peut envoyer directement un en-tête, un cookie ou un paramètre qui amènera l’utilisateur à être approuvé par AEM, car l’agent filtrera ces informations si elles sont envoyées de l’extérieur.
+>En demandant aux utilisateurs de passer par un serveur web qui exécute l’agent de votre système SSO, vous vous assurez qu’aucun utilisateur ne peut envoyer directement un en-tête, un cookie ou un paramètre qui amènera l’utilisateur à être approuvé par AEM, car l’agent filtrera ces informations si elles sont envoyées de l’extérieur.
 >
->Tout utilisateur qui peut accéder directement à votre instance AEM sans passer par le serveur web pourra agir comme n’importe quel utilisateur en envoyant l’en-tête, le cookie ou le paramètre si les noms sont connus.
+>Tout utilisateur pouvant accéder directement à votre instance AEM sans passer par le serveur web pourra agir comme n’importe quel utilisateur en envoyant l’en-tête, le cookie ou le paramètre si les noms sont connus.
 >
->Assurez-vous également que, parmi les en-têtes, les cookies et les noms de paramètres de requête, vous ne configurez que celui qui est requis pour votre configuration SSO.
+>Assurez-vous également que des en-têtes, des cookies et des noms de paramètres de requête, vous ne configurez que celui qui est requis pour votre configuration SSO.
 >
 
 >[!NOTE]
 >
->L’authentification unique est souvent utilisée avec [LDAP](/help/sites-administering/ldap-config.md).
+>L’authentification SSO est souvent utilisée avec [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Si vous utilisez également la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) avec Microsoft® Internet Information Server (IIS), une configuration supplémentaire est requise dans :
+>Si vous utilisez également [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) avec Microsoft® Internet Information Server (IIS), une configuration supplémentaire est requise dans :
 >
 >* `disp_iis.ini`
 >* IIS
 >
 >Dans `disp_iis.ini`, définissez les éléments suivants :
->(voir [installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
+>(voir [installation du Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
@@ -94,10 +95,10 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 >
 >* Désactivez **l’accès anonyme**.
 >
->* enable **Authentification Windows intégrée**
+>* activer **Authentification Windows intégrée**
 >
 
-Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide de la variable **Authentificateur** de la console Felix, par exemple :
+Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide du **Authentificateur** de la console Felix ; par exemple :
 
 `http://localhost:4502/system/console/slingauth`
 
@@ -153,11 +154,11 @@ Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-t�
 
 >[!NOTE]
 >
->Lors de l’utilisation du paramètre de requête dans un navigateur, vous ne voyez qu’une partie du HTML, sans CSS. Cela est dû au fait que toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
+>Lors de l’utilisation du paramètre de requête dans un navigateur, vous ne voyez qu’une partie du HTML, sans CSS. En effet, toutes les requêtes du HTML sont effectuées sans le paramètre de requête .
 
-## Suppression de liens AEM de déconnexion {#removing-aem-sign-out-links}
+## Suppression des liens de déconnexion AEM {#removing-aem-sign-out-links}
 
-Lors de l’utilisation de l’authentification unique, la connexion et la déconnexion sont gérées en externe, de sorte que AEM liens de déconnexion ne sont plus applicables et doivent être supprimés.
+Lors de l’utilisation de la connexion unique, la connexion et la déconnexion sont gérées en externe, de sorte que les liens de déconnexion AEM ne s’appliquent plus et doivent être supprimés.
 
 Le lien de déconnexion sur l’écran de bienvenue peut être supprimé en procédant comme suit.
 

@@ -8,10 +8,12 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Deploying
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '706'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +81,7 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un magasin de données personnalisé est utilisé. La valeur par défaut est false.
 
-1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser et modifiez le fichier pour définir les options de configuration. Pour plus d’informations, voir [Configuration des entrepôts de noeuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
+1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser et modifiez le fichier pour définir les options de configuration. Pour plus d’informations, consultez [Configuration des magasins de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
 
 1. Démarrez le jar AEM 6 avec une sauvegarde du stockage MongoDB en exécutant :
 

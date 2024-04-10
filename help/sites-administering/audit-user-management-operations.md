@@ -1,6 +1,6 @@
 ---
 title: Contrôle des opérations de gestion des utilisateurs dans Adobe Experience Manager
-description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans Adobe Experience Manager.
+description: Découvrez comment auditer les opérations de gestion des utilisateurs dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,7 +9,8 @@ docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 22%
@@ -20,22 +21,22 @@ ht-degree: 22%
 
 ## Présentation {#introduction}
 
-AEM a introduit la possibilité de consigner les modifications des autorisations afin que vous puissiez les contrôler ultérieurement.
+AEM vous offre désormais la possibilité de consigner les modifications d’autorisation afin que vous puissiez les auditer ultérieurement.
 
 Cette amélioration permet de contrôler la création, la lecture, la mise à jour et la suppression des autorisations et des affectations collectives des utilisateurs. Plus précisément, il consigne :
 
 * Création d’un utilisateur
-* Un utilisateur ajouté à un groupe
+* Un utilisateur en cours d’ajout à un groupe
 * Modifications des autorisations d’un utilisateur ou d’un groupe existant
 
-Par défaut, les entrées sont écrites dans la variable `error.log` fichier . Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Pour plus d’informations sur la manière de procéder, reportez-vous au paragraphe ci-dessous.
+Par défaut, les entrées sont écrites dans le `error.log` fichier . Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Pour plus d’informations sur la procédure à suivre, consultez le paragraphe ci-dessous.
 
 ## Redirection de la sortie vers un fichier journal distinct {#redirecting-the-output-to-a-separate-log-file}
 
-Pour rediriger la sortie de journalisation vers un fichier journal distinct, créez une **Enregistreur de journalisation Apache Sling** configuration. Utilisons `useraudit.log` comme nom du fichier distinct dans l’exemple ci-dessous.
+Pour rediriger la sortie de la journalisation vers un fichier journal distinct, créez un **Enregistreur de journalisation Apache Sling** configuration. Utilisons `useraudit.log` comme nom du fichier distinct dans l’exemple ci-dessous.
 
 1. Accédez à la console Web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
-1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur &quot;+&quot; dans la partie droite de l’entrée pour créer une configuration de fabrique.
+1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Appuyez ensuite sur le signe « + » sur le côté droit de l’entrée pour créer une configuration de fabrique.
 1. Créez la configuration suivante :
 
    * **Niveau de journal :** Informations
@@ -43,11 +44,11 @@ Pour rediriger la sortie de journalisation vers un fichier journal distinct, cr�
    * **Modèle de message :** conservez la valeur par défaut
    * **Enregistreur :** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Pour entrer les deux enregistreurs dans le **Enregistreur** , vous devez saisir le nom du premier champ, puis créer un autre champ en appuyant sur le bouton &quot;+&quot; et en saisissant le nom du second journal.
+   Pour accéder aux deux enregistreurs dans le **Enregistreur** , vous devez saisir le nom du premier, puis créer un autre champ en appuyant sur le bouton « + » et en saisissant le nom du second enregistreur.
 
 ## Exemple de sortie {#example-output}
 
-Si la configuration est correcte, la sortie doit se présenter comme suit :
+Si elle est configurée correctement, la sortie doit se présenter comme suit :
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -81,7 +82,7 @@ Si la configuration est correcte, la sortie doit se présenter comme suit :
 
 ## Interface utilisateur classique {#classic-ui}
 
-Dans l’interface utilisateur classique, les informations sur les opérations CRUD enregistrées dans le journal d’audit relatives à l’ajout et la suppression d’utilisateurs sont limitées à l’identifiant de l’utilisateur concerné et au moment où la modification s’est produite.
+Dans l’interface utilisateur classique, les informations sur les opérations CRUD enregistrées dans le journal d’audit relatives à l’ajout et à la suppression d’utilisateurs sont limitées à l’identifiant de l’utilisateur affecté et au moment où la modification s’est produite.
 
 Par exemple :
 

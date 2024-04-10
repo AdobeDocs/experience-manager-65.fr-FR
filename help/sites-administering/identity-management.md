@@ -1,6 +1,6 @@
 ---
 title: Identity Management
-description: Découvrez les rouages internes de la gestion des identités dans AEM.
+description: Découvrez les rouages internes d’Identity Management dans AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 83%
+ht-degree: 99%
 
 ---
 
@@ -59,11 +61,11 @@ Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut
 Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![Exemple de formulaire d&#39;enregistrement](assets/registerform.png)
+![Exemple de formulaire d’enregistrement.](assets/registerform.png)
 
-Lors de l’envoi de la demande, la page de profil s’affiche lorsque l’utilisateur peut fournir des détails personnels.
+Lors de l’envoi de la demande, la page de profil s’affiche pour que l’utilisateur ou l’utilisatrice puisset fournir des détails personnels.
 
-![Exemple de page de profil](assets/profilepage.png)
+![Exemple de page de profil.](assets/profilepage.png)
 
 Le nouveau compte est également visible dans la [console Utilisateurs](/help/sites-administering/security.md).
 
@@ -73,11 +75,11 @@ Le composant de connexion peut être utilisé pour collecter les informations de
 
 Les champs standard **Nom d’utilisateur** et **Mot de passe**, avec un bouton **Connexion**, s’affichent à l’intention du visiteur afin de lui permettre d’activer le processus de connexion lors de la saisie des informations d’identification.
 
-Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’aide de la variable **Se connecter** dans la barre d’outils de Geometrixx, qui utilise la page :
+Par exemple, les utilisateurs et utilisatrices peuvent se connecter ou créer un compte à l’aide de l’option **Se connecter** de la barre d’outils Geometrixx, qui utilise la page :
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![Exemple de page de connexion](assets/login.png)
+![Exemple de page de connexion.](assets/login.png)
 
 ## Déconnexion {#logging-out}
 
@@ -91,35 +93,35 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec la fonction `admin` compte :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
+Vous pouvez afficher un autre profil à l’aide du [contexte client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
 
-1. Ouvrez une page ; par exemple, la page de Geometrixx :
+1. Ouvrez une page. Par exemple, la page Geometrixx :
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche, par exemple, celui de l’administrateur.
+1. Cliquez sur **Mon profil** dans le coin supérieur droit. Le profil de votre compte actuel s’affiche, en tant par exemple qu’administrateur ou administratrice.
 1. Appuyez sur **Control-Alt-C** pour ouvrir le contexte client.
 1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Charger un profil**.
 
-   ![Icône Chargement d’un profil](do-not-localize/loadprofile.png)
+   ![Icône Charger un profil.](do-not-localize/loadprofile.png)
 
-1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue, par exemple : **Alison Parker**.
+1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue : par exemple, **Alison Parker**.
 1. Cliquez sur **OK**.
 1. Cliquez de nouveau sur **Mon profil**. Le formulaire sera mis à jour avec les détails d’Alison.
 
-   ![Exemple de profil d’Alison](assets/profilealison.png)
+   ![Exemple de profil d’Alison.](assets/profilealison.png)
 
 1. Vous pouvez désormais utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les détails.
 
 ## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
 
-Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ &quot;Couleur préférée&quot; au profil de Geometrixx :
+Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ « Couleur préférée » au profil Geometrixx :
 
 1. Dans la console Sites web, accédez à Site Geometrixx Outdoors > Français > Utilisateur > Mon profil.
-1. Double-cliquez sur le **Mon profil** pour l’ouvrir en vue de la modifier.
+1. Double-cliquez sur la page **Mon profil** pour l’ouvrir afin de la modifier.
 1. Sur l’onglet **Composants** de Sidekick, développez la section **Formulaire**.
 1. Faites glisser un composant **Liste déroulante** du Sidekick vers le formulaire, juste en dessous du champ **À propos de moi**.
 1. Double-cliquez sur le composant **Liste déroulante** pour afficher la boîte de dialogue pour la configuration et saisissez les éléments suivants :
@@ -134,21 +136,21 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
    La prochaine fois que vous affichez un profil, vous pouvez choisir une couleur préférée :
 
-   ![Champ d’exemple de couleur préféré d’Alison Parker](assets/aparkerfavcolour.png)
+   ![Champ d’exemple de couleur préférée d’Alison Parker.](assets/aparkerfavcolour.png)
 
    Le champ est enregistré dans la section **profil** du compte d’utilisateur approprié :
 
-   ![Données d’Alison Parker dans CRXDE](assets/aparkercrxdelite.png)
+   ![Données d’Alison Parker dans CRXDE.](assets/aparkercrxdelite.png)
 
 ## États du profil {#profile-states}
 
-Plusieurs cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) se trouve dans une *état spécifique* ou pas.
+Différents cas d’utilisation nécessitent de savoir si un utilisateur ou une utilisatrice (ou plutôt son profil) est dans un *état spécifique* ou non.
 
 Cela implique de définir une propriété appropriée dans le profil utilisateur de manière à :
 
 * être visible et accessible pour l’utilisateur ou l’utilisatrice
 * définir deux états pour chaque propriété
-* vous permet de basculer entre les deux états définis.
+* permet de basculer entre les deux états définis
 
 Pour ce faire, procédez comme suit :
 
@@ -160,7 +162,7 @@ Pour ce faire, procédez comme suit :
 
   Permet de gérer les actions associées aux états.
 
-Plusieurs états peuvent être définis, par exemple en Geometrixx :
+Différents états peuvent être définis. Dans Geometrixx, par exemple, il s’agit des états suivants :
 
 * Abonnement (ou désabonnement) aux notifications des newsletters ou aux fils de commentaires
 * Ajout et suppression d’une connexion à un ami
@@ -186,7 +188,7 @@ Les profils sont stockés dans le référentiel de contenu, au sein du [compte d
 
 Le profil se trouve sous `/home/users/geometrixx` :
 
-![Profils affichés dans CRXDE](assets/chlimage_1-138.png)
+![Profils affichés dans CRXDE.](assets/chlimage_1-138.png)
 
 Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*.
 
@@ -203,7 +205,7 @@ Si cet accès n’est pas adapté à votre installation, vous pouvez modifier ce
 
 À cet effet, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
-![Gestion des listes ACL dans CRXDE](assets/aclmanager.png)
+![Gestion des listes ACL dans CRXDE.](assets/aclmanager.png)
 
 ## Composants de profil {#profile-components}
 
@@ -218,22 +220,22 @@ Ce composant vous fournit deux champs pour :
 
 Avec les paramètres par défaut, le composant apparaîtra comme suit :
 
-![Boîte de dialogue Vérifier le mot de passe](assets/dc_profiles_checkedpassword.png)
+![Boîte de dialogue Vérifier le mot de passe.](assets/dc_profiles_checkedpassword.png)
 
 ### Photo de l’avatar du profil {#profile-avatar-photo}
 
 Ce composant fournit à l’utilisateur ou l’utilisatrice un mécanisme permettant de sélectionner et de charger un fichier photo d’avatar.
 
-![Sélecteur d’avatar](assets/dc_profiles_avatarphoto.png)
+![Sélecteur d’avatar.](assets/dc_profiles_avatarphoto.png)
 
 ### Nom détaillé du profil {#profile-detailed-name}
 
 Ce composant permet à l’utilisateur ou l’utilisatrice de saisir un nom détaillé.
 
-![Boîte de dialogue de nom détaillé](assets/dc_profiles_detailedname.png)
+![Boîte de dialogue de nom détaillé.](assets/dc_profiles_detailedname.png)
 
 ### Sexe du profil {#profile-gender}
 
 Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son sexe.
 
-![Sélecteur de genre](assets/dc_profiles_gender.png)
+![Sélecteur de genre.](assets/dc_profiles_gender.png)

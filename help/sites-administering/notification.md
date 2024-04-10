@@ -1,16 +1,18 @@
 ---
 title: Configurer les notifications par e-mail
-description: Découvrez comment configurer les notifications électroniques dans Adobe Experience Manager.
+description: Découvrez comment configurer les notifications par e-mail dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 89%
 
 AEM envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 
-* ont souscrit aux événements de page, par exemple la modification ou la réplication ; La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
+* Ont souscrit à des événements de page, par exemple une modification ou une réplication. La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
 
 * Ont souscrit aux événements de forum.
 * Doivent effectuer une opération dans un workflow. La section [Étape de participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification par e-mail dans un workflow.
@@ -33,11 +35,11 @@ Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+>Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et pour connaître les pratiques recommandées.
 
 ## Configurer le service de messagerie {#configuring-the-mail-service}
 
-Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
+Pour qu’AEM puisse envoyer des courriers électroniques, le **service de messagerie Day CQ** doit être correctement configuré. Vous pouvez afficher la configuration dans la console Web. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et pour connaître les pratiques recommandées.
 
 Les contraintes suivantes s’appliquent :
 
@@ -86,7 +88,7 @@ Lorsque vous recevez des notifications électroniques de workflow, l’adresse �
 
 La configuration par défaut se présente comme suit dans la console web :
 
-![Fenêtre de configuration du service de notification électronique de workflow Day CQ](assets/chlimage_1-277.png)
+![Fenêtre de configuration du service de notification par e-mail de workflow Day CQ](assets/chlimage_1-277.png)
 
 ### Modèles d’e-mail pour les notifications de page {#email-templates-for-page-notification}
 
@@ -231,7 +233,7 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 * `${payload.type}`, type de payload
 * `${payload.path}`, chemin d’accès au payload
-* `${host.prefix}`, préfixe d’hôte, par exemple : `http://localhost:4502`
+* `${host.prefix}`, préfixe d’hôte, par exemple : `http://localhost:4502`
 
 ### Ajouter un modèle d’e-mail pour une nouvelle langue {#adding-an-email-template-for-a-new-language}
 
@@ -259,7 +261,7 @@ Lorsque des collections dans AEM Assets sont partagées ou non partagées, les 
 
 ## Configuration d’OAuth {#setting-up-oauth}
 
-AEM offre la prise en charge d’OAuth2 pour son service de messagerie intégré, afin de permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée.
+AEM offre la prise en charge d’OAuth2 pour son service de messagerie intégré, afin de permettre aux organisations de se conformer aux exigences en matière de messagerie sécurisée.
 
 Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme indiqué ci-dessous.
 
@@ -276,7 +278,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
 1. Une fois que vous avez ajouté les portées, revenez à **Informations d’identification** dans le menu de gauche, puis accédez à **Création d’informations d’identification** - **ID client OAuth** - **Application de bureau**.
-1. Une nouvelle fenêtre s’ouvre. Elle contient l’identifiant du client et le secret du client.
+1. Une nouvelle fenêtre s’ouvre, contenant l’identifiant du client et le secret du client.
 1. Enregistrez ces informations d’identification.
 
 **Configurations côté AEM**
@@ -288,17 +290,17 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
 Tout d’abord, configurez le service de messagerie :
 
 1. Ouvrez la console web AEM en accédant à `http://serveraddress:serverport/system/console/configMgr`.
-1. Recherchez, puis cliquez sur **Service de messagerie Day CQ**
+1. Recherchez **Service de messagerie Day CQ**, puis cliquez dessus.
 1. Ajoutez les paramètres suivants :
    * Nom d’hôte du serveur SMTP : `smtp.gmail.com`
    * Port du serveur SMTP : `25` ou `587`, selon vos exigences
    * Cochez les cases correspondant à **SMPT utilise StarTLS** et **SMTP exige StarTLS**.
    * Vérifiez le **Flux OAuth** et cliquez sur **Enregistrer**.
 
-Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-dessous :
+Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-dessous :
 
 1. Ouvrez la console web AEM en accédant à `http://serveraddress:serverport/system/console/configMgr`.
-1. Recherchez, puis cliquez sur **Fournisseur SMTP OAuth2 CQ Mailer**
+1. Recherchez **Fournisseur SMTP OAuth2 CQ Mailer**, puis cliquez dessus.
 1. Renseignez les informations requises comme suit :
    * URL d’autorisation : `https://accounts.google.com/o/oauth2/auth`
    * URL du jeton : `https://accounts.google.com/o/oauth2/token`
@@ -312,7 +314,7 @@ Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-des
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![Fenêtre de configuration du fournisseur SMTP Oauth2 du courrier CQ](assets/oauth-smtpprov2.png)
+![Fenêtre de configuration du fournisseur SMTP OAuth2 CQ Mailer](assets/oauth-smtpprov2.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 
@@ -340,9 +342,9 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
 
-   ![Le nouveau bouton d’enregistrement lors de la configuration de Microsoft Outlook](assets/oauth-outlook1.png)
+   ![Le nouveau bouton d’enregistrement lors de la configuration de Microsoft Outlook](assets/oauth-outlook1.png)
 
-1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
+1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**.
 1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
 1. Accédez à **Ajouter une autorisation** - **Autorisation graphique** - **Autorisations déléguées**
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
@@ -358,7 +360,7 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes à l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
 1. Appuyez sur **Aperçu** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (locataire)** pour une utilisation ultérieure.
 
-Pour effectuer une récapitulation, vous devez disposer des informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
+Pour résumer, vous aurez besoin des informations suivantes pour configurer OAuth2 pour le service de messagerie côté AEM :
 
 * L’URL d’authentification, qui sera créée avec l’identifiant du client. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * L’URL du jeton, qui sera construite avec l’ID du locataire. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
@@ -371,7 +373,7 @@ Pour effectuer une récapitulation, vous devez disposer des informations suivant
 Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 1. Accédez à la console web de votre instance locale en accédant à `http://serveraddress:serverport/system/console/configMgr`.
-1. Recherchez et cliquez sur **Service de messagerie Day CQ**
+1. Recherchez le **service de messagerie Day CQ**, puis cliquez dessus.
 1. Ajoutez les paramètres suivants :
    * Nom d’hôte du serveur SMTP : `smtp.office365.com`
    * Utilisateur SMTP : votre nom d’utilisateur au format e-mail
@@ -379,7 +381,7 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
    * Port du serveur SMTP : `25` ou `587` selon vos exigences
    * Cochez les cases correspondant à **SMPT utilise StarTLS** et **SMTP exige StarTLS**.
    * Vérifiez le **Flux OAuth** et cliquez sur **Enregistrer**.
-1. Recherchez, puis cliquez sur **Fournisseur SMTP OAuth2 CQ Mailer**
+1. Recherchez le **fournisseur OAuth2 SMTP CQ Mailer**, puis cliquez dessus.
 1. Renseignez les informations requises comme suit :
    * Renseignez l’URL d’autorisation, l’URL du jeton et l’URL du jeton d’actualisation en les construisant comme décrit dans la section [la fin de cette procédure](#microsoft-outlook).
    * ID client et secret client : configurez ces champs avec les valeurs que vous avez récupérées comme décrit ci-dessus.
@@ -395,7 +397,7 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![Configuration SMTP OAuth2 du courrier CQ terminée](assets/oauth-outlook-smptconfig.png)
+![Configuration SMTP OAuth2 CQ Mailer terminée](assets/oauth-outlook-smptconfig.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 
@@ -405,7 +407,7 @@ Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant com
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Appuyez sur l’icône Lecture à gauche des composants.
 
-![Fragment de liste de composants contenant OAuthCodeGenerateServlet et OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
+![Un fragment de code de la liste des composants contenant OAuthCodeGenerateServlet et OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Enfin, confirmez la configuration en procédant comme suit :
 

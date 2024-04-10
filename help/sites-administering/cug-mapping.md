@@ -1,22 +1,23 @@
 ---
-title: Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5
-description: Découvrez comment fonctionne le mappage de groupes d’utilisateurs personnalisés dans Adobe Experience Manager.
+title: Mappage d’un groupe d’utilisateurs et d’utilisatrices personnalisé dans AEM 6.5
+description: Découvrez comment fonctionne le mappage d’un groupe d’utilisateurs et d’utilisatrices personnalisé dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
-feature: Security
+feature: Administering
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5 {#custom-user-group-mapping-in-aem}
+# Mappage d’un groupe d’utilisateurs et d’utilisatrices personnalisé dans AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Comparaison du contenu JCR associé au groupe d’utilisateurs personnalisé {#comparison-of-jcr-content-related-to-cug}
 

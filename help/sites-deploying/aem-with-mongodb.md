@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Deploying
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '6185'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -177,13 +179,13 @@ Où :
 Le serveur MongoDB auquel AEM doit se connecter. Les connexions sont établies avec tous les membres connus de l’ensemble de répliques par défaut. Si MongoDB Cloud Manager est utilisé, la sécurité du serveur est activée. Par conséquent, la chaîne de connexion doit contenir un nom d’utilisateur et un mot de passe appropriés. Les versions non professionnelles de MongoDB prennent uniquement en charge l’authentification par nom d’utilisateur et mot de passe. Pour plus d’informations sur la syntaxe de la chaîne de connexion, consultez la [documentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Le nom de la base de données. La valeur par défaut pour AEM est `aem-author`.
+Le nom de la base de données. Celui par défaut pour AEM est `aem-author`.
 
 * `customBlobStore`
-Si le déploiement stocke les fichiers binaires dans la base de données, ils feront partie du jeu de travail. Pour cette raison, il est conseillé de ne pas stocker de fichiers binaires dans MongoDB, en préférant une banque de données alternative telle qu’une `FileSystem` banque de données sur un NAS.
+Si le déploiement stocke les fichiers binaires dans la base de données, ils feront partie du jeu de travail. Pour cette raison, il est conseillé de ne pas stocker les fichiers binaires dans MongoDB et de choisir un autre magasin de données tel qu’un magasin de données `FileSystem` sur un NAS.
 
 * `cache`
-Taille du cache en Mo. Cet espace est réparti entre les différents caches utilisés dans la variable `DocumentNodeStore`. La valeur par défaut est 256 Mo. Toutefois, les performances de lecture Oak bénéficient d’un cache plus grand.
+Taille du cache en Mo. Cet espace est réparti entre les différents caches utilisés dans le `DocumentNodeStore`. La valeur par défaut est 256 Mo. Toutefois, les performances de lecture Oak bénéficient d’un cache plus grand.
 
 * `blobCacheSize`
 Les blobs fréquemment utilisés peuvent être mis en cache par AEM pour éviter de les récupérer dans le magasin de données. Cela a un impact plus important sur les performances, en particulier lors du stockage des blobs dans la base de données MongoDB. Tous les magasins de données basés sur le système de fichiers bénéficient du cache disque au niveau du système d’exploitation.
@@ -206,20 +208,20 @@ cacheSizeInMB=128
 Où :
 
 * `minRecordLength`
-Taille en octets. Les fichiers binaires inférieurs ou égaux à cette taille sont stockés dans le magasin de nœuds de document. Le contenu du fichier binaire est stocké à la place de l’ID du blob. Si les fichiers binaires sont supérieurs à cette taille, l’ID du fichier binaire est stocké en tant que propriété du document dans la collection de nœuds. Et le corps du binaire est stocké dans la variable `FileDataStore` sur le disque. La taille de bloc du système de fichiers est généralement de 4 096 octets.
+Taille en octets. Les fichiers binaires inférieurs ou égaux à cette taille sont stockés dans le magasin de nœuds de document. Le contenu du fichier binaire est stocké à la place de l’ID du blob. Si les fichiers binaires sont supérieurs à cette taille, l’ID du fichier binaire est stocké en tant que propriété du document dans la collection de nœuds. Et le corps du fichier binaire est stocké dans le `FileDataStore` sur le disque. La taille de bloc du système de fichiers est généralement de 4 096 octets.
 
 * `path`
-Chemin d’accès à la racine du magasin de données. Pour un déploiement MongoMK, il doit s’agir d’un système de fichiers partagé disponible pour toutes les instances AEM. Généralement, un serveur NAS (Network Attached Storage) est utilisé. Pour les déploiements cloud tels que Amazon Web Services, la variable `S3DataFileStore` est également disponible.
+Chemin d’accès à la racine du magasin de données. Pour un déploiement MongoMK, il doit s’agir d’un système de fichiers partagé disponible pour toutes les instances AEM. Généralement, un serveur NAS (Network Attached Storage) est utilisé. Pour les déploiements cloud tels que Amazon Web Services, le `S3DataFileStore` est également disponible.
 
 * `cacheSizeInMB`
-Taille totale du cache des fichiers binaires en mégaoctets. Elle est utilisée pour mettre en cache des fichiers binaires inférieurs à la variable `maxCacheBinarySize` .
+Taille totale du cache des fichiers binaires en mégaoctets. Il est utilisé pour mettre en cache des fichiers binaires inférieurs au paramètre `maxCacheBinarySize`.
 
 * `maxCachedBinarySize`
 Taille maximale en octets d’un fichier binaire mis en cache dans le cache des fichiers binaires. Si un magasin de données basé sur un système de fichiers est utilisé, il n’est pas recommandé d’utiliser des valeurs élevées pour le cache du magasin de données, car les fichiers binaires sont déjà mis en cache par le système d’exploitation.
 
 #### Désactiver l’indicateur de requête {#disabling-the-query-hint}
 
-Il est recommandé de désactiver l’indice de requête envoyé avec toutes les requêtes en ajoutant la propriété . `-Doak.mongo.disableIndexHint=true` quand vous commencez à AEM. Cela garantit que MongoDB calcule l’index le plus approprié à utiliser en fonction des statistiques internes.
+Il est recommandé de désactiver l’indicateur de requête envoyé avec toutes les requêtes en ajoutant la propriété `-Doak.mongo.disableIndexHint=true` lorsque vous lancez AEM. Cela garantit que MongoDB calcule l’index le plus approprié à utiliser en fonction des statistiques internes.
 
 Si l’indicateur de requête n’est pas désactivé, l’optimisation des performances des index n’a aucun impact sur les performances d’AEM.
 

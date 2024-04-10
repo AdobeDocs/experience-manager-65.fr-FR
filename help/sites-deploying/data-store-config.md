@@ -7,10 +7,11 @@ docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '3476'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -456,7 +457,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
 
-* path : chemin d’accès de l’entrepôt de données. La valeur par défaut est de `<aem-install>/repository/datastore.`.
+* path : chemin d’accès du magasin de données. La valeur par défaut est `<aem-install>/repository/datastore.`.
 * RecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur par défaut est de 16 Ko.
 * maxCachedBinarySize : les fichiers binaires dont la taille est inférieure ou égale à cette taille sont stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est de 17 408 (17 Ko).
 * cacheSize : taille du cache. La valeur est exprimée en octets. La valeur par défaut est 64 Go.
@@ -482,7 +483,7 @@ Le processus de nettoyage de la mémoire du magasin de données est utilisé pou
 Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 
 1. En accédant à la console JMX qui se trouve à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
-1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
+1. Recherche de **RepositoryManagement.** Une fois que vous avez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
 1. Faites défiler la page jusqu’à la fin, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false` pour le paramètre `markOnly`, puis cliquez sur **Invoquer** :
 

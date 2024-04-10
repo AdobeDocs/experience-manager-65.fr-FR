@@ -1,6 +1,6 @@
 ---
 title: Mettre à jour le code et les personnalisations
-description: En savoir plus sur la mise à niveau du code et des personnalisations dans AEM.
+description: Découvrez la mise à niveau de code et les personnalisations dans AEM.
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,11 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +47,7 @@ Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécut
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
 
-### Création d’une branche dédiée pour le code 6.5 dans le contrôle de version {#create-a-dedicated-branch-for-6.5-code-in-version-control}
+### Création d’une branche dédiée pour le code de la version 6.5 dans la gestion de versions {#create-a-dedicated-branch-for-6.5-code-in-version-control}
 
 Tout le code et toutes les configurations nécessaires pour votre mise en oeuvre d’AEM doivent être gérés à l’aide d’une forme de gestion de versions. Une branche dédiée à la gestion de versions doit être créée pour gérer les modifications nécessaires pour la base de code dans la version cible d’AEM. Les tests itératifs de la base de code par rapport à la version cible d’AEM et les correctifs de bugs ultérieurs sont gérés dans cette branche.
 

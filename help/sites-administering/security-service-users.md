@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
-feature: Security
+feature: Administering
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 86%
@@ -22,13 +23,13 @@ ht-degree: 86%
 
 La principale façon d’obtenir un résolveur de session d’administration ou de ressource dans AEM consistait à utiliser les méthodes `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` fournies par Sling.
 
-Toutefois, aucune de ces méthodes n&#39;a été conçue autour de la méthode [principe du moindre privilège](https://fr.wikipedia.org/wiki/Principe_de_moindre_privil%C3%A8ge). Il est ainsi trop facile pour un développeur de ne pas planifier de structure appropriée et de niveaux de contrôle d’accès correspondants (ACL) pour son contenu dès le départ. Si une vulnérabilité est présente dans un tel service, elle conduit souvent à des réaffectations de privilèges `admin`, même si le code n’a pas besoin de privilèges d’administration pour fonctionner.
+Cependant, aucune de ces méthodes n’a été conçue autour du [principe de moindre privilège](https://fr.wikipedia.org/wiki/Principe_de_moindre_privil%C3%A8ge). Il est ainsi trop facile pour un développeur ou une développeuse de ne pas planifier une structure appropriée et des niveaux de contrôle d’accès (ACL) correspondants pour leur contenu dès le début. Si une vulnérabilité est présente dans un tel service, elle conduit souvent à des réaffectations de privilèges `admin`, même si le code n’a pas besoin de privilèges d’administration pour fonctionner.
 
 ## Comment supprimer les sessions d’administration {#how-to-phase-out-admin-sessions}
 
 ### Priorité 0 : la fonctionnalité est-elle active/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
 
-Il peut y avoir des cas où la session d’administration n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en oeuvre, assurez-vous de supprimer complètement la fonctionnalité ou de l’adapter à [Code NOP](https://fr.wikipedia.org/wiki/Instruction_nulle).
+Il peut y avoir des cas où la session d’administration n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’ [code NOP](https://fr.wikipedia.org/wiki/Instruction_nulle).
 
 ### Priorité 1 : utiliser la session de requête {#priority-use-the-request-session}
 
@@ -58,7 +59,7 @@ Veillez également à ce que toutes les nouvelles fonctionnalités que vous dév
    * La gestion du contrôle d’accès doit être naturelle.
    * Le contrôle d’accès doit être appliqué par le référentiel, et non par l’application.
 
-* **Utilisation des types de noeuds**
+* **Utilisation des types de nœuds**
 
    * Limitez l’ensemble des propriétés qui peuvent être définies.
 
@@ -81,7 +82,7 @@ Si vous appliquez le contrôle d’accès lors de la restructuration du contenu 
 
 ## Utilisateurs de services et mises en correspondance {#service-users-and-mappings}
 
-En cas d’échec ci-dessus, Sling 7 propose un service de mappage des utilisateurs de service, qui vous permet de configurer un mappage de lot à utilisateur et deux méthodes d’API correspondantes :
+En cas d’échec de la procédure ci-dessus, Sling 7 propose un service de mappage des utilisateurs de services, qui vous permet de configurer un mappage des lots à utilisateur et deux méthodes d’API correspondantes :
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -100,7 +101,7 @@ Les méthodes renvoient un résolveur de session/ressource avec les privilèges 
 
 ### Remplacer la session d’administration par un utilisateur ou une utilisatrice de service {#replacing-the-admin-session-with-a-service-user}
 
-Un utilisateur de service est un utilisateur JCR sans mot de passe défini et avec un jeu minimal d’autorisations nécessaires pour effectuer une tâche spécifique. Si aucun mot de passe n’est défini, il n’est pas possible de se connecter avec un utilisateur du service.
+Un utilisateur de service est un utilisateur JCR sans mot de passe défini et avec un jeu minimal d’autorisations nécessaires pour effectuer une tâche spécifique. Si aucun mot de passe n’est défini, il n’est pas possible de se connecter avec un utilisateur de service.
 
 Une façon de rendre une session d’administration obsolète consiste à la remplacer par des sessions d’utilisateur ou d’utilisatrice de service. Elle peut également être remplacée par plusieurs utilisateurs ou utilisatrices de sous-service si nécessaire.
 
@@ -117,7 +118,7 @@ Pour remplacer la session d’administration par un utilisateur ou une utilisatr
 
 ## Créer un utilisateur ou une utilisatrice de service {#creating-a-new-service-user}
 
-Une fois que vous avez vérifié qu’aucun utilisateur de la liste des utilisateurs du service AEM n’est applicable pour votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, ajoutez le nouvel utilisateur au contenu par défaut.
+Après avoir vérifié qu’aucun utilisateur de la liste des utilisateurs du service AEM ne s’applique à votre cas d’utilisation et que les problèmes RTC correspondants ont été approuvés, ajoutez le nouvel utilisateur au contenu par défaut.
 
 Il est recommandé de créer un utilisateur de service pour utiliser l’explorateur de référentiel à l’adresse *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
 
@@ -137,7 +138,7 @@ Vous pouvez créer des utilisateurs de services de la façon suivante :
 
    >[!NOTE]
    >
-   >Notez qu’il n’existe aucun type de mixin associé aux utilisateurs ou utilisatrices de services. Cela signifie qu’il n’existe aucune stratégie de contrôle d’accès pour les utilisateurs système.
+   >Notez qu’il n’existe aucun type de mixin associé aux utilisateurs ou utilisatrices de services. Cela signifie qu’il n’existe aucune politique de contrôle d’accès pour les utilisateurs et utilisatrices système.
 
 En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
 
@@ -158,7 +159,7 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
 1. Dans ce dossier, créez un fichier appelé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;nom unique de votre configuration d’usine>.xml avec le contenu de votre configuration d’usine (incluant tous les mappages d’utilisateurs ou utilisatrices de sous-services). Exemple :
 
 1. Créez un sous-dossier `SLING-INF/content` sous le dossier `src/main/resources` de votre lot.
-1. Dans ce dossier, créez un fichier `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` avec le contenu de votre configuration d’usine, y compris tous les mappages utilisateur de sous-service.
+1. Dans ce dossier, créez un fichier . `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` avec le contenu de votre configuration d’usine, y compris tous les mappages utilisateur de sous-service.
 
    À des fins d’illustration, prenez le fichier nommé `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml` :
 
@@ -197,10 +198,10 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
 
 Les appels à `loginAdministrative()` apparaissent souvent avec les sessions partagées. Ces sessions sont acquises lors de l’activation du service et ne sont déconnectées qu’après l’arrêt du service. Bien qu’il s’agisse d’une pratique courante, cela débouche sur deux problèmes :
 
-* **Sécurité** : ces sessions d’administrateur sont utilisées pour mettre en cache et renvoyer les ressources ou d’autres objets qui sont liés à la session partagée. Plus loin dans la pile d’appels, ces objets peuvent être adaptés aux sessions ou aux résolveurs de ressources avec des privilèges élevés. Souvent, il n’est pas clair pour l’appelant qu’il s’agit d’une session d’administration avec laquelle il fonctionne.
+* **Sécurité** : ces sessions d’administrateur sont utilisées pour mettre en cache et renvoyer les ressources ou d’autres objets qui sont liés à la session partagée. Plus loin dans la pile d’appels, ces objets peuvent être adaptés aux sessions ou aux résolveurs de ressources avec des privilèges élevés. Souvent, l’appelant ne sait pas s’il s’agit d’une session d’administration avec laquelle il fonctionne.
 * **Performances :** dans Oak, les sessions partagées peuvent entraîner des problèmes de performances et il n’est pas recommandé de les utiliser.
 
-La solution la plus évidente au risque de sécurité est de remplacer simplement l’appel `loginAdministrative()` par un appel `loginService()` à un utilisateur disposant d’autorisations limitées. Toutefois, cela n’a aucune incidence sur une dégradation potentielle des performances. Vous pouvez limiter ces éventuelles dégradations en incluant toutes les informations requises dans un objet qui n’est plus associé à la session. Ensuite, créez (ou détruisez) la session à la demande.
+La solution la plus évidente au risque de sécurité est de remplacer simplement l’appel `loginAdministrative()` par un appel `loginService()` à un utilisateur disposant d’autorisations limitées. Toutefois, cela n’a aucune incidence sur une éventuelle dégradation des performances. Vous pouvez limiter ces éventuelles dégradations en incluant toutes les informations requises dans un objet qui n’est plus associé à la session. Ensuite, créez (ou détruisez) la session à la demande.
 
 L’approche recommandée consiste à refactoriser l’API du service afin que l’appelant ou l’appelante puisse contrôler la création/destruction de la session.
 

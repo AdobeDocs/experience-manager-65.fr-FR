@@ -1,22 +1,24 @@
 ---
 title: Activation de CRXDE Lite dans AEM
-description: Découvrez comment activer CRXDE Lite dans Adobe Experience Manager.
+description: Découvrez comment activer CRXDE Lite dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Activation de CRXDE Lite dans AEM {#enabling-crxde-lite-in-aem}
+# Activation de CRXDE Lite dans AEM{#enabling-crxde-lite-in-aem}
 
-Pour garantir que les installations AEM sont aussi sécurisées que possible, la liste de contrôle de sécurité recommande [désactivation de WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) dans les environnements de production.
+Pour garantir que les installations AEM soient aussi sécurisées que possible, la liste de contrôle de sécurité recommande la [désactivation de WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) dans les environnements de production.
 
 Toutefois, comme CRXDE Lite dépend du lot `org.apache.sling.jcr.davex` pour fonctionner correctement, désactiver WebDAV aura pour effet de désactiver CRXDE Lite également.
 
@@ -26,7 +28,7 @@ Lorsque ceci se produit, accéder à `https://serveraddress:4502/crx/de/index.js
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Bien que cette recommandation soit destinée à réduire les surfaces d’attaque autant que possible, les administrateurs système peuvent parfois avoir besoin d’accéder à CRXDE Lite pour parcourir le contenu ou déboguer les problèmes sur les instances de production.
+Bien que cette recommandation vise à réduire les surfaces d’attaque autant que possible, les administrateurs et administratrices système peuvent parfois avoir besoin d’accéder à CRXDE Lite pour parcourir le contenu ou corriger des problèmes affectant les instances de production.
 
 Vous pouvez activer CRXDE Lite avec les [paramètres OSGi](#enabling-crxde-lite-osgi) ou avec une [commande cURL](#enabling-crxde-lite-curl).
 
@@ -45,7 +47,7 @@ Si cette option est désactivée, vous pouvez activer CRXDE Lite en suivant la 
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
 
-1. Cliquez sur l’icône de clé à molette située à côté pour afficher ses options de configuration :
+1. Cliquez sur l’icône de clé à molette située à côté du composant pour afficher ses options de configuration :
 
    ![chlimage_1-80](assets/chlimage_1-80a.png)
 

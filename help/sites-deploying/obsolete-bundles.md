@@ -8,10 +8,11 @@ content-type: reference
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -25,42 +26,42 @@ Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont a
 
 **AEM 6.1 :**
 
-* org.eclipse.equinox.region, version 1.1.0.v20120522-1841, Active
+* org.eclipse.equinox.region, version 1.1.0.v20120522-1841, actif
 * org.apache.sling.installer.factory.subsystems, version 1.0.0, Active
-* org.apache.aries.subsystem.core, version 1.2.0, Active
-* org.apache.aries.subsystem.api, version 1.1.0, Active
-* org.apache.felix.resolver, version 1.0.0, Active
-* org.osgi.service.subsystem.region.context.0, version 1.0.0, Actif
-* com.adobe.cq.cq-creativecloud-cloudims, version 0.0.10, Active
-* com.adobe.cq.cq-creativecloud-commons, version 0.0.8, Active
-* com.adobe.cq.cq-creativecloud-filesync, version 0.0.12, installé
-* com.adobe.cq.cq-creativecloud-storage, version 0.0.8, installé
-* biz.Quate.bndlib, version 1.43.0, actif
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
+* org.apache.aries.subsystem.core, version 1.2.0, actif
+* org.apache.aries.subsystem.api, version 1.1.0, actif
+* org.apache.felix.resolver, version 1.0.0, actif
+* org.osgi.service.subsystem.region.context.0, version 1.0.0, actif
+* com.adobe.cq.cq-creativecloud-cloudims, version 0.0.10, actif
+* com.adobe.cq.cq-creativecloud-commons, version 0.0.8, actif
+* com.adobe.cq.cq-creativecloud-filesync, version 0.0.12, installé
+* com.adobe.cq.cq-creativecloud-storage, version 0.0.8, installé
+* biz.aQute.bndlib, version 1.43.0, actif
+* com.day.cq.dam.commons.nekohtml, version 0.9.5, actif
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.2.2. Active
 
 **AEM 6.0 :**
 
 * org.apache.sling.discovery.impl, version 1.1.6. Active
-* com.adobe.granite.installer.patch, version 0.4.0, Active
-* biz.Quate.bndlib, version 1.43.0, actif
-* com.day.cq.cq-jobs-core, version 5.4.0, Active
-* com.day.cq.cq-opensocial, version 5.7.2, Active
-* com.day.cq.cq-pinauthhandler, version 1.1.2, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
+* com.adobe.granite.installer.patch, version 0.4.0, actif
+* biz.aQute.bndlib, version 1.43.0, actif
+* com.day.cq.cq-jobs-core, version 5.4.0, actif
+* com.day.cq.cq-opensocial, version 5.7.2, actif
+* com.day.cq.cq-pinauthhandler, version 1.1.2, actif
+* com.day.cq.dam.commons.nekohtml, version 0.9.5, actif
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.1.6. Active
-* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, version 5.7.18, Active
+* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, version 5.7.18, actif
 
-**CQ 5.6.1 :**
+**CQ 5.6.1 :**
 
-* biz.Quate.bndlib, version 1.43.0, actif
-* com.day.cq.cq-pinauthhandler, version 1.0.0, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
-* com.day.crx.crxde-support, version 2.3.14, Installé
+* biz.aQute.bndlib, version 1.43.0, actif
+* com.day.cq.cq-pinauthhandler, version 1.0.0, actif
+* com.day.cq.dam.commons.nekohtml, version 0.9.5, actif
+* com.day.crx.crxde-support, version 2.3.14, installé
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.0.2. Active
 
-**CQ 5.6.0 :**
+**CQ 5.6.0 :**
 
-* com.day.cq.cq-pinauthhandler, version 1.0.0, Active
-* com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
-* com.day.crx.crxde-support, version 2.3.14, Installé
+* com.day.cq.cq-pinauthhandler, version 1.0.0, actif
+* com.day.cq.dam.commons.nekohtml, version 0.9.5, actif
+* com.day.crx.crxde-support, version 2.3.14, installé

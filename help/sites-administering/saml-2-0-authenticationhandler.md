@@ -1,26 +1,28 @@
 ---
 title: Gestionnaire d’authentification SAML 2.0
-description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
+description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Security
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 # Gestionnaire d’authentification SAML 2.0 {#saml-authentication-handler}
 
-AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire prend en charge la fonction [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (profil Web-SSO) à l’aide de la variable `HTTP POST` liaison.
+AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire prend en charge le protocole de demande d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 (profil Web-SSO) à l’aide de la liaison `HTTP POST`.
 
-Il prend en charge :
+Il prend en charge :
 
-* signature et cryptage des messages
+* la signature et le chiffrement des messages ;
 * la création automatique d’utilisateurs ;
 * la synchronisation des groupes avec les groupes existants dans AEM.
 * Authentification initiée par le fournisseur et le fournisseur d’identité
@@ -37,10 +39,10 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 >[!NOTE]
 >
->Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Définissez au moins l’une des propriétés suivantes pour activer le gestionnaire :
+>Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Définissez au moins l’une des propriétés suivantes pour activer le gestionnaire :
 >
 >* URL POST du fournisseur d’identité ou URL du fournisseur d’identité.
->* Identifiant d’entité du fournisseur de services.
+>* Identifiant d’entité du fournisseur.
 >
 
 >[!NOTE]
@@ -51,7 +53,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Classements des services** Valeur de classement de service de structure OSGi pour indiquer l’ordre dans lequel appeler ce service. Il s’agit d’un nombre entier, et les valeurs les plus élevées indiquent une priorité plus élevée.
 
-**Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Consultez le chapitre &quot;Ajout du certificat IdP à l’AEM TrustStore&quot; ci-dessous sur la manière de le configurer.
+**Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Consultez le chapitre « Ajouter le certificat de fournisseur d’identité au TrustStore d’AEM » ci-dessous pour savoir comment le configurer.
 
 **URL du fournisseur d’identité** : URL du fournisseur d’identité où la requête d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
@@ -86,15 +88,15 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Appartenance à un groupe** Nom du saml:Attribute contenant une liste de groupes CRX auxquels cet utilisateur doit être ajouté.
 
-## Ajoutez le certificat IdP au TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
+## Ajouter le certificat de fournisseur d’identité au TrustStore d’AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
-Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez :
+Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez effectuer les opérations suivantes :
 
 1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*.
 1. Appuyez sur **[!UICONTROL Créer un lien TrustStore]**.
 1. Saisissez le mot de passe du TrustStore, puis appuyez sur **[!UICONTROL Enregistrer]**.
-1. Cliquez sur **[!UICONTROL Gestion de TrustStore]**.
-1. Téléchargez le certificat IdP.
+1. Cliquez sur **[!UICONTROL Gérer le TrustStore]**.
+1. Chargez le certificat de fournisseur d’identité.
 1. Notez l’alias du certificat. L’alias est **[!UICONTROL admin#1436172864930]** dans l’exemple ci-dessous.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
@@ -122,19 +124,19 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 
 1. Téléchargez le fichier de clé privée en cliquant sur **Sélectionner le fichier de clé privée**.
-1. Téléchargez le fichier de certificat en cliquant sur **Sélectionner les fichiers de chaîne de certificats**.
-1. Attribuez un alias, comme illustré ci-dessous :
+1. Chargez le fichier de certificat en cliquant sur **Sélectionner les fichiers de chaîne de certificats**.
+1. Attribuez un alias, comme illustré ci-dessous :
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-## Configuration d’un journal pour SAML {#configure-a-logger-for-saml}
+## Configurer un journal pour SAML {#configure-a-logger-for-saml}
 
-Vous pouvez configurer un enregistreur pour déboguer les problèmes qui peuvent survenir lors d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
+Vous pouvez configurer un journal afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
 1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*.
-1. Recherchez et cliquez sur l’entrée appelée **Configuration de l’enregistreur de journalisation Apache Sling**
+1. Recherchez l’entrée nommée **Configuration du journal de connexion Sling Apache** et cliquez dessus.
 1. Créez un journal avec la configuration suivante :
 
-   * **Niveau de journal :** Déboguer
-   * **Fichier journal :** logs/saml.log
-   * **Enregistreur :** com.adobe.granite.auth.saml
+   * **Niveau de journal :** débogage
+   * **Fichier journal** : logs/saml.log
+   * **Journal** : com.adobe.granite.auth.saml

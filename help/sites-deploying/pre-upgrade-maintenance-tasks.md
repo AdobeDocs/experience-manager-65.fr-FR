@@ -1,6 +1,6 @@
 ---
 title: Tâches de maintenance avant la mise à niveau
-description: Découvrez les tâches préalables à la mise à niveau recommandées pour AEM.
+description: Découvrez les tâches préalables à la mise à niveau conseillées pour AEM.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,10 +9,11 @@ docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +58,7 @@ Lors du démarrage d’AEM depuis le fichier jar, un fichier `quickstart.propert
 
 Les tâches `WorkflowPurgeTask` et `com.day.cq.audit.impl.AuditLogMaintenanceTask` nécessitent des configurations OSGi distinctes et ne fonctionneront pas sans celles-ci. Si elles échouent lors de l’exécution de la tâche avant la mise à niveau, des configurations manquantes en sont la raison la plus probable. Par conséquent, veillez à ajouter des configurations OSGi pour ces tâches ou à les supprimer complètement de la liste des tâches d’optimisation avant la mise à niveau si vous ne souhaitez pas les exécuter. Vous trouverez la documentation relative à la configuration des tâches de purge des workflows dans la section [Administration des instances de workflow](/help/sites-administering/workflows-administering.md) et la configuration de la tâche de maintenance du journal d’audit dans la section [Maintenance du journal d’audit dans AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Pour la purge des workflows et des journaux d’audit sur CQ 5.6 et la purge des journaux d’audit sur AEM 6.0, voir [Purge des noeuds de workflow et d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html).
+Pour la purge des workflows et des journaux d’audit sur CQ 5.6, ainsi que pour la purge des journaux d’audit sur AEM 6.0, reportez-vous à la section [Purge des workflows et des nœuds d’audit](https://helpx.adobe.com/fr/experience-manager/kb/howtopurgewf.html).
 
 ## Installation, configuration et exécution des tâches précédant la mise à niveau {#install-configure-run-pre-upgrade-tasks}
 

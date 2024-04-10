@@ -3,10 +3,12 @@ title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +24,7 @@ Ces opérations comprennent :
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
 * Déploiement de Live Copies
 
-Vous pouvez afficher l’état des tâches asynchrones à partir du **[!UICONTROL État des tâches asynchrones]** tableau de bord à **Navigation globale** > **Outils** > **Opérations** > **Tâches**.
+Vous pouvez afficher le statut des traitements asynchrones à partir du tableau de bord **[!UICONTROL Statut des traitements asynchrones]** dans **Navigation globale** -> **Outils** -> **Opérations** -> **Traitements**.
 
 >[!NOTE]
 >
@@ -89,7 +91,7 @@ Vous pouvez modifier la planification de la tâche de purge et la durée pendant
 
 ## Configuration du traitement asynchrone {#configuring-asynchronous-processing}
 
-Vous pouvez configurer le nombre seuil de ressources, de pages ou de références pour AEM afin de traiter une opération particulière de manière asynchrone et de basculer les notifications électroniques pour le moment où les tâches sont traitées.
+Vous pouvez configurer le nombre seuil de ressources, de pages ou de références afin qu’AEM traite une opération particulière de manière asynchrone et bascule les notifications électroniques pour le moment où les traitements sont effectués.
 
 ### Configuration des opérations de suppression de ressources asynchrones {#configuring-synchronous-delete-operations}
 
