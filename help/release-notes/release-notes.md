@@ -4,9 +4,9 @@ description: Consultez les informations sur la mise à jour, y compris les nouve
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3735'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -462,7 +462,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le lot ```org.apache.servicemix.bundles.rhino``` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon ils ne seront pas exécutés et génèreront une erreur d’exécution.
 
-* L’installation du balisage du contenu prêt à l’emploi par le biais d’un module de mise à jour officiel (y compris les Service Packs, les Service Packs de sécurité, les Feature Packs étendus, les Cumulative Feature Packs, les correctifs etc.) réinitialise la propriété languages de la propriété `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
+* L’installation du balisage du contenu prêt à l’emploi par le biais d’un package de mise à jour officiel (y compris les packs de services, les packs de services de sécurité, les packs de fonctionnalités étendues, les packs de fonctionnalités cumulatives, les correctifs et autres) réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6520}
 
@@ -471,7 +471,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Il est alors impossible de créer une lettre Correspondence Management. Quand vous créez une lettre, une erreur avec la description « Objet d’objet » s’affiche et la lettre n’est pas créée. Les miniatures des dispositions ne se chargent pas non plus sur l’écran de création de lettre. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms (6.5)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour résoudre le problème. (FORMS-13496)
 * Le service de communication interactive crée le document PDF, mais les données utilisateur ne sont pas automatiquement renseignées dans les champs du formulaire. Le service de préremplissage ne fonctionne pas comme prévu. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour résoudre le problème. (FORMS-13413, FORMS-13493)
 * Le chargement de l’éditeur de révision et de correction (RnC) du service de conversion de formulaires automatisée échoue. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour résoudre le problème. (FORMS-13491)
-* Après la mise à jour pack de services 18 (6.5.18.0) ou 19 (6.5.19.0) d’AEM Forms 6.5 vers le pack de services 20 (6.5.20.0) d’AEM Forms 6.5, une erreur de compilation JSP se produit. Il est impossible d’ouvrir ou de créer des formulaires adaptatifs et des erreurs se produisent avec d’autres interfaces d’AEM telles que l’éditeur de page, l’interface utilisateur d’AEM Forms et l’éditeur de workflow d’AEM. Vous pouvez installer le [dernier pack de services 6.5.20.0 d’AEM Forms 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour résoudre le problème. (FORMS-13492)
+* Après la mise à jour pack de services 18 (6.5.18.0) ou 19 (6.5.19.0) d’AEM Forms 6.5 vers le pack de services 20 (6.5.20.0) d’AEM Forms 6.5, une erreur de compilation JSP se produit. Il est impossible d’ouvrir ou de créer des formulaires adaptatifs et des erreurs se produisent avec d’autres interfaces d’AEM telles que l’éditeur de page, l’interface utilisateur d’AEM Forms et l’éditeur de workflow d’AEM. Vous pouvez installer le [dernier pack de services 6.5.20.0 d’AEM Forms 6.5](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour résoudre le problème. (FORMS-13492)
 
 <!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
 * [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
@@ -519,5 +519,5 @@ Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client
 >[!MORELIKETHIS]
 >
 >* Page des produits [[!DNL Experience Manager] ](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
->* Documentation [[!DNL Experience Manager]  6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
+>* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
 >* [Abonnement aux mises à jour prioritaires de produits d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
