@@ -2,10 +2,13 @@
 title: Parcours découplés AEM
 description: Une suite de parcours de documentation décrivant comment utiliser Adobe Experience Manager en tant que CMS découplé.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Developing,Content Fragments
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +38,7 @@ Les parcours découplés AEM ont été conçus pour différents types de profils
 
 Chaque parcours a été conçu pour une personne ou une audience spécifique, mais définit également les autres profils avec lesquels le lecteur doit interagir.
 
-Les informations contenues dans les parcours peuvent s’avérer utiles pour plusieurs acteurs, mais un parcours est ciblé sur un personnage spécifique, et certaines informations peuvent se révéler superflues pour certains rôles.
+Les informations contenues dans les parcours peuvent utiles à plusieurs personas, mais un parcours est ciblé sur un persona spécifique et certaines informations risquent d’être superflues pour certains rôles.
 
 ## Parcours découplés {#headless-journeys}
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '3015'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +105,7 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 La notification répertorie le workflow qui s’exécute sur la page. Si la personne utilisatrice est impliquée dans l’étape de workflow en cours, les options pour [affecter le statut du workflow](/help/sites-authoring/workflows-participating.md) et obtenir plus d’informations sur le workflow sont également disponibles, par exemple :
 
-* **Terminer** - Ouvre la fenêtre **Terminer l’élément de travail** boîte de dialogue
+* **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**.
 
 * **Déléguer** : ouvre la boîte de dialogue **Terminer l’élément de travail**.
 
@@ -369,7 +371,7 @@ Par exemple, le composant **Texte** :
 
 Pour déplacer un composant de paragraphe :
 
-1. Sélectionnez le paragraphe à déplacer en maintenant la souris enfoncée ou en cliquant et en maintenant la souris enfoncée.
+1. Sélectionnez le paragraphe à déplacer en sélectionnant ou en cliquant longuement.
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM indique où le paragraphe peut être déposé. Déposez-le à l’emplacement de votre choix.
 
    ![déplacement du composant de paragraphe](assets/screen_shot_2018-03-22at121821.png)
@@ -388,7 +390,7 @@ Au lieu de passer sans cesse du mode d’édition au [mode de disposition](/help
 
    ![Mode d’édition dans le formulaire](assets/screen_shot_2018-03-22at133756.png)
 
-   Cliquez sur le bouton **Disposition** pour que vous puissiez ajuster la disposition du composant.
+   Cliquez sur l’action **Disposition** pour ajuster la disposition du composant.
 
    ![Barre d’outils de composants](do-not-localize/chlimage_1-21.png)
 

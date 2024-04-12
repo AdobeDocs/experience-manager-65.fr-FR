@@ -7,10 +7,12 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +25,7 @@ Il fournit un système de paragraphes qui permet de positionner des composants s
 Le conteneur de mise en page :
 
 * Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
-* Utilise des points d’arrêt prédéfinis (par exemple, pour le téléphone, la tablette, etc.) pour vous permettre de définir le comportement requis du contenu pour l’orientation/les appareils associés.
+* Il utilise des points d’arrêt prédéfinis (par exemple, pour le téléphone, la tablette, etc.) vous permettant de définir le comportement requis du contenu pour l’orientation/les appareils associés.
 
    * Par exemple, vous pouvez personnaliser la taille du composant ou décider s’il peut être affiché sur des appareils spécifiques.
 
@@ -60,7 +62,7 @@ En fonction de votre projet, le conteneur de mise en page peut être utilisé en
 
 >[!NOTE]
 >
->Adobe fournit [Documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) de la mise en page réactive en tant que référence pouvant être fournie aux développeurs front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple, lors de la création de maquettes de HTML statiques pour un site d’ futur.
+>Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la disposition réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
 
 >[!NOTE]
 >
@@ -86,7 +88,7 @@ L’appareil **Bureau**, qui ne possède pas de largeur spécifique, est associ�
 >
 >Il est possible de définir des points d’arrêt pour chaque appareil, mais cela augmenterait la charge de travail requise pour la définition des mises en page et la maintenance.
 
-Lors de l’utilisation de l’émulateur, vous sélectionnez un appareil spécifique pour l’émulation et la définition de mise en page. Le point d’arrêt associé est également mis en surbrillance. Toute modification de mise en page que vous apportez sera applicable aux autres appareils auxquels s’applique le point d’arrêt, c’est-à-dire aux appareils situés à gauche du marqueur de point d’arrêt actif, mais avant le marqueur de point d’arrêt suivant.
+Lors de l’utilisation de l’émulateur, vous sélectionnez un appareil spécifique pour l’émulation et la définition de mise en page. Le point d’arrêt associé est également mis en surbrillance. Toute modification de disposition que vous apportez est applicable aux autres appareils auxquels s’applique le point d’arrêt, c’est-à-dire aux appareils situés à gauche du marqueur de point d’arrêt actif, mais avant le marqueur de point d’arrêt suivant.
 
 Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défini avec une largeur de 540 pixels) pour l’émulation et la mise en page, le point d’arrêt **Téléphone** (défini sur 768 pixels) est également activé. Toutes les modifications apportées à la mise en page pour l’**iPhone 6** s’appliquent aux autres appareils sous le point d’arrêt **Téléphone**, tel que l’**iPhone 5** (défini sur 320 pixels).
 
@@ -119,7 +121,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
-   * Cliquez sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
+   * cliquer sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -181,7 +183,7 @@ Un **conteneur de mise en page** est un système de paragraphes qui présente le
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
-1. Cette opération sélectionne l’ensemble de la grille avec son contenu. La barre d’outils s’affiche. Vous pouvez alors sélectionner une action comme **Supprimer**.
+1. Cette opération sélectionne l’ensemble de la grille avec son contenu. La barre d’outils d’actions s’affiche. Vous pouvez alors sélectionner une action comme **Supprimer**.
 
    ![screen_shot_2018-03-23at085724](assets/screen_shot_2018-03-23at085724.png)
 
@@ -215,7 +217,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
   >
   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
-* Cliquez sur un composant de contenu. La barre d&#39;outils permet d&#39;effectuer les opérations suivantes :
+* Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :
 
    * **Parent**
 
@@ -231,7 +233,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* Dans **Disposition** vous pouvez cliquer sur le bouton **Faire glisser des composants ici** pour sélectionner le composant entier. La barre d’outils de ce mode s’affiche.
+* En mode **Disposition**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils de ce mode s’affiche.
 
   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
@@ -243,7 +245,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
      ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Cela signifie qu’aucune disposition personnalisée ne sera imposée.
+   * **Rétablir la disposition du point d’arrêt** : rétablit la disposition par défaut. Cela signifie qu’aucune disposition personnalisée ne sera imposée.
 
      ![Rétablir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
 

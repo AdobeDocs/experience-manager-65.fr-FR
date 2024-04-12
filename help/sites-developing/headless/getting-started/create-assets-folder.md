@@ -3,10 +3,12 @@ title: Guide de démarrage rapide sur la création d’un dossier de ressources 
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,14 +22,14 @@ Utilisez des modèles de fragment de contenu AEM pour définir la structure des 
 
 Cependant, vous devez d’abord créer un dossier de ressources pour les stocker.
 
-Les dossiers de ressources sont utilisés pour [organisation des ressources de contenu traditionnelles](/help/assets/manage-assets.md) comme les images et la vidéo et les fragments de contenu.
+Les dossiers de ressources servent à [organiser les ressources de contenu traditionnelles](/help/assets/manage-assets.md), comme les images et les vidéos, mais aussi les fragments de contenu.
 
 ## Comment créer un dossier de ressources {#how-to-create-an-assets-folder}
 
 Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pour organiser le contenu au fur et à mesure de sa création. Pour les besoins de ce guide de prise en main, il suffit de créer un dossier.
 
-1. Connectez-vous à AEM et sélectionnez dans le menu principal **Navigation > Ressources > Fichiers**.
-1. Cliquez sur **Créer > Dossier**.
+1. Connectez-vous à AEM. Dans le menu principal, sélectionnez **Navigation > Ressources > Fichiers**.
+1. Cliquez sur **Créer > Dossier**.
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
    * Le **Nom** devient le nom du nœud dans le référentiel.
@@ -35,16 +37,16 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](assets/assets-folder-create.png)
-1. Sélectionnez le dossier que vous avez créé, puis sélectionnez **Propriétés** de la barre d’outils (ou utilisez l’option `p` [raccourci clavier.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Sélectionnez le dossier que vous venez de créer, puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `p`).
 1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Services cloud**.
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
    ![Configurer le dossier de ressources](assets/assets-folder-configure.png)
 1. Cliquez sur **Enregistrer et fermer**.
-1. Cliquez sur **OK** dans la fenêtre de confirmation.
+1. Cliquez sur **OK** dans la fenêtre de confirmation.
 
    ![Fenêtre de confirmation](assets/assets-folder-confirmation.png)
 
-Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous avez créé. Les sous-dossiers hériteront de la **configuration du cloud** du dossier parent. Il est toutefois possible de modifier ce paramétrage si vous souhaitez utiliser les modèles d’une autre configuration.
+Vous pouvez créer des sous-dossiers supplémentaires dans le dossier que vous venez de créer. Les sous-dossiers hériteront de la **configuration du cloud** du dossier parent. Il est toutefois possible de modifier ce paramétrage si vous souhaitez utiliser les modèles d’une autre configuration.
 
 Si vous utilisez une structure de site localisée, vous pouvez [créer une racine de langue](/help/assets/multilingual-assets.md) sous votre nouveau dossier.
 

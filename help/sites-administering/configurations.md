@@ -3,10 +3,12 @@ title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Configuring
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +71,7 @@ L’explorateur de configurations permet à un administrateur de créer, gérer 
 
 Il est très simple de créer une nouvelle configuration dans AEM à l’aide de l’explorateur de configurations.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Outils** > **Général** > **Explorateur de configurations**.
 1. Cliquez sur **Créer**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
 
@@ -94,7 +96,7 @@ Il est très simple de créer une nouvelle configuration dans AEM à l’aide de
 
 Si vous considérez les configurations comme des espaces de travail, les droits d’accès peuvent être définis sur ces configurations afin de définir qui peut ou non accéder à ces espaces de travail.
 
-1. Connectez-vous à AEM as a Cloud Service et sélectionnez dans le menu principal **Outils** > **Général** > **Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils** -> **Général** -> **Explorateur de configurations**.
 1. Sélectionnez la configuration à modifier, puis cliquez sur **Propriétés** dans la barre d’outils.
 1. Sélectionnez les fonctionnalités supplémentaires que vous souhaitez ajouter à la configuration.
 
@@ -158,7 +160,7 @@ Examinons maintenant le contenu JCR correspondant :
 
 Dans cet exemple, nous supposons qu’il existe un dossier de la gestion des ressources numériques spécifique à WKND et une configuration correspondante. À partir du dossier `/content/dam/wknd`, nous verrons qu’il existe une propriété de chaîne nommée `cq:conf` qui fait référence à la configuration qui doit s’appliquer à la sous-arborescence. La propriété est généralement définie sur le `jcr:content` d’une page ou d’un dossier de ressources. Ces liens `conf` sont explicites. Il est donc facile de les suivre en regardant simplement le contenu dans CRXDE.
 
-En passant dans `/conf`, nous suivons la référence et voyons qu’il y a un nœud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée à ce code, il est masqué derrière la balise `Conf` . La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
+En passant dans `/conf`, nous suivons la référence et voyons qu’il y a un nœud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
 
 Vous pouvez constater que la configuration contient un nœud `settings` à nom fixe qui contient les éléments réels, y compris le `dam/imageserver` dont vous avez besoin dans ce cas. Cet élément peut être considéré comme un « document de paramètres » et est généralement représenté par une `cq:Page` avec un `jcr:content` contenant le contenu réel.
 

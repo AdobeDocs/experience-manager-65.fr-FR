@@ -1,6 +1,6 @@
 ---
 title: Gestion des audiences
-description: La console Audiences vous permet de créer, d’organiser et de gérer des audiences pour votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext.
+description: 'La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext :'
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,16 +8,18 @@ topic-tags: personalization
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Gestion des audiences{#managing-audiences}
 
-La console Audiences vous permet de créer, d’organiser et de gérer des audiences pour votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext :
+La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub ou ClientContext :
 
 * Ajouter des audiences : audiences Adobe Target ou segments ContextHub.
 * Gérer des audiences.
@@ -67,16 +69,16 @@ Lorsque vous utilisez plusieurs règles, celles-ci sont combinées par l’opér
 
 Pour créer une audience Adobe Target :
 
-1. Dans la console Navigation, cliquez sur **Personnalisation**. Cliquez sur **Audiences**.
+1. Dans la console Navigation, cliquez sur **Personnalisation**. Cliquez sur **Audiences**.
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Dans la console Audiences, cliquez sur **Créer** puis**Créer une audience cible**.
+1. Dans la console Audiences, cliquez sur **Créer**, puis sur **Créer l’audience cible**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Dans le **Configuration Adobe Target** , sélectionnez la configuration cible et cliquez sur **OK**.
-1. Dans la zone Règle#1, cliquez sur le type d’attribut et saisissez les informations d’attribut dans les champs disponibles. Lorsque vous avez terminé, cochez la case située à droite de l’attribut pour l’enregistrer. Voir [Attributs et leurs options](#attributes-and-their-options) pour plus d’informations sur tous les attributs.
+1. Dans la boîte de dialogue **Configuration d’Adobe Target**, choisissez la configuration cible et cliquez sur **OK**.
+1. Dans la zone Règle#1, cliquez sur le type d’attribut et saisissez toutes les informations d’attribut dans les champs disponibles. Lorsque vous avez terminé, cochez la case située à droite de l’attribut pour l’enregistrer. Voir [Attributs et leurs options](#attributes-and-their-options) pour plus d’informations sur tous les attributs.
 1. Cliquez sur **Ajouter une règle** pour ajouter une autre règle. Entrez autant de règles que nécessaire. Les règles sont combinées avec l’opérateur booléen ET, ce qui signifie que l’audience doit répondre à toutes les exigences de chaque règle pour être éligible à une activité.
 1. Cliquez sur **Suivant**.
 1. Saisissez le nom de l’audience et cliquez sur **Enregistrer**.

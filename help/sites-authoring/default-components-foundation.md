@@ -1,12 +1,14 @@
 ---
 title: Composants de base
-description: Découvrez les composants de base dans Adobe Experience Manager 6.5.
+description: Présentation des composants de base dans Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6873'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +24,7 @@ ht-degree: 98%
 
 Les composants de base ont été conçus pour être utilisés lors de la création de contenu d’une page web standard. Ils forment un sous-ensemble des composants prêts à l’emploi disponibles dans une installation standard d’AEM.
 
-Certains sont immédiatement disponibles via l’explorateur de composants. D’autres ressources sont également disponibles en utilisant [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou par [modification du modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).
+Certains sont immédiatement disponibles via l’explorateur de composants. D’autres sont également disponibles dans le [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou en [modifiant le modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).
 
 L’utilisation des composants de base est prise en charge, mais ils ont été abandonnés et remplacés par des composants principaux qui offrent plus d’extensibilité et de flexibilité.
 
@@ -201,12 +203,12 @@ Entrez une requête de recherche en texte brut.
 
       * **Options de la recherche avancée**
 
-         * **Notation des prédicats de Query Builder**
-Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+         * **Notation de prédicat QueryBuilder**
+Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages contenant « Marketing » dans leur contenu s’affichent dans le carrousel.
 Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
 
    * **Classer par**
-Sélectionner `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
+Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel.
@@ -351,7 +353,7 @@ Le composant Flash vous permet de charger une animation Flash. Vous pouvez faire
 
    * **Mode Fenêtre**
 
-     Affichage de la fenêtre, par exemple, opaque, transparente ou en tant que fenêtre distincte (solide).
+     Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
 
    * **Couleur d’arrière-plan**
 

@@ -3,7 +3,9 @@ title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 100%

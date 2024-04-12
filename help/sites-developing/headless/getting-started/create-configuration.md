@@ -3,10 +3,12 @@ title: Guide de prise en main pour la création découplée d’une configuratio
 description: Créez une configuration comme première étape de prise en main d’AEM 6.5 en mode découplé.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +30,7 @@ Dans le contexte d’une gestion de contenu découplée dans AEM, considérez un
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM et sélectionnez dans le menu principal **Outils > Général > Explorateur de configuration**.
+1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
 1. Indiquez un **Titre** pour votre configuration.
    * Un nom sera généré automatiquement en fonction du titre et adapté selon les [conventions de nommage AEM.](/help/sites-developing/naming-conventions.md). Celui-ci devient le nom du nœud dans le référentiel.
 1. Vérifiez les options suivantes :
@@ -39,7 +41,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
 
 1. Cliquez sur **Créer**.
 
-Si nécessaire, vous pouvez créer plusieurs configurations. Les configurations peuvent également être imbriquées.
+Vous pouvez créer plusieurs configurations si nécessaire. Les configurations peuvent également être imbriquées.
 
 >[!NOTE]
 >

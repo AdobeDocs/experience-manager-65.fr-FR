@@ -9,10 +9,12 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Launches
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +63,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
    * la console **Lancements** :
 
-      1. Sélectionnez votre lancement (cliquez sur la miniature).
+      1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
 
 1. Dans la première étape, vous pouvez spécifier :
@@ -94,9 +96,9 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
 ## Conversion de pages de lancement lors de leur modification {#promoting-launch-pages-when-editing}
 
-Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. L’assistant s’ouvre alors pour collecter les informations nécessaires.
+Lorsque vous modifiez une page de lancement, l’action **Promouvoir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
-![Convertir le lancement](assets/chlimage_1-103.png)
+![Promotion du lancement](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -106,7 +108,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (en exploitation).
 
-![Présentation de la promotion d’un lancement imbriqué](assets/chlimage_1-104.png)
+![Vue d’ensemble de la promotion d’un lancement imbriqué](assets/chlimage_1-104.png)
 
 1. Comme pour la [création d’un lancement imbriqué](#creatinganestedlaunchlaunchwithinalaunch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
 1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.

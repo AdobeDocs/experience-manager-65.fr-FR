@@ -7,10 +7,12 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Developer
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1244'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +39,7 @@ L’entrée ContextHub doit être incluse immédiatement sous la balise `<head>`
 
 Le script `contexthub` que vous insérez après l’élément `<head>` ajoute les fonctions de ContextHub à la page.
 
-Les scripts `cloudservices` que vous ajoutez dans les sections `<head>` et `<body>` s’appliquent aux configurations de Cloud Services ajoutées à la page. (Si la page utilise plusieurs configurations de Cloud Service, vous ne devez inclure le jsp ContextHub et le jsp Cloud Service qu’une seule fois.)
+Les scripts `cloudservices` que vous ajoutez dans les sections `<head>` et `<body>` s’appliquent aux configurations de Cloud Services ajoutées à la page. (Si la page utilise plusieurs configurations de services cloud, vous devez inclure les JSP ContextHub et Cloud Services une seule fois.)
 
 Lorsqu’un framework Adobe Analytics est ajouté à la page, les scripts `cloudservices` génèrent du code JavaScript lié à Adobe Analytics et des références à des bibliothèques côté client, comme dans l’exemple suivant :
 
@@ -169,13 +171,13 @@ Configurez le composant topnav et modifiez le fichier JSP pour définir les év�
    * Nom : `analytics`
    * Type : `nt:unstructured`
 
-1. Ajoutez la propriété suivante au noeud analytics afin de pouvoir nommer l’événement de suivi :
+1. Ajoutez la propriété suivante au nœud Analytics pour nommer l’événement de suivi :
 
    * Nom : cq:trackevents
    * Type : chaîne
    * Valeur : topnavClick
 
-1. Ajoutez la propriété suivante au noeud analytics afin de pouvoir nommer les variables de données :
+1. Ajoutez la propriété suivante au nœud Analytics afin de pouvoir nommer les variables de données :
 
    * Nom : cq:trackvars
    * Type : chaîne
@@ -195,7 +197,7 @@ Configurez le composant topnav et modifiez le fichier JSP pour définir les év�
 
 1. Cliquez sur Enregistrer tout.
 1. Ouvrez le fichier `topnav.jsp`
-1. Dans l’élément , ajoutez l’attribut suivant :
+1. Dans l’élément, ajoutez l’attribut suivant :
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -361,7 +363,7 @@ Le nœud `analytics` du composant doit exposer les noms des variables à l’aid
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, la variable `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère du code JavaScript semblable à l’exemple suivant :
+Le module eCommerce fournit plusieurs composants qui génèrent des données de variable s.products. Par exemple, le composant `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) génère du code JavaScript semblable à l’exemple suivant :
 
 ```
 <script type="text/javascript">
@@ -437,6 +439,6 @@ Le module eCommerce fournit plusieurs composants qui génèrent des données de 
 
 #### Limitation de la taille des appels de suivi {#limiting-the-size-of-tracking-calls}
 
-En règle générale, les navigateurs Web limitent la taille des demandes GET. Étant donné que les valeurs de SKU et de produit CQ sont des chemins de référentiel, les tableaux de produits qui incluent plusieurs valeurs peuvent dépasser la limite de taille de la requête. Par conséquent, vos composants doivent limiter le nombre d’éléments dans le tableau `product` de chaque `CQ_Analytics.record function`. Créez plusieurs fonctions si le nombre d’éléments dont vous devez effectuer le suivi peut dépasser la limite.
+En règle générale, les navigateurs Web limitent la taille des demandes GET. Étant donné que les valeurs de SKU et de produit CQ sont des chemins de référentiel, les tableaux de produits qui incluent plusieurs valeurs peuvent dépasser la limite de taille de la requête. Par conséquent, vos composants doivent limiter le nombre d’éléments dans le tableau `product` de chaque `CQ_Analytics.record function`. Créez plusieurs fonctions si le nombre d’éléments que vous devez suivre est susceptible de dépasser cette limite.
 
-Par exemple, l’eCommerce `submitorder` limite le nombre de `product` éléments d’un appel à quatre. Lorsque le panier contient plus de quatre produits, il génère plusieurs fonctions `CQ_Analytics.record`.
+Par exemple, le composant `submitorder` d’e-commerce limite à quatre le nombre d’éléments `product` dans un appel. Lorsque le panier contient plus de quatre produits, il génère plusieurs fonctions `CQ_Analytics.record`.

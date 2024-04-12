@@ -3,10 +3,12 @@ title: Configuration des composants par défaut en mode de conception
 description: Configuration des composants Adobe Experience Manager en mode de conception.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +49,7 @@ Par exemple, le contenu d’une page produit peut contenir un système de paragr
 >
 >La modification de la conception en mode Création, telle que décrite dans cet article, est la méthode recommandée pour définir des conceptions de modèles statiques.
 >
->La modification de conceptions dans CRX DE, par exemple, n’est pas une bonne pratique et l’application de ces conceptions peut différer du comportement attendu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
+>La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée, car l’application de ces conceptions risque de provoquer un comportement imprévu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
 
 ## Activer/désactiver des composants {#enable-disable-components}
 
@@ -57,17 +59,17 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Cliquez sur un composant. Une bordure bleue s’affiche pour le composant lorsqu’il est sélectionné.
+1. Cliquez sur un composant. Une bordure bleue apparaît autour du composant lorsqu’il est sélectionné.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Cliquez sur le bouton **Parent** Icône
+1. Cliquez sur l’icône **Parent**.
 
    ![Parent](do-not-localize/screen_shot_2018-03-22at103204.png)
 
-   Cela a pour effet de sélectionner le système de paragraphes contenant le composant actif.
+   Cette action a pour effet de sélectionner le système de paragraphes contenant le composant actif.
 
-1. La variable **Configurer** pour le système de paragraphes s’affiche dans la barre d’actions du parent.
+1. L’icône **Configurer** du système de paragraphes s’affiche dans la barre d’actions du parent.
 
    ![Configurer](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -96,7 +98,7 @@ Pour activer ou désactiver un composant :
 
    >[!NOTE]
    >
-   >Les composants de formulaire adaptatif sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin d’utiliser l’écosystème Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaires adaptatifs et ne fonctionneront pas dans l’éditeur de page Sites.
+   >Les composants de formulaires adaptatifs sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin de tirer profit de l’écosystème Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaires adaptatifs et ne fonctionneront pas dans l’éditeur de page Sites.
 
    **Paramètres**
 
@@ -130,7 +132,7 @@ Pour activer ou désactiver un composant :
 
    **Propriétés**
 
-   L’onglet **Propriétés** vous vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
+   L’onglet **Propriétés** vous vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale autorisée de l’image.
 
    **Fonctionnalités**
 
@@ -154,4 +156,4 @@ Pour activer ou désactiver un composant :
 
    ![Déplacer](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Cliquez sur le bouton **Terminé** pour enregistrer et fermer la boîte de dialogue.
+1. Cliquez sur l’icône **Terminé** pour enregistrer et fermer la boîte de dialogue.

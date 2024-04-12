@@ -3,7 +3,9 @@ title: Guide de prise en main pour l’accès et la diffusion de fragments de co
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 95%

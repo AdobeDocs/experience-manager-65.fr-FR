@@ -1,38 +1,40 @@
 ---
 title: Création
-description: Concepts de création et de publication dans Adobe Experience Manager 6.5.
+description: Principes de création et de publication dans Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Création{#authoring}
 
-## Concept de création (et de publication) {#concept-of-authoring-and-publishing}
+## Principe de création (et de publication) {#concept-of-authoring-and-publishing}
 
-AEM fournit deux environnements :
+AEM vous met à disposition deux environnements :
 
 * Création
 * Publication
 
-Ces fonctions interagissent pour vous permettre de rendre le contenu disponible sur votre site web, de sorte que vos visiteurs puissent le lire.
+Ces environnements interagissent pour vous permettre de rendre le contenu disponible sur votre site Web, afin que vos visiteurs et visiteuses puissent y accéder.
 
 L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
-* Un auteur crée et révise le contenu (qui peut être de plusieurs types, par exemple, pages, ressources, publications, etc.)
+* Un auteur ou une autrice créent et révisent le contenu (qui peut être de plusieurs types, par exemple des pages, des ressources, des publications, etc.)
 * qui, à un moment donné, sera publié sur votre site Web.
 
-![Présentation des environnements](assets/chlimage_1-132.png)
+![Vue d’ensemble des environnements](assets/chlimage_1-132.png)
 
-Dans l’environnement de création, la fonctionnalité d’AEM est disponible dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs et utilisatrices.
+Dans l’environnement de création, les fonctions d’AEM sont accessibles dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs et utilisatrices.
 
 ### Environnement de création {#author-environment}
 
-L’auteur ou l’autrice travaille dans l’**environnement de création**. Vous bénéficiez ainsi d’une interface conviviale (interface utilisateur graphique) pour créer le contenu. Il se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et requiert que l’auteur se connecte à l’aide d’un compte auquel les droits d’accès appropriés ont été attribués.
+L’auteur ou l’autrice travaille dans l’**environnement de création**. Cet environnement fournit une interface simple d’utilisation (interface utilisateur graphique ou interface utilisateur) pour la création de contenu.  Cette interface se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et implique que l’auteur ou l’autrice se connecte à l’aide d’un compte doté des droits d’accès appropriés.
 
 >[!NOTE]
 >
@@ -40,31 +42,31 @@ L’auteur ou l’autrice travaille dans l’**environnement de création**. Vou
 
 Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment (entre autres) :
 
-* générer du nouveau contenu ou modifier du contenu existant sur une page ;
+* la génération d’un nouveau contenu ou la modification du contenu existant sur une page ;
 * utiliser les modèles prédéfinis pour créer des pages de contenu ;
-* créer, modifier et gérer vos ressources et collections ;
-* créer, modifier et gérer vos publications ;
+* la création, modification et gestion de vos ressources et collections ;
+* la création, modification et gestion de vos publications ;
 * développer vos campagnes et les ressources associées ;
 * développer et gérer des sites communautaires ;
-* déplacer, copier ou supprimer des pages de contenu, des ressources, etc. ;
-* publier (ou annuler la publication) des pages, des ressources, etc.
+* le déplacement, la copie ou la suppression des pages de contenu, des ressources, etc. ;
+* la publication (ou annulation de la publication) de pages, de ressources, etc.
 
 Certaines tâches administratives peuvent aussi vous aider à gérer votre contenu :
 
-* les workflows qui contrôlent la manière dont les modifications sont gérées ; par exemple, appliquer une révision avant la publication ;
-* projets qui coordonnent des tâches individuelles
+* des workflows qui déterminent le mode de gestion des modifications, par exemple, appliquer une révision avant une publication
+* des projets qui coordonnent des tâches individuelles
 
 >[!NOTE]
 >
->AEM [administré](/help/sites-administering/home.md) (pour la plupart des tâches) de l’environnement de création.
+>AEM est également [administré](/help/sites-administering/home.md) (pour la plupart des tâches) à partir de l’environnement de création.
 
 #### Environnement de publication {#publish-environment}
 
 Une fois prêt, le contenu du site AEM est publié dans l’**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
-En règle générale, l’environnement de publication est situé à l’intérieur de la zone démilitarisée ; en d’autres termes, il est disponible sur Internet, mais n’est plus protégé par le réseau interne.
+En règle générale, l’environnement de publication est situé en « zone démilitarisée » : en d’autres termes, il est disponible sur internet, mais n’est plus protégé par le réseau interne.
 
-Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent interagir sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent se voir accorder l’autorisation d’exécuter des activités normalement limitées à l’environnement de création, telles que créer de nouvelles pages (groupes de communautés), des articles de blog et modérer les publications d’autres membres.
+Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent interagir sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent être autorisés à effectuer des activités normalement réservées à l’environnement de création, telles que la création de nouvelles pages (groupes de communautés), d’articles de blog et la modération des publications d’autres membres.
 
 >[!NOTE]
 >
@@ -77,9 +79,9 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu de la page, les fichiers, le code, les commentaires utilisateur) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
+>  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur ou de l’utilisatrice) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires d’utilisateurs ou d’utilisatrices.
 >
 
 #### Dispatcher {#dispatcher}
 
-Pour optimiser les performances des visiteurs de votre site Web, la variable **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)** met en oeuvre l’équilibrage de charge et la mise en cache.
+Afin que les visiteurs et visiteuses de votre site Web bénéficient de performances optimales, le **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)** implémente des mécanismes de mise en cache et d’équilibrage de la charge.

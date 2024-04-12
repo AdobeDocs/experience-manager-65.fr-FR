@@ -2,7 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 100%

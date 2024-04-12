@@ -2,8 +2,11 @@
 title: En savoir plus sur le contenu découplé et comment le traduire dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 

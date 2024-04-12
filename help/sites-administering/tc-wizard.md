@@ -1,13 +1,14 @@
 ---
 title: Assistant Copie de langue
-description: Découvrez comment utiliser l’ Assistant Copie de la langue dans Adobe Experience Manager.
+description: Découvrez comment utiliser l’Assistant Copie de langue dans AEM.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +18,7 @@ L’assistant Copie de la langue est une expérience guidée pour créer et gér
 
 >[!NOTE]
 >
->L’utilisateur doit être membre du groupe projects-administrators pour créer la copie de langue d’un site.
+>L’utilisateur ou l’utilisatrice doit être membre du groupe des administrateurs et administratrices de projet pour créer la copie de langue d’un site.
 
 Pour accéder à cet assistant :
 
@@ -41,7 +42,7 @@ Pour accéder à cet assistant :
    >
    >Par défaut, il n’y a qu’un seul paramètre de traduction. Pour pouvoir sélectionner d’autres paramètres, vous devez d’abord configurer les configurations cloud. Voir [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md).
 
-1. Le bouton **Suivant** vous mène à l’étape **Traduire** de l’assistant. Ici, vous pouvez choisir entre la création de la structure uniquement, la création d’un projet de traduction ou l’ajout à un projet de traduction existant.
+1. Le bouton **Suivant** vous mène à l’étape **Traduire** de l’assistant. Vous pouvez choisir entre la création de la structure uniquement, la création d’un projet de traduction ou l’ajout à un projet de traduction existant.
 
    >[!NOTE]
    >

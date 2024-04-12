@@ -2,8 +2,11 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 100%
 
@@ -92,7 +95,7 @@ En utilisant la variable **Arborescence de la structure** de l’éditeur de fra
 >
 >À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
 
-![Arborescence de la structure du fragment de contenu](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Arborescence de la structure du fragment de contenu.](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Références ad hoc {#adhoc-references}
 

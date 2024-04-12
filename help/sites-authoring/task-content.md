@@ -7,10 +7,12 @@ topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +31,7 @@ Vous pouvez suivre la progression du projet en examinant les tâches actives/ter
 
 * **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste contient des informations détaillées sur toutes les tâches liées au projet.
 
-Les deux options répertorient les tâches de workflow et les tâches que vous créez directement dans la mosaïque Tâches.
+Ces deux options répertorient les tâches de workflow, ainsi que les tâches que vous créez directement dans la mosaïque des tâches.
 
 ### Mosaïque Tâches {#task-tile}
 
@@ -53,7 +55,7 @@ Cliquez sur le bouton représentant des points de suspension en bas à droite de
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la boîte de réception, cliquez sur la tâche pour la sélectionner, puis cliquez sur **Ouvrir** dans la barre d’outils.
+Pour plus d’informations sur une tâche particulière, dans la boîte de réception, cliquez sur la tâche pour la sélectionner, puis sur **Ouvrir** dans la barre d’outils.
 
 ![Détails de la tâche](assets/project-task-detail.png)
 

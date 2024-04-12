@@ -3,7 +3,9 @@ title: Gérer les points d’entrée GraphQL dans AEM
 description: Découvrez comment gérer les points d’entrée GraphQL dans Adobe Experience Manager pour la diffusion de contenu découplé.
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 100%

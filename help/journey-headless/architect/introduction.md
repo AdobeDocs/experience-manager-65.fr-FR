@@ -2,8 +2,11 @@
 title: Parcours d’architecte de contenu découplé Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -82,5 +85,5 @@ Maintenant que vous avez appris les concepts et la terminologie, l’étape suiv
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* [Portail de développement d’AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
-* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

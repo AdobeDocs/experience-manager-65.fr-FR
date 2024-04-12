@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Admin,Architect,Data Architect,Developer,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 99%
@@ -103,7 +105,7 @@ Outre les tâches de maintenance standard d’Adobe Experience Manager (AEM), 
 
 ### Personnel correctement formé {#appropriately-trained-staff}
 
-Assurez-vous que les membres de votre équipe ont reçu une formation appropriée. Pour les équipes de projet, il est recommandé d’avoir tous les éléments suivants :
+Assurez-vous que les membres de votre équipe ont reçu une formation appropriée. Pour les équipes du projet, il est recommandé de disposer de tous les éléments suivants :
 
 * au moins un développeur en chef certifié AEM ;
 * au moins un architecte certifié AEM ;
@@ -292,7 +294,7 @@ Une première version du contrat juridique.
 
 ### Structure et format de contenu actuel {#current-content-structure-and-format}
 
-Documentation de l’architecture et du format du contenu actuel. Il est utilisé pour générer la future architecture de contenu. Elle sert également pour le concept de migration.
+Documentation de l’architecture et du format du contenu actuel. Elle est utilisée pour générer la future architecture de contenu. Elle sert également pour le concept de migration.
 
 ### Politique de sauvegarde et de restauration de la clientèle {#customer-backup-and-restore-policy}
 
@@ -556,7 +558,7 @@ Définition de la structure de contenu du système hérité. Elle est utilisée 
 
 ### Performances historiques et KPI historiques {#historical-performance-and-historical-performance-kpis}
 
-collecter et documenter les statistiques de performances et les indicateurs de performance clés du système hérité ; Ceux-ci sont ensuite utilisés comme point de référence et pour l’évaluation comparative de la nouvelle solution.
+Collectez et documentez les statistiques de performances et les KPI du système hérité. Ceux-ci sont ensuite utilisés comme point de référence et pour l’évaluation comparative de la nouvelle solution.
 
 ### Identifier les solutions/fonctionnalités clés essentielles {#identify-critical-key-solutions-functionalities}
 
@@ -669,7 +671,7 @@ Il convient de recueillir des informations détaillées sur le système existant
 
 ### Liste des outils de développement à utiliser {#list-of-development-tools-to-be-used}
 
-Présentation des outils utilisés dans la mise en oeuvre. Les outils doivent inclure :
+Présentation des outils qui seront utilisés pour l’implémentation, notamment :
 
 * outils de documentation
 * outils de suivi des problèmes

@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +55,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 >Vérifiez que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile**, lorsque vous utilisez Adobe Campaign Classic ou Adobe Campaign Standard, respectivement.
 >
 
-1. Dans AEM, dans Sites, accédez à l’emplacement où vous souhaitez créer une page.
+1. Dans AEM, dans Sites, naviguez jusqu’à l’emplacement où vous souhaitez créer une page.
 1. Créez une page et sélectionnez **Profil Adobe Campaign Classic** ou **Profil Adobe Campaign Standard** et cliquez sur **Suivant**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -94,8 +96,8 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
    * **Adobe Campaign : Abonnement aux services** : permet de gérer les abonnements d’un ou d’une destinataire dans Adobe Campaign.
    * **Adobe Campaign : Désabonnement des services** : permet d’annuler les abonnements d’un ou d’une destinataire dans Adobe Campaign.
 
-1. Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Ce composant définit le paramètre d’URL utilisé pour accepter la clé primaire chiffrée d’un profil Adobe Campaign. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
-1. Faire glisser le composant **Clé de Principal chiffrée** dans le formulaire (n’importe où) et cliquez sur l’icône **Configuration** Icône Dans l’onglet **Adobe Campaign**, indiquez le nom du paramètre d’URL. Cliquez sur la coche pour enregistrer vos modifications.
+1. Vous devez disposer d’un composant **Clé primaire chiffrée** (EPK) sur chaque formulaire. Ce composant définit le paramètre d’URL qui est utilisé pour accepter la clé primaire chiffrée d’un profil Adobe Campaign. Dans Composants, sélectionnez Adobe Campaign afin que seuls ces composants soient visibles.
+1. Faites glisser le composant **Clé primaire chiffrée** sur le formulaire (n’importe où) et cliquez sur l’icône **Configuration**. Dans l’onglet **Adobe Campaign**, indiquez le nom du paramètre d’URL. Cliquez sur la coche pour enregistrer vos modifications.
 
    Les liens générés vers ce formulaire doivent utiliser ce paramètre d’URL et lui attribuer la clé primaire chiffrée d’un profil Adobe Campaign. La clé primaire chiffrée doit être correctement encodée en URL (pourcentage).
 

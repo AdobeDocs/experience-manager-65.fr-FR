@@ -7,10 +7,12 @@ topic-tags: introduction
 content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -28,7 +30,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| Général | `Ctrl+Click` | Sélection multiple sur un ordinateur de bureau |
+| Général | `Ctrl+Click` | Sélection multiple sur un appareil de bureau |
 | Console : vue Colonnes et Contenu | `Right Arrow` | Naviguer vers le bas de la structure du site web/développer le nœud d’arborescence |
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |

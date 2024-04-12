@@ -1,12 +1,14 @@
 ---
 title: Sélectionner votre interface utilisateur dans AEM
-description: Configurez l’interface que vous utilisez pour travailler dans Adobe Experience Manager 6.5.
+description: Configurez l’interface que vous utilisez dans Adobe Experience Manager 6.5.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

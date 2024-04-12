@@ -8,10 +8,12 @@ topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '4825'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +25,7 @@ Grâce à **Éditeur de modèles**, la création et la maintenance de modèles n
 
 La **Console de modèles** permet aux auteurs et autrices de modèles de :
 
-* Créez un modèle ou copiez un modèle existant.
+* Créez ou copiez un modèle.
 * Gérer le cycle de vie du modèle.
 
 L’**Éditeur de modèles** permet aux auteurs et autrices de modèles de :
@@ -34,11 +36,11 @@ L’**Éditeur de modèles** permet aux auteurs et autrices de modèles de :
 
 Ce document explique comment un **auteur ou une autrice de modèles** peut utiliser la console de modèles et l’éditeur pour créer et gérer des modèles modifiables.
 
-Pour plus d’informations sur le fonctionnement des modèles modifiables à un niveau technique, consultez le document destiné aux développeurs . [Modèles de page - Modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations.
+Pour obtenir des informations détaillées sur le fonctionnement des modèles modifiables à un niveau technique, voir le document destiné aux développeurs et développeuses [Modèles de page - Modifiables](/help/sites-developing/page-templates-editable.md).
 
 >[!NOTE]
 >
->L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais les modèles eux-mêmes ne le peuvent pas.
+>L’**éditeur de modèles** ne prend pas en charge le ciblage directement au niveau du modèle. Les pages créées à partir d’un modèle modifiable peuvent être ciblées, mais pas les modèles eux-mêmes.
 
 >[!CAUTION]
 >
@@ -58,7 +60,7 @@ Il est important de tenir compte des points suivants avant de commencer :
 
 ### Rôles {#roles}
 
-Création d’un modèle à l’aide du **Console de modèles** et la variable **Éditeur de modèles** nécessite une collaboration entre les rôles suivants :
+La création d’un modèle à l’aide de la **console Modèles** et de l’**éditeur de modèles** exige une collaboration entre les rôles suivants :
 
 * **Administrateur** :
 
@@ -107,26 +109,26 @@ AEM propose désormais deux types de modèles de base :
    * Ils sont [fournis par l’équipe de développement](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * La modification des modèles statiques étant la tâche exclusive d’un développeur, reportez-vous au document destiné aux développeurs. [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
+   * Comme la modification des modèles statiques est une tâche réservée aux développeurs et développeuses, consultez le document qui leur est destiné [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour en savoir plus.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et l’édition de modèles modifiables. Par conséquent, ce document traite exclusivement des modèles modifiables.
 
 ### Utiliser un modèle pour créer une page {#using-a-template-to-create-a-page}
 
-Lorsque vous utilisez un modèle pour [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) il n’existe aucune différence visible et aucune indication entre les modèles statiques et modifiables. Pour la création de pages, le processus est transparent.
+Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables. Pour la création de pages, le processus est transparent.
 
 ## Création et gestion des modèles {#creating-and-managing-templates}
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
-* Utilisez la variable **Modèle** console. Cette option est disponible dans la **Général** de la **Outils** console.
+* Utilisez la console **Modèles**. Cette option est disponible dans la section **Général** de la console **Outils**.
 
-   * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * Ou directement à l’adresse : [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Si besoin, vous pouvez [créer un dossier pour les modèles](#creating-a-template-folder-admin).
-* [Créer un modèle](#creatinganewtemplateauthor), initialement vide
+* [Créez un modèle](#creatinganewtemplateauthor), initialement vide.
 
-* [Définition de propriétés supplémentaires](#definingtemplatepropertiesauthor) pour le modèle, si nécessaire
+* [Définissez des propriétés supplémentaires](#definingtemplatepropertiesauthor) pour le modèle, le cas échéant.
 * [Modifiez le modèle](#editingtemplates) pour définir :
 
    * [Structure](#editingatemplatestructureauthor) : contenu prédéfini ne pouvant pas être modifié dans les pages créées avec le modèle.
@@ -150,9 +152,9 @@ Lors de la création d’un modèle modifiable :
 
 Vous devez créer un dossier de modèles pour votre projet afin de contenir les modèles spécifiques au projet. Il s’agit d’une tâche administrative qui est décrite dans le document [Modèles de page - Modifiables](/help/sites-developing/page-templates-editable.md#template-folders).
 
-### Création d’un modèle - Créateur de modèles {#creating-a-new-template-template-author}
+### Création d’un modèle - Créateur ou créatrice de modèles {#creating-a-new-template-template-author}
 
-1. Ouvrez le **Console de modèles** (via **Outils >** **Général**), puis accédez au dossier requis.
+1. Ouvrez la **console Modèles** (en sélectionnant **Outils >** **Général**), puis accédez au dossier souhaité.
 
    >[!NOTE]
    >
@@ -174,7 +176,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    * **Nom du modèle**
    * **Description**
 
-1. Sélectionnez **Créer**. Une confirmation s’affiche, sélectionnez **Ouvrir** pour commencer [modification du modèle](#editingatemplate) ou **Terminé** pour revenir à la console de modèles.
+1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir** pour commencer à [modifier le modèle](#editingatemplate) ou **Terminé** pour revenir à la console de modèles.
 
    >[!NOTE]
    >
@@ -197,7 +199,7 @@ Un modèle peut avoir les propriétés suivantes :
 
 * Description
 
-   * Description facultative permettant de fournir plus d’informations sur le modèle et son utilisation. Elle peut être affichée, par exemple, dans la variable **Créer une page** assistant.
+   * Description facultative permettant de fournir des informations supplémentaires sur le modèle et son utilisation. Elle peut s’afficher, par exemple, dans l’assistant **Créer une page**.
 
 Pour afficher et/ou modifier les propriétés :
 
@@ -222,16 +224,16 @@ Pour définir la miniature du modèle :
 1. Modifiez les propriétés du modèle.
 1. Choisissez si vous souhaitez charger une miniature ou la générer à partir du contenu du modèle.
 
-   * Si vous souhaitez télécharger une miniature, cliquez sur **Télécharger l’image**
-   * Si vous souhaitez générer une miniature, cliquez sur **Générer l’aperçu**
+   * Si vous souhaitez charger une miniature, cliquez sur **Charger l’image**.
+   * Si vous souhaitez générer une miniature, cliquez sur **Générer l’aperçu**.
 
 1. Pour les deux méthodes, un aperçu de la miniature s’affiche.
 
-   Si ce n’est pas le cas, cliquez sur **Effacer** pour charger une autre image ou générer à nouveau la miniature.
+   Si cela ne suffit pas, cliquez sur **Effacer** pour charger une autre image ou générer à nouveau la miniature.
 
 1. Lorsque la miniature vous satisfait, cliquez sur **Enregistrer et fermer**.
 
-### Activation et autorisation d’un modèle – Créateur de modèles {#enabling-and-allowing-a-template-template-author}
+### Activation et autorisation d’un modèle - Créateur ou créatrice de modèles {#enabling-and-allowing-a-template-template-author}
 
 Pour utiliser un modèle lors de la création d’une page, vous devez effectuer les deux tâches suivantes :
 
@@ -248,7 +250,7 @@ Un modèle peut être activé ou désactivé afin de le rendre disponible ou ind
 
 1. Dans la **console de modèles**, sélectionnez le modèle.
 1. Sélectionnez **Activer** ou **Désactiver** dans la barre d’outils, puis de nouveau dans la boîte de dialogue de confirmation.
-1. Vous pouvez désormais utiliser votre modèle lorsque [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), même si vous souhaitez probablement [modifier le modèle ;](#editingatemplate) selon vos besoins.
+1. Vous pouvez maintenant utiliser le modèle lors de la [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Cependant, vous souhaiterez sans doute [modifier le modèle](#editingatemplate) en fonction de vos besoins.
 
 >[!NOTE]
 >
@@ -293,7 +295,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification de modèles - Créateurs de modèles {#editing-templates-template-authors}
+## Modification de modèles - Créateurs et créatrices de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -464,13 +466,13 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies, ainsi que l’activation du chargement différé.
 
-  Si un paramètre permet plusieurs configurations, cliquez sur le bouton **Ajouter** pour ajouter une autre configuration.
+  Si un paramètre permet plusieurs configurations, cliquez ou appuyez sur le bouton **Ajouter** pour ajouter une configuration.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
   Pour supprimer une configuration, cliquez sur le bouton **Supprimer** situé à droite de la configuration.
 
-  Pour supprimer une configuration, cliquez sur le bouton ** Supprimer**.
+  Pour supprimer une configuration, cliquez sur le bouton **Supprimer**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -488,7 +490,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   >[!NOTE]
   >
-  >[Stratégies de contenu pour les composants implémentant l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) ne peut être défini que pour les options rendues disponibles par l’éditeur de texte enrichi via ses paramètres d’interface utilisateur. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Les politiques de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par ses propres paramètres d’interface utilisateur.[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Politique et propriétés (conteneur de mise en page)**
 
@@ -530,9 +532,9 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Dans l’onglet **Composants par défaut**, vous définissez les composants qui sont automatiquement associés à des types de médias donnés. Ainsi, lorsqu’un créateur fait glisser une ressource depuis le navigateur des ressources, AEM sait avec quel composant l’associer. Notez que seuls les composants avec des zones de dépôt sont disponibles pour cette configuration.
 
-  Cliquez sur **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
+  Cliquez sur **Ajouter un mappage** pour ajouter un nouveau mappage de composant et de type MIME.
 
-  Sélectionnez un composant dans la liste, puis cliquez sur **Ajouter un type** pour ajouter un type MIME supplémentaire à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
+  Sélectionnez un composant dans la liste, puis cliquez sur **Ajouter un type** pour ajouter un type MIME à un composant déjà mappé. Cliquez sur l’icône **Supprimer** pour supprimer un type MIME.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -556,7 +558,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’affichent plus lorsque dans **Structure** , mais elles s’affichent dans **Contenu initial** mode . En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
+  Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’affichent plus en mode **Structure**, mais en mode **Contenu initial**. En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -600,7 +602,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 
 >[!NOTE]
 >
->Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. Pour cette raison, le contenu initial ne peut pas être traduit.
+>Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. De ce fait, le contenu initial ne peut pas être traduit.
 >
 >Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
@@ -679,7 +681,7 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 >[!NOTE]
 >
->Bien que l’auteur du modèle puisse spécifier la stratégie de page sur le modèle, il doit obtenir des informations sur les bibliothèques clientes appropriées de la part du développeur.
+>Bien que l’auteur ou l’autrice de modèles puisse indiquer la politique de page dans le modèle, il ou elle doit se procurer les détails relatifs aux bibliothèques clientes concernées auprès de l’équipe de développement.
 
 ### Modification d’un modèle - Propriétés de page initiales - Créateur {#editing-a-template-initial-page-properties-author}
 

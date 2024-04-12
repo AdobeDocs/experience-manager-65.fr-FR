@@ -2,8 +2,11 @@
 title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -67,7 +70,7 @@ Dans un modèle :
 1. Les **types de données** vous permettent de définir les attributs individuels.
 Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte** et ses années de service comme **Nombre**.
 1. Les types de données **Référence de contenu** et **Référence du fragment** permettent de créer des relations avec d’autres contenus dans AEM.
-1. Le type de données **Référence de fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Cela est essentiel pour la modélisation de contenu.
+1. Le type de données **Référence de fragment** vous permet de réaliser plusieurs niveaux de structure en imbriquant vos fragments de contenu (en fonction du type de modèle). Ceci est essentiel pour la modélisation de contenu.
 
 Par exemple :
 

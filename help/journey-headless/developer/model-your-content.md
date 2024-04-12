@@ -2,7 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 99%

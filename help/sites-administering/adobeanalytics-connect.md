@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +130,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
    >
    >L’outil de recherche de contenu situé à gauche est renseigné avec les variables d’Adobe Analytics (variables de SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
 
-1. Pour sélectionner les instances de serveur pour lesquelles vous souhaitez envoyer des informations à la suite de rapports, utilisez le **Mode d’exécution** Liste déroulante (en regard de l’identifiant de suite de rapports).
+1. Pour sélectionner les instances de serveur qui doivent envoyer des informations à la suite de rapports, utilisez la liste déroulante du **Mode d’exécution** (en regard de l’identifiant de suite de rapports).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -174,7 +176,7 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
 1. Ouvrez l’onglet **Services cloud**.
 
-1. Utilisez la variable **Ajouter une configuration** menu déroulant à sélectionner **Adobe Analytics** dans les options disponibles. Si l’héritage est en place, désactivez-le avant que le sélecteur ne soit disponible.
+1. Utilisez le menu déroulant **Ajouter une configuration** pour sélectionner **Adobe Analytics** parmi les options disponibles. Si l’héritage est en place, désactivez-le avant que le sélecteur ne soit disponible.
 
 1. Le sélecteur de liste déroulante pour **Adobe Analytics** est ajouté aux options disponibles. Sélectionnez la configuration de framework requise.
 
@@ -192,16 +194,19 @@ Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-ana
 
 ### Configurer l’intervalle d’importation {#configuring-the-import-interval}
 
-Configurez l’instance appropriée de la **Adobe AEM Analytics Report Sling Importer** service :
+Configurez l’instance appropriée du service **Importateur Sling de rapports Adobe AEM Analytics** :
 
-* **Récupération des tentatives**: nombre de tentatives de récupération d’un rapport en file d’attente.
+* **Tentatives de récupération** :
+nombre de tentatives de récupération d’un rapport en file d’attente.
 La valeur par défaut est `6`.
 
-* **Délai de récupération**: nombre de millisecondes entre les tentatives de récupération d’un rapport en file d’attente.
-La valeur par défaut est de `10000`. En millisecondes, cela correspond à 10 secondes.
+* **Délai de récupération** :
+nombre de millisecondes entre les tentatives de récupération d’un rapport en file d’attente.
+La valeur par défaut est de `10000`. Comme la valeur est en millisecondes, cela correspond à 10 secondes.
 
-* **Fréquence de récupération**: A `cron` pour déterminer la fréquence de récupération du rapport Analytics.
-La valeur par défaut est `0 0 0/12 * * ?`; cela correspond à 12 récupérations par heure.
+* **Fréquence de récupération** :
+expression `cron` pour déterminer la fréquence de récupération du rapport Analytics.
+La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations par heure.
 
 Pour configurer ce service OSGi, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud osgiConfig dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (le PID de service est `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

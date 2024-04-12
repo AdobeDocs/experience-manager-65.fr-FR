@@ -2,7 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 98%

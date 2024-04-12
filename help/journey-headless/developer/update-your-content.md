@@ -2,10 +2,13 @@
 title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +183,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## API HTTP Assets et fragments de contenu {#assets-http-api-content-fragments}
 
-Les fragments de contenu sont utilisés pour une diffusion en mode découplé. Un fragment de contenu est un type spécial de ressource. Ils sont utilisés pour accéder à des données structurées, telles que des textes, des nombres, des dates, etc.
+Les fragments de contenu sont utilisés pour une diffusion en mode découplé. Un fragment de contenu est un type spécial de ressource. Ils permettent d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

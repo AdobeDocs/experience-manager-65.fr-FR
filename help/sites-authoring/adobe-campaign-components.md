@@ -8,10 +8,12 @@ topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization,Integration
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2859'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -80,9 +82,9 @@ Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de
 
 >[!NOTE]
 >
->Saisissez les informations dans le champ **Texte de remplacement** ou l’image ne peut pas être enregistrée.
+>Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement**.
 
-Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image, au besoin :
+Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image selon les besoins :
 
 ![Barre d’outils de la modification statique](do-not-localize/chlimage_1-10.png)
 
@@ -129,7 +131,7 @@ Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
->Saisissez les informations dans le champ **Texte de remplacement** dans le champ **Avancé** ou l’image ne peut pas être enregistrée et le message d’erreur suivant s’affiche :
+>Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** dans l’onglet **Avancé**. Sinon, l’image n’est pas enregistrée et le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -151,14 +153,14 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
 * **LinkType**
-Dans la liste déroulante, sélectionnez entre un **URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+Dans la liste déroulante, sélectionnez une **URL personnalisée** ou un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
 
 >[!NOTE]
 >
->Saisissez les informations dans le champ **Type de lien** dans le champ **Informations sur l’URL** ou le composant ne peut pas enregistrer et le message d’erreur suivant s’affiche :
+>Pour enregistrer le composant, vous devez renseigner le champ **Type de lien** dans l’onglet **Informations sur l’URL**. Autrement, le composant n’est pas enregistré et le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -217,7 +219,7 @@ Faites glisser une image à partir de l’Outil de recherche de contenu ou cliqu
 Permet de spécifier ce qui suit :
 
    * **Titre**
-Titre du bloc ; il est affiché en pointant la souris dessus.
+Titre du bloc ; il s’affiche lorsque l’utilisateur ou l’utilisatrice pointe dessus avec la souris.
 
    * **Texte de remplacement**
 Texte de remplacement à afficher lorsque l’image ne peut pas être affichée.
@@ -330,7 +332,7 @@ Le tableau suivant décrit les composants disponibles pour afficher et modifier 
 
 ### Paramètres communs à la plupart des composants {#settings-common-to-most-components}
 
-Les paramètres des composants Adobe Campaign sont communs à tous les composants (à l’exception des composants Clé de Principal chiffrée et Clé de réconciliation masquée).
+Les composants d’Adobe Campaign comportent des paramètres communs à tous les composants (à l’exception des composants Clé primaire chiffrée et Clé de réconciliation masquée).
 
 Dans la plupart des composants, vous pouvez configurer les éléments suivants :
 
@@ -388,7 +390,7 @@ L’exemple ci-dessous présente le composant Case à cocher (Campaign) affiché
 
 ### Champ de date (Campaign) et champ de date/HTML 5 (Campaign) {#date-field-campaign-and-date-field-html-campaign}
 
-Utilisez le champ date pour permettre aux destinataires d&#39;indiquer une date, par exemple si vous souhaitez que les destinataires indiquent leur date de naissance. Le format des dates correspond au format utilisé dans votre instance Adobe Campaign.
+Utilisez le champ date pour permettre aux personnes destinataires d’indiquer une date ; par exemple, vous pourriez souhaiter que les personnes destinataires indiquent leur date de naissance. Le format des dates correspond au format utilisé dans votre instance Adobe Campaign.
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
@@ -440,7 +442,7 @@ L’exemple ci-dessous présente le composant Clé de réconciliation masquée (
 
 ### Champ numérique (Campaign) {#numeric-field-campaign}
 
-Utilisez le champ numérique pour permettre aux destinataires de saisir des nombres, par exemple leur âge.
+Utilisez le champ numérique pour permettre aux personnes destinataires de saisir des nombres, par exemple leur âge.
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 

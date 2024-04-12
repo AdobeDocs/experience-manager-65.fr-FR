@@ -2,8 +2,11 @@
 title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
-workflow-type: ht
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 100%
 
@@ -187,7 +190,7 @@ Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessai
 
 En règle générale, le contenu de la tâche de traduction commence en statut **Version préliminaire** comme indiqué par la colonne **Statut** dans la fenêtre **Tâche de traduction**.
 
-Pour démarrer la tâche de traduction, revenez à l’aperçu du projet de traduction, cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
+Pour démarrer la tâche de traduction, revenez à la présentation du projet de traduction et appuyez ou cliquez sur le bouton chevron en haut de la carte **Tâche de traduction** et sélectionnez **Démarrer**.
 
 ![Démarrer la tâche de traduction](assets/start-translation-job-manual.png)
 
@@ -239,7 +242,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * créer des projets de traduction ;
 * savoir comment utiliser des projets de traduction pour traduire votre contenu découplé.
 
-Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction découplé AEM en consultant le document [Publication du contenu traduit](publish-content.md), dans lequel vous apprendrez à publier votre contenu traduit et à mettre à jour ces traductions à mesure que votre contenu de langue racine évolue.
+Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction découplé AEM en consultant le document [Publication du contenu traduit](publish-content.md), dans lequel vous apprendrez à publier votre contenu traduit et à mettre à jour ces traductions à mesure que votre contenu racine de langue change.
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -1,27 +1,28 @@
 ---
 title: Amélioration des traductions
-description: Améliorations et améliorations incrémentielles apportées aux fonctionnalités AEM gestion des traductions.
+description: Améliorations et perfectionnements incrémentiels apportés aux fonctionnalités de gestion de la traduction d’AEM.
 topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Amélioration des traductions{#translation-enhancements}
 
-Cette page présente des améliorations et des améliorations incrémentielles apportées aux fonctionnalités AEM gestion des traductions.
+Cette page présente des améliorations et des perfectionnements incrémentiels apportés aux fonctionnalités de gestion de la traduction d’AEM.
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
 Des options pour améliorer la productivité des projets de traduction ont été ajoutées, telles que la promotion et la suppression automatiques des lancements de traduction, et la planification de l’exécution périodique d’un projet de traduction.
 
-1. Dans votre projet de traduction, cliquez sur les points de suspension en bas de la page **Résumé de traduction** mosaïque.
+1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -41,7 +42,7 @@ Des options pour améliorer la productivité des projets de traduction ont été
 
 Il est possible de configurer plusieurs langues cibles dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
 
-1. Dans votre projet de traduction, cliquez sur les points en bas de la page **Résumé de traduction** mosaïque.
+1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -86,13 +87,13 @@ Les mises à jour de la mémoire de traduction peuvent être interceptées et en
 
 ## Copies de langue à plusieurs niveaux {#language-copies-on-multiple-levels}
 
-Les racines de langue peuvent désormais être regroupées sous des noeuds, par exemple, par région, tout en étant encore reconnues comme racines de copies de langue.
+Les racines de langues peuvent désormais être regroupées sous des nœuds, par exemple par région, tout en étant toujours reconnues comme des racines de copies de langue.
 
 ![screen_shot_2018-04-23at144012](assets/screen_shot_2018-04-23at144012.jpg)
 
 >[!CAUTION]
 >
->Un seul niveau est autorisé. Par exemple, les éléments suivants ne permettent pas à la page &quot;es&quot; de se résoudre sur une copie de langue :
+>Un seul niveau est autorisé. Par exemple, les adresses suivantes ne permettent pas à la page « es » de se résoudre en copie de langue :
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -101,9 +102,9 @@ Les racines de langue peuvent désormais être regroupées sous des noeuds, par 
 
 >[!NOTE]
 >
->Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM vérifie toujours d’abord le chemin et le nom, mais si le nom de page n’identifie pas de langue, AEM vérifie la propriété cq:language de la page pour l’identification de la langue.
+>Les racines de langues peuvent avoir n’importe quel nom de page, plutôt que simplement le code ISO de la langue en question. AEM commence toujours par vérifier le chemin et le nom mais si le nom de la page n’indique pas de langue, AEM vérifie la propriété cq:language de la page afin d’identifier la langue.
 
-## Rapports d’état de traduction {#translation-status-reporting}
+## Rapports de statut de traduction {#translation-status-reporting}
 
 Une propriété peut désormais être sélectionnée dans la vue Liste de Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite. Pour l’afficher, procédez comme suit :
 
@@ -115,7 +116,7 @@ Une propriété peut désormais être sélectionnée dans la vue Liste de Sites.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Vérifier **Traduit** sous **Traduction** et cliquez sur **Mettre à jour**.
+1. Cochez la case **Traduit** sous **Traduction** et cliquez sur **Mettre à jour**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
