@@ -9,34 +9,34 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 21%
+source-wordcount: '658'
+ht-degree: 96%
 
 ---
 
 # Prise en charge des clauses d’image pour HTML5 forms {#picture-clause-support-for-html-forms}
 
-HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des synboles numériques. Les expressions de clause d’image suivantes sont prises en charge :
+HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et la valeur formatée de la date, du texte et des synboles numériques. Les expressions de clause d’image suivantes sont prises en charge :
 
 * category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
 >
->Actuellement, Mobile Forms ne prend pas en charge la clause de modification de l’image. De plus, les symboles des clauses DateTime et Time Picture ne sont pas pris en charge.
+>À l’heure actuelle, Mobiles Forms ne prend pas en charge la clause d’édition d’image. De plus, les symboles des clauses DateTime et Time Picture ne sont pas pris en charge.
 
 ## Symboles de champ de date pris en charge {#supported-date-field-symbols}
 
-Expression prise en charge pour la clause d’image de date :
+Expression prise en charge pour la clause de date d’image :
 
 * date.long{}
 * date.short{}
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{symboles de la clause d’image de date}
+* date{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -50,60 +50,64 @@ Expression prise en charge pour la clause d’image de date :
   </tr>
   <tr>
    <td>D</td>
-   <td>Jour du mois à 1 ou 2 chiffres (1-31)</td>
+   <td>Jour du mois à 1 ou 2 chiffres (1 à 31)</td>
   </tr>
   <tr>
    <td>DD</td>
-   <td>Jour du mois à deux chiffres avec le zéro (01-31).<br /> </td>
+   <td>Jour du mois à deux chiffres (01 à 31) complétés par des zéros.<br /> </td>
   </tr>
   <tr>
    <td>M</td>
-   <td>Mois de l’année à 1 ou 2 chiffres (1-12).<br /> </td>
+   <td>Mois de l'année à 1 ou 2 chiffres (1 à 12).<br /> </td>
   </tr>
   <tr>
    <td>MM</td>
-   <td>Mois de l’année à deux chiffres avec le zéro (01-12).<br /> </td>
+   <td>Mois de l’année à deux chiffres (01 à 12) complétés par des zéros.<br /> </td>
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Nom abrégé du mois dans la langue courante<br /> </td>
+   <td>Nom du mois abrégé des paramètres régionaux actuels<br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
-   <td>Nom complet du mois dans la langue courante<br /> </td>
+   <td>Nom du mois complet des paramètres régionaux actuels<br /> </td>
   </tr>
   <tr>
    <td>EEE</td>
-   <td>Nom abrégé du jour de la semaine dans la langue courante<br /> </td>
+   <td>Nom abrégé du jour de la semaine des paramètres régionaux actuels<br /> </td>
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>Nom complet du jour de la semaine dans la langue courante<br /> </td>
+   <td>Nom complet du jour de la semaine des paramètres régionaux actuels<br /> </td>
   </tr>
   <tr>
-   <td>AA</td>
-   <td>Année à 2 chiffres, où 00 = 2000, 29 = 2029, 30 = 1930 et 99 = 1999<br /> </td>
+   <td>YY</td>
+   <td>Année à 2 chiffres, où 00 = 2000, 29 = 2029, 30 = 1930 et 99 = 1999<br /> </td>
   </tr>
   <tr>
-   <td>AAAA</td>
-   <td>Année à 4 chiffres<br /> </td>
+   <td>YYYY</td>
+   <td>Année à 4 chiffres<br /> </td>
   </tr>
  </tbody>
 </table>
 
+>[!NOTE]
+>
+> Selon la conception, le champ Date dans HTML5 Forms ne prend pas en charge la variable `MM-YYYY` au format d’édition. Toutefois, ce format est pris en charge dans le format d’affichage.
+
 ## Clause d’image numérique {#numeric-picture-clause}
 
-Les formulaires HTML5 prennent en charge les symboles d’image numérique. Cependant, il existe une différence dans la prise en charge entre les PDF forms et HTML Forms.
+Les formulaires HTML5 prennent en charge les symboles d’image numérique. Cependant, il existe une différence de prise en charge entre les formulaires PDF et les formulaires HTML.
 
-Dans **PDF forms**, un nombre est formaté quel que soit le nombre de symboles contenus dans la clause d’image.
+Dans les **formulaires PDF**, un nombre est mis en forme, quel que soit le nombre de symboles dans la clause d’image.
 
-Dans **HTML Forms**, un nombre n’est formaté que s’il contient des chiffres inférieurs au nombre de symboles dans la clause d’image.
+Dans les **formulaires HTML**, un nombre n’est mis en forme que s’il comporte des chiffres inférieurs au nombre de symboles dans la clause d’image.
 
-**Exemple**: prenez une clause d’image : num{zzz,zzz,zz9}.
+**Exemple** : considérons une clause d’image : num{zzz,zzz,zz9}.
 
-Nombre **10 000** est formaté en tant que **10 000** en HTML et en PDF forms.
+Le nombre **10000** est mis en forme en **10 000** dans les formulaires HTML et PDF.
 
-Le nombre 1000000 est formaté au format 1 000 000 en PDF forms. Toutefois, dans HTML Forms, le nombre n’est pas formaté comme 1000000.
+Le nombre 1000000 est mis en forme en 1 000 000 dans les formulaires PDF. Cependant, dans les formulaires HTML, le nombre reste 1000000, sans mise en forme.
 
 Expressions prises en charge pour la clause d’image numérique dans les **formulaires HTML** :
 
@@ -111,34 +115,34 @@ Expressions prises en charge pour la clause d’image numérique dans les **form
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{symboles de la clause d’image numérique}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
   <tr>
    <th><strong>Symbole</strong></th>
    <th><strong>Interprétation</strong></th>
-   <th>Analyse des entrées</th>
+   <th>Analyse des valeurs d’entrée</th>
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formatage des valeurs</strong>: un seul chiffre. Ou pour le chiffre zéro si les données d’entrée sont vides ou un espace à la position correspondante.<br /> </td>
-   <td>Chiffre simple</td>
+   <td><strong>Mise en forme de sortie</strong> : un seul chiffre. Ou le chiffre zéro si les données d'entrée sont vides ou un espace à la position correspondante.<br /> </td>
+   <td>Un seul chiffre</td>
   </tr>
   <tr>
-   <td>z</td>
-   <td><strong>Formatage des valeurs</strong>: un seul chiffre. Ou pour un espace si les données d’entrée sont vides, un espace ou le chiffre zéro à la position correspondante.<br /> </td>
+   <td>Z</td>
+   <td><strong>Mise en forme de sortie</strong> : un seul chiffre. Ou un espace si les données d'entrée sont vides, un espace, ou le chiffre zéro à la position correspondante.<br /> </td>
    <td>Un seul chiffre ou un espace</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formatage des valeurs</strong>: un seul chiffre. Ou pour rien si les données d’entrée sont vides, un espace ou le chiffre zéro à la position correspondante.<br /> </td>
-   <td>Un seul chiffre ou rien</td>
+   <td><strong>Mise en forme de sortie</strong> : un seul chiffre. Ou rien si les données d'entrée sont vides, un espace ou le chiffre zéro à la position correspondante.<br /> </td>
+   <td>Un chiffre ou rien</td>
   </tr>
   <tr>
-   <td>Erreurs</td>
-   <td><strong>Formatage des valeurs</strong>: partie exposant d’un nombre à virgule flottante composée du symbole exponentiel (E). Suivi du signe plus ou moins facultatif. Suivi de la valeur de l’exposant.<br /> </td>
-   <td>Identique au formatage des valeurs de sortie</td>
+   <td>E</td>
+   <td><strong>Mise en forme de sortie</strong> : la partie exposant d’un nombre à virgule flottante constituée du symbole exponentiel (E). Suivi du signe plus ou moins facultatif. Suivi de la valeur de l’exposant.<br /> </td>
+   <td>Identique à la mise en forme de sortie</td>
   </tr>
   <tr>
    <td>CR ou cr<br /> </td>
@@ -147,22 +151,22 @@ Expressions prises en charge pour la clause d’image numérique dans les **form
   </tr>
   <tr>
    <td>S ou s<br /> </td>
-   <td>Formatage des valeurs de sortie : signe moins si le nombre est négatif. Sinon un espace.<br /> </td>
-   <td>Signe moins si le nombre est négatif. Signe plus si le nombre est positif</td>
+   <td>Mise en forme de sortie : un signe moins si le nombre est négatif. Sinon, un espace.<br /> </td>
+   <td>Signe moins si le nombre est négatif. Signe plus si le nombre est positif.</td>
   </tr>
   <tr>
    <td>V</td>
-   <td>Base décimale du jeu de paramètres régionaux dominant. Permet d’indiquer la base décimale lors de l’analyse des entrées.</td>
+   <td>Base décimale des paramètres régionaux actuels. Permet à la base décimale d’être implicite lors de l’analyse des entrées.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>v</td>
-   <td>Base décimale du jeu de paramètres régionaux dominant. Permet d’indiquer la base décimale lors de l’analyse des entrées et de la mise en forme des sorties.</td>
+   <td>Base décimale des paramètres régionaux actuels. Permet à la base décimale d’être implicite lors de l’analyse des entrées et de la mise en forme de la sortie.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>.</td>
-   <td>Base décimale du jeu de paramètres régionaux dominant.</td>
+   <td>Base décimale des paramètres régionaux actuels.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
@@ -182,12 +186,12 @@ Expressions prises en charge pour la clause d’image numérique dans les **form
   </tr>
   <tr>
    <td>( (U+FF08)</td>
-   <td>Parenthèse gauche si le nombre est négatif. Sinon un espace.</td>
+   <td>Parenthèse gauche si le nombre est négatif. Sinon, un espace.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>) (U+FF09)</td>
-   <td>Parenthèse droite si le nombre est négatif. Sinon un espace.</td>
+   <td>Parenthèse droite si le nombre est négatif. Sinon, un espace.</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
@@ -198,16 +202,16 @@ Expressions prises en charge pour la clause d’image numérique dans les **form
  </tbody>
 </table>
 
-## Clause d’image de texte {#text-picture-clause}
+## Clause de texte d’image {#text-picture-clause}
 
-Les formulaires HTML5 prennent en charge les expressions de clause d’image de texte suivantes :
+Les formulaires HTML5 prennent en charge les expressions de clause de texte d’image suivantes :
 
 * text{text Picture clause symbols}
 
 | **Symbole** | **Interprétation** |
 |---|---|
-| A | Caractère alphabétique simple. |
-| X | Caractère simple. |
-| O | Caractère alphanumérique simple. |
-| 0 (zéro) | Caractère alphanumérique simple. |
-| 9 | Chiffre simple. |
+| A | Caractère alphabétique unique. |
+| X | Caractère unique. |
+| O | Caractère alphanumérique unique. |
+| 0 (zéro) | Caractère alphanumérique unique. |
+| 9 | Un seul chiffre. |
