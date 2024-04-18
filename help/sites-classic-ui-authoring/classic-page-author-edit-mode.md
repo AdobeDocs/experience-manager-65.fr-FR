@@ -193,7 +193,7 @@ Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le ca
 
 >[!NOTE]
 >
-Vous pouvez créer un composant de carrousel personnalisé pour Adobe Experience Manager qui affiche des DAM dans la gestion des actifs numériques AEM.
+>Vous pouvez créer un composant de carrousel personnalisé pour Adobe Experience Manager qui affiche des DAM dans la gestion des actifs numériques AEM.
 
 ### Graphique {#chart}
 
@@ -228,9 +228,9 @@ L’exemple suivant illustre des données de graphique suivies de l’histogramm
 
 >[!CAUTION]
 >
-La fonctionnalité complète de la gestion des fragments de contenu n’est disponible que dans l’IU optimisée pour les écrans tactiles.
+>La fonctionnalité complète de la gestion des fragments de contenu n’est disponible que dans l’IU optimisée pour les écrans tactiles.
 >
-Le composant Fragment de contenu est visible dans le sidekick de l’interface utilisateur classique, mais d’autres fonctions ne sont pas disponibles.
+>Le composant Fragment de contenu est visible dans le sidekick de l’interface utilisateur classique, mais d’autres fonctions ne sont pas disponibles.
 
 [Les fragments de contenu](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) sont créés et gérés comme des fichiers indépendants de la page. Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -282,7 +282,7 @@ L’application externe est intégrée au système de paragraphes de la page AE
 
 >[!NOTE]
 >
-Selon votre cas d’utilisation, d’autres options sont disponibles pour l’intégration d’applications externes, par exemple : [Intégration de portlets](/help/sites-administering/aem-as-portal.md).
+>Selon votre cas d’utilisation, d’autres options sont disponibles pour l’intégration d’applications externes, par exemple : [Intégration de portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -336,11 +336,11 @@ Vous pouvez faire glisser et déposer une image à partir de l’[Outil de reche
 
 >[!NOTE]
 >
-Internet Explorer ne permet pas de surveiller la progression du chargement.
+>Internet Explorer ne permet pas de surveiller la progression du chargement.
 >
-Les utilisateurs et utilisatrices d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier chargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
+>Les utilisateurs et utilisatrices d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier chargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
 >
-Reportez-vous à [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour en savoir plus sur les fonctions HTML5 utilisées par AEM.
+>Reportez-vous à [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour en savoir plus sur les fonctions HTML5 utilisées par AEM.
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
@@ -392,7 +392,7 @@ L’image finale (avec son **Titre** et sa **Description**) peut s’afficher co
 
 >[!CAUTION]
 >
-Bien que le composant Conteneur de disposition soit disponible dans l’interface utilisateur classique, sa pleine fonctionnalité n’est disponible que dans l’interface utilisateur tactile. Pour plus d’informations, voir [Mise en page réactive](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+>Bien que le composant Conteneur de disposition soit disponible dans l’interface utilisateur classique, sa pleine fonctionnalité n’est disponible que dans l’interface utilisateur tactile. Pour plus d’informations, voir [Mise en page réactive](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### Liste {#list}
 
@@ -656,9 +656,9 @@ Le composant diaporama affiche ensuite chaque diapositive dans l’ordre, pendan
 
 >[!NOTE]
 >
-Le composant **Table** est basé sur l’éditeur [Texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), tout comme le composant **[Texte](#text)**.
+>Le composant **Table** est basé sur l’éditeur [Texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), tout comme le composant **[Texte](#text)**.
 >
-Adobe recommande d’utiliser le composant **Tableau** pour les tableaux, bien qu’ils puissent également être construits avec le composant **Texte**.
+>Adobe recommande d’utiliser le composant **Tableau** pour les tableaux, bien qu’ils puissent également être construits avec le composant **Texte**.
 
 Le composant **Tableau** est préconfiguré pour vous permettre de créer, de remplir et de formater un tableau. La boîte de dialogue vous permet de configurer votre tableau et de créer entièrement le contenu, ou vous pouvez copier et coller une feuille de calcul ou un tableau à partir d’un éditeur externe, tel qu’Excel, OpenOffice ou Notepad.
 
@@ -691,9 +691,9 @@ Pour plus d’informations sur l’application de balises, voir [Utilisation des
 
 >[!NOTE]
 >
-Le composant **Texte** est basé sur [l’éditeur de texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), tout comme le composant **[Tableau](#table)**.
+>Le composant **Texte** est basé sur [l’éditeur de texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), tout comme le composant **[Tableau](#table)**.
 >
-Adobe recommande d’utiliser le composant **Tableau** pour les tableaux, bien qu’ils puissent également être construits avec le composant **Texte**.
+>Adobe recommande d’utiliser le composant **Tableau** pour les tableaux, bien qu’ils puissent également être construits avec le composant **Texte**.
 
 Le composant Texte permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de l’[éditeur de texte enrichi](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). Une série d’icônes permet de mettre en forme le texte dont les attributs de police, alignement, liens, listes et mise en retrait.
 
@@ -803,11 +803,11 @@ Après avoir placé une instance du composant sur votre page, vous pouvez config
 
 >[!NOTE]
 >
-Les formats pris en charge sont les suivants :
+>Les formats pris en charge sont les suivants :
 >
-* `.mp4`
-* `Ogg`
-* `FLV` (Flash video)
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (Flash video)
 >
 
 ## Colonnes {#columns}
@@ -842,7 +842,7 @@ Les composants Formulaire servent à créer des formulaires permettant aux visit
 
 >[!NOTE]
 >
-Voir [Aide d’AEM Forms](/help/forms/using/introduction-aem-forms.md) pour plus d’informations sur AEM Forms.
+>Voir [Aide d’AEM Forms](/help/forms/using/introduction-aem-forms.md) pour plus d’informations sur AEM Forms.
 
 Les formulaires se composent de plusieurs composants différents :
 
@@ -864,7 +864,7 @@ Vous trouverez ci-dessous un exemple de formulaire. Il se compose d’un composa
 
 >[!NOTE]
 >
-Pour plus d’informations sur le développement et la personnalisation de vos formulaires, reportez-vous à la section [Développement d’une page Forms](/help/sites-developing/developing-forms.md). La personnalisation de ce formulaire permet d’ajouter des actions, des contraintes, le préchargement de champs et l’utilisation de scripts pour activer un service, entre autres.
+>Pour plus d’informations sur le développement et la personnalisation de vos formulaires, reportez-vous à la section [Développement d’une page Forms](/help/sites-developing/developing-forms.md). La personnalisation de ce formulaire permet d’ajouter des actions, des contraintes, le préchargement de champs et l’utilisation de scripts pour activer un service, entre autres.
 
 ### Paramètres communs à (de nombreux) composants de formulaire {#settings-common-to-many-form-components}
 
@@ -890,7 +890,7 @@ Lors de la configuration de l’un des composants de formulaire, les onglets sui
 
 >[!NOTE]
 >
-Les champs affichés varient considérablement en fonction du composant individuel.
+>Les champs affichés varient considérablement en fonction du composant individuel.
 
 Ces onglets vous fournissent les paramètres nécessaires. Les onglets dépendent du type de composant individuel, mais peuvent inclure les éléments suivants :
 
@@ -1199,9 +1199,9 @@ Vous pouvez spécifier différents paramètres, notamment un titre, une descript
 
 >[!NOTE]
 >
-L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste de groupes de cases à cocher.
+>L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste de groupes de cases à cocher.
 >
-Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Informations de la carte de crédit {#credit-card-details}
 
@@ -1219,9 +1219,9 @@ Vous pouvez spécifier un titre et les éléments à afficher dans la liste. Les
 
 >[!NOTE]
 >
-Utilisez le **chemin de chargement des éléments** pour précharger des valeurs dans la liste déroulante.
+>Utilisez le **chemin de chargement des éléments** pour précharger des valeurs dans la liste déroulante.
 >
-Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Chargement du fichier {#file-upload}
 
@@ -1239,9 +1239,9 @@ Ce composant permet de créer un champ masqué. Ces champs masqués peuvent êtr
 
 >[!NOTE]
 >
-Vous pouvez également personnaliser votre formulaire pour afficher ou masquer des composants de formulaire spécifiques, en fonction de la valeur d’autres champs du formulaire. La modification de la visibilité d’un champ de formulaire est utile lorsque le champ n’est nécessaire que dans des conditions spécifiques.
+>Vous pouvez également personnaliser votre formulaire pour afficher ou masquer des composants de formulaire spécifiques, en fonction de la valeur d’autres champs du formulaire. La modification de la visibilité d’un champ de formulaire est utile lorsque le champ n’est nécessaire que dans des conditions spécifiques.
 >
-Reportez-vous à la section [Affichage et masquage des composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>Reportez-vous à la section [Affichage et masquage des composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Bouton Image {#image-button}
 
@@ -1290,9 +1290,9 @@ Vous pouvez spécifier le nom de l’élément ainsi qu’un titre et une descri
 
 >[!NOTE]
 >
-L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans les cases d’option.
+>L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans les cases d’option.
 >
-Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>Consultez [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Bouton Envoyer {#submit-button}
 
