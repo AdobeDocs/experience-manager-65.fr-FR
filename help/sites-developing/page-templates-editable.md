@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3186'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +57,7 @@ La création de modèles modifiables s’effectue essentiellement à l’aide de
 
 Pour plus d’informations sur l’utilisation de modèles modifiables dans un projet AEM, voir [Création d’un projet AEM à l’aide de Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=fr).
 
-Lors de la création d’un modèle modifiable :
+Lors de la création d’un modèle modifiable :
 
 1. Créez un [dossier pour les modèles](#template-folders). Ce dossier n’est pas obligatoire, mais il fait partie des bonnes pratiques recommandées.
 1. Sélectionnez un [type de modèle](#template-type). Ce type est copié afin de créer la [définition du modèle](#template-definitions).
@@ -216,7 +218,7 @@ Il existe plusieurs manières de créer un dossier.
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configuration**.
+1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configurations**.
 
    Les dossiers existants sont répertoriés à gauche, y compris le dossier **Global**.
 
@@ -264,7 +266,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Créateurs de modèles<br /> </td>
    <td>lecture, écriture, réplication</td>
-   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles spécifiques à un site. <code>/conf</code> space</td>
+   <td>Créateurs et créatrices de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un espace <code>/conf</code> spécifique au site.</td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -280,7 +282,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lecture, écriture, réplication</td>
-   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles spécifiques à un site. <code>/conf</code> space</td>
+   <td>Créateurs et créatrices de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un espace <code>/conf</code> spécifique au site.</td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -416,7 +418,7 @@ Les [groupes de terminaux](/help/sites-developing/mobile.md#device-groups) utili
 * Sur le type de modèle modifiable
 * Sur le de modèle modifiable
 
-Lors de la création d’un modèle modifiable, la valeur est copiée du type de modèle vers le modèle individuel. Si la valeur n’est pas définie sur le type, elle peut être définie sur le modèle. Une fois le modèle créé, il n’hérite d’aucun élément du type.
+Lors de la création d’un nouveau modèle modifiable, la valeur est copiée du type de modèle vers le modèle individuel. Si la valeur n’est pas définie sur le type, elle peut être définie sur le modèle. Une fois le modèle créé, il n’hérite d’aucun élément du type.
 
 >[!CAUTION]
 >
@@ -592,7 +594,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * [Définissez les chemins d’accès aux modèles autorisés dans les **Propriétés de la page**](/help/sites-authoring/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
      `cq:allowedTemplates`
-Sur le `jcr:content` noeud de la branche requise.
+Sur le nœud `jcr:content` de la branche requise.
 
    Par exemple, avec la valeur suivante :
 

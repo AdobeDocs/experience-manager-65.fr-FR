@@ -7,10 +7,12 @@ topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Developer Tools
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +26,7 @@ ht-degree: 97%
 
 Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 
-* Intégration transparente avec les instances AEM via Eclipse Server Connector.
+* Intégration transparente aux instances AEM via Eclipse Server Connector.
 * Synchronisation pour les bundles de contenu et d’OSGI
 * Prise en charge du débogage avec fonctionnalité de remplacement de code à chaud.
 * Bootstrap simple de projets AEM avec un assistant de création de projet spécifique.

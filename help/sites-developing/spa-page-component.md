@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +23,7 @@ Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses com
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -88,9 +90,9 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 
 >[!CAUTION]
 >
->Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. N’utilisez pas pour le travail d’un projet.
+>Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ne l’utilisez pas dans le cadre d’un projet.
 >
->Tout projet AEM doit utiliser la variable [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et qui utilise le SDK SPA. Tous les projets de SPA sur doivent être basés sur Maven Archetype for Starter Kit.
+>Tous les projets AEM devraient utiliser l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets de SPA à l’aide de React ou d’Angular et qui utiliser le SDK de SPA. Tous les projets de SPA sur AEM devraient s’appuyer sur le Kit de démarrage de SPA de l’Archétype Maven.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 

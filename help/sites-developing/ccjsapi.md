@@ -1,21 +1,22 @@
 ---
-title: API JavaScript ClientContext
-description: Découvrez l’API JavaScript pour ClientContext dans Adobe Experience Manager.
+title: API JavaScript pour Client Context
+description: Découvrez l’API JavaScript pour Client Context dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-feature: Context Hub
+feature: Context Hub,Developing,Personalization
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3106'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# API JavaScript ClientContext{#client-context-javascript-api}
+# API JavaScript pour Client Context{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -43,7 +44,7 @@ Enregistre un magasin de sessions avec ClientContext. Déclenche les événement
 
 **Paramètres**
 
-* sessionstore : CQ_Analytics.SessionStore. Objet magasin de sessions à enregistrer.
+* sessionstore : CQ_Analytics.SessionStore. Objet du magasin de sessions à enregistrer.
 
 **Renvoie**
 
@@ -57,23 +58,23 @@ Fournit des méthodes d’écoute pour l’activation et l’enregistrement du m
 
 #### onStoreInitialized(storeName, callback, delay) {#onstoreinitialized-storename-callback-delay}
 
-Enregistre une fonction de rappel appelée lors de l’initialisation d’un magasin de sessions. Pour les magasins initialisés plusieurs fois, spécifiez un délai de rappel afin que la fonction de rappel ne soit appelée qu’une seule fois :
+Enregistre une fonction de rappel appelée lors de l’initialisation d’un magasin de sessions. Pour les magasins initialisés plusieurs fois, spécifiez un délai de rappel afin que la fonction de rappel ne soit appelée qu’une seule fois :
 
-* Lorsque le magasin est initialisé pendant la période de délai d’une initialisation précédente, l’appel de la fonction précédente est annulé et la fonction est de nouveau appelée pour l’initialisation actuelle.
+* Lorsque le magasin est initialisé pendant le délai d’une initialisation précédente, l’appel de la fonction précédente est annulé et la fonction est rappelée pour l’initialisation actuelle.
 * Si le délai expire avant une initialisation ultérieure, la fonction de rappel est exécutée deux fois.
 
-Par exemple, un magasin de sessions est basé sur un objet JSON et récupéré via une requête JSON. Les scénarios d’initialisation suivants sont possibles :
+Par exemple, un magasin de sessions est basé sur un objet JSON et récupéré via une requête JSON. Les scénarios d’initialisation suivants sont possibles :
 
 * La requête est terminée, les données sont récupérées et chargées dans le magasin. Dans ce cas, l’initialisation se produit une seule fois.
 * La requête échoue (expiration du délai). Dans ce cas, l’initialisation n’a pas lieu et le magasin ne contient aucune donnée.
-* Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (expiration du délai). Il n’existe qu’une seule initialisation avec des valeurs par défaut.
+* Le magasin est pré-rempli avec des valeurs par défaut (propriétés init), mais la demande échoue (expiration du délai). Il n’y a qu’une seule initialisation avec des valeurs par défaut.
 * Le magasin est prérempli.
 
-Lorsque le délai est défini sur `true` pendant plusieurs millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
+Lorsque le délai est défini sur `true` ou sur une valeur en millisecondes, la méthode attend avant d’appeler la méthode de rappel. Si un autre événement d’initialisation est déclenché avant le dépassement du délai, il attend que le délai soit dépassé sans événement d’initialisation. Cela permet d’attendre le déclenchement d’un second événement d’initialisation et d’appeler la fonction de rappel dans le cas le plus optimisé.
 
 **Paramètres**
 
-* storeName : chaîne. Nom du magasin de sessions auquel ajouter le récepteur.
+* storeName : chaîne. Nom du magasin de sessions auquel ajouter le listener.
 * callback : fonction. Fonction à appeler lors de l’initialisation du magasin.
 * delay : booléen ou nombre. Durée de report de l’appel à la fonction de rappel, en millisecondes. Une valeur booléenne `true` utilise le délai par défaut de `200 ms`. Une valeur booléenne `false` ou un nombre négatif n’entraîne aucun report.
 
@@ -81,13 +82,13 @@ Lorsque le délai est défini sur `true` pendant plusieurs millisecondes, la mé
 
 Aucune valeur renvoyée.
 
-#### onStoreRegistered(storeName, rappel) {#onstoreregistered-storename-callback}
+#### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
 Enregistre une fonction de rappel appelée lors de l’enregistrement d’un magasin de sessions. L’événement register se produit lorsqu’un magasin est enregistré sur [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Paramètres**
 
-* storeName : chaîne. Nom du magasin de sessions auquel ajouter le récepteur.
+* storeName : chaîne. Nom du magasin de sessions auquel ajouter le listener.
 * callback : fonction. Fonction à appeler lors de l’initialisation du magasin.
 
 **Renvoie**
@@ -115,7 +116,7 @@ Crée un objet CQ_Analytics.JSONPStore.
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules. Si aucune propriété storeName n’est fournie, la méthode renvoie null.
-* serviceURL : chaîne. URL du service JSONP
+* serviceURL : chaîne. URL du service JSONP.
 * dynamicData : objet (facultatif). Données JSON à ajouter aux données d’initialisation du magasin avant l’appel de la fonction de rappel.
 * deferLoading : booléen (facultatif). Une valeur true empêche le service JSONP d’être appelé lors de la création d’objet. Une valeur false entraîne l’appel du service JSONP.
 * loadingCallback : chaîne (facultatif). Nom de la fonction à appeler pour le traitement de l’objet JSONP renvoyé par le service JSONP. La fonction de rappel doit définir un seul paramètre qui est un objet CQ_Analytics.JSONPStore.
@@ -171,7 +172,7 @@ Définit l’URL du service JSONP à utiliser pour récupérer les données JSON
 
 **Paramètres**
 
-* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON.
+* serviceURL : chaîne. L’URL du service JSONP qui fournit des données JSON.
 
 **Renvoie**
 
@@ -199,7 +200,7 @@ Nom du magasin. Utilisez la méthode `getInstance` pour récupérer cette valeur
 
 ### Méthodes {#methods-3}
 
-Voir également CQ_Analytics.SessionStore pour connaître les méthodes héritées.
+Voir aussi CQ_Analytics.SessionStore pour les méthodes héritées.
 
 #### clear() {#clear}
 
@@ -220,7 +221,7 @@ Crée un objet CQ_Analytics.JSONStore avec un nom donné et initialisé avec les
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules.
-* jsonData : objet. Objet contenant des données JSON.
+* jsonData : objet. Objet contenant les données JSON.
 
 **Renvoie**
 
@@ -254,7 +255,7 @@ Aucune donnée renvoyée.
 
 Crée des propriétés d’initialisation à partir des données d’un objet JSON. Vous pouvez éventuellement supprimer toutes les propriétés d’initialisation existantes.
 
-Les noms des propriétés sont dérivés de la hiérarchie des données dans l’objet JSON. L’exemple de code suivant représente un objet JSON :
+Les noms des propriétés sont dérivés de la hiérarchie des données dans l’objet JSON. L’exemple de code suivant représente un objet JSON :
 
 ```xml
 {
@@ -265,7 +266,7 @@ B: {
 }
 ```
 
-Pour cet exemple, les propriétés suivantes sont créées dans le magasin :
+Pour cet exemple, les propriétés suivantes sont créées dans le magasin :
 
 ```xml
 A: "valueA"
@@ -274,7 +275,7 @@ B/B1: "valueBB1"
 
 **Paramètres**
 
-* jsonData : objet JSON contenant les données à stocker.
+* jsonData : objet JSON contenant les données à stocker.
 * doNotClear : une valeur « true » préserve les propriétés d’initialisation existantes et ajoute celles dérivées de l’objet JSON. Une valeur « false » supprime les propriétés d’initialisation existantes avant d’ajouter celles dérivées de l’objet JSON.
 
 **Renvoie**
@@ -288,7 +289,7 @@ Crée un objet CQ_Analytics.JSONStore avec un nom donné et initialisé avec les
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules.
-* jsonData : objet. Objet contenant des données JSON.
+* jsonData : objet. Objet contenant les données JSON.
 
 **Renvoie**
 
@@ -296,19 +297,19 @@ Objet CQ_Analytics.JSONStore.
 
 ## CQ_Analytics.Observable {#cq-analytics-observable}
 
-Déclenche des événements et permet à d’autres objets d’écouter ces événements et de réagir. Les classes qui étendent cette classe peuvent déclencher des événements qui provoquent l’appel d’écouteurs.
+Déclenche des événements et permet à d’autres objets d’écouter ces événements et de réagir. Les classes qui étendent cette classe peuvent déclencher des événements qui provoquent l’appel des listeners.
 
 ### Méthodes {#methods-4}
 
 #### addListener(event, fct, scope) {#addlistener-event-fct-scope}
 
-Enregistre un écouteur pour un événement. Voir aussi [Création d’un écouteur pour réagir à une mise à jour de magasin de sessions](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Enregistre un écouteur pour un événement. Voir également [Création d’un listener pour réagir à une mise à jour d’un magasin de sessions](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Paramètres**
 
 * event : chaîne. Nom de l’événement à écouter.
 * fct : fonction. Fonction appelée lorsque l’événement se produit.
-* scope : objet (facultatif). Champ d’application selon lequel exécuter la fonction de gestionnaire. Le contexte &quot;this&quot; de la fonction de gestionnaire.
+* scope : objet (facultatif). Champ d’application selon lequel exécuter la fonction de gestionnaire. Le contexte « this » de la fonction de gestionnaire.
 
 **Renvoie**
 
@@ -335,7 +336,7 @@ Conteneur persistant d’un objet JSON récupéré à partir d’un service JSON
 
 ### Méthodes {#methods-5}
 
-Voir également CQ_Analytics.PersistedJSONStore pour connaître les méthodes héritées.
+Voir également CQ_Analytics.PersistedJSONStore pour les méthodes héritées.
 
 #### getInstance(storeName, serviceURL, dynamicData, deferLoading, loadingCallback) {#getinstance-storename-serviceurl-dynamicdata-deferloading-loadingcallback-1}
 
@@ -344,7 +345,7 @@ Crée un objet CQ_Analytics.PersistedJSONPStore.
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules. Si aucune propriété storeName n’est fournie, la méthode renvoie null.
-* serviceURL : chaîne. URL du service JSONP
+* serviceURL : chaîne. URL du service JSONP.
 * dynamicData : objet (facultatif). Données JSON à ajouter aux données d’initialisation du magasin avant l’appel de la fonction de rappel.
 * deferLoading : booléen (facultatif). Une valeur true empêche le service JSONP d’être appelé lors de la création d’objet. Une valeur false entraîne l’appel du service JSONP.
 * loadingCallback : chaîne (facultatif). Nom de la fonction à appeler pour le traitement de l’objet JSONP renvoyé par le service JSONP. La fonction de rappel doit définir un seul paramètre qui est un objet CQ_Analytics.JSONPStore.
@@ -392,7 +393,7 @@ Crée un objet CQ_Analytics.PersistedJSONPStore et enregistre le magasin avec Cl
 
 **Renvoie**
 
-Objet CQ_Analytics.PersistedJSONPStore enregistré.
+L’objet CQ_Analytics.PersistedJSONPStore enregistré.
 
 #### setServiceURL(serviceURL) {#setserviceurl-serviceurl-1}
 
@@ -400,7 +401,7 @@ Définit l’URL du service JSONP à utiliser pour récupérer les données JSON
 
 **Paramètres**
 
-* serviceURL : chaîne. URL du service JSONP qui fournit des données JSON.
+* serviceURL : chaîne. L’URL du service JSONP qui fournit des données JSON.
 
 **Renvoie**
 
@@ -424,7 +425,7 @@ Nom du magasin. Utilisez la méthode `getInstance` pour récupérer cette valeur
 
 ### Méthodes {#methods-6}
 
-Voir également CQ_Analytics.PersistedSessionStore pour connaître les méthodes héritées.
+Voir également CQ_Analytics.PersistedSessionStore pour les méthodes héritées.
 
 #### getInstance(storeName, jsonData) {#getinstance-storename-jsondata-1}
 
@@ -433,7 +434,7 @@ Crée un objet CQ_Analytics.PersistedJSONStore avec un nom donné et initialisé
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules.
-* jsonData : objet. Objet contenant des données JSON.
+* jsonData : objet. Objet contenant les données JSON.
 
 **Renvoie**
 
@@ -455,7 +456,7 @@ Objet représentant les données du magasin au format JSON.
 
 Crée des propriétés d’initialisation à partir des données d’un objet JSON. Vous pouvez éventuellement supprimer toutes les propriétés d’initialisation existantes.
 
-Les noms des propriétés sont dérivés de la hiérarchie des données dans l’objet JSON. L’exemple de code suivant représente un objet JSON :
+Les noms des propriétés sont dérivés de la hiérarchie des données dans l’objet JSON. L’exemple de code suivant représente un objet JSON :
 
 ```xml
 {
@@ -466,7 +467,7 @@ B: {
 }
 ```
 
-Pour cet exemple, les propriétés suivantes sont créées dans le magasin :
+Pour cet exemple, les propriétés suivantes sont créées dans le magasin :
 
 ```xml
 A: "valueA"
@@ -475,7 +476,7 @@ B/B1: "valueBB1"
 
 **Paramètres**
 
-* jsonData : objet JSON contenant les données à stocker.
+* jsonData : objet JSON contenant les données à stocker.
 * doNotClear : une valeur « true » préserve les propriétés d’initialisation existantes et ajoute celles dérivées de l’objet JSON. Une valeur « false » supprime les propriétés d’initialisation existantes avant d’ajouter celles dérivées de l’objet JSON.
 
 **Renvoie**
@@ -484,12 +485,12 @@ Aucune valeur renvoyée.
 
 #### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata-1}
 
-Crée un objet CQ_Analytics.PersistedJSONStore avec un nom donné et initialisé avec les données JSON spécifiées (appelle la méthode initJSON). Le nouvel objet est automatiquement enregistré auprès de ClientContext Manager.
+Crée un objet CQ_Analytics.PersistedJSONStore avec un nom donné et initialisé avec les données JSON spécifiées (appelle la méthode initJSON). Le nouvel objet est automatiquement enregistré auprès de Client Context Manager.
 
 **Paramètres**
 
 * storeName : chaîne. Nom à utiliser comme propriété STORENAME. La valeur de la propriété STOREKEY est définie sur storeName avec tous les caractères en majuscules.
-* jsonData : objet. Objet contenant des données JSON.
+* jsonData : objet. Objet contenant les données JSON.
 
 **Renvoie**
 
@@ -511,7 +512,7 @@ La valeur par défaut est `key`.
 
 ### Méthodes {#methods-7}
 
-Voir CQ_Analytics.SessionStore pour connaître les méthodes héritées.
+Voir CQ_Analytics.SessionStore pour les méthodes héritées.
 
 Lorsque les méthodes héritées `clear`, `setProperty`, `setProperties`, `removeProperty` sont utilisées pour modifier les données du magasin, les modifications sont automatiquement conservées, à moins que les propriétés modifiées ne soient marquées comme notPersisted.
 
@@ -577,11 +578,11 @@ Marque une propriété de données comme non persistante.
 
 **Renvoie**
 
-Aucune valeur renvoyée.
+Pas de valeur de renvoi.
 
 ## CQ_Analytics.SessionStore {#cq-analytics-sessionstore}
 
-CQ_Analytics.SessionStore représente un magasin de sessions. Créez une instance de cette classe pour créer un magasin de sessions :
+CQ_Analytics.SessionStore représente un magasin de sessions. Créez une instance de cette classe pour créer un magasin de sessions :
 
 `mystore = new CQ_Analytics.SessionStore`
 
@@ -620,7 +621,7 @@ Aucun.
 
 **Renvoie**
 
-Aucune valeur renvoyée.
+Pas de valeur de renvoi.
 
 #### getData(excluded) {#getdata-excluded}
 
@@ -628,11 +629,11 @@ Renvoie les données du magasin. Facultativement, exclut les propriétés de nom
 
 **Paramètres**
 
-excluded : (facultatif) tableau de noms de propriétés à exclure des données renvoyées.
+excluded : (facultatif) tableau de noms de propriétés à exclure des données renvoyées.
 
 **Renvoie**
 
-Objet de propriétés et de leurs valeurs.
+Un objet de propriétés et leurs valeurs.
 
 #### getInitProperty(name) {#getinitproperty-name}
 
@@ -656,7 +657,7 @@ Aucun.
 
 **Renvoie**
 
-Une valeur String qui représente le nom du magasin.
+Valeur de chaîne représentant le nom du magasin.
 
 #### getProperty(name, raw) {#getproperty-name-raw}
 
@@ -665,7 +666,7 @@ Renvoie la valeur d’une propriété. La valeur est renvoyée en tant que propr
 **Paramètres**
 
 * name : chaîne. Nom de la propriété de données à récupérer.
-* raw : booléen. Une valeur true renvoie la valeur de la propriété brute à renvoyer. Si la valeur est false, la valeur renvoyée est filtrée XSS.
+* raw : booléen. Une valeur true renvoie la valeur de la propriété brute à renvoyer. Une valeur false provoque le filtrage XSS de la valeur retournée.
 
 **Renvoie**
 
@@ -677,7 +678,7 @@ Renvoie les noms des propriétés que contient le magasin de sessions. Appelle l
 
 **Paramètres**
 
-excluded : (facultatif) tableau de noms de propriétés à omettre des résultats.
+excluded : (facultatif) tableau de noms de propriétés à omettre des résultats.
 
 **Renvoie**
 
@@ -693,7 +694,7 @@ Aucun.
 
 **Renvoie**
 
-this
+Cette valeur
 
 #### init() {#init-1}
 
@@ -725,7 +726,7 @@ Ajoute les propriétés de l’objet en question aux données d’initialisation
 
 **Paramètres**
 
-* obj : objet qui contient des propriétés énumérables.
+* obj : objet qui contient des propriétés énumérables.
 * setValues : si cette propriété est définie sur true, les propriétés obj sont ajoutées aux données du magasin de sessions à condition que les données du magasin n’incluent pas déjà une propriété du même nom. Lorsque la valeur est false, aucune donnée n’est ajoutée aux données du magasin de sessions.
 
 **Renvoie**
@@ -775,7 +776,7 @@ Définit les valeurs d’une propriété. Déclenche l’événement `update` à
 **Paramètres**
 
 * name : chaîne. Nom de la propriété.
-* value : chaîne. Valeur de la propriété.
+* value : chaîne. Valeur de propriété.
 
 **Renvoie**
 

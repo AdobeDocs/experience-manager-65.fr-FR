@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +25,7 @@ D’autres composants sont également disponibles. Vous pouvez utiliser le mode 
 
 >[!NOTE]
 >
->Soyez prudent lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges (et de l’expérience) appropriés, souvent un administrateur ou un développeur. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
+>Faites preuve de prudence lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant de l’expérience et des privilèges appropriés, souvent un administrateur ou une administratrice, ou encore un développeur ou une développeuse. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
 
 Pour ce faire, vous devrez en réalité ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Le système de paragraphes permet aux auteurs ou autrices d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant.
 

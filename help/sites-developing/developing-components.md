@@ -9,10 +9,12 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -178,7 +180,7 @@ newComponent (cq:Component)
             description
 ```
 
-La personnalisation d’une boîte de dialogue est similaire au développement d’un composant, car la boîte de dialogue est elle-même un composant (c’est-à-dire un balisage rendu par un script de composant avec le comportement/style fourni par une bibliothèque cliente).
+La personnalisation d’une boîte de dialogue est similaire au développement d’un composant dans la mesure où la boîte de dialogue est elle-même un composant (c’est-à-dire un balisage rendu par un script de composant avec le comportement/style fourni par une bibliothèque cliente).
 
 Pour consulter des exemples, voir :
 
@@ -203,13 +205,13 @@ Pour consulter des exemples, voir :
 
 Les widgets de l’IU tactile sont implémentés en tant que composants de l’IU Granite.
 
-Pour créer un widget à utiliser dans une boîte de dialogue de composant pour l’interface utilisateur tactile, vous devez : [création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md).
+Pour créer un widget à utiliser dans une boîte de dialogue de composant pour l’IU tactile, vous devez [créer un composant de champ de l’IU Granite](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur Granite, voir [Documentation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Pour plus d’informations sur l’IU Granite, consultez la [documentation sur l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. Pour créer un champ de formulaire, vous devez créer un type de ressource, ce qui équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
+Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -225,7 +227,7 @@ Une fois que vous avez créé votre type de ressource, vous pouvez instancier le
 
 Si vous souhaitez définir le style et le comportement de votre composant, vous pouvez créer une [bibliothèque cliente](/help/sites-developing/clientlibs.md) qui définit vos CSS/LESS et JS personnalisés.
 
-Pour que votre bibliothèque cliente soit chargée uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne sera pas chargée pour un autre composant), vous devez définir la propriété . `extraClientlibs` de votre boîte de dialogue au nom de catégorie de la bibliothèque cliente que vous avez créée. Ceci est conseillé si votre bibliothèque cliente est assez grande et/ou si votre champ est spécifique à cette boîte de dialogue et ne sera pas nécessaire dans d’autres boîtes de dialogue.
+Afin que la bibliothèque cliente charge uniquement pour votre boîte de dialogue de composant (c’est-à-dire qu’elle ne charge pas pour un autre composant), vous devez définir la propriété `extraClientlibs` de la boîte de dialogue sur le nom de la catégorie de la bibliothèque cliente que vous avez créée. Nous recommandons cette pratique si votre bibliothèque cliente est volumineuse et/ou si votre champ est spécifique à cette boîte de dialogue et n’est pas nécessaire dans les autres boîtes de dialogue.
 
 Afin que la bibliothèque cliente soit chargée pour toutes les boîtes de dialogue, définissez la propriété Catégorie de votre bibliothèque cliente sur `cq.authoring.dialog`. Il s’agit du nom de la catégorie de la bibliothèque cliente qui est incluse par défaut lors du rendu de toutes les boîtes de dialogue. Faites-le si votre bibliothèque cliente est petite et/ou si votre champ est générique et peut être réutilisé dans d’autres boîtes de dialogue.
 
@@ -240,7 +242,7 @@ Pour consulter un exemple, reportez-vous à :
 Selon vos besoins, vous pouvez effectuer l’une des opérations suivantes :
 
 * Étendre un champ de l’IU Granite par héritage de composant (`sling:resourceSuperType`)
-* Étendez un widget donné à partir de la bibliothèque de widgets sous-jacente (s’il existe une IU Granite, il s’agit de l’IU Coral), en suivant l’API de bibliothèque de widgets (héritage JS/CSS).
+* Étendez un widget donné à partir de la bibliothèque de widgets sous-jacente (dans le cas de l’IU Granite, il s’agit de l’IU Coral), en suivant l’API de bibliothèque de widgets (héritage JS/CSS).
 
 #### Accès aux champs de boîte de dialogue {#access-to-dialog-fields}
 
@@ -343,13 +345,13 @@ Si votre nouveau composant fait référence au contenu d’autres pages, vous po
 
 AEM prêt à l’emploi ne vérifie que le composant Référence. Pour ajouter votre composant, vous devez configurer le bundle OSGi **Configuration de référence du contenu de création de gestion de contenu Web**.
 
-Créez une entrée dans la définition, en spécifiant votre composant, ainsi que la propriété à vérifier. Par exemple :
+Créez une entrée dans la définition, en spécifiant votre composant, avec la propriété à vérifier. Par exemple :
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations et les pratiques recommandées.
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Consultez [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations et pour connaître les pratiques recommandées.
 
 ## Activation et ajout de votre composant au système de paragraphes {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -375,7 +377,7 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * Nom : `cq:authoring`
    * Type : `nt:unstructured`
 
-1. Dans ce cas, créez un noeud destiné à contenir tous les mappages ressource-composant :
+1. Sous cela, créez un nœud qui contiendra tous les mappages ressource-à-composant :
 
    * Nom : `assetToComponentMapping`
    * Type : `nt:unstructured`
@@ -395,7 +397,7 @@ Ce comportement, et la relation ressource-à-composant requise, peuvent être co
    * `assetMimetype` :
 
       * Type : `String`
-      * Valeur : type MIME de la ressource associée ; par exemple, `image/*`
+      * Valeur : type MIME de la ressource associée, par exemple `image/*`
 
    * `droptarget` :
 

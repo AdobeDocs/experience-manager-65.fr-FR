@@ -7,10 +7,12 @@ topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +33,9 @@ La configuration de la segmentation comprend la création de segments, d’une m
 Pour créer des segments :
 
 1. Ouvrez la [console de segmentation](http://localhost:4502/miscadmin#/etc/segmentation) à l’adresse **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
-1. Créez une page et saisissez un titre, par exemple : **Segments AC** - et sélectionnez la variable **Segment (Adobe Campaign)** modèle.
+1. Créez une page et saisissez un titre, par exemple, **Segments AC** et sélectionnez le modèle **Segment (Adobe Campaign)**.
 1. Sélectionnez la page créée dans l’arborescence située à gauche.
-1. Créez un segment, ciblant par exemple les utilisateurs masculins, en créant une page sous le segment que vous avez créé, appelée Masculin, puis sélectionnez l’option **Segment (Adobe Campaign)** modèle.
+1. Créez un segment, par exemple ciblant les utilisateurs masculins, en créant une page sous le segment que vous avez créé, appelé Masculin, puis sélectionnez le modèle **Segment (Adobe Campaign)**.
 1. Ouvrez la page de segment créée et effectuez un glisser-déposer d’un **identifiant de segment** du sidekick sur la page.
 1. Double-cliquez sur la caractéristique, entrez l’ID représentant le segment Masculin défini dans Adobe Campaign, par exemple, **MASCULIN**, puis cliquez sur **OK**. Le message suivant doit apparaître : `targetData.segmentCode == "MALE"`
 1. Répétez les étapes pour un autre segment, par exemple un segment ciblant les utilisatrices.
@@ -42,26 +44,26 @@ Pour créer des segments :
 
 Pour créer une marque :
 
-1. Dans **Sites**, accédez à la **Campagnes** (par exemple, dans We.Retail).
-1. Cliquez sur **Créer une page** et saisissez un titre pour la page, par exemple, Marque We.Retail et sélectionnez l’événement **Marque** modèle.
+1. Dans **Sites**, accédez au dossier **Campagnes** (par exemple dans We.Retail).
+1. Cliquez sur **Créer une page** et entrez le titre de la page, par exemple Marque We.Retail, puis sélectionnez le modèle **Marque**.
 
 ### Créer une campagne {#creating-a-campaign}
 
 Pour créer une campagne :
 
-1. Ouvrez le **Marque** page que vous avez créée.
+1. Ouvrez la page **Marque** que vous venez de créer.
 1. Cliquez sur **Créer une page** et saisissez un titre pour votre page, par exemple, Campagne We.Retail, puis sélectionnez le modèle **Campagne** et cliquez sur **Créer**.
 
 ### Créer des expériences {#creating-experiences}
 
 Pour créer des expériences pour les segments :
 
-1. Ouvrez le **Campagne** page que vous avez créée.
+1. Ouvrez la page **Campagne** que vous venez de créer.
 1. Créez des expériences pour vos segments en cliquant sur **Créer une page** et entrez le titre de la page, par exemple, Masculin puisque vous créez une expérience pour le segment Masculin, puis sélectionnez le modèle **Expérience**.
 1. Ouvrez la page Expérience créée.
 1. Cliquez sur **Modifier**, puis sous Segments, cliquez sur **Ajouter un élément**.
-1. Entrez le chemin d’accès au segment masculin, par exemple : `/etc/segmentation/ac-segments/male` et cliquez sur **OK**. Le message suivant apparaît : *Expérience ciblée au niveau de : Masculin*.
-1. Répétez les étapes précédentes pour créer une expérience pour tous les segments, par exemple la cible femme.
+1. Saisissez le chemin d’accès vers le segment masculin, par exemple `/etc/segmentation/ac-segments/male`, et cliquez sur **OK**. Le message suivant apparaît : *Expérience ciblée au niveau de : Masculin*.
+1. Répétez les étapes précédentes pour créer une expérience pour tous les segments, par exemple la cible féminine.
 
 ## Créer une newsletter avec du contenu ciblé {#creating-a-newsletter-with-targeted-content}
 
@@ -71,11 +73,11 @@ Vous pouvez créer la newsletter avec du contenu ciblé dans l’interface utili
 
 Pour créer une newsletter avec du contenu ciblé :
 
-1. Créer une newsletter avec du contenu ciblé : sous Campagnes par e-mail en Geometrixx Outdoors, cliquez sur **Créer** > **Page**, puis sélectionnez l’un des modèles Adobe Campaign Mail.
+1. Créer une newsletter avec du contenu ciblé : sous Campagnes par e-mail dans Geometrixx Outdoors, cliquez sur **Créer** > **Page**, et sélectionnez un modèle d’e-mail Adobe Campaign.
 
    >[!NOTE]
    >
-   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu de Geometrixx à partir de Package Share.
+   >[Les exemples d’e-mails ne sont disponibles que dans Geometrixx](/help/sites-developing/we-retail.md#weretail). Téléchargez un exemple de contenu Geometrixx à partir du partage de modules.
 
 1. Dans la newsletter, ajoutez des composants Texte et Personnalisation.
 1. Ajoutez le texte dans les composants Texte et Personnalisation, par exemple « Newsletter par défaut. »
@@ -85,7 +87,7 @@ Pour créer une newsletter avec du contenu ciblé :
 
    >[!NOTE]
    >
-   >Par défaut, les exemples d’e-mails inclus avec AEM utilisent Adobe Campaign comme moteur de ciblage. Pour les newsletters personnalisées, vous devrez peut-être sélectionner Adobe Campaign comme moteur de ciblage. Lors du ciblage, cliquez sur + dans la barre d’outils, saisissez le titre de la nouvelle activité, puis sélectionnez **Adobe Campaign** comme moteur de ciblage.
+   >Par défaut, les exemples d’e-mails inclus avec AEM utilisent Adobe Campaign comme moteur de ciblage. Pour les newsletters personnalisées, vous devrez peut-être sélectionner Adobe Campaign comme moteur de ciblage. Lors du ciblage, cliquez sur + dans la barre d’outils, saisissez le titre de la nouvelle activité, puis sélectionnez **Adobe Campaign** comme moteur de ciblage.
 
 1. Cliquez sur **Par défaut**, puis sur le composant Texte et personnalisation que vous avez ajouté, et vous verrez une cible comportant une flèche. Cliquez sur l’icône pour cibler ce composant.
 
@@ -105,4 +107,4 @@ Pour créer une newsletter avec du contenu ciblé :
 
    >[!NOTE]
    >
-   >Si vous configurez également les segments dans Adobe Campaign, cliquez sur **Aperçu** vous montrera les expériences de chaque segment.
+   >Si vous configurez également les segments dans Adobe Campaign, cliquer sur **Prévisualiser** affiche les expériences de chaque segment.

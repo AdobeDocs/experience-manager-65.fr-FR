@@ -9,10 +9,12 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 64%
+ht-degree: 89%
 
 ---
 
@@ -20,19 +22,19 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil. Créez autant de filtres que nécessaire pour cibler les groupes de fonctionnalités d’appareil nécessaires.
 
 Concevez vos filtres de sorte à pouvoir utiliser des combinaisons pour définir des groupes de caractéristiques. Généralement, certaines caractéristiques sont communes à différents groupes d’appareils. Par conséquent, vous pouvez utiliser certains filtres avec plusieurs définitions de groupe d’appareils.
 
-Après avoir créé un filtre, vous pouvez l’utiliser dans la variable [configuration du groupe.](/help/sites-developing/mobile.md#creating-a-device-group)
+Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration du groupe](/help/sites-developing/mobile.md#creating-a-device-group).
 
 ## Classe Java™ Filter {#the-filter-java-class}
 
-Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupe d’appareils.
+Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
-La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java™ utilise la variable `@Component`et `@Service` annotations. La classe possède la structure suivante :
+La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java™ utilise la variable `@Component`et `@Service` annotations. La classe présente la structure suivante :
 
 ```java
 package com.adobe.example.myapp;
@@ -72,7 +74,7 @@ Fournissez le code des méthodes suivantes :
 
 ### Saisie du nom et de la description du filtre {#providing-the-filter-name-and-description}
 
-Les méthodes `getTitle` et `getDescription` renvoient respectivement le nom et la description du filtre. Le code suivant illustre la mise en oeuvre la plus simple :
+Les méthodes `getTitle` et `getDescription` renvoient respectivement le nom et la description du filtre. Le code suivant illustre l’implémentation la plus simple :
 
 ```java
 public String getDescription() {
@@ -86,13 +88,13 @@ public String getTitle() {
 
 Le codage en dur du nom et du texte descriptif est suffisant pour les environnements de création unilingues. Envisagez d’externaliser les chaînes pour une utilisation multilingue ou de permettre la modification des chaînes sans recompiler le code source.
 
-### Évaluation par rapport aux critères de filtre {#evaluating-against-filter-criteria}
+### Évaluer par rapport aux critères de filtre {#evaluating-against-filter-criteria}
 
-La variable `matches` renvoie la fonction `true` si les fonctionnalités de l’appareil répondent à tous les critères de filtrage. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
+La fonction `matches` renvoie `true` si les caractéristiques de l’appareil satisfont tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
 
 * Un objet DeviceGroup
-* Nom de l’agent utilisateur
-* Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des fonctionnalités WURFL™ et les valeurs sont les valeurs correspondantes de la base de données WURFL™.
+* Le nom de l’agent utilisateur
+* Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des caractéristiques WURFL™ et les valeurs sont les valeurs correspondantes issues de la base de données WURFL™.
 
 L’interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contient un sous-ensemble des noms des caractéristiques WURFL™ dans les champs statiques. Utilisez ces constantes de champ en tant que clés lors de la récupération de valeurs à partir du mappage des caractéristiques de l’appareil.
 
@@ -109,7 +111,7 @@ Le package `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
 >
 >Assurez-vous que la base de données WURFL™ déployée sur AEM inclut les caractéristiques que vous utilisez comme critères de filtre. (Voir [Détection d’appareils](/help/sites-developing/mobile.md#server-side-device-detection).)
 
-### Exemple De Filtre Pour La Taille D’Écran {#example-filter-for-screen-size}
+### Exemple de filtre pour la taille d’écran {#example-filter-for-screen-size}
 
 L’exemple d’implémentation de DeviceGroupFilter suivant détermine si la taille physique de l’appareil répond aux exigences minimales. Ce filtre est destiné à ajouter un niveau de granularité au groupe d’appareils tactiles. La taille des boutons dans l’interface utilisateur de l’application doit être identique quelle que soit la taille de l’écran physique. La taille des autres éléments, tels que le texte, peut varier. Le filtre permet la sélection dynamique d’un CSS particulier qui contrôle la taille des éléments de l’interface utilisateur.
 
@@ -174,11 +176,11 @@ Les valeurs de chaîne renvoyées par les méthodes getTitle et getDescription s
 
 Le code POM suivant est utile si vous utilisez Maven pour créer vos applications. Le POM fait référence à plusieurs dépendances et modules externes requis.
 
-**Modules externes :**
+**Plug-ins :**
 
 * Module externe Compilateur Apache Maven : compile les classes Java™ du code source.
-* Module externe Apache Felix Maven Bundle : crée le lot et le manifeste
-* Module externe Apache Felix Maven SCR : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
+* Plug-in bundle Apache Felix Maven : crée le bundle et le manifeste.
+* Plug-in SCR Apache Felix Maven : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
 **Dépendances :**
 

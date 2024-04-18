@@ -7,10 +7,12 @@ topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -21,7 +23,7 @@ ht-degree: 93%
 >* Ce document donne une vue d’ensemble des opérations de gestion de base dans l’environnement de création d’Adobe Experience Manager (AEM). Il s’appuie sur la console **Sites**.
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles. En outre, des fonctionnalités supplémentaires sont disponibles dans certaines consoles. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute AEM. En particulier lorsque [utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Plusieurs raccourcis clavier sont disponibles dans AEM. En particulier lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## L’écran de bienvenue {#the-welcome-screen}

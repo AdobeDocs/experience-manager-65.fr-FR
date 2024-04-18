@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Search,Query Builder
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +71,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 #### Propriétés {#properties}
 
 * **boolproperty**
-Chemin d’accès relatif à la propriété, par exemple : `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
+Chemin d’accès relatif à une propriété, par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
 Valeur pour laquelle vérifier la propriété, « `true` » ou « `false` ».
@@ -122,11 +124,11 @@ Ne prend pas en charge le filtrage.
 
 * **property**
 
-  Chemin d’accès relatif à un `DATE` par exemple, `jcr:lastModified`.
+  Chemin d’accès relatif à une propriété `DATE` ; par exemple, `jcr:lastModified`.
 
 * **lowerBound**
 
-  Limite de date inférieure pour laquelle vérifier la propriété, par exemple : `2014-10-01`.
+  Limite de date inférieure pour laquelle la propriété doit être vérifiée ; par exemple, `2014-10-01`.
 
 * **lowerOperation**
 
@@ -134,7 +136,7 @@ Ne prend pas en charge le filtrage.
 
 * **upperBound**
 
-  Limite supérieure pour laquelle vérifier la propriété, par exemple `2014-10-01T12:15:00`.
+  Limite supérieure pour laquelle la propriété doit être vérifiée ; par exemple, `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -249,7 +251,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **language**
 
-  Code de langue ISO, par exemple, &quot;`de`&quot;
+  Code de langue ISO ; par exemple, « `de` ».
 
 ### mainasset {#mainasset}
 
@@ -315,7 +317,7 @@ Permet de trier les résultats. Si un classement basé sur plusieurs propriété
 
 * **orderby**
 
-  Nom de propriété JCR indiqué par un caractère @ en début, par exemple : `@jcr:lastModified` ou `@jcr:content/jcr:title`ou un autre prédicat dans la requête, par exemple : `2_property`, sur laquelle trier.
+  Nom de propriété JCR indiqué par un caractère @ initial, par exemple `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou un autre prédicat dans la requête, par exemple `2_property`, sur la base duquel le tri doit être effectué.
 
 * **sort**
 
@@ -359,7 +361,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **property**
 
-  Chemin d’accès relatif à la propriété, par exemple : `jcr:title`.
+  Chemin d’accès relatif à une propriété ; par exemple, `jcr:title`.
 
 * **value**
 
@@ -447,7 +449,7 @@ Prend en charge l’extraction de facettes de la même manière que le prédicat
 
 Groupe de prédicats racine. Prend en charge toutes les fonctionnalités d’un groupe et vous permet de définir des paramètres de requête globaux.
 
-Le nom &quot;root&quot; n’est jamais utilisé dans une requête, il est implicite.
+Le nom « root » n’est jamais utilisé dans une requête ; il est implicite.
 
 #### Propriétés {#properties-18}
 
@@ -461,7 +463,7 @@ Le nom &quot;root&quot; n’est jamais utilisé dans une requête, il est implic
 
 * **p.guessTotal**
 
-  Recommandé : évitez de calculer le total des résultats qui peut s’avérer coûteux ; soit un nombre indiquant le total maximum à comptabiliser (par exemple, 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour des résultats plus modestes), soit &quot; `true`&quot; pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
+  Recommandé : évitez de calculer le total des résultats, une opération qui peut s’avérer fastidieuse ; il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1 000, un nombre qui offre aux utilisateurs et utilisatrices suffisamment d’informations sur la taille approximative et des valeurs exactes pour des résultats plus petits), ou « `true` » pour compter seulement jusqu’au minimum requis `p.offset`+`p.limit`.
 
 * **p.excerpt**
 
@@ -523,7 +525,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **tag**
 
-  Chemin d’accès au titre de la balise à rechercher, par exemple, &quot;Propriétés de la ressource : orientation/paysage&quot;.
+  Chemin d’accès au titre de la balise à rechercher ; par exemple, « Propriétés de ressource : Orientation/Paysage ».
 
 * **N_value**
 
@@ -543,7 +545,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **tagid**
 
-  Identifiant de balise afin que vous puissiez rechercher, par exemple, &quot; `properties:orientation/landscape`&quot;.
+  ID de balise pour pouvoir effectuer une recherche, par exemple « `properties:orientation/landscape` ».
 
 * **N_value**
 
@@ -587,4 +589,4 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **type**
 
-  Type de noeud ou nom de mixin à rechercher, par exemple : `cq:Page`.
+  Type de nœud ou nom de mixin à rechercher ; par exemple, `cq:Page`.

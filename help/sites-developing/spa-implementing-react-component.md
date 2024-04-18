@@ -1,6 +1,6 @@
 ---
 title: Mise en œuvre d’un composant React pour SPA
-description: Cet article présente un exemple d’adaptation d’un composant React simple et existant pour travailler avec l’éditeur SPA Adobe Experience Manager (AEM).
+description: Cet article présente un exemple sur la manière d’adapter un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’Adobe Experience Manager (AEM).
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -8,35 +8,37 @@ content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans Adobe Experience Manager (AEM) pour un site créé à l’aide de structures SPA.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Le souhait des développeurs et des développeuses est de pouvoir créer des sites avec des structures SPA. Les auteurs et les autrices pour leur part, souhaitent modifier facilement du contenu dans Adobe Experience Manager (AEM) pour un site conçu à l’aide de structures SPA.
 
-La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
+La fonctionnalité de création d’application monopage constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
-Grâce au contrat simple et léger qui est requis par AEM et établi entre l’SPA et l’éditeur d’Adobe, l’adaptation d’une application JavaScript existante pour l’utiliser avec un  dans l’ est simple.
+Grâce à un contrat simple et léger requis par AEM et établi entre la SPA et l’éditeur de SPA, il est facile d’utiliser une application JavaScript existante et de l’adapter à une SPA dans AEM.
 
 Cet article illustre l’exemple du composant Météo de la SPA d’exemple We.Retail Journal.
 
 Vous devez connaître la [structure d’une application SPA pour AEM](/help/sites-developing/spa-getting-started-react.md) avant de lire cet article.
 
 >[!CAUTION]
->Ce document n’utilise l’[exemple d’application Journal We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) qu’à des fins de démonstration. Ne l’utilisez pas pour un travail de projet.
+>Ce document n’utilise l’[exemple d’application Journal We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) qu’à des fins de démonstration. Ne l’utilisez pas dans le cadre d’un projet.
 >
->Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
+>Tout projet AEM doit utiliser l’[archetype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK de SPA.
 
 ## Le composant Météo {#the-weather-component}
 
@@ -60,7 +62,7 @@ La modification est conservée et le composant se met automatiquement à jour av
 
 ### Implémentation du composant Météo {#weather-component-implementation}
 
-La composante météorologique est basée sur un composant React disponible publiquement, appelé [React Open Weather](https://www.npmjs.com/package/react-open-weather). Il a été adapté pour fonctionner en tant que composant dans l’exemple d’application SPA We.Retail Journal.
+Le composant Météo est basé sur un composant React disponible publiquement, appelé [React Open Weather](https://www.npmjs.com/package/react-open-weather). Il a été adapté pour fonctionner en tant que composant dans l’exemple d’application SPA We.Retail Journal.
 
 Vous trouverez ci-dessous des extraits de la documentation NPM sur l’utilisation du composant React Open Weather.
 
@@ -124,7 +126,7 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Bien qu’un composant principal doive déjà exister, le développeur front-end peut utiliser le composant React Open Weather dans l’SPA We.Retail Journal sans aucun codage.
+Bien qu’un composant back-end doive déjà exister, l’équipe de développement front-end peut utiliser le composant React Open Weather dans le SPA We.Retail Journal avec peu de codage.
 
 ## Étape suivante {#next-step}
 

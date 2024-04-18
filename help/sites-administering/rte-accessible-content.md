@@ -4,10 +4,12 @@ description: Configurez l’éditeur de texte enrichi pour créer des pages web 
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -46,17 +48,17 @@ En configurant un module externe dans la sous-branche `rtePlugins` appropriée d
 
 ### Exemple : spécification des formats de paragraphes disponibles dans le champ de sélection de l’éditeur de texte enrichi {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-De nouveaux formats de bloc sémantique peuvent être mis à disposition pour sélection par :
+De nouveaux formats block sémantiques peuvent être disponibles pour la sélection à l’aide des méthodes suivantes :
 
 1. Selon votre éditeur de texte enrichi, déterminez son [emplacement de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) et accédez-y.
-1. [Activation du champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md); par [activation du module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes .](/help/sites-administering/rich-text-editor.md).
+1. [Activez le champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md) en [activant le module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md).
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
    * à l’aide du paragraphe pied-de-mouche dans l’IU optimisée pour les écrans tactiles ;
    * en utilisant le champ **Format** (sélecteur pop-up) dans l’IU classique.
 
-Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, de plus grandes options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
+Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, de plus grandes options pour les utilisateurs et les utilisatrices qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
 
 ## Utilisation de la fonction de modification de la source {#use-of-the-source-edit-feature}
 
@@ -74,7 +76,7 @@ La procédure suivante explique comment étendre le composant **Tableau** avec u
 
 ### Exemple - Ajout de la légende à la boîte de dialogue Propriétés du tableau {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (c’est-à-dire le nom de l’attribut DOM) pour gérer automatiquement son contenu.
+Dans le constructeur de l’élément `TablePropertiesDialog`, ajoutez un champ de saisie de texte supplémentaire utilisé pour modifier la légende. Notez que `itemId` doit être défini sur `caption` (à savoir le nom de l’attribut DOM) pour traiter automatiquement son contenu.
 
 Dans le composant **Tableau**, vous devez définir ou supprimer explicitement l’attribut vers ou depuis l’élément DOM. La valeur est transmise par la boîte de dialogue dans l’objet `config`. Notez que les attributs DOM doivent être définis ou supprimés à l’aide des méthodes `CQ.form.rte.Common` correspondantes (`com` est un raccourci de `CQ.form.rte.Common`) pour éviter les pièges courants des mises en œuvre de navigateur.
 
@@ -84,7 +86,7 @@ Dans le composant **Tableau**, vous devez définir ou supprimer explicitement l�
 
 ### Exemple : créer un HTML accessible lors de l’utilisation de la mise en évidence dans le texte {#create-accessible-html-for-text}
 
-L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère au `uiSettings` et `rtePlugins` dans la boîte de dialogue.
+L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le nœud suivant en tant que frère pour les nœuds `uiSettings` et `rtePlugins` dans la boîte de dialogue.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">
@@ -101,7 +103,7 @@ L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la p
 
 ### Instructions détaillées {#step-by-step-instructions}
 
-1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

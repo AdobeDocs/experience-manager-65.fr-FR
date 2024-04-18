@@ -7,10 +7,12 @@ topic-tags: personalization
 content-type: reference
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +28,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 >
 >Le chemin contenant l’exemple de configuration ContextHub utilisé par l’implémentation [We.Retail de référence](/help/sites-developing/we-retail.md) (`/libs/settings/cloudsettings/legacy`) ne doit être utilisé que comme référence pour créer votre propre configuration.
 >
->N’utilisez pas dans un projet comme votre propre configuration ContextHub.
+>Il ne doit pas être utilisé dans un projet en tant que votre propre configuration ContextHub.
 
 ## Persistance {#persistence}
 
@@ -37,7 +39,7 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * ContextHub fournit plusieurs [exemples de types de magasin](/help/sites-developing/ch-samplestores.md).
 * Utilisez les consoles AEM pour [créer des magasins](ch-configuring.md#creating-a-contexthub-store).
 * Les développeurs peuvent [créer des types de magasin personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
-* Les développeurs peuvent [accès aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript.
+* L’équipe de développement peut [accéder aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript.
 
 ## Segmentation {#segmentation}
 

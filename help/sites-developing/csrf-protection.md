@@ -7,16 +7,18 @@ topic-tags: introduction
 content-type: reference
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 # Le framework de protection CSRF {#the-csrf-protection-framework}
 
-Outre le filtre de référent Apache Sling, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
+Outre le filtre référent Apache Sling, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
 
 Le framework utilise des jetons pour garantir que la demande du client est légitime. Les jetons sont générés lorsque le formulaire est envoyé au client et validé lorsque le formulaire est renvoyé au serveur.
 
@@ -28,18 +30,18 @@ Le framework utilise des jetons pour garantir que la demande du client est légi
 
 ### Dépendances {#dependencies}
 
-Tout composant qui repose sur la variable `granite.jquery` La dépendance peut bénéficier automatiquement de la structure de protection CSRF. Dans le cas contraire, pour l’un de vos composants, vous devez déclarer une dépendance à `granite.csrf.standalone` avant de pouvoir utiliser la structure.
+Tout composant associé à la dépendance `granite.jquery` bénéficie automatiquement du framework de protection CSRF. Si ce n’est pas le cas pour l’un de vos composants, vous devez déclarer une dépendance à `granite.csrf.standalone` avant de pouvoir utiliser le framework.
 
 ### Réplication de la clé de chiffrement {#replicating-crypto-keys}
 
-Pour utiliser les jetons, vous devez répliquer le binaire HMAC sur toutes les instances de votre déploiement. Voir [Répliquer la clé HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) pour plus d’informations.
+Pour utiliser les jetons, vous devez répliquer le HMAC binaire sur toutes les instances de votre déploiement. Voir [Répliquer la clé HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) pour plus d’informations.
 
 >[!NOTE]
 >
->Veillez également à [Modifications de la configuration de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html) pour utiliser la structure de protection CSRF.
+>Assurez-vous également d’effectuer les [modifications de configuration de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html) nécessaires pour utiliser le framework de protection CSRF.
 
 >[!NOTE]
 >
->Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste pour s’assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
+>Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter « **&amp;ast;** » au manifeste afin de vous assurer que le jeton ne met pas hors ligne l’appel de génération de jeton CSRF. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-Webapps/).
 >
 Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

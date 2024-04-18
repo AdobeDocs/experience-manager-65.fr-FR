@@ -5,23 +5,25 @@ topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1945'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction-and-walkthrough}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
+Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Les développeurs et développeuses souhaitent pouvoir créer des sites avec des frameworks SPA. Les auteurs et autrices, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels frameworks.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -45,9 +47,9 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!CAUTION]
 >
->Ce document utilise l’[exemple d’application de projet WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) des fins de démonstration uniquement. N’utilisez pas pour le travail d’un projet.
+>Ce document utilise l’[exemple d’application de projet WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) des fins de démonstration uniquement. Ne l’utilisez pas dans le cadre d’un projet.
 >
->Tout projet AEM doit utiliser la variable [AEM Archétype de projet,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) qui prend en charge SPA projets à l’aide de React ou d’Angular et utilise le SDK SPA.
+>Tout projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ### Qu’est-ce qu’une SPA ? {#what-is-a-spa}
 
@@ -80,7 +82,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 ### Comment fonctionne une SPA ? {#how-does-a-spa-work}
 
-L’idée principale sous-jacente à un SPA est que les appels et la dépendance à l’égard d’un serveur sont réduits afin de minimiser les retards causés par les appels au serveur, de sorte que SPA s’approche de la réactivité d’une application native.
+L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits pour minimiser les retards liés aux appels du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
 Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
@@ -98,7 +100,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 
 ## Expérience de modification de contenu avec une SPA {#content-editing-experience-with-spa}
 
-Lorsqu’un SPA est créé pour utiliser l’AEM Éditeur, l’auteur du contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
+Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, le créateur ou la créatrice de contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
 
 1. Modifiez l’application de projet SPA WKND dans AEM.
 
@@ -110,7 +112,7 @@ Lorsqu’un SPA est créé pour utiliser l’AEM Éditeur, l’auteur du contenu
 
    ![Étape 2](assets/spa-walkthrough-step-2.png)
 
-1. Modifiez le contenu normalement dans AEM. Les modifications sont conservées.
+1. Modifiez le contenu comme d’habitude dans AEM. Les modifications sont conservées.
 
    ![Étape 3](assets/spa-walkthrough-step-3.png)
 
@@ -184,7 +186,7 @@ La section suivante, [Chargement d’une application SPA](#loading-an-spa-applic
 
 1. Basculez vers l’onglet **Réseau** des outils de développement et chargez à nouveau la page.
 
-   Ignorant les demandes d’image, les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances et les données JSON de la page.
+   Sans tenir compte des requêtes d’image, notez que les principales ressources de la page qui sont chargées sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances, ainsi que les données JSON de la page.
 
    ![Étape 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -214,7 +216,7 @@ La section suivante, [Chargement d’une application SPA](#loading-an-spa-applic
 
 ### Interaction avec l’éditeur de SPA {#interaction-with-the-spa-editor}
 
-À l’aide de l’exemple d’application de projet WKND SPA, il est clair comment l’application se comporte et est chargée lorsqu’elle est publiée, à l’aide des services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
+L’exemple d’application de projet SPA WKND montre clairement comment l’application se comporte et est chargée lorsqu’elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON et le chargement asynchrone des ressources.
 
 De plus, pour le créateur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
 
@@ -226,7 +228,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 1. À l’aide des outils de développement intégrés de votre navigateur, inspectez le contenu de la page. À l’aide de l’outil de sélection, sélectionnez un composant modifiable sur la page et affichez le détail de l’élément.
 
-   Le composant comporte un nouvel attribut de données `data-cq-data-path`.
+   Le composant possède un nouvel attribut de données `data-cq-data-path`.
 
    ![Étape 2](assets/spa-walkthrough-step-2-2.png)
 
@@ -236,7 +238,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
    Ce chemin d’accès permet de récupérer et d’associer l’objet de configuration de contexte de modification de chaque composant.
 
-   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine la configuration modifiable qui est associée au composant, de sorte que le cadre, la barre d’outils appropriés, etc., soit chargé.
+   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans la SPA. En fonction de cet attribut, l’éditeur de SPA détermine quelle configuration modifiable est associée au composant, de sorte que le bon cadre, la bonne barre d’outils etc., soient chargés.
 
    Certains noms de classe spécifiques sont également ajoutés en vue de marquer les espaces réservés, ainsi que pour la fonctionnalité de glisser-déposer des ressources.
 

@@ -8,16 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Composants{#components}
 
-Adobe Experience Manager (AEM) est fourni avec tout un éventail de composants prêts à l’emploi qui offrent des fonctionnalités complètes aux personnes créant des sites web. Elles sont disponibles lorsque [modifier une page ;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) et sont regroupées par domaine fonctionnel principal (c’est-à-dire par groupe de composants) afin de faciliter le filtrage.
+Adobe Experience Manager (AEM) est fourni avec tout un éventail de composants prêts à l’emploi qui offrent des fonctionnalités complètes aux personnes créant des sites web. Ils sont disponibles lors de la [modification d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) et sont regroupés par domaine fonctionnel principal (appelé groupe de composants) pour faciliter le filtrage.
 
 >[!CAUTION]
 >

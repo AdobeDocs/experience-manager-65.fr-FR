@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 100%
@@ -393,7 +395,7 @@ Par défaut, Experience Manager recherche le dossier sélectionné et tous les 
 >* Dans l’interface utilisateur classique, vous pouvez rechercher des éléments **Flash** et **FXG**. Le filtrage de ces deux éléments n’est pas pris en charge par l’interface utilisateur optimisée pour les écrans tactiles.
 >
 >* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats retournent le rendu d’origine (uniquement &#42;.mp4) et le rendu codé.
->* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
+* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
 >
 
 **Statut de publication** - Vous pouvez filtrer les ressources selon leur statut de publication : Publiée ou Dépubliée. Si vous ne sélectionnez aucun statut de publication, Experience Manager recherche par défaut tous les statuts de publication.

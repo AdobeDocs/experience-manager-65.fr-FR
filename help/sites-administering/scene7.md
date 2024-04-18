@@ -7,10 +7,12 @@ topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '5425'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +66,7 @@ Lorsque vous travaillez avec des ressources dans cette solution, vous suivez ce 
 1. Créer des visionneuses d’images directement dans Experience Manager
 1. Le cas échéant, ajoutez de l’interactivité aux images ou aux vidéos.
 
-Les composants que vous utilisez pour Dynamic Media se trouvent dans la zone du composant **[!UICONTROL Dynamic Media]** en [mode Conception](/help/sites-authoring/author-environment-tools.md#page-modes). Il s’agit des éléments suivants :
+Les composants que vous utilisez pour Dynamic Media se trouvent dans la zone du composant **[!UICONTROL Dynamic Media]** en [mode Conception](/help/sites-authoring/author-environment-tools.md#page-modes). Les composants incluent les éléments suivants :
 
 * **[!UICONTROL Dynamic Media]** : le composant **[!UICONTROL Dynamic Media]** est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. Le composant prend en charge les paramètres prédéfinis d’image, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
@@ -366,7 +368,7 @@ Lorsqu’une instance Experience Manager est configurée pour traiter le codage
 
    >[!NOTE]
    >
-   >Bonne pratique : la plupart des ressources sont assimilées en quelques minutes au plus (par exemple, les images). Cependant, dans certains cas (par exemple, les vidéos plus volumineuses), augmentez la valeur du délai d’expiration à 7 200 secondes (deux heures) pour tenir compte du temps de traitement long. Sans cela, cette tâche de chargement Dynamic Media Classic indique **[!UICONTROL UploadFailed]** dans les métadonnées JCR (Java™ Content Repository).
+   >Bonne pratique : la plupart des ressources sont assimilées en quelques minutes au plus (par exemple, les images). Cependant, dans certains cas (par exemple, pour les vidéos volumineuses), la valeur du délai d’expiration doit être augmentée à 7 200 secondes (2 heures) afin de prendre en compte les temps de traitement longs. Sans cela, cette tâche de chargement Dynamic Media Classic indique **[!UICONTROL UploadFailed]** dans les métadonnées JCR (Java™ Content Repository).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -384,7 +386,7 @@ Lorsqu’une ressource est ajoutée à Experience Manager Assets, elle est aut
 
 1. Sélectionnez l’icône d’Experience Manager et accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Sous l’en-tête Dynamic Media, sous Configurations disponibles, sélectionnez **[!UICONTROL dms7 (Dynamic Media)]**.
-1. Sélectionnez l’onglet **[!UICONTROL Avancé]** et sélectionnez la case à cocher **[!UICONTROL Activer le chargement automatique]**, puis sélectionnez **[!UICONTROL OK]**. Configurez le workflow Ressources de gestion des actifs numériques pour inclure le téléchargement vers Dynamic Media Classic.
+1. Sélectionnez l’onglet **[!UICONTROL Avancé]** et sélectionnez la case à cocher **[!UICONTROL Activer le chargement automatique]**, puis sélectionnez **[!UICONTROL OK]**. Configurez le workflow de ressources de gestion des ressources numériques pour inclure le chargement vers Dynamic Media Classic.
 
    >[!NOTE]
    >
@@ -588,9 +590,9 @@ Si vous rencontrez des problèmes pour intégrer Experience Manager à Dynamic�
 * Vérifiez que la ressource que vous téléchargez se trouve dans le dossier **[!UICONTROL Cible CQ]** (vous spécifiez ce dossier dans la configuration cloud de Dynamic Media Classic).
 * Si ce n’est pas le cas, vous devez configurer la configuration cloud dans la section **[!UICONTROL Propriétés de la page]** de cette page pour autoriser le chargement vers le dossier **[!UICONTROL ad hoc CQ]**.
 
-* Pour plus d’informations, consultez les journaux .
+* Pour plus d’informations, consultez les journaux.
 
-**Si vos paramètres vidéo prédéfinis n’apparaissent pas :**
+**Si vos paramètres vidéo prédéfinis n’apparaissent pas :**
 
 * Assurez-vous que vous avez configuré la configuration cloud de cette page dans la section **[!UICONTROL Propriétés de la page]**. Les paramètres vidéo prédéfinis sont disponibles dans le composant vidéo Dynamic Media Classic.
 

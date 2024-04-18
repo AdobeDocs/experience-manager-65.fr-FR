@@ -1,16 +1,18 @@
 ---
 title: Exemples de types de module d’IU ContextHub
-description: ContextHub fournit plusieurs exemples de modules d’IU que vous pouvez utiliser dans vos solutions.
+description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +58,7 @@ Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript 
    * title : le texte à afficher pour cet élément ;
    * image : (facultatif) URL d’une image qui doit être affichée à gauche ;
    * icon : (facultatif) une classe d’icône CUI qui doit s’afficher à gauche ; ignorée si une image est spécifiée ;
-   * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés s’affichent en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
+   * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
 
 * **listType :** style à utiliser pour les éléments de liste déroulante. Utilisez l’une des valeurs suivantes :
 
@@ -106,7 +108,7 @@ Les instances du module d’IU contexthub.browserinfo ne requièrent pas de vale
 
 ## Type de module d’IU contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-Le module d’IU contexthub.datetime affiche la date et l’heure stockées dans un magasin nommé datetime, basé sur [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) magasin candidat.
+Le module d’IU contexthub.datetime affiche la date et l’heure stockées dans un magasin nommé datetime, basé sur le magasin candidat [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate).
 
 ![chlimage_1-78](assets/chlimage_1-78a.png)
 
@@ -182,7 +184,7 @@ Le code source du module est disponible dans /libs/granite/contextthub/component
 
 ### Configuration {#configuration-5}
 
-Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La variable `clickable` est `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
+Les instances du module d’IU contextthub.screen-orientation ne requièrent pas de valeur pour la configuration détaillée. Le texte JSON suivant représente la configuration par défaut du module. La propriété `clickable` est définie sur `false` par défaut. Si vous remplacez la configuration par défaut pour définir `clickable` sur `true`, un clic sur le module fait apparaître une fenêtre contextuelle dans laquelle vous pouvez sélectionner l’orientation.
 
 ```xml
 {
@@ -198,7 +200,7 @@ Les instances du module d’IU contextthub.screen-orientation ne requièrent pas
 
 ## Type de module d’IU contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Le module d’IU contexthub.tagcloud affiche des informations sur les balises. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) magasin candidat.
+Le module d’IU contexthub.tagcloud affiche des informations sur les balises. Dans la barre d’outils, le module d’IU affiche le nombre de balises. La fenêtre contextuelle révèle un nuage de balises et une zone de texte pour l’ajout de nouvelles balises. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store).
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '5991'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -179,12 +181,12 @@ Entrez une requête de recherche en texte brut.
 
       * **Options de la recherche avancée**
 
-         * **Notation des prédicats de Query Builder**
-Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
+         * **Notation de prédicat QueryBuilder**
+Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages contenant « Marketing » dans leur contenu s’affichent dans le carrousel.
 Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
 
    * **Classer par**
-Sélectionner `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
+Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified`, ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel.
@@ -308,7 +310,7 @@ Le composant Flash vous permet de charger une animation Flash. Vous pouvez faire
 
    * **Mode Fenêtre**
 
-     Affichage de la fenêtre, par exemple, opaque, transparente ou en tant que fenêtre distincte (solide).
+     Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
 
    * **Couleur d’arrière-plan**
 
@@ -1039,9 +1041,10 @@ Le champ **Chemin de chargement** vous permet de précharger des valeurs dans le
          * **Page Créer un compte**
 Page utilisée lors de la création d’un compte.
 
-      * **Créer le contenu**
+      * **Créer du contenu**
 
-         * Chemin d’accès au contenu Chemin d’accès au contenu de tout contenu que le formulaire vide. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
+         * Chemin d’accès au contenu
+Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
            `/forms/feedback/`
 
          * **Type**

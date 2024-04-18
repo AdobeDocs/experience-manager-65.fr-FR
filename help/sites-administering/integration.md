@@ -1,16 +1,18 @@
 ---
 title: Intégration de solutions
-description: En savoir plus sur l’intégration de Adobe Experience Manager (AEM) à d’autres services Adobes ou tiers.
+description: En savoir plus sur l’intégration d’Adobe Experience Manager (AEM) à d’autres services Adobe ou services tiers.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +28,7 @@ Les informations suivantes sont disponibles concernant l’intégration d’AEM 
 
 >[!NOTE]
 >
->Si vous utilisez une configuration de proxy personnalisée avec votre intégration, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
+>Si vous utilisez une configuration de proxy personnalisée avec votre intégration, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient).
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).

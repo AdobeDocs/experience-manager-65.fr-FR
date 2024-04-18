@@ -8,10 +8,12 @@ topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '9070'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -103,7 +105,7 @@ Par défaut, AEM ajoute un **texte de remplacement** à vos images. Dans l’int
 
 >[!NOTE]
 >
->Dans les deux scénarios ci-dessus, la valeur par défaut **Texte de remplacement** n’est pas visible dans le **Propriétés d’image avancées** . Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans la variable **Texte de remplacement** champ .
+>Dans les deux scénarios ci-dessus, la valeur par défaut **Texte de remplacement** n’est pas visible dans l’onglet **Propriétés d’image avancées**. Pour modifier la valeur par défaut, il vous suffit de saisir une nouvelle valeur dans le champ **Texte de remplacement**.
 
 >[!NOTE]
 >
@@ -138,9 +140,9 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Tableaux et graphiques :
 
-  ces éléments présentent généralement des données numériques. Il est également possible de fournir un texte alternatif en fournissant un bref résumé des principales tendances affichées dans le diagramme ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet **Propriétés d’image avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
+  ces éléments présentent généralement des données numériques. Il est également possible de fournir un texte alternatif en fournissant un bref résumé des principales tendances affichées dans le diagramme ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide du champ **Description** dans l’onglet des propriétés d’image **Avancées**. En outre, vous pouvez fournir les données sources sous forme tabulaire ailleurs dans la page ou le site.
 
-  ![Exemple de graphique. Voici la meilleure approche pour fournir une alternative.](assets/chlimage_1-2a.jpeg)
+  ![Exemple de graphe. Voici la meilleure approche pour fournir une alternative.](assets/chlimage_1-2a.jpeg)
 
   Pour spécifier un équivalent textuel pour cet exemple de graphique, ajoutez un texte `alt` concis à l’image, puis un équivalent textuel complet juste après l’image.
 
@@ -357,7 +359,7 @@ Suivez les instructions de la section [Audio-description ou version de remplacem
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : créer du contenu qui peut être présenté de différentes manières (par exemple, avec une mise en page plus simple) sans perdre d’informations ni de structure.](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Règle 1.3 - Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -379,7 +381,7 @@ Ce critère de réussite permet de s’assurer que ces informations structurelle
 
 #### Comment procéder – Informations et relations (1.3.1)  {#how-to-meet-info-and-relationships}
 
-AEM facilite la construction de pages web à l’aide d’éléments HTML appropriés. Ouvrez le contenu de votre page dans l’éditeur de texte enrichi (un composant Texte) et utilisez la variable **Format** pour spécifier l’élément structurel approprié (paragraphe et en-tête, par exemple).
+AEM facilite la construction de pages web à l’aide d’éléments HTML appropriés. Ouvrez le contenu de votre page dans l’éditeur de texte enrichi (un composant texte) et utilisez le menu **Format** pour indiquer l’élément structurel approprié (paragraphe, en-tête, etc.).
 
 L’image suivante présente du texte stylisé en tant que texte de paragraphe. L’affichage du code source utilisé indique que les balises d’ouverture et de fermeture &lt;p> et &lt;/p> sont correctes.
 
@@ -393,7 +395,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   L’image suivante illustre un exemple des différents types de titres.
 
-  ![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
+  ![Titres H1 à H3 affichés dans le sélecteur déroulant (IU classique).](assets/chlimage_1-19a.png)
 
 * **Texte mis en évidence** :
 
@@ -531,7 +533,7 @@ Pour connaître les conditions requises en rapport avec les alternatives aux cou
 
 Assurez-vous que toutes les informations qui reposent sur les caractéristiques visuelles du contenu de la page sont également présentées dans un autre format.
 
-* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne reportez-vous pas à la section *le menu de droite ;*; au lieu de cela, nommez le menu (par exemple, au moyen d’un en-tête) et faites référence à ce nom dans le texte.
+* Ne vous fiez pas à la position visuelle pour donner des informations. Par exemple, si vous souhaitez renvoyer les utilisateurs et les utilisatrices vers un menu sur le côté droit de la page pour accéder à des informations supplémentaires, ne faites pas référence au *menu de droite* ; au lieu de cela, nommez le menu (par exemple au moyen d’un en-tête) et faites référence à ce nom dans le texte.
 * Ne vous limitez pas au style de texte (texte en gras ou en italique, par exemple) comme seul moyen de transmettre l’information.
 
 >[!NOTE]
@@ -555,9 +557,9 @@ L’utilisation de termes descriptifs est acceptable s’ils ont une significati
 
 >[!NOTE]
 >
-Ce critère de réussite traite spécifiquement de la perception des couleurs. D’autres formes de perception sont abordées dans la section [Adaptable (1.3)](#adaptable); y compris l’accès programmatique à la couleur et à d’autres codes de présentation visuelle.
+Ce critère de réussite traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées dans la règle [Adaptable (1.3)](#adaptable), incluant l’accès à la couleur via un programme informatique et les autres formes de codage de la présentation visuelle.
 
-#### Objectif – Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
+#### Objectif - Utilisation de la couleur (1.4.1) {#purpose-use-of-color}
 
 La couleur est un moyen efficace d’améliorer l’aspect esthétique des pages web et est également utile pour véhiculer l’information. Cependant, il existe une plage de déficiences visuelles, de la cécité au daltonisme, ce qui signifie que certaines personnes sont incapables de distinguer certaines couleurs. Ce problème rend le codage par couleur un moyen peu fiable de fournir des informations.
 
@@ -578,15 +580,15 @@ Par exemple, assurez-vous que les informations fournies par couleur sont égalem
    <td><p><strong>Disponibilité</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Mardi 16 mars</p> </td>
+   <td><p>Mardi 16 mars</p> </td>
    <td><p>SIÈGES DISPONIBLES</p> </td>
   </tr>
   <tr>
-   <td><p>Mercredi 17 mars</p> </td>
+   <td><p>Mercredi 17 mars</p> </td>
    <td><p>SIÈGES DISPONIBLES</p> </td>
   </tr>
   <tr>
-   <td><p>Jeudi 18 mars</p> </td>
+   <td><p>Jeudi 18 mars</p> </td>
    <td><p>COMPLET</p> </td>
   </tr>
  </tbody>
@@ -607,7 +609,7 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
 * Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
 
    * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
-   * Texte décoratif : le texte ou les images de texte faisant partie d’un composant d’interface utilisateur inactif, qui sont purement décoratifs ou ne sont visibles par personne, ou qui font partie d’une image contenant un autre contenu visuel significatif, n’ont aucune exigence de contraste.
+   * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
@@ -686,8 +688,8 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 
 Remarques :
 
-1. Pour connaître les exigences relatives au contenu scintillant ou flashant, voir [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
-1. Puisque tout contenu ne satisfaisant pas ce critère de réussite peut interférer avec la capacité de l’utilisateur à utiliser la page entière, tout le contenu de la page web (qu’il soit utilisé pour satisfaire d’autres critères de réussite ou non) doit satisfaire à ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
+1. Pour les exigences relatives au contenu scintillant ou clignotant, se référer à la règle [Ne pas concevoir de contenu susceptible de provoquer des crises (2.3)](#seizures).
+1. Comme tout contenu qui ne remplit pas ce critère de réussite peut interférer avec la capacité de l’utilisateur ou de l’utilisatrice à exploiter la page entière, tout le contenu présent dans la page web (qu’il soit utilisé pour remplir d’autres critères de réussite ou non) doit remplir ce critère de réussite. Consultez [Exigence de conformité 5 : non interférence](https://www.w3.org/TR/WCAG20/#cc5).
 1. Le contenu mis à jour régulièrement par un logiciel ou diffusé en continu à l’utilisateur ou l’utilisatrice n’est pas tenu de conserver ou présenter des informations générées ou reçues entre la mise en pause et la reprise de la présentation. En effet, cela peut être techniquement impossible et peut induire en erreur dans de nombreuses situations.
 1. Une animation dans le cadre d’une phase de préchargement ou d’une situation similaire peut être considérée comme essentielle si l’interaction ne peut pas se produire au cours de cette phase pour tous les utilisateurs et utilisatrices, et si le fait de ne pas indiquer la progression risque de dérouter les utilisateurs et les utilisatrices ou de leur faire croire que le contenu a été figé ou interrompu.
 
@@ -795,7 +797,7 @@ Cependant, au moment de la rédaction de cet article, l’utilisation des titres
 
 Ainsi, bien que l’attribut de titre puisse fournir un contexte supplémentaire à un lien, gardez à l’esprit ses limites et ne l’utilisez pas comme alternative au texte du lien approprié.
 
-Lorsque le lien est composé d’une image, assurez-vous que le texte secondaire de l’image décrit la destination du lien. Par exemple, si une image d’une bibliothèque est définie comme lien vers les publications d’une personne, le texte secondaire doit être lu : **Publications de John Smith** et non **Bibliothèque**.
+Lorsque le lien est composé d’une image, assurez-vous que le texte de remplacement de l’image décrit la destination du lien. Par exemple, si une image représentant une bibliothèque est définie comme lien vers les publications d’une personne, le texte alternatif doit stipuler : **Publications de John Smith** et non **Bibliothèque**.
 
 Si l’ancre de lien contient du texte qui décrit la destination du lien en plus de l’élément image (et donc que le texte apparaît à côté de l’image), utilisez un attribut de remplacement vide pour l’image :
 
@@ -820,7 +822,7 @@ Bien qu’il soit conseillé de fournir un texte de lien qui identifie l’objec
 
 Parfois, lorsqu’il existe plusieurs liens sur une page (chacun d’eux fournissant la direction d’un lien avec des détails complexes mais nécessaires), il peut être approprié de fournir une version alternative de la page web qui affiche exactement le même contenu, mais avec un texte de lien moins détaillé.
 
-Vous pouvez également utiliser des scripts afin qu’une quantité minimale de texte soit fournie dans le lien lui-même. Mais lors de l’activation d’un contrôle approprié positionné en haut de la page, le texte du lien est *expand* plus de détails. Une approche similaire consiste à utiliser CSS pour *masquer* le lien complet aux utilisateurs et utilisatrices voyants, mais il est toujours affiché en plein écran pour les utilisateurs et utilisatrices de lecteurs d’écran. Bien que cette information ne relève pas du présent document, vous trouverez plus de détails sur la façon d’y parvenir dans la section [Comprendre – Fonction du lien (selon le contexte) (2.4.4)](#more-information-link-purpose-in-context).
+Vous pouvez également utiliser des scripts, de sorte qu’une quantité minimale de texte soit fournie dans le lien lui-même. Lors de l’activation d’une commande appropriée positionnée en haut de la page, le texte du lien est *étendu* pour afficher plus de détails. Une approche similaire consiste à utiliser CSS pour *masquer* le lien complet aux utilisateurs et utilisatrices voyants, mais il est toujours affiché en plein écran pour les utilisateurs et utilisatrices de lecteurs d’écran. Bien que cette information ne relève pas du présent document, vous trouverez plus de détails sur la façon d’y parvenir dans la section [Comprendre – Fonction du lien (selon le contexte) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### En savoir plus – Fonction du lien (selon le contexte) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -864,9 +866,9 @@ Dans AEM, la langue par défaut de la page est définie lors de sa création, ma
 
 * [Compréhension du critère de réussite 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
-* Les codes sont basés sur la norme ISO 639-1. Vous trouverez une liste plus complète de codes pour chaque langue à l’adresse [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
+* Les codes sont basés sur la norme ISO 639-1. Une liste plus exhaustive des codes pour chaque langue est disponible sur le [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Langue d’un passage (3.1.2)  {#language-of-parts}
+### Langue des parties (3.1.2)  {#language-of-parts}
 
 * Critère de réussite 3.1.2
 * Niveau AA
@@ -945,7 +947,7 @@ Lorsque des boutons d’image sont utilisés (par exemple, le composant **Bouton
 
 Lorsqu’il existe un groupe de commandes apparentées, tel que **Groupe de boutons radio**, un titre peut être nécessaire pour le groupe de commandes et pour chaque commande. Lors de l’ajout d’un ensemble de boutons radio dans AEM, le champ **Titre** fournit le titre de ce groupe, tandis que les titres individuels sont spécifiés lors de la création des boutons radio (**Éléments**).
 
-![Ajout d’éléments au groupe radio. Le titre du groupe est &quot;Contactez-moi par&quot; - défini dans le champ Titre .](assets/chlimage_1-24a.png)
+![Ajout d’éléments au groupe radio. Le titre du groupe est « Contactez-moi par », défini dans le champ Titre.](assets/chlimage_1-24a.png)
 
 Cependant, il n’existe aucune association par programmation entre le titre du groupe et les boutons radio eux-mêmes. Les personnes modifiant les modèles doivent encapsuler le titre dans les balises `fieldset` et `legend` nécessaires pour créer cette association, ce qui ne peut être fait qu’en modifiant le code source de la page. Un administrateur ou une administratrice du système peut également ajouter la prise en charge de ces éléments afin qu’ils apparaissent dans la boîte de dialogue **Propriétés du champ** (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -967,7 +969,7 @@ Le positionnement des libellés est également important, car ils permettent de 
 
   les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
-Dans les formulaires simples avec des fonctionnalités limitées, étiquetez correctement une `Submit` peut agir comme libellé pour le champ adjacent (par exemple : `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
+Dans les formulaires simples avec des fonctionnalités limitées, un bouton `Submit` approprié peut servir de libellé pour le champ adjacent (par exemple, `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 

@@ -1,16 +1,18 @@
 ---
 title: Intégration à Adobe Dynamic Tag Management
-description: Découvrez l’intégration avec Adobe Dynamic Tag Management.
+description: Découvrez l’intégration à la gestion dynamique des balises d’Adobe.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 61%
+ht-degree: 90%
 
 ---
 
@@ -32,32 +34,32 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 
 ## Options de déploiement {#deployment-options}
 
-Les options de déploiement suivantes affectent la configuration de l’intégration à Dynamic Tag Management.
+Les options de déploiement suivantes ont une incidence sur la configuration de l’intégration à la gestion dynamique des balises.
 
-### Hébergement Dynamic Tag Management {#dynamic-tag-management-hosting}
+### Hébergement de la gestion dynamique des balises {#dynamic-tag-management-hosting}
 
-AEM prend en charge Dynamic Tag Management hébergé dans le cloud ou hébergé sur AEM.
+AEM prend en charge la gestion dynamique des balises hébergée dans le cloud ou sur AEM.
 
 * Hébergée dans le cloud : les bibliothèques JavaScript Dynamic Tag Management sont stockées dans le cloud et vos pages d’AEM y font directement référence.
-* Hébergé AEM : Dynamic Tag Management génère des bibliothèques JavaScript. AEM utilise un modèle de workflow pour obtenir et installer les bibliothèques.
+* Hébergé AEM : Dynamic Tag Management génère des bibliothèques JavaScript. AEM utilise un modèle de workflow pour obtenir les bibliothèques et les installer.
 
-Le type d’hébergement utilisé par votre implémentation détermine certaines des tâches de configuration et d’implémentation que vous effectuez. Pour plus d’informations sur les options d’hébergement, voir [Hébergement : onglet Incorporer](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) dans l’aide de Dynamic Tag Management.
+Le type d’hébergement utilisé par votre implémentation détermine certaines des tâches de configuration et d’implémentation que vous effectuez. Pour plus d’informations sur les options d’hébergement, voir [Hébergement : onglet Incorporer](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) dans l’aide de la gestion dynamique des balises.
 
 ### Bibliothèque d’évaluation et de production {#staging-and-production-library}
 
-Déterminez si votre instance d’auteur AEM utilise le code d’évaluation ou de production Dynamic Tag Management.
+Déterminez si votre instance de création AEM utilise le code d’évaluation ou de production de la gestion dynamique des balises.
 
-En général, votre instance de création utilise les bibliothèques intermédiaires de gestion dynamique des balises tandis que l’instance de production utilise les bibliothèques de production. Ce scénario vous permet d’utiliser l’instance d’auteur pour tester les configurations Dynamic Tag Management non approuvées.
+En général, votre instance de création utilise les bibliothèques intermédiaires de gestion dynamique des balises tandis que l’instance de production utilise les bibliothèques de production. Ce scénario vous permet d’utiliser l’instance de création pour tester les configurations de la gestion dynamique des balises non approuvées.
 
 Si vous le souhaitez, votre instance de création peut utiliser les bibliothèques de production. Des modules de navigateur Web sont disponibles et vous permettent de basculer entre l’utilisation des bibliothèques intermédiaires à des fins de test lorsque les bibliothèques sont hébergées dans le cloud.
 
-### Utilisation du crochet de déploiement de Dynamic Tag Management {#using-the-dynamic-tag-management-deployment-hook}
+### Utiliser le hook de déploiement de la gestion dynamique des balises {#using-the-dynamic-tag-management-deployment-hook}
 
 Lorsqu’AEM héberge les bibliothèques de gestion dynamique des balises, vous pouvez utiliser le service de crochet de déploiement de gestion dynamique des balises pour pousser automatiquement les mises à jour de la bibliothèque vers AEM. Les mises à jour de la bibliothèque sont envoyées lorsque des modifications sont apportées aux bibliothèques (par exemple, lorsque les propriétés Web de gestion dynamique des balises sont modifiées).
 
-Pour utiliser le crochet de déploiement, Dynamic Tag Management doit pouvoir se connecter à l’instance AEM qui héberge les bibliothèques. [Activer l’accès à AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) pour les serveurs Dynamic Tag Management.
+Pour utiliser le crochet de déploiement, Dynamic Tag Management doit pouvoir se connecter à l’instance AEM qui héberge les bibliothèques. [Autorisez l’accès à AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) pour les serveurs de gestion dynamique des balises.
 
-Dans certains cas, AEM peut être inaccessible (par exemple, lorsqu’il se trouve derrière un pare-feu). Dans ces cas, vous pouvez utiliser l’option d’importateur d’interrogations d’AEM pour récupérer régulièrement les bibliothèques. Une expression de tâche cron détermine la planification des téléchargements de bibliothèque.
+Dans certains cas, AEM peut être inaccessible (par exemple, lorsqu’il se trouve derrière un pare-feu). Dans ces cas, vous pouvez utiliser l’option d’importateur d’interrogations d’AEM pour récupérer régulièrement les bibliothèques. Une expression de travail cron détermine la planification des téléchargements de bibliothèque.
 
 ## Activation de l’accès au service Hook de déploiement {#enabling-access-for-the-deployment-hook-service}
 
@@ -78,9 +80,9 @@ Le tableau suivant décrit les propriétés à configurer.
 | Liste autorisée d’évaluation d’adresses IP de gestion dynamique des balises | `dtm.staging.ip.whitelist` | L’adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques intermédiaires. |
 | Liste autorisée d’exploitation d’adresses IP de gestion dynamique des balises | `dtm.production.ip.whitelist` | L’adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques de production. |
 
-## Création de la configuration Dynamic Tag Management {#creating-the-dynamic-tag-management-configuration}
+## Création de la configuration de la gestion dynamique des balises {#creating-the-dynamic-tag-management-configuration}
 
-Créez une configuration cloud de sorte que l’instance AEM puisse s’authentifier auprès de Dynamic Tag Management et interagir avec votre propriété web.
+Créez une configuration cloud de sorte que l’instance AEM puisse s’authentifier auprès de la gestion dynamique des balises et interagir avec votre propriété web.
 
 >[!NOTE]
 >
@@ -113,11 +115,11 @@ Créez une configuration cloud de sorte que l’instance AEM puisse s’authenti
  </tbody>
 </table>
 
-### Propriétés d’auto-hébergement - Évaluation et production {#self-hosting-properties-staging-and-production}
+### Propriétés d’auto-hébergement – Évaluation et production {#self-hosting-properties-staging-and-production}
 
-Les propriétés suivantes de la configuration de gestion dynamique des balises permettent à AEM d’héberger les bibliothèques gestion de dynamique des balises. Les propriétés permettent à AEM de télécharger et d’installer les bibliothèques. Vous pouvez éventuellement mettre à jour automatiquement les bibliothèques afin de vous assurer qu’elles reflètent les modifications apportées à l’application de gestion Dynamic Tag Management.
+Les propriétés suivantes de la configuration de gestion dynamique des balises permettent à AEM d’héberger les bibliothèques gestion de dynamique des balises. Les propriétés permettent à AEM de télécharger et d’installer les bibliothèques. Vous pouvez éventuellement mettre à jour automatiquement les bibliothèques afin de vous assurer qu’elles reflètent les modifications apportées à l’application de gestion dynamique des balises.
 
-Certaines propriétés utilisent des valeurs obtenues à partir de la section Téléchargement de bibliothèque de l’onglet Incorporer de votre propriété web de gestion dynamique des balises. Pour plus d’informations, voir [Téléchargement de bibliothèque](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) dans l’aide de Dynamic Tag Management.
+Certaines propriétés utilisent des valeurs obtenues à partir de la section Téléchargement de bibliothèque de l’onglet Incorporer de votre propriété web de gestion dynamique des balises. Pour plus d’informations, voir [Téléchargement de bibliothèque](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) dans l’aide de la gestion dynamique des balises.
 
 >[!NOTE]
 >
@@ -141,7 +143,7 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Processus de téléchargement</td>
-   <td><p>Modèle de workflow à utiliser pour télécharger et installer la bibliothèque de gestion dynamique des balises. Le modèle par défaut est Téléchargement du lot de gestion dynamique des balises par défaut. Utilisez ce modèle, sauf si vous avez créé un modèle personnalisé.</p> <p>Le workflow de téléchargement par défaut active automatiquement les bibliothèques lorsqu’elles sont téléchargées.</p> </td>
+   <td><p>Modèle de workflow à utiliser pour télécharger et installer la bibliothèque de gestion dynamique des balises. Le modèle par défaut est Téléchargement du lot de gestion dynamique des balises par défaut. Utilisez ce modèle, sauf si vous avez créé un modèle personnalisé.</p> <p>Notez que le workflow de téléchargement par défaut active automatiquement les bibliothèques lorsqu’elles sont téléchargées.</p> </td>
   </tr>
   <tr>
    <td>Conseil du domaine</td>
@@ -157,7 +159,7 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Activer l’importateur d’interrogations</td>
-   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque de gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsque cette option est sélectionnée, la gestion dynamique des balises n’envoie pas de requêtes HTTP POST à l’URL du crochet de déploiement.</p> <p>AEM configure automatiquement la propriété d’URL de crochet de déploiement des propriétés Téléchargement de bibliothèque pour la propriété Web de gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Si cette option n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogations lorsque le crochet de déploiement Dynamic Tag Management ne peut pas se connecter à AEM, par exemple, lorsque AEM se trouve derrière un pare-feu.</p> </td>
+   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque de gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsque cette option est sélectionnée, la gestion dynamique des balises n’envoie pas de requêtes HTTP POST à l’URL du crochet de déploiement.</p> <p>AEM configure automatiquement la propriété d’URL de crochet de déploiement des propriétés Téléchargement de bibliothèque pour la propriété Web de gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Si cette option n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogations lorsque le hook de déploiement de la gestion dynamique des balises ne peut pas se connecter à AEM (par exemple, lorsqu’AEM est protégé par un pare-feu).</p> </td>
   </tr>
   <tr>
    <td>Énoncé de planification</td>
@@ -168,9 +170,9 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
 
 ![chlimage_1-352](assets/chlimage_1-352.png)
 
-### Propriétés d’hébergement dans le cloud - Évaluation et production {#cloud-hosting-properties-staging-and-production}
+### Propriétés d’hébergement dans le cloud – Test et production {#cloud-hosting-properties-staging-and-production}
 
-Vous configurez les propriétés suivantes pour votre configuration de Tag Management dynamique lorsque la configuration de balise dynamique est hébergée dans le cloud.
+Configurez les propriétés suivantes pour la configuration de la gestion dynamique des balises lorsque celle-ci est hébergée dans le cloud.
 
 <table>
  <tbody>
@@ -195,9 +197,9 @@ Vous configurez les propriétés suivantes pour votre configuration de Tag Manag
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-La procédure suivante utilise l’IU optimisée pour les écrans tactiles pour configurer l’intégration à Dynamic Tag Management.
+La procédure suivante utilise l’interface utilisateur optimisée pour les écrans tactiles afin de configurer l’intégration à la gestion dynamique des balises.
 
-1. Sur le rail, cliquez sur Outils > Opérations > Cloud > Cloud Service.
+1. Sur le rail, cliquez sur Outils > Opérations > Cloud > Services cloud.
 1. Dans la zone Tag Management dynamique, l’un des liens suivants s’affiche pour ajouter une configuration :
 
    * Cliquez sur Configurer maintenant s’il s’agit de la première configuration que vous ajoutez.
@@ -206,7 +208,7 @@ La procédure suivante utilise l’IU optimisée pour les écrans tactiles pour 
    ![chlimage_1-354](assets/chlimage_1-354.png)
 
 1. Saisissez le titre de la configuration, puis cliquez sur Créer.
-1. Dans le champ Jeton API , saisissez la valeur de la propriété Jeton API de votre compte utilisateur Tag Management dynamique.
+1. Dans le champ Jeton API, saisissez la valeur de la propriété Jeton API de votre compte d’utilisateur de gestion dynamique des balises.
 
    Pour obtenir la valeur de votre jeton API, contactez le service client de gestion dynamique des balises.
 
@@ -216,17 +218,17 @@ La procédure suivante utilise l’IU optimisée pour les écrans tactiles pour 
 
    ![chlimage_1-355](assets/chlimage_1-355.png)
 
-1. Cliquez sur Connexion à la gestion dynamique des balises. AEM s’authentifie auprès de Dynamic Tag Management et récupère la liste des sociétés auxquelles votre compte est associé.
+1. Cliquez sur Connexion à la gestion dynamique des balises. AEM s’authentifie auprès de la gestion dynamique des balises et récupère la liste des sociétés auxquelles votre compte est associé.
 1. Sélectionnez la société, puis la propriété que vous utilisez pour effectuer le suivi de votre site AEM.
-1. Si vous utilisez du code d’évaluation sur l’instance d’auteur, désélectionnez l’option Inclure le code de production sur l’auteur.
+1. Si vous utilisez du code d’évaluation sur l’instance de création, désélectionnez l’option Inclure le code de production sur l’instance de création.
 1. Si nécessaire, indiquez les valeurs des propriétés dans les onglets Paramètres d’évaluation et Paramètres de production, puis cliquez sur OK.
 
-## Téléchargement manuel de la bibliothèque Dynamic Tag Management {#manually-downloading-the-dynamic-tag-management-library}
+## Télécharger manuellement la bibliothèque de gestion dynamique des balises {#manually-downloading-the-dynamic-tag-management-library}
 
 Téléchargez manuellement les bibliothèques de gestion dynamique des balises pour les mettre immédiatement à jour dans AEM. Par exemple, téléchargez manuellement une bibliothèque mise à jour avant que l’importateur d’interrogations ne soit programmé pour télécharger automatiquement la bibliothèque.
 
-1. Sur le rail, cliquez sur Outils > Opérations > Cloud > Cloud Service.
-1. Dans la zone Tag Management dynamique, cliquez sur Afficher les configurations, puis cliquez sur votre configuration.
+1. Sur le rail, cliquez sur Outils > Opérations > Cloud > Services cloud.
+1. Dans la zone Gestion dynamique des balises, cliquez sur Afficher les configurations, puis cliquez sur votre configuration.
 1. Dans la zone Paramètres d’évaluation ou Paramètres de production, cliquez sur le bouton Déclencher le processus de téléchargement pour télécharger et déployer le lot de bibliothèques.
 
    ![chlimage_1-356](assets/chlimage_1-356.png)
@@ -243,25 +245,25 @@ Téléchargez manuellement les bibliothèques de gestion dynamique des balises p
 >* `servertype`
 >
 
-## Association d’une configuration Tag Management dynamique à votre site {#associating-a-dynamic-tag-management-configuration-with-your-site}
+## Associer une configuration de la gestion dynamique des balises à votre site {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
 Associez votre configuration de gestion dynamique des balises aux pages de votre site web de sorte qu’AEM ajoute le script requis aux pages. Associez la page racine de votre site à la configuration. Tous les descendants de cette page héritent de l’association. Si nécessaire, vous pouvez remplacer l’association sur une page descendante.
 
 Utilisez la procédure suivante pour associer une page et les descendants à une configuration de gestion dynamique des balises.
 
 1. Ouvrez la page racine de votre site dans l’IU classique.
-1. Utilisez Sidekick pour ouvrir les propriétés de la page.
-1. Dans l’onglet Cloud Service, cliquez sur Ajouter un service, sélectionnez Tag Management dynamique, puis cliquez sur OK.
+1. Utilisez le sidekick pour ouvrir les propriétés de la page.
+1. Dans l’onglet Services cloud, cliquez sur Ajouter un service, sélectionnez Gestion dynamique des balises, puis cliquez sur OK.
 
    ![chlimage_1-357](assets/chlimage_1-357.png)
 
-1. Utilisez le menu déroulant Tag Management dynamique pour sélectionner votre configuration, puis cliquez sur OK.
+1. Utilisez le menu déroulant Gestion dynamique des balises pour sélectionner votre configuration, puis cliquez sur OK.
 
-Utilisez la procédure suivante pour remplacer l’association de configuration héritée pour une page. Le remplacement affecte la page et tous les descendants de la page.
+Utilisez la procédure suivante pour remplacer l’association de configuration héritée pour une page. Le remplacement affecte la page et tous ses descendants.
 
 1. Ouvrez la page dans l’IU classique.
-1. Utilisez Sidekick pour ouvrir les propriétés de la page.
-1. Dans l’onglet Cloud Service, cliquez sur l’icône de cadenas en regard de la propriété Hérité de , puis cliquez sur Oui dans la boîte de dialogue de confirmation.
+1. Utilisez le sidekick pour ouvrir les propriétés de la page.
+1. Dans l’onglet Services cloud, cliquez sur l’icône de cadenas en regard de la propriété Hérité de, puis cliquez sur Oui dans la boîte de dialogue de confirmation.
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 

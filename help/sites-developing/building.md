@@ -5,13 +5,14 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-feature: Tagging
+feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -199,4 +200,4 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 
 >[!CAUTION]
 >
->L’installation du balisage du contenu prêt à l’emploi par le biais d’un module de mise à jour officiel (y compris les Service Packs, les Service Packs de sécurité, les Feature Packs étendus, les Cumulative Feature Packs, les correctifs etc.) réinitialise la propriété languages de la propriété `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
+>L’installation du balisage du contenu prêt à l’emploi par le biais d’un package de mise à jour officiel (y compris les packs de services, les packs de services de sécurité, les packs de fonctionnalités étendues, les packs de fonctionnalités cumulatives, les correctifs et autres) réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.

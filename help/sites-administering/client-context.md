@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering,Personalization
+role: Admin
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1961'
 ht-degree: 100%
@@ -116,7 +118,7 @@ Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtr
 
 >[!NOTE]
 >
->Les balises définies sur des ressources de gestion des ressources numériques qui s’affichent sur les pages visitées ne sont pas prises en compte.
+Les balises définies sur des ressources de gestion des ressources numériques qui s’affichent sur les pages visitées ne sont pas prises en compte.
 
 **Boutique Technographics** Ce composant dépend de votre installation.
 
@@ -128,7 +130,7 @@ Pour plus d’informations, consultez [Contexte client en détail](/help/sites-d
 
 >[!NOTE]
 >
->« Données de page » ne figure plus dans le contexte client sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant le contexte client, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
+« Données de page » ne figure plus dans le contexte client sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant le contexte client, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
 
 ## Modification du profil ClientContext {#changing-the-client-context-profile}
 

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1829'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +80,7 @@ Pour insérer un nouveau composant :
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Elles peuvent être divisées en différentes sections (par exemple, Général, Colonnes, etc.), qui peuvent être développées selon les besoins.
+1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Ils peuvent être divisés en différentes sections (par exemple, Général, Colonnes, etc.), qui peuvent être développées selon les besoins.
 
    Ces choix peuvent varier en fonction de votre environnement de production. Pour plus d’informations sur les composants, voir [Composants par défaut](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -86,7 +88,7 @@ Pour insérer un nouveau composant :
 
 ### Insérer un composant à l’aide de l’outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
 
-Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’[outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Cela crée automatiquement un composant du type approprié contenant la ressource.
+Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’[outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Cela crée automatiquement un nouveau composant du type approprié contenant la ressource.
 
 Cette procédure est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
 
@@ -109,7 +111,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
    Un composant, adapté au type de ressource, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
 
-1. [Modifier](#editmovecopypastedelete) le composant, si nécessaire.
+1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
 ## Modifier un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
 
@@ -175,14 +177,14 @@ Les composants hérités peuvent être le produit de divers scénarios :
 
 * De la [Gestion multisite](/help/sites-administering/msm.md), également en combinaison avec la [génération de modèles automatiques](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
-* Composants spécifiques, par exemple le système de paragraphes hérité dans Geometrixx.
+* Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une Live Copy).
+* Des composants spécifiques, par exemple le système de paragraphes hérités dans Geometrixx.
 
 Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous pouvez effectuer cette opération depuis :
 
 1. **Live Copy**
 
-   Si un composant fait partie d’une Live Copy ou d’un lancement, il est signalé par une icône de cadenas. Vous pouvez cliquer sur le cadenas pour annuler l’héritage.
+   Si un composant fait partie d’une Live Copy ou d’un lancement, cela est indiqué par une icône de cadenas. Vous pouvez cliquer sur le cadenas pour annuler l’héritage.
 
    * L’icône de cadenas s’affiche lorsque le composant est sélectionné, par exemple :
 
@@ -226,7 +228,7 @@ Pour des modifications à plus grande échelle de la même expression, l’optio
 
 ## Verrouillage d’une page {#locking-a-page}
 
-AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant un court moment.
+AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cette option est pratique lorsque vous souhaitez réaliser un nombre important de modifications sur une page unique ou que vous souhaitez geler le contenu d’une page pendant un certain temps.
 
 >[!CAUTION]
 >
@@ -240,7 +242,7 @@ Pour verrouiller une page, procédez comme suit :
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Un message indique que votre page est verrouillée pour d’autres utilisateurs. En outre, dans le volet de droite de la variable **Sites web** console, AEM WCM affiche la page comme verrouillée et indique quel utilisateur l’a verrouillée.
+   Un message indique que votre page est verrouillée pour les autres utilisateurs et utilisatrices. En outre, dans le volet de droite de la console **Sites web**, la gestion de contenu web d’AEM affiche la page comme verrouillée et indique qui l’a verrouillée.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 

@@ -7,10 +7,12 @@ topic-tags: integration
 content-type: reference
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Integration
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +58,7 @@ Pour résoudre ce problème, modifiez ce qui suit dans `$CAMPAIGN_HOME/conf/conf
 
 Dans Adobe Campaign Classic, assurez-vous qu’il n’y a aucune barre oblique (`/`) après le numéro de port.
 
-![Adobe Campaign Classic : assurez-vous qu’aucune barre oblique ne se trouve après le numéro de port.](assets/chlimage_1-149.png)
+![Adobe Campaign Classic : assurez-vous qu’aucune barre oblique ne se trouve après le numéro de port.](assets/chlimage_1-149.png)
 
 ## Si vous recevez un avertissement à propos de setlocale {#if-you-get-a-warning-about-your-setlocale}
 

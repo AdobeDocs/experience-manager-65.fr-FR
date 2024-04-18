@@ -1,16 +1,18 @@
 ---
-title: Configurer des formulaires de recherche
-description: Découvrez comment utiliser Search Forms pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans AEM consoles et panneaux de l’environnement de création.
+title: Configuration des formulaires de recherche
+description: Découvrez comment utiliser des formulaires de recherche pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 77%
 
 Utilisez des **formulaires de recherche** pour personnaliser la sélection des prédicats de recherche utilisés dans les panneaux de recherche disponibles dans différents panneaux ou consoles AEM de l’environnement de création. La personnalisation de ces panneaux rend la fonctionnalité de recherche polyvalente selon vos besoins spécifiques.
 
-Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété, pour rechercher des ressources correspondant à une seule propriété que vous avez spécifiée. Ou, le prédicat Options permet de rechercher des ressources qui correspondent à une ou plusieurs valeurs que vous spécifiez pour une propriété spécifique.
+Une [plage de prédicats](#predicates-and-their-settings) prête à l’emploi est disponible. Vous pouvez ajouter plusieurs prédicats, y compris (entre autres) le prédicat Propriété, pour rechercher des ressources correspondant à une seule propriété que vous avez spécifiée. Ajoutez le prédicat Options pour rechercher les ressources correspondant à une ou plusieurs valeurs que vous indiquez pour une propriété spécifique.
 
 Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-forms) utilisés dans différentes consoles et l’explorateur des ressources (lors de la modification des pages). Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessible via :
 
@@ -29,7 +31,7 @@ Vous pouvez [configurer les formulaires de recherche](#configuring-your-search-f
 
       * **Formulaires de recherche**
 
-Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois la configuration personnalisée, le verrou disparaît sauf si vous [supprimer votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default). Dans ce cas, la valeur par défaut (et l’indicateur de cadenas) est rétablie.
+Lorsque vous accédez à cette console pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration appropriée est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois la configuration personnalisée, le verrou disparaît sauf si vous [supprimez votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default). Dans ce cas, la valeur par défaut est rétablie (tout comme l’indicateur de cadenas).
 
 ![Fenêtre Formulaires de recherche](assets/chlimage_1-374.png)
 
@@ -210,13 +212,13 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     <ul>
      <li>Libellé du champ</li>
      <li>Nom de la propriété*</li>
-     <li>Chemin du noeud d’options<br /> </li>
+     <li>Chemin d’accès au nœud d’options<br /> </li>
      <li>Sélection simple</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>État de la page </td>
+   <td>Statut de la page </td>
    <td>Filtre de pages en fonction de leur statut.</td>
    <td>
     <ul>
@@ -243,7 +245,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Statut de publication </td>
-   <td>Recherche de ressources en fonction de leur état de publication</td>
+   <td>Recherche de ressources en fonction de leur statut de publication</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -263,7 +265,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Options de plage </td>
-   <td>Prédicat de recherche spécifique pour les ressources et identique au prédicat de curseur commun. est toujours disponible en raison de problèmes de rétrocompatibilité ;</td>
+   <td>Prédicat de recherche spécifique pour les ressources et identique au prédicat de curseur commun. Il est toujours disponible en raison de problèmes de rétrocompatibilité.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -296,7 +298,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Plage du curseur </td>
-   <td>Prédicat de recherche courant qui étend le prédicat de plage avec la fonctionnalité de curseur. La valeur de la propriété recherchée doit être comprise entre les limites du curseur.</td>
+   <td>Prédicat de recherche courant étendant le prédicat de plage avec la fonctionnalité de curseur. La valeur de la propriété recherchée doit être comprise entre les limites du curseur.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -337,7 +339,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >
->Ces informations sont proposées à titre de référence uniquement. Ne pas modifier `/libs`.
+>Ces informations sont proposées à titre de référence uniquement. Ne modifiez pas `/libs`.
 
 ### Paramètres de prédicat {#predicate-settings}
 
@@ -345,7 +347,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Libellé du champ**
 
-  Libellé qui s’affiche sous la forme de l’en-tête réductible ou du libellé du champ du prédicat.
+  Libellé qui s’affiche sous forme d’en-tête réductible ou de libellé de champ du prédicat.
 
 * **Description**
 
@@ -359,7 +361,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
   Propriété selon laquelle effectuer la recherche. Elle utilise un chemin relatif et les caractères génériques `*/*/*` pour spécifier la profondeur de la propriété par rapport au nœud `jcr:content` (chaque astérisque représente un niveau de nœud).
 
-  Si vous souhaitez effectuer une recherche uniquement sur un noeud enfant de premier niveau de la ressource qui a la propriété `x` sur la propriété `jcr:content` node use `*/jcr:content/x`
+  Si vous souhaitez effectuer une recherche uniquement sur le nœud enfant de premier niveau de la ressource, dont la propriété `x` est égale au nœud `jcr:content`, utilisez `*/jcr:content/x`.
 
 * **Détails de propriété**
 
@@ -377,7 +379,7 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Chemin d’accès aux options**
 
-  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, Après avoir sélectionné **+**, l’icône permet d’ajouter la sélection à la liste des options valides (puis la fonction **-** pour la supprimer, le cas échéant).
+  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
 
   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 
@@ -389,10 +391,10 @@ Globalement identique à **Chemin d’accès aux options**, à la différence qu
 * **Sélection simple**
 Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
 
-* **Noms des propriétés de publication et de Live Copy**
-Étiquettes des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
+* **Noms des propriétés Publication et de Live Copy**
+Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* L’astérisque (&amp;ast;) figurant dans les libellés de champ de la variable **Paramètres** signifient que les champs sont obligatoires et qu’un message d’erreur s’affiche si rien n’est indiqué.
+* L’astérisque (&amp;ast;) figurant dans les libellés de champ de l’onglet **Paramètres** désigne les champs obligatoires, pour lesquels un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
@@ -402,7 +404,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 
 1. Sélectionnez la configuration à personnaliser.
 1. Cliquez sur l’icône **Modifier** pour ouvrir la configuration à mettre à jour.
-1. Si vous souhaitez effectuer une nouvelle personnalisation, vous souhaiterez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) selon les besoins. Si une personnalisation existante existe, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
+1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. Si une personnalisation existe, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
 
    >[!NOTE]
@@ -417,15 +419,15 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Si vous souhaitez ajouter un champ, ouvrez le **Sélectionner un prédicat** et faites glisser le prédicat requis vers l’emplacement requis. Par exemple, le **prédicat de période** :
+1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![Modifier un formulaire de recherche](assets/chlimage_1-375.png)
 
 1. Selon que :
 
-   * Vous ajoutez un champ :
+   * Vous ajoutiez ou non un champ :
 
-     Après avoir ajouté le prédicat, la variable **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
+     Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
 
    * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
@@ -443,11 +445,11 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    ![Prévisualiser les formulaires de recherche](do-not-localize/chlimage_1-31.png)
 
-1. Les formulaires de recherche s’affichent tels qu’ils sont affichés (entièrement développés) dans la colonne Rechercher de la console appropriée.
+1. Affiche les formulaires de recherche tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
 
    ![Prévisualiser le formulaire de recherche](assets/chlimage_1-377.png)
 
-1. **Fermer** l’aperçu afin que vous puissiez renvoyer et terminer la configuration.
+1. **Fermez** l’aperçu afin de revenir en arrière et de terminer la configuration.
 
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
@@ -456,13 +458,13 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    ![Icône de suppression](do-not-localize/chlimage_1-32.png)
 
-1. Une boîte de dialogue demande la confirmation de l’action de suppression.
+1. Une boîte de dialogue vous invite à confirmer la suppression.
 
 1. Confirmez la suppression et les autres modifications en cliquant sur **Terminé**.
 
 ### Suppression d’une configuration (pour rétablir la valeur par défaut) {#deleting-a-configuration-to-reinstate-the-default}
 
-Une fois que vous avez personnalisé une configuration, celle-ci remplace les valeurs par défaut. Vous pouvez rétablir la configuration par défaut en supprimant votre configuration personnalisée.
+Une fois que vous avez personnalisé une configuration, cette option remplace les valeurs par défaut. Vous pouvez rétablir la configuration par défaut en supprimant la configuration personnalisée.
 
 >[!NOTE]
 >
@@ -478,13 +480,13 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 ### Ajouter des prédicats d’options {#adding-options-predicates}
 
-Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils sont utilisés pour rechercher quelque chose directement sous la page ; par exemple, une propriété sur le noeud de page.
+Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
 L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle utilisé pour créer une page) illustre la procédure :
 
 1. Créez le nœud définissant la propriété à rechercher.
 
-   Vous avez besoin d’un noeud racine contenant les définitions des différentes options disponibles pour l’utilisateur.
+   Vous avez besoin d’un nœud racine contenant les définitions des différentes options disponibles pour l’utilisateur ou l’utilisatrice.
 
    Les nœuds pour les différentes options ont besoin de propriétés :
 
@@ -495,7 +497,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    >[!NOTE]
    >
-   >Do ***not*** modifiez les éléments du `/libs` chemin.
+   >***Ne modifiez rien*** dans le chemin d’accès `/libs`.
    >
    >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    >
@@ -507,9 +509,9 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administration de sites**.
 
-   Cliquez ensuite sur le bouton **Modifier les formulaires de recherche** Icône
+   Ensuite, cliquez sur l’icône **Modifier les formulaires de recherche**.
 
-1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
+1. Selon la configuration, ajoutez des **Options** ou une **Propriété Options** à la configuration.
 1. Mettez à jour les champs, notamment :
 
    * **Nom de la propriété**
@@ -527,7 +529,7 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    ![Ajouter un chemin de propriété](assets/chlimage_1-380.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option requise pour afficher les résultats de la recherche :
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche :
 
    ![Résultats finaux](assets/chlimage_1-381.png)
 

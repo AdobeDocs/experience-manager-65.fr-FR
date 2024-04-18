@@ -7,10 +7,12 @@ topic-tags: personalization
 content-type: reference
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering,Personalization
+role: Admin
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +20,26 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, consultez la documentation appropriée pour [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
+>Cette section décrit la configuration de la segmentation lors de l’utilisation du ContextHub. Si vous utilisez la fonctionnalité ClientContext, reportez-vous à la documentation appropriée pour la [configuration de la segmentation pour ClientContext](/help/sites-administering/campaign-segmentation.md).
 >
 
 La segmentation est un élément clé de la création d’une campagne. Voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md) pour plus d’informations sur le fonctionnement de la segmentation et en connaître les termes clés.
 
-En fonction des informations que vous avez déjà collectées sur les visiteurs de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies nécessaires au contenu ciblé.
+En fonction des informations que vous avez déjà collectées sur les visiteurs et visiteuses de votre site et des objectifs que vous souhaitez atteindre, vous devez définir les segments et les stratégies requis pour votre contenu ciblé.
 
-Ces segments sont ensuite utilisés pour fournir aux visiteurs du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
+Ces segments sont ensuite utilisés pour fournir aux visiteurs et aux visiteuses du contenu spécifiquement ciblé. Ce contenu est conservé dans la section [Personnalisation](/help/sites-authoring/personalization.md) du site web. Les [activités](/help/sites-authoring/activitylib.md) définies ici peuvent être ajoutées à n’importe quelle page et définissent à quel segment de visiteurs le contenu spécialisé s’applique.
 
 AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs et utilisatrices. Il vous permet également de vérifier les résultats de vos définitions de segment.
 
 ## Accès aux segments {#accessing-segments}
 
-La variable [Audiences](/help/sites-authoring/managing-audiences.md) La console permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour [Segments de contexte client](/help/sites-administering/campaign-segmentation.md) et les segments Adobe Target, consultez la documentation appropriée.
+La console [Audiences](/help/sites-authoring/managing-audiences.md) permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour les [segments ClientContext](/help/sites-administering/campaign-segmentation.md) et les segments Adobe Target, consultez la documentation appropriée.
 
 Pour accéder à vos segments, vous devez sélectionner votre configuration. Dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Les configurations disponibles s’affichent :
 
 ![Audiences - Configurations](assets/segmentation-access-confs.png)
 
-Sélectionnez votre configuration pour afficher les segments, par exemple, le site WKND :
+Sélectionnez votre configuration pour afficher les segments, par exemple le site WKND :
 
 ![Audiences - Segments](assets/segmentation-access-segments.png)
 
@@ -49,11 +51,11 @@ L&#39;**Éditeur de segment** vous permet de modifier facilement un segment : P
 
 Avec l’explorateur de composants, vous pouvez ajouter des conteneurs **ET** et **OU** pour définir la logique de segment, puis ajouter des composants supplémentaires pour comparer les propriétés et les valeurs ou référencer des scripts et d’autres segments afin de définir les critères de sélection (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) pour définir le scénario exact de sélection du segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. S’il existe plusieurs segments applicables, la variable **Amplifier** est également utilisé. Consultez la section [Création d’un segment](#creating-a-new-segment) pour plus d’informations sur le [facteur Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor).
+Lorsque l’intégralité de l’instruction est vraie, alors le segment a été résolu. S’il existe plusieurs segments applicables, le facteur **Boost** est également utilisé. Consultez la section [Création d’un segment](#creating-a-new-segment) pour plus d’informations sur le [facteur Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor).
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui, à son tour, fait référence au segment A. Assurez-vous que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
 ### Conteneurs {#containers}
 
@@ -62,7 +64,7 @@ Les conteneurs suivants sont disponibles clé en main et vous permettent de regr
 <table>
  <tbody>
   <tr>
-   <td>Conteneur ET<br /> </td>
+   <td>Conteneur AND<br /> </td>
    <td>Opérateur ET booléen<br /> </td>
   </tr>
   <tr>
@@ -84,7 +86,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
   </tr>
   <tr>
    <td>Propriété-Propriété</td>
-   <td>Compare une propriété d’un magasin à une autre propriété.<br /> </td>
+   <td>Compare une propriété d’une boutique à une autre propriété.<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Référence de segment</td>
@@ -92,11 +94,11 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
   </tr>
   <tr>
    <td>Propriété-Référence de script</td>
-   <td>Compare une propriété d’un magasin aux résultats d’un script.<br /> </td>
+   <td>Compare une propriété d’une boutique aux résultats d’un script<br /> </td>
   </tr>
   <tr>
    <td>Référence de segment-Référence de script</td>
-   <td>Compare un segment référencé aux résultats d’un script.<br /> </td>
+   <td>Compare un segment référencé aux résultats d’un script<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -134,11 +136,11 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [naviguez jusqu’au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment.
 
-1. cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
+1. Cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis cliquez sur **Créer**.
+1. Dans la section **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur de boost si nécessaire, puis cliquez sur **Créer**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -148,7 +150,7 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur maximale : `1000000`
 
 1. Faites glisser une comparaison ou une référence vers l’Éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
-1. Double-cliquez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour éditer les paramètres spécifiques. Dans cet exemple, des personnes situées à San Jose font l’objet d’un test.
+1. Double-cliquez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres spécifiques. Dans cet exemple, des personnes situées à San Jose font l’objet d’un test.
 
    ![screen_shot_2012-02-02at103135am](assets/screen_shot_2012-02-02at103135ama.png)
 
@@ -161,7 +163,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé. Cela ne peut pas être modifié, mais n’a aucun effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur AND initialement créé. Cela ne peut pas être modifié, mais n’a aucun effet sur le reste de la définition de votre segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs et les visiteuses qui sont considérés comme appartenant à notre groupe cible d’âge :
@@ -234,7 +236,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Créer un dossier {#create-folder}
 
-1. Après [accès aux segments](#accessing-segments), cliquez sur le **Créer** et sélectionnez **Dossier**.
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez sur le bouton **Créer** et sélectionnez **Dossier**.
 
    ![Ajouter un dossier](assets/contexthub-create-segment.png)
 
@@ -257,13 +259,13 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Modifier les dossiers existants {#modify-folders}
 
-1. Après [accès aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
 1. Cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
 
-1. Fournissez un nouveau **Titre du dossier** et cliquez sur **Enregistrer**.
+1. Saisissez un nouveau **Titre du dossier** et cliquez sur **Enregistrer**.
 
    ![Renommer un dossier](assets/contexthub-rename-folder.png)
 
@@ -273,7 +275,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 ### Supprimer un dossier
 
-1. Après [accès aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez sur le dossier à modifier pour le sélectionner.
 
    ![Sélectionner un dossier](assets/contexthub-select-folder.png)
 
@@ -320,7 +322,7 @@ Ou s’il n’est pas résolu :
 
 Des tests comme celui-ci peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences** connexes.
 
-Si vous avez configuré une activité et une expérience à l’aide du segment de classe d’âges principale ci-dessus, vous pouvez facilement tester votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir [documentation sur la création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
+Si vous avez configuré une activité et une expérience à l’aide du segment de classe d’âges principale ci-dessus, vous pouvez facilement tester votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, consultez la [documentation sur la création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 
 1. En mode de modification d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé par le biais d’une icône de flèche sur le contenu.
 

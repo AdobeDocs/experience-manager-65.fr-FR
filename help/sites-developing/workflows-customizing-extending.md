@@ -1,16 +1,18 @@
 ---
 title: Extension des fonctionnalités de workflows
-description: Découvrez comment étendre la fonctionnalité du workflow de Adobe Experience Manager.
+description: Découvrez comment étendre la fonctionnalité de workflow d’Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3499'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +36,7 @@ Un composant d’étape de workflow définit l’apparence et le comportement de
 * Boîte de dialogue de modification pour la configuration des propriétés du composant.
 * Service ou script exécuté au moment de l’exécution.
 
-Comme avec [tous les composants](/help/sites-developing/components.md), les composants de l’étape de processus héritent du composant spécifié pour la variable `sling:resourceSuperType` . Le diagramme suivant présente la hiérarchie des nœuds `cq:component` qui constituent la base de tous les composants des étapes de workflow. Le diagramme inclut également les composants **Étape du processus**, **Étape du participant** et **Étape du participant dynamique**, car il s’agit des points de départ les plus courants (et les plus simples) pour développer des composants d’étape personnalisée.
+Comme avec [tous les composants](/help/sites-developing/components.md), les composants d’étape de workflow héritent du composant indiqué pour la propriété `sling:resourceSuperType`. Le diagramme suivant présente la hiérarchie des nœuds `cq:component` qui constituent la base de tous les composants des étapes de workflow. Le diagramme inclut également les composants **Étape du processus**, **Étape du participant** et **Étape du participant dynamique**, car il s’agit des points de départ les plus courants (et les plus simples) pour développer des composants d’étape personnalisée.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
@@ -46,7 +48,7 @@ Comme avec [tous les composants](/help/sites-developing/components.md), les comp
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs` under `/apps`
+>1. Recréez l’élément requis (tel qu’il existe dans `/libs` sous `/apps`).
 >2. Apportez les modifications désirées dans `/apps`.
 
 Le composant `/libs/cq/workflow/components/model/step` est l’ancêtre commun le plus proche de l’**Étape du processus**, l’**Étape du participant** et l’**Étape du participant dynamique**, qui héritent tous des éléments suivants :
@@ -114,7 +116,7 @@ Procédez comme suit pour spécifier les valeurs par défaut des champs **Titre*
 >
 >Les valeurs de champ s’affichent sur l’instance d’étape lorsque les deux exigences suivantes sont satisfaites :
 >
->* La boîte de dialogue de modification de l’étape stocke le titre et la description aux emplacements suivants : >
+>* La boîte de dialogue de modification de l’étape stocke le titre et la description dans les emplacements suivants : >
 >* `./jcr:title`
 >* Emplacements `./jcr:description`
 >
@@ -464,7 +466,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Utilisation d’ECMAScript {#using-ecmascript}
 
-Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts se trouvent dans le référentiel JCR et sont exécutés à partir de cet emplacement.
+Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
 
 Le tableau suivant répertorie les variables immédiatement disponibles pour traiter les scripts, ce qui permet d’accéder aux objets de l’API Java du workflow.
 
@@ -525,7 +527,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Pour utiliser le script, procédez comme suit :
 
-1. Créez le script (par exemple, avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous. `//apps/workflow/scripts/`
+1. Créez le script (par exemple avec CRXDE Lite) et enregistrez-le dans le référentiel sous `//apps/workflow/scripts/`.
 1. Pour spécifier un titre qui identifie le script dans la boîte de dialogue de modification d’**Étape du processus**, ajoutez les propriétés suivantes au nœud `jcr:content` de votre script :
 
    | Nom | Type | Valeur |
@@ -616,7 +618,7 @@ Pour définir une étape de participant en tant que composant de service OSGI (c
 
 Vous pouvez créer un script ECMA qui sélectionne l’utilisateur auquel est affecté l’élément de travail généré par **Étape du participant**. Le script doit inclure une fonction nommée `getParticipant` qui ne nécessite aucun argument et renvoie une `String` contenant l’ID d’un utilisateur ou d’un groupe.
 
-Les scripts se trouvent dans le référentiel JCR et y sont exécutés.
+Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
 
 Le tableau suivant répertorie les variables qui permettent un accès immédiat aux objets Java de workflow dans vos scripts.
 
@@ -642,7 +644,7 @@ function getParticipant() {
 }
 ```
 
-1. Créez le script (par exemple, avec CRXDE Lite) et enregistrez-le dans le référentiel ci-dessous. `//apps/workflow/scripts`
+1. Créez le script (par exemple avec CRXDE Lite) et enregistrez-le dans le référentiel sous `//apps/workflow/scripts`.
 1. Pour spécifier un titre qui identifie le script dans la boîte de dialogue de modification d’**Étape du processus**, ajoutez les propriétés suivantes au nœud `jcr:content` de votre script :
 
    | Nom | Type | Valeur |
@@ -800,7 +802,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
    >
    >Cette étape ne s’applique pas à l’éditeur de modèle d’IU classique.
 
-1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple, comme suit :
+1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple :
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -822,7 +824,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
      Doit hériter d’une étape existante.
 
-     Dans cet exemple, nous héritons de l’étape de base à l’adresse `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
+     Dans cet exemple, nous héritons de l’étape de base à partir de `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
 
    * `jcr:title`
 
@@ -1039,4 +1041,4 @@ Exemple de `_cq_dialog/.content.xml` utilisé dans ce cas de figure :
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
 >
->  Ne modifiez rien dans `/libs`, utilisez-les simplement comme exemples. Si vous souhaitez utiliser l’une des étapes existantes, copiez-les dans `/apps` et éditez-les ici.
+>  Vous n’avez pas à modifier quoi que ce soit dans `/libs`, utilisez simplement les éléments comme exemples. Si vous souhaitez tirer parti des étapes existantes, copiez-les dans `/apps` et modifiez-les.

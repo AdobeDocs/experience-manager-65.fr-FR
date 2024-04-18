@@ -7,20 +7,22 @@ topic-tags: operations
 content-type: reference
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Tableaux de bord{#dashboards}
 
-Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différents types (par exemple, des pages, des ressources). AEM Les tableaux de bord offrent un moyen simple d’utilisation et personnalisable de définir des pages qui affichent des données consolidées.
+Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différents types (par exemple, des pages ou des ressources). Les tableaux de bord AEM offrent un moyen simple et personnalisable de définir des pages qui affichent des données consolidées.
 
 >[!NOTE]
 >
->AEM Les tableaux de bord sont créés par utilisateur, de sorte qu’un utilisateur ne peut accéder qu’à son propre tableau de bord.
+>Les tableaux de bord AEM sont créés par utilisateur ou utilisatrice, de sorte qu’un utilisateur ou une utilisatrice ne peut accéder qu’à son propre tableau de bord.
 >
 >Cependant, les [modèles de tableau de bord](#creating-a-dashboard-template) peuvent être utilisés pour créer une disposition et une configuration commune à tous les de tableaux de bord.
 
@@ -28,19 +30,19 @@ Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différent
 
 ## Administration des tableaux de bord {#administering-dashboards}
 
-### Créer Un Tableau De Bord {#creating-a-dashboard}
+### Création d’un tableau de bord {#creating-a-dashboard}
 
-1. Dans le **Outils** , cliquez sur **Console de configuration**.
+1. Dans la section **Outils**, cliquez sur **Console de configuration**.
 1. Dans l’arborescence, double-cliquez sur **Tableau de bord**.
 1. Cliquez sur **Nouveau tableau de bord**.
-1. Saisissez le **Titre** (Mon tableau de bord, par exemple) et la variable **Nom**.
+1. Saisissez le **Titre** (Mon tableau de bord, par exemple) et le **Nom**.
 1. Cliquez sur **Créer**.
 
-### Clonage D’Un Tableau De Bord {#cloning-a-dashboard}
+### Clonage d’un tableau de bord {#cloning-a-dashboard}
 
-Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin de consulter rapidement des informations sur votre contenu depuis différentes vues. Pour faciliter la création d’un tableau de bord, AEM propose une fonctionnalité de clonage que vous pouvez utiliser pour dupliquer un tableau de bord existant. Pour cloner un tableau de bord, procédez comme suit :
+Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin de consulter rapidement des informations sur votre contenu depuis différentes vues. Pour faciliter la création d’un tableau de bord, AEM propose une fonctionnalité de clonage que vous pouvez utiliser pour dupliquer un tableau de bord existant. Pour cloner un tableau de bord, procédez comme suit :
 
-1. Dans le **Outils** , cliquez sur **Console de configuration**.
+1. Dans la section **Outils**, cliquez sur **Console de configuration**.
 
 1. Dans l’arborescence, cliquez sur **Tableau de bord**.
 1. Cliquez sur le tableau de bord que vous souhaitez cloner.
@@ -49,9 +51,9 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 1. Saisissez le **Nom** de votre nouveau tableau de bord.
 
-### Suppression D’Un Tableau De Bord {#removing-a-dashboard}
+### Suppression d’un tableau de bord {#removing-a-dashboard}
 
-1. Dans le **Outils** , cliquez sur **Console de configuration**.
+1. Dans la section **Outils**, cliquez sur **Console de configuration**.
 
 1. Dans l’arborescence, cliquez sur **Tableau de bord**.
 1. Cliquez sur le tableau de bord à supprimer.
@@ -64,24 +66,24 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 ### du commerce électronique {#overview}
 
-Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de création de rapports fournis avec AEM.
+Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de rapport fournis avec AEM.
 
-### Composants de création de rapports Web Analytics {#web-analytics-reporting-components}
+### Composants de rapport web analytics {#web-analytics-reporting-components}
 
-AEM est fourni avec un ensemble de composants qui effectuent le rendu de plusieurs mesures de vos données [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Ces composants sont répertoriés dans le Sidekick sous le **Tableau de bord** .
+AEM est fourni avec un ensemble de composants qui effectuent le rendu de plusieurs mesures de vos données [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Ces composants sont répertoriés dans le sidekick, dans la section **Tableau de bord**.
 
-Chaque composant de création de rapports comporte au moins trois onglets :
+Chaque composant de rapport comporte au moins trois onglets :
 
-* **De base**: contient la configuration principale.
+* **De base** : contient la configuration principale.
 
-* **Rapport :** contient la configuration propre à chaque rapport.
-* **Style**: contient la configuration de style, telle que la taille et la marge du graphique.
+* **Rapport :** contient la configuration propre à chaque rapport.
+* **Style :** contient la configuration du style, telle que la taille et la marge du graphique.
 
-Les composants de création de rapports sont initialisés avec une configuration par défaut qui vous permet de configurer rapidement votre tableau de bord.
+Les composants de rapport sont initialisés avec une configuration par défaut qui vous permet de configurer rapidement votre tableau de bord.
 
 #### Configuration de base {#basic-configuration}
 
-La variable **De base** donne accès aux entrées de configuration suivantes :
+L’onglet **De base** donne accès aux entrées de configuration suivantes :
 
 **Titre** - Titre affiché sur le tableau de bord.
 
@@ -91,13 +93,13 @@ La variable **De base** donne accès aux entrées de configuration suivantes :
 
 **Identifiant de suite de rapports (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
-#### Configuration des rapports {#report-configuration}
+#### Configuration de rapport {#report-configuration}
 
-Pour afficher les statistiques web, vous devez définir la période des données à récupérer. La variable **Rapport** fournit deux champs pour définir cette plage.
+Pour pouvoir afficher des statistiques web, vous devez définir la période des données à récupérer. L’onglet **Rapport** fournit deux champs pour définir cette plage.
 
 >[!NOTE]
 >
->La définition d’une plage de dates étendue peut diminuer la réactivité du tableau de bord.
+>La définition d’une période étendue peut diminuer la réactivité du tableau de bord.
 
 **Date à partir de** - Date absolue ou relative à partir de laquelle les données sont récupérées.
 
@@ -105,11 +107,11 @@ Pour afficher les statistiques web, vous devez définir la période des données
 
 Chaque composant définit également des paramètres spécifiques.
 
-#### Rapport d’heures supplémentaires {#overtime-report}
+#### Rapport sur toute la durée {#overtime-report}
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularité des dates** Unité de temps de l’axe X (par exemple, jour, heure).
+**Granularité de la date** : unité de temps de l’axe X (jour ou heure, par exemple).
 
 **Mesures** - Liste des événements à afficher.
 
@@ -145,13 +147,13 @@ Ce composant affiche un graphique présentant la section la plus visitée d’un
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularité des dates** Unité de temps de l’axe X (par exemple, jour, heure).
+**Granularité de la date** : unité de temps de l’axe X (jour ou heure, par exemple).
 
 **Mesures** L’événement que vous souhaitez afficher.
 
 **Éléments** L’élément qui répartit les données de mesure dans le graphique.
 
-## Extension du tableau de bord {#extending-dashboard}
+## Étendre le tableau de bord {#extending-dashboard}
 
 ### du commerce électronique {#overview-1}
 
@@ -159,7 +161,7 @@ Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel compo
 
 Un groupe de composants par défaut, `Dashboard`, contient les composants de génération de rapports d’analyse activés par défaut sur le modèle.
 
-### Créer Un Modèle De Tableau De Bord {#creating-a-dashboard-template}
+### Créer un modèle de tableau de bord {#creating-a-dashboard-template}
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 
@@ -167,11 +169,11 @@ Ces modèles sont créés de la même manière que les autres modèles de page, 
 
 >[!NOTE]
 >
->Les modèles de tableau de bord sont partagés entre les utilisateurs.
+>Les modèles de tableau de bord sont partagés entre les utilisateurs et utilisatrices.
 
-### Développement d’un composant Tableau de bord {#developing-a-dashboard-component}
+### Développer un composant Tableau de bord {#developing-a-dashboard-component}
 
-Le développement d’un composant Tableau de bord consiste à créer un composant AEM ordinaire. Cette section décrit un exemple de composant qui affiche les 10 premiers contributeurs.
+Le développement d’un composant Tableau de bord consiste à créer un composant AEM ordinaire. Cette section décrit un exemple de composant qui affiche les 10 premières personnes contributrices.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
@@ -183,7 +185,7 @@ Le composant « Auteurs principaux » est stocké dans le référentiel, sous 
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-Le fichier JavaScript suivant est défini dans la variable `geout.reporting.topauthors` [Bibliothèque cliente](/help/sites-developing/clientlibs.md) en tant qu’enfant du composant lui-même.
+Le fichier JavaScript suivant est défini dans la [bibliothèque cliente](/help/sites-developing/clientlibs.md) `geout.reporting.topauthors` en tant qu’enfant du composant lui-même.
 
 Le composant [QueryBuilder](/help/sites-developing/querybuilder-api.md) est utilisé pour interroger le référentiel afin de lire les nœuds `cq:AuditEvent`. Le résultat de la requête est un objet JSON duquel sont extraites les contributions de l’auteur.
 

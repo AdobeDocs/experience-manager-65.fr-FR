@@ -1,36 +1,38 @@
 ---
 title: Comment accéder au JCR AEM par programmation
-description: Vous pouvez modifier par programmation les noeuds et les propriétés situés dans le référentiel AEM, qui fait partie de Adobe Experience Cloud.
+description: Vous pouvez modifier par programme les nœuds et les propriétés situés dans le référentiel AEM, qui fait partie d’Adobe Experience Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,JCR
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 24%
+ht-degree: 67%
 
 ---
 
 # Comment accéder au JCR AEM par programmation{#how-to-programmatically-access-the-aem-jcr}
 
-Vous pouvez modifier par programmation les noeuds et les propriétés situés dans le référentiel Adobe CQ, qui fait partie de Adobe Experience Cloud. Pour accéder au référentiel CQ, vous utilisez l’API Java™ Content Repository (JCR). Vous pouvez utiliser l’API JCR Java™ pour créer, remplacer, mettre à jour et supprimer du contenu (CRUD) situé dans le référentiel Adobe CQ. Pour plus d’informations sur l’API JCR Java™, voir [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Vous pouvez modifier par programme les nœuds et les propriétés situés dans le référentiel Adobe CQ, qui fait partie d’Adobe Experience Cloud. Pour accéder au référentiel CQ, vous utilisez l’API Java™ Content Repository (JCR). Vous pouvez utiliser l’API Java™ JCR pour créer, remplacer, mettre à jour et supprimer du contenu (CRUD) situé dans le référentiel Adobe CQ. Pour plus d’informations sur l’API JCR Java™, consultez [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Cet article de développement modifie le JCR Adobe CQ à partir d’une application Java™ externe. En revanche, vous pouvez modifier le JCR à partir d’un lot OSGi à l’aide de l’API JCR. Pour plus d’informations, voir [Persistance des données CQ dans le référentiel de contenu Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).
+>Cet article de développement modifie le JCR d’Adobe CQ à partir d’une application Java™ externe. En revanche, vous pouvez modifier le JCR à partir d’un bundle OSGi à l’aide de l’API JCR. Pour plus d’informations, consultez [Conservation de données CQ dans Java™ Content Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).
 
 >[!NOTE]
 >
->Pour utiliser l’API JCR, ajoutez le `jackrabbit-standalone-2.4.0.jar` vers le chemin de classe de votre application Java™. Vous pouvez obtenir ce fichier JAR sur la page web de l’API JCR Java™ à l’adresse [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Pour utiliser l’API JCR, ajoutez le fichier `jackrabbit-standalone-2.4.0.jar` au chemin d’accès vers la classe de votre application Java™. Ce fichier JAR est disponible sur la page web de l’API Java™ JCR à l’adresse suivante : [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Pour savoir comment interroger Adobe CQ JCR à l’aide de l’API de requête JCR, voir [Requête sur des données Adobe Experience Manager à l’aide de l’API JCR](https://helpx.adobe.com/fr/experience-manager/using/querying-experience-manager-data-using1.html).
+>Pour savoir comment interroger le JCR d’Adobe CQ à l’aide de l’API de requête JCR, consultez[ Interrogation des données Adobe Experience Manager à l’aide de l’API JCR](https://helpx.adobe.com/fr/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Création d’une instance Repository {#create-a-repository-instance}
+## Créer une instance de référentiel {#create-a-repository-instance}
 
 Cet article de développement fait appel à une méthode statique appartenant à la classe `org.apache.jackrabbit.commons.JcrUtils` pour se connecter à un référentiel et établir une connexion. Il existe cependant d’autres modus operandi. Cette méthode se nomme `getRepository`. Dans ce cas, un paramètre de chaîne est utilisé, qui représente l’URL du serveur Adobe CQ. Par exemple, `http://localhost:4503/crx/server`.
 
@@ -47,8 +49,8 @@ La variable `Repository` représente le référentiel CRX. Vous utilisez la vari
 
 Vous créez une `SimpleCredentials` en utilisant son constructeur et en transmettant les valeurs string suivantes :
 
-* le nom d’utilisateur ;
-* Mot de passe correspondant
+* le nom d’utilisateur ou d’utilisatrice ;
+* le mot de passe correspondant.
 
 Lors de la transmission du second paramètre, appelez le `toCharArray` . Le code suivant indique comment appeler la fonction `login` qui renvoie une `javax.jcr.Sessioninstance`.
 
@@ -59,14 +61,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Création d’une instance de nœud {#create-a-node-instance}
 
-Utilisez une `Session` pour créer une instance `javax.jcr.Node` instance. A `Node` vous permet d’effectuer des opérations sur les noeuds. Vous pouvez par exemple créer un noeud. Pour créer un noeud qui représente le noeud racine, appelez la méthode `Session` instance `getRootNode` , comme illustré dans la ligne de code suivante.
+Utilisez une `Session` pour créer une instance `javax.jcr.Node` instance. A `Node` vous permet d’effectuer des opérations sur les noeuds. Vous pouvez, par exemple, créer un nœud. Pour créer un noeud qui représente le noeud racine, appelez la méthode `Session` instance `getRootNode` , comme illustré dans la ligne de code suivante.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Une fois que vous avez créé une `Node` vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Par exemple, le code suivant crée deux noeuds et ajoute une valeur au deuxième noeud.
+Une fois que vous avez créé une `Node` vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Par exemple, le code suivant crée deux nœuds et ajoute une valeur au deuxième nœud.
 
 ```java
 // Store content
@@ -74,9 +76,9 @@ Node day = adobe.addNode("day");
 day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 ```
 
-## Récupération des valeurs de noeud {#retrieve-node-values}
+## Récupérer les valeurs des nœuds {#retrieve-node-values}
 
-Pour récupérer un noeud et sa valeur, appelez la méthode `Node` instance `getNode` et transmettez une valeur string qui représente le chemin d’accès complet au noeud. Examinez la structure de noeud créée dans l’exemple de code précédent. Pour récupérer le noeud day, spécifiez adobe/day, comme illustré dans le code suivant :
+Pour récupérer un noeud et sa valeur, appelez la méthode `Node` instance `getNode` et transmettez une valeur string qui représente le chemin d’accès complet au noeud. Considérez la structure de nœuds créée dans l’exemple de code précédent. Pour récupérer le nœud day, spécifiez adobe/day, comme indiqué dans le code suivant :
 
 ```java
 // Retrieve content
@@ -85,7 +87,7 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Création de noeuds dans le référentiel Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
+## Créer des nœuds dans le référentiel Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
 L’exemple de code Java™ suivant représente une classe Java™ qui se connecte à Adobe CQ, crée une `Session` et ajoute de nouveaux noeuds. Une valeur de données est affectée au nœud, puis la valeur du nœud et son chemin d’accès sont écrits sur la console. Lorsque vous en avez terminé avec l’instance Session, veillez à vous déconnecter.
 

@@ -1,6 +1,6 @@
 ---
 title: Fragments d’expérience dans l’instance de développement d’Adobe Experience Manager Sites
-description: Découvrez comment personnaliser des fragments d’expérience pour Adobe Experience Manager.
+description: Découvrez comment personnaliser des fragments d’expérience pour Adobe Experience Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +49,7 @@ Par exemple :
 
 >[!NOTE]
 >
->Les liens font toujours référence à l’instance de publication. Elles sont utilisées par des tiers. Par conséquent, le lien est toujours appelé à partir de l’instance de publication, et non de l’instance d’auteur.
+>Les liens font toujours référence à l’instance de publication. Ils sont utilisés par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’instance de création.
 >
 >Pour plus d’informations, voir [Externalisation des URL](/help/sites-developing/externalizer.md).
 
@@ -215,7 +217,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Avant d’utiliser cette interface, vous devez créer un lot contenant un nouveau composant de service qui l’implémente.
 
-Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin d’avoir accès aux différents liens.
+Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin qu’elle puisse avoir accès aux différents liens.
 
 Par exemple, `ComponentService` :
 

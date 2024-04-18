@@ -3,10 +3,12 @@ title: Ajout de ContextHub à des pages et accès à des magasins
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Personalization
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +146,7 @@ Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
 ## Débogage de ContextHub {#debugging-contexthub}
 
-Il existe plusieurs options pour déboguer ContextHub, y compris la génération de journaux. Voir [Configuration de ContextHub](ch-configuring.md#logging-debug-messages-for-contexthub) pour plus d’informations.
+Il existe un certain nombre d’options pour déboguer ContextHub, y compris la génération de journaux. Voir [Configuration de ContextHub pour plus d’informations.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## Affichage d’un aperçu de la structure ContextHub {#see-an-overview-of-the-contexthub-framework}
 

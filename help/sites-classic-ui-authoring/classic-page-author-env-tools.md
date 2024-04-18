@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +183,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-La console Sites Web [fournit des informations sur l’état actuel de la page.](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) par exemple publication, modification, verrouillé, live copy, etc.
+La console Site web [fournit également des informations sur le statut actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) ; par exemple, publication, modification, verrouillage, Live Copy, etc.
 
 ## Modes de page {#page-modes}
 
@@ -206,7 +208,7 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Sites web : ouvre la console Sites web .
+>* Sites web - Ouvre la console Sites web.
 >* Recharger - Actualise la page.
 
 ## Raccourcis clavier {#keyboard-shortcuts}

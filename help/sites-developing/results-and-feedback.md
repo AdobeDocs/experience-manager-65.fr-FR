@@ -1,31 +1,33 @@
 ---
 title: Tracking des résultats et formulation de commentaires
-description: C’est à vous qu’il appartient de définir comment et où vous définissez les cas de test, ainsi que le plan de test qui en résulte.
+description: Le mode et le lieu de définition des cas de test, ainsi que le plan de test qui en résulte, demeurent à votre entière discrétion.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Tracking des résultats et formulation de commentaires{#tracking-results-and-providing-feedback}
 
-La manière et l’emplacement de définition des cas de test, ainsi que le plan de test qui en résulte, sont à votre discrétion ; de nombreux outils sont disponibles.
+Le mode et le lieu de définition des cas de test, ainsi que le plan de test qui en résulte, demeurent à votre entière discrétion. De nombreux outils sont à votre disposition.
 
-Toutefois, quelle que soit la méthode ou l’outil de votre choix, les informations stockées :
+Cependant, quelle que soit la méthode ou l’outil que vous choisissez, les informations stockées :
 
-* Doit être :
+* Doivent être :
 
-   * Limité au suivi du cas de test et de ses résultats. Cela garantit que la maintenance reste simple et le document peut fournir un aperçu clair de la progression des tests.
-   * Conservée en tant que copie unique, disponible pour tous les membres appropriés de l’équipe du projet.
-   * Neutre et limité aux résultats du test. Il incombe au chef de projet de prendre des décisions sur les actions résultant des résultats du test.
+   * Limitées au suivi du cas de test et de ses résultats. Vous garantissez ainsi une maintenance simple et un document à même de fournir un aperçu clair de la progression des tests.
+   * Conservées sous la forme d’un exemplaire unique, accessible à toutes les personnes concernées de l’équipe de projet.
+   * Neutres et limitées aux résultats des tests. Il est de la responsabilité du chef ou de la cheffe de projet de prendre des décisions sur toutes les actions issues des résultats des tests.
 
-* Ne doit pas être :
+* Ne doivent pas être :
 
-   * Étendu pour inclure les informations de suivi : ni les bogues, ni les nouvelles fonctionnalités, ni les actions de suivi. Ces informations doivent être conservées ailleurs, là encore, de nombreux outils sont disponibles.
+   * Étendues de sorte à inclure des informations de suivi – ni bugs, ni nouvelles fonctionnalités, ni actions de suivi. Ces informations doivent être conservées ailleurs. Encore une fois, de nombreux outils sont disponibles.

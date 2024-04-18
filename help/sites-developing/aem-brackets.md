@@ -7,10 +7,12 @@ topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,Developer Tools
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 52%
+ht-degree: 92%
 
 ---
 
@@ -18,57 +20,57 @@ ht-degree: 52%
 
 ## du commerce électronique {#overview}
 
-L’extension AEM Brackets fournit un processus fluide pour modifier AEM composants et les bibliothèques clientes, et utilise la puissance de [Brackets](https://brackets.io/) l’éditeur de code, qui permet d’accéder aux calques et fichiers Photoshop à partir de l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
+L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
 ### Fonctions {#features}
 
-Les principales fonctionnalités de l’extension AEM Brackets sont les suivantes :
+Les principales fonctionnalités de l’extension AEM Brackets son les suivantes :
 
 * La synchronisation automatisée des fichiers modifiés avec l’instance de développement AEM
 * La synchronisation bidirectionnelle manuelle des fichiers et des dossiers
 * La synchronisation complète des packages de contenu du projet
 * Le remplissage du code HTL pour les expressions et les instructions de bloc `data-sly-*`
 
-En outre, Brackets s’accompagne de nombreuses fonctionnalités utiles pour les développeurs de polices AEM :
+En outre, Brackets est fourni avec de nombreuses fonctionnalités utiles pour les développeurs et développeuses front-end AEM :
 
-* Prise en charge des fichiers Photoshop pour extraire des informations d’un fichier de PSD, comme des calques, des mesures, des couleurs, des polices, du texte, etc.
-* Conseils sur le code du PSD, pour réutiliser facilement ces informations extraites dans le code.
+* Prise en charge des fichiers Photoshop pour extraire des informations d’un fichier PSD, comme des calques, des mesures, des couleurs, des polices, du texte, etc.
+* Indicateurs de code du PSD, pour facilement réutiliser les informations extraites dans le code.
 * Prise en charge de préprocesseurs CSS, comme LESS et SCSS.
-* Et des centaines d’extensions supplémentaires qui répondent à des besoins plus spécifiques.
+* Ainsi que des centaines d’extensions supplémentaires répondant à des besoins plus spécifiques.
 
 ## Installation {#installation}
 
 ### Brackets {#brackets}
 
-L’extension AEM Brackets prend en charge Brackets version 1.0 ou ultérieure.
+L’extension AEM Brackets prend en charge la version 1.0 de Brackets ou les versions ultérieures.
 
 Téléchargez la dernière version de Brackets sur [Brackets.io](https://brackets.io/).
 
-### L’extension {#the-extension}
+### Extension {#the-extension}
 
-Pour installer l’extension, procédez comme suit :
+Pour installer l’extension, procédez comme suit :
 
 1. Ouvrez Brackets. Dans le menu **Fichier**, sélectionnez **Extension Manager...**
-1. Entrée **AEM** dans la barre de recherche et recherchez **Extension AEM Brackets**.
+1. Saisissez **AEM** dans la barre de recherche et recherchez **Extension AEM Brackets**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. Cliquez sur **Installer**.
-1. Fermez la boîte de dialogue et l’Extension Manager une fois l’installation terminée.
+1. Fermez la boîte de dialogue et Extension Manager une fois l’installation terminée.
 
 ## Prise en main {#getting-started}
 
-### Le projet Content-Package {#the-content-package-project}
+### Projet de package de contenu {#the-content-package-project}
 
-Une fois l’extension installée, vous pouvez commencer à développer AEM composants en ouvrant un dossier content-package à partir de votre système de fichiers avec Brackets.
+Une fois l’extension installée, vous pouvez commencer à développer des composants AEM en ouvrant un dossier de package de contenu dans votre système de fichiers avec Brackets.
 
-Le projet doit contenir au moins :
+Le projet doit contenir au minimum :
 
-1. a `jcr_root` Dossier (par exemple, `myproject/jcr_root`)
+1. un dossier `jcr_root` (par exemple, `myproject/jcr_root`)
 
-1. a `filter.xml` (par exemple, `myproject/META-INF/vault/filter.xml`) ; pour plus d’informations sur la structure de la variable `filter.xml` voir le fichier [Définition du filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. un fichier `filter.xml` (par exemple `myproject/META-INF/vault/filter.xml`). Pour plus de détails sur la structure du fichier `filter.xml`, reportez-vous à la [définition du filtre d’espace de travail](https://jackrabbit.apache.org/filevault/filter.html).
 
 Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et choisissez le dossier `jcr_root` ou le dossier du projet parent.
 
@@ -80,24 +82,24 @@ Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et cho
 
 ### Paramètres du projet {#project-settings}
 
-Pour synchroniser votre contenu avec et depuis une instance de développement AEM, vous devez définir vos paramètres de projet. Pour cela, accédez au menu **AEM** et choisissez **Paramètres du projet...**
+Pour synchroniser le contenu avec une instance de développement AEM dans les deux sens, vous devez définir les paramètres du projet. Pour cela, accédez au menu **AEM** et choisissez **Paramètres du projet...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
 Les paramètres du projet vous permettent de définir les éléments suivants :
 
-1. L’URL du serveur (par exemple, `http://localhost:4502`)
+1. l’URL du serveur (par exemple `http://localhost:4502`) ;
 1. Permet de tolérer les serveurs qui ne possèdent pas de certificat HTTPS valide (ne cochez pas, sauf si nécessaire).
-1. Nom d’utilisateur utilisé pour synchroniser le contenu (par exemple : `admin`)
-1. Le mot de passe de l’utilisateur (par exemple : `admin`)
+1. le nom d’utilisateur ou d’utilisatrice qui a servi à synchroniser le contenu (par exemple `admin`) ;
+1. le mot de passe de l’utilisateur ou de l’utilisatrice (par exemple `admin`).
 
 ## Synchronisation du contenu {#synchronizing-content}
 
 L’extension AEM Brackets fournit les types de synchronisation de contenu suivants pour les fichiers et dossiers autorisés par les règles de filtrage définies dans `filter.xml` :
 
-### Synchronisation Automatisée Des Fichiers Modifiés {#automated-synchronization-of-changed-files}
+### Synchronisation automatisée des fichiers modifiés {#automated-synchronization-of-changed-files}
 
-Cela synchronise uniquement les modifications de Brackets vers l’instance AEM, mais jamais l’inverse.
+Cela synchronise uniquement les modifications de Brackets vers l’instance AEM, jamais l’inverse.
 
 ### Synchronisation bidirectionnelle manuelle {#manual-bidirectional-synchronization}
 
@@ -115,16 +117,16 @@ Dans le **AEM** , **Exporter le package de contenu** ou **Importer un module de 
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 
-### État de synchronisation {#synchronization-status}
+### Statut de la synchronisation {#synchronization-status}
 
-L’extension AEM Brackets comporte une icône de notification dans la barre d’outils située à droite de la fenêtre Brackets, qui indique l’état de la dernière synchronisation :
+L’extension AEM Brackets comporte une icône de notification dans la barre d’outils située à droite de la fenêtre Brackets, qui indique le statut de la dernière synchronisation :
 
-* vert : tous les fichiers ont été synchronisés avec succès
-* blue : une opération de synchronisation est en cours
-* jaune : certains fichiers n’ont pas été synchronisés
-* rouge : aucun des fichiers n’a été synchronisé
+* vert : tous les fichiers ont été synchronisés.
+* bleu : une opération de synchronisation est en cours.
+* jaune : certains fichiers n’ont pas été synchronisés.
+* rouge : aucun fichier n’a été synchronisé.
 
-Cliquez sur l’icône de notification pour ouvrir la boîte de dialogue Rapport d’état de synchronisation qui répertorie tous les états de chaque fichier synchronisé.
+Cliquez sur l’icône de notification pour ouvrir la boîte de dialogue Rapport sur le statut de la synchronisation qui répertorie les statuts de tous les fichiers synchronisés.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

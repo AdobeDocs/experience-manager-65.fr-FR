@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +27,7 @@ Voici les étapes logiques pour que l’importateur de conception reconnaisse vo
 
 1. Création d’un gestionnaire de balises
 
-   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le « type » des balises HTML que votre TagHandler peut traiter est défini au moyen de la propriété OSGi « tagpattern.name » de TagHandlerFactory. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous vous enregistrez pour une balise div contenant une balise imbriquée &lt;p> , &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
+   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le « type » des balises HTML que votre TagHandler peut traiter est défini au moyen de la propriété OSGi « tagpattern.name » de TagHandlerFactory. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise div contenant une balise &lt;p> imbriquée, &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
    * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En tant que fournisseur de gestionnaire de balises, vous devez mettre en œuvre certaines méthodes de cycle de vie qui sont automatiquement appelées par le framework de l’importateur de conception.
 
 1. Créez le composant TagHandlerFactory correspondant.
@@ -59,10 +61,10 @@ Aide-mémoire pour la page de destination
 
 Voici un exemple de disposition du fichier zip :
 
-* /index.html > fichier de HTML de landing page
-* /css > à ajouter à la bibliothèque cliente CSS
-* /img > toutes les images et ressources
-* /js > à ajouter à la bibliothèque cliente JS
+* /index.html -> fichier HTML de page de destination
+* /css -> à ajouter à la bibliothèque cliente CSS
+* /img -> toutes les images et ressources
+* /js -> à ajouter à la bibliothèque cliente JS
 
 La disposition s’appuie sur les bonnes pratiques HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -110,11 +112,11 @@ La section suivante décrit la modification de votre fichier HTML de manière à
 
 ### Limites {#limitations}
 
-Avant l’importation, notez les restrictions suivantes :
+Avant l’importation, veuillez noter les restrictions suivantes :
 
-### Tout attribut tel que class ou id appliqué à la balise &amp;lt;body> n’est pas conservé. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Tout attribut de classe ou d’id appliqué à la balise &lt;body> n’est pas conservé.  {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Si un attribut tel que id ou class est appliqué à la balise body, par exemple : `<body id="container">` il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
+Si un attribut d’id ou de classe est appliqué à la balise body, par exemple `<body id="container">`, il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
 
 ### Transfert de fichiers ZIP par glisser-déposer {#drag-and-drop-zip}
 
@@ -250,7 +252,7 @@ Propriétés prises en charge
 * URL cible, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, &quot;Afficher les détails du produit&quot; est mappé sur le libellé, etc.
+Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, « Afficher les détails du produit » mappe sur le libellé, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -283,7 +285,7 @@ Propriétés prises en charge
 * URL cible, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, img src est l’image de rendu, &quot;titre&quot; est utilisé comme texte de survol, etc.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, img src est l’image de rendu, « title » est utilisé comme texte de survol, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -322,7 +324,7 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 * Champs de prospect prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
 * Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur ou utilisatrice peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
-* Mappez les champs de formulaire de piste à l’aide de noms prédéfinis spécifiques du formulaire de piste CTA, par exemple : firstName pour first-name dans le formulaire de piste, etc.
+* Mappez les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
 * Les champs qui ne sont pas mappés sur un formulaire de prospect le sont sur des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
 * L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
 * La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
@@ -366,7 +368,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 
 ### Parsys (système de paragraphes) {#parsys}
 
-Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant parsys dans le HTML importé. Cela permet à l’utilisateur ou utilisatrice d’ajouter/supprimer des composants AEM modifiables à la page de destination même après son import.
+Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Vous pouvez ajouter un composant parsys dans le fichier HTML importé. Cela permet à l’utilisateur ou utilisatrice d’ajouter/supprimer des composants AEM modifiables à la page de destination même après son import.
 
 Le système de paragraphes permet aux utilisateurs et utilisatrices d’ajouter des composants à l’aide du sidekick.
 
@@ -439,9 +441,9 @@ Si aucun codage n’est spécifié dans le HTML importé, le codage par défaut 
 
 ### Superposition d’un modèle {#overlaying-template}
 
-Le modèle Page d’entrée vierge peut être recouvert en en créant une sur : `/apps/<appName>/designimporter/templates/<templateName>`
+Vous pouvez recouvrir le modèle Page de destination vierge en créant un autre modèle dans `/apps/<appName>/designimporter/templates/<templateName>`.
 
-Les étapes de création d’un modèle dans AEM sont expliquées. [here](/help/sites-developing/templates.md).
+Vous trouverez [ici](/help/sites-developing/templates.md) la procédure de création d’un modèle dans AEM.
 
 ### Référencement d’un composant à partir de la page de destination {#referring-a-component-from-landing-page}
 
@@ -531,7 +533,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 >
 >>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->Et vous devez remplacer `CQ_DESIGN_PATH` avec `VIPURL` dans le modèle de recherche, votre modèle de recherche doit se présenter comme suit :
+>Et vous devez remplacer `CQ_DESIGN_PATH` par `VIPURL` dans le modèle de recherche, qui doit se présenter comme suit :
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
@@ -548,7 +550,7 @@ Si le package de conception contient des balises de composant parsys, le Sidekic
 En cas d’erreur (par exemple, le package importé n’est pas un fichier zip valide), l’import de conception n’importe pas le package. Un message d’erreur s’affiche en haut de la page, juste au-dessus de la zone de dépôt. Des exemples de scénarios d’erreur sont présentés ici. Une fois l’erreur corrigée, vous pouvez réimporter le fichier zip mis à jour sur la même page de destination vierge. Les différents scénarios où des erreurs sont générées sont les suivants :
 
 * Le package de conception importé n’est pas une archive ZIP valide.
-* Le module de conception importé ne contient pas index.html au niveau supérieur.
+* Le package de conception importé ne comporte pas de fichier index.html au niveau supérieur.
 
 ### Avertissements affichés après l’importation {#warnings-displayed-after-import}
 
@@ -599,4 +601,4 @@ avec une feuille de style CSS appliquée à la classe `box`, comme suit :
 
 >[!NOTE]
 >
->Les concepteurs ne doivent coder que dans la variable **id=cqcanvas** est reconnue par l’importateur, sinon la conception n’est pas conservée.
+>Les concepteurs et conceptrices ne doivent coder qu’à l’intérieur de la balise **id=cqcanvas** reconnue par l’importateur, sinon la conception n’est pas conservée.

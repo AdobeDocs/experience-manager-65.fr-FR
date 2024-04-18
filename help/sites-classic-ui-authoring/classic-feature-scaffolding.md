@@ -8,10 +8,12 @@ topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -59,11 +61,11 @@ Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur sou
 
 ### Créer un modèle automatique {#creating-a-scaffold}
 
-Pour créer un modèle automatique, accédez au **Outils** console, puis **Génération de modèles automatique de page par défaut** et créez une page. Un seul type de modèle de page est disponible : *Modèle de génération de modèles automatique.*
+Pour créer un nouveau modèle automatique, accédez à la console **Outils**, puis cliquez sur **Génération de modèles automatiques de page par défaut** et créez une page. Un seul type de modèle de page est disponible : *Modèle de génération de modèles automatique.*
 
 Accédez aux **Propriétés de la page** de la nouvelle page et définissez le *texte du titre*, la *description*, le *modèle cible* et le *chemin d&#39;accès cible*, comme décrit ci-dessus.
 
-Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez au **[mode Conception](/help/sites-authoring/page-authoring.md#sidekick)** dans la page de modèle automatique. Un lien s’affiche, vous permettant de modifier le modèle automatique dans le **éditeur de boîtes de dialogue**.
+Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez au **[mode Conception](/help/sites-authoring/page-authoring.md#sidekick)** dans la page de modèle automatique. Un lien s’affiche alors pour vous permettre de modifier le modèle automatique dans l’**éditeur de boîte de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -73,7 +75,7 @@ La définition de boîte de dialogue d’un modèle automatique fonctionne de la
 
 * Les définitions de boîte de dialogue de composant sont rendues comme des boîtes de dialogue normales (comme illustré dans le volet central de l’éditeur de boîte de dialogue, par exemple), tandis que les définitions de boîte de dialogue de modèle automatique, bien qu’elles apparaissent comme des boîtes de dialogue normales dans l’éditeur de boîte de dialogue, sont rendues sur la page de modèle automatique sous la forme d’un formulaire de modèle automatique (comme illustré dans le modèle automatique **News** ci-dessus).
 * Les boîtes de dialogue de composant ne contiennent que les champs nécessaires pour définir le contenu d’un seul composant spécifique. Une boîte de dialogue de modèle automatique doit fournir des champs pour chaque propriété de chaque paragraphe de la page à créer.
-* S’il existe des boîtes de dialogue de composant, le composant utilisé pour effectuer le rendu du contenu spécifié est implicite et, par conséquent, la variable `sling:resourceType` de la propriété du paragraphe est renseignée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations définissant le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue elle-même. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant les champs *masqués* pour envoyer ces informations lors de la création de la page.
+* Dans le cas des boîtes de dialogue de composant, le composant utilisé pour le rendu du contenu spécifié est implicite. Par conséquent, la propriété `sling:resourceType` du paragraphe est complétée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations définissant le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue elle-même. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant les champs *masqués* pour envoyer ces informations lors de la création de la page.
 
 Un aperçu de l’exemple de la boîte de dialogue de modèle automatique **News** dans l’éditeur de boîte de dialogue permet d’expliquer comment cela fonctionne. Passez en mode conception sur la page du modèle automatique, puis cliquez sur le lien de l’éditeur de boîte de dialogue.
 
@@ -164,4 +166,4 @@ Après le déverrouillage, vous pouvez restaurer l’héritage en cliquant sur l
 
 >[!NOTE]
 >
->Si l’héritage est annulé au niveau de la page (à partir de l’onglet Live Copy des Propriétés de la page), tous les composants sont modifiables dans **Génération de modèles automatique** (elles s’affichent à l’état déverrouillé).
+>Si l’héritage est annulé au niveau de la page (dans l’onglet Livecopy des propriétés de la page), tous les composants sont modifiables en mode **Génération de modèles automatique** (ils s’affichent à l’état déverrouillé).

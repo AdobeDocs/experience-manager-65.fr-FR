@@ -7,10 +7,12 @@ content-type: reference
 topic-tags: components
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 32%
+ht-degree: 36%
 
 ---
 
@@ -91,7 +93,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusion de variables dans des phrases localisées {#including-variables-in-localized-sentences}
 
-Incluez des variables dans la chaîne localisée pour créer une signification contextuelle dans une phrase. Par exemple, après vous être connecté à une application web, la page d’accueil affiche le message &quot;Bienvenue à l’administrateur. Vous avez deux messages dans votre boîte de réception.&quot; Le contexte de la page détermine le nom d’utilisateur et le nombre de messages.
+Incluez des variables dans la chaîne localisée pour créer un contexte de signification dans une phrase. Par exemple, après vous être connecté à une application Web, la page d’accueil affiche le message « Bienvenue, Administrateur ou Administratrice. Vous avez deux messages dans votre boîte de réception.&quot; Le contexte de la page détermine le nom de l’utilisateur ou de l’utilisatrice et le nombre de messages.
 
 [Dans le dictionnaire](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), les variables sont représentées dans des chaînes sous la forme d’index entre crochets. Indiquez les valeurs des variables en tant qu’arguments de la méthode `get`. Les arguments sont placés à la suite de l’indice de traduction, et les index correspondent à l’ordre des arguments :
 

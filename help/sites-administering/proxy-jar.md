@@ -1,6 +1,6 @@
 ---
 title: Outil de serveur proxy (proxy.jar)
-description: Découvrez l’outil de serveur proxy (proxy.jar) dans Adobe Experience Manager.
+description: Découvrez l’outil de serveur proxy (proxy.jar) dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +85,7 @@ Pour vérifier si la connexion persistante fonctionne :
 
 **Recherche de requêtes perdues**
 
-Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple, avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il y a un pare-feu :
+Si vous perdez des requêtes dans une configuration de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour savoir où la requête a été perdue. S’il y a un pare-feu :
 
 1. Démarrez un proxy avant un pare-feu.
 1. Démarrez un autre proxy après un pare-feu.

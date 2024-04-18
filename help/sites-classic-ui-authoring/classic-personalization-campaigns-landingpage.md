@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Personalization
+role: User
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +40,7 @@ La préparation du package de conception à importer est traitée dans la sectio
 
 ## Que sont les pages de destination ? {#what-are-landing-pages}
 
-Les pages d’entrée sont des sites d’une ou de plusieurs pages qui sont le &quot;point de terminaison&quot; d’une diffusion marketing, par exemple, avec des courriers électroniques, des mots-clés/bannières, des médias sociaux. Une page de destination peut avoir plusieurs objectifs, mais tous ont un élément en commun : la personne doit accomplir une tâche, ce qui conditionne le succès de la page de destination.
+Les pages de destination sont des sites d’une ou de plusieurs pages qui sont le « point d’entrée » d’une diffusion marketing (un e-mail, des mots-clés/bannières, des médias sociaux, etc.). Une page de destination peut avoir plusieurs objectifs, mais tous ont un élément en commun : la personne doit accomplir une tâche, ce qui conditionne le succès de la page de destination.
 
 La fonctionnalité Pages de destination d’AEM permet aux spécialistes marketing de collaborer avec les concepteurs et conceptrices web des agences ou des équipes créatives internes, afin de créer des conceptions de page qui peuvent être facilement importées dans AEM et qui restent modifiables par les spécialistes marketing. Par ailleurs, elles peuvent être publiées sous la même gouvernance que les autres sites optimisés par AEM.
 
@@ -122,7 +124,7 @@ Voici un exemple de composant Image sur une page de destination :
 
 Une conception de page de destination peut comporter plusieurs liens. Certains d’entre eux peuvent être conçus comme des « appels à l’action ».
 
-L’appel à l’action (CTA) est utilisé pour inciter le visiteur à agir immédiatement sur la page d’entrée, par exemple &quot;S’abonner maintenant&quot;, &quot;Afficher cette vidéo&quot;, &quot;Durée limitée&quot;, etc.
+L’appel à l’action (CTA) est utilisé pour inciter le visiteur ou la visiteuse à agir immédiatement sur la page de destination. En voici quelques exemples : « S’abonner maintenant », « Voir cette vidéo », « Durée limitée », etc.
 
 * Lien de clics publicitaires : permet d’ajouter un lien texte qui, lorsqu’il est fait l’objet d’un clic, dirige le visiteur ou la visiteuse vers une URL cible.
 * Lien graphique : permet d’ajouter une image qui, lorsqu’elle fait l’objet d’un clic, dirige le visiteur ou la visiteuse vers une URL cible.
@@ -348,13 +350,13 @@ Adobe recommande d’utiliser l’importateur de conception sur une instance d�
 
 ### Créer une page d’importateur {#creating-an-importer-page}
 
-Avant de pouvoir importer votre conception de page d’entrée, vous devez créer une page d’importateur, par exemple, sous une campagne. Le modèle Page d’importateur vous permet d’importer votre page de destination HTML complète. La page contient une zone de dépôt dans laquelle le package de conception de la page de destination peut être importé par glisser-déposer.
+Avant de pouvoir importer votre conception de page de destination, vous devez créer une page d’importateur, par exemple sous une campagne. Le modèle Page d’importateur vous permet d’importer votre page de destination HTML complète. La page contient une zone de dépôt dans laquelle le package de conception de la page de destination peut être importé par glisser-déposer.
 
 >[!NOTE]
 >
->Par défaut, une page d’importateur peut uniquement être créée sous des campagnes, mais vous pouvez également superposer ce modèle pour créer une page d’entrée sous `/content/mysite`.
+>Par défaut, une page d’importateur ne peut être créée que sous les campagnes. Vous pouvez toutefois superposer ce modèle afin de créer une page de destination sous `/content/mysite`.
 
-Pour créer une landing page :
+Pour créer une page de destination :
 
 1. Accédez à la console **Sites web**.
 1. Sélectionnez votre campagne dans le volet de gauche.
@@ -386,7 +388,7 @@ En supposant que le package de conception soit prêt, les étapes suivantes déc
 
 >[!NOTE]
 >
->Lors de l’importation, les balises sont assainies pour des raisons de sécurité et pour éviter d’importer et de publier des balises non valides. Cela suppose que les balises HTML et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
+>Lors de lʼimportation, le balisage est nettoyé pour des raisons de sécurité et afin dʼéviter lʼimportation et la publication d’un balisage non valide. Cela suppose que les balises HTML et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
 
 >[!NOTE]
 >
@@ -414,7 +416,7 @@ Lorsque vous importez le package de conception, les options **Effacer la concept
 
 ### Télécharger le package de conception importé {#downloading-the-imported-design-package}
 
-Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une page de destination spécifique. Les modifications effectuées sur une page ne sont pas ajoutées au fichier zip.
+Le téléchargement du fichier zip permet d&#39;enregistrer le fichier zip importé avec une page de destination spécifique. Les modifications apportées à une page ne sont pas ajoutées au fichier compressé.
 
 Pour télécharger le package de conception importé, cliquez sur **Télécharger le fichier compressé** dans la barre d’outils de la page de destination.
 
@@ -436,7 +438,7 @@ Lors de l’effacement de la page de destination, vous pouvez supprimer les modi
 
 >[!NOTE]
 >
->Si vous décidez de supprimer les modifications de contenu, toutes les modifications que vous avez apportées à la page d’entrée importée et toutes les propriétés de page sont perdues lorsque vous cliquez sur **Effacer**.
+>Si vous décidez de supprimer les modifications du contenu, toutes les modifications que vous avez effectuées sur la page de destination importée, ainsi que toutes les propriétés de page, seront perdues lorsque vous cliquerez sur **Effacer**.
 
 ### Modifier et ajouter des composants sur une page de destination {#modifying-and-adding-components-on-a-landing-page}
 

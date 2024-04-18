@@ -7,16 +7,18 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing
+role: Developer
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
-Chaque page comporte un ensemble de [properties](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichées et modifiées par les utilisateurs ; certaines sont requises lors de la création de la page (création d’une vue), d’autres peuvent être affichées et modifiées ultérieurement (modification d’une vue). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
+Chaque page comporte un ensemble de [propriétés](/help/sites-authoring/editing-page-properties.md) qui peuvent être affichées et modifiées par les utilisateurs et utilisatrices ; certaines sont requises lors de la création de la page (mode de création), d’autres peuvent être affichées et modifiées ultérieurement (mode d’édition). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
 >[!CAUTION]
 >
@@ -24,18 +26,18 @@ Chaque page comporte un ensemble de [properties](/help/sites-authoring/editing-p
 
 Le statut par défaut de chaque propriété de la page est :
 
-* masqué dans la vue de création (par exemple, **Créer une page** assistant)
+* masqué en mode de création (assistant **Créer une page**, par exemple) ;
 
-* disponible dans la vue d’édition (par exemple, **Afficher les propriétés**)
+* disponible en mode d’édition (**Afficher les propriétés**, par exemple).
 
-Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez les propriétés de noeud appropriées :
+Les champs doivent être configurés spécifiquement si une modification est requise. Pour ce faire, utilisez la les propriétés de nœud appropriées :
 
-* Propriété de page à rendre disponible dans la vue de création (par exemple : **Créer une page** assistant) :
+* Propriété de page qui doit être disponible en mode de création (assistant **Créer une page**, par exemple) :
 
    * Nom : `cq:showOnCreate`
    * Type : `Boolean`
 
-* Propriété de page à mettre à disposition dans la vue d’édition (par exemple : **Affichage**/**Modifier**) **Propriétés** ) :
+* Propriété de page qui doit être disponible en mode d’édition (par exemple, l’option **Afficher**/**Modifier** les **Propriétés**) :
 
    * Nom : `cq:hideOnEdit`
    * Type : `Boolean`
@@ -52,7 +54,7 @@ Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’ongle
 
 ## Configurer vos propriétés de page {#configuring-your-page-properties}
 
-Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de noeud appropriées.
+Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de nœud appropriées.
 
 Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
@@ -96,11 +98,11 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    * **Type** : `Boolean`
    * **Valeur** : `false`
 
-   La variable **Autres titres et description** ne s’affichera plus dans la section **Créer une page** assistant.
+   La section **Autres titres et description** ne s’affichera plus dans l’assistant **Créer une page**.
 
 >[!NOTE]
 >
->Lors de la configuration des propriétés de page à utiliser avec des Live Copies, voir [Configuration des verrous MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copy, consultez [Configuration des verrous MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 

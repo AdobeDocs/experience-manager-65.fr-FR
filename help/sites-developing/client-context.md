@@ -1,18 +1,19 @@
 ---
 title: Présentation détaillée de ClientContext
-description: ClientContext représente une collection de données utilisateur assemblées dynamiquement.
+description: ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 docset: aem65
-feature: Context Hub
+feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2969'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->Le contexte client a été remplacé par ContextHub. Voir [documentation connexe](/help/sites-developing/contexthub.md) pour plus d’informations.
+>Le contexte client a été remplacé par ContextHub. Consultez la [documentation connexe](/help/sites-developing/contexthub.md) pour plus d’informations.
 
 ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Vous pouvez utiliser les données pour déterminer le contenu à afficher sur une page web dans une situation donnée (ciblage du contenu). Les données sont également disponibles pour les analyses de site web, ainsi que pour tout JavaScript de la page.
 
@@ -30,7 +31,7 @@ ClientContext se compose principalement des aspects suivants :
 * L’interface utilisateur qui affiche les données utilisateur et fournit des outils pour simuler l’expérience utilisateur.
 * Une [API JavaScript](/help/sites-developing/ccjsapi.md) pour interagir avec les magasins de sessions.
 
-Pour créer un magasin de sessions autonome et l’ajouter à ClientContext, ou créer un magasin de sessions lié à un composant ContextStore. Adobe Experience Manager (AEM) installe plusieurs composants Context Store que vous pouvez utiliser immédiatement. Vous pouvez utiliser ces composants comme base de vos composants.
+Pour créer un magasin de sessions autonome et l’ajouter à ClientContext, ou créer un magasin de sessions lié à un composant ContextStore. Adobe Experience Manager (AEM) installe plusieurs composants ContextStore que vous pouvez utiliser immédiatement. Vous pouvez utiliser ces composants comme base de vos composants.
 
 Pour plus d’informations sur l’ouverture de contexte client, la configuration des informations affichées et la simulation de l’expérience utilisateur, consultez [Contexte client](/help/sites-administering/client-context.md).
 
@@ -45,7 +46,7 @@ Le framework ClientContext fournit une [API JavaScript](/help/sites-developing/c
 
 Les données du magasin de sessions restent sur le client. ClientContext n’écrit pas de données sur le serveur. Pour envoyer des données au serveur, utilisez un formulaire ou développez du code JavaScript personnalisé.
 
-Chaque magasin de sessions est un ensemble de paires de type propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être décidée par le concepteur, ou le développeur, ou les deux. L’exemple de code JavaScript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
+Chaque magasin de sessions est un ensemble de paires de type propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être déterminée par le concepteur, le développeur ou les deux. L’exemple de code JavaScript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
 
 ```
 {
@@ -65,7 +66,7 @@ Un magasin de sessions peut être conservé entre deux sessions de navigateur ou
 >
 >La persistance de magasin utilise soit l’espace de stockage du navigateur soit des cookies (cookie `SessionPersistence`). Le stockage du navigateur est plus courant.
 >
->Lorsque le navigateur est fermé et rouvert, un magasin de sessions peut être chargé avec les valeurs d’un magasin persistant. L’effacement du cache du navigateur est nécessaire pour supprimer les anciennes valeurs.
+>Lorsque le navigateur est fermé et rouvert, un magasin de sessions peut être chargé avec les valeurs d’un magasin persistant. Il faut alors vider la mémoire cache du navigateur pour supprimer les anciennes valeurs.
 
 ### Composants de magasin de contexte {#context-store-components}
 
@@ -101,7 +102,7 @@ Insérez le composant ClientContext dans la section du corps de vos pages web po
 Avec le composant ClientContext, la page charge les bibliothèques clientes qui implémentent le contexte client.
 
 * API Javascript pour ClientContext.
-* La structure ClientContext qui prend en charge les magasins de sessions, la gestion des événements, etc.
+* Le framework ClientContext qui prend en charge les magasins de sessions, la gestion des événements, etc.
 * Les segments définis.
 * Les scripts init.js générés pour chaque composant de magasin de contexte qui a été ajouté à ClientContext.
 * (Instance de création uniquement) L’interface utilisateur de ClientContext.
@@ -117,11 +118,11 @@ Pour étendre ClientContext, créez un magasin de sessions et affichez éventuel
 
 >[!NOTE]
 >
->Si vous possédez (ou si vous créez) un service `JSONP` capable de fournir les données, vous pouvez simplement utiliser le composant de magasin de contexte `JSONP` et le mapper sur ce service. Cela gère le magasin de sessions.
+>Si vous possédez (ou si vous créez) un service `JSONP` capable de fournir les données, vous pouvez simplement utiliser le composant de magasin de contexte `JSONP` et le mapper sur ce service. Cela vous permet de gérer le magasin de sessions.
 
 ### Création d’un magasin de sessions {#creating-a-session-store}
 
-Créez un magasin de sessions pour les données que vous devez ajouter à et récupérer à partir de ClientContext. En règle générale, vous utilisez la procédure suivante pour créer un magasin de sessions :
+Créez un magasin de sessions pour les données que vous devez ajouter et récupérer à partir de ClientContext. En règle générale, vous utilisez la procédure suivante pour créer un magasin de sessions :
 
 1. Créez un dossier de bibliothèque cliente dont la valeur de propriété `categories` est définie sur `personalization.stores.kernel`. ClientContext charge automatiquement les bibliothèques clientes de cette catégorie.
 
@@ -150,7 +151,7 @@ L’API fournit également des extensions de ces classes qui sont spécialisées
 
 #### Création de l’objet de magasin de sessions {#creating-the-session-store-object}
 
-Le code JavaScript de votre dossier de bibliothèques clientes crée et initialise le magasin de sessions. Le magasin de sessions doit être enregistré à l’aide du gestionnaire de magasin de contexte. L’exemple suivant crée et enregistre un objet [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
+Le code JavaScript de votre dossier de bibliothèques clientes crée et initialise le magasin de sessions. Le magasin de sessions doit être enregistré à l’aide du gestionnaire de Context Store. L’exemple suivant crée et enregistre un objet [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
 
 ```
 //Create the session store
@@ -189,9 +190,9 @@ AEM fournit les composants de magasin de contexte genericstore et genericstorepr
 
 * Paires propriété-valeur : extension du composant `GenericStoreProperties`. Ce composant effectue automatiquement le rendu des magasins de paires propriété-valeur. Plusieurs points d’interaction sont fournis :
 
-   * `prolog.jsp` et `epilog.jsp`: interaction de composant qui vous permet d’ajouter une logique côté serveur avant ou après le rendu du composant.
+   * `prolog.jsp` et `epilog.jsp` : interaction de composant qui vous permet d’ajouter une logique côté serveur avant ou après le rendu du composant.
 
-* Données complexes : extension du composant `GenericStore`. Votre magasin de sessions nécessite une méthode &quot;renderer&quot; qui est appelée chaque fois que le composant doit être rendu. La fonction de rendu est appelée avec deux paramètres :
+* Données complexes : extension du composant `GenericStore`. Votre magasin de sessions a besoin d’une méthode de « moteur de rendu » qui est appelée chaque fois que le rendu du composant doit être effectué. La fonction de rendu est appelée avec deux paramètres :
 
    * `@param {String} store`
 Magasin dont le rendu doit être effectué.
@@ -299,7 +300,7 @@ Le composant de magasin de contexte `/libs/cq/personalization/components/context
 
 ### Rendu des données d’un magasin de sessions pour les composants genericstore {#rendering-session-store-data-for-genericstore-components}
 
-Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, procédez comme suit :
+Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, vous devez effectuer les opérations suivantes :
 
 * Ajouter la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
 * Implémenter une méthode de rendu sur la classe d’un magasin de sessions.
@@ -320,7 +321,7 @@ Le format de la balise est le suivant :
 
 #### Mise en œuvre de la méthode de rendu d’un magasin de sessions {#implementing-the-session-store-renderer-method}
 
-Votre magasin de sessions nécessite une méthode &quot;renderer&quot; qui est appelée chaque fois que le composant doit être rendu. La fonction de rendu est appelée avec deux paramètres :
+Votre magasin de sessions a besoin d’une méthode de « moteur de rendu » qui est appelée chaque fois que le rendu du composant doit être effectué. La fonction de rendu est appelée avec deux paramètres :
 
 * @param {String} store
 Magasin dont le rendu doit être effectué.
@@ -416,7 +417,7 @@ function getName(){
 
 ### Exclusion d’une propriété du cookie sessionpersistence {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-Pour empêcher une propriété d’une propriété `PersistedSessionStore` d’être persistante (c’est-à-dire de l’exclure de la `sessionpersistence` (cookie), ajoutez la propriété à la liste des propriétés non persistantes du magasin de sessions persistant.
+Pour empêcher qu’une propriété d’un `PersistedSessionStore` soit conservée (c’est-à-dire, pour l’exclure du cookie `sessionpersistence`), ajoutez la propriété à la liste des propriétés non persistantes du magasin de sessions persistant.
 
 Consultez ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`.
 
@@ -504,11 +505,11 @@ Créez une application CQ et ajoutez le composant geoloc.
 
 ### Création de la boîte de dialogue Modifier geoloc {#create-the-geoloc-edit-dialog}
 
-Le composant de magasin de contexte nécessite une boîte de dialogue Modifier. La boîte de dialogue de modification géographique contient un message statique qui indique qu’il n’y a aucune propriété à configurer.
+Le composant de magasin de contexte nécessite une boîte de dialogue Modifier. La boîte de dialogue Modifier geoloc contient un message statique indiquant qu’il n’y a aucune propriété à configurer.
 
 1. Cliquez avec le bouton droit sur le nœud `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` et cliquez sur Copier.
 1. Cliquez avec le bouton droit de la souris sur le nœud `/apps/myapp/contextstores/geoloc`, puis sélectionnez Coller.
-1. Supprimez tous les noeuds enfants sous le noeud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
+1. Supprimez tous les nœuds enfants sous le nœud /apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items :
 
    * store
    * properties
@@ -611,17 +612,17 @@ Ouvrez la page d’accueil de Geometrixx Outdoors en mode d’édition, puis ouv
 
 ## Création d’un ClientContext personnalisé {#creating-a-customized-client-context}
 
-Pour créer un second contexte client, dupliquez la branche :
+Pour créer un second ClientContext, dupliquez la branche :
 
 `/etc/clientcontext/default`
 
 * Le sous-dossier :
   `/content`
-contient le contenu du contexte client personnalisé.
+Contient le contenu du contexte client personnalisé.
 
 * Le dossier :
   `/contextstores`
-vous permet de définir différentes configurations pour les magasins de contexte.
+vous permet de définir des configurations différentes pour les magasins de contexte.
 
 Pour utiliser votre contexte client personnalisé, modifiez la propriété
 `path`
