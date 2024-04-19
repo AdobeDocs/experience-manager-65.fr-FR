@@ -1,33 +1,33 @@
 ---
-title: "Base de données DB2\_: exécution d’un processus hebdomadaire"
-description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2.
+title: "DB2&reg; base de données : exécution d’un processus hebdomadaire"
+description: Découvrez comment améliorer les performances de votre base de données AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 26%
+source-wordcount: '148'
+ht-degree: 23%
 
 ---
 
-# Base de données DB2 : exécution d’un processus hebdomadaire{#db-database-running-a-process-weekly}
+# Base de données DB2® : exécution d’un processus hebdomadaire{#db-database-running-a-process-weekly}
 
-Si votre base de données AEM forms DB2 commence à s’exécuter lentement, l’exécution hebdomadaire du processus suivant peut améliorer ses performances :
+Si votre base de données AEM Forms DB2® commence à s’exécuter lentement, l’exécution hebdomadaire du processus suivant peut améliorer ses performances :
 
-1. Démarrez DB2 Control Center :
+1. Démarrez DB2® Control Center :
 
-   (Windows) Sélectionnez Démarrer > Programmes > IBM DB2 > General Administration Tools > Control Center.
+   (Windows) Sélectionnez Démarrer > Programmes > IBM® DB2® > Outils d’administration générale > Centre de contrôle.
 
-   (Linux et UNIX) Ouvrez une invite de commande et saisissez la commande `db2jcc`.
+   (Linux® et UNIX®) À partir d’une invite de commande, saisissez la variable `db2jcc` .
 
-1. Dans l’arborescence d’objets DB2 Control Center, cliquez sur All Databases.
-1. Cliquez sur la base de données que vous avez créée pour AEM forms et cliquez sur le dossier Tables .
-1. Sélectionnez toutes les tables de base de données dans le volet de contenu, cliquez dessus avec le bouton droit et sélectionnez Exécuter les statistiques.
-1. Accédez à Statistiques > Statistiques des index.
-1. Sélectionnez Collecter des statistiques pour tous les index, puis Collecter des statistiques pour les index avec des statistiques détaillées étendues et cliquez sur OK.
+1. Dans l’arborescence d’objets DB2® Control Center, cliquez sur All Databases.
+1. Cliquez sur la base de données que vous avez créée pour AEM Forms, puis sur le dossier Tables .
+1. Sélectionnez toutes les tables de base de données dans le volet de contenu, cliquez dessus avec le bouton droit, puis sélectionnez Exécuter les statistiques.
+1. Accédez à Statistics > Index Statistics.
+1. Sélectionnez Collect Statistics For All Indexes, puis Collect Statistics For Indexes With Extended Detailed Statistics et cliquez sur OK.
 
 Un message s’affiche une fois le processus terminé. Fermez le message.

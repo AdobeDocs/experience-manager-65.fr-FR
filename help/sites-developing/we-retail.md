@@ -9,7 +9,7 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 100%
@@ -35,10 +35,10 @@ En tant qu’implémentation de référence standard d’AEM, We.Retail présent
 | [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail inclut des gabarits de langue copiés en direct dans des sites spécifiques à un pays. | [Faites un essai !](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Disposition réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages comportent une disposition réactive qui s’adapte dynamiquement à la taille de l’écran et de l’appareil. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages sont basées sur des modèles modifiables, ce qui permet aux personnes qui ne sont pas développeuses d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Tous les composants sont basés sur le langage HTL. |  |
+| [HTML Template Language](https://experienceleague.adobe.com/fr/docs/experience-manager-htl/content/overview) | Tous les composants sont basés sur le langage HTL. |  |
 | [Fonctionnalités pour le e-commerce](/help/commerce/cif-classic/developing/ecommerce.md) | Inclut un catalogue de produits |  |
 | [Sites pour communautés](/help/communities/overview.md) | Permet aux visiteurs et visiteuses de participer à des discussions communautaires, de lire des blogs, etc. |  |
-| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser, prêts à l’emploi et configurables par la personne utilisatrice. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
+| [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser, prêts à l’emploi et configurables par la personne utilisatrice. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
 | [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail illustre la puissance de la réutilisation de contenu à l’aide des fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) | Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. | [Faites un essai !](/help/sites-developing/we-retail-experience-fragments.md) |
 
