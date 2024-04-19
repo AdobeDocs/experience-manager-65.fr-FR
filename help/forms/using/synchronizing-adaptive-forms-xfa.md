@@ -7,10 +7,10 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 94%
+source-wordcount: '1226'
+ht-degree: 89%
 
 ---
 
@@ -46,13 +46,13 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur AEM Forms.
 
-Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le module à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le package contient les ressources suivantes :
 
 1. `sample-form.xdp` : modèle de formulaire XFA utilisé comme exemple.
 
-1. `sample-xfa-af` : formulaire adaptatif basé sur le fichier sample-form.xdp. Ce formulaire adaptatif ne contient toutefois aucun champ. Dans l’étape suivante, vous allez ajouter du contenu à ce formulaire adaptatif.
+1. `sample-xfa-af` : formulaire adaptatif basé sur le fichier sample-form.xdp. Ce formulaire adaptatif ne contient toutefois aucun champ. À l’étape suivante, vous ajoutez du contenu à ce formulaire adaptatif.
 
 ### Ajout de contenu au formulaire adaptatif {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ Le package contient les ressources suivantes :
 
 >[!NOTE]
 >
->Dans les étapes précédentes, nous avons remplacé une propriété d’un champ du fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
+>Dans les étapes précédentes, vous avez remplacé une propriété d’un champ dans le fichier XDP. Cette propriété n’est donc pas synchronisée si la propriété correspondante dans le fichier XDP est modifiée ultérieurement.
 
 ## Détection des modifications dans le fichier XDP {#detecting-changes-in-xdp-file}
 
@@ -133,7 +133,7 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 
 >[!NOTE]
 >
->Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
+>Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section non lié du fichier XML de sortie.
 
 ## Téléchargements {#downloads}
 

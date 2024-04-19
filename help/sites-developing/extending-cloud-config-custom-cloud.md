@@ -9,16 +9,16 @@ exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '403'
+ht-degree: 95%
 
 ---
 
 # Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
-Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
+Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple, les Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
 >[!NOTE]
 >

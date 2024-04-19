@@ -10,10 +10,10 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 58%
+ht-degree: 55%
 
 ---
 
@@ -106,8 +106,8 @@ Pour ne recevoir des notifications que pour les actions sur la page définie par
 
 Si vous avez choisi de recevoir des notifications dans votre boîte de réception AEM, celle-ci contient des notifications. Vous pouvez [afficher vos notifications ;](#viewing-your-notifications), puis sélectionnez les notifications requises pour :
 
-* Les approuver en cliquant sur **Approuver** : la valeur de la colonne **Lecture** est définie sur **true**.
+* Accepter en cliquant **Approuver**: la valeur de la variable **Lecture** est définie sur **true**.
 
-* Les supprimer en cliquant sur **Supprimer**.
+* Éliminez-le en cliquant sur **Supprimer**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

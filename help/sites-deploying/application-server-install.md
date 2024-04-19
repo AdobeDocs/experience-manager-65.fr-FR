@@ -9,10 +9,10 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 98%
+source-wordcount: '1166'
+ht-degree: 91%
 
 ---
 
@@ -178,7 +178,7 @@ Cette opération utilise une disposition de serveur simple avec uniquement un se
    * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
    * Recompressez le fichier Web.xml.
 
-* Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut).
+* Déployer AEM fichier war en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
 * L’installation peut prendre du temps...
 * Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la section Description générale (par exemple, en suivant le fichier error.log).
 * Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.
@@ -236,17 +236,17 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * **Déploiement de l’application Web AEM**
 
-   * Téléchargez le fichier war AEM.
-   * Au besoin, effectuez vos configurations dans le fichier web.xml (voir ci-dessus, dans Description générale).
+   * Téléchargez AEM fichier war.
+   * Effectuez vos configurations dans web.xml si nécessaire (voir ci-dessus dans la Description générale).
 
-      * Décompressez le fichier WEB-INF/Web.xml.
-      * Définissez le paramètre sling.run.modes sur « publication ».
-      * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins.
-      * Recompressez le fichier Web.xml.
+      * Décompressez le fichier WEB-INF/web.xml .
+      * Définissez le paramètre sling.run.modes sur publish.
+      * Décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins.
+      * Recompressez le fichier web.xml.
 
-   * Renommez le fichier WAR AEM en ROOT.war si vous souhaitez le déployer en tant qu’application web racine. Renommez-le aemauthor.war, par exemple, si vous souhaitez que aemauthor soit la racine de contexte.
+   * Renommez AEM fichier war en ROOT.war si vous souhaitez le déployer en tant qu’application web racine. Renommez-le aemauthor.war si vous souhaitez que aemauthor soit la racine du contexte.
    * Copiez-le dans le dossier webapps de Tomcat.
-   * Patientez jusqu’à ce qu’AEM soit installé.
+   * Patientez jusqu’à ce que AEM soit installé.
 
 ## Résolution des problèmes {#troubleshooting}
 

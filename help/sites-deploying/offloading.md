@@ -8,10 +8,10 @@ content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2317'
-ht-degree: 43%
+source-wordcount: '2318'
+ht-degree: 98%
 
 ---
 
@@ -21,52 +21,52 @@ ht-degree: 43%
 
 Le déchargement permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances particulières d’Experience Manager pour exécuter des types de traitement spécifiques. Un traitement spécialisé vous permet d’optimiser l’utilisation des ressources serveur disponibles.
 
-Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les grappes sont composées d’une ou de plusieurs instances de Experience Manager, de sorte qu’une seule instance est considérée comme un cluster.
+Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les clusters sont composés d’une ou de plusieurs instances Experience Manager, de sorte qu’une seule instance est considérée comme un cluster.
 
-Pour plus d’informations sur l’ajout d’instances à une topologie, voir [Administration des topologies](/help/sites-deploying/offloading.md#administering-topologies).
+Pour plus d’informations sur l’ajout d’instances à une topologie, voir [Administrer des topologies](/help/sites-deploying/offloading.md#administering-topologies).
 
-### Distribution des tâches {#job-distribution}
+### Distribution des traitements {#job-distribution}
 
-Sling JobManager et JobConsumer permettent la création de tâches qui sont traitées dans une topologie :
+Sling JobManager et JobConsumer permettent de créer des traitements qui sont traités dans une topologie :
 
-* JobManager : service qui crée des tâches pour des rubriques spécifiques.
-* JobConsumer : service qui exécute les tâches d’une ou de plusieurs rubriques. Plusieurs services JobConsumer peuvent être enregistrés pour la même rubrique.
+* JobManager : un service qui crée des traitements pour des rubriques spécifiques.
+* JobConsumer : un service qui exécute les traitements d’une ou de plusieurs rubriques. Plusieurs services JobConsumer peuvent être enregistrés pour la même rubrique.
 
-Lorsque JobManager crée une tâche, la structure de déchargement sélectionne une grappe de Experience Manager dans la topologie pour exécuter la tâche :
+Lorsque JobManager crée un traitement, le framework de déchargement sélectionne un cluster Experience Manager dans la topologie pour l’exécuter :
 
-* La grappe doit inclure une ou plusieurs instances qui exécutent un JobConsumer enregistré pour la rubrique de tâche.
+* Le cluster doit inclure une ou plusieurs instances qui exécutent un JobConsumer enregistré pour la rubrique de traitement.
 * La rubrique doit être activée pour au moins une instance du cluster.
 
-Voir [Configuration de la consommation de rubrique](/help/sites-deploying/offloading.md#configuring-topic-consumption) pour plus d’informations sur l’amélioration de la distribution des tâches.
+Pour en savoir plus sur l’amélioration de la distribution des traitements, voir [Configurer la consommation de rubriques](/help/sites-deploying/offloading.md#configuring-topic-consumption).
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
 Lorsque la structure de déchargement sélectionne un cluster pour effectuer une tâche et que ce cluster est composé de plusieurs instances, Sling Distribution détermine quelle instance du cluster exécute la tâche.
 
-### Tâches utiles {#job-payloads}
+### Payloads de traitements {#job-payloads}
 
-La structure de déchargement prend en charge les charges utiles des tâches qui associent des tâches aux ressources dans le référentiel. Les payloads de tâche sont utiles lorsque des tâches sont créées pour des ressources de traitement et que la tâche est déchargée sur un autre ordinateur.
+Le framework de déchargement prend en charge les payloads de traitements qui associent des traitements à des ressources dans le référentiel. Les payloads de traitements sont utiles lorsque des traitements sont créés pour des ressources de travail et que la tâche est déchargée sur un autre ordinateur.
 
-Lors de la création d’une tâche, il est garanti que la charge utile se trouve uniquement sur l’instance qui crée la tâche. Lors du déchargement de la tâche, les agents de réplication s’assurent que la charge utile est créée sur l’instance qui finit par consommer la tâche. Lorsque l’exécution de la tâche est terminée, la réplication inverse entraîne la copie de la charge utile vers l’instance qui a créé la tâche.
+Lors de la création d’un traitement, la position de la payload n’est garantie que sur l’instance qui crée le traitement. Lors du déchargement du traitement, les agents de réplication s’assurent que la payload est créée sur l’instance qui finit par consommer le traitement. Lorsque l’exécution du traitement est terminée, la réplication inverse entraîne la copie de la payload vers l’instance qui a créé le traitement.
 
-## Administration des topologies {#administering-topologies}
+## Administrer les topologies {#administering-topologies}
 
 Les topologies sont des grappes de Experience Manager à couplage faible qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
 
-Chaque instance de Experience Manager exécute les services liés au déchargement suivants :
+Chaque instance d’Experience Manager exécute les services suivants liés au déchargement :
 
-* Discovery Service : envoie des demandes à un connecteur de topologie pour rejoindre la topologie.
-* Topology Connector : reçoit les demandes de jointure et accepte ou refuse chaque demande.
+* Discovery Service : envoie des demandes à un connecteur de topologie afin de faire adhérer la topologie.
+* Topology Connector : reçoit les demandes d’adhésion et accepte ou refuse chaque demande.
 
-Le service de détection de tous les membres de la topologie pointe vers le connecteur de topologie sur l’un des membres. Dans les sections qui suivent, ce membre est appelé membre racine.
+Le Discovery Service de tous les membres de la topologie pointe vers le Topology Connector sur l’un des membres. Dans les sections qui suivent, ce membre est appelé membre racine.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-Chaque grappe de la topologie contient une instance reconnue comme leader. Le responsable de la grappe interagit avec la topologie au nom des autres membres de la grappe. Lorsque le leader quitte la grappe, un nouveau leader est automatiquement sélectionné.
+Chaque cluster de la topologie contient une instance reconnue comme leader. Le leader du cluster interagit avec la topologie au nom des autres membres du cluster. Lorsque le leader quitte le cluster, un nouveau leader est automatiquement sélectionné.
 
-### Affichage de la topologie {#viewing-the-topology}
+### Afficher la topologie {#viewing-the-topology}
 
-Utilisez le navigateur de topologies pour explorer l’état de la topologie dans laquelle l’instance de Experience Manager participe. Le navigateur de topologies affiche les grappes et les instances de la topologie.
+Utilisez le navigateur de topologies pour explorer l’état de la topologie à laquelle participe l’instance Experience Manager. Le navigateur de topologies affiche les clusters et les instances de la topologie.
 
 Pour chaque cluster, vous voyez une liste des membres du cluster qui indique l’ordre dans lequel chaque membre a rejoint le cluster et quel membre est le leader. La propriété actuelle indique l’instance que vous êtes en train de gérer.
 
@@ -74,43 +74,43 @@ Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées 
 
 * Une liste autorisée de rubriques pour le client des travaux de l’instance.
 * Points d’entrée exposés pour la connexion à la topologie.
-* Rubriques de tâche pour lesquelles l’instance est enregistrée pour le déchargement.
-* Rubriques de tâche que l’instance traite.
+* Rubriques de traitement pour lesquelles l’instance est enregistrée pour le déchargement.
+* Rubriques de traitement que l’instance traite.
 
-1. À l’aide de l’interface utilisateur tactile, cliquez sur l’onglet Outils . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de topologies.
 
-   Les grappes qui participent à la topologie s’affichent.
+   Les clusters qui participent à la topologie s’affichent.
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Cliquez sur une grappe pour afficher la liste des instances de la grappe, ainsi que leur identifiant, leur état actuel et leur état de leader.
+1. Cliquez sur un cluster pour afficher la liste des instances du cluster, ainsi que leur ID, Statut actuel et Statut de leader.
 1. Cliquez sur un ID d’instance pour afficher des propriétés plus détaillées.
 
-Vous pouvez également utiliser la console web pour afficher les informations de topologie. La console fournit des informations supplémentaires sur les grappes de topologie :
+Vous pouvez également utiliser la console web pour afficher les informations sur la topologie. La console fournit des informations supplémentaires sur les clusters de la topologie :
 
-* Quelle instance est l’instance locale.
-* Les services Topology Connector que cette instance utilise pour se connecter à la topologie (sortante) et les services qui se connectent à cette instance (entrante).
+* L’instance qui correspond à l’instance locale.
+* Les services Topology Connector que cette instance utilise pour se connecter à la topologie (sortants) et les services qui se connectent à cette instance (entrants).
 * L’historique des modifications des propriétés de la topologie et de l’instance.
 
 Utilisez la procédure suivante pour ouvrir la page de gestion des topologies de la console web :
 
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Cliquez sur Principal > Gestion de topologie.
+1. Cliquez sur Principal > Gestion de la topologie.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuration de l’appartenance à une topologie {#configuring-topology-membership}
 
-Le service de détection Apache Sling basé sur les ressources s’exécute sur chaque instance pour contrôler la manière dont les instances de Experience Manager interagissent avec une topologie.
+Le service de découverte basé sur les ressources Apache Sling s’exécute sur chaque instance pour contrôler la manière dont les instances Experience Manager interagissent avec une topologie.
 
-Le service Discovery envoie des demandes de POST périodiques (pulsations) aux services Topology Connector pour établir et gérer des connexions avec la topologie. Le service Topology Connector maintient une liste d’adresses IP ou de noms d’hôte autorisés à rejoindre la topologie :
+Le service de découverte envoie des requêtes POST périodiques (pulsations) aux services Topology Connector pour établir et maintenir des connexions avec la topologie. Le service Topology Connector maintient une liste d’adresses IP ou de noms d’hôte autorisés à rejoindre la topologie :
 
 * Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
 * Pour permettre à une instance de rejoindre une topologie, ajoutez l’instance à la liste autorisée du service Topology Connector du membre racine.
 
-Utilisez la console web ou un noeud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
+Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
 
 <table>
  <tbody>
@@ -121,21 +121,21 @@ Utilisez la console web ou un noeud sling:OsgiConfig pour configurer les propri�
    <th>Valeur par défaut</th>
   </tr>
   <tr>
-   <td>Timeout de pulsation (secondes)</td>
+   <td>Délai d’expiration de la pulsation (secondes)</td>
    <td>heartbeatTimeout</td>
    <td>Durée, en secondes, d’attente d’une réponse de pulsation avant que l’instance ciblée ne soit considérée comme non disponible. </td>
    <td>20</td>
   </tr>
   <tr>
-   <td>Intervalle de pulsation (secondes)</td>
+   <td>Fréquence des pulsations (en secondes)</td>
    <td>heartbeatInterval</td>
-   <td>Durée en secondes entre les pulsations.</td>
+   <td>La durée en secondes entre les pulsations.</td>
    <td>15</td>
   </tr>
   <tr>
    <td>Délai d’événement minimal (secondes)</td>
    <td>minEventDelay</td>
-   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement de statut de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente le délai de cette durée.</p> <p>Ce délai empêche les écouteurs d’être inondés d’événements. </p> <p>Pour ne pas utiliser de délai, indiquez 0 ou un nombre négatif.</p> </td>
+   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement de statut de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque changement qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente le délai de cette durée.</p> <p>Ce délai évite aux listeners d’être inondés d’événements. </p> <p>Si vous ne souhaitez pas utiliser de délai, spécifiez 0 ou un nombre négatif.</p> </td>
    <td>3</td>
   </tr>
   <tr>
@@ -147,11 +147,11 @@ Utilisez la console web ou un noeud sling:OsgiConfig pour configurer les propri�
   <tr>
    <td>Liste autorisée de Topology Connector</td>
    <td>topologyConnectorWhitelist</td>
-   <td>La liste des adresses IP ou noms d’hôte que le service Topology Connector local autorise dans la topologie. </td>
+   <td>Liste des adresses IP ou noms d’hôte autorisés par le service Topology Connector local dans la topologie. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
-   <td>Nom du descripteur du référentiel</td>
+   <td>Nom du descripteur de référentiel</td>
    <td>leaderElectionRepositoryDescriptor</td>
    <td> </td>
    <td>&lt;no value&gt;</td>
@@ -159,31 +159,31 @@ Utilisez la console web ou un noeud sling:OsgiConfig pour configurer les propri�
  </tbody>
 </table>
 
-Utilisez la procédure suivante pour connecter une instance CQ au membre racine d’une topologie. La procédure pointe l’instance vers l’URL Topology Connector du membre racine de la topologie. Exécutez cette procédure sur tous les membres de la topologie.
+Utilisez la procédure suivante pour connecter une instance CQ au membre racine d’une topologie. La procédure pointe l’instance vers l’URL du Topology Connector du membre de topologie racine. Effectuez cette procédure sur tous les membres de la topologie.
 
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Cliquez sur Principal > Gestion de topologie.
-1. Cliquez sur Configurer Discovery Service.
-1. Ajoutez un élément à la propriété Topology Connector URLs et spécifiez l’URL du service Topology Connector du membre de la topologie racine. L’URL se présente sous la forme https://rootservername:4502/libs/sling/topology/connector.
+1. Cliquez sur Principal > Gestion de la topologie.
+1. Cliquez sur Configurer le service de détection.
+1. Ajoutez un élément à la propriété URL de Topology Connector et spécifiez l’URL du service Topology Connector du membre de topologie racine. L’URL se présente sous la forme https://rootservername:4502/libs/sling/topology/connector.
 
-Effectuez la procédure suivante sur le membre racine de la topologie. La procédure ajoute les noms des autres membres de la topologie à sa liste autorisée Discovery Service.
+Effectuez la procédure suivante sur le membre racine de la topologie. La procédure ajoute les noms des autres membres de la topologie à sa liste d’autorisation du service de détection.
 
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Cliquez sur Principal > Gestion de topologie.
-1. Cliquez sur Configurer Discovery Service.
+1. Cliquez sur Principal > Gestion de la topologie.
+1. Cliquez sur Configurer le service de détection.
 1. Pour chaque membre de la topologie, ajoutez un élément à la propriété de liste autorisée de Topology Connector, puis indiquez le nom d’hôte ou l’adresse IP du membre de la topologie.
 
-## Configuration de la consommation de rubrique {#configuring-topic-consumption}
+## Configuration de la consommation des rubriques {#configuring-topic-consumption}
 
-Utilisez le navigateur de déchargement pour configurer la consommation des rubriques pour les instances de Experience Manager dans la topologie. Pour chaque instance, vous pouvez spécifier les rubriques qu’elle consomme. Par exemple, pour configurer votre topologie de sorte qu’une seule instance consomme des rubriques d’un type spécifique, désactivez la rubrique sur toutes les instances sauf une.
+Utilisez le navigateur de déchargement pour configurer la consommation de rubriques pour les instances Experience Manager dans la topologie. Pour chaque instance, vous pouvez spécifier les rubriques qu&#39;elle consomme. Par exemple, pour configurer votre topologie afin qu’une seule instance consomme des rubriques d’un type spécifique, désactivez la rubrique sur toutes les instances sauf une.
 
 Les tâches sont réparties entre les instances ayant la rubrique associée activée à l’aide d’une logique circulaire.
 
-1. À l’aide de l’interface utilisateur tactile, cliquez sur l’onglet Outils . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de déchargement.
 
-   Les rubriques de déchargement et les instances de serveur pouvant utiliser les rubriques s’affichent.
+   Les rubriques de déchargement et les instances de serveur pouvant consommer les rubriques apparaissent.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -192,17 +192,17 @@ Les tâches sont réparties entre les instances ayant la rubrique associée acti
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Cliquez sur l’un des boutons suivants en regard d’une rubrique pour configurer le comportement de consommation de l’instance, puis cliquez sur Enregistrer :
+1. Cliquez sur l’un des boutons suivants en regard d&#39;une rubrique pour configurer le comportement de consommation de l’instance, puis cliquez sur Enregistrer :
 
-   * Activé : cette instance consomme des tâches de cette rubrique.
+   * Activé : cette instance consomme uniquement les traitements de cette rubrique.
    * Désactivé : cette instance ne consomme pas les tâches de cette rubrique.
    * Exclusif : cette instance consomme uniquement les tâches de cette rubrique.
 
-   **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement définies sur Désactivé.
+   **Note :** lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement définies sur Désactivé.
 
-### Consommateurs de tâches installés {#installed-job-consumers}
+### Consommateurs et consommatrices de traitement installés {#installed-job-consumers}
 
-Plusieurs implémentations de JobConsumer sont installées avec Experience Manager. Les rubriques pour lesquelles ces JobConsumers sont enregistrés apparaissent dans le navigateur de déchargement. Les rubriques supplémentaires qui apparaissent sont celles que les JobConsumers personnalisés ont enregistrées. Le tableau suivant décrit les JobConsumers par défaut.
+Plusieurs implémentations de JobConsumer sont installées avec Experience Manager. Les rubriques pour lesquelles ces JobConsumers sont enregistrés apparaissent dans le navigateur de déchargement. Les rubriques supplémentaires qui apparaissent sont ceux que les JobConsumers personnalisés ont enregistrées. Le tableau suivant décrit les JobConsumers par défaut.
 
 | Rubrique de tâche | PID de service | Description |
 |---|---|---|
@@ -215,42 +215,42 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Manag
 
 ### Désactivation et activation des rubriques pour une instance {#disabling-and-enabling-topics-for-an-instance}
 
-Le service Apache Sling Job Consumer Manager fournit les propriétés de liste autorisée et de liste bloquée des rubriques. Configurez ces propriétés pour activer ou désactiver le traitement de rubriques spécifiques sur une instance Experience Manager.
+Le service Apache Sling Job Consumer Manager fournit des propriétés de liste autorisée et de liste bloquée de rubriques. Configurez ces propriétés pour activer ou désactiver le traitement de rubriques spécifiques sur une instance Experience Manager.
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-La logique qui crée la liste des rubriques activées permet d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
+La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
 
 Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Gestionnaire de consommation de tâche est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
-| Nom de la propriété dans la console web | Identifiant OSGi | Description |
+| Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste des rubriques que le service JobManager local traite. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
-| Liste bloquée de rubriques | job.consumermanager.blacklist | Liste des rubriques que le service JobManager local ne traite pas. |
+| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste bloquée de rubriques | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création d’agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
-La structure de déchargement utilise la réplication pour transporter des ressources entre l’auteur et le programme de travail. La structure de déchargement crée automatiquement des agents de réplication lorsque les instances rejoignent la topologie. Les agents sont créés avec des valeurs par défaut. Modifiez manuellement le mot de passe utilisé par les agents pour l’authentification.
+Le framework de déchargement utilise la réplication pour transporter les ressources entre l’auteur ou l’autrice et le secondaire. Le framework de déchargement crée automatiquement des agents de réplication lorsque les instances rejoignent la topologie. Les agents sont créés avec des valeurs par défaut. Modifiez manuellement le mot de passe que les agents utilisent pour l’authentification.
 
 >[!CAUTION]
 >
->Un problème connu avec les agents de réplication générés automatiquement est le fait que vous devez créer manuellement de nouveaux agents de réplication.
+>Un problème connu avec les agents de réplication générés automatiquement nécessite la création manuelle de nouveaux agents de réplication.
 
-Créez les agents de réplication qui transportent les charges utiles des tâches entre les instances pour le déchargement. L’illustration suivante présente les agents qui doivent être déchargés de l’auteur vers une instance de travail. L’auteur a un identifiant Sling de 1, alors que l’identifiant Sling de l’instance de travail est 2 :
+Créez les agents de réplication qui transportent les charges utiles de traitement entre les instances pour le déchargement. L’illustration suivante montre les agents qui doivent être déchargés de l’instance de création vers une instance secondaire. L’auteur a un identifiant Sling de 1, alors que l’identifiant Sling de l’instance de travail est 2 :
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
-Cette configuration nécessite les trois agents suivants :
+Cette configuration nécessite les trois agents suivants :
 
-1. Un agent sortant sur l’instance de création qui se réplique sur l’instance de travail.
-1. Agent inverse sur l’instance de création qui extrait de la boîte d’envoi sur l’instance de travail.
-1. Un agent de boîte d’envoi sur l’instance de travail.
+1. Un agent sortant sur l’instance de création qui se réplique sur l’instance secondaire.
+1. Un agent inverse sur l’instance de création qui extrait de la boîte d’envoi sur l’instance secondaire.
+1. Un agent de boîte d’envoi sur l’instance secondaire.
 
-Ce schéma de réplication est similaire à celui utilisé entre les instances d’auteur et de publication. Cependant, dans le cas du déchargement, toutes les instances impliquées sont des instances de création.
+Ce schéma de réplication est similaire à celui utilisé entre les instances de création et de publication. Cependant, pour la situation de déchargement, toutes les instances impliquées sont des instances de création.
 
 >[!NOTE]
 >
->La structure de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. La structure crée ensuite automatiquement les agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
+>Le framework de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. Le framework crée ensuite automatiquement les agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
@@ -310,9 +310,9 @@ Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transfert >URI de transfert | repo://var/replication/outbox |
    | Déclencheur > Ignorer la valeur par défaut | True |
 
-### Recherche de l’identifiant Sling {#finding-the-sling-id}
+### Trouver l’identifiant Sling {#finding-the-sling-id}
 
-Procurez-vous l’identifiant Sling d’une instance de Experience Manager à l’aide de l’une des méthodes suivantes :
+Obtenez l’identifiant Sling d’une instance Experience Manager à l’aide de l’une des méthodes suivantes :
 
 * Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
@@ -351,6 +351,6 @@ The following procedure assumes the following characteristics for the offloading
 
 ## Informations complémentaires {#further-reading}
 
-Outre les détails présentés sur cette page, vous pouvez également lire les informations suivantes :
+En plus des informations présentées sur cette page, vous pouvez également lire ce qui suit :
 
 * Pour plus d’informations sur l’utilisation des API Java pour créer des tâches et des consommateurs de tâche, consultez la section [Création et consommation des tâches pour le déchargement](/help/sites-developing/dev-offloading.md).

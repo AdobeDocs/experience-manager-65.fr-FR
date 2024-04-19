@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1659'
-ht-degree: 2%
+source-wordcount: '1658'
+ht-degree: 1%
 
 ---
 
 # Déploiement de Communities {#deploying-communities}
 
-## Conditions préalables requises {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * [Plateforme AEM 6.5](/help/sites-deploying/deploy.md)
 
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur le
 
 À compter de la version 6.4 d’AEM, les mises à jour apportées aux communautés sont fournies dans le cadre d’AEM Cumulative Fix Packs et Service Packs.
 
-Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Historique des versions {#version-history}
 
@@ -358,8 +358,8 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 
 Si vous utilisez un Dispatcher, voir :
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) documentation
-* [Installation du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr)
+* AEM [Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) documentation
+* [Installation du Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

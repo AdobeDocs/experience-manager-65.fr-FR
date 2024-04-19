@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 99%
 
 ---
@@ -28,7 +28,7 @@ Vous pouvez utiliser l’interface utilisateur du dossier de contrôle pour :
 Avant de configurer un dossier de contrôle, vérifiez les éléments suivants :
 
 * Les dossiers de contrôle sont une fonctionnalité avancée d’AEM Forms. Le module complémentaire AEM Forms est requis pour un bon fonctionnement. Assurez-vous que le module complémentaire approprié d’AEM Forms est installé et configuré.
-* Vous pouvez créer le dossier de contrôle à un emplacement de stockage local ou partagé. Assurez-vous que la personne configurée dans AEM Forms pour exécuter le dossier de contrôle dispose des autorisations de lecture et d’écriture sur le dossier de contrôle.
+* Vous pouvez créer le dossier de contrôle dans un espace de stockage partagé ou un espace de stockage local. Assurez-vous que la personne configurée dans AEM Forms pour exécuter le dossier de contrôle dispose des autorisations de lecture et d’écriture sur le dossier de contrôle.
 * Vous pouvez utiliser un service, un workflow ou un script pour automatiser une opération avec un dossier de contrôle. Assurez-vous que le service, le workflow ou le script correspondant est créé et prêt à être exécuté. Pour des informations sur la création d’un service, workflow et script, voir [Diverses méthodes pour traiter les fichiers](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * Un dossier de contrôle possède plusieurs propriétés, voir [Propriétés des dossiers de contrôle](watched-folder-in-aem-forms.md#watchedfolderproperties).
 

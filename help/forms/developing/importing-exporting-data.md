@@ -8,10 +8,10 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2754'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -28,8 +28,8 @@ Le service d’intégration des données de formulaire peut importer des donnée
 
 Les données de formulaire peuvent exister dans l’un des formats suivants en fonction du type de formulaire de PDF :
 
-* Un fichier XFDF, qui est une version XML du format de données de formulaire Acrobat.
-* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Il peut également contenir des données de champ de formulaire et un fichier de PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
+* Un fichier XFDF, qui constitue une version XML du format de données de formulaire Acrobat.
+* Un fichier XDP, qui correspond à un fichier XML contenant des définitions de champ de formulaire. Ce fichier peut également inclure des données de champ de formulaire, ainsi qu’un fichier PDF incorporé. Un fichier XDP généré par Designer n’est utilisable que s’il incorpore un document PDF codé en base 64.
 
 Vous pouvez accomplir ces tâches à l’aide du service d’intégration des données de formulaire :
 
@@ -48,7 +48,7 @@ Pour importer des données dans un formulaire créé dans Designer, vous devez r
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XDP XML valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
+Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide correspondant au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP correspondant à l’exemple de formulaire de demande de prêt immobilier.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -120,7 +120,7 @@ Pour importer des données dans un formulaire PDF, vous devez référencer un fo
 
 **Référencer une source de données XML**
 
-Pour importer des données de formulaire, vous devez référencer une source de données valide. Pour importer des données dans un formulaire XML XFA créé dans Designer, vous devez utiliser une source de données XML XDP. Si vous référencez un formulaire Acrobat, vous devez utiliser une source de données XFDF. Pour chaque champ dans lequel vous souhaitez importer des données, une valeur doit être spécifiée. Si un élément de la source de données XML ne correspond pas à un champ du formulaire, l’élément est ignoré.
+Pour importer des données de formulaire, vous devez référencer une source de données valide. Pour importer des données dans un formulaire XML XFA créé dans Designer, vous devez utiliser une source de données XML XDP. Si vous référencez un formulaire Acrobat, vous devez utiliser une source de données XFDF. Pour chaque champ dans lequel vous souhaitez importer des données, une valeur doit être spécifiée. Si un élément situé dans la source de données XML ne correspond pas à un champ du formulaire, cet élément est ignoré.
 
 **Importer les données dans un formulaire PDF**
 
@@ -174,7 +174,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
    * L’objet `com.adobe.idp.Document` qui stocke le formulaire PDF.
    * L’objet `com.adobe.idp.Document` qui stocke les données de formulaire.
 
-   La variable `importData` renvoie une `com.adobe.idp.Document` qui stocke un formulaire de PDF contenant les données de la source de données XML.
+   La méthode `importData` renvoie un objet `com.adobe.idp.Document` qui stocke un formulaire PDF contenant les données situées dans la source de données XML.
 
 1. Enregistrez le formulaire au format PDF.
 
@@ -239,7 +239,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
    * L’objet `BLOB` qui stocke le formulaire PDF.
    * L’objet `BLOB` qui stocke les données de formulaire.
 
-   La variable `importData` renvoie une `BLOB` qui stocke un formulaire de PDF contenant les données de la source de données XML.
+   La méthode `importData` renvoie un objet `BLOB` qui stocke un formulaire PDF contenant les données situées dans la source de données XML.
 
 1. Enregistrez le formulaire au format PDF.
 
@@ -391,7 +391,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier XML.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `exportData`. Renseignez le tableau d’octets en obtenant la valeur du champ `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Écrivez le contenu du tableau d’octets dans un fichier XML en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Ecrivez le contenu du tableau d’octets dans un fichier XML en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
 
 **Voir également**
 

@@ -1,6 +1,6 @@
 ---
-title: Créer un site web complet (JSP)
-description: Ce tutoriel vous permet de créer un site Web complet avec Adobe Experience Manager (AEM).
+title: Création d’un site Web complet (JSP)
+description: Ce tutoriel vous explique comment créer un site web complet avec Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4920'
-ht-degree: 100%
+source-wordcount: '4919'
+ht-degree: 99%
 
 ---
 
-# Créer un site web complet (JSP){#create-a-fully-featured-website-jsp}
+# Création d’un site Web complet (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >

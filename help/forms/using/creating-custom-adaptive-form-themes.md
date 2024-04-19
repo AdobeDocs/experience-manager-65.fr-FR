@@ -6,10 +6,10 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    * dossier`css` : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
 
-   **Fichiers de variables less** : il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
+   **Fichiers variables less**: il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
 
    Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les `.less` files :
 

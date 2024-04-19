@@ -9,10 +9,10 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
 * **Revenir en arrière**
 
-  Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
+  Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez revenir à une étape antérieure. Vous pouvez ainsi sélectionner une étape qui s’est produite plus tôt dans le workflow, pour le retraitement. Le workflow revient à l’étape que vous spécifiez, puis continue à partir de là.
 
 ## Participation à un workflow {#participating-in-a-workflow}
 

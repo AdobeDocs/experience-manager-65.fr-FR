@@ -5,9 +5,9 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1505'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ Un fragment d’expérience :
 Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur ou une autrice souhaite réutiliser des parties (un fragment d’expérience) d’une page, ce fragment doit être copié et collé. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
-* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final ou l’utilisatrice finale.
+* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
 * Avec [Gestion multisite (MSM)](/help/sites-administering/msm.md); en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Les fragments d’expérience doivent être utilisés :
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
 
    * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
-   * Intégration de contenu dans des points de contact tiers
+   * Incorporation de contenu dans des points de contact tiers
 
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
 
@@ -372,6 +372,6 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 
 ## Exportation de fragments d’expérience {#exporting-experience-fragments}
 
-Par défaut, les fragments d’expérience sont fournis au format HTML. Ce dernier peut être utilisé pour les canaux AEM et les canaux tiers.
+Par défaut, les fragments d’expérience sont fournis au format HTML. Peut être utilisée par les canaux AEM et les canaux tiers.
 
-Pour l’exportation vers Adobe Target, JSON peut également être utilisé. Pour obtenir des informations complètes, consultez [Intégration de Target aux fragments d’expérience](/help/sites-administering/experience-fragments-target.md).
+Pour l’exportation vers Adobe Target, JSON peut également être utilisé. Pour obtenir des informations complètes, consultez [Intégration de Target aux fragments d’expérience](/help/sites-administering/experience-fragments-target.md).

@@ -9,10 +9,10 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -282,7 +282,7 @@ Configurez votre framework Adobe Analytics pour activer le suivi des liens ad h
 
 >[!NOTE]
 >
->La configuration XSS Antisamy se trouve à présent dans SLING dans le chemin d’accès **/libs/sling/xss.config.xml** et les règles suivantes doivent être ajoutées pour que les liens ad hoc fonctionnent :
+>La configuration XSS Antisamy se trouve désormais dans SLING sous le chemin **/libs/sling/xss.config.xml** et les règles suivantes doivent être ajoutées à ad hoc afin que la liaison fonctionne :
 
 #### Extension de règle de balise d’ancrage {#anchor-tag-rule-extension}
 

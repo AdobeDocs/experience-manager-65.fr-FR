@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6664'
+source-wordcount: '6663'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 L’extension *Visionneuses Dynamic Media* pour les Experience Platform Tags et les visionneuses Dynamic Media 5.13, permet aux clients Adobe Analytics et Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Experience Platform Tags.
 
-Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs avec toute autre extension Experience Platform Tags provenant d’Adobe ou d’un tiers.
+Cette intégration signifie que vous pouvez suivre l’utilisation des visionneuses Dynamic Media sur votre site web avec Adobe Analytics. Dans le même temps, vous pouvez utiliser les événements et les données exposés par les visiteurs et visiteuses avec toute autre extension de balises Experience Platform provenant d’Adobe ou d’un tiers.
 
 Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir [Extensions d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=fr) dans le Guide de l’utilisateur Experience Platform Tags.
 

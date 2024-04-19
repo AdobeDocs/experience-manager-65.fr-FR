@@ -9,10 +9,10 @@ exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2320'
-ht-degree: 100%
+source-wordcount: '2318'
+ht-degree: 98%
 
 ---
 
@@ -195,7 +195,7 @@ La barre de recherche en bas de l’outil de traduction fournit des options de s
 
 ### Modification de chaînes traduites {#editing-translated-strings}
 
-Après avoir ajouté la chaîne en anglais à un dictionnaire, vous pouvez ajouter des traductions de cette chaîne. Vous pouvez aussi [exporter le dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) afin de le faire traduire par un tiers.
+Après avoir ajouté la chaîne en anglais à un dictionnaire, vous pouvez ajouter des traductions de cette chaîne. Vous pouvez également [export du dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) pour le faire traduire par un tiers.
 
 1. Sélectionnez le [dictionnaire spécifique à votre projet](#creating-a-dictionary), car il spécifie le chemin dans le référentiel qui contient les traductions. Par exemple, sélectionnez des **Dictionnaires** tels que :
 
@@ -225,7 +225,7 @@ Après avoir ajouté la chaîne en anglais à un dictionnaire, vous pouvez ajout
 
 ## Utilisation de traducteurs tiers {#using-third-party-translators}
 
-Pour prendre en charge l’utilisation de services de traduction tiers, l’outil de traduction vous permet d&#39;exporter et d&#39;importer des dictionnaires.
+Pour prendre en charge l’utilisation de services de traduction tiers, l’outil de traduction vous permet d’exporter et d’importer des dictionnaires.
 
 ### Exportation d’un dictionnaire {#exporting-a-dictionary}
 

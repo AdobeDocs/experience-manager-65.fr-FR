@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 99%
@@ -142,7 +142,7 @@ Déterminez si un document PDF est compatible avec le format PDF/A à l’aide d
    * Créez un objet `java.util.Map` servant à stocker le document PDF d’entrée en utilisant un constructeur `HashMap`.
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant la méthode `put` correspondante et en transmettant les arguments suivants :
 
-      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. Par exemple, la valeur de l’élément source dans le document DDX introduit dans cette section est Loan.pdf.
+      * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. Par exemple, la valeur de l’élément source situé dans le document DDX introduit dans cette section est Loan.pdf.
       * Objet `com.adobe.idp.Document` contenant le document PDF d’entrée.
 
 1. Définissez les options d’exécution.
@@ -243,7 +243,7 @@ Déterminez si un document PDF est conforme PDF/A à l’aide de l’API Assemb
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les données XML qui spécifient si le document PDF d’entrée est un document PDF/A.
    * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite la valeur de ce membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent les données XML en accédant au champ `MTOM` de leur objet `BLOB`. Ce champ stocke un tableau d’octets que vous pouvez écrire en tant que fichier XML.
+   * Extrayez les données binaires qui représentent les données XML en accédant au champ `MTOM` de leur objet `BLOB`. Ce champ stocke un tableau d’octets que vous pouvez écrire dans en tant que fichier XML.
 
 **Voir également**
 

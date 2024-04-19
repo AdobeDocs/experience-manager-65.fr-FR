@@ -10,10 +10,10 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
-ht-degree: 100%
+source-wordcount: '4132'
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Consultez la section [Chargement d’une bannière d’image](#uploading-an-imag
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données de zone réactive pour créer l’image interactive.
 
-Lorsque vous ajoutez des zones réactives à une image de bannière dans Experience Manager Assets, vous devez affecter un SKU (unité de gestion des stocks) et des variables supplémentaires facultatives à chaque zone réactive. Ces variables de zones réactives sont utilisées ultérieurement pour faire correspondre ces zones réactives avec du contenu d’aperçu rapide.
+Lorsque vous ajoutez des zones réactives à une image de bannière dans Experience Manager Assets, vous devez affecter un SKU (unité de gestion des stocks) et des variables supplémentaires facultatives à chaque zone réactive. Ces variables de zones réactives sont utilisées ultérieurement pour faire correspondre ces zones réactives avec du contenu d’aperçu rapide.
 
 Il est important d’identifier correctement le nombre et le type de variables à associer aux données de zone réactive. Chaque zone réactive ajoutée à une image de bannière doit comporter suffisamment d’informations pour identifier clairement le produit sur le système principal existant.
 
@@ -113,7 +113,7 @@ Au cours de ce processus, il est important de parcourir différentes zones de vo
 
 Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur du code SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives ou des zones cliquables à l’image de bannière.
 
-Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en complément du SKU, comme l’identifiant de la catégorie, le code couleur et le code taille. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonctionnalité d’image interactive publicitaire d’Experience Manager Assets.
+Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte des éléments variables qui diffèrent en plus du SKU, tels que l’ID de catégorie, le code couleur et le code de taille. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonctionnalité d’image interactive publicitaire d’Experience Manager Assets.
 
 Consultez les exemples d’URL d’aperçu rapide et les variables de zone réactive qui en résultent ci-dessous :
 
@@ -271,7 +271,7 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    1. Dans le coin supérieur gauche de la page de gestion des zones réactives, sélectionnez **[!UICONTROL Zone réactive]**.
    1. Sur l’image, sélectionnez un emplacement où vous souhaitez que la zone réactive s’affiche. Si nécessaire, faites glisser la zone réactive pour en ajuster l’emplacement.
-   1. Ajoutez des zones réactives supplémentaires si nécessaire en répétant les étapes a et b.
+   1. Ajoutez d’autres zones réactives si nécessaire en répétant les étapes a et b.
    1. (Facultatif) Pour supprimer une zone réactive, sélectionnez-la sur l’image, puis sélectionnez **[!UICONTROL Supprimer]** (l’icône corbeille) sous l’en-tête **[!UICONTROL Zone réactive]**.
 
 1. Dans le champ de texte Nom, saisissez le nom de la zone réactive. Ce nom apparaît également dans la liste déroulante Zone réactive sélectionnée.
@@ -279,7 +279,7 @@ Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interac
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis appuyez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page pour revenir à la page Gestion des zones réactives.
+      * Si vous êtes client Experience Manager Sites ou eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit que vous souhaitez utiliser, puis cliquez sur **[!UICONTROL Sélectionner]** dans le coin supérieur droit de la page afin de revenir à la page de gestion des zones réactives.
       * Si vous *n’êtes pas* client Experience Manager Sites ou eCommerce :
 
          * Consultez la section [Identification des variables de zone réactive](#optional-identifying-hotspot-variables) ; vous devez définir ces variables.
@@ -375,9 +375,9 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 Pour appliquer un « recadrage » à une image interactive shoppable pour rendre plus réactif votre environnement, ajoutez l’attribut de configuration Image interactive `ZoomView.iscommand` au chemin d’accès. Le composant `ZoomView` est appelé et `iscommand` est la commande de diffusion d’image de recadrage que vous appliquez.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=fr).
+Voir l’attribut de configuration [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
 
-Voir la commande de service d’images [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=fr).
+Voir la commande de service d’images [crop](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop).
 
 Vous pouvez désormais intégrer l’image interactive à un aperçu rapide existant de votre site web.
 

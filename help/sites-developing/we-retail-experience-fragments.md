@@ -9,10 +9,10 @@ exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 solution: Experience Manager, Experience Manager Sites
 feature: Experience Fragments,Developing
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est
 
 Ils permettent à un auteur de réutiliser des parties d’une page (un fragment d’expérience), sans avoir à copier et coller le contenu.
 
-Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, pour les auteurs qui souhaitent utiliser AEM pour la création mais pas pour la diffusion de contenu au client. Un système/point de contact tiers peut ensuite consommer cette expérience, puis la diffuser à l’utilisateur final.
+Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, pour les auteurs qui souhaitent utiliser AEM pour la création mais pas pour la diffusion de contenu au client. Un système ou un point de contact tiers peut ensuite utiliser cette expérience, puis la diffuser à l’utilisateur final.
 
 >[!NOTE]
 >

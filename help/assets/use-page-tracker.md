@@ -6,10 +6,10 @@ role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Le dispositif de suivi de page est un élément de code JavaScript que vous incluez dans le code des sites web tiers pour permettre à Adobe Analytics de capturer des données d’utilisation des ressources [!DNL Adobe Experience Manager Assets] sur ces sites web.
 
-Pour capturer des événements tels que des clics propres aux ressources, vous devez également inclure le code intégré dans le code des sites Web tiers.
+Pour capturer des événements, tels que des clics spécifiques à des ressources, vous devez également inclure le code intégré dans le code des sites web tiers.
 
 L’exemple de code suivant indique à quoi ressemble une page web qui contient le code de suivi de page et le code intégré :
 
