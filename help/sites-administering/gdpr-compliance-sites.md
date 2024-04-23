@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '823'
 ht-degree: 100%
 
@@ -40,9 +40,9 @@ Les comptes d’utilisateurs et le contenu généré par les utilisateurs et uti
 
 Les comptes d’utilisateurs utilisés pour authentifier les visiteurs et visiteuses sur le site et le contenu généré par les utilisateurs et utilisatrices sur le serveur de publication sont abordés dans la [documentation RGPD de Platform](/help/managing/data-protection-and-privacy.md).
 
-Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
+Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs et visiteuses sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
-## Souscription/exclusion {#opt-in-opt-out}
+## Opt-in/opt-out {#opt-in-opt-out}
 
 AEM dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer les souscriptions/exclusions des utilisateurs.
 
