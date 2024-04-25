@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 1%
+source-wordcount: '951'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 [Applications d’une seule page](https://en.wikipedia.org/wiki/Single-page_application) (SPA) ont atteint une masse critique, largement considérée comme le modèle le plus efficace pour créer des expériences harmonieuses avec la technologie web. En suivant un modèle de SPA, vous pouvez créer une application qui fonctionne de la même manière qu’une application de bureau ou mobile, mais qui atteint une multitude de plateformes d’appareils et de facteurs de formulaire en raison de sa base dans les normes web ouvertes.
 
@@ -27,7 +30,7 @@ AEM 6.1 prend en charge la création et la gestion de SPA par le biais d’Appli
 
 ## SPA dans les applications AEM {#spa-in-aem-apps}
 
-La structure d’applications d’une seule page d’AEM Apps permet d’obtenir des performances élevées d’une application AngularJS, tout en permettant aux auteurs (ou à d’autres personnes non techniques) de créer et de gérer le contenu de l’application via l’environnement d’éditeur par glisser-déposer optimisé pour les écrans tactiles, traditionnellement réservé à la gestion des sites web. Un site a-t-il déjà été créé avec AEM ? Vous constatez que la réutilisation de votre contenu, de vos composants, de vos workflows, de vos ressources et de vos autorisations est facile avec les applications AEM.
+La structure d’applications d’une seule page d’AEM Apps permet d’obtenir des performances élevées d’une application AngularJS, tout en permettant aux auteurs (ou à d’autres personnes non techniques) de créer et de gérer le contenu de l’application via l’environnement d’éditeur par glisser-déposer optimisé pour les écrans tactiles, traditionnellement réservé à la gestion des sites web. Un site a-t-il déjà été créé avec AEM ? Vous constatez que la réutilisation de votre contenu, de vos composants, de vos workflows, de vos ressources et de vos autorisations est facile avec AEM applications.
 
 ## Module d’application AngularJS {#angularjs-application-module}
 
@@ -35,7 +38,7 @@ AEM Apps gère une grande partie de la configuration AngularJS pour vous, y comp
 
 Une partie de l’initialisation de votre application consiste à spécifier les modules AngularJS dont dépend l’application. La liste des modules utilisés par votre application est spécifiée par un script situé dans /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp et peut être recouverte par le composant de page de vos applications afin d’extraire tout module AngularJS supplémentaire requis par votre application. Par exemple, comparez le script ci-dessus à l’implémentation de Geometrixx (située à l’adresse /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-Pour prendre en charge la navigation entre les états distincts de votre application, le script angular-app-module effectue une itération sur toutes les pages descendantes de la page de niveau supérieur de l’application afin de générer un ensemble d’&quot;itinéraires&quot; et de configurer chaque chemin sur le service $routeProvider d’Angular. Pour un exemple de la manière dont cela se pratique, consultez le script angular-app-module généré par l’exemple d’application Geometrixx Outdoors : (le lien nécessite une instance locale) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Pour prendre en charge la navigation entre les états distincts de votre application, le script angular-app-module effectue une itération sur toutes les pages descendantes de la page de niveau supérieur de l’application afin de générer un ensemble d’&quot;itinéraires&quot; et de configurer chaque chemin sur le service $routeProvider d’Angular. Pour obtenir un exemple de la manière dont cela se pratique, consultez le script angular-app-module généré par l’exemple d’application Geometrixx Outdoors : (un lien nécessite une instance locale). [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 En se connectant à AEMAngularApp généré, vous trouverez une série d’itinéraires spécifiés comme suit :
 
@@ -78,9 +81,9 @@ Pour un exemple de contrôleur plus complexe, ouvrez le script ng-template-page 
 ])
 ```
 
-Dans l’exemple ci-dessus, le paramètre de la variable `$routeParams` Le service est exécuté, puis converti en arborescence dans laquelle les données JSON sont stockées. En traitant le SKU `id` ainsi, vous pouvez fournir un modèle de produit unique qui peut générer les données de produit pour des milliers de produits distincts. Il s’agit d’un modèle beaucoup plus évolutif qui nécessite un itinéraire individuel pour chaque élément d’une base de données de produits (potentiellement) massive.
+Dans l’exemple ci-dessus, le paramètre de la variable `$routeParams` Le service est exécuté, puis converti en arborescence dans laquelle les données JSON sont stockées. En traitant le SKU `id` de cette manière, vous pouvez fournir un modèle de produit unique qui peut générer les données de produit pour des milliers de produits distincts. Il s’agit d’un modèle beaucoup plus évolutif qui nécessite un itinéraire individuel pour chaque élément d’une base de données de produits (potentiellement) massive.
 
-Deux éléments sont également à l’oeuvre ici : ng-product augmente la portée avec les données qu’il extrait de ce qui précède `$http` appelez . Il existe également une image ng sur cette page qui, à son tour, augmente également la portée avec la valeur qu’elle récupère de la réponse. En vertu de l&#39;Angular `$http` , chaque composant attend patiemment jusqu’à ce que la requête soit terminée et que la promesse qu’il a créée soit remplie.
+Il y a aussi deux composants à l&#39;oeuvre ici : le ng-product augmente la portée avec les données qu&#39;il extrait du dessus. `$http` appelez . Il existe également une image ng sur cette page qui, à son tour, augmente également la portée avec la valeur qu’elle récupère de la réponse. En vertu des Angulars `$http` , chaque composant attend patiemment jusqu’à ce que la requête soit terminée et que la promesse qu’il a créée soit remplie.
 
 ## Les étapes suivantes {#the-next-steps}
 

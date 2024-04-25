@@ -8,7 +8,8 @@ topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '6470'
 ht-degree: 99%
@@ -80,7 +81,7 @@ La simulation de la réalité est difficile et les efforts que vous êtes prêt 
 
 L’importance d’établir correctement les objectifs de performances ne doit pas être sous-estimée. Souvent, une fois que les personnes se concentrent sur des objectifs de performances précis, il est très difficile de modifier ces objectifs par la suite, même s’ils sont basés sur des hypothèses.
 
-L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de collecter les données réelles et les références d&#39;un site Web comparable (par exemple, le prédécesseur du nouveau site Web).
+L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de collecter les références et les données réelles d’un site Web comparable (par exemple le prédécesseur du nouveau site Web).
 
 ### Maintenir la pertinence {#stay-relevant}
 

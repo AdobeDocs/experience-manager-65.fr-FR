@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
@@ -39,8 +42,8 @@ Le code de ce tutoriel repose sur le fait que le nom du dossier principal est le
 >* Les noms de noeud peuvent contenir des espaces, mais lorsqu’ils sont utilisés dans un URI, l’espace doit être encodé en &#39;%20&#39; ou &#39;+&#39;.
 >* Les noms de noeud peuvent contenir des tirets et des traits de soulignement, mais ils doivent être codés lorsqu’ils sont référencés sous la forme d’un nom de module dans un fichier Java™. Les tirets et les traits de soulignement sont précédés d’un trait de soulignement suivi de leur valeur Unicode :
 >
-* Le trait d’union devient &quot;_002d&quot;
-* trait de soulignement devient &#39;_005f&#39;
+>   * Le trait d’union devient &quot;_002d&quot;
+>   * trait de soulignement devient &#39;_005f&#39;
 
 ## Configuration du répertoire des applications (/apps) {#setup-the-application-directory-apps}
 

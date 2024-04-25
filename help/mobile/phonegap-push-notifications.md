@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3156'
 ht-degree: 1%
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 La possibilité d’alerter instantanément les utilisateurs de l’application mobile Adobe Experience Manager (AEM) avec des notifications importantes est essentielle à la valeur d’une application mobile et de ses campagnes marketing. Ici, des étapes doivent être suivies pour permettre à votre application de recevoir des notifications push. Vous apprenez également à configurer et à envoyer des notifications push d’AEM Mobile vers l’application installée sur le téléphone. Cette section décrit également comment configurer la variable [Lien profond](#deeplinking) de vos notifications push.
 

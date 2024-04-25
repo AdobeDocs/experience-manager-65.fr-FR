@@ -1,6 +1,6 @@
 ---
 title: Surveillance et maintenance de votre instance Adobe Experience Manager
-description: Découvrez comment surveiller et gérer votre instance Adobe Experience Manager.
+description: Découvrez comment surveiller et gérer votre instance Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -9,10 +9,11 @@ docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '5792'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -124,8 +125,8 @@ Pour purger les versions d’un site web, procédez comme suit :
 
    ![la configuration de la purge de version](assets/version-purge-configuration.png),
 
-   * **Purge des chemins**
-Définissez le chemin d’accès de début du contenu à purger, par exemple : `/content/wknd`.
+   * **la purge des chemins d’accès**.
+Définissez le chemin d’accès de début du contenu à purger. Par exemple, `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -237,13 +238,13 @@ Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 Ce journal n’est utilisé que si [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque demande faite à [!DNL Dynamic Media] via `/is/image` et `/is/content`.
 
    * `stderr.log`
-Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journal est défini sur `Warning` ( `WARN`)
+Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journalisation est défini sur `Warning` (`WARN`)
 
    * `stdout.log`
 Contient des messages de journaux indiquant les événements pendant le démarrage.
 
    * `upgrade.log`
-Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la variable `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor` modules.
+Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir des packages `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor`.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
@@ -482,7 +483,7 @@ Ces entrées contiennent les mêmes informations que celles affichées lors de l
 
 #### Enregistrements d’audit OSGi à partir de la console web {#osgi-audit-records-from-the-web-console}
 
-Les événements OSGi génèrent également des enregistrements d’audit qui peuvent être affichés à partir du **État de la configuration** onglet > **Fichiers journaux** dans la console web d’AEM :
+Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **Statut de la configuration** > **Fichiers journaux** dans la console web Adobe AEM :
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 

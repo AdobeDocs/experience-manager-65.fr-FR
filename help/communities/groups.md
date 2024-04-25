@@ -9,10 +9,12 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 3%
+source-wordcount: '1698'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +74,7 @@ Pour accéder à la console Groupes , procédez comme suit :
 
 ![Groupes de communautés multilingues](assets/multi-lingual-group.png)
 
-* **Titre de groupe de communautés**
+* **Titre du groupe de communautés**
 
   Titre affiché pour le groupe.
 Le titre apparaît sur le site publié pour le groupe.
@@ -146,7 +148,7 @@ Par défaut, la liste des modérateurs du site de la communauté parente est hé
 
 Il est possible d’ajouter des modérateurs spécifiquement au groupe. Recherchez des membres (de l’environnement de publication) à ajouter en tant que modérateurs.
 
-**Administrateurs du groupe**
+**Administrateurs de groupe**
 
 Par défaut, l’administrateur de site de la communauté parente est également l’administrateur des groupes.
 
@@ -168,11 +170,11 @@ Le paramètre d’appartenance permet de sélectionner l’une des trois méthod
 
   Si cette option est sélectionnée, le groupe de communautés est un groupe ouvert. Les membres de la communauté du site peuvent afficher le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant `Join` dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
 
-* **Abonnement restreint**
+* **Abonnement limité**
 
   Si cette option est sélectionnée, le groupe de communautés est un groupe secret. Les membres de la communauté doivent être invités explicitement. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide du [Consoles Membres et Groupes](/help/communities/members.md) l’environnement de création. La valeur par défaut n’est pas sélectionnée.
 
-**VIGNETTE**
+**MINIATURE**
 
 ![communauté-groupe-miniature](assets/community-group-thumbnail.png)
 

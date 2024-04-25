@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 5%
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +70,7 @@ Une fois l’héritage annulé, il est possible de sélectionner l’icône de c
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Onglet De base {#basic-tab}
+#### Onglet Simple {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
@@ -141,7 +144,7 @@ Une fois l’héritage annulé, il est possible de sélectionner l’icône de c
 
 ![config-composer-message](assets/config-compose-message.png)
 
-#### Onglet De base {#basic-tab-1}
+#### Onglet Simple {#basic-tab-1}
 
 ![basic-tab-composer](assets/basic-tab-compose.png)
 
@@ -177,11 +180,11 @@ Une fois l’héritage annulé, il est possible de sélectionner l’icône de c
 
   Saisissez le texte que vous souhaitez afficher en regard de la propriété `Subject` champ . La valeur par défaut est `Subject`.
 
-* **Afficher le champ Pièce jointe**
+* **Afficher le champ de fichier joint**
 
   Si cette case est cochée, le `Attachment` et activer l’ajout de pièces jointes au message. La valeur par défaut n’est pas cochée.
 
-* **Libellé de la pièce jointe**
+* **Joindre l’étiquette du fichier**
 
   Saisissez le texte que vous souhaitez afficher en regard de la propriété `Attachment` champ . La valeur par défaut est **`Attach File`**.
 

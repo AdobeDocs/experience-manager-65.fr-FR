@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 4%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Sous , **[!UICONTROL Évaluations autorisées]** , indiquez la liste complète d
 
 ![allowed-rating](assets/configure-review1.png)
 
-* **[!UICONTROL Evaluations autorisées]**
+* **[!UICONTROL Évaluations autorisées]**
 
   Liste d’évaluations à partir desquelles un membre peut choisir.
 
@@ -57,7 +60,7 @@ Sur le site web, les évaluations requises sont marquées d’un astérisque. Si
 
 ![évaluation requise](assets/configure-review2.png)
 
-* **[!UICONTROL Evaluations requises]**
+* **[!UICONTROL Évaluations requises]**
 
   Un sous-ensemble d’évaluations autorisées, indiquant les évaluations requises.
 
@@ -71,7 +74,7 @@ Sur le site web, les évaluations requises sont marquées d’un astérisque. Si
 
 Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont gérées.
 
-![révisions](assets/configure-review3.png)
+![critiques](assets/configure-review3.png)
 
 * **[!UICONTROL Autoriser les réponses]**
 
@@ -85,15 +88,15 @@ Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont géré
 
   Si cette case est cochée, les pièces jointes peuvent être chargées pour la révision. La case par défaut est décochée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est de 10 Mo.
 
-* **[!UICONTROL Longueur de message max.]**
+* **[!UICONTROL Longueur max. du message]**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
-* **[!UICONTROL Types de fichier autorisés]**
+* **[!UICONTROL Types de fichiers autorisés]**
 
   Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
@@ -113,7 +116,7 @@ Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les révi
 
   Si cette case est cochée, les révisions doivent être approuvées avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
-* **[!UICONTROL Supprimer les révisions]**
+* **[!UICONTROL Supprimer des révisions]**
 
   Si cette case est cochée, le membre qui a publié la révision peut la supprimer. La case par défaut est décochée.
 
@@ -133,7 +136,7 @@ Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les révi
 
   Si cette case est cochée, les membres ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué une révision comme étant inappropriée. La case par défaut est décochée.
 
-* **[!UICONTROL Motif de la marque personnalisée]**
+* **[!UICONTROL Motif de l’indicateur personnalisé]**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler une révision comme inappropriée. La case par défaut est décochée.
 

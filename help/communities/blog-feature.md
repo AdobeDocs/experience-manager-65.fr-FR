@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 8%
+source-wordcount: '1696'
+ht-degree: 1%
 
 ---
 
@@ -71,19 +74,19 @@ Sélectionnez le `Blog` afin que vous puissiez accéder au `Configure` qui ouvre
 
 Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
-* **Autoriser les miniatures de pièces jointes**
+* **Autoriser la miniature des pièces jointes**
 
   Si cette case est cochée, une miniature de l’image jointe est créée.
 
-* **Taille max. des miniatures de pièces jointes**
+* **Taille max. de miniature des pièces jointes**
 
   Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **Taille d’image minimale pour la miniature**
+* **Taille d’image min. pour la miniature**
 
   Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est de 100000 octets (100 Ko).
 
-* **Taille maximale de la miniature**
+* **Taille maximale des miniatures**
 
   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
@@ -91,7 +94,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Si cette case est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
-* **Membres privilégiés autorisés**
+* **Membres autorisés**
 
   Ajoutez les membres privilégiés autorisés à créer du contenu.
 
@@ -117,7 +120,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Définit le nombre d’entrées/de commentaires de blog affichés par page. La valeur par défaut est 10.
 
-* **Modérée**
+* **Modéré**
 
   Si cette option est cochée, les entrées et les commentaires de blog doivent être approuvés avant d’apparaître sur un site publié. La valeur par défaut est décochée.
 
@@ -137,11 +140,11 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Si cette option est cochée, les fichiers joints peuvent être ajoutés à une entrée ou à un commentaire de blog. La case par défaut est décochée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ils ne peuvent pas être transférés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
@@ -157,23 +160,23 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Si cette case est cochée, la fonction de vote est ajoutée à une entrée de blog. La case par défaut est décochée.
 
-* **Autoriser les utilisateurs à supprimer les commentaires et sujets**
+* **Autorisation des utilisateurs à supprimer des commentaires et des sujets**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les entrées de blog qu’ils ont publiés. La case par défaut est décochée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
 
-* **Autoriser les abonnements par courrier électronique**
+* **Autoriser les abonnements aux emails**
 
   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). La case par défaut est décochée.
 
-* **Afficher les badges**
+* **Badges d’affichage**
 
   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La case par défaut est décochée.
 
-* **Ne pas recevoir de réponses sur la page de liste**
+* **Ne pas obtenir de réponses sur la page de liste**
 
 * **Autoriser le contenu proposé**
 
@@ -187,7 +190,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
-* **Modèle des mentions de l’IU**
+* **Modèle de mention d’interface utilisateur**
 
   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
@@ -195,11 +198,11 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 Sous , **Modération d’utilisateur** , spécifiez les paramètres de modération :
 
-* **Refuser les publications**
+* **Refuser des publications**
 
   Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. La case par défaut est décochée.
 
-* **Fermer/rouvrir les sujets**
+* **Fermer/rouvrir les rubriques**
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une rubrique pour ajouter d’autres modifications et commentaires et rouvrir une rubrique. La case par défaut est décochée.
 
@@ -211,7 +214,7 @@ Sous , **Modération d’utilisateur** , spécifiez les paramètres de modérati
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
@@ -231,7 +234,7 @@ Sous , **Champ de balise** , indiquez les balises qui peuvent être appliquées 
 
   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux balises dans les catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur de -1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
@@ -243,7 +246,7 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
 
 ![blog-component-sidebar](assets/blog-component-sidebar.png)
 
-* **Format de la date**
+* **Format de date**
 
   Format utilisé pour l’affichage des archives des entrées de blog. Le format utilise des espaces réservés conformément à la convention Java™.
 
@@ -255,7 +258,7 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
 
   La valeur par défaut est &quot;yyy MMMM&quot;, qui afficherait, par exemple, &quot;2015 June&quot;.
 
-* **Type d&#39;affichage**
+* **Type d’affichage**
 
   Titre et type des entrées de blog à afficher dans la barre latérale. Le choix se fait entre
 
@@ -263,13 +266,13 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
    * Catégories
    * Archives
 
-* **Chemin d’accès au composant de blog**
+* **Chemin du composant Blog**
 
   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, le composant resourceType est utilisé. `social/journal/components/hbs/journal` qui s’affiche sur la même page.
 
-   * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+   * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Nombre d’articles de blog à afficher. Une valeur de -1 signifie qu’aucune limite n’est définie. La valeur par défaut est -1.
 

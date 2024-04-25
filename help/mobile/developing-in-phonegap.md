@@ -5,10 +5,13 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 2%
+ht-degree: 21%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent aux utilisateurs de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
 

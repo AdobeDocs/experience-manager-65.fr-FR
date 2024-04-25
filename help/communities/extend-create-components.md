@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 11%
+source-wordcount: '591'
+ht-degree: 3%
 
 ---
 
@@ -56,16 +59,16 @@ La suppression du fichier JSP créé automatiquement est due à l’utilisation 
       * **Super Type**: *social/commons/components/hbs/comments*
       * **Groupe**: *Personnalisé*
 
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL OK]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL OK]**.
 
 1. Développez le noeud qui a été créé : `/apps/custom/components/comments`
-1. Sélectionnez **[!UICONTROL Enregistrer tout]**
-1. Faites un clic-droit `comments.jsp`
-1. Sélectionnez **[!UICONTROL Supprimer]**
-1. Sélectionnez **[!UICONTROL Enregistrer tout]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
+1. Clic droit `comments.jsp`
+1. Sélectionner **[!UICONTROL Supprimer]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![create-component](assets/create-component.png)
 
@@ -86,16 +89,16 @@ La suppression du fichier JSP créé automatiquement est due à l’utilisation 
       * **Super Type**: *social/commons/components/hbs/comments/comment*
       * **Groupe** : `*.hidden*`
 
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL Suivant]**
-   * Sélectionnez **[!UICONTROL OK]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionner **[!UICONTROL Suivant]**
+   * Sélectionnez **[!UICONTROL OK]**.
 
 1. Développez le noeud qui a été créé : `/apps/custom/components/comments/comment`
-1. Sélectionnez **[!UICONTROL Enregistrer tout]**
-1. Faites un clic-droit `comment.jsp`
-1. Sélectionnez **[!UICONTROL Supprimer]**
-1. Sélectionnez **[!UICONTROL Enregistrer tout]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
+1. Clic droit `comment.jsp`
+1. Sélectionner **[!UICONTROL Supprimer]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![create-child-component](assets/create-child-component.png)
 
@@ -135,7 +138,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
       * À `/apps/custom/components/comments/comment`
 
 * Sélectionner `/apps/custom` node
-* Sélectionnez **[!UICONTROL Enregistrer tout]**
+* Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ## Création d’un dossier de bibliothèques clientes {#create-a-client-library-folder}
 
@@ -153,7 +156,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
       * **Nom** `categories` **Type** `String` **Valeur** `cq.social.author.hbs.comments` `Multi`
       * **Nom** `dependencies` **Type** `String` **Valeur** `cq.social.scf` `Multi`
 
-* Sélectionnez **[!UICONTROL Enregistrer tout]**
+* Sélectionner **[!UICONTROL Enregistrer tout]**
 * Avec `/apps/custom/components/comments/clientlib`Si le noeud est sélectionné, créez trois fichiers :
 
    * **Nom** : `css.txt`
@@ -161,7 +164,7 @@ Utilisation [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
    * **Nom**: customcommentsystem.js
 
 * Saisissez &quot;customcommentsystem.js&quot; comme contenu de `js.txt`
-* Sélectionnez **[!UICONTROL Enregistrer tout]**
+* Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![comments-clientlibs](assets/comments-clientlibs.png)
 
@@ -189,7 +192,7 @@ Saisissez le texte suivant comme contenu de `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Sélectionnez **[!UICONTROL Enregistrer tout]**
+* Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ## Publication de l’application {#publish-the-app}
 

@@ -12,10 +12,11 @@ kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2302'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -226,7 +227,7 @@ Il s’agit d’une nouvelle méthode pour encapsuler la logique afin d’indiqu
    private ProductTeaser productTeaser;
    ```
 
-   Pour toutes les méthodes qui ne sont ni remplacées ni modifiées, vous pouvez renvoyer la valeur de la variable `ProductTeaser` renvoie . Par exemple :
+   Pour toutes les méthodes qui ne sont ni remplacées ni modifiées, vous pouvez renvoyer la valeur que `ProductTeaser` renvoie. Par exemple :
 
    ```java
    @Override
@@ -353,7 +354,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
        componentGroup="Venia - Commerce"/>
    ```
 
-   La définition de composant pour le composant Teaser de produit de ce projet se trouve ci-dessus. Notez la propriété `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Il s’agit d’un exemple de création d’un [composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr#create-proxy-components). Au lieu de copier et de coller tous les scripts HTL du teaser de produit à partir des AEM CIF composants principaux, vous pouvez utiliser la variable `sling:resourceSuperType` pour hériter de toutes les fonctionnalités.
+   La définition de composant pour le composant Teaser de produit de ce projet se trouve ci-dessus. Notez la propriété `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Il s’agit d’un exemple de création d’un [composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr#create-proxy-components). Au lieu de copier et de coller tous les scripts HTL du composant Teaser de produit à partir des composants principaux CIF d’AEM, vous pouvez utiliser `sling:resourceSuperType` pour hériter de toutes les fonctionnalités.
 
 1. Ouvrez le fichier `productteaser.html`. Il s’agit d’une copie du fichier `productteaser.html` du [teaser de produit CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
 
@@ -491,7 +492,7 @@ Vous venez de personnaliser votre premier composant AEM CIF ! Téléchargez [ic
 
 ## Défi bonus {#bonus-challenge}
 
-Examinez la fonctionnalité du badge **Nouveau** qui a déjà été mis en œuvre dans le teaser de produit. Essayez d’ajouter une case à cocher supplémentaire afin que les auteurs et autrices puissent déterminer à quel moment le badge **Écologique** doit s’afficher. Mettez à jour la boîte de dialogue du composant à l’adresse `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Examinez la fonctionnalité du badge **Nouveau** qui a déjà été mis en œuvre dans le teaser de produit. Essayez d’ajouter une case à cocher supplémentaire afin que les auteurs et autrices puissent déterminer à quel moment le badge **Écologique** doit s’afficher. Mettez à jour la boîte de dialogue du composant à `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![Défi lié à la mise en œuvre du badge Nouveau](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 10%
+source-wordcount: '1389'
+ht-degree: 1%
 
 ---
 
@@ -55,19 +58,19 @@ Sélectionnez le `QnA` afin que vous puissiez accéder au `Configure` qui ouvre 
 
 Sous , **Paramètres** , définissez les paramètres des sujets (questions) et réponses (réponses) :
 
-* **Autoriser les miniatures de pièces jointes**
+* **Autoriser la miniature des pièces jointes**
 
   Si cette case est cochée, une miniature de l’image jointe est créée.
 
-* **Taille max. des miniatures de pièces jointes**
+* **Taille max. de miniature des pièces jointes**
 
   Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **Taille d’image minimale pour la miniature**
+* **Taille d’image min. pour la miniature**
 
   Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est de 100000 octets (100 Ko).
 
-* **Taille maximale de la miniature**
+* **Taille maximale des miniatures**
 
   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
@@ -75,7 +78,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Définit le nombre de questions/publications affichées par page. La valeur par défaut est 10.
 
-* **Modérée**
+* **Modéré**
 
   Si cette case est cochée, la publication des sujets et des commentaires doit être approuvée avant d’apparaître sur un site de publication. La valeur par défaut est désélectionnée.
 
@@ -95,23 +98,23 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Si cette option est cochée, des pièces jointes peuvent être ajoutées à la question ou au commentaire. La valeur par défaut est désélectionnée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La valeur par défaut est désélectionnée.
 
-* **Autoriser l’épinglage**
+* **Permettre la mise en page**
 
   Si cette case est cochée, les rubriques des forums peuvent être collées en haut de la liste des rubriques. La valeur par défaut est désélectionnée.
 
-* **Autoriser les abonnements par courrier électronique**
+* **Autoriser les abonnements aux emails**
 
   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et [email configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. La valeur par défaut n’est pas spécifiée. **all** les types de fichiers sont autorisés.
 
@@ -127,7 +130,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Si cette option est cochée, la fonction de vote est ajoutée à une question. La valeur par défaut est désélectionnée.
 
-* **Autoriser les utilisateurs à supprimer les commentaires et sujets**
+* **Autorisation des utilisateurs à supprimer des commentaires et des sujets**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et questions qu’ils ont publiés. La valeur par défaut est désélectionnée.
 
@@ -135,14 +138,14 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Si cette case est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
-* **Bloquer le contenu généré par l’utilisateur en mode d’édition d’auteur**
+* **Bloquer le contenu généré par l’utilisateur en mode d’édition de l’auteur**
 
   S’il est activé, bloque le contenu généré par l’utilisateur lors de la modification en mode création.
 
 * **Déplacer la réponse sélectionnée vers le haut**
 
   Si cette case est cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
-* **Afficher les badges**
+* **Badges d’affichage**
 
   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
 
@@ -158,7 +161,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
-* **Modèle des mentions de l’IU**
+* **Modèle de mention d’interface utilisateur**
 
   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
@@ -170,7 +173,7 @@ Sous , **Modération d’utilisateur** , indiquez comment gérer les sujets publ
 
   Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser les réponses publiées et à empêcher les réponses de s’afficher sur le forum Q&amp;R public. La valeur par défaut est désélectionnée.
 
-* **Fermer/rouvrir les sujets**
+* **Fermer/rouvrir les rubriques**
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une question (rubrique) pour apporter d’autres modifications et réponses, puis rouvrir une question. La valeur par défaut est désélectionnée.
 
@@ -185,7 +188,7 @@ Si cette case est cochée, les modérateurs côté publication peuvent déplacer
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué une question ou une réponse comme étant inappropriée. La valeur par défaut est désélectionnée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler une question ou une réponse comme inappropriée. La valeur par défaut est désélectionnée.
 
@@ -205,7 +208,7 @@ Sous , **Champ de balise** , les balises qui peuvent être appliquées, si elles
 
   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur **-**1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
@@ -217,11 +220,11 @@ Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont 
 
   Cochez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
-* **Définir par défaut**
+* **Définir comme valeur par défaut**
 
   Extrayez pour sélectionner l’une des options de tri cochées à afficher par défaut. La valeur par défaut est `Newest`.
 
-* **Sélectionner les options de temps pour le tri Analytics**
+* **Sélection des options d’heure pour le tri Analytics**
 
   Menu déroulant pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 

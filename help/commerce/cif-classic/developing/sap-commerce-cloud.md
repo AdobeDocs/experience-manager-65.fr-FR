@@ -1,16 +1,18 @@
 ---
 title: Développement avec SAP Commerce Cloud
-description: La structure d’intégration de Commerce Cloud SAP comprend une couche d’intégration avec une API.
+description: Le framework d’intégration SAP Commerce Cloud comprend une couche d’intégration et une API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2303'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->La structure eCommerce peut être utilisée avec n’importe quelle solution de eCommerce. Certains détails et exemples traités ici sont présentés dans la section [hybris](https://www.sap.com/products/crm.html) solution.
+>La structure eCommerce peut être utilisée avec n’importe quelle solution de eCommerce. Certaines fonctionnalités et certains exemples traités ici font référence à la solution [hybris](https://www.sap.com/products/crm.html).
 
 La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
 
@@ -406,7 +408,7 @@ public class AxisFilter implements VariantFilter {
 
 * Le panier est détenu par `CommerceSession:` :
 
-   * La variable `CommerceSession` effectue l’ajout ou la suppression, etc.
+   * `CommerceSession` effectue l’ajout, la suppression, etc.
    * `CommerceSession` effectue également les différents calculs sur le panier. ``
 
 * Bien que n’étant pas directement associé au panier, `CommerceSession` doit également fournir des informations de prix de catalogue (puisqu’il gère les prix).
@@ -572,9 +574,9 @@ Un système frontal AEM peut être positionné devant une implémentation hybri
 
    * Voir : `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris > AEM
+* hybris > AEM
 
-   * Lors de l’ouverture d’une session AEM, si le système reconnaît l’utilisateur :
+   * Lors de l’ouverture d’une session AEM, si le système reconnaît l’utilisateur ou l’utilisatrice :
 
       * Essayez de vous connecter à hybris avec le nom d’utilisateur/mot de passe fourni.
       * Si cela fonctionne, créez l’utilisateur ou l’utilisatrice dans AEM avec le même mot de passe (le salage (salt) spécifique à AEM génère un hachage spécifique à AEM).

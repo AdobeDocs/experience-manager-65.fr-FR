@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -46,10 +49,10 @@ Ce tutoriel suppose qu’une instance d’auteur AEM et une instance de publicat
 
 Voici quelques liens utiles pour les développeurs qui découvrent la plateforme AEM :
 
-* [Prise en main](../../help/sites-deploying/deploy.md#getting-started): pour déployer les instances d’AEM.
+* [Prise en main](../../help/sites-deploying/deploy.md#getting-started): pour le déploiement des instances d’AEM.
 
    * [Principes de base](../../help/sites-developing/the-basics.md): pour les développeurs de sites web et de fonctionnalités.
-   * [Premières étapes pour les auteurs](../../help/sites-authoring/first-steps.md): pour créer du contenu de page.
+   * [Premières étapes pour les auteurs](../../help/sites-authoring/first-steps.md): pour la création de contenu de page.
 
 ## Utilisation de l’environnement de développement CRXDE Lite {#using-crxde-lite-development-environment}
 

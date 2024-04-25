@@ -3,7 +3,10 @@ title: Adobe Experience Manager Mobile - Préparation au RGPD
 description: Découvrez comment Adobe Experience Manager est prêt à vous aider à respecter le RGPD.
 contentOwner: trushton
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%

@@ -7,10 +7,13 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
@@ -94,7 +97,7 @@ Voir [Modération de contenu généré par l’utilisateur](/help/communities/mo
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
-Voir :
+Voir :
 
 * [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - introduction et utilisation du référentiel - présentation.
 * [Principes de base de la SRP et du contenu généré par l’utilisateur](/help/communities/srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
@@ -111,7 +114,7 @@ Voir [Éditeur de Principal](/help/communities/deploy-communities.md#primary-pub
 
 La plateforme AEM bloque les liens d’autres sites Web afin d’éviter les attaques XSS, comme décrit dans la section
 
-* [Protect contre les scripts intersites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [la fonctionnalité Protection contre les failles cross-site scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 À compter de la version AEM 6.2, les modifications qui devaient auparavant être effectuées manuellement sont incluses dans le fichier de configuration AntiSamy par défaut.
 

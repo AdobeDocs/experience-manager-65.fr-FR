@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Un projet AEM Mobile implique divers types de contenu, notamment des pages, des bibliothèques clientes JavaScript et CSS, des composants d’AEM réutilisables, des configurations de synchronisation de contenu et du contenu shell d’application PhoneGap. Baser votre nouvelle application AEM Mobile sur la variable [Kit de démarrage](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) est un bon moyen d’intégrer tous les différents types de contenu dans notre structure recommandée afin de faciliter à la fois la portabilité et la maintenabilité à long terme.
 

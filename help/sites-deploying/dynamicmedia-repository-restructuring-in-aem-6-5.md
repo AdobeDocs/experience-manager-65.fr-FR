@@ -1,16 +1,17 @@
 ---
 title: Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5
-description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
+description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +93,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans Adob
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Vous pouvez exécuter le script de migration ci-dessous pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
+   <td><p>Vous pouvez exécuter le script de migration suivant pour vous aligner sur le modèle le plus récent :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

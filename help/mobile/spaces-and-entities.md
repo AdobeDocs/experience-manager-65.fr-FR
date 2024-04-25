@@ -5,10 +5,13 @@ contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -16,7 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Un espace est un emplacement pratique pour stocker les entités exposées par le biais de l’API REST Content Services. Cela s’avère particulièrement utile, car une application (ou n’importe quel canal) peut être associée à de nombreuses entités. Forcer les entités à être dans un espace force la bonne pratique de regroupement des exigences d’une application. Vous pouvez éventuellement associer une application dans AEM à un petit nombre d’espaces.
 

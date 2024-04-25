@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -86,7 +89,7 @@ Voir également :
 
 >[!CAUTION]
 >
->Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Lisez également le [Liste de contrôle AEM sécurité](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations sur la sécurité de votre installation AEM.
+>Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Pour plus de détails sur la sécurité de votre installation AEM, lisez aussi la [Liste de contrôle de sécurité d’AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 >
 
 Les entrées suivantes doivent être ajoutées à la fin de la section /filter , en particulier après toutes les entrées refusées.

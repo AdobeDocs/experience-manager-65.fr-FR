@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +53,7 @@ Cela ouvre le panneau Éditeur de site qui contient trois sous-panneaux :
 
 Dans le panneau Informations de base , un nom, une description et si le modèle est activé ou désactivé sont configurés :
 
-* **Nom du nouveau modèle de groupe**
+* **Nouveau nom de modèle de groupe**
 
   ID du nom du modèle.
 

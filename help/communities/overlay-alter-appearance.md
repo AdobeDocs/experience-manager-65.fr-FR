@@ -7,10 +7,13 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 1. Copier `comment.hbs`de `libs`to `apps`
 
    1. Sélectionnez `/libs/social/commons/components/hbs/comments/comment/comment.hbs`.
-   1. Sélectionnez **[!UICONTROL Copie]**
+   1. Sélectionner **[!UICONTROL Copier]**
    1. Sélectionnez `/apps/social/commons/components/hbs/comments/comment`.
    1. Sélectionner **[!UICONTROL Coller]**
 

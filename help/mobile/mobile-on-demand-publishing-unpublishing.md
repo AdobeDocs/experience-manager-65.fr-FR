@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 2%
+source-wordcount: '271'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, vous pouvez publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
 
@@ -27,7 +30,7 @@ Une fois que vous connaissez les actions de gestion de contenu sur les articles,
 
 ## Publication/annulation de la publication du contenu {#publishing-unpublishing-the-content}
 
-Ceci diffère d’une &quot;publication AEM&quot;. Vous ne publiez pas de contenu vers une instance de serveur de publication AEM pour le rendre visible publiquement. Ici, vous informez Mobile On Demand que le contenu sélectionné doit être rendu public dans l’application Mobile On Demand en ligne.
+Cela diffère d’une &quot;publication AEM&quot;. Vous ne publiez pas de contenu vers une instance de serveur de publication AEM pour le rendre visible publiquement. Ici, vous informez Mobile On Demand que le contenu sélectionné doit être rendu public dans l’application Mobile On Demand en ligne.
 
 >[!NOTE]
 >
@@ -54,4 +57,4 @@ Une fois que vous avez appris à créer et publier du contenu, reportez-vous aux
 * [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administration de contenu pour l’utilisation d’AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, reportez-vous à la section [Création de contenu AEM pour les applications AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).
+Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, voir [Création de contenu AEM pour les applications AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).

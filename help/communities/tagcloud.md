@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ Cette page documente les `Social Tag Cloud` paramètres de la boîte de dialogue
 
 Pour plus d’informations pour les développeurs, voir [Notions fondamentales sur les balises](tag.md).
 
-Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+Voir [Administration des balises](../../help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises et sur la façon de déterminer à quel contenu elles ont été appliquées.
 
 ## Ajout d’un nuage de balises sociales {#adding-a-social-tag-cloud}
 
@@ -63,7 +66,7 @@ Identifiez les balises UGC à afficher. Les options de la liste déroulante sont
 
   Si cette case est cochée, les balises s’affichent dans le nuage de balises sous forme de texte brut. Si cette option n’est pas cochée, les balises s’affichent sous forme de liens actifs qui effectuent une recherche sur tout le contenu auquel cette balise est appliquée. La valeur par défaut n’est pas cochée et requiert le **[!UICONTROL Chemin du résultat de la recherche]** à définir.
 
-* **[!UICONTROL Chemin d&#39;accès aux résultats de recherche]**
+* **[!UICONTROL Chemin du résultat de la recherche]**
 
   Chemin d’accès à une page sur laquelle un `Search Result` Le composant a été placé, configuré pour référencer le contenu généré par l’utilisateur qui inclut le chemin d’accès créé par l’utilisateur spécifié par la variable **Page** .
 
@@ -75,14 +78,14 @@ En utilisant la variable **[!UICONTROL Nuage de balises sociales (conception)]**
 
 ![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
-* **[!UICONTROL Afficher les chemins des titres entiers]**
+* **[!UICONTROL Afficher les chemins complets du titre]**
 
   Si cette case est cochée, les titres des balises parentes et de l’espace de noms de chaque balise appliquée s’affichent.
 
   Par exemple :
 
-   * Cochée: `Geometrixx Media: Gadgets / Cars`
-   * Non cochée: `Cars`
+   * Cochée : `Geometrixx Media: Gadgets / Cars`
+   * Non coché : `Cars`
 
   Il n’y a aucune différence pour une balise simple.
 
@@ -98,7 +101,7 @@ En utilisant la variable **[!UICONTROL Nuage de balises sociales (conception)]**
 
   Trois balises peuvent être appliquées :
 
-  `Geometrixx Media (the namespace)`, `Gadgets`, and `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, et `Cars`
 
    * Cochée : uniquement `Cars` s’affichent, le cas échéant.
    * Non coché : `Geometrixx Media`, `Gadgets`, et `Cars` sont affichées, le cas échéant.
@@ -111,7 +114,7 @@ En utilisant la variable **[!UICONTROL Nuage de balises sociales (conception)]**
 
   Modèle, autre qu’un modèle par défaut, utilisé pour afficher les liens dans un nuage de balises, lorsque les liens sont activés par le biais de la boîte de dialogue de modification des composants.
 
-* **[!UICONTROL Taille identique pour toutes les balises]**
+* **[!UICONTROL Même taille pour toutes les balises]**
 
   Si cette case est cochée, tous les mots du nuage de balises sont stylisés de la même manière. Si cette option n’est pas cochée, le style des mots varie en fonction de leur utilisation. La case par défaut est décochée.
 

@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 4%
+source-wordcount: '959'
+ht-degree: 2%
 
 ---
 
@@ -100,7 +102,7 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 
   (*Obligatoire*) Saisissez à nouveau le mot de passe à vérifier.
 
-* **[!UICONTROL Ajouter le membre aux sites]**
+* **[!UICONTROL Ajouter un membre à Sites]**
 
   (*Facultatif*) Sélectionnez sur les sites de la communauté existants pour ajouter le membre au groupe de membres du site de la communauté.
 

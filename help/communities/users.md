@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,12 +72,12 @@ Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l
 
 | Si Membre du groupe... | Rôle de Principal |
 |---|---|
-| administrateurs | Le groupe administrateurs est constitué d’administrateurs système disposant de toutes les capacités d’un administrateur de la communauté et de la possibilité de gérer le groupe Administrateurs de la communauté . |
+| administrateurs ou administratrices | Le groupe administrateurs est constitué d’administrateurs système disposant de toutes les capacités d’un administrateur de la communauté et de la possibilité de gérer le groupe Administrateurs de la communauté . |
 | Administrateurs de la communauté | Le groupe Administrateurs de la communauté devient automatiquement membre de tous les sites de la communauté et de tous les groupes de la communauté créés sur le site. Le groupe Administrateurs est un membre initial du groupe Administrateurs de la communauté. Dans l’environnement de création, les administrateurs de communauté peuvent créer des sites de communauté, gérer des sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu. |
 | Communauté &lt;*nom du site*> Gestionnaire de sites | Le gestionnaire de contenu du site de la communauté peut effectuer des AEM classiques de création, de création de contenu et de modification de pages pour un site de la communauté. |
 | Aucun | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |
 
-### Administrateurs système {#system-administrators}
+### Administrateurs et administratrices système {#system-administrators}
 
 Les membres du groupe administrateurs sont des administrateurs système qui peuvent effectuer la configuration initiale d’une installation AEM pour les environnements de création et de publication.
 

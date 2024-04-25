@@ -5,10 +5,13 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 5%
+ht-degree: 13%
 
 ---
 
@@ -16,14 +19,14 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile n’est qu’un pilier qui constitue la plateforme AEM complète.
 
 Le démarrage d’une nouvelle expérience d’application AEM Mobile nécessite une cohésion des rôles avant qu’elle ne soit prête pour la modification du contenu. Les rôles suivants constituent un point de départ pour la création d’une application AEM Mobile :
 
 * **Administrateur**
-* **Développeur**
+* **Développeur ou développeuse**
 * **Auteur**
 
 ## Création d’applications PhoneGap {#authoring-phonegap-applications}

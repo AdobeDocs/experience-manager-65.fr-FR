@@ -8,10 +8,11 @@ content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +82,7 @@ Pour mettre à jour une configuration avec la console web :
 
 1. Accédez à l’onglet **Configuration** de la console web en effectuant l’une des opérations suivantes :
 
-   * Ouverture de la console web à partir du lien sur la page **Outil > Opérations** . Après votre connexion à la console, vous pouvez utiliser le menu déroulant :
+   * Ouvrez la console web à partir du lien du menu **Outil > Opérations**. Après votre connexion à la console, vous pouvez utiliser le menu déroulant :
 
      **OSGi >**
 
@@ -96,7 +97,7 @@ Pour mettre à jour une configuration avec la console web :
    * cliquant sur l’icône **Modifier** pour ce lot ;
    * cliquant sur le **nom** du lot.
 
-1. Une boîte de dialogue s’affiche. Vous pouvez y apporter des modifications selon vos besoins. Par exemple, définissez la variable **Niveau de journalisation** to `INFO`:
+1. Une boîte de dialogue s’affiche. Vous pouvez y apporter des modifications selon vos besoins. Par exemple, définissez le **Niveau de journalisation** sur `INFO` :
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -230,7 +231,7 @@ Pour ajouter réellement la nouvelle configuration au référentiel :
    * Type : `sling:OsgiConfig`
    * Nom : l’identité persistante (PID) ;
 
-     par exemple, pour AEM gestionnaire de version de la gestion de contenu web, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     par exemple, pour le Gestionnaire de versions de gestion de contenu web d’AEM, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`.
 
    >[!NOTE]
    >

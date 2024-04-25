@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 1%
 
 ---
 
@@ -79,7 +81,7 @@ La variable [Console de configuration de stockage](srp-config.md) permet de sél
 
      *default*: communautés
 
-   * **[!UICONTROL Nom de la base de données]**
+   * **[!UICONTROL Nom de la base]**
 
      Nom donné au schéma dans [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
@@ -87,13 +89,13 @@ La variable [Console de configuration de stockage](srp-config.md) permet de sél
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Hôte Zookeeper**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Hôte**
 
      Laissez cette valeur vide si vous exécutez Solr à l’aide du ZooKeeper interne. Sinon, lorsque vous exécutez [Mode SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, comme *my.server.com:80*
 
      *default*: *&lt;blank>*
 
-   * **[!UICONTROL URL de Solr]**
+   * **[!UICONTROL URL Solr]**
 
      *default*: https://127.0.0.1:8983/solr/
 

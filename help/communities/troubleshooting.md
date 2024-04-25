@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '355'
+ht-degree: 0%
 
 ---
 
@@ -42,8 +45,8 @@ Le problème est que la chaîne de format pour com.day.cq.commons.date.RelativeT
 
 Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit changer :
 
-* De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* À: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* De : `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* Pour : `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 L’échec est différent sur les instances de création et de publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les rubriques du forum. Lors de la publication, l’erreur est générée sur la page.
 

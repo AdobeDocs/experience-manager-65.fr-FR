@@ -9,9 +9,11 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2856'
 ht-degree: 3%
 
 ---
@@ -375,7 +377,7 @@ Cette version comprend deux règles de badge qui correspondent à la variable [F
 
 Toute modification ou tout ajout apporté aux règles de badge ou aux images effectuées dans l’environnement de création doit être installé lors de la publication.
 
-## Attribution et révocation des badges {#assign-and-revoke-badges}
+## Affecter et révoquer des badges {#assign-and-revoke-badges}
 
 Les badges peuvent être attribués aux membres à l’aide de la fonction [console membres](/help/communities/members.md#badges-tab) ou par programmation à l’aide des commandes cURL.
 
@@ -575,22 +577,22 @@ Il est possible d’essayer rapidement la notation et la notation à l’aide de
    * **Nom** : `badgingRules`
    * **Type** : `String`
    * Sélectionner **Multi**
-   * Sélectionnez **Ajouter**
+   * Sélectionner **Ajouter**
    * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Sélectionner **+**
    * Enter `/libs/settings/community/badging/rules/comments-badging`
-   * Sélectionnez **OK**
+   * Sélectionnez **OK**.
 
 * Ajoutez la propriété scoringRules :
 
    * **Nom** : `scoringRules`
    * **Type** : `String`
    * Sélectionner **Multi**
-   * Sélectionnez **Ajouter**
+   * Sélectionner **Ajouter**
    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Sélectionner **+**
    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
-   * Sélectionnez **OK**
+   * Sélectionnez **OK**.
 
 * Sélectionnez **Enregistrer tout**.
 

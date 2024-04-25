@@ -1,21 +1,24 @@
 ---
-title: Guide de composants de communauté
+title: Guide des composants de communauté
 description: Un outil de développement interactif pour commencer à utiliser la structure de composants sociaux (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 3%
+source-wordcount: '1153'
+ht-degree: 1%
 
 ---
 
-# Guide de composants de communauté  {#community-components-guide}
+# Guide des composants de communauté  {#community-components-guide}
 
-Le guide des composants de la communauté est un outil de développement interactif pour la [structure de composants sociaux (SCF)](scf.md). Il fournit une liste des composants d’Adobe Experience Manager (AEM) Communities disponibles ou des fonctionnalités plus complexes composées de plusieurs composants.
+Le guide des composants de la communauté est un outil de développement interactif pour la [structure de composants sociaux (SCF)](scf.md). Il fournit une liste des composants Adobe Experience Manager (AEM) Communities disponibles ou les fonctionnalités les plus complexes créées à partir de plusieurs composants.
 
 Outre les informations de base pour chaque composant, le guide permet d’expérimenter le fonctionnement des composants/fonctionnalités SCF et leur configuration ou personnalisation.
 
@@ -23,7 +26,7 @@ Pour plus d’informations sur les éléments essentiels de développement liés
 
 ## Prise en main {#getting-started}
 
-Ce guide est destiné à être utilisé sur les installations de développement des instances d’auteur (localhost:4502) et des instances de publication (localhost:4503).
+Ce guide est destiné aux installations de développement des instances d’auteur (localhost:4502) et aux instances de publication (localhost:4503).
 
 Le site Composants de la communauté est accessible en accédant à
 
@@ -38,7 +41,7 @@ Les interactions avec les composants Communities varient en fonction des éléme
 
 Sur l’auteur, pour passer en mode d’édition, insérez l’une des options suivantes : `editor.html` ou `cf#` comme premier segment de chemin d’accès après le nom du serveur :
 
-* Interface utilisateur standard:
+* Interface utilisateur standard :
 
   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
@@ -48,9 +51,9 @@ Sur l’auteur, pour passer en mode d’édition, insérez l’une des options s
 
 >[!NOTE]
 >
->En mode d’édition, les liens d’une page ne sont pas principaux.
+>En mode d’édition, les liens d’une page ne sont pas actifs.
 >
->Pour accéder à une page de composant, sélectionnez tout d’abord le mode Aperçu pour activer les liens.
+>Pour accéder à une page de composant, sélectionnez tout d’abord le mode Aperçu afin d’activer les liens.
 >
 >Avec la page du composant affichée dans le navigateur, revenez au mode d’édition pour ouvrir la boîte de dialogue de modification du composant.
 >
@@ -74,15 +77,15 @@ Sélectionnez un composant dans la liste située le long du côté gauche de la 
 
 Le corps principal du guide affiche :
 
-1. Titre : Nom du composant sélectionné
-1. [Bibliothèques côté client](#client-side-libraries): Liste d’une ou de plusieurs catégories obligatoires
-1. [Incluable](scf.md#add-or-include-a-communities-component): Si le composant peut être inclus dynamiquement, l’état peut être basculé en mode d’édition de création :
+1. Titre : nom du composant sélectionné.
+1. [Bibliothèques côté client](#client-side-libraries): une liste d’une ou de plusieurs catégories obligatoires
+1. [Incluable](scf.md#add-or-include-a-communities-component): si le composant peut être inclus dynamiquement, l’état peut être activé en mode d’édition de création :
 
-   * En cas d’ajout, le texte affiché est le suivant : &quot;Ce composant est inclus via son noeud par.&quot;
-   * Si inclus, le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
+   * S’il est ajouté, le texte affiché est : &quot;Ce composant est inclus via son noeud par.&quot;
+   * Si inclus, le texte affiché est : &quot;Ce composant est inclus dynamiquement&quot;.
    * Si elle n’est pas incluse, aucun texte n’est affiché.
 
-1. Exemple de composant ou de fonctionnalité : une instance principale du composant ou de la fonctionnalité. Si un composant est modifié, il peut l’être avec les modifications apportées aux modèles, aux CSS et aux données fournies dans la section des onglets.
+1. Exemple de composant ou de fonction : instance active du composant ou de la fonction. Si un composant est modifié, il peut l’être avec les modifications apportées aux modèles, aux CSS et aux données fournies dans la section des onglets.
 
 >[!NOTE]
 >
@@ -92,7 +95,7 @@ Le corps principal du guide affiche :
 
 Lorsque vous utilisez le guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations destinées aux développeurs sont indiquées dans la section [Principes élémentaires des composants et des fonctionnalités](essentials.md) de la documentation, tandis que les paramètres de la boîte de dialogue sont décrits à la section [Composants Communities](author-communities.md) pour les auteurs.
 
-Pour le guide Composants de la communauté , certains paramètres de la boîte de dialogue de composant sont superposés avec le [Incluable](scf.md#add-or-include-a-communities-component) activer/désactiver l’état. Pour basculer entre l’utilisation de la ressource existante ou d’une ressource incluse dynamiquement, en mode d’édition, sélectionnez le composant et le texte inclusible, puis double-cliquez pour ouvrir la boîte de dialogue de modification :
+Pour le guide Composants de la communauté , certains paramètres de la boîte de dialogue de composant sont superposés avec la variable [Incluable](scf.md#add-or-include-a-communities-component) activer/désactiver l’état. Pour basculer entre l’utilisation de la ressource existante ou d’une ressource incluse dynamiquement, en mode d’édition, sélectionnez le composant et le texte inclusible, puis double-cliquez pour ouvrir la boîte de dialogue de modification :
 
 ![community-component3](assets/community-component3.png)
 
@@ -108,7 +111,7 @@ Sous , **Modèles** tab :
 
   Si cette case est cochée, le guide des composants utilise sling pour inclure de manière dynamique un composant de resourceType du noeud enfant (ressource non existante).
 
-   * Le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
+   * Le texte affiché est : &quot;Ce composant est inclus dynamiquement&quot;.
 
   La case par défaut est décochée.
 
@@ -160,7 +163,7 @@ En utilisant le composant de commentaires comme exemple, sur l’instance d’au
    * **Type** `String`
    * **Valeur** `true`
 
-1. Sélectionnez **[!UICONTROL Enregistrer tout]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
 1. Rechargez la page Commentaires du guide.
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)

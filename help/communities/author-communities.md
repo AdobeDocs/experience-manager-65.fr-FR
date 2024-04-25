@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 28%
+ht-degree: 18%
 
 ---
 
@@ -48,17 +51,17 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 | Commentaires | [Commentaires](/help/communities/comments.md) |
 | Liste d’activités communautaires | [Tendances des activités](/help/communities/trends.md) |
 | Liste des membres de groupes de communautés | [Groupes communautaires](/help/communities/creating-groups.md) |
-| Composer le message | [Message](/help/communities/configure-messaging.md) |
-| Contenu proposé | [Contenu proposé](/help/communities/featured.md) |
+| Composer le message | [Messagerie](/help/communities/configure-messaging.md) |
+| Contenu proposé | [Contenu en vedette](/help/communities/featured.md) |
 | Bibliothèque de fichiers | [Bibliothèque de fichiers](/help/communities/file-library.md) |
 | S’abonner | [Graphique des réseaux sociaux](/help/communities/socialgraph.md) |
 | Abonnement | [Graphique des réseaux sociaux](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
-| Conceptualisation | [Conceptualisation](/help/communities/ideation-feature.md) |
+| Conceptualisation | [Idéation](/help/communities/ideation-feature.md) |
 | Classement | [Notation et badges](/help/communities/enabling-leaderboard.md) |
-| Aimer | [Aimer](/help/communities/liking.md) |
-| Message | [Message](/help/communities/configure-messaging.md) |
-| Liste des messages | [Message](/help/communities/configure-messaging.md) |
+| Aimer | [J’aime](/help/communities/liking.md) |
+| Message | [Messagerie](/help/communities/configure-messaging.md) |
+| Liste des messages | [Messagerie](/help/communities/configure-messaging.md) |
 | Q&amp;R | [Questions et réponses](/help/communities/working-with-qna.md) |
 | Recherche rapide | [Recherche](/help/communities/search.md) |
 | Évaluation | [Évaluation](/help/communities/rating.md) |
@@ -68,7 +71,7 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 | Recherche | [Recherche](/help/communities/search.md) |
 | Résultat de la recherche | [Recherche](/help/communities/search.md) |
 | Nuage de balises sociales | [Nuage de balises sociales](/help/communities/tagcloud.md) |
-| Votant | [Votant](/help/communities/voting.md) |
+| Votant | [Vote](/help/communities/voting.md) |
 
 >[!NOTE]
 >

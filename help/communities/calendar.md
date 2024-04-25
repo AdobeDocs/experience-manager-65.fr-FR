@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 7%
+source-wordcount: '1158'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +58,7 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   Définit le nombre d’événements affichés par page. La valeur par défaut est 10.
 
-* **Modérée**
+* **Modéré**
 
   Si cette case est cochée, la publication d’événements et de commentaires de calendrier doit être approuvée avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
@@ -75,15 +78,15 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   Si cette case est cochée, les fichiers joints peuvent être ajoutés à un événement ou à un commentaire de calendrier. La valeur par défaut est cochée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette case est cochée, les membres ont le droit de suivre les événements publiés dans le calendrier. La valeur par défaut est cochée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
@@ -91,15 +94,15 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152** **(2 Mo).
 
-* **Types autorisés d’image de couverture**
+* **Types d’image de couverture autorisés**
 
   Liste d’extensions de fichier image séparées par des virgules avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   Si cette case est cochée, les réponses aux commentaires sont publiées sur l’événement de calendrier. La valeur par défaut est cochée.
 
-* **Autoriser les utilisateurs à supprimer les commentaires et événements**
+* **Autorisation de la suppression des commentaires et événements par les utilisateurs**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les événements de calendrier qu’ils ont publiés. La valeur par défaut est cochée.
 
@@ -107,11 +110,11 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   Si cette case est cochée, la fonction de vote est ajoutée à un événement de calendrier. La valeur par défaut est cochée.
 
-* **Afficher le fil d’Ariane**
+* **Afficher le chemin de navigation**
 
-  Afficher le fil d’Ariane sur la page des événements. La valeur par défaut est cochée.
+  Afficher le chemin de navigation sur la page d’événement. La valeur par défaut est cochée.
 
-* **Filtre de plage de dates**
+* **Filtre Période**
 
   Définit le nombre de jours ajoutés à la date actuelle pour calculer la valeur &quot;À&quot; du filtre de la page de liste des événements du calendrier. La valeur par défaut est 30.
 
@@ -123,11 +126,11 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-* **Refuser les publications**
+* **Refuser des publications**
 
   Si cette case est cochée, les membres modérateurs autorisés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. La valeur par défaut est cochée.
 
-* **Fermer/rouvrir les événements**
+* **Fermer/rouvrir des événements**
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer un événement afin d’apporter d’autres modifications et commentaires et rouvrir un événement. La valeur par défaut est cochée.
 
@@ -139,7 +142,7 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un événement ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un événement ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
@@ -159,7 +162,7 @@ Sous , **Champ de balise** , les balises qui peuvent être appliquées, le cas �
 
   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
 

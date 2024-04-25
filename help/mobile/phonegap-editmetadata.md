@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 La variable **Gérer l’application** La mosaïque et la page Gérer l’application permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées de l’application sont requises pour la publication d’une application dans le magasin d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
 

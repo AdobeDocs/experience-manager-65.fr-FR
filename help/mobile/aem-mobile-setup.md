@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 2%
+source-wordcount: '910'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -81,7 +84,7 @@ Suivez les étapes de configuration pour que les intégrations AEM Mobile foncti
    1. **(obligatoire)** Renseignez les champs requis :
 
       1. ID client.
-      1. Secret client.
+      1. Secret du client.
 
    1. **(Facultatif)** Modifiez les valeurs existantes.
 
@@ -113,7 +116,7 @@ Après avoir créé un projet, vous devez créer des rôles et accorder l’acc�
 Dans le développement d’applications AEM Mobile, trois rôles différents existent :
 
 * Administrateur
-* Développeur
+* Développeur ou développeuse
 * Création
 
 Pour plus d’informations sur la création de rôles avec différentes autorisations, telles que pour la création d’applications ou la création et la publication de contenu, cliquez sur [Création de rôles utilisateur et octroi d’accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l’aide d’AEM Mobile.

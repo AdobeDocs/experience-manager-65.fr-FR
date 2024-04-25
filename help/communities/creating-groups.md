@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ Sous , **Paramètres** , vous fournissez les fonctions de base du groupe :
 
 ![group-settings](assets/group-settings.png)
 
-* **Nom de groupe**
+* **Nom du groupe**
 
   Titre du groupe que vous souhaitez afficher sur le site de la communauté. Évitez d’utiliser des caractères de soulignement (_) et des mots-clés tels que des ressources et une configuration dans le nom du groupe.
 
@@ -52,11 +55,11 @@ Sous , **Paramètres** , vous fournissez les fonctions de base du groupe :
 
   Liste des membres à inviter au groupe. La recherche par type fournit des suggestions aux membres de la communauté à inviter.
 
-* **Nom de l’URL de groupe**
+* **Nom de l’URL du groupe**
 
   Nom de la page de groupe qui devient une partie de l’URL.
 
-* **Ouvrir un groupe**
+* **Ouvrir le groupe**
 
   Sélection `Open Group` indique que tout visiteur anonyme du site peut afficher le contenu et désélectionne `Member Only Group`.
 

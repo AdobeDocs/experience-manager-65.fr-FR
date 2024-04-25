@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 4%
+source-wordcount: '487'
+ht-degree: 3%
 
 ---
 
@@ -82,7 +85,7 @@ When ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesig
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-a été défini, ce qui permet facultativement de référencer des ressources de conception dans un script à l’aide de la fonction `currentDesign.getPath()`. Par exemple :
+a été défini, ce qui permet facultativement de référencer des ressources de conception dans un script à l’aide de la fonction `currentDesign.getPath()`. par exemple,
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 

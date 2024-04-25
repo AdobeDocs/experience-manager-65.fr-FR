@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 0%
+source-wordcount: '904'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Vous souhaitez créer des expériences attrayantes et pertinentes pour les utilisateurs de vos applications mobiles ? Si vous n’utilisez pas le SDK Mobile Services Adobe pour surveiller et mesurer le cycle de vie et l’utilisation des applications, alors sur quoi basez-vous vos décisions ? Où sont vos clients les plus fidèles ? Comment pouvez-vous garantir que vous restez pertinent et que vous optimisez les conversions ?
 
@@ -32,7 +35,7 @@ Cette section décrit comment AEM *Développeurs* peut :
 * Intégration de Mobile Analytics dans votre application mobile
 * Test de votre suivi d’analyse avec Bloodhound
 
-## Conditions préalables requises {#prerequisties}
+## Conditions préalables {#prerequisties}
 
 AEM Mobile nécessite un compte Adobe Analytics pour collecter et générer des rapports sur les données de suivi dans votre application. Dans le cadre de la configuration, l’AEM *Administrateur* must first :
 

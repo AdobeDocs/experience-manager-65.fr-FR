@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -51,7 +54,7 @@ Ces consoles sont similaires à la console Sites des communautés .
    * **[!UICONTROL Langue(s) de groupe de communautés disponible(s) supplémentaire(s)]**: utilisez le menu déroulant pour sélectionner les langues de groupe de communautés disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Le même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
    * **[!UICONTROL Nom du groupe de communautés]**: arts
    * **[!UICONTROL Modèle]**: liste déroulante à sélectionner `Reference Group`
-   * Sélectionnez **[!UICONTROL Suivant]**
+   * Sélectionner **[!UICONTROL Suivant]**
 
 ![Groupes de communautés imbriqués](assets/parent-to-nestedgroup.png)
 
@@ -75,7 +78,7 @@ Passez aux autres panneaux avec les paramètres suivants :
       * **[!UICONTROL Miniature]**
          * `optional.*`
 
-      * **[!UICONTROL Sélectionnez Suivant]**.
+      * **[!UICONTROL Sélectionner Suivant]**.
 
 * Sélectionnez **[!UICONTROL Créer]**.
 
@@ -85,7 +88,7 @@ La variable `groups` contient désormais deux groupes (actualisez la page).
 
 ![Imbrication des groupes](assets/create-community-group.png)
 
-#### Publier le groupe {#publish-group}
+#### Groupe de publication {#publish-group}
 
 Avant de créer des groupes imbriqués dans `arts` , survolez le groupe avec la souris. `arts` et sélectionnez l’icône de publication pour la publier.
 
@@ -101,21 +104,21 @@ La variable `arts` Le groupe doit également contenir un `groups` , mais vide et
 
    * Titre : `Visual Arts`
    * Nom : `visual`
-   * Modèle: `Reference Group`
+   * Modèle : `Reference Group`
    * Adhésion : sélectionnez `Optional Membership`, un groupe public, ouvert à tous les membres.
 
 1. **[!UICONTROL Auditoire]**
 
    * Titre : `Auditory Arts`
    * Nom : `auditory`
-   * Modèle: `Reference Group`
+   * Modèle : `Reference Group`
    * Adhésion : sélectionnez `Required Membership`, un groupe ouvert, accessible aux membres.
 
-1. **[!UICONTROL Historique]**
+1. **[!UICONTROL Histoire]**
 
    * Titre : `Art History`
    * Nom : `history`
-   * Modèle: `Reference Group`
+   * Modèle : `Reference Group`
    * Adhésion : sélectionnez `Restricted Membership`, un groupe secret, visible uniquement pour les membres invités. Par exemple, invitez [utilisateur de démonstration](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Actualisez la page afin de voir les trois groupes imbriqués (sous-communautés).

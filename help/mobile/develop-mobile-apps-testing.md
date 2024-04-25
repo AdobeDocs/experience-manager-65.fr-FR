@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing
 content-type: reference
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Compte tenu du large éventail d’appareils sur le marché et de périphériques publiés, le test de vos applications est devenu impératif. Il s’agit d’une zone dans laquelle les fonctionnalités et la convivialité peuvent faire l’objet de révisions mineures sur une boutique d’applications, mais où un seul défaut peut entraîner la désinstallation de votre application. Vous devez faire attention à vos plans de test et à l’assurance qualité. Le lien suivant couvre de nombreux sujets qui doivent être abordés en général, tels que l’identification de votre environnement, la définition des cas de test, les types de tests, les hypothèses et l’implication du client. Il est également question des outils permettant de contribuer aux efforts de test. Outils internes, tels que [Hobbes](/help/sites-developing/hobbes.md), peut vous aider à tester l’interface utilisateur web. [Tough Day](/help/sites-developing/tough-day.md) peut stresser vos instances avec une charge simulée. Si votre environnement de test possède déjà une expérience avec des outils tiers, tels que Selenium, ils peuvent également être utilisés.
 

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 10%
+source-wordcount: '1233'
+ht-degree: 2%
 
 ---
 
@@ -58,16 +61,16 @@ Sélectionnez le `Forum` afin que vous puissiez accéder au `Configure` qui ouvr
 
 Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
-* **Autoriser les miniatures de pièces jointes**
+* **Autoriser la miniature des pièces jointes**
 
   Si cette case est cochée, une miniature de l’image jointe est créée.
 
-* **Taille max. des miniatures de pièces jointes**
+* **Taille max. de miniature des pièces jointes**
 
   Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
 * **Taille d’image min. pour la miniature**
-* **Taille maximale de la miniature**
+* **Taille maximale des miniatures**
 
   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
@@ -75,7 +78,7 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Définit le nombre de sujets/publications par page. La valeur par défaut est 10.
 
-* **Modérée**
+* **Modéré**
 
   Si cette case est cochée, la publication des sujets et des commentaires doit être approuvée avant de pouvoir apparaître sur un site de publication. La case par défaut est décochée.
 
@@ -95,11 +98,11 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Si cette case est cochée, vous pouvez ajouter des pièces jointes à la rubrique ou au commentaire. La case par défaut est décochée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
 
-* **Autoriser l’épinglage**
+* **Permettre la mise en page**
 
   Si cette case est cochée, les sujets de forum peuvent être placés en haut de la liste des sujets. La case par défaut est décochée.
 
@@ -107,22 +110,22 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Si cette option est cochée, l’idée est identifiable comme [contenu proposé](/help/communities/featured.md). La case par défaut est décochée.
 
-* **Autoriser les abonnements par courrier électronique**
+* **Autoriser les abonnements aux emails**
 
   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). La case par défaut est décochée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152 (2 Mo).
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   Si cette case est cochée, les réponses aux commentaires sont publiées sur le sujet. La case par défaut est décochée.
 
@@ -130,15 +133,15 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Si cette case est cochée, la fonction de vote est ajoutée à un sujet. La case par défaut est décochée.
 
-* **Autoriser les utilisateurs à supprimer les commentaires et sujets**
+* **Autorisation des utilisateurs à supprimer des commentaires et des sujets**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les sujets qu’ils ont publiés. La case par défaut est décochée.
 
-* **Afficher le fil d’Ariane**
+* **Afficher le chemin de navigation**
 
   Si cette case est cochée, les chemins de navigation s’affichent sur les pages de rubrique. La valeur par défaut est cochée.
 
-* **Afficher les badges**
+* **Badges d’affichage**
 
   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La case par défaut est décochée.
 
@@ -146,7 +149,7 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Si cette case est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
-* **Membres privilégiés autorisés**
+* **Membres autorisés**
 
   Ajoutez les membres privilégiés autorisés à créer du contenu.
 
@@ -162,7 +165,7 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
-* **Modèle des mentions de l’IU**
+* **Modèle de mention d’interface utilisateur**
 
   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
@@ -174,11 +177,11 @@ Sous , **Paramètres** , spécifiez les paramètres des sujets et réponses :
 
 Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-* **Refuser les publications**
+* **Refuser des publications**
 
   Si cette case est cochée, les modérateurs membres approuvés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. La case par défaut est décochée.
 
-* **Fermer/rouvrir les sujets**
+* **Fermer/rouvrir les rubriques**
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une rubrique pour ajouter d’autres modifications et commentaires et rouvrir une rubrique. La case par défaut est décochée.
 
@@ -194,7 +197,7 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
@@ -214,7 +217,7 @@ Sous , **Champ de balise** , les balises qui peuvent être appliquées, le cas �
 
   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
 
@@ -234,11 +237,11 @@ Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont 
 
   Cochez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
-* **Définir par défaut**
+* **Définir comme valeur par défaut**
 
   Extrayez pour sélectionner l’une des options de tri cochées à afficher par défaut. La valeur par défaut est `Newest`.
 
-* **Sélectionner les options de temps pour le tri Analytics**
+* **Sélection des options d’heure pour le tri Analytics**
 
   Faites glisser le curseur pour sélectionner l’une des options suivantes : `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 

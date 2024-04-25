@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 En tant que développeur, vous pouvez à tout moment exécuter votre application sur un appareil ou dans un émulateur, à condition d’avoir configuré votre environnement de développement.
 
@@ -88,9 +91,9 @@ phonegap run ios
 >1. Exécutez `phonegap create helloWorld`.
 >1. Accédez à helloWorld (cd helloWorld).
 >1. Exécuter `phonegap run android` (ou remplacez Android™ par iOS comme ci-dessus).
-1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour l’appareil&quot; si le pont JavaScript vers natif est opérationnel.
+>1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour l’appareil&quot; si le pont JavaScript vers natif est opérationnel.
 >
-Ce dépannage vérifie que l’environnement de développement de l’interface de ligne de commande de PhoneGap s’exécute correctement.
+>Ce dépannage vérifie que l’environnement de développement de l’interface de ligne de commande de PhoneGap s’exécute correctement.
 
 ## Débogage de JavaScript avec Safari et débogage IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 
 >[!NOTE]
 >
-Pour afficher les valeurs des variables dans la méthode actuelle, pointez avec la souris.
+>Pour afficher les valeurs des variables dans la méthode actuelle, pointez avec la souris.
 
 ## Les étapes suivantes {#the-next-steps}
 

@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +70,7 @@ Après avoir créé le modèle de site, sélectionnez dans la navigation globale
 
 * Sélectionner **`Create`** icon
 
-* Étape `1 - Site Template`
+* Étape `1 - Site Template`
 
    * `Title`: site de communauté simple
    * `Description`: site communautaire constitué d’une seule page pour l’expérimentation.
@@ -82,7 +85,7 @@ Après avoir créé le modèle de site, sélectionnez dans la navigation globale
      ![create-community-site-template](assets/create-community-site-template.png)
 
 * Sélectionnez `Next`.
-* Étape `2 - Design`
+* Étape `2 - Design`
 
    * Sélectionner n’importe quelle conception
 

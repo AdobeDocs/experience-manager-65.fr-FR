@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 23%
+ht-degree: 28%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de nœuds ayant la même structure que la page à créer, mais sans contenu réel.
 
@@ -28,11 +31,11 @@ Chaque modèle vous présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec le CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (arborescence de noeuds) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la variable **Sites web** .
+Pour créer une page, le modèle doit être copié (arborescence de noeuds) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la fonction **Sites web** .
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 

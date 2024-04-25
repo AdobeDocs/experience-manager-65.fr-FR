@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 3%
+source-wordcount: '1556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Pour commencer à créer un site communautaire :
 
 Sur le [Étape Modèle de site](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description, le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
 
-* **Titre du site de la communauté**: `Getting Started Tutorial`
+* **Titre du site communautaire**: `Getting Started Tutorial`
 * **Description du site de la communauté**: `A site for engaging with the community.`
 * **Racine du site de la communauté**: (laissez vide pour la racine par défaut) `/content/sites`)
 * **Configurations du cloud**: (laissez le champ vide si aucune configuration de cloud n’est spécifiée) fournissez le chemin d’accès aux configurations de cloud spécifiées.
@@ -76,7 +79,7 @@ Sélectionnez **Suivant**.
 
 À l’étape Paramètres , avant de sélectionner `Next`, sept sections donnent accès aux configurations impliquant la gestion des utilisateurs, le balisage, la modération, la gestion des groupes, les analyses et la traduction.
 
-#### User Management {#user-management}
+#### Gestion des utilisateurs et utilisatrices {#user-management}
 
 Cochez toutes les cases pour [Gestion des utilisateurs](/help/communities/sites-console.md#user-management)
 
@@ -96,7 +99,7 @@ Cochez toutes les cases pour [Gestion des utilisateurs](/help/communities/sites-
 
 Les balises appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de noms précédemment définis via la variable [Console Balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, [Espace de noms du tutoriel](/help/communities/setup.md#create-tutorial-tags)).
 
-Il est facile de trouver des espaces de noms à l’aide d’une recherche par type. Par exemple,
+Il est facile de trouver des espaces de noms à l’aide d’une recherche par type. par exemple,
 
 * Type `tut`
 * Sélectionnez `Tutorial`.
@@ -109,7 +112,7 @@ Il est facile de trouver des espaces de noms à l’aide d’une recherche par t
 
 Pour permettre à un membre (ou à un groupe de membres) d’expérimenter le site en tant que responsable de la communauté, utilisez la recherche anticipée et sélectionnez le nom du membre ou du groupe dans les options de la liste déroulante.
 
-Par exemple,
+par exemple,
 
 * Type `q`
 * Sélection de Quinn Harper
@@ -132,7 +135,7 @@ Si Adobe Analytics est sous licence et qu’un service et une structure Analytic
 
 Voir [Configuration d’Analytics pour les fonctionnalités des communautés](/help/communities/analytics.md).
 
-![analyses](assets/analytics.png)
+![analytics](assets/analytics.png)
 
 #### TRADUCTION {#translation}
 
@@ -149,7 +152,7 @@ La variable [Paramètres de traduction](/help/communities/sites-console.md#trans
 
 ### Étape 4 : Création d’un site de communautés {#step-create-communities-site}
 
-Sélectionnez **Créer.**
+Sélectionner **Créez.**
 
 ![create-site](assets/create-site2.png)
 
@@ -272,19 +275,19 @@ Pour commencer :
 
 1. Avec `localhost.4503` noeud sélectionné :
 
-   * Ajouter une propriété:
+   * Ajouter une propriété :
 
    * **Nom** sling:match
       * **Type** Chaîne
       * **Valeur** localhost.4503/$ (doit se terminer par &#39;$&#39; char)
 
-   * Ajouter une propriété:
+   * Ajouter une propriété :
 
       * **Nom** sling:internalRedirect
       * **Type** Chaîne
       * **Valeur** /content/sites/engage/en.html
 
-1. Sélectionnez **Enregistrer tout.**
+1. Sélectionner **Enregistrer tout.**
 1. (Facultatif) Supprimez l’historique de navigation.
 1. Accédez à https://localhost:4503/.
 

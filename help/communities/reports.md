@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 9%
+source-wordcount: '411'
+ht-degree: 6%
 
 ---
 
@@ -23,11 +25,11 @@ Pour AEM Communities, plusieurs rapports sont accessibles de plusieurs manières
 
 En général, les différents rapports sont :
 
-* [Rapport des vues](#views-report)
+* [Rapport Vues](#views-report)
 
   Fournit un tableau des vues du contenu par les membres de la communauté et les visiteurs du site pour n’importe quel site de la communauté.
 
-* [Rapport des publications](#posts-report)
+* [Rapport Publications](#posts-report)
 
   Fournit un graphique des différents types de publications par membres de la communauté sur n’importe quel site de la communauté.
 
@@ -41,15 +43,15 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 * Choisissez parmi :
 
-   * **[!UICONTROL Rapport des affectations]**
+   * **[!UICONTROL Rapport Affectations]**
 
       * Générez un rapport pour le site, l’utilisateur ou le groupe de la communauté sélectionné et l’affectation.
 
-   * **[!UICONTROL Rapport des publications]**
+   * **[!UICONTROL Rapport Publications]**
 
       * Générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
 
-   * **[!UICONTROL Rapport des vues]**
+   * **[!UICONTROL Rapport Vues]**
 
       * générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
 
@@ -75,10 +77,10 @@ Sélectionnez les critères du rapport :
 
   Sélectionnez l’une des options suivantes :
 
-   * 7 derniers jours
-   * 30 derniers jours
-   * 90 derniers jours
-   * L&#39;année dernière
+   * 7 derniers jours
+   * 30 derniers jours
+   * 90 derniers jours
+   * L’année dernière
 
 Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
 
@@ -104,10 +106,10 @@ Sélectionnez les critères du rapport :
 
   Sélectionnez l’une des options suivantes :
 
-   * 7 derniers jours
-   * 30 derniers jours
-   * 90 derniers jours
-   * L&#39;année dernière
+   * 7 derniers jours
+   * 30 derniers jours
+   * 90 derniers jours
+   * L’année dernière
 
 Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
 

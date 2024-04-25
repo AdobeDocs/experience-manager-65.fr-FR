@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent aux utilisateurs de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
 
@@ -31,7 +34,7 @@ La vraie puissance d’AEM Mobile est qu’une *savvy* ***AEM Développeur*** pe
 >
 >Lorsque la variable *Auteur AEM* considère que l’application est prête, ils peuvent d’abord demander à leurs parties prenantes de télécharger l’application avec **[Vérification de l’Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponible dans AppStore et PlayStore) pour révision et approbation. Une fois qu’ils ont reçu le feu vert, ils peuvent publier ce contenu nouveau ou mis à jour directement pour leurs utilisateurs via le tableau de bord de la gestion de contenu ContentSync d’AEM Mobile. Une personne peut assumer n&#39;importe quel nombre de rôles, cela dépend de vous et de vos politiques de gouvernance.
 
-## Conditions préalables requises {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 AEM Mobile n&#39;est qu&#39;un des piliers de la plateforme AEM complète.
 

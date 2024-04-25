@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 14%
+source-wordcount: '289'
+ht-degree: 3%
 
 ---
 
@@ -33,21 +36,21 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
 1. Créer `/apps/social` (s’il n’existe pas déjà)
    * Sélectionner `/apps` node
    * **[!UICONTROL Créer > Dossier]**
-      * Entrer un nom: `social`
+      * Saisissez le nom : `social`
 1. Sélectionner `social` node
    * **[!UICONTROL Créer]** > **[!UICONTROL Dossier]**
-      * Entrer un nom: `commons`
+      * Saisissez le nom : `commons`
 1. Sélectionner `commons` node
    * **[!UICONTROL Créer > Dossier]**
-      * Entrer un nom: `components`
+      * Saisissez le nom : `components`
 1. Sélectionner `components` node
    * **[!UICONTROL Créer > Dossier]**.
-      * Entrer un nom: `hbs`
+      * Saisissez le nom : `hbs`
 1. Sélectionner `hbs` node
    * **[!UICONTROL Créer]** > **[!UICONTROL Créer un composant]**
       * Saisissez le libellé : `comments`
       * Saisissez le titre : `Comments`
-      * Saisir une description: `List of comments without showing avatars`
+      * Saisissez la description : `List of comments without showing avatars`
       * Super Type : `social/commons/components/comments`
       * Entrez Groupe : `Communities`
       * Cliquez sur **[!UICONTROL Suivant]** Jusqu’à **[!UICONTROL OK]**
@@ -57,18 +60,18 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
 
       * Saisissez le libellé : `comment`
       * Saisissez le titre : `Comment`
-      * Saisir une description: `A comment instance without avatars`
+      * Saisissez la description : `A comment instance without avatars`
       * Super Type : `social/commons/components/comments/comment`
       * Entrez Groupe : `.hidden`
       * Cliquez sur **[!UICONTROL Suivant]** Jusqu’à **[!UICONTROL OK]**
-   * Sélectionnez **[!UICONTROL Enregistrer tout]**
+   * Sélectionner **[!UICONTROL Enregistrer tout]**
 1. Suppression de la valeur par défaut `comments.jsp`
    * Sélectionner un noeud `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Sélectionnez **[!UICONTROL Supprimer]**
+   * Sélectionner **[!UICONTROL Supprimer]**
 1. Supprimez le fichier comment.jsp par défaut.
-   * sélectionnez le nœud `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Sélectionnez **[!UICONTROL Supprimer]**
-   * Sélectionnez **[!UICONTROL Enregistrer tout]**
+   * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * Sélectionner **[!UICONTROL Supprimer]**
+   * Sélectionner **[!UICONTROL Enregistrer tout]**
 
 >[!NOTE]
 >
@@ -87,6 +90,6 @@ Le recouvrement propre `Type`(propriété `sling:resourceType`) doit être une a
    * Type : `String`
    * Valeur : `social/commons/components/hbs/comments/comment`
 1. Sélectionnez le vert `[+] Add`
-   * Sélectionnez **[!UICONTROL Enregistrer tout]**
+   * Sélectionner **[!UICONTROL Enregistrer tout]**
 
 ![create-nodes](assets/create-nodes.png)

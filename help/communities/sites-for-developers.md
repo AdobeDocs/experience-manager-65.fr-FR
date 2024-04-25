@@ -1,19 +1,22 @@
 ---
-title: Principes élémentaires du site de la communauté
+title: Principes de base du site de la communauté
 description: Exportation et suppression de sites communautaires et création de modèles de site personnalisés
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
 
-# Principes élémentaires du site de la communauté {#community-site-essentials}
+# Principes de base du site de la communauté {#community-site-essentials}
 
 ## Modèle de site personnalisé {#custom-site-template}
 
@@ -22,7 +25,7 @@ Un modèle de site personnalisé peut être spécifié séparément pour chaque 
 Procédez comme suit :
 
 * Créez un modèle personnalisé.
-* Recouvrez le chemin d’accès au modèle de site par défaut.
+* Recouvrez le chemin du modèle de site par défaut.
 * Ajoutez le modèle personnalisé au chemin de recouvrement.
 * Spécifiez le modèle personnalisé en ajoutant une `page-template` à la propriété `configuration` noeud .
 
@@ -30,15 +33,15 @@ Procédez comme suit :
 
 `/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
-**Modèle personnalisé dans le chemin d’accès à la superposition**:
+**Modèle personnalisé dans le chemin de recouvrement**:
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
 **Propriété**: page-template
 
-**Type**: Chaîne
+**Type** : chaîne
 
-**Valeur**: `template-name` (aucune extension)
+**Valeur**: `template-name` (pas d’extension)
 
 **Noeud de configuration**:
 
@@ -88,7 +91,7 @@ Pour exporter du contenu créé par l’utilisateur, utilisez la variable [Outil
 Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affiche lorsque vous placez le curseur de la souris sur le site de la communauté depuis **[!UICONTROL Communautés]** > **[!UICONTROL Sites]** console. Au cours du développement, si vous souhaitez supprimer un site de la communauté et recommencer à zéro, vous pouvez utiliser cette fonctionnalité. La suppression d’un site de communauté supprime les éléments suivants qui lui sont associés :
 
 * [UGC](#user-generated-content)
-* [Groupes d’utilisateurs](#community-user-groups)
+* [Groupes d’utilisateurs et d’utilisatrices](#community-user-groups)
 * [Enregistrements de base de données](#database-records)
 
 ### Identifiant de site unique de la communauté {#community-unique-site-id}
@@ -121,7 +124,7 @@ Tout contenu généré par l’utilisateur peut être supprimé ou pour un site 
 
 Cela supprime uniquement le contenu généré par l’utilisateur (saisi lors de la publication) et non le contenu créé (saisi lors de la création). Par conséquent, [noeuds fantômes](srp.md#shadownodes) ne sont pas affectées.
 
-### Groupes d’utilisateurs de la communauté {#community-user-groups}
+### Groupes d’utilisateurs communautaires {#community-user-groups}
 
 Sur toutes les instances de création et de publication, à partir de [console de sécurité](../../help/sites-administering/security.md), recherchez et supprimez la variable [groupes d’utilisateurs](users.md) qui sont :
 

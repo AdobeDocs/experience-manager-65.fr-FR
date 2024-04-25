@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 4%
+source-wordcount: '1111'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +77,7 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 * Sélectionnez **[!UICONTROL Outils]**.
 * Sélectionner **[!UICONTROL Opérations]**
 * Sélectionner **[!UICONTROL Cloud]**
-* Sélectionnez **[!UICONTROL Services cloud]**
+* Sélectionner **[!UICONTROL Cloud Service]**
 * Faites défiler jusqu’à **[!UICONTROL Intégration de traduction]**
 
   ![translation-integration](assets/translation-integration.png)
@@ -90,7 +92,7 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 
 ![create-configuration](assets/translation-integration2.png)
 
-* **[!UICONTROL Configuration du parent]**
+* **[!UICONTROL Configuration parente]**
 
   (Obligatoire) Laissez généralement le paramètre par défaut. La valeur par défaut est `/etc/cloudservices/translation`.
 
@@ -102,7 +104,7 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 
   (Facultatif) Saisissez un nom pour la configuration. La valeur par défaut est un nom de noeud basé sur le titre.
 
-* Sélectionnez **[!UICONTROL Créer]**
+* Sélectionner **[!UICONTROL Créer]**
 
 #### Boîte de dialogue de configuration de traduction {#translation-config-dialog}
 
@@ -117,13 +119,13 @@ Pour obtenir des instructions détaillées, voir [Création d’une configuratio
 Sélectionnez le fournisseur de traduction dans la liste déroulante. Par défaut : `microsoft`, le service d’évaluation.
 
    * **[!UICONTROL Catégorie de contenu]**
-Sélectionnez une catégorie qui décrit le contenu en cours de traduction. La valeur par défaut est `General.`
+Sélectionnez une catégorie qui décrit le contenu en cours de traduction. Par défaut : `General.`
 
    * **[!UICONTROL Sélectionnez Un Paramètre Régional...]**
 (Facultatif) En sélectionnant un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue apparaissent dans une conversation globale. Par convention, choisissez la langue locale comme [langue de base](sites-console.md#translation) pour le site web. Choix `No Common Store` désactive la traduction globale. Par défaut, la traduction internationale est désactivée.
 
 * **[!UICONTROL Ressources]** tab : peut laisser comme valeur par défaut.
-* Sélectionnez **[!UICONTROL OK]**
+* Sélectionnez **[!UICONTROL OK]**.
 
 #### Activation {#activation}
 

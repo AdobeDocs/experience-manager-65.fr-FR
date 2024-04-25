@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -36,7 +39,7 @@ Dans cet exercice, toutes les pages sont basées sur un modèle simple.
    * Libellé : `playpage`
    * Titre : `An SCF Sandbox Play Template`
    * Description : `An SCF Sandbox template for play pages`
-   * Type de ressource: `an-scf-sandbox/components/playpage`
+   * Type de ressource : `an-scf-sandbox/components/playpage`
    * Classement : &lt;leave as=&quot;&quot; default=&quot;&quot;>
 
    Le libellé est utilisé pour le nom du noeud.
@@ -83,7 +86,7 @@ Dans cet exercice, toutes les pages sont basées sur un modèle simple.
 
 Créez le *component* qui définit le contenu et effectue le rendu de toutes les pages créées en fonction de la variable [modèle playpage](#createthepagetemplate).
 
-1. Dans CRXDE Lite, cliquez avec le bouton droit sur **`/apps/an-scf-sandbox/components`**, puis cliquez sur **[!UICONTROL Créer > Composant]**.
+1. Dans CRXDE Lite, cliquez avec le bouton droit **`/apps/an-scf-sandbox/components`** et cliquez sur **[!UICONTROL Créer > Composant]**.
 1. En définissant le nom du noeud (libellé) sur *playpage*, le chemin d’accès au composant est
 
    `/apps/an-scf-sandbox/components/playpage`

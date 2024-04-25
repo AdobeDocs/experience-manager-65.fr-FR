@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -45,7 +47,7 @@ Sélectionnez la variable `Adobe Experience Manager` dans le coin supérieur gau
 
 Pour accéder aux différentes consoles Communities, dans la navigation globale, sélectionnez **navigation, communautés**.
 
-![communautés](assets/communities.png)
+![communities](assets/communities.png)
 
 * [Sites](sites-console.md)
 

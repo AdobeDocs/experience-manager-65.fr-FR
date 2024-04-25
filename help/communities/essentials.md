@@ -6,16 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 18%
+source-wordcount: '208'
+ht-degree: 16%
 
 ---
 
 # Notions fondamentales sur les composants, les fonctions et les fonctionnalités  {#component-function-and-feature-essentials}
 
-Les fonctionnalités d’Adobe Experience Manager (AEM) Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
+Les fonctionnalités de Adobe Experience Manager (AEM) Communities exigent que les visiteurs du site deviennent membres et se connectent à [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
 
 Un site communautaire prend en charge les membres qui créent des groupes communautaires lorsque [fonction de groupes communautaires](functions.md#groups-function) est inclus dans le modèle de site de la communauté sélectionné.
 
@@ -63,7 +66,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 
 ## Javadocs {#javadocs}
 
-Le [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
+La variable [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
 Les API Communities se trouvent dans `com.adobe.cq.social.*` modules.
 
 Pour chaque [feature pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, voir [Utilisation de Maven pour Communities](maven.md#javadocs).

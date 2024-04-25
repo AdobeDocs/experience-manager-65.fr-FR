@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 10%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -85,7 +88,7 @@ Sous , **Règles** , le site de la communauté et ses règles de notation et de 
 
   (Obligatoire) Règle spécifique générant les scores à afficher.
 
-* **Règle d’attribution des badges**
+* **Règle de badge**
 
   (Obligatoire) Règle spécifique générant le badge à afficher.
 
@@ -110,9 +113,9 @@ Configuration des composants de classement :
 
 * Onglet Règles :
 
-   * Emplacement des règles = `/content/sites/<site name>/jcr:content`
+   * Emplacement de la règle = `/content/sites/<site name>/jcr:content`
    * Règle de notation = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Règle d’attribution des badges = `/libs/settings/community/badging/rules//reference-badging`
+   * Règle de badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite d’affichage = `10`
 
 ![participant-leader](assets/participants-leaderboard.png)
@@ -133,9 +136,9 @@ Configuration des composants de classement :
 
 * Onglet Règles :
 
-   * Emplacement des règles = `/content/sites/<site name>/jcr:content`
+   * Emplacement de la règle = `/content/sites/<site name>/jcr:content`
    * Règle de notation = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Règle d’attribution des badges = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Règle de badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
 ![Experts-Lead board](assets/experts-leaderboard.png)

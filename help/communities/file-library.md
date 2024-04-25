@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 10%
+source-wordcount: '741'
+ht-degree: 2%
 
 ---
 
@@ -51,7 +54,7 @@ Sélectionnez le `File Library` afin que vous puissiez accéder au `Configure` q
 
 Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
 
-* **Autoriser les commentaires sur les fichiers**
+* **Autorisation des commentaires sur les fichiers**
 
   Si cette option est cochée, les commentaires sur les fichiers chargés sont autorisés. La case par défaut est décochée.
 
@@ -59,15 +62,15 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. Par défaut : **10**.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   Cette valeur limite la taille du fichier téléchargé. La limite par défaut est 104857600 (10 Mo).
 
-* **Longueur de message max.**
+* **Longueur max. du message**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, les types qui ne sont pas spécifiés ne sont pas autorisés. La valeur par défaut n’est pas spécifiée de sorte que tous les types de fichiers soient autorisés.
 
@@ -75,7 +78,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. La case par défaut est décochée.
 
-* **Supprimer les commentaires**
+* **Supprimer des commentaires**
 
   Si cette case est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. La valeur par défaut est cochée.
 
@@ -87,7 +90,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun espace de noms n’est coché, tous sont autorisés. La valeur par défaut est tous les espaces de noms.
 
-* **Limite de suggestions**
+* **Limite de suggestion**
 
   Si l’option Autoriser le balisage est cochée, ce paramètre limite le nombre de balises suggérées à afficher. S’il est défini sur -1, il n’y a aucune limite. La valeur par défaut est -1.
 
@@ -95,7 +98,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Si cette case est cochée, la possibilité de voter pour un fichier est activée. La case par défaut est décochée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
 
@@ -107,11 +110,11 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
-* **Modèle des mentions de l’IU**
+* **Modèle de mention d’interface utilisateur**
 
   Spécifiez la chaîne de modèle autorisée afin de marquer (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
-* **Autoriser les réponses à thème**
+* **Autoriser les réponses à threads**
 
   Si cette case est cochée, les réponses aux commentaires publiés sont autorisées. La case par défaut est décochée.
 
@@ -123,7 +126,7 @@ Sous , **Modération d’utilisateur** , configurez la modération des commentai
 
   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
-* **Supprimer les commentaires**
+* **Supprimer des commentaires**
 
   Si cette case est cochée, le visiteur qui a publié le commentaire peut le supprimer, si nécessaire. La valeur par défaut est cochée.
 
@@ -143,7 +146,7 @@ Sous , **Modération d’utilisateur** , configurez la modération des commentai
 
   Si cette case est cochée, les visiteurs ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les visiteurs à indiquer leur propre raison de signaler un commentaire comme inapproprié. La case par défaut est décochée.
 

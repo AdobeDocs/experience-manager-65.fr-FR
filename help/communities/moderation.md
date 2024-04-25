@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -157,16 +159,16 @@ Type de contenu limite le contenu généré par l’utilisateur référencé aff
 * **Commentaire**
 * **Sujet du forum**
 * **Réponse du forum**
-* **Question Q&amp;R**
+* **Question Q**
 * **Réponse Q&amp;R**
 * **Article de blog**
 * **Commentaire du blog**
 * **Événement de calendrier**
-* **Commentaire de calendrier**
+* **Commentaire du calendrier**
 * **Dossier de bibliothèque de fichiers**
 * **Document de bibliothèque de fichiers**
-* **Concept**
-* **Commentaire de conceptualisation**
+* **Idée**
+* **Commentaire de l’idée**
 
 ![content-types](assets/content-types.png)
 
@@ -215,7 +217,7 @@ Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à c
 
 Les membres limitent le contenu créé par l’utilisateur référencé à celui publié par le nom du membre saisi.
 
-![membres](assets/members.png)
+![members](assets/members.png)
 
 #### Publié au cours du ou des derniers {#posted-in-the-last}
 
@@ -323,7 +325,7 @@ Lorsque vous travaillez avec une seule publication, l’icône Autoriser s’aff
 
 #### Refuser {#deny}
 
-![refuser](assets/deny.png)
+![deny](assets/deny.png)
 
 La variable **Refuser** l’action de modération n’est disponible que pour le contenu modéré qui n’apparaît pas sur le contenu non modéré, sauf en mode multi-sélection.
 
@@ -341,7 +343,7 @@ En mode de sélection unique ou en bloc, vous pouvez sélectionner des élément
 
 #### Fermer {#close}
 
-![fermer](assets/close.png)
+![close](assets/close.png)
 
 Lorsque vous travaillez avec une seule publication, une icône Fermer s’affiche si le type de contenu créé par l’utilisateur permet d’empêcher d’autres publications pour cette ressource.
 

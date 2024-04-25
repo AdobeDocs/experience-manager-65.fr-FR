@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 7%
+source-wordcount: '983'
+ht-degree: 2%
 
 ---
 
@@ -71,15 +74,15 @@ Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis
 
   Si cette case est cochée, l’option permettant de télécharger un fichier est présentée avec la zone de saisie de texte. La valeur par défaut est désélectionnée.
 
-* **Taille maximale du fichier**
+* **Taille de fichier maximale**
 
   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Cette valeur limite la taille du fichier téléchargé. La limite par défaut est de 10 Mo.
 
-* **Longueur de message max.**
+* **Longueur max. du message**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
-* **Types de fichier autorisés**
+* **Types de fichiers autorisés**
 
   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Liste d’extensions de nom de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
@@ -91,11 +94,11 @@ Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis
 
   Si cette case est cochée, l’option permettant de voter vers le haut ou vers le bas est présentée avec la zone de saisie de texte. La valeur par défaut est désélectionnée.
 
-* **Autoriser abonnement**
+* **Autoriser l’exécution**
 
   Si cette option est cochée, les membres ont le droit de suivre les commentaires. La valeur par défaut est désélectionnée.
 
-* **Afficher les badges**
+* **Badges d’affichage**
 
   Si cette case est cochée, les badges mérités et attribués doivent s’afficher. La valeur par défaut est désélectionnée.
 
@@ -107,7 +110,7 @@ Sous , **Modération d’utilisateur** , indiquez comment les commentaires publi
 
   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La valeur par défaut est désélectionnée.
 
-* **Supprimer les commentaires**
+* **Supprimer des commentaires**
 
   Si cette case est cochée, le membre qui a publié le commentaire peut le supprimer. La valeur par défaut est désélectionnée.
 
@@ -127,7 +130,7 @@ Sous , **Modération d’utilisateur** , indiquez comment les commentaires publi
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un commentaire comme étant inapproprié. La valeur par défaut est désélectionnée.
 
-* **Motif de la marque personnalisée**
+* **Motif de l’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un commentaire comme inapproprié. La valeur par défaut est désélectionnée.
 

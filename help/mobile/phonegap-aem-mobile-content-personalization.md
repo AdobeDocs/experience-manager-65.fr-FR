@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 1%
+source-wordcount: '2571'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -275,7 +278,7 @@ Pour faciliter le rendu du contenu spécifiquement pour les applications mobiles
 
 Pour chaque mbox, un attribut de **cq-targeting** est ajouté pour permettre aux développeurs d’applications d’écrire du code personnalisé à utiliser comme bon leur semble. La variable [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) contient un exemple de directive d’Angular qui utilise l’attribut cq-targeting . Le concept de remplacement du contenu, le moment et la manière dont il est effectué, dépend du développeur de l’application mobile. Un SDK Mobile est fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage d’Adobe. Il appartient au développeur de l’application de spécifier le moment où cet appel doit être effectué en fonction de la conception de son application.
 
-## Prochaines étapes? {#what-s-next}
+## Et après ? {#what-s-next}
 
 1. [Démarrer l’expérience de l’application AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gérer le contenu de mon application](/help/mobile/phonegap-manage-app-content.md)

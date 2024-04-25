@@ -7,7 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 1%
@@ -106,7 +108,7 @@ La variable [Adobe Application et fournisseur OAuth Granite](#adobe-granite-oaut
 
    ![config-properties](assets/config-propertiespng.png)
 
-   * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
+   * Pour plus d’informations, consultez la documentation relative à l’[Explorateur de configurations](/help/sites-administering/configurations.md).
 
 1. **Créer/modifier** Configuration du service cloud facebook.
 
@@ -213,7 +215,7 @@ Suivez les dernières instructions pour créer une application de Twitter à l�
 En général :
 
 1. Saisissez un *Nom* qui identifiera votre application de Twitter aux utilisateurs de votre site web.
-1. Saisissez un *Description*.
+1. Saisissez une *Description*.
 1. Pour *site web* - enter `https://<server>`.
 1. Pour *URL de callback* - enter `https://server`.
 
@@ -255,7 +257,7 @@ La variable [Adobe Application et fournisseur OAuth Granite](#adobe-granite-oaut
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
 
-   * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
+   * Pour plus d’informations, consultez la documentation relative à l’[Explorateur de configurations](/help/sites-administering/configurations.md).
 
 1. Créez/modifiez la configuration du service cloud de Twitter.
 

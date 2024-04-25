@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -48,7 +51,7 @@ Pour vous assurer que le dernier Feature Pack est installé, rendez-vous sur :
 
 * [Dernières versions](deploy-communities.md#latest-releases)
 
-## Configuration d’Analytics {#configure-analytics}
+## Configurer Analytics {#configure-analytics}
 
 When [Adobe Analytics est configuré pour le site de la communauté](analytics.md), des informations sur l’activité de la communauté sont disponibles, qui améliorent l’expérience du membre de la communauté et fournissent des commentaires aux administrateurs du site.
 
@@ -80,7 +83,7 @@ Création d’un utilisateur sur *author*, auquel est affecté le rôle d’admi
 
 * Sur l’instance d’auteur
 
-   * Par exemple : [http://localhost:4502/](http://localhost:4503/)
+   * Par exemple : [http://localhost:4502/](http://localhost:4503/)
 
 * Connexion avec droits d’administrateur
 

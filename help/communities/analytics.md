@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 6%
+source-wordcount: '2658'
+ht-degree: 1%
 
 ---
 
@@ -58,11 +60,11 @@ Cette section de la documentation décrit comment connecter une suite de rapport
 1. [Publier](#publish-community-site-and-analytics-cloud-service) site de la communauté
 1. Configurer [import de données de rapport](#obtaining-reports-from-analytics) d’Adobe Analytics au site de la communauté
 
-## Conditions préalables requises {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour configurer les fonctionnalités d’Analytics for Communities, il est nécessaire de travailler avec le représentant de votre compte pour configurer un compte Adobe Analytics et [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes doivent être disponibles :
 
-* **Nom de l’entreprise**
+* **Nom de la société**
 
   Société associée au compte Adobe Analytics.
 
@@ -100,7 +102,7 @@ En vous connectant à [Adobe Experience Cloud](https://experienceleague.adobe.co
 
    * type **`Counter`**
 
-      * sauf **`Counter (no subrelations)`**
+      * not **`Counter (no subrelations)`**
 
    * Peut réutiliser (renommer) des événements existants ou en créer des à utiliser pour les fonctionnalités de communauté
 
@@ -109,12 +111,12 @@ En vous connectant à [Adobe Experience Cloud](https://experienceleague.adobe.co
    * Console Rapports vidéo
 
       * Activer `Video Core`
-      * Sélectionnez Enregistrer.
+      * Sélectionner Enregistrer
 
    * Console de mesures coeur de la vidéo
 
       * Sélectionnez `Use Solution Variables`.
-      * Sélectionnez Enregistrer.
+      * Sélectionner Enregistrer
 
 Si vous utilisez un **nouvelle suite de rapports**, une nouvelle suite de rapports peut contenir uniquement 4 eVars et 6 variables d’événement, tandis que 11 eVar et 7 variables d’événement sont requises pour Communities.
 
@@ -186,7 +188,7 @@ Par exemple, saisissez *communities*
 
   Sélectionnez `Adobe Analytics Configuration`.
 
-* Sélectionnez **Créer**
+* Sélectionner **Créer**
 
    * Lance la page de configuration et s’ouvre `Analytics Settings` dialog
 
@@ -196,11 +198,11 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
 ![analytics-settings](assets/analytics-settings.png)
 
-* **Entreprise**
+* **Société**
 
   Société associée au compte Adobe Analytics.
 
-* **Nom d’utilisateur ou d’utilisatrice**
+* **Nom d’utilisateur**
 
   Nom d’utilisateur de connexion de l’utilisateur autorisé à gérer le compte Analytics.
 
@@ -212,19 +214,19 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
   Sélectionnez le centre de données Analytics hébergeant la suite de rapports.
 
-* **Ne pas ajouter la balise de suivi sur la page**
+* **Ne pas ajouter de balise de suivi à la page**
 
   Laissez le paramètre par défaut (désélectionné).
 
-* **Utiliser AppMeasurement**
+* **Utiliser l’AppMeasurement**
 
   Laissez le paramètre par défaut (désélectionné).
 
-* **Ne pas importer des impressions de page de nuit (auteur)**
+* **N’importez pas les impressions de page de nuit (auteur)**
 
   Laissez le paramètre par défaut (désélectionné).
 
-* **Ne pas importer des impressions de page de nuit (publication)**
+* **N’importez pas les impressions de page de nuit (publication)**
 
   Laissez le paramètre par défaut (désélectionné).
 
@@ -260,7 +262,7 @@ Par exemple, saisissez *communities*.
 
 * *Modèle*
 
-  Sélectionner `Adobe Analytics Framework`.
+  Sélectionnez `Adobe Analytics Framework`.
 
 * Sélectionnez **Créer**.
 
@@ -411,10 +413,10 @@ Voici un exemple de mappages par défaut :
    <td><strong>eVar2</strong></td>
    <td><strong>eVar3</strong></td>
    <td><strong>eVar4</strong></td>
-   <td><strong>eVar5.</strong></td>
+   <td><strong>eVar5</strong></td>
    <td><strong>eVar6</strong></td>
    <td><strong>eVar7</strong></td>
-   <td><strong>eVar8.</strong></td>
+   <td><strong>eVar8</strong></td>
    <td><strong>eVar9</strong></td>
    <td><strong>eVar10</strong></td>
   </tr>
@@ -634,7 +636,7 @@ Le sujet du forum est actuellement le seul exemple de cette personnalisation :
 * Accédez à [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple : [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Sous , `jcr:content` noeud de la racine de langue (par exemple, `/content/sites/engage/en/jcr:content`), accédez au composant configuré pour la création de rapports Analytics.
-Par exemple, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Par exemple, **`analytics/reportConfigs/social_forum_components_hbs_topic`**.
 
 * Notez les périodes créées :
 

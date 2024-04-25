@@ -7,10 +7,11 @@ topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -22,7 +23,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 
 * [Divers](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Avant la mise à niveau ultérieure**
+**Avant la future mise à niveau**
 
 * [Configuration du service cloud Echosign](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Configurations du service cloud Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
@@ -87,7 +88,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Conseils de restructuration** | La modification de ces clientlibs n’a jamais été recommandée ou prise en charge. Si des modifications ont été apportées à ces clientlibs, elles doivent être restaurées afin d’utiliser le code fourni par AEM. |
 | **Remarques** | S/O |
 
-## Avant la mise à niveau ultérieure {#prior-to-upgrade}
+## Avant la future mise à niveau {#prior-to-upgrade}
 
 ### Configuration du service cloud Echosign {#echosign-cloud-service-configuration}
 

@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '270'
+ht-degree: 11%
 
 ---
 
@@ -17,11 +20,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, reportez-vous à la section [Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, voir [Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ ht-degree: 4%
 
 ## Auteur AEM Mobile {#aem-mobile-author}
 
-Un ***Auteur AEM* (ou *Marketer*)**utilise des modèles et des composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des actifs numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). AEM l’éditeur de contenu intégré est ensuite utilisé par *Auteurs AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste de Adobe Experience Cloud.
+Un ***Auteur AEM* (ou *Marketer*)**utilise des modèles et des composants personnalisés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des actifs numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). AEM l’éditeur de contenu intégré est ensuite utilisé par *Auteurs d’AEM* pour créer des expériences riches et pertinentes au sein de l’application, y compris l’intégration au reste de Adobe Experience Cloud.
 
 Un auteur AEM est responsable des tâches suivantes lors de la création d’une application à l’aide d’AEM Mobile On-demand Services.
 
@@ -39,7 +42,7 @@ Un auteur AEM est responsable des tâches suivantes lors de la création d’une
 
 * [Tableau de bord des applications AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Actions de création et de configuration d’application](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
-* [Configuration du cloud.](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+* [Configuration du cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Gestion du contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 Pour en savoir plus sur **Content Services**, voir [Présentation de Content Services](/help/mobile/develop-content-as-a-service.md) pour commencer.

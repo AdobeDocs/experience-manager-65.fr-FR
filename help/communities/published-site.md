@@ -7,9 +7,12 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
@@ -128,9 +131,9 @@ Création d’un groupe de référence :
 1. Sélectionner **Nouveau groupe**
 1. **Onglet Paramètres**
 
-   * Nom de groupe : `Sports`
+   * Nom du groupe : `Sports`
    * Description : `A parent group for various sporting groups`.
-   * Nom de l’URL de groupe : `sports`
+   * Nom de l’URL du groupe : `sports`
    * Sélectionner `Open Group` (autoriser tout membre de la communauté à y participer en y rejoignant)
 
 1. **Onglet Modèle**
@@ -159,7 +162,7 @@ Par exemple, ajoutez deux `new groups`.
    * Modifiez son paramètre en `Member Only Group` (appartenance limitée).
    * Dans l’onglet Modèles , sélectionnez `Conversational Group`.
 
-**Avis**:
+**Remarque**:
 
 * Une actualisation de la page peut s’avérer nécessaire avant l’affichage des deux groupes.
 * Ce modèle effectue les opérations suivantes : *not* inclure la fonction groupes, de sorte qu’il n’est pas possible d’imbriquer davantage de groupes.
@@ -221,7 +224,7 @@ Après avoir spécifié le nom, l’adresse électronique et le mot de passe de 
 
 Une fois connecté, la première page présentée est leur `Profile` , qu’ils peuvent personnaliser.
 
-![son profil](assets/profile.png)
+![profile](assets/profile.png)
 
 Si le membre oublie son identifiant de connexion, il est possible de le récupérer en utilisant son adresse email.
 

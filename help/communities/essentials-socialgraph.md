@@ -6,9 +6,12 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '225'
 ht-degree: 4%
 
 ---
@@ -52,12 +55,12 @@ La variable `following` component liste les membres qui suivent le membre actuel
    <td>Voir <a href="socialgraph.md">Utilisation de Social Graph</a></td>
   </tr>
   <tr>
-   <td><strong> propriété <br /> facultative</strong></td>
+   <td><strong> facultatif<br /> property</strong></td>
    <td>
     <ul>
      <li>Nom : <strong><code>outgoing</code></strong></li>
      <li>Type : booléen</li>
-     <li>Valeur : <br />
+     <li>Valeur :<br />
       <ul>
        <li><i>True </i>- La variable <code>following</code> component répertorie les membres qui sont membres du membre connecté <code>follows</code></li>
        <li><i>False </i>- La variable <code>following</code> Le composant répertorie les membres qui <code>follow </code>le membre connecté</li>

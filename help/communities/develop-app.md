@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +28,7 @@ Le script par défaut, créé lorsque le composant qui effectue le rendu du mod�
 
 La première étape consiste à ajouter une propriété de super type de ressource à la propriété `/apps/an-scf-sandbox/components/playpage` afin qu’il hérite des scripts et des propriétés du super type.
 
-Utilisation de CRXDE Lite:
+Utilisation de CRXDE Lite :
 
 1. Sélectionner un noeud `/apps/an-scf-sandbox/components/playpage`.
 1. Dans l’onglet Propriétés , saisissez une nouvelle propriété avec les valeurs suivantes :
@@ -118,7 +121,7 @@ Utilisation de CRXDE Lite:
 
 **Affichez la page dans un navigateur en mode d’édition :**
 
-* Interface utilisateur standard: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
+* Interface utilisateur standard : `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 Vous ne devriez pas seulement voir l’en-tête **Jeu communautaire**, mais également l’interface utilisateur pour la modification du contenu de la page.
 
@@ -158,7 +161,7 @@ En outre, choisissez **[!UICONTROL Général]** les composants, tels que
 >
 >Les composants activés pour la partie page sont stockés dans le référentiel comme valeur de la propriété `components` de la propriété
 >
->Nœud `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
+>Noeud `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Page de destination {#landing-page}
 

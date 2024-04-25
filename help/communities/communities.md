@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 6%
+source-wordcount: '390'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ ht-degree: 6%
 
 Adobe Experience Manager (AEM) Communities simplifie la création et la personnalisation de fonctionnalités de communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les révisions, le vote, les évaluations et les affectations. Ces fonctionnalités entraînent la saisie de contenu généré par l’utilisateur dans l’environnement de publication.
 
-La fondation d’un [site communautaire](overview.md#communitiessites) est la valeur [structure des composants sociaux](scf.md) (SCF). La création d&#39;un site communautaire commence par la sélection d&#39;un [modèle de site communautaire](sites-console.md) qui est composé de [fonctions de communauté](functions.md).
+La fondation d’un [site communautaire](overview.md#communitiessites) est la valeur [structure des composants sociaux](scf.md) (SCF) La création d&#39;un site communautaire commence par la sélection d&#39;un [modèle de site communautaire](sites-console.md) qui est composé de [fonctions de communauté](functions.md).
 
 Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
@@ -32,17 +35,17 @@ Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
 ## Déploiements recommandés {#recommended-deployments}
 
-* [Stockage de contenu communautaire](working-with-srp.md): aborde les choix du fournisseur de ressources sociales (SRP) disponibles pour un magasin commun UGC.
-* [Topologies recommandées pour les communautés](topologies.md): aborde les topologies en fonction du cas d’utilisation et du choix de la SRP
+* [Stockage de contenu communautaire](working-with-srp.md): discute des choix disponibles du fournisseur de ressources sociales (SRP) pour un magasin commun UGC.
+* [Topologies recommandées pour les communautés](topologies.md): aborde les topologies en fonction du cas d’utilisation et du choix de la SRP.
 
 ## Structure des composants sociaux {#social-component-framework}
 
 * [Structure des composants sociaux](scf.md): présentation de la structure et des API.
-* [Assistant de Handlebars SCF](handlebars-helpers.md): aide par défaut et comment écrire des aides personnalisées.
+* [Assistant de Handlebars SCF](handlebars-helpers.md): assistants par défaut et comment écrire des assistants personnalisés.
 * [Personnalisation côté client](client-customize.md): personnalisation du code qui s’exécute dans le navigateur.
 * [Personnalisation côté serveur](server-customize.md): personnalisation du code qui s’exécute sur le serveur.
-* [Fournisseur de ressources de stockage (SRP)](srp.md): présentation du stockage de contenu de la communauté.
-* [Consignes de codage](code-guide.md): directives, conseils et astuces.
+* [Fournisseur de ressources de stockage (SRP)](srp.md): présentation du stockage de contenu de communauté.
+* [Consignes de codage](code-guide.md): conseils et astuces.
 * [Guide des composants de communauté](components-guide.md): outil de développement interactif.
 
 ## Principes fondamentaux des composants, fonctions et fonctionnalités {#component-function-and-feature-essentials}
