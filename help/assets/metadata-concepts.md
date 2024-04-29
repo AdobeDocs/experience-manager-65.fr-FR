@@ -7,9 +7,9 @@ feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Les balises ID3 sont conçues pour le format de fichier MP3. Informations suppl�
 
 ### Exif {#exif}
 
-Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Exif stocke les métadonnées sous la forme de paires d’un nom de métadonnées et d’une valeur de métadonnées. Ces paires nom-valeur-métadonnées sont également appelées balises, à ne pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
+Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la photographie numérique pour les métadonnées. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichiers, tels que JPEG, TIFF, RIFF et WAV. Exif stocke les métadonnées sous la forme de paires constituées d’un nom de métadonnée et d’une valeur de métadonnée. Ces paires nom-valeur de métadonnées sont également appelées balises, à ne pas confondre avec le balisage dans [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif que les logiciels graphiques modernes savent prendre en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier concernant les images.
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
@@ -161,7 +161,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 
 ## Référence des schémas de métadonnées {#metadata-schemata-reference}
 
-La référence suivante inclut des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leurs définitions.
+La référence ci-après contient des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leur définition.
 
 ### Dublin Core {#dublin-core}
 
@@ -169,7 +169,7 @@ La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour d
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
-Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Voir [Dublin Core initiative](https://dublincore.org/) pour plus d’informations.
+Outre le DCMES, il existe d’autres éléments de métadonnées créés par la Dublin Core Initiative. Pour plus d’informations, voir la [Dublin Core Initiative](https://dublincore.org/).
 
 | Propriété | Description |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -191,9 +191,9 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 
 ### IPTC {#iptc}
 
-L&#39;International Press Telecommunications Council (IPTC) est un consortium d&#39;agences de presse à travers le monde - l&#39;un de ses objectifs est de développer et de maintenir des standards techniques. L&#39;IPTC a défini un ensemble de normes de métadonnées pour les images qui est presque universellement accepté par les photographes. Ces normes de métadonnées faisaient partie de la norme plus générale connue sous le nom de IPTC Information Interchange Model (IIM), créé dans les années 1990.
+L’International Press Telecommunications Council (IPTC) est un consortium d’agences de presse à travers le monde. L’un de ses objectifs est de développer et de maintenir des normes techniques. L’IPTC a défini un ensemble de normes de métadonnées pour les images que les photographes ont adopté de façon quasiment universelle. Ces normes de métadonnées faisaient partie de la norme plus générale connue sous le nom de IPTC Information Interchange Model (IIM), créée dans les années 1990.
 
-Bien que les informations d’en-tête IPTC aient été principalement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes d’image, les propriétés XMP et IPTC sont synchronisées.
+Bien que les informations d’en-tête IPTC aient été globalement remplacées par XMP, un schéma de base IPTC et un schéma d’extension sont disponibles pour XMP. Dans les programmes d’image, les propriétés XMP et IPTC sont synchronisées.
 
 ## Workflows pilotés par les métadonnées {#metadata-driven-workflows}
 
@@ -243,7 +243,7 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 
 >[!NOTE]
 >
->XMP ne permet généralement pas l’incorporation des types de données binaires. Pour transporter des données binaires dans XMP, par exemple des images miniatures, elles doivent être codées dans un format XML tel que `Base64`.
+>XMP ne permet généralement pas l’incorporation des types de données binaires. Pour transporter des données binaires dans XMP, par exemple des images miniatures, elles doivent être codées dans un format compatible avec XML tel que `Base64`.
 
 ### Concepts de XMP {#xmp-core-concepts}
 
@@ -259,7 +259,7 @@ Par exemple, la propriété `Creator` dans deux schémas conçus indépendamment
 
 XMP peut inclure des propriétés de l’un ou de plusieurs des schémas. Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
 
-* Schéma Dublin core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
+* Schéma Dublin Core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
 * Schéma de base XMP : `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
 * Schéma de gestion des droits XMP : `xmpRights:WebStatement`, `xmpRights:Marked`
 * Schéma de gestion des médias XMP : `xmpMM:DocumentID`
@@ -274,7 +274,7 @@ Découvrez comment [!DNL Adobe Experience Manager Assets] prend en charge les m�
 
 [!DNL Adobe Experience Manager Assets] prend en charge la norme de métadonnées IPTC qui est couramment utilisée pour décrire des ressources. Cela permet à [!DNL Assets] de bénéficier d’une plus large acceptation de ses images auprès des différents intervenants, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
 
-Le schéma de métadonnées par défaut des ressources intègre désormais les schémas de métadonnées IPTC Core et IPTC Extension afin de définir des propriétés de métadonnées complètes qui permettent aux utilisateurs d’ajouter des données précises et fiables sur les personnes, les emplacements et les produits affichés dans une image. Il prend également en charge les dates, les noms et les identifiants concernant la création de l’image, ainsi qu’une manière flexible d’exprimer les informations sur les droits.
+Le schéma de métadonnées par défaut des ressources intègre désormais les schémas de métadonnées IPTC Core et IPTC Extension afin de définir des propriétés de métadonnées complètes qui permettent aux utilisateurs et aux utilisatrices d’ajouter des données précises et fiables sur les personnes, les emplacements et les produits affichés dans une image. Il prend également en charge les dates, les noms et les identifiants concernant la création de l’image, ainsi qu’une manière flexible d’exprimer les informations sur les droits.
 
 La page Propriétés des ressources comprend désormais des onglets distincts pour afficher les métadonnées IPTC Core et IPTC Extension dans les champs modifiables.
 
@@ -297,7 +297,7 @@ Ces évaluations sont disponibles dans la section **[!UICONTROL Évaluation de l
 
 Cette évaluation est une propriété en lecture seule et se situe entre 1 et 5. Vous pouvez rechercher des ressources en fonction de leur évaluation créative dans le panneau de recherche.
 
-Toutefois, cette propriété n’est actuellement pas indexée pour éviter tout conflit avec les modifications personnalisées effectuées par les utilisateurs.
+Toutefois, cette propriété n’est actuellement pas indexée pour éviter tout conflit avec les modifications personnalisées effectuées par les utilisateurs ou utilisatrices.
 
 ### Prise en charge des mots-clés {#keyword-support}
 

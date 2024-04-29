@@ -13,9 +13,9 @@ exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7738'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0, ainsi que de Transport Layer Security 1.0 et 1.1.
->À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
+>Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0, ainsi que de Transport Layer Security 1.0 et 1.1.
+>À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
 >
->* SSL (Secure Socket Layer) 2.0
->* SSL 3.0
+>* SSL (Secure Socket Layer) 2.0
+>* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 et 1.1
 >* Les chiffrements faibles suivants dans TLS 1.2 :
 > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`

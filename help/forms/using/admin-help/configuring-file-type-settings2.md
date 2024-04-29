@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -186,7 +186,7 @@ Ces options permettent de définir le mode d’affichage du contenu et des pages
 
 **Mise en page :** permet de sélectionner le type de mise en page du document PDF.
 
-**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut indique que l’agrandissement Acrobat par défaut est utilisé.
+**Zoom :** permet de choisir un zoom prédéfini de l’affichage initial du document PDF ou de sélectionner une valeur personnalisée. Le choix d’un paramètre par défaut implique l’utilisation du zoom par défaut d’Acrobat.
 
 **Ouvrir à la page :** permet d’indiquer le numéro de page auquel le PDF doit s’ouvrir.
 
@@ -214,7 +214,7 @@ Ces options permettent de définir l’apparence de la fenêtre :
 
 ## Paramètres de conversion des vidéos Flash en PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation du Flash Player d’Adobe sur le serveur Forms. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator permet de soumettre une vidéo pour Adobe Flash (au format SWF ou FLV) et de créer un fichier PDF incorporant une vidéo pour Adobe Flash. Cette conversion ne nécessite pas l’installation d’Adobe Flash Player sur le serveur Forms Server. Pour plus d’informations sur l’accès à cette option, voir [Créer ou modifier les paramètres de type de fichier](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensions de nom de fichier :** liste des extensions de fichier, séparées par des virgules, pouvant être converties.
 
@@ -249,7 +249,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    * Sélectionnez un autre répertoire de polices à partir du menu déroulant **Source des polices** si nécessaire. Ce menu déroulant présente la liste des répertoires de polices spécifiés dans **Accueil > Paramètres > Core System > Configurations de base**.
    * Sélectionnez une ou plusieurs polices dans la liste **Polices disponibles** et cliquez sur **Ajouter**. Les polices sont ajoutées à la liste **Polices à désincorporer**.
-   * Si vous souhaitez désincorporer des polices qui n’existent pas sur le serveur Forms, saisissez les noms de ces polices dans le champ **Ajout de polices à désincorporer** de la boîte. Cliquez sur **Ajouter**.
+   * Si vous voulez désincorporer des polices qui n’apparaissent pas sur le serveur Forms Server, saisissez les noms de ces polices dans la zone **Ajouter des polices à désincorporer**. Cliquez sur **Ajouter**.
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ Sélectionnez **Transparence** pour configurer les paramètres de transparence l
 >
 >Définissez de préférence la résolution des dégradés et des filets entre 150 et 300 ppp, étant donné qu’une résolution plus élevée augmente le temps d’impression et la taille des fichiers sans toutefois améliorer la qualité des dégradés, des ombres portées et des contours progressifs.
 
-**Vectoriser tout le texte** : convertit tous les objets de type (type de point, type de zone et type de chemin) en contours et supprime l’ensemble des informations de glyphe sur les types dans les pages contenant de la transparence. Cette option préserve la largeur du texte lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux petites polices un aspect légèrement plus épais lorsqu’elles sont affichées dans Acrobat ou lors de l’impression sur des imprimantes de bureau à faible résolution. Cela n’a aucune incidence sur la qualité du type imprimé sur les imprimantes à haute résolution ou les imageurs d’images.
+**Vectoriser tout le texte** : convertit tous les objets de type (type de point, type de zone et type de chemin) en contours et supprime l’ensemble des informations de glyphe sur les types dans les pages contenant de la transparence. Cette option préserve la largeur du texte lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux petites polices un aspect légèrement plus épais lorsqu’elles sont affichées dans Acrobat ou lors de l’impression sur des imprimantes de bureau à faible résolution. La qualité du type imprimé sur des imprimantes à résolution élevée ou sur des photocomposeuses n’est pas affectée.
 
 **Vectoriser tous les contours** : convertit tous les contours en tracés simples remplis dans les pages contenant de la transparence. Cette option préserve la largeur des contours lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux contours fins un aspect légèrement plus épais et peut dégrader les performances de l’aplatissement.
 
@@ -311,7 +311,7 @@ Conserver la surimpression : fusionne la couleur des illustrations transparente
 
 Le tableau suivant répertorie les types d’imprimantes courants ainsi que leur résolution mesurée en dpi, leur lignage de trame par défaut mesuré en lpi, et une résolution de rééchantillonnage des images mesurée en ppp. Par exemple, si vous imprimez sur une imprimante laser 600 dpi, vous devez saisir 170 pour la résolution de rééchantillonnage des images.
 
-**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie, mais l’enregistrement d’une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer notablement la qualité de l’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
+**Images** Sélectionnez Images pour définir les options de compression et de rééchantillonnage des images en couleurs, niveaux de gris et monochrome. Vous pouvez souhaiter tester ces options pour trouver le bon équilibre entre la taille du fichier et la qualité d’image. Le paramètre de résolution relatif à la couleur et aux niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. La résolution des images monochromes doit être identique à celle du périphérique de sortie ; toutefois, enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité d’image. Les images susceptibles d’être agrandies, telles que les cartes, peuvent nécessiter des résolutions supérieures.
 
 >[!NOTE]
 >

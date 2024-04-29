@@ -1,6 +1,6 @@
 ---
 title: Modifier l’ordre d’évaluation pour l’authentification
-description: Vous pouvez modifier l’ordre dans lequel AEM forms évalue plusieurs fournisseurs d’authentification.
+description: Vous pouvez modifier l’ordre dans lequel AEM Forms évalue plusieurs fournisseurs d’authentification.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -8,19 +8,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Modifier l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
 
-Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez modifier l’ordre dans lequel AEM forms les évalue pour authentification. L’ordre des fournisseurs d’authentification répertoriés dans le fichier config.xml détermine l’ordre d’évaluation pour l’authentification.
+Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez modifier l’ordre dans lequel AEM Forms les évalue pour authentification. L’ordre des fournisseurs d’authentification répertoriés dans le fichier config.xml détermine l’ordre d’évaluation pour l’authentification.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.
-1. Recherchez le noeud suivant dans le fichier :
+1. Recherchez le nœud suivant dans le fichier :
 
    ```xml
     <node name="AuthSchemes">

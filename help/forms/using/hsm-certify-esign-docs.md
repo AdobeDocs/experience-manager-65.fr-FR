@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '684'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 <!--
 

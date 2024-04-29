@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l�
 
 Pour un formulaire adaptatif, l’option d’enregistrement automatique n’est par défaut pas activée. Vous pouvez activer l’option d’enregistrement automatique dans la section **Enregistrement automatique** dans les propriétés d’un formulaire adaptatif. La section **Enregistrement automatique** fournit également d’autres options de configuration. Effectuez les étapes suivantes afin d’activer et de configurer l’option d’enregistrement automatique pour un formulaire adaptatif :
 
-1. Pour accéder à la section d’enregistrement automatique dans les propriétés, sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis sélectionnez ![cmppr](assets/cmppr.png).
+1. Pour accéder à la section d’enregistrement automatique dans les propriétés, sélectionnez un composant, puis sélectionnez ![field-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis ![cmppr](assets/cmppr.png).
 1. Dans la section **[!UICONTROL Sauvegarde automatique]**, **[!UICONTROL activez]** l’option d’enregistrement automatique.
 1. Dans la boîte de dialogue **[!UICONTROL Événement de formulaire adaptatif]**, spécifiez 1 ou TRUE pour lancer automatiquement l’enregistrement du formulaire lorsque celui-ci est chargé dans le navigateur. Vous pouvez également spécifier une expression conditionnelle pour un événement qui, lorsqu’il est déclenché et renvoie true, commence l’enregistrement du contenu du formulaire.
 1. Spécifiez le déclencheur. L’enregistrement automatique est déclenché en fonction de votre configuration. Vous avez le choix entre :
@@ -84,6 +84,6 @@ Vous pouvez mettre en œuvre un événement personnalisé pour déclencher la fo
 
 1. Ouvrez le formulaire adaptatif en mode création.
 
-1. En mode d’édition, sélectionnez un composant, puis sélectionnez ![champ-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis sélectionnez ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis ![field-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, et choisissez ![cmppr](assets/cmppr.png).
 1. Dans les propriétés, ouvrez la section **[!UICONTROL Standard]**. Dans la zone **[!UICONTROL Catégorie de bibliothèque cliente]**, entrez la valeur de la propriété de catégorie définie lors de la création des dossiers de bibliothèque cliente.
 1. Ouvrez la section Enregistrement automatique. Dans le champ **[!UICONTROL Enregistrement automatique après cet événement]**, spécifiez un événement personnalisé déjà défini dans la bibliothèque cliente. Cliquez sur **[!UICONTROL OK]**.

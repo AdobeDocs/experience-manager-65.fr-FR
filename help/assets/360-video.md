@@ -1,6 +1,6 @@
 ---
 title: Vidéo 360/VR
-description: Découvrez comment utiliser et utiliser les vidéos 360 et de réalité virtuelle (VR) dans Dynamic Media.
+description: Découvrez comment utiliser les vidéos 360 et de réalité virtuelle (VR) dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -11,9 +11,9 @@ role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles utilise généralement les commandes gyroscopiques intégrées.
 
-Dynamic Media - Le mode Scene7 inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
+Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 
 Cette section décrit l’utilisation de la visionneuse de vidéos 360/VR afin d’effectuer le rendu d’une vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage, d’une procédure médicale, etc.
 

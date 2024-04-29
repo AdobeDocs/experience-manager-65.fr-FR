@@ -4,9 +4,9 @@ description: Découvrez comment transmettre des informations d’identification 
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Ce document couvre les sujets suivants :
 
 ## Conditions requises {#requirements}
 
-Pour tirer le meilleur parti de ce document, vous devez maîtriser le logiciel AEM Forms on JEE.
+Pour tirer le meilleur parti de ce document, vous devez maîtriser le logiciel AEM Forms on JEE.
 
 >[!MORELIKETHIS]
 >

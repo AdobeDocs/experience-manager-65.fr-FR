@@ -8,9 +8,9 @@ docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1635'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Vous utilisez la recherche de processus/tâches pour définir des filtres pour i
 Après avoir créé une requête, utilisez les options situées dans le coin supérieur droit du panneau **Créer un filtre** :
 
 * **Annuler** : annulez les modifications et revenez au panneau **Mes filtres**.
-* **Exécuter** : exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n’est pas nécessaire d’enregistrer la requête avant de l’exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque vous êtes satisfait de la sortie.
+* **Exécuter** : exécutez la requête actuelle pour afficher et/ou vérifier les résultats. Dans ce cas, il n’est pas nécessaire d’enregistrer la requête avant de l’exécuter. Vous pouvez vérifier les résultats, apporter des modifications si nécessaire, puis enregistrer la requête lorsque les résultats vous conviennent.
 * **Enregistrer** : enregistrez le filtre. Vous pouvez ensuite afficher et exécuter le filtre à partir du panneau **Mes filtres**.
 
 ### Options dans le panneau Mes filtres {#options-in-my-filters-panel}

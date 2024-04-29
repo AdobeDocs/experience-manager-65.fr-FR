@@ -10,9 +10,9 @@ docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3565'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Pour créer, modifier, charger et installer des packages, les utilisateurs doive
 
 Vous pouvez accéder au gestionnaire de packages de trois façons :
 
-1. À partir du menu principal AEM > **Outils** > **Déploiement** > **Packages**
+1. À partir du menu principal d’AEM > **Outils** > **Déploiement** > **Packages**
 1. Depuis [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en utilisant la barre de sélection supérieure
 1. Directement en accédant à `http://<host>:<port>/crx/packmgr/`
 
@@ -107,7 +107,7 @@ Si le package a été modifié ou n’a jamais été conçu, le statut est prés
 
 ## Paramètres du package {#package-settings}
 
-Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. À l’aide de l’interface utilisateur du gestionnaire de modules, vous pouvez cliquer sur un module, puis sur **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
+Un package est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. Dans l’interface utilisateur du gestionnaire de modules, vous pouvez cliquer sur un package, puis sur le bouton **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
 
 * [Paramètres généraux](#general-settings)
 * [Filtres de package](#package-filters)
@@ -274,7 +274,7 @@ En fonction des modifications que vous avez apportées, vous devrez peut-être [
 
 ### Réencapsuler un package {#rewrapping-a-package}
 
-Une fois qu’un package a été créé, il peut être réencapsulé. Le retour à la ligne modifie les informations du module sans qu’il y ait de miniature, de description, etc., sans modifier le contenu du module.
+Une fois qu’un package a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du package telles que la miniature, la description, etc., sans toucher à son contenu.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 
@@ -284,7 +284,7 @@ Une fois qu’un package a été créé, il peut être réencapsulé. Le retour 
 
 1. Cliquez sur **Enregistrer**.
 
-1. Cliquez sur **Plus** > **Réencapsuler** et une boîte de dialogue de confirmation s’affiche.
+1. Cliquez sur **Plus** > **Réencapsuler**. Une boîte de dialogue vous demandera une confirmation.
 
 ### Afficher d’autres versions de package {#other-versions}
 
@@ -294,7 +294,7 @@ Comme chaque version d’un package apparaît dans la liste comme n’importe qu
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Plus** > **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations d’état.
+1. Cliquez sur **Plus** > **Autres versions**. Une boîte de dialogue s’ouvre alors avec une liste d’autres versions du même package avec des informations sur le statut.
 
 ### Afficher le contenu du package et test de l’installation {#viewing-package-contents-and-testing-installation}
 
@@ -304,11 +304,11 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour afficher le contenu, cliquez sur **Plus** > **Contenu** et Package Manager répertorie l’intégralité du contenu du module dans le journal d’activité.
+1. Pour afficher le contenu, cliquez sur **Plus** > **Contenu**, et le gestionnaire de modules répertorie l’intégralité du contenu du package dans le journal des activités.
 
    ![Contenu du package](assets/package-contents.png)
 
-1. Pour exécuter une exécution d’essai de l’installation, cliquez sur **Plus** > **Test de l’installation** et les rapports Gestionnaire de modules dans l’activité consignent les résultats comme si l’installation avait été effectuée.
+1. Pour exécuter un essai de l’installation, cliquez sur **Plus** > **Test de l’installation** et le Gestionnaire de modules établit un rapport sur les résultats dans le journal d’activité comme si l’installation avait été effectuée.
 
    ![Test de l’installation](assets/test-install.png)
 
@@ -359,11 +359,11 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 ##### Valider les importations de packages OSGi {#osgi-package-imports}
 
-**Éléments cochés**
+**Éléments inspectés**
 
 Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment il est signalé**
+**Établissement des rapports**
 
 Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
 
@@ -377,13 +377,13 @@ Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster
 
 ##### Valider les recouvrements {#overlays}
 
-**Éléments cochés**
+**Éléments inspectés**
 
 Cette validation détermine si le package en cours d’installation contient un fichier qui est déjà recouvert dans l’instance AEM de destination.
 
 Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un package contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Comment il est exporté**
+**Établissement des rapports**
 
 Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
 
@@ -401,11 +401,11 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 ##### Valider les ACL {#acls}
 
-**Éléments cochés**
+**Éléments inspectés**
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
-**Comment il est signalé**
+**Établissement des rapports**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
 
@@ -436,7 +436,7 @@ La validation doit toujours avoir lieu après le chargement du package, mais ava
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Pour valider le package, cliquez sur **Plus** > **Valider**,
+1. Pour valider le package, cliquez sur **Plus** > **Valider**.
 
 1. Dans la boîte de dialogue modale qui s’affiche alors, utilisez les cases à cocher pour sélectionner le ou les types de validation et commencez la validation en cliquant sur **Valider**.
 
@@ -480,7 +480,7 @@ Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnai
 
 ### Installation des packages {#installing-packages}
 
-Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Installez le package téléchargé pour utiliser le contenu du package.
+Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Installez le package chargé pour utiliser son contenu.
 
 >[!CAUTION]
 >
@@ -544,7 +544,7 @@ La désinstallation d’un package ramène le contenu du référentiel à l’in
 
 1. Ouvrez les détails du package que vous souhaitez désinstaller à partir de la liste des packages en cliquant sur le nom du package.
 
-1. Cliquez sur **Plus** > **Désinstaller**, pour supprimer le contenu de ce module du référentiel.
+1. Pour supprimer le contenu de ce package du référentiel, cliquez sur **Plus** > **Désinstaller**.
 
 1. Une boîte de dialogue vous invite à confirmer et énumère toutes les modifications apportées.
 
@@ -580,7 +580,7 @@ Les packages AEM peuvent être utilisés pour créer et partager du contenu dans
 
 La [Distribution logicielle](https://downloads.experiencecloud.adobe.com) est un service centralisé conçu pour simplifier la recherche et le téléchargement des packages AEM.
 
-Pour plus d’informations, voir [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Pour plus d’informations, consultez la [documentation sur la distribution logicielle](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr).
 
 >[!NOTE]
 >

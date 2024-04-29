@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4422'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Image panoramique</strong></td>
-   <td><p>Les visionneuses Image panoramique et PanoramicVR affichent des images panoramiques sphériques pour plonger les utilisateurs dans une expérience d’affichage à 360 degrés d’une pièce, d’une propriété, d’un emplacement ou d’un paysage.</p> <p>Pour qu’une image chargée soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :</p>
+   <td><p>Les visionneuses Image panoramique et de VR panoramique effectuent un rendu d’images panoramiques sphériques pour plonger les utilisateurs et utilisatrices dans une expérience de visionnage à 360 degrés d’une pièce, d’une propriété, d’un emplacement ou d’un paysage.</p> <p>Pour qu’une image chargée soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :</p>
     <ul>
      <li>Un format de 2:1.</li>
      <li>Avec les mots-clés <code>equirectangular</code>, ou <code>spherical</code> et <code>panorama</code>, ou <code>spherical </code>et <code>panoramic</code>. Voir <a href="/help/sites-authoring/tags.md">Utilisation des balises</a>.</li>
@@ -403,7 +403,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de 
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. Dans la propriété limit, remplacez le nombre par le nombre souhaité, par exemple : `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. Dans la propriété de limite, remplacez le nombre par le nombre souhaité, par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`.
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
 ## Création d’un paramètre prédéfini de la visionneuse {#creating-a-new-viewer-preset}

@@ -6,9 +6,9 @@ role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez sur l’icône représentant une corbeille. Le système vous invite à confirmer l’action.
+   Sélectionnez le champ requis, puis cliquez sur l’icône de la corbeille. Le système vous invite à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -235,7 +235,8 @@ AEM dispose d’une protection récurrente pour :
 * Références du contenu
 Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
-* Références de fragment dans GraphQL Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
+* Références de fragments dans GraphQL
+Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 

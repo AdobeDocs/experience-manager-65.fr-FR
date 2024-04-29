@@ -7,7 +7,7 @@ feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 title: Profils de traitement des métadonnées, des images et des vidéos
-description: Un profil est un ensemble de règles autour des options à appliquer aux ressources chargées dans un dossier. Spécifiez le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez. Pour les ressources d’image, vous pouvez également spécifier le profil d’image à appliquer aux ressources d’image afin de les recadrer correctement.
+description: Un profil est un ensemble de règles relatives aux options à appliquer à des ressources chargées dans un dossier. Spécifiez le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez. Pour les ressources image, vous pouvez également spécifier le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -11,9 +11,9 @@ feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1392'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 82%
 
 Un profil est une recette indiquant les options à appliquer aux ressources qui sont chargées dans un dossier. Par exemple, vous pouvez spécifier le profil de métadonnées et le profil de codage vidéo à appliquer aux ressources vidéo que vous chargez, ou le profil d’image à appliquer aux ressources image afin de les recadrer correctement.
 
-Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent d’images ou la création de profils de codage vidéo. Adobe Experience Manager vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
+Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent d’images ou la création de profils d’encodage vidéo. Adobe Experience Manager vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
 
 * [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles)
 * [Profils d’image](/help/assets/image-profiles.md)
 * [Profils vidéo](/help/assets/video-profiles.md)
 
-Vous avez besoin de droits d’administrateur pour créer, modifier et supprimer des métadonnées, des images ou des profils vidéo.
+Vous devez disposer des droits d’administration pour créer, modifier et supprimer des métadonnées, des images ou des profils vidéo.
 
-Après avoir créé votre profil de métadonnées, d’image ou vidéo, vous l’affectez à un ou plusieurs dossiers que vous utilisez comme destination des ressources nouvellement chargées.
+Une fois votre profil de métadonnées, d’image ou de vidéo créé, vous pouvez l’affecter à un ou plusieurs dossiers que vous utilisez comme destination pour les ressources venant d’être chargées.
 
 Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
 Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
@@ -48,7 +48,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
-Supposons que vous ayez créé un profil Image et que vous l’ayez affecté à un dossier. Le profil Image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter la fonction *Retraitement Dynamic Media* <!-- *Scene7: Reprocess Assets* --> workflow.
+Supposons que vous ayez créé un profil Image et que vous l’ayez affecté à un dossier. Le profil Image a été automatiquement appliqué aux ressources d’image que vous avez chargées dans le dossier. Cependant, vous décidez par la suite d’ajouter un nouveau rapport de recadrage intelligent au profil. Désormais, au lieu de devoir sélectionner et charger à nouveau les ressources dans le dossier, il vous suffit d’exécuter le workflow *Retraitement Dynamic Media*<!-- *Scene7: Reprocess Assets* -->.
 
 Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquelle le traitement a échoué la première fois. Ainsi, même si vous n’avez ni modifié ni appliqué un profil de traitement, vous pouvez toujours exécuter, à tout moment, le workflow de retraitement sur un dossier de ressources.
 
@@ -66,7 +66,7 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 **Pour retraiter des ressources dans un dossier :**
 
-1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer l’événement **[!UICONTROL Retraitement Dynamic Media]** workflow,
+1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer le workflow **[!UICONTROL Retraitement Dynamic Media]**.
 
    Dans le cas des dossiers auxquels un profil de traitement est déjà affecté, le nom du profil est affiché directement sous celui du dossier en mode Carte.
 
@@ -82,7 +82,7 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
    ![Workflow de retraitement des ressources 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Sélectionnez **[!UICONTROL Démarrer le workflow]**.
-1. Dans la **[!UICONTROL Démarrer le processus]** liste déroulante, choisissez **[!UICONTROL Retraitement Dynamic Media]**.
+1. Dans la liste déroulante **[!UICONTROL Démarrer le workflow]**, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
    ![Retraiter les ressources 2](/help/assets/assets/reprocess-assets2.png)
@@ -98,12 +98,12 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
 1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow**[!UICONTROL  > ]**Modèles]**.
-1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
+1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 
-   ![Page Modèles de processus avec le workflow de retraitement Dynamic Media sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
+   ![Page Modèles de workflow avec le workflow Retraitement Dynamic Media sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet du navigateur ouvre la page du modèle de processus de retraitement Dynamic Media.
-1. Sur la page du processus de retraitement Dynamic Media, près du coin supérieur droit, sélectionnez **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le workflow.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de workflow Retraitement Dynamic Media.
+1. En haut à droite de la page de workflow Retraitement Dynamic Media, sélectionnez **[!UICONTROL Modifier]** pour « déverrouiller » le workflow.
 1. Dans le workflow, sélectionnez le composant Chargement par lots Scene7 pour ouvrir la barre d’outils, puis sélectionnez l’icône **[!UICONTROL Configurer]** de cette barre d’outils.
 
    ![Composant Chargement par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
@@ -120,11 +120,11 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Chargement par lots vers Scene7 – Propriétés des étapes]**, sélectionnez **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de la page du modèle de processus de retraitement Dynamic Media, sélectionnez **[!UICONTROL Synchronisation]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. Dans le coin supérieur droit de la page du modèle de workflow Retraitement Dynamic Media, sélectionnez **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Retraitement Dynamic Media .
+1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Retraitement Dynamic Media.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.

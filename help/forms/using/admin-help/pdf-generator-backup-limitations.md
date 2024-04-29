@@ -9,7 +9,7 @@ noindex: true
 exl-id: a23db58d-1236-4689-93fc-dea508f8eb81
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '73'
 ht-degree: 100%
 

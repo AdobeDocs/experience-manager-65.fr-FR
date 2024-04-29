@@ -1,6 +1,6 @@
 ---
 title: Transmission de documents au service Forms
-description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception de formulaire dans l’objet com.adobe.idp.Document .
+description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception de formulaire située dans l’objet com.adobe.idp.Document.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,9 +10,9 @@ role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Le service AEM Forms effectue le rendu de PDF forms interactifs sur les appareils clients, généralement des navigateurs Web, afin de collecter des informations auprès des utilisateurs. Un formulaire PDF interactif est basé sur une conception de formulaire généralement enregistrée sous forme de fichier XDP et créée dans Designer. À partir d’AEM Forms, vous pouvez transmettre au service Forms un objet `com.adobe.idp.Document` qui contient la conception du formulaire. Le service Forms effectue ensuite le rendu de la conception de formulaire dans le `com.adobe.idp.Document` .
+Le service AEM Forms effectue le rendu de PDF forms interactifs sur les appareils clients, généralement des navigateurs Web, afin de collecter des informations auprès des utilisateurs. Un formulaire PDF interactif est basé sur une conception de formulaire généralement enregistrée sous forme de fichier XDP et créée dans Designer. À partir d’AEM Forms, vous pouvez transmettre au service Forms un objet `com.adobe.idp.Document` qui contient la conception du formulaire. Le service Forms effectue ensuite le rendu de la conception du formulaire située dans l’objet `com.adobe.idp.Document`.
 
 L’avantage de transmettre un objet `com.adobe.idp.Document` au service Forms est que les autres opérations du service renvoient une instance `com.adobe.idp.Document`. En d’autres termes, vous pouvez obtenir une instance `com.adobe.idp.Document` à partir d’une autre opération de service et en effectuer le rendu. Par exemple, supposons qu’un fichier XDP soit stocké dans un nœud de Content Services (obsolète) appelé `/Company Home/Form Designs`, comme illustré ci-dessous.
 

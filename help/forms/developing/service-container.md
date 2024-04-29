@@ -1,6 +1,6 @@
 ---
 title: Conteneur de services
-description: Services AEM Forms dans le conteneur de services
+description: Les services AEM Forms du conteneur de services
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Les services AEM Forms du conteneur de services (y compris les services standard tels que le service Encryption, les processus de longue durée et de courte durée) peuvent être appelés à l’aide de divers fournisseurs, tels qu’un fournisseur EJB. Un fournisseur EJB permet aux services AEM Forms d’être appelés via RMI/IIOP. Un fournisseur de services web expose les services en tant que services Web (génération WSDL) en utilisant des normes telles que SOAP/HTTP et SOAP/JMS.
+Les services AEM Forms du conteneur de services (y compris les services standard tels que le service de chiffrement, les processus de longue durée et de courte durée) peuvent être appelés à l’aide de divers fournisseurs, tels qu’un fournisseur EJB. Un fournisseur EJB permet aux services AEM Forms d’être appelés via RMI/IIOP. Un fournisseur de services web expose les services en tant que services Web (génération WSDL) en utilisant des normes telles que SOAP/HTTP et SOAP/JMS.
 
 Le tableau suivant décrit les différentes manières dont vous pouvez appeler les services AEM Forms par programmation.
 
@@ -59,7 +59,7 @@ L’illustration suivante fournit une représentation visuelle des différentes 
 Le conteneur de services offre les fonctionnalités suivantes :
 
 * Permet d’appeler les services AEM Forms à l’aide de différentes méthodes. Vous pouvez configurer un service en définissant des points d’entrée afin qu’il puisse être appelé à l’aide de toutes les méthodes : Remoting, l’API Java, les services web et REST. (Voir [Gestion par programmation des points d’entrée](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)).
-* Convertit un message en un format normalisé appelé demande d’appel. Une demande d’appel est envoyée d’une application cliente (ou d’un autre service) à un service dans le conteneur de services. Une demande d’appel contient des informations telles que le nom du service à appeler et les valeurs de données requises pour effectuer l’opération. De nombreux services nécessitent un document pour effectuer une opération. Par conséquent, une demande d’appel contient généralement un document, qui peut être des données PDF, des données XDP, des données XML, etc.
+* Convertit un message en un format normalisé appelé demande d’appel. Une demande d’appel est envoyée par une application cliente (ou un autre service) à un service du conteneur de services. Une demande d’appel contient des informations telles que le nom du service à appeler et les valeurs de données requises pour effectuer l’opération. De nombreux services nécessitent un document pour effectuer une opération. Par conséquent, une demande d’appel contient généralement un document, qui peut être des données PDF, des données XDP, des données XML, etc.
 * Achemine les demandes d’appel vers les services appropriés (le nom du service à appeler fait partie de la demande d’appel).
 * Effectue des tâches telles que déterminer si l’appelant a l’autorisation d’appeler l’opération de service spécifiée. La demande d’appel doit contenir un nom d’utilisateur et un mot de passe AEM Forms valides.
 

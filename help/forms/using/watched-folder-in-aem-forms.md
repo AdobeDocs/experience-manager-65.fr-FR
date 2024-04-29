@@ -8,9 +8,9 @@ docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7164'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,13 +74,13 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
    * publish
 
-   * auteur, publier
+   * création, publication
 
-   * publication, auteur
+   * publication, création
 
 >[!NOTE]
 >
->Si le serveur hébergeant le dossier de contrôle ne dispose d’aucun des modes d’exécution spécifiés, celui-ci s’active toujours, quels que soient les modes d’exécution sur le serveur.
+>Si le serveur qui héberge Watched Folder ne dispose pas d’un mode d’exécution spécifié, Watched Folder est toujours activé, sans tenir compte des modes d’exécution sur le serveur.
 
 * **outputFilePattern (chaîne)** : modèle du fichier de sortie. Vous pouvez spécifier un modèle de dossier ou de fichier. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier. Le [modèle de fichier et de dossier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) peut également indiquer une structure de répertoire pour les fichiers de sortie. Il s’agit d’une propriété obligatoire.
 
@@ -88,7 +88,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 >[!NOTE]
 >
->Remarque : même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, il se peut que son traitement se poursuive en arrière-plan mais qu’elle prenne simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant que le déclenchement du mécanisme d’expiration, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. D’un autre côté, si le traitement de l’entrée n’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de workflow (scénario que le mécanisme d’expiration vise à résoudre), aucune de ces deux éventualités ne se produira. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une expiration (recherchez les messages tels que « Fichier non traité après un laps de temps considérable, marqué comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
+>Remarque : même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, il se peut que son traitement se poursuive en arrière-plan mais qu’elle prenne simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant que le déclenchement du mécanisme d’expiration, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. En revanche, si le traitement de l’entrée ne s’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de workflow (ce qui constitue le scénario que le mécanisme d’expiration vise à résoudre), aucune de ces deux éventualités ne se produit. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une expiration (recherchez les messages tels que « Fichier non traité après un laps de temps considérable, marqué comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valeur par défaut true) :** si le mécanisme d’expiration doit ou non s’activer uniquement lorsque le dossier de contrôle est ralenti. Le mécanisme est plus approprié pour les dossiers de contrôle ralentis car un petit nombre de fichiers qui restent à l’état non traité (en raison d’une tâche intermittente/d’un échec de déclenchement de workflow) risquent potentiellement de freiner le traitement du lot entier lorsque l’option de ralentissement est activée. Si cette propriété est conservée sur true (valeur par défaut), le mécanisme d’expiration ne s’active pas pour les dossiers de contrôle qui ne sont pas ralentis. Si la propriété est conservée sur false, le mécanisme s’active toujours tant que la propriété stageFileExpirationDuration est un nombre positif.
 
@@ -136,7 +136,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
    * %m = minute
    * %s = seconde
    * %l = milliseconde
-   * %R = nombre aléatoire (entre 0 et 9)
+   * %R = nombre aléatoire (entre 0 et 9)
    * %P = ID de processus ou de tâche
 
   Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous définissez C:/Test/WF0/failure/%Y/%M/%D/%H/, le dossier de résultats est alors C:/Test/WF0/failure/2009/07/17/20.
@@ -160,7 +160,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 * **throttleOn (Boolean)** : lorsque cette option est sélectionnée, elle permet de limiter le nombre de tâches du dossier de contrôle qu’AEM Forms peut traiter en une seule fois. La valeur Taille du lot détermine le nombre maximal de tâches. La valeur par défaut est true. Voir [A propos du ralentissement](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).
 
 * **overwriteDuplicateFilename (booléen)** : lorsque cet attribut est défini sur True, les fichiers du dossier des résultats et du dossier de fichiers conservés sont remplacés. Lorsqu’il est défini sur False, les fichiers et les dossiers avec un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
-* **preserveOnFailure (Booléen)**: conservez les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
+* **preserveOnFailure (booléen) :** conserve les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
 * **inputFilePattern (chaîne)** : spécifie le modèle des fichiers d’entrée pour un dossier de contrôle. Crée une liste autorisée des fichiers.
 * **asynch (booléen)** : identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est True (asynchrone). Le traitement des fichiers est une tâche qui mobilise des ressources, maintenez la valeur de l’indicateur d’asynch sur True pour éviter de freiner le thread principal de la tâche d’analyse. Dans un environnement organisé en clusters, il est essentiel de maintenir l’indicateur True pour activer l’équilibrage de charge pour les fichiers en cours de traitement sur les serveurs disponibles. Si l’indicateur est défini sur False, la tâche d’analyse tente de procéder à un traitement pour chaque fichier/dossier de premier niveau de manière séquentielle dans son propre thread. Ne définissez pas l’indicateur sur False sans raison particulière, par exemple, traitement sur workflow selon une configuration sur un serveur unique.
 
@@ -490,7 +490,7 @@ Pour un point d’entrée de dossier de contrôle, les utilisateurs et utilisatr
 
 Pour des points d’entrée de dossiers de contrôle, si une tâche ne requiert qu’un fichier d’entrée, l’utilisateur ou l’utilisatrice peut le copier à la racine du dossier de contrôle.
 
-Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur ou l’utilisatrice doit créer, en dehors de la hiérarchie du dossier de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX si nécessaire par le processus). Une fois le dossier de tâches créé, l’utilisateur ou l’utilisatrice le copie dans le dossier d’entrée du dossier de contrôle.
+Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur ou l’utilisatrice doit créer, en dehors de la hiérarchie du dossier de contrôle, un dossier contenant tous les fichiers requis. Ce nouveau dossier doit inclure les fichiers d’entrée (et éventuellement un fichier DDX s’il est requis par le processus). Une fois le dossier de tâches créé, l’utilisateur ou l’utilisatrice le copie dans le dossier d’entrée du dossier de contrôle.
 
 >[!NOTE]
 >
@@ -589,7 +589,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
 
-Si le modèle de mappage des paramètres de sortie se termine par &quot;File.separator&quot; (qui est le séparateur de chemin), un dossier est créé et le contenu est copié dans ce dossier. Si le motif ne se termine pas par « File.separator », le contenu (fichier ou dossier résultant) est créé avec ce nom.
+Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le motif ne se termine pas par « File.separator », le contenu (fichier ou dossier résultant) est créé avec ce nom.
 
 ## Utilisation de PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
 

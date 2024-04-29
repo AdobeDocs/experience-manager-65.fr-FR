@@ -1,8 +1,8 @@
 ---
 source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager
@@ -34,7 +34,7 @@ La méthode choisie dépend de votre aisance pour modifier vous-même la documen
 
 ### Création d’une demande {#create-an-issue}
 
-Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez ensuite un problème. Les propositions relatives aux problèmes sont également excellentes si vous avez quelque chose à apporter, mais que vous n’êtes pas habitué à modifier les documents ou à effectuer vous-même une demande d’extraction.
+Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Créez ensuite un problème. Les propositions relatives aux problèmes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué(e) à modifier les documents ou à générer vous-même une demande d’extraction.
 
 Ils vous permettent de décrire facilement votre proposition d’amélioration des documents et un membre de l’équipe AEM Docs pourra la consulter. Il suffit de cliquer sur le lien **Enregistrer un problème** en haut du panneau de navigation de droite sur une page pour créer un problème.
 

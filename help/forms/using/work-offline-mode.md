@@ -7,7 +7,7 @@ topic-tags: forms-app
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
 ht-degree: 100%
 

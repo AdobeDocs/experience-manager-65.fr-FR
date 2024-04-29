@@ -7,9 +7,9 @@ feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1889'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Pour créer une copie de langue, déclenchez l’un des workflows de copie de la
 
 Vous utilisez le workflow Créer et traduire afin de générer des copies de langue dans une langue spécifique pour la première fois. Le workflow offre les options suivantes :
 
-* Créez uniquement la structure.
-* Créez un projet de traduction.
+* Créer uniquement la structure.
+* Créer un projet de traduction.
 * Ajouter à un projet de traduction existant
 
 ### Création de la structure uniquement {#create-structure-only}
@@ -166,7 +166,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux donnés. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
 
 * Créer un projet de traduction
-* Ajout à un projet de traduction existant
+* Ajouter à un projet de traduction existant
 
 ### Créer un projet de traduction {#create-a-new-translation-project-1}
 
@@ -235,7 +235,7 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ## Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviez les ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources nouvellement traduites à un emplacement temporaire et met à jour la copie de langue existante une fois que vous avez explicitement approuvé les ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviezles ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources récemment traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
 
 1. Cliquez sur le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans [!DNL Experience Manager Assets].
 

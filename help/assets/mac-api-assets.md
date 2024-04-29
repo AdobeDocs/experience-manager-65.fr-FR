@@ -8,9 +8,9 @@ exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1775'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Pour accéder à l’API :
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple, pour les fichiers de PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
 
 Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ni par le biais de l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
@@ -67,7 +67,7 @@ Les dossiers sont comparables aux répertoires des systèmes de fichiers traditi
 
 Les dossiers **Liens** présentent trois liens :
 
-* `self`: lien vers lui-même.
+* `self` : lien vers lui-même
 * `parent` : lien vers le dossier parent.
 * `thumbnail` : (facultatif) lien vers une miniature de dossier.
 
@@ -212,7 +212,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Créer un rendu de ressource {#create-an-asset-rendition}
 
-Créez un rendu de ressource pour une ressource. Si le nom de paramètre de requête n’est pas fourni, le nom de fichier est utilisé comme nom du rendu.
+Créer un rendu de ressource pour une ressource. Si le nom de paramètre de requête n’est pas fourni, le nom de fichier est utilisé comme nom du rendu.
 
 **Paramètres** : les paramètres sont `name` pour le nom du rendu et `file` pour la référence au fichier.
 

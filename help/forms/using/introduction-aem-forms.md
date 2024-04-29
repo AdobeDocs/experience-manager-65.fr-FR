@@ -1,5 +1,5 @@
 ---
-title: Présentation d’AEM Forms
+title: Présentation d’AEM Forms
 description: Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des formulaires numériques. Trouvez de l’aide sur l’installation, la mise à niveau et la configuration, et découvrez comment créer des formulaires adaptatifs.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,13 +9,13 @@ feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
 ht-degree: 100%
 
 ---
 
-# Présentation d’AEM Forms{#introduction-to-aem-forms}
+# Présentation d’AEM Forms{#introduction-to-aem-forms}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |

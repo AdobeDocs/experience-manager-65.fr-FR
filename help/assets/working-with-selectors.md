@@ -1,6 +1,6 @@
 ---
 title: Utilisation des sélecteurs
-description: Sélection de ressources pour des images interactives, des vidéos interactives et des bannières de carrousel
+description: Sélectionner des ressources pour des images interactives, des vidéos interactives et des bannières de carrousel
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '741'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

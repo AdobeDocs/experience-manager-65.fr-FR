@@ -13,9 +13,9 @@ role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3792'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ Vous pouvez définir la taille des miniatures en configurant ces paramètres dan
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
-Le dimensionnement des miniatures est défini au format suivant : **`width:height:center`**, par exemple : `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Le dimensionnement des miniatures est défini au format suivant : **`width:height:center`**, par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur « centrer » est soit false soit true. Si elle est définie sur true, elle indique que la miniature a exactement la taille spécifiée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
 >[!NOTE]
 >

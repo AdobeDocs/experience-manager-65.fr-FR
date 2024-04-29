@@ -10,7 +10,7 @@ feature: Forms Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Lorsque vous cliquez sur l’icône de géolocalisation lors de la création de 
 
 >[!NOTE]
 >
->Sur iPad, l’incorporation des informations de géolocalisation est obligatoire par défaut.
+Sur iPad, l’incorporation des informations de géolocalisation est obligatoire par défaut.
 
 Sur iPad, l’icône de géolocalisation n’est pas affichée par défaut et les informations de géolocalisation sont automatiquement incorporées lorsque vous cliquez sur **OK**.
 

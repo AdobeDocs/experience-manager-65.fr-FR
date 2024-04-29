@@ -8,15 +8,15 @@ feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Utiliser les API pour accéder aux instances de lettre {#apis-to-access-letter-instances}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 A l’aide de l’interface utilisateur de création de correspondance de Correspondence Management, vous pouvez enregistrer des brouillons d’instances de lettre en cours. Vous y trouverez également les instances de lettre envoyées.
 
@@ -34,7 +34,7 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 >[!NOTE]
 >
->LetterInstanceService est un service OSGI et son instance peut être récupérée à l’aide de @Reference en Java™
+>LetterInstanceService est un service OSGi et son instance peut être récupérée à l’aide de @Reference dans une classe Java™
 >ou sling.getService (LetterInstanceService. ) dans JSP.
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}

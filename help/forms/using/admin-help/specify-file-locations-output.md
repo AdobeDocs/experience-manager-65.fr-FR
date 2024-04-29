@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -44,4 +44,4 @@ La valeur par défaut est `com/adobe/formServer/PA/pa_output.xci`.
 
 >[!NOTE]
 >
->Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, bien que la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période, jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM forms.
+>Si vous utilisez un utilitaire de nettoyage des répertoires temporaires, bien que la suppression de ces répertoires n’affecte pas les fonctionnalités, elle peut affecter considérablement les performances pendant une courte période jusqu’à la création du nouveau cache. Pour éviter ce problème, ne supprimez pas ces répertoires lors de l’effacement du répertoire temporaire d’AEM Forms.

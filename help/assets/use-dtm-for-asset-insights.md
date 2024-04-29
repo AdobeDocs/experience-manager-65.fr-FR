@@ -7,9 +7,9 @@ feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
    >
    >* `AppMeasurement.js` est supprimé. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
    >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. La fonction devrait être appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
-   >* Selon l’emplacement d’hébergement du dispositif de suivi de la page de statistiques sur les ressources (par exemple, Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
+   >* Selon l’endroit où est hébergé le dispositif de suivi de la page Assets Insights (par exemple, Experience Manager, CDN, etc.), il se peut que vous deviez apporter des modifications à l’origine de la source du script.
    >* Pour le dispositif de suivi de la page hébergé sur Experience Manager, la source doit indiquer une instance de publication utilisant le nom d’hôte de l’instance du Dispatcher.
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]**, ou ouvrez un outil Adobe Analytics existant. Pendant la création de l’outil, vous pouvez définir la **[!UICONTROL méthode de configuration]** sur **[!UICONTROL Automatique]**.

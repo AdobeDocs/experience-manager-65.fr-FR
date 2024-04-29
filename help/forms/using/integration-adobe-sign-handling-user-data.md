@@ -8,7 +8,7 @@ role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
 ht-degree: 100%
 

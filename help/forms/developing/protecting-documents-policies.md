@@ -9,9 +9,9 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '15394'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 85%
 
 Le service Document Security permet aux utilisateurs d’appliquer de manière dynamique des paramètres de confidentialité aux documents Adobe PDF et de garder le contrôle sur ces documents, quelle que soit leur diffusion.
 
-Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant aux utilisateurs de garder un contrôle sur la manière dont les destinataires utilisent le document de PDF protégé par une stratégie. Un utilisateur peut spécifier les personnes autorisées à ouvrir un document, limiter son utilisation et le surveiller après distribution. Un utilisateur peut également contrôler de manière dynamique l’accès à un document protégé par une politique et même révoquer dynamiquement l’accès au document.
+Le service Document Security empêche la diffusion des informations au-delà de la portée des utilisateurs et des utilisatrices en permettant à ceux-ci de garder le contrôle sur la manière dont les personnes destinataires utilisent le document PDF protégé par une politique. Un utilisateur peut spécifier les personnes autorisées à ouvrir un document, limiter son utilisation et le surveiller après distribution. Un utilisateur peut également contrôler de manière dynamique l’accès à un document protégé par une politique et même révoquer dynamiquement l’accès au document.
 
 Le service Document Security protège également d’autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l’API client Document Security pour utiliser ces types de fichiers. Les versions ci-dessous sont prises en charge :
 
@@ -140,7 +140,7 @@ Pour créer une politique, procédez comme suit :
 
 1. Incluez les fichiers de projet.
 1. Créez un objet API client Document Security.
-1. Définissez les attributs de la stratégie.
+1. Définissez les attributs de la politique.
 1. Créez une entrée de politique.
 1. Enregistrez la politique.
 
@@ -148,7 +148,7 @@ Pour créer une politique, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classes de votre projet :
+Vous devez ajouter les fichiers JAR suivants au chemin d’accès aux classes de votre projet :
 
 * adobe-rightsmanagement-client.jar
 * namespace.jar (si AEM Forms est déployé sur JBoss)
@@ -169,7 +169,7 @@ Pour plus d’informations à propos de l’emplacement de ces fichiers JAR, voi
 
 Avant d’effectuer par programmation une opération de service Document Security, créez un objet client de service Document Security.
 
-**Définition des attributs de la stratégie**
+**Définir les attributs de la politique**
 
 Pour créer une politique, définissez des attributs de politique. Un attribut obligatoire est le nom de la politique. Les noms des politiques doivent être uniques pour chaque jeu de politiques. Un jeu de politiques est simplement un ensemble de politiques. Deux politiques peuvent porter le même nom si elles appartiennent à des jeux de politiques distincts. Toutefois, deux politiques d’un seul jeu ne peuvent pas avoir le même nom de politique.
 
@@ -216,42 +216,42 @@ Créez une politique à l’aide de l’API Document Security (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `DocumentSecurityClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
-1. Définissez les attributs de la stratégie.
+1. Définissez les attributs de la politique.
 
-   * Créez un `Policy` en appelant la méthode `InfomodelObjectFactory` statique de l’objet `createPolicy` . Cette méthode renvoie un objet `Policy`.
-   * Définissez l’attribut name de la stratégie en appelant la variable `Policy` de `setName` et transmission d’une valeur string qui spécifie le nom de la stratégie.
-   * Définissez la description de la stratégie en appelant la fonction `Policy` de `setDescription` et transmission d’une valeur string qui spécifie la description de la stratégie.
-   * Spécifiez le jeu de stratégies auquel appartient la nouvelle stratégie en appelant la fonction `Policy` de `setPolicySetName` et transmission d’une valeur string qui spécifie le nom du jeu de stratégies. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique au jeu de politiques *Mes politiques*.)
-   * Créez la période de validité de la stratégie en appelant la variable `InfomodelObjectFactory` statique de l’objet `createValidityPeriod` . Cette méthode renvoie un objet `ValidityPeriod`.
-   * Définissez le nombre de jours pendant lesquels un document protégé par une stratégie est accessible en appelant la variable `ValidityPeriod` de `setRelativeExpirationDays` et transmettre une valeur entière qui spécifie le nombre de jours.
-   * Définissez la période de validité de la stratégie en appelant la variable `Policy` de `setValidityPeriod` et transmission de la méthode `ValidityPeriod` .
+   * Créez un objet `Policy` en appelant la méthode statique `createPolicy` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `Policy`.
+   * Définissez l’attribut du nom de la politique en appelant la méthode `setName` de l’objet `Policy` et en transmettant une valeur de chaîne qui spécifie le nom de la politique.
+   * Définissez la description de la politique en appelant la méthode `setDescription` de l’objet `Policy` et en transmettant une valeur de chaîne qui spécifie la description de la politique.
+   * Définissez le jeu de politiques auquel appartient la nouvelle politique en appelant la méthode `setPolicySetName` de l’objet `Policy` et en transmettant une valeur de chaîne qui spécifie le nom du jeu de politiques. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique au jeu de politiques *Mes politiques*.)
+   * Créez la période de validité de la politique en appelant la méthode statique `createValidityPeriod` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `ValidityPeriod`.
+   * Définissez le nombre de jours pendant lesquels un document protégé par une politique est accessible en appelant la méthode `setRelativeExpirationDays` de l’objet `ValidityPeriod` et en transmettant une valeur entière qui spécifie le nombre de jours.
+   * Définissez la période de validité de la politique en appelant la méthode `setValidityPeriod` de l’objet `Policy` et en transmettant l’objet `ValidityPeriod`.
 
 1. Créez une entrée de politique.
 
-   * Créez une entrée de stratégie en appelant la méthode `InfomodelObjectFactory` statique de l’objet `createPolicyEntry` . Cette méthode renvoie un objet `PolicyEntry`.
-   * Spécifiez les autorisations de la stratégie en appelant la fonction `InfomodelObjectFactory` statique de l’objet `createPermission` . Transmettez un membre de données statique qui appartient à l’interface `Permission` qui représente l’autorisation. Cette méthode renvoie un objet `Permission`. Par exemple, pour ajouter l’autorisation qui permet aux utilisateurs de copier des données d’un document PDF protégé par une politique, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation à ajouter).
-   * Ajoutez l’autorisation à l’entrée de stratégie en appelant la méthode `PolicyEntry` de `addPermission` et transmission de la méthode `Permission` . (Répétez cette étape pour chaque objet `Permission` que vous avez créé).
-   * Créez l’entité de stratégie en appelant la méthode `InfomodelObjectFactory` statique de l’objet `createSpecialPrincipal` . Transmettez un membre de données qui appartient à l’objet `InfomodelObjectFactory` qui représente le principal. Cette méthode renvoie un objet `Principal`. Par exemple, pour ajouter l’éditeur du document en tant qu’entité principale, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Ajoutez l’entité de sécurité à l’entrée de stratégie en appelant la méthode `PolicyEntry` de `setPrincipal`et transmission de la méthode `Principal` .
-   * Ajoutez l’entrée de stratégie à la stratégie en appelant la méthode `Policy` de `addPolicyEntry` et transmission de la méthode `PolicyEntry` .
+   * Créez une entrée de politique en appelant la méthode statique `createPolicyEntry` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `PolicyEntry`.
+   * Spécifiez les autorisations de la politique en appelant la méthode statique `createPermission` de l’objet `InfomodelObjectFactory`. Transmettez un membre de données statique qui appartient à l’interface `Permission` qui représente l’autorisation. Cette méthode renvoie un objet `Permission`. Par exemple, pour ajouter l’autorisation qui permet aux utilisateurs de copier des données d’un document PDF protégé par une politique, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation à ajouter).
+   * Ajoutez l’autorisation à l’entrée de politique en appelant la méthode `addPermission` de l’objet `PolicyEntry` et en transmettant l’objet `Permission`. (Répétez cette étape pour chaque objet `Permission` que vous avez créé).
+   * Créez le principal de politique en appelant la méthode statique `createSpecialPrincipal` de l’objet `InfomodelObjectFactory`. Transmettez un membre de données qui appartient à l’objet `InfomodelObjectFactory` qui représente le principal. Cette méthode renvoie un objet `Principal`. Par exemple, pour ajouter l’éditeur du document en tant qu’entité principale, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Ajoutez le principal à l’entrée de politique en appelant la méthode `setPrincipal` de l’objet `PolicyEntry` et en transmettant l’objet `Principal`.
+   * Ajoutez l’entrée de politique à la politique en appelant la méthode `addPolicyEntry` de l’objet `Policy` et en transmettant l’objet `PolicyEntry`.
 
 1. Enregistrez la politique.
 
    * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `DocumentSecurityClient`.
-   * Enregistrez la stratégie en appelant la méthode `PolicyManager` de `registerPolicy` et transmission des valeurs suivantes :
+   * Enregistrez la politique en appelant la méthode `registerPolicy` de l’objet `PolicyManager` et en transmettant les valeurs suivantes :
 
       * Objet `Policy` représentant la politique à enregistrer.
 
    * Valeur de chaîne représentant le jeu de politiques auquel appartient la politique.
 
-   Si vous utilisez un compte administrateur d’AEM forms dans les paramètres de connexion pour créer la variable `DocumentSecurityClient` , puis spécifiez le nom du jeu de stratégies lorsque vous appelez la variable `registerPolicy` . Si vous transmettez une valeur `null` pour le jeu de politiques, la politique est créée dans le jeu de politiques *Mes politiques* au niveau administrateur.
+   Si vous utilisez un compte d’administrateur d’AEM Forms dans les paramètres de connexion pour créer l’objet `DocumentSecurityClient`, alors spécifiez le nom du jeu de politiques lorsque vous appelez la méthode `registerPolicy`. Si vous transmettez une valeur `null` pour le jeu de politiques, la politique est créée dans le jeu de politiques *Mes politiques* au niveau administrateur.
 
    Si vous utilisez un utilisateur Document Security dans les paramètres de connexion, vous pouvez appeler la méthode `registerPolicy` surchargée qui accepte uniquement la politique. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de politiques. Cependant, la politique est ajoutée au jeu de politiques nommé *Mes politiques*. Si vous ne souhaitez pas ajouter la nouvelle politique à ce jeu de politiques, indiquez un nom de jeu de politiques lorsque vous appelez la méthode `registerPolicy`.
 
@@ -289,14 +289,14 @@ Créez une politique à l’aide de l’API Document Security (Web Service) :
 
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Définissez les attributs de la stratégie.
+1. Définissez les attributs de la politique.
 
    * Créez un objet `PolicySpec` en utilisant son constructeur.
-   * Définissez le nom de la stratégie en attribuant une valeur de chaîne au `PolicySpec` de `name` membre de données.
-   * Définissez la description de la stratégie en attribuant une valeur de chaîne à la variable `PolicySpec` de `description` membre de données.
-   * Spécifiez le jeu de stratégies auquel appartient la stratégie en attribuant une valeur string à la variable `PolicySpec` de `policySetName` membre de données. Spécifiez un nom de jeu de stratégies existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique à *Mes politiques*.)
-   * Définissez la période d’ouverture hors connexion de la stratégie en attribuant une valeur entière à la variable `PolicySpec` de `offlineLeasePeriod` membre de données.
-   * Définissez la variable `PolicySpec` de `policyXml` membre de données avec une valeur string qui représente les données XML PDRL. Pour effectuer cette tâche, créez un objet `StreamReader` .NET en utilisant son constructeur. Transmettez l’emplacement d’un fichier XML PDRL qui représente la politique au constructeur `StreamReader`. Ensuite, appelez la fonction `StreamReader` de `ReadLine` et affecter la valeur renvoyée à une variable string . Effectuez une itération à l’aide de l’objet `StreamReader` jusqu’à ce que la méthode `ReadLine` renvoie une valeur nulle. Affectez la variable string à la variable `PolicySpec` de `policyXml` membre de données.
+   * Définissez le nom de la politique en attribuant une valeur de chaîne au membre de données `name` de l’objet `PolicySpec`.
+   * Définissez la description de la politique en attribuant une valeur de chaîne au membre de données `description` de l’objet `PolicySpec`.
+   * Définissez le jeu de politiques auquel la politique appartient en attribuant une valeur de chaîne au membre de données `policySetName` de l’objet `PolicySpec`. Indiquez un nom de jeu de politiques existant. (Vous pouvez spécifier `null` pour cette valeur de paramètre qui entraîne l’ajout de la politique à *Mes politiques*.)
+   * Définissez la période d’ouverture hors connexion de la politique en affectant une valeur entière au membre de données `offlineLeasePeriod` de l’objet `PolicySpec`.
+   * Définissez le membre de données `policyXml` de l’objet `PolicySpec` avec une valeur de chaîne qui représente les données XML PDRL. Pour effectuer cette tâche, créez un objet `StreamReader` .NET en utilisant son constructeur. Transmettez l’emplacement d’un fichier XML PDRL qui représente la politique au constructeur `StreamReader`. Ensuite, appelez la méthode `ReadLine` de l’objet `StreamReader` et affectez la valeur renvoyée à une variable chaîne. Effectuez une itération à l’aide de l’objet `StreamReader` jusqu’à ce que la méthode `ReadLine` renvoie une valeur nulle. Affectez la variable chaîne au membre de données `policyXml` de l’objet `PolicySpec`.
 
 1. Créez une entrée de politique.
 
@@ -304,12 +304,12 @@ Créez une politique à l’aide de l’API Document Security (Web Service) :
 
 1. Enregistrez la politique.
 
-   Enregistrez la stratégie en appelant la méthode `DocumentSecurityServiceClient` de `registerPolicy` et transmission des valeurs suivantes :
+   Enregistrez la politique en appelant la méthode `registerPolicy` de l’objet `DocumentSecurityServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `PolicySpec` représentant la politique à enregistrer.
    * Valeur string représentant le jeu de politiques auquel appartient la politique. Vous pouvez définir une valeur `null` qui entraîne l’ajout de la politique au jeu de politiques *Mes politiques*.
 
-   Si vous utilisez un compte administrateur d’AEM forms dans les paramètres de connexion pour créer la variable `DocumentSecurityClient` , spécifiez le nom du jeu de stratégies lors de l’appel de la variable `registerPolicy` .
+   Si vous utilisez un compte d’administrateur d’AEM Forms dans les paramètres de connexion pour créer l’objet `DocumentSecurityClient`, spécifiez le nom du jeu de politiques lors de l’appel de la méthode `registerPolicy`.
 
    Si vous utilisez un utilisateur Document Security dans les paramètres de connexion, vous pouvez appeler la méthode de surcharge `registerPolicy` qui accepte uniquement la politique. En d’autres termes, vous n’avez pas besoin de spécifier le nom du jeu de politiques. Cependant, la politique est ajoutée au jeu de politiques nommé *Mes politiques*. Si vous ne souhaitez pas ajouter la nouvelle politique à ce jeu de politiques, indiquez un nom de jeu de politiques lorsque vous appelez la méthode `registerPolicy`.
 
@@ -324,9 +324,9 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Modifier les politiques {#modifying-policies}
 
-Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour modifier une stratégie existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
+Vous pouvez modifier une politique existante à l’aide de l’API Java Document Security ou de l’API Web Service. Pour changer une politique existante, vous devez la récupérer, la modifier, puis la mettre à jour sur le serveur. Supposons, par exemple, que vous récupérez une politique existante et que vous étendez sa période de validité. Avant que la modification ne prenne effet, vous devez mettre la politique à jour.
 
-Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une stratégie, vous pouvez simplement mettre à jour une stratégie existante.
+Vous pouvez modifier une politique lorsque les besoins de l’entreprise changent et que la politique ne reflète plus ces besoins. Au lieu de créer une nouvelle politique, vous pouvez simplement mettre à jour une politique existante.
 
 Pour modifier les attributs de politique à l’aide d’un service web (par exemple à l’aide de classes proxy Java créées avec JAX-WS), vous devez vous assurer que la politique est enregistrée auprès du service Document Security. Vous pouvez ensuite référencer la politique existante à l’aide de la méthode `PolicySpec.getPolicyXml` et modifier les attributs de politique à l’aide des méthodes applicables. Par exemple, vous pouvez modifier la période d’ouverture hors connexion en appelant la méthode `PolicySpec.setOfflineLeasePeriod`.
 
@@ -354,13 +354,13 @@ Avant d’effectuer une opération de service Document Security par programmatio
 
 **Récupérer une politique existante**
 
-Récupérez une stratégie existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
+Récupérez une politique existante pour la modifier. Pour récupérer une politique, spécifiez le nom de la politique et le jeu de politiques auquel elle appartient. Si vous spécifiez une valeur `null` pour le nom du jeu de politiques, la politique est récupérée à partir du jeu de politiques *Mes politiques*.
 
-**Définition des attributs de la stratégie**
+**Définir les attributs de la politique**
 
-Pour modifier une politique, vous modifiez la valeur des attributs de politique. Le seul attribut de politique que vous ne pouvez pas modifier est l’attribut name. Par exemple, pour modifier la période d’ouverture hors connexion de la stratégie, vous pouvez modifier la valeur de l’attribut de période d’ouverture hors connexion de la stratégie.
+Pour modifier une politique, vous modifiez la valeur des attributs de politique. Le seul attribut de politique que vous ne pouvez pas modifier est l’attribut name. Par exemple, pour modifier la période d’ouverture hors connexion de la politique, vous pouvez modifier la valeur de l’attribut de période d’ouverture hors connexion de la politique.
 
-Lors de la modification de la période d’ouverture hors connexion d’une stratégie à l’aide d’un service Web, la variable `offlineLeasePeriod` sur le champ `PolicySpec` est ignorée. Pour mettre à jour la période d’ouverture hors connexion, modifiez l’élément `OfflineLeasePeriod` dans le document XML PDRL. Référencez ensuite le document XML PDRL mis à jour à l’aide du `PolicySpec` interface d’ `policyXML` membre de données.
+Lorsque vous modifiez la période d’ouverture hors connexion d’une politique à l’aide d’un service web, le champ `offlineLeasePeriod` de l’interface `PolicySpec` est ignoré. Pour mettre à jour la période d’ouverture hors connexion, modifiez l’élément `OfflineLeasePeriod` dans le document XML PDRL. Référencez ensuite le document XML PDRL mis à jour à l’aide de l’élément de données `policyXML` de l’interface `PolicySpec`.
 
 >[!NOTE]
 >
@@ -376,7 +376,7 @@ Modifiez une politique existante à l’aide de l’API Document Security (Java)
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -386,18 +386,18 @@ Modifiez une politique existante à l’aide de l’API Document Security (Java)
 1. Récupérez une politique existante.
 
    * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `RightsManagementClient`.
-   * Créez un `Policy` qui représente la stratégie à mettre à jour en appelant la fonction `PolicyManager` de `getPolicy` et transmission des valeurs suivantes&quot;
+   * Créez un objet `Policy` qui représente la politique à mettre à jour en appelant la méthode `getPolicy` de l’objet `PolicyManager` et en transmettant les valeurs suivantes.
 
       * Valeur de chaîne représentant le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null`, ce qui entraîne l’utilisation du jeu de politiques `MyPolicies`.
       * Valeur de chaîne représentant le nom de la politique.
 
-1. Définissez les attributs de la stratégie.
+1. Définissez les attributs de la politique.
 
-   Modifiez les attributs de la stratégie pour répondre aux besoins de votre entreprise. Par exemple, pour modifier la période d’ouverture hors connexion de la stratégie, appelez la variable `Policy` de `setOfflineLeasePeriod` .
+   Modifiez les attributs de la politique pour répondre aux besoins de votre entreprise. Par exemple, pour modifier la période d’ouverture hors connexion de la politique, appelez la méthode `setOfflineLeasePeriod` de l’objet `Policy`.
 
 1. Mettez à jour la politique.
 
-   Mettez à jour la stratégie en appelant `PolicyManager` de `updatePolicy` . Transmettez l’objet `Policy` qui représente la politique à mettre à jour.
+   Mettez à jour la politique en appelant la méthode `updatePolicy` de l’objet `PolicyManager`. Transmettez l’objet `Policy` qui représente la politique à mettre à jour.
 
 **Exemples de code**
 
@@ -431,18 +431,18 @@ Modifiez une politique existante à l’aide de l’API Document Security (Web S
 
 1. Récupérez une politique existante.
 
-   Créez un `PolicySpec` qui représente la stratégie à modifier en appelant la variable `RightsManagementServiceClient` de `getPolicy` et transmission des valeurs suivantes :
+   Créez un objet `PolicySpec` représentant la politique à modifier en appelant la méthode `getPolicy` de l’objet `RightsManagementServiceClient` et en transmettant les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null` qui entraîne l’utilisation du jeu de politiques `MyPolicies`.
    * Une valeur de chaîne qui spécifie le nom de la politique.
 
-1. Définissez les attributs de la stratégie.
+1. Définissez les attributs de la politique.
 
-   Modifiez les attributs de la stratégie pour répondre aux besoins de votre entreprise.
+   Modifiez les attributs de la politique pour répondre aux besoins de votre entreprise.
 
 1. Mettez à jour la politique.
 
-   Mettez à jour la stratégie en appelant la méthode `RightsManagementServiceClient` de `updatePolicyFromSDK` et transmission de la méthode `PolicySpec` qui représente la stratégie à mettre à jour.
+   Mettez à jour la politique en appelant la méthode `updatePolicyFromSDK` de l’objet `RightsManagementServiceClient` et en transmettant l’objet `PolicySpec` qui représente la politique à mettre à jour.
 
 **Exemples de code**
 
@@ -485,7 +485,7 @@ Supprimez une politique à l’aide de l’API Document Security (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -495,7 +495,7 @@ Supprimez une politique à l’aide de l’API Document Security (Java) :
 1. Supprimez la politique.
 
    * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `RightsManagementClient`.
-   * Supprimez la stratégie en appelant la méthode `PolicyManager` de `deletePolicy` et transmission des valeurs suivantes :
+   * Créez une politique en appelant la méthode `deletePolicy` de l’objet `PolicyManager` et en transmettant les valeurs suivantes :
 
       * Une valeur de chaîne qui spécifie le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null` qui entraîne le jeu de politiques `MyPolicies` utilisé.
       * Une valeur de chaîne qui indique le nom de la politique à supprimer.
@@ -534,7 +534,7 @@ Supprimez une politique à l’aide de l’API Document Security (service web) 
 
 1. Supprimez la politique.
 
-   Pour supprimer une stratégie, appelez la méthode `RightsManagementServiceClient` de `deletePolicy` et transmission des valeurs suivantes :
+   Créez une politique en appelant la méthode `deletePolicy` de l’objet `RightsManagementServiceClient` et en transmettant les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom du jeu de politiques auquel appartient la politique. Vous pouvez indiquer `null` qui entraîne le jeu de politiques `MyPolicies` utilisé.
    * Une valeur de chaîne qui indique le nom de la politique à supprimer.
@@ -548,7 +548,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Appliquer des politiques à des documents PDF {#applying-policies-to-pdf-documents}
 
-Vous pouvez appliquer une stratégie à un document PDF pour protéger le document. L’application d’une politique à un document PDF permet de restreindre l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
+Vous pouvez appliquer une politique à un document PDF afin de le protéger. L’application d’une politique à un document PDF permet de restreindre l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
 
 Lorsque le document est ouvert, vous pouvez également restreindre l’accès aux fonctionnalités d’Acrobat et d’Adobe Reader, notamment la possibilité d’imprimer et de copier du texte, d’y apporter des modifications et d’y ajouter des signatures et des commentaires. En outre, vous pouvez révoquer un document PDF protégé par une politique lorsque vous ne souhaitez plus que les utilisateurs accèdent au document.
 
@@ -578,7 +578,7 @@ Avant d’effectuer par programmation une opération du service Document Securi
 
 **Récupérer un document PDF**
 
-Vous pouvez récupérer un document de PDF pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document PDF, l’accès au document est restreint aux utilisateurs. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Vous pouvez récupérer un document PDF afin d’y appliquer une politique. Une fois que vous avez appliqué une politique au document PDF, l’accès au document est restreint aux utilisateurs. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document PDF**
 
@@ -602,7 +602,7 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -617,7 +617,7 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
 1. Appliquez une politique existante au document PDF.
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
-   * Appliquez une stratégie au document du PDF en appelant la méthode `DocumentManager` de `protectDocument` et transmission des valeurs suivantes :
+   * Appliquez une politique au document PDF en appelant la méthode `protectDocument` de l’objet `DocumentManager` et en transmettant les valeurs suivantes :
 
       * L’objet `com.adobe.idp.Document` contenant le document PDF auquel la politique est appliquée.
       * Une valeur de chaîne indiquant le nom du document.
@@ -631,9 +631,9 @@ Appliquez une politique à un document PDF à l’aide de l’API Document Secu
 
 1. Enregistrez le formulaire PDF.
 
-   * Appeler la variable `RMSecureDocumentResult` de `getProtectedDoc` pour obtenir le document de PDF protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getProtectedDoc` de l’objet `RMSecureDocumentResult` pour obtenir le document PDF protégé par une politique. Cette méthode renvoie un objet `com.adobe.idp.Document`.
    * Créez un objet `java.io.File` et s’assure que l’extension du fichier est PDF.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour copier le contenu de la méthode `Document` dans le fichier (assurez-vous d’utiliser la variable `Document` qui a été renvoyé par l’objet `getProtectedDoc` ).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` afin de copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `getProtectedDoc`).
 
 **Exemples de code**
 
@@ -678,13 +678,13 @@ Pour appliquer une politique à un document PDF à l’aide de l’API Document�
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF auquel une politique est appliquée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Appliquez une politique existante au document PDF.
 
-   Appliquez une stratégie au document du PDF en appelant la méthode `RightsManagementServiceClient` de `protectDocument` et transmission des valeurs suivantes :
+   Appliquez une politique au document PDF en appelant la méthode `protectDocument` de l’objet `RightsManagementServiceClient` et en transmettant les valeurs suivantes :
 
    * L’objet `BLOB` contenant le document PDF auquel la politique est appliquée.
    * Une valeur de chaîne indiquant le nom du document.
@@ -715,7 +715,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Supprimer des politiques des documents PDF {#removing-policies-from-pdf-documents}
 
-Vous pouvez supprimer une stratégie d’un document protégé par une stratégie pour supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
+Vous pouvez supprimer une politique d’un document protégé par une politique afin de supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
 
 >[!NOTE]
 >
@@ -741,11 +741,11 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer un document PDF protégé par une politique**
 
-Vous pouvez récupérer un document de PDF protégé par une stratégie pour supprimer une stratégie. Si vous tentez de supprimer une politique d’un document PDF qui n’est pas protégé par une politique, une exception est générée.
+Pour supprimer une politique, vous pouvez récupérer un document PDF protégé par une politique. Si vous tentez de supprimer une politique d’un document PDF qui n’est pas protégé par une politique, une exception est générée.
 
 **Supprimer la politique du document PDF**
 
-Vous pouvez supprimer une politique d’un document PDF protégé par une politique à condition qu’un administrateur soit indiqué dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour protéger un document doit contenir la variable `SWITCH_POLICY` autorisation de supprimer une stratégie d’un document de PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une politique d’un document PDF protégé par une politique à condition qu’un administrateur soit indiqué dans les paramètres de connexion. Dans le cas contraire, la politique utilisée pour protéger un document doit contenir l’autorisation `SWITCH_POLICY` permettant de supprimer une politique d’un document PDF. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer un document PDF non sécurisé**
 
@@ -765,7 +765,7 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -780,12 +780,12 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 1. Supprimez la politique du document PDF.
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
-   * Supprimez une stratégie du document du PDF en appelant la méthode `DocumentManager` de `removeSecurity` et transmission de la méthode `com.adobe.idp.Document` contenant le document de PDF protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` contenant un document PDF non sécurisé.
+   * Supprimez une politique du document PDF en appelant la méthode `removeSecurity` de l’objet `DocumentManager` et en transmettant lʼobjet `com.adobe.idp.Document` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `com.adobe.idp.Document` contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF non sécurisé.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est PDF.
-   * Appeler la variable `Document` de `copyToFile` pour copier le contenu de la méthode `Document` dans le fichier (assurez-vous d’utiliser la variable `Document` qui a été renvoyé par l’objet `removeSecurity` ).
+   * Appelez la méthode `copyToFile` de l’objet `Document` afin de copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `removeSecurity`).
 
 **Exemples de code**
 
@@ -829,7 +829,7 @@ Pour supprimer une politique d’un document PDF protégé par une politique à 
 
 1. Supprimez la politique du document PDF.
 
-   Supprimez la stratégie du document du PDF en appelant la méthode `DocumentSecurityServiceClient` de `removePolicySecurity` et transmission de la méthode `BLOB` contenant le document de PDF protégé par une stratégie. Cette méthode renvoie un objet `BLOB` contenant un document PDF non sécurisé.
+   Supprimez la politique du document PDF en appelant la méthode `removePolicySecurity` de l’objet `DocumentSecurityServiceClient` et en transmettant l’objet `BLOB` qui contient le document PDF protégé par la politique. Cette méthode renvoie un objet `BLOB` contenant un document PDF non sécurisé.
 
 1. Enregistrez le document PDF non sécurisé.
 
@@ -879,9 +879,9 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document PDF protégé par une politique**
 
-Récupérez un document de PDF protégé par une stratégie pour le révoquer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
+Récupérez un document PDF protégé par une politique pour le révoquer. Vous ne pouvez pas révoquer un document qui a déjà été révoqué ou qui n’est pas un document protégé par une politique.
 
-Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devez récupérer le document du PDF pour obtenir la valeur de l’identifiant de licence.
+Si vous connaissez la valeur de l’identifiant de licence du document PDF protégé par une politique, il n’est pas nécessaire de récupérer ce dernier. Cependant, dans la plupart des cas, vous devrez récupérer le document PDF pour obtenir la valeur de l’identifiant de licence.
 
 **Révoquer le document protégé par une politique**
 
@@ -907,7 +907,7 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créer un objet API client Document Security
 
@@ -922,11 +922,11 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 1. Révoquer le document protégé par une politique
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
-   * Récupérez la valeur de l’identifiant de licence du document protégé par une stratégie en appelant la fonction `DocumentManager` de `getLicenseId` . Transmettez l’objet `com.adobe.idp.Document` représentant le document protégé par une politique. Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de licence.
+   * Récupérez la valeur de l’identifiant de licence du document protégé par une politique en appelant la méthode `getLicenseId` de l’objet `DocumentManager`. Transmettez l’objet `com.adobe.idp.Document` représentant le document protégé par une politique. Cette méthode renvoie une valeur string qui représente la valeur de l’identifiant de licence.
    * Créez un objet `LicenseManager` en appelant la méthode `getLicenseManager` de l’objet `DocumentSecurityClient`.
-   * Révoquez le document protégé par une stratégie en appelant la fonction `LicenseManager` de `revokeLicense` et transmission des valeurs suivantes :
+   * Révoquez le document protégé par une politique en appelant la méthode `revokeLicense` de l’objet `LicenseManager` et en transmettant les valeurs suivantes :
 
-      * Une valeur string qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (spécifiez la valeur renvoyée par la propriété `DocumentManager` de `getLicenseId` ).
+      * Valeur de chaîne spécifiant la valeur de l’identifiant de licence du document protégé par une politique (spécifiez la valeur renvoyée de la méthode `getLicenseId` de l’objet `DocumentManager`).
       * Membre de données statique de l’interface `License` spécifiant le motif de révocation du document. Par exemple, vous pouvez spécifier `License.DOCUMENT_REVISED`.
       * Valeur `java.net.URL` spécifiant l’emplacement vers lequel se trouve un document modifié. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
 
@@ -972,10 +972,10 @@ Révoquez l’accès à un document PDF protégé par une politique à l’aide 
 
 1. Révoquer le document protégé par une politique
 
-   * Récupérez la valeur de l’identifiant de licence du document protégé par une stratégie en appelant la fonction `DocumentSecurityServiceClient` de `getLicenseID` et transmission de la méthode `BLOB` qui représente le document protégé par une stratégie. Cette méthode renvoie une valeur de chaîne représentant l’identifiant de licence.
-   * Révoquez le document protégé par une stratégie en appelant la fonction `DocumentSecurityServiceClient` de `revokeLicense` et transmission des valeurs suivantes :
+   * Récupérez la valeur de l’identifiant de licence du document protégé par une politique en appelant la méthode `getLicenseID` de l’objet `DocumentSecurityServiceClient` et en transmettant l’objet `BLOB` représentant le document protégé par une politique. Cette méthode renvoie une valeur de chaîne représentant l’identifiant de licence.
+   * Révoquez le document protégé par une politique en appelant la méthode `revokeLicense` de l’objet `DocumentSecurityServiceClient` et en transmettant les valeurs suivantes :
 
-      * Une valeur string qui spécifie la valeur d’identifiant de licence du document protégé par une stratégie (spécifiez la valeur renvoyée par la propriété `DocumentSecurityServiceService` de `getLicenseId` ).
+      * Valeur de chaîne qui spécifie la valeur d’identifiant de licence du document protégé par une politique (spécifiez la valeur renvoyée par la méthode `getLicenseId` de l’objet `DocumentSecurityServiceService`).
       * Membre de données statique de l’énumération `Reason` indiquant le motif de révocation du document. Par exemple, vous pouvez spécifier `Reason.DOCUMENT_REVISED`.
       * Valeur `string` indiquant l’emplacement URL vers lequel se trouve un document modifié. Si vous ne souhaitez pas rediriger un utilisateur vers une autre URL, vous pouvez transmettre `null`.
 
@@ -1021,7 +1021,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer l’identifiant de licence du document PDF révoqué**
 
-Récupérez l’identifiant de licence du document de PDF révoqué pour rétablir un document de PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
+Récupérez l’identifiant de licence du document PDF révoqué pour restaurer un document PDF révoqué. Une fois que vous avez obtenu la valeur d’identifiant de licence, vous pouvez restaurer un document révoqué. Si vous tentez de restaurer un document qui n’est pas révoqué, une exception est générée.
 
 **Rétablir l’accès au document PDF révoqué**
 
@@ -1043,7 +1043,7 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -1055,12 +1055,12 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
    * Créez un objet `java.io.FileInputStream` qui représente le document PDF révoqué en utilisant son constructeur et en transmettant une valeur string spécifiant l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
-   * Récupérez la valeur de l’identifiant de licence du document révoqué en appelant la fonction `DocumentManager` de `getLicenseId` et transmission de la méthode `com.adobe.idp.Document` qui représente le document révoqué. Cette méthode renvoie une valeur string qui représente l’identifiant de licence.
+   * Récupérez la valeur de l’identifiant de licence du document révoqué en appelant la méthode `getLicenseId` de l’objet `DocumentManager` et en transmettant l’objet `com.adobe.idp.Document` qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne représentant l’identifiant de licence.
 
 1. Rétablissez l’accès au document PDF révoqué.
 
    * Créez un objet `LicenseManager` en appelant la méthode `getLicenseManager` de l’objet `DocumentSecurityClient`.
-   * Rétablissez l’accès au document du PDF révoqué en appelant la méthode `LicenseManager` de `unrevokeLicense` et transmission de la valeur d’identifiant de licence du document révoqué.
+   * Rétablissez l’accès au document PDF révoqué en appelant la méthode `unrevokeLicense` de l’objet `LicenseManager` et en transmettant la valeur d’identifiant de licence du document révoqué.
 
 **Exemples de code**
 
@@ -1104,8 +1104,8 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
 1. Rétablissez l’accès au document PDF révoqué.
 
-   * Récupérez la valeur de l’identifiant de licence du document révoqué en appelant la fonction `DocumentSecurityServiceClient` de `getLicenseID` et transmission de la méthode `BLOB` qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne représentant l’identifiant de licence.
-   * Rétablissez l’accès au document du PDF révoqué en appelant la méthode `DocumentSecurityServiceClient` de `unrevokeLicense` et transmission d’une valeur string qui spécifie la valeur d’identifiant de licence du document de PDF révoqué (transmettez la valeur de retour de la fonction `DocumentSecurityServiceClient` de `getLicenseId` ).
+   * Récupérez la valeur de l’identifiant de licence du document révoqué en appelant la méthode `getLicenseID` de l’objet `DocumentSecurityServiceClient` et en transmettant l’objet `BLOB` qui représente le document révoqué. Cette méthode renvoie une valeur de chaîne représentant l’identifiant de licence.
+   * Rétablissez l’accès au document PDF révoqué en appelant la méthode `unrevokeLicense` de l’objet `DocumentSecurityServiceClient` et en transmettant une valeur de chaîne qui spécifie la valeur d’identifiant de licence du document PDF révoqué (transmettez la valeur de retour de la méthode `getLicenseId` de l’objet `DocumentSecurityServiceClient`).
 
 **Exemples de code**
 
@@ -1175,7 +1175,7 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java. Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java. Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Créez un objet API client Document Security.
 
@@ -1190,11 +1190,11 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 1. Inspectez le document.
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
-   * Inspect du document protégé par une stratégie en appelant la méthode `LicenseManager` de `inspectDocument` . Transmettez l’objet `com.adobe.idp.Document` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une politique.
+   * Inspectez le document protégé par une politique en appelant la méthode `inspectDocument` de l’objet `LicenseManager`. Transmettez l’objet `com.adobe.idp.Document` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une politique.
 
 1. Obtenez des informations sur le document protégé par une politique.
 
-   Pour obtenir des informations sur le document protégé par une politique, appelez la méthode appropriée appartenant à l’objet `RMInspectResult`. Par exemple, pour récupérer le nom de la stratégie, appelez la méthode `RMInspectResult` de `getPolicyName` .
+   Pour obtenir des informations sur le document protégé par une politique, appelez la méthode appropriée appartenant à l’objet `RMInspectResult`. Par exemple, pour récupérer le nom de la politique, appelez la méthode `getPolicyName` de l’objet `RMInspectResult`.
 
 **Exemples de code**
 
@@ -1238,11 +1238,11 @@ Pour inspecter un document PDF protégé par une politique à l’aide de l’AP
 
 1. Inspectez le document.
 
-   Inspect du document protégé par une stratégie en appelant la méthode `RightsManagementServiceClient` de `inspectDocument` . Transmettez l’objet `BLOB` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une politique.
+   Inspectez le document protégé par une politique en appelant la méthode `inspectDocument` de l’objet `RightsManagementServiceClient`. Transmettez l’objet `BLOB` contenant le document PDF protégé par une politique. Cette méthode renvoie un objet `RMInspectResult` contenant des informations sur le document protégé par une politique.
 
 1. Obtenez des informations sur le document protégé par une politique.
 
-   Pour obtenir des informations sur le document protégé par une politique, obtenez la valeur du champ approprié qui appartient à l’objet `RMInspectResult`. Par exemple, pour récupérer le nom de la stratégie, obtenez la valeur de la variable `RMInspectResult` de `policyName` champ .
+   Pour obtenir des informations sur le document protégé par une politique, obtenez la valeur du champ approprié qui appartient à l’objet `RMInspectResult`. Par exemple, pour récupérer le nom de la politique, obtenez la valeur du champ `policyName` de l’objet `RMInspectResult`.
 
 **Exemples de code**
 
@@ -1259,7 +1259,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Créer des filigranes {#creating-watermarks}
 
-Les filigranes permettent d’assurer la sécurité d’un document en lʼidentifiant de manière unique et en contrôlant la violation des droits d’auteur. Par exemple, vous pouvez créer et placer un filigrane qui indique Confidentiel sur toutes les pages d’un document. Une fois un filigrane créé, vous pouvez l’inclure dans une politique. En d’autres termes, vous pouvez définir l’attribut de filigrane de la stratégie avec le filigrane nouvellement créé. Une fois qu’une politique contenant un filigrane est appliquée à un document, le filigrane apparaît dans le document protégé par la politique.
+Les filigranes permettent d’assurer la sécurité d’un document en lʼidentifiant de manière unique et en contrôlant la violation des droits d’auteur. Par exemple, vous pouvez créer et placer un filigrane qui indique Confidentiel sur toutes les pages d’un document. Une fois un filigrane créé, vous pouvez l’inclure dans une politique. En d’autres termes, vous pouvez définir l’attribut de filigrane de la politique avec le nouveau filigrane. Une fois qu’une politique contenant un filigrane est appliquée à un document, le filigrane apparaît dans le document protégé par la politique.
 
 >[!NOTE]
 >
@@ -1288,7 +1288,7 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Définir les attributs du filigrane**
 
-Pour créer un filigrane, vous devez définir des attributs de filigrane. L’attribut name doit toujours être défini. Outre l’attribut name, vous devez définir au moins l’un des attributs suivants :
+Pour créer un filigrane, vous devez définir les attributs du filigrane. L’attribut name doit toujours être défini. Outre l’attribut name, vous devez définir au moins l’un des attributs suivants :
 
 * Texte personnalisé
 * DateIncluded
@@ -1329,12 +1329,12 @@ Le tableau suivant répertorie les paires clé-valeur requises lors de la créat
   <tr>
    <td><p><code>WaterBackCmd:OPACITY</code></p></td>
    <td><p>Indique l’opacité du filigrane. La valeur par défaut est 0,5 si elle n’est pas spécifiée.</p></td>
-   <td><p>Valeur comprise entre 0,0 et 1,0.</p></td>
+   <td><p>Valeur comprise entre 0,0 et 1,0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:ROTATION</code></p></td>
    <td><p>Indique la rotation du filigrane. La valeur par défaut est 0 degré.</p></td>
-   <td><p>Valeur comprise entre 0 et 359.</p></td>
+   <td><p>Valeur comprise entre 0 et 359.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
@@ -1396,7 +1396,7 @@ Créer un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Inclure les fichiers JAR client, tels que `adobe-rightsmanagement-client.jar`, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels que `adobe-rightsmanagement-client.jar`, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -1405,16 +1405,16 @@ Créer un filigrane à l’aide de l’API Document Security (Java) :
 
 1. Définir les attributs du filigrane
 
-   * Créez un `Watermark` en appelant la méthode `InfomodelObjectFactory` statique de l’objet `createWatermark` . Cette méthode renvoie un objet `Watermark`.
-   * Définissez l’attribut name du filigrane en appelant la variable `Watermark` de `setName` et transmission d’une valeur string qui spécifie le nom de la stratégie.
-   * Définissez l’attribut d’arrière-plan du filigrane en appelant la fonction `Watermark` de `setBackground` méthode et transmission `true`. En définissant cet attribut, le filigrane apparaît à l’arrière-plan du document.
-   * Définissez l’attribut de texte personnalisé du filigrane en appelant la fonction `Watermark` de `setCustomText` et transmission d’une valeur string qui représente le texte du filigrane.
-   * Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 indique que le filigrane est complètement transparent.
+   * Créez un objet `Watermark` en appelant la méthode statique `createWatermark` de l’objet `InfomodelObjectFactory`. Cette méthode renvoie un objet `Watermark`.
+   * Définissez l’attribut du nom du filigrane en appelant la méthode `setName` de l’objet `Watermark` et en transmettant une valeur de chaîne qui spécifie le nom de la politique.
+   * Définissez l’attribut d’arrière-plan du filigrane en appelant la méthode `setBackground` de l’objet `Watermark` et en transmettant `true`. En définissant cet attribut, le filigrane apparaît à l’arrière-plan du document.
+   * Définissez l’attribut de texte personnalisé du filigrane en appelant la méthode `setCustomText` de l’objet `Watermark` et en transmettant une valeur de chaîne représentant le texte du filigrane.
+   * Définissez l’attribut d’opacité du filigrane en appelant la méthode `setOpacity` de l’objet `Watermark` et en transmettant une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 signifie quʼil est complètement transparent.
 
 1. Enregistrez le filigrane.
 
-   * Créez un `WatermarkManager` en appelant la méthode `RightsManagementClient` de `getWatermarkManager` . Cette méthode renvoie un objet `WatermarkManager`.
-   * Enregistrez le filigrane en appelant la méthode `WatermarkManager` de `registerWatermark` et transmission de la méthode `Watermark` qui représente le filigrane à enregistrer. Cette méthode renvoie une valeur string qui représente la valeur d’identification du filigrane.
+   * Créez un objet `WatermarkManager` en appelant la méthode `getWatermarkManager` de l’objet `RightsManagementClient`. Cette méthode renvoie un objet `WatermarkManager`.
+   * Enregistrez le filigrane en appelant la méthode `registerWatermark` de l’objet `WatermarkManager` et en transmettant l’objet `Watermark` qui représente le filigrane à enregistrer. Cette méthode renvoie une valeur de chaîne qui représente la valeur d’identification du filigrane.
 
 **Exemples de code**
 
@@ -1451,17 +1451,17 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
 1. Définissez les attributs du filigrane.
 
    * Créez un objet `WatermarkSpec` en appelant le constructeur `WatermarkSpec`.
-   * Définissez le nom du filigrane en attribuant une valeur de chaîne à la variable `WatermarkSpec` de `name` membre de données.
-   * Définition du filigrane `id` en attribuant une valeur de chaîne à la variable `WatermarkSpec` de `id` membre de données.
+   * Définissez le nom du filigrane en attribuant une valeur de chaîne au membre de données `name` de l’objet `WatermarkSpec`.
+   * Définissez l’attribut `id` du filigrane en attribuant une valeur de chaîne au membre de données `id` de l’objet `WatermarkSpec`.
    * Pour chaque propriété de filigrane à définir, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item` distinct.
-   * Définissez la valeur de clé en attribuant une valeur à la variable `MyMapOf_xsd_string_To_xsd_anyType_Item` de `key` membre de données (par exemple, `WaterBackCmd:OPACITY)`.
-   * Définissez la valeur en attribuant une valeur à la variable `MyMapOf_xsd_string_To_xsd_anyType_Item` de `value` membre de données (par exemple, `.25`).
-   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque `MyMapOf_xsd_string_To_xsd_anyType_Item` , appelez l’objet `MyArrayOf_xsd_anyType` de `Add` . Transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Attribuez le `MyArrayOf_xsd_anyType` vers l’objet `WatermarkSpec` de `values` membre de données.
+   * Définissez la valeur clé en attribuant une valeur au membre de données `key` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple `WaterBackCmd:OPACITY)`).
+   * Définissez la valeur en attribuant une valeur au membre de données `value` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple `.25`).
+   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque objet `MyMapOf_xsd_string_To_xsd_anyType_Item`, appelez la méthode `Add` de l’objet `MyArrayOf_xsd_anyType`. Transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Attribuez l’objet `MyArrayOf_xsd_anyType` au membre de données `values` de l’objet `WatermarkSpec`.
 
 1. Enregistrez le filigrane.
 
-   Enregistrez le filigrane en appelant la méthode `RightsManagementServiceClient` de `registerWatermark` et transmission de la méthode `WatermarkSpec` qui représente le filigrane à enregistrer.
+   Enregistrez le filigrane en appelant la méthode `registerWatermark` de l’objet `RightsManagementServiceClient` et en transmettant l’objet `WatermarkSpec` représentant le filigrane à enregistrer.
 
 **Exemples de code**
 
@@ -1478,7 +1478,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Modifier des filigranes {#modifying-watermarks}
 
-Vous pouvez modifier un filigrane existant à l’aide de l’API Java Document Security ou de l’API de service Web. Pour modifier un filigrane existant, vous devez le récupérer, modifier ses attributs, puis le mettre à jour sur le serveur. Supposons, par exemple, que vous récupériez un filigrane et que vous modifiiez son attribut d’opacité. Avant que la modification ne prenne effet, vous devez mettre à jour le filigrane.
+Vous pouvez modifier un filigrane existant à l’aide de l’API Java Document Security ou de l’API de service Web. Pour changer un filigrane existant, vous devez le récupérer, modifier ses attributs, puis le mettre à jour sur le serveur. Supposons, par exemple, que vous récupériez un filigrane et que vous modifiiez son attribut d’opacité. Avant que la modification ne prenne effet, vous devez mettre à jour le filigrane.
 
 Lorsque vous modifiez un filigrane, la modification a une incidence sur les documents futurs auxquels le filigrane est appliqué. En d’autres termes, les documents PDF existants contenant le filigrane ne sont pas affectés.
 
@@ -1514,7 +1514,7 @@ Pour modifier un filigrane, vous devez récupérer un filigrane existant. Vous p
 
 **Définir les attributs du filigrane**
 
-Pour modifier un filigrane existant, modifiez la valeur d’un ou de plusieurs attributs du filigrane. Lors de la mise à jour par programmation d’un filigrane à l’aide d’un service Web, vous devez définir tous les attributs qui ont été définis à l’origine, même si la valeur ne change pas. Par exemple, supposons que les attributs de filigrane suivants soient définis : `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` et `WaterBackCmd:SRCTEXT`. Bien que le seul attribut que vous souhaitez modifier soit `WaterBackCmd:OPACITY`, vous devez également définir les autres valeurs.
+Pour modifier un filigrane existant, modifiez la valeur d’un ou de plusieurs attributs du filigrane. Lors de la mise à jour par programmation d’un filigrane à l’aide d’un service web, vous devez définir tous les attributs qui ont été définis à l’origine, même si la valeur ne change pas. Par exemple, supposons que les attributs de filigrane suivants soient définis : `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` et `WaterBackCmd:SRCTEXT`. Bien que le seul attribut que vous souhaitez modifier soit `WaterBackCmd:OPACITY`, vous devez également définir les autres valeurs.
 
 >[!NOTE]
 >
@@ -1542,7 +1542,7 @@ Modifiez un filigrane en utilisant l’API Document Security (Java) :
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -1551,11 +1551,11 @@ Modifiez un filigrane en utilisant l’API Document Security (Java) :
 
 1. Récupérez le filigrane à modifier.
 
-   Créez un `WatermarkManager` en appelant la méthode `DocumentSecurityClient` de `getWatermarkManager` et transmettez une valeur string qui spécifie le nom du filigrane. Cette méthode renvoie un objet `Watermark` qui représente le filigrane à modifier.
+   Créez un objet `WatermarkManager` en appelant la méthode `getWatermarkManager` de l’objet `DocumentSecurityClient` et en transmettant une valeur de chaîne qui spécifie le nom du filigrane. Cette méthode renvoie un objet `Watermark` qui représente le filigrane à modifier.
 
 1. Définissez les attributs du filigrane.
 
-   Définissez l’attribut d’opacité du filigrane en appelant la variable `Watermark` de `setOpacity` et transmettre une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 indique que le filigrane est complètement transparent.
+   Définissez l’attribut d’opacité du filigrane en appelant la méthode `setOpacity` de l’objet `Watermark` et en transmettant une valeur entière qui spécifie le niveau d’opacité. Une valeur de 100 indique que le filigrane est complètement opaque et une valeur de 0 signifie quʼil est complètement transparent.
 
    >[!NOTE]
    >
@@ -1563,7 +1563,7 @@ Modifiez un filigrane en utilisant l’API Document Security (Java) :
 
 1. Mettez à jour le filigrane.
 
-   * Mettez à jour le filigrane en appelant la méthode `WatermarkManager` de `updateWatermark` et transmettez la méthode `Watermark` dont l’attribut a été modifié.
+   * Mettez à jour le filigrane en appelant la méthode `updateWatermark` de l’objet `WatermarkManager` et en transmettant l’objet `Watermark` dont l’attribut a été modifié.
 
 **Exemples de code**
 
@@ -1597,19 +1597,19 @@ Modifiez un filigrane à l’aide de l’API de Document Security (Web Service)�
 
 1. Récupérez le filigrane à modifier.
 
-   Récupérez le filigrane à modifier en appelant la fonction `DocumentSecurityServiceClient` de `getWatermarkByName` . Transmettez une valeur string qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
+   Récupérez le filigrane à modifier en appelant la méthode `getWatermarkByName` de l’objet `DocumentSecurityServiceClient`. Transmettez une valeur string qui spécifie le nom du filigrane. Cette méthode renvoie un objet `WatermarkSpec` qui représente le filigrane à modifier.
 
 1. Définissez les attributs du filigrane.
 
    * Pour chaque propriété de filigrane à mettre à jour, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item` à part.
-   * Définissez la valeur de clé en attribuant une valeur à la variable `MyMapOf_xsd_string_To_xsd_anyType_Item` de `key` membre de données (par exemple, `WaterBackCmd:OPACITY)`.
-   * Définissez la valeur en attribuant une valeur à la variable `MyMapOf_xsd_string_To_xsd_anyType_Item` de `value` membre de données (par exemple, `.50`).
-   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque `MyMapOf_xsd_string_To_xsd_anyType_Item` , appelez l’objet `MyArrayOf_xsd_anyType` de `Add` . Transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
-   * Attribuez le `MyArrayOf_xsd_anyType` vers l’objet `WatermarkSpec` de `values` membre de données.
+   * Définissez la valeur clé en attribuant une valeur au membre de données `key` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple `WaterBackCmd:OPACITY)`).
+   * Définissez la valeur en attribuant une valeur au membre de données `value` de l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item` (par exemple `.50`).
+   * Créez un objet `MyArrayOf_xsd_anyType`. Pour chaque objet `MyMapOf_xsd_string_To_xsd_anyType_Item`, appelez la méthode `Add` de l’objet `MyArrayOf_xsd_anyType`. Transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Attribuez l’objet `MyArrayOf_xsd_anyType` au membre de données `values` de l’objet `WatermarkSpec`.
 
 1. Mettez à jour le filigrane.
 
-   Mettez à jour le filigrane en appelant la méthode `DocumentSecurityServiceClient` de `updateWatermark` et transmission de la méthode `WatermarkSpec` qui représente le filigrane à modifier.
+   Mettez à jour le filigrane en appelant la méthode `updateWatermark` de l’objet `DocumentSecurityServiceClient` et en transmettant l’objet `WatermarkSpec` qui représente le filigrane à modifier.
 
 **Exemples de code**
 
@@ -1623,9 +1623,9 @@ Le service Rights Management effectue le suivi d’actions spécifiques au fur 
 
 Les événements appartiennent à l’une des catégories suivantes :
 
-* Les événements d’administrateur sont des actions liées à un administrateur, comme la création d’un compte administrateur.
+* Les événements d’administration sont des actions liées à un administrateur ou une administratrice, comme la création d’un compte administrateur.
 * Les événements de document sont des actions liées à un document, telles que la fermeture d’un document protégé par une politique.
-* Les événements de stratégie sont des actions liées à une stratégie, comme la création d’une stratégie.
+* Les événements de politique sont des actions liées à une politique, comme la création d’une politique.
 * Les événements de service sont des actions liées au service Rights Management, telles que la synchronisation avec le répertoire des utilisateurs.
 
 Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java Rights Management ou de l’API de service web. En recherchant des événements, vous pouvez effectuer des tâches, comme la création dʼun fichier journal de certains événements.
@@ -1653,7 +1653,7 @@ Avant de pouvoir effectuer par programmation une opération de service Rights M
 
 **Définir les événements à rechercher**
 
-Indiquez l’événement à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
+Définissez les événements à rechercher. Vous pouvez, par exemple, rechercher l’événement de création de politique qui se produit lors de la création d’une politique.
 
 **Rechercher l’événement**
 
@@ -1671,7 +1671,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créer un objet API client Rights Management
 
@@ -1679,9 +1679,9 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 1. Définir les événements à rechercher
 
-   * Créez un `EventManager` en appelant la méthode `DocumentSecurityClient` de `getEventManager` . Cette méthode renvoie un objet `EventManager`.
+   * Créez un objet `EventManager` en appelant la méthode `getEventManager` de l’objet `DocumentSecurityClient`. Cette méthode renvoie un objet `EventManager`.
    * Créez un objet `EventSearchFilter` en appelant son constructeur.
-   * Indiquez l’événement pour lequel effectuer une recherche en appelant la variable `EventSearchFilter` de `setEventCode` et transmission d’un membre de données statique qui appartient à la méthode `EventManager` qui représente l’événement pour lequel effectuer une recherche. Par exemple, pour rechercher l’événement de création de politique, transmettez `EventManager.POLICY_CREATE_EVENT`.
+   * Indiquez l’événement pour lequel effectuer une recherche en appelant la méthode `setEventCode` de l’objet `EventSearchFilter` et en transmettant un membre de données statique qui appartient à la classe `EventManager` représentant l’événement à rechercher. Par exemple, pour rechercher l’événement de création de politique, transmettez `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
@@ -1689,7 +1689,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 1. Rechercher l’événement
 
-   Recherchez l’événement en appelant la fonction `EventManager` de `searchForEvents` et transmission de la méthode `EventSearchFilter` qui définit les critères de recherche d’événement. Cette méthode renvoie un tableau d’objets `Event`.
+   Recherchez l’événement en appelant la méthode `searchForEvents` de l’objet `EventManager` et en transmettant l’objet `EventSearchFilter` qui définit les critères de recherche d’événement. Cette méthode renvoie un tableau d’objets `Event`.
 
 **Exemples de code**
 
@@ -1726,11 +1726,11 @@ Pour rechercher des événements à l’aide de l’API Rights Management (servi
 1. Définir les événements à rechercher
 
    * Créez un objet `EventSpec` en utilisant son constructeur.
-   * Spécifiez le début de la période au cours de laquelle l’événement s’est produit en définissant la variable `EventSpec` de `firstTime.date` membre de données avec `DataTime` qui représente le début de la période au cours de laquelle l’événement s’est produit.
-   * Attribuer la valeur `true` à la fonction `EventSpec` de `firstTime.dateSpecified` membre de données.
-   * Indiquez la fin de la période au cours de laquelle l’événement s’est produit en définissant la variable `EventSpec` de `lastTime.date` membre de données avec `DataTime` qui représente la fin de la période au cours de laquelle l’événement s’est produit.
-   * Attribuer la valeur `true` à la fonction `EventSpec` de `lastTime.dateSpecified` membre de données.
-   * Définissez l’événement à rechercher en attribuant une valeur de chaîne à la variable `EventSpec` de `eventCode` membre de données. Le tableau suivant répertorie les valeurs numériques que vous pouvez attribuer à cette propriété :
+   * Spécifiez le début de la période au cours de laquelle l’événement s’est produit en définissant le membre de données `firstTime.date` de l’objet `EventSpec` avec l’instance `DataTime` représentant le début de la période au cours de laquelle l’événement s’est produit. 
+   * Attribuez la valeur `true` au membre de données `firstTime.dateSpecified` de l’objet `EventSpec`.
+   * Indiquez la fin de la période au cours de laquelle l’événement s’est produit en définissant le membre de données `lastTime.date` de l’objet `EventSpec` avec l’instance `DataTime` qui représente la fin de la période au cours de laquelle l’événement s’est produit.
+   * Attribuez la valeur `true` au membre de données `lastTime.dateSpecified` de l’objet `EventSpec`.
+   * Définissez l’événement à rechercher en attribuant une valeur de chaîne au membre de données `eventCode` de l’objet `EventSpec`. Le tableau suivant répertorie les valeurs numériques que vous pouvez attribuer à cette propriété :
 
    <table>
     <thead>
@@ -1933,7 +1933,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (servi
 
 1. Rechercher l’événement
 
-   Recherchez l’événement en appelant la fonction `DocumentSecurityServiceClient` de `searchForEvents` et transmission de la méthode `EventSpec` qui représente l’événement pour lequel effectuer une recherche et le nombre maximal de résultats. Cette méthode renvoie une collection `MyArrayOf_xsd_anyType` où chaque élément est une instance `AuditSpec`. En utilisant une instance `AuditSpec`, vous pouvez obtenir des informations sur l’événement, telles que l’heure à laquelle il s’est produit. L’instance `AuditSpec` contient un membre de données `timestamp` qui spécifie ces informations.
+   Recherchez l’événement en appelant la méthode `searchForEvents` de l’objet `DocumentSecurityServiceClient` et en transmettant l’objet `EventSpec` représentant l’événement pour lequel effectuer une recherche et le nombre maximal de résultats. Cette méthode renvoie une collection `MyArrayOf_xsd_anyType` où chaque élément est une instance `AuditSpec`. En utilisant une instance `AuditSpec`, vous pouvez obtenir des informations sur l’événement, telles que l’heure à laquelle il s’est produit. L’instance `AuditSpec` contient un membre de données `timestamp` qui spécifie ces informations.
 
 **Exemples de code**
 
@@ -1950,7 +1950,7 @@ Pour obtenir des exemples de code à l’aide du service Rights Management, repo
 
 ## Appliquer des politiques à des documents Word {#applying-policies-to-word-documents}
 
-Outre les documents PDF, le service Rights Management prend en charge d’autres formats de document, tels que les documents Microsoft Word (fichier DOC) et d’autres formats de fichier Microsoft Office. Vous pouvez, par exemple, appliquer une stratégie à un document Word pour le protéger. En appliquant une politique à un document Word, vous restreignez l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
+Outre les documents PDF, le service Rights Management prend en charge d’autres formats de document, tels que les documents Microsoft Word (fichier DOC) et d’autres formats de fichier Microsoft Office. Par exemple, vous pouvez appliquer une politique à un document Word afin de le protéger. En appliquant une politique à un document Word, vous restreignez l’accès au document. Vous ne pouvez pas appliquer de politique à un document si celui-ci est déjà protégé par une autre politique.
 
 Vous pouvez surveiller l’utilisation d’un document Word protégé par une politique après sa distribution. En d’autres termes, vous pouvez voir comment le document est utilisé et qui l’utilise. Par exemple, vous pouvez savoir quand un utilisateur a ouvert le document.
 
@@ -1978,7 +1978,7 @@ Avant d’effectuer une opération de service Document Security par programme, v
 
 **Récupérer un document Word**
 
-Récupérez un document Word pour appliquer une stratégie. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
+Récupérez un document Word pour appliquer une politique. Une fois que vous avez appliqué une politique au document Word, les utilisateurs sont restreints lors de l’utilisation du document. Par exemple, si la politique ne permet pas l’ouverture du document hors ligne, les utilisateurs doivent être en ligne pour pouvoir ouvrir le document.
 
 **Appliquer une politique existante au document Word**
 
@@ -2002,7 +2002,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet API client Document Security.
 
@@ -2017,7 +2017,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 1. Appliquez une politique existante au document Word.
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `DocumentSecurityClient`.
-   * Appliquez une stratégie au document Word en appelant la méthode `DocumentManager` de `protectDocument` et transmission des valeurs suivantes :
+   * Appliquez une politique au document Word en appelant la méthode `protectDocument` de l’objet `DocumentManager` et en transmettant les valeurs suivantes :
 
       * Objet `com.adobe.idp.Document` contenant le document Word auquel s’applique la politique.
       * Une valeur de chaîne indiquant le nom du document.
@@ -2031,9 +2031,9 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 
 1. Enregistrez le document Word.
 
-   * Appeler la variable `RMSecureDocumentResult` de `getProtectedDoc` pour obtenir le document Word protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document`.
+   * Appelez la méthode `getProtectedDoc` de l’objet `RMSecureDocumentResult` pour obtenir le document Word protégé par une politique. Cette méthode renvoie un objet `com.adobe.idp.Document`.
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est DOC.
-   * Appeler la variable `com.adobe.idp.Document` de `copyToFile` pour copier le contenu de la méthode `Document` dans le fichier (assurez-vous d’utiliser la variable `Document` qui a été renvoyé par l’objet `getProtectedDoc` ).
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` renvoyé par la méthode `getProtectedDoc`).
 
 **Exemples de code**
 
@@ -2071,13 +2071,13 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document Word auquel une politique est appliquée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document Word et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la variable `System.IO.FileStream` de `Length` .
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Déterminez la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Appliquez une politique existante au document Word.
 
-   Appliquez une stratégie au document Word en appelant la méthode `DocumentSecurityServiceClient` de `protectDocument` et transmission des valeurs suivantes :
+   Appliquez une politique au document Word en appelant la méthode `protectDocument` de l’objet `DocumentSecurityServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` contenant le document Word auquel s’applique la politique.
    * Une valeur de chaîne indiquant le nom du document.
@@ -2097,7 +2097,7 @@ Appliquez une politique à un document Word à l’aide de l’API Document Secu
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document Word protégé par une politique.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` renvoyé par la méthode `protectDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier Word en appelant la méthode `System.IO.BinaryWriter` de `Write` et transmission du tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier Word en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Exemples de code**
 
@@ -2107,7 +2107,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Supprimer des politiques de documents Word {#removing-policies-from-word-documents}
 
-Vous pouvez supprimer une stratégie d’un document Word protégé par une stratégie pour supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document Word protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
+Vous pouvez supprimer une politique d’un document Word protégé afin de supprimer la protection du document. Effectuez cette opération si vous ne souhaitez plus que le document soit protégé par une politique. Si vous souhaitez mettre à jour un document Word protégé par une politique avec une nouvelle politique, au lieu de supprimer la politique et d’ajouter la politique mise à jour, il est préférable de changer de politique.
 
 >[!NOTE]
 >
@@ -2133,11 +2133,11 @@ Avant d’effectuer par programmation une opération de service Document Securit
 
 **Récupérer un document Word protégé par une politique**
 
-Récupérez un document Word protégé par une stratégie pour supprimer une stratégie. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
+Récupérez un document Word protégé par une politique pour supprimer une politique. Si vous tentez de supprimer une politique d’un document Word qui n’est pas protégé par une politique, une exception est générée.
 
 **Supprimer la politique du document Word**
 
-Vous pouvez supprimer une politique d’un document Word protégé par une politique à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Si ce n’est pas le cas, la stratégie utilisée pour protéger un document doit contenir la variable `SWITCH_POLICY` autorisation de supprimer une stratégie d’un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
+Vous pouvez supprimer une politique d’un document Word protégé par une politique à condition qu’un administrateur soit spécifié dans les paramètres de connexion. Dans le cas contraire, la politique utilisée pour protéger un document doit contenir l’autorisation `SWITCH_POLICY` pour pouvoir supprimer une politique d’un document Word. En outre, l’utilisateur spécifié dans les paramètres de connexion AEM Forms doit également disposer de cette autorisation. Dans le cas contraire, une exception est générée.
 
 **Enregistrer le document Word non protégé**
 
@@ -2157,7 +2157,7 @@ Pour supprimer une politique d’un document Word protégé par une politique à
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-rightsmanagement-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers JAR du client, tels qu’adobe-rightsmanagement-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créer un objet API client Document Security
 
@@ -2172,12 +2172,12 @@ Pour supprimer une politique d’un document Word protégé par une politique à
 1. Supprimer la politique du document Word
 
    * Créez un objet `DocumentManager` en appelant la méthode `getDocumentManager` de l’objet `RightsManagementClient`.
-   * Supprimez une stratégie du document Word en appelant la méthode `DocumentManager` de `removeSecurity` et transmission de la méthode `com.adobe.idp.Document` contenant le document Word protégé par une stratégie. Cette méthode renvoie un objet `com.adobe.idp.Document` qui contient un document Word non sécurisé.
+   * Supprimez la politique du document Word en appelant la méthode `removeSecurity` de l’objet `DocumentManager` et en transmettant l’objet `com.adobe.idp.Document` qui contient le document Word protégé par la politique. Cette méthode renvoie un objet `com.adobe.idp.Document` qui contient un document Word non sécurisé.
 
 1. Enregistrer le document Word non sécurisé
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est DOC.
-   * Appeler la variable `Document` de `copyToFile` pour copier le contenu de la méthode `Document` dans le fichier (assurez-vous d’utiliser la variable `Document` qui a été renvoyé par l’objet `removeSecurity` ).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` renvoyé par la méthode `removeSecurity`).
 
 **Exemples de code**
 
@@ -2221,7 +2221,7 @@ Pour supprimer une politique d’un document Word protégé par une politique en
 
 1. Supprimer la politique du document Word
 
-   Supprimez la stratégie du document Word en appelant la méthode `RightsManagementServiceClient` de `removePolicySecurity` et transmission de la méthode `BLOB` contenant le document Word protégé par une stratégie. Cette méthode renvoie un objet `BLOB` qui contient un document Word non sécurisé.
+   Supprimez la politique du document Word en appelant la méthode `removePolicySecurity` de l’objet `RightsManagementServiceClient` et en transmettant l’objet `BLOB` qui contient le document Word protégé par la politique. Cette méthode renvoie un objet `BLOB` qui contient un document Word non sécurisé.
 
 1. Enregistrer le document Word non sécurisé
 

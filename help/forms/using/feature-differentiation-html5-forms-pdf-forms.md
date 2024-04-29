@@ -1,6 +1,6 @@
 ---
-title: Différences de caractéristiques entre formulaires HTML5 et formulaires PDF
-description: Découvrez les différences de fonctionnalités entre les formulaires HTML5 et les PDF forms.
+title: Différences de fonctionnalités entre formulaires HTML5 et formulaires PDF
+description: Découvrez les différences de fonctionnalités entre les formulaires HTML5 et les formulaires PDF.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -28,43 +28,43 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
    <th>PDF</th>
   </tr>
   <tr>
-   <td>Codes à barres<br /> </td>
+   <td>Codes-barres<br /> </td>
    <td>Non disponible au niveau de l’interface utilisateur. </td>
    <td>Pris en charge</td>
   </tr>
   <tr>
    <td>Champ de signature<br /> </td>
-   <td><strong>Signatures numériques</strong> ne sont pas pris en charge, mais une nouvelle <strong>Signature tactile</strong> est ajouté pour les signatures de type papier. Vous pouvez signer à main levée sur le formulaire à l’aide de la fonction <strong>Signature tactile</strong> champ . La signature est enregistrée sur le formulaire sous forme d’image. Vous pouvez enregistrer les informations de géolocalisation dans la variable <strong>Signature tactile</strong> champ .</td>
-   <td>Champ de signature disponible pour <strong>Signatures numériques</strong>.</td>
+   <td>Les <strong>signatures numériques</strong> ne sont pas prises en charge mais le nouveau champ <strong>Signature tactile</strong> a été ajouté pour les signatures apposées. Il est possible de griffonner sa signature sur le formulaire en utilisant le champ <strong>Signature tactile</strong>. La signature est enregistrée sur le formulaire en tant qu’image. Vous pouvez enregistrer des informations de géolocalisation dans le champ <strong>Signature tactile</strong>.</td>
+   <td>Champ de signature disponible pour les <strong>Signatures numériques</strong>.</td>
   </tr>
   <tr>
-   <td>Fusion des données</td>
+   <td>Fusion de données</td>
    <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
    <td>Images</td>
-   <td>Le schéma d’URI de données est utilisé pour afficher les images. Toutes les versions modernes des navigateurs prennent en charge ce modèle, mais il existe des différences dans la plage des formats d’image pris en charge par chaque navigateur.<br /> </td>
+   <td>Le schéma URI des données sert à afficher des images. Toutes les versions modernes des navigateurs prennent en charge ce schéma, mais il existe des différences dans la gamme de formats d’image pris en charge par chaque navigateur.<br /> </td>
    <td>Les formats .gif, .png, .jpeg, .bmp et .tiff sont pris en charge.</td>
   </tr>
   <tr>
    <td>Pagination<br /> </td>
-   <td><p>Un formulaire HTML5 est divisé en panneaux et cases pour lui donner une apparence similaire aux PDF forms. La taille de la page est calculée dynamiquement. Si tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge est masquée. Un espace vide (espace vide) n’est pas affiché entre les pages au-dessus et au-dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’étend pour s’adapter au contenu nouvellement ajouté. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au contenu nouvellement ajouté. </p> <p><strong>Remarque :</strong> Lorsque tout le contenu d’une page d’un formulaire HTML5 est supprimé ou marqué comme masqué, la page vierge (espace vide) reste visible entre la première et la deuxième page, mais pas entre les autres pages.</p> </td>
+   <td><p>Un formulaire HTML5 est divisé en panneaux et en cadres pour lui donner une apparence similaire aux formulaires PDF. La taille de la page est calculée dynamiquement. Si vous supprimez ou marquez comme masqué tout le contenu d’une page dans un formulaire HTML5, la page vierge est masquée. Aucun espace vide (espace) n’est affiché entre les pages au-dessus et en dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’agrandit pour s’adapter au nouveau contenu. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au nouveau contenu. </p> <p><strong>Remarque :</strong> si vous supprimez ou marquez comme masqué tout le contenu d’une page de formulaire HTML5, la page vierge (espace) reste visible entre la première et la deuxième page mais pas entre les autres pages.</p> </td>
    <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>
-   <td>Pris en charge. <br /> <br /> Les formulaires mobiles HTML5 ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois les configurer dans la mise en page afin qu’elles s’affichent à plusieurs endroits dans l’aperçu des formulaires mobiles.<br /> </td>
+   <td>Pris en charge. <br /> <br /> Les formulaires mobiles HTML5 ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois les configurer dans la disposition pour qu’ils apparaissent à plusieurs endroits dans l’aperçu des formulaires mobiles.<br /> </td>
    <td>Pris en charge.</td>
   </tr>
   <tr>
    <td>Widgets personnalisés</td>
-   <td>Vous pouvez personnaliser des widgets pour améliorer l’expérience utilisateur sur les appareils mobiles.<br /> </td>
-   <td>Tous les widgets sont verrouillés et aucun widget personnalisé ne peut être connecté.<br /> </td>
+   <td>Vous pouvez personnaliser les widgets pour améliorer l’expérience client sur les appareils mobiles.<br /> </td>
+   <td>Tous les widgets sont verrouillés et aucun widget personnalisé ne peut être ajouté.<br /> </td>
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Prend en charge les éléments de scripts XFA les plus fréquemment utilisés. Pour obtenir la liste détaillée des éléments pris en charge, voir <a href="/help/forms/using/scripting-support.md">prise en charge des scripts</a>.</td>
+   <td>Prend en charge les éléments de scripts XFA les plus fréquemment utilisés. Pour obtenir une liste détaillée des éléments pris en charge, consultez <a href="/help/forms/using/scripting-support.md">Prise en charge des scripts</a>.</td>
    <td>Prend en charge tous les éléments de script XFA.</td>
   </tr>
   <tr>

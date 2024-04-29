@@ -8,9 +8,9 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6188'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -250,7 +250,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    * Sélectionnez un autre répertoire de polices à partir du menu déroulant **Source des polices** si nécessaire. Ce menu déroulant présente la liste des répertoires de polices spécifiés dans **Accueil > Paramètres > Core System > Configurations de base**.
    * Sélectionnez une ou plusieurs polices dans la liste **Polices disponibles** et cliquez sur **Ajouter**. Les polices sont ajoutées à la liste **Polices à désincorporer**.
-   * Si vous souhaitez désincorporer des polices qui n’existent pas sur le serveur Forms, saisissez les noms de ces polices dans le champ **Ajout de polices à désincorporer** de la boîte. Cliquez sur **Ajouter**.
+   * Si vous voulez désincorporer des polices qui n’apparaissent pas sur le serveur Forms Server, saisissez les noms de ces polices dans la zone **Ajouter des polices à désincorporer**. Cliquez sur **Ajouter**.
 
    >[!NOTE]
    >
@@ -294,7 +294,7 @@ Sélectionnez **Transparence** pour configurer les paramètres de transparence l
 >
 >Définissez de préférence la résolution des dégradés et des filets entre 150 et 300 ppp, étant donné qu’une résolution plus élevée augmente le temps d’impression et la taille des fichiers sans toutefois améliorer la qualité des dégradés, des ombres portées et des contours progressifs.
 
-**Vectoriser tout le texte** : convertit tous les objets de type (type de point, type de zone et type de chemin) en contours et supprime l’ensemble des informations de glyphe sur les types dans les pages contenant de la transparence. Cette option préserve la largeur du texte lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux petites polices un aspect légèrement plus épais lorsqu’elles sont affichées dans Acrobat ou lors de l’impression sur des imprimantes de bureau à faible résolution. Cela n’a aucune incidence sur la qualité du type imprimé sur les imprimantes à haute résolution ou les imageurs d’images.
+**Vectoriser tout le texte** : convertit tous les objets de type (type de point, type de zone et type de chemin) en contours et supprime l’ensemble des informations de glyphe sur les types dans les pages contenant de la transparence. Cette option préserve la largeur du texte lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux petites polices un aspect légèrement plus épais lorsqu’elles sont affichées dans Acrobat ou lors de l’impression sur des imprimantes de bureau à faible résolution. La qualité du type imprimé sur des imprimantes à résolution élevée ou sur des photocomposeuses n’est pas affectée.
 
 **Vectoriser tous les contours** : convertit tous les contours en tracés simples remplis dans les pages contenant de la transparence. Cette option préserve la largeur des contours lors de l’aplatissement. Notez que l’activation de cette option a pour effet de donner aux contours fins un aspect légèrement plus épais et peut dégrader les performances de l’aplatissement.
 

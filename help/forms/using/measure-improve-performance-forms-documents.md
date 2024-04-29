@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Pour plus d’informations sur les rapports d’analyse de formulaires, reportez
 
 Dans cette étape, vous analyserez les points de données des rapports d’analyse et en déduirez comment le formulaire s’exécute. S’il ne répond pas à vos KPI de réussite, vous allez émettre des hypothèses, en fonction des données obtenues, et rechercher les solutions possibles pour résoudre ces problèmes. Par exemple :
 
-* Si le temps de remplissage moyen du formulaire est plus élevé que prévu, il est possible que votre formulaire soit complexe à comprendre pour les clients, qu’il n’utilise pas de terminologies standard, qu’il soit trop long, etc. Dans ce cas, vous aurez intérêt à simplifier la structure et les champs du formulaire, à retravailler sa conception, à le raccourcir, ou à ajouter des descriptions et des exemples d’aide pour les champs de formulaire non standard.
+* Si le temps moyen de remplissage du formulaire est plus élevé que prévu, il est possible que votre formulaire soit trop complexe pour que les clientes et clients le comprennent, qu’il n’utilise pas la terminologie standard, qu’il soit trop long, etc. Dans ce cas, vous aurez intérêt à simplifier la structure et les champs du formulaire, à retravailler sa conception, à le raccourcir, ou à ajouter des descriptions et des exemples d’aide pour les champs de formulaire non standard.
 * Si les données indiquent que la plupart des clientes et clients accède à l’aide contextuelle d’un panneau du formulaire, il est évident qu’ils et elles ne sont pas certains des informations à fournir. Vous pouvez utiliser une terminologie différente ou ajouter des exemples d’entrée et une description du panneau concerné.
 * Si le taux d’arrêt ou d’abandon d’un formulaire est plus élevé que prévu, cela peut être dû au fait qu’il est long à remplir, que les clientes et clients accèdent au formulaire par inadvertance ou qu’il est trop compliqué. Dans ce cas, vous pouvez optimiser la description du formulaire qui s’affiche dans les résultats de recherche, simplifier le formulaire, optimiser le formulaire pour un chargement plus rapide, etc.
 

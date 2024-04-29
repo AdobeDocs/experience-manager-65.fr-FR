@@ -4,7 +4,7 @@ description: L’AEM Forms JEE 6.5.15.0 Service Pack n’est pas installé corr
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
 ht-degree: 100%
 

@@ -9,7 +9,7 @@ docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 

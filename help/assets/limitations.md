@@ -10,9 +10,9 @@ role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -32,12 +32,12 @@ Lorsque vous créez une visionneuse à 360° ou une visionneuse d’images, ou q
 | Ressource - Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | **Image** - Nombre de recadrages intelligents par image | 5 | 100 |
-| **Tous les jeux** - Nombre de ressources en double par visionneuse | Aucun doublon | 20 |
+| **Tous les jeux** - Nombre de ressources en double par visionneuse | Aucun doublon | 20‡ |
 | **Tous les jeux** - Nombre maximal de ressources par visionneuse | 5 à 10 images par ensemble | 1000 |
 | **Visionneuse à 360°** - Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 |
 | **PDF** - Nombre maximal de pages qu’un PDF doit prendre en compte pour l’extraction |  | 100 (pour tous les PDF) |
 
-‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
+‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Combinaisons de navigateur web et de système d’exploitation non prises en charge par Dynamic Media {#unsupported-browser-os}
@@ -54,15 +54,15 @@ Dynamic Media ne prend pas en charge les combinaisons de navigateur web et de s
 * Safari 8 + iOS 8.4
 * Safari 8 + OS X 10.10 Yosemite
 
-## Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0 et de Transport Layer Security 1.0 et 1.1. {#tls}
+## Fin de la prise en charge de Secure Socket Layer 2.0 et 3.0 et de Transport Layer Security 1.0 et 1.1. {#tls}
 
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-À compter du mercredi 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
+À compter du 30 avril 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
 
-* SSL (Secure Socket Layer) 2.0
-* SSL 3.0
+* SSL (Secure Socket Layer) 2.0
+* SSL 3.0
 * TLS (Transport Layer Security) 1.0 et 1.1
 * Les chiffrements faibles suivants dans TLS 1.2 :
    * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`

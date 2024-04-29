@@ -1,6 +1,6 @@
 ---
-title: Configurer les paramètres du fournisseur de services SAML
-description: Vous pouvez configurer les paramètres du fournisseur de services SAML pour permettre aux utilisateurs de se connecter et de s’authentifier auprès d’AEM forms via un fournisseur d’identité tiers spécifié.
+title: Configuration des paramètres du fournisseur de services SAML
+description: Vous pouvez configurer les paramètres du fournisseur de services SAML pour permettre aux utilisateurs et utilisatrices de se connecter et de s’authentifier auprès d’AEM Forms via un fournisseur d’identité (IDP) tiers spécifié.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -8,13 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Configurer les paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
+# Configuration des paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
 
 Le langage SAML (Security Assertion Markup Language) est l’une des options que vous pouvez sélectionner lors de la configuration de l’autorisation d’un domaine d’entreprise ou hybride. SAML est principalement utilisé pour la prise en charge de l’authentification unique sur plusieurs domaines. Lorsque SAML est configuré en tant que fournisseur d’authentification, les utilisateurs et utilisatrices se connectent et s’authentifient à AEM Forms via un fournisseur d’identité (IDP) tiers spécifié.
 
@@ -27,7 +27,7 @@ Pour obtenir une explication sur SAML, voir [Présentation technique du langage
 
    * Utilisez Trust Manager pour importer des informations d’identification au format PKCS #12 avec des informations d’identification de signature de document sélectionnées comme type de Trust Store. (Voir [Gestion des informations d’identification locales](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Dans la liste Alias de clé d’identification du fournisseur de services, sélectionnez l’alias affecté aux informations d’identification dans Trust Store.
-   * Cliquez sur Exporter pour enregistrer le contenu de l’URL dans un fichier , puis importez ce fichier dans votre IDP.
+   * Cliquez sur Exporter pour enregistrer le contenu de l’URL dans un fichier et importer ce dernier dans le fournisseur d’identité.
 
 1. (Facultatif) Dans la liste Politique d’ID de nom du fournisseur de services, sélectionnez le format de nom utilisé par l’IDP pour identifier l’utilisateur ou l’utilisatrice dans une assertion SAML. Les options disponibles sont Non spécifié, E-mail et Nom qualifié de domaine Windows.
 
@@ -35,12 +35,12 @@ Pour obtenir une explication sur SAML, voir [Présentation technique du langage
    >
    >Les formats de nom ne sont pas sensibles à la casse.
 
-1. (Facultatif) Sélectionnez Activer l’invite d’authentification pour les utilisateurs et utilisatrices locaux. Lorsque cette option est sélectionnée, les utilisateurs voient deux liens :
+1. (Facultatif) Sélectionnez Activer l’invite d’authentification pour les utilisateurs et utilisatrices locaux. Lorsque cette option est sélectionnée, deux liens s’affichent :
 
    * un lien vers la page de connexion du fournisseur d’identité SAML tiers, sur laquelle les personnes appartenant à un domaine d’entreprise peuvent s’authentifier.
    * un lien vers la page de connexion d’AEM Forms, sur laquelle les personnes appartenant à un domaine local peuvent s’authentifier.
 
-   Lorsque cette option n’est pas sélectionnée, les utilisateurs sont directement amenés à la page de connexion du fournisseur d’identité SAML tiers, où les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier.
+   Lorsque cette option n’est pas sélectionnée, les utilisateurs et utilisatrices sont directement redirigés vers la page de connexion du fournisseur d’identité SAML tiers, sur laquelle les personnes appartenant à un domaine d’entreprise peuvent s’authentifier.
 
 1. (Facultatif) Sélectionnez Activer la liaison d’artefact pour activer la prise en charge de la liaison d’artefact. Par défaut, c’est la liaison POST qui est utilisée avec SAML. Mais si vous avez configuré la liaison d’artefact, sélectionnez cette option. Lorsque cette option est sélectionnée, l’assertion de la personne n’est pas transmise par le biais de la requête du navigateur. Au lieu de cela, un pointeur vers l’assertion est transmis et l’assertion est récupérée à l’aide d’un appel de service web principal.
 1. (Facultatif) Sélectionnez Activer la liaison de redirection pour prendre en charge les liaisons SAML qui utilisent les redirections.
@@ -54,7 +54,7 @@ Pour obtenir une explication sur SAML, voir [Présentation technique du langage
 
      `saml.sp.use.relaystate=true`
 
-   * Ajoutez la propriété personnalisée suivante afin de pouvoir configurer l’URL pour les pages JSP (Java™ Server Pages) personnalisées, qui est utilisée pour effectuer le rendu de la liste enregistrée des fournisseurs d’identité. Si vous n’avez pas déployé d’application web personnalisée, elle utilise la page User Management par défaut pour effectuer le rendu de la liste.
+   * Ajoutez la propriété personnalisée suivante pour pouvoir configurer l’URL du JSP (Java Server Pages) personnalisé, qui est utilisé pour effectuer le rendu de la liste enregistrée des fournisseurs d’identité. Si vous n’avez pas déployé d’application web personnalisée, la page User Management par défaut est utilisée pour effectuer le rendu de la liste.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

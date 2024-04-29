@@ -7,9 +7,9 @@ feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Les ressources multilingues sont des ressources comportant des fichiers binaires
 
 Dans [!DNL Adobe Experience Manager Assets], les ressources multilingues se trouvent dans des dossiers, chaque dossier contenant les ressources dans une langue différente.
 
-Chaque dossier de langue est appelé « copie de langue ». Le dossier racine d’une copie de langue, appelé « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, */content/dam/it* est la racine de langue italienne de la copie de langue italienne. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) afin que la langue correcte soit ciblée lors de la traduction des ressources sources.
+Chaque dossier de langue est appelé « copie de langue ». Le dossier racine d’une copie de langue, appelé « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, */content/dam/it* est la racine de langue italienne de la copie de langue italienne. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la bonne langue soit ciblée lors de la traduction des ressources sources.
 
 La copie de langue pour laquelle vous ajoutez initialement des ressources est la langue principale. La langue principale est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
@@ -62,7 +62,7 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 L’interface [!DNL Experience Manager] contient un panneau **[!UICONTROL Références]** qui affiche une liste des racines de langue créées dans [!DNL Assets].
 
-1. Dans le [!DNL Assets] , sélectionnez la langue principale pour laquelle vous souhaitez créer des copies de langue.
+1. Dans la console [!DNL Assets], choisissez la langue principale pour laquelle vous souhaitez créer des copies de langue.
 1. Dans le rail de gauche, sélectionnez l’option **[!UICONTROL Références]** pour ouvrir le volet [!UICONTROL Référence].
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

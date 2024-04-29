@@ -4,9 +4,9 @@ description: Erreurs de service indisponible pour CRX/bundle et page de démarra
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Après l’installation du [pack de services AEM 6.5.15.0](https://experience.a
 
    >[!NOTE]
    >
-   >Au cas où la variable `bundle.info` under `bundle52` ne contient pas la variable `org.apache.felix.http.bridge` du lot, vérifiez le numéro du lot entre crochets en regard de l’objet `org.apache.felix.http.bridge`. Accédez ensuite à [racine aem-forms]\crx-repository\launchpad\felix\bundle[x] et effectuez les étapes suivantes à cet emplacement.
+   >Au cas où `bundle.info` sous `bundle52` ne contient pas le lot `org.apache.felix.http.bridge`, vérifiez le numéro du lot entre crochets en regard de `org.apache.felix.http.bridge`. Accédez ensuite à [racine aem-forms]\crx-repository\launchpad\felix\bundle[x] et effectuez les étapes suivantes à cet emplacement.
 
 1. Accéder à l’URL : `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Recherchez `bundle.jar` et renommez le `bundle.jar` en `bundle.jar.bak`.

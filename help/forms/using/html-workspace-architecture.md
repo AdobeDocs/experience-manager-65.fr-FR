@@ -1,6 +1,6 @@
 ---
 title: Architecture de l’espace de travail AEM Forms
-description: Informations conceptuelles et présentation de l’architecture de l’espace de travail AEM Forms LiveCycle.
+description: Informations conceptuelles et vue d’ensemble de l’architecture de l’espace de travail AEM Forms LiveCycle.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,26 +8,26 @@ topic-tags: forms-workspace
 exl-id: c6f216d4-781c-4356-b9f0-3324903a28e7
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Architecture de l’espace de travail AEM Forms {#aem-forms-workspace-architecture}
 
-L’espace de travail AEM Forms est une application web hébergée sur CRX™. Lorsque l’espace de travail est ouvert dans un navigateur, une ressource CRX est accessible et l’application est rendue en tant que page de HTML dans le navigateur.
+L’espace de travail AEM Forms est une application web hébergée sur CRX™. Lorsque l’espace de travail est ouvert dans un navigateur, une ressource CRX est appelée et l’application est rendue en tant que page HTML dans le navigateur.
 
-L’application accède au serveur AEM Forms sur les points d’entrée REST pour effectuer les opérations suivantes :
+L’application accède au serveur AEM Forms sur les points d’entrée REST pour effectuer les opérations suivantes :
 
-* Récupération des tâches utilisateur, des points de départ de processus, de l’historique des processus et des informations sur l’utilisateur
-* Exécution d’une action sur les tâches
-* Tâches de requête dans la base de données
-* Mise à jour des préférences utilisateur, etc.
+* Récupérer des tâches utilisateur, des points de départ de processus, l’historique des processus et des informations sur l’utilisateur ou l’utilisatrice
+* Exécuter une action sur les tâches
+* Interroger les tâches dans la base de données
+* Mettre à jour des préférences utilisateur, etc.
 
-Le serveur AEM Forms accède à la base de données AEM Forms via JDBC. La base de données conserve les tâches, les processus et leurs instances, les utilisateurs et les informations associées.
+Le serveur AEM Forms accède à la base de données AEM Forms via JDBC. La base de données conserve les tâches, les processus et leurs instances, les utilisateurs et utilisatrices et les informations associées.
 
-L’espace de travail AEM Forms est constitué de composants modulaires JavaScript™ qui peuvent être personnalisés individuellement et réutilisés dans d’autres applications web. Les composants sont basés sur BackBone, une bibliothèque JavaScript qui fournit une structure aux applications web. Un article détaillé décrivant l’interaction des composants avec BackBone est [here](/help/forms/using/backbone-interaction.md). L’organisation des composants dans la structure de dossiers CRX est présentée dans la section [this](/help/forms/using/folder-structure.md) article.
+L’espace de travail AEM Forms est constitué de composants modulaires JavaScript™ qui peuvent être personnalisés individuellement et réutilisés dans d’autres applications web. Les composants sont basés sur BackBone, une bibliothèque JavaScript qui fournit une structure aux applications web. Un article détaillé décrivant l’interaction des composants avec BackBone est disponible [ici](/help/forms/using/backbone-interaction.md). L’organisation des composants dans la structure de dossiers CRX est présentée dans [cet](/help/forms/using/folder-structure.md) article.
 
 Packages fournis pour l’espace de travail AEM Forms :
 

@@ -10,9 +10,9 @@ role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2519'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -149,7 +149,7 @@ Pour assembler un PDF contenant de nouveaux signets, vous devez référencer un 
 
 **Ajouter le document PDF et le document XML de signet à une collection Map**
 
-Ajoutez le document du PDF auquel les signets sont ajoutés ainsi que le document XML du signet à la collection Map. En toute logique, l’objet de collection Map contient deux éléments : un document PDF et le document XML de signet.
+Ajoutez le document PDF auquel les signets sont ajoutés et le document XML du signet à la collection Map. En toute logique, l’objet de collection Map contient deux éléments : un document PDF et le document XML de signet.
 
 **Définir les options d’exécution**
 
@@ -161,7 +161,7 @@ Pour assembler un document PDF contenant de nouveaux signets, utilisez l’opér
 
 **Enregistrer le document PDF contenant des signets**
 
-Extrayez les résultats de l’objet map renvoyé et enregistrez le document PDF correspondant. (Reportez-vous à « Extraire les résultats » dans [Assembler des documents PDF par programmation](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extrayez les résultats de l’objet map renvoyé, puis enregistrez le document PDF correspondant. (Reportez-vous à « Extraire les résultats » dans [Assembler des documents PDF par programmation](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Voir également**
 

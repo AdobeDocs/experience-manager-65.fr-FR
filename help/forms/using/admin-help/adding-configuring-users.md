@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1727'
 ht-degree: 100%
 

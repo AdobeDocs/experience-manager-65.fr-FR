@@ -4,9 +4,9 @@ description: Utiliser le service Execute Script dans AEM Forms on JEE Workbench 
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

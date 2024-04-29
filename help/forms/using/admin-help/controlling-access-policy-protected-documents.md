@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2167'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Lorsque vous révoquez ou rétablissez des privilèges d’accès à des documen
 
 * Si le document est en ligne et fermé, la modification est appliquée lorsque le ou la destinataire se synchronise avec Document Security en ouvrant un document protégé par une politique.
 * Si le document est en ligne et ouvert, la modification prend effet lorsque le ou la destinataire le ferme.
-* Si le document est hors ligne (c’est-à-dire utilisé sans connexion Internet, par exemple sur un ordinateur portable), la modification prend effet lors de la prochaine synchronisation du destinataire avec Document Security.
+* Si le document est hors ligne, à savoir qu’il est utilisé sans connexion Internet, par exemple sur un ordinateur portable, la modification prend effet lors de la synchronisation suivante du ou de la destinataire avec Document Security.
 
 **Révocation de l’accès à un document protégé par une politique**
 

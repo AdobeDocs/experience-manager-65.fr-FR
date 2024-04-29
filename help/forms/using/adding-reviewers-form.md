@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
 ht-degree: 100%
 

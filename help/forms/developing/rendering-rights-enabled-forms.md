@@ -10,9 +10,9 @@ role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 77%
 
 Le service Forms peut restituer des formulaires dotés de droits d’utilisation. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les formulaires dotés de droits d’utilisation sont appelés des formulaires dont les droits sont activés. Un utilisateur qui ouvre un formulaire dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce formulaire.
 
-Pour appliquer des droits d’utilisation à un formulaire, le service d’extensions Acrobat Reader DC doit faire partie de votre installation d’AEM forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents PDF. Car vous devez configurer correctement le service Extensions Acrobat Reader DC avant de pouvoir restituer un formulaire dont les droits sont activés. (Consultez la section [À propos du service Extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
+Pour appliquer des droits d’utilisation à un formulaire, le service Extensions Acrobat Reader DC doit faire partie de votre installation d’AEM Forms. En outre, vous devez disposer d’informations d’identification valides qui vous permettent d’appliquer des droits d’utilisation aux documents PDF. Car vous devez configurer correctement le service Extensions Acrobat Reader DC avant de pouvoir restituer un formulaire dont les droits sont activés. (Consultez la section [À propos du service Extensions Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Avant d’effectuer par programmation une opération de l’API du client de ser
 
 **Définir les options d’exécution des droits d’utilisation**
 
-Définissez les options d’exécution des droits d’utilisation pour générer un formulaire dont les droits sont activés. Spécifiez l’alias des informations d’identification utilisées pour appliquer des droits d’utilisation à un formulaire. Une fois la valeur de l’alias définie, vous pouvez spécifier chaque droit d’utilisation à appliquer au formulaire.
+Définissez les options d’exécution des droits d’utilisation pour restituer un formulaire dont les droits sont activés. Spécifiez l’alias des informations d’identification utilisé pour appliquer des droits d’utilisation à un formulaire. Une fois la valeur de l’alias définie, vous pouvez spécifier chaque droit d’utilisation à appliquer au formulaire.
 
 **Restituer un formulaire dont les droits sont activés**
 
@@ -90,7 +90,7 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
 1. Inclure les fichiers du projet
 
-   Incluez les fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
+   Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre chemin de classe de projet Java.
 
 1. Créer un objet API Forms client
 
@@ -100,12 +100,12 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 1. Définir des options d’exécution des droits d’utilisation
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
-   * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de l’objet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur d’alias.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Par exemple. pour définir le droit d’utilisation qui permet à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
    >[!NOTE]
    >
-   >Il n’est pas nécessaire d’appeler la variable `ReaderExtensionSpec` de `setReCredentialPassword` . Cette méthode n’est pas utilisée par le service Forms.
+   >Il n’est pas nécessaire d’appeler la méthode `setReCredentialPassword` de l’objet `ReaderExtensionSpec`. Cette méthode n’est pas utilisée par le service Forms.
 
 1. Générer un formulaire défini avec des droits
 
@@ -121,13 +121,13 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `com.adobe.idp.Document` en appelant la méthode `FormsResult` object’s `getOutputContent` .
-   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `com.adobe.idp.Document` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la fonction `InputStream` de `read` et transmission du tableau d’octets en tant qu’argument.
-   * Appeler la variable `javax.servlet.ServletOutputStream` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et remplissez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -153,8 +153,8 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 1. Définir des options d’exécution des droits d’utilisation
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
-   * Spécifiez l’alias des informations d’identification en appelant la fonction `ReaderExtensionSpec` de `setReCredentialAlias` et indiquez une valeur string qui représente la valeur d’alias.
-   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation qui permet à l’utilisateur de remplir des champs de formulaire et d’enregistrer le formulaire, appelez la méthode `ReaderExtensionSpec` de `setReFillIn` méthode et transmission `true`.
+   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de l’objet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur d’alias.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur ou l’utilisatrice de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
 1. Générer un formulaire défini avec des droits
 
@@ -170,12 +170,12 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un `BLOB` qui contient des données de formulaire en appelant la méthode `FormsResult` de `getOutputContent` .
-   * Accédez au type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez la variable `javax.servlet.http.HttpServletResponse` type de contenu de l’objet en appelant ses `setContentType` et transmettre le type de contenu de la méthode `BLOB` .
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données de formulaire dans le navigateur Web client en appelant la fonction `javax.servlet.http.HttpServletResponse` de `getOutputStream` .
-   * Créez un tableau d’octets et renseignez-le en appelant la variable `BLOB` de `getBinaryData` . Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appeler la variable `javax.servlet.http.HttpServletResponse` de `write` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

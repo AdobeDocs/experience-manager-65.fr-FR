@@ -7,9 +7,9 @@ feature: Developer Tools,Renditions
 exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 Lightbox est un type spécial de collection fournissant un accès facile aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
-Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. D’autres utilisateurs ne peuvent pas accéder à votre Lightbox.
+Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Elle est exclusive à votre connexion. Les autres utilisateurs et utilisatrices ne peuvent pas accéder à votre Lightbox.
 
 ## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
 

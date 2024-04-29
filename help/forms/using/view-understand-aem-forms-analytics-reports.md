@@ -8,9 +8,9 @@ docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1056'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Lorsqu’un utilisateur ou une utilisatrice interagit avec le formulaire, les in
 * 2 pour l’enregistrement
 * 1 pour l’aide
 * 1 pour chaque erreur de validation
-* 1 pour le rendu de formulaire + 1 pour la visite de panneau par défaut + 1 pour la première visite de champ par défaut
+* 1 pour le rendu du formulaire + 1 pour la visite de panneau par défaut + 1 pour la première visite de champ par défaut
 * 2 pour l’abandon du formulaire
 
 >[!NOTE]

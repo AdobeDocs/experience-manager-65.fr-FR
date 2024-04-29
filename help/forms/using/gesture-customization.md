@@ -1,6 +1,6 @@
 ---
 title: Personnalisation de mouvement
-description: Découvrez comment personnaliser les mouvements sur l’application AEM Forms. Vous pouvez personnaliser les gestes pour fournir une méthode distincte d’interaction avec l’application.
+description: Découvrez comment personnaliser les mouvements sur l’application AEM Forms. Vous pouvez personnaliser les mouvements de l’application AEM Forms pour interagir différemment avec l’application.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,9 +8,9 @@ topic-tags: forms-app
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,15 +46,15 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
    Lorsque vous déclenchez un événement Javascript appelé `EventName` sur un élément HTML spécifié par `Selector`, la fonction `Function` est appelée.
 
-1. Rechercher
+1. Recherche
 
-   * &quot;select .taskContentArea&quot; : &quot;onTaskClick&quot;,
+   * &quot;select .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;select .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;select .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;select .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;select .task-content&quot; : &quot;onTaskClick&quot;,
 
-     &quot;select .last_empty_div&quot; : &quot;onTaskClick&quot;,
+     &quot;select .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
    et remplacer par
 

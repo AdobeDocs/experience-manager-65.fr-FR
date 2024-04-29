@@ -6,9 +6,9 @@ exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1588'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -357,7 +357,7 @@ Si vous créez une variante, appelée « Centre de Berlin » (`berlin_centre`)
 }
 ```
 
-### Exemple de requête : noms de toutes les villes balisées en tant que coupures municipales {#sample-names-all-cities-tagged-city-breaks}
+### Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville {#sample-names-all-cities-tagged-city-breaks}
 
 Si vous :
 

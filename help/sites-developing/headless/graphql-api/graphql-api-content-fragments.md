@@ -6,9 +6,9 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4796'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Il est recommandé d’utiliser les [Requêtes persistantes](/help/sites-develop
 
 Les requêtes GraphQL utilisant des requêtes POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
 
-Bien que GraphQL prenne également en charge les requêtes de GET, ces requêtes peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide de requêtes persistantes.
+Bien que GraphQL prenne également en charge les requêtes GET, celles-ci comportent des limites (par exemple, la longueur de l’URL) qui peuvent être évitées grâce aux requêtes persistantes.
 
 Voir [Activer le cache des requêtes persistantes](#enable-caching-persisted-queries) pour plus de détails.
 
@@ -197,7 +197,8 @@ Par exemple, si un utilisateur ou une utilisatrice crée un modèle de fragment 
 
    * Trois d’entre eux ont été contrôlés par l’utilisateur ou utilisatrice : `author`, `main` et `referencearticle`.
 
-   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu. Dans cet exemple, (la variable [champ d’assistance](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu. Dans cet exemple, 
+(les [champs d’assistance](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Après qu’un utilisateur a créé un fragment de contenu reposant sur le modèle d’article, il peut être interrogé via GraphQL. Vous trouverez des exemples à la section [Exemples de Requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basée sur un [modèle de structure de fragment de contenu à utiliser avec GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -261,7 +262,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 | Énumération |  `String` |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 |  Balises |  `[String]` |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
 | Référence de contenu |  `String` |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
-| Référence du fragment |  *Un type de modèle* <br><br>Champ simple : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement à partir du tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèle, référencé à partir d’un tableau avec type d’union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
+| Référence du fragment | *Type de modèle* <br><br>Champ unique : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement depuis le tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèles, référencé depuis un tableau avec type union | Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèles, définis lors de la création du modèle |
 
 {style="table-layout:auto"}
 
@@ -530,11 +531,11 @@ L’exemple suivant illustre une requête complète qui filtre toutes les person
 }
 ```
 
-Lors de l’exécution d’une requête GraphQL avec des variables facultatives, si une valeur spécifique est **not** fourni pour la variable facultative, la variable sera ignorée dans l’évaluation du filtre. Cela signifie que les résultats de la requête contiendront toutes les valeurs, les deux `null` et non `null`, pour la propriété associée à la variable de filtre.
+Lors de l’exécution d’une requête GraphQL à l’aide de variables facultatives, si une valeur spécifique **n’est pas** fournie pour la variable facultative, la variable est alors ignorée dans l’évaluation du filtre. Cela signifie que les résultats de la requête contiendront toutes les valeurs, les deux `null` et non `null`, pour la propriété associée à la variable de filtre.
 
 >[!NOTE]
 >
->Si une `null` la valeur est *explicitement* spécifié pour une telle variable, le filtre ne correspondra qu’à `null` pour la propriété correspondante.
+>Si une valeur `null` est *explicitement* spécifiée pour une telle variable, le filtre ne correspondra qu’à des valeurs `null` pour la propriété correspondante.
 
 Par exemple, dans la requête ci-dessous, où aucune valeur n’est spécifiée pour la propriété `lastName` :
 
@@ -551,7 +552,7 @@ query getAuthorsFilteredByLastName($authorLastName: String) {
 }
 ```
 
-Tous les auteurs seront renvoyés :
+Toutes les instances de création seront renvoyées :
 
 ```graphql
 {
@@ -603,7 +604,7 @@ Les critères de tri sont les suivants :
    * le premier champ de la liste définit l’ordre de tri principal
       * le deuxième champ est utilisé si deux valeurs du critère de tri principal sont égales
       * le troisième champ est utilisé si les deux premiers critères sont égaux, etc.
-   * notation pointillée, à savoir : `field1.subfield.subfield`, etc.
+   * valeur séparée par des points, c’est-à-dire `field1.subfield.subfield`, etc.
 * avec un sens d’ordre optionnel,
    * ASC (croissant) ou DESC (décroissant) ; la valeur par défaut est ASC,
    * le sens peut être spécifié par champ : vous pouvez trier un champ par ordre croissant et un autre par ordre décroissant (name, firstName DESC).
@@ -754,7 +755,7 @@ La mise en cache des requêtes persistantes n’est pas activée par défaut dan
 
 ### Activer la mise en cache des requêtes persistantes {#enable-caching-persisted-queries}
 
-Pour activer la mise en cache des requêtes persistantes, les mises à jour suivantes des fichiers de configuration de Dispatcher sont requises :
+Pour activer la mise en cache des requêtes persistantes, les mises à jour suivantes des fichiers de configuration de Dispatcher sont requises :
 
 * `<conf.d/rewrites/base_rewrite.rules>`
 
@@ -766,9 +767,9 @@ Pour activer la mise en cache des requêtes persistantes, les mises à jour suiv
 
   >[!NOTE]
   >
-  >Dispatcher ajoute le suffixe `.json` à toutes les URL de requête conservées, de sorte que le résultat puisse être mis en cache.
+  >Dispatcher ajoute le suffixe `.json` à toutes les URL de requête persistante, de sorte que le résultat puisse être mis en cache. 
   >
-  >Cela permet de s’assurer que la requête est conforme aux exigences de Dispatcher pour les documents qui peuvent être mis en cache. Pour plus d’informations, voir [Comment Dispatcher renvoie-t-il des documents ?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=fr#how-does-the-dispatcher-return-documents%3F)
+  >Cela permet de s’assurer que la requête est conforme aux exigences de Dispatcher pour les documents qui peuvent être mis en cache. Pour plus d’informations, voir [Comment Dispatcher renvoie-t-il des documents ?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=fr#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -931,7 +932,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
    * Et les opérations :
 
-      * `_operator` : appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
+      * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
          * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
          * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
 

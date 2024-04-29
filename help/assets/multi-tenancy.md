@@ -7,9 +7,9 @@ feature: Collections
 exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,5 +31,5 @@ La fonctionnalité multiclient vous permet de séparer les types de ressources e
 * Collections publiques
 * Catalogues (notamment l’assistant Ajouter/Sélectionner une page)
 * Modèles
-* Modèles de fragment de code
+* Modèles d’extrait de code
 * Lightbox

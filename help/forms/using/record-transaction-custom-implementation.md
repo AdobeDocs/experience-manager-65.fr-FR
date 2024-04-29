@@ -1,6 +1,6 @@
 ---
 title: Enregistrer une transaction pour les implémentations personnalisées
-description: Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas comptabilisées comme des transactions.
+description: Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -8,13 +8,13 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Enregistrement d’une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi {#record-a-transaction-for-custom-implementations}
+# Enregistrer une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi {#record-a-transaction-for-custom-implementations}
 
 Utilisez l’API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas automatiquement comptabilisées comme des transactions
 
@@ -90,6 +90,6 @@ $.ajax({
 
 ## Articles connexes {#related-articles}
 
-* [Présentation des rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-overview.md)
-* [Affichage et compréhension des rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [API facturables pour les rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md)
+* [Vue d’ensemble des rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-overview.md)
+* [Afficher et comprendre les rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [API facturables pour les rapports de transaction pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md)

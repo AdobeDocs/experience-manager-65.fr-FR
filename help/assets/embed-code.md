@@ -10,9 +10,9 @@ role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Consultez [Diffusion d’images optimisées pour un site réactif](responsive-si
 
 >[!NOTE]
 >
->Le code incorporé ne peut pas être copié tant que vous n’avez pas publié la ressource sélectionnée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
+>Vous ne pouvez pas copier le code d’intégration tant que la ressource sélectionnée n’a pas été publiée. En outre, vous devez également publier le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini.
 >
 >Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
 >

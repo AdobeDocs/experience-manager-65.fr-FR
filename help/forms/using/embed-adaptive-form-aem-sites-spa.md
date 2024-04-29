@@ -8,9 +8,9 @@ feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1107'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 1. Ouvrez la page AEM Sites, en mode Édition, dans laquelle vous souhaitez incorporer un formulaire adaptatif ou une communication interactive.
 1. Insérez le composant **AEM Form pour SPA** à l’aide de l’une des options suivantes :
 
-   * Sélectionnez le conteneur de mises en page sur la page Sites, puis sélectionnez **+** et sélectionnez la variable **Formulaire AEM pour SPA** composant.
+   * Sélectionnez le conteneur de disposition sur la page Sites, puis **+** et choisissez le composant **AEM Form pour SPA**.
 
    * Depuis le panneau Explorateur des composants, faites glisser et déposez le composant **AEM Form pour SPA** sur la page.
    * Recherchez un formulaire adaptatif ou une communication interactive dans lʼexplorateur de ressources et effectuez une opération de glisser-déposer sur la page Sites. Le formulaire est ainsi incorporé dans un composant Conteneur AEM Forms pour SPA.
@@ -65,7 +65,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
    >
    >Le rendu de plusieurs composants de conteneurs SPA AEM Forms sur une page nʼest pas pris en charge. Plusieurs conteneurs SPA AEM Forms peuvent être incorporés sur une page, mais un seul composant est rendu à la fois. Assurez-vous qu’un seul composant est visible sur une page pour éviter toute erreur.
 
-1. Sélectionnez le composant AEM Forms SPA Container incorporé dans la page Sites, puis sélectionnez ![settings_icon](assets/settings_icon.png) dans la barre d’actions. La boîte de dialogue **Modifier le conteneur SPA AEM Forms** s’affiche.
+1. Sélectionnez le composant Conteneur SPA AEM Forms sur la page Sites, puis ![settings_icon](assets/settings_icon.png) dans la barre d’action. La boîte de dialogue **Modifier le conteneur SPA AEM Forms** s’affiche.
 1. Dans la boîte de dialogue **Modifier le conteneur AEM Forms**, précisez ce qui suit :
 
    * **Type de ressource :** sélectionnez le type de ressource à incorporer. Vous pouvez choisir entre **formulaire adaptatif** et **communication interactive**.
@@ -75,7 +75,7 @@ Pour incorporer un formulaire adaptatif ou une communication interactive à l’
 
    * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif ou de votre communication interactive. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement.
 
-1. Sélectionner ![done_icon](assets/done_icon.png) pour enregistrer les paramètres. Le formulaire adaptatif ou la communication interactive est maintenant incorporé à la page.
+1. Sélectionnez ![done_icon](assets/done_icon.png) pour enregistrer les paramètres. Le formulaire adaptatif ou la communication interactive est maintenant incorporé à la page.
 
 ## Publier un formulaire adaptatif et une communication interactive incorporés {#publish-embedded-adaptive-form-and-interactive-communication}
 
@@ -92,7 +92,7 @@ La page AEM Sites conserve une référence au formulaire adaptatif et à la com
 Pour modifier une configuration ou une propriété du formulaire adaptatif ou de la communication interactive incorporés, effectuez l’une des opérations suivantes.
 
 * Ouvrez le formulaire original dans les formulaires adaptatifs ou la communication interactive dans les éditeurs respectifs et modifiez-les.
-* Sélectionnez le formulaire adaptatif ou la communication interactive dans la page Sites en mode d’édition, puis sélectionnez **Modifier dans une nouvelle fenêtre**. Le formulaire d’origine s’ouvre en mode dʼédition.
+* Sélectionnez le formulaire adaptatif ou la communication interactive à partir de la page Sites en mode Modifier, puis sélectionnez **Modifier dans une nouvelle fenêtre**. Le formulaire d’origine s’ouvre en mode dʼédition.
 
 ## Éléments à prendre en compte et bonnes pratiques {#considerations-and-best-practices}
 

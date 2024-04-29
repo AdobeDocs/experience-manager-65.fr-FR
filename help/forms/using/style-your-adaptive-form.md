@@ -6,9 +6,9 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -443,7 +443,7 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
 Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les appareils sur lesquels le formulaire adaptatif est affiché ne disposent peut-être pas des polices utilisées pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices web pour fournir les polices requises à l’appareil cible.
 
 [!DNL Adobe Fonts] est un service de polices web. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser [!DNL Adobe Fonts] dans un formulaire adaptatif, procédez comme suit :
-1. Parcourez les [bibliothèque des polices d’Adobe](https://fonts.adobe.com/) et choisissez la police à appliquer au formulaire.
+1. Parcourez la [bibliothèque de polices Adobe](https://fonts.adobe.com/) et choisissez la police à appliquer au formulaire.
 <!--
 >[!NOTE]
 >
@@ -453,7 +453,7 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 >
 > Vous pouvez ajouter des balises ou des filtres pour affiner la liste des polices.
 
-1. Cliquez sur le bouton &lt;/> pour ajouter la famille à un projet web, au cas où vous trouveriez une police de votre choix.
+1. Cliquez sur le bouton &lt;/> pour ajouter la famille à un projet web, au cas où vous trouveriez une police qui vous convient.
 
    ![select-font-from-font-libary](assets/select-font-from-font-library.png)
 
@@ -463,29 +463,29 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
    >
    > Vous ne pouvez ajouter des polices à votre projet web que si le bouton &lt;/> est disponible.
 
-2. Nommez votre projet web.
-3. Cochez les cases pour sélectionner les poids et les styles de police à inclure.
+2. Donnez un nom à votre projet web.
+3. Cochez les cases pour sélectionner les poids et les styles de police que vous souhaitez inclure.
 
    ![ajouter une bibliothèque de polices](assets/add-a-font-window.png)
 
-4. Sélectionner **Cliquez sur** pour créer le projet.
-5. Copiez le code incorporé et l’URL de l’écran.
-   ![code incorporé et URL](assets/font-add-url.png)
+4. Sélectionner **Clic** pour créer le projet.
+5. Copiez le code intégré et l’URL à partir de l’écran.
+   ![code intégré et URL](assets/font-add-url.png)
 
-6. Cliquez sur **Terminé** pour fermer la fenêtre du projet web.
-7. Connectez-vous à votre instance AEM et accédez à l’URL `http://server:port/crx/de/index.jsp#`
+6. Cliquez sur **Terminé** pour fermer la fenêtre de projet web.
+7. Connectez-vous à votre instance AEM et accédez à l’URL `http://server:port/crx/de/index.jsp#`.
 8. Créez une structure de dossiers dans CRXDE, par exemple `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Accédez au `clientlibs` et ajoutez le dossier `allowProxy` et `categories` propriétés.
-10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier css.
-11. Accédez au dossier CSS créé et créez un fichier . Par exemple, créez un fichier sous la forme `fonts.css` et collez le code incorporé avec l’URL.
-   ![Structure du dossier](/help/forms/using/assets/fonts-add-in-crxde.png)
+9. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
+10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
+11. Accédez au dossier CSS créé et créez un fichier. Par exemple, créez un fichier en tant que `fonts.css` et collez le code intégré avec l’URL.
+   ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Enregistrez les modifications.
 
 >[!NOTE]
 >
-> Pour utiliser les polices personnalisées ajoutées dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente dans la variable **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option categories du dossier clientlib.
+> Pour utiliser les polices personnalisées ajoutées dans un formulaire adaptatif, assurez-vous que le nom de la bibliothèque cliente de la **[!UICONTROL Catégorie de bibliothèque cliente]** s’aligne sur le nom spécifié dans l’option Catégories du dossier clientlib.
 
-Les polices incluses sont désormais accessibles au formulaire adaptatif par le biais de la bibliothèque cliente de polices personnalisée suivante.
+Les polices incluses sont désormais accessibles au formulaire adaptatif par le biais de la bibliothèque cliente de polices personnalisées suivante.
 
 
 <!--

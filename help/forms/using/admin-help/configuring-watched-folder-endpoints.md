@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7192'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -240,8 +240,8 @@ Les sorties du dossier de contrôle peuvent être un document unique, une liste 
 
 Les administrateurs peuvent indiquer le type du fichier servant à appeler un service. Il est possible d’établir plusieurs modèles de fichier pour chaque dossier de contrôle. Un modèle de fichier peut être du type suivant :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques. Par exemple, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Fichiers portant des noms spécifiques. Par exemple, les données.&amp;ast;
+* Fichiers dotés d’extensions de nom de fichier spécifiques. Par exemple : &amp;ast;.dat, &amp;ast;.xml et &amp;ast;.pdf
+* Fichiers portant des noms spécifiques. Par exemple : data.&amp;ast;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
    * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;

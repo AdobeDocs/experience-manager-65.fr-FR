@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2593'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -168,32 +168,32 @@ L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un
 
 Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un flux Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) pour envoyer des données à un flux Power Automate.
 
-## Envoyer à la liste SharePoint Microsoft®{#submit-to-sharedrive}
+## Soumettre à la liste Microsoft® SharePoint{#submit-to-sharedrive}
 
 >[!NOTE]
 >
-La fonction Envoyer à Microsoft® SharePoint List a été introduite avec AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+La fonction Envoyer à une liste Microsoft® SharePoint a été introduite avec AEM 6.5 Forms pack de services 19 (6.5.19.0).
 
-La variable **[!UICONTROL Envoyer à SharePoint]** l’action d’envoi connecte un formulaire adaptatif à un stockage SharePoint Microsoft®. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
+L’action d’envoi **[!UICONTROL Envoyer à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
-### Connexion d’un formulaire adaptatif à une liste SharePoint Microsoft® {#connect-af-sharepoint-list}
+### Connecter un formulaire adaptatif à une liste Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Pour connecter un formulaire adaptatif à la liste SharePoint Microsoft® :
+Pour connecter un formulaire adaptatif à une liste Microsoft® SharePoint, procédez comme suit :
 
-1. [Création d’une configuration de liste SharePoint](#create-sharepoint-list-configuration): il connecte AEM Forms à votre stockage de liste Microsoft® SharePoint.
-1. [Utilisez la variable **Envoyer à l’aide du modèle de données de formulaire** action d’envoi dans un formulaire adaptatif](#use-submit-using-fdm): envoie vos données de formulaire adaptatif à Microsoft® SharePoint configuré.
+1. [Créer une configuration de liste SharePoint](#create-sharepoint-list-configuration) : connecte AEM Forms à votre stockage de listes Microsoft® SharePoint.
+1. [Utilisez l’action d’envoi **Envoyer à l’aide d’un modèle de données de formulaire** dans un formulaire adaptatif](#use-submit-using-fdm) : envoie les données de votre formulaire adaptatif au stockage Microsoft® SharePoint configuré.
 
-#### Création d’une configuration de liste SharePoint {#create-sharepoint-list-configuration}
+#### Créer une configuration de liste SharePoint {#create-sharepoint-list-configuration}
 
-Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme suit :
+Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
-1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Sélectionnez un **conteneur de configuration**. La configuration est stockée dans le conteneur de configuration sélectionné.
-1. Cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Liste SharePoint]** dans la liste déroulante. L’assistant de configuration SharePoint s’affiche.
+1. Cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Liste SharePoint]** dans la liste déroulante. L’assistant de configuration SharePoint s’affiche.
 1. Spécifiez le **[!UICONTROL titre]**, l’**[!UICONTROL ID client]**, le **[!UICONTROL secret client]** et l’**[!UICONTROL URL OAuth]**. Pour savoir comment récupérer l’ID client et le secret client pour l’URL OAuth, consultez la [documentation Microsoft®](https://learn.microsoft.com/fr-fr/graph/auth-register-app-v2).
    * Vous pouvez récupérer l’`Client ID` et le `Client Secret` de votre application sur le portail Microsoft® Azure.
    * Sur le portail Microsoft® Azure, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Remplacez `[author-instance]` par l’URL de votre instance de création.
-   * Ajout des autorisations d’API `offline_access` et `Sites.Manage.All` dans le **Graphique Microsoft®** pour fournir des autorisations de lecture/écriture. Ajouter `AllSites.Manage` dans la fonction **Sharepoint** pour interagir à distance avec les données SharePoint.
+   * Ajoutez les autorisations d’API `offline_access` et `Sites.Manage.All` dans l’onglet **Graphique Microsoft®** pour fournir des autorisations de lecture/écriture. Ajoutez l’autorisation `AllSites.Manage` dans l’onglet **Sharepoint** pour interagir à distance avec les données SharePoint.
    * Utilisez l’URL OAuth `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacez `<tenant-id>` par le `tenant-id` de votre application depuis le portail Microsoft® Azure.
 
      >[!NOTE]
@@ -201,27 +201,27 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint, procédez comme 
      Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
-1. Sélectionner **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
-1. Appuyer **[!UICONTROL Créer]** pour créer la configuration cloud pour Microsoft® SharePointList.
+1. Sélectionnez **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
+1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour la liste Microsoft® SharePoint.
 
-#### Utilisation de l’option Envoyer à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif {#use-submit-using-fdm}
+#### Utiliser l’option Soumettre à l’aide d’un modèle de données de formulaire dans un formulaire adaptatif {#use-submit-using-fdm}
 
-Vous pouvez utiliser la configuration Liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou générer un document d’enregistrement dans une liste SharePoint. Effectuez les étapes suivantes pour utiliser une configuration de stockage Liste SharePoint dans un formulaire adaptatif comme suit :
+Vous pouvez utiliser la configuration de liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Suivez les étapes ci-dessous pour utiliser une configuration de stockage de listes SharePoint dans un formulaire adaptatif :
 
-1. [Création d’un modèle de données de formulaire à l’aide de Microsoft](/help/forms/using/create-form-data-model.md)
-1. [Configuration du modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/using/work-with-form-data-model.md#configure-services)
-1. [Création d’un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
-1. [Configuration de l’action Envoyer à l’aide d’un modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
+1. [Créer un modèle de données de formulaire à l’aide de Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Configurer le modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/using/work-with-form-data-model.md#configure-services)
+1. [Créez un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
+1. [Configurer l’action de soumission à l’aide d’un modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage de liste Microsoft® SharePoint spécifié.
+Lorsque vous soumettez le formulaire, les données sont enregistrées dans le stockage de listes Microsoft® SharePoint que vous avez spécifié.
 
 >[!NOTE]
 >
-Dans Microsoft® SharePoint List, les types de colonnes suivants ne sont pas pris en charge :
-* colonne image
-* colonne de métadonnées
-* colonne person
-* colonne de données externes
+Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
+* Colonne image
+* Colonne métadonnées
+* Colonne personne
+* Colonne données externes
 
 
 >[!NOTE]
@@ -236,7 +236,7 @@ La fonction de revalidation côté serveur permet également d’exécuter les v
 
 ### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
 
-Toutes les validations de champ d’usine d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
+Toutes les validations de champ prêtes à l’emploi d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
 
 * Requis
 * Clause d’image de validation

@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 48%
 
 ## Prérequis {#prerequisites}
 
-* [Création de lots OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+* [Créer des lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 * [Développement de composants AEM](/help/sites-developing/components.md)
 * [Création de formulaires adaptatifs](../../forms/using/creating-adaptive-form.md)
 * [Création d’un formulaire adaptatif](../../forms/using/introduction-forms-authoring.md)
@@ -29,8 +29,8 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
 1. Créez un projet avec les modules suivants :
 
-   * Le lot contenant la logique pour remplir la liste déroulante, qui dans ce cas est une servlet.
-   * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource déroulante. Le servlet pointe vers cette ressource.
+   * Le lot contenant la logique pour remplir la liste déroulante, qui dans ce cas est un servlet.
+   * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource de liste déroulante. Le servlet pointe vers cette ressource.
 
 1. Créez un servlet basé sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
 
@@ -147,10 +147,10 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    ![Création d’un nœud de liste déroulante](assets/dropdown-node.png)
 
-1. Regroupez le noeud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple, /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
-1. Créez un formulaire adaptatif et ajoutez-y deux listes déroulantes, Pays et Etat. La liste Pays peut inclure les noms des pays. La liste Etat peut remplir de manière dynamique les noms des états du pays sélectionné dans la première liste.
+1. Empaquetez le nœud de contenu et incorporez le fichier .jar à un emplacement spécifique (par exemple /apps/myfolder/demo/install/). Déployez le même fichier sur le serveur.
+1. Créez un formulaire adaptatif et ajoutez deux listes déroulantes, Pays et État, à ce dernier. La liste Pays peut inclure les noms des pays. La liste État peut remplir de manière dynamique les noms des états du pays sélectionné dans la première liste.
 
-   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir en fonction du nom du pays dans la liste Pays.
+   Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste État, ajoutez un script pour la remplir en fonction du nom du pays dans la liste Pays.
 
    ![Ajout de noms de pays](assets/country-dropdown.png) ![Ajout d’un script pour renseigner les noms d’état](assets/state-dropdown.png) ![Listes déroulantes Pays et États ensemble ](assets/2dropdowns.png)
 

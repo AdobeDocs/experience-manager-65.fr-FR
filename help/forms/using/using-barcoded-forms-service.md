@@ -9,7 +9,7 @@ feature: Document Services
 exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
 ht-degree: 100%
 

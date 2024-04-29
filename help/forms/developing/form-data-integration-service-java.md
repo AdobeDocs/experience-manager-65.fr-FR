@@ -9,9 +9,9 @@ role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Le démarrage rapide de la programmation avec AEM forms repose sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides de Programmation avec AEM Forms sont basés sur le serveur Forms Server déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Didacticiel de mise en route (mode SOAP) : importer des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire du PDF est enregistré en tant que fichier de PDF nommé *ResultLoanForm.pdf*. (Consultez la section [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data)).
+L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire PDF est enregistré au format PDF, sous le nom *ResultLoanForm.pdf*. (Consultez la section [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data)).
 
 ```java
  /*

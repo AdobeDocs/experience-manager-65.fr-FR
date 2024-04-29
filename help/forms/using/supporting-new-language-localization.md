@@ -10,9 +10,9 @@ role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Deux méthodes permettent d’identifier les paramètres régionaux du formulair
 * en examinant les paramètres ci-dessous dans l’ordre spécifié :
 
    * Paramètre de requête `afAcceptLang`
-Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vous pouvez transmettre le paramètre de requête `afAcceptLang` afin de forcer les paramètres régionaux. Par exemple, l’URL suivante est forcée de rendre le formulaire dans les paramètres régionaux japonais :
+Pour remplacer la langue du navigateur des utilisateurs et des utilisatrices, vous pouvez transmettre le paramètre de requête `afAcceptLang` afin de forcer les paramètres régionaux. Par exemple, l’URL ci-dessous a forcé le rendu du formulaire dans les paramètres régionaux japonais :
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La langue du navigateur défini pour l’utilisateur, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
@@ -56,7 +56,7 @@ Une fois que le paramètre régional est identifié, le formulaire adaptatif sé
 
 En l’absence d’informations sur les paramètres régionaux, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
-S’il n’existe pas de bibliothèque cliente pour le paramètre régional nécessaire, il cherche une bibliothèque cliente correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), s’il existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
+S’il n’existe pas de bibliothèque cliente pour les paramètre régional nécessaire, il cherche une bibliothèque cliente correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional demandé est `en_ZA` (anglais d’Afrique du Sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge {#add-localization-support-for-non-supported-locales}
 
@@ -128,7 +128,7 @@ Redémarrez le serveur AEM pour que les paramètres régionaux ajoutés entrent 
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Exemples de bibliothèques pour ajouter la prise en charge de l’espagnol {#sample-libraries-for-adding-support-for-spanish}
 

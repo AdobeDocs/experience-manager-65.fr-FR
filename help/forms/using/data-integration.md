@@ -9,7 +9,7 @@ feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
 ht-degree: 100%
 

@@ -1,6 +1,6 @@
 ---
 title: Présentation du démarrage rapide de lʼAPI Java™
-description: Découvrez comment les opérations AEM Forms peuvent être effectuées à l’aide d’AEM Forms Java&trade ; API fortement typée activée avec connexion SOAP.
+description: Découvrez comment les opérations AEM Forms peuvent être effectuées à l’aide de l’API Java™ fortement typée d’AEM Forms activée et avec une connexion définie sur SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Le démarrage rapide de l’API Adobe AEM Forms peut vous aider à accélérer
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
-Le didacticiel de mise en route de l’API Java™, très typé, fournit une liste des fichiers JAR requis pour exécuter l’application Java™. La plupart des démarrages rapides Java™ sont des applications de console qui s’exécutent dans `main`. Toutefois, le démarrage rapide de l’API Java™ Forms, très typé, est mis en oeuvre sous la forme d’une servlet Java™ qui s’exécute dans une application web.
+Le démarrage rapide de lʼAPI Java™ fortement typée fournit une liste des fichiers JAR requis pour exécuter l’application Java™. La plupart des démarrages rapides Java™ sont des applications de console qui s’exécutent dans `main`. Toutefois, le démarrage rapide de l’API fortement typée Forms Java™ est implémenté en tant que servlet Java™ qui s’exécute dans une application web.
 
 La liste des fichiers JAR se trouve dans une section de commentaires située au début du démarrage rapide. Par exemple, le commentaire suivant se trouve dans un démarrage rapide du service Output et reprend une liste de fichiers JAR standard que lʼon trouve dans chaque démarrage rapide Java™.
 

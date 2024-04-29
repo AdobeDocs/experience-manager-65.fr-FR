@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '904'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Dans cette procédure :
    `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administration système peut l’avoir modifié.
-1. Lorsque vous êtes invité à `Trust this certificate? [no]`, type `yes`. La confirmation « Le certificat a été ajouté au magasin de clés » s’affiche.
+1. À l’invite `Trust this certificate? [no]`, saisissez `yes`. La confirmation « Le certificat a été ajouté au magasin de clés » s’affiche.
 1. Si vous vous connectez via SSL depuis Workbench, installez le certificat sur l’ordinateur Workbench.
 1. Dans un éditeur de texte, ouvrez les fichiers suivants pour les modifier :
 

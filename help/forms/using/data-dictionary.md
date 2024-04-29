@@ -8,9 +8,9 @@ feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3842'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    * Seul le type composite est autorisé en tant que DDE de niveau supérieur dans un dictionnaire de données.
    * Le nom, le nom de référence et le type d’élément sont des champs obligatoires pour un dictionnaire de données et des DDE.
    * Le nom de référence doit être unique.
-   * Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
+   * Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
    * Les énumérations contiennent uniquement des types de chaînes primitifs.
 
    Pour plus d’informations sur les éléments composites, de collection ou primitifs et l’utilisation d’éléments de dictionnaire de données, consultez la section [Mapper des éléments du dictionnaire de données avec le schéma XML](#mappingddetoschema).
@@ -465,7 +465,7 @@ L’Éditeur du dictionnaire de données impose les validations suivantes lors d
 * Les éléments Composite et Collection ne sont pas autorisés au niveau de la feuille. Seuls les éléments de type primitif (chaîne, date, nombre, booléen) sont autorisés au niveau de la feuille. Cette validation permet de s’assurer qu’il n’existe aucun élément Composite et Collection sans DDE enfant.
 * Lors du chargement d’un fichier XSD pour créer un dictionnaire de données, l’Éditeur de dictionnaire de données invite à importer un seul élément de niveau supérieur, s’il en existe plusieurs, afin de créer le dictionnaire de données.
 * Le nom est le seul paramètre obligatoire pour un dictionnaire de données.
-* Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
+* Un DDE parent (composite) ne peut pas avoir deux enfants portant le même nom.
 * Fait en sorte qu’un DDE soit marqué comme calculé, dans le cas où il ne s’agit pas d’un paramètre obligatoire. Un élément obligatoire ne peut pas être calculé et un élément calculé ne peut pas être obligatoire. Aussi, les éléments Collection et Composite ne peuvent pas être des éléments calculés.
 * L’Éditeur de dictionnaire de données fait en sorte qu’un DDE soit marqué comme obligatoire uniquement lorsqu’il n’est pas calculé. Il s’assure également qu’il n’est pas l’élément de collection collectionElement indiquant le type de collection (c’est-à-dire le seul enfant d’un élément de collection).
 * Les clés vides ou dupliquées ne sont pas autorisées dans les propriétés étendues d’un dictionnaire de données ou d’un DDE.

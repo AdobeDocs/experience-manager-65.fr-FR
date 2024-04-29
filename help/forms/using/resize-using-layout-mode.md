@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -30,14 +30,14 @@ Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants 
 Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de l’interface de création de formulaires adaptatifs, à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
-1. Créez un [formulaire adaptatif](../../forms/using/creating-adaptive-form.md) ou ouvrez un fichier existant.
+1. Créez un [formulaire adaptatif](../../forms/using/creating-adaptive-form.md) ou ouvrez-en un déjà existant.
 1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
    ![Mode Mise en page](assets/layout_mode_ic_new.png)
 
 ## Redimensionnement des composants {#resize-components}
 
-1. En mode Mise en page, sélectionnez le composant à redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
+1. En mode Disposition, sélectionnez le composant à redimensionner.  Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated1.png)
@@ -59,7 +59,7 @@ Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de
 **Objectif :** vous souhaitez insérer un composant tableau ainsi qu’un composant image et les positionner en parallèle dans un formulaire adaptatif.
 
 1. Insérez les composants tableau et image à l’aide du mode Modifier dans le formulaire adaptatif. Le composant d’image s’affiche après le composant de tableau.
-1. Passez en mode Disposition et sélectionnez le composant Tableau . Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
+1. Basculez en mode Disposition et sélectionnez le composant Tableau. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
 1. Faites glisser et déposez le point bleu de la colonne 12 vers la colonne 6 de la grille réactive.
 
    ![Définition du point de fin du tableau](assets/layout_mode_end_point_table_new.png)
@@ -68,13 +68,13 @@ Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de
 
    ![Tableau et image en parallèle en mode Mise en page](assets/table_image_parallel_new.png)
 
-   Vous pouvez sélectionner le composant Image et sélectionner la variable **Flotter sur une nouvelle ligne** option disponible dans la barre d’outils pour déplacer le composant Image vers la ligne suivante.
+   Vous pouvez sélectionner le composant Image et sélectionner l’option **Flotter sur une nouvelle ligne** disponible dans la barre d’outils afin de décaler le composant Image vers la ligne suivante.
 
 ## Redimensionnement des panneaux {#resize-panels-layout-mode}
 
-Effectuez les étapes suivantes si vous souhaitez redimensionner l’ensemble du panneau au lieu de composants distincts :
+Si vous souhaitez redimensionner l’ensemble du panneau au lieu de composants distincts, procédez comme suit :
 
-1. Sélectionnez l’un des composants du panneau que vous souhaitez redimensionner, puis sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez la première option de la liste déroulante, si le panneau est le parent immédiat du composant.
+1. Sélectionnez n’importe quel composant situé dans le panneau que vous souhaitez redimensionner, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez la première option dans la liste déroulante, si le panneau est le parent immédiat du composant.
 
    Les points bleus s’affichent au début et à la fin de la grille réactive.
 
@@ -85,13 +85,13 @@ Vous pouvez répéter les étapes 1 et 2 et sélectionner ![Sélectionner le pa
 
 Pour définir le nombre de colonnes d’un panneau, procédez comme suit :
 
-1. Dans **[!UICONTROL Modifier]** mode, sélectionnez le panneau, sélectionnez ![Configurer](assets/configure_icon.png), puis sélectionnez **[!UICONTROL Réactif : tout sur la page sans navigation]** de l’option **[!UICONTROL Disposition du panneau]** liste déroulante.
+1. En mode **[!UICONTROL Édition]**, sélectionnez le panneau, sélectionnez ![Configurer](assets/configure_icon.png), puis l’option **[!UICONTROL Réactif - tout sur la page sans navigation]** dans la liste déroulante **[!UICONTROL Disposition du panneau]**.
 
-1. Sélectionner ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Sélectionnez ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-1. Dans le **[!UICONTROL Disposition]** , sélectionnez l’un des composants du panneau, puis ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez le panneau .
+1. En mode **[!UICONTROL Disposition]**, sélectionnez n’importe quel composant du panneau, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg), puis sélectionnez le panneau.
 
-1. Sélectionner ![multi-colonne](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une disposition à plusieurs colonnes.
+1. Sélectionnez ![Colonnes multiples](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une disposition à plusieurs colonnes.
 
 ![plusieurs colonnes en mode de mise en page](assets/multi-column-layout.png)
 
@@ -106,7 +106,7 @@ Activez la nouvelle grille réactive pour les formulaires que vous créez à l�
 Pour activer la nouvelle grille réactive, procédez comme suit :
 
 1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Une confirmation s’affiche pour activer le mode Mise en page.
-1. Sélectionner **Oui** pour activer la variable **Disposition** du formulaire.
+1. Sélectionnez **Oui** pour activer le mode **Disposition** pour le formulaire.
 
 ### Incorporer un ancien fragment dans un formulaire adaptatif avec une nouvelle disposition réactive {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -116,7 +116,7 @@ La nouvelle disposition réactive pour le formulaire adaptatif vous permet d’a
 
 Si vous incorporez un fragment avec la nouvelle disposition réactive dans un formulaire adaptatif avec une ancienne disposition réactive, le système vous invite à activer le mode Disposition pour le formulaire et à réincorporer le fragment.
 
-Pour activer le mode Mise en page, sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut à côté de la **Aperçu** et sélectionnez **Oui** pour confirmer. Sélectionnez le mode **Édition** pour réincorporer le fragment.
+Pour activer le mode Disposition, sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser** et appuyez sur **Oui** pour confirmer. Sélectionnez le mode **Édition** pour réincorporer le fragment.
 
 ## Désactivation du mode Mise en page pour les formulaires avec une ancienne disposition réactive {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,9 +125,9 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de documents dans le volet de gauche, puis sélectionnez **[!UICONTROL Stratégie.]**
+1. Sélectionnez le conteneur de document dans le volet de gauche, puis sélectionnez **[!UICONTROL Politique.]**
 
-   ![Désactivation du mode Mise en page](assets/policy_disable_layout_mode.png)
+   ![Désactivation du mode Disposition](assets/policy_disable_layout_mode.png)
 
-1. Sélectionnez la variable **[!UICONTROL Paramètres de mise en page]** et sélectionnez **[!UICONTROL Désactiver le mode Mise en page]**.
-1. Sélectionner ![Enregistrer les modifications](assets/save_icon.png) pour enregistrer les propriétés du modèle.
+1. Sélectionnez l’onglet **[!UICONTROL Paramètres de disposition]** puis sélectionnez **[!UICONTROL Désactiver le mode Disposition]**.
+1. Sélectionnez ![Enregistrer les modifications](assets/save_icon.png) pour enregistrer les propriétés du modèle.

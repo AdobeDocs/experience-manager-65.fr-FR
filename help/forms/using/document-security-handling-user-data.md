@@ -1,15 +1,15 @@
 ---
 title: Document Security | Gestion des données utilisateur
-description: Découvrez comment AEM Forms Document Security vous permet de gérer les données utilisateur et les entrepôts de données, ainsi que d’accéder, de supprimer et d’exporter des données utilisateur.
+description: Découvrez comment AEM Forms Document Security vous permet de gérer les données utilisateur et les magasins de données, ainsi que d’accéder, de supprimer et d’exporter des données utilisateur.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Forms Document Security vous permet de créer, de stocker et d’applique
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-Document Security stocke les stratégies et les données relatives aux documents protégés, y compris les données utilisateur dans une base de données, comme MySQL, Oracle, MS® SQL Server et IBM® DB2®. En outre, les données relatives aux utilisateurs et aux utilisatrices autorisés dans une politique sont stockées dans le composant User Management. Pour plus d’informations sur les données stockées dans User Management, consultez la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
+Document Security stocke les politiques et les données relatives aux documents protégés, y compris les données utilisateur, dans une base de données telle que MySQL, Oracle, MS® SQL Server ou IBM® DB2®. En outre, les données relatives aux utilisateurs et aux utilisatrices autorisés dans une politique sont stockées dans le composant User Management. Pour plus d’informations sur les données stockées dans User Management, consultez la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
 
 Le tableau suivant indique comment Document Security organise les données dans les tables de base de données.
 
@@ -37,7 +37,7 @@ Le tableau suivant indique comment Document Security organise les données dans
   </tr>
   <tr>
    <td><code>EdcAuditEntity</code></td>
-   <td>Stocke des informations sur le contrôle des événements tels que les événements utilisateur, les événements de document et les événements de stratégie.</td>
+   <td>Stocke des informations sur les événements de contrôle tels que les événements utilisateur, les événements de document et les événements de politique.</td>
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
@@ -80,9 +80,9 @@ Le tableau suivant indique comment Document Security organise les données dans
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Vous pouvez accéder aux données Document Security et les exporter pour les utilisateurs dans les bases de données et, si nécessaire, les supprimer définitivement.
+Vous pouvez accéder aux données Document Security et les exporter pour les utilisateurs et les utilisatrices dans les bases de données. Vous pouvez aussi les supprimer définitivement le cas échéant.
 
-Pour exporter ou supprimer des données utilisateur d’une base de données, vous devez vous connecter à la base de données à l’aide d’un client de base de données et rechercher l’identifiant principal en fonction de certaines informations d’identification personnelle de l’utilisateur. Par exemple, pour récupérer l’ID principal d’un utilisateur à l’aide d’un ID de connexion, exécutez la commande `select` suivante sur la base de données.
+Pour exporter ou supprimer des données utilisateur d’une base de données, vous devez vous connecter à la base de données à l’aide d’un client de base de données et rechercher l’identifiant principal en fonction de certaines informations d’identification personnelle de l’utilisateur ou de l’utilisatrice. Par exemple, pour récupérer l’ID principal d’un utilisateur à l’aide d’un ID de connexion, exécutez la commande `select` suivante sur la base de données.
 
 Dans la commande `select`, remplacez `<user_login_id>` par l’ID de connexion de l’utilisateur dont vous souhaitez récupérer l’ID principal depuis le tableau de la base de données `EdcPrincipalUserEntity`.
 
@@ -94,11 +94,11 @@ Une fois que vous connaissez l’identifiant principal, vous pouvez exporter ou 
 
 ### Exporter les données utilisateur {#export-user-data}
 
-Exécutez les commandes de base de données suivantes afin de pouvoir exporter les données utilisateur d’un ID principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez exporter les données.
+Exécutez les commandes de base de données suivantes pour exporter les données utilisateur d’un identifiant principal à partir des tables de base de données. Dans la commande `select`, remplacez `<principal_id>` par l’ID principal de l’utilisateur ou de l’utilisatrice dont vous souhaitez exporter les données.
 
 >[!NOTE]
 >
->Les commandes suivantes utilisent des noms de table de base de données dans les bases de données My SQL et IBM® DB2®. Lors de l’exécution de ces commandes sur les bases de données Oracle et MS® SQL, remplacez `EdcPolicySetPrincipalEntity` avec `EdcPolicySetPrincipalEnt` dans les commandes.
+>Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM® DB2®. Lors de l’exécution de ces commandes sur les bases de données Oracle et MS® SQL, remplacez `EdcPolicySetPrincipalEntity` par `EdcPolicySetPrincipalEnt` dans les commandes.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -132,8 +132,8 @@ Pour obtenir des informations complètes sur un utilisateur du système, vous de
 
 Procédez comme suit pour supprimer les données Document Security d’un identifiant principal des tables de la base de données.
 
-1. Arrêtez le serveur AEM Forms.
-1. Exécutez les commandes de base de données suivantes afin de pouvoir supprimer les données de l’ID principal des tables de base de données pour Document Security. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
+1. Arrêtez AEM Forms Server.
+1. Exécutez les commandes de base de données suivantes pour supprimer les données de l’identifiant principal des tables de base de données pour Document Security. Dans la commande `Delete`, remplacez `<principal_id>` par l’ID principal de l’utilisateur dont vous souhaitez supprimer les données.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -154,12 +154,12 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 1. Les fichiers XML de politique actifs et archivés sont stockés dans les tableaux de base de données `EdcPolicyXmlEntity` et `EdcPolicyArchiveEntity`, respectivement. Pour supprimer les données d’un utilisateur de ces tables, procédez comme suit :
 
    1. Ouvrez l’objet Blob XML de chaque ligne dans le tableau `EdcPolicyXMLEntity` ou `EdcPolicyArchiveEntity` et extrayez le fichier XML. Le fichier XML ressemble à l’un des fichiers ci-dessous.
-   1. Modifiez le fichier XML afin de pouvoir supprimer l’objet Blob de l’ID principal.
+   1. Modifiez le fichier XML pour supprimer l’objet blob de l’identifiant principal.
    1. Répétez les étapes 1 et 2 pour l’autre fichier.
 
    >[!NOTE]
    >
-   >Supprimez l’objet Blob complet dans la fonction `Principal` La balise pour un ID principal ou le code XML de stratégie peut être corrompue ou inutilisable.
+   >Vous devez supprimer l’intégralité de l’objet blob dans la balise `Principal` pour un identifiant principal ou la politique XML risque d’être endommagée ou inutilisable.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -192,7 +192,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    **Utilisation de la console d’administration**
 
-   1. En tant qu’administrateur, connectez-vous à la console d’administration de Forms JEE à l’adresse https://[*server*]:[*port*]/adminui.
+   1. Connectez-vous en tant qu’administrateur ou administratrice à la console d’administration de Forms JEE à l’adresse suivante : //[*server*]:[*port*]/adminui.
    1. Accédez à **[!UICONTROL Services > Document Security > Jeux de politique]**.
    1. Ouvrez un jeu de politiques et supprimez l’utilisateur ou l’utilisatrice de la politique.
 
@@ -200,7 +200,7 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
 
    Les utilisateurs et utilisatrices de Document Security autorisés à créer des politiques personnelles peuvent supprimer des données utilisateur de leurs politiques. Pour ce faire :
 
-   1. Les utilisateurs qui disposent de stratégies personnelles se connectent à leur page Web Document Security à l’adresse https://[*server*]:[*port*]/edc.
+   1. Les utilisateurs et utilisatrices possédant des politiques personnelles peuvent se connecter à leur page Web de Document Security à l’adresse suivante : https://[*server*]:[*port*]/edc.
    1. Accédez à **[!UICONTROL Services > Document Security > Mes politiques]**.
    1. Ouvrez une politique et supprimez l’utilisateur de la politique.
 
@@ -209,4 +209,4 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
    >Les administrateurs peuvent rechercher des données utilisateur de politiques personnelles d’autres utilisateurs, y accéder et les supprimer dans **[!UICONTROL Services > Document Security > Mes politiques]** à l’aide de la console d’administration.
 
 1. Supprimez les données de l’ID principal de la base de données User Management. Pour obtenir des instructions détaillées, reportez-vous à la section [Forms User Management : gérer les données utilisateur](/help/forms/using/user-management-handling-user-data.md).
-1. Démarrez le serveur AEM Forms.
+1. Démarrez AEM Forms Server.

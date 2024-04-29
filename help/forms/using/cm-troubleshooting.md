@@ -1,6 +1,6 @@
 ---
-title: "Correspondence Management\_: dépannage"
-description: Découvrez comment gérer les erreurs qui apparaissent pendant le processus d’enregistrement d’une lettre dans un environnement AEM Forms.
+title: '« Correspondence Management : dépannage »'
+description: Découvrez comment gérer les erreurs qui apparaissent pendant le processus d’enregistrement d’une lettre dans un environnement AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -8,9 +8,9 @@ feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
@@ -20,34 +20,34 @@ ht-degree: 17%
 
 ### Problème {#issue}
 
-L’une des erreurs suivantes s’affichait lors de l’enregistrement d’une lettre :
+L’une des erreurs suivantes s’est affichée lors de l’enregistrement d’une lettre :
 
-* Liaison de données non présente pour le module de texte
-* Fournissez les informations de propriété nécessaires aux éléments suivants :
+* La liaison de données n’est pas définie pour le module de texte.
+* Fournissez les informations de propriété nécessaires pour les éléments suivants.
 
 ### Raison {#reason}
 
-Ces erreurs peuvent se produire en raison de l’une des raisons suivantes :
+Ces erreurs peuvent se produire à cause de l’une des raisons suivantes :
 
-* Un dictionnaire de données est lié à la lettre mais n’est pas présent sur le serveur.
-* Un dictionnaire de données est lié à la lettre, mais son nom comporte un trait de soulignement (_).
+* Un dictionnaire de données est associé à la lettre, mais n’est pas présent sur le serveur.
+* Un dictionnaire de données est associé à la lettre, mais son nom comporte un caractère de soulignement (_).
 
 ### Solution {#workaround}
 
-Assurez-vous que le dictionnaire de données que vous utilisez dans la lettre est présent sur le serveur et que son nom ne comporte pas de trait de soulignement (_).
+Assurez-vous que le dictionnaire de données utilisé dans la lettre est présent sur le serveur et que son nom ne comporte aucun trait de soulignement (_).
 
 ## Erreur lors de la prévisualisation d’une lettre {#error-when-previewing-a-letter}
 
 ### Problème {#issue-1}
 
-Lors de l’aperçu d’une lettre, l’erreur &quot;Erreur lors du chargement de la lettre : impossible d’importer une ressource à partir d’une entrée XML&quot; s’affiche même lorsqu’une ressource de texte précédemment non publiée dans la lettre est publiée.
+Lors de la prévisualisation d’une lettre, l’erreur « Erreur lors du chargement de la lettre : import de la ressource impossible depuis l’entrée XML » apparaît même lorsqu’une ressource de texte précédemment non publiée dans la lettre est publiée.
 
 ### Solution {#workaround-1}
 
-Réinitialisez le cache de lettres sur l’instance de publication en procédant comme suit, puis réessayez d’afficher la lettre :
+Réinitialisez le cache de lettre sur l’instance de publication en suivant les étapes ci-après, puis réessayez d’afficher la lettre :
 
 1. Accédez à **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** et connectez-vous en tant qu’administrateur.
 1. Sélectionnez **Configurations de Correspondence Management**.
 1. Dans **Configurations de Correspondence Management**, désactivez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
-1. Vérifier **Enable Letter Cache** puis cliquez sur **Enregistrer**.
+1. Cochez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
 1. Réessayez d’afficher la lettre.

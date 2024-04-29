@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en
 
 Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
-* **Outils** > **Général** > **Éditeur de requêtes GraphQL**
+* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
 * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -85,7 +85,7 @@ Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécut
 
 Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
 
-* cliquez sur le bouton **Exécuter la requête** icon
+* cliquez sur l’icône **Exécuter la requête** ;
 * utilisez la combinaison de clavier `Control-Enter`.
 
 ## Variables de requête {#query-variables}

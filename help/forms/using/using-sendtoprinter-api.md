@@ -1,6 +1,6 @@
 ---
 title: Utiliser l’API sendToPrinter
-description: Utilisation du service sendToPrinter pour envoyer un document vers l’imprimante.
+description: Utiliser le service sendToPrinter pour envoyer un document à l’imprimante.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -8,9 +8,9 @@ feature: Document Services
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 58%
 
 ## Présentation {#overview}
 
-Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un document vers l’imprimante. Le service SendToPrinter prend en charge les mécanismes d’accès aux imprimantes suivants :
+Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un document à l’imprimante. Le service SendToPrinter prend en charge les mécanismes d’accès à l’impression suivants :
 
 * **Imprimante accessible directement** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
@@ -34,34 +34,34 @@ Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un do
 
 ## Utilisation du service SendToPrinter {#using-sendtoprinter-service}
 
-Le tableau ci-dessous répertorie :
+Le tableau ci-dessous répertorie les éléments suivants :
 
-* Informations sur printerName ou printServer à utiliser pour différents protocoles.
-* valeur ou exception qu’une imprimante renvoie pour différentes combinaisons de serveur d’imprimante URI et de nom de l’imprimante.
+* Informations sur le nom de l’imprimante ou le serveur d’impression à utiliser pour différents protocoles.
+* Valeur ou exception renvoyée par une imprimante pour diverses combinaisons d’URI du serveur d’imprimante et de nom de l’imprimante
 
 | Protocole (mécanisme d’accès) | URI du serveur d’impression (PrinterSpec.printServer) | Nom de l’imprimante (PrinterSpec.printerName) | Résultat |
 |--- |--- |--- |--- |
 | SharedPrinter | N’importe lequel | Vide | Exception : l’argument requis sPrinterName ne peut pas être vide. |
 | SharedPrinter | N’importe lequel | Non valide | Une exception indique que l’imprimante est introuvable. |
-| SharedPrinter | N’importe lequel | Valide | Tâche d’impression réussie. |
+| SharedPrinter | N’importe lequel | Valide | Travail d’impression réussi. |
 | LPD | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 | LPD | Non valide | Vide | une exception indiquant que l’argument requis sPrinterName ne peut pas être vide. |
 | LPD | Non valide | Pas vide | une exception indiquant que sPrintServerUri est introuvable. |
 | LPD | Valide | Non valide | une exception indiquant que l’imprimante est introuvable. |
-| LPD | Valide | Valide | Tâche d’impression réussie. |
+| LPD | Valide | Valide | Travail d’impression réussi. |
 | CUPS | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 | CUPS | Non valide | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
-| CUPS | Valide | N’importe lequel | Tâche d’impression réussie. |
+| CUPS | Valide | N’importe lequel | Travail d’impression réussi. |
 | DirectIP | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 | DirectIP | Non valide | N’importe lequel | une exception indiquant que l’imprimante est introuvable. |
-| DirectIP | Valide | N’importe lequel | Tâche d’impression réussie. |
-| CIFS | Valide | Vide | Tâche d’impression réussie. |
-| CIFS | Non valide | N’importe lequel | une erreur inconnue lors de l’impression à l’aide de CIF. |
+| DirectIP | Valide | N’importe lequel | Travail d’impression réussi. |
+| CIFS | Valide | Vide | Travail d’impression réussi. |
+| CIFS | Non valide | N’importe lequel | une erreur inconnue lors de l’impression à l’aide de CIFS. |
 | CIFS | Vide | N’importe lequel | une exception indiquant que l’argument requis sPrintServerUri ne peut pas être vide. |
 
 ## Prise en charge de l’authentification {#authentication-support}
 
-L’authentification est prise en charge uniquement pour l’impression CIF. Pour authentifier, indiquez vos nom d’utilisateur, mot de passe et domaine dans PrinterSpec. Vous pouvez chiffrer un mot de passe à l’aide du service Granite CryptoSupport AEM en procédant de la manière suivante :
+L’authentification est prise en charge uniquement pour l’impression CIFS. Pour authentifier, indiquez vos nom d’utilisateur, mot de passe et domaine dans PrinterSpec. Vous pouvez chiffrer un mot de passe à l’aide du service Granite CryptoSupport AEM en procédant de la manière suivante :
 
 1. Accédez à https://&lt;server>:&lt;port>/system/console.
 

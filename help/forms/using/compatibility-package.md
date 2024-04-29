@@ -10,9 +10,9 @@ role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Assurez-vous que le [package de compatibilité AEM](https://experienceleague.ado
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
    Pour plus d’informations, consultez la section [Utilitaire de migration](../../forms/using/migration-utility.md).
 

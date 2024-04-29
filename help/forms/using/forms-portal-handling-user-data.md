@@ -1,6 +1,6 @@
 ---
-title: Portail Forms | Gestion des données utilisateur
-description: Découvrez la gestion des données utilisateur telles que l’accès, la suppression et l’entrepôt de données sur AEM Forms Portal.
+title: Portail Formulaires | Gestion des données utilisateur
+description: Découvrez la gestion des données utilisateur telles que l’accès, la suppression et le stockage de données sur le portail AEM Forms.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,26 +8,26 @@ role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Portail Forms | Gestion des données utilisateur {#forms-portal-handling-user-data}
+# Portail Formulaires | Gestion des données utilisateur {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] Portal fournit des composants que vous pouvez utiliser pour répertorier les formulaires adaptatifs, les formulaires HTML5 et d’autres ressources Forms sur la [!DNL AEM Sites] page. Vous pouvez également le configurer pour qu’il affiche les formulaires adaptatifs sous forme de brouillons et envoyés ainsi que les formulaires HTML5 d’un utilisateur connecté. Pour plus d’informations sur Forms Portal, voir [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
+Le portail [!DNL AEM Forms] fournit des composants que vous pouvez utiliser pour répertorier les formulaires adaptatifs, les formulaires HTML5 et d’autres ressources Forms sur la page [!DNL AEM Sites]. Vous pouvez également le configurer pour qu’il affiche les formulaires adaptatifs sous forme de brouillons et envoyés ainsi que les formulaires HTML5 d’un utilisateur connecté. Pour plus d’informations sur le portail Formulaires et ses fonctionnalités, reportez-vous à la [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md).
 
-Lorsqu’un utilisateur connecté enregistre un formulaire adaptatif en tant que brouillon ou l’envoie, il s’affiche dans les onglets Brouillons et envois du portail Forms. Les données des formulaires sous forme de brouillons ou envoyés sont stockées dans le magasin de données configuré pour le déploiement AEM. Les brouillons et les envois des utilisateurs anonymes ne s’affichent pas sur la page du portail Forms. Toutefois, les données sont stockées dans l’entrepôt de données configuré. Consultez [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md).
+Lorsqu’une personne connectée enregistre un formulaire adaptatif en tant que brouillon ou l’envoie, il s’affiche dans les onglets Brouillons et envois sur le portail Formulaires. Les données des formulaires sous forme de brouillons ou envoyés sont stockées dans le magasin de données configuré pour le déploiement AEM. Les brouillons et les envois des utilisateurs et utilisatrices anonymes ne sont pas affichés sur la page du portail Formulaires, cependant les données sont stockées dans le magasin de données configuré. Consultez [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Données utilisateur et magasins de données {#user-data-and-data-stores}
 
-Forms Portal stocke les données des formulaires sous forme de brouillons et envoyés dans les scénarios suivants :
+Le portail Formulaires stocke les données des formulaires sous forme de brouillons de formulaires et de formulaires envoyés dans les cas suivants :
 
-* L’action d’envoi configurée dans le formulaire adaptatif est **Action d’envoi du portail Forms**.
-* Pour les actions d’envoi autres que **Action d’envoi du portail Forms**, la variable **[!UICONTROL Stockage des données dans Forms Portal]** est activée dans la variable **[!UICONTROL Envoi]** propriétés du conteneur de formulaires adaptatifs.
+* L’action d’envoi configurée dans le formulaire adaptatif est **Action d’envoi du portail Formulaires**.
+* Pour envoyer d’autres actions qu’une **Action d’envoi du portail Formulaires**, l’option **[!UICONTROL Stockage des données dans le portail Formulaires]** est activée dans les propriétés **[!UICONTROL Envoi]** du conteneur de formulaire adaptatif.
 
-Pour chaque brouillon et formulaire envoyé pour les utilisateurs connectés et anonymes, le portail Forms stocke les données suivantes :
+Pour chaque brouillon de formulaire et formulaire envoyé pour des utilisateurs et utilisatrices connectés et anonymes, le portail Formulaires stocke les données suivantes :
 
 * Métadonnées de formulaire telles que le nom du formulaire, le chemin d’accès au formulaire, l’ID de brouillon ou d’envoi, le chemin d’accès aux pièces jointes et l’ID des données utilisateur
 * Pièce jointe au formulaire en tant qu’octets de données
@@ -44,17 +44,17 @@ Selon la persistance du magasin de données configuré, les données de formulai
   </tr>
   <tr>
    <td><p>Valeur par défaut</p> </td>
-   <td><p>Référentiel AEM des instances d’auteur et de publication</p> </td>
+   <td><p>Référentiel AEM d’instances de création et de publication</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Distant</p> </td>
-   <td><p>Référentiel AEM des instances d’auteur et d’AEM distantes</p> </td>
+   <td><p>Référentiel AEM des instances de création et distantes</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Base de données</p> </td>
-   <td><p>Référentiel AEM de l’instance d’auteur et des tables de base de données</p> </td>
+   <td><p>Référentiel AEM d’instance de création et de tables de base de données</p> </td>
    <td>Tables de base de données <code>data</code>, <code>metadata</code> et <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -70,7 +70,7 @@ Toutes les données des formulaires envoyés et sous forme de brouillons enregis
 
 #### Accès aux données utilisateur {#access-user-data}
 
-Lorsqu’un utilisateur connecté enregistre un brouillon ou envoie un formulaire, un noeud enfant est créé avec son ID utilisateur. Par exemple, les données de brouillons et d’envois de Sarah Rose dont l’ID utilisateur est `srose` sont stockées dans le nœud `/content/forms/fp/srose/` du référentiel AEM. Dans le nœud de l’ID utilisateur, les données sont organisées dans une structure hiérarchique.
+Lorsqu’une personne connectée enregistre un formulaire en tant que brouillon ou l’envoie, un nœud enfant est créé avec son ID d’utilisateur ou d’utilisatrice. Par exemple, les données de brouillons et d’envois de Sarah Rose dont l’ID utilisateur est `srose` sont stockées dans le nœud `/content/forms/fp/srose/` du référentiel AEM. Dans le nœud de l’ID utilisateur, les données sont organisées dans une structure hiérarchique.
 
 Le tableau ci-dessous explique comment les données de tous les brouillons de `srose` sont stockées dans le référentiel AEM.
 
@@ -98,7 +98,7 @@ Les données de brouillon et d’envoi de tous les utilisateurs anonymes sont st
 
 ### Base de données {#database}
 
-Lorsque AEM est configuré pour stocker des données dans une base de données, les données de brouillon et d’envoi du portail Forms sont stockées dans les tables de base de données suivantes pour les utilisateurs connectés et anonymes :
+Lorsqu’AEM est configuré pour stocker des données dans une base de données, les données de brouillon et d’envoi du Portail Formulaires sont stockées dans les tables de base de données suivantes pour les utilisateurs et utilisatrices connectés et anonymes :
 
 * data
 * metadata

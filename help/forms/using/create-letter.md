@@ -7,7 +7,7 @@ feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3982'
 ht-degree: 100%
 

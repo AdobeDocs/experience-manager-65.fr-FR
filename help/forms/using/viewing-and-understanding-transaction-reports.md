@@ -8,13 +8,13 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '881'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Affichage et compréhension des rapports de transaction pour AEM Forms sur OSGi{#viewing-and-understanding-transaction-reports}
+# Afficher et comprendre les rapports de transaction pour AEM Forms sur OSGi{#viewing-and-understanding-transaction-reports}
 
 Les rapports de transaction vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L’objectif derrière le suivi de ces transactions est de prendre une décision éclairée concernant l’utilisation du produit et de réévaluer les investissements en matériel et en logiciels. Pour plus d’informations, voir [Présentation des rapports sur les transactions AEM Forms](../../forms/using/transaction-reports-overview.md).
 
@@ -89,6 +89,6 @@ Le rapport de transaction consigne toutes les informations affichées dans le ra
 
 ## Articles connexes {#related-articles}
 
-* [Présentation des rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-overview.md)
-* [API facturables pour les rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-billable-apis.md)
-* [Enregistrement d’une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-implementation.md)
+* [Vue d’ensemble des rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-overview.md)
+* [API facturables pour les rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-billable-apis.md)
+* [Enregistrer une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-implementation.md)

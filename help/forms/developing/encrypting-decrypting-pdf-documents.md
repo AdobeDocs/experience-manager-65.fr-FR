@@ -9,9 +9,9 @@ role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8133'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir un document PDF à chiffrer**
 
-Obtenez un document de PDF non chiffré pour chiffrer le document avec un mot de passe. Si vous essayez de sécuriser un document PDF déjà chiffré, une exception sera générée.
+Vous devez obtenir un document PDF non chiffré pour chiffrer le document avec un mot de passe. Si vous essayez de sécuriser un document PDF déjà chiffré, une exception sera générée.
 
 **Définir les options d’exécution du chiffrement**
 
@@ -85,7 +85,7 @@ Pour chiffrer un document PDF avec un mot de passe, vous devez indiquer quatre v
 
 Spécifiez les ressources de document PDF à chiffrer. Vous pouvez chiffrer l’intégralité du document PDF, à l’exception des métadonnées du document, ou uniquement des pièces jointes du document. Si vous chiffrez uniquement les pièces jointes du document, l’utilisateur est invité à saisir un mot de passe lorsqu’il essaie d’accéder aux pièces jointes.
 
-Lors du chiffrement d’un document PDF, vous pouvez indiquer les autorisations associées au document sécurisé. En spécifiant les autorisations, vous pouvez contrôler les actions qu’un utilisateur qui ouvre un document PDF chiffré par mot de passe est autorisé à effectuer. Par exemple, pour extraire les données de formulaire avec succès, vous devez définir les autorisations suivantes :
+Lors du chiffrement d’un document PDF, vous pouvez indiquer les autorisations associées au document sécurisé. En spécifiant les autorisations, vous pouvez contrôler les actions qu’un utilisateur qui ouvre un document PDF chiffré par mot de passe est autorisé à effectuer. Par exemple, pour extraire efficacement les données de formulaire, vous devez définir les autorisations suivantes :
 
 * PASSWORD_EDIT_ADD
 * PASSWORD_EDIT_MODIFY
@@ -139,7 +139,7 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
    * Créez un objet `PasswordEncryptionOptionSpec` en appelant son constructeur.
    * Indiquez les ressources du document PDF à chiffrer en appelant la méthode `setEncryptOption` de l’objet `PasswordEncryptionOptionSpec` et en transmettant une valeur d’énumération `PasswordEncryptionOption` spécifiant les ressources du document à chiffrer. Par exemple, pour chiffrer un document PDF entier, y compris ses métadonnées et ses pièces jointes, spécifiez `PasswordEncryptionOption.ALL`.
    * Créez un objet `java.util.List` qui stocke les autorisations de chiffrement à l’aide du constructeur `ArrayList`.
-   * Spécifiez une autorisation en appelant la méthode `add` de l’objet `java.util.List` et en transmettant une valeur d’énumération correspondant à l’autorisation que vous souhaitez définir. Par exemple, pour définir l’autorisation qui permet à un utilisateur de copier des données dans le document du PDF, spécifiez `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Répétez cette étape pour chaque autorisation à définir).
+   * Spécifiez une autorisation en appelant la méthode `add` de l’objet `java.util.List` et en transmettant une valeur d’énumération correspondant à l’autorisation que vous souhaitez définir. Par exemple, pour définir l’autorisation qui permet à un utilisateur ou une utilisatrice de copier des données contenues dans le document PDF, spécifiez `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Répétez cette étape pour chaque autorisation à définir).
    * Spécifiez l’option de compatibilité Acrobat en appelant la méthode `setCompatability` de l’objet `PasswordEncryptionOptionSpec` et en transmettant une valeur d’énumération indiquant le niveau de compatibilité Acrobat. Par exemple, vous pouvez spécifier `PasswordEncryptionCompatability.ACRO_7`.
    * Indiquez la valeur de mot de passe qui permet à l’utilisateur d’ouvrir le document PDF chiffré en appelant la méthode `setDocumentOpenPassword` de l’objet `PasswordEncryptionOptionSpec` et en transmettant une valeur de chaîne qui représente le mot de passe ouvert.
    * Indiquez la valeur de mot de passe principal qui permet à l’utilisateur de supprimer le chiffrement du document PDF en appelant la méthode `setPermissionPassword` de l’objet `PasswordEncryptionOptionSpec` et en transmettant une valeur de chaîne qui représente le mot de passe principal.
@@ -242,7 +242,7 @@ Le chiffrement par certificat vous permet de chiffrer le document pour des desti
 
 L’une des clés fait office de clé privée pour l’utilisateur. Il est important que seul l’utilisateur ait accès à cette clé. L’autre clé est la clé publique de l’utilisateur, qui peut être partagée avec d’autres utilisateurs.
 
-Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui fournit une mesure de confiance dans la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. L’état de révocation d’un certificat peut également être récupéré via le protocole OCSP (Online Certificate Status Protocol) sur le réseau.
+Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage des certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui garantit la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides. En outre, les listes de révocation des certificats (CRL) fournissent des informations sur les certificats révoqués avant leur date d’expiration. Les listes CRL sont publiées régulièrement par les autorités de certification. Vous pouvez également récupérer l’état de révocation d’un certificat par l’intermédiaire du protocole OCSP (Online Certificate Status Protocol, protocole d’état de certificat en ligne) sur le réseau.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir un document PDF à chiffrer**
 
-Obtenez un document de PDF non chiffré à chiffrer. Si vous tentez de sécuriser un document PDF déjà chiffré, une exception est générée.
+Vous devez obtenir un document PDF non chiffré à chiffrer. Si vous tentez de sécuriser un document PDF déjà chiffré, une exception est générée.
 
 **Référencer le certificat**
 
@@ -496,7 +496,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Obtenez un document de PDF chiffré pour supprimer le chiffrement avec certificat. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée. De même, si vous tentez de supprimer le chiffrement avec certificat d’un document chiffré par mot de passe, une exception est générée.
+Vous devez obtenir un document PDF chiffré pour supprimer le chiffrement avec certificat. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée. De même, si vous tentez de supprimer le chiffrement avec certificat d’un document chiffré par mot de passe, une exception est générée.
 
 **Supprimer le chiffrement**
 
@@ -657,7 +657,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Obtenez un document de PDF chiffré pour supprimer le chiffrement avec mot de passe. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée.
+Vous devez obtenir un document PDF chiffré pour supprimer le chiffrement avec mot de passe. Si vous tentez de supprimer le chiffrement d’un document PDF non chiffré, une exception est générée.
 
 **Supprimer le mot de passe**
 
@@ -804,7 +804,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Obtenez un document de PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
+Vous devez obtenir un document PDF chiffré pour le déverrouiller. Si vous tentez de déverrouiller un document PDF non chiffré, une exception est générée.
 
 **Déverrouiller le document**
 
@@ -981,7 +981,7 @@ Pour effectuer par programmation une opération de service Encryption, vous deve
 
 **Obtenir le document PDF chiffré**
 
-Obtenez un document de PDF pour déterminer le type de chiffrement qui le protège.
+Vous devez obtenir un document PDF pour déterminer le type de chiffrement qui le protège.
 
 **Déterminer le type de chiffrement**
 

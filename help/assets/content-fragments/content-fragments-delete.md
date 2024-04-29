@@ -6,9 +6,9 @@ role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +36,11 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 >[!NOTE]
 >
->Lorsqu’un utilisateur n’a pas de [Supprimer](/help/sites-administering/security.md#actions) autorisations, l’éditeur de fragment de contenu fonctionne dans *lecture seule* mode .
+>Lorsqu’un utilisateur ou une utilisatrice ne dispose d’aucune autorisation de [suppression](/help/sites-administering/security.md#actions), l’éditeur de fragments de contenu fonctionne en mode *lecture seule*.
 
 >[!NOTE]
 >
->Voir aussi [Contrôle des opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
+>Voir également [Contrôle des opérations de gestion des utilisateurs dans AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Autorisations requises pour la fonctionnalité d’éditeur uniquement {#permissions-required-for-editor-functionality-only}
 
@@ -50,9 +50,9 @@ Par exemple, lors de la manipulation des variantes, mais également lors de la m
 
 >[!NOTE]
 >
->Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer [affectée via la gestion des utilisateurs et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
+>Les autorisations de suppression, requises pour modifier/mettre à jour un fragment de contenu, sont incluses dans l’autorisation Supprimer [affectée via la gestion des utilisateurs, des utilisatrices et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
 
-Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à ce noeud parent, les autorisations sont appliquées à tous les noeuds de cette branche.
+Les autorisations nécessaires à la modification/mise à jour d’un fragment doivent être appliquées au nœud contenant le fragment de contenu ou à un nœud parent approprié (à n’importe quel niveau sous `/content/dam`/). Lorsqu’elles sont affectées à ce nœud parent, les autorisations sont appliquées à tous les nœuds de cette branche.
 
 Par exemple, un dossier qui contiendra tous les fragments de contenu, comme :
 

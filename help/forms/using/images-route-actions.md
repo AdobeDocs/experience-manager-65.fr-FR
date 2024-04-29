@@ -7,9 +7,9 @@ topic-tags: forms-workspace
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
 
    >[!NOTE]
    >
-   >Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=fr).
 
    >[!NOTE]
    >

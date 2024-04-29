@@ -7,9 +7,9 @@ role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.
-   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur et sélectionnez **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
+   1. Sélectionnez les instances de workflow appropriées pour l’utilisateur ou l’utilisatrice et sélectionnez **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
 
       Pour plus d’informations sur l’utilisation des instances de workflow, voir [Gestion des instances de workflow](/help/sites-administering/workflows-administering.md).
 

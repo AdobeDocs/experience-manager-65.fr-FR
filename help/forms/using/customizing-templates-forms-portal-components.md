@@ -9,21 +9,21 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1242'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Personnaliser des modèles pour les composants du portail Formulaires{#customizing-templates-for-forms-portal-components}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 [Gestion des métadonnées de formulaire](../../forms/using/manage-form-metadata.md)
 
 Compréhension de base du HTML et du CSS
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 L’interface utilisateur des AEM Forms permet d’ajouter des métadonnées à n’importe quel formulaire. Les métadonnées personnalisées peuvent améliorer l’expérience client lors du listage et de la recherche de formulaires de votre entreprise.
 
@@ -83,19 +83,19 @@ Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personna
 
 Le modèle personnalisé de tout composant du Portail Formulaires comprend des entrées répétables et non répétables. Les entrées répétables sont des entités de base pour la liste. Les composants Search &amp; Lister, Drafts &amp; Submissions et Link sont des exemples d’entrées répétables.
 
-Forms Portal fournit une syntaxe permettant aux espaces réservés d’afficher des métadonnées personnalisées/prêtes à l’emploi. Les espaces réservés sont renseignés après l’affichage des résultats des formulaires, des brouillons ou des envois.
+Le portail Formulaires fournit une syntaxe permettant aux espaces réservés d’afficher des métadonnées personnalisées/prêtes à l’emploi. Les espaces réservés sont renseignés après l’affichage des résultats des formulaires, des brouillons ou des envois.
 
 Pour inclure une entrée répétable, configurez l’attribut **data-repeatable** sur **true**.
 
 *Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
-Chaque espace réservé dispose d’un jeu de métadonnées prêt à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
+Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
 
 *Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 
-Plusieurs composants de Forms Portal fournissent des jeux exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
+Plusieurs composants du portail Formulaires fournissent des ensembles exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
 
 ### Composant Search &amp; Lister {#search-amp-lister-component}
 
@@ -116,7 +116,7 @@ Plusieurs composants de Forms Portal fournissent des jeux exclusifs de métadonn
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Aide à la localisation**: pour localiser du texte statique, utilisez l’attribut . `${localize-YOUR_TEXT}` et rendre la valeur localisée disponible, le cas échéant.
+1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
 1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
@@ -144,8 +144,8 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 * **diffTime** : différence entre l’heure actuelle et la dernière action d’enregistrement du brouillon. Vous pouvez également définir la différence entre l’heure actuelle et la dernière action envoyée pour l’envoi.
 * **iconClass** : classe CSS utilisée pour afficher la première lettre du brouillon/envoi. Le portail Formulaires comprend les classes suivantes, qui fournissent divers arrière-plans colorés.
 * **owner** : personne ayant créé le brouillon/envoi.
-* **Aujourd&#39;hui**: date de création du brouillon ou de l’envoi dans `DD:MM:YYYY` format.
-* **TimeNow**: date de création du brouillon ou de l’envoi dans `HH:MM:SS` Format 24 heures
+* **Today** : date de création du brouillon ou de l’envoi au format `DD:MM:YYYY`.
+* **TimeNow** : heure de création du brouillon ou de l’envoi au format 24 heures `HH:MM:SS`.
 
 *Remarque :*
 
@@ -170,7 +170,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 ## Conseils, astuces et problèmes connus {#tips-tricks-and-known-issues}
 
 1. N’utilisez pas de guillemet simple (’) dans un modèle personnalisé.
-1. Pour les métadonnées personnalisées, stockez cette propriété uniquement sur le nœud **jcr:content/metadata**. Si vous le stockez à un autre emplacement, Forms Portal ne peut pas afficher les métadonnées.
+1. Pour les métadonnées personnalisées, stockez cette propriété uniquement sur le nœud **jcr:content/metadata**. Si vous l’enregistrez à un autre emplacement, le portail Formulaires ne peut pas afficher les métadonnées.
 1. Vérifiez que le nom d’une métadonnée personnalisée ou existante ne contient pas de signe deux-points ( : ). S’il en contient un, vous ne pouvez pas l’afficher dans l’interface utilisateur.
 1. L’attribut **data-repeatable** n’a aucune importance pour un composant **Link**. Adobe recommande d’éviter l’utilisation de cette propriété dans le modèle d’un composant Lien.
 

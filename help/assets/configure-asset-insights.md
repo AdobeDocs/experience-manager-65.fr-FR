@@ -7,9 +7,9 @@ feature: Asset Insights,Asset Reports
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 91%
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
 1. Cliquez sur la carte **[!UICONTROL Configuration d’Insights]**.
-1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre organisation, le nom d’utilisateur et le secret partagé.
+1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre organisation, le nom d’utilisateur ou d’utilisatrice et le secret partagé.
 
    ![Configuration d’Adobe Analytics pour les Statistiques sur les ressources dans Experience Manager](assets/insights_config2.png)
 

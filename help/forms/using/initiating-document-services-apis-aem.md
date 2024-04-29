@@ -7,7 +7,7 @@ topic-tags: document_services
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1167'
 ht-degree: 100%
 

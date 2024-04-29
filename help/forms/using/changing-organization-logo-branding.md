@@ -8,9 +8,9 @@ topic-tags: forms-workspace
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Le logo de l’organisation s’affiche dans le coin supérieur gauche de l’es
 
    >[!NOTE]
    >
-   >Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=fr).
 
-   [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
+   [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=fr)
 
 1. Reportez-vous à l’image du nouveau logo dans la feuille de style sous /apps/ws/css/newStyle.css en ajoutant le style suivant.
 

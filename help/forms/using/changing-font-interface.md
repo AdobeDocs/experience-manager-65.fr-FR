@@ -1,6 +1,6 @@
 ---
 title: Modification de la police de l’interface
-description: Comment modifier les polices de l’interface utilisateur de manière sélective.
+description: Procédure de modification des polices de l’interface utilisateur de manière sélective.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ Vous pouvez modifier la police affichée dans l’espace de travail AEM Forms. L
 Suivez les [Étapes génériques de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) et en fonction de vos besoins, suivez les étapes de personnalisation de CSS, HTML ou des deux.
 
 1. Modifiez ou ajoutez la famille de police dans un style existant.
-1. Modifiez ou ajoutez la famille de polices intégrée pour l’élément de HTML.
-1. Ajoutez un style et utilisez-le pour l’élément de HTML.
+1. Modifiez ou ajoutez la famille de polices en ligne pour l’élément HTML.
+1. Ajoutez un style et utilisez-le pour l’élément HTML.
 
 Par exemple, pour remplacer la police du texte de la barre de navigation supérieure par Courier New, procédez comme suit :
 
 1. Connectez-vous à CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Utilisez l’une des méthodes suivantes :
 
-   1. Pour modifier la famille de polices dans un style existant, ajoutez ce qui suit dans le fichier newStyle.css sous /apps/ws/css.
+   1. Pour remplacer la famille de polices par un style existant, ajoutez ce qui suit dans le fichier newStyle.css situé dans /apps/ws/css.
 
       ```css
       #topnav a {
@@ -51,7 +51,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
 
       Ouvrez le fichier /apps/ws/js/registry.js pour modifier et remplacer `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` par `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Pour ajouter un style définissant la famille de polices, ajoutez ce qui suit dans le fichier newStyle.css situé dans /apps/ws/css.
+   1. Pour ajouter un style qui définit la famille de polices, ajoutez la ligne suivante dans le fichier newStyle.css situé dans /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -59,7 +59,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       }
       ```
 
-      Pour ajouter la famille de polices intégrée pour l’élément de HTML, ajoutez ce qui suit dans le fichier appnavigation.html à l’adresse /apps/ws/js/runtime/templates.
+      Pour ajouter la famille de polices en ligne pour l’élément HTML, ajoutez le code suivant dans le fichier appnavigation.html dans /apps/ws/js/runtime/templates.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">
@@ -72,7 +72,7 @@ Par exemple, pour remplacer la police du texte de la barre de navigation supéri
       </div>
       ```
 
-1. Relancez l’espace de travail et effacez le cache du navigateur pour que les modifications soient visibles.
+1. Relancez l’espace de travail et effacez la mémoire cache du navigateur pour que les modifications soient visibles.
 
 ![change_font_before](assets/change_font_before.png)
 

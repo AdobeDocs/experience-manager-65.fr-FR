@@ -7,9 +7,9 @@ docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Chaque thème contient un style unique et élégant que vous pouvez utiliser pou
 
 ![Thèmes de référence](assets/ref-themes.png)
 
-Les thèmes inclus dans ce module sont réactifs et la mise en forme de ces thèmes est définie pour les affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents appareils peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
+Les thèmes inclus dans ce package sont réactifs, avec un style défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents appareils peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
 Pour plus d’informations sur l’installation du package, voir [Comment travailler avec les packages](/help/sites-administering/package-manager.md).
 
@@ -46,7 +46,7 @@ Le thème Beryl est utilisé par le formulaire adaptatif We.Gov et souligne l’
 
 ## Exec {#exec}
 
-Le thème Exec évite les remplissages d’arrière-plan solides pour mettre en évidence les composants de formulaire. Lorsque vous sélectionnez et cliquez sur des composants, les couleurs de la police sont modifiées. Par rapport au thème Canevas par défaut, la couleur de police du texte dans l’onglet sélectionné passe au bleu foncé. Notez la différence entre les boutons de navigation et d’envoi et le thème Beryl.
+Le thème Exec évite les remplissages d’arrière-plan de couleur unie pour mettre en évidence les composants de formulaire. Lorsque vous sélectionnez et cliquez sur des composants, les couleurs de la police sont modifiées. Par rapport au thème Canevas par défaut, la couleur de police du texte dans l’onglet sélectionné passe au bleu foncé. Notez la différence entre les boutons de navigation et de soumission et le thème Beryl.
 
 ![Thème Exec](assets/exec.png)
 
@@ -56,7 +56,7 @@ Le thème Exec évite les remplissages d’arrière-plan solides pour mettre en 
 
 ## Exec Light {#exec-light}
 
-Le thème Exec Light utilise l’espace blanc pour créer une expérience transparente. Les boutons Suivant et Envoyer ont un remplissage plein et une ombre 3D. Les onglets sélectionnés sur la gauche ont une flèche au lieu de deux coches.
+Le thème Exec Light utilise l’espace blanc pour créer une expérience transparente. Les boutons Suivant et Envoyer ont un remplissage uni et une ombre 3D. Les onglets sélectionnés sur la gauche ont une flèche au lieu de deux coches.
 
 ![Thème Exec light](assets/exec-light.png)
 
@@ -66,7 +66,7 @@ Le thème Exec Light utilise l’espace blanc pour créer une expérience transp
 
 ## Liberty {#liberty}
 
-Le thème de la liberté utilise une approche minimaliste pour mettre en évidence l&#39;important. Par exemple, la couleur de police de l’onglet visité passe au vert. Vous ne pouvez afficher que le contour inférieur de la zone de texte qui imite l’aspect d’un formulaire papier avec des lignes. La zone de texte active a un contour inférieur noir, tandis que d’autres ont un contour inférieur gris clair.
+Le thème Liberty utilise une approche minimaliste pour mettre en évidence ce qui est important. Par exemple, la couleur de police de l’onglet visité passe au vert. Vous ne pouvez afficher que le contour inférieur de la zone de texte qui imite l’aspect d’un formulaire papier avec des lignes. La zone de texte active a un contour inférieur noir, tandis que d’autres ont un contour inférieur gris clair.
 
 ![Thème Liberty](assets/liberty.png)
 

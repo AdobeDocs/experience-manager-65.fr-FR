@@ -8,9 +8,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2352'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Connaissances en matière de CSS et structure LESS.
 
@@ -202,7 +202,7 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
   </tr>
   <tr>
    <td><p><code>widgets-bg-color</code></p> </td>
-   <td>Couleur d’arrière-plan des widgets (ne fonctionne pas pour les cases à cocher et les boutons radio)</td>
+   <td>Couleur d’arrière-plan des widgets (ne fonctionne pas pour les cases à cocher et les boutons radio).</td>
   </tr>
   <tr>
    <td><p><code>widgets-border-color</code></p> </td>

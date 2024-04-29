@@ -7,9 +7,9 @@ exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
 source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1698'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Accédez à l’onglet Dossiers liés au projet dans les services cloud.
 1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des ressources numériques (DAM) où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
 1. Structure de dossiers liés : entrez des valeurs séparées par des virgules. Chaque valeur doit être `DE:<some-project-custom-form-field>`, Portfolio, Programme, Année, Nom ou une « valeur de chaîne littérale » (cette dernière avec des guillemets). Elle est actuellement définie sur Portfolio,Program,Year,DE:Project Type,Name.
-1. Configurer les autorisations : Ajouter `jcr:all permissions` autorisations pour `/conf/workfront-tools/settings/cloudconfigs` pour `wf-workfront-users` groupe.
+1. Configurez les autorisations : ajoutez des autorisations `jcr:all permissions` à `/conf/workfront-tools/settings/cloudconfigs` pour le groupe `wf-workfront-users`.
 1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
 1. Statut du projet : sélectionnez le statut du projet pour créer le dossier lié.

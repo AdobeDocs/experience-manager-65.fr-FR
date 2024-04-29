@@ -9,9 +9,9 @@ role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1783'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -669,7 +669,7 @@ Le code suivant représente le fichier progress.mxml.
 
 ### Créer le fichier remoting.mxml {#creating-the-remoting-mxml-file}
 
-Le code suivant représente le fichier remoting.mxml qui appelle le processus `MyApplication/EncryptDocument`. Un document étant transmis au processus, la logique d’application chargée de transmettre un document sécurisé à AEM Forms se trouve dans ce fichier. (Voir [Transmettre des documents sécurisés pour appeler des processus à l’aide de l’option Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+Le code suivant représente le fichier remoting.mxml qui appelle le processus `MyApplication/EncryptDocument`. Comme un document est transmis au processus, la logique d’application chargée de transmettre un document sécurisé à AEM Forms se trouve dans ce fichier. (Voir [Transmettre des documents sécurisés pour appeler des processus à l’aide de l’option Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>

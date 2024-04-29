@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS, SG_AEMFORMS
 exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
 ht-degree: 100%
 

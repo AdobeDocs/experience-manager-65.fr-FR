@@ -12,9 +12,9 @@ exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -85,8 +85,8 @@ Désormais, connectez-vous à Brand Portal pour voir si les ressources publiée
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Passer en mode Liste ![Mode Liste](assets/list-view.svg) pour afficher l’état de publication actuel de la ressource.
+1. Passez en mode Liste ![Mode Liste](assets/list-view.svg) pour afficher le statut de publication actuel de la ressource.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
-![état du rapport généré](assets/report-status.JPG)
+![Statut du rapport généré](assets/report-status.JPG)

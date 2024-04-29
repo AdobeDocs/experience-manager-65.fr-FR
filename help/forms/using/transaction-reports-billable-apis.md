@@ -8,13 +8,13 @@ feature: Transaction Reports
 exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d3822f4dee1b0d571aa06142f4a4f6e27874cf53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# API facturables pour les rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-billable-apis}
+# API facturables pour les rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-billable-apis}
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
@@ -502,6 +502,6 @@ Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’i
 
 ## Articles connexes {#related-articles}
 
-* [Présentation des rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-overview.md)
-* [Affichage et compréhension des rapports de transaction pour AEM Forms sur OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [Enregistrement d’une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-implementation.md)
+* [Vue d’ensemble des rapports de transaction pour AEM Forms sur OSGi](../../forms/using/transaction-reports-overview.md)
+* [Afficher et comprendre les rapports de transaction pour AEM Forms sur OSGi](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [Enregistrer une transaction pour les implémentations personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-implementation.md)

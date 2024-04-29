@@ -11,9 +11,9 @@ role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2274'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,10 +39,10 @@ Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes prat
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20‡ |
 | Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
-‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
+‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -144,10 +144,10 @@ Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes prat
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20‡ |
 | Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
-‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
+‡ La bonne pratique consiste à ne pas avoir de ressources en double dans un ensemble. La limite est de 20 doublons pour une seule ressource. Si vous ajoutez un autre doublon pour cette ressource (dans cet ensemble), la requête renvoie une erreur ou ignore le doublon.
 
 Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
 

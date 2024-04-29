@@ -8,13 +8,13 @@ feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2684'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Tutoriel : Création d’un modèle de données de formulaire dans AEM Forms{#tutorial-create-form-data-model}
+# Tutoriel : créer un modèle de données de formulaire dans AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -119,14 +119,14 @@ Procédez comme suit pour configurer votre base de données MySQL :
 1. Installez le pilote JDBC pour la base de données MySQL en tant que lot OSGi :
 
    1. Connectez-vous à l’instance d’auteur AEM Forms en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
-   1. Sélectionner **Installer/Mettre à jour**. Une boîte de dialogue **Télécharger/installer les bundles** s’affiche.
+   1. Sélectionnez **Installer/Mettre à jour**. Une boîte de dialogue **Charger/installer les bundles** s’affiche.
 
-   1. Sélectionner **Choisir un fichier** pour parcourir et sélectionner le lot OSGi du pilote JDBC MySQL. Sélectionner **Lot de démarrage** et **Actualisation des modules**, puis sélectionnez **Installer** ou **Mettre à jour**. Assurez-vous que le pilote JDBC d’Oracle Corporation pour MySQL est actif. Le pilote est installé.
+   1. Sélectionnez **Choisir un fichier** pour rechercher et sélectionner le bundle OSGi du pilote JDBC MySQL. Sélectionnez **Démarrer le bundle** et **Actualiser les packages**, puis sélectionnez **Installer** ou **Mettre à jour**. Assurez-vous que le pilote JDBC d’Oracle Corporation pour MySQL est actif. Le pilote est installé.
 
 1. Configurez la base de données MySQL comme source de données :
 
    1. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez cette option pour ouvrir la configuration en mode d’édition.
+   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez pour ouvrir la configuration en mode édition.
    1. Dans la boîte de dialogue de configuration, indiquez ce qui suit :
 
       * **Nom de la source de données :** vous pouvez spécifier un nom. Spécifiez par exemple **MySQL**.
@@ -146,7 +146,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
-   Laissez les autres propriétés par défaut [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) et sélectionnez **Enregistrer**.
+   Conservez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et sélectionnez **Enregistrer**.
 
    Une configuration similaire à la suivante est créée.
 
@@ -158,10 +158,10 @@ AEM Forms fournit une interface utilisateur intuitive pour [créer un modèle 
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **Forms** (Formulaires) > **Data Integrations** (Intégrations de données).
-1. Sélectionner **Créer** > **Modèle de données de formulaire**.
+1. Dans l’instance de création AEM, accédez à **Formulaires** > **Intégrations de données**.
+1. Sélectionnez **Créer** > **Modèle de données de formulaire**.
 1. Dans l’assistant Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **FDM_Create_First_IC**. Sélectionnez **Suivant**.
-1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Sélectionner **MySQL** source de données et sélectionnez **Créer**.
+1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Sélectionnez la source de données **MySQL**, puis **Créer**.
 
    ![Source de données MYSQL](assets/fdm_mysql_data_source_new.png)
 
@@ -180,7 +180,7 @@ La configuration d’un modèle de données de formulaire inclut :
 ### Ajout d’objets et de services de modèle de données {#add-data-model-objects-and-services}
 
 1. Dans l’instance d’auteur AEM, accédez à **Formulaires** > **Intégrations de données**. L’URL par défaut est [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. Le modèle de données de formulaire **FDM_Create_First_IC** que vous avez créé précédemment est répertorié ici. Sélectionnez-la et sélectionnez **Modifier**.
+1. Le modèle de données de formulaire **FDM_Create_First_IC** que vous avez créé précédemment est répertorié ici. Sélectionnez-le, puis sélectionnez **Modifier**.
 
    La source de données sélectionnée **MySQL** est affichée dans le volet **Sources de données**.
 
@@ -199,7 +199,7 @@ La configuration d’un modèle de données de formulaire inclut :
       * get
       * mise à jour
 
-   Sélectionner **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
+   Sélectionnez **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
    ![Sélectionnez les services et objets de modèle de données](assets/select_data_model_object_services_new.png)
 
@@ -218,29 +218,29 @@ Pour plus d’informations sur la propriété calculée enfant **usagecharges**,
 
 Exécutez les étapes suivantes pour créer des propriétés enfant calculées pour un objet de modèle de données bills :
 
-1. Cochez la case en haut de la page **bills** objet de modèle de données pour le sélectionner et le sélectionner. **Créer une propriété enfant**.
+1. Cochez la case en haut de l’objet de modèle de données **factures** pour le sélectionner, puis cliquez sur **Créer une propriété enfant**.
 1. Dans le volet **Créer une propriété enfant** :
 
    1. Saisissez **usagecharges** comme nom de propriété enfant.
    1. Activez **Calculé**.
-   1. Sélectionner **Flottant** comme type et sélectionnez **Terminé** pour ajouter la propriété enfant à la propriété **bills** objet de modèle de données.
+   1. Sélectionnez **Flottant** comme type, puis **Terminé** pour ajouter la propriété enfant à l’objet de modèle de données **factures**.
 
    ![Créer une propriété enfant](assets/create_child_property_new.png)
 
-1. Sélectionner **Modifier la règle** pour ouvrir l’éditeur de règles.
+1. Sélectionnez **Modifier la règle** pour ouvrir l’éditeur de règles.
 1. Sélectionnez **Créer**. Une fenêtre de règles **Définir la valeur** s’ouvre.
 1. Dans la liste déroulante Sélectionner une option, sélectionnez **Expression mathématique**.
 
    ![Éditeur de règles de frais d’utilisation](assets/usage_charges_rule_editor_new.png)
 
-1. Dans l’expression mathématique, sélectionnez **callcharges** et **confcallcharges** comme premier et second objets, respectivement. Sélectionnez **plus** en tant qu’opérateur. Sélectionnez dans l’expression mathématique et sélectionnez **Expression étendue** ajouter **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl**, et **zone** à l’expression.
+1. Dans l’expression mathématique, sélectionnez **callcharges** et **confcallcharges** comme premier et second objets, respectivement. Sélectionnez **plus** en tant qu’opérateur. Sélectionnez l’expression mathématique puis **Étendre l’expression** pour ajouter les objets **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl** et **vas** à l’expression.
 
    L’image suivante décrit l’expression mathématique dans l’éditeur de règles :
 
    ![Règle des frais d’utilisation](assets/usage_charges_rule_all_new.png)
 
 1. Sélectionnez **Terminé**. La règle est créée dans l’éditeur de règles.
-1. Sélectionner **Fermer** pour fermer la fenêtre de l’éditeur de règles.
+1. Sélectionnez **Fermer** pour fermer la fenêtre de l’éditeur de règles.
 
 ### Ajouter des associations entre les objets de modèle de données {#add-associations-between-data-model-objects}
 
@@ -257,7 +257,7 @@ En fonction du cas d’utilisation, créez les associations suivantes entre les 
 
 Procédez comme suit pour créer des associations entre objets de modèle de données :
 
-1. Cochez la case en haut de la page **client** objet de modèle de données pour le sélectionner et le sélectionner. **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
+1. Cochez la case en haut d’un objet de modèle de données **du client ou de la cliente** pour le sélectionner et choisissez **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
 1. Dans le panneau **Ajouter une association** :
 
    * Spécifiez un titre pour l’association. Ce champ est facultatif.
@@ -267,7 +267,7 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
 
    * Sélectionnez **get** dans la liste déroulante **Service**.
 
-   * Sélectionner **Ajouter** pour lier la variable **client** objet de modèle de données vers **calls** objet de modèle de données à l’aide d’une propriété . En fonction du cas d’utilisation, l’objet de modèle de données calls doit être lié à la propriété de numéro de mobile dans l’objet de modèle de données customer. La boîte de dialogue **Ajouter un argument** s’affiche.
+   * Sélectionnez **Ajouter** pour relier l’objet de modèle de données **du client ou de la cliente** à l’objet de modèle de données **d’appels** à l’aide d’une propriété. En fonction du cas d’utilisation, l’objet de modèle de données calls doit être lié à la propriété de numéro de mobile dans l’objet de modèle de données customer. La boîte de dialogue **Ajouter un argument** s’affiche.
 
    ![Ajouter une association](assets/add_association_new.png)
 
@@ -289,11 +289,11 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
 
    ![Ajouter une association d’arguments](assets/add_argument_association_new.png)
 
-1. Sélectionner **Terminé** pour créer une association 1:n entre les objets de modèle de données customer et calls.
+1. Sélectionnez **Terminé** pour créer une association 1:n entre les objets de modèle de données customers et calls.
 
    Une fois que vous avez créé une association entre les objets de modèle de données customer et calls, créez une association 1:1 entre les objets de modèle de données customer et bills.
 
-1. Cochez la case en haut de la page **client** objet de modèle de données pour le sélectionner et le sélectionner. **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
+1. Cochez la case en haut d’un objet de modèle de données **customer** pour le sélectionner et sélectionnez **Ajouter une association**. Le volet des propriétés **Ajouter une association** s’ouvre.
 1. Dans le panneau **Ajouter une association** :
 
    * Spécifiez un titre pour l’association. Ce champ est facultatif.
@@ -308,7 +308,7 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
 
    * Sélectionnez **customerplan** dans la liste déroulante **Valeur de liaison**.
 
-   * Sélectionner **Terminé** pour créer une liaison entre les propriétés billplan et customerplan.
+   * Sélectionnez **Terminé** pour créer une liaison entre les propriétés billplan et customerplan.
 
    ![Ajouter une association pour la facture client](assets/add_association_customer_bills_new.png)
 
@@ -320,7 +320,7 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
 
 Après avoir créé des associations entre l’objet client ou cliente et d’autres objets de modèle de données, modifiez les propriétés du client ou de la cliente pour définir la propriété en fonction de laquelle les données sont extraites de l’objet de modèle de données. En fonction du cas d’utilisation, le numéro de mobile est utilisé comme propriété pour extraire des données de l’objet de modèle de données client ou cliente.
 
-1. Cochez la case en haut de la page **client** objet de modèle de données pour le sélectionner et le sélectionner. **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
+1. Cochez la case en haut de l’objet de modèle de données **client** pour le sélectionner et sélectionnez **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
 1. Spécifiez **client ou cliente** comme **objet de modèle de niveau supérieur**.
 1. Sélectionnez **get** dans la liste déroulante **Service Read**.
 1. Dans la section **Arguments** :
@@ -336,11 +336,11 @@ Après avoir créé des associations entre l’objet client ou cliente et d’au
 
    * Sélectionnez **mobilenum** dans la liste déroulante **Valeur de liaison**.
 
-1. Sélectionner **Terminé** pour enregistrer les propriétés.
+1. Sélectionnez **Terminé** pour enregistrer les propriétés.
 
    ![Configuration des services](assets/configure_services_customer_new.png)
 
-1. Cochez la case en haut de la page **calls** objet de modèle de données pour le sélectionner et le sélectionner. **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
+1. Cochez la case en haut de l’objet de modèle de données **appels** pour le sélectionner et sélectionnez **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
 1. Désactiver l’**Objet de niveau supérieur** pour l’objet de modèle de données **calls**.
 1. Sélectionnez **Terminé**.
 
@@ -349,17 +349,17 @@ Après avoir créé des associations entre l’objet client ou cliente et d’au
 ### Configuration des services {#configure-services}
 
 1. Accédez à l’onglet **Services**.
-1. Sélectionnez la variable **get** service et sélectionnez **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
+1. Sélectionnez le service **get**, puis **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
 1. Dans le panneau **Modifier les propriétés** :
 
    * Saisissez un titre et une description facultatifs.
    * Sélectionnez **client ou cliente** dans la liste déroulante **Objet de modèle de sortie**.
 
-   * Sélectionner **Terminé** pour enregistrer les propriétés.
+   * Sélectionnez **Terminé** pour enregistrer les propriétés.
 
    ![Modification des propriétés](assets/edit_properties_get_details_new.png)
 
-1. Sélectionnez la variable **update** service et sélectionnez **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
+1. Sélectionnez le service **update**, puis **Modifier les propriétés**. Le panneau **Modifier les propriétés** s’ouvre.
 1. Dans le panneau **Modifier les propriétés** :
 
    * Saisissez un titre et une description facultatifs.
@@ -376,17 +376,17 @@ Vous pouvez tester les objets et services de modèle de données pour vérifier 
 
 Procédez comme suit pour effectuer le test :
 
-1. Accédez au **Modèle** , sélectionnez l’onglet **client** objet de modèle de données, puis sélectionnez **Objet de modèle de test**.
+1. Accédez à l’onglet **Modèle**, sélectionnez l’objet de modèle de données **customer** et cliquez sur **Tester l’objet de modèle**.
 1. Dans la fenêtre **Tester le modèle de données de formulaire**, sélectionnez **Objet de modèle de lecture** dans le menu déroulant **Sélectionner le modèle/service**.
-1. Dans le **Entrée** , indiquez une valeur pour la variable **mobilenum** qui existe dans la base de données MySQL configurée et sélectionnez **Test**.
+1. Dans la section **Entrée**, spécifiez une valeur pour la propriété **mobilenum** qui existe dans la base de données MySQL configurée et cliquez sur **Tester**.
 
    Les informations du client associées à la propriété mobilenum spécifiée sont récupérées et affichées dans la section Sortie, comme indiqué ci-dessous. Fermez la boîte de dialogue.
 
    ![Tester le modèle de données](assets/test_data_model_new.png)
 
 1. Accédez à l’onglet **Services**.
-1. Sélectionnez la variable **get** service et sélectionnez **Service de test.**
-1. Dans le **Entrée** , indiquez une valeur pour la variable **mobilenum** qui existe dans la base de données MySQL configurée et sélectionnez **Test**.
+1. Sélectionnez le service **get** et cliquez sur **Tester le service**.
+1. Dans la section **Entrée**, spécifiez une valeur pour la propriété **mobilenum** qui existe dans la base de données MySQL configurée et sélectionnez **Test**.
 
    Les informations du client associées à la propriété mobilenum spécifiée sont récupérées et affichées dans la section Sortie, comme indiqué ci-dessous. Fermez la boîte de dialogue.
 
@@ -398,8 +398,8 @@ L’éditeur de modèle de données de formulaire vous permet de générer des e
 
 Procédez comme suit pour générer, modifier et enregistrer des données d’exemple :
 
-1. Sur la page de modèle de données de formulaire, sélectionnez **Modifier des exemples de données**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
+1. Sur la page de modèle de données de formulaire, cliquez sur **Modifier les données dʼexemple**. Cela génère et affiche les exemples de données dans la fenêtre Modifier les exemples de données.
 
    ![Modifier les exemples de données](assets/edit_sample_data_new.png)
 
-1. Dans **Modifier des exemples de données** , modifiez les données selon les besoins, puis sélectionnez **Enregistrer**. Fermez la fenêtre.
+1. Dans la fenêtre **Modifier les données d’exemple**, modifiez les données selon les besoins puis sélectionnez **Enregistrer**. Fermez la fenêtre.

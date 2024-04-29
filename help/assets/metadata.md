@@ -9,9 +9,9 @@ exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2332'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser les méthodes suivantes pour ajouter des métadonnées à d
 
 * Dans [!DNL Experience Manager Assets], vous pouvez ajouter ou modifier manuellement les métadonnées des ressources dans la page [!UICONTROL Propriétés].
 
-* Vous pouvez utiliser [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) fonctionnalité de [!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
+* Vous pouvez tirer parti de la fonctionnalité de [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) d’[!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
 
 ## Ajout ou modification de métadonnées dans [!DNL Experience Manager Assets] {#add-edit-metadata}
 

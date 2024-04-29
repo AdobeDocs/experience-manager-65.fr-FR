@@ -9,9 +9,9 @@ role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '16917'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -596,9 +596,9 @@ Vous pouvez ajouter la valeur de configuration suivante dans le fichier cknfastr
 
 Après avoir ajouté cette valeur de configuration au fichier cknfastrc, les nouvelles informations d’identification peuvent être utilisées sans redémarrer le serveur d’applications J2EE.
 
-    >[!REMARQUE]
+    >[!NOTE]
     >
-    > Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+    > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 **Signature non approuvée**
 

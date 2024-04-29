@@ -7,9 +7,9 @@ exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 solution: Experience Manager, Workfront
 source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 
 Vous trouverez ci-dessous les détails des fonctionnalités disponibles à travers différents types d’intégrations entre [!DNL Assets] et [!DNL Workfront].
 
-| Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (d’usine)* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite un connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (d’usine)* |
+| Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (prêt à l’emploi)* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite un connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (prêt à l’emploi)* |
 |----|----|----|-----|-----|
 | Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **Général** |

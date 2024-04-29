@@ -8,9 +8,9 @@ feature: Adaptive Forms, Forms Designer
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 

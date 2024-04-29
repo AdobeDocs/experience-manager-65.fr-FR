@@ -7,7 +7,7 @@ topic-tags: publish
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
 ht-degree: 100%
 

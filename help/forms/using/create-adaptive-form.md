@@ -5,9 +5,9 @@ feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1314'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 
 1. Sélectionnez une image. La barre d’outils s’affiche. Sélectionnez ![cmppr](assets/cmppr.png). L’explorateur de propriétés s’ouvre sur la partie gauche de l’écran. **[!UICONTROL Recherchez]** et téléchargez l’image du logo. Sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). L’image apparaît dans l’en-tête.
 
-   Si vous n’en avez pas, vous pouvez sélectionner Obtenir un fichier pour télécharger le logo utilisé dans cet article.
+   Vous pouvez sélectionner Obtenir le fichier pour télécharger le logo utilisé dans cet article si vous n’en avez pas.
 
 [Obtenir le fichier](assets/logo.png)
 
@@ -71,7 +71,7 @@ AEM [!DNL Forms] fournit de nombreux composants pour l’affichage d’informat
 Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [!DNL Forms]fournit de nombreux composants pour la capture et l’affichage d’informations dans un formulaire adaptatif. Vous pouvez faire glisser les composants de ![treeexpandall](assets/treeexpandall.png) vers un formulaire. Pour en savoir plus sur les composants disponibles et les fonctionnalités correspondantes, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 1. Faites glisser le **[!UICONTROL composant de zone numérique]** vers le formulaire adaptatif. Placez-le avant le composant de pied de page. Ouvrez les propriétés du composant, remplacez le **[!UICONTROL titre]** du composant par **`Customer ID`** et le **[!UICONTROL nom de l’élément]** par **`customer_ID`**. Activez les options **[!UICONTROL Champ obligatoire]** et **[!UICONTROL Utiliser le type d’entrée de nombre HTML5]**, puis sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte. :
+1. Faites glisser trois composants de la zone de texte vers le formulaire adaptatif. Placez-les avant le pied de page. Définissez les propriétés suivantes pour ces zones de texte.:
 
    <table> 
     <tbody> 

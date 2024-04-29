@@ -8,15 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Configurer le mot de passe de liaison LDAP{#configure-the-ldap-bind-password}
 
-Pour éviter tout risque de sécurité, le champ du mot de passe de liaison dans le fichier de configuration exporté (config.xml) n&#39;est pas configuré. Avant d’importer le fichier de configuration dans un autre système, assurez-vous de configurer ce mot de passe. Ce mot de passe remplace un mot de passe existant qui est stocké dans la base de données. Un mot de passe nul ne remplace pas une valeur de mot de passe non nulle existante.
+Pour éviter tout risque de sécurité, le champ du mot de passe de liaison dans le fichier de configuration exporté (config.xml) n’est pas configuré. Avant d’importer le fichier de configuration dans un autre système, assurez-vous de configurer ce mot de passe. Ce mot de passe remplace un mot de passe existant qui est stocké dans la base de données. Un mot de passe nul ne remplace pas une valeur de mot de passe non nulle existante.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
 1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.

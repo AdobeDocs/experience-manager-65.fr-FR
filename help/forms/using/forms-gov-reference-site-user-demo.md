@@ -6,9 +6,9 @@ docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2478'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
 
    >[!NOTE]
    >
-   >Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas éligible.
+   >Si l’utilisateur ou l’utilisatrice gagne plus de 200 000 $ par an, il ou elle n’est pas éligible.
 
 1. Cliquez sur « **Suis-je éligible ?** ».
 1. Cliquez sur le bouton **Déposer une candidature maintenant** pour continuer.

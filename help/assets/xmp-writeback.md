@@ -8,9 +8,9 @@ exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Les modifications apportées aux métadonnées sont propagées aux rendus thumbn
 
 [!DNL Experience Manager Assets] prend en charge le filtrage par liste bloquée et par liste autorisée de propriétés/nœuds pour les métadonnées XMP qui sont lues à partir de binaires de ressources et stockées dans JCR quand les ressources sont ingérées.
 
-Le filtrage par liste bloquée permet d’importer toutes les propriétés des métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Toutefois, pour les types de ressources tels que les fichiers INDD comportant une grande quantité de métadonnées XMP (par exemple, 1 000 noeuds avec 10 000 propriétés), les noms des noeuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage à l’aide d’une liste bloquée permet l’importation d’un grand nombre de ressources avec de nombreuses métadonnées XMP, la variable [!DNL Experience Manager] Le déploiement peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
+Le filtrage par liste bloquée permet d’importer toutes les propriétés des métadonnées XMP, à l’exception des propriétés spécifiées pour l’exclusion. Cependant, pour les types de ressources tels que les fichiers INDD comportant un très grand nombre de métadonnées XMP (par exemple 1 000 nœuds avec 10 000 propriétés), les noms des nœuds à filtrer ne sont pas toujours connus à l’avance. Si le filtrage par liste bloquée permet l’importation d’un grand nombre de ressources avec de nombreuses métadonnées XMP, le déploiement d’[!DNL Experience Manager] peut rencontrer des problèmes de stabilité, par exemple des files d’attente d’observation bloquées.
 
 Le filtrage par liste autorisée des métadonnées XMP résout le problème en vous permettant de définir les propriétés XMP à importer. De cette façon, les autres propriétés XMP ou les propriétés XMP inconnues sont ignorées. Pour une compatibilité ascendante, vous pouvez ajouter certaines de ces propriétés au filtre qui utilise une liste bloquée.
 
@@ -88,7 +88,7 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
 1. Pour ouvrir Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Filtre XMP de gestion des actifs numériques Adobe CQ]**.
-1. Pour appliquer un filtrage par liste autorisée, sélectionnez **[!UICONTROL Appliquer la Liste autorisée aux propriétés XMP]**, puis spécifiez les propriétés à importer dans le **[!UICONTROL Noms XML autorisés pour le filtrage XMP]** de la boîte.
+1. Pour appliquer un filtrage par liste autorisée, sélectionnez **[!UICONTROL Appliquer la liste autorisée aux propriétés XMP]**, puis spécifiez les propriétés à importer dans la zone **[!UICONTROL Noms XML autorisés pour le filtrage XMP]**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

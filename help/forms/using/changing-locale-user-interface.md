@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Avant d’exécuter les étapes ci-dessus, assurez vous de suivre les étapes in
 
 >[!NOTE]
 >
->Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, voir [Créer un écran de connexion](../../forms/using/creating-new-login-screen.md).
+>Pour modifier la langue de l’écran de connexion de l’espace de travail AEM Forms, consultez la section [Création d’un écran de connexion](../../forms/using/creating-new-login-screen.md).
 
 ## Localiser le texte {#localizing-text}
 

@@ -10,9 +10,9 @@ feature: Adaptive Forms, Core Components
 exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-Dans AEM Forms 6.5, un thème est une bibliothèque cliente AEM utilisée pour définir les styles, c’est-à-dire l’aspect d’un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
+Dans AEM Forms 6.5, un thème est une bibliothèque cliente AEM utilisée pour définir les styles, c’est-à-dire l’aspect d’un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent des propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires adaptatifs.
 
 ## Thèmes disponibles {#available-theme}
 
@@ -62,7 +62,7 @@ Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un thè
 
 ## Personnaliser un thème {#customize-a-theme-core-components-based-adaptive-forms}
 
-La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous modifiez ses éléments de conception, sa mise en page, ses couleurs, sa typographie, et parfois le code sous-jacent. Vous pouvez ainsi créer une apparence unique et personnalisée de votre site web ou de votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
+La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous apportez des modifications à ses éléments de conception, à sa disposition, à ses couleurs, à sa typographie et parfois au code sous-jacent. Vous pouvez ainsi créer une apparence unique et personnalisée de votre site web ou de votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Une fois le package installé, le thème peut être sélectionné.
 Les étapes à suivre pour appliquer un thème à un formulaire adaptatif sont les suivantes :
 
 1. Connectez-vous à l’instance de création AEM locale.
-1. Entrez vos informations d’identification sur la page de connexion d’Experience Manager. Sélectionner **Adobe Experience Manager** > **Forms** > **Forms et documents**.
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Sélectionnez **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Cliquez sur **Créer** > **Formulaires adaptatifs**.
 1. Sélectionnez un modèle de composant principal de formulaire adaptatif et cliquez sur **Suivant**. **Ajouter des propriétés** s’affiche.
 1. Spécifiez la variable **Nom** pour votre formulaire adaptatif.

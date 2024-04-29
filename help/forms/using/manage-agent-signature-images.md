@@ -9,19 +9,19 @@ feature: Correspondence Management
 exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Gérer les images de signature d’agent{#manage-agent-signature-images}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lorsque vous créez une lettre, vous pouvez rendre l’image de signature d’agent dans la lettre comme signature de l’agent expéditeur.
+Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature d’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lorsque vous créez une lettre, vous pouvez rendre l’image de signature d’agent dans la lettre comme signature de l’agent expéditeur.
 
-Le DDE agentSignatureImage est un DDE calculé qui représente l’image de signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu de l’image en fonction de ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
+Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature d’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu de l’image en fonction de ces paramètres. Le dictionnaire de données du système SystemContext donne aux lettres de Correspondence Management accès aux informations dans le contexte du système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
 
 Vous pouvez ajouter des images sous le dossier cmuserroot. Dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md), à l’aide de la propriété Racine de l’utilisateur de CM, vous pouvez changer le dossier d’où l’image de la signature de l’agent est récupérée.
 
@@ -43,13 +43,13 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       >[!NOTE]
       >
-      >cmUserRoot est l’emplacement par défaut où AEM recherche l’image de signature de l’agent. Vous pouvez cependant le modifier en éditant la propriété Racine de l’utilisateur de CM dans les [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
+      >cmUserRoot correspond à l’emplacement par défaut où AEM recherche l’image de la signature d’agent. Vous pouvez cependant le modifier en éditant la propriété Racine de l’utilisateur de CM dans les [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
-   1. Accédez à `https://'[server]:[port]'/crx/explorer/index.jsp`. Connectez-vous en tant qu’administrateur, si nécessaire.
-   1. Cliquez sur **Explorateur de contenu**. L’Explorateur de contenu s’ouvre dans une nouvelle fenêtre.
-   1. Dans Content Explorer, accédez au dossier cmUserRoot et sélectionnez-le. Cliquez avec le bouton droit de la souris sur le **cmUserRoot** et sélectionnez **Nouveau noeud**.
+   1. Accédez à `https://'[server]:[port]'/crx/explorer/index.jsp`. Connectez-vous en tant qu’administrateur ou administratrice si nécessaire.
+   1. Cliquez sur **Explorateur de contenu**. L’explorateur de contenu s’ouvre dans une nouvelle fenêtre.
+   1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et sélectionnez-le. Cliquez avec le bouton droit de la souris sur le dossier **cmUserRoot** et sélectionnez **Nouveau nœud**.
 
       ![Nouveau nœud de cmUserRoot](assets/2_cmuserroot_newnode.png)
 
@@ -75,7 +75,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
    Cliquez sur **Enregistrer tout**.
 
-1. Assurez-vous que le XDP\la mise en page que vous utilisez dans la lettre comporte un champ d’image en bas à gauche (ou à un autre emplacement approprié dans la mise en page où vous souhaitez rendre la signature) pour effectuer le rendu de l’image de signature.
+1. Assurez-vous que le XDP\la disposition que vous utilisez dans la lettre comporte un champ d’image en bas à gauche (ou à un autre emplacement approprié dans la disposition où vous souhaitez rendre la signature) pour effectuer le rendu de l’image de signature.
 1. Lors de la création de la correspondance, sous l’onglet Données, sélectionnez un champ d’image pour l’image de la signature en procédant comme suit :
 
    1. Sélectionnez Système dans le menu pop-up Type de liaison dans le volet de droite.

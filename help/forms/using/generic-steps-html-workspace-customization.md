@@ -1,6 +1,6 @@
 ---
 title: Procédure générique de personnalisation de l’espace de travail AEM Forms
-description: Comment commencer à personnaliser l’interface utilisateur de l’espace de travail Adobe Experience Manager Forms.
+description: Initiation à la personnalisation de l’interface utilisateur de l’espace de travail Adobe Experience Manager Forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,20 @@ docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Procédure générique de personnalisation de l’espace de travail AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
-Les étapes génériques pour effectuer toute personnalisation sont les suivantes :
+Les étapes génériques pour effectuer toute personnalisation sont les suivantes :
 
 1. Connectez-vous à CRXDE Lite en accédant à lʼadresse `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Créez un `sling:Folder` dossier nommé `ws` at `/apps`, s’il n’existe pas. Pour créer un dossier `sling:Folder`, cliquez avec le bouton droit sur le dossier `apps` et sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Créer un nœud]**. Indiquez le nom comme `ws`, sélectionnez le type `sling:Folder`, puis cliquez sur **[!UICONTROL OK]**. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Créez un dossier `sling:Folder` nommé `ws` dans `/apps`, s’il n’existe pas. Pour créer un dossier `sling:Folder`, cliquez avec le bouton droit sur le dossier `apps` et sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Créer un nœud]**. Indiquez le nom `ws`, sélectionnez le type `sling:Folder` et cliquez sur **[!UICONTROL OK]**. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Naviguez jusqu’à `/apps/ws` et accédez à l’onglet **[!UICONTROL Contrôle d’accès]**.
-1. Sélectionnez l’option **[!UICONTROL Référentiel]**. Dans le **[!UICONTROL Contrôle d’accès]** liste, cliquez sur **[!UICONTROL +]** pour ajouter une entrée. Cliquez de nouveau sur **[!UICONTROL +]**.
+1. Sélectionnez l’option **[!UICONTROL Référentiel]**. Dans la liste **[!UICONTROL Contrôle d’accès]**, cliquez sur **[!UICONTROL +]** pour ajouter une entrée. Cliquez de nouveau sur **[!UICONTROL +]**.
 1. Recherchez et sélectionnez le principal de sécurité **PERM_WORKSPACE_USER**.
 
    ![Sélectionnez le principal de sécurité PERM_WORKSPACE_USER dans le cadre des étapes génériques de personnalisation de Workspace HTML](assets/perm_workspace_user.png)
@@ -39,9 +39,9 @@ Les étapes génériques pour effectuer toute personnalisation sont les suivante
 
 1. Procédez comme suit pour des personnalisations CSS :
 
-   1. Accédez au `/apps/ws` et créez un dossier nommé `css`.
+   1. Naviguez jusqu’au dossier `/apps/ws` et créez un dossier nommé `css`.
 
-   1. Dans le `css` , créez un fichier nommé `newStyle.css`.
+   1. Dans le dossier `css`, créez un fichier nommé `newStyle.css`.
 
    1. Ouvrez `/apps/ws/html`.jsp et changez
 
@@ -82,7 +82,7 @@ Les étapes génériques pour effectuer toute personnalisation sont les suivante
 
    1. Copiez le dossier `/libs/ws/js/libs/jqueryui` vers le répertoire `/apps/ws/js/libs`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Procédez comme suit pour les personnalisations de HTML :
+1. Procédez comme suit pour des personnalisations HTML :
 
    1. Sous `/apps/ws/js`, créez un dossier nommé `runtime`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -92,6 +92,6 @@ Les étapes génériques pour effectuer toute personnalisation sont les suivante
 
    1. Copiez /libs/ws/js/registry.js dans `/apps/ws/js/registry.js`.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
+1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
    Accédez à l’URL `https://'[server]:[port]'/lc/ws` et connectez-vous à l’aide des informations d’identification administrator/password. Le navigateur vous redirige vers `https://'[server]:[port]'/lc/apps/ws/index.html`.

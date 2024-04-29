@@ -9,9 +9,9 @@ role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 >[!NOTE]
 >
->Le démarrage rapide dans Programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Le démarrage rapide dans la programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Démarrage rapide (mode SOAP) : affectation de tâches à l’aide de l’API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -499,7 +499,7 @@ L’exemple de code Java suivant récupère les données de formulaire d’une t
 
 ## Démarrage rapide (mode SOAP) : modification des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-L’exemple de code Java suivant met à jour un formulaire avec des données qui se trouvent dans la variable *FormData.xml* fichier .
+L’exemple de code Java suivant met à jour un formulaire avec des données situées dans le fichier *FormData.xml*.
 
 ```java
  /*

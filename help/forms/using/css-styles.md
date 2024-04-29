@@ -1,6 +1,6 @@
 ---
 title: Créer des styles CSS pour des formulaires HTML5
-description: Découvrez comment modifier l’aspect des formulaires HTML5 en modifiant la classe CSS associée à l’élément de formulaire de HTML.
+description: Découvrez comment modifier l’aspect des formulaires HTML5 en modifiant la classe CSS associée à l’élément de formulaire HTML.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ feature: HTML5 Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Créer des styles CSS pour des formulaires HTML5 {#creating-css-styles-for-html-forms}
 
-Le rendu HTML5 d’un modèle de formulaire basé sur XFA se compose de plusieurs éléments de HTML. Ces éléments sont organisés dans un ordre. Chaque élément comporte des classes CSS bien définies. Vous pouvez utiliser cette classe CSS pour sélectionner et modifier l’aspect d’un élément.
+Le rendu HTML5 d’un modèle de formulaire basé sur XFA se compose de plusieurs éléments HTML. Ces éléments sont organisés dans un ordre. Chaque élément comporte des classes CSS bien définies. Vous pouvez utiliser cette classe CSS pour sélectionner et modifier l’apparence d’un élément.
 
 >[!NOTE]
 >
->Dans les classes CSS, ne modifiez pas la valeur des attributs de position et de taille : largeur, hauteur, épaisseur de bordure, haut, gauche, droite, bas, remplissage, marge. Toute modification des attributs de position et de taille modifie la disposition du formulaire.
+>Dans les classes CSS, ne modifiez pas la valeur des attributs de position et de taille : largeur, hauteur, épaisseur de bordure, haut, gauche, droite, bas, remplissage, marge. Toute modification des attributs de position et de taille modifie la disposition du formulaire.
 
 ## Classes CSS pour les éléments  {#css-classes-nbsp-for-elements-nbsp}
 
@@ -34,17 +34,17 @@ Chaque élément contient des classes CSS bien définies. Vous pouvez modifier c
 
 >[!NOTE]
 >
->Certains éléments XFA n’ont pas de nom. Pour modifier les styles de ces composants, modifiez tous les composants de ce type particulier.
+>Certains éléments XFA n’ont pas de nom. Pour changer les styles de ces composants, modifiez tous les composants de ce type particulier.
 
 Pour les pages non mentionnées dans AEM Forms Designer, les pages d’un formulaire HTML5 sont nommées dans l’ordre croissant de leur numéro. Par exemple, pour un formulaire HTML5 comportant deux pages, les pages sont nommées Page1 et Page2.
 
-## Elément de champ {#field-element}
+## Élément de champ {#field-element}
 
-L’élément de champ contient deux éléments imbriqués : widget et légende.
+L’élément de champ contient deux éléments imbriqués : widget et légende.
 
-**Elément Widget**
+**Élément widget**
 
-L’élément widget contient l’élément d’interface utilisateur pour l’interaction avec les utilisateurs. Il a trois classes CSS :
+L’élément widget contient l’élément d’interface utilisateur pour l’interaction avec les utilisateurs et les utilisatrices. Il a trois classes CSS :
 
 * **Widget** : chaque widget comporte cette classe.
 * **nom** : tous les widgets fournis avec AEM contiennent la classe de nom widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
@@ -67,7 +67,7 @@ L’élément widget contient l’élément d’interface utilisateur pour l’i
 </div>
 ```
 
-Outre la classe de type et de nom, le composant de champ contient également une classe CSS supplémentaire nommée **subtype**. Un sous-type identifie le type de champ, par exemple NumericField, DateField, TextField. Vous pouvez remplacer la classe subtype pour modifier le style de tous les champs de type, sous-type.
+Outre la classe de type et de nom, le composant de champ contient également une classe CSS supplémentaire nommée **subtype**. Un sous-type identifie le type de champ, par exemple NumericField, DateField, TextField. Vous pouvez remplacer la classe subtype pour modifier le style de tous les champs de type sous-type.
 
 ## Classes CSS des différents composants {#css-classes-for-different-components}
 
@@ -81,32 +81,32 @@ Outre la classe de type et de nom, le composant de champ contient également une
   <tr>
    <td>Page</td>
    <td>page</td>
-   <td>Nom défini par l’utilisateur<br /> ou<br /> Page&lt;pagenumber&gt; (par défaut)</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice<br /> ou<br /> Page&lt;pageNumber&gt; (par défaut)</td>
   </tr>
   <tr>
    <td>Zone de contenu</td>
    <td>contentarea</td>
-   <td>Nom défini par l’utilisateur</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice</td>
   </tr>
   <tr>
    <td>Sous-formulaire</td>
-   <td>sous-formulaire</td>
-   <td>Nom défini par l’utilisateur</td>
+   <td>subform</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice</td>
   </tr>
   <tr>
    <td>Groupe d’exclusion</td>
    <td>exclgroup</td>
-   <td>Nom défini par l’utilisateur</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice</td>
   </tr>
   <tr>
    <td>Draw</td>
    <td>draw</td>
-   <td>Nom défini par l’utilisateur</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice</td>
   </tr>
   <tr>
    <td>Champ</td>
    <td>field</td>
-   <td>Nom défini par l’utilisateur</td>
+   <td>Nom défini par l’utilisateur ou l’utilisatrice</td>
   </tr>
   <tr>
    <td>Légende</td>
@@ -116,12 +116,12 @@ Outre la classe de type et de nom, le composant de champ contient également une
   <tr>
    <td>Widget</td>
    <td>widget</td>
-   <td>Le développeur du widget le définit (pour les widgets définis par l’utilisateur, voir le tableau de la section suivante).</td>
+   <td>Le développeur ou la développeuse du widget le définit (pour les widgets définis par l’utilisateur ou l’utilisatrice, voir le tableau de la section suivante).</td>
   </tr>
  </tbody>
 </table>
 
-## Classes CSS des différents champs {#css-classes-for-different-fields}
+## Classes CSS pour différents champs {#css-classes-for-different-fields}
 
 AEM Forms Designer prend en charge différents types de champs d’un formulaire, tels que NumericField, DecimalField et le champ Date. Tous ces champs en HTML contiennent les classes CSS mentionnées ci-dessus. Elles contiennent également des classes supplémentaires en fonction du type de champ.
 
@@ -225,7 +225,7 @@ Chaque champ est associé à un widget représentant l’élément de l’interf
 
 ## Classes CSS des différents éléments de dessin {#css-classes-for-different-draw-elements}
 
-Vous pouvez insérer des éléments statiques de dessin comme un texte et des images à l’aide d’AEM Forms Designer. Pour chaque élément de dessin, une classe CSS distincte est associée à cet élément. La liste des classes CSS pour les éléments draw est ci-dessous. Chaque élément draw est associé à une classe draw.
+Vous pouvez insérer des éléments statiques de dessin comme un texte et des images à l’aide d’AEM Forms Designer. Une classe CSS distincte est associée à chaque élément de dessin. La liste des classes CSS pour les éléments de dessin est détaillée ci-dessous. Chaque élément de dessin est associé à une classe de dessin.
 
 | **Type de dessin** | **Classe CSS** |
 |---|---|
@@ -234,17 +234,17 @@ Vous pouvez insérer des éléments statiques de dessin comme un texte et des im
 | Rectangle | rectangle |
 | Ligne | ligne |
 
-## Style des autres parties du formulaire {#styling-other-parts-of-the-form}
+## Modifier le style des autres parties du formulaire {#styling-other-parts-of-the-form}
 
 Outre l’aspect des composants de l’interface utilisateur dans le formulaire HTML, vous pouvez modifier le style des éléments comme les erreurs en ligne, les avertissements en ligne et les champs contenant des erreurs de validation.
 
 `Styling Inline Errors`
 
-Lorsque la validation d’un champ génère une erreur, une erreur insérée s’affiche lorsque le champ est actif. Pour modifier le style des erreurs intégrées, remplacez l’identifiant CSS. **error-msg**.
+Lorsque la validation d’un champ génère une erreur, une erreur intégrée s’affiche lorsque le champ est actif. Pour modifier le style des erreurs intégrées, remplacez l’ID CSS **error-msg**.
 
 `Styling Inline Warnings`
 
-Lorsque la validation d’un champ génère un avertissement, un avertissement intégré s’affiche lorsque le champ est actif. Pour modifier le style de ces avertissements intégrés, remplacez l’identifiant CSS. **warning-msg**.
+Lorsque la validation d’un champ génère un avertissement, un avertissement intégré s’affiche lorsque le champ est actif. Pour modifier le style de ces avertissements intégrés, remplacez l’ID CSS **warning-msg**.
 
 `Styling Fields with Validation Errors`
 

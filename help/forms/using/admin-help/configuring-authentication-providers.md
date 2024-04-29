@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Si vous configurez une authentification pour un domaine d’entreprise ou hybrid
 
 ## Approvisionnement juste à temps des utilisateurs et utilisatrices {#just-in-time-provisioning-of-users}
 
-La mise en service juste à temps crée automatiquement un utilisateur dans la base de données User Management une fois qu’il a été authentifié par le biais d’un fournisseur d’authentification. Les rôles et groupes pertinents sont également affectés dynamiquement au nouvel utilisateur ou à la nouvelle utilisatrice. Vous pouvez activer l’approvisionnement juste à temps pour les domaines d’entreprise et hybride.
+L’approvisionnement juste à temps crée automatiquement un utilisateur ou une utilisatrice dans la base de données User Management une fois que l’utilisateur ou l’utilisatrice est authentifié au moyen d’un fournisseur d’authentification. Les rôles et groupes pertinents sont également affectés dynamiquement au nouvel utilisateur ou à la nouvelle utilisatrice. Vous pouvez activer l’approvisionnement juste à temps pour les domaines d’entreprise et hybride.
 
 Cette procédure décrit le fonctionnement général de l’authentification dans AEM Forms :
 

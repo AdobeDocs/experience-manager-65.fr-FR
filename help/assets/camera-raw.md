@@ -7,9 +7,9 @@ feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -72,6 +72,6 @@ Après avoir enregistré les modifications apportées à une image [!DNL Camera 
 
 La fonctionnalité présente les limites suivantes :
 
-* La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sur Windows 64 bits, Mac OS et RHEL 7.x.
-* L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
+* La fonctionnalité ne prend en charge que les rendus JPEG. Elle est prise en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
+* L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
 * La bibliothèque [!DNL Camera Raw] présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un fichier de maximum 65 000 pixels de long, ou de maximum 512 MP, quel que soit la limite rencontrée en premier.

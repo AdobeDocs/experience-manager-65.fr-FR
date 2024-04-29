@@ -1,6 +1,6 @@
 ---
-title: Credential Service Java&trade ; API QuickStart (SOAP)
-description: Découvrez comment importer et supprimer des informations d’identification dans AEM Forms à l’aide de Java&trade; API Quick Start (SOAP).
+title: Démarrage rapide de l’API Credential Service Java™ (SOAP)
+description: Découvrez comment importer et supprimer des informations d’identification dans AEM Forms à l’aide du démarrage rapide d’API Java™ (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,31 +9,31 @@ role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
-# Démarrage rapide de l’API Java™ Credential Service (SOAP) {#credential-service-java-api-quickstart-soap}
+# Démarrage rapide de lʼAPI Java™ Credential Service (SOAP) {#credential-service-java-api-quickstart-soap}
 
-L’API Java™ Quick Start (SOAP) est disponible pour le service Credential.
+Le démarrage rapide d’API Java™ est disponible pour Credential Service.
 
-[Démarrage rapide (mode SOAP) : import des informations d’identification à l’aide du code Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Démarrage rapide (mode SOAP) : importer des informations d’identification à l’aide de Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : suppression des informations d’identification à l’aide du code Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Démarrage rapide (mode SOAP) : supprimer des informations d’identification à l’aide de Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les didacticiels de mise en route de la programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss® et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les démarrages rapides dans Programmation avec AEM Forms sont basés sur le serveur Forms déployé sur JBoss® et le système d’exploitation Windows. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >Vous ne pouvez pas effectuer les opérations du service Credential à lʼaide de services web.
 
-## Démarrage rapide (mode SOAP) : import des informations d’identification à l’aide de l’API Java™ {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## Démarrage rapide (mode SOAP) : importer des informations d’identification à l’aide de l’API Java™. {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 L’exemple de code suivant permet dʼimporter des informations d’identification basées sur un fichier nommé *cred.p12*. La valeur d’alias utilisée pour importer les informations d’identification est `Secure`. (Consultez la section [Importer des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)).
 
@@ -134,7 +134,7 @@ L’exemple de code suivant permet dʼimporter des informations d’identificati
  
 ```
 
-## Démarrage rapide (mode SOAP) : suppression des informations d’identification à l’aide de l’API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Démarrage rapide (mode SOAP) : supprimer des informations d’identification à l’aide de l’API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 L’exemple de code suivant permet de supprimer des informations d’identification basées sur une valeur d’alias *secure*. (Consultez la section [Supprimer les informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)).
 

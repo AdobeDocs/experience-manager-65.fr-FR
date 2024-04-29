@@ -4,7 +4,7 @@ description: Découvrez comment compresser et décompresser des fichiers à l’
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '482'
 ht-degree: 100%
 

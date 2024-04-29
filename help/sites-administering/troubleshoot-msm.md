@@ -6,9 +6,9 @@ role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Vous pouvez cependant :
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_moved » ?  {#moved-pages}
 
-Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une nouvelle page Live Copy si elle n’existe pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
+Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une nouvelle page Live Copy si celle-ci n’existe pas encore. Par exemple, lorsqu’elle a été déployée pour la première fois ou que la page Live Copy a été supprimée manuellement.
 
 Dans ce dernier cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page sera renommée, avant la création de la page Live Copy.
 

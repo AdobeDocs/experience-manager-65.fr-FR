@@ -1,15 +1,15 @@
 ---
 title: "Didacticiel\_: créer un modèle de données de formulaire "
-description: Découvrez comment configurer MySQL comme source de données, créer un modèle de données de formulaire (FDM), le configurer et tester AEM Forms.
+description: Découvrez comment configurer MySQL comme source de données, créer un modèle de données de formulaire (FDM), le configurer et tester AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1533'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 ## Étape 1 : Configurer la base de données MySQL en tant que source de données {#config-database}
 
-Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce didacticiel, vous allez configurer la base de données MySQL que vous avez configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](../../forms/using/data-integration.md).
+Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce tutoriel, vous configurez la base de données MySQL que vous avez configurée et remplie avec des données d’exemple. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données d’AEM Forms](../../forms/using/data-integration.md).
 
 Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
@@ -57,38 +57,38 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
    1. Téléchargez le [!DNL MySQL]lot OSGi du pilote JDBC à partir de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Connectez-vous à l’instance d’auteur AEM [!DNL Forms] en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Sélectionner **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Télécharger/installer les bundles] s’affiche.
+   1. Sélectionnez **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Charger/installer les bundles] s’affiche.
 
-   1. Sélectionnez **[!UICONTROL Choisir un fichier]** pour parcourir et sélectionnez le [!DNL MySQL] lot OSGi du pilote JDBC. Sélectionnez **[!UICONTROL Démarrer le regroupement]** et **[!UICONTROL actualiser les packages]**, puis sélectionnez **[!UICONTROL Installer ou Mettre à jour]**. Assurez-vous que le pilote JDBC [!DNL Oracle Corporation's] pour [!DNL MySQL] est actif. Le pilote est installé.
+   1. Sélectionnez **[!UICONTROL Choisir un fichier]** pour parcourir et sélectionner le bundle OSGi du pilote JDBC [!DNL MySQL]. Sélectionnez **[!UICONTROL Démarrer le bundle]** et **[!UICONTROL Actualiser les packages]**, puis **[!UICONTROL Installer ou mettre à jour]**. Assurez-vous que le pilote JDBC [!DNL Oracle Corporation's] pour [!DNL MySQL] est actif. Le pilote est installé.
 
 1. Configurez la base de données [!DNL MySQL] comme source de données :
 
    1. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez cette option pour ouvrir la configuration en mode d’édition.
+   1. Recherchez la configuration **Apache Sling Connection Pooled DataSource**. Sélectionnez pour ouvrir la configuration en mode édition.
    1. Dans la boîte de dialogue de configuration, indiquez ce qui suit :
 
       * **Nom de la source de données :** vous pouvez spécifier n’importe quel nom. Spécifiez par exemple **WeRetailMySQL**.
       * **Nom de la propriété du service de la source de données** : indiquez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
-      * **Classe de pilote JDBC**: spécifiez le nom de classe Java™ du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
-      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour [!DNL MySQL] une base de données s’exécutant sur le port 3306 et le schéma `weretail`, l’URL est la suivante : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Classe de pilote JDBC** : spécifiez le nom de la classe Java™ du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
+      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données [!DNL MySQL] s’exécutant sur le port 3306 et le schéma `weretail`, l’URL est : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`.
 
       >[!NOTE]
       >
-      > Lorsque la base de données [!DNL MySQL] se trouve derrière un pare-feu, alors le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée dans le *fichier /etc/hosts* de la machine hôte AEM.
+      > Lorsque la base de données [!DNL MySQL] se trouve derrière un pare-feu, alors le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée au fichier */etc/hosts* de l’ordinateur hôte AEM.
 
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
 
       >[!NOTE]
       >
-      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à AEM console Web à https://localhost:4502/system/console/configMgr [](https://localhost:4502/system/console/configMgr) et recherchez « Source de données mise en pool de connexions Apache Sling ». Pour la propriété « JDBC connection URI », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à [!DNL MySQL] la base de données.
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web d’AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Source de données mise en pool de la connexion Apache Sling ». Pour la propriété « URI de connexion JDBC », définissez la valeur de « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &#42; depuis customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
-        Conservez les autres propriétés avec les valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut [et sélectionnez **[!UICONTROL Enregistrer]**.
+        Conservez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et sélectionnez **[!UICONTROL Enregistrer]**.
 
         Une configuration similaire à la suivante est créée.
 
@@ -96,14 +96,14 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
-AEM [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir des sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Pour ce cas d’utilisation, vous pouvez utiliser la source de données configurée [!DNL MySQL] .
+AEM [!DNL Forms] fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](data-integration.md) à partir des sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Dans ce cas d’utilisation, vous pouvez utiliser la source de données [!DNL MySQL] configurée.
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Data Integrations]** (Intégrations de données).
-1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL modèle]** de données de formulaire.
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**.
+1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Modèle de données de formulaire]**.
 1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **customer-shipping-billing-details**. Sélectionnez **[!UICONTROL Suivant]**.
-1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Sélectionner **WeRetailMySQL** source de données et sélectionnez **[!UICONTROL Créer]**.
+1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Sélectionnez la source de données **WeRetailMySQL** et sélectionnez **[!UICONTROL Créer]**.
 
    ![data-source-selection](assets/data-source-selection.png)
 
@@ -125,7 +125,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants dans le schéma weretail > customerdetails **afin de pouvoir former un modèle de** données : ****
+1. Développez l’arborescence de la source de données WeRailMySQL. Sélectionnez les objets et services de modèle de données suivants dans le schéma **weretail** > **customerdetails** du modèle de données de formulaire :
 
    * **Objets de modèle de données**:
 
@@ -141,7 +141,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
       * get
       * mise à jour
 
-   Sélectionnez **Add Selected** pour ajouter les objets et services de modèle de données sélectionnés au modèle de données de formulaire.
+   Sélectionnez **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
    ![Schéma WeRetail](assets/weretail_schema_new.png)
 
@@ -151,7 +151,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
 1. Configurez les services de lecture et d’écriture pour le modèle de données de formulaire.
 
-   1. Sélectionnez la variable **customerdetails** objet de modèle de données et sélectionnez **[!UICONTROL Modifier les propriétés]**.
+   1. Sélectionnez l’objet de modèle de données **customerdetails**, puis **[!UICONTROL Modifier les propriétés]**.
    1. Sélectionnez **[!UICONTROL get]** dans la liste déroulante Service de lecture. L’argument **id** qui est la clé principale de l’objet de modèle de données customerdetails est ajouté automatiquement. Sélectionnez ![aem_6_3_edit](assets/aem_6_3_edit.png) et configurez l’argument comme suit.
 
       ![read-default](assets/read-default.png)
@@ -172,13 +172,13 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
 1. Accédez à l’onglet **[!UICONTROL Services]** et configurez les services **[!UICONTROL get]** et **[!UICONTROL update]**.
 
-   1. Sélectionnez le **[!UICONTROL service get]** et sélectionnez **[!UICONTROL Edit Properties]**. La boîte de dialogue Propriétés s’ouvre.
+   1. Sélectionnez le service **[!UICONTROL get]**, puis **[!UICONTROL Modifier les propriétés]**. La boîte de dialogue Propriétés s’ouvre.
    1. Spécifiez les éléments suivants dans la boîte de dialogue Modifier les propriétés :
 
       * **Titre** : indiquez le titre du service. Par exemple : récupérer l’adresse d’expédition.
       * **Description** : spécifiez la description contenant le fonctionnement détaillé du service. Par exemple :
 
-        Ce service récupère l’adresse de livraison et d’autres détails du client à partir de la [!DNL MySQL] base de données
+        Ce service récupère l’adresse de livraison et les autres détails du client ou de la cliente dans la base de données [!DNL MySQL].
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
@@ -191,7 +191,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
       ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
 
-   1. Sélectionnez le service de mise à jour ]**et sélectionnez**[!UICONTROL  Modifier les **[!UICONTROL propriétés]**. La boîte de dialogue Propriétés s’ouvre.
+   1. Sélectionnez le service **[!UICONTROL update]** et cliquez sur **[!UICONTROL Modifier les propriétés]**. La boîte de dialogue Propriétés s’ouvre.
 
    1. Spécifiez les éléments suivants dans la boîte de dialogue [!UICONTROL Modifier les propriétés] :
 
@@ -206,7 +206,7 @@ Pour configurer un modèle de données de formulaire, procédez comme suit :
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
-      * **Arguments** : sélectionnez le nom **de l’argument ID** et **les détails** du client.
+      * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
 
       Sélectionnez **[!UICONTROL Terminé]**. Le service **[!UICONTROL update]** permettant de mettre à jour les détails du client dans la base de données est configuré.[!DNL MySQL]
 
@@ -220,9 +220,9 @@ Vous pouvez tester les objets et services de modèle de données pour vérifier 
 
 Procédez comme suit pour effectuer le test :
 
-1. Accédez à l’onglet **[!UICONTROL Modèle]**, sélectionnez l’objet de modèle de données customerdetails **, puis sélectionnez**[!UICONTROL  Tester l’objet **]** de modèle.
+1. Accédez à l’onglet **[!UICONTROL Modèle]**, sélectionnez l’objet de modèle de données **customerdetails**, puis **[!UICONTROL Tester l’objet de modèle]**.
 1. Dans la fenêtre [!UICONTROL Tester le modèle/service], sélectionnez **[!UICONTROL Objet de modèle de lecture]** dans le menu déroulant **[!UICONTROL Sélectionner le modèle/service]**.
-1. Dans la **section customerdetails** , spécifiez une valeur pour l’argument **id** qui existe dans la base de données configurée [!DNL MySQL] et sélectionnez **[!UICONTROL Tester]**.
+1. Dans la section **customerdetails**, spécifiez une valeur pour l’argument **id** qui existe dans la base de données [!DNL MySQL] configurée et sélectionnez **[!UICONTROL Test]**.
 
    Les détails du client associés à l’ID spécifié sont récupérés et affichés dans la section **[!UICONTROL Sortie]**, comme indiqué ci-dessous.
 
@@ -234,11 +234,11 @@ Procédez comme suit pour effectuer le test :
 
    ![test-write-model](assets/test-write-model.png)
 
-   Maintenant, si vous testez à nouveau le service de modèle de lecture pour l’ID 7107215, il récupère et affiche les détails mis à jour du client comme indiqué ci-dessous.
+   À présent, si vous testez à nouveau le service de lecture de modèle pour l’ID 7107215, il récupère et affiche les détails du client ou de la cliente mis à jour comme indiqué ci-dessous.
 
    ![read-updated](assets/read-updated.png)
 
 
 >[!NOTE]
 >
-> Vous pouvez créer et utiliser la configuration de liste SharePoint à l’aide du modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Reportez-vous à [Connecter un formulaire adaptatif à la liste Microsoft® SharePoint pour](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) obtenir des instructions détaillées.
+> Vous pouvez créer et utiliser la configuration de la liste SharePoint en utilisant le modèle de données de formulaire dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Voir [Connecter un formulaire adaptatif à une liste SharePoint Microsoft®](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration) pour obtenir des instructions détaillées.

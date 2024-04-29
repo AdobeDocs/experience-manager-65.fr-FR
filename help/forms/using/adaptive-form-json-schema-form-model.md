@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1844'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -737,7 +737,7 @@ Pour permettre à tous les formulairess adaptatifs basés sur un schéma JSON de
 
 1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
 1. Recherchez **[!UICONTROL Configuration des canaux web du formulaire adaptatif et de la communication interactive]**
-1. Sélectionnez cette option pour ouvrir la configuration en mode d’édition.
+1. Sélectionnez pour ouvrir la configuration en mode édition.
 1. Cochez la case **[!UICONTROL Générer des données conformes aux schémas]**.
 1. Enregistrez les paramètres.
 

@@ -8,9 +8,9 @@ exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 1. Sur la page [!UICONTROL Rapports de ressources], le statut de la génération des rapports repose sur l’état actuel du traitement de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
 
    <!--![A generated report](assets/report_page.png)-->
-   [État du rapport](assets/report-status.JPG)
+   [Statut du rapport](assets/report-status.JPG)
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 

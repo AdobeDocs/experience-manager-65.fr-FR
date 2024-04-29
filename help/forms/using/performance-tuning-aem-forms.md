@@ -9,7 +9,7 @@ role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -170,5 +170,5 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >
 >* Si vous utilisez un emplacement différent pour GDS et le répertoire temporaire, ouvrez l’interface administrateur à l’adresse `https://'[server]:[port]'/adminui`, accédez à **Accueil > Paramètres > Paramètres de système central > Configurations de base** afin de confirmer l’emplacement utilisé.
 >
->* Si le serveur AEM Forms est lent, même après l’exclusion des répertoires suggérés, excluez également le fichier exécutable Java™ (java.exe).
+* Si le serveur AEM Forms est lent, même après l’exclusion des répertoires suggérés, excluez également le fichier exécutable Java™ (java.exe).
 >

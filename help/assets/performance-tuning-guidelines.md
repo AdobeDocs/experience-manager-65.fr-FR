@@ -8,9 +8,9 @@ feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2728'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -128,7 +128,7 @@ Votre stratégie d’optimisation du réseau dépend essentiellement de la quant
 
 ### Workflows transitoires {#transient-workflows}
 
-Dans la mesure du possible, définissez le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] sur l’option Transitoire. Le paramètre réduit considérablement les surcharges nécessaires au traitement des workflows, car, dans ce cas, les workflows n’ont pas besoin de passer par les processus de suivi et d’archivage normaux.
+Dans la mesure du possible, définissez le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] sur l’option Transitoire. Le paramètre réduit considérablement les surcharges nécessaires pour traiter les workflows car, dans ce cas, ceux-ci n’ont pas besoin de respecter les processus de suivi et d’archivage classiques.
 
 1. Accédez à `/miscadmin` dans le déploiement [!DNL Experience Manager] à `https://[aem_server]:[port]/miscadmin`.
 

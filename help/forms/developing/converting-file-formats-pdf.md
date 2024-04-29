@@ -9,9 +9,9 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7848'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -914,7 +914,7 @@ Après avoir créé la nouvelle variable d’environnement, vous devez redémarr
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le serveur SDK. Le redémarrage du serveur AEM SDK à l’aide d’autres méthodes, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le serveur SDK. Le redémarrage du serveur SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 **Créer une variable système dans l’environnement Windows XP**
 

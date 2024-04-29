@@ -9,9 +9,9 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: af30cfed8f039207c0363d1ace5ac2b2a1cf84ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6607'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe
 * Pour déclencher une action selon plusieurs conditions, il est recommandé d’utiliser le concept d’action-condition. Par exemple, pour afficher et masquer le champ A en évaluant les conditions des champs B, C et D, utilisez le type de règle Afficher ou Masquer sur le champ A.
 * Utilisez le concept de condition-action ou d’action-condition si la règle contient une action pour une condition.
 * Si une règle vérifie une condition et exécute immédiatement une action en fournissant une valeur dans un champ ou en quittant un champ, il est recommandé de créer une règle avec le concept de condition-action ou le type de règle Lorsque sur le champ sur lequel la condition est évaluée.
-* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez que l’action se déclenche lorsque la valeur change côté serveur, comme pour le préremplissage de la valeur, il est recommandé d’écrire une règle Lorsque qui déclenche l’action lorsque le champ est initialisé.
+* La condition dans la règle Lorsque est évaluée lorsqu’un utilisateur modifie la valeur de l’objet pour lequel la règle Lorsque est appliquée. Cependant, si vous souhaitez déclencher l’action lorsque la valeur change du côté serveur, comme lorsque vous préremplissez la valeur, il est recommandé de créer une règle Lorsque qui déclenche l’action lors de l’initialisation du champ.
 * Lorsque vous créez des règles pour les menus déroulants, les boutons radio ou les cases à cocher, les options ou les valeurs de ces objets de formulaire sont préremplies dans l’éditeur de règles.
 
 ## Types d’opérateur et événements disponibles dans l’éditeur de règles {#available-operator-types-and-events-in-rule-editor}
@@ -122,7 +122,7 @@ Action 3 sur Objet C ;
 
 _
 
-Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Il n’est pas nécessaire de saisir à nouveau les valeurs de l’option.
+Lorsque vous avez un composant à valeurs multiples, comme des boutons radio ou une liste, les options sont récupérées automatiquement et mises à disposition du créateur de la règle lorsque vous créez une règle pour ce composant. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
 Prenons l’exemple d’une liste comportant quatre options : rouge, bleu, vert et jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à la disposition de la personne chargée de la création de la règle comme suit :
 
@@ -732,7 +732,7 @@ var c = {
 >Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
 -->
 
-Vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. Pour plus d’informations sur la création de fonctions personnalisées, reportez-vous à l’article [Fonctions personnalisées dans les Forms adaptatives](/help/forms/using/create-and-use-custom-functions.md).
+Vous pouvez également utiliser des fonctions personnalisées dans votre éditeur de règles. Pour plus d’informations sur la création de fonctions personnalisées, consultez l’article [Fonctions personnalisées dans les formulaires adaptatifs](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Gestion des règles {#manage-rules}
 
@@ -744,7 +744,7 @@ Vous pouvez effectuer les actions suivantes sur les règles :
 
 * **Développer/Réduire** : la colonne Contenu dans la liste des règles affiche le contenu des règles. Si le contenu entier des règles n’est pas visible dans l’affichage par défaut, sélectionnez ![expand-rule-content](assets/expand-rule-content.png) pour le développer.
 
-* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle de haut s’exécute en premier, suivie d’autres règles du même type. Par exemple, si vous disposez de règles Lorsque, Afficher, Activer et Lorsque à la première, la deuxième, la troisième et la quatrième position depuis le haut, respectivement, la règle Lorsque en haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
+* **Réorganiser** : toute nouvelle règle que vous créez est empilée au bas de la liste des règles. Les règles sont exécutées de haut en bas. La règle en haut s’exécute en premier, suivie des autres règles du même type. Par exemple, si vous avez les règles Lorsque, Afficher, Activer et Lorsque en première, deuxième, troisième et quatrième positions depuis le haut respectivement, la règle Lorsque du haut est exécutée en premier, suivie de la règle Lorsque à la quatrième position. Ensuite, les règles Afficher et Activer seront exécutées.
 Vous pouvez modifier l’ordre d’une règle en appuyant sur ![sort-rules](assets/sort-rules.png) en regard ou la faire glisser et la déposer dans l’ordre souhaité dans la liste.
 
 * **Modifier** : pour modifier une règle, cochez la case située en regard du titre de la règle. D’autres options de modification et de suppression de la règle s’affichent. Sélectionnez **Modifier** pour ouvrir la règle sélectionnée dans l’éditeur de règles en mode visuel ou dans l’éditeur de code, selon le mode utilisé pour créer la règle.

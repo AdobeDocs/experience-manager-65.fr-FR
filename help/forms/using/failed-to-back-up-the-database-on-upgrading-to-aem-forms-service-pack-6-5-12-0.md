@@ -1,26 +1,26 @@
 ---
-title: Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.
-description: Lorsqu’un utilisateur effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur "Mettre à niveau MySQL", le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente.
+title: Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.
+description: Lorsqu’un utilisateur ou une utilisatrice effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur « Mettre à niveau MySQL », le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente.
 exl-id: 1af000fa-439b-4ffd-8b5a-3ba45f0c524c
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL {#issue}
+# Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL {#issue}
 
-Lorsqu’un utilisateur effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur &quot;Mettre à niveau MySQL&quot;, le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente. L’erreur s’affiche :
+Lorsqu’un utilisateur ou une utilisatrice effectue une mise à niveau vers Experience Manager 6.5.12.0 et clique sur « Mettre à niveau MySQL », le gestionnaire de configuration ne parvient pas à sauvegarder la base de données Experience Manager Forms précédente. L’erreur suivante s’affiche :
 
 `Failed to backup the previous Adobe Experience Manager Forms Database`
 
 
 ## Application {#applies-to}
 
-* Formulaires avec Experience Manager 6.5
+* Experience Manager 6.5 Forms
 
 ## Solution {#solution}
 
-Pour résoudre ce problème, augmentez la taille max_packet_size de la base de données à 100 M ou selon les besoins dans le fichier my.ini situé à l’adresse {AEM_HOME}/mysql.
+Pour résoudre le problème, augmentez la taille max_packet_size de la base de données à 100 Mo ou selon les besoins dans le fichier my.ini situé à l’emplacement {AEM_HOME}/mysql.

@@ -8,9 +8,9 @@ feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

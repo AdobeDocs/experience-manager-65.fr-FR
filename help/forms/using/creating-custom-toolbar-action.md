@@ -1,6 +1,6 @@
 ---
 title: Création d’une action de barre d’outils personnalisée
-description: Les développeurs de formulaires peuvent créer des actions de barre d’outils personnalisées pour les formulaires adaptatifs dans les AEM Forms. L’utilisation d’actions personnalisées permet aux auteurs de formulaires de fournir davantage de processus et d’options aux utilisateurs finaux.
+description: Les développeurs de formulaires peuvent créer des actions de barre d’outils personnalisées pour les formulaires adaptatifs dans les AEM Forms. Ces actions personnalisées permettent aux auteurs et autrices de formulaires de proposer davantage de processus et d’options à leurs utilisatrices et utilisateurs finaux.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 68%
 
 ## Prérequis {#prerequisite}
 
-Avant de créer une action de barre d’outils personnalisée, reportez-vous aux [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md) et [Développement avec le CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Avant de créer une action de barre d’outils personnalisée, reportez-vous à [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md) et [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) pour vous familiariser avec ces concepts.
 
 ## Qu’est-ce qu’une action ?  {#what-is-an-action-br}
 
-Un formulaire adaptatif fournit une barre d’outils qui permet à un auteur de formulaire de configurer un ensemble d’options. Ces options sont définies comme des actions pour le formulaire adaptatif. Cliquez sur le bouton Modifier de la barre d’outils pour que le panneau définisse les actions prises en charge par les formulaires adaptatifs.
+Un formulaire adaptatif fournit une barre d’outils qui permet à un auteur ou à une autrice de formulaires de configurer un ensemble d’options. Ces options sont définies comme des actions pour le formulaire adaptatif. Cliquez sur le bouton Modifier de la barre d’outils pour que le panneau définisse les actions prises en charge par les formulaires adaptatifs.
 
 ![Actions de barre d’outils par défaut](assets/default_toolbar_actions.png)
 
-Outre l’ensemble d’actions fourni par défaut, vous pouvez créer des actions personnalisées dans la barre d’outils. Par exemple, vous pouvez ajouter une action pour permettre à l’utilisateur de parcourir tous les champs du formulaire adaptatif avant d’envoyer le formulaire.
+Outre l’ensemble d’actions fourni par défaut, vous pouvez créer des actions personnalisées dans la barre d’outils. Par exemple, vous pouvez ajouter une action pour permettre à l’utilisateur ou à l’utilisatrice de parcourir tous les champs du formulaire adaptatif avant d’envoyer ce dernier.
 
 ## Procédure de création dʼune action personnalisée dans un formulaire adaptatif {#steps}
 
@@ -41,9 +41,9 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
    ![Hiérarchie des nœuds pour la personnalisation de la barre d’outils](assets/action3.png)
 
 1. Sélectionnez le nœud `cq:template` dans le nœud `reviewbeforesubmit`. Assurez-vous que la valeur de la propriété `guideNodeClass` est `guideButton` et modifiez la propriété `jcr:title` en conséquence.
-1. Modifiez la propriété de type dans le nœud `cq:Template`. Pour l’exemple actuel, modifiez la propriété type en bouton .
+1. Modifiez la propriété de type dans le nœud `cq:Template`. Pour l’exemple actuel, modifiez la propriété de type en bouton.
 
-   La valeur type est ajoutée en tant que classe CSS dans le HTML généré pour le composant. Les utilisateurs peuvent utiliser cette classe CSS pour appliquer un style à leurs actions. Le style par défaut pour les appareils mobiles et fixes (ordinateurs de bureau) est fourni pour les valeurs de type Bouton, Envoyer, Réinitialiser et Enregistrer.
+   La valeur type est ajoutée en tant que classe CSS dans le code HTML généré pour le composant. Les utilisateurs et utilisatrices peuvent utiliser cette classe CSS pour appliquer un style à leurs actions. Le style par défaut pour les appareils mobiles et fixes (ordinateurs de bureau) est fourni pour les valeurs de type Bouton, Envoyer, Réinitialiser et Enregistrer.
 
 1. Sélectionnez l’action personnalisée dans la boîte de dialogue de barre d’outils de modification du formulaire adaptatif. Un bouton Révision s’affiche dans la barre d’outils du panneau.
 
@@ -183,6 +183,6 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
 
 ## Exemples {#samples}
 
-L’archive suivante contient un module de contenu. Le package comprend un formulaire adaptatif associé à la démonstration ci-dessus de l’action de barre d’outils personnalisée.
+L’archive suivante contient un package de contenu. Le package comprend un formulaire adaptatif associé à la démonstration ci-dessus de l’action de barre d’outils personnalisée.
 
 [Obtenir le fichier](assets/customtoolbaractiondemo.zip)

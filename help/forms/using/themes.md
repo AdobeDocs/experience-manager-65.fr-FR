@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6086'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
      <li>Le chemin du référentiel défini par l’utilisateur ou l’utilisatrice dans « /etc » où sont stockées les bibliothèques clientes correspondant à ce thème.</li>
      <li>Valeur par défaut : « /etc/clientlibs/fd/themes » + chemin d’accès relatif de l’actif du thème.</li>
      <li>Si l’emplacement n’existe pas, la hiérarchie des dossiers est générée automatiquement.</li>
-     <li>Lorsque cette valeur est modifiée, la structure du nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> Si vous modifiez l’emplacement de la bibliothèque cliente par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> to <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read</code> to <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
+     <li>Lorsque cette valeur est modifiée, la structure du nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read</code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
     </ul> </td>
   </tr>
   <tr>

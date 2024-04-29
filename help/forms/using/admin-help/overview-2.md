@@ -1,6 +1,6 @@
 ---
 title: Bases de la gestion des certificats et des informations d’identification
-description: Découvrez les principes de base de la gestion des certificats et des informations d’identification.
+description: Découvrez les notions de base de la gestion des certificats et des informations d’identification.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -8,25 +8,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 # Bases de la gestion des certificats et des informations d’identification {#basics-of-managing-certificates-and-credentials}
 
-A *credential* contient les informations de clé privée nécessaires à la signature ou à l’identification des documents. A *certificate* est une information de clé publique que vous configurez pour trust. AEM forms utilise des certificats et des informations d’identification à plusieurs fins :
+Les *informations d’identification* contiennent les informations de clé privée dont vous avez besoin pour signer ou identifier des documents. Un *certificat* correspond aux informations de clé publique que vous configurez pour l’approbation. AEM Forms utilise des certificats et des informations d’identification à plusieurs fins :
 
-* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF. (Voir [Configuration des informations d’identification à utiliser avec les extensions Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Vous pouvez configurer Rights Management pour qu’il affiche les informations d’identification à utiliser dans Acrobat uniquement pour les émetteurs approuvés. (Voir [Configuration des paramètres d’affichage du Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Le nom commun (CN) doit être présent dans le certificat.
-* Le service Signature accède aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir [Référence des services](https://www.adobe.com/go/learn_aemforms_services_65_fr).
+* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF. (Voir [Configuration des informations d’identification à utiliser avec les extensions Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* Vous pouvez configurer Rights Management pour afficher les informations d’identification à utiliser dans Acrobat uniquement auprès d’émetteurs approuvés. (Voir [Configuration des paramètres d’affichage de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) Le Nom commun (CN) doit être présent dans le certificat.
+* Le service Signature accède aux certificats et aux informations d’identification. Pour plus de détails sur le service Signature, voir [Référence des services](https://www.adobe.com/go/learn_aemforms_services_65_fr).
 
 **Génération d’une paire de clés**
 
-AEM forms utilise son Trust Store pour stocker et gérer des certificats, des informations d’identification et des listes de révocation des certificats (CRL). De plus, vous pouvez utiliser un périphérique HSM (Hardware Security Module, module de sécurité matérielle) indépendant pour stocker des clés privées.
+AEM Forms utilise son Trust Store pour stocker et gérer les certificats, les informations d’identification et les listes de révocation de certificats (CRL). De plus, vous pouvez utiliser un périphérique HSM (Hardware Security Module) indépendant pour stocker les clés privées.
 
-AEM forms ne fournit aucune option pour générer une paire de clés. Cependant, vous pouvez le générer à l’aide d’outils tels que Java keytool, et l’importer dans le Trust Store d’AEM forms. Pour plus d’informations sur Java keytool, voir :
+AEM Forms ne propose aucune option pour générer une paire de clés. Cependant, vous pouvez la générer à l’aide d’outils, tels que Java keytool, et l’importer dans le Trust Store d’AEM Forms. Pour plus d’informations sur Java keytool, consultez les articles suivants :
 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
@@ -38,15 +38,15 @@ Les types de signature suivants sont pris en charge et peuvent être importés d
 
 * Signature XML
 * XMLTimeStampToken
-* RFC 3161 TimeStampToken
+* Jeton d’horodatage RFC 3161
 * PKCS#7
 * PKCS#1
 * Signatures DSA
 
-**Gestion de la clé perdue ou compromise**
+**Gestion des clés perdues ou compromises**
 
-Si vous pensez que votre clé est perdue ou a été compromise, procédez comme suit :
+Si vous pensez que votre clé est perdue ou a été compromise, prenez les mesures suivantes :
 
-1. Informer l’autorité de certification afin qu’elle ajoute la clé compromise sur la liste de révocation du certificat pour révoquer la clé.
+1. Informez l’autorité de certification afin qu’elle ajoute la clé compromise à la liste de révocation des certificats pour révoquer la clé.
 1. Obtenez une nouvelle clé et ses certificats auprès de l’autorité de certification.
-1. Signez à nouveau les documents qui ont été signés à l’aide de la clé compromise à l’aide de la nouvelle clé.
+1. Signez à nouveau les documents signés avec la clé compromise à l’aide de la nouvelle clé.

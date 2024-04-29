@@ -1,15 +1,15 @@
 ---
 title: API FormBridge pour les formulaires HTML5
-description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire XFA Mobile. L’API distribue un événement FormBridgeInitialized sur la fenêtre parente.
+description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire mobile XFA. L’API distribue un événement FormBridgeInitialized sur la fenêtre parent.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '938'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 Vous pouvez utiliser l’API Form Bridge pour ouvrir un canal de communication entre les formulaires HTML5 XFA et vos applications. L’API Form Bridge fournit une API de **connexion** pour créer la connexion.
 
-L’API de **connexion** accepte un gestionnaire en tant qu’argument. Une fois la connexion créée entre le formulaire HTML5 basé sur XFA et Form Bridge, la poignée est appelée.
+L’API de **connexion** accepte un gestionnaire en tant qu’argument. Une fois la connexion créée entre le formulaire HTML5 XFA et Form Bridge, le descripteur est appelé.
 
 Vous pouvez utiliser l’exemple de code suivant pour créer la connexion.
 
@@ -40,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Renvoie le numéro de version de la bibliothèque de script
+Renvoie le numéro de version de la bibliothèque de script.
 
 * **Input** : aucune
 * **Output** : numéro de version de la bibliothèque de script.
@@ -60,8 +60,8 @@ Renvoie le numéro de version de la bibliothèque de script
    * **handler** : fonction à exécuter après la connexion de Form Bridge
    * **context** : objet pour lequel le contexte (valeur « this ») du *gestionnaire* est défini.
 
-* **Sortie**: aucune
-* **Erreur**: aucune
+* **Output :** aucune
+* **Error :** aucune
 
 **getDataXML(options)** : renvoie les données actuelles du formulaire au format XML.
 
@@ -70,15 +70,15 @@ Renvoie le numéro de version de la bibliothèque de script
    * **options :** objet JavaScript contenant les propriétés suivantes :
 
       * **Error**: Error Handler Function
-      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML dans *data* .
-      * **contexte**: objet auquel le contexte (ceci) de la propriété *success* est définie
+      * **success** : fonction du gestionnaire de réussite. Cette fonction transmet un objet contenant du code XML à la propriété *data*.
+      * **context** : objet pour lequel le contexte (valeur « this ») de la fonction *success* est défini.
       * **validationChecker** : fonction à appeler pour vérifier les erreurs de validation reçues du serveur. La fonction de validation transmet un tableau de chaînes d’erreur.
       * **formState** : état JSON du formulaire XFA pour lequel les données XML doivent être renvoyées. Si cette fonction n’est pas spécifiée, elle renvoie les données XML du formulaire actuellement généré.
 
 * **Output :** aucune
 * **Error :** aucune
 
-**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config .
+**registerConfig(configName, config)** : enregistre les configurations propres à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
 
 * **Entrée:**
 
@@ -144,8 +144,8 @@ Renvoie le numéro de version de la bibliothèque de script
 **hideSubmitButtons()** : masque tous les boutons d’envoi dans le formulaire.
 
 * **Input** : aucune
-* **Sortie**: aucune
-* **Erreur**: renvoie l’exception si l’état du formulaire n’est pas initialisé.
+* **Output** : aucune
+* **Error** : renvoie l’exception si l’état du formulaire n’est pas initialisé.
 
 **getFormState()** : renvoie le JSON représentant l’état du formulaire.
 
@@ -154,7 +154,7 @@ Renvoie le numéro de version de la bibliothèque de script
 
 * **Error :** aucune
 
-**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de succès ou d’erreur sont appelés une fois l’opération terminée.
+**restoreFormState(options)** : restaure l’état du formulaire à partir de l’état JSON fourni dans l’objet options. L’état est appliqué et les gestionnaires de réussite ou d’erreur sont appelés après que l’opération soit terminée.
 
 * **Entrée:**
 
@@ -172,7 +172,7 @@ Renvoie le numéro de version de la bibliothèque de script
 
 * **Input :** expression SOM du champ sur lequel le ciblage est défini.
 * **Output :** aucune
-* **Erreur :** Génère une exception en cas d’expression Som incorrecte
+* **Error :** renvoie une exception si une expression SOM est incorrecte.
 
 **setFieldValue (som, value)** : définit la valeur des champs pour les expressions SOM données.
 
@@ -182,7 +182,7 @@ Renvoie le numéro de version de la bibliothèque de script
    * **value :** tableau contenant des valeurs correspondant aux expressions SOM fournies dans un tableau **SOM**. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
-* **Erreur :** Génère une exception en cas d’expression Som incorrecte
+* **Error :** renvoie une exception si une expression SOM est incorrecte.
 
 **getFieldValue (som)** : renvoie la valeur des champs des expressions SOM données.
 

@@ -7,9 +7,9 @@ topic-tags: integrations
 exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Votre marque est désormais répertoriée dans la page Activités.
 
    >[!NOTE]
    >
-   >Vous pouvez ignorer l’erreur &quot;Votre activité a été enregistrée mais elle n’a pas été synchronisée avec Target. Motif : l’expérience suivante ne comporte aucune offre », si elle survient lors de l’enregistrement de l’activité.
+   >Vous pouvez ignorer l’erreur « Votre activité a été enregistrée mais elle n’a pas été synchronisée avec Target. Motif : l’expérience suivante ne comporte aucune offre », si elle survient lors de l’enregistrement de l’activité.
 
 1. Pour activer la cible, modifiez le fichier .jsp et incluez des bibliothèques client que votre modèle de formulaires adaptatifs utilise.
 

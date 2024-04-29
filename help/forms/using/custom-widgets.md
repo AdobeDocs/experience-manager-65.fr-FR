@@ -10,7 +10,7 @@ feature: HTML5 Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '635'
 ht-degree: 100%
 

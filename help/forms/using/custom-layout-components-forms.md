@@ -8,9 +8,9 @@ docset: aem65
 exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 70%
 
 ## Prérequis {#prerequisite}
 
-Connaissance des mises en page qui vous permet de créer/utiliser une mise en page personnalisée. Voir [Modification de la disposition du panneau](../../forms/using/layout-capabilities-adaptive-forms.md).
+Connaissance des dispositions qui vous permettent de créer/utiliser une disposition personnalisée. Voir [Modification de la disposition du panneau](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Composant de disposition de panneau de formulaire adaptatif {#adaptive-form-panel-layout-component}
 
 Le composant Disposition de panneau de formulaire adaptatif contrôle la disposition des composants de formulaire adaptatif dans un panneau par rapport à l’interface utilisateur.
 
-## Création d’une disposition de panneau personnalisée {#creating-a-custom-panel-layout}
+## Créer une disposition de panneau personnalisée {#creating-a-custom-panel-layout}
 
 1. Accédez à l’emplacement `/crx/de`.
 1. Copiez une disposition de panneau de l’emplacement `/libs/fd/af/layouts/panel` (par exemple, `tabbedPanelLayout`) dans `/apps` (par exemple,`/apps/af-custom-layout`).

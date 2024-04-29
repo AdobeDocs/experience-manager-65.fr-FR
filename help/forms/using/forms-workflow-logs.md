@@ -1,6 +1,6 @@
 ---
 title: Journalisation des workflows AEM Forms
-description: Découvrez comment déboguer les problèmes de workflow AEM Forms et activer la journalisation de débogage pour les workflows AEM Forms afin d’afficher les journaux.
+description: Découvrez comment déboguer les problèmes d’AEM Forms Workflow et activer la journalisation du débogage d’AEM Forms Workflow afin d’afficher les journaux.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -8,15 +8,15 @@ docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Journalisation des workflows AEM Forms{#logging-in-aem-forms-workflows}
 
-Les étapes du Forms Workflow fournissent des journaux détaillés pour déboguer facilement les problèmes liés aux workflows. Activez la journalisation de débogage pour les workflows AEM Forms afin d’afficher les journaux.
+Les étapes de Forms Workflow fournissent des journaux détaillés pour déboguer facilement les problèmes liés aux workflows. Activez la journalisation de débogage pour les workflows AEM Forms afin d’afficher les journaux.
 
 Par défaut, toutes les informations relatives à la journalisation sont disponibles dans le fichier **error.log** du répertoire */crx-repository/logs/*.
 
@@ -67,7 +67,7 @@ L’exemple suivant illustre les journaux de l’étape Signer le document :
 
 Utilisez les journaux pour évaluer les éléments suivants :
 
-* Vous utilisez une configuration Adobe Sign correcte.
+* Vous utilisez une configuration Adobe Sign appropriée.
 * Le service Adobe Sign se ferme après la création d’un contrat.
 * L’étape Signer le document se ferme avec un message de réussite.
 
@@ -75,19 +75,19 @@ S’il existe une exception, vous pouvez afficher la trace de la pile complète 
 
 ## Activer la journalisation du débogage pour les workflows AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Procédez comme suit pour activer la journalisation de débogage pour les workflows AEM Forms :
+Procédez comme suit pour activer la journalisation du débogage pour les workflows AEM Forms :
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse:
 
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Sélectionnez **[!UICONTROL Sling]** > **[!UICONTROL Prise en charge du journal]**.
-1. Sélectionner **[!UICONTROL Ajoutez un nouvel enregistreur.]**
+1. Appuyez sur **[!UICONTROL Ajouter une nouvelle journalisation]**.
 1. Sélectionnez **[!UICONTROL Débogage]** pour le **[!UICONTROL Niveau de journalisation]**.
 1. Indiquez l’emplacement du fichier journal. L’emplacement par défaut du fichier journal est le suivant : *logs\error.log*.
 1. Précisez le nom du package **com.adobe.granite.workflow.core** dans la colonne **[!UICONTROL Journalisation]**.
 
-   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Sélectionner **[!UICONTROL +]** et ajoutez les noms de packages suivants à la liste :
+   L’exécution de ces étapes permet de stocker les journaux de débogage du package **com.adobe.granite.workflow.core**. Sélectionnez **[!UICONTROL +]** et ajoutez les noms de packages suivants à la liste :
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

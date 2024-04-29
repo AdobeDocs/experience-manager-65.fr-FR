@@ -9,9 +9,9 @@ role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Les didacticiels de mise en route (SOAP) de lʼAPI Java suivants sont disponible
 
 [Didacticiel de mise en route (mode SOAP) : application de l’horodatage au document à l’aide de l’API Java](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
-Les opérations AEM Forms JEE peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms JEE peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >

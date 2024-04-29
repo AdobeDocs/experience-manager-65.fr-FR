@@ -1,6 +1,6 @@
 ---
 title: Images panoramiques
-description: Découvrez comment utiliser des images panoramiques dans Dynamic Media.
+description: Découvrez comment utiliser les images panoramiques dans Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,15 +11,15 @@ role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Images panoramiques {#panoramic-images}
 
-Cette section décrit l’utilisation de la visionneuse d’images panoramiques pour effectuer le rendu d’images panoramiques sphériques pour une expérience de visionnage immersive de 360 degrés d’une pièce, d’une propriété, d’un emplacement ou d’un paysage.
+Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques, afin de profiter d’une expérience de visionnage immersive à 360 degrés d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
 Consultez également la section [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
@@ -48,8 +48,8 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
 1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
 1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Diffusion d’image]**.
 
-1. Sur la même page de publication Image Server, recherchez l’en-tête. **[!UICONTROL Attributs de requête]**.
-1. Sous l’en-tête Attributs de requête , recherchez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
+1. Sur la même page de publication Image Server, recherchez l’en-tête **[!UICONTROL Attributs de requête]**.
+1. Sous l’en-tête Attributs de requête, recherchez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
    Dynamic Media Classic est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport d’aspect de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
@@ -57,9 +57,9 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
    >
    >Seules les images qui respectent la taille d’image maximale autorisée sont prises en charge. Les demandes d’images qui dépassent la taille maximale entraînent une réponse 403.
 
-1. Sous l’en-tête Attributs de requête , procédez comme suit :
+1. Sous l’en-tête Attributs de requête, procédez comme suit :
 
-   * Définissez le mode d’obscurcissement de requête sur **[!UICONTROL Désactivé]**.
+   * Définissez le mode d’obfuscation de requête sur **[!UICONTROL Désactivé]**.
    * Définissez le mode de verrouillage de requête sur **[!UICONTROL Désactivé]**.
 
    Ces paramètres sont nécessaires pour utiliser le composant de gestion de contenu web `Panoramic Media` dans Experience Manager.

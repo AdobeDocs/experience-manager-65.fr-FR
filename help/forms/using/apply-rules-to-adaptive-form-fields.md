@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1115'
 ht-degree: 100%
 

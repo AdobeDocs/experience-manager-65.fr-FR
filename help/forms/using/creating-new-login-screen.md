@@ -1,6 +1,6 @@
 ---
-title: Créer un écran de connexion
-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple AEM Forms Workspace ou Forms Manager.
+title: Création d’un écran de connexion
+description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail d’AEM Forms ou de Forms Manager.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,13 @@ docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Créer un écran de connexion{#creating-a-new-login-screen}
+# Création d’un écran de connexion{#creating-a-new-login-screen}
 
 Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail d’AEM Forms.
 
@@ -291,7 +291,7 @@ css.newLoginContentArea {
 1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
-   1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, voir [Accès WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=fr).
 
    1. Ajoutez de nouvelles images.
 

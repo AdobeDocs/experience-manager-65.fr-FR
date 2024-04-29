@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide de l’API du service de sauvegarde et de restauration
-description: Découvrez comment les didacticiels de mise en route Sauvegarde et restauration d’AEM Forms API permettent de créer et de restaurer des sauvegardes efficacement.
+title: Démarrages rapides de l’API du service Backup and Restore
+description: Découvrez comment les démarrages rapide de l’API du service Backup and Restore d’AEM Forms permettent de créer et de restaurer des sauvegardes efficacement.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

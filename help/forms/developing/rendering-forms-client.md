@@ -10,9 +10,9 @@ role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1690'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,13 +50,13 @@ Avant d’effectuer par programmation une opération d’API client de service F
 
 **Définir les options d’exécution du rendu client**
 
-Définissez l’option d’exécution de rendu client pour effectuer le rendu d’un formulaire sur le client en définissant la variable `RenderAtClient` option d’exécution sur `true`. Le formulaire est ainsi livré à l’appareil client où il est rendu. Si `RenderAtClient` est `auto` (la valeur par défaut), la conception du formulaire détermine si le formulaire est rendu au niveau du client. La conception du formulaire doit être une conception de formulaire avec une disposition souple.
+Définissez l’option d’exécution du rendu client pour effectuer le rendu d’un formulaire au niveau du client en définissant l’option d’exécution `RenderAtClient` sur `true`. Le formulaire est ainsi livré à l’appareil client où il est rendu. Si `RenderAtClient` est `auto` (la valeur par défaut), la conception du formulaire détermine si le formulaire est rendu au niveau du client. La conception du formulaire doit être une conception de formulaire avec une disposition souple.
 
 Une option d’exécution facultative que vous pouvez définir est l’option `SeedPDF`. L’option `SeedPDF` combine le conteneur PDF (document PDF d’origine) avec la conception du formulaire et les données XML. La conception du formulaire et les données XML sont transmises à Acrobat ou à Adobe Reader, où le formulaire est rendu. L’option `SeedPDF` peut être utilisée lorsque l’ordinateur client ne dispose pas des polices utilisées dans le formulaire, par exemple lorsqu’un utilisateur final n’est pas autorisé à utiliser une police que le propriétaire du formulaire est autorisé à utiliser.
 
 Vous pouvez utiliser Designer pour créer un fichier PDF dynamique simple à utiliser comme fichier PDF d’origine. Pour effectuer cette tâche, les étapes suivantes sont nécessaires :
 
-1. Déterminez si vous devez incorporer des polices dans le fichier PDF d’origine. Le fichier du PDF de contrôle doit contenir les polices supplémentaires requises par le formulaire en cours de rendu. Lorsque vous incorporez des polices dans le fichier PDF d’origine, assurez-vous de ne pas enfreindre les accords de licence des polices. Dans Designer, vous pouvez déterminer si vous pouvez légalement incorporer des polices. Lors de l’enregistrement, si vous ne pouvez pas incorporer certaines polices dans le formulaire, Designer affiche un message répertoriant les polices que vous ne pouvez pas incorporer. Ce message ne s’affiche pas dans Designer pour les documents PDF statiques.
+1. Déterminez si vous devez incorporer des polices dans le fichier PDF d’origine. Le fichier PDF d’origine doit contenir les polices supplémentaires requises par le formulaire qui est en cours de rendu. Lorsque vous incorporez des polices dans le fichier PDF d’origine, assurez-vous de ne pas enfreindre les accords de licence des polices. Dans Designer, vous pouvez déterminer si vous pouvez légalement incorporer des polices. Lors de l’enregistrement, si vous ne pouvez pas incorporer certaines polices dans le formulaire, Designer affiche un message répertoriant les polices que vous ne pouvez pas incorporer. Ce message ne s’affiche pas dans Designer pour les documents PDF statiques.
 1. Si vous créez le fichier PDF d’origine dans Designer, il est recommandé d’ajouter au minimum un champ de texte contenant un message. Ce message doit être adressé aux utilisateurs de versions antérieures d’Adobe Reader et leur indiquer qu’ils doivent disposer d’Acrobat 7.0 ou d’une version ultérieure, ou d’Adobe Reader 7.0 ou d’une version ultérieure pour afficher le document.
 1. Enregistrez le fichier PDF d’origine en tant que fichier PDF dynamique avec l’extension de nom du fichier PDF.
 

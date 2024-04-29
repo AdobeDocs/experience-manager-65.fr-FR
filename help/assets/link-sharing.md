@@ -8,9 +8,9 @@ exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager un lien]** ![icône Partage de lien](assets/do-not-localize/assets_share.png). Lien créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans la variable [!UICONTROL Partager le lien] champ . Le lien n’est créé que lorsque vous sélectionnez **[!UICONTROL Envoyer]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager un lien]** ![icône Partage de lien](assets/do-not-localize/assets_share.png). Le lien qui sera créé après avoir cliqué sur **[!UICONTROL Partager]** s’affiche à l’avance dans le champ [!UICONTROL Partager un lien]. Le lien n’est pas créé tant que vous n’avez pas sélectionné **[!UICONTROL Envoyer]**.
 
    ![Boîte de dialogue avec le partage de lien](assets/share-assets-as-link.png)
 
@@ -59,7 +59,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 1. Pour permettre aux utilisateurs de télécharger la ressource d’origine, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**. Pour permettre aux utilisateurs de télécharger uniquement les rendus des ressources partagées, sélectionnez **[!UICONTROL Autorise le téléchargement des rendus du fichier]**.
 
-1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs au moyen d’un email.
+1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs et les utilisatrices par e-mail.
 
 1. Pour afficher la ressource partagée, cliquez sur le lien dans l’e-mail envoyé. Pour générer un aperçu de la ressource, cliquez sur la ressource partagée. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Précédent]**. Si vous avez partagé un dossier, cliquez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
 

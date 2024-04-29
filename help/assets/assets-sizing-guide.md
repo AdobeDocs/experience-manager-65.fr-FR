@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Enfin, les fonctionnalités de création de versions d’[!DNL Experience Manage
 
 Compte tenu de ces facteurs, vous avez besoin d’une méthodologie pour calculer un espace de stockage acceptable et précis afin de stocker les ressources des utilisateurs et utilisatrices.
 
-1. Déterminez la taille et le nombre de ressources chargées dans le système.
+1. Déterminez la taille et le nombre de ressources à charger dans le système.
 1. Obtenez un échantillon représentatif des ressources à charger dans [!DNL Experience Manager]. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs exemples d’images de chaque format de fichier. En outre, ces exemples doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
 1. Définissez les rendus à utiliser.
 1. Créez les rendus dans [!DNL Experience Manager] à l’aide des applications [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud]. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui mettent en œuvre Dynamic Media, vous pouvez utiliser le fichier binaire IC pour générer les rendus PTIFF à stocker dans Experience Manager.
@@ -81,7 +81,7 @@ Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (
 
 #### Problèmes de performances {#performance-concerns}
 
-Un magasin de données partagé nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. S’il existe des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
+Un magasin de données partagé nécessite que les fichiers binaires soient stockés sur un lecteur monté sur le réseau partagé entre toutes les instances. Comme ces fichiers binaires sont accessibles sur un réseau, les performances du système sont affectées. Vous pouvez partiellement atténuer cet impact en utilisant une connexion réseau rapide à une matrice rapide de disques. Toutefois, il s’agit d’une proposition coûteuse. Dans le cas des opérations AWS, tous les disques sont distants et nécessitent une connectivité réseau. Les volumes éphémères perdent des données lorsque l’instance démarre ou s’arrête.
 
 #### Latence {#latency}
 
@@ -104,7 +104,7 @@ Pour le référentiel, utilisez des disques SSD ou des disques dont le niveau 
 
 ## Réseau {#network}
 
-[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent les performances réseau plus importantes que sur la plupart de nos [!DNL Experience Manager] projets. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement de la connexion réseau d’un utilisateur vers [!DNL Experience Manager] dans le document [Observations relatives à Assets en ce qui concerne l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie réseau](/help/assets/assets-network-considerations.md).
+[!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager]. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement de la connexion réseau d’un utilisateur vers [!DNL Experience Manager] dans le document [Observations relatives à Assets en ce qui concerne l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie réseau](/help/assets/assets-network-considerations.md).
 
 ## Limites {#limitations}
 

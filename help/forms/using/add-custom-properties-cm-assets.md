@@ -9,15 +9,15 @@ feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4434'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Ajout de propriétés personnalisées aux actifs Correspondence Management{#add-custom-properties-to-correspondence-management-assets}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Vous pouvez personnaliser l’interface utilisateur de Correspondence Management et présenter aux utilisateurs et aux utilisatrices un ensemble personnalisé de propriétés et d’onglets. Cette personnalisation inclut l’ajout de champs personnalisés/de propriétés et d’onglets à des types de ressources/lettres spécifiques ou à tous les types de ressources/lettres.
 
@@ -44,7 +44,7 @@ Ce scénario indique comment ajouter une propriété personnalisée à tous les 
 procédez comme suit pour ajouter une propriété personnalisée à tous les types de ressources et lettres :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier d’applications, créez un dossier nommé css avec un chemin/une structure similaires au dossier css (dans le dossier ccrui) en procédant comme suit :
+1. Dans le dossier des applications, créez un dossier nommé css dont le chemin d’accès/la structure est similaire au dossier css (situé dans le dossier ccrui), en suivant les étapes ci-après :
 
    1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -102,7 +102,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    >[!NOTE]
    >
-   >Les propriétés communes à toutes les ressources que vous ajoutez apparaissent dans l’onglet de base des propriétés de la ressource. Par défaut, les propriétés courantes ajoutées pour toutes les ressources s’affichent sur les pages de propriétés et de création de ressources. Pour masquer les propriétés communes, vous devez <!--link to show / hide properties]-->.
+   >Les propriétés communes à toutes les ressources que vous ajoutez apparaissent dans l’onglet de base des propriétés de la ressource. Par défaut, les propriétés communes ajoutées pour toutes les ressources s’affichent sur la page des propriétés ainsi que sur la page de création des ressources. Pour masquer les propriétés communes, vous devez <!--link to show / hide properties]-->.
 
 ### Scénario : ajout d’une liste déroulante et de valeurs personnalisées à une propriété/un champ personnalisé {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
@@ -148,7 +148,7 @@ Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous souh
 
 1. Sous le nœud de propriété (ici : geographicallocation), ajoutez un nouveau nœud portant le nom `items`. Sous le nœud des éléments, ajoutez un nœud pour chaque valeur de la liste déroulante. Il est recommandé d’ajouter le premier nœud en le laissant vide, comme valeur par défaut de la liste déroulante, puis de ne spécifier aucune valeur pour le champ. Pour ajouter plusieurs options/valeurs de liste déroulante, répétez les étapes suivantes :
 
-   1. Cliquez avec le bouton droit sur le noeud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un noeud**.
+   1. Cliquez avec le bouton droit sur le nœud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un nœud**.
    1. Entrez comme nom de champ `item1,`, conservez le type nt:unstructured, puis cliquez sur **OK**.
    1. Ajoutez les propriétés suivantes au nœud que vous venez de créer (ici, item1), puis cliquez sur **Enregistrer tout** :
 
@@ -187,7 +187,7 @@ Ce scénario indique comment ajouter un onglet personnalisé, Destinataires, à 
 Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à toutes vos ressources :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier d’applications, créez un dossier nommé cmmetadataproperties avec un chemin/une structure similaire au dossier cmmetadataproperties (dans le dossier content) en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier appelé cmmetadataproperties avec un chemin/une structure semblables au dossier cmmetadataproperties (situé dans le dossier de contenu). Pour cela, suivez les étapes ci-après :
 
    1. Cliquez avec le bouton droit sur le dossier cmmetadataproperties à l’emplacement suivant et sélectionnez **Nœud de recouvrement** :
 
@@ -294,7 +294,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Pour créer le champ, procédez comme suit (pour créer d’autres champs/nœuds, répétez ces étapes). :
+1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Pour créer le champ, procédez comme suit (pour créer d’autres champs/nœuds, répétez ces étapes).:
 
    1. Cliquez avec le bouton droit sur le nœud d’éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
@@ -387,7 +387,7 @@ Ce scénario vous indique comment ajouter à toutes les ressources de texte une 
 * Dictionnaire de données
 * Lettre
 
-Par exemple, pour les ressources de texte uniquement, vous souhaitez ajouter une propriété, Emplacement des destinataires, afin d’identifier la zone géographique à laquelle une ressource est pertinente.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
+Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond. ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
 
 Procédez comme suit pour ajouter une propriété à un type de ressource :
 
@@ -517,7 +517,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
 ### Affichage des propriétés personnalisées sur la page de création des ressources {#display-custom-properties-on-the-asset-creation-page}
 
-Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets sont visibles uniquement sur la page Propriétés et non sur la page de création de la ressource, car la page de création de la ressource ne comporte pas de mise en page avec onglet. Pour afficher les propriétés personnalisées sur la page de création des ressources avec d’autres propriétés, vous devez effectuer les opérations suivantes :
+Par défaut, les propriétés personnalisées ajoutées à de nouveaux onglets sont visibles uniquement dans la page de propriétés et non sur la page de création des ressources, car cette dernière ne dispose pas de la disposition sous forme d’onglets. Pour afficher les propriétés personnalisées sur la page de création des ressources avec d’autres propriétés, vous devez effectuer les opérations suivantes :
 
 1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -758,7 +758,7 @@ Lorsque vous ajoutez la propriété sling:orderBefore pour spécifier l’emplac
 
 ## Activation de la recherche des propriétés personnalisées {#enable-search-for-custom-properties}
 
-Par défaut, la recherche de texte intégral n’inclut pas les propriétés personnalisées que vous ajoutez à l’interface utilisateur à l’aide de CRX/DE.
+Par défaut, la recherche de texte intégral n’inclut pas les propriétés personnalisées que vous ajoutez à l’interface utilisateur au moyen de CRX/DE.
 
 Pour inclure les propriétés personnalisées dans la recherche, vous devez autoriser l’indexation des propriétés personnalisées.
 
@@ -844,7 +844,7 @@ Pour ce faire, effectuez les étapes suivantes :
 ## Modification de la vue par défaut de la page de recherche {#change-default-view-of-the-search-page}
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier des applications, créez un dossier nommé list avec un chemin/une structure similaires au dossier list dans /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views :
+1. Dans le dossier dʼapplications, créez un dossier nommé list dont le chemin d’accès/la structure est similaire au dossier list situé sous /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views :
 
    1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
@@ -888,7 +888,7 @@ Pour ce faire, effectuez les étapes suivantes :
 >Ces étapes permettent de modifier la vue par défaut de toutes les consoles telles que Formulaires et documents, Ressources et Sites.
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
-1. Dans le dossier d’applications, créez un dossier nommé list avec un chemin/une structure similaires au dossier list dans :
+1. Dans le dossier des applications, créez un dossier nommé list dont le chemin d’accès/la structure est similaire au dossier list situé sous :
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -931,7 +931,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
 Pour ce faire, effectuez les étapes suivantes :
 
-1. Sous le noeud de propriété personnalisée, tel que geographicallocation, créez un noeud nommé &quot;granite:rendercondition&quot; de type &quot;nt:unstructured&quot;.
+1. Sous le nœud de propriété personnalisée, tel que geographicallocation, créez un nœud nommé « granite:rendercondition » de type « nt:unstructured ».
 1. Ajoutez la propriété suivante au nœud et cliquez sur **Save All** :
 
    <table>
