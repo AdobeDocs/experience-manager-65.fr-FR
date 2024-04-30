@@ -71,7 +71,7 @@ Lorsque vous cliquez sur l’icône de géolocalisation lors de la création de 
 
 >[!NOTE]
 >
-Sur iPad, l’incorporation des informations de géolocalisation est obligatoire par défaut.
+>Sur iPad, l’incorporation des informations de géolocalisation est obligatoire par défaut.
 
 Sur iPad, l’icône de géolocalisation n’est pas affichée par défaut et les informations de géolocalisation sont automatiquement incorporées lorsque vous cliquez sur **OK**.
 

@@ -332,7 +332,7 @@ Par défaut, Experience Manager recherche le dossier sélectionné et tous les 
 >* Dans l’interface utilisateur classique, vous pouvez rechercher des éléments **Flash** et **FXG**. Le filtrage de ces types n’est actuellement pas pris en charge par l’interface utilisateur optimisée pour les écrans tactiles.
 >
 >* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats retournent le rendu d’origine (uniquement en &amp;ast;.mp4) et le rendu codé.
-* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
+>* La recherche d’une visionneuse de vidéos adaptatives s’étend au dossier et à tous les sous-dossiers mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
 >
 
 **[!UICONTROL Statut de publication]** - Vous pouvez filtrer les ressources selon le statut de publication : **[!UICONTROL Dépublié]** ou **[!UICONTROL Publié]**. Si vous ne sélectionnez aucun **[!UICONTROL statut de publication]**, Experience Manager recherche par défaut tous les statuts de publication.
