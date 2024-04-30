@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->De nombreuses ressources sont disponibles pour expliquer comment définir des expressions régulières. Par exemple : [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières. Par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création de définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 

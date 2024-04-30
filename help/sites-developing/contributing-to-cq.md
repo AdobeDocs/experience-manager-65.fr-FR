@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2635'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,17 +88,17 @@ Réutilisation du code : notre architecture de produits basée sur OSGi et not
 
 Couplage lâche : nous privilégions les interactions à couplage faible à des dépendances étroites et des échanges trop serrés non souhaités. Le couplage faible permet également de réutiliser du code.
 
-### Ne pas interrompre la démonstration {#don-t-break-the-demo}
+### Toujours prêts pour la démonstration {#don-t-break-the-demo}
 
 Familiarisez-vous avec les scripts de démonstration et les fonctionnalités des produits qui sont le plus souvent présentés dans les démos. Sachez que rien de ce que vous codez ne doit nuire à une fonctionnalité de « script de démonstration ». Le produit principal doit toujours être prêt pour une démonstration, même pendant le développement.
 
 ### Conception pour la fiabilité {#design-for-reliability}
 
-Nous nous efforçons de concevoir et de coder des fonctionnalités de manière réactive, de sorte (par exemple) qu’un problème avec un seul élément DOM n’entraîne pas le rendu d’une page entière. En d’autres termes : laisser ce qui doit être fatal l’être. Tout le reste doit être viable. Rendez le produit « indulgent ».
+Nous nous efforçons de concevoir et de coder les fonctionnalités sans qu’un bug ait de lourdes répercussions. Par exemple, il faut éviter qu’un problème lié à un seul élément DOM empêche le rendu d’une page entière. En d’autres termes : laisser ce qui doit être fatal l’être. Tout le reste doit être viable. Rendez le produit « indulgent ».
 
 ### L’anormal est la nouvelle norme {#abnormal-is-the-new-normal}
 
-Ne dépendez pas des points d&#39;arrêt, assurez-vous de procéder au nettoyage au démarrage. Un arrêt anormal est un arrêt normal.
+Ne dépendez pas des shutdown hooks, nettoyez au démarrage. Un arrêt anormal est un arrêt normal.
 
 `shutdown == kill -9 == power outage`
 

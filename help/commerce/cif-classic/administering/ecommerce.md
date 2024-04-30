@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -99,7 +99,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
  </tbody>
 </table>
 
-eCommerce, ainsi que la Gestion des informations sur les produits (PIM), gère les activités d’un site web axé sur la vente de produits par le biais d’une boutique en ligne :
+eCommerce, avec la gestion de l’information sur les produits (PIM), gère les activités d’un site web axé sur la vente de produits au moyen d’une boutique en ligne :
 
 * Création, durée de vie et obsolescence d’un produit
 * Gestion des prix

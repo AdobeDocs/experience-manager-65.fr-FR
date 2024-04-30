@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3227'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Les propriétés suivantes sont disponibles pour de nombreux composants d’éta
 
 * **Avertir l’utilisateur ou l’utilisatrice par e-mail**
 
-   * Avertissez les participants en leur envoyant un email lorsque le workflow atteint l’étape.
+   * Notifiez les participants et les participantes en leur envoyant un e-mail lorsque le workflow atteint l’étape.
    * Si cette option est activée, un e-mail est envoyé à l’utilisateur ouà l’utilisatrice défini par la propriété **Utilisateur/Groupe**, ou à chaque membre du groupe si un groupe est défini.
 
 * **Utilisateur/Groupe**
@@ -188,7 +188,7 @@ La **Division OU** crée une division dans le workflow, après laquelle une seul
 
 >[!NOTE]
 >
->Voir [Étape de la division OU](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Voir [Étape de la division OU](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows#use-a-variable)
 
 ![Branchement à l’aide de la division OU](assets/variables_orsplit_new.png)
 

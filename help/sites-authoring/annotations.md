@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 
 >[!NOTE]
 >
->N’oubliez pas que [commentaires](/help/sites-authoring/basic-handling.md#timeline) sont également disponibles pour fournir des commentaires sur une page.
+>Pour rappel, des [commentaires](/help/sites-authoring/basic-handling.md#timeline) sont également disponibles pour fournir un retour d’informations sur une page.
 
 >[!NOTE]
 >

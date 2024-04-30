@@ -188,7 +188,7 @@ Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la sec
 
 Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, consultez la section [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
 
-### Restrictions {#limitations}
+### Limites {#limitations}
 
 Le SDK de l’éditeur de SPA d’AEM a été introduit avec le pack de services 2 d’AEM 6.4. Il est entièrement pris en charge par Adobe et il est amélioré et développé en continu. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
 

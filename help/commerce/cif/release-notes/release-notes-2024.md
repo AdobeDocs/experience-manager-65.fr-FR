@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -32,4 +32,4 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Correctifs {#bug-fixes-january}
 
-* Correction du bouton d’ajout au panier et de l’ajout à la liste bloquée dans le composant de collecte de produits.
+* Correction du bouton d’ajout au panier et de l’ajout à la liste de souhaits dans le composant de collecte de produits.

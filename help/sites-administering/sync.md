@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2433'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ La synchronisation des utilisateurs et des utilisatrices repose sur l’environn
 
 Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisation des utilisateurs, suivies d’une section [Résolution des incidents](#troubleshooting) :
 
-### Prérequis {#prerequisites}
+### Conditions préalables {#prerequisites}
 
 1. Si les utilisateurs et utilisatrices et les groupes d’utilisateurs ont déjà été créés sur une instance de publication, il est recommandé de [synchroniser manuellement](#manually-syncing-users-and-user-groups) les données utilisateur sur toutes les instances de publication avant de configurer et d’activer la synchronisation des utilisateurs et des utilisatrices.
 
@@ -143,7 +143,7 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
    * **Principal** : *recherchez l’utilisateur créé pour la synchronisation des utilisateurs*
    * **Type** : `Allow`
    * **Autorisations** : `jcr:all`
-   * **Restrictions** `rep:glob`: `*/activities/*`
+   * **Restrictions** `rep:glob`: `*/activities/*`
    * sélectionnez **OK**
 
 * sélectionnez **Enregistrer tout**

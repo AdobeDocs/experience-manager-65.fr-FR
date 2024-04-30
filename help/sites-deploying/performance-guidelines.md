@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2939'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -349,10 +349,10 @@ Développez pour AEM et optimisez les **performances et l’évolutivité**. Vou
 
 **Mauvaises pratiques**
 
-* N’utilisez pas directement les API JCR, si vous le pouvez
-* Ne modifiez pas /libs, mais utilisez plutôt des superpositions.
-* N’utilisez pas de requêtes dans la mesure du possible
-* N’utilisez pas de liaisons Sling pour obtenir des services OSGi dans du code Java™, mais utilisez plutôt :
+* N’utilisez pas directement les API JCR, si possible.
+* Ne modifiez pas les répertoires /libs, utilisez plutôt des recouvrements.
+* N’utilisez pas de requêtes dans la mesure du possible.
+* N’utilisez pas de liaisons Sling pour obtenir des services OSGi dans le code Java™, mais utilisez plutôt :
 
    * @Reference dans un composant DS ;
    * @Inject dans un modèle Sling ;

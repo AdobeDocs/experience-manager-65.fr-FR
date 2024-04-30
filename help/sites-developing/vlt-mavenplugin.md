@@ -8,7 +8,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Le déploiement des modules construits sur AEM est effectué par le plug-in Mave
 >
 >Pour plus d’informations, consultez les ressources suivantes :
 >
->* L’article [Plug-in Maven Content Package Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) dans la documentation d’AEM as a Cloud Service pour savoir comment déployer les applications AEM.
+>* L’article [Plug-in Maven Content Package Adobe](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools) dans la documentation d’AEM as a Cloud Service pour savoir comment déployer les applications AEM.
 >* L’article sur la [structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans la documentation AEM as a Cloud Service pour savoir comment structurer des projets AEM modernes
 >* La documentation sur l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) pour savoir comment démarrer un nouveau projet AEM à l’aide de l’archétype
 >

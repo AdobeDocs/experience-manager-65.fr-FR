@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '6185'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -358,7 +358,7 @@ Pour ajuster la taille du cache interne de WiredTiger, voir [storage.wiredTiger.
 
 Le NUMA (Non Uniform Memory Access) permet à un noyau de gérer la façon dont la mémoire est mappée aux cœurs du processeur. Bien que l’accès à la mémoire puisse être potentiellement plus rapide pour les cœurs grâce à un accès aux données requises, le NUMA interfère avec MMAP en introduisant une latence supplémentaire, car les lectures ne peuvent pas être prédites. Par conséquent, le NUMA doit être désactivé pour le processus `mongod` sur tous les systèmes d’exploitation performants.
 
-Essentiellement, dans une architecture NUMA, la mémoire est connectée aux processeurs et les processeurs sont connectés à un bus. Dans une architecture SMP ou UMA, la mémoire est connectée au bus et partagée par les processeurs. Lorsqu’un thread alloue de la mémoire sur un processeur NUMA, il l’alloue selon une politique. Par défaut, la mémoire est allouée au processeur local du thread, sauf s’il n’y a pas de processeur libre. Dans ce cas, il utilise la mémoire d’un processeur libre à un coût plus élevé. Une fois allouée, la mémoire ne se déplace pas entre les processeurs. L’allocation est effectuée par une politique héritée du thread parent, c’est-à-dire le thread qui a démarré le processus.
+Essentiellement, dans une architecture NUMA, la mémoire est connectée aux processeurs et les processeurs sont connectés à un bus. Dans une architecture SMP ou UMA, la mémoire est connectée au bus et partagée par les processeurs. Lorsqu’un thread alloue de la mémoire sur un processeur NUMA, il l’alloue selon une politique. Par défaut, la mémoire est allouée au processeur local du thread, sauf s’il n’y a pas de processeur libre. Dans ce cas, il utilise la mémoire d’un processeur libre à un coût plus élevé. Une fois allouée, la mémoire ne passe pas d’un processeur à l’autre. L’allocation est effectuée par une politique héritée du thread parent, c’est-à-dire le thread qui a démarré le processus.
 
 Dans de nombreuses bases de données qui considèrent l’ordinateur comme une architecture de mémoire multi-cœurs uniforme, ce scénario entraîne d’abord le remplissage du processeur initial et ensuite le remplissage du processeur secondaire. C’est particulièrement vrai si un thread central est responsable de l’allocation des tampons mémoire. La solution consiste à modifier la politique NUMA du thread principal utilisé pour lancer le processus `mongod` en exécutant la commande suivante :
 

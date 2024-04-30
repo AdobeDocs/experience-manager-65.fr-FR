@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '13636'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Il existe diverses formes de contenu non textuel. Par conséquent, la valeur du 
 
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
 * Il est préférable d’éviter les descriptions trop longues (plus de 100 caractères). Si un texte secondaire doit être plus détaillé :
-   * donnez une brève description dans le texte secondaire ;
+   * fournissez une brève description dans le texte secondaire ;
    * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
 * Le texte secondaire ne doit pas répliquer le contenu fourni sous forme de texte à proximité sur la même page. N’oubliez pas que de nombreuses images sont des illustrations de points déjà couverts dans le texte d’une page. Il existe donc peut-être un texte secondaire détaillé.
 * Si le contenu non textuel est un lien vers une autre page ou un autre document et qu’il n’existe pas de texte faisant partie dudit lien, le texte secondaire de l’image doit indiquer la destination du lien. Il ne doit pas décrire l’image.
@@ -696,13 +696,15 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 * Critère de réussite 2.2.2
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
-   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
+   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
       * (a) démarre automatiquement,
       * (b) dure plus de cinq secondes, et
-      * (C) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement font partie d’une activité où il est essentiel ;
-   * Mise à jour automatique : pour toutes les informations de mise à jour automatique qui
+      * (c) est présentée en parallèle à d’autres contenus,
+il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité.
+   * Mise à jour automatique : pour toute information mise à jour automatiquement qui
       * (a) démarre automatiquement, et
-      * (b) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, ou de contrôler la fréquence de mise à jour, sauf si la mise à jour automatique fait partie d’une activité où elle est essentielle.
+      * (b) est présentée en parallèle à d’autres contenus,
+il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
 
 Remarques :
 
@@ -1263,7 +1265,7 @@ Ce critère de réussite a pour but d’aider les utilisateurs en situation de h
 
 Les utilisateurs en situation de handicap sont plus enclins à commettre des erreurs. Les personnes atteintes de difficultés de lecture peuvent avoir tendance à transposer les chiffres et les lettres, et celles souffrant de troubles moteurs à actionner des touches par erreur. La possibilité d’annuler des actions permet aux utilisateurs de corriger une erreur pouvant avoir de graves conséquences. Pouvoir vérifier et corriger des informations donne à l’utilisateur la possibilité de détecter une erreur avant d’effectuer une action d’une portée considérable.
 
-Les données contrôlables par l’utilisateur sont des données visibles pour lui, et qu’il peut modifier ou supprimer de manière intentionnelle. À titre d’exemple, le contrôle de ces données par un utilisateur peut consister à mettre à jour le numéro de téléphone et l’adresse indiqués dans son compte ou à supprimer d’anciennes factures enregistrées sur un site web. Il ne fait pas référence à des éléments tels que les journaux Internet et les données de surveillance des moteurs de recherche que l’utilisateur ne peut pas afficher ou utiliser directement.
+Les données contrôlables par l’utilisateur sont des données visibles pour lui, et qu’il peut modifier ou supprimer de manière intentionnelle. À titre d’exemple, le contrôle de ces données par un utilisateur peut consister à mettre à jour le numéro de téléphone et l’adresse indiqués dans son compte ou à supprimer d’anciennes factures enregistrées sur un site web. Il ne s’agit pas d’éléments comme les données relatives à la surveillance de moteurs de recherche et de journaux Internet que l’utilisateur ou l’utilisatrice ne peut pas voir ni utiliser directement.
 
 #### Comment procéder – Prévention des erreurs (juridiques, financières, données) (3.3.4) {#how-to-meet-error-prevention-legal-financial-data}
 

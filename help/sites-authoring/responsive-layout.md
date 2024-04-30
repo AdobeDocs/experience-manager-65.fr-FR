@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage) et inversement.
+   * **Rotation de l’appareil** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
      ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotation de l’appareil](do-not-localize/screen_shot_2018-03-23at084637.png)
 

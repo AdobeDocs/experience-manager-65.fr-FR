@@ -1,6 +1,6 @@
 ---
 title: Types de nœuds personnalisés
-description: Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR avec les types de noeuds proposés par les deux, mais AEM fournit également un éventail de types de noeuds personnalisés.
+description: Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plateformes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -12,18 +12,18 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1848'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Types de nœuds personnalisés{#custom-node-types}
 
-Comme Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR, les types de noeuds proposés par ces deux solutions peuvent être utilisés :
+Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR. Aussi, les types de nœuds proposés par ces deux plateformes sont les suivants :
 
 * [Types de nœuds JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Types de noeuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Outre ces types de noeuds, AEM fournit divers types de noeuds personnalisés.
+En plus de ces types de nœuds, AEM propose une gamme de types de nœuds personnalisés.
 
 ## Audit {#audit}
 
@@ -148,7 +148,7 @@ Définit la page CQ par défaut.
 
 **Description**
 
-Définit un type de mixin qui marque les nœuds en tant que pseudo-pages. En d’autres termes, cela signifie qu’ils peuvent être adaptés à la prise en charge de l’édition de page et de gestion de contenu web.
+Définit un type de mixin qui marque les nœuds en tant que pseudo-pages. Cela signifie qu’elles peuvent être adaptées pour la prise en charge de l’édition de page et de gestion de contenu web.
 
 **Définition**
 
@@ -163,9 +163,9 @@ Définit le nœud par défaut du contenu de la page, avec les propriétés minim
 * `@prop jcr:title` - Titre de la page.
 * `@prop jcr:description` - Description de cette page.
 * `@prop cq:template` - Chemin d’accès au modèle utilisé pour créer la page.
-* `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer les chemins vers le modèle autorisé.
-* `@prop pageTitle` - Titre affiché dans la fonction `<title>` balise .
-* `@prop navTitle` - Titre utilisé dans la navigation.
+* `@prop cq:allowedTemplates` - Liste des expressions régulières utilisées pour déterminer les chemins d’accès au modèle autorisé.
+* `@prop pageTitle` - Titre affiché dans la balise `<title>`.
+* `@prop navTitle` - Titre affiché dans le cadre de la navigation.
 * `@prop hideInNav` - Détermine si la page doit être masquée dans la navigation.
 * `@prop onTime` - Heure à laquelle cette page devient valide.
 * `@prop offTime` - Heure à laquelle cette page n’est plus valide.
@@ -200,13 +200,13 @@ Définit un modèle CQ.
 * `@node jcr:content` - Contenu par défaut pour les nouvelles pages.
 * `@node icon.png` - Fichier contenant une icône de caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
-* `@node workflows` - Attribue automatiquement la configuration de workflow. La configuration suit la structure ci-dessous :
+* `@node workflows` - Attribue automatiquement la configuration de workflow. La configuration suit la structure ci-dessous :
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Modèles d’expression régulière pour déterminer les chemins d’accès aux modèles autorisés en tant que modèles parents.
-* `@prop allowedChildren` - Modèles d’expression régulière pour déterminer les chemins d’accès aux modèles autorisés en tant que modèles enfants.
+* `@prop allowedParents` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès aux modèles autorisés en tant que modèles parents.
+* `@prop allowedChildren` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès aux modèles autorisés en tant que modèles enfants.
 * `@prop ranking` - Position au sein de la liste de modèles de la boîte de dialogue de création de page.
 
 **Définition**
@@ -235,15 +235,15 @@ Définit un composant CQ.
 * `@prop dialogPath` -  Chemin d’accès à la boîte de dialogue principale (chemin alternatif vers la boîte de dialogue).
 * `@node design_dialog` - Boîte de dialogue de conception.
 * `@prop cq:cellName` - Nom de la cellule de conception.
-* `@prop cq:isContainer` - Indique s’il s’agit d’un composant de conteneur. Force l’utilisation des noms de cellule des composants enfants à la place des noms de chemin d’accès. Par exemple, `parsys` est un composant de conteneur. Si cette valeur n’est pas définie, la vérification est effectuée sur la base de l’existence d’une propriété `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indique s’il s’agit d’un composant de conteneur. Force l’utilisation des noms de cellule des composants enfants au lieu des noms de chemin d’accès. Par exemple, `parsys` est un composant de conteneur. Si cette valeur n’est pas définie, la vérification est effectuée sur la base de l’existence d’une propriété `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Si la valeur est définie sur « true », aucune balise `div` de décoration n’est définie lors de l’insertion de ce composant.
 * `@node cq:editConfig` - Configuration qui définit les paramètres de la barre d’édition.
 * `@node cq:childEditConfig` - Configuration d’édition héritée par les composants enfants.
 * `@node cq:htmlTag` - Définit des attributs de balise supplémentaires qui sont ajoutés à la balise `div` « environnante » lorsque le composant est inclus.
 * `@node icon.png` - Fichier contenant une icône de caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
-* `@prop allowedParents` - Modèles d’expression régulière pour déterminer les chemins d’accès des composants autorisés en tant que composants parents.
-* `@prop allowedChildren` - Modèles d’expression régulière pour déterminer les chemins d’accès des composants autorisés en tant que composants enfants.
+* `@prop allowedParents` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants parents.
+* `@prop allowedChildren` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants enfants.
 * `@node virtual` - Contient des sous-nœuds qui représentent les composants virtuels utilisés pour le déplacement des composants (par glisser-déposer).
 * `@prop componentGroup` - Nom du groupe de composants utilisé pour le déplacement des composants (par glisser-déposer).
 * `@node cq:infoProviders` - Contient des sous-nœuds ; chacun ayant une propriété `className` qui fait référence à un `PageInfoProvider`.
@@ -317,9 +317,9 @@ Définit la configuration de la barre d’édition.
 
 **Description**
 
-Configure une cible de dépôt d’un composant. Le nom de ce noeud est utilisé comme identifiant pour le glisser-déposer.
+Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé comme identifiant pour le glisser-déposer.
 
-* `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt, par exemple : `["image/*"]`
+* `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt ; par exemple, `["image/*"]`.
 * `@prop groups` - Liste des groupes de déplacement qui acceptent une source
 * `@prop propertyName` - Nom de la propriété utilisée pour stocker la référence
 
@@ -335,7 +335,7 @@ Configure une cible de dépôt d’un composant. Le nom de ce noeud est utilisé
 
 **Description**
 
-Définit un composant CQ virtuel. Actuellement utilisé uniquement pour l’assistant de glisser-déposer du nouveau composant.
+Définit un composant CQ virtuel. Actuellement utilisé uniquement pour le nouvel assistant glisser-déposer de composants.
 
 * `@prop jcr:title` - Titre de ce composant
 * `@prop jcr:description` - Description de ce composant
@@ -343,8 +343,8 @@ Définit un composant CQ virtuel. Actuellement utilisé uniquement pour l’assi
 * `@node cq:childEditConfig`- Configuration de modification héritée par les composants enfants
 * `@node icon.png` - Fichier contenant une icône de caractéristique
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
-* `@prop allowedParents` - Modèles d’expression régulière pour déterminer les chemins d’accès des composants autorisés en tant que composants parents.
-* `@prop allowedChildren` - Modèles d’expression régulière pour déterminer les chemins d’accès des composants autorisés en tant que composants enfants.
+* `@prop allowedParents` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants parents.
+* `@prop allowedChildren` - Modèles d’expressions régulières utilisés pour déterminer les chemins d’accès des composants autorisés en tant que composants enfants.
 * `@prop componentGroup` - Nom du groupe de composants utilisé pour le déplacement des composants (par glisser-déposer)
 
 **Définition**
@@ -364,7 +364,7 @@ Définit un composant CQ virtuel. Actuellement utilisé uniquement pour l’assi
 
 **Description**
 
-Définit les écouteurs (côté client) à exécuter sur un événement d’édition. Les valeurs doivent faire référence à une fonction d’écouteur côté client valide ou contenir un raccourci prédéfini :
+Définit les écouteurs (côté client) à exécuter lors d’un événement d’édition. Les valeurs doivent soit faire référence à une fonction d’écoute côté client valide, soit contenir un raccourci prédéfini :
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -428,7 +428,7 @@ Miniature représentant une ressource de gestion des ressources numériques.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Liste des conteneurs de diffusions {#delivery-container-list}
+## Liste des conteneurs de diffusion {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
@@ -447,7 +447,7 @@ Liste des conteneurs.
 
 **Description**
 
-Type de noeud `cq:attributes` est pour les balises de version ContentBus. Ce noeud possède uniquement une série de propriétés, dont trois sont prédéfinies &quot;created&quot;, &quot;csd&quot; et &quot;timestamp&quot;.
+Le type de nœud `cq:attributes` concerne les balises de version ContentBus. Ce nœud comporte uniquement une série de propriétés, dont trois sont prédéfinies : « created », « CSD » et « timestamp ».
 
 * `@prop created (long) mandatory copy` - Horodatage de création des informations de version. Il s’agit généralement de l’heure d’archivage de la version précédente ou de l’heure de création de la page.
 * `@prop csd (string) mandatory copy` - Attribut CSD standard, copie de la propriété cq:csd du nœud de la page.
@@ -489,8 +489,8 @@ Les éléments de « `cq:Cq4ContentPage` » sont les suivants :
 Configuration du sondage.
 
 * `@prop source (String) mandatory` - URI de la source de données. Obligatoire et ne doit pas être vide.
-* `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Facultatif et défini par défaut sur le noeud cq:PollConfig .
-* `@prop interval (Long)` - Intervalle, en secondes, entre deux recherches de nouvelles données ou de données mises à jour auprès de la source de données. Facultatif et défini par défaut sur 30 minutes (1 800 secondes).
+* `@prop target (String)` - Emplacement cible où sont stockées les données récupérées de la source de données. Ce paramètre est facultatif et est défini par défaut sur le nœud cq:PollConfig.
+* `@prop interval (Long)` - Intervalle, en secondes, entre deux recherches de nouvelles données ou de données mises à jour auprès de la source de données. Ce paramètre est facultatif et défini, par défaut, sur 30 minutes (1 800 secondes).
 * [Création de services d’importation de données personnalisés pour Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Définition**
@@ -529,7 +529,7 @@ Mixin qui définit un emplacement géographique en degrés décimaux (DD).
    * `- latitude (double)`
    * `- longitude (double)`
 
-## Mailer {#mailer}
+## Courrier {#mailer}
 
 ### cq:mailerMessage {#cq-mailermessage}
 
@@ -581,9 +581,9 @@ Définit un mixin LiveSync (Synchronisation en direct). Si un nœud est impliqu�
 
 **Description**
 
-Définit un mixin LiveSyncCancelled (Dernière synchronisation annulée). Annuler le comportement LiveSync d’un noeud Live Copy (contrôlé) qui peut être impliqué dans une relation LiveSync en raison de l’un de ses parents.
+Définit un mixin LiveSyncCancelled (Dernière synchronisation annulée). Annule le comportement LiveSync d’un nœud de Live Copy (contrôlé) qui est peut-être impliqué dans une relation LiveRelationship à cause de l’un de ses parents.
 
-* `@prop cq:isCancelledForChildren` - Définit si une synchronisation en direct est annulée ; également pour les enfants.
+* `@prop cq:isCancelledForChildren` - Définit si une synchronisation LiveSync est annulée ; également pour les enfants.
 
 **Définition**
 
@@ -817,7 +817,7 @@ Tout site Web public/utilisateur peut baliser le contenu (style Web2.0), utilis
 
 **Description**
 
-Ajoute un sous-nœud `cq:userContent` pouvant être modifié par les utilisateurs. Chaque utilisateur possède sa propre propriété `cq:userContent/<userid>` sous-noeud, qui contient généralement le mixin `cq:UserTaggable`.
+Ajoute un sous-nœud `cq:userContent` pouvant être modifié par les utilisateurs. Chaque personne possède son propre sous-nœud `cq:userContent/<userid>`, qui contient généralement le mixin `cq:UserTaggable`.
 
 **Définition**
 
@@ -1065,7 +1065,7 @@ Données de workflow
 
 **Description**
 
-Attribue automatiquement la configuration de workflow. La configuration suit cette structure ci-dessous :
+Attribue automatiquement la configuration de workflow. La configuration suit la structure ci-dessous :
 * `workflows`
    * `+ name1`
       * `- cq:path`

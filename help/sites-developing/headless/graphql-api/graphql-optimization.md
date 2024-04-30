@@ -84,7 +84,7 @@ Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si el
 
 Voir :
 
-* [Utiliser le réseau CDN dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [Utiliser le réseau CDN dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn)
 
 #### Définir des en-têtes de contrôle de cache HTTP {#set-http-cache-control-headers}
 

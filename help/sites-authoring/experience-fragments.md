@@ -8,7 +8,7 @@ role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur ou une autrice souhaite réutiliser des parties (un fragment d’expérience) d’une page, ce fragment doit être copié et collé. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
 * Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
-* Avec [Gestion multisite (MSM)](/help/sites-administering/msm.md); en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
+* Avec la [gestion multisite (MSM, Multi-Site Management)](/help/sites-administering/msm.md) en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
      >[!NOTE]
      >
-     >La création d’une variation initiale en tant que Live Copy héritera du titre en utilisant la source de Live Copy comme variation de Principal.
+     >La création d’une variation en tant que Live Copy initiale héritera du titre en utilisant la source de Live Copy comme variation principale.
 
 1. Définissez les propriétés requises :
 

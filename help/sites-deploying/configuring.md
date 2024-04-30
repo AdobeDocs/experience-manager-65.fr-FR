@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '2093'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Tous les paramètres de configuration sont stockés dans le référentiel et act
 
 Pour plus d’informations, consultez [Modes d’exécution](/help/sites-deploying/configure-runmodes.md).
 
-### Connexion unique {#single-sign-on}
+### Authentification unique {#single-sign-on}
 
 L’authentification unique (SSO) permet à une personne d’accéder à plusieurs systèmes après avoir fourni une seule fois des informations d’identification d’authentification (telles qu’un nom d’utilisateur ou d’utilisatrice et un mot de passe). Un système distinct (appelé authentificateur approuvé) effectue l’authentification et fournit à Experience Manager les informations d’identification de l’utilisateur ou utilisatrice. Experience Manager vérifie les autorisations d’accès et les applique pour l’utilisateur ou l’utilisatrice (c’est-à-dire, détermine les ressources auxquelles l’utilisateur ou l’utilisatrice est autorisé à accéder).
 
@@ -190,7 +190,7 @@ Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appe
 
 Le [déchargement](/help/sites-deploying/offloading.md) permet de répartir les tâches de traitement entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances particulières d’Experience Manager pour exécuter des types de traitement spécifiques. Un traitement spécialisé vous permet d’optimiser l’utilisation des ressources serveur disponibles.
 
-Les topologies sont des clusters de Experience Manager vaguement couplés qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
+Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
 
 Pour plus d’informations sur l’affichage ou la modification de l’appartenance à une topologie, consultez la section [Administrer des topologies](/help/sites-deploying/offloading.md#administering-topologies).
 

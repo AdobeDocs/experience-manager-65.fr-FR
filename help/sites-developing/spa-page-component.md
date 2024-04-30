@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Pour autoriser la création de la page, une bibliothèque client nommée `cq.aut
 * Si le modèle est modifiable, ajoutez la catégorie de bibliothèque client à la politique de page.
 * Ajoutez la catégorie de bibliothèque client à l’aide du fichier `customfooterlibs.html` du composant de page.
 
-N’oubliez pas de limiter l’inclusion de la variable `cq.authoring.pagemodel.messaging` dans le contexte de l’éditeur de page.
+N’oubliez pas de limiter l’inclusion de la catégorie `cq.authoring.pagemodel.messaging` au contexte de l’éditeur de page.
 
 ## Type de données de communication {#communication-data-type}
 

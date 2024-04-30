@@ -14,7 +14,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3722'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Le **site mobile de démonstration We.Retail** utilise les composants mobiles su
 
 #### Créer un composant mobile {#creating-a-mobile-component}
 
-La structure mobile d’AEM vous permet de développer des composants sensibles au périphérique qui émet la requête. Les exemples de code suivants montrent comment utiliser l’API mobile AEM dans un composant jsp et en particulier comment exécuter les actions suivantes : 
+Le framework AEM Mobile permet de développer des composants sensibles au type d’appareil émettant la requête. Les exemples de code suivants montrent comment utiliser l’API mobile AEM dans un composant jsp et en particulier comment exécuter les actions suivantes : 
 
 * Récupérer la classe d’appareil à partir de la requête :
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -383,7 +383,7 @@ Lorsque la valeur de la propriété `cq:variantDomain` d’un nœud `cq:siteVari
 
 ### Définition d’une URL spécifique à un groupe d’appareils {#defining-a-device-group-specific-url}
 
-Si vous ne souhaitez pas utiliser d’autres liens, vous pouvez configurer une URL globale pour chaque `DeviceGroup`. Adobe vous recommande de créer votre propre bibliothèque cliente qui intègre la bibliothèque cliente `browsermap.standard` mais qui redéfinit les groupes d’appareils.
+Si vous ne souhaitez pas utiliser des liens secondaires, vous pouvez configurer une URL globale pour chaque `DeviceGroup`. Adobe vous recommande de créer votre propre bibliothèque cliente qui intègre la bibliothèque cliente `browsermap.standard` mais qui redéfinit les groupes d’appareils.
 
 BrowserMap est conçu de telle sorte que les définitions de groupes d’appareils peuvent être remplacées en créant et en ajoutant un groupe d’appareils du même nom à l’objet `BrowserMap` de votre bibliothèque cliente personnalisée.
 
@@ -501,7 +501,7 @@ Une fois la bibliothèque cliente `BrowserMap` personnalisée créée, nous prop
 
 ### Exclusion de BrowserMap de certaines pages {#excluding-browsermap-from-certain-pages}
 
-Si vous souhaitez exclure la bibliothèque BrowserMap de certaines de vos pages où vous n’avez pas besoin de détection client, vous pouvez ajouter un attribut de requête :
+Si vous souhaitez exclure la bibliothèque BrowserMap de certaines de vos pages où vous n’avez pas besoin de détection client, vous pouvez ajouter un attribut de requête :
 
 ```xml
 <%

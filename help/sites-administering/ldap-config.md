@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1609'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations d’OS
 
 >[!NOTE]
 >
->Regardez la vidéo [Module de connexion externe Oak - Authentification avec LDAP, et au-delà](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) pour découvrir en détail les modules de connexion externes.
+>Regardez la vidéo [Module de connexion externe Oak - Authentification avec LDAP, et au-delà](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=fr) pour découvrir en détail les modules de connexion externes.
 >
 >Pour lire un exemple de configuration d’Experience Manager avec Apache DS, consultez la section [Configuration d’Adobe Experience Manager 6.5 pour l’utilisation d’Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805) (en anglais).
 
@@ -280,12 +280,12 @@ Pour activer la journalisation du débogage, procédez comme suit :
 
 * Niveau de journal : débogage
 * Fichier journal logs/ldap.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Niveau de journal : débogage
 * Fichier journal : logs/external.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Une remarque sur l’appartenance à un groupe {#a-word-on-group-affiliation}

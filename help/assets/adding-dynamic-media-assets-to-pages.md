@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '3218'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -244,7 +244,7 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   Vous pouvez modifier les paramètres avancés ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Activer la correspondance du rapport d’aspect]** - Pour permettre à Dynamic Media de sélectionner un rendu de recadrage intelligent avec un format correspondant le mieux aux proportions de l’image d’origine, sélectionnez cette option.
+* **[!UICONTROL Activer la correspondance du format]** : sélectionnez cette option pour laisser Dynamic Media sélectionner un rendu de recadrage intelligent avec le format correspondant le mieux à celui de l’image d’origine.
 
 * **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** : sélectionnez (par défaut) la case pour autoriser l’optimisation du rapport DPR (Device Pixel Ratio).
 

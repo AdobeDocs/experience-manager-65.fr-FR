@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '857'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Dans la base de code AEM, les conventions suivantes sont utilisées :
 * Les implémentations Java™ sont placées dans un package impl sous leur API.
 
 
-Ces conventions ne s’appliquent pas nécessairement aux implémentations des clients, mais il est important que les conventions soient définies et respectées afin que le code puisse rester gérable.
+Ces conventions ne s’appliquent pas nécessairement aux implémentations des clientes et clients, mais il est important qu’elles soient bien définies et respectées afin que le code puisse rester gérable.
 
 Idéalement, les noms doivent décrire clairement leur intention. Un test de code courant permettant de savoir si des noms ne sont pas assez descriptifs est la présence de commentaires expliquant la fonction de la variable ou de la méthode en question :
 
@@ -61,7 +61,7 @@ Idéalement, les noms doivent décrire clairement leur intention. Un test de cod
  </tbody>
 </table>
 
-### Ne vous répétez pas  {#don-t-repeat-yourself}
+### Ne vous répétez pas.  {#don-t-repeat-yourself}
 
 DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s’applique également aux éléments de type littéraux de chaîne. La duplication de code ouvre la porte à des erreurs chaque fois que quelque chose doit être modifié. Il faut absolument l’éliminer.
 

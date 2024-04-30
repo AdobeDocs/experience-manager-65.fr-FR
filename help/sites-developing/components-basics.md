@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '4843'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -605,7 +605,7 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
 ### Espaces réservés de composant {#component-placeholders}
 
-Les composants doivent toujours générer du code HTML visible par l’auteur ou l’autrice, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne peuvent pas sélectionner et interagir avec le composant vide.
+Les composants doivent toujours générer du code HTML visible par l’auteur ou l’autrice, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs et autrices ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
 Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
 L’annotation HTML type d’un espace réservé est la suivante :
@@ -1029,7 +1029,7 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
 >  * `aftermove`
 >  * `aftercopy`
 
-Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple, où `project.customerAction` est une méthode statique :
+Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple, où `project.customerAction` est une méthode statique :
 
 `afteredit = "project.customerAction"`
 

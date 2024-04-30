@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 |                         | CIF on-Prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versions d’AEM prises en charge | AEM On-Prem ou AMS 6.x | AEM AMS 6.4 et 6.5 |
-| Back-end | - AEM, Java™ <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - référentiel JCR | - Adobe Commerce <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
+| Back-end | - AEM, Java™ <br> - Intégration monolithique, mappage de prégénération (modèle)<br> - Référentiel JCR | - Adobe Commerce <br>- Java et JavaScript <br>- Aucune donnée Commerce stockée dans le référentiel JCR |
 | Front-end | Pages générées côté serveur AEM | Application de page mixte (rendu hybride) |
 | Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d’importation de produit <br>- Modèles génériques <br>- Données à la demande via le connecteur |
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |
 | Modèle de données normalisé | Non | Oui, schéma Adobe Commerce GraphQL |
 | Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4) <br>- Commerce Cloud Salesforce (connecteur open-source pour prendre en charge AEM 6.4) | Oui, en open source via GitHub. <br> Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et compatible avec la version 2.3.1) |
-| Quand l’utiliser | Cas d’utilisation limités : dans les cas où de petits catalogues statiques sont importés si nécessaire | Solution préférée dans la plupart des cas d’utilisation |
+| Quand l’utiliser | Cas d’utilisation limités : dans le cas de scénarios d’importations de petits catalogues statiques | Solution préférée dans la plupart des cas d’utilisation |
 
 
 ## Déploiement d’autres mises en œuvre {#deploying-other-implementations}

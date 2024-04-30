@@ -156,8 +156,8 @@ Cette section contient des informations détaillées et des instructions sur la 
 
 1. Configurez le service pour qu’il se connecte au serveur SMTP de votre choix :
 
-   1. **SMTP Server hostname**: par exemple (smtp.gmail.com)
-   1. **Port du serveur**: par exemple (465) pour gmail utilisant SSL
+   1. **Nom d’hôte du serveur SMTP** : par exemple, (smtp.gmail.com)
+   1. **Port du serveur** : par exemple (465) pour gmail utilisant SSL
    1. **Utilisateur SMTP** : demo@ &lt;nom_entreprise> .com
    1. **Adresse « De »** : aemformsdemo@adobe.com
 
@@ -477,7 +477,7 @@ Pour installer et configurer AEM Forms avec Adobe Forms, les utilisateurs et uti
 
 Consultez les informations suivantes avant de lire d’autres instructions :
 
-* [Configurer le service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configurer le service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=fr)
 
 #### Créer une configuration IMS - Partie 1 {#creating-ims-config}
 

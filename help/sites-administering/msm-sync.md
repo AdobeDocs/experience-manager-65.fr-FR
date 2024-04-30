@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
   </tr>
   <tr>
    <td>Configuration de déploiement standard</td>
-   <td>Configuration de déploiement standard qui permet de lancer le processus de déploiement sur le déclencheur de déploiement et exécute des actions : créer, mettre à jour, supprimer du contenu et classer les noeuds enfants.</td>
+   <td>Configuration de déploiement standard qui permet de démarrer le processus de déploiement à partir d’un déclencheur de déploiement et d’actions d’exécutions : créer, mettre à jour, supprimer le contenu et trier les nœuds enfants.</td>
    <td>En cas de déploiement</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -110,7 +110,7 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
   </tr>
   <tr>
    <td>Configuration du déploiement des publications DPS</td>
-   <td>Configuration du déploiement de publication DPS qui permet de lancer le processus de déploiement sur le déclencheur de déploiement tout en excluant les propriétés de liaison FolioProducer sur le déploiement initial</td>
+   <td>Configuration du déploiement de publication DPS qui permet de lancer le processus de déploiement sur le déclencheur de déploiement, tout en excluant les propriétés de liaison FolioProducer sur le déploiement initial</td>
    <td>En cas de déploiement</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

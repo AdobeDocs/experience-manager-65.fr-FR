@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experien
 
 ## En savoir plus {#learn-more}
 
-* [Fluid Experiences pour les cas d’utilisation découplée](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* [Questions fréquentes sur l’accès tiers](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [Utilisation des API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [Fluid Experiences pour les cas d’utilisation découplée](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=fr)
+* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview)
+* [Questions fréquentes sur l’accès tiers](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=fr)
+* [Utilisation des API Sling](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics#sling-models)

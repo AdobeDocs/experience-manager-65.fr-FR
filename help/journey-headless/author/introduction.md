@@ -8,7 +8,7 @@ role: Admin, Architect,Data Architect,Developer,User,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Le découplage est un terme utilisé pour décrire les systèmes qui dissocient 
 
 Traditionnellement, vous gérez le contenu dans un CMS qui est responsable du rendu de ce contenu sur vos pages web.
 
-Désormais, sans interface utilisateur graphique, votre jeu de contenu peut être géré dans le CMS, puis accessible par une ou plusieurs applications (indépendantes).
+Alors que le découplage signifie que votre jeu de contenu peut être géré dans le CMS, puis être accessible par le biais d’une ou de plusieurs applications (indépendantes).
 
 Cela signifie que votre contenu peut être diffusé sur n’importe quel appareil, dans de nombreux formats. Cela rend l’ensemble du processus beaucoup plus flexible et signifie également que vous n’avez pas à vous soucier de la mise en page et de la mise en forme.
 

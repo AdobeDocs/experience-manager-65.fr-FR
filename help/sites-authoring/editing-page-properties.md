@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1855'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent 
 
 Les propriétés sont réparties sur plusieurs onglets.
 
-### De base {#basic}
+### Réglages de base {#basic}
 
 * **Titre**
 
@@ -190,7 +190,7 @@ Affiche l’image miniature de la page. Vous pouvez :
 
 * **Partage sur les réseaux sociaux**
 
-  Définit les options de partage disponibles sur la page. Expose les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Définit les options de partage disponibles sur la page. Expose les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=fr).
 
    * **Activer le partage utilisateur/utilisatrice pour Facebook**
    * **Activer le partage utilisateur/utilisatrice pour Pinterest**

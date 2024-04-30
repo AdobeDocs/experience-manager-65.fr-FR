@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign est un ensemble de solutions qui vous permet de personnaliser et
 >
 >Ce document décrit l’intégration d’Adobe Campaign à AEM 6.5, la solution sur site ou AEM hébergée par AMS.
 >
->Pour plus d’informations sur l’intégration d’Adobe Campaign à AEM as a Cloud Service, la solution native cloud d’AEM, [consultez ce document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>Pour plus d’informations sur l’intégration d’Adobe Campaign à AEM as a Cloud Service, la solution native cloud d’AEM, [consultez ce document.](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/integrations/campaign)
 
 ## Intégrer à Adobe Campaign Classic {#acc}
 
@@ -36,7 +36,7 @@ Il existe de plusieurs versions d’Adobe Campaign Classic (ACC). La prise en 
 | Version d’ACC | Intégration à AEM 6.5 <br>sur site | Intégration à AEM 6.5<br>AMS |
 |---|---|---|
 | [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=fr) | Pris en charge | Pris en charge |
-| [Console client v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Pris en charge | Pris en charge |
+| [Console cliente v8](https://experienceleague.adobe.com/fr/docs/campaign-v8) | Pris en charge | Pris en charge |
 
 La documentation ci-après décrit comment intégrer AEM à Adobe Campaign Classic.
 
@@ -49,7 +49,7 @@ La documentation supplémentaire ci-après décrit comment utiliser cette intég
 
 ## Intégrer à Adobe Campaign Standard {#acs}
 
-L’intégration d’[Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS) à AEM dépend de si AEM est installé sur site ou dans Adobe Manager Services (AMS).
+L’intégration d’[Adobe Campaign Standard](https://experienceleague.adobe.com/fr/docs/campaign-standard) (ACS) à AEM dépend de si AEM est installé sur site ou dans Adobe Manager Services (AMS).
 
 | Intégration à AEM 6.5 <br>sur site | Intégration à AEM 6.5<br>AMS |
 |---|---|

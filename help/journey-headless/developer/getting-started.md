@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2999'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Les noms des fragments de contenu doivent être explicites pour les auteurs de c
 
 Voir la section [Ressources supplémentaires](#additional-resources) pour accéder à d’autres documentations à propos des conventions d’affectation de noms de pages dans AEM.
 
-##### Ne pas étendre exagérément l’imbrication de contenu {#content-nesting}
+##### Ne pas étendre excessivement l’imbrication de contenu {#content-nesting}
 
 Les [fragments de contenu](#content-fragments) sont utilisés dans AEM pour créer des contenus en mode découplé. AEM prend en charge jusqu’à dix niveaux d’imbrication pour les fragments de contenu. Toutefois, il faut garder à l’esprit qu’AEM devra résoudre de manière itérative chaque référence définie dans le fragment de contenu parent, puis vérifier s’il existe des références enfants dans tous les frères. Ces opérations peuvent rapidement se cumuler et poser des problèmes de performances.
 
@@ -261,7 +261,7 @@ Pour comprendre le trafic et les schémas de trafic, commencez par recueillir de
 Souvent, les différentes sections d’expériences ont des fréquences de mises à jour de contenu variables. Il est important de comprendre cela pour pouvoir affiner les configurations du réseau de diffusion de contenu (CDN) et du cache. Il s’agit également d’une entrée importante pour les [Architectes de contenu](#content-architects), car ils conçoivent des modèles pour représenter votre contenu. Prenez en compte les éléments suivants :
 
 * Certains types de contenu doivent-ils expirer au-delà d’une certaine période ?
-* Certains éléments sont-ils spécifiques à l’utilisateur et ne peuvent donc pas être mis en cache ?
+* Certains éléments sont-ils spécifiques à l’utilisateur ou l’utilisatrice, donc sans pouvoir être mis en cache ?
 
 ## Prochaines étapes {#what-is-next}
 

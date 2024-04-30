@@ -49,7 +49,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
    >[!NOTE]
    >
-   >Si vous avez sélectionné **Service** pour le champ **Traiter les fichiers à l’aide de**, la valeur du champ Nom du service (inputProcessorType) doit être mise entre parenthèses. Par exemple (foo=bar).
+   >Si vous avez sélectionné **Service** pour le champ **Traiter les fichiers à l’aide de**, la valeur du champ Nom du service (inputProcessorType) doit être mise entre parenthèses. Par exemple : (foo=bar).
 
    ```java
    @Component(metatype = true, immediate = true, label = "WF Test Service", description = "WF Test Service")

@@ -13,7 +13,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2964'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Lorsqu’une personne utilisatrice accède à une console pour la première fois
 
 Cliquez sur **Suivant** pour accéder à la page suivante de la vue d’ensemble. Cliquez sur **Fermer** ou cliquez en dehors de la boîte de dialogue de la vue d’ensemble pour la fermer.
 
-La vue d’ensemble redémarre la prochaine fois que vous accédez à la console, sauf si vous affichez toutes les diapositives ou cochez l’option . **Ne plus afficher**.
+Si vous ne visualisez pas toutes les diapositives ou ne cochez pas l’option **Ne plus afficher**, la vue d’ensemble redémarrera la prochaine fois que vous accéderez à la console.
 
 ## Navigation globale {#global-navigation}
 

@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -24,33 +24,33 @@ Vous pouvez étendre les instances existantes pour créer vos propres configurat
 
 ## Concepts {#concepts}
 
-Les principes utilisés dans le développement des configurations ont été basés sur les concepts suivants :
+Les principes utilisés dans le développement des configurations ont été basés sur les concepts suivants :
 
 * Les services/adaptateurs sont utilisés pour récupérer les configurations.
 * Les configurations (par exemple, les propriétés/paragraphes) sont héritées des parents.
-* Référencé à partir des noeuds d’analyse par chemin d’accès.
-* Facilement extensible.
+* Référencement à partir des nœuds d’analyse par chemin d’accès.
+* Facilement extensibles.
 * Permet de répondre à des configurations plus complexes, telles [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (par exemple, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) les modules externes ont besoin d’une [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
+* Prise en charge des dépendances (par exemple, les plug-ins [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) nécessitent une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Structure {#structure}
 
-Le chemin de base des configurations est :
+Le chemin de base de la configuration est le suivant :
 
 `/etc/cloudservices`.
 
 Pour chaque type de configuration, un modèle et un composant sont fournis. Cela permet de disposer de modèles de configuration qui peuvent répondre à la plupart des besoins après avoir été personnalisés.
 
-Pour fournir une configuration pour les nouveaux services, procédez comme suit :
+Pour fournir une configuration pour les nouveaux services, procédez comme suit :
 
 * Créez une page de service dans
 
   `/etc/cloudservices`
 
-* Sous :
+* Sous :
 
-   * un modèle de configuration ;
-   * un composant de configuration ;
+   * Modèle de configuration
+   * Composant de configuration
 
 Le modèle et le composant doivent hériter du `sling:resourceSuperType` du modèle de base :
 
@@ -66,11 +66,11 @@ Le fournisseur de services doit également fournir la page de service :
 
 ### Modèle {#template}
 
-Votre modèle étend le modèle de base :
+Votre modèle étend le modèle de base :
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Et définissez une `resourceType` qui pointe vers le composant personnalisé.
+Et définissez un `resourceType` qui pointe vers le composant personnalisé.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -93,7 +93,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### Composants {#components}
 
-Votre composant doit étendre le composant de base :
+Votre composant doit étendre le composant de base :
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -103,7 +103,7 @@ Votre composant doit étendre le composant de base :
 /libs/cq/analytics/components/generictrackerpage
 ```
 
-Après avoir configuré votre modèle et votre composant, vous pouvez ajouter votre configuration en ajoutant des sous-pages sous :
+Après avoir configuré votre modèle et votre composant, vous pouvez ajouter votre configuration en ajoutant des sous-pages sous :
 
 `/etc/cloudservices/<service-name>`
 
@@ -142,16 +142,16 @@ Pour consulter la documentation de référence sur l’API, voir [com.day.cq.wcm
 
 Les services disponibles sont répertoriés dans l’onglet **Services cloud** de la boîte de dialogue **Propriétés de la page** (de toute page héritant de `foundation/components/page` ou `wcm/mobile/components/page`).
 
-Cet onglet contient également les informations suivantes :
+Cet onglet contient également les informations suivantes :
 
-* lien vers l’emplacement où vous pouvez activer le service.
-* choisir une configuration (sous-noeud du service) à partir d’un champ de chemin d’accès ;
+* Lien vers l’emplacement où vous pouvez activer le service.
+* Choisissez une configuration (sous-nœud du service) à partir d’un champ de chemin d’accès.
 
 #### Chiffrement de mot de passe {#password-encryption}
 
-Lors du stockage des informations d’identification d’utilisateur pour le service, tous les mots de passe doivent être chiffrés.
+Lors du stockage des informations d’identification d’utilisateur ou d’utilisatrice pour le service, tous les mots de passe doivent être chiffrés.
 
-Pour cela, il faut ajouter un champ de formulaire masqué. Ce champ doit avoir l’annotation `@Encrypted` dans le nom de la propriété ; c’est-à-dire, pour la propriété `password` champ le nom serait écrit comme suit :
+Pour cela, il faut ajouter un champ de formulaire masqué. L’annotation `@Encrypted` doit être présente dans le nom de propriété de ce champ, par exemple, pour le champ `password`, le nom de la propriété serait écrit comme suit :
 
 `password@Encrypted`
 
@@ -175,7 +175,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la variable <code>body</code>).<br /> Dans le cas de l’utilisation d’Adobe Analytics et d’Adobe Target, nous l’utilisons pour inclure des fonctionnalités supplémentaires, telles que les appels JavaScript pour effectuer le suivi du comportement des visiteurs.</td>
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est inclus (normalement avant la variable <code>body</code>).<br /> Dans le cas d’Adobe Analytics et d’Adobe Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs et visiteuses.</td>
   </tr>
   <tr>
    <td>description</td>
@@ -214,7 +214,7 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 
 ### Cas d’utilisation {#use-cases}
 
-Ces services sont fournis par défaut :
+Ces services sont fournis par défaut :
 
 * [Fragments de code de suivi](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)

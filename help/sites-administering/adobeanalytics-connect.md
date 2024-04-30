@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Pour effectuer le suivi des données web de vos pages AEM dans Adobe Analytics,
 
 Lorsque vous associez une page Web à un framework, celui-ci effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 ### Compte Adobe Analytics {#adobe-analytics-account}
 
@@ -51,7 +51,7 @@ Avant de commencer, assurez-vous que vos informations d’identification vous pe
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Les [centres de données](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) d’Adobe Analytics collectent, traitent et stockent les données associées à votre suite de rapports Adobe Analytics. Configurez AEM pour utiliser le centre de données qui héberge votre suite de rapports Adobe Analytics. Le centre de données est mentionné dans votre contrat. Pour obtenir ces informations, contactez un administrateur ou une administratrice de votre organisation.
+Les [centres de données](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=fr) d’Adobe Analytics collectent, traitent et stockent les données associées à votre suite de rapports Adobe Analytics. Configurez AEM pour utiliser le centre de données qui héberge votre suite de rapports Adobe Analytics. Le centre de données est mentionné dans votre contrat. Pour obtenir ces informations, contactez un administrateur ou une administratrice de votre organisation.
 
 Au besoin, utilisez l’élément suivant pour accéder au centre de données approprié : `https://api.omniture.com/`.
 

@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Personnellement, je préfère initialement les conventions hiérarchiques au sys
 
 #### Exemple {#example-2}
 
-Je vais modéliser un système de blog simple comme suit. Au départ, je ne me soucie même pas des types de noeuds respectifs que j’utilise à ce stade.
+Je vais modéliser un système de blog simple comme suit. Au départ, je ne me soucie même pas des types de nœuds respectifs que j’utilise à ce stade.
 
 ```xml
 /content/myblog
@@ -92,7 +92,7 @@ Je vais modéliser un système de blog simple comme suit. Au départ, je ne me s
 
 Il est évident que nous comprenons tous la structure du contenu sur la base de l’exemple, sans qu’aucune autre explication ne soit nécessaire.
 
-Ce qui est peut-être inattendu au départ, c&#39;est pourquoi je ne stockerais pas les &quot;commentaires&quot; avec le &quot;post&quot;, ce qui est dû au contrôle d&#39;accès que je voudrais appliquer d&#39;une manière raisonnablement hiérarchique.
+Ce qui peut être inattendu au départ, c’est pourquoi je ne stockerais pas les « commentaires » avec la « publication », ce qui est dû au contrôle d’accès que j’aimerais appliquer de manière raisonnablement hiérarchique.
 
 À l’aide du modèle de contenu ci-dessus, je peux facilement autoriser l’utilisateur « anonyme » à « créer » des commentaires, tout en gardant l’utilisateur anonyme en lecture seule pour le reste de l’espace de travail.
 
@@ -100,7 +100,7 @@ Ce qui est peut-être inattendu au départ, c&#39;est pourquoi je ne stockerais 
 
 #### Explication {#explanation-3}
 
-Si vous n’utilisez pas `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
+Si vous n’utilisez pas de méthode `clone()`, `merge()` ou `update()` dans votre application, l’espace de travail unique est probablement la bonne solution.
 
 Les « nœuds correspondants » sont un concept défini dans la spécification JCR. Essentiellement, cela se résume à des nœuds qui représentent le même contenu, dans différents espaces de travail.
 
@@ -167,7 +167,7 @@ Supposons que j’autorise les « références » d’un document (a) vers un 
 
 Je peux donc modéliser ces références comme des « références faibles » (dans JCR v1.0, cela se résume à des propriétés de chaîne qui contiennent l’UUID du nœud cible) ou simplement utiliser un chemin. Parfois, le chemin est plus significatif au départ.
 
-Je pense qu&#39;il y a des cas d&#39;utilisation où un système ne peut vraiment pas fonctionner si une référence est pendouillante, mais je ne peux simplement pas trouver un bon exemple &quot;réel&quot; mais simple de mon expérience directe.
+Je pense qu’il existe des cas d’utilisation dans lesquels un système ne peut vraiment pas fonctionner si une référence est suspendue, mais je n’arrive tout simplement pas à trouver un bon exemple « réel » mais simple tiré de mon expérience personnelle.
 
 ### Règle n°6 : des fichiers sont des fichiers. {#rule-files-are-files}
 

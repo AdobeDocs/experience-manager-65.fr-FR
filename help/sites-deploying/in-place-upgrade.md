@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -131,7 +131,7 @@ Lorsque `FileDataStore` est la nouvelle valeur par défaut pour des installation
 
 Ignorez cette section si vous effectuez une mise à niveau à partir de la version 6.3. Bien que les profils crx2oak fournis répondent aux besoins de la plupart des clientes et clients, des paramètres supplémentaires sont parfois nécessaires. Si vous rencontrez une erreur lors de la migration, il est possible que certains aspects de votre environnement nécessitent des options de configuration supplémentaires. Si tel est le cas, l’erreur suivante se produira probablement :
 
-**Les points de contrôle ne sont pas copiés, car aucun entrepôt de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
+**Les points de contrôle ne sont pas copiés, car aucun magasin de données externe n’a été spécifié. Cela entraînera la réindexation complète du référentiel au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou consultez https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour en savoir plus.**
 
 Pour une raison quelconque, le processus de migration doit accéder aux fichiers binaires dans le magasin de données et ne peut pas les trouver. Pour spécifier la configuration du magasin de données, incluez les indicateurs ci-dessous dans la partie `<<ADDITIONAL_FLAGS>>` de la commande de migration :
 

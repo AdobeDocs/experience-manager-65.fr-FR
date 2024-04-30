@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1892'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ La période de maintenance hebdomadaire intégrée, disponible via le [tableau d
 >
 >La raison pour laquelle vous pouvez ne pas l’exécuter simultanément est que les anciens fichiers (et inutilisés) du magasin de données sont également sauvegardés, de sorte que s’il est nécessaire de restaurer une ancienne révision, les fichiers binaires figurent encore dans la sauvegarde.
 
-Si vous ne souhaitez pas exécuter le nettoyage de la mémoire d’entrepôt de données avec la fenêtre de maintenance hebdomadaire dans le tableau de bord des opérations, il peut également être automatisé à l’aide des clients HTTP wget ou curl. Voici un exemple d’automatisation du nettoyage de la mémoire à l’aide de curl :
+Si vous ne souhaitez pas exécuter la récupération de l’espace mémoire du magasin de données avec la période de maintenance hebdomadaire dans le tableau de bord des opérations, vous pouvez également l’automatiser à l’aide des clients HTTP wget ou curl. Voici un exemple illustrant comment automatiser la récupération de l’espace mémoire à l’aide de la commande curl :
 
 >[!CAUTION]
 >

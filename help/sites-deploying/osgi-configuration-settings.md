@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Les paramètres de configuration OSGi suivants (répertoriés en fonction de l�
 
 >[!NOTE]
 >
->L’outil de comparaison des configurations OSGi, faisant partie des [Outils AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), peut être utilisé pour répertorier les configurations OSGi par défaut.
+>L’outil de comparaison des configurations OSGi, faisant partie des [Outils AEM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=fr), peut être utilisé pour répertorier les configurations OSGi par défaut.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Pour
 
 >[!CAUTION]
 >
->Lorsque vous changez le paramètre sur **Minifier** ou **Gzip**, vous devez également supprimer le contenu du cache clientlibs. Consultez l’[article de la base de connaissances](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) pour plus de détails.
+>Lorsque vous changez le paramètre sur **Minifier** ou **Gzip**, vous devez également supprimer le contenu du cache clientlibs. Consultez l’[article de la base de connaissances](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=fr) pour plus de détails.
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '9070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -116,9 +116,9 @@ Par défaut, AEM ajoute un **texte de remplacement** à vos images. Dans l’int
 Il existe diverses formes de contenus non textuels. Par conséquent, la valeur de l’équivalent textuel dépend du rôle du graphique dans la page web. Voici quelques règles générales :
 
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
-* Les descriptions longues (plus de 100 caractères) doivent être évitées. Si un texte secondaire nécessite plus de détails :
+* Les descriptions longues (plus de 100 caractères) doivent être évitées. Si un texte secondaire nécessite plus de détails :
 
-   * donnez une brève description dans le texte secondaire ;
+   * fournissez une brève description dans le texte secondaire ;
    * proposez une description plus longue, ailleurs sur la même page ou dans une page web distincte. Créez un lien vers cette description distincte en faisant de l’image un lien ou en plaçant un lien textuel en regard de l’image.
 
 * Le texte secondaire ne doit pas répliquer le contenu fourni sous forme de texte à proximité sur la même page. N’oubliez pas que de nombreuses images sont des illustrations de points déjà couverts dans le texte d’une page. Il existe donc peut-être déjà un texte de remplacement détaillé.
@@ -454,7 +454,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   En ajoutant un **Tableau**, vous pouvez configurer les **Propriétés du tableau** à l’aide de la boîte de dialogue.
 
-   * un **Légende**.
+   * une **légende** appropriée.
    * Idéalement, supprimez toutes les valeurs par défaut pour **Largeur**, **Hauteur**, **Bordure**, **Marge intérieure des cellules** et **Espacement des cellules**. En effet, ces propriétés peuvent être définies dans une feuille de style globale.
 
   ![Boîte de dialogue Propriétés du tableau.](assets/chlimage_1-20a.png)
@@ -678,13 +678,15 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 * Niveau A
 * Mettre en pause, arrêter, masquer : pour toute information en mouvement, clignotante, défilante ou mise à jour automatiquement, tous les points suivants sont vrais :
 
-   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
+   * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
       * (a) démarre automatiquement,
       * (b) dure plus de cinq secondes, et
-      * (c) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement font partie d’une activité où il est essentiel ;
-   * Mise à jour automatique : pour toutes les informations de mise à jour automatique qui
+      * (c) est présentée en parallèle à d’autres contenus,
+il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité.
+   * Mise à jour automatique : pour toute information mise à jour automatiquement qui
       * (a) démarre automatiquement, et
-      * (b) est présenté en parallèle avec d’autres contenus, il existe un mécanisme permettant à l’utilisateur de le mettre en pause, de l’arrêter ou de le masquer, ou de contrôler la fréquence de mise à jour, sauf si la mise à jour automatique fait partie d’une activité où elle est essentielle.
+      * (b) est présentée en parallèle à d’autres contenus,
+il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
 
 Remarques :
 

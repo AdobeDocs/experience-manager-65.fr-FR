@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1513'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Les fragments d’expérience AEM peuvent être exportés vers l’espace de tra
 >* [Composants principaux - Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=fr)
 >
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 >[!CAUTION]
 >
@@ -185,7 +185,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
 ## Utilisation de vos fragments d’expérience dans Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres d’Adobe Target. Jetez un coup d’œil à la [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) pour en savoir plus sur ce qu’il est possible de faire.
+Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres d’Adobe Target. Jetez un coup d’œil à la [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=fr) pour en savoir plus sur ce qu’il est possible de faire.
 
 >[!NOTE]
 >

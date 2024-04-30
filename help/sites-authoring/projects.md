@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ En tant qu’utilisateur, vous pouvez effectuer les actions suivantes :
 
 ## Conditions d’accès {#access-requirements}
 
-Envoie une fonction d’AEM standard sans nécessiter de configuration supplémentaire.
+Les projets sont une fonctionnalité d’AEM standard et ne nécessitent aucune configuration supplémentaire.
 
 Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
 
@@ -236,5 +236,5 @@ Pour plus d’informations sur l’utilisation des projets, consultez les docume
 
 * [Gestion de projets](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Utilisation de tâches](/help/sites-authoring/task-content.md)
-* [Utilisation des workflows de projet](/help/sites-authoring/projects-with-workflows.md)
+* [Utiliser des workflows de projet](/help/sites-authoring/projects-with-workflows.md)
 * [Projet de création et intégration à PIM](/help/sites-authoring/managing-product-information.md)

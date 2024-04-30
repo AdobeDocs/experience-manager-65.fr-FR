@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -577,7 +577,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **all**
 
-  (bool) Recherchez le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. Prévaut sur &quot;l&quot; `ang`&quot;.
+  (Booléen) Recherche le texte intégral d’une balise, c’est-à-dire tous les titres, la description, etc. Est prioritaire sur « I `ang` ».
 
 ### type {#type}
 

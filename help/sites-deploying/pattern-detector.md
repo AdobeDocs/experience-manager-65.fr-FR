@@ -13,13 +13,13 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Cette fonctionnalité vous permet de vérifier les instances AEM existantes pour leur mise à niveau en détectant les modèles en cours d’utilisation qui :
 
@@ -212,7 +212,7 @@ Avec la sortie :
 
 ## Périmètre de détection {#scope}
 
-Actuellement, l’outil de détection des motifs vous permet de vérifier les éléments suivants :
+Actuellement, l’outil de détection des modèles permet de vérifier :
 
 * la discordance des exports et des imports des lots OSGi ;
 * les usages exessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;

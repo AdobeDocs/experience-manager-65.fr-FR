@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,4 +67,4 @@ Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état 
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 
-Les fonctionnalités de YAGNI (Vous n&#39;en aurez pas besoin) sont des choses qui sont mises en oeuvre lorsque nous nous attendons à ce que nous ayons besoin de quelque chose à l&#39;avenir, même si nous n&#39;en avons pas besoin maintenant. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.
+Les fonctionnalités YAGNI (« You Are Not Gonna Need It », soit « Vous n’en aurez pas besoin ») sont des éléments qui sont implémentés en prévision de leur utilité future, bien qu’ils ne soient pas nécessaires actuellement. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.

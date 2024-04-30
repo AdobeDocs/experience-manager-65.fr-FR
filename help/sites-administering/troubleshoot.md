@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ L’image mémoire des threads consiste en une liste de toutes les unités d’e
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html).
+Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr).
 
 ### Contrôle des sessions JCR non fermées {#checking-for-unclosed-jcr-sessions}
 

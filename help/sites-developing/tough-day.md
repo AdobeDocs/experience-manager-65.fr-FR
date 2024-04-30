@@ -10,7 +10,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1825'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 ## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
+« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ Vous trouverez les paramètres appropriés dans la liste ci-dessous :
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
 | `--user=<Val>` | Nom d’utilisateur de l’instance. | admin |  |
 | `--password=<Val>` | Mot de passe pour ce même utilisateur. | admin |  |
-| `--duration=<Val>` | Durée des tests. Peut être exprimé en **s** secondes, **m** inutes, **h** les nôtres, et **d** les jours. | 1d |  |
+| `--duration=<Val>` | Durée des tests. Peut être exprimée en **s** econdes, **m** inutes, **h** eures et **j** ours. | 1d |  |
 | `--timeout=<Val>` | Durée pendant laquelle un test s’exécute avant d’être interrompu et marqué comme ayant échoué. Exprimée en secondes. | 180 |  |
 | `--suite=<Val>` | La valeur peut être une ou une liste (séparée par des virgules) de suites de tests prédéfinies. | toughday |  |
 | `--configfile=<Val>` | Le fichier de configuration yaml ciblé. |  |  |
@@ -403,7 +403,7 @@ Tough Day 2 crée un dossier .logs dans le répertoire où vous avez exécuté
 * **toughday.log** : contient les messages liés à l’état de l’application, les informations de débogage et les messages globaux.
 * **toughday_&lt;testname>.log** : messages liés au test spécifié.
 
-Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux comportent plusieurs niveaux. Pour plus d’informations, voir la section [paramètre loglevel.](#global-parameters).
+Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. Les journaux ont plusieurs niveaux. Pour plus d’informations, consultez le [paramètre loglevel](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -122,10 +122,10 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme est pris en compte.
 * **type :** renvoie uniquement les nœuds du type déterminé. Cela inclut les types principal et mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également l’ordre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10..20. L’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier une ouverture `interval:limit:10..` ou `limit:..20`
-Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au plus ce nombre de résultats. Par exemple : `limit:10` (renvoie les dix premiers résultats).
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10..20. L’intervalle est basé sur zéro, le début est inclusif et la fin est exclusive. Vous pouvez également indiquer des limites ouvertes `interval:limit:10..` ou `limit:..20`.
+Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple, `limit:10` (renvoie les dix premiers résultats).
 
-### Export de contenu {#exporting-content}
+### Exportation de contenu {#exporting-content}
 
 Si nécessaire, exportez le contenu vers une feuille de calcul Excel pour apporter des modifications. Par exemple, vous pouvez exporter une liste de publipostage et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou encore ajouter des lignes supplémentaires.
 

@@ -8,7 +8,7 @@ role: Admin, Architect,Data Architect,Developer,User,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Vous pouvez ensuite parcourir ces dossiers pour créer et modifier vos fragments
 
 Juste au cas où...
 
-Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéresse probablement pas, mais vous pouvez, au besoin, vérifier la variable **Configuration** dans le **Cloud Service** du dossier **Propriétés**:
+Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéresse probablement pas mais vous pouvez, au besoin, vérifier la **Configuration** dans les **Services cloud** du dossier **Propriétés** :
 
 ![Création de propriétés de dossier – Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

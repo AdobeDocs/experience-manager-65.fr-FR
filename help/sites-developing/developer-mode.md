@@ -1,6 +1,6 @@
 ---
-title: Mode Développeur
-description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active.
+title: Mode de développement
+description: Le mode de développement ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur ou à la développeuse des informations sur la page en cours.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -13,17 +13,17 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Mode Développeur{#developer-mode}
+# Mode de développement{#developer-mode}
 
-Lors de la modification de pages dans Adobe Experience Manager (AEM), plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, y compris le mode Développeur. Cela ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active. Les trois onglets sont les suivants :
+Lors de la modification de pages dans Adobe Experience Manager (AEM), plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, y compris le mode de développement. Le mode de développement ouvre un panneau latéral avec plusieurs onglets qui procurent des informations techniques sur la page en cours. Les trois onglets sont les suivants :
 
 * **[Composants](#components)**, pour visualiser les informations de structure et de performances.
 * **[Tests](#tests)**, pour exécuter des tests et analyser les résultats.
-* **[Erreurs](#errors)** pour voir les problèmes qui se produisent.
+* **[Erreurs](#errors)**, pour afficher les problèmes rencontrés.
 
 Ils aident les développeurs à :
 
@@ -45,7 +45,7 @@ Ils aident les développeurs à :
 >
 >Le mode Développeur n’est disponible que sur une instance de création standard qui n’utilise pas le mode d’exécution nosamplecontent.
 >
->Au besoin, il peut être configuré pour être utilisé :
+>Si nécessaire, il peut être configuré pour être utilisé comme suit :
 >
 >* sur une instance de création à l’aide du mode d’exécution nosamplecontent ;
 >* sur une instance de publication.
@@ -56,8 +56,8 @@ Ils aident les développeurs à :
 >
 >Voir :
 >
->* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
->* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/fr/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
+>* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=fr).
 >
 
 ## Ouvrir le mode Développeur {#opening-developer-mode}
@@ -78,9 +78,9 @@ Le panneau est divisé en deux onglets :
 
 Il présente une arborescence de composants qui :
 
-* Décrit la chaîne de composants et de modèles rendus sur la page (SLY, JSP, etc.). L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
-* Affiche le temps de calcul côté serveur pour effectuer le rendu du composant.
-* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
+* décrit la chaîne de composants et de modèles rendus sur la page (SLY, JSP, etc.) ; L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
+* affiche le temps de calcul côté serveur nécessaire au rendu du composant ;
+* permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, par exemple :
 
    * le chemin du référentiel ;
    * les liens vers les scripts (accessibles dans CRXDE Lite)
@@ -117,7 +117,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Toutefois, ils servent uniquement de référence, vous **ne devez rien** modifier sous `/libs`, car toutes les modifications que vous apportez risquent d’être perdues. Cela est dû au fait que cette branche peut être modifiée chaque fois que vous mettez à niveau ou appliquez un correctif ou un Feature Pack. Apportez les modifications requises sous `/apps`. Voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Toutefois, ils servent uniquement de référence, vous **ne devez rien** modifier sous `/libs`, car toutes les modifications que vous apportez risquent d’être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif ou pack de fonctionnalités. Apportez les modifications requises sous `/apps`. Voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 
@@ -128,7 +128,7 @@ L’onglet **Erreurs** devrait toujours rester vide (comme ci-dessus), mais lors
 * Un avertissement s’affiche si le composant écrit une entrée dans le journal d’erreurs, avec les détails de l’erreur et des liens directs vers le code correspondant dans CRXDE Lite.
 * Un avertissement s’affiche si le composant ouvre une session d’administrateur.
 
-Par exemple, dans une situation où une méthode non définie est appelée, l’erreur résultante est affichée dans la variable **Erreurs** tab :
+Par exemple, dans une situation où une méthode non définie est appelée, l’erreur résultante s’affiche dans l’onglet **Erreurs** :
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -138,6 +138,6 @@ L’entrée du composant dans l’arborescence de l’onglet Composants est éga
 
 >[!CAUTION]
 >
->Dans AEM 6.2, les fonctionnalités de test du mode Développeur ont été réimplémentées en tant qu’application Outils autonome.
+>Dans AEM 6.2, les fonctionnalités de test du mode de développement ont été réimplémentées en tant qu’application autonome Outils.
 >
->Pour plus d’informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
+>Pour en savoir plus, consultez [Test de l’IU](/help/sites-developing/hobbes.md).

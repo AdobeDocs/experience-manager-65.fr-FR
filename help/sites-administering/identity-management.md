@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ Cela implique de définir une propriété appropriée dans le profil utilisateur
 
 * être visible et accessible pour l’utilisateur ou l’utilisatrice
 * définir deux états pour chaque propriété
-* permet de basculer entre les deux états définis
+* vous permet de basculer entre les deux états définis.
 
 Pour ce faire, procédez comme suit :
 

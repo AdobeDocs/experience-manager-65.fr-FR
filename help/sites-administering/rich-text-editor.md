@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '2887'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 
 ## Configuration de la barre d’outils de l’éditeur de texte enrichi {#dialogfullscreen}
 
-AEM vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Il n’est pas nécessaire de spécifier toutes les configurations de barre d’outils.
+AEM vous permet de configurer différemment l’interface de l’éditeur de texte enrichi pour les différents modes de modification. Les paramètres par défaut sont fournis ci-dessous. Vous pouvez remplacer ces paramètres par défaut en fonction de vos besoins. Vous personnalisez uniquement les fonctionnalités de la barre d’outils que vous souhaitez fournir à vos auteurs. Vous n’avez pas besoin de définir toutes les configurations de barre d’outils.
 
 Pour configurer la barre d’outils pour `dialogFullScreen`, utilisez l’exemple de configuration suivant.
 
@@ -261,7 +261,7 @@ Les options disponibles dans l’éditeur de texte enrichi sont transmises depui
 * Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la politique de contenu ne peut pas le configurer.
 * Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les politiques de contenu.
 
-Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
+Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr#the-text-component-and-the-rich-text-editor).
 
 ## Personnalisation de l’association entre les commandes et les icônes de la barre d’outils {#iconstoolbar}
 
@@ -321,7 +321,7 @@ Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’édite
 
 >[!NOTE]
 >
->L’éditeur de texte enrichi CoralUI 2 utilise des modèles Handlebars pour les boîtes de dialogue des plug-ins. Par conséquent, la bibliothèque cliente d’éditeur de texte enrichi CoralUI 2 dépendait de la bibliothèque cliente Handlebars. L’éditeur de texte enrichi CoralUI 3 n’utilise pas de modèles Handlebars et n’a aucune dépendance associée. Si vos plug-ins personnalisés utilisent des modèles Handlebars, incluez la bibliothèque client Handlebars dans votre page web.
+>L’éditeur de texte enrichi CoralUI 2 utilise des modèles Handlebars pour les boîtes de dialogue des plug-ins. Par conséquent, la bibliothèque cliente d’éditeur de texte enrichi CoralUI 2 dépendait de la bibliothèque cliente Handlebars. L’éditeur de texte enrichi CoralUI 3 n’utilise pas de modèles Handlebars et n’a aucune dépendance associée. Si vos plug-ins personnalisés utilisent des modèles Handlebars, incluez la bibliothèque client Handlebars dans votre page web.
 
 ## Informations supplémentaires {#further-information}
 

@@ -13,7 +13,7 @@ role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -454,7 +454,7 @@ Pour ajouter des composants sur la page de destination, faites-les glisser et d�
 
 La suppression d’une page de destination fonctionne comme la suppression d’une page AEM normale.
 
-La seule exception est que lorsque vous supprimez une landing page pour ordinateur de bureau, elle supprime également la landing page mobile correspondante (si elle est présente), mais pas de manière inversée.
+La seule exception est que lorsque vous supprimez une page de destination pour ordinateurs de bureau, cela supprime également la page de destination correspondante pour mobiles (si celle-ci existe), mais l’inverse ne se produit pas.
 
 ### Publier une page de destination {#publishing-a-landing-page}
 

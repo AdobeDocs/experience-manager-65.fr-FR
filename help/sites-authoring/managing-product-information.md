@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2888'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ Suivez la même procédure pour configurer les tâches dans le **workflow Séanc
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
 
 1. Accédez à un projet Séance photo de produit, et cliquez sur l’icône **Ajouter une tâche** sur la carte **Workflows**.
-1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations sur le produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez la variable **Séance photo du produit** et démarrez le **Séance photo du produit** workflow.
+1. Sélectionnez le workflow **Séance photo de produit (intégration de Commerce)** pour démarrer le workflow **Séance photo de produit (intégration de Commerce)**. Si les informations produit ne sont pas disponibles sous `/etc/commerce`, sélectionnez le workflow **Séance photo de produit** et lancez le workflow **Séance photo de produit**.
 
    ![Assistant Workflow](assets/chlimage_1-140a.png)
 

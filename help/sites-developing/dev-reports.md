@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '5177'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ La requête :
 
      Ce chemin spécifie la sous-arborescence du référentiel dans lequel la recherche doit être effectuée.
 
-     Pour contribuer à réduire l’impact sur les performances, il est conseillé de limiter (dans la mesure du possible) la requête à une sous-arborescence spécifique du référentiel. Le chemin racine peut être prédéfini dans la variable [modèle de rapport](#report-template) ou défini par l’utilisateur dans la variable [Boîte de dialogue Configuration (Modifier)](#configuration-dialog).
+     Pour contribuer à réduire l’impact sur les performances, il est conseillé de limiter (dans la mesure du possible) la requête à une sous-arborescence spécifique du référentiel. Le chemin d’accès racine peut soit être prédéfini dans le [modèle de rapport](#report-template), soit être défini par l’utilisateur ou l’utilisatrice dans la [boîte de dialogue Configuration (Modifier)](#configuration-dialog).
 
    * [Un ou plusieurs critères](#query-definition).
 
@@ -125,7 +125,7 @@ La requête :
 
 **Le point clé ici est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (relation 1:1, par conséquent).**
 
-Le développeur ou la développeuse doit s’assurer que la requête définie pour un rapport renvoie un jeu de nœuds approprié pour ce rapport. Cependant, le noeud lui-même n’a pas besoin de contenir toutes les informations requises, elles peuvent également être dérivées des noeuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
+Le développeur ou la développeuse doit s’assurer que la requête définie pour un rapport renvoie un jeu de nœuds approprié pour ce rapport. Cependant, le nœud lui-même n’a pas besoin de contenir toutes les informations requises, elles peuvent également être dérivées des nœuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
 
 ### File d’attente de traitement {#processing-queue}
 

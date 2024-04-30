@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3363'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Les agents suivants sont disponibles dans une installation AEM standard :
 Utilisé pour effectuer une réplication de l’instance de création vers l’instance de publication.
 
 * Le Dispatcher Flush
-Utilisé pour gérer le cache du Dispatcher. Consultez la section [Invalidation du cache du Dispatcher depuis l’environnement de création](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du Dispatcher depuis l’instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
+Utilisé pour gérer le cache du Dispatcher. Consultez la section [Invalidation du cache du Dispatcher depuis l’environnement de création](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-the-authoring-environment) et [Invalidation du cache du Dispatcher depuis l’instance de publication](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) pour plus d’informations.
 
 * [Réplication inverse](#reverse-replication-publish-to-author)
 Utilisée pour effectuer une réplication de l’instance de publication vers l’instance de création. La réplication inverse n’est pas utilisée pour les fonctionnalités de communautés, telles que les forums, les blogs et les commentaires. Elle est désactivée, puisque la boîte d’envoi n’est pas activée. L’utilisation de la réplication inverse nécessite une configuration personnalisée.

@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Pour les composants principaux AEM CIF, la mise en cache étant configurée comp
 
 ### Configuration
 
-Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, du degré auquel il est important qu’un composant affiche toujours les dernières données possibles, etc. Notez qu’il n’y a pas d’invalidation du cache. Soyez donc prudent lors de la définition des durées du cache.
+Une fois configuré pour un composant donné, le cache commence à stocker les requêtes et les réponses GraphQL telles que définies par chaque entrée de configuration du cache. La taille du cache et la durée de mise en cache de chaque entrée doivent être définies projet par projet, en fonction, par exemple, de la fréquence à laquelle les données du catalogue peuvent changer, du degré auquel il est important qu’un composant affiche toujours les dernières données possibles, etc. Notez qu’il n’y a pas d’invalidation du cache. Faites donc attention lors de la définition des durées du cache.
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
@@ -46,7 +46,7 @@ venia/components/structure/navigation:true:10:600
 
 En considérant que le [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisé. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’existe aucune invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur &quot;universelle&quot; qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
+La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 
 ## Mise en cache du Dispatcher {#dispatcher}
 

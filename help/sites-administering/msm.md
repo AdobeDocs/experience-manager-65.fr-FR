@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 >[!NOTE]
 >
->MSM peut être utilisé avec les deux pages et [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) car ces fragments font partie d’une expérience (page).
+>MSM peut être utilisé avec les deux pages et les [fragments d’expérience](/help/sites-authoring/experience-fragments.md), car ces fragments font partie d’une expérience (page).
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Configuration du plan directeur</strong></td>
-   <td>Configuration prédéfinie spécifiant un chemin source.</td>
+   <td>Configuration prédéfinie spécifiant un chemin d’accès source.</td>
    <td>Lorsqu’une page de plan directeur est référencée dans une configuration de plan directeur, la commande Déployer devient disponible.</td>
   </tr>
   <tr>

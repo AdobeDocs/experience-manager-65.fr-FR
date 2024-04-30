@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '3652'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Pour tout problème lié à la plateforme, contactez le fournisseur de la platef
 >
 >Selon la plateforme sur laquelle vous installez AEM, il peut y avoir différents ensembles d’exigences pour la gestion des utilisateurs et des utilisatrices.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Configuration minimale requise pour installer Adobe Experience Manager :
 
@@ -137,10 +137,10 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 1. La fragmentation MongoDB n’est pas prise en charge dans AEM.
 1. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
-1. Applicable à AEM Forms uniquement :
+1. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
    * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019.
-1. Non pris en charge pour AEM Forms.
+1. Non pris en charge pour AEM Forms.
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 
@@ -525,7 +525,7 @@ Pour Windows x86 :
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
 * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
@@ -538,7 +538,7 @@ Pour Windows x86 :
 * Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits pour AEM Forms Designer 32 bits
 * Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) 64 bits pour AEM Forms Designer 64 bits (pour les piles OSGI et JEE)
 
-[Installation et configuration du concepteur AEM Forms](/help/forms/using/installing-configuring-designer.md)
+[Installer et configurer AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Conditions requises pour l’écriture différée des métadonnées AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 

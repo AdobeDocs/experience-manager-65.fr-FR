@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -178,7 +178,7 @@ Cette opération utilise une disposition de serveur simple avec uniquement un se
    * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins (voir la Description générale).
    * Recompressez le fichier Web.xml.
 
-* Déployer AEM fichier war en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut)
+* Déployez le fichier WAR AEM en tant qu’application (pour les autres paramètres, utilisez les paramètres par défaut).
 * L’installation peut prendre du temps...
 * Vérifiez que l’installation est terminée comme indiqué ci-dessus dans la section Description générale (par exemple, en suivant le fichier error.log).
 * Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application Web dans la `/console` WebLogic.

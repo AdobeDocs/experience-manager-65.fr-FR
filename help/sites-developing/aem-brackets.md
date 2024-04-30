@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Extension AEM Brackets{#aem-brackets-extension}
 
-## du commerce électronique {#overview}
+## Vue d’ensemble {#overview}
 
 L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
 
@@ -72,11 +72,11 @@ Le projet doit contenir au minimum :
 
 1. un fichier `filter.xml` (par exemple `myproject/META-INF/vault/filter.xml`). Pour plus de détails sur la structure du fichier `filter.xml`, reportez-vous à la [définition du filtre d’espace de travail](https://jackrabbit.apache.org/filevault/filter.html).
 
-Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et choisissez le dossier `jcr_root` ou le dossier du projet parent.
+Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et sélectionnez le dossier `jcr_root` ou le dossier du projet parent.
 
 >[!NOTE]
 >
->Si vous n’avez pas de votre propre projet avec un module de contenu, vous pouvez essayer la méthode [Exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
+>Si votre projet n’a pas de package de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
 >
 >Après ces étapes, vous devriez être en mesure d’accéder à l’URL `/content/todo.html` sur votre instance de développement AEM, d’apporter des modifications au code dans Brackets et de voir comment, après une actualisation dans le navigateur Web, les modifications ont été immédiatement synchronisées avec le serveur AEM.
 
@@ -86,10 +86,10 @@ Pour synchroniser le contenu avec une instance de développement AEM dans les de
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-Les paramètres du projet vous permettent de définir les éléments suivants :
+Les paramètres du projet vous permettent de définir les éléments suivants :
 
 1. l’URL du serveur (par exemple `http://localhost:4502`) ;
-1. Permet de tolérer les serveurs qui ne possèdent pas de certificat HTTPS valide (ne cochez pas, sauf si nécessaire).
+1. s’il faut accepter les serveurs sans certificat HTTPS valide (ne pas cocher, sauf si nécessaire) ;
 1. le nom d’utilisateur ou d’utilisatrice qui a servi à synchroniser le contenu (par exemple `admin`) ;
 1. le mot de passe de l’utilisateur ou de l’utilisatrice (par exemple `admin`).
 
@@ -113,7 +113,7 @@ Dans l’Explorateur de projet, ouvrez le menu contextuel en cliquant avec le bo
 
 ### Synchronisation complète des packages de contenu {#full-content-package-synchronization}
 
-Dans le **AEM** , **Exporter le package de contenu** ou **Importer un module de contenu** Les options vous permettent de synchroniser l’ensemble du projet avec le serveur.
+Dans le menu **AEM**, les options **Exporter le package de contenu** ou **Importer le package de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

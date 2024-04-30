@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
 
-## Principaux articles relatifs à l’administration
+## Articles clés d’administration
 
 * [Gestion de plusieurs sites](/help/sites-administering/msm.md)
 * [MSM et traduction](/help/sites-administering/msm-and-translation.md)

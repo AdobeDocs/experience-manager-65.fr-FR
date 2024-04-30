@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '1754'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contient des informations sur le segment qui a été consulté, par exemple : <code>2:O:4-8</code> </td>
+   <td>Contient des informations sur le segment qui a été consulté, par exemple, <code>2:O:4-8</code>. </td>
   </tr>
  </tbody>
 </table>

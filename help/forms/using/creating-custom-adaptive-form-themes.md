@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 >
 >Adobe Experience Manager (AEM) Forms fournit la fonctionnalité [Éditeur de thèmes](/help/forms/using/themes.md), qui permet de créer et de modifier des [thèmes](/help/forms/using/themes.md) de formulaires adaptatifs. Exécutez les étapes mentionnées dans cet article uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne dispose pas de l’[éditeur de thèmes](/help/forms/using/themes.md) et que vous possédez déjà des thèmes créés à l’aide de fichiers Less/CSS (méthode antérieure à l’éditeur de thèmes).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * Bien connaître la structure LESS (Leaner CSS)
 * Comment créer une bibliothèque cliente dans Adobe Experience Manager
@@ -66,7 +66,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    **Fichiers variables less**: il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
 
-   Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les `.less` files :
+   Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les fichiers `.less` suivants :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -108,7 +108,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    **Fichiers mixin less :** Vous pouvez définir les fonctions qui acceptent les variables comme arguments. Les styles résultants constituent la sortie de ces fonctions. Utilisez ces mixins dans différents styles afin d’éviter la répétition de styles CSS.
 
-   Les formulaires adaptatifs fournissent des mixins prêts à l’emploi définis dans :
+   Les formulaires adaptatifs offrent également des mixins prêts à l’emploi définis dans :
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

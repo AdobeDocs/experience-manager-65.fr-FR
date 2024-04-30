@@ -8,20 +8,20 @@ role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Guide de l’utilisateur pour la gestion d’AEM 6.5
 
-Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés, ainsi que des bonnes pratiques et des directives.
+Découvrez comment gérer un projet AEM, avec la prise en charge de ressources clés, ainsi que des bonnes pratiques et des directives.
 
-## Articles essentiels
+## Articles clés
 
-Les articles clés de ce guide sont les suivants :
+Les articles clés de ce guide sont les suivants :
 
 * [Gestion des projets : liste de contrôle des bonnes pratiques](/help/managing/best-practices.md)
 * [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
 * [Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md)
 * [Instructions relatives à AEM et à l’accessibilité Web](/help/managing/web-accessibility.md)
-* [Préparation d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données](/help/managing/data-protection-and-privacy.md)
+* [Préparation d’Adobe Experience Manager aux réglementations sur la protection et la confidentialité des données](/help/managing/data-protection-and-privacy.md)

@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 
 ## Désactivation des raccourcis clavier {#deactivating-keyboard-shortcuts}
 
-AEM fournit des raccourcis clavier pour certaines des fonctionnalités les plus utilisées (modification, propriétés, copier/coller, affichage de divers menus de rail latéral, etc.).
+AEM propose des raccourcis clavier pour certaines des fonctionnalités courantes (modification, propriétés, copier/coller, affichage de plusieurs menus de rail latéral, etc.).
 
 Pour les utilisateurs et utilisatrices qui n’utilisent pas de raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 

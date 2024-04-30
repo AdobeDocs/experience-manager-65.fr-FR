@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '965'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Dans cette console, vous pouvez créer un projet, lui associer des ressources et
 
 ## Conditions d’accès {#access-requirements}
 
-Envoie une fonction d’AEM standard sans nécessiter de configuration supplémentaire.
+Les projets sont une fonctionnalité d’AEM standard et ne nécessitent aucune configuration supplémentaire.
 
 Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
 

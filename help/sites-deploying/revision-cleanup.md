@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '5753'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Chaque mise à jour du référentiel crée une révision du contenu. Par conséq
 
 Une version en ligne de cette fonctionnalité, appelée Nettoyage des révisions en ligne, a été introduite dans AEM 6.3 et les versions ultérieures. Par rapport au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté pendant que l’instance AEM est en ligne. Le nettoyage des révisions en ligne est activé par défaut. Il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
 
-**Remarque** : [Regardez la vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) pour découvrir comment utiliser le nettoyage des révisions en ligne.
+**Remarque** : [Regardez la vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=fr) pour découvrir comment utiliser le nettoyage des révisions en ligne.
 
 Le processus de nettoyage des révisions se compose de trois phases : **estimation**, **compression** et **nettoyage**. L’estimation détermine si la phase suivante (compression) doit être exécutée ou non en fonction de la quantité d’espace mémoire pouvant être récupérée. Lors de la phase de compression, les segments et les fichiers tar sont réécrits sans aucun contenu inutilisé. La phase de nettoyage supprime ensuite les anciens segments, y compris l’espace mémoire qu’ils peuvent contenir. Le mode hors ligne peut généralement libérer de l’espace, car le mode en ligne doit tenir compte de la plage de travail d’AEM, qui empêche la collecte de segments supplémentaires.
 
@@ -268,7 +268,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>Quelles sont les conditions minimales requises en matière d’espace disque et de mémoire de tas lors de l’exécution du nettoyage des révisions en ligne ?</strong></td>
-   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque disponible descend en dessous d’une valeur critique, le processus sera annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable.</p> <p><strong>Adobe recommande d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace libre du tas est surveillé en permanence pendant le processus de nettoyage. Si l’espace libre du tas descend sous une valeur critique, le processus sera annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15%.</p> <p>Les recommandations pour le dimensionnement minimal du tas de compression ne sont pas séparées des recommandations de dimensionnement de la mémoire d’AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la payload attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
+   <td><p>L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne. Si l’espace disque disponible descend en dessous d’une valeur critique, le processus est annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable.</p> <p><strong>Adobe recommande d’opter pour une taille de disque au moins deux à trois fois supérieure à celle estimée initialement pour le référentiel.</strong></p> <p>L’espace libre du tas est surveillé en permanence pendant le processus de nettoyage. Si l’espace libre du tas descend sous une valeur critique, le processus sera annulé. La valeur critique est configurée via org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. La valeur par défaut est 15%.</p> <p>Les recommandations pour le dimensionnement minimal du tas de compression ne sont pas séparées des recommandations de dimensionnement de la mémoire d’AEM. En règle générale : <strong>si une instance AEM est suffisamment bien dimensionnée pour gérer les cas d’utilisation et la payload attendue, le processus de nettoyage obtiendra suffisamment de mémoire.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -554,7 +554,7 @@ Le fichier error.log sera détaillé si des incidents se produisent pendant le p
   <tr>
     <td>S/O</td>
     <td>TarMK GC #2 : la compression a échoué à la minute 32,902 (1 974 140 ms), après 5 cycles.</td>
-    <td>Ce message ne signifie pas qu’il existe une erreur irrécupérable, mais seulement que la compression s’est terminée après quelques tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragraphe suivant.</a></td>
+    <td>Ce message ne signifie pas qu’il existe une erreur irrécupérable, mais seulement que la compression s’est terminée après un certain nombre de tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragraphe suivant.</a></td>
     <td>Lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentation Oak</a> suivante et la dernière question sur l’Exécution du nettoyage des révisions en ligne.</a></td>
   </td>
   </tr>

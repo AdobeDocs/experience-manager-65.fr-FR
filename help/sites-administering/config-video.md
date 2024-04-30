@@ -12,13 +12,13 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Configurer le composant vidéo {#configure-the-video-component}
 
-La variable [Composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie prête à l’emploi sur votre page.
+Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie et prête à l’emploi sur une page.
 
 Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
 
@@ -84,4 +84,4 @@ Pour **configurer AEM**, procédez comme suit :
 
 >[!NOTE]
 >
->Les modifications apportées aux modèles de workflow d’usine par défaut ne sont pas conservées lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de workflow modifiés avant de les modifier. Par exemple, copiez le fichier d’usine [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] avant de modifier l’étape Transcodage FFmpeg dans le [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Vous pouvez ensuite superposer la variable `/apps` pour permettre AEM récupérer les modifications personnalisées dans le modèle d’usine.
+>Les modifications apportées aux modèles de workflows prêts à l’emploi ne sont pas conservées lorsque vous mettez à niveau votre instance AEM. Adobe recommande de copier les modèles de workflow modifiés avant de les modifier. Par exemple, copiez le modèle de [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] prêt à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle de [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] afin de choisir des noms de profil vidéo qui existaient avant la mise à niveau. Ensuite, vous pouvez remplacer le nœud `/apps` pour permettre à AEM de récupérer les modifications personnalisées apportées au modèle prêt à l’emploi.

@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Cet article s’appuie sur ces principes de base pour que vous compreniez commen
 
 *Le monde extérieur est vaste et malveillant*.
 
-Peut-être, mais peut-être pas. C&#39;est certainement une ***compliqué*** le monde dehors. La modélisation des données n’est utilisée que pour fournir une représentation simplifiée d’une très (très) petite portion de celui-ci, en utilisant des données spécifiques pour un objectif spécifique.
+Peut-être, mais peut-être pas. Il est certain que le monde est extrêmement ***complexe***. La modélisation des données n’est utilisée que pour fournir une représentation simplifiée d’une très (très) petite portion de celui-ci, en utilisant des données spécifiques pour un objectif spécifique.
 
 >[!NOTE]
 >

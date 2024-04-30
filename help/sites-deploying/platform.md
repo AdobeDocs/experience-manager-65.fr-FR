@@ -1,6 +1,6 @@
 ---
 title: Présentation de la plateforme AEM
-description: Découvrez la plateforme AEM et ses composants les plus importants, notamment l’installation et le déploiement d’Adobe Experience Manager 6.5 et son architecture, y compris le déploiement cloud Adobe Managed Services.
+description: Découvrez la plateforme AEM et ses composants les plus importants, notamment l’installation et le déploiement d’Adobe Experience Manager 6.5 et son architecture, y compris le déploiement cloud d’Adobe Managed Services.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform

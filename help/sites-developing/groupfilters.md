@@ -14,7 +14,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Concevez vos filtres de sorte à pouvoir utiliser des combinaisons pour définir
 
 Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration du groupe](/help/sites-developing/mobile.md#creating-a-device-group).
 
-## Classe Java™ Filter {#the-filter-java-class}
+## Classe de filtre Java™ {#the-filter-java-class}
 
 Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
-La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java™ utilise la variable `@Component`et `@Service` annotations. La classe présente la structure suivante :
+La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component` et `@Service`. La classe présente la structure suivante :
 
 ```java
 package com.adobe.example.myapp;
@@ -66,9 +66,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-Fournissez le code des méthodes suivantes :
+Fournissez le code pour les méthodes suivantes :
 
-* `getDescription` : renvoie la description du filtre. La description s’affiche dans la boîte de dialogue de configuration du groupe d’appareils.
+* `getDescription` : renvoie la description du filtre. La description apparaît dans la boîte de dialogue de configuration du groupe d’appareils.
 * `getTitle` : renvoie le nom du filtre. Le nom apparaît lors de la sélection des filtres pour le groupe d’appareils.
 * `matches` : détermine si l’appareil possède les caractéristiques demandées.
 
@@ -164,7 +164,7 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-La valeur String renvoyée par la méthode getTitle apparaît dans la liste déroulante des propriétés du groupe d’appareils.
+La valeur de chaîne renvoyée par la méthode getTitle apparaît dans la liste déroulante des propriétés du groupe d’appareils.
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 
@@ -178,7 +178,7 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 **Plug-ins :**
 
-* Module externe Compilateur Apache Maven : compile les classes Java™ du code source.
+* Plug-in Apache Maven Compiler : compile les classes Java™ du code source.
 * Plug-in bundle Apache Felix Maven : crée le bundle et le manifeste.
 * Plug-in SCR Apache Felix Maven : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
@@ -192,7 +192,7 @@ Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le lot de l�
 
 Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer que la version du bundle est déployée dans votre environnement.
 
-**POM :** (Votre POM utilise un groupId et une version différents.)
+**POM :**(votre code POM utilisera un autre groupId et une autre version).
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"

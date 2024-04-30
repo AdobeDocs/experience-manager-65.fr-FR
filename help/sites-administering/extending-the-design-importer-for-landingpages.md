@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -566,7 +566,7 @@ Une fois la page de destination importée, les fichiers (images, css, js, etc.) 
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Supposons que la landing page soit créée sous la campagne `We.Retail` et le nom de la landing page est **myBlankLandingPage** alors l’emplacement où les fichiers zip sont stockés est le suivant :
+Supposons que la page de destination soit créée sous la campagne `We.Retail` et que son nom soit **myBlankLandingPage**. L’emplacement de stockage des fichiers ZIP est le suivant :
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

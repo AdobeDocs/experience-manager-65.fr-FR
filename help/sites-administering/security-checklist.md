@@ -13,7 +13,7 @@ role: Admin,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -110,11 +110,11 @@ Adobe recommande de définir des pages de gestionnaire d’erreurs personnalisé
 
 >[!NOTE]
 >
->Pour plus d’informations, consultez [Comment créer des scripts ou des gestionnaires d’erreur personnalisés](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
+>Pour plus d’informations, consultez [Comment créer des scripts ou des gestionnaires d’erreur personnalisés](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=fr).
 
 ### Compléter la liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe vous recommande de compléter la [liste de contrôle de sécurité du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
+AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe vous recommande de compléter la [liste de contrôle de sécurité du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr).
 
 >[!CAUTION]
 >

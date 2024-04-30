@@ -11,7 +11,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Une fois le composant configuré, les styles configurés par les auteurs et autrices de pages sont automatiquement insérés par AEM sur l’élément décoratif qu’AEM encapsule automatiquement autour de chaque composant modifiable. Le composant lui-même n’a rien à faire d’autre pour que cela se produise.
+Une fois le composant configuré, les styles configurés par les auteurs et autrices de pages sont automatiquement insérés par AEM sur l’élément décoratif qu’AEM encapsule automatiquement autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 

@@ -1,6 +1,6 @@
 ---
 title: Présentation et aperçu
-description: Découvrez comment utiliser et administrer AEM Content and Commerce, avec des articles utiles sur les intégrations et sur la prise en main d’AEM Storefront.
+description: Découvrez comment utiliser et administrer AEM Content and Commerce avec des articles utiles sur les intégrations et sur la prise en main d’AEM Storefront.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce

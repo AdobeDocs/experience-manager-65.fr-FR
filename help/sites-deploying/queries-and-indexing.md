@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '3034'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ Prenez l’exemple de requête suivant :
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous . **`oak:index`:**
+Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **`oak:index`:**.
 
 * **Nom :** `LucenePropertyIndex`
 * **Type :** `oak:QueryIndexDefinition`

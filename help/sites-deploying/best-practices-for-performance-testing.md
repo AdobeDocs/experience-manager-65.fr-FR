@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '1790'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ La documentation sur la [surveillance des performances](/help/sites-deploying/mo
 
 **Mode Développeur de l’IU tactile**
 
-L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. De la même manière que les auteurs et autrices peuvent passer du mode de modification au mode d’aperçu, les développeurs et développeuses peuvent passer en mode Développeur dans l’interface utilisateur de création. Cela vous permet d’afficher le temps de rendu de chacun des composants sur la page et d’afficher les traces de pile des erreurs. Pour plus d’informations sur le mode Développeur, reportez-vous à cette [présentation Gems de CQ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. De la même manière que les auteurs et autrices peuvent passer du mode de modification au mode d’aperçu, les développeurs et développeuses peuvent passer en mode Développeur dans l’interface utilisateur de création. Cela vous permet d’afficher le temps de rendu de chacun des composants sur la page et d’afficher les traces de pile des erreurs. Pour plus d’informations sur le mode Développeur, reportez-vous à cette [présentation Gems de CQ](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=fr).
 
 **Utilisation de rlog.jar pour lire les journaux de requêtes**
 

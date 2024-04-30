@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '5792'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ L’outil **Purge de version** est destiné à purger les versions d’un nœud 
 
 Cette section traite des opérations de maintenance liées à la fonctionnalité de création de versions d’AEM. L’outil **Purge de version** est destiné à purger les versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son objectif premier est de vous aider à réduire la taille de votre référentiel en supprimant les anciennes versions de vos nœuds.
 
-### Présentation {#overview}
+### Vue d’ensemble {#overview}
 
 L’outil **Purge de version** est disponible sous la forme d’une tâche de maintenance hebdomadaire. Avant de commencer à l’utiliser, il faut l’ajouter et le configurer. Ensuite, vous pouvez l’exécuter sur demande ou de manière hebdomadaire.
 
@@ -205,7 +205,7 @@ AEM WCM enregistre des journaux détaillés. Une fois que vous avez décompress�
 
 La rotation de fichiers journaux fait référence au processus qui limite la croissance du fichier par la création périodique d’un nouveau fichier. Dans AEM, la rotation d’un fichier journal appelé `error.log` est activée une fois par jour, selon les règles en place :
 
-* La variable `error.log` est renommé en fonction du modèle. `{original_filename}.yyyy-MM-dd`. Par exemple, le 11 juillet 2010, le fichier journal actuel est renommé `error.log-2010-07-10`, puis un nouveau fichier `error.log` est créé.
+* Le fichier `error.log` est renommé selon le modèle `{original_filename}.yyyy-MM-dd`. Par exemple, le 11 juillet 2010, le fichier journal actuel est renommé `error.log-2010-07-10`, puis un nouveau fichier `error.log` est créé.
 
 * Les fichiers journaux précédents ne sont pas supprimés. Il est de votre responsabilité de nettoyer régulièrement les anciens fichiers journaux pour limiter l’utilisation du disque.
 
@@ -544,7 +544,7 @@ Les méthodes utilisées lors de la collecte des informations pour le ciblage pe
 
 Vous trouverez ci-après une liste des problèmes de performances qui surviennent de temps à autre, ainsi que des solutions potentielles sur la façon de les repérer et de les résoudre.
 
-| Domaine | Symptôme | Pour augmenter la capacité... | Pour réduire le volume... |
+| Aire | Symptôme | Pour augmenter la capacité... | Pour réduire le volume... |
 |---|---|---|---|
 | Client | Utilisation élevée du processeur client. | Installez un processeur client avec des performances supérieures. | Simplifiez la disposition (HTML). |
 |   | Faible usage du processeur du serveur. | Effectuez une mise à niveau vers un navigateur plus rapide. | Améliorez le cache côté client. |
@@ -1098,9 +1098,9 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >
 >Consultez les articles suivants pour plus d’informations :
 >
->* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr)
 >* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
->* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=fr)
 >* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1143,7 +1143,7 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop de fichiers ouverts](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+   * [Trop de fichiers ouverts](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr)
    * [Le journal consomme trop d’espace disque](https://helpx.adobe.com/fr/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Détérioration régulière des performances {#regular-performance-degradation}

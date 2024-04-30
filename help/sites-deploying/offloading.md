@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Lors de la création d’un traitement, la position de la payload n’est garant
 
 ## Administrer les topologies {#administering-topologies}
 
-Les topologies sont des grappes de Experience Manager à couplage faible qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
+Les topologies sont des clusters Experience Manager légèrement interconnectées qui participent au déchargement. Un cluster se compose d’une ou de plusieurs instances de serveur Experience Manager (une seule instance est considérée comme un cluster).
 
 Chaque instance d’Experience Manager exécute les services suivants liés au déchargement :
 

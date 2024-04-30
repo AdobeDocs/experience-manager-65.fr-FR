@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Lors de la migration, tenez compte des différences majeures suivantes entre l�
  </tbody>
 </table>
 
-En d’autres termes, la migration d’une section de votre interface utilisateur de l’IU classique vers l’IU tactile signifie qu’une *Widget ExtJS* à *Composant Sling*. Pour plus de facilité, l’interface utilisateur tactile est basée sur le framework de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
+En d’autres termes, la migration d’une section de votre interface utilisateur, à partir de l’interface utilisateur classique vers l’interface utilisateur tactile, correspond au portage d’un *Widget ExtJS* vers un *Composant Sling*. Pour plus de facilité, l’interface utilisateur tactile est basée sur le framework de l’interface utilisateur Granite, qui fournit déjà certains composants Sling pour l’interface utilisateur (appelés composants de l’interface utilisateur Granite).
 
 Avant de commencer, vérifiez le statut et les recommandations associées :
 
@@ -151,7 +151,7 @@ Pour plus d’informations sur le développement d’AEM, consultez la collectio
 * [Documentation relative à l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
 * [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

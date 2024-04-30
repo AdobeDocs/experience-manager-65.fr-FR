@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -201,7 +201,7 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    <td><p>La longueur de la file d’attente d’observation effectue une itération sur tous les programmes d’écoute d’événement et les observateurs en arrière-plan, compare la valeur <code>queueSize </code> à leur valeur <code>maxQueueSize</code> et :</p>
     <ul>
      <li>renvoie le statut « Critique » si la valeur <code>queueSize</code> dépasse la valeur <code>maxQueueSize</code> (c’est-à-dire lorsque des événements seraient supprimés) ;</li>
-     <li>renvoie un avertissement si la variable <code>queueSize</code> est supérieure à la valeur <code>maxQueueSize * WARN_THRESHOLD</code> (la valeur par défaut est 0,75) </li>
+     <li>renvoie le statut « Avertissement » si la valeur <code>queueSize</code> dépasse la valeur <code>maxQueueSize * WARN_THRESHOLD</code> (la valeur par défaut est 0,75). </li>
     </ul> <p>La longueur maximale de chaque file d’attente provient de configurations distinctes (Oak et AEM) et n’est pas configurable à partir de ce contrôle de l’intégrité. Le MBean pour ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -225,12 +225,12 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    <td>Index asynchrones</td>
    <td><p>La vérification des index asynchrones :</p>
     <ul>
-     <li>renvoie un état Critique si au moins une piste d’indexation échoue</li>
+     <li>renvoie le statut « Critique » si au moins une piste d’indexation échoue.</li>
      <li>vérifie la valeur <code>lastIndexedTime</code> pour toutes les pistes d’indexation et :
       <ul>
-       <li>renvoie un état Critique s’il y a plus de 2 heures. </li>
-       <li>renvoie un état d’avertissement s’il est compris entre 2 heures et 45 minutes. </li>
-       <li>renvoie un état OK s’il y a moins de 45 minutes. </li>
+       <li>renvoie le statut « Critique » si cela remonte à plus de 2 heures ; </li>
+       <li>renvoie le statut « Avertissement » si le délai est compris entre 2 heures et 45 minutes ; </li>
+       <li>renvoie le statut « OK » si cela remonte à moins de 45 minutes ; </li>
       </ul> </li>
      <li>si aucune de ces conditions n’est remplie, renvoie « OK ».</li>
     </ul> <p>Les seuils des états Critique et Avertissement sont configurables. Le MBean pour ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque :</strong> Ce contrôle de l’intégrité est disponible avec AEM 6.4 et a été rétroporté dans AEM 6.3.0.1.</p> </td>
@@ -265,17 +265,17 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
       Le contrôle Tâches Sling vérifie le nombre de tâches dans la file d’attente du gestionnaire de tâches, le compare au seuil <code>maxNumQueueJobs</code> et :
     </div>
     <ul>
-     <li>renvoie un Critique si plus de la variable <code>maxNumQueueJobs</code> se trouvent dans la file d’attente</li>
-     <li>renvoie un état critique s’il existe des tâches actives de longue durée qui ont plus d’une heure.</li>
-     <li>renvoie un état critique s’il existe des tâches en file d’attente et que la dernière tâche terminée a plus d’une heure.</li>
+     <li>renvoie le statut « Critique » si la file d’attente comporte plus de tâches que ne le définit la valeur <code>maxNumQueueJobs</code> ;</li>
+     <li>renvoie le statut « Critique » s’il existe des tâches actives de longue durée de plus d’une heure ;</li>
+     <li>renvoie le statut « Critique » s’il existe des tâches en file d’attente et que la dernière tâche terminée a plus d’une heure.</li>
     </ul> <p>Seul le nombre maximal de tâches en file d’attente est configurable et sa valeur par défaut est 1 000.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=slingJobs,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Performances des requêtes</td>
    <td><p>Ce contrôle cherche l’<a href="http://localhost:4502/system/console/slingmetrics" target="_blank">indicateur Sling</a> <code>granite.request.metrics.timer</code> et :</p>
     <ul>
-     <li>renvoie un état critique si la valeur du 75e percentile est supérieure au seuil critique (la valeur par défaut est de 500 millisecondes).</li>
-     <li>renvoie un avertissement si la valeur du 75e percentile est supérieure au seuil d’avertissement (la valeur par défaut est de 200 millisecondes).</li>
+     <li>renvoie le statut « Critique » si la valeur du 75e percentile est supérieure au seuil critique (la valeur par défaut est de 500 millisecondes) ;</li>
+     <li>renvoie le statut « Avertissement » si la valeur du 75e percentile est supérieure au seuil d’avertissement (la valeur par défaut est de 200 millisecondes).</li>
     </ul> <p>Le MBean de ce contrôle de l’intégrité est<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -286,8 +286,8 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    <td>Espace disque</td>
    <td><p>Le contrôle Espace disque observe le MBean <code>FileStoreStats</code>, extrait la taille de l’entrepôt de nœuds et la quantité d’espace disque utilisable sur la partition Entrepôt de nœuds, puis :</p>
     <ul>
-     <li>renvoie un avertissement si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil d’avertissement (la valeur par défaut est 10).</li>
-     <li>renvoie un Critique si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil critique (la valeur par défaut est 2).</li>
+     <li>renvoie le statut « Avertissement » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil d’avertissement (la valeur par défaut est 10) ;</li>
+     <li>renvoie le statut « Critique » si le rapport espace disque utilisable/taille du référentiel est inférieur au seuil critique (la valeur par défaut est 2).</li>
     </ul> <p>Les deux seuils sont configurables. Le contrôle fonctionne uniquement sur les instances comportant un entrepôt de segments.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=DiskSpaceHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -310,15 +310,15 @@ Un contrôle d’intégrité composite vise à agréger différents contrôles d
    <td>Contrôle de la mémoire cache du code</td>
    <td><p>Un contrôle d’intégrité qui vérifie plusieurs conditions JVM pouvant déclencher un bug CodeCache présent dans Java™ 7 :</p>
     <ul>
-     <li>renvoie un avertissement si l’instance est en cours d’exécution sur Java™ 7, avec la purge du cache de code activée.</li>
-     <li>renvoie un avertissement si l’instance est en cours d’exécution sur Java™ 7 et que la taille du cache du code réservé est inférieure à un seuil minimum (la valeur par défaut est 90 Mo).</li>
+     <li>renvoie le statut « Avertissement » si l’instance est en cours d’exécution sur Java™ 7, avec la purge du cache de code activée ;</li>
+     <li>renvoie le statut « Avertissement » si l’instance est en cours d’exécution sur Java™ 7 et que la taille du cache du code réservé est inférieure à un seuil minimum (la valeur par défaut est 90 Mo).</li>
     </ul> <p>Le seuil <code>minimum.code.cache.size</code> est configurable. Pour plus d’informations sur le bug, consultez <a href="https://bugs.java.com/bugdatabase/">, puis recherchez l’ID de bug 8012547</a>.</p> <p>Le MBean de ce contrôle d’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Erreurs de chemin de recherche des ressources</td>
    <td><p>Vérifie s’il existe des ressources dans le chemin d’accès <code>/apps/foundation/components/primary</code> et :</p>
     <ul>
-     <li>renvoie un avertissement s’il existe des noeuds enfants sous <code>/apps/foundation/components/primary</code></li>
+     <li>renvoie le statut « Avertissement » s’il y a des nœuds enfants en dessous. <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Le MBean de ce contrôle d’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>

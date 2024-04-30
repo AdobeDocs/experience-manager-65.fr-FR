@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
 |  | `Ctrl-c` | Copier les paragraphes sélectionnés |
-|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas dans l’interface utilisateur tant qu’ils ne sont pas collés). |
+|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas de l’interface utilisateur tant qu’ils ne sont pas collés) |
 |  | `Ctrl-v` | Coller les paragraphes précédemment coupés ou copiés |
 |  | `Ctrl-Backspace` | Supprimer les paragraphes sélectionnés |
 | Mode d’**édition** – Éditeur de texte enrichi | `Ctrl-b` | Gras |

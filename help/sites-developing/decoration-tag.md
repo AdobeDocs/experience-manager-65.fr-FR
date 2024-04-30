@@ -8,7 +8,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Tous les exemples qui suivent supposent la structure de contenu et les composant
 
 #### Cas d’utilisation 1 : Inclure un composant pour la réutilisation du code {#use-case-include-a-component-for-code-reuse}
 
-Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, le composant inclus ne doit pas être modifiable avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le `cq:htmlTag` sera ignorée. Cela peut être considéré comme le comportement par défaut.
+Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, on ne souhaite pas que le composant puisse être modifié avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le nœud `cq:htmlTag` du composant est ignoré. Cela peut être considéré comme le comportement par défaut.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

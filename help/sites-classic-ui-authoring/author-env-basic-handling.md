@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -70,11 +70,11 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Utilisateurs et utilisatrices</strong></td>
-   <td>Ces consoles vous permettent de gérer les droits d’accès des utilisateurs et des groupes. Pour plus d’informations, voir <a href="/help/sites-administering/security.md">Administration et sécurité des utilisateurs</a>.<br /> </td>
+   <td>Ces consoles vous permettent de gérer les droits d’accès des utilisateurs, des utilisatrices et des groupes. Pour plus d’informations, consultez <a href="/help/sites-administering/security.md">Administration et sécurité des utilisateurs et utilisatrices</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Sites web</strong></td>
-   <td>Les consoles Sites/Sites web vous permettent de <a href="/help/sites-classic-ui-authoring/classic-page-author.md">créer, afficher et gérer des sites web ;</a> s’exécutant sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, démarrer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
+   <td>Les consoles Sites/Sites web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, lancer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>

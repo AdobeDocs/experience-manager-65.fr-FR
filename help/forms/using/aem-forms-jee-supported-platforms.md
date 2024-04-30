@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '4010'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 #### Programme d’installation complet
 
-- **Prise en charge de la mise à niveau pour les programmes d’installation complets**: un programme d’installation complet est lancé avec chaque sixième version AEM Service Pack. Par exemple, un programme d’installation complet a été publié avec les versions des Packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, soit 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une version antérieure, vous pouvez effectuer une mise à niveau en plusieurs étapes pour accéder en premier lieu à une version du programme d’installation complet prise en charge, puis à la dernière version.
+- **Prise en charge de la mise à niveau pour les programmes d’installation complets** : un programme d’installation complet est publié tous les 6 Packs de services AEM. Par exemple, un programme d’installation complet a été publié avec les versions des Packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, soit 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une version antérieure, vous pouvez effectuer une mise à niveau en plusieurs étapes pour accéder en premier lieu à une version du programme d’installation complet prise en charge, puis à la dernière version.
 
 - **Obsolescence et suppression** : la prise en charge des plateformes est mise à jour avec chaque version du programme d’installation complet. Tout logiciel indiqué comme obsolète dans la matrice des plateformes dans une version de programme d’installation complet est autorisé à être supprimé de la matrice des plateformes prises en charge dans une version ultérieure du programme d’installation complet, ceci indiquant la fin de la prise en charge du logiciel.
 
@@ -355,14 +355,14 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 
 1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
 1. AEM Forms on JEE ne prend pas en charge JBoss® sur SUSE® Linux® Enterprise Server 12. Seul IBM® WebSphere® est pris en charge sur SUSE® Linux® Enterprise Server 12.
-1. AEM Forms on JEE ne prend en charge aucun JDK avec JBoss® autre que Oracle Java™ SE.
-1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® qu’IBM® JDK.
+1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
+1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
 1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’applications WebSphere® sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
 1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4.
 1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
-1. JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seuls les JDK 11.0.19 ou les versions antérieures sont pris en charge pour installer le programme d’installation d’AEM Forms on JEE.
+1. JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seules la version JDK 11.0.19 ou les versions antérieures sont prises en charge pour installer le programme d’installation AEM Forms on JEE.
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
@@ -376,7 +376,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 - AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
 - AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 - AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
-- AEM Forms on JEE ne prend pas en charge la base de données MySQL dans un environnement organisé en grappe.
+- AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en clusters.
 - Pour obtenir la liste des plateformes supprimées ou mises à jour, voir le document [Résumé des nouvelles fonctionnalités d’AEM 6.5 Forms](../../forms/using/whats-new.md).
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
@@ -493,7 +493,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >- Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019.
->- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation avec licence de volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation soit autorisée et réactivée.
+>- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -578,9 +578,9 @@ Pour des conditions requises supplémentaires, voir :
 - La connexion réseau via le protocole TCP/IPv4 ou TCP/IPv6 au serveur AEM Forms on JEE
 - vous devez disposer des droits d’administration pour pouvoir installer Workbench sous Windows. Si vous effectuez l’installation à partir d’un compte autre que d’administration, le programme d’installation vous demande les informations d’identification d’un compte approprié.
 
-### Designer {#designer}
+### Concepteur {#designer}
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
 - Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 - Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 - Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
@@ -834,7 +834,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
-### Version 6.5.19.1 (15 décembre 2023)
+### Version 6.5.19.1 (15 décembre 2023)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |

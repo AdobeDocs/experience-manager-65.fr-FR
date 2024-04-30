@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de con
 
 Un système de gestion de contenu (CMS) découplé est :
 
-* &quot;*Un système de gestion de contenu sans interface, ou CMS sans interface, est un système de gestion de contenu (CMS) en arrière-plan uniquement, conçu de toutes pièces comme un référentiel de contenu qui rend le contenu accessible par le biais d’une API pour affichage sur n’importe quel appareil.*
+* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
 
   Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system?lang=fr).
 

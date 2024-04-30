@@ -13,7 +13,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ La création dans Content &amp; Commerce AEM fournit un ensemble d’outils de c
 
 ## Sélecteur de produits {#product-picker}
 
-Pour utiliser le sélecteur de produits dans un composant de projet, un développeur ou une développeuse doit ajouter `commerce/gui/components/common/cifproductfield` à une boîte de dialogue de composant. Par exemple, utilisez le code suivant pour la variable `cq:dialog`:
+Pour utiliser le sélecteur de produits dans un composant de projet, un développeur ou une développeuse doit ajouter `commerce/gui/components/common/cifproductfield` à une boîte de dialogue de composant. Par exemple, utilisez ce qui suit pour `cq:dialog` :
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -53,7 +53,7 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `sku` ou `slug` comme identifiant de produit. Adobe continue à prendre en charge `id` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
 
-Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consultez également la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) dans la documentation sur les composants principaux AEM.
+Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consultez également la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
 
 ## Sélecteur de catégories {#category-picker}
 
@@ -78,7 +78,7 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 
 >[!CAUTION]
 >
->Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) dans la documentation sur les composants principaux AEM.
+>Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez la section [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
 >[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Adobe recommande d’utiliser `uid` ou `urlPath` comme identifiant de catégorie. Adobe continue à prendre en charge `id` et `idAndUrlPath` uniquement pour les projets utilisant les composants principaux CIF version 1.x.

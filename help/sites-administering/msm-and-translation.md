@@ -1,6 +1,6 @@
 ---
 title: Multi Site Manager et traduction
-description: Découvrez comment réutiliser votre contenu dans votre projet et gérer des sites web multilingues dans Adobe Experience Manager.
+description: Découvrez comment réutiliser votre contenu dans tout votre projet et comment gérer des sites web multilingues dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

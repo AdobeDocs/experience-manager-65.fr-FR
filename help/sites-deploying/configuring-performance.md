@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '6470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -494,7 +494,7 @@ Le Dispatcher propose un certain nombre de mécanismes intégrés que vous pouve
 >
 >En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces données supplémentaires.
 >
->Avec la version 4.1.11 du Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse, consultez [Mise en cache des en-têtes de réponse HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Avec la version 4.1.11 du Dispatcher, vous pouvez également mettre en cache les en-têtes de réponse, consultez [Mise en cache des en-têtes de réponse HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache).
 >
 
 ### Calcul du ratio de cache du Dispatcher {#calculating-the-dispatcher-cache-ratio}
@@ -511,7 +511,7 @@ Formule de calcul du ratio :
 
 Par exemple, si le nombre total de requêtes est de 129 491 et que le nombre de requêtes servies par l’instance de publication est de 58 959, le ratio de cache est : **(129 491 - 58 959)/129 491= 54,5 %**.
 
-Si vous ne disposez pas d’une association d’éditeur/dispatcher un à un, ajoutez les requêtes de tous les dispatchers et éditeurs ensemble pour obtenir une mesure précise. Voir aussi [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
+Si vous ne disposez pas d’une association un-à-un éditeur/dispatcher, ajoutez les requêtes de tous les dispatchers et éditeurs ensemble pour obtenir une mesure précise. Voir aussi [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -530,7 +530,7 @@ Avec le Dispatcher version 4.1.11, vous pouvez mettre en cache les en-têtes de
 
 #### Contournement des paramètres d’URL {#avoid-url-parameters}
 
-Si possible, évitez les paramètres d’URL des pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le Dispatcher est [configuré en conséquence](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)) :
+Si possible, évitez les paramètres d’URL des pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le Dispatcher est [configuré en conséquence](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache)) :
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -595,7 +595,7 @@ Il est important que vous créiez ces images avec le même nom d’utilisateur q
 
 Pour les pages qui ne sont pas modifiées, les images restent dans le cache, bien que les pages elles-mêmes soient automatiquement invalidées.
 
-#### Personnalisation  {#personalization}
+#### Personnalisation {#personalization}
 
 Il est recommandé de limiter la personnalisation à l’endroit nécessaire. En voici la raison :
 
@@ -618,7 +618,7 @@ En ce qui concerne le mélange de contenu public et restreint sur une page, envi
 
 #### Connexions persistantes {#sticky-connections}
 
-Les [connexions persistantes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantissent que les documents d’un utilisateur ou d’une utilisatrice sont tous composés sur le même serveur. Si un utilisateur ou une utilisatrice quitte ce dossier et y revient ultérieurement, la connexion reste établie. Pour contenir tous les documents qui nécessitent des connexions persistantes sur le site web, définissez un dossier. Essayez de ne pas y avoir d’autres documents. Ce scénario a un impact sur l’équilibrage de la charge si vous utilisez des pages personnalisées et des données de session.
+Les [connexions persistantes](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#the-benefits-of-load-balancing) garantissent que les documents d’un utilisateur ou d’une utilisatrice sont tous composés sur le même serveur. Si un utilisateur ou une utilisatrice quitte ce dossier et y revient ultérieurement, la connexion reste établie. Pour contenir tous les documents qui nécessitent des connexions persistantes sur le site web, définissez un dossier. Essayez de ne pas y avoir d’autres documents. Ce scénario a un impact sur l’équilibrage de la charge si vous utilisez des pages personnalisées et des données de session.
 
 #### Types MIME {#mime-types}
 

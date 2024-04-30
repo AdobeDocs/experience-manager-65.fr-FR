@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux 
 
 ## Création de candidats de magasin personnalisés {#creating-custom-store-candidates}
 
-Les magasins ContextHub sont créés à partir de magasins candidats enregistrés. Pour créer un magasin personnalisé, créez et enregistrez un candidat de magasin.
+Les magasins ContextHub sont créés à partir de candidats de magasins enregistrés. Pour créer un magasin personnalisé, créez et enregistrez un candidat de magasin.
 
 Le fichier JavaScript contenant le code qui crée et enregistre le candidat de magasin doit être inclus dans un [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La catégorie du dossier doit correspondre au schéma suivant :
 
@@ -41,7 +41,7 @@ Pour créer un candidat de magasin, vous utilisez la fonction [`ContextHub.Utils
 * [`ContextHub.Store.JSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
 * [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Chaque magasin de base étend la variable [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) magasin.
+Chaque magasin de base étend le magasin [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core).
 
 L’exemple suivant crée l’extension la plus simple du candidat de magasin `ContextHub.Store.PersistedStore` :
 
@@ -50,7 +50,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-En réalité, vos candidats de magasin personnalisés définissent des fonctions supplémentaires ou remplacent la configuration initiale du magasin. Plusieurs [exemples de candidats de magasin](/help/sites-developing/ch-samplestores.md) sont installés dans le référentiel sous `/libs/granite/contexthub/components/stores`. Pour tirer les leçons de ces exemples, utilisez CRXDE Lite pour ouvrir les fichiers JavaScript.
+En réalité, vos candidats de magasin personnalisé définissent des fonctions supplémentaires ou remplacent la configuration initiale du magasin. Plusieurs [exemples de candidats de magasin](/help/sites-developing/ch-samplestores.md) sont installés dans le référentiel sous `/libs/granite/contexthub/components/stores`. Pour tirer les leçons de ces exemples, utilisez CRXDE Lite pour ouvrir les fichiers JavaScript.
 
 ### Enregistrement d’un candidat de magasin ContextHub {#registering-a-contexthub-store-candidate}
 
@@ -65,11 +65,11 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-En règle générale, un seul candidat est nécessaire et la priorité peut être définie sur `0`. Mais si vous êtes intéressé, vous pouvez en apprendre davantage sur [des inscriptions plus avancées,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) qui permet de choisir l’une des implémentations de magasin en fonction de la condition JavaScript (`applies`) et la priorité du candidat.
+En règle générale, un seul candidat est nécessaire et la priorité peut être définie sur `0`. Mais si cela vous intéresse, vous pouvez en apprendre davantage sur [des enregistrements plus avancés,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) qui permettent de choisir l’une des implémentations de magasin en fonction de la condition JavaScript (`applies`) et de la priorité du candidat.
 
 ## Création de types de modules d’interface utilisateur ContextHub {#creating-contexthub-ui-module-types}
 
-Vous pouvez créer des types de modules d’interface utilisateur personnalisés lorsque ceux qui sont [installés avec ContextHub](/help/sites-developing/ch-samplemodules.md) ne répondent pas à vos attentes. Pour créer un type de module d’IU, créez un moteur de rendu de module en étendant la variable `ContextHub.UI.BaseModuleRenderer` puis l’enregistrer auprès de `ContextHub.UI`.
+Vous pouvez créer des types de modules d’interface utilisateur personnalisés lorsque ceux qui sont [installés avec ContextHub](/help/sites-developing/ch-samplemodules.md) ne répondent pas à vos attentes. Pour créer un type de module d’interface utilisateur, créez un moteur de rendu de module d’interface utilisateur en étendant la classe `ContextHub.UI.BaseModuleRenderer`, puis en l’enregistrant auprès de `ContextHub.UI`.
 
 Pour créer un moteur de rendu de module d’interface utilisateur, créez un objet `Class` contenant le logiciel qui effectue le rendu de ce module. Votre classe doit, au minimum, effectuer les actions suivantes :
 
@@ -77,9 +77,9 @@ Pour créer un moteur de rendu de module d’interface utilisateur, créez un ob
 
 * Indiquez une configuration par défaut. Créez une propriété `defaultConfig`. Cette propriété est un objet qui contient les propriétés définies pour le module d’IU [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type), ainsi que toute autre propriété dont vous avez besoin.
 
-La source pour `ContextHub.UI.BaseModuleRenderer` se trouve à l’adresse /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Pour enregistrer le moteur de rendu, utilisez la méthode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) de la classe `ContextHub.UI`. Attribuez un nom au type de module. Lorsque les administrateurs créent un module d’IU basé sur ce moteur de rendu, ils spécifient ce nom.
+La source de `ContextHub.UI.BaseModuleRenderer` est située sous at /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Pour enregistrer le moteur de rendu, utilisez la méthode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) de la classe `ContextHub.UI`. Donnez un nom au type de module. Lorsque les administrateurs et administratrices créent un module d’interface utilisateur basé sur ce moteur de rendu, ils spécifient ce nom.
 
-Créez et enregistrez la classe du moteur de rendu dans une fonction anonyme auto-exécutée. L’exemple suivant est basé sur le code source du module d’IU contexthub.browserinfo . Ce module est une extension simple de la classe `ContextHub.UI.BaseModuleRenderer`.
+Créez et enregistrez la classe du moteur de rendu dans une fonction anonyme auto-exécutée. L’exemple suivant repose sur le code source du module d’interface utilisateur contexthub.browserinfo. Ce module d’interface utilisateur est une extension simple de la classe `ContextHub.UI.BaseModuleRenderer`.
 
 ```xml
 ;(function() {
@@ -106,7 +106,7 @@ Créez et enregistrez la classe du moteur de rendu dans une fonction anonyme aut
 }());
 ```
 
-Le fichier JavaScript contenant le code qui crée et enregistre le moteur de rendu doit être inclus dans une [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La catégorie du dossier doit correspondre au schéma suivant :
+Le fichier JavaScript contenant le code qui crée et enregistre le module de rendu doit être inclus dans un [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md#creating-client-library-folders). La catégorie du dossier doit correspondre au schéma suivant :
 
 ```xml
 contexthub.module.[moduleType]

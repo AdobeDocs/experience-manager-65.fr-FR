@@ -14,7 +14,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '3246'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Pour consulter des exemples, voir :
 >
 >Voir :
 >
->* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
 >* l’exemple de code correspondant traité dans [Exemple de code - Comment personnaliser les champs de boîte de dialogue](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -463,9 +463,9 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
    * Créez une boîte de dialogue à utiliser dans l’interface utilisateur tactile. Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
    * Les [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
    * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
-   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
    * Migration des types vers la [Validation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
 
 ### Migration du code cq:listener {#migrating-cq-listener-code}
 

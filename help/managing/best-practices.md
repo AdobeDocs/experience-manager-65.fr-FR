@@ -1,5 +1,5 @@
 ---
-title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
+title: 'Gestion des projets : liste de contrôle des bonnes pratiques'
 description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de bonnes pratiques pour la diffusion du projet. Elles vous guident tout au long du cycle de vie du projet et vous offrent une surveillance détaillée de votre statut.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -632,4 +632,4 @@ Les sections suivantes de la documentation AEM présentent un intérêt particul
 
 * Documentation connexe
 
-   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/core-services/interface/services/core-services)

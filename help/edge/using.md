@@ -8,7 +8,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Avec Edge Delivery, la création est facile, rapide et flexible. Vous pouvez ch
 * Création basée sur des documents (tels que Microsoft Word ou Google Docs) : [consultez ce lien pour plus de détails](https://www.hlx.live/docs/authoring).
 * Éditeur de page/Éditeur universel : contactez la personne chargée du service commercial Adobe.
 
-S’il existe une création basée sur des documents, vous pouvez utiliser diverses sources telles que Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
+En cas de création basée sur des documents, vous pouvez utiliser diverses sources telles que Microsoft Word et Google Docs. Les documents provenant de ces sources deviennent des pages de votre site web. Les en-têtes, listes, images, éléments de police et vidéos peuvent tous être transférés de la source initiale vers votre site web. Vous pouvez ajouter des métadonnées à des fins d’optimisation pour les moteurs de recherche ou utiliser des blocs pour travailler avec du contenu structuré et ajouter des fonctionnalités.
 
 ## Publication {#publishing-edge}
 
@@ -31,7 +31,7 @@ Avec Edge Delivery, la publication de contenu est transparente, quelle que soit
 
 ## Edge Delivery Services et GitHub {#github-edge}
 
-Edge Delivery utilise GitHub afin que les clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire du contenu dans Google Docs ou Microsoft Word et développer les fonctionnalités de votre site à l’aide de CSS et de JavaScript dans GitHub. Les sites web sont automatiquement créés pour chacune de vos branches, de l’aperçu du contenu à la production. Chaque ressource que vous placez dans votre référentiel GitHub est disponible sur votre site web sans processus de création.
+Edge Delivery Services utilise GitHub afin que les clientes et clients puissent gérer et déployer du code directement à partir de leur référentiel GitHub. Par exemple, vous pouvez écrire du contenu dans Google Docs ou Microsoft Word et développer les fonctionnalités de votre site à l’aide de CSS et de JavaScript dans GitHub. Les sites web sont automatiquement créés pour chacune de vos branches, de l’aperçu du contenu à la production. Chaque ressource que vous placez dans votre référentiel GitHub est disponible sur votre site web sans processus de création.
 
 ## Utiliser Sidekick {#using-sidekick}
 
@@ -60,4 +60,4 @@ Pour plus d’informations, voir les pages suivantes :
 * Pour plus d’informations sur la prise en main d’Edge Delivery, reportez-vous à la section [Créer](https://www.hlx.live/docs/#build) de la documentation Edge Delivery.
 * Pour comprendre comment créer et publier du contenu à l’aide d’Edge Delivery, reportez-vous à la section [Publier](https://www.hlx.live/docs/authoring).
 * Pour savoir comment utiliser l’extension Sidekick, consultez la page [Utiliser Sidekick](https://www.hlx.live/docs/sidekick).
-* Pour AEM la création, reportez-vous à la section [Page Concepts de création](/help/sites-authoring/author.md))
+* Pour les instances de création AEM, reportez-vous à la page [Concepts de création](/help/sites-authoring/author.md).

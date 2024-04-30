@@ -1,5 +1,5 @@
 ---
-title: Authentification pour les requêtes GraphQL Adobe Experience Manager distantes sur les fragments de contenu
+title: Authentification pour les requêtes Adobe Experience Manager GraphQL distantes sur les fragments de contenu
 description: Comprenez l’authentification requise pour les requêtes GraphQL d’Adobe Experience Manager à distance afin de sécuriser votre diffusion de contenu sans interface utilisateur.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
@@ -8,19 +8,19 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
-# Authentification pour les requêtes GraphQL Adobe Experience Manager distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Authentification pour les requêtes Adobe Experience Manager GraphQL distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un cas d’utilisation principal pour la variable [API GraphQL Adobe Experience Manager (AEM) pour la diffusion de fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) est d’accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
+Un des principaux cas d’utilisation de l’[API Adobe Experience Manager (AEM) GraphQL pour la diffusion de fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
 
 >[!NOTE]
 >
 >Pour les tests et le développement, vous pouvez également directement accéder à l’API GraphQL d’AEM avec l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-Pour l’authentification, le service tiers doit s’authentifier à l’aide du nom d’utilisateur et du mot de passe du compte AEM.
+Pour l’authentification, le service tiers doit s’authentifier à l’aide du nom d’utilisateur ou d’utilisatrice et du mot de passe du compte AEM.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

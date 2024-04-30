@@ -9,7 +9,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -474,7 +474,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
    * Le ClientContext `SegmentMgr` résout les segments. Le ClientContext `CartMgr` résout les promotions. Chaque promotion qui est soumise à au moins un segment résolu est déclenchée.
 
-      * Les promotions déclenchées sont renvoyées au serveur au moyen d’un appel AJAX pour recalculer le panier.
+      * Les promotions déclenchées sont renvoyées au serveur par le biais d’un appel AJAX pour recalculer le panier.
       * Les promotions déclenchées (et les bons ajoutés) s’affichent également dans le panneau ClientContext.
 
 L’ajout ou la suppression d’un bon d’un panier est réalisé via l’API `CommerceSession` :

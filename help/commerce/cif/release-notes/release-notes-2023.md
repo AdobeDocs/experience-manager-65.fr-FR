@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Date de publication : décembre 2023
+## Date de publication : décembre 2023
 
 | Composant | Version | Détails |
 |:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
@@ -32,8 +32,8 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Correctifs {#bug-fixes-december}
 
-* Servlets de redirection de produit et de catégorie enregistrés pour le type de ressource Page v3
-* Correction CIF événements de recherche en direct de l’extension AEP
+* Servlets de redirection de produit et de catégorie enregistrés pour le type de ressource Page v3
+* Correction des événements de recherche en direct de l’extension AEP CIF
 
 ## Date de publication : novembre 2023
 
@@ -44,7 +44,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Correctifs {#bug-fixes-november}
 
-* Affichage de plus de 40 configurations dans CIF console Configurations
+* Affichage de plus de 40 configurations dans la console de configurations CIF
 
 ## Date de publication : juillet 2023
 
@@ -54,4 +54,4 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-july}
 
-* Hooks de filtre de produit dans `ProductList` component
+* Hooks de filtre de produit dans le composant `ProductList`

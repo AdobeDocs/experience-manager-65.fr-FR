@@ -13,88 +13,89 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Définir vos cas de test{#defining-your-test-cases}
 
-Vos cas de test doivent être basés sur les éléments suivants :
+Vos cas de test doivent être basés sur les éléments suivants :
 
 **Cas d’utilisation**
 
 * Ces fonctions définissent les fonctionnalités requises en termes d’interaction entre les acteurs (rôles qui déclenchent certaines actions) et le système.
-* Les cas d’utilisation doivent être définis par le client.
+* Les cas d’utilisation doivent être définis par le client ou la cliente.
 
 **Spécification détaillée des exigences**
 
-* Toutes les exigences fonctionnelles et de performance doivent être testées.
+* Toutes les exigences fonctionnelles et de performances doivent être testées.
 
-Les tests doivent définir clairement :
+Les tests doivent définir clairement les éléments suivants :
 
-* Conditions préalables ; elles peuvent couvrir des systèmes, configurations ou expériences de test spécifiques.
-* Étapes à suivre, à un niveau de détail approprié.
+* Conditions préalables ; elles peuvent couvrir des systèmes, configurations ou expériences de test spécifiques.
+* Étapes à suivre ; à un niveau de détail approprié.
 * Résultats attendus.
-* Des critères clairs pour réussir ou échouer.
+* Critères clairs de réussite et d’échec.
 
-La perspective d’automatiser les cas de test est attrayante car elle élimine les tâches répétitives.
+La perspective d’automatiser les cas de test est attrayante, car elle élimine les tâches répétitives.
 
 ## Tests manuels ou automatisés {#manual-versus-automated-tests}
 
-L’automatisation des cas de test constitue toutefois un investissement important. Il convient donc de prendre en compte certains aspects :
+L’automatisation des cas de test constitue toutefois un investissement important. Il convient donc de prendre en compte certains aspects :
 
 * La configuration et l’installation nécessitent du temps, des efforts et de l’expérience.
-* Si le navigateur est basé sur , il existe un risque accru de problèmes lorsque les mises à jour du navigateur sont installées ; ce qui nécessite davantage de temps pour être corrigé.
+* Si l’automatisation est basée sur le navigateur, il existe un risque accru de problèmes lorsque les mises à jour du navigateur sont installées, ce qui nécessite davantage de temps pour être corrigé.
 * Seulement pour les projets de grande envergure.
-* Ceci est utile lorsque plusieurs versions sont générées à des fins de test ou dans le plan de mise à jour à long terme.
+* Cela est utile lorsque plusieurs versions sont générées à des fins de test ou dans le plan de mise à jour à long terme.
 
 ## Test d’aspects spécifiques {#testing-specific-aspects}
 
-Lors du test d’AEM, certains détails spécifiques présentent un intérêt particulier :
+Lors du test d’AEM, certains détails sont particulièrement intéressants :
 
 **Environnements de création et de publication**
 
-Bien que couvert par [Environnements](/help/sites-developing/the-basics.md#environments), il est intéressant de souligner un facteur décisif d’AEM concernant les tests.
+Bien que le sujet soit traité dans [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur déterminant dans AEM pour ce qui concerne les choix en matière de tests.
 
-Considérez AEM comme deux applications :
+Vous devez traiter AEM comme s’il s’agissait de deux applications séparées :
 
 * L’environnement *Auteur*
 Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs et d’utilisatrices, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
-* la valeur *Publier* environnement Cette instance présente le site web sous sa forme publiée pour l’accès des visiteurs.
-Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. Tenez également compte de la mise en cache et de l’équilibrage de charge.
+* L’environnement de *Publication*
+Cette instance affiche le site web sous sa forme publiée pour que les visiteurs et visiteuses puissent y accéder.
+Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. Tenez également compte de la mise en cache et de la répartition de charge.
 
-Bien que le même logiciel soit utilisé, ils :
+Bien que le même logiciel soit utilisé, ces éléments :
 
-* servir différents objectifs ;
-* ont des exigences différentes en ce qui concerne les fonctionnalités et les performances ;
-* sont configurés différemment ;
-* sont affinées séparément ;
-* chacun possède son propre ensemble de tests d’acceptation
+* servent à différents objectifs ;
+* ont des exigences différentes en ce qui concerne les fonctionnalités et les performances ;
+* sont configurés différemment ;
+* sont affinés séparément ;
+* possèdent chacun leur propre ensemble de tests d’acceptation.
 
 En d’autres termes, ils doivent être testés séparément et avec des cas de test différents.
 
 **Personnalisation**
 
-Lors du test de la personnalisation, chaque cas d’utilisation doit être répété à l’aide de plusieurs comptes d’utilisateurs afin de prouver son comportement.
+Lors du test de la personnalisation, chaque cas d’utilisation doit être répété à l’aide de plusieurs comptes d’utilisateur et d’utilisatrice afin de prouver son comportement.
 
 Vérifiez également que la mise en cache présente un comportement correct.
 
-**Le Dispatcher**
+**Dispatcher**
 
-La plupart des projets installent Dispatcher pour la mise en cache et l’équilibrage de charge.
+La plupart des projets installent Dispatcher pour la mise en cache et la répartition de charge.
 
-Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
+Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
 * **Précision**
-Vérifie que les mises à jour du contenu sont visibles par le visiteur du site web.
+Assurez-vous que les mises à jour du contenu sont visibles pour les visiteurs et visiteuses sur le site.
 
 * **Continuité**
 Assurez-vous que le site web est toujours disponible lorsqu’un serveur est arrêté.
 
 * **Clusters**
-Utilisé pour fournir les éléments suivants :
+Utilisés pour fournir les éléments suivants :
 
    * **Basculement**
 Si un serveur tombe en panne, les autres serveurs du cluster prennent le relais.

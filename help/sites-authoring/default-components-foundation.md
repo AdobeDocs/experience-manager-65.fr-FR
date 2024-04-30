@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6873'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Diverses options sont disponibles dans un menu déroulant ; par exemple, les bo
   Vous spécifiez ici la manière dont les pages sont incluses dans votre carrousel :
 
    * **Créer la liste à l’aide de**
-Il existe plusieurs façons de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous). Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Si ce n’est pas le cas, le carrousel affiche une page principalement vierge. Voir [Modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md).
+Il existe plusieurs façons de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous). Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Dans le cas contraire, le carrousel affiche une page principalement vierge. Voir [Modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md).
 Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
       * **Options des pages enfants**

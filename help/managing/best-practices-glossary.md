@@ -13,7 +13,7 @@ role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '6926'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1132,11 +1132,11 @@ Un processus clair doit être mis en place pour l’approbation des spécificati
 
 ### Personnel sélectionné pour la formation des administrateurs et administratrices AEM {#staff-selected-for-aem-administrator-training}
 
-Personnel interne qui a besoin d’être formé pour pouvoir administrer la solution.
+Personnel interne qui a besoin d’une formation pour administrer la solution.
 
 ### Personnel sélectionné pour la formation de création et des utilisateurs et utilisatrices finaux {#staff-selected-for-author-and-end-user-training}
 
-Personnel interne qui a besoin d’une formation pour pouvoir créer sur la solution.
+Personnel interne qui a besoin d’une formation pour créer sur la solution.
 
 ### Parties prenantes {#stakeholders}
 

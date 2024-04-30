@@ -1,6 +1,6 @@
 ---
 title: Intégrer à ExactTarget
-description: Découvrez comment intégrer Adobe Experience Manager à ExactTarget.
+description: Découvrez comment intégrer Adobe Experience Manager à ExactTarget.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -13,13 +13,13 @@ role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Intégrer à ExactTarget{#integrating-with-exacttarget}
 
-L’intégration de Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer des emails créés dans AEM par le biais d’ExactTarget. Il vous permet également d’utiliser les fonctionnalités de gestion des pistes d’ExactTarget au moyen d’AEM de formulaires sur les pages AEM.
+L’intégration d’Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer un e-mail créé dans AEM par le biais d’ExactTarget. Elle vous permet également d’utiliser les fonctionnalités de gestion des prospects d’ExactTarget par le biais de formulaires AEM dans des pages AEM.
 
 L’intégration offre les fonctionnalités suivantes :
 
@@ -30,9 +30,9 @@ Une fois ExactTarget configuré, vous pouvez publier des newsletters ou des cour
 
 ## Création d’une configuration ExactTarget {#creating-an-exacttarget-configuration}
 
-Les configurations ExactTarget peuvent être ajoutées au moyen des services cloud ou des outils. Cette section aborde ces deux méthodes.
+Il est possible d’ajouter des configurations ExactTarget par le biais d’outils ou de services cloud. Cette section aborde ces deux méthodes.
 
-### Configuration d’ExactTarget au moyen des services cloud {#configuring-exacttarget-via-cloudservices}
+### Configurer ExactTarget au moyen des services cloud {#configuring-exacttarget-via-cloudservices}
 
 Pour créer une configuration Exact Target dans les services cloud :
 
@@ -45,8 +45,8 @@ Pour créer une configuration Exact Target dans les services cloud :
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Saisissez le nom d’utilisateur et le mot de passe, puis sélectionnez un point de fin API (par exemple, **https://webservice.exacttarget.com/Service.asmx**).
-1. Cliquez sur **Se connecter à Exact Target.** Une fois que vous êtes connecté, une boîte de dialogue de réussite s’affiche. box Click **OK** pour quitter la fenêtre.
+1. Saisissez le nom d’utilisateur ou d’utilisatrice et le mot de passe, puis sélectionnez un point d’entrée d’API (par exemple, **https://webservice.exacttarget.com/Service.asmx**).
+1. Cliquez sur **Se connecter à Exact Target.** Une boîte de dialogue s’affiche pour confirmer l’établissement de la connexion. Cliquez sur **OK** pour fermer la fenêtre.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -60,7 +60,7 @@ Pour créer une configuration Exact Target dans les services cloud :
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### Configuration d’ExactTarget au moyen des outils {#configuring-exacttarget-via-tools}
+### Configurer ExactTarget au moyen des outils {#configuring-exacttarget-via-tools}
 
 Pour créer une configuration ExactTarget dans les Outils :
 
@@ -77,5 +77,5 @@ Pour créer une configuration ExactTarget dans les Outils :
 
 Pour ajouter plusieurs configurations :
 
-1. Sur la page d’accueil, cliquez sur **Services cloud** puis sur **ExactTarget**. Cliquez sur **Afficher les configurations** qui apparaît si une ou plusieurs configurations ExactTarget sont disponibles. Toutes les configurations disponibles sont répertoriées.
-1. Cliquez sur le lien **+** en regard de Configurations disponibles. Cette action ouvre la fenêtre **Créer une configuration**. Suivez la procédure de configuration précédente pour créer une configuration.
+1. Sur la page d’accueil, cliquez sur **Services cloud** puis sur **ExactTarget**. Cliquez sur l’option **Afficher les configurations** qui s’affiche si une ou plusieurs configurations d’ExactTarget sont disponibles. Toutes les configurations disponibles sont répertoriées.
+1. Cliquez sur le lien **+** en regard de Configurations disponibles. Cette action ouvre la fenêtre **Créer une configuration**. Suivez la procédure de configuration précédente pour créer une nouvelle configuration.

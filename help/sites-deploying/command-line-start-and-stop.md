@@ -1,6 +1,6 @@
 ---
-title: Démarrer et arrêter AEM à partir de la ligne de commande
-description: Découvrez comment démarrer et arrêter Adobe Experience Manager à partir de la ligne de commande.
+title: Démarrer et arrêter à partir de la ligne de commande
+description: Découvrez comment démarrer et arrêter Adobe Experience Manager à partir de la ligne de commande.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,17 +12,17 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
-# Démarrer et arrêter AEM à partir de la ligne de commande{#command-line-start-and-stop}
+# Démarrer et arrêter à partir de la ligne de commande{#command-line-start-and-stop}
 
-## Démarrage de Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
+## Démarrer Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
 
-Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script démarre l’instance installée dans *&lt;cq-installation>* répertoire.
+Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour UNIX® et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et régler l’instance Adobe Experience Manager (AEM).
+Les deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et configurer l’instance Adobe Experience Manager (AEM).
 
 <table>
  <tbody>
@@ -67,15 +67,15 @@ Ces deux versions prennent en charge une liste de variables d’environnement qu
 
 >[!CAUTION]
 >
->Certains modes d’exécution, dont les modes de création et de publication, doivent être définis avant le premier démarrage d’AEM et ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM utilisée en production, voir [documentation modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus de détails.
+>Certains modes d’exécution, dont l’instance de création et celle de publication, doivent être définis avant le premier démarrage d’AEM et ne peuvent pas être modifiés par la suite. Avant de configurer une instance d’AEM utilisée en production, consultez la [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
 
-### Exemple de script start.bat de la plateforme Windows {#windows-platform-start-bat-script-example}
+### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Exemple de script de démarrage de la plateforme UNIX® {#unix-platform-start-script-example}
+### Exemple de script de démarrage de plateforme UNIX® {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -85,22 +85,22 @@ CQ_PORT=1234 ./start
 >
 >Le script start lance le déploiement Quickstart AEM installé dans le dossier *&lt;cq-installation>/app*.
 
-## Arrêt de Adobe Experience Manager {#stopping-adobe-experience-manager}
+## Arrêter Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-Pour arrêter AEM, effectuez l’une des opérations suivantes :
+Pour arrêter AEM, effectuez l’une des opérations suivantes :
 
-* Selon la plateforme que vous utilisez :
+* Selon la plateforme que vous utilisez :
 
    * Si vous avez démarré AEM à partir d’un script ou d’une ligne de commande, appuyez sur **Ctrl + C** pour arrêter le serveur.
-   * Si vous avez utilisé le script start sous UNIX®, vous devez utiliser le script stop pour arrêter AEM.
+   * Si vous avez utilisé le script de démarrage sous UNIX®, vous devez utiliser le script d’arrêt pour arrêter AEM.
 
-* Si vous avez démarré AEM en double-cliquant sur le fichier jar, cliquez sur **Le** sur la fenêtre de démarrage (le bouton devient alors **Désactivé**) pour arrêter le serveur.
+* Si vous avez démarré AEM en double-cliquant sur le fichier jar, cliquez sur le bouton **Activé** dans la fenêtre de démarrage (le bouton devient alors **Désactivé**) pour arrêter le serveur.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Arrêt d’Adobe Experience Manager à partir de la ligne de commande {#stopping-adobe-experience-manager-from-the-command-line}
 
-Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script arrête l’instance en cours d’exécution installée dans le répertoire *&lt;cq-installation>*.
+Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour UNIX® et Windows. Le script arrête l’instance en cours d’exécution installée dans le répertoire *&lt;cq-installation>*.
 
 ### Exemple de script d’arrêt de plateforme UNIX® {#unix-platform-stop-script-example}
 
@@ -108,15 +108,15 @@ Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. 
 ./stop
 ```
 
-### Exemple de script stop.bat de plateforme Windows {#windows-platform-stop-bat-script-example}
+### Exemple de script stop.bat pour la plateforme Windows {#windows-platform-stop-bat-script-example}
 
 ```shell
 ./stop.bat
 ```
 
-Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer), il vous suffit de :
+Si vous souhaitez uniquement préconfigurer le référentiel (sans le relocaliser), il vous suffit d’effectuer les opérations suivantes :
 
-* Extraire `repository.xml` à l’emplacement requis ;
+* extraire `repository.xml` à l’emplacement requis ;
 
 * mettre à jour `repository.xml` selon les besoins ;
 

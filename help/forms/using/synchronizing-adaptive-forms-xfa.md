@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -115,7 +115,7 @@ Il n’est pas nécessaire de cliquer sur le lien du message d’erreur pour met
 
 ### Champs supprimés du fichier XDP {#deleted-fields-in-xdp-file}
 
-Si un champ qui a été copié antérieurement dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création pour indiquer que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
+Si un champ qui a été copié dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création indiquant que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
 
 Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article :
 

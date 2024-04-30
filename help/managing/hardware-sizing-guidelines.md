@@ -13,7 +13,7 @@ role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2833'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ L’espace disque requis dépend largement du volume et du type de votre applica
 * le volume de rendus de ressources DAM qui seront générés ;
 * la croissance globale du contenu au fil du temps.
 
-L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible descend en dessous d’une valeur critique, le processus sera annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Adobe recommande de dimensionner le disque de sorte qu’il soit au moins deux ou trois fois plus large que la taille du référentiel, y compris sa croissance estimée.
+L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible descend en dessous d’une valeur critique, le processus est annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Adobe recommande de dimensionner le disque de sorte qu’il soit au moins deux ou trois fois plus large que la taille du référentiel, y compris sa croissance estimée.
 
 Envisagez une configuration de tableaux redondants de disques indépendants (RAID, par exemple, RAID10) pour la redondance des données.
 
@@ -128,7 +128,7 @@ L’estimation du nombre de nœuds de cluster nécessaires repose sur les exigen
 Calcule le débit d’un profil de charge lorsque les utilisateurs exécutent un simple exercice de création de pages sur une charge de base de 300 pages existantes, toutes de nature similaire. Les étapes impliquées étaient la connexion au site, la création d’une page contenant un SWF et une image ou du texte, l’ajout d’un nuage de balises, puis l’activation de la page.
 
    * **Résultat**
-Le débit maximal d’un simple exercice de création de page comme ci-dessus (considéré comme une transaction) est de 1 730 transactions par heure.
+Le débit maximal d’un simple exercice de création de page comme décrit plus haut (considéré comme une transaction) est de 1 730 transactions/heure.
 
 * **Test d’évaluation des performances 2**
 Calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification d’une page existante (80 %), ainsi que la création, puis la modification d’une page successivement (10 %). La complexité des pages reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de la même complexité que celle définie dans le test de référence 1.
@@ -150,13 +150,13 @@ Dans l’environnement de création, l’efficacité de la mise en cache est en 
 
 Dans l’environnement de création, le nombre d’auteurs qui travaillent en parallèle et la charge que leurs interactions ajoutent au système constituent les principaux facteurs de limitation. Par conséquent, Adobe vous recommande de mettre votre système à l’échelle en fonction du débit partagé des données.
 
-Pour de tels scénarios, Adobe a effectué des tests de référence sur un cluster à deux noeuds sans partage d’instances d’auteur.
+Pour de tels scénarios, Adobe exécute des tests de référence sur un cluster à deux nœuds sans partage d’instances de création.
 
 * **Test d’évaluation des performances 1a**
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal avec un profil de charge où les utilisateurs exécutent un exercice simple de création de page sur une charge de base de 300 pages existantes, toutes de nature similaire.
 
    * **Résultat**
-Le débit maximal d’un simple exercice de création de page, tel que ci-dessus (considéré comme une transaction), est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
+Le débit maximal d’un simple exercice de création de page comme décrit plus haut (considéré comme une transaction) est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
 * **Test d’évaluation des performances 2b**
 Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification de pages existantes (80 %), ainsi que la création et la modification d’une page successivement (10 %). La complexité de la page reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Encore une fois, l’exercice a été effectué sur une charge de base de 300 pages de complexité identique à celle définie dans le test de référence 1.
@@ -182,7 +182,7 @@ Voir aussi [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#par
 
 ### Recommandations matérielles {#hardware-recommendations}
 
-En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est plus faible sur les systèmes de création, mais l’efficacité du cache est également plus faible. Cependant, le facteur fondamental ici est le nombre d’auteurs et autrices travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En général, la mise en cluster d’AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, un cluster AEM se dimensionne correctement quand les auteurs et autrices effectuent des opérations de modification de base.
+En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est plus faible sur les systèmes de création, mais l’efficacité du cache l’est également. Cependant, le facteur fondamental ici est le nombre d’auteurs et autrices travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En général, la mise en cluster d’AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, un cluster AEM se dimensionne correctement quand les auteurs et autrices effectuent des opérations de modification de base.
 
 Adobe a effectué les tests de référence à l’aide du système d’exploitation Red Hat® 5.5, exécuté sur une plateforme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
 
@@ -218,7 +218,7 @@ Le ratio de cache est le pourcentage de pages que Dispatcher peut renvoyer sans 
 
 ### Complexité des modèles et des applications {#complexity-of-templates-and-applications}
 
-Si vous utilisez des modèles complexes, AEM a besoin de plus de temps pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
+Si vous utilisez des modèles complexes, plus de temps sera nécessaire à AEM pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
 
 ### Formule {#formula}
 
@@ -284,7 +284,7 @@ Si vous possédez un site web plus complexe, vous avez également besoin de serv
 
 ## Autres calculs spécifiques à un cas d’utilisation {#additional-use-case-specific-calculations}
 
-Outre le calcul d’une application web par défaut, tenez compte de facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
+Outre le calcul d’une application web par défaut, vous devrez peut-être prendre en compte des facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
 ### Considérations spécifiques aux ressources {#assets-specific-considerations}
 
@@ -294,7 +294,7 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 
 >[!NOTE]
 >
-Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S système et inversement. Par exemple, si les workflows sont lancés par l’import d’images, le chargement de nombreuses images via WebDAV pourrait entraîner un retard dans les workflows.
+Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S du système et inversement. Par exemple, si les workflows sont lancés par l’import d’images, le chargement de nombreuses images via WebDAV pourrait entraîner un retard dans les workflows.
 >
 L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (il est toutefois généralement préférable de conserver l’index de recherche localement).
 

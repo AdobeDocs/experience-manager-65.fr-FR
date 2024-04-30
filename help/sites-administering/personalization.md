@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ La personnalisation peut être soit :
 
 #### Explicite {#explicit}
 
-* Personnalisation : l’utilisateur effectue des sélections à partir de différentes sources de contenu.
+* Personnalisation : l’utilisateur ou l’utilisatrice effectue des sélections parmi différentes sources de contenu.
 
 #### Implicite {#implicit}
 

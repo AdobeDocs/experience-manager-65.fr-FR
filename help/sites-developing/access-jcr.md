@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez modifier par programme les nœuds et les propriétés situés dans l
 
 Cet article de développement fait appel à une méthode statique appartenant à la classe `org.apache.jackrabbit.commons.JcrUtils` pour se connecter à un référentiel et établir une connexion. Il existe cependant d’autres modus operandi. Cette méthode se nomme `getRepository`. Dans ce cas, un paramètre de chaîne est utilisé, qui représente l’URL du serveur Adobe CQ. Par exemple, `http://localhost:4503/crx/server`.
 
-La variable `getRepository` renvoie une `Repository` , comme illustré dans l’exemple de code suivant.
+La méthode `getRepository` renvoie une instance `Repository`, comme le montre l’exemple de code ci-dessous.
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -45,14 +45,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Création d’une instance de session {#create-a-session-instance}
 
-La variable `Repository` représente le référentiel CRX. Vous utilisez la variable `Repository` pour établir une session avec le référentiel. Pour créer une session, appelez le `Repository` instance `login` et transmettre une `javax.jcr.SimpleCredentials` . La variable `login` renvoie une `javax.jcr.Session` instance.
+L’instance `Repository` représente le référentiel CRX. Vous utilisez l’instance `Repository` pour établir une session avec le référentiel. Pour créer une session, appelez la méthode `login` de l’instance `Repository` et transmettez un objet `javax.jcr.SimpleCredentials`. La méthode `login` renvoie une instance `javax.jcr.Session`.
 
-Vous créez une `SimpleCredentials` en utilisant son constructeur et en transmettant les valeurs string suivantes :
+Pour créer un objet `SimpleCredentials`, vous allez utiliser son constructeur et transmettre les valeurs de chaîne suivantes :
 
 * le nom d’utilisateur ou d’utilisatrice ;
 * le mot de passe correspondant.
 
-Lors de la transmission du second paramètre, appelez le `toCharArray` . Le code suivant indique comment appeler la fonction `login` qui renvoie une `javax.jcr.Sessioninstance`.
+Lors de la transmission du deuxième paramètre, appelez la méthode `toCharArray` de l’objet String. Le code suivant montre comment appeler la méthode `login` qui renvoie une `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -61,14 +61,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Création d’une instance de nœud {#create-a-node-instance}
 
-Utilisez une `Session` pour créer une instance `javax.jcr.Node` instance. A `Node` vous permet d’effectuer des opérations sur les noeuds. Vous pouvez, par exemple, créer un nœud. Pour créer un noeud qui représente le noeud racine, appelez la méthode `Session` instance `getRootNode` , comme illustré dans la ligne de code suivante.
+Utilisez une instance `Session` pour créer une instance `javax.jcr.Node`. Une instance `Node` vous permet d’effectuer des opérations de nœud. Vous pouvez, par exemple, créer un nœud. Pour créer un nœud qui représente le nœud racine, appelez la méthode `getRootNode` de l’instance `Session`, comme illustré dans la ligne de code suivante.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Une fois que vous avez créé une `Node` vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Par exemple, le code suivant crée deux nœuds et ajoute une valeur au deuxième nœud.
+Une fois une instance `Node` créée, vous pouvez effectuer des tâches, comme créer un autre nœud et y ajouter une valeur. Par exemple, le code suivant crée deux nœuds et ajoute une valeur au deuxième nœud.
 
 ```java
 // Store content
@@ -78,7 +78,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Récupérer les valeurs des nœuds {#retrieve-node-values}
 
-Pour récupérer un noeud et sa valeur, appelez la méthode `Node` instance `getNode` et transmettez une valeur string qui représente le chemin d’accès complet au noeud. Considérez la structure de nœuds créée dans l’exemple de code précédent. Pour récupérer le nœud day, spécifiez adobe/day, comme indiqué dans le code suivant :
+Pour récupérer un nœud et sa valeur, appelez la méthode `getNode` de l’instance `Node` et transmettez une valeur de chaîne représentant le chemin d’accès complet au nœud. Considérez la structure de nœuds créée dans l’exemple de code précédent. Pour récupérer le nœud day, spécifiez adobe/day, comme indiqué dans le code suivant :
 
 ```java
 // Retrieve content
@@ -89,7 +89,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## Créer des nœuds dans le référentiel Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-L’exemple de code Java™ suivant représente une classe Java™ qui se connecte à Adobe CQ, crée une `Session` et ajoute de nouveaux noeuds. Une valeur de données est affectée au nœud, puis la valeur du nœud et son chemin d’accès sont écrits sur la console. Lorsque vous en avez terminé avec l’instance Session, veillez à vous déconnecter.
+L’exemple de code Java™ suivant représente une classe Java™ qui se connecte à Adobe CQ, crée une instance `Session` et ajoute de nouveaux nœuds. Une valeur de données est affectée au nœud, puis la valeur du nœud et son chemin d’accès sont écrits sur la console. Lorsque vous en avez terminé avec l’instance Session, veillez à vous déconnecter.
 
 ```java
 /*

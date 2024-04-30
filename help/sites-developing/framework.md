@@ -13,7 +13,7 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Pour baliser le contenu et utiliser l’infrastructure de balisage AEM, procéde
 
 La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag`.
 
-Une balise peut être un mot simple (par exemple, `sky`) ou représentent une taxonomie hiérarchique (par exemple, `fruit/apple`, c’est-à-dire que le `fruit` et plus spécifique `apple`).
+Une balise peut être constituée d’un simple mot (`sky`, par exemple) ou représenter une taxonomie hiérarchique (`fruit/apple`, par exemple, c’est-à-dire le `fruit` en tant que catégorie générique et la `apple` en étant plus spécifique).
 
 Les balises sont identifiées par un TagID unique.
 
@@ -78,7 +78,7 @@ Dans AEM, le chemin d’accès de base est `/content/cq:tags` et le nœud racine
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant est un espace de noms par site (par exemple, public, interne et portail) ou par application plus grande (par exemple, WCM, Assets, Communities). Mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour afficher uniquement le sous-ensemble de balises (c’est-à-dire les balises d’un certain espace de noms) applicable au contenu actuel.
+Les espaces de noms vous permettent de regrouper des éléments. Le cas d’utilisation le plus courant est un espace de noms par site (par exemple, public, interne et portail) ou par application plus grande (par exemple, WCM, Assets, Communities). Mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
 L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 

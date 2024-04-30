@@ -615,7 +615,7 @@ En mettant en œuvre ce service, veillez à définir la propriété **service.ra
 | **Nom** | **Description** | **Comportement par défaut** |
 |---|---|---|
 | Authenticator | Fournit les informations d’authentification à AEM | Utilise un utilisateur technique configurable pour la création et la publication. SSO peut également être utilisé. |
-| HTMLRewriter | Réécrit les liens et les images | Réécrit les liens AEM vers des liens de portail, peut être étendu par un UrlMapper et un TextMapper. |
+| HTMLRewriter | Réécrit les liens et les images. | Réécrit les liens AEM vers des liens de portail, peut être étendu par un UrlMapper et un TextMapper. |
 | HttpClientService | Gère toutes les connexions http | Mise en œuvre standard |
 | LocaleHandler | Gère les informations sur les paramètres régionaux | Réécrit un lien vers le contenu par rapport aux paramètres régionaux. |
 | LocaleDetector | Détecte les paramètres régionaux de l’utilisateur ou de l’utilisatrice. | Utilise les paramètres régionaux fournis par le portail. |

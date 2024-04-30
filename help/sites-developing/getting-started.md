@@ -1,5 +1,5 @@
 ---
-title: Prise en main du développement d’AEM Sites – Tutoriel WKND
+title: Prise en main du développement d’AEM Sites – Tutoriel WKND
 description: Découvrez comment créer l’instance AEM. Découvrez-en plus sur la plateforme et les composants et trouvez des informations sur les outils de développement et la personnalisation.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,9 +18,9 @@ ht-degree: 100%
 ---
 
 
-# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Vous découvrez le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer !
 

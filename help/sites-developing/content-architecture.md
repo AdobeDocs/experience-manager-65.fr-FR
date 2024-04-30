@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 Le modèle de David a été élaboré par David Nuescheler il y a quelques années. Cependant, ses principes sont toujours valables aujourd’hui. Voici les principes fondamentaux du modèle de David :
 
 * D’abord les données, ensuite la structure. OK.
-* Dirigez la hiérarchie du contenu, ne la laissez pas se produire.
+* Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
 * Les espaces de travail sont destinés à `clone()`, `merge()` et `update()`.
 * Attention aux parents portant le même nom.
 * Les références sont considérées comme dangereuses.

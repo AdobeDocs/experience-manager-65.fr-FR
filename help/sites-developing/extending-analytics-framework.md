@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Lorsque vous utilisez du code JavaScript personnalisé pour personnaliser le fra
 
 ## Configuration des propriétés Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Un certain nombre de variables prédéfinies dans Adobe Analytics sont configurables sur un framework. La variable **charset**, **cookieLifetime**, **currencyCode**, et **trackInlineStats** sont incluses dans la variable **Paramètres généraux d’Analytics** liste par défaut.
+Un certain nombre de variables prédéfinies dans Adobe Analytics sont configurables sur un framework. Les variables **charset**, **cookieLifetime**, **currencyCode** et **trackInlineStats** font, par défaut, partie de la liste des **Paramètres généraux d’Analytics**.
 
 ![aa-22](assets/aa-22.png)
 
@@ -108,7 +108,7 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 >[!CAUTION]
 >
->Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (par exemple, **currencyCode**, **charSet**).
+>Certaines des variables de cette liste sont **obligatoires** pour que les appels Adobe Analytics fonctionnent correctement (par exemple, **currencyCode** et **charSet**).
 >
 >Ainsi, même si elles sont supprimées du framework lui-même, elles restent associées à une valeur par défaut lors de l’appel Adobe Analytics.
 

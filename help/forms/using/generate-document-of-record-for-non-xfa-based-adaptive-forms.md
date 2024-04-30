@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '4256'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms) |
 | AEM 6.5 | Cet article |
 
 
@@ -33,7 +33,7 @@ Cet article explique comment générer un document d’enregistrement pour les f
 
 >[!NOTE]
 >
-> La prise en charge de la personnalisation de vos fragments de formulaire adaptatif et de ses champs dans l’éditeur de formulaire adaptatif a été introduite avec AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> La prise en charge de la personnalisation de vos fragments de formulaire adaptatif et de ses champs dans l’éditeur de formulaire adaptatif a été introduite avec AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -281,7 +281,7 @@ Vous pouvez également sélectionner un modèle de formulaire lorsque vous crée
 
 1. Dans la section Configuration du modèle de document d’enregistrement de l’onglet Modèle de formulaire, sélectionnez l’une des options suivantes :
 
-   **Aucun** Sélectionnez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
+   **Aucun** : utilisez cette option si vous ne souhaitez pas configurer de document d’enregistrement pour le formulaire.
 
    **Associer un modèle de formulaire comme modèle de document d’enregistrement** : sélectionnez cette option si vous disposez d’un fichier XDP que vous souhaitez utiliser comme modèle pour le document d’enregistrement. Lorsque vous sélectionnez cette option, tous les fichiers XDP disponibles dans le référentiel AEM Forms s’affichent. Sélectionnez le fichier approprié.
 
@@ -450,7 +450,7 @@ AEM Forms applique le troisième gabarit de page au panneau et à tous les panne
 
 >[!NOTE]
 >
-> Vous ne pouvez pas appliquer plusieurs gabarits à un document d’enregistrement pour un fragment de formulaire adaptatif.
+> Vous ne pouvez pas appliquer plusieurs gabarits de page à un document d’enregistrement pour un fragment de formulaire adaptatif.
 
 ## Considérations essentielles lors de l’utilisation de documents d’enregistrement {#key-considerations-when-working-with-document-of-record}
 
@@ -509,7 +509,7 @@ Un fichier XCI permet de définir différentes propriétés d’un document. <!-
 ### Utiliser un fichier XCI personnalisé dans votre environnement de développement Forms local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrir <!--Cloud Service SDK--> configuration manager. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Ouvrez Configuration Manager dans <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
 

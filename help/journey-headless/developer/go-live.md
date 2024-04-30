@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ L’environnement de développement local se compose de trois principaux éléme
 
 Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de nœuds statique.
 
-Pour plus d’informations sur la configuration d’un environnement de développement local et sur toutes les dépendances nécessaires à la prévisualisation du contenu, consultez la section [Documentation sur le déploiement en production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
+Pour plus d’informations sur la configuration d’un environnement de développement local et sur toutes les dépendances nécessaires à la prévisualisation du contenu, consultez la section [Documentation sur le déploiement en production](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=fr).
 
 ## Préparer votre application AEM Headless pour la mise en ligne {#prepare-your-aem-headless-application-for-golive}
 
@@ -144,7 +144,7 @@ Le déploiement en exploitation peut dépendre de l’existence ou non d’une i
 
 ## Déploiement en exploitation à l’aide de Maven {#deploy-to-production-maven}
 
-Concernant les déploiements *traditionnels* (non AMS) à l’aide de Maven, consultez le [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) pour obtenir une vue d’ensemble.
+Concernant les déploiements *traditionnels* (non AMS) à l’aide de Maven, consultez le [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr#build) pour obtenir une vue d’ensemble.
 
 ## Déployer en production à l’aide de Cloud Manager {#deploy-to-production-cloud-manager}
 

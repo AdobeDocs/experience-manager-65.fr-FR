@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Comment développer des projets AEM à l’aide d’IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Pour commencer un développement AEM sur IntelliJ, les étapes suivantes sont nécessaires.
 
@@ -109,7 +109,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour le débogage. Étant don
 1. Appuyez sur **+** et sélectionnez **JSR45 à distance**.
 1. Dans la boîte de configuration, sélectionnez **Configurer** en face de **Serveur d’applications** et configurez un serveur Générique.
 1. Définissez la page de démarrage sur une URL appropriée si vous souhaitez ouvrir un navigateur lorsque vous commencez le débogage.
-1. Tout supprimer **Avant le lancement** tâches si vous utilisez vlt autosync ou configurez les tâches Maven appropriées si vous ne le faites pas
+1. Supprimez toutes les tâches **Avant le lancement** si vous utilisez vlt autosync ou configurez les tâches Maven appropriées dans le cas contraire.
 1. Dans le volet **Démarrage/Connexion**, modifiez le port, le cas échéant.
 1. Copiez les arguments de ligne de commande proposés par IntelliJ IDEA.
 

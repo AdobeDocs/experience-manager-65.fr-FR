@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Voir [Comprendre les raisons de mettre AEM à niveau](https://helpx.adobe.com/ex
 
 Si l’utilisateur ou l’utilisatrice ne dispose pas lors du chargement des fichiers de film des autorisations de suppression sous le nœud de ressource, la suppression des nœuds de bloc échoue et le chargement redémarre.
 
-#### Quels sont les paramètres par défaut des configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### Quels sont les paramètres par défaut pour les configurations prêtes à l’emploi lors de la création d’une copie de langue ? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 Lorsque vous créez une copie de langue par le biais de l’interface utilisateur tactile (**Références** > **Mettre à jour la copie de langue**), un nouveau dossier de gestion des ressources numériques est créé sous la nouvelle langue et les ressources sont référencées à partir de cet emplacement.
 

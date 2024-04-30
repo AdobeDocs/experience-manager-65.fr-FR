@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -174,7 +174,7 @@ Comme le même paramètre de configuration peut être situé à plusieurs endroi
 
 >[!NOTE]
 >
->Lisez également [comment définir une configuration basée sur un référentiel pour une instance spécifique uniquement](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
+>Lisez également [comment définir une configuration basée sur un référentiel pour une instance spécifique uniquement](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=fr).
 
 ### Ajouter une nouvelle configuration au référentiel {#adding-a-new-configuration-to-the-repository}
 
@@ -249,7 +249,7 @@ Pour ajouter réellement la nouvelle configuration au référentiel :
    * Type : selon les cas.
    * Valeur : selon les besoins.
 
-   Vous ne devez créer des propriétés que pour les paramètres que vous souhaitez configurer, d’autres utilisent toujours les valeurs par défaut telles qu’elles sont définies par AEM.
+   Vous ne devez créer des propriétés que pour les paramètres que vous souhaitez configurer, les autres paramètres conservant les valeurs par défaut définies par AEM.
 
 1. Enregistrez toutes les modifications.
 
