@@ -303,17 +303,17 @@ Pour créer un modèle basé sur un modèle existant :
    >Les modifications apportées au nœud **/apps/&lt;website>/templates/&lt;template-name>** affectent l’instance de modèle (comme dans la liste de sélection).
    >
    >
-   Les modifications apportées au nœud **/apps/&lt;website>/components/&lt;component-name>** affectent la page de contenu créée lorsque le modèle est utilisé.
+   >Les modifications apportées au nœud **/apps/&lt;website>/components/&lt;component-name>** affectent la page de contenu créée lorsque le modèle est utilisé.
 
    Vous pouvez désormais créer une page sur votre site web à l’aide du nouveau modèle.
 
 >[!NOTE]
 >
-La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
+>La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
 >
-`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
+>`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
 >
-Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
+>Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
 ## Rendre un modèle existant disponible {#making-an-existing-template-available}
 
