@@ -7,8 +7,9 @@ discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms, Foundation Components
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
 
@@ -18,7 +19,7 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Dans AEM Forms, vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. La prévisualisation permet de savoir exactement à quoi ressemblent les formulaires lorsqu’ils sont publiés pour les utilisatrices et utilisateurs finaux.
 

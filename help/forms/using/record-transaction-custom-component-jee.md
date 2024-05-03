@@ -3,10 +3,11 @@ title: Enregistrez une transaction pour l’API de composant personnalisé pour 
 description: Découvrez comment utiliser l’API TransactionRecorder pour enregistrer les transactions pour le composant personnalisé.
 feature: Transaction Reports
 exl-id: 33e1868a-2a7f-4785-8571-95651e661e21
-source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -40,4 +41,4 @@ Si vous devez capturer plusieurs transactions pour une API, par exemple une API 
 ## Articles connexes
 
 * [Activation et affichage des rapports de transaction pour AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Liste des API facturables pour AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Liste des API facturables pour AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)

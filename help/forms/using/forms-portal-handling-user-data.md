@@ -4,11 +4,11 @@ description: Découvrez la gestion des données utilisateur telles que l’accè
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: Admin
+role: Admin,User
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
 

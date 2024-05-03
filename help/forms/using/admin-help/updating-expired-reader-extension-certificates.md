@@ -3,8 +3,9 @@ title: Expiration des certificats Reader Extensions et son impact
 description: Expiration des certificats Reader Extensions et son impact
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 100%
 

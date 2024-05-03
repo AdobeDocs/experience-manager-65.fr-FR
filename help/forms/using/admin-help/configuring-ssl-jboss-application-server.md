@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 100%
 
@@ -87,7 +88,7 @@ Dans cette procédure :
 
    * Cluster de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Pour un serveur unique,** ajoutez l’élément suivant dans le fichier lc_&lt;dbaname/tunkey>.xml après la section &lt;security-realms> :
 
    ```xml

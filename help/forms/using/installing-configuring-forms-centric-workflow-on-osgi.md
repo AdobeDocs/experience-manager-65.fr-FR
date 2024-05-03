@@ -3,11 +3,11 @@ title: Installation et configuration d’un workflow basé sur l’utilisation d
 description: Installez et configurez les communications interactives AEM Forms pour créer les correspondances commerciales, les documents, les déclarations, les avis, les courriers marketing, les factures et les kits de bienvenue.
 topic-tags: installing
 docset: aem65
-role: Admin
+role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 100%
 

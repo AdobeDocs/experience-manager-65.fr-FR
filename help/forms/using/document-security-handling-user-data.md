@@ -3,11 +3,11 @@ title: Document Security | Gestion des données utilisateur
 description: Découvrez comment AEM Forms Document Security vous permet de gérer les données utilisateur et les magasins de données, ainsi que d’accéder, de supprimer et d’exporter des données utilisateur.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-role: Admin
+role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 100%
 

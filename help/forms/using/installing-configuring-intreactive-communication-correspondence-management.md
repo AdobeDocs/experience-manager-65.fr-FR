@@ -3,11 +3,11 @@ title: Installation et configuration des communications interactives
 description: Installez et configurez les communications interactives AEM Forms pour créer des correspondances commerciales, des documents, des déclarations, des avis de prestations, des courriers marketing, des factures et des kits de bienvenue.
 topic-tags: installing
 docset: aem65
-role: Admin
+role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 100%
 

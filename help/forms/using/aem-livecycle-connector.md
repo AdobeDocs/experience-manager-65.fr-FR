@@ -4,11 +4,11 @@ description: Adobe Experience Manager (AEM) LiveCycle Connector vous permet de d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-role: Admin
+role: Admin,User
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 100%
 

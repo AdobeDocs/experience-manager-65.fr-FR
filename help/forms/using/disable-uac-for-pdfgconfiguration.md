@@ -3,8 +3,9 @@ title: Désactiver l’UAC pour la configuration PDFG applicable à la fois à J
 description: Découvrez les étapes à suivre pour désactiver la configuration UAC pour PDFG afin de corriger la conversion Word vers PDF.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 

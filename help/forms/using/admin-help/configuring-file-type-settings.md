@@ -7,8 +7,9 @@ content-type: reference
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '6188'
 ht-degree: 100%
 
@@ -250,7 +251,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Créer ou modi
 
    * Sélectionnez un autre répertoire de polices à partir du menu déroulant **Source des polices** si nécessaire. Ce menu déroulant présente la liste des répertoires de polices spécifiés dans **Accueil > Paramètres > Core System > Configurations de base**.
    * Sélectionnez une ou plusieurs polices dans la liste **Polices disponibles** et cliquez sur **Ajouter**. Les polices sont ajoutées à la liste **Polices à désincorporer**.
-   * Si vous voulez désincorporer des polices qui n’apparaissent pas sur le serveur Forms Server, saisissez les noms de ces polices dans la zone **Ajouter des polices à désincorporer**. Cliquez sur **Ajouter**.
+   * Si vous voulez désincorporer des polices qui n’apparaissent pas sur le serveur Forms Server, saisissez les noms de ces polices dans la zone **Ajouter des polices à désincorporer**. Cliquez sur **Ajouter**.
 
    >[!NOTE]
    >

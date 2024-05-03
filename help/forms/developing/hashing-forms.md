@@ -3,8 +3,9 @@ title: Comment générer et utiliser des hachages dans les PDF forms dynamiques�
 description: Génération et utilisation de hachages dans les PDF forms dynamiques
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 100%
 
