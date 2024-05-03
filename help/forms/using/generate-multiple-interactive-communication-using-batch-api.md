@@ -120,8 +120,8 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Sélectionnez l’icône en forme de crayon de l’argument de service de lecture pour lier l’argument à un attribut de requête et spécifier la valeur de liaison. Elle lie l’argument de service à la valeur d’attribut de liaison ou littérale spécifiée, qui est transmise au service en tant qu’argument pour extraire les détails associés à la valeur spécifiée de la source de données.
 
       <br>
-        Dans cet exemple, l’argument id prendra la valeur de l’attribut id du profil utilisateur et le transmettra en tant qu’argument au service de lecture. Il lira et renverra les valeurs des propriétés associées à partir de l’objet de modèle de données de la personne employée pour l’attribut id spécifié. Ainsi, si vous spécifiez 00250 dans le champ id du formulaire, le service de lecture lira les détails de la personne employée avec l’ID de personne employée 00250.
-<br>
+      Dans cet exemple, l’argument id prendra la valeur de l’attribut id du profil utilisateur et le transmettra en tant qu’argument au service de lecture. Il lira et renverra les valeurs des propriétés associées à partir de l’objet de modèle de données de la personne employée pour l’attribut id spécifié. Ainsi, si vous spécifiez 00250 dans le champ id du formulaire, le service de lecture lira les détails de la personne employée avec l’ID de personne employée 00250.
+      <br>
 
       ![Configurer l’attribut de requête](assets/request-attribute.png)
 
