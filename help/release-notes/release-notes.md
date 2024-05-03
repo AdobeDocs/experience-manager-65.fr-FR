@@ -6,10 +6,10 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
-workflow-type: ht
-source-wordcount: '3783'
-ht-degree: 100%
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
+workflow-type: tm+mt
+source-wordcount: '3828'
+ht-degree: 98%
 
 ---
 
@@ -244,6 +244,12 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 * Si vous créez un fichier XDP sur AEM Forms Designer, la balise Formulaire de bouton n’est pas imbriquée dans la balise de paragraphe parent (balise p) à la sortie du PDF. (LC-3921719)
 
 * Si vous créez un fichier XDP sur AEM Forms Designer, l’objet d’arrière-plan est également balisé lorsque vous naviguez dans les balises de formulaire à la sortie du PDF. (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (AEM Forms on JEE uniquement) Le service PDF Generator ne parvient pas à énumérer les polices disponibles sur le serveur. Par conséquent, le panneau de sélection des polices sur la page Paramètres Adobe PDF de l’interface utilisateur d’administration de PDFG reste vide, ce qui empêche effectivement l’incorporation (ou non) des polices sélectionnées. (FORMS-12095)
+
+
 
 ### Foundation {#foundation-6520}
 
