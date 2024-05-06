@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
-workflow-type: ht
-source-wordcount: '7406'
-ht-degree: 100%
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
+workflow-type: tm+mt
+source-wordcount: '7408'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour](/help/release-notes/release-notes.md)
    + Notes de mise à jour précédentes {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -473,7 +474,7 @@ ht-degree: 100%
       + [Contenu associé à un fragment de contenu](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments/content-fragments-delete.md)
-      + [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
+      + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Création de projets de traduction pour des fragments de contenu](/help/assets/creating-translation-projects-for-content-fragments.md)
@@ -1410,7 +1411,7 @@ ht-degree: 100%
             + [Gestion des points d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
             + [Utilisation de l’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html?lang=fr)
             + [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html?lang=fr)
-            + [Optimisation des requêtes GraphQL.](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+            + [Optimisation des requêtes GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [Authentification pour les requêtes GraphQL AEM distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html?lang=fr)
             + [API AEM GraphQL avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html?lang=fr)

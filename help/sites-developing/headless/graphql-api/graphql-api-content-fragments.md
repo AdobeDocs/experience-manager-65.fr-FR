@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '4796'
-ht-degree: 100%
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
+workflow-type: tm+mt
+source-wordcount: '4984'
+ht-degree: 96%
 
 ---
 
@@ -1048,6 +1048,39 @@ Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domai
 >Tous les [schémas](#schema-generation) GraphQL (dérivés de modèles de fragments de contenu qui ont été **activés**) sont lisibles par le point d’entrée GraphQL.
 >
 >Cette fonctionnalité signifie que vous devez vous assurer qu’aucune donnée sensible n’est disponible, car elle pourrait être divulguée de cette manière. Par exemple, elle inclut des informations qui peuvent être présentes en tant que noms de champ dans la définition de modèle.
+
+## Limites {#limitations}
+
+Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumises à des limitations par défaut :
+
+* La requête ne peut pas contenir plus de 1M (1 024 x 1 024) caractères
+* La requête ne peut pas contenir plus de 15 000 jetons
+* La requête ne peut pas contenir plus de 200000 jetons d’espace blanc
+
+Vous devez également savoir :
+
+* Une erreur de conflit de champ est renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) et que les conditions suivantes sont remplies :
+
+   * Où :
+
+      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme étant autorisés. **Type de modèle** dans la référence Fragment de contenu.
+
+     et :
+
+      * Ces deux modèles ont des champs ayant un nom commun ; cela signifie que le même nom apparaît dans les deux modèles.
+
+     et
+
+      * Ces champs sont de différents types de données.
+
+   * Par exemple :
+
+      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment ; par exemple, `Fragment1` `MultiField/List`
+      * Et ces deux fragments avec des modèles différents (`M1`, `M2`) comportent des champs portant le même nom, mais avec des types différents.
+Illustration :
+         * `M1.Title` as `Text`
+         * `M2.Title` as `Text/MultiField`
+      * Une erreur de conflit de champ se produira si la requête GraphQL contient le paramètre `Title` champ .
 
 ## Authentification {#authentication}
 
