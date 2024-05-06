@@ -5,10 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: d6435255835d91729519f7822b9677608b6b9f1e
+source-git-commit: 14b52e7763c4d83a4dcce593f155cb1bb8f56b97
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 66%
+source-wordcount: '2356'
+ht-degree: 54%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 66%
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.21.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clientes et les clients, des correctifs de bugs ainsi que des améliorations en termes de performances, de stabilité et de sécurité, publiés depuis la version initiale 6.5 en avril 2019. [Installez ce pack de services](#install) dans [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.21.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients, des correctifs de bogues, ainsi que des améliorations des performances, de la stabilité et de la sécurité, publiées depuis la version initiale de 6.5 en avril 2019. [Installer ce Service Pack](#install) on [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -42,7 +42,7 @@ ht-degree: 66%
 
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
-* Nouvelle méthode plus simple d’utilisation des informations d’identification pour l’authentification serveur à serveur, remplaçant les informations d’identification du compte de service (JWT) existantes. (NPR-41994) MAJOR
+* Nouvelle méthode plus simple d’utilisation des informations d’identification pour l’authentification serveur à serveur, remplaçant les informations d’identification du compte de service (JWT) existantes. (NPR-41994) MAJEUR
 
 ### [!DNL Forms]
 
@@ -56,7 +56,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Accessibilité {#sites-accessibility-6521}
 
-* La variable **[!UICONTROL Recherches enregistrées]** n’est pas persistante. L’espace réservé est utilisé comme seul libellé visuel pour un champ de texte.(SITES-3050)
+* La variable **[!UICONTROL Recherches enregistrées]** n’est pas persistante. L’espace réservé est utilisé comme seul libellé visuel pour un champ de texte. (SITES-3050)
 
 #### Interface utilisateur d’administration{#sites-adminui-6521}
 
@@ -69,7 +69,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
 * Correction de la double inclusion des éléments de formulaire. (SITES-21109) BLOQUEUR
-* Lors de la création d’un fragment de contenu, le bouton Fermer ne répond parfois pas, entraînant le gel de la page entière et nécessitant une actualisation de la page pour fermer le fragment de contenu. En ce qui concerne le problème de création de version, le système crée une nouvelle version d’un fragment de contenu même lorsque l’utilisateur n’a apporté aucune modification, simplement en interagissant avec l’éditeur de texte enrichi ou un champ de texte. (SITES-21187) MAJOR
+* Lors de la création d’un fragment de contenu, le bouton Fermer ne répond parfois pas, entraînant le gel de la page entière et nécessitant une actualisation de la page pour fermer le fragment de contenu. En ce qui concerne le problème de création de version, le système crée une nouvelle version d’un fragment de contenu. Cela se produit même lorsque l’utilisateur n’a apporté aucune modification, simplement en interagissant avec l’éditeur de texte enrichi ou avec un champ de texte. (SITES-21187) MAJEUR
 
 
 #### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6521}
@@ -102,7 +102,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### Fragments d’expérience{#sites-experiencefragments-6521}
 
 * Déploiement des fragments d’expérience depuis `masters/language` to `country/language` ne met pas à jour les références croisées. (SITES-20559) BLOQUEUR
-* Modèles non seulement spécifiés dans la variable `cq:allowedTemplates`, mais les modèles qui ont `allowedPaths` configurés au niveau du modèle, apparaissent sous la forme d’options lors de la création d’un fragment d’expérience. (SITES-20855) MAJOR
+* Modèles non seulement spécifiés dans la variable `cq:allowedTemplates`, mais les modèles qui ont `allowedPaths` configurés au niveau du modèle, apparaissent sous la forme d’options lors de la création d’un fragment d’expérience. (SITES-20855) MAJEUR
 
 #### Composants de base (hérités){#sites-foundation-components-legacy-6521}
 
@@ -110,15 +110,15 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Lancements{#sites-launches-6521}
 
-* La variable `sourceRootResource` configuré dans la configuration de Launch dans CRXDE Lite pointe vers du contenu qui n’existe plus, ce qui entraîne un dysfonctionnement lorsque des tentatives de suppression sont effectuées. Vous devriez pouvoir supprimer les lancements même si la page est supprimée ou si le chemin d’accès n’est pas le même. (SITES-20750)
+* La variable `sourceRootResource` configuré dans la configuration de Launch dans CRXDE Lite pointe vers du contenu qui n’existe plus, ce qui entraîne un dysfonctionnement lorsque des tentatives de suppression sont effectuées. La suppression s’exécute même si la page est supprimée ou si le chemin d’accès n’est pas le même. (SITES-20750)
 
 #### MSM - Live Copies{#sites-msm-live-copies-6521}
 
-* Recouvrement du composant Page pour ajouter des onglets dans les propriétés de page. L’une d’elles est la configuration de page et possède une propriété permettant d’ajouter une URL de fragment d’expérience. Le lien configuré dans les propriétés de page pour le fragment d’expérience ne change pour aucune copie de langue créée pour cette page. Le lien configuré doit changer avec l’URL de la copie de langue. (SITES-19580) MAJOR
+* Recouvrement du composant Page pour ajouter des onglets dans les propriétés de la page. L’une d’elles est la configuration de page et possède une propriété permettant d’ajouter une URL de fragment d’expérience. Le lien configuré dans les propriétés de page pour le fragment d’expérience ne change pour aucune copie de langue créée pour cette page. Le lien configuré doit changer avec l’URL de la copie de langue. (SITES-19580) MAJEUR
 
 #### Éditeur de page{#sites-pageeditor-6521}
 
-* Le mode d’édition applique de manière incohérente un arrière-plan gris, qui ne respecte pas les normes de contraste des couleurs WCAG (Web Content Accessibility Guidelines). (SITES-20060)
+* Le mode d’édition applique un arrière-plan gris de manière incohérente, qui ne respecte pas les normes de contraste des couleurs WCAG (Web Content Accessibility Guidelines). (SITES-20060)
 
 ### [!DNL Assets]{#assets-6521}
 
@@ -163,26 +163,38 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 ### Foundation {#foundation-6521}
 
-
-
 #### Apache Felix {#felix-6521}
 
 * Problème de mise à niveau avec AEM 6.5 Service Pack 19 (SP19) dans lequel le chemin racine du contexte du serveur d’applications est absent pour les demandes non autorisées vers Apache Felix suite à l’installation de SP19. Mise à jour vers la console de gestion web Apache Felix 4.9.8. (NPR-41933)
 
 * u
 
+#### Campaign{#campaign-6521}
+
+* AEM 6.5 Service Pack 15 génère des journaux d’erreurs continus avec des entrées significatives. Les problèmes suivants ont été signalés :
+
+   * Erreur 404 INFO pour la ressource manquante dans le chemin `/libs/granite/ui/content/shell/start.html`
+   * Entrée du journal des erreurs pour une exception Sling non interceptée en raison de `NullPointerException` at `CampaignsDataSourceServlet.java:147`
+
+  Les journaux d’erreurs ne doivent pas être remplis avec des entrées d’erreur fréquentes et volumineuses, et l’instance AEM doit fonctionner sans problèmes liés à des ressources manquantes ou à des exceptions. (CQ-4357064)
+
 #### Communities {#communities-6521}
 
-* T
+* u
 
 #### Distribution de contenu{#foundation-content-distribution-6521}
 
 * T
 
+#### Granite{#granite-6521}
+
+* **Supprimer** ou **Modifier** les autorisations ne peuvent pas être sélectionnées sans **Parcourir** autorisation dans le navigateur de configuration. (GRANITE-51002)
+
 #### Intégrations{#integrations-6521}
 
-* Remplacement des informations d’identification du compte de service (JSON Web Token ou JWT) par les informations d’identification OAuth2 Server-to-Server (également appelées &quot;entités de service&quot;).(NPR-41994) MAJOR
-* Échec de la création de la demande d’audience avec la configuration IMS (Identity Management System). (NPR-41888) MAJOR
+* Concernant `cq-target-integration`, doivent supprimer l’utilisation non-test de Google Guava. (CQ-4357101)
+* Remplacement des informations d’identification du compte de service (JSON Web Token ou JWT) par les informations d’identification OAuth2 Server-to-Server (également appelées &quot;entités de service&quot;).(NPR-41994) MAJEUR
+* Échec de la création de la demande d’audience avec la configuration IMS (Identity Management System). (NPR-41888) MAJEUR
 * Lorsqu’un client tente d’afficher la page Payload, le contenu ne s’affiche pas correctement en raison d’une URL incorrecte ; une erreur 404 s’affiche. L’erreur est provoquée par l’absence d’un symbole de point d’interrogation dans l’URL, devant les paramètres de la requête. Pour ce problème, le client doit insérer manuellement le symbole du point d’interrogation afin d’afficher correctement la page Payload. (NPR-41957)
 * Supprimez le code et la dépendance de l’Search &amp; Promote d’Adobe d’AEM 6.5 qui a atteint [fin de vie Septembre 2022 selon les avis](https://experienceleague.adobe.com/en/docs/discontinued/using/search-promote). (NPR-41855)
 
@@ -190,6 +202,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### Localisation{#localization-6521}
 
 * Dans l’éditeur de modèles, la chaîne de texte *`No video available.`* n’est pas localisé. (SITES-13190)
+* Les chaînes après l’activation ou la désactivation d’un utilisateur ne sont pas localisées dans **Outils** > **Sécurité** > **Utilisateurs** > *any_user_name* > **Activer** > **OK**, puis sélectionnez *any_user_name* > **Désactiver** > **OK**. (NPR-41737)
 
 #### Plateforme{#foundation-platform-6521}
 
@@ -201,12 +214,17 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Traduction{#foundation-translation-6521}
 
+* Un problème lié à l’état de traduction d’usine d’AEM 6.5.19 n’est pas mis à jour comme prévu pour un lancement. Après l’importation d’un fichier traduit dans une tâche de traduction associée à un lancement d’AEM, l’état devait changer en `Approved`. À la place, l’état a été remplacé par `Ready for Review`, qui n’est pas le comportement attendu. (NPR-41756) MAJEUR
 * Lors de la création de plusieurs configurations et de l’accès aux configurations de Cloud Service de traduction, tous les éléments ne s’affichent pas dans l’interface utilisateur. Seuls les 40 premiers éléments/dossiers s’affichent, le chargement différé est déclenché mais n’ajoute pas de contenu supplémentaire. (NPR-41829)
+* Des caractères altérés se produisent en cas de japonais sur la page Autorisations de l’interface utilisateur tactile. (NPR-41794)
 
 #### Interface utilisateur{#foundation-ui-6521}
 
+* Dans Outils > Sécurité > Utilisateurs > &lt;user_name> > Profils, dans la variable **Modifier les paramètres utilisateur** , cliquez sur Annuler pour ne pas quitter la boîte de dialogue. (NPR-41793) MAJOR
 * Le Granite `pathfield` component at `/libs/granite/ui/components/coral/foundation/form/pathfield` ne parvient pas à activer la variable **[!UICONTROL Sélectionner]** lorsqu’une ressource est sélectionnée. Une fois que le champ de chemin d’accès s’affiche et que l’utilisateur coche la case de la ressource, la variable **[!UICONTROL Sélectionner]** n’est pas activé ; il ne passe pas du gris au bleu. (NPR-41970)
 * Il existe un problème avec le champ de référence CFM (Content Fragment Model) dans AEM. Bien que le champ de référence CFM soit défini comme obligatoire, le système permet aux utilisateurs de cliquer sur Enregistrer pour enregistrer le contenu avec des valeurs non CFM dans certains scénarios. Le bouton Enregistrer doit être grisé (indisponible). (NPR-41894)
+* Les boîtes de dialogue de l’interface utilisateur Coral standard qui utilisent la variable `successresponse` L’action doit déclencher une réponse de succès après l’action . Mais dans AEM 6.5 Service Pack 19, l’action de rechargement n’est pas appelée et aucun message n’est affiché. (NPR-41797)
+* AEM liens Notifications ne fonctionnent pas dans AEM 6.5 Service Pack 18. Lors de la mise à niveau vers le Service Pack 18, les liens AEM Notifications ne fonctionnent pas lors de la sélection des messages au moyen du bouton Notifications. (NPR-41792)
 
 #### Gestion de contenu web (WCM){#wcm-6521}
 
@@ -214,14 +232,14 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Workflow{#foundation-workflow-6521}
 
-* T
+* Dans AEM 6.5.18, des erreurs répétées lors de la suppression du cache de métadonnées utilisateur lors de la purge. (NPR-41762)
 
 ## Installer [!DNL Experience Manager] 6.5.21.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.21.0 nécessite [!DNL Experience Manager] 6.5. Consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
-* Le téléchargement du pack de services est disponible dans la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) d’Adobe.
+* Le téléchargement du Service Pack est disponible sur Adobe [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.21.0 sur l’une des instances de création à l’aide du gestionnaire de packages.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -230,13 +248,13 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
-### Installation du pack de services sur [!DNL Experience Manager] 6.5{#install-service-pack}
+### Installation du Service Pack sur [!DNL Experience Manager] 6,5{#install-service-pack}
 
 1. Redémarrez l’instance avant l’installation si l’instance est en mode de mise à jour (lorsque l’instance a été mise à jour à partir d’une version antérieure). Adobe recommande un redémarrage si le temps de disponibilité actuel d’une instance est élevé.
 
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Téléchargez le Service Sack à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Ouvrez le gestionnaire de modules et cliquez sur **[!UICONTROL Charger le module]** pour charger le module. Pour en savoir plus, consultez la section [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
@@ -246,7 +264,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface utilisateur du gestionnaire de packages se ferme parfois pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari] mais peut se produire par intermittence sur n’importe quel navigateur.
+>La boîte de dialogue sur l’interface utilisateur de Package Manager se ferme parfois lors de l’installation du Service Pack. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari] mais peut se produire par intermittence sur n’importe quel navigateur.
 
 **Installation automatique**
 
@@ -271,7 +289,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 ### Installer le Pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Pour obtenir des instructions sur l’installation du Pack de services sur Experience Manager Forms, voir les [instructions d’installation du Pack de services Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Pour obtenir des instructions sur l’installation du Service Pack sur Experience Manager Forms, voir [Instructions d’installation du Service Pack Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
@@ -394,7 +412,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
   "refresh": true
   ```
 
-* Si vous mettez à niveau votre instance [!DNL Experience Manager] de 6.5.0 à 6.5.4, jusqu’au dernier Service Pack sur Java™ 11, les exceptions `RRD4JReporter` s’affichent dans le fichier `error.log`. Pour arrêter les exceptions, redémarrez votre instance d’[!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Si vous mettez à niveau votre [!DNL Experience Manager] de 6.5.0 à 6.5.4, jusqu’au dernier Service Pack sur Java™ 11, vous pouvez voir `RRD4JReporter` exceptions dans la variable `error.log` fichier . Pour arrêter les exceptions, redémarrez votre instance d’[!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Les utilisateurs peuvent renommer un dossier dans une hiérarchie dans [!DNL Assets] et publier un dossier imbriqué dans [!DNL Brand Portal]. Toutefois, le titre du dossier n’est pas mis à jour dans [!DNL Brand Portal] jusqu’à ce que le dossier racine soit republié.
 
