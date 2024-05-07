@@ -5,10 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8672eabadd50dfb5f243a162c205931704d8a6c7
+source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 100%
+source-wordcount: '3770'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
+* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
 * Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Les dossiers doivent être pris en charge sans avoir de propriété `jcr:content`, même si les dossiers DAM créés par le biais de l’interface utilisateur ont un tel nœud. (SITES-17943)
 
 #### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6520}
@@ -98,7 +98,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### Back-end principal{#sites-core-backend-6520}
 
 * Lorsque la publication rapide d’un fragment de contenu est utilisée, le chargement se poursuit et la publication n’est pas effectuée. En d’autres termes, la publication rapide ne fonctionne pas pour les fragments de contenu après une mise à niveau de pack de services d’AEM 6.5.7 vers AEM 6.5.17. Lorsque l’utilisateur ou l’utilisatrice a essayé la publication gérée, cela a fonctionné. Cependant, lorsque la publication rapide a été essayée, la publication n’était pas effectuée. Plus précisément, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` a provoqué le blocage du système. (SITES-17311)
-* Les fragments de contenu ne peuvent pas être sérialisés avec l’exporteur Jackson : le chargement de la page est interrompu lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exporteur Jackson) et que toute balise est ajoutée à un fragment de contenu. (SITES-18096)
+* Les fragments de contenu ne peuvent pas être sérialisés avec l’exportateur Jackson : le chargement de la page se déclenche lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exportateur Jackson) et qu’une balise est ajoutée à un fragment de contenu. (SITES-18096)
 
 #### Composants principaux{#sites-core-components-6520}
 
@@ -275,7 +275,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * Suite au déploiement du pack de services 18 d’AEM 6.5, un problème s’est produit avec l’onglet Filtres de l’éditeur de règles de traduction. Lorsqu’un contexte est sélectionné, en cliquant sur Modifier > Enregistrer, un guillemet double en tant que caractère HTML apparaît la prochaine fois que vous ouvrez le même contexte. Essentiellement, les règles de traduction n’étaient pas correctement enregistrées. (NPR-41624)
 * Problèmes liés aux traductions de fragments de contenu, où les chaînes traduites sont renvoyées par fournisseur de traduction vers AEM, mais sont bloquées au niveau `/content/projects` et les fragments de contenu ne sont pas mis à jour. (NPR-41516)
-* Un message d’erreur s’affiche lors de la création d’une copie de langue. Cela se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
+* Un message d’erreur s’affiche lors de la création d’une copie de langue. Elle se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
 * Les liens dans les fragments d’expérience ne sont pas adaptés à la bonne langue lors de la copie de la langue. Au lieu de cela, le fragment d’expérience pointe vers le paramètre régional principal. (NPR-41343)
 
 #### Interface utilisateur{#foundation-ui-6520}
