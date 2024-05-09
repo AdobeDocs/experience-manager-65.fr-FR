@@ -5,10 +5,11 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 97%
+source-wordcount: '3908'
+ht-degree: 94%
 
 ---
 
@@ -489,6 +490,11 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6520}
 
+* Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. (FORMS-14244)
+* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget contextuel pour les champs avec le modèle d’édition/d’affichage. (FORMS-13620)
+* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : &quot;L’action Envoyer n’a pas pu se terminer car la ressource de formulaire n’a pas été correctement affectée.&quot; (FORMS-13798)
+* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager à un processus Adobe Experience Manager, le processus ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
+* Lors de l’installation du package Forms Service Pack 20 d’AEM 6.5 (package de module complémentaire AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 * Le Forms adaptatif vous permet d’utiliser des fonctions personnalisées avec ECMAScript version 5 ou antérieure. Lorsqu’une fonction personnalisée utilise ECMAScript version 6 ou ultérieure, comme les fonctions « let », « const » ou flèches, l’éditeur de règles peut ne pas s’ouvrir correctement.
 * Il est alors impossible de créer une lettre Correspondence Management. Quand un utilisateur ou une utilisatrice crée une lettre, une erreur avec la description « `Object Object` » s’affiche et la lettre n’est pas créée. Les miniatures des dispositions ne se chargent pas non plus sur l’écran de création de lettre. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms (6.5)](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13496)
