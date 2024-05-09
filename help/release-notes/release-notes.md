@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
+source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 94%
+source-wordcount: '4046'
+ht-degree: 91%
 
 ---
 
@@ -530,6 +530,11 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 1. Stop the application server.
 
 -->
+* Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. (FORMS-14244)
+* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget contextuel pour les champs avec le modèle d’édition/d’affichage. (FORMS-13620)
+* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : &quot;L’action Envoyer n’a pas pu se terminer car la ressource de formulaire n’a pas été correctement affectée.&quot; (FORMS-13798)
+* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager à un processus Adobe Experience Manager, le processus ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
+* Lors de l’installation du package Forms Service Pack 20 d’AEM 6.5 (package de module complémentaire AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
