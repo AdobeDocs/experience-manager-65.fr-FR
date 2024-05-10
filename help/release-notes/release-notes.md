@@ -347,7 +347,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 1. Le lot OSGi `org.apache.jackrabbit.oak-core` est de version 1.22.18 ou ultérieure (utilisez la console web : `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### Installer le Pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
+### Installer le pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
 Pour obtenir des instructions sur l’installation du Pack de services sur Experience Manager Forms, voir les [instructions d’installation du Pack de services Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
