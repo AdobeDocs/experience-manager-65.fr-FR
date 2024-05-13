@@ -3,12 +3,11 @@ title: Installer et configurer des services de document
 description: Installez les services de documents d’AEM Forms pour créer, assembler, publier, archiver des documents PDF, ajouter des signatures numériques afin de limiter l’accès aux documents et de décoder les formulaires Barcoded Forms.
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
-ht-degree: 100%
+source-wordcount: '5703'
+ht-degree: 98%
 
 ---
 
@@ -298,6 +297,10 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 1. Ouvrez l’éditeur de politique de groupe de Microsoft® Windows. Pour ouvrir l’éditeur de politique de groupe, cliquez sur **[!UICONTROL Démarrer]**, saisissez **gpedit.msc** dans la zone Lancer la recherche, puis cliquez sur **[!UICONTROL Éditeur de politique de groupe]**.
 1. Accédez à **[!UICONTROL Politique d’ordinateur local]** > **[!UICONTROL Configuration d’ordinateur]** > **[!UICONTROL Paramètres Windows]** > **[!UICONTROL Paramètres de sécurité]** > **[!UICONTROL Politiques locales]** > **[!UICONTROL Attribution des droits utilisateur]** et modifiez la politique **[!UICONTROL Remplacer un jeton de niveau processus]** pour y inclure le groupe Administrateurs et administratrices.
 1. Ajoutez l’utilisateur ou l’utilisatrice à l’entrée Remplacer un jeton de niveau processus.
+
+>[!NOTE]
+>
+> Si le serveur d’AEM s’exécute en tant que service sous LSA, l’attribution explicite de ce privilège à un utilisateur peut ne pas être nécessaire, cela signifie que si aucune autre application/composant n’est installée à l’exception de celle requise pour PDFG sur la machine virtuelle, vous n’avez pas besoin d’accorder à d’autres comptes la valeur **Remplacer un droit de jeton de niveau processus** et seuls les services locaux et les comptes de services réseau devraient avoir le droit.
 
 ### (Windows uniquement) Activer le service PDF Generator pour les utilisateurs non-administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
 
