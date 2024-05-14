@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: c165755c19ac64fdd253bff9163f48ddf4732623
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4046'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
+* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
 * Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Les dossiers doivent être pris en charge sans avoir de propriété `jcr:content`, même si les dossiers DAM créés par le biais de l’interface utilisateur ont un tel nœud. (SITES-17943)
 
 #### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6520}
@@ -99,7 +99,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 #### Back-end principal{#sites-core-backend-6520}
 
 * Lorsque la publication rapide d’un fragment de contenu est utilisée, le chargement se poursuit et la publication n’est pas effectuée. En d’autres termes, la publication rapide ne fonctionne pas pour les fragments de contenu après une mise à niveau de pack de services d’AEM 6.5.7 vers AEM 6.5.17. Lorsque l’utilisateur ou l’utilisatrice a essayé la publication gérée, cela a fonctionné. Cependant, lorsque la publication rapide a été essayée, la publication n’était pas effectuée. Plus précisément, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` a provoqué le blocage du système. (SITES-17311)
-* Les fragments de contenu ne peuvent pas être sérialisés avec l’exportateur Jackson : le chargement de la page se déclenche lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exportateur Jackson) et qu’une balise est ajoutée à un fragment de contenu. (SITES-18096)
+* Les fragments de contenu ne peuvent pas être sérialisés avec l’exporteur Jackson : le chargement de la page est interrompu lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exporteur Jackson) et que toute balise est ajoutée à un fragment de contenu. (SITES-18096)
 
 #### Composants principaux{#sites-core-components-6520}
 
@@ -276,7 +276,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * Suite au déploiement du pack de services 18 d’AEM 6.5, un problème s’est produit avec l’onglet Filtres de l’éditeur de règles de traduction. Lorsqu’un contexte est sélectionné, en cliquant sur Modifier > Enregistrer, un guillemet double en tant que caractère HTML apparaît la prochaine fois que vous ouvrez le même contexte. Essentiellement, les règles de traduction n’étaient pas correctement enregistrées. (NPR-41624)
 * Problèmes liés aux traductions de fragments de contenu, où les chaînes traduites sont renvoyées par fournisseur de traduction vers AEM, mais sont bloquées au niveau `/content/projects` et les fragments de contenu ne sont pas mis à jour. (NPR-41516)
-* Un message d’erreur s’affiche lors de la création d’une copie de langue. Elle se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
+* Un message d’erreur s’affiche lors de la création d’une copie de langue. Cela se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
 * Les liens dans les fragments d’expérience ne sont pas adaptés à la bonne langue lors de la copie de la langue. Au lieu de cela, le fragment d’expérience pointe vers le paramètre régional principal. (NPR-41343)
 
 #### Interface utilisateur{#foundation-ui-6520}
@@ -491,10 +491,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6520}
 
 * Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. (FORMS-14244)
-* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget contextuel pour les champs avec le modèle d’édition/d’affichage. (FORMS-13620)
-* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : &quot;L’action Envoyer n’a pas pu se terminer car la ressource de formulaire n’a pas été correctement affectée.&quot; (FORMS-13798)
-* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager à un processus Adobe Experience Manager, le processus ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
-* Lors de l’installation du package Forms Service Pack 20 d’AEM 6.5 (package de module complémentaire AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
+* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget de pop-up pour les champs suivant le modèle d’édition/d’affichage. (FORMS-13620)
+* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : « L’action Envoyer n’a pas pu se terminer, car la ressource de formulaire n’a pas été correctement affectée. » (FORMS-13798)
+* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
+* Lors de l’installation du pack de services 20 d’AEM Forms 6.5 (package de modules complémentaires d’AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
 * Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
 * Le Forms adaptatif vous permet d’utiliser des fonctions personnalisées avec ECMAScript version 5 ou antérieure. Lorsqu’une fonction personnalisée utilise ECMAScript version 6 ou ultérieure, comme les fonctions « let », « const » ou flèches, l’éditeur de règles peut ne pas s’ouvrir correctement.
 * Il est alors impossible de créer une lettre Correspondence Management. Quand un utilisateur ou une utilisatrice crée une lettre, une erreur avec la description « `Object Object` » s’affiche et la lettre n’est pas créée. Les miniatures des dispositions ne se chargent pas non plus sur l’écran de création de lettre. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms (6.5)](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13496)
@@ -531,10 +531,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 -->
 * Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. (FORMS-14244)
-* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget contextuel pour les champs avec le modèle d’édition/d’affichage. (FORMS-13620)
-* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : &quot;L’action Envoyer n’a pas pu se terminer car la ressource de formulaire n’a pas été correctement affectée.&quot; (FORMS-13798)
-* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager à un processus Adobe Experience Manager, le processus ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
-* Lors de l’installation du package Forms Service Pack 20 d’AEM 6.5 (package de module complémentaire AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
+* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget de pop-up pour les champs suivant le modèle d’édition/d’affichage. (FORMS-13620)
+* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : « L’action Envoyer n’a pas pu se terminer, car la ressource de formulaire n’a pas été correctement affectée. » (FORMS-13798)
+* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
+* Lors de l’installation du pack de services 20 d’AEM Forms 6.5 (package de modules complémentaires d’AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
