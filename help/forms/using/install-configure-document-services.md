@@ -4,13 +4,13 @@ description: Installez les services de documents d’AEM Forms pour créer, ass
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5703'
-ht-degree: 98%
+source-wordcount: '5660'
+ht-degree: 99%
 
 ---
-
 
 # Installer et configurer des services de document {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 
 >[!NOTE]
 >
-> Si le serveur d’AEM s’exécute en tant que service sous LSA, l’attribution explicite de ce privilège à un utilisateur peut ne pas être nécessaire, cela signifie que si aucune autre application/composant n’est installée à l’exception de celle requise pour PDFG sur la machine virtuelle, vous n’avez pas besoin d’accorder à d’autres comptes la valeur **Remplacer un droit de jeton de niveau processus** et seuls les services locaux et les comptes de services réseau devraient avoir le droit.
+> Comme indiqué ci-dessus, si le serveur AEM s’exécute en tant que service sous le compte système local (LSA), l’attribution explicite de ce privilège à un utilisateur n’est pas nécessaire.
 
 ### (Windows uniquement) Activer le service PDF Generator pour les utilisateurs non-administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
 
