@@ -11,7 +11,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '6346'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -4465,7 +4465,7 @@ Le service PDF Generator fournit des API pour convertir des formats de fichier n
 
 Le service GeneratePDFService fournit des API pour convertir de nombreux formats de fichiers, tels que .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsolète), .jpg, .bmp, .tif, .png, .html et bien d’autres formats de fichier en PDF. Il fournit également des API pour exporter des PDF vers divers formats de fichiers et optimiser les fichiers PDF. Le service prend en charge les API suivantes :
 
-* **createPDF** : convertit un type de fichier pris en charge en document PDF. Cette méthode prend en charge les formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre ces applications, tout PDF générique tiers générant un type d’application peut également être connecté à l’API.
+* **createPDF** : convertit un type de fichier pris en charge en document PDF. Cette méthode prend en charge les formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre les applications ci-dessus, tout type d’application générique tierce qui génère des PDF peut également être connecté à l’API.
 * **exportPDF** : convertit un document PDF en type de fichier pris en charge. Cette méthode accepte un PDF en entrée et exporte le contenu du PDF dans le format du type de fichier spécifié. Vous pouvez exporter un document PDF aux formats PostScript encapsulé (eps), HTML 3.2 (htm, html), HTML 4.01 avec CSS 1.0 (htm, html), JPEG (jpg, jpeg, jpe), JPEG2000 (jpf, jpx, jp2, j2k, j2c, jpc), document Microsoft Word (doc, docx), classeur Microsoft Excel (xlsx), présentation Microsoft PowerPoint (pptx), PNG (png), PostScript (ps), format RTF (RTF), texte (accessible) (txt), texte (ordinaire) (txt), TIFF (tif, tiff), XML 1.0 (xml), PDF/A-1a (sRVB), PDF/A-1b, PDF/A-2a (sRVB), PDF/A-2b (sRGB), PDF/A-3a (sRGB) et PDF/A-3b (sRGB). Vous pouvez également spécifier les [profils de contrôle en amont personnalisés](https://helpx.adobe.com/fr/acrobat/using/preflight-profiles-acrobat-pro.html) pour les sorties PDF.
 
 * **optimizePDF** : optimise le document PDF et convertit également un document PDF d’un type à un autre. Cette méthode accepte un document PDF en entrée.
@@ -4513,7 +4513,7 @@ Le service GeneratePDFService fournit des API pour convertir de nombreux formats
 
 #### createPDF {#createpdf}
 
-L’API createPDF convertit un type de fichier pris en charge en document PDF. Elle prend en charge plusieurs formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre ces applications, tout PDF générique tiers générant un type d’application peut également être connecté à l’API.
+L’API createPDF convertit un type de fichier pris en charge en document PDF. Elle prend en charge plusieurs formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre les applications ci-dessus, tout type d’application générique tierce qui génère des PDF peut également être connecté à l’API.
 
 Pour la conversion, seuls certains paramètres sont obligatoires. Un document d’entrée est un paramètre obligatoire. Vous pouvez appliquer les autorisations de sécurité, les paramètres de sortie PDF et les informations de métadonnées ultérieurement, dans le document PDF de sortie.
 

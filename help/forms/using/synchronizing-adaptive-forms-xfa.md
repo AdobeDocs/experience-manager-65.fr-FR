@@ -11,7 +11,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,13 +47,13 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur AEM Forms.
 
-Installez le module à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le package contient les ressources suivantes :
 
 1. `sample-form.xdp` : modèle de formulaire XFA utilisé comme exemple.
 
-1. `sample-xfa-af` : formulaire adaptatif basé sur le fichier sample-form.xdp. Ce formulaire adaptatif ne contient toutefois aucun champ. À l’étape suivante, vous ajoutez du contenu à ce formulaire adaptatif.
+1. `sample-xfa-af` : formulaire adaptatif basé sur le fichier sample-form.xdp. Ce formulaire adaptatif ne contient toutefois aucun champ. Dans l’étape suivante, vous ajoutez du contenu à ce formulaire adaptatif.
 
 ### Ajout de contenu au formulaire adaptatif {#add-content-to-adaptive-form-br}
 
@@ -64,7 +64,7 @@ Le package contient les ressources suivantes :
 
 >[!NOTE]
 >
->Dans les étapes précédentes, vous avez remplacé une propriété d’un champ dans le fichier XDP. Cette propriété n’est donc pas synchronisée si la propriété correspondante dans le fichier XDP est modifiée ultérieurement.
+>Dans les étapes précédentes, vous avez remplacé une propriété d’un champ du fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
 
 ## Détection des modifications dans le fichier XDP {#detecting-changes-in-xdp-file}
 
@@ -134,7 +134,7 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 
 >[!NOTE]
 >
->Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section non lié du fichier XML de sortie.
+>Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` incorrecte dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ou l’autrice ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section non liée du fichier XML de sortie.
 
 ## Téléchargements {#downloads}
 

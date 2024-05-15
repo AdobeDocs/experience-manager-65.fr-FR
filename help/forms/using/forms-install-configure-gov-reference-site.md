@@ -9,7 +9,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '4534'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -505,7 +505,7 @@ Le certificat créé dans cette section va être servir à créer le service d�
 
 Assurez-vous que vous avez la possibilité de créer une intégration dans votre domaine Adobe sans avoir à contacter votre administrateur ou administratrice système.
 
-1. Accédez au [Console Adobe Developer](https://developer.adobe.com/console/).
+1. Accédez à [Adobe Developer Console](https://developer.adobe.com/console/).
 
 1. Cliquez sur Créer une intégration.
 

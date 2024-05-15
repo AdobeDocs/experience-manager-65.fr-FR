@@ -11,15 +11,15 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Consulter les droits d’utilisation d’un fichier PDF {#review-the-usage-rights-of-a-pdf-file}
 
-Lors du téléchargement d’un fichier de PDF vers l’application web Acrobat Reader DC Extensions, vous pouvez consulter ces informations afin de déterminer s’il est Reader étendu, si des droits d’utilisation ont été appliqués et s’il existe des dates d’expiration.
+Vous pouvez charger un fichier PDF dans l’application web des extensions Acrobat Reader DC pour voir s’il contient des extensions pour Reader, si des droits d’utilisation lui ont été appliqués et quelles sont leurs dates d’expiration.
 
-1. Connectez-vous à l’application web Acrobat Reader DC Extensions à l’adresse `http://[localhost]:[port]/ReaderExtensions` (où *[port]* est le numéro de port de votre serveur d’applications).
+1. Connectez-vous à l’application web des extensions Acrobat Reader DC sur `http://[localhost]:[port]/ReaderExtensions` (où *[port]* correspond au numéro de port du serveur d’applications).
 1. Cliquez sur Parcourir pour charger le fichier PDF, puis sur Info. Les informations s’affichent sous le nom de fichier.
 
-   Pour plus d’informations sur la modification des droits d’utilisation du fichier, reportez-vous à la section Aide des extensions Acrobat Reader DC .
+   Pour plus d’informations sur la modification des droits d’utilisation du fichier, voir l’aide des extensions Acrobat Reader DC.

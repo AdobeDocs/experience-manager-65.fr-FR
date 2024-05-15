@@ -10,7 +10,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '790'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    * dossier`css` : contient les fichiers .css dans lesquels vous définissez les styles statiques à utiliser dans le thème.
 
-   **Fichiers variables less**: il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
+   **Fichiers de variables less** : il s’agit des fichiers dans lesquels vous définissez ou remplacez les variables utilisées pour définir les styles CSS.
 
    Les formulaires adaptatifs fournissent des variables prêtes à l’emploi définies dans les fichiers `.less` suivants :
 

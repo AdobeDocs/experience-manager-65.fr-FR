@@ -12,7 +12,7 @@ role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '4256'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -464,7 +464,7 @@ Gardez à l’esprit les points et restrictions suivants lorsque vous utilisez u
 
 ## Utiliser un fichier XCI personnalisé
 
-Un fichier XCI permet de définir différentes propriétés d’un document. <!-- Forms as a Cloud Service has a master XCI file.--> Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI existant. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
+Un fichier XCI permet de définir différentes propriétés d’un document. <!-- Forms as a Cloud Service has a master XCI file.--> Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans votre fichier XCI existant. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
 
 | Option XCI | Description |
 |--- |--- |

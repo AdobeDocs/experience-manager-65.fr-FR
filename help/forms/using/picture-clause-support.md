@@ -13,7 +13,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Expression prise en charge pour la clause de date d’image :
 
 >[!NOTE]
 >
-> Selon la conception, le champ Date dans HTML5 Forms ne prend pas en charge la variable `MM-YYYY` modèle au format d’édition. Toutefois, le modèle est pris en charge dans le format d’affichage.
+> Selon la conception, le champ Date dans HTML5 Forms ne prend pas en charge le schéma `MM-YYYY` au format d’édition. Toutefois, ce schéma est pris en charge dans le format d’affichage.
 
 ## Clause d’image numérique {#numeric-picture-clause}
 
