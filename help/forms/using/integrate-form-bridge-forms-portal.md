@@ -10,7 +10,7 @@ exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
 ht-degree: 100%
 
@@ -80,10 +80,10 @@ Une application HTML existante peut utiliser l’API FormBridge pour interagir a
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
    >
    >
-   >La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
+   La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
    >
    >
-   >La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
+   La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
 
    ![Portail](assets/portal.jpg)
 

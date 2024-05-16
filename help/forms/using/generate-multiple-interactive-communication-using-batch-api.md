@@ -10,9 +10,9 @@ exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2134'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Sélectionnez votre service de récupération ou dʼobtention dans le champ Service de lecture du volet Modifier les propriétés.
    1. Sélectionnez l’icône en forme de crayon de l’argument de service de lecture pour lier l’argument à un attribut de requête et spécifier la valeur de liaison. Elle lie l’argument de service à la valeur d’attribut de liaison ou littérale spécifiée, qui est transmise au service en tant qu’argument pour extraire les détails associés à la valeur spécifiée de la source de données.
 
-      Dans cet exemple, l’argument id prend la valeur de l’attribut id du profil utilisateur et la transmet en tant qu’argument au service de lecture. Il lira et renverra les valeurs des propriétés associées à partir de l’objet de modèle de données de la personne employée pour l’attribut id spécifié. Ainsi, si vous indiquez 00250 dans le champ id du formulaire, le service de lecture lit les détails de l’employé avec l’ID d’employé 00250.
+      Dans cet exemple, l’argument id prendra la valeur de l’attribut id du profil d’utilisateur ou d’utilisatrice et le transmettra en tant qu’argument au service de lecture. Il lira et renverra les valeurs des propriétés associées à partir de l’objet de modèle de données de la personne employée pour l’attribut id spécifié. Ainsi, si vous spécifiez 00250 dans le champ id du formulaire, le service de lecture lira les détails de la personne employée avec l’ID de personne employée 00250.
 
       ![Configurer l’attribut de requête](assets/request-attribute.png)
 

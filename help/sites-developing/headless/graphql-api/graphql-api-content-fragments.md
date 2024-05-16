@@ -6,9 +6,9 @@ exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4984'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -1051,23 +1051,23 @@ Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domai
 
 ## Limites {#limitations}
 
-Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumises à des limitations par défaut :
+ Pour vous protéger contre les problèmes potentiels, vos requêtes sont soumises à des limitations par défaut :
 
-* La requête ne peut pas contenir plus de 1M (1 024 x 1 024) caractères
-* La requête ne peut pas contenir plus de 15 000 jetons
-* La requête ne peut pas contenir plus de 200000 jetons d’espace blanc
+* La requête ne peut pas contenir plus de 1 million (1 024x1 024) de caractères.
+* La requête ne peut pas contenir plus de 15 000 jetons.
+* La requête ne peut pas contenir plus de 200 000 jetons d’espace blanc.
 
-Vous devez également savoir :
+À savoir également :
 
-* Une erreur de conflit de champ est renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) et que les conditions suivantes sont remplies :
+* Une erreur de conflit de champ est renvoyée lorsque votre requête GraphQL contient des champs portant le même nom dans deux modèles (ou plus) et que les conditions suivantes sont remplies :
 
-   * Où :
+   * Dans les cas où :
 
-      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme étant autorisés. **Type de modèle** dans la référence Fragment de contenu.
+      * Deux (ou plusieurs modèles) sont utilisés comme références possibles, lorsqu’ils sont définis comme un **Type de modèle** autorisé dans la référence Fragment de contenu.
 
      et :
 
-      * Ces deux modèles ont des champs ayant un nom commun ; cela signifie que le même nom apparaît dans les deux modèles.
+      * Ces deux modèles ont des champs ayant un nom commun. Cela signifie que le même nom apparaît dans les deux modèles.
 
      et
 
@@ -1075,12 +1075,12 @@ Vous devez également savoir :
 
    * Par exemple :
 
-      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment ; par exemple, `Fragment1` `MultiField/List`
+      * Lorsque deux fragments (ou plus) avec des modèles différents (par exemple, `M1`, `M2`) sont utilisées comme références possibles (référence de contenu ou référence de fragment) à partir d’un autre fragment. Par exemple, `Fragment1` `MultiField/List`.
       * Et ces deux fragments avec des modèles différents (`M1`, `M2`) comportent des champs portant le même nom, mais avec des types différents.
 Illustration :
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * Une erreur de conflit de champ se produira si la requête GraphQL contient le paramètre `Title` champ .
+         * `M1.Title` en tant que `Text`
+         * `M2.Title` en tant que `Text/MultiField`
+      * Une erreur de conflit de champ se produira si la requête GraphQL contient le champ `Title`.
 
 ## Authentification {#authentication}
 

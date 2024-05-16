@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 36c95ea717a0abcb0b6ef9b0796a94d7b0f66329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Les clientes et clients Adobe utilisent [Adobe Developer Console](https://deve
 
 Cet article fournit un contexte supplémentaire sur la manière dont les clientes et clients AEM 6.5 doivent gérer l’obsolescence.
 
-À ce stade, la principale leçon à retenir est que les fonctionnalités AEM ne prennent pas encore en charge les nouvelles informations d’identification OAuth serveur à serveur. La prise en charge sera assurée prochainement — d’ici la mi-mai 2024 par le biais d’un package de compatibilité spécial à installer pour AEM 6.5, si vous exécutez le dernier Service Pack 20 ou version antérieure (Service Pack 21 et version ultérieure l’inclura automatiquement). Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT, mais vous pouvez et devriez attendre la migration des informations d’identification jusqu’à ce qu’AEM prenne en charge le nouveau type d’informations d’identification OAuth serveur à serveur.
+À ce stade, la principale leçon à retenir est que les fonctionnalités AEM ne prennent pas encore en charge les nouvelles informations d’identification OAuth serveur à serveur. La prise en charge sera assurée prochainement, d’ici la mi-mai 2024 par le biais d’un package de compatibilité spécial à installer pour AEM 6.5, si vous exécutez le dernier pack de services 20 ou version antérieure (le pack de services 21 et les versions ultérieures l’incluront automatiquement). Vous avez peut-être reçu un e-mail contenant des instructions pour migrer vos informations d’identification JWT, mais vous pouvez et devriez attendre avant de migrer des informations d’identification jusqu’à ce qu’AEM prenne en charge le nouveau type d’informations d’identification OAuth serveur à serveur.
 
-Les sections ci-dessous répertorient les scénarios où les clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth Server-to-Server, une fois qu’AEM les prend en charge à la mi-mai. [Lisez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) remplacer les informations d’identification ultérieurement.
+Les sections ci-dessous répertorient les scénarios où les clientes et clients doivent (ou dans certains cas ne doivent pas) remplacer leurs informations d’identification de compte de service (JWT) par des informations d’identification OAuth serveur à serveur, une fois qu’AEM les prendra en charge à la mi-mai. [Lisez comment](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) remplacer les informations d’identification ultérieurement.
 
 ## Intégrer AEM à d’autres solutions Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Action**: patientez jusqu’à la mi-mai 2024, date à laquelle AEM le prend en charge.
+**Action** : patientez jusqu’à la mi-mai 2024, date à laquelle AEM les prendra en charge.
 
 **Versions d’AEM pertinentes** : Adobe Managed Services (pack de services 20 et versions antérieures).
 
@@ -36,11 +36,11 @@ Les clientes et clients AEM utilisent l’interface utilisateur de création AEM
 
 ![Intégrer AEM à d’autres solutions](/help/sites-administering/assets/jwt-deprecation.png)
 
-Par exemple, voici les [instructions](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) pour configurer l’intégration à Adobe Target. La clé API dans la variable [Réalisation de la configuration IMS dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) doit être migrée vers le type d’informations d’identification OAuth Server-to-Server, une fois qu’AEM prend en charge ces informations d’identification à la mi-mai. Ces instructions seront mises à jour à la mi-mai afin de vous aider à appliquer les nouvelles informations d’identification OAuth serveur à serveur.
+Par exemple, voici les [instructions](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims) pour configurer l’intégration à Adobe Target. La clé API dans la section [Réalisation de la configuration IMS dans AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/administering/integration/integration-target-ims#completing-the-ims-configuration-in-aem) doit être migrée vers le type d’informations d’identification OAuth serveur à serveur, une fois qu’AEM prendra en charge ces informations d’identification à la mi-mai. Ces instructions seront mises à jour à la mi-mai afin de vous aider à appliquer les nouvelles informations d’identification OAuth serveur à serveur.
 
 ## API Cloud Manager {#cloud-manager-apis}
 
-**Action**: patientez jusqu’à la mi-mai 2024, date à laquelle AEM le prend en charge.
+**Action** : patientez jusqu’à la mi-mai 2024, date à laquelle AEM les prendra en charge.
 
 **Versions d’AEM pertinentes** : Adobe Managed Services (pack de services 20 et versions antérieures).
 

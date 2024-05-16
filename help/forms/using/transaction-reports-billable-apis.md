@@ -9,9 +9,9 @@ exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1754'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
 | AEM 6.5 | Cet article |
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :

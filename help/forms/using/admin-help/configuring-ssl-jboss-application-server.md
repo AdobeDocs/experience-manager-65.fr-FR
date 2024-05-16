@@ -9,7 +9,7 @@ exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '904'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ Dans cette procédure :
 
    * Cluster de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Pour un serveur unique,** ajoutez l’élément suivant dans le fichier lc_&lt;dbaname/tunkey>.xml après la section &lt;security-realms> :
 
    ```xml

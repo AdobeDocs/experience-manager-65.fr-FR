@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5660'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -300,7 +300,7 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 
 >[!NOTE]
 >
-> Comme indiqué ci-dessus, si le serveur AEM s’exécute en tant que service sous le compte système local (LSA), l’attribution explicite de ce privilège à un utilisateur n’est pas nécessaire.
+> Comme indiqué ci-dessus, si le serveur AEM s’exécute en tant que service sous le compte système local (LSA), l’attribution explicite de ce privilège à une personne n’est pas nécessaire.
 
 ### (Windows uniquement) Activer le service PDF Generator pour les utilisateurs non-administrateurs {#enable-the-pdf-generator-service-for-non-administrators}
 

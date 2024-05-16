@@ -5,10 +5,11 @@ role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
-workflow-type: tm+mt
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
+source-git-commit: 676316d45213630c1c030b5eb4b3edff64e889a8
+workflow-type: ht
 source-wordcount: '1984'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -211,16 +212,16 @@ Par défaut, l’option d’enregistrement automatique n’est pas activée. Vou
    >Pour configurer le service, accédez à la configuration de la console web d’Adobe Experience Manager à l’adresse `https://'[server]:[port]'system/console/configMgr`, modifiez le **[!UICONTROL service de configuration commun aux formulaires]**, sélectionnez l’option **[!UICONTROL Tous les utilisateurs]** dans le champ **[!UICONTROL Autoriser]** et enregistrez la configuration.
 
 
-## Comment renommer un formulaire adaptatif AEM ? {#rename-an-AEM-Adaptive-Form}
+## Comment renommer un formulaire adaptatif AEM ? {#rename-an-AEM-Adaptive-Form}
 
-Pour renommer un formulaire adaptatif, procédez comme suit :
+Pour renommer un formulaire adaptatif, procédez comme suit :
 
-1. Sélectionnez un formulaire adaptatif dans l’interface utilisateur d’AEM Forms.
+1. Sélectionnez un formulaire adaptatif dans l’interface d’utilisation d’AEM Forms.
 1. Cliquez sur le bouton **Propriétés** situé sur le rail supérieur.
 
-   ![Propriétés.](/help/forms/using/assets/rename-form-properties.png)
+   ![Propriétés](/help/forms/using/assets/rename-form-properties.png)
 
-1. Modifiez le nom du formulaire dans le **Titre** , comme illustré ci-dessous.
+1. Modifiez le nom du formulaire dans l’onglet **Titre**, comme illustré ci-dessous.
 1. Cliquez sur **Enregistrer et fermer**.
 
    ![Renommer un formulaire adaptatif AEM](/help/forms/using/assets/rename-form-title.png)
