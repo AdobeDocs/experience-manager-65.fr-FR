@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 100%
@@ -183,13 +183,13 @@ Vous trouverez ci-dessous un exemple de création de certificat autosigné au fo
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Convertissez la clé privée au format DER. En effet, l’assistant SSL requiert que la clé soit au format DER :
+1. Convertissez la clé privée au format DER. En effet, l’assistant SSL requiert que la clé soit au format DER :
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-Enfin, téléchargez le fichier **localhostprivate.der** comme clé privée et **localhost.crt** comme certificat SSL/TLS à l’étape 2 de l’assistant graphique SSL/TLS décrit au début de cette page.
+1. Enfin, téléchargez le fichier **localhostprivate.der** comme clé privée et **localhost.crt** comme certificat SSL/TLS à l’étape 2 de l’assistant graphique SSL/TLS décrit au début de cette page.
 
 ### Mettre à jour la configuration SSL/TLS via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
