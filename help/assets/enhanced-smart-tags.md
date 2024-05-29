@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
-source-wordcount: '1559'
-ht-degree: 100%
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
+workflow-type: tm+mt
+source-wordcount: '1575'
+ht-degree: 99%
 
 ---
 
@@ -194,3 +194,9 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 * L’utilisation des services de contenu dynamique est limitée à 2 millions d’images balisées par an. Toutes les images en double qui sont traitées et balisées sont chacune comptabilisées comme une image balisée.
 * Si vous exécutez le workflow de balisage à partir de la chronologie, vous pouvez appliquer des balises sur un maximum de 15 ressources à la fois.
 * Les balises intelligentes fonctionnent uniquement pour les formats d’image PNG et JPG. Ainsi, les ressources prises en charge pour lesquelles des rendus ont été créés dans ces deux formats sont balisées avec des balises intelligentes.
+
+>[!MORELIKETHIS]
+>
+>* [Présentation et entraînement des balises intelligentes](enhanced-smart-tags.md)
+>* [Configuration du balisage intelligent](config-smart-tagging.md)
+>* [Tutoriel vidéo sur les balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=fr)
