@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
-workflow-type: ht
-source-wordcount: '7406'
-ht-degree: 100%
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+workflow-type: tm+mt
+source-wordcount: '7400'
+ht-degree: 99%
 
 ---
 
@@ -74,6 +74,7 @@ ht-degree: 100%
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies Same Site](/help/sites-administering/same-site-cookie-support.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Configuration des intégrations IMS pour AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Création {#authoring}
       + Tâches, outils et concepts essentiels pour la création dans AEM {#essentials}
@@ -226,7 +227,6 @@ ht-degree: 100%
          + [Configuration du suivi des liens Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
          + [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
          + [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
-         + [Intégration à Adobe Analytics à l’aide d’IMS](/help/sites-administering/integration-analytics-ims.md)
          + [FAQ sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md)
          + [Résolution des incidents liés à votre intégration Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 100%
          + [Intégration à Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
          + [Configuration manuelle de l’intégration à Adobe Target](/help/sites-administering/target-configuring.md)
          + [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md)
-         + [Intégration à Adobe Target à l’aide d’IMS](/help/sites-administering/integration-target-ims.md)
          + [Classifications Adobe](/help/sites-administering/adobeanalytics-classifications.md)
          + [Intégration de solutions](/help/sites-administering/integration.md)
          + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -1082,7 +1081,7 @@ ht-degree: 100%
       + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
       + [Module externe AEM permettant de déboguer les formulaires adaptatifs](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html)
-      + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/fr//experience-manager/6-5/forms/programlc/javadoc/index.html)
+      + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/fr/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [API Form Bridge pour les formulaires HTML5](/help/forms/using/form-bridge-apis.md)
       + [Référence à l’API de la bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
       + [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65_fr)
