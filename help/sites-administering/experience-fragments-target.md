@@ -1,5 +1,5 @@
 ---
-title: Exportation de fragments d’expérience vers Adobe Target
+title: Exporter des fragments d’expérience vers Adobe Target
 description: Découvrez comment exporter des fragments d’expérience Adobe Experience Manager (AEM) vers Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Exportation de fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# Exporter des fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
-Vous pouvez exporter les [Fragments d’expérience](/help/sites-authoring/experience-fragments.md), créés dans Adobe Experience Manager (AEM), dans Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
+Vous pouvez exporter les [Fragments d’expérience](/help/sites-authoring/experience-fragments.md), créés dans Adobe Experience Manager (AEM), vers Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
 
 Il existe trois options de format pour exporter un fragment d’expérience vers Adobe Target :
 
@@ -31,9 +31,9 @@ Les fragments d’expérience AEM peuvent être exportés vers l’espace de tra
 
 >[!NOTE]
 >
->[Les intégrations IMS sont désormais configurées avec S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>[Les intégrations IMS sont désormais configurées avec OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->Les configurations précédentes étaient effectuées avec [Informations d’identification JWT désormais obsolètes dans la console Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Auparavant, les configurations étaient effectuées avec les [informations d’identification JWT désormais sujettes à l’obsolescence dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ Plusieurs actions sont requises :
 
    >[!NOTE]
    >
-   >[Les intégrations IMS sont désormais configurées avec S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >[Les intégrations IMS sont désormais configurées avec OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Les configurations précédentes étaient effectuées avec [Informations d’identification JWT désormais obsolètes dans la console Adobe Developer](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >Auparavant, les configurations étaient effectuées avec les [informations d’identification JWT désormais sujettes à l’obsolescence dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 1. Les fragments d’expérience sont exportés à partir de l’instance de création AEM. Vous devez donc [Configurer l’externaliseur de liens d’AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sur l’instance de création pour vous assurer que toutes les références contenues dans le fragment d’expérience sont externalisées pour la diffusion web.
 

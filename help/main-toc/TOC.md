@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7400'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 99%
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies Same Site](/help/sites-administering/same-site-cookie-support.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Configuration des intégrations IMS pour AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
+   + [Configurer des intégrations IMS pour AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Création {#authoring}
       + Tâches, outils et concepts essentiels pour la création dans AEM {#essentials}
@@ -252,7 +252,7 @@ ht-degree: 99%
          + [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md)
          + [Classifications Adobe](/help/sites-administering/adobeanalytics-classifications.md)
          + [Intégration de solutions](/help/sites-administering/integration.md)
-         + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-administering/experience-fragments-target.md)
+         + [Exporter des fragments d’expérience vers Adobe Target](/help/sites-administering/experience-fragments-target.md)
          + [Bonnes pratiques relatives aux modèles d’e-mail](/help/sites-administering/best-practices-for-email-templates.md)
          + [Intégration à Livefyre](/help/sites-administering/livefyre.md)
       + Bonnes pratiques {#bestpractices}
