@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 92%
@@ -338,5 +338,5 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 >[!MORELIKETHIS]
 >
 >* [Présentation et entraînement des balises intelligentes](enhanced-smart-tags.md)
->* [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-smart-tagging.md)
+>* [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md)
 >* [Tutoriel vidéo sur les balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=fr)
