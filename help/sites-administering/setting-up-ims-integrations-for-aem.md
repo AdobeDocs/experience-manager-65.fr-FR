@@ -2,9 +2,9 @@
 title: Configurer des intégrations IMS pour AEM
 description: Découvrir comment configurer des intégrations IMS pour AEM
 source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Les clientes et clients Adobe utilisent [Adobe Developer Console](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. L’un de ces types d’informations d’identification, celui des informations d’identification du compte de service (JWT), a été abandonné au profit des informations d’identification OAuth serveur à serveur avec le pack de services 20. Cette modification peut être renvoyée vers les Service Packs plus anciens, à partir du Service Pack 11 jusqu’au Service Pack 20 avec l’utilisation d’un correctif que vous pouvez télécharger. [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Les clientes et clients Adobe utilisent [Adobe Developer Console](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. L’un de ces types d’informations d’identification, celui des informations d’identification du compte de service (JWT), a été abandonné au profit des informations d’identification OAuth serveur à serveur avec le pack de services 20. Cette modification peut être renvoyée vers les packs de services plus anciens, à partir du pack de services 11 jusqu’au pack de services 20, avec l’utilisation d’un correctif que vous pouvez télécharger [ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM) peut être intégré à de nombreuses autres solutions Adobe. Par exemple, Adobe Target, Adobe Analytics et d’autres.
 
