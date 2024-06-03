@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7406'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -351,7 +351,7 @@ ht-degree: 99%
       + [Prévisualiser les ressources 3D](/help/assets/previewing-3d-assets.md)
       + [Révision de collections et de ressources situées dans un dossier](/help/assets/bulk-approval.md)
       + [Balises intelligentes améliorées](/help/assets/enhanced-smart-tags.md)
-      + [Dépannage des balises intelligentes pour les informations d’identification OAuth](/help/assets/config-oauth.md)
+      + [Dépanner les balises intelligentes pour les informations d’identification OAuth](/help/assets/config-oauth.md)
       + [Flux d’activité dans la chronologie](/help/assets/activity-stream.md)
       + [Traitement des ressources](/help/assets/assets-workflow.md)
       + [Ajout de zones cliquables](/help/assets/image-maps.md)

@@ -8,9 +8,9 @@ exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1581'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 >[!MORELIKETHIS]
 >
->* [Présentation et entraînement des balises intelligentes](enhanced-smart-tags.md)
->* [Configuration du balisage intelligent](config-smart-tagging.md)
->* [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md)
+>* [Vue d’ensemble et entraînement des balises intelligentes](enhanced-smart-tags.md)
+>* [Configurer le balisage intelligent](config-smart-tagging.md)
+>* [Dépanner les balises intelligentes pour les informations d’identification OAuth](config-oauth.md)
 >* [Tutoriel vidéo sur les balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=fr)
