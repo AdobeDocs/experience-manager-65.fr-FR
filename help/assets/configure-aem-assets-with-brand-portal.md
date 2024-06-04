@@ -10,10 +10,10 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ba60ff06097b7f88ad64dda8ad1575bb88743588
+source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 88%
+source-wordcount: '672'
+ht-degree: 86%
 
 ---
 
@@ -45,11 +45,12 @@ AEM Assets est configuré avec Brand Portal via la console Adobe Developer, q
 >
 >Adobe vous recommande de continuer à utiliser l’ancienne configuration de la passerelle OAuth. Si vous rencontrez des problèmes avec l’ancienne configuration de la passerelle OAuth, supprimez la configuration existante et créez une configuration à l’aide d’Adobe Developer Console.
 
-Cette aide décrit les deux cas d’utilisation suivants :
+<!--
+This help describes the following two use-cases:
 
-* [Nouvelle configuration](#configure-new-integration-65) : si vous êtes un nouvel utilisateur ou une nouvelle utilisatrice de Brand Portal et que vous souhaitez configurer votre instance de création AEM Assets avec Brand Portal, vous pouvez créer une configuration via Adobe Developer Console.
-* [Configuration de la mise à niveau](#upgrade-integration-65) : si vous êtes un utilisateur ou une utilisatrice de Brand Portal disposant d’une configuration sur l’ancienne passerelle OAuth, supprimez la configuration existante et créez une configuration via Adobe Developer Console.
-
+* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets Author instance with Brand Portal, you can create a configuration by way of the Adobe Developer Console. 
+* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user having configuration on legacy OAuth Gateway, delete the existing configuration and create a configuration by way of Adobe Developer Console.
+-->
 Cette aide s’adresse à un public familiarisé avec les technologies suivantes :
 
 * installation, configuration et administration des packages Adobe Experience Manager et AEM ;
