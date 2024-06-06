@@ -11,9 +11,9 @@ exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '672'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ La configuration d’AEM Assets avec Brand Portal nécessite des configuration
 
 Effectuez les étapes suivantes dans l’ordre indiqué si vous configurez AEM Assets avec Brand Portal pour la première fois :
 
-### Création d’une configuration {#create-new-configuration}
+### Créer une configuration {#create-new-configuration}
 
 Procédez comme suit dans la séquence spécifiée pour configurer Experience Manager Assets avec Brand Portal.
 
