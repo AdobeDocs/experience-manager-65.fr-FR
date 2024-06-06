@@ -8,10 +8,10 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -545,6 +545,26 @@ Pour des conditions requises supplémentaires, voir :
 - [Configuration requise pour le déploiement sur serveur unique d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_fr)
 - [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_fr)
 
+### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat et Adobe Reader (version de base)</strong></p> </th>
+   <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020 (Suivi classique)</td>
+   <td>Version 20.004.30006 ou ultérieure<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ Pour des conditions requises supplémentaires, voir :
 - Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 - Droits d’administration pour l’installation de Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
-
-### Adobe Acrobat et Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat et Adobe Reader (version de base)</strong></p> </th>
-   <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020 (Suivi classique)</td>
-   <td>Version 20.004.30006 ou ultérieure<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont des produits différents : « Classique » et « Continu ». Pour plus d’informations et une comparaison des deux suivis, voir [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### Navigateurs {#browsers}
 
@@ -722,7 +722,7 @@ Adobe prend en charge les correctifs urgents ou recommandés publiés par des fo
 
 Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui modifient des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d’informations sur les mises à jour prises en charge, consultez la section [Définitions de correctif prises en charge](https://helpx.adobe.com/fr/aem-forms/aem-forms-third-party-software-patch.html) pour les produits de fournisseurs donnés et les types de correctifs qu’Adobe prend en charge.
 
-Dans des circonstances échappant au contrôle d’Adobe, des correctifs tiers revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande aux clients d’évaluer l’impact de tout correctif urgent provenant d’un tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des tierces parties et engage des efforts commerciaux raisonnables pour résoudre ce genre de problèmes, soit par le biais de programmes d’assistance Adobe normaux, soit par l’intermédiaire de tiers qui rectifient le problème dans un correctif. Cela ne garantit pas qu’un correctif tiers récemment publié, pris en charge par Adobe, fonctionne tel que le documente le fournisseur ou avec AEM Forms on JEE.
+Dans des circonstances échappant au contrôle d’Adobe, des correctifs tiers revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande aux clients et clientes d’évaluer l’impact de tout correctif urgent provenant d’un fournisseur tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des tierces parties et engage des efforts commerciaux raisonnables pour résoudre ce genre de problèmes, soit par le biais de programmes d’assistance Adobe normaux, soit par l’intermédiaire de tiers qui rectifient le problème dans un correctif. Cela ne garantit pas qu’un correctif tiers récemment publié, pris en charge par Adobe, fonctionne tel que le documente le fournisseur ou avec AEM Forms on JEE.
 
 Adobe se réserve le droit de modifier à tout moment les plateformes de fournisseurs tiers de référence prises en charge par une version d’AEM Forms on JEE et les définitions de correctif prises en charge.
 
