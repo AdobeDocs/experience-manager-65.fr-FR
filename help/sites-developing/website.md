@@ -1,6 +1,6 @@
 ---
-title: Création d’un site Web complet (JSP)
-description: Ce tutoriel vous explique comment créer un site web complet avec Adobe Experience Manager (AEM).
+title: Créer un site web complet (JSP)
+description: Ce tutoriel vous permet de créer un site web complet avec Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,14 +10,14 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
 source-wordcount: '4919'
 ht-degree: 99%
 
 ---
 
-# Création d’un site Web complet (JSP){#create-a-fully-featured-website-jsp}
+# Créer un site web complet (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >
@@ -477,7 +477,7 @@ Pour inclure topnav dans votre composant contentpage :
 
 #### Amélioration des pages avec des sous-titres {#enhancing-pages-with-subtitles}
 
-Le composant Page définit les propriétés qui vous permettent de fournir des sous-titres pour les pages. Ajoutez des sous-titres qui fournissent des informations sur le contenu de la page.
+Le composant Page définit les propriétés qui vous permettent de fournir des légendes pour les pages. Ajoutez des sous-titres qui fournissent des informations sur le contenu de la page.
 
 1. Dans votre navigateur, ouvrez la page **Products**.
 1. Dans l’onglet **Page** du sidekick, cliquez sur **Propriétés de la page**.

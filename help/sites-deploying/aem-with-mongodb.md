@@ -10,16 +10,16 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
-ht-degree: 100%
+source-wordcount: '6192'
+ht-degree: 94%
 
 ---
 
 # Adobe Experience Manager avec MongoDB{#aem-with-mongodb}
 
-Cet article vise à améliorer les connaissances sur les tâches et les considérations nécessaires pour déployer AEM (Adobe Experience Manager) avec MongoDB.
+Cet article vise à améliorer les connaissances sur les tâches et les considérations nécessaires pour déployer AEM (Adobe Experience Manager) avec MongoDB.
 
 Pour plus d’informations sur le déploiement, consultez la section [Déploiement et maintenance](/help/sites-deploying/deploy.md) de la documentation.
 
@@ -32,7 +32,7 @@ MongoDB est généralement utilisé pour la prise en charge des déploiements d�
 * nombre élevé de modifications de page ;
 * activations ou déploiements volumineux.
 
-Les critères ci-dessus sont réservés aux instances de création et non aux instances de publication, qui doivent toutes être basées sur TarMK. Le nombre d’utilisateurs et utilisatrices fait référence aux personnes authentifiées, puisque les instances de création n’autorisent pas d’accès non authentifié.
+Les critères ci-dessus sont réservés aux instances d’auteur et non aux instances de publication qui doivent toutes être basées sur TarMK. Le nombre d’utilisateurs et utilisatrices fait référence aux personnes authentifiées, puisque les instances de création n’autorisent pas d’accès non authentifié.
 
 Si les critères ne sont pas remplis, un déploiement TarMK actif/de secours est recommandé pour répondre à la disponibilité. En règle générale, MongoDB doit être pris en compte dans les situations où les exigences de mise à l’échelle sont supérieures à ce qui peut être réalisé avec un seul élément matériel.
 
@@ -46,7 +46,7 @@ Vous trouverez ci-dessous un déploiement minimal pour AEM sur MongoDB. Pour plu
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Un déploiement minimal nécessite trois instances `mongod` configurées en tant qu’ensemble de répliques. Une seule instance est choisie comme principale, les autres étant secondaires. Le choix est géré par `mongod`. Un disque local est associé à chaque instance. Pour que le cluster puisse supporter la charge, un débit minimal de 12 Mo par seconde avec plus de 3 000 opérations d’E/S par seconde (IOPS) est recommandé.
+Un déploiement minimal nécessite trois instances `mongod` configurées en tant qu’ensemble de répliques. Une seule instance est choisie comme principale, les autres étant secondaires. Le choix est géré par `mongod`. Un disque local est associé à chaque instance. La grappe peut donc prendre en charge la charge, un débit minimal de 12 Mo par seconde avec plus de 3 000 opérations d’E/S par seconde (IOPS) est recommandé.
 
 Les auteurs AEM sont connectés aux instances `mongod`, chaque auteur AEM se connectant aux trois instances `mongod`. Les écritures sont envoyées à l’instance principale et les lectures peuvent être lues depuis n’importe quelle instance. Le trafic est distribué en fonction de la charge par un Dispatcher sur l’une des principales instances de création d’AEM. Le magasin de données Oak est un `FileDataStore`. La surveillance de MongoDB est assurée par MMS ou MongoDB Ops Manager en fonction de l’emplacement du déploiement. Le niveau du système d’exploitation et la surveillance des journaux sont fournis par des solutions tierces telles que Splunk ou Ganglia.
 
@@ -60,9 +60,9 @@ Pour obtenir la liste des systèmes d’exploitation pris en charge par AEM 6, 
 
 Les environnements virtualisés sont pris en charge à condition que la communication soit bonne entre les différentes équipes techniques qui gèrent le projet. Cette prise en charge inclut l’équipe qui exécute AEM, l’équipe propriétaire du système d’exploitation et l’équipe gérant l’infrastructure virtualisée.
 
-Les exigences particulières relatives à la capacité d’E/S des instances de MongoDB doivent être traitées par l’équipe gérant l’environnement virtualisé. Si le projet utilise un déploiement dans le cloud, tel qu’Amazon Web Services, les instances devront être configurées avec une capacité d’E/S et une cohérence suffisantes pour prendre en charge les instances de MongoDB. Dans le cas contraire, les processus de MongoDB et le référentiel Oak s’exécutent de manière non fiable et erratique.
+Il existe des exigences spécifiques qui couvrent la capacité d’E/S des instances MongoDB qui doivent être gérées par l’équipe gérant l’environnement virtualisé. Si le projet utilise un déploiement dans le cloud, tel qu’Amazon Web Services, les instances devront être configurées avec une capacité d’E/S et une cohérence suffisantes pour prendre en charge les instances de MongoDB. Dans le cas contraire, les processus de MongoDB et le référentiel Oak s’exécutent de manière non fiable et erratique.
 
-Dans les environnements virtualisés, MongoDB nécessite des configurations d’E/S et de machine virtuelle spécifiques pour s’assurer que le moteur de stockage de MongoDB n’est pas paralysé par des politiques d’allocation de ressources VMWare. Une implémentation réussie garantit qu’il n’existe aucun obstacle entre les différentes équipes et que toutes sont connectées pour offrir les performances requises.
+Dans les environnements virtualisés, MongoDB nécessite des configurations d’E/S et de machine virtuelle spécifiques pour s’assurer que le moteur de stockage de MongoDB n’est pas paralysé par les stratégies d’allocation de ressources VMWare. Une implémentation réussie garantit qu’il n’existe aucun obstacle entre les différentes équipes et que toutes sont connectées pour offrir les performances requises.
 
 ## Considérations matérielles {#hardware-considerations}
 
@@ -105,7 +105,7 @@ Bien qu’il soit possible d’utiliser des outils de ligne de commande pour obt
 
 ### MongoDB Cloud Manager {#mongodb-cloud-manager}
 
-MongoDB Cloud Manager est un service gratuit offert par MongoDB qui permet la surveillance et la gestion des instances de MongoDB. Il offre une visibilité en temps réel sur les performances et l’intégrité du cluster MongoDB. Il gère à la fois les instances hébergées dans le cloud et de manière privée, à condition que l’instance puisse atteindre le serveur de surveillance de Cloud Manager.
+MongoDB Cloud Manager est un service gratuit offert par MongoDB qui permet la surveillance et la gestion des instances de MongoDB. Il fournit une vue des performances et de l’intégrité de la grappe MongoDB en temps réel. Il gère à la fois les instances hébergées dans le cloud et de manière privée, à condition que l’instance puisse atteindre le serveur de surveillance de Cloud Manager.
 
 Il nécessite l’installation d’un agent sur l’instance MongoDB qui se connecte au serveur de surveillance. Il existe trois niveaux d’agent :
 
@@ -113,7 +113,7 @@ Il nécessite l’installation d’un agent sur l’instance MongoDB qui se conn
 * Un agent de surveillance qui peut surveiller l’instance `mongod`.
 * Un agent de sauvegarde qui peut effectuer des sauvegardes planifiées des données.
 
-Bien que l’utilisation de Cloud Manager pour l’automatisation de la maintenance d’un cluster MongoDB simplifie la plupart des tâches de routine, il n’est pas requis et son utilisation pour la sauvegarde ne l’est pas non plus. En choisissant Cloud Manager pour la surveillance, la surveillance est toutefois requise.
+Bien que l’utilisation de Cloud Manager pour l’automatisation de la maintenance d’un cluster MongoDB simplifie la plupart des tâches de routine, il n’est pas requis et son utilisation pour la sauvegarde ne l’est pas non plus. Lors du choix d’un Cloud Manager à surveiller, la surveillance est toutefois requise.
 
 Pour plus d’informations sur MongoDB Cloud Manager, consultez la [documentation de MongoDB](https://docs.cloud.mongodb.com/).
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager est le même logiciel que MongoDB Cloud Manager. Une foi
 
 La surveillance au niveau du système d’exploitation est requise pour exécuter un cluster MongoDB d’AEM.
 
-Ganglia constitue un bon exemple de ce type de système et donne une idée de l’éventail et du niveau de détail des informations requises, qui vont au-delà des indicateurs de santé de base comme le processeur, la charge moyenne et l’espace disque disponible. Pour diagnostiquer les problèmes, des informations de niveau inférieur telles que les niveaux du pool d’entropie, l’attente E/S du processeur, les sockets à l’état FIN_WAIT2 sont requises.
+Ganglia est un bon exemple d&#39;un tel système et il fournit une image de l&#39;étendue et du détail des informations requises qui vont au-delà des mesures de santé de base comme le processeur, la moyenne de chargement et l&#39;espace disque disponible. Pour diagnostiquer les problèmes, des informations de niveau inférieur telles que les niveaux du pool d’entropie, l’attente E/S du processeur, les sockets à l’état FIN_WAIT2 sont requises.
 
 ### Agrégation des journaux {#log-aggregation}
 
@@ -233,7 +233,7 @@ Il est recommandé d’activer une configuration de cache persistante pour les d
 
 ### Prise en charge du système d’exploitation {#operating-system-support}
 
-MongoDB 2.6 utilise un moteur de stockage mappé en mémoire sensible à certains aspects de la gestion au niveau du système d’exploitation entre la mémoire RAM et le disque. Les performances de requête et de lecture de l’instance MongoDB reposent sur la possibilité d’éviter ou d’éliminer les opérations d’E/S lentes, souvent appelées erreurs de page. Ces erreurs de page s’appliquent en particulier au processus `mongod`. Ne les confondez pas avec les erreurs de page au niveau du système d’exploitation.
+MongoDB 2.6 utilise un moteur de stockage mappé en mémoire sensible à certains aspects de la gestion au niveau du système d’exploitation entre la mémoire RAM et le disque. Les performances de requête et de lecture de l’instance MongoDB reposent sur la possibilité d’éviter ou d’éliminer les opérations d’E/S lentes, souvent appelées erreurs de page. Ces erreurs de page s’appliquent en particulier au processus `mongod`. Ne confondez pas cela avec les erreurs de page au niveau du système d’exploitation.
 
 Pour un fonctionnement rapide, la base de données MongoDB ne doit accéder qu’aux données déjà dans la RAM. Les données auxquelles elle doit accéder sont composées d’index et de données. Cette collection d’index et de données est appelée « jeu de travail ». Lorsque le jeu de travail est plus volumineux que la RAM disponible, MongoDB doit paginer ces données à partir du disque, ce qui entraîne un coût d’E/S et évince d’autres données déjà en mémoire. Si cette éviction entraîne le rechargement des données à partir du disque, les erreurs de page dominent et les performances se dégradent. Lorsque le jeu de travail est dynamique et variable, d’autres erreurs de page sont générées pour prendre en charge les opérations.
 
@@ -241,7 +241,7 @@ MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un larg
 
 #### Linux® {#linux}
 
-* Désactivez les paramètres Transparent Huge Pages et défragmentez. Voir [Paramètres Transparent Huge Pages](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) pour plus d’informations.
+* Désactivez les modules externes transparents et désactivez la balise de débogage. Voir [Paramètres Transparent Huge Pages](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) pour plus d’informations.
 * [Réglez les paramètres de lecture anticipée](https://docs.mongodb.com/manual/administration/production-notes/#readahead) sur les périphériques qui stockent vos fichiers de base de données afin que vous puissiez les adapter à votre cas d’utilisation.
 
    * Pour le moteur de stockage MMAPv1, si votre jeu de travail est plus volumineux que la RAM disponible et que le modèle d’accès aux documents est aléatoire, envisagez de réduire la lecture anticipée à 32 ou 16. Évaluez différents paramètres afin de trouver une valeur optimale qui optimise la mémoire résidente et réduit le nombre d’erreurs de page.
@@ -307,7 +307,7 @@ Voir [Journalisation avec WiredTiger](https://docs.mongodb.com/manual/core/journ
 
 >[!NOTE]
 >
->La taille minimale d’enregistrement du journal pour WiredTiger est de 128 octets. Si un enregistrement de journal est inférieur ou égal à 128 octets, il n’est pas compressé par WiredTiger.
+>La taille d’enregistrement de journal minimale pour WiredTiger est de 128 octets. Si un enregistrement de journal est inférieur ou égal à 128 octets, il n’est pas compressé par WiredTiger.
 >
 >Vous pouvez désactiver la journalisation en définissant [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) sur « false », ce qui peut alléger la charge de travail liée à la gestion du journal.
 >
@@ -340,9 +340,9 @@ Avec WiredTiger, MongoDB utilise le cache interne de WiredTiger et le cache du s
 
 Par défaut, WiredTiger utilise la compression par bloc Snappy pour toutes les collections et la compression par préfixe pour tous les index. Vous pouvez configurer les valeurs par défaut de compression à un niveau global ou par collection et par index lors de la création de la collection et de l’index.
 
-Différentes représentations sont utilisées pour les données dans le cache interne de WiredTiger par rapport au format sur le disque :
+Différentes représentations sont utilisées pour les données dans le cache interne de WiredTiger par rapport au format sur le disque :
 
-* Les données du cache du système de fichiers sont identiques au format sur le disque, notamment les avantages de toute compression de fichiers de données. Le cache du système de fichiers est utilisé par le système d’exploitation pour réduire les E/S du disque.
+* Les données du cache du système de fichiers sont identiques au format sur disque, notamment les avantages de toute compression pour les fichiers de données. Le cache du système de fichiers est utilisé par le système d’exploitation pour réduire les E/S du disque.
 
 Les index chargés dans le cache interne de WiredTiger ont une représentation des données différente du format sur le disque, mais peuvent toujours tirer parti de la compression par préfixe d’index pour réduire l’utilisation de la RAM.
 
@@ -405,11 +405,11 @@ En raison de la grande quantité de mémoire des bases de données, la permutati
 
 #### Systèmes de fichiers distants {#remote-filesystems}
 
-Les systèmes de fichiers distants comme NFS ne sont pas recommandés pour les fichiers de données internes de MongoDB (fichiers de base de données de processus mongod), car ils induisent une latence trop importante. Ne pas confondre avec le système de fichiers partagé requis pour le stockage d’Oak Blob (FileDataStore), où NFS est recommandé.
+Les systèmes de fichiers distants tels que NFS ne sont pas recommandés pour les fichiers de données internes de MongoDB (les fichiers de base de données de processus mongod), car ils provoquent une trop grande latence. Ne pas confondre avec le système de fichiers partagé requis pour le stockage d’Oak Blob (FileDataStore), où NFS est recommandé.
 
 #### Lecture anticipée {#read-ahead}
 
-Réglez la lecture anticipée de sorte que lorsqu’une page est paginée en utilisant une lecture aléatoire, les blocs inutiles ne sont pas lus à partir du disque. De tels résultats signifient une consommation inutile de bande passante des E/S.
+Réglez l’option Lecture anticipée de sorte que lorsqu’une page est paginée en utilisant une lecture aléatoire, les blocs inutiles ne sont pas lus à partir du disque. De tels résultats signifient une consommation inutile de bande passante des E/S.
 
 ### Configuration requise pour Linux® {#linux-requirements}
 
@@ -567,13 +567,13 @@ Si vous utilisez VMWare ESX pour gérer et déployer vos environnements virtual
 1. Désactivez la création de bulle de mémoire.
 1. Pré-allouez et réservez de la mémoire pour les machines virtuelles qui hébergent les bases de données de MongoDB.
 1. Utilisez le contrôle d’E/S de stockage pour allouer suffisamment d’E/S au processus `mongod`.
-1. Garantissez les ressources de processeur des machines hébergeant MongoDB en définissant la [réservation de processeur](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA).
+1. Garantissez les ressources du processeur des machines hébergeant MongoDB en définissant [Réservation du processeur](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Envisagez d’utiliser des pilotes d’E/S ParaVirtual. Voir cet [article de la base de connaissances](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. Envisagez d’utiliser des pilotes d’E/S ParaVirtual. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-Pour plus d’informations sur la configuration de MongoDB avec Amazon Web Services, consultez l’article [Configuration de l’intégration d’AWS](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) sur le site Web de MongoDB.
+Pour plus d’informations sur la configuration de MongoDB avec Amazon Web Services, consultez l’article [Configuration de l’intégration d’AWS](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) sur le site Web de MongoDB.
 
 ## Sécurisation de MongoDB avant le déploiement {#securing-mongodb-before-deployment}
 
@@ -585,7 +585,7 @@ Voir cette publication sur le [déploiement sécurisé de MongoDB](https://blogs
 
 Pour servir correctement votre déploiement MongoDB, le système d’exploitation qui héberge le Dispatcher doit exécuter **Apache httpd** **version 2.4 ou ultérieure.**
 
-Assurez-vous également que toutes les bibliothèques utilisées dans votre version sont à jour afin de minimiser les risques de sécurité.
+Assurez-vous également que toutes les bibliothèques utilisées dans votre version sont à jour afin de minimiser les implications de sécurité.
 
 ### Configuration du Dispatcher {#dispatcher-configuration}
 
@@ -595,7 +595,7 @@ Comme le Dispatcher est sans état, il peut être facilement redimensionné hori
 
 L’exécution d’AEM sans un Dispatcher nécessite que la terminaison SSL et l’équilibrage de la charge soient effectués par une autre application. Ceci est nécessaire car les sessions doivent avoir une affinité avec l’instance AEM sur laquelle elles ont été créées, concept connu sous le nom de « connexions persistantes ». Le but est de s’assurer que les mises à jour du contenu présentent un temps de latence minimal.
 
-Consultez la [documentation du dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus d’informations sur la façon de le configurer.
+Consultez la [documentation du dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher) pour plus d’informations sur la façon de le configurer.
 
 ### Configuration supplémentaire {#additional-configuration}
 

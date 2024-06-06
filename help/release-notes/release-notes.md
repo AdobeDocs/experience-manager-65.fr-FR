@@ -5,17 +5,16 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
-workflow-type: ht
-source-wordcount: '3994'
-ht-degree: 100%
+source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
+workflow-type: tm+mt
+source-wordcount: '3032'
+ht-degree: 74%
 
 ---
 
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
 
-<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
+<!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
 <!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
@@ -26,126 +25,125 @@ ht-degree: 100%
 
 | Produit | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version | 6.5.20.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Version | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | Jeudi 22 février 2024 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | Jeudi 6 juin 2024 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## Éléments compris dans [!DNL Experience Manager] 6.5.20.0 {#what-is-included-in-aem-6520}
+## Éléments compris dans [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.20.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clientes et les clients, des correctifs de bugs ainsi que des améliorations en termes de performances, de stabilité et de sécurité, publiés depuis la version initiale 6.5 en avril 2019. [Installez ce pack de services](#install) dans [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.21.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients et des correctifs. Elle comprend également des améliorations en termes de performances, de stabilité et de sécurité, publiées depuis la mise à disposition initiale de la version 6.5 en avril 2019. [Installez ce pack de services](#install) pour [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Principales fonctionnalités et améliorations
 
-<!-- * _6.5.20.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+<!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
-* Dynamic Media prend désormais en charge le format d’image HEIC sans perte pour les systèmes iOS et iPadOS d’Apple. Consultez également la section [fmt](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) dans l’API de diffusion et de rendu d’images Dynamic Media.
-* Le gestionnaire de sites multiples (MSM) prend désormais en charge les structures de fragments d’expérience, y compris les dossiers et les sous-dossiers, pour un déploiement en masse efficace des fragments d’expérience sur des Live Copies.
+* Un nouvel identifiant plus facile à utiliser pour l’authentification de serveur à serveur, remplaçant l’identifiant de compte de service (JWT) existant. (NPR-41994)
 
-### [!DNL Forms]
+### [!DNL Assets]
 
-* **Rapports de transactions dans AEM Forms on JEE** : la fonctionnalité de création de rapports sur les transactions a été introduite pour AEM Forms on JEE, permettant ainsi l’enregistrement complet des transactions de document telles que les conversions, les rendus et les envois. Cet apport améliore l’efficacité et facilite la conservation des données. Cette fonction est désactivée par défaut. Vous pouvez l’activer à partir de l’interface utilisateur d’administration.
-* **Sécurité renforcée avec prise en charge d’ECDSA** : AEM Forms offre désormais une prise en charge robuste de l’algorithme de signature numérique (ECDSA) avec courbes elliptiques pour les piles JEE et OSGi. Il est désormais possible de signer, certifier et vérifier des documents PDF avec une sécurité renforcée. Les algorithmes avec courbes EC pris en charge incluent les éléments suivants :
-   * Courbe elliptique ECDSA P256 avec algorithme de condensé SHA256
-   * Courbe elliptique ECDSA P384 avec algorithme de condensé SHA384
-   * Courbe elliptique ECDSA P512 avec algorithme de condensé SHA512
-* **Compatibilité transparente avec Windows 11 pour Forms Designer** : AEM Forms Designer prend désormais en charge Windows 11, ce qui facilite l’installation et le fonctionnement. Il est possible d’effectuer une mise à niveau en toute confiance vers Windows 11 sans avoir à réinstaller Forms Designer ni se soucier des problèmes de compatibilité, pour un workflow ininterrompu.
-* **Amélioration de l’accessibilité avec le rôle « légende » personnalisé dans AEM Forms Designer** : AEM Forms Designer inclut désormais un rôle d’accessibilité personnalisé appelé « légende », qui permet de créer des fichiers XDP avec des éléments de sous-titrage personnalisés. Cette fonctionnalité améliore l’accessibilité en permettant d’intégrer des sous-titres personnalisés dans les conceptions de document afin d’améliorer l’inclusion et l’expérience utilisateur.
+#### Améliorations
+
+Voici la liste des améliorations incluses dans cette version :
+
+* L’onglet IPTC prend désormais en charge [!UICONTROL Texte de remplacement] et [!UICONTROL Description étendue] des champs de texte. (ASSETS-34918)
+
+#### Correctifs d’accessibilité
+
+Voici la liste des correctifs d’accessibilité inclus dans cette version :
+
+* Si l’état de traitement d’une ressource est Échec ou Échec des métadonnées, l’interface utilisateur des sous-titres et du suivi audio ne fonctionne pas correctement. (ASSETS-37281)
+* Lorsque vous enregistrez des métadonnées de ressource et tentez de les modifier, le nom de la langue ne s’affiche pas. (ASSETS-37281)
 
 <!-- ### [!DNL Forms]
-
-* text -->
+* A -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## Problèmes corrigés dans le pack de services 20 {#fixed-issues}
+## Problèmes corrigés dans le pack de services 21 {#fixed-issues}
 
-### [!DNL Sites]{#sites-6520}
+### [!DNL Sites]{#sites-6521}
 
-<!--#### Accessibility{#sites-accessibility-6520}
+#### Accessibilité {#sites-accessibility-6521}
 
-* text -->
+* Le libellé **[!UICONTROL Recherches enregistrées]** n’est pas persistant. L’espace réservé est utilisé comme unique libellé visuel pour un champ de texte. (SITES-3050)
 
-#### Interface utilisateur d’administration{#sites-adminui-6520}
+#### Interface utilisateur d’administration{#sites-adminui-6521}
 
-* Le champ `Workflow Title` est marqué par `*` selon les besoins, mais il n’y a aucune validation. (SITES-16491)
+* Quand vous cliquez sur **[!UICONTROL Sites]** > **[!UICONTROL Composants principaux]** > **[!UICONTROL Propriétés]** > onglet **[!UICONTROL Autorisations]** > **[!UICONTROL Autorisations en vigueur]**, la boîte de dialogue **Autorisations en vigueur** ne s’ouvre pas. (SITES-17378)
 
-<!--#### Classic UI{#sites-classicui-6520}
+<!-- #### Classic UI{#sites-classicui-6521} 
 
-* text -->
+* A -->
 
-#### [!DNL Content Fragments]{#sites-contentfragments-6520}
+#### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
-* Les dossiers de configuration imbriqués n’étaient plus pris en charge et les dossiers de modèles de fragments de contenu n’étaient plus visibles après la mise à niveau vers AEM 6.5.18 ou vers AEM 6.5.19. (SITES-18110)
-* Certains sous-dossiers ne peuvent pas effectuer de sélection à partir des modèles de fragment de contenu hérités. Les dossiers doivent être pris en charge sans avoir de propriété `jcr:content`, même si les dossiers DAM créés par le biais de l’interface utilisateur ont un tel nœud. (SITES-17943)
+* Correction de la double inclusion des éléments du formulaire. (SITES-21109)
+* Lors de la création d’un fragment de contenu, il arrive que le bouton Fermer ne réponde plus, ce qui provoque un blocage de la page entière et nécessite une actualisation de la page pour fermer le fragment de contenu. En ce qui concerne le problème de création de version, le système crée une nouvelle version d’un fragment de contenu. Ce problème survient même lorsque l’utilisateur n’a apporté aucune modification, simplement en interagissant avec l’éditeur de texte enrichi ou avec un champ de texte. (SITES-21187)
 
-#### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6520}
+#### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6521}
 
-<!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* Lors de l’exécution d’une requête GraphQL pour [filtrer les résultats](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) à l’aide de variables facultatives, si une valeur spécifique n’est **pas** fournie pour la variable facultative, la variable est alors ignorée dans l’évaluation du filtre. (SITES-17051)
+* Lors de la mise à niveau d’Adobe Experience Manager de la version 6.5.19.0 vers la version 6.5.20.0, le chemin `/libs/cq/graphql/sites/graphiql` était supprimé. (SITES-20098)
 
-<!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
+<!-- #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6521}
 
-* text -->
+* W -->
 
-#### [!DNL Content Fragments] - API REST{#sites-restapi-6520}
+<!-- #### [!DNL Content Fragments] - REST API{#sites-restapi-6521}
 
-* Avec la mise à niveau de la bibliothèque `org.json`, il y a eu un changement dans la désérialisation des nombres décimaux. Auparavant, ils étaient convertis « par défaut » selon la classe Double, et maintenant selon la classe BigDecimal. Au lieu de cela, les valeurs de propriété de métadonnées, stockées par le biais de l’API REST, doivent être converties selon le type Double à partir de la classe BigDecimal. (SITES-16857)
+* W -->
 
-#### Back-end principal{#sites-core-backend-6520}
+<!-- #### Core Backend{#sites-core-backend-6521}
 
-* Lorsque la publication rapide d’un fragment de contenu est utilisée, le chargement se poursuit et la publication n’est pas effectuée. En d’autres termes, la publication rapide ne fonctionne pas pour les fragments de contenu après une mise à niveau de pack de services d’AEM 6.5.7 vers AEM 6.5.17. Lorsque l’utilisateur ou l’utilisatrice a essayé la publication gérée, cela a fonctionné. Cependant, lorsque la publication rapide a été essayée, la publication n’était pas effectuée. Plus précisément, `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` a provoqué le blocage du système. (SITES-17311)
-* Les fragments de contenu ne peuvent pas être sérialisés avec l’exporteur Jackson : le chargement de la page est interrompu lorsqu’un fragment de contenu est référencé dans une page (utilise le code de l’exporteur Jackson) et que toute balise est ajoutée à un fragment de contenu. (SITES-18096)
+* W -->
 
-#### Composants principaux{#sites-core-components-6520}
+<!-- #### Core Components{#sites-core-components-6521}
 
-* L’installation du package de composants principaux CIF sur AEM entraîne une modification de la valeur `:type` des composants existants. La modification signifie leur rendu n’est plus effectué sur les pages auxquelles ils ont été ajoutés. (SITES-17601)
+* I -->
 
-#### Intégration de campagne{#sites-campaign-integration-6520}
+<!-- #### Campaign integration{#sites-campaign-integration-6521}
 
-* AEM utilisait une liste autorisée, également appelée `whitelist`, en raison d’un rapport de vulnérabilité. La liste autorisée empêchait les clientes et les clients d’utiliser les fonctionnalités nécessaires. (SITES-16822)
+* A -->
 
-#### Fragments d’expérience{#sites-experiencefragments-6520}
+#### Fragments d’expérience{#sites-experiencefragments-6521}
 
-* MSM pour les fragments d’expérience prend désormais en charge le déploiement en masse vers les structures de contenu des fragments d’expérience, y compris les dossiers et les sous-dossiers. (SITES-16004)
+* Le déploiement de fragments d’expérience de `masters/language` vers `country/language` ne met pas à jour les références croisées. (SITES-21172)
+* Les modèles qui ne sont pas seulement spécifiés dans `cq:allowedTemplates`, mais qui ont le paramètre `allowedPaths` configuré au niveau du modèle, apparaissent comme des options lors de la création d’un fragment d’expérience. (SITES-20855)
 
-<!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
+<!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6521}
 
-* text
+* T -->
 
-#### Launches{#sites-launches-6520}
+<!-- #### Launches{#sites-launches-6521} -->
 
-* text -->
+<!-- DELETED MAY 22, 2024 FROM TOTAL RELEASE CANDIDATE ISSUES * The `sourceRootResource` configured in the Launch configuration within CRXDE Lite points to content that no longer exists, leading to a malfunction when attempts are made to delete launches. Delete launches even if the page is deleted or if the path is not the same. (SITES-20750) -->
 
-#### MSM - Live Copies{#sites-msm-live-copies-6520}
+#### MSM - Live Copies{#sites-msm-live-copies-6521}
 
-* Une exception « `Is not modifiable` » est générée lors du déploiement du composant. Plus précisément, une exception `org.apache.sling.servlets.post.impl.operations.ModifyOperation` survient lors du traitement de la réponse. (SITES-18809)
-* Impossible de déployer les modifications sur des Live Copies spécifiques des fragments d’expérience. (SITES-17930)
-* Lorsqu’un utilisateur ou une utilisatrice ajoute une annotation à un composant sur une page de plan directeur, puis la déploie, le nombre d’annotations sur la Live Copy s’affiche incorrectement. (SITES-17099)
-* Le bouton de déploiement de MSM d’une page parente à une page enfant ne fonctionne pas dans l’interface utilisateur graphique tactile. Lorsque cette option est sélectionnée, l’erreur suivante s’affiche : `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
+* Recouvrement du composant Page pour ajouter des onglets dans les propriétés de page. L’un d’eux est la configuration de la page et possède une propriété permettant d’ajouter une URL de fragment d’expérience. Le lien configuré dans les propriétés de la page pour le fragment d’expérience ne change pas pour toute copie de langue créée pour cette page. Le lien configuré doit changer suivant l’URL de la copie de langue. (SITES-19580)
 
-#### Éditeur de page{#sites-pageeditor-6520}
+#### Éditeur de page{#sites-pageeditor-6521}
 
-* L’aperçu de l’éditeur de thèmes Forms ne fonctionne pas. Lorsque l’option Aperçu est sélectionnée, seule une icône de chargement est visible. (SITES-17164)
+* Le mode d’édition applique un arrière-plan gris de manière irrégulière, qui ne respecte pas les normes WCAG de contraste des couleurs (normes pour l’accessibilité des contenus web). (SITES-20060)
 
-### [!DNL Assets]{#assets-6520}
+### [!DNL Assets]{#assets-6521}
 
-* Impossible de valider les champs basés sur des règles dans l’assistant de l’éditeur de métadonnées et affichage d’un message d’erreur « Champs obligatoires manquants ». (ASSETS-31396)
-* Une fois qu’un PDF est déplacé vers un autre emplacement, l’option **[!UICONTROL Afficher la page]** disparaît. (ASSETS-30538)
-* Impossible de sélectionner une image avec des autorisations de lecture. (ASSETS-32199)
-* Impossible de modifier la taille de la carte dans les paramètres d’affichage. (ASSETS-31667)
-* Échec du chargement du type de fichier .oft. (ASSETS-30109)
-* Lorsque vous essayez d’ajouter un champ de métadonnées personnalisé en tant que colonne supplémentaire au rapport, les cases ne sont pas cochées. (ASSETS-31671)
-* L’opération de déplacement de ressources ne fonctionne pas correctement dans le pack de services 16 d’Experience Manager. (ASSETS-30598)
+* Si une ressource est publiée sur Brand Portal, son état de publication reste incohérent. (ASSETS-36807)
+* Les ressources ne sont pas supprimées lorsque vous les supprimez d’une instance à l’aide d’un appel API. (ASSETS-35131)
+* Lorsque vous essayez d’importer des métadonnées, une `question mark (?)` remplace l&#39;insertion de caractères dans une autre langue que l&#39;anglais.  (ASSETS-35091)
+* When `dc:title` est utilisée avec une chaîne de type de données, l’arborescence de contenu des ressources ne fonctionne pas correctement après l’installation du Service Pack 6.5.19. (ASSETS-34684)
+* Une erreur s’affiche si le nom d’une ressource contient un caractère spécial. (ASSETS-33248)
 
-#### [!DNL Dynamic Media]{#assets-dm-6520}
+#### [!DNL Dynamic Media]{#assets-dm-6521}
 
-* À compter du 1er mai 2024, Adobe Dynamic Media ne prendra plus en charge les éléments suivants :
-
+* Dans AEM version 6.5.18, toutes les zones réactives ajoutées à une ressource ne s’affichent pas lorsque vous modifiez les zones réactives. Cependant, toutes les zones réactives fonctionnent dans une ressource publiée, mais vous ne pouvez pas les modifier ultérieurement si nécessaire. (ASSETS-33609)
+* Les derniers fichiers EPS chargés ne génèrent pas de miniatures après retraitement. (ASSETS-32617)
+* Dans l’onglet Outils > Ressources > Configuration de la publication Dynamic Media > Attributs de requête, les entrées `Width(px)` et `Height(px)` en espagnol, en italien et en portugais. Ils ne sont pas alignés les uns avec les autres pour ces emplacements. (ASSETS-31896)
+* À compter du 1er mai 2024, Adobe Dynamic Media a mis fin à la prise en charge des éléments suivants :
    * SSL (Secure Socket Layer) 2.0
    * SSL 3.0
    * TLS (Transport Layer Security) 1.0 et 1.1
@@ -165,156 +163,117 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
       * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
       * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
-  Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
-* Une fois qu’une ressource est chargée dans AEM, le workflow `Update_asset` est déclenché. Cependant, le workflow ne se termine jamais. Le workflow se termine uniquement à l’étape de chargement du produit. L’étape suivante est le chargement par lots de Scene7, mais ce processus n’est pas pris en compte dans AEM. (ASSETS-30443)
-* Vous avez besoin d’un meilleur moyen de gérer les vidéos autres que Dynamic Media dans le composant Dynamic Media. Ce problème donnait une exception qui instanciait `dynamicmedia_sly.js`. (ASSETS-31301)
-* L’aperçu fonctionne pour toutes les ressources, les visionneuses de vidéos adaptatives et les vidéos. Cependant, il renvoie une erreur 403 pour les fichiers `.m3u8` (qui, d’ailleurs, fonctionnent toujours par des liens publics). (ASSETS-31882)
-* Correction du statut `scene7SmartCropProcessingStatus`. Les métadonnées vidéo de recadrage intelligent indiquaient un échec même en cas de réussite. (ASSETS-31255)
+### [!DNL Forms]{#forms-6521}
 
-### [!DNL Forms]{#forms-6520}
+Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d’un package complémentaire distinct une semaine après la date de publication prévue du pack de services [!DNL Experience Manager]. Dans ce cas, la publication du package complémentaire AEM 6.5.21.0 Forms est planifiée pour le vendredi 13 juin 2024. Une liste des correctifs et améliorations de Forms est ajoutée à cette section après cette publication.
 
-<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
+<!-- #### [!DNL Adaptive Forms]
 
-#### [!DNL Adaptive Forms]
-
-* Si vous tentez d’intégrer AEM Forms à une plateforme de messagerie avec une URL publiée AEM, AEM Forms n’ajoute pas `method=post` lors du rendu de la page. Ce problème se produit même si `POST` est défini dans l’action Envoyer avec l’URL. Par conséquent, la plateforme de messagerie ne reconnaît pas cela comme un formulaire. (FORMS-12614)
-* Si vous sélectionnez le champ de date avec un modèle d’affichage dans le pack de services 6.5.18.0 d’AEM Form, vous ne pouvez pas sélectionner la date courante à l’aide du clavier. (FORMS-12736)
-* Dans les packs de service 6.5.17.0 et 6.5.18.0 d’AEM Forms, si vous basculez d’un mois à l’autre dans le widget Calendrier, le composant Sélecteur de date affiche une ligne supplémentaire. (FORMS-11869)
-* Si vous cliquez sur une image à l’aide de la fonction « Prendre une photo » du composant Pièce jointe d’un appareil iOS, toutes les images sont ajoutées au dossier portant le même nom. (FORMS-12224)
-* Si vous mettez à jour une option existante dans un groupe de boutons radio, des valeurs de traduction incorrectes sont publiées. (FORMS-12575)
-* Si vous ajoutez des caractères à un formulaire adaptatif sur un appareil Android™, vous pouvez saisir plus de caractères que le nombre maximal de caractères défini dans le champ Texte sur les appareils Android™. Cependant, cela fonctionne si vous sélectionnez le type d’entrée HTML5. (FORMS-12748)
-* En raison de la concordance des libellés Aria-label et aria-labelledby, les lecteurs d’écran ne sont pas en mesure de faire la distinction entre les deux. Pour résoudre ce problème, le libellé « aria-labelledby » est remplacé par « aria-describedby » pour les champs de formulaire. (FORMS-12436)
-* Un auteur ou une autrice utilise le composant « Formulaires adaptatifs - Incorporer (v2) » pour incorporer un formulaire adaptatif dans sa page Sites. Lorsque le formulaire incorporé contient un composant CAPTCHA (Service CAPTCHA > reCAPTCHA, Paramètres > reCAPTCHA-v2), la page Sites ne s’affiche pas. Cela se produit lorsque la personne tente d’afficher la page Sites à l’aide de l’option « Afficher comme publié(e) » sur l’instance de création. L’erreur suivante s’affiche comme suit (FORMS-11859) :
-  `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
-
-* Si vous tentez de sélectionner la date à l’aide du composant de sélecteur de date, la valeur n’est pas mise à jour et affiche NULL. (FORMS-12742, FORMS-12736)
-
-* Si vous effectuez la mise à niveau vers le pack de services AEM 6.5.19.0, après la mise à jour d’une nouvelle langue vers le dictionnaire existant, celle-ci n’est pas fusionnée avec les lignes « guideContainer » pour ajouter un paramètre régional à un formulaire. (FORMS-12947)
-
-* Sur le pack de services 6.5.19.0 d’AEM Forms, l’opération webservice appelée sur Java™ 11 échoue avec l’erreur (FORMS-12329) :
-  `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
-
-* Si vous appelez l’opération « receive » pour « EmailService » sur le pack de services 6.5.18.0 d’AEM Forms, une exception est générée (FORMS-12050) :
-  `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
-
-* Lorsque le mode FIPS est activé sur le pack de services 6.5.18.0 d’AEM Forms, la création d’une personne sous le DOM par défaut échoue avec l’erreur (FORMS-11857) :
-  `com.adobe.idp.cx.a: error seeding random number generator`
-
-* Si vous sélectionnez des polices dans ADMINUI sous le chemin d’accès `Home>Services>PDF Generator>Adobe PDF Settings`, aucune sélection n’est effectuée. De plus, dans un profil standard ou personnalisé, la zone de liste des polices disponibles est vide. Il n’est donc pas possible de personnaliser la sous-liste de **Toujours incorporer** ou **Ne jamais incorporer**. L’utilisateur ne peut pas configurer la police de ses PDF avec PDF Generator. Les journaux n’affichent aucun message d’erreur pertinent. (FORMS-12095)
-
-* Dans le pack de services 6.5.18.0 d’AEM Forms, il est impossible de créer des paramètres de sécurité et aucune erreur ni aucun journal du serveur ne s’affiche. En revanche, un message d’erreur contextuel s’affiche à l’écran. (FORMS-12212)
-
-* Dans le pack de services 6.5.18.0 d’AEM Forms, si vous envoyez un formulaire adaptatif sur le processus JEE, la pièce jointe du formulaire adaptatif n’est pas envoyée au processus JEE, ce qui entraîne l’échec de l’application. (FORMS-12232, FORMS-12228)
-
-* Si vous convertissez un PDF en PDF/A-2b ou PDF/A-3B, ce dernier ne se convertit pas et l’erreur s’affiche comme suit : (FORMS-12790).
-
-  ```
-  OCCD contains Order key that does not reference all layers.
-  -> Optional content configuration dictionary has no Name entry.
-  -> Font not embedded (and text rendering mode not 3).
-  obj(65, 0)
-  Page: 1
-  -> Font not embedded (and text rendering mode not 3).
-  obj(67, 0)
-  Page: 1
-  -> PDF/A entry missing. 
-  -> PDF/A entry missing.
-  ```
-
-* Dans AEM Forms 6.5.18.0, lorsqu’un formulaire adaptatif est publié, toutes ses dépendances, y compris les stratégies, sont republiées, même si aucune modification ne leur a été apportée. (FORMS-10454)
-
-* Si vous sélectionnez « Microsoft® SharePoint » lors de l’exécution de Configuration Manager sur AEM Forms 6.5.19.1 avec la configuration clé en main de JBoss®, l’installation EAR de LiveCycle JBoss® échoue et affiche l’erreur suivante : (FORMS-12463).
-
-  ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
-
-* Lorsqu’un utilisateur ou une utilisatrice crée un fragment de document à l’aide du modèle de données de formulaire dans AEM Forms, pack de services 6.5.19.0, les noms de variable apparaissent non définis dans le panneau latéral. Toutefois, les noms des variables s’affichent lorsque vous les faites glisser sur le panneau du formulaire ou lorsque vous cliquez dessus. (FORMS-13238)
+* THIS BUG WAS ALREADY REPORTED IN THE 6.5.20.0 RELEASE NOTES. IS IT NEEDED AGAIN IN THE 6.5.21.0 RELEASE NOTES? (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095) -->
 
 
-#### [!DNL Forms Designer] {#forms-designer-6520}
+<!-- #### [!DNL Forms Designer] {#forms-designer-6521}
+
+* W -->
+
+### Foundation {#foundation-6521}
+
+#### Apache Felix {#foundation-apachefelix-6521}
+
+* Problème de mise à niveau avec AEM 6.5 Service Pack 19 (SP19) dans lequel le chemin racine du contexte du serveur d’applications est absent pour les demandes non autorisées vers Apache Felix suite à l’installation de SP19. Mise à jour vers la console de gestion web Apache Felix 4.9.8. (NPR-41933)
+
+#### Campaign{#foundation-campaign-6521}
+
+* Le pack de service 15 d’AEM 6.5 produit des journaux d’erreurs continus avec des entrées majeures. Les problèmes suivants ont été signalés :
+
+   * Erreur 404 (INFO) pour une ressource manquante dans le chemin `/libs/granite/ui/content/shell/start.html`.
+   * Entrée dans le journal d’erreurs pour une SlingException non interceptée en raison d’une `NullPointerException` dans `CampaignsDataSourceServlet.java:147`.
+
+  Les journaux d’erreurs ne doivent pas être remplis d’entrées d’erreurs fréquentes et volumineuses, et l’instance AEM doit fonctionner sans problèmes liés à des ressources manquantes ou à des exceptions. (CQ-4357064)
+
+#### Services cloud{#foundation-cloudservices-6521}
+
+* Supprimez Google Guava des Cloud Service AEM. (CQ-4356436)
+
+<!-- #### Communities {#foundation-communities-6521}
+
+* U -->
+
+<!-- #### Content distribution{#foundation-content-distribution-6521}
+
+* T -->
+
+#### Granite{#foundation-granite-6521}
+
+* Vous ne pouvez pas sélectionner **Supprimer** ou **Modifier** without **Parcourir** dans le navigateur Configuration. (GRANITE-51002)
+
+#### Intégrations{#foundation-integrations-6521}
+
+* Concernant `cq-target-integration`, il est nécessaire de retirer l’utilisation de Google Guava, excepté pour des tests. (CQ-4357101)
+* Remplacement des informations d’identification du compte de service (JSON Web Token ou JWT) par les informations d’identification OAuth2 Server-to-Server (également appelées &quot;entités de service&quot;). (NPR-41994)
+* La demande de création d’audience échoue avec une configuration IMS (système de gestion des identités). (NPR-41888)
+* Lorsqu’un client ou une cliente tente de consulter la page Payload, le contenu ne s’affiche pas correctement en raison d’une URL mal formulée, et une erreur 404 s’affiche. Un symbole de point d’interrogation manquant dans l’URL, avant les paramètres de requête, provoquait l’erreur. Pour ce problème, le client doit insérer le symbole du point d’interrogation afin d’afficher correctement la page Payload. (NPR-41957)
+* Supprimez le code et la dépendance d’Adobe Search &amp; Promote d’AEM 6.5, qui a atteint la fin de vie le [Septembre 2022 selon les avis](https://experienceleague.adobe.com/fr/docs/discontinued/using/search-promote). (NPR-41855)
+
+#### Localisation{#foundation-localization-6521}
+
+* Dans l’éditeur de modèles, la chaîne de texte *`No video available.`* n’est pas localisée. (SITES-13190)
+* Les chaînes de caractères, après l’activation ou la désactivation d’un utilisateur ou d’une utilisatrice, ne sont pas localisées dans **Outils** > **Sécurité** > **Utilisateurs et utilisatrices** > *n’importe quel_nom_d’utilisateur_ou_utilisatrice* > **Activer** > **OK**, après la sélection de *n’importe quel_nom_d’utilisateur_ou_utilisatrice* > **Désactiver** > **OK**. (NPR-41737)
+
+#### Plateforme{#foundation-platform-6521}
+
+* L’erreur `Unclosed resource resolver` se produit pour `com.day.cq.mailer.impl.DefaultMailService`. La classe `MessageGatewayService`, prête à l’emploi, était utilisée sans résolveur de ressources. Le problème s’est produit sur n’importe quelle page avec un bouton d’envoi de formulaire qui envoie un courrier électronique à l’aide de cette classe. (NPR-41853)
+* Dans le **À propos de Adobe Experience Manager** , l’année du copyright est toujours 2023. (CQ-4356349)
 
 
-* Si vous effectuez la mise à niveau vers le pack de services 6.5.18.0 d’AEM Forms, en raison d’une gestion des exceptions manquante, les fichiers XDP transmis par le service de sortie avec l’option de PDF balisé activée échouent. (LC-3921757)
+<!-- #### Sling{#foundation-sling-6521}
 
-* Si vous générez un PDF à l’aide d’AEM Forms Designer, les niveaux d’en-tête sont balisés dans l’arborescence d’accessibilité avec l’élément graphique, par exemple une zone de rectangle. (LC-3921687)
+* T -->
 
-* Sur AEM Forms Designer installé via Workbench, les informations de version ne sont pas explicites dans `Control Panel/Programs/Programs and Features`. (LC-3921976)
+#### Traduction{#foundation-translation-6521}
 
-<!--* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)-->
+* Problème concernant le statut de la traduction prête à l’emploi d’AEM 6.5.19 qui ne se met pas à jour comme prévu pour un lancement. Après l’import d’un fichier traduit dans un traitement de traduction associé à un lancement AEM, le statut doit être modifié en `Approved`. Au lieu de cela, le statut devenait `Ready for Review`, ce qui n’est pas le comportement attendu. (NPR-41756)
+* Lors de la création de plusieurs configurations et de l’accès aux configurations des services de traduction Cloud, certains éléments ne s’affichent pas dans l’interface d’utilisation. Seuls les 40 premiers éléments/dossiers s’affichent ; le chargement différé est déclenché mais n’ajoute pas de contenu supplémentaire. (NPR-41829)
+* Des caractères altérés se produisent si la page Autorisations contient du japonais dans l’interface utilisateur tactile. (NPR-41794)
+* AEM 6.5.14 et 6.5.9 n’envoient pas d’émoticône pour traduction. (CQ-4357000)
 
-* Si vous créez un fichier XDP sur AEM Forms Designer, la balise Formulaire de bouton n’est pas imbriquée dans la balise de paragraphe parent (balise p) à la sortie du PDF. (LC-3921719)
+#### Interface utilisateur{#foundation-ui-6521}
 
-* Si vous créez un fichier XDP sur AEM Forms Designer, l’objet d’arrière-plan est également balisé lorsque vous naviguez dans les balises de formulaire à la sortie du PDF. (LC-3921687)
+* Dans Outils > Sécurité > Utilisateurs et utilisatrices > &lt;nom_utilisateur_ou_utilisatrice> > Profils, dans la boîte de dialogue **Modifier les paramètres de l’utilisateur ou de l’utilisatrice**, cliquer sur Annuler ne quitte pas la boîte de dialogue. (NPR-41793)
+* Le composant Granite `pathfield` dans `/libs/granite/ui/components/coral/foundation/form/pathfield` ne parvient pas à activer le bouton **[!UICONTROL Sélectionner]** lorsqu’une ressource est sélectionnée. Une fois que le champ de chemin d’accès s’affiche et que l’utilisateur coche la case de la ressource, la variable **[!UICONTROL Sélectionner]** n’est pas activé ; il ne passe pas du gris au bleu. (NPR-41970)
+* Il existe un problème avec le champ de référence du modèle de fragment de contenu dans AEM. Bien que le champ de référence du modèle de fragment de contenu soit défini comme obligatoire, le système permet aux utilisateurs et aux utilisatrices de cliquer sur Enregistrer pour enregistrer le contenu avec des valeurs non compatibles avec le modèle de fragment de contenu dans certains scénarios. Le bouton Enregistrer doit être grisé (inaccessible). (NPR-41894)
+* Les boîtes de dialogue standard de l’interface d’utilisation de Coral qui utilisent l’action `successresponse` doivent déclencher une réponse de confirmation de réussite après l’action. Cependant, dans le pack de services 19 d’AEM 6.5, l’action de nouveau chargement n’est pas appelée et aucun message ne s’affiche. (NPR-41797)
+* Les liens des notifications AEM ne fonctionnent pas dans le pack de services 18 d’AEM 6.5. Lors de la mise à niveau vers le pack de services 18, les liens des notifications AEM ne fonctionnent pas lors de la sélection de messages via le bouton des notifications. (NPR-41792)
 
-### Foundation {#foundation-6520}
+<!-- #### WCM{#foundation-wcm-6521}
 
-#### Communities {#communities-6520}
+* T -->
 
-* Échec des diagnostics de synchronisation des utilisateurs et des utilisatrices après la configuration de la synchronisation des utilisateurs et des utilisatrices. (NPR-41693)
+#### Workflow{#foundation-workflow-6521}
 
-<!-- #### Content distribution{#foundation-content-distribution-6520}
+* Dans AEM 6.5.18, des erreurs répétées se produisent lors de la suppression du cache des métadonnées des utilisateurs et des utilisatrices au cours d’une purge. (NPR-41762)
 
-* text -->
-
-#### Intégrations{#integrations-6520}
-
-* Supprimez tout le code et les dépendances d’Adobe Search&amp;Promote d’AEM 6.5. (NPR-40856)
-
-#### Localisation{#localization-6520}
-
-* L’attribut aria-label « close » n’est pas localisé dans **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez un dossier, puis, sur la barre d’outils, sélectionnez l’onglet **[!UICONTROL Propriétés]** > **[!UICONTROL Autorisations]** > nom de la personne membre. (NPR-41705)
-* Une info-bulle est tronquée pour le champ **[!UICONTROL Mot de passe du magasin de clés]** sur la page Configuration SSL pour les paramètres régionaux ENG, FRA, KOR, DEU et PTB. (NPR-41367)
-
-#### Plateforme{#foundation-platform-6520}
-
-* Problème lors de l’intégration de Campaign à AEM provoquée par le servlet /api ne renvoyant pas le modèle correct dans le json href. La raison en était qu’AEM ne recevait pas l’en-tête X-Forward-Proto, ce qui forçait la requête à répondre avec un modèle HTTP au lieu de HTTPS. Par conséquent, la possibilité d’activer et de désactiver la sélection de modèle en fonction d’une configuration OSGI doit être ajoutée. (GRANITE-48454)
-
-#### Sling{#foundation-sling-6520}
-
-* Le lot `org.apache.sling.resourceMerger` 1.4.2 renvoie une exception à partir d’AEM 6.5, pack de services 17 et versions ultérieures. Sling Resource Merger 1.4.4 doit être inclus dans le pack de services 20. (NPR-41630)
-
-#### Traduction{#foundation-translation-6520}
-
-* Suite au déploiement du pack de services 18 d’AEM 6.5, un problème s’est produit avec l’onglet Filtres de l’éditeur de règles de traduction. Lorsqu’un contexte est sélectionné, en cliquant sur Modifier > Enregistrer, un guillemet double en tant que caractère HTML apparaît la prochaine fois que vous ouvrez le même contexte. Essentiellement, les règles de traduction n’étaient pas correctement enregistrées. (NPR-41624)
-* Problèmes liés aux traductions de fragments de contenu, où les chaînes traduites sont renvoyées par fournisseur de traduction vers AEM, mais sont bloquées au niveau `/content/projects` et les fragments de contenu ne sont pas mis à jour. (NPR-41516)
-* Un message d’erreur s’affiche lors de la création d’une copie de langue. Cela se produit sur une page dont un fragment de contenu est référencé dans une propriété de page, à l’aide de modèles de fragment de contenu. (NPR-41441)
-* Les liens dans les fragments d’expérience ne sont pas adaptés à la bonne langue lors de la copie de la langue. Au lieu de cela, le fragment d’expérience pointe vers le paramètre régional principal. (NPR-41343)
-
-#### Interface utilisateur{#foundation-ui-6520}
-
-* Une erreur de console se produit après une mise à niveau vers le pack de services 18 d’AEM 6.5. L’erreur se trouve dans le fichier `coralUI3.js` et cela se produit lorsque vous sélectionnez une liste déroulante dans AEM. Plus précisément, cela se produit avec un événement `onOverlayToggle`. L’erreur `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` s’affiche. (NPR-41467)
-* Dans AEM, **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Balisage]** > **[!UICONTROL Créer]** > **[!UICONTROL Créer une balise]**, la saisie de caractères non latins dans le champ **Titre** entraîne le remplissage du champ **Nom** par un trait d’union (`-`). (NPR-41623)
-* L’année du copyright est incorrecte dans la la boîte de dialogue `About Adobe Experience Manager`. (NPR-41526)
-* Des chaînes des **[!UICONTROL propriétés du profil]** non traduites apparaissent lors de la modification des paramètres de l’utilisateur ou de l’utilisatrice. Se produit pour tous les paramètres régionaux. (NPR-41365)
-
-<!-- #### WCM{#wcm-6520}
-
-* text
-
-#### Workflow{#foundation-workflow-6520}
-
-* text -->
-
-## Installer [!DNL Experience Manager] 6.5.20.0{#install}
+## Installer [!DNL Experience Manager] 6.5.21.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.20.0 nécessite [!DNL Experience Manager] 6.5. Consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
-* Le téléchargement du pack de services est disponible dans la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) d’Adobe.
-* Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.20.0 sur l’une des instances de création à l’aide du gestionnaire de packages.<!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.21.0 nécessite [!DNL Experience Manager] 6.5. Consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
+* Le téléchargement du pack de services est disponible sur la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip) d’Adobe.
+* Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.21.0 sur l’une des instances de création à l’aide du gestionnaire de packages.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe ne recommande pas de supprimer ou de désinstaller le package [!DNL Experience Manager] 6.5.20.0. Par conséquent, avant d’installer le module, vous devez créer une sauvegarde du `crx-repository` au cas où vous auriez besoin de le restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe ne recommande pas de supprimer ou de désinstaller le package [!DNL Experience Manager] 6.5.21.0. Par conséquent, avant d’installer le package, vous devez créer une sauvegarde du `crx-repository` au cas où vous auriez besoin de le restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
-### Installation du pack de services sur [!DNL Experience Manager] 6.5{#install-service-pack}
+### Installer le pack de services dans [!DNL Experience Manager] 6.5{#install-service-pack}
 
 1. Redémarrez l’instance avant l’installation si l’instance est en mode de mise à jour (lorsque l’instance a été mise à jour à partir d’une version antérieure). Adobe recommande un redémarrage si le temps de disponibilité actuel d’une instance est élevé.
 
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.21.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Ouvrez le gestionnaire de modules et cliquez sur **[!UICONTROL Charger le module]** pour charger le module. Pour en savoir plus, consultez la section [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
@@ -324,32 +283,32 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface utilisateur du gestionnaire de packages se ferme parfois pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari] mais peut se produire par intermittence sur n’importe quel navigateur.
+>La boîte de dialogue de l’interface d’utilisation du gestionnaire de packages se ferme occasionnellement pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans la variable [!DNL Safari] mais peut se produire par intermittence dans n’importe quel navigateur.
 
 **Installation automatique**
 
-Vous pouvez utiliser deux méthodes différentes pour installer automatiquement [!DNL Experience Manager] 6.5.20.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+Vous pouvez utiliser deux méthodes différentes pour installer [!DNL Experience Manager] 6.5.21.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Placez le package dans le dossier `../crx-quickstart/install` lorsque le serveur est disponible en ligne. Le package est automatiquement installé.
 * Utilisez l’[API HTTP à partir du gestionnaire de packages](/help/sites-administering/package-manager.md#package-share). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
 >[!NOTE]
 >
->Experience Manager 6.5.20.0 ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.21.0 ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validation de l’installation**
 
 Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-1. La page d’informations sur les produits (`/system/console/productinfo`) affiche le numéro de version mis à jour `Adobe Experience Manager (6.5.20.0)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->.
+1. La page d’informations sur les produits (`/system/console/productinfo`) affiche le numéro de version mis à jour `Adobe Experience Manager (6.5.21.0)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->.
 
 1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-1. Le lot OSGi `org.apache.jackrabbit.oak-core` est de version 1.22.18 ou ultérieure (utilisez la console web : `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. Le lot OSGi `org.apache.jackrabbit.oak-core` est version 1.22.20 ou ultérieure (Utiliser la console web : `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Installer le pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
-Pour obtenir des instructions sur l’installation du Pack de services sur Experience Manager Forms, voir les [instructions d’installation du Pack de services Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Pour obtenir des instructions sur l’installation du pack de services pour Experience Manager Forms, consultez les [instructions d’installation du pack de services Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 >[!NOTE]
 >
@@ -369,7 +328,7 @@ L’échec de l’installation de ce package peut entraîner des requêtes Graph
 
 ### UberJar{#uber-jar}
 
-UberJar pour [!DNL Experience Manager] 6.5.20.0 est disponible dans le [référentiel central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar pour [!DNL Experience Manager] 6.5.21.0 est disponible dans le [référentiel central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.21/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Pour utiliser UberJar dans un projet Maven, consultez la section [Utilisation d’UberJar](/help/sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans le POM de votre projet : <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -377,7 +336,7 @@ Pour utiliser UberJar dans un projet Maven, consultez la section [Utilisation d�
   <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>uber-jar</artifactId>
-  <version>6.5.20</version>
+  <version>6.5.21</version>
   <scope>provided</scope>          
   </dependency>
 ```
@@ -462,7 +421,7 @@ Les nouveaux dossiers `cache` et `diff-cache` sont automatiquement créés et vo
 
   Après ces étapes, les requêtes GraphQL doivent être plus rapides.
 
-* Lorsque vous tentez de déplacer, de supprimer ou de publier des fragments de contenu, des sites ou des pages, un problème se produit lorsque les références aux fragments de contenu sont récupérées, car la requête en arrière-plan échoue. En d’autres termes, la fonctionnalité ne fonctionne pas.
+* Lorsque vous tentez de déplacer, de supprimer ou de publier des fragments de contenu, des sites ou des pages, un problème se produit lorsque les références aux fragments de contenu sont récupérées. La requête en arrière-plan échoue. En d’autres termes, la fonctionnalité ne fonctionne pas.
 Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les propriétés suivantes au nœud de définition d’index `/oak:index/damAssetLucene` (aucune réindexation n’est requise) :
 
   ```xml
@@ -472,7 +431,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
   "refresh": true
   ```
 
-* Si vous mettez à niveau votre instance [!DNL Experience Manager] de 6.5.0 à 6.5.4, jusqu’au dernier Service Pack sur Java™ 11, les exceptions `RRD4JReporter` s’affichent dans le fichier `error.log`. Pour arrêter les exceptions, redémarrez votre instance d’[!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Si vous mettez à niveau votre instance [!DNL Experience Manager] de la version 6.5.0 - 6.5.4 au pack de services le plus récent sur Java™ 11, des exceptions `RRD4JReporter` s’affichent dans le fichier `error.log`. Pour arrêter les exceptions, redémarrez votre instance d’[!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Les utilisateurs peuvent renommer un dossier dans une hiérarchie dans [!DNL Assets] et publier un dossier imbriqué dans [!DNL Brand Portal]. Toutefois, le titre du dossier n’est pas mis à jour dans [!DNL Brand Portal] jusqu’à ce que le dossier racine soit republié.
 
@@ -480,63 +439,38 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
    * « Lorsque l’intégration d’Adobe Target est configurée dans [!DNL Experience Manager] à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. » Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
    * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La zone réactive d’une image interactive de Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières avec achat.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : temporisation en attente de modification d’enregistrement pour terminer la désinscription.
 
-* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le lot ```org.apache.servicemix.bundles.rhino``` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon ils ne seront pas exécutés et génèreront une erreur d’exécution.
+* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le lot ```org.apache.servicemix.bundles.rhino``` a un nouveau comportement d’hébergement. Scripts qui utilisent le mode strict (```use strict;```) doivent déclarer leurs variables correctes. Dans le cas contraire, elles ne sont pas exécutées et finissent par générer une erreur d’exécution.
 
-* L’installation du balisage du contenu prêt à l’emploi par le biais d’un package de mise à jour officiel (y compris les packs de services, les packs de services de sécurité, les packs de fonctionnalités étendues, les packs de fonctionnalités cumulatives, les correctifs et autres) réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
+* L’installation du balisage du contenu d’usine par le biais d’un package de mise à jour officiel réinitialise la propriété languages du `/content/cq:tags` par défaut. Cette action est vraie pour les Service Packs, les Service Packs de sécurité, les Feature Packs étendus, les Cumulative Feature Packs, les correctifs, etc. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
 
-### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6520}
+### Problème connu pour AEM Sites {#known-issues-aem-sites-6521}
 
-* Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. Un correctif est disponible pour ce problème. Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-14244).
-* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget de pop-up pour les champs suivant le modèle de modification/d’affichage. Un correctif est disponible pour ce problème. Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-13620).
-* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : « L’action Envoyer n’a pas pu se terminer, car la ressource de formulaire n’a pas été correctement affectée. » Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-13798).
-* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes. Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-14209).
-* Lors de l’installation du pack de services 20 d’AEM Forms 6.5 (package de modules complémentaires d’AEM Forms pour SP20), l’interface d’utilisation (IU) d’AEM Sites présente une dégradation significative des performances. Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (FORMS-13791).
-* Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. Pour télécharger et installer le correctif, consultez la section [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md) (CQDOC-21355).
-* Le Forms adaptatif vous permet d’utiliser des fonctions personnalisées avec ECMAScript version 5 ou antérieure. Lorsqu’une fonction personnalisée utilise ECMAScript version 6 ou ultérieure, comme les fonctions « let », « const » ou flèches, l’éditeur de règles peut ne pas s’ouvrir correctement.
+* SITES-17934 - Fragments de contenu - La prévisualisation échoue en raison de la protection DoS pour une grande arborescence de fragments. Voir l’[article de la base de connaissances sur les options de configuration par défaut de l’exécuteur de requêtes GraphQL](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23945).
+
+### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6521}
+
+* Dans un formulaire adaptatif basé sur un XDP avec des scripts intégrés sur des cases à cocher, les scripts ne sont pas exécutés pour les éléments après ces cases à cocher. (FORMS-14244)
 * Il est alors impossible de créer une lettre Correspondence Management. Quand un utilisateur ou une utilisatrice crée une lettre, une erreur avec la description « `Object Object` » s’affiche et la lettre n’est pas créée. Les miniatures des dispositions ne se chargent pas non plus sur l’écran de création de lettre. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms (6.5)](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13496)
-* Le service de communication interactive crée le document PDF, mais les données utilisateur ne sont pas automatiquement renseignées dans les champs du formulaire. Le service de préremplissage ne fonctionne pas comme prévu. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13413, FORMS-13493)
-* Le chargement de l’éditeur de révision et de correction (RnC) du service de conversion de formulaires automatisée échoue. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13491)
+* Le service de communications interactives crée le document du PDF, mais les données de l’utilisateur ne sont pas automatiquement renseignées dans les champs de formulaire. Le service de préremplissage ne fonctionne pas comme prévu. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13413, FORMS-13493)
+* Le chargement de l’éditeur de vérification et de correction (RnC) d’un service automated forms conversion échoue. Vous pouvez installer le [dernier pack de services 20 (6.5.20.0) d’AEM Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13491)
 * Après la mise à jour pack de services 18 (6.5.18.0) ou 19 (6.5.19.0) d’AEM Forms 6.5 vers le pack de services 20 (6.5.20.0) d’AEM Forms 6.5, une erreur de compilation JSP se produit. Il est impossible d’ouvrir ou de créer des formulaires adaptatifs et des erreurs se produisent avec d’autres interfaces d’AEM telles que l’éditeur de page, l’interface d’utilisation d’AEM Forms et l’éditeur de workflow d’AEM. Vous pouvez installer le [dernier pack de services 6.5.20.0 d’AEM Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) pour résoudre le problème. (FORMS-13492)
-
-<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
-* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
--->
-
-<!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
-
-<!--
-#### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
-
-* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
-* It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
-
-**To install the servlet fragment:**
-
-1. Download the servlet fragment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
-1. Start the application server. 
-1. Wait for the logs to stabilize and check the bundle state.
-1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
-1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
-1. Select the downloaded fragment 
-`org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` 
-1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
-1. Wait for the application server to stabilize.
-1. Stop the application server.
-
--->
+* Les lignes du widget du sélecteur de date sont tronquées lors du parcours de plusieurs mois dans le widget de pop-up pour les champs suivant le modèle d’édition/d’affichage. (FORMS-13620)
+* Les envois de formulaire échouent lors de la tentative d’utilisation du service DOR (Document d’enregistrement) dans le serveur principal. Le message d’erreur rencontré est : « L’action Envoyer n’a pas pu se terminer, car la ressource de formulaire n’a pas été correctement affectée. » (FORMS-13798)
+* Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes. (FORMS-14209)
+* Lors de l’installation du package Forms Service Pack 20 d’AEM 6.5 (package de module complémentaire AEM Forms pour SP20), l’interface utilisateur d’AEM Sites présente une dégradation significative des performances. (FORMS-13791)
+* Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)
+* Le Forms adaptatif vous permet d’utiliser des fonctions personnalisées avec ECMAScript version 5 ou antérieure. Lorsqu’une fonction personnalisée utilise ECMAScript version 6 ou ultérieure, comme `let`, `const`ou fonctions de flèche, l’éditeur de règles peut ne pas s’ouvrir correctement.
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
 Les documents texte suivants répertorient les lots OSGi et les packages de contenu inclus dans cette version du pack de services [!DNL Experience Manager] 6.5.
 
-* [Liste des lots OSGi inclus dans Experience Manager 6.5.20.0](/help/release-notes/assets/65200-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Liste des packages de contenu inclus dans Experience Manager 6.5.20.0](/help/release-notes/assets/65200-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste des lots OSGi inclus dans Experience Manager 6.5.21.0](/help/release-notes/assets/65210-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste des packages de contenu inclus dans Experience Manager 6.5.21.0](/help/release-notes/assets/65210-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sites web à accès limité{#restricted-sites}
 
@@ -549,4 +483,5 @@ Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client
 >
 >* Page des produits [[!DNL Experience Manager] ](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
->* [Abonnement aux mises à jour prioritaires de produits d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Abonnez-vous aux mises à jour de produit Adobe Priority](https://www.adobe.com/subscription/priority-product-update.html)
+
