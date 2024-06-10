@@ -5,10 +5,11 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
-workflow-type: ht
-source-wordcount: '3032'
-ht-degree: 100%
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
+workflow-type: tm+mt
+source-wordcount: '3050'
+ht-degree: 99%
 
 ---
 
@@ -219,6 +220,12 @@ Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d
 
 * Dans l’éditeur de modèles, la chaîne de texte *`No video available.`* n’est pas localisée. (SITES-13190)
 * Les chaînes de caractères, après l’activation ou la désactivation d’un utilisateur ou d’une utilisatrice, ne sont pas localisées dans **Outils** > **Sécurité** > **Utilisateurs et utilisatrices** > *n’importe quel_nom_d’utilisateur_ou_utilisatrice* > **Activer** > **OK**, après la sélection de *n’importe quel_nom_d’utilisateur_ou_utilisatrice* > **Désactiver** > **OK**. (NPR-41737)
+
+#### Oak {#foundation-oak-6521}
+
+* Correctif de régression de performances : évitez les requêtes de plage sur des conditions similaires. (OAK-9481)
+
+* La nouvelle version d’Oak est la version 1.22.20.
 
 #### Plateforme{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ Ces sites Web sont disponibles uniquement pour les clients. Si vous êtes client
 >* Page des produits [[!DNL Experience Manager] ](https://business.adobe.com/fr/products/experience-manager/adobe-experience-manager.html)
 >* Documentation [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65)
 >* [S’abonner aux mises à jour de produits prioritaires d’Adobe](https://www.adobe.com/subscription/priority-product-update.html)
-
