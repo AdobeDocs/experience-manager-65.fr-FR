@@ -11,9 +11,9 @@ exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3232'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 88%
 
 Pour ajouter la fonctionnalité Dynamic Media aux ressources que vous utilisez sur vos sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Pour ce faire, vous devez activer le mode Mise en page et activer les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
-Vous pouvez ajouter des ressources Dynamic Media directement à la page si vous utilisez Adobe Experience Manager comme système de gestion de contenu web. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/embed-code.md) vos ressources. Pour un site Web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/responsive-site.md).
+Si vous utilisez Adobe Experience Manager comme système de gestion de contenu web, vous pouvez ajouter les ressources Dynamic Media directement à la page. Si vous faites appel à un tiers pour votre gestion de contenu web, [liez](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez](/help/assets/embed-code.md) vos ressources. Pour un site Web tiers réactif, reportez-vous à la section [Diffusion d’images optimisées sur un site réactif](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Les composants Dynamic Media disponibles comprennent les suivants :
 
 ### Composant Dynamic Media {#dynamic-media-component}
 
-Le composant Dynamic Media est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. Le composant prend en charge les paramètres d’image prédéfinis, les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de supports variés et les vidéos. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Dynamic Media est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que des visionneuses basées sur les images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en sélectionnant 
 
   Il s’agit de la seule option disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes. Les paramètres prédéfinis de visionneuse sont dynamiques : seuls les paramètres pertinents s’affichent.
 
-* **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1` qui définit une image différente pour la miniature vidéo et associe un fichier de sous-titres à la vidéo.
+* **[!UICONTROL Modificateurs de visionneuse]** : les modificateurs de visionneuse prennent la forme d’une paire nom=valeur avec un délimiteur &amp; et permettent de modifier les visionneuses comme indiqué dans le Guide de référence des visionneuses. Un exemple de modificateur de visionneuse est `posterimage=img.jpg&caption=text.vtt,1`, qui définit une image différente pour la miniature de la vidéo et associe un fichier de sous-titres à la vidéo.
 
 * **[!UICONTROL Paramètre prédéfini d’image]** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
@@ -187,13 +187,13 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en sélectionnant 
 
   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL et dans **Ouvrir dans** indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou dans une nouvelle fenêtre.
+* **[!UICONTROL URL, Ouvrir dans]** : vous pouvez définir une ressource pour ouvrir un lien. Définissez l’URL, puis dans le champ **Ouvrir dans**, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL Largeur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 #### En cas d’utilisation de vidéos {#when-working-with-video}
 
@@ -220,9 +220,9 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 #### Lorsque vous utilisez le recadrage intelligent {#when-working-with-smart-crop}
 
@@ -250,9 +250,9 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   L’option **[!UICONTROL Optimiser pour les appareils à résolution plus élevée]** n’est affichée que lorsque la valeur suivante est vraie :
 
-   * Sous Type de paramètre prédéfini, la variable **[!UICONTROL Recadrage intelligent]** est sélectionnée.
+   * Sous Type de paramètre prédéfini, l’option **[!UICONTROL Recadrage intelligent]** est sélectionnée.
 
-  ![paramètre de rapport pixel d’appareil pour recadrage intelligent](/help/assets/assets-dm/dpr-smartcrop.png)
+  ![Paramètre de ratio de pixels de périphérique pour le recadrage intelligent](/help/assets/assets-dm/dpr-smartcrop.png)
 
   Consultez également [À propos de l’optimisation du rapport pixel d’appareil](/help/assets/imaging-faq.md#dpr). Toutes les valeurs RGPD d’imagerie dynamique Adobe Experience Manager Dynamic Media sont ignorées.
 
@@ -266,13 +266,13 @@ Modifiez les paramètres Dynamic Media ci-après en sélectionnant **[!UICONTRO
 
   Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de médias mixtes.
 
-* **[!UICONTROL Largeur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
 ### Composant Média interactif {#interactive-media-component}
 
-Le composant Interactive Media est destiné aux ressources présentant de l’interactivité, telles que des zones réactives ou des zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant **[!UICONTROL Média interactif]**.
+Le composant Média interactif est destiné aux ressources interactives, telles que des zones réactives ou des zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant **[!UICONTROL Média interactif]**.
 
 Le composant Interactive Media est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille d’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
@@ -295,13 +295,13 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en sé
 
 * **[!UICONTROL Titre]** : modifiez le titre de la vidéo.
 
-* **[!UICONTROL Largeur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Largeur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
-* **[!UICONTROL Hauteur]** - Saisissez la valeur en pixels si vous souhaitez que la taille de l’image soit fixe. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
+* **[!UICONTROL Hauteur]** : si vous souhaitez que la taille de l’image soit fixe, saisissez une valeur en pixels. Si vous ne fournissez pas de valeur, la ressource devient adaptative.
 
   Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Décochez la case pour empêcher l’affichage de la ressource de produit.
+* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Décochez la case pour ne pas afficher la ressource de produit.
 
 * **[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’article tel que défini dans le module Commerce. Décochez la case pour ne pas afficher le prix du produit.
 
@@ -333,7 +333,7 @@ Vous pouvez modifier le paramètre suivant en sélectionnant **[!UICONTROL Confi
 
 * **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse.
 
-Si le paramètre prédéfini de visionneuse que vous recherchiez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
+Si le paramètre prédéfini de la visionneuse que vous recherchiez n’est pas visible, vérifiez qu’il est publié. Publiez les paramètres prédéfinis de la visionneuse avant de les utiliser. Voir [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
 ### Composant Média vidéo 360 {#video-media-component}
 
@@ -347,21 +347,21 @@ La visionneuse inclut une prise en charge native de la diffusion de ressources v
 
 Vous pouvez modifier le paramètre suivant en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse. Utilisation `Video360VR` pour les utilisateurs finaux qui utilisent des lunettes de réalité virtuelle. Il comprend des commandes de lecture vidéo de base et des fonctions de médias sociaux. Utilisation `Video360_social` qui comprend les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n’existe aucune fonction de réseaux sociaux.
+* **[!UICONTROL Paramètre défini de la visionneuse]** : sélectionnez une visionneuse existante dans le menu déroulant Paramètre prédéfini de la visionneuse. Utilisez `Video360VR` pour les utilisateurs et utilisatrices finaux qui utilisent des lunettes de réalité virtuelle. Cela inclut les commandes de lecture vidéo de base et les fonctionnalités de médias sociaux. Utilisez `Video360_social`, qui inclut les commandes de lecture vidéo de base. Le rendu vidéo est effectué en mode stéréo. Le contrôle manuel du point de vue est désactivé, mais la commande gyroscopique est activée. Il n’existe aucune fonction de réseaux sociaux.
 
-Si le paramètre prédéfini de visionneuse que vous recherchiez n’est pas visible, vérifiez qu’il est publié. Assurez-vous de publier les paramètres prédéfinis de la visionneuse avant de les utiliser. Consultez [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
+Si le paramètre prédéfini de la visionneuse que vous recherchiez n’est pas visible, vérifiez qu’il est publié. Assurez-vous de publier les paramètres prédéfinis de la visionneuse avant de les utiliser. Consultez [Gestion des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
-### Utilisation de HTTP/2 pour diffuser des ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Utiliser HTTP/2 pour la diffusion de ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. La diffusion des ressources Dynamic Media peut désormais s’effectuer via HTTP/2, ce qui optimise les temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP2](/help/assets/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion de contenu sur HTTP2](/help/assets/http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 
 >[!MORELIKETHIS]
 >
 >* [Utilisation du lecteur vidéo dans Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-player-feature-video-use.html?lang=fr)
 >* [Utilisation de la vidéo interactive avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-interactive-video-feature-video-use.html?lang=fr)
 >* [Présentation de la visionneuse d’éléments avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/viewers/dynamic-media-viewer-feature-video-understand.html?lang=fr)
->* [Utilisation d’une miniature vidéo personnalisée avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=fr)
+>* [Utiliser des miniatures vidéo personnalisées avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-video-thumbnails-feature-video-use.html?lang=fr)
 >* [Explication de la gestion des couleurs avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-color-management-technical-video-setup.html?lang=fr)
 >* [Utilisation de l’accentuation d’image avec Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use.html?lang=fr)

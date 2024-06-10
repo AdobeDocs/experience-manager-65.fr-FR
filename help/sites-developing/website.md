@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4919'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -477,7 +477,7 @@ Pour inclure topnav dans votre composant contentpage :
 
 #### Amélioration des pages avec des sous-titres {#enhancing-pages-with-subtitles}
 
-Le composant Page définit les propriétés qui vous permettent de fournir des légendes pour les pages. Ajoutez des sous-titres qui fournissent des informations sur le contenu de la page.
+Le composant Page définit les propriétés qui vous permettent de fournir des sous-titres pour les pages. Ajoutez des sous-titres qui fournissent des informations sur le contenu de la page.
 
 1. Dans votre navigateur, ouvrez la page **Products**.
 1. Dans l’onglet **Page** du sidekick, cliquez sur **Propriétés de la page**.
