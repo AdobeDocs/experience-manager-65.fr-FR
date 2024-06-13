@@ -10,10 +10,10 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '595'
-ht-degree: 100%
+source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 78%
 
 ---
 
@@ -37,9 +37,10 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> La version 64 bits de Designer a été introduite avec le pack de services AEM 6.5 Forms 19 (6.5.19.0).
+>* La version 64 bits de Designer a été introduite avec le pack de services AEM 6.5 Forms 19 (6.5.19.0).
+>* La version 32 bits du concepteur est obsolète depuis la publication de la [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-
+Pour plus d’informations sur l’installation de Forms Designer, voir [Questions fréquentes](#fandq).
 
 ## Installer AEM Forms Designer {#install-designer}
 
@@ -104,3 +105,18 @@ Si vous utilisez un programme d’installation autonome pour AEM Forms Designe
 1. Installez la dernière version d’AEM Forms Designer en double-cliquant sur le fichier d’installation téléchargé.
 
 +++
+
+## Questions fréquentes {#fandq}
+
+* **Un utilisateur peut-il effectuer une mise à niveau directe vers la version 64 bits ?**
+   * Oui, les utilisateurs peuvent directement mettre à niveau vers le concepteur 64 bits. Pour effectuer la mise à niveau, installez le [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) programme d’installation complet de designer et appliquez la version de correctif de designer qui a suivi.
+
+* **Les utilisateurs peuvent-ils conserver les versions 32 et 64 bits installées sur leur système ?**
+   * Non, l’installation 32 bits et 64 bits ne fonctionnera pas sur le même ordinateur. L’utilisateur peut disposer d’un concepteur 32 bits ou d’un concepteur 64 bits.
+
+* **Comment vérifier si un utilisateur est un concepteur 64 bits ou un concepteur 32 bits ?**
+   * Il existe deux façons de vérifier la version de Forms Designer :
+
+      1. Ouvrez Designer, accédez à l’aide, cliquez sur À propos du concepteur et vous voyez les informations sur la version du concepteur avec les informations sur les bits. Par exemple, vous voyez que la version 64 bits est écrite à la fin, comme illustré ici :
+         `6.5.21.20240522.1.161 | 64 bit`
+      1. Ouvrez Designer, une icône de marque s’affiche en haut à gauche et contient des informations 64 bits sur le nom du produit.

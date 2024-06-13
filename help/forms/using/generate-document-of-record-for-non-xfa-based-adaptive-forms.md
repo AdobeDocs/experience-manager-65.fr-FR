@@ -1,18 +1,17 @@
 ---
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
-description: Vous explique comment générer un modèle de document d'enregistrement (DE) pour les formulaires adaptatifs.
+description: Explique comment générer un document d’enregistrement pour les formulaires adaptatifs.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '4256'
-ht-degree: 100%
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
+workflow-type: tm+mt
+source-wordcount: '4308'
+ht-degree: 95%
 
 ---
 
@@ -313,47 +312,52 @@ Pour localiser les informations d’image de marque que vous saisissez dans l’
 1. Sélectionnez ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement apparaît sous la liste déroulante Modèle.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur AEM Forms, vous devez au préalable télécharger le fichier XDP sur votre serveur AEM Forms.
 
-1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affiche dans l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
+### Propriétés de la page de Principal (#master-page-properties)
 
-   * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
-   * **Titre du formulaire**
-   * **Texte d&#39;en-tête**
-   * **Libellé de clause de non-responsabilité**
-   * **Clause de non-responsabilité**
-   * **Texte de la clause de non-responsabilité**
-   * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichés dans le document ou l’enregistrement PDF
-   * **Famille de polices** : la famille de polices du texte dans le document d’enregistrement PDF
-   * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées**
-   * **Séparateur pour plusieurs valeurs sélectionnées**
-   * **Inclure les objets de formulaire qui ne sont pas associés à un modèle de données**
-   * **Exclure les champs masqués du document d’enregistrement**
-   * **Masquer la description des panneaux**
+Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés de page de Principal suivantes apparaissent dans l’onglet Document d’enregistrement, comme illustré dans l’image ci-dessus. Spécifiez-les en conséquence :
 
-   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
+* **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
+* **Titre du formulaire**
+* **Texte d&#39;en-tête**
+* **Libellé de clause de non-responsabilité**
+* **Clause de non-responsabilité**
+* **Texte de la clause de non-responsabilité**
 
-   ![Propriétés du gabarit de page ](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
+  Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-   >[!NOTE]
-   >
-   >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
+  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. Pour enregistrer les modifications d’image de marque, appuyez sur Terminé.
 
@@ -411,8 +415,23 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
 
 **Paramètres des niveaux de formulaires**
 
-* **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant de les exclure du [!UICONTROL document d’enregistrement].
+* **[!UICONTROL BASIC]**
+   * **Modèle :** Vous pouvez sélectionner le modèle Par défaut ou Personnalisé.
+     ![texte alternatif](image.png)
+   * **Couleur d’accentuation :** Vous pouvez prédéfinir la Couleur du modèle de la [!UICONTROL Document d’enregistrement].
+   * **Famille de polices :** Sélectionnez Type de police pour le [!UICONTROL Document d’enregistrement] textes.
+   * **Inclure les champs non liés dans le DE :** La définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans [!UICONTROL Document d’enregistrement]. Par défaut, le paramètre est true.
+   * **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs de la variable [!UICONTROL Document d’enregistrement]
+* **[!UICONTROL PROPRIÉTÉS DU CHAMP DE FORMULAIRE]**
+   * Si vous cochez l’option **Pour les composants Case à cocher et Bouton radio, n’afficher que la ou les valeurs sélectionnées**, il génère une sortie de document d’enregistrement avec uniquement les valeurs sélectionnées.
+   * Vous pouvez sélectionner Séparateur pour plusieurs valeurs sélectionnées ou vous pouvez choisir tout autre type de séparateur.
+   * Alignement des options
+      * Vertical
+      * Horizontal
+      * Identique au formulaire adaptatif
+     >[!NOTE]
+     > L’alignement vertical et horizontal s’applique uniquement au bouton radio et à la case à cocher.
+* **[!UICONTROL PROPRIÉTÉS DE LA PAGE DE Principal]** Cliquez pour plus d’informations sur [Propriétés de la page de Principal](#master-page-properties-master-page-properties)
 
 ## Appliquer un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
 
