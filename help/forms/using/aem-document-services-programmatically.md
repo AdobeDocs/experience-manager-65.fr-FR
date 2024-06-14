@@ -1,6 +1,6 @@
 ---
 title: Utiliser Document Services d’AEM par programmation
-description: Découvrez comment utiliser les API Document Services pour signer numériquement, chiffrer, baliser et générer des documents PDF.
+description: Découvrez comment utiliser les API Document Services pour signer numériquement, chiffrer, baliser et générer des documents PDF.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -8,9 +8,9 @@ feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 341ad5a1f8c0e0cde95c97871da889c17868ef9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -5058,15 +5058,15 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 }
 ```
 
-### Services Doc Utility {#doc-utility-services}
+### Services utilitaires de document {#doc-utility-services}
 
 <!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
-#### Balisage automatique des documents du PDF {#auto-tag-api}
+#### Baliser automatiquement des documents PDF {#auto-tag-api}
 
-L’API du PDF de balises automatiques permet de rendre un document de PDF accessible en y ajoutant des balises. Elle prend en charge le balisage de bloc de texte (paragraphes) et les listes à puces dans un opérateur.
+L’API Auto Tag PDF permet de rendre un document PDF accessible en y ajoutant des balises. Elle prend en charge le balisage de bloc de texte (paragraphes) et les listes à puces dans un opérateur.
 
-![PDF balisé automatiquement](assets/auto-tag-api.png)
+![Document PDF balisé automatiquement](assets/auto-tag-api.png)
 
 **Syntaxe** : `tag(Document inDoc)`
 
@@ -5085,7 +5085,7 @@ L’API du PDF de balises automatiques permet de rendre un document de PDF acces
  </tbody>
 </table>
 
-Le code Java suivant balise le document du PDF avec des listes et des paragraphes.
+Le code Java suivant balise le document PDF avec des listes et des paragraphes.
 
 ```java
 /*************************************************************************

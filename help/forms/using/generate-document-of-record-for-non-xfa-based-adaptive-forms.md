@@ -1,6 +1,6 @@
 ---
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
-description: Explique comment générer un document d’enregistrement pour les formulaires adaptatifs.
+description: Vous explique comment générer un modèle de document d’enregistrement (DE) pour les formulaires adaptatifs.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ feature: Adaptive Forms, Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -316,9 +316,9 @@ Pour localiser les informations d’image de marque que vous saisissez dans l’
 
    Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur AEM Forms, vous devez au préalable télécharger le fichier XDP sur votre serveur AEM Forms.
 
-### Propriétés de la page de Principal (#master-page-properties)
+### Propriétés du gabarit de page (#master-page-properties)
 
-Selon que vous sélectionnez un modèle par défaut ou personnalisé, certaines ou toutes les propriétés de page de Principal suivantes apparaissent dans l’onglet Document d’enregistrement, comme illustré dans l’image ci-dessus. Spécifiez-les en conséquence :
+Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés de gabarit de page suivantes s’affiche dans l’onglet Document d’enregistrement comme illustré dans l’image ci-dessus. Spécifiez-les en conséquence :
 
 * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, en choisir une dans le gestionnaire des actifs numériques ou en télécharger une depuis votre ordinateur.
 * **Titre du formulaire**
@@ -415,15 +415,15 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
 
 **Paramètres des niveaux de formulaires**
 
-* **[!UICONTROL BASIC]**
-   * **Modèle :** Vous pouvez sélectionner le modèle Par défaut ou Personnalisé.
-     ![texte alternatif](image.png)
-   * **Couleur d’accentuation :** Vous pouvez prédéfinir la Couleur du modèle de la [!UICONTROL Document d’enregistrement].
-   * **Famille de polices :** Sélectionnez Type de police pour le [!UICONTROL Document d’enregistrement] textes.
-   * **Inclure les champs non liés dans le DE :** La définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans [!UICONTROL Document d’enregistrement]. Par défaut, le paramètre est true.
-   * **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs de la variable [!UICONTROL Document d’enregistrement]
-* **[!UICONTROL PROPRIÉTÉS DU CHAMP DE FORMULAIRE]**
-   * Si vous cochez l’option **Pour les composants Case à cocher et Bouton radio, n’afficher que la ou les valeurs sélectionnées**, il génère une sortie de document d’enregistrement avec uniquement les valeurs sélectionnées.
+* **[!UICONTROL DE BASE]**
+   * **Modèle :** vous pouvez sélectionner le modèle Par défaut ou Personnalisé.
+     ![Texte de remplacement](image.png)
+   * **Couleur d’accentuation :** vous pouvez prédéfinir la couleur du modèle du [!UICONTROL document d’enregistrement].
+   * **Famille de polices :** sélectionnez le type de police pour les textes du [!UICONTROL document d’enregistrement].
+   * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété inclut les champs non liés du schéma basé sur le formulaire adaptatif dans le [!UICONTROL document d’enregistrement]. Par défaut, le paramètre est true.
+   * **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant de les exclure du [!UICONTROL document d’enregistrement].
+* **[!UICONTROL PROPRIÉTÉS DES CHAMPS DE FORMULAIRE]**
+   * Si vous cochez l’option **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées**, elle génère une sortie de document d’enregistrement avec uniquement les valeurs sélectionnées.
    * Vous pouvez sélectionner Séparateur pour plusieurs valeurs sélectionnées ou vous pouvez choisir tout autre type de séparateur.
    * Alignement des options
       * Vertical
@@ -431,7 +431,7 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
       * Identique au formulaire adaptatif
      >[!NOTE]
      > L’alignement vertical et horizontal s’applique uniquement au bouton radio et à la case à cocher.
-* **[!UICONTROL PROPRIÉTÉS DE LA PAGE DE Principal]** Cliquez pour plus d’informations sur [Propriétés de la page de Principal](#master-page-properties-master-page-properties)
+* **[!UICONTROL PROPRIÉTÉS DU GABARIT DE PAGE]** Cliquez pour plus d’informations sur les [Propriétés du gabarit de page](#master-page-properties-master-page-properties).
 
 ## Appliquer un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
 
