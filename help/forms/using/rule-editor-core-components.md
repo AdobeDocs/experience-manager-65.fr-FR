@@ -4,20 +4,19 @@ description: L’éditeur de règles de Forms adaptatif vous permet d’ajouter 
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5588'
 ht-degree: 78%
 
 ---
 
 # Ajout de règles à un composant principal de formulaire adaptatif {#adaptive-forms-rule-editor}
 
-<span class="preview"> Cet article contient du contenu pour certaines fonctionnalités de version anticipée. Ces fonctions de préversion sont accessibles uniquement via notre [canal de version préliminaire](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Les fonctionnalités du programme de version préliminaire sont les suivantes :
+Cet article contient les dernières fonctionnalités de l’éditeur de règles des composants principaux de Forms adaptatif, à savoir :
 * Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité Lorsque-alors-autre
 * Validation ou réinitialisation des panneaux et des formulaires, y compris les champs
 * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées.
-</span>
 
 La fonction Éditeur de règles permet aux utilisateurs professionnels et aux développeurs de formulaires d’écrire des règles sur des objets de formulaire adaptatif. Ces règles définissent les actions à déclencher sur les objets de formulaire en fonction des conditions prédéfinies, des entrées utilisateur et des actions utilisateur sur le formulaire. Cela permet de rationaliser davantage l’expérience de remplissage du formulaire en assurant précision et vitesse.
 

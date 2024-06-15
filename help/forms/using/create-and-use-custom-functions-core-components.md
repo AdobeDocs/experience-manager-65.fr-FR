@@ -4,22 +4,21 @@ description: AEM Forms prend en charge les fonctions personnalisées qui permett
 keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: e7ad5c0149e428265598c806421131fe74fad350
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '3394'
+source-wordcount: '3385'
 ht-degree: 5%
 
 ---
 
 # Fonctions personnalisées dans les composants principaux de Forms adaptatif
 
-<span class="preview"> Cet article contient le contenu des fonctionnalités du programme d’adoption précoce. Ces fonctions de préversion sont accessibles uniquement via notre [canal de version préliminaire](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). Les fonctionnalités du programme de version préliminaire sont les suivantes :
-<!-- * Optional parameter support in Custom Functions-->
+Cet article décrit la création de fonctions personnalisées avec le dernier composant principal de formulaire adaptatif, qui comporte les dernières fonctionnalités telles que :
 * Fonction de mise en cache des fonctions personnalisées
 * Prise en charge des objets de champ et d’objet de portée globale pour les fonctions personnalisées
 * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge ES10)
 
-Assurez-vous de définir la variable [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composants principaux AEM Forms pour utiliser les fonctionnalités de version préliminaire dans les fonctions personnalisées. </span>
+Assurez-vous de définir la variable [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composants principaux AEM Forms pour utiliser les dernières fonctionnalités des fonctions personnalisées. </span>
 
 
 | Version | Lien de l’article |
