@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3825'
-ht-degree: 79%
+source-wordcount: '3823'
+ht-degree: 78%
 
 ---
 
@@ -528,16 +528,15 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6521}
 
 
-* Après l’installation du Service Pack 21 d’AEM Forms JEE (6.5.21.0), si vous trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926).
+* Après l’installation du Service Pack 21 d’AEM Forms JEE (6.5.21.0), si vous trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), procédez comme suit pour résoudre le problème :
 
-  Exécutez les étapes suivantes afin de résoudre ce problème :
+   1. Arrêtez les localisateurs s&#39;ils sont en cours d&#39;exécution.
+   1. Arrêtez le serveur AEM.
+   1. Accédez au `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Supprimez tous les fichiers de correctifs de Geode, à l’exception de `geode-*-1.15.1.2.jar`. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
+   1. Ouvrez l’invite de commande en mode administrateur.
+   1. Installez le correctif de code à l’aide de la méthode `geode-*-1.15.1.2.jar` fichier .
 
-   1. Arrêtez les localisateurs et le serveur dans l’ordre spécifié s’ils sont en cours d’exécution.
-   1. Réinstallez le correctif en exécutant le programme d’installation du correctif en mode administration (important).
-   1. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
-
-  >[!NOTE]
-  > Aucune action n’est requise si seulement les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
