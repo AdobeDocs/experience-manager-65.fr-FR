@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User, Admin, Architect, Developer
 source-git-commit: c3fd2b1198c7c856d6d68e9b9cfc711c941e657c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1734'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 |---|---|
 | d’Adobe Experience Manager Forms 6.5 | 6.5.21.0 |
 | Type | Mise à jour du pack de services |
-| Date | 29 mai 2024 |
+| Date | 29 mai 2024 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
 
 >[!NOTE]
@@ -139,11 +139,11 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
 +++
 
-+++5. Installez le fragment de servlet (AEM Service Pack 6.5.14.0 ou version antérieure) (**Installation obligatoire**)
++++5. Installer le fragment de servlet (Pack de services AEM 6.5.14.0 ou version antérieure) (**Installation obligatoire**)
 
 >[!NOTE]
 >
-> * Si vous effectuez une mise à niveau à partir du **Pack de services AEM 6.5.15.0**, l’installation du **fragment de servlet** n’est pas obligatoire. Pour les versions **AEM Service Pack 6.5.14.0** ou plus tôt : **obligatoire à installer** le fragment de servlet.
+> * Si vous effectuez une mise à niveau à partir du **Pack de services AEM 6.5.15.0**, l’installation du **fragment de servlet** n’est pas obligatoire. Pour les versions du **Pack de services AEM 6.5.14.0** ou antérieures, il est **obligatoire d’installer** le fragment de servlet.
 
 
 Pour télécharger et installer le fragment de servlet :
