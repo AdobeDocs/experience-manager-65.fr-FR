@@ -7,10 +7,10 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '5504'
-ht-degree: 100%
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+workflow-type: tm+mt
+source-wordcount: '5538'
+ht-degree: 99%
 
 ---
 
@@ -63,6 +63,7 @@ Pour plus d’informations, reportez-vous à la section [Comment créer des proj
 Une fois votre projet AEM configuré, définissez la stratégie de création et de personnalisation des composants et modèles de formulaires adaptatifs.
 
 * Un modèle de formulaire adaptatif est une page AEM spécialisée qui définit la structure et les informations d’en-tête et de pied de page d’un formulaire adaptatif. Un modèle comporte des dispositions, des styles et une structure de base préconfigurés pour un formulaire adaptatif. AEM Forms fournit des modèles et des composants prêts à l’emploi que vous pouvez utiliser pour créer des formulaires adaptatifs. Vous pouvez également créer des modèles et des composants personnalisés en fonction de vos besoins. Il est recommandé de rassembler les exigences relatives aux modèles et composants supplémentaires dont vous aurez besoin dans vos formulaires adaptatifs. Pour plus d’informations, voir [Personnalisation des formulaires et composants adaptatifs](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* Il est recommandé de charger les modules de formulaire à l’aide de l’interface utilisateur de Form Manager plutôt que de l’interface utilisateur de CRX Package Manager, car le téléchargement de modules via CRX Package Manager peut parfois entraîner des anomalies.
 * AEM Forms vous permet de créer des formulaires adaptatifs basés sur les modèles de formulaires suivants. Les modèles de formulaire font office d’interface pour l’échange de données entre un formulaire et un système AEM et fournissent une structure XML pour le flux de données à l’intérieur et à l’extérieur d’un formulaire adaptatif. En outre, les modèles de formulaire imposent des règles et des contraintes aux formulaires adaptatifs sous la forme de schémas et de contraintes XFA.
 
    * **Aucun** : les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
