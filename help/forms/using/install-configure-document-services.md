@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5660'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,8 +78,8 @@ Avant de commencer à installer et à configurer les services de document AEM F
 
 >[!NOTE]
 >
->* Sous Microsoft® Windows, PDF Generator prend en charge les itinéraires de conversion WebKit, Acrobat WebCapture et WebToPDF pour convertir des fichiers HTML en documents PDF.
->* Sur les systèmes d’exploitation UNIX, PDF Generator prend en charge les itinéraires de conversion WebKit et WebToPDF pour convertir des fichiers de HTML en documents PDF.
+>* Sous Microsoft® Windows, PDF Generator prend en charge les itinéraires de conversion WebKit, Acrobat WebCapture et WebToPDF pour convertir des fichiers HTML en documents PDF.
+>* Sur les systèmes dʼexploitation UNIX, PDF Generator prend en charge les itinéraires de conversion WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF.
 >
 
 ### Exigences supplémentaires pour les systèmes d’exploitation UNIX {#extrarequirements}
@@ -168,7 +168,7 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(PDF Generator uniquement)** Le service PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers de HTML en documents de PDF. Pour activer la conversion pour l’itinéraire WebToPDF, installez les bibliothèques 64 bits répertoriées ci-dessous. Ces bibliothèques sont généralement déjà installées. Si une bibliothèque est manquante, installez-la manuellement :
+* **(PDF Generator uniquement)** Le service PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF. Pour activer la conversion pour l’itinéraire WebToPDF, installez les bibliothèques 64 bits répertoriées ci-dessous. Ces bibliothèques sont généralement déjà installées. Si une bibliothèque est manquante, installez-la manuellement :
 
    * linux-gate.so.1
    * libz.so.1
@@ -336,7 +336,7 @@ Pour éviter de recevoir cette erreur, vous pouvez désactiver le rapport d’er
 
 ### (Windows uniquement) Configurer la conversion de fichiers HTML en PDF {#configure-html-to-pdf-conversion}
 
-Le service de PDF Generator fournit des itinéraires ou des méthodes WebKit, WebCapture et WebToPDF pour convertir des fichiers de HTML en documents de PDF. Sous Windows, pour activer la conversion des itinéraires WebKit et Acrobat WebCapture, copiez la police Unicode vers le répertoire %windir%\fonts.
+Le service PDF Generator fournit des méthodes ou des itinéraires WebKit, WebCapture et WebToPDF pour convertir des fichiers HTML en documents PDF. Sous Windows, pour activer la conversion des itinéraires WebKit et Acrobat WebCapture, copiez la police Unicode vers le répertoire %windir%\fonts.
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ Le service de PDF Generator fournit des itinéraires ou des méthodes WebKit, We
 
 ### (Plateformes UNIX uniquement) Configurations supplémentaires pour la conversion de fichiers HTML en PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
-Sur les plateformes UNIX, le service de PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF. Pour activer la conversion de fichiers HTML en PDF, effectuez les configurations suivantes, applicables à l’itinéraire de conversion de votre choix :
+Sur les plateformes UNIX, le service PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF. Pour activer la conversion de fichiers HTML en PDF, effectuez les configurations suivantes, applicables à l’itinéraire de conversion de votre choix :
 
 ### (Plateformes UNIX uniquement) Activer la prise en charge des polices Unicode (WebKit uniquement) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -485,7 +485,7 @@ Sous Microsoft® Windows, le service PDF Generator utilise Adobe Acrobat pour c
 
 ### (Windows uniquement) Configurer l’itinéraire principal pour la conversion de fichiers HTML en PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers de HTML en documents PDF : Webkit, Acrobat WebCapture (Windows uniquement) et WebToPDF. Adobe recommande l’utilisation de l’itinéraire WebToPDF, car il permet de gérer le contenu dynamique et ne dépend pas des bibliothèques 32 bits ou ne nécessite aucune police supplémentaire. En outre, l’itinéraire WebToPDF ne nécessite pas l’accès sudo ou root pour exécuter la conversion.
+Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et WebToPDF. Adobe recommande d’utiliser l’itinéraire WebToPDF, car il peut gérer le contenu dynamique, ne dépend pas des bibliothèques 32 bits et ne nécessite aucune police supplémentaire. En outre, l’itinéraire WebToPDF ne requiert pas d’accès sudo ou root pour exécuter la conversion.
 
 L’itinéraire principal par défaut pour les conversions HTML en PDF est WebKit. Pour modifier l’itinéraire de conversion :
 
@@ -583,7 +583,7 @@ Après avoir installé le module complémentaire AEM Forms et Microsoft® Proje
 
 1. Accéder à `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. Exécutez la commande suivante pour répertorier toutes les bibliothèques dont WebToPDF a besoin pour la conversion HTML vers PDF.
+1. Exécutez la commande suivante pour répertorier toutes les bibliothèques requises par WebToPDF pour convertir un fichier HTML en PDF.
 
    `ldd phantomjs`
 
@@ -693,9 +693,9 @@ Problèmes de conversion HTML vers PDF
 
 **Linux et Solaris (itinéraire de conversion WebToPDF)**
 
-* Assurez-vous que la bibliothèque 32 bits est disponible (libicudata.so.42) pour la conversion HTMLToPDF basée sur Webkit et que les bibliothèques 64 bits (libicudata.so.42) sont disponibles pour la conversion HTMLToPDF basée sur WebToPDF.
+* Assurez-vous que la bibliothèque 32 bits est disponible (libicudata.so.42) pour la conversion HTMLToPDF basée sur Webkit et que les bibliothèques 64 bits (libicudata.so.42) sont disponibles pour la conversion HTMLToPDF basée sur WebToPDF.
 
-* Exécutez la commande suivante pour répertorier les bibliothèques manquantes pour WebToPDF :
+* Exécutez la commande suivante pour répertorier les bibliothèques manquantes pour WebToPDF :
 
   ```
   ldd phantomjs | grep not
