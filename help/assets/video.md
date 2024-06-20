@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: aeb243421ed2212625e85c3d5b76322e4c33f1d2
-workflow-type: ht
-source-wordcount: '11201'
-ht-degree: 100%
+source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+workflow-type: tm+mt
+source-wordcount: '11203'
+ht-degree: 99%
 
 ---
 
@@ -592,12 +592,11 @@ Utilisez le [guide de référence des visionneuses Adobe Dynamic Media](https:/
 
 
 
-
 ## À propos de la prise en charge de plusieurs sous-titres et pistes audio pour les vidéos dans Dynamic Media{#about-msma}
 
 Grâce à la fonctionnalité de prise en charge de plusieurs sous-titres et pistes audio de Dynamic Media, vous pouvez facilement ajouter plusieurs sous-titres et pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 
-![Onglet Sous-titres et pistes audio dans Dynamic Media, ainsi qu’un tableau présentant les fichiers de sous-titres .VTT et les fichiers audio .MP3 chargés pour une vidéo.](assets-dm/msma-subtitle-audiotracks-tab.png)
+![Onglet Sous-titres et pistes audio dans Dynamic Media, ainsi qu’un tableau présentant les fichiers de sous-titres .VTT et les fichiers audio .MP3 chargés pour une vidéo.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Voici quelques-uns des cas d’utilisation à prendre en compte pour l’ajout de plusieurs sous-titres et pistes audio à votre vidéo principale :
 
@@ -644,7 +643,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
    >
    >Une fois l’une des tâches ci-dessus terminée, reprenez cette procédure.
 
-   ![Onglet Sous-titres et pistes audio dans la page Propriétés.](assets-dm/msma-audiotracks.png)*Onglet Sous-titres et pistes audio de la page Propriétés de la vidéo.*
+   ![Onglet Sous-titres et pistes audio dans la page Propriétés.](assets-dm/msma-audiotracks2.png)*Onglet Sous-titres et pistes audio de la page Propriétés de la vidéo.*
 
 1. (Facultatif) Pour ajouter un ou plusieurs fichiers de sous-titres à une vidéo, procédez comme suit :
    * Sélectionnez **[!UICONTROL Charger des sous-titres]**.
@@ -655,8 +654,8 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
      |--- |--- |
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
      | Langue | Sélectionnez la langue des sous-titres. |
-     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titres** : texte des sous-titres affichés dans la vidéo qui traduit ou transcrit les dialogues.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
-     | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titres. Par exemple, `English (CC)`. |
+     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** - Texte de la légende affiché avec la vidéo qui traduit ou transcrit la boîte de dialogue.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
+     | Libellé | Le texte affiché pour le nom de la légende dans le champ **[!UICONTROL Sélectionner un contenu audio ou un sous-titre]** liste déroulante dans le lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
 
      Vous pouvez modifier les métadonnées de sous-titres ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
 
@@ -670,7 +669,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou de sous-titres supplémentaires. |
      | Langue | Sélectionnez la langue de la piste audio. |
      | Type | Sélectionnez le type de piste audio que vous utilisez.<br>**Original** : piste audio initialement jointe à la vidéo et représentée comme `[Original]` dans le libellé avec la langue `English` sélectionnée par défaut. Bien que **[!UICONTROL Libellé]** et **[!UICONTROL Langue]** peuvent être modifiés dans la boîte de dialogue **[!UICONTROL Modifier la piste audio]**, les valeurs d’origine sont utilisées par défaut si la vidéo principale est retraitée.<br>**Standard** : piste audio complémentaire pour une langue autre que la langue originale.<br>**Audio-description** : piste audio qui comprend également une narration descriptive des actions non verbales et des gestes dans la vidéo, rendant le contenu plus accessible pour les personnes malvoyantes. |
-     | Libellé | Texte affiché comme nom de la piste audio dans la liste déroulante **[!UICONTROL Sélectionner l’audio ou la légende]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
+     | Libellé | Le texte affiché comme nom de la piste audio dans la variable **[!UICONTROL Sélectionner un contenu audio ou un sous-titre]** liste déroulante dans le lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
 
      Vous pouvez modifier ces métadonnées de piste audio ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
 
@@ -732,7 +731,7 @@ Vous pouvez observer le statut du cycle de vie d’un fichier de sous-titres ou 
 | Échec | Un état « Échec » signifie que le traitement d’un fichier de sous-titre ou de pistes audio n’a pas été terminé. Supprimez le fichier de sous-titres ou de pistes audio, puis chargez-le à nouveau. |
 | Dépublié | Lorsqu’une vidéo principale publiée est explicitement dépubliée, tout fichier de sous-titres ou de piste audio que vous avez ajouté à la vidéo est également dépublié. |
 
-![Colonne Statut mise en surbrillance pour les champs Sous-titres et Pistes audio.](assets-dm/msma-lifecycle-status.png)*Statut du cycle de vie de chaque fichier de sous-titres et de pistes audio chargé.*
+![Colonne Statut mise en surbrillance pour les champs Sous-titres et Pistes audio.](assets-dm/msma-lifecycle-status2.png)*Statut du cycle de vie de chaque fichier de sous-titres et de pistes audio chargé.*
 
 ### Définir l’audio par défaut pour une vidéo comportant plusieurs pistes audio
 
@@ -757,7 +756,7 @@ Cependant, tout fichier de piste audio chargé peut être défini comme l’audi
 1. Sélectionnez **[!UICONTROL Définir par défaut]**.
 Dans la boîte de dialogue **Définir comme valeur par défaut**, sélectionnez **[!UICONTROL Remplacer]**.
 
-   ![En-tête « Pistes audio » avec un nom de fichier de piste audio sélectionné et le bouton « Définir par défaut » mis en surbrillance.](assets-dm/msma-defaultaudiotrack.png)*Définition de la piste audio par défaut pour une vidéo.*
+   ![En-tête « Pistes audio » avec un nom de fichier de piste audio sélectionné et le bouton « Définir par défaut » mis en surbrillance.](assets-dm/msma-defaultaudiotrack2.png)*Définition de la piste audio par défaut pour une vidéo.*
 
 1. Dans le coin supérieur droit, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
 1. Publiez la vidéo. Consultez la section [Publication de ressources](publishing-dynamicmedia-assets.md).
