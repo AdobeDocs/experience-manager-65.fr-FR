@@ -9,10 +9,11 @@ topic-tags: operations
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +31,7 @@ Selon le type d’application client, vous pouvez écrire le formulaire dans un 
 
 * Les exemples d’API Java fortement typées (mode SOAP) sont un servlet Java.
 * Les exemples de service web (Java Base64) sont un servlet Java.
-* Les exemples de service Web (MTOM) sont une application de console (tous les démarrages rapides n’ont pas un exemple de MTOM).
+* Les exemples de service web (MTOM) sont une application de console (tous les démarrages rapides n’ont pas un exemple de MTOM).
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Effectuer le rendu de formulaires en HTML
-description: Utilisez le service Forms pour effectuer le rendu des formulaires en format HTML en réponse à une requête HTTP d’un navigateur web. Vous pouvez utiliser l’API Java&trade, l’API et l’API de service Web pour générer des formulaires en tant que HTML.
+description: Utilisez le service Forms pour effectuer le rendu des formulaires en format HTML en réponse à une requête HTTP d’un navigateur web. Vous pouvez utiliser l’API Java™ et l’API de service web pour effectuer le rendu des formulaires au format HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,10 +9,10 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '4099'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,17 +64,17 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 >
 >Si vous souhaitez personnaliser l’aspect du bouton Signature numérique HTML sur un formulaire HTML, vous devez modifier les propriétés suivantes dans le fichier fscdigsig.css (dans le fichier adobe-forms-ds.ear > adobe-forms-ds.war) :
 
-**`.fsc-ds-ssb`**: cette feuille de style s’applique en cas de champ de signe vide.
+**`.fsc-ds-ssb`** : cette feuille de style s’applique en cas de champ de signature vide.
 
-**`.fsc-ds-ssv`**: cette feuille de style s’applique en cas de champ de signe valide.
+**`.fsc-ds-ssv`** : cette feuille de style s’applique en cas de champ de signature valide.
 
-**`.fsc-ds-ssc`**: cette feuille de style s’applique si un champ de signe valide existe mais que les données ont changé.
+**`.fsc-ds-ssc`** : cette feuille de style s’applique en cas de champ de signature valide, mais dont les données ont été modifiées.
 
-**`.fsc-ds-ssi`**: cette feuille de style s’applique en cas de champ de signature non valide.
+**`.fsc-ds-ssi`** : cette feuille de style s’applique en cas de champ de signature non valide.
 
-**`.fsc-ds-popup-bg`**: cette propriété de feuille de style n’est pas utilisée.
+**`.fsc-ds-popup-bg`** : cette propriété de feuille de style n’est pas utilisée.
 
-**.`fsc-ds-popup-btn`**: cette propriété de feuille de style n’est pas utilisée.
+**.`fsc-ds-popup-btn`** : cette propriété de feuille de style n’est pas utilisée.
 
 ## Exécuter des scripts {#running-scripts}
 

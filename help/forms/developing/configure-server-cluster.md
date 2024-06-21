@@ -3,9 +3,10 @@ title: Comment configurer un cluster de serveurs AEM Forms on JEE et résoudr
 description: Découvrez comment configurer un cluster de serveurs d’Adobe Experience Manager (AEM) Forms on JEE et résoudre les problèmes associés.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+workflow-type: tm+mt
 source-wordcount: '3945'
 ht-degree: 100%
 

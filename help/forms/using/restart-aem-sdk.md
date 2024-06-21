@@ -2,13 +2,13 @@
 title: Comment redémarrer AEM SDK ?
 description: Bonnes pratiques pour redémarrer AEM SDK
 role: Admin, Developer, User
-feature: Adaptive Forms
+feature: Adaptive Forms, Troubleshooting
 exl-id: f5d69d04-b842-4329-b1b3-57b88266d13d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '92'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
@@ -24,4 +24,4 @@ Si vous redémarrez le SDK AEM en arrêtant les processus Java™, peut entraîn
 
 Pour redémarrer le SDK AEM, accédez à la fenêtre de commande active et appuyez sur `Ctrl + C` pour redémarrer le SDK.
 
-Il est recommandé d’utiliser la commande &quot;Ctrl + C&quot; pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java™, peut entraîner des incohérences dans l’environnement de développement AEM.
+Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java™, peut entraîner des incohérences dans l’environnement de développement AEM.

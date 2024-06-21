@@ -8,8 +8,9 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 100%
 
@@ -61,7 +62,7 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
 
    >[!NOTE]
    >
-   >Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Exécutez les activités postérieures à l’installation.
 
@@ -110,4 +111,4 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
 
    >[!NOTE]
    >
-   >Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   Dans AEM 6.4 Forms, la structure du référentiel crx a changé. Après la mise à niveau d’AEM 6.3 Forms vers AEM 6.5 Forms, utilisez les chemins d’accès modifiés pour la personnalisation que vous créez à nouveau. Pour la liste complète des chemins modifiés, voir [Restructuration du référentiel des formulaires dans AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

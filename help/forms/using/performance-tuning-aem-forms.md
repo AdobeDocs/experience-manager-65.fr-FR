@@ -8,8 +8,9 @@ docset: aem65
 role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -170,5 +171,5 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >
 >* Si vous utilisez un emplacement différent pour GDS et le répertoire temporaire, ouvrez l’interface administrateur à l’adresse `https://'[server]:[port]'/adminui`, accédez à **Accueil > Paramètres > Paramètres de système central > Configurations de base** afin de confirmer l’emplacement utilisé.
 >
->* Si le serveur AEM Forms est lent, même après l’exclusion des répertoires suggérés, excluez également le fichier exécutable Java™ (java.exe).
+* Si le serveur AEM Forms est lent, même après l’exclusion des répertoires suggérés, excluez également le fichier exécutable Java™ (java.exe).
 >

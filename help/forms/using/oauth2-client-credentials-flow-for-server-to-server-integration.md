@@ -3,9 +3,10 @@ title: Intégration de Salesforce avec AEM Forms à l’aide du flux d’inform
 description: Procédure d’intégration de Salesforce avec AEM Forms à l’aide du flux d’informations d’identification client OAuth 2.0
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
+feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 

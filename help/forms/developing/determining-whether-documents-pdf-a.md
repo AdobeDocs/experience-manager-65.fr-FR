@@ -9,10 +9,10 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2065'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -243,7 +243,7 @@ Déterminez si un document PDF est conforme PDF/A à l’aide de l’API Assemb
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les données XML qui spécifient si le document PDF d’entrée est un document PDF/A.
    * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite la valeur de ce membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent les données XML en accédant au champ `MTOM` de leur objet `BLOB`. Ce champ stocke un tableau d’octets que vous pouvez écrire dans en tant que fichier XML.
+   * Extrayez les données binaires qui représentent les données XML en accédant au champ `MTOM` de leur objet `BLOB`. Ce champ stocke un tableau d’octets que vous pouvez écrire en tant que fichier XML.
 
 **Voir également**
 

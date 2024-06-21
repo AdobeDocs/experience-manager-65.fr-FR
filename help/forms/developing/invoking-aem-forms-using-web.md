@@ -8,10 +8,10 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9814'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -817,7 +817,7 @@ Prenons lʼexemple dʼun processus `MyApplication/EncryptDocument` qui accepte u
 
 >[!NOTE]
 >
->La plupart des opérations de service AEM Forms ont un démarrage rapide MTOM. Vous pouvez afficher ces démarrages rapides dans la section de démarrage rapide correspondante d’un service. Par exemple, pour consulter la section Démarrage rapide Output, voir [Démarrages rapides de l’API du service Output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
+>La plupart des opérations de service AEM Forms sont dotées d’un démarrage rapide MTOM. Vous pouvez afficher ces démarrages rapides dans la section de démarrage rapide correspondante d’un service. Par exemple, pour consulter la section Démarrage rapide Output, voir [Démarrages rapides de l’API du service Output](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
 **Voir également**
 

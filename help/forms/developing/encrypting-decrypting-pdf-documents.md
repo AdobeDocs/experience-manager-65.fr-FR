@@ -8,8 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: 29cc7281e34487881ff9334f4cf00f3d013de11b
+workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 100%
 
@@ -165,6 +165,7 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
 [Démarrage rapide (mode SOAP) : chiffrement d’un document PDF à l’aide de l’API Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
