@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
+source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
 workflow-type: tm+mt
-source-wordcount: '3907'
-ht-degree: 93%
+source-wordcount: '4006'
+ht-degree: 91%
 
 ---
 
@@ -541,6 +541,12 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
    1. Ouvrez l’invite de commande en mode administrateur.
    1. Installez le correctif de code à l’aide de la méthode `geode-*-1.15.1.2.jar` fichier .
 
+* Si un utilisateur tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, il est bloqué dans `Loading` pour certaines lettres spécifiques. (FORMS-14521)
+Pour résoudre le problème, procédez comme suit :
+   1. Téléchargez la [correctif](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) à partir du portail de distribution de logiciels.
+   1. Téléchargez et installez le package (.zip) via le [Gestionnaire de modules CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=fr#accessing).
+
+* Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0, la variable `PaperCapture` ne parvient pas à effectuer d’opérations OCR (Optical Character Reconnaissance) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour résoudre ce problème, voir la section [dépannage](/help/forms/using/papercapture-service-resolution.md) article. (CQDOC-21680)
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
