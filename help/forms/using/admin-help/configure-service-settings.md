@@ -7,11 +7,12 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '10702'
-ht-degree: 100%
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+workflow-type: tm+mt
+source-wordcount: '10828'
+ht-degree: 98%
 
 ---
 
@@ -225,7 +226,7 @@ Les paramètres ci-dessous sont disponibles pour le service Encryption.
 >
 >utilisez l’authentification simple (nom d’utilisateur et mot de passe) uniquement lorsque la connexion est protégée via SSL (utilisation de LDAPS).
 
-**Mode de compatibilité :**
+<!-- **Compatibility Mode:**-->
 
 ## Paramètres du service FTP {#ftp-service-settings}
 
@@ -253,7 +254,11 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Paramètres de type de fichier :** nom des paramètres de type de fichier préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de type de fichier sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
 
-**Utiliser Acrobat WebCapture (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat X Pro pour toutes les conversions de fichiers HTML en PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false. 
+**Utiliser WebCapture (Windows uniquement) :** Lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat pour toutes les conversions HTML vers PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false. 
+
+**Convertisseur de Principal pour les conversions HTML vers PDF :** Le service Generate PDF fournit plusieurs itinéraires pour convertir des fichiers de HTML en documents de PDF : Webkit, WebCapture (Windows uniquement) et WebToPDF. Ce paramètre permet à l’utilisateur de sélectionner le convertisseur principal pour convertir le HTML en PDF. Par défaut, WebToPDF est sélectionné.
+
+**Convertisseur de secours pour les conversions HTML vers PDF :** Spécifiez le convertisseur pour les conversions HTML vers PDF en cas d’échec du convertisseur principal. Par défaut, WebCapture (Windows uniquement) est sélectionné.
 
 **Utiliser la conversion d’images Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat X Pro pour toutes les conversions d’images en PDF. Ce paramètre est utile uniquement si le mécanisme de conversion Java pur par défaut ne peut pas convertir correctement une proportion significative des images d’entrée. La valeur par défaut est false. 
 
@@ -268,21 +273,23 @@ dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qu
 
 **Taille du pool OCR :** taille du pool PaperCaptureService que PDF Generator utilise pour la reconnaissance optique de caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
+**Pages max ImageToPDF en mémoire pour les conversions de TIFF :** Ce paramètre détermine le nombre maximal de pages d’une image de TIFF qui peuvent rester en mémoire avant d’être purgées sur le disque pendant la conversion vers PDF. La valeur par défaut de ce paramètre est 500, ce qui peut être augmenté si une mémoire supplémentaire est allouée au processus de conversion ImageToPDF.
+
 **Famille de polices de remplacement pour les conversions de fichiers HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le fichier HTML d’origine n’est pas disponible pour le serveur AEM Forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
 
 **Logique de nouvelle tentative pour les conversions natives** : définit la logique des nouvelles tentatives de génération de fichiers PDF en cas d’échec de la première tentative de conversion.
 
-**Pas de nouvelle tentative**
+* **Pas de nouvelle tentative**
 
-Ne tentez pas de relancer la conversion du PDF si la première tentative a échoué.
+  Ne tentez pas de relancer la conversion du PDF si la première tentative a échoué.
 
-**Réessayer**
+* **Réessayer**
 
-Effectuez une nouvelle tentative de conversion PDF sans considérer si le délai maximal est atteint. Le délai par défaut pour la première tentative est de 270 s.
+  Effectuez une nouvelle tentative de conversion PDF sans considérer si le délai maximal est atteint. Le délai par défaut pour la première tentative est de 270 s.
 
-**Réessayer selon le temps imparti**
+* **Réessayer selon le temps imparti**
 
-Effectuez une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai spécifié. Par exemple, si le délai spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative. Si la première tentative a duré 270 s, aucune nouvelle tentative ne sera effectuée.
+  Effectuez une nouvelle tentative de conversion PDF si la première tentative de conversion a duré moins de temps que le délai spécifié. Par exemple, si le délai spécifié est de 270 s et que la première tentative a duré 200 s, PDF Generator effectue une nouvelle tentative. Si la première tentative a duré 270 s, aucune nouvelle tentative ne sera effectuée.
 
 ## Paramètres du service Guides ES4 Utilities {#guides-es4-utilities-service-settings}
 
