@@ -4,7 +4,9 @@ description: AEM Forms prend en charge les fonctions personnalisées qui permett
 keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 5%
@@ -14,6 +16,7 @@ ht-degree: 5%
 # Fonctions personnalisées dans les composants principaux de Forms adaptatif
 
 Cet article décrit la création de fonctions personnalisées avec le dernier composant principal de formulaire adaptatif, qui comporte les dernières fonctionnalités telles que :
+
 * Fonction de mise en cache des fonctions personnalisées
 * Prise en charge des objets de champ et d’objet de portée globale pour les fonctions personnalisées
 * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge ES10)
@@ -1003,5 +1006,3 @@ Si les fonctions personnalisées sont modifiées, la mise en cache est invalidé
    * Méthodes de classe
    * Paramètres par défaut
    * Paramètres REST
-
-
