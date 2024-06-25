@@ -77,7 +77,7 @@ Configuration de l’action Envoyer vers le point d’entrée REST
 
 >[!NOTE]
 >
-Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
+>Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
 
 ### Publier les données envoyées vers une ressource ou un point d’entrée REST externe {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ L’action d’envoi **Envoyer un e-mail** envoie un message électronique à un
 
 >[!NOTE]
 >
-Tous les champs de formulaire doivent avoir des noms d’éléments différents, même s’ils sont placés sur des panneaux différents, afin d’inclure des données de formulaire dans un e-mail.
+>Tous les champs de formulaire doivent avoir des noms d’éléments différents, même s’ils sont placés sur des panneaux différents, afin d’inclure des données de formulaire dans un e-mail.
 
 ## Envoyer un fichier PDF par e-mail {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ L’action d’envoi **Envoyer le PDF par courrier électronique** envoie un mes
 
 >[!NOTE]
 >
-Cette action d’envoi est disponible pour les formulaires adaptatifs XFA et XSD ayant le modèle de document d’enregistrement.
+>Cette action d’envoi est disponible pour les formulaires adaptatifs XFA et XSD ayant le modèle de document d’enregistrement.
 
 ## Appeler un processus de formulaires {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ L’action Envoyer place les éléments suivants à l’emplacement de la payloa
 
 >[!NOTE]
 >
-Vous pouvez utiliser des variables que le modèle de workflow soit configuré pour le stockage de données externes ou non.
+>Vous pouvez utiliser des variables que le modèle de workflow soit configuré pour le stockage de données externes ou non.
 
 * **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes chargées dans le formulaire adaptatif. Le dossier est créé par rapport à la payload. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
@@ -173,7 +173,7 @@ Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un fl
 
 >[!NOTE]
 >
-La fonction Envoyer à une liste Microsoft® SharePoint a été introduite avec AEM 6.5 Forms pack de services 19 (6.5.19.0).
+>La fonction Envoyer à une liste Microsoft® SharePoint a été introduite avec AEM 6.5 Forms pack de services 19 (6.5.19.0).
 
 L’action d’envoi **[!UICONTROL Envoyer à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
@@ -199,7 +199,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
      >[!NOTE]
      >
-     Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
+     >Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 1. Sélectionnez **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
@@ -218,16 +218,16 @@ Lorsque vous soumettez le formulaire, les données sont enregistrées dans le st
 
 >[!NOTE]
 >
-Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
-* Colonne image
-* Colonne métadonnées
-* Colonne personne
-* Colonne données externes
+>Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
+>* Colonne image
+>* Colonne métadonnées
+>* Colonne personne
+>* Colonne données externes
 
 
 >[!NOTE]
 >
-Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
+>Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Si l’utilisateur final ou l’utilisatrice finale contourne ces validations et
 
 >[!NOTE]
 >
-La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM dans la même bibliothèque client.
+>La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM dans la même bibliothèque client.
 
 ### Prise en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
 

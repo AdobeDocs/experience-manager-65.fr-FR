@@ -48,10 +48,10 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 >[!NOTE]
 >
-Sélection multiple sur un ordinateur de bureau :
+>Sélection multiple sur un ordinateur de bureau :
 >
-* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
-* macOS : Commande + clic sur les composants nécessaires.
+>* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
+>* macOS : Commande + clic sur les composants nécessaires.
 >
 
 ## Éditeur de thème  {#themeeditor}
@@ -66,7 +66,7 @@ Sélection multiple sur un ordinateur de bureau :
 
 >[!NOTE]
 >
-Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
+>Les raccourcis marqués d’un « &amp;ast; » fonctionnent à la fois avec les touches Ctrl et Commande sous macOS.
 
 ## Explorateur de contenu  {#contentbrowser}
 
