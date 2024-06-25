@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
-workflow-type: ht
-source-wordcount: '518'
-ht-degree: 100%
+source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 79%
 
 ---
 
@@ -28,6 +28,35 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td><strong>Date</strong></td>
     <td><strong>Lien de téléchargement des correctifs (lien de distribution logicielle AEM)</strong></td>
     <td><strong>Problèmes résolus</strong></td>
+  </tr>
+  <tr>
+    <td>samedi 21 juin 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 sur le serveur JEE JBoss </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 sur le serveur WebLogic JEE </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 sur le serveur WebSphere JEE </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 sur le serveur OSGi </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0, le service PaperCapture ne parvient pas à effectuer d’opérations OCR (reconnaissance optique des caractères) sur les PDF. Pour résoudre ce problème, reportez-vous à la section <a href="/help/forms/using/papercapture-service-resolution.md"> dépannage</a> article.(CQDOC-21680) </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>samedi 21 juin 2024</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip">Correctif pour AEM Service Pack 6.5.21.0 </a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Les brouillons de lettres contenant des données XML sont bloqués à l’état de chargement lors de l’aperçu. Pour télécharger et installer le correctif, voir<a href="#install-hotfix"> Télécharger et installer le correctif pour le problème de brouillon de lettre</a> .(FORMS-14521)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>vendredi 16 mai 2024</td>
@@ -105,3 +134,11 @@ Effectuez les étapes suivantes pour télécharger et installer le correctif :
 1. Procédez à l’extraction du fichier d’archive Hotfix pour obtenir un package Experience Manager (.zip) et des fichiers de lot (.jar).
 1. Chargez et installez le package (.zip) via le [gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=fr#accessing).
 1. Ouvrez les lots Configuration Manager `https://server:host/system/console/bundles`, chargez et installez le lot (.jar). Le correctif est installé.
+
+
+## Télécharger et installer le correctif pour le problème de brouillon de lettre {#install-hotfix}
+
+Pour résoudre le problème, procédez comme suit :
+
+1. Téléchargez la [correctif](#hotfix-for-adaptive-forms) à partir du portail de distribution de logiciels.
+2. Téléchargez et installez le module (.zip) à l’aide de la fonction [Gestionnaire de modules CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=fr#accessing).
