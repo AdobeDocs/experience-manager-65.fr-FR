@@ -1,13 +1,13 @@
 ---
 title: Comment créer des formulaires adaptatifs à l’aide d’un schéma XML ?
 description: Découvrez comment utiliser un schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants afin de créer des formulaires adaptatifs et faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif. Explorez plus en détail un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 

@@ -3,11 +3,11 @@ title: Comment créer un formulaire adaptatif à l’aide d’un schéma JSON ?
 description: Découvrez comment créer un formulaire adaptatif à l’aide d’un schéma JSON en tant que modèle de formulaire. Vous pouvez utiliser des schémas JSON existants pour créer des formulaires adaptatifs. Explorez en détail un exemple de schéma JSON, préconfigurez les champs dans la définition de schéma JSON, limitez les valeurs possibles pour un composant de formulaire adaptatif et découvrez les éléments non pris en charge.
 role: User, Developer
 level: Beginner, Intermediate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
-workflow-type: ht
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 100%
 

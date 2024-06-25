@@ -5,11 +5,12 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
-workflow-type: ht
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+workflow-type: tm+mt
 source-wordcount: '4308'
 ht-degree: 100%
 
@@ -532,5 +533,3 @@ Un fichier XCI permet de définir différentes propriétés d’un document. <!-
 1. Ouvrez Configuration Manager dans <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
 1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
-
-
