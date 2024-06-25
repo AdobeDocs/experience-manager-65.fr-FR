@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 79%
 
 ---
@@ -41,7 +41,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
      </td>
     <td>
     <ul>
-    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0, le service PaperCapture ne parvient pas à effectuer d’opérations OCR (reconnaissance optique des caractères) sur les PDF. Pour résoudre ce problème, reportez-vous à la section <a href="/help/forms/using/papercapture-service-resolution.md"> dépannage</a> article.(CQDOC-21680) </li>
+    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0, le service PaperCapture ne parvient pas à effectuer d’opérations OCR (reconnaissance optique des caractères) sur les PDF. Pour obtenir des instructions sur l’installation, reportez-vous à la section <a href="/help/forms/using/papercapture-service-resolution.md"> dépannage</a> article.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
      </td>
     <td>
     <ul>
-    <li>Les brouillons de lettres contenant des données XML sont bloqués à l’état de chargement lors de l’aperçu. Pour télécharger et installer le correctif, reportez-vous au<a href="#install-hotfix"> Télécharger et installer le correctif pour le problème de brouillon de lettre</a> .(FORMS-14521)</li>
+    <li>Les brouillons de lettres contenant des données XML sont bloqués à l’état de chargement lors de l’aperçu. Pour les instructions de téléchargement et d’installation du correctif, reportez-vous à la section<a href="#install-hotfix"> Télécharger et installer le correctif pour le problème de brouillon de lettre</a> .(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
