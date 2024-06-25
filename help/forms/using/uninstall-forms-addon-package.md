@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # Désinstallation du module complémentaire AEM Forms à partir de l’instance AEM
 
-Cet article décrit les étapes nécessaires à la désinstallation correcte du module complémentaire AEM Forms à partir d’une instance du SDK AEM Forms. Pour garantir la suppression du module complémentaire Forms, évitez les problèmes potentiels liés à votre environnement AEM, procédez comme suit.
+Cet article décrit les étapes nécessaires à la désinstallation correcte du module complémentaire AEM Forms à partir d’une instance du SDK AEM Forms. Suivez ces étapes pour garantir la suppression du module complémentaire Forms, afin d’éviter tout problème potentiel avec votre environnement AEM.
 
-## Conditions préalables
+## Condition préalable
 
-Veillez à sauvegarder les formulaires et les données pour éviter toute perte de données.
+Veillez à effectuer une sauvegarde pour éviter toute perte de données.
 
 ## Pour désinstaller le module complémentaire AEM Forms
 
