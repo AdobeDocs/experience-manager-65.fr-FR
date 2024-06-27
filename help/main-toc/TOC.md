@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 17e10214732b25c89e0bb3f7b435fe05cd2f3595
+source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
 workflow-type: tm+mt
-source-wordcount: '7434'
+source-wordcount: '7456'
 ht-degree: 99%
 
 ---
@@ -878,6 +878,12 @@ ht-degree: 99%
       + [Designer – Guide de référence FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65_fr)
       + [Utilisation de la signature tactile dans les formulaires HTML5](/help/forms/using/scribble-signature.md)
       + [Modifiier le contenu de la page zéro avec Designer](/help/forms/using/changing-page-zero-content-designer.md)
+      + [Bonnes pratiques relatives à l’accessibilité]{#accessibility-best-practices}
+         + [Présentation](/help/forms/using/introduction-accessibility-forms-designer.md)
+         + [Bonnes pratiques relatives à la création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [Techniques de test de l’accessibilité des formulaires](/help/forms/using/techniques-for-testing-form-accessibility.md)
+         + [Mappage entre les consignes et les bonnes pratiques](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [Liens utiles](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + Personnaliser AEM Forms {#customize-aem-forms}
       + [Structure de l’apparence des formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md)
       + [Création d’un modèle de formulaire adaptatif personnalisé](/help/forms/using/custom-adaptive-forms-templates.md)
