@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: ht
-source-wordcount: '5398'
-ht-degree: 100%
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 99%
 
 ---
 
@@ -96,7 +96,7 @@ Les tableaux suivants répertorient chaque élément avec :
   <tr>
    <td>contributeur</td>
    <td>Groupe</td>
-   <td><p>Privilèges de base qui permettent à l’utilisateur ouà l’utilisatrice d’écrire du contenu (fonctionnalité uniquement).</p> <p>N’attribue aucun privilège sur l’arborescence /content. Ils doivent être attribués aux groupes ou aux utilisateurs et utilisatrices de manière individuelle.</p> </td>
+   <td><p>Droits de base qui permettent à l’utilisateur d’écrire du contenu (comme dans , uniquement les privilèges requis pour les fonctionnalités de base).</p> <p>N’alloue aucun privilège pour l’accès à l’arborescence /content elle-même. Elles doivent être spécifiquement allouées aux groupes ou aux utilisateurs individuels.</p> </td>
    <td> </td>
   </tr>
   <tr>
