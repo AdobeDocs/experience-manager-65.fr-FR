@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3999'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -541,9 +541,9 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
    1. Ouvrez l’invite de commande en mode administration.
    1. Installez le correctif Geode à l’aide du fichier `geode-*-1.15.1.2.jar`.
 
-* Si un utilisateur tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, il est bloqué dans `Loading` pour certaines lettres spécifiques. Pour télécharger et installer le correctif, reportez-vous au [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (FORMS-14521)
+* Si un utilisateur ou une utilisatrice tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, certaines lettres spécifiques restent bloquées à l’état `Loading`. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 
-* Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0, la variable `PaperCapture` ne parvient pas à effectuer d’opérations OCR (Optical Character Reconnaissance) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour télécharger et installer le correctif, reportez-vous au [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) article. (CQDOC-21680)
+* Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0, le service `PaperCapture` ne parvient pas à effectuer d’opérations OCR (reconnaissance optique de caractères) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
