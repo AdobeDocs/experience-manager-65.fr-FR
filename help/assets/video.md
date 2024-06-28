@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '11203'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -654,8 +654,8 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
      |--- |--- |
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
      | Langue | Sélectionnez la langue des sous-titres. |
-     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titre** - Texte de la légende affiché avec la vidéo qui traduit ou transcrit la boîte de dialogue.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
-     | Libellé | Le texte affiché pour le nom de la légende dans le champ **[!UICONTROL Sélectionner un contenu audio ou un sous-titre]** liste déroulante dans le lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
+     | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titres** : texte des sous-titres affichés dans la vidéo qui traduit ou transcrit les dialogues.<br>**Légende** : le texte de la légende inclut également les bruits de fond, la différenciation des locuteurs et locutrices et d’autres informations pertinentes, ainsi que la traduction ou la transcription du dialogue, afin d’offrir un contenu plus accessible aux personnes sourdes ou malentendantes. |
+     | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
 
      Vous pouvez modifier les métadonnées de sous-titres ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
 
@@ -669,7 +669,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
      | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou de sous-titres supplémentaires. |
      | Langue | Sélectionnez la langue de la piste audio. |
      | Type | Sélectionnez le type de piste audio que vous utilisez.<br>**Original** : piste audio initialement jointe à la vidéo et représentée comme `[Original]` dans le libellé avec la langue `English` sélectionnée par défaut. Bien que **[!UICONTROL Libellé]** et **[!UICONTROL Langue]** peuvent être modifiés dans la boîte de dialogue **[!UICONTROL Modifier la piste audio]**, les valeurs d’origine sont utilisées par défaut si la vidéo principale est retraitée.<br>**Standard** : piste audio complémentaire pour une langue autre que la langue originale.<br>**Audio-description** : piste audio qui comprend également une narration descriptive des actions non verbales et des gestes dans la vidéo, rendant le contenu plus accessible pour les personnes malvoyantes. |
-     | Libellé | Le texte affiché comme nom de la piste audio dans la variable **[!UICONTROL Sélectionner un contenu audio ou un sous-titre]** liste déroulante dans le lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
+     | Libellé | Texte affiché comme nom de la piste audio dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou le sous-titre]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
 
      Vous pouvez modifier ces métadonnées de piste audio ultérieurement, si nécessaire. Lorsque la vidéo est publiée, ces informations sont reflétées dans les URL publiques des vidéos publiées.
 
