@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5409'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Les tableaux suivants répertorient chaque élément avec :
   <tr>
    <td>contributeur</td>
    <td>Groupe</td>
-   <td><p>Droits de base qui permettent à l’utilisateur d’écrire du contenu (comme dans , uniquement les privilèges requis pour les fonctionnalités de base).</p> <p>N’alloue aucun privilège pour l’accès à l’arborescence /content elle-même. Elles doivent être spécifiquement allouées aux groupes ou aux utilisateurs individuels.</p> </td>
+   <td><p>Droits de base qui permettent à l’utilisateur ou à l’utilisatrice d’écrire du contenu (c’est-à-dire uniquement les droits nécessaires à la fonctionnalité de base).</p> <p>N’attribue aucun droit pour accéder à l’arborescence /content. Ces droits doivent être spécifiquement attribués aux groupes ou aux utilisateurs et utilisatrices de manière individuelle.</p> </td>
    <td> </td>
   </tr>
   <tr>
