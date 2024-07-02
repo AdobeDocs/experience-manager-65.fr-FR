@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -878,11 +878,11 @@ ht-degree: 99%
       + [Designer – Guide de référence FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65_fr)
       + [Utilisation de la signature tactile dans les formulaires HTML5](/help/forms/using/scribble-signature.md)
       + [Modifiier le contenu de la page zéro avec Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Bonnes pratiques relatives à l’accessibilité]{#accessibility-best-practices}
+      + [Bonnes pratiques en matière d’accessibilité]{#accessibility-best-practices}
          + [Présentation](/help/forms/using/introduction-accessibility-forms-designer.md)
-         + [Bonnes pratiques relatives à la création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
+         + [Bonnes pratiques en matière de création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Techniques de test de l’accessibilité des formulaires](/help/forms/using/techniques-for-testing-form-accessibility.md)
-         + [Mappage entre les consignes et les bonnes pratiques](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
+         + [Alignement des conseils et des bonnes pratiques](/help/forms/using/mapping-between-guidelines-and-best-practices.md)
          + [Liens utiles](/help/forms/using/useful-links-accessibility-forms-designer.md)
    + Personnaliser AEM Forms {#customize-aem-forms}
       + [Structure de l’apparence des formulaires adaptatifs et HTML5](/help/forms/using/introduction-widgets.md)
@@ -1204,8 +1204,8 @@ ht-degree: 99%
       + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Redémarrage correct du SDK AEM](/help/forms/using/restart-aem-sdk.md)
-      + [Le service PaperCapture n’effectue pas de reconnaissance optique des caractères sur les PDF.](/help/forms/using/papercapture-service-resolution.md)
-      + [Désinstallation du module complémentaire AEM Forms](/help/forms/using/uninstall-forms-addon-package.md)
+      + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
+      + [Désinstaller le module complémentaire AEM Forms](/help/forms/using/uninstall-forms-addon-package.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
       + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)

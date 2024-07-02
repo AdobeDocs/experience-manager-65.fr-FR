@@ -5,9 +5,9 @@ feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
 source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->Les clients Adobe utilisent la variable [Console Adobe Developer](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. Le type d’informations d’identification Service Account (JWT) est désormais obsolète au profit des informations d’identification OAuth Server-to-Server avec le Service Pack 20. Cette modification peut être renvoyée vers les packs de services plus anciens, à partir du pack de services 11 jusqu’au pack de services 20, avec l’utilisation d’un correctif que vous pouvez télécharger [ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Les clientes et clients Adobe utilisent [Adobe Developer Console](https://developer.adobe.com/console) pour générer des informations d’identification qui permettent l’accès à diverses API. Les clientes et clients effectuent un choix parmi différents types d’informations d’identification, allant d’OAuth serveur à serveur jusqu’à l’application monopage. Le type d’informations d’identification du compte de service (JWT) a été abandonné au profit des informations d’identification OAuth serveur à serveur avec le pack de services 20. Cette modification peut être renvoyée vers les packs de services plus anciens, à partir du pack de services 11 jusqu’au pack de services 20, avec l’utilisation d’un correctif que vous pouvez télécharger [ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM) peut être intégré à de nombreuses autres solutions Adobe. Par exemple, Adobe Target, Adobe Analytics et d’autres.
 
 Les intégrations utilisent une intégration IMS configurée avec S2S OAuth.
 
-* Après avoir créé :
+* Une fois que vous avez créé ce qui suit :
 
    * [Les informations d’identification dans la Developer Console](#credentials-in-the-developer-console)
 
@@ -40,9 +40,9 @@ Les intégrations utilisent une intégration IMS configurée avec S2S OAuth.
 
 ## Informations d’identification dans la Developer Console {#credentials-in-the-developer-console}
 
-Pour commencer, vous devez configurer les informations d’identification OAuth dans la console Adobe Developer.
+Dans un premier temps, vous devez configurer les informations d’identification OAuth dans Adobe Developer Console.
 
-Pour plus d’informations sur la manière d’effectuer cette configuration, consultez la documentation de Developer Console en fonction de vos besoins :
+Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de la Developer Console, en fonction de vos besoins :
 
 * Vue d’ensemble :
 
@@ -90,7 +90,7 @@ Pour migrer une intégration Adobe IMS existante basée sur les informations d�
 
    ![Sélection de la configuration JWT](assets/ims-migrate-jwt-select-configuration.png)
 
-1. La configuration s’ouvre en lecture seule :
+1. La configuration s’ouvre en lecture seule :
 
    ![Propriétés de configuration - Lecture seule](assets/ims-migrate-jwt-properties-read-only.png)
 
@@ -103,4 +103,4 @@ Pour migrer une intégration Adobe IMS existante basée sur les informations d�
    ![Saisie des détails OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Sélectionnez **Enregistrer et fermer** pour conserver vos mises à jour.
-Lorsque vous revenez à la console, la variable **Informations d’identification JWT (obsolète)** l&#39;avertissement a disparu.
+Lorsque vous revenez à la console, l’avertissement **Informations d’identification JWT (obsolètes)** a disparu.

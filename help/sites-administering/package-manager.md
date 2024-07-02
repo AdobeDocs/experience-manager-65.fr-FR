@@ -10,9 +10,9 @@ docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3568'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ Utilisez une icône unique pour votre package. Ne réutilisez pas une icône uti
 
 Les filtres identifient les nœuds du référentiel à inclure dans le package. Une **définition de filtre** spécifie les informations suivantes :
 
-* La variable **Chemin racine** du contenu à inclure
+* **Chemin d’accès racine** du contenu à inclure
 * **Règles** incluant ou excluant certains nœuds sous le chemin d’accès racine
 
 Ajoutez des règles à l’aide du bouton **+**. Supprimez des règles à l’aide du bouton **-**.
@@ -168,12 +168,12 @@ Vous pouvez définir une ou plusieurs définitions de filtre pour un package. Ut
 
 ![Onglet Filtres](assets/edit-filter.png)
 
-Lors de la création de règles, vous définissez une expression régulière (également appelée expression régulière, regexp ou expression rationnelle) pour spécifier tous les noeuds que vous souhaitez inclure ou exclure.
+Lors de la création de règles, vous définissez une expression régulière (également appelée regex, regexp ou expression rationnelle) pour spécifier tous les nœuds que vous souhaitez inclure ou exclure.
 
 | Type de règle | Description |
 |---|---|
-| inclusion | Include inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclure **will not** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
-| Exclusion | Exclure exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
+| inclusion | Inclusion inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclusion **n’inclura pas** d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| Exclusion | Exclusion exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
@@ -183,7 +183,7 @@ Les filtres de package sont le plus souvent définis lors de la première [créa
 
 >[!TIP]
 >
->Pour plus d’informations, voir [Apache Jackrabbit - Filtre Workspace](https://jackrabbit.apache.org/filevault/filter.html) la documentation.
+>Pour plus d’informations, voir la documentation [Apache Jackrabbit - Filtre d’espace de travail](https://jackrabbit.apache.org/filevault/filter.html).
 
 ### Dépendances {#dependencies}
 

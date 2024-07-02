@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10824'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -254,15 +254,15 @@ Les paramètres ci-dessous sont disponibles pour le service Generate PDF.
 
 **Paramètres de type de fichier :** nom des paramètres de type de fichier préconfigurés à appliquer à une tâche de conversion, si ces paramètres ne sont pas spécifiés comme faisant partie des paramètres d’appels d’API. Les paramètres de type de fichier sont configurés dans Administration Console en cliquant sur Services > PDF Generator > Paramètres de type de fichier.
 
-**Utiliser WebCapture (Windows uniquement) :** Lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat pour toutes les conversions HTML vers PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false. 
+**Utiliser WebCapture (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat pour toutes les conversions de fichiers HTML en PDF. La qualité des fichiers PDF produits à partir de fichiers HTML peut en être améliorée, bien que la performance puisse être légèrement plus faible. La valeur par défaut est false. 
 
-**Convertisseur de Principal pour les conversions HTML vers PDF :** Le service Generate PDF fournit plusieurs itinéraires pour convertir des fichiers de HTML en documents de PDF : Webkit, WebCapture (Windows uniquement) et WebToPDF. Ce paramètre permet à l’utilisateur de sélectionner le convertisseur principal pour convertir le HTML en PDF. Par défaut, WebToPDF est sélectionné.
+**Convertisseur principal pour les conversions de fichiers HTML en PDF :** le service Generate PDF fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : Webkit, WebCapture (Windows uniquement) et WebToPDF. Ce paramètre permet à l’utilisateur ou l’utilisatrice de sélectionner le convertisseur principal pour convertir les fichiers HTML en PDF. WebToPDF est sélectionné par défaut.
 
-**Convertisseur de secours pour les conversions HTML vers PDF :** Spécifiez le convertisseur pour les conversions HTML vers PDF en cas d’échec du convertisseur principal. Par défaut, WebCapture (Windows uniquement) est sélectionné.
+**Convertisseur de secours pour les conversions de fichiers HTML en PDF :** spécifiez le convertisseur pour les conversions de fichiers HTML en PDF en cas d’échec du convertisseur principal. WebCapture (Windows uniquement) est sélectionné par défaut.
 
-**Utiliser la conversion d’images Acrobat (Windows uniquement) :** Lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat pour toutes les conversions Image vers PDF. Ce paramètre est utile uniquement si le mécanisme de conversion Java pur par défaut ne peut pas convertir correctement une proportion significative des images d’entrée. La valeur par défaut est false. 
+**Utiliser la conversion d’images Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat pour toutes les conversions d’images en PDF. Ce paramètre est utile uniquement si le mécanisme de conversion Java pur par défaut ne peut pas convertir correctement une proportion significative des images d’entrée. La valeur par défaut est false. 
 
-**Activez les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** Lorsque ce paramètre est défini sur true, le service Generate PDF utilise Acrobat pour toutes les conversions DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
+**Activer les conversions AutoCAD basées sur Acrobat (Windows uniquement) :** lorsque ce paramètre est défini sur « true », le service Generate PDF utilise Acrobat pour toutes les conversions de fichiers DWG en PDF. Ce paramètre est utile uniquement si AutoCAD n’est pas installé sur le serveur ou si le mécanisme de conversion AutoCAD ne peut pas convertir correctement les fichiers.
 
 **Expressions régulières pour trouver les caractères spéciaux interdits
 dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qui interfèrent avec les opérations Exporter un PDF et Optimiser un PDF lorsque ces caractères apparaissent dans le nom d’un utilisateur ou d’une utilisatrice.
@@ -273,7 +273,7 @@ dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qu
 
 **Taille du pool OCR :** taille du pool PaperCaptureService que PDF Generator utilise pour la reconnaissance optique de caractères (OCR). La valeur par défaut de ce paramètre (recommandée pour les systèmes à un processeur) est 3. Vous pouvez augmenter cette valeur pour les systèmes à plusieurs processeurs. Ce paramètre n’est valide que sur les systèmes Windows.
 
-**Pages max ImageToPDF en mémoire pour les conversions de TIFF :** Ce paramètre détermine le nombre maximal de pages d’une image de TIFF qui peuvent rester en mémoire avant d’être purgées sur le disque pendant la conversion vers PDF. La valeur par défaut de ce paramètre est 500, ce qui peut être augmenté si une mémoire supplémentaire est allouée au processus de conversion ImageToPDF.
+**Pages max ImageToPDF en mémoire pour les conversions TIFF :** ce paramètre détermine le nombre maximal de pages d’une image TIFF qui peuvent rester en mémoire avant d’être purgées sur le disque pendant la conversion en fichier PDF. La valeur par défaut de ce paramètre est 500. Celle-ci peut être augmentée si une mémoire supplémentaire est allouée au processus de conversion ImageToPDF.
 
 **Famille de polices de remplacement pour les conversions de fichiers HTML en PDF :** nom de la famille de polices à utiliser dans les documents PDF lorsque la police utilisée dans le fichier HTML d’origine n’est pas disponible pour le serveur AEM Forms. Spécifiez une famille de polices si vous envisagez de convertir des pages HTML qui utilisent des polices non disponibles. Par exemple, les pages créées dans des langues régionales pourraient utiliser des polices non disponibles.
 
