@@ -93,7 +93,7 @@ Les scripts de formulaire situés dans l’événement form:ready ne sont exécu
 
 >[!NOTE]
 >
-Dans un formulaire de plusieurs pages, les modifications apportées par JavaScript à une page ne sont pas conservées si vous passez à une autre page.
+>Dans un formulaire de plusieurs pages, les modifications apportées par JavaScript à une page ne sont pas conservées si vous passez à une autre page.
 
 Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. Cette fonctionnalité fonctionne sur tous les navigateurs disponibles. Cependant, elle ne peut être utilisée que lorsque les utilisateurs effectuent le rendu du formulaire HTML dont la propriété `Output Type` est définie sur `Form Body`. Cela ne fonctionne pas lorsque la propriété `Output Type` est définie sur `Full HTML`. Pour connaître les étapes de configuration de cette fonctionnalité, consultez la section Configurer des formulaires dans l’aide d’administration.
 
@@ -167,7 +167,7 @@ Le script suivant conserve la fonction `fillColor` d’un champ en fonction de l
 
 >[!NOTE]
 >
-Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML de rendu. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
+>Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML de rendu. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
 
 ## Signature numérique de formulaires HTML {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ Il est recommandé de limiter l’utilisation des règles de validation pour les
 
 >[!NOTE]
 >
-Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -226,11 +226,11 @@ Les URL HTTP où les données du formulaire sont envoyées peuvent être spécif
 
 >[!NOTE]
 >
-Le rendu d’un formulaire de HTML avec une barre d’outils est facultatif.
+>Le rendu d’un formulaire de HTML avec une barre d’outils est facultatif.
 
 >[!NOTE]
 >
-Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de barre d’outils au formulaire.
+>Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de barre d’outils au formulaire.
 
 **Rendre un formulaire au format HTML**
 
@@ -282,7 +282,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
 
    >[!NOTE]
    >
-   Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les formulaires AEM (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   >Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les formulaires AEM (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
@@ -340,7 +340,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
 
    >[!NOTE]
    >
-   Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   >Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
