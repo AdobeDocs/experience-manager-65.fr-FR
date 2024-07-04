@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
-workflow-type: ht
-source-wordcount: '3999'
-ht-degree: 100%
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+workflow-type: tm+mt
+source-wordcount: '4070'
+ht-degree: 98%
 
 ---
 
@@ -544,6 +544,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Si un utilisateur ou une utilisatrice tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, certaines lettres spécifiques restent bloquées à l’état `Loading`. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 
 * Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0, le service `PaperCapture` ne parvient pas à effectuer d’opérations OCR (reconnaissance optique de caractères) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
+
+* Lorsque les utilisateurs effectuent une mise à jour d’AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou d’AEM 6.5 Forms Service Pack 19 (6.5.19.0) vers la version 6.5 Forms Service Pack 20 (6.5.20.0) ou la version 6.5 Forms Service Pack 21 (6.5.21.0), ils rencontrent une erreur de compilation JSP, qui les empêche d’ouvrir ou de créer des formulaires adaptatifs et provoque également des erreurs avec d’autres interfaces de type l’éditeur de page, l’interface utilisateur d’et l’éditeur de processus d’. (FORMS-15256)
+
+
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 

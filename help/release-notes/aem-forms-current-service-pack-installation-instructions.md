@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
-workflow-type: ht
-source-wordcount: '1734'
-ht-degree: 100%
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
+workflow-type: tm+mt
+source-wordcount: '1697'
+ht-degree: 99%
 
 ---
 
@@ -140,12 +140,9 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
 +++
 
-+++5. Installer le fragment de servlet (Pack de services AEM 6.5.14.0 ou version antérieure) (**Installation obligatoire**)
++++5. Installer le fragment de servlet s’il n’est pas installé (**Étape obligatoire**)
 
->[!NOTE]
->
-> * Si vous effectuez une mise à niveau à partir du **Pack de services AEM 6.5.15.0**, l’installation du **fragment de servlet** n’est pas obligatoire. Pour les versions du **Pack de services AEM 6.5.14.0** ou antérieures, il est **obligatoire d’installer** le fragment de servlet.
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 Pour télécharger et installer le fragment de servlet :
 
