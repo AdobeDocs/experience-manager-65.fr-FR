@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
+source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
 workflow-type: tm+mt
-source-wordcount: '4070'
-ht-degree: 98%
+source-wordcount: '4099'
+ht-degree: 97%
 
 ---
 
@@ -547,7 +547,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Lorsque les utilisateurs effectuent une mise à jour d’AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou d’AEM 6.5 Forms Service Pack 19 (6.5.19.0) vers la version 6.5 Forms Service Pack 20 (6.5.20.0) ou la version 6.5 Forms Service Pack 21 (6.5.21.0), ils rencontrent une erreur de compilation JSP, qui les empêche d’ouvrir ou de créer des formulaires adaptatifs et provoque également des erreurs avec d’autres interfaces de type l’éditeur de page, l’interface utilisateur d’et l’éditeur de processus d’. (FORMS-15256)
 
-
+  Si vous rencontrez un tel problème, procédez comme suit pour le résoudre :
+   1. Accédez au répertoire `/libs/fd/aemforms/install/` dans CRXDE.
+   1. Supprimer le lot avec le nom `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Redémarrez votre serveur AEM.
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
