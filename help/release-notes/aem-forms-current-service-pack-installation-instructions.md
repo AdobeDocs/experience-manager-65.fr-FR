@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1697'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Accédez au répertoire approprié puis, à partir du shell, saisissez `./aem65_
 
 +++
 
-+++5. Installer le fragment de servlet s’il n’est pas installé (**Étape obligatoire**)
++++5. Installer le fragment de servlet s’il n’est pas installé (**Étape obligatoire**).
 
 <!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
