@@ -9,10 +9,10 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1564'
+ht-degree: 99%
 
 ---
 
@@ -88,6 +88,10 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
    ![Définir la zone de sécurité](assets/access-rights.png)
 
 1. Sélectionnez la zone de sécurité appropriée et définissez le masque IP de confiance selon vos besoins.
+
+   >[!CAUTION]
+   >
+   >La zone de sécurité à configurer est la suivante : **Réseau d’entreprise privée (VPN+LAN)**.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -201,7 +205,7 @@ Vous avez configuré l’externaliseur et Adobe Campaign peut désormais accéde
 
 >[!NOTE]
 >
->L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
+L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
 
 ## Configurer l’utilisateur distant de Campaign dans AEM {#configure-user}
 
