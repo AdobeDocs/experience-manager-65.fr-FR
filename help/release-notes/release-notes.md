@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4883ed159b945093b8530e6ec2c2217d4f3c2409
+source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
-source-wordcount: '4099'
-ht-degree: 99%
+source-wordcount: '4332'
+ht-degree: 94%
 
 ---
 
@@ -46,18 +46,17 @@ ht-degree: 99%
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
 * **Prise en charge des informations d’identification Oauth** : nouvelles informations d’identification plus faciles à utiliser pour l’authentification de serveur à serveur, remplaçant les informations d’identification de compte de service (JWT) existant. (NPR-41994)
-* **Améliorations de l’éditeur de règles dans AEM Forms** :
+* [Améliorations de l’éditeur de règles dans AEM Forms](/help/forms/using/rule-editor-core-components.md) :
    * Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité `When-then-else`.
    * Validez ou réinitialisez les panneaux et les formulaires, y compris les champs.
    * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées.
-* **API AutoTag pour l’accessibilité du PDF** : AEM Forms sur OSGi prend désormais en charge la nouvelle API AutoTag afin d’améliorer le PDF pour les normes d’accessibilité en ajoutant des balises, des paragraphes et des listes. Cela rend les PDF plus accessibles pour les utilisateurs et utilisatrices dotés de technologie d’assistance.
+* [API AutoTag pour l’accessibilité du PDF](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services) : AEM Forms sur OSGi prend désormais en charge la nouvelle API AutoTag afin d’améliorer le PDF pour les normes d’accessibilité en ajoutant des balises, des paragraphes et des listes. Cela rend les PDF plus accessibles pour les utilisateurs et utilisatrices dotés de technologie d’assistance.
 * **Prise en charge de PNG 16 bits** : le service ImageToPdf du PDF Generator prend désormais en charge la conversion des PNG avec une profondeur de la couleur de 16 bits.
 * **Appliquer des artefacts à des blocs de texte individuels dans des fichiers XDP** : Forms Designer permet désormais aux utilisateurs et utilisatrices de configurer des paramètres sur des blocs de texte individuels dans des fichiers XDP. Cette fonctionnalité vous permet de contrôler les éléments traités comme des artefacts dans les PDF résultants. Ces éléments, tels que les en-têtes et les pieds de page, sont rendus accessibles aux technologies d’assistance. Les principales fonctionnalités incluent le marquage des blocs de texte en tant qu’artefacts et l’incorporation de ces paramètres dans les métadonnées XDP. Le service Forms Output applique ces paramètres lors de la génération du PDF, en assurant un balisage PDF/UA approprié.
 * **AEM Forms Designer est certifié par la norme `GB18030:2022`** : grâce à la certification `GB18030:2022`, Forms Designer prend désormais en charge les jeux de caractères Unicode chinois permettant de saisir des caractères chinois dans tous les champs et boîtes de dialogue modifiables.
-* **Prise en charge de l’itinéraire WebToPDF sur le serveur JEE** : le service PDF Generator prend désormais en charge l’itinéraire WebToPDF pour la conversion de fichiers HTML en documents PDF sur JEE, en plus des itinéraires Webkit et WebCapture (Windows uniquement). Bien que l’itinéraire WebToPDF soit déjà disponible sur OSGi, il a été étendu pour inclure également JEE. Sur les plateformes JEE et OSGi, le service PDF Generator prend en charge les itinéraires suivants sur différents systèmes d’exploitation :
+* [Prise en charge de l’itinéraire WebToPDF sur le serveur JEE](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) L’utilisation du service PDF Generator prend désormais en charge l’itinéraire WebToPDF pour la conversion de fichiers d’HTML en documents PDF sur JEE, en plus des itinéraires WebKit et WebCapture (Windows uniquement) existants. Bien que l’itinéraire WebToPDF soit déjà disponible sur OSGi et étendu à JEE. Désormais, sur les plateformes JEE et OSGi, le service de PDF Generator prend en charge les itinéraires suivants sur différents systèmes d’exploitation :
    * **Windows** : Webkit, WebCapture, WebToPDF
-   * **Linux** : Webkit, WebToPDF
-
+   * **Linux®**: Webkit, WebToPDF
 
 ### [!DNL Assets]
 
@@ -551,6 +550,13 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
    1. Accédez au répertoire `/libs/fd/aemforms/install/` dans CRXDE.
    1. Supprimer le lot avec le nom `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Redémarrez votre serveur AEM.
+
+* Lorsqu’un utilisateur effectue une mise à jour vers AEM Forms Service Pack 20 (6.5.20.0) sur le serveur JEE et génère des PDF à l’aide des services de sortie, le rendu des PDF pose des problèmes d’accessibilité. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
+* Lorsqu’un utilisateur génère des PDF balisés à l’aide du service de sortie sur JEE, l’avertissement &quot;Avertissement de structure inapproprié&quot; s’affiche. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
+* Lorsqu’un formulaire est envoyé sur AEM Forms JEE, les instances d’un élément XML répétitif sont supprimées des données. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922017)
+* Lorsqu’un utilisateur d’un environnement Linux effectue le rendu d’un formulaire adaptatif (sur JEE) dans HTML, le rendu ne se fait pas correctement. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
+* Lorsqu’un utilisateur convertit un fichier XTG au format PostScript à l’aide du service Output sur AEM Forms JEE, l’erreur échoue : `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
+* Après la mise à niveau vers AEM Forms Service Pack 18 (6.5.18.0) sur le serveur JEE, lorsqu’un utilisateur envoie un formulaire, il ne parvient pas à générer des blocages HTML5 ou PDF forms et XMLFM. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
 
