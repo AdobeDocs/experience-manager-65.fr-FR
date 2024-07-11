@@ -9,7 +9,7 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
 workflow-type: tm+mt
 source-wordcount: '4332'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -546,10 +546,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Lorsque les utilisateurs et utilisatrices effectuent une mise à jour du pack de services 18 d’AEM Forms 6.5 (6.5.18.0) ou 19 (6.5.19.0) vers le pack de services 20 d’AEM Forms 6.5 (6.5.20.0) ou 21 (6.5.21.0), ils rencontrent une erreur de compilation JSP qui les empêche d’ouvrir ou de créer des formulaires adaptatifs et provoque également des erreurs avec d’autres interfaces comme l’éditeur de page, l’interface d’utilisation d’AEM Forms et l’éditeur de workflow AEM. (FORMS-15256)
 
-  Si vous rencontrez un tel problème, procédez comme suit pour le résoudre :
+  Si vous rencontrez ce problème, procédez comme suit pour le résoudre :
    1. Accédez au répertoire `/libs/fd/aemforms/install/` dans CRXDE.
-   1. Supprimer le lot avec le nom `com.adobe.granite.ui.commons-5.10.26.jar`.
-   1. Redémarrez votre serveur AEM.
+   1. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
+   1. Redémarrez votre serveur AEM.
 
 * Lorsqu’un utilisateur effectue une mise à jour vers AEM Forms Service Pack 20 (6.5.20.0) sur le serveur JEE et génère des PDF à l’aide des services de sortie, le rendu des PDF pose des problèmes d’accessibilité. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Lorsqu’un utilisateur génère des PDF balisés à l’aide du service de sortie sur JEE, l’avertissement &quot;Avertissement de structure inapproprié&quot; s’affiche. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
