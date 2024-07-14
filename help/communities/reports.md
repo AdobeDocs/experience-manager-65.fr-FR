@@ -39,11 +39,11 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ### Rapports pour les sites de la communauté {#reports-for-community-sites}
 
-* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** >  **[!UICONTROL Rapports]**
+* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]**
 
 * Choisissez parmi :
 
-   * **[!UICONTROL Rapport Affectations]**
+   * **[!UICONTROL Rapport d’affectations]**
 
       * Générez un rapport pour le site, l’utilisateur ou le groupe de la communauté sélectionné et l’affectation.
 
@@ -55,7 +55,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
       * générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
 
-![rapports](assets/reports1.png)
+![reports](assets/reports1.png)
 
 ## Rapport des vues {#views-report}
 
@@ -82,7 +82,7 @@ Sélectionnez les critères du rapport :
    * 90 derniers jours
    * L’année dernière
 
-Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
+Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-views](assets/generate-views.png)
 
@@ -111,7 +111,7 @@ Sélectionnez les critères du rapport :
    * 90 derniers jours
    * L’année dernière
 
-Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
+Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -123,6 +123,6 @@ Si aucun site de communauté n’est répertorié, vérifiez qu’Adobe Analytic
 
 ### Les rapports ne s’affichent pas dans AEM instance d’auteur {#reports-do-not-show-in-aem-author-instance}
 
-Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance de publication. Si le mappage des URL n’est effectué que sur l’instance de publication AEM du site des communautés, assurez-vous que le même a été configuré dans l’instance d’auteur AEM dans **Rapport de tendances du site Fabrique de composants sociaux** configuration.
+Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance Publish. Si le mappage des URL n’est effectué que sur l’instance Publish AEM du site Communities, assurez-vous que le même a été configuré dans l’instance AEM Author dans la configuration **Site Trend Report Social Component Factory** .
 
-![Mappage des URL sur AEM Author](assets/sitetrend.png)
+![Mappage d’URL sur AEM Auteur](assets/sitetrend.png)

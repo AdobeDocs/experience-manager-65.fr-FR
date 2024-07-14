@@ -8,13 +8,13 @@ role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1505'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Fragments d’expérience{#experience-fragments}
 
-Dans Adobe Experience Manager (AEM), un fragment d’expérience est un groupe d’un ou de plusieurs composants comprenant un contenu et une mise en page pouvant être référencés dans les pages. Ils peuvent contenir n’importe quel composant.
+Dans Adobe Experience Manager (AEM), un fragment d’expérience est un groupe d’un ou plusieurs composants incluant du contenu et une disposition pouvant être référencés dans des pages. Ils peuvent contenir n’importe quel composant.
 
 Un fragment d’expérience :
 
@@ -32,7 +32,7 @@ Un fragment d’expérience :
 Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur ou une autrice souhaite réutiliser des parties (un fragment d’expérience) d’une page, ce fragment doit être copié et collé. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
-* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
+* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs et autrices souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu à la clientèle. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
 * Avec la [gestion multisite (MSM, Multi-Site Management)](/help/sites-administering/msm.md) en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Les fragments d’expérience doivent être utilisés :
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
 
    * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
-   * Incorporation de contenu dans des points de contact tiers
+   * Intégrer du contenu dans des points de contact tiers
 
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
 

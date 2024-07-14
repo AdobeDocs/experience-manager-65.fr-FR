@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Notions fondamentales sur le vote {#voting-essentials}
 
-Le composant Vote, une [tally](tally.md) subclass est un outil utile qui permet aux membres d’évaluer un élément de contenu particulier en sélectionnant simplement les flèches haut ou bas pour indiquer leur opinion.
+Le composant Vote, une sous-classe [tally](tally.md), est un outil utile qui permet aux membres d’évaluer un élément de contenu particulier en sélectionnant simplement des flèches haut ou bas pour indiquer leur opinion.
 
-Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une variable `tally name` .
+Le placement de plusieurs instances d’un composant Vote sur la même page est autorisé ; chaque instance doit être configurée avec une propriété `tally name` unique.
 
 La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteurs du site ne doivent s’inscrire et se connecter qu’une seule fois pour participer au vote. Le visiteur connecté (membre) peut changer son vote à tout moment.
 
@@ -33,8 +33,8 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
    <td>social/tally/components/hbs/votes</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
-   <td>Oui - les propriétés peuvent être modifiées dans <i>design </i>mode</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td>Oui - les propriétés sont modifiables en mode <i>design </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -59,7 +59,7 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
 * [Points de terminaison Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
@@ -70,13 +70,13 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu créé par l’utilisateur inclut l’accès programmatique au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
+**L’emplacement et le format du contenu généré par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
-* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes de l’utilitaire SRP.
+* [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

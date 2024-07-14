@@ -34,7 +34,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 1. Créez un groupe d’utilisateurs appelé &quot;app-authors&quot; :
 
-   Accédez au Admin Console utilisateur : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Accédez à l’Admin Console utilisateur : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Dans la console du groupe d’utilisateurs, cliquez sur le bouton &quot;+&quot; pour créer un groupe.
 
@@ -44,7 +44,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres individuels de l’équipe à ce nouveau groupe par l’intermédiaire de la fonction [Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres individuels de l’équipe à ce nouveau groupe par l’intermédiaire de l’ [Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -59,7 +59,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 ### Groupe des administrateurs d’applications AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors. **ET** en outre, il est également chargé des tâches suivantes :
+Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors **AND** en outre sont également responsables des éléments suivants :
 
 * Mise à jour OTA ContentSync de l’application intermédiaire, publication et effacement
 
@@ -83,7 +83,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
    >
    >workflow-users est requis pour la compilation à distance avec le service PhoneGap Build
 
-1. Accédez au [Console Autorisations](http://localhost:4502/useradmin) et ajouter des autorisations pour administrer des services cloud
+1. Accédez à la [console Autorisations](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud.
 
    * (Lecture, Modification, Création, Suppression, Réplication) sur /etc/cloudservices/mobilesservices
 

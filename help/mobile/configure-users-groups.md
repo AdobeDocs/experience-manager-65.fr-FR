@@ -39,7 +39,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 1. Créez un groupe d’utilisateurs appelé &quot;app-authors&quot; :
 
-   Accédez au Admin Console utilisateur : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Accédez à l’Admin Console utilisateur : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Dans la console du groupe d’utilisateurs, cliquez sur le bouton &quot;+&quot; pour créer un groupe.
 
@@ -51,13 +51,13 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
    Ajouter app-authors au groupe Auteurs
 
-1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres individuels de l’équipe à ce nouveau groupe par l’intermédiaire de la fonction [Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres individuels de l’équipe à ce nouveau groupe par l’intermédiaire de l’ [Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Modification des groupes d’utilisateurs
 
-1. Accédez au [Console Autorisations](http://localhost:4502/useradmin) et ajouter des autorisations pour administrer des services cloud
+1. Accédez à la [console Autorisations](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud.
 
    * (Lecture) sur /etc/cloudservices
 
@@ -67,7 +67,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 ### Groupe des administrateurs d’applications AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors. **ET** en outre, il est également chargé des tâches suivantes :
+Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors **AND** en outre sont également responsables des éléments suivants :
 
 * Configuration des services cloud PhoneGap Build et Adobe Mobile Services dans AEM
 * Mise à jour OTA de synchronisation de contenu d’application intermédiaire, publication et effacement
@@ -88,7 +88,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Accédez au [Console Autorisations](http://localhost:4502/useradmin) et ajouter des autorisations pour administrer des services cloud
+1. Accédez à la [console Autorisations](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud.
 
    * (Lecture, Modification, Création, Suppression, Réplication) sur /etc/cloudservices/mobilesservices
    * (Lecture, modification, création, suppression, réplication) sur /etc/cloudservices/phonegap-build
@@ -114,14 +114,14 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 
 Les mosaïques du tableau de bord peuvent afficher différentes actions en fonction des autorisations dont dispose l’utilisateur. La section suivante décrit les actions disponibles pour chaque mosaïque.
 
-Outre ces autorisations, une action peut également être affichée/masquée en fonction de la configuration de l’application active. Par exemple, il n’y a aucun intérêt à exposer l’action &quot;Génération à distance&quot; si une configuration de cloud PhoneGap n’a pas été affectée à l’application. Ils sont répertoriés ci-dessous sous &quot;&quot;**Condition de configuration** sections &quot;.
+Outre ces autorisations, une action peut également être affichée/masquée en fonction de la configuration de l’application active. Par exemple, il n’y a aucun intérêt à exposer l’action &quot;Génération à distance&quot; si une configuration de cloud PhoneGap n’a pas été affectée à l’application. Ils sont répertoriés ci-dessous sous les sections &#39;**Condition de configuration**&#39;.
 
 ### Mosaïque Gérer l’application {#manage-app-tile}
 
 La mosaïque ne comporte actuellement aucune action nécessitant des autorisations. Toutefois, la page de détails de l’application comporte les actions suivantes :
 
 * *Modifier* pour app-author et app-admin (déclencheur d’interface utilisateur - jcr:write - sur /content/phonegap/{suffix})
-* *Télécharger* pour app-author et app-admin (Déclencheur d’interface utilisateur - sur /content/phonegap/{suffix})
+* *Télécharger* pour app-author et app-admin (déclencheur d’interface utilisateur - sur /content/phonegap/{suffix})
 
 L’image ci-dessous présente les options Télécharger et Modifier d’une application :
 

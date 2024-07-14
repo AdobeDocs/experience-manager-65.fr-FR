@@ -40,7 +40,7 @@ AEM Mobile fournit le plan directeur de l’application PhoneGap pour créer des
 
 La page racine des applications mobiles que vous créez dans AEM apparaît dans la console Applications.
 
-La page racine est stockée sous la propriété Destination Path de l’application qui a été spécifiée lors de la création de l’application (le chemin par défaut est /content/phonegap/apps). Le nom de la page est la propriété Name de l’application. Par exemple, l’URL par défaut de la page racine du site nommée `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+La page racine est stockée sous la propriété Destination Path de l’application qui a été spécifiée lors de la création de l’application (le chemin par défaut est /content/phonegap/apps). Le nom de la page est la propriété Name de l’application. Par exemple, l’URL par défaut de la page racine du site nommée `myphonegapapp` est `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -70,16 +70,16 @@ Les applications mobiles sont basées sur un plan directeur qui définit une str
 * **Titre :** Titre de l’application.
 * **Chemin de destination :** Emplacement dans le référentiel où l’application est stockée. Laissez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
 
-* **Nom :** La valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple, pour le noeud de référentiel qui représente l’application.
+* **Nom :** La valeur par défaut est la valeur de la propriété Titre avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple, pour le noeud de référentiel qui représente l’application.
 * **Description :** Description de l’application.
-* **URL du serveur :** URL qui fournit des mises à jour de contenu en vol (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
+* **URL du serveur :** URL qui fournit des mises à jour de contenu en direct (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
-Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image est utilisée uniquement comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
+Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image n’est utilisée qu’en tant que miniature pour représenter votre application mobile dans la console des applications mobiles d’Experience Manager.
 
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
 * Créer : cliquez sur gérer les configurations et configurez votre build.phonegap.com service de génération ici. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : cliquez sur Gérer les configurations et configurez votre [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Analytics : cliquez sur Gérer les configurations et configurez votre service cloud [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ La procédure suivante utilise l’interface utilisateur tactile pour créer une
 1. Sur le rail, cliquez sur Applications.
 1. Cliquez sur l’icône Créer .
 
-   ![Icône Créer indiquée par un signe plus dans un carré.](do-not-localize/chlimage_1-7.png)
+   ![Icône Créer indiquée par un signe plus à l’intérieur d’un carré.](do-not-localize/chlimage_1-7.png)
 
 1. (Facultatif) Dans l’onglet Avancé , fournissez une description de l’application et modifiez l’URL du serveur si nécessaire.
 1. (Facultatif) Si vous utilisez PhoneGap Build pour compiler l’application, dans l’onglet Créer , sélectionnez la configuration à utiliser.
@@ -113,11 +113,11 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 1. Sur le rail, cliquez sur Applications.
 1. Sélectionnez l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de page .
 
-   ![Icône Afficher les propriétés de page indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-8.png)
+   ![Icône Afficher les propriétés de page indiquée par la lettre I à l’intérieur d’un cercle.](do-not-localize/chlimage_1-8.png)
 
 1. Pour modifier les valeurs de propriété, cliquez sur l’icône Modifier .
 
-   ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-9.png)
+   ![Icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-9.png)
 
 1. Configurez les propriétés de base et avancées, puis cliquez sur l’icône Terminé .
 
@@ -126,13 +126,13 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 #### Configuration d’une variation de langue de l’application {#configure-a-language-variation-of-the-application}
 
 1. Sur le rail, cliquez sur Applications.
-1. Cliquez pour accéder à l’application mobile que vous souhaitez modifier dans le Admin Console d’applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de l’application .
+1. Cliquez pour accéder à l’application mobile que vous souhaitez modifier dans l’Admin Console d’applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de l’application .
 
    ![Icône Afficher les propriétés de l’application indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-11.png)
 
 1. Pour modifier les valeurs de propriété, cliquez sur l’icône Modifier .
 
-   ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-12.png)
+   ![Icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-12.png)
 
 1. Configurez les propriétés dans les onglets De base, Avancé, Créer et Analytics, puis cliquez sur l’icône Terminé.
 
@@ -166,7 +166,7 @@ Procédez comme suit sur l’instance où vous souhaitez mettre à jour le cache
 1. Sur le rail, cliquez sur Applications, puis sur votre application.
 1. Sélectionnez la page de démarrage, puis cliquez sur l’icône Mettre à jour le cache .
 
-   ![L’icône Mettre à jour le cache est indiquée par une barre répartie par une bande avec un symbole de recyclage.](do-not-localize/chlimage_1-14.png)
+   ![Icône Mettre à jour le cache indiquée par un barrell rayé accompagné d’un symbole de recyclage.](do-not-localize/chlimage_1-14.png)
 
 ### Utilisation des modèles d’application {#using-app-templates}
 
@@ -333,7 +333,7 @@ Renseignez la liste à l’aide des résultats d’une recherche par mot-clé. L
 
 **Recherche avancée**
 
-Renseignez la liste à l’aide d’une [Query Builder](/help/sites-developing/querybuilder-api.md) requête.
+Renseignez la liste à l’aide d’une requête [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Image {#image}
 

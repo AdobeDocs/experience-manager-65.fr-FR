@@ -32,17 +32,17 @@ Vous pouvez consulter les détails de votre application dans le tableau de bord 
 >
 >Le tableau de bord est une série de mosaïques utiles qui donnent un aperçu du contenu, des métadonnées et de l’état de connexion à la demande de l’application.
 >
->Voir [Tableau de bord des applications AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
+>Pour plus d’informations, voir [Tableau de bord de l’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) .
 
 **Pour créer une application à la demande :**
 
-1. Sélectionner **Mobile** à partir du rail latéral.
-1. Sélectionner **Applications** à partir de la navigation.
+1. Sélectionnez **Mobile** dans le rail latéral.
+1. Sélectionnez **Apps** dans la navigation.
 1. Cliquez sur **Créer** et sélectionnez **Application** dans la liste déroulante.
-1. Sélectionnez le modèle Application mobile , puis cliquez sur **Suivant**.
-1. Renseignez les propriétés de l’application, telles que **Titre**, **Nom**, **Description**.
+1. Sélectionnez le modèle Application mobile et cliquez sur **Suivant**.
+1. Renseignez les propriétés de l’application telles que **Title**, **Name**, **Description**.
 1. Cliquez sur **Suivant**.
-1. Si vous le savez, saisissez les détails de configuration du cloud, sinon cliquez sur **Créer**.
+1. Si vous le savez, saisissez les détails de configuration cloud, sinon cliquez sur **Créer**.
 1. Cliquez sur **Terminé** pour afficher votre nouvelle application AEM Mobile dans le catalogue.
 
 ![chlimage_1](assets/chlimage_1.gif)
@@ -60,23 +60,23 @@ Lors de la création d’une application basée sur le modèle d’une autre app
 
 Pour utiliser cette fonctionnalité, vous devez disposer d’un modèle d’application mobile (ou d’une application installée avec un modèle d’application).
 
-### La prochaine étape {#the-next-step}
+### Étape suivante {#the-next-step}
 
 Une fois que vous avez créé une application On-Demand à partir du tableau de bord de l’application, l’étape suivante consiste à associer votre application à la configuration cloud.
 
-Voir [Association de votre application à la configuration du cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
+Pour plus d’informations, voir [Association de votre application à la configuration du cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) .
 
 ### Prise en main {#getting-ahead}
 
 Une fois que vous êtes familiarisé avec la création d’une application à la demande et ainsi l’association de cette application à une configuration cloud, voir [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Actions de gestion de contenu** implique la création et la gestion du contenu suivant :
+**Les actions de gestion de contenu** impliquent la création et la gestion du contenu suivant :
 
 * [Gestion des articles](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Chargement de ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publication du contenu Annuler la publication](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Ne plus publier de contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 

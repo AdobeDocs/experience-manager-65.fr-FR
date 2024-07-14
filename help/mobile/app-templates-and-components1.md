@@ -12,7 +12,7 @@ role: User
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 28%
+ht-degree: 53%
 
 ---
 
@@ -24,36 +24,36 @@ ht-degree: 28%
 
 Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de nœuds ayant la même structure que la page à créer, mais sans contenu réel.
 
-Chaque modèle vous présente une sélection de composants disponibles.
+Chaque modèle vous présente une sélection de composants disponibles pour utilisation.
 
-* Les modèles sont constitués de [Composants](/help/sites-developing/components.md);
-* Les composants utilisent et permettent d’accéder aux widgets, qui sont utilisés pour le rendu du contenu.
+* Les modèles sont constitués de [composants](/help/sites-developing/components.md) ;
+* les composants utilisent et permettent d’accéder aux widgets et ceux-ci sont utilisés pour rendre le contenu.
 
 >[!NOTE]
 >
->Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec le CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (arborescence de noeuds) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la fonction **Sites web** .
+Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites Web** .
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
 ## Structure d’un modèle {#structure-of-a-template}
 
-Deux aspects doivent être pris en compte :
+Il y a deux aspects à prendre en compte :
 
-* la structure du modèle lui-même ;
-* la structure du contenu produit lors de l&#39;utilisation d&#39;un modèle ;
+* la structure du modèle lui-même ;
+* la structure du contenu produit lorsqu’un modèle est utilisé.
 
-Un modèle est créé sous un noeud de type **cq:Template**.
+Un modèle est créé sous un nœud de type **cq:Template**.
 
-Différentes propriétés peuvent être définies, notamment :
+Différentes propriétés peuvent être définies, notamment :
 
-* **jcr:title** - titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
-* **jcr:description** - description du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
+* **jcr:title** : titre du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
+* **jcr:description** : description du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
 
-Ce noeud contient *un jcr:content (cq:PageContent)* qui sert de base au noeud de contenu des pages créées. Cette référence, à l’aide de *sling:resourceType*, composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
+Ce noeud contient *un noeud jcr:content (cq:PageContent)* qui est utilisé comme base du noeud de contenu des pages résultantes. Cette référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 >[!NOTE]
 >

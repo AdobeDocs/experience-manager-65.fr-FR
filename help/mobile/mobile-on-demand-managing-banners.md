@@ -32,7 +32,7 @@ Les bannières représentent des liens promotionnels typiquement graphiques.
 >
 >Pour en savoir plus sur les rubriques suivantes des applications AEM Mobile, reportez-vous aux ressources suivantes de l’aide en ligne :
 >
->* [Considérations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Création de bannières](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
@@ -41,12 +41,12 @@ Les bannières représentent des liens promotionnels typiquement graphiques.
 
 Le workflow général pour créer un article est le suivant :
 
-1. Sélectionner **Mobile** à partir du rail latéral.
+1. Sélectionnez **Mobile** dans le rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des bannières** mosaïque.
+1. Cliquez sur la flèche vers le bas dans le coin supérieur droit de la mosaïque **Gérer les bannières** .
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvelle bannière.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvelle bannière apparaît dans la **Gestion des bannières** mosaïque.
+1. La nouvelle bannière apparaît dans la mosaïque **Gérer les bannières** .
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
@@ -61,9 +61,9 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’import d’un nouvel article
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des bannières** et sélectionnez Importer des bannières.
-1. Cliquez sur **Bannière d’importation** dans la boîte de dialogue, puis cliquez sur Fermer.
-1. Vos articles Mobile On Demand apparaissent désormais dans le **Gestion des bannières** mosaïque.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les bannières** et sélectionnez Importer des bannières.
+1. Cliquez sur **Importer la bannière** dans la boîte de dialogue, puis sur Fermer.
+1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les bannières** .
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Workflow d’import d’un nouvel article
 
 ## Modification d’une bannière {#editing-a-banner}
 
-Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images des ressources de gestion des actifs numériques peuvent être insérées.
+Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images de DAM Assets peuvent être insérées.
 
 >[!CAUTION]
 >
@@ -91,11 +91,11 @@ Les bannières présentent de nombreuses propriétés, telles que des titres, de
 Processus général d’affichage/de modification d’un article :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une bannière dans la liste **Gestion des bannières** mosaïque.
+1. Sélectionnez une bannière dans la mosaïque **Gérer les bannières** .
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si vous le souhaitez et cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Chargement d’une bannière {#uploading-a-banner}
@@ -104,10 +104,10 @@ L’action de téléchargement copie le contenu sélectionné et l’ajoute à u
 
 Processus général de téléchargement d’une bannière :
 
-1. De **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Dans le **Gestion des bannières** sélectionnez une bannière à charger vers Mobile On-Demand.
+1. Depuis **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
+1. Dans la mosaïque **Gérer les bannières**, sélectionnez une bannière à charger vers Mobile On-Demand.
 1. Ajoutez d’autres bannières si nécessaire à partir du mode Liste.
-1. Sélectionner **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
+1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Vos bannières sont maintenant chargées vers Mobile On-Demand.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
@@ -119,7 +119,7 @@ Cette opération supprime la bannière sélectionnée de Mobile On-Demand, et é
 Workflow général de suppression d’une bannière :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez la bannière à supprimer dans le **Gestion des bannières** mosaïque.
+1. Sélectionnez la bannière à supprimer dans la mosaïque **Gérer les bannières** .
 1. Assurez-vous qu’il est sélectionné dans la liste (sélectionnez d’autres éléments à supprimer, si nécessaire).
 1. Cliquez sur **Supprimer** dans la barre d’actions.
 1. Vérifiez si vous souhaitez supprimer de AEM et de Mobile On-Demand.

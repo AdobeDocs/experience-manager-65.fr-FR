@@ -13,7 +13,7 @@ role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -106,8 +106,8 @@ Pour ne recevoir des notifications que pour les actions sur la page définie par
 
 Si vous avez choisi de recevoir des notifications dans votre boîte de réception AEM, les notifications seront alors ajoutées à votre boîte de réception. Vous pouvez [afficher vos notifications](#viewing-your-notifications). Sélectionnez ensuite la ou les notifications requises pour :
 
-* Accepter en cliquant **Approuver**: la valeur de la variable **Lecture** est définie sur **true**.
+* les approuver en cliquant sur **Approuver** : la valeur de la colonne **Lecture** est définie sur **true** ;
 
-* Éliminez-le en cliquant sur **Supprimer**.
+* les supprimer en cliquant sur **Supprimer**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

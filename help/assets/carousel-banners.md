@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '4677'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 Les bannières de carrousel permettent aux spécialistes du marketing de générer des interactions en créant facilement du contenu promotionnel interactif et rotatif et en le diffusant sur n&#39;importe quel écran.
 
-La création et la modification du contenu présenté dans les bannières promotionnelles peuvent prendre beaucoup de temps, limitant votre capacité à publier rapidement du nouveau contenu ou à le rendre plus ciblé. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives. Vous pouvez ajouter de l’interactivité, par exemple des zones réactives qui renvoient aux détails du produit ou aux ressources associées, et les diffuser sur n’importe quel écran, ce qui vous permet d’apporter plus rapidement du nouveau contenu promotionnel au marché.
+La création et la modification du contenu présenté dans les bannières promotionnelles peuvent prendre beaucoup de temps, limitant votre capacité à publier rapidement du nouveau contenu ou à le rendre plus ciblé. Les bannières de carrousel vous permettent de créer ou de modifier rapidement des bannières rotatives. Vous pouvez ajouter de l’interactivité, par exemple des zones réactives liées au détail d’un produit ou à des ressources connexes, puis les diffuser sur n’importe quel écran, ce qui vous permet d’apporter plus rapidement du nouveau contenu promotionnel au marché.
 
 Les bannières de carrousel sont signalées par une bannière contenant le mot **[!UICONTROL CAROUSELSET]**
 
@@ -39,11 +39,11 @@ Dans cet exemple, un utilisateur a tapé ou cliqué sur une zone cliquable et a 
 
 ## Vidéo sur la création de bannières de carrousel {#watch-how-carousel-banners-are-created}
 
-Lire la présentation en cours [création des bannières de carrousel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)(10 minutes et 33 secondes) Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
+Regardez une présentation sur [la manière dont les bannières de carrousel sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutes et 33 secondes). Vous apprendrez également à prévisualiser, modifier et diffuser des bannières de carrousel.
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au **[!UICONTROL `dam-users`]** pour pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification d’ , contactez votre administrateur système pour qu’il vous ajoute au **[!UICONTROL `dam-users`]** groupe.
+>Les personnes qui ne sont pas administratrices doivent être ajoutées au groupe **[!UICONTROL `dam-users`]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur ou administratrice système qui vous ajoutera au groupe **[!UICONTROL `dam-users`]**.
 
 ## Démarrage rapide : bannières de carrousel {#quick-start-carousel-banners}
 
@@ -98,7 +98,7 @@ Pour modifier des ensembles de carrousel, consultez [Modification d’ensembles 
 
 Commencez par identifier les variables dynamiques utilisées par la mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données des zones réactives et des zones cliquables lors de la création d’un ensemble de carrousel dans Experience Manager Assets.
 
-Lorsque vous ajoutez des zones réactives ou des zones cliquables à une image de bannière dans Experience Manager Assets, affectez un SKU et des variables supplémentaires facultatives à chaque zone réactive ou zone cliquable. Ces variables sont utilisées, par la suite, pour faire correspondre les zones réactives ou cliquables au contenu de l’aperçu rapide.
+Lorsque vous ajoutez des zones réactives ou des zones cliquables à une bannière d’image dans Experience Manager Assets, vous devez affecter un SKU et des variables supplémentaires facultatives à chaque zone réactive ou cliquable. Ces variables sont utilisées, par la suite, pour faire correspondre les zones réactives ou cliquables au contenu de l’aperçu rapide.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Au cours de ce processus, il est important de parcourir différentes zones de vo
 
 Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur de la SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives ou des zones cliquables à l’image de bannière.
 
-Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte des éléments variables qui diffèrent en plus du SKU, tels que l’ID de catégorie, le code couleur et le code de taille. Dans ce cas, chaque élément est une variable distincte dans la définition des données de zone réactive ou cliquable dans la fonction de bannière de carrousel.
+Cependant, dans les cas complexes, l’URL d’aperçu rapide comporte différents éléments variables qui diffèrent en complément du SKU, comme l’identifiant de la catégorie, le code couleur et le code taille. Dans ce cas, chaque élément est une variable distincte dans la définition des données de zone réactive ou cliquable dans la fonction de bannière de carrousel.
 
 Consultez les exemples d’URL d’aperçu rapide ci-dessous et les variables de zone réactive et de zone cliquable obtenues :
 
@@ -186,7 +186,7 @@ Pour charger des bannières d’image, voir [Chargement de ressources](/help/ass
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au **[!UICONTROL `dam-users`]** pour pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification d’ , contactez votre administrateur système pour qu’il vous ajoute au **[!UICONTROL `dam-users`]** groupe.
+>Les personnes qui ne sont pas administratrices doivent être ajoutées au groupe **[!UICONTROL `dam-users`]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur ou administratrice système qui vous ajoutera au groupe **[!UICONTROL `dam-users`]**.
 
 **Pour créer des ensembles de carrousels :**
 
@@ -286,7 +286,7 @@ Consultez également la section [Ajout de zones cliquables](/help/assets/image-m
 
    * Sélectionnez **[!UICONTROL Aperçu rapide]**.
 
-      * Si vous êtes client Experience Manager Sites et eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis cochez la case dans le coin supérieur droit de la page afin de revenir à l’éditeur de bannières de carrousel.
+      * Si vous êtes client Experience Manager Sites et eCommerce, sélectionnez l’icône de sélecteur de produit (loupe) afin d’afficher la page Sélectionner un produit. Sélectionnez le produit à utiliser, puis la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
       * Si vous n’êtes pas client Experience Manager Sites ou eCommerce
 
          * Consultez [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables) si vous souhaitez définir ces variables.
@@ -336,7 +336,7 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au **[!UICONTROL `dam-users`]** pour pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL DAM-users]**.
+>Les personnes qui ne sont pas administratrices doivent être ajoutées au groupe **[!UICONTROL `dam-users`]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **[!UICONTROL DAM-users]**.
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses de carrousel, telles que :
 
@@ -354,7 +354,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses de c
    * Pointez sur une ressource d’ensemble de carrousel, puis sélectionnez **[!UICONTROL Modifier]** (icône crayon).
    * Pointez sur une ressource d’ensemble de carrousel, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis **[!UICONTROL Modifier]** sur la barre d’outils.
 
-   * Sélectionnez une ressource d’ensemble de carrousel, puis, dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Modifier]** (icône de crayon).
+   * Sélectionnez une ressource de l’ensemble de carrousel, puis, dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Modifier]** (icône en forme de crayon).
 
 1. Pour modifier l’ensemble de carrousel, effectuez l’une des opérations suivantes :
 

@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Le framework de déchargement utilise la réplication pour transporter les resso
 
 >[!CAUTION]
 >
->Un problème connu avec les agents de réplication générés automatiquement nécessite la création manuelle de nouveaux agents de réplication.
+>Un problème connu avec les agents de réplication générés automatiquement est le fait que vous devez créer manuellement de nouveaux agents de réplication.
 
 Créez les agents de réplication qui transportent les charges utiles de traitement entre les instances pour le déchargement. L’illustration suivante montre les agents qui doivent être déchargés de l’instance de création vers une instance secondaire. L’auteur a un identifiant Sling de 1, alors que l’identifiant Sling de l’instance de travail est 2 :
 

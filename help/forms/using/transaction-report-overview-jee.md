@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Par défaut, l’enregistrement de transaction est désactivé. Pour activer le reporting des transactions, procédez comme suit :
 
-1. Accédez au `/adminui` sur votre instance AEM Forms on JEE, par exemple : `http://10.14.18.10:8080/adminui`.
-1. Connexion en tant que **Administrateur**.
+1. Accédez à `/adminui` sur votre instance AEM Forms on JEE, par exemple `http://10.14.18.10:8080/adminui`.
+1. Connectez-vous en tant qu’ **administrateur**.
 1. Accédez à **Paramètres** > **Paramètres de Core System** > **Configurations**.
-1. Cochez la case pour **Activation des rapports de transaction** et **Enregistrer** les paramètres.
+1. Cochez la case pour **Activer le reporting de transaction** et **Enregistrer** les paramètres.
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. Redémarrez le serveur.
-1. Outre les modifications apportées au serveur, vous devez mettre à jour le `adobe-livecycle-client.jar` dans votre projet, si vous utilisez le même.
+1. Outre les modifications apportées au serveur, côté client, vous devez mettre à jour le fichier `adobe-livecycle-client.jar` de votre projet, si vous utilisez le même.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ Par défaut, l’enregistrement de transaction est désactivé. Pour activer le 
 
 ## Affichage du rapport de transaction {#view-transaction-report}
 
-Lorsque vous activez la création de rapports de transaction, les informations sur les comptes de transaction sont accessibles via la variable [rapport des transactions via le tableau de bord](#transaction-report-dashboard) et une [rapport de transaction via un fichier journal](#transaction-report-logfile). Les deux sont expliquées ci-dessous :
+Lorsque vous activez la création de rapports de transaction, les informations sur le nombre de transactions sont accessibles via le [rapport de transaction via le tableau de bord](#transaction-report-dashboard) et un [ rapport de transaction détaillé via le fichier journal](#transaction-report-logfile). Les deux sont expliquées ci-dessous :
 
 ### Rapport des transactions via un tableau de bord {#transaction-report-dashboard}
 
 Le rapport sur les transactions, accessible par le biais d’un tableau de bord, indique le nombre total de transactions pour chaque type de transaction. Par exemple, vous obtenez des informations sur le nombre total de formulaires rendus, convertis et envoyés, comme illustré dans l’image. Pour obtenir le rapport de transaction :
 
-1. Accédez au `/adminui` sur votre instance AEM Forms on JEE, par exemple : `http://10.13.15.08:8080/adminui`.
-1. Connexion en tant que **Administrateur**.
+1. Accédez à `/adminui` sur votre instance AEM Forms on JEE, par exemple : `http://10.13.15.08:8080/adminui`.
+1. Connectez-vous en tant qu’ **administrateur**.
 1. Cliquez sur Health Monitor.
-1. Accédez à **Reporter les transactions** , cliquez sur **Calculer le total des transactions**, vous voyez maintenant qu’un graphique circulaire représente le nombre de PDF forms (envoyés, rendus ou convertis).
+1. Accédez à l’onglet **Transaction Reporter**, cliquez sur **Calculate Total Transactions**, et vous voyez maintenant qu’un graphique circulaire représente le nombre de PDF forms - envoyés, rendus ou convertis.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
 
 ### Rapport de transaction via un fichier journal {#transaction-report-logfile}
 
-Le rapport des transactions via un fichier journal fournit des informations détaillées sur chaque transaction. Pour accéder aux journaux des transactions, suivez le chemin du contexte relatif au démarrage du serveur. Les transactions sont capturées dans un fichier journal distinct. `transaction_log.log` par défaut. La variable **chemin du fichier** est relatif au contexte de démarrage du serveur. Le chemin par défaut des différents serveurs est indiqué ci-dessous :
+Le rapport des transactions via un fichier journal fournit des informations détaillées sur chaque transaction. Pour accéder aux journaux des transactions, suivez le chemin du contexte relatif au démarrage du serveur. Par défaut, les transactions sont capturées dans un fichier journal distinct `transaction_log.log`. Le **chemin d’accès au fichier** est relatif au contexte de démarrage du serveur. Le chemin par défaut des différents serveurs est indiqué ci-dessous :
 
 ```
 For Jboss Turnkey:
@@ -97,16 +97,16 @@ TransactionRecord
 }
 ```
 
-* **service**: nom du service.
-* **operation**: nom de l’opération.
-* **internalService**: nom de l’appel en cas d’appel interne, identique au nom du service.
-* **internalOperation**: nom de l’appel dans lequel se trouve un appel interne, sinon identique au nom de l’opération.
-* **transactionOperationType**: type de transaction (envoi, rendu, conversion).
-* **transactionCount**: Nombre total de transactions.
-* **elapsedTime**: temps entre le lancement de l’appel et la réponse reçue.
-* **transactionDate**: horodatage indiquant le moment où le service a été appelé.
+* **service** : nom du service.
+* **operation** : nom de l’opération.
+* **internalService** : nom de l’appel en cas d’appel interne, sinon identique au nom du service.
+* **internalOperation** : le nom de l’appel est présent dans un appel interne, sinon le même que le nom de l’opération.
+* **transactionOperationType** : type de transaction (envoi, rendu, conversion).
+* **transactionCount** : nombre total de transactions.
+* **elapsedTime** : temps entre le lancement de l’appel et la réponse reçue.
+* **transactionDate** : horodatage indiquant quand le service a été appelé.
 
-**Exemple de journal des transactions**:
+**Exemple de journal de transaction** :
 
 ```
 [2024-02-14 14:23:25] [INFO] TransactionRecord
@@ -128,9 +128,9 @@ TransactionRecord
 
 La fréquence d’enregistrement des transactions est déterminée par les opérations de mise à jour sur le serveur pour chaque formulaire qui est envoyé, rendu ou converti avec succès.
 
-* Dans **tableau de bord**, le nombre de transactions est mis à jour régulièrement, la valeur par défaut est de 1 minute. Vous pouvez mettre à jour la fréquence en définissant la propriété système à l’adresse `"com.adobe.idp.dsc.transaction.recordFrequency"`. Par exemple, sur AEM Forms pour JEE sur JBoss®, ajoutez `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` pour définir la fréquence de mise à jour sur 5 minutes.
+* Dans le **tableau de bord**, le nombre de transactions est mis à jour régulièrement, la valeur par défaut est définie sur 1 minute. Vous pouvez mettre à jour la fréquence en définissant la propriété système à `"com.adobe.idp.dsc.transaction.recordFrequency"`. Par exemple, sur AEM Forms pour JEE sur JBoss®, ajoutez `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` dans `JAVA_OPTS` pour définir la fréquence de mise à jour sur 5 minutes.
 
-* Dans **logs de transaction**, la mise à jour de chaque transaction se produit instantanément lorsqu’un formulaire est envoyé, rendu ou converti avec succès.
+* Dans les **journaux des transactions**, la mise à jour de chaque transaction se produit instantanément lorsqu’un formulaire est envoyé, rendu ou converti avec succès.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

@@ -29,7 +29,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
    <td>social/ideation/components/hbs/ideation</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="ideation-feature.md">Fonctionnalité d’orientation</a></td>
+   <td>Voir <a href="ideation-feature.md">Fonctionnalité d’idéation</a></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
 
 ### Fonction de conceptualisation {#ideation-function}
 
-Une structure de site de communauté qui inclut [Fonction d’information](functions.md#ideation-function), inclut une `ideation` composant.
+Une structure de site de communauté qui inclut la [fonction d&#39;idéation](functions.md#ideation-function), inclut un composant `ideation` configuré.

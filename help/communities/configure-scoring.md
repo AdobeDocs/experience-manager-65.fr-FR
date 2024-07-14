@@ -27,9 +27,9 @@ Les détails de la configuration de la fonctionnalité sont décrits à la secti
 
 Cette page contient des détails techniques supplémentaires :
 
-* Comment [afficher un badge ;](#displaying-badges) comme image ou texte
-* Comment activer le mode étendu [journalisation du débogage](#debug-log-for-scoring-and-badging)
-* Comment [Accès UGC](#ugc-for-scoring-and-badging) liés à la notation et à la badge
+* Comment [afficher un badge](#displaying-badges) sous forme d&#39;image ou de texte
+* Comment activer la [journalisation de débogage](#debug-log-for-scoring-and-badging) étendue
+* Comment [accéder au contenu généré par l’utilisateur](#ugc-for-scoring-and-badging) lié à la notation et à la notation
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ Cette page contient des détails techniques supplémentaires :
 
 Le fait qu’un badge s’affiche sous forme de texte ou d’image est contrôlé du côté client dans le modèle HBS.
 
-Par exemple, recherchez `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+Par exemple, recherchez `this.isAssigned` dans `/libs/social/forum/components/hbs/topic/list-item.hbs` :
 
 ```
 {{#each author.badges}}
@@ -69,7 +69,7 @@ Par exemple, recherchez `this.isAssigned` in `/libs/social/forum/components/hbs/
 
 Si la valeur est true, `isAssigned` indique que le badge a été attribué pour un rôle et que le badge doit s’afficher sous forme de texte.
 
-Si false, `isAssigned` indique que le badge a été attribué pour un score gagné et que le badge doit s’afficher sous forme d’image.
+Si la valeur est false, `isAssigned` indique que le badge a été attribué pour un score gagné et que le badge doit s’afficher sous forme d’image.
 
 Toute modification de ce comportement doit être effectuée dans un script personnalisé (remplacement ou recouvrement). Voir [Personnalisation côté client](/help/communities/client-customize.md).
 
@@ -77,23 +77,23 @@ Toute modification de ce comportement doit être effectuée dans un script perso
 
 Pour aider à déboguer la notation et le badge, un fichier journal personnalisé peut être configuré. Le contenu de ce fichier journal peut ensuite être fourni au service clientèle en cas de problèmes liés à la fonctionnalité.
 
-Pour obtenir des instructions détaillées, consultez [Création d’un fichier journal personnalisé](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Pour obtenir des instructions détaillées, consultez la page [Créer un fichier journal personnalisé](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 Pour configurer rapidement un fichier sling :
 
-1. Accédez au **Prise en charge des journaux de la console web Adobe Experience Manager**, par exemple
+1. Accédez à la **prise en charge du journal de la console web Adobe Experience Manager**, par exemple
 
    * https://localhost:4502/system/console/slinglog
 
-1. Sélectionner **Ajouter un nouvel enregistreur**
+1. Sélectionnez **Ajouter un nouvel enregistreur**
 
-   1. Sélectionner `DEBUG` pour **Niveau de journalisation**
+   1. Sélectionnez `DEBUG` pour **Log Level**
 
    1. Saisissez un nom pour **Fichier journal**, par exemple
 
       * logs/scoring-debug.log
 
-   1. Saisissez deux **Enregistreur** entrées (classe) (à l’aide de `+` icon)
+   1. Entrez deux entrées **Enregistreur** (classe) (à l’aide de l’icône `+`)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -106,9 +106,9 @@ Pour afficher les entrées de journal :
 
 * À partir de la console Web
 
-   * Sous , **État** menu
-   * Sélectionner **Fichiers journaux**
-   * Recherchez votre nom de fichier journal, par exemple `scoring-debug`
+   * Sous le menu **Status**
+   * Sélectionnez **Fichiers journaux**
+   * Recherchez votre nom de fichier journal, par exemple `scoring-debug`.
 
 * Sur le disque local du serveur
 
@@ -120,13 +120,13 @@ Pour afficher les entrées de journal :
 
 ## Contenu généré par l’utilisateur pour la notation et l’attribution de badges {#ugc-for-scoring-and-badging}
 
-Il est possible d’afficher le contenu généré par l’utilisateur relatif à la notation et à la mise en badge lorsque la priorité de priorité de performance choisie est JSRP ou MSRP, mais pas ASRP. (Si vous ne connaissez pas ces termes, voir [Stockage de contenu communautaire](/help/communities/working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md).)
+Il est possible d’afficher le contenu généré par l’utilisateur relatif à la notation et à la mise en badge lorsque la priorité de priorité de performance choisie est JSRP ou MSRP, mais pas ASRP. (Si ces termes ne sont pas familiers, reportez-vous aux sections [Stockage de contenu de la communauté](/help/communities/working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md).)
 
 Les descriptions d’accès aux données de notation et de badge utilisent JSRP, car le contenu créé par l’utilisateur est facilement accessible à l’aide de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP sur l’auteur**: l’expérimentation dans l’environnement de création génère un contenu généré par l’utilisateur qui n’est visible que depuis l’environnement de création.
+**JSRP sur author** : l’expérimentation dans l’environnement de création génère un contenu généré par l’utilisateur qui n’est visible que depuis l’environnement de création.
 
-**JSRP sur publication**: de même, si le test est effectué dans l’environnement de publication, il est nécessaire d’accéder à CRXDE Lite avec des privilèges d’administrateur sur une instance de publication. Si l’instance de publication s’exécute dans [mode de production](/help/sites-administering/production-ready.md) (mode d’exécution nosamplecontent), il est nécessaire de [activer le CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP sur publish** : de même, si vous testez sur l’environnement de publication, il est nécessaire d’accéder au CRXDE Lite avec des privilèges d’administrateur sur une instance de publication. Si l’instance de publication s’exécute en [mode de production](/help/sites-administering/production-ready.md) (mode d’exécution nosamplecontent), il est nécessaire d’[activer CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 L’emplacement de base du contenu généré par l’utilisateur sur JSRP est `/content/usergenerated/asi/jcr/`.
 
@@ -134,20 +134,20 @@ L’emplacement de base du contenu généré par l’utilisateur sur JSRP est `/
 
 Les API suivantes sont disponibles :
 
-* [com.adobe.cq.social.scoring.api dans 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
-* [com.adobe.cq.social.badging.api dans 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [com.adobe.cq.social.scoring.api dans la version 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [com.adobe.cq.social.badging.api dans la version 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
 
 Les derniers JavaDocs pour le Feature Pack installé sont disponibles pour les développeurs à partir du référentiel Adobe. Voir [Utilisation de Maven pour Communities : Javadocs](/help/communities/maven.md#javadocs).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
+**L’emplacement et le format du contenu généré par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**
 
 ### Exemple de configuration {#example-setup}
 
 Les captures d’écran des données du référentiel proviennent de la configuration de la notation et de la mise en badge pour un forum sur deux sites AEM différents :
 
-1. Un site AEM *avec* un identifiant unique (site de la communauté créé à l’aide de l’assistant) :
+1. Un site AEM *avec* un identifiant unique (site de communauté créé à l’aide de l’assistant) :
 
-   * Utilisation du site de tutoriel de prise en main créé lors de la [tutoriel de prise en main](/help/communities/getting-started.md)
+   * Utilisation du site de tutoriel de prise en main créé pendant le [tutoriel de prise en main](/help/communities/getting-started.md)
    * Localisez le noeud de page du forum
 
      `/content/sites/engage/en/forum/jcr:content`
@@ -175,9 +175,9 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
    * Un utilisateur se connecte, crée un sujet de forum et se voit attribuer un badge bronze
 
-1. Un site AEM *without* un identifiant unique :
+1. Un site AEM *sans* un identifiant unique :
 
-   * En utilisant la variable [Guide des composants de communauté](/help/communities/components-guide.md)
+   * Utilisation du [guide des composants de la communauté](/help/communities/components-guide.md)
    * Localisez le noeud de page du forum
 
      `/content/community-components/en/forum/jcr:content`
@@ -221,7 +221,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 >
 >* Les noms des règles de notation doivent être uniques au niveau global. Ils ne doivent pas se terminer par le même nom.
 >
->  Exemple d’objet *not* pour effectuer les opérations suivantes :
+>  Exemple de ce que *not* doit faire :
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
@@ -230,29 +230,29 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
 ### Accès au contenu généré par l’utilisateur de notation {#access-scoring-ugc}
 
-Utilisation de la variable [API](#scoring-and-badging-apis) est préférable.
+L’utilisation des [APIs](#scoring-and-badging-apis) est préférée.
 
 À des fins d’enquête, à l’aide de JSRP pour l’exemple, le dossier de base contenant les scores est
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-Noeud enfant de `scoring` est le nom de la règle de notation. Par conséquent, il est recommandé que les noms des règles de notation sur un serveur soient uniques globalement.
+Le noeud enfant de `scoring` est le nom de la règle de notation. Par conséquent, il est recommandé que les noms des règles de notation sur un serveur soient uniques globalement.
 
-Pour le site Geometrixx Engage, l’utilisateur et son score se trouvent dans un chemin construit avec le nom de la règle de notation, l’identifiant du site de la communauté ( `engage-ba81p`), un identifiant unique et l’identifiant de l’utilisateur :
+Pour le site Engage, l’utilisateur et son score se trouvent dans un chemin construit avec le nom de la règle de notation, l’identifiant du site de la communauté ( `engage-ba81p`), un identifiant unique et l’identifiant de l’utilisateur :
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Pour le site du guide des composants de la communauté, l’utilisateur et son score se trouvent dans un chemin construit avec le nom de la règle de notation, un id par défaut ( `default-site`), un identifiant unique et l’identifiant de l’utilisateur :
+Pour le site du guide des composants de la communauté, l’utilisateur et son score se trouvent dans un chemin construit avec le nom de la règle de notation, un identifiant par défaut ( `default-site`), un identifiant unique et l’identifiant de l’utilisateur :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Le score est stocké dans la propriété . `scoreValue_tl` qui ne peut contenir qu’une valeur ou faire indirectement référence à un atomicCounter.
+Le score est stocké dans la propriété `scoreValue_tl` qui ne peut contenir qu’une valeur ou faire indirectement référence à un atomicCounter.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Contrôle d’accès UGC de badge {#access-badging-ugc}
 
-Utilisation de la variable [API](#scoring-and-badging-apis) est préférable.
+L’utilisation des [APIs](#scoring-and-badging-apis) est préférée.
 
 À des fins d’enquête, en utilisant JSRP pour l’exemple, le dossier de base contenant des informations sur les badges attribués ou attribués est :
 
@@ -264,7 +264,7 @@ Suivi du chemin d’accès au profil de l’utilisateur, qui se termine par un d
 
 #### Badge attribué {#awarded-badge}
 
-![performing-ugc](assets/access-badging-ugc.png)
+![}enchantement-badging-ugc](assets/access-badging-ugc.png)
 
 #### Badge attribué {#assigned-badge}
 
@@ -274,5 +274,5 @@ Suivi du chemin d’accès au profil de l’utilisateur, qui se termine par un d
 
 Pour afficher une liste triée des membres en fonction des points :
 
-* [Fonction de classement](/help/communities/functions.md#leaderboard-function) à inclure dans un site communautaire ou un modèle de groupe.
-* [Composant de classement](/help/communities/enabling-leaderboard.md), composant présenté de la fonction Leaderboard, pour la création de pages.
+* [Fonction Leaderboard](/help/communities/functions.md#leaderboard-function) pour inclusion dans un site de communauté ou un modèle de groupe.
+* [Composant Leaderboard](/help/communities/enabling-leaderboard.md), le composant présenté de la fonction Leaderboard, pour la création de pages.

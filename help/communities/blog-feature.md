@@ -1,6 +1,6 @@
 ---
 title: Fonctionnalité de blog
-description: Découvrez comment la fonction de blog prend en charge la fourniture d’informations de communauté dans un format de journalisation. Les entrées sont effectuées dans l’environnement de publication par les utilisateurs autorisés.
+description: Découvrez comment la fonction de blog prend en charge la fourniture d’informations de communauté dans un format de journalisation. Les entrées sont effectuées dans l’environnement Publish par les utilisateurs autorisés.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -21,20 +21,20 @@ ht-degree: 1%
 
 ## Présentation {#introduction}
 
-La fonction de blog d’AEM Communities est passée d’une activité de création à une véritable activité communautaire qui a lieu dans l’environnement de publication.
+La fonction de blog d’AEM Communities est passée d’une activité de création à une véritable activité communautaire qui se déroule dans l’environnement Publish.
 
-La fonctionnalité de blog prend en charge la fourniture d’informations communautaires dans un format de journalisation. Les entrées de blog sont créées dans l’environnement de publication par des membres autorisés (utilisateurs enregistrés, connectés).
+La fonctionnalité de blog prend en charge la fourniture d’informations communautaires dans un format de journalisation. Les entrées de blog sont effectuées dans l’environnement Publish par des membres autorisés (utilisateurs enregistrés, connectés).
 
 La fonction de blog fournit :
 
-* Création côté publication d’articles de blog et de commentaires
+* Création côté Publish d’articles de blog et de commentaires
 * Modification de texte enrichi
 * Images intégrées (avec prise en charge du glisser-déposer)
-* Contenu de réseau social intégré ([Prise en charge de l’intégration](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* Contenu de réseau social intégré ([prise en charge oEmbed](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Mode Brouillon
 * Publication planifiée
-* Composer au nom de (a [membre privilégié](/help/communities/users.md#privileged-members-group) peut créer du contenu au nom d’un autre membre de la communauté)
-* [Modération contextuelle et en bloc](/help/communities/moderate-ugc.md) des articles de blog et des commentaires
+* Composer au nom de (un [membre privilégié](/help/communities/users.md#privileged-members-group) peut créer du contenu au nom d’un autre membre de la communauté)
+* [Modération en contexte et en bloc](/help/communities/moderate-ugc.md) d’articles de blog et de commentaires
 
 Cette section de la documentation décrit :
 
@@ -56,15 +56,15 @@ Si vous souhaitez ajouter un blog à une page en mode création, utilisez l’ex
 
 Faites-les glisser sur une page où le blog doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/blog-developer-basics.md#essentials-for-client-side) sont inclus, la variable `Blog` Le composant apparaît comme suit :
+Lorsque les [bibliothèques côté client demandées](/help/communities/blog-developer-basics.md#essentials-for-client-side) sont incluses, le composant `Blog` apparaît comme suit :
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configuration du blog {#configuring-blog}
 
-Sélectionnez le `Blog` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Blog` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -72,13 +72,13 @@ Sélectionnez le `Blog` afin que vous puissiez accéder au `Configure` qui ouvre
 
 #### Onglet Paramètres {#settings-tab}
 
-Sous , **Paramètres** , spécifiez les fonctions de base du blog :
+Sous l’onglet **Paramètres** , spécifiez les fonctionnalités de base du blog :
 
 * **Autoriser la miniature des pièces jointes**
 
   Si cette case est cochée, une miniature de l’image jointe est créée.
 
-* **Taille max. de miniature des pièces jointes**
+* **Taille max. de la miniature de la pièce jointe**
 
   Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
@@ -86,7 +86,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est de 100000 octets (100 Ko).
 
-* **Taille maximale des miniatures**
+* **Taille max. de miniature**
 
   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
@@ -134,19 +134,19 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 * **Autoriser le balisage**
 
-  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs publications (voir **Champ de balise** ). La case par défaut est décochée.
+  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs publications (voir l’onglet **Champ de balise** ). La case par défaut est décochée.
 
 * **Autoriser les chargements de fichiers**
 
   Si cette option est cochée, les fichiers joints peuvent être ajoutés à une entrée ou à un commentaire de blog. La case par défaut est décochée.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+  Pertinent uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichiers autorisés**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ils ne peuvent pas être transférés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+  Pertinent uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ils ne peuvent pas être transférés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -160,33 +160,33 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
   Si cette case est cochée, la fonction de vote est ajoutée à une entrée de blog. La case par défaut est décochée.
 
-* **Autorisation des utilisateurs à supprimer des commentaires et des sujets**
+* **Autoriser les utilisateurs à supprimer des commentaires et des sujets**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les entrées de blog qu’ils ont publiés. La case par défaut est décochée.
 
-* **Autoriser l’exécution**
+* **Autoriser l’abonnement**
 
-  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
+  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La case par défaut est décochée.
 
 * **Autoriser les abonnements aux emails**
 
-  Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). La case par défaut est décochée.
+  Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). La case par défaut est décochée.
 
 * **Badges d’affichage**
 
-  Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La case par défaut est décochée.
+  Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. La case par défaut est décochée.
 
 * **Ne pas obtenir de réponses sur la page de liste**
 
-* **Autoriser le contenu proposé**
+* **Autoriser le contenu en vedette**
 
-  Si cette case est cochée, l’idée est identifiée comme [contenu proposé](/help/communities/featured.md). La case par défaut est décochée.
+  Si cette case est cochée, l’idée est identifiée comme [contenu présenté](/help/communities/featured.md). La case par défaut est décochée.
 
 * **Activer la mention**
 
   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications concernant leurs propres mentions.
 
-* **Nombre max. de mentions**
+* **Nombre maximal de mentions**
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
@@ -196,7 +196,7 @@ Sous , **Paramètres** , spécifiez les fonctions de base du blog :
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **Modération d’utilisateur** , spécifiez les paramètres de modération :
+Sous l’onglet **Modération d’utilisateur** , spécifiez les paramètres de modération :
 
 * **Refuser des publications**
 
@@ -210,11 +210,11 @@ Sous , **Modération d’utilisateur** , spécifiez les paramètres de modérati
 
   Si cette case est cochée, les membres ont le droit de marquer les sujets ou commentaires d’autres personnes comme étant inappropriés. La case par défaut est décochée.
 
-* **Marquer la liste de motifs**
+* **Liste des motifs de l’indicateur**
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de l’indicateur personnalisé**
+* **Motif d’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un sujet ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
@@ -228,11 +228,11 @@ Sous , **Modération d’utilisateur** , spécifiez les paramètres de modérati
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Sous , **Champ de balise** , indiquez les balises qui peuvent être appliquées si **Autoriser le balisage** est coché sur la **Paramètres** tab :
+Sous l’onglet **Champ de balise** , spécifiez les balises qui peuvent être appliquées si l’option **Autoriser le balisage** est cochée dans l’onglet **Paramètres** :
 
 * **Espaces de noms autorisés**
 
-  Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux balises dans les catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+  Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises qui peuvent être appliquées sont limitées aux balises dans les catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestion**
 
@@ -240,9 +240,9 @@ Sous , **Champ de balise** , indiquez les balises qui peuvent être appliquées 
 
 ### Configuration de la barre latérale de blog {#configuring-blog-sidebar}
 
-Lorsque vous double-cliquez sur le `Blog Sidebar` , une boîte de dialogue de modification s’ouvre.
+Lorsque vous double-cliquez sur le composant `Blog Sidebar`, une boîte de dialogue de modification s’ouvre.
 
-Sous , **Paramètres de la barre latérale du journal** , indiquez le format de date des archives et le type d’entrée à afficher dans la barre latérale :
+Sous l’onglet **Paramètres de la barre latérale du journal**, spécifiez le format de date des archives et le type d’entrées à afficher dans la barre latérale :
 
 ![blog-component-sidebar](assets/blog-component-sidebar.png)
 
@@ -258,7 +258,7 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
 
   La valeur par défaut est &quot;yyy MMMM&quot;, qui afficherait, par exemple, &quot;2015 June&quot;.
 
-* **Type d’affichage**
+* **Type de vue**
 
   Titre et type des entrées de blog à afficher dans la barre latérale. Le choix se fait entre
 
@@ -266,9 +266,9 @@ Sous , **Paramètres de la barre latérale du journal** , indiquez le format de 
    * Catégories
    * Archives
 
-* **Chemin du composant Blog**
+* **Chemin d’accès au composant de blog**
 
-  *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, le composant resourceType est utilisé. `social/journal/components/hbs/journal` qui s’affiche sur la même page.
+  *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, il utilise le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
 
    * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`.
 
@@ -290,27 +290,27 @@ Les autres fonctionnalités dépendent si le visiteur du site est modérateur, a
 
 Lors de la création d’un article de blog, vous avez la possibilité d’effectuer les opérations suivantes :
 
-1. Publier immédiatement
-1. Publication d’un brouillon
-1. Publier à une date et une heure planifiées
+1. Publish Immédiatement
+1. Publish : version préliminaire
+1. Publish à une date et une heure planifiées
 
 Les articles de blog s’affichent sous l’onglet approprié (Publié, Versions préliminaires ou Planifié) pour les membres pouvant créer sur publication.
 
 #### Modérateurs et administrateurs {#moderators-and-administrators}
 
-Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut effectuer les opérations suivantes : [tâches de modération](/help/communities/moderate-ugc.md) (comme autorisé par la configuration du composant) sur tous les articles de blog et commentaires publiés sur un blog.
+Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut exécuter [des tâches de modération](/help/communities/moderate-ugc.md) (comme autorisé par la configuration du composant) sur tous les articles de blog et commentaires publiés sur un blog.
 
-![modérateur-page d’accueil](assets/moderator-homepage.png)
+![modérator-homepage](assets/moderator-homepage.png)
 
 #### Membres {#members}
 
-Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), ils peuvent sélectionner `New Article` pour créer et publier un nouvel article de blog.
+Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Article` pour créer et publier un nouvel article de blog.
 
 Plus précisément, ils peuvent :
 
 * Création d’un article de blog
-* Publier un nouvel article de blog au nom d’un autre membre
-* Publication d’un commentaire sur un article de blog
+* Post d’un nouvel article de blog au nom d’un autre membre
+* Post d’un commentaire sur un article de blog
 * Modifier son propre article ou commentaire de blog
 * Supprimer son propre article ou commentaire de blog
 * Marquer les articles ou commentaires de blog d’autres
@@ -327,10 +327,10 @@ Les visiteurs qui ne sont pas connectés ne peuvent lire que les articles et com
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur les blogs](/help/communities/blog-developer-basics.md) pour les développeurs.
+Vous trouverez plus d’informations sur la page [Notions fondamentales sur les blogs](/help/communities/blog-developer-basics.md) pour les développeurs.
 
 Pour la modération des commentaires et des entrées de blog, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
 Pour baliser les entrées et les commentaires de blog, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour obtenir la traduction des commentaires et des entrées de blog, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+Pour la traduction des entrées et des commentaires de blog, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).

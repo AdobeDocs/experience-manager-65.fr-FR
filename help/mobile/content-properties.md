@@ -70,7 +70,7 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 
 | **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** |
 |---|---|---|
-| dps-tapAction |  | Appuyez surAction depuis {webLink} |
+| dps-tapAction |  | Appuyez surAction de {webLink}. |
 | dps-tapActionUrl |  |  |
 
 ### Collections {#collections}

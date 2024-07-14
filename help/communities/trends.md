@@ -21,37 +21,37 @@ ht-degree: 4%
 
 ## Présentation {#introduction}
 
-La variable `Community Activity List` vous permet d’ajouter des informations de tendance concernant les publications et les vues par les membres et les publications et les vues de contenu.
+Le composant `Community Activity List` vous permet d’ajouter des informations de tendance concernant les publications et les vues par les membres, les publications et les vues de contenu.
 
 Le document décrit :
 
-* Ajouter le `Community Activity List` en un composant [site communautaire](/help/communities/overview.md#community-sites).
+* Ajout du composant `Community Activity List` à un [site communautaire](/help/communities/overview.md#community-sites).
 
-* Paramètres de configuration de la variable `Community Activity List` composant.
+* Paramètres de configuration du composant `Community Activity List`.
 
 ### Condition requise {#requirement}
 
-Données pour la variable `Community Activity List` n’est disponible que si Adobe Analytics est sous licence et configuré pour le site de la communauté.
+Les données pour `Community Activity List` ne sont disponibles que lorsque Adobe Analytics est sous licence et configuré pour le site de la communauté.
 
-Voir [Configuration d’Analytics pour les fonctionnalités des communautés](/help/communities/analytics.md).
+Voir [Configuration d’Analytics pour les fonctionnalités de Communities](/help/communities/analytics.md).
 
 ### Ajout d’une liste d’activités de la communauté à une page {#adding-a-community-activity-list-to-a-page}
 
-Pour ajouter une `Community Activity List` à une page en mode création, recherchez le composant. `Communities / Community Activity List` et faites-le glisser sur la page.
+Pour ajouter un composant `Community Activity List` à une page en mode création, recherchez le composant `Communities / Community Activity List` et faites-le glisser sur la page.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
 Lorsqu’il est placé pour la première fois sur une page d’un site de communauté, voici comment le composant apparaît :
 
-![communauté-activité](assets/community-activity.png)
+![community-activity](assets/community-activity.png)
 
 ### Configuration de la liste des activités communautaires  {#configuring-community-activity-list}
 
-Sélectionnez le `Community Activity List` , puis sélectionnez `Configure` pour ouvrir la boîte de dialogue de modification.
+Sélectionnez le composant `Community Activity List` placé, puis sélectionnez l’icône `Configure` pour ouvrir la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
-Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
+Sous l’onglet **Comments** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
 
 ![propriétés](assets/activity-list-properties.png)
 
@@ -68,7 +68,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Titre d’affichage**
 
-  Titre descriptif à afficher au-dessus des données, tel que `Trending Content`.
+  Titre descriptif à afficher au-dessus des données, par exemple `Trending Content`.
 La valeur par défaut n’est pas le titre.
 
 * **Nombre d’affichages**
@@ -81,7 +81,7 @@ La valeur par défaut est 10.
   Sélectionnez l’une des options suivantes :
 
    * `Views`(visites de page)
-   * `Posts`(création du contenu généré par l’utilisateur)
+   * `Posts`(création de contenu généré par l’utilisateur)
    * `Follows`
    * `Likes`
 
@@ -107,7 +107,7 @@ La valeur par défaut est l’ensemble du site de la communauté.
 
 * **Agrégation du nombre de membres**
 
-  Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), une `Activity Type` de `Posts` n’affiche jamais d’activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette case est cochée, les décomptes de toutes les pages descendantes sont inclus.
+  Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), un `Activity Type` de `Posts` n’affiche aucune activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette case est cochée, les décomptes de toutes les pages descendantes sont inclus.
 La valeur par défaut est cochée.
 
 ### Exemple de page avec quatre composants {#example-page-with-components}
@@ -116,7 +116,7 @@ La valeur par défaut est cochée.
 
 **Principaux contributeurs** config : Type = Membres, Type d’activité = Publications
 
-**Contenu principal** config : Type = Contenu, Type d’activité = Vues,
+**Contenu supérieur** config : Type = Contenu, Type d’activité = Vues,
 
 **Contenu de tendance** config : Type = Contenu, Type d’activité = Publications
 

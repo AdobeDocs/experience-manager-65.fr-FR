@@ -22,7 +22,7 @@ ht-degree: 17%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multicanal Adobe Experience Manager qui utilise également AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une flexibilité de déploiement remarquable, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
+Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multi-canal Adobe Experience Manager qui utilise également AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une flexibilité de déploiement remarquable, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
 
 AEM Mobile propose plusieurs méthodes pour créer des applications. Les différentes méthodes que vous pouvez utiliser pour créer des applications sont les suivantes :
 
@@ -31,4 +31,4 @@ AEM Mobile propose plusieurs méthodes pour créer des applications. Les différ
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Experience Manager pour la première fois, vous pouvez le parcourir [Prise en main d’AEM](/help/sites-deploying/deploy.md).
+>Si vous découvrez Adobe Experience Manager, vous pouvez parcourir la section [Prise en main d’AEM](/help/sites-deploying/deploy.md).

@@ -20,11 +20,11 @@ ht-degree: 1%
 
 La fonction de recherche fonctionne avec différentes autres fonctionnalités, telles que les forums, pour permettre de rechercher du contenu.
 
-Lors de l’ajout de la possibilité de rechercher des publications saisies par des membres de la communauté, appelées contenu généré par l’utilisateur (UGC), deux composants sont disponibles : [Rechercher](#search) et [Résultats de la recherche](#search-results).
+Lors de l’ajout de la possibilité de rechercher des publications saisies par des membres de la communauté, appelées contenu généré par l’utilisateur, il existe deux composants : [Recherche](#search) et [Résultats de la recherche](#search-results).
 
-La page qui comprend la variable `Search Results` prend en charge la recherche et l’affichage des résultats.
+La page qui inclut le composant `Search Results` prend en charge la recherche et l’affichage des résultats.
 
-La page qui comprend la variable `Search` fournit un emplacement où lancer une recherche avec les résultats apparaissant sur la `Search Results` page.
+La page qui inclut le composant `Search` fournit un emplacement où lancer une recherche avec les résultats apparaissant sur la page `Search Results`.
 
 La fonction de recherche peut être utilisée avec toute autre fonction qui permet aux visiteurs et aux membres du site d’afficher du contenu.
 
@@ -32,21 +32,21 @@ La fonction de recherche peut être utilisée avec toute autre fonction qui perm
 
 ### Ajouter la recherche à une page {#add-search-to-a-page}
 
-Pour ajouter une `Search` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / Search` et faites-le glisser sur la page. Utilisation de `Search` nécessite une deuxième page pour la variable `Search Results.`
+Pour ajouter un composant `Search` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Search` et le faire glisser sur une page. L’utilisation de `Search` nécessite une seconde page pour `Search Results.`
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est inclus, c’est comme cela que la variable `Search` s’affiche.
+Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est incluse, voici comment le composant `Search` apparaîtra.
 
 ![add-search](assets/add-search.png)
 
 ### Configuration de la recherche ajoutée {#configure-the-added-search}
 
-Sélectionnez le `Search` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Search` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![confgirue](assets/configure-new.png)
 
-Sous , **[!UICONTROL Paramètres de recherche]** , indiquez le mode de recherche des chemins d’accès lorsqu’une requête est entrée par un visiteur.
+Sous l’onglet **[!UICONTROL Paramètres de recherche]**, spécifiez les chemins de recherche lorsqu’une requête est entrée par un visiteur.
 
 ![search-settings](assets/search-settings.png)
 
@@ -56,33 +56,33 @@ En ajoutant des chemins de recherche à l’aide du bouton Ajouter un élément 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Page de résultats]**
-Les résultats s’affichent sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant le `Search Results` composant.
+Les résultats s’affichent sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant le composant `Search Results`.
 
 ## Résultats de la recherche {#search-results}
 
 ### Ajout de résultats de recherche à une page {#add-search-results-to-a-page}
 
-Pour ajouter une `Search Results` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter un composant `Search Results` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Search Results`
 
 et faites-le glisser sur la page. Contrairement au composant Rechercher, aucune deuxième page n’est nécessaire, car les résultats s’affichent sur la même page.
 
-Si vous utilisez Rechercher ailleurs dans le site web, cette page avec `Search Results` peut être configuré pour être `Result Page` pour toutes les instances de `Search`.
+Si vous utilisez Rechercher ailleurs dans le site web, cette page avec `Search Results` peut être configurée pour être le `Result Page` de toutes les instances de `Search`.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est inclus, c’est comme cela que la variable `Search Result` s’affiche :
+Lorsque la bibliothèque côté client requise, `cq.social.hbs.search`, est incluse, voici comment le composant `Search Result` apparaîtra :
 
 ![search-result](assets/search-result1.png)
 
 ### Configuration du résultat de recherche ajouté {#configure-the-added-search-result}
 
-Sélectionnez le `Search Results` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Search Results` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
-Sous , **[!UICONTROL Paramètres des résultats de recherche]** , il est possible de spécifier les chemins inclus dans la recherche lorsqu’une requête est entrée par un visiteur.
+Sous l’onglet **[!UICONTROL Paramètres des résultats de recherche]**, il est possible de spécifier les chemins inclus dans la recherche lorsqu’une requête est entrée par un visiteur.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -96,4 +96,4 @@ Sous , **[!UICONTROL Paramètres des résultats de recherche]** , il est possibl
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Principes de recherche](search-implementation.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la recherche](search-implementation.md) pour les développeurs.

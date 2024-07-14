@@ -51,30 +51,30 @@ Le répertoire /apps du référentiel contient le code avec implémente le compo
 
 Le répertoire /apps est protégé et n’est pas accessible publiquement, tout comme les répertoires /content et /etc/designs.
 
-1. Créer `/apps/an-scf-sandbox` dossier.
+1. Créez le dossier `/apps/an-scf-sandbox`.
 
-   Utilisation **[!UICONTROL CRXDE Lite]**, dans le volet d’exploration
+   Utilisation de **[!UICONTROL CRXDE Lite]** dans le volet d’exploration
 
-   1. Sélectionnez la variable `/apps` dossier.
-   1. Clic droit **[!UICONTROL Créer]**... ou retirez le **[!UICONTROL Créer...]** .
-   1. Sélectionner **[!UICONTROL Créer un dossier...]**.
-   1. Dans le **[!UICONTROL Créer un dossier]** boîte de dialogue, entrée `an-scf-sandbox`.
+   1. Sélectionnez le dossier `/apps`.
+   1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL Créer]**... ou appuyez sur le menu **[!UICONTROL Créer...]** .
+   1. Sélectionnez **[!UICONTROL Créer un dossier...]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez `an-scf-sandbox`.
    1. Cliquez sur **[!UICONTROL OK]**.
 
-1. Créer **[!UICONTROL components]** sous-dossier .
+1. Créez le sous-dossier **[!UICONTROL components]** .
 
-   1. Sélectionnez la variable `/apps/an-scf-sandbox` dossier.
+   1. Sélectionnez le dossier `/apps/an-scf-sandbox`.
    1. Cliquez sur **[!UICONTROL Créer > Créer un dossier]**.
-   1. Dans le **[!UICONTROL Créer un dossier]** boîte de dialogue, entrée **[!UICONTROL components]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez **[!UICONTROL components]**.
    1. Cliquez sur **[!UICONTROL OK]**.
 
-1. Créer **[!UICONTROL templates]** sous-dossier .
+1. Créez le sous-dossier **[!UICONTROL templates]**.
 
-   1. Sélectionnez la variable `/apps/an-scf-sandbox` dossier.
+   1. Sélectionnez le dossier `/apps/an-scf-sandbox`.
    1. Cliquez sur **[!UICONTROL Créer > Créer un dossier]**.
-   1. Dans le **[!UICONTROL Créer un dossier]** boîte de dialogue, entrée **[!UICONTROL templates]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez **[!UICONTROL templates]**.
    1. Cliquez sur **[!UICONTROL OK]**.
-   1. Resélectionner `/apps/an-scf-sandbox`.
+   1. Sélectionnez à nouveau `/apps/an-scf-sandbox`.
    1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
    Comme pour tout processus de modification, vous devez enregistrer souvent. Si vous rencontrez des problèmes lors de la saisie de données, c’est peut-être parce que votre connexion a expiré ou que vous devez enregistrer les modifications précédentes.
@@ -91,13 +91,13 @@ Le répertoire /etc/designs contient les images, les scripts et les feuilles de 
 
    Remarque : Si vous utilisez CRXDE Lite pour créer un noeud de type `cq:Page`, le contrôle d’accès et la réplication ne sont pas définis sur les paramètres par défaut d’une page.
 
-1. Dans le volet de l’explorateur, sélectionnez la variable **[!UICONTROL Conceptions]** puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
+1. Dans le volet de l’explorateur, sélectionnez le dossier **[!UICONTROL Conceptions]** , puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
 
    Enter :
 
-   * Titre : **[!UICONTROL Un environnement de test SCF]**
+   * Titre : **[!UICONTROL An SCF Sandbox]**
    * Nom : **[!UICONTROL an-scf-sandbox]**
-   * Sélectionner **[!UICONTROL Modèle de page de conception]**
+   * Sélectionnez **[!UICONTROL Modèle de page de conception]**
 
    Cliquez sur **[!UICONTROL Créer]**.
 
@@ -115,4 +115,4 @@ Le répertoire /etc/designs contient les images, les scripts et les feuilles de 
 
 Le répertoire /content du référentiel est l’emplacement où réside le contenu du site web. Les chemins sous /content comprennent les chemins d’accès de l’URL pour les requêtes de navigateur.
 
-*Après* la valeur [modèle de page](initial-app.md#createthepagetemplate) est créé dans le cadre de l’application initiale, le contenu initial de la page peut être créé à partir du modèle.... [**⇒**](initial-app.md)
+*Après* la création du [modèle de page](initial-app.md#createthepagetemplate) dans le cadre de l’application initiale, le contenu initial de la page peut être créé en fonction du modèle.... [**⇒**](initial-app.md)

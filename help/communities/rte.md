@@ -22,15 +22,15 @@ ht-degree: 3%
 
 Un éditeur de texte enrichi (RTE) vous permet de saisir du texte avec des balises.
 
-Pour les composants Communities, tout en étant similaire à [éditeur de texte enrichi dans l’environnement de création](../../help/sites-authoring/rich-text-editor.md), cela affecte le texte saisi dans l’environnement de publication.
+Pour les composants Communities, tout en étant similaire à l’[éditeur de texte enrichi dans l’environnement de création](../../help/sites-authoring/rich-text-editor.md), il affecte le texte saisi dans l’environnement de publication.
 
 ![rich-text-editor](assets/rich-text-editor.png)
 
 ## Activation de l’éditeur de texte enrichi {#enabling-rich-text-editor}
 
-Les composants de communauté qui autorisent le contenu généré par l’utilisateur peuvent être activés pour autoriser l’éditeur de texte enrichi. Si le composant a été ajouté à une page ou inclus dans une [function](functions.md), l’éditeur de texte enrichi peut être activé ou non par défaut.
+Les composants de communauté qui autorisent le contenu généré par l’utilisateur peuvent être activés pour autoriser l’éditeur de texte enrichi. Si le composant a été ajouté à une page ou inclus dans une [fonction](functions.md), l’éditeur de texte enrichi peut être activé par défaut ou non.
 
-S’il n’est pas activé, il vous suffit de saisir [mode d’édition de l’auteur](sites-console.md#authoring-site-content), sélectionnez le composant à modifier, puis sélectionnez l’option `Rich Text Editor` .
+S’il n’est pas activé, il vous suffit d’entrer le [mode d’édition de l’auteur](sites-console.md#authoring-site-content), de sélectionner le composant à modifier et de cocher la case `Rich Text Editor` .
 
 L’éditeur de texte enrichi est disponible pour les composants Communities suivants :
 
@@ -47,7 +47,7 @@ L’éditeur de texte enrichi est disponible pour les composants Communities sui
 
 La personnalisation de l’éditeur de texte enrichi est possible, car l’implémentation est basée sur [CKEditor](https://ckeditor.com/).
 
-La configuration actuelle des composants Communities se trouve dans la variable `cq.social.  scf   clientlib`, dans le référentiel à l’adresse
+La configuration actuelle des composants Communities se trouve dans le `cq.social.  scf   clientlib`, dans le référentiel à l’adresse
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -59,9 +59,9 @@ En raison de problèmes de sécurité, les options de lien hypertexte ne sont pa
 
 Pour ajouter les options de lien hypertexte à la barre d’outils :
 
-* Ajoutez une barre d’outils nommée &quot; `links`&quot;
+* Ajoutez une barre d’outils nommée &quot; `links`&quot;.
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Sélectionner **[!UICONTROL Enregistrer tout]**
+* Sélectionnez **[!UICONTROL Enregistrer tout]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

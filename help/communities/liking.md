@@ -18,33 +18,33 @@ ht-degree: 1%
 
 # Utilisation de l’option J’aime {#using-liking}
 
-La variable `Liking` component est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec la variable `Liking` , les membres sélectionnent l’icône représentant un coeur pour indiquer une opinion positive.
+Le composant `Liking` est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec le composant `Liking`, les membres sélectionnent l’icône représentant un coeur pour indiquer une opinion positive.
 
 ## Ajout de mentions J’aime à une page {#adding-liking-to-a-page}
 
-Pour ajouter une `Liking` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter un composant `Liking` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Liking`
 
 Faites-le glisser sur la page, par exemple à une position relative à la fonction que les utilisateurs peuvent aimer.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](essentials-liking.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Liking` s’affiche.
+Lorsque les [bibliothèques côté client demandées](essentials-liking.md#essentials-for-client-side) sont incluses, voici comment le composant `Liking` apparaît.
 
-![association-component](assets/liking-component.png)
+![liking-component](assets/liking-component.png)
 
 ## Configuration de l’option J’aime {#configuring-liking}
 
-Sélectionnez le `Liking` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Liking` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Sous , **[!UICONTROL Textes et libellés]** , spécifiez les propriétés utilisées pour enregistrer les mentions J’aime.
+Sous l’onglet **[!UICONTROL Textes et libellés]**, spécifiez les propriétés utilisées pour enregistrer les mentions &quot;J’aime&quot;.
 
 ![configure-liking](assets/configure-liking.png)
 
-* **[!UICONTROL Libellé de réponse positive]**
+* **[!UICONTROL Étiquette de réponse positive]**
 
   (*Obligatoire*) Nom de propriété d’une réponse positive.
 
@@ -68,4 +68,4 @@ Les liens anonymes ne sont pas pris en charge. Les visiteurs du site doivent s�
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales relatives aux mentions J’aime](essentials-liking.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la mention J’aime](essentials-liking.md) pour les développeurs.

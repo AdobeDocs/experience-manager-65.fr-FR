@@ -32,7 +32,7 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -58,4 +58,4 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui inclut [Fonction Contenu en vedette](functions.md#featured-content-function), inclut une `featured content` composant.
+Une structure de site de communauté qui inclut la [fonction de contenu proposé](functions.md#featured-content-function), comprend un composant `featured content` configuré.

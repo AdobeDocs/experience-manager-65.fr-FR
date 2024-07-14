@@ -38,11 +38,11 @@ Les fonctionnalités AEM Communities qui peuvent être configurées pour autoris
 
 ## Administration des balises {#administering-tags}
 
-Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour créer et gérer des espaces de noms de balise et des taxonomies.
+Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour créer et gérer des espaces de noms et des taxonomies de balise.
 
 Voir [Notions fondamentales sur les balises](tag.md) pour plus d’informations sur les développeurs.
 
-Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour ajouter un composant Nuage de balises sociales à une page afin de faciliter la recherche du contenu généré par l’utilisateur publié à l’aide des balises appliquées.
+Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour ajouter un composant Nuage de balises sociales à une page afin de faciliter la recherche de contenu généré par l’utilisateur à l’aide des balises appliquées.
 
 ### Autorisations de balise {#tag-permissions}
 
@@ -54,4 +54,4 @@ Voir [Définition des autorisations de balise](../../help/sites-administering/ta
 
 Voici comment il apparaît dans CRXDE lorsqu’un administrateur applique des autorisations de lecture à `/etc/tag/discussions` pour le groupe `Community Engage Members`.
 
-![autorisations de balises](assets/tag-permissions.png)
+![tag-permissions](assets/tag-permissions.png)

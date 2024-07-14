@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-Si vous ne connaissez pas le fournisseur de ressources de stockage (SRP) et sa relation avec le contenu généré par l’utilisateur, consultez la page [Stockage de contenu communautaire](working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](srp.md).
+Si vous ne connaissez pas le fournisseur de ressources de stockage (SRP) et sa relation avec le contenu généré par l’utilisateur, consultez les sites [Stockage de contenu de la communauté](working-with-srp.md) et [Présentation du fournisseur de ressources de stockage](srp.md).
 
 Cette section de la documentation fournit des informations essentielles sur la SRP et le contenu généré par l’utilisateur.
 
@@ -36,7 +36,7 @@ L’API SRP n’est pas une classe abstraite, il s’agit d’une interface. Une
 
 Les moyens d’utilisation de l’API SRP sont les utilitaires fournis, tels que ceux trouvés dans le package SocialResourceUtilities.
 
-Lors de la mise à niveau à partir d’AEM 6.0 ou d’une version antérieure, il sera nécessaire de migrer le contenu créé par l’utilisateur pour toutes les applications de gestion de la relation client (SRP), pour lesquelles un outil Open Source est disponible. Voir [Mise à niveau vers AEM Communities 6.3](upgrade.md).
+Lors de la mise à niveau à partir d’AEM 6.0 ou d’une version antérieure, il sera nécessaire de migrer le contenu créé par l’utilisateur pour toutes les applications de sécurité (SRP), pour lesquelles un outil Open Source est disponible. Voir [Mise à niveau vers AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -65,11 +65,11 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 Pour d’autres remplacements de SocialUtils, voir [Refactorisation de SocialUtils](socialutils.md).
 
-Pour obtenir des instructions de codage, consultez [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md).
+Pour obtenir des instructions de codage, consultez la page [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->Le chemin resourceToUGCStoragePath() renvoie est *not* adapté à [Vérification ACL](srp.md#for-access-control-acls).
+>Le chemin d’accès resourceToUGCStoragePath() renvoie *not* adapté à la [vérification ACL](srp.md#for-access-control-acls).
 
 ## Méthode utilitaire d’accès aux listes de contrôle d’accès {#utility-method-to-access-acls}
 
@@ -96,7 +96,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Le chemin renvoyé par resourceToACLPath() est *not* adapté à [Accès au contenu généré par l’utilisateur](#utility-method-to-access-acls) elle-même.
+>Le chemin renvoyé par resourceToACLPath() est *not* adapté pour [ accéder au contenu créé par l’utilisateur ](#utility-method-to-access-acls) lui-même.
 
 ## Emplacements de stockage associés au contenu généré par l’utilisateur {#ugc-related-storage-locations}
 
@@ -106,28 +106,28 @@ Les descriptions suivantes de l’emplacement de stockage peuvent s’avérer ut
 
 Lorsqu’un membre entre dans le contenu généré par l’utilisateur dans l’environnement de publication, il interagit avec un composant dans le cadre d’un site AEM.
 
-Voici un exemple de composant : [composant de commentaires](http://localhost:4502/content/community-components/en/comments.html) qui existe dans la variable [Guide des composants de communauté](components-guide.md) site. Le chemin d’accès au noeud de commentaire dans le référentiel local est le suivant :
+Un exemple de ce type de composant est le [composant de commentaires](http://localhost:4502/content/community-components/en/comments.html) qui existe dans le site [Community Components Guide](components-guide.md). Le chemin d’accès au noeud de commentaire dans le référentiel local est le suivant :
 
-* Chemin du composant = `/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Chemin d’accès du composant = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Emplacement du noeud fantôme**
 
-La création du contenu créé par l’utilisateur crée également une [noeud fantôme](srp.md#about-shadow-nodes-in-jcr) auxquelles les listes de contrôle d’accès nécessaires sont appliquées. Le chemin d’accès au noeud fantôme correspondant dans le référentiel local est le résultat de l’ajout du chemin racine du noeud fantôme au chemin d’accès du composant :
+La création du contenu créé par l’utilisateur crée également un [noeud fantôme](srp.md#about-shadow-nodes-in-jcr) auquel les listes de contrôle d’accès nécessaires sont appliquées. Le chemin d’accès au noeud fantôme correspondant dans le référentiel local est le résultat de l’ajout du chemin racine du noeud fantôme au chemin d’accès du composant :
 
-* Chemin d’accès racine = `/content/usergenerated`
+* Chemin racine = `/content/usergenerated`
 * Noeud fantôme de commentaire = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Emplacement UGC**
 
-Le contenu généré par l’utilisateur est créé dans aucun de ces emplacements et ne doit être accessible qu’à l’aide d’une [utility method](#utility-method-to-access-ugc) qui appelle l’API SRP.
+Le contenu généré par l’utilisateur est créé dans aucun de ces emplacements et ne doit être accessible qu’à l’aide d’une [méthode utilitaire](#utility-method-to-access-ugc) qui appelle l’API SRP.
 
-* Chemin d’accès racine = `/content/usergenerated/asi/srp-choice`
+* Chemin racine = `/content/usergenerated/asi/srp-choice`
 * Noeud UGC pour JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Soyez conscient*, pour JSRP, le noeud UGC *only* être présent sur l’instance AEM (auteur ou publication) sur laquelle il a été saisi. Si elle est saisie sur une instance de publication, la modération ne sera pas possible dans la console de modération de l’instance de création.
+*Soyez conscient* : pour JSRP, le noeud UGC est *seul* présent sur l’instance AEM (auteur ou publication) sur laquelle il a été saisi. Si elle est saisie sur une instance de publication, la modération ne sera pas possible dans la console de modération de l’instance de création.
 
 ## Informations connexes {#related-information}
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel - Aperçu.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel.
+* [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

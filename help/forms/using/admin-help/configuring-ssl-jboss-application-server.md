@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ Dans cette procédure :
 
    * Cluster de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Pour un serveur unique,** ajoutez l’élément suivant dans le fichier lc_&lt;dbaname/tunkey>.xml après la section &lt;security-realms> :
 
    ```xml

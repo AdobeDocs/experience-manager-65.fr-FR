@@ -32,20 +32,20 @@ Comment optimiser vos applications mobiles pour offrir une expérience optimale 
 
 Grâce à Adobe Mobile Services, vous pouvez mieux comprendre comment vos utilisateurs utilisent vos applications mobiles en effectuant le suivi de l’utilisation, des blocages d’application, des détails du périphérique et de nombreuses autres mesures critiques pour vos applications mobiles.
 
-Adobe Experience Manager Mobile donne un aperçu des détails de vos analyses mobiles directement depuis le tableau de bord de l’application AEM Mobile. La variable **Mosaïque Mesures mobiles** Dans le tableau de bord , Real-Time Analytics est fourni à votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous les couvertures, l’alimentation de l’analyse correspond à la variable [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. Le SDK Adobe Mobile Analytics peut être connecté nativement à vos applications ou par le biais d’un module externe PhoneGap Bridge pour les vues web. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté, au moment où les données sont transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
+Adobe Experience Manager Mobile donne un aperçu des détails de vos analyses mobiles directement depuis le tableau de bord de l’application AEM Mobile. La **mosaïque Mesures mobiles** du tableau de bord fournit Real-Time Analytics à votre application mobile, ce qui permet aux développeurs, aux auteurs et aux administrateurs d’avoir un aperçu rapide de l’intégrité de votre application mobile. Sous les couvertures, l’alimentation des analyses est le SDK [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). Le SDK Adobe Mobile Analytics peut être connecté nativement à vos applications ou par le biais d’un module externe PhoneGap Bridge pour les vues web. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté, au moment où les données sont transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
 
 Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
-1. **Collecte de données pour les canaux mobiles** - collecter des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation ;
-1. **Analyse de l&#39;engagement mobile** - Comprendre l’engagement des utilisateurs dans votre application mobile, votre site web ou votre vidéo, notamment la fréquence à laquelle les clients lancent le canal, s’ils effectuent des achats sur celui-ci, etc.
-1. **Tableaux de bord et rapports d’applications mobiles** - Obtenez des rapports d’utilisation qui contiennent des mesures de cycle de vie pour vos applications et des mesures de boutique d’applications. Consultez les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
+1. **Collecte de données pour les canaux mobiles** - Collectez des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation.
+1. **Analyse de l’engagement mobile** - Comprendre l’engagement des utilisateurs dans votre application mobile, votre site web ou votre vidéo, y compris la fréquence à laquelle les clients lancent le canal, s’ils effectuent des achats sur celui-ci, etc.
+1. **Tableaux de bord et rapports d’applications mobiles** - Obtenez des rapports d’utilisation qui incluent des mesures de cycle de vie pour vos applications et mesures de boutique d’applications. Consultez les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
 1. **Analyse de campagne mobile** - Quantifiez l’efficacité des campagnes spécifiques aux mobiles telles que les SMS, les annonces de recherche mobile, les annonces d’affichage mobile et les codes QR.
-1. **Analyse de géolocalisation** - Déterminez où les utilisateurs de votre application lancent vos expériences mobiles et interagissent avec celles-ci par emplacement GPS ou points ciblés.
-1. **Analyse du cheminement** - Découvrez comment les utilisateurs naviguent dans votre application pour déterminer les écrans et les éléments de l’interface utilisateur qui attirent les utilisateurs et qui provoquent l’abandon des utilisateurs.
+1. **Analyse de géolocalisation** : découvrez où les utilisateurs de votre application lancent vos expériences mobiles et interagissent avec celles-ci par emplacement GPS ou points ciblés.
+1. **Analyse du cheminement** - Découvrez comment les utilisateurs naviguent dans votre application pour déterminer les écrans et les éléments de l’interface utilisateur qui attirent les utilisateurs et qui provoquent le abandon des utilisateurs.
 
-Cette section décrit comment [AEM développeurs](#developers) peuvent ensuite apprendre à instrumenter les applications AEM Mobile avec le suivi analytics.
+Cette section décrit comment les [AEM développeurs](#developers) peuvent alors apprendre à instrumenter les applications AEM Mobile avec le suivi des analyses.
 
-Enfin, [Administrateurs AEM](#administrators) apprenez à :
+Enfin, [AEM administrateurs](#administrators) apprennent à :
 
 * créer un service cloud pour Adobe Mobile Services ;
 * créer une configuration de service mobile et associer une suite de rapports ;
@@ -55,13 +55,13 @@ Enfin, [Administrateurs AEM](#administrators) apprenez à :
 
 ## Pour les développeurs : intégrez Analytics à votre application {#for-developers-integrate-analytics-into-your-app}
 
-**Condition préalable requise :** Les administrateurs AEM doivent configurer la configuration cloud d’Adobe Mobile Services, [comme décrit ci-dessous](#amscloudserviceconfig).
+**Condition préalable requise :** AEM administrateurs doivent configurer la configuration cloud Adobe Mobile Services, [ comme décrit ci-dessous](#amscloudserviceconfig).
 
-Les développeurs sont responsables des [ajout d’analytics à une application AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) si nécessaire, vous pouvez suivre, créer des rapports et comprendre la manière dont vos utilisateurs interagissent avec le contenu de votre application mobile, ainsi que mesurer les mesures clés de cycle de vie, telles que les lancements, le temps d’entrée dans l’application et le taux de plantage.
+Les développeurs sont chargés d’ [’ajouter des analyses à une application AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md), en tant que nécessaire pour effectuer le suivi, créer des rapports et comprendre l’interaction de vos utilisateurs avec le contenu de votre application mobile, ainsi que pour mesurer les mesures clés de cycle de vie, telles que les lancements, le temps d’entrée dans l’application et le taux de plantage.
 
 ## Pour les administrateurs - Configuration du Cloud Service Adobe Mobile Services {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Pour tirer parti d’Adobe Mobile Services, vous devez configurer le Cloud Service Adobe Mobile Services d’AEM avec les informations de votre compte Adobe Analytics. Le Centre de commandes des applications fournit une **Analyse des mesures** dans laquelle vous pouvez créer et associer le service cloud à votre application mobile.
+Pour tirer parti d’Adobe Mobile Services, vous devez configurer le Cloud Service Adobe Mobile Services d’AEM avec les informations de votre compte Adobe Analytics. Le Centre de commandes des applications fournit une mosaïque **Analyser les mesures** où vous pouvez créer et associer le service cloud à votre application mobile.
 
 Configurez le service cloud sur votre application mobile en commençant par cliquer sur l’icône d’engrenage dans la mosaïque Analyser les mesures .
 
@@ -75,7 +75,7 @@ Pour commencer, cliquez sur le bouton &quot;+&quot; dans la mosaïque Gérer les
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Après avoir cliqué sur &quot;&quot;**+**&quot;, le bouton **Ajouter un Cloud Service** s’affiche.
+Après avoir cliqué sur le bouton &quot;**+**&quot;, l’assistant **Ajouter un Cloud Service** s’affiche.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 

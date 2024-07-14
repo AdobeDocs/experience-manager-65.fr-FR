@@ -27,23 +27,23 @@ Procédez comme suit :
 * Créez un modèle personnalisé.
 * Recouvrez le chemin du modèle de site par défaut.
 * Ajoutez le modèle personnalisé au chemin de recouvrement.
-* Spécifiez le modèle personnalisé en ajoutant une `page-template` à la propriété `configuration` noeud .
+* Spécifiez le modèle personnalisé en ajoutant une propriété `page-template` au noeud `configuration`.
 
-**Modèle par défaut**:
+**Modèle par défaut** :
 
 `/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
-**Modèle personnalisé dans le chemin de recouvrement**:
+**Modèle personnalisé dans le chemin de recouvrement** :
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Propriété**: page-template
+**Propriété** : page-template
 
 **Type** : chaîne
 
-**Valeur**: `template-name` (pas d’extension)
+**Valeur** : `template-name` (sans extension)
 
-**Noeud de configuration**:
+**Noeud de configuration** :
 
 `/content/community site path/lang/configuration`
 
@@ -51,44 +51,44 @@ Par exemple : `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Tous les noeuds du chemin d’accès recouvert doivent uniquement être de type `Folder`.
+>Tous les noeuds du chemin d’accès superposé doivent uniquement être de type `Folder`.
 
 >[!CAUTION]
 >
->Si le modèle personnalisé reçoit le nom *sitepage.hbs*, tous les sites de la communauté sont ensuite personnalisés.
+>Si le modèle personnalisé est nommé *sitepage.hbs*, tous les sites de la communauté sont personnalisés.
 
 ### Exemple de modèle de site personnalisé {#custom-site-template-example}
 
-Par exemple : `vertical-sitepage.hbs` est un modèle de site qui entraîne l’emplacement des liens de menu verticalement sur le côté gauche de la page, au lieu de horizontalement sous la bannière.
+Par exemple, `vertical-sitepage.hbs` est un modèle de site qui entraîne l’emplacement des liens de menu verticalement le long du côté gauche de la page, au lieu de horizontalement sous la bannière.
 
-[Obtenir le fichier](assets/vertical-sitepage.hbs)
+[Obtenir un fichier](assets/vertical-sitepage.hbs)
 Placez le modèle de site personnalisé dans le dossier de recouvrement :
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identifiez le modèle personnalisé en ajoutant une `page-template` au noeud de configuration :
+Identifiez le modèle personnalisé en ajoutant une propriété `page-template` au noeud de configuration :
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Veillez à **Enregistrer tout** et répliquez le code personnalisé sur toutes les instances Adobe Experience Manager (AEM) (le code personnalisé n’est pas inclus lorsque le contenu du site de la communauté est publié à partir de la console).
+Veillez à **Enregistrer tout** et répliquer le code personnalisé sur toutes les instances Adobe Experience Manager (AEM) (le code personnalisé n’est pas inclus lorsque le contenu du site de la communauté est publié à partir de la console).
 
-La pratique recommandée pour la réplication du code personnalisé consiste à [créer un package ;](../../help/sites-administering/package-manager.md#creating-a-new-package) et déployez-le sur toutes les instances.
+La pratique recommandée pour répliquer le code personnalisé consiste à [créer un package](../../help/sites-administering/package-manager.md#creating-a-new-package) et le déployer sur toutes les instances.
 
 ## Exportation d’un site de communauté {#exporting-a-community-site}
 
 Une fois qu’un site communautaire est créé, il est possible d’exporter le site sous la forme d’un package AEM stocké dans le gestionnaire de modules et disponible pour téléchargement et chargement.
 
-Cette option est disponible à partir du [Console Sites Communities](sites-console.md#exporting-the-site).
+Elle est disponible à partir de la [console Sites de communautés](sites-console.md#exporting-the-site).
 
 Le contenu généré par l’utilisateur et le code personnalisé ne sont pas inclus dans le module de site de la communauté.
 
-Pour exporter du contenu créé par l’utilisateur, utilisez la variable [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), un outil de migration Open Source disponible sur GitHub.
+Pour exporter du contenu créé par l’utilisateur, utilisez l’[outil de migration du contenu créé par l’utilisateur AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), un outil de migration open source disponible sur GitHub.
 
 ## Suppression d’un site de communauté {#deleting-a-community-site}
 
-Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affiche lorsque vous placez le curseur de la souris sur le site de la communauté depuis **[!UICONTROL Communautés]** > **[!UICONTROL Sites]** console. Au cours du développement, si vous souhaitez supprimer un site de la communauté et recommencer à zéro, vous pouvez utiliser cette fonctionnalité. La suppression d’un site de communauté supprime les éléments suivants qui lui sont associés :
+Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affiche en survolant le site de la communauté à partir de la console **[!UICONTROL Communautés]** > **[!UICONTROL Sites]** . Au cours du développement, si vous souhaitez supprimer un site de la communauté et recommencer à zéro, vous pouvez utiliser cette fonctionnalité. La suppression d’un site de communauté supprime les éléments suivants qui lui sont associés :
 
 * [UGC](#user-generated-content)
 * [Groupes d’utilisateurs et d’utilisatrices](#community-user-groups)
@@ -98,17 +98,17 @@ Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affi
 
 Pour identifier l’identifiant de site unique associé au site de la communauté, à l’aide de CRXDE :
 
-* Accédez à la racine de langue du site, telle que `/content/sites/*<site name>*/en/rep:policy`.
+* Accédez à la racine de langue du site, par exemple `/content/sites/*<site name>*/en/rep:policy`.
 
-* Recherchez le `allow<#>` avec un noeud `rep:principalName` dans ce format `rep:principalName = *community-enable-nrh9h-members*`.
+* Recherchez le noeud `allow<#>` avec un `rep:principalName` au format `rep:principalName = *community-enable-nrh9h-members*`.
 
 * L’identifiant du site est le troisième composant de `rep:principalName`
 
   Par exemple, si `rep:principalName = community-enable-nrh9h-members`
 
    * **nom du site** = *enable*
-   * **ID de site** = *nrh9h*
-   * **ID de site unique** = *enable-nrh9h*
+   * **ID du site** = *nrh9h*
+   * **identifiant de site unique** = *enable-nrh9h*
 
 ### Contenu généré par l’utilisateur {#user-generated-content}
 
@@ -122,11 +122,11 @@ Tout contenu généré par l’utilisateur peut être supprimé ou pour un site 
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Cela supprime uniquement le contenu généré par l’utilisateur (saisi lors de la publication) et non le contenu créé (saisi lors de la création). Par conséquent, [noeuds fantômes](srp.md#shadownodes) ne sont pas affectées.
+Cela supprime uniquement le contenu généré par l’utilisateur (saisi lors de la publication) et non le contenu créé (saisi lors de la création). Par conséquent, les [noeuds fantômes](srp.md#shadownodes) ne sont pas affectés.
 
 ### Groupes d’utilisateurs communautaires {#community-user-groups}
 
-Sur toutes les instances de création et de publication, à partir de [console de sécurité](../../help/sites-administering/security.md), recherchez et supprimez la variable [groupes d’utilisateurs](users.md) qui sont :
+Sur toutes les instances d’auteur et de publication, à partir de la [console de sécurité](../../help/sites-administering/security.md), recherchez et supprimez les [groupes d’utilisateurs](users.md) qui sont les suivants :
 
 * Préfixe avec `community`
 * Suivi de [identifiant de site unique](#community-unique-site-id)

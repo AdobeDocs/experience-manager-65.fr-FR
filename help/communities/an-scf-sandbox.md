@@ -20,11 +20,11 @@ ht-degree: 0%
 
 À partir de AEM 6.1 Communities, le moyen le plus simple de créer rapidement un environnement de test est de créer un site de communauté. Voir [Prise en main d’AEM Communities](getting-started.md).
 
-Un autre outil utile pour les développeurs est : [Guide des composants de communauté](components-guide.md), qui permet d’explorer et de prototyper rapidement les composants et fonctionnalités de Communities.
+Le [Guide des composants de la communauté](components-guide.md), qui permet d’explorer et de prototyper rapidement les composants et fonctionnalités de Communities, constitue un autre outil utile pour les développeurs.
 
-L’exercice de création d’un site web peut s’avérer utile pour comprendre la structure d’un site web d’AEM qui peut inclure des fonctionnalités de communauté, tout en fournissant des pages simples sur lesquelles explorer l’utilisation des [structure de composants sociaux (SCF)](scf.md).
+L’exercice de création d’un site web peut s’avérer utile pour comprendre la structure d’un site web AEM qui peut inclure des fonctionnalités de communauté, tout en fournissant des pages simples sur lesquelles explorer l’utilisation de la [structure de composants sociaux (SCF)](scf.md).
 
-Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF. Il décrit la création d’un site Sandbox SCF, semblable au tutoriel pour [Création d’un site web complet](../../help/sites-developing/website.md) qui met l’accent sur les structures sur site, telles que la navigation, le logo, la recherche, la barre d’outils et la liste des pages enfants.
+Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF. Il passe en revue la création d’un site Sandbox SCF, similaire au tutoriel de [Création d’un site web complet](../../help/sites-developing/website.md) qui met l’accent sur les structures sur site, telles que la navigation, le logo, la recherche, la barre d’outils et la liste des pages enfants.
 
 Le développement a lieu sur une instance d’auteur, tandis que l’expérimentation du site est préférable sur une instance de publication.
 
@@ -39,28 +39,28 @@ Les étapes de ce tutoriel sont les suivantes :
 
 >[!CAUTION]
 >
->Ce tutoriel ne crée pas de site de communauté avec la fonctionnalité créée à l’aide de la fonction [Console Sites Communities](sites-console.md). Par exemple, ce tutoriel ne décrit pas comment configurer la connexion, l’enregistrement automatique, [connexion sociale](social-login.md), messagerie, profils, etc.
+>Ce tutoriel ne crée pas de site de communauté avec la fonctionnalité créée à l’aide de la [console Sites de communautés](sites-console.md). Par exemple, ce tutoriel ne décrit pas comment configurer la connexion, l’auto-inscription, la [connexion sociale](social-login.md), la messagerie, les profils, etc.
 >
->Si vous préférez un site communautaire simple, suivez la [Création d’un exemple de page](create-sample-page.md) tutoriel .
+>Si vous préférez un site communautaire simple, suivez le tutoriel [Créer un exemple de page](create-sample-page.md) .
 
 ## Conditions préalables {#prerequisites}
 
-Ce tutoriel suppose qu’une instance d’auteur AEM et une instance de publication AEM sont installées et que la variable [dernière version](deploy-communities.md#latest-releases) des communautés.
+Ce tutoriel suppose que vous avez installé une instance d’auteur AEM et une instance de publication AEM qui possède la [dernière version](deploy-communities.md#latest-releases) de Communities.
 
 Voici quelques liens utiles pour les développeurs qui découvrent la plateforme AEM :
 
-* [Prise en main](../../help/sites-deploying/deploy.md#getting-started): pour le déploiement des instances d’AEM.
+* [Prise en main](../../help/sites-deploying/deploy.md#getting-started) : pour le déploiement des instances AEM.
 
-   * [Principes de base](../../help/sites-developing/the-basics.md): pour les développeurs de sites web et de fonctionnalités.
-   * [Premières étapes pour les auteurs](../../help/sites-authoring/first-steps.md): pour la création de contenu de page.
+   * [Principes de base](../../help/sites-developing/the-basics.md) : pour les développeurs de sites web et de fonctionnalités.
+   * [Premières étapes pour les auteurs](../../help/sites-authoring/first-steps.md) : pour la création de contenu de page.
 
 ## Utilisation de l’environnement de développement CRXDE Lite {#using-crxde-lite-development-environment}
 
-Les développeurs AEM passent une grande partie de leur temps dans la [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) environnement de développement sur une instance d’auteur. CRXDE Lite offre un accès moins restreint au référentiel CRX. Les outils d’IU classique et les consoles d’IU tactile offrent un accès plus structuré à des parties spécifiques du référentiel CRX.
+AEM développeurs passent la plupart de leur temps dans l’environnement de développement [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) sur une instance d’auteur. CRXDE Lite offre un accès moins restreint au référentiel CRX. Les outils d’IU classique et les consoles d’IU tactile offrent un accès plus structuré à des parties spécifiques du référentiel CRX.
 
 Une fois connecté avec des privilèges d’administrateur, vous pouvez accéder à CRXDE Lite de différentes manières :
 
-1. Dans la navigation globale, sélectionnez navigation. **[!UICONTROL Outils > CRXDE Lite]**.
+1. Dans la navigation globale, sélectionnez la navigation **[!UICONTROL Outils > CRXDE Lite]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
@@ -68,7 +68,7 @@ Une fois connecté avec des privilèges d’administrateur, vous pouvez accéder
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
-3. Accédez directement à `CRXDE Lite`: `<server>:<port>/crx/de`
+3. Accédez directement à `CRXDE Lite` : `<server>:<port>/crx/de`
 
    Par exemple, sur une instance d’auteur locale : [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 

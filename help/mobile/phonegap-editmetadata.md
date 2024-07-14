@@ -22,7 +22,7 @@ ht-degree: 11%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La variable **Gérer l’application** La mosaïque et la page Gérer l’application permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées de l’application sont requises pour la publication d’une application dans le magasin d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
+La mosaïque **Gérer l’application** et la page &quot;Gérer l’application&quot; permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées de l’application sont requises pour la publication d’une application dans le magasin d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Pour plus d’informations sur les métadonnées communes et iOS, voir la [mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) .
 
 ## Modification des données de l’application {#editing-the-app-data}
 
@@ -32,7 +32,7 @@ Pour modifier les métadonnées de l’application :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Pour afficher ou modifier les détails, cliquez sur &quot;...&quot; dans le coin inférieur droit de la page **Gérer l’application** mosaïque.
+1. Pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit de la mosaïque **Gérer l’application**.
 
 1. Saisissez ou affichez les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
 
@@ -42,14 +42,14 @@ Pour modifier les métadonnées de l’application :
 
 Vous pouvez modifier les métadonnées IOS communes :
 
-* Sélectionnez la variable **Avancé** de la page de description de l’application.
+* Sélectionnez l’onglet **Avancé** dans la page de description de l’application.
 * Modifiez ou affichez les métadonnées communes et IOS. Pour plus d’informations, reportez-vous aux figures ci-dessous.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
 ## Ajout et suppression de captures d’écran {#add-and-remove-screenshots}
 
-Vous pouvez inclure des captures d’écran d’application au cumul des métadonnées. Certains fournisseurs exigent des captures d’écran précises lors de l’envoi d’une application à leur boutique d’applications. Ces images doivent déjà exister dans Assets. Voir [Sélecteur de ressources](../assets/search-assets.md#assetpicker) pour télécharger vos captures d’écran.
+Vous pouvez inclure des captures d’écran d’application au cumul des métadonnées. Certains fournisseurs exigent des captures d’écran précises lors de l’envoi d’une application à leur boutique d’applications. Ces images doivent déjà exister dans Assets. Voir [Sélecteur de ressources](../assets/search-assets.md#assetpicker) pour charger vos captures d’écran.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -57,12 +57,12 @@ Vous pouvez inclure des captures d’écran d’application au cumul des métado
 
 Pour ajouter une ressource en tant que capture d’écran :
 
-1. En mode de modification de la variable **Gérer l’application** , cliquez sur ajouter (icône plus).
-1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour ajouter la ressource.
+1. En mode d’édition de la page **Gérer l’application**, cliquez sur Ajouter (icône plus).
+1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour l’ajouter.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour ajouter la ressource.
+1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour l’ajouter.
 
 >[!NOTE]
 >

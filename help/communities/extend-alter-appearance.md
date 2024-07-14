@@ -29,9 +29,9 @@ Pour une démonstration simple, l’avatar affiché pour l’utilisateur connect
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
-Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* Ouvrir [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Ouvrez [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Commentez la balise qui contient l’avatar d’une publication de commentaire (~ ligne 21) :
 
@@ -41,7 +41,7 @@ Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Ouvrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Ouvrez [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Mettez en commentaire la balise qui contient l’avatar pour la prochaine entrée de commentaire (~ ligne 44) :
 
@@ -51,7 +51,7 @@ Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Sélectionner **Enregistrer tout**
+* Sélectionnez **Enregistrer tout**
 
 ### Répliquer une application personnalisée {#replicate-custom-app}
 
@@ -61,15 +61,15 @@ Pour ce faire, procédez comme suit :
 
 * À partir du menu principal
 
-   * Sélectionner **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
-   * Sélectionner **[!UICONTROL Activer l’arborescence]**.
-   * Définir `Start Path` to `/apps/custom`.
-   * Désélectionner **[!UICONTROL Modifié uniquement]**.
-   * Sélectionner **[!UICONTROL Activer]** bouton .
+   * Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
+   * Sélectionnez **[!UICONTROL Activer l’arborescence]**.
+   * Définissez `Start Path` sur `/apps/custom`.
+   * Désélectionnez **[!UICONTROL Uniquement Modifié]**.
+   * Sélectionnez le bouton **[!UICONTROL Activer]** .
 
 ### Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[Continuer l’expérience](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
+[ En continuant l’expérience ](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
 
 ![view-modified-content](assets/view-modified-content.png)
 

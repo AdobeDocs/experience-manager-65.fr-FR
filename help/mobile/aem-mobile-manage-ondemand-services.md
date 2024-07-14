@@ -35,8 +35,8 @@ Avec l’application Mobile On-Demand Preflight, vous pouvez afficher tous les p
 ## Aperçu avec contrôle en amont {#previewing-with-preflight-1}
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur les points de suspension (...) du **Gestion des articles** (ou Bannières/Collections).
-1. Sélectionner **Contrôle en amont** dans la barre d’actions.
+1. Cliquez sur les points de suspension (..) de la mosaïque **Gérer les articles** (ou Bannières/collections).
+1. Sélectionnez **Preflight** dans la barre d’actions.
 1. Cliquez sur **Activer le contrôle en amont** dans la boîte de dialogue.
 1. Votre application est maintenant prête à être prévisualisée sur l’application Mobile On-Demand Preflight.
 
@@ -44,7 +44,7 @@ Avec l’application Mobile On-Demand Preflight, vous pouvez afficher tous les p
 
 >[!NOTE]
 >
->L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur Preflight App, cliquez sur [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur l’application Preflight, cliquez [ici](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Prise en main {#getting-ahead}

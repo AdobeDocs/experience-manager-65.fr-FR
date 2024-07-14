@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Les tâches ne nécessitent pas de payloads. Toutefois, la payload est nécessai
 
 ## Créer des tâches pour le déchargement {#creating-jobs-for-offloading}
 
-Créez un client qui appelle la méthode JobManager.addJob pour créer une tâche qu’un JobConsumer sélectionné automatiquement s’exécute. Indiquez les informations suivantes pour créer la tâche :
+Créez un client qui appelle la méthode JobManager.addJob pour créer une tâche qu’un JobConsumer sélectionné automatiquement exécute. Indiquez les informations suivantes pour créer la tâche :
 
 * Rubrique : rubrique de tâche.
 * Nom : (Facultatif)

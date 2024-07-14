@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Le respect de ces cinq principes devrait aboutir à un système qui sépare str
 
 ### Observer le principe de robustesse {#follow-the-robustness-principle}
 
-Le principe de robustesse stipule qu’il faut faire preuve de tolérance dans ce que l’on accepte, et faire preuve de prudence dans ce que l’on envoie. En d’autres termes, lorsque vous envoyez des messages à un tiers, vous devez vous conformer entièrement aux spécifications. Cependant, lorsque vous recevez des messages d’un tiers, vous devez accepter les messages non conformes tant que la signification du message est claire.
+Le principe de robustesse stipule qu’il faut faire preuve de tolérance dans ce que l’on accepte, et faire preuve de prudence dans ce que l’on envoie. En d’autres termes, lorsque vous envoyez des messages à une tierce partie, vous devez vous conformer entièrement aux spécifications. Cependant, lorsque vous recevez des messages d’une tierce partie, vous devez accepter les messages non conformes tant que la signification du message est claire.
 
 ### Implémenter des pics dans leurs propres modules {#implement-spikes-in-their-own-modules}
 

@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -210,7 +210,7 @@ Par conséquent, votre code JavaScript doit définir `s.usePlugins` sur `true` p
 
 1. Cliquez plusieurs fois sur Suivant jusqu’à ce que le bouton OK soit activé, puis cliquez sur OK.
 
-   Le composant sitecatalyst contient le fichier sitecatalyst.jsp automatiquement créé.
+   Le composant sitecatalyst contient le fichier sitecatalyst.jsp automatiquement créé.
 
 1. Cliquez avec le bouton droit sur le fichier sitecatalyst.jsp et cliquez sur Supprimer.
 

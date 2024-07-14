@@ -68,7 +68,7 @@ Points de contrôle connexes
 
 ## Configuration des propriétés de formulaire pour générer des informations d’accessibilité {#configure-form-properties}
 
-Pour qu’un formulaire soit accessible, il doit être [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) par technologie d’assistance. Par exemple, la plupart des lecteurs d’écran ne prennent pas en compte la disposition visuelle de votre formulaire, mais plutôt la structure sous-jacente.
+Pour qu’un formulaire soit accessible, il doit être [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) par la technologie d’assistance. Par exemple, la plupart des lecteurs d’écran ne prennent pas en compte la disposition visuelle de votre formulaire, mais plutôt la structure sous-jacente.
 
 Pour mettre en oeuvre cette structure sous-jacente à l’aide de LiveCycle Designer, vous devez créer un formulaire de PDF contenant des informations d’accessibilité (parfois appelées balises), afin que le lecteur d’écran ou toute autre technologie d’assistance puisse lire le texte et les composants du formulaire. Dans un formulaire contenant des informations sur l’accessibilité, chaque élément contient des informations sur sa propre structure, ainsi que des informations sur sa relation ou sa dépendance à d’autres éléments. Ce n’est que dans les fichiers de PDF contenant des informations d’accessibilité que les lecteurs d’écran peuvent identifier et décrire précisément le contenu d’un document.
 
@@ -133,7 +133,7 @@ Lorsque vous spécifiez un texte de remplacement, tenez compte des points suivan
 * Ne créez pas de descriptions de texte pour les images statiques qui ne sont utilisées que pour la décoration.
 * N’utilisez pas les données numérisées comme informations d’arrière-plan. Cela peut se produire lorsqu’un concepteur analyse un formulaire imprimé et utilise Adobe LiveCycle Designer pour ajouter de nouveaux champs au formulaire. Les lecteurs d’écran ne peuvent pas détecter les données analysées dans cet état.
 
-Lorsque vous incluez du contenu graphique purement décoratif dans vos formulaires, vous souhaitez vous assurer que les lecteurs d’écran n’annoncent pas la présence de l’image. Pour la plupart des lecteurs d’écran, cela est possible en définissant la propriété Texte du Reader d’écran sur Aucun dans la palette Accessibilité. Si vous ne le faites pas, certains lecteurs d’écran peuvent annoncer la présence d’un graphique, sans indiquer ce qu’il représente. Pour les images dynamiques, telles que les objets de champ d’image, assurez-vous que les équivalents textuels sont correctement mis à jour lorsque l’image est modifiée. Ne créez pas de descriptions de texte pour les objets de champ d’image qui ne sont utilisés que pour la décoration. Vous pouvez utiliser le langage de script FormCalc pour affecter dynamiquement des descriptions textuelles à un objet de champ d’image. FormCalc est le langage de script standard d’Adobe LiveCycle Designer. Prenons l’exemple d’un formulaire avec un champ d’image nommé ImageField1 et le texte associé dans le noeud imagetext des données d’exécution. Vous pouvez utiliser un script pour transmettre ce texte dans un événement approprié (tel que `form:ready`)comme suit :
+Lorsque vous incluez du contenu graphique purement décoratif dans vos formulaires, vous souhaitez vous assurer que les lecteurs d’écran n’annoncent pas la présence de l’image. Pour la plupart des lecteurs d’écran, cela est possible en définissant la propriété Texte du Reader d’écran sur Aucun dans la palette Accessibilité. Si vous ne le faites pas, certains lecteurs d’écran peuvent annoncer la présence d’un graphique, sans indiquer ce qu’il représente. Pour les images dynamiques, telles que les objets de champ d’image, assurez-vous que les équivalents textuels sont correctement mis à jour lorsque l’image est modifiée. Ne créez pas de descriptions de texte pour les objets de champ d’image qui ne sont utilisés que pour la décoration. Vous pouvez utiliser le langage de script FormCalc pour affecter dynamiquement des descriptions textuelles à un objet de champ d’image. FormCalc est le langage de script standard d’Adobe LiveCycle Designer. Prenons l’exemple d’un formulaire avec un champ d’image nommé ImageField1 et le texte associé dans le noeud imagetext des données d’exécution. Vous pouvez utiliser un script pour transmettre ce texte dans un événement approprié (par exemple `form:ready`) comme suit :
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -158,9 +158,9 @@ Pour utiliser la palette Accessibilité, procédez comme suit :
 1. Pour afficher la palette Accessibilité, choisissez Fenêtre > Accessibilité ou appuyez sur les touches Maj+F6.
 1. Sélectionnez un objet dans votre formulaire. La palette affiche les propriétés d’accessibilité de l’objet.
 
-![Palette Accessibilité](/help/forms/using/assets/image-3.png)
+![La palette Accessibilité](/help/forms/using/assets/image-3.png)
 
-Tableau 3 : **Palette Accessibilité**
+Figure 3 : **La palette Accessibilité**
 
 Lorsque le formulaire est enregistré en tant que PDF, LiveCycle Designer recherche dans le formulaire les propriétés Texte personnalisé, Info-bulle, Légende et Nom, dans cet ordre, pour trouver le texte à lire par les lecteurs d’écran. Vous pouvez remplacer cet ordre par défaut à l’aide de l’option Précédence du Reader d’écran de la palette Accessibilité :
 
@@ -174,7 +174,7 @@ Les options suivantes sont disponibles :
 * **Info-bulle**, que vous définissez dans le champ Info-bulle de la palette Accessibilité. Pour la plupart des objets, les info-bulles s’affichent au moment de l’exécution lorsque l’utilisateur place le pointeur sur l’objet. Les info-bulles s’affichent pour certains objets en lecture seule, tels que l’objet Code à barres d’un formulaire pour support papier, uniquement lorsqu’un lecteur d’écran est en cours d’utilisation.
 * **Légende**, ce qui entraîne LiveCycle Designer à utiliser le libellé (visuel) associé au champ de formulaire comme texte de lecteur d’écran.
 * **Nom**, que vous définissez dans le champ Nom de l’onglet Liaison. Notez que ce nom ne peut pas contenir d’espaces.
-* **Aucun**, ce qui entraîne l’absence de nom pour l’objet. Cela n’est jamais recommandé pour les contrôles de formulaire.
+* **Aucun**, ce qui empêchera l’objet de porter un nom. Cela n’est jamais recommandé pour les contrôles de formulaire.
 
 Tenez compte des points suivants lorsque vous utilisez la palette Accessibilité pour l’étiquetage des commandes de formulaire :
 
@@ -189,15 +189,16 @@ Tenez compte des points suivants lorsque vous utilisez la palette Accessibilité
 
 La figure 4 illustre un exemple de champ de texte avec une légende visuelle qui peut être floue pour certains utilisateurs de lecteurs d’écran. Dans cet exemple, le texte de Reader d’écran personnalisé est défini sur &quot;Nombre de pages&quot; et le précédent de Reader d’écran est défini sur Texte personnalisé. Par conséquent, le texte de légende (visuel) réel (&quot;# de pages&quot;) ne sera pas utilisé par le lecteur d’écran. Une info-bulle peut également avoir été spécifiée.
 
-![Spécification du texte de Reader d’écran personnalisé lorsque le libellé visible est inadéquat](/help/forms/using/assets/image-4.png)
+![Spécification de texte de Reader d’écran personnalisé lorsque l’étiquette visible est inadéquate](/help/forms/using/assets/image-4.png)
 
-Tableau 4 : **Spécification du texte de Reader d’écran personnalisé lorsque le libellé visible est inadéquat**
+Figure 4 : **Spécification de texte de Reader d’écran personnalisé lorsque l’étiquette visible est inadéquate**
 
 ### Boutons radio Étiquetage
 
 Lorsqu’un utilisateur ayant une déficience visuelle accède à un bouton radio, le lecteur d’écran doit lire deux éléments :
 * Une indication de l’objectif du groupe de boutons radio
-* Libellé significatif pour chaque bouton radio Pour rendre les boutons radio accessibles à l’aide des légendes du bouton :
+* Libellé significatif pour chaque bouton radio
+Pour rendre les boutons radio accessibles à l’aide des légendes des boutons :
    1. Dans la palette Hiérarchie, sélectionnez le groupe d’exclusion.
    1. Cliquez sur la palette Accessibilité, puis, dans la zone Texte par Reader sur écran personnalisé, saisissez le texte à lire pour le groupe. Par exemple, pour un groupe d’exclusion indiquant les options de paiement par différentes cartes de crédit, saisissez Sélectionner un mode de paiement.
    1. Si les légendes de chaque bouton radio fournissent du texte qui aura un sens lorsqu’il sera lu par un lecteur d’écran, sélectionnez l’onglet Liaison de la palette Objet, puis désélectionnez l’option Définir la valeur de l’élément.
@@ -279,7 +280,7 @@ Les utilisateurs de technologies d’assistance peuvent avoir différentes méth
 
 ![Boîte de dialogue Liste des liens JAWS](/help/forms/using/assets/image-6.png)
 
-Tableau 6 : **Boîte de dialogue Liste des liens JAWS**
+Figure 6 : **Boîte de dialogue Liste des liens JAWS**
 
 C’est pourquoi les liens doivent être auto-décrits, c’est-à-dire que leur signification ne doit pas dépendre de leur contexte (le texte environnant). Par exemple, les mots &quot;cliquez ici&quot; peuvent former l’élément de lien réel dans l’expression &quot;cliquez ici pour télécharger notre formulaire de demande&quot;. Un tel lien serait difficile à comprendre lorsqu’il est lu dans une liste de liens, en particulier lorsqu’il existe plusieurs liens contenant le même texte.
 
@@ -339,9 +340,9 @@ Vous pouvez choisir d’afficher uniquement les commandes de formulaire interact
 
 Sur un formulaire complexe, il peut s’avérer difficile de voir comment le tabulation s’enchaîne d’un objet à l’autre. Vous pouvez utiliser des aides visuelles pour vous aider à voir l’ordre de tabulation sur le formulaire. Lorsque les aides visuelles sont activées, lorsque vous placez le pointeur sur l’objet, les flèches bleues indiquent l’ordre de tabulation des deux objets précédents et des deux objets suivants (voir l’illustration 8).
 
-![Les aides visuelles mettent en surbrillance l’ordre de tabulation.](/help/forms/using/assets/image-8.png)
+![Les aides visuelles mettent en surbrillance l’ordre de tabulation](/help/forms/using/assets/image-8.png)
 
-Figure 8 : **Les aides visuelles mettent en surbrillance l’ordre de tabulation.**
+Figure 8 : **Les aides visuelles mettent en surbrillance l’ordre de tabulation**
 
 Pour activer les aides visuelles, utilisez les méthodes suivantes :
 * Choisissez Outils > Options > Ordre de tabulation, puis, dans le panneau Ordre de tabulation, sélectionnez Afficher d’autres aides visuelles pour l’ordre de tabulation.
@@ -351,9 +352,9 @@ Pour activer les aides visuelles, utilisez les méthodes suivantes :
 
 Pour changer l’ordre de tabulation par défaut, vous pouvez modifier les coordonnées d’un objet en le déplaçant vers un autre emplacement. Par exemple, dans la figure 9, le champ Nom du produit apparaît dans l’ordre de tabulation avant le champ Quantité . Pour modifier cette commande, vous pouvez déplacer le champ Nom du produit afin qu’il soit placé en bas ou à droite du champ Quantité .
 
-![L’ordre de tabulation par défaut est de gauche à droite.](/help/forms/using/assets/image-9.png)
+![L’ordre de tabulation par défaut est de gauche à droite](/help/forms/using/assets/image-9.png)
 
-Figure 9 : **L’ordre de tabulation par défaut est de gauche à droite.**
+Figure 9 : **L’ordre de tabulation par défaut est de gauche à droite**
 
 Vous pouvez modifier la position d’un objet en effectuant l’une des opérations suivantes :
 * Faites-le glisser à l’aide de la souris
@@ -364,9 +365,9 @@ Vous pouvez modifier la position d’un objet en effectuant l’une des opérati
 
 Vous pouvez modifier plus précisément les coordonnées d’un objet à l’aide de la palette Disposition (illustrée dans l’illustration 10). Cette palette permet de définir les coordonnées X et Y, ainsi que la largeur et la hauteur de l’objet.
 
-![Utilisation des coordonnées pour positionner précisément un objet à l’aide de la palette Disposition](/help/forms/using/assets/image-10.png)
+![ Utilisation de coordonnées pour positionner précisément un objet à l’aide de la palette Disposition](/help/forms/using/assets/image-10.png)
 
-Figure 10 : **Utilisation des coordonnées pour positionner précisément un objet à l’aide de la palette Disposition**
+Figure 10 : **Utilisation de coordonnées pour positionner précisément un objet avec la palette Disposition**
 
 >[!NOTE]
 > Lorsque la légende et le contrôle ne sont pas fusionnés, la position de la légende d’un contrôle de formulaire est indépendante de l’ordre dans lequel les lecteurs d’écran lisent l’objet et ses éléments. Pour plus d’informations sur les légendes, voir la section 2.5 Fournir des libellés appropriés pour les commandes de formulaire dans ce guide.
@@ -391,9 +392,9 @@ Les sous-formulaires, les cases d’option et les zones de contenu, ainsi que la
 Vous pouvez modifier l’ordre de tabulation par défaut lorsque vous avez besoin d’une séquence différente dans votre formulaire. La modification ne peut pas être effectuée lors du positionnement ou du regroupement dans les sous-formulaires. Pour modifier l’ordre de tabulation par défaut, vous pouvez créer un ordre de tabulation personnalisé à l’aide de la palette Ordre de tabulation.
 La palette Ordre de tabulation (voir l’illustration 12) vous permet d’examiner et de modifier l’ordre dans lequel les objets de votre formulaire sont lus par les dispositifs d’assistance et parcourus par la touche de tabulation de l’utilisateur.
 
-![Ordre de tabulation, palette](/help/forms/using/assets/image-12.png)
+![ La palette Ordre de tabulation](/help/forms/using/assets/image-12.png)
 
-Figure 12 : **Ordre de tabulation, palette**
+Figure 12 : **Palette Ordre de tabulation**
 
 La palette Ordre de tabulation offre une autre vue de l’ordre de tabulation dans le formulaire. Il affiche tous les objets du formulaire sous forme de liste numérotée, où chaque nombre représente la position de l’objet dans l’ordre de tabulation.
 Pour ouvrir la palette Ordre de tabulation, choisissez Fenêtre > Ordre de tabulation.
@@ -467,9 +468,9 @@ Les informations véhiculées uniquement en couleur (couleurs ayant une signific
 
 Par exemple, la figure 13 présente un champ de formulaire avec une légende rouge (indiquée à l’aide de la palette Police) pour indiquer que le champ de formulaire est obligatoire. Dans cet exemple, la couleur est le seul signe de la différence entre les champs d’entrée obligatoires et facultatifs, ce qui rend impossible pour les utilisateurs aveugles ou les utilisateurs ayant certains types de daltonisme de les distinguer.
 
-![Utiliser la couleur seule pour transmettre des informations](/help/forms/using/assets/image-13.png)
+![Utiliser la couleur seule pour véhiculer l&#39;information](/help/forms/using/assets/image-13.png)
 
-Figure 13 : **Utiliser la couleur seule pour transmettre des informations**
+Figure 13 : **Utilisation de la couleur seule pour véhiculer l&#39;information**
 
 Pour résoudre ce problème, indiquez également l’état requis du formulaire dans le texte de remplacement du contrôle de formulaire (comme décrit dans la section 2.5 Fournir des libellés appropriés pour les contrôles de formulaire). Par exemple, vous pouvez définir le texte du lecteur d’écran sur &quot;Code postal (obligatoire)&quot;. Pour les utilisateurs qui rencontrent des difficultés à voir la couleur dans certaines combinaisons, il est recommandé de définir le type de champ de texte sur Entré par l’utilisateur - Obligatoire dans la palette Objet en plus du texte de remplacement qui indique que le champ est obligatoire. Vous pouvez également utiliser d’autres indications que la couleur, telles que le texte visuel, les styles de texte et les styles de bordure. Toutefois, pour les utilisateurs de lecteurs d’écran, vous devrez toujours transmettre les informations requises à l’aide de la palette Accessibilité.
 
@@ -482,9 +483,9 @@ En outre, lorsque vous fournissez des descriptions ou des instructions à l’ut
 
 De nombreux utilisateurs ayant une déficience visuelle s’appuient sur un contraste élevé entre le texte et l’arrière-plan pour lire les formulaires. Lorsque le contraste entre les couleurs d’arrière-plan et de premier plan n’est pas suffisant, un formulaire peut devenir difficile, voire impossible, à lire pour certains utilisateurs. La figure 14 présente un exemple de formulaire avec un contraste insuffisant.
 
-![Formulaire avec contraste de couleur insuffisant](/help/forms/using/assets/image-14.png)
+![Formulaire avec un contraste de couleur insuffisant](/help/forms/using/assets/image-14.png)
 
-Figure 14 : **Formulaire avec contraste de couleur insuffisant**
+Figure 14 : **Formulaire avec un contraste de couleur insuffisant**
 
 Il est vivement recommandé d&#39;utiliser la police et les couleurs d&#39;arrière-plan par défaut : noir sur fond blanc. Si vous devez modifier ces couleurs par défaut, veillez à choisir une combinaison appropriée de couleurs à contraste élevé ; utilisez une couleur de premier plan foncée sur un arrière-plan clair, ou vice versa. Pour être certain, utilisez un outil (tel que l’analyseur de contraste des couleurs WAT-C) pour vérifier que le contraste est suffisant.
 
@@ -504,7 +505,7 @@ Recommendations pour l’utilisation des couleurs :
    * (i) Le codage par couleur ne doit pas être utilisé comme seul moyen de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel.
 * WCAG 1.0
    * 2.1 Assurez-vous que toutes les informations véhiculées par la couleur sont également disponibles sans couleur, par exemple à partir du contexte ou des balises.
-   * 2.2 Assurez-vous que les combinaisons de couleurs de premier plan et d’arrière-plan offrent un contraste suffisant lorsqu’elles sont affichées par une personne ayant un déficit de couleurs ou sur un écran noir et blanc. [Priorité 2 pour les images, priorité 3 pour le texte] (P2).
+   * 2.2 Assurez-vous que les combinaisons de couleurs de premier plan et d’arrière-plan offrent un contraste suffisant lorsqu’elles sont affichées par une personne ayant un déficit de couleurs ou sur un écran noir et blanc. [Priorité 2 pour les images, Priorité 3 pour le texte] (P2).
 * WCAG 2.0
    * 1.4.1 Utilisation de la couleur : la couleur n’est pas utilisée comme seul moyen visuel de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel. (Niveau A)
    * 1.4.3 Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, à l’exception des éléments suivants : (niveau AA)
@@ -516,11 +517,16 @@ Recommendations pour l’utilisation des couleurs :
 Les tableaux constituent un moyen efficace d’organiser et de présenter le contenu dans des formulaires accessibles. Utilisées de manière appropriée, les lignes et les colonnes d’un tableau fournissent une structure prévisible et cohérente pour le contenu du formulaire. Par exemple, lorsqu’un utilisateur de lecteur d’écran navigue dans une cellule de rangée de contenu, le lecteur d’écran indique l’emplacement de la cellule, puis lit le contenu de la cellule. Le lecteur d’écran indique l’emplacement de la cellule à l’aide d’une combinaison d’en-têtes de lignes et de colonnes ou de numéros de lignes et de colonnes. Comme les lecteurs d’écran fournissent des informations qui orientent l’utilisateur vers l’emplacement du contenu dans le tableau, sa disposition affecte directement l’accessibilité du tableau.
 
 Vous pouvez spécifier les rôles suivants pour les éléments de tableau au fur et à mesure de la construction des tableaux. Ces rôles permettent aux lecteurs d’écran de parcourir la structure du tableau à l’aide de raccourcis spéciaux et transmettent à l’utilisateur la relation entre les cellules du tableau et les cellules d’en-tête correspondantes.
-* Tableau Attribue le rôle d’un tableau au sous-formulaire sélectionné. Lorsque l’utilisateur accède à ce sous-formulaire, la plupart des lecteurs d’écran l’identifient comme un tableau et indiquent le nombre de lignes et de colonnes.
-* Rangée d’en-tête Attribue le rôle d’une rangée d’en-tête au sous-formulaire ou à la rangée de tableau sélectionné. Lorsque vous parlez le contenu d’une cellule de rangée de contenu, la plupart des lecteurs d’écran identifient d’abord le contenu de la cellule correspondante dans la rangée d’en-tête.
-* Rangée de contenu Attribue le rôle d’une rangée de contenu au sous-formulaire ou à la rangée de tableau sélectionné. Si une cellule contient un sous-formulaire, les lecteurs d’écran parlent généralement le contenu de la cellule correspondante dans la rangée d’en-tête, suivie des champs du sous-formulaire.
-* Rangée de pied de page Attribue le rôle d’une rangée de pied de page au sous-formulaire ou à la rangée de tableau sélectionné.
-* (Aucun) Indique une ligne qui contient des informations sur le tableau ou son contenu. La rangée n’est pas considérée comme faisant partie du tableau ; toutefois, le lecteur d’écran lit son contenu.
+* Tableau
+Attribue le rôle d’un tableau au sous-formulaire sélectionné. Lorsque l’utilisateur accède à ce sous-formulaire, la plupart des lecteurs d’écran l’identifient comme un tableau et indiquent le nombre de lignes et de colonnes.
+* Rangée d’en-tête
+Attribue le rôle de rangée d’en-tête au sous-formulaire ou à la rangée de tableau sélectionné. Lorsque vous parlez le contenu d’une cellule de rangée de contenu, la plupart des lecteurs d’écran identifient d’abord le contenu de la cellule correspondante dans la rangée d’en-tête.
+* Rangée de contenu
+Attribue le rôle d’une rangée de contenu au sous-formulaire ou à la rangée de tableau sélectionné. Si une cellule contient un sous-formulaire, les lecteurs d’écran parlent généralement le contenu de la cellule correspondante dans la rangée d’en-tête, suivie des champs du sous-formulaire.
+* Rangée de pied de page
+Attribue le rôle de rangée de pied de page au sous-formulaire ou à la rangée de tableau sélectionné.
+* (Aucun)
+Indique une ligne qui contient des informations sur le tableau ou son contenu. La rangée n’est pas considérée comme faisant partie du tableau ; toutefois, le lecteur d’écran lit son contenu.
 
 Lorsqu’ils sont utilisés correctement, les tableaux constituent un moyen efficace d’organiser et de présenter les informations tabulaires. Évitez les tableaux trop complexes, tels que ceux contenant des tableaux et des sections imbriqués.
 
@@ -550,7 +556,8 @@ Lors de l’utilisation d’objets de sous-formulaire au lieu d’objets de tabl
 Les fonctionnalités prises en charge par le lecteur d’écran déterminent les informations lues pour un tableau complexe. Prenons l’exemple d’un tableau contenant une rangée d’en-tête et une section contenant une rangée d’en-tête. Lorsque l’utilisateur accède à une cellule de rangée de contenu dans la section du tableau, les lecteurs d’écran lisent généralement le contenu suivant, dans l’ordre :
 * Contenu de la cellule appropriée dans la rangée d’en-tête du tableau
 * Contenu de la cellule appropriée dans la rangée d’en-tête de la section
-* Contenu de la cellule sélectionnée Certains lecteurs d’écran, cependant, peuvent ne pas lire le contenu des deux lignes d’en-tête.
+* Contenu de la cellule sélectionnée
+Certains lecteurs d’écran, cependant, peuvent ne pas lire le contenu des deux lignes d’en-tête.
 
 Créez des noms ou des titres visibles significatifs pour vos tableaux. Vous pouvez créer un nom de tableau sous forme de texte statique dans Adobe LiveCycle Designer et le placer devant le tableau. Vous pouvez regrouper un tableau et son nom dans un sous-formulaire. Les sous-formulaires sont particulièrement utiles lorsque vous souhaitez combiner des objets associés dans une mise en page.
 
@@ -659,7 +666,7 @@ Lors de la conception de scripts pour l’accessibilité, tenez compte des instr
 * N’oubliez pas que les scripts côté client peuvent interférer avec les lecteurs d’écran et les claviers si le script modifie la cible d’action de l’application cliente. Par exemple, les événements change et mouseEnter, lorsqu’ils sont utilisés avec des listes déroulantes ou des zones de liste, peuvent entraîner des actions inattendues. Vérifiez que les scripts côté client n’entraînent pas de problèmes pour les utilisateurs de lecteurs d’écran et les utilisateurs utilisant uniquement le clavier.
 * Les utilisateurs de technologies d’assistance ont parfois besoin de temps supplémentaire pour effectuer des tâches. Dans tous les cas où une routine minutée est sur le point d’expirer, affichez un message accessible pour autoriser une extension. Les zones d’alerte créées via JavaScript sont utilisables par les technologies d’assistance. Il est également possible de déployer une nouvelle fenêtre comportant un message pour alerter l’utilisateur d’un délai d’expiration imminent.
 
-**Points de contrôle connexes**:
+**Points de contrôle connexes** :
 * Section 508 §1194.22
    * (l) Lorsque les pages utilisent des langages de script pour afficher du contenu ou pour créer des éléments d’interface, les informations fournies par le script doivent être identifiées par un texte fonctionnel pouvant être lu par les dispositifs d’assistance.
    * (p) Lorsqu’une réponse minutée est requise, l’utilisateur doit être alerté et disposer d’un temps suffisant pour indiquer qu’il faut plus de temps.
@@ -679,9 +686,9 @@ Lors de la conception de scripts pour l’accessibilité, tenez compte des instr
 ## S’assurer que tout le contenu audio et vidéo est accessible{#ensure-audio-video-accessible}
 
 Si vos formulaires contiennent du contenu audio ou vidéo, y compris des clips audio et vidéo, vous devez vous assurer que ce contenu est accessible. Plus précisément, assurez-vous que les clips vidéo incorporés dans les formulaires contiennent des sous-titres (parfois appelés sous-titres) pour les utilisateurs sourds et malentendants et des descriptions vidéo pour les utilisateurs aveugles. Pour les fichiers audio qui ne sont pas synchronisés avec le contenu vidéo, une simple transcription suffit.
-Pour les médias basés sur un Flash, consultez [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) pour plus d’informations sur l’apport de sous-titres.
+Pour les médias basés sur des Flashs, consultez [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) pour plus d’informations sur la fourniture de sous-titres.
 
-**Points de contrôle connexes**:
+**Points de contrôle connexes** :
 * Section 508 §1194.22
    * (b) Des alternatives équivalentes à toute présentation multimédia doivent être synchronisées avec la présentation.
 * WCAG 1.0
@@ -725,7 +732,7 @@ Pour définir la propriété Local du sous-formulaire de niveau supérieur ou d�
 
 Figure 18 : **Modification des paramètres régionaux d’un objet**
 
-**Points de contrôle connexes**:
+**Points de contrôle connexes** :
 * WCAG 1.0
    * 4.1 Identifier clairement les changements dans la langue naturelle du texte d’un document et les équivalents textuels (par exemple, les sous-titres).
 * WCAG 2.0

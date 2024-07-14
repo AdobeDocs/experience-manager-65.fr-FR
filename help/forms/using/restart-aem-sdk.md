@@ -22,6 +22,6 @@ Si vous redémarrez le SDK AEM en arrêtant les processus Java™, peut entraîn
 
 ## Solution
 
-Pour redémarrer le SDK AEM, accédez à la fenêtre de commande active et appuyez sur `Ctrl + C` pour redémarrer le SDK.
+Pour redémarrer le SDK AEM, accédez à la fenêtre de commande active et appuyez sur la commande `Ctrl + C` pour redémarrer le SDK.
 
 Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java™, peut entraîner des incohérences dans l’environnement de développement AEM.

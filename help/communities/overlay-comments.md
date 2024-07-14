@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Incrustation de composants Communities {#overlay-communities-components}
 
-L’intention de [superposition](/help/communities/client-customize.md#overlays) un composant par défaut consiste à modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il repose sur la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs . Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs .
+L’intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il repose sur la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs . Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs .
 
 ## Exemple {#example}
 
 **Composant des commentaires de superposition**
 
-Supposons que vous souhaitiez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site web, en modifiant l’en-tête du commentaire afin qu’il n’affiche plus l’avatar pour un commentaire. Les solutions pour masquer l’avatar utilisent soit CSS, soit, comme décrit ici, le recouvrement du fichier header.jsp dans le dossier des applications afin que le HTML contenant l’avatar ne soit jamais envoyé au client.
+Supposons que vous souhaitiez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site web, en modifiant l’en-tête du commentaire afin qu’il n’affiche plus l’avatar pour un commentaire. Les solutions pour masquer l’avatar utilisent soit CSS, soit, comme décrit ici, le recouvrement du fichier header.jsp dans le dossier des applications afin que l’HTML contenant l’avatar ne soit jamais envoyé au client.
 
 Pour superposer des commentaires, vous devez :
 
@@ -33,11 +33,11 @@ Pour superposer des commentaires, vous devez :
 1. [Création de noeuds](/help/communities/overlay-create-nodes.md)
 1. [Modification de l’aspect](/help/communities/overlay-alter-appearance.md)
 
-**Incrustation d’emails de notifications**
+**Courriers électroniques de notifications de superposition**
 
-Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [superposition](/help/communities/client-customize.md#overlays) les modèles à l’adresse `/libs/settings/community/templates/email/html`.
+Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [ superposant ](/help/communities/client-customize.md#overlays) les modèles sur `/libs/settings/community/templates/email/html`.
 
-Supposons, par exemple, que vous souhaitiez modifier les notifications par courrier électronique relatives aux mentions (pour un composant Communities spécifique dans lequel le contenu créé par l’utilisateur est). Dans ce cas, ajoutez une **if** condition pour verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la fonction **@mentions** la prise en charge.
+Supposons, par exemple, que vous souhaitiez modifier les notifications par courrier électronique relatives aux mentions (pour un composant Communities spécifique dans lequel le contenu créé par l’utilisateur est). Dans ce cas, ajoutez une condition **if** pour le verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Supposons, par exemple, que vous souhaitiez modifier les notifications par courr
 {{/equals}}\
 ```
 
-Pour modifier le modèle de notification électronique pour @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’adresse : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Pour modifier le modèle de notifications électroniques pour @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’adresse : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

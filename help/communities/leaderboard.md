@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Cette page fournit les informations essentielles pour utiliser la fonctionnalité de classement.
 
-Avant d’inclure le composant de classement sur une page, vous devez configurer [Notation et badges des communautés](implementing-scoring.md).
+Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer le [score et badges de communautés](implementing-scoring.md).
 
 Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md).
 
@@ -30,10 +30,10 @@ Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md)
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamification/components/hbs/Leadboard</td>
+   <td>social/gamification/components/hbs/lead-board</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md)
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité du tableau de classement</a></td>
+   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité de classement</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md)
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui inclut [Fonction de classement](functions.md#leaderboard-function), inclut une `leaderboard` composant.
+Une structure de site de communauté qui inclut la [fonction Leaderboard](functions.md#leaderboard-function), inclut un composant `leaderboard` configuré.

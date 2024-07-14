@@ -24,7 +24,7 @@ Le rapport de transaction dans AEM Forms vous permet de surveiller toutes les tr
 
 Pour obtenir des instructions complètes sur l’activation des transactions, la liste des API facturables et les implémentations d’enregistreurs personnalisées, en fonction de votre pile de technologie AEM Forms, reportez-vous aux sections suivantes :
 
-**Reporting de transaction pour AEM Forms on JEE**
+**Création de rapports de transaction pour AEM Forms on JEE**
 
 * [Activation et affichage du rapport de transaction pour AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
 * [Liste des API facturables pour AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)

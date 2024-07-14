@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Présentation {#introduction}
 
-Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont regroupées dans un flux qui peut être filtré et affiché de différentes manières via la configuration de la fonction `Activity Streams` composant.
+Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant `Activity Streams`.
 
 La possibilité de suivre ajoute une autre vue des activités lorsque les membres de la communauté suivent des messages d’intérêt ou suivent les activités d’autres membres de la communauté.
 
@@ -32,25 +32,25 @@ Le document décrit :
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
-Si vous souhaitez ajouter une `Activity Streams` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Si vous souhaitez ajouter un composant `Activity Streams` à une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Activity Streams`
 
 Faites-le glisser sur la page où les flux d’activités doivent apparaître.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Activity Streams` Le composant apparaît :
+Lorsque les [bibliothèques côté client demandées](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, voici comment le composant `Activity Streams` apparaît :
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configuration des flux d’activités {#configuring-activity-streams}
 
-Sélectionnez le `Activity Streams` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Activity Streams` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
-Sous , **Activités utilisateurs** , définissez les activités à afficher :
+Sous l’onglet **Activités utilisateurs** , spécifiez les activités à afficher :
 
 ![user-activities](assets/user-activities.png)
 
@@ -58,7 +58,7 @@ Sous , **Activités utilisateurs** , définissez les activités à afficher :
 
   Le nombre d’activités à afficher
 
-* **Chemin de la ressource de diffusion**
+* **Chemin d’accès aux ressources de diffusion**
 
   Laissez ce champ vide par défaut pour le site de la communauté ou le groupe de la communauté. Le chemin d’accès à la ressource de flux identifie la source des activités. La valeur par défaut est vide.
 
@@ -66,7 +66,7 @@ Sous , **Activités utilisateurs** , définissez les activités à afficher :
 
   Si cette case est cochée, la page des activités comprend un onglet qui filtre les activités en fonction de celles générées au sein de la communauté par le membre actuel. La valeur par défaut est cochée.
 
-* **Afficher la vue Toutes les activités**
+* **Afficher toutes les activités**
 
   Si cette case est cochée, la page des activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est cochée.
 
@@ -76,15 +76,15 @@ Sous , **Activités utilisateurs** , définissez les activités à afficher :
 
 ### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent les suivantes sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [Q&amp;R](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [bibliothèque de fichiers](/help/communities/file-library.md), et [commentaires](/help/communities/comments.md).
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [Q&amp;R](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [bibliothèque de fichiers](/help/communities/file-library.md) et [commentaires](/help/communities/comments.md).
 
-![after-view](assets/following-activities.png)
+![following-view](assets/following-activities.png)
 
-La variable **Suivez** fournit un moyen de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md), ou [subscriptions](/help/communities/subscriptions.md). Chaque fois que la fonction **Suivez** est sélectionné, il est possible d’activer ou de désactiver une sélection. La variable `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md) ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La sélection `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
 
-Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivre**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
+Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-La variable **Suivez** s’affiche :
+Le bouton **Suivre** s’affiche :
 
 * Lors de l’affichage du profil d’un autre membre.
 * Sur une page principale, comme les forums, les Q&amp;R et les blogs.
@@ -97,4 +97,4 @@ La variable **Suivez** s’affiche :
 
 ### Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur les flux d’activités](/help/communities/essentials-activities.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les flux d’activités](/help/communities/essentials-activities.md) pour les développeurs.

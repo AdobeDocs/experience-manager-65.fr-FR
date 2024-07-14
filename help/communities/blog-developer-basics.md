@@ -31,7 +31,7 @@ Cette page fournit les informations essentielles pour utiliser la fonction de bl
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
-La fonction de blog est composée de deux composants principaux disponibles en ajoutant la fonction [Fonction de blog](/help/communities/functions.md#blog-function) ou en ajoutant les composants à une page en mode d’édition de création.
+La fonction de blog est composée de deux composants principaux disponibles en ajoutant la [fonction de blog](/help/communities/functions.md#blog-function) ou en ajoutant les composants à une page en mode d’édition de création.
 
 ### Blog {#blog}
 
@@ -42,7 +42,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
    <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>see <a href="/help/communities/blog-feature.md">Fonctionnalité de blog</a></td>
+   <td>voir <a href="/help/communities/blog-feature.md">Fonctionnalité de blog</a></td>
   </tr>
  </tbody>
 </table>
@@ -68,11 +68,11 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**incluable**](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
+| [**includable**](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propriétés** | see [Fonctionnalité de blog](/help/communities/blog-feature.md) |
+| **propriétés** | voir [Fonctionnalité de blog](/help/communities/blog-feature.md) |
 
 * [Personnalisations côté client](/help/communities/client-customize.md)
 
@@ -80,35 +80,35 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 * [API de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Points de fin de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Points d’entrée de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 ### Fonction Blog {#blog-function}
 
-Une structure de site de communauté qui inclut [Fonction de blog](/help/communities/functions.md#blog-function) has `Blog` et `Blog Sidebar` composants configurés. La fonction Blog permet d’identifier une [groupe d’utilisateurs de membres privilégiés](/help/communities/users.md#privileged-members-group).
+Une structure de site de communauté qui inclut la [fonction de blog](/help/communities/functions.md#blog-function) a des composants `Blog` et `Blog Sidebar` configurés. La fonction Blog prend en charge l’identification d’un [groupe d’utilisateurs privilégiés](/help/communities/users.md#privileged-members-group).
 
 ### Accès aux entrées de blog (UGC) {#accessing-blog-entries-ugc}
 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](/help/communities/working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](/help/communities/working-with-srp.md) pour le contenu créé par l’utilisateur inclut l’accès programmatique au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
+**L’emplacement et le format du contenu généré par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - introduction et utilisation du référentiel - présentation.
-* [Principes de base de la SRP et du contenu généré par l’utilisateur](/help/communities/srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](/help/communities/accessing-ugc-with-srp.md) - Instructions de codage.
+* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - Présentation et utilisation du référentiel.
+* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Exemples et méthodes de l’utilitaire SRP.
+* [Accès au contenu créé par l’utilisateur avec SRP](/help/communities/accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](/help/communities/socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
 ## Éditeur de Principal {#primary-publisher}
 
 Lorsque le déploiement est une ferme de publication, il est nécessaire d’identifier un éditeur principal qui interroge les articles planifiés pour publication.
 
-Voir [Éditeur de Principal](/help/communities/deploy-communities.md#primary-publisher) pour plus d’informations.
+Pour plus d’informations, voir [Éditeur de Principal](/help/communities/deploy-communities.md#primary-publisher) .
 
 ## Autoriser les médias riches {#allowing-rich-media}
 
@@ -118,6 +118,6 @@ La plateforme AEM bloque les liens d’autres sites Web afin d’éviter les att
 
 À compter de la version AEM 6.2, les modifications qui devaient auparavant être effectuées manuellement sont incluses dans le fichier de configuration AntiSamy par défaut.
 
-Les médias riches sont incorporés dans un article de blog en sélectionnant `Embed Media from External Sites` icon :
+Les médias riches sont incorporés dans un article de blog en sélectionnant l’icône `Embed Media from External Sites` :
 
 ![media](assets/media-icon.png)

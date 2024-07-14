@@ -27,13 +27,13 @@ ht-degree: 8%
 >
 >Il peut être modifié avec la version 6.3 du Service Pack 1.
 
-AEM Mobile Content Services est une fonctionnalité légère qui permet de demander du contenu géré par AEM. Cela permet à tous les développeurs d’applications d’obtenir du contenu de manière très performante sans avoir à posséder une connaissance approfondie du référentiel de contenu AEM (JCR) et de la structure web (Sling). Il permet de découpler les applications qui le demandent du référentiel de contenu.
+AEM Mobile Content Services est une fonctionnalité légère qui permet de demander du contenu géré par AEM. Cela permet à tous les développeurs d’applications de récupérer du contenu de manière très performante sans avoir à posséder une connaissance approfondie du référentiel de contenu (JCR) AEM et de la structure web (Sling). Il permet de découpler les applications qui le demandent du référentiel de contenu.
 
 Content Services introduit plusieurs nouveaux éléments d’AEM qui permettent à un développeur d’accéder AEM contenu géré sans connaître la structure de référentiel de ce contenu.
 
 Ces concepts sont nécessaires pour préserver la flexibilité et permettre une extension future en fournissant une couche d’abstraction entre le contenu géré par AEM et les applications mobiles utilisant le contenu. Cela permet à AEM Content Services de fonctionner comme une couche d’abstraction entre les exigences de contenu de l’application native et le référentiel de contenu AEM.
 
-Content Services peut diffuser le contenu sous la forme de ressources, de HTML empaqueté (HTML/CSS/JS) ou de contenu indépendant des canaux.
+Content Services peut diffuser le contenu sous forme de ressources, d’HTML empaqueté (HTML/CSS/JS) ou de contenu indépendant des canaux.
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ Content Services peut diffuser le contenu sous la forme de ressources, de HTML e
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services. Pour activer la création et la gestion des modèles dans votre application, activez les modèles de données dans le navigateur de configuration.
 >
->Voir **[Administration de Content Services](/help/mobile/developing-content-services.md)** et la variable [Explorateur de configuration](/help/sites-administering/configurations.md) pour plus d’informations.
+>Pour plus d’informations, voir **[Administration de Content Services](/help/mobile/developing-content-services.md)** et la documentation [Navigateur de configuration](/help/sites-administering/configurations.md) .
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

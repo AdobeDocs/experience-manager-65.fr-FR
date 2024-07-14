@@ -29,7 +29,7 @@ Cette page fournit des informations fondamentales sur l’utilisation de la fonc
    <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Cette page fournit des informations fondamentales sur l’utilisation de la fonc
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="file-library.md">Fonctionnalité Bibliothèque de fichiers</a></td>
+   <td>Voir <a href="file-library.md">Fonctionnalité de bibliothèque de fichiers</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ Cette page fournit des informations fondamentales sur l’utilisation de la fonc
 
 * [API de bibliothèque de fichiers](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Points de fin de la bibliothèque de fichiers](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Points d’entrée de la bibliothèque de fichiers](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui inclut [Fonction Bibliothèque de fichiers](functions.md#file-library-function), inclut une `file library` composant.
+Une structure de site de communauté qui inclut la [fonction de bibliothèque de fichiers](functions.md#file-library-function), inclut un composant `file library` configuré.
 
 ### Accès aux commentaires publiés pour les bibliothèques de fichiers (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu créé par l’utilisateur inclut l’accès programmatique au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
+**L’emplacement et le format du contenu généré par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et utilisation du référentiel - présentation.
-* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes de l’utilitaire SRP.
+* [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
 * [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

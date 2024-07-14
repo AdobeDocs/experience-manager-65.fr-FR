@@ -23,7 +23,7 @@ ht-degree: 3%
 
 La gestion des modèles implique la création et la gestion de modèles pour l’association à d’éventuels objets de données. Chaque modèle comprend toutes les propriétés et définitions de champ nécessaires pour faciliter la création et le rendu des objets.
 
-La gestion des modèles implique la création de **models**, **entities**, et **espaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
+La gestion des modèles implique la création de **models**, **entities** et **spaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -33,7 +33,7 @@ Un modèle décrit le type de contenu et indique les informations disponibles po
 
 Les modèles servent également à transformer le contenu d’AEM existant en objets qui peuvent être facilement utilisés par les applications mobiles natives.
 
-Content Services fournit quelques modèles prêts à l’emploi pour les objets courants tels que les ressources, les collections de ressources, les pages de HTML, les configurations d’application et les pages indépendantes du canal. Ils peuvent être configurés afin de répondre aux besoins spécifiques des clients sans nécessiter un effort de développement AEM.
+Content Services fournit quelques modèles d’usine pour les objets courants tels que les ressources, les collections de ressources, les pages d’HTML, les configurations d’application et les pages indépendantes du canal. Ils peuvent être configurés afin de répondre aux besoins spécifiques des clients sans nécessiter un effort de développement AEM.
 
 Les utilisateurs peuvent créer leurs propres modèles. Cela permet de créer de nouveaux types de contenu qui ne sont pas déjà gérés par AEM. La création de modèles s’effectue via une interface utilisateur à l’aide de types primitifs existants.
 
@@ -58,7 +58,7 @@ Une entité est une instance d’un modèle de contenu. Une entité est exposée
 
 S’il existe un contenu AEM existant, une entité est générée à l’aide d’un modèle et de la source de contenu AEM. Par exemple, une entité de page est un objet indépendant des canaux et des mises en page, généré à partir d’une page AEM et du modèle de page.
 
-Les modifications apportées au contenu référencé d’une entité entraînent une modification de l’entité. Par exemple, si une variable *cq:page* est mise à jour, toutes les entités basées sur cette page sont également mises à jour.
+Les modifications apportées au contenu référencé d’une entité entraînent une modification de l’entité. Par exemple, si un *cq:page* est mis à jour, toutes les entités basées sur cette page sont également mises à jour.
 
 Pour créer des entités personnalisées à partir de modèles, voir **[Utilisation d’entités](/help/mobile/spaces-and-entities.md)**.
 
@@ -75,7 +75,7 @@ Du côté AEM, un espace est un moyen pratique de gérer les entités liées. Il
 
 *Par exemple*,
 
-Un utilisateur possède trois classifications générales d’entités. L’une est destinée à un usage interne uniquement, l’autre est approuvée pour un usage public et encore un troisième est pour les entités courantes utilisées par de nombreuses applications. Pour faciliter la gestion, l’utilisateur crée trois espaces : *internal*, *public* (avec des contenus en anglais et en français) et *common* pour gérer les entités appropriées, comme indiqué ci-dessous :
+Un utilisateur possède trois classifications générales d’entités. L’une est destinée à un usage interne uniquement, l’autre est approuvée pour un usage public et encore un troisième est pour les entités courantes utilisées par de nombreuses applications. Pour faciliter la gestion, l’utilisateur crée trois espaces, à savoir *internal*, *public* (avec du contenu en anglais et en français) et *common* pour gérer les entités appropriées comme indiqué ci-dessous :
 
 * /content/entities/internal
 * /content/entities/public/en

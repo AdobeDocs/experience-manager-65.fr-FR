@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Page Créer un commentaire {#create-comments-page}
 
-**[⇐ Composant des commentaires de superposition](overlay-comments.md) [Création de noeuds ⇒](overlay-create-nodes.md)**
+**[⇐ Composant des commentaires de superposition](overlay-comments.md) [Créer des noeuds ⇒](overlay-create-nodes.md)**
 
 ## Page Commentaires {#comments-page}
 
-La variable [Guide des composants de communauté](components-guide.md) vous permet de superposer facilement le composant de commentaires.
+Le [guide des composants de la communauté](components-guide.md) vous permet de superposer facilement le composant de commentaires.
 
 Affichez la page sur l’instance de création :
 
 * [http://localhost:4502/editor.html/content/community-components/en/comments.html](http://localhost:4502/editor.html/content/community-components/en/comments.html)
 
-![commentaires](assets/comments.png)
+![comments](assets/comments.png)
 
-**[⇐ Composant des commentaires de superposition](overlay-comments.md) [Création de noeuds ⇒](overlay-create-nodes.md)**
+**[⇐ Composant des commentaires de superposition](overlay-comments.md) [Créer des noeuds ⇒](overlay-create-nodes.md)**

@@ -24,11 +24,11 @@ ht-degree: 15%
 
 ## Création de composants Adobe Experience Manager (AEM) qui accèdent aux fonctions des périphériques {#building-aem-components-that-access-device-features}
 
-La variable [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Le référentiel GitHub fournit aux développeurs une application d’AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova principales. Lorsqu’elle est exécutée sur iOS ou Android™ via l’interface de ligne de commande de PhoneGap, l’application s’ouvre sur la page suivante qui comprend un lien vers chaque API d’appareil illustrée :
+Le référentiel GitHub [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application d’AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova de base. Lorsqu’elle est exécutée sur iOS ou Android™ via l’interface de ligne de commande de PhoneGap, l’application s’ouvre sur la page suivante qui comprend un lien vers chaque API de périphérique illustrée :
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Le code source de chacun de ces composants de l’API d’appareil est : [disponible sur GitHub](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
+Le code source de chacun de ces composants d’API d’appareil est [ disponible sur GitHub](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
 Pour plus d’informations sur l’utilisation de chaque API, consultez la documentation du module externe Cordova (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`).
 

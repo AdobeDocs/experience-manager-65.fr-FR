@@ -32,7 +32,7 @@ Les articles représentent le texte fondé sur l’art pour véhiculer l’infor
 >
 >Pour en savoir plus sur les rubriques suivantes des applications AEM Mobile, reportez-vous aux ressources suivantes de l’aide en ligne :
 >
->* [Considérations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Gestion des articles](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
@@ -41,13 +41,13 @@ Les articles représentent le texte fondé sur l’art pour véhiculer l’infor
 
 Le workflow général pour créer un article est le suivant :
 
-1. Sélectionner **Mobile** à partir du rail latéral.
+1. Sélectionnez **Mobile** dans le rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des articles** mosaïque.
-1. Choisissez un modèle d’article et cliquez sur **Suivant**.
+1. Cliquez sur la flèche vers le bas dans le coin supérieur droit de la mosaïque **Gérer les articles** .
+1. Choisissez un modèle d&#39;article et cliquez sur **Suivant**.
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvel article apparaît dans la section **Gestion des articles** mosaïque.
+1. Votre nouvel article apparaît dans la mosaïque **Gérer les articles** .
 
 ## Importation d’un nouvel article {#importing-a-new-article}
 
@@ -60,9 +60,9 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’import d’un nouvel article
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des articles** et sélectionnez Importer des articles.
-1. Cliquez sur **Importation d’articles** dans la boîte de dialogue, puis cliquez sur Fermer.
-1. Vos articles Mobile On Demand apparaissent désormais dans le **Gestion des articles** mosaïque.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles** et sélectionnez Importer des articles.
+1. Cliquez sur **Importer des articles** dans la boîte de dialogue, puis sur Fermer.
+1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les articles**.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ Workflow d’import d’un nouvel article
 
 ## Modification d’un article {#editing-an-article}
 
-Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images des ressources de gestion des actifs numériques peuvent être insérées.
+Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images de DAM Assets peuvent être insérées.
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifie
 Workflow de modification d’un article :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un AEM article d’origine dans la **Gestion des articles** mosaïque.
+1. Sélectionnez un article AEM issu de la mosaïque **Gérer les articles** .
 1. Cliquez sur l’article en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu d’un article (manuscrits, images, texte, etc.).
 
@@ -92,11 +92,11 @@ Le contenu tel que les articles, bannières, etc., présente de nombreuses propr
 Processus général d’affichage/de modification d’un article :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Choisissez un article dans la **Gestion des articles** mosaïque.
+1. Sélectionnez un article dans la mosaïque **Gérer les articles** .
 
-1. Sélectionner **Afficher les propriétés** dans la barre d’actions.
+1. Sélectionnez **Afficher les propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si vous le souhaitez et cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Téléchargement d’un article {#uploading-an-article}
@@ -105,10 +105,10 @@ L’action de téléchargement copie le contenu sélectionné et l’ajoute à u
 
 Processus général de téléchargement d’un article :
 
-1. De **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Dans le **Gestion des articles** , sélectionnez un article à charger vers Mobile On-Demand.
+1. Depuis **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
+1. Dans la mosaïque **Gérer les articles**, sélectionnez un article à charger vers Mobile On-Demand.
 1. Ajoutez d’autres articles si nécessaire en mode Liste.
-1. Sélectionner **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
+1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Vos articles sont maintenant chargés sur Mobile On-Demand.
 
 ![chlimage_1-4](assets/chlimage_1-4.gif)
@@ -120,7 +120,7 @@ Cette opération supprime le contenu sélectionné de Mobile On-Demand, et éven
 Workflow général de suppression d’un article :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez l’article à supprimer dans le **Gestion des articles** mosaïque.
+1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les articles** .
 1. Assurez-vous qu’il est sélectionné dans la liste et sélectionnez d’autres options à supprimer.
 1. Cliquez sur **Supprimer** dans la barre d’actions.
 1. Vérifiez si vous souhaitez supprimer de AEM et de Mobile On-Demand.

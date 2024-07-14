@@ -27,16 +27,16 @@ Les applications AEM Mobile sont basées sur un plan directeur qui définit une 
 * **Titre :** Titre de l’application.
 * **Chemin de destination :** Emplacement dans le référentiel où l’application est stockée. Laissez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
 
-* **Nom :** La valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans AEM pour faire référence à l’application, par exemple, pour le noeud de référentiel qui représente l’application.
+* **Nom :** La valeur par défaut est la valeur de la propriété Titre avec les caractères d’espace supprimés. Le nom est utilisé dans AEM pour faire référence à l’application, par exemple, pour le noeud de référentiel qui représente l’application.
 * **Description :** Description de l’application.
-* **URL du serveur :** URL qui fournit des mises à jour de contenu en vol (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
+* **URL du serveur :** URL qui fournit des mises à jour de contenu en direct (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
-Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image est utilisée uniquement comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
+Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image n’est utilisée qu’en tant que miniature pour représenter votre application mobile dans la console des applications mobiles d’Experience Manager.
 
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
 * Créer : cliquez sur gérer les configurations et configurez votre build.phonegap.com service de génération ici. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : cliquez sur Gérer les configurations et configurez votre [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Analytics : cliquez sur Gérer les configurations et configurez votre service cloud [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 ## Utilisation des modèles d’application {#using-app-templates}
 
@@ -52,15 +52,15 @@ Le dernier package d’exemples d’applications AEM comprend une version mise �
 Procédure de création d’une application basée sur un modèle d’application :
 
 1. Accédez au catalogue d’applications AEM Mobile : &lt;*server-url*>aem/apps.html/content/mobileapps
-1. Sélectionner **Créer** puis choisissez **Application** comme illustré ci-dessous
+1. Sélectionnez **Créer**, puis **Application** comme illustré ci-dessous
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-Sélectionnez un modèle d’application mis à votre disposition par un développeur AEM. Voir [Structure d’une application AEM Mobile](/help/mobile/phonegap-structure-an-app.md) pour obtenir de l’aide sur le développement.
+Sélectionnez un modèle d’application mis à votre disposition par un développeur AEM. Voir [Structure d’une application AEM Mobile](/help/mobile/phonegap-structure-an-app.md) pour obtenir de l’aide sur les développeurs.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
-Renseignez les détails de votre nouvelle application si nécessaire, y compris éventuellement la modification de son image miniature. Ces valeurs peuvent être modifiées ultérieurement à partir du **Gérer l’application** mosaïque.
+Renseignez les détails de votre nouvelle application si nécessaire, y compris éventuellement la modification de son image miniature. Ces valeurs peuvent être modifiées ultérieurement à partir de la mosaïque **Gérer l’application**.
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Accès au contenu généré par l’utilisateur avec SRP
-description: Lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le contenu généré par l’utilisateur réel n’est pas stocké dans AEM magasin de noeuds (JCR).
+description: Lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le contenu généré par l’utilisateur réel n’est pas stocké dans le magasin de noeuds AEM (JCR).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 ## À propos de SRP {#about-srp}
 
-Tous les composants et fonctionnalités d’AEM Communities sont construits sur le [structure de composants sociaux (SCF)](/help/communities/scf.md), qui appelle l’API SocialResourceProvider pour accéder à tout le contenu généré par l’utilisateur (UGC).
+Tous les composants et fonctionnalités AEM Communities sont créés sur le [framework de composant social (SCF)](/help/communities/scf.md), qui appelle l’API SocialResourceProvider pour accéder à tout le contenu généré par l’utilisateur.
 
-Avant la création d’un site communautaire, la variable [fournisseur de ressources de stockage (SRP)](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une implémentation cohérente avec la sous-jacente [topologie](/help/communities/topologies.md). Les mises en oeuvre de la SRP reposent sur trois options de stockage :
+Avant de créer un site communautaire, le [fournisseur de ressources de stockage (SRP)](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une implémentation cohérente avec la [topologie](/help/communities/topologies.md) sous-jacente. Les mises en oeuvre de la SRP reposent sur trois options de stockage :
 
 1. [ASRP](/help/communities/asrp.md) - Adobe du stockage à la demande
 1. [MSRP](/help/communities/msrp.md) - MongoDB
@@ -31,11 +31,11 @@ Avant la création d’un site communautaire, la variable [fournisseur de ressou
 
 ## À propos du stockage UGC {#about-ugc-storage}
 
-Ce qu’il est important de savoir sur le stockage du contenu généré par l’utilisateur, c’est que lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le contenu généré par l’utilisateur réel n’est pas stocké dans AEM [magasin de noeuds](/help/sites-deploying/data-store-config.md) (JCR).
+Ce qu’il est important de savoir sur le stockage du contenu généré par l’utilisateur, c’est que lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le contenu généré par l’utilisateur réel n’est pas stocké dans AEM [node store](/help/sites-deploying/data-store-config.md) (JCR).
 
 Bien qu’il puisse y avoir des noeuds dans JCR qui cachent le contenu créé par l’utilisateur pour fournir des métadonnées utiles, ces noeuds ne doivent pas être confondus avec le contenu créé par l’utilisateur réel.
 
-Voir [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md)
+Voir [Présentation du fournisseur de ressources de stockage.](/help/communities/srp.md)
 
 ## Bonne pratique {#best-practice}
 
@@ -66,14 +66,14 @@ Méthodes à éviter :
 
 ### Utilisation des collections de recherche {#use-search-collections}
 
-Différents SRP peuvent avoir différents langages de requête natifs. Utilisez les méthodes de la méthode [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter le langage de requête approprié.
+Différents SRP peuvent avoir différents langages de requête natifs. Utilisez les méthodes du package [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter le langage de requête approprié.
 
-Pour plus d’informations, voir [Principes de recherche](/help/communities/search-implementation.md).
+Pour plus d’informations, reportez-vous à la section [Notions fondamentales sur la recherche](/help/communities/search-implementation.md).
 
 ## Ressources {#resources}
 
-* [Stockage de contenu communautaire](/help/communities/working-with-srp.md) - discute des choix de SRP disponibles pour un magasin commun UGC
-* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - présentation et utilisation du référentiel
-* [Principes de base de la SRP et du contenu généré par l’utilisateur](/help/communities/srp-and-ugc.md) - Méthodes d’utilitaire SRP et exemples
-* [Principes de recherche](/help/communities/search-implementation.md) - informations essentielles pour la recherche du contenu généré par l’utilisateur
-* [Refactorisation de SocialUtils](/help/communities/socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
+* [Stockage de contenu de la communauté](/help/communities/working-with-srp.md) - aborde les choix de SRP disponibles pour un magasin commun UGC
+* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - Présentation et utilisation du référentiel
+* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Exemples et méthodes d’utilitaire SRP
+* [Notions fondamentales sur la recherche](/help/communities/search-implementation.md) - informations essentielles pour rechercher du contenu généré par l’utilisateur
+* [Refactorisation de SocialUtils](/help/communities/socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire de SRP actuelles

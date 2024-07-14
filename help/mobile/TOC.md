@@ -29,14 +29,14 @@ ht-degree: 13%
 + Création d&#39;une application On-Demand Services {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestion du contenu](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [Publication du contenu Annuler la publication](mobile-on-demand-publishing-unpublishing.md)
+   + [Publish - Ne plus publier de contenu](mobile-on-demand-publishing-unpublishing.md)
    + [Tableau de bord des applications AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
    + [Actions de création et de configuration d’application](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestion des articles](mobile-on-demand-managing-articles.md)
    + [Chargement de ressources partagées](mobile-on-demand-shared-resources.md)
    + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
-+ Développement d’une application On-Demand Services {#developing}
++ Développement de l&#39;application On-Demand Services {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Modèles et composants d’application](app-templates-and-components1.md)
    + [Propriétés et noeuds de contenu](content-properties.md)

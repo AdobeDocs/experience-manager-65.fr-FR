@@ -1,6 +1,6 @@
 ---
 title: Votre application hybride est-elle prête pour AEM Mobile ?
-description: Découvrez les applications hybrides. Une application en Experience Manager est généralement divisée en deux parties. Le "shell" et le "contenu" et cette page fournissent des informations supplémentaires sur ces sujets.
+description: Découvrez les applications hybrides. Dans Experience Manager, une application est généralement divisée en deux parties. Le "shell" et le "contenu" et cette page fournissent des informations supplémentaires sur ces sujets.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -25,15 +25,15 @@ ht-degree: 4%
 
 Vous avez importé votre application PhoneGap hybride ou Cordova dans AEM, et maintenant ? Il est probable que vous souhaitiez ajouter du contenu modifiable à votre application. Pour accomplir cette tâche, vous avez besoin d’une compréhension générale de la structure d’une application AEM. Une application dans AEM est généralement divisée en deux parties. &quot;shell&quot; et &quot;contenu&quot;. Le &quot;shell&quot; comprend les parties statiques de votre application, telles que les fichiers de configuration PhoneGap, la structure de l’application et les commandes de navigation. Le contenu de l’archive que vous avez importée est stocké dans le shell. Dans le contexte de ce document, le shell est tout le contenu créé non AEM de votre application PhoneGap hybride créée par le développeur de l’application.
 
-Le contenu fait référence aux composants, modèles et pages créées dans AEM générés par le développeur AEM. Le contenu est classé comme contenu de développement ou comme contenu créé. Les composants, conceptions et modèles de page sont considérés comme du contenu de développement puisqu’ils sont créés par un développeur. Les contenus d’auteur sont des pages qui ont été créées à l’aide des composants et des modèles. Ces pages sont généralement effectuées par un concepteur ou un spécialiste du marketing.
+Le contenu fait référence aux composants, modèles et pages créées dans AEM générés par le développeur AEM. Le contenu est classé comme contenu de développement ou comme contenu créé. Les composants, conceptions et modèles de page sont considérés comme du contenu de développement puisqu’ils sont créés par un développeur. Les contenus d’auteur sont des pages qui ont été créées à l’aide des composants et des modèles. Ces pages sont généralement effectuées par un responsable marketing ou Designer.
 
-L’ajout de pages d’AEM créées à votre application hybride nécessite une coordination entre le développeur de l’application et le développeur AEM. Partout dans l’application où vous souhaitez ajouter du contenu créé, le développeur de l’application doit organiser ces pages dans une structure qui peut être superposée en Experience Manager. Le développeur de l’application doit être en mesure de fournir au développeur du Experience Manager les chemins vers lesquels le contenu créé du Experience Manager est ajouté. Ensuite, fournissez une page d’espace réservé dans l’application hybride qui est remplacée une fois que le développeur du Experience Manager a créé le contenu de la page.
+L’ajout de pages d’AEM créées à votre application hybride nécessite une coordination entre le développeur de l’application et le développeur AEM. Partout dans l’application où vous souhaitez ajouter du contenu créé, le développeur de l’application doit organiser ces pages dans une structure qui peut être superposée dans Experience Manager. Le développeur de l’application doit être en mesure de fournir au développeur Experience Manager les chemins vers lesquels le contenu créé Experience Manager est ajouté. Ensuite, fournissez une page d’espace réservé dans l’application hybride qui est remplacée une fois que le développeur Experience Manager a créé le contenu de la page.
 
 Pour faciliter l’explication, l’Experience Cloud d’AEM est utilisé : Référence hybride AEM Mobile pour expliquer les concepts. L’application de référence hybride se compose d’une page de bienvenue avec un menu latéral.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Dans cet exemple, la page d’accueil de l’application va être créée. Recherche de la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Notez que le développeur de l’application a défini une page de bienvenue et fourni un modèle pour la page rendue par l’application. C’est sur cette page que le développeur de l’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page de bienvenue dans l’application de référence hybride est défini sur &quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est important, car le développeur AEM va créer sa page de bienvenue dans le référentiel AEM en utilisant le même chemin d’accès.
+Dans cet exemple, la page d’accueil de l’application va être créée. Regarder la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Notez que le développeur de l’application a défini une page de bienvenue et fourni un modèle pour la page rendue par l’application. C’est sur cette page que le développeur de l’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page de bienvenue dans l’application de référence hybride est défini sur &quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est important, car le développeur AEM va créer sa page de bienvenue dans le référentiel AEM en utilisant le même chemin d’accès.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -41,7 +41,7 @@ Il est important que l’application hybride et le contenu créé AEM utilisent 
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-Lorsque vous &quot;Téléchargez la source&quot; depuis le tableau de bord de l’application, ces scripts ContentSync sont exécutés pour assembler une archive de votre application hybride.
+Lorsque vous &quot;Téléchargez Source&quot; depuis le tableau de bord de l’application, ces scripts ContentSync sont exécutés pour assembler une archive de votre application hybride.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

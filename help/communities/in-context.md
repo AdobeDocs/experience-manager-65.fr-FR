@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée où le contenu de la communauté a été publié.
 
-Lors de l’utilisation d’un [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin de permettre l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
+Lors de l’utilisation d’une [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin de permettre l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
 
 ## Actions de modération {#moderation-actions}
 
-Visitez la présentation de la modération pour obtenir une description de [actions de modération](moderate-ugc.md#moderation-actions).
+Consultez la présentation de la modération pour obtenir une description des [actions de modération](moderate-ugc.md#moderation-actions).
 
 ## Interface utilisateur de la modération {#moderation-ui}
 
@@ -38,20 +38,20 @@ L’interface utilisateur présentée au modérateur sur l’instance de publica
 
 ## Exemple {#example}
 
-En utilisant la variable [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) site créé lorsque [Prise en main d’AEM Communities](getting-started.md), il est possible de configurer un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication. Voir ci-dessous.
+À l’aide du site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [prise en main d’AEM Communities](getting-started.md), il est possible de configurer un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement Publish. Voir ci-dessous.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) a été identifié comme membre de la communauté de confiance en l’ajoutant au groupe de modérateurs d’engagement communautaire lors de la création du site.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) a été identifié en tant que membre de la communauté de confiance en l’ajoutant au groupe de modérateurs de la communauté lors de la création du site.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) peut être ajouté en tant que membre du groupe community-engage-members à l’aide de la variable [Console Membres](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) peut être ajouté en tant que membre du groupe community-engage-members à l’aide de la [console Membres](members.md).
 
-Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
+Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez la page [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
 ### Création de publications de forum {#create-the-forum-posts}
 
 * Se connecter en tant que Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Sélectionner un forum
-   * Sélectionner une nouvelle publication
+   * Sélectionner Nouveau Post
    * Saisie de l’objet
 
      Quand changer le nectar dans le mangeur d&#39;oiseaux Humming
@@ -60,14 +60,14 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 
      Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire aux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Dois-je le changer plus tôt ?
 
-   * Sélectionner une publication
+   * Sélectionner Post
    * Sélectionner Déconnexion
 
 * Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Sélectionner un forum
    * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
-   * Saisissez le commentaire correspondant à la fonction Publier la réponse .
+   * Saisissez le commentaire correspondant à Post Reply
 
      Je change la mienne une fois par semaine et je les reçois de mai à octobre.
 
@@ -78,7 +78,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 
    * Sélectionner un forum
    * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
-   * Saisissez le commentaire correspondant à la fonction Publier la réponse .
+   * Saisissez le commentaire correspondant à Post Reply
 
      Je vends du nectar et des mangeoires - rendez-vous sur https://my.viral.url/
 
@@ -95,9 +95,9 @@ Un visiteur anonyme du site peut uniquement afficher le forum, mais ne peut pas 
 
 ### Nouveau membre (#4) {#new-member}
 
-Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la variable [Console Membres](members.md), puis déconnectez-vous.
+Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la [console Membres](members.md), puis déconnectez-vous.
 
-Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour le billet colibri.
+Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication colibri.
 
 Remarque :
 
@@ -122,7 +122,7 @@ Remarque :
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’option de menu Administration pour accéder à [console de modération](moderation.md) dans l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement Publish.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
@@ -134,7 +134,7 @@ Déconnectez-vous.
 
 ### Modérateur de la communauté (#2) {#community-moderator}
 
-Connectez-vous en tant qu’Aaron McDonald (`aaron.mcdonal@mailinator.com`), un modérateur de la communauté et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
+Connectez-vous en tant qu’Aaron McDonald (`aaron.mcdonal@mailinator.com`), un modérateur de la communauté, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
 
 Remarque :
 
@@ -143,9 +143,9 @@ Remarque :
 * Aaron peut couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérait.
 * Aaron peut sélectionner Administration pour accéder à la console de modération.
 
-![communauté-forum-modérateur](assets/community-forum-moderator.png)
+![community-forum-modérator](assets/community-forum-moderator.png)
 
-Sélectionnez l’option de menu Administration pour accéder à [console de modération](moderation.md) dans l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement Publish.
 
 Notez que, pour un modérateur de communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 
@@ -153,11 +153,11 @@ Notez que le modérateur de la communauté dispose des mêmes options que l’ad
 
 Déconnectez-vous.
 
-![modérateur-accès](assets/moderator-access.png)
+![modérator-access](assets/moderator-access.png)
 
 ### Auteur de contenu (#1) {#content-author}
 
-Se connecter en tant que Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membre de la communauté qui a lancé le fil, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
+Connectez-vous en tant que Rebekah Larsen (`rebekah.larsen@mailinator.com`), membre de la communauté qui a démarré le fil, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication de colibri.
 
 Remarque :
 

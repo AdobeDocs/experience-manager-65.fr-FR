@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -249,7 +249,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter un lien textuel sur la page 
 Propriétés prises en charge
 
 * Libellé, avec options de gras, d’italique et de soulignement
-* URL Target, prend en charge l’URL tierce et AEM
+* URL cible, avec prise en charge des URL tierces et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
 Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, « Afficher les détails du produit » mappe sur le libellé, etc.
@@ -282,7 +282,7 @@ Propriétés prises en charge
 
 * Recadrage d’image, rotation
 * Texte de survol, description, taille en px
-* URL Target, prend en charge l’URL tierce et AEM
+* URL cible, avec prise en charge des URL tierces et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
 Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, img src est l’image de rendu, « title » est utilisé comme texte de survol, etc.
@@ -368,11 +368,11 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 
 ### Parsys (système de paragraphes) {#parsys}
 
-Le composant AEM Parsys est un composant de conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant Parsys dans le HTML importé. Cela permet à l’utilisateur ou utilisatrice d’ajouter/supprimer des composants AEM modifiables à la page de destination même après son import.
+Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Vous pouvez ajouter un composant parsys dans le fichier HTML importé. Cela permet à l’utilisateur ou utilisatrice d’ajouter/supprimer des composants AEM modifiables à la page de destination même après son import.
 
 Le système de paragraphes permet aux utilisateurs et utilisatrices d’ajouter des composants à l’aide du sidekick.
 
-Balisage de HTML pour insérer un composant Parsys ( `foundation/components/parsys`) dans le HTML dans le module de conception :
+Balise HTML permettant d’insérer un composant parsys (`foundation/components/parsys`) dans le fichier HTML à l’intérieur du package de conception :
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ Balisage de HTML pour insérer un composant Parsys ( `foundation/components/pars
 
 L’insertion des balises ci-dessus dans le fichier HTML produit les effets suivants :
 
-* Insère un composant Parsys AEM (foundation/components/parsys) dans la page d’entrée créée après l’importation du module de conception.
-* Initialisation du Sidekick avec des composants par défaut. De nouveaux composants peuvent être ajoutés à la page d’entrée en faisant glisser les composants du sidekick vers le composant Parsys.
-* Deux composants de titre font également partie du système Parsys.
+* Insertion d’un composant parsys AEM (foundation/components/parsys) dans la page de destination créée après l’import du package de conception.
+* Initialisation du Sidekick avec des composants par défaut. De nouveaux composants peuvent être ajoutés à la page de destination en faisant glisser les composants du sidekick vers le composant parsys.
+* Deux composants de titre font également partie du parsys.
 
 ### Cible {#target}
 
@@ -441,7 +441,7 @@ Si aucun codage n’est spécifié dans le HTML importé, le codage par défaut 
 
 ### Superposition d’un modèle {#overlaying-template}
 
-Le modèle Page d’entrée vierge peut être superposé en en créant une sur : `/apps/<appName>/designimporter/templates/<templateName>`
+Vous pouvez recouvrir le modèle de Page de destination vierge en créant un autre modèle dans `/apps/<appName>/designimporter/templates/<templateName>`.
 
 Vous trouverez [ici](/help/sites-developing/templates.md) la procédure de création d’un modèle dans AEM.
 
@@ -543,7 +543,7 @@ Lors de l’import du package de conception, plusieurs erreurs peuvent se produi
 
 ### Initialisation du sidekick avec les composants pertinents de la page de destination {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Si le module de conception contient un balisage de composant Parsys, après l’importation, le sidekick commence à afficher les composants appropriés à la page d’entrée. Vous pouvez faire glisser et déposer de nouveaux composants sur le composant Parsys dans votre page d’entrée. Vous pouvez également accéder au mode de conception et ajouter de nouveaux composants au sidekick.
+Si le package de conception contient une balise de composant parsys, le sidekick commence à afficher les composants relatifs à la page de destination après l’import. Vous pouvez faire glisser de nouveaux composants vers le composant parsys dans votre page de destination. Vous pouvez également accéder au mode de conception et ajouter de nouveaux composants au sidekick.
 
 ### Messages d’erreur affichés au cours de l’importation {#error-messages-displayed-during-import}
 

@@ -26,13 +26,13 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 ## Présentation des collections {#collections-overview}
 
-Les collections représentent une *compartiment* remplie avec du contenu tel que des articles ou des bannières qui correspondent au thème de la couverture.
+Les collections représentent un *compartiment* bien défini avec du contenu tel que des articles ou des bannières qui s’adapte au thème de la couverture.
 
 >[!NOTE]
 >
 >Pour en savoir plus sur les rubriques suivantes des applications AEM Mobile, reportez-vous aux ressources suivantes de l’aide en ligne :
 >
->* [Considérations relatives à la conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Gestion des collections](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
@@ -41,12 +41,12 @@ Les collections représentent une *compartiment* remplie avec du contenu tel que
 
 Le workflow général pour créer une collection est le suivant :
 
-1. Sélectionner **Mobile** à partir du rail latéral.
+1. Sélectionnez **Mobile** dans le rail latéral.
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des collections** mosaïque.
+1. Cliquez sur la flèche vers le bas dans le coin supérieur droit de la mosaïque **Gérer les collections** .
 1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvel article apparaît dans la section **Gestion des collections** mosaïque.
+1. Votre nouvel article apparaît dans la mosaïque **Gérer les collections**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -61,9 +61,9 @@ Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobi
 Workflow d’importation d’une nouvelle collection
 
 1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la **Gestion des collections** et sélectionnez Importer des collections.
-1. Cliquez sur **Importation de collections** dans la boîte de dialogue, puis cliquez sur Fermer.
-1. Vos collections Mobile On-Demand apparaissent désormais dans le **Gestion des collections** mosaïque.
+1. Cliquez sur la flèche vers le bas dans le coin supérieur droit de la mosaïque **Gérer les collections** et sélectionnez Importer des collections.
+1. Cliquez sur **Importer des collections** dans la boîte de dialogue, puis sur Fermer.
+1. Vos collections Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les collections**.
 
 >[!CAUTION]
 >
@@ -71,12 +71,12 @@ Workflow d’importation d’une nouvelle collection
 
 ## Modification d’une collection {#editing-a-collection}
 
-Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images des ressources de gestion des actifs numériques peuvent être insérées.
+Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images de DAM Assets peuvent être insérées.
 
 Le workflow pour modifier une collection :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un AEM article d’origine dans la **Gestion des collections** mosaïque.
+1. Sélectionnez un article AEM issu de la mosaïque **Gérer les collections**.
 1. Cliquez sur la collection mise en surbrillance en mode Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser du contenu de collection (manuscrits, images, texte, etc.).
 
@@ -87,11 +87,11 @@ Les collections comportent de nombreuses propriétés telles que des titres, des
 Le workflow général pour afficher/modifier une collection :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Choisissez une collection parmi les **Gestion des collections** mosaïque.
+1. Sélectionnez une collection dans la mosaïque **Gérer les collections**.
 
 1. Sélectionnez **Propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si nécessaire, puis cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si vous le souhaitez et cliquez sur **Enregistrer** une fois terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
 ## Téléchargement d’une collection {#uploading-a-collection}
@@ -100,10 +100,10 @@ L’action de téléchargement copie le contenu sélectionné et l’ajoute à u
 
 Workflow général de téléchargement d’une collection :
 
-1. De **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Dans le **Gestion des collections** , sélectionnez un article à charger vers Mobile On-Demand.
+1. Depuis **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
+1. Dans la mosaïque **Gérer les collections**, sélectionnez un article à charger vers Mobile On-Demand.
 1. Ajoutez d’autres collections si nécessaire à partir du mode Liste.
-1. Sélectionner **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
+1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
 1. Vos collections sont désormais chargées vers Mobile On-Demand.
 
 ## Suppression d’une collection {#deleting-a-collection}
@@ -113,7 +113,7 @@ Cette opération supprime la collection sélectionnée de Mobile On-Demand, et �
 Workflow général de suppression d’une collection :
 
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez l’article à supprimer dans le **Gestion des collections** mosaïque.
+1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les collections**.
 1. Assurez-vous qu’il est sélectionné dans la liste et sélectionnez d’autres options à supprimer.
 1. Cliquez sur **Supprimer** dans la barre d’actions.
 1. Vérifiez si vous souhaitez supprimer de AEM et de Mobile On-Demand.

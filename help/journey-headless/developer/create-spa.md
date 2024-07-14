@@ -1,6 +1,6 @@
 ---
-title: Facultatif - Comment créer des applications d’une seule page (SPA) avec Adobe Experience Manager
-description: Dans cette suite facultative du Parcours de développement Adobe Experience Manager (AEM) sans interface utilisateur, vous découvrez comment AEM peut combiner une diffusion sans interface avec des fonctionnalités CMS en pile et comment créer des données modifiables à l’aide de la structure de l’éditeur d’.
+title: 'Facultatif : comment créer des applications monopages (SPA) avec Adobe Experience Manager (AEM)'
+description: Dans cette suite facultative du parcours de développement découplé Adobe Experience Manager (AEM), découvrez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du framework de l’éditeur de SPA d’AEM.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -8,13 +8,13 @@ role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1257'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Comment créer des applications monopages avec AEM {#create-spa}
+# Création d’applications monopages avec AEM {#create-spa}
 
-Dans cette suite facultative de la [AEM Parcours de développement sans affichage,](overview.md) vous découvrez comment Adobe Experience Manager (AEM) peut combiner une diffusion sans interface avec les fonctionnalités CMS en pile complète traditionnelles et comment créer des SPA modifiables à l’aide de la structure d’éditeur d’ et intégrer des  externes, en activant les fonctionnalités d’édition selon les besoins.
+Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), découvrez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du framework de l’éditeur de SPA d’AEM et comment intégrer des SPA externes afin d’utiliser les fonctionnalités d’édition, le cas échéant.
 
 ## Un peu d’histoire...  {#story-so-far}
 
@@ -27,11 +27,11 @@ Dans cette suite facultative de la [AEM Parcours de développement sans affichag
 * Comment récupérer et mettre à jour du contenu découplé dans AEM
 * La mise en ligne d’un projet découplé AEM
 
-Vous avez donc soit mis en ligne avec votre premier projet AEM sans tête, soit vous avez les connaissances pour le faire. Félicitations !
+Désormais, soit vous avez mis en ligne votre premier projet découplé AEM, soit vous disposez de toutes les connaissances nécessaires pour le faire. Félicitations !
 
-Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la rubrique [Prise en main](getting-started.md#integration-levels)En outre, il y a eu une brève discussion sur la façon dont AEM non seulement prend en charge la livraison sans interface et les modèles traditionnels de pile complète, mais peut également prendre en charge les modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
+Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la section [Commencer](getting-started.md#integration-levels), nous avons brièvement expliqué qu’AEM prend non seulement en charge la diffusion découplée et les modèles full stack traditionnels, mais peut également prendre en charge des modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
 
-Cet article s’appuie sur vos connaissances du découplage AEM en explorant en profondeur la manière dont vous pouvez créer vos propres applications monopages (SPA) qui sont modifiables dans Adobe. Ainsi, vous pouvez créer du contenu et le diffuser intégralement vers un SPA, mais ce SPA reste modifiable dans l’.
+Cet article s’appuie sur vos connaissances du découplage AEM en explorant en profondeur la manière dont vous pouvez créer vos propres applications monopages (SPA) qui sont modifiables dans Adobe. Vous pouvez ainsi créer du contenu et le diffuser de manière découplée vers une SPA, mais cette SPA reste modifiable dans AEM.
 
 ## Objectif {#objective}
 
@@ -40,7 +40,7 @@ Ce document vous aide à comprendre comment les applications monopages sont dév
 * comprendre la fonction de base de l’éditeur de SPA ;
 * connaître les exigences relatives à la création d’une SPA entièrement modifiable pour AEM ;
 * comprendre comment les SPA externes peuvent être intégrées à AEM ;
-* Comprenez comment le rendu côté serveur doit ou ne doit pas être implémenté.
+* comprendre comment le rendu côté serveur doit ou ne doit pas être implémenté.
 
 ## Exigences et conditions préalables {#requirements-prerequisites}
 
@@ -50,7 +50,7 @@ Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions son
 
 * Expérience de développement de création de SPA avec des frameworks React ou Angular
 * Compétences AEM de base pour la création de fragments de contenu et l’utilisation de l’éditeur
-* Veillez à consulter le document [En tête et sans tête en AEM](/help/sites-developing/headful-headless.md) pour comprendre les différents niveaux d’intégration SPA possibles.
+* Consultez le document [Couplage et découplage dans AEM](/help/sites-developing/headful-headless.md) afin de comprendre les différents niveaux d’intégration de SPA possibles.
 
 ### Outils {#tools}
 
@@ -69,13 +69,13 @@ L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front
 
 ## Pourquoi une SPA ?  {#why-spa}
 
-En étant plus rapide, fluide et ressemblant davantage à une application native, une SPA devient une expérience attrayante non seulement pour le visiteur de la page web, mais aussi pour les marketeurs et les développeurs en raison de la nature du fonctionnement de SPA.
+En étant plus rapide, fluide et en ressemblant davantage à une application native, une SPA offre une expérience très attrayante, non seulement pour les personnes visitant la page web, mais aussi pour les personnes spécialisées dans le marketing et les développeurs et développeuses, en raison de la nature de son fonctionnement.
 
 Pour obtenir une description complète des SPA et des raisons de leur utilisation, reportez-vous à la section [Ressources supplémentaires](#additional-resources) pour obtenir des liens vers une documentation plus détaillée.
 
 ## Comment AEM gère les SPA
 
-Le développement d’applications monopages sur AEM suppose que l’équipe de développement front-end respecte les bonnes pratiques standard lors de la création d’une application monopage. En tant que développeur front-end, si vous suivez ces bonnes pratiques générales et quelques principes spécifiques à AEM, votre SPA sera fonctionnel avec l’AEM et ses fonctionnalités de création de contenu.
+Le développement d’applications monopages sur AEM suppose que l’équipe de développement front-end respecte les bonnes pratiques standard lors de la création d’une application monopage. Si le développeur ou la développeuse front-end respecte ces bonnes pratiques générales, ainsi que certains principes spécifiques à AEM, votre SPA sera fonctionnelle avec AEM et ses fonctionnalités de création de contenu.
 
 * **Portabilité** : comme pour tout composant, les composants de SPA créés doivent être aussi portables que possible. La SPA doit être créée avec des composants portables et réutilisables.
 * **AEM détermine la structure du site** : la personne chargée du développement front-end crée des composants et contrôle leur structure interne, mais elle dépend d’AEM pour définir la structure de contenu du site.
@@ -96,7 +96,7 @@ Pour une description complète de la façon dont AEM gère l’éditeur de SPA, 
 
 ## Hébergement des SPA existantes {#existing-spas}
 
-Si vous disposez d’une SPA existante, AEM prend en charge son intégration afin qu’elle soit visible par les auteurs et les autrices de contenu dans l’éditeur AEM. Cela peut s’avérer utile pour afficher le contenu qu’ils créent via des fragments de contenu dans le contexte de l’application finale où il sera utilisé.
+Si vous disposez d’une SPA existante, AEM prend en charge son intégration afin qu’elle soit visible par les auteurs et les autrices de contenu dans l’éditeur AEM. Cette capacité peut se révéler très utile pour afficher le contenu créé à l’aide de fragments de contenu dans le contexte de l’application finale où il sera utilisé.
 
 En outre, avec seulement quelques petites modifications, vous pouvez activer certaines fonctionnalités d’édition pour les SPA externes dans l’éditeur AEM.
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Utilisation des révisions et du résumé des révisions (affichage) {#using-reviews-and-reviews-summary-display}
 
-La variable `Reviews` est un composant composite de [Commentaires](comments.md) et [Évaluation](rating.md) composants prêts à l’emploi.
+Le composant `Reviews` est un composite des composants [Comments](comments.md) et [Rating](rating.md) prêts à l’emploi.
 
-La variable `Reviews Summary (Display)` fournit un résumé d’une instance active ou fermée d’une `Reviews` à afficher ailleurs sur le site.
+Le composant `Reviews Summary (Display)` fournit un résumé d’une instance active ou fermée d’un composant `Reviews` à afficher ailleurs sur le site.
 
 >[!NOTE]
 >
@@ -28,25 +28,25 @@ La variable `Reviews Summary (Display)` fournit un résumé d’une instance act
 
 ## Ajout d’une révision à une page {#adding-a-review-to-a-page}
 
-Pour ajouter une `Reviews` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / Reviews` et faites-le glisser sur la page, par exemple à un emplacement relatif à la fonction à réviser par les utilisateurs.
+Pour ajouter un composant `Reviews` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / Reviews` et le faire glisser sur une page, par exemple une position relative à la fonction à réviser pour les utilisateurs.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](reviews-basics.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Reviews` s’affiche.
+Lorsque les [bibliothèques côté client demandées](reviews-basics.md#essentials-for-client-side) sont incluses, voici comment le composant `Reviews` apparaît.
 
 ![create-review](assets/create-review.png)
 
 ## Configuration des révisions {#configuring-reviews}
 
-Sélectionnez le `Reviews` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Reviews` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Sous , **[!UICONTROL Évaluations autorisées]** , indiquez la liste complète des évaluations à afficher aux membres. La première note doit être une note globale/générale, car c’est la note qui fournit la note moyenne pour la note `Review Summary (Display)` composant. Les deux évaluations suivantes dans la configuration par défaut doivent recevoir un titre différent, autre que &quot;Sous-évaluation 1&quot; ou &quot;Sous-évaluation 2&quot;.
+Sous l’onglet **[!UICONTROL Évaluations autorisées]** , spécifiez la liste complète des évaluations à présenter aux membres. La première évaluation doit être une évaluation globale/générale, car c’est la notation qui fournit la notation moyenne pour le composant `Review Summary (Display)`. Les deux évaluations suivantes dans la configuration par défaut doivent recevoir un titre différent, autre que &quot;Sous-évaluation 1&quot; ou &quot;Sous-évaluation 2&quot;.
 
 ![allowed-rating](assets/configure-review1.png)
 
-* **[!UICONTROL Évaluations autorisées]**
+* **[!UICONTROL Classement autorisé]**
 
   Liste d’évaluations à partir desquelles un membre peut choisir.
 
@@ -54,11 +54,11 @@ Sous , **[!UICONTROL Évaluations autorisées]** , indiquez la liste complète d
 
   Cliquez sur **[!UICONTROL Ajouter un élément]** pour ajouter un autre choix d’évaluation.
 
-Sous , **[!UICONTROL Évaluations requises]** , saisissez à nouveau les éléments de la liste **[!UICONTROL Évaluations autorisées]** qui sont requis pour l’évaluation. Si un élément n’est spécifié que dans l’onglet Évaluations autorisées , il peut ne pas être marqué lorsqu’il est envoyé par le membre.
+Sous l’onglet **[!UICONTROL Évaluations requises]**, saisissez à nouveau les éléments de la liste **[!UICONTROL Évaluations autorisées]** qui sont requis pour l’évaluation. Si un élément n’est spécifié que dans l’onglet Évaluations autorisées , il peut ne pas être marqué lorsqu’il est envoyé par le membre.
 
 Sur le site web, les évaluations requises sont marquées d’un astérisque. Si un élément est requis et laissé sans marque, un message s’affiche pour le membre et l’envoi est refusé jusqu’à ce que toutes les évaluations requises soient marquées.
 
-![évaluation requise](assets/configure-review2.png)
+![required-rating](assets/configure-review2.png)
 
 * **[!UICONTROL Évaluations requises]**
 
@@ -70,11 +70,11 @@ Sur le site web, les évaluations requises sont marquées d’un astérisque. Si
 
 >[!NOTE]
 >
->Si un élément est saisi sur la variable **[!UICONTROL Évaluations requises]** qui n’est pas spécifié dans la variable **[!UICONTROL Évaluations autorisées]** , il n’est pas inclus dans les éléments à évaluer.
+>Si un élément est saisi dans l’onglet **[!UICONTROL Évaluations requises]** qui n’est pas spécifié dans l’onglet **[!UICONTROL Évaluations autorisées]**, il n’est pas inclus dans les éléments à évaluer.
 
-Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont gérées.
+Sous l’onglet **[!UICONTROL Révisions]**, indiquez comment les révisions sont traitées.
 
-![critiques](assets/configure-review3.png)
+![révisions](assets/configure-review3.png)
 
 * **[!UICONTROL Autoriser les réponses]**
 
@@ -88,17 +88,17 @@ Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont géré
 
   Si cette case est cochée, les pièces jointes peuvent être chargées pour la révision. La case par défaut est décochée.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
-  Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est de 10 Mo.
+  Paramètre à définir uniquement si l’option **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est de 10 Mo.
 
-* **[!UICONTROL Longueur max. du message]**
+* **[!UICONTROL Longueur de message max.]**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
 * **[!UICONTROL Types de fichiers autorisés]**
 
-  Pertinent uniquement si **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+  Paramètre à définir uniquement si l’option **[!UICONTROL Autoriser les chargements de fichiers]** est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
@@ -108,15 +108,15 @@ Sous , **[!UICONTROL Révisions]** , indiquez comment les révisions sont géré
 
   Si cette case est cochée, la fonction de vote d’une rubrique est ajoutée. La case par défaut est décochée.
 
-Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les révisions publiées sont gérées. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
+Sous l’onglet **[!UICONTROL Modération d’utilisateur]**, indiquez comment les révisions publiées sont gérées. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
 ![user-modération](assets/configure-review4.png)
 
-* **[!UICONTROL Prémodération]**
+* **[!UICONTROL Pré-modération]**
 
   Si cette case est cochée, les révisions doivent être approuvées avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
-* **[!UICONTROL Supprimer des révisions]**
+* **[!UICONTROL Supprimer les révisions]**
 
   Si cette case est cochée, le membre qui a publié la révision peut la supprimer. La case par défaut est décochée.
 
@@ -128,15 +128,15 @@ Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les révi
 
   Si cette case est cochée, les modérateurs peuvent fermer et rouvrir les révisions. La case par défaut est décochée.
 
-* **[!UICONTROL Marquer les révisions]**
+* **[!UICONTROL Flag Reviews]**
 
   Si cette case est cochée, autorisez les membres à signaler les révisions comme inappropriées. La case par défaut est décochée.
 
-* **[!UICONTROL Marquer la liste de motifs]**
+* **[!UICONTROL Liste des motifs de l’indicateur]**
 
   Si cette case est cochée, les membres ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué une révision comme étant inappropriée. La case par défaut est décochée.
 
-* **[!UICONTROL Motif de l’indicateur personnalisé]**
+* **[!UICONTROL Motif d’indicateur personnalisé]**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler une révision comme inappropriée. La case par défaut est décochée.
 
@@ -146,19 +146,19 @@ Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les révi
 
 * **[!UICONTROL Limite de marquage]**
 
-  Saisissez le nombre de fois qu’une révision doit être marquée avant qu’elle ne soit masquée dans la vue publique. Ce nombre doit être supérieur ou égal à **[!UICONTROL Seuil de modération]**. La valeur par défaut est 5.
+  Saisissez le nombre de fois qu’une révision doit être marquée avant qu’elle ne soit masquée dans la vue publique. Ce nombre doit être supérieur ou égal au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
 
 ### Ajout d’un résumé des révisions (affichage) à une page {#adding-a-review-summary-display-to-a-page}
 
-Pour ajouter une `Reviews Summary (Display)` à une page en mode création, recherchez le composant.
+Pour ajouter un composant `Reviews Summary (Display)` à une page en mode création, localisez le composant
 
 * `Communities / Reviews Summary (Display)`
 
 Faites-le glisser sur la page où s’affiche un résumé d’une révision active ou fermée.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](reviews-basics.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Reviews Summary (Display)`s’affiche.
+Lorsque les [bibliothèques côté client demandées](reviews-basics.md#essentials-for-client-side) sont incluses, voici comment le composant `Reviews Summary (Display)` apparaît.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -168,17 +168,17 @@ Lorsque la variable [bibliothèques côté client requises](reviews-basics.md#es
 
 ### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
 
-Sélectionnez le `Reviews Summary (Display)` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Reviews Summary (Display)` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
-Sous , **[!UICONTROL Résumé de la révision]** tab
+Sous l’onglet **[!UICONTROL Résumé de la révision]**
 
 ![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-  Accédez à l’instance placée du `reviews` afin que vous puissiez, par exemple, résumer, si vous l’ajoutez à la page Web de la fonction [site Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
+  Saisissez ou accédez à l’instance placée du composant `reviews` afin de pouvoir résumer, par exemple, si vous l’ajoutez à la page web du [site Engage de Geometrixx,](getting-started.md), le chemin d’accès serait :
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -192,27 +192,27 @@ Le composant Révisions utilise le système de commentaires.
 
 En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire à l’aide de la valeur par défaut, mais une instance qui a été personnalisée (étendue) par les développeurs.
 
-Lorsque les types de ressources personnalisés sont connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
+Lorsque les types de ressources personnalisés sont connus, saisissez [Mode de conception](../../help/sites-authoring/default-components-designmode.md) et double-cliquez sur le composant `Comments` placé pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource personnalisé pour les nouvelles instances de la variable `Comments or Voting` composants :
+Sous l’onglet **[!UICONTROL Resource Types]** , spécifiez le type de ressource personnalisé pour les nouvelles instances des composants `Comments or Voting` :
 
-![commentaires-votes](assets/configure-review7.png)
+![comments-voter](assets/configure-review7.png)
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-  Accédez au resourceType d’une extension `comment`composant (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
+  Accédez au resourceType d&#39;un composant `comment`étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
 
   Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-  Accédez au resourceType d’une extension `voting`dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
+  Accédez au resourceType d&#39;un composant `voting` étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
 
   Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un vote.
 
-* **[!UICONTROL Type de ressource système de commentaires]**
+* **[!UICONTROL Type de ressource système de commentaire]**
 
-  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [`{{include}}` assistance](handlebars-helpers.md#include).
+  Accédez au resourceType d’un composant `comments`étendu (système de commentaires) dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). Pour en savoir plus, consultez la section [`{{include}}` Helper](handlebars-helpers.md#include).
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
@@ -224,7 +224,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 Lorsque le visiteur du site est connecté, selon la configuration, il peut :
 
-* Publier une nouvelle révision
+* Post : nouvelle révision
 * Modifier sa propre révision
 * Supprimer sa propre révision
 * Marquer les commentaires de révision des autres
@@ -237,8 +237,8 @@ Les visiteurs qui ne sont pas connectés ne peuvent lire que les révisions publ
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur la révision](reviews-basics.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la révision](reviews-basics.md) pour les développeurs.
 
-Pour la modération des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
+Pour la modération des commentaires publiés, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 Pour la traduction des commentaires publiés, voir [Traduction de contenu généré par l’utilisateur](translate-ugc.md).

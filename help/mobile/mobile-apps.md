@@ -30,4 +30,4 @@ AEM Mobile propose plusieurs méthodes pour créer des applications. Les différ
 
 >[!NOTE]
 >
->Si vous utilisez Adobe Experience Manager pour la première fois, vous pouvez le parcourir [Prise en main d’AEM](/help/sites-deploying/deploy.md).
+>Si vous découvrez Adobe Experience Manager, vous pouvez parcourir la section [Prise en main d’AEM](/help/sites-deploying/deploy.md).

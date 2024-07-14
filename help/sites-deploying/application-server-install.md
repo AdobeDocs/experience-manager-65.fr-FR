@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -234,19 +234,19 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
      </multipart-config>
      ```
 
-* **Déploiement de l’application Web AEM**
+* **Déploiement de l’application web AEM**
 
-   * Téléchargez AEM fichier war.
-   * Effectuez vos configurations dans web.xml si nécessaire (voir ci-dessus dans la Description générale).
+   * Téléchargez le fichier war AEM.
+   * Au besoin, effectuez vos configurations dans le fichier web.xml (voir ci-dessus, dans Description générale).
 
-      * Décompressez le fichier WEB-INF/web.xml .
-      * Définissez le paramètre sling.run.modes sur publish.
-      * Décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins.
+      * Décompressez le fichier WEB-INF/web.xml.
+      * Définissez le paramètre sling.run.modes sur « publication ».
+      * Supprimez les marques de commentaire du paramètre sling.home initial et définissez ce chemin d’accès en fonction de vos besoins.
       * Recompressez le fichier web.xml.
 
-   * Renommez AEM fichier war en ROOT.war si vous souhaitez le déployer en tant qu’application web racine. Renommez-le aemauthor.war si vous souhaitez que aemauthor soit la racine du contexte.
+   * Renommez le fichier war AEM en ROOT.war si vous souhaitez le déployer en tant qu’application web racine. Renommez-le aemauthor.war si vous souhaitez que aemauthor soit la racine du contexte.
    * Copiez-le dans le dossier webapps de Tomcat.
-   * Patientez jusqu’à ce que AEM soit installé.
+   * Patientez jusqu’à ce qu’AEM soit installé.
 
 ## Résolution des problèmes {#troubleshooting}
 

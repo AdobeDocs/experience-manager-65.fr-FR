@@ -30,7 +30,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la longueur
 
 -->
 
-Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste de [API facturables pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste des [API facturables pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## API de Document Services facturables {#billable-document-services-apis}
 
@@ -55,7 +55,7 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Convertit le fichier de HTML en Adobe PDF. </td>
+   <td>Convertit le fichier HTML en Adobe PDF. </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
@@ -75,12 +75,12 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>Convertit le fichier de HTML en PDF.</td>
+   <td>Convertit le fichier HTML en PDF.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Convertit le fichier de HTML en PDF.</td>
+   <td>Convertit le fichier HTML en PDF.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
@@ -312,8 +312,8 @@ L’utilisation de l’API d’appel est comptabilisée comme une transaction lo
 
 >[!NOTE]
 >
->* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Donc, la `invoke API` peuvent être comptabilisées comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
->* Un document PDF unique produit à l’aide du service d’assemblage, tel que `invoke` et `invokeDDX`, peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend des <!--DDX--> code.
+>* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, le `invoke API` peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
+>* Un document de PDF unique produit à l’aide du service d’assemblage tel que `invoke` et `invokeDDX` peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code <!--DDX--> fourni.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

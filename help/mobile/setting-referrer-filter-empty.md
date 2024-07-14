@@ -1,6 +1,6 @@
 ---
 title: Définition du filtre de référent sur Autoriser vide
-description: En savoir plus sur le filtre de référent. Pour permettre à Adobe Experience Manager (AEM) Mobile Application Viewer d’afficher des applications sur votre instance d’auteur, vous devez définir le filtre de référent de HTML sur "autoriser vide".
+description: En savoir plus sur le filtre de référent. Pour permettre à Adobe Experience Manager (AEM) Mobile Application Viewer d’afficher des applications sur votre instance d’auteur, vous devez définir le filtre de référent d’HTML sur "autoriser vide".
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -22,7 +22,7 @@ ht-degree: 12%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Pour permettre à Adobe Experience Manager (AEM) Mobile Application Viewer d’afficher des applications sur votre instance d’auteur, vous devez définir le filtre de référent de HTML sur &quot;autoriser vide&quot;.
+Pour permettre à Adobe Experience Manager (AEM) Mobile Application Viewer d’afficher des applications sur votre instance d’auteur, vous devez définir le filtre de référent d’HTML sur &quot;autoriser vide&quot;.
 
 Si vous n’avez pas l’intention d’utiliser la visionneuse d’applications pour passer en revue les applications dans les états de développement et d’évaluation, il n’est pas nécessaire de modifier le paramètre par défaut du filtre de référent.
 

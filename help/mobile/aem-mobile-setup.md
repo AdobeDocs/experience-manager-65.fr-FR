@@ -34,15 +34,15 @@ Suivez ces étapes pour configurer AEM Mobile et permettre ainsi à l’utilisat
 
 Pour commencer à configurer AEM Mobile, vous devez :
 
-* **Demande d’une clé API**: pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé d’API, exécutez la [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire complété au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Demander une clé API** : pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé API, remplissez le [formulaire de PDF](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire complété au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Génération de l’ID de périphérique et du jeton de périphérique**: une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à `https://aex.aemmobile.adobe.com` et procédez comme suit :
+* **Générer l’identifiant de l’appareil et le jeton de l’appareil** : une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à `https://aex.aemmobile.adobe.com` et procédez comme suit :
 
    * Fournir la clé API
    * Connectez-vous à un projet Adobe ID que vous avez ajouté à un projet AEM Mobile avec les autorisations suivantes (voir les étapes ci-dessous pour créer un projet).
 
       * Administration > Gérer les projets et les utilisateurs
-      * Contenu > Ajouter et modifier du contenu, supprimer du contenu, afficher du contenu, publier du contenu
+      * Contenu > Ajouter et modifier du contenu, supprimer du contenu, afficher du contenu, Publish
 
 Si toutes les conditions sont remplies, un identifiant de périphérique et un jeton de périphérique sont générés.
 
@@ -54,17 +54,17 @@ Si toutes les conditions sont remplies, un identifiant de périphérique et un j
 
 Lorsque vous créez un projet, vous spécifiez des paramètres pour toute plateforme que vous ciblez : iOS, Android™, Windows et Visionneuse web pour ordinateur de bureau. La plupart des paramètres du projet que vous spécifiez affectent le comportement de l’application.
 
-Pour créer un projet, vous devez vous connecter au portail des services à la demande à l’aide d’une Adobe ID dotée d’un rôle d’administrateur de Principal. La modification d’un projet nécessite un rôle d’administrateur de Principal ou un rôle d’utilisateur avec un **Gestion des projets et des utilisateurs** autorisation.
+Pour créer un projet, vous devez vous connecter au portail des services à la demande à l’aide d’une Adobe ID dotée d’un rôle d’administrateur de Principal. La modification d’un projet nécessite un rôle d’administrateur de Principal ou un rôle d’utilisateur avec une autorisation **Gérer les projets et les utilisateurs**.
 
 >[!NOTE]
 >
->Pour en savoir plus sur la création de projets dans AEM Mobile, cliquez sur [here](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html).
+>Pour en savoir plus sur la création de projets dans AEM Mobile, cliquez [ici](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html).
 
 ## Configuration d’un connecteur AEM Mobile {#configuring-an-aem-mobile-connector}
 
 AEM configuration implique les étapes suivantes pour la configuration du connecteur. Une fois la configuration du connecteur AEM Mobile terminée, l’utilisateur peut configurer des groupes d’utilisateurs et des autorisations.
 
-Le connecteur AEM Mobile On-Demand est utilisé pour lier le contenu géré AEM Mobile aux services On-Demand d’Adobe Experience Manager Mobile. Cela permet aux auteurs de contenu de créer et de gérer du contenu pour les applications mobiles à l’aide d’outils AEM, tout en utilisant les services On-Demand d’AEM Mobile pour une distribution facile du contenu mobile.
+Le connecteur AEM Mobile On-Demand est utilisé pour lier le contenu géré AEM Mobile aux services On-Demand d’Adobe Experience Manager Mobile. Les auteurs de contenu peuvent ainsi créer et gérer du contenu pour les applications mobiles à l’aide d’outils d’AEM, tout en utilisant les services On-Demand d’AEM Mobile pour une distribution facile du contenu mobile.
 
 >[!NOTE]
 >
@@ -77,16 +77,16 @@ Suivez les étapes de configuration pour que les intégrations AEM Mobile foncti
 1. Accès à la configuration du service OSGI
 
    1. AEM > Outils > Opérations > Console web
-   1. Faites défiler ou recherchez ***Client Experience Manager Mobile On Demand Services (était le client Adobe Digital Publishing Solution)***
+   1. Recherchez ***Experience Manager Mobile On Demand Services Client (anciennement Adobe Digital Publishing Solution Client)***
 
-1. Modifier ***Client des services mobiles On-Demand Experience Manager***
+1. Modifier le ***client Experience Manager Mobile On Demand Services***
 
    1. **(obligatoire)** Renseignez les champs requis :
 
       1. ID client.
       1. Secret du client.
 
-   1. **(Facultatif)** Modifiez les valeurs existantes.
+   1. **(Facultatif)** Modifier des valeurs existantes.
 
 1. Enregistrez les modifications.
 1. Voici un exemple de configuration :
@@ -99,14 +99,14 @@ Suivez les étapes de configuration pour que les intégrations AEM Mobile foncti
 
    1. AEM > Outils > Déploiement > [Cloud Services](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Faites défiler ou recherchez ***Adobe Experience Manager Mobile On-demand Services***
 
-1. Sélectionner ***Configurer maintenant*** ou ***Afficher les configurations*** et sélectionnez l’icône ajouter une configuration .
+1. Sélectionnez ***Configurer maintenant*** ou ***Afficher les configurations*** et sélectionnez l’icône d’ajout de configuration.
 
 1. Création d’une configuration
 
    1. Saisissez un titre et un nom.
    1. Entrer dans l’ID de périphérique
    1. Saisie du jeton de périphérique
-   1. Sélectionner ***Test de la configuration du périphérique*** pour valider les valeurs saisies
+   1. Sélectionnez ***Test de la configuration du périphérique*** afin de valider les valeurs entrées.
    1. Sélectionnez OK
 
 ## Ajout de rôles utilisateur AEM Mobile et attribution d’autorisations {#adding-aem-mobile-user-roles-and-assigning-permissions}
@@ -119,7 +119,7 @@ Dans le développement d’applications AEM Mobile, trois rôles différents exi
 * Développeur ou développeuse
 * Création
 
-Pour plus d’informations sur la création de rôles avec différentes autorisations, telles que pour la création d’applications ou la création et la publication de contenu, cliquez sur [Création de rôles utilisateur et octroi d’accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l’aide d’AEM Mobile.
+Pour plus d’informations sur la création de rôles avec différentes autorisations, comme pour la création d’applications ou pour la création et la publication de contenu, cliquez sur [Création de rôles utilisateur et octroi de l’accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l’aide d’AEM Mobile.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Pour plus d’informations sur la création de rôles avec différentes autorisa
 >
 >Voir [Tableau de bord AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Lorsque vous avez terminé de créer des rôles avec différentes autorisations, comme pour la création d’applications ou pour la création et la publication de contenu, reportez-vous à la section [**Configuration des utilisateurs et des groupes d’utilisateurs**](/help/mobile/aem-mobile-configure-users.md). Cela peut vous aider à configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
+Lorsque vous avez terminé de créer des rôles avec différentes autorisations, comme pour la création d’applications ou pour la création et la publication de contenu, voir [**Configuration de vos groupes d’utilisateurs et d’utilisateurs**](/help/mobile/aem-mobile-configure-users.md). Cela peut vous aider à configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
 
 ### Ressources supplémentaires {#additional-resources}
 

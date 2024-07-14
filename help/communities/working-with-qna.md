@@ -34,21 +34,21 @@ La fonction Forum Q&amp;R (questions et réponses) offre aux membres de la commu
 La documentation décrit :
 
 * Ajout de la fonction Forum Q&amp;R à un site AEM.
-* Paramètres de configuration de la variable `QnA`composant.
+* Paramètres de configuration du composant `QnA`.
 
 ## Ajout d’un forum de questions-réponses à une page {#adding-a-q-a-forum-to-a-page}
 
-Pour ajouter une `QnA` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / QnA` et faites-le glisser sur une page où le forum Q&amp;R doit apparaître.
+Pour ajouter un composant `QnA` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / QnA` et faites-le glisser sur une page où le forum Q&amp;R doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/qna-essentials.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `QnA` Le composant apparaît :
+Lorsque les [bibliothèques côté client demandées](/help/communities/qna-essentials.md#essentials-for-client-side) sont incluses, voici comment le composant `QnA` apparaît :
 
 ![qna-component](assets/qna-component.png)
 
 ### Configuration de Q&amp;R {#configuring-qna}
 
-Sélectionnez le `QnA` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `QnA` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -56,13 +56,13 @@ Sélectionnez le `QnA` afin que vous puissiez accéder au `Configure` qui ouvre 
 
 #### Onglet Paramètres {#settings-tab}
 
-Sous , **Paramètres** , définissez les paramètres des sujets (questions) et réponses (réponses) :
+Sous l’onglet **Paramètres** , spécifiez les paramètres des sujets (questions) et des réponses (réponses) :
 
 * **Autoriser la miniature des pièces jointes**
 
   Si cette case est cochée, une miniature de l’image jointe est créée.
 
-* **Taille max. de miniature des pièces jointes**
+* **Taille max. de la miniature de la pièce jointe**
 
   Taille maximale (en pixels) de la miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
@@ -70,7 +70,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Taille minimale (en octets) de l’image pour générer une miniature pour les images intégrées. La valeur par défaut est de 100000 octets (100 Ko).
 
-* **Taille maximale des miniatures**
+* **Taille max. de miniature**
 
   Taille maximale (en pixels) de la miniature de l’image intégrée. La valeur par défaut est 800 x 800.
 
@@ -92,31 +92,31 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
 * **Autoriser le balisage**
 
-  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs publications (voir **Champ de balise** ). La valeur par défaut est désélectionnée.
+  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs publications (voir l’onglet **Champ de balise** ). La valeur par défaut est désélectionnée.
 
 * **Autoriser les chargements de fichiers**
 
   Si cette option est cochée, des pièces jointes peuvent être ajoutées à la question ou au commentaire. La valeur par défaut est désélectionnée.
 
-* **Autoriser l’exécution**
+* **Autoriser l’abonnement**
 
-  Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La valeur par défaut est désélectionnée.
+  Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La valeur par défaut est désélectionnée.
 
-* **Permettre la mise en page**
+* **Autoriser la mise en classe**
 
   Si cette case est cochée, les rubriques des forums peuvent être collées en haut de la liste des rubriques. La valeur par défaut est désélectionnée.
 
 * **Autoriser les abonnements aux emails**
 
-  Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et [email configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
+  Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). Nécessite l&#39;activation du suivi et la [configuration de l&#39;email](/help/communities/email.md). La valeur par défaut est désélectionnée.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+  Pertinent uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichiers autorisés**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. La valeur par défaut n’est pas spécifiée. **all** les types de fichiers sont autorisés.
+  Pertinent uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que les types de fichiers **tous** soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -130,7 +130,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   Si cette option est cochée, la fonction de vote est ajoutée à une question. La valeur par défaut est désélectionnée.
 
-* **Autorisation des utilisateurs à supprimer des commentaires et des sujets**
+* **Autoriser les utilisateurs à supprimer des commentaires et des sujets**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et questions qu’ils ont publiés. La valeur par défaut est désélectionnée.
 
@@ -142,22 +142,22 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
   S’il est activé, bloque le contenu généré par l’utilisateur lors de la modification en mode création.
 
-* **Déplacer la réponse sélectionnée vers le haut**
+* **Déplacer La Réponse Sélectionnée Vers Le Haut**
 
   Si cette case est cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
 * **Badges d’affichage**
 
-  Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
+  Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. La valeur par défaut est désélectionnée.
 
-* **Autoriser le contenu proposé**
+* **Autoriser le contenu en vedette**
 
-  Si cette option est cochée, l’idée est identifiable comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est désélectionnée.
+  Si cette case est cochée, l’idée est identifiable en tant que [contenu présenté](/help/communities/featured.md). La valeur par défaut est désélectionnée.
 
 * **Activer la mention**
 
   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications sur leurs mentions.
 
-* **Nombre max. de mentions**
+* **Nombre maximal de mentions**
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
@@ -167,7 +167,7 @@ Sous , **Paramètres** , définissez les paramètres des sujets (questions) et r
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **Modération d’utilisateur** , indiquez comment gérer les sujets publiés (questions) et les réponses (contenu généré par l’utilisateur). Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération d’utilisateur** , indiquez comment gérer les sujets publiés (questions) et les réponses (contenu généré par l’utilisateur). Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
 * **Refuser les réponses**
 
@@ -177,18 +177,18 @@ Sous , **Modération d’utilisateur** , indiquez comment gérer les sujets publ
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une question (rubrique) pour apporter d’autres modifications et réponses, puis rouvrir une question. La valeur par défaut est désélectionnée.
 
-* **Déplacer les rubriques**
+* **Déplacer des rubriques**
 Si cette case est cochée, les modérateurs côté publication peuvent déplacer les questions. La valeur par défaut est désélectionnée.
 
 * **Marquer les publications**
 
   Si cette option est cochée, les membres ont le droit de signaler les questions ou réponses des autres comme étant inappropriées. La valeur par défaut est désélectionnée.
 
-* **Marquer la liste de motifs**
+* **Liste des motifs de l’indicateur**
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué une question ou une réponse comme étant inappropriée. La valeur par défaut est désélectionnée.
 
-* **Motif de l’indicateur personnalisé**
+* **Motif d’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler une question ou une réponse comme inappropriée. La valeur par défaut est désélectionnée.
 
@@ -202,11 +202,11 @@ Si cette case est cochée, les modérateurs côté publication peuvent déplacer
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Sous , **Champ de balise** , les balises qui peuvent être appliquées, si elles sont autorisées sous l’onglet **Paramètres** sont limités en fonction des espaces de noms sélectionnés.
+Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées, si elles sont autorisées sous l’onglet **Paramètres**, sont limitées en fonction des espaces de noms sélectionnés.
 
 * **Espaces de noms autorisés**
 
-  Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+  Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestion**
 
@@ -214,29 +214,29 @@ Sous , **Champ de balise** , les balises qui peuvent être appliquées, si elles
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
-* **Trier par**
+* **Trier Par**
 
   Cochez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
-* **Définir comme valeur par défaut**
+* **Défini comme valeur par défaut**
 
   Extrayez pour sélectionner l’une des options de tri cochées à afficher par défaut. La valeur par défaut est `Newest`.
 
-* **Sélection des options d’heure pour le tri Analytics**
+* **Sélectionner les options d’heure pour le tri Analytics**
 
-  Menu déroulant pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+  Déposez pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
 ### Identification des réponses {#identifying-answers}
 
-Une réponse peut être indiquée comme réponse correcte ou utile à l’aide de la variable `Select Answer` bouton . Une fois qu&#39;une question est marquée comme ayant reçu une réponse, une autre réponse ne peut pas être sélectionnée tant que la première question n&#39;a pas été désélectionnée à l&#39;aide de la variable `Unmark Chosen Answer` bouton .
+Une réponse peut être indiquée comme réponse correcte ou utile à l’aide du bouton `Select Answer`. Une fois qu&#39;une question est marquée comme ayant reçu une réponse, une autre réponse ne peut pas être sélectionnée tant que la première question n&#39;a pas été désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
 
-Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide de la variable `Unmark Chosen Answer` bouton .
+Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du bouton `Unmark Chosen Answer`.
 
-Une fois qu&#39;une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` s’affiche en regard de la rubrique de question sur la page Q&amp;R principale.
+Une fois qu’une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` s’affiche en regard du sujet de la question sur la page Q&amp;R principale.
 
 #### Modérateurs et administrateurs {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ Ils peuvent également identifier les réponses.
 
 Lorsque les visiteurs du site sont connectés, en fonction de la configuration, ils peuvent :
 
-* Posez une nouvelle question.
+* Post d’une nouvelle question.
 * Modifiez ou supprimez les questions qu’ils ont créées.
 * Marquez les questions ou réponses des autres membres.
 * Identifiez les réponses aux questions qu’ils ont créées.
@@ -259,8 +259,8 @@ Les visiteurs qui ne sont pas connectés peuvent uniquement lire les questions e
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur la qualité de vie](/help/communities/qna-essentials.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la qualité de service](/help/communities/qna-essentials.md) pour les développeurs.
 
 Pour la modération des sujets et des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour baliser des sujets et des commentaires publiés, voir [Balisage du contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser les rubriques et commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).

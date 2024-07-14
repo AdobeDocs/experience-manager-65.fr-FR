@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
 source-wordcount: '1603'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -125,9 +125,9 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 >Pour plus d’informations sur l’outil de synchronisation des utilisateurs et utilisatrices, consultez la [page de documentation](https://adobe-apiplatform.github.io/user-sync.py/fr/).
 >
 >
->L’outil de synchronisation des utilisateurs doit s’enregistrer en tant qu’UMAPI client d’Adobe I/O en suivant la procédure décrite [ici](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>L’outil de synchronisation des utilisateurs et utilisatrices doit s’enregistrer en tant qu’UMAPI client d’Adobe I/O en suivant la procédure décrite [ici](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->La documentation de la console Adobe Developer est disponible [here](https://developer.adobe.com/developer-console/docs/guides/).
+>La documentation relative à Adobe Developer Console est disponible [ici](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >Le fonctionnement de l’API [!DNL User Management] utilisée par l’outil de synchronisation des utilisateurs est abordé en détail [ici](https://adobe-apiplatform.github.io/umapi-documentation/en/).

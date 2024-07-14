@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # Utilisation des évaluations {#using-ratings}
 
-La variable `Rating` est utilisé de manière autonome ou avec d’autres fonctionnalités de Communities. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
+Le composant `Rating` est utilisé de manière autonome ou avec d’autres fonctionnalités de Communities. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
 
 ## Ajout d’une évaluation à une page {#adding-a-rating-to-a-page}
 
-Pour ajouter une `Rating` à une page en mode création, recherchez le composant. `Communities / Rating` et faites-le glisser sur la page, par exemple à une position relative à la fonction que les membres peuvent évaluer.
+Pour ajouter un composant `Rating` à une page en mode création, recherchez le composant `Communities / Rating` et faites-le glisser sur une page, par exemple une position relative à la fonction que les membres doivent évaluer.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](rating-basics.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Rating` s’affiche.
+Lorsque les [bibliothèques côté client demandées](rating-basics.md#essentials-for-client-side) sont incluses, voici comment le composant `Rating` apparaît.
 
-![note](assets/rating.png)
+![rating](assets/rating.png)
 
 ## Configuration de l’évaluation {#configuring-rating}
 
-Sélectionnez le `Rating` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Rating` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
-Sous , **[!UICONTROL Textes et libellés]** , vous indiquez l’identifiant interne de l’évaluation.
+Sous l’onglet **[!UICONTROL Textes et libellés]**, vous spécifiez l’identifiant interne de l’évaluation.
 
 ![tallyname](assets/tallyname.png)
 
 **[!UICONTROL Nom Tally]**
-(*Obligatoire*) Un nom simple pour la variable `Rating` qui identifie de manière unique cette instance. Doit être un nom de noeud valide pour le référentiel.
+(*Obligatoire*) Un nom simple pour `Rating` qui identifie de manière unique cette instance. Doit être un nom de noeud valide pour le référentiel.
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
@@ -55,4 +55,4 @@ La publication anonyme d’une évaluation n’est pas prise en charge. Les visi
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur la notation](rating-basics.md) pour les développeurs.
+Vous trouverez plus d’informations sur la page [Notions fondamentales sur la notation](rating-basics.md) pour les développeurs.

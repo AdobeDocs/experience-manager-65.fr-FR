@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) est
 
 Ils permettent à un auteur de réutiliser des parties d’une page (un fragment d’expérience), sans avoir à copier et coller le contenu.
 
-Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, pour les auteurs qui souhaitent utiliser AEM pour la création mais pas pour la diffusion de contenu au client. Un système ou un point de contact tiers peut ensuite utiliser cette expérience, puis la diffuser à l’utilisateur final.
+Ils prennent en charge des scénarios de gestion de contenu (CMS) découplés, pour les auteurs qui souhaitent utiliser AEM pour la création mais pas pour la diffusion de contenu au client. Un système/point de contact tiers peut utiliser cette expérience, puis la diffuser à l’utilisateur final ou à l’utilisatrice finale.
 
 >[!NOTE]
 >

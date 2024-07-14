@@ -26,25 +26,25 @@ La fonctionnalité Bibliothèque de fichiers fournit un emplacement où les visi
 Cette section de la documentation décrit :
 
 * Ajout de la fonction Bibliothèque de fichiers à un site AEM.
-* Paramètres de configuration de la variable `File Library` composant.
+* Paramètres de configuration du composant `File Library`.
 
 ### Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-Pour ajouter une `File Library` pour accéder à une page en mode création, recherchez le composant :
+Pour ajouter un composant `File Library` à une page en mode création, localisez le composant :
 
 * `Communities / File Library`
 
 Et faites-le glisser sur la page.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `File Library` Le composant apparaît :
+Lorsque les [bibliothèques côté client demandées](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est comme cela que le composant `File Library` apparaît :
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le `File Library` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `File Library` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -52,21 +52,21 @@ Sélectionnez le `File Library` afin que vous puissiez accéder au `Configure` q
 
 #### Onglet Commentaires {#comments-tab}
 
-Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
+Sous l’onglet **Comments** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
 
-* **Autorisation des commentaires sur les fichiers**
+* **Autoriser les commentaires sur les fichiers**
 
   Si cette option est cochée, les commentaires sur les fichiers chargés sont autorisés. La case par défaut est décochée.
 
 * **Commentaires par page**
 
-  Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. Par défaut : **10**.
+  Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. La valeur par défaut est **10**.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
   Cette valeur limite la taille du fichier téléchargé. La limite par défaut est 104857600 (10 Mo).
 
-* **Longueur max. du message**
+* **Longueur de message max.**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
@@ -78,7 +78,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. La case par défaut est décochée.
 
-* **Supprimer des commentaires**
+* **Supprimer les commentaires**
 
   Si cette case est cochée, les utilisateurs sont autorisés à supprimer leurs propres commentaires. La valeur par défaut est cochée.
 
@@ -98,15 +98,15 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
   Si cette case est cochée, la possibilité de voter pour un fichier est activée. La case par défaut est décochée.
 
-* **Autoriser l’exécution**
+* **Autoriser l’abonnement**
 
-  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notifié](/help/communities/notifications.md) de nouvelles publications. La case par défaut est décochée.
+  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La case par défaut est décochée.
 
 * **Activer la mention**
 
   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications sur leurs mentions.
 
-* **Nombre max. de mentions**
+* **Nombre maximal de mentions**
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
@@ -120,13 +120,13 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **Modération d’utilisateur** , configurez la modération des commentaires, si les commentaires sont autorisés :
+Sous l’onglet **Modération d’utilisateur** , configurez la modération des commentaires si les commentaires sont autorisés :
 
-* **Prémodération**
+* **Pré-modération**
 
   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La case par défaut est décochée.
 
-* **Supprimer des commentaires**
+* **Supprimer les commentaires**
 
   Si cette case est cochée, le visiteur qui a publié le commentaire peut le supprimer, si nécessaire. La valeur par défaut est cochée.
 
@@ -138,15 +138,15 @@ Sous , **Modération d’utilisateur** , configurez la modération des commentai
 
   Si cette case est cochée, autorisez les modérateurs de membres approuvés à fermer et rouvrir les commentaires. La case par défaut est décochée.
 
-* **Marquer les commentaires**
+* **Flag Comments**
 
   Si cette case est cochée, autorisez les visiteurs à signaler les commentaires comme inappropriés. La case par défaut est décochée.
 
-* **Marquer la liste de motifs**
+* **Liste des motifs de l’indicateur**
 
   Si cette case est cochée, les visiteurs ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de l’indicateur personnalisé**
+* **Motif d’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les visiteurs à indiquer leur propre raison de signaler un commentaire comme inapproprié. La case par défaut est décochée.
 
@@ -156,7 +156,7 @@ Sous , **Modération d’utilisateur** , configurez la modération des commentai
 
 * **Limite de marquage**
 
-  Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal à **Seuil de modération**. La valeur par défaut est 5.
+  Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal au **seuil de modération**. La valeur par défaut est 5.
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
@@ -166,8 +166,8 @@ Définir par défaut
 
 ### Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur la bibliothèque de fichiers](/help/communities/essentials-file-library.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la bibliothèque de fichiers](/help/communities/essentials-file-library.md) pour les développeurs.
 
 Pour la modération des sujets et des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour baliser des sujets et des commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser les rubriques et commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).

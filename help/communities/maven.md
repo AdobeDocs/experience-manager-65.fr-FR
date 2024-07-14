@@ -26,7 +26,7 @@ Cette section de la documentation de Adobe Experience Manager (AEM) Communities 
 
 Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
 
-* AEM [Fichier jar d’API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [ Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 >
 >Tenez-vous au courant de la version de Communities la plus récente.
 >
->Voir [Dernières versions](deploy-communities.md#latest-releases) où vous pouvez identifier la version la plus récente.
+>Consultez la section [Dernières versions](deploy-communities.md#latest-releases) où vous pouvez identifier la version la plus récente.
 
 ## Exemple de dépendance Maven {#maven-dependency-example}
 
@@ -49,7 +49,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 
 >[!NOTE]
 >
->Voir [Référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) où vous pouvez identifier le dernier artefact Uber jar.
+>Voir le [référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) où vous pouvez identifier le dernier artefact Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

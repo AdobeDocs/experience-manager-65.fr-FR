@@ -91,7 +91,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
 
    >[!CAUTION]
    >
-   >La zone de sécurité à configurer est la suivante : **Réseau d’entreprise privée (VPN+LAN)**.
+   >La zone de sécurité à configurer est **Réseau d&#39;entreprise privée (VPN+LAN)**.
 
 1. Cliquez sur **Enregistrer**.
 

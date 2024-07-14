@@ -12,13 +12,13 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
-Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyses tiers, par exemple, les Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
+Le jeu de services cloud par défaut peut être étendu avec des types de services cloud personnalisés. Vous pouvez ainsi insérer des balises personnalisées dans la page de manière structurée. Il s’agit principalement d’une utilisation pour les fournisseurs d’analyse tiers, par exemple Google Analytics, Chartbeat, etc. Les pages enfants héritent des services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
 >[!NOTE]
 >

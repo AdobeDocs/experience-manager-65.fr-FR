@@ -43,23 +43,23 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image de petite taille (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’adresse `/libs/settings/community/badging/images` et est automatiquement répliqué dans l’environnement de publication.
+Un badge est créé en téléchargeant une image de petite taille (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/libs/settings/community/badging/images` et est automatiquement répliquée dans l’environnement de publication.
 
-Si l’environnement de publication est une ferme d’éditeurs, il est nécessaire de configurer [synchronisation des utilisateurs](/help/communities/sync.md).
+Si l’environnement de publication est une ferme d’éditeurs, il est nécessaire de configurer la [synchronisation des utilisateurs](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 
 * **Charger l’image**
 
-  (*Obligatoire*) Une image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
+  (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
 
 * **Nom**
 
-  (*Obligatoire*) Nom du badge. Il s’agit du paramètre par défaut `Display Name` et le nom du noeud du référentiel. Si la variable `Name` n’est pas un nom de noeud de référentiel valide, il est modifié.
+  (*Obligatoire*) Nom du badge. Il s’agit du nom par défaut `Display Name` et du noeud de référentiel. Si le `Name` n’est pas un nom de noeud de référentiel valide, il est modifié.
 
 * **Nom d’affichage**
 
-  (*Facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour la variable `Name`.
+  (*Facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour le `Name`.
 
 * **Description**
 

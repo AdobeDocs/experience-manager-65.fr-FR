@@ -30,20 +30,20 @@ Pour le magasin UGC commun, il est nécessaire de choisir un [fournisseur de res
 * [MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md)
 * [ASRP - Fournisseur de ressources de stockage d’Adobe](asrp.md)
 
-une autre option de SRP, [JSRP - Fournisseur de ressources de stockage JCR](jsrp.md), ne prend pas en charge un magasin UGC commun pour les environnements de création et de publication à accès simultané.
+Une autre option SRP, [JSRP - JCR Storage Resource Provider](jsrp.md), ne prend pas en charge un magasin UGC commun pour les environnements de création et de publication pour les deux accès.
 
 L’exigence d’un magasin commun entraîne les topologies recommandées suivantes.
 
 >[!NOTE]
 >
->Pour AEM Communities, [Le contenu généré par l’utilisateur n’est jamais répliqué](working-with-srp.md#ugc-never-replicated).
+>Pour AEM Communities, [UGC n’est jamais répliqué](working-with-srp.md#ugc-never-replicated).
 >
->Lorsque le déploiement n’inclut pas une [magasin commun](working-with-srp.md), le contenu généré par l’utilisateur ne sera visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi.
+>Lorsque le déploiement n’inclut pas un [magasin commun](working-with-srp.md), le contenu généré par l’utilisateur n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi.
 >
 
 >[!NOTE]
 >
->Pour plus d’informations sur la plateforme AEM, voir [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md) et [Présentation de la plateforme AEM](../../help/sites-deploying/data-store-config.md).
+>Pour plus d’informations sur la plateforme AEM, voir [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md) et [Introduction à la plateforme AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Pour la production {#for-production}
 
@@ -51,15 +51,15 @@ La création d’un magasin commun pour le contenu généré par l’utilisateur
 
 Deux exemples :
 
-1. Si le volume attendu du contenu créé par l’utilisateur est élevé et qu’une instance MongoDB locale est possible, le choix serait [MSRP](msrp.md).
+1. Si le volume de contenu généré par l’utilisateur est élevé et qu’une instance MongoDB locale est possible, le choix sera [MSRP](msrp.md).
 
-1. Pour des performances optimales du contenu de la page, le choix d’un [batterie de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) et [ASRP](asrp.md) offre une mise à l’échelle optimale du contenu généré par l’utilisateur avec des opérations relativement simples.
+1. Pour des performances optimales pour le contenu de la page, le choix d&#39;une [ferme de publication](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) et d&#39;une [ASRP](asrp.md) donnerait une mise à l&#39;échelle optimale du contenu généré par l&#39;utilisateur avec des opérations relativement simples.
 
 Pour les deux, le déploiement peut être basé sur n’importe quel micronoyau OAK.
 
-Pour choisir le magasin commun approprié, considérez soigneusement l’événement [caractéristiques](working-with-srp.md#characteristics-of-srp-options) de chacun.
+Pour choisir le magasin commun approprié, réfléchissez attentivement aux [caractéristiques](working-with-srp.md#characteristics-of-srp-options) uniques de chacun.
 
-Pour plus d’informations sur les microkernals Oak, voir [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md).
+Pour plus d’informations sur les microkernals Oak, consultez la page [Déploiements recommandés](../../help/sites-deploying/recommended-deploys.md).
 
 ### Ferme de publication TarMK {#tarmk-publish-farm}
 
@@ -86,9 +86,9 @@ Lorsque la topologie est une ferme de publication, les sujets importants sont le
 
 ## Pour le développement {#for-development}
 
-Pour les environnements hors production, [JSRP](jsrp.md) simplifie la configuration d’un environnement de développement avec une instance d’auteur et une instance de publication.
+Pour les environnements hors production, [JSRP](jsrp.md) permet de configurer plus simplement un environnement de développement avec une instance d’auteur et une instance de publication.
 
-Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la production, il est également possible de configurer un environnement de développement similaire à l’aide du stockage à la demande Adobe ou de MongoDB. Pour consulter un exemple, reportez-vous à la section [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
+Si vous choisissez [ASRP](asrp.md), [DSRP](dsrp.md) ou [MSRP](msrp.md) pour la production, il est également possible de configurer un environnement de développement similaire à l’aide d’Adobe on Demand Storage ou de MongoDB. Pour obtenir un exemple, reportez-vous à la section [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
 
 ## Références {#references}
 

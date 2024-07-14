@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Tutoriels {#tutorials}
 
-Voici des exemples pour vous aider à apprendre et à travailler avec Adobe Experience Manager (AEM) 6.1 Communities [structure de composants sociaux (SCF)](scf.md).
+Voici des exemples pour vous aider à apprendre et à travailler avec Adobe Experience Manager (AEM) 6.1 Communities [Social Component framework (SCF)](scf.md).
 
 ## Personnalisation côté client {#client-side-customization}
 
@@ -34,15 +34,15 @@ Voir également :
 
 ## Personnalisation côté serveur {#server-side-customization}
 
-Voir aussi [Personnalisation côté serveur SCF](server-customize.md).
+Voir aussi [Personnalisation SCF côté serveur](server-customize.md).
 
-Un exemple de code est disponible dans la [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) référentiel :
+Un exemple de code est disponible dans le référentiel [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) :
 
-* [Personnalisation de l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Personnaliser l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Exemple de composant SCF de recouvrement](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Recouvrement de l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Etendre l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Étendre l’exemple de composant SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Instructions pratiques {#how-to-instructions}
 
@@ -60,13 +60,13 @@ Un exemple de code est disponible dans la [Adobe Experience Cloud GitHub](https:
 
 ## Utilisateurs de démonstration {#demo-users}
 
-Le module d’exemples de Geometrixx comprend des utilisateurs de démonstration. Il existe souvent une différence d’expérience entre être un visiteur (non connecté) ou un membre (connecté). Et, tant que les exemples de packages de Geometrixx restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l’exploration avec la variable [Guide des composants de communauté](components-guide.md).
+Le module d’exemples de Geometrixx comprend des utilisateurs de démonstration. Il existe souvent une différence d’expérience entre être un visiteur (non connecté) ou un membre (connecté). Et tant que les packages d’exemples de Geometrixx restent installés, vous pouvez utiliser ces utilisateurs pour simuler un état connecté lors de l’exploration avec le [guide des composants de la communauté](components-guide.md).
 
-Pour obtenir la liste complète des utilisateurs de démonstration, accédez à la page à l’aide du rail . **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]**. Ou utilisez l’interface utilisateur classique [console de sécurité](http://localhost:4502/useradmin) pour la gestion des utilisateurs et des groupes.
+Pour obtenir la liste complète des utilisateurs de démonstration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]** à l’aide du rail. Ou utilisez la [console de sécurité](http://localhost:4502/useradmin) de l’interface utilisateur classique pour gérer les utilisateurs et les groupes.
 
-Si une [site communautaire a été créé](getting-started.md), il est possible d’affecter des utilisateurs de démonstration à ses [groupes d’utilisateurs communautaires](users.md).
+Si un [ site communautaire a été créé ](getting-started.md), il est possible d&#39;affecter des utilisateurs de démonstration à ses [ groupes d&#39;utilisateurs communautaires ](users.md).
 
-***ID utilisateur* / *password***:
+***user id* / *password*** :
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

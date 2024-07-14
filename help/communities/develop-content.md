@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Développement du contenu des environnements de test  {#develop-sandbox-content}
 
-**[Ajout de bibliothèques clientes](add-clientlibs.md)**
+**[Ajouter Clientlibs](add-clientlibs.md)**
 
-À ce stade, il est possible d’explorer les fonctionnalités de la communauté dans l’environnement de test tout en utilisant [Communauté We-Retail](../../help/sites-developing/we-retail.md), la variable [Guide des composants de communauté](components-guide.md), et [Notions fondamentales sur les fonctionnalités](essentials.md) à titre de référence.
+À ce stade, il est possible d’explorer les fonctionnalités de la communauté dans l’environnement de test tout en utilisant [We-Retail Community](../../help/sites-developing/we-retail.md), le [Community Components Guide](components-guide.md) et les [Feature Essentials](essentials.md) à titre de référence.

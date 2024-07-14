@@ -18,9 +18,9 @@ ht-degree: 16%
 
 # Notions fondamentales sur les composants, les fonctions et les fonctionnalités  {#component-function-and-feature-essentials}
 
-Les fonctionnalités de Adobe Experience Manager (AEM) Communities exigent que les visiteurs du site deviennent membres et se connectent à [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
+Les fonctionnalités de communauté Adobe Experience Manager (AEM) exigent que les visiteurs du site deviennent membres et se connectent au [site de la communauté](overview.md#communitiessites) avant de pouvoir publier du contenu. Par conséquent, les [ modèles de site communautaire ](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
 
-Un site communautaire prend en charge les membres qui créent des groupes communautaires lorsque [fonction de groupes communautaires](functions.md#groups-function) est inclus dans le modèle de site de la communauté sélectionné.
+Un site communautaire prend en charge la création de groupes communautaires lorsque la [fonction de groupes communautaires](functions.md#groups-function) est incluse dans le modèle de site de communauté sélectionné.
 
 Vous trouverez ci-dessous des liens vers des informations essentielles pour les composants, fonctions et fonctionnalités de Communities.
 
@@ -33,7 +33,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
    * [Aimer](essentials-liking.md)
    * [Évaluation](rating-basics.md)
    * [Votant](essentials-voting.md)
-   * *Sondage (n’est plus disponible)*
+   * *Sondage (plus disponible)*
 
 ## Composants avec fonctions {#components-with-functions}
 
@@ -66,10 +66,10 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 
 ## Javadocs {#javadocs}
 
-La variable [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
-Les API Communities se trouvent dans `com.adobe.cq.social.*` modules.
+Les [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version AEM 6.3.
+Les API Communities se trouvent dans les packages `com.adobe.cq.social.*`.
 
-Pour chaque [feature pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, voir [Utilisation de Maven pour Communities](maven.md#javadocs).
+Pour chaque [feature pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, consultez la page [Utilisation de Maven pour Communities](maven.md#javadocs).
 
 ## Informations supplémentaires {#additional-information}
 

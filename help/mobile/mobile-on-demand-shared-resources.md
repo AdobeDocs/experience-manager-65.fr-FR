@@ -26,7 +26,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 En règle générale, le contenu tel que les articles doit avoir la même apparence sur tous les auteurs et même sur toutes les applications. Il est donc essentiel de rendre les scripts, CSS et les polices disponibles pour tous. Cette opération envoie ces ressources partagées à Mobile On-Demand qui peuvent ensuite être consommées selon les besoins.
 
-Une fois que vous avez configuré et associé votre application à une configuration cloud, vous pouvez charger vos ressources partagées. Pour obtenir des instructions détaillées sur l’association de votre application à une configuration cloud, cliquez sur [here](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Une fois que vous avez configuré et associé votre application à une configuration cloud, vous pouvez charger vos ressources partagées. Pour obtenir des instructions détaillées sur l’association de votre application à une configuration cloud, cliquez sur [ici](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
@@ -44,12 +44,12 @@ Une fois que vous avez configuré et associé votre application à une configura
 
 Pour charger vos ressources partagées pour un article, procédez comme suit :
 
-1. Sélectionnez l’article dans **Gestion des articles** mosaïque.
-1. Cliquez sur **Chargement des ressources partagées** pour charger vos ressources de HTML partagées.
+1. Sélectionnez l’article dans la mosaïque **Gérer les articles** .
+1. Cliquez sur **Télécharger les ressources partagées** pour télécharger vos ressources d’HTML partagées.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-### La prochaine étape {#the-next-step}
+### Étape suivante {#the-next-step}
 
 Une fois que vous avez appris à créer et publier du contenu, reportez-vous à la section
 

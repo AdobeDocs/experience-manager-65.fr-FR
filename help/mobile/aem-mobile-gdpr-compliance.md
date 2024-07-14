@@ -45,13 +45,13 @@ Obligatoire :
 
 Fournissez au moins l’une des informations suivantes :
 
-* L’identifiant OAuth fourni par le client final (l’identifiant utilisé dans le système de droits directs du client) : *dpsc-directEntitlementId*
+* ID OAuth fourni par le client final (ID utilisé dans le système de droits directs du client) : *dpsc-directEntitlementId*
 * Pour les utilisateurs de l’application Windows, l’App Store ID de l’utilisateur final : *dpsc-windowsAppStoreId*
 * Adresse électronique de l’utilisateur final utilisée pour interagir avec l’application DPS : *email*
 
 ### Questions fréquentes {#frequently-asked-questions-faq}
 
-**La suppression d’Adobe de mes achats App Store est-elle appliquée lors du lancement d’une demande de DELETE ?**
+**L’Adobe supprime-t-il mes achats App Store lors du lancement d’une demande de DELETE ?**
 
 Adobe supprime les informations qu’il possède sur les achats de la boutique d’applications (abonnements, etc.), mais les achats sont toujours enregistrés dans les boutiques d’applications. Si l’application (utilisateur final) est connectée à la boutique d’applications, ces accusés de réception sont à nouveau récupérés et envoyés à Adobe. Par la suite, ces achats sont considérés comme de nouveaux achats et sont restaurés par l’application, avec un nouvel accès.
 
@@ -59,7 +59,7 @@ Adobe supprime les informations qu’il possède sur les achats de la boutique d
 
 Adobe supprime les informations qu’il possède sur les droits directs supplémentaires du client. Si l’application (utilisateur final) se connecte au mécanisme OAuth utilisé par le client, il envoie des informations à Adobe et les services récupèrent à nouveau les droits supplémentaires.
 
-**Que doit-on attendre de l’utilisateur final ?**
+**Qu&#39;est-ce que l&#39;utilisateur final attend ?**
 
 Puisque la clé d’attribution des droits à l’application réside sur l’appareil dans le cadre du logiciel de visionneuse, l’utilisateur final doit désinstaller l’application. L’utilisateur final doit comprendre que s’il réinstalle l’application, les achats existants (associés à l’utilisateur de la boutique d’applications) et les droits directs (associés à l’utilisateur OAuth du client) sont toujours restaurés.
 
@@ -67,7 +67,7 @@ Puisque la clé d’attribution des droits à l’application réside sur l’ap
 
 Adobe comporte peu d’informations qui s’associent directement à un utilisateur spécifique. Il associe les données à l’aide d’un UUID créé de manière aléatoire et conservé dans les données de l’application, qui est transmis dans chaque requête initiée par l’application. Cela signifie que les utilisateurs finaux partageant l’application sur le même appareil utilisent le même UUID et que toutes les données sont considérées comme détenues par la personne qui a émis la demande en vertu du RGPD. Pour les demandes d’accès et de suppression, le DPSC considère comme une seule personne les personnes qui partagent une application.
 
-**Quelles sont les données personnelles suivies avec Analytics ?**
+**Quelles données personnelles sont suivies avec Analytics ?**
 
 Aucune. Des données font l’objet d’un suivi, mais elles se trouvent au niveau de l’application (et non au niveau personnel). Cela inclut les événements tels que les lancements, les blocages, les fermetures, les activités, les achats ou les incrustations de folios. Les emplacements géographiques, les noms, les identifiants d’appareil ou les adresses IP ne sont pas suivis.
 

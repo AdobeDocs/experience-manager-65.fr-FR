@@ -1,5 +1,5 @@
 ---
-title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
+title: Guide de démarrage rapide pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
@@ -8,13 +8,13 @@ role: Admin,Architect,Data Architect,Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés {#accessing-delivering-content-fragments}
+# Guide de démarrage rapide pour l’accès et la diffusion de fragments de contenu découplés {#accessing-delivering-content-fragments}
 
-Découvrez comment utiliser l’API REST AEM Assets pour gérer les fragments de contenu et l’API GraphQL pour la diffusion sans interface de contenu de fragments.
+Découvrez comment utiliser l’API AEM Assets REST pour gérer les fragments de contenu et l’API GraphQL pour la diffusion de contenu de fragments de contenu en mode découplé.
 
 ## En quoi consistent les API REST GraphQL et Assets ? {#what-are-the-apis}
 
@@ -28,7 +28,7 @@ Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragmen
 
 ## Comment diffuser un fragment de contenu avec GraphQL {#how-to-deliver-a-content-fragment}
 
-Les architectes d’informations doivent concevoir des requêtes pour leurs points d’entrée de canal afin de diffuser du contenu. Considérez ces requêtes une seule fois par point de terminaison, par modèle. Pour ce guide de prise en main, créez-en un seul.
+Les architectes d’informations doivent concevoir des requêtes pour leurs points d’entrée de canal afin de diffuser du contenu. Considérez ces requêtes une seule fois par point d’entrée et par modèle. Pour ce guide de démarrage, créez-en un seul.
 
 1. Connectez-vous à AEM et accédez à l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) :
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.

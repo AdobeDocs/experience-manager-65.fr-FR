@@ -24,15 +24,15 @@ ht-degree: 10%
 
 AEM s’intègre à PhoneGap afin que vous puissiez facilement créer des applications à l’aide de pages AEM. PhoneGap permet à l’utilisateur de créer des applications utilitaires qui permettent aux utilisateurs de travailler avec le contenu. La synchronisation de contenu vous permet de créer des archives versionnées de pages pour le regroupement avec des applications.
 
-En règle générale, un ***Administrateur AEM*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une application à l’aide de l’assistant de création, soit en important une application existante.
+En règle générale, un ***AEM administrateur*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une application à l’aide de l’assistant de création, soit en important une application existante.
 
-À partir d’ici ***Auteur AEM*** (ou *Marketer*) peut désormais utiliser les modèles et composants prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des supports de tous types à partir de la gestion des actifs numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu).
+À partir de là, un ***auteur AEM*** (ou *marketeur*) peut désormais utiliser les modèles et composants prêts à l’emploi pour ajouter et modifier des pages, faire glisser des composants et ajouter des supports de tous types à partir de la gestion des actifs numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu).
 
-La vraie puissance d’AEM Mobile est qu’une *savvy* ***AEM Développeur*** peut étendre et créer des modèles web et des composants personnalisés pour activer la fonction *Auteur AEM* pour créer des expériences mobiles belles et attrayantes. Ces modèles et composants sont non seulement optimisés pour l’application mobile, mais ils communiquent également avec l’appareil et le serveur AEM (tout serveur distant) aux points d’entrée du service omni-canal.
+La vraie puissance d&#39;AEM Mobile est qu&#39;un *expert* ****** AEM développeur peut étendre et créer des modèles web et des composants personnalisés pour permettre à l&#39; *auteur AEM* de créer des expériences mobiles belles et attrayantes. Ces modèles et composants sont non seulement optimisés pour l’application mobile, mais ils communiquent également avec l’appareil et le serveur AEM (tout serveur distant) aux points d’entrée du service omni-canal.
 
 >[!NOTE]
 >
->Lorsque la variable *Auteur AEM* considère que l’application est prête, ils peuvent d’abord demander à leurs parties prenantes de télécharger l’application avec **[Vérification de l’Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponible dans AppStore et PlayStore) pour révision et approbation. Une fois qu’ils ont reçu le feu vert, ils peuvent publier ce contenu nouveau ou mis à jour directement pour leurs utilisateurs via le tableau de bord de la gestion de contenu ContentSync d’AEM Mobile. Une personne peut assumer n&#39;importe quel nombre de rôles, cela dépend de vous et de vos politiques de gouvernance.
+>Lorsque l’ *auteur AEM* estime que l’application est prête, il peut d’abord demander à ses parties prenantes de télécharger l’application avec la **[vérification de l’Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponible dans AppStore et PlayStore) pour révision et approbation. Une fois qu’ils ont reçu le feu vert, ils peuvent publier ce contenu nouveau ou mis à jour directement pour leurs utilisateurs via le tableau de bord de la gestion de contenu ContentSync d’AEM Mobile. Une personne peut assumer n&#39;importe quel nombre de rôles, cela dépend de vous et de vos politiques de gouvernance.
 
 ## Conditions préalables {#prerequisites}
 
@@ -60,4 +60,4 @@ Voir [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](/help/m
 
 >[!NOTE]
 >
->Grâce aux technologies mobiles hybrides, vous pouvez créer des applications mobiles riches qui *s’exécuter hors ligne et en ligne ;* avec AEM Mobile, de nombreux clients choisissent de créer des applications qui vérifient lorsqu’elles sont en ligne ou hors ligne et se comportent comme il se doit.
+>En utilisant des technologies mobiles hybrides, vous pouvez créer des applications mobiles enrichies qui *s&#39;exécutent hors ligne et en ligne* avec AEM Mobile. En fait, de nombreux clients choisissent de créer des applications qui vérifient lorsqu&#39;elles sont en ligne ou hors ligne et se comportent comme il se doit.

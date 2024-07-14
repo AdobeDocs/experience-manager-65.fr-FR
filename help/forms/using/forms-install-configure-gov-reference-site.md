@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 100%
 
@@ -311,15 +311,15 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
 
    >[!NOTE]
    >
-   >Une fois les services testés, cliquez sur **Annuler** pour vous assurer que les modifications involontaires ne sont pas propagées au modèle de données de formulaire.
+   Une fois les services testés, cliquez sur **Annuler** pour vous assurer que les modifications involontaires ne sont pas propagées au modèle de données de formulaire.
 
    >[!NOTE]
    >
-   >Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
+   Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
 
    >[!NOTE]
    >
-   >Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 #### Tester le modèle de données de formulaire (Derby) {#test-fdm-derby}
 
@@ -424,7 +424,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 
 >[!NOTE]
 >
->Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Sélectionnez le « Site We.Gov d’AEM Forms » pour afficher les pages du site.
@@ -453,7 +453,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 
 >[!NOTE]
 >
->Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration cloud Adobe Analytics si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à
 
@@ -500,7 +500,7 @@ Manager en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
 
 >[!NOTE]
 >
->Le certificat créé dans cette section va être servir à créer le service d’intégration dans Adobe I/O. Une fois ceci fait, les utilisateurs peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
+Le certificat créé dans cette section va être servir à créer le service d’intégration dans Adobe I/O. Une fois ceci fait, les utilisateurs peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
 
 #### Créer une intégration dans Adobe I/O {#create-integration-adobeio}
 
@@ -799,7 +799,7 @@ Pour les configurer afin qu’ils soient activés dans le workflow, les utilisat
 
    >[!NOTE]
    >
-   >Un utilisateur ou une utilisatrice active le service dans la page Configuration Manager. Par conséquent, les utilisateurs et utilisatrices doivent toujours configurer un service pour communiquer avec les services externes demandés.
+   Un utilisateur ou une utilisatrice active le service dans la page Configuration Manager. Par conséquent, les utilisateurs et utilisatrices doivent toujours configurer un service pour communiquer avec les services externes demandés.
 
    ![Package WeGov Forms](assets/aftia-configuration-options.jpg)
 

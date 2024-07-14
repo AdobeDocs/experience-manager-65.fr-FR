@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ AEM e-commerce fournit :
 
    * La recherche AEM
    * La recherche du système e-commerce
-   * une recherche tierce
+   * Une recherche tierce
    * Ou une combinaison de ces trois fonctions.
 
   ![Exemple de recherche.](/help/sites-administering/assets/chlimage_1-131.png)

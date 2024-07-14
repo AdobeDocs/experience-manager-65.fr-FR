@@ -32,7 +32,7 @@ Les étapes d’ajout dynamique de composants SCF sont les suivantes :
 
 1. [Ajouter le composant au DOM](#dynamically-add-component-to-dom)
 
-1. [Chargement partiel du composant](#sideload-by-invoking-scf) en utilisant l’une des deux méthodes suivantes :
+1. [Téléchargez le composant](#sideload-by-invoking-scf) à l’aide de l’une des deux méthodes suivantes :
 
 * [Inclusion dynamique](#dynamic-inclusion)
    * Boostrap tous les composants dynamiquement ajoutés
@@ -41,7 +41,7 @@ Les étapes d’ajout dynamique de composants SCF sont les suivantes :
 
 >[!NOTE]
 >
->Chargement partiel de [ressources non existantes](scf.md#add-or-include-a-communities-component) n’est pas prise en charge.
+>Le téléchargement de [ressources non existantes](scf.md#add-or-include-a-communities-component) n’est pas pris en charge.
 
 ## Ajout dynamique de composant à DOM {#dynamically-add-component-to-dom}
 
@@ -88,4 +88,4 @@ Au lieu d’amorcer tous les composants SCF du modèle DOM, il est possible de s
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Où `someId` est la valeur de la variable `data-component-id` attribut.
+Où `someId` est la valeur de l’attribut `data-component-id`.

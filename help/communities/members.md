@@ -21,22 +21,22 @@ ht-degree: 2%
 
 ## Vue d’ensemble {#overview}
 
-Les fonctionnalités d’AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication ; il est généralement appelé *members* pour les distinguer de *utilisateurs* enregistré dans l’environnement de création.
+Les fonctionnalités d’AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication et ils sont généralement appelés *members* pour les distinguer de *users* enregistrés dans l’environnement de création.
 
-### Membres (utilisateurs) sur la publication {#members-users-on-publish}
+### Membres (utilisateurs) sur Publish {#members-users-on-publish}
 
-Utilisation des consoles Membres et groupes de communautés , des membres et des groupes de membres enregistrés dans *publier* peut être créé et géré à partir de l’ *author* environnement. Cela n’est possible que lorsque la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) est activée.
+À l’aide des consoles Membres et groupes des communautés, les membres et les groupes de membres enregistrés dans l’environnement *publish* peuvent être créés et gérés à partir de l’environnement *author*. Cela n’est possible que lorsque le [service tunnel](deploy-communities.md#tunnel-service-on-author) est activé.
 
 ### Utilisateurs sur l’auteur {#users-on-author}
 
-Pour gérer les utilisateurs et les groupes enregistrés dans la variable *author* , il est nécessaire d&#39;utiliser la console de sécurité de la plateforme :
+Pour gérer les utilisateurs et les groupes enregistrés dans l’environnement *author*, il est nécessaire d’utiliser la console de sécurité de la plateforme :
 
 * Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 * Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Groupes]**.
 
 >[!NOTE]
 >
->Avec les exemples de contenu déployés et activés, de nombreux exemples d’utilisateurs existent dans les environnements de création et de publication. Ces utilisateurs ne seront pas présents lors de l’exécution de avec [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
+>Avec les exemples de contenu déployés et activés, de nombreux exemples d’utilisateurs existent dans les environnements de création et de publication. Ces utilisateurs ne seront pas présents lors de l’exécution avec [nosamplecontent runmode](../../help/sites-administering/production-ready.md).
 
 ## Console Membres {#members-console}
 
@@ -46,28 +46,28 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 
 >[!CAUTION]
 >
->Il ne sera pas possible d’utiliser la console Membres si la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) n’est pas activé.
+>Il ne sera pas possible d&#39;utiliser la console Membres si le [service tunnel](deploy-communities.md#tunnel-service-on-author) n&#39;est pas activé.
 
-![Console membre](assets/member-console1.png)
+![La console membre](assets/member-console1.png)
 
 ### Recherche {#search-features}
 
-Sélectionnez l’icône du panneau latéral sur le côté gauche de la `Members` pour ouvrir le panneau latéral de recherche.
+Sélectionnez l’icône du panneau latéral sur le côté gauche de l’en-tête `Members` pour ouvrir le panneau latéral de recherche.
 
 ![Icône du panneau latéral de recherche.](assets/leftpanel-icon.png)
 
 
-![Options de filtrage de la console membre](assets/member-console2.png)
+![Options de filtre pour la console membre](assets/member-console2.png)
 
-Sélectionnez l’icône de recherche sur le côté gauche de la `Members` pour fermer le panneau latéral de recherche.
+Sélectionnez l’icône de recherche sur le côté gauche de l’en-tête `Members` pour fermer le panneau latéral de recherche.
 
 ### Statistiques des membres {#member-statistics}
 
-Les colonnes qui s&#39;affichent `Views`, `Posts`, `Follows` et `Likes` sont mis à jour lorsque l’utilisateur est membre d’un ou de plusieurs sites de la communauté avec Adobe Analytics ; [enabled](sites-console.md#analytics).
+Les colonnes affichant `Views`, `Posts`, `Follows` et `Likes` sont mises à jour lorsque l’utilisateur fait partie d’un ou de plusieurs sites de communauté avec Adobe Analytics [enabled](sites-console.md#analytics).
 
 ### Exporter CSV {#export-csv}
 
-En sélectionnant le `Export CSV` entraîne le téléchargement de tous les membres sous la forme d’une liste de valeurs séparées par des virgules, adaptées à l’importation dans une feuille de calcul.
+La sélection du lien `Export CSV` entraîne le téléchargement de tous les membres sous la forme d’une liste de valeurs séparées par des virgules, adaptées à l’importation dans une feuille de calcul.
 
 Les en-têtes de colonne sont :
 
@@ -75,7 +75,7 @@ Les en-têtes de colonne sont :
 
 ## Créer un membre {#create-new-member}
 
-Sélectionner `Create Member` pour créer un utilisateur dans l’environnement de publication.
+Sélectionnez `Create Member` pour créer un utilisateur dans l’environnement de publication.
 
 ![Fenêtre Créer un nouveau membre](assets/create-member1.png)
 
@@ -87,12 +87,13 @@ La plupart des champs sont des champs facultatifs que le membre peut remplir ult
 
 (*Obligatoire*) L’ID autorisable est l’ID de connexion du membre.
 Par défaut, l’ID est défini sur la valeur de l’adresse électronique requise.
-*Une fois créé, l&#39;identifiant ne peut pas être modifié.*.
+*Une fois créé, l&#39;ID ne peut pas être modifié*.
 
 * **[!UICONTROL Adresse électronique]**
 
 (*Obligatoire*) Adresse électronique du membre.
-Le membre peut modifier son adresse email lors de la mise à jour de son profil. Si l&#39;identifiant est l&#39;adresse email par défaut, l&#39;identifiant sera *not* change lorsque l’adresse électronique est modifiée.
+Le membre peut modifier son adresse email lors de la mise à jour de son profil.I
+Si l’ID est défini par défaut sur l’adresse électronique, l’ID *et non* changera lorsque l’adresse électronique est modifiée.
 
 * **[!UICONTROL Password]**
 
@@ -100,11 +101,11 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 
 * **[!UICONTROL Confirmer le mot de passe]**
 
-  (*Obligatoire*) Saisissez à nouveau le mot de passe à vérifier.
+  (*Obligatoire*) Saisissez à nouveau le mot de passe à des fins de vérification.
 
 * **[!UICONTROL Ajouter un membre à Sites]**
 
-  (*Facultatif*) Sélectionnez sur les sites de la communauté existants pour ajouter le membre au groupe de membres du site de la communauté.
+  (*Facultatif*) Sélectionnez parmi les sites de communauté existants pour ajouter le membre au groupe de membres du site de communauté.
 
 * **[!UICONTROL Ajouter un membre aux groupes]**
 
@@ -117,9 +118,11 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 Sous Paramètres du compte , un administrateur de communauté peut :
 
 * **[!UICONTROL Statut]**
-   * Interdit Un membre ne parvient pas à se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités nécessitant une connexion. Ils peuvent encore visiter anonymement un site communautaire ouvert.
+   * Interdit
+Un membre ne parvient pas à se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités nécessitant une connexion. Ils peuvent encore visiter anonymement un site communautaire ouvert.
 
-   * Non interdit Un membre a un accès complet au site de la communauté.
+   * Non interdit
+Un membre a un accès complet au site de la communauté.
 
   La valeur par défaut est `Not Banned`.
 
@@ -127,7 +130,7 @@ Sous Paramètres du compte , un administrateur de communauté peut :
 
   Si cette case est cochée, la capacité du membre à publier du contenu est limitée.
 La valeur par défaut dépend de la configuration des limites de contribution.
-Voir [Limites des contributions des membres](limits.md).
+Voir [Limites de contribution des membres](limits.md).
 
 * **[!UICONTROL Modifier le mot de passe]**
 
@@ -147,32 +150,32 @@ Le membre peut être ajouté à un ou plusieurs groupes de membres. Saisissez to
 
 ### Onglet BADGES {#badges-tab}
 
-La variable `BADGES` panneau permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent concerner les rôles attribués et les badges généralement gagnés.
+Le panneau `BADGES` permet d’attribuer manuellement des badges et de les révoquer. Les badges peuvent concerner les rôles attribués et les badges généralement gagnés.
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 
-![Fenêtre Modifier les paramètres d’appartenance](assets/create-member2.png)
+![ La fenêtre Modifier les paramètres d’appartenance ](assets/create-member2.png)
 
 * **[!UICONTROL Ajouter des badges]**
-   * Commencer à saisir pour effectuer une sélection dans [badges disponibles](badges.md). Une fois qu’un badge est sélectionné, sélectionnez chaque site, ou tous les sites, sur lesquels le badge doit s’afficher avec l’avatar du membre.
+   * Commencez à saisir le texte pour effectuer une sélection parmi les [badges disponibles](badges.md). Une fois qu’un badge est sélectionné, sélectionnez chaque site, ou tous les sites, sur lesquels le badge doit s’afficher avec l’avatar du membre.
    * Plusieurs badges et sites peuvent être choisis.
-* **[!UICONTROL Suppression des badges]**
+* **[!UICONTROL Supprimer les badges]**
    * Sélectionnez l’icône de corbeille en regard d’un badge pour le supprimer.
 
 ## Console Groupes {#groups-console}
 
-La console Groupes , disponible dans l’environnement de création, permet la création et la gestion des groupes de membres enregistrés dans l’environnement de publication. Elle est particulièrement utile pour [Groupes de membres privilégiés](users.md#privilegedmembersgroups).
+La console Groupes , disponible dans l’environnement de création, permet la création et la gestion des groupes de membres enregistrés dans l’environnement de publication. Elle est particulièrement utile pour les [groupes de membres privilégiés](users.md#privilegedmembersgroups).
 
 Pour accéder à la console Groupes , procédez comme suit :
 * Dans la navigation globale, sélectionnez **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Groupes]**.
 
 >[!CAUTION]
 >
->Il ne sera pas possible d’utiliser la console Groupes si la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) n’est pas activé.
+>Il ne sera pas possible d’utiliser la console Groupes si le [service tunnel](deploy-communities.md#tunnel-service-on-author) n’est pas activé.
 
 ### Créer un groupe {#create-new-group}
 
-Sélectionner `Add Group` pour créer un groupe dans l’environnement de publication.
+Sélectionnez `Add Group` pour créer un groupe dans l’environnement de publication.
 
 ![Fenêtre Créer un groupe](assets/group-console1.png)
 
@@ -182,7 +185,7 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 
   (*Obligatoire*) Identifiant unique du groupe.
 
-  *Une fois créé, l&#39;identifiant ne peut plus être modifié.*
+  *Une fois créé, l&#39;ID ne peut plus être modifié.*
 
 * **[!UICONTROL Nom]**
 
@@ -194,7 +197,7 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 
   (*Facultatif*) Description de l’objectif et des autorisations du groupe.
 
-* **[!UICONTROL Ajouter des membres au groupe]**
+* **[!UICONTROL Ajouter Des Membres Au Groupe]**
 
   (*Facultatif*) Sélectionnez les membres côté publication à inclure en tant que membres initiaux du groupe.
 
@@ -202,8 +205,8 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 
 ## Administrateurs autorisés {#authorized-administrators}
 
-Lorsque vous travaillez avec des membres dans la console des membres de Communities, il est nécessaire de se connecter en tant qu’utilisateur avec les autorisations appropriées, ainsi que pour l’agent de réplication utilisé par la fonction [service tunnel](deploy-communities.md#tunnel-service-on-author) pour être correctement configurés.
+Lorsque vous travaillez avec des membres dans la console des membres de Communities, il est nécessaire de se connecter en tant qu’utilisateur avec les autorisations appropriées, et de configurer correctement l’agent de réplication utilisé par le [service tunnel](deploy-communities.md#tunnel-service-on-author).
 
-Si vous n’êtes pas connecté en tant que `admin`, l’utilisateur connecté doit être membre du `administrators` groupe d’utilisateurs.
+Si l’utilisateur connecté n’est pas connecté en tant que `admin`, il doit être membre du groupe d’utilisateurs `administrators`.
 
 Voir aussi [Agents de réplication sur l’auteur](deploy-communities.md#replication-agents-on-author).

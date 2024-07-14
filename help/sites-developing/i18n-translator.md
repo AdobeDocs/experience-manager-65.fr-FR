@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -195,7 +195,7 @@ La barre de recherche en bas de l’outil de traduction fournit des options de s
 
 ### Modification de chaînes traduites {#editing-translated-strings}
 
-Après avoir ajouté la chaîne en anglais à un dictionnaire, vous pouvez ajouter des traductions de cette chaîne. Vous pouvez également [export du dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) pour le faire traduire par un tiers.
+Après avoir ajouté la chaîne en anglais à un dictionnaire, vous pouvez ajouter des traductions de cette chaîne. Vous pouvez aussi [exporter le dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) afin de le faire traduire par une tierce partie.
 
 1. Sélectionnez le [dictionnaire spécifique à votre projet](#creating-a-dictionary), car il spécifie le chemin dans le référentiel qui contient les traductions. Par exemple, sélectionnez des **Dictionnaires** tels que :
 

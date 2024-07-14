@@ -21,18 +21,18 @@ ht-degree: 0%
 
 Pour accéder à la console des outils Communities, connectez-vous à votre instance d’auteur :
 
-* À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
+* Dans la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
 
   ![communities](assets/communities-home.png)
 
-* [Modèles de site](sites.md) - Console pour la création et la gestion des modèles de site.
+* [Modèles de site](sites.md) - Console pour la création et la gestion de modèles de site.
 
 * [Modèles de groupe](tools-groups.md) - Console pour la création et la gestion de modèles de groupe.
 
-* [Fonctions de communauté](functions.md) - Console pour la création et la gestion de fonctions communautaires.
+* [Fonctions de communauté](functions.md) - Console pour la création et la gestion de fonctions de communauté.
 
-* [Configuration de stockage](srp-config.md) - Console pour la configuration et la sélection du [SRP par défaut](working-with-srp.md).
+* [Configuration de stockage](srp-config.md) - Console pour la configuration et la sélection de la [SRP par défaut](working-with-srp.md).
 
-* [Guide du composant](components-guide.md) - Ouvre un site interactif qui permet d’expérimenter le fonctionnement des composants SCF et leur configuration ou personnalisation.
+* [Guide des composants](components-guide.md) - Ouvre un site interactif qui permet d’expérimenter le fonctionnement des composants SCF et leur configuration ou personnalisation.
 
-* [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour une utilisation dans [règles de notation et de badge](implementing-scoring.md)
+* [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour une utilisation dans les [règles de notation et de badge](implementing-scoring.md)

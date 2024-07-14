@@ -22,13 +22,13 @@ Lorsque les composants AEM Communities sont configurés avec le balisage activé
 
 L’infrastructure sous-jacente des balises appliquées dans l’environnement de publication est la même que pour les balises appliquées au contenu dans l’environnement de création, telles que les pages et les ressources :
 
-* Voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (contenu généré par l’utilisateur) pour plus d’informations sur la création et la gestion des balises.
+* Pour plus d’informations sur la création et la gestion des balises, voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage du contenu généré par l’utilisateur](tag-ugc.md).
 
-* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur le [framework de balisage](../../help/sites-developing/framework.md) et inclusion et extension de balises dans [applications personnalisées](../../help/sites-developing/building.md).
+* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur la [structure de balisage](../../help/sites-developing/framework.md) et l’inclusion et l’extension de balises dans les [applications personnalisées](../../help/sites-developing/building.md).
 
-* Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour plus d’informations pour les auteurs sur la manière d’ajouter une `social tag cloud` à une page pour mettre en surbrillance les balises appliquées au contenu généré par l’utilisateur dans l’environnement de publication.
+* Pour plus d’informations sur l’ajout d’un composant `social tag cloud` à une page afin de mettre en surbrillance les balises appliquées au contenu créé par l’utilisateur dans l’environnement de publication, voir [Utilisation du cloud de balises sociales](tagcloud.md) .
 
-Le balisage du contenu généré par l’utilisateur peut être activé lors de la configuration d’un [site communautaire](sites-console.md#tagging) ou l’une des fonctionnalités suivantes :
+Le balisage du contenu généré par l’utilisateur peut être activé lors de la configuration d’un [site communautaire](sites-console.md#tagging) ou de l’une des fonctionnalités suivantes :
 
 * [Blog](blog-feature.md)
 * [Calendrier](calendar.md)
@@ -47,7 +47,7 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Voir <a href="tagcloud.md">Utilisation de Social Tag Cloud</a></td>
+   <td>Voir <a href="tagcloud.md">Utilisation du cloud de balises sociales</a></td>
   </tr>
  </tbody>
 </table>
@@ -73,7 +73,7 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Social Tag Cloud](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API Nuage de balises sociales](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
 * [Gestionnaire de balises sociales](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
@@ -81,6 +81,6 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
 
 ## Recherche de balises {#tag-searching}
 
-À partir de [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide de [titres de balise](../../help/sites-developing/framework.md#tag-characteristics).
+À compter de [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide de [titres de balises](../../help/sites-developing/framework.md#tag-characteristics).
 
-Avant FP1, la recherche était effectuée à l’aide de [ID de balise](../../help/sites-developing/framework.md#tagid).
+Avant FP1, la recherche était effectuée à l’aide des [ID de balise](../../help/sites-developing/framework.md#tagid).

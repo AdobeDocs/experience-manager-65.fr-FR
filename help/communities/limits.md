@@ -24,7 +24,7 @@ La fonctionnalité Limites de contribution permet de limiter les contributions d
 
 Lorsqu’un membre est limité, toute publication qui dépasse le nombre autorisé de contributions génère une alerte indiquant que la limite a été dépassée et que la publication est rejetée. Le membre de la communauté peut alors se rendre au centre de messagerie de la communauté et contacter un responsable de la communauté qui peut supprimer les limites, le cas échéant.
 
-Les limites de contribution peuvent être activées individuellement à partir de la variable [Console Membres](members.md) et/ou configurés pour être automatiquement activés lorsque les visiteurs du site deviennent de nouveaux membres.
+Les limites de contribution peuvent être activées individuellement à partir de la [console Membres](members.md) et/ou configurées pour être activées automatiquement lorsque les visiteurs du site deviennent de nouveaux membres.
 
 À l’aide de la console Membres, les limites de contribution peuvent être supprimées de manière proactive pour un membre par un responsable de la communauté à tout moment, ou supprimées de manière réactive lorsqu’un membre envoie un message à un responsable de la communauté qui effectue une telle requête.
 
@@ -40,18 +40,18 @@ Pour atteindre cette configuration OSGi :
 
 * Sur l’éditeur principal :
 * Connectez-vous avec les privilèges d’administrateur.
-* Accédez au [Console web](../../help/sites-deploying/configuring-osgi.md).
+* Accédez à la [console web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Par exemple : [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Localiser `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Recherchez `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Sélectionnez l’icône de modification.
 
 ![configure-limits](assets/configure-limits.png)
 
-* **[!UICONTROL Application automatique des limites de contribution du contenu généré par l’utilisateur]**
+* **[!UICONTROL Appliquer automatiquement les limites de contribution du contenu créé par l’utilisateur]**
 
-  Si cette case est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé dans la variable [console membres](members.md). Les nouveaux membres disposant d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais contraints.
+  Si cette case est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé à partir de la [console membres](members.md). Les nouveaux membres disposant d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais contraints.
 
   La case par défaut est décochée.
 
@@ -61,7 +61,7 @@ Pour atteindre cette configuration OSGi :
 
   La valeur par défaut est de dix publications.
 
-* **[!UICONTROL Fréquence des limites UGC]**
+* **[!UICONTROL Fréquence de limite UGC]**
 
   La période limitant la limite du contenu généré par l’utilisateur.
 
@@ -71,11 +71,11 @@ Pour atteindre cette configuration OSGi :
 
   Liste de liste autorisée d’un ou de plusieurs domaines de messagerie. Sélectionnez l’icône + pour effectuer d’autres entrées.
 
-  Les utilisateurs dont les adresses électroniques se trouvent dans la liste autorisée des domaines ne sont pas affectés lorsque les limites de contribution du contenu généré par l’utilisateur sont automatiquement appliquées. Par exemple, si domaine `mycompany.com` est ajouté à la liste des domaines, puis à un membre avec une adresse électronique. `me@mycompany.com` n’est jamais restreint à la publication.
+  Les utilisateurs dont les adresses électroniques se trouvent dans la liste autorisée des domaines ne sont pas affectés lorsque les limites de contribution du contenu généré par l’utilisateur sont automatiquement appliquées. Par exemple, si le domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec l’adresse électronique `me@mycompany.com` n’est jamais restreint à la publication.
 
   La liste autorisée par défaut est vide.
 
-* **[!UICONTROL Destinataires de la messagerie]**
+* **[!UICONTROL Destinataires de messagerie]**
 
   Liste d’un ou plusieurs ID autorisables des membres pouvant modifier les limites de contribution des membres. Sélectionnez l’icône + pour effectuer d’autres entrées.
 

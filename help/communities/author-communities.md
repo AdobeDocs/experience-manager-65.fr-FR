@@ -30,17 +30,17 @@ Pour en savoir plus sur la création d’un site communautaire, rendez-vous sur 
 
 >[!NOTE]
 >
->Si vous ne connaissez pas l’environnement de création, consultez la documentation sur [gestion de base](/help/sites-authoring/basic-handling.md) et un [guide rapide pour la création de pages](/help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [ guide rapide vers les pages de création](/help/sites-authoring/qg-page-authoring.md).
 
 ## Composants Communities disponibles {#available-communities-components}
 
 Le tableau suivant répertorie les composants Communities visibles aux auteurs lorsqu’ils sont activés dans le navigateur de composants (sidekick).
 
-Voir aussi le rapport interactif [Guide des composants de communauté](/help/communities/components-guide.md).
+Voir aussi le [Guide des composants de la communauté](/help/communities/components-guide.md) interactif.
 
 >[!NOTE]
 >
->Lecture [Principes de base des composants des communautés](/help/communities/basics.md) car il contient des informations nécessaires à la création avec des composants Communities.
+>Lisez la section [Principes de base des composants des communautés](/help/communities/basics.md), car elle contient des informations nécessaires à la création avec des composants des communautés.
 
 | **Titre du composant**. | **Fonctionnalité** |
 |---|---|
@@ -49,16 +49,16 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 | Barre latérale de blog | [Blog](/help/communities/blog-feature.md) |
 | Calendrier | [Calendrier](/help/communities/calendar.md) |
 | Commentaires | [Commentaires](/help/communities/comments.md) |
-| Liste d’activités communautaires | [Tendances des activités](/help/communities/trends.md) |
+| Liste d’activités communautaires | [Tendances d’activité](/help/communities/trends.md) |
 | Liste des membres de groupes de communautés | [Groupes communautaires](/help/communities/creating-groups.md) |
 | Composer le message | [Messagerie](/help/communities/configure-messaging.md) |
 | Contenu proposé | [Contenu en vedette](/help/communities/featured.md) |
 | Bibliothèque de fichiers | [Bibliothèque de fichiers](/help/communities/file-library.md) |
-| S’abonner | [Graphique des réseaux sociaux](/help/communities/socialgraph.md) |
-| Abonnement | [Graphique des réseaux sociaux](/help/communities/socialgraph.md) |
+| S’abonner | [Graphique social](/help/communities/socialgraph.md) |
+| Abonnement | [Graphique social](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
 | Conceptualisation | [Idéation](/help/communities/ideation-feature.md) |
-| Classement | [Notation et badges](/help/communities/enabling-leaderboard.md) |
+| Classement | [Scoring and Badges](/help/communities/enabling-leaderboard.md) |
 | Aimer | [J’aime](/help/communities/liking.md) |
 | Message | [Messagerie](/help/communities/configure-messaging.md) |
 | Liste des messages | [Messagerie](/help/communities/configure-messaging.md) |
@@ -75,12 +75,12 @@ Voir aussi le rapport interactif [Guide des composants de communauté](/help/com
 
 >[!NOTE]
 >
->Le composant Sondage n’est plus disponible et pris en charge dans les communautés de Experience Manager.
+>Le composant Sondage n’est plus disponible et pris en charge dans les communautés Experience Manager.
 
 ## Documentation sur les communautés connexes {#related-communities-documentation}
 
-* Visite [Déploiement de communautés](/help/communities/deploy-communities.md) où vous pouvez en savoir plus sur les déploiements recommandés.
+* Visitez [Déploiement de communautés](/help/communities/deploy-communities.md) où vous pouvez en savoir plus sur les déploiements recommandés.
 
-* Visite [Administration des sites des communautés](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site communautaire, la configuration des modèles de site communautaire, la modération du contenu communautaire, la gestion des membres et la configuration de la messagerie.
+* Visitez [Administration de sites de communautés](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de site de communauté, la modération de contenu de communauté, la gestion des membres et la configuration de la messagerie.
 
-* Visite [Développement de communautés](/help/communities/communities.md) où vous pouvez en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de Communities.
+* Consultez [Développement de communautés](/help/communities/communities.md) où vous pouvez en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités de communautés.

@@ -21,32 +21,32 @@ ht-degree: 2%
 
 ## Présentation {#introduction}
 
-La variable `Leaderboard` vous aide à comprendre comment les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (notation de base) ou de leur expertise (notation avancée).
+Le composant `Leaderboard` vous aide à comprendre comment les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (notation de base) ou de leur expertise (notation avancée).
 
-Avant d’inclure le composant de classement sur une page, vous devez configurer [Notation et badges des communautés](/help/communities/implementing-scoring.md).
+Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer le [score et badges de communautés](/help/communities/implementing-scoring.md).
 
 Cette section de la documentation décrit :
 
-* Ajouter le `Leaderboard` en un composant [site communautaire](/help/communities/overview.md#community-sites).
-* Paramètres de configuration de la variable `Leaderboard` composant.
+* Ajout du composant `Leaderboard` à un [site communautaire](/help/communities/overview.md#community-sites).
+* Paramètres de configuration du composant `Leaderboard`.
 
 ### Ajout d’un panneau de classement à une page {#adding-a-leaderboard-to-a-page}
 
-Pour ajouter une `Leaderboard` à une page en mode création, recherchez le composant.
+Pour ajouter un composant `Leaderboard` à une page en mode création, localisez le composant
 
 * `Communities / Leaderboard`
 
 Et faites-le glisser sur la page.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
 Lorsqu’il est placé pour la première fois sur une page d’un site de communauté, voici comment le composant apparaît :
 
-![tableau de classement](assets/leaderboard.png)
+![Leadboard](assets/leaderboard.png)
 
 ### Configuration du tableau de classement {#configuring-leaderboard}
 
-Sélectionnez le `Leaderboard` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Leaderboard` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -54,12 +54,12 @@ Sélectionnez le `Leaderboard` afin que vous puissiez accéder au `Configure` qu
 
 #### Onglet Paramètres {#settings-tab}
 
-Sous , **[!UICONTROL Paramètres]** , indiquez les informations relatives au membre qui s’affichent :
+Sous l’onglet **[!UICONTROL Paramètres]** , spécifiez les informations relatives au membre qui s’affichent :
 
 * **Nom d’affichage**
 
   Nom descriptif à afficher pour le panorama, reflétant les règles sélectionnées pour l’affichage des badges et des scores.
-Par défaut : `Leaderboard` si rien n’est renseigné.
+La valeur par défaut est `Leaderboard` si rien n’est entré.
 
 * **Badge**
 
@@ -78,9 +78,9 @@ La case par défaut est décochée.
 
 #### Onglet Règles {#rules-tab}
 
-Sous , **Règles** , le site de la communauté et ses règles de notation et de badge
+Sous l’onglet **Règles**, le site de la communauté et ses règles de notation et de badge
 
-* **Emplacement des règles**
+* **Emplacement de la règle**
 
   (Obligatoire) Emplacement où la règle de notation/attribution de badges est configurée.
 
@@ -118,7 +118,7 @@ Configuration des composants de classement :
    * Règle de badge = `/libs/settings/community/badging/rules//reference-badging`
    * Limite d’affichage = `10`
 
-![participant-leader](assets/participants-leaderboard.png)
+![intervenants-leader](assets/participants-leaderboard.png)
 
 ### Exemple : Experts Leaderboard {#example-experts-leaderboard}
 
@@ -141,10 +141,10 @@ Configuration des composants de classement :
    * Règle de badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
-![Experts-Lead board](assets/experts-leaderboard.png)
+![ {experts-leader](assets/experts-leaderboard.png)
 
 ### Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales relatives au tableau de bord](/help/communities/leaderboard.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Leaderboard Essentials](/help/communities/leaderboard.md) pour les développeurs.
 
-Les instructions de création de règles sont fournies sur la page [Notation et badges des communautés](/help/communities/implementing-scoring.md) pour les administrateurs.
+Les instructions de création de règles sont fournies sur la page [Notation et badges communautaires](/help/communities/implementing-scoring.md) pour les administrateurs.

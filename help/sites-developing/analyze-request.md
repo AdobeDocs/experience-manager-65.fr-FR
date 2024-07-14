@@ -12,7 +12,7 @@ role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Il peut également analyser le chemin personnalisé saisi dans la ligne de comma
 
 Se servir du commentaire dans le fichier qui vous indique comment l’exécuter :
 
-Analyse de CQ `access.log` extrapoler diverses informations et produire une sortie Markdown sur `stdout`.
+Analysez le CQ `access.log` en extrapolant diverses informations et en générant une sortie MarkDown sur `stdout`.
 
 ## Utilisation {#usage}
 

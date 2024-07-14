@@ -24,35 +24,35 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Ce document fait partie de la [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, point de départ recommandé pour la référence à AEM Mobile.
+>Ce document fait partie du guide [Prise en main d’AEM Mobile](/help/mobile/getting-started-aem-mobile.md), un point de départ recommandé pour la référence AEM Mobile.
 
-La fonction de personnalisation du contenu AEM Mobile permet [Auteurs d’AEM](#author) pour personnaliser le contenu des applications mobiles à l’aide de [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html). Cela permet la diffusion d’offres ciblées aux utilisateurs d’applications mobiles. Adobe Experience Manager Mobile permet de créer, de cibler et de diffuser du contenu qui fournira à l’utilisateur du contenu spécifique à ses goûts.
+La fonction de personnalisation du contenu AEM Mobile permet à [AEM auteurs](#author) de personnaliser le contenu des applications mobiles à l’aide de [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html). Cela permet la diffusion d’offres ciblées aux utilisateurs d’applications mobiles. Adobe Experience Manager Mobile permet de créer, de cibler et de diffuser du contenu qui fournira à l’utilisateur du contenu spécifique à ses goûts.
 
 Dans AEM, pour que les auteurs puissent commencer à créer ce contenu, les administrateurs et les développeurs doivent d’abord préparer l’environnement.
 
-[Administrateurs AEM](#administrator) sont nécessaires pour établir une connexion entre AEM Mobile et le Cloud Service Adobe Target.
+[AEM administrateurs](#administrator) sont nécessaires pour établir une connexion entre AEM Mobile et le Cloud Service Adobe Target.
 
-Pendant ce temps, AEM Mobile [développeurs](#developer) doivent modifier leurs scripts existants pour faciliter la création de contenu ciblé.
+Pendant ce temps, les [développeurs](#developer) d’AEM Mobile doivent modifier leurs scripts existants pour faciliter la création de contenu ciblé.
 
 ## Pour les administrateurs {#for-administrators}
 
 Plusieurs étapes doivent être réunies pour que les auteurs de contenu puissent commencer à générer du contenu ciblé pour les applications mobiles : il existe un ensemble approprié d’autorisations pour les utilisateurs et les groupes, la création de services cloud, la configuration de l’application pour l’activité et enfin la génération du contenu.
 
-Cet article vous guide tout au long du processus utilisé pour configurer la variable [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) pour le ciblage.
+Cet article vous guide tout au long du processus utilisé pour configurer l’ [application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) pour le ciblage.
 
 L’hypothèse à l’avenir est que l’application de référence hybride AEM Mobile a été déployée avec succès et accessible via le tableau de bord AEM Mobile.
 
-Pour que les auteurs puissent générer du contenu ciblé dans une application, votre instance AEM doit être [configuré avec le Cloud Service Adobe Target.](/help/mobile/aem-mobile-configuring-cloud-service.md)
+Avant que les auteurs puissent générer du contenu ciblé dans une application, votre instance AEM doit être [ configurée avec le Cloud Service Adobe Target.](/help/mobile/aem-mobile-configuring-cloud-service.md)
 
 ### Autorisations {#permissions}
 
-Les utilisateurs qui doivent accéder à la console de personnalisation doivent faire partie de la `target-activity-authors` groupe.
+Les utilisateurs qui doivent accéder à la console de personnalisation doivent faire partie du groupe `target-activity-authors`.
 
-Dans le cadre de la configuration des utilisateurs et des groupes, il est conseillé d’ajouter le groupe target-activity-group au groupe apps-admins . En ajoutant le groupe target-activity-authors, les utilisateurs peuvent voir l’entrée du menu de navigation Personnalisation.
+Dans le cadre de la configuration des utilisateurs et des groupes, il est conseillé d’ajouter le groupe target-activity-group au groupe apps-admins . En ajoutant le groupe target-activity-authors, les utilisateurs peuvent ainsi voir l’entrée du menu de navigation de Personalization.
 
 >[!NOTE]
 >
->L’oubli de l’ajout des utilisateurs ou des groupes auxquels vous souhaitez accéder au Admin Console de personnalisation au groupe target-activity-authors empêche les utilisateurs de voir la console de personnalisation.
+>L’oubli de l’ajout des utilisateurs ou des groupes auxquels vous souhaitez accéder à l’Admin Console de personnalisation au groupe target-activity-authors empêche les utilisateurs de voir la console de personnalisation.
 
 ### Services cloud {#cloud-services}
 
@@ -82,7 +82,7 @@ Pour lier également un compte Mobile Services (AMS) Adobe à l’application, l
 
 ### Code client {#client-code}
 
-Pour vous connecter à la visite de services AMS [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), sélectionnez l’application mobile et cliquez sur les paramètres. Localisez le champ Options du SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, rendez-vous à l&#39;adresse [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile et cliquez sur les paramètres. Localisez le champ Options du SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -98,7 +98,7 @@ Sélectionnez la carte Adobe Mobile Services et cliquez sur Suivant.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-À l’étape de l’assistant Créer ou Sélectionner , sélectionnez la liste déroulante Mobile Service , puis l’entrée Créer une configuration . Indiquez un titre, une société, un nom d’utilisateur et un mot de passe, puis sélectionnez le centre de données approprié. Si vous ne connaissez pas ces valeurs, contactez votre administrateur Adobe Mobile Service pour les obtenir. Une fois tous les champs renseignés, cliquez sur **Vérifier**. Le processus de vérification passe à AMS et vérifie les informations d’identification du compte. Une fois la validation réussie, une liste d’applications mobiles est renseignée dans laquelle vous sélectionnez l’application mobile associée dans la liste déroulante. Cliquez sur **Envoyer** pour terminer l’assistant. Le processus peut prendre un certain temps pour obtenir les données de configuration et toute analyse associée à l’application. Une fois le processus terminé, cliquez sur **Terminé** pour revenir au tableau de bord Mobile Adobe.
+À l’étape de l’assistant Créer ou Sélectionner , sélectionnez la liste déroulante Mobile Service , puis l’entrée Créer une configuration . Indiquez un titre, une société, un nom d’utilisateur et un mot de passe, puis sélectionnez le centre de données approprié. Si vous ne connaissez pas ces valeurs, contactez votre administrateur Adobe Mobile Service pour les obtenir. Une fois tous les champs renseignés, cliquez sur **Vérifier**. Le processus de vérification passe à AMS et vérifie les informations d’identification du compte. Une fois la validation réussie, une liste d’applications mobiles est renseignée dans laquelle vous sélectionnez l’application mobile associée dans la liste déroulante. Cliquez sur **Submit** pour terminer l’assistant. Le processus peut prendre un certain temps pour obtenir les données de configuration et toute analyse associée à l’application. Une fois le processus terminé, cliquez sur **Terminé** pour revenir au tableau de bord Mobile Adobe.
 
 Pour revenir au tableau de bord mobile, la mosaïque Gérer les Cloud Service contient le service cloud AMS. En outre, la mosaïque Analyser les mesures est remplie avec des rapports de cycle de vie.
 
@@ -112,7 +112,7 @@ Une fois que l’administrateur a configuré les deux services cloud et que le d
 
 La création de contenu ciblé dans une application AEM Mobile suit une procédure similaire à celle de la création d’AEM Sites :
 
-Cliquez ici pour une présentation complète de [Création de contenu ciblé dans AEM](/help/sites-authoring/personalization.md)
+Cliquez ici pour une présentation complète de la [création de contenu ciblé dans AEM](/help/sites-authoring/personalization.md)
 
 ## Pour les développeurs {#for-developers}
 
@@ -120,9 +120,9 @@ AEM développeurs qui créent des applications mobiles doivent continuer à suiv
 
 ### Gestionnaires de synchronisation de contenu Adobe Target {#adobe-target-contentsync-handlers}
 
-Pour diffuser du contenu sur l’appareil de l’utilisateur, le contenu est généré par le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traite les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) gestionnaire. L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
+Pour diffuser du contenu sur l’appareil de l’utilisateur, le contenu est généré par le rendu des offres créées par les auteurs de contenu AEM. Pour gérer le rendu des offres cibles, il existe un nouveau gestionnaire de synchronisation de contenu qui traite les offres. En utilisant l’application de référence hybride comme exemple, le module de contenu en (anglais) contient ContentSyncConfig avec un gestionnaire [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) . L’étape suivante est cruciale pour le rendu des offres sur l’appareil. Le gestionnaire mobileappoffers possède une propriété path qui identifie le chemin d’accès à l’activité de personnalisation à utiliser pour l’application.
 
-Par exemple, si une activité se trouve à l’adresse */content/campaigns/hybridref*, copiez ce chemin et collez-le en tant que valeur dans la variable *path* de la propriété mobileappoffers handler.
+Par exemple, si une activité se trouve à l’emplacement */content/campaigns/hybridref*, copiez ce chemin et collez-le en tant que valeur de la propriété *path* du gestionnaire mobileappoffers.
 
 >[!NOTE]
 >
@@ -132,21 +132,21 @@ Une fois le chemin d’accès aux activités défini dans la propriété path du
 
 ### Mode de rendu {#render-mode}
 
-Le gestionnaire de ressources mobiles est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec la valeur de *publier* défini sur le noeud cq:ContentSyncConfig . Le gestionnaire mobileappoffers fait référence à renderMode et, s’il est défini sur publish, modifie l’ID de mbox qui est créé. Par défaut, les mbox créées par AEM ont une valeur —author ajoutée à l’identifiant mbox. Ceci identifie que l’activité n’a pas été publiée et doit utiliser la campagne non publiée pour les résolutions d’offre.
+Le gestionnaire de ressources mobiles est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec une valeur *publish* définie sur le noeud cq:ContentSyncConfig . Le gestionnaire mobileappoffers fait référence à renderMode et, s’il est défini sur publish, modifie l’ID de mbox qui est créé. Par défaut, les mbox créées par AEM ont une valeur —author ajoutée à l’identifiant mbox. Ceci identifie que l’activité n’a pas été publiée et doit utiliser la campagne non publiée pour les résolutions d’offre.
 
 Lorsque le contenu est intermédiaire via le tableau de bord mobile Adobe, le contenu intermédiaire est considéré comme du contenu prêt pour la production et est rendu via la configuration de synchronisation de contenu non développée. Le rendu de cette manière entraînera la suppression de l’auteur —de tous les identifiants de mbox et prévoit qu’une activité publiée sera disponible sur le serveur Target. Avant de tester le contenu intermédiaire, vérifiez que l’activité est déjà publiée.
 
-### Développement d’applications de personnalisation {#personalization-app-development}
+### Développement d’applications Personalization {#personalization-app-development}
 
 #### Composants {#components}
 
-La base de tout contenu est généralement un composant de page qui étend l’un des composants de page de base AEM wcm/foundation/components/page ou foundation/components/page selon que vous utilisez HTL ou JSP. La durée de ces étapes se concentre sur l’utilisation du composant wcm/foundation/components/page . La structure de base du composant de page est divisée en plusieurs scripts, chaque script fournissant l’objectif spécifique de permettre au développeur d’organiser et de remplacer son code si nécessaire. Les deux scripts intéressants pour la personnalisation sont head.html et body.html. Ces deux scripts fournissent une zone dans laquelle le code peut être injecté pour prendre en charge la création ContextHub, Cloud Service et Mobile.
+La base de tout contenu est généralement un composant de page qui étend l’un des composants de page de base AEM wcm/foundation/components/page ou foundation/components/page selon que vous utilisez HTL ou JSP. La durée de ces étapes se concentre sur l’utilisation du composant wcm/foundation/components/page . La structure de base du composant de page est divisée en plusieurs scripts, chaque script fournissant l’objectif spécifique de permettre au développeur d’organiser et de remplacer son code si nécessaire. Les deux scripts intéressants pour Personalization sont head.html et body.html. Ces deux scripts fournissent une zone dans laquelle le code peut être injecté pour prendre en charge la création ContextHub, Cloud Service et Mobile.
 
 Voici un aperçu des deux scripts principaux utilisés pour activer le ciblage du contenu.
 
 #### head.html {#head-html}
 
-Pour permettre à l’auteur de cibler son contenu, le menu cible doit être ajouté à la page afin que l’auteur puisse passer du mode d’édition au mode de ciblage. Pour activer cette fonction, le développeur doit modifier le script head.html afin d’inclure l’extrait de code suivant près du haut de head.html ou aussi près du &lt;title>&lt;/title> dans la mesure du possible.
+Pour permettre à l’auteur de cibler son contenu, le menu cible doit être ajouté à la page afin que l’auteur puisse passer du mode d’édition au mode de ciblage. Pour activer cette fonction, le développeur doit modifier le script head.html afin d’inclure le fragment de code suivant près du haut de head.html ou aussi près que possible de l’élément &lt;title>&lt;/title> .
 
 ```xml
 <meta data-sly-test="${!wcmmode.disabled}">
@@ -162,9 +162,9 @@ Pour permettre à l’auteur de cibler son contenu, le menu cible doit être ajo
 
 Pour permettre aux auteurs de prévisualiser le contenu ciblé, l’éditeur doit être en mesure de localiser la configuration du service cloud Adobe Target. Le bloc de code ci-dessous ajoute deux scripts importants. Le premier ajout de la possibilité pour la page de localiser le service cloud Target associé et d’envoyer les appels à Adobe Target. Le second est l’ajout de la catégorie cq.apps.targeting .
 
-La variable **cq.apps.targeting** category remplace le composant cq/personalization/component/target par défaut et utilise le composant mobileapps/components/target qui effectue le rendu des offres spécifiquement pour la consommation d’applications mobiles. Pour plus d’informations à ce sujet, consultez la section Composant cible .
+La catégorie **cq.apps.targeting** remplace le composant cq/personalization/component/target par défaut et utilise le composant mobileapps/components/target qui effectue le rendu des offres spécifiquement pour la consommation d’applications mobiles. Pour plus d’informations à ce sujet, consultez la section Composant cible .
 
-Le code doit être ajouté dans head.html et placé juste avant la fin de la variable &lt;/head> élément .
+Le code doit être ajouté dans head.html et placé juste avant la fin de l’élément &lt;/head> .
 
 ```xml
 <div data-sly-test="${!wcmmode.disabled}">
@@ -197,11 +197,11 @@ La dernière partie de code requise se trouve au bas de body.html. Ce code reche
 
 ### Application de référence {#reference-application}
 
-Vous trouverez des exemples de head.html et body.html dans la section [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) indiquant au développeur où placer les blocs de script dans les deux scripts.
+Vous trouverez des exemples head.html et body.html dans l’ [ application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) qui indique au développeur où placer les blocs de script dans les deux scripts.
 
 ### Gestionnaires de synchronisation de contenu {#content-sync-handlers}
 
-Lorsque l’auteur du contenu a fini de créer du contenu pour l’application mobile, l’étape suivante consiste à télécharger la source et à créer l’application, ou à préparer le contenu à publier. Pour ce faire, le développeur doit suivre plusieurs étapes. Pour faciliter le rendu du contenu, AEM Mobile utilise des gestionnaires de synchronisation de contenu pour générer et empaqueter le contenu. Un nouveau gestionnaire de synchronisation de contenu a été introduit pour le cas d’utilisation de la personnalisation pour le rendu du contenu ciblé. Le gestionnaire &quot;mobileappoffers&quot; sait comment effectuer le rendu des offres cibles associées qui ont été créées par l’auteur du contenu. Le gestionnaire mobileappoffers étend le gestionnaire de mise à jour des pages abstraites. Par conséquent, de nombreuses propriétés sont similaires. Les détails du gestionnaire de mobileappoffers possèdent les propriétés suivantes.
+Lorsque l’auteur du contenu a fini de créer du contenu pour l’application mobile, l’étape suivante consiste à télécharger la source et à créer l’application, ou à préparer le contenu à publier. Pour ce faire, le développeur doit suivre plusieurs étapes. Pour faciliter le rendu du contenu, AEM Mobile utilise des gestionnaires de synchronisation de contenu pour générer et empaqueter le contenu. Un nouveau gestionnaire de synchronisation de contenu a été ajouté pour le cas d’utilisation de Personalization afin de rendre le contenu ciblé. Le gestionnaire &quot;mobileappoffers&quot; sait comment effectuer le rendu des offres cibles associées qui ont été créées par l’auteur du contenu. Le gestionnaire mobileappoffers étend le gestionnaire de mise à jour des pages abstraites. Par conséquent, de nombreuses propriétés sont similaires. Les détails du gestionnaire de mobileappoffers possèdent les propriétés suivantes.
 
 <table>
  <tbody>
@@ -252,7 +252,7 @@ Lorsque l’auteur du contenu a fini de créer du contenu pour l’application m
   </tr>
   <tr>
    <td>path</td>
-   <td>/content/campaigns/&lt;brand&gt;</td>
+   <td>/content/campaigns/&lt;marque&gt;</td>
    <td>Identifie la marque de l'opération à laquelle participent les offres. Actuellement, toutes les offres doivent provenir de la même campagne.</td>
   </tr>
   <tr>
@@ -270,13 +270,13 @@ Lorsque l’auteur du contenu a fini de créer du contenu pour l’application m
 
 >[!NOTE]
 >
->La variable [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a la configuration par défaut du gestionnaire mobileappoffer. La propriété path de l’exemple est vide, car elle dépend de l’emplacement de la campagne. Une fois qu’un auteur de campagne a créé une campagne, l’administrateur d’applications doit associer la campagne au gestionnaire en spécifiant la propriété de chemin d’accès vers la campagne.
+>L’ [application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) possède la configuration par défaut du gestionnaire d’offres mobiles. La propriété path de l’exemple est vide, car elle dépend de l’emplacement de la campagne. Une fois qu’un auteur de campagne a créé une campagne, l’administrateur d’applications doit associer la campagne au gestionnaire en spécifiant la propriété de chemin d’accès vers la campagne.
 
 ### Composant cible {#target-component}
 
-Pour faciliter le rendu du contenu spécifiquement pour les applications mobiles, AEM Mobile utilise le composant mobileapps/components/target . Le composant cible mobile étend le composant cq/personalization/components/target et remplace le script engine_tnt.jsp. En remplaçant le fichier engine_tnt.jsp, AEM Mobile permet de contrôler le HTML généré pour le cas d’utilisation des applications mobiles. Pour chaque composant ciblé par un auteur de contenu, une mbox associée est créée par engine_tnt.jsp.
+Pour faciliter le rendu du contenu spécifiquement pour les applications mobiles, AEM Mobile utilise le composant mobileapps/components/target . Le composant cible mobile étend le composant cq/personalization/components/target et remplace le script engine_tnt.jsp. En remplaçant le fichier engine_tnt.jsp, AEM Mobile peut contrôler l’HTML généré pour le cas d’utilisation des applications mobiles. Pour chaque composant ciblé par un auteur de contenu, une mbox associée est créée par engine_tnt.jsp.
 
-Pour chaque mbox, un attribut de **cq-targeting** est ajouté pour permettre aux développeurs d’applications d’écrire du code personnalisé à utiliser comme bon leur semble. La variable [Application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) contient un exemple de directive d’Angular qui utilise l’attribut cq-targeting . Le concept de remplacement du contenu, le moment et la manière dont il est effectué, dépend du développeur de l’application mobile. Un SDK Mobile est fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage d’Adobe. Il appartient au développeur de l’application de spécifier le moment où cet appel doit être effectué en fonction de la conception de son application.
+Pour chaque mbox, un attribut **cq-targeting** est ajouté pour permettre aux développeurs d’applications d’écrire du code personnalisé à utiliser comme bon leur semble. L’ [application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) comporte un exemple de directive d’Angular qui utilise l’attribut cq-targeting . Le concept de remplacement du contenu, le moment et la manière dont il est effectué, dépend du développeur de l’application mobile. Un SDK Mobile est fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage d’Adobe. Il appartient au développeur de l’application de spécifier le moment où cet appel doit être effectué en fonction de la conception de son application.
 
 ## Et après ? {#what-s-next}
 

@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La possibilité d’alerter instantanément les utilisateurs de l’application mobile Adobe Experience Manager (AEM) avec des notifications importantes est essentielle à la valeur d’une application mobile et de ses campagnes marketing. Ici, des étapes doivent être suivies pour permettre à votre application de recevoir des notifications push. Vous apprenez également à configurer et à envoyer des notifications push d’AEM Mobile vers l’application installée sur le téléphone. Cette section décrit également comment configurer la variable [Lien profond](#deeplinking) de vos notifications push.
+La possibilité d’alerter instantanément les utilisateurs de l’application mobile Adobe Experience Manager (AEM) avec des notifications importantes est essentielle à la valeur d’une application mobile et de ses campagnes marketing. Ici, des étapes doivent être suivies pour permettre à votre application de recevoir des notifications push. Vous apprenez également à configurer et à envoyer des notifications push d’AEM Mobile vers l’application installée sur le téléphone. Cette section décrit également comment configurer la fonction [Lien profond](#deeplinking) pour vos notifications push.
 
 >[!NOTE]
 >
->*La diffusion des notifications push n’est pas garantie ; il s’agit plus d’annonces. Un effort est fourni pour s&#39;assurer que chacun les reçoit, mais qu&#39;il ne s&#39;agit pas d&#39;un mécanisme de livraison garanti. En outre, la durée de diffusion d’une notification push peut varier de moins d’une seconde à une demi-heure.*
+>*Les notifications push ne sont pas garanties par la diffusion ; elles sont plus comme des annonces. Un effort est fourni pour s&#39;assurer que chacun les reçoit, mais qu&#39;il ne s&#39;agit pas d&#39;un mécanisme de livraison garanti. En outre, le temps de diffusion d’une notification push peut varier de moins d’une seconde à une demi-heure.*
 
-L’utilisation de notifications push avec AEM nécessite quelques technologies différentes. Tout d&#39;abord, un fournisseur de service de notification push doit être utilisé pour gérer les énumérations et les appareils (AEM ne le fait pas encore). Deux fournisseurs sont configurés d’usine avec AEM : [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (ou SNS) et [Pushwoosh](https://www.pushwoosh.com/). Deuxièmement, la technologie push pour le système d’exploitation mobile donné doit passer par le service approprié : Apple Push Notification Service (ou APNS) pour les appareils iOS et Google Cloud Messaging (ou GCM) pour les appareils Android™. Bien qu’AEM ne communique pas directement avec ces services spécifiques à la plateforme, des informations de configuration associées doivent être fournies par AEM avec les notifications pour que ces services exécutent la notification push.
+L’utilisation de notifications push avec AEM nécessite quelques technologies différentes. Tout d&#39;abord, un fournisseur de service de notification push doit être utilisé pour gérer les énumérations et les appareils (AEM ne le fait pas encore). Deux fournisseurs sont configurés prêts à l’emploi avec AEM : [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (ou SNS) et [Pushwoosh](https://www.pushwoosh.com/). Deuxièmement, la technologie push pour le système d’exploitation mobile donné doit passer par le service approprié : Apple Push Notification Service (ou APNS) pour les appareils iOS et Google Cloud Messaging (ou GCM) pour les appareils Android™. Bien qu’AEM ne communique pas directement avec ces services spécifiques à la plateforme, des informations de configuration associées doivent être fournies par AEM avec les notifications pour que ces services exécutent la notification push.
 
 Une fois installé et configuré (comme expliqué ci-dessous), il fonctionne comme suit :
 
@@ -61,27 +61,27 @@ Lorsqu’un administrateur Experience Manager effectue les opérations suivantes
 
 #### Utilisation du service de notification push Apple (APNS) {#using-the-apple-push-notification-service-apns}
 
-Accédez à la page Apple [here](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) pour vous familiariser avec le service de notification push Apple.
+Accédez à la page Apple [ici](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) pour vous familiariser avec le service de notification push Apple.
 
-Pour utiliser les APNS, vous devez disposer d’un **Certificat** fichier (fichier .cer), un fichier push **Clé privée** (un fichier .p12) et un **Mot de passe de la clé privée** d’Apple. Vous trouverez des instructions pour le faire [here](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+Pour utiliser les APN, vous avez besoin d’un fichier **Certificate** (un fichier .cer), d’une **Clé privée** push (un fichier .p12) et d’un **Mot de passe de clé privée** d’Apple. Vous trouverez des instructions pour le faire [ici](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### Utilisation du service Google Cloud Messaging (GCM) {#using-the-google-cloud-messaging-gcm-service}
 
 >[!NOTE]
 >
->Google remplace GCM par un service similaire appelé Firebase Cloud Messaging (FCM). Pour plus d’informations sur FCM, cliquez sur [here](https://firebase.google.com/docs/cloud-messaging/).
+>Google remplace GCM par un service similaire appelé Firebase Cloud Messaging (FCM). Pour plus d&#39;informations sur FCM, cliquez [ici](https://firebase.google.com/docs/cloud-messaging/).
 
-Accédez à la page Google [here](https://developer.android.com/google/gcm/index.html) pour vous familiariser avec Google Cloud Messaging pour Android™.
+Accédez à la page Google [ici](https://developer.android.com/google/gcm/index.html) pour vous familiariser avec Google Cloud Messaging pour Android™.
 
-[Procédez comme suit :](https://developer.android.com/google/gcm/gs.html) to **Création d’un projet d’API Google**, **Activation du service GCM**, et **Obtention d’une clé API**. Vous avez besoin de **Clé API** pour envoyer des notifications push aux appareils Android™. Enregistrez également votre **Numéro de projet**, qui est également parfois appelé **Identifiant d’expéditeur GCM**.
+[Suivez ces étapes](https://developer.android.com/google/gcm/gs.html) pour **créer un projet d’API Google**, **activer le service GCM** et **obtenir une clé API**. Vous avez besoin de la **clé API** pour envoyer des notifications push aux appareils Android™. Enregistrez également votre **numéro de projet**, parfois appelé **ID d’expéditeur GCM**.
 
 Les étapes suivantes montrent une autre méthode de création de clés API GCM :
 
-1. Connectez-vous à Google et accédez à la [Page du développeur de Google](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm).
+1. Connectez-vous à Google et accédez à la [page développeur Google ](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm).
 1. Sélectionnez votre application dans la liste (ou créez-en une).
-1. Sous Android™ Nom de module, saisissez votre ID d’application, c’est-à-dire : `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec &quot;test.test&quot;.)
-1. Cliquez sur **Continuer à sélectionner et configurer les services**
-1. Sélectionnez Cloud Messaging, puis cliquez sur **Activation de Google Cloud Messaging**.
+1. Sous Android™ Nom de module, saisissez votre ID d’application, c’est-à-dire `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec &quot;test.test&quot;.)
+1. Cliquez sur **Continuer pour sélectionner et configurer des services**
+1. Sélectionnez Cloud Messaging, puis cliquez sur **Activer Google Cloud Messaging**.
 1. La nouvelle clé API du serveur et l’ ID d’expéditeur (nouveau ou existant) s’affichent alors.
 
 >[!NOTE]
@@ -96,15 +96,15 @@ AEM est configuré pour utiliser l’un des trois services pour les notification
 * Pushwoosh
 * Adobe Mobile Services
 
-*AMAZON SNS* et *Pushwoosh* les configurations vous permettent d’envoyer des notifications push depuis AEM écrans.
+Les configurations *Amazon SNS* et *Pushwoosh* vous permettent d’envoyer des messages push depuis AEM écrans.
 
-*Adobe Mobile Services* La configuration vous permet de configurer et d’envoyer des notifications push depuis Adobe Mobile Services à l’aide d’un compte Adobe Analytics (mais l’application doit être créée avec ce jeu de configuration pour activer les notifications push AMS).
+La configuration *Adobe Mobile Services* vous permet de configurer et d’envoyer des notifications push depuis Adobe Mobile Services à l’aide d’un compte Adobe Analytics (mais l’application doit être créée avec cette configuration définie pour activer les notifications push AMS).
 
 #### Utilisation du service de messagerie SNS Amazon {#using-the-amazon-sns-messaging-service}
 
 >[!NOTE]
 >
->*Vous trouverez des informations sur Amazon SNS et un lien pour créer un compte AWS. [here](https://aws.amazon.com/sns/). Vous pouvez avoir un compte gratuit pendant un an.*
+>*Vous trouverez des informations sur Amazon SNS et un lien pour créer un compte AWS [ici](https://aws.amazon.com/sns/). Vous pouvez obtenir un compte gratuit pour un an.*
 
 Si vous ne souhaitez pas utiliser Amazon SNS, vous pouvez ignorer ces étapes.
 
@@ -114,13 +114,13 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
 
    1. Enregistrez votre ID de compte. Le format doit être 12 chiffres sans espaces ni tirets, c’est-à-dire &quot;123456789012&quot;.
    1. Assurez-vous que vous vous trouvez dans la région &quot;us-est&quot; ou &quot;eu&quot;, car une étape ultérieure (Création de pool d’identités) nécessite l’une d’elles.
-   1. Une fois enregistré, connectez-vous à la console de gestion et sélectionnez [SNS](https://console.aws.amazon.com/sns/) (Service de notification push). Cliquez sur &quot;Commencer&quot; s’il apparaît.
+   1. Après l’enregistrement, connectez-vous à la console de gestion et sélectionnez [SNS](https://console.aws.amazon.com/sns/) (Service de notification push). Cliquez sur &quot;Commencer&quot; s’il apparaît.
 
-1. **Création d’une clé d’accès et d’un identifiant**
+1. **Créer une clé d’accès et un ID**
 
    1. Cliquez sur votre nom de connexion en haut à droite de l’écran, puis sélectionnez Informations d’identification de sécurité dans le menu.
-   1. Cliquez sur Accéder aux clés puis, dans l’espace ci-dessous, cliquez sur **Créer une clé d’accès**.
-   1. Cliquez sur **Afficher la clé d’accès**, puis copiez et enregistrez l’ID de clé d’accès et la clé d’accès secrète affichés. Si vous choisissez l’option de téléchargement des clés, vous obtenez un fichier csv contenant les mêmes valeurs.
+   1. Cliquez sur Accéder aux clés, puis, dans l’espace ci-dessous, cliquez sur **Créer une clé d’accès**.
+   1. Cliquez sur **Afficher la clé d’accès**, copiez et enregistrez l’identifiant de clé d’accès et la clé d’accès secrète affichés. Si vous choisissez l’option de téléchargement des clés, vous obtenez un fichier csv contenant les mêmes valeurs.
    1. D’autres certificats liés à la sécurité, et d’autres, peuvent être gérés sur cette page.
 
    >[!NOTE]
@@ -134,9 +134,9 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
    1. Cliquez sur l’onglet Informations d’identification de sécurité .
    1. A partir de là, vous voyez vos clés et créez de nouvelles clés. Enregistrez les clés pour une utilisation ultérieure.
 
-1. **Création d’une rubrique**
+1. **Créer une rubrique**
 
-   1. Cliquez sur **Création d’une rubrique** et choisissez un nom de rubrique. Enregistrez tous les champs tels que Topic ARN, Topic Owner, Region, Display name.
+   1. Cliquez sur **Créer une rubrique** et choisissez un nom de rubrique. Enregistrez tous les champs tels que Topic ARN, Topic Owner, Region, Display name.
    1. Cliquez sur **Autres actions de rubrique** > **Modifier la stratégie de rubrique**. Sous **Autoriser ces utilisateurs à s’abonner à cette rubrique**, sélectionnez **Tout le monde.**
    1. Cliquez sur **Mettre à jour la stratégie**.
 
@@ -144,7 +144,7 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
    >
    >Vous pouvez créer plusieurs rubriques pour différents scénarios tels que le développement, le test et la démonstration. Le reste de la configuration SNS peut rester le même. Créez l’application avec les différentes rubriques ; les notifications push envoyées à cette rubrique ne seront reçues que par l’application créée avec cette rubrique.
 
-1. **Création d’applications Platform**
+1. **Créer des applications de plateforme**
 
    1. Cliquez sur Applications, puis sur Créer une application de plateforme. Choisissez un nom et sélectionnez une plateforme (APNS pour iOS, GCM pour Android™). Selon la plateforme. les autres champs doivent être renseignés :
 
@@ -155,18 +155,18 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
 
 1. **Créer un pool d’identités**
 
-   1. Utilisation [Cognito](https://console.aws.amazon.com/cognito) pour créer un pool d’identités qui stockera les données de base des utilisateurs non authentifiés. Remarque : Actuellement, seules les régions &quot;us-east&quot; (nous-est) et &quot;eu&quot; sont prises en charge par Amazon Cognito.
+   1. Utilisez [Cognito](https://console.aws.amazon.com/cognito) pour créer un pool d’identités qui stockera les données de base des utilisateurs non authentifiés. Remarque : Actuellement, seules les régions &quot;us-east&quot; (nous-est) et &quot;eu&quot; sont prises en charge par Amazon Cognito.
    1. Attribuez-lui un nom et cochez la case &quot;Autoriser l’accès aux identités non authentifiées&quot;.
-   1. Sur la page suivante (&quot;*Vos identités de Cognito nécessitent un accès à vos ressources*&quot;) cliquez sur Autoriser.
+   1. Sur la page suivante (&quot;*Vos identités de cookies requièrent l’accès à vos ressources*&quot;), cliquez sur Autoriser.
    1. Dans le coin supérieur droit de la page, cliquez sur le lien &quot;*Modifier le pool d’identités&quot;*. L’identifiant du pool d’identités s’affiche. Enregistrez ce texte pour plus tard.
-   1. Sur la même page, sélectionnez la liste déroulante en regard de &quot;Rôle non authentifié&quot; et assurez-vous qu’elle dispose du rôle Cognito_&lt;pool name=&quot;&quot;>UnauthRole sélectionné. Enregistrez vos modifications.
+   1. Sur la même page, sélectionnez la liste déroulante en regard de &quot;Rôle non authentifié&quot; et assurez-vous qu’il dispose du rôle Cognito_&lt;nom du pool>UnauthRole sélectionné. Enregistrez vos modifications.
 
 1. **Configurer l’accès**
 
-   1. Connexion à [Gestion des identités et des accès](https://console.aws.amazon.com/iam/home) (IAM).
+   1. Connectez-vous à [Identity and Access Management](https://console.aws.amazon.com/iam/home) (IAM).
    1. Sélectionnez Rôles.
-   1. Cliquez sur le rôle créé à l’étape précédente, appelé Cognito_&lt;youridentitypoolname>Unauth_Role. Enregistrez le &quot;Role ARN&quot; affiché.
-   1. Ouvrez &quot;Stratégies intégrées&quot; si elles ne sont pas déjà ouvertes. Vous devriez y voir une stratégie avec un nom comme oneClick_Cognito_&lt;youridentitypoolname>Unauth_Role_1234567890123.
+   1. Cliquez sur le rôle créé à l’étape précédente, appelé Cognito_&lt;yourIdentityPoolName>Unauth_Role. Enregistrez le &quot;Role ARN&quot; affiché.
+   1. Ouvrez &quot;Stratégies intégrées&quot; si elles ne sont pas déjà ouvertes. Vous devriez y voir une stratégie portant le nom oneClick_Cognito_&lt;yourIdentityPoolName>Unauth_Role_1234567890123.
    1. Cliquez sur &quot;Modifier la stratégie&quot;. Remplacez le contenu du document de stratégie par ce fragment de code JSON :
 
    <table>
@@ -193,7 +193,7 @@ Pour utiliser Pushwoosh :
 
    1. Sur le site Pushwoosh, accédez à l’option de menu Accès à l’API pour générer un jeton d’accès à l’API. Enregistrez ce jeton en toute sécurité.
 
-1. **Création d’une application**
+1. **Créer une application**
 
    1. Pour la prise en charge d’Android™, vous devez fournir votre clé d’API GCM.
    1. Lors de la configuration de l’application, sélectionnez Cordova comme structure.
@@ -202,7 +202,7 @@ Pour utiliser Pushwoosh :
 
 >[!NOTE]
 >
->*Si une seconde application est configurée en AEM avec le même ID d’application (et d’autres valeurs associées : jeton d’accès à l’API et ID GCM), toutes les notifications push envoyées via la seconde application sur AEM iront à toute autre application avec cet ID d’application.*
+>*Si une seconde application est configurée en AEM avec le même ID d’application (et d’autres valeurs associées : Jeton d’accès à l’API et ID GCM), toutes les notifications push envoyées via la seconde application sur AEM iront à toute autre application avec cet ID d’application.*
 
 ### Étape 3 : Ajout de la prise en charge des notifications push à l’application {#step-add-push-support-to-the-app}
 
@@ -214,9 +214,12 @@ Créez deux noeuds de contenu (un dans app-config et un dans app-config-dev) app
 * /content/`<your app>`/shell/jcr:content/page-app/app-config/notificationsConfig
 
 Avec ces propriétés (fichiers .content.xml ) :
-&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; jcr:primaryType=&quot;nt:unstructured&quot; excludeProperties=&quot;[appAPIActainToken]&quot; path=&quot;../../../...&quot;
-[
-targetRootDirectory=&quot;www&quot; type=&quot;notificationsconfig&quot;/>
+&lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
+jcr:primaryType=&quot;nt:unstructured&quot;
+excludeProperties=&quot;[appAPIAcessToken]&quot;
+path=&quot;../../../..&quot;
+targetRootDirectory=&quot;www&quot;
+type=&quot;notificationsconfig&quot;/>
 
 >[!NOTE]
 >
@@ -228,7 +231,7 @@ Les bibliothèques clientes de notification push doivent être ajoutées à l’
 
 En CRXDE Lite :
 
-1. Accédez à */etc/designs/phonegap/&lt;app name=&quot;&quot;>/clientlibsall.*
+1. Accédez à */etc/designs/phonegap/&lt;nom de l’application>/clientlibsall.*
 1. Double-cliquez sur la section incorporer dans le volet des propriétés.
 1. Dans la boîte de dialogue qui s’affiche, ajoutez une bibliothèque cliente en cliquant sur le bouton + .
 1. Dans le nouveau champ de texte, ajoutez &quot;cq.mobile.push&quot;, puis cliquez sur OK.
@@ -253,7 +256,7 @@ Avec XCode 8.1, avant d’utiliser les notifications push, vous devez accéder �
 
 #### Android™ {#android}
 
-Pour installer l’application sur un téléphone Android™ à l’aide de l’interface de ligne de commande (voir ci-dessous : **Étape 6 - Création et déploiement de l’application**), vous devez d’abord mettre le téléphone en &quot;mode développeur&quot;. Voir [Activation des options du développeur sur appareil](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations.
+Pour installer l’application sur un téléphone Android™ à l’aide de l’interface de ligne de commande (voir ci-dessous : **Étape 6 - Créer et déployer l’application**), vous devez d’abord mettre le téléphone en &quot;mode développeur&quot;. Voir [Activation des options du développeur sur l’appareil](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations à ce sujet.
 
 ### Étape 5 : configuration des notifications push sur les applications AEM {#step-configure-push-on-aem-apps}
 
@@ -269,15 +272,15 @@ Avant de créer et de déployer sur votre appareil mobile configuré, vous devez
 
 ### Étape 6 : création et déploiement de l’application {#step-build-and-deploy-the-app}
 
-**Remarque :** Voir les instructions [here](/help/mobile/building-app-mobile-phonegap.md) lors de la création des applications PhoneGap.
+**Remarque :** Voir les instructions [ici](/help/mobile/building-app-mobile-phonegap.md) sur la création d&#39;applications PhoneGap.
 
 Il existe deux manières de créer et déployer votre application à l’aide de PhoneGap.
 
 **Remarque :** Pour les tests de notification push, les émulateurs ne suffiront pas, car les notifications push utilisent un protocole distinct entre le fournisseur push (Apple ou Google) et l’appareil. Les émulateurs et le matériel Mac/PC actuels ne prennent pas en charge cette fonctionnalité.
 
-1. *PhoneGap Build* est un service proposé par PhoneGap qui crée votre application pour vous sur leurs serveurs et vous permet de la télécharger directement sur votre appareil. Voir la documentation PhoneGap Build à l’adresse `https://build.phonegap.com/` pour apprendre à configurer et à utiliser le PhoneGap Build.
+1. *PhoneGap Build* est un service proposé par PhoneGap qui va créer votre application pour vous sur leurs serveurs et vous permettre de la télécharger directement sur votre appareil. Pour découvrir comment configurer et utiliser le PhoneGap Build, consultez la documentation du PhoneGap Build à l’adresse `https://build.phonegap.com/`.
 
-1. *Interface de ligne de commande PhoneGap* (interface de ligne de commande) vous permet d’utiliser un vaste ensemble de commandes PhoneGap sur votre ligne de commande pour créer, déboguer et déployer votre application. Reportez-vous à la documentation destinée aux développeurs PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) pour savoir comment configurer et utiliser l’interface de ligne de commande de PhoneGap.
+1. *L’interface de ligne de commande PhoneGap* vous permet d’utiliser un large ensemble de commandes PhoneGap sur votre ligne de commande pour créer, déboguer et déployer votre application. Reportez-vous à la documentation destinée aux développeurs PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) pour savoir comment configurer et utiliser l’interface de ligne de commande PhoneGap.
 
 ### Étape 7 : envoi d’une notification push {#step-send-a-push-notification}
 
@@ -304,11 +307,11 @@ Pour créer une notification et l&#39;envoyer, procédez comme suit.
       * La création avec l’interface de ligne de commande démarre l’application après son déploiement sur Android™. Sur iOS, vous devez le démarrer manuellement. Comme l’étape d’enregistrement push se produit au démarrage, les applications Android™ peuvent recevoir immédiatement des notifications push (car elles ont déjà commencé et sont enregistrées), contrairement aux applications iOS.
       * Sur Android™, le texte du bouton OK se trouve en majuscules (et dans tous les autres boutons ajoutés à la notification in-app), contrairement à iOS.
 
-Pour les notifications push AMS, les notifications doivent être composées et envoyées à partir du serveur AMS. AMS fournit des fonctionnalités de notification push supplémentaires au-delà de celles fournies par les notifications AEM avec AWS et Pushwoosh.
+Pour les notifications push AMS, les notifications doivent être composées et envoyées à partir du serveur AMS. AMS fournit des fonctionnalités de notification push supplémentaires au-delà de celles fournies en AEM des notifications avec AWS et Pushwoosh.
 
 >[!NOTE]
 >
->*La diffusion des notifications push n’est pas garantie ; il s’agit plus d’annonces. Un effort est fourni pour s&#39;assurer que tout le monde l&#39;entend, mais qu&#39;il ne s&#39;agit pas d&#39;un mécanisme de livraison garanti. En outre, la durée de diffusion d’une notification push peut varier de moins d’une seconde à une demi-heure.*
+>*Les notifications push ne sont pas garanties par la diffusion ; elles sont plus comme des annonces. Un effort est fourni pour s&#39;assurer que tout le monde l&#39;entend, mais qu&#39;il ne s&#39;agit pas d&#39;un mécanisme de livraison garanti. En outre, le temps de diffusion d’une notification push peut varier de moins d’une seconde à une demi-heure.*
 
 ### Configuration de liens profonds avec des notifications push {#configuring-deep-linking-with-push-notifications}
 
@@ -324,27 +327,27 @@ Créez la notification, ajoutez un texte de bouton et un chemin de lien pour le 
 >
 >Pour accéder à la mosaïque Notification push dans votre tableau de bord, procédez comme suit.
 
-1. Cliquez sur la modification dans le coin supérieur droit du **Gestion des Cloud Service** mosaïque.
+1. Cliquez sur la modification dans le coin supérieur droit de la mosaïque **Gérer les Cloud Service** .
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-1. Sélectionnez la variable **Connexion push**. Cliquez sur **Suivant**.
+1. Sélectionnez la **connexion Pushwoosh**. Cliquez sur **Suivant**.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. Saisissez les détails des propriétés, puis cliquez sur **Envoyer**.
+1. Saisissez les détails des propriétés et cliquez sur **Submit**.
 
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
-   Une fois que vous avez envoyé votre configuration, **Notifications push** s’affiche dans le tableau de bord.
+   Une fois la configuration envoyée, la mosaïque **Notifications push** s’affiche dans le tableau de bord.
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
 ### Assistant de création de notification {#create-notification-wizard}
 
-Une fois que la variable **Notifications push** s’affiche dans votre tableau de bord, utilisez l’assistant de création de notification pour ajouter le contenu :
+Une fois que la mosaïque **Notifications push** s’affiche dans votre tableau de bord, utilisez l’assistant de création de notification pour ajouter le contenu :
 
-1. Cliquez sur le symbole d’ajout dans le coin supérieur droit de la **Notifications push** pour ouvrir la mosaïque **Assistant Créer une notification**.
+1. Cliquez sur le symbole d’ajout situé dans le coin supérieur droit de la mosaïque **Notifications push** pour ouvrir l’**assistant Créer une notification**.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -360,11 +363,11 @@ Une fois que la variable **Notifications push** s’affiche dans votre tableau d
    >
    >Si l’utilisateur final ne dispose pas de la dernière version de l’application et que le chemin d’accès associé n’est pas disponible, confirmer l’action du lien profond amènera l’utilisateur à la page principale de l’application.
 
-1. Saisissez le **Détails du texte** dans le **Assistant Créer une notification** et cliquez sur **Créer**.
+1. Saisissez les **détails du texte** dans l’ **assistant Créer une notification** et cliquez sur **Créer**.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-   Ouvrez les détails en cliquant sur la notification push que vous avez créée à partir du **Notifications push** mosaïque.
+   Ouvrez les détails en cliquant sur la notification push que vous avez créée à partir de la mosaïque **Notifications push** .
 
    Vous pouvez modifier les propriétés, envoyer des notifications ou supprimer la notification.
 
@@ -372,10 +375,10 @@ Une fois que la variable **Notifications push** s’affiche dans votre tableau d
 
 >[!NOTE]
 >
->**Informations supplémentaires**:
+>**Informations supplémentaires** :
 >
 >Pushwoosh et Amazon SNS ne seront pas pris en charge après la version 6.4 et seront disponibles sous forme de module complémentaire à partir du partage de modules.
 
 ### Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez compris les détails des notifications push pour votre application, voir [Personnalisation du contenu AEM Mobile](/help/mobile/phonegap-aem-mobile-content-personalization.md).
+Une fois que vous avez compris les détails des notifications push pour votre application, voir [AEM Mobile Content Personalization](/help/mobile/phonegap-aem-mobile-content-personalization.md).

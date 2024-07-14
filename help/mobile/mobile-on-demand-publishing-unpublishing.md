@@ -1,5 +1,5 @@
 ---
-title: Publication du contenu Annuler la publication
+title: Publish - Ne plus publier de contenu
 description: Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, suivez cette page pour découvrir comment publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
 contentOwner: User
 content-type: reference
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ---
 
-# Publication du contenu Annuler la publication{#publish-unpublish-content}
+# Publish - Ne plus publier de contenu{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ Une fois que vous connaissez les actions de gestion de contenu sur les articles,
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) dans l’aide en ligne.
 
 ## Publication/annulation de la publication du contenu {#publishing-unpublishing-the-content}
 
-Cela diffère d’une &quot;publication AEM&quot;. Vous ne publiez pas de contenu vers une instance de serveur de publication AEM pour le rendre visible publiquement. Ici, vous informez Mobile On Demand que le contenu sélectionné doit être rendu public dans l’application Mobile On Demand en ligne.
+Cela diffère d’une &quot;Publish AEM&quot;. Vous n’envoyez pas de contenu vers une instance de serveur Publish AEM pour le rendre visible publiquement. Ici, vous informez Mobile On Demand que le contenu sélectionné doit être rendu public dans l’application Mobile On Demand en ligne.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Processus général de publication/annulation de la publication d’un article :
 1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionnez un article.
 1. Ajoutez des articles supplémentaires si nécessaire en mode Liste.
-1. Sélectionnez Publier dans la barre d’actions. Après quelques instants, vos articles seront maintenant publics.
+1. Sélectionnez Publish dans la barre d’actions. Après quelques instants, vos articles seront maintenant publics.
 1. Suivez les étapes ci-dessus pour annuler la publication d’articles.
 
 <!-- FAIL >>[!NOTE]
@@ -57,4 +57,4 @@ Une fois que vous avez appris à créer et publier du contenu, reportez-vous aux
 * [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administration de contenu pour l’utilisation d’AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, voir [Création de contenu AEM pour les applications AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).
+Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, reportez-vous à la section [Création de contenu AEM pour les applications AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).

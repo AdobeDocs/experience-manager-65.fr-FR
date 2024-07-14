@@ -100,7 +100,7 @@ Les pages suivantes fournissent des informations plus détaillées sur le dével
 * [Développement de composants AEM](/help/sites-developing/developing-components.md)
 * [Développement de composants AEM – Échantillons de code](/help/sites-developing/developing-components-samples.md)
 * [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md)
-* [Mode Développeur](/help/sites-developing/developer-mode.md)
+* [Mode de développement](/help/sites-developing/developer-mode.md)
 * [Tester votre IU](/help/sites-developing/hobbes.md)
 * [Composants pour les fragments de contenu](/help/sites-developing/components-content-fragments.md)
 * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)

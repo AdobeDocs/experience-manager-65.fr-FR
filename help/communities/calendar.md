@@ -26,25 +26,25 @@ La fonction Calendrier prend en charge la fourniture d’informations sur les é
 Cette section de la documentation décrit
 
 * Ajout de la fonction Calendrier à un site AEM
-* Paramètres de configuration pour `Calendar` components
+* Paramètres de configuration des composants `Calendar`
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
 
-Pour ajouter une `Calendar` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter un composant `Calendar` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Calendar`
 
 Faites-le glisser sur la page, par exemple à un emplacement relatif à la fonction à réviser par les utilisateurs.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Calendar` s’affiche.
+Lorsque les [bibliothèques côté client demandées](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, voici comment le composant `Calendar` apparaît.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Configuration du calendrier {#configuring-calendar}
 
-Sélectionnez le `Calendar` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Calendar` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -52,7 +52,7 @@ Sélectionnez le `Calendar` afin que vous puissiez accéder au `Configure` qui o
 
 #### Onglet Paramètres {#settings-tab}
 
-Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux entrées du calendrier.
+Sous l’onglet **Paramètres** , indiquez si les balises doivent être appliquées aux entrées du calendrier.
 
 * **Événements par page**
 
@@ -72,23 +72,23 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
 * **Autoriser le balisage**
 
-  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise aux événements qu’ils publient (voir **Champ de balise** ). La valeur par défaut est cochée.
+  Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise aux événements qu’ils publient (voir l’onglet **Champ de balise** ). La valeur par défaut est cochée.
 
 * **Autoriser les chargements de fichiers**
 
   Si cette case est cochée, les fichiers joints peuvent être ajoutés à un événement ou à un commentaire de calendrier. La valeur par défaut est cochée.
 
-* **Autoriser l’exécution**
+* **Autoriser l’abonnement**
 
   Si cette case est cochée, les membres ont le droit de suivre les événements publiés dans le calendrier. La valeur par défaut est cochée.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+  Pertinent uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichiers autorisés**
 
-  Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+  Pertinent uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne peuvent pas être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -102,7 +102,7 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   Si cette case est cochée, les réponses aux commentaires sont publiées sur l’événement de calendrier. La valeur par défaut est cochée.
 
-* **Autorisation de la suppression des commentaires et événements par les utilisateurs**
+* **Autoriser les utilisateurs à supprimer des commentaires et des événements**
 
   Si cette case est cochée, autorisez les membres à supprimer les commentaires et les événements de calendrier qu’ils ont publiés. La valeur par défaut est cochée.
 
@@ -114,15 +114,15 @@ Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux e
 
   Afficher le chemin de navigation sur la page d’événement. La valeur par défaut est cochée.
 
-* **Filtre Période**
+* **Filtre de plage de dates**
 
   Définit le nombre de jours ajoutés à la date actuelle pour calculer la valeur &quot;À&quot; du filtre de la page de liste des événements du calendrier. La valeur par défaut est 30.
 
-* **Autoriser le contenu proposé**
+* **Autoriser le contenu en vedette**
 
-  Si cette option est cochée, l’idée est identifiable comme [contenu proposé](/help/communities/featured.md). La case par défaut est décochée.
+  Si cette case est cochée, l’idée est identifiable en tant que [contenu présenté](/help/communities/featured.md). La case par défaut est décochée.
 
-Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération d’utilisateur** , spécifiez la manière dont les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
@@ -130,7 +130,7 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
   Si cette case est cochée, les membres modérateurs autorisés sont autorisés à refuser des publications et à empêcher que la publication ne s’affiche sur le forum public. La valeur par défaut est cochée.
 
-* **Fermer/rouvrir des événements**
+* **Fermer/rouvrir les événements**
 
   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer un événement afin d’apporter d’autres modifications et commentaires et rouvrir un événement. La valeur par défaut est cochée.
 
@@ -138,11 +138,11 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
   Si cette case est cochée, les membres ont le droit de signaler les événements ou commentaires d’autres personnes comme étant inappropriés. La valeur par défaut est cochée.
 
-* **Marquer la liste de motifs**
+* **Liste des motifs de l’indicateur**
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un événement ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
-* **Motif de l’indicateur personnalisé**
+* **Motif d’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un événement ou un commentaire comme étant inapproprié. La case par défaut est décochée.
 
@@ -156,11 +156,11 @@ Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponse
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Sous , **Champ de balise** , les balises qui peuvent être appliquées, le cas échéant, sous l’onglet **Paramètres** sont limités en fonction des espaces de noms sélectionnés.
+Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées, si elles sont autorisées sous l’onglet **Paramètres**, sont limitées en fonction des espaces de noms sélectionnés.
 
 * **Espaces de noms autorisés**
 
-  Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+  Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestion**
 
@@ -168,13 +168,13 @@ Sous , **Champ de balise** , les balises qui peuvent être appliquées, le cas �
 
 >[!NOTE]
 >
->Visite [Administration des balises](/help/sites-administering/tags.md) où vous pouvez apprendre à ajouter un espace de noms de balise (taxonomie).
+>Visitez [Administration des balises](/help/sites-administering/tags.md) où vous pouvez apprendre à ajouter un espace de noms de balise (taxonomie).
 
 #### Onglet Traduction {#translation-tab}
 
-Sous , **Traduction** , si la traduction est activée pour le site de la communauté, elle peut être définie pour traduire l’ensemble du fil (événement et commentaires) au lieu de publications spécifiques.
+Sous l’onglet **Traduction**, si la traduction est activée pour le site de la communauté, la traduction peut être définie pour traduire l’intégralité du fil (événement et commentaires) au lieu de publications spécifiques.
 
-* **Tout traduire**
+* **Traduire tout**
 
   Si cette case est cochée, l’événement et les commentaires sont traduits dans la langue préférée de l’utilisateur. La valeur par défaut est cochée.
 
@@ -188,18 +188,18 @@ Les autres fonctionnalités dépendent si le visiteur du site est modérateur, a
 
 ### Modérateurs et administrateurs {#moderators-and-administrators}
 
-Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut effectuer les opérations suivantes : [tâches de modération](/help/communities/moderate-ugc.md) (comme autorisé par la configuration du composant) sur tous les événements et commentaires de calendrier publiés pour un événement.
+Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut exécuter [des tâches de modération](/help/communities/moderate-ugc.md) (comme autorisé par la configuration du composant) sur tous les événements et commentaires de calendrier publiés pour un événement.
 
-![modérateurs-view](assets/moderators-view.png)
+![modérators-view](assets/moderators-view.png)
 
 #### Membres {#members}
 
-Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), ils peuvent sélectionner `New Event` pour créer et publier un événement de calendrier.
+Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Event` pour créer et publier un nouvel événement de calendrier.
 
 Plus précisément, ils peuvent :
 
 * Créer un événement de calendrier
-* Publication d’un commentaire sur un événement de calendrier
+* Post d’un commentaire à un événement de calendrier
 * Modifier leur propre événement ou commentaire de calendrier
 * Suppression de leur propre événement ou commentaire de calendrier
 * Marquer les événements ou commentaires de calendrier d’autres
@@ -216,10 +216,10 @@ Les visiteurs qui ne sont pas connectés ne peuvent lire que les événements de
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Principes de base du calendrier](/help/communities/calendar-basics-for-developers.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur le calendrier](/help/communities/calendar-basics-for-developers.md) pour les développeurs.
 
-Pour la modération des événements et des commentaires de calendrier, reportez-vous à la section [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Pour la modération des événements et des commentaires de calendrier, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour baliser des événements et des commentaires de calendrier, voir [Balisage du contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser les événements de calendrier et les commentaires, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour consulter la traduction des événements et des commentaires de calendrier, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+Pour la traduction des événements et des commentaires de calendrier, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).

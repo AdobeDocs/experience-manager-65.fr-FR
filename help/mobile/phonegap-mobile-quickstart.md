@@ -1,6 +1,6 @@
 ---
 title: Démarrage rapide mobile
-description: Consultez cette page pour en savoir plus sur AEM Vérifier l’application. L’application AEM Verify est un moyen rapide et facile d’exécuter vos applications mobiles AEM sur n’importe quel appareil mobile iOS ou Android.
+description: Consultez cette page pour en savoir plus sur AEM Vérifier l’application. L’application AEM Verify est un moyen simple et rapide d’exécuter vos applications mobiles AEM sur n’importe quel périphérique mobile iOS ou Android.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

@@ -28,15 +28,15 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et des couvertures. Il est possible de créer trois types principaux de contenu Mobile On Demand dans AEM :
 
-* **Articles**: texte basé sur l’art pour transmettre des informations
+* **Articles** : texte associé à de l’art pour transmettre des informations
 * **Bannières :** liens promotionnels typiquement graphiques
-* **Collections :** représente une *compartiment* remplie avec du contenu tel que des articles ou des bannières qui correspondent au thème de la couverture.
+* **Collections :** représentent un *compartiment* bien défini rempli de contenu tel que des articles ou des bannières qui correspondent au thème de la couverture.
 
-* **Ressources partagées :** permet la réutilisation ou le partage d’articles communs entre les articles ;
+* **Ressources partagées :** permet de réutiliser ou de partager des articles communs à tous les articles
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 ## Création et gestion de contenu {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ Les rubriques suivantes décrivent la création et la gestion de contenu, à sav
 * [Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Chargement de ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publication du contenu Annuler la publication](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Ne plus publier de contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->En règle générale, vous devez effectuer un contrôle en amont avant de publier du contenu. Voir [Aperçu avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md) pour plus d’informations.
+>En règle générale, vous devez effectuer un contrôle en amont avant de publier du contenu. Pour plus d’informations, voir [Aperçu avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md) .
 
 ### Ressources supplémentaires {#additional-resources}
 

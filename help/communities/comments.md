@@ -25,8 +25,8 @@ La fonction de commentaires permet aux visiteurs (membres) connectés de partage
 
 Le document décrit :
 
-* Ajouter `Comments` sur une page.
-* Paramètres de configuration de la variable `Comments` composant.
+* Ajout de `Comments` à une page.
+* Paramètres de configuration du composant `Comments`.
 
 >[!NOTE]
 >
@@ -34,33 +34,33 @@ Le document décrit :
 
 ### Ajout de commentaires à une page {#adding-comments-to-a-page}
 
-Pour ajouter une `Comments` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter un composant `Comments` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Comments`
 
 et faites-le glisser sur la page, par exemple à une position relative à la fonction pour que les utilisateurs puissent commenter, ou simplement au bas de la page.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-comments.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Comments` s’affiche.
+Lorsque les [bibliothèques côté client demandées](/help/communities/essentials-comments.md#essentials-for-client-side) sont incluses, voici comment le composant `Comments` apparaît.
 
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->Un seul `Comments` peut exister sur une page. Notez que plusieurs fonctionnalités de Communities incluent déjà des commentaires, tels qu’un blog, un calendrier, un forum, une note de service et des commentaires.
+>Un seul composant `Comments` peut exister sur une page. Notez que plusieurs fonctionnalités de Communities incluent déjà des commentaires, tels qu’un blog, un calendrier, un forum, une note de service et des commentaires.
 
 ### Configuration des commentaires {#configuring-comments}
 
-Sélectionnez le `Comments` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Comments` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![icône de configuration](assets/configure.png)
 
-![comments settings](assets/commentssettings.png)
+![commentsettings](assets/commentssettings.png)
 
 #### Onglet Commentaires {#comments-tab}
 
-Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis par les visiteurs.
+Sous l’onglet **Commentaires** , indiquez la manière dont les commentaires sont saisis par les visiteurs.
 
 * **Autoriser les réponses**
 
@@ -74,11 +74,11 @@ Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis
 
   Si cette case est cochée, l’option permettant de télécharger un fichier est présentée avec la zone de saisie de texte. La valeur par défaut est désélectionnée.
 
-* **Taille de fichier maximale**
+* **Taille de fichier max.**
 
   À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Cette valeur limite la taille du fichier téléchargé. La limite par défaut est de 10 Mo.
 
-* **Longueur max. du message**
+* **Longueur de message max.**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
@@ -94,7 +94,7 @@ Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis
 
   Si cette case est cochée, l’option permettant de voter vers le haut ou vers le bas est présentée avec la zone de saisie de texte. La valeur par défaut est désélectionnée.
 
-* **Autoriser l’exécution**
+* **Autoriser l’abonnement**
 
   Si cette option est cochée, les membres ont le droit de suivre les commentaires. La valeur par défaut est désélectionnée.
 
@@ -104,13 +104,13 @@ Sous , **Commentaires** , indiquez la manière dont les commentaires sont saisis
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous , **Modération d’utilisateur** , indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération d’utilisateur**, indiquez comment les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-* **Prémodération**
+* **Pré-modération**
 
   Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La valeur par défaut est désélectionnée.
 
-* **Supprimer des commentaires**
+* **Supprimer les commentaires**
 
   Si cette case est cochée, le membre qui a publié le commentaire peut le supprimer. La valeur par défaut est désélectionnée.
 
@@ -122,15 +122,15 @@ Sous , **Modération d’utilisateur** , indiquez comment les commentaires publi
 
   Si cette case est cochée, les modérateurs peuvent fermer et rouvrir les commentaires. La valeur par défaut est désélectionnée.
 
-* **Marquer les commentaires**
+* **Flag Comments**
 
   Si cette case est cochée, les membres ont le droit de signaler les commentaires comme inappropriés. La valeur par défaut est désélectionnée.
 
-* **Marquer la liste de motifs**
+* **Liste des motifs de l’indicateur**
 
   Si cette case est cochée, les membres ont le droit de choisir dans une liste déroulante la raison pour laquelle ils ont marqué un commentaire comme étant inapproprié. La valeur par défaut est désélectionnée.
 
-* **Motif de l’indicateur personnalisé**
+* **Motif d’indicateur personnalisé**
 
   Si cette case est cochée, autorisez les membres à indiquer leur propre raison de signaler un commentaire comme inapproprié. La valeur par défaut est désélectionnée.
 
@@ -140,45 +140,45 @@ Sous , **Modération d’utilisateur** , indiquez comment les commentaires publi
 
 * **Limite de marquage**
 
-  Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal à **Seuil de modération**. La valeur par défaut est 5.
+  Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal au **seuil de modération**. La valeur par défaut est 5.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **Champ de tri**
 
-  Menu déroulant pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, ou `Most Liked`.
+  Descendez pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` ou `Most Liked`.
 
 * **Ordre de tri**
 
-  Menu déroulant pour sélectionner l’un des `Ascending` ou `Descending`.
+  Descendez pour sélectionner l’un des `Ascending` ou `Descending`.
 
 ### Modification d’un type de commentaire personnalisé {#changing-to-a-custom-comment-type}
 
 En modifiant le type de ressource de commentaire, le système de commentaires ne génère plus une instance d’un commentaire à l’aide de la valeur par défaut, mais une instance qui a été personnalisée (étendue) par les développeurs.
 
-Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](/help/sites-authoring/default-components-designmode.md) et double-cliquez sur le `Comments` pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
+Une fois les types de ressources personnalisés connus, saisissez [Mode de conception](/help/sites-authoring/default-components-designmode.md) et double-cliquez sur le composant `Comments` inséré pour ouvrir une boîte de dialogue avec un onglet supplémentaire.
 
-Sous , **Types de ressources** , spécifiez le type de ressource personnalisé pour les nouvelles instances de la variable `Comments or Voting` composants :
+Sous l’onglet **Resource Types** , spécifiez le type de ressource personnalisé pour les nouvelles instances des composants `Comments or Voting` :
 
 ![resource-type](assets/resource-type.png)
 
 * **Type de ressource de commentaire**
 
-  Accédez au resourceType d’une extension `comment` composant (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
+  Accédez au resourceType d’un composant `comment` étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
 
   Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un commentaire.
 
 * **Type de ressource de vote**
 
-  Accédez au resourceType d’une extension `voting` dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
+  Accédez au resourceType d’un composant `voting` étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
 
   Cette ressource identifie le type de ressource du contenu créé par un visiteur lorsqu’il publie un vote.
 
-* **Type de ressource système de commentaires**
+* **Type de ressource système de commentaire**
 
-  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [`{{include}}` assistance](/help/communities/handlebars-helpers.md#include).
+  Accédez au resourceType d’un composant `comments`étendu (système de commentaires) dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). Pour en savoir plus, consultez la section [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
 
 ### Expérience du visiteur du site {#site-visitor-experience}
 
@@ -190,7 +190,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 Lorsque le visiteur du site est connecté, selon la configuration, il peut :
 
-* Publier un nouveau commentaire
+* Post d’un nouveau commentaire
 * Modifier son propre commentaire
 * Supprimer son propre commentaire
 * Marquer les commentaires des autres
@@ -201,8 +201,8 @@ Les visiteurs qui ne sont pas connectés ne peuvent lire que les commentaires pu
 
 ### Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Notions fondamentales sur les commentaires](/help/communities/essentials-comments.md) pour les développeurs.
+Pour plus d’informations, reportez-vous à la page [Comments Essentials](/help/communities/essentials-comments.md) pour les développeurs.
 
-Pour la modération des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Pour la modération des commentaires publiés, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 Pour la traduction des commentaires publiés, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).

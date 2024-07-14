@@ -12,7 +12,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -210,7 +210,7 @@ Pour créer une zone comme Live Copy :
 
 ## Liaison de sites à une zone {#linking-sites-to-an-area}
 
-Vous pouvez lier des zones à des pages ou à un site. Les zones sont héritées par toutes les sous-pages, sauf si ces pages sont superposées par un mappage sur une sous-page. Toutefois, les liens sont généralement établis au niveau du site.
+Vous pouvez lier des zones à des pages ou à un site. Les zones sont héritées par toutes les sous-pages à moins que ces pages ne soient recouvertes par un mappage sur une sous-page. Toutefois, les liens sont généralement établis au niveau du site.
 
 Lorsque vous liez, seules les activités, expériences et offres de la zone sélectionnée sont disponibles. Cela évite la confusion accidentelle du contenu géré de manière indépendante. Si aucune autre zone n’est configurée, la zone principale de chaque marque est utilisée.
 

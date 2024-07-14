@@ -32,15 +32,15 @@ Configuration de l’interface de ligne de commande PhoneGap (`https://docs.phon
 
 Pour iOS : pour développer pour iPhone et iPad, vous avez besoin d’Apple Xcode IDE.
 
-* Téléchargez-le gratuitement [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Téléchargez-le gratuitement [ici](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * Guide de la plateforme PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Pour Android™ : pour développer pour iPhone et iPad, vous avez besoin de Google pour Android™ Stuido IDE.
+Pour Android™ : pour développer pour iPhone et iPad, vous avez besoin de Google Android™ Stuido IDE.
 
-* Téléchargez-le gratuitement [here](https://developer.android.com/studio).
+* Téléchargez-le gratuitement [ici](https://developer.android.com/studio).
 * Guide de la plateforme PhoneGap Android™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## Téléchargement de la source {#download-the-source}
+## Téléchargement de Source {#download-the-source}
 
 Une fois que vous avez démarré votre environnement de développement, téléchargez la source à partir de la mosaïque AEM App Build :
 
@@ -48,8 +48,8 @@ Une fois que vous avez démarré votre environnement de développement, téléch
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* Cliquez sur Télécharger la source.
-* Sélectionnez la source souhaitée dans le modal Source de téléchargement .
+* Cliquez sur Télécharger Source.
+* Sélectionnez la source souhaitée dans le modal Télécharger Source .
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -68,7 +68,7 @@ L’interface de ligne de commande de PhoneGap peut créer un projet de platefor
 
 >[!NOTE]
 >
->Vous pouvez effectuer toutes ces étapes séparément, voir la documentation sur la ligne de commande de PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
+>Vous pouvez effectuer toutes ces étapes séparément, voir la documentation de l’interface de ligne de commande PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Vérifiez que vous avez installé l’interface de ligne de commande PhoneGap, voir ci-dessus.
 1. Dans une fenêtre de console (ou de terminal), accédez au répertoire racine de la source extraite.
@@ -90,14 +90,14 @@ phonegap run ios
 >1. Accédez à ce nouveau dossier (test cd)
 >1. Exécutez `phonegap create helloWorld`.
 >1. Accédez à helloWorld (cd helloWorld).
->1. Exécuter `phonegap run android` (ou remplacez Android™ par iOS comme ci-dessus).
->1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour l’appareil&quot; si le pont JavaScript vers natif est opérationnel.
+>1. Exécutez `phonegap run android` (ou remplacez Android™ par iOS comme ci-dessus).
+>1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour l’appareil&quot; si le Bridge JavaScript natif est opérationnel.
 >
 >Ce dépannage vérifie que l’environnement de développement de l’interface de ligne de commande de PhoneGap s’exécute correctement.
 
 ## Débogage de JavaScript avec Safari et débogage IOS {#debug-javascripts-with-safari-and-ios-debug}
 
-Vous pouvez déboguer le code JavaScript de votre application à l’aide des outils de développement de Safari, comme vous le feriez avec une application web.
+Vous pouvez déboguer JavaScript de votre application à l’aide des outils de développement de Safari, comme vous le feriez avec une application web.
 
 ## Activation des outils de développement Safari {#enable-safari-developer-tools}
 
@@ -150,7 +150,7 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 
 * Utilisez les boutons de contrôle pour continuer l’exécution, passer à l’étape suivante, entrer et sortir des méthodes :
 
-![Cinq boutons de contrôle fonctionnels différents alignés sur une ligne horizontale.](do-not-localize/chlimage_1-4.png)
+![Cinq boutons de commande différents qui fonctionnent alignés sur une ligne horizontale.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 
 ## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez pris connaissance du développement d’applications avec l’interface de ligne de commande de PhoneGap, voir [Accès aux fonctionnalités du périphérique](/help/mobile/phonegap-access-device-features.md).
+Une fois que vous avez appris à développer des applications avec l’interface de ligne de commande PhoneGap, reportez-vous à la section [Accès aux fonctionnalités d’appareil](/help/mobile/phonegap-access-device-features.md).

@@ -22,17 +22,17 @@ ht-degree: 4%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La variable **`Manage App`** dans le tableau de bord de l’application , vous permet de modifier les détails de l’application. Pour ouvrir la page Détails, cliquez sur le bouton **`Manage App`** lien des détails de la mosaïque. Dans la fonction **`Manage App`** , vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer votre application en vue de l’envoyer aux différents magasins d’applications.
+La mosaïque **`Manage App`** du tableau de bord de l’application vous permet de modifier les détails de l’application. Pour ouvrir la page Détails, cliquez sur le lien Détails de la mosaïque **`Manage App`**. Dans la page **`Manage App`**, vous pouvez modifier les paramètres Configuration de l’application PhoneGap (config.xml) et préparer l’envoi de votre application aux différents magasins d’applications.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Présentation de la fonction `Manage App` mosaïque {#understanding-the-manage-app-tile}
+## Présentation de la mosaïque `Manage App` {#understanding-the-manage-app-tile}
 
-Vous pouvez explorer chaque mosaïque de la section **`Manage App`** pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit.
+Vous pouvez parcourir chaque mosaïque de la mosaïque **`Manage App`** pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit.
 
 ### Onglet De base {#the-basic-tab}
 
-Vous pouvez modifier la variable **Nom**, **Auteur**, **Description courte**, et la variable **Description** pour votre application depuis cet onglet.
+Vous pouvez modifier les **Nom**, **Auteur**, **Description courte** et la **Description** de votre application depuis cet onglet.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -55,7 +55,7 @@ Chaque boutique d’applications de fournisseur (Apple App Store ou Google Play 
 >
 >L’application AEM Vérifier vous permet d’envoyer des captures d’écran directement aux détails de votre application dans AEM.
 >
->Voir [Démarrage rapide mobile pour la vérification AEM](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
+>Pour plus d’informations, voir [Démarrage rapide mobile pour AEM de la vérification](/help/mobile/phonegap-mobile-quickstart.md) .
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -63,7 +63,7 @@ Chaque boutique d’applications de fournisseur (Apple App Store ou Google Play 
 
 >[!NOTE]
 >
->Une fois que vous connaissez le **`Manage App`** mosaïque, voir [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
+>Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [Modification des métadonnées de l’application](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 
@@ -73,11 +73,11 @@ Il existe une configuration et des métadonnées communes à toutes les platefor
 
 Dans cette section, vous définissez l’URL du serveur de mise à jour de contenu, la page d’entrée de votre application mobile, la version de PhoneGap à des fins de compilation, la version de votre application, le nom, la description, etc.
 
-**Version de l’application** est la version opérationnelle de votre application. Il est recommandé d’utiliser une notation à 3 décimales et de commencer sous 1.0.0 avant votre première version.
+**App Version** est la version opérationnelle de votre application. Il est recommandé d’utiliser une notation à 3 décimales et de commencer sous 1.0.0 avant votre première version.
 
-**Version de PhoneGap** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. La bonne pratique consiste à suivre la version actuelle pour vous assurer d’obtenir les fonctionnalités et correctifs les plus récents et les plus performants.
+**PhoneGap Version** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. La bonne pratique consiste à suivre la version actuelle pour vous assurer d’obtenir les fonctionnalités et correctifs les plus récents et les plus performants.
 
-**URL du serveur de mise à jour de contenu** est l’URL utilisée par votre application pour appeler les mises à jour ContentSync. Elle doit être définie sur votre URL de Dispatcher ou, si vous n’utilisez pas un Dispatcher, sur l’une de vos instances de publication utilisée pour diffuser les mises à jour ContentSync à votre application.
+**URL du serveur de mise à jour de contenu** est l’URL utilisée par votre application pour appeler les mises à jour ContentSync. Elle doit être définie sur votre URL Dispatcher ou, si vous n’utilisez pas de Dispatcher, sur l’une de vos instances de publication utilisée pour fournir des mises à jour ContentSync à votre application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -91,7 +91,7 @@ Dans cette section, vous définissez l’URL du serveur de mise à jour de conte
 
 Chaque plateforme définie dans le fichier de configuration PhoneGap config.xml peut contenir des propriétés de plateforme personnalisées. Un développeur AEM doit contribuer à la structure de contenu pour capturer ces propriétés. Vous trouverez un exemple de propriétés spécifiques à la plateforme pour iOS.
 
-Les métadonnées de toutes les plateformes configurées s’affichent désormais en même temps dans l’onglet Avancé de la `Manage App` mosaïque.
+Les métadonnées pour toutes les plateformes configurées s’affichent désormais en même temps dans l’onglet Avancé de la mosaïque `Manage App`.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Pour les plateformes non comprises par AEM, il est toujours possible pour un dé
 
 L’AppStore Apple requiert des métadonnées supplémentaires pour envoyer votre application en vue de sa distribution. La section Métadonnées iOS tente de collecter les informations requises qui peuvent être utilisées par l’outil Apple TMSTransporter pour publier les métadonnées sur le compte de développeur Apple associé.
 
-Pour obtenir des métadonnées spécifiques à Apple, créez votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées qui sont requises par la section Métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et charger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez obtenir les métadonnées à collecter, il n’est pas nécessaire de renseigner les métadonnées spécifiques à iOS. Vous pouvez toujours exporter les métadonnées qui fusionnent iOS et les métadonnées communes et collecter toutes les captures d’écran dans un fichier zip qui peut être téléchargé à tout moment.
+Pour obtenir les métadonnées spécifiques à Apple, créez votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées qui sont requises par la section Métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et charger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez obtenir les métadonnées à collecter, il n’est pas nécessaire de renseigner les métadonnées spécifiques à iOS. Vous pouvez toujours exporter les métadonnées qui fusionnent iOS et les métadonnées communes et collecter toutes les captures d’écran dans un fichier zip qui peut être téléchargé à tout moment.
 
 Le fichier zip téléchargé contient un fichier itmsp qui peut être inspecté pour le fichier metadata.xml. Le fichier itmsp contient les métadonnées exportées (dans le fichier metadata.xml ), ainsi que toutes les captures d’écran associées.
 
@@ -111,7 +111,7 @@ La fonctionnalité d’exportation est utilisée pour fournir un moyen pratique 
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Métadonnées Android™ {#android-metadata}
+#### métadonnées Android™ {#android-metadata}
 
 Lors de la sélection de la plateforme Android™, aucune métadonnée personnalisée ne peut être définie à ce stade. Lorsque vous cliquez sur le bouton de téléchargement, un fichier zip est généré avec un fichier de propriétés qui contient toutes les métadonnées et les captures d’écran associées.
 
@@ -133,13 +133,13 @@ La propriété URL du serveur de mise à jour de contenu est l’URL qui doit po
 
 ### Onglet Plugins {#the-plugins-tab}
 
-La variable **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations sont utilisées pour récupérer le module externe approprié lors d’une génération.
+L’onglet **Plugins** décrit les modules externes associés à votre application. Ces informations sont utilisées pour récupérer le module externe approprié lors d’une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### Onglet Captures d’écran {#the-screenshots-tab}
 
-La variable **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plateformes.
+L’onglet **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plateformes.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -149,7 +149,7 @@ La variable **Captures d’écran** affiche les résolutions d’écran prises e
 
 ### Onglet Authentification {#the-authentication-tab}
 
-La variable **Authentification** Cet onglet vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification OAuth de Adobe Experience Manager.
+L&#39;onglet **Authentification** permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d&#39;utiliser l&#39;authentification Adobe Experience Manager OAuth.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

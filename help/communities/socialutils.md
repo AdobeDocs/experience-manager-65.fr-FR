@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Le package `com.adobe.cq.social.ugcbase.SocialUtils` a été abandonné dans AEM 6.1.
 
-Les tableaux suivants répertorient les méthodes à utiliser au lieu de `SocialUtils` méthodes.
+Les tableaux suivants répertorient les méthodes à utiliser à la place des méthodes `SocialUtils`.
 
 ## Package SocialResourceUtilities  {#socialresourceutilities-package}
 
@@ -42,7 +42,7 @@ Les tableaux suivants répertorient les méthodes à utiliser au lieu de `Social
 | Chaîne UGCToResourcePath(String ugcPath) | signature de méthode modifiée |
 | Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | nouveau |
 
-| Méthodes dans `com.adobe.cq.social.`Utilitaires.resource.api.SocialResourceUtilities |
+| Méthodes de `com.adobe.cq.social.`utility.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(Resource) | remplace SocialResourceProvider getConfiguredProvider(Resource ressource) |
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 La fonctionnalité de groupes de communautés permet à une sous-communauté d’être créée dynamiquement dans un site de communauté par des utilisateurs autorisés à partir des environnements de publication et de création.
 
-À partir des communautés [feature pack 1](deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes dans d’autres groupes.
+Depuis le [Feature Pack 1](deploy-communities.md#latestfeaturepack) des communautés, il est possible d’imbriquer des groupes dans d’autres groupes.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -46,7 +46,7 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>Voir <a href="creating-groups.md">Groupe de communautés</a></td>
+   <td>Voir <a href="creating-groups.md">Groupe de la communauté</a></td>
   </tr>
  </tbody>
 </table>
@@ -78,23 +78,23 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API du groupe de communautés](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API de groupe de la communauté](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Points de terminaison du groupe de communautés](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Points d’entrée du groupe de la communauté](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
 ### Fonction Groupes {#groups-function}
 
-Une structure de site communautaire qui comprend [Fonction Groupes](functions.md#groups-function) prend en charge la création de `community groups` dans les environnements de publication et de création. Le groupe de communauté créé comprend une `community groups member list` qui répertorie les membres du groupe.
+Une structure de site de communauté qui inclut une [fonction de groupes](functions.md#groups-function) prend en charge la création de `community groups` à partir des environnements de publication et de création. Le groupe de communautés créé comprend un composant `community groups member list` qui répertorie les membres du groupe.
 
-Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupes de communautés, peut être configuré pour la fonction Groupes . C’est le cas lorsque la fonction est ajoutée à une [modèle de site communautaire](sites.md) ou imbriqué dans un modèle de groupe de communautés.
+Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupe de communautés, peuvent être configurés pour la fonction Groupes . C’est le cas lorsque la fonction est ajoutée à un [modèle de site de communauté](sites.md) ou imbriquée dans un modèle de groupe de communautés.
 
-L’inclusion de plusieurs modèles de groupes de communautés donne le choix. En d’autres termes, le choix de la conception présentée à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté. Voir la section sur [groupes communautaires](creating-groups.md) pour les auteurs.
+L’inclusion de plusieurs modèles de groupes de communautés donne le choix. En d’autres termes, le choix de la conception présentée à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté. Pour les auteurs, reportez-vous à la section sur les [groupes communautaires](creating-groups.md) .
 
 ### Groupes imbriqués {#nested-groups}
 
-À partir des communautés [FP1](deploy-communities.md#latestfeaturepack), il est possible qu’une fonction Groupes soit incluse dans un modèle de groupe, ce qui permet d’inclure des groupes imbriqués (sous-communautés).
+À partir de Communities [FP1](deploy-communities.md#latestfeaturepack), il est possible qu’une fonction Groupes soit incluse dans un modèle de groupe, ce qui permet d’inclure des groupes imbriqués (sous-communautés).
 
 Lorsqu’un site de communauté ou un modèle de groupe comprend la fonction Groupes , il est possible de :
 

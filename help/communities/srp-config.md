@@ -40,9 +40,9 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 * Sélectionner une option
 * Configurez les
 
-   * Voir les détails de [sélection de MSRP](msrp.md#select-msrp)
-   * Voir les détails de [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de [sélection de l’ASRP](asrp.md#select-asrp)
+   * Voir les détails de la [sélection de MSRP](msrp.md#select-msrp)
+   * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
+   * Voir les détails de la [sélection de l’ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
@@ -50,10 +50,10 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 Si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR est *not* un magasin commun partagé par les environnements Auteur et Publication. Le contenu de la communauté n’est visible que dans l’environnement de création ou de publication dans lequel il a été créé.
+JCR n’est *pas* un magasin commun partagé par les environnements Auteur et Publish. Le contenu de la communauté n’est visible que dans l’environnement de création ou de Publish dans lequel il a été créé.
 
-Visite [Magasin JCR](jsrp.md) pour plus d’informations.
+Pour plus d’informations, consultez la [boutique JCR](jsrp.md) .
 
 >[!NOTE]
 >
->L’absence du noeud `srpc` under `/etc/socialconfig` indique la valeur par défaut [Magasin JCR](jsrp.md).
+>L’absence du noeud `srpc` sous `/etc/socialconfig` indique le [magasin JCR](jsrp.md) par défaut.

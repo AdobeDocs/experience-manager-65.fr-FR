@@ -21,7 +21,7 @@ Cet article décrit la création de fonctions personnalisées avec le dernier co
 * Prise en charge des objets de champ et d’objet de portée globale pour les fonctions personnalisées
 * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions de gauche et de flèche (prise en charge ES10)
 
-Assurez-vous de définir la variable [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composants principaux AEM Forms pour utiliser les dernières fonctionnalités des fonctions personnalisées. </span>
+Veillez à définir la [dernière version de formulaire](https://github.com/adobe/aem-core-forms-components/tree/release/650) sur votre environnement de composant principal AEM Forms pour utiliser les dernières fonctionnalités des fonctions personnalisées. </span>
 
 
 | Version | Lien de l’article |
@@ -38,21 +38,21 @@ AEM Forms 6.5 comprend des fonctions JavaScript qui vous permettent de définir 
 Les avantages des fonctions personnalisées dans les composants principaux de Forms adaptatif sont les suivants :
 
 
-* **Gestion des données**: les fonctions personnalisées gèrent et traitent les données saisies dans les champs de formulaires.
-* **Traitement des données**: les fonctions personnalisées aident à traiter les données saisies dans les champs de formulaires.
-* **Validation des données**: les fonctions personnalisées vous permettent d’effectuer des vérifications personnalisées sur les entrées de formulaire et de fournir des messages d’erreur spécifiés.
-* **Comportement dynamique**: les fonctions personnalisées vous permettent de contrôler le comportement dynamique de vos formulaires en fonction de conditions spécifiques. Vous pouvez, par exemple, afficher/masquer des champs, modifier les valeurs de champ ou ajuster dynamiquement la logique du formulaire.
-* **Intégration**: vous pouvez utiliser des fonctions personnalisées pour l’intégration à des API ou services externes. Il permet de récupérer des données provenant de sources externes, d’envoyer des données à des points de terminaison Rest externes ou d’effectuer des actions personnalisées basées sur des événements externes.
+* **Gestion des données** : les fonctions personnalisées gèrent et traitent les données saisies dans les champs de formulaires.
+* **Traitement des données** : les fonctions personnalisées aident à traiter les données saisies dans les champs de formulaires.
+* **Validation des données** : les fonctions personnalisées vous permettent d’effectuer des vérifications personnalisées sur les entrées de formulaire et de fournir des messages d’erreur spécifiés.
+* **Comportement dynamique** : les fonctions personnalisées vous permettent de contrôler le comportement dynamique de vos formulaires en fonction de conditions spécifiques. Vous pouvez, par exemple, afficher/masquer des champs, modifier les valeurs de champ ou ajuster dynamiquement la logique du formulaire.
+* **Intégration** : vous pouvez utiliser des fonctions personnalisées pour intégrer des API ou des services externes. Il permet de récupérer des données provenant de sources externes, d’envoyer des données à des points de terminaison Rest externes ou d’effectuer des actions personnalisées basées sur des événements externes.
 
 Les fonctions personnalisées sont essentiellement des bibliothèques clientes ajoutées dans le fichier JavaScript. Une fois que vous avez créé une fonction personnalisée, elle est disponible dans l’éditeur de règles et peut être sélectionnée par l’utilisateur dans un formulaire adaptatif. Les fonctions personnalisées sont identifiées par les annotations JavaScript dans l’éditeur de règles.
 
-### Annotations JavaScript prises en charge pour une fonction personnalisée {#js-annotations}
+### Annotations JavaScript prises en charge pour la fonction personnalisée {#js-annotations}
 
-**Les annotations JavaScript fournissent des métadonnées pour le code JavaScript.**. Il comprend des commentaires commençant par des symboles spécifiques, par exemple : `/**` et `@`. Les annotations fournissent des informations importantes sur les fonctions, variables et autres éléments du code. Le formulaire adaptatif prend en charge les annotations JavaScript suivantes pour les fonctions personnalisées :
+**Les annotations JavaScript fournissent des métadonnées pour le code JavaScript**. Il comprend des commentaires commençant par des symboles spécifiques, par exemple `/**` et `@`. Les annotations fournissent des informations importantes sur les fonctions, variables et autres éléments du code. Le formulaire adaptatif prend en charge les annotations JavaScript suivantes pour les fonctions personnalisées :
 
 #### Nom
 
-La variable **Nom** est utilisé pour identifier la fonction personnalisée dans l’éditeur de règles d’un formulaire adaptatif. Les syntaxes suivantes sont utilisées pour nommer une fonction personnalisée :
+**Name** est utilisé pour identifier la fonction personnalisée dans l’éditeur de règles d’un formulaire adaptatif. Les syntaxes suivantes sont utilisées pour nommer une fonction personnalisée :
 
 * `@name [functionName] <Function Name>`
 * `@function [functionName] <Function Name>`
@@ -61,11 +61,11 @@ La variable **Nom** est utilisé pour identifier la fonction personnalisée dans
 >[!NOTE]
 >`[functionName]` est le nom de la fonction. Les espaces ne sont pas autorisés.
 >`<Function Name>` est le nom d’affichage de la fonction dans l’éditeur de règles d’Adaptive Forms.
->Si le nom de la fonction est identique à celui de la fonction elle-même, vous pouvez l’omettre. `[functionName]` de la syntaxe .
+>Si le nom de la fonction est identique au nom de la fonction elle-même, vous pouvez omettre `[functionName]` dans la syntaxe .
 
 #### Paramètre
 
-La variable **Paramètre** est une liste d’arguments utilisés par les fonctions personnalisées. Une fonction peut prendre en charge plusieurs paramètres. Les syntaxes suivantes sont utilisées pour définir un paramètre dans une fonction personnalisée :
+**Paramètre** est une liste d’arguments utilisés par des fonctions personnalisées. Une fonction peut prendre en charge plusieurs paramètres. Les syntaxes suivantes sont utilisées pour définir un paramètre dans une fonction personnalisée :
 
 * `@param {type} name <Parameter Description>`
 * `@argument` `{type} name <Parameter Description>`
@@ -76,16 +76,16 @@ La variable **Paramètre** est une liste d’arguments utilisés par les fonctio
    * string : représente une seule valeur de chaîne.
    * number : représente une seule valeur numérique.
    * boolean : représente une seule valeur booléenne (true ou false).
-   * string[]: représente un tableau de valeurs de chaîne.
-   * nombre[]: représente un tableau de valeurs numériques.
-   * boolean[]: représente un tableau de valeurs booléennes.
+   * string[] : représente un tableau de valeurs de chaîne.
+   * number[] : représente un tableau de valeurs numériques.
+   * boolean[] : représente un tableau de valeurs booléennes.
    * date : représente une seule valeur de date.
-   * date[]: représente un tableau de valeurs de date.
+   * date[] : représente un tableau de valeurs de date.
    * array : représente un tableau générique contenant des valeurs de différents types.
    * object : représente l’objet de formulaire transmis à une fonction personnalisée au lieu de transmettre directement sa valeur.
-   * scope : représente l’objet global, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications dans les fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible par l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et son utilisation, voir [cliquez ici](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+   * scope : représente l’objet global, qui contient des variables en lecture seule telles que des instances de formulaire, des instances de champ cible et des méthodes permettant d’effectuer des modifications dans les fonctions personnalisées. Il est déclaré comme dernier paramètre dans les annotations JavaScript et n’est pas visible par l’éditeur de règles d’un formulaire adaptatif. Le paramètre scope accède à l’objet du formulaire ou du composant pour déclencher la règle ou l’événement requis pour le traitement du formulaire. Pour plus d’informations sur l’objet Globals et comment l’utiliser, [cliquez ici](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
-Le type de paramètre est **non sensible à la casse** Les espaces et ne sont pas autorisés dans le nom du paramètre.
+Le type de paramètre est **non sensible à la casse** et les espaces ne sont pas autorisés dans le nom du paramètre.
 
 `<Parameter Description>` contient des détails sur l’objectif du paramètre. Il peut avoir plusieurs mots.
 
@@ -157,11 +157,11 @@ Le type de retour spécifie le type de valeur que la fonction personnalisée ren
 * string : représente une seule valeur de chaîne.
 * number : représente une seule valeur numérique.
 * boolean : représente une seule valeur booléenne (true ou false).
-* string[]: représente un tableau de valeurs de chaîne.
-* nombre[]: représente un tableau de valeurs numériques.
-* boolean[]: représente un tableau de valeurs booléennes.
+* string[] : représente un tableau de valeurs de chaîne.
+* number[] : représente un tableau de valeurs numériques.
+* boolean[] : représente un tableau de valeurs booléennes.
 * date : représente une seule valeur de date.
-* date[]: représente un tableau de valeurs de date.
+* date[] : représente un tableau de valeurs de date.
 * array : représente un tableau générique contenant des valeurs de différents types.
 * object : représente l’objet de formulaire au lieu de sa valeur directement.
 
@@ -169,7 +169,7 @@ Le type de retour n’est pas sensible à la casse.
 
 #### Privée
 
-La fonction personnalisée, déclarée comme privée, n’apparaît pas dans la liste des fonctions personnalisées de l’éditeur de règles d’un formulaire adaptatif. Par défaut, les fonctions personnalisées sont publiques. La syntaxe permettant de déclarer une fonction personnalisée comme étant privée est `@private`.
+La fonction personnalisée, déclarée comme privée, n’apparaît pas dans la liste des fonctions personnalisées de l’éditeur de règles d’un formulaire adaptatif. Par défaut, les fonctions personnalisées sont publiques. La syntaxe pour déclarer une fonction personnalisée en tant que privée est `@private`.
 
 <!--
 #### Member
@@ -290,7 +290,7 @@ Vous pouvez créer une fonction personnalisée avec ou sans commentaires jsdoc.
 Si l’utilisateur n’ajoute aucune annotation JavaScript à la fonction personnalisée, elle est répertoriée dans l’éditeur de règles par son nom de fonction. Toutefois, il est recommandé d’inclure des annotations JavaScript pour améliorer la lisibilité des fonctions personnalisées.
 
 
-### Fonction de flèche avec annotations JavaScript ou commentaire obligatoires
+### Fonction Flèche avec annotations ou commentaire JavaScript obligatoires
 
 Vous pouvez créer une fonction personnalisée à l’aide d’une syntaxe de fonction de flèche :
 
@@ -338,25 +338,25 @@ Si l’utilisateur n’ajoute aucune annotation JavaScript à la fonction person
 
 Avant de commencer à ajouter une fonction personnalisée à votre Forms adaptatif, assurez-vous que les logiciels suivants sont installés sur votre ordinateur :
 
-* **Éditeur de texte brut (IDE)**: bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme Microsoft Visual Studio Code offre des fonctionnalités avancées pour faciliter la modification.
+* **Éditeur de texte brut (IDE)** : bien que tout éditeur de texte brut puisse fonctionner, un environnement de développement intégré (IDE) comme Microsoft Visual Studio Code offre des fonctionnalités avancées pour faciliter la modification.
 
-* **Git :** Ce système de contrôle de version est requis pour la gestion des modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de https://git-scm.com.
+* **Git :** Ce système de contrôle de version est nécessaire pour gérer les modifications de code. Si vous ne l’avez pas installé, téléchargez-le à partir de https://git-scm.com.
 
 
 ## Créer une fonction personnalisée {#create-custom-function}
 
 Les étapes de création de fonctions personnalisées sont les suivantes :
-1. [Création d’une bibliothèque côté client à l’aide de l’AEM Project Archetype et ajout d’une fonction personnalisée](#create-client-library-archetype)
+1. [Créez une bibliothèque côté client à l’aide de l’archétype de projet AEM et ajoutez une fonction personnalisée](#create-client-library-archetype)
 OU
-   [Création de fonctions personnalisées via CRXDE](#create-add-custom-function)
+   [Créer des fonctions personnalisées via CRXDE](#create-add-custom-function)
 1. [Ajout d’une bibliothèque cliente à un formulaire adaptatif](#add-client-library)
 1. [Utilisation d’une fonction personnalisée dans un formulaire adaptatif](#use-custom-functions)
 
 
 ### Création d’une bibliothèque cliente à l’aide de l’archétype de projet AEM{#create-client-library-archetype}
 
-Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque cliente au projet créé. [utilisation de l’archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
-Si vous disposez d’un projet <!--and have already the project structure as shown in the image below,--> vous pouvez ajouter directement des [fonctions personnalisées](#create-add-custom-function) à votre projet local.
+Vous pouvez ajouter des fonctions personnalisées en ajoutant une bibliothèque cliente au projet créé [à l’aide de l’ archétype de projet AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Si vous disposez d’un projet <!--and have already the project structure as shown in the image below,-->, vous pouvez directement ajouter des [fonctions personnalisées](#create-add-custom-function) à votre projet local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
@@ -364,29 +364,29 @@ Après avoir créé un projet Archetype ou utilisé un projet existant, créez u
 
 **Ajouter un dossier de bibliothèque cliente**
 
-Pour ajouter un nouveau dossier de bibliothèque cliente à [AEM répertoire du projet], procédez comme suit :
+Pour ajouter un nouveau dossier de bibliothèques clientes à votre [répertoire de projet AEM], procédez comme suit :
 
-1. Ouvrez le [AEM répertoire du projet] dans un éditeur.
+1. Ouvrez le [répertoire AEM projet] dans un éditeur.
 
-   ![structure de dossiers de fonctions personnalisées](assets/custom-library-folder-structure.png)
+   ![Structure de dossier de fonctions personnalisées](assets/custom-library-folder-structure.png)
 
-1. Localiser `ui.apps`.
-1. Ajoutez un nouveau dossier. Par exemple, ajoutez un dossier nommé comme `experience-league`.
-1. Accédez à `/experience-league/` et ajouter un `ClientLibraryFolder`. Par exemple, créez un dossier de bibliothèques clientes nommé comme `customclientlibs`.
+1. Recherchez `ui.apps`.
+1. Ajoutez un nouveau dossier. Par exemple, ajoutez un dossier nommé `experience-league`.
+1. Accédez au dossier `/experience-league/` et ajoutez un dossier `ClientLibraryFolder`. Par exemple, créez un dossier de bibliothèques clientes nommé `customclientlibs`.
 
    L’emplacement est : `[AEM project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
-**Ajout de fichiers et de dossiers au dossier Bibliothèque cliente**
+**Ajouter des fichiers et des dossiers au dossier de bibliothèque cliente**
 
 Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 * `.content.xml` approuvé
 * `js.txt` approuvé
-* `js` folder
+* dossier `js`
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
-1. Dans le `.content.xml` ajoutez les lignes de code suivantes :
+1. Dans le `.content.xml`, ajoutez les lignes de code suivantes :
 
    ```javascript
    <?xml version="1.0" encoding="UTF-8"?>
@@ -397,16 +397,16 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
    >[!NOTE]
    >
-   > Vous pouvez choisir n’importe quel nom pour `client library folder` et `categories` .
+   > Vous pouvez choisir n’importe quel nom pour les propriétés `client library folder` et `categories`.
 
-1. Dans le `js.txt` ajoutez les lignes de code suivantes :
+1. Dans le `js.txt`, ajoutez les lignes de code suivantes :
 
    ```javascript
          #base=js
        function.js
    ```
 
-1. Dans le `js` , ajoutez le fichier javascript en tant que `function.js` qui inclut les fonctions personnalisées :
+1. Dans le dossier `js`, ajoutez le fichier javascript `function.js` qui comprend les fonctions personnalisées :
 
    ```javascript
    /**
@@ -433,20 +433,20 @@ Ajoutez ce qui suit au dossier de bibliothèque cliente ajouté :
 
 1. Enregistrez les fichiers.
 
-![structure de dossiers de fonctions personnalisées](assets/custom-function-added-files.png)
+![Structure de dossier de fonctions personnalisées](assets/custom-function-added-files.png)
 
-**Inclure le nouveau dossier dans filter.xml**:
+**Inclure le nouveau dossier dans filter.xml** :
 
-1. Accédez au `/ui.apps/src/main/content/META-INF/vault/filter.xml` dans votre [Répertoire du projet AEMaaCS].
+1. Accédez au fichier `/ui.apps/src/main/content/META-INF/vault/filter.xml` dans votre [ répertoire de projet AEMaaCS].
 
 1. Ouvrez le fichier et ajoutez la ligne suivante à la fin :
 
    `<filter root="/apps/experience-league" />`
 1. Enregistrez le fichier.
 
-   ![xml de filtre de fonction personnalisée](assets/custom-function-filterxml.png)
+   ![filtre de fonction personnalisé xml](assets/custom-function-filterxml.png)
 
-1. Créez le dossier de bibliothèques clientes nouvellement créé dans votre environnement AEM en suivant les étapes indiquées dans [Création de section](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. Créez le dossier de bibliothèques clientes nouvellement créé dans votre environnement AEM en suivant les étapes décrites dans la section [Comment créer une section](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
 
 ## Création et déploiement de fonctions personnalisées via CRXDE{#create-add-custom-function}
 
@@ -470,7 +470,7 @@ Si vous utilisez le dernier module complémentaire AEM Forms et Forms, vous pouv
 1. Enregistrez vos modifications.
 
 1. Créez un dossier appelé `js` sous le dossier `clientlibs`.
-1. Créez un fichier JavaScript appelé `functions.js` sous le `js` dossier.
+1. Créez un fichier JavaScript appelé `functions.js` sous le dossier `js`.
 1. Créez un fichier appelé `js.txt` sous le dossier `clientlibs`.
 1. Enregistrez vos modifications.
 La structure de dossiers créée ressemble à ce qui suit :
@@ -511,7 +511,7 @@ Ajoutons le code suivant au fichier JavaScript pour calculer l’âge en fonctio
 
 1. Enregistrez le fichier `js.txt`.
 
-Vous pouvez vous référer aux [fonction personnalisée](/help/forms/using/assets/customfunction.zip) dossier. Téléchargez et installez ce dossier sur votre instance AEM.
+Vous pouvez vous référer au dossier [custom function](/help/forms/using/assets/customfunction.zip) suivant. Téléchargez et installez ce dossier sur votre instance AEM.
 
 Désormais, vous pouvez utiliser la fonction personnalisée dans votre formulaire adaptatif en ajoutant la bibliothèque cliente.
 
@@ -519,10 +519,10 @@ Désormais, vous pouvez utiliser la fonction personnalisée dans votre formulair
 
 Une fois que vous avez déployé votre bibliothèque cliente dans votre environnement AEM Forms, utilisez ses fonctionnalités dans votre formulaire adaptatif. Pour ajouter la bibliothèque cliente dans votre formulaire adaptatif
 
-1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez-le, puis **[!UICONTROL Modifier]**.
+1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire et choisissez **[!UICONTROL Modifier]**.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
 1. Cliquez sur l’icône Propriétés du conteneur de guide . La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
-1. Ouvrez le **[!UICONTROL De base]** et sélectionnez le nom du **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
+1. Ouvrez l’onglet **[!UICONTROL Basic]** et sélectionnez le nom de la **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
 
    ![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
@@ -532,12 +532,12 @@ Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalis
 
 ![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/calculateage-customfunction.png)
 
-Maintenant, comprenons comment configurer et utiliser une fonction personnalisée à l’aide de la fonction [Service Invoke de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+Maintenant, comprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
 
 ## Utilisation d’une fonction personnalisée dans un formulaire adaptatif {#use-custom-functions}
 
-Dans un formulaire adaptatif, vous pouvez utiliser [Fonctions personnalisées dans l’éditeur de règles](/help/forms/using/rule-editor-core-components.md).
-Ajoutons le code suivant au fichier JavaScript (`Function.js` ) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Création d’une fonction personnalisée en tant que `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
+Dans un formulaire adaptatif, vous pouvez utiliser des [fonctions personnalisées dans l’éditeur de règles](/help/forms/using/rule-editor-core-components.md).
+Ajoutons le code suivant au fichier JavaScript (`Function.js`) pour calculer l’âge en fonction de la date de naissance (AAAA-MM-JJ). Créez une fonction personnalisée `calculateAge()` qui prend la date de naissance comme entrée et renvoie l’âge :
 
 ```javascript
     /**
@@ -564,7 +564,7 @@ Ajoutons le code suivant au fichier JavaScript (`Function.js` ) pour calculer l�
 
 Dans l’exemple ci-dessus, lorsque l’utilisateur saisit la date de naissance au format (AAAA-MM-JJ), la fonction personnalisée `calculateAge` est appelée et renvoie l’âge.
 
-![Fonction personnalisée Calcul de l’âge dans l’éditeur de règles](/help/forms/using/assets/custom-function-calculate-age.png)
+![Fonction personnalisée Calculate Age dans l’éditeur de règles](/help/forms/using/assets/custom-function-calculate-age.png)
 
 Prévisualisons le formulaire pour observer comment les fonctions personnalisées sont implémentées par le biais de l’éditeur de règles :
 
@@ -572,13 +572,13 @@ Prévisualisons le formulaire pour observer comment les fonctions personnalisée
 
 >[!NOTE]
 >
-> Vous pouvez vous référer aux [fonctions personnalisées](/help/forms/using/assets/customfunctions.zip) dossier. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Vous pouvez vous référer au dossier [custom features](/help/forms/using/assets/customfunctions.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM à l’aide du [Gestionnaire de modules](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Prise en charge des fonctions asynchrones dans les fonctions personnalisées {#support-of-async-functions}
 
 Les fonctions personnalisées asynchrones n’apparaissent pas dans la liste de l’éditeur de règles. Cependant, il est possible d’appeler des fonctions asynchrones dans des fonctions personnalisées créées à l’aide d’expressions de fonction synchrones.
 
-![Fonction personnalisée Sync et asynchrone](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
+![Fonction personnalisée de synchronisation et asynchrone](/help/forms/using/assets/workflow-for-sync-async-custom-fumction.png)
 
 >[!NOTE]
 >
@@ -609,15 +609,15 @@ Consultez le code ci-dessous pour découvrir comment nous pouvons appeler des fo
 }
 ```
 
-Dans l’exemple ci-dessus, la fonction asyncFunction est une `asynchronous function`. Il effectue une opération asynchrone en effectuant une `GET` demande à `https://petstore.swagger.io/v2/store/inventory`. Il attend la réponse en utilisant `await`, analyse le corps de la réponse au format JSON à l’aide de la variable `response.json()`, puis renvoie les données. La variable `callAsyncFunction` est une fonction personnalisée synchrone qui appelle la fonction `asyncFunction` et affiche les données de réponse dans la console. Bien que la variable `callAsyncFunction` est synchrone, elle appelle la fonction asynchroneFunction asynchrone et gère son résultat avec `then` et `catch` des instructions.
+Dans l’exemple ci-dessus, la fonction asyncFunction est `asynchronous function`. Il effectue une opération asynchrone en effectuant une requête `GET` vers `https://petstore.swagger.io/v2/store/inventory`. Il attend la réponse à l’aide de `await`, analyse le corps de la réponse en tant que JSON à l’aide de `response.json()`, puis renvoie les données. La fonction `callAsyncFunction` est une fonction personnalisée synchrone qui appelle la fonction `asyncFunction` et affiche les données de réponse dans la console. Bien que la fonction `callAsyncFunction` soit synchrone, elle appelle la fonction asynchrone asyncFunction et gère son résultat avec des instructions `then` et `catch`.
 
 Pour en voir le fonctionnement, nous allons ajouter un bouton et créer une règle pour le bouton qui appelle la fonction asynchrone lors d’un clic sur un bouton.
 
 ![création d’une règle pour la fonction asynchrone](/help/forms/using/assets/rule-for-async-funct.png)
 
-Reportez-vous à l’illustration de la fenêtre de console ci-dessous pour démontrer que lorsque l’utilisateur clique sur la variable `Fetch` bouton, fonction personnalisée `callAsyncFunction` est appelé, ce qui appelle à son tour une fonction asynchrone. `asyncFunction`. Inspect dans la fenêtre de la console pour afficher la réponse lorsque vous cliquez sur le bouton :
+Reportez-vous à l’illustration de la fenêtre de console ci-dessous pour démontrer que lorsque l’utilisateur clique sur le bouton `Fetch`, la fonction personnalisée `callAsyncFunction` est appelée, ce qui à son tour appelle une fonction asynchrone `asyncFunction`. Inspect dans la fenêtre de la console pour afficher la réponse lorsque vous cliquez sur le bouton :
 
-![Fenêtre de la console](/help/forms/using/assets/async-custom-funct-console.png)
+![Fenêtre de console](/help/forms/using/assets/async-custom-funct-console.png)
 
 Explorons les fonctionnalités des fonctions personnalisées.
 
@@ -631,7 +631,7 @@ Les objets de champ font référence aux composants ou éléments individuels d�
 
 >[!NOTE]
 >
-> La variable `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
+> `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
 
 <!-- Let us look at the following code snippet:
 
@@ -655,13 +655,13 @@ Les objets de champ font référence aux composants ou éléments individuels d�
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Découvrez comment les fonctions personnalisées utilisent les objets champ et global à l’aide d’un `Contact Us` formulaire utilisant des cas d’utilisation différents.
+Découvrez comment les fonctions personnalisées utilisent des objets de champ et globaux à l’aide d’un formulaire `Contact Us` utilisant différents cas d’utilisation.
 
 ![Formulaire de contact](/help/forms/using/assets/contact-us-form.png)
 
-#### **Cas d’utilisation**: affichez un panneau à l’aide de la fonction `SetProperty` règle
+#### **Cas d’utilisation** : afficher un panneau à l’aide de la règle `SetProperty`
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour définir le champ de formulaire comme `Required`.
+Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function), pour définir le champ de formulaire comme `Required`.
 
 ```javascript
     
@@ -684,26 +684,26 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
 
 >[!NOTE]
 >
-> * Vous pouvez configurer les propriétés de champ à l’aide des propriétés disponibles dans `[form-path]/jcr:content/guideContainer.model.json`.
-> * Modifications apportées au formulaire à l’aide de la fonction `setProperty` de l’objet Globals sont de nature asynchrone et ne sont pas reflétées lors de l’exécution de la fonction personnalisée.
+> * Vous pouvez configurer les propriétés de champ à l’aide des propriétés disponibles situées dans `[form-path]/jcr:content/guideContainer.model.json`.
+> * Les modifications apportées au formulaire à l’aide de la méthode `setProperty` de l’objet Globals sont de nature asynchrone et ne sont pas reflétées lors de l’exécution de la fonction personnalisée.
 
-Dans cet exemple, la validation de la variable `personaldetails` s’affiche lorsque vous cliquez sur le bouton. Si aucune erreur n’est détectée dans le panneau, un autre panneau, la variable `feedback` devient visible lorsque vous cliquez sur le bouton.
+Dans cet exemple, la validation du panneau `personaldetails` se produit lorsque vous cliquez sur le bouton. Si aucune erreur n’est détectée dans le panneau, un autre panneau, le panneau `feedback`, devient visible lorsque l’utilisateur clique sur le bouton.
 
-Créons une règle pour le `Next` , qui valide la variable `personaldetails` et crée la variable `feedback`  visible lorsque l’utilisateur clique sur le panneau `Next` bouton .
+Créez une règle pour le bouton `Next` , qui valide le panneau `personaldetails` et rend le panneau `feedback` visible lorsque l’utilisateur clique sur le bouton `Next`.
 
 ![Définir la propriété](/help/forms/using/assets/custom-function-set-property.png)
 
-Reportez-vous à l’illustration ci-dessous pour démontrer où la variable `personaldetails` est validé lorsque vous cliquez sur le bouton `Next` bouton . Dans le cas contraire, tous les champs de la variable `personaldetails` sont validées, la variable `feedback` devient visible.
+Reportez-vous à l’illustration ci-dessous pour démontrer où le panneau `personaldetails` est validé en cliquant sur le bouton `Next`. Si tous les champs de `personaldetails` sont validés, le panneau `feedback` devient visible.
 
 ![Définir l’aperçu du formulaire de propriété](/help/forms/using/assets/set-property-form-preview.png)
 
-Si des erreurs sont présentes dans les champs de la variable `personaldetails` , elles s’affichent au niveau du champ lorsque vous cliquez sur le `Next` et le bouton `feedback` reste invisible.
+Si des erreurs sont présentes dans les champs du panneau `personaldetails`, elles s’affichent au niveau du champ lorsque vous cliquez sur le bouton `Next` et le panneau `feedback` reste invisible.
 
 ![Définir l’aperçu du formulaire de propriété](/help/forms/using/assets/set-property-panel.png)
 
-#### **Cas d’utilisation**: validez le champ.
+#### **Cas d’utilisation** : validez le champ.
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour valider le champ.
+Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) , pour valider le champ.
 
 ```javascript
     /**
@@ -722,27 +722,27 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
 
 >[!NOTE]
 >
-> Si aucun argument n’est transmis dans la variable `validate()` , il valide le formulaire.
+> Si aucun argument n’est transmis dans la fonction `validate()`, le formulaire est validé.
 
-Dans cet exemple, un modèle de validation personnalisé est appliqué au `contact` champ . Les utilisateurs doivent saisir un numéro de téléphone commençant par `10` suivie de `8` des chiffres. Si l’utilisateur saisit un numéro de téléphone qui ne commence pas par `10` ou contient plus ou moins `8` chiffres, un message d’erreur de validation s’affiche lorsque vous cliquez sur le bouton :
+Dans cet exemple, un modèle de validation personnalisé est appliqué au champ `contact`. Les utilisateurs doivent saisir un numéro de téléphone commençant par `10` suivi de `8` chiffres. Si l’utilisateur saisit un numéro de téléphone qui ne commence pas par `10` ou qui contient plus ou moins de `8` chiffres, un message d’erreur de validation s’affiche lorsque l’utilisateur clique sur le bouton :
 
-![Modèle de validation de l’adresse électronique](/help/forms/using/assets/custom-function-validation-pattern.png)
+![Modèle de validation d’adresse de courriel](/help/forms/using/assets/custom-function-validation-pattern.png)
 
-L’étape suivante consiste à créer une règle pour le `Next` qui valide la variable `contact` sur le bouton cliquez.
+L’étape suivante consiste à créer une règle pour le bouton `Next` qui valide le champ `contact` sur le bouton de clic.
 
 ![Modèle de validation](/help/forms/using/assets/custom-function-validate.png)
 
 Reportez-vous à l’illustration ci-dessous pour démontrer que si l’utilisateur saisit un numéro de téléphone qui ne commence pas par `10`, un message d’erreur s’affiche au niveau du champ :
 
-![Modèle de validation de l’adresse électronique](/help/forms/using/assets/custom-function-validate-error-message.png)
+![Modèle de validation d’adresse de courriel](/help/forms/using/assets/custom-function-validate-error-message.png)
 
-Si l’utilisateur saisit un numéro de téléphone valide et tous les champs de la variable `personaldetails` sont validées, la variable `feedback` s’affiche à l’écran :
+Si l’utilisateur saisit un numéro de téléphone valide et que tous les champs du panneau `personaldetails` sont validés, le panneau `feedback` s’affiche à l’écran :
 
-![Modèle de validation de l’adresse électronique](/help/forms/using/assets/validate-form-preview-form.png)
+![Modèle de validation d’adresse de courriel](/help/forms/using/assets/validate-form-preview-form.png)
 
-#### **Cas d’utilisation**: réinitialisation d’un panneau
+#### **Cas d’utilisation** : réinitialisation d’un panneau
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour réinitialiser le panneau.
+Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) , pour réinitialiser le panneau.
 
 ```javascript
     /**
@@ -762,26 +762,26 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
 
 >[!NOTE]
 >
-> Si aucun argument n’est transmis dans la variable `reset()` , il valide le formulaire.
+> Si aucun argument n’est transmis dans la fonction `reset()`, le formulaire est validé.
 
-Dans cet exemple, la variable `personaldetails` réinitialise le panneau lorsque vous cliquez sur `Clear` bouton . L’étape suivante consiste à créer une règle pour la variable `Clear` pour réinitialiser le panneau sur le bouton.
+Dans cet exemple, le panneau `personaldetails` se réinitialise lorsque vous cliquez sur le bouton `Clear` . L’étape suivante consiste à créer une règle pour le bouton `Clear` qui réinitialise le panneau sur le bouton de clic.
 
 ![Bouton Effacer](/help/forms/using/assets/custom-function-reset-field.png)
 
-Consultez l’illustration ci-dessous pour afficher que si l’utilisateur clique sur le bouton `clear` , le bouton `personaldetails` réinitialisations du panneau :
+Consultez l’illustration ci-dessous pour afficher que si l’utilisateur clique sur le bouton `clear`, le panneau `personaldetails` réinitialise :
 
 ![Réinitialiser le formulaire](assets/custom-function-reset-form.png)
 
-#### **Cas d’utilisation**: pour afficher un message personnalisé au niveau du champ et marquer le champ comme non valide
+#### **Cas d’utilisation** : pour afficher un message personnalisé au niveau du champ et marquer le champ comme non valide
 
-Vous pouvez utiliser la variable `markFieldAsInvalid()` pour définir un champ comme non valide et définir un message d’erreur personnalisé au niveau du champ. La variable `fieldIdentifier` peut être `fieldId`, ou `field qualifiedName`, ou `field dataRef`. La valeur de l’objet nommé `option` peut être `{useId: true}`, `{useQualifiedName: true}`, ou `{useDataRef: true}`.
+Vous pouvez utiliser la fonction `markFieldAsInvalid()` pour définir un champ comme non valide et définir un message d’erreur personnalisé au niveau du champ. La valeur `fieldIdentifier` peut être `fieldId`, `field qualifiedName` ou `field dataRef`. La valeur de l’objet nommé `option` peut être `{useId: true}`, `{useQualifiedName: true}` ou `{useDataRef: true}`.
 Les syntaxes utilisées pour marquer le champ comme non valide et définir un message personnalisé sont les suivantes :
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour activer le message personnalisé au niveau du champ.
+Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function), pour activer le message personnalisé au niveau du champ.
 
 ```javascript
     /**
@@ -801,28 +801,28 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
 
 Dans cet exemple, si l’utilisateur saisit moins de 15 caractères dans la zone de texte des commentaires, un message personnalisé s’affiche au niveau du champ.
 
-L’étape suivante consiste à créer une règle pour la variable `comments` field :
+L’étape suivante consiste à créer une règle pour le champ `comments` :
 
 ![Marquer le champ comme non valide](/help/forms/using/assets/custom-function-invalid-field.png)
 
-Voir la démonstration ci-dessous pour afficher la saisie de commentaires négatifs dans la variable `comments` déclenche l’affichage d’un message personnalisé au niveau du champ :
+Voir la démonstration ci-dessous pour afficher que la saisie de commentaires négatifs dans le champ `comments` déclenche l’affichage d’un message personnalisé au niveau du champ :
 
 ![Marquer le champ comme formulaire d’aperçu non valide](/help/forms/using/assets/custom-function-invalidfield-form.png)
 
 Si l’utilisateur saisit plus de 15 caractères dans la zone de texte des commentaires, le champ est validé et le formulaire est envoyé :
 
-![Marquer un champ comme formulaire d’aperçu valide](/help/forms/using/assets/custom-function-validfield-form.png)
+![Marquer le champ comme formulaire d’aperçu valide](/help/forms/using/assets/custom-function-validfield-form.png)
 
 
-#### **Cas d’utilisation**: envoi de données modifiées au serveur
+#### **Cas d’utilisation** : envoi de données modifiées au serveur
 
 La ligne de code suivante :
-`globals.functions.submitForm(globals.functions.exportData(), false);` sert à envoyer les données de formulaire après manipulation.
+`globals.functions.submitForm(globals.functions.exportData(), false);` est utilisé pour envoyer les données de formulaire après la manipulation.
 * Le premier argument est celui des données à soumettre.
-* Le deuxième argument indique si le formulaire doit être validé avant envoi. Il s’agit de `optional` et définissez sur `true` par défaut.
-* Le troisième argument est le suivant : `contentType` de l’envoi, qui est également facultatif avec la valeur par défaut comme `multipart/form-data`. Les autres valeurs peuvent être `application/json` et `application/x-www-form-urlencoded`.
+* Le deuxième argument indique si le formulaire doit être validé avant envoi. Il est `optional` et est défini sur `true` par défaut.
+* Le troisième argument est le `contentType` de l’envoi, qui est également facultatif avec la valeur par défaut `multipart/form-data`. Les autres valeurs peuvent être `application/json` et `application/x-www-form-urlencoded`.
 
-Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) pour envoyer les données manipulées sur le serveur :
+Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la section [create-custom-function](#create-custom-function) , pour envoyer les données manipulées sur le serveur :
 
 ```javascript
     /**
@@ -843,15 +843,15 @@ Ajoutez le code suivant dans la fonction personnalisée, comme expliqué dans la
     }
 ```
 
-Dans cet exemple, si l’utilisateur quitte la fonction `comments` textbox vide, le champ `NA` est envoyée au serveur lors de l’envoi du formulaire.
+Dans cet exemple, si l’utilisateur laisse la zone de texte `comments` vide, `NA` est envoyé au serveur lors de l’envoi du formulaire.
 
-Créez maintenant une règle pour le `Submit` qui envoie les données :
+Créez maintenant une règle pour le bouton `Submit` qui envoie les données :
 
 ![Envoi de données](/help/forms/using/assets/custom-function-submit-data.png)
 
-Reportez-vous à l’illustration du `console window` ci-dessous pour démontrer que si l’utilisateur quitte la fonction `comments` textbox vide, puis la valeur comme `NA` est envoyé au serveur :
+Reportez-vous à l’illustration de `console window` ci-dessous pour démontrer que si l’utilisateur laisse la zone de texte `comments` vide, la valeur `NA` est envoyée au serveur :
 
-![Envoi des données dans la fenêtre de console](/help/forms/using/assets/custom-function-submit-data-form.png)
+![Envoi de données dans la fenêtre de console](/help/forms/using/assets/custom-function-submit-data-form.png)
 
 Vous pouvez également vérifier la fenêtre de la console pour visualiser les données envoyées au serveur :
 
@@ -972,7 +972,7 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 ## Prise en charge de la mise en cache d’une fonction personnalisée
 
-Les Forms adaptatives implémentent la mise en cache pour les fonctions personnalisées afin d’améliorer le temps de réponse lors de la récupération de la liste des fonctions personnalisées dans l’éditeur de règles. Un message sous la forme `Fetched following custom functions list from cache` apparaît dans la variable `error.log` fichier .
+Les Forms adaptatives implémentent la mise en cache pour les fonctions personnalisées afin d’améliorer le temps de réponse lors de la récupération de la liste des fonctions personnalisées dans l’éditeur de règles. Un message tel que `Fetched following custom functions list from cache` apparaît dans le fichier `error.log`.
 
 ![fonction personnalisée avec prise en charge du cache](/help/forms/using/assets/custom-function-cache-error.png)
 
@@ -980,24 +980,24 @@ Si les fonctions personnalisées sont modifiées, la mise en cache est invalidé
 
 ## Résolution des problèmes {#troubleshooting}
 
-* L’utilisateur doit s’assurer que la variable [La version du composant principal et de la spécification est définie sur la dernière version.](https://github.com/adobe/aem-core-forms-components/tree/release/650). Toutefois, pour les projets et formulaires AEM existants, d’autres étapes sont à suivre :
+* L’utilisateur doit s’assurer que la version [du composant principal et de la spécification est définie sur la dernière version](https://github.com/adobe/aem-core-forms-components/tree/release/650). Toutefois, pour les projets et formulaires AEM existants, d’autres étapes sont à suivre :
 
-   * Pour le projet AEM, l’utilisateur doit remplacer toutes les instances de `submitForm('custom:submitSuccess', 'custom:submitError')` avec `submitForm()` et déployez le projet.
+   * Pour le projet AEM, l’utilisateur doit remplacer toutes les instances de `submitForm('custom:submitSuccess', 'custom:submitError')` par `submitForm()` et déployer le projet.
 
-   * Pour les formulaires existants, si les gestionnaires d’envoi personnalisés ne fonctionnent pas correctement, l’utilisateur doit ouvrir et enregistrer la variable `submitForm` sur la règle **Envoyer** à l’aide de l’éditeur de règles. Cette action remplace la règle existante de `submitForm('custom:submitSuccess', 'custom:submitError')` avec `submitForm()` dans le formulaire.
+   * Pour les formulaires existants, si les gestionnaires d’envoi personnalisés ne fonctionnent pas correctement, l’utilisateur doit ouvrir et enregistrer la règle `submitForm` sur le bouton **Envoyer** à l’aide de l’éditeur de règles. Cette action remplace la règle existante de `submitForm('custom:submitSuccess', 'custom:submitError')` par `submitForm()` dans le formulaire.
 
 
-* Si le fichier JavaScript contenant du code pour les fonctions personnalisées comporte une erreur, les fonctions personnalisées ne sont pas répertoriées dans l’éditeur de règles d’un formulaire adaptatif. Pour vérifier la liste des fonctions personnalisées, vous pouvez accéder au `error.log` pour l’erreur. En cas d’erreur, la liste des fonctions personnalisées apparaît vide :
+* Si le fichier JavaScript contenant du code pour les fonctions personnalisées comporte une erreur, les fonctions personnalisées ne sont pas répertoriées dans l’éditeur de règles d’un formulaire adaptatif. Pour vérifier la liste des fonctions personnalisées, vous pouvez accéder au fichier `error.log` correspondant à l’erreur. En cas d’erreur, la liste des fonctions personnalisées apparaît vide :
 
-  ![fichier journal des erreurs](/help/forms/using/assets/custom-function-list-error-file.png)
+  ![fichier journal d’erreur](/help/forms/using/assets/custom-function-list-error-file.png)
 
-  En l’absence d’erreur, la fonction personnalisée est récupérée et apparaît dans la variable `error.log` fichier . Un message sous la forme `Fetched following custom functions list` apparaît dans la variable `error.log` fichier :
+  En l’absence d’erreur, la fonction personnalisée est récupérée et apparaît dans le fichier `error.log`. Un message sous la forme `Fetched following custom functions list` apparaît dans le fichier `error.log` :
 
-  ![fichier journal d’erreurs avec fonction personnalisée appropriée](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
+  ![ fichier journal d&#39;erreur avec fonction personnalisée appropriée](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
 
 ## Considérations
 
-* La variable `parameter type` et `return type` ne pas prendre en charge `None`.
+* `parameter type` et `return type` ne prennent pas en charge `None`.
 
 * Les fonctions qui ne sont pas prises en charge dans la liste des fonctions personnalisées sont les suivantes :
    * Fonctions du générateur

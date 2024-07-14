@@ -22,13 +22,13 @@ ht-degree: 9%
 >
 >Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Les applications sont représentées comme *cq:Pages* dans AEM.
+Les applications sont représentées sous la forme *cq:Pages* dans AEM.
 
-Ils partagent les mêmes propriétés communes que dans n’importe quel *cq:Page* en plus des autres qui sont affichés ci-dessous et qui représentent les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que celles trouvées dans tout *cq:Page* en plus des autres propriétés affichées ci-dessous qui représentent les propriétés de prise en charge de l’intégration.
 
 ## Propriétés d’application {#app-properties}
 
-Le tableau suivant affiche **Propriétés et noeuds de l’application**.
+Le tableau suivant affiche les **propriétés et noeuds de l’application**.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>String:Path</td>
-   <td><p>Chemin des configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i>: configuration de l’exportation ContentSync pour exporter le contenu de l’article</p> <p><i>dps-HTMLResources</i>: configuration de l’exportation de ContentSync pour exporter des ressources partagées d’application/article</p> </td>
+   <td><p>Chemin des configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i> : configuration d’exportation ContentSync pour exporter le contenu d’article</p> <p><i>dps-HTMLResources</i> : configuration de l'export ContentSync pour exporter des ressources partagées d'application/d'article</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,7 +80,7 @@ Le tableau suivant affiche **Propriétés et noeuds de l’application**.
   <tr>
    <td>sling:resourceType</td>
    <td>String:Path</td>
-   <td><p>Chemin d’accès à cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Cela permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
+   <td><p>Chemin d’accès à un cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Cela permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
   </tr>
  </tbody>
 </table>

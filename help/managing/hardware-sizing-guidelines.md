@@ -294,13 +294,13 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 
 >[!NOTE]
 >
->Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S du système et inversement. Par exemple, si les workflows sont lancés par l’import d’images, le chargement de nombreuses images via WebDAV pourrait entraîner un retard dans les workflows.
+Un débit d’images plus élevé signifie que les ressources informatiques doivent pouvoir suivre le rythme des E/S du système et inversement. Par exemple, si les workflows sont lancés par l’import d’images, le chargement de nombreuses images via WebDAV pourrait entraîner un retard dans les workflows.
 >
->L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (il est toutefois généralement préférable de conserver l’index de recherche localement).
+L’utilisation de disques distincts pour TarPM, le magasin de données et l’index de recherche peut aider à optimiser le comportement d’E/S du système (il est toutefois généralement préférable de conserver l’index de recherche localement).
 
 >[!NOTE]
 >
->Voir aussi le[ Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
+Voir aussi le[ Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Gestionnaire multi-sites {#multi-site-manager}
 

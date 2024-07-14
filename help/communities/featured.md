@@ -35,25 +35,25 @@ La possibilité d’afficher du contenu peut être autorisée ou non par composa
 Cette section de la documentation décrit :
 
 * Ajout de contenu présenté à un site communautaire.
-* Paramètres de configuration de la variable `Featured Content` composant.
+* Paramètres de configuration du composant `Featured Content`.
 
 ## Ajout de contenu proposé à une page {#adding-featured-content-to-a-page}
 
-Pour ajouter une `Featured Content` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
+Pour ajouter un composant `Featured Content` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
 
 * `Communities / Featured Content`
 
 Faites-le glisser sur une page où le contenu présenté doit apparaître.
 
-Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](basics.md).
+Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](essentials-featured.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Featured Content` Le composant apparaît :
+Lorsque les [bibliothèques côté client demandées](essentials-featured.md#essentials-for-client-side) sont incluses, voici comment le composant `Featured Content` apparaît :
 
 ![featuredcontent](assets/featuredcontent.png)
 
 ## Configuration du contenu proposé {#configuring-featured-content}
 
-Sélectionnez le `Featured Content` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant `Featured Content` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -61,15 +61,15 @@ Sélectionnez le `Featured Content` afin que vous puissiez accéder au `Configur
 
 ### Onglet Paramètres {#settings-tab}
 
-Sous , **[!UICONTROL Paramètres]** , identifiez le contenu à afficher :
+Sous l’onglet **[!UICONTROL Paramètres]** , identifiez le contenu à afficher :
 
 * **[!UICONTROL Nom d’affichage]**
 
-  Titre de la liste du contenu présenté. Par exemple, `Featured Questions` ou `Featured Ideas`. Par défaut : `Featured Content` s’il est vide.
+  Titre de la liste du contenu présenté. Par exemple, `Featured Questions` ou `Featured Ideas`. La valeur par défaut est `Featured Content` si elle est vide.
 
-* **[!UICONTROL Emplacement du contenu proposé]**
+* **[!UICONTROL Emplacement du contenu en vedette]**
 
-  *(Obligatoire)* Accédez à la page contenant le contenu qui peut être présenté (les composants de cette page doivent être configurés sur Autoriser le contenu proposé). Par exemple, `/content/sites/engage/en/forum`.
+  *(Obligatoire)* Accédez à la page contenant le contenu qui peut être présenté (les composants de cette page doivent être configurés sur Autoriser le contenu en vedette). Par exemple, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite d’affichage]**
 
@@ -79,20 +79,20 @@ Sous , **[!UICONTROL Paramètres]** , identifiez le contenu à afficher :
 
 La capacité à marquer le contenu comme contenu présenté nécessite des privilèges de modérateur.
 
-Lorsqu’un modérateur affiche du contenu publié, il a accès aux indicateurs de modération contextuelle, qui incluent la nouvelle `Feature` Indicateur.
+Lorsqu’un modérateur affiche du contenu publié, il a accès aux indicateurs de modération contextuels, qui incluent le nouvel indicateur `Feature`.
 
-![site-visiteur-expérience](assets/site-visitor-experience.png)
+![site-visitor-experience](assets/site-visitor-experience.png)
 
 Une fois qu’il est marqué comme fonction, l’indicateur de modération devient `Unfeature`.
 
-La page contenant la variable `Featured Content` inclut désormais cette publication.
+La page contenant le composant `Featured Content` comprend désormais cette publication.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-La variable `Read More` liens vers la publication active.
+`Read More` renvoie à la publication active.
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la [Contenu en vedette](essentials-featured.md) pour les développeurs.
+Vous trouverez plus d’informations sur la page [Contenu en vedette](essentials-featured.md) pour les développeurs.
 
 Pour marquer le contenu comme présenté, voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).

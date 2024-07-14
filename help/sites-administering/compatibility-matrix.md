@@ -4,7 +4,7 @@ description: Cette page répertorie les lecteurs AEM Screens, ainsi que leurs v
 page-status-flag: never-activated
 contentOwner: jsyal
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >
 >Les informations suivantes ont été mises à jour le 14 mai 2018.
 
-La section suivante répertorie les lecteurs Adobe Experience Manager (AEM) Screens, ainsi que leurs versions AEM Screens respectives.
+La section suivante répertorie les lecteurs Adobe Experience Manager (AEM) Screens, ainsi que leurs versions AEM Screens respectives.
 
 ## Lecteur iOS {#ios-player}
 
@@ -111,7 +111,7 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><p><strong>3.2.72 - </strong>Disponible sur l’Apple Store</p> <p><strong>3.3.0</strong> - Ne fonctionne pas</p> <p> </p> </td> 
    <td><strong>1.0.12</strong> - (Disponible sur Macromedia)</td> 
    <td><p><strong>1.0.30 -</strong> Disponible sur Chrome Store</p> <p>Non pris en charge avec Feature Pack1</p> </td> 
-   <td><strong>3.2.68 -</strong> (Disponible sur le site Web Macromedia) et Google Play Store</td> 
+   <td><strong>3.2.68 -</strong> (Disponible sur le site web Macromedia) et Google Play Store</td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
