@@ -9,9 +9,9 @@ exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3173'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | Cet article |
 
 [!DNL Adobe Experience Manager Assets] est une solution de gestion des ressources numériques (DAM) qui peut s’intégrer à [!DNL Adobe Creative Cloud] pour aider les utilisateurs de la gestion des ressources numériques à travailler avec des équipes créatives, en rationalisant la collaboration en matière de création de contenu.

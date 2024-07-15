@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1564'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Le package d’intégration crée automatiquement l’opérateur `aemserver` qu�
 
    >[!CAUTION]
    >
-   >La zone de sécurité à configurer est **Réseau d&#39;entreprise privée (VPN+LAN)**.
+   >La zone de sécurité à configurer est la suivante : **Réseau d’entreprise privée (VPN+LAN)**.
 
 1. Cliquez sur **Enregistrer**.
 
