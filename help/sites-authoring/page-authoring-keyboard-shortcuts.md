@@ -48,7 +48,7 @@ Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d
 
 >[!NOTE]
 >
-Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Les raccourcis clavier de l’éditeur sont toujours actifs, même si les [raccourcis de la console ont été désactivés](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Touches de modification spécifiques aux systèmes d’exploitation {#os-specific-modifier-keys}
 
