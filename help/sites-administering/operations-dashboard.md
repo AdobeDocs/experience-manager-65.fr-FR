@@ -11,9 +11,9 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5686'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -330,9 +330,9 @@ Par défaut, pour une instance AEM prête à l’emploi, les contrôles d’int�
 
 Vous pouvez configurer la **Période** avec la **Configuration du contrôle de l’intégrité des requêtes** de la [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
-## Surveillance avec des services externes {#monitoring-with-external-services}
+## Surveillance avec services externes {#monitoring-with-external-services}
 
-L’intégration est possible avec des technologies ou des fournisseurs externes. Pour plus d’informations, consultez leur documentation .
+L’intégration est possible avec des technologies ou des fournisseurs externes. Pour plus d’informations, consultez leur documentation respectives.
 
 ## Outils de diagnostic {#diagnosis-tools}
 
