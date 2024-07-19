@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la 
 
 >[!NOTE]
 >
->Si la catégorie et le produit sont sélectionnés, le produit est pris.
+>Si la catégorie et le produit sont sélectionnés, le produit est pris en compte.
 
 Cela crée un espace réservé pour un lien qui est remplacé par un lien réel lors du rendu de la page.
 
