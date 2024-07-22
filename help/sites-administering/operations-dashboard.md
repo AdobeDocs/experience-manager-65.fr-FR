@@ -10,10 +10,10 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
-workflow-type: ht
-source-wordcount: '5686'
-ht-degree: 100%
+source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+workflow-type: tm+mt
+source-wordcount: '5744'
+ht-degree: 99%
 
 ---
 
@@ -491,6 +491,8 @@ Les tâches ci-dessous sont disponibles dans le tableau de bord des opérations�
 1. Tâche **Nettoyage de la mémoire d’entrepôt de données** dans le menu **Période de maintenance hebdomadaire**
 1. Tâche **Maintenance des journaux d’audit** dans le menu **Période de maintenance hebdomadaire**
 1. Tâche **Maintenance de la purge des versions** dans le menu **Période de maintenance hebdomadaire**
+1. La tâche de maintenance **Purge du projet**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter** .
+1. La tâche de maintenance **Purge des tâches ad hoc**, située sous le menu **Période de maintenance hebdomadaire** ; à l’aide de l’option **Ajouter** .
 
 L’heure par défaut de la maintenance quotidienne est de 2 h à 5 h chaque matin. Les tâches configurées pour s’exécuter dans la fenêtre de maintenance hebdomadaire s’exécutent entre 1 h et 2 h le samedi.
 
@@ -561,6 +563,26 @@ Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer a
 >[!CAUTION]
 >
 >Pour optimiser la taille du référentiel, vous devez exécuter la tâche de purge des versions fréquemment. La tâche doit être planifiée en dehors des heures de bureau lorsqu’il y a un trafic limité.
+
+### Purge du projet {#project-purge}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`. See the Maintenance Window table below for additional configuration details.
+
+Enable the maintenance task by adding another node under the node above (name it `granite_ProjectPurgeTask`) with the appropriate properties. 
+-->
+
+Configurez les propriétés OSGI sous **Adobe Projects Purge Configuration** (com.adobe.cq.projects.purge.Scheduler).
+
+### Purge des tâches ad hoc {#purge-of-ad-hoc-tasks}
+
+<!--
+Override the out-of-the-box Maintenance window configuration node under `/libs` by creating properties under the folder `/apps/settings/granite/operations/maintenance/granite_weekly`, `granite_daily` or `granite_monthly`.
+
+See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it `granite_TaskPurgeTask`, with attribute `sling:resourceType` set to `granite/operations/components/maintenance/task` and attribute `granite.maintenance.name` set to `TaskPurge`. 
+-->
+
+Configurez les propriétés OSGI sous **Purge des tâches ad hoc** (`com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask`).
 
 ## Tâches de maintenance personnalisées {#custom-maintenance-tasks}
 
