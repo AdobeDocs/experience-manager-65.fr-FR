@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -60,15 +60,15 @@ Si cette option est désactivée, vous pouvez activer CRXDE Lite en suivant la 
 
 ## Activation de CRXDE Lite avec cURL {#enabling-crxde-lite-curl}
 
-Vous pouvez également activer CRXDE Lite via cURL, en exécutant (les deux) ces deux commandes :
+Vous pouvez également activer CRXDE Lite via cURL, en exécutant les deux commandes suivantes :
 
-* Activer `create-absolute-uri` :
+* Activer `create-absolute-uri` :
 
   ```shell
   curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&dav.create-absolute-uri=true&propertylist=dav.create-absolute-uri'
   ```
 
-* Définissez `alias` :
+* Définissez `alias` :
 
   ```shell
   curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&alias=/crx/server&propertylist=alias'
