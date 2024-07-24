@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -66,9 +66,9 @@ Par défaut, ces données de visiteur ou de visiteuse ne sont pas stockées dans
 
 >[!NOTE]
 >
->Avant Adobe AEM (CQ) 5.6, le ClientContext (une version antérieure de ContextHub) envoyait les données au serveur, mais ne les stockait pas.
+>Avant la version 5.6 d’Adobe CQ, le ClientContext (une version antérieure de ContextHub) envoyait les données au serveur, mais ne les stockait pas.
 >
->Les versions 6.4 et antérieures d’Adobe sont désormais en fin de vie et ne sont pas couvertes par cette documentation. Voir la [documentation des anciennes versions de Adobe Experience Manager, CQ et CRX](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>Adobe CQ 5.5 et les versions antérieures sont désormais en fin de vie et ne sont pas couvertes par cette documentation. Consultez la [documentation destinée aux versions plus anciennes d’Adobe Experience Manager, CQ et CRX](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Mise en œuvre de la souscription/l’exclusion {#implementing-opt-in-opt-out}
 
