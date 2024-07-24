@@ -10,9 +10,9 @@ exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir également l’[arborescence de la performance](/help/sites-deploying/performance-tree.md).
 >
->De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
+>De plus, vous pouvez lire un article de la base de connaissances pour obtenir des [Conseils pour le réglage des performances](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses. Bien que cette valeur varie pour chaque requête, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement de problèmes potentiels.
 
@@ -41,7 +41,7 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
->* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* Consultez également la section [Conseils pour le réglage des performances.](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Méthodologie d’optimisation des performances {#performance-optimization-methodology}
 

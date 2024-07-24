@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,10 +38,10 @@ Pour utiliser les jetons, vous devez répliquer le HMAC binaire sur toutes les i
 
 >[!NOTE]
 >
->Veillez également à apporter les modifications de configuration Dispatcher nécessaires pour utiliser la structure de protection CSRF :
+>Assurez-vous également d’effectuer les modifications de configuration du Dispatcher nécessaires pour utiliser le framework de protection CSRF :
 >
->* [Configuration de Adobe Experience Manager Dispatcher pour empêcher les attaques CSRF](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
->* [Présentation de Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher)
+>* [Configurer le Dispatcher Adobe Experience Manager afin d’empêcher les attaques CSRF](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Vue d’ensemble du Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
