@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 100%
 
 ---
@@ -1260,9 +1260,6 @@ ht-degree: 100%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Développement (générique)](/help/commerce/cif-classic/developing/generic.md)
          + [Développement avec SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Prise en main d’Edge Delivery](/help/edge/overview.md)
-   + [Utiliser Edge Delivery](/help/edge/using.md)
 + Découplé {#headless}
    + [Parcours découplés AEM](/help/journey-headless/overview.md)
    + Parcours de développement découplé AEM {#developer}
