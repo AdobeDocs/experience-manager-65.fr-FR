@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
-workflow-type: ht
-source-wordcount: '7445'
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
+workflow-type: tm+mt
+source-wordcount: '7443'
 ht-degree: 100%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 100%
          + [Configuration du suivi vidéo pour Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
          + [FAQ sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md)
          + [Résolution des incidents liés à votre intégration Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
          + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](/help/sites-administering/sharepoint-connector-licenses.md)
          + [FAQ sur la fin de prise en charge de la visionneuse DHTML](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Intégration à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -268,7 +269,6 @@ ht-degree: 100%
          + [Administration des balises](/help/sites-administering/tags.md)
          + [Exportateur de page](/help/sites-administering/page-exporter.md)
          + [Console Balisage de l’interface utilisateur (IU) classique](/help/sites-administering/classic-console.md)
-         + [Gestion du contenu pour Screens](/help/sites-administering/content-management-screens.md)
          + [Accès WebDAV](/help/sites-administering/webdav-access.md)
    + Création dans l’interface utilisateur classique {#classic-ui}
       + Présentation de la création dans l’interface utilisateur classique {#introduction}
