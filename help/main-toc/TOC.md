@@ -7,7 +7,7 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7443'
 ht-degree: 100%
 
@@ -203,7 +203,7 @@ ht-degree: 100%
          + [Outil de serveur proxy (proxy.jar)](/help/sites-administering/proxy-jar.md)
          + [Configuration des applications AEM](/help/sites-administering/config-apps.md)
          + [Configuration des formulaires de recherche](/help/sites-administering/search-forms.md)
-         + [Consoles Outils ](/help/sites-administering/tools-consoles.md)
+         + [Consoles Outils](/help/sites-administering/tools-consoles.md)
          + [Création de rapports](/help/sites-administering/reporting.md)
          + [Configuration du conteneur et du mode de mise en page](/help/sites-administering/configuring-responsive-layout.md)
          + [Éditeur](/help/sites-administering/enable-classic-ui-editor.md)
@@ -348,7 +348,7 @@ ht-degree: 100%
       + [Recherche de ressources numériques](/help/assets/search-assets.md)
       + [Utilisation des métadonnées des ressources](/help/assets/metadata.md)
       + [Ressources multilingues](/help/assets/multilingual-assets.md)
-      + [Utilisation de ressources  [!DNL Adobe Stock]  dans Assets](/help/assets/aem-assets-adobe-stock.md)
+      + [Utilisation de ressources [!DNL Adobe Stock] dans Assets](/help/assets/aem-assets-adobe-stock.md)
       + [Prévisualiser les ressources 3D](/help/assets/previewing-3d-assets.md)
       + [Révision de collections et de ressources situées dans un dossier](/help/assets/bulk-approval.md)
       + [Balises intelligentes améliorées](/help/assets/enhanced-smart-tags.md)
@@ -665,7 +665,7 @@ ht-degree: 100%
       + [Modèles de formulaires adaptatifs](/help/forms/using/template-editor.md)
       + [Expressions de formulaire adaptatif](/help/forms/using/adaptive-form-expressions.md)
       + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + [Amélioration des performances des formulaires volumineux avec le chargement différé ](/help/forms/using/lazy-loading-adaptive-forms.md)
+      + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [Préremplissage des champs de formulaires adaptatifs](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [Utilisation d’expressions SOM dans des formulaires adaptatifs](/help/forms/using/using-som-expressions-adaptive-forms.md)
       + [Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire](/help/forms/using/form-submission-metadata.md)
@@ -727,7 +727,7 @@ ht-degree: 100%
       + [Personnalisation des images utilisées dans les actions d’itinéraire](/help/forms/using/images-route-actions.md)
       + [Minimisation des fichiers JavaScript](/help/forms/using/minification-javascript-files.md)
       + [Personnalisation des tableaux de suivi](/help/forms/using/sorting-tracking-tables-add-columns.md)
-      + [Mise à jour du lien vers la documentation ](/help/forms/using/updating-link-help-documentation.md)
+      + [Mise à jour du lien vers la documentation](/help/forms/using/updating-link-help-documentation.md)
       + [Utilisation des jeux de formulaires dans l’espace de travail AEM Forms](/help/forms/using/form-sets-html-workspace.md)
       + [API utilisées dans l’espace de travail AEM Forms](/help/forms/using/apis-used-html-workspace.md)
       + [Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms](/help/forms/using/initiating-new-process-existing-process.md)
@@ -835,7 +835,7 @@ ht-degree: 100%
       + [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
       + [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
       + [Configuration des services de stockage pour les brouillons et les envois](/help/forms/using/configuring-draft-submission-storage.md)
-      + [Gestion des applications et des tâches Forms dans la boîte de réception AEM ](/help/forms/using/manage-applications-inbox.md)
+      + [Gestion des applications et des tâches Forms dans la boîte de réception AEM](/help/forms/using/manage-applications-inbox.md)
       + [Dossier de contrôle dans AEM Forms](/help/forms/using/watched-folder-in-aem-forms.md)
       + [Composant Drafts &amp; Submissions](/help/forms/using/draft-submission-component.md)
       + [Intégration du composant Link dans une page](/help/forms/using/embedding-link-component-page.md)
@@ -1111,7 +1111,7 @@ ht-degree: 100%
             + [Acrobat Reader DC extensions Service Java API Quick Start (SOAP)](/help/forms/developing/acrobat-reader-dc-extensions-service.md)
             + [Démarrage rapide de l’API du service de sauvegarde et de restauration](/help/forms/developing/backup-restore-service-api-quick.md)
             + [Démarrage rapide API Java (SOAP) du service Barcoded Forms](/help/forms/developing/barcoded-forms-service-java-api.md)
-            + [Démarrage rapide API Java (SOAP) pour les composants et services ](/help/forms/developing/components-services-java-api-quick.md)
+            + [Démarrage rapide API Java (SOAP) pour les composants et services](/help/forms/developing/components-services-java-api-quick.md)
             + [Démarrage rapide (SOAP) de l’API Java du service Convert PDF](/help/forms/developing/convert-pdf-service-java-api.md)
             + [Didacticiel de mise en route de lʼAPI Java du service Credential (SOAP)](/help/forms/developing/credential-service-java-api-quick.md)
             + [Démarrage rapide de l’API Java du service Distiller (SOAP)](/help/forms/developing/distiller-service-java-api-quick.md)
@@ -1194,7 +1194,7 @@ ht-degree: 100%
       + [Impossible d’utiliser certaines fonctionnalités de Forms avec certaines versions du JDK Oracle.](/help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
       + [Étapes supplémentaires pour obtenir un e-mail avec pièce jointe pour les formulaires adaptatifs dans la version sur JEE.](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
       + [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server.](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
-      + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+      + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
       + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
       + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
@@ -1600,12 +1600,12 @@ ht-degree: 100%
          + [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
          + [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Vérifications et dépannage après une mise à niveau ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Vérifications et dépannage après une mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
          + [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Procédure de mise à niveau pour les installations de serveur d’applications](/help/sites-deploying/app-server-upgrade.md)
-         + [Liste des lots obsolètes désinstallés après la mise à niveau ](/help/sites-deploying/obsolete-bundles.md)
+         + [Liste des lots obsolètes désinstallés après la mise à niveau](/help/sites-deploying/obsolete-bundles.md)
       + Restructuration des référentiels {#restructuring}
          + [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md)
          + [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
