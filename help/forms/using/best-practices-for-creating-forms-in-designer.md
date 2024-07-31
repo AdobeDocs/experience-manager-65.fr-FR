@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -70,7 +71,7 @@ Points de contrôle connexes
 
 Pour qu’un formulaire soit accessible, il doit être [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) par la technologie d’assistance. Par exemple, la plupart des lecteurs d’écran ne prennent pas en compte la disposition visuelle de votre formulaire, mais plutôt la structure sous-jacente.
 
-Pour mettre en oeuvre cette structure sous-jacente à l’aide de LiveCycle Designer, vous devez créer un formulaire de PDF contenant des informations d’accessibilité (parfois appelées balises), afin que le lecteur d’écran ou toute autre technologie d’assistance puisse lire le texte et les composants du formulaire. Dans un formulaire contenant des informations sur l’accessibilité, chaque élément contient des informations sur sa propre structure, ainsi que des informations sur sa relation ou sa dépendance à d’autres éléments. Ce n’est que dans les fichiers de PDF contenant des informations d’accessibilité que les lecteurs d’écran peuvent identifier et décrire précisément le contenu d’un document.
+Pour implémenter cette structure sous-jacente à l’aide de LiveCycle Designer, vous devez créer un formulaire de PDF contenant des informations d’accessibilité (parfois appelées balises), afin que le lecteur d’écran ou toute autre technologie d’assistance puisse lire le texte et les composants du formulaire. Dans un formulaire contenant des informations sur l’accessibilité, chaque élément contient des informations sur sa propre structure, ainsi que des informations sur sa relation ou sa dépendance à d’autres éléments. Ce n’est que dans les fichiers de PDF contenant des informations d’accessibilité que les lecteurs d’écran peuvent identifier et décrire précisément le contenu d’un document.
 
 Pour créer un formulaire accessible, vous devez configurer les propriétés du formulaire de sorte que LiveCycle Designer génère des informations d’accessibilité lors de l’enregistrement de la conception de formulaire en tant que fichier de PDF :
 1. Choisissez Fichier > Propriétés du formulaire.
@@ -93,7 +94,7 @@ Dans LiveCycle Designer, cette option est sélectionnée par défaut.
 
 ## Choisir les contrôles adéquats {#choose-right-controls}
 
-Lorsque vous concevez vos formulaires, utilisez des objets de développement issus des onglets disponibles dans la bibliothèque d’objets de LiveCycle Designer. Vous pouvez afficher ce panneau en choisissant Fenêtre > Bibliothèque d’objets ou en appuyant sur Maj+F12 (voir l’illustration 1).
+Lors de la conception de vos formulaires, utilisez les objets de développement des onglets disponibles dans la bibliothèque d’objets de Designer LiveCycle. Vous pouvez afficher ce panneau en choisissant Fenêtre > Bibliothèque d’objets ou en appuyant sur Maj+F12 (voir l’illustration 1).
 
 ![Panneau Bibliothèque d’objets](/help/forms/using/assets/image-1.png)
 
@@ -133,7 +134,7 @@ Lorsque vous spécifiez un texte de remplacement, tenez compte des points suivan
 * Ne créez pas de descriptions de texte pour les images statiques qui ne sont utilisées que pour la décoration.
 * N’utilisez pas les données numérisées comme informations d’arrière-plan. Cela peut se produire lorsqu’un concepteur analyse un formulaire imprimé et utilise Adobe LiveCycle Designer pour ajouter de nouveaux champs au formulaire. Les lecteurs d’écran ne peuvent pas détecter les données analysées dans cet état.
 
-Lorsque vous incluez du contenu graphique purement décoratif dans vos formulaires, vous souhaitez vous assurer que les lecteurs d’écran n’annoncent pas la présence de l’image. Pour la plupart des lecteurs d’écran, cela est possible en définissant la propriété Texte du Reader d’écran sur Aucun dans la palette Accessibilité. Si vous ne le faites pas, certains lecteurs d’écran peuvent annoncer la présence d’un graphique, sans indiquer ce qu’il représente. Pour les images dynamiques, telles que les objets de champ d’image, assurez-vous que les équivalents textuels sont correctement mis à jour lorsque l’image est modifiée. Ne créez pas de descriptions de texte pour les objets de champ d’image qui ne sont utilisés que pour la décoration. Vous pouvez utiliser le langage de script FormCalc pour affecter dynamiquement des descriptions textuelles à un objet de champ d’image. FormCalc est le langage de script standard d’Adobe LiveCycle Designer. Prenons l’exemple d’un formulaire avec un champ d’image nommé ImageField1 et le texte associé dans le noeud imagetext des données d’exécution. Vous pouvez utiliser un script pour transmettre ce texte dans un événement approprié (par exemple `form:ready`) comme suit :
+Lorsque vous incluez du contenu graphique purement décoratif dans vos formulaires, vous souhaitez vous assurer que les lecteurs d’écran n’annoncent pas la présence de l’image. Pour la plupart des lecteurs d’écran, cela est possible en définissant la propriété Texte du Reader d’écran sur Aucun dans la palette Accessibilité. Si vous ne le faites pas, certains lecteurs d’écran peuvent annoncer la présence d’un graphique, sans indiquer ce que le graphique représente. Pour les images dynamiques, telles que les objets de champ d’image, assurez-vous que les équivalents textuels sont correctement mis à jour lorsque l’image est modifiée. Ne créez pas de descriptions de texte pour les objets de champ d’image qui ne sont utilisés que pour la décoration. Vous pouvez utiliser le langage de script FormCalc pour affecter dynamiquement des descriptions textuelles à un objet de champ d’image. FormCalc est le langage de script standard d’Adobe LiveCycle Designer. Prenons l’exemple d’un formulaire avec un champ d’image nommé ImageField1 et le texte associé dans le noeud imagetext des données d’exécution. Vous pouvez utiliser un script pour transmettre ce texte dans un événement approprié (par exemple `form:ready`) comme suit :
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -148,13 +149,15 @@ Points de contrôle connexes
 
 ## Fournissez des libellés appropriés pour les commandes de formulaire{#provide-proper-labels}
 
-Le libellé ou la légende d’un contrôle de formulaire identifie ce que le contrôle de formulaire est censé représenter. Par exemple, le texte &quot;Prénom&quot; indique aux utilisateurs de saisir leur prénom dans un champ de texte. Pour être accessible par les lecteurs d’écran, le libellé doit être associé par programmation à la commande de formulaire ou cette dernière doit être configurée avec des informations d’accessibilité supplémentaires à l’aide de la palette Accessibilité. Il ne suffit pas de placer un objet de texte à côté de la commande. Pour les utilisateurs voyants ou malvoyants, il est important que le libellé soit correctement positionné à côté du contrôle. Les deux techniques seront abordées dans les sections suivantes.
+Le libellé ou la légende d’un contrôle de formulaire identifie ce que le contrôle de formulaire est censé représenter. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible par les lecteurs d’écran, le libellé doit être associé par programmation à la commande de formulaire ou cette dernière doit être configurée avec des informations d’accessibilité supplémentaires à l’aide de la palette Accessibilité. Il ne suffit pas de placer un objet de texte à côté de la commande. Pour les utilisateurs voyants ou malvoyants, il est important que le libellé soit correctement positionné à côté du contrôle. Les deux techniques seront abordées dans les sections suivantes.
 
 ### Spécification de texte de libellé accessible à l’aide de la palette Accessibilité
 
 Le libellé qui est perçu par les utilisateurs de lecteurs d’écran ne doit pas nécessairement être le même que la légende visuelle. Dans certains cas, vous souhaiterez peut-être être plus précis sur l’objectif du contrôle.
 Pour chaque objet de champ d’un formulaire, la palette Accessibilité (voir l’illustration 3) permet de spécifier ce que le lecteur d’écran annonce pour identifier le champ de formulaire spécifique.
+
 Pour utiliser la palette Accessibilité, procédez comme suit :
+
 1. Pour afficher la palette Accessibilité, choisissez Fenêtre > Accessibilité ou appuyez sur les touches Maj+F6.
 1. Sélectionnez un objet dans votre formulaire. La palette affiche les propriétés d’accessibilité de l’objet.
 
@@ -185,9 +188,9 @@ Tenez compte des points suivants lorsque vous utilisez la palette Accessibilité
 * Si vous devez créer une description à l’aide des options Info-bulle ou Texte de Reader d’écran personnalisé , incluez toujours la légende visible sur le formulaire, sauf lorsque la légende visible n’est pas significative, par exemple lorsque la légende elle-même est abrégée. Cela permet aux utilisateurs de lecteurs d’écran de communiquer efficacement avec d’autres utilisateurs au sujet des éléments de l’interface utilisateur. Ces différents groupes d’utilisateurs ont des difficultés à identifier le même élément d’IU si le texte de sa légende diffère de la info-bulle ou du texte du Reader d’écran personnalisé.
 * Pour les cases à cocher et les listes déroulantes dans les cellules d’un tableau, le lecteur d’écran annonce la légende, l’info-bulle ou le texte de lecteur d’écran personnalisé que vous spécifiez pour l’objet. Si vous souhaitez utiliser l’en-tête de colonne pour le texte de remplacement de ces objets lorsqu’ils sont placés dans un tableau, ne fournissez pas de légende, d’info-bulle ou de texte de lecteur d’écran personnalisé.
 * Si le contrôle nécessite des instructions supplémentaires, assurez-vous qu’elles sont également incluses dans l’alternative textuelle. Incluez suffisamment d’informations vocales pour que les utilisateurs sachent quelles entrées sont attendues et comment remplir correctement le champ, mais ne submergez pas les utilisateurs d’informations redondantes.
-* Ne fournissez pas d’informations inutiles décrivant comment utiliser les commandes : laissez les technologies d’assistance de l’utilisateur gérer cela pour l’utilisateur. Les utilisateurs peuvent configurer la terminologie en fonction de leur niveau de confort.
+* Ne fournissez pas d’informations superflues décrivant comment utiliser les commandes : laissez les technologies d’assistance de l’utilisateur gérer cela pour l’utilisateur. Les utilisateurs peuvent configurer la terminologie en fonction de leur niveau de confort.
 
-La figure 4 illustre un exemple de champ de texte avec une légende visuelle qui peut être floue pour certains utilisateurs de lecteurs d’écran. Dans cet exemple, le texte de Reader d’écran personnalisé est défini sur &quot;Nombre de pages&quot; et le précédent de Reader d’écran est défini sur Texte personnalisé. Par conséquent, le texte de légende (visuel) réel (&quot;# de pages&quot;) ne sera pas utilisé par le lecteur d’écran. Une info-bulle peut également avoir été spécifiée.
+La figure 4 illustre un exemple de champ de texte avec une légende visuelle qui peut être floue pour certains utilisateurs de lecteurs d’écran. Dans cet exemple, le texte de Reader d’écran personnalisé est défini sur &quot;Nombre de pages&quot; et la priorité de Reader d’écran est définie sur Texte personnalisé. Par conséquent, le texte de légende (visuel) réel (&quot;# de pages&quot;) ne sera pas utilisé par le lecteur d’écran. Une info-bulle peut également avoir été spécifiée.
 
 ![Spécification de texte de Reader d’écran personnalisé lorsque l’étiquette visible est inadéquate](/help/forms/using/assets/image-4.png)
 
@@ -325,7 +328,7 @@ Pour les formulaires simples (c’est-à-dire les formulaires avec une dispositi
 * Choisissez Affichage > Afficher l’ordre de tabulation.
 * Cliquez sur Afficher l’ordre dans la palette Ordre de tabulation.
 
-Tous les objets s’affichent avec un nombre dans le coin supérieur droit, indiquant la place de l’objet dans l’ordre de tabulation par défaut. Les objets interactifs de cette séquence forment l’ordre de tabulation. La figure 7 présente la visualisation de l’ordre de lecture d’un formulaire de base.
+Un nombre apparaît dans le coin supérieur droit pour indiquer la place de l’objet dans l’ordre de tabulation par défaut. Les objets interactifs de cette séquence forment l’ordre de tabulation. La figure 7 présente la visualisation de l’ordre de lecture d’un formulaire de base.
 
 ![Visualisation de l’ordre de lecture par défaut pour un formulaire de commande type](/help/forms/using/assets/image-7.png)
 
@@ -350,7 +353,7 @@ Pour activer les aides visuelles, utilisez les méthodes suivantes :
 
 ### Utilisation de la position pour influencer l’ordre de tabulation par défaut
 
-Pour changer l’ordre de tabulation par défaut, vous pouvez modifier les coordonnées d’un objet en le déplaçant vers un autre emplacement. Par exemple, dans la figure 9, le champ Nom du produit apparaît dans l’ordre de tabulation avant le champ Quantité . Pour modifier cette commande, vous pouvez déplacer le champ Nom du produit afin qu’il soit placé en bas ou à droite du champ Quantité .
+Pour modifier l’ordre de tabulation par défaut, vous pouvez modifier les coordonnées d’un objet en le déplaçant vers un autre emplacement. Par exemple, dans la figure 9, le champ Nom du produit apparaît dans l’ordre de tabulation avant le champ Quantité . Pour modifier cette commande, vous pouvez déplacer le champ Nom du produit afin qu’il soit placé en bas ou à droite du champ Quantité .
 
 ![L’ordre de tabulation par défaut est de gauche à droite](/help/forms/using/assets/image-9.png)
 
@@ -514,7 +517,7 @@ Recommendations pour l’utilisation des couleurs :
 
 ## Fournir des cellules d’en-tête pour les tableaux{#provide-heading-cells}
 
-Les tableaux constituent un moyen efficace d’organiser et de présenter le contenu dans des formulaires accessibles. Utilisées de manière appropriée, les lignes et les colonnes d’un tableau fournissent une structure prévisible et cohérente pour le contenu du formulaire. Par exemple, lorsqu’un utilisateur de lecteur d’écran navigue dans une cellule de rangée de contenu, le lecteur d’écran indique l’emplacement de la cellule, puis lit le contenu de la cellule. Le lecteur d’écran indique l’emplacement de la cellule à l’aide d’une combinaison d’en-têtes de lignes et de colonnes ou de numéros de lignes et de colonnes. Comme les lecteurs d’écran fournissent des informations qui orientent l’utilisateur vers l’emplacement du contenu dans le tableau, sa disposition affecte directement l’accessibilité du tableau.
+Les tableaux constituent un moyen efficace d’organiser et de présenter le contenu dans des formulaires accessibles. Utilisées de manière appropriée, les lignes et colonnes d’un tableau fournissent une structure prévisible et cohérente pour le contenu du formulaire. Par exemple, lorsqu’un utilisateur de lecteur d’écran navigue dans une cellule de rangée de contenu, le lecteur d’écran indique l’emplacement de la cellule, puis lit le contenu de la cellule. Le lecteur d’écran indique l’emplacement de la cellule à l’aide d’une combinaison d’en-têtes de lignes et de colonnes ou de numéros de lignes et de colonnes. Comme les lecteurs d’écran fournissent des informations qui orientent l’utilisateur vers l’emplacement du contenu dans le tableau, sa disposition affecte directement l’accessibilité du tableau.
 
 Vous pouvez spécifier les rôles suivants pour les éléments de tableau au fur et à mesure de la construction des tableaux. Ces rôles permettent aux lecteurs d’écran de parcourir la structure du tableau à l’aide de raccourcis spéciaux et transmettent à l’utilisateur la relation entre les cellules du tableau et les cellules d’en-tête correspondantes.
 * Tableau

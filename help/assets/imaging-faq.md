@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '3547'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -144,13 +144,15 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Conversion automatique au format AVIF si le navigateur prend en charge le format
 * Conversion automatique au format WebP si la conversion AVIF n’a pas été bénéfique ou si le navigateur ne prend pas en charge l’AVIF
 * Conversion automatique vers le JPEG2000 si Safari ne prend pas en charge le WebP
-* Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP\
-  | Format d’image | Navigateurs pris en charge |
-|---|---|
-| AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
-| WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-| JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
-| JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+* Conversion automatique vers le JPEGXR pour IE 9+ ou si Edge ne prend pas en charge WebP
+
+  | Format d’image  | Navigateurs pris en charge |
+  |---|---|
+  | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
+  | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
+
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
