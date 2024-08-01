@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 97%
 
 ---
 
@@ -92,6 +92,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
      <li>Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes.  (FORMS-14209) </li>
      <li> Lors de l’installation du pack de services 20 d’AEM Forms 6.5 (package de modules complémentaires d’AEM Forms pour SP20), l’interface d’utilisation (IU) d’AEM Sites présente une dégradation significative des performances.  (FORMS-13791) </li>
      <li>Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)</li>
+     <li>Les configurations qui utilisent le service cloud hérité pour Adobe Analytics avec une authentification basée sur les informations d’identification de l’utilisateur ne fonctionnent pas correctement, ce qui entraîne l’échec de l’exécution des règles d’analyse. (FORMS-15428)
     </ul>
     </td>    
   </tr>
