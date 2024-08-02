@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4390'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ Voici la liste des correctifs d’accessibilité inclus dans cette version :
 * Lorsqu’un utilisateur ou une utilisatrice modifie un formulaire créé en allemand et traduit en anglais, la langue s’affiche de manière incohérente entre les modes « Prévisualisation » et « Modification ». Cela entraîne l’affichage des composants de bouton radio et de case à cocher en anglais pendant le mode « Modification », alors qu’ils s’affichent correctement en allemand pendant le mode « Prévisualisation ». (FORMS-13910)
 * Échec de l’outil de purge de processus avec l’erreur `NoClassDefFoundError: org/omg/CORBA/UserException`. (FORMS-13751)
 * Lorsqu’un utilisateur ou une utilisatrice tente d’incorporer un formulaire adaptatif (AF) dans une page web, externe ou AEM Sites, à l’aide d’un conteneur incorporé, le conteneur du guide de formulaire adaptatif introduit un attribut aria-label. Le libellé a le role=&quot;main&quot; pour le formulaire incorporé. Selon les directives de l’ARIA, il ne doit y avoir qu’un seul élément role=&quot;main&quot; par page. Par conséquent, lorsqu’un utilisateur ou une utilisatrice ajoute un autre élément role=&quot;main&quot; pour le contenu principal de sa page, il est marqué comme un problème d’accessibilité. (FORMS-13538)
-* Dans le pack de services AEM Forms 19 (6.5.19.0), lors de l’utilisation de la liste déroulante dans un formulaire adaptatif, les listes déroulantes avec le texte d’espace réservé conservent la valeur `id="emptyValue"`. Ainsi, si un formulaire comporte plusieurs composants de liste déroulante, chacun aura `id="emptyValue"` qui n’est pas correct selon les directives ARIA. (FORMS-14209)
+* Dans le pack de services AEM Forms 19 (6.5.19.0), lors de l’utilisation de la liste déroulante dans un formulaire adaptatif, les listes déroulantes avec le texte d’espace réservé conservent la valeur `id="emptyValue"`. Ainsi, si un formulaire comporte plusieurs composants de liste déroulante, chacun aura `id="emptyValue"` qui n’est pas correct selon les directives ARIA. (FORMS-13370).
 * Lorsqu’un utilisateur ou une utilisatrice recharge une communication interactive après l’envoi des données au format XML, un espace vide s’affiche entre le bloc de texte dans le PDF généré. (FORMS-13481)
 * IPH manquant pour l’écran « Préparer l’étape de déploiement DSC » lors de l’exécution de ConfigurationManager. (FORMS-10699)
 * Lorsqu’un utilisateur ou une utilisatrice ajoute un nouveau dictionnaire pour traduire un formulaire avec des dictionnaires existants, les anciennes traductions sont invalidées. Les problèmes suivants se produisent : (FORMS-13576).
@@ -551,7 +551,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
    1. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Redémarrez votre serveur AEM.
 
-* Lorsqu’un utilisateur effectue une mise à jour vers AEM Forms Service Pack 20 (6.5.20.0) installé avec le module complémentaire Forms, les configurations utilisant le service cloud hérité pour Adobe Analytics avec authentification par informations d’identification de l’utilisateur ne fonctionnent pas correctement, ce qui entraîne l’échec de l’exécution des règles d’analyse. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
+* Lorsqu’un utilisateur ou une utilisatrice effectue une mise à jour vers le pack de services AEM Forms 20 (6.5.20.0) installé avec le module complémentaire Forms, les configurations utilisant le service cloud hérité pour Adobe Analytics avec authentification par informations d’identification de l’utilisateur ou de l’utilisatrice ne fonctionnent pas correctement, ce qui entraîne l’échec de l’exécution des règles d’analyse. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Lorsqu’une personne effectue une mise à jour vers le pack de services AEM Forms 20 (6.5.20.0) sur le serveur JEE et génère des PDF à l’aide des services Output, le rendu des PDF pose des problèmes d’accessibilité. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Lorsqu’une personne génère des PDF balisés à l’aide du service Output sur JEE, un « Avertissement de structure inappropriée » s’affiche. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
