@@ -5,10 +5,10 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
 workflow-type: tm+mt
-source-wordcount: '3506'
-ht-degree: 100%
+source-wordcount: '3519'
+ht-degree: 99%
 
 ---
 
@@ -188,9 +188,13 @@ Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires 
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Sélectionnez le dictionnaire à ajouter, puis cliquez sur le bouton Ajouter.
+1. Sélectionnez le **répertoire racine** et le dictionnaire (si nécessaire) que vous souhaitez ajouter, puis sélectionnez **Ajouter**.
 
-   ![chlimage_1-252](assets/chlimage_1-252.png)
+   ![Dictionnaire i18N](assets/tc-manage-i18n-dictionary.png)
+
+1. Si nécessaire, sélectionnez la nature de la mise à jour :
+
+   ![Traduire](assets/tc-manage-translate.png)
 
 Le dictionnaire se trouve maintenant dans la tâche de traduction.
 
