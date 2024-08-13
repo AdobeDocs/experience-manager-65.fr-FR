@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3519'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires 
 
    ![Dictionnaire i18N](assets/tc-manage-i18n-dictionary.png)
 
-1. Si nécessaire, sélectionnez la nature de la mise à jour :
+1. Si nécessaire, sélectionnez la nature de la mise à jour :
 
    ![Traduire](assets/tc-manage-translate.png)
 
