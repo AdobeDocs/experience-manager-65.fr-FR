@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
-workflow-type: ht
-source-wordcount: '7443'
+source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+workflow-type: tm+mt
+source-wordcount: '7448'
 ht-degree: 100%
 
 ---
@@ -1231,6 +1231,7 @@ ht-degree: 100%
          + [Configuration des URL pour l’optimisation du moteur de recherche](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Options de mise en cache](/help/commerce/cif/configuring/caching.md)
          + [En-têtes HTTP personnalisés](/help/commerce/cif/configuring/custom-http-headers.md)
+         + [Configuration du panier et du Dispatcher](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + Développement {#developing}
          + [Développement avec AEM](/help/commerce/cif/develop.md)
          + [Style des composants CIF](/help/commerce/cif/customizing/style-cif-component.md)
