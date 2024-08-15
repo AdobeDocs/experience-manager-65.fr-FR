@@ -5,10 +5,10 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '981'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Une fois qu’un processus a été créé avec le service Execute Script inclus,
 
 **À propos de la technologie du service Execute Script**
 
-Pour connaître les capacités et les limites du service Execute Script, il faut connaître les fondements technologiques du service. AEM Forms on JEE utilise l’analyseur DOM (Apache Xerces Document Object Model) pour créer et stocker des variables XML dans des processus. Xerces est une implémentation Java™ de la spécification du modèle d’objet de document du W3C, définie [ici](https://dom.spec.whatwg.org/). La spécification DOM est un moyen standard de manipuler XML qui existe depuis 1998. L’implémentation Java™ de Xerces, Xerces-J, prend en charge DOM Level 2 version 1.0.
+Pour connaître les capacités et les limites du service Execute Script, il faut connaître les fondements technologiques du service. AEM Forms on JEE utilise l’analyseur DOM (Apache Xerces Document Object Model) pour créer et stocker des variables XML dans des processus. Xerces est une implémentation Java™ de la [spécification de modèle d’objet de document](https://dom.spec.whatwg.org/) du W3C. La spécification DOM est un moyen standard de manipuler XML qui existe depuis 1998. L’implémentation Java™ de Xerces, Xerces-J, prend en charge DOM Level 2 version 1.0.
 
 Les classes Java™ utilisées pour stocker les variables XML sont :
 
@@ -58,7 +58,7 @@ Les classes Java™ utilisées pour stocker les variables XML sont :
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl est une sous-classe de NodeImpl. On peut donc supposer que toute variable de processus XML est une dérivation de NodeImpl. Vous pouvez trouver la documentation de NodeImpl [ici](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl est une sous-classe de NodeImpl. On peut donc supposer que toute variable de processus XML est une dérivation de NodeImpl. Pour plus d’informations, consultez la documentation de [NodeImpl](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) .
 
 **Exemple de création de fichier XML à l’aide du service Execute Script**
 

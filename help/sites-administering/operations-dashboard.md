@@ -10,10 +10,10 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
-workflow-type: ht
-source-wordcount: '5744'
-ht-degree: 100%
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+workflow-type: tm+mt
+source-wordcount: '5743'
+ht-degree: 99%
 
 ---
 
@@ -506,7 +506,7 @@ Vous pouvez également configurer les heures en appuyant sur l’icône d’engr
 
 ### Nettoyage des révisions {#revision-clean-up}
 
-Pour plus d’informations sur l’exécution du nettoyage des révisions, [consultez cet article dédié](/help/sites-deploying/revision-cleanup.md).
+Pour plus d’informations, voir [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md).
 
 ### Nettoyage des binaires Lucene {#lucene-binaries-cleanup}
 
@@ -521,7 +521,7 @@ Pour accéder à la tâche Nettoyage des binaires Lucene, sélectionnez **AEM >
 
 ### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
-Pour plus d’informations sur la récupération de l’espace mémoire du magasin de donnée, reportez-vous à la [page de documentation](/help/sites-administering/data-store-garbage-collection.md) dédiée.
+Pour plus d’informations sur le nettoyage de la mémoire d’entrepôt de données, consultez la page de documentation dédiée [Nettoyage de la mémoire d’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Purge des workflows {#workflow-purge}
 
@@ -532,7 +532,7 @@ Il est possible également de purger les workflows à partir du tableau de bord 
 
 >[!NOTE]
 >
->Pour plus d’informations sur la maintenance des workflows, consultez [cette page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Pour plus d’informations sur la maintenance des workflows, voir [Administration des instances de workflows](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Maintenance des journaux d’audit {#audit-log-maintenance}
 

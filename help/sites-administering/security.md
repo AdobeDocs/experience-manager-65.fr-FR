@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '5409'
-ht-degree: 100%
+source-wordcount: '5412'
+ht-degree: 99%
 
 ---
 
@@ -610,7 +610,7 @@ Pour en savoir plus sur la synchronisation des utilisateurs et utilisatrices, et
 
 >[!NOTE]
 >
->Adobe a introduit une nouvelle vue principale basée sur l’interface utilisateur tactile pour la gestion des autorisations. Pour plus d’informations sur son utilisation, consultez [cette page](/help/sites-administering/touch-ui-principal-view.md).
+>Adobe a introduit une nouvelle vue principale basée sur l’interface utilisateur tactile pour la gestion des autorisations. Pour plus d’informations sur son utilisation, voir [Affichage principal pour la gestion des autorisations](/help/sites-administering/touch-ui-principal-view.md).
 
 Cette section décrit comment définir des autorisations, y compris des autorisations de réplication.
 

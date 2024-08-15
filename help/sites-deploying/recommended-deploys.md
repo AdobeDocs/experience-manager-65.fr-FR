@@ -10,10 +10,10 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 100%
+source-wordcount: '1756'
+ht-degree: 94%
 
 ---
 
@@ -123,7 +123,7 @@ Les avantages :
 
 >[!NOTE]
 >
->Dans le diagramme ci-dessus, les serveurs AEM 3 et AEM 4 sont présentés avec un statut inactif, ce qui suppose une latence réseau entre les serveurs AEM du centre de données 2 et le nœud primaire MongoDB du centre de données 1 qui est supérieure à l’exigence décrite [ici](/help/sites-deploying/aem-with-mongodb.md#checklists). Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le centre données 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs centres de données.
+>Dans le diagramme ci-dessus, AEM Server 3 et AEM Server 4 sont présentés avec un état inactif en supposant une latence réseau entre les serveurs d’accès à l’interface d’accès à l’interface d’accès à l’interface d’accès à l’interface d’accès à l’interface d’accès à l’interface utilisateur d’un site d’accès à l’interface utilisateur d’un site d’accès à l’interface utilisateur. [](/help/sites-deploying/aem-with-mongodb.md#checklists) Si la latence maximum est compatible avec les exigences, par exemple en utilisant les zones de disponibilité, les serveurs AEM dans le centre données 2 peuvent être actifs également, créant un cluster AEM actif-actif dans plusieurs centres de données.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Il est presque impossible de prédire quel sera le modèle exact de simultanéit
 
 >[!NOTE]
 >
->Tough Day peut être utilisé pour évaluer les performances de l’application du client ou de la cliente dans le contexte de la configuration matérielle déployée. Vous trouverez davantage d’informations sur cet outil [ici](/help/sites-developing/tough-day.md).
+>[Tough Day](/help/sites-developing/tough-day.md) peut être utilisé pour évaluer les performances de l’application du client dans le contexte de la configuration matérielle déployée.
 
 Un déploiement minimal avec MongoDB implique généralement la topologie suivante :
 
@@ -184,9 +184,9 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 
 **Recommandations essentielles pour les déploiements de MongoDB :**
 
-* Consultez l’article sur MongoDB pour [Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) ;
-* Passez en revue la liste de contrôle d’exploitation [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
-* Participez à une formation en ligne sur MongoDB [ici](https://university.mongodb.com/).
+* Consultez la [révision de déploiement MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Examinez la [liste de contrôle des opérations MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
+* Participez à une [classe de certification sur MongoDB - disponible en ligne](https://university.mongodb.com/).
 
 >[!NOTE]
 >

@@ -10,10 +10,10 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 100%
+source-wordcount: '1758'
+ht-degree: 99%
 
 ---
 
@@ -379,7 +379,7 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
    ![lseconds](assets/lseconds.png)
 
-   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Voir les informations sur pev3 **[fournies ici](/help/sites-administering/adobeanalytics.md)**.*
+   *L’appel est similaire à l’appel Jalons hérités ci-dessus. Consultez les informations sur pev3 fournies sous [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **Références utilisées dans ce tutoriel :**
 

@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 100%
+source-wordcount: '1669'
+ht-degree: 97%
 
 ---
 
@@ -32,16 +32,14 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >
 >* **Répliquer/Réplication**
 >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
->
 
->[!NOTE]
->
->Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
->
->* Un workflow sera déclenché pour informer la personne appropriée de votre demande de publication.
->* Ce [workflow a peut-être été personnalisé](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) par votre équipe de développement.
->* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
->
+## Privilèges insuffisants {#insufficient-privileges}
+
+Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
+
+* Un workflow sera déclenché pour informer la personne appropriée de votre demande de publication.
+* Ce [workflow a peut-être été personnalisé](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) par votre équipe de développement.
+* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
 
 ## Publication de pages {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice. Pour plus d’informations, reportez-vous à la [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication, ainsi qu’aux sections [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur.
+   >
+   >Pour plus d’informations, reportez-vous aux sections [Privilèges insuffisants](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 

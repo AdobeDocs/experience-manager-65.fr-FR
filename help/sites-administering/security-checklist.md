@@ -10,10 +10,10 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -339,7 +339,7 @@ Pour atténuer ce problème, procédez comme suit :
 
 Le servlet de téléchargement de ressources par défaut permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La création d’archives ZIP volumineuses peut surcharger le serveur et le réseau. Pour atténuer le risque potentiel de déni de service (DoS) provoqué par ce comportement, le composant OSGi `AssetDownloadServlet` est désactivé par défaut sur l’instance de publication d’[!DNL Experience Manager]. Elle est activée sur l’instance auteur par défaut d’[!DNL Experience Manager].
 
-Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet sur les déploiements de création et de publication. Si votre configuration nécessite l’activation du serveur de téléchargement de ressources, consultez [cet article](/help/assets/download-assets-from-aem.md) pour plus d’informations. En outre, vous pouvez définir une limite de téléchargement maximale que votre déploiement peut prendre en charge.
+Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet sur les déploiements de création et de publication. Si votre configuration requiert l’activation de la fonctionnalité de téléchargement des ressources, reportez-vous à la section [Téléchargement de ressources à partir d’Adobe Experience Manager](/help/assets/download-assets-from-aem.md) pour plus d’informations. En outre, vous pouvez définir une limite de téléchargement maximale que votre déploiement peut prendre en charge.
 
 ### Désactiver WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` o
 
 Comme toutes les données de référentiel, ces propriétés sont arbitrées par la pile d’autorisations Oak. Leur accès doit être restreint conformément au principe du moindre privilège.
 
-Pour ce faire, Adobe fournit un package de renforcement des autorisations afin que les clients et clientes puissent s’en servir. Il fonctionne en installant une entrée de contrôle d’accès « deny » à la racine du référentiel, ce qui limite l’accès anonyme aux propriétés système couramment utilisées. Le package peut être téléchargé [ici](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) et peut être installé sur toutes les versions d’AEM prises en charge.
+Pour ce faire, Adobe fournit un package de renforcement des autorisations afin que les clients et clientes puissent s’en servir. Il fonctionne en installant une entrée de contrôle d’accès « deny » à la racine du référentiel, ce qui limite l’accès anonyme aux propriétés système couramment utilisées. Le package peut être [téléchargé](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) et installé sur toutes les versions d’AEM prises en charge.
 
 Pour illustrer les modifications, nous pouvons comparer les propriétés du nœud qui peuvent être affichées anonymement avant d’installer le package :
 

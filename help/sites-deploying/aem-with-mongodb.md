@@ -10,10 +10,10 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
-ht-degree: 100%
+source-wordcount: '6216'
+ht-degree: 99%
 
 ---
 
@@ -488,7 +488,7 @@ Vous pouvez le désactiver en suivant la procédure ci-dessous :
 
 >[!NOTE]
 >
->Pour plus d’informations sur Transparent Huge Pages, consultez cet [article](https://access.redhat.com/solutions/46111).
+>Pour plus d’informations sur Transparent Huge Pages, consultez l’article suivant du portail client Red Hat® : [Comment utiliser, surveiller et désactiver les modules externes transparents dans Red Hat Enterprise Linux 6, 7 et 8 ?](https://access.redhat.com/solutions/46111).
 
 #### Désactiver NUMA {#disable-numa}
 

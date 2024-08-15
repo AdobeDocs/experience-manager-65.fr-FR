@@ -10,10 +10,10 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 99%
 
 ---
 
@@ -145,7 +145,7 @@ Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que 
 
 ### Notation de type de nœud (CND) {#node-type-notation-cnd}
 
-Les définitions de type de nœud existent dans le référentiel sous la forme de fichiers CND. La notation CND est définie dans le cadre de la documentation JCR [ici](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Les définitions de type de nœud existent dans le référentiel sous la forme de fichiers CND. La notation CND est définie dans le cadre de la [documentation Jackrabbit](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Les définitions essentielles relatives aux types de nœud inclus dans AEM sont les suivantes :
 

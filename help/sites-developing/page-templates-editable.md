@@ -10,10 +10,10 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
-ht-degree: 100%
+source-wordcount: '3187'
+ht-degree: 99%
 
 ---
 
@@ -434,7 +434,7 @@ Lors de la création d’un nouveau modèle modifiable, la valeur est copiée du
 
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
-1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle modifiable, [en suivant ces instructions](/help/sites-authoring/templates.md#creating-a-new-template-template-author).
+1. Créez un modèle comme vous le feriez pour tout modèle modifiable. Voir [Création de modèles de page](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Cela peut servir de base à votre type de modèle.
 1. À l’aide de CRXDE Lite, copiez le nouveau modèle créé depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.

@@ -10,10 +10,10 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 100%
+source-wordcount: '1798'
+ht-degree: 99%
 
 ---
 
@@ -103,7 +103,7 @@ Plusieurs fonctionnalités AEM nécessitent des étapes supplémentaires après 
 
 #### Activer la récupération de l’espace mémoire du magasin de données {#enable-data-store-garbage-collection}
 
-Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de nettoyage de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Suivez les instructions [suivantes](/help/sites-administering/data-store-garbage-collection.md).
+Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de nettoyage de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que
 
 #### Activation du nettoyage des révisions en ligne {#enable-online-revision-cleanup}
 
-Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage de révision est activée et ajoutée à la liste de maintenance quotidienne. Suivez les instructions détaillées [ici](/help/sites-deploying/revision-cleanup.md).
+Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage de révision est activée et ajoutée à la liste de maintenance quotidienne. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md).
 
 ### Exécution du plan de test {#execute-test-plan}
 

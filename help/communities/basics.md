@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Les composants peuvent être explorés à l’aide d’une instance AEM et du [g
 
 Lors de la création du contenu d’une page, si le modèle sous-jacent permet de modifier la conception de la page, il est possible d’activer les composants qui ne sont pas déjà disponibles dans l’explorateur de composants dans le cadre de la conception du site.
 
-Les composants Communities disponibles sont répertoriés [ici](author-communities.md#available-communities-components).
+Voir la liste sous [Composants Communities disponibles](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

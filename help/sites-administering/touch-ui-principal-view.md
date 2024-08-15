@@ -10,10 +10,10 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 100%
+source-wordcount: '763'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 
 >[!NOTE]
 >
->Pour obtenir la liste complète des privilèges et des descriptions, veuillez consulter [cette page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Recherche d’autorisations d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour « dam-users », comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
 

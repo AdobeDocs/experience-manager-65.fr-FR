@@ -5,10 +5,10 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Les composants qui utilisent la configuration du service cloud ci-dessus envoien
 
 ## Restrictions {#restrictions}
 
-Bien que le service permette de définir des noms d’en-tête, y compris ceux qui sont standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
+Bien que le service permette de définir des noms d’en-tête, y compris ceux qui sont standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints sous [mdn web docs - HTTP headers](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
 
 * « Store » : utilisé par CIF pour identifier la boutique Adobe Commerce.
 * « Preview-Version » : utilisé par CIF pour récupérer les produits intermédiaires.
