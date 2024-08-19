@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5412'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -610,7 +610,7 @@ Pour en savoir plus sur la synchronisation des utilisateurs et utilisatrices, et
 
 >[!NOTE]
 >
->Adobe a introduit une nouvelle vue principale basée sur l’interface utilisateur tactile pour la gestion des autorisations. Pour plus d’informations sur son utilisation, voir [Affichage principal pour la gestion des autorisations](/help/sites-administering/touch-ui-principal-view.md).
+>Adobe a introduit une nouvelle vue principale basée sur l’interface utilisateur tactile pour la gestion des autorisations. Pour plus d’informations sur son utilisation, voir [Vue principale de la gestion des autorisations](/help/sites-administering/touch-ui-principal-view.md).
 
 Cette section décrit comment définir des autorisations, y compris des autorisations de réplication.
 
