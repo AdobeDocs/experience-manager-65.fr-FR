@@ -6,9 +6,9 @@ role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Li
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
-Pour plus d’informations sur cette rubrique, voir [Bonnes pratiques MSM](msm-best-practices.md) .
+Pour plus d’informations à ce sujet, consultez les [Bonnes pratiques relatives à MSM](msm-best-practices.md).
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 

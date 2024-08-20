@@ -11,9 +11,9 @@ exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2673'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -409,7 +409,7 @@ ll est important d’exécuter de temps en temps une récupération de l’espac
 1. Exécutez le processus de maintenance du référentiel Cold Standby, comme expliqué dans la section [ci-dessus](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. Une fois le processus de maintenance terminé et les instances relancées, procédez comme suit :
 
-   * Sur l’instance principale, exécutez le nettoyage de la mémoire d’entrepôt de données par le biais du bean JMX approprié, comme décrit dans la section [Exécution du nettoyage de la mémoire d’entrepôt de données via la console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * Sur l’instance principale, exécutez la récupération de l’espace mémoire du magasin de données par le biais du bean JMX approprié, comme décrit dans la section [Exécuter la récupération de l’espace mémoire du magasin de données via la console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * Sur l’instance secondaire, la récupération de l’espace mémoire du magasin de données est uniquement disponible via le MBean **BlobGarbageCollection** - `startBlobGC()`. Le MBean **RepositoryManagement** n’est pas disponible sur l’instance de secours.
 
    >[!NOTE]

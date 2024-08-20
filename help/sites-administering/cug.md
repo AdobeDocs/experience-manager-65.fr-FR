@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '710'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Cette option est facultative. Si rien n’est indiqué, la page de connexion sta
    >
    >Les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Tenez-en compte lors de la configuration de la Live Copy.
    >
-   >Pour plus d’informations, voir [Groupes d’utilisateurs fermés dans AEM - Livecopy](closed-user-groups.md#aem-livecopy).
+   >Pour plus d’informations, voir [Groupes fermés d’utilisateurs et utilisatrices dans AEM : Live Copy](closed-user-groups.md#aem-livecopy).
 
 1. La boîte de dialogue **Modifier le groupe d’utilisateurs et d’utilisatrices fermé** s’ouvre. Elle vous permet de rechercher et sélectionner votre groupe d’utilisateurs fermé, puis de confirmer la sélection avec **Enregistrer**.
 

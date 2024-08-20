@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2114'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -219,7 +219,7 @@ Une boîte de dialogue est alors créée sous la structure suivante :
 
 Vous pouvez désormais adapter la boîte de dialogue à vos besoins en modifiant les propriétés ou en créant des nœuds.
 
-Vous pouvez également utiliser l’éditeur de boîte dialogue pour modifier une boîte de dialogue. Un double-clic sur le nœud de la boîte de dialogue dans CRXDE Lite fait apparaître l’éditeur. Pour plus d’informations, voir [Éditeur de boîte de dialogue](/help/sites-developing/dialog-editor.md) .
+Vous pouvez également utiliser l’éditeur de boîte dialogue pour modifier une boîte de dialogue. Un double-clic sur le nœud de la boîte de dialogue dans CRXDE Lite fait apparaître l’éditeur. Voir l’[éditeur de boîtes de dialogue](/help/sites-developing/dialog-editor.md) pour plus d’informations.
 
 ## Création d’un nœud {#creating-a-node}
 

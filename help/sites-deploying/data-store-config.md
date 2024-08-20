@@ -9,9 +9,9 @@ exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3461'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Pour configurer les magasins de nœuds et de données, procédez comme suit :
 
 >[!CAUTION]
 >
->Les nouvelles versions d’Oak utilisent un nouveau modèle de dénomination et un nouveau format pour les fichiers de configuration OSGi. Le nouveau schéma d’affectation de nom exige que le fichier de configuration soit nommé **.config** et que les valeurs soient saisies dans le nouveau format. Pour plus d’informations, voir [Le modèle de configuration Apache Sling et Apache SlingStart - Default Configuration Format](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Les nouvelles versions d’Oak utilisent un nouveau modèle de dénomination et un nouveau format pour les fichiers de configuration OSGi. Le nouveau modèle de dénomination nécessite que le fichier de configuration soit nommé **.config**. Le nouveau format nécessite que les valeurs soient saisies. Pour plus d’informations, voir le [modèle d’approvisionnement Apache Sling et Apache SlingStart : format de configuration par défaut](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Si vous effectuez une mise à niveau à partir d’une version plus ancienne d’Oak, veillez d’abord à sauvegarder le dossier `crx-quickstart/install`. Après la mise à niveau, restaurez les contenus du dossier à l’installation mise à niveau, puis modifiez l’extension des fichiers de configuration de **.cfg** en **.config**.
 
@@ -370,7 +370,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
    * Si vous utilisez S3 comme magasin de données, créez un fichier nommé `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` dans le dossier `<aem-install>/crx-quickstart/install`, comme ci-dessus.
 
-1. Modifiez les fichiers de configuration du magasin de données sur chaque instance afin qu’ils pointent vers le même magasin de données. Pour plus d’informations, voir [Configurations de l’entrepôt de données](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Modifiez les fichiers de configuration du magasin de données sur chaque instance afin qu’ils pointent vers le même magasin de données. Pour plus d’informations, voir [Configuration des magasins de données](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Si l’instance a été clonée à partir d’un serveur existant, vous devez supprimer le `clusterId` de la nouvelle instance à l’aide du dernier outil oak-run lorsque le référentiel est hors ligne. La commande que vous devez exécuter est la suivante :
 
    ```xml

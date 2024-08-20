@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ L’équipe Adobe Consulting Services a établi une série d’exemples de cod
 
 Tutoriel en plusieurs parties conçu pour les développeurs et développeuses qui découvrent AEM et traitant de thèmes tels que la configuration de projets, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants : [Prise en main d’AEM Sites - Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).
 
-Un modèle Maven permettant de créer un projet AEM comme point de départ pour développer votre propre fonctionnalité est disponible [sur GitHub - AEM Project Archetype](https://github.com/adobe/aem-project-archetype).
+Un modèle Maven permettant de créer un projet AEM comme point de départ pour développer votre propre fonctionnalité est disponible [dans GitHub : archétype de projet AEM](https://github.com/adobe/aem-project-archetype).
 
-Des exemples de code d’IU tactile standard sont disponibles à l’adresse [Développement de composants AEM](/help/sites-developing/developing-components.md).
+Des exemples de code d’IU tactile standard sont disponibles dans [Développement de composants AEM](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >

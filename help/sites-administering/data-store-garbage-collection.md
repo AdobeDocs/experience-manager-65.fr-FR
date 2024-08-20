@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1897'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -182,7 +182,7 @@ La commande curl est immédiatement renvoyée.
 
 La vérification de la cohérence de l’entrepôt de données signale les fichiers binaires d’entrepôt de données manquants, mais encore référencés. Pour lancer une vérification de cohérence, procédez comme suit :
 
-1. Accédez à la console JMX. Pour plus d’informations sur l’utilisation de la console JMX, voir [Surveillance des ressources du serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Accédez à la console JMX. Pour plus d’informations sur l’utilisation de la console JMX, voir [Surveiller les ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Recherchez l’entrée MBean **BlobGarbageCollection** et cliquez dessus.
 1. Cliquez sur le lien `checkConsistency()`.
 

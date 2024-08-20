@@ -12,9 +12,9 @@ exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2143'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 
 ## Présentation {#overview}
 
-1. **Outil de détection des motifs** - Exécutez l’outil de détection des motifs comme décrit dans la planification de la mise à niveau, et décrivez en détail sur la page [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md) . Vous obtenez un rapport du détecteur de motifs qui contient plus de détails sur les zones à traiter en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport du détecteur de motifs vous donne une indication des incompatibilités éventuelles de votre code. S’il n’y a aucune incompatibilité, votre déploiement est déjà compatible avec la version 6.5. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin pour conserver la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir d’effectuer une exécution en mode de compatibilité et de différer le développement pour les nouvelles fonctionnalités de la version 6.5 ou pour la compatibilité. Vous pouvez également décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Pour en savoir plus, consultez la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Détecteur de motifs** : exécutez le détecteur de motifs comme décrit dans la planification de la mise à niveau détaillée sur la page [Évaluer la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md). Vous obtenez un rapport du détecteur de motifs qui contient plus de détails sur les zones à traiter en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport du détecteur de motifs vous donne une indication des incompatibilités éventuelles de votre code. S’il n’y a aucune incompatibilité, votre déploiement est déjà compatible avec la version 6.5. Vous pouvez toujours choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin pour conserver la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir d’effectuer une exécution en mode de compatibilité et de différer le développement pour les nouvelles fonctionnalités de la version 6.5 ou pour la compatibilité. Vous pouvez également décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Pour en savoir plus, consultez la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 1. **Développement de la base de code pour la version 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
 1. **Compilation avec 6.5 Uber jar** : mettez à jour les POM de la base de code pour pointer vers 6.5 Uber jar et compilez le code par rapport à cette opération.
@@ -40,7 +40,7 @@ Lors de la planification d’une mise à niveau, les aspects suivants d’une mi
 
 Avant de procéder à une mise à niveau, vous devez disposer d’une base de code d’application stable qui a été soigneusement testée par rapport à la version cible d’AEM. En fonction des observations effectuées dans les tests, il peut être possible d’optimiser le code personnalisé. Par exemple, il peut être possible de refactoriser le code pour éviter de parcourir le référentiel, d’indexer de manière personnalisée pour optimiser la recherche ou d’utiliser ded noeuds non ordonnés dans JCR, entre autres.
 
-Outre la mise à niveau facultative de votre base de code et de vos personnalisations pour qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet également de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante, comme décrit à la section [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+Outre la mise à niveau facultative de votre base de code et de vos personnalisations pour qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante, comme décrit dans [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
 Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécutant le [Détecteur de motifs](/help/sites-deploying/pattern-detector.md) dans la première étape, vous pouvez évaluer la complexité globale de la mise à niveau. Il peut également vous aider à décider si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations pour utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md)
 [![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
@@ -67,7 +67,7 @@ AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans 
 
 ### Suppression progressive de l’utilisation du résolveur de ressources d’administration {#phase-out-use-of-administrative-resource-resolver}
 
-L’utilisation d’une session d’administration via `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était très courante dans les bases de code avant AEM 6.0. Ces méthodes sont désormais déconseillées pour des raisons de sécurité, car elles offrent un niveau d’accès trop large. [Ces méthodes seront supprimées des prochaines versions de Sling.](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de refactoriser tout code pour utiliser les utilisateurs et utilisatrices du service à la place. Pour plus d’informations sur les utilisateurs du service et sur la manière d’éliminer progressivement les sessions administratives, voir [Utilisateurs du service dans Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+L’utilisation d’une session d’administration via `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était très courante dans les bases de code avant AEM 6.0. Ces méthodes sont désormais déconseillées pour des raisons de sécurité, car elles offrent un niveau d’accès trop large. [Ces méthodes seront supprimées des prochaines versions de Sling.](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de refactoriser tout code pour utiliser les utilisateurs et utilisatrices du service à la place. Pour plus d’informations sur les utilisateurs et utilisatrices du service et sur la manière d’éliminer progressivement les sessions administratives, voir [Utilisateurs et utilisatrices du service dans Adobe Experience Manager (AEM)](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Requêtes et index Oak {#queries-and-oak-indexes}
 
@@ -83,7 +83,7 @@ Les outils suivants sont disponibles pour l’analyse et l’inspection des perf
 
 ### Création dans l’interface utilisateur classique {#classic-ui-authoring}
 
-La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Voir [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release) pour plus d’informations. Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de passer à AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans AEM 6.5, plusieurs configurations OSGi doivent être intégrées à la base de code. Vous trouverez plus d’informations sur la procédure de configuration sous [Activation de l’accès à l’interface utilisateur classique](/help/sites-administering/enable-classic-ui.md).
+La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Voir [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release) pour plus d’informations. Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de passer à AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans AEM 6.5, plusieurs configurations OSGi doivent être intégrées à la base de code. Vous trouverez plus d’informations sur la procédure de configuration sous [Activer l’accès à l’IU classique](/help/sites-administering/enable-classic-ui.md).
 
 ## Alignement avec la structure de référentiel de la version 6.5 {#align-repository-structure}
 
@@ -143,11 +143,11 @@ Pour tout autre objectif, utilisez l’API `migrateAllAssets()`
 
 ### Personnalisations de script InDesign {#indesign-script-customizations}
 
-Adobe recommande de placer les scripts personnalisés à l’emplacement `/apps/settings/dam/indesign/scripts`. Vous trouverez plus d’informations sur les personnalisations des scripts d’InDesign sous [Intégration d’Adobe Experience Manager Assets à Adobe InDesign Server](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe recommande de placer les scripts personnalisés à l’emplacement `/apps/settings/dam/indesign/scripts`. Vous trouverez plus d’informations sur les personnalisations des scripts d’InDesign sous [Intégrer Adobe Experience Manager Assets à Adobe InDesign Server](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### Récupérer des configurations ContextHub {#recovering-contexthub-configurations}
 
-Les configurations ContextHub sont affectées par la mise à niveau. Voir [Configuration de ContextHub](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading) pour obtenir des instructions sur la manière de récupérer les configurations ContextHub existantes.
+Les configurations ContextHub sont affectées par la mise à niveau. Voir [Configurer ContextHub](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading) pour obtenir des instructions sur la manière de récupérer les configurations ContextHub existantes.
 
 ### Personnalisations des workflows {#workflow-customizations}
 
@@ -163,7 +163,7 @@ La structure des modèles modifiables a changé entre AEM 6.2 et 6.3. Si vous 
 
 ### Modifications de l’implémentation des groupes d’utilisateurs fermés {#cug-implementation-changes}
 
-L’implémentation des groupes d’utilisateurs fermés a considérablement changé pour répondre aux limites de performances et d’évolutivité des versions précédentes d’AEM. La version précédente du CUG a été abandonnée dans la version 6.3 et la nouvelle mise en oeuvre n’est prise en charge que dans l’interface utilisateur tactile.
+L’implémentation des groupes d’utilisateurs fermés a considérablement changé pour répondre aux limites de performances et d’évolutivité des versions précédentes d’AEM. La version précédente des groupes fermés d’utilisateurs et utilisatrices a été abandonnée dans la version 6.3 et la nouvelle implémentation n’est prise en charge que dans l’interface d’utilisation tactile.
 
 ## Procédure de test {#testing-procedure}
 

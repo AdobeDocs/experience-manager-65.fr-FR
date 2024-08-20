@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -161,4 +161,4 @@ Pour personnaliser les colonnes dans la vue Liste :
 
 Lors de l’utilisation d’une console, un cas d’utilisation courant se présente lorsque l’utilisateur ou l’utilisatrice doit effectuer un choix parmi des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste, par exemple à partir de laquelle l’auteur ou l’autrice doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Pour plus d’informations, voir [Personnalisation de la création de page - Filtrage des ressources](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) .
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Pour plus d’informations, voir [Personnaliser la création de page : filtrage des ressources](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).

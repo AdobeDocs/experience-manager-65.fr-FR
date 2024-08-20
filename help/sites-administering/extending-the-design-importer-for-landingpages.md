@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3442'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -443,7 +443,7 @@ Si aucun codage n’est spécifié dans le HTML importé, le codage par défaut 
 
 Vous pouvez recouvrir le modèle de Page de destination vierge en créant un autre modèle dans `/apps/<appName>/designimporter/templates/<templateName>`.
 
-Les étapes de création d’un modèle dans AEM sont expliquées sous [Modèles](/help/sites-developing/templates.md).
+Vous trouverez sous [Modèles](/help/sites-developing/templates.md) la procédure de création d’un modèle dans AEM.
 
 ### Référencement d’un composant à partir de la page de destination {#referring-a-component-from-landing-page}
 

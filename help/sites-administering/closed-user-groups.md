@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6662'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Contrairement à la mise en œuvre précédente, les nouvelles politiques de CUG
 
 Outre la gestion de contrôle d’accès dédiée pour les CUG, le nouveau modèle d’autorisation vous permet d’activer de manière conditionnelle l’évaluation des permissions pour ses politiques. Cela vous permet de configurer des politiques de CUG dans un environnement d’évaluation et d’activer uniquement l’évaluation des autorisations effectives une fois répliquées dans l’environnement de production.
 
-L’évaluation des autorisations pour les politiques de CUG et l’interaction avec le modèle d’autorisation par défaut ou tout autre modèle d’autorisation suivent le modèle conçu pour plusieurs mécanismes d’autorisation dans Apache Jackrabbit Oak. En d’autres termes, un ensemble donné d’autorisations est accordé si et uniquement si tous les modèles accordent l’accès. Pour plus d’informations, consultez la [documentation Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) .
+L’évaluation des autorisations pour les politiques de CUG et l’interaction avec le modèle d’autorisation par défaut ou tout autre modèle d’autorisation suivent le modèle conçu pour plusieurs mécanismes d’autorisation dans Apache Jackrabbit Oak. En d’autres termes, un ensemble donné d’autorisations est accordé si et uniquement si tous les modèles accordent l’accès. Pour plus d’informations, consultez la [documentation de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 Les caractéristiques suivantes s’appliquent à l’évaluation des autorisations associée au modèle d’autorisation conçu pour gérer et évaluer les politiques CUG :
 
@@ -129,7 +129,7 @@ Il en va de même pour la propriété `granite:loginPath`. Elle n’est respect�
 
 Puisqu’il est prévu que ce type d’exigence d’authentification soit limité à certains modes d’exécution et à un petit sous-ensemble d’arborescences dans le référentiel de contenu, le suivi du type de mixin de l’exigence et des propriétés de chemin de connexion est conditionnel. De plus, il est lié à une configuration correspondante qui définit les chemins pris en charge (voir Options de configuration ci-dessous). Par conséquent, seules les modifications dans la portée de ces chemins pris en charge déclenchent une mise à jour de l’enregistrement OSGi ; dans les autres cas, le type de mixin et la propriété sont tous deux ignorés.
 
-Par défaut, AEM utilise désormais cette configuration en permettant de placer le mixin en mode d’exécution de création, mais en ne le faisant prendre effet que lors de la réplication vers l’instance de publication. Pour plus d’informations sur la manière dont Sling applique les exigences d’authentification, consultez la documentation [Authentification Sling - Framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) .
+Par défaut, AEM utilise désormais cette configuration en permettant de placer le mixin en mode d’exécution de création, mais en ne le faisant prendre effet que lors de la réplication vers l’instance de publication. Pour plus d’informations sur la manière dont Sling applique les exigences d’authentification, consultez la documentation [Authentification Sling : framework](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html).
 
 L’ajout du type de mixin `granite:AuthenticationRequired` au sein des chemins pris en charge configurés entraîne la mise à jour de l’enregistrement dans OSGi du gestionnaire responsable avec une nouvelle entrée contenant la propriété `sling.auth.requirements`. Si une exigence d’authentification donnée spécifie la propriété facultative `granite:loginPath`, la valeur est en outre enregistrée auprès d’Authenticator avec un préfixe « - » afin de pouvoir être exclue de l’exigence d’authentification.
 
@@ -187,7 +187,7 @@ Les bonnes pratiques suivantes doivent être prises en compte lors de la défini
 
 ### Représentation de la politique CUG dans le référentiel {#cug-policy-representation-in-the-repository}
 
-La documentation Oak couvre la façon dont les nouvelles politiques de CUG sont reflétées dans le contenu du référentiel. Pour plus d’informations, consultez la [documentation Jackrabbit Oak sur la gestion de l’accès avec les CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+La documentation Oak couvre la façon dont les nouvelles politiques de CUG sont reflétées dans le contenu du référentiel. Pour plus d’informations, consultez la [documentation Jackrabbit Oak sur la gestion de l’accès avec les CUG](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Exigences d’authentification dans le référentiel {#authentication-requirement-in-the-repository}
 

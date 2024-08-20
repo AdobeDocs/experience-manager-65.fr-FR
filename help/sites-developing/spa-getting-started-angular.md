@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '998'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Le `aem-clientlib-generator` est utilisé pour automatiser la création de bibli
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Vous trouverez plus d’informations sur [aem-clientlib-generator sur GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Des informations supplémentaires sont disponibles à propos de [aem-clientlib-generator sur GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 >[!CAUTION]
 >

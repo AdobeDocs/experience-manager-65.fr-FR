@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 >
 >Par défaut, ContextHub ne connaît pas les utilisateurs et utilisatrices actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs et utilisatrices comme étant « anonymes ».
 >
->Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Reportez-vous à l’ [exemple de code sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Consultez l’[exemple de code sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 

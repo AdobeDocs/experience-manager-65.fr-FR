@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Cette section concerne la console de balisage de l’interface utilisateur class
 
 >[!NOTE]
 >
->Voir [Administration des balises](/help/sites-administering/tags.md#tagging-console) pour plus d’informations sur la console de balisage de l’interface utilisateur optimisée pour les écrans tactiles.
+>Voir [Administrer les balises](/help/sites-administering/tags.md#tagging-console) pour plus d’informations sur la console de balisage de l’IU optimisée pour les écrans tactiles.
 
 Pour accéder à la console de balisage de l’interface utilisateur classique :
 

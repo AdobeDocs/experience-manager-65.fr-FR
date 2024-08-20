@@ -11,9 +11,9 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5743'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -521,7 +521,7 @@ Pour accéder à la tâche Nettoyage des binaires Lucene, sélectionnez **AEM >
 
 ### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
-Pour plus d’informations sur le nettoyage de la mémoire d’entrepôt de données, consultez la page de documentation dédiée [Nettoyage de la mémoire d’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md).
+Pour plus d’informations sur la récupération de l’espace mémoire du magasin de données, reportez-vous à la page de documentation dédiée [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Purge des workflows {#workflow-purge}
 
@@ -532,7 +532,7 @@ Il est possible également de purger les workflows à partir du tableau de bord 
 
 >[!NOTE]
 >
->Pour plus d’informations sur la maintenance des workflows, voir [Administration des instances de workflows](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Pour plus d’informations sur la maintenance des workflows, voir [Administrer les instances de workflow](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Maintenance des journaux d’audit {#audit-log-maintenance}
 

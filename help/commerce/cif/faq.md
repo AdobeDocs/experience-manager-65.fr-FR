@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,4 +78,4 @@ Oui, le questionnaire d’auto-évaluation D et l’attestation de conformité s
 
 ## 16. Comment puis-je demander une licence d’évaluation d’I/O Runtime ?
 
-Voir [Obtention de l’accès](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) pour plus d’informations sur la demande d’une licence d’évaluation pour utiliser I/O Runtime.
+Voir [Obtention de l’accès](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) pour plus d’informations sur la demande d’une licence d’évaluation pour l’utilisation d’I/O Runtime.

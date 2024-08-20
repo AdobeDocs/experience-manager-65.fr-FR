@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -183,9 +183,9 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur.
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur ou utilisatrice.
    >
-   >Pour plus d’informations, reportez-vous aux sections [Privilèges insuffisants](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
+   >Pour plus d’informations, reportez-vous aux sections [Privilèges insuffisants](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gérer l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Appliquer des workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 

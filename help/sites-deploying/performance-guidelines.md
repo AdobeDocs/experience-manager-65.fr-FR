@@ -10,9 +10,9 @@ exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2937'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -429,7 +429,7 @@ Vous trouverez, dans l’exemple ci-dessous, les recommandations sur l’archite
 
 ### Paramètres TarMK recommandés {#tarmk-settings-guideline}
 
-Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour plus d’informations sur la modification des paramètres, voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
+Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ Pour tirer le meilleur parti des performances de MongoMK, commencez par l’artc
 
 ### Paramètres MongoMK recommandés {#mongomk-settings-guidelines}
 
-Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour plus d’informations sur la modification des paramètres, voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
+Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
