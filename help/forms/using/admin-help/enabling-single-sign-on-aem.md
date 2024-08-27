@@ -10,31 +10,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1704'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
 
-Les formulaires d’AEM offrent deux manières d’activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
+AEM Forms offre deux méthodes d’activation de l’authentification unique (SSO) : via les en-têtes HTTP et SPNEGO.
 
 Lorsque la fonction SSO est implémentée, les pages de connexion d’utilisateur ou d’utilisatrice d’AEM Forms ne sont plus obligatoires et ne s’affichent pas si la personne est déjà authentifiée via le portail d’entreprise.
 
 Si AEM Forms ne peut pas authentifier une personne à l’aide de l’une de ces méthodes, elle est redirigée vers une page de connexion.
 
-* [Activer la fonction SSO à l’aide d’en-têtes HTTP](#enable-sso-using-http-headers)
-* [Activer la fonction SSO à l’aide de SPNEGO](#enable-sso-using-spnego)
-* [Affectation de rôles aux utilisateurs et aux groupes](#assign-roles-to-users-groups)
+* [Activer la fonction SSO à l’aide d’en-têtes HTTP](#enable-sso-using-http-headers)
+* [Activer la fonction SSO à l’aide de SPNEGO](#enable-sso-using-spnego)
+* [Attribuer des rôles aux personnes et aux groupes](#assign-roles-to-users-groups)
 
-## Activer la fonction SSO à l’aide d’en-têtes HTTP {#enable-sso-using-http-headers}
+## Activer la fonction SSO à l’aide d’en-têtes HTTP {#enable-sso-using-http-headers}
 
-Vous pouvez utiliser la page de configuration du portail pour activer l’authentification unique (SSO) entre les applications et toute application qui prend en charge le transport de l’identité via un en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages de connexion d’utilisateur ou d’utilisatrice d’AEM Forms ne sont plus obligatoires et ne s’affichent pas si la personne est déjà authentifiée via le portail d’entreprise.
+Vous pouvez utiliser la page de configuration du portail pour activer l’authentification unique (SSO) entre les applications et toute application qui prend en charge le transport de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages de connexion d’utilisateur ou d’utilisatrice d’AEM Forms ne sont plus obligatoires et ne s’affichent pas si la personne est déjà authentifiée via le portail d’entreprise.
 
 Vous pouvez également activer la fonction SSO à l’aide de SPNEGO. (voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
 
-1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs du portail.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Configuration > Configurer les attributs du portail.
 1. Sélectionnez Oui pour activer l’authentification unique. Si vous sélectionnez Non, les paramètres restants de la page ne sont pas disponibles.
 1. Définissez les autres options de la page selon les besoins, puis cliquez sur OK :
 
@@ -56,11 +56,11 @@ Vous pouvez également activer la fonction SSO à l’aide de SPNEGO. (voir [Act
 
 Pour connaître les étapes de configuration des référents autorisés, voir [Configuration des référents autorisés](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-### Affectation de rôles aux utilisateurs et aux groupes
+### Attribuer des rôles aux personnes et aux groupes
 
-Cliquez pour connaître les étapes pour [attribuer des rôles aux utilisateurs et aux groupes](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+Cliquez pour connaître les étapes permettant d’[attribuer des rôles aux utilisateurs et utilisatrices et aux groupes](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
 
-## Activer la fonction SSO à l’aide de SPNEGO {#enable-sso-using-spnego}
+## Activer la fonction SSO à l’aide de SPNEGO {#enable-sso-using-spnego}
 
 Vous pouvez utiliser le mécanisme de négociation GSSAPI simple et protégé (SPNEGO) pour activer l’authentification unique (SSO) lors de l’utilisation d’Active Directory comme serveur LDAP dans un environnement Windows. Lorsque l’authentification unique est activée, les pages de connexion d’utilisateur ou d’utilisatrice d’AEM Forms ne sont pas requises et n’apparaissent pas.
 
@@ -68,7 +68,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (
 
 >[!NOTE]
 >
->AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements de domaine enfant.
+>AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant.
 
 1. Déterminez le domaine à utiliser pour activer l’authentification unique. Le serveur AEM Forms et les utilisateurs et utilisatrices doivent appartenir au même domaine Windows ou au même domaine de confiance.
 1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte d’utilisateur ou d’utilisatrice](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs et utilisatrices sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
@@ -149,7 +149,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Configurer les paramètres du navigateur client SPNEGO {#configuring-spnego-client-browser-settings}
 
-Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
+Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
 Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est nécessaire pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
 
@@ -176,20 +176,20 @@ Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https
 
 1. Testez la configuration en accédant à l’application. La page d’accueil de l’application cible doit s’afficher.
 
-Cliquez pour connaître les étapes pour [attribuer des rôles aux utilisateurs et aux groupes](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+Cliquez pour connaître les étapes permettant d’[attribuer des rôles aux utilisateurs et utilisatrices et aux groupes](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
 
-## Affectation de rôles aux utilisateurs et aux groupes {#assign-roles-to-users-groups}
+## Attribuer des rôles aux personnes et aux groupes {#assign-roles-to-users-groups}
 
-1. Connectez-vous à votre environnement AEM Forms on JEE.
-1. Dans Administration Console, cliquez sur Paramètres > User Management > Gestion des domaines.
-1. Sélectionnez la configuration de votre domaine, par exemple LDAP, et cliquez dessus. Vous trouvez tous les utilisateurs et groupes créés dans l’annuaire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs ou groupes.
+1. Connectez-vous à votre environnement AEM Forms on JEE.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion des domaines.
+1. Sélectionnez la configuration de votre domaine, par exemple LDAP, et cliquez dessus. Vous trouvez tous les utilisateurs et utilisatrices et les groupes créés dans le répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs et utilisatrices ou groupes.
    ![Page de gestion des domaines](/help/forms/using/assets/domain-mgmt-page.png)
-1. Cliquez sur Authentification. Dans la nouvelle page, sélectionnez un fournisseur d’authentification, tel que LDAP.
-1. Accédez à la page Gestion des domaines, sélectionnez LDAP, puis cliquez sur **Syn Now** pour synchroniser l’annuaire avec le schéma d’authentification que vous avez configuré pour l’accès AEM.
-   ![Synchroniser ldap](/help/forms/using/assets/sync-ldap.png)
-1. Accédez à Gestion des utilisateurs, puis cliquez sur Utilisateurs et groupes.
-1. Recherchez des utilisateurs ou des groupes portant leurs noms, comme illustré dans l’image ci-dessous.
-   ![Rechercher un groupe d’utilisateurs](/help/forms/using/assets/search-user-group.png)
-1. Attribuez les rôles aux utilisateurs ou aux groupes selon les besoins.
-   ![Affectation de rôle utilisateur](/help/forms/using/assets/user-role-assign.png)
+1. Cliquez sur Authentification. Dans la nouvelle page, sélectionnez un fournisseur d’authentification, tel que LDAP.
+1. Accédez à la page Gestion des domaines, sélectionnez LDAP, puis cliquez sur **Synchroniser maintenant** pour synchroniser le répertoire avec le schéma d’authentification que vous avez configuré pour l’accès AEM.
+   ![Synchroniser ldap](/help/forms/using/assets/sync-ldap.png)
+1. Accédez à Gestion des utilisateurs et utilisatrices, puis cliquez sur Utilisateurs, utilisatrices et groupes.
+1. Recherchez des utilisateurs et utilisatrices ou des groupes par leurs noms, comme illustré dans l’image ci-dessous.
+   ![Rechercher dans un groupe d’utilisateurs et d’utilisatrices](/help/forms/using/assets/search-user-group.png)
+1. Attribuez les rôles aux utilisateurs et utilisatrices ou aux groupes selon les besoins.
+   ![Affectation de rôle d’utilisation](/help/forms/using/assets/user-role-assign.png)
 
