@@ -6,10 +6,10 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 100%
+source-wordcount: '977'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ En plus de prendre en charge un large éventail de formats de fichiers et de pro
 
 ## Plateformes prises en charge {#supported-platforms}
 
-La bibliothèque de transcodage d’imagerie est disponible uniquement pour les distributions RHEL 7 et CentOS 7.
+La bibliothèque ITL est disponible uniquement pour les distributions RHEL 8, RHEL 7 et CentOS 7.
 
 >[!NOTE]
 >
