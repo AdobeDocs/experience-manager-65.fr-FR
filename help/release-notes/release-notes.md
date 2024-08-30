@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
-workflow-type: ht
-source-wordcount: '4390'
-ht-degree: 100%
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
+workflow-type: tm+mt
+source-wordcount: '4394'
+ht-degree: 98%
 
 ---
 
@@ -544,7 +544,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0, le service `PaperCapture` ne parvient pas à effectuer d’opérations OCR (reconnaissance optique de caractères) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
-* Lorsque les utilisateurs et utilisatrices effectuent une mise à jour du pack de services 18 d’AEM Forms 6.5 (6.5.18.0) ou 19 (6.5.19.0) vers le pack de services 20 d’AEM Forms 6.5 (6.5.20.0) ou 21 (6.5.21.0), ils rencontrent une erreur de compilation JSP qui les empêche d’ouvrir ou de créer des formulaires adaptatifs et provoque également des erreurs avec d’autres interfaces comme l’éditeur de page, l’interface d’utilisation d’AEM Forms et l’éditeur de workflow AEM. (FORMS-15256)
+* Lorsque les utilisateurs effectuent une mise à jour d’AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou d’AEM 6.5 Forms Service Pack 19 (6.5.19.0) vers la version 6.5 Forms Service Pack 20 (6.5.20.0) ou la version 6.5 Forms Service Pack 21 (6.5.21.0), ils rencontrent une erreur de compilation JSP, qui les empêche d’ouvrir ou de créer des formulaires adaptatifs et provoque également des erreurs avec d’autres interfaces de type l’éditeur de page, l’interface utilisateur d’, l’éditeur de processus d’ et l’interface utilisateur de présentation du système d’. (FORMS-15256)
 
   Si vous rencontrez ce problème, procédez comme suit pour le résoudre :
    1. Accédez au répertoire `/libs/fd/aemforms/install/` dans CRXDE.
