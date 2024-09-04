@@ -7,7 +7,7 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7448'
 ht-degree: 100%
 
