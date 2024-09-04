@@ -1,26 +1,16 @@
 ---
 title: Création et ajout de fonctions personnalisées dans un formulaire adaptatif
 description: AEM Forms prend en charge les fonctions personnalisées qui permettent aux utilisateurs de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
-keywords: Ajoutez une fonction personnalisée, utilisez une fonction personnalisée, créez une fonction personnalisée, utilisez une fonction personnalisée dans l’éditeur de règles.
-contentOwner: Ruchita Srivastav
-content-type: reference
-feature: Adaptive Forms,Core Components
-exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1084'
 ht-degree: 50%
 
 ---
 
-
-# Fonctions personnalisées dans le Forms adaptatif (composants principaux)
-
-| Version | Lien de l’article |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
-| AEM 6.5 | Cet article |
+# Fonctions personnalisées dans le Forms adaptatif
 
 ## Présentation
 

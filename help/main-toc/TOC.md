@@ -6,8 +6,8 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
-workflow-type: ht
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
+workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 100%
 
@@ -620,7 +620,6 @@ ht-degree: 100%
       + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Créer des thèmes pour formulaires adaptatifs basés sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Créer et utiliser des fonctions personnalisées dans un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions.md)
       + [Éditeur de règles](/help/forms/using/rule-editor-core-components.md)
       + [Créer et utiliser une fonction personnalisée dans les composants principaux d’un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 100%
       + [Incorporation d’Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Création et gestion de révisions des actifs d’un formulaire](/help/forms/using/create-reviews-forms.md)
       + [Incorporer un formulaire adaptatif ou une communication interactive dans une application dʼune seule page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Créer et utiliser des fonctions personnalisées dans un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions.md)
       + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Communications interactives {#interactive-communications}
       + [Introduction à l’interface utilisateur de création d’une communication interactive](/help/forms/using/introduction-interactive-communication-authoring.md)
