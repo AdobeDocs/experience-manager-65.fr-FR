@@ -9,7 +9,7 @@ exl-id: daf5c934-8a98-4891-94a1-029056d87931
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 100%
@@ -21,5 +21,5 @@ ht-degree: 100%
 La section [Environnement et outils de l’auteur](/help/sites-authoring/author-environment-tools.md) fournit des informations sur l’utilisation de l’[!UICONTROL outil de recherche de contenu] permettant de rechercher et utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources :
 
 * [L’ajout de fonctionnalités Dynamic Media Classic à votre page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
-* [L’utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+* [Utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Les conventions de dénomination des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)

@@ -6,8 +6,8 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
-workflow-type: ht
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 100%
 
@@ -337,8 +337,8 @@ ht-degree: 100%
          + [Ajout de ressources Dynamic Media aux pages](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Ajout de fonctionnalités Scene7 à votre page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [Utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
-         + [Conventions de nommage pour le test des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
+         + [Utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [Conventions de dénomination pour le test des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Ressources {#assets}
    + [À propos de la gestion des DAM](/help/assets/assets.md)
    + [Bonnes pratiques pour les ressources](/help/assets/best-practices-for-assets.md)

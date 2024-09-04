@@ -1,6 +1,6 @@
 ---
 title: Utilisation de Dynamic Media
-description: Découvrez comment utiliser Dynamic Media afin de diffuser des ressources pour une utilisation sur le Web, les appareils mobiles et les réseaux sociaux.
+description: Découvrez comment utiliser le logiciel pour diffuser des ressources pour les sites web, mobiles et sociaux.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -9,26 +9,26 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 51%
 
 ---
 
 # Utilisation de Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/fr/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
+[Dynamic Media](https://business.adobe.com/fr/products/experience-manager/assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. En utilisant un ensemble de ressources de sources originales, le logiciel génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
-Dynamic Media offre des expériences de visionnage interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les workflows de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et de rationaliser le processus de gestion des campagnes numériques.
+Le logiciel offre des expériences de visionnage interactif, notamment le zoom, la rotation à 360 degrés et la vidéo. Elle intègre de manière unique les workflows de la solution Assets (gestion des actifs numériques) de Adobe Experience Manager afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
+## Ce que vous pouvez faire avec le logiciel {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Le logiciel vous permet de gérer vos ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 
@@ -53,23 +53,23 @@ Consultez également [Configuration de Dynamic Media](administering-dynamic-med
 
 ## Dynamic Media activé ou Dynamic Media désactivé {#dynamic-media-on-versus-dynamic-media-off}
 
-Les caractéristiques suivantes permettent de déterminer si Dynamic Media est activé ou non :
+Vous pouvez déterminer si le logiciel est activé par les caractéristiques suivantes :
 
 * Des rendus dynamiques sont disponibles lors du téléchargement ou de la prévisualisation des ressources.
 * Des visionneuses d’images, à 360° et de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
-Lorsque vous cliquez sur une ressource image, l’affichage de la ressource est différent avec Dynamic Media [activé](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
+Lorsque vous sélectionnez une ressource image, l’affichage de la ressource est différent avec le logiciel [enabled](config-dynamic.md#enabling-dynamic-media). Il utilise les visionneuses HTML5 à la demande.
 
 ### Rendus dynamiques {#dynamic-renditions}
 
-Des rendus dynamiques, tels que des paramètres d’image et de visionneuse prédéfinis (sous **[!UICONTROL Dynamique]**), sont disponibles lorsque Dynamic Media est activé.
+Des rendus dynamiques tels que des paramètres d’image et de visionneuse prédéfinis (sous **[!UICONTROL Dynamic]**) sont disponibles lorsque le logiciel est activé.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Visionneuses d’images, à 360° et de supports variés {#image-sets-spins-sets-mixed-media-sets}
 
-Des visionneuses d’images, à 360° et de supports variés sont disponibles lorsque Dynamic Media est activé.
+Des visionneuses d’images, à 360° et de supports variés sont disponibles si le logiciel est activé.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -81,10 +81,10 @@ Les ressources compatibles avec Dynamic Media comprennent les `pyramid.tiffs`.
 
 ### Modification des vues des ressources {#asset-views-change}
 
-Lorsque Dynamic Media est activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur les boutons `+` et `-`. Vous pouvez également cliquer pour effectuer un zoom sur une zone spécifique. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. L’option Dynamic Media activée ressemble à celle-ci :
+Une fois le logiciel activé, vous pouvez effectuer un zoom avant ou arrière en cliquant sur les boutons `+` et `-` . Vous pouvez également cliquer pour effectuer un zoom sur une zone spécifique. L’option Rétablir vous ramène à la version d’origine. Vous pouvez afficher l’image en plein écran en cliquant sur les flèches diagonales. Une fois le logiciel activé, il ressemble à ceci :
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-Lorsque Dynamic Media est désactivé, vous pouvez effectuer un zoom avant et arrière et revenir à la taille d’origine :
+Lorsque le logiciel est désactivé, vous pouvez effectuer un zoom avant ou arrière et revenir à la taille d’origine :
 
 ![chlimage_1-362](assets/chlimage_1-362.png)
