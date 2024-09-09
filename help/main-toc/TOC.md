@@ -7,7 +7,7 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7448'
 ht-degree: 100%
 
@@ -337,8 +337,8 @@ ht-degree: 100%
          + [Ajout de ressources Dynamic Media aux pages](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Ajout de fonctionnalités Scene7 à votre page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Vidéo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [Utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
-         + [Conventions de dénomination pour le test des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
+         + [Utiliser Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [Conventions de nommage pour le test des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Ressources {#assets}
    + [À propos de la gestion des DAM](/help/assets/assets.md)
    + [Bonnes pratiques pour les ressources](/help/assets/best-practices-for-assets.md)
@@ -361,7 +361,7 @@ ht-degree: 100%
    + Dynamic Media{#dynamic}
       + [Archive des newsletters par Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/administering-dynamic-media.md)
-      + [Utilisation de Dynamic Media](/help/assets/dynamic-media.md)
+      + [Utiliser Dynamic Media](/help/assets/dynamic-media.md)
       + [Configuration de Dynamic Media en mode Scene7](/help/assets/config-dms7.md)
       + [Facultatif - Configuration de Dynamic Media en mode Scene7, Paramètres généraux](/help/assets/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media en mode Scene7, Configuration de la publication](/help/assets/dm-publish-settings.md)
