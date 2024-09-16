@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
 workflow-type: tm+mt
-source-wordcount: '3048'
-ht-degree: 100%
+source-wordcount: '3063'
+ht-degree: 93%
 
 ---
 
@@ -63,22 +63,22 @@ Vous avez le choix entre deux options de recadrage d’image : recadrage de pix
 | --- | --- | --- |
 | Recadrage des pixels | Recadrage en bloc des images en fonction des dimensions uniquement. | Pour utiliser cette option, sélectionnez **[!UICONTROL Recadrage des pixels]** dans la liste déroulante Options de recadrage.<br><br>Pour recadrer les bords d’une image, entrez le nombre de pixels à recadrer de n’importe quel côté ou de chaque côté de l’image. La proportion du recadrage de l’image dépend du paramètre ppi (pixels par pouce) du fichier d’image.<br><br>Un recadrage de pixels de profil d’image s’affiche de la manière suivante :<br>・Les valeurs sont Haut, Bas, Gauche et Droite.<br>• Le coin supérieur gauche est considéré comme le `0,0`, et le recadrage des pixels est calculé à partir de cet endroit.<br>• Point de départ du recadrage : le Gauche est le X et le Haut est le Y<br>• Calcul horizontal : dimension horizontale en pixels de l’image d’origine, moins Gauche, puis moins Droite.<br>• Calcul vertical : hauteur verticale en pixels moins le Haut puis moins le Bas.<br><br>Par exemple, supposons que vous ayez une image de 4 000 x 3 000 pixels. Vous utilisez les valeurs : haut=250, bas=500, gauche=300, droite=700.<br><br>À partir du coin supérieur gauche (300,250), recadrez l’image en utilisant l’espace de remplissage de (4000-300-700, 3000-250-500 ou 3000,2250). |
 | Recadrage intelligent | Recadrer en masse des images en fonction de leur point focal visuel. | Le recadrage intelligent utilise la puissance de l’intelligence artificielle dans Adobe Sensei pour automatiser rapidement le recadrage des images en masse. Il détecte automatiquement le point focal de n’importe quelle image et recadre de façon à capturer le point d’intérêt prévu, quelle que soit la taille de l’écran.</p> <p>Pour utiliser le recadrage intelligent, sélectionnez **[!UICONTROL Recadrage intelligent]** dans la liste déroulante des Options de recadrage, puis à droite de Recadrage d’image réactive, activez la fonction.</p> <p>Les tailles par défaut des points de rupture (Grand, Moyen et Petit) couvrent généralement toute la gamme de tailles utilisées par la plupart des images sur les appareils mobiles, les tablettes, les ordinateurs de bureau et les bannières. Si vous le souhaitez, vous pouvez modifier les noms par défaut des points Grand, Moyen et Petit.</p> <p>Pour ajouter d’autres points d’arrêt, sélectionnez **[!UICONTROL Ajouter un recadrage]**. Pour supprimer un recadrage, sélectionnez l’icône de corbeille. |
-| Échantillon de couleurs et d’images | Générez en masse un échantillon pour chaque image. | **Remarque** : L’échantillon intelligent n’est pas pris en charge par Dynamic Media Classic.<br><br>Localisez et générez automatiquement des échantillons de haute qualité à partir d’images de produits qui affichent la couleur ou la texture.<br><br>Pour utiliser l’échantillon de couleurs et d’images, sélectionnez **[!UICONTROL Recadrage intelligent]** dans la liste déroulante des Options de recadrage, puis à droite d’Échantillon de couleurs et d’images, activez la fonction. Saisissez une valeur en pixels dans les zones de texte Largeur et Hauteur.<br><br>Alors que tous les recadrages d’images sont disponibles à partir du rail de rendu, les échantillons ne sont utilisés que par le biais de la fonction Copier l’URL. Utilisez votre propre composant d’affichage pour effectuer le rendu de la nuance sur votre site. (Les bannières de carrousel constituent une exception à cette règle. Dynamic Media fournit le composant d’affichage pour l’échantillon utilisé dans les bannières de carrousel.)<br><br>**Utilisation des échantillons d’images**<br> L’URL des échantillons d’images est simple. Il s’agit de : <br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> où `:Swatch` est ajouté à la demande de ressource.<br><br>**Utilisation d’échantillons de couleurs**<br> Pour utiliser des échantillons de couleurs, vous exécutez une requête `req=userdata` avec les éléments suivants :<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Par exemple, voici un échantillon de ressource dans Dynamic Media Classic :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Et voici l’URL `req=userdata` correspondant à ressource d’échantillon :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La réponse `req=userdata` est la suivante :<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>Vous pouvez également demander une réponse `req=userdata` au format XML ou JSON, comme dans les exemples d’URL respectifs suivants :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Remarque :** Vous devez créer votre propre composant WCM pour demander un échantillon de couleur et analyser l’attribut `SmartSwatchColor`, représenté par une valeur hexadécimale RGB de 24 bits.<br><br>Consultez également la section [`userdata`dans le guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html?lang=fr). |
+| Échantillon de couleurs et d’images | Générez en masse un échantillon pour chaque image. | **Remarque** : L’échantillon intelligent n’est pas pris en charge par Dynamic Media Classic.<br><br>Localisez et générez automatiquement des échantillons de haute qualité à partir d’images de produits qui affichent la couleur ou la texture.<br><br>Pour utiliser l’échantillon de couleurs et d’images, sélectionnez **[!UICONTROL Recadrage intelligent]** dans la liste déroulante des Options de recadrage, puis à droite d’Échantillon de couleurs et d’images, activez la fonction. Saisissez une valeur en pixels dans les zones de texte Largeur et Hauteur.<br><br>Alors que tous les recadrages d’images sont disponibles à partir du rail de rendu, les échantillons ne sont utilisés que par le biais de la fonction Copier l’URL. Utilisez votre propre composant d’affichage pour effectuer le rendu de la nuance sur votre site. (Les bannières de carrousel constituent une exception à cette règle. Dynamic Media fournit le composant d’affichage pour l’échantillon utilisé dans les bannières de carrousel.)<br><br>**Utilisation des échantillons d’images**<br> L’URL des échantillons d’images est simple. Il s’agit de : <br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br> où `:Swatch` est ajouté à la demande de ressource.<br><br>**Utilisation d’échantillons de couleurs**<br> Pour utiliser des échantillons de couleurs, vous exécutez une requête `req=userdata` avec les éléments suivants :<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>Par exemple, voici un échantillon de ressource dans Dynamic Media Classic :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>Et voici l’URL `req=userdata` correspondant à ressource d’échantillon :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>La réponse `req=userdata` est la suivante :<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>Vous pouvez également demander une réponse `req=userdata` au format XML ou JSON, comme dans les exemples d’URL respectifs suivants :<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Remarque :** Vous devez créer votre propre composant WCM pour demander un échantillon de couleur et analyser l’attribut `SmartSwatchColor`, représenté par une valeur hexadécimale RGB de 24 bits.<br><br>Consultez également la section [`userdata`dans le guide de référence des visionneuses](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata). |
 
 ## Accentuation {#unsharp-mask}
 
-Utilisez le masque **[!UICONTROL Accentuation]** pour affiner l’effet d’un filtre d’accentuation sur l’image finale sous-échantillonnée. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre *Accentuation* d’Adobe Photoshop.
+Utilisez l’option **[!UICONTROL Accentuation]** pour affiner l’effet d’un filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, son rayon (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre *Accentuation* d’Adobe Photoshop.
 
 >[!NOTE]
 >
->L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille supérieure à l’intérieur du ptiff ne sont pas affectés par l’accentuation tandis que les rendus de plus petite taille, comme les miniatures, sont modifiés (et accentués).
+>Le masque flou n’est appliqué qu’aux rendus réduits au sein du PTIFF (pyramid tiff) dont la résolution est réduite de plus de 50 %. En d’autres termes, les rendus de plus grande taille dans le Ptiff ne sont pas affectés par le masque flou, tandis que les rendus de plus petite taille, tels que les miniatures, sont modifiés (et affichent le masque flou).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
 | Option | Description |
 | --- | --- |
-| Quantité | Contrôle le degré de contraste appliqué aux pixels de contour. La valeur par défaut est 1.75. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5. Considérez la quantité comme une mesure de l’intensité du filtre. La plage est 0 à 5. |
-| Rayon | Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2. La plage est comprise entre 0 et 250. |
+| Quantité | Contrôle le degré de contraste appliqué aux pixels de contour. La valeur par défaut est 1.75. Pour les images à haute résolution, vous pouvez l’augmenter jusqu’à 5. Considérez la quantité comme une mesure de l’intensité du filtre. La plage est 0 à 5. |
+| Rayon | Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2. La plage est comprise entre 0 et 250. |
 | Seuil | Détermine la plage de contraste à ignorer lorsque le filtre d’accentuation est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels accentués et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter de créer du bruit, essayez des valeurs comprises entre 0 et 255. |
 
 L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf).
@@ -143,7 +143,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Sélectionnez **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis sélectionnez **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Sélectionnez **[!UICONTROL Appliquer le profil de traitement aux dossiers]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les ressources nouvellement chargées, puis sélectionnez **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
@@ -183,24 +183,27 @@ Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage i
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
 
-Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
+Réexécutez le recadrage intelligent pour générer à nouveau les recadrages supplémentaires, si nécessaire.
 
 Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent d’une seule image :**
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier auquel est appliqué un profil d’image de recadrage intelligent ou d’échantillon intelligent.
-
 1. Sélectionnez le dossier pour pouvoir ouvrir son contenu.
 1. Sélectionnez l’image pour laquelle vous souhaitez ajuster le recadrage intelligent ou l’échantillon intelligent.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Recadrage intelligent]**.
+
+   >[!TIP]
+   >
+   >Utilisez la touche chaude `s` pour modifier les recadrages intelligents ou les échantillons intelligents.
 
 1. Procédez de l’une des manières suivantes :
 
    * Près du coin supérieur droit de la page, faites glisser le curseur vers la gauche ou la droite pour augmenter ou diminuer l’affichage de l’image.
    * Sur l’image, faites glisser une poignée d’angle pour ajuster la taille de la zone visible du recadrage ou de l’échantillon.
    * Sur l’image, faites glisser la zone/l’échantillon vers un nouvel emplacement. Vous ne pouvez modifier que les échantillons d’images. Les échantillons de couleurs sont statiques.
-   * Au-dessus de l’image, sélectionnez **[!UICONTROL Rétablir]** pour annuler toutes les modifications effectuées et restaurer le recadrage ou l’échantillon d’origine.
+   * Au-dessus de l’image, sélectionnez **[!UICONTROL Rétablir]** pour annuler toutes vos modifications et restaurer le recadrage ou l’échantillon d’origine.
 
 1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**, puis sélectionnez **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
@@ -212,9 +215,9 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
-Une fois que vous avez modifié et enregistré un recadrage intelligent, le changement est propagé partout où vous utilisez le recadrage des images spécifiques.
+Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
 
-Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
+Réexécutez le recadrage intelligent pour générer à nouveau les recadrages supplémentaires, si nécessaire.
 
 **Pour modifier le recadrage intelligent ou l’échantillon intelligent de plusieurs images :**
 
@@ -267,7 +270,7 @@ Vous pouvez supprimer un profil d’image appliqué à un dossier dans le menu *
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils d’image]**.
 1. Sélectionnez le profil d’image à supprimer d’un ou de plusieurs dossiers.
-1. Sélectionnez **[!UICONTROL Supprimer le profil de traitement des dossiers]**, sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, et sélectionnez **[!UICONTROL Terminé]**.
+1. Sélectionnez **[!UICONTROL Supprimer le profil de traitement des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis sélectionnez **[!UICONTROL Supprimer]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil d’image n’est plus appliqué à un dossier.
 
