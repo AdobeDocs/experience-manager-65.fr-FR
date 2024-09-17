@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1351'
 ht-degree: 98%
 
 ---
@@ -89,8 +89,6 @@ L’espace disque requis dépend largement du volume et du type de votre applica
 * la croissance globale du contenu au fil du temps.
 
 L’espace disque est surveillé en permanence lors du nettoyage des révisions en ligne et hors ligne. Si l’espace disque disponible descend en dessous d’une valeur critique, le processus est annulé. La valeur critique est de 25 % de l’empreinte disque actuelle du référentiel et elle n’est pas configurable. Adobe recommande de dimensionner le disque de sorte qu’il soit au moins deux ou trois fois plus large que la taille du référentiel, y compris sa croissance estimée.
-
-Envisagez une configuration de tableaux redondants de disques indépendants (RAID, par exemple, RAID10) pour la redondance des données.
 
 ### Virtualisation {#virtualization}
 
