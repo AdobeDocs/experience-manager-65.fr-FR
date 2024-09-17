@@ -1,19 +1,14 @@
 ---
 title: Consignes de dimensionnement du matériel
 description: Ces consignes de dimensionnement procurent une estimation des ressources matérielles requises pour déployer un projet AEM.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 100%
+source-wordcount: '1367'
+ht-degree: 98%
 
 ---
 
@@ -84,7 +79,7 @@ Les exigences de dimensionnement du matériel pour les cas d’utilisation avanc
 * Une utilisation étendue de code personnalisé, de workflows personnalisés ou de bibliothèques logicielles tierces
 * Une intégration à des systèmes externes non pris en charge
 
-### Espace disque/disque dur {#disk-space-hard-drive}
+## Espace disque/disque dur {#disk-space-hard-drive}
 
 L’espace disque requis dépend largement du volume et du type de votre application web. Les calculs doivent tenir compte des éléments suivants :
 
@@ -97,15 +92,11 @@ L’espace disque est surveillé en permanence lors du nettoyage des révisions 
 
 Envisagez une configuration de tableaux redondants de disques indépendants (RAID, par exemple, RAID10) pour la redondance des données.
 
->[!NOTE]
->
->Le répertoire temporaire d’une instance de production doit contenir au moins 6 Go d’espace disponible.
-
-#### Virtualisation {#virtualization}
+### Virtualisation {#virtualization}
 
 AEM fonctionne bien dans les environnements virtualisés, mais certains facteurs tels que le processeur ou les E/S ne peuvent pas être directement liés au matériel physique. Il est recommandé de choisir une vitesse d’E/S plus élevée (en général), car il s’agit généralement d’un facteur essentiel. L’évaluation comparative de votre environnement est nécessaire pour obtenir une compréhension précise des ressources requises.
 
-#### Parallélisation des instances AEM {#parallelization-of-aem-instances}
+### Parallélisation des instances AEM {#parallelization-of-aem-instances}
 
 **Prévention de défaillance**
 
@@ -118,175 +109,17 @@ Pendant que tous les systèmes sont en cours d’exécution, les performances de
 L’estimation du nombre de nœuds de cluster nécessaires repose sur les exigences de base et les cas d’utilisation particuliers du projet web spécifique :
 
 * Du point de vue de la sécurité des défaillances, il est nécessaire de déterminer, pour tous les environnements, l’importance de l’échec et le temps de compensation de l’échec en fonction du temps nécessaire à la récupération d’un nœud de cluster.
-* En ce qui concerne l’évolutivité, le nombre d’opérations d’écriture est fondamentalement le facteur le plus important. Consultez la section [Auteurs travaillant en parallèle](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) pour l’environnement de création et [Collaboration sociale](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) pour l’environnement de publication. L’équilibrage de charge peut être établi pour les opérations qui accèdent au système uniquement afin de traiter les opérations de lecture. Consultez la section [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus d’informations.
-
-## Calculs spécifiques à l’environnement de création {#author-environment-specific-calculations}
-
-À des fins d’évaluation des performances, Adobe a développé des tests de référence pour les instances de création autonomes.
-
-* **Test d’évaluation des performances 1**
-Calcule le débit d’un profil de charge lorsque les utilisateurs exécutent un simple exercice de création de pages sur une charge de base de 300 pages existantes, toutes de nature similaire. Les étapes impliquées étaient la connexion au site, la création d’une page contenant un SWF et une image ou du texte, l’ajout d’un nuage de balises, puis l’activation de la page.
-
-   * **Résultat**
-Le débit maximal d’un simple exercice de création de page comme décrit plus haut (considéré comme une transaction) est de 1 730 transactions/heure.
-
-* **Test d’évaluation des performances 2**
-Calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification d’une page existante (80 %), ainsi que la création, puis la modification d’une page successivement (10 %). La complexité des pages reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de la même complexité que celle définie dans le test de référence 1.
-
-   * **Résultat**
-Le débit maximal d’un tel scénario mélangeant des opérations est de 3 252 transactions par heure.
-
->[!NOTE]
->
->Le débit ne fait pas la distinction entre les types de transaction dans un profil de charge. L’approche utilisée pour mesurer le débit permet de s’assurer qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
-
-Les deux tests ci-dessus montrent clairement que le débit varie en fonction du type d’opération. Utilisez les activités de votre environnement comme base pour dimensionner votre système. Vous obtenez un meilleur débit avec des actions moins intensives telles que la modification (qui est également plus courante).
-
-### Mise en cache {#caching}
-
-Dans l’environnement de création, l’efficacité de la mise en cache est en général bien plus faible, car les modifications du site web sont plus fréquentes et en raison du caractère hautement interactif et personnalisé du contenu. En utilisant le Dispatcher, vous pouvez mettre en cache des bibliothèques AEM, des scripts JavaScript, des fichiers CSS et des images de disposition. Cela permet d’accélérer certains aspects du processus de création. La configuration du serveur web afin de définir également des en-têtes pour la mise en cache de ces ressources dans le navigateur, réduit le nombre de requêtes HTTP et améliore ainsi la réactivité du système pour les auteurs et autrices.
-
-### Auteurs et autrices travaillant en parallèle {#authors-working-in-parallel}
-
-Dans l’environnement de création, le nombre d’auteurs qui travaillent en parallèle et la charge que leurs interactions ajoutent au système constituent les principaux facteurs de limitation. Par conséquent, Adobe vous recommande de mettre votre système à l’échelle en fonction du débit partagé des données.
-
-Pour de tels scénarios, Adobe exécute des tests de référence sur un cluster à deux nœuds sans partage d’instances de création.
-
-* **Test d’évaluation des performances 1a**
-Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal avec un profil de charge où les utilisateurs exécutent un exercice simple de création de page sur une charge de base de 300 pages existantes, toutes de nature similaire.
-
-   * **Résultat**
-Le débit maximal d’un simple exercice de création de page comme décrit plus haut (considéré comme une transaction) est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
-
-* **Test d’évaluation des performances 2b**
-Avec un cluster sans partage actif-actif de deux instances de création, calcule le débit maximal lorsque le profil de charge comprend la création d’une page (10 %), la modification de pages existantes (80 %), ainsi que la création et la modification d’une page successivement (10 %). La complexité de la page reste la même que dans le profil du test de référence 1. La modification de base de la page s’effectue en ajoutant une image et en modifiant le contenu texte. Encore une fois, l’exercice a été effectué sur une charge de base de 300 pages de complexité identique à celle définie dans le test de référence 1.
-
-   * **Résultat**
-Le débit maximal d’un tel scénario mélangeant des opérations est de 6 288 transactions par heure. Il s’agit d’une augmentation d’environ 93 % par rapport à une instance de création autonome pour la même évaluation des performances.
-
->[!NOTE]
->
->Le débit ne fait pas la distinction entre les types de transaction dans un profil de charge. L’approche utilisée pour mesurer le débit permet de s’assurer qu’une proportion fixe de chaque type de transaction est incluse dans la charge de travail.
-
-Les deux tests ci-dessus montrent clairement qu’AEM s’adapte bien aux auteurs et autrices qui effectuent des opérations de modification de base avec AEM. En général, AEM est plus efficace pour dimensionner les opérations de lecture.
-
-Sur un site web type, la plupart des opérations de création se produisent pendant la phase du projet. Une fois le site web lancé, le nombre d’auteurs et autrices travaillant en parallèle atteint généralement une moyenne inférieure (mode opérationnel).
-
-Vous pouvez calculer le nombre d’ordinateurs (ou unités centrales) requis pour l’environnement de création comme suit :
-
-`n = numberOfParallelAuthors / 30`
-
-Cette formule peut servir de ligne directrice générale pour la mise à l’échelle des processeurs lorsque les auteurs et autrices effectuent des opérations de base avec AEM. Cela suppose que le système et l’application soient optimisés. Toutefois, la formule ne contiendra pas la valeur true pour les fonctionnalités avancées telles que MSM ou Assets (voir les sections ci-dessous).
-
-Voir aussi [Mise en parallèle](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) et [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
+* Pour ce qui est de l’évolutivité, le nombre d’opérations d’écriture est essentiellement le facteur le plus important. L’équilibrage de charge peut être établi pour les opérations qui accèdent au système uniquement afin de traiter les opérations de lecture. Consultez la section [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus d’informations.
 
 ### Recommandations matérielles {#hardware-recommendations}
 
 En règle générale, vous pouvez utiliser le même matériel pour votre environnement de création que celui recommandé pour votre environnement de publication. En règle générale, le trafic sur le site web est plus faible sur les systèmes de création, mais l’efficacité du cache l’est également. Cependant, le facteur fondamental ici est le nombre d’auteurs et autrices travaillant en parallèle, ainsi que le type d’actions effectuées sur le système. En général, la mise en cluster d’AEM (de l’environnement de création) est plus efficace pour dimensionner les opérations de lecture ; en d’autres termes, un cluster AEM se dimensionne correctement quand les auteurs et autrices effectuent des opérations de modification de base.
 
-Adobe a effectué les tests de référence à l’aide du système d’exploitation Red Hat® 5.5, exécuté sur une plateforme matérielle Hewlett-Packard ProLiant DL380 G5 avec la configuration suivante :
-
-* Deux unités centrales Intel Xeon® Quad Core X5450 à 3 GHz
-* 8 Go de mémoire vive
-* Broadcom NetXtreme II BCM5708 gigabit Ethernet
-* Contrôleur RAID HP Smart Array, cache de 256 Mo
-* Deux disques SAS à 10 000 tr/min de 146 Go configurés en tant qu’ensemble de bandes RAID0
-* Le score de référence du taux SPEC CINT2006 est de 110
-
-Les instances AEM s’exécutaient avec une taille de tas minimale de 256 M et une taille de tas maximale de 1 024 M.
-
-## Publier des calculs spécifiques à l’environnement {#publish-environment-specific-calculations}
-
-### Efficacité de la mise en cache et trafic {#caching-efficiency-and-traffic}
-
-L’efficacité du cache est essentielle à la vitesse du site web. Le tableau suivant indique le nombre de pages qu’un système AEM optimisé peut gérer par seconde à l’aide d’un proxy inverse, tel que Dispatcher :
-
-| Ratio de cache | Pages/s (pic) | Millions de pages/jour (moyenne) |
-|---|---|---|
-| 100% | 1000-2000 | 35-70 |
-| 99% | 910 | 32 |
-| 95% | 690 | 25 |
-| 90% | 520 | 18 |
-| 60% | 220 | 8 |
-| 0% | 100 | 3,5 |
-
->[!CAUTION]
->
->Clause de non-responsabilité : les numéros dépendent d’une configuration matérielle par défaut et peuvent varier en fonction du matériel utilisé.
-
-Le ratio de cache est le pourcentage de pages que Dispatcher peut renvoyer sans avoir à accéder à AEM. 100 % indique que Dispatcher répond à toutes les requêtes, 0 % signifie qu’AEM calcule chaque page.
-
-### Complexité des modèles et des applications {#complexity-of-templates-and-applications}
-
-Si vous utilisez des modèles complexes, plus de temps sera nécessaire à AEM pour effectuer le rendu d’une page. Les pages extraites du cache ne sont pas affectées par cette situation, mais la taille de la page reste pertinente en ce qui concerne le temps de réponse global. Le rendu d’une page complexe peut facilement prendre dix fois plus de temps que le rendu d’une page simple.
-
-### Formule {#formula}
-
-À l’aide de la formule suivante, vous pouvez faire une estimation de la complexité globale de votre solution AEM :
-
-`complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
-
-Selon la complexité, vous pouvez déterminer le nombre de serveurs (ou de cœurs d’unité centrale) dont vous avez besoin pour l’environnement de publication comme suit :
-
-`n = (traffic * complexity / 1000 ) * activations`
-
-Les variables de l’équation sont les suivantes :
-
-<table>
- <tbody>
-  <tr>
-   <td>traffic</td>
-   <td>Le trafic en pic attendu par seconde. Vous pouvez l’estimer comme le nombre de visites de pages par jour, divisé par 35 000.</td>
-  </tr>
-  <tr>
-   <td>applicationComplexity</td>
-   <td><p>Utilisez 1 pour une application simple, 2 pour une application complexe, ou une valeur intermédiaire :</p>
-    <ul>
-     <li>1 - Un site entièrement anonyme, orienté contenu</li>
-     <li>1.1 - Un site entièrement anonyme, orienté contenu, avec personnalisation côté client/Target</li>
-     <li>1.5 - Un site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/Target</li>
-     <li>1.7 - Pour un site orienté contenu avec des sections anonymes et connectées, une personnalisation côté client/Target et un contenu généré par l’utilisateur</li>
-     <li>2 - Où l’ensemble du site nécessite une connexion, avec une utilisation intensive du contenu créé par l’utilisateur ou l’utilisatrice et diverses techniques de personnalisation</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>cacheRatio</td>
-   <td>Pourcentage de pages qui sortent du cache du Dispatcher. Utilisez 1 si toutes les pages proviennent du cache ou 0 si chaque page est calculée par AEM.</td>
-  </tr>
-  <tr>
-   <td>templateComplexity</td>
-   <td>Utilisez une valeur comprise entre 1 et 10 pour indiquer la complexité de vos modèles. Des valeurs plus élevées indiquent des modèles plus complexes ; utilisez une valeur de 1 pour les sites avec une moyenne de 10 composants par page, une valeur de 5 pour une moyenne de 40 composants par page et 10 pour une moyenne de plus de 100 composants.</td>
-  </tr>
-  <tr>
-   <td>activations</td>
-   <td>Nombre d’activations moyennes (réplication de pages et de ressources de taille moyenne de l’auteur vers le niveau de publication) par heure divisé par x, où x est le nombre d’activations effectuées sur un système sans effets secondaires sur la performance des autres tâches traitées par le système. Vous pouvez également prédéfinir une valeur initiale pessimiste comme x = 100.<br /> </td>
-  </tr>
- </tbody>
-</table>
-
-Si vous possédez un site web plus complexe, vous avez également besoin de serveurs web plus puissants afin qu’AEM réponde à une requête dans un délai acceptable.
-
-* Complexité inférieure à 4 :
-   * 1 024 Mo de RAM JVM&#42;
-   * Processeur basse à moyenne performance
-
-* Complexité de 4 à 8 :
-   * 2 048 Mo de RAM JVM&#42;
-   * Processeur moyenne à haute performance
-
-* Complexité supérieure à 8 :
-   * 4 096 Mo de RAM JVM&#42;
-   * Processeur haute à très haute performance
-
->[!NOTE]
->
->&#42; Réservez suffisamment de RAM pour votre système d’exploitation en plus de la mémoire requise pour votre JVM.
-
 ## Autres calculs spécifiques à un cas d’utilisation {#additional-use-case-specific-calculations}
 
 Outre le calcul d’une application web par défaut, vous devrez peut-être prendre en compte des facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
-### Considérations spécifiques aux ressources {#assets-specific-considerations}
+### Considérations spécifiques à Assets {#assets-specific-considerations}
 
 Le traitement approfondi des ressources numériques nécessite des ressources matérielles optimisées, les facteurs les plus pertinents étant la taille de l’image et le débit maximal des images traitées.
 
@@ -315,7 +148,7 @@ Tester le cas d’utilisation prévu avec un extrait de contenu représentatif p
 
 Tenez également compte des auteurs et des autrices travaillant en parallèle. Ils percevront des effets secondaires sur les performances si les cas d’utilisation d’AEM MSM consomment plus de ressources que prévu.
 
-### Considérations relatives au dimensionnement d’AEM Communities {#aem-communities-sizing-considerations}
+### Considérations relatives au dimensionnement d’AEM Communities {#aem-communities-sizing-considerations}
 
 Les sites AEM qui incluent des fonctions AEM Communities connaissent un haut niveau d’interaction des visiteurs du site (membres) dans l’environnement de publication.
 
