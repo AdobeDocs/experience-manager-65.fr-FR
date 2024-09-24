@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1351'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Pendant que tous les systèmes sont en cours d’exécution, les performances de
 L’estimation du nombre de nœuds de cluster nécessaires repose sur les exigences de base et les cas d’utilisation particuliers du projet web spécifique :
 
 * Du point de vue de la sécurité des défaillances, il est nécessaire de déterminer, pour tous les environnements, l’importance de l’échec et le temps de compensation de l’échec en fonction du temps nécessaire à la récupération d’un nœud de cluster.
-* Pour ce qui est de l’évolutivité, le nombre d’opérations d’écriture est essentiellement le facteur le plus important. L’équilibrage de charge peut être établi pour les opérations qui accèdent au système uniquement afin de traiter les opérations de lecture. Consultez la section [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus d’informations.
+* Pour ce qui est de l’évolutivité, le nombre d’opérations d’écriture est le facteur le plus important. L’équilibrage de charge peut être établi pour les opérations qui accèdent au système uniquement afin de traiter les opérations de lecture. Consultez la section [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) pour plus d’informations.
 
 ### Recommandations matérielles {#hardware-recommendations}
 
@@ -117,7 +117,7 @@ En règle générale, vous pouvez utiliser le même matériel pour votre environ
 
 Outre le calcul d’une application web par défaut, vous devrez peut-être prendre en compte des facteurs spécifiques pour les cas d’utilisation suivants. Les valeurs calculées doivent être ajoutées au calcul par défaut.
 
-### Considérations spécifiques à Assets {#assets-specific-considerations}
+### Considérations spécifiques aux ressources {#assets-specific-considerations}
 
 Le traitement approfondi des ressources numériques nécessite des ressources matérielles optimisées, les facteurs les plus pertinents étant la taille de l’image et le débit maximal des images traitées.
 
@@ -146,9 +146,9 @@ Tester le cas d’utilisation prévu avec un extrait de contenu représentatif p
 
 Tenez également compte des auteurs et des autrices travaillant en parallèle. Ils percevront des effets secondaires sur les performances si les cas d’utilisation d’AEM MSM consomment plus de ressources que prévu.
 
-### Considérations relatives au dimensionnement d’AEM Communities {#aem-communities-sizing-considerations}
+### Considérations relatives au dimensionnement d’AEM Communities {#aem-communities-sizing-considerations}
 
-Les sites AEM qui incluent des fonctions AEM Communities connaissent un haut niveau d’interaction des visiteurs du site (membres) dans l’environnement de publication.
+Les sites AEM qui incluent des fonctions AEM Communities connaissent un haut niveau d’interaction des visiteurs et visiteuses du site (membres) dans l’environnement de publication.
 
 Les considérations de dimensionnement d’un site communautaire dépendent de l’interaction anticipée des membres de la communauté et de la question de savoir si les performances optimales du contenu de la page sont d’une plus grande importance.
 
