@@ -9,10 +9,10 @@ feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Dans ce workflow, les fragments de contenu à traduire sont copiés dans la raci
 
 **Mise à jour des copies de langue**
 
-Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment de contenu correspondant spécifique à la langue/aux paramètres régionaux doit être retraduit. Le workflow de mise à jour des copies de langue traduit un groupe de fragments de contenu supplémentaire et l’intégre à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les fragments de contenu traduits sont ajoutées au dossier cible qui contient déjà des fragments de contenu précédemment traduits.
+Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment de contenu correspondant spécifique à la langue/aux paramètres régionaux doit être retraduit. Le workflow de mise à jour des copies de langue traduit un groupe supplémentaire de fragments de contenu et l’inclut dans une copie de langue pour un paramètre régional spécifique. Dans ce cas, les fragments de contenu traduits sont ajoutées au dossier cible qui contient déjà des fragments de contenu précédemment traduits.
 
 ## Workflow Créer et traduire {#create-and-translate-workflow}
 
