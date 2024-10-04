@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
+source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
+Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe Sensei]. Une fois le service configuré, entraînez-le à l’aide de quelques images et d’une balise .
 
 >[!NOTE]
 >
