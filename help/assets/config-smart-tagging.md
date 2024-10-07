@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
+source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 79%
@@ -21,7 +21,7 @@ Avant de commencer à baliser vos ressources à l’aide des services de contenu
 >* Les services de contenu intelligent ne sont plus disponibles pour les nouveaux clients On-Premise [!DNL Experience Manager Assets]. Les clients On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu intelligent.
 >* Les services de contenu intelligent sont disponibles pour les clients Managed Services [!DNL Experience Manager Assets], pour lesquels cette fonctionnalité est déjà activée.
 >* Les nouveaux clients Experience Manager Assets Managed Services peuvent suivre les instructions mentionnées dans cet article pour configurer les services de contenu dynamique.
->* Pour le Service Pack 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration Oauth. Voir [Dépannage des balises intelligentes pour les informations d’identification OAuth](#config-smart-tagging.md).
+>* Pour le Service Pack 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration Oauth. Voir [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 >* Pour prendre en charge l’intégration Oauth sur le Service Pack 21, vous devez installer le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
 >* Pour la configuration SCS existante, le processus est identique à la configuration d’une nouvelle intégration OAuth. Toute configuration héritée sera automatiquement nettoyée.
 
