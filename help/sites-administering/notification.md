@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 100%
+source-wordcount: '2141'
+ht-degree: 95%
 
 ---
 
@@ -299,8 +299,15 @@ Tout d’abord, configurez le service de messagerie :
 
 Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-dessous :
 
+>[!WARNING]
+>
+>Si, après avoir terminé cette configuration, vous modifiez *n’importe laquelle* des valeurs de la configuration OSGi **CQ Mailer SMTP OAuth2 Fournir**, vous devez réautoriser à nouveau les opérations suivantes.
+>
+>Si ces actions ne sont pas effectuées, le jeton d’accès stocké à l’emplacement `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
+
 1. Ouvrez la console web AEM en accédant à `http://serveraddress:serverport/system/console/configMgr`.
 1. Recherchez **Fournisseur SMTP OAuth2 CQ Mailer**, puis cliquez dessus.
+
 1. Renseignez les informations requises comme suit :
    * URL d’autorisation : `https://accounts.google.com/o/oauth2/auth`
    * URL du jeton : `https://accounts.google.com/o/oauth2/token`
@@ -371,6 +378,12 @@ Pour résumer, vous aurez besoin des informations suivantes pour configurer OAu
 **Configurations côté AEM**
 
 Ensuite, intégrez vos paramètres OAuth2 à AEM :
+
+>[!WARNING]
+>
+>Si, après avoir terminé cette configuration, vous modifiez *n’importe laquelle* des valeurs de la configuration OSGi **CQ Mailer SMTP OAuth2 Fournir**, vous devez réautoriser à nouveau les opérations suivantes.
+>
+>Si ces actions ne sont pas effectuées, le jeton d’accès stocké à l’emplacement `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
 
 1. Accédez à la console web de votre instance locale en accédant à `http://serveraddress:serverport/system/console/configMgr`.
 1. Recherchez le **service de messagerie Day CQ**, puis cliquez dessus.
