@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1744'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Adobe Experience Manager (AEM) a été développé afin de maximiser la confor
 
 >[!NOTE]
 >
->Puisque ces documents ont été écrits la [version mise à jour des directives, WCAG 2.2](https://www.w3.org/TR/) a été disponible en octobre 2023.
+>Depuis la rédaction de ces documents, la [version mise à jour des directives WCAG 2.2](https://www.w3.org/TR/) a été publiée en octobre 2023.
 >
->Voir [Comparaison avec WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) et [Nouvelles fonctionnalités de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
+>Voir les sections [Comparaison avec WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) et [Nouvelles fonctionnalités de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 regroupe un ensemble de consignes et de critères de réussite, qui ne sont pas associés à une technologie particulière, visant à rendre les contenus web plus accessibles aux personnes en situation de handicap. Ils fournissent aux personnes chargées de la création, de la conception et du développement de contenu web des conseils à suivre afin de s’assurer que les ressources que ces personnes produisent sont aussi accessibles que possible pour autant de personnes que possible, quel que soit le handicap qu’elles peuvent avoir ; par exemple, des troubles visuels ou auditifs, des difficultés d’apprentissage ou des restrictions liées à l’âge.
 
