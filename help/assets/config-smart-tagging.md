@@ -8,13 +8,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
 workflow-type: tm+mt
 source-wordcount: '2062'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe Sensei]. Une fois le service configuré, entraînez-le à l’aide de quelques images et d’une balise .
+Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à l’Adobe Developer Console pour tirer parti du service dynamique d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
 
 <!--
 >[!NOTE]
@@ -46,7 +46,7 @@ Suivez les instructions mentionnées dans cet article pour configurer Smart Cont
 
 Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services.
 
-Pour le Service Pack 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration Oauth. Voir [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
+Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
 ## Mise à niveau SCS pour prendre en charge Oauth pour les utilisateurs On-premise {#scs-upgrade-oauth-on-premise}
 
@@ -60,7 +60,7 @@ Les utilisateurs On-Premise existants, pour lesquels cette fonctionnalité est d
 
 Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services.
 
-Pour le Service Pack 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration Oauth. Voir [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
+Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
 
 ## Intégration à la console Adobe Developer {#integrate-adobe-io}
@@ -69,9 +69,9 @@ Lors de l’intégration à la console Adobe Developer, le serveur [!DNL Experi
 
 Pour configurer le service de contenu dynamique, procédez comme suit :
 
-1. Créez une intégration dans [Adobe Developer Console](#create-adobe-io-integration).
+1. Créez une intégration dans l’[Adobe Developer Console](#create-adobe-io-integration).
 
-1. Créez la [configuration du compte technique IMS](#create-ims-account-config) à l’aide de la clé API et d’autres informations d’identification de Adobe Developer Console.
+1. Créez la [configuration du compte technique Adobe IMS](#create-ims-account-config) en utilisant la clé API et d’autres informations d’identification fournies par l’Adobe Developer Console.
 
 1. [Configurez le service de contenu dynamique](#configure-smart-content-service).
 
@@ -91,17 +91,17 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Test the configuration](#validate-the-configuration).-->
 
-### Création de l’intégration de la console Adobe Developer {#create-adobe-io-integration}
+### Créer l’intégration de l’Adobe Developer Console {#create-adobe-io-integration}
 
-Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir la [!UICONTROL clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration Adobe Developer Console), l’ [!UICONTROL ID ORGANIZATION] et le [!UICONTROL SECRET CLIENT] pour les [!UICONTROL paramètres du service de balisage intelligent Assets] de la configuration cloud dans [!DNL Experience Manager].
+Pour utiliser les API de service de contenu dynamique, créez une intégration dans l’Adobe Developer Console afin d’obtenir la [!UICONTROL Clé API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration dans l’Adobe Developer Console), l’[!UICONTROL ID D’ORGANISATION] et le [!UICONTROL SECRET CLIENT] pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
-1. Accédez à [https://developer.adobe.com](https://developer.adobe.com/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est system **administrator**.
+1. Accédez à l’URL [https://developer.adobe.com](https://developer.adobe.com/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est **administrateur ou administratrice** système.
 
 1. Créez un projet portant le nom de votre choix. Cliquez sur **[!UICONTROL Add API]** (Ajouter une API).
 
 1. Sur la page **[!UICONTROL Add API]**, sélectionnez **[!UICONTROL Experience Cloud]** puis **[!UICONTROL Smart Content]** (Contenu dynamique). Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-1. Sélectionnez **[!UICONTROL OAuth Server-to-Server]**. Cliquez sur **[!UICONTROL Suivant]**.
+1. Sélectionnez **[!UICONTROL OAuth serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
 Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de la Developer Console, en fonction de vos besoins :
 
    * Vue d’ensemble :
@@ -114,37 +114,37 @@ Pour plus de détails sur la façon d’effectuer cette configuration, consultez
       * [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
 
 
-1. Sur la page **[!UICONTROL Select product profiles]**, sélectionnez **[!UICONTROL Smart Content Services]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**. 
+1. Dans la page **[!UICONTROL Sélectionner les profils de produit]**, sélectionnez **[!UICONTROL Services de contenu dynamique]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**. 
 
    Une page affiche davantage d’informations sur la configuration. Laissez cette page ouverte pour copier et ajouter ces valeurs dans les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager] pour configurer des balises intelligentes.
 
    ![Informations d’identification OAuth dans la Developer Console](assets/ims-configuration-developer-console.png)
 
-### Créer une configuration de compte technique IMS {#create-ims-account-config}
+### Créer la configuration du compte technique Adobe IMS {#create-ims-account-config}
 
-Vous devez créer la configuration du compte technique IMS en suivant les étapes ci-dessous :
+Suivez les étapes ci-dessous pour créer la configuration du compte technique IMS :
 
-1. Dans l’interface utilisateur [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
+1. Dans l’interface d’utilisation [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 
 1. Cliquez sur **[!UICONTROL Créer]**.
 
-1. Dans la boîte de dialogue Configuration du compte technique IMS , utilisez les valeurs suivantes :
+1. Dans la boîte de dialogue Configuration du compte technique Adobe IMS, utilisez les valeurs suivantes :
 
-   ![Fenêtre de configuration Adobe IMS](assets/adobe-ims-config.png)
+   ![Fenêtre de configuration d’Adobe IMS](assets/adobe-ims-config.png)
 
    | Champ | Description |
    | -------- | ---------------------------- |
-   | Solution cloud | Sélectionnez **[!UICONTROL Balises intelligentes]** dans la liste déroulante. |
+   | Solution cloud | Sélectionnez **[!UICONTROL Balises intelligentes]** dans le menu déroulant. |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
    | Serveur d’autorisation | Ajouter `https://ims-na1.adobelogin.com` |
-   | ID client | À fournir via la [console Adobe Developer](https://developer.adobe.com/console/). |
-   | Secret client | À fournir via la [console Adobe Developer](https://developer.adobe.com/console/). |
-   | Portée | À fournir via la [console Adobe Developer](https://developer.adobe.com/console/). |
-   | ID d’organisation | À fournir via la [console Adobe Developer](https://developer.adobe.com/console/). |
+   | ID client | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | Secret client | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | Portée | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | ID d’organisation | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
 
-1. Sélectionnez la configuration que vous avez créée et cliquez sur **[!UICONTROL Vérifiez l’intégrité]**.
+1. Sélectionnez la configuration que vous avez créée et cliquez sur **[!UICONTROL Contrôle de l’intégrité]**.
 
-1. Confirmez la boîte de dialogue de vérification de l’intégrité et cliquez sur Fermer une fois la configuration en bonne santé.
+1. Confirmez la boîte de dialogue du Contrôle de l’intégrité, puis cliquez sur Fermer une fois la configuration vérifiée comme saine.
 
 ### Créer une configuration {#configure-smart-content-service}
 
@@ -159,18 +159,18 @@ Vous devez créer la configuration du compte technique IMS en suivant les étape
 
 Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COMPTE TECHNIQUE], d’[!UICONTROL ID D’ORGANISATION], de [!UICONTROL SECRET CLIENT] et d’[!UICONTROL ID CLIENT] à partir de l’intégration de la console Adobe Developer. La création d’une configuration cloud de balises intelligentes permet d’authentifier les demandes d’API provenant du déploiement [!DNL Experience Manager].
 
-1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Balisage intelligent]** pour ouvrir les [!UICONTROL configurations de balise intelligente].
+1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Balise intelligente]** pour ouvrir les [!UICONTROL configurations de balise intelligente].
 
-1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration. Sinon, cliquez sur **[!UICONTROL Propriétés]** pour mettre à jour la configuration existante.
+1. Cliquez sur **[!UICONTROL Créer]** pour créer une configuration. Autrement, cliquez sur **[!UICONTROL Propriétés]** pour mettre à jour la configuration existante.
 
-1. Renseignez les champs suivants :
+1. Renseignez les champs suivants :
 
    ![Configuration des balises intelligentes](assets/smart-tags-config.png)
 
    | Champ | Description |
    | -------- | ---------------------------- |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
-   | Configuration Adobe IMS associée | Sélectionnez une configuration dans la liste déroulante. |
+   | Configuration Adobe IMS associée | Sélectionnez une configuration dans le menu déroulant. |
    | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée. |
 
    >[!NOTE]
@@ -377,11 +377,11 @@ The validation results are displayed in the same dialog.
 
 1. Dans l’onglet **[!UICONTROL Arguments]**, sélectionnez **[!UICONTROL Ignorer les erreurs]** si vous souhaitez que le workflow se termine même si l’étape de balisage automatique échoue.
 
-   De plus, pour baliser les ressources lors de leur chargement, que le balisage intelligent soit activé ou non dans les dossiers, sélectionnez **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
+   De plus, pour baliser les ressources lors de leur chargement, et ce, que le balisage intelligent soit activé ou non dans les dossiers, cochez la case **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
 
-   ![Configuration du workflow de Ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape de balisage intelligent et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
+   ![Configuration du workflow de ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape de balisage intelligent et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
 
-1. Cliquez sur Terminé ![icône terminé](assets/do-not-localize/check-ok-done-icon.png) pour fermer l’étape du processus.
+1. Cliquez sur Terminé ![Icône Terminé](assets/do-not-localize/check-ok-done-icon.png) pour fermer l’étape du processus.
 
 1. Cliquez sur **[!UICONTROL Synchroniser]** pour enregistrer le workflow.
 
