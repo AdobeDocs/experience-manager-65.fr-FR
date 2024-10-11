@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2141'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -301,9 +301,9 @@ Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-de
 
 >[!WARNING]
 >
->Si, après avoir terminé cette configuration, vous modifiez *n’importe laquelle* des valeurs de la configuration OSGi **CQ Mailer SMTP OAuth2 Fournir**, vous devez réautoriser à nouveau les opérations suivantes.
+>Si vous modifiez l’*une* des valeurs de la configuration OSGi du **fournisseur SMTP OAuth2 de messagerie CQ**, vous devez réaliser une nouvelle authentification en suivant ces étapes.
 >
->Si ces actions ne sont pas effectuées, le jeton d’accès stocké à l’emplacement `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
+>Si ces étapes ne sont pas suivies, le jeton d’accès stocké dans `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
 
 1. Ouvrez la console web AEM en accédant à `http://serveraddress:serverport/system/console/configMgr`.
 1. Recherchez **Fournisseur SMTP OAuth2 CQ Mailer**, puis cliquez dessus.
@@ -381,9 +381,9 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 >[!WARNING]
 >
->Si, après avoir terminé cette configuration, vous modifiez *n’importe laquelle* des valeurs de la configuration OSGi **CQ Mailer SMTP OAuth2 Fournir**, vous devez réautoriser à nouveau les opérations suivantes.
+>Si, à la suite de cette configuration, vous modifiez l’*une* des valeurs de la configuration OSGi du **fournisseur SMTP OAuth2 de messagerie CQ**, vous devez réaliser une nouvelle authentification en suivant ces étapes.
 >
->Si ces actions ne sont pas effectuées, le jeton d’accès stocké à l’emplacement `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
+>Si ces étapes ne sont pas suivies, le jeton d’accès stocké dans `/conf/global/settings/mailer/oauth` ne sera pas valide et la connexion OAuth2 au serveur SMTP échouera.
 
 1. Accédez à la console web de votre instance locale en accédant à `http://serveraddress:serverport/system/console/configMgr`.
 1. Recherchez le **service de messagerie Day CQ**, puis cliquez dessus.
