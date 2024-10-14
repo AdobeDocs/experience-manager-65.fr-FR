@@ -10,10 +10,10 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -158,7 +158,16 @@ Pour créer un lancement imbriqué à partir de la console **Sites**, sur la bas
 
    Si vous sélectionnez **Terminé**, vous revenez au rail **Références** de la console **Sites**. Si vous sélectionnez la page appropriée, votre nouveau lancement est affiché.
 
-### Suppression d’un lancement {#deleting-a-launch}
+### Clonage d’un lancement {#cloning-a-launch}
+
+Vous pouvez cloner un lancement à partir de la [console de lancements](/help/sites-authoring/launches.md#the-launches-console) :
+
+* Sélectionnez le lancement en appuyant/cliquant sur la miniature.
+* La barre d’outils s’affiche. Sélectionnez Cloner.
+   * Le clone sera créé et affiché dans la console.
+   * Le **Titre du lancement** indique qu’il s’agit d’un clone. Vous pouvez mettre à jour le titre en modifiant la [configuration de lancement](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propriétés**).
+
+## Suppression d’un lancement {#deleting-a-launch}
 
 Vous pouvez supprimer un lancement à partir de la [console des lancements](/help/sites-authoring/launches.md#the-launches-console) :
 

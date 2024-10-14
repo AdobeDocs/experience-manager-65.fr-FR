@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
@@ -107,8 +107,7 @@ Les lancements permettent d’effectuer les opérations suivantes :
 >
 >Lorsque la page est promue, les modifications de contenu sont répercutées mais les positions du composant ne changent pas.
 
-
-### Console Lancements {#the-launches-console}
+## Console Lancements {#the-launches-console}
 
 La console de lancements fournit une vue d’ensemble de vos lancements et permet d’appliquer des actions sur les lancements répertoriés. Vous pouvez accéder à la console via :
 
