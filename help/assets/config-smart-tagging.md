@@ -6,9 +6,9 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2062'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,31 +34,31 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 
 * Installez le dernier pack de services [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
-## Mise à niveau SCS pour la prise en charge d’Oauth pour Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+## Mise à niveau SCS pour la prise en charge d’OAuth pour Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
-**Nouveaux utilisateurs**
+**Nouveaux utilisateurs et nouvelles utilisatrices**
 
-Installez le Service Pack 21. Pour prendre en charge l’intégration Oauth sur le Service Pack 21, vous devez installer [Hotfix for Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
+Installez le pack de services 21. Pour prendre en charge l’intégration OAuth sur le pack de services 21, vous devez installer le [correctif pour le pack de services 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
 
-Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services.
+Suivez les instructions mentionnées dans cet article pour configurer les services de contenu intelligent.
 
-**Utilisateurs existants**
+**Utilisateurs et utilisatrices existants**
 
-Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services.
+Si vous avez effectué la mise à niveau vers le pack de services 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer les services de contenu intelligent.
 
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
-## Mise à niveau SCS pour prendre en charge Oauth pour les utilisateurs On-premise {#scs-upgrade-oauth-on-premise}
+## Mise à niveau SCS pour prendre en charge Oauth pour les utilisateurs et utilisatrices On-premise {#scs-upgrade-oauth-on-premise}
 
-**Nouveaux utilisateurs**
+**Nouveaux utilisateurs et nouvelles utilisatrices**
 
-Les services de contenu dynamique ne sont plus disponibles pour les nouveaux utilisateurs [!DNL Experience Manager Assets] On-Premise.
+Les services de contenu intelligent ne sont plus disponibles pour les nouveaux utilisateurs et les nouvelles utilisatrices On-Premise [!DNL Experience Manager Assets].
 
-**Utilisateurs existants**
+**Utilisateurs et utilisatrices existants**
 
-Les utilisateurs On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu dynamique.
+Les utilisateurs et utilisatrices On-Premise existants, pour qui cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu intelligent.
 
-Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services.
+Si vous avez effectué la mise à niveau vers le pack de services 21, installez le [correctif pour SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer les services de contenu intelligent.
 
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
