@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f4ca16ad4c73bcca7704caa7c269977f750e71e8
+source-git-commit: 93e9f9318f71a0fd1004c49cc9b1b3d349a4c9ed
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 56%
@@ -138,7 +138,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 
 ## Questions fréquentes {#fag}
 
-+++### Existe-t-il des coûts de licence associés à l’imagerie dynamique ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++L’imagerie dynamique engendre-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
 
@@ -148,7 +148,7 @@ Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règ
 
 +++
 
-+++### Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
++++Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
 
 Lorsqu’un consommateur demande une image, l’imagerie dynamique analyse les caractéristiques de l’utilisateur et la convertit au format approprié en fonction du navigateur. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
@@ -170,7 +170,7 @@ Si la taille de l’image d’origine est inférieure à celle produite par l’
 
 +++
 
-+++### Quels formats d’image sont pris en charge ? {#what-image-formats-are-supported}
++++Quels formats d’image sont pris en charge ? {#what-image-formats-are-supported}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 
@@ -183,7 +183,7 @@ Pour les formats de fichiers image qui prennent en charge la transparence, tels 
 
 +++
 
-+++### Comment l’imagerie dynamique fonctionne-t-elle avec mes paramètres d’image prédéfinis existants déjà utilisés ? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
++++Comment l’imagerie dynamique fonctionne-t-elle avec mes paramètres d’image prédéfinis existants déjà utilisés ? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 L’imagerie dynamique s’intègre de manière transparente à vos paramètres d’image prédéfinis existants, en respectant tous vos paramètres d’image.
 
@@ -207,13 +207,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-+++### L’imagerie dynamique fonctionne-t-elle avec HTTPS ? Que diriez-vous de HTTP/2 ? {#does-smart-imaging-working-with-https-how-about-http}
++++ L’imagerie dynamique fonctionne-t-elle avec HTTPS ? Que diriez-vous de HTTP/2 ? {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
 +++
 
-+++### Suis-je autorisé à utiliser l’imagerie dynamique ? {#am-i-eligible-to-use-smart-imaging}
++++Puis-je utiliser l’imagerie dynamique ? {#am-i-eligible-to-use-smart-imaging}
 
 L’imagerie dynamique est disponible immédiatement pour tous les clients. Pour commencer à profiter de ses avantages, ajoutez simplement `bfc=on`, `dpr=on,dprValue` ou `network=on`, ou les trois paramètres à vos URL ou paramètres prédéfinis existants.
 
@@ -221,7 +221,7 @@ Pour utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou Dynamic
 
 +++
 
-+++### Quel est le processus d’activation de l’imagerie dynamique pour un compte ? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
++++Quel est le processus d’activation de l’imagerie dynamique pour un compte ? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 Pour commencer à utiliser l’imagerie dynamique, ajoutez `bfc=on`, `dpr=on,dprValue` ou `network=on`, ou les trois paramètres à vos URL ou paramètres prédéfinis existants. Si vous préférez ne pas apporter ces modifications manuellement, vous pouvez activer l’imagerie dynamique par défaut en créant un cas de prise en charge.
 
@@ -278,7 +278,7 @@ Pour ajuster la durée de vie (TTL) :
 
 +++
 
-+++### Quand puis-je m’attendre à ce qu’un compte soit activé avec l’imagerie dynamique ? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
++++Quand puis-je m’attendre à ce qu’un compte soit activé avec l’imagerie dynamique ? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
 Le service clientèle traite les demandes dans l’ordre dans lequel elles sont reçues, en suivant la liste d’attente.
 
@@ -288,7 +288,7 @@ Le service clientèle traite les demandes dans l’ordre dans lequel elles sont 
 
 +++
 
-+++### Quels sont les risques liés au passage à l’imagerie dynamique ? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
++++Quels sont les risques liés au passage à l’imagerie dynamique ? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 La page web d’un client ne présente aucun risque. Cependant, la transition à l’imagerie dynamique efface votre cache CDN. Cette opération implique de passer à une nouvelle configuration de Dynamic Media Classic ou Dynamic Media sur Experience Manager.
 
@@ -296,7 +296,7 @@ Au cours de la transition initiale, les images non mises en cache accèdent dire
 
 +++
 
-+++### Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
++++Comment puis-je vérifier si l’imagerie dynamique fonctionne comme prévu ?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Une fois votre compte configuré avec l’imagerie dynamique, chargez une URL d’image Dynamic Media Classic ou Adobe Experience Manager - Dynamic Media dans le navigateur.
 1. Ouvrez le volet de Chrome pour les développeurs en accédant à **[!UICONTROL Afficher]** > **[!UICONTROL Développeur]** > **[!UICONTROL Outils de développement]** dans le navigateur. Vous pouvez également sélectionner l’outil de développement de navigateur de votre choix.
@@ -317,7 +317,7 @@ Au cours de la transition initiale, les images non mises en cache accèdent dire
 
 +++
 
-+++### Comment puis-je connaître le gain de performance ? Existe-t-il un moyen de connaître les avantages de l’imagerie dynamique ? {#benefits}
++++Comment puis-je connaître le gain de performance ? Existe-t-il un moyen de connaître les avantages de l’imagerie dynamique ? {#benefits}
 
 L’en-tête d’imagerie dynamique détermine les avantages de l’imagerie dynamique. Lorsque l’imagerie dynamique est activée, après avoir demandé une image, vous pouvez voir `-X-Adobe-Smart-Imaging` sous le titre **[!UICONTROL En-têtes de réponse]**, comme illustré dans l’exemple en surbrillance suivant :
 
@@ -342,13 +342,13 @@ Cet en-tête vous indique ce qui suit :
 
 +++
 
-+++### Comment désactiver l’optimisation AVIF dans l’imagerie dynamique ?{#disable-avif}
++++Comment désactiver l’optimisation AVIF dans l’imagerie dynamique ?{#disable-avif}
 
 Si vous souhaitez revenir au service WebP par défaut, créez un dossier de support de la même façon. Vous pouvez comme d’habitude désactiver l’imagerie dynamique en ajoutant le paramètre `bfc=off` à l’URL de l’image. Cependant, vous ne pouvez pas sélectionner le format WebP ou AVIF dans le modificateur d’URL pour l’imagerie dynamique. Cette fonctionnalité est maintenue au niveau du compte de votre société.
 
 +++
 
-+++### L’imagerie dynamique peut-elle être désactivée pour n’importe quelle demande ?{#turning-off-smart-imaging}
++++L’imagerie dynamique peut-elle être désactivée pour n’importe quelle demande ?{#turning-off-smart-imaging}
 
 Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modificateurs suivants :
 
@@ -358,7 +358,7 @@ Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modif
 
 +++
 
-+++### Quel &quot;réglage&quot; est disponible ? Existe-t-il des paramètres ou des comportements qui peuvent être définis ? {#tuning-settings}
++++Quel &quot;réglage&quot; est disponible ? Existe-t-il des paramètres ou des comportements qui peuvent être définis ? {#tuning-settings}
 
 L’imagerie dynamique offre trois options que vous pouvez activer ou désactiver.
 
@@ -368,7 +368,7 @@ L’imagerie dynamique offre trois options que vous pouvez activer ou désactive
 
 +++
 
-+++### Je dispose d’une URL avec fmt=tif sur le navigateur web Chrome. Mais ma requête échoue avec une erreur ImageServer. Pourquoi ? {#fmt-tif}
++++Je dispose d’une URL avec fmt=tif sur le navigateur web Chrome. Mais ma requête échoue avec une erreur ImageServer. Pourquoi ? {#fmt-tif}
 
 Cette erreur ne se produit pas si l’imagerie dynamique n’est pas activée sur votre compte. L’imagerie dynamique fonctionne uniquement avec les formats JPEG ou PNG.
 
@@ -380,55 +380,55 @@ Pour éviter cette erreur, vous pouvez effectuer l’une des opérations suivant
 
 +++
 
-+++### Je veux télécharger une image de TIFF à partir de l’URL d’une image. Comment est-ce que je fais ça ? {#download-tif}
++++Je souhaite télécharger une image de TIFF à partir de l’URL d’une image. Comment est-ce que je fais ça ? {#download-tif}
 
 Ajoutez `fmt=tif` et `bfc=off` au chemin d’URL de l’image.
 
 +++
 
-+++### L’imagerie dynamique gère-t-elle uniquement le format d’image ou gère-t-elle également les paramètres de qualité d’image pour obtenir les meilleurs résultats ?
++++L’imagerie dynamique gère-t-elle uniquement le format d’image ou gère-t-elle également les paramètres de qualité d’image pour obtenir les meilleurs résultats ?
 
 L’imagerie dynamique utilise le format et la qualité. Le reste des paramètres restent inchangés, tels que prévus pour l’URL de l’image.
 
 +++
 
-+++### Si l’imagerie dynamique gère les paramètres de qualité, y a-t-il des valeurs minimales et maximales que je peux définir ? En d’autres termes, une qualité qui n’est pas inférieure à 60 et pas supérieure à 80 ? {#quality-setting}
++++Si l’imagerie dynamique gère les paramètres de qualité, existe-t-il des valeurs minimales et maximales que je peux définir ? En d’autres termes, une qualité qui n’est pas inférieure à 60 et pas supérieure à 80 ? {#quality-setting}
 
 Il n’existe actuellement aucune configuration de ce type.
 
 +++
 
-+++### L’imagerie dynamique ajuste-t-elle automatiquement le paramètre de sortie de qualité en pourcentage ou s’agit-il d’un paramètre ajusté manuellement qui s’applique à toutes les images ? Dans quelle plage ? {#percent-quality}
++++L’imagerie dynamique ajuste-t-elle automatiquement le paramètre de sortie de qualité en pourcentage ou s’agit-il d’un paramètre ajusté manuellement, qui s’applique à toutes les images ? Dans quelle plage ? {#percent-quality}
 
 L’imagerie dynamique ajuste automatiquement le pourcentage de qualité. Cette qualité est déterminée à l’aide d’un algorithme d’apprentissage automatique développé par Adobe. Ce pourcentage n’est pas spécifique à la plage.
 
 +++
 
-+++### Avec l’imagerie dynamique, quelles commandes de traitement d’images sont prises en charge ou ignorées ? {#support-ignore}
++++Avec l’imagerie dynamique, quelles commandes de diffusion d’images sont prises en charge ou ignorées ? {#support-ignore}
 
 Les seules commandes à être ignorées sont `fmt` et `qlt`. Toutes les commandes restantes sont prises en charge.
 
 +++
 
-+++### Seules les images de JPEG sont-elles remplacées par l’imagerie dynamique ? Que se passe-t-il si je demande un fichier WebP, PNG ou autre chose ? {#replace-request}
++++Seules images de JPEG sont-elles remplacées par l’imagerie dynamique ? Que se passe-t-il si je demande un fichier WebP, PNG ou autre chose ? {#replace-request}
 
 Cette fonctionnalité fonctionne uniquement pour les images JPEG et PNG.
 
 +++
 
-+++### Pourquoi une image de JPEG est-elle parfois renvoyée à Chrome au lieu de WebP ? {#jpeg-returned}
++++Pourquoi une image de JPEG est-elle parfois renvoyée à Chrome au lieu de WebP ? {#jpeg-returned}
 
 L’imagerie dynamique détermine si la conversion apporte ou non un bénéfice. Elle renvoie la nouvelle image uniquement si la conversion est bénéfique.
 
 +++
 
-+++### Pourquoi la fonctionnalité de rapport des pixels de l’appareil (dpr) ne fonctionne-t-elle pas comme prévu avec les images composites ? {#composite-images}
++++Pourquoi la fonctionnalité Device Pixel Ratio (dpr) ne fonctionne-t-elle pas comme prévu avec les images composites ? {#composite-images}
 
 Si une image composite implique un trop grand nombre de calques, la fonctionnalité dpr peut être affectée lors de l’utilisation d’un modificateur de position. Ce problème est connu et sera corrigé dans les prochaines versions de l’imagerie dynamique. Si d’autres fonctionnalités d’imagerie dynamique ne fonctionnent pas comme prévu, vous pouvez créer un dossier de support pour signaler le problème.
 
 +++
 
-+++### Pourquoi l’imagerie dynamique PNG est-elle toujours convertie en WebP/AVIF sans perte ? {#convert-to-lossless}
++++Pourquoi l’imagerie dynamique PNG est-elle toujours convertie en WebP/AVIF sans perte ? {#convert-to-lossless}
 
 Étant donné que le format PNG est un format sans perte, les versions antérieures de WebP et d’AVIF diffusées étaient sans perte, la taille est donc plus élevée que prévu. L’imagerie dynamique prend désormais en charge la conversion avec perte. Vous pouvez utiliser le modificateur `cache=update` (une seule fois) dans une demande d’image pour résoudre ce problème. Exemple d’utilisation de ce modificateur :
 
@@ -438,7 +438,7 @@ Pour invalider l’intégralité du cache, vous devez créer un dossier de suppo
 
 +++
 
-+++### Comment puis-je continuer à utiliser la conversion PNG pour une conversion sans perte dans l’imagerie dynamique ? {#continue-using}
++++Comment puis-je continuer à utiliser PNG pour une conversion sans perte dans l’imagerie dynamique ? {#continue-using}
 
 L’imagerie dynamique prend désormais en charge la conversion avec perte en fonction du niveau de qualité. Vous pouvez continuer à utiliser une conversion sans perte en définissant la qualité sur 100, soit par le biais des paramètres de votre entreprise, soit en ajoutant `qlt=100` au chemin d’accès de l’URL de l’image.
 
