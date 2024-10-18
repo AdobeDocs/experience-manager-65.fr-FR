@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 58%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 58%
 
 L’imagerie dynamique applique les caractéristiques de visualisation uniques de chaque utilisateur afin de diffuser les images appropriées optimisées automatiquement pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement.
 
-## Qu’est-ce que l’imagerie dynamique ?  {#what-is-smart-imaging}
+## À propos de l’imagerie dynamique {#what-is-smart-imaging}
 
 La technologie d’imagerie dynamique applique les fonctionnalités d’Adobe Sensei AI et fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
@@ -136,7 +136,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Auparavant, les images d’origine et dérivées étaient mises en cache et un processus en 2 étapes était nécessaire pour invalider le cache. Dans la dernière version de l’imagerie dynamique, seuls les dérivés sont mis en cache, ce qui permet un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, &quot;Timing Allow Origin&quot; et &quot;X-Robot&quot; comme suggéré dans [Ajoutez une valeur d’en-tête personnalisée aux réponses d’image|Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Questions fréquentes {#fag}
+## Questions fréquentes
 
 +++L’imagerie dynamique engendre-t-elle des frais de licence ?
 
