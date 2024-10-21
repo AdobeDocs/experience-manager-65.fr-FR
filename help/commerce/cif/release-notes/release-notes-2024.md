@@ -5,10 +5,10 @@ exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 573057b8e4c01b1c14f8c66b3da7b44e9d857760
-workflow-type: ht
-source-wordcount: '148'
-ht-degree: 100%
+source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 88%
 
 ---
 
@@ -34,6 +34,24 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Correction des tests de l’interface d’utilisation pour qu’ils fonctionnent correctement avec les composants principaux CIF.
 * Correction d’un problème en raison duquel le format des URL de catégorie ne fonctionnait pas comme prévu dans l’instance cloud.
+
+## Date de publication : septembre 2024
+
+| Composant | Version | Détails |
+|:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
+| Composants principaux CIF | 2.14.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+
+### Améliorations {#improvements-September}
+
+* Rendre la limite de catégorie personnalisable.
+
+### Correctifs {#bug-fixes-September}
+
+* Les champs Commerce ne sont pas correctement intégrés à l’éditeur de schéma de métadonnées Assets.
+* Problème de glisser-déposer pour le multichamp Produits du carrousel.
+* Problème avec le champ Multichamp de catégorie de carrousel pour le glisser-déposer
+* Le fait de cliquer ne fonctionne pas pour les menus dans la page Informations sur la page de l’éditeur de catégories et de produits.
+* Le numéro de commande n’est pas visible sur la page de confirmation de commande.
 
 ## Date de publication : janvier 2024
 
