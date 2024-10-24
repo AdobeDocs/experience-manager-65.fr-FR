@@ -6,9 +6,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -49,8 +49,8 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Les champs Commerce ne sont pas correctement intégrés à l’éditeur de schéma de métadonnées Assets.
 * Problème de glisser-déposer pour le multichamp Produits du carrousel.
-* Problème avec le champ Multichamp de catégorie de carrousel pour le glisser-déposer
-* Le fait de cliquer ne fonctionne pas pour les menus dans la page Informations sur la page de l’éditeur de catégories et de produits.
+* Problème de glisser-déposer pour le multichamp Catégorie de carrousel.
+* Le clic ne fonctionne pas pour les menus dans la page Informations sur la page de l’éditeur de catégories et de produits.
 * Le numéro de commande n’est pas visible sur la page de confirmation de commande.
 
 ## Date de publication : janvier 2024
