@@ -352,17 +352,17 @@ Commencez d’abord par activer le module externe paraformat :
 
 >[!NOTE]
 >
-Si le module externe n’est pas configuré davantage, les formats par défaut suivants sont activés :
+>Si le module externe n’est pas configuré davantage, les formats par défaut suivants sont activés :
 >
-* Paragraphe ( `<p>`)
-* En-tête 1 ( `<h1>`)
-* En-tête 2 ( `<h2>`)
-* En-tête 3 ( `<h3>`)
+>* Paragraphe ( `<p>`)
+>* En-tête 1 ( `<h1>`)
+>* En-tête 2 ( `<h2>`)
+>* En-tête 3 ( `<h3>`)
 >
 
 >[!CAUTION]
 >
-Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si vous supprimez la balise `<p>`, l’auteur ou l’autrice du contenu ne peut pas sélectionner l’option **Formats des paragraphes**, même si d’autres formats sont configurés.
+>Lors de la configuration des formats de paragraphe de l’éditeur de texte enrichi, ne supprimez pas la balise de paragraphe &lt;p> comme option de mise en forme. Si vous supprimez la balise `<p>`, l’auteur ou l’autrice du contenu ne peut pas sélectionner l’option **Formats des paragraphes**, même si d’autres formats sont configurés.
 
 ### Spécification des formats de paragraphe disponibles {#paraformatsindropdown}
 
@@ -399,7 +399,7 @@ Les formats de paragraphe peuvent être mis à disposition pour être sélection
 
 >[!CAUTION]
 >
-Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
+>Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
 
 ## Configuration des caractères spéciaux {#spchar}
 
@@ -409,7 +409,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 
 >[!CAUTION]
 >
-Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre propre sélection.
+>Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, définissez ou redéfinissez ces caractères dans votre propre sélection.
 
 ### Définition d’un caractère unique {#definesinglechar}
 
@@ -460,10 +460,12 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
    * **Nom** `rangeStart`
+
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
    * **Nom** `rangeEnd`
+
      **Type** `Long`
      **Valeur** Représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
 
@@ -483,11 +485,11 @@ Les styles sont généralement appliqués au texte, mais un ensemble distinct de
 
 >[!NOTE]
 >
-Vous pouvez définir des styles de tableaux et de cellules uniquement pour l’IU classique.
+>Vous pouvez définir des styles de tableaux et de cellules uniquement pour l’IU classique.
 
 >[!NOTE]
 >
-La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Cette fonction n’est pas prise en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
+>La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Cette fonction n’est pas prise en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un plug-in](#activateplugin).
 1. Créez la propriété `features` sur le nœud `table` :
@@ -498,13 +500,13 @@ La copie et le collage de tableaux dans ou depuis un composant d’éditeur de t
 
    >[!NOTE]
    >
-   Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
+   >Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
    >
-   * **Type** `String[]`
+   >* **Type** `String[]`
    >
-   * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
-   * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
-   * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
+   >* **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
+   >* `table` pour permettre de modifier les propriétés du tableau, dont les styles.
+   >* `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 1. Définissez l’emplacement des feuilles de style CSS afin de pouvoir y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet), car cela revient à définir les [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants (au besoin) :
@@ -566,7 +568,7 @@ Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de
 
 >[!NOTE]
 >
-Le message `Spell checking failed` s’affiche si le système tente d’effectuer une vérification pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+>Le message `Spell checking failed` s’affiche si le système tente d’effectuer une vérification pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
 Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, suivez les étapes suivantes.
 
@@ -581,16 +583,16 @@ Une installation d’AEM standard inclut les dictionnaires pour l’anglais amé
 
    >[!CAUTION]
    >
-   Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers d’archive, il est recommandé de vérifier l’archive après son téléchargement.
+   >Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers d’archive, il est recommandé de vérifier l’archive après son téléchargement.
 
 1. Recherchez les fichiers `.aff` et `.dic`. Conservez le nom du fichier en minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
 1. Chargez les fichiers `.aff` et `.dic` dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur le [!UICONTROL Vérificateur orthographique] de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
+>Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. Pour exécuter le vérificateur orthographique, cliquez sur le [!UICONTROL Vérificateur orthographique] de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
 >
-Si vous incorporez des modifications que le vérificateur orthographique suggère, le statut du texte change et les mots mal orthographiés ne sont plus mis en surbrillance. Pour exécuter le vérificateur orthographique, cliquez de nouveau sur le bouton Vérificateur orthographique.
+>Si vous incorporez des modifications que le vérificateur orthographique suggère, le statut du texte change et les mots mal orthographiés ne sont plus mis en surbrillance. Pour exécuter le vérificateur orthographique, cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
@@ -626,7 +628,7 @@ Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la t
 
 >[!NOTE]
 >
-Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.
+>Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `lists`, créez le paramètre `indentSize` :
@@ -639,7 +641,7 @@ Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte
 
 >[!NOTE]
 >
-Cela ne s’applique que lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (et non lors de la modification statique dans l’interface utilisateur classique).
+>Cela ne s’applique que lors de l’utilisation de l’éditeur de texte enrichi dans une boîte de dialogue (et non lors de la modification statique dans l’interface utilisateur classique).
 
 Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte de dialogue du composant :
 
@@ -651,7 +653,7 @@ Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte
 
    >[!NOTE]
    >
-   Cette opération ne modifie pas la hauteur de la fenêtre de la boîte de dialogue.
+   >Cette opération ne modifie pas la hauteur de la fenêtre de la boîte de dialogue.
 
 1. Enregistrez les modifications.
 
@@ -672,13 +674,13 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
    >[!NOTE]
    >
-   Le nœud `../items/text` possède la propriété :
+   >Le nœud `../items/text` possède la propriété :
    >
-   * **Nom** `xtype`
-   * **Type** `String`
-   * **Valeur** `richtext`
+   >* **Nom** `xtype`
+   >* **Type** `String`
+   >* **Valeur** `richtext`
    >
-   L’emplacement du nœud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue, par exemple `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >L’emplacement du nœud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue, par exemple `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Sous `htmlRules`, créez un nœud.
 
