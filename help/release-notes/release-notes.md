@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb6e843bfad3feb194dd00588dbb4a2d3539743a
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 7939703fe7ef9382e9d1a426c0eb9f021b964d1a
 workflow-type: tm+mt
-source-wordcount: '4658'
+source-wordcount: '4672'
 ht-degree: 41%
 
 ---
@@ -38,7 +39,12 @@ ht-degree: 41%
 
 ## Principales fonctionnalités et améliorations
 
-<!-- * _6.5.22.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+### Sites {#sites}
+
+[L’éditeur universel](/help/sites-developing/universal-editor/introduction.md) est désormais disponible sur AEM 6.5 pour les cas d’utilisation sans interface.
+
+
+### [!DNL Forms]
 
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 

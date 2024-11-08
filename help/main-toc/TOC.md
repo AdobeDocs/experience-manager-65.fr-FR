@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
+source-git-commit: 472fc1fee44681b77ad0b9e883ca9aaf136e0e85
 workflow-type: tm+mt
-source-wordcount: '7450'
+source-wordcount: '7454'
 ht-degree: 99%
 
 ---
@@ -1424,6 +1424,8 @@ ht-degree: 99%
             + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [Authentification pour les requêtes GraphQL AEM distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html?lang=fr)
             + [API AEM GraphQL avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html?lang=fr)
+         + Éditeur universel {#universal-editor}
+            + [Présentation](/help/sites-developing/universal-editor/introduction.md)
       + Développement hybride et SPA AEM {#spas}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Introduction et présentation des applications monopage (SPA)](/help/sites-developing/spa-walkthrough.md)
