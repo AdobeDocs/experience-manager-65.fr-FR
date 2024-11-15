@@ -3,9 +3,10 @@ title: Éditeur universel
 description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à optimiser vos expériences sans tête à l’aide d’AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -46,17 +47,17 @@ Une fois la configuration terminée, vous pouvez [instrumenter vos applications 
 
 ### Mettre à jour les AEM {#update-aem}
 
-Le Service Pack 21 et un Feature Pack pour AEM sont nécessaires pour utiliser l’éditeur universel avec AEM 6.5.
+Le Service Pack 21 ou 22 et un Feature Pack pour AEM sont nécessaires pour utiliser l’éditeur universel avec AEM 6.5.
 
 #### Appliquer le dernier Service Pack {#latest}
 
-Assurez-vous que vous exécutez au moins le Service Pack 21 pour AEM 6.5. Vous pouvez télécharger le dernier Service Pack à partir de [Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Assurez-vous que vous exécutez au moins le Service Pack 21 ou 22 pour AEM 6.5. Vous pouvez télécharger le dernier Service Pack à partir de [Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
 
 #### Installation du Feature Pack de l’éditeur universel {#feature-pack}
 
 Installez le **package de fonctionnalités Universal Editor pour AEM 6.5** [ disponible sur Distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Si vous exécutez déjà le Service Pack 23 ou supérieur, cette étape n’est pas nécessaire.
+Si vous exécutez déjà le Service Pack 23 ou supérieur, le Feature Pack n’est pas nécessaire.
 
 ### Configuration des services {#configure-services}
 
