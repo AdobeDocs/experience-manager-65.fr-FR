@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
-# Aperçu – Représentation JSON {#preview-json-representation}
+# Aperçu - Représentation JSON {#preview-json-representation}
 
-Au cours du développement de modèles pour les fragments de contenu dans le cadre de votre mise en œuvre AEM découplée, vous souhaiterez éventuellement voir l’exemple de sortie JSON pour un fragment de contenu, basé sur un modèle. Vous pourrez ainsi, par exemple, avoir une idée de l’aspect du résultat final. Cela peut s’avérer utile lors de la validation de la structure JSON du modèle, avec peut-être un exemple de contenu par type de données.
+Lors du développement des modèles de fragments de contenu dans le cadre de votre mise en oeuvre AEM sans interface utilisateur, vous pouvez utiliser l’éditeur de fragments de contenu pour afficher un exemple de sortie JSON pour un fragment de contenu, en fonction d’un modèle. Vous pourrez ainsi, par exemple, avoir une idée de l’aspect du résultat final. Cela peut s’avérer utile lors de la validation de la structure JSON du modèle, avec peut-être un exemple de contenu par type de données.
 
 Utilisation de l’icône **Aperçu** :
 
