@@ -1,27 +1,27 @@
 ---
-title: API facturables pour les rapports de transaction pour AEM Forms on JEE.
-description: Liste de toutes les API prises en compte comme transactions pour AEM Forms on JEE.
+title: API facturables des rapports de transaction pour AEM Forms sur JEE
+description: Liste de toutes les API prises en compte comme transactions pour AEM Forms sur JEE.
 topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# API facturables pour les rapports de transaction pour AEM Forms on JEE {#transaction-reports-billable-apis}
+# API facturables des rapports de transaction pour AEM Forms sur JEE {#transaction-reports-billable-apis}
 
-AEM Forms on JEE fournit plusieurs API pour envoyer, traiter et générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
+AEM Forms sur JEE fournit plusieurs API pour envoyer, traiter et générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
 * Conversion d’un document d’un format à un autre
 * Aplatissement d’un document PDF dynamique
 * Fusion d’un document PDF interactif avec un autre document PDF
 
-Les API de facturation ne prennent pas en compte le nombre de pages, la longueur d’un document ou d’un formulaire, ni le format final du document rendu.
+Les API de facturation ne prennent pas en compte le nombre de pages, la taille d’un document ou d’un formulaire, ni le format final du document rendu.
 <!--
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an HTML5 Form, PDF Forms are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
@@ -30,7 +30,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la longueur
 
 -->
 
-Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste des [API facturables pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste des [API facturables pour AEM Forms sur OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## API de Document Services facturables {#billable-document-services-apis}
 
@@ -45,47 +45,47 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
    <tr>
    <td><a>CreatePDF</a></td>
-   <td>Crée Adobe PDF pour les types de fichiers pris en charge.</td>
+   <td>Convertit des fichiers Adobe PDF en types de fichiers pris en charge.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>CreatePDF3</a></td>
-   <td>Crée Adobe PDF pour les types de fichiers pris en charge. </td>
+   <td>Convertit des fichiers Adobe PDF en types de fichiers pris en charge. </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Convertit le fichier HTML en Adobe PDF. </td>
+   <td>Convertit un fichier HTML en fichier Adobe PDF. </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Exporte PDF vers les types de fichiers pris en charge. </td>
+   <td>Exporte des fichiers Adobe PDF en types de fichiers pris en charge. </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF2</a></td>
-   <td><p>Exporte PDF vers les types de fichiers pris en charge.</p> </td>
+   <td><p>Exporte des fichiers Adobe PDF en types de fichiers pris en charge.</p> </td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF3</a></td>
-   <td>Exporte PDF vers les types de fichiers pris en charge.</td>
+   <td>Exporte des fichiers Adobe PDF en types de fichiers pris en charge.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>Convertit le fichier HTML en PDF.</td>
+   <td>Convertit un fichier HTML en fichier PDF.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Convertit le fichier HTML en PDF.</td>
+   <td>Convertit un fichier HTML en fichier PDF.</td>
    <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a>OptimizePDF</a></td>
-   <td>Optimise un fichier PDF pour réduire la taille du fichier en supprimant les métadonnées inutiles sans réduire la qualité.</td>
+   <td>Optimise un fichier PDF pour en réduire la taille en supprimant les métadonnées inutiles sans réduire la qualité.</td>
    <td>Conversion<br /> </td>
   </tr>
  </tbody>
@@ -101,8 +101,8 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
    <td>Catégorie de rapport de transaction</td>
   </tr>
   <tr>
-   <td><a>Sign/Certify</a><br /> </td>
-   <td>Cette API vous permet de protéger votre document. Vous pouvez utiliser l’API pour signer et certifier un document de PDF.</td>
+   <td><a>Signer/certifier</a><br /> </td>
+   <td>Cette API vous permet de protéger votre document. Vous pouvez utiliser l’API pour signer et certifier un document PDF.</td>
    <td>Conversion</td>
   </tr>
  </tbody>
@@ -181,12 +181,12 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
-   <td>Convertit les documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
+   <td>Convertit des documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents rendus</td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput2</a></td>
-   <td>Convertit les documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
+   <td>Convertit des documents XDP et PDF aux formats PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents rendus</td>
   </tr>
   <tr>
@@ -245,7 +245,7 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>Convertit un fichier de PDF plat au format SWF à l’aide des options spécifiées dans la spécification de l’option.</td>
+   <td>Convertit un fichier PDF plat au format SWF à l’aide des options spécifiées dans la spécification de l’option.</td>
    <td>Conversion de documents</td>
   </tr>
  </tbody>
@@ -279,12 +279,12 @@ Vous trouverez ci-dessous la liste des API facturables JEE. Recherchez la liste 
   </tr>
   <tr>
    <td><a>invoke</a></td>
-   <td>Exécute le document DDX spécifié et renvoie un objet AssemblerResult contenant les documents créés. </td>
+   <td>Exécute le document DDX spécifié et renvoie un objet AssemblerResult contenant les documents obtenus. </td>
    <td>Conversion de documents</td>
   </tr>
   <tr>
    <td><a>invokeDDX</a></td>
-   <td>Exécute le document DDX spécifié et renvoie un objet AssemblerResult contenant les documents créés. </td>
+   <td>Exécute le document DDX spécifié et renvoie un objet AssemblerResult contenant les documents obtenus. </td>
    <td>Conversion de documents</td>
   </tr>
   <tr>
@@ -312,8 +312,8 @@ L’utilisation de l’API d’appel est comptabilisée comme une transaction lo
 
 >[!NOTE]
 >
->* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, le `invoke API` peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
->* Un document de PDF unique produit à l’aide du service d’assemblage tel que `invoke` et `invokeDDX` peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code <!--DDX--> fourni.
+>* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, l’`invoke API` peut être comptabilisée comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
+>* Un seul document PDF produit à l’aide du service Assembler, comme `invoke` et `invokeDDX`, peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code <!--DDX--> fourni.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -388,7 +388,7 @@ L’utilisation de l’API d’appel est comptabilisée comme une transaction lo
 
 -->
 
-### Forms {#form-set}
+### Formulaires {#form-set}
 
 <table>
  <tbody>
@@ -399,43 +399,43 @@ L’utilisation de l’API d’appel est comptabilisée comme une transaction lo
   </tr>
   <tr>
    <td>exportData</td>
-   <td>Formulaire d’envoi.</td>
+   <td>Envoie un formulaire.</td>
    <td>Formulaires envoyés</td>
   </tr>
   <tr>
    <td>exportData2</td>
-   <td>Formulaire d’envoi.</td>
+   <td>Envoie un formulaire.</td>
    <td>Formulaires envoyés</td>
   </tr>
   <tr>
    <td>renderForm</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
   <tr>
    <td>renderHTMLForm</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
   <tr>
    <td>renderHTMLForm2</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
   <tr>
    <td>renderPDFForm</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
   <tr>
    <td>renderPDFForm2</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
   <tr>
    <td>renderPDFFormWithUsageRights</td>
-   <td>Formulaire d’envoi.</td>
-   <td>Forms rendu</td>
+   <td>Envoie un formulaire.</td>
+   <td>Formulaires rendus</td>
   </tr>
  </tbody>
 </table>
@@ -542,5 +542,5 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 
 ## Articles connexes
 
-* [Activation et affichage du rapport de transaction pour AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
-* [Enregistrement d’une transaction pour les API de composant personnalisées pour AEM Forms on JEE](/help/forms/using/record-transaction-custom-component-jee.md)
+* [Activation et affichage du rapport de transaction pour AEM Forms sur JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [Enregistrement d’une transaction pour les API de composant personnalisées pour AEM Forms sur OSGi](/help/forms/using/record-transaction-custom-component-jee.md)

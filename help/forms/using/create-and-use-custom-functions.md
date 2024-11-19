@@ -1,24 +1,25 @@
 ---
 title: Création et ajout de fonctions personnalisées dans un formulaire adaptatif
-description: AEM Forms prend en charge les fonctions personnalisées qui permettent aux utilisateurs de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
+description: AEM Forms prend en charge les fonctions personnalisées qui permettent aux utilisateurs et utilisatrices de créer et d’utiliser leurs propres fonctions dans l’éditeur de règles.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
-workflow-type: tm+mt
+exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
+source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
+workflow-type: ht
 source-wordcount: '1084'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
-# Fonctions personnalisées dans le Forms adaptatif
+# Fonctions personnalisées dans les formulaires adaptatifs
 
 ## Présentation
 
-AEM Forms 6.5 offre la possibilité de définir des fonctions JavaScript qui peuvent être utilisées pour définir des règles métier complexes à l’aide de l’éditeur de règles. AEM Forms fournit un certain nombre de fonctions personnalisées prêtes à l’emploi, mais vous devrez définir vos propres fonctions personnalisées et les utiliser dans plusieurs formulaires.
+AEM Forms 6.5 offre la possibilité de définir des fonctions JavaScript pouvant être utilisées pour définir des règles métier complexes à l’aide de l’éditeur de règles. AEM Forms fournit un certain nombre de fonctions personnalisées prêtes à l’emploi, mais vous devrez définir vos propres fonctions personnalisées et les utiliser dans plusieurs formulaires.
 
-Les fonctions personnalisées étendent les capacités des formulaires en facilitant la manipulation et le traitement des données saisies pour répondre aux exigences spécifiées. Ils permettent également une modification dynamique du comportement du formulaire en fonction de critères prédéfinis.
-Dans le Forms adaptatif, vous pouvez utiliser des fonctions personnalisées dans l’ [éditeur de règles d’un formulaire adaptatif](/help/forms/using/rule-editor.md) pour créer des règles de validation spécifiques pour les champs de formulaire.
-Comprenons l’utilisation de la fonction personnalisée dans laquelle les utilisateurs saisissent l’adresse électronique et vous souhaitez vous assurer que l’adresse électronique saisie respecte un format spécifique (elle contient un symbole &quot;@&quot; et un nom de domaine). Créez une fonction personnalisée &quot;ValidateEmail&quot; qui prend l’adresse email en entrée et renvoie true si elle est valide et false dans le cas contraire.
+Les fonctions personnalisées étendent les capacités des formulaires en facilitant la manipulation et le traitement des données saisies pour répondre aux exigences spécifiées. Elles permettent également une modification dynamique du comportement du formulaire en fonction de critères prédéfinis.
+Dans les formulaires adaptatifs, vous pouvez utiliser des fonctions personnalisées dans l’[éditeur de règles](/help/forms/using/rule-editor.md) pour créer des règles de validation spécifiques pour les champs de formulaire.
+Analysons l’utilisation de la fonction personnalisée dans laquelle les utilisateurs et utilisatrices saisissent l’adresse e-mail. Vous souhaitez vous assurer que l’adresse e-mail saisie respecte un format spécifique (elle contient un symbole « @ » et un nom de domaine). Créez une fonction personnalisée « ValidateEmail » qui prend l’adresse e-mail en entrée et renvoie true si elle est valide et false dans le cas contraire.
 
 ```javascript
 function ValidateEmail(inputText)
@@ -37,20 +38,20 @@ function ValidateEmail(inputText)
 }
 ```
 
-Dans l’exemple ci-dessus, lorsque l’utilisateur tente d’envoyer le formulaire, la fonction personnalisée &quot;ValidateEmail&quot; est appelée pour vérifier si l’adresse électronique saisie est valide.
+Dans l’exemple ci-dessus, lorsque la personne tente d’envoyer le formulaire, la fonction personnalisée « ValidateEmail » est appelée pour vérifier si l’adresse e-mail saisie est valide.
 
-## Utilisation de fonctions personnalisées {#uses-of-custom-function}
+## Utilisations des fonctions personnalisées {#uses-of-custom-function}
 
-Les avantages des fonctions personnalisées dans les Forms adaptatives sont les suivants :
+Les avantages des fonctions personnalisées dans les formulaires adaptatifs sont les suivants :
 
-* **Manipulation des données** : les fonctions personnalisées manipulent et traitent les données saisies dans les champs de formulaires.
-* **Validation des données** : les fonctions personnalisées vous permettent d’effectuer des vérifications personnalisées sur les entrées de formulaire et de fournir des messages d’erreur spécifiés.
-* **Comportement dynamique** : les fonctions personnalisées vous permettent de contrôler le comportement dynamique de vos formulaires en fonction de conditions spécifiques. Vous pouvez, par exemple, afficher/masquer des champs, modifier les valeurs de champ ou ajuster dynamiquement la logique du formulaire.
-* **Intégration** : vous pouvez utiliser des fonctions personnalisées pour intégrer des API ou des services externes. Il permet de récupérer des données provenant de sources externes, d’envoyer des données à des points de terminaison Rest externes ou d’effectuer des actions personnalisées basées sur des événements externes.
+* **Manipulation des données** : les fonctions personnalisées manipulent et traitent les données saisies dans les champs de formulaires.
+* **Validation des données** : les fonctions personnalisées vous permettent d’effectuer des vérifications personnalisées sur les entrées de formulaire et de fournir des messages d’erreur spécifiés.
+* **Comportement dynamique** : les fonctions personnalisées vous permettent de contrôler le comportement dynamique de vos formulaires en fonction de conditions spécifiques. Vous pouvez, par exemple, afficher/masquer des champs, modifier les valeurs de champ ou ajuster dynamiquement la logique du formulaire.
+* **Intégration** : vous pouvez utiliser des fonctions personnalisées pour intégrer des API ou des services externes. Cela permet de récupérer des données provenant de sources externes, d’envoyer des données à des points d’entrée Rest externes ou d’effectuer des actions personnalisées basées sur des événements externes.
 
 ## Annotations JS prises en charge
 
-Assurez-vous que la fonction personnalisée que vous écrivez est accompagnée de la fonction `jsdoc` ci-dessus, au cas où vous auriez besoin d’une configuration et d’une description personnalisées. Il existe plusieurs façons de déclarer une fonction dans `JavaScript,` et les commentaires vous permettent de conserver une trace des fonctions. Pour plus d’informations, voir [usejsdoc.org](https://jsdoc.app/).
+Assurez-vous que la fonction personnalisée que vous écrivez est accompagnée de la fonction `jsdoc` ci-dessus, au cas où vous auriez besoin d’une configuration et d’une description personnalisées. Il existe plusieurs façons de déclarer une fonction dans `JavaScript,` et les commentaires permettent de conserver une trace des fonctions. Pour plus d’informations, voir [usejsdoc.org](https://jsdoc.app/).
 
 Balises `jsdoc` prises en charge :
 
@@ -180,9 +181,9 @@ var c = {
 };
 ```
 
-## Créer une fonction personnalisée {#create-custom-function}
+## Création d’une fonction personnalisée {#create-custom-function}
 
-Pour créer une fonction personnalisée, procédez comme suit :
+Pour créer une fonction personnalisée, procédez comme suit :
 
 1. Connectez-vous à `http://server:port/crx/de/index.jsp#`.
 1. Créez un dossier sous le dossier `/apps`. Par exemple, créez un dossier nommé `experience-league`.
@@ -240,7 +241,7 @@ Ajoutons le code suivant au fichier JavaScript pour calculer l’âge en fonctio
 
 1. Enregistrez le fichier `js.txt`.
 
-Vous pouvez vous référer au dossier [custom function](/help/forms/using/assets/customfunction.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM.
+Vous pouvez vous référer au dossier [fonction personnalisée](/help/forms/using/assets/customfunction.zip) suivant. Téléchargez et installez ce dossier dans votre instance AEM.
 
 Désormais, vous pouvez utiliser la fonction personnalisée dans votre formulaire adaptatif en ajoutant la bibliothèque cliente.
 
@@ -248,17 +249,17 @@ Désormais, vous pouvez utiliser la fonction personnalisée dans votre formulair
 
 Une fois que vous avez déployé votre bibliothèque cliente dans votre environnement Forms CS, utilisez ses fonctionnalités dans votre formulaire adaptatif. Pour ajouter la bibliothèque cliente dans votre formulaire adaptatif
 
-1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire et choisissez **[!UICONTROL Modifier]**.
+1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez-le et cliquez sur **[!UICONTROL Ouvrir]**.
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône Propriétés du conteneur de guide . La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
-1. Ouvrez l’onglet **[!UICONTROL Basic]** et sélectionnez le nom de la **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
+1. Cliquez sur l’icône des propriétés du conteneur de guide. La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
+1. Ouvrez l’onglet **[!UICONTROL De base]** et sélectionnez le nom de la **[!UICONTROL catégorie de bibliothèque cliente]** dans la liste déroulante (dans ce cas, sélectionnez `customfunctionscategory`).
 
-   ![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/custom-function-category-name-core-component.png)
+   ![Ajout de la bibliothèque cliente de fonctions personnalisées](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
-1. Cliquez sur **[!UICONTROL Terminé]** .
+1. Cliquez sur **[!UICONTROL Terminé]**.
 
-Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalisées dans l’éditeur de règles :
+Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalisées dans l’éditeur de règles :
 
-![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/calculateage-customfunction.png)
+![Ajout de la bibliothèque cliente de fonctions personnalisées](/help/forms/using//assets/calculateage-customfunction.png)
 
-Maintenant, comprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms](/help//forms/using/rule-editor.md).
+Maintenant, apprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service Invoke de l’éditeur de règles dans AEM Forms](/help//forms/using/rule-editor.md).
