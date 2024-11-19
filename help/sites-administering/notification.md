@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
-workflow-type: ht
-source-wordcount: '2141'
-ht-degree: 100%
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+workflow-type: tm+mt
+source-wordcount: '2149'
+ht-degree: 98%
 
 ---
 
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de page :
 
-1. Dans CRXDE, ouvrez le fichier :
+1. Créer une superposition pour les [notifications de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. Ouvrez le fichier :
+
+   `en.txt`
 
 1. Modifiez le fichier selon vos besoins.
 1. Enregistrez les modifications.
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 Pour personnaliser le modèle d’e-mail en anglais en vue de la notification d’événement de workflow :
 
-1. Dans CRXDE, ouvrez le fichier :
+1. Créer une superposition pour les [notifications de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. Ouvrez le fichier :
+
+   `en.txt`
 
 1. Modifiez le fichier selon vos besoins.
 1. Enregistrez les modifications.
@@ -239,11 +243,12 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 Pour ajouter un modèle pour une nouvelle langue :
 
-1. Dans CRXDE, ajoutez un fichier `<language-code>.txt` ci-dessous :
+1. Créez une [superposition](/help/sites-developing/overlays.md) selon les besoins.
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : pour les notifications de page
-   * `/libs/settings/workflow/notification/email/default` : pour les notifications de workflow
+   * [Notifications de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [Notifications de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. Ajoutez un fichier `<language-code>.txt`.
 1. Adaptez le fichier à la langue.
 1. Enregistrez les modifications.
 
