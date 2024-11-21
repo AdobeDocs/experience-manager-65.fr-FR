@@ -473,11 +473,11 @@ ht-degree: 99%
       + [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variations – création de contenu de fragment](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenu associé à un fragment de contenu](/help/assets/content-fragments/content-fragments-assoc-content.md)
-      + [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
+      + [Métadonnées – Propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
       + [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments/content-fragments-delete.md)
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
-      + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+      + [Prévisualisation – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
       + [Création de projets de traduction pour des fragments de contenu](/help/assets/creating-translation-projects-for-content-fragments.md)
    + Gestion des ressources {#managing}
       + [Gestion des ressources numériques](/help/assets/manage-assets.md)
