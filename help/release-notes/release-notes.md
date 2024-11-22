@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 38271b27134afa2b350c6595cf0bdc335f110be3
+source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
 workflow-type: tm+mt
-source-wordcount: '5027'
-ht-degree: 96%
+source-wordcount: '4733'
+ht-degree: 97%
 
 ---
 
@@ -50,21 +50,6 @@ Les fonctionnalités et améliorations clés de cette version sont les suivantes
 ### [!DNL Assets]
 
 L’onglet IPTC prend désormais en charge les champs de texte [!UICONTROL Texte de remplacement] et [!UICONTROL Description étendue]. (ASSETS-34918)
-
-### [!DNL Forms]
-
-* **Prise en charge des informations d’identification OAuth** : informations d’identification nouvelles et plus faciles à utiliser pour l’authentification serveur à serveur, en remplaçant les informations d’identification du compte de service (JWT) existantes. (NPR-41994)
-* [Améliorations de l’éditeur de règles dans AEM Forms](/help/forms/using/rule-editor-core-components.md) :
-   * Prise en charge de l’implémentation de conditions imbriquées avec la fonctionnalité `When-then-else`.
-   * Validez ou réinitialisez les panneaux et les formulaires, y compris les champs.
-   * Prise en charge des fonctionnalités JavaScript modernes telles que les fonctions let et arrow (prise en charge d’ES10) dans les fonctions personnalisées.
-* [API AutoTag pour l’accessibilité du PDF](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services) : AEM Forms sur OSGi prend désormais en charge la nouvelle API AutoTag afin d’améliorer le PDF pour les normes d’accessibilité en ajoutant des balises, des paragraphes et des listes. Cela rend les PDF plus accessibles pour les utilisateurs et utilisatrices dotés de technologie d’assistance.
-* **Prise en charge de PNG 16 bits** : le service ImageToPdf du PDF Generator prend désormais en charge la conversion des PNG avec une profondeur de la couleur de 16 bits.
-* **Appliquer des artefacts à des blocs de texte individuels dans des fichiers XDP** : Forms Designer permet désormais aux utilisateurs et utilisatrices de configurer des paramètres sur des blocs de texte individuels dans des fichiers XDP. Cette fonctionnalité vous permet de contrôler les éléments traités comme des artefacts dans les PDF résultants. Ces éléments, tels que les en-têtes et les pieds de page, sont rendus accessibles aux technologies d’assistance. Les principales fonctionnalités incluent le marquage des blocs de texte en tant qu’artefacts et l’incorporation de ces paramètres dans les métadonnées XDP. Le service Forms Output applique ces paramètres lors de la génération du PDF, en assurant un balisage PDF/UA approprié.
-* **AEM Forms Designer est certifié par la norme `GB18030:2022`** : grâce à la certification `GB18030:2022`, Forms Designer prend désormais en charge les jeux de caractères Unicode chinois permettant de saisir des caractères chinois dans tous les champs et boîtes de dialogue modifiables.
-* Le service de PDF Generator sur le serveur JEE [ prend désormais en charge l’itinéraire WebToPDF ](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings) pour convertir l’HTML en PDF, avec les itinéraires WebKit et WebCapture Windows existants. Notons que l’itinéraire WebToPDF est déjà disponible sur OSGi et étendu à JEE. À présent, sur les plateformes JEE et OSGi, le service PDF Generator prend en charge les itinéraires suivants sur différents systèmes d’exploitation :
-   * **Windows** : WebKit, WebCapture, WebToPDF
-   * **Linux®** : WebKit, WebToPDF
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
