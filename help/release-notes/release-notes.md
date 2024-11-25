@@ -45,7 +45,7 @@ Les fonctionnalités et améliorations clés de cette version sont les suivantes
 
 ### Sites {#sites}
 
-[L’éditeur universel](/help/sites-developing/universal-editor/introduction.md) est désormais disponible sur AEM 6.5 pour les cas d’utilisation sans interface avec l’application d’un Feature Pack.
+[L’éditeur universel](/help/sites-developing/universal-editor/introduction.md) est désormais disponible sur AEM 6.5 pour les cas d’utilisation découplés avec l’application d’un pack de fonctionnalités.
 
 ### [!DNL Assets]
 
