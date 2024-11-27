@@ -6,9 +6,9 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2098'
+ht-degree: 100%
 
 ---
 
@@ -38,13 +38,13 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 
 **Nouveaux utilisateurs et nouvelles utilisatrices**
 
-Installez le pack de services 22. Pour prendre en charge l’intégration OAuth sur le pack de services 22, vous devez installer le [correctif pour le pack de services 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
+Installez le pack de services 22. Pour prendre en charge l’intégration OAuth sur le pack de services 22, vous devez installer le [correctif pour le pack de services 22](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
-Suivez les instructions mentionnées dans cet article pour configurer les services de contenu intelligent.
+Suivez les instructions mentionnées dans cet article pour configurer les services de contenu dynamique.
 
 **Utilisateurs et utilisatrices existants**
 
-Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour le Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services. Si vous effectuez une mise à niveau vers le Service Pack 22, vous devez installer ce [correctif pour le Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
+Si vous avez effectué la mise à niveau vers le pack de services 21, installez le [correctif pour le pack de services 21](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration OAuth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer les services de contenu dynamique. Si vous effectuez une mise à niveau vers le pack de services 22, vous devez installer ce [correctif pour le pack de services 22](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
@@ -58,7 +58,7 @@ Les services de contenu intelligent ne sont plus disponibles pour les nouveaux u
 
 Les utilisateurs et utilisatrices On-Premise existants, pour qui cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu intelligent.
 
-Si vous avez effectué la mise à niveau vers le Service Pack 21, installez le [correctif pour le Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration Oauth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer Smart Content Services. Si vous effectuez une mise à niveau vers le Service Pack 22, vous devez installer ce [correctif pour le Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
+Si vous avez effectué la mise à niveau vers le pack de services 21, installez le [correctif pour le pack de services 21](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) pour prendre en charge l’intégration OAuth. Toute configuration existante est automatiquement supprimée. Suivez les instructions mentionnées dans cet article pour configurer les services de contenu dynamique. Si vous effectuez une mise à niveau vers le pack de services 22, vous devez installer ce [correctif pour le pack de services 22](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip).
 
 Pour le pack de services 20 et les versions antérieures, vous devez exécuter les étapes de contournement pour que SCS prenne en charge l’intégration OAuth. Consultez la section [Dépannage des balises intelligentes pour les informations d’identification OAuth](config-oauth.md).
 
