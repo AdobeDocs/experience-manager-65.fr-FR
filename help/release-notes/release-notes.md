@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4733'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 97%
 | Version | 6.5.22.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
 | Date | Jeudi 21 novembre 2024 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.22.0 {#what-is-included-in-aem-6522}
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## Principales fonctionnalités et améliorations
 
-Les fonctionnalités et améliorations clés de cette version sont les suivantes :
+Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -140,7 +140,7 @@ Lors de l’utilisation de fragments de contenu avec des éléments de champ de 
 
 * Les fragments d’expérience ne sont pas triés par titre comme prévu lorsque la personne clique sur l’en-tête de colonne **Titre** en mode Liste. Un scintillement rapide de l’écran est observé, mais le tri n’est pas effectué. (SITES-23706)
 
-* Dans AEM 6.5.17, un problème se produisait lors de la conversion d’un composant de page en fragment d’expérience à l’aide de la fonctionnalité prête à l’emploi. Après la conversion, le fragment d’expérience s’affichait vide lors de la modification, même s’il s’affichait correctement sur la page sur laquelle il était utilisé. Le problème provenait d’une création de noeud incorrecte : le noeud de composant était placé en dehors du noeud racine/conteneur, ce qui violait la structure du modèle. Vous deviez déplacer manuellement le noeud de composant dans le noeud racine/conteneur approprié pour restaurer l’éditabilité du fragment. (SITES-22974)
+* Dans AEM 6.5.17, un problème se produisait lors de la conversion d’un composant de page en fragment d’expérience à l’aide de la fonctionnalité prête à l’emploi. Après la conversion, le fragment d’expérience s’affichait vide lors de la modification, même s’il s’affichait correctement sur la page sur laquelle il était utilisé. Le problème provenait d’une création de nœud incorrecte : le nœud de composant était placé en dehors du nœud racine/conteneur, ce qui violait la structure du modèle. Il fallait déplacer manuellement le nœud de composant dans le nœud racine/conteneur approprié pour rétablir la possibilité de modifier le fragment. (SITES-22974)
 
 * Après la migration d’AEM 6.5.11 vers 6.5.20, les configurations cloud sur les fragments d’expérience n’étaient pas correctement enregistrées. Bien que les configurations semblent s’enregistrer dans `crx/de`, elles ne s’affichaient pas lors de la réouverture de la console de configurations, indiquant un problème de persistance. (SITES-22287)
 
@@ -174,17 +174,17 @@ L’authentification de LinkCheckerTask échoue, car le client HTTP tente NTLM a
 
 #### Réplication{#sites-replication-6522}
 
-Dans AEM 6.5.18 et 6.5.19, lors de la désactivation d’une page parent, plusieurs demandes de désactivation étaient générées pour chaque page enfant. Ce problème interrompait également l’annulation de la publication en masse des points d’entrée GraphQL. (NPR-42075 &amp; NPR42010)
+Dans AEM 6.5.18 et 6.5.19, lors de la désactivation d’une page parent, plusieurs demandes de désactivation étaient générées pour chaque page enfant. Ce problème interrompait également l’annulation de la publication en masse des points d’entrée GraphQL. (NPR-42075 &amp; NPR-42010)
 
 
 ### [!DNL Assets]{#assets-6522}
 
 * Lors de l’utilisation de la fonctionnalité de ressources connectées, les mises à jour effectuées dans AEM Assets ne sont pas répercutées dans l’environnement AEM Sites. (ASSETS-42344)
-* Problèmes liés à l’état de publication des ressources lorsque vous déplacez des ressources d’un emplacement à un autre dans Experience Manager. (ASSETS-41158)
+* Problèmes liés au statut de publication des ressources lorsque vous déplacez des ressources d’un emplacement à un autre dans Experience Manager. (ASSETS-41158)
 * Le chargement de ressources à l’aide de l’API entraîne l’affichage d’un message d’erreur `unclosed resource resolver`. (ASSETS-41049)
-* Problèmes avec la requête de référence `AssetReferenceResolverImpl` après la mise à niveau vers Adobe Experience Manager Service Pack 21. (ASSETS-40384)
+* Problèmes avec la requête de référence `AssetReferenceResolverImpl` après la mise à niveau vers le pack de services 21 d’Adobe Experience Manager. (ASSETS-40384)
 * Dans AEM version 6.5.19, si vous supprimez une option des résultats du panneau de recherche, toutes les autres cases à cocher disponibles sont également décochées. (ASSETS-37335)
-* Les valeurs indésirables s’affichent dans la sortie Excel lors de l’opération d’export des métadonnées en bloc. (ASSETS-37260)
+* Les valeurs indésirables s’affichent dans la sortie Excel lors de l’opération d’export des métadonnées en masse. (ASSETS-37260)
 * Dans AEM version 6.5.19, lorsque vous téléchargez un fichier SVG au format UTF-8, la sortie est floue. (ASSETS-36616)
 * L’option `Fetch original rendition for Dynamic Media Connected Assets` est manquante dans la configuration des ressources connectées. (ASSETS-41726)
 * Les propriétés de la ressource sont enregistrées, même si vous ne définissez pas de valeur pour les champs obligatoires. (ASSETS-37914)
@@ -320,7 +320,7 @@ Dans ![Icône Marteau](https://spectrum.adobe.com/static/icons/workflow_18/Smock
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.22.0 nécessite [!DNL Experience Manager] 6.5. Consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
-* Le téléchargement du pack de services est disponible sur la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip) d’Adobe.
+* Le téléchargement du pack de services est disponible sur la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip) d’Adobe.
 * Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.22.0 sur l’une des instances de création à l’aide du gestionnaire de packages.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -335,7 +335,7 @@ Dans ![Icône Marteau](https://spectrum.adobe.com/static/icons/workflow_18/Smock
 
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.22.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Ouvrez le gestionnaire de modules et cliquez sur **[!UICONTROL Charger le module]** pour charger le module. Pour en savoir plus, consultez la section [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
@@ -511,7 +511,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 ### Problèmes connus pour AEM Sites {#known-issues-aem-sites-6522}
 
-* L’aperçu des fragments de contenu échoue en raison de la protection DoS pour une grande arborescence de fragments. Voir l’[article de la base de connaissances sur les options de configuration par défaut de l’exécuteur de requêtes GraphQL](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934).
+* Fragments de contenu : la prévisualisation échoue en raison de la protection DoS pour une arborescence de fragments volumineuse. Voir l’[article de la base de connaissances sur les options de configuration par défaut de l’exécuteur de requêtes GraphQL](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934).
 
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6522}
