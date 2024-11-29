@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
-workflow-type: ht
-source-wordcount: '7454'
-ht-degree: 100%
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
+workflow-type: tm+mt
+source-wordcount: '7477'
+ht-degree: 99%
 
 ---
 
@@ -624,6 +624,8 @@ ht-degree: 100%
       + [Éditeur de règles](/help/forms/using/rule-editor-core-components.md)
       + [Créer et utiliser une fonction personnalisée dans les composants principaux d’un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/using/add-versioning-reviews-comments.md)
+      + [Comparer des formulaires adaptatifs](/help/forms/using/compare-forms-core-components.md)
    + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
       + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
       + [Création d’un formulaire adaptatif](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 100%
       + [Fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md)
       + [Configuration de l’action d’envoi](/help/forms/using/configuring-submit-actions.md)
       + [Utilisation de CAPTCHA dans les formulaires adaptifs](/help/forms/using/captcha-adaptive-forms.md)
+      + [Utilisation du captcha dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Utilisation du captcha Turnstile dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Mots-clés de formulaires adaptatifs](/help/forms/using/adaptive-forms-keywords.md)
       + [Tableaux dans les formulaires adaptatifs](/help/forms/using/adaptive-forms-tables.md)
       + [Graphiques dans les formulaires adaptatifs](/help/forms/using/adaptive-form-charts.md)

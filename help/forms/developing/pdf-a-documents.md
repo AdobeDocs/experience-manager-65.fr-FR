@@ -9,10 +9,10 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 100%
+source-wordcount: '2347'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,8 @@ Vous pouvez utiliser le service DocConverter pour convertir un document PDF en d
 La spécification PDF/A-1 se compose de deux niveaux de conformité, à savoir A et B. La principale différence entre les deux concerne la prise en charge de la structure logique (accessibilité), qui n’est pas requise pour le niveau de conformité B. Quel que soit le niveau de conformité, PDF/A-1 exige que toutes les polices soient incorporées dans le document PDF/A généré. Actuellement, seul le format PDF/A-1b est pris en charge dans la validation (et la conversion).
 
 Bien que PDF/A soit le standard d’archivage des documents PDF, il n’est pas obligatoire que PDF/A soit utilisé pour l’archivage si un document PDF standard répond aux exigences de votre entreprise. Le but du standard PDF/A est d’établir un fichier PDF destiné à l’archivage à long terme et à la conservation des documents.
+
+Les normes de conformité PDF/A prises en charge sont les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
 
 >[!NOTE]
 >

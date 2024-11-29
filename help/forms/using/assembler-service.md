@@ -9,10 +9,10 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2118'
-ht-degree: 100%
+source-wordcount: '2159'
+ht-degree: 98%
 
 ---
 
@@ -204,6 +204,22 @@ fragment="myFragment"/>
 </DDX>
 ```
 
+#### Résolution des références sur le référentiel CRX {#resolve-references-on-crx-repository}
+
+Vous pouvez spécifier de manière sélective la référence source à résoudre en indiquant le chemin crx de la propriété
+référence au fragment dans la source XDP. Dans l’exemple ci-dessous, les fragments inclus sont également
+résolus.
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
+
 #### Résoudre de manière sélective les références absolues ou relatives {#selectively-resolve-absolute-or-relative-references}
 
 Vous pouvez résoudre de manière sélective les références absolues ou relatives dans tous les documents source ou seulement une partie d’entre eux, comme illustré dans l’exemple ci-dessous :
@@ -345,4 +361,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos workflows. (Voir également
+L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos workflows. (Voir aussi)
