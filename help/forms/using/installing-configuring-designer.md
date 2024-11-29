@@ -10,7 +10,7 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
+source-git-commit: 89f807e1d31c5588d86e50160b0149e00422b78c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 97%
@@ -124,3 +124,4 @@ Si vous utilisez un programme d’installation autonome pour AEM Forms Designe
       1. Ouvrez Designer, accédez à l’aide, cliquez sur À propos de Designer et vous verrez les informations sur la version de Designer ainsi que les informations sur les bits. Par exemple, vous voyez qu’il est écrit 64 bits en bas de la version comme indiqué ici :
          `6.5.21.20240522.1.161 | 64 bit`
       1. Ouvrez Designer, une icône de marque s’affiche en haut à gauche et contient des informations 64 bits avec le nom du produit.
+
