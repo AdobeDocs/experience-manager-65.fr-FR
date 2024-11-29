@@ -1,14 +1,14 @@
 ---
-title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
+title: 'Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager] '
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6070'
+source-wordcount: '6089'
 ht-degree: 78%
 
 ---
@@ -59,7 +59,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * [Améliorations de la conformité PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) : désormais les utilisateurs peuvent convertir des PDF aux formats PDF/A (1a, 2a, 3a) à des fins d’archivage tout en assurant l’accessibilité et en vérifiant la conformité avec ces normes.
 
-* **Prise en charge du dimensionnement automatique des polices pour les documents de PDF statique** : AEM Forms Designer prend désormais en charge les fonctions de dimensionnement automatique dans les fichiers .xdp. Désormais, les utilisateurs peuvent spécifier le dimensionnement automatique pour les champs de texte, les champs numériques, les champs de mot de passe et les champs de date et heure dans les fichiers XDP afin d’effectuer le rendu du contenu du champ de texte sans tronquer le contenu de ces champs dans des documents de PDF statiques.
+* **Prise en charge du dimensionnement automatique des polices pour les documents de PDF statique** : AEM Forms Designer, OutputService et FormsService prennent désormais en charge le dimensionnement automatique des polices pour le PDF statique. Si l’utilisateur mentionne la taille de police 0 dans le modèle pour des champs tels que le champ de texte, le champ numérique, le champ de mot de passe ou le champ de date et heure, la taille de police s’ajuste automatiquement à l’intérieur de ces champs sans modification de la taille du champ lui-même. Pour utiliser la fonctionnalité, les utilisateurs transmettent un indicateur dans le xci personnalisé : `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Formulaires {#forms-bug-fixes-sp22}
+### Formulaires {#forms-bug-fixes-sp22}
 
 * Les URL générées pour les pièces jointes dans les brouillons enregistrés dans AEM Forms ne reflètent pas les mappages Apache Sling Resource Resolver Factory configurés. (FORMS-16949)
 * Lorsqu’un utilisateur du Service Pack 19 AEM Forms (6.5.19.0) prévisualise une lettre, le contenu ne s’aligne pas correctement, car les espaces apparaissent manquants et le caractère &quot;&#39;x&quot; apparaît à certains emplacements. (FORMS-16670)
