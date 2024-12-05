@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
 source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6448'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -5065,15 +5065,15 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 #### Baliser automatiquement des documents PDF {#auto-tag-api}
 
-L’API du PDF de balises automatiques améliore l’accessibilité du PDF en ajoutant des balises aux documents, en assurant la conformité aux normes d’accessibilité. Cela permet non seulement d’améliorer l’expérience utilisateur, mais également de maintenir la précision et la cohérence entre les documents. L’API de balisage automatique prend en charge le balisage des éléments suivants :
+L’API de balisage automatique des documents PDF améliore l’accessibilité des fichiers PDF en ajoutant des balises aux documents, en assurant la conformité aux normes d’accessibilité. Cela permet non seulement d’améliorer l’expérience des utilisateurs et utilisatrices, mais également de maintenir la précision et la cohérence entre les documents. L’API de balisage automatique prend en charge le balisage des éléments suivants :
 
 * Blocs de texte (paragraphes)
 * Listes à puces dans un opérateur
-* Table des matières (table des matières)
+* Table des matières
 
 ![Document PDF balisé automatiquement](assets/auto-tag-api.png)
 
-L’exemple de code Java suivant montre comment convertir un fichier de PDF en document de PDF balisé.
+L’exemple de code Java suivant montre comment convertir un fichier PDF en document PDF balisé.
 
 **Syntaxe** : `Document tag(final Document inDoc)`
 

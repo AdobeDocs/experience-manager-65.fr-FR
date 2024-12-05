@@ -10,9 +10,9 @@ exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -204,10 +204,9 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Résolution des références sur le référentiel CRX {#resolve-references-on-crx-repository}
+#### Résoudre des références sur le référentiel CRX {#resolve-references-on-crx-repository}
 
-Vous pouvez spécifier de manière sélective la référence source à résoudre en indiquant le chemin crx de la propriété
-référence au fragment dans la source XDP. Dans l’exemple ci-dessous, les fragments inclus sont également
+Vous pouvez spécifier de manière sélective la référence source à résoudre en indiquant le chemin crx de la référence de fragment dans la source XDP. Dans l’exemple ci-dessous, les fragments inclus sont également
 résolus.
 
 ```xml
@@ -361,4 +360,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos workflows. (Voir aussi)
+L’utilisation du DDX et du service Assembler pour appeler d’autres services LiveCycle peut simplifier le diagramme de procédure. Il peut également réduire l’effort de personnalisation de vos workflows. (Voir également)

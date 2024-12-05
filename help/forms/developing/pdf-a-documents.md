@@ -10,9 +10,9 @@ exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2347'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ La spécification PDF/A-1 se compose de deux niveaux de conformité, à savoir A
 
 Bien que PDF/A soit le standard d’archivage des documents PDF, il n’est pas obligatoire que PDF/A soit utilisé pour l’archivage si un document PDF standard répond aux exigences de votre entreprise. Le but du standard PDF/A est d’établir un fichier PDF destiné à l’archivage à long terme et à la conservation des documents.
 
-Les normes de conformité PDF/A prises en charge sont les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
+Les normes de conformité PDF/A prises en charge comprennent les suivantes : PDF/A-1a, 1b, 2a, 2b, 3a et 3b.
 
 >[!NOTE]
 >
