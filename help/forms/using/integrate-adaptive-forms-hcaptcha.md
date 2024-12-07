@@ -3,22 +3,19 @@ title: Comment utiliser Captcha&reg; dans un Forms AEM 6.5 ?
 description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha®. Guide détaillé inclus.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 21%
+source-wordcount: '846'
+ht-degree: 23%
 
 ---
 
 # Connexion de votre environnement AEM Forms avec Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Cette fonctionnalité est fournie dans le cadre du programme d’adoption précoce. Si vous souhaitez participer à notre programme d&#39;accès anticipé pour cette fonctionnalité, envoyez un email depuis votre adresse officielle à aem-forms-ea@adobe.com pour demander l&#39;accès à </span>.
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -115,4 +112,4 @@ Désormais, seuls les formulaires légitimes dans lesquels l’utilisateur réus
 ## Voir également {#see-also}
 
 * [Utiliser de CAPTCHA dans les formulaires adaptifs](/help/forms/using/captcha-adaptive-forms.md)
-* [Utilisation du captcha Turnstile dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-turnstile.md)
+* [Utilisation de Captcha Turnstile dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-turnstile.md)
