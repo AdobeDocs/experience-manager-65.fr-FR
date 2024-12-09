@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2125'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Pour créer une configuration cloud Target dans AEM, procédez come suit :
    1. Donnez un **titre** à la configuration.
    1. Sélectionnez le modèle **Configuration d’Adobe Target**.
 
-      ![Configuration Adobe Target](assets/adobe-target-create-configuration.png)
+      ![Configuration d’Adobe Target](assets/adobe-target-create-configuration.png)
 
 1. Cliquez sur **Créer**.
 
