@@ -3,19 +3,17 @@ title: Comment utiliser Captcha&reg; dans un Forms AEM 6.5 ?
 description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha®. Guide détaillé inclus.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 25dfe85048184e34cc3afb5e7b08cc0e2f054a01
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 23%
+source-wordcount: '864'
+ht-degree: 24%
 
 ---
 
 # Connexion de votre environnement AEM Forms avec Captcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Cette fonctionnalité est basée sur l’identifiant de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonctionnalité, suivez les étapes décrites dans l’article [Activer le basculement de fonction](/help/forms/using/enable-feature-toggle.md) . </span>
+
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -82,7 +80,7 @@ Pour intégrer AEM Forms avec le service Captcha®, procédez comme suit :
    ![Sélectionner Conteneur de configuration](/help/forms/using/assets/captcha-properties.png)
 
 1. Sélectionnez un formulaire adaptatif et cliquez sur **[!UICONTROL Modifier]** pour ouvrir le formulaire dans l’éditeur.
-1. A partir de l’explorateur de composants, faites glisser et ajoutez le composant **[!UICONTROL Captcha de formulaire adaptatif®]** sur le formulaire adaptatif.
+1. À partir du navigateur de composant, faites glisser et déposez le composant **[!UICONTROL Captcha]** sur le formulaire adaptatif.
 1. Sélectionnez le composant **[!UICONTROL Captcha de formulaire adaptatif®]** et cliquez sur Propriétés ![Icône Propriétés](assets/configure-icon.svg) pour ouvrir la boîte de dialogue Propriétés. Spécifiez les propriétés suivantes :
 
    ![Captcha® v1](assets/config-hcaptcha-v1-img.png)
