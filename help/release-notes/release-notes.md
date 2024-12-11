@@ -9,7 +9,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 64bc2ecbb2b5ef5847af4449562240a7c1ec45e9
 workflow-type: tm+mt
 source-wordcount: '6146'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -256,13 +256,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * Amélioration du traitement de mise à niveau LC afin d’améliorer le processus de mise à niveau tout en assurant une transition stable entre les versions.
    * Amélioration de la tâche de Rights Management pour sécuriser la gestion des documents et améliorer les fonctionnalités de Rights Management.
    * Amélioration du traitement de gestion des processus pour un traitement des tâches et une gestion du système plus fiables.
-* À compter de la version 6.5.2 d’AEM Forms OSGi, l’opération renderPDFForm du service Forms n’exécutera pas les scripts client uniquement (runAt=client) sur le serveur. Seuls les scripts marqués runAt=server ou runAt=both seront exécutés comme décrit dans le tableau ci-dessous. (FORMS-16564)
+* À compter de la version 6.5.22 d’AEM Forms OSGi, l’opération renderPDFForm du service Forms n’exécutera plus les scripts client uniquement (runAt=client) sur le serveur. Seuls les scripts marqués runAt=server ou runAt=both seront exécutés comme décrit dans le tableau ci-dessous. (FORMS-16564)
 
   | Script marqué runAt | Exécuté sur le serveur |
   |---------------------|-------------------------|
-  | serveur | Oui |
-  | both | Oui |
-  | client | Non |
+  | Serveur | Oui |
+  | Les deux | Oui |
+  | Client | Non |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
