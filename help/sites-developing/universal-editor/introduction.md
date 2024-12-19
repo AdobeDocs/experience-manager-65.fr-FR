@@ -1,12 +1,12 @@
 ---
 title: Éditeur universel
-description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à optimiser vos expériences sans tête à l’aide d’AEM 6.5.
+description: Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5.
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
@@ -14,103 +14,103 @@ ht-degree: 1%
 
 # Éditeur universel {#universal-editor}
 
-Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à optimiser vos expériences sans tête à l’aide d’AEM 6.5.
+Découvrez la flexibilité de l’éditeur universel et comment il peut vous aider à alimenter vos expériences découplées à l’aide d’AEM 6.5.
 
 ## Vue d’ensemble {#overview}
 
-Universal Editor est un éditeur visuel polyvalent qui fait partie d’Adobe Experience Manager Sites. Il permet aux auteurs de faire la modification WYSIWYG de n’importe quelle expérience sans tête.
+L’éditeur universel est un éditeur visuel polyvalent qui fait partie d’Adobe Experience Manager Sites. Il permet aux auteurs d’effectuer une modification ce que vous voyez est ce que vous obtenez (WYSIWYG) de n’importe quelle expérience découplée.
 
-* Les auteurs bénéficient de la flexibilité de l’éditeur universel, car il prend en charge la même modification visuelle cohérente pour toutes les formes de contenu AEM sans interface.
-* Les développeurs bénéficient de la polyvalence d’Universal Editor dans la mesure où il prend également en charge un véritable découplage de l’implémentation. Il permet aux développeurs d’utiliser pratiquement n’importe quelle structure ou architecture de leur choix, sans imposer de contraintes de SDK ou de technologie.
+* Les auteurs bénéficient de la flexibilité de l’éditeur universel, car il prend en charge la même modification visuelle cohérente pour toutes les formes de contenu découplé AEM.
+* Les développeurs bénéficient de la polyvalence de l’éditeur universel, car il prend également en charge le vrai découplage de l’implémentation. Il permet aux développeurs d’utiliser quasiment n’importe quel framework ou architecture de leur choix, sans imposer de contraintes de SDK ou de technologie.
 
-Pour plus d’informations, consultez la [documentation AEM as a Cloud Service sur Universal Editor](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) .
+Veuillez consulter la [documentation d’AEM as a Cloud Service sur l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) pour plus d’informations.
 
 ## Architecture {#architecture}
 
-Universal Editor est un service qui fonctionne en tandem avec l’AEM de créer du contenu sans interface utilisateur.
+L’éditeur universel est un service qui fonctionne en tandem avec AEM pour créer du contenu en mode découplé.
 
-* L’éditeur universel est hébergé à l’emplacement `https://experience.adobe.com/#/aem/editor/canvas` et peut modifier les pages rendues par AEM 6.5.
-* La page AEM est lue par l’éditeur universel via le dispatcher de l’instance d’auteur AEM.
-* Le service d’éditeur universel, qui s’exécute sur le même hôte que Dispatcher, écrit les modifications sur l’instance d’auteur AEM.
+* L’éditeur universel est hébergé sur `https://experience.adobe.com/#/aem/editor/canvas` et peut modifier les pages rendues par AEM 6.5.
+* La page AEM est lue par l’éditeur universel via le Dispatcher à partir de l’instance de création AEM.
+* Le service d’éditeur universel, qui s’exécute sur le même hôte que le Dispatcher, réécrit les modifications dans l’instance de création AEM.
 
-![Flux d’auteur à l’aide de l’éditeur universel](assets/author-flow.png)
+![Flux de création à l’aide de l’éditeur universel](assets/author-flow.png)
 
 ## Configuration {#setup}
 
-Pour tester l’éditeur universel, vous devez :
+Pour tester l’éditeur universel, vous devez effectuer les opérations suivantes :
 
 1. [Mettez à jour et configurez votre instance de création AEM.](#update-configure-aem)
-1. [Configurez un service Universal Editor local.](#set-up-ue)
-1. [Ajustez votre Dispatcher pour autoriser le service Universal Editor.](#update-dispatcher)
+1. [Configurez un service d’éditeur universel local.](#set-up-ue)
+1. [Ajustez votre Dispatcher pour autoriser le service d’éditeur universel.](#update-dispatcher)
 
 Une fois la configuration terminée, vous pouvez [instrumenter vos applications pour utiliser l’éditeur universel.](#instrumentation)
 
-### Mettre à jour les AEM {#update-aem}
+### Mettre à jour AEM {#update-aem}
 
-Le Service Pack 21 ou 22 et un Feature Pack pour AEM sont nécessaires pour utiliser l’éditeur universel avec AEM 6.5.
+Les pack de services 21 ou 22 et un pack de fonctionnalités pour AEM sont requis pour utiliser l’éditeur universel avec AEM 6.5.
 
-#### Appliquer le dernier Service Pack {#latest}
+#### Appliquer le dernier pack de services {#latest}
 
-Assurez-vous que vous exécutez au moins le Service Pack 21 ou 22 pour AEM 6.5. Vous pouvez télécharger le dernier Service Pack à partir de [Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Assurez-vous d’exécuter au moins le pack de services 21 ou 22 pour AEM 6.5. Vous pouvez télécharger le dernier pack de services à partir de [Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
 
-#### Installation du Feature Pack de l’éditeur universel {#feature-pack}
+#### Installation du pack de fonctionnalités de l’éditeur universel {#feature-pack}
 
-Installez le **package de fonctionnalités Universal Editor pour AEM 6.5** [ disponible sur Distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
+Installez le **pack de fonctionnalités de l’éditeur universel pour AEM 6.5** [disponible dans la distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
 
-Si vous exécutez déjà le Service Pack 23 ou supérieur, le Feature Pack n’est pas nécessaire.
+Si vous exécutez déjà le pack de services 23 ou une version ultérieure, le pack de fonctionnalités n’est pas nécessaire.
 
 ### Configuration des services {#configure-services}
 
-Le Feature Pack installe un certain nombre de nouveaux packages pour lesquels une configuration supplémentaire est nécessaire.
+Le pack de fonctionnalités installe un certain nombre de nouveaux packages pour lesquels une configuration supplémentaire est nécessaire.
 
 #### Définissez l’attribut SameSite pour le cookie `login-token`. {#samesite-attribute}
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Recherchez **Adobe Granite Token Authentication Handler** dans la liste et cliquez sur **Changer les valeurs de configuration**.
-1. Dans la boîte de dialogue, remplacez l’attribut **SameSite pour le cookie de jeton de connexion** (`token.samesite.cookie.attr`) par `Partitioned`.
+1. Recherchez **Gestionnaire d’authentification de jeton Granite d’Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+1. Dans la boîte de dialogue, remplacez l’attribut **SameSite pour le cookie du jeton de connexion** (`token.samesite.cookie.attr`) par `Partitioned`.
 1. Cliquez sur **Enregistrer**.
 
 #### Supprimez l’option X-Frame des en-têtes `SAMEORIGIN`. {#sameorigin}
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Recherchez **Apache Sling Main Servlet** dans la liste et cliquez sur **Modifier les valeurs de configuration**.
+1. Localisez le **Servlet principal Apache Sling** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
 1. Supprimez la valeur `X-Frame-Options=SAMEORIGIN` de l’attribut **En-têtes de réponse supplémentaires** (`sling.additional.response.headers`) s’il existe.
 1. Cliquez sur **Enregistrer**.
 
-#### Configurez le gestionnaire d’authentification des paramètres de requête Granite Adobe. {#query-parameter}
+#### Configurez le gestionnaire d’authentification de paramètre de requête Granite Adobe. {#query-parameter}
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Localisez **Adobe Granite Query Parameter Authentication Handler** dans la liste et cliquez sur **Modifier les valeurs de configuration**.
-1. Dans le champ **Path** (`path`), ajoutez `/` pour activer.
+1. Recherchez **Gestionnaire d’authentification de paramètre de requête Granite Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+1. Dans le champ **Chemin d’accès** (`path`), ajoutez des `/` à activer.
    * Une valeur vide désactive le gestionnaire d’authentification.
 1. Cliquez sur **Enregistrer**.
 
-#### Définissez pour quels chemins de contenu ou `sling:resourceTypes` l’éditeur universel doit être ouvert. {#paths}
+#### Définissez pour quels chemins d’accès au contenu ou `sling:resourceTypes` l’éditeur universel doit être ouvert. {#paths}
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Recherchez **Universal Editor URL Service** dans la liste et cliquez sur **Modifier les valeurs de configuration**.
-1. Définissez pour quels chemins de contenu ou `sling:resourceTypes` l’éditeur universel doit être ouvert.
-   * Dans le champ **Universal Editor Opening Mapping** , indiquez les chemins d’accès pour lesquels Universal Editor est ouvert.
-   * Dans le champ **Sling:resourceTypes qui doit être ouvert par Universal Editor**, fournissez une liste des ressources qui sont ouvertes directement par Universal Editor.
+1. Recherchez **Service d’URL de l’éditeur universel** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+1. Définissez pour quels chemins d’accès au contenu ou `sling:resourceTypes` l’éditeur universel doit être ouvert.
+   * Dans le champ **Mappage d’ouverture de l’éditeur universel** indiquez les chemins d’accès pour lesquels l’éditeur universel est ouvert.
+   * Dans le champ **Sling:resourceTypes qui doit être ouvert par l’éditeur universel**, fournissez une liste de ressources ouvertes directement par l’éditeur universel.
 1. Cliquez sur **Enregistrer**.
 
-AEM ouvrira l’éditeur universel pour les pages basées sur cette configuration.
+AEM ouvre l’éditeur universel pour les pages basées sur cette configuration.
 
-1. AEM vérifiera les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous les chemins d’accès qui y sont définis, l’éditeur universel est ouvert pour celui-ci.
-1. Pour le contenu qui ne se trouve pas sous les chemins définis dans `Universal Editor Opening Mapping`, AEM vérifie si le `resourceType` du contenu correspond à ceux définis dans **Sling:resourceTypes qui doit être ouvert par Universal Editor** et si le contenu correspond à l’un de ces types, l’éditeur universel est ouvert pour le contenu à l’emplacement `${author}${path}.html`.
+1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins d’accès qui y sont définis, l’éditeur universel s’ouvre pour lui.
+1. Pour le contenu ne se trouvant pas sous les chemins définis dans `Universal Editor Opening Mapping`, AEM vérifie si le `resourceType` du contenu correspond à ceux définis dans **Sling:resourceTypes qui doivent être ouverts par l’éditeur universel** et si le contenu correspond à l’un de ces types, l’éditeur universel est ouvert pour lui à l’`${author}${path}.html`.
 1. Sinon, AEM ouvre l’éditeur de page.
 
 Les variables suivantes sont disponibles pour définir vos mappages sous `Universal Editor Opening Mapping`.
 
-* `path` : chemin d’accès à la ressource à ouvrir
-* `localhost` : entrée de l’externaliseur pour `localhost` sans schéma, par exemple `localhost:4502`
-* `author` : entrée de l’externaliseur pour l’auteur sans schéma, par exemple `localhost:4502`
-* `publish` : entrée Externalizer pour publication sans schéma, par exemple `localhost:4503`
-* `preview` : entrée de l’externaliseur pour la prévisualisation sans schéma, par exemple `localhost:4504`
+* `path` : chemin d’accès au contenu de la ressource à ouvrir
+* `localhost` : entrée du service Externalizer pour les `localhost` sans schéma, par exemple `localhost:4502`
+* `author` : entrée du service Externalizer pour l’auteur sans schéma, par exemple `localhost:4502`
+* `publish` : entrée du service Externalizer pour la publication sans schéma, par exemple `localhost:4503`
+* `preview` : entrée du service Externalizer pour la prévisualisation sans schéma, par exemple `localhost:4504`
 * `env` : `prod`, `stage`, `dev` en fonction des modes d’exécution Sling définis
 * `token` : jeton de requête requis pour le `QueryTokenAuthenticationHandler`
 
@@ -119,26 +119,26 @@ Exemples de mappages :
 * Ouvrez toutes les pages sous `/content/foo` sur l’auteur AEM :
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`
-* Ouvrez toutes les pages sous `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations.
+* Ouvrez toutes les pages sous `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations
    * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
    * Cela entraîne l’ouverture de `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Configuration du service d’éditeur universel {#set-up-ue}
 
-Une fois AEM mis à jour et configuré, vous pouvez configurer un service d’éditeur universel local pour votre propre développement et test local.
+Avec AEM mis à jour et configuré, vous pouvez configurer un service d’éditeur universel local pour votre propre développement et vos propres tests locaux.
 
-1. Installez la version de Node.js >=20.
-1. Téléchargez et décompressez le dernier service Universal Editor à partir de [Distribution logicielle](https://experienceleague.adobe.com/r/docs/experience-cloud/software-distribution/home).
+1. Installez Node.js version >=20.
+1. Téléchargez et décompressez le dernier service d’éditeur universel à partir de [Distribution logicielle](https://experienceleague.adobe.com/r/docs/experience-cloud/software-distribution/home).
 1. Configurez le service d’éditeur universel via des variables d’environnement ou un fichier `.env`.
-   * [Pour plus d’informations, consultez la documentation d’AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Voir la documentation sur l’éditeur universel d’AEM as a Cloud Service pour plus d’informations.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Notez que vous devrez peut-être utiliser l’option `UES_MAPPING` si une réécriture IP interne est requise.
 1. Exécutez `universal-editor-service.cjs`.
 
-### Mise à jour de Dispatcher {#update-dispatcher}
+### Mettre à jour le Dispatcher {#update-dispatcher}
 
-Une fois AEM configuré et qu’un service Universal Editor local est en cours d’exécution, vous devez autoriser un proxy inverse pour le nouveau service [ dans le Dispatcher.](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher)
+Avec AEM configuré et un service d’éditeur universel local en cours d’exécution, vous devez autoriser un proxy inverse pour le nouveau service [dans le Dispatcher.](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/dispatcher)
 
-1. Ajustez le fichier vhost de l’instance d’auteur pour inclure un proxy inverse.
+1. Ajustez le fichier vhost de l’instance de création pour inclure un proxy inverse.
 
    ```html
    <IfModule mod_proxy.c>
@@ -149,25 +149,25 @@ Une fois AEM configuré et qu’un service Universal Editor local est en cours d
 
    >[!NOTE]
    >
-   >8080 est le port par défaut. Si vous l&#39;avez modifié à l&#39;aide du paramètre `UES_PORT` de [ votre fichier `.env`, ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) vous devez ajuster la valeur du port ici en conséquence.
+   >Le port par défaut est le port 8080. Si vous avez modifié ce paramètre à l’aide du paramètre `UES_PORT` dans [votre fichier `.env`,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) vous devez ajuster la valeur du port ici en conséquence.
 
 1. Redémarrez Apache.
 
-## Instrument de votre application {#instrumentation}
+## Instrumenter Votre Application {#instrumentation}
 
-Une fois AEM mise à jour et qu’un service d’éditeur universel local est en cours d’exécution, vous pouvez commencer à modifier du contenu sans affichage à l’aide d’Universal Editor.
+Avec AEM mis à jour et un service d’éditeur universel local en cours d’exécution, vous pouvez commencer à modifier le contenu découplé à l’aide de l’éditeur universel.
 
-Toutefois, votre application doit être instrumentée pour tirer parti de l’éditeur universel. Cela implique d’inclure des balises META pour indiquer à l’éditeur comment et où conserver le contenu. Vous trouverez des détails sur cette instrumentation dans la [documentation Universal Editor pour AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+Cependant, votre application doit être instrumentée pour tirer parti de l’éditeur universel. Cela implique d’inclure des balises méta pour indiquer à l’éditeur comment et où conserver le contenu. Les détails de cette instrumentation sont disponibles dans la [documentation de l’éditeur universel pour AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page).
 
-Notez que lorsque vous suivez la documentation d’Universal Editor avec AEM as a Cloud Service, les modifications suivantes s’appliquent lorsque vous l’utilisez avec AEM 6.5.
+Notez que lorsque vous suivez la documentation pour l’éditeur universel avec AEM as a Cloud Service, les modifications ci-dessous s’appliquent lors de son utilisation avec AEM 6.5.
 
-* Le protocole de la balise meta doit être `aem65` au lieu de `aem`.
+* Le protocole dans la balise meta doit être `aem65` au lieu de `aem`.
 
   ```html
   <meta name="urn:adobe:aue:system:aemconnection" content={`aem65:${getAuthorHost()}`}/>
   ```
 
-* Le point de terminaison du service d’éditeur universel doit être annoncé via une balise meta .
+* Le point d’entrée du service de l’éditeur universel doit être annoncé par le biais d’une balise meta .
 
   ```html
   <meta name="urn:adobe:aue:config:service" content={`${getAuthorHost()}/universal-editor`}/>
@@ -177,4 +177,12 @@ Notez que lorsque vous suivez la documentation d’Universal Editor avec AEM as 
 
 >[!TIP]
 >
->Pour obtenir un guide complet à l’intention des développeurs pour leur prise en main d’Universal Editor, consultez le document [Présentation d’Universal Editor pour AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires à la prise en charge d’AEM 6.5, comme indiqué dans cette section.
+>Pour obtenir un guide complet destiné aux développeurs et développeuses qui commencent à utiliser l’éditeur universel, consultez le document [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires pour la prise en charge d’AEM 6.5, comme indiqué dans cette section.
+
+## Différences entre AEM 6.5 et AEM as a Cloud Service {#differences}
+
+L’éditeur universel d’AEM 6.5 fonctionne globalement de la même manière que dans AEM as a Cloud Service, y compris pour l’interface utilisateur et une grande partie de la configuration. Il y a cependant des différences à noter.
+
+* L’éditeur universel d’ 6.5 prend uniquement en charge le cas d’utilisation découplé.
+* La configuration de l’éditeur universel varie légèrement pour 6.5 ([comme décrit](#setup) dans le document actuel).
+* L’éditeur universel dans la version 6.5 utilise un sélecteur de ressources et un sélecteur de fragments de contenu différents d’AEM as a Cloud Service.
