@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 97%
 
 ---
 
@@ -62,15 +62,11 @@ La **vue d’ensemble de Live Copy** peut être ouverte lors de l’affichage de
 
 1. Sélectionnez **Aperçu de la Live Copy** pour afficher et utiliser l’aperçu de toutes les Live Copies associées au plan directeur actuel.
 
-   >[!NOTE]
-   >
-   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/fr/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
-
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 
 ## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
-La **vue d’ensemble de Live Copy** peut également être utilisée pour effectuer des actions sur la Live Copy :
+L’**aperçu de la Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
 1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](/help/sites-administering/msm.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page) :
