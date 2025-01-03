@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,10 @@ La fonctionnalité Absent du bureau permet aux utilisateurs et utilisatrices ou 
 Lors de la création d’un processus, l’utilisateur ou l’utilisatrice de Workbench peut spécifier si une tâche peut être redirigée en raison des paramètres d’absence du bureau.
 
 ## Afficher les informations d’absence du bureau d’un utilisateur ou d’une utilisatrice {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Absence du bureau.
 1. Dans la zone située en haut de la page Absence du bureau, vous pouvez effectuer l’une des opérations suivantes :

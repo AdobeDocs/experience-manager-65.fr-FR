@@ -9,14 +9,18 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
 # Configurer la mise en cache pour la sortie  {#configuring-caching-for-output}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Le service Output permet de fusionner des données de formulaire XML dans une conception de formulaire créée dans Designer pour produire un flux de sortie de documents dans différents formats.
 

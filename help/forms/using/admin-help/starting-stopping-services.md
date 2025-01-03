@@ -9,14 +9,18 @@ exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '311'
 ht-degree: 100%
 
 ---
 
 # Démarrer et arrêter des services {#starting-and-stopping-services}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Il existe deux types de services faisant partie d’AEM Forms :
 
@@ -29,7 +33,7 @@ Les modules AEM Forms (par exemple, Forms, Rights Management et Output) fonction
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Dans Console d’administration, cliquez sur **Services** > **Applications et services** > **Gestion des services**.
 1. Dans la page Gestion des services, cochez la case en regard du service à arrêter ou à démarrer et cliquez sur Arrêter ou Démarrer.

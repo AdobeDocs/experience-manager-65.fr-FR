@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
-ht-degree: 100%
+source-wordcount: '2029'
+ht-degree: 98%
 
 ---
 
 # Fichiers à sauvegarder et à récupérer {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Les fichiers de données et de l’application à sauvegarder sont décrits plus en détail dans les sections suivantes.
 
@@ -110,7 +114,7 @@ DB2 dispose de fonctionnalités intégrées pour sauvegarder une base de donnée
 
 ### Oracle {#oracle}
 
-Utilisez des sauvegardes instantanées ou configurez votre base de données Oracle pour qu’elle s’exécute en mode de consignation en archives. (voir le document [Oracle Backup: An Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) Pour plus d’informations sur la sauvegarde et la récupération de votre base de données Oracle, consultez les sites suivants :
+Utilisez des sauvegardes instantanées ou configurez votre base de données Oracle pour qu’elle s’exécute en mode de consignation en archives. (Voir [Sauvegarde d&#39;Oracle : introduction](https://www.databasedesign-resource.com/oracle-backup.md).) Pour plus d&#39;informations sur la sauvegarde et la récupération de votre base de données d&#39;Oracle, consultez les sites suivants :
 
 [Oracle Backup and Recovery :](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explique en détail les concepts de sauvegarde et de récupération, les techniques les plus couramment employées pour utiliser Recovery Manager (RMAN) à des fins de sauvegarde, de récupération et de création de rapports, de même que la planification d’une politique de sauvegarde et de récupération.
 

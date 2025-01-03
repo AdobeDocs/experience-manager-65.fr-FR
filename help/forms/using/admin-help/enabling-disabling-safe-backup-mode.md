@@ -9,14 +9,18 @@ exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
 # Activer et désactiver le mode de sauvegarde sécurisé {#enabling-and-disabling-safe-backup-mode}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Sur la page Paramètres de sauvegarde, vous pouvez utiliser AEM Forms en mode de sauvegarde sécurisé afin de sauvegarder de manière fiable votre base de données et votre répertoire de stockage global de documents (GDS).
 

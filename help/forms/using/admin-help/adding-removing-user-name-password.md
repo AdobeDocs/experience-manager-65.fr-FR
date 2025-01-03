@@ -9,14 +9,18 @@ exl-id: 1e2b82d6-ca1f-4421-9a51-ec97fdc315d3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---
 
 # Ajouter et supprimer des informations d’identification d’utilisateur et de mot de passe {#adding-and-removing-user-name-and-password-credentials}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Sur la page Trust Store Management, vous pouvez ajouter et supprimer les noms d’utilisateur ou d’utilisatrice et les mots de passe utilisés par le service Forms lorsqu’il reçoit une demande avec une sécurité de niveau SOAP.
 

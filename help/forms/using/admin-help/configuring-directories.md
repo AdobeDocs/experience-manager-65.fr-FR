@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 100%
+source-wordcount: '3241'
+ht-degree: 99%
 
 ---
+
 
 # Configuration des annuaires {#configuring-directories}
 
@@ -25,6 +26,10 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires que le fournisseur d’authentification interroge pour obtenir les informations utilisateur. Vous pouvez ajouter un annuaire à un domaine d’entreprise existant ou à un nouveau domaine d’entreprise que vous ajoutez. Il est possible de configurer plusieurs annuaires par domaine. Vous pouvez également configurer un domaine afin qu’il utilise une interface SPI personnalisée pour la synchronisation.
 
 ### Ajout d’un annuaire {#add-a-directory}
+
+>[!NOTE]
+>
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
@@ -121,7 +126,7 @@ Si vous avez sélectionné l’option Activer la référence dans les paramètre
 
 Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server peuvent requérir un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche, en anglais ou la RFC 2254.) Pour obtenir des informations supplémentaires sur le schéma Microsoft AD, voir Active Directory Schema (en anglais).
+**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory .
 
 **Description :** attribut de schéma pour la description de l’utilisateur.
 

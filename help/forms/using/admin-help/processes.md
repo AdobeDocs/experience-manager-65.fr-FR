@@ -9,9 +9,9 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1643'
 ht-degree: 100%
 
 ---
@@ -183,6 +183,10 @@ Lorsque vous essayez de relancer une opération, une requête est envoyée au pr
 1. Sélectionnez l’opération, puis cliquez sur Nouvel essai.
 
 ## Utilisation d’opérations {#working-with-operations}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 La page Détails de l’opération présente un résumé d’une opération dans un processus et ses affectations actuelles d’utilisateurs et d’utilisatrices.
 

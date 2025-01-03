@@ -9,14 +9,18 @@ exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '159'
 ht-degree: 100%
 
 ---
 
 # Modifier l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez modifier l’ordre dans lequel AEM Forms les évalue pour authentification. L’ordre des fournisseurs d’authentification répertoriés dans le fichier config.xml détermine l’ordre d’évaluation pour l’authentification.
 

@@ -7,14 +7,18 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1739'
 ht-degree: 100%
 
 ---
 
-# Ajouter et configurer des utilisateurs {#adding-and-configuring-users}
+# Ajouter et configurer des utilisateurs et des utilisatrices {#adding-and-configuring-users}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Les informations relatives aux utilisateurs, utilisatrices et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
 

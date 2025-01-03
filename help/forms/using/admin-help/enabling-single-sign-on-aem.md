@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
-workflow-type: ht
-source-wordcount: '1704'
-ht-degree: 100%
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 98%
 
 ---
 
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 AEM Forms offre deux méthodes d’activation de l’authentification unique (SSO) : via les en-têtes HTTP et SPNEGO.
 
@@ -71,7 +75,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (
 >AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant.
 
 1. Déterminez le domaine à utiliser pour activer l’authentification unique. Le serveur AEM Forms et les utilisateurs et utilisatrices doivent appartenir au même domaine Windows ou au même domaine de confiance.
-1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte d’utilisateur ou d’utilisatrice](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs et utilisatrices sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
+1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
 1. Mappez le nom principal du service. (Voir [Mappage d’un nom principal de service (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurez le contrôleur de domaine. (Voir [Prévention des échecs de contrôle d’intégrité de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Ajoutez ou modifiez un domaine d’entreprise comme décrit dans la section [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Lorsque vous créez ou modifiez le domaine d’entreprise, effectuez les tâches suivantes :

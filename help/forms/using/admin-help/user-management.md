@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
 
 # Gestion des utilisateurs {#user-management}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 La gestion des utilisateurs et utilisatrices vous permet d’activer l’authentification unique (SSO) entre les modules d’AEM Forms et les applications protégées par Netegrity SiteMinder à l’aide du langage SAML. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires et ne s’affichent pas si l’utilisateur est déjà authentifié via le portail d’entreprise.
 

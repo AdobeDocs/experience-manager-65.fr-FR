@@ -9,14 +9,18 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '195'
 ht-degree: 100%
 
 ---
 
 # Configurer le mot de passe de liaison LDAP{#configure-the-ldap-bind-password}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Pour éviter tout risque de sécurité, le champ du mot de passe de liaison dans le fichier de configuration exporté (config.xml) n’est pas configuré. Avant d’importer le fichier de configuration dans un autre système, assurez-vous de configurer ce mot de passe. Ce mot de passe remplace un mot de passe existant qui est stocké dans la base de données. Un mot de passe nul ne remplace pas une valeur de mot de passe non nulle existante.
 

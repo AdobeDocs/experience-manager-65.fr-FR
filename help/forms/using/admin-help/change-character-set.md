@@ -9,14 +9,18 @@ exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '144'
 ht-degree: 100%
 
 ---
 
 # Modifier le jeu de caractères {#change-the-character-set}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Vous pouvez indiquer le jeu de caractères utilisé pour encoder le flux de sortie.
 

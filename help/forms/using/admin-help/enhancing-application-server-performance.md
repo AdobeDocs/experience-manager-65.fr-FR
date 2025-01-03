@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 100%
 
 ---
@@ -100,6 +100,10 @@ Un document dont la taille est supérieure à la taille maximale de la ligne d�
 Lorsque le contenu du document est intégré (c’est-à-dire inférieur à la taille maximale de la ligne d’entrée), il est stocké dans la base de données dans le cadre de la payload de sérialisation du document. Par conséquent, l’augmentation de la taille maximale de la ligne d’entrée peut affecter la taille de la base de données.
 
 **Modification de la taille maximale de la ligne d’entrée**
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Paramètres > Paramètres du système principal > Configurations.
 1. Saisissez une valeur dans la zone Taille maximale par défaut de la ligne d’entrée du document, puis cliquez sur OK.

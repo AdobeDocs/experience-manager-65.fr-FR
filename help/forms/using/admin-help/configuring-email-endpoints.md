@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 100%
+source-wordcount: '3808'
+ht-degree: 99%
 
 ---
 
-# Configuration des points d’entrée de courrier électronique {#configuring-email-endpoints}
+# Configuration des points d’entrée des e-mails {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Les points d’entrée d’e-mail permettent aux utilisateurs et utilisatrices d’appeler un service en envoyant un ou plusieurs documents (en tant que pièces jointes) à un compte de messagerie spécifique. La boîte de réception de la messagerie sert de point de collecte pour les pièces jointes. Le service surveille la boîte de réception et traite les pièces jointes. Les résultats de la conversion sont transférés aux personnes définies dans le point d’entrée.
 
@@ -32,7 +36,7 @@ Tous les points d’entrée d’e-mail sont configurés avec un nom d’utilisat
 
 Si vos utilisateurs envoient des documents dont les noms et les chemins de conversion contiennent des caractères d’alphabet des langues de l’Europe occidentale, ils doivent utiliser une application d’e-mail prenant en charge les types d’encodage requis (Latin1 [ISO-8859-1], Langues de l’Europe occidentale [Windows] ou UTF-8). Pour plus d’informations, consultez le document *Installation et déploiement d’AEM forms* correspondant à votre serveur d’applications.
 
-Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configuration des paramètres par défaut des points d’entrée d’e-mail](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service E-mail ont deux objectifs :
+Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée de courrier électronique par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service de courrier électronique ont deux objectifs :
 
 * Pour configurer les attributs communs à tous les points d’entrée d’e-mail
 * Pour fournir des valeurs par défaut à tous les points d’entrée d’e-mail

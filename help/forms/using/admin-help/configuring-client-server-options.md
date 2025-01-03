@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
-ht-degree: 100%
+source-wordcount: '10278'
+ht-degree: 98%
 
 ---
 
 # Configurer le serveur Document Security {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Services > Document Security > Configuration > Configuration du serveur.
 1. Configurez les paramètres et cliquez sur OK.
@@ -31,7 +35,7 @@ Si vous utilisez IPv6, saisissez l’URL de base comme nom d’ordinateur ou nom
 >
 >L’URL de base est incorporée dans des fichiers protégés par une politique. Les applications clientes utilisent l’URL de base pour se reconnecter au serveur. Les fichiers sécurisés contiendront toujours l’URL de base, même si elle est modifiée ultérieurement. Si vous modifiez l’URL de base, les informations de configuration doivent être mises à jour pour l’ensemble des clientes et des clients qui se connectent.
 
-**Période d’ouverture hors connexion par défaut :** durée par défaut pendant laquelle un utilisateur peut utiliser un document protégé hors connexion. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une politique (voir Création et modification de politiques). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période d’ouverture hors connexion par défaut :** durée par défaut pendant laquelle un utilisateur peut utiliser un document protégé hors connexion. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une politique (Consultez la section Créer et modifier des politiques). À l’expiration de cette période d’ouverture, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 Pour plus d’informations sur le fonctionnement de la synchronisation et de l’ouverture hors connexion, reportez-vous à la section [Primer on configuring offline lease and synchronization](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
@@ -423,7 +427,7 @@ le texte du type d’authentification :** texte affiché pour demander à un ut
 
 **Personnalisation de l’affichage du certificat client**
 
-**Afficher uniquement les informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification de confiance pour lesquels AEM Forms est configuré (voir Gérer des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, la personne se voit présenter une liste de tous les certificats présents sur son système.
+**Afficher uniquement les informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification de confiance pour lesquels AEM forms est configuré (voir Gestion des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, l’utilisateur voit s’afficher une liste de tous les certificats du système de l’utilisateur.
 
 ## Configurer les filigranes dynamiques {#configure-dynamic-watermarks}
 
@@ -556,7 +560,7 @@ Document Security génère automatiquement un e-mail d’invitation à l’enreg
 
 L’e-mail d’enregistrement contient un lien vers une page d’enregistrement et des informations sur les modalités d’enregistrement. Une fois la personne invitée enregistrée, Document Security envoie un e-mail d’activation comportant un lien vers une page d’activation. Une fois activé, le compte reste valide jusqu’à ce que vous le désactiviez ou le supprimiez.
 
-Si vous activez l’enregistrement intégré, vous spécifiez une seule fois votre serveur SMTP, les détails de l’e-mail d’enregistrement, les capacités d’accès et les informations de réinitialisation du mot de passe de l’e-mail. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans User Management et que le rôle « Utilisateur invité de Document Security » a été attribué aux utilisateurs, utilisatrices et groupes appropriés de votre organisation. (Voir [Ajouter un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement des utilisateurs et des utilisatrices créé à l’aide du SDK AEM Forms. Consultez l’aide de la section « Développement de SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est recommandé de configurer un message dans l’e-mail d’activation et sur l’écran de connexion du client pour informer les utilisateurs et les utilisatrices sur la façon de contacter l’administration pour obtenir un nouveau mot de passe ou d’autres informations.
+Si vous activez l’enregistrement intégré, vous spécifiez une seule fois votre serveur SMTP, les détails de l’e-mail d’enregistrement, les capacités d’accès et les informations de réinitialisation du mot de passe de l’e-mail. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans User Management et que le rôle « Utilisateur invité de Document Security » a été attribué aux utilisateurs, utilisatrices et groupes appropriés de votre organisation. (Voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement des utilisateurs créé à l’aide d’AEM forms SDK. Consultez l’aide de la section « Développement de SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est recommandé de configurer un message dans l’e-mail d’activation et sur l’écran de connexion du client pour informer les utilisateurs et les utilisatrices sur la façon de contacter l’administration pour obtenir un nouveau mot de passe ou d’autres informations.
 
 **Activer et configurer l’enregistrement des utilisateurs et utilisatrices invités**
 

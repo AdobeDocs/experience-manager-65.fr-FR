@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
-ht-degree: 100%
+source-wordcount: '4725'
+ht-degree: 99%
 
 ---
 
 # Créer et gérer des politiques {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Une *politique* définit un jeu de paramètres de confidentialité et les utilisateurs et utilisatrices habilités à accéder au document auquel la politique est appliquée. Les *jeux de politiques* regroupent plusieurs politiques ayant une finalité métier commune. Ces jeux de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et d’utilisatrices du système. Pour plus d’informations sur les politiques, voir [Politiques et documents protégés par une politique](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
@@ -146,7 +150,7 @@ Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utili
 
 Après leur enregistrement, les personnes invitées peuvent utiliser les documents protégés par une politique pour lesquels elles disposent d’une autorisation. Selon les fonctionnalités activées par l’administrateur ou l’administratrice, les utilisateurs et utilisatrices externes peuvent être autorisés à appliquer des politiques à des documents, à créer, à modifier et à supprimer des politiques et à ajouter d’autres utilisateurs et utilisatrices externes aux politiques.
 
-**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security (voir Configuration du serveur Document Security). Cette option permet à l’ensemble des utilisateurs et des utilisatrices d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
+**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security Voir Configuration du serveur Document Security. Cette option permet à tous les utilisateurs d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
 
 >[!NOTE]
 >

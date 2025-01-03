@@ -9,14 +9,18 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '327'
 ht-degree: 100%
 
 ---
 
 # Configuration des extensions Acrobat Reader DC pour la capture de données {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Si les utilisateurs et utilisatrices de votre installation AEM Forms utilisent la fonctionnalité de capture de données de Content Services (obsolète), il est recommandé de créer un rôle avec un accès en lecture seule pour ces utilisateurs et utilisatrices.
 

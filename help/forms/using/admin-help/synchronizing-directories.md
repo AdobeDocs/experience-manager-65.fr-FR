@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 100%
 
 ---
+
 
 # Synchroniser des annuaires {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ Lorsque la synchronisation différentielle des annuaires est activée, User Mana
 
 >[!NOTE]
 >
->Les utilisateurs, les utilisatrices et les groupes supprimés de l’annuaire ne sont pas supprimés de la base de données User Management tant que vous n’effectuez pas une synchronisation complète de l’annuaire.
+> * Les utilisateurs, les utilisatrices et les groupes supprimés de l’annuaire ne sont pas supprimés de la base de données User Management tant que vous n’effectuez pas une synchronisation complète de l’annuaire.
+> * Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
+
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
-1. Sous Synchronisation différentielle, cochez la case et cliquez sur Enregistrer.
-1. Modifiez les paramètres d’annuaire de chacun des domaines d’entreprise qui utiliseront la fonction de synchronisation différentielle d’annuaires. Dans les pages Paramètres utilisateur et Paramètres du groupe, recherchez le paramètre Modifier l’horodatage et affectez-lui la valeur `modify TimeStamp`. Pour plus d’informations sur la modification des domaines d’entreprise, voir [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. Sous Synchronisation différentielle, cochez la case et cliquez sur Enregistrer.
+3. Modifiez les paramètres d’annuaire de chacun des domaines d’entreprise qui utiliseront la fonction de synchronisation différentielle d’annuaires. Dans les pages Paramètres utilisateur et Paramètres du groupe, recherchez le paramètre Modifier l’horodatage et affectez-lui la valeur `modify TimeStamp`. Pour plus d’informations sur la modification des domaines d’entreprise, voir [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Activation ou désactivation de la journalisation détaillée lors de la synchronisation {#enable-or-disable-detailed-logging-during-synchronization}
 

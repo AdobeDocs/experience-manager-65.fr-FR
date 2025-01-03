@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,10 @@ Trust Store peut comporter plusieurs informations d’identification pour les ex
 >Vous pouvez également importer et supprimer des informations d’identification par programmation. (Voir [Programmation avec AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).)
 
 ## Import d’informations d’identification pour les extensions Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion du Trust Store > Informations d’identification locales.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez Informations d’identification pour les extensions Acrobat Reader DC.

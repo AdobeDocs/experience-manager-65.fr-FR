@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
 
 # Configuration d’une imprimante réseau PDFG Network Printer (Windows uniquement) {#setting-up-a-pdfg-network-printer-windows-only}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 L’imprimante réseau PDFG Network Printer permet aux utilisateurs et utilisatrices de générer un document PDF à partir de n’importe quelle application dotée de fonctions d’impression. Lorsqu’un utilisateur installe PDFG Network Printer, une nouvelle imprimante nommée *PDF Generator* apparaît dans la section Imprimantes du Panneau de configuration de Windows. S’il existe déjà une imprimante portant le même nom, l’utilisateur ou l’utilisatrice doit saisir un autre nom.
 

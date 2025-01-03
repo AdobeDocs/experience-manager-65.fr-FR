@@ -9,14 +9,18 @@ exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
 # Rendre les polices disponibles {#make-fonts-available}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Assurez-vous que les polices utilisées dans un formulaire peuvent être utilisées sur le serveur d’applications J2EE hébergeant AEM Forms. Prenons l’exemple suivant. Un concepteur ou une conceptrice de formulaires ajoute une police au répertoire de polices utilisé et crée un formulaire qui utilise cette police sur un ordinateur distinct. Pour que le service Output utilise la police, placez-la dans le répertoire des polices client. Si le répertoire des polices client n’existe pas, créez un répertoire sur le serveur d’applications J2EE hébergeant AEM Forms.
 

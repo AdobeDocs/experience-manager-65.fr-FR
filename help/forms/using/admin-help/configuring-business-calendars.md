@@ -9,10 +9,10 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1889'
-ht-degree: 100%
+source-wordcount: '1901'
+ht-degree: 97%
 
 ---
 
@@ -46,9 +46,9 @@ Si certains utilisateurs ou utilisatrices de votre entreprise ont des jours non 
 
    Les clés de calendrier professionnel sont attribuées à des utilisateurs et des utilisatrices en fonction du domaine utilisé, tel que le domaine d’entreprise, local ou hybride. Pour plus d’informations sur la configuration des domaines, consultez [Ajouter des domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs et utilisatrices ne sont stockées que dans la base de données User Management. Pour définir la clé de calendrier professionnel pour ces utilisateurs et utilisatrices, saisissez une chaîne de caractères dans le champ « Clé du calendrier professionnel » lors de l’ajout ou de la modification d’un utilisateur ou d’une utilisatrice dans User Management. (Voir [Ajouter et configurer des utilisateurs et utilisatrices](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Ensuite, mappez les clés de calendrier professionnel (les chaînes) aux calendriers professionnels dans Forms Workflow. (Voir [Associer des utilisateurs/utilisatrices et des groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si vous utilisez un domaine local ou hybride, les informations relatives aux utilisateurs et utilisatrices ne sont stockées que dans la base de données User Management. Pour définir la clé de calendrier professionnel pour ces utilisateurs et utilisatrices, saisissez une chaîne de caractères dans le champ « Clé du calendrier professionnel » lors de l’ajout ou de la modification d’un utilisateur ou d’une utilisatrice dans User Management. (Voir [Ajouter et configurer des utilisateurs](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Vous mappez ensuite les clés de calendrier professionnel (les chaînes) aux calendriers professionnels dans Forms Workflow. (Voir [Associer des utilisateurs/utilisatrices et des groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un répertoire LDAP, que User Management synchronise avec sa base de données. Cette fonction vous permet d’associer une clé de calendrier professionnel à un champ du répertoire LDAP. Par exemple, si chaque utilisateur ou utilisatrice enregistré(e) dans votre répertoire dispose d’un champ « pays » et que vous souhaitez attribuer des calendriers professionnels en fonction du pays où l’utilisateur ou l’utilisatrice se trouve, indiquez le nom du champ « pays » dans le champ « Clé » du calendrier professionnel lors de la spécification des paramètres de l’utilisateur ou utilisatrice pour l’annuaire. (Voir [Configurer des annuaires](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ « pays » dans le répertoire LDAP) aux calendriers professionnels dans Forms Workflow. (Voir [Associer des utilisateurs/utilisatrices et des groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si vous utilisez un domaine d’entreprise, les informations sur les utilisateurs et utilisatrices résident dans un système de stockage tiers, tel qu’un répertoire LDAP, que User Management synchronise avec sa base de données. Cette fonction vous permet d’associer une clé de calendrier professionnel à un champ du répertoire LDAP. Par exemple, si chaque utilisateur ou utilisatrice enregistré(e) dans votre répertoire dispose d’un champ « pays » et que vous souhaitez attribuer des calendriers professionnels en fonction du pays où l’utilisateur ou l’utilisatrice se trouve, indiquez le nom du champ « pays » dans le champ « Clé » du calendrier professionnel lors de la spécification des paramètres de l’utilisateur ou utilisatrice pour l’annuaire. (Voir [Configuration des annuaires](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Vous pouvez ensuite mapper les clés de calendrier professionnel (les valeurs définies pour le champ « pays » dans l&#39;annuaire LDAP) aux calendriers professionnels dans Forms Workflow. (Voir [Associer des utilisateurs/utilisatrices et des groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Dans Forms Workflow, définissez un calendrier pour chaque groupe d’utilisateurs et utilisatrices qui partagent les mêmes jours non ouvrés. (Voir [Créer ou mettre à jour un calendrier professionnel](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. Dans Forms Workflow, mappez les clés de calendrier professionnel ou les appartenances à des groupes pour chaque calendrier. (Voir [Associer des utilisateurs/utilisatrices et des groupes à un calendrier professionnel](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -64,26 +64,28 @@ Si votre organisation comprend différents groupes d’utilisateurs et utilisatr
 
 >[!NOTE]
 >
->Si vous ne créez pas de nouveau calendrier professionnel, le calendrier par défaut est utilisé.
+> * Si vous ne créez pas de nouveau calendrier professionnel, le calendrier par défaut est utilisé.
+> * Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
+
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Calendriers professionnels.
-1. Pour ajouter un nouveau calendrier professionnel, cliquez sur ![bus_cal_plus](assets/bus_cal_plus.png). Le texte *Nouveau calendrier* s’affiche dans la liste déroulante. Sélectionnez le texte et saisissez un autre nom pour votre calendrier.
+2. Pour ajouter un nouveau calendrier professionnel, cliquez sur ![bus_cal_plus](assets/bus_cal_plus.png). Le texte *Nouveau calendrier* s’affiche dans la liste déroulante. Sélectionnez le texte et saisissez un autre nom pour votre calendrier.
 
    Pour modifier un calendrier professionnel existant, sélectionnez-le dans la liste déroulante.
 
-1. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
-1. [Facultatif] Sélectionnez Utiliser les heures ouvrables et définissez les heures de début et de fin d’une journée de travail.
+3. Sous Jours non ouvrés par défaut, sélectionnez les jours non ouvrés par défaut de votre choix dans la semaine (week-ends, par exemple).
+4. [Facultatif] Sélectionnez Utiliser les heures ouvrables et définissez les heures de début et de fin d’une journée de travail.
 
    Si vous sélectionnez cette option, un événement qui se produit avant la plage horaire définie est déplacé au début de la plage horaire et un événement qui se produit après est déplacé à l’heure de début du prochain jour ouvré.
 
    Par exemple, supposons qu’une personne soit affectée à une tâche à 2 h le mardi et que le rappel de cette tâche soit défini sur deux jours ouvrés. Sans les heures de bureau, le rappel a lieu à 2 h le jeudi. Si les heures de bureau sont définies de 8 h à 17 h, le rappel est déplacé à 8 h le jeudi. Sans les heures de bureau, si un rappel est créé pour 18 h le mardi, il aura lieu après les heures de bureau le jeudi. Si les heures de bureau sont définies de 8 h à 17 h, le rappel aura lieu à 8 h le vendredi.
 
-1. Dans le calendrier de gauche, double-cliquez sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
+5. Dans le calendrier de gauche, double-cliquez sur un autre jour non ouvré, comme congés. Vous ne pouvez pas sélectionner de jours sur des périodes antérieures. Les jours non ouvrés sélectionnés apparaissent dans une liste sur la droite et la date s’affiche deux fois sur une seule ligne. Sélectionnez la date sur la gauche pour pouvoir taper le nom ou la description du jour non ouvré.
 
    Pour supprimer un jour non ouvré de la liste, cliquez sur ![bus_cal_trash](assets/bus_cal_trash.png) près du jour concerné.
 
-1. [Facultatif] Pour définir ce calendrier comme calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
-1. La définition des jours non ouvrés terminée, sélectionnez Calendrier activé pour activer le calendrier, puis cliquez sur Enregistrer.
+6. [Facultatif] Pour définir ce calendrier comme calendrier par défaut, sélectionnez Calendrier par défaut. Le calendrier par défaut est utilisé lorsqu’il n’existe aucune autre association de calendrier pour des événements utilisateur ou si aucun calendrier professionnel n’est spécifié pour l’événement de temporisation ou le service d’attente. Vous ne pouvez pas supprimer le calendrier par défaut.
+7. La définition des jours non ouvrés terminée, sélectionnez Calendrier activé pour activer le calendrier, puis cliquez sur Enregistrer.
 
    Si vous mettez à jour un calendrier existant, la nouvelle version prend effet immédiatement et est utilisée pour tous les calculs de calendrier professionnel, y compris pour les tâches déjà en cours d’exécution.
 

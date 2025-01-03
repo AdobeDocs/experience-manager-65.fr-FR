@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 100%
 
 ---
 
 # Travailler avec des opérations et des branches bloquées {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 La page Opérations bloquées et la page Branches bloquées affichent les processus qui sont bloqués. Un processus peut bloquer lorsqu’une erreur se produit pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
 

@@ -9,14 +9,18 @@ exl-id: 14314383-5228-4904-98c1-586f48a1142c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
 
 # Configurer les messages de validation {#configuring-validation-messages}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Pour les formulaires rendus au format HTML, les erreurs de validation de formulaire qui se produisent s’affichent pour l’utilisateur ou l’utilisatrice. Vous pouvez personnaliser le type d’affichage des messages de validation. Selon l’endroit où les messages de validation sont affichés, vous pouvez également contrôler l’emplacement du message dans le formulaire et la taille de la bordure du cadre.
 

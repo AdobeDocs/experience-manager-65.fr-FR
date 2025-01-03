@@ -9,14 +9,18 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '607'
+ht-degree: 95%
 
 ---
 
 # Configuration des paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Le langage SAML (Security Assertion Markup Language) est l’une des options que vous pouvez sélectionner lors de la configuration de l’autorisation d’un domaine d’entreprise ou hybride. SAML est principalement utilisé pour la prise en charge de l’authentification unique sur plusieurs domaines. Lorsque SAML est configuré en tant que fournisseur d’authentification, les utilisateurs et utilisatrices se connectent et s’authentifient à AEM Forms via un fournisseur d’identité (IDP) tiers spécifié.
 

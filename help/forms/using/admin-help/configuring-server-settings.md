@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 100%
 
 ---
@@ -35,6 +35,10 @@ Pour permettre à AEM Forms de recevoir et de traiter les e-mails entrants envoy
 Si vos processus sont conçus et mis en œuvre sans avoir besoin d’e-mail. Il n’est pas nécessaire de configurer les options de la page Paramètres d’e-mail.
 
 ### Configurer les paramètres d’e-mails sortants {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Paramètres d’e-mail.
 1. Sélectionnez Activer les messages sortants.

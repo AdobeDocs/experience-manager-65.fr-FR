@@ -9,10 +9,10 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
-ht-degree: 100%
+source-wordcount: '7415'
+ht-degree: 99%
 
 ---
 
@@ -82,6 +82,10 @@ Les traitements d’impression échouent s’ils incluent des polices qui ne peu
 **Standard :** crée des fichiers à imprimer sur des imprimantes de bureau ou des copieurs numériques, à publier sur CD ou à envoyer à un client comme preuve de publication. Cet ensemble d’options utilise la compression et le sous-échantillonnage pour réduire la taille du fichier. Il incorpore également les sous-ensembles de toutes les polices utilisées dans le fichier, convertit toutes les couleurs en sRVB et imprime à une résolution moyenne afin de créer un rendu raisonnablement précis du document d’origine. Notez que les sous-ensembles de polices Microsoft Windows ne sont pas incorporés par défaut. Vous pouvez ouvrir ces fichiers PDF dans Acrobat 5 et Acrobat Reader 5.0 et versions ultérieures.
 
 ## Ajout ou modification de paramètres de PDF {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Les paramètres de PDF déterminent précisément le mode de conversion des fichiers, ainsi que la structure et les fonctions du PDF qui en résultent. Définissez un nouveau paramètre de PDF ou modifiez un paramètre existant. Vous ne pouvez pas modifier des paramètres prédéfinis. Toutefois, vous pouvez créer un paramètre basé sur un paramètre existant en le modifiant et en l’enregistrant sous un nouveau nom.
 
@@ -226,7 +230,7 @@ Ces options permettent de configurer les images monochromes, en niveaux de gris 
 
 **Sous-échantilloner à :** sélectionne un pixel au centre de la zone d’échantillonnage et remplace l’ensemble de la zone par ce pixel à la résolution définie. Le sous-échantillonnage réduit considérablement le temps de conversion par rapport à l’échantillonnage classique, mais il produit également des images moins lisses et continues.
 
-Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous n’alliez pas au-dessous de ce paramètre de résolution recommandé, les images ne contenant aucune ligne droite, aucun schéma géométrique ou aucun schéma répété ne sont pas affectées par une résolution plus faible.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
+Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous ne soyez pas en dessous de ce paramètre de résolution recommandé, les images qui ne contiennent pas de lignes droites, ou de motifs géométriques ou répétitifs, ne sont pas affectées par une résolution inférieure.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
 
 Déterminez également si les utilisateurs et utilisatrices doivent agrandir une page. Par exemple, si vous créez un document PDF d’une carte, envisagez d’utiliser une résolution d’image plus élevée afin que les utilisateurs et utilisatrices puissent zoomer sur cette carte.
 

@@ -9,14 +9,18 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 100%
 
 ---
 
 # Mise à jour du type de licence pour le déploiement {#update-the-license-type-for-the-deployment}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Lors du processus d’installation d’AEM forms, vous avez utilisé Configuration Manager pour configurer et déployer les modules AEM forms dont vous avez besoin. Par défaut, ces modules sont configurés avec une licence d’évaluation de 60 jours. Utilisez la page Changer de licence dans la console d’administration pour modifier le type de licence du déploiement. Les modules actuellement déployés s’affichent sur la page Changer de licence.
 

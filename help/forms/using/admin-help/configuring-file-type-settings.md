@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '6200'
 ht-degree: 100%
 
 ---
 
 # Configuration des paramètres de type de fichier {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Dans PDF Generator, vous pouvez définir les paramètres de l’application pour les types de fichiers pris en charge. Sous Windows, vous pouvez définir les paramètres de l’application pour chaque type de fichier pris en charge. Sous UNIX et Linux, vous pouvez définir les paramètres de l’application pour les formats HTML en PDF et OpenOffice.
 

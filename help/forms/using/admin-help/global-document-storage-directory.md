@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
@@ -82,13 +82,15 @@ Vous pouvez modifier l’emplacement GDS dans la console d’administration une 
 
 >[!NOTE]
 >
->Migrez les données de la manière suivante, sinon une perte de données se produira.
+> * Migrez les données de la manière suivante, sinon une perte de données se produira.
+> * Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
+
 
 1. Connectez-vous à la console d’administration et cliquez sur Paramètres > Paramètres de Core System > Configurations.
-1. Dans la zone Répertoire de stockage global de documents, entrez le chemin complet du nouveau répertoire GDS, puis cliquez sur OK.
-1. Arrêtez immédiatement le serveur d’applications.
-1. Déplacez tous les fichiers de l’ancien répertoire GDS vers le nouvel emplacement, en conservant la structure de répertoire interne.
-1. Redémarrez le serveur d’applications.
+2. Dans la zone Répertoire de stockage global de documents, entrez le chemin complet du nouveau répertoire GDS, puis cliquez sur OK.
+3. Arrêtez immédiatement le serveur d’applications.
+4. Déplacez tous les fichiers de l’ancien répertoire GDS vers le nouvel emplacement, en conservant la structure de répertoire interne.
+5. Redémarrez le serveur d’applications.
 
 ## À propos des fichiers de déploiement {#about-deployment-files}
 

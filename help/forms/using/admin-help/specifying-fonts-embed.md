@@ -9,14 +9,18 @@ exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 100%
 
 ---
 
-# Spécifier les polices à incorporer {#specifying-fonts-to-embed}
+# Définition des polices à incorporer {#specifying-fonts-to-embed}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Vous pouvez spécifier les polices qui sont toujours incorporées ou qui ne le sont jamais dans les formulaires générés par le service Forms. L’incorporation de polices augmente la taille de fichier des formulaires. Incorporez des polices inhabituelles que les utilisateurs et utilisatrices ont rarement sur leurs systèmes. N’incorporez pas les polices courantes généralement installées.
 

@@ -9,14 +9,18 @@ exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '187'
 ht-degree: 100%
 
 ---
 
 # À propos de la terminologie concernant l’administration et les processus {#about-administration-and-process-terminology}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Pour administrer efficacement le workflow des formulaires, vous devez comprendre les termes suivants et la hiérarchie des éléments :
 

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1208'
 ht-degree: 100%
 
 ---
 
 # Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux {#managing-invited-and-local-user-accounts}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Utilisez la page Utilisateurs invités et locaux pour gérer les utilisateurs et utilisatrices invités et locaux. Cette page s’affiche uniquement si les conditions suivantes sont remplies :
 

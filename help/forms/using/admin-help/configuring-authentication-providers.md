@@ -9,14 +9,18 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1592'
 ht-degree: 100%
 
 ---
 
 # Configurer les fournisseurs d’authentification {#configuring-authentication-providers}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Les domaines hybrides requièrent au moins un fournisseur d’authentification et les domaines d’entreprise requièrent au moins un fournisseur d’authentification ou un fournisseur d’annuaires.
 

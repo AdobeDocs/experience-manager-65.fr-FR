@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
 
-# Configuration de Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
+
+# Configuration de Connector for Microsoft SharePoint
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Connecteur pour Microsoft SharePoint permet la communication entre AEM forms et Microsoft SharePoint. Pour plus d’informations, voir Connecteurs pour ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 1. Dans la console d’administration, cliquez sur Services > Connecteur pour Microsoft SharePoint.
-1. Spécifiez les paramètres suivants pour votre serveur SharePoint :
+2. Spécifiez les paramètres suivants pour votre serveur SharePoint :
 
    **Nom d’hôte du serveur SharePoint :** numéro de port du nom d’hôte de l’application web sur le serveur SharePoint, au format `[hostname]:'port'`.
 
@@ -31,7 +36,7 @@ Connecteur pour Microsoft SharePoint permet la communication entre AEM forms et 
 
    **Nom de domaine :** domaine où se trouve le serveur SharePoint.
 
-1. Cliquez sur Enregistrer.
+3. Cliquez sur Enregistrer.
 
 ## Service de configuration Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 

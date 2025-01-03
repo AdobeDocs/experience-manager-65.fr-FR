@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 100%
 
 ---
 
 # Configurer les emplacements pour Forms {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 Vous pouvez spécifier les emplacements URL, URI et fichier des attributs, tels que la racine web, l’emplacement des formulaires à récupérer, le fichier du PDF de contrôle utilisé dans les transformations PDFForm et l’emplacement du cache.
 

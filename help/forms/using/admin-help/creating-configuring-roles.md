@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2495'
 ht-degree: 100%
 
 ---
@@ -99,6 +99,10 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 >L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 ## Créer un rôle {#create-a-role}
+
+>[!NOTE]
+> 
+> Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
 1. Dans la console d’administration, cliquez sur Paramètres > User Management > Gestion des rôles, puis sur Nouveau rôle.
 1. Dans la zone Nom du rôle, saisissez le nom du rôle, indiquez éventuellement une description, puis cliquez sur Suivant.
