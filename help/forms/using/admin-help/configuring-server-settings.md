@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2643'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateu
 
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Notifications de tâche.
 1. Sous Type de notification, cliquez sur Affectation de tâche pour les utilisateurs, les utilisatrices ou le groupe - Affectation de tâche pour les groupes.
-1. Sélectionnez Activer affectation de tâche pour les utilisateurs et les utilisatrices ou Activer  le groupe - Affectation de tâche pour les groupes.
+1. Sélectionnez Activer affectation de tâche pour les utilisateurs et les utilisatrices ou Activer le groupe - Affectation de tâche pour les groupes.
 1. (Notifications aux utilisateurs ou utilisatrices seulement) Pour inclure le formulaire et ses données en pièce jointe à l’e-mail d’affectation de tâche, sélectionnez Inclure les données de formulaire.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).

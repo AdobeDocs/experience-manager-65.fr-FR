@@ -1,6 +1,6 @@
 ---
 title: Configurer Connector for IBM Content Manager
-description: Configurez Connector for IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
+description: Configurez Connector for IBM® Content Manager pour permettre la communication entre AEM Forms et IBM® Content Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
 ht-degree: 100%
 

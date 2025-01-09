@@ -1,5 +1,5 @@
 ---
-title: Conversion de fichiers à l’aide de PDF Generator
+title: Conversion de fichiers à l’aide de PDF Generator
 description: Le service PDF Generator convertit les formats de fichiers natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
 ht-degree: 100%
 
 ---
 
-# Conversion de fichiers à l’aide de PDF Generator{#converting-files-using-pdf-generator}
+# Conversion de fichiers à l’aide de PDF Generator{#converting-files-using-pdf-generator}
 
 >[!NOTE]
 > 

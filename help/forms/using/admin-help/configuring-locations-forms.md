@@ -1,5 +1,5 @@
 ---
-title: Configurer les emplacements pour Forms
+title: Configuration des emplacements pour Forms
 description: Découvrez comment configurer l’emplacement d’AEM Forms. Vous pouvez spécifier les emplacements de fichier de l’attribut, l’emplacement du formulaire, le fichier du PDF de contrôle et l’emplacement du cache.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
 ---
 
-# Configurer les emplacements pour Forms {#configuring-locations-for-forms}
+# Configuration des emplacements pour Forms {#configuring-locations-for-forms}
 
 >[!NOTE]
 > 

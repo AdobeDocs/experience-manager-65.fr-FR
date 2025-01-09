@@ -10,9 +10,9 @@ exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7415'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ Utilisez les options générales pour spécifier la version d’Acrobat à utili
  <tbody>
   <tr>
    <th><p>Acrobat 4 (PDF 1.3)</p> </th>
-   <th><p>Acrobat  5 (PDF 1.4)</p> </th>
+   <th><p>Acrobat 5 (PDF 1.4)</p> </th>
    <th><p>Acrobat 6 (PDF 1.5)</p> </th>
    <th><p>Acrobat 7 (PDF 1.6) et Acrobat 8 (PDF 1.7)</p> </th>
   </tr>
@@ -230,7 +230,7 @@ Ces options permettent de configurer les images monochromes, en niveaux de gris 
 
 **Sous-échantilloner à :** sélectionne un pixel au centre de la zone d’échantillonnage et remplace l’ensemble de la zone par ce pixel à la résolution définie. Le sous-échantillonnage réduit considérablement le temps de conversion par rapport à l’échantillonnage classique, mais il produit également des images moins lisses et continues.
 
-Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous ne soyez pas en dessous de ce paramètre de résolution recommandé, les images qui ne contiennent pas de lignes droites, ou de motifs géométriques ou répétitifs, ne sont pas affectées par une résolution inférieure.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
+Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous n’alliez pas au-dessous de ce paramètre de résolution recommandé, les images ne contenant aucune ligne droite, aucun schéma géométrique ni aucun schéma répété ne sont pas affectées par une résolution plus faible.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
 
 Déterminez également si les utilisateurs et utilisatrices doivent agrandir une page. Par exemple, si vous créez un document PDF d’une carte, envisagez d’utiliser une résolution d’image plus élevée afin que les utilisateurs et utilisatrices puissent zoomer sur cette carte.
 

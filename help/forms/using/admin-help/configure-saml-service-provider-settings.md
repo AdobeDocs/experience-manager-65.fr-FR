@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Le langage SAML (Security Assertion Markup Language) est l’une des options qu
 Pour obtenir une explication sur SAML, voir [Présentation technique du langage SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Configuration > Paramètres du fournisseur de services SAML.
-1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM forms (par exemple, `https://AEMformsserver`).
+1. Dans la zone ID d’entité du fournisseur de services, saisissez un ID unique à utiliser comme identifiant pour l’implémentation du fournisseur de services AEM Forms. Vous pouvez également définir cet ID unique lors de la configuration du fournisseur d’identité (par exemple, `um.lc.com`). Vous pouvez également utiliser l’URL d’accès à AEM Forms (par exemple, `https://AEMformsserver`).
 1. Dans le champ URL de base du fournisseur de services, saisissez l’URL de base du serveur Forms (par exemple, `https://AEMformsserver:8080`).
 1. (Facultatif) Pour permettre à AEM Forms d’envoyer des demandes d’authentification signées à l’IDP, effectuez les tâches suivantes :
 

@@ -1,5 +1,5 @@
 ---
-title: Ajouter et configurer des utilisateurs et des utilisatrices
+title: Ajout et configuration d’utilisateurs et d’utilisatrices
 description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs ou des utilisatrices et de configurer d’autres paramètres utilisateur.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
@@ -8,13 +8,13 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
 ht-degree: 100%
 
 ---
 
-# Ajouter et configurer des utilisateurs et des utilisatrices {#adding-and-configuring-users}
+# Ajout et configuration d’utilisateurs et d’utilisatrices {#adding-and-configuring-users}
 
 >[!NOTE]
 > 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10836'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
 ## Paramètres du service Audit Workflow. {#audit-workflow-service-settings}
 
-Workbench permet d’enregistrer les instances de processus lorsqu’elles s’exécutent au moment de l’exécution, puis de les relire pour observer le comportement du processus. (Voir [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).) Pour économiser de l’espace sur le système de fichiers du serveur Forms, vous pouvez limiter la quantité de données d’enregistrement de processus stockées. Vous pouvez configurer les propriétés suivantes du service Audit Workflow Service (`AuditWorkflowService`) :
+Workbench permet d’enregistrer les instances de processus lorsqu’elles s’exécutent au moment de l’exécution, puis de les relire pour observer le comportement du processus. (Voir l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).) Pour économiser de l’espace sur le système de fichiers du Serveur Formulaires, vous pouvez limiter la quantité de données d’enregistrement de processus qui est stockée. Vous pouvez configurer les propriétés suivantes du service Audit Workflow Service (`AuditWorkflowService`) :
 
 **maxNumberOfRecordingInstances :** nombre maximal d’enregistrements conservés. Lorsque le nombre maximum est atteint, l’enregistrement le plus ancien est supprimé du système de fichiers lors de la création d’un nouvel enregistrement. Cette propriété est utile si vous avez tendance à créer de nombreux enregistrements et que vous souhaitez supprimer les anciens enregistrements automatiquement. La valeur par défaut est 50.
 
@@ -299,7 +299,7 @@ dans le nom d’utilisateur (Windows uniquement) :** indique les caractères qu
 
 Lorsque vous créez un Guide, certaines ressources, telles que sa définition, sont intégrées dans ce Guide. Les ressources peuvent également se présenter sous la forme de références aux éléments d’application stockés localement ou sur le serveur AEM Forms. Le Guide ne contient aucune donnée, et les valeurs des entrées et de l’emplacement d’envoi ne sont pas adaptées à tous les environnements externes.
 
-Dans la plupart des cas, les services de rendu de Guides par défaut suffisent pour préparer un Guide en vue de son utilisation dans Workspace ou dans d’autres environnements externes. (Dans la vue Services, dans Workbench, le service par défaut est Guides (système)/Processes/Render Guide - 1.0.) Le service Guide Utilities ( `GuidesUtility`) vous permet de créer un processus personnalisé pour le rendu d’un Guide, si nécessaire.
+Dans la plupart des cas, les services de rendu de Guides par défaut suffisent pour préparer un Guide en vue de son utilisation dans Workspace ou dans d’autres environnements externes. (Dans la vue Services, dans Workbench, le service par défaut est Guides (system)/Processes/Render Guide - 1.0.) Le service Guide Utilities (`GuidesUtility`) vous permet de créer un processus personnalisé pour le rendu d’un Guide, si nécessaire.
 
 Les opérations de Guide Utilities vous permettent d’ajouter les tâches de rendu de Guide suivantes à un processus :
 
@@ -320,7 +320,7 @@ Les valeurs par défaut du service Guide Utilities prennent en charge la plupart
 
 **collateralExpiryInSeconds :** intervalle au bout duquel expire une demande d’élément associé d’un client. La valeur par défaut est 315576000.
 
-**mismatchExpiryInSeconds :** intervalle au bout duquel expire une demande d’élément associé d’un client, lorsque la balise d’entité (eTag) ne correspond pas. (Une eTag est un en-tête de réponse HTTP.) La valeur par défaut est 1.
+**mismatchExpiryInSeconds :** intervalle au bout duquel expire une demande d’élément associé d’un client, lorsque la balise d’entité (eTag) ne correspond pas. (Une eTag est un en-tête de réponse HTTP). La valeur par défaut est 1.
 
 **guideContext :** racine du contexte de l’application web Guides. Correspond à la valeur définie via l’application Web Guides. Par défaut, cette valeur est réglée sur /Guides/.
 
@@ -696,7 +696,7 @@ Validation Of Signatures :** lorsque cette option est sélectionnée, les infor
 
 ## Paramètres du service Dossier de contrôle {#watched-folder-service-settings}
 
-Le service Watched Folder (`WatchedFolder`) permet de configurer les attributs communs à tous les points d’entrée Watched Folder. Il fournit également des valeurs par défaut pour les points d’entrée du service Dossier de contrôle. (Voir [Configuration des points d’entrée Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Il n’est pas appelé par les applications clientes externes ni utilisé dans les processus créés dans Workbench.
+Le service Watched Folder (`WatchedFolder`) permet de configurer les attributs communs à tous les points d’entrée Watched Folder. Il fournit également des valeurs par défaut pour les points d’entrée du service Dossier de contrôle. (Voir [Configuration des points d’entrée de dossier de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Il n’est pas appelé par des applications clientes externes ni utilisé dans des processus créés dans Workbench.
 
 Les paramètres ci-dessous sont disponibles pour le service Dossier de contrôle.
 

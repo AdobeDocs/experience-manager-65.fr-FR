@@ -10,7 +10,7 @@ exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '616'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Si vous souhaitez rétablir l’e-mail par défaut, cliquez sur Rétablir le con
 
 Les utilisateurs et utilisatrices disposant du rôle Administrateur ou administratrice PDFG ou Utilisateur ou utilisatrice PDFG peuvent installer une imprimante réseau PDFG Network Printer. Un JDK 32 bits doit être installé sur l’ordinateur.
 
-1. (Administrateurs et administratrices PDFG) Dans la console d’administration, cliquez sur Services > PDF Generator  > PDFG Network Printer.
+1. (Administrateurs et administratrices PDFG) Dans la console d’administration, cliquez sur Services > PDF Generator > PDFG Network Printer.
 
    (Utilisateurs PDFG) Accédez à lʼadresse `http(s)://[host]:'port'/pdfgui` et cliquez sur le lien sous Installation de l’imprimante réseau PDFG Network Printer.
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1042'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Vous pouvez configurer le ralentissement pour Work Manager, afin que les tâche
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
-   <td><p>Spécifie la taille maximale du lot pour Work Manager. La taille du lot par défaut est 0.</p><p>Si le statut d’un processus dans Work Manager n’est pas mis à jour même une fois la tâche terminée, définissez la taille du lot sur 1.</p></td>
+   <td><p>Spécifie la taille maximale du lot pour Work Manager. La taille du lot par défaut est 10.</p><p>Si le statut d’un processus dans Work Manager n’est pas mis à jour même une fois la tâche terminée, définissez la taille du lot sur 1.</p></td>
   </tr>
  </tbody>
 </table>

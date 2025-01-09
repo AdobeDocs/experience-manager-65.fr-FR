@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3241'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Si vous avez sélectionné l’option Activer la référence dans les paramètre
 
 Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server peuvent requérir un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory .
+**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory.
 
 **Description :** attribut de schéma pour la description de l’utilisateur.
 

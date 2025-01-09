@@ -1,5 +1,5 @@
 ---
-title: Importation et exportation du fichier de configuration
+title: Import et export du fichier de configuration
 description: Découvrez comment importer et exporter le fichier de configuration pour modifier les préférences du serveur ou configurer une autre instance de produit AEM Forms.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
 ht-degree: 100%
 
 ---
 
-# Importation et exportation du fichier de configuration {#importing-and-exporting-the-configuration-file}
+# Import et export du fichier de configuration {#importing-and-exporting-the-configuration-file}
 
 >[!NOTE]
 > 

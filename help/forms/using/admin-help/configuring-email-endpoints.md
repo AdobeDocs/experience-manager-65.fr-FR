@@ -1,5 +1,5 @@
 ---
-title: Configuration des points d’entrée des e-mails
+title: Configuration des points d’entrée d’e-mail
 description: Découvrez comment configurer des points d’entrée d’e-mail. Les points d’entrée d’e-mail vous permettent d’appeler un service en envoyant un ou plusieurs documents à un compte de messagerie spécifique.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3808'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configuration des points d’entrée des e-mails {#configuring-email-endpoints}
+# Configuration des points d’entrée d’e-mail {#configuring-email-endpoints}
 
 >[!NOTE]
 > 
@@ -36,7 +36,7 @@ Tous les points d’entrée d’e-mail sont configurés avec un nom d’utilisat
 
 Si vos utilisateurs envoient des documents dont les noms et les chemins de conversion contiennent des caractères d’alphabet des langues de l’Europe occidentale, ils doivent utiliser une application d’e-mail prenant en charge les types d’encodage requis (Latin1 [ISO-8859-1], Langues de l’Europe occidentale [Windows] ou UTF-8). Pour plus d’informations, consultez le document *Installation et déploiement d’AEM forms* correspondant à votre serveur d’applications.
 
-Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée de courrier électronique par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service de courrier électronique ont deux objectifs :
+Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée d’e-mail par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service E-mail ont deux objectifs :
 
 * Pour configurer les attributs communs à tous les points d’entrée d’e-mail
 * Pour fournir des valeurs par défaut à tous les points d’entrée d’e-mail

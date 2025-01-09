@@ -1,5 +1,5 @@
 ---
-title: Spécifier des paramètres de sécurité
+title: Définition des paramètres de sécurité
 description: Découvrez comment définir des paramètres de sécurité pour protéger les fichiers de données XML. La fonction de paramètre de sécurité contrôle les entités externes dans les entrées XML.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
 ht-degree: 100%
 
 ---
 
-# Spécifier des paramètres de sécurité {#specifying-security-settings}
+# Définition des paramètres de sécurité {#specifying-security-settings}
 
 >[!NOTE]
 > 

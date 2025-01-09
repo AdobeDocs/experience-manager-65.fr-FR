@@ -10,9 +10,9 @@ exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4725'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utili
 
 Après leur enregistrement, les personnes invitées peuvent utiliser les documents protégés par une politique pour lesquels elles disposent d’une autorisation. Selon les fonctionnalités activées par l’administrateur ou l’administratrice, les utilisateurs et utilisatrices externes peuvent être autorisés à appliquer des politiques à des documents, à créer, à modifier et à supprimer des politiques et à ajouter d’autres utilisateurs et utilisatrices externes aux politiques.
 
-**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security Voir Configuration du serveur Document Security. Cette option permet à tous les utilisateurs d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
+**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security (Voir Configuration de Document Security Server.) Cette option permet à l’ensemble des utilisateurs et des utilisatrices d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
 
 >[!NOTE]
 >

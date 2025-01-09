@@ -1,5 +1,5 @@
 ---
-title: Importation et gestion des archives
+title: Importer et gérer des archives
 description: Découvrez comment importer et gérer des archives. L’option Archives permet d’importer et de gérer les fichiers LCA créés dans Workbench. Vous pouvez importer, configurer, utiliser et supprimer une archive.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1450'
 ht-degree: 100%
 
 ---
 
-# Importation et gestion des archives {#import-and-manage-archives}
+# Importer et gérer des archives {#import-and-manage-archives}
 
 >[!NOTE]
 > 

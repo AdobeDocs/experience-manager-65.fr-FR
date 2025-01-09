@@ -1,5 +1,5 @@
 ---
-title: Spécifier les polices à incorporer
+title: Définir les polices à incorporer
 description: Découvrez comment spécifier les polices à incorporer dans un formulaire adaptatif. Vous pouvez spécifier les polices qui sont incorporées ou ne le sont jamais dans des formulaires générés par le service Forms.
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
 ht-degree: 100%
 
 ---
 
-# Spécifier les polices à incorporer{#specify-fonts-to-embed}
+# Définir les polices à incorporer{#specify-fonts-to-embed}
 
 >[!NOTE]
 > 

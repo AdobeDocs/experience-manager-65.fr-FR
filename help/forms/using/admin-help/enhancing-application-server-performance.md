@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1882'
 ht-degree: 100%
 
@@ -179,7 +179,7 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 
 1. Cliquez sur Démarrer > Exécuter pour lancer l’éditeur de registre, puis dans le champ Ouvrir, tapez `regedit` et cliquez sur OK.
 1. Accédez à la clé de registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`.
-1. Dans le volet droit de l’éditeur de registre, recherchez le nom de valeur TcpTimedWaitDelay. Si ce nom n’apparaît pas, sélectionnez  Édition > Nouveau > Valeur DWORD dans la barre de menus pour l’ajouter.
+1. Dans le volet droit de l’éditeur de registre, recherchez le nom de valeur TcpTimedWaitDelay. Si ce nom n’apparaît pas, sélectionnez Édition > Nouveau > Valeur DWORD dans la barre de menus pour l’ajouter.
 1. Dans la zone Nom, saisissez `TcpTimedWaitDelay`
 
    >[!NOTE]

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Lorsque vous testez un certificat, User Management charge les vérifications de 
 1. Cliquez sur Nouveau mappage de certificats et dans la liste Pour l’émetteur, sélectionnez l’alias du certificat tel que configuré dans Trust Store Management.
 1. Mappez l’un des attributs du certificat à l’attribut d’un utilisateur ou d’une utilisatrice. Par exemple, vous pouvez mapper le nom commun du certificat à l’ID de connexion de l’utilisateur ou utilisatrice.
 
-   Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur ou utilisatrice dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats sont des noms tels que *Alex Pink (authentification)* et *Alex Pink (signature)* et que le nom commun dans la base de données User Management est *Alex Pink*, vous utilisez une expression régulière pour extraire la partie requise de l’attribut de certificat (dans cet exemple, *Alex Pink*.) L’expression régulière que vous spécifiez doit être conforme à la spécification RegEx Java.
+   Si le contenu de l’attribut dans le certificat est différent du contenu de l’attribut de l’utilisateur ou utilisatrice dans la base de données de User Management, vous pouvez utiliser une expression régulière Java (regex) pour faire correspondre les deux attributs. Par exemple, si les noms communs des certificats ressemblent à *Alex Pink (authentification)* et *Alex Pink (signature)* et que le nom commun dans la base de données User Management est *Alex Pink*, vous utilisez une expression régulière pour extraire la partie requise de l’attribut de certificat (dans cet exemple, *Alex Pink*). L’expression régulière que vous spécifiez doit être conforme à la spécification regex Java.
 
    Vous pouvez transformer l’expression en spécifiant l’ordre des groupes dans la zone Ordre personnalisé. L’ordre personnalisé s’utilise avec la méthode `java.util.regex.Matcher.replaceAll()`. Le comportement observé correspond à celui de cette méthode et la chaîne d’entrée (l’ordre personnalisé) doit être spécifiée en conséquence.
 
