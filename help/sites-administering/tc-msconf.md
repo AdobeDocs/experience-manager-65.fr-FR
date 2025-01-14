@@ -6,15 +6,15 @@ role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Connexion à Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.microsoft.com/fr-fr/translator/business/) afin de traduire le contenu de pages ou de ressources. Après obtention d’une licence Microsoft pour utiliser Microsoft Translator, configurez le connecteur en suivant les instructions de cette page.
+AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.microsoft.com/fr-fr/translator/business/) afin de traduire le contenu des pages ou des ressources. Après obtention d’une licence Microsoft pour utiliser Microsoft Translator, configurez le connecteur en suivant les instructions de cette page.
 
 | Propriété | Description |
 |---|---|
@@ -23,7 +23,7 @@ AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.micr
 | ID d’espace de travail | (Facultatif) ID de votre moteur Microsoft Translator personnalisé à utiliser |
 | Clé d’abonnement | Votre clé d’abonnement Microsoft pour Microsoft Translator |
 
-La procédure suivante crée une configuration Microsoft Translator.
+La procédure suivante crée une configuration Microsoft Translator.
 
 1. Dans le [panneau de navigation](/help/sites-authoring/basic-handling.md#first-steps), cliquez sur **Outils** -> **Services cloud** -> **Services cloud de traduction**.
 1. Accédez à l’emplacement où vous souhaitez créer la configuration. Normalement, il s’agit de la racine de votre site, mais il peut s’agir aussi d’une configuration globale par défaut.
@@ -43,6 +43,6 @@ La procédure suivante crée une configuration Microsoft Translator.
 1. Cliquez sur **Connexion** pour vérifier la connexion.
 1. Cliquez sur **Enregistrer et fermer**.
 
-## Publication des configurations du service de traducteur {#publishing-the-translator-service-configurations}
+## Publication des configurations du service Translator {#publishing-the-translator-service-configurations}
 
 La dernière étape consiste à publier les configurations de Microsoft Translator pour prendre en charge le contenu traduit publié à l’aide de l’action [publication d’une arborescence](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree).

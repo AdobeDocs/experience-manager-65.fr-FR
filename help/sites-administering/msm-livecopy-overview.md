@@ -10,9 +10,9 @@ exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ La **vue d’ensemble de Live Copy** peut être ouverte lors de l’affichage de
 
 ## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
-L’**aperçu de la Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
+L’**aperçu de Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
 1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](/help/sites-administering/msm.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page) :
@@ -77,7 +77,7 @@ Lorsque vous sélectionnez une page de plan directeur, les actions suivantes son
 
 ![Plan directeur sélectionné - Actions disponibles](assets/chlimage_1-361.png)
 
-* Modification
+* Modifier
 
    * Ouvrez la page de plan directeur pour la modifier.
 
