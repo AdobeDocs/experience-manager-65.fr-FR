@@ -1,6 +1,6 @@
 ---
-title: Propriétés et noeuds de contenu
-description: Consultez cette page pour en savoir plus sur les propriétés de contenu et les noeuds.
+title: Propriétés et nœuds de contenu
+description: Consultez cette page pour en savoir plus sur les propriétés et les nœuds de contenu.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,58 +9,56 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 26%
+source-wordcount: '333'
+ht-degree: 22%
 
 ---
 
-# Propriétés et noeuds de contenu {#content-properties-and-nodes}
+# Propriétés et nœuds de contenu {#content-properties-and-nodes}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Les articles, bannières et collections sont représentés sous la forme cq:Pages dans AEM.
 
-Ils partagent les mêmes propriétés communes que dans n’importe quel cq:Page , en plus de plusieurs autres propriétés affichées ci-dessous qui représentent les métadonnées des services Mobile On Demand de Adobe Experience Manager (AEM) et l’intégration qui prennent en charge les propriétés.
+Ils partagent les mêmes propriétés communes que celles trouvées dans n’importe quel cq:Page en plus de plusieurs autres présentées ci-dessous qui représentent les métadonnées des services mobiles On-Demand Adobe Experience Manager (AEM) et les propriétés de prise en charge de l’intégration.
 
-Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
+Les tableaux suivants décrivent les propriétés et les nœuds de contenu.
 
-## Propriétés d’intégration courantes {#common-integration-properties}
+## Propriétés d’intégration communes {#common-integration-properties}
 
-| **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** | **Description** |
+| **Nom de la propriété** | **Type** | **Valeurs par défaut ou valeurs attendues** | **Description** |
 |---|---|---|---|
-| dps-id | Chaîne |  | affectée par AEM Mobile et stockée par AEM une fois chargée dans AEM Mobile ou importée depuis AEM Mobile |
+| dps-id | Chaîne |  | affecté par AEM Mobile et stocké par AEM une fois chargé dans AEM Mobile ou importé depuis AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
-| dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans l’aemm-id complet) |
+| dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans l’aem-id complet) |
 | dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
-| dps-lastUploaded | Date |  | date du dernier téléchargement d’AEM vers AEM Mobile |
-| dps-lastUploadedBy | Chaîne : userid |  | ID de l’utilisateur qui a effectué la dernière requête de chargement d’AEM vers AEM Mobile |
+| dps-lastUploaded | Date |  | date du dernier chargement d’AEM vers AEM Mobile |
+| dps-lastUploadedBy | String:userid |  | id de l’utilisateur qui a effectué la dernière demande de chargement d’AEM vers AEM Mobile |
 
-## Propriétés des métadonnées principales {#core-metadata-properties}
+## Propriétés des métadonnées de base {#core-metadata-properties}
 
-| Nom de la propriété | Type | Valeurs par défaut ou attendues |
+| Nom de la propriété | Type | Valeurs par défaut ou valeurs attendues |
 |--- |--- |--- |
 | dps-title | Chaîne |  |
 | dps-shortTitle | Chaîne |  |
 | dps-abstract | Chaîne |  |
 | dps-shortAbstract | Chaîne |  |
-| dps-département | Chaîne |  |
+| dps-department | Chaîne |  |
 | dps-category | Chaîne |  |
-| dps-keywords | Chaîne[] |  |
-| dps-internalKeywords | Chaîne[] |  |
-| importance dps | Chaîne[] | Importance de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-keywords | String[] |  |
+| dps-internalKeywords | String[] |  |
+| dps-importance | String[] | Importance à partir de {« low », « normal », « high »} |
 
 ### Articles {#articles}
 
-| **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** |
+| **Nom de la propriété** | **Type** | **Valeurs par défaut ou valeurs attendues** |
 |---|---|---|
 | dps-author | Chaîne |  |
 | dps-authorURL | Chaîne |  |
 | dps-hideFromBrowsePage | Booléen |  |
-| dps-access | Chaîne | ProtectedAccess de {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
+| dps-access | Chaîne | ProtectedAccess depuis {« protected », « metered », « free »} |
 | **Social** |  |  |
 | dps-socialShareURL | Chaîne |  |
 | dps-articleText | Chaîne |  |
@@ -68,27 +66,27 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 
 ### Bannières {#banners}
 
-| **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** |
+| **Nom de la propriété** | **Type** | **Valeurs par défaut ou valeurs attendues** |
 |---|---|---|
-| dps-tapAction |  | Appuyez surAction de {webLink}. |
+| dps-tapAction |  | TapAction depuis l’{webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Collections {#collections}
 
-| Nom de la propriété | Type | Valeurs par défaut ou attendues |
+| Nom de la propriété | Type | Valeurs par défaut ou valeurs attendues |
 |--- |--- |--- |
 | dps-productId | Chaîne |  |
-| dps-readPosition | Chaîne | de {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-readingPosition | Chaîne | depuis {« reset »,« retain »} |
 | dps-horizontalSwipe | Booléen |  |
 | dps-allowDownload | Booléen |  |
-| dps-openDefault | Chaîne | de {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | Chaîne | de {« browsePage »,« contentView »} |
 | dps-layout | Chaîne |  |
 
-## Noeuds de contenu {#content-nodes}
+## Nœuds de contenu {#content-nodes}
 
-### Noeuds communs {#common-nodes}
+### Nœuds communs {#common-nodes}
 
-| Nom du nœud | Type | Valeurs par défaut ou attendues | Description |
+| Nom du nœud | Type | Valeurs par défaut ou valeurs attendues | Description |
 |--- |--- |--- |--- |
 | image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
@@ -96,18 +94,18 @@ Les tableaux suivants décrivent les propriétés et les noeuds du contenu.
 
 #### Articles {#articles-1}
 
-| Nom du nœud | Type | Valeurs attendues par défaut | Description |
+| Nom du nœud | Type | Valeurs par défaut attendues | Description |
 |--- |--- |--- |--- |
 | social-share-image |  | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |
 
 #### Bannières {#banners-1}
 
-| Nom du nœud | Type | Valeurs attendues par défaut | Description |
+| Nom du nœud | Type | Valeurs par défaut attendues | Description |
 |---|---|---|---|
 | S/O |  |  |  |
 
 #### Collections {#collections-1}
 
-| Nom du nœud | Type | Valeurs attendues par défaut | Description |
+| Nom du nœud | Type | Valeurs par défaut attendues | Description |
 |--- |--- |--- |--- |
 | background-image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |

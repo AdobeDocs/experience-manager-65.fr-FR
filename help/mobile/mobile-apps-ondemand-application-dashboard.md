@@ -1,6 +1,6 @@
 ---
-title: Tableau de bord des applications AEM Mobile
-description: Vous pouvez gérer le contenu de votre application et de votre application mobile à partir du tableau de bord de l’application AEM Mobile ou du centre de contrôle. Consultez cette page pour en savoir plus.
+title: Tableau de bord de l’application AEM Mobile
+description: Vous pouvez gérer votre application et le contenu de l’application mobile à partir du tableau de bord de l’application AEM Mobile ou du Centre de contrôle. Consultez cette page pour en savoir plus.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,36 +9,34 @@ exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 9%
+source-wordcount: '582'
+ht-degree: 5%
 
 ---
 
-# Tableau de bord des applications AEM Mobile {#aem-mobile-application-dashboard}
+# Tableau de bord de l’application AEM Mobile {#aem-mobile-application-dashboard}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Vous pouvez gérer le contenu de votre application et de votre application mobile à partir du tableau de bord de l’application AEM Mobile ou du centre de contrôle.
+Vous pouvez gérer votre application et le contenu de l’application mobile à partir du tableau de bord de l’application AEM Mobile ou du Centre de contrôle.
 
-Vous pouvez parcourir chaque mosaïque du Centre de contrôle pour afficher ou modifier les détails en cliquant sur &quot;...&quot; dans le coin inférieur droit.
+Vous pouvez explorer chaque mosaïque du Control Center pour afficher ou modifier des détails en cliquant sur le signe « ... » dans le coin inférieur droit.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
 >
->Vous pouvez réorganiser l’ordre des mosaïques en cliquant sur l’icône de capture de la mosaïque (9 points en haut à gauche). Le changement de commande est spécifique à l’utilisateur, différent pour les utilisateurs individuels.
+>Vous pouvez réorganiser l’ordre des mosaïques en cliquant sur l’icône en forme de pince de la mosaïque (en haut à gauche, 9 points). Le changement d’ordre est spécifique à l’utilisateur ou à l’utilisatrice, différent pour chaque utilisateur ou utilisatrice.
 
-La gestion du contenu des applications nécessite un effort collectif des développeurs, des auteurs de contenu et des administrateurs. Les auteurs manipulent les pages, qui sont à leur tour basées sur des modèles et des composants générés par les développeurs d’applications.
+La gestion du contenu de l’application nécessite un effort collectif de la part des développeurs, des auteurs de contenu et des administrateurs. Les auteurs manipulent les pages, qui sont à leur tour basées sur des modèles et des composants générés par les développeurs d’applications.
 
-Enfin, les administrateurs publient stratégiquement le contenu de l’application mis à jour.
+Enfin, les administrateurs publient stratégiquement le contenu de l’application mise à jour.
 
-## Mosaïque Gérer l’application {#the-manage-app-tile}
+## La Mosaïque Gérer L’Application {#the-manage-app-tile}
 
-La mosaïque **Gérer l’application** affiche les informations d’application disponibles :
+La mosaïque **Gérer l’application** affiche les informations disponibles sur l’application :
 
 * Titre
 * Description
@@ -48,42 +46,42 @@ La mosaïque **Gérer l’application** affiche les informations d’application
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-## Mosaïque Gérer la connexion {#the-manage-connection-tile}
+## La Mosaïque Gérer La Connexion {#the-manage-connection-tile}
 
 La mosaïque **Gérer la connexion** affiche les informations de connexion AEM Mobile On-demand Services :
 
-* Nom de la configuration de la publicité
-* Nom et identifiant du projet
-* État de la connexion
+* Nom de la configuration cloud
+* Nom et ID du projet
+* Statut de la connexion
 
 >[!NOTE]
 >
->Cliquez sur l’engrenage en haut à droite pour configurer une configuration cloud Mobile On-Demand.
+>Cliquez sur l’engrenage en haut à droite pour configurer un cloud mobile On-Demand.
 >
->Voir [Configuration de Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
+>Voir [ Configuration des services On-Demand mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
 ## Gestion des entités {#managing-entities}
 
-Ces trois mosaïques fournissent un aperçu de l’état du contenu d’une application :
+Ces 3 mosaïques donnent un aperçu de l’état du contenu d’une application :
 
 * **bannières**
 * **articles**
 * **collections**
 
-Chaque mosaïque peut être développée pour fournir une vue de liste plus détaillée en cliquant sur les points de suspension (..) dans le coin inférieur droit. Ces vues de liste offrent un autre moyen d’accéder aux actions courantes de Mobile On Demand, telles que la suppression, le chargement et la modification des propriétés.
+Chaque mosaïque peut être développée pour fournir une vue de liste plus détaillée en cliquant sur les points de suspension (...) dans le coin inférieur droit. Ces vues de liste offrent un autre moyen d’accéder aux actions mobiles à la demande courantes telles que la suppression, le chargement et la modification des propriétés.
 
-### Mosaïque Gestion des bannières {#the-manage-banners-tile}
+### La Mosaïque Gérer les bannières {#the-manage-banners-tile}
 
-La mosaïque **Gérer les bannières** vous permet de gérer le contenu d’une bannière. Les informations suivantes s’affichent pour une bannière :
+La mosaïque **Gérer les bannières** permet de gérer le contenu d’une bannière. Les informations suivantes s’affichent pour une bannière :
 
 * image
-* **TITLE** : nom de la bannière
-* **MODIFIED** : dernière modification dans AEM
-* **UPLOADED** : dernier téléchargé à partir d’AEM
-* **PUBLISHED** : dernier formulaire de demande publié AEM
-* **SOURCE** : source (AEM locale ou distante de Mobile On Demand)
+* **TITRE** : nom de la bannière
+* **MODIFIÉ** : dernière modification dans AEM
+* **UPLOADED** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié par AEM
+* **SOURCE** : source (AEM local ou distant de Mobile On Demand)
 
 L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau de bord de l’application AEM Mobile :
 
@@ -91,18 +89,18 @@ L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau
 
 >[!NOTE]
 >
->Voir **[Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)** pour créer, supprimer ou mettre à jour les bannières.
+>Pour créer, supprimer ou mettre à jour des bannières ](/help/mobile/mobile-on-demand-managing-banners.md)**reportez-vous à la section**[ Gestion des bannières .
 
-### Mosaïque Gestion des articles {#the-manage-articles-tile}
+### La Mosaïque Gérer Les Articles {#the-manage-articles-tile}
 
-La mosaïque **Gérer les articles** vous permet de gérer le contenu d’un article. Les informations suivantes s’affichent pour un article :
+La mosaïque **Gérer les articles** permet de gérer le contenu d’un article. Les informations suivantes s’affichent pour un article :
 
 * image
-* **TITLE** : nom de l’article
-* **MODIFIED** : dernière modification dans AEM
-* **UPLOADED** : dernier téléchargé à partir d’AEM
-* **PUBLISHED** : dernier formulaire de demande publié AEM
-* **SOURCE** : source (AEM locale ou distante de Mobile On Demand)
+* **TITRE** : nom de l’article
+* **MODIFIÉ** : dernière modification dans AEM
+* **UPLOADED** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié par AEM
+* **SOURCE** : source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les articles** dans le tableau de bord de l’application AEM Mobile :
 
@@ -110,18 +108,18 @@ L’image suivante montre la mosaïque **Gérer les articles** dans le tableau d
 
 >[!NOTE]
 >
->Voir [**Gestion des articles**](/help/mobile/mobile-on-demand-managing-articles.md) pour créer, supprimer ou mettre à jour des articles.
+>Voir [**Gestion des articles**](/help/mobile/mobile-on-demand-managing-articles.md) pour créer, supprimer ou mettre à jour les articles.
 
-### Mosaïque Gérer les collections {#the-manage-collections-tile}
+### La Mosaïque Gestion Des Collections {#the-manage-collections-tile}
 
-La mosaïque **Gérer les collections** vous permet de gérer le contenu d’une collection. Les informations suivantes s’affichent pour une collection :
+La mosaïque **Gérer les collections** permet de gérer le contenu d’une collection. Les informations affichées sont les suivantes pour une collection :
 
 * image
 * **TITLE** : nom de la collection
-* **MODIFIED** : dernière modification dans AEM
-* **UPLOADED** : dernier téléchargé à partir d’AEM
-* **PUBLISHED** : dernier formulaire de demande publié AEM
-* **SOURCE** : source (AEM locale ou distante de Mobile On Demand)
+* **MODIFIÉ** : dernière modification dans AEM
+* **UPLOADED** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernier formulaire de demande publié par AEM
+* **SOURCE** : source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les collections** dans le tableau de bord de l’application AEM Mobile :
 
@@ -129,14 +127,14 @@ L’image suivante montre la mosaïque **Gérer les collections** dans le tablea
 
 >[!NOTE]
 >
->Voir **[Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)** pour créer, supprimer ou mettre à jour des collections.
+>Consultez la section **[Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)** pour créer, supprimer ou mettre à jour les collections.
 
 ### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous connaissez le tableau de bord de l’application, consultez les ressources suivantes pour créer une application mobile :
 
 * [Actions de création et de configuration d’application](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
-* [Association d’une application On-Demand à une configuration cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
+* [Association d’une application à la demande à une configuration cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Actions de gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
 ### Ressources supplémentaires {#additional-resources}
@@ -144,4 +142,4 @@ Une fois que vous connaissez le tableau de bord de l’application, consultez le
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
 * [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Administration de contenu pour l’utilisation d’AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
+* [Administration de contenu pour utiliser AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

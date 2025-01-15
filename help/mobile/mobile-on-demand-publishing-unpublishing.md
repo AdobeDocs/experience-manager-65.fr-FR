@@ -1,6 +1,6 @@
 ---
-title: Publish - Ne plus publier de contenu
-description: Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, suivez cette page pour découvrir comment publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
+title: Dépublication de contenu par Publish
+description: Une fois que vous êtes familiarisé avec les actions de gestion de contenu sur les articles, les bannières et les collections, consultez cette page pour découvrir comment publier votre contenu. Vous pouvez également dépublier votre contenu.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,40 +9,38 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 9%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
-# Publish - Ne plus publier de contenu{#publish-unpublish-content}
+# Dépublication de contenu par Publish{#publish-unpublish-content}
+
+{{ue-over-mobile}}
+
+Une fois que vous êtes familiarisé avec les actions de gestion de contenu sur les articles, les bannières et les collections, vous pouvez publier votre contenu. Vous pouvez également dépublier votre contenu.
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) dans l’aide en ligne.
 
-Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, vous pouvez publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
+## Publication/dépublication du contenu {#publishing-unpublishing-the-content}
 
->[!NOTE]
->
->Pour en savoir plus sur les considérations de conception pour les applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) dans l’aide en ligne.
-
-## Publication/annulation de la publication du contenu {#publishing-unpublishing-the-content}
-
-Cela diffère d’une &quot;Publish AEM&quot;. Vous n’envoyez pas de contenu vers une instance de serveur Publish AEM pour le rendre visible publiquement. Ici, vous informez Mobile On Demand que le contenu sélectionné doit être rendu public dans l’application Mobile On Demand en ligne.
+Cela diffère d’un « Publish AEM ». Vous ne poussez pas le contenu vers une instance de serveur AEM Publish pour le rendre visible publiquement. Ici, vous informez Mobile On-Demand que le contenu sélectionné doit être rendu public dans l’application mobile On-Demand active.
 
 >[!NOTE]
 >
->Le contenu doit être téléchargé sur Mobile On-Demand avant d’être publié.
+>Le contenu doit être chargé sur Mobile On-Demand avant de pouvoir être publié.
 
-Processus général de publication/annulation de la publication d’un article :
+Workflow général de publication/dépublication d’un article :
 
-1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
+1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
 1. Sélectionnez un article.
-1. Ajoutez des articles supplémentaires si nécessaire en mode Liste.
+1. Ajoutez des articles supplémentaires, le cas échéant, dans la vue Liste.
 1. Sélectionnez Publish dans la barre d’actions. Après quelques instants, vos articles seront maintenant publics.
-1. Suivez les étapes ci-dessus pour annuler la publication d’articles.
+1. Suivez les mêmes étapes ci-dessus pour Dépublier des articles.
 
 <!-- FAIL >>[!NOTE]
 >
@@ -55,6 +53,6 @@ Processus général de publication/annulation de la publication d’un article :
 Une fois que vous avez appris à créer et publier du contenu, reportez-vous aux sections suivantes :
 
 * [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Administration de contenu pour l’utilisation d’AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
+* [Administration de contenu pour utiliser AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, reportez-vous à la section [Création de contenu AEM pour les applications AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).
+Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, voir [ Création de contenu AEM pour les applications AEM Mobile On-demand Services ](/help/mobile/mobile-apps-ondemand.md).

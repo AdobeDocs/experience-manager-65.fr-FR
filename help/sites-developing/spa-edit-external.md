@@ -5,10 +5,10 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '2391'
-ht-degree: 100%
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+workflow-type: tm+mt
+source-wordcount: '2387'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 * `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
 * `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR.](spa-ssr.md)
+* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
@@ -375,4 +375,3 @@ Les documents de référence suivants peuvent être utiles pour comprendre le fo
 * [Documents de référence relatifs aux SPA (référence de l’API)](spa-reference-materials.md)
 * [Plan directeur d’applications sur une seule page (SPA) et PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Routage du modèle de SPA](spa-routing.md)
-* [SPA et rendu côté serveur](spa-ssr.md)

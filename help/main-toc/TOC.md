@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
-workflow-type: ht
-source-wordcount: '7475'
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+workflow-type: tm+mt
+source-wordcount: '7471'
 ht-degree: 100%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 100%
          + [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
          + [Console Aperçu de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
          + [Configuration de la synchronisation des Live Copies](/help/sites-administering/msm-sync.md)
-         + [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
+         + [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
          + [Conflits de déploiement dans MSM](/help/sites-administering/msm-rollout-conflicts.md)
          + [Résolution des problèmes et FAQ concernant MSM](/help/sites-administering/troubleshoot-msm.md)
          + [Bonnes pratiques relatives à MSM](/help/sites-administering/msm-best-practices.md)
@@ -1447,7 +1447,6 @@ ht-degree: 100%
          + [Composant RemotePage](/help/sites-developing/spa-remote-page.md)
          + [Modification d’une SPA externe dans AEM](/help/sites-developing/spa-edit-external.md)
          + [Composants composites dans les SPA](/help/sites-developing/spa-composite-component.md)
-         + [SPA et rendu côté serveur (SSR)](/help/sites-developing/spa-ssr.md)
          + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html?lang=fr)
          + [Intégration de Launch](/help/sites-developing/spa-launch.md)
          + [Documents de référence SPA](/help/sites-developing/spa-reference-materials.md)

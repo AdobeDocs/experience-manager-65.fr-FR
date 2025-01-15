@@ -9,28 +9,26 @@ exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 4%
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
 # Gestion des articles{#managing-articles}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Les actions de gestion de contenu sont les blocs de création qui permettent de créer et de gérer des articles au sein d’une application. Les actions suivantes sont effectuées sur des articles de l’application.
+Les actions de gestion de contenu sont les blocs de création qui permettent de créer et de gérer des articles dans une application. Les actions suivantes sont effectuées sur les articles dans l’application.
 
 ## Présentation des articles {#articles-overview}
 
-Les articles représentent le texte fondé sur l’art pour véhiculer l’information.
+Les articles représentent le texte basé avec l&#39;art pour transmettre l&#39;information.
 
 >[!NOTE]
 >
->Pour en savoir plus sur les rubriques suivantes des applications AEM Mobile, reportez-vous aux ressources suivantes de l’aide en ligne :
+>Consultez les ressources suivantes de l’aide en ligne pour en savoir plus sur les rubriques suivantes des applications AEM Mobile :
 >
 >* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
@@ -39,30 +37,30 @@ Les articles représentent le texte fondé sur l’art pour véhiculer l’infor
 
 ## Création d’un article {#creating-an-article}
 
-Le workflow général pour créer un article est le suivant :
+Le workflow général de création d’un article est le suivant :
 
 1. Sélectionnez **Mobile** dans le rail latéral.
-1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur la flèche vers le bas dans le coin supérieur droit de la mosaïque **Gérer les articles** .
+1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
+1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles**.
 1. Choisissez un modèle d&#39;article et cliquez sur **Suivant**.
-1. Parcourez chaque étape de l’assistant pour continuer à créer votre nouvel article.
+1. Parcourez chaque étape de l’assistant pour continuer à créer votre article.
 1. Une fois prêt, cliquez sur **Créer**.
-1. Votre nouvel article apparaît dans la mosaïque **Gérer les articles** .
+1. Votre nouvel article apparaît dans la mosaïque **Gérer les articles**.
 
-## Importation d’un nouvel article {#importing-a-new-article}
+## Importer un nouvel article {#importing-a-new-article}
 
-Le contenu Mobile On Demand existant peut être téléchargé (importé) de Mobile On-Demand vers AEM. Cela permet l’édition et l’affichage de contenu local.
+Le contenu Mobile On-Demand existant peut être téléchargé (importé) depuis Mobile On-Demand vers AEM. Cela permet la modification et l’affichage de contenu local.
 
 >[!NOTE]
 >
->L’importation ne comprend pas d’images.
+>L’importation n’inclut pas les images.
 
-Workflow d’import d’un nouvel article
+Workflow pour importer un nouvel article
 
-1. Depuis Mobile, sélectionnez votre application mobile à la demande dans le catalogue.
+1. Dans Mobile, choisissez l’application Mobile On-Demand dans le catalogue.
 1. Cliquez sur la flèche vers le bas située dans le coin supérieur droit de la mosaïque **Gérer les articles** et sélectionnez Importer des articles.
 1. Cliquez sur **Importer des articles** dans la boîte de dialogue, puis sur Fermer.
-1. Vos articles Mobile On-Demand apparaissent désormais dans la mosaïque **Gérer les articles**.
+1. Vos articles Mobile On-Demand apparaissent maintenant dans la mosaïque **Gérer les articles**.
 
 >[!CAUTION]
 >
@@ -72,7 +70,7 @@ Workflow d’import d’un nouvel article
 
 ## Modification d’un article {#editing-an-article}
 
-Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifier un article. Des composants tels que du texte et des images peuvent être ajoutés/supprimés. Les images de DAM Assets peuvent être insérées.
+Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
 
 >[!CAUTION]
 >
@@ -80,61 +78,61 @@ Utilisez l’éditeur de glisser-déplacer intégré AEM pour ajouter ou modifie
 
 Workflow de modification d’un article :
 
-1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article AEM issu de la mosaïque **Gérer les articles** .
+1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
+1. Sélectionnez un article d’origine AEM dans la mosaïque **Gérer les articles**.
 1. Cliquez sur l’article en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
-1. Utilisez l’éditeur de contenu pour faire glisser le contenu d’un article (manuscrits, images, texte, etc.).
+1. Utilisez l’éditeur de contenu pour faire glisser le contenu de l’article (manuscrits, images, texte, etc.).
 
 ### Affichage et modification des métadonnées dans un article {#viewing-and-editing-the-metadata-within-an-article}
 
-Le contenu tel que les articles, bannières, etc., présente de nombreuses propriétés telles que des titres, descriptions, images. Cette action est utilisée pour afficher et modifier ces propriétés. Vous pouvez éventuellement charger ces modifications dans Mobile On-Demand lors de l’enregistrement.
+Le contenu tel que les articles, les bannières, etc., possède de nombreuses propriétés telles que des titres, des descriptions, des images. Cette action permet d’afficher et de modifier ces propriétés. Ces modifications peuvent éventuellement être chargées sur Mobile On-Demand lors de l’enregistrement.
 
-Processus général d’affichage/de modification d’un article :
+Workflow général d’affichage/de modification d’un article :
 
-1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article dans la mosaïque **Gérer les articles** .
+1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
+1. Sélectionnez un article dans la mosaïque **Gérer les articles**.
 
 1. Sélectionnez **Afficher les propriétés** dans la barre d’actions.
 1. Affichez toutes les métadonnées disponibles pour cet article.
-1. Modifiez les métadonnées si vous le souhaitez et cliquez sur **Enregistrer** une fois terminé.
+1. Modifiez les métadonnées si vous le souhaitez et cliquez sur **Enregistrer** lorsque vous avez terminé.
 1. Vous pouvez éventuellement charger immédiatement les modifications dans Mobile On-Demand.
 
-## Téléchargement d’un article {#uploading-an-article}
+## Chargement d’un article {#uploading-an-article}
 
-L’action de téléchargement copie le contenu sélectionné et l’ajoute à un projet Mobile On-Demand. Le contenu existant de Mobile On Demand est déjà remplacé par la nouvelle version.
+L’action de chargement copie le contenu sélectionné et l’ajoute à un projet Mobile On-Demand. Le contenu Mobile On-Demand existant est remplacé par la nouvelle version.
 
-Processus général de téléchargement d’un article :
+Workflow général de chargement d’un article :
 
-1. Depuis **Mobile**, sélectionnez votre application mobile à la demande dans le catalogue.
-1. Dans la mosaïque **Gérer les articles**, sélectionnez un article à charger vers Mobile On-Demand.
-1. Ajoutez d’autres articles si nécessaire en mode Liste.
+1. Dans **Mobile**, choisissez l’application Mobile On-Demand dans le catalogue.
+1. Dans le volet **Gérer les articles**, sélectionnez un article à charger sur Mobile On-Demand.
+1. Ajoutez d’autres articles, le cas échéant, dans la vue Liste.
 1. Sélectionnez **Télécharger** dans la barre d’actions, puis cliquez sur Télécharger dans la boîte de dialogue.
-1. Vos articles sont maintenant chargés sur Mobile On-Demand.
+1. Votre ou vos articles sont maintenant chargés sur Mobile On-Demand.
 
 ![chlimage_1-4](assets/chlimage_1-4.gif)
 
 ## Suppression d’un article {#deleting-an-article}
 
-Cette opération supprime le contenu sélectionné de Mobile On-Demand, et éventuellement de l’instance d’AEM locale.
+Cette opération supprime le contenu sélectionné de Mobile On-Demand et, éventuellement, de l’instance AEM locale.
 
 Workflow général de suppression d’un article :
 
-1. Depuis Mobile, sélectionnez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les articles** .
-1. Assurez-vous qu’il est sélectionné dans la liste et sélectionnez d’autres options à supprimer.
+1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
+1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les articles**.
+1. Assurez-vous qu’il est sélectionné dans la liste. Sélectionnez d’autres éléments à supprimer selon vos besoins.
 1. Cliquez sur **Supprimer** dans la barre d’actions.
-1. Vérifiez si vous souhaitez supprimer de AEM et de Mobile On-Demand.
+1. Cochez cette case si vous souhaitez supprimer d’AEM et Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
-1. Votre article est maintenant retiré de la liste.
+1. Votre article est maintenant supprimé de la liste.
 
 ![chlimage_1-5](assets/chlimage_1-5.gif)
 
 ### Les étapes suivantes {#the-next-steps}
 
-Pour en savoir plus sur la gestion des articles, voir
+Une fois que vous en savez plus sur la gestion des articles, consultez
 
 * [Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)
-* [Chargement de ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publication/annulation de la publication du contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Chargement des ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
+* [Publication/dépublication du contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 * [Aperçu avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md)

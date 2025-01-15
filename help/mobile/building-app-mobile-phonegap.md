@@ -1,6 +1,6 @@
 ---
 title: Création d’applications mobiles
-description: Cette page fournit un article détaillé complet sur la création d’une application mobile à l’aide du code disponible sur GitHub. Créez votre application à installer sur un appareil ou un simulateur à des fins de test ou de publication dans les boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build.
+description: Cette page contient un article détaillé complet sur la création d’une application mobile à l’aide du code disponible dans GitHub. Créez votre application pour l’installer sur un appareil ou un simulateur à des fins de test ou de publication sur des boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,65 +9,63 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 3%
+source-wordcount: '1007'
+ht-degree: 1%
 
 ---
 
 # Création d’applications mobiles{#building-mobile-applications}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Créez votre application à installer sur un appareil ou un simulateur à des fins de test ou de publication dans les boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build.
+Créez votre application pour l’installer sur un appareil ou un simulateur à des fins de test ou de publication sur des boutiques d’applications. Vous pouvez créer des applications localement à l’aide de l’interface de ligne de commande PhoneGap ou dans le cloud à l’aide de PhoneGap Build.
 
-Un article complet détaillé sur la création d&#39;une application mobile à l&#39;aide du code disponible sur GitHub est disponible [ici](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
+Un article détaillé complet sur la création d’une application mobile à l’aide du code disponible dans GitHub est disponible [ici](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
 
 ## Déplacement de l’application vers l’instance Publish {#moving-the-application-to-the-publish-instance}
 
-Déplacez les fichiers d’application vers l’instance de publication afin de pouvoir fournir des mises à jour de contenu aux instances installées de l’application mobile et de créer l’application à l’aide du contenu publié. Les applications se composent de deux branches de noeud dans le référentiel :
+Déplacez les fichiers d’application vers l’instance de publication afin de fournir des mises à jour de contenu aux instances installées de l’application mobile et de créer l’application à l’aide du contenu publié. Les applications se composent de deux branches de nœud dans le référentiel :
 
-* `/content/phonegap/apps/<application name>` : pages web que les auteurs créent et activent.
-* `/content/phonegap/content/<application name>` : fichiers de configuration d’application et configurations de synchronisation de contenu.
+* `/content/phonegap/apps/<application name>` : pages web créées et activées par les auteurs.
+* `/content/phonegap/content/<application name>` : fichiers de configuration de l’application et configurations de synchronisation du contenu.
 
 >[!NOTE]
 >
->Si vous ne déplacez pas les fichiers de l’application vers l’instance de publication, les auteurs de contenu ne peuvent pas mettre à jour le cache de synchronisation du contenu.
+>Si vous ne déplacez pas les fichiers d’application vers l’instance de publication, les auteurs de contenu ne peuvent pas mettre à jour le cache de synchronisation de contenu.
 
 Il vous suffit de déplacer les fichiers de la branche `/content/phonegap/content/<application name>` vers l’instance de publication. Les fichiers de la branche `/content/phonegap/apps/<application name>` sont déplacés lorsque l’auteur active les pages.
 
-AEM fournit deux méthodes pour déplacer du contenu en bloc vers l’instance de publication :
+AEM propose deux méthodes pour déplacer du contenu en bloc vers l’instance de publication :
 
 * [Utilisez la commande Activer l’arborescence](/help/sites-authoring/publishing-pages.md) sur la console de réplication.
-* [Créez un module](/help/sites-administering/package-manager.md) qui contient le contenu et répliquez le module.
+* [Créez un package](/help/sites-administering/package-manager.md) qui contient le contenu et réplique le package.
 
-Par exemple, une application mobile nommée phonegapapp est créée. Le noeud suivant doit être déplacé vers l’instance de publication : /content/phonegap/content/phonegapapp.
+Par exemple, une application mobile nommée phonegapapp est créée. Le nœud suivant doit être déplacé vers l’instance de publication : /content/phonegap/content/phonegapapp.
 
-**Conseil :** Pour déplacer un module de l’instance d’auteur vers l’instance de publication, utilisez la commande Répliquer du module.
+**Conseil :** pour déplacer un package de l’instance d’auteur vers l’instance de publication, utilisez la commande Répliquer sur le package.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
 ## Création à l’aide de l’interface de ligne de commande PhoneGap {#building-using-the-phonegap-command-line-interface}
 
-Compilez l’application PhoneGap sur votre ordinateur à l’aide de l’interface de ligne de commande PhoneGap (CLI). Pour inclure le contenu AEM dans votre application, AEM crée un fichier ZIP qui contient le contenu de votre application mobile, les configurations de synchronisation de contenu et d’autres ressources requises. Téléchargez le fichier ZIP et incluez-le dans votre version.
+Compilez l’application PhoneGap sur votre ordinateur à l’aide de l’interface de ligne de commande PhoneGap. Pour inclure le contenu AEM dans votre application, AEM crée un fichier ZIP contenant le contenu de votre application mobile, les configurations de synchronisation de contenu et d’autres ressources requises. Téléchargez le fichier ZIP et incluez-le dans votre version.
 
-### Préparation de votre environnement de création {#preparing-your-build-environment}
+### Préparation de votre environnement de génération {#preparing-your-build-environment}
 
-Pour créer à l’aide de l’interface de ligne de commande de PhoneGap, vous devez installer Node.js et l’utilitaire client PhoneGap. Vous avez besoin d’une connexion Internet pour effectuer la procédure suivante.
+Pour créer à l’aide de l’interface de ligne de commande PhoneGap, vous devez installer Node.js et l’utilitaire client PhoneGap. Une connexion Internet est nécessaire pour effectuer la procédure suivante.
 
 1. Téléchargez et installez [Node.js](https://nodejs.org/fr).
-1. Ouvrez un terminal ou une invite de commande et saisissez la commande de noeud suivante pour installer l’utilitaire PhoneGap :
+1. Ouvrez un terminal ou une invite de commande et saisissez la commande de nœud suivante pour installer l’utilitaire PhoneGap :
 
    ```shell
    npm install -g phonegap
    ```
 
-   Sur un système UNIX® ou Linux®, vous devrez peut-être préfixer la commande avec `sudo`.
+   Sur un système UNIX® ou Linux®, vous devrez peut-être ajouter le préfixe `sudo` à la commande.
 
-   Le terminal affiche les résultats d’une série de commandes de GET HTTP. Une fois l’installation terminée, le terminal indique où les bibliothèques sont installées, comme dans l’exemple suivant :
+   Le terminal affiche les résultats d’une série de commandes de GET HTTP. Lorsque l’installation est réussie, le terminal affiche l’emplacement d’installation des bibliothèques comme dans l’exemple suivant :
 
    ```xml
    /usr/local/bin/phonegap -> /usr/local/lib/node_modules/phonegap/bin/phonegap.js
@@ -87,51 +85,51 @@ Pour créer à l’aide de l’interface de ligne de commande de PhoneGap, vous 
 1. (Facultatif) Obtenez le SDK pour la plateforme mobile que vous ciblez :
 
    * Pour créer des applications pour la plateforme iOS, installez la dernière version de [Xcode](https://developer.apple.com/xcode/).
-   * Pour créer des applications Android™, installez le [SDK Android™](https://developer.android.com/).
+   * Pour créer des applications Android™, installez [Android™ SDK](https://developer.android.com/).
 
 ### Téléchargement du fichier ZIP de contenu {#downloading-the-content-zip-file}
 
 Déplacez le contenu de votre application mobile vers votre système de fichiers.
 
-1. Sur la page Applications mobiles , sélectionnez votre application.
-1. (Facultatif) Pour créer l’application pour les installations complètes, cliquez sur l’icône Effacer le cache dans la barre d’outils.
+1. Sur la page Applications mobiles, sélectionnez votre application.
+1. (Facultatif) Pour créer l’application pour des installations complètes, dans la barre d’outils, cliquez sur l’icône Effacer le cache .
 
-   ![Icône Effacer le cache indiquée par un symbole de lien rompu.](do-not-localize/chlimage_1.png)
+   ![Icône Effacer le cache signalée par un symbole de lien rompu.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
-   >Le cache contient les mises à jour de contenu pour les applications installées. L’effacement du cache empêche toutes les mises à jour mises en cache.
+   >Le cache contient les mises à jour de contenu pour les applications installées. L’effacement du cache annule toutes les mises à jour mises en cache.
 
 1. Dans la barre d’outils, cliquez sur l’icône Télécharger l’interface de ligne de commande Assets .
 
-   ![Icône Télécharger l’interface de ligne de commande Assets indiquée par le symbole de tablette se chevauchant.](do-not-localize/chlimage_1-1.png)
+   ![Icône Télécharger l’interface de ligne de commande d’Assets indiquée par le symbole de tablette superposé.](do-not-localize/chlimage_1-1.png)
 
 1. Après avoir enregistré le fichier ZIP, cliquez sur Fermer dans la boîte de dialogue Succès.
 1. Extrayez le contenu du fichier ZIP.
 
 ### Utilisation de l’interface de ligne de commande PhoneGap pour créer {#using-the-phonegap-cli-to-build}
 
-Utilisez l’interface de ligne de commande PhoneGap pour compiler et installer l’application. Pour plus d’informations sur l’utilisation de l’interface de ligne de commande PhoneGap, consultez la documentation sur l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`).
+Utilisez l’interface de ligne de commande PhoneGap pour compiler et installer l’application. Pour plus d’informations sur l’utilisation de l’interface de ligne de commande PhoneGap, consultez la documentation de l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`) .
 
-1. Ouvrez une invite de commande ou de terminal et remplacez le répertoire actuel par le fichier ZIP de l’application téléchargé. Par exemple, le fichier suivant remplace le répertoire par le fichier ng-app-cli.1392137825303.zip :
+1. Ouvrez un terminal ou une invite de commande et remplacez le répertoire actuel par le fichier ZIP de l’application téléchargé. Par exemple, le code suivant modifie le répertoire en fichier ng-app-cli.1392137825303.zip :
 
    ```shell
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Saisissez la commande phonegap de la plateforme que vous ciblez. Par exemple, la commande suivante génère l’application pour Android™ :
+1. Saisissez la commande phonegap pour la plateforme que vous ciblez. Par exemple, la commande suivante crée l’application pour Android ™ :
 
    ```shell
    phonegap build android
    ```
 
-## Construire en PhoneGap Build {#building-using-phonegap-build}
+## Création À L’Aide De PhoneGap Build {#building-using-phonegap-build}
 
 Utilisez le service cloud PhoneGap pour créer votre application. Pour effectuer cette procédure, vous devez d’abord créer une configuration de PhoneGap Build.
 
-### Connexion au PhoneGap Build {#connecting-to-phonegap-build}
+### Connexion à PhoneGap Build {#connecting-to-phonegap-build}
 
-Créez une configuration de PhoneGap Build afin de pouvoir utiliser les services de PhoneGap Build depuis AEM. Indiquez le nom d’utilisateur et le mot de passe du compte PhoneGap Build que vous utiliserez pour créer vos applications mobiles.
+Créez une configuration de PhoneGap Build afin de pouvoir utiliser les services de PhoneGap Build depuis AEM. Indiquez le nom d&#39;utilisateur et le mot de passe du compte PhoneGap Build que vous utiliserez pour créer vos applications mobiles.
 
 1. Ouvrez la page Outils . ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
 1. Dans la zone Opérations CQ, cliquez sur Cloud Service.
@@ -139,36 +137,36 @@ Créez une configuration de PhoneGap Build afin de pouvoir utiliser les services
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. Dans la boîte de dialogue Créer une configuration, saisissez une valeur pour la propriété Titre . Par défaut, la valeur de la propriété Name est dérivée du titre, mais vous pouvez saisir un nom. Cliquez sur Créer.
-1. Dans la boîte de dialogue Configuration du PhoneGap Build, saisissez votre nom d’utilisateur et votre mot de passe PhoneGap Build, puis cliquez sur OK.
+1. Dans la boîte de dialogue Créer une configuration , saisissez une valeur pour la propriété Titre . Par défaut, la valeur de la propriété Nom est dérivée du titre, mais vous pouvez saisir un nom. Cliquez sur Créer.
+1. Dans la boîte de dialogue Configuration de PhoneGap Build, saisissez votre nom d’utilisateur et votre mot de passe PhoneGap Build, puis cliquez sur OK.
 
-### Utilisation du PhoneGap Build {#using-phonegap-build}
+### Utilisation de PhoneGap Build {#using-phonegap-build}
 
-Envoyez vos ressources d’application en PhoneGap Build pour la compilation pour les différentes plateformes mobiles.
+Envoyez vos ressources applicatives à PhoneGap Build pour compiler pour les différentes plateformes mobiles.
 
-1. Sur la page Applications mobiles , ouvrez votre application mobile. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
-1. (Facultatif) Pour créer l’application pour les installations complètes, sélectionnez l’application et cliquez sur l’icône Effacer le cache .
+1. Sur la page Applications mobiles, ouvrez votre application mobile. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
+1. (Facultatif) Pour créer l’application pour des installations complètes, sélectionnez l’application et cliquez sur l’icône Effacer le cache .
 
-   ![Icône Effacer le cache indiquée par un symbole de lien rompu.](do-not-localize/chlimage_1-2.png)
+   ![Icône Effacer le cache signalée par un symbole de lien rompu.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
-   >Le cache contient les mises à jour de contenu pour les applications installées. L’effacement du cache empêche toutes les mises à jour mises en cache.
+   >Le cache contient les mises à jour de contenu pour les applications installées. L’effacement du cache annule toutes les mises à jour mises en cache.
 
 1. Sélectionnez la page de démarrage, puis cliquez sur l’icône Créer à distance .
 
-   ![ Icône Créer à distance indiquée par deux vitesses rondes.{1](do-not-localize/chlimage_1-3.png)
+   ![Icône Créer la télécommande indiquée par deux engrenages ronds.](do-not-localize/chlimage_1-3.png)
 
-   **Remarque :** La version Beta d’AEM Beta ne crée pas de notification de boîte de réception une fois la génération terminée.
+   **Remarque :** la version Beta d’AEM Beta ne génère pas de notification de boîte de réception une fois la création terminée.
 
-1. Dans la boîte de dialogue Succès, cliquez sur PhoneGap Build pour ouvrir la page Adobe PhoneGap Build à l’emplacement `https://build.phonegap.com/apps`. Si vous attendez l’affichage de votre application, vous pouvez vérifier l’état du PhoneGap Build à l’adresse `https://status.build.phonegap.com/`.
+1. Dans la boîte de dialogue Succès , cliquez sur PhoneGap Build pour ouvrir la page Adobe PhoneGap Build à l’adresse `https://build.phonegap.com/apps`. Si vous attendez que votre application apparaisse, vous pouvez vérifier le Statut du PhoneGap Build à l’adresse `https://status.build.phonegap.com/`.
 
-   Pour plus d’informations sur l’installation de la version, consultez la [documentation du PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
+   Pour plus d&#39;informations sur l&#39;installation de la version, consultez la [Documentation de PhoneGap Build ](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >
-   >Les comptes en PhoneGap Build libre sont autorisés dans une application privée. Les versions PhoneGap échouent si vous créez une application privée supplémentaire.
+   >Les comptes de PhoneGap Build gratuits sont autorisés une application privée. Les builds PhoneGap échouent si vous créez une application privée supplémentaire.
 
 ### Les étapes suivantes {#the-next-steps}
 
-L’étape suivante après le processus de création est l’apprentissage de la [structure d’une application](/help/mobile/phonegap-structure-an-app.md).
+L’étape suivante du processus de création consiste à en savoir plus sur la [structure d’une application](/help/mobile/phonegap-structure-an-app.md).

@@ -5,9 +5,9 @@ exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1248'
 ht-degree: 100%
 
 ---
@@ -127,7 +127,6 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Introduction et présentation des applications monopage (SPA).](/help/sites-developing/spa-walkthrough.md) ; une bonne présentation des SPA en AEM
 * [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md) : consignes sur la manière de développer des SPA pour AEM
 * [Aperçu sur l’éditeur de SPA](/help/sites-developing/spa-overview.md) : informations détaillées sur le fonctionnement de l’éditeur de SPA
-* [Rendu côté serveur](/help/sites-developing/spa-ssr.md) : comment configurer le rendu côté serveur pour les SPA AEM
 * [Documents de référence pour les SPA](/help/sites-developing/spa-reference-materials.md) : références et liens de l’API JavaScript vers les projets GitHub de SPA AEM open source
 * [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) : comment créer des fragments de contenu
 * [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) : modèle Maven qui crée un projet Adobe Experience Manager (AEM) minimal qui s’appuie sur des bonnes pratiques pour démarrer votre site web

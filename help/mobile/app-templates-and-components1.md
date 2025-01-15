@@ -1,6 +1,6 @@
 ---
 title: Modèles et composants d’application
-description: Consultez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
+description: Consultez cette page pour en savoir plus sur les modèles et composants d’application. Il fournit des informations détaillées sur la structure des modèles.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,18 +9,16 @@ exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 53%
+source-wordcount: '387'
+ht-degree: 51%
 
 ---
 
 # Modèles et composants d’application{#app-templates-and-components}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de nœuds ayant la même structure que la page à créer, mais sans contenu réel.
 
@@ -35,7 +33,7 @@ Chaque modèle vous présente une sélection de composants disponibles pour util
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites Web** .
+Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) vers la position correspondante dans l’arborescence : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites web**.
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
@@ -53,7 +51,7 @@ Différentes propriétés peuvent être définies, notamment :
 * **jcr:title** : titre du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
 * **jcr:description** : description du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
 
-Ce noeud contient *un noeud jcr:content (cq:PageContent)* qui est utilisé comme base du noeud de contenu des pages résultantes. Cette référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
+Ce nœud contient *un nœud jcr:content (cq:PageContent)* qui sert de base au nœud de contenu des pages résultantes. Cette propriété référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 >[!NOTE]
 >
@@ -63,7 +61,7 @@ Ce noeud contient *un noeud jcr:content (cq:PageContent)* qui est utilisé comme
 >* [Composants](/help/sites-developing/components.md)
 >
 
-Une fois que vous avez une compréhension de base des modèles et des composants, consultez les ressources suivantes :
+Une fois que vous aurez compris les principes de base des modèles et des composants, reportez-vous aux ressources suivantes :
 
 * [Création et ajout de modèles et de composants](/help/mobile/mobile-ondemand-app-templates.md)
 * [Utilisation des propriétés de contenu pour exporter du contenu](/help/mobile/on-demand-content-properties-exporting.md)
@@ -72,7 +70,7 @@ Une fois que vous avez une compréhension de base des modèles et des composants
 
 ### Ressources supplémentaires {#additional-resources}
 
-Pour en savoir plus sur les rubriques supplémentaires sur les applications mobiles, voir les liens ci-dessous :
+Pour en savoir plus sur les rubriques supplémentaires relatives aux applications mobiles, consultez les liens ci-dessous :
 
 * [Mobile avec synchronisation de contenu](/help/mobile/mobile-ondemand-contentsync.md)
 * [Test des applications mobiles](/help/mobile/develop-mobile-apps-testing.md)

@@ -1,6 +1,6 @@
 ---
-title: Présentation des modèles
-description: Découvrez comment utiliser la gestion des modèles qui implique la création et la gestion de modèles pour l’association à d’éventuels objets de données.
+title: Modèles - Aperçu
+description: Découvrez comment utiliser la gestion des modèles, qui implique la création et la gestion de modèles à associer à d’éventuels objets de données.
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -8,34 +8,32 @@ exl-id: 50785534-5784-4354-b123-5e640b7c0242
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 3%
+source-wordcount: '763'
+ht-degree: 0%
 
 ---
 
-# Présentation des modèles{#models-overview}
+# Modèles - Aperçu{#models-overview}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-La gestion des modèles implique la création et la gestion de modèles pour l’association à d’éventuels objets de données. Chaque modèle comprend toutes les propriétés et définitions de champ nécessaires pour faciliter la création et le rendu des objets.
+La gestion des modèles implique la création et la gestion de modèles pour l’association avec d’éventuels objets de données. Chaque modèle comprend toutes les propriétés et définitions de champ requises pour faciliter la création et le rendu des objets.
 
-La gestion des modèles implique la création de **models**, **entities** et **spaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
+La gestion des modèles implique la création de **modèles**, **entités** et **espaces**. Le diagramme suivant illustre la relation entre le contenu AEM et les modèles.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
 ## Le modèle de contenu {#the-content-model}
 
-Un modèle décrit le type de contenu et indique les informations disponibles pour l’application native. Il s’agit d’une description de ce qui constitue un élément de contenu. Un modèle de contenu est les règles de création d’un élément de contenu. Le modèle de contenu inclut les données disponibles, les ressources pouvant être utilisées, la relation entre les ressources et les données, la relation avec d’autres modèles de contenu et les métadonnées disponibles.
+Un modèle décrit le type de contenu et indique les informations disponibles pour l’application native. Il s’agit d’une description de ce qui constitue un élément de contenu. Un modèle de contenu est la règle pour créer un élément de contenu. Le modèle de contenu inclut les données disponibles, les ressources pouvant être utilisées, la relation entre les ressources et les données, la relation avec d’autres modèles de contenu et les métadonnées disponibles.
 
-Les modèles servent également à transformer le contenu d’AEM existant en objets qui peuvent être facilement utilisés par les applications mobiles natives.
+Les modèles servent également à transformer le contenu AEM existant en objets qui peuvent être facilement utilisés par les applications mobiles natives.
 
-Content Services fournit quelques modèles d’usine pour les objets courants tels que les ressources, les collections de ressources, les pages d’HTML, les configurations d’application et les pages indépendantes du canal. Ils peuvent être configurés afin de répondre aux besoins spécifiques des clients sans nécessiter un effort de développement AEM.
+Content Services fournit quelques modèles prêts à l’emploi pour les objets courants tels que les ressources, les collections de ressources, les pages d’HTML, les configurations d’application et les pages indépendantes du canal. Ils sont configurables afin de répondre aux besoins spécifiques des clients sans nécessiter d’effort de développement AEM.
 
-Les utilisateurs peuvent créer leurs propres modèles. Cela permet de créer de nouveaux types de contenu qui ne sont pas déjà gérés par AEM. La création de modèles s’effectue via une interface utilisateur à l’aide de types primitifs existants.
+Les utilisateurs peuvent créer leurs propres modèles. Cela permet la création de nouveaux types de contenu qui ne sont pas déjà gérés par AEM. La création du modèle est effectuée via une interface utilisateur à l’aide de types primitifs existants.
 
 Le diagramme suivant illustre le modèle de contenu des applications AEM Mobile et la manière dont les entités, les dossiers et les espaces sont affectés à une application.
 
@@ -43,20 +41,20 @@ Le diagramme suivant illustre le modèle de contenu des applications AEM Mobile 
 
 ### Les modèles {#the-models}
 
-Les modèles sont utilisés pour déterminer comment les entités sont créées. Ils définissent ce qui est disponible dans une entité et comment ces données sont générées à partir du contenu AEM. Avant de commencer à utiliser des espaces, des dossiers et des entités, vous devez vous familiariser avec la création et la gestion de modèles.
+Les modèles sont utilisés pour déterminer comment les entités sont créées. Ils définissent ce qui est disponible dans une entité et comment ces données sont générées à partir du contenu AEM. Avant de commencer à utiliser les espaces, les dossiers et les entités, vous devez vous familiariser avec la création et la gestion des modèles.
 
 >[!NOTE]
 >
->Il existe un modèle en dehors d’une application, car plusieurs applications peuvent l’utiliser.
+>Un modèle existe en dehors d’une application, car plusieurs applications peuvent l’utiliser.
 >
 
 Pour créer et gérer des modèles dans le tableau de bord et le référentiel, voir **[Modèles](/help/mobile/administer-mobile-apps.md)**.
 
 ### Entités dans le modèle de contenu {#entities-in-content-model}
 
-Une entité est une instance d’un modèle de contenu. Une entité est exposée à la bibliothèque côté client via l’API Content Services et permet à une application native d’accéder au contenu de manière indépendante du canal.
+Une entité est une instance d’un modèle de contenu. Une entité est exposée via l’API Content Services à la bibliothèque côté client et permet à une application native d’accéder au contenu indépendamment du canal.
 
-S’il existe un contenu AEM existant, une entité est générée à l’aide d’un modèle et de la source de contenu AEM. Par exemple, une entité de page est un objet indépendant des canaux et des mises en page, généré à partir d’une page AEM et du modèle de page.
+S’il existe du contenu AEM, une entité est générée à l’aide d’un modèle et de la source de contenu AEM. Par exemple, une entité de page est un objet indépendant du canal et de la mise en page généré à partir d’une page AEM et du modèle de page.
 
 Les modifications apportées au contenu référencé d’une entité entraînent une modification de l’entité. Par exemple, si un *cq:page* est mis à jour, toutes les entités basées sur cette page sont également mises à jour.
 
@@ -64,25 +62,25 @@ Pour créer des entités personnalisées à partir de modèles, voir **[Utilisat
 
 >[!NOTE]
 >
->Si le modèle ne correspond pas à un contenu d’AEM existant, tel que le client a créé un modèle, il existe une interface utilisateur qui permet à un client de créer une entité.
+>Si le modèle ne correspond pas à un contenu AEM existant, comme c’est le cas lorsque le client a créé un modèle, il existe une interface utilisateur permettant au client de créer une entité.
 >
 
 ### Espaces dans le modèle de contenu {#spaces-in-content-model}
 
-Un espace permet d’organiser les entités pour un accès facile. Un espace peut contenir un ou plusieurs types d’entité et peut contenir des sous-dossiers.
+Un espace est utilisé pour organiser les entités afin d’en faciliter l’accès. Un espace peut contenir un ou plusieurs types d&#39;entités et peut contenir des sous-dossiers.
 
-Du côté AEM, un espace est un moyen pratique de gérer les entités liées. Il peut également être utilisé pour attribuer des autorisations d’autorisation. L’autorisation peut être accordée à un espace, ce qui protège les entités qui se trouvent dans cet espace.
+Du côté d’AEM, un espace est un moyen pratique de gérer les entités associées. Il peut également être utilisé pour attribuer des autorisations. Une autorisation peut être accordée à un espace, ce qui protège les entités qui se trouvent dans cet espace.
 
 *Par exemple*,
 
-Un utilisateur possède trois classifications générales d’entités. L’une est destinée à un usage interne uniquement, l’autre est approuvée pour un usage public et encore un troisième est pour les entités courantes utilisées par de nombreuses applications. Pour faciliter la gestion, l’utilisateur crée trois espaces, à savoir *internal*, *public* (avec du contenu en anglais et en français) et *common* pour gérer les entités appropriées comme indiqué ci-dessous :
+Un utilisateur possède trois classifications générales d’entités. L’un est réservé à un usage interne uniquement, un autre est approuvé pour un usage public et un troisième est toujours destiné à des entités courantes utilisées par de nombreuses applications. Pour faciliter la gestion, l&#39;utilisateur crée trois espaces, à savoir *interne*, *public* (avec des contenus en anglais et en français) et *commun* pour gérer les entités appropriées comme mentionné ci-dessous :
 
 * /content/entities/internal
 * /content/entities/public/en
 * /content/entities/public/fr
 * /content/entities/common
 
-Un point d’entrée de service est fourni à l’espace afin que la bibliothèque cliente native puisse demander une liste du contenu d’un espace. Cette &quot;liste&quot; est renvoyée sous la forme d’un objet JSON.
+Un point d’entrée de service est fourni à l’espace afin que la bibliothèque cliente native puisse demander la liste du contenu d’un espace. Cette « liste » est renvoyée sous la forme d’un objet JSON.
 
 Voir **[Espaces et entités](/help/mobile/spaces-and-entities.md)** pour créer et publier des espaces.
 
@@ -92,6 +90,6 @@ Voir **[Espaces et entités](/help/mobile/spaces-and-entities.md)** pour créer 
 
 ### Dossiers dans le modèle de contenu {#folders-in-content-model}
 
-Les dossiers permettent aux utilisateurs d’organiser les entités selon les besoins et facilitent un contrôle de liste de contrôle d’accès plus précis. Les espaces peuvent inclure des dossiers pour faciliter l’organisation du contenu et des ressources de l’espace. Un utilisateur peut créer sa propre hiérarchie sous un espace.
+Les dossiers permettent aux utilisateurs d’organiser les entités selon leurs besoins et facilitent un contrôle plus fin des listes de contrôle d’accès. Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les ressources de l’espace. Un utilisateur peut créer sa propre hiérarchie sous un espace.
 
 Pour créer et gérer des dossiers dans un espace, voir **[Utilisation de dossiers dans un espace](/help/mobile/spaces-and-entities.md)**.

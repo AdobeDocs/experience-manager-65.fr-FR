@@ -9,26 +9,24 @@ exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 17%
+source-wordcount: '112'
+ht-degree: 1%
 
 ---
 
 # Applications mobiles{#mobile-apps}
 
->[!NOTE]
->
->Adobe recommande d’utiliser l’éditeur SPA pour les projets nécessitant un rendu côté client, basé sur un framework, pour une application à une seule page (comme React). [En savoir plus](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multi-canal Adobe Experience Manager qui utilise également AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une flexibilité de déploiement remarquable, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
+Adobe Experience Manager (AEM) Mobile fait partie de la plateforme numérique multicanale Adobe Experience Manager qui utilise également AEM Assets, Sites, Screens, Workflow, User Manager, Commerce et Forms. AEM Mobile offre une remarquable flexibilité de déploiement, ce qui permet aux entreprises d’utiliser diverses sources de contenu.
 
-AEM Mobile propose plusieurs méthodes pour créer des applications. Les différentes méthodes que vous pouvez utiliser pour créer des applications sont les suivantes :
+AEM Mobile propose plusieurs méthodes pour créer des applications. Les différentes manières de créer des applications sont les suivantes :
 
 * [Administration de contenu pour AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 * [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/administer-phonegap.md)
 
 >[!NOTE]
 >
->Si vous découvrez Adobe Experience Manager, vous pouvez parcourir la section [Prise en main d’AEM](/help/sites-deploying/deploy.md).
+>Si vous découvrez Adobe Experience Manager, vous pouvez suivre la section [Prise en main d’AEM](/help/sites-deploying/deploy.md).
