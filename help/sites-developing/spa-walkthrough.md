@@ -7,7 +7,7 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: d28019efcead89cb66edfa672d6b928cbb7bcc25
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 100%
@@ -256,3 +256,4 @@ Maintenant que vous comprenez l’expérience de modification de SPA dans AEM et
 * La section [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) montre comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM.
 * La section [Présentation de l’éditeur de SPA](/help/sites-developing/spa-overview.md) examine de plus près le modèle de communication entre AEM et la SPA.
 * La section [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md) décrit comment impliquer les développeurs et développeuses front-end dans le développement d’une SPA pour AEM et décrit de quelle manière les SPA interagissent avec l’architecture d’AEM.
+
