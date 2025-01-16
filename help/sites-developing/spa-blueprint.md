@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Plan directeur d’applications d’une seule page (SPA){#spa-blueprint}
 
 Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modifier le contenu d’une application d’une seule page (SPA), cette dernière doit satisfaire certaines exigences, qui sont décrites dans ce document.
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 

@@ -9,20 +9,19 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Mappage du modèle dynamique aux composants pour les SPA{#dynamic-model-to-component-mapping-for-spas}
 
 Ce document décrit comment s’effectue le mappage entre le modèle aux composants dans le SDK JavaScript SPA pour Adobe Experience Manager (AEM).
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Module ComponentMapping {#componentmapping-module}
 

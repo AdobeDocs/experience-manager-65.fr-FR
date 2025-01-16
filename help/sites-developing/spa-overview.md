@@ -10,12 +10,13 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
@@ -23,9 +24,7 @@ Les applications monopage (SPA) peuvent améliorer considérablement l’expéri
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’éditeur de SPA et de la synchronisation entre le framework SPA et AEM.
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 

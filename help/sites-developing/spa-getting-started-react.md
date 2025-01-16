@@ -10,12 +10,13 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '1147'
-ht-degree: 100%
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Prise en main des SPA dans AEM avec React{#getting-started-with-spas-in-aem-react}
 
@@ -27,9 +28,7 @@ La fonction de création d’application sur une seule page constitue une soluti
 >
 >Cet article repose sur le framework React. Pour obtenir le document correspondant au framework Angular, voir [Prise en main des SPA dans AEM – Angular](/help/sites-developing/spa-getting-started-angular.md).
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 

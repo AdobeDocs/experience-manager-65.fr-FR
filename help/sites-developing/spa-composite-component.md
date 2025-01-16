@@ -5,12 +5,13 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Composants composites dans les SPA {#composite-components-in-spas}
 
@@ -19,6 +20,8 @@ Les composants composites exploitent la nature modulaire des composants AEM en c
 Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application monopage AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
 
 Cet article explique comment ajouter un composant composite à votre application monopage pour travailler en toute transparence avec l’éditeur d’application monopage AEM.
+
+{{ue-over-spa}}
 
 ## Cas d’utilisation {#use-case}
 

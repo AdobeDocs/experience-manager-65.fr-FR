@@ -10,12 +10,13 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
+
 
 # Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
 
@@ -23,9 +24,7 @@ Les applications monopage (SPA) peuvent améliorer considérablement l’expéri
 
 La fonctionnalité de création d’application monopage constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Présentation {#introduction}
 

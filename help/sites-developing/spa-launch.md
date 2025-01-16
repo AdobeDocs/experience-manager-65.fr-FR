@@ -10,20 +10,19 @@ exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Intégration de SPA et d’Adobe Experience Platform Launch{#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch est la méthode recommandée pour implémenter Analytics, Target et Audience Manager dans des applications monopages.
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Tutoriel {#tutorial}
 

@@ -10,12 +10,13 @@ exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
 
 # Développement de SPA pour AEM{#developing-spas-for-aem}
 
@@ -23,9 +24,7 @@ Les applications monopage (SPA) peuvent améliorer considérablement l’expéri
 
 Cet article présente des questions importantes à prendre en compte lors du recrutement d’un développeur ou d’une développeuse front-end pour développer une SPA pour AEM. Il propose un aperçu de l’architecture d’AEM pour le déploiement de SPA sur AEM.
 
->[!NOTE]
->
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+{{ue-over-spa}}
 
 ## Principes de développement de SPA pour AEM {#spa-development-principles-for-aem}
 
