@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2387'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 * `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
 * `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
+* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’utilisation du rendu côté serveur.
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
