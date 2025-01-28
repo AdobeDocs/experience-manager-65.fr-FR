@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 100%
+source-wordcount: '1747'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,8 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |--- |--- |--- |--- |
-| Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] en utilisant un paramétrage à l’aide d’[!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était précédemment appelé [!DNL Adobe Experience Cloud]. | Si vous avez des questions, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). |  |
+| Commerce | AEM CIF Classic a été supprimé. | Vous devez migrer vers [AEM CIF](/help/commerce/cif/migration.md). Si vous avez toujours besoin de CIF Classic, un package de compatibilité a été créé. [Contactez le service clientèle d’Adobe ](https://experienceleague.adobe.com/fr?support-solution=General#support). | 6.5.22.0 |
+| Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] en utilisant un paramétrage à l’aide d’[!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était précédemment appelé [!DNL Adobe Experience Cloud]. | Si vous avez des questions, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General#support). |  |
 | Activity Map Analytics | Version de l’Activity Map incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le [Plug-in d’Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr). |  |
 | Intégrations | L’intégration d’ExactTarget a été supprimée de la distribution par défaut (Quickstart) et elle n’est plus disponible. | Aucun remplacement. |  |
 | Intégrations | L’intégration de l’API Salesforce a été supprimée de la distribution par défaut (Quickstart) et est désormais proposée dans un package supplémentaire à installer à partir de la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | La fonctionnalité est toujours disponible. |
