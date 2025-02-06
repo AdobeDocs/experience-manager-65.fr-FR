@@ -7,10 +7,10 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
-ht-degree: 100%
+source-wordcount: '5597'
+ht-degree: 98%
 
 ---
 
@@ -210,6 +210,7 @@ Tenez compte des bonnes pratiques suivantes pour résoudre les problèmes de per
 * Incluez uniquement les champs et les panneaux dans les formulaires adaptatifs qui capturent les informations de l’utilisateur ou de l’utilisatrice. Maintenez le contenu statique au minimum ou utilisez les URL pour les ouvrir dans une fenêtre séparée.
 * Bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires. Par exemple, les informations personnelles, l’adresse, les détails du poste, etc. Créez des [fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md) pour les éléments et sections de formulaire communs et utilisez-les dans les formulaires. Vous pouvez également enregistrer en tant que fragment un panneau d’un formulaire existant. Toute modification apportée à un fragment est répercutée dans tous les formulaires adaptatifs associés. Cette fonction favorise la création en collaboration : plusieurs auteurs peuvent ainsi travailler simultanément sur différents fragments composant un formulaire.
 
+   * Envisagez de créer des fragments de formulaire même pour les sections non réutilisables lors de la création de formulaire. À mesure que les formulaires se développent en taille et en complexité, leur ventilation en fragments peut simplifier considérablement le processus de création et faciliter leur gestion. Cette approche vous permet de vous concentrer sur des parties plus petites et plus gérables du formulaire, plutôt que de traiter le formulaire entier en une seule fois.
    * Comme pour les formulaires adaptatifs, il est recommandé de définir tous les scripts personnalisés et de style spécifiques aux fragments dans la bibliothèque cliente à l’aide de la boîte de dialogue du conteneur de fragments. Tentez également de créer des fragments autonomes qui ne dépendent pas d’objets extérieurs.
    * Évitez d’utiliser des scripts de fragments croisés. Si vous devez désigner un objet situé hors du fragment, essayez de l’intégrer au formulaire parent. Si l’objet doit demeurer dans un autre fragment, mentionnez son nom dans le script.
 
