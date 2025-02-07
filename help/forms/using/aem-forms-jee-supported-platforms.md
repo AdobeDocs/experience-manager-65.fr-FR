@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '4010'
-ht-degree: 100%
+source-wordcount: '4098'
+ht-degree: 98%
 
 ---
 
@@ -486,7 +486,9 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >
 >En outre :
 >
->- PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
+>- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
+>- L&#39;installation de Microsoft® Office Professional Plus peut utiliser des licences en volume basées sur Retail ou MAK/KMS/AD.
+>- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
 >- PDF Generator ne prend pas en charge Microsoft® Office 365.
 >- Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 >- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
@@ -494,7 +496,12 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >- Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019.
 >- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019.
->- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+
+PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
+
+L&#39;installation de Microsoft® Office Professional Plus peut utiliser des licences en volume basées sur Retail ou MAK/KMS/AD.
+
+Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
