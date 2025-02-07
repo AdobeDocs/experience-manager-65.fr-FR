@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: b5a87404435758d660f136d2e236de699ecad541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7475'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1217,8 +1217,8 @@ ht-degree: 99%
       + [Configurer et dépanner un cluster de serveurs AEM Forms on JEE](/help/forms/developing/configure-server-cluster.md)
       + [Génération et utilisation de hachages dans les PDF forms dynamiques](/help/forms/developing/hashing-forms.md)
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
-   + {#aem-forms-glossary} du glossaire
-+[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
+   + Glossaire {#aem-forms-glossary}
++[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [Présentation et vue d’ensemble](/help/commerce/cif/introduction.md)
    + [Modifications notables apportées à AEM Content and Commerce](/help/commerce/cif/changes.md)
