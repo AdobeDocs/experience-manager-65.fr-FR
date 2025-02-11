@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 100%
+source-wordcount: '1479'
+ht-degree: 88%
 
 ---
 
+
 # Configuration du conteneur et du mode de disposition{#configuring-layout-container-and-layout-mode}
 
-La [disposition réactive](/help/sites-authoring/responsive-layout.md) est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Site_web_réactif). Les utilisateurs peuvent ainsi créer des pages Web dont la disposition et les dimensions dépendent des appareils utilisés.
+Découvrez comment configurer le conteneur et le mode de disposition.
 
->[!NOTE]
+>[!TIP]
 >
->Ce mécanisme est comparable aux mécanismes de [Web mobile](/help/sites-developing/mobile-web.md), qui utilisent le design web adaptatif (principalement pour l’interface utilisateur classique).
+>Ce document présente le responsive design aux administrateurs et aux développeurs de sites et décrit la manière dont les fonctionnalités sont intégrées à AEM.
+>
+>Pour les personnes créant du contenu, les détails sur l’utilisation des fonctionnalités de conception réactive sur une page de contenu sont disponibles dans le document [Disposition réactive pour vos pages de contenu](/help/sites-authoring/responsive-layout.md).
+
+## Vue d’ensemble {#overview}
+
+La [disposition réactive](/help/sites-authoring/responsive-layout.md) est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Site_web_réactif). Les utilisateurs peuvent ainsi créer des pages Web dont la disposition et les dimensions dépendent des appareils utilisés.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
@@ -33,7 +40,7 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
    * Le composant **Conteneur de dispositions** par défaut est défini sous :
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * Vous pouvez définir des conteneurs de mise en page en tant que :
 
@@ -49,10 +56,6 @@ Une fois que le conteneur de dispositions est positionné sur la page, vous pouv
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Cette action vous permet de créer et de modifier des sites web réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
->[!CAUTION]
->
->Bien que le composant **Conteneur de mise en page** soit disponible dans l’IU classique, il n’est entièrement fonctionnel et pris en charge que dans l’interface utilisateur optimisée pour les écrans tactiles.
-
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 * Utilisez des points d’arrêt (qui indiquent le regroupement des appareils) pour définir différents comportements de contenu en fonction de la mise en page de l’appareil.
@@ -60,9 +63,17 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 * Utilisez l’accrochage horizontal à la grille (placez les composants dans la grille, redimensionnez-les si nécessaire, définissez quand ils doivent être réduits ou déplacés pour être côte à côte ou au-dessus/en dessous).
 * Contrôlez les colonnes.
 
+>[!TIP]
+>
+>Adobe propose une [documentation GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) sur la disposition réactive. Celle-ci peut servir de référence et être distribuée aux équipes de développement d’applications front-end pour leur permettre d’utiliser la grille AEM en dehors d’AEM, par exemple lors de la création de maquettes HTML statiques pour un site AEM en préparation.
+
 >[!NOTE]
 >
 >Dans une installation prête à l’emploi, une mise en page réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). [Activez le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
+
+>[!CAUTION]
+>
+>Bien que le composant **Conteneur de mise en page** soit disponible dans l’IU classique, il n’est entièrement fonctionnel et pris en charge que dans l’interface utilisateur optimisée pour les écrans tactiles.
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ Les points d’arrêt se trouvent à l’intérieur de la section `<jcr:content>
 
 Exemple de définition :
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ Les deux exemples ci-dessous illustrent la définition :
 
 * **HTL :**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP :**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM utilise LESS pour générer des parties de la feuille de style CSS nécessai
 
 Vous devez également créer une [bibliothèque cliente](https://experienceleague.adobe.com/docs/?lang=fr) pour fournir des appels de configuration et de fonction supplémentaires. L’extrait LESS suivant est un exemple du minimum à ajouter à votre projet :
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
    * Composants qui peuvent être ajoutés au composant actif :
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Grilles réactives imbriquées {#nested-responsive-grids}
+
+Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactives pour répondre aux besoins de votre projet. Toutefois, gardez à l’esprit que la bonne pratique recommandée par Adobe est de garder la structure aussi plate que possible.
+
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
+
+* Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
+* Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.
+
+Cela inclut tous les conteneurs structurels du modèle de page.
+
+Le numéro de colonne du récipient intérieur ne doit jamais être supérieur à celui du récipient extérieur. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
+
+>[!BEGINTABS]
+
+>[!TAB Exemple de structure de nœud]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Exemple d’HTML résultant]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

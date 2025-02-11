@@ -1,6 +1,6 @@
 ---
 title: Mise en page réactive pour vos pages de contenu
-description: Adobe Experience Manager vous permet de créer une mise en page réactive pour vos pages.
+description: Adobe Experience Manager vous permet de créer une mise en page réactive pour vos pages à l’aide du composant Conteneur de mises en page .
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 100%
+source-wordcount: '1853'
+ht-degree: 94%
 
 ---
 
+
 # Disposition réactive{#responsive-layout}
 
-AEM vous propose une disposition réactive des pages à l’aide du composant **Conteneur de disposition**.
+Adobe Experience Manager vous permet de créer une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mise en page**.
 
-Il fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
+>[!TIP]
+>
+>Ce document présente une vue d’ensemble des fonctionnalités du conteneur de disposition disponibles pour les auteurs de contenu.
+>
+>Pour les administrateurs et les développeurs de site, les détails sur la configuration du conteneur de mises en page pour vos sites sont décrits dans le document [Configuration du conteneur de mises en page et du mode Mise en page](/help/sites-authoring/responsive-layout.md).
+
+## Vue d’ensemble {#overview}
+
+Le composant **conteneur de disposition** fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive. Cette grille peut réorganiser la disposition en fonction de la taille et du format de la fenêtre/l’appareil. Le composant est utilisé avec le [**mode Disposition**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), ce qui permet de créer et de modifier votre disposition réactive en fonction de l’appareil.
 
 Le conteneur de mise en page :
 
