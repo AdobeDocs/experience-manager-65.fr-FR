@@ -6,9 +6,9 @@ feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
 source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Une configuration OAuth requiert les conditions préalables suivantes :
 
 ### Configuration OAuth pour les utilisateurs et utilisatrices AMS et On-Premise existants {#steps-config-oauth-onprem}
 
-Les étapes ci-dessous peuvent être exécutées par l’administrateur système dans **CRXDE**. Le client ou la cliente AMS peut contacter le représentant ou la représentante Adobe ou envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/?lang=fr&amp;support-tab=home#support).
+Les étapes ci-dessous peuvent être effectuées par l’administrateur ou l’administratrice système dans **CRXDE**. Le client ou la cliente AMS peut contacter le représentant ou la représentante Adobe ou envoyer un ticket d’assistance après le [processus d’assistance](https://experienceleague.adobe.com/?lang=fr&amp;support-tab=home#support).
 
 1. Ajoutez ou mettez à jour les propriétés ci-dessous dans `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` :
 
@@ -69,7 +69,7 @@ Les étapes ci-dessous peuvent être exécutées par l’administrateur système
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. Dans `System/console/configMgr`, vous pouvez voir à la fois les anciens et les nouveaux fichiers de configuration. Supprimez les anciennes configurations pour les `adobe-ims-similaritysearch` de nom de fournisseur de jeton d’accès et de `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl`. Assurez-vous que la configuration mise à jour uniquement est en place, plutôt que les anciennes configurations.
+1. Dans `System/console/configMgr`, vous pouvez voir à la fois les anciens et les nouveaux fichiers de configuration. Supprimez les anciennes configurations pour `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl` et le nom du fournisseur de jeton d’accès `adobe-ims-similaritysearch`. Assurez-vous que la configuration mise à jour uniquement est en place, plutôt que les anciennes configurations.
 1. Redémarrez la console.
 
 ## Validation de la configuration {#validate-the-configuration}
@@ -88,7 +88,7 @@ Le résultat de la validation s’affiche dans la même boîte de dialogue.
 
 >[!NOTE]
 >
->Si `unsupported_grant_type` erreur se produit, essayez d’installer le correctif Granite. Pour plus d&#39;informations, consultez la section [migration du compte de service (JWT) vers les informations d&#39;identification OAuth de serveur à serveur](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+>Si l’erreur `unsupported_grant_type` se produit, essayez d’installer le correctif Granite. Consultez [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-24660).
 
 ## Intégration à la console Adobe Developer {#integrate-adobe-io}
 
@@ -139,7 +139,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer 
    >
    >L’URL fournie en tant qu’[!UICONTROL URL de service] n’est pas accessible via le navigateur et génère un message d’erreur 404. La configuration fonctionne correctement avec la même valeur que le paramètre [!UICONTROL URL de service]. Pour connaître le statut général du service et le planning de maintenance, consultez [https://status.adobe.com](https://status.adobe.com).
 
-1. Cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration OAuth]** et téléchargez le fichier de certificat public `AEM-SmartTags.crt`. De plus, vous n’êtes plus tenu de télécharger ce certificat dans la console Adobe Developer.
+1. Cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration OAuth]** et téléchargez le fichier de certificat public `AEM-SmartTags.crt`. De plus, vous n’avez plus l’obligation de charger ce certificat dans Adobe Developer Console.
 
    ![Représentation des paramètres créés pour le service de balisage intelligent](assets/smart-tags-download-public-cert1.png)
 
@@ -159,7 +159,7 @@ Pour utiliser les API de service de contenu dynamique, créez une intégration d
 
 1. Ajoutez/modifiez le **[!UICONTROL nom de l’information d’identification]** suivant les besoins. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Sélectionnez le profil de produit **[!UICONTROL Services de contenu dynamique]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**. L’API OAuth est ajoutée aux informations d’identification connectées pour une utilisation ultérieure. Vous pouvez copier la [!UICONTROL clé API (ID client)] ou [!UICONTROL Générer un jeton d’accès] à partir de celle-ci.
+1. Sélectionnez le profil de produit **[!UICONTROL Services de contenu dynamique]**. Cliquez sur **[!UICONTROL Enregistrer l’API configurée]**. L’API OAuth est ajoutée sous les informations d’identification connectées pour une utilisation ultérieure. Vous pouvez copier la [!UICONTROL clé API (ID client)] ou [!UICONTROL Générer un jeton d’accès] à partir de celle-ci.
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
