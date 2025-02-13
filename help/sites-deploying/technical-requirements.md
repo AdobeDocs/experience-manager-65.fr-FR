@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3681'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -514,8 +514,8 @@ Pour Windows x86 :
 >
 >* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
->* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
->* L&#39;installation de Microsoft® Office Professional Plus peut utiliser des licences en volume basées sur Retail ou MAK/KMS/AD.
+>* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
+>* L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
 >* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
 >* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous le système d’exploitation Linux®.
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.

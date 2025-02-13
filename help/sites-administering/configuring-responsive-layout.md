@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ Découvrez comment configurer le conteneur et le mode de disposition.
 
 >[!TIP]
 >
->Ce document présente le responsive design aux administrateurs et aux développeurs de sites et décrit la manière dont les fonctionnalités sont intégrées à AEM.
+>Ce document présente le responsive design pour le développement et l’administration de sites. Il décrit en outre la manière dont les fonctionnalités sont réalisées dans AEM.
 >
->Pour les personnes créant du contenu, les détails sur l’utilisation des fonctionnalités de conception réactive sur une page de contenu sont disponibles dans le document [Disposition réactive pour vos pages de contenu](/help/sites-authoring/responsive-layout.md).
+>Pour la création de contenu, les détails sur l’utilisation des fonctionnalités de responsive design sur une page de contenu sont disponibles dans le document [Disposition réactive pour vos pages de contenu](/help/sites-authoring/responsive-layout.md).
 
 ## Vue d’ensemble {#overview}
 
@@ -69,11 +69,11 @@ Grâce à ces mécanismes de grille réactive, vous pouvez :
 
 >[!NOTE]
 >
->Dans une installation prête à l’emploi, une mise en page réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). [Activez le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
+>Dans une installation prête à l’emploi, une disposition réactive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). [Activez le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
 
 >[!CAUTION]
 >
->Bien que le composant **Conteneur de mise en page** soit disponible dans l’IU classique, il n’est entièrement fonctionnel et pris en charge que dans l’interface utilisateur optimisée pour les écrans tactiles.
+>Bien que le composant **Conteneur de disposition** soit disponible dans l’IU classique, il n’est entièrement fonctionnel et pris en charge que dans l’interface utilisateur optimisée pour les écrans tactiles.
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
@@ -327,14 +327,14 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
 
 Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactives pour répondre aux besoins de votre projet. Toutefois, gardez à l’esprit que la bonne pratique recommandée par Adobe est de garder la structure aussi plate que possible.
 
-Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
+Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
 
 * Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
 * Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.
 
 Cela inclut tous les conteneurs structurels du modèle de page.
 
-Le numéro de colonne du récipient intérieur ne doit jamais être supérieur à celui du récipient extérieur. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
+Le numéro de colonne du conteneur interne ne doit jamais être supérieur à celui du conteneur externe. L’exemple suivant remplit cette condition. Alors que le numéro de colonne du conteneur externe est 8 pour l’écran par défaut (bureau), le numéro de colonne du conteneur interne est 4.
 
 >[!BEGINTABS]
 
@@ -357,7 +357,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemple d’HTML résultant]
+>[!TAB Exemple de page HTML]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
