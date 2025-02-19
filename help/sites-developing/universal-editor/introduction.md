@@ -4,9 +4,9 @@ description: Découvrez la flexibilité de l’éditeur universel et comment il 
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
+source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1207'
 ht-degree: 1%
 
 ---
@@ -30,8 +30,8 @@ Veuillez consulter la [documentation d’AEM as a Cloud Service sur l’éditeur
 L’éditeur universel est un service qui fonctionne en tandem avec AEM pour créer du contenu en mode découplé.
 
 * L’éditeur universel est hébergé sur `https://experience.adobe.com/#/aem/editor/canvas` et peut modifier les pages rendues par AEM 6.5.
-* La page AEM est lue par l’éditeur universel via le Dispatcher à partir de l’instance de création AEM.
-* Le service d’éditeur universel, qui s’exécute sur le même hôte que le Dispatcher, réécrit les modifications dans l’instance de création AEM.
+* La page AEM est lue par l’éditeur universel via le Dispatcher à partir de l’instance d’auteur AEM.
+* Le service d’éditeur universel, qui s’exécute sur le même hôte que le Dispatcher, réécrit les modifications dans l’instance d’auteur AEM.
 
 ![Flux de création à l’aide de l’éditeur universel](assets/author-flow.png)
 
@@ -45,7 +45,7 @@ Pour tester l’éditeur universel, vous devez effectuer les opérations suivant
 
 Une fois la configuration terminée, vous pouvez [instrumenter vos applications pour utiliser l’éditeur universel.](#instrumentation)
 
-### Mettre à jour AEM {#update-aem}
+### Mise à jour d’AEM {#update-aem}
 
 Les pack de services 21 ou 22 et un pack de fonctionnalités pour AEM sont requis pour utiliser l’éditeur universel avec AEM 6.5.
 
@@ -55,7 +55,7 @@ Assurez-vous d’exécuter au moins le pack de services 21 ou 22 pour AEM 6.5. V
 
 #### Installation du pack de fonctionnalités de l’éditeur universel {#feature-pack}
 
-Installez le **pack de fonctionnalités de l’éditeur universel pour AEM 6.5** [disponible dans la distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
+Installez le **pack de fonctionnalités de l’éditeur universel pour AEM 6.5** [disponible sur la Distribution logicielle.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
 Si vous exécutez déjà le pack de services 23 ou une version ultérieure, le pack de fonctionnalités n’est pas nécessaire.
 
@@ -67,7 +67,7 @@ Le pack de fonctionnalités installe un certain nombre de nouveaux packages pour
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Recherchez **Gestionnaire d’authentification de jeton Granite d’Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+1. Recherchez **Gestionnaire d’authentification de jeton Granite Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
 1. Dans la boîte de dialogue, remplacez l’attribut **SameSite pour le cookie du jeton de connexion** (`token.samesite.cookie.attr`) par `Partitioned`.
 1. Cliquez sur **Enregistrer**.
 
@@ -79,11 +79,11 @@ Le pack de fonctionnalités installe un certain nombre de nouveaux packages pour
 1. Supprimez la valeur `X-Frame-Options=SAMEORIGIN` de l’attribut **En-têtes de réponse supplémentaires** (`sling.additional.response.headers`) s’il existe.
 1. Cliquez sur **Enregistrer**.
 
-#### Configurez le gestionnaire d’authentification de paramètre de requête Granite Adobe. {#query-parameter}
+#### Configurez le gestionnaire d’authentification des paramètres de requête Granite Adobe. {#query-parameter}
 
 1. Ouvrez Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
-1. Recherchez **Gestionnaire d’authentification de paramètre de requête Granite Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
+1. Recherchez **Gestionnaire d’authentification des paramètres de requête Granite Adobe** dans la liste, puis cliquez sur **Modifier les valeurs de configuration**.
 1. Dans le champ **Chemin d’accès** (`path`), ajoutez des `/` à activer.
    * Une valeur vide désactive le gestionnaire d’authentification.
 1. Cliquez sur **Enregistrer**.
@@ -97,10 +97,17 @@ Le pack de fonctionnalités installe un certain nombre de nouveaux packages pour
    * Dans le champ **Mappage d’ouverture de l’éditeur universel** indiquez les chemins d’accès pour lesquels l’éditeur universel est ouvert.
    * Dans le champ **Sling:resourceTypes qui doit être ouvert par l’éditeur universel**, fournissez une liste de ressources ouvertes directement par l’éditeur universel.
 1. Cliquez sur **Enregistrer**.
+1. Vérifiez votre [configuration de l’externaliseur](/help/sites-developing/externalizer.md) et assurez-vous au minimum que les environnements local, de création et de publication sont définis comme dans l’exemple suivant.
 
-AEM ouvre l’éditeur universel pour les pages basées sur cette configuration.
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
 
-1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins d’accès qui y sont définis, l’éditeur universel s’ouvre pour lui.
+Une fois ces étapes de configuration terminées, AEM ouvre l’éditeur universel pour les pages dans l’ordre suivant.
+
+1. AEM vérifie les mappages sous `Universal Editor Opening Mapping` et si le contenu se trouve sous l’un des chemins définis à cet endroit, l’éditeur universel s’ouvre pour lui.
 1. Pour le contenu ne se trouvant pas sous les chemins définis dans `Universal Editor Opening Mapping`, AEM vérifie si le `resourceType` du contenu correspond à ceux définis dans **Sling:resourceTypes qui doivent être ouverts par l’éditeur universel** et si le contenu correspond à l’un de ces types, l’éditeur universel est ouvert pour lui à l’`${author}${path}.html`.
 1. Sinon, AEM ouvre l’éditeur de page.
 
@@ -116,7 +123,7 @@ Les variables suivantes sont disponibles pour définir vos mappages sous `Univer
 
 Exemples de mappages :
 
-* Ouvrez toutes les pages sous `/content/foo` sur l’auteur AEM :
+* Ouvrez toutes les pages sous `/content/foo` dans l’auteur AEM :
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Cela entraîne l’ouverture de `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Ouvrez toutes les pages sous `/content/bar` sur un serveur NextJS distant, en fournissant toutes les variables comme informations
@@ -125,7 +132,7 @@ Exemples de mappages :
 
 ### Configuration du service d’éditeur universel {#set-up-ue}
 
-Avec AEM mis à jour et configuré, vous pouvez configurer un service d’éditeur universel local pour votre propre développement et vos propres tests locaux.
+Une fois AEM mis à jour et configuré, vous pouvez configurer un service d’éditeur universel local pour votre propre développement et vos propres tests locaux.
 
 1. Installez Node.js version >=20.
 1. Téléchargez et décompressez le dernier service d’éditeur universel à partir de [Distribution logicielle](https://experienceleague.adobe.com/r/docs/experience-cloud/software-distribution/home).
@@ -177,7 +184,7 @@ Notez que lorsque vous suivez la documentation pour l’éditeur universel avec 
 
 >[!TIP]
 >
->Pour obtenir un guide complet destiné aux développeurs et développeuses qui commencent à utiliser l’éditeur universel, consultez le document [Universal Editor Overview for AEM Developers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires pour la prise en charge d’AEM 6.5, comme indiqué dans cette section.
+>Pour obtenir un guide complet destiné aux développeurs et développeuses qui commencent à utiliser l’éditeur universel, consultez le document [Présentation de l’éditeur universel pour les développeurs et développeuses AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) dans la documentation d’AEM as a Cloud Service, tout en gardant à l’esprit les modifications nécessaires pour la prise en charge d’AEM 6.5, comme mentionné dans cette section.
 
 ## Différences entre AEM 6.5 et AEM as a Cloud Service {#differences}
 
