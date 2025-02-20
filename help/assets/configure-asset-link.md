@@ -6,10 +6,10 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 6ab943894398733d178f561430d3f391e8722195
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 100%
+source-wordcount: '3059'
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ Pour configurer manuellement Experience Manager :
 
    Pour ajouter chaque `Client ID`, cliquez sur `+`. Cliquez sur **[!UICONTROL Enregistrer]** après l’ajout de tous les identifiants.
 
-1. Dans la configuration du **[!UICONTROL fournisseur et de l’application OAuth Adobe Granite]**, inspectez les instances du **[!UICONTROL Gestionnaire d’authentification OAuth Adobe]**. Si vous localisez une instance avec `Config ID` défini comme `ims`, utilisez-le pour les instructions de cette procédure. Sinon, cliquez sur `+` pour créer une instance de configuration. Définissez les valeurs de propriété suivantes, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la configuration du **[!UICONTROL fournisseur et application OAuth Granite Adobe]**, inspectez les instances du **[!UICONTROL fournisseur et application OAuth Granite Adobe]** existantes. Si vous localisez une instance avec `Config ID` défini comme `ims`, utilisez-le pour les instructions de cette procédure. Sinon, cliquez sur `+` pour créer une instance de configuration. Définissez les valeurs de propriété suivantes, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
    * [!UICONTROL ID client] : ne pas modifier
    * [!UICONTROL Secret client] : ne pas modifier
@@ -122,7 +122,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 
 >[!NOTE]
 >
->* Le correctif pour les profils métier est fourni dans Experience Manager 6.5.11.0.
+>* Le correctif pour les profils métier est fourni dans Experience Manager 6.5.11.0.
 >* La configuration existante continue de fonctionner si vous utilisez la même organisation Adobe IMS avec Experience Manager et CCE.
 
 
@@ -131,7 +131,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 1. Une instance d’Experience Manager en cours d’exécution avec l’authentification du porteur configurée pour AAL
 1. Installez le package suivant (pack de services 11) sur votre instance Experience Manager 6.5.
 
-   [Téléchargement d’Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Télécharger Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Contactez le [!UICONTROL service clientèle] pour obtenir l’identifiant client et la clé secrète pour l’authentification du porteur de votre organisation IMS.
 
