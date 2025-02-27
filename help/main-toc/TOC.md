@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7471'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -884,7 +884,7 @@ ht-degree: 99%
       + [Designer – Guide de référence FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65_fr)
       + [Utilisation de la signature tactile dans les formulaires HTML5](/help/forms/using/scribble-signature.md)
       + [Modifiier le contenu de la page zéro avec Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + {#accessibility-best-practices} des bonnes pratiques en matière d’accessibilité
+      + Bonnes pratiques en matière d’accessibilité {#accessibility-best-practices}
          + [Présentation](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Bonnes pratiques en matière de création de formulaires](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Techniques de test de l’accessibilité des formulaires](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1203,11 +1203,11 @@ ht-degree: 99%
       + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
       + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement Linux JBoss](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+      + [Problème d’installation du pack de services AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Traitement des documents même si le serveur AEM Forms n’est pas entièrement opérationnel](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossible d’utiliser les services de sortie, de formulaires ou de document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Atténuer les vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers 6.5.12.0 pour MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Redémarrage correct du SDK AEM](/help/forms/using/restart-aem-sdk.md)
       + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
