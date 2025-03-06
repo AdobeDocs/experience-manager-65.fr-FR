@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 93e5ae0c8b8528af9230eae51e66c91f2239edb0
-workflow-type: ht
-source-wordcount: '11157'
-ht-degree: 100%
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+workflow-type: tm+mt
+source-wordcount: '10517'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 >
 >* Consultez la section [Configuration des services cloud Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media en mode hybride.
 >
->Problème de lecture vidéo actuellement connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
+>Problème de lecture vidéo actuel connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
 >
 >* Si une vidéo publiée est mise à jour, elle doit être publiée à nouveau pour refléter les modifications apportées à la diffusion.
 >
@@ -139,7 +139,7 @@ La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à 
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les fonctions suivantes sont prises en charge :
+Pour la gestion des visionneuses de vidéos adaptatives et uniques, les fonctions suivantes sont prises en charge :
 
 * Chargez des vidéos dans divers formats pris en charge et codez-les au format MP4 H.264 pour les lire sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo adaptative, des paramètres prédéfinis de codage vidéo unique ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
 
@@ -272,10 +272,6 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   </tr>
  </tbody>
 </table>
-
->[!IMPORTANT]
->
->*Pour utiliser DASH pour vos vidéos, le support technique d’Adobe doit d’abord l’activer sur votre compte. Voir [Activer la DASH sur votre compte Dynamic Media](#enable-dash).
 
 ## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -429,60 +425,6 @@ Par exemple, supposons que la vidéo source soit en 1 920 x 1 080. Dans le t
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, une vidéo de haute qualité est obtenue, mais avec une taille de fichier compressée.
 
-### Activer DASH, la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media {#enable-dash}
-
-**À propos de l’activation de DASH sur votre compte**
-DASH (« Digital Adaptive Streaming over HTTP ») est la norme internationale pour la diffusion en continu de vidéos et largement adoptée par les différentes visionneuses de vidéos. Lorsque le DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour la diffusion en continu de vidéo adaptative. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.
-
-Voici quelques avantages clés de l’activation de DASH sur votre compte :
-
-* Module vidéo de flux DASH pour la diffusion en continu à débit adaptatif. Cette méthode permet d’améliorer l’efficacité de la diffusion. Le streaming adaptatif garantit la meilleure expérience de visionnage à vos clients et à vos clientes.
-* La diffusion en continu optimisée par le navigateur avec les lecteurs Dynamic Media bascule entre la diffusion en continu HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement au HLS lorsqu’un navigateur Safari est utilisé.
-* Vous pouvez configurer votre méthode de streaming préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.
-* Le codage vidéo optimisé garantit qu’aucun stockage supplémentaire n’est utilisé lors de l’activation de la fonctionnalité DASH. Un seul ensemble d’encodages vidéo est créé pour HLS et DASH afin d’optimiser les coûts de stockage vidéo.
-* Permet de rendre la diffusion vidéo plus accessible à vos clientes et clients.
-* Vous pouvez également obtenir l’URL de streaming au moyen des API.
-
-L’activation de DASH sur votre compte nécessite deux étapes :
-
-* Configuration de Dynamic Media pour utiliser DASH, ce que vous pouvez facilement faire vous-même.
-* Configuration d’Experience Manager 6.5 pour utiliser DASH via un dossier d’assistance clientèle Adobe que vous créez et envoyez.
-
-Lorsque vous créez un dossier de support Adobe pour activer DASH sur votre compte, la prise en charge de plusieurs sous-titres et pistes audio est automatiquement activée également. Après activation, toutes les vidéos nouvellement chargées sont traitées à l’aide d’une architecture back-end mise à jour qui prend en charge l’ajout de plusieurs sous-titres et pistes audio.
-
->[!IMPORTANT]
->
->Toutes les vidéos que vous avez téléchargées *avant* l’activation de la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media [doivent être retraitées](/help/assets/processing-profiles.md#reprocessing-assets). Cette étape de retraitement vidéo est nécessaire afin que les fonctionnalités de prise en charge de plusieurs sous-titres et pistes audio soient disponibles. Après retraitement, les URL de la vidéo continuent à fonctionner et à être lues normalement.
-
-**Pour activer DASH et la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media, procédez comme suit :**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Commencez par **configurer Dynamic Media pour DASH** : dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
-
-1. Dans la page **[!UICONTROL Configuration de la console web d’Adobe Experience Manager]**, faites défiler jusqu’au nom *Indicateur de fonctionnalité de streaming avancée d’AEM Assets Dynamic Media*.
-
-1. À gauche du nom, cochez la case pour activer DASH.
-
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
-
-1. Maintenant, utilisez l’Admin Console pour commencer la [création d’un nouveau dossier de support](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
-
-   * Nom, adresse électronique et numéro de téléphone du contact principal.
-   * Nom de votre compte Dynamic Media.
-   * Sur Experience Manager 6.5, indiquez si vous souhaitez activer DASH ainsi que la prise en charge de plusieurs sous-titres et pistes audio sur votre compte Dynamic Media.
-
-1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clientes et clients en se basant sur l’ordre dans lequel les demandes ont été envoyées.
-1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera pour se coordonner avec vous et programmer une date cible d’activation.
-1. Une fois l’opération terminée, le service clientèle vous en informe.
-1. Vous pouvez désormais effectuer l’une des opérations suivantes :
-
-   * Créez votre [paramètre prédéfini de visionneuse vidéo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) comme d’habitude.
-   * [Ajoutez plusieurs sous-titres et pistes audio](#add-msma) à votre vidéo.
-
 ## Affichage des rapports vidéo {#viewing-video-reports}
 
 >[!NOTE]
@@ -620,7 +562,6 @@ Avant d’ajouter plusieurs sous-titres et plusieurs pistes audio à votre vidé
 
 * Dynamic Media est configuré dans un environnement AEM.
 * Un [profil vidéo Dynamic Media est appliqué au dossier dans lequel vos vidéos sont ingérées](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [La prise en charge de plusieurs sous-titres et pistes audio est activée sur votre compte Dynamic Media](#enable-dash).
 
 Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVTT et Adobe `.vtt`. Les fichiers des pistes audio ajoutés sont pris en charge au format MP3.
 
@@ -853,10 +794,6 @@ La piste audio d’origine extraite d’un fichier principal ne peut pas être t
 
 ## Ajouter des sous-titres à une vidéo {#adding-captions-to-video}
 
->[!IMPORTANT]
->
->Adobe vous recommande d’[activer la fonctionnalité de sous-titres et pistes audio multiples](#enable-dash) sur votre compte Dynamic Media. Cela vous permet de tirer parti de la dernière architecture backend de Dynamic Media et d’un workflow simplifié pour ajouter des légendes, des sous-titres et des pistes audio à vos vidéos.
-
 Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux ensembles de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La lecture de la vidéo s’effectue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes nationalités puissent comprendre la partie audio.
 
 Les légendes permettent également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
@@ -904,7 +841,7 @@ Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour une expérience de visionneuse de vidéos pop-up, cliquez sur **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos pop-up, cliquez sur l’**[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -976,7 +913,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
        <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
-       <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur <strong>URL</strong>.</li>
+       <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur l’<strong>URL</strong>.</li>
        <li>Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un simple éditeur de texte.</li>
        <li>Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
@@ -1466,5 +1403,66 @@ Vous pouvez appeler le servlet des façons suivantes :
 | HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Si la diffusion DASH est désactivée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
 | DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Si la diffusion DASH est désactivée :<br>`{}` |
 | Erreur : chemin d’accès à la ressource incorrect | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+<!-- OBSOLETE. REMOVED AS PER EMAIL FROM RIYA MIDHA ON WEDNESDAY, MARCH 5, 2025
+
+### Enable DASH, multiple caption and audio track support on your Dynamic Media account {#enable-dash}
+
+**About enabling DASH on your account**
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH, which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit.
+
+When you create an Adobe Support case to enable DASH on your account, multiple caption and audio track support is automatically enabled as well. Once activated, all newly uploaded videos are processed using an updated backend architecture that supports adding multiple caption and audio tracks.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To enable DASH, multiple caption and multiple audio track support on your Dynamic Media account:**
+
+<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
+1. To enable (turn on) DASH, select the checkbox.
+1. Begin by **configuring Dynamic Media for DASH** - From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+1. From the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page, scroll to the name *AEM Assets Dynamic Media Video Advanced Streaming Feature Flag*.
+
+1. To the left of the name, select the checkbox to enable (turn on) DASH.
+
+1. Select **[!UICONTROL Save]**.
+
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH, multiple caption and multiple audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. Customer support notifies you after completion.
+1. Now, you can do either one of the following:
+
+    * Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * [Add multiple caption and audio tracks](#add-msma) to your video. -->
+
+
 
 
