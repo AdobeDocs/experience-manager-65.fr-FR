@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 99%
 
 ---
@@ -553,8 +553,6 @@ Voici quelques-uns des cas d’utilisation à prendre en compte pour l’ajout d
 |  | Audio descriptif |
 
 Tous les [formats vidéo pris en charge par Dynamic Media](/help/assets/assets-formats.md) et toutes les visionneuses de vidéos Dynamic Media, à l’exception de Dynamic Media *Video_360* sont pris en charge pour une utilisation avec plusieurs sous-titres et pistes audio.
-
-La fonctionnalité de prise en charge de plusieurs sous-titres et pistes audio est disponible pour votre compte Dynamic Media avec une fonctionnalité d’activation qui peut être activée par le service clientèle d’Adobe.
 
 ### Ajouter plusieurs sous-titres et pistes audio à votre vidéo {#add-msma}
 
@@ -1389,7 +1387,7 @@ Vous appelez le servlet en effectuant une opération `GET` sur `/dmSample/dynami
 | `manifestType` | Facultatif. Le paramètre peut être DASH ou HLS. S’il n’est pas transmis, la valeur par défaut est DASH. |
 | `onlyIfPublished` | Facultatif. S’il est transmis, l’`manifestUrl` est renvoyée uniquement si la vidéo est publiée. |
 
-Dans cet exemple, prenons la configuration suivante :
+Dans cet exemple, supposons que la configuration suivante soit effectuée :
 
 * La société est `samplecompany`.
 * L’instance de création est `http://sample-aem-author.com`.

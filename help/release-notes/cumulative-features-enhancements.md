@@ -7,10 +7,10 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '2335'
-ht-degree: 100%
+source-wordcount: '2308'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Voir également les [Notes de mise à jour du dernier pack de services d’Adobe
 * Les performances du sélecteur Polaris de sites dans les fragments de contenu ont été améliorées.
 * La personne utilisant l’éditeur de pages/le composant d’images des sites peut référencer des actifs à partir du service cloud d’Assets distant.
 * Pour trouver rapidement un projet en mode Liste où votre système peut contenir de nombreux projets, Adobe prend désormais en charge le tri côté serveur. Les nœuds de projet sont triés sur le serveur principal en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’effectuer leur rendu dans l’interface utilisateur.
-* AEM 6.5.18.0 prend en charge MongoDB, de la version 5.0 à la version 6.0.
+* AEM 6.5.18.0 prend en charge MongoDB 5.0 à 6.0.
 
 ### [!DNL Forms]
 
@@ -75,7 +75,7 @@ Voir également les [Notes de mise à jour du dernier pack de services d’Adobe
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * Connecteur 8 JDBC MySQL
 
-Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
+Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5 Forms on JEE, Adobe recommande d’utiliser le programme d’installation complet d’AEM 6.5.18.0 Forms on JEE. Pour consulter la liste complète des logiciels nouvellement ajoutés et obsolètes, reportez-vous à la documentation d’AEM Forms on JEE ou d’AEM Forms on OSGi.
 
 ## AEM 6.5, Pack de services 17—25 mai 2023
 
@@ -86,7 +86,7 @@ Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre en
 
   Vous n’avez pas besoin d’accéder à l’emplacement de la ressource et d’afficher ses propriétés pour effectuer ces opérations.
 * _Instantané&#x200B;_**Dynamic Media**- Testez des images de test ou des URL Dynamic Media pour voir la sortie de différents modificateurs d’image et les optimisations de l’imagerie dynamique pour la taille de fichier (avec diffusion WebP et AVIF), la bande passante réseau et le rapport pixel de l’appareil. Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=fr).
-* **Streaming DASH avec Dynamic Media** - Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé). Disponible maintenant pour toutes les régions, [activé au moyen d’un ticket d’assistance](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+* **Streaming DASH avec Dynamic Media** - Nouveau protocole (DASH - Dynamic Adaptive Streaming over HTTP) lancé pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé). Disponible maintenant pour toutes les régions.
 * **Intégration d’Experience Manager Sites et de fragments de contenu à Assets Next-Generation Dynamic Media** - Les utilisateurs et utilisatrices d’Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media peuvent désormais utiliser ces ressources hébergées dans le cloud pour la création et la diffusion avec des instances On-Premise ou Managed Services d’Experience Manager Sites 6.5.
 
 ### [!DNL Forms]
@@ -102,13 +102,11 @@ Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre en
 
 ## AEM 6.5, Pack de services 16—23 février 2023
 
-Prise en charge du nouveau protocole DASH (Dynamic Adaptive Streaming over HTTP) pour la diffusion en continu à débit adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF, le [format d’application de média commun], activé).
+Nouveau protocole DASH (Dynamic Adaptive Streaming over HTTP) lancé pour la diffusion en continu à débit adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF [Common Media Application Format] activé).
 
 * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux.
 * Largement adopté dans le secteur, DASH est le protocole standard international pour la diffusion en continu à débit adaptatif de vidéos.
-* Disponible désormais en Asie-Pacifique et en Amérique du Nord (activable au moyen d’un ticket d’assistance) ; bientôt en Europe, au Moyen-Orient, en Afrique.
-
-Voir [Activer DASH sur votre compte](/help/assets/video.md#enable-dash).
+* Disponible maintenant en Asie-Pacifique et en Amérique du Nord ; bientôt en Europe, au Moyen-Orient et en Afrique.
 
 ### [!DNL Forms]
 
@@ -139,7 +137,7 @@ Correctifs de bogues uniquement.
 
 * Désormais, lors de la génération d’un fichier de traduction de formulaire adaptatif, la même séquence de textes que le fichier XLIFF généré est identique à la séquence de composants dans le formulaire adaptatif correspondant.
 
-* Lorsque vous localisez un formulaire adaptatif et apportez même une petite modification au texte de la langue de base, la traduction complète est manquante pour toutes les autres langues. Le problème est corrigé dans [!DNL Experience Manager] 6.5.13.0.
+* Lorsque vous localisez un formulaire adaptatif et apportez même une petite modification au texte de la langue de base, la traduction complète est manquante pour toutes les autres langues. Le problème est résolu dans [!DNL Experience Manager] 6.5.13.0.
 
 * Améliorations de l’accessibilité pour Forms :
 
