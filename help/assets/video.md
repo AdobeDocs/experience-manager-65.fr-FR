@@ -34,7 +34,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 >
 >* Consultez la section [Configuration des services cloud Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media en mode hybride.
 >
->Problème de lecture vidéo actuel connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
+>Problème de lecture vidéo actuellement connu dans Dynamic Media *sur Experience Manager 6.5.9.0 uniquement* :
 >
 >* Si une vidéo publiée est mise à jour, elle doit être publiée à nouveau pour refléter les modifications apportées à la diffusion.
 >
@@ -139,7 +139,7 @@ La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à 
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Pour la gestion des visionneuses de vidéos adaptatives et uniques, les fonctions suivantes sont prises en charge :
+Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les fonctions suivantes sont prises en charge :
 
 * Chargez des vidéos dans divers formats pris en charge et codez-les au format MP4 H.264 pour les lire sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo adaptative, des paramètres prédéfinis de codage vidéo unique ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
 
@@ -839,7 +839,7 @@ Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour une expérience de visionneuse de vidéos pop-up, cliquez sur l’**[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
+   * Pour une expérience de visionneuse de vidéos pop-up, sélectionnez l’**[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -911,7 +911,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
        <li>Accédez à la ressource vidéo <i>publiée</i> à associer au fichier de chapitres que vous avez chargé. N’oubliez pas que les URL ne peuvent être copiées qu’<i>après</i> la <i>publication</i> des ressources. Voir <a href="/help/assets/publishing-dynamicmedia-assets.md">Publication de ressources</a>.</li>
        <li>Dans le menu déroulant, cliquez sur <strong>Visionneuses</strong>.</li>
        <li>Dans le rail de gauche, sélectionnez le nom du paramètre prédéfini de la visionneuse de vidéos. Un aperçu de la vidéo s’ouvre dans une page distincte.</li>
-       <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur l’<strong>URL</strong>.</li>
+       <li>Dans le rail de gauche, dans la partie inférieure, cliquez sur <strong>URL</strong>.</li>
        <li>Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un simple éditeur de texte.</li>
        <li>Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante pour l’associer à l’URL copiée dans votre fichier de chapitres :<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
