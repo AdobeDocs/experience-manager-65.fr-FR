@@ -12,9 +12,9 @@ mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3730'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -301,7 +301,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
    <td><code>audioBitrateCustom</code></td>
    <td>Définissez la valeur sur <code>true</code> afin de forcer un débit constant pour le flux audio, si le codec audio le permet.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour DASH ou HLS est <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour DASH ou HLS est <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
