@@ -8,9 +8,9 @@ exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5963'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -225,33 +225,33 @@ Tenez compte des bonnes pratiques suivantes pour résoudre les problèmes de per
 
 ### Considérations relatives à la taille du DOM et aux performances du navigateur
 
-Lors de la création de formulaires adaptatifs volumineux et complexes, il est important de tenir compte de l’impact de la taille du DOM sur le rendu et les performances :
+Lors de la création de formulaires adaptatifs volumineux et complexes, il est important de tenir compte de l’impact de la taille du DOM sur le rendu et les performances :
 
-* **Impact de la taille du DOM** : bien qu’il n’existe pas de limite stricte pour la taille du DOM dans AEM Forms, une taille excessive du DOM peut avoir un impact significatif sur les performances, en particulier lors de la gestion des fragments chargés en différé. Les structures DOM volumineuses nécessitent davantage de mémoire et de temps de traitement pour le rendu et la manipulation.
+* **Impact de la taille du DOM** : bien qu’il n’existe pas de limite stricte pour la taille du DOM dans AEM Forms, une taille excessive peut avoir un impact significatif sur les performances, en particulier lors de la gestion des fragments chargés en différé. Les structures de DOM volumineuses nécessitent davantage de mémoire et de temps de traitement pour le rendu et la manipulation.
 
-* **Différences de rendu entre les navigateurs** : les performances de rendu peuvent varier considérablement selon les navigateurs et les appareils. Certains moteurs de rendu de navigateur traitent les mises à jour DOM dynamiques différemment, avec des approches différentes pour les recalculs de style, les redistributions et les rafraîchissements. Cela est particulièrement visible avec le contenu volumineux chargé dynamiquement. Dans certains navigateurs, chaque manipulation DOM importante peut déclencher un recalcul complet de la mise en page et un nouveau dessin de la page, ce qui intensifie les problèmes de performances avec les formulaires volumineux ou complexes.
+* **Différences de rendu entre les navigateurs** : les performances de rendu peuvent varier considérablement selon les navigateurs et les appareils. Certains moteurs de rendu de navigateur traitent différemment les mises à jour de DOM dynamiques, avec des approches différentes pour les recalculs, les reflows et les repaints de style. Cela est particulièrement visible avec le contenu volumineux chargé dynamiquement. Dans certains navigateurs, chaque manipulation importante du DOM peut déclencher un recalcul complet de la disposition et du repaint de la page, ce qui intensifie les problèmes de performances avec les formulaires volumineux ou complexes.
 
-* **Facteurs de performance** : plusieurs facteurs affectent les performances du chargement différé :
+* **Facteurs de performance** : plusieurs facteurs affectent les performances du chargement différé :
    * Taille et complexité des fragments
    * Styles CSS appliqués aux éléments
-   * Le nombre de reflux déclenchés par les mises à jour dynamiques
+   * Nombre de reflows déclenchés par les mises à jour dynamiques
    * Fonctionnalités de l’appareil et du navigateur
 
-* **Impact réel** : dans les cas observés, les formulaires avec des tailles DOM d’environ 400 Ko ont subi des retards de rendu importants allant jusqu’à 15 secondes sur certains navigateurs. Ces retards ne sont pas uniquement dus à la taille du fragment, mais également au traitement CSS et aux redirections de page déclenchés lors de l’insertion de contenu dynamique.
+* **Impact réel** : dans les cas observés, les formulaires avec des tailles de DOM d’environ 400 Ko ont subi des retards de rendu importants allant jusqu’à 15 secondes sur certains navigateurs. Ces retards ne sont pas uniquement dus à la taille du fragment, mais également au traitement CSS et aux redirections de page déclenchés lors de l’insertion de contenu dynamique.
 
-**Bonnes pratiques de gestion de la taille des DOM :**
+**Bonnes pratiques de gestion de la taille des DOM :**
 
-* Pour le contenu statique, pensez à utiliser les fragments de contenu AEM au lieu d’insérer dynamiquement des blocs HTML volumineux par le biais du chargement différé. Cette approche peut réduire les reflux, les repeints et le temps d’exécution de JavaScript, améliorant ainsi les performances globales de chargement des pages.
+* Pour le contenu statique, pensez à utiliser les fragments de contenu AEM au lieu d’insérer dynamiquement des blocs HTML volumineux par le biais du chargement différé. Cette approche peut réduire les reflows, les repaints et le temps d’exécution de JavaScript, améliorant ainsi les performances globales de chargement des pages.
 
 * Lorsque les fragments doivent être dynamiques et chargés en différé, divisez les fragments volumineux en fragments plus petits et plus faciles à gérer et ne chargez que les sections requises, le cas échéant.
 
-* Mettez en œuvre des modèles de divulgation progressive le cas échéant, en révélant des champs de formulaire supplémentaires uniquement lorsque cela est nécessaire en fonction des entrées de l’utilisateur.
+* Mettez en œuvre des modèles de divulgation progressive, en révélant des champs de formulaire supplémentaires uniquement lorsque cela est nécessaire en fonction des entrées de l’utilisateur ou de l’utilisatrice.
 
 * Testez vos formulaires sur plusieurs navigateurs et appareils, en particulier lorsque vous utilisez des fragments chargés en différé, afin d’assurer des performances cohérentes entre les différents environnements.
 
 * Surveillez et optimisez le CSS utilisé dans vos formulaires, car un CSS volumineux ou mal structuré peut augmenter considérablement le temps de rendu, en particulier lors des mises à jour de contenu dynamique.
 
-Pour plus d’informations techniques sur la façon dont les différents moteurs de rendu du navigateur gèrent les mises à jour, les redistributions et les rafraîchissements des DOM, pensez à explorer la documentation des moteurs de navigateur, telle que celles fournies par divers fournisseurs de navigateurs.
+Pour plus d’informations techniques sur la façon dont les différents moteurs de rendu du navigateur gèrent les mises à jour, les reflows et les repaints des DOM, pensez à explorer la documentation des moteurs de navigateur, telle que celles fournies par divers fournisseurs de navigateurs.
 
 ### Préremplissage des formulaires adaptatifs {#prefilling-adaptive-forms}
 
