@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: bc67c991d7498beafd20fa7a9f20cbd901d79045
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,24 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td><strong>Date</strong></td>
     <td><strong>Lien de téléchargement des correctifs (lien de distribution logicielle AEM)</strong></td>
     <td><strong>Problèmes résolus</strong></td>
+  </tr>
+  <tr>
+    <td>26 mars 2025 </br> </br> Pour installer ce correctif, suivez les instructions <a href="/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md"> Réduire les vulnérabilités du framework Spring pour AEM Forms sur JEE</a>.</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-win-jboss.tar.gz">Correctif pour le pack de services AEM 6.5.22.0 sur Windows pour le serveur JBoss JEE </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/jboss/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-jboss.tar.gz">Correctif pour le pack de services AEM 6.5.22.0 sur Linux pour le serveur JBoss JEE </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-win-weblogic.tar.gz">Correctif pour le pack de services AEM 6.5.22.0 sur Windows pour le serveur WebLogic JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/weblogic/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-weblogic.tar.gz">Correctif pour le pack de services AEM 6.5.22.0 sur Linux pour le serveur WebLogic JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-win-websphere.tar.gz">Correctif pour AEM Service Pack 6.5.22.0 sous Windows pour le serveur WebSphere JEE </a> </li>
+        <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-vuln-30727/websphere/adobe-aem-forms-jee-hotfix-6.5.22.0-linux-websphere.tar.gz">Correctif pour AEM Service Pack 6.5.22.0 sous Linux pour le serveur WebSphere JEE</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>Réduire les vulnérabilités du framework Spring pour AEM Forms sur JEE</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>10 juillet 2024</td>
