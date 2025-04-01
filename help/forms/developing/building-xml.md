@@ -5,10 +5,10 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+source-git-commit: ee990092f3174a8c29443eb451d7188c1e27fa7d
+workflow-type: tm+mt
+source-wordcount: '1043'
+ht-degree: 91%
 
 ---
 
@@ -47,6 +47,10 @@ Une fois le processus créé avec l’activité de service Execute Script défin
 ## Créer du code XML à l’aide du service Execute Script {#create-xml-execute-script-service}
 
 Une fois qu’un processus a été créé avec le service Execute Script inclus, il est possible d’utiliser ce script pour créer du code XML. Il est possible d’écrire les scripts décrits ci-dessous dans la zone de texte décrite dans la section Ajouter un script au processus avec la section Service `Execute Script` ci-dessus.
+
+>[!NOTE]
+>
+> Si le code de script JAVA dépasse 10 lignes, il est recommandé d’ajouter le code aux DSC personnalisés (Composants de service de document) plutôt que de l’écrire directement dans le processus. Les DSC personnalisés améliorent la maintenabilité, la réutilisation et les performances en allégeant les workflows. Le référencement de ces composants dans les workflows améliore l’efficacité de l’exécution et empêche les ralentissements potentiels causés par le traitement de blocs de code volumineux dans le workflow.
 
 **À propos de la technologie du service Execute Script**
 
