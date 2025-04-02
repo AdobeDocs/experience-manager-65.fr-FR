@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 98%
 
 ---
@@ -452,9 +452,9 @@ Pour Windows x86 :
 
 ### Conditions requises pour AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Pour tester les conversions PDF sur le serveur SUSE® Linux®, vérifiez que les configurations sont les suivantes :
+* Pour tester les conversions PDF sur le serveur SUSE® Linux® (SLES 15 SP6 ou ultérieur), vérifiez que les configurations suivantes sont disponibles :
    * Accédez au fichier `/etc/profile` et définissez la variable d’environnement `OpenOffice_PATH` sur `/opt/openoffice4` pour la configurer globalement.
-   * Installez la version 32 bits d’OpenOffice sur le système d’exploitation Linux®
+   * Installez la version 32 bits d’OpenOffice.
 
 ### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,11 +517,11 @@ Pour Windows x86 :
 >
 >En outre :
 >
->* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
+>* PDF Generator nécessite une version 32 bits de la version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) de [suivi classique Acrobat 2020 pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
 >* Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
->* PDF Generator prend en charge la version 32 bits d’OpenOffice sur le système d’exploitation Linux®.
+>* PDF Generator prend en charge la version 32 bits d’OpenOffice sous le système d’exploitation Linux®.
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
