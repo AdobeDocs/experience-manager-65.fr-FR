@@ -5,10 +5,10 @@ exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 050049f22d329d3af0cfc8fa4bbb12fe7f99b5fc
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ Un parcours de documentation est disponible pour chaque sujet suivant lié au d�
 |---|---|---|
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez les technologies découplées, ce qu’elles apportent à l’expérience utilisateur, comment AEM prend en charge les modèles découplés et comment mettre en œuvre votre propre projet de développement découplé, de A à Z. | Développeurs |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Découvrez les technologies découplées, leur utilisation pour votre projet et comment créer et mettre à jour des projets de traduction dans AEM, de A à Z. | Spécialistes de la traduction |
-| [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. | Architectes |
-| [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet. | Créateurs et auteurs de contenu |
+| [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. | Architectes |
+| [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service, et découvrez comment créer du contenu pour votre projet. | Créateurs et auteurs de contenu |
 
 Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
