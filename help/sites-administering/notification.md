@@ -1,5 +1,5 @@
 ---
-title: Configurer les notifications par e-mail
+title: Configuration des notifications par e-mail
 description: Découvrez comment configurer les notifications par e-mail dans Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2154'
 ht-degree: 98%
 
 ---
 
 
-# Configurer les notifications par e-mail{#configuring-email-notification}
+# Configuration des notifications par e-mail{#configuring-email-notification}
 
 AEM envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 
@@ -46,7 +46,7 @@ Les contraintes suivantes s’appliquent :
 * Le **port de serveur SMTP** doit être le port 25 ou un port supérieur.
 
 * Le **nom d’hôte de serveur SMTP** ne doit pas être vide.
-* L’**adresse « De »** ne doit pas être vide.
+* L’adresse **« De »** ne doit pas être vide et vous devez modifier la valeur par défaut « <noreply@day.com> ».
 
 Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
 
@@ -84,7 +84,7 @@ Procédez comme suit pour définir le nœud dans les dossiers source de votre pa
 
 ## Configurer le service de notification par e-mail de workflow {#configuring-the-workflow-email-notification-service}
 
-Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, il est recommandé de conserver la modification dans le référentiel.
+Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, vous devez conserver la modification dans le référentiel.
 
 La configuration par défaut se présente comme suit dans la console web :
 
@@ -119,9 +119,9 @@ This is an automatically generated message. Please do not reply.
 
 Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de page :
 
-1. Créer une superposition pour les [notifications de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+1. Créer un recouvrement pour les [notifications de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-1. Ouvrez le fichier :
+1. Ouvrez le fichier :
 
    `en.txt`
 
@@ -183,9 +183,9 @@ This is an automatically generated message. Please do not reply.
 
 Pour personnaliser le modèle d’e-mail en anglais en vue de la notification d’événement de workflow :
 
-1. Créer une superposition pour les [notifications de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
+1. Créer un recouvrement pour les [notifications de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-1. Ouvrez le fichier :
+1. Ouvrez le fichier :
 
    `en.txt`
 
@@ -243,7 +243,7 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 Pour ajouter un modèle pour une nouvelle langue :
 
-1. Créez une [superposition](/help/sites-developing/overlays.md) selon les besoins.
+1. Créez un [recouvrement](/help/sites-developing/overlays.md) selon les besoins.
 
    * [Notifications de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
    * [Notifications de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
