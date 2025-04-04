@@ -8,7 +8,7 @@ role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Une fois qu’un processus a été créé avec le service Execute Script inclus,
 
 >[!NOTE]
 >
-> Si le code de script JAVA dépasse 10 lignes, il est recommandé d’ajouter le code aux DSC personnalisés (Composants de service de document) plutôt que de l’écrire directement dans le processus. Les DSC personnalisés améliorent la maintenabilité, la réutilisation et les performances en allégeant les workflows. Le référencement de ces composants dans les workflows améliore l’efficacité de l’exécution et empêche les ralentissements potentiels causés par le traitement de blocs de code volumineux dans le workflow.
+> Si le code de script JAVA dépasse 10 lignes, il est recommandé d’ajouter le code aux DSC personnalisés (Composants de service de document) plutôt que de l’écrire directement dans le processus. Les DSC personnalisés améliorent la maintenabilité, la réutilisation et les performances en allégeant les workflows. Le référencement de ces composants dans les workflows améliore l’efficacité de l’exécution et empêche les ralentissements potentiels causés par le traitement de blocs de code volumineux dans le workflow.
 
 
 **À propos de la technologie du service Execute Script**
