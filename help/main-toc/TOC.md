@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7480'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1211,7 +1211,7 @@ ht-degree: 99%
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Redémarrage correct du SDK AEM](/help/forms/using/restart-aem-sdk.md)
       + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
-      + [Réduire les vulnérabilités du framework Spring pour AEM Forms sur JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
       + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
