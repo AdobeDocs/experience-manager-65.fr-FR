@@ -9,10 +9,10 @@ exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '1061'
+ht-degree: 83%
 
 ---
 
@@ -361,6 +361,30 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 ```shell
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
+
+### Comment effectuer un déploiement superficiel {#shallow-rollout}
+
+Lorsque vous utilisez AEM as a Cloud Service, il peut y avoir des instances où vous devez déployer une seule page spécifique sans propager ses sous-pages. Si elle n’est pas configurée correctement, la commande curl standard pour déployer des pages peut inclure par inadvertance des sous-pages. Cette section décrit comment ajuster la commande curl pour réaliser un déploiement superficiel d’une page spécifiée et exclure toute sous-page supplémentaire.
+
+Pour effectuer un déploiement superficiel, procédez comme suit :
+
+1. Modifiez la commande curl existante en faisant passer le paramètre de `type=deep` à `type=page`.
+1. Utilisez la syntaxe suivante pour la commande curl :
+
+```shell
+curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
+   -d type=page \
+   -d operation=asyncRollout \
+   -d cmd=rollout \
+   -d path="/content/<your-path>"
+```
+
+Vérifiez également les points suivants :
+
+1. Veillez à remplacer `<token>` avec votre jeton d’autorisation réel et `<instance-url>` avec l’URL de votre instance spécifique.
+1. Remplacez `/content/<your-path>` par le chemin d’accès de la page spécifique que vous souhaitez déployer.
+
+En définissant `type=page`, la commande cible uniquement la page spécifiée, à l’exclusion des sous-pages. Ainsi, cette configuration permet un contrôle précis du déploiement du contenu, en s’assurant que seules les modifications prévues sont propagées dans les environnements. En outre, ce réglage s’aligne également sur la manière dont les déploiements sont gérés via l’interface utilisateur d’AEM lors de la sélection de pages individuelles.
 
 ### Workflows {#workflows}
 
