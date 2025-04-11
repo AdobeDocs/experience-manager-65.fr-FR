@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
 source-git-commit: 7c4be888c392520c82ef7b2172d0eee61fc3ee44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 88%
 
 Les lancements vous permettent de développer efficacement du contenu en vue d’une publication ultérieure.
 
-Un *lancement* est créé pour vous permettre d’apporter des modifications en vue d’une publication ultérieure, tout en conservant vos pages actives. Cela signifie que vous modifiez deux versions simultanément : les pages qui sont actuellement publiées et une version de ces pages, qui sera publiée à un moment donné dans le futur. Une fois ce délai écoulé, vous pouvez remplacer les pages d’origine et publier la nouvelle version.
+Un *lancement* est créé pour vous permettre d’apporter des modifications en vue d’une publication ultérieure, tout en conservant vos pages actuelles. Cela signifie que vous modifiez deux versions simultanément : les pages qui sont actuellement publiées et une version de ces pages, qui sera publiée à un moment donné dans le futur. Une fois ce délai écoulé, vous pouvez remplacer les pages d’origine et publier la nouvelle version.
 
-Vous créez un *Launch*, puis, après avoir modifié et mis à jour vos pages *Launch*, vous *les convertir* en *Source*. Vous pouvez ensuite activer ces pages *Source* (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
+Vous créez un *lancement*, puis, après avoir modifié et mis à jour vos pages de *lancement*, vous les *reconvertissez* en *Source*. Vous pouvez ensuite activer ces pages *Source* (de niveau supérieur). Le fait de promouvoir les pages duplique le contenu du lancement sur les pages source. Cette action peut être effectuée manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
 Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre, afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 

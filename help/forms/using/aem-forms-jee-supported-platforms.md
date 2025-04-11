@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4216'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -467,9 +467,9 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 
 ### Conditions requises pour PDF Generator
 
-- Pour tester les conversions PDF sur le serveur SUSE® Linux® (SLES 15 SP6 ou ultérieur), vérifiez que les configurations suivantes sont disponibles :
+- Pour tester les conversions PDF sur le serveur SUSE® Linux® (SLES 15 SP6 ou version ultérieure), vérifiez que les configurations sont les suivantes :
    - Accédez au fichier `/etc/profile` et définissez la variable d’environnement `OpenOffice_PATH` sur `/opt/openoffice4` pour la configurer globalement.
-   - Installez la version 32 bits d’OpenOffice.
+   - Installez la version 32 bits d’OpenOffice.
 
 ### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
 
@@ -508,7 +508,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >
 >En outre :
 >
->- PDF Generator nécessite une version 32 bits de la version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) de [suivi classique Acrobat 2020 pour effectuer la conversion.
+>- PDF Generator requiert une version 32 bits d’[Acrobat 2020 (version de suivi Classic 20.004.30006)](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
 >- L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
 >- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.

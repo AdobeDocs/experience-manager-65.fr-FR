@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Les contraintes suivantes s’appliquent :
 * Le **port de serveur SMTP** doit être le port 25 ou un port supérieur.
 
 * Le **nom d’hôte de serveur SMTP** ne doit pas être vide.
-* L’adresse **« De »** ne doit pas être vide et vous devez modifier la valeur par défaut « <noreply@day.com> ».
+* L’**adresse « De »** ne doit pas être vide et vous devez modifier la valeur par défaut « <noreply@day.com> ».
 
 Pour résoudre plus facilement un problème avec le **service de messagerie Day CQ**, vous pouvez examiner les journaux du service :
 
@@ -84,7 +84,7 @@ Procédez comme suit pour définir le nœud dans les dossiers source de votre pa
 
 ## Configurer le service de notification par e-mail de workflow {#configuring-the-workflow-email-notification-service}
 
-Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, vous devez conserver la modification dans le référentiel.
+Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, il est recommandé de conserver la modification dans le référentiel.
 
 La configuration par défaut se présente comme suit dans la console web :
 
