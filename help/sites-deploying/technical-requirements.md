@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
-workflow-type: ht
-source-wordcount: '3632'
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+workflow-type: tm+mt
+source-wordcount: '3593'
 ht-degree: 100%
 
 ---
@@ -451,10 +451,6 @@ Pour Windows x86 :
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
 ### Conditions requises pour AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
-
-* Pour tester les conversions PDF sur le serveur SUSE® Linux® (SLES 15 SP6 ou version ultérieure), vérifiez que les configurations sont les suivantes :
-   * Accédez au fichier `/etc/profile` et définissez la variable d’environnement `OpenOffice_PATH` sur `/opt/openoffice4` pour la configurer globalement.
-   * Installez la version 32 bits d’OpenOffice.
 
 ### Prise en charge logicielle de PDF Generator {#software-support-for-pdf-generator}
 
