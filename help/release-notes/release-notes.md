@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 461ec6a48bc41d46338c2c0162869525e49de97f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6138'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -595,10 +595,10 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6522}
 
-* Si la conversion HTML vers PDF échoue sur un serveur SUSE® Linux® (SLES 15 SP6 et versions ultérieures) avec l’erreur suivante :
+* Si la conversion HTML vers PDF échoue sur le serveur SUSE® Linux® (SLES 15 SP6 ou version ultérieure) avec l’erreur suivante :
 
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
+définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
   `OPENSSL_CONF=/etc/ssl`
 
 * Après l’installation du pack de services AEM Forms JEE 21 (6.5.21.0), vous pouvez trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le dossier `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926). Suivez ces étapes pour résoudre le problème :
