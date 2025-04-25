@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 95%
 
 ---
@@ -1213,6 +1213,9 @@ ht-degree: 95%
       + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Réduction des vulnérabilités Log4j2 pour Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [Comment ouvrir un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
