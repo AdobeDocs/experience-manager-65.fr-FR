@@ -7,9 +7,9 @@ exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5724'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -232,7 +232,7 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
   <tr>
    <td><p><strong>OpenOffice </strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\OpenOffice 4</p> </td>
+   <td><p>C:\Program Files (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -246,9 +246,9 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
 >* Sur les plates-formes UNIX, installez OpenOffice en tant que /root. Si OpenOffice n’est pas installé en tant qu’utilisateur ou utilisatrice root, le service PDF Generator ne parvient pas à convertir les documents OpenOffice en documents PDF. Si vous devez installer et exécuter OpenOffice en tant qu’utilisateur non root, indiquez les droits sudo pour l’utilisateur non-root.
 >* Si vous utilisez OpenOffice sur une plateforme UNIX, exécutez la commande suivante pour définir la variable de chemin :\
 > `export OpenOffice_PATH=/opt/openoffice.org4`
->* Sur les plateformes SUSE® Linux® (SLES 15 SP6 ou ultérieures), procédez comme suit pour configurer OpenOffice :
->     * Installez la dernière variante 32 bits de `OpenOffice 4.1.x` disponible dans un répertoire tel que `/opt/openoffice4`.
->     * Définissez la variable d’environnement `OpenOffice_PATH` pour qu’elle pointe vers cet emplacement. Par exemple : `OpenOffice_PATH=/opt/openoffice4`.
+>* Sur les plateformes SUSE® Linux® (SLES 15 SP6 ou ultérieures), procédez comme suit pour configurer OpenOffice :
+>     * Installez la dernière version 32 bits d’`OpenOffice 4.1.x` dans un répertoire tel que `/opt/openoffice4`.
+>     * Définissez la variable d’environnement `OpenOffice_PATH` de manière à ce qu’elle pointe vers cet emplacement. Par exemple : `OpenOffice_PATH=/opt/openoffice4`.
 >     * Assurez-vous que la variable `OpenOffice_PATH` est définie globalement (par exemple, à l’aide de `/etc/profile` ou de l’équivalent spécifique au système) afin qu’elle soit disponible pour tous les utilisateurs et utilisatrices lors de la connexion.
 
 ### (Uniquement pour IBM® WebSphere®) Configurer le fournisseur de socket SSL IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
