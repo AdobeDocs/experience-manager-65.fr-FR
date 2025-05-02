@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
      </td>
     <td>
     <ul>
-    <li> Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0 ou le pack de services AEM Forms 6.5.22.0, le service PaperCapture ne parvient pas à effectuer des opérations OCR (reconnaissance optique de caractères) sur les fichiers PDF. Pour obtenir des instructions sur l’installation, reportez-vous à l’article dépannage <a href="/help/forms/using/papercapture-service-resolution.md"></a>.(CQDOC-21680) </li>
+    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0, le service PaperCapture ne parvient pas à effectuer des opérations OCR (reconnaissance optique de caractères) sur les fichiers PDF. Pour obtenir des instructions sur l’installation, reportez-vous à l’article dépannage <a href="/help/forms/using/papercapture-service-resolution.md"></a>.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
