@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ Le contrôle de version permet de créer un « instantané » d’une page à 
 
 >[!NOTE]
 >
->Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, le CSS et le JavaScript ne sont pas versionnées.
+>Seul le contenu est versionné dans le référentiel AEM. Les ressources dynamiques telles que le code, la feuille de style CSS et le code JavaScript ne sont pas versionnées.
 >
->* Lors de l’affichage des versions, le contenu est affiché avec le code, le CSS et le JavaScript actuels du référentiel.
->* Lors de la restauration de versions, seul le contenu est restauré et le code, CSS et JavaScript actuels du référentiel lui sont appliqués.
+>* Lors de l’affichage des versions, le contenu est affiché avec le code, la feuille de style CSS et le code JavaScript actuels du référentiel.
+>* Lors de la restauration de versions, seul le contenu est restauré et le code, la feuille de style CSS et le code JavaScript actuels du référentiel lui sont appliqués.
 
 ## Création d’une version {#creating-a-new-version}
 
@@ -203,7 +203,7 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 
 >[!TIP]
 >
->[Timewarp peut également être utilisé avec les lancements pour prévisualiser les futurs](/help/sites-authoring/launches.md) lors de l’exécution d’AEM 6.5.10.0 ou version ultérieure.
+>[La fonction de distorsion du temps peut également être utilisée avec les lancements pour prévisualiser les futurs ](/help/sites-authoring/launches.md) lors de l’exécution d’AEM 6.5.10.0 ou version ultérieure.
 
 La création de contenu est un processus continu et collaboratif. Le but de Timewarp est de permettre aux auteurs et aux autrices de suivre le site web publié au fil du temps, pour les aider à comprendre les changements du contenu. Cette fonctionnalité utilise les versions de page pour déterminer l’état de l’environnement de publication :
 

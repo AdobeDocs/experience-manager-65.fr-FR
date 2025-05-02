@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7520'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1214,7 +1214,7 @@ ht-degree: 99%
       + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Atténuation des vulnérabilités de Log4j2 pour Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
       + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
-      + [Comment ouvrir un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentation héritée {#legacy-documentation}
