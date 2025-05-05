@@ -34,7 +34,7 @@ Si vous pensez à un magazine en ligne, le contenu principal comprend des articl
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 ## Création et gestion de contenu {#creating-and-managing-content}
 

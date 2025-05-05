@@ -107,7 +107,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
   <tr>
    <td><strong>Étapes 10 et 29</strong></td>
    <td>Examiner la couche réseau</td>
-   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau de création, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
+   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau de création, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Étape 11</strong></td>
@@ -184,7 +184,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
    <td>Réglage du référentiel</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Conseils de réglage de la performance</a></li>
+     <li><a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Conseils de réglage de la performance</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuration des performances</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Réglage de la performance du référentiel</a></li>
     </ul> </td>
@@ -212,7 +212,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer quelle en
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation d’Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Instances multiples de gestion des ressources numériques</a></li>
-     <li>Article présentant des conseils sur l’optimisation des performances disponible <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
+     <li>Article présentant des conseils sur l’optimisation des performances disponible <a href="https://helpx.adobe.com/fr/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>

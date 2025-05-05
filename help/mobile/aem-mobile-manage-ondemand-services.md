@@ -42,7 +42,7 @@ Avec l’application de contrôle en amont On-Demand Mobile, vous pouvez affiche
 
 >[!NOTE]
 >
->L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur l’application de contrôle en amont, cliquez [ici](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur l’application de contrôle en amont, cliquez [ici](https://helpx.adobe.com/fr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Progresser {#getting-ahead}

@@ -61,7 +61,7 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédure n’est pas automatique.
 
-1. Pour passer au HTTP/2, envoyez une demande auprès de l’assistance clientèle d’Adobe. Voir [Ouverture d’un ticket d’assistance](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
+1. Pour passer au HTTP/2, envoyez une demande auprès de l’assistance clientèle d’Adobe. Voir [Ouverture d’un ticket d’assistance](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 

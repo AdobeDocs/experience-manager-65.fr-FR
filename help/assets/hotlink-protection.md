@@ -20,7 +20,7 @@ ht-degree: 100%
 
 On parle de lien dynamique lorsqu’un site web tiers utilise du code HTML pour afficher une image de votre site web. Il utilise votre bande passante chaque fois que l’image est demandée, car le navigateur du visiteur y accède directement depuis votre serveur. La *protection* de lien dynamique est une méthode qui empêche d’autres sites web d’établir un lien direct vers des images ou du contenu CSS ou javascript figurant sur vos pages web. Ce type de protection contribue à réduire l’utilisation inutile de bande passante sous votre compte Dynamic Media.
 
-L’[assistance clientèle d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) peut configurer un filtre référent au niveau du réseau CDN (Content Delivery Network) afin que le contenu Dynamic Media ne soit diffusé que sur des sites web figurant sur votre liste de sites web autorisés.
+L’[assistance clientèle d’Experience Manager](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&amp;lang=fr#support) peut configurer un filtre référent au niveau du réseau CDN (Content Delivery Network) afin que le contenu Dynamic Media ne soit diffusé que sur des sites web figurant sur votre liste de sites web autorisés.
 
 >[!NOTE]
 >

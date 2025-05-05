@@ -312,7 +312,7 @@ Les détails exacts de la création de vidéos avec description audio ne sont pa
 
 * [Compréhension du critère de réussite 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) :
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/fr/premiere-pro/using/whats-new.html)
 
 ### Sous-titres (en direct) (1.2.4)    {#captions-live}
 

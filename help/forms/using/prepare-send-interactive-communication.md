@@ -180,7 +180,7 @@ Adobe recommande d’exécuter ces instructions en séquence pour enregistrer un
 
 Par défaut, la fonction Enregistrer en tant que brouillon n’est pas activée. Pour activer cette fonction, effectuez les étapes suivantes :
 
-1. Implémentez l’Interface du fournisseur de services (SPI) [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
+1. Implémentez l’Interface du fournisseur de services (SPI) [ccrDocumentInstance](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    La SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon comme identifiant unique. Ces instructions supposent que vous ayez des connaissances préalables sur la création d’un lot OSGi à l’aide d’un projet Maven.
 

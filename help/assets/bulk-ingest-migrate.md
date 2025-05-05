@@ -37,7 +37,7 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 
 1. Dans votre instance Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Créer un utilisateur]**. Cet utilisateur de service doit disposer des autorisations de *lecture/écriture* sur `/content/dam.`.
 1. Dans les champs **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]** , saisissez un nom d’utilisateur ou d’utilisatrice et un mot de passe, par exemple : **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ou utilisatrice ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
-1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
+1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
 
    * L’adresse IP du serveur de l’instance d’auteur, y compris le numéro de port (4502 par défaut)
    * Le nom d’utilisateur et le mot de passe du service Experience Manager de l’étape précédente

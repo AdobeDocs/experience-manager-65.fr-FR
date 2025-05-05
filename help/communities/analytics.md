@@ -659,6 +659,6 @@ Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter e
 
 ## Ressources {#resources}
 
-* Adobe Experience Cloud : [Aide et référence d’Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud : [Aide et référence d’Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr)
 * AEM : [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM : [Analytics avec des fournisseurs externes](/help/sites-administering/external-providers.md)

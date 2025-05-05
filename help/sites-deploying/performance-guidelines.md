@@ -304,7 +304,7 @@ Dans AEM, les données binaires peuvent être stockées indépendamment des nœu
 
 >[!CAUTION]
 >
->Le micronoyau de la base de données relationnelle est pris en charge de manière limitée. Contactez l’[assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support) avant d’utiliser ce type de micronoyau.
+>Le micronoyau de la base de données relationnelle est pris en charge de manière limitée. Contactez l’[assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support) avant d’utiliser ce type de micronoyau.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

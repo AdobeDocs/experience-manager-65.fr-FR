@@ -128,7 +128,7 @@ Pour identifier et corriger un processus de réindexation bloqué, procédez com
 1. Après la collecte de toutes les informations décrites à l’étape 1, redémarrez AEM.
 
    * Le redémarrage d’AEM peut résoudre le problème dans le cas d’une charge simultanée élevée (débordement de la file d’attente d’observation ou situation similaire).
-   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
+   * Si un redémarrage ne permet pas de résoudre le problème, signalez-le à l’[Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support) et fournissez toutes les informations collectées lors de l’étape 1.
 
 ## Abandon sécurisé de la réindexation asynchrone {#safely-aborting-asynchronous-re-indexing}
 

@@ -66,7 +66,7 @@ Par défaut, Adobe Campaign Standard est fourni avec un utilisateur `aemserver
 
 Votre utilisateur `aemserver` dispose désormais des droits nécessaires pour qu’AEM l’utilise pour communiquer avec Adobe Campaign.
 
-Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Cette opération ne peut pas être effectuée via Adobe Campaign. Un ingénieur ou une ingénieure du support Adobe doit s’en charger. [Envoyez un ticket à l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-tab=home&amp;lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur ou de l’utilisatrice `aemserver`. Une fois que l’Assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
+Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Cette opération ne peut pas être effectuée via Adobe Campaign. Un ingénieur ou une ingénieure du support Adobe doit s’en charger. [Envoyez un ticket à l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-tab=home&amp;lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur ou de l’utilisatrice `aemserver`. Une fois que l’Assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
 
 ## Vérifier AEMResourceTypeFilter dans Campaign {#resource-type-filter}
 

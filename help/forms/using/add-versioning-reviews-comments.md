@@ -23,7 +23,7 @@ Les composants principaux de formulaire adaptatif permettent aux auteurs de form
 
 ## Prérequis {#prerequisite-versioning}
 
-Pour utiliser les fonctions de contrôle de version, de commentaire et d’annotation dans un formulaire adaptatif, assurez-vous que les [composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement Forms AEM 6.5.
+Pour utiliser les fonctions de contrôle de version, de commentaire et d’annotation dans un formulaire adaptatif, assurez-vous que les [composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement Forms AEM 6.5.
 
 ## Contrôle de version des formulaires adaptatifs {#adaptive-form-versioning}
 

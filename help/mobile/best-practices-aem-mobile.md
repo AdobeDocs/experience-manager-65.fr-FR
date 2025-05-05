@@ -28,8 +28,8 @@ La création d’une application AEM Mobile On-demand Services est différente d
 >
 >Pour en savoir plus sur les modules externes, consultez les ressources suivantes :
 >
->* [Utilisation des plug-ins Cordova dans AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Utilisation de plug-ins Cordova spécifiques à AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Utilisation des plug-ins Cordova dans AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/cordova-api.html)
+>* [Utilisation de plug-ins Cordova spécifiques à AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Les modèles qui utilisent la fonctionnalité de module externe doivent être écrits de manière à pouvoir être créés dans le navigateur, sans que le pont de module externe soit présent.

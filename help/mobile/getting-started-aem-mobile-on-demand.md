@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, consultez l’[Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, consultez l’[Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/fr/digital-publishing-solution/topics.html).
 
 AEM propose plusieurs outils permettant d’intégrer des contenus dans des applications mobiles.
 
@@ -32,7 +32,7 @@ L’application AEM Preflight peut être considérée comme un environnement de 
 
 >[!NOTE]
 >
->Pour en savoir plus sur l’application de contrôle en amont, voir [Utilisation de l’application de contrôle en amont AEM](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) dans l’aide d’AEM Mobile On-demand Services.
+>Pour en savoir plus sur l’application de contrôle en amont, voir [Utilisation de l’application de contrôle en amont AEM](https://helpx.adobe.com/fr/digital-publishing-solution/help/preflight-app.html) dans l’aide d’AEM Mobile On-demand Services.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ Pour commencer à connaître les rôles et responsabilités d’un auteur, repor
 
 >[!NOTE]
 >
->Un auteur AEM est également responsable de la configuration des droits, de la création des cartes et des mises en page, ainsi que de l’envoi des notifications push. Pour plus d’informations sur les méthodes de création de contenu, de gestion d’articles et de collections, de création de bannières, de cartes et de mises en page dans AEM Mobile, consultez [Portail On-Demand AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Un auteur AEM est également responsable de la configuration des droits, de la création des cartes et des mises en page, ainsi que de l’envoi des notifications push. Pour plus d’informations sur les méthodes de création de contenu, de gestion d’articles et de collections, de création de bannières, de cartes et de mises en page dans AEM Mobile, consultez [Portail On-Demand AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/topics.html#dynamicpod_reference_2).

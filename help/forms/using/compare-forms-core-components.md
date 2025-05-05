@@ -23,7 +23,7 @@ La fonction de comparaison des composants principaux de Forms adaptatif permet a
 
 ## Prérequis {#prerequisite-versioning}
 
-Pour utiliser la fonction de comparaison dans un formulaire adaptatif basé sur les composants principaux, assurez-vous que les [composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement Forms 6.5 AEM.
+Pour utiliser la fonction de comparaison dans un formulaire adaptatif basé sur les composants principaux, assurez-vous que les [composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement Forms 6.5 AEM.
 
 ## Comparaison de formulaires adaptatifs distincts {#compare-af-65}
 

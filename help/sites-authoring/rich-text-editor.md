@@ -16,8 +16,8 @@ ht-degree: 99%
 
 L’éditeur de texte enrichi (RTE) est une composante essentielle à la saisie de contenu textuel dans AEM. Il constitue la base de divers composants, notamment :
 
-* [Texte](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tableau](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Texte](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tableau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Édition statique {#in-place-editing}
 

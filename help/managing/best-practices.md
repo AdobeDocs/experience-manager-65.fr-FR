@@ -239,7 +239,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   Avant le développement, tous les processus de prise en charge nécessaires au déploiement, à la publication, au test et aux problèmes de rapports doivent être mis en place.
 
-  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
+  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
 
 ### Planification et mise en œuvre des opérations {#operations-planning-and-operations}
 

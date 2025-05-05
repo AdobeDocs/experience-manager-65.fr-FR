@@ -29,7 +29,7 @@ AEM Mobile fait partie de la plateforme numérique multicanale Adobe Experience 
 AEM Mobile propose plusieurs méthodes pour créer des applications. Vous pouvez créer des applications de trois manières différentes :
 
 * **[Utilisation des services à la demande avec AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Utilisation de services à la demande sans AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Utilisation de services à la demande sans AEM](https://helpx.adobe.com/fr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Utiliser Adobe PhoneGap Enterprise avec AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]

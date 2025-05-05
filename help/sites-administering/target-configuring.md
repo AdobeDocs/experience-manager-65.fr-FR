@@ -56,7 +56,7 @@ Les valeurs de propriété suivantes sont utilisées dans la configuration cloud
 >* Meilleures options d’implémentation pour les applications d’une seule page
 >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
 
 ### Propriétés de cadre Target configurées {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ Intégration manuelle avec Adobe Target au lieu d’utiliser l’assistant d’
 >
 >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr -->
 
 ### Création d’une configuration du cloud Target {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ La structure est créée. Pour répliquer le framework sur l’instance de publi
 
 ### Association d’activités à la configuration cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?=lang=fr).
+Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=fr&=lang=fr).
 
 >[!NOTE]
 >
