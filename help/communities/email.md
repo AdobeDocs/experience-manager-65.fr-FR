@@ -182,9 +182,9 @@ Pour que le courrier électronique soit importé dans le référentiel, il est n
 
 * **[!UICONTROL URL]**
 
-  *(Obligatoire)* Le serveur de messagerie sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Obligatoire)* Le serveur de messagerie sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
 
-* **[!UICONTROL Importer vers le chemin]**&amp;ast;
+* **[!UICONTROL Importer vers le chemin]**&ast;
 
   *(Obligatoire)* Défini sur `/content/usergenerated/mailFolder/postEmails`
 en accédant au dossier `postEmails`et sélectionnez **OK**.

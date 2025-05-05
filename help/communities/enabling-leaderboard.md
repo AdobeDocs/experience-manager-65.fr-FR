@@ -141,7 +141,7 @@ Configuration des composants de classement :
    * Règle de badge = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
-![ {experts-leader](assets/experts-leaderboard.png)
+![ &lbrace;experts-leader](assets/experts-leaderboard.png)
 
 ### Informations supplémentaires {#additional-information}
 

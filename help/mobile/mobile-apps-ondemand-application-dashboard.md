@@ -89,7 +89,7 @@ L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau
 
 >[!NOTE]
 >
->Pour créer, supprimer ou mettre à jour des bannières ](/help/mobile/mobile-on-demand-managing-banners.md)**reportez-vous à la section**[ Gestion des bannières .
+>Pour créer, supprimer ou mettre à jour des bannières [&#128279;](/help/mobile/mobile-on-demand-managing-banners.md)**reportez-vous à la section** Gestion des bannières .
 
 ### La Mosaïque Gérer Les Articles {#the-manage-articles-tile}
 

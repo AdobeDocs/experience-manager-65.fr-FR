@@ -219,7 +219,7 @@ Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées,
 
 * **Limite de suggestion**
 
-  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
+  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**&#x200B;1 (aucune limite).
 
 #### Onglet Traduction {#translation-tab}
 

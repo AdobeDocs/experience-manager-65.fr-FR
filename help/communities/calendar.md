@@ -92,7 +92,7 @@ Sous l’onglet **Paramètres** , indiquez si les balises doivent être appliqu�
 
 * **Taille max. du fichier image joint**
 
-  À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152** **(2 Mo).
+  À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152 **&#x200B; **(2 Mo).
 
 * **Types d’image de couverture autorisés**
 
@@ -164,7 +164,7 @@ Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées,
 
 * **Limite de suggestion**
 
-  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
+  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**&#x200B;1 (aucune limite).
 
 >[!NOTE]
 >

@@ -90,7 +90,7 @@ Pour connaître les rôles et responsabilités des développeurs, reportez-vous 
 
 ## Instance de création AEM {#aem-author}
 
-Un ***auteur AEM* (ou un *spécialiste marketing*)**utilise les modèles et composants personnalisés développés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). L’éditeur de contenu intégré d’AEM est ensuite utilisé par les *auteurs AEM* pour créer des expériences riches et pertinentes dans l’application, y compris l’intégration au reste du Adobe Experience Cloud.
+Un ***auteur AEM* (ou un *spécialiste marketing*)**&#x200B;utilise les modèles et composants personnalisés développés ou prêts à l’emploi pour ajouter et modifier des pages, faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu). L’éditeur de contenu intégré d’AEM est ensuite utilisé par les *auteurs AEM* pour créer des expériences riches et pertinentes dans l’application, y compris l’intégration au reste du Adobe Experience Cloud.
 
 Un auteur AEM doit comprendre les rubriques suivantes lors de la création d’une application à l’aide d’AEM Mobile On-demand Services :
 

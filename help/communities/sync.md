@@ -21,7 +21,7 @@ ht-degree: 6%
 
 ## Présentation {#introduction}
 
-Dans Adobe Experience Manager (AEM) Communities, dans l’environnement Publish (en fonction des autorisations configurées), les *visiteurs du site* peuvent devenir *membres*, créer des *groupes d’utilisateurs* et modifier leur *profil de membre*} .
+Dans Adobe Experience Manager (AEM) Communities, dans l’environnement Publish (en fonction des autorisations configurées), les *visiteurs du site* peuvent devenir *membres*, créer des *groupes d’utilisateurs* et modifier leur *profil de membre*&rbrace; .
 
 *Les données utilisateur* font référence à *users*, *user profiles* et *user groups*.
 

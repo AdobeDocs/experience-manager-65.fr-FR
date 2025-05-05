@@ -63,8 +63,8 @@ Ce gestionnaire doit être ajouté à toute configuration de synchronisation de 
 
 * ***type - String - mobilecontentlisting***
 * ***path*** - Chaîne - laissez vide ; doit être présent pour être considéré comme un gestionnaire valide, mais le chemin est déduit pour être le cache ContentSync actuel. Cette valeur est ignorée.
-* ***targetRootDirectory* -**chaîne : préfixe à ajouter aux chemins d’accès en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
-* ***order - Long* -**Ordre pour que ContentSync exécute ce gestionnaire. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
+* ***targetRootDirectory* -**&#x200B;chaîne : préfixe à ajouter aux chemins d’accès en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
+* ***order - Long* -**&#x200B;Ordre pour que ContentSync exécute ce gestionnaire. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
 
 ```xml
 {
@@ -89,9 +89,9 @@ Ce gestionnaire doit être ajouté à toute configuration de synchronisation de 
 Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’interpréteur d’applications AEM (nœud avec page-type=app-instance)
 
 * ***type - String - mobilecontentpackageslisting***
-* ***path **-**String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance).
+* ***path &#x200B;**-**String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance).
 * ***targetRootDirectory - Chaîne*** - préfixe à ajouter aux chemins en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
-* ***order - Long* -**Ordre d’exécution de ce gestionnaire par ContentSync. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
+* ***order - Long* -**&#x200B;Ordre d’exécution de ce gestionnaire par ContentSync. Ce nombre doit être supérieur à tous les autres gestionnaires, par exemple 100. Il doit être exécuté après les gestionnaires de contenu traditionnels.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ Le gestionnaire doit être utilisé sur la configuration de la synchronisation d
 
 Ce gestionnaire doit être utilisé sur une configuration ContentSync d’AEM App Shell (nœud avec pge-type=[app-instance]).
 
-* ***type - Chaîne* - **widgetconfig
-* ***path **-**String*** - Chemin d’accès à un nœud enfant du shell de l’application (nœud avec pge-type=[app-instance]).
+* ***type - Chaîne* - &#x200B;** widgetconfig
+* ***path &#x200B;**-**String*** - Chemin d’accès à un nœud enfant du shell de l’application (nœud avec pge-type=[app-instance]).
 * ***targetRootDirectory - Chaîne*** - préfixe à ajouter aux chemins en tant que racine cible pour la mise à jour du contenu de ce gestionnaire.
 * ***targetIconDirectory - Chaîne*** - Répertoire dans lequel placer les icônes de l’application
 
@@ -165,7 +165,7 @@ Les propriétés AEM sont celles dont le nom est espacé de « cq », « sling �
 
 * ***type - Chaîne*** - app-assets
 
-* ***path **-**String*** - Chemin d’accès à un emplacement sous une instance d’application où les ressources d’application sont stockées
+* ***path &#x200B;**-**String*** - Chemin d’accès à un emplacement sous une instance d’application où les ressources d’application sont stockées
 
 **mobileappoffers** Un nouveau gestionnaire de synchronisation de contenu a été introduit pour le cas d’utilisation de Personalization afin de générer le contenu ciblé. Le gestionnaire « mobileappoffers » sait comment effectuer le rendu des offres cibles associées qui ont été créées par l’auteur du contenu. Le gestionnaire mobileappoffers étend le gestionnaire de mise à jour des pages abstraites. De ce fait, de nombreuses propriétés sont similaires. Les détails du gestionnaire mobileappOffers possèdent les propriétés suivantes.
 
@@ -178,7 +178,7 @@ Le gestionnaire mobileapppers étend le gestionnaire mobileapppages et ajoute le
 
 **mobileappconfig** Le gestionnaire de synchronisation de contenu mobileappconfig permet d’injecter des données JSON dans le fichier MobileAppsConfig.json. Pour enregistrer une classe de fournisseur, les développeurs ajouteront leur classe MobileAppsInfoProvider à la liste des fournisseurs. Le gestionnaire effectue une itération sur la liste des MobileAppsInfoProviders et permet au fournisseur d’injecter des données dans le fichier json obtenu. La liste des propriétés prises en charge par ce gestionnaire est la suivante :
 
-* ***path **-**String*** - Chemin d’accès à un nœud d’instance d’application avec pge-type=app-instance ou un RT qui étend /libs/mobileapps/core/components/instance
+* ***path &#x200B;**-**String*** - Chemin d’accès à un nœud d’instance d’application avec pge-type=app-instance ou un RT qui étend /libs/mobileapps/core/components/instance
 * ***providers - Chaîne*** `[]` - liste des MobileAppsInfoProviders entièrement qualifiés
 * ***targetRootDirectory - Chaîne*** - Répertoire dans lequel écrire le fichier MobileAppsConfig.json.
 * **fileName - String** - nom facultatif du fichier dans lequel écrire le fichier JSON, par défaut MobileAppsConfig.json

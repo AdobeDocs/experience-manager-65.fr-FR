@@ -75,7 +75,7 @@ Accédez à la page Google [ici](https://developer.android.com/google/gcm/index.
 
 Les étapes suivantes présentent une autre méthode de création des clés API GCM :
 
-1. Connectez-vous à Google et accédez à la page du développeur de Google [](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm).
+1. Connectez-vous à Google et accédez à la page du développeur de Google [&#128279;](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm).
 1. Choisissez votre application dans la liste (ou créez-en une).
 1. Sous Nom du package Android™, saisissez votre ID d’application, c’est-à-dire `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec « test.test ».)
 1. Cliquez sur **Continuer pour choisir et configurer les services**

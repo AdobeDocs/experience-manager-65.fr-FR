@@ -264,7 +264,7 @@ Suivi du chemin d’accès au profil de l’utilisateur, qui se termine par un d
 
 #### Badge attribué {#awarded-badge}
 
-![}enchantement-badging-ugc](assets/access-badging-ugc.png)
+![&rbrace;enchantement-badging-ugc](assets/access-badging-ugc.png)
 
 #### Badge attribué {#assigned-badge}
 

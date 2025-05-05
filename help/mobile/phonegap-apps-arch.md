@@ -191,7 +191,7 @@ Notez le GUID « 24BA22ED-7D06-4330-B7EB-F6FC73251CA3 » dans le chemin .
 
 En tant que développeur PhoneGap, le contenu qui vous intéresse se trouve sous le répertoire www. Pour accéder aux ressources de l’application, utilisez des chemins d’accès relatifs.
 
-Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application sur une seule page (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. **La page de niveau supérieur initialise le routage et les contrôleurs d’Angular grâce à `*<name>*.angular-app-module.js` et `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui *n’étend pas* un sling:redirect.
+Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application sur une seule page (SPA) afin que l’URI de base (à l’exclusion du hachage) ne change jamais. Par conséquent, chaque ressource, modèle ou script que vous référencez **doit être relatif à votre page de niveau supérieur. &#x200B;** La page de niveau supérieur initialise le routage et les contrôleurs d’Angular grâce à `*<name>*.angular-app-module.js` et `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui *n’étend pas* un sling:redirect.
 
 Plusieurs méthodes d’assistance sont disponibles pour gérer les chemins relatifs :
 

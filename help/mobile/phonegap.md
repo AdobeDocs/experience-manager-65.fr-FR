@@ -29,7 +29,7 @@ Le démarrage d’une nouvelle expérience d’application AEM Mobile requiert u
 
 ## Création d’applications PhoneGap {#authoring-phonegap-applications}
 
-Un ***auteur AEM* (ou un *spécialiste du marketing*)**peut utiliser les modèles et composants prêts à l’emploi pour ajouter et modifier des pages. Vous pouvez faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu).
+Un ***auteur AEM* (ou un *spécialiste du marketing*)**&#x200B;peut utiliser les modèles et composants prêts à l’emploi pour ajouter et modifier des pages. Vous pouvez faire glisser et déposer des composants et ajouter des médias de tous types à partir de la gestion des ressources numériques, y compris des images, des vidéos et des fragments de texte (fragments de contenu).
 
 Reportez-vous aux ressources suivantes :
 

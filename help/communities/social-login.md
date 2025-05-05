@@ -474,17 +474,17 @@ Sur une instance d’auteur, connectez-vous avec les privilèges d’administrat
 1. Modifiez les propriétés du noeud ntBaseLucene-oauth :
 
    * **[!UICONTROL indexPath]** : `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL name]**: `oauthid-123****`
+   * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL reindex]** : `true`
    * **[!UICONTROL reindexCount]** : `1`
 
 1. Sous le noeud /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties :
 
    * Supprimez tous les noeuds enfants, à l’exception de cqTags.
-   * Renommez cqTags en `oauthid-123****`.
-   * Modification des propriétés du noeud `oauthid-123****`
+   * Renommez cqTags en `oauthid-123**&#x200B;**`.
+   * Modification des propriétés du noeud `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL name]**: `oauthid-123****`
+      * **[!UICONTROL name]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Sélectionnez **[!UICONTROL Enregistrer tout]**.
 

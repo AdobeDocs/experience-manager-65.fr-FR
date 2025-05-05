@@ -110,7 +110,7 @@ Utilisation de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-li
 
 * Copier `comments.hbs`
 
-   * De [/libs/social/commons/components/hbs/comments{1](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
+   * De [/libs/social/commons/components/hbs/comments&lbrace;1](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
    * À [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
 * Modifiez `comments.hbs` sur :

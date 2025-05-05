@@ -39,7 +39,7 @@ Content Services peut diffuser le contenu sous la forme de ressources, d’HTMLS
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services . Pour activer la création et la gestion de modèles dans votre application, activez les modèles de données dans l’explorateur de configurations.
 >
->Pour plus d’informations ](/help/mobile/developing-content-services.md)**consultez la documentation**[ Administration de Content Services et l’[Explorateur de configurations](/help/sites-administering/configurations.md).
+>Pour plus d’informations [&#128279;](/help/mobile/developing-content-services.md)**consultez la documentation** Administration de Content Services et l’[Explorateur de configurations](/help/sites-administering/configurations.md).
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

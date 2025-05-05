@@ -68,7 +68,7 @@ Vous pouvez afficher les propriétés de l’espace, supprimer l’espace ou pub
 **Publication d’un emplacement** Lorsqu’un emplacement est publié, tous les dossiers et entités de cet emplacement sont également publiés.
 
 1. Sélectionnez l&#39;espace en cliquant sur son icône dans la liste de la console Space
-1. Choisir L&#39;Arborescence De Publish ****
+1. Choisir L&#39;Arborescence De Publish **&#x200B;**
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
    >
    >Les nœuds de copie de langue ne peuvent exister qu’en tant qu’enfant direct de l’espace.
 
-1. Choisissez **Content Package Language&amp;ast;** et saisissez le **Title&amp;ast;** dans la boîte de dialogue **Créer une copie de langue**.
+1. Choisissez **Content Package Language&ast;** et saisissez le **Title&ast;** dans la boîte de dialogue **Créer une copie de langue**.
 
    Cliquez sur **Créer**.
 
@@ -237,7 +237,7 @@ Si des enfants d&#39;entités, qui sont d&#39;autres entités, sont rassemblés 
 
 Vous avez la possibilité de choisir **Arborescence de Publish** ou **Publish rapide** pour publier votre entité.
 
-1. Sélectionnez une entité dans la liste de la console spatiale et cliquez sur l&#39;icône **Arborescence Publish**pour la publier ainsi que ses enfants.
+1. Sélectionnez une entité dans la liste de la console spatiale et cliquez sur l&#39;icône **Arborescence Publish**&#x200B;pour la publier ainsi que ses enfants.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 

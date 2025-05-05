@@ -99,6 +99,7 @@ La racine par défaut est le site parent, mais elle peut être déplacée à n�
    * Vérifiez deux fois le nom, car il n’est pas facilement modifié une fois le groupe créé.
    * L’URL de base s’affiche sous le `Community Group Name`.
    * Pour une URL valide, ajoutez &quot;.html&quot;
+
      *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modèle de groupe de communautés**

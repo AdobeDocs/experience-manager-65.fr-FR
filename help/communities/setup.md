@@ -97,7 +97,7 @@ Créez un utilisateur sur *author*, auquel est affecté le rôle d’administrat
    * **[!UICONTROL ID]** : sirius
    * **[!UICONTROL Adresse électronique]** : sirius.nilson@mailinator.com
    * **[!UICONTROL Mot de passe]** : password
-   * **[!UICONTROL Confirmer le mot de passe&amp;ast;]** : password
+   * **[!UICONTROL Confirmer le mot de passe&ast;]** : password
    * **[!UICONTROL Prénom]** : Sirius
    * **[!UICONTROL Nom]** : Nilson
 

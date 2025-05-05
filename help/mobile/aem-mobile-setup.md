@@ -32,7 +32,7 @@ Pour configurer AEM Mobile et permettre à l’utilisateur de créer et de gére
 
 Pour commencer à configurer AEM Mobile, vous devez :
 
-* **Demander une clé API** : pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé API, remplissez le formulaire de PDF [](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire rempli au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Demander une clé API** : pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé API, remplissez le formulaire de PDF [&#128279;](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire rempli au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Générer l’ID d’appareil et le jeton d’appareil** : une fois que vous avez reçu votre clé API, vous pouvez générer l’ID d’appareil et le jeton d’appareil. Accédez à `https://aex.aemmobile.adobe.com` et procédez comme suit :
 

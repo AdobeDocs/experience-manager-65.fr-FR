@@ -210,7 +210,7 @@ Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées,
 
 * **Limite de suggestion**
 
-  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur **-**1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
+  Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur **-**&#x200B;1 signifie qu’aucune limite n’est définie. La valeur par défaut est 0.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 

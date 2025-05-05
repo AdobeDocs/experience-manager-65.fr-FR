@@ -58,8 +58,10 @@ Pour intégrer AEM Forms avec le service Captcha®, procédez comme suit :
 
 1. Configurez vos Cloud Service :
    1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** et cliquez sur **[!UICONTROL Captcha®]**.
+
       ![Captcha® dans ui](assets/hcaptcha-in-ui.png)
    1. Sélectionnez un conteneur de configuration, créé ou mis à jour, comme décrit dans la section précédente. Sélectionnez **[!UICONTROL Créer]**.
+
       ![Captcha de configuration®](assets/config-hcaptcha.png)
    1. Spécifiez **[!UICONTROL Title]**, <!--**[!UICONTROL Name]**--> **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour le service Captcha® [obtenu en prérequis](#prerequisite).
    1. Cliquez sur **[!UICONTROL Créer]**.
@@ -93,6 +95,7 @@ Pour intégrer AEM Forms avec le service Captcha®, procédez comme suit :
    * **[!UICONTROL Message de validation] :** fournissez un message de validation pour votre validation Captcha lors de l’envoi du formulaire ou lors d’une action de l’utilisateur.
    * **[!UICONTROL Service Captcha] :** Sélectionnez le service CAPTCHA pour l’envoi de votre formulaire, ici vous sélectionnez Captcha®.
    * **[!UICONTROL Paramètres de configuration] :** Sélectionnez la configuration de cloud configurée pour Captcha®.
+
      >[!NOTE]
      >Vous pouvez avoir plusieurs configurations de cloud dans votre environnement à des fins similaires. Choisissez donc le service avec soin. Si aucun service n’est répertorié, reportez-vous à la section [Connexion de votre environnement AEM Forms à avec le Captcha®](#connect-your-forms-environment-with-hcaptcha-service) pour savoir comment créer un Cloud Service qui connecte votre environnement AEM Forms au service Captcha®.
 
