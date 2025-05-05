@@ -92,7 +92,7 @@ Sous l’onglet **Paramètres** , indiquez si les balises doivent être appliqu�
 
 * **Taille max. du fichier image joint**
 
-  À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152 **&#x200B; **(2 Mo).
+  À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Nombre maximal d’octets qu’un fichier image chargé peut contenir. La valeur par défaut est 2097152 **&#x200B; &#x200B;**(2 Mo).
 
 * **Types d’image de couverture autorisés**
 
