@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Adobe Commerce comprend un moteur de recommandation optimisé par Adobe Sensei. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342991/?learn=on&captions=fre_fr)

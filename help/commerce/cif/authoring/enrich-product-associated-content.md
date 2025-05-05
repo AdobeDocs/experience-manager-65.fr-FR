@@ -19,19 +19,19 @@ Découvrez comment les spécialistes marketing peuvent enrichir les données de 
 
 ## Ressources numériques
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447311/?quality=12&learn=on&captions=fre_fr)
 
 Les ressources numériques peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la ressource numérique peut être découverte avec des recherches de mots clés basées sur le SKU. La ressource s’affiche également automatiquement en tant que contenu associé lors de la modification d’une page qui comprend le produit approprié, ce qui facilite encore la création de votre prochaine expérience digitale.
 
 ## Fragments d’expérience
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343338/?quality=12&learn=on&captions=fre_fr)
 
 Les fragments d’expérience sont une fonctionnalité d’Adobe Experience Manager qui permet à un spécialiste marketing de créer du contenu réutilisable **non structuré**. Les fragments d’expérience peuvent être associés à un SKU de produit ou à un ID catalogue. Une fois associés, les spécialistes marketing peuvent facilement découvrir des fragments connexes en fonction des produits affichés sur une page. Les fragments d’expérience peuvent également être inclus dynamiquement dans une page de catalogue de produits à l’aide d’un espace réservé et d’une association.
 
 ## Fragments de contenu
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452159/?quality=12&learn=on&captions=fre_fr)
 
 Les fragments de contenu sont une fonctionnalité d’Adobe Experience Manager qui permet à un spécialiste marketing de créer un contenu **structuré** réutilisable. Les fragments de contenu peuvent être associés à un SKU de produit ou à un ID catalogue. Une fois associés, les spécialistes marketing peuvent facilement découvrir des fragments connexes en fonction des produits affichés sur une page. Les fragments de contenu peuvent également être inclus dynamiquement dans une page de catalogue de produits à l’aide d’un espace réservé et d’une association.
 

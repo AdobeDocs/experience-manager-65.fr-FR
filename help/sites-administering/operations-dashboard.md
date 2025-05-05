@@ -659,7 +659,7 @@ Le **tableau de bord de présentation** du système présente en détail la conf
 
 >[!NOTE]
 >
->Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/21340) pour découvrir une présentation du tableau de bord de présentation du système.
+>Vous pouvez également [visionner cette vidéo](https://video.tv.adobe.com/v/3424582?captions=fre_fr) pour découvrir une présentation du tableau de bord de présentation du système.
 
 ### Accès {#how-to-access}
 

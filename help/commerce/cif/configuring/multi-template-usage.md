@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) permettent aux auteurs de contenu de créer des pages de catégories et de produits supplémentaires. Ces pages peuvent être enrichies par du contenu marketing supplémentaire et configurées pour cibler des catégories et des produits spécifiques. La vidéo suivante passe cette fonctionnalité en revue.
 
->[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32786/?quality=12&captions=fre_fr)
 
 Vous trouverez plus d’informations à ce sujet dans les ressources suivantes :
 
