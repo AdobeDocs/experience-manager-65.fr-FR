@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
-workflow-type: ht
-source-wordcount: '3593'
+source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
+workflow-type: tm+mt
+source-wordcount: '3600'
 ht-degree: 100%
 
 ---
@@ -200,6 +200,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
+| Microsoft® Windows Server 2022 | R : Prise en charge limitée |
 | Microsoft® Windows Server 2019 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z : non pris en charge |
@@ -207,8 +208,8 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
 1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
-1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
-1. Distribution Linux® prise en charge par Adobe Managed Services.
+2. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
+3. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -220,9 +221,9 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 ou version ultérieure)
 
-1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
-1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
-1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
+4. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
+5. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
+6. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
