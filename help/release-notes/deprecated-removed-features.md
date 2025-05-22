@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
-workflow-type: ht
-source-wordcount: '1747'
-ht-degree: 100%
+source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 98%
 
 ---
 
@@ -34,10 +34,10 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
-|   |   |   |   |
+| Sites | [Éditeur SPA](/help/sites-developing/spa-editor-deprecation.md) | Pour les cas d’utilisation découplés, utilisez l’[éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour l’édition visuelle ou l’[éditeur de fragment de contenu](/help/sites-developing/universal-editor/introduction.md) pour l’édition basée sur les formulaires. | 6.5.23 |
 | Sites | Le service **Configuration des interrogations gérées par Adobe AEM** : `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Le service **Importateur Sling de rapports Adobe AEM Analytics**. Voir Connexion à Adobe Analytics et création de frameworks - [Configurer l’intervalle d’import](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ dans Adobe Experience Manager (AEM). ActiveMQ a été utilisé pour la communication entre deux instances de publication AEM. | Adobe recommande aux clientes et clients d’utiliser désormais un équilibreur de charge. | 6.5.18.0 |
-| Propriétés des fragments d’expérience pour l’**État des médias sociaux**. |   | 6.5.11.0 |
+| Propriétés des fragments d’expérience pour le **statut des médias sociaux**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modèles de fragment de contenu, pour la création de fragments de contenu simples. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. | 6.5.11.0 |
 | Intégration de Creative Cloud | Le partage de dossiers d’AEM vers Creative Cloud a été ajouté dans AEM 6.2. Il permet aux personnes créatives d’accéder aux ressources d’AEM pour qu’elles puissent les ouvrir dans les applications [!DNL Creative Cloud], charger de nouveaux fichiers ou enregistrer les modifications apportées à AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une meilleure expérience utilisateur et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’envisage pas d’apporter d’autres améliorations à l’intégration du partage de dossiers d’AEM à Creative Cloud. Bien que cette fonctionnalité soit incluse dans AEM, nous recommandons aux client(e)s d’utiliser des solutions de remplacement. | Il est conseillé aux clients de passer à de nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’application de bureau AEM. |  |
 | Assets | `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Pour plus de détails, consultez la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). | Configuration décrite dans la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). |  |

@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
-workflow-type: ht
-source-wordcount: '7520'
-ht-degree: 100%
+source-git-commit: 94bd50cffe65b495a19f29ce16c60203641e749c
+workflow-type: tm+mt
+source-wordcount: '7525'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour](/help/release-notes/release-notes.md)
    + Notes de mise à jour précédentes {#service-pack}
+      + [6.5.22](/help/release-notes/previous/6-5-22.md)
       + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
@@ -1440,6 +1441,7 @@ ht-degree: 100%
             + [Présentation](/help/sites-developing/universal-editor/introduction.md)
       + Développement hybride et SPA AEM {#spas}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [Abandon de l’éditeur de SPA](/help/sites-developing/spa-editor-deprecation.md)
          + [Introduction et présentation des applications monopage (SPA)](/help/sites-developing/spa-walkthrough.md)
          + [Tutoriel sur SPA WKND](/help/sites-developing/spa-wknd.md)
          + [Prise en main avec React](/help/sites-developing/spa-getting-started-react.md)
