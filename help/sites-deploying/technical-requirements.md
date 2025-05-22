@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 100%
+source-wordcount: '3651'
+ht-degree: 98%
 
 ---
 
@@ -208,8 +208,8 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
 1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
-2. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
-3. Distribution Linux® prise en charge par Adobe Managed Services.
+1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
+1. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -220,10 +220,13 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 ou version ultérieure)
+   >* OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
 
-4. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
-5. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
-6. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
+   *Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. S’ils sont installés dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.*
+
+1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
+1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
+1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >

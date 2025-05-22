@@ -1,26 +1,26 @@
 ---
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
-description: Instructions d’installation du Pack de services AEM Forms pour l’environnement OSGi et JEE
+description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 652878504d2225e50ea14885ec96bdd408f77ed0
-workflow-type: ht
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
+workflow-type: tm+mt
 source-wordcount: '1722'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Instructions d’installation pour le pack de services AEM Forms 6.5 {#aem-form-patch-installation-instructions}
+# Instructions d’installation du pack de services Forms AEM 6.5 {#aem-form-patch-installation-instructions}
 
 ## Informations sur la version
 
 | Produit | d’Adobe Experience Manager Forms 6.5 |
 |---|---|
-| Version | 6.5.22.0 |
+| Version | 6.5.23.0 |
 | Type | Mise à jour du pack de services |
-| Date | 29 novembre 2024 |
+| Date | 29 Mai 2025 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
 
 >[!NOTE]
