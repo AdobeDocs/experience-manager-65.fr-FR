@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: d66d1a535ed4b1b8964139ffc5b110a5b52e32f1
+source-git-commit: 1b2ee697ddde1b9a137a5cb47f0c2a3a1a2724a3
 workflow-type: tm+mt
-source-wordcount: '5315'
+source-wordcount: '5310'
 ht-degree: 40%
 
 ---
@@ -193,11 +193,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur [!DNL AEM] page de navigation On-Premise (6.5.22.0) après avoir sélectionné ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur [!DNL AEM] page de navigation On-Premise (6.5.22.0) après avoir sélectionné ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, accédé au dossier**[!UICONTROL  Rechercher Adobe Stock ]**et sélectionné une image système :
    * Impossible d’obtenir la licence de l’image boursière sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Obtenir la licence et enregistrer]** affiche une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un `/` dans la page de navigation On-Premise (6.5.22.0) [!DNL AEM]. (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Les problèmes d’intégration avec [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` Service identifient incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * [!DNL AEM 6.5.21] fuite de session identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante (OOM)]** s’affichent en [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, tels que **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -475,7 +475,7 @@ Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
 * **Problème avec le lot de script JSP dans AEM 6.5.21-6.5.23 et AEM 6.5 LTS GA**
-AEM 6.5.21, 6.5.22, 6.5.23 et AEM 6.5 LTS GA incluent le lot `org.apache.sling.scripting.jsp:2.6.0`, qui est affecté par un problème connu. Ce problème est généralement observé dans des conditions de charge élevée lorsque de nombreuses requêtes simultanées sont traitées par l’instance AEM.
+AEM 6.5.21, 6.5.22, 6.5.23 et AEM 6.5 LTS GA sont fournis avec le lot `org.apache.sling.scripting.jsp:2.6.0`, qui contient un problème connu. Le problème se produit généralement sous une charge élevée lorsque l’instance AEM gère de nombreuses requêtes simultanées.
 
 Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaître dans les journaux d’erreurs avec des références à `org.apache.sling.scripting.jsp:2.6.0` :
 
