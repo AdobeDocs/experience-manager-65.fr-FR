@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4370'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td><p>Pris en charge</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 (obsolète) </p> </td>
+   <td><p> MongoDB Enterprise 6.0 (obsolète) </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -194,7 +194,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td></td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2019 (obsolète) </p> </td>
+   <td><p>Microsoft® SQL Server 2019 (obsolète) </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -210,13 +210,13 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8.0.27 (obsolète) </td>
+   <td>MySQL 8.0.27 (obsolète) </td>
    <td>-</td>
    <td>R : Prise en charge limitée </td>
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8,4</td>
+   <td>MySQL 8.4</td>
    <td>-</td>
    <td>R : Prise en charge limitée </td>
   </tr>
@@ -250,12 +250,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   </tr>
   <tr>
    <td>Microsoft® SQL Server <br /> </td>
-   <td><p>Pilote Microsoft® SQL Server JDBC 8.2.2 <br /> </p> <p>sqljdbc8.jar (obsolète) </p> </td>
+   <td><p>Pilote Microsoft® SQL Server JDBC 8.2.2 <br /> </p> <p>sqljdbc8.jar (obsolète) </p> </td>
    <td><p>À télécharger depuis le site web de Microsoft®.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server <br /> </td>
-   <td><p>Pilote Microsoft® SQL Server JDBC 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Pilote Microsoft® SQL Server JDBC 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>À télécharger depuis le site web de Microsoft®.</p> </td>
   </tr>
   <tr>
@@ -329,7 +329,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) (obsolète)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) (obsolète)</p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -512,7 +512,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019 (obsolète) </td>
+   <td>Microsoft® Office 2019 (obsolète) </td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
@@ -679,11 +679,11 @@ Pour des conditions requises supplémentaires, voir :
 - Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 - Droits d’administration pour l’installation de Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
-- OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
+- OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
 
 >[!NOTE]
 >
-> Les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin de bibliothèque par défaut représenté par la variable d’environnement LD_LIBRARY_PATH. S’ils sont installés dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.
+> Les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin de bibliothèque par défaut représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.
 
 ### Navigateurs {#browsers}
 
@@ -787,7 +787,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -815,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -898,7 +898,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -907,14 +907,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
-### Version 6.5.23.0 (29 Mai 2025)
+### Version 6.5.23.0 (29 Mai 2025)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
+| MYSQL 8.4 | | MYSQL 8.0.27 |
 | Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
-| Pilote Microsoft® SQL Server JDBC 12.8 | | Pilote Microsoft® SQL Server JDBC 8.2 |
+| Pilote Microsoft® SQL Server JDBC 12.8 | | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Microsoft® Office 2021 | | Microsoft® Office 2019 |
 | Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
 
