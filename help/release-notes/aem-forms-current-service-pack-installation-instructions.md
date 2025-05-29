@@ -1,18 +1,18 @@
 ---
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
-description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
+description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1722'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Instructions d’installation du pack de services Forms AEM 6.5 {#aem-form-patch-installation-instructions}
+# Instructions d’installation pour le pack de services AEM 6.5 Forms {#aem-form-patch-installation-instructions}
 
 ## Informations sur la version
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 |---|---|
 | Version | 6.5.23.0 |
 | Type | Mise à jour du pack de services |
-| Date | 29 Mai 2025 |
+| Date | 29 mai 2025 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
 
 >[!NOTE]
@@ -222,7 +222,7 @@ Le package est automatiquement installé.
 
 +++
 
-+++ 3. Installez les packages redistribuables Microsoft Visual C++.
++++ &#x200B;3. Installez les packages redistribuables Microsoft Visual C++.
 
 * Téléchargez et installez la [version 64 bits des packages Microsoft Visual C++ redistribuables pour Visual Studio 2015, 2017, 2019 et 2022](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) sur l’ordinateur sur lequel AEM 6.5 Forms est installé.
 
