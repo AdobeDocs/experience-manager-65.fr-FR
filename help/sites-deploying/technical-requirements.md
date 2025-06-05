@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
-workflow-type: ht
+source-git-commit: 0dca00759fc37a2bc095a5a6e74f6b1b79f9eb76
+workflow-type: tm+mt
 source-wordcount: '3651'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -119,6 +119,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
+| MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 4.4 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
@@ -207,7 +208,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, CentOS, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x inclut les dérivés de la distribution Red Hat®, notamment Red Hat® Enterprise Linux®, Oracle Linux® et Amazon Linux®. Les fonctionnalités de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux® prise en charge par Adobe Managed Services.
 
@@ -401,7 +402,7 @@ Les exigences matérielles suivantes s’appliquent à Linux® et Windows :
 
 Si vous utilisez Dynamic Media sous Linux®, les conditions préalables ci-dessous doivent être remplies :
 
-* Red Hat® Enterprise 7 ou CentOS 7 et versions ultérieures avec les derniers correctifs
+* Red Hat® Enterprise 7 et versions ultérieures avec les derniers correctifs
 * Système d’exploitation 64 bits
 * Permutation désactivée (recommandé)
 * SELinux désactivé (voir la note ci-dessous)
