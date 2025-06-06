@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 7647987c0ad365218ff4436e554c81ac35a77f63
+source-git-commit: 0a3d1e5b71ef8cb3d1829e7215cc22a0cb376dc9
 workflow-type: tm+mt
-source-wordcount: '4262'
-ht-degree: 100%
+source-wordcount: '4293'
+ht-degree: 97%
 
 ---
 
@@ -27,8 +27,9 @@ ht-degree: 100%
 <div class="preview">
 
 
-Adobe a publié un [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec le pack de services AEM 6.5 Forms 18 (6.5.18.0) on JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation de correctifs ne comprend que des correctifs.
-Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le programme d’installation complet [AEM 6.5.18.0 Forms on JEE ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)sorti le 31 août 2023 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019 ou le programme d’installation d’AEM 6.5.12 sorti le 3 mars 2022.
+Adobe a publié un [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) on JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation de correctif comprend uniquement des correctifs.
+
+Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM 6.5.23.0 Forms on JEE, Adobe recommande d’utiliser le [programme d’installation complet d’AEM 6.5.23.0 de Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sorti le 6 juin 2025 au lieu du programme d’installation d’AEM 6.5.18 Forms, sorti le 31 août 2023, ou du programme d’installation d’AEM 6.5.12 Forms, sorti le 8 avril 2019.
 
 
 </div>
@@ -52,9 +53,7 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 #### Programme d’installation complet
 
-
-- **Prise en charge de la mise à niveau pour les programmes d’installation complets** : un programme d’installation complet est publié tous les 6 Packs de services AEM. Par exemple, un programme d’installation complet a été publié avec les versions des packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.18.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.12.0 et 6.5.6.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
-
+- **Prise en charge de la mise à niveau pour les programmes d’installation complets** : un programme d’installation complet est publié tous les 6 Packs de services AEM. Par exemple, un programme d’installation complet a été publié avec les versions des packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.23.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.18.0 et 6.5.12.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
 
 - **Obsolescence et suppression** : la prise en charge des plateformes est mise à jour avec chaque version du programme d’installation complet. Tout logiciel indiqué comme obsolète dans la matrice des plateformes dans une version de programme d’installation complet est autorisé à être supprimé de la matrice des plateformes prises en charge dans une version ultérieure du programme d’installation complet, ceci indiquant la fin de la prise en charge du logiciel.
 
@@ -63,11 +62,9 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 - **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
 
+- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.23.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
-- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
-
-
-- **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.12.0 vers le version 6.5.19.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.19.0.
+- **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.18.0 vers le version 6.5.23.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.23.0.
 
 
 ### Configurations recommandées {#recommendedconfigurations}
@@ -189,8 +186,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td><p>Micronoyau de référentiel (fichiers TAR MK)</p> </td>
   <td><p>Pris en charge</p> </td>
  </tr>
- <tr>
-  <td><p> MongoDB Enterprise 5.0</p> </td>
+  <tr>
   <td><p>Référentiel Microkernel</p> </td>
   <td><p>Pris en charge</p> </td>
  </tr>
@@ -379,11 +375,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
  </tr>
  <tr>
-  <td><p>SUSE® Linux® Enterprise Server 12 (64 bits)</p> </td>
-  <td><p>A : Pris en charge</p> </td>
-  <td><p>Packs de services, correctifs cumulatifs et mises à jour de sécurité critiques</p> </td>
- </tr>
- <tr>
   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64-bit) </p> </td>
   <td><p>A : Pris en charge</p> </td>
   <td><p>Packs de services, correctifs cumulatifs et mises à jour de sécurité critiques</p> </td>
@@ -411,6 +402,9 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 (2.17 ou version ultérieure)
+> - OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
+
+    Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.
 
 
 #### Environnement virtualisé {#virtualized-environment}
@@ -759,10 +753,6 @@ Pour des conditions requises supplémentaires, voir :
 - Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 - Droits d’administration pour l’installation de Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
-<!--- OpenSSL 3 (required at default location on OS).
->[!NOTE]
->
-> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.-->
 
 
 ### Navigateurs {#browsers}
@@ -883,7 +873,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -924,7 +914,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -1021,7 +1011,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -1032,19 +1022,20 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 
+### Release 6.5.23.0 (June 06, 2025)
 
-### Release 6.5.23.0 (May 29, 2025)
 
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 7.0 |MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
+| MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 -->
+
 
 ### Version 6.5.22.0 (29 Novembre 2024)
 
