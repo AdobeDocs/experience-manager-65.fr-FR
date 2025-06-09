@@ -9,10 +9,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c75cd7a0cbd0c19fd10cc7512bbfa14fae1e4f92
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 100%
+source-wordcount: '955'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Cet article fournit des instructions détaillées sur la configuration et le dé
 
 Avant d’activer les composants principaux des formulaires adaptatifs dans un environnement AEM Forms 6.5 :
 
-* [Effectuez une mise à niveau vers le Pack de services 16 (6.5.16.0) ou version ultérieure pour AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
+* [Mise à niveau vers AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=fr).
 
 * Installez la dernière version d’[Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -59,7 +59,7 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
       -D appId="myform" ^
       -D groupId="com.myform" ^
       -D includeFormsenrollment="y" ^
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    * Linux ou Apple macOS
@@ -73,12 +73,10 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
       -D appId="myform" \
       -D groupId="com.myform" \
       -D includeFormsenrollment="y" \
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    Lorsque vous exécutez la commande ci-dessus, tenez compte des points suivants :
-
-   * Ne modifiez pas la valeur de la propriété `aemVersion` de `6.5.15.0` en une autre valeur.
 
    * Définissez la propriété `archetypeVersion` sur `41` ou plus. Pour obtenir la dernière version, reportez-vous à la section de configuration requise dans la documentation [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype).
 
