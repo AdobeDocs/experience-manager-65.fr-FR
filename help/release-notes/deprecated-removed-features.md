@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
-| Sites | [Éditeur SPA](/help/sites-developing/spa-editor-deprecation.md) | Pour les cas d’utilisation découplés, utilisez l’[éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour l’édition visuelle ou l’[éditeur de fragment de contenu](/help/sites-developing/universal-editor/introduction.md) pour l’édition basée sur les formulaires. | 6.5.23 |
+| Sites | [Éditeur SPA](/help/sites-developing/spa-editor-deprecation.md) | Pour les cas d’utilisation découplés, utilisez l’[éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle ou l’[éditeur de fragment de contenu](/help/sites-developing/universal-editor/introduction.md) pour la modification basée sur les formulaires. | 6.5.23 |
 | Sites | Le service **Configuration des interrogations gérées par Adobe AEM** : `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Le service **Importateur Sling de rapports Adobe AEM Analytics**. Voir Connexion à Adobe Analytics et création de frameworks - [Configurer l’intervalle d’import](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ dans Adobe Experience Manager (AEM). ActiveMQ a été utilisé pour la communication entre deux instances de publication AEM. | Adobe recommande aux clientes et clients d’utiliser désormais un équilibreur de charge. | 6.5.18.0 |
 | Propriétés des fragments d’expérience pour le **statut des médias sociaux**. |   | 6.5.11.0 |
