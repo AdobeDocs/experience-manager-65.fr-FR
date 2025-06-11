@@ -71,7 +71,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
    * Red Hat® Enterprise Linux® 9 (noyau 4.x, 64 bits) 
 
-* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications de type de fichier autorisées. Ces fichiers sont bloqués pendant l’envoi afin de s’assurer que seuls des types de fichiers valides sont acceptés.
+* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications de type de fichier autorisées. Ces fichiers sont bloqués pendant l’envoi afin de s’assurer que seuls des types de fichiers valides sont acceptés.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
