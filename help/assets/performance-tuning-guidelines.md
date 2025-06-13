@@ -243,7 +243,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 
 ## Recherche des index    {#search-indexes}
 
-Installez [les derniers pack de services](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Consultez les [conseils sur l’optimisation des performances](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) pour certaines optimisations d’index.
+Installez [les derniers pack de services](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Consultez les [conseils sur l’optimisation des performances](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) pour certaines optimisations d’index.
 
 Créez des index personnalisés pour les demandes que vous exécutez régulièrement. Pour plus d’informations, consultez la [méthodologie d’analyse des requêtes lentes](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) et [la conception d’index personnalisés](/help/sites-deploying/queries-and-indexing.md). Pour des informations complémentaires au sujet des bonnes pratiques concernant les requêtes et les index, consultez les [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

@@ -124,7 +124,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez sur **[!UICONTROL Ajouter]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La ressource pour laquelle vous avez promu ce mot-clé apparaît en tête des résultats de recherche.
 
-Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
+Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -213,11 +213,11 @@ Grâce à Adobe Asset Link, les professionnels de la création peuvent désormai
 
 ### Recherche de ressources numériques dans l’application de bureau [!DNL Experience Manager] {#desktop-app}
 
-Les professionnels de la création utilisent l’application de bureau pour rendre les [!DNL Experience Manager Assets] facilement consultables et disponibles sur leur bureau local (Windows ou Mac). Les créatifs peuvent facilement afficher les ressources souhaitées dans le Finder du Mac ou l’Explorateur Windows, ouvertes dans des applications de bureau et modifiées localement ; les modifications sont réenregistrées dans [!DNL Experience Manager] avec une nouvelle version créée dans le référentiel. L’application prend en charge les recherches de base à l’aide d’un ou de plusieurs mots-clés, des caractères génériques `*` et `?`, et de l’opérateur `AND`. Voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) dans l’application de bureau.
+Les professionnels de la création utilisent l’application de bureau pour rendre les [!DNL Experience Manager Assets] facilement consultables et disponibles sur leur bureau local (Windows ou Mac). Les créatifs peuvent facilement afficher les ressources souhaitées dans le Finder du Mac ou l’Explorateur Windows, ouvertes dans des applications de bureau et modifiées localement ; les modifications sont réenregistrées dans [!DNL Experience Manager] avec une nouvelle version créée dans le référentiel. L’application prend en charge les recherches de base à l’aide d’un ou de plusieurs mots-clés, des caractères génériques `*` et `?`, et de l’opérateur `AND`. Voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) dans l’application de bureau.
 
 ### Recherche de ressources numériques dans [!DNL Brand Portal] {#brand-portal}
 
-Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. Voir [Recherche de ressources sur Brand Portal](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
+Les utilisateurs métiers et les spécialistes marketing utilisent Brand Portal pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. Voir [Recherche de ressources sur Brand Portal](https://experienceleague.adobe.com/fr/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
 
 ### Rechercher des images [!DNL Adobe Stock]  {#adobe-stock1}
 
@@ -365,11 +365,11 @@ La recherche visuelle utilise des balises intelligentes. Après avoir configuré
    Enregistrez les modifications.
 
 1. Accédez à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` et ajoutez la propriété `similarityTags` de type `Boolean` avec la valeur de `true`.
-1. Appliquez des balises intelligentes aux ressources de votre référentiel [!DNL Experience Manager]. Consultez la section [Configuration des balises intelligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring).
+1. Appliquez des balises intelligentes aux ressources de votre référentiel [!DNL Experience Manager]. Consultez la section [Configuration des balises intelligentes](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/configuring/tagging#configuring).
 1. Dans CRXDE, dans le nœud `/oak-index/damAssetLucene`, définissez la propriété `reindex` sur `true`. Enregistrez les modifications.
 1. (Facultatif) Si vous disposez d’un formulaire de recherche personnalisé, copiez le nœud `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` sur `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
-Pour obtenir des informations connexes, consultez les sections [Présentation des balises intelligentes dans Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags) et [Gestion des balises intelligentes](/help/assets/enhanced-smart-tags.md).
+Pour obtenir des informations connexes, consultez les sections [Présentation des balises intelligentes dans Experience Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/metadata/image-smart-tags) et [Gestion des balises intelligentes](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
@@ -492,6 +492,6 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

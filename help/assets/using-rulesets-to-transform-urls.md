@@ -41,14 +41,14 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 >Utilisez les ensembles de règles avec prudence ; ceux-ci peuvent empêcher l’affichage du contenu Dynamic Media sur votre site.
 
 Il existe des exemples d’ensembles de règles disponibles afin de vous aider à créer votre propre ensemble de règles.
-Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Comme pour toute création d’ensemble de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
 
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.
 Les environnements de production et les environnements intermédiaires nécessitent en général des identifiants différents.
 
-Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir des informations de connexion](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -56,7 +56,7 @@ Consultez l’[application de bureau Adobe Dynamic Media Classic pour obtenir
 
 **Pour déployer des ensembles de règles XML, procédez comme suit :**
 
-1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
