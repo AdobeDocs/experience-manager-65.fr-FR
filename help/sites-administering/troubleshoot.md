@@ -111,7 +111,7 @@ Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ou
 * Vous constatez qu’il y a de nombreuses entrées CacheManager: resizeAll dans le fichier journal. Le nombre (size=&lt;x>) ci-dessous affiche le nombre de caches. Chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
-Pour commencer à analyser les sessions non fermées, consultez l’article de la base de connaissances [Résolveur de ressources non fermé](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Pour commencer à analyser les sessions non fermées, consultez l’article de la base de connaissances [Résolveur de ressources non fermé](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Utiliser la console web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

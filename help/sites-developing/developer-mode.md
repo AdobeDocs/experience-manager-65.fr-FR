@@ -56,7 +56,7 @@ Ils aident les développeurs à :
 >
 >Voir :
 >
->* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) pour découvrir d’autres conseils et outils.
+>* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16935) pour découvrir d’autres conseils et outils.
 >* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=fr).
 >
 

@@ -64,7 +64,7 @@ Par exemple, les emplacements suivants dans la structure `/libs` risquent d’ê
 
 >[!NOTE]
 >
->Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) pour découvrir d’autres conseils et outils.
+>Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-16935) pour découvrir d’autres conseils et outils.
 
 ## Personnaliser l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
