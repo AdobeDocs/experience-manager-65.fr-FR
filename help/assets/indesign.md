@@ -6,10 +6,10 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 100%
+source-wordcount: '1550'
+ht-degree: 80%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] utilise :
 
-* un proxy pour distribuer la charge de certaines tâches de traitement. Un proxy est une instance [!DNL Experience Manager] qui communique avec un programme de traitement du proxy afin d’accomplir une tâche spécifique, et avec d’autres instances [!DNL Experience Manager] pour diffuser les résultats.
+* un proxy pour distribuer la charge de certaines tâches de traitement. Un proxy est une instance de [!DNL Experience Manager] qui communique avec un programme de traitement du proxy afin d’accomplir une tâche spécifique, et avec d’autres instances [!DNL Experience Manager] pour diffuser les résultats.
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 Il peut couvrir une grande variété de tâches ; par exemple l’utilisation d’[!DNL InDesign Server] pour traiter les fichiers.
 
-Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec [!DNL Adobe InDesign Server], qui exécute des [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) afin d’extraire des métadonnées et de générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
+Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers [!DNL Experience Manager Assets], un proxy est utilisé. Cette méthode utilise un programme de traitement du proxy pour communiquer avec le [!DNL Adobe InDesign Server], où les scripts sont exécutés pour extraire des métadonnées et générer divers rendus pour [!DNL Experience Manager Assets]. Le programme de traitement du proxy permet une communication bidirectionnelle entre [!DNL InDesign Server] et les instances [!DNL Experience Manager] dans une configuration cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting). Les scripts sont écrits dans [!DNL ExtendScript], qui est similaire à [!DNL JavaScript]. Pour plus d’informations sur les scripts [!DNL InDesign], rendez-vous à l’adresse [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] est proposé sous la forme de deux offres distinctes. L’application de bureau [Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des dispositions pour la distribution papier et numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer des documents de façon automatisée, et par programmation, sur la base de vos dispositions créées avec [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur ExtendScript. Les scripts sont écrits en [!DNL ExtendScript], qui est similaire à [!DNL JavaScript].
 
 ## Fonctionnement de l’extraction {#how-the-extraction-works}
 
@@ -36,7 +36,7 @@ Pour charger intégralement des fichiers créés avec [!DNL Adobe InDesign] vers
 >Les versions précédentes d’[!DNL Experience Manager] permettaient seulement d’extraire le XMP et la miniature. Désormais, tous les médias peuvent être extraits.
 
 1. Chargez votre fichier INDD vers [!DNL Experience Manager Assets].
-1. Un framework envoie des scripts de commande vers [!DNL InDesign Server] via un protocole SOAP (Simple Object Access Protocol).
+1. Un framework envoie des scripts de commande au [!DNL InDesign Server] via SOAP (Simple Object Access Protocol).
 Ce script de commande permet d’effectuer les opérations suivantes :
 
    * Récupérer le fichier INDD.
@@ -50,11 +50,11 @@ Ce script de commande permet d’effectuer les opérations suivantes :
 
    >[!NOTE]
    >
-   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous la forme d’un package compressé au format [ZIP](https://www.techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML est un format XML qui effectue le rendu de tout le contenu du fichier [!DNL InDesign]. Il est stocké sous la forme d’un package compressé au format [ZIP](https://techterms.com/definition/zip). Pour plus d’informations, consultez les [Formats d’échange d’InDesigns INX et IDML](https://www.peachpit.com/promotions/adobe-creative-cloud-2024-release-books-ebooks-and-142536).
 
    >[!CAUTION]
    >
-   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés sont limités au format PNG et JPEG. Vous ne pourrez pas générer les rendus HTML, .idml ou de page.
+   >Si [!DNL InDesign Server] n’est pas installé ou configuré, vous pouvez tout de même charger un fichier INDD dans [!DNL Experience Manager]. Toutefois, les rendus générés se limitent aux formats PNG et JPEG. Vous ne pourrez pas générer HTML, `.idml` ni les rendus de page.
 
 1. Après l’extraction et la génération du rendu :
 
@@ -83,7 +83,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 
    `<*ids-installation-dir*>/InDesignServer.com -port 8080`
 
-   Cela démarre le serveur avec le module complémentaire SOAP en écoute sur le port 8080. Tous les messages de journal et les résultats sont écrits directement dans la fenêtre de commande.
+   Le serveur démarre alors avec le plug-in SOAP en écoute sur le port 8080. Tous les messages de journal et les résultats sont écrits directement dans la fenêtre de commande.
 
    >[!NOTE]
    >
@@ -97,7 +97,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 * [Extraction de médias](#media-extraction)
 * [Extraction de page](#page-extraction)
 
-Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
+Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour différentes instances de création (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modification d’un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
 
 Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Experience Manager Assets] (via les méthodes habituelles) déclenche le workflow pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en chargeant un fichier INDD dans [!DNL Experience Manager Assets] afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
 
@@ -105,7 +105,7 @@ Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Ex
 
 Cette étape commande l’extraction de médias à partir du fichier INDD.
 
-Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]** dans l’étape **[!UICONTROL Extraction de médias]**.
+Pour personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]** de l’étape **[!UICONTROL Extraction de médias]**.
 
 ![Arguments d’extraction de médias et chemins de scripts](assets/media_extraction_arguments_scripts.png)
 
@@ -121,7 +121,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->Ne modifiez pas la bibliothèque ExtendScript. Cette bibliothèque fournit la fonctionnalité HTTP requise pour communiquer avec Sling. Ce paramètre spécifie la bibliothèque à envoyer à [!DNL InDesign Server] pour qu’il l’utilise.
+>Ne modifiez pas la bibliothèque ExtendScript. Cette bibliothèque fournit la fonctionnalité HTTP requise pour communiquer avec Sling. Ce paramètre spécifie la bibliothèque à envoyer au [!DNL InDesign Server] pour qu’il l’utilise.
 
 Le script `ThumbnailExport.jsx` exécuté par l’étape de workflow Extraction des médias génère un rendu miniature au format .jpg. Ce rendu est utilisé par l’étape du workflow Traiter les miniatures afin de générer les rendus statiques requis par [!DNL Experience Manager].
 
@@ -129,7 +129,7 @@ Vous pouvez configurer l’étape du workflow Traiter les miniatures de manière
 
 #### Extraction de page {#page-extraction}
 
-Cette opération crée une page [!DNL Experience Manager] à partir des éléments extraits. Un gestionnaire d’extraction est utilisé pour extraire les données d’un rendu (actuellement HTML ou IDML). Ces données sont ensuite utilisées pour créer une page avec PageBuilder.
+Cette opération crée une page [!DNL Experience Manager] à partir des éléments extraits. Un gestionnaire d’extraction est utilisé pour extraire les données d’un rendu (actuellement HTML ou IDML). Ces données sont ensuite utilisées pour créer une page à l’aide de Page Builder.
 
 Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]** dans l’étape **[!UICONTROL Extraction de page]**.
 
@@ -138,11 +138,11 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 * **Gestionnaire d’extraction de page** : dans la liste déroulante, sélectionnez le gestionnaire que vous souhaitez utiliser. Un gestionnaire d’extraction fonctionne sur un rendu spécifique, sélectionné par un `RenditionPicker` associé (voir l’API `ExtractionHandler`). Dans une installation standard [!DNL Experience Manager], les éléments suivants sont disponibles :
    * Gestionnaire d’extraction d’exportation IDML : fonctionne sur le rendu `IDML` généré lors de l’étape MediaExtract.
 
-* **Nom de la page** : indique le nom que vous souhaitez attribuer à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
+* **Nom de la page** : indiquez le nom que vous souhaitez attribuer à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
 
-* **Titre de la page** : indique le titre que vous souhaitez attribuer à la page résultante.
+* **Titre de la page** : indiquez le titre que vous souhaitez attribuer à la page résultante.
 
-* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si vous laissez le champ vide, le nœud contenant les rendus de la ressource sera utilisé.
+* **Racine de la page** : chemin d’accès à la racine de la page résultante. Si rien n’est indiqué, le nœud contenant les rendus de la ressource est utilisé.
 
 * **Modèle de page** : modèle à utiliser lors de la génération de la page résultante.
 
@@ -163,7 +163,7 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **Pool IDS**
-Points d’entrée SOAP à utiliser pour communiquer avec [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
+Points d’entrée SOAP utilisés pour communiquer avec l’[!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
 
 1. Cliquez sur OK pour enregistrer.
 
@@ -173,7 +173,7 @@ Si [!DNL InDesign Server] et [!DNL Experience Manager] sont exécutés sur des h
 
 1. Accédez à la console web `https://[aem_server]:[port]/system/console/configMgr`.
 1. Localisez la configuration **[!UICONTROL Externalisateur de lien Day CQ]**. Cliquez sur **[!UICONTROL Modifier]** pour ouvrir.
-1. Les paramètres de l’externaliseur de liens permettent de créer des URL absolues pour le déploiement d’[!DNL Experience Manager] et pour [!DNL InDesign Server]. Utilisez le champ **[!UICONTROL Domaines]** pour spécifier le nom d’hôte de [!DNL Adobe InDesign Server]. Cliquez sur **Enregistrer**.
+1. Les paramètres de l’externaliseur de liens permettent de créer des URL absolues pour le déploiement d’[!DNL Experience Manager] et pour [!DNL InDesign Server]. Utilisez le champ **[!UICONTROL Domaines]** pour spécifier le nom d’hôte du [!DNL Adobe InDesign Server]. Cliquez sur **Enregistrer**.
 
    Dans les URL absolues, utilisez `localhost` comme nom d’hôte de votre instance locale (d’auteur) et nom d’hôte ou adresse IP de l’instance de publication, comme illustré ci-dessous.
 
@@ -184,7 +184,7 @@ Si [!DNL InDesign Server] et [!DNL Experience Manager] sont exécutés sur des h
 Vous pouvez désormais activer le traitement parallèle des tâches pour IDS. Déterminez le nombre maximal de tâches parallèles (`x`) et qu’[!DNL InDesign Server] peut traiter :
 
 * Sur une machine unique à processeur multi-cœurs, le nombre maximum de tâches parallèles (`x`) qu’[!DNL InDesign Server] peut traiter est égal au nombre de processeurs qui exécutent IDS, moins un.
-* Lorsque vous exécutez IDS sur plusieurs machines, vous devez comptabiliser le nombre total de processeurs disponibles (c’est-à-dire sur toutes les machines), puis soustraire le nombre total de machines.
+* Lorsque vous exécutez IDS sur plusieurs machines, vous devez compter le nombre total de processeurs disponibles (c’est-à-dire sur toutes les machines), puis soustraire le nombre total de machines.
 
 Pour configurer le nombre de traitements IDS parallèles :
 
@@ -209,7 +209,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Lorsque vous travaillez avec un groupe de programmes de traitement, vous pouvez activer la liste bloquée des programmes de traitement IDS.
+>Lorsque vous travaillez avec un groupe de programmes de traitement, vous pouvez activer une liste bloquée de programmes de traitement IDS.
 >
 >Pour ce faire, cochez la case **[!UICONTROL enable.retry.name]** sous la configuration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, ce qui déclenche de nouvelles tentatives pour les tâches IDS.
 >

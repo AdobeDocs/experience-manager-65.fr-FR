@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 100%
+source-wordcount: '1558'
+ht-degree: 91%
 
 ---
 
@@ -17,17 +17,17 @@ ht-degree: 100%
 
 Les modèles de ressources correspondent à une catégorie spéciale de ressources qui permet de réutiliser rapidement des contenus riches pour les médias papier et numériques. Un modèle de ressource comprend deux parties : une section de message fixe et une section modifiable. La section fixe peut comprendre du contenu propriétaire, comme le logo d’une marque ou des informations sur les droits d’auteur, pour lequel la modification n’est pas activée. La section modifiable peut contenir du contenu visuel et textuel dans des champs qui peuvent être modifiés afin de personnaliser le message.
 
-Parce qu’ils permettent de réaliser des modifications limitées tout en garantissant une harmonie d’ensemble, les modèles de ressources sont des blocs de création parfaits pour adapter et diffuser rapidement votre contenu. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
+Les modèles de ressources offrent la possibilité d’effectuer des modifications limitées tout en préservant la sécurité de la signalétique internationale. Cette fonctionnalité en fait des blocs de création idéaux pour adapter et distribuer rapidement du contenu entre différentes fonctions. La réutilisation de contenu permet de réduire les coûts de gestion des canaux papier et numériques. Cela garantit en outre une expérience globale cohérente, quel que soit le canal de diffusion.
 
-En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de dérivés marketing, par exemple, des brochures, des prospectus, des cartes postales, des cartes de visite, etc., pour transmettre de façon claire votre message marketing à votre clientèle. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Surtout, vous pouvez facilement proposer simultanément des expériences numériques et imprimées pour offrir une expérience cohérente et intégrée aux utilisateurs et utilisatrices.
+En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Vous pouvez créer différents types de dérivés marketing, notamment des brochures, des prospectus, des cartes postales, des cartes de visite, etc. pour transmettre clairement votre message marketing aux clients. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Surtout, vous pouvez facilement proposer simultanément des expériences numériques et imprimées pour offrir une expérience cohérente et intégrée aux utilisateurs et utilisatrices.
 
 Si les modèles de ressources sont pour la plupart des fichiers [!DNL Adobe InDesign], il n’est pas nécessaire de maîtriser [!DNL Adobe InDesign] pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle [!DNL Adobe InDesign] avec vos champs produit, comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour qu’[!DNL Adobe InDesign] puisse traiter vos modifications, vous devez configurer [!DNL Experience Manager Assets] pour qu’il intègre [!DNL Adobe InDesign Server].
 
-La possibilité de modifier des modèles [!DNL Adobe InDesign] dans l’interface Web favorise une meilleure collaboration entre les créatifs et le personnel marketing. La vitesse accrue du contenu réduit le délai de mise sur le marché des dérivés marketing.
+La possibilité de modifier des modèles [!DNL Adobe InDesign] à partir de l’interface Web favorise une meilleure collaboration entre les créatifs et le personnel marketing. La vitesse accrue du contenu réduit le délai de mise sur le marché des dérivés marketing.
 
 Avec les modèles de ressources, vous pouvez réaliser les choses suivantes :
 
-* Modifier des champs de modèle modifiables depuis l’interface Web
+* Modifier des champs de modèle modifiables à partir de l’interface Web
 * Contrôlez les paramètres de base de style du texte, par exemple, la taille, le style et le type de police au niveau des balises.
 * Modifier les images du modèle à l’aide du sélecteur de contenu
 * Prévisualiser les modifications du modèle
@@ -67,7 +67,7 @@ Imaginez un scénario dans lequel vous souhaitez créer des supports numériques
 
 ## Modifier un dérivé {#editing-a-collateral}
 
-Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez aussi choisir de l’ouvrir depuis la page [!UICONTROL Modèles] ou la page des détails du fichier.
+Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez également l’ouvrir à partir de la page [!UICONTROL Modèles] ou de la page Ressource.
 
 1. Pour ouvrir un dérivé pour le modifier, procédez de l’une des façons suivantes :
 
@@ -90,7 +90,7 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
 
    >[!NOTE]
    >
-   >Vérifiez que votre déploiement [!DNL Experience Manager] est intégré avec [!DNL InDesign Server] pour qu’[!DNL Experience Manager Assets] puisse extraire les données du modèle [!DNL InDesign] et les rendre modifiables. Pour plus d’informations, consultez [Intégration d’Experience Manager Assets à InDesign Server](/help/assets/indesign.md).
+   >Intégrez votre déploiement [!DNL Experience Manager] à un [!DNL InDesign Server] afin que [!DNL Experience Manager Assets] puissiez extraire les données du modèle [!DNL InDesign] et les rendre modifiables. Pour plus d’informations, consultez [Intégration d’Experience Manager Assets à InDesign Server](/help/assets/indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte dans la liste des champs modifiables, puis modifiez le texte dans le champ.
 
@@ -127,7 +127,6 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
    >* Incorporez les images lorsque vous créez les modèles [!DNL InDesign] (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources existantes dans [!DNL Experience Manager].
    >
-   >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], reportez-vous à la section [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le dérivé est créé dans le dossier de départ. Pour afficher les rendus, ouvrez l’élément et choisissez **[!UICONTROL Rendus]** de la liste GlobalNav.
