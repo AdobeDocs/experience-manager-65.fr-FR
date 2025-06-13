@@ -304,7 +304,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 Quand la mise à niveau est effectuée à partir d’une mise en œuvre de cache plus ancienne (avant Oak 1.6), la structure du répertoire du cache du système de fichiers local est différente. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et tout chargement en attente doit être planifié. De plus, les fichiers précédemment chargés dans le cache seront placés dans le cache lors de l’initialisation.
 
-Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
+Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) du module oak-run.
 
 Le cache est soumis à une limite de taille qui peut être configurée à l’aide du paramètre cacheSize.
 
