@@ -168,7 +168,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 Le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] contient plusieurs étapes qui sont configurées pour les tâches, telles que la génération de Dynamic Media PTIFF et l’intégration d’[!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour que la [!UICONTROL ressource de mise à jour de gestion des ressources numériques] pointent vers le nouveau modèle.
 
-L’exécution intensive du workflow [!UICONTROL  Ressource de mise à jour de gestion des ressources numériques ] peut augmenter considérablement la taille de votre banque de données de fichiers. Les résultats d’une expérience effectuée par Adobe ont montré que la taille du magasin de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont effectués dans les 8 heures.
+L’exécution intensive du workflow [!UICONTROL &#x200B; Ressource de mise à jour de gestion des ressources numériques &#x200B;] peut augmenter considérablement la taille de votre banque de données de fichiers. Les résultats d’une expérience effectuée par Adobe ont montré que la taille du magasin de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont effectués dans les 8 heures.
 
 Il s’agit d’une augmentation temporaire, et le magasin de données est restauré à sa taille d’origine après l’exécution de la tâche de récupération de l’espace mémoire du magasin de données.
 

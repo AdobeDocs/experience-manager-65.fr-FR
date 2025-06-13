@@ -726,7 +726,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Une page Informations concernant l’intégration s’affiche, **** comme suit :
+1. Une page Informations concernant l’intégration s’affiche, **&#x200B;**&#x200B;comme suit :
 
    >[!NOTE]
    >

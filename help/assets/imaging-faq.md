@@ -336,9 +336,9 @@ Cet en-tête vous indique ce qui suit :
 >**X-Adobe-Smart-Imaging = -1 avec diffusion en WebP**
 >
 >Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que WebP est toujours en cours de diffusion, l’imagerie dynamique est active. Toutefois, les avantages de taille n’étaient pas calculés en raison d’un cache obsolète. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
->>Exemple d’utilisation du modificateur :
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
+>&#x200B;>Exemple d’utilisation du modificateur :
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
 
 +++
 

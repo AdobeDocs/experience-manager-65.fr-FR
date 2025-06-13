@@ -47,7 +47,7 @@ Pour activer la propagation des modifications apportées aux métadonnées aux r
 
 ## Activation de l’écriture différée XMP pour des rendus spécifiques {#enabling-xmp-writeback-for-specific-renditions}
 
-Pour permettre à la fonction Écriture différée XMP de propager les modifications de métadonnées à des rendus spécifiques, spécifiez ces rendus à l’étape de workflow Écriture différée XMP du workflow [!UICONTROL  Écriture différée des métadonnées de gestion des ressources numériques ]. Par défaut, cette étape est configurée avec le rendu d’origine.
+Pour permettre à la fonction Écriture différée XMP de propager les modifications de métadonnées à des rendus spécifiques, spécifiez ces rendus à l’étape de workflow Écriture différée XMP du workflow [!UICONTROL &#x200B; Écriture différée des métadonnées de gestion des ressources numériques &#x200B;]. Par défaut, cette étape est configurée avec le rendu d’origine.
 
 Pour que la fonctionnalité d’écriture différée XMP propage les métadonnées aux miniatures des rendus 140.100.png et 319.319.png, suivez ces étapes.
 
