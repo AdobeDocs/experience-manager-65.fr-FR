@@ -10,10 +10,10 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
-workflow-type: ht
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+workflow-type: tm+mt
 source-wordcount: '6216'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -657,7 +657,7 @@ La CSP permet d’affiner les politiques. Toutefois, dans une application comple
 
 >[!NOTE]
 >
->Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionnement {#sizing}
 

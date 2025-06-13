@@ -8,10 +8,10 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+workflow-type: tm+mt
 source-wordcount: '3461'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -445,7 +445,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 
 * azureBlobEndpoint=&quot;&quot; : point d’entrée Blob Azure. Par exemple, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 * container=&quot;&quot; : nom du conteneur de stockage d’objets blob Microsoft® Azure. Le conteneur est le regroupement d’un ensemble d’objets blob. Pour plus d’informations, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '3651'
+source-wordcount: '3630'
 ht-degree: 98%
 
 ---
@@ -91,10 +91,10 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
 | Oracle Java™ SE 17 JDK | Z : non pris en charge `[1]` |
-| Oracle Java™ SE 11 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java™ SE 11 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java™ SE 10 JDK | Z : non pris en charge `[1]` |
 | Oracle Java™ SE 9 JDK | Z : non pris en charge `[1]` |
-| Oracle Java™ SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java™ SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | Machine virtuelle IBM® J9 - Version 2.9, JRE 1.8.0 | A : prise en charge de `[2]` |
 | Machine virtuelle IBM® J9 - Version 2.8, JRE 1.8.0 | A : prise en charge de `[2]` |
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
@@ -554,7 +554,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). Pour les étapes d’installation des bibliothèques clientes 32 bits, consultez la section [Activer l’écriture différée et l’extraction XMP sous Red Hat® Linux® 64 bits](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux® (prise en charge des applications 32 bits et 32 bits sur les systèmes 64 bits).
 
    * Windows Server
    * macOS X (64 bits)

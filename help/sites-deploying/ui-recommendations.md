@@ -10,9 +10,9 @@ exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -95,10 +95,6 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
   </tr>
  </tbody>
 </table>
-
-### FAQ {#faq}
-
-Voir l’article de la base de connaissances, [Questions fréquentes sur la création dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kb/index/touchui_faq.html), pour plus d’informations, notamment sur la planification de l’obsolescence de l’interface utilisateur classique.
 
 ### Choix de l’interface utilisateur {#selecting-your-ui}
 

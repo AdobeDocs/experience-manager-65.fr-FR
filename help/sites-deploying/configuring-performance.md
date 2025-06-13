@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
-workflow-type: ht
-source-wordcount: '6470'
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+workflow-type: tm+mt
+source-wordcount: '6467'
 ht-degree: 100%
 
 ---
@@ -459,7 +459,6 @@ Toutes les optimisations effectuées doivent être testées pour s’assurer :
 Une sélection d’outils est disponible pour vous aider dans la génération de la charge, la surveillance des performances et l’analyse des résultats. Voici quelques-uns de ces outils :
 
 * [JMeter](https://jmeter.apache.org/)
-* [Load Runner](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Profil interactif Java™](https://jiprof.sourceforge.net/)
 

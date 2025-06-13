@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 100%
 
 ---
@@ -58,8 +58,6 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation du tableau de bord des opérations.
 * Apache fournit un produit appelé **JMeter** qui peut être utilisé pour les tests de performance et de chargement, ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais il dispose d’un plus petit ensemble de fonctionnalités que les produits d’entreprise et d’une courbe d’apprentissage plus difficile. JMeter est disponible sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/).
-
-* **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview](https://www.microfocus.com/fr-fr/portfolio/performance-engineering/overview)
 
 * Des outils de test de chargement de site web tels que [Vercara](https://vercara.com/website-performance-management) peuvent également être utilisés.
 * Lors du test de sites web mobiles ou réactifs, un ensemble distinct d’outils doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme la 3G ou EDGE. Parmi les outils les plus utilisés, on peut citer :

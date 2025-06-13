@@ -9,9 +9,9 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1182'
 ht-degree: 100%
 
 ---
@@ -153,7 +153,3 @@ Si le stockage persistant est incorporé dans le répertoire d’installation, p
 >Adobe vous recommande de sauvegarder votre référentiel avant de supprimer AEM. Si vous supprimez l’intégralité de la variable &lt;cq-installation-directory>, vous supprimez également le référentiel. Pour conserver les données du référentiel avant de supprimer, déplacez ou copiez le dossier &lt;cq-installation-directory>/crx-quickstart/repository ailleurs avant de supprimer les autres dossiers.
 
 Si votre installation d’AEM utilise un stockage externe, par exemple un serveur de base de données, la suppression du dossier ne supprime pas automatiquement les données, mais supprime la configuration de stockage, ce qui rend difficile la restauration du contenu JCR.
-
-### Les fichiers JSP ne sont pas compilés sur JBoss® {#jsp-files-are-not-compiled-on-jboss}
-
-Si vous installez ou mettez à jour des fichiers JSP vers Experience Manager sur JBoss® et que les servlets correspondants ne sont pas compilés, assurez-vous que le compilateur JSP JBoss® est correctement configuré. Pour plus d’informations, consultez l’article sur les [problèmes de compilation JSP dans JBoss](https://helpx.adobe.com/fr/experience-manager/kb/jsps-dont-compile-jboss.html).

@@ -10,10 +10,10 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5792'
-ht-degree: 100%
+source-wordcount: '5755'
+ht-degree: 99%
 
 ---
 
@@ -1101,16 +1101,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr)
 >* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
 >* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=fr)
->* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
-
-### Processeur à 100 % {#cpu-at}
-
-Si le processeur de votre système fonctionne constamment à 100 %, reportez-vous aux sections suivantes :
-
-* La base de connaissances :
-
-   * [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
 
 ### Mémoire insuffisante {#out-of-memory}
 
@@ -1125,7 +1116,7 @@ Dans ce cas, vérifiez les éléments suivants :
 * Les paramètres JVM utilisés pour [lancer AEM](/help/sites-deploying/deploy.md#getting-started)
 * La base de connaissances :
 
-   * [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
+* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
 
 ### E/S de disque {#disk-i-o}
 
@@ -1143,8 +1134,7 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop de fichiers ouverts](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr)
-   * [Le journal consomme trop d’espace disque](https://helpx.adobe.com/fr/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Détérioration régulière des performances {#regular-performance-degradation}
 
@@ -1153,7 +1143,7 @@ Si les performances de votre instance se détériorent après chaque redémarrag
 * [Mémoire insuffisante](#outofmemory)
 * La base de connaissances :
 
-   * [Sessions non fermées](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Résolveur de ressources non fermé](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Réglage JVM {#jvm-tuning}
 

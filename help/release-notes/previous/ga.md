@@ -1,14 +1,14 @@
 ---
 title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
-description: « Notes relatives à [!DNL Adobe Experience Manager] 6.5, décrivant les informations, les nouveautés, la procédure d’installation et les listes détaillées des modifications pour la version. »
+description: Notes relatives à [!DNL Adobe Experience Manager] 6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '4493'
-ht-degree: 100%
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+workflow-type: tm+mt
+source-wordcount: '4477'
+ht-degree: 99%
 
 ---
 
@@ -423,7 +423,7 @@ AEM Forms 6.5 comporte plusieurs nouvelles fonctionnalités et améliorations.
 * Rapports de transaction pour suivre le nombre de formulaires envoyés, de documents traités et de documents rendus
 * Améliorations de l’utilisation des communications interactives
 * Signatures numériques basées sur le cloud dans les formulaires adaptatifs
-* Intégrez des formulaires adaptatifs et des communications interactives dans les applications monopages (SPA) d’AEM Sites.
+* Incorporez des formulaires adaptatifs et des communications interactives dans les applications monopages (SPA) d’AEM Sites.
 * Prise en charge des variables dans les workflows AEM
 * Prise en charge du modèle d’affichage des données dans les communications interactives
 * Tri des formulaires adaptatifs et des tableaux de communication interactive
@@ -435,7 +435,7 @@ Consultez le [Résumé des nouvelles fonctionnalités et améliorations apporté
 
 Adobe applique un modèle de développement axé sur les clients et clientes afin qu’ils puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs, utilisatrices et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&amp;lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur les clients et clientes, et corrigées dans AEM 6.5.
 
@@ -529,8 +529,6 @@ Concernant [!DNL Adobe Experience Manager] 6.5, [consultez la liste des fonctio
    1. appelant la fonction `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Mise à niveau vers AEM 6.5.
    3. Exécution de la « migration différée du contenu » sur AEM 6.5.
-
-  Cet article de la [Base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) est disponible pour vous offrir plus d’informations et la solution à ce problème.
 
 * Si vous utilisez le JDK 11 avec l’instance AEM 6.5, certaines pages peuvent s’afficher comme vides après le déploiement de certains packages. Le message d’erreur suivant s’affiche dans le fichier journal :
 

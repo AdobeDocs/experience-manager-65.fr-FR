@@ -9,9 +9,9 @@ exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5425'
+source-wordcount: '5405'
 ht-degree: 100%
 
 ---
@@ -234,7 +234,7 @@ Lors de la configuration de la synchronisation d’Experience Manager Assets e
 
 >[!NOTE]
 >
->Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
+>Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
 
 #### Restrictions connues et implications en termes de conception {#known-limitations-and-design-implications}
 
@@ -402,7 +402,7 @@ Lorsqu’une ressource est ajoutée à Experience Manager Assets, elle est aut
    >[!NOTE]
    >
    >* Lors de l’ajout de ressources après l’automatisation, si elles ne sont pas placées dans le dossier cible CQ, elles ne sont pas téléchargées vers Dynamic Media Classic.
-   >* Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
+   >* Experience Manager incorpore toutes les métadonnées comme XMP avant de les charger vers Dynamic Media Classic, de sorte que toutes les propriétés du nœud de métadonnées soient disponibles dans Dynamic Media Classic sous la forme d’un XMP.
 
 ### Configuration du statut (publié/dépublié) des ressources poussées vers Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,10 +424,6 @@ Pour pouvoir pousser des ressources vers Dynamic Media Classic sans les publie
 1. [Configurez un aperçu sécurisé pour votre compte Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=fr).
 
 Ces étapes sont les mêmes que pour créer une configuration de test sécurisée dans Dynamic Media Classic.
-
->[!NOTE]
->
->Si votre environnement d’installation est un système d’exploitation Unix 64 bits, rendez-vous sur [https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) pour connaître les autres options de configuration à définir.
 
 #### Limites connues pour pousser des ressources en conservant un statut dépublié  {#known-limitations-for-pushing-assets-in-unpublished-state}
 

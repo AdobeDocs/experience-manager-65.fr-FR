@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2093'
-ht-degree: 100%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ Le mappage de ressources permet de définir des redirections, des URL de redirec
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
+* faire précéder toutes les demandes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
 Pour plus d’informations, consultez [Mappage de ressources](/help/sites-deploying/resource-mapping.md).
@@ -184,7 +184,7 @@ Consultez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique. Voir [AEM LiveCycle Connector](https://helpx.adobe.com/fr/livecycle/help/aem/aem-livecycle-connector.html) pour plus de détails.
+Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 

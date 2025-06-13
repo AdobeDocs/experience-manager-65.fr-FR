@@ -4,10 +4,10 @@ description: Découvrir comment configurer des intégrations IMS pour AEM
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,11 +50,11 @@ Pour plus de détails sur la façon d’effectuer cette configuration, consultez
 
 * Créer de nouvelles informations d’identification OAuth :
 
-   * [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrer des informations d’identification JWT existantes vers des informations d’identification OAuth :
 
-   * [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [Migrer des informations d’identification du compte de service (JWT) vers les informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 Par exemple :
 
@@ -68,7 +68,7 @@ Pour créer une nouvelle intégration Adobe IMS à l’aide d’OAuth, procédez
 
 1. Sélectionnez **Créer**.
 
-1. Complétez la configuration en fonction des détails de la [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Par exemple :
+1. Complétez la configuration en fonction des détails de la [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). Par exemple :
 
    ![Créer une configuration OAuth](assets/ims-create-oauth-configuration.png)
 

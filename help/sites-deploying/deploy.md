@@ -10,9 +10,9 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1779'
 ht-degree: 100%
 
 ---
@@ -256,10 +256,6 @@ Lorsque le fichier jar quickstart est lancé pour la première fois, il est déc
 Si l’instance a été installée à partir de l’interface utilisateur, une fenêtre de navigateur s’ouvre automatiquement. Une fenêtre d’application de bureau s’ouvre également et affiche l’hôte et le port de l’instance, ainsi qu’un bouton bascule activé/désactivé :
 
 ![écran de démarrage](assets/screen_shot_.png)
-
->[!NOTE]
->
->Si vous utilisez des liens symboliques, consultez la section consacrée aux [problèmes liés aux liens symboliques](https://helpx.adobe.com/fr/experience-manager/kb/changing-symlink.html).
 
 ### Démarrer et arrêter {#starting-and-stopping}
 

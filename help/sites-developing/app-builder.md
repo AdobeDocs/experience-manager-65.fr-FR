@@ -5,10 +5,10 @@ exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 99%
 
 ---
 
@@ -25,8 +25,6 @@ L’App Builder permet aux clients d’étendre facilement les capacités d’A
 * Extensibilité des middleware : connectez des systèmes externes à des applications Adobe qui créent des connecteurs personnalisés, ou exploitez la suite d’intégrations préconfigurées.
 * Extensibilité des services principaux : étendez les fonctionnalités de l’application principale en étendant le comportement par défaut grâce à des fonctionnalités personnalisées et à la logique métier.
 * Extensibilité de l’expérience utilisateur : étendez l’expérience principale pour prendre en charge les besoins de l’entreprise ou créer des propriétés numériques et des applications storefronts et back-office spécifiques aux clients.
-
-Depuis l’été 2020, le créateur d’applications est disponible pour les clients, les clientes et les partenaires d’entreprise via notre Aperçu du développeur Adobe. La disponibilité générale de l’App Builder est prévue pour décembre 2021. Adobe invite les développeurs et développeuses à tester le créateur d’applications via notre [Programme d’évaluation](https://developer.adobe.com/app-builder/trial/).
 
 >[!NOTE]
 >
@@ -45,13 +43,13 @@ Le diagramme suivant illustre la manière dont une application standard créée 
 
 ![Architecture](assets/appbuilder-architecture.jpg)
 
-Pour plus d’informations sur l’architecture de l’App Builder, reportez-vous à la section [Présentation de l’architecture](https://developer.adobe.com/app-builder/docs/guides/).
+Pour plus d’informations sur l’architecture de l’App Builder, reportez-vous à la section [Présentation de l’architecture](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Prise en main de l’App Builder {#additional-resources}
 
 Pour vous aider à prendre en main le créateur d’applications, nous avons créé une série de documents pour prendre un bon départ :
 
-* [Prise en main de l’App Builder](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [Prise en main de l’App Builder](https://developer.adobe.com/app-builder/docs/get_started/)
 
 ## Poursuivre l’apprentissage avec la documentation {#appbuilder-documentation}
 

@@ -10,9 +10,9 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '267'
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+workflow-type: tm+mt
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
@@ -50,15 +50,14 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 Voir :
 
 * [Extension de l’intégration à Adobe Analytics](/help/sites-developing/extending-analytics.md) pour plus d’informations sur le développement de composants qui collectent des données utilisateur et la personnalisation de la structure d’Adobe Analytics.
-* L’article de la base de connaissances, [Intégration Adobe Analytics : résolution des incidents](https://helpx.adobe.com/fr/experience-manager/kb/sitecatalystintegrationtroubleshooting.html) pour plus d’informations concernant le dépannage de votre intégration Adobe Analytics.
 
 >[!NOTE]
 >
 >Si vous utilisez Adobe Analytics avec une configuration de proxy personnalisée, vous devez [configurer deux lots OSGi](/help/sites-deploying/configuring-osgi.md) (par exemple, avec la console web) requis pour les configurations de proxy **Apache HTTP Client**. Les deux lots sont requis, car certaines fonctionnalités d’AEM utilisent les API 3.x, tandis que d’autres utilisent les API 4.x. Configurer :
 >
 >* **Day Commons HTTP Client 3.1** pour configurer l’API 3.x ;
->  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  >  par exemple, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
->  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  >  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 100%
 
 ---
@@ -73,8 +73,6 @@ Personnellement, je préfère initialement les conventions hiérarchiques au sys
 >[!CAUTION]
 >
 >La structure d’un référentiel de contenu peut également avoir un impact sur les performances. Pour des performances optimales, le nombre de nœuds enfants associés à des nœuds individuels dans un référentiel de contenu ne doit pas dépasser 1 000.
->
->Pour plus d’informations, reportez-vous à [Quelle quantité de données CRX peut-il traiter ?](https://helpx.adobe.com/fr/experience-manager/kb/CrxLimitation.html)
 
 #### Exemple {#example-2}
 

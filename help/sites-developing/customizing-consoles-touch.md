@@ -10,10 +10,10 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: ht
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Par exemple, les emplacements suivants dans la structure `/libs` risquent d’ê
 
 >[!NOTE]
 >
->Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
+>Consultez l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) pour découvrir d’autres conseils et outils.
 
 ## Personnaliser l’affichage par défaut d’une console {#customizing-the-default-view-for-a-console}
 
