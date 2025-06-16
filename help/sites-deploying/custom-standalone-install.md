@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1614'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ D’autres options et conventions de renommage sont décrites dans le fichier d�
 
 >[!CAUTION]
 >
->Ces options sont valides à compter de la version d’origine d’AEM 6.5 (6.5.0.0). Des modifications sont susceptibles d’être apportées dans les versions ultérieures de SP.
+>Ces options sont valides à compter de la version d’origine d’AEM 6.5 (6.5.0.0). Des modifications sont susceptibles d’être apportées dans les versions ultérieures de SP.
 
 ```shell
 Loading quickstart properties: default
