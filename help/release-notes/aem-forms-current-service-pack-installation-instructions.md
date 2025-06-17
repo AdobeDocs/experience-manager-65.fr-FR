@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1722'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 |---|---|
 | Version | 6.5.23.0 |
 | Type | Mise à jour du pack de services |
-| Date | 6 Juin 2025 |
+| Date | 6 Juin 2025 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
 
 >[!NOTE]
