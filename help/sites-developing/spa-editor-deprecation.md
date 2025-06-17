@@ -3,13 +3,14 @@ title: Abandon de l’éditeur de SPA
 description: Bien que l’éditeur de SPA reste pris en charge par Adobe, découvrez ce que sa dépréciation signifie pour votre projet et les options dont vous disposez pour les projets futurs.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 3%
 
 ---
-
 
 # Abandon de l’éditeur de SPA {#spa-editor-deprecation}
 
@@ -64,7 +65,7 @@ L’éditeur universel offre de nombreux avantages, ce qui fait de la migration 
 * **Préparation à l’avenir :** la feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
 * **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit le verrouillage de tech stack.
 * **Apportez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet l’adoption sans nécessiter de refactorisation complexe.
-* **Extensibilité :** l’éditeur universel bénéficie d’un cadre d’extension [ robuste,](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) qui comprend des intégrations à GenAI, Workfront, etc.
+* **Extensibilité :** l’éditeur universel bénéficie d’un cadre d’extension [ robuste,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) qui comprend des intégrations à GenAI, Workfront, etc.
 
 Il n’existe pas de chemin de migration direct de l’éditeur de SPA vers l’éditeur universel. Cela est dû à des différences fondamentales entre les deux technologies.
 
