@@ -9,7 +9,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
 workflow-type: tm+mt
 source-wordcount: '6485'
-ht-degree: 77%
+ht-degree: 89%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 77%
 
 Voici quelques-unes des fonctionnalités et améliorations clés de cette version :
 
-* [Hyperliens accessibles avec style de texte mixte dans les PDF statiques](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf) : les hyperliens contenant des styles de texte mixte dans les PDF statiques sont désormais balisés en tant qu’élément accessible unique. Cette amélioration simplifie l’arborescence des balises, améliore la navigation dans le lecteur d’écran et prend en charge une meilleure conformité en matière d’accessibilité.
+* [Hyperliens accessibles avec style de texte mixte dans les PDF statiques](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf) : les hyperliens contenant des styles de texte mixte dans les PDF statiques sont désormais balisés en tant qu’élément accessible unique. Cette amélioration simplifie l’arborescence des balises, améliore la navigation dans le lecteur d’écran et permet une meilleure conformité en matière d’accessibilité.
 
 * [Mise à jour de la matrice des plateformes prises en charge](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-  La dernière version introduit des mises à jour de la matrice de plateforme prise en charge, assurant ainsi la compatibilité avec les technologies plus récentes.
+  La dernière version introduit des mises à jour de la matrice des plateformes prises en charge, assurant ainsi la compatibilité avec les technologies plus récentes.
 
    * IBM®Content Manager Client 8.7
 
@@ -67,11 +67,11 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
    * Microsoft® SQL Server 2022
 
-   * Pilote Microsoft® SQL Server JDBC 12.8
+   * Pilote Microsoft® SQL Server JDBC 12.8
 
-   * Red Hat® Enterprise Linux® 9 (noyau 4.x, 64 bits) 
+   * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 bits)
 
-* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications de type de fichier autorisées. Ces fichiers sont bloqués pendant l’envoi afin de s’assurer que seuls des types de fichiers valides sont acceptés.
+* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications des types de fichier autorisés. Ces fichiers sont bloqués pendant l’envoi afin de s’assurer que seuls des types de fichiers valides sont acceptés.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +215,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher dans Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources ]**, accédé au dossier**[!UICONTROL  Rechercher dans Adobe Stock ]**et sélectionné une image système :
    * Il était impossible d’obtenir la licence de l’image Stock sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Accorder sous licence et enregistrer]** affichait une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un élément `/` dans la page de navigation [!DNL AEM] On-Premise (6.5.22.0). (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Problèmes d’intégration à [!DNL InDesign], car le service `Day CQ DAM Mime Type OSGI` identifie incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * Fuite de session [!DNL AEM 6.5.21] identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante]** s’affichent dans [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, par exemple **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -258,17 +258,17 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 ### [!DNL Forms]{#forms-6523}
 
-#### Forms Designer
+#### Concepteur Forms
 
-* Lorsque l’utilisateur exporte les données d’un PDF XFA à l’aide de l’API exportData, le fichier XML obtenu présente des incohérences par rapport aux données XML exportées manuellement à l’aide d’Acrobat Reader. Les valeurs de certains champs étaient manquantes dans la sortie par rapport à la sortie générée à partir d’Acrobat Reader. (LC-3922791)
+* Lorsque la personne exporte les données d’un PDF XFA à l’aide de l’API exportData, le fichier XML obtenu présente des incohérences par rapport aux données XML exportées manuellement à l’aide d’Acrobat Reader. Les valeurs de certains champs étaient manquantes dans la sortie par rapport à la sortie générée à partir d’Acrobat Reader. (LC-3922791)
 
 * Dans AEM Forms 6.5.22.0, la génération d’un PDF balisé avec le service Output dans Workbench ajoute une balise de libellé inattendue sous la balise de référence dans un élément de la table des matières. (LC-3922756)
 
-* Lorsque l’utilisateur place des légendes de champ avec un alignement inférieur ou droit dans AEM Forms Designer, l’arborescence des balises inclut uniquement la légende sans la valeur correspondante, ce qui entraîne un balisage d’accessibilité incomplet. (LC-3922619)
+* Lorsque la personne place des légendes de champ avec un alignement inférieur ou droit dans AEM Forms Designer, l’arborescence des balises inclut uniquement la légende sans la valeur correspondante, ce qui entraîne un balisage d’accessibilité incomplet. (LC-3922619)
 
-* Lors de la mise à niveau d’AEM Forms 6.5 Service Pack 6 vers AEM Forms Service Pack 20, les codes QR dans les PDF générés deviennent illisibles. Le texte secondaire des codes QR échoue également aux tests d’accessibilité, ce qui affecte la compatibilité des lecteurs d’écran. (LC-3922551)
+* Lors de la mise à niveau du pack de service 6 d’AEM Forms 6.5 vers le pack de service 20 d’AEM Forms, les codes QR dans les PDF générés deviennent illisibles. Le texte secondaire des codes QR échoue également aux tests d’accessibilité, ce qui affecte la compatibilité des lecteurs d’écran. (LC-3922551)
 
-* Lorsqu’un utilisateur ou une utilisatrice effectue le rendu d’une lettre dans l’interface utilisateur de l’agent sur le pack de services 18 d’AEM Forms, le contenu ne s’affiche pas correctement en raison de l’API FormService.render(). (LC-3922461)
+* Lorsqu’un utilisateur ou une utilisatrice effectue le rendu d’une lettre dans l’interface d’utilisation de l’agent sur le pack de services 18 d’AEM Forms, le contenu ne s’affiche pas correctement en raison de l’API FormService.render(). (LC-3922461)
 
 #### Formulaires
 
@@ -276,47 +276,47 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 * Le système ignore les `sling:resourceType` personnalisées attribuées via `aem:afProperties` dans un schéma JSON sur AEM 6.5. Le type de ressource personnalisée est ignoré lors du rendu. (FORMS-19691)
 
-* Lorsqu’un utilisateur envoie un formulaire adaptatif avec des pièces jointes préremplies à l’aide d’URI, l’envoi du formulaire échoue avec une NullPointerException en raison de données binaires manquantes. (FORMS-19371) (FORMS-19486)
+* Lorsqu’une personne envoie un formulaire adaptatif avec des pièces jointes préremplies à l’aide d’URI, l’envoi du formulaire échoue avec une NullPointerException en raison de données binaires manquantes. (FORMS-19371) (FORMS-19486)
 
-* Lorsqu’un utilisateur charge un PDF sous la section « Forms et documents » dans AEM 6.5 Forms, la fonction de chronologie cesse de fonctionner. (FORMS-19407)(FORMS-19234)
+* Lorsqu’une personne charge un PDF sous la section « Forms et documents » dans AEM 6.5 Forms, la fonction de chronologie cesse de fonctionner. (FORMS-19407)(FORMS-19234)
 
-* Lorsqu’un utilisateur charge des fichiers à l’aide du composant de pièce jointe prêt à l’emploi dans AEM Forms, des vulnérabilités en matière de sécurité sont identifiées. Ce problème peut entraîner l’interception du processus de soumission par des entités non autorisées. (FORMS-19271)
+* Lorsqu’une personne charge des fichiers à l’aide du composant de pièce jointe prêt à l’emploi dans AEM Forms, des vulnérabilités en matière de sécurité sont identifiées. Ce problème peut entraîner l’interception du processus de soumission par des entités non autorisées. (FORMS-19271)
 
 * Lorsque l’utilisateur configure un formulaire adaptatif prêt à l’emploi dans AEM Forms pour générer automatiquement un document d’enregistrement (DE), le champ « Titre » des propriétés du document Acrobat Reader n’affiche pas le titre de document d’enregistrement capturé. Par défaut, le titre du formulaire n’apparaît pas à la place du nom de fichier. (FORMS-19263)
 
-* Lorsqu’un utilisateur ouvre une communication interactive dans l’interface utilisateur de l’agent, les données préremplies ne peuvent pas être complètement effacées ; une fois supprimées, elles sont automatiquement remplies avec les mêmes données. (FORMS-19151)
+* Lorsqu’une personne ouvre une communication interactive dans l’interface d’utilisation de l’agent, les données préremplies ne peuvent pas être complètement effacées ; une fois supprimées, elles sont automatiquement remplies avec les mêmes données. (FORMS-19151)
 
 * Lorsque l’utilisateur prévisualise un champ de date dans l’interface utilisateur de l’agent, la date change de manière inattendue. Ce problème se produit en raison d’incohérences de fuseau horaire entre le paramètre UTC de la machine virtuelle et l’interprétation de la date par le système. (FORMS-19115)
 
 * Lorsqu’un utilisateur envoie un formulaire, les pièces jointes peuvent se dupliquer, ce qui entraîne plusieurs chargements du même fichier. (FORMS-19045)(FORMS-19051)
 
-* L’ajout de coordinateurs aux jeux de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
+* L’ajout de coordinateurs et coordinatrices aux jeux de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
 
-* Lorsqu’un utilisateur clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide dans le pack de services 22 d’AEM Forms, une erreur se produit en raison de la variable _$focusDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268)
+* Lorsqu’une personne clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide dans le pack de services 22 d’AEM Forms, une erreur se produit en raison de la variable _$focusDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268)
 
-* Dans le pack de services 19 (6.5.19.0) d’AEM Forms, lorsqu’un client ou une cliente prévisualise une lettre, le champ « Montant en mots » ne s’affiche pas correctement ou ne met pas à jour correctement les valeurs numériques, ce qui entraîne un mauvais alignement et des espaces manquants dans le contenu. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848, FORMS-19614, LC-3922004)
+* Dans le pack de services 19 (6.5.19.0) d’AEM Forms, lorsqu’un client ou une cliente prévisualise une lettre, le champ « Montant en mots » ne s’affiche pas correctement ou ne met pas à jour correctement les valeurs numériques, ce qui entraîne un mauvais alignement et des espaces manquants dans le contenu. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 
-* Lorsqu’un client ou une cliente prévisualise une lettre enregistrée dans le pack de services 19 d’AEM Forms 6.5 sur RHEL, le contenu ne s’aligne pas correctement, des espaces sont manquants et des caractères inattendus tels que « x » apparaissent. (FORMS-18422)(FORMS-17641)
+* Lorsqu’un client ou une cliente prévisualise une lettre enregistrée dans le pack de services 19 d’AEM Forms 6.5 sur RHEL, le contenu ne s’aligne pas correctement, des espaces sont manquantes et des caractères inattendus tels que « x » apparaissent. (FORMS-18422)(FORMS-17641)
 
-* Lorsque l’utilisateur navigue entre les onglets d’AEM Forms, la sélection de composants dans le premier onglet ne répond plus. (FORMS-18345)
+* Lorsqu’une personne navigue entre les onglets d’AEM Forms, la sélection de composants dans le premier onglet ne répond plus. (FORMS-18345)
 
-* Dans AEM Forms 6.5.21.0, lorsqu’un utilisateur convertit un fichier HTML en PDF à l’aide de l’option WebToPDF, la section d’en-tête est manquante dans le PDF de sortie, y compris les balises de métadonnées et de titre. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
+* Dans AEM Forms 6.5.21.0, lorsqu’une personne convertit un fichier HTML en PDF à l’aide de l’option WebToPDF, la section d’en-tête est manquante dans le PDF de sortie, y compris les balises de métadonnées et de titre. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 
-* Dans le SDK du Gestionnaire de processus AEM JEE, lorsqu’un utilisateur appelle la méthode retryAction(long actionOid), le système tente à nouveau, de manière incorrecte, la première action trouvée dans la table tb_action_instance . Ce workflow se produit même lorsqu’un ID d’action spécifique est fourni ou que l’ID est nul, ce qui entraîne un comportement involontaire. (FORMS-18187)
+* Dans le SDK du Gestionnaire de processus AEM JEE, lorsqu’une personne appelle la méthode retryAction(long actionOid), le système tente à nouveau, de manière incorrecte, la première action trouvée dans la table tb_action_instance. Ce workflow se produit même lorsqu’un ID d’action spécifique est fourni ou que l’ID est nul, ce qui entraîne un comportement involontaire. (FORMS-18187)
 
 * Après la mise à jour vers la version SP22, un utilisateur rencontre des problèmes en raison desquels les fonctionnalités de brouillon et d’envoi enregistrées échouent sans afficher de message d’erreur. (FORMS-18069)
 
-* Dans AEM 6.5.21.0, la transition des composants de base basés sur XSD vers les composants principaux empêche l’implémentation de références entre fichiers dans les schémas JSON, ce qui a un impact sur la migration d’Adaptive Forms. (FORMS-18065)
+* Dans AEM 6.5.21.0, la transition des composants de base basés sur XSD vers les composants principaux empêche l’implémentation de références entre fichiers dans les schémas JSON, ce qui a un impact sur la migration des formulaires adaptatifs. (FORMS-18065)
 
-* Lorsque l’utilisateur prévisualise une lettre dans l’interface utilisateur de l’agent, le champ de date affiche une valeur incorrecte en raison de problèmes de conversion d’heure IC. Ces écarts proviennent des différences de fuseau horaire entre l’environnement VM et l’interprétation de l’heure par le système (UTC par rapport à l’heure locale). (FORMS-17988) (FORMS-17248)
+* Lorsqu’une personne prévisualise une lettre dans l’interface d’utilisation de l’agent, le champ de date affiche une valeur incorrecte en raison de problèmes de conversion d’heure IC (communication interactive). Ces écarts proviennent des différences de fuseau horaire entre l’environnement VM et l’interprétation de l’heure par le système (UTC par rapport à l’heure locale). (FORMS-17988) (FORMS-17248)
 
-* Lorsqu’un utilisateur prévisualise des lettres à l’aide de modèles Notice IC dans AEM Forms, les délais de génération de PDF varient considérablement, passant de 1,5 seconde à plus de 10 secondes, même sur le même serveur. Cette incohérence affecte les workflows critiques de l’entreprise. (FORMS-17951)
+* Lorsqu’une personne prévisualise des lettres à l’aide de modèles Notice IC dans AEM Forms, les délais de génération de PDF varient considérablement, passant de 1,5 seconde à plus de 10 secondes, même sur le même serveur. Cette incohérence affecte les workflows critiques de l’entreprise. (FORMS-17951)
 
 * Lorsqu’un utilisateur lie un objet Signature tactile dans un formulaire adaptatif à un fichier XDP à l’aide de l’option « Sources de données », les modifications ne peuvent pas être enregistrées. Cela est dû à des erreurs de validation de format persistantes, même lorsque des valeurs valides sont utilisées. (FORMS-17587)
 
 * Lorsqu’un utilisateur utilise un fichier XDP spécifique avec de nombreux champs masqués pour les fragments de document, AEM crée des nœuds CRX avec la propriété `cm:optional` définie sur false, ce qui entraîne l’échec de l’envoi de la communication interactive (IC). (FORMS-17538)
 
-* Dans AEM Forms 6.5.19.0, lorsqu’un client prévisualise une lettre, le champ de zone numérique ne gère pas correctement les valeurs négatives lorsque des limites numériques pour le prospect et le fractionnement sont définies. Ce problème se produit en raison de l’utilisation de parseFloat, qui traite le signe moins comme faisant partie du nombre. (FORMS-17451)
+* Dans AEM Forms 6.5.19.0, lorsqu’un client ou une cliente prévisualise une lettre, le champ de zone numérique ne gère pas correctement les valeurs négatives lorsque des limites numériques pour le lead et le fractionnement sont définies. Ce problème se produit en raison de l’utilisation de parseFloat, qui traite le signe moins comme faisant partie du nombre. (FORMS-17451)
 
 * Sur AEM Forms 6.5, lorsqu’une lettre est prévisualisée, l’utilisation du caractère générique « * » dans le fichier Adobe.json est remarquée, ce qui soulève une préoccupation quant à son objectif et à sa modification potentielle. (FORMS-17317)
 
@@ -328,17 +328,17 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 * Lorsqu’un utilisateur accède au formulaire sur des appareils mobiles (iOS et Android™), les boutons « suivant » et « précédent » de la première page sont désactivés. Cependant, le lecteur d’écran ne les identifie pas comme étant désactivés. (FORMS-15773)
 
-* Lorsque l’utilisateur enregistre un formulaire volumineux avec des fragments et un chargement différé activés, la récupération des brouillons échoue, ce qui perturbe le workflow. (FORMS-19890, FORMS-19808)
+* Lorsqu’une personne enregistre un formulaire volumineux avec des fragments et un chargement différé activés, la récupération des brouillons échoue, ce qui perturbe le workflow. (FORMS-19890, FORMS-19808)
 
-#### FORMS JEE
+#### Forms JEE
 
-* Lorsqu’un utilisateur reconfigure la base de données dans AEM Forms, la connexion échoue en raison de paramètres codés en dur. (FORMS-19568, FORMS-17621)
+* Lorsqu’une personne reconfigure la base de données dans AEM Forms, la connexion échoue en raison de paramètres codés en dur. (FORMS-19568, FORMS-17621)
 
 * Lorsqu’un utilisateur configure AEM 6.5 avec MySQL 8.4 à l’aide de la méthode clé en main partielle, LiveCycle Configuration Manager (LCM) ne reconnaît pas le pilote du connecteur MySQL requis. Le test et la configuration de la connexion à la base de données échouent. (FORMS-19442)
 
 * Lorsqu’un utilisateur ou une utilisatrice exécute LCM avec JDBC 12.8.1 sur JRE 11 dans un environnement JEE, la configuration échoue en raison de problèmes d’incompatibilité. (FORMS-19276)
 
-* Lorsqu’un utilisateur ouvre une tâche dans AEM On-Premise, le système exécute le profil d’action de démarrage Workspace au lieu du profil d’utilisateur affecté. (FORMS-19065)
+* Lorsqu’une personne ouvre une tâche dans AEM On-Premise, le système exécute le profil d’action de démarrage Workspace au lieu du profil d’utilisation affecté. (FORMS-19065)
 
 * Lorsqu’un utilisateur ou une utilisatrice utilise la méthode retryAction(long actionOid) dans le gestionnaire de processus AEM JEE, un comportement inattendu se produit. (FORMS-18357)(FORMS-18187)
 
