@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
-workflow-type: ht
-source-wordcount: '4357'
-ht-degree: 100%
+source-git-commit: 117ce86870af450c43ae1f58cf500aff0fea6747
+workflow-type: tm+mt
+source-wordcount: '3867'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,6 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 >[!NOTE]
 >
->- Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, consultez [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 
 ### Politique de mise à niveau et de prise en charge
@@ -55,17 +54,16 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 - **Prise en charge de la mise à niveau pour les programmes d’installation complets** : un programme d’installation complet est publié tous les 6 Packs de services AEM. Par exemple, un programme d’installation complet a été publié avec les versions des packs de services 6.5.12.0 et 6.5.18.0. AEM Forms permet des mises à niveau directes exclusivement à partir des deux derniers programmes d’installation complets. Par exemple, AEM Forms facilite les mises à niveau directes vers la version 6.5.23.0 uniquement à partir des deux derniers programmes d’installation complets, à savoir 6.5.18.0 et 6.5.12.0. Si vous devez effectuer une mise à niveau à partir d’une mise à niveau antérieure, vous pouvez utiliser une mise à niveau en plusieurs étapes pour accéder d’abord à une version complète du programme d’installation prise en charge, puis à la dernière version.
 
-- **Obsolescence et suppression** : la prise en charge des plateformes est mise à jour avec chaque version du programme d’installation complet. Tout logiciel indiqué comme obsolète dans la matrice des plateformes dans une version de programme d’installation complet est autorisé à être supprimé de la matrice des plateformes prises en charge dans une version ultérieure du programme d’installation complet, ceci indiquant la fin de la prise en charge du logiciel.
+- **Obsolescence** : la prise en charge de Platform est mise à jour avec chaque version complète du programme d’installation. Tout logiciel marqué comme obsolète dans la matrice de la plateforme peut être supprimé des plateformes prises en charge dans les versions ultérieures ou lorsque le logiciel atteint sa fin de prise en charge.
 
 #### Packs de services
 
 
 - **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
 
-- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.23.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
+**Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.23.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
-- **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.18.0 vers le version 6.5.23.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.23.0.
-
+- **Prise en charge de la mise à niveau des correctifs** : vous pouvez effectuer une mise à niveau d’un ancien pack de services vers un plus récent (par exemple, de 6.5.18.0 à 6.5.23.0) à l’aide du programme d’installation des correctifs, à condition que la plateforme de destination (système d’exploitation, JDK, serveur d’applications, etc.) soit prise en charge par le nouveau pack de services.
 
 ### Configurations recommandées {#recommendedconfigurations}
 
@@ -186,10 +184,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td><p>Micronoyau de référentiel (fichiers TAR MK)</p> </td>
   <td><p>Pris en charge</p> </td>
  </tr>
-  <tr>
-  <td><p>Référentiel Microkernel</p> </td>
-  <td><p>Pris en charge</p> </td>
- </tr>
    <tr>
   <td><p> MongoDB Enterprise 6.0 (obsolète) </p> </td>
   <td><p>Référentiel Microkernel</p> </td>
@@ -199,11 +193,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td><p> MongoDB Enterprise 7.0 </p> </td>
   <td><p>Référentiel Microkernel</p> </td>
   <td><p>Pris en charge</p> </td>
- </tr>
-  <tr>
-  <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
-  <td>Référentiel Microkernel </td>
-  <td>Pris en charge</td>
  </tr>
   <tr>
   <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
@@ -268,9 +257,14 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <th><p><strong>Plateforme</strong></p> </th>
   <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
  </tr>
+  <tr>
+  <td>MySQL</td>
+  <td><p>Connecteur MySQL/J 5.7 (obsolète)</p> </td>
+  <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
+ </tr>
  <tr>
   <td>MySQL</td>
-  <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td>
+  <td><p>MySQL Connector/J 8.4</p> </td>
   <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
  </tr>
  <tr>
@@ -280,7 +274,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
  </tr>
  <tr>
   <td>Microsoft® SQL Server <br /> </td>
-  <td><p>Pilote Microsoft® SQL Server JDBC 12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
+  <td><p>Pilote Microsoft® SQL Server JDBC 12.10.0 <br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
   <td><p>À télécharger depuis le site web de Microsoft®.</p> </td>
  </tr>
  <tr>
@@ -384,11 +378,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td>A : Pris en charge</td>
   <td>Packs de services, correctifs cumulatifs et mises à jour de sécurité critiques</td>
  </tr>
- <tr>
-  <td>CentOS 7 (64 bits)<sup> [6]</sup></td>
-  <td>A : Pris en charge</td>
-  <td>Packs de services, correctifs cumulatifs et mises à jour de sécurité critiques</td>
- </tr>
 </tbody>
 </table>
 
@@ -404,8 +393,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
 > - glibc-locale.x86_64 (2.17 ou version ultérieure)
 > - OpenSSL 3 (requis à l’emplacement par défaut sur le système d’exploitation).
 
-    Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.
-
+Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH . Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.
 
 #### Environnement virtualisé {#virtualized-environment}
 
@@ -432,41 +420,38 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environ
 </table>
 
 
-### Exceptions aux plateformes de serveur prises en charge {#exceptions-to-supported-server-platforms}
-
-
-Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de configuration d’AEM Forms on JEE.
-
-
-1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
-1. AEM Forms on JEE ne prend pas en charge JBoss® sur SUSE® Linux® Enterprise Server 12. Seul IBM® WebSphere® est pris en charge sur SUSE® Linux® Enterprise Server 12.
-1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
-1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
-1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
-1. AEM Forms on JEE ne prend pas en charge le serveur d’applications WebSphere® sur CentOS.
-1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss®.
-1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss® EAP 7.4.
-1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
-1. JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seules la version JDK 11.0.19 ou les versions antérieures sont prises en charge pour installer le programme d’installation AEM Forms on JEE.
-
-
 <!--
-1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
--->
+### Exceptions to supported server platforms {#exceptions-to-supported-server-platforms}
 
 
-Tenez également compte des points suivants lors de votre choix de logiciels pour le déploiement d’Adobe AEM Forms on JEE :
+Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
 
 
-- AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
-- Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers, conformément aux [Règles de prise en charge des logiciels de fournisseurs tiers](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
-- AEM Forms on JEE prend en charge des plateformes en fonction de la prise en charge offerte par les fournisseurs tiers. Certaines combinaisons peuvent ne pas être autorisées par les fournisseurs tiers. Par exemple, de nombreux fournisseurs n’ont pas certifié leurs serveurs d’applications avec Oracle. Par conséquent, AEM Forms on JEE ne prend pas non plus en charge ces combinaisons. Pour vous assurer de choisir les versions prises en charge des logiciels, vérifiez également le tableau de prise en charge des fournisseurs tiers.
-- AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
-- AEM Forms on JEE ne prend pas en charge la mise en cluster verticale.
-- AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en clusters.
-- Pour obtenir la liste des plateformes supprimées ou mises à jour, voir le document [Résumé des nouvelles fonctionnalités d’AEM 6.5 Forms](../../forms/using/whats-new.md).
+1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
+1. AEM Forms on JEE do not support JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
+1. AEM Forms on JEE do not support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
+1. AEM Forms on JEE do not support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
+1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
+1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
+1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
+1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
+1. JDK versions higher than 1.8.0_281 are not supported for WebLogic server. (FORMS-8498)
+1. JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer.
 
+2. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
+
+
+In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
+
+
+- AEM Forms on JEE support updates, patches, and fix packs on top of the specified major and minor version of supported software. However, update to the next major or minor version is not supported unless specified.
+- Cluster-based installations do not support TarMK persistence. For information about supported persistence, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
+- AEM Forms on JEE support various third-party software as per Adobe's [Third-party software support Policy](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
+- AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also do not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
+- AEM Forms on JEE do not support TarMK Cold Standby.
+- AEM Forms on JEE do not support vertical clustering.
+- AEM Forms on JEE do not support MySQL database on a clustered environment.
+- For the list of removed or updated platforms, see [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) document.-->
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -564,11 +549,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
  </tr>
  <tr>
-  <td>Microsoft® Office 2019 (obsolète) </td>
-  <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
- </tr>
- <tr>
-  <td>Microsoft® Office 2021</td>
+  <td>Microsoft® Office 2019  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
  </tr>
  <tr>
@@ -873,7 +854,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -914,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -1011,7 +992,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -1037,8 +1018,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 7.0 | MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
 | MYSQL 8.4 | SUSE® Linux® Enterprise Server 12 (64 bits) | MYSQL 8.0.27 |
-| Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
-| Pilote Microsoft® SQL Server JDBC 12.8 | | Pilote Microsoft® SQL Server JDBC 8.2 |
+| Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
+| Pilote Microsoft® SQL Server JDBC 12.10.0 | | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
 
 ### Version 6.5.22.0 (29 Novembre 2024)

@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
+source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
 workflow-type: tm+mt
-source-wordcount: '6485'
-ht-degree: 89%
+source-wordcount: '6444'
+ht-degree: 88%
 
 ---
 
@@ -215,11 +215,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher dans Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources ]**, accédé au dossier**[!UICONTROL  Rechercher dans Adobe Stock ]**et sélectionné une image système :
    * Il était impossible d’obtenir la licence de l’image Stock sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Accorder sous licence et enregistrer]** affichait une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un élément `/` dans la page de navigation [!DNL AEM] On-Premise (6.5.22.0). (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Problèmes d’intégration à [!DNL InDesign], car le service `Day CQ DAM Mime Type OSGI` identifie incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * Fuite de session [!DNL AEM 6.5.21] identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante]** s’affichent dans [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, par exemple **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -676,33 +676,30 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 
 ### Problèmes connus d’AEM Forms {#known-issues-aem-forms-6523}
 
-* Lorsqu’un client effectue une mise à niveau de Struts 2.x vers 6.x, une vérification de type plus stricte peut entraîner des échecs silencieux, en particulier lorsque les composants de case à cocher renvoient la valeur false et sont liés à une liste *Entier*. Cette incohérence de valeur doit être traitée explicitement pour éviter les erreurs de désérialisation. (FORMS-20203)
+>[!NOTE]
+>
+> Ne effectuez pas la mise à niveau vers le pack de services 6.5.23.0 pour les problèmes ne disposant pas de correctifs, car cela peut entraîner des erreurs inattendues. Effectuez la mise à niveau vers le pack de services 6.5.23.0 uniquement après la publication des correctifs requis.
 
-* Si la conversion HTML vers PDF échoue sur le serveur SUSE® Linux® (SLES 15 SP6 ou version ultérieure) avec l’erreur suivante :
-
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
-  `OPENSSL_CONF=/etc/ssl`
+* Lorsqu’un utilisateur met à niveau Struts du pack de services AEM 2.5.x vers le pack de services AEM Forms 6.x, l’interface utilisateur des politiques n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane. (FORMS-20203)
+* Après la mise à niveau vers le pack de services 6.5.23.0 d’AEM Forms, le service de conversion ImageToPDF échoue avec l’erreur (FORMS-20360) :
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
 
 * Après l’installation du pack de services AEM Forms JEE 21 (6.5.21.0), vous pouvez trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le dossier `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926). Suivez ces étapes pour résoudre le problème :
 
    1. Arrêtez les localisateurs s’ils sont en cours d’exécution.
-   1. Arrêtez le serveur AEM.
-   1. Accédez à `<AEM_Forms_Installation>/lib/caching/lib`.
-   1. Supprimez tous les fichiers de correctifs Geode, à l’exception de `geode-*-1.15.1.2.jar`. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
-   1. Ouvrez l’invite de commande en mode administration.
-   1. Installez le correctif Geode à l’aide du fichier `geode-*-1.15.1.2.jar`.
+   2. Arrêtez le serveur AEM.
+   3. Accédez à `<AEM_Forms_Installation>/lib/caching/lib`.
+   4. Supprimez tous les fichiers de correctifs Geode, à l’exception de `geode-*-1.15.1.2.jar`. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
+   5. Ouvrez l’invite de commande en mode administration.
+   6. Installez le correctif Geode à l’aide du fichier `geode-*-1.15.1.2.jar`.
 
 * Si un utilisateur ou une utilisatrice tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, certaines lettres spécifiques restent bloquées à l’état `Loading`. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
-
-* Après la mise à niveau vers le pack de services AEM Forms 6.5.21.0, le service `PaperCapture` ne parvient pas à effectuer d’opérations OCR (reconnaissance optique de caractères) sur les PDF. Le service ne génère pas de sortie sous la forme d’un PDF ou d’un fichier journal. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
-
 * Après la mise à niveau du pack de services 18 ou 19 d’AEM Forms 6.5 vers le pack de services 20 ou 21, une erreur de compilation JSP s’affiche. Cette erreur empêchait d’ouvrir ou de créer des formulaires adaptatifs. Cela provoquait également des problèmes avec d’autres interfaces AEM. Ces interfaces comprenaient l’éditeur de page, l’interface d’utilisation d’AEM Forms, l’éditeur de workflow et l’interface d’utilisation Présentation du système. (FORMS-15256)
 
   Si vous rencontrez ce problème, procédez comme suit pour le résoudre :
    1. Accédez au répertoire `/libs/fd/aemforms/install/` dans CRXDE.
-   1. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
-   1. Redémarrez votre serveur AEM.
+   2. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
+   3. Redémarrez votre serveur AEM.
 
 * Après la mise à jour vers le pack de services 20 (6.5.20.0) d’AEM Forms avec le module complémentaire Forms, les configurations reposant sur l’ancien service Adobe Analytics Cloud à l’aide de l’authentification basée sur les informations d’identification ne fonctionnent plus. Ce problème empêchait les règles d’analyse de s’exécuter correctement. Pour télécharger et installer le correctif, voir l’article [Correctifs Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 * Dans l’aperçu avant impression de l’IU de l’agent de communication interactive, le symbole monétaire (comme le symbole du dollar « $ ») s’affiche de manière incohérente pour toutes les valeurs de champ. Il s’affiche pour les valeurs allant jusqu’à 999, mais il est absent pour les valeurs supérieures ou égales à 1 000. (FORMS-16557)

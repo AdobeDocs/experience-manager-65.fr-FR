@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
-ht-degree: 99%
+source-wordcount: '3688'
+ht-degree: 98%
 
 ---
 
@@ -129,19 +129,21 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | MongoDB Enterprise 3.4 | Référentiel | Z : non pris en charge |
 | IBM® DB2® 10.5 | Référentiel et base de données Forms | R : prise en charge limitée `[5]` |
 | Oracle Database 12c (12.1.x) | Référentiel et base de données Forms | R : prise en charge limitée  |
+| Base de données Oracle 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
 | Microsoft® SQL Server 2016 | Base de données Forms | A : pris en charge |
+| Microsoft® SQL Server 2019 (obsolète) | Base de données Forms | A : pris en charge |
+| Microsoft® SQL Server 2022 | Base de données Forms | A : pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : pris en charge |
 | Apache Solr | Service de recherche | A : pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Gardez à l’esprit que les performances du système de fichiers peuvent varier et avoir une incidence sur les performances globales. Chargez la version test d’AEM avec le système de fichiers réseau/distant.
-1. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
-1. La fragmentation MongoDB n’est pas prise en charge dans AEM.
-1. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
-1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
-1. Applicable à AEM Forms uniquement :
+2. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
+3. La fragmentation MongoDB n’est pas prise en charge dans AEM.
+4. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
+5. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
+6. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
-   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019.
-1. Non pris en charge pour AEM Forms.
+   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019 et Microsoft® SQL Server 2022.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 | Oracle WebLogic Server 12.2 (12cR2) | Z : non pris en charge |
 | Serveur d’applications IBM WebSphere en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | Serveur d’applications IBM® WebSphere® 9.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
+| 9.0.0.10 du serveur d’applications IBM® WebSphere® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | JBoss EAP 7.2.x avec le serveur d’applications JBoss® | Z : non pris en charge |
 | JBoss® EAP 7.1.4 avec le serveur d’applications JBoss® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | JBoss® EAP 7.0.x avec le serveur d’applications JBoss® | Z : non pris en charge |
+| JBoss® EAP 7.4 avec JBoss® Application Server <sup>[2] [3] [7] | A : pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
-1. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
-1. Applicable à AEM Forms uniquement :
+2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
+3. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de la prise en charge de JBoss® EAP 7.4.10.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
@@ -202,15 +206,15 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
-| Microsoft® Windows Server 2019 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (Obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z : non pris en charge |
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, 5. x et 6. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
-1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
-1. Distribution Linux® prise en charge par Adobe Managed Services.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+2. AEM Forms est pris en charge sur Ubuntu 20.04 et SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
+3. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 
    *Pour l’installation d’OpenSSL 3 : les bibliothèques libcrypto.so.3 et libssl.so.3 doivent être disponibles dans le chemin d’accès par défaut à la bibliothèque, représenté par la variable d’environnement LD_LIBRARY_PATH. Si elles sont installées dans un emplacement non standard, assurez-vous que ce chemin est ajouté à LD_LIBRARY_PATH avant de démarrer le serveur.*
 
-1. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
-1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
-1. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
+4. Les déploiements en exploitation Microsoft® Windows sont pris en charge pour les clients et clientes effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
+5. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
+6. AEM Forms a supprimé la prise en charge de Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
