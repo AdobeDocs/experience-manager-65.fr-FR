@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 117ce86870af450c43ae1f58cf500aff0fea6747
+source-git-commit: 64ffbf05eb3ae6ca3f2475fc99979e420cef15ec
 workflow-type: tm+mt
-source-wordcount: '3867'
-ht-degree: 96%
+source-wordcount: '3827'
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,10 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 - **Couverture des Packs de services** : Adobe fournit une assistance technique pour les environnements AEM Forms utilisant un des six derniers Packs de services. Si votre version actuelle est antérieure aux six derniers Packs de services, Adobe recommande vivement d’effectuer une mise à niveau vers la dernière version afin d’optimiser les performances, la sécurité et la continuité de la prise en charge.
 
-**Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.23.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
+- **Instructions de mise à jour des correctifs** : lors de l’utilisation des programmes d’installation des correctifs pour la mise à jour, il est essentiel de vérifier que la version complète du programme d’installation sous-jacent n’est pas plus de deux versions. Par exemple, lors de l’installation du pack de services 6.5.23.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
-- **Prise en charge de la mise à niveau des correctifs** : vous pouvez effectuer une mise à niveau d’un ancien pack de services vers un plus récent (par exemple, de 6.5.18.0 à 6.5.23.0) à l’aide du programme d’installation des correctifs, à condition que la plateforme de destination (système d’exploitation, JDK, serveur d’applications, etc.) soit prise en charge par le nouveau pack de services.
+<!--
+- **Patch Upgrade Support**: You can upgrade from an older service pack to a newer one (for example, from 6.5.18.0 to 6.5.23.0) using the patch installer, as long as the destination platform (OS, JDK, application server, etc.) is supported by the newer service pack.-->
 
 ### Configurations recommandées {#recommendedconfigurations}
 
@@ -854,7 +855,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -895,7 +896,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -992,7 +993,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
