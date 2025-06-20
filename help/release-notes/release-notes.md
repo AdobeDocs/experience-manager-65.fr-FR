@@ -9,7 +9,7 @@ exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
 workflow-type: tm+mt
 source-wordcount: '6444'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 bits)
 
-* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications des types de fichier autorisés. Ces fichiers sont bloqués pendant l’envoi afin de s’assurer que seuls des types de fichiers valides sont acceptés.
+* [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications des types de fichier autorisés. Ces fichiers sont bloqués lors de la soumission afin de garantir que seuls des types de fichiers valides sont acceptés.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -94,7 +94,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 #### Accessibilité {#sites-accessibility-6523}
 
-* Les sections Zone de travail des pages de l’éditeur AEM prennent désormais en charge l’accessibilité clavier complète. Les utilisateurs et les utilisatrices peuvent activer les titres de section et modifier les boutons à l’aide du clavier uniquement, sans avoir à pointer avec la souris. Cette mise à jour garantit la conformité à WCAG 2.1.1 et améliore la convivialité sur les composants (tels que le teaser, l’image, le carrousel, la disposition, la distorsion du temps et les modèles d’annotation). (SITES-25256) <!-- 6.5 LTS SP1 -->
+* Les sections Zone de travail des pages de l’éditeur AEM prennent désormais en charge l’accessibilité clavier complète. Les utilisateurs et les utilisatrices peuvent activer les titres de section et modifier les boutons à l’aide du clavier uniquement, sans avoir à pointer avec la souris. Cette mise à jour garantit la conformité avec la norme WCAG 2.1.1 et améliore l’accessibilité et l’ergonomie des différents composants (comme les modèles Teaser, Image, Carrousel, Disposition, Distorsion du temps et Annotation). (SITES-25256) <!-- 6.5 LTS SP1 -->
 * Correction d’un problème d’accessibilité dans l’éditeur de page AEM en raison duquel le focus au clavier se réinitialisait de manière inattendue au début de la barre d’outils démographique après l’activation de boutons tels que Persona, Panier ou Abandonné. Le focus reste désormais sur le bouton activé pour prendre en charge les workflows cohérents de navigation au clavier et de lecteur d’écran. (SITES-25306)
 * Correction d’un problème d’accessibilité critique dans l’éditeur de page AEM en raison duquel les éléments de la zone de travail dans plusieurs boîtes de dialogue et boîtes de dialogue modales (par exemple, le rail des ressources ou l’aperçu de la disposition) ne pouvaient pas être utilisés uniquement à l’aide du clavier. Tous les éléments de zone de travail interactifs prennent désormais en charge la navigation au clavier uniquement, ce qui garantit la conformité au critère de succès 2.1.1 de WCAG 2.1 (SITE-25256).
 * Correction d’un problème d’accessibilité dans l’interface d’utilisation d’administration de Sites en raison duquel les éléments de liste interactifs dans le pop-up Créer utilisaient des rôles ARIA incorrects. Les éléments qui se comportaient comme des liens se voyaient attribuer `role="listitem"` au lieu de `role="menuitem"`, ce qui enfreignait les modèles de conception ARIA et déroutait les lecteurs d’écran. Les mises à jour garantissent que tous les composants de liste suivent les rôles sémantiques appropriés pour une meilleure prise en charge du clavier et des technologies d’assistance. (SITES-24493)
@@ -105,7 +105,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 * Amélioration des annonces NVDA/Narrator pour les résultats de recherche dans les boîtes de dialogue de sélection. Mise à jour de la boîte de dialogue Ouvrir la sélection pour indiquer si des résultats de recherche sont trouvés ou non lors de l’utilisation de lecteurs d’écran, tels que NVDA ou Narrator. Cette amélioration aide les utilisateurs et utilisatrices qui utilisent des technologies d’assistance à comprendre le résultat de leurs actions de recherche sans confirmation visuelle. (SITES-26883)
 * Correction du rôle ARIA pour l’icône représentant des points de suspension en regard du champ de saisie de commentaire. Mise à jour de l’icône représentant des points de suspension à côté du champ de saisie de commentaire pour utiliser le rôle ARIA approprié, afin que les lecteurs d’écran puissent identifier précisément l’élément. Cela permet d’améliorer la conformité en matière d’accessibilité et l’expérience des utilisateurs et utilisatrices qui dépendent des technologies d’assistance. (SITES-26881)
 * Correction d’attributs ARIA non valides dans les composants de l’interface d’utilisation Coral. Mise à jour des composants de l’interface d’utilisation Coral pour garantir que tous les attributs ARIA utilisent des valeurs valides, améliorant ainsi la conformité en matière d’accessibilité. En particulier, des cas ont été traités où des valeurs non valides telles que `aria-modal="dialog"` ont été attribuées de manière incorrecte. Cette amélioration permet aux lecteurs d’écran d’interpréter correctement les éléments de boîte de dialogue, ce qui améliore l’accessibilité pour les utilisateurs et utilisatrices qui dépendent des technologies d’assistance. (SITES-26873)
-* Amélioration de la visibilité et des info-bulles des icônes dans les scénarios de reflux. Amélioration du comportement de redistribution afin de garantir que les infobulles s’affichent correctement pour les icônes **Télécharger**, **Retraiter les ressources** et **Extraire**. Mise en évidence d’un problème d’accessibilité en raison duquel les icônes et leurs libellés devenaient invisibles lorsque la fenêtre était redimensionnée ou que les paramètres de zoom du navigateur étaient modifiés. Ce correctif prend en charge les utilisateurs souffrant de déficience visuelle en préservant la visibilité et en fournissant des descriptions d’icône appropriées pendant le reflux. (SITES-26871)
+* Amélioration de la visibilité et des infobulles des icônes dans les scénarios Reflow. Optimisation du comportement Reflow pour garantir l’affichage correct des infobulles des icônes **Télécharger**, **Retraiter les ressources** et **Extraire**. Mise en évidence d’un problème d’accessibilité en raison duquel les icônes et leurs libellés devenaient invisibles lorsque la fenêtre était redimensionnée ou que les paramètres de zoom du navigateur étaient modifiés. Cette correction améliore l’accessibilité pour les personnes ayant une mauvaise vue, en maintenant la visibilité et en fournissant des descriptions appropriées des icônes en mode Reflow. (SITES-26871)
 
 #### Interface d’utilisation d’administration{#sites-adminui-6523}
 
@@ -119,7 +119,7 @@ Correction d’une exception du service d’URL de l’éditeur universel avec d
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * Correction de l’échec du test de validation pour `DeleteVariationIT.testUpdateBasic`. Le test `DeleteVariationIT.testUpdateBasic` n’échoue plus lors de l’exécution de la validation du pack de services. Le correctif résoud un problème de mappage de texte manquant dans la logique de gestion JSON, assurant ainsi la stabilité des tests et évitant les perturbations inutiles. (SITES-28022)
-* AEM empêche désormais la dégradation des performances causée par des métadonnées XMP incorrectes dans les ressources d’image. Les ressources qui contiennent des noms de propriété XMP non valides ou non conformes, comme ceux avec des segments numériques ou des structures non qualifiées, ne déclenchent plus de journaux d’avertissement répétés pendant le traitement. Le système filtre les métadonnées problématiques pour s’assurer que l’ingestion et la validation des ressources sont terminées sans erreurs. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
+* AEM empêche désormais la dégradation des performances causée par des métadonnées XMP incorrectes dans les ressources d’image. Les ressources qui contiennent des noms de propriété XMP non valides ou non conformes, comme ceux avec des segments numériques ou des structures non qualifiées, ne déclenchent plus de journaux d’avertissement répétés pendant le traitement. Le système filtre les métadonnées problématiques afin de garantir que l’ingestion et la validation des ressources s’effectuent sans erreur. (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -215,11 +215,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher dans Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources ]**, accédé au dossier**[!UICONTROL  Rechercher dans Adobe Stock ]**et sélectionné une image système :
    * Il était impossible d’obtenir la licence de l’image Stock sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Accorder sous licence et enregistrer]** affichait une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un élément `/` dans la page de navigation [!DNL AEM] On-Premise (6.5.22.0). (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Problèmes d’intégration à [!DNL InDesign], car le service `Day CQ DAM Mime Type OSGI` identifie incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * Fuite de session [!DNL AEM 6.5.21] identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante]** s’affichent dans [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, par exemple **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -262,7 +262,7 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 * Lorsque la personne exporte les données d’un PDF XFA à l’aide de l’API exportData, le fichier XML obtenu présente des incohérences par rapport aux données XML exportées manuellement à l’aide d’Acrobat Reader. Les valeurs de certains champs étaient manquantes dans la sortie par rapport à la sortie générée à partir d’Acrobat Reader. (LC-3922791)
 
-* Dans AEM Forms 6.5.22.0, la génération d’un PDF balisé avec le service Output dans Workbench ajoute une balise de libellé inattendue sous la balise de référence dans un élément de la table des matières. (LC-3922756)
+* Dans AEM Forms 6.5.22.0, la génération d’un PDF balisé avec le service Output dans Workbench ajoute une balise label inattendue sous la balise reference dans un élément de table des matières. (LC-3922756)
 
 * Lorsque la personne place des légendes de champ avec un alignement inférieur ou droit dans AEM Forms Designer, l’arborescence des balises inclut uniquement la légende sans la valeur correspondante, ce qui entraîne un balisage d’accessibilité incomplet. (LC-3922619)
 
@@ -272,61 +272,61 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 #### Formulaires
 
-* Dans AEM Forms, l’activation de l’option « Autoriser le texte enrichi pour le titre » dans le panneau racine entraîne l’exclusion du titre du document d’enregistrement dans un panneau imbriqué pour masquer incorrectement le titre du panneau racine. Il le fait dans le document d’enregistrement généré. (FORMS-19696)
+* Dans AEM Forms, l’activation de l’option « Autoriser le texte enrichi pour le titre » sur le panneau racine entraîne une interaction incorrecte avec l’option « Exclure le titre du document de référence » sur un panneau imbriqué, qui masque alors à tort le titre du panneau racine. Ce comportement se produit dans le document de référence généré. (FORMS-19696)
 
-* Le système ignore les `sling:resourceType` personnalisées attribuées via `aem:afProperties` dans un schéma JSON sur AEM 6.5. Le type de ressource personnalisée est ignoré lors du rendu. (FORMS-19691)
+* Le système ignore la valeur personnalisée `sling:resourceType` définie via `aem:afProperties` dans un schéma JSON sur AEM 6.5. Le type de ressource personnalisé est ignoré lors du rendu. (FORMS-19691)
 
 * Lorsqu’une personne envoie un formulaire adaptatif avec des pièces jointes préremplies à l’aide d’URI, l’envoi du formulaire échoue avec une NullPointerException en raison de données binaires manquantes. (FORMS-19371) (FORMS-19486)
 
-* Lorsqu’une personne charge un PDF sous la section « Forms et documents » dans AEM 6.5 Forms, la fonction de chronologie cesse de fonctionner. (FORMS-19407)(FORMS-19234)
+* Lorsqu’une personne charge un PDF sous la section « Formulaires et documents » dans AEM 6.5 Forms, la fonction de chronologie cesse de fonctionner. (FORMS-19407) (FORMS-19234)
 
 * Lorsqu’une personne charge des fichiers à l’aide du composant de pièce jointe prêt à l’emploi dans AEM Forms, des vulnérabilités en matière de sécurité sont identifiées. Ce problème peut entraîner l’interception du processus de soumission par des entités non autorisées. (FORMS-19271)
 
-* Lorsque l’utilisateur configure un formulaire adaptatif prêt à l’emploi dans AEM Forms pour générer automatiquement un document d’enregistrement (DE), le champ « Titre » des propriétés du document Acrobat Reader n’affiche pas le titre de document d’enregistrement capturé. Par défaut, le titre du formulaire n’apparaît pas à la place du nom de fichier. (FORMS-19263)
+* Lorsqu’un utilisateur ou une utilisatrice configure un formulaire adaptatif standard dans AEM Forms pour générer automatiquement un document de référence, le champ « Titre » dans les propriétés du document d’Acrobat Reader n’affiche pas le titre capturé du document de référence. Par défaut, le titre du formulaire ne remplace pas le nom de fichier. (FORMS-19263)
 
 * Lorsqu’une personne ouvre une communication interactive dans l’interface d’utilisation de l’agent, les données préremplies ne peuvent pas être complètement effacées ; une fois supprimées, elles sont automatiquement remplies avec les mêmes données. (FORMS-19151)
 
-* Lorsque l’utilisateur prévisualise un champ de date dans l’interface utilisateur de l’agent, la date change de manière inattendue. Ce problème se produit en raison d’incohérences de fuseau horaire entre le paramètre UTC de la machine virtuelle et l’interprétation de la date par le système. (FORMS-19115)
+* Lorsqu’un utilisateur ou une utilisatrice prévisualise un champ de type date dans l’interface Agent, la date change de façon inattendue. Ce comportement résulte de différences de fuseau horaire entre le paramètre UTC de la machine virtuelle et l’interprétation locale de la date par le système. (FORMS-19115)
 
-* Lorsqu’un utilisateur envoie un formulaire, les pièces jointes peuvent se dupliquer, ce qui entraîne plusieurs chargements du même fichier. (FORMS-19045)(FORMS-19051)
+* Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, les pièces jointes peuvent être dupliquées, entraînant plusieurs envois du même fichier. (FORMS-19045)(FORMS-19051).
 
-* L’ajout de coordinateurs et coordinatrices aux jeux de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
+* L’ajout de coordinateurs et coordinatrices aux jeux de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
 
-* Lorsqu’une personne clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide dans le pack de services 22 d’AEM Forms, une erreur se produit en raison de la variable _$focusDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268)
+* Lorsqu’une personne clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide dans le pack de services 22 d’AEM Forms, une erreur se produit en raison de la variable _$focusedDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268).
 
 * Dans le pack de services 19 (6.5.19.0) d’AEM Forms, lorsqu’un client ou une cliente prévisualise une lettre, le champ « Montant en mots » ne s’affiche pas correctement ou ne met pas à jour correctement les valeurs numériques, ce qui entraîne un mauvais alignement et des espaces manquants dans le contenu. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
 
-* Lorsqu’un client ou une cliente prévisualise une lettre enregistrée dans le pack de services 19 d’AEM Forms 6.5 sur RHEL, le contenu ne s’aligne pas correctement, des espaces sont manquantes et des caractères inattendus tels que « x » apparaissent. (FORMS-18422)(FORMS-17641)
+* Lorsqu’un client ou une cliente prévisualise une lettre enregistrée dans le pack de services 19 d’AEM Forms 6.5 sur RHEL, le contenu ne s’aligne pas correctement, des espaces sont manquantes et des caractères inattendus tels que « x » apparaissent. (FORMS-18422)(FORMS-17641).
 
 * Lorsqu’une personne navigue entre les onglets d’AEM Forms, la sélection de composants dans le premier onglet ne répond plus. (FORMS-18345)
 
-* Dans AEM Forms 6.5.21.0, lorsqu’une personne convertit un fichier HTML en PDF à l’aide de l’option WebToPDF, la section d’en-tête est manquante dans le PDF de sortie, y compris les balises de métadonnées et de titre. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
+* Dans AEM Forms 6.5.21.0, lorsqu’une personne convertit un fichier HTML en PDF à l’aide de l’option WebToPDF, la section d’en-tête est manquante dans le PDF de sortie, y compris les balises de métadonnées et de titre. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 
-* Dans le SDK du Gestionnaire de processus AEM JEE, lorsqu’une personne appelle la méthode retryAction(long actionOid), le système tente à nouveau, de manière incorrecte, la première action trouvée dans la table tb_action_instance. Ce workflow se produit même lorsqu’un ID d’action spécifique est fourni ou que l’ID est nul, ce qui entraîne un comportement involontaire. (FORMS-18187)
+* Dans le SDK du gestionnaire de processus AEM JEE, lorsqu’une personne appelle la méthode retryAction(long actionOid), le système tente à nouveau, de manière incorrecte, la première action trouvée dans la table tb_action_instance. Ce workflow se produit même lorsqu’un identifiant d’action spécifique est fourni, ou lorsqu’il est nul, ce qui engendre des effets inattendus. (FORMS-18187)
 
-* Après la mise à jour vers la version SP22, un utilisateur rencontre des problèmes en raison desquels les fonctionnalités de brouillon et d’envoi enregistrées échouent sans afficher de message d’erreur. (FORMS-18069)
+* Après la mise à jour vers SP22, des problèmes peuvent survenir lors de l’enregistrement d’un brouillon ou de la soumission du formulaire, sans qu’aucun message d’erreur ne s’affiche. (FORMS-18069)
 
-* Dans AEM 6.5.21.0, la transition des composants de base basés sur XSD vers les composants principaux empêche l’implémentation de références entre fichiers dans les schémas JSON, ce qui a un impact sur la migration des formulaires adaptatifs. (FORMS-18065)
+* Dans AEM 6.5.21.0, la transition des composants de base basés sur XSD vers les composants principaux empêche l’implémentation de références entre fichiers dans les schémas JSON, ce qui a un impact sur la migration des formulaires adaptatifs. (FORMS-18065)
 
-* Lorsqu’une personne prévisualise une lettre dans l’interface d’utilisation de l’agent, le champ de date affiche une valeur incorrecte en raison de problèmes de conversion d’heure IC (communication interactive). Ces écarts proviennent des différences de fuseau horaire entre l’environnement VM et l’interprétation de l’heure par le système (UTC par rapport à l’heure locale). (FORMS-17988) (FORMS-17248)
+* Lorsqu’une personne prévisualise une lettre dans l’interface d’utilisation de l’agent, le champ de date affiche une valeur incorrecte en raison de problèmes de conversion d’heure IC (communication interactive). Ces dysfonctionnements sont liés à des écarts de fuseau horaire entre l’environnement VM et l’interprétation de l’heure par le système (UTC contre heure locale). (FORMS-17988) (FORMS-17248)
 
 * Lorsqu’une personne prévisualise des lettres à l’aide de modèles Notice IC dans AEM Forms, les délais de génération de PDF varient considérablement, passant de 1,5 seconde à plus de 10 secondes, même sur le même serveur. Cette incohérence affecte les workflows critiques de l’entreprise. (FORMS-17951)
 
-* Lorsqu’un utilisateur lie un objet Signature tactile dans un formulaire adaptatif à un fichier XDP à l’aide de l’option « Sources de données », les modifications ne peuvent pas être enregistrées. Cela est dû à des erreurs de validation de format persistantes, même lorsque des valeurs valides sont utilisées. (FORMS-17587)
+* Lorsqu’un utilisateur ou une utilisatrice associe un objet de signature manuscrite (Scribble Signature) dans un formulaire adaptatif à un XDP via l’option « Sources de données », les modifications ne peuvent pas être enregistrées. Cela est dû à des erreurs persistantes de validation du ratio d’aspect, même avec des valeurs valides. (FORMS-17587)
 
-* Lorsqu’un utilisateur utilise un fichier XDP spécifique avec de nombreux champs masqués pour les fragments de document, AEM crée des nœuds CRX avec la propriété `cm:optional` définie sur false, ce qui entraîne l’échec de l’envoi de la communication interactive (IC). (FORMS-17538)
+* Lorsqu’un utilisateur ou une utilisatrice utilise un XDP spécifique contenant de nombreux champs masqués pour les fragments de document, AEM crée des nœuds CRX avec la propriété `cm:optional` définie sur faux, ce qui entraîne l’échec de la soumission dans communication interactive (IC). (FORMS-17538)
 
 * Dans AEM Forms 6.5.19.0, lorsqu’un client ou une cliente prévisualise une lettre, le champ de zone numérique ne gère pas correctement les valeurs négatives lorsque des limites numériques pour le lead et le fractionnement sont définies. Ce problème se produit en raison de l’utilisation de parseFloat, qui traite le signe moins comme faisant partie du nombre. (FORMS-17451)
 
-* Sur AEM Forms 6.5, lorsqu’une lettre est prévisualisée, l’utilisation du caractère générique « * » dans le fichier Adobe.json est remarquée, ce qui soulève une préoccupation quant à son objectif et à sa modification potentielle. (FORMS-17317)
+* Sur AEM Forms 6.5, lorsqu’une lettre est prévisualisée, la présence du caractère générique « * » dans le fichier Adobe.json est détectée, ce qui soulève des interrogations quant à son utilité et à la possibilité de le modifier. (FORMS-17317)
 
-* Lorsqu’un utilisateur ou une utilisatrice utilise un lecteur d’écran sur le `Apply for a Fixed Rate Saver joint account`, les en-têtes sont incorrectement annoncés comme `clickable`, ce qui entraîne des problèmes d’accessibilité. (FORMS-17038)
+* Lorsqu’un utilisateur ou une utilisatrice utilise un lecteur d’écran sur le `Apply for a Fixed Rate Saver joint account`, les titres sont annoncés de manière incorrecte comme `clickable`, ce qui entraîne des problèmes d’accessibilité. (FORMS-17038)
 
 * Lorsqu’un formulaire est incorporé, il manque un attribut de titre à l’iframe généré, ce qui entraîne un problème de conformité en matière d’accessibilité. (FORMS-17010)
 
-* Le téléchargement d’un formulaire à l’aide de l’interface utilisateur de Forms Manager inclut toujours les dépendances associées, telles que les thèmes et les fragments. (FORMS-15811)
+* Le téléchargement d’un formulaire depuis l’interface Forms Manager inclut toujours les dépendances associées, telles que les thèmes et les fragments. (FORMS-15811)
 
-* Lorsqu’un utilisateur accède au formulaire sur des appareils mobiles (iOS et Android™), les boutons « suivant » et « précédent » de la première page sont désactivés. Cependant, le lecteur d’écran ne les identifie pas comme étant désactivés. (FORMS-15773)
+* Lorsqu’un utilisateur ou une utilisatrice accède au formulaire sur un appareil mobile (iOS ou Android™), les boutons « Suivant » et « Précédent » de la première page sont désactivés. Toutefois, le lecteur d’écran ne les identifie pas comme tels. (FORMS-15773)
 
 * Lorsqu’une personne enregistre un formulaire volumineux avec des fragments et un chargement différé activés, la récupération des brouillons échoue, ce qui perturbe le workflow. (FORMS-19890, FORMS-19808)
 
@@ -334,15 +334,15 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 * Lorsqu’une personne reconfigure la base de données dans AEM Forms, la connexion échoue en raison de paramètres codés en dur. (FORMS-19568, FORMS-17621)
 
-* Lorsqu’un utilisateur configure AEM 6.5 avec MySQL 8.4 à l’aide de la méthode clé en main partielle, LiveCycle Configuration Manager (LCM) ne reconnaît pas le pilote du connecteur MySQL requis. Le test et la configuration de la connexion à la base de données échouent. (FORMS-19442)
+* Lorsqu’un utilisateur ou une utilisatrice configure AEM 6.5 avec MySQL 8.4 en utilisant la méthode partial turnkey, le gestionnaire de configuration LiveCycle (LCM) ne reconnaît pas le pilote de connexion MySQL requis. Cela entraîne l’échec du test de connexion à la base de données ainsi que de la configuration. (FORMS-19442)
 
-* Lorsqu’un utilisateur ou une utilisatrice exécute LCM avec JDBC 12.8.1 sur JRE 11 dans un environnement JEE, la configuration échoue en raison de problèmes d’incompatibilité. (FORMS-19276)
+* Lorsqu’un utilisateur ou une utilisatrice exécute LCM avec JDBC 12.8.1 sur JRE 11 dans un environnement JEE, la configuration échoue en raison de problèmes d’incompatibilité. (FORMS-19276)
 
 * Lorsqu’une personne ouvre une tâche dans AEM On-Premise, le système exécute le profil d’action de démarrage Workspace au lieu du profil d’utilisation affecté. (FORMS-19065)
 
-* Lorsqu’un utilisateur ou une utilisatrice utilise la méthode retryAction(long actionOid) dans le gestionnaire de processus AEM JEE, un comportement inattendu se produit. (FORMS-18357)(FORMS-18187)
+* Lorsqu’un utilisateur ou une utilisatrice utilise la méthode retryAction(long actionOid) dans le gestionnaire de processus AEM JEE, un comportement inattendu se produit. (FORMS-18357)(FORMS-18187).
 
-* Sur le 6.5.21.0 AEM Forms, la conversion PDFG échoue avec l’erreur suivante : (FORMS-16851)(FORMS-14613)
+* Sur AEM Forms 6.5.21.0, la conversion PDFG échoue avec l’erreur suivante : (FORMS-16851) (FORMS-14613)
 
 #### Captcha de formulaires {#forms-captcha-6523}
 
@@ -405,7 +405,7 @@ Correction d’une exception NullPointerException qui se produisait lors du char
 #### Granite{#foundation-granite-6523}
 
 * Résolution des cycles de dépendance OSGi entre les services de script Apache Sling qui provoquaient des retards ou des échecs lors du chargement des pages HTML après la mise à niveau vers le pack de services 21. Mise à jour des références de service internes afin d’éliminer les dépendances cycliques impliquant des composants `SightlyScriptingEngineFactory` et associés, ce qui améliore la fiabilité et le comportement de démarrage du moteur de script. (GRANITE-56808)
-* Mise à jour des scripts JS dans Apache Sling pour charger uniquement à la demande au lieu de démarrer rapidement, ce qui élimine les conflits de thread et réduit le risque que les serveurs de publication ne répondent pas lors du chargement. Cette modification améliore la stabilité du serveur et les temps de réponse lors de scénarios à trafic élevé en empêchant le verrouillage des ressources provoqué par une résolution précoce du script. (GRANITE-56611)
+* Mise à jour des scripts JS dans Apache Sling pour qu’ils se chargent uniquement à la demande plutôt que rapidement au démarrage, ce qui élimine les conflits de thread et réduit le risque que les serveurs de publication ne répondent pas lors du chargement. Cette modification améliore la stabilité du serveur et les temps de réponse lors de scénarios à trafic élevé en empêchant le verrouillage des ressources provoqué par une résolution précoce du script. (GRANITE-56611)
 * Correction d’un problème dans AEM Omnisearch en raison duquel les espaces réservés des champs de saisie s’affichaient incorrectement sous forme de libellés, ce qui entraînait une confusion visuelle. Permet d’assurer un rendu adéquat des espaces réservés dans les champs de filtre, en assurant un comportement de formulaire cohérent et accessible. (GRANITE-51791)
 * Correction d’une erreur de serveur déclenchée lors de la sélection de plus de 30 modèles de fragments de contenu (CFM) avec des références à plusieurs champs dans l’éditeur de modèle de fragment de contenu. Amélioration du composant de suggestion de filtre pour la prise en charge des opérations POST. Cette fonctionnalité permet de gérer correctement les jeux de références volumineux lors de la création de fragments de contenu et d’améliorer la stabilité des configurations de modèle à volume élevé. (GRANITE-57164)
 * Correction d’un problème dans les modèles de fragments de contenu en raison duquel cliquer près d’une case à cocher changeait involontairement son état. Mise à jour des styles pour limiter strictement l’activation des clics à l’élément de case à cocher, empêchant les interactions accidentelles de l’utilisateur ou de l’utilisatrice et améliorant l’utilisation et l’accessibilité des formulaires. (GRANITE-52384)
