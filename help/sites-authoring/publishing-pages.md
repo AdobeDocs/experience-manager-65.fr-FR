@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '1669'
-ht-degree: 100%
+source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
+workflow-type: tm+mt
+source-wordcount: '1701'
+ht-degree: 98%
 
 ---
 
@@ -25,13 +25,13 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >Certains termes liés à la publication peuvent être déroutants :
 >
 >* **Publier/dépublier**
->  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>  >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
->  Ces termes sont synonymes de publication/dépublication.
+>  >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 
 ## Privilèges insuffisants {#insufficient-privileges}
 
@@ -196,6 +196,10 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
    Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>La planification de la publication de contenu reproduit le contenu et respecte les workflows de publication. Si vous souhaitez masquer temporairement le contenu déjà publié sans dépublier, pensez à [**Heure d’activation** et **Heure de désactivation** disponibles dans les propriétés de la page.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Dépublication de pages {#unpublishing-pages}
 
