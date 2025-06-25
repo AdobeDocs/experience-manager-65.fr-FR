@@ -1,5 +1,5 @@
 ---
-title: Modélisation des données – Modèle de David Nuescheler
+title: Modélisation des données - Modèle de David Nuescheler
 description: Recommandations de David Nuescheler en matière de modélisation de contenu
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1767'
 ht-degree: 100%
 
 ---
 
-# Modélisation des données – Modèle de David Nuescheler{#data-modeling-david-nuescheler-s-model}
+# Modélisation des données - Modèle de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Source {#source}
 

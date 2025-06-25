@@ -8,9 +8,9 @@ exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '780'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Pour activer la propagation des modifications apportées aux métadonnées aux r
 
 ## Activation de l’écriture différée XMP pour des rendus spécifiques {#enabling-xmp-writeback-for-specific-renditions}
 
-Pour permettre à la fonction Écriture différée XMP de propager les modifications de métadonnées à des rendus spécifiques, spécifiez ces rendus à l’étape de workflow Écriture différée XMP du workflow [!UICONTROL &#x200B; Écriture différée des métadonnées de gestion des ressources numériques &#x200B;]. Par défaut, cette étape est configurée avec le rendu d’origine.
+Pour permettre à la fonctionnalité d’écriture différée XMP de propager les modifications de métadonnées aux rendus sélectionnés, ces rendus doivent être indiqués dans l’étape de traitement d’écriture différée XMP du workflow [!UICONTROL DAM Metadata WriteBack]. Par défaut, cette étape est configurée avec le rendu d’origine.
 
 Pour que la fonctionnalité d’écriture différée XMP propage les métadonnées aux miniatures des rendus 140.100.png et 319.319.png, suivez ces étapes.
 
@@ -66,7 +66,7 @@ Pour que la fonctionnalité d’écriture différée XMP propage les métadonné
 
 1. Enregistrez le workflow.
 
-Les modifications apportées aux métadonnées sont propagées aux rendus thumbnail.140.100.png et thumbnail.319.319.png de la ressource, et pas aux autres.
+Les modifications de métadonnées sont alors propagées aux rendus thumbnail.140.100.png et thumbnail.319.319.png de la ressource, et non aux autres.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Le filtrage par liste autorisée des métadonnées XMP résout le problème en v
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Pour filtrer les propriétés XMP bloquées après l’application du filtrage par la liste autorisée, spécifiez celles qui se trouvent dans la zone **[!UICONTROL Noms XML bloqués pour le filtrage XMP]**.
+1. Pour exclure certaines propriétés XMP après filtrage via la liste autorisée, indiquez-les dans le champ **[!UICONTROL Noms XML bloqués pour le filtrage XMP]**.
 
    >[!NOTE]
    >

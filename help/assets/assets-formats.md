@@ -9,9 +9,9 @@ exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1556'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Consultez [Utilisation de PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Bibliothèque de transcodage d’images prise en charge {#supported-image-transcoding-library}
 
-La bibliothèque de transcodage d’imagerie Adobe est une solution de traitement des images exécutant des fonctions de gestion des images de base telles que le codage, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
+La bibliothèque Adobe Imaging Transcoding est une solution de traitement d’images qui exécute des fonctions essentielles de gestion des images, telles que l’encodage, le transcodage, le rééchantillonnage et le redimensionnement.
 
 La bibliothèque de transcodage d’imagerie prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/TIFF compressé (sauf les fichiers TIFF 32 bits et les fichiers PTIFF), ICO et ICN.
 
@@ -144,7 +144,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
 
-Les formats d’archivage pris en charge et l’applicabilité des workflows courants de gestion des ressources numériques sont abordés dans le tableau suivant.
+Les formats d’archive pris en charge et l’applicabilité des workflows DAM courants sont présentés dans le tableau ci-dessous.
 
 | Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,7 +164,7 @@ L’applicabilité des fonctionnalités de gestion des ressources numériques ha
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (lorsqu’il est configuré avec son propre domaine de diffusion) | − | − | − | − | − | ✓ |
+| JavaScript (lorsque configuré avec son propre domaine de diffusion) | − | − | − | − | − | ✓ |
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ L’applicabilité des fonctionnalités de gestion des ressources numériques ha
 
 ## Types MIME pris en charge {#supported-mime-types}
 
-Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. Pour ce dernier, sélectionnez l’option [!UICONTROL Détecter le MIME du contenu] dans [!UICONTROL Service de type MIME de gestion des ressources numériques Day CQ] dans la console web [!DNL Experience Manager].
+Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. Pour ce dernier cas, sélectionnez l’option [!UICONTROL Détecter le type MIME à partir du contenu] dans [!UICONTROL Day CQ DAM Mime Type Service], depuis la [!DNL Experience Manager]console web.
 
 Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -216,7 +216,7 @@ Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’a
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions] (https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions]&#x200B;(https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
@@ -285,7 +285,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [Rotation](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->

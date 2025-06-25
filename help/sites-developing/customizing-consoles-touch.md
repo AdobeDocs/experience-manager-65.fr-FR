@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,6 @@ Pour personnaliser les colonnes dans la vue Liste :
 1. Facultatif :
 
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
-
      `pageInfoProviderType`.
 
    Par exemple, consultez la classe/le lot joint (à partir de GitHub) ci-dessous.

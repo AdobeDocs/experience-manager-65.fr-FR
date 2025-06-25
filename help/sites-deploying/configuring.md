@@ -10,9 +10,9 @@ exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2085'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ Consultez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
+Grâce à AEM Doc Services et AEM Doc Security, AEM peut désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une politique.
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 

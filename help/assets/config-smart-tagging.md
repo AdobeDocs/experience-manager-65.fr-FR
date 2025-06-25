@@ -6,15 +6,15 @@ feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2129'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour utiliser le service intelligent d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
+Avant de commencer à baliser vos ressources à l’aide des services de contenu intelligent, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour tirer parti du service intelligent d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
 
 <!--
 >[!NOTE]
@@ -71,7 +71,7 @@ Pour configurer le service de contenu dynamique, procédez comme suit :
 
 1. Créez une intégration dans l’[Adobe Developer Console](#create-adobe-io-integration).
 
-1. Créez une configuration de compte technique [IMS](#create-ims-account-config) à l’aide de la clé API et d’autres informations d’identification provenant de Adobe Developer Console.
+1. Créez une [configuration du compte technique IMS](#create-ims-account-config) en utilisant la clé API et d’autres informations d’identification d’Adobe Developer Console.
 
 1. [Configurez le service de contenu dynamique](#configure-smart-content-service).
 
@@ -93,11 +93,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Créer l’intégration de l’Adobe Developer Console {#create-adobe-io-integration}
 
-Pour utiliser les API de service de contenu dynamique, créez une intégration dans Adobe Developer Console afin d’obtenir les éléments suivants :
+Pour utiliser les API de service de contenu intelligent, créez une intégration dans Adobe Developer Console afin d’obtenir les éléments suivants :
 
-* [!UICONTROL CLÉ API] (générée dans le champ [!UICONTROL ID CLIENT] de l&#39;intégration Adobe Developer Console),
+* [!UICONTROL CLÉ API] (générée dans le champ [!UICONTROL ID CLIENT] de l’intégration d’Adobe Developer Console),
 * [!UICONTROL ID D’ORGANISATION],
-* et [!UICONTROL SECRET CLIENT], pour [!UICONTROL les paramètres du service de balisage intelligent Assets] de la configuration cloud dans [!DNL Experience Manager].
+* et [!UICONTROL SECRET CLIENT], pour les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager].
 
 1. Accédez à l’URL [https://developer.adobe.com](https://developer.adobe.com/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est **administrateur ou administratrice** système.
 
@@ -106,14 +106,14 @@ Pour utiliser les API de service de contenu dynamique, créez une intégration d
 1. Sur la page **[!UICONTROL Add API]**, sélectionnez **[!UICONTROL Experience Cloud]** puis **[!UICONTROL Smart Content]** (Contenu dynamique). Cliquez sur **[!UICONTROL Next]** (Suivant).
 
 1. Sélectionnez **[!UICONTROL OAuth serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
-Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de la Developer Console, en fonction de vos besoins :
+Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
 
    * Pour une présentation, voir *Authentification de serveur à serveur* sur developer.adobe.com.
-   * Pour créer des informations d’identification OAuth, consultez le guide d’implémentation des informations d’identification *OAuth de serveur à serveur* sur developer.adobe.com.
+   * Pour créer des informations d’identification OAuth, voir le *guide d’implémentation des informations d’identification OAuth de serveur à serveur* sur developer.adobe.com.
    * Pour migrer des informations d’identification JWT existantes vers des informations d’identification OAuth, voir *Migration des informations d’identification du compte de service (JWT) vers des informations d’identification OAuth de serveur à serveur* sur developer.adobe.com.
 
 
-1. Sur la page **[!UICONTROL Sélectionner les profils de produit]**, sélectionnez **[!UICONTROL Services de contenu dynamique]**, puis cliquez sur l’option **[!UICONTROL Enregistrer l’API configurée]**.
+1. Sur la page **[!UICONTROL Sélectionner les profils de produits]**, sélectionnez **[!UICONTROL Services de contenu intelligent]**, puis cliquez sur l’option **[!UICONTROL Enregistrer l’API configurée]**.
 
    Une page affiche davantage d’informations sur la configuration. Laissez cette page ouverte pour copier et ajouter ces valeurs dans les [!UICONTROL Paramètres du service de balisage intelligent des ressources] de la configuration cloud dans [!DNL Experience Manager] pour configurer des balises intelligentes.
 
@@ -121,7 +121,7 @@ Pour plus de détails sur la façon d’effectuer cette configuration, consultez
 
 ### Créer la configuration du compte technique Adobe IMS {#create-ims-account-config}
 
-Vous devez créer une configuration de compte technique IMS en procédant comme suit :
+Suivez les étapes ci-dessous pour créer la configuration d’un compte technique IMS :
 
 1. Dans l’interface d’utilisation [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 
@@ -133,13 +133,13 @@ Vous devez créer une configuration de compte technique IMS en procédant comme 
 
    | Champ | Description |
    | -------- | ---------------------------- |
-   | Solution cloud | Sélectionnez **[!UICONTROL Balises intelligentes]** dans la liste déroulante. |
+   | Solution cloud | Choisissez **[!UICONTROL Balises intelligentes]** dans le menu déroulant. |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
    | Serveur d’autorisation | Ajouter `https://ims-na1.adobelogin.com` |
-   | ID client | À fournir via la console [Adobe Developer](https://developer.adobe.com/console/). |
-   | Secret client | À fournir via la console [Adobe Developer](https://developer.adobe.com/console/). |
-   | Portée | À fournir via la console [Adobe Developer](https://developer.adobe.com/console/). |
-   | ID d’organisation | À fournir via la console [Adobe Developer](https://developer.adobe.com/console/). |
+   | ID client | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | Secret client | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | Portée | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
+   | ID d’organisation | À fournir via l’[Adobe Developer Console](https://developer.adobe.com/console/). |
 
 1. Sélectionnez la configuration que vous avez créée et cliquez sur **[!UICONTROL Contrôle de l’intégrité]**.
 
@@ -151,7 +151,7 @@ Vous devez créer une configuration de compte technique IMS en procédant comme 
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -169,7 +169,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
    | Champ | Description |
    | -------- | ---------------------------- |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
-   | Configuration Adobe IMS associée | Sélectionnez une configuration dans la liste déroulante. |
+   | Configuration Adobe IMS associée | Choisissez une configuration dans la liste déroulante. |
    | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée. |
 
    >[!NOTE]
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -362,13 +362,13 @@ The validation results are displayed in the same dialog.
 
 1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 
-1. Sur la page **[!UICONTROL Modèles de workflow]**, sélectionnez le modèle de workflow **[!UICONTROL Ressource de mise à jour de gestion des ressources numériques]**.
+1. Sur la page **[!UICONTROL Modèles de workflow]**, sélectionnez le modèle de workflow **[!UICONTROL Mise à jour de la ressource DAM]**.
 
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Ressource de balise intelligente]** disponible dans la section Workflow de gestion des ressources numériques et placez-la après l’étape **[!UICONTROL Traiter les miniatures]**.
+1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Baliser la ressource avec des balises intelligentes]**, disponible dans la section Workflow DAM, et placez-la après l’étape **[!UICONTROL Générer les vignettes]**.
 
-   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des ressources numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 
 1. Ouvrez les propriétés de l’étape pour modifier les détails. Dans **[!UICONTROL Paramètres avancés]**, vérifiez que l’option **[!UICONTROL Avance du gestionnaire]** est sélectionnée.
 
@@ -386,11 +386,11 @@ The validation results are displayed in the same dialog.
 
 ## Entraînement du service de contenu dynamique {#training-the-smart-content-service}
 
-Pour que le service de contenu dynamique reconnaisse votre taxonomie métier, exécutez-la sur une série de ressources qui incluent déjà des balises correspondant à votre entreprise. Pour baliser efficacement vos images de marque, le service de contenu dynamique requiert que les images d’entraînement respectent certaines instructions. Après l’entraînement, le service peut appliquer la même taxonomie à un ensemble de ressources similaire.
+Pour que le service de contenu dynamique reconnaisse votre taxonomie métier, exécutez-la sur une série de ressources qui incluent déjà des balises correspondant à votre entreprise. Pour baliser efficacement les images de marque, le service de contenu intelligent exige que les images d’apprentissage respectent certaines consignes. Après l’entraînement, le service peut appliquer la même taxonomie à un ensemble de ressources similaire.
 
 Vous pouvez entraîner le service plusieurs fois afin d’améliorer sa capacité à appliquer des balises pertinentes. Après chaque cycle d’entraînement, exécutez un workflow de balisage et vérifiez si vos ressources sont correctement balisées.
 
-Vous pouvez entraîner le service de contenu dynamique de manière périodique ou selon vos besoins.
+Le service de contenu intelligent peut être entraîné périodiquement ou selon les besoins.
 
 >[!NOTE]
 >
@@ -408,7 +408,7 @@ Par exemple, il est déconseillé d’incorporer une balise `my-party` pour tout
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](/help/assets/assets/do-not-localize/coherence.png)
 
-**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples raisonnablement différents pour apprendre à l’Experience Manager à se concentrer sur les bons éléments. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
+**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples raisonnablement différents pour apprendre à Experience Manager à se concentrer sur les bons éléments. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
 
 Par exemple, pour la balise *mannequin-pose-tête-baissée*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
 
@@ -440,7 +440,7 @@ Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manage
 
 Vous pouvez entraîner le service de contenu dynamique lorsque cela s’avère nécessaire à partir de la console de workflow.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de workflow]**, sélectionnez le workflow **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]** dans la barre d’outils.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le workflow]**, localisez le dossier de payload qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Cliquez ensuite sur **[!UICONTROL Exécuter]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -455,7 +455,7 @@ Vous pouvez entraîner le service de contenu dynamique lorsque cela s’avère n
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Assets]** > **[!UICONTROL Rapports]**.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.

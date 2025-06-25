@@ -10,9 +10,9 @@ exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Dans le cadre de Dynamic Media, les sites web qui utilisent un système XML pou
 Il existe des exemples d’ensembles de règles disponibles afin de vous aider à créer votre propre ensemble de règles.
 Voir la section [Référence d’ensemble de règles](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
-Comme pour toute création d’ensemble de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
+A l’instar de la création de tous les ensembles de règles, assurez-vous que votre fichier XML est valide avant de le charger à l’aide d’un programme de validation XML tel que xmlvalid.
 
 En outre, assurez-vous d’abord de tester votre ensemble de règles dans un environnement intermédiaire qui n’affecte pas votre environnement de production.
 Les environnements de production et les environnements intermédiaires nécessitent en général des identifiants différents.

@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ L’image mémoire des threads consiste en une liste de toutes les unités d’e
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr).
+Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17452).
 
 ### Contrôle des sessions JCR non fermées {#checking-for-unclosed-jcr-sessions}
 

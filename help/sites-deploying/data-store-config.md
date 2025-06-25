@@ -9,9 +9,9 @@ exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3461'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -304,7 +304,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 Quand la mise à niveau est effectuée à partir d’une mise en œuvre de cache plus ancienne (avant Oak 1.6), la structure du répertoire du cache du système de fichiers local est différente. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et tout chargement en attente doit être planifié. De plus, les fichiers précédemment chargés dans le cache seront placés dans le cache lors de l’initialisation.
 
-Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md) du module oak-run.
+Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
 
 Le cache est soumis à une limite de taille qui peut être configurée à l’aide du paramètre cacheSize.
 
@@ -445,7 +445,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 
 * azureBlobEndpoint=&quot;&quot; : point d’entrée Blob Azure. Par exemple, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 * container=&quot;&quot; : nom du conteneur de stockage d’objets blob Microsoft® Azure. Le conteneur est le regroupement d’un ensemble d’objets blob. Pour plus d’informations, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

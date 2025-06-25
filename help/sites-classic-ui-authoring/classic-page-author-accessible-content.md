@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -312,7 +312,7 @@ Les détails exacts de la création de vidéos avec description audio ne sont pa
 
 * [Compréhension du critère de réussite 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) :
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/fr/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Sous-titres (en direct) (1.2.4)    {#captions-live}
 
@@ -328,9 +328,9 @@ Ce critère de réussite est identique aux [Sous-titres (pré-enregistrés)](#ca
 
 Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#captions-pre-recorded) ci-dessus. Toutefois, en raison de la nature du média (en direct), les sous-titres doivent être créés aussi rapidement que possible, en fonction de ce qui se passe dans la vidéo. Par conséquent, vous devez envisager d’utiliser des outils de sous-titrage en temps réel ou de transcription audio en texte.
 
-Les instructions détaillées sortent du cadre de ce document, mais la ressource suivante fournit des informations utiles :
+Des instructions détaillées dépassent le cadre de ce document, mais la ressource suivante fournit des informations utiles :
 
-* [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://webaim.org/techniques/captions/realtime)
+* [WebAIM : Real Time Captioning (sous-titrage en temps réel)](https://webaim.org/techniques/captions/realtime)
 
 #### En savoir plus – Sous-titres (en direct) (1.2.4)  {#more-information-captions-live}
 

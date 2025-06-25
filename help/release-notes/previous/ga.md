@@ -1,14 +1,14 @@
 ---
 title: Notes générales de mise à jour d’ [!DNL Adobe Experience Manager]  6.5
-description: Notes relatives à [!DNL Adobe Experience Manager] 6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.
+description: Notes relatives à[!DNL Adobe Experience Manager] 6.5, décrivant les informations de version, les nouveautés, la procédure d’installation et les listes détaillées des modifications.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -157,11 +157,9 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
      ```
 
    * Déclarations de variables avec data-sly-set :
-
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Paramètres de contrôle de liste et de répétition : début, étape, fin :
-
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identifiants pour data-sly-unwrap :
@@ -437,7 +435,7 @@ Consultez le [Résumé des nouvelles fonctionnalités et améliorations apporté
 
 Adobe applique un modèle de développement axé sur les clients et clientes afin qu’ils puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs, utilisatrices et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur les clients et clientes, et corrigées dans AEM 6.5.
 
@@ -561,7 +559,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144)
 * Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403)
 
-### Forms {#forms}
+### Formulaires {#forms}
 
 * Lorsqu’AEM Forms est installé sous un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
 * (AEM Forms sur WebSphere® uniquement) L’option **Forms Workflow** > **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** en utilisant le **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)

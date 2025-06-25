@@ -5,9 +5,9 @@ feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '432'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Les intégrations utilisent une intégration IMS configurée avec S2S OAuth.
 
 Dans un premier temps, vous devez configurer les informations d’identification OAuth dans Adobe Developer Console.
 
-Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de la Developer Console, en fonction de vos besoins :
+Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
 
 * Vue d’ensemble :
 

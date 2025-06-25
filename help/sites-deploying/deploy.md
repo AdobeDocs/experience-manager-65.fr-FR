@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1779'
 ht-degree: 100%
 
@@ -36,11 +36,11 @@ Dans cette page, vous trouverez les éléments suivants :
    * [Installation locale par défaut](#default-local-install)
    * [Installation des instances d’auteur et de publication](#author-and-publish-installs)
    * [Répertoire d’installation décompressé](#unpacked-install-directory)
-   * [Démarrage et arrêt](#starting-and-stopping)
+   * [Démarrer et arrêter](#starting-and-stopping)
 
 Une fois que vous serez à l’aise avec ces principes fondamentaux, vous pourrez lire des informations plus détaillées et avancées dans les pages secondaires suivantes :
 
-* [Exigences techniques ](/help/sites-deploying/technical-requirements.md)
+* [Exigences techniques](/help/sites-deploying/technical-requirements.md)
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Installation autonome personnalisée](/help/sites-deploying/custom-standalone-install.md)
 * [Installation du serveur d’applications](/help/sites-deploying/application-server-install.md)
@@ -255,7 +255,7 @@ Lorsque le fichier jar quickstart est lancé pour la première fois, il est déc
 
 Si l’instance a été installée à partir de l’interface utilisateur, une fenêtre de navigateur s’ouvre automatiquement. Une fenêtre d’application de bureau s’ouvre également et affiche l’hôte et le port de l’instance, ainsi qu’un bouton bascule activé/désactivé :
 
-![écran de démarrage](assets/screen_shot_.png)
+![Écran de démarrage](assets/screen_shot_.png)
 
 ### Démarrer et arrêter {#starting-and-stopping}
 

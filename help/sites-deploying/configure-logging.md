@@ -10,7 +10,7 @@ exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ La [configuration de la journalisation Apache Sling](/help/sites-deploying/osgi
 * la rotation de version (soit une taille maximale, soit un intervalle de temps)
 * le format à utiliser lors de l’écriture des messages du journal
 
-## Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
+## Paramètres de journalisation et d’écriture pour les services individuels {#loggers-and-writers-for-individual-services}
 
 En plus des paramètres de journalisation globale, AEM vous permet de configurer des paramètres spécifiques pour un service individuel :
 

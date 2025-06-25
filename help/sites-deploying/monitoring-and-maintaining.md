@@ -11,9 +11,9 @@ exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5755'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1098,7 +1098,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >
 >Consultez les articles suivants pour plus d’informations :
 >
->* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr)
+>* [Images mémoire de threads](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-17452)
 >* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
 >* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=fr)
 >
@@ -1134,7 +1134,7 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr
+   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Détérioration régulière des performances {#regular-performance-degradation}
 
