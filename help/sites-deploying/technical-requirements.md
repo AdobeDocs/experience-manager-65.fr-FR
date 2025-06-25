@@ -9,7 +9,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: ee6299819a027ef86a69ddbb5e56cf38e3436b6e
 workflow-type: tm+mt
 source-wordcount: '3700'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
 1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
@@ -130,7 +130,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | MongoDB Enterprise 3.4 | Référentiel | Z : non pris en charge |
 | IBM® DB2® 10.5 | Référentiel et base de données Forms | R : prise en charge limitée `[5]` |
 | Oracle Database 12c (12.1.x) | Référentiel et base de données Forms | R : prise en charge limitée  |
-| Base de données Oracle 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
+| Oracle Database 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
 | Microsoft® SQL Server 2016 | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2019 (obsolète) | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2022 | Base de données Forms | A : pris en charge |
@@ -185,7 +185,7 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 | Oracle WebLogic Server 12.2 (12cR2) | Z : non pris en charge |
 | Serveur d’applications IBM WebSphere en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | Serveur d’applications IBM® WebSphere® 9.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
-| 9.0.0.10 du serveur d’applications IBM® WebSphere® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
+| IBM® WebSphere® Application Server 9.0.0.10 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | JBoss EAP 7.2.x avec le serveur d’applications JBoss® | Z : non pris en charge |
 | JBoss® EAP 7.1.4 avec le serveur d’applications JBoss® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
@@ -207,7 +207,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
-| Microsoft® Windows Server 2019 `[4]` (Obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z : non pris en charge |
 | Oracle Solaris™ 11 | Z : non pris en charge |
@@ -559,7 +559,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux® (prise en charge des applications 32 bits et 32 bits sur les systèmes 64 bits).
+   * Linux® (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits).
 
    * Windows Server
    * macOS X (64 bits)
