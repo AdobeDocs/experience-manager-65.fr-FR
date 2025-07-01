@@ -7,9 +7,9 @@ exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: f1fc8554b35d7d9c152023a6b9094e31c1b49807
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5806'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -184,9 +184,9 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, la bibliothèque `nspr` 32 bits peut ne pas être disponible par défaut ; installez-la si elle n’est pas présente.
+* (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, la bibliothèque 32 bits `nspr` peut ne pas être disponible par défaut. Installez-la si elle n’est pas présente.
 
-* (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
+* (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
 
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
 définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
@@ -194,7 +194,7 @@ définissez ensuite la variable d’environnement suivante et redémarrez le ser
 
 >[!NOTE]
 >
-> WebToPDF est également utilisé par la fonction Graphique dans les communications interactives. Par conséquent, toutes les étapes de configuration mentionnées ci-dessus pour WebToPDF s’appliquent pour garantir le bon fonctionnement de la fonction Graphique.
+> La fonctionnalité de graphique utilise également WebToPDF dans les communications interactives. Par conséquent, il est nécessaire de suivre les étapes de configuration de WebToPDF décrites ci-dessus afin de s’assurer que la fonctionnalité de graphique fonctionne correctement.
 
 ## Configurations de pré-installation {#preinstallationconfigurations}
 
@@ -796,7 +796,6 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Sérialisez en volume le module (resérialisez l’installation existante à l’aide du fichier prov.xml et du nouveau numéro de série) : exécutez la commande suivante à partir du dossier d’installation PRTK en tant qu’administrateur pour sérialiser et activer les modules déployés sur les ordinateurs clients :
 
@@ -804,8 +803,8 @@ Expiration de la licence d’Adobe Acrobat installée sur AEM Forms Server
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
+     
+* Pour les installations à grande échelle, utilisez [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) pour supprimer les versions précédentes de Reader et Acrobat. Personnalisez le programme d’installation et déployez-le sur tous les ordinateurs de votre organisation.
 
 +++
 

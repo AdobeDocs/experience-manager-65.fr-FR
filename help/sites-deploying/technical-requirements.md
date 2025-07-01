@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: ee6299819a027ef86a69ddbb5e56cf38e3436b6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3700'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
 1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, sont directement prises en charge par Adobe pour tous les clients et clientes AEM utilisant la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Important : Oracle Java™ 11 est pris en charge au moins jusqu’en septembre 2026. Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
@@ -130,7 +130,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | MongoDB Enterprise 3.4 | Référentiel | Z : non pris en charge |
 | IBM® DB2® 10.5 | Référentiel et base de données Forms | R : prise en charge limitée `[5]` |
 | Oracle Database 12c (12.1.x) | Référentiel et base de données Forms | R : prise en charge limitée  |
-| Oracle Database 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
+| Oracle Database 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
 | Microsoft® SQL Server 2016 | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2019 (obsolète) | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2022 | Base de données Forms | A : pris en charge |
@@ -143,8 +143,8 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 4. Seul le moteur de stockage WiredTiger de MongoDB est pris en charge.
 5. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
 6. Applicable à AEM Forms uniquement :
-   * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
-   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019 et Microsoft® SQL Server 2022.
+   * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
+   * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019 et Microsoft® SQL Server 2022.
 
 >[!NOTE]
 >
@@ -185,12 +185,12 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 | Oracle WebLogic Server 12.2 (12cR2) | Z : non pris en charge |
 | Serveur d’applications IBM WebSphere en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | Serveur d’applications IBM® WebSphere® 9.0 et IBM® JRE 1.8 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
-| IBM® WebSphere® Application Server 9.0.0.10 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
+| serveur d’application IBM® WebSphere® 9.0.0.10 | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R : prise en charge restreinte des nouveaux contrats `[2]` |
 | JBoss EAP 7.2.x avec le serveur d’applications JBoss® | Z : non pris en charge |
 | JBoss® EAP 7.1.4 avec le serveur d’applications JBoss® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | JBoss® EAP 7.0.x avec le serveur d’applications JBoss® | Z : non pris en charge |
-| JBoss® EAP 7.4 avec JBoss® Application Server <sup>[2] [3] [7] | A : pris en charge |
+| JBoss® EAP 7.4 avec le serveur d’application JBoss® <sup>[2] [3] [7] | A : pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
 2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
@@ -207,15 +207,15 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
-| Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z : non pris en charge |
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
 1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
-2. AEM Forms est pris en charge sur Ubuntu 20.04 et SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
-3. Distribution Linux® prise en charge par Adobe Managed Services.
+2. AEM Forms est pris en charge sous Ubuntu 20.04 et SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
+3. Distribution Linux® prise en charge par Adobe Managed Services.
 
    >[!NOTE]
    >

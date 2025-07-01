@@ -7,9 +7,9 @@ feature: Authoring
 role: User,Admin,Architect,Developer
 mini-toc-levels: 2
 source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2477'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -26,18 +26,18 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 #### Titre et balises {#tile}
 
-* **Titre** - Le titre de la page s’affiche à différents emplacements
+* **Titre** : le titre de la page s’affiche à divers endroits.
    * Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
    * Ce champ est obligatoire.
-* **Balises** - Vous pouvez ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
+* **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
    * Après avoir sélectionné une balise, celle-ci est répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du x.
    * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
       * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
-   * Dans la liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
-   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
-   * Pour plus d’informations sur les balises, voir [Utilisation des balises.](/help/sites-authoring/tags.md)
-* **Masquer dans la navigation** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte
+   * La liste déroulante vous permet de choisir parmi des balises existantes.
+   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
+   * Pour plus d’informations sur les balises, consultez la section [Utilisation des balises.](/help/sites-authoring/tags.md)
+* **Masquer dans la navigation** : indique si la page est affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
 #### Branding {#branding}
 
@@ -45,41 +45,41 @@ Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un 
 
 * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
    * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
-* **Remplacer la valeur** - Texte de rappel à ajouter au titre de la page
-   * La valeur est ajoutée au titre de la page après une barre verticale, par exemple `Cycling Tuscany | Always ready for the WKND`
+* **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
+   * La valeur est ajoutée au titre de la page après une barre verticale telle que `Cycling Tuscany | Always ready for the WKND`
 
 #### Autres titres et descriptions {#more}
 
-* **Titre de la page** - Titre à utiliser sur la page
-   * Généralement utilisé par les composants de titre
+* **Titre de la page** : titre à utiliser sur la page.
+   * Généralement utilisé par les composants de titre.
    * Si rien n’est indiqué, le **titre** est utilisé.
-* **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis).
+* **Titre de navigation** : vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis).
    * Si rien n’est indiqué, le **titre** est utilisé.
-* **Sous-titre** - Sous-titre à utiliser sur la page
-* **Description** - Votre description de la page, son objectif ou tout autre détail que vous souhaitez ajouter
+* **Sous-titre** : sous-titre à utiliser sur la page.
+* **Description** : votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
 #### Heure d’activation/de désactivation {#on-time}
 
-L’heure d’activation/de désactivation d’une page est un moyen pratique de masquer temporairement le contenu déjà publié. Le contenu reste sur l’instance de publication lorsqu’elle est désactivée. La désactivation d’une page ne dépublie pas le contenu.
+L’heure d’activation/désactivation d’une page est un moyen pratique de masquer temporairement le contenu déjà publié. Le contenu reste sur l’instance de publication lorsque la page est désactivée. La désactivation d’une page ne dépublie pas le contenu.
 
 * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
-   * Si elle est déjà [publiée)](/help/sites-authoring/publishing-pages.md) cette page est disponible sur l’instance de publication, mais reste inactive (masquée) jusqu’au rendu à l’heure spécifiée.
-   * Si elle n’est pas publiée et [configurée pour la réplication automatique](/help/sites-deploying/replication.md) la page est automatiquement publiée, puis rendue, à l’heure spécifiée.
-   * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas automatiquement publiée. Une erreur 404 s’affiche donc lorsqu’une tentative d’accès à la page est effectuée.
+   * Si la page est déjà [publiée,](/help/sites-authoring/publishing-pages.md) elle est disponible sur l’instance de publication, mais à l’état inactif (masquée) jusqu’au rendu à l’heure spécifiée. 
+   * Si elle n’est pas publiée et [configurée pour la réplication automatique,](/help/sites-deploying/replication.md) la page est automatiquement publiée, puis rendue au moment spécifié.
+   * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
 
-* **Heure de désactivation** – Similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
+* **Heure de désactivation** : similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
 
-Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
+Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
 >[!NOTE]
 >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
 >[!TIP]
 >
->Les heures d’activation/désactivation traitent strictement du contenu déjà publié (manuellement ou par réplication automatique). Pour cette raison, les workflows de publication tels que ceux destinés à l’approbation de contenu ne sont pas déclenchés par les heures d’activation/de désactivation et les heures d’activation/de désactivation n’affectent pas le statut de publication de la page. Pour cette raison, les heures d’activation/de désactivation sont plus appropriées pour afficher/masquer temporairement le contenu déjà approuvé et publié.
+>Les heures d’activation/de désactivation portent uniquement sur le contenu déjà publié (par voie manuelle ou la réplication automatique). Pour cette raison, les workflows de publication tels que ceux d’approbation de contenu ne sont pas déclenchés par les heures d’activation/de désactivation, et ces dernières n’affectent pas le statut de publication de la page. Pour cette raison, les heures d’activation/de désactivation sont les plus appropriées pour afficher/masquer temporairement du contenu déjà approuvé et publié.
 >
->Si vous souhaitez publier un nouveau contenu avec tous les workflows associés ou supprimer entièrement (dépublier le contenu) de votre site, pensez à [gérer votre publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
+>Si vous souhaitez publier du nouveau contenu avec tous les workflows associés ou supprimer entièrement (dépublier) le contenu de votre site, envisagez de procéder à la [gestion de votre instance de publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
 #### URL de redirection {#vanity-url}
 
@@ -97,9 +97,9 @@ Par exemple, si l’URL de redirection est définie sur `welcome` sur la page id
 
 Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez [Activation de l’accès aux URL de redirection](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-access-to-vanity-urls-vanity-urls) pour plus d’informations.
 
-* **Ajouter** - Appuyez ou cliquez pour ajouter une URL Vanity.
-* **Supprimer** - Appuyez ou cliquez sur supprimer pour supprimer une URL Vanity.
-  **Rediriger l’URL Vanity** - Indique si vous souhaitez que la page utilise l’URL Vanity ou la redirige vers l’URL réelle de la page
+* **Ajouter** : appuyez ou cliquez pour ajouter une URL de redirection.
+* **Supprimer** : appuyez ou cliquez pour supprimer une URL de redirection.
+  **Rediriger l’URL de redirection** : indique si vous souhaitez que la page utilise l’URL de redirection ou redirige vers l’URL réelle de la page.
 
 ### Avancé {#advanced}
 
@@ -108,8 +108,8 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 * **Langue** – Langue de la page.
 * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
 * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
-* **Conception** - Indique la [conception](/help/sites-developing/designer.md) à utiliser pour cette page.
-* **Alias** – Indique un alias à utiliser avec cette page.
+* **Conception** : indique la [conception](/help/sites-developing/designer.md) à utiliser sur cette page.
+* **Alias** : indique un alias à utiliser avec cette page.
    * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
    * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
    * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
@@ -117,17 +117,17 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 
 #### Configuration {#configuration}
 
-* **Hérité de &lt;*path*>** - Activez/désactivez l’héritage de la **Configuration du cloud** de la page
-* **Configuration du cloud** – Chemin d’accès à la configuration
+* **Hérité du &lt;*chemin*>** - Activer/désactiver l’héritage de la **configuration cloud** pour la page
+* **Configuration du cloud** : chemin d’accès à la configuration
 
 #### Paramètres de modèles {#templates}
 
-* **Modèles autorisés** – [Définit la liste des modèles qui seront disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche
+* **Modèles autorisés** : [définit la liste des modèles qui seront disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche.
 
 #### Exigence d’authentification {#authentication}
 
-* **Activer** - Activer (ou désactiver) l’utilisation de l’authentification pour pouvoir accéder à la page
-* **Page de connexion** – Page à utiliser pour la connexion
+* **Activer** : active/désactive l’utilisation de l’authentification afin que vous puissiez accéder à la page.
+* **Page de connexion** : page à utiliser pour la connexion
 
 >[!NOTE]
 >
@@ -138,19 +138,19 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 >L’onglet **[Autorisations](#permissions)** permet de modifier les configurations des groupes d’utilisateurs et d’utilisatrices fermés basées sur la présence du mixin `granite:AuthenticationRequired`. Si les autorisations de page sont configurées à l’aide de configurations des groupes d’utilisateurs et d’utilisatrices fermés obsolètes, selon la présence de la propriété `cq:cugEnabled`, un message d’avertissement s’affiche sous **Exigence d’authentification** et l’option n’est pas modifiable, tout comme les [autorisations](/help/sites-authoring/editing-page-properties.md#permissions).
 >
 >
->Le cas échéant, les autorisations des groupes d’utilisateurs fermés doivent être modifiées dans l’[IU classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+>Le cas échéant, les autorisations des groupes d’utilisateurs et utilisatrices fermés doivent être modifiées dans l’[UI classique](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 #### Export {#export}
 
-* **Configuration** - Spécifie une configuration d’exportation.
+* **Configuration de l’export** : spécifie une configuration d’export.
 
 #### SEO {#seo}
 
-* **URL canonique** - Utilisé pour remplacer l’URL canonique de la page
-   * Si rien n’est indiqué, l’URL de la page correspond à son URL canonique.
-* **Balises robots** - Utilisez la liste déroulante pour sélectionner les balises robots afin de contrôler le comportement des robots des moteurs de recherche
-   * Certaines options sont en conflit les unes avec les autres. Dans ce cas, l’option la plus permissive est prioritaire.
-* **Générer un plan de site** : lorsque cette option est sélectionnée, un `sitemap.xml` est généré pour cette page et ses descendants.
+* **URL canonique** : permet de remplacer l’URL canonique de la page.
+   * Si le champ est vide, l’URL de la page est son URL canonique.
+* **Balises robots** : utilisez la liste déroulante pour sélectionner les balises robots permettant de gérer le comportement des robots des moteurs de recherche.
+   * Certaines options entrent en conflit avec d&#39;autres. Dans ce cas, l’option la plus permissive prévaut.
+* **Générer un plan de site** : lorsque cette option est sélectionnée, un fichier `sitemap.xml` est généré pour cette page et ses descendants.
 
 ### Images {#images}
 
@@ -158,44 +158,44 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 
 Cette section permet de sélectionner et de configurer l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
-* **Image** - Vous pouvez **Choisir** une ressource ou rechercher un fichier à charger, puis **Modifier** ou **Effacer** l’image sélectionnée.
-* **Texte secondaire** - Texte utilisé pour représenter la signification et/ou la fonction de l’image, généralement utilisé par les lecteurs d’écran
-* **Hériter - Valeur issue de la ressource DAM** - Lorsque cette case est cochée, le texte secondaire est renseigné avec la valeur des `dc:description`métadonnées dans la gestion des ressources numériques.
+* **Image** : vous pouvez **sélectionner** un fichier ou rechercher un fichier à télécharger, puis **modifier** ou **effacer** l’image sélectionnée.
+* **Texte secondaire** : texte utilisé pour décrire la signification et/ou la fonction de l’image. Couramment utilisé par les lecteurs d’écran.
+* **Hériter - Valeur issue de la ressource DAM** : lorsque cette option est cochée, le texte secondaire est renseigné avec la valeur des métadonnées `dc:description`dans DAM.
 
 #### Miniature {#thumbnail}
 
-Cette section permet de sélectionner et de configurer la miniature de l’image de la page. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
+Cette section permet de sélectionner et de configurer la miniature d&#39;image de la page. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
-* **Générer l’aperçu** - Génère un aperçu de la page à utiliser comme miniature
-* **Télécharger l’image** - Transfère une image que vous souhaitez utiliser comme miniature
-* **Sélectionner une image** - Sélectionne une ressource existante que vous souhaitez utiliser comme miniature
-* **Rétablir** - Cette option n’est disponible qu’après avoir modifié la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
+* **Générer l’aperçu** : générez un aperçu de la page que vous souhaitez utiliser comme miniature.
+* **Charger une image** : chargez une image que vous souhaitez utiliser comme miniature.
+* **Sélectionner une image** : sélectionnez une ressource existante à utiliser comme miniature.
+* **Rétablir** : cette option est disponible une fois que vous avez modifié la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
 
 ### Services cloud {#cloud-services}
 
-* **Configurations de Cloud Service** - Définit la configuration utilisée pour les services cloud de la page
-* **Hérité de** - Pour les Live Copies et les copies de langue, les configurations cloud sont par défaut héritées du plan directeur.
-   * Décochez cette case pour remplacer l’héritage.
+* **Configurations du service cloud** : définit la configuration utilisée pour les services cloud de la page.
+* **Hérité de** : pour les Live Copies et les copies de langue, les configurations cloud sont par défaut héritées du plan directeur.
+   * Désélectionner pour remplacer l’héritage
 
 ### Personnalisation {#personalization}
 
 #### Configurations ContextHub {#contexthub}
 
-* **Hérité de** - Les configurations ContextHub sont par défaut héritées de la page parente.
-   * Décochez cette case pour remplacer l’héritage.
-* **Chemin d’accès ContextHub** - Sélectionne la configuration [ContextHub](/help/sites-developing/ch-configuring.md)
-* **Chemin d’accès aux segments** - Sélectionne le [chemin d’accès aux segments](/help/sites-administering/segmentation.md).
+* **Hérité de** : les configurations ContextHub sont héritées par défaut de la page parent.
+   * Décochez pour remplacer l’héritage.
+* **Chemin ContextHub** : définit la [configuration ContextHub.](/help/sites-developing/ch-configuring.md)
+* **Chemin d’accès aux segments** : permet de sélectionner le [chemin d’accès aux segments](/help/sites-administering/segmentation.md).
 
 #### Configuration du ciblage {#targeting}
 
-Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-authoring/target-adobe-campaign.md).
+Sélectionnez une [marque pour spécifier la portée du ciblage.](/help/sites-authoring/target-adobe-campaign.md)
 
 >[!NOTE]
 >Cette option nécessite que le compte d’utilisateur figure dans le groupe `Target Adminstrators`.
 
 ### Autorisations {#permissions}
 
-Utilisez l’onglet **Autorisations** pour définir quels utilisateurs, groupes ou [groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=fr) peuvent accéder à la page et/ou la modifier.
+Utilisez l’onglet **Autorisations** pour définir les utilisateurs et utilisatrices, groupes ou [groupes fermés d’utilisateurs et d’utilisatrices (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=fr) autorisés à accéder à la page et/ou à la modifier.
 
 * [Ajouter des autorisations](/help/sites-administering/user-group-ac-admin.md)
 * [Modifier le groupe d’utilisateurs fermé](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
@@ -216,33 +216,33 @@ Utilisez l’onglet **Autorisations** pour définir quels utilisateurs, groupes 
 
 Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite.](/help/sites-administering/msm.md)
 
-* **Déploiement** - Déploie le contenu du plan directeur sur les Live Copies.
-* **Aperçu de la Live Copy** - Ouvre une fenêtre pour parcourir la structure de la page Live Copy
-* **Live Copies actuelles** - Liste des pages basées sur (c’est-à-dire, Live Copies de) la page de plan directeur sélectionnée
-* **Configuration du déploiement** - Définit la configuration de déploiement de la page
+* **Déploiement** : lance le déploiement du contenu du plan directeur vers les Live Copies.
+* **Aperçu de la Live Copy** : ouvre une fenêtre permettant de parcourir la structure de la page de la Live Copy.
+* **Live Copies actuelles** : listes de pages basées sur (c’est-à-dire qu’il s’agit de Live Copies de) la page de plan directeur sélectionnée.
+* **Configuration du déploiement** : définit la configuration du déploiement de la page.
 
 ### Live Copy {#live-copy}
 
-Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les [plans directeurs](#blueprint) les Live Copies font partie de la [gestion multisite](/help/sites-administering/msm.md).
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les [plans directeurs](#blueprint), les Live Copies font partie de la [gestion multisite.](/help/sites-administering/msm.md)
 
-* **Synchroniser** - Synchronise la Live Copy avec le plan directeur, en conservant les modifications locales.
-* **Réinitialiser** - Réinitialise la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
-* **Suspendre** - Suspend la Live Copy des modifications de déploiement supplémentaires.
-* **Désolidariser** - Désolidarise la Live Copy du plan directeur
+* **Synchroniser** : synchronise la Live Copy avec le plan directeur, en conservant les modifications locales.
+* **Réinitialiser** : réinitialise la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
+* **Suspendre** : empêche la Live Copy de recevoir des modifications de déploiement supplémentaires.
+* **Désolidariser** : désolidarise la Live Copy du plan directeur.
 
 #### Source {#source}
 
-* Affiche le chemin du plan directeur pour cette Live Copy
+* Affiche le chemin du plan directeur pour cette Live Copy.
 
 #### Statut {#status}
 
-* Liste l’état actuel de la Live Copy de la page
+* Liste l’état actuel de la Live Copy de la page.
 
 #### Configuration {#live-copy-config}
 
-* **Héritage de Live Copy** - Si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
-* **Hériter des configurations de déploiement du parent** - Si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
-* **Choisir la configuration de déploiement** – Définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque **Hériter des configurations de déploiement du parent** n’est pas sélectionné
+* **Héritage de Live Copy** : si cette option est cochée, la configuration de la Live Copy est effective sur tous les enfants.
+* **Hériter des configurations de déploiement du parent** : si cette option est cochée, la configuration de déploiement est héritée du parent de la page.
+* **Choisir la configuration de déploiement** : définit les circonstances dans lesquelles les modifications sont propagées à partir du plan directeur et disponibles uniquement lorsque l’option **Hériter des configurations de déploiement du parent** n’est pas sélectionnée.
 * **Liste des chemins exclus**
 
 ## Modification des propriétés de page {#editing-page-properties-1}

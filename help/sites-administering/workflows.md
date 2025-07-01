@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement et extension des workflows - Modèles](/help/sites-developing/workflows.md#model) pour plus d’informations.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Pour plus d’informations, consultez [Développement et extension de workflows - Modèles](/help/sites-developing/workflows.md#model).
 
 Les instances de workflows progressent selon le cycle de vie suivant :
 
