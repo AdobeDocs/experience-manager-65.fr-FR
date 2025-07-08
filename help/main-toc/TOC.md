@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 94bd50cffe65b495a19f29ce16c60203641e749c
-workflow-type: ht
-source-wordcount: '7525'
-ht-degree: 100%
+source-git-commit: 6feebde8e1a2c89599f04e10e3e2a884a6202575
+workflow-type: tm+mt
+source-wordcount: '7535'
+ht-degree: 99%
 
 ---
 
@@ -652,7 +652,7 @@ ht-degree: 100%
       + [Texte d’espace réservé dans AEM Forms](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [Prévisualisation d’un formulaire](/help/forms/using/previewing-forms.md)
       + [Réutilisation de formulaires adaptatifs](/help/forms/using/reusing-adaptive-forms.md)
-      + [Composant Separator dans les formulaires adaptatifs](/help/forms/using/separator-component-in-adaptive-forms.md)
+      + [Composant Séparateur dans les formulaires adaptatifs](/help/forms/using/separator-component-in-adaptive-forms.md)
       + [Application de signatures électroniques à un formulaire à l’aide de signatures tactiles](/help/forms/using/signing-forms-using-scribble.md)
       + [Raccourcis clavier AEM Forms](/help/forms/using/keyboard-shortcuts.md)
       + [Association de réviseurs d’envoi à un formulaire](/help/forms/using/adding-reviewers-form.md)
@@ -1214,6 +1214,7 @@ ht-degree: 100%
       + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Atténuation des vulnérabilités de Log4j2 pour Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [Réduire la vulnérabilité d’exécution de code à distance pour AEM Forms sur JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
       + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
