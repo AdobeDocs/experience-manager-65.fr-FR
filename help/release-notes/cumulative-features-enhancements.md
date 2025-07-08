@@ -7,16 +7,16 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 03c070f7bba1d66ce2a5309d2ab79567dbef3264
+source-git-commit: 3d47b1e17a4500e5e68e1abe2e2d4ac86376f424
 workflow-type: tm+mt
-source-wordcount: '3539'
-ht-degree: 71%
+source-wordcount: '3122'
+ht-degree: 74%
 
 ---
 
 # Principales fonctionnalités et améliorations cumulées
 
-Liste cumulative des fonctionnalités et améliorations clés de Adobe Experience Manager 6.5 pour les versions précédentes du Service Pack.
+Liste cumulée des fonctionnalités et améliorations clés d’Adobe Experience Manager 6.5 pour les huit versions précédentes du pack de services.
 
 Voir également les [Notes de mise à jour du dernier pack de services d’Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
@@ -137,13 +137,13 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 ### [!DNL Forms]
 
 * **Nouveaux composants principaux de formulaires adaptatifs** : des onglets verticaux, des conditions générales et une case à cocher sont ajoutés pour améliorer l’évolutivité des formulaires.
-   * **[Composant de case à cocher](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
+   * **[Composant de case à cocher](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
 
-   * **[Composant des termes et conditions](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)** : le Forms adaptatif basé sur les composants principaux inclut désormais un composant des termes et conditions. Les auteurs de formulaires ajoutent cette section pour afficher aux utilisateurs les termes, conditions ou accords juridiques du service, du produit ou de la plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
+   * **[Composant des termes et conditions](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)** : le Forms adaptatif basé sur les composants principaux inclut désormais un composant des termes et conditions. Les auteurs de formulaires ajoutent cette section pour afficher aux utilisateurs les termes, conditions ou accords juridiques du service, du produit ou de la plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
      ![Composants Onglets verticaux, Conditions générales et Case à cocher](/help/forms/using/assets/forms-components.png)
 
-   * **[Composant Onglets verticaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais organiser le contenu des formulaires en une liste verticale d’onglets, ce qui assure une disposition structurée et navigable. Les onglets verticaux d’un formulaire améliorent l’expérience utilisateur en simplifiant la navigation et en organisant le contenu. Elles s’avèrent particulièrement utiles lorsque le formulaire contient plusieurs sections ou des informations complexes.
+   * **[Composant Onglets verticaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais organiser le contenu des formulaires en une liste verticale d’onglets, ce qui assure une disposition structurée et navigable. Les onglets verticaux d’un formulaire améliorent l’expérience utilisateur en simplifiant la navigation et en organisant le contenu. Elles s’avèrent particulièrement utiles lorsque le formulaire contient plusieurs sections ou des informations complexes.
 
 * **[Version 64 bits d’AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)** : la version 64 bits d’AEM Forms Designer offre des performances, une évolutivité et une gestion de la mémoire améliorées pour optimiser votre expérience de création de formulaires. Grâce à l’architecture 64 bits, vous pouvez aborder facilement des projets plus volumineux et plus complexes, assurant ainsi des workflows de conception transparents et une efficacité optimisée. Améliorez encore vos capacités de conception de formulaire et accueillez l’avenir d’AEM Forms Designer avec cette version de pointe.
 
@@ -164,9 +164,9 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 ### [!DNL Forms]
 
-* **[Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** – Vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe. Vous pouvez également fournir une réponse personnalisée aux utilisateurs finaux et utilisatrices finales. Vous pouvez également effectuer des actions spécifiques pour les erreurs renvoyées par un service. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service ne fonctionne pas.
+* **[Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** – Vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe. Vous pouvez également fournir une réponse personnalisée aux utilisateurs finaux et utilisatrices finales. Vous pouvez également effectuer des actions spécifiques pour les erreurs renvoyées par un service. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client ou la cliente que le service ne fonctionne pas.
 
-* **[Amélioration de l’étape de workflow Adobe Sign](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** – L’étape de workflow Adobe Sign dans les workflows AEM est disponible avec les améliorations suivantes.
+* **[Amélioration de l’étape de workflow Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** – L’étape de workflow Adobe Sign dans les workflows AEM est disponible avec les améliorations suivantes.
 
    * **Sécurité renforcée avec authentification par ID gouvernement pour Adobe Sign** - L’authentification par ID gouvernement Adobe Acrobat Sign offre une couche supplémentaire de vérification. Elle permet aux utilisateurs et utilisatrices d’authentifier leur identité à l’aide d’une pièce d’identité officielle (permis de conduire, carte d’identité nationale, passeport). En utilisant des documents d’identification approuvés, cette amélioration ajoute un niveau de confiance supplémentaire au processus de signature, ce qui en fait une solution idéale pour les scénarios qui nécessitent une sécurité, une conformité et une validation des utilisateurs et utilisatrices renforcées.
 
@@ -176,7 +176,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
    * **Développement des rôles des destinataires du contrat au-delà du simple signataire** - Adobe Acrobat Sign vous permet d’étendre les rôles des destinataires du contrat au-delà du simple signataire afin de mieux répondre aux exigences de leur workflow. Lorsque cette option est activée, le rôle de chaque destinataire d’un contrat peut être configuré individuellement, la personne signataire étant la valeur par défaut.
 
 
-* **[Programme d’installation complet d’AEM Forms on JEE](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** – Le pack de services apporte un programme d’installation complet pour AEM Forms on JEE qui prend en charge plusieurs nouvelles combinaisons de logiciels, notamment :
+* **[Programme d’installation complet d’AEM Forms on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** – Le pack de services apporte un programme d’installation complet pour AEM Forms on JEE qui prend en charge plusieurs nouvelles combinaisons de logiciels, notamment :
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C sous Windows Server 2022
@@ -195,7 +195,7 @@ Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre en
 
   Vous n’avez pas besoin d’accéder à l’emplacement de la ressource et d’afficher ses propriétés pour effectuer ces opérations.
 
-* **Dynamic Media _Snapshot_**&#x200B;vous permet de prévisualiser les modificateurs d’image et les optimisations de l’imagerie dynamique, comme la sortie WebP ou AVIF, la compression basée sur la bande passante et la mise à l’échelle du rapport pixel d’appareil, à l’aide d’images de test ou d’URL Dynamic Media. Vous pouvez ensuite comparer immédiatement l’impact de chaque paramètre sur la qualité et la taille du fichier.
+* **Dynamic Media _Snapshot_**vous permet de prévisualiser les modificateurs d’image et les optimisations de l’imagerie dynamique, comme la sortie WebP ou AVIF, la compression basée sur la bande passante et la mise à l’échelle du rapport pixel d’appareil, à l’aide d’images de test ou d’URL Dynamic Media. Vous pouvez ensuite comparer immédiatement l’impact de chaque paramètre sur la qualité et la taille du fichier.
 Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Diffusion en continu DASH avec Dynamic Media** - Nouveau protocole (DASH - Diffusion en continu adaptative dynamique sur HTTP) lancé pour la diffusion en continu adaptative dans la diffusion vidéo Dynamic Media (avec CMAF activé). Disponible maintenant dans toutes les régions.
 * **Intégration de Experience Manager Sites et des fragments de contenu à Assets Dynamic Media nouvelle génération** - Les utilisateurs peuvent désormais utiliser leurs ressources hébergées dans le cloud dans Experience Manager Sites 6.5. Ils peuvent créer et diffuser ces ressources sur des instances on-premise ou Managed Services.
@@ -221,46 +221,8 @@ Nouveau protocole DASH (Dynamic Adaptive Streaming over HTTP) pour le streaming
 
 ### [!DNL Forms]
 
-* Les [formulaires adaptatifs découplés](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview) permettent aux développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.
+* Les [formulaires adaptatifs découplés](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview) permettent aux développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.
 
-* Les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sont un ensemble de 24 composants open source compatibles avec BEM qui sont conçus sur la base des composants principaux de la gestion de contenu web d’Adobe Experience Manager. Ces composants sont en open source et permettent aux développeurs et aux développeuses de personnaliser et d’étendre facilement ces composants pour répondre aux besoins spécifiques de leur entreprise. Toute personne disposant de compétences pour personnaliser les [composants principaux de gestion de contenu web](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/get-started/authoring) peut facilement personnaliser et mettre en forme ces composants.
+* Les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sont un ensemble de 24 composants open source compatibles avec BEM qui sont conçus sur la base des composants principaux de la gestion de contenu web d’Adobe Experience Manager. Ces composants sont en open source et permettent aux développeurs et aux développeuses de personnaliser et d’étendre facilement ces composants pour répondre aux besoins spécifiques de leur entreprise. Toute personne disposant de compétences pour personnaliser les [composants principaux de gestion de contenu web](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring) peut facilement personnaliser et mettre en forme ces composants.
 
 * Le service Reader Extensions sur OSGi fournit désormais des options distinctes permettant d’importer et d’exporter des droits d’utilisation sur un PDF afin d’importer ou d’exporter des données dans Adobe Acrobat Reader.
-
-## AEM 6.5, Pack de services 15—24 novembre 2022
-
-### [!DNL Forms]
-
-* AEM Forms Designer est désormais disponible en [espagnol](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-* Vous pouvez désormais utiliser [OAuth2 pour l’authentification avec les protocoles de serveur de messagerie Microsoft® Office 365 (SMTP et IMAP)](/help/forms/using/oauth2-support-for-mail-service.md).
-* Vous pouvez définir la propriété [Revalider sur le serveur](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions#enabling-server-side-validation-br) sur true pour identifier les champs masqués à exclure d’un document d’enregistrement côté serveur.
-* AEM Forms Designer nécessite une version 32 bits de Visual C++ 2019 Redistributable (x86).
-
-## AEM 6.5, Pack de services 14—25 août 2022
-
-Correctifs de bogues uniquement.
-
-## AEM 6.5, Pack de services 13—26 mai 2022
-
-* Utilisation d’un CAPTCHA invisible dans un formulaire adaptatif : vous pouvez désormais utiliser un CAPTCHA invisible pour afficher le test de vérification CAPTCHA uniquement en cas d’activité suspecte. Si aucune activité suspecte n’est détectée, le CAPTCHA ne s’affiche pas. Il permet d’évaluer le remplissage du formulaire par un humain sans exiger de case à cocher, de réduire les efforts de personnalisation et d’améliorer l’expérience de l’utilisateur final.
-
-* Ajout de la prise en charge de la récupération des en-têtes de réponse dans le post-processeur du modèle de données de formulaire pour les points d’entrée REST.
-
-* Désormais, lors de la génération d’un fichier de traduction de formulaire adaptatif, la même séquence de textes dans le fichier XLIFF généré est identique à la séquence de composants dans le formulaire adaptatif correspondant.
-
-* Lorsque vous localisez un formulaire adaptatif et apportez même une petite modification au texte de la langue de base, la traduction complète est manquante pour toutes les autres langues. Le problème est corrigé dans [!DNL Experience Manager] 6.5.13.0.
-
-* Améliorations de l’accessibilité pour Forms :
-
-   * Ajout de la prise en charge pour que les lecteurs d’écran reconnaissent l’en-tête et le corps d’un tableau en tant qu’entités continues et connectées. Cela permet aux lecteurs d’écran de naviguer correctement entre les tableaux. (NPR-37139)
-   * Ajout de la prise en charge des lecteurs d’écran pour arrêter la navigation dans l’espace de travail HTML jusqu’à l’ouverture d’une boîte de dialogue.
-
-## AEM 6.5, Pack de services 12—24 février 2022
-
-* Après la configuration d’une connexion entre les déploiements de gestion des DAM et Sites à distance, les ressources de gestion des DAM à distance sont disponibles pour le déploiement sur Sites. Vous pouvez désormais effectuer les opérations suivantes : mettre à jour, supprimer, renommer et déplacer des opérations sur les ressources ou dossiers de gestion des DAM à distance. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
-* Les déploiements push d’une source de Live Copy vers plusieurs Live Copies sont désormais possibles par défaut, sans nécessiter de configuration de plan directeur.
-* Le statut des opérations asynchrones en cours s’affiche désormais dans l’interface utilisateur afin d’empêcher les utilisateurs de déclencher accidentellement plusieurs opérations asynchrones sur le même chemin.
-* La prise en charge de l’authentification IMS est fournie pour les API Analytics 2.0.
-* Prise en charge de l’API pour le fragment d’expérience de type offre JSON.
-* La demande d’offre est désormais fournie pour l’option Supprimer l’offre (API de fragment d’expérience) dans IMS.
-* Le référentiel intégré (Apache Jackrabbit Oak) reste à la version 1.22.9.
