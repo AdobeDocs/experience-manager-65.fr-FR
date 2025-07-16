@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
-workflow-type: ht
-source-wordcount: '6444'
-ht-degree: 100%
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
+workflow-type: tm+mt
+source-wordcount: '6643'
+ht-degree: 97%
 
 ---
 
@@ -72,6 +72,10 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 bits)
 
 * [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications des types de fichier autorisés. Ces fichiers sont bloqués lors de la soumission afin de garantir que seuls des types de fichiers valides sont acceptés.
+
+* FORMS-20533 : AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x pour le composant Forms. Cela permet d&#39;obtenir les modifications d&#39;obstacles précédemment manquantes qui n&#39;étaient pas incluses dans le SP23. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez [télécharger et installer](/help/release-notes/aem-forms-hotfix.md) pour ajouter la prise en charge de la dernière version de Struts.
+
+* FORMS-20532 : AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x pour le composant de sortie. Cela permet d&#39;obtenir les modifications d&#39;obstacles précédemment manquantes qui n&#39;étaient pas incluses dans le SP23. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez [télécharger et installer](/help/release-notes/aem-forms-hotfix.md) pour ajouter la prise en charge de la dernière version de Struts.
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -680,9 +684,9 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 >
 > N’effectuez pas la mise à niveau vers le Pack de services 6.5.23.0 pour les problèmes ne disposant pas de correctifs, car cela peut entraîner des erreurs inattendues. Effectuez la mise à niveau vers le pack de services 6.5.23.0 uniquement après la publication des correctifs requis.
 
-* Lorsqu’un utilisateur ou une utilisatrice met à niveau Struts du pack de services AEM 2.5.x vers le pack de services AEM Forms 6.x, l’interface d’utilisation des politiques n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane. (FORMS-20203)
+* Lorsqu’un utilisateur ou une utilisatrice met à niveau Struts du pack de services AEM 2.5.x vers le pack de services AEM Forms 6.x, l’interface d’utilisation des politiques n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane. Vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) résoudre le problème.  (FORMS-20203)
 * Après la mise à niveau vers le pack de services 6.5.23.0 d’AEM Forms, le service de conversion ImageToPDF échoue avec l’erreur (FORMS-20360) :
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp``` Vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) résoudre le problème.
 
 * Après l’installation du pack de services AEM Forms JEE 21 (6.5.21.0), vous pouvez trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le dossier `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926). Suivez ces étapes pour résoudre le problème :
 
@@ -715,6 +719,8 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
   (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
+
+* FORMS-20478 : lors de la tentative de conversion de fichiers TIFF de type 7/8 en PDF, le processus de conversion échoue avec l’erreur « ALC-PDG-001-000-Image2Pdf échec de la conversion, en raison de : com/sun/image/codec/jpeg/JPEGCodec » et « ALC-PDG-016-003-Une erreur inconnue/inattendue s’est produite lors du post-traitement PDF. » Le système tente d’effectuer une nouvelle tentative à l’aide du décodeur TIFF ImageIO de TM, mais ne parvient pas à terminer le traitement. Vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) pour résoudre le problème.
 
 
 ## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
