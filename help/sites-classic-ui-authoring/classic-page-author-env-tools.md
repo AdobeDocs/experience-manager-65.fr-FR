@@ -10,10 +10,10 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 95%
 
 ---
 
@@ -156,7 +156,7 @@ Vous pouvez utiliser un nombre indéfini de caractères génériques dans une re
 
 AEM vous permet de voir les pages liées à la page sur laquelle vous travaillez actuellement.
 
-Pour afficher les références de page directes :
+Pour afficher les références de page :
 
 1. Dans le sidekick, sélectionnez l’icone d’onglet **Page**.
 
@@ -165,6 +165,10 @@ Pour afficher les références de page directes :
 1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM affiche toutes les pages qui font directement référence à la page sélectionnée, ainsi que toutes les références indirectes. Cela s’avère utile pour comprendre tous les liens qui seront mis à jour si vous devez déplacer ou supprimer la page.
+
+## Autres actions Sidekick {#additional-actions}
 
 Dans certains cas, le sidekick permet d’exécuter d’autres actions, notamment :
 

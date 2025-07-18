@@ -9,10 +9,10 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 100%
+source-wordcount: '1898'
+ht-degree: 99%
 
 ---
 
@@ -266,7 +266,7 @@ Pour déplacer ou renommer une page :
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   La page répertorie également toutes les pages qui font référence à la page en cours de déplacement. Selon le statut de la page de référence, vous pouvez ajuster ces liens sur les pages et/ou republier les pages.
+   La page répertorie également toutes les pages qui font directement ou indirectement référence à la page déplacée. Selon le statut de la page de référence, vous pouvez ajuster ces liens sur les pages et/ou republier les pages.
 
 1. Renseignez les champs suivants, le cas échéant :
 

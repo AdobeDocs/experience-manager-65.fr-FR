@@ -1,14 +1,14 @@
 ---
 title: Statut des fonctionnalités de l’IU tactile
-description: Notes de mise à jour spécifiques à l’IU tactile d’ [!DNL Adobe Experience Manager]
+description: 'Notes de mise à jour spécifiques à l’IU tactile d’ [!DNL Adobe Experience Manager] '
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 100%
+source-wordcount: '1087'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
 | Voir Copies de langue | Complète |  |
 | Rechercher et remplacer | Absente | Utiliser l’IU classique. |
 | Boîte de réception des notifications (événements JCR) | Absente | Utiliser l’IU classique. Remplacée par une autre implémentation à venir. |
-| Références | Complète | Affichage des liens de page entrants ajoutés à AEM 6.5. |
+| Références | Complète | Affichage des liens de page entrants ajoutés à AEM 6.5. Seuls les liens directs vers la page s’affichent pour des raisons de performances. |
 
 ## Statut des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
