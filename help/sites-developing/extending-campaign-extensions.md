@@ -1,5 +1,5 @@
 ---
-title: Créer des extensions personnalisées
+title: Extensions Adobe Campaign personnalisées
 description: Vous pouvez appeler votre code personnalisé dans Adobe Campaign à partir d’AEM ou à partir d’AEM vers Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,15 @@ exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '503'
+ht-degree: 92%
 
 ---
 
-# Créer des extensions personnalisées{#creating-custom-extensions}
+
+# Extensions Adobe Campaign personnalisées{#creating-custom-extensions}
 
 Généralement, lorsque vous implémentez un projet, vous disposez d’un code personnalisé dans AEM et Adobe Campaign. Grâce à l’API existante, vous pouvez appeler le code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign. Ce document décrit la marche à suivre.
 
@@ -35,17 +36,13 @@ L’intégration standard entre AEM et Campaign est basée sur JSON et JSSP (Jav
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
->[!NOTE]
->
->[Pour cet exemple, consultez Geometrixx](/help/sites-developing/we-retail.md), disponible à partir du partage de modules.
-
 Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du côté AEM pour récupérer le résultat. Il peut notamment être utilisé pour récupérer des données d’Adobe Campaign ou pour enregistrer des données dans Adobe Campaign.
 
 1. Dans Adobe Campaign, pour créer un fichier JSSP, cliquez sur l’icône **Nouveau**.
 
    ![Icône Nouveau, comme indiqué par une page avec une étoile près du coin supérieur gauche.](do-not-localize/chlimage_1-4a.png)
 
-1. Entrez le nom de ce fichier JSSP. Dans cet exemple, **cus:custom.jssp** est utilisé (c’est-à-dire qu’il figure dans l’espace de noms **cus**).
+1. Entrez le nom de ce fichier JSSP. Dans cet exemple, la valeur **cus:custom.jssp** est utilisée (ce qui signifie qu’elle se trouve dans l’espace de noms **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -173,11 +170,11 @@ AEM propose des API prêtes à l’emploi pour récupérer les objets disponible
 
 Pour chaque nœud de l’explorateur, il existe une API qui lui est liée. Par exemple pour le nœud :
 
-* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
+* [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommendations](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
 L’API est la suivante :
 
-* [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
+* [http://localhost:4502/content/campaigns/geometrixx/scott-recommendations.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 La fin de l’URL **.1.json** peut être remplacé par **.2.json** ou **.3.json** en fonction du nombre de sous-niveaux que vous souhaitez obtenir. Pour tous les obtenir, vous pouvez utiliser le mot-clé **infinity** :
 

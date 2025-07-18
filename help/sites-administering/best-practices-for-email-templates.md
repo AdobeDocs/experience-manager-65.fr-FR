@@ -10,10 +10,11 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1072'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +47,7 @@ Utilisez ces bonnes pratiques lors de la création de votre propre newsletter.
 
 >[!NOTE]
 >
->Lors de la création d’un modèle d’e-mail pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle. Sinon, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** d’Experience Manager (le champ est désactivé).
+>Lors de la création d’un modèle de courrier pour Adobe Campaign, vous devez inclure la propriété **acMapping** avec la valeur **mapRecipient** dans le nœud **jcr:content** du modèle. Sinon, vous ne pouvez pas sélectionner le modèle Adobe Campaign dans **Propriétés de la page** d’Experience Manager (le champ est désactivé).
 
 ## Composant du modèle/de la page {#template-page-component}
 

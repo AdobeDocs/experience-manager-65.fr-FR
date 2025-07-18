@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
-ht-degree: 100%
+source-wordcount: '2857'
+ht-degree: 99%
 
 ---
+
 
 # Composants d’Adobe Campaign{#adobe-campaign-components}
 
@@ -265,7 +267,7 @@ Dans l’éditeur statique, vous pouvez ajouter du texte, modifier la justificat
 
 >[!NOTE]
 >
->Seuls les champs définis dans le schéma **nms:seedMember** ou l’une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
+>Seuls les champs définis dans le schéma **nms:seedMember** ou une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
 
 ## Composants Formulaire d’Adobe Campaign {#adobe-campaign-form-components}
 
