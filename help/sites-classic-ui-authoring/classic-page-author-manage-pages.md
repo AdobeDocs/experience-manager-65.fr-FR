@@ -106,7 +106,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 | Titre | Nom dérivé |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Nom {#name}
 
