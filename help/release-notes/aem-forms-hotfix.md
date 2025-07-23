@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -33,20 +33,20 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td>Correctif SP23 -</td>
     <td>
     <ul>
-    <li><strong>Jboss :</strong></li>
-    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-win-jboss.zip">correctif pour AEM Service Pack 6.5.23.0 sur Windows pour le serveur JBoss JEE</a></li>
-    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-jboss.tar.gz">correctif pour AEM Service Pack 6.5.23.0 sur Linux pour le serveur JBoss JEE</a></li>
-    <li><strong>Weblogic :</strong></li>
-    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-win-weblogic.zip">correctif pour AEM Service Pack 6.5.23.0 sur Windows pour le serveur Weblogic JEE</a></li>
-    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-weblogic.tar.gz">correctif pour AEM Service Pack 6.5.23.0 sur Linux pour le serveur Weblogic JEE</a></li>
-    <li><strong>Websphere :</strong></li>
-    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-win-websphere.zip">correctif pour AEM Service Pack 6.5.23.0 sur Windows pour le serveur WebSphere JEE</a></li>
-    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-websphere.tar.gz">correctif pour AEM Service Pack 6.5.23.0 sur Linux pour le serveur WebSphere JEE</a></li>
+    <li><strong>Jboss :</strong></li>
+    <li>Windows - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-win-jboss.zip">Correctif pour le pack de services AEM 6.5.23.0 sur Windows pour le serveur JBoss JEE</a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/jboss/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-jboss.tar.gz">Correctif pour le pack de services AEM 6.5.23.0 sur Linux pour le serveur JBoss JEE</a></li>
+    <li><strong>Weblogic :</strong></li>
+    <li>Windows - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-win-weblogic.zip">Correctif pour le pack de services AEM 6.5.23.0 sur Windows pour le serveur WebLogic JEE</a></li>
+    <li>Linux - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/weblogic/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-weblogic.tar.gz">Correctif pour le pack de services AEM 6.5.23.0 sur Linux pour le serveur WebLogic JEE</a></li>
+    <li><strong>Websphere :</strong></li>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-win-websphere.zip">Correctif pour le pack de services AEM 6.5.23.0 sur Windows pour le serveur Webshpere JEE</a></li>
+    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-2/websphere/adobe-aem-forms-jee-hotfix-6.5.23.0-linux-websphere.tar.gz">Correctif pour le pack de services AEM 6.5.23.0 sur Linux pour le serveur Websphere JEE</a></li>
     </ul>
     </td>
     <td>
     <ul>
-    <li>SP23 Correctif pour AEM Forms sur JEE</li>
+    <li>Correctif SP23 pour AEM Forms sur JEE</li>
     </ul>
     </td>    
   </tr>
