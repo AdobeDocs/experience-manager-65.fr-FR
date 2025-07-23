@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 | Titre | Nom dérivé |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nom {#name}
 
@@ -266,7 +266,7 @@ Pour déplacer ou renommer une page :
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   La page répertorie également toutes les pages qui font directement ou indirectement référence à la page déplacée. Selon le statut de la page de référence, vous pouvez ajuster ces liens sur les pages et/ou republier les pages.
+   La page répertorie également toutes les pages qui font référence, directement ou indirectement, à la page en cours de déplacement. Selon le statut de la page de référence, vous pouvez ajuster ces liens sur les pages et/ou republier les pages.
 
 1. Renseignez les champs suivants, le cas échéant :
 
