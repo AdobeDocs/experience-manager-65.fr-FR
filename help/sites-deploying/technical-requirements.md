@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: ee6299819a027ef86a69ddbb5e56cf38e3436b6e
-workflow-type: ht
-source-wordcount: '3700'
+source-git-commit: fd54e28f5d774ca7ef42f2c81a7b57e125fdb1be
+workflow-type: tm+mt
+source-wordcount: '3706'
 ht-degree: 100%
 
 ---
@@ -120,6 +120,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
 | Stockage d’objets blob Microsoft® Azure. | Binaires | A : pris en charge |
+| MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4]` |
