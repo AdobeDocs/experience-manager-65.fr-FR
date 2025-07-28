@@ -30,7 +30,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td><strong>Problèmes résolus</strong></td>
   </tr>
   <tr>
-    <td>Correctif SP23 -</td>
+    <td>Correctif SP23-</td>
     <td>
     <ul>
     <li><strong>Jboss :</strong></li>
