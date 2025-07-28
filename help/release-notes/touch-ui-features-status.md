@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
 | Voir Copies de langue | Complète |  |
 | Rechercher et remplacer | Absente | Utiliser l’IU classique. |
 | Boîte de réception des notifications (événements JCR) | Absente | Utiliser l’IU classique. Remplacée par une autre implémentation à venir. |
-| Références | Complète | Affichage des liens de page entrants ajoutés à AEM 6.5. Seuls les liens directs vers la page s’affichent pour des raisons de performances. |
+| Références | Complète | Affichez les liens de page entrants ajoutés à AEM 6.5. Pour des raisons de performances, seuls les liens directs vers la page s’affichent. |
 
 ## Statut des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
