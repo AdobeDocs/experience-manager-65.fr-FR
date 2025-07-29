@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7528'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1513,7 +1513,7 @@ ht-degree: 99%
          + Services cloud{#extending-cloud-services}
             + [Configurations du service cloud](/help/sites-developing/extending-cloud-config.md)
             + [Création d’un service cloud personnalisé](/help/sites-developing/extending-cloud-config-custom-cloud.md)
-         + [Extensions Adobe Campaign personnalisées](/help/sites-developing/extending-campaign-extensions.md)
+         + [Extensions Adobe Campaign personnalisées](/help/sites-developing/extending-campaign-extensions.md)
          + Formulaires{#extending-forms}
             + [Création de mappages de formulaires personnalisés](/help/sites-developing/extending-campaign-form-mapping.md)
             + [Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign](/help/sites-developing/extending-campaign-custom-template.md)

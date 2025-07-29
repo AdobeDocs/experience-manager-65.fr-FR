@@ -12,9 +12,9 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 index: false
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -267,7 +267,7 @@ Dans l’éditeur statique, vous pouvez ajouter du texte, modifier la justificat
 
 >[!NOTE]
 >
->Seuls les champs définis dans le schéma **nms:seedMember** ou une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
+>Seuls les champs définis dans le schéma **nms:seedMember** ou l’une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
 
 ## Composants Formulaire d’Adobe Campaign {#adobe-campaign-form-components}
 
