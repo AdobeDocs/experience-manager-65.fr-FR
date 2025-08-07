@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6684'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -73,15 +73,15 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * [Composant de pièce jointe renforcé](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment) : par mesure de sécurité, le composant empêche désormais l’envoi de fichiers avec des extensions modifiées qui tentent de contourner les vérifications des types de fichier autorisés. Ces fichiers sont bloqués lors de la soumission afin de garantir que seuls des types de fichiers valides sont acceptés.
 
-* FORMS-20533, FORMS-20532 : AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez [télécharger et installer](/help/release-notes/aem-forms-hotfix.md) pour ajouter la prise en charge de la dernière version de Struts.
+* FORMS-20533, FORMS-20532 : AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez [télécharger et installer](/help/release-notes/aem-forms-hotfix.md) pour ajouter la prise en charge de la dernière version de Struts.
 
-* **LC-3922769** : certaines fonctionnalités d’AEM Forms nécessitent désormais OpenSSL 3 pour fonctionner correctement. OpenSSL 3 doit être installé sur le système avec les bibliothèques `libcrypto.so.3` et `libssl.so.3`. Comme les mises à jour de sécurité ne sont disponibles que dans les versions avec OpenSSL 3.0.14 et que la prise en charge de SafeLogic prend fin en février 2025, nous avons supprimé bsafe et utilisons désormais OpenSSL 3 pour la conformité en matière de sécurité. Pour connaître la compatibilité des plateformes et les exigences détaillées, voir [Plateformes prises en charge par AEM Forms sur JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) et [Exigences techniques](/help/sites-deploying/technical-requirements.md).
+* **LC-3922769** : désormais, certaines fonctionnalités d’AEM Forms nécessitent OpenSSL 3 pour fonctionner correctement. OpenSSL 3 doit être installé sur le système avec les bibliothèques `libcrypto.so.3` et `libssl.so.3`. Comme les mises à jour de sécurité ne sont disponibles que dans les versions avec OpenSSL 3.0.14 et que la prise en charge de SafeLogic prend fin en février 2025, nous avons supprimé bsafe et utilisons désormais OpenSSL 3 pour la conformité en matière de sécurité. Pour connaître la compatibilité des plateformes et les exigences détaillées, voir [Plateformes prises en charge par AEM Forms sur JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) et [Exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-  **Pour vérifier l’installation d’OpenSSL 3, procédez comme suit**
+  **Pour vérifier l’installation d’OpenSSL 3, procédez comme suit :**
 
-   * **Systèmes basés sur RHEL/CentOS/Fedora** : `rpm -qa | grep   openssl3`
-   * **Systèmes basés sur Ubuntu/Debian** : `dpkg -l | grep openssl3`
-   * **Vérification alternative** : `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'` (si les bibliothèques sont dans LD_LIBRARY_PATH)
+   * **Systèmes basés sur RHEL/CentOS/Fedora** : `rpm -qa | grep   openssl3`
+   * **Systèmes basés sur Ubuntu/Debian** : `dpkg -l | grep openssl3`
+   * **Autre vérification** : `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'` (si les bibliothèques sont dans LD_LIBRARY_PATH)
 
 
 
@@ -229,11 +229,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher dans Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources ]**, accédé au dossier**[!UICONTROL  Rechercher dans Adobe Stock ]**et sélectionné une image système :
    * Il était impossible d’obtenir la licence de l’image Stock sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Accorder sous licence et enregistrer]** affichait une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un élément `/` dans la page de navigation [!DNL AEM] On-Premise (6.5.22.0). (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Problèmes d’intégration à [!DNL InDesign], car le service `Day CQ DAM Mime Type OSGI` identifie incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * Fuite de session [!DNL AEM 6.5.21] identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante]** s’affichent dans [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, par exemple **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -694,20 +694,20 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 >
 > N’effectuez pas la mise à niveau vers le Pack de services 6.5.23.0 pour les problèmes ne disposant pas de correctifs, car cela peut entraîner des erreurs inattendues. Effectuez la mise à niveau vers le pack de services 6.5.23.0 uniquement après la publication des correctifs requis.
 
-#### Problèmes liés aux correctifs disponibles {#aem-forms-issues-with-hotfixes}
+#### Problèmes avec des correctifs disponibles {#aem-forms-issues-with-hotfixes}
 
-Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) pour résoudre ces problèmes :
+Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
 
-* **FORMS-20203** : lorsqu’un utilisateur met à niveau le framework Struts de la version 2.5.x vers la version 6.x, l’interface utilisateur Politiques d’AEM Forms ne parvient pas à afficher toutes les configurations, telles que l’option d’ajout d’un filigrane.
+* **FORMS-20203** : Lorsqu’un utilisateur ou une utilisatrice met à niveau le framework Struts de la version 2.5.x à la version 6.x, l’UI des politiques dans AEM Forms n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane.
 
-* **FORMS-20360** : après la mise à niveau vers le pack de services AEM Forms 6.5.23.0, le service de conversion ImageToPDF échoue avec l’erreur :
+* **FORMS-20360** : après la mise à niveau vers le pack de services 6.5.23.0 d’AEM Forms, le service de conversion ImageToPDF échoue avec l’erreur :
   ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
 
-* **FORMS-20478** : lors de la tentative de conversion de fichiers TIFF de type 7/8 en PDF, le processus de conversion échoue avec l’erreur « ALC-PDG-001-000-Image2Pdf », causée par : com/sun/image/codec/jpeg/JPEGCodec » et « ALC-PDG-016-003-Une erreur inconnue/inattendue s’est produite lors du post-traitement PDF. » Le système tente d’effectuer une nouvelle tentative à l’aide du décodeur TIFF ImageIO de TM, mais ne parvient pas à terminer le traitement.
+* **FORMS-20478** : lors de la tentative de conversion de fichiers TIFF de type 7/8 en PDF, le processus de conversion échoue avec l’erreur « ALC-PDG-001-000-Échec de la conversion Image2Pdf, en raison de : com/sun/image/codec/jpeg/JPEGCodec » et « ALC-PDG-016-003-Une erreur inconnue/inattendue s’est produite lors du post-traitement PDF. ». Le système tente d’effectuer une nouvelle tentative d’utiliser le décodeur TIFF ImageIO de TM, mais ne parvient pas à terminer le traitement.
 
-* **FORMS-14521** : si un utilisateur tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, il est bloqué à l’état `Loading` pour certaines lettres spécifiques.
+* **FORMS-14521** : si un utilisateur ou une utilisatrice tente de prévisualiser un brouillon de lettre avec des données XML enregistrées, certaines lettres spécifiques restent bloquées à l’état `Loading`.
 
-* AEM Forms comprend désormais une mise à niveau de Struts de la version 2.5.33 vers la version 6.x pour le composant Forms. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez télécharger et installer pour ajouter la prise en charge de la dernière version de Struts.
+* AEM Forms comprend désormais une mise à niveau de Struts, de la version 2.5.33 vers la version 6.x, pour le composant de formulaire. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez télécharger et installer. La dernière version de Struts est alors prise en charge.
 
 #### Autres problèmes connus {#aem-forms-other-known-issues}
 
@@ -731,7 +731,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 * Les modifications apportées au fichier XDP des fragments de mise en page imbriqués dans une communication interactive ne sont pas répercutées dans l’éditeur de communication interactive. (FORMS-16575)
 * Dans l’aperçu avant impression de l’IU de l’agent de communication interactive, certaines valeurs calculées ne s’affichent pas correctement. (FORMS-16603)
 * Lorsque la lettre est affichée dans l’aperçu avant impression, le contenu change. Certains espaces disparaissent et certaines lettres sont remplacées par `x`. (FORMS-15681)
-* **FORMS-15428** : après la mise à jour vers le Service Pack 20 d’AEM Forms (6.5.20.0) avec le module complémentaire Forms, les configurations reposant sur l’ancien service Adobe Analytics Cloud à l’aide de l’authentification basée sur les informations d’identification ne fonctionnent plus. Ce problème empêchait l’exécution correcte des règles d’analyse.
+* **FORMS-15428** : après la mise à jour vers le pack de services 20 (6.5.20.0) d’AEM Forms avec le module complémentaire Forms, les configurations reposant sur l’ancien service Adobe Analytics Cloud à l’aide de l’authentification basée sur les informations d’identification ne fonctionnent plus. Ce problème empêchait les règles d’analyse de s’exécuter correctement.
 
 * Lorsqu’un utilisateur ou une utilisatrice configure une instance WebLogic 14c, le service PDFG dans le pack de services 21 d’AEM Forms sur JEE (6.5.21.0) s’exécutant sur JBoss® échoue en raison de conflits de chargeurs de classes impliquant la bibliothèque SLF4J. L’erreur s’affiche comme suit (CQDOC-22178) :
 
