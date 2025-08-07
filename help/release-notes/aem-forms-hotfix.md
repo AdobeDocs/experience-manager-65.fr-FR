@@ -8,7 +8,7 @@ role: User,Admin,Architect,Developer
 source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 65%
+ht-degree: 74%
 
 ---
 
@@ -106,14 +106,14 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     </td>
     <td>
     <ul>
-    <li><strong>Ce correctif corrige les problèmes suivants :</strong>
+    <li><strong>Ce correctif corrige les problèmes suivants :</strong>
       <ul>
-        <li><strong>FORMS-20533:</strong> AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x pour le composant Forms. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un correctif que vous pouvez télécharger et installer pour ajouter la prise en charge de la dernière version de Struts.</li>
-        <li><strong>FORMS-20532:</strong> AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x pour le composant de sortie. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un correctif que vous pouvez télécharger et installer pour ajouter la prise en charge de la dernière version de Struts.</li>
-        <li><strong>FORMS-20203 :</strong> lorsqu’un utilisateur met à niveau Struts du pack de services AEM 2.5.x vers le pack de services AEM Forms 6.x, l’interface utilisateur des politiques n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane. Vous pouvez télécharger et installer le correctif pour résoudre ce problème.</li>
-        <li><strong>FORMS-20360:</strong> Après la mise à niveau vers le pack de services AEM Forms 6.5.23.0, le service de conversion ImageToPDF échoue avec l’erreur suivante : <br>
+        <li><strong>FORMS-20533 :</strong> AEM Forms comprend désormais une mise à niveau de Struts, de la version 2.5.33 vers la version 6.x, pour le composant de formulaire. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un correctif que vous pouvez télécharger et installer. La dernière version de Struts est alors prise en charge.</li>
+        <li><strong>FORMS-20532 :</strong> AEM Forms comprend désormais une mise à niveau de la version Struts, de 2.5.33 vers 6.x, pour le composant de sortie. Cela permet d’obtenir les modifications apportées à Struts et précédemment manquées qui n’étaient pas incluses dans SP23. La prise en charge a été ajoutée via un correctif que vous pouvez télécharger et installer. La dernière version de Struts est alors prise en charge.</li>
+        <li><strong>FORMS-20203 :</strong> lorsqu’un utilisateur ou une utilisatrice met à niveau Struts du pack de services AEM 2.5.x vers le pack de services AEM Forms 6.x, l’interface d’utilisation des politiques n’affiche pas toutes les configurations, telles que l’option d’ajout d’un filigrane. Pour résoudre ce problème, vous pouvez télécharger et installer le correctif.</li>
+        <li><strong>FORMS-20360 :</strong> après la mise à niveau vers le pack de services 6.5.23.0 d’AEM Forms, le service de conversion ImageToPDF échoue avec l’erreur suivante : <br>
         <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
-        Vous pouvez télécharger et installer le correctif pour résoudre ce problème.</li>
+        Pour résoudre ce problème, vous pouvez télécharger et installer le correctif.</li>
       </ul>
     </li>
     </ul>
