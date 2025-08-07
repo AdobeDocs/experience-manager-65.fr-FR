@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 53%
 
 ---
@@ -253,6 +253,12 @@ Le processus d’installation d’Adobe Acrobat Pro DC pour l’installation de 
 * **Type de déploiement** : utilisateur unique ou utilisateurs multiples
 
 Chaque onglet contient des instructions personnalisées optimisées pour votre configuration spécifique, ce qui vous permet d’éviter les problèmes de configuration et d’assurer une conformité de licence appropriée.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>La vidéo présente le processus d’installation d’une configuration Licence de vente au détail - Utilisateur unique. Pour les autres scénarios de déploiement (vente au détail - utilisateurs multiples, licence en volume - utilisateur unique ou licence en volume - utilisateurs multiples), reportez-vous aux instructions spécifiques de l’étape 9 dans les onglets correspondants ci-dessous pour garantir le démarrage correct du serveur et l’activation de la licence pour votre type de déploiement.
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
 Une fois tous les processus terminés, effectuez un test d’action rapide pour confirmer que l’installation est valide :
 
 1. Utilisez le Bureau à distance (RDP) pour vous connecter au serveur et démarrer le serveur AEM Forms à l’aide des services .
-2. Utilisez le Bureau à distance (RDP) pour vous connecter au serveur et démarrer le serveur AEM Forms à l’aide des services Windows. Une fois le serveur en cours d’exécution, ne fermez pas simplement la fenêtre RDP. Au lieu de cela, déconnectez-vous en déconnectant l’utilisateur, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
+2. Une fois le serveur en cours d’exécution, ne fermez pas simplement la fenêtre RDP. Au lieu de cela, déconnectez-vous en déconnectant l’utilisateur, de sorte que la session se termine correctement pendant que le service continue à s’exécuter en arrière-plan.
 
 ###### Étape 10 : tester le service PDF Generator
 
