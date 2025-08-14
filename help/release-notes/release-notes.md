@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
-workflow-type: ht
-source-wordcount: '6684'
-ht-degree: 100%
+source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
+workflow-type: tm+mt
+source-wordcount: '6707'
+ht-degree: 99%
 
 ---
 
@@ -742,6 +742,8 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
   (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
+
+* FORMS-21378 : lorsque la validation côté serveur (SSV) est activée, les envois de formulaires peuvent échouer. Si vous rencontrez ce problème, contactez l’assistance Adobe pour obtenir de l’aide.
 
 
 
