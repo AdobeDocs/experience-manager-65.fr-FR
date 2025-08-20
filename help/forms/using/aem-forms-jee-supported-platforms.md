@@ -12,7 +12,7 @@ feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 1d16a131bd185145d9ad55d88749535d7a2dd84a
 workflow-type: tm+mt
 source-wordcount: '4039'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,9 +49,9 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 
 #### Packs de services
 
-- **Couverture du pack de services** : Adobe fournit une assistance technique pour les environnements AEM Forms exécutant n’importe quel pack de services publié au cours des 18 derniers mois. Si votre version actuelle ne figure pas dans cet intervalle de 18 mois, Adobe recommande vivement d’effectuer la mise à niveau vers le dernier Service Pack afin de garantir des performances optimales, une sécurité optimale et une prise en charge continue.
+- **Couverture du pack de services** : Adobe fournit une assistance technique pour les environnements AEM Forms exécutant n’importe quel pack de services publié au cours des 18 derniers mois. Si votre version actuelle ne figure pas dans cet intervalle de 18 mois, Adobe recommande vivement d’effectuer la mise à niveau vers le dernier pack de services afin de garantir des performances optimales, une sécurité maximale et une prise en charge continue.
 
-- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
+- **Instructions du programme d’installation de correctifs** : lors de l’utilisation des programmes d’installation de correctifs pour la mise à jour, il est essentiel de vérifier que l’ancienneté de la version du programme d’installation complet sous-jacent ne dépasse pas deux versions. Par exemple, lors de l’installation du pack de services 6.5.19.0, vérifiez que la version du programme d’installation complet sous-jacent est 6.5.18.0 ou 6.5.12.0.
 
 - **Prise en charge des mises à niveau avec des correctifs** : vous pouvez procéder aux mises à niveau vers le dernier Pack de services jusqu’à ce que vous effectuiez également la mise à niveau vers les plateformes prises en charge les plus récentes. Par exemple, la mise à niveau du pack de services 6.5.12.0 vers le version 6.5.19.0 est possible, à condition de passer à une combinaison de plateformes prise en charge dans la version 6.5.19.0.
 
@@ -454,7 +454,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 - Cordova Android™ 6.0.0
 - Cordova Windows 4.4.3
 
-### Considérations relatives à PDF Generator {#software-support-for-pdf-generator}
+### Conditions requises pour PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -468,7 +468,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, de vente au détail et en volume</td>
+   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
@@ -491,7 +491,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 > - PDF Generator ne prend pas en charge Microsoft® Office 365.
 > - Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 > - Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
-> - Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, voir la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+> - Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 > - Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
 
 
@@ -714,7 +714,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -731,7 +731,7 @@ Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en
 
 >[!NOTE]
 >
-> Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance AEM Forms.
+> Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance AEM Forms.
 
 
 <!--
@@ -748,7 +748,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -831,7 +831,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -845,11 +845,11 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
 | Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bits) |  |  |
-| OpenOffice 4.1.15 | Microsoft Office 2019 |  |
-| | Microsoft Publisher 2019 |  |
+| OpenOffice 4.1.15 | Microsoft Office 2019 |  |
+| | Microsoft® Publisher 2019 |  |
 | | WordPerfect 2020 |  |
 | | Microsoft Visio 2019 |  |
-| | Projet Microsoft 2019 |  |
+| | Microsoft Project 2019 |  |
 
 ### Version 6.5.19.1 (15 décembre 2023)
 
