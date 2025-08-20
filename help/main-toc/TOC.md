@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7541'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1212,7 +1212,7 @@ ht-degree: 99%
       + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [Atténuation des vulnérabilités de Log4j2 pour Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
       + [Atténuation de la vulnérabilité d’exécution de code à distance pour AEM Forms sur JEE](/help/forms/using/aem-forms-rce-vulnerability-mitigation-troubleshooting.md)
-      + [Réduire les vulnérabilités d’exécution de code à distance, de configuration et XXE pour AEM Forms sur JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
+      + [Atténuation des vulnérabilités XXE, de configuration et d’exécution de code à distance pour AEM Forms sur JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)

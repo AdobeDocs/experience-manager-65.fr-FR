@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3539'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Pour tout problème lié à la plateforme, contactez le fournisseur de la platef
 >
 >Selon la plateforme sur laquelle vous installez AEM, il peut y avoir différents ensembles d’exigences pour la gestion des utilisateurs et des utilisatrices.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Configuration minimale requise pour installer Adobe Experience Manager :
 
@@ -461,7 +461,7 @@ Pour Windows x86 :
 * 10.9.x et versions ultérieures
 * Pris en charge uniquement à des fins d’évaluation et de démonstration
 
-### Considérations relatives à PDF Generator {#software-support-for-pdf-generator}
+### Conditions requises pour PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -475,12 +475,12 @@ Pour Windows x86 :
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, de vente au détail et en volume</td>
+   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
 
@@ -498,7 +498,7 @@ Pour Windows x86 :
 >* PDF Generator ne prend pas en charge Microsoft® Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, voir la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. La version groupée ne doit être accessible par programmation qu’avec AEM Forms, pendant la durée de la licence AEM Forms, pour une utilisation avec AEM Forms PDF Generator uniquement. Pour plus d’informations, consultez la description du produit AEM Forms correspondant à votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
