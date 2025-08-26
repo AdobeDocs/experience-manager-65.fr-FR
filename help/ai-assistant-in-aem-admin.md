@@ -4,7 +4,8 @@ description: Découvrez comment installer et configurer l’assistant AI à l’
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 38a79bc0dd5e78a49647b123fcdd0f0bacf94f21
+exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
+source-git-commit: c89b0dc7c544e3b81ea05bf078f33e9ab7f40880
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-Pour utiliser l’assistant d’IA dans AEM (Adobe Experience Manager), votre entreprise doit s’inscrire au niveau d’Admin Console. Un administrateur de produit crée (ou choisit) un groupe d’utilisateurs et lui accorde la nouvelle autorisation « Assistant IA ». Toute personne ajoutée à ce groupe accède instantanément à l’Assistant IA à travers AEM. Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur affecte simplement tous les utilisateurs à ce groupe.
+Pour utiliser l’assistant d’IA dans AEM (Adobe Experience Manager), votre entreprise doit s’inscrire au niveau d’Admin Console. Un administrateur de produit crée (ou choisit) un groupe d’utilisateurs et lui accorde la nouvelle autorisation « Assistant IA ». Toute personne ajoutée à ce groupe accède instantanément à l’assistant AI dans AEM. Si l’objectif est la disponibilité à l’échelle de l’entreprise, l’administrateur affecte simplement tous les utilisateurs à ce groupe.
 
 Du point de vue de l’employé, le processus est simple : identifiez l’administrateur ou l’administratrice de produit pour Adobe Experience Manager dans votre entreprise et demandez à être ajouté au groupe d’utilisateurs et d’utilisatrices compatible avec l’IA. Une fois que vous apparaissez dans ce groupe, l&#39;icône Assistant s&#39;affiche automatiquement la prochaine fois que vous vous connectez.
 
@@ -33,14 +34,14 @@ Le processus de configuration de l’assistant AI dans AEM comprend les étapes 
 
 **Conditions préalables**
 
-Avant de commencer, assurez-vous que les conditions préalables suivantes sont remplies :
+Avant de commencer, assurez-vous d’avoir satisfait aux conditions préalables suivantes :
 
-* Vous devez au minimum disposer de droits d’administrateur de produit sur le Adobe Admin Console.
-* Vous connaissez la structure de gestion des utilisateurs de votre entreprise.
+* Vous devez disposer au minimum des droits d’administrateur de produit dans Adobe Admin Console.
+* Vous avez une compréhension de la structure de gestion des utilisateurs de votre entreprise.
 
 **Considérations relatives à la configuration**
 
-* Temps de traitement : les ressources créées dans Cloud Manager peuvent prendre jusqu’à 2 minutes pour s’afficher dans l’Admin Console pour la configuration des autorisations.
+* Temps de traitement : l’affichage des ressources créées dans Cloud Manager peut prendre jusqu’à 2 minutes dans Admin Console pour la configuration des autorisations.
 * Profils multiples : les utilisateurs peuvent faire partie de plusieurs profils et les autorisations sont combinées à partir de tous les profils attribués.
 * Portée de l’organisation : certaines autorisations peuvent s’appliquer au niveau de l’organisation dans tous les programmes.
 * Profils prédéfinis : ne supprimez pas les profils d’autorisation prédéfinis d’Admin Console.
@@ -48,9 +49,9 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont r
 
 ## 1 - Création d’un profil de produit dans Adobe Admin Console{#create-profile}
 
-1. Suivez les instructions détaillées de la section [Création d’un profil de produit dans Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/create-profile) disponible dans la documentation d’Experience Platform.
+1. Suivez les instructions détaillées de la section [Création d’un profil de produit dans Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) disponible dans la documentation d’Experience Platform.
 
-1. Lors de la création du nouveau profil de produit, vous pouvez utiliser les valeurs suggérées suivantes pour AI Assistant.
+1. Lors de la création du profil de produit, vous pouvez utiliser les valeurs suggérées suivantes pour l’assistant AI.
 
    | Champ de texte | Valeur suggérée |
    | --- | --- |
@@ -64,19 +65,19 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont r
 
 Le processus d’attribution d’autorisations personnalisées aux profils de produit suit le processus standard des autorisations personnalisées d’Adobe Cloud Manager .
 
-Article de référence : [Attribuer des autorisations personnalisées au nouveau profil de produit](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Article de référence : [Attribuer des autorisations personnalisées au nouveau profil de produit](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
-1. Dans le Admin Console, cliquez sur le nom du profil de produit nouvellement créé (`AI Assistant in AEM`)
+1. Dans Admin Console, cliquez sur le nom de votre profil de produit nouvellement créé (`AI Assistant in AEM`)
 
    ![Capture d’écran](/help/assets/assets-ai/ai-assistant-console.png)
 
-1. Pour afficher la liste des autorisations modifiables, cliquez sur l’onglet **Permissions** .
+1. Pour afficher la liste des autorisations modifiables, cliquez sur l’onglet **Autorisations**.
 
-1. Dans la liste du tableau, recherchez l’autorisation `AI Assistant Product Knowledge` .
+1. Dans la liste des tableaux, recherchez l’autorisation `AI Assistant Product Knowledge`.
 
-   ![Onglet Autorisations de l’Assistant IA dans Admin Console](/help/assets/assets-ai/ai-assistant-permission.png)
+   ![Onglet Autorisations de l’assistant AI dans Admin Console](/help/assets/assets-ai/ai-assistant-permission.png)
 
-1. À droite du nom de l’autorisation, cliquez sur Icône en forme de crayon ou sur ![l’icône](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) Modifier.
+1. À droite du nom de l’autorisation, cliquez sur ![icône Crayon ou icône Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 
 1. Sur la page **Modifier les autorisations pour l’assistant AI**, activez le bouton (bascule) **Connaissance des produits de l’assistant AI**.
 
@@ -103,7 +104,7 @@ Article de référence : [Attribuer des autorisations personnalisées au nouveau
 
    ![Bouton Nouveau groupe d’utilisateurs sur la page Groupes d’utilisateurs](/help/assets/assets-ai/ai-assistant-new-user-group.png)
 
-1. Dans la **page Créer un groupe** d’utilisateurs, indiquez les informations suivantes :
+1. Sur la page **Créer un groupe d’utilisateurs** fournissez les informations suivantes :
 
    | Option | Valeur suggérée |
    | --- | --- |
@@ -145,11 +146,11 @@ Vous pouvez utiliser un groupe d’utilisateurs AEM existant s’il répond aux 
 
 >[!TAB Ajout d’utilisateurs en bloc]
 
-Vous pouvez utiliser la fonction de transfert en vrac dans l’Admin Console.
+Vous pouvez utiliser la fonction de chargement en bloc dans Admin Console.
 
-1. Préparez un fichier CSV avec les informations de l’utilisateur.
-1. Utilisez l’option pour des ajouts **`Add users by CSV`** en bloc efficaces.
-1. [Attribuez maintenant le profil de produit au groupe](#assign-product-profile) d’utilisateurs.
+1. Préparez un fichier CSV contenant des informations sur l’utilisateur.
+1. Utilisez l’option **`Add users by CSV`** pour un ajout en bloc efficace.
+1. Affectez maintenant [ profil de produit au groupe d’utilisateurs](#assign-product-profile).
 
 >[!ENDTABS]
 
@@ -178,13 +179,13 @@ Article de référence : [gestion des profils de produit pour les utilisateurs d
 ## Vérification de la configuration
 
 * Vérifiez que votre profil de produit affiche le nombre correct de groupes d’utilisateurs affectés.
-* Vérifiez que le groupe d’utilisateurs présente le nombre correct d’utilisateurs.
-* Vérifiez que l’autorisation AI Assistant Product Knowledge est activée et correctement configurée.
+* Vérifiez que le groupe d’utilisateurs indique le nombre correct d’utilisateurs.
+* Vérifiez que l’autorisation Connaissance des produits de l’assistant AI est activée et correctement configurée.
 
 
-## Tester le paramétrage
+## Tester la configuration
 
-Demandez à un utilisateur du groupe assigné de faire ce qui suit :
+Demandez à un utilisateur du groupe affecté d’effectuer les opérations suivantes :
 
 1. Connectez-vous à AEM.
 2. Vérifiez que les fonctionnalités de l’assistant AI sont accessibles.
@@ -193,5 +194,5 @@ Demandez à un utilisateur du groupe assigné de faire ce qui suit :
 ## Voir également
 
 * [Assistant AI dans AEM](/help/ai-assistant-in-aem.md)
-* [Contrôle d’accès Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/overview)
+* [Contrôle d’accès Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->
