@@ -40,7 +40,7 @@ Pour accorder aux utilisateurs l’accès à l’assistant AI dans AEM, votre ad
 * **Accès à l’assistant AI** - Autorisation d’utiliser l’assistant AI dans AEM pour acquérir des connaissances sur les produits, ce qui permet aux utilisateurs de poser des questions relatives aux produits dans la conversation de l’assistant AI. Cette autorisation doit être activée.
 * **Accès à l’assistance** - Les utilisateurs doivent également être autorisés à ouvrir des tickets d’assistance, ce qui nécessite le rôle **Administrateur de l’assistance**.
 
-Les requêtes des assistants d’IA dans AEM sont authentifiées via les services Adobe Identity Management (IMS). Pour plus d’informations, consultez la présentation des services Adobe Identity Management [](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+Les requêtes des assistants d’IA dans AEM sont authentifiées via les services Adobe Identity Management (IMS). Pour plus d’informations, consultez la présentation des services Adobe Identity Management [&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Pour accéder à l’assistant AI dans AEM, procédez comme suit**
 
@@ -89,7 +89,7 @@ La connaissance des produits englobe les concepts et les sujets dérivés de la 
 | Apprentissage par points | <ul><li>Qu’est-ce que l’éditeur universel ?</li><li>Comment créer un programme dans Cloud Manager ?</li></ul> |
 | Ouvrir la découverte | <ul><li>Comment utiliser l’éditeur universel ?</li><li>Existe-t-il un moyen de copier du contenu d’un environnement à un autre ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi ne puis-je pas accéder à l’éditeur universel ?</li><li>Pourquoi mon pipeline échoue-t-il ?</li></ul> |
-| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs **<br>**exemples** |
+| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs &#x200B;**<br>**exemples** |
 | Création automatisée de tickets d’assistance capturant l’historique et le contexte de la conversation de l’assistant AI | <ul><li>Créez un ticket d’assistance pour moi.</li></ul> |
 | Récupération du statut du ticket d’assistance | <ul><li>Montrez-moi tous les tickets d&#39;assistance que j&#39;ai ouverts.</li><li>Me montrer le statut du ticket « E----------- »</li></ul> |
 
