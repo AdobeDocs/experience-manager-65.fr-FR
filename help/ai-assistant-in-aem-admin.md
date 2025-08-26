@@ -48,7 +48,7 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont r
 
 ## 1 - Création d’un profil de produit dans Adobe Admin Console{#create-profile}
 
-1. Suivez les instructions détaillées de la section [Création d’un profil de produit dans Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) disponible dans la documentation d’Experience Platform.
+1. Suivez les instructions détaillées de la section [Création d’un profil de produit dans Adobe Admin Console](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/create-profile) disponible dans la documentation d’Experience Platform.
 
 1. Lors de la création du nouveau profil de produit, vous pouvez utiliser les valeurs suggérées suivantes pour AI Assistant.
 
@@ -64,7 +64,7 @@ Avant de commencer, assurez-vous que les conditions préalables suivantes sont r
 
 Le processus d’attribution d’autorisations personnalisées aux profils de produit suit le processus standard des autorisations personnalisées d’Adobe Cloud Manager .
 
-Article de référence : [Attribuer des autorisations personnalisées au nouveau profil de produit](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+Article de référence : [Attribuer des autorisations personnalisées au nouveau profil de produit](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. Dans le Admin Console, cliquez sur le nom du profil de produit nouvellement créé (`AI Assistant in AEM`)
 
@@ -193,5 +193,5 @@ Demandez à un utilisateur du groupe assigné de faire ce qui suit :
 ## Voir également
 
 * [Assistant AI dans AEM](/help/ai-assistant-in-aem.md)
-* [Contrôle d’accès Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
+* [Contrôle d’accès Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->
