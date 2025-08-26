@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: ht
-source-wordcount: '7541'
-ht-degree: 100%
+source-git-commit: a3284ca1e51eb92d04e86129bc5dd24c6fc03d8a
+workflow-type: tm+mt
+source-wordcount: '7556'
+ht-degree: 99%
 
 ---
 
@@ -1307,6 +1307,9 @@ ht-degree: 100%
       + [Traduction du contenu](/help/journey-headless/translation/translate-content.md)
       + [Publication du contenu traduit](/help/journey-headless/translation/publish-content.md)
    + [Qu’est-ce qu’un parcours de documentation ?](/help/journey-documentation/home.md)
++ Assistant AI dans AEM 6.5 {#ai-assistant}
+   + [Configuration de l’assistant AI dans AEM](/help/ai-assistant-in-aem-admin.md)
+   + [À propos de l’assistant AI dans AEM](/help/ai-assistant-in-aem.md)
 + Implémentation {#implementing}
    + Développement {#developing}
       + Présentation pour l’équipe de développement {#introduction}
