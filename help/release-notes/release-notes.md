@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6710'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Voici quelques-unes des fonctionnalités et améliorations clés de cette versio
 
 * FORMS-20533, FORMS-20532 : AEM Forms comprend désormais une mise à niveau de la version Struts de 2.5.33 vers 6.x. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez [télécharger et installer](/help/release-notes/aem-forms-hotfix.md) pour ajouter la prise en charge de la dernière version de Struts.
 
-* **LC-3922769** : désormais, certaines fonctionnalités d’AEM Forms nécessitent OpenSSL 3 pour fonctionner correctement. OpenSSL 3 doit être installé sur le système, ainsi que les bibliothèques `libcrypto.so.3` et `libssl.so.3`. Étant donné que les mises à jour de sécurité ne sont disponibles que dans les versions 3.0.14 et ultérieures et que la prise en charge de SafeLogic prend fin en février 2025, BSAFE a été supprimé et OpenSSL 3 est désormais utilisé pour la conformité en matière de sécurité.  Pour connaître la compatibilité des plateformes et les exigences détaillées, voir [Plateformes prises en charge par AEM Forms sur JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) et [Exigences techniques](/help/sites-deploying/technical-requirements.md).
+* **LC-3922769** : désormais, certaines fonctionnalités d’AEM Forms nécessitent OpenSSL 3 pour fonctionner correctement. OpenSSL 3 doit être installé sur le système avec les bibliothèques `libcrypto.so.3` et `libssl.so.3`. Étant donné que les mises à jour de sécurité ne sont disponibles que dans les versions 3.0.14 et ultérieures et que la prise en charge de SafeLogic prend fin en février 2025, BSAFE a été supprimé et OpenSSL 3 est désormais utilisé pour la conformité en matière de sécurité.  Pour connaître la compatibilité des plateformes et les exigences détaillées, voir [Plateformes prises en charge par AEM Forms sur JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) et [Exigences techniques](/help/sites-deploying/technical-requirements.md).
 
 
   **Pour vérifier l’installation d’OpenSSL 3, procédez comme suit :**
@@ -230,11 +230,11 @@ Correction de balises `<br>` inattendues dans l’éditeur de texte enrichi avec
 
 ### [!DNL Assets]{#assets-6523}
 
-* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources &#x200B;]**, accédé au dossier&#x200B;**[!UICONTROL &#x200B; Rechercher dans Adobe Stock &#x200B;]**&#x200B;et sélectionné une image système :
+* Les problèmes suivants se produisent sur la page de navigation [!DNL AEM] On-Premise (6.5.22.0) après avoir sélectionné ![Ressources](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Ressources ]**, accédé au dossier**[!UICONTROL  Rechercher dans Adobe Stock ]**et sélectionné une image système :
    * Il était impossible d’obtenir la licence de l’image Stock sélectionnée et de l’enregistrer, car cliquer sur **[!UICONTROL Accorder sous licence et enregistrer]** affichait une liste déroulante vide.
    * La sélection de l’image Stock ou la saisie de l’URL de la page Stock redirige vers la page d’accueil [!DNL AEM], empêchant l’accès à l’image Adobe Stock. (ASSETS-48687)
 * Problèmes lors de la gestion des dossiers si le nom du dossier contient un élément `/` dans la page de navigation [!DNL AEM] On-Premise (6.5.22.0). (ASSETS-46740)
-* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections &#x200B;]**&#x200B;en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
+* Sur [!DNL AEM] 6.5, la page des détails de la ressource ne se charge pas depuis la vue ![Collection](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Collections ]**en raison d’une utilisation élevée de la mémoire. (ASSETS-46738)
 * Problèmes d’intégration à [!DNL InDesign], car le service `Day CQ DAM Mime Type OSGI` identifie incorrectement les fichiers [!DNL InDesign] comme `x-adobe-indesign` au lieu de `x-indesign`. (ASSETS-45953)
 * Fuite de session [!DNL AEM 6.5.21] identifiée à l’étape de workflow prête à l’emploi **[!UICONTROL Publication planifiée sur Brand Portal]**. (ASSETS-44104)
 * Les erreurs **[!UICONTROL Mémoire insuffisante]** s’affichent dans [!DNL AEM] lors du traitement et de la publication des images. Ce problème était dû à des méthodes obsolètes dans les workflows, par exemple **[!DNL Dam Asset update]** et **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
