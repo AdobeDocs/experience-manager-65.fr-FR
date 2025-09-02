@@ -107,8 +107,8 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >[!NOTE]
 >
 >Pour aider les clients d’AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
->><br>
->>Avec la version 6.5, les composants d’infrastructure les moins utilisés par nos clientes et clients Adobe ne sont plus pris en charge :
+>&#x200B;><br>
+>&#x200B;>Avec la version 6.5, les composants d’infrastructure les moins utilisés par nos clientes et clients Adobe ne sont plus pris en charge :
 >
 > - Base de données IBM® DB2®
 > - Systèmes d’exploitation IBM® AIX® et Sun Solaris™
