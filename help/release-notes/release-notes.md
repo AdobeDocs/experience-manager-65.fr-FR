@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
-workflow-type: ht
-source-wordcount: '6710'
-ht-degree: 100%
+source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
+workflow-type: tm+mt
+source-wordcount: '6713'
+ht-degree: 99%
 
 ---
 
@@ -26,10 +26,13 @@ ht-degree: 100%
 
 | Produit | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version | 6.5.23.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Version | 6.5.23.0, correctif pour GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | Jeudi 22 mai 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | 9 septembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+
+<!-- OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.23.0 {#what-is-included-in-aem-6523}
 
