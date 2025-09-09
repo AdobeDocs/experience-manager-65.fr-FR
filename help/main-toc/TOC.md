@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7561'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 99%
    + [Prise en charge des cookies Same Site](/help/sites-administering/same-site-cookie-support.md)
    + [Obsolescence des informations d’identification JWT dans Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configurer des intégrations IMS pour AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
-+ Experience Hub {#experience-hub}
++ Experience Hub {#experience-hub}
    + [À propos d’Experience Hub](/help/experience-hub.md)
 + Sites {#sites}
    + Création {#authoring}
@@ -633,7 +633,7 @@ ht-degree: 99%
       + [Créer ou ajouter un formulaire adaptatif à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + [Fragments de formulaire adaptatif](/help/forms/using/adaptive-form-fragments.md)
       + [Configuration de l’action d’envoi](/help/forms/using/configuring-submit-actions.md)
-      + [Utilisation de CAPTCHA dans les formulaires adaptifs](/help/forms/using/captcha-adaptive-forms.md)
+      + [Utiliser CAPTCHA dans des formulaires adaptifs](/help/forms/using/captcha-adaptive-forms.md)
       + [Utilisation de hCaptcha dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
       + [Utilisation de Captcha Turnstile dans les formulaires adaptatifs](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Mots-clés de formulaires adaptatifs](/help/forms/using/adaptive-forms-keywords.md)
@@ -1309,9 +1309,9 @@ ht-degree: 99%
       + [Traduction du contenu](/help/journey-headless/translation/translate-content.md)
       + [Publication du contenu traduit](/help/journey-headless/translation/publish-content.md)
    + [Qu’est-ce qu’un parcours de documentation ?](/help/journey-documentation/home.md)
-+ Assistant AI dans AEM 6.5{#ai-assistant}
-   + [Configuration de l’assistant AI dans AEM](/help/ai-assistant-in-aem-admin.md)
-   + [À propos de l’assistant AI dans AEM](/help/ai-assistant-in-aem.md)
++ Assistant IA dans AEM 6.5{#ai-assistant}
+   + [Configuration de l’assistant IA dans AEM](/help/ai-assistant-in-aem-admin.md)
+   + [À propos de l’assistant IA dans AEM](/help/ai-assistant-in-aem.md)
 + Implémentation {#implementing}
    + Développement {#developing}
       + Présentation pour l’équipe de développement {#introduction}

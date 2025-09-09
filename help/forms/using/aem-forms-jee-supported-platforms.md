@@ -10,9 +10,9 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 source-git-commit: 71a6a9739800c2e2bd9f8b97e3ec2b0245d6e1cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3819'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,8 +107,8 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >[!NOTE]
 >
 >Pour aider les clients d’AEM Forms à réduire le coût de possession, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plateforme d’entreprise Adobe Experience Manager délaisse les déploiements sur serveur d’applications au profit de déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
->&#x200B;><br>
->&#x200B;>Avec la version 6.5, les composants d’infrastructure les moins utilisés par nos clientes et clients Adobe ne sont plus pris en charge :
+>><br>
+>>Avec la version 6.5, les composants d’infrastructure les moins utilisés par nos clientes et clients Adobe ne sont plus pris en charge :
 >
 > - Base de données IBM® DB2®
 > - Systèmes d’exploitation IBM® AIX® et Sun Solaris™
@@ -238,8 +238,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
 
 - IBM® DB2® n’est pas pris en charge pour les nouvelles installations. Il n’est pris en charge que pour les clients et clientes existants qui effectuent une mise à niveau vers AEM Forms 6.5.
 - MongoDB est un logiciel tiers non inclus dans le package de licence d’AEM. Pour plus d’informations, voir la [Politique de licence de MongoDB](https://www.mongodb.org/about/licensing/).
-- Pour tirer le meilleur parti de votre déploiement AEM, Adobe recommande d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle.
-@@ -242,187 +206,150 @@ Adobe Experience Manager Forms nécessite une machine virtuelle Java™ pour fonctionner, wh
+- Pour tirer pleinement parti de votre déploiement AEM, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle.
+@@ -242,187 +206,150 @@ Adobe Experience Manager Forms nécessite une machine virtuelle Java™ pour fonctionner,
 - Le module Document Security n’utilise pas le référentiel de contenu. Cela signifie que si vous utilisez uniquement Document Security et que vous ne prévoyez pas d’utiliser HTML Workspace, HTML5 Forms ou des formulaires adaptatifs, n’installez pas le référentiel de contenu.
 - AEM Forms on JEE ne prend pas en charge l’utilisation de MySQL pour la conservation du référentiel AEM (référentiel CRX).
 
@@ -426,7 +426,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend pas en charge JBoss® sur SUSE® Linux® Enterprise Server 12. Seul IBM® WebSphere® est pris en charge sur SUSE® Linux® Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
-1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
+1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 @@ -432,12 +359,12 @@ Tenez compte des exceptions suivantes lorsque vous choisissez une plateforme pour configurer votre AEM F
 1. Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic. (FORMS-8498)
 1. JDK 11.0.20 n’est pas pris en charge pour installer le programme d’installation AEM Forms on JEE. Seules la version JDK 11.0.19 ou les versions antérieures sont prises en charge pour installer le programme d’installation AEM Forms on JEE.
@@ -439,7 +439,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 - AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers conformément à la [ Politique de prise en charge des logiciels tiers ](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
+- AEM Forms on JEE prend en charge divers logiciels tiers, conformément à la [Politique de prise en charge des logiciels tiers](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
 @@ -449,274 +376,219 @@ En outre, tenez compte des points suivants lors du choix du logiciel pour Adobe AEM
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
@@ -705,9 +705,9 @@ Pour des conditions requises supplémentaires, voir :
 
 
 - Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
-- Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
-- 1 Go de RAM pour un système d’exploitation 32 bits ou 2 Go de RAM pour un système d’exploitation 64 bits
-@@ -729,49 +601,45 @@ Pour plus d’informations, voir :
+- Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+- 1 Go de RAM pour un système d’exploitation 32 bits ou 2 Go de RAM pour un système d’exploitation 64 bits
+@@ -729,49 +601,45 @@ Pour plus d’informations, voir :
 - Droits d’administration pour l’installation de Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
@@ -758,7 +758,7 @@ Pour des conditions requises supplémentaires, voir :
 >
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
->- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
+>- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
 >- Le portail Formulaires prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
 
 #### Clients mobiles {#mobile-clients}
@@ -825,7 +825,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -855,7 +855,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -926,7 +926,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -959,7 +959,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | SUSE® Linux® Enterprise Server 15 SP6 (64-bit) | |  |
 
-### Version 6.5.21.0 (vendredi 13 juin 2024)
+### Version 6.5.21.0 (13 juin 2024)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
 | -------------- | --------------- | ------------------- |
