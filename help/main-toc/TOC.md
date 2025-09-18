@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
-workflow-type: ht
-source-wordcount: '7561'
-ht-degree: 100%
+source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
+workflow-type: tm+mt
+source-wordcount: '7562'
+ht-degree: 99%
 
 ---
 
@@ -266,7 +266,7 @@ ht-degree: 100%
          + [Traitement des demandes RGPD pour AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=fr)
          + [AEM Commerce – Préparation pour le RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestion de contenu {#contentmanagement}
-         + [Gestionnaire de packages](/help/sites-administering/package-manager.md)
+         + [Gestionnaire de modules](/help/sites-administering/package-manager.md)
          + [Administration des balises](/help/sites-administering/tags.md)
          + [Exportateur de page](/help/sites-administering/page-exporter.md)
          + [Console Balisage de l’interface utilisateur (IU) classique](/help/sites-administering/classic-console.md)
@@ -678,7 +678,7 @@ ht-degree: 100%
       + [Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés](/help/forms/using/rule-editor-access-user-groups.md)
       + [Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
       + [Mise en forme des éléments pour les formulaires adaptatifs](/help/forms/using/styling-constructs-adaptive-forms.md)
-      + [Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+      + [Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [Incorporation d’Adobe Sign à AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Création et gestion de révisions des actifs d’un formulaire](/help/forms/using/create-reviews-forms.md)
       + [Incorporer un formulaire adaptatif ou une communication interactive dans une application dʼune seule page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
@@ -1227,6 +1227,11 @@ ht-degree: 100%
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
    + Glossaire {#aem-forms-glossary}
 +[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
++ L’IA dans AEM {#ai-in-aem}
+   + [Vue d’ensemble](/help/ai-in-aem/overview.md)
+   + Assistant IA {#ai-assistant}
+      + [Configuration de l’assistant IA dans AEM](/help/ai-assistant-in-aem-admin.md)
+      + [À propos de l’assistant IA dans AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
    + [Présentation et vue d’ensemble](/help/commerce/cif/introduction.md)
    + [Modifications notables apportées à AEM Content and Commerce](/help/commerce/cif/changes.md)
@@ -1309,9 +1314,6 @@ ht-degree: 100%
       + [Traduction du contenu](/help/journey-headless/translation/translate-content.md)
       + [Publication du contenu traduit](/help/journey-headless/translation/publish-content.md)
    + [Qu’est-ce qu’un parcours de documentation ?](/help/journey-documentation/home.md)
-+ Assistant IA dans AEM 6.5{#ai-assistant}
-   + [Configuration de l’assistant IA dans AEM](/help/ai-assistant-in-aem-admin.md)
-   + [À propos de l’assistant IA dans AEM](/help/ai-assistant-in-aem.md)
 + Implémentation {#implementing}
    + Développement {#developing}
       + Présentation pour l’équipe de développement {#introduction}
