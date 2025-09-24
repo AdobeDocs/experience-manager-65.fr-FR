@@ -35,7 +35,7 @@ Il est directement incorporé à AEM et accessible à partir de l’interface d�
 
 La vidéo de 3 minutes et 39 secondes qui suit présente une présentation détaillée de l’assistant AI dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470357?learn=on&captions=fre_fr)
 
 ## Accéder à l’assistant AI dans AEM{#get-access}
 
