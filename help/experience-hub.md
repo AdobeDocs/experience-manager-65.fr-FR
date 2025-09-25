@@ -20,7 +20,7 @@ Experience Hub offre un point de départ centralisé pour la gestion du contenu,
 
 Regardez une présentation rapide de l’espace de travail AEM Experience Hub repensé (2 minutes, 39 secondes).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475194/?learn=on&enablevpops&captions=fre_fr)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
