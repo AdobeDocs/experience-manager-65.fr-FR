@@ -6,8 +6,8 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
-workflow-type: ht
+source-git-commit: 6fd6b5182dfb51fa0563c7eb191ba0d0cc85b113
+workflow-type: tm+mt
 source-wordcount: '3539'
 ht-degree: 100%
 
@@ -256,7 +256,7 @@ Adobe propose également l’utilisation d’Adobe Managed Services pour dépl
 
 Dans tous les autres cas de déploiement d’AEM sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe se limite à l’environnement informatique virtuel. Cet environnement virtuel doit être exécuté conformément aux spécifications techniques répertoriées sur cette page. Tout problème signalé relatif à AEM s’exécutant dans l’un de ces environnements cloud doit être reproductible, indépendamment de tout service cloud spécifique à l’environnement de cloud computing. Sauf dans le cas où le service cloud est pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple, le stockage Azure Blob ou AWS S3.
 
-Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou le partenaire cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
+Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également travailler avec des partenaires d’Adobe pour prendre en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture, afin de répondre à vos exigences spécifiques en matière de performances, de charge, d’évolutivité et de sécurité.
 
 ### Plateformes de Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
@@ -408,7 +408,7 @@ Les exigences matérielles suivantes s’appliquent à Linux® et Windows :
 
 Si vous utilisez Dynamic Media sous Linux®, les conditions préalables ci-dessous doivent être remplies :
 
-* Red Hat® Enterprise 7 et versions ultérieures avec les derniers correctifs
+* Red Hat® Enterprise 8 et versions ultérieures avec les derniers correctifs
 * Système d’exploitation 64 bits
 * Permutation désactivée (recommandé)
 * SELinux désactivé (voir la note ci-dessous)
@@ -480,7 +480,7 @@ Pour Windows x86 :
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
 
@@ -504,7 +504,7 @@ Pour Windows x86 :
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
-* Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
+* Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 * Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
