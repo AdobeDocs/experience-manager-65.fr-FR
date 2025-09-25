@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f202069d2fb8cbb942dad06974636592279fe245
+source-git-commit: f7e0cc48dbee90af2440e83ba82316d8237dcbe4
 workflow-type: tm+mt
 source-wordcount: '3534'
 ht-degree: 99%
@@ -244,7 +244,6 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 >* Redistribuable Microsoft® Visual C++ 2012
 >* Microsoft® Visual C++ 2013 redistribuable
 >* Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure) redistribuable
-
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
 
