@@ -34,7 +34,7 @@ Avec un accès administrateur dans [!DNL Adobe Experience Manager], vous pouvez 
 
 Pour installer le connecteur, procédez comme suit :
 
-1. Téléchargez le connecteur à partir du lien [[!DNL Software Distribution] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Téléchargez le connecteur à partir du lien [[!DNL Software Distribution] &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. [Configuration du pare-feu](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=fr).
 1. Sur le Dispatcher, autorisez les en-têtes HTTP nommés `authorization`, `username` et `apikey`. Autorisez les requêtes `GET`, `POST`, et `PUT` à `/bin/workfront-tools`.
 1. Assurez-vous que les chemins d’accès suivants n’existent pas dans le référentiel [!DNL Experience Manager] :
@@ -78,5 +78,5 @@ Experience Manager Assets vous permet de mettre à jour [!DNL Workfront for Ex
 
 Pour mettre à jour [!DNL Workfront for Experience Manager enhanced connector] vers la dernière version :
 
-1. Téléchargez la dernière version du connecteur amélioré à partir du lien [[!DNL Software Distribution] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Téléchargez la dernière version du connecteur amélioré à partir du lien [[!DNL Software Distribution] &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. Installez le package téléchargé à l’aide du [!UICONTROL gestionnaire de modules]. Pour savoir comment installer des packages, consultez la [Documentation du gestionnaire de modules](/help/sites-administering/package-manager.md).
