@@ -7,9 +7,9 @@ user-guide-description: Utilisez la documentation d’Adobe Experience Manager
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
 source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1227,7 +1227,7 @@ ht-degree: 99%
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
    + Glossaire {#aem-forms-glossary}
 +[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
-+ L’IA dans AEM {#ai-in-aem}
++ IA dans AEM {#ai-in-aem}
    + [Vue d’ensemble](/help/ai-in-aem/overview.md)
    + Assistant IA {#ai-assistant}
       + [Configuration de l’assistant IA dans AEM](/help/ai-assistant-in-aem-admin.md)
