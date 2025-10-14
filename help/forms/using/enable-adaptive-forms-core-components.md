@@ -9,10 +9,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: c75cd7a0cbd0c19fd10cc7512bbfa14fae1e4f92
-workflow-type: ht
-source-wordcount: '955'
-ht-degree: 100%
+source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 96%
 
 ---
 
@@ -112,7 +112,7 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
 
       >[!NOTE]
       >
-      >* Si vous configurez une autre topologie, assurez-vous de placer les URL d’envoi, de préremplissage et autres sur la liste autorisée au niveau de la couche du Dispatcher.
+      >* Si vous configurez une autre topologie, assurez-vous que les URL d’envoi, de préremplissage et autres URL requises, ainsi que les sélecteurs nécessaires (par exemple, `/content/forms/*model.json`), sont ajoutés à la liste autorisée au niveau de la couche Dispatcher.
 
    1. Enregistrez et fermez le fichier.
 
@@ -152,11 +152,11 @@ Les [composants principaux](https://experienceleague.adobe.com/docs/experience-m
 ### Quelles sont les fonctionnalités des composants principaux ?
 
 
-Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle vierge de formulaire adaptatif basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
+Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif vierge basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
 * Créer un formulaire adaptatif basé sur des composants principaux.
-* Créer des modèles de formulaires adaptatifs basés sur des composants principaux.
-* Créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux.
+* créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
+* créer des thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur des composants principaux ;
 * Diffuser les représentations JSON des formulaires adaptatifs basés sur les composants principaux à divers canaux tels que les applications mobiles, web et natives, ainsi que les services qui nécessitent une représentation découplée d’un formulaire.
 
 ## Prochaines étapes
