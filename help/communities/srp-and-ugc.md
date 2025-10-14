@@ -96,7 +96,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->Le chemin renvoyé par resourceToACLPath() est *not* adapté pour [ accéder au contenu créé par l’utilisateur ](#utility-method-to-access-acls) lui-même.
+>Le chemin renvoyé par resourceToACLPath() est *not* adapté pour [&#x200B; accéder au contenu créé par l’utilisateur &#x200B;](#utility-method-to-access-acls) lui-même.
 
 ## Emplacements de stockage associés au contenu généré par l’utilisateur {#ugc-related-storage-locations}
 

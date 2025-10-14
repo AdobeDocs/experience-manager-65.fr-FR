@@ -76,7 +76,7 @@ Une fois l’héritage annulé, il est possible de sélectionner l’icône de c
 
 * **Sélecteur de service**
 
-  (*Obligatoire*) Définissez-le sur la valeur de la propriété **`serviceSelector.name`** du [ Service de messagerie AEM Communities ](/help/communities/messaging.md#messaging-operations-service).
+  (*Obligatoire*) Définissez-le sur la valeur de la propriété **`serviceSelector.name`** du [&#x200B; Service de messagerie AEM Communities &#x200B;](/help/communities/messaging.md#messaging-operations-service).
 
 * **Composer la page**
 
@@ -166,7 +166,7 @@ Une fois l’héritage annulé, il est possible de sélectionner l’icône de c
 
 * **Sélecteur de service**
 
-  (*Obligatoire*) Définissez-le sur la valeur de la propriété **`serviceSelector.name`** du [ Service de messagerie AEM Communities ](/help/communities/messaging.md#messaging-operations-service).
+  (*Obligatoire*) Définissez-le sur la valeur de la propriété **`serviceSelector.name`** du [&#x200B; Service de messagerie AEM Communities &#x200B;](/help/communities/messaging.md#messaging-operations-service).
 
 #### Onglet Affichage {#display-tab-1}
 

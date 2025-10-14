@@ -89,7 +89,7 @@ Pour configurer les fonctionnalités Analytics for Communities, il est nécessai
 
 À l’aide du [Gestionnaire de Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=fr) de Adobe Experience Cloud, les suites de rapports Analytics peuvent être configurées de sorte qu’un site de communauté puisse être activé pour fournir des rapports pour les fonctionnalités de communauté.
 
-En se connectant à [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) avec [ nom de société et nom d’utilisateur ](/help/communities/analytics.md#prerequisites), il est possible de configurer une suite de rapports nouvelle ou existante pour que :
+En se connectant à [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) avec [&#x200B; nom de société et nom d’utilisateur &#x200B;](/help/communities/analytics.md#prerequisites), il est possible de configurer une suite de rapports nouvelle ou existante pour que :
 
 * [11 Variables de conversion](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=fr) (eVars)
 
@@ -272,7 +272,7 @@ La création de la structure Analytics ouvre la structure pour la configuration.
 
 ## Configuration de la structure d’AEM Analytics {#aem-analytics-framework-configuration}
 
-L’objectif de la structure est de mapper AEM variables aux variables Analytics (eVars et événements). Les variables Analytics disponibles pour le mappage sont [ définies dans la suite de rapports ](#adobe-analytics-report-suite-for-video-reporting).
+L’objectif de la structure est de mapper AEM variables aux variables Analytics (eVars et événements). Les variables Analytics disponibles pour le mappage sont [&#x200B; définies dans la suite de rapports &#x200B;](#adobe-analytics-report-suite-for-video-reporting).
 
 ![analytics-framework](assets/analytics-framework1.png)
 
@@ -602,7 +602,7 @@ Pour ce faire, suivez les instructions de la section [Répliquer la clé de chif
 
 ### Site de la communauté Publish et service Analytics Cloud {#publish-community-site-and-analytics-cloud-service}
 
-Une fois le service Analytics Cloud activé pour un site de communauté et, si nécessaire, le [ mappage d’Analytics sur AEM variables est ajusté](#mapped-analytics-to-aem-variables), répliquez la configuration sur l’environnement de publication en [(re)publiant le site de communauté](/help/communities/sites-console.md#publishing-the-site).
+Une fois le service Analytics Cloud activé pour un site de communauté et, si nécessaire, le [&#x200B; mappage d’Analytics sur AEM variables est ajusté](#mapped-analytics-to-aem-variables), répliquez la configuration sur l’environnement de publication en [(re)publiant le site de communauté](/help/communities/sites-console.md#publishing-the-site).
 
 ## Obtention de rapports à partir d’Analytics {#obtaining-reports-from-analytics}
 

@@ -93,7 +93,7 @@ Le corps principal du guide affiche :
 
 ### Interactions de création {#author-interactions}
 
-Lorsque vous utilisez le guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations pour les développeurs sont fournies dans la section [ Composants et Notions fondamentales sur les fonctionnalités](essentials.md) de la documentation, tandis que les paramètres de la boîte de dialogue sont décrits dans la section [Composants communautaires](author-communities.md) pour les auteurs.
+Lorsque vous utilisez le guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations pour les développeurs sont fournies dans la section [&#x200B; Composants et Notions fondamentales sur les fonctionnalités](essentials.md) de la documentation, tandis que les paramètres de la boîte de dialogue sont décrits dans la section [Composants communautaires](author-communities.md) pour les auteurs.
 
 Pour le guide des composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés à l’état de bascule [Incluable](scf.md#add-or-include-a-communities-component) . Pour basculer entre l’utilisation de la ressource existante ou d’une ressource incluse dynamiquement, en mode d’édition, sélectionnez le composant et le texte inclusible, puis double-cliquez pour ouvrir la boîte de dialogue de modification :
 

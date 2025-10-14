@@ -30,7 +30,7 @@ Pour en savoir plus sur la création d’un site communautaire, rendez-vous sur 
 
 >[!NOTE]
 >
->Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [ guide rapide vers les pages de création](/help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas l’environnement de création, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [&#x200B; guide rapide vers les pages de création](/help/sites-authoring/qg-page-authoring.md).
 
 ## Composants Communities disponibles {#available-communities-components}
 

@@ -44,7 +44,7 @@ ht-degree: 2%
 
 **Pour la [fonctionnalité Communities](/help/communities/overview.md)**
 
-* Lors du déploiement d&#39;une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [ identifiez l&#39;éditeur principal](#primary-publisher)
+* Lors du déploiement d&#39;une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [&#x200B; identifiez l&#39;éditeur principal](#primary-publisher)
 
 * [Activation du service tunnel](#tunnel-service-on-author)
 * [Activation de la connexion sociale](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
@@ -297,11 +297,11 @@ par exemple,
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
    * Coller les deux fichiers précédemment copiés
-   * Il est nécessaire d’ [ actualiser le lot Granite Crypto ](#refresh-the-granite-crypto-bundle) si l’instance AEM cible est en cours d’exécution.
+   * Il est nécessaire d’ [&#x200B; actualiser le lot Granite Crypto &#x200B;](#refresh-the-granite-crypto-bundle) si l’instance AEM cible est en cours d’exécution.
 
 >[!CAUTION]
 >
->Si une autre fonctionnalité de sécurité a déjà été configurée basée sur les clés de cryptage, la réplication des clés de cryptage peut endommager la configuration. Pour obtenir de l’aide, [contactez l’assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
+>Si une autre fonctionnalité de sécurité a déjà été configurée basée sur les clés de cryptage, la réplication des clés de cryptage peut endommager la configuration. Pour obtenir de l’aide, [contactez l’assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support).
 
 #### Réplication du référentiel {#repository-replication}
 

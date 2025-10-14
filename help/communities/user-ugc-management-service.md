@@ -61,7 +61,7 @@ Par exemple, pour supprimer le contenu généré par un utilisateur disposant d�
 
 ### Suppression du contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Pour supprimer les données utilisateur d’Adobe Analytics, suivez le [ workflow Analytics RGPD ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer les données utilisateur d’Adobe Analytics, suivez le [&#x200B; workflow Analytics RGPD &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
 Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 

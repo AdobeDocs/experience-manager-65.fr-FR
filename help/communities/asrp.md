@@ -85,7 +85,7 @@ Veillez à définir les domaines comme des URL routables à partir de l’URL du
 
 ### Synchronisation des heures {#time-synchronization}
 
-Pour que l’authentification avec le point de terminaison ASRP réussisse, les machines qui exécutent votre AEM Communities hébergé doivent être synchronisées, par exemple avec le [ Network Time Protocol (NTP)](https://www.ntp.org/).
+Pour que l’authentification avec le point de terminaison ASRP réussisse, les machines qui exécutent votre AEM Communities hébergé doivent être synchronisées, par exemple avec le [&#x200B; Network Time Protocol (NTP)](https://www.ntp.org/).
 
 ### Publication de la configuration {#publishing-the-configuration}
 

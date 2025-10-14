@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Traduction de contenu généré par l’utilisateur {#translating-user-generated-content}
 
-La fonction de traduction de Adobe Experience Manager (AEM) Communities étend le concept de [traduction du contenu de la page](../../help/sites-administering/translation.md) au contenu généré par l’utilisateur (UGC) publié sur les sites de la communauté à l’aide des [ composants de structure de composants sociaux (SCF)](scf.md).
+La fonction de traduction de Adobe Experience Manager (AEM) Communities étend le concept de [traduction du contenu de la page](../../help/sites-administering/translation.md) au contenu généré par l’utilisateur (UGC) publié sur les sites de la communauté à l’aide des [&#x200B; composants de structure de composants sociaux (SCF)](scf.md).
 
 La traduction du contenu généré par l’utilisateur permet aux visiteurs et aux membres du site de découvrir une communauté globale en supprimant les barrières linguistiques.
 
@@ -40,7 +40,7 @@ Lorsqu’une intégration de traduction est configurée en plus du fournisseur d
 
 ## Service de traduction par défaut {#the-default-translation-service}
 
-AEM Communities comprend une [licence d’évaluation](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) pour un [ service de traduction par défaut](../../help/sites-administering/tc-msconf.md) activé pour plusieurs langues.
+AEM Communities comprend une [licence d’évaluation](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) pour un [&#x200B; service de traduction par défaut](../../help/sites-administering/tc-msconf.md) activé pour plusieurs langues.
 
 Lors de la [création d&#39;un site communautaire](sites-console.md), le service de traduction par défaut est activé lorsque `Allow Machine Translation` est coché à partir du sous-panneau [TRADUCTION](sites-console.md#translation).
 

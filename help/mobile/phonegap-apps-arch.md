@@ -416,4 +416,4 @@ Cependant, si cette payload est une mise à jour partielle, `package-update.json
 
 ### Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez découvert l’anatomie d’une application, reportez-vous à la section [ Applications d’une seule page ](/help/mobile/phonegap-single-page-applications.md).
+Une fois que vous avez découvert l’anatomie d’une application, reportez-vous à la section [&#x200B; Applications d’une seule page &#x200B;](/help/mobile/phonegap-single-page-applications.md).

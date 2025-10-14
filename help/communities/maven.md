@@ -26,7 +26,7 @@ Cette section de la documentation de Adobe Experience Manager (AEM) Communities 
 
 Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
 
-* AEM [ Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [&#x200B; Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >

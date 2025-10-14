@@ -108,7 +108,7 @@ Pour l’environnement de production, il est vivement recommandé de configurer 
 
 Pour en savoir plus sur les jeux de réplications, consultez la documentation [Réplication](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
-Pour utiliser des jeux de réplications et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez la documentation [ Format URI de chaîne de connexion](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
+Pour utiliser des jeux de réplications et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez la documentation [&#x200B; Format URI de chaîne de connexion](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
 
 #### Exemple d’URL pour la connexion à un jeu de Secondaires  {#example-url-for-connecting-to-a-replica-set}
 
@@ -204,7 +204,7 @@ Par exemple : admin:admin
 
 >[!NOTE]
 >
->Si vous [ réindexez DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex**
+>Si vous [&#x200B; réindexez DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex**
 
 ### Exemple de réindexation MSRP {#msrp-reindex-example}
 

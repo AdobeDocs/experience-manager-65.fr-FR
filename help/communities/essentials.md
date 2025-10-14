@@ -18,7 +18,7 @@ ht-degree: 16%
 
 # Notions fondamentales sur les composants, les fonctions et les fonctionnalités  {#component-function-and-feature-essentials}
 
-Les fonctionnalités de communauté Adobe Experience Manager (AEM) exigent que les visiteurs du site deviennent membres et se connectent au [site de la communauté](overview.md#communitiessites) avant de pouvoir publier du contenu. Par conséquent, les [ modèles de site communautaire ](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
+Les fonctionnalités de communauté Adobe Experience Manager (AEM) exigent que les visiteurs du site deviennent membres et se connectent au [site de la communauté](overview.md#communitiessites) avant de pouvoir publier du contenu. Par conséquent, les [&#x200B; modèles de site communautaire &#x200B;](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
 
 Un site communautaire prend en charge la création de groupes communautaires lorsque la [fonction de groupes communautaires](functions.md#groups-function) est incluse dans le modèle de site de communauté sélectionné.
 

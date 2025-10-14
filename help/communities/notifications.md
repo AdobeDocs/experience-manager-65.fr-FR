@@ -122,7 +122,7 @@ Lorsque le canal Email est activé, le membre reçoit un email contenant un lien
 
 ## Personnalisation des notifications par courrier électronique {#customize-email-notifications}
 
-Les organisations peuvent personnaliser les notifications par courrier électronique en [ superposant ](/help/communities/client-customize.md#overlays) les modèles sur **/libs/settings/community/templates/email/html**.
+Les organisations peuvent personnaliser les notifications par courrier électronique en [&#x200B; superposant &#x200B;](/help/communities/client-customize.md#overlays) les modèles sur **/libs/settings/community/templates/email/html**.
 
 Par exemple, pour modifier les notifications par courrier électronique de mentions (pour un composant Communities), ajoutez une condition **if** pour verb **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 

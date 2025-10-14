@@ -69,7 +69,7 @@ Pour ce faire, procédez comme suit :
 
 ### Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[ En continuant l’expérience ](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
+[&#x200B; En continuant l’expérience &#x200B;](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
 
 ![view-modified-content](assets/view-modified-content.png)
 

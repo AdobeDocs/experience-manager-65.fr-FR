@@ -275,7 +275,7 @@ Instructions d’installation - Notez les quelques différences pour Solr4 et So
    * *solr-install-dir/contrib/analysis-extras/lucene-libs/*.jar
 
 1. [Créez une collection](#create-a-collection) spécifiant les paramètres nécessaires, tels que le nombre de partitions, le nombre de répliques et le nom de configuration.
-1. Si le nom de la configuration n’a pas été *fourni lors de la création de la collection, [ liez cette nouvelle collection ](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.*
+1. Si le nom de la configuration n’a pas été *fourni lors de la création de la collection, [&#x200B; liez cette nouvelle collection &#x200B;](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.*
 
 1. Pour MSRP, exécutez [MSRP Reindex Tool](#msrpreindextool), sauf si cette installation est nouvelle.
 

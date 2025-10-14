@@ -154,7 +154,7 @@ Le panneau `BADGES` permet d’attribuer manuellement des badges et de les révo
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 
-![ La fenêtre Modifier les paramètres d’appartenance ](assets/create-member2.png)
+![&#x200B; La fenêtre Modifier les paramètres d’appartenance &#x200B;](assets/create-member2.png)
 
 * **[!UICONTROL Ajouter des badges]**
    * Commencez à saisir le texte pour effectuer une sélection parmi les [badges disponibles](badges.md). Une fois qu’un badge est sélectionné, sélectionnez chaque site, ou tous les sites, sur lesquels le badge doit s’afficher avec l’avatar du membre.

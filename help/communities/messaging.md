@@ -31,7 +31,7 @@ Pour plus d’informations à l’intention des développeurs, voir [Notions fon
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-La configuration [ Service des opérations de messagerie AEM Communities ](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point de terminaison qui gère les requêtes liées aux messages, les dossiers que le service doit utiliser pour stocker les messages, et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
+La configuration [&#x200B; Service des opérations de messagerie AEM Communities &#x200B;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point de terminaison qui gère les requêtes liées aux messages, les dossiers que le service doit utiliser pour stocker les messages, et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
 
 Pour les sites de communauté créés à l’aide de `Communities Sites console`, il existe une instance du service, la boîte de réception étant définie sur `/mail/inbox`.
 

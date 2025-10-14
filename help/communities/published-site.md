@@ -104,7 +104,7 @@ Notez que la page Calendrier est la page d’accueil, car le modèle de site de 
 >Pour plus d’informations sur les composants et les fonctions de Communities, consultez :
 >
 >* [Composants Communities](/help/communities/author-communities.md) (pour les auteurs)
->* [ Composants, fonctions et éléments de fonction ](/help/communities/essentials.md) (pour les développeurs)
+>* [&#x200B; Composants, fonctions et éléments de fonction &#x200B;](/help/communities/essentials.md) (pour les développeurs)
 
 ### Lien du forum {#forum-link}
 

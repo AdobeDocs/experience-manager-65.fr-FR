@@ -227,7 +227,7 @@ Les utilisateurs sont ainsi automatiquement affectés au groupe de membres du si
 
 Lors de l’utilisation d’une [ferme de publication](topologies.md), assurez-vous que les utilisateurs disposent du même chemin d’accès sur chaque instance de publication en important les utilisateurs en premier sur une instance et en [activant la synchronisation des utilisateurs](sync.md) vers Sling pour distribuer les utilisateurs aux autres instances de publication.
 
-Si vous importez des groupes d’utilisateurs, pour vous assurer que les groupes d’utilisateurs ont le même chemin d’accès sur chaque instance de publication, importez-les dans une instance, puis [ créez un package](../../help/sites-administering/package-manager.md#creating-a-new-package) pour l’exportation et installez-le sur toutes les autres instances de publication.
+Si vous importez des groupes d’utilisateurs, pour vous assurer que les groupes d’utilisateurs ont le même chemin d’accès sur chaque instance de publication, importez-les dans une instance, puis [&#x200B; créez un package](../../help/sites-administering/package-manager.md#creating-a-new-package) pour l’exportation et installez-le sur toutes les autres instances de publication.
 
 Bien que la synchronisation des groupes d’utilisateurs par le biais de la synchronisation des utilisateurs soit incluse dans une prochaine version, actuellement, seule l’ *appartenance* d’un groupe d’utilisateurs sera synchronisée lors de l’exécution de la synchronisation des utilisateurs.
 

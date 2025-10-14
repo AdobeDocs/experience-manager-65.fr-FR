@@ -64,7 +64,7 @@ Le module d’exemples de Geometrixx comprend des utilisateurs de démonstration
 
 Pour obtenir la liste complète des utilisateurs de démonstration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Sécurité > Utilisateurs]** à l’aide du rail. Ou utilisez la [console de sécurité](http://localhost:4502/useradmin) de l’interface utilisateur classique pour gérer les utilisateurs et les groupes.
 
-Si un [ site communautaire a été créé ](getting-started.md), il est possible d&#39;affecter des utilisateurs de démonstration à ses [ groupes d&#39;utilisateurs communautaires ](users.md).
+Si un [&#x200B; site communautaire a été créé &#x200B;](getting-started.md), il est possible d&#39;affecter des utilisateurs de démonstration à ses [&#x200B; groupes d&#39;utilisateurs communautaires &#x200B;](users.md).
 
 ***user id* / *password*** :
 

@@ -100,7 +100,7 @@ Un auteur AEM doit comprendre les rubriques suivantes lors de la création d’u
 * [Gestion de contenu](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 * [Présentation de Content Services](/help/mobile/develop-content-as-a-service.md)
 
-Pour commencer à connaître les rôles et responsabilités d’un auteur, reportez-vous à la section [ Création de contenu AEM pour l’application AEM Mobile On-demand Services ](/help/mobile/mobile-apps-ondemand.md).
+Pour commencer à connaître les rôles et responsabilités d’un auteur, reportez-vous à la section [&#x200B; Création de contenu AEM pour l’application AEM Mobile On-demand Services &#x200B;](/help/mobile/mobile-apps-ondemand.md).
 
 >[!NOTE]
 >

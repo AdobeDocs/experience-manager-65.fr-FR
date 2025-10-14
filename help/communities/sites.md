@@ -22,7 +22,7 @@ La console Modèles de site est similaire à la console [Modèles de groupe](too
 
 >[!NOTE]
 >
->Les consoles pour la création de [sites communautaires](sites-console.md), de [ modèles de site communautaire](sites.md), de [modèles de groupe de communauté](tools-groups.md) et de [fonctions de communauté](functions.md) sont à utiliser uniquement dans l’environnement de création.
+>Les consoles pour la création de [sites communautaires](sites-console.md), de [&#x200B; modèles de site communautaire](sites.md), de [modèles de groupe de communauté](tools-groups.md) et de [fonctions de communauté](functions.md) sont à utiliser uniquement dans l’environnement de création.
 
 ## Console Modèles de site {#site-templates-console}
 

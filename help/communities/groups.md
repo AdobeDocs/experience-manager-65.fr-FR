@@ -240,7 +240,7 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
 * Sur une instance d’une fonction de communauté dans la structure du site :
 
    * **`Gear icon`**
-Modifiez les paramètres, y compris le titre d’affichage, l’URL et les [ groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
+Modifiez les paramètres, y compris le titre d’affichage, l’URL et les [&#x200B; groupes de membres privilégiés](/help/communities/users.md#privilegedmembersgroups).
 
    * **`Trashcan icon`**
 Supprimer (supprimer) des fonctions de la structure du site.

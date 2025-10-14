@@ -20,7 +20,7 @@ ht-degree: 4%
 
 ## Vue d’ensemble {#overview}
 
-La fonction de recherche est une fonctionnalité essentielle de Adobe Experience Manager (AEM) Communities. Outre les fonctionnalités [AEM recherche de plateforme](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’ [ API de recherche UGC](#ugc-search-api) pour la recherche de contenu généré par l’utilisateur. Le contenu généré par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément du contenu AEM et des données utilisateur.
+La fonction de recherche est une fonctionnalité essentielle de Adobe Experience Manager (AEM) Communities. Outre les fonctionnalités [AEM recherche de plateforme](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’ [&#x200B; API de recherche UGC](#ugc-search-api) pour la recherche de contenu généré par l’utilisateur. Le contenu généré par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément du contenu AEM et des données utilisateur.
 
 Pour Communities, les deux éléments généralement recherchés sont les suivants :
 
@@ -65,7 +65,7 @@ Concernant MSRP et Solr :
 * Solr peut être configuré pour la recherche standard ou pour la recherche multilingue (MLS).
 * Pour plus d’informations sur la configuration, voir [Configuration Solr](msrp.md#solr-configuration) pour MSRP.
 
-Les fonctions de recherche personnalisées doivent utiliser l’[ API de recherche UGC](#ugc-search-api).
+Les fonctions de recherche personnalisées doivent utiliser l’[&#x200B; API de recherche UGC](#ugc-search-api).
 
 Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [exigences d’attribution de noms](#naming-of-custom-properties).
 
@@ -77,7 +77,7 @@ Comme le contenu généré par l’utilisateur est généralement saisi dans l�
 
 Pour JSRP, le contenu généré par l’utilisateur entré dans l’environnement Publish n’est jamais visible dans l’environnement de création. Par conséquent, toutes les tâches de [modération](moderate-ugc.md) ont lieu dans l’environnement Publish.
 
-Les fonctions de recherche personnalisées doivent utiliser l’[ API de recherche UGC](#ugc-search-api).
+Les fonctions de recherche personnalisées doivent utiliser l’[&#x200B; API de recherche UGC](#ugc-search-api).
 
 #### Indexation Oak {#oak-indexing}
 

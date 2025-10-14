@@ -38,7 +38,7 @@ La modération du contenu créé par l’utilisateur est utile pour reconnaître
 
 * [Console de modération en bloc](moderation.md)
 
-  La console Modération est accessible aux administrateurs et [ modérateurs de communauté](/help/communities/users.md) dans l’environnement public et aux administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans un [magasin commun](/help/communities/working-with-srp.md).
+  La console Modération est accessible aux administrateurs et [&#x200B; modérateurs de communauté](/help/communities/users.md) dans l’environnement public et aux administrateurs dans l’environnement de création. Cela est possible lorsque le contenu de la communauté est stocké dans un [magasin commun](/help/communities/working-with-srp.md).
 
 * [Modération dans le contexte](in-context.md)
 
@@ -54,7 +54,7 @@ Les actions pouvant être effectuées sur du contenu publié (UGC) varient en fo
 
 * `Moderator`
 
-  Un membre d’un groupe [modérateurs de communauté](users.md#publishenvironmentusersandgroups) (a [ autorisations de modérateur](in-context.md#moderatorpermissions)).
+  Un membre d’un groupe [modérateurs de communauté](users.md#publishenvironmentusersandgroups) (a [&#x200B; autorisations de modérateur](in-context.md#moderatorpermissions)).
 
 * `Creator`
 

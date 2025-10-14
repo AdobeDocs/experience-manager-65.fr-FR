@@ -38,7 +38,7 @@ Maintenant qu’il existe un [modèle de page](initial-app.md#createthepagetempl
 
    ![classic-ui](assets/classic-ui.png)
 
-   La possibilité de passer à l’IU classique doit être [ activée par un administrateur](../../help/sites-administering/enable-classic-ui.md).
+   La possibilité de passer à l’IU classique doit être [&#x200B; activée par un administrateur](../../help/sites-administering/enable-classic-ui.md).
 
 1. Sur la [page d’accueil classique de l’interface utilisateur](http://localhost:4502/welcome.html), sélectionnez **[!UICONTROL Sites web]**.
 

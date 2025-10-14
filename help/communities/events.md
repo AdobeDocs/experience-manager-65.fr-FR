@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | MISE À JOUR | Le commentaire du membre est modifié |
 | SUPPRIMER | Le commentaire du membre est supprimé |
 
-[ Composant Bibliothèque de fichiers](essentials-file-library.md)
+[&#x200B; Composant Bibliothèque de fichiers](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Description** |

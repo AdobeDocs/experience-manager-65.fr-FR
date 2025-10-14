@@ -94,7 +94,7 @@ La vignette **PhoneGap Build** se connecte à `https://build.phonegap.com` pour 
 
 Vous pouvez également télécharger la source de l’appareil pour créer localement via l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
-![Vignette PhoneGap Build ](assets/chlimage_1-140.png)
+![Vignette PhoneGap Build &#x200B;](assets/chlimage_1-140.png)
 
 ### La Mosaïque Mesures {#the-metrics-tile}
 

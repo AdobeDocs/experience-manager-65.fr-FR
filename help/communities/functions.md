@@ -25,7 +25,7 @@ Une fois qu’un site communautaire est créé, le contenu peut être ajouté au
 
 >[!NOTE]
 >
->Les consoles pour la création de [sites communautaires](/help/communities/sites-console.md), de [ modèles de site communautaire](/help/communities/sites.md), de [modèles de groupe de communauté](/help/communities/tools-groups.md) et de [fonctions de communauté](/help/communities/functions.md) sont à utiliser uniquement dans l’environnement de création.
+>Les consoles pour la création de [sites communautaires](/help/communities/sites-console.md), de [&#x200B; modèles de site communautaire](/help/communities/sites.md), de [modèles de groupe de communauté](/help/communities/tools-groups.md) et de [fonctions de communauté](/help/communities/functions.md) sont à utiliser uniquement dans l’environnement de création.
 
 ## Console des fonctions de communauté {#community-functions-console}
 
@@ -152,7 +152,7 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 ### Fonction de contenu en vedette {#featured-content-function}
 
-La fonction de contenu proposé est une page avec un [ composant de contenu proposé](/help/communities/featured.md) configuré pour permettre l’ajout et la suppression de commentaires.
+La fonction de contenu proposé est une page avec un [&#x200B; composant de contenu proposé](/help/communities/featured.md) configuré pour permettre l’ajout et la suppression de commentaires.
 
 La fonctionnalité de contenu peut être autorisée ou non par composant (voir [Fonction Blog](#blog-function), [Fonction Calendrier](#calendar-function), [Fonction Forum](#forum-function), [Fonction Idéation](#ideation-function) et [Fonction QnA](#qna-function)).
 
@@ -206,11 +206,11 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
 La fonction de groupes permet aux membres de la communauté de créer des sous-communautés au sein du site de la communauté dans l’environnement de publication.
 
-Selon les [paramètres](/help/communities/sites-console.md#groupmanagement) lorsque la fonction Groupes est incluse dans un [ modèle de site de communauté ](/help/communities/sites.md), les groupes peuvent être publics ou privés et un ou plusieurs modèles de groupe de communautés peuvent être configurés pour offrir un choix de modèles lorsque le groupe de communautés est réellement créé (à partir de l’environnement de publication, par exemple). Un [modèle de groupe de communautés](/help/communities/tools-groups.md) spécifie les fonctionnalités de communautés qui sont créées pour les pages de groupe, telles que les forums et les calendriers.
+Selon les [paramètres](/help/communities/sites-console.md#groupmanagement) lorsque la fonction Groupes est incluse dans un [&#x200B; modèle de site de communauté &#x200B;](/help/communities/sites.md), les groupes peuvent être publics ou privés et un ou plusieurs modèles de groupe de communautés peuvent être configurés pour offrir un choix de modèles lorsque le groupe de communautés est réellement créé (à partir de l’environnement de publication, par exemple). Un [modèle de groupe de communautés](/help/communities/tools-groups.md) spécifie les fonctionnalités de communautés qui sont créées pour les pages de groupe, telles que les forums et les calendriers.
 
 Lorsqu’un groupe de communautés est créé, un groupe de membres est créé dynamiquement pour le nouveau groupe, auquel les membres peuvent être affectés ou rejoindre. Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
 
-À partir du [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack) des communautés, les groupes de communautés sont créés dans l’environnement de création à l’aide de la [ console Groupes de communautés de sites ](/help/communities/groups.md) et peuvent être créés dans l’environnement de publication lorsqu’ils sont activés.
+À partir du [Feature Pack 1](/help/communities/deploy-communities.md#latestfeaturepack) des communautés, les groupes de communautés sont créés dans l’environnement de création à l’aide de la [&#x200B; console Groupes de communautés de sites &#x200B;](/help/communities/groups.md) et peuvent être créés dans l’environnement de publication lorsqu’ils sont activés.
 
 La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèle :
 

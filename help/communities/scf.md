@@ -50,7 +50,7 @@ L’API SocialComponent peut être étendue afin de fournir les données requise
 Pour personnaliser ou étendre les composants, vous écrivez uniquement les incrustations et les extensions dans votre répertoire /apps, ce qui simplifie le processus de mise à niveau vers les prochaines versions.
 
 * Pour l’habillage :
-   * Seul le [ CSS doit être modifié ](client-customize.md#skinning-css).
+   * Seul le [&#x200B; CSS doit être modifié &#x200B;](client-customize.md#skinning-css).
 * Pour l’apparence :
    * Modifiez le modèle JS et le CSS.
 * Pour Look, Feel et UX :
@@ -154,7 +154,7 @@ Le résultat est un noeud enfant JCR sous un noeud par, qui est adressable à Sl
 
 **Inclure un composant**
 
-L’inclusion d’un composant fait référence au processus d’ajout d’une référence à une ressource [ &quot;non existante&quot; ](srp.md#for-non-existing-resources-ners) (aucun noeud JCR) dans le modèle, par exemple à l’aide d’un langage de script.
+L’inclusion d’un composant fait référence au processus d’ajout d’une référence à une ressource [&#x200B; &quot;non existante&quot; &#x200B;](srp.md#for-non-existing-resources-ners) (aucun noeud JCR) dans le modèle, par exemple à l’aide d’un langage de script.
 
 Depuis Adobe Experience Manager (AEM) 6.1, lorsqu’un composant est inclus dynamiquement au lieu d’être ajouté, il est possible de modifier les propriétés du composant en mode création *design* .
 

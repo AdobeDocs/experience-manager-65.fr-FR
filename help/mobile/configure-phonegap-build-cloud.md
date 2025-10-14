@@ -26,7 +26,7 @@ Toutes les plateformes prises en charge définies dans la mosaïque **Gérer l�
 
 Vous pouvez pousser une version distante à `https://build.phonegap.com` ou télécharger la source pour la créer localement avec l’interface de ligne de commande PhoneGap à l’adresse `https://docs.phonegap.com/references/phonegap-cli/`.
 
-![Vignette PhoneGap Build ](assets/chlimage_1-60.png)
+![Vignette PhoneGap Build &#x200B;](assets/chlimage_1-60.png)
 
 ## Configuration du Cloud Service {#configuring-the-cloud-service}
 
@@ -34,7 +34,7 @@ Pour tirer parti de PhoneGap Build, vous devez configurer le Cloud Service AEM P
 
 Si vous ne disposez pas d’un compte, accédez à `https://build.phonegap.com` et inscrivez-vous ! Si vous êtes membre de Adobe Creative Cloud, vous pouvez prendre en charge jusqu’à 25 applications privées (applications non open source).
 
-Une fois que vous avez vérifié que votre compte PhoneGap Build est actif, accédez à la console AEM Cloud Management, en particulier au [Cloud Service PhoneGap Build ](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Une fois que vous avez vérifié que votre compte PhoneGap Build est actif, accédez à la console AEM Cloud Management, en particulier au [Cloud Service PhoneGap Build &#x200B;](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
 Utilisez le volet **Gérer les Cloud Service** pour configurer une nouvelle configuration de service cloud.
 

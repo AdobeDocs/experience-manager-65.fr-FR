@@ -102,7 +102,7 @@ Après avoir créé le modèle de site, dans la navigation globale, sélectionne
 
 ![publish-site](assets/publish-site.png)
 
-Dans la [ console de sites communautaires](sites-console.md), sélectionnez l’icône de publication pour publier le site, par défaut sur http://localhost:4503.
+Dans la [&#x200B; console de sites communautaires](sites-console.md), sélectionnez l’icône de publication pour publier le site, par défaut sur http://localhost:4503.
 
 ## Ouvrez le site en mode d’édition sur l’auteur {#open-the-site-on-author-in-edit-mode}
 

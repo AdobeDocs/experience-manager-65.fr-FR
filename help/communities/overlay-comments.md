@@ -35,7 +35,7 @@ Pour superposer des commentaires, vous devez :
 
 **Courriers électroniques de notifications de superposition**
 
-Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [ superposant ](/help/communities/client-customize.md#overlays) les modèles sur `/libs/settings/community/templates/email/html`.
+Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [&#x200B; superposant &#x200B;](/help/communities/client-customize.md#overlays) les modèles sur `/libs/settings/community/templates/email/html`.
 
 Supposons, par exemple, que vous souhaitiez modifier les notifications par courrier électronique relatives aux mentions (pour un composant Communities spécifique dans lequel le contenu créé par l’utilisateur est). Dans ce cas, ajoutez une condition **if** pour le verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 

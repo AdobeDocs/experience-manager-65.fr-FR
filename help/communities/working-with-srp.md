@@ -35,7 +35,7 @@ Pour plus d’informations sur l’utilisation de la SRP pour le contenu génér
 
 >[!CAUTION]
 >
->Depuis AEM 6.1, [UGC n&#39;est jamais répliqué ](#ugc-never-replicated).
+>Depuis AEM 6.1, [UGC n&#39;est jamais répliqué &#x200B;](#ugc-never-replicated).
 >
 >Lorsque le déploiement n’inclut pas de magasin commun, tel que la topologie par défaut [JSRP](/help/communities/topologies.md#jsrp), le contenu généré par l’utilisateur n’est visible que sur l’instance de publication ou d’auteur AEM sur laquelle il a été saisi. Ce n’est que si la topologie inclut une grappe de publication que le contenu généré par l’utilisateur sera visible sur n’importe quelle instance de publication.
 

@@ -64,7 +64,7 @@ Chaque plateforme nécessite que l&#39;ADBMobileConfig soit copié vers un empla
 
 Si vous créez avec l’interface de ligne de commande PhoneGap, vous pouvez le faire avec des scripts de hook de création Cordova. Vous pouvez le voir dans l’application Geometrixx Outdoors à l’adresse :*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Pour iOS, le fichier doit être copié dans le répertoire **Resources** du projet XCode (par exemple, « platforms/ios/Geometrixx/Resources/ADBMobileConfig.json »). Si l’application est ciblée pour Android™, le chemin d’accès à copier est « platforms/android/assets/ADBMobileConfig.json ». Pour plus d’informations sur l’utilisation des points d’extension pendant la génération de l’interface de ligne de commande PhoneGap, voir [ Trois points d’extension dont votre projet Cordova/PhoneGap a besoin ](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Pour iOS, le fichier doit être copié dans le répertoire **Resources** du projet XCode (par exemple, « platforms/ios/Geometrixx/Resources/ADBMobileConfig.json »). Si l’application est ciblée pour Android™, le chemin d’accès à copier est « platforms/android/assets/ADBMobileConfig.json ». Pour plus d’informations sur l’utilisation des points d’extension pendant la génération de l’interface de ligne de commande PhoneGap, voir [&#x200B; Trois points d’extension dont votre projet Cordova/PhoneGap a besoin &#x200B;](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

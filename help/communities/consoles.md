@@ -22,7 +22,7 @@ Les consoles d’AEM Communities, disponibles dans l’environnement de créatio
 
 * [Création d’un site communautaire](sites-console.md)
 * Ajout de [groupes](groups.md) imbriqués sur le site
-* Gestion des [ modèles de site communautaire](sites.md)
+* Gestion des [&#x200B; modèles de site communautaire](sites.md)
 * Gestion des [membres de la communauté](members.md)
 * [Modération](moderate-ugc.md) du contenu généré par l’utilisateur (UGC)
 * Créer [badges personnalisés](badges.md)

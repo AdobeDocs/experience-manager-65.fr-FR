@@ -44,7 +44,7 @@ Lors de la création d’une application basée sur le modèle d’une autre app
 1. Accédez au catalogue d’applications AEM Mobile : *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Sélectionnez **Créer** > **App** comme illustré ci-dessous
 
-Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour consulter à nouveau, créer des articles, des bannières et des collections, consultez la section [ Actions de gestion de contenu ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour consulter à nouveau, créer des articles, des bannières et des collections, consultez la section [&#x200B; Actions de gestion de contenu &#x200B;](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Une fois que le composant a déjà été inclus dans une page AEM, avec quelques
 
 >[!NOTE]
 >
->Reportez-vous à la section [ Bonnes pratiques pour le développement de modèles et de composants ](/help/mobile/best-practices-aem-mobile.md) dans AEM Mobile.
+>Reportez-vous à la section [&#x200B; Bonnes pratiques pour le développement de modèles et de composants &#x200B;](/help/mobile/best-practices-aem-mobile.md) dans AEM Mobile.
 
 ### Les étapes suivantes {#the-next-steps}
 

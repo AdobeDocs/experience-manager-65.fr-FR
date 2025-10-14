@@ -58,7 +58,7 @@ La mosaïque **Gérer la connexion** affiche les informations de connexion AEM M
 >
 >Cliquez sur l’engrenage en haut à droite pour configurer un cloud mobile On-Demand.
 >
->Voir [ Configuration des services On-Demand mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
+>Voir [&#x200B; Configuration des services On-Demand mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

@@ -161,7 +161,7 @@ Envoyez vos ressources applicatives à PhoneGap Build pour compiler pour les dif
 
 1. Dans la boîte de dialogue Succès , cliquez sur PhoneGap Build pour ouvrir la page Adobe PhoneGap Build à l’adresse `https://build.phonegap.com/apps`. Si vous attendez que votre application apparaisse, vous pouvez vérifier le Statut du PhoneGap Build à l’adresse `https://status.build.phonegap.com/`.
 
-   Pour plus d&#39;informations sur l&#39;installation de la version, consultez la [Documentation de PhoneGap Build ](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
+   Pour plus d&#39;informations sur l&#39;installation de la version, consultez la [Documentation de PhoneGap Build &#x200B;](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

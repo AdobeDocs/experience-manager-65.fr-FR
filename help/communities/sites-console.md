@@ -30,7 +30,7 @@ Reportez-vous à la section [Prise en main d’AEM Communities](/help/communitie
 
 >[!NOTE]
 >
->Les principaux menus de Communities pour la création de [ sites communautaires](/help/communities/sites-console.md), de [ modèles de site communautaire](/help/communities/sites.md), de [ modèles de groupe de communautés ](/help/communities/tools-groups.md) et de [fonctions communautaires](/help/communities/functions.md) sont destinés uniquement à l’environnement de création.
+>Les principaux menus de Communities pour la création de [&#x200B; sites communautaires](/help/communities/sites-console.md), de [&#x200B; modèles de site communautaire](/help/communities/sites.md), de [&#x200B; modèles de groupe de communautés &#x200B;](/help/communities/tools-groups.md) et de [fonctions communautaires](/help/communities/functions.md) sont destinés uniquement à l’environnement de création.
 
 ## Conditions préalables {#prerequisites}
 
@@ -112,7 +112,7 @@ Dans le panneau Modèle de site, le titre, la description, la racine du site, la
 
 * Menu **Modèle de site communautaire**
 
-  Utilisez le menu déroulant pour choisir un [ modèle de site communautaire](/help/communities/tools.md) disponible.
+  Utilisez le menu déroulant pour choisir un [&#x200B; modèle de site communautaire](/help/communities/tools.md) disponible.
 
 * Sélectionnez **Suivant**.
 
@@ -377,7 +377,7 @@ Le contenu d’un site peut être créé avec les mêmes outils que tout autre s
 
 >[!NOTE]
 >
->Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [ guide rapide sur la création de pages](/help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [&#x200B; guide rapide sur la création de pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Modification des propriétés du site {#modifying-site-properties}
 

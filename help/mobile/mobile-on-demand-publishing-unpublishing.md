@@ -55,4 +55,4 @@ Une fois que vous avez appris à créer et publier du contenu, reportez-vous aux
 * [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administration de contenu pour utiliser AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, voir [ Création de contenu AEM pour les applications AEM Mobile On-demand Services ](/help/mobile/mobile-apps-ondemand.md).
+Ou, si vous souhaitez toujours en savoir plus sur les rubriques de création, voir [&#x200B; Création de contenu AEM pour les applications AEM Mobile On-demand Services &#x200B;](/help/mobile/mobile-apps-ondemand.md).

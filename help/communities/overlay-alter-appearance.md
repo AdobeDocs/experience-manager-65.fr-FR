@@ -64,7 +64,7 @@ Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTRO
 
 Pour le chemin de début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
-![ verify-content-template](assets/verify-content-template.png)
+![&#x200B; verify-content-template](assets/verify-content-template.png)
 
 ### Affichage des résultats {#view-results}
 

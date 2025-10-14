@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) Communities simplifie la création et la personnalisation de fonctionnalités de communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les révisions, le vote, les évaluations et les affectations. Ces fonctionnalités entraînent la saisie de contenu généré par l’utilisateur dans l’environnement de publication.
 
-La fondation d&#39;un [site communautaire](overview.md#communitiessites) est le [framework de composant social](scf.md) (SCF). La création d’un site communautaire commence par la sélection d’un [modèle de site communautaire](sites-console.md) composé de [ fonctions communautaires](functions.md).
+La fondation d&#39;un [site communautaire](overview.md#communitiessites) est le [framework de composant social](scf.md) (SCF). La création d’un site communautaire commence par la sélection d’un [modèle de site communautaire](sites-console.md) composé de [&#x200B; fonctions communautaires](functions.md).
 
 Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 

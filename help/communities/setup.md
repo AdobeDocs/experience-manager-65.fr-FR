@@ -41,7 +41,7 @@ Pour AEM Communities,
 
 >[!NOTE]
 >
->Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un [ guide rapide sur la création de pages](../../help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md) et un [&#x200B; guide rapide sur la création de pages](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Installation de la dernière version de Communities {#install-latest-communities-release}
 
@@ -151,7 +151,7 @@ Exemple de package de balises créées pour les Tutorials de prise en main d’A
 
 ## MongoDB pour le magasin commun UGC {#mongodb-for-ugc-common-store}
 
-Il est recommandé, mais facultatif, de définir [MSRP](msrp.md) (MongoDB) comme [ boutique commune](working-with-srp.md) afin de bénéficier de la flexibilité de modération de tous les UGC dans les environnements de publication et/ou de création.
+Il est recommandé, mais facultatif, de définir [MSRP](msrp.md) (MongoDB) comme [&#x200B; boutique commune](working-with-srp.md) afin de bénéficier de la flexibilité de modération de tous les UGC dans les environnements de publication et/ou de création.
 
 Pour plus d’informations, voir [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
 

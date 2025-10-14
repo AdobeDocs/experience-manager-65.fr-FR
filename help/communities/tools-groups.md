@@ -29,7 +29,7 @@ Dès qu’une action est entreprise pour créer un groupe communautaire, le mod�
 
 >[!NOTE]
 >
->Les consoles pour la création de [sites communautaires](/help/communities/sites-console.md), de [ modèles de site communautaire](/help/communities/sites.md), de [modèles de groupe de communauté](/help/communities/tools-groups.md) et de [fonctions de communauté](/help/communities/functions.md) sont à utiliser uniquement dans l’environnement de création.
+>Les consoles pour la création de [sites communautaires](/help/communities/sites-console.md), de [&#x200B; modèles de site communautaire](/help/communities/sites.md), de [modèles de groupe de communauté](/help/communities/tools-groups.md) et de [fonctions de communauté](/help/communities/functions.md) sont à utiliser uniquement dans l’environnement de création.
 
 ## Console Modèles de groupe {#group-templates-console}
 
@@ -39,7 +39,7 @@ Pour accéder à la console de modèles de groupe dans l’environnement de cré
 
 Cette console affiche les modèles à partir desquels un [site communautaire](/help/communities/sites-console.md) peut être créé et permet de créer de nouveaux modèles de groupe.
 
-![ Modèle de groupes communautaires](assets/groups-template.png)
+![&#x200B; Modèle de groupes communautaires](assets/groups-template.png)
 
 ## Créer un modèle de groupe {#create-group-template}
 

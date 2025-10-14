@@ -80,7 +80,7 @@ Dans cet exercice, toutes les pages sont basées sur un modèle simple.
 
    Cliquez sur **[!UICONTROL Enregistrer tout]** pour enregistrer le nouveau modèle dans le référentiel.
 
-   ![ verify-content-template](assets/verify-content-template.png)
+   ![&#x200B; verify-content-template](assets/verify-content-template.png)
 
 ### Création du composant de rendu du modèle {#create-the-template-s-rendering-component}
 
@@ -114,4 +114,4 @@ Créez le *composant* qui définit le contenu et effectue le rendu des pages cr�
    >
    >La correspondance entre le chemin d’accès au composant playpage et la propriété `sling:resourceType` du modèle playpage est essentielle au bon fonctionnement du site web.
 
-   ![ verify-template-component](assets/verify-template-component.png)
+   ![&#x200B; verify-template-component](assets/verify-template-component.png)

@@ -38,7 +38,7 @@ Pour commencer à créer un site communautaire :
 
 ![modèle pour créer un site](assets/create-site.png)
 
-À l’ [ étape Modèle de site ](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description, le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
+À l’ [&#x200B; étape Modèle de site &#x200B;](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description, le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
 
 * **Titre du site de la communauté** : `Getting Started Tutorial`
 * **Description du site de la communauté** : `A site for engaging with the community.`
@@ -121,7 +121,7 @@ Par exemple :
 >
 >[Le service Tunnel](https://helpx.adobe.com/fr/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permet de sélectionner des membres et des groupes existants uniquement dans l’environnement de publication.
 
-![ rôles utilisateur sur le nouveau site](assets/site-admin-1.png)
+![&#x200B; rôles utilisateur sur le nouveau site](assets/site-admin-1.png)
 
 #### MODÉRATION {#moderation}
 
@@ -321,4 +321,4 @@ Après toute modification, n’oubliez pas de **Enregistrer** et de réutiliser 
 
 >[!NOTE]
 >
->Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [ guide rapide sur la création de pages](/help/sites-authoring/qg-page-authoring.md).
+>Si vous ne connaissez pas AEM, consultez la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [&#x200B; guide rapide sur la création de pages](/help/sites-authoring/qg-page-authoring.md).

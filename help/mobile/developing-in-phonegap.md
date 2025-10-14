@@ -35,7 +35,7 @@ Les ressources suivantes vous aideront à prendre en main AEM Mobile avec Adobe 
 
    * Pour activer Content Services et les modèles de données, voir [Administration de Content Services](/help/mobile/developing-content-services.md)
    * Pour en savoir plus sur la création de modèles, voir [Développement de modèles](/help/mobile/administer-mobile-apps.md)
-   * Pour en savoir plus sur le rendu et la diffusion, voir [ Rendu et diffusion de Content Services ](/help/mobile/rendering-and-delivery.md)
+   * Pour en savoir plus sur le rendu et la diffusion, voir [&#x200B; Rendu et diffusion de Content Services &#x200B;](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >

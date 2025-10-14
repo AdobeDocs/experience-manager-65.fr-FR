@@ -44,7 +44,7 @@ Un site communautaire est un site AEM créé à l’aide d’un assistant simple
 
 L&#39; [assistant de création de site](/help/communities/sites-console.md) :
 
-* Assemble les fonctionnalités du site, en fonction du [ modèle de site communautaire](/help/communities/sites.md) sélectionné, à savoir :
+* Assemble les fonctionnalités du site, en fonction du [&#x200B; modèle de site communautaire](/help/communities/sites.md) sélectionné, à savoir :
 
    * créé à partir des [fonctions de communauté](#community-functions)
    * fonction facultative [groupes de communautés](#communitygroups)
@@ -214,7 +214,7 @@ AEM Demo Machine nécessite une licence AEM valide.
 
 >[!NOTE]
 >
->Affichez une [présentation vidéo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) sur la AEM Demo Machine (13:26).
+>Affichez une [présentation vidéo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) sur la AEM Demo Machine (13:26).
 
 ## Documentation AEM Communities {#aem-communities-documentation}
 

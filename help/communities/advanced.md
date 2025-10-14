@@ -208,7 +208,7 @@ La version bêta comprend deux règles de notation avancées pour la [fonction d
 
 ### Règles de badge incluses {#included-badging-rules}
 
-Cette version comprend deux règles de badge avancé qui correspondent aux [ forums avancés et aux ](#included-scoring-rules-and-sub-rules) règles de notation des commentaires.
+Cette version comprend deux règles de badge avancé qui correspondent aux [&#x200B; forums avancés et aux &#x200B;](#included-scoring-rules-and-sub-rules) règles de notation des commentaires.
 
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`

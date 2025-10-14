@@ -134,7 +134,7 @@ Le résultat est une instance [Adobe Granite OAuth Application et Provider](http
 
 ### Fournisseur OAuth Facebook AEM Communities {#aem-communities-facebook-oauth-provider}
 
-Le fournisseur AEM Communities étend l’instance [ Adobe Granite OAuth Application et Provider](#adobe-granite-oauth-application-and-provider).
+Le fournisseur AEM Communities étend l’instance [&#x200B; Adobe Granite OAuth Application et Provider](#adobe-granite-oauth-application-and-provider).
 
 Ce fournisseur devra être modifié pour :
 
@@ -299,7 +299,7 @@ Le résultat est une instance [Adobe Granite OAuth Application et Provider](http
 
 ### Fournisseur OAuth du Twitter AEM Communities {#aem-communities-twitter-oauth-provider}
 
-La configuration AEM Communities étend l’instance [ Adobe Granite OAuth Application et Provider](#adobe-granite-oauth-application-and-provider). Ce fournisseur devra être modifié pour autoriser les mises à jour des utilisateurs.
+La configuration AEM Communities étend l’instance [&#x200B; Adobe Granite OAuth Application et Provider](#adobe-granite-oauth-application-and-provider). Ce fournisseur devra être modifié pour autoriser les mises à jour des utilisateurs.
 
 Si des modifications sont nécessaires, sur chaque instance de publication AEM :
 

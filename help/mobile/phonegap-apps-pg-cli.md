@@ -30,7 +30,7 @@ Configurer l’interface de ligne de commande PhoneGap (`https://docs.phonegap.c
 
 Pour iOS : pour développer sur iPhone et iPad, vous avez besoin de l’IDE Xcode d’Apple.
 
-* Téléchargez-le gratuitement [ici](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* Téléchargez-le gratuitement [ici](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1).
 * Guide de la plateforme PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Pour Android™ : pour développer sur iPhone et iPad, vous avez besoin de l’IDE Android™ Studio de Google.

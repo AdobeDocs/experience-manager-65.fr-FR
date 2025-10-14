@@ -172,7 +172,7 @@ Par exemple :
 * Noeud de dossier client : `/etc/clientlibs/social/hbs/forum`
 * Propriété Categories : `cq.social.hbs.forum`
 
-Le [ Guide des composants de la communauté ](components-guide.md) répertorie les bibliothèques clientes complètes requises pour chaque composant SCF.
+Le [&#x200B; Guide des composants de la communauté &#x200B;](components-guide.md) répertorie les bibliothèques clientes complètes requises pour chaque composant SCF.
 
 [Clientlibs for Communities Components](clientlibs.md) décrit comment ajouter des clientlibs à une page.
 

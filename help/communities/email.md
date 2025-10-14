@@ -75,7 +75,7 @@ Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement
 
 ## Configuration des emails AEM Communities {#aem-communities-email-configuration}
 
-Une fois le [ service de messagerie par défaut](#default-mail-service-configuration) configuré, les deux instances existantes de la configuration OSGi `AEM Communities Email Reply Configuration`, incluses dans la version, deviennent fonctionnelles.
+Une fois le [&#x200B; service de messagerie par défaut](#default-mail-service-configuration) configuré, les deux instances existantes de la configuration OSGi `AEM Communities Email Reply Configuration`, incluses dans la version, deviennent fonctionnelles.
 
 Seule l&#39;instance pour les abonnements doit être paramétrée lors de l&#39;autorisation de la réponse par email.
 

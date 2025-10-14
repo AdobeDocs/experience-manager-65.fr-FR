@@ -56,7 +56,7 @@ Cette page fournit des informations essentielles sur l’utilisation de la fonct
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [ API de calendrier ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [&#x200B; API de calendrier &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
 * [Points de terminaison du calendrier](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 

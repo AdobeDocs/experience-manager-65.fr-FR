@@ -34,7 +34,7 @@ Pour plus d’informations, consultez la page [Principes de base des composants 
 
 Lorsque les [bibliothèques côté client demandées](essentials-socialgraph.md#essentials-for-client-side) sont incluses, voici comment le composant `Following` apparaît :
 
-![ ](assets/following.png)
+![&#x200B; &#x200B;](assets/following.png)
 
 ## Configuration suivante {#configuring-following}
 
