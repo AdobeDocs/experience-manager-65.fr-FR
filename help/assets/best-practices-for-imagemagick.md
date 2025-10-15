@@ -6,10 +6,10 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, envisagez des 
 
 Plusieurs versions des fichiers d’installation ImageMagic sont disponibles pour les différents systèmes d’exploitation. Utilisez la version appropriée de votre système d’exploitation.
 
-1. Téléchargez les [fichiers d’installation d’ImageMagick](https://www.imagemagick.org/script/download.php) adaptés à votre système d’exploitation.
+1. Téléchargez les fichiers d’installation d’ImageMagick appropriés (`https://www.imagemagick.org/script/download.php website`) pour votre système d’exploitation.
 1. Pour installer ImageMagick sur le disque hébergeant le serveur [!DNL Experience Manager], lancez le fichier d’installation.
 
 1. Définissez la variable de chemin d’environnement sur le répertoire d’installation d’ImageMagick.
@@ -82,7 +82,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
 Il existe plusieurs vulnérabilités de sécurité associées à l’utilisation d’ImageMagick pour traiter les images. Par exemple, le traitement des images envoyées par l’utilisateur ou l’utilisatrice implique le risque d’exécution de code à distance (RCE).
 
-En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, imagick de PHP, rmagick et paperclip de Ruby, et imagemagick de nodejs.
+En outre, divers plug-ins de traitement d’images dépendent de la bibliothèque ImageMagick, y compris, mais sans s’y limiter, l’imagick de PHP, l’imagick et le trombone de Ruby, et l’imagemagick de Nodejs.
 
 Si vous utilisez ImageMagick ou une bibliothèque affectée, Adobe vous recommande de réduire les vulnérabilités connues en effectuant au moins l’une des tâches suivantes (de préférence les deux) :
 

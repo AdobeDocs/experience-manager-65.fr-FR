@@ -7,10 +7,10 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+workflow-type: tm+mt
 source-wordcount: '2729'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 ## Plateforme {#platform}
 
-Bien qu’Experience Manager soit pris en charge sur plusieurs plateformes, Adobe constate une prise en charge optimale des outils natifs sur Linux® et Windows, ce qui favorise des performances optimales et une mise en œuvre simplifiée. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement d’[!DNL Experience Manager Assets]. A l’instar de tout déploiement d’Experience Manager, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’[!DNL Experience Manager Assets].
+Bien qu’Experience Manager soit pris en charge sur plusieurs plateformes, Adobe constate une prise en charge optimale des outils natifs sur Linux® et Windows, ce qui favorise des performances optimales et une mise en œuvre simplifiée. Dans l’idéal, vous devez déployer un système d’exploitation 64 bits pour répondre aux besoins de stockage du déploiement d’[!DNL Experience Manager Assets]. A l’instar de tout déploiement d’Experience Manager, vous devez mettre en œuvre TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance de création simple, il semble offrir de meilleurs résultats que MongoMK. Vous pouvez ajouter des instances de déchargement TarMK pour améliorer la capacité de traitement des workflows de votre déploiement d’[!DNL Experience Manager Assets].
 
 ### Dossier temporaire {#temp-folder}
 
@@ -174,7 +174,7 @@ Il s’agit d’une augmentation temporaire, et le magasin de données est resta
 
 En règle générale, la tâche de récupération de l’espace mémoire du magasin de données s’exécute chaque semaine avec d’autres tâches de maintenance planifiées.
 
-Si vous disposez d’un espace disque limité et exécutez de façon intensive le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], pensez à planifier la tâche de nettoyage plus fréquemment.
+Si vous disposez d’un espace disque limité et exécutez de façon intensive le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], pensez à planifier la tâche de récupération de l’espace mémoire plus fréquemment.
 
 #### Génération de rendus au moment de l’exécution {#runtime-rendition-generation}
 
@@ -211,7 +211,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!NOTE]
 >
->Les fichiers `policy.xml` et `configure.xml` d’ImageMagick sont disponibles à l’emplacement `/usr/lib64/ImageMagick-&#42;/config/` au lieu de `/etc/ImageMagick/`. Consultez la [documentation ImageMagick](https://www.imagemagick.org/script/resources.php) pour connaître l’emplacement des fichiers de configuration.
+>Les fichiers `policy.xml` et `configure.xml` d’ImageMagick sont disponibles à l’emplacement `/usr/lib64/ImageMagick-&#42;/config/` au lieu de `/etc/ImageMagick/`. Consultez la documentation d’ImageMagick (site web `https://www.imagemagick.org/script/resources.php`) pour obtenir l’emplacement des fichiers de configuration.
 
 Si vous utilisez [!DNL Experience Manager] dans Adobe Managed Services (AMS), contactez l’assistance clientèle d’Adobe si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Collaborez avec un ou une représentante du support client Adobe pour mettre en œuvre ces bonnes pratiques dans le cadre de votre déploiement AMS et choisir les outils et modèles les mieux adaptés aux formats propriétaires d’Adobe. Il se peut qu’[!DNL Experience Manager] ne puisse pas traiter des fichiers PSB à très haute résolution de plus de 30 000 x 23 000 pixels.
 
@@ -258,7 +258,7 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 
 Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources, par exemple, lorsqu’ils parcourent le texte des documents PDF, désactivez-la. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
-1. Dans l’interface [!DNL Experience Manager], accédez au [!UICONTROL Gestionnaire de packages].
+1. Dans l’interface [!DNL Experience Manager], accédez au [!UICONTROL gestionnaire de modules].
 1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
@@ -269,7 +269,7 @@ Lors de la création de requêtes qui génèrent d’importants ensembles de ré
 
 ### Fichiers volumineux {#large-files}
 
-Il existe deux problèmes importants connus relatifs aux fichiers volumineux dans [!DNL Experience Manager]. Lorsque la taille des fichiers est supérieure à 2 Go, la synchronisation de reprise progressive peut s’exécuter en cas de mémoire insuffisante. Dans certains cas, cela empêche la synchronisation de reprise de s’exécuter. Dans d’autres cas, cela entraîne le blocage de l’instance principale. Ce scénario s’applique à tous les fichiers dans [!DNL Experience Manager] dont la taille est supérieure à 2 Go, y compris les packages de contenu.
+Il existe deux problèmes importants connus relatifs aux fichiers volumineux dans [!DNL Experience Manager]. Lorsque la taille des fichiers est supérieure à 2 Go, la synchronisation de reprise progressive peut s’exécuter en cas de mémoire insuffisante. Dans certains cas, cela empêche la synchronisation de reprise de s’exécuter. Dans d’autres cas, cela entraîne le blocage de l’instance principale. Ce scénario s’applique à tous les fichiers dans [!DNL Experience Manager] dont la taille est supérieure à 2 Go, y compris les modules de contenu.
 
 De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un magasin de données S3 partagé, la restitution du fichier à partir du cache vers le système de fichiers peut prendre un certain temps. Par conséquent, lorsque vous avez recours à une réplication sans binaire, il est possible que les données binaires ne soient pas conservées avant la fin de la réplication. Cette situation peut entraîner des problèmes, surtout si la disponibilité des données est importante.
 

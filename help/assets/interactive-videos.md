@@ -10,10 +10,10 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '5927'
-ht-degree: 100%
+source-wordcount: '5914'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Pour voir une vidéo interactive shoppable en action, sélectionnez [Démonstrat
 
 * Sélectionnez la miniature si vous souhaitez suspendre la vidéo et ouvrir l’aperçu rapide du produit. Par exemple, sélectionnez la miniature du KitchenAid dans la vidéo pour afficher le mixeur avec une option de rotation à 360 degrés ou utilisez le zoom pour afficher les détails du mixeur.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=fr. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Image d’une vidéo interactive pouvant faire l’objet d’un achat](assets/chlimage_1-126.png) *Capture d’images vidéo à partir d’une vidéo interactive shoppable.*
 
@@ -43,16 +43,18 @@ Pour voir une vidéo interactive shoppable en action, sélectionnez [Démonstrat
 
 ### Découvrez comment les vidéos interactives sont créées {#watch-how-interactive-videos-are-created}
 
-Regardez une présentation sur [la manière dont les vidéos interactives sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutes et 30 secondes).
+Regardez une présentation sur [la manière dont les vidéos interactives sont créées](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) (7 minutes et 30 secondes).
 Même si la présentation vidéo est personnalisée grâce à Assets à la demande, les principes et les étapes restent compatibles avec les vidéos interactives dans Adobe Experience Manager Assets.
 
 ### Webinaire « Solutions client Adobe » {#adobe-customer-success-webinar}
 
 Le webinaire « Utilisation de la vidéo interactive, du partage de liens et du partage sur YouTube dans Experience Manager Assets » vous explique comment utiliser la vidéo interactive ainsi que d’autres fonctionnalités pour lier des événements basés sur la conversion à votre contenu marketing vidéo.
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[Utilisation de la vidéo interactive, du partage de liens et du partage YouTube dans Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/). 
+-->
 
 ## Démarrage rapide : vidéos interactives {#quick-start-interactive-videos}
 
@@ -294,7 +296,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
 
    * Pour commencer à lire la vidéo, sélectionnez le bouton **[!UICONTROL Lecture]**. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, sélectionnez **[!UICONTROL Ajouter un segment]** dans la barre d’outils. Répétez cette opération jusqu’à ce que vous ayez atteint la fin de la vidéo.
 
-     Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages de produit d’aperçu rapide pour que les clients procèdent à leurs achats ou accèdent à des pages web pour plus d’informations.
+     Pour chaque segment à ajouter, vous pouvez affecter une ou plusieurs images miniatures, puis lier ces miniatures à des pages produits en aperçu rapide pour que les clientes et clients procèdent à leurs achats ou accèdent à des pages web pour plus d’informations.
 
    * Pour commencer à lire la vidéo, sélectionnez le bouton **[!UICONTROL Lecture]**. Lorsqu’un produit, un service ou un détail particulier que vous souhaitez mettre en évidence est affiché, sélectionnez **[!UICONTROL Pause]**. Sélectionnez **[!UICONTROL Ajouter un segment]**.
 
@@ -527,8 +529,8 @@ Voir [Incorporer la visionneuse de vidéos ou d’images dans une page web](/hel
 Si vous avez ajouté l’interactivité avec des aperçus rapides, utilisez uniquement le code intégré ; si vous avez ajouté l’interactivité grâce à des pages web connectées par liens hypertexte, vous pouvez également utiliser l’URL publiée. Notez toutefois que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 
 1. Dans le code de la page web cible, identifiez l’emplacement de la vidéo statique.
-1. Supprimez la vidéo statique et remplacez le code par celui incorporé ou par l’URL que vous avez copié à partir d’Experience Manager Assets, en l’état.
-Le code incorporé copié est défini pour un environnement réactif afin qu’il s’adapte automatiquement à la zone occupée précédemment par la vidéo statique.
+1. Supprimez la vidéo statique et remplacez le code par le code intégré ou par l’URL que vous avez copié à partir d’Experience Manager Assets, en l’état.
+Le code intégré copié est défini pour un environnement réactif afin qu’il s’adapte automatiquement à la zone occupée précédemment par la vidéo statique.
 
 >[!NOTE]
 >
