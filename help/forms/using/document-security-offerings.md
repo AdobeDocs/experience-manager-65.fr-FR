@@ -37,7 +37,7 @@ Le serveur Document Security est le composant central par l’intermédiaire du
 
 Le serveur Document Security fournit une interface web (page web) pour créer des politiques, gérer des documents protégés par une politique et surveiller les événements associés aux documents protégés par une politque. Les administrateurs et administratrices peuvent également configurer des options globales, telles que l’authentification des utilisateurs et utilisatrices, la vérification et l’envoi de messages aux utilisateurs et utilisatrices invités et la gestion des comptes des utilisateurs et utilisatrices invités.
 
-Le serveur est inclus dans l’offre de module complémentaire Document Security d’AEM Forms. Vous pouvez contacter l’[équipe commerciale](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG?lang=fr) d’AEM Forms pour acheter le module complémentaire Document Security.
+Le serveur est inclus dans l’offre de module complémentaire Document Security d’AEM Forms. Vous pouvez contacter l’[équipe commerciale](https://business.adobe.com/fr/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG?lang=fr) d’AEM Forms pour acheter le module complémentaire Document Security.
 
 ### Protéger les documents {#protect-documents}
 

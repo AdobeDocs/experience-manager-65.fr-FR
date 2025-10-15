@@ -55,6 +55,6 @@ Pour plus d’informations, consultez la documentation Google de l’extension [
 >[!NOTE]
 > 
 > LiveCycle ES4 prend en charge le rendu de formulaires XFA en formulaires HTML5 afin que les formulaires puissent être ouverts dans les navigateurs prenant en charge le format HTML5, y compris ceux qui sont installés sur des appareils mobiles, tels que les iPad. Le rendu HTML5 des formulaires conserve la disposition du formulaire et prend en charge la plupart des logiques de formulaire (JavaScript, Form Calc et les validations de formulaire, par exemple) intégrées dans le modèle de formulaire XFA. Ainsi, vos investissements technologiques dans les formulaires XFA sont facilement transférés vers les appareils sur lesquels l’exécution du plug-in Adobe Reader n’est pas possible.
-> >Pour plus d’informations, consultez la [documentation de produit LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
+> >Pour plus d’informations, consultez la [documentation de produit LiveCycle](https://business.adobe.com/fr/products/experience-manager/forms/aem-forms.html).
 
 [Mentions légales](https://chl-author-preview.corp.adobe.com/content/help/fr/legal/legal-notices.html) | [Politique de confidentialité en ligne](https://www.adobe.com/privacy.html)

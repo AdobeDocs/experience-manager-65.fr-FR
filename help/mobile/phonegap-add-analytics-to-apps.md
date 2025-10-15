@@ -24,7 +24,7 @@ Vous souhaitez créer des expériences attrayantes et pertinentes pour les utili
 
 Vos utilisateurs accèdent-ils à tout le contenu ? Abandonnent-ils l&#39;application, et si oui, où ? À quelle fréquence restent-ils dans l&#39;application et à quelle fréquence reviennent-ils pour l&#39;utiliser? Quels changements pouvez-vous apporter et ensuite mesurer cette augmentation de la rétention? Qu’en est-il des taux de plantage ? Votre application est-elle en panne pour vos utilisateurs ?
 
-Tirez parti de [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) dans vos applications Adobe Experience Manager (AEM) en intégrant à [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Tirez parti de [Mobile App Analytics](https://business.adobe.com/fr/products/analytics/mobile-marketing.html) dans vos applications Adobe Experience Manager (AEM) en intégrant à [Adobe Mobile Services](https://business.adobe.com/fr/products/campaign/mobile-marketing.html).
 
 Instrumentez vos applications AEM pour suivre, générer des rapports et comprendre comment vos utilisateurs interagissent avec votre application et votre contenu mobiles, et pour mesurer les mesures de cycle de vie clés telles que les lancements, le temps passé dans l’application et le taux de plantage.
 
