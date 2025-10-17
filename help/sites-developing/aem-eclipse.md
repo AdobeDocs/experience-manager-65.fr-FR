@@ -126,7 +126,7 @@ Pour créer l’exemple de projet, procédez comme suit :
 
    >[!TIP]
    >
-   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [&#x200B; Débogage à distance du SDK AEM &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
+   >Pour plus d’informations sur le débogage de votre projet s’exécutant sur un SDK AEM local, consultez le document [&#x200B; Débogage à distance du SDK AEM &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging).
 
 1. Cliquez sur **Finish** (Terminer).
 
