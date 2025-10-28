@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 0e80096b6b49372765b04a3bc1438b93d9cccf6e
+source-git-commit: 0915f8a65b1a9697eaca95be3ef9a786a1071fe5
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 92%
+source-wordcount: '408'
+ht-degree: 90%
 
 ---
 
@@ -28,6 +28,10 @@ Lorsque vous travaillez dans une configuration AEM 6.5, la fonction d’activati
 
 * Réduire les risques lors des déploiements et des mises à niveau.
 
+## Remarque
+
+À partir du pack de services 23 d’AEM 6.5, vous n’avez pas besoin d’effectuer les étapes préalables, car le lot [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/) est déjà installé avec le module complémentaire Forms.
+
 ## Prérequis
 
 Avant d’activer la fonction d’activation/désactivation des fonctionnalités dans votre configuration AEM 6.5, vérifiez les points suivants :
@@ -37,10 +41,6 @@ Avant d’activer la fonction d’activation/désactivation des fonctionnalités
 * Accédez à `http://<author-instance-url>:portnumber/system/console/bundles` et vérifiez si le lot **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** est présent ou non. S’il n’est pas présent, [téléchargez le lot à partir de ce lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
 ![Fonction d’activation/désactivation des fonctionnalités](/help/forms/using/assets/feature-toggle-1.1.8.png)
-
->[!NOTE]
->
->Vous pouvez activer le bouton (bascule) des fonctionnalités dans votre environnement AEM 6.5 ou dans des versions antérieures, selon vos besoins.
 
 ## Bouton (bascule) Activer la fonction {#enable-feature-toggle-65}
 
