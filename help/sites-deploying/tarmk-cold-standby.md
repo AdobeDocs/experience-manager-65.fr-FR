@@ -10,10 +10,10 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
-workflow-type: ht
-source-wordcount: '2673'
-ht-degree: 100%
+source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+workflow-type: tm+mt
+source-wordcount: '2680'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 La capacité Cold Standby du micronoyau Tar permet à une ou plusieurs instances Adobe Experience Manager (AEM) de secours de se connecter à une instance principale. Le processus de synchronisation n’est qu’une façon de le faire, c’est-à-dire qu’il s’effectue uniquement de l’instance principale vers les instances de secours.
 
-L’objectif des instances de secours est de garantir une Live Copy du référentiel principal et d’assurer un basculement rapide sans perte de données s’il n’est pas disponible pour une raison quelconque.
+L’objectif des instances de secours est de garantir une Live Copy des données du référentiel principal et d’assurer un basculement rapide sans perte de données au cas où l’instance principale serait indisponible pour une raison quelconque.
 
 Le contenu est synchronisé de manière linéaire entre l’instance principale et les instances de secours sans aucune vérification d’intégrité pour détecter la corruption de fichier ou de référentiel. En raison de cette conception, les instances de secours sont des copies exactes de l’instance principale et ne peuvent pas aider à atténuer les incohérences sur les instances principales.
 
@@ -43,7 +43,7 @@ Le contenu est synchronisé de manière linéaire entre l’instance principale 
 
 ## Fonctionnement {#how-it-works}
 
-Sur l’instance principale d’AEM, un port TCP est ouvert et écoute les messages entrants. Actuellement, il existe deux types de messages que les secondaires envoient au principal :
+Sur l’instance principale d’AEM, un port TCP est ouvert et écoute les messages entrants. Actuellement, il existe deux types de messages que l’instance de secours envoie à l’instance principale :
 
 * un message demandant l’identifiant du segment de la tête actuelle ;
 * un message demandant des données de segment avec un identifiant spécifié.
@@ -72,7 +72,7 @@ Sur l’instance de secours, vous pouvez vous attendre à une consommation élev
 
 #### Sécurité {#security}
 
-En supposant que toutes les instances s’exécutent dans la même zone de sécurité intranet, le risque d’une violation de sécurité est considérablement réduit. Néanmoins, vous pouvez ajouter une couche de sécurité supplémentaire en activant les connexions SSL entre les secondaires et le principal. Cela réduit la possibilité que les données soient compromises par un intermédiaire.
+En supposant que toutes les instances s’exécutent dans la même zone de sécurité intranet, le risque d’une violation de sécurité est considérablement réduit. Néanmoins, vous pouvez ajouter une couche de sécurité supplémentaire en activant les connexions SSL entre les instances de secours et les instances principales. Cela réduit la possibilité que les données soient compromises par un intermédiaire.
 
 De plus, vous pouvez spécifier les instances de secours autorisées à se connecter en limitant l’adresse IP des requêtes entrantes. Cela permet de garantir qu’aucune personne de l’intranet ne peut copier le référentiel.
 
@@ -93,7 +93,7 @@ De plus, vous pouvez spécifier les instances de secours autorisées à se conne
 
 Pour créer une configuration TarMK Cold Standby, créez d’abord les instances secondaires en effectuant une copie du système de fichiers de l’ensemble du dossier d’installation de l’instance principale vers un nouvel emplacement. Vous pouvez ensuite démarrer chaque instance avec un mode d’exécution spécifiant leur rôle (`primary` ou `standby`).
 
-Consultez ci-dessous la procédure devant être suivie pour créer une installation avec une instance principale et une instance de secours : 
+Vous trouverez ci-dessous la procédure à suivre pour créer une configuration avec une instance principale et une instance de secours :
 
 1. Installez AEM.
 
@@ -210,7 +210,7 @@ Consultez ci-dessous la procédure devant être suivie pour créer une installat
 
 Le service peut également être configuré à l’aide de la console Web, en procédant comme suit :
 
-1. Accédez à la console web : *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web : *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez un service nommé **Apache Jackrabbit Oak Segment Tar Cold Standby Service** et double-cliquez dessus pour modifier les paramètres.
 1. Enregistrez les paramètres et redémarrez les instances pour que les nouveaux paramètres puissent prendre effet.
 
@@ -218,7 +218,7 @@ Le service peut également être configuré à l’aide de la console Web, en pr
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **secondaires** dans la console Web des paramètres Sling.
 >
->Ceci peut être effectué en accédant à *https://localhost:4502/system/console/status-slingsettings* et en vérifiant la ligne **« modes d’exécution »**.
+>Pour ce faire, accédez à *https://localhost:4502/system/console/status-slingsettings* et vérifiez la ligne **« Modes d’exécution »**.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -242,7 +242,7 @@ Dans l’instance secondaire *error.log*, vous devriez voir l’entrée suivante
 *INFO* [FelixStartLevel] org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService started standby sync with 10.20.30.40:8023 at 5 sec.
 ```
 
-Dans le fragment de code de journal ci-dessus, *10.20.30.40* est l’adresse IP de l’instance principale.
+Dans le fragment de code de journal ci-dessus, *10.20.30.40* est l’adresse IP de l’adresse IP principale.
 
 Dans l’instance **principale** *tarmk-coldstandby.log*, vous voyez des entrées de ce type :
 
@@ -336,7 +336,7 @@ Pour ce faire, procédez comme suit :
 
 ## Surveillance {#monitoring}
 
-La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Ce faisant, vous pouvez inspecter l’état actuel de l’instance secondaire et de l’instance principale à l’aide de la [Console JMX](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
+La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [ console JMX ](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
 
 **Secondaire**
 
@@ -365,7 +365,7 @@ L’observation de l’instance principale expose des informations générales a
 
 * `Mode:` affiche toujours la valeur `primary`.
 
-De plus, les informations concernant jusqu’à dix clients (instances secondaire) connectés à l’instance principale peuvent être récupérées. L’ID MBean est l’UUID de l’instance. Il n’existe pas de méthodes pouvant être appelées pour ces MBeans, mais il existe quelques attributs utiles en lecture seule :
+En outre, il est possible de récupérer les informations relatives à un maximum de dix clients (instances de secours) connectés au principal. L’ID MBean est l’UUID de l’instance. Il n’existe pas de méthodes pouvant être appelées pour ces MBeans, mais il existe quelques attributs utiles en lecture seule :
 
 * `Name:` l’ID du client.
 * `LastSeenTimestamp:` l’horodatage de la dernière demande dans une représentation textuelle.
@@ -402,12 +402,12 @@ Il se peut que la synchronisation de l’instance de secours avec l’instance p
 
 Comme alternative, le référentiel principal peut être copié manuellement sur le référentiel secondaire après avoir exécuté la compression sur le référentiel principal, reconstruisant essentiellement le référentiel secondaire à chaque exécution de la compression.
 
-### Récupérer de l’espace mémoire du magasin de données {#data-store-garbage-collection}
+### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 ll est important d’exécuter de temps en temps une récupération de l’espace mémoire sur les instances du magasin de données des fichiers. Sinon, les fichiers binaires supprimés restent sur le système de fichiers, ce qui contribue à surcharger le lecteur. Pour lancer la récupération de l’espace mémoire, suivez la procédure ci-dessous :
 
 1. Exécutez le processus de maintenance du référentiel Cold Standby, comme expliqué dans la section [ci-dessus](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
-1. Une fois le processus de maintenance terminé et les instances relancées, procédez comme suit :
+1. Une fois le processus de maintenance terminé et les instances redémarrées, procédez comme suit :
 
    * Sur l’instance principale, exécutez la récupération de l’espace mémoire du magasin de données par le biais du bean JMX approprié, comme décrit dans la section [Exécuter la récupération de l’espace mémoire du magasin de données via la console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * Sur l’instance secondaire, la récupération de l’espace mémoire du magasin de données est uniquement disponible via le MBean **BlobGarbageCollection** - `startBlobGC()`. Le MBean **RepositoryManagement** n’est pas disponible sur l’instance de secours.
