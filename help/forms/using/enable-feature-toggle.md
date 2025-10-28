@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 0915f8a65b1a9697eaca95be3ef9a786a1071fe5
+source-git-commit: 730f8cabd6825ed289238f9000037644a8139301
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '406'
 ht-degree: 90%
 
 ---
@@ -30,7 +30,7 @@ Lorsque vous travaillez dans une configuration AEM 6.5, la fonction d’activati
 
 ## Remarque
 
-À partir du pack de services 23 d’AEM 6.5, vous n’avez pas besoin d’effectuer les étapes préalables, car le lot [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/) est déjà installé avec le module complémentaire Forms.
+À partir du pack de services 23 d’AEM 6.5, vous n’avez pas besoin d’installer le bundle [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/), car il est déjà installé avec le module complémentaire Forms.
 
 ## Prérequis
 
