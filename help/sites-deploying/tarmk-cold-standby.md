@@ -286,7 +286,7 @@ Les paramètres OSGi ci-dessous sont disponibles pour le service Cold Standby.
 * **Intervalle de synchronisation (`interval`) :** ce paramètre détermine l’intervalle entre la requête de synchronisation et s’applique uniquement à l’instance de secours.
 
 * **Plages IP autorisées (`primary.allowed-client-ip-ranges`) :** plages IP sur lesquelles l’instance principale autorise la connexion.
-* **Sécuriser (`secure`) ** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
+* **Sécuriser (`secure`) &#x200B;** : active le chiffrement SSL. Pour pouvoir utiliser ce paramètre, il doit être activé sur toutes les instances.
 * **Délai d’expiration de lecture Standby (`standby.readtimeout`) :** délai d’expiration pour les demandes provenant de l’instance de secours, en millisecondes. La valeur par défaut utilisée est de 60 000 (une minute).
 
 * **Nettoyage automatique de secours (`standby.autoclean`) :** appelez cette méthode de nettoyage si la taille du magasin augmente lors d’un cycle de synchronisation..
@@ -336,7 +336,7 @@ Pour ce faire, procédez comme suit :
 
 ## Surveillance {#monitoring}
 
-La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [ console JMX ](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
+La fonctionnalité expose des informations à l’aide de JMX ou de MBeans. Vous pouvez ainsi inspecter l’état actuel de l’instance de secours et de l’instance principale à l’aide de la [&#x200B; console JMX &#x200B;](/help/sites-administering/jmx-console.md). Ces informations se trouvent dans un MBean de `type org.apache.jackrabbit.oak:type="Standby"` nommé `Status`.
 
 **Secondaire**
 
