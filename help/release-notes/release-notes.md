@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
-workflow-type: ht
-source-wordcount: '6713'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '6746'
+ht-degree: 99%
 
 ---
 
@@ -256,7 +256,7 @@ Ajout d’une propriété de métadonnées (`jcr:content/metadata/dam:scene7Smar
 
 **Correctif clé inclus**
 
-Correction d’un problème dans Dynamic Media - Déploiements hybrides en raison desquels les mises à jour du paramètre `catalog.expiration` sous `/conf/global/settings/dam/dm/imageserver` n’étaient pas reflétées sur les URL du serveur ou de l’instance de création, malgré la réussite de la réplication sans erreurs. La mise à jour garantit la cohérence des valeurs d’expiration entre CRX/DE, la réponse du serveur et les URL de diffusion publiques. Cela améliore ensuite le comportement du cache et la fiabilité des transformations d’image. (ASSETS-44837)
+Correction d’un problème dans Dynamic Media - Déploiements hybrides en raison desquels les mises à jour du paramètre `catalog.expiration` sous `/conf/global/settings/dam/dm/imageserver` n’étaient pas répercutées sur les URL de création ou serveur, malgré une réplication effectuée sans erreurs. La mise à jour garantit la cohérence des valeurs d’expiration entre CRX/DE, la réponse du serveur et les URL de diffusion publiques. Cela améliore ensuite le comportement du cache et la fiabilité des transformations d’image. (ASSETS-44837)
 
 **Points importants à prendre en compte**
 
@@ -308,7 +308,7 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 
 * Lorsqu’un utilisateur ou une utilisatrice soumet un formulaire, les pièces jointes peuvent être dupliquées, entraînant plusieurs envois du même fichier. (FORMS-19045)(FORMS-19051).
 
-* L’ajout de coordinateurs et coordinatrices aux jeux de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
+* L’ajout de coordinateurs et coordinatrices aux ensembles de politiques dans AEM 6.5 Document Security échoue dans les environnements de production et inférieurs. (FORMS-18603, FORMS-18212, FORMS-19697)
 
 * Lorsqu’une personne clique sur « datepicker-calendar-icon » en mode bureau avec un champ vide dans le pack de services 22 d’AEM Forms, une erreur se produit en raison de la variable _$focusedDate non définie, interrompant les scripts personnalisés associés. (FORMS-18483)(FORMS-18268).
 
@@ -361,6 +361,10 @@ Le package de module complémentaire hybride est disponible publiquement dans la
 * Lorsqu’un utilisateur ou une utilisatrice utilise la méthode retryAction(long actionOid) dans le gestionnaire de processus AEM JEE, un comportement inattendu se produit. (FORMS-18357)(FORMS-18187).
 
 * Sur AEM Forms 6.5.21.0, la conversion PDFG échoue avec l’erreur suivante : (FORMS-16851) (FORMS-14613)
+
+* Sur AEM Forms 6.5.23.0 avec le correctif 2, les conversions (PDFG) PS vers PDF et HTML vers PDF (WebKit) échouent. (FORMS-21721)
+
+* Sur AEM Forms 6.5.23.0 avec le correctif 3, la conversion d’image en PDF (PDFG) échoue. (FORMS-22029)
 
 #### Captcha de formulaires {#forms-captcha-6523}
 
@@ -456,7 +460,7 @@ Correction d’un problème en raison duquel la validation SNI bloquait les appe
 * Correction d’un comportement de fusion de balises incohérent en s’assurant que la valeur de la balise fusionnée s’affiche toujours correctement dans les ressources, que les balises soient créées en ligne ou par la méthode standard. Empêche les valeurs résiduelles des champs `EN:title` de remplacer l’affichage de la balise fusionnée. (CQ-4358812)
 * Correction du codage répété de l’esperluette dans les valeurs de balise dans la boîte de dialogue de modification de balise. Empêche l’ajout d’entités « &amp; » supplémentaires à chaque enregistrement, ce qui garantit que les valeurs des balises restent nettes et cohérentes entre les modifications et évite les erreurs d’affichage dans le contenu créé. (CQ-4359048)
 * Correction d’une erreur `ClassCastException` qui empêchait la diffusion d’e-mails lors de l’envoi d’un formulaire adaptatif dans AEM 6.5 sur WebSphere®. Le correctif permet une transmission réussie des e-mails en assurant la compatibilité entre `com.sun.mail.handlers.text_plain` et `java.activation.DataContentHandler`, en s’alignant sur la configuration du gestionnaire de messagerie adaptée aux environnements WebSphere®. (NPR-42500)
-* Amélioration de la gestion des erreurs dans le gestionnaire de packages, en veillant à ce qu’AEM affiche un message clair lorsque l’installation échoue et que la réponse d’erreur est vide dans le cas contraire. Ce correctif empêche les échecs silencieux et permet un débogage plus rapide lors du déploiement des packages. (NPR-42375)
+* Amélioration de la gestion des erreurs dans le gestionnaire de modules, en veillant à ce qu’AEM affiche un message clair lorsque l’installation échoue et que la réponse d’erreur est vide dans le cas contraire. Ce correctif empêche les échecs silencieux et permet un débogage plus rapide lors du déploiement des packages. (NPR-42375)
 
 <!--
 #### Security{#foundation-security-6523}
@@ -516,14 +520,14 @@ Correction d’un problème dans l’élément `EmailNotificationServiceProcesso
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface d’utilisation du gestionnaire de packages se ferme occasionnellement pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari], mais peut se produire par intermittence sur n’importe quel navigateur.
+>La boîte de dialogue de l’interface d’utilisation du gestionnaire de modules se ferme occasionnellement pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari], mais peut se produire par intermittence sur n’importe quel navigateur.
 
 **Installation automatique**
 
 Vous pouvez utiliser deux méthodes différentes pour installer automatiquement [!DNL Experience Manager] 6.5.23.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Placez le package dans le dossier `../crx-quickstart/install` lorsque le serveur est disponible en ligne. Le package est automatiquement installé.
-* Utilisez l’[API HTTP à partir du gestionnaire de packages](/help/sites-administering/package-manager.md#package-share). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
+* Utilisez l’[API HTTP à partir du gestionnaire de modules](/help/sites-administering/package-manager.md#package-share). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
 >[!NOTE]
 >
@@ -751,9 +755,9 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
 
 
-## Lots OSGi et packages de contenu inclus{#osgi-bundles-and-content-packages-included}
+## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
-Les documents texte suivants répertorient les lots OSGi et les packages de contenu inclus dans cette version du pack de services [!DNL Experience Manager] 6.5.
+Les documents texte suivants répertorient les lots OSGi et les modules de contenu inclus dans cette version du pack de services [!DNL Experience Manager] 6.5.
 
 * [Liste des lots OSGi inclus dans Experience Manager 6.5.23.0](/help/release-notes/assets/65230-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [Liste des packages de contenu inclus dans Experience Manager 6.5.23.0](/help/release-notes/assets/65230-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->

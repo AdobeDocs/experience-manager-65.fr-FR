@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
-workflow-type: ht
-source-wordcount: '10085'
-ht-degree: 100%
+source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
+workflow-type: tm+mt
+source-wordcount: '10086'
+ht-degree: 99%
 
 ---
 
@@ -184,7 +184,7 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, la bibliothèque 32 bits `nspr` peut ne pas être disponible par défaut. Installez-la si elle n’est pas présente.
+* (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, SLES15, la bibliothèque `nspr` 32 bits peut ne pas être disponible par défaut ; installez-la si elle n’est pas présente.
 
 * (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
 
@@ -270,7 +270,7 @@ Ces étapes supposent que vous disposiez des privilèges d’administration néc
 
 ##### Préparation du package FRL (Adobe Admin Console)
 
-Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
+Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
 ###### Étape 1 : se connecter à Adobe Admin Console
 
@@ -314,7 +314,7 @@ Une fois que vous disposez du compte approprié, procédez comme suit pour accor
 
 ##### Déployer le package FRL (serveur AEM Forms)
 
-Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
+Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
 
 ###### Étape 4 : se connecter au serveur exécutant AEM Forms en tant qu’administrateur ou administratrice
 
@@ -326,7 +326,7 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 
 1. Ouvrez le Panneau de Contrôle Windows.
 2. Accédez à **Paramètres** et ouvrez **Applications**.
-3. Localisez **Adobe Acrobat** dans la liste des programmes installés.
+3. Localisez **Adobe Acrobat** dans la liste des programmes installés.
 4. Sélectionnez **Désinstaller** et suivez les invites pour supprimer l’application. Le cas échéant, redémarrez le serveur.
 5. Vérifiez que toutes les versions Classic du programme sont désinstallées. Utilisez l’[outil Adobe Acrobat Cleaner](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si nécessaire pour en effectuer la suppression complète.
 
@@ -335,7 +335,7 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
-2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
+2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
 4. Suivez ensuite les instructions d’installation fournies dans cette page :
    * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
@@ -485,7 +485,7 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
-2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
+2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
 4. Suivez ensuite les instructions d’installation fournies dans cette page :
    * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
@@ -641,7 +641,7 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
-2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
+2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
 4. Suivez ensuite les instructions d’installation fournies dans cette page :
    * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
@@ -905,7 +905,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1088,7 +1088,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Ouvrez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
@@ -1229,8 +1229,8 @@ Avant de configurer des certificats, assurez -vous que vous disposez des éléme
 
 Pour configurer les certificats, procédez comme suit :
 
-1. Connectez-vous à l’instance Auteur AEM en tant qu’administrateur. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
-1. Cliquez sur le champ **[!UICONTROL nom]** du compte d’utilisateur ou d’utilisatrice. La page **[!UICONTROL Modifier les paramètres utilisateur]** s’affiche. Sur l’instance d’auteur AEM, les certificats résident dans un KeyStore. Si vous n’avez pas créé de KeyStore précédemment, cliquez sur **[!UICONTROL Créer KeyStore]** et définissez un nouveau mot de passe pour le KeyStore. Si le serveur contient déjà un KeyStore, ignorez cette étape.  Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier Key Store est toujours identique au mot de passe de la clé privée.
+1. Connectez-vous à l’instance de création AEM en tant qu’administrateur ou administratrice. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
+1. Cliquez sur le champ **[!UICONTROL nom]** du compte d’utilisateur ou d’utilisatrice. La page **[!UICONTROL Modifier les paramètres utilisateur]** s’affiche. Sur l’instance de création AEM, les certificats résident dans un KeyStore. Si vous n’avez pas créé de KeyStore précédemment, cliquez sur **[!UICONTROL Créer KeyStore]** et définissez un nouveau mot de passe pour le KeyStore. Si le serveur contient déjà un KeyStore, ignorez cette étape.  Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier Key Store est toujours identique au mot de passe de la clé privée.
 1. Sur la page **[!UICONTROL Modifier les paramètres utilisateur]**, sélectionnez lʼonglet **[!UICONTROL KeyStore]**. Développez l’option **[!UICONTROL Ajouter la clé privée à partir du fichier de magasin de clés]**, puis fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
 1. Pour télécharger le fichier de certificat, cliquez sur **[!UICONTROL Sélectionner le fichier du magasin de clés]**, puis téléchargez un fichier &lt;filename>.pfx.
 
@@ -1373,7 +1373,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-+++OpenOffice
++++OpenOffice 
 
 **Microsoft® Windows**
 
@@ -1398,7 +1398,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-Problèmes de conversion HTML vers PDF
++++Problèmes de conversion d’HTML vers PDF
 
 * Assurez-vous que les répertoires de polices sont ajoutés dans l’interface utilisateur de configuration de PDF Generator.
 
@@ -1459,7 +1459,7 @@ Problèmes de conversion HTML vers PDF
 
 +++
 -->
-Échec des tests d’automatisation
++++Échec des tests d’automatisation
 
 * Pour Microsoft® Office et OpenOffice, effectuez au moins une conversion manuellement (pour chaque utilisateur ou utilisatrice) afin de garantir qu’aucune boîte de dialogue ne s’affiche pendant la conversion. Si une boîte de dialogue apparaît, fermez-la. Aucune boîte de dialogue de ce type ne doit apparaître lors de la conversion automatisée.
 
