@@ -20,7 +20,7 @@ Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent év
 
 ## Comment Content and Commerce contribue au succès de ses clients
 
-Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
+Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager qui fournit des composants principaux commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
 Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de leur choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
 
@@ -35,7 +35,7 @@ Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composa
 Ces projets doivent gérer toute la complexité de l’intégration d’une solution de commerce. Une solution de commerce peut être n’importe quelle solution commerciale telle qu’Adobe Commerce ou un ensemble de services commerciaux personnalisés. L’intégration dépend fortement des cas d’utilisation et de l’écosystème du projet. Il touche généralement différents endroits et se présente sous des formes différentes :
 
 * Intégration d’un écosystème complexe et dynamique (exemples de catalogues de produits)
-* Gérer par l’entreprise du contenu d’un produit avec son propre cycle de vie de manière efficace et multidimensionnelle
+* Gérer par l’entreprise du contenu d’un produit avec son propre cycle de vie de manière efficace et omnicanal
 * Conception de parcours d’achats complexes et personnalisés pour divers intervenants
 * Possibilité d’adapter et d’innover rapidement en front-end comme en back-end
 * Exécution d’une infrastructure de bout en bout évolutive et stable, conçue pour des performances de pointe (ventes flashs, Black Friday, etc.) : inclut la recherche unifiée et la gestion du cache
@@ -50,7 +50,7 @@ Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des proj
 
 ## Avantages de CIF {#cif-benefits}
 
-CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients, comme par exemple le profil unifié. Ce profil capture en détail le comportement d’un visiteur ou d’une visiteuse et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
+CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients, comme le profil unifié. Ce profil capture en détail le comportement d’un visiteur ou d’une visiteuse et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
 
 Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au spécialiste marketing de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 

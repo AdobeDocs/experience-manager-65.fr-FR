@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 source-git-commit: 050049f22d329d3af0cfc8fa4bbb12fe7f99b5fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Commencez ici pour obtenir un aperçu des parcours guidés disponibles pour comp
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre audience, où qu’elle se trouve et quel que soit son canal.
 
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences digitales.
 
@@ -44,7 +44,7 @@ Les informations contenues dans les parcours peuvent utiles à plusieurs persona
 
 Un parcours de documentation est disponible pour chaque sujet suivant lié au découplage.
 
-| Titre | Description | Public principal |
+| Titre | Description | Audience principale |
 |---|---|---|
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Découvrez les technologies découplées, ce qu’elles apportent à l’expérience utilisateur, comment AEM prend en charge les modèles découplés et comment mettre en œuvre votre propre projet de développement découplé, de A à Z. | Développeurs |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Découvrez les technologies découplées, leur utilisation pour votre projet et comment créer et mettre à jour des projets de traduction dans AEM, de A à Z. | Spécialistes de la traduction |

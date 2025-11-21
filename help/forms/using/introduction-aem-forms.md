@@ -70,7 +70,7 @@ Les formulaires de navigateur HTML5 peuvent être affichés sur des appareils mo
 
 **Formulaires adaptatifs**
 
-Les formulaires adaptatifs peuvent s’adapter de manière dynamique aux réponses des utilisateurs et utilisatrices en ajoutant ou supprimant des champs ou des sections selon les besoins. AEM permet de réutiliser des modèles de formulaire XML Adobe pour créer des formulaires adaptatifs.
+Les formulaires adaptatifs peuvent s’adapter de manière dynamique aux réponses des utilisateurs et utilisatrices en ajoutant ou supprimant des champs ou des sections selon les besoins. AEM permet de réutiliser des modèles de formulaires XML Adobe pour créer des formulaires adaptatifs.
 
 ### Fonctionnalités prises en charge {#supported-features}
 
@@ -118,7 +118,7 @@ Des documents personnalisés tels que des reçus, des kits de bienvenue et des i
 * Environnement de création de correspondance avec prise en charge des modèles, des blocs de contenu, des règles métier, etc.
 * Conversion et assemblage de documents
 * Prise en charge de la remise de documents par lots ou à la demande via plusieurs canaux, notamment le web, la messagerie et le papier
-* Pistes d’audit avec historique des modifications
+* Journaux d’audit avec historique des modifications
 * Prise en charge des signatures numériques pour garantir l’intégrité du contenu et l’identité du ou de la signataire
 * Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les politiques d’utilisation, le suivi et l’audit
 

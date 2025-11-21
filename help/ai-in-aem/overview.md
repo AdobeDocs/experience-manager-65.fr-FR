@@ -7,11 +7,11 @@ exl-id: fe05a5f7-8d25-4e1a-b340-9fae3a2ee48a
 source-git-commit: b8ff432e88ffce5246071353961f87c10e8cdb27
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 
-# L’IA dans AEM {#ai-in-aem}
+# IA dans AEM {#ai-in-aem}
 
 L’IA fait partie intégrante de Adobe Experience Manager. Elle est utilisée pour aider les utilisateurs et utilisatrices à trouver des informations ou à générer des expériences.
 
