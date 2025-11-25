@@ -155,7 +155,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Vous pouvez également utiliser la [touche de raccourci](/help/sites-authoring/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
-* [Solutions](https://business.adobe.com/)
+* [Solutions](https://business.adobe.com/fr/)
 
   ![Solutions](do-not-localize/screen_shot_2018-03-23at103552.png)
 

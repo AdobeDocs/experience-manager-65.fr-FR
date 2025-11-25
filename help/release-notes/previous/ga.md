@@ -246,12 +246,12 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 * L’intégration d’Adobe Target utilise désormais l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
 * La version 6.3 d’`mbox.js` Adobe Target est incluse. Adobe recommande vivement de passer l’implémentation à `at.js` v1.x.
-* La version 1.5.0 de `at.js` est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour mettre en place de `at.js` 1.x sur le site.
+* La version 1.5.0 de `at.js` est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/fr/products/experience-platform/launch.html) pour mettre en place de `at.js` 1.x sur le site.
 
 #### AEM et Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 est inclus. Adobe recommande de passer à la mise en œuvre d’`AppMeasurement.js`.
-* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour mettre en place AppMeasurement.js sur le site.
+* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/fr/products/experience-platform/launch.html) pour mettre en place AppMeasurement.js sur le site.
 
 #### AEM et Commerce {#aem-commerce}
 
@@ -435,7 +435,7 @@ Consultez le [Résumé des nouvelles fonctionnalités et améliorations apporté
 
 Adobe applique un modèle de développement axé sur les clients et clientes afin qu’ils puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs, utilisatrices et partenaires qui contribuent à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
+Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et utilisatrices, et du développement des demandes d’amélioration. Le [portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/fr?support-solution=Experience+Manager&lang=fr#support) est intégré au système de suivi des défauts et des améliorations d’Adobe. Les questions des utilisateurs sont identifiées et résolues par l’assistance clientèle dans la mesure du possible. Lorsqu’elles sont transmises au service de R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. Les problèmes entrant dans le cadre de l’assistance payante et de la garantie, ainsi que les demandes d’amélioration des utilisateurs détenant un compte payant sont prioritaires.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur les clients et clientes, et corrigées dans AEM 6.5.
 
