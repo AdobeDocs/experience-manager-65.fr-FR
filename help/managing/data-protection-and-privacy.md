@@ -117,7 +117,7 @@ Pour plus d’informations, consultez les sections suivantes :
 
 * [Adobe Target – Présentation de la confidentialité](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=fr)
 
-* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=fr)
 
 ## AEM Communities {#aem-communities}
 
