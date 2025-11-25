@@ -63,7 +63,7 @@ Pour créer une variable,
    * Modèle de données de formulaire : indiquez un chemin d’accès au modèle de données de formulaire.
    * ArrayList : spécifiez un sous-type pour la collection.
 
-1. Spécifiez une description facultative pour la variable et sélectionnez l’icône Enregistrer![ représentée par une case cochée.](assets/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
+1. Spécifiez une description facultative pour la variable et sélectionnez l’icône Enregistrer![&#x200B; représentée par une case cochée.](assets/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
