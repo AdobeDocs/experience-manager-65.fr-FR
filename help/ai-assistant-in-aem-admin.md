@@ -85,7 +85,7 @@ Article de référence : [Attribuer des autorisations personnalisées au nouveau
 
 1. Sur la page **Modifier les autorisations pour l’assistant AI**, activez le bouton (bascule) **Connaissance des produits de l’assistant AI**.
 
-   ![Page Modifier les autorisations pour l’option de basculement Connaissance du produit Assistant IA ](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
+   ![Page Modifier les autorisations pour l’option de basculement Connaissance du produit Assistant IA &#x200B;](/help/assets/assets-ai/ai-assistant-prod-knowledge.png)
 
 1. Dans le coin inférieur droit de la page, cliquez sur **Enregistrer**.
 
@@ -146,7 +146,7 @@ Vous pouvez utiliser un groupe d’utilisateurs AEM existant s’il répond aux 
    ![Ajouter des utilisateurs à cette page de groupe d’utilisateurs](/help/assets/assets-ai/ai-assistant-add-users-to-this-group.png)
 
 1. Dans le coin inférieur droit de la page, cliquez sur **Enregistrer**.
-1. Affectez maintenant [ profil de produit au groupe d’utilisateurs](#assign-product-profile).
+1. Affectez maintenant [&#x200B; profil de produit au groupe d’utilisateurs](#assign-product-profile).
 
 >[!TAB Ajout d’utilisateurs en bloc]
 
@@ -154,7 +154,7 @@ Vous pouvez utiliser la fonction de chargement en bloc dans Admin Console.
 
 1. Préparez un fichier CSV contenant des informations sur l’utilisateur.
 1. Utilisez l’option **`Add users by CSV`** pour un ajout en bloc efficace.
-1. Affectez maintenant [ profil de produit au groupe d’utilisateurs](#assign-product-profile).
+1. Affectez maintenant [&#x200B; profil de produit au groupe d’utilisateurs](#assign-product-profile).
 
 >[!ENDTABS]
 
@@ -168,11 +168,11 @@ Article de référence : [gestion des profils de produit pour les utilisateurs d
 1. Toujours dans votre assistant AI dans le groupe d’utilisateurs AEM à partir du [4 - Ajouter des utilisateurs au groupe d’utilisateurs](#add-users), cliquez sur l’onglet **Profils de produit attribués**.
 1. Cliquez sur **Attribuer un profil**.
 
-   ![ Assistant AI dans la page du groupe d’utilisateurs AEM avec l’onglet Profils de produit attribués sélectionné](/help/assets/assets-ai/ai-assistant-assign-profile.png)
+   ![&#x200B; Assistant AI dans la page du groupe d’utilisateurs AEM avec l’onglet Profils de produit attribués sélectionné](/help/assets/assets-ai/ai-assistant-assign-profile.png)
 
 1. Sur la page **Attribuer des produits et des profils**, dans la boîte de dialogue **Sélectionner des profils de produit**, recherchez et sélectionnez votre profil de produit **Assistant IA**.
 
-   ![ La page « Attribuer des produits et des profils », affichant la boîte de dialogue « Sélectionner des profils de produit » et le profil de produit « Assistant IA » sélectionné](/help/assets/assets-ai/ai-assistant-select-product-profile.png)
+   ![&#x200B; La page « Attribuer des produits et des profils », affichant la boîte de dialogue « Sélectionner des profils de produit » et le profil de produit « Assistant IA » sélectionné](/help/assets/assets-ai/ai-assistant-select-product-profile.png)
 
 1. Dans le coin inférieur droit de la boîte de dialogue, cliquez sur **Appliquer**.
 1. Dans le coin inférieur droit de la page **Attribuer des produits et des profils**, cliquez sur **Enregistrer**.

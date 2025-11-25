@@ -56,7 +56,7 @@ La feuille de calcul **Pulsation du projet** offre une vue d’ensemble graphiqu
 
 ## Statut par rôle {#status-by-role}
 
-La feuille de calcul **Statut par rôle** indique le détail de l’[**intégrité**, la **qualité et le **niveau d’achèvement**](#projectheartbeat) par **[phase](#phases-and-milestones)** et **[persona](#persona)**.
+La feuille de calcul **Statut par rôle** indique le détail de l’[**intégrité**, la **qualité et le &#x200B;** niveau d’achèvement&#x200B;**](#projectheartbeat) par &#x200B;** [phase](#phases-and-milestones)**&#x200B; et &#x200B;** [persona](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 

@@ -849,7 +849,7 @@ Il peut s’agir d’un scénario valide et possible avec un éditeur de référ
 
 #### Chemins pris en charge configurés {#configured-supported-paths}
 
-Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe ****. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
+Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe **&#x200B;**. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
 
 ### Mappage de contenu JCR, de services OSGi et de configurations {#mapping-of-jcr-content-osgi-services-and-configurations}
 

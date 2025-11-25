@@ -89,7 +89,7 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Modèle de domaine :** modèle de nom de domaine servant à filtrer les e-mails entrants. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Les fichiers portant des extensions particulières (*.dat, *.xml), des noms spécifiques (data) et contenant des expressions composites dans leur nom et leur extension (.``[dD][aA]``&#39;port&#39;). La valeur par défaut est &amp;ast;.&amp;ast;.
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Les fichiers portant des extensions particulières (*.dat, *.xml), des noms spécifiques (data) et contenant des expressions composites dans leur nom et leur extension (.``[dD][aA]``&#39;port&#39;). La valeur par défaut est &ast;.&ast;.
 
 **Destinataires de tâches effectuées :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches effectuées. Par défaut, un message de traitement réussi est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
 
@@ -167,7 +167,7 @@ Définissez les paramètres suivants pour configurer un point d’entrée d’e-
 
 **Modèle de domaine :** spécifie les modèles de domaine d’e-mail entrant qui sont acceptés par le fournisseur. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&amp;ast;.dat, &amp;ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&amp;ast;.`[dD][aA]`&#39;port&#39;).
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&ast;.dat, &ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&ast;.`[dD][aA]`&#39;port&#39;).
 
 **Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
@@ -235,7 +235,7 @@ La valeur par défaut est asynchrone.
 
 **Littéral :** l’e-mail utilise la valeur saisie dans le champ telle qu’elle est affichée.
 
-**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, le fait de saisir &amp;ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de « &amp;ast; » sélectionne tout document joint. Saisir exemple.pdf sélectionne tout document joint dont le nom est example.pdf.
+**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, le fait de saisir &ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de « &ast; » sélectionne tout document joint. Saisir exemple.pdf sélectionne tout document joint dont le nom est example.pdf.
 
 **Mappage du paramètre de sortie :** permet de configurer les sorties du service et de l’opération. Les caractères suivants indiqués dans les valeurs de mappage des paramètres de sortie sont développés dans le nom du fichier de la pièce jointe :
 
@@ -245,7 +245,7 @@ La valeur par défaut est asynchrone.
 
 Toute occurrence de la barre oblique inverse (\) est remplacée par %%.
 
-***Remarque ** : si le message de demande de service comprend plusieurs fichiers joints, vous ne pouvez pas utiliser les paramètres %F et %E dans des valeurs pour la propriété Mappages des paramètres de sortie du point d’entrée. Si la réponse du service renvoie plusieurs pièces jointes, vous ne pouvez pas spécifier le même nom de fichier pour plusieurs pièces jointes. Si vous ne respectez pas ces recommandations, le service appelé crée les noms des fichiers renvoyés et leurs noms ne sont pas prévisibles.*
+***Remarque &#x200B;** : si le message de demande de service comprend plusieurs fichiers joints, vous ne pouvez pas utiliser les paramètres %F et %E dans des valeurs pour la propriété Mappages des paramètres de sortie du point d’entrée. Si la réponse du service renvoie plusieurs pièces jointes, vous ne pouvez pas spécifier le même nom de fichier pour plusieurs pièces jointes. Si vous ne respectez pas ces recommandations, le service appelé crée les noms des fichiers renvoyés et leurs noms ne sont pas prévisibles.*
 
 Les valeurs suivantes sont disponibles :
 

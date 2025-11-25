@@ -146,7 +146,7 @@ Lorsque des fichiers sont déposés dans le dossier de contrôle, ce dernier les
 
 **Durée d’attente :** durée d’attente (en millisecondes) entre la création d’un dossier ou d’un fichier et son analyse. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. La valeur par défaut est 0.
 
-Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
+Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&ast;60 &ast;1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
 **Exclure le modèle de fichier :** liste délimitée par des points-virgules **;** des modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés pour traitement.
 
@@ -154,29 +154,29 @@ Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs f
 
 Vous pouvez utiliser des modèles de fichiers pour exclure les types de fichiers suivants :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Fichiers portant des noms spécifiques, par exemple data.&amp;ast; exclut les fichiers et dossiers nommés *data1*, *data2*, etc.
+* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Fichiers portant des noms spécifiques, par exemple data.&ast; exclut les fichiers et dossiers nommés *data1*, *data2*, etc.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Inclure le modèle de fichier** : liste délimitée par des points-virgules **;** des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si le paramètre Inclure le modèle de fichier a pour valeur input&amp;ast;, tous les fichiers et dossiers correspondant à input&amp;ast; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc.
+**Inclure le modèle de fichier** : liste délimitée par des points-virgules **;** des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si le paramètre Inclure le modèle de fichier a pour valeur input&ast;, tous les fichiers et dossiers correspondant à input&ast; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc.
 
-La valeur par défaut est &amp;ast; et renvoie à tous les fichiers et dossiers.
+La valeur par défaut est &ast; et renvoie à tous les fichiers et dossiers.
 
 Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Fichiers portant des noms spécifiques, par exemple data.&amp;ast; inclut les fichiers et dossiers nommés *data1*, *data2*, etc.
+* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Fichiers portant des noms spécifiques, par exemple data.&ast; inclut les fichiers et dossiers nommés *data1*, *data2*, etc.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -228,7 +228,7 @@ La valeur -1 jour indique de ne jamais supprimer le dossier de résultats. La v
 
 **Littéral :** le dossier de contrôle utilise la valeur saisie dans le champ telle qu’elle est affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
 
-**Variable :** la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, dans le cas d’un service de mot de passe chiffré où le document d’entrée doit être un fichier PDF, l’utilisateur ou l’utilisatrice peut utiliser &amp;ast;.pdf comme modèle de fichier. Le dossier de contrôle récupère tous les fichiers du dossier de contrôle correspondant à ce modèle et appelle le service pour chaque fichier. Lorsqu’une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API qui utilisent le type d’entrée Document sont prises en charge.
+**Variable :** la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, dans le cas d’un service de mot de passe chiffré où le document d’entrée doit être un fichier PDF, l’utilisateur ou l’utilisatrice peut utiliser &ast;.pdf comme modèle de fichier. Le dossier de contrôle récupère tous les fichiers du dossier de contrôle correspondant à ce modèle et appelle le service pour chaque fichier. Lorsqu’une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API qui utilisent le type d’entrée Document sont prises en charge.
 
 **Mappages des paramètres de sortie :** permet de configurer les sorties du service et de l’opération. Les paramètres disponibles dépendent du service qui utilise le point d’entrée du dossier de contrôle.
 
@@ -242,13 +242,13 @@ Les sorties du dossier de contrôle peuvent être un document unique, une liste 
 
 Les administrateurs peuvent indiquer le type du fichier servant à appeler un service. Il est possible d’établir plusieurs modèles de fichier pour chaque dossier de contrôle. Un modèle de fichier peut être du type suivant :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques. Par exemple : &amp;ast;.dat, &amp;ast;.xml et &amp;ast;.pdf
-* Fichiers portant des noms spécifiques. Par exemple : data.&amp;ast;
+* Fichiers dotés d’extensions de nom de fichier spécifiques. Par exemple : &ast;.dat, &ast;.xml et &ast;.pdf
+* Fichiers portant des noms spécifiques. Par exemple : data.&ast;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[dD][aA]`&#39;port&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+   * &ast;.`[dD][aA]`&#39;port&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 L’administrateur ou l’administratrice peut définir le modèle de fichier du dossier de sortie dans lequel enregistrer les résultats. Concernant les dossiers de sortie (résultats, conservation et échecs), il ou elle peut indiquer l’un des modèles de fichier suivants :
 
@@ -374,11 +374,11 @@ Voici quelques trucs et astuces pour la configuration du point d’entrée de Wa
 * Si vous disposez d’un dossier de contrôle sous Windows qui traite des fichiers image, spécifiez les valeurs pour l’option Inclure le modèle de fichier ou Exclure le modèle de fichier afin d’empêcher le fichier Thumbs.db généré automatiquement par Windows d’être interrogé par le dossier de contrôle.
 * Si une expression cron est spécifiée, l’intervalle de répétition est ignoré. L’utilisation de l’expression cron est basée sur le système de planification des tâches open source Quartz, version 1.4.0.
 * La taille du lot correspond au nombre de fichiers ou de dossiers qui seront récupérés lors de chaque analyse du dossier de contrôle. Si la taille du lot est définie sur deux et que dix fichiers ou dossiers sont déposés dans le dossier input du dossier de contrôle, seuls deux seront récupérés à chaque analyse. Lors de la prochaine analyse, qui aura lieu après le temps spécifié dans l’intervalle de répétition, les deux fichiers suivants seront récupérés.
-* Pour les modèles de fichiers, les administrateurs et administratrices peuvent spécifier des expressions régulières avec une prise en charge supplémentaire des modèles de caractères joker pour spécifier des modèles de fichiers. Watched Folder modifie l’expression régulière pour prendre en charge les modèles de caractère joker tels que &amp;ast;.&amp;ast; ou &amp;ast;.pdf. Ces modèles de caractères joker ne sont pas pris en charge par les expressions régulières.
+* Pour les modèles de fichiers, les administrateurs et administratrices peuvent spécifier des expressions régulières avec une prise en charge supplémentaire des modèles de caractères joker pour spécifier des modèles de fichiers. Watched Folder modifie l’expression régulière pour prendre en charge les modèles de caractère joker tels que &ast;.&ast; ou &ast;.pdf. Ces modèles de caractères joker ne sont pas pris en charge par les expressions régulières.
 * Watched Folder analyse le dossier input à la recherche de l’entrée et ne sait pas si le fichier ou le dossier source est complètement copié dans le dossier input avant de commencer à traiter le fichier ou le dossier. Pour vous assurer que le fichier ou le dossier source est entièrement copié dans le dossier input du dossier de contrôle avant que le fichier ou le dossier ne soit récupéré, procédez comme suit :
 
-   * Utilisez le temps d’attente, qui correspond au temps en millisecondes pendant lequel Watched Folder attend à partir de la dernière heure de modification. Utilisez cette fonctionnalité si vous avez des fichiers volumineux à traiter. Par exemple, si le téléchargement d’un fichier prend 10 minutes, indiquez le temps d’attente sous la forme 10&amp;ast;60 &amp;ast;1 000 millisecondes. Cela empêchera Watched Folder de récupérer le fichier s’il ne date pas d’au moins 10 minutes.
-   * Utilisez le modèle de fichier d’exclusion et le modèle de fichier d’inclusion. Par exemple, si le modèle de fichiers d’exclusion est `ex*` et le modèle de fichiers d’inclusion `in*`, Watched Folder sélectionne les fichiers commençant par « in » et non ceux commençant par « ex ». Pour copier des fichiers ou des dossiers volumineux, renommez tout d’abord le fichier ou le dossier de sorte que leur nom commence par « ex ». Une fois le fichier ou le dossier nommé « ex » entièrement copié dans le dossier de contrôle, renommez-le en le faisant débuter par « in&amp;ast; ».
+   * Utilisez le temps d’attente, qui correspond au temps en millisecondes pendant lequel Watched Folder attend à partir de la dernière heure de modification. Utilisez cette fonctionnalité si vous avez des fichiers volumineux à traiter. Par exemple, si le téléchargement d’un fichier prend 10 minutes, indiquez le temps d’attente sous la forme 10&ast;60 &ast;1 000 millisecondes. Cela empêchera Watched Folder de récupérer le fichier s’il ne date pas d’au moins 10 minutes.
+   * Utilisez le modèle de fichier d’exclusion et le modèle de fichier d’inclusion. Par exemple, si le modèle de fichiers d’exclusion est `ex*` et le modèle de fichiers d’inclusion `in*`, Watched Folder sélectionne les fichiers commençant par « in » et non ceux commençant par « ex ». Pour copier des fichiers ou des dossiers volumineux, renommez tout d’abord le fichier ou le dossier de sorte que leur nom commence par « ex ». Une fois le fichier ou le dossier nommé « ex » entièrement copié dans le dossier de contrôle, renommez-le en le faisant débuter par « in&ast; ».
 
 * Utilisez la durée de purge pour garder le dossier result propre. Watched Folder nettoie tous les fichiers antérieurs à la durée mentionnée dans la durée de purge. La durée est exprimée en jours.
 * Lors de l’ajout d’un point d’entrée de Watched Folder, lorsque le nom de l’opération a été sélectionné, le mappage des paramètres d’entrée est renseigné. Pour chaque entrée de l’opération, un champ de mappage de paramètres d’entrée est généré. Voici des exemples de mappages de paramètres d’entrée :
@@ -397,7 +397,7 @@ Voici quelques trucs et astuces pour la configuration du point d’entrée de Wa
 
    * Solution de contournement 1
 
-      1. Spécifiez un modèle pour l’option Modèles de fichier d’exclusion, tel que temp&amp;ast;.ps.
+      1. Spécifiez un modèle pour l’option Modèles de fichier d’exclusion, tel que temp&ast;.ps.
       1. Copiez les fichiers dont le nom commence par temp (par exemple, temp1.ps) dans le dossier de contrôle.
       1. Une fois le fichier intégralement copié dans le dossier de contrôle, renommez-le pour le faire correspondre au modèle spécifié dans Modèle de fichier d’inclusion. Le dossier de contrôle déplace ensuite le fichier terminé vers l’évaluation.
 

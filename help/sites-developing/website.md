@@ -1289,7 +1289,7 @@ Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &grave;&grave; `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

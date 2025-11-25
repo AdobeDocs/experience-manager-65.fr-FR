@@ -152,7 +152,7 @@ Ajoutez un champ de signature à l’aide de l’API Signature (Java) :
 
 **Voir également**
 
-[Tutoriels de démarrage rapide API du service Signature ](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
+[Tutoriels de démarrage rapide API du service Signature &#x200B;](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
 
 ### Ajouter des champs de signature à l’aide de l’API de service web {#add-signature-fields-using-the-web-service-api}
 
@@ -432,7 +432,7 @@ Enregistrez le document PDF contenant le champ de signature modifié en tant que
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Tutoriels de démarrage rapide API du service Signature ](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
+[Tutoriels de démarrage rapide API du service Signature &#x200B;](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
 
 [Signer des documents PDF numériquement](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 

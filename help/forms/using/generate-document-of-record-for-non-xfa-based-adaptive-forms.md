@@ -341,7 +341,7 @@ Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, 
 
   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
+  ![Propriétés du gabarit de page &#x200B;](assets/master-page-properties.png)
 
   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 

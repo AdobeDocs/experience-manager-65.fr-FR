@@ -102,7 +102,7 @@ Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder
    * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+      * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
       * &#42;.`[dD][aA]`&#39;port&#39;
       * &#42;.`[Xx][Mm][Ll]`
 
@@ -115,7 +115,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
 
       * &#42;.`[dD][aA]`&#39;port&#39;
       * &#42;.`[Xx][Mm][Ll]`
@@ -568,7 +568,7 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.&#42;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
    * &#42;.`[dD][aA]`&#39;port&#39;
    * &#42;.`[Xx][Mm][Ll]`
 
