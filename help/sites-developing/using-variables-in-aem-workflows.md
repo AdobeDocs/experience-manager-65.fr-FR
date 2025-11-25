@@ -9,10 +9,10 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bdbf9b73553c42865560c76eebab76e2fc397fdf
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 100%
+source-wordcount: '1942'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ La vidéo ci-dessous indique comment créer, définir et utiliser des variables 
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Vidéo Utiliser les variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Les variables sont une extension de l’interface [MetaDataMap](https://developer.adobe.com/fr/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Vous pouvez utiliser [MetaDataMap](https://developer.adobe.com/fr/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) dans ECMAScript pour accéder aux métadonnées enregistrées à l’aide de variables.
 
@@ -104,7 +104,7 @@ Sélectionnez une variable de type XML que vous souhaitez stocker dans un fichie
 
 Dans cet exemple, sélectionnez une variable XML **formdata** pour stocker le fichier **cc-app.xml**. Exécutez la requête de la variable **formdata** pour définir la valeur de la variable de chaîne **emailaddress** afin de stocker la valeur de la propriété **emailAddress** disponible dans le fichier **cc-app.xml**.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Définition de la valeur d’une variable")
+[Vidéo Définir la variable](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Exemple 2 : Utilisez une expression pour stocker la valeur en fonction d’autres variables {#example2}
 
@@ -114,7 +114,7 @@ Dans cet exemple, utilisez l’éditeur d’expressions pour définir une expres
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Vidéo Expression de variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilisation de l’éditeur d’expressions {#use-expression-editor}
 
@@ -163,7 +163,7 @@ Dans cet exemple, avant de définir l’expression de routage, utilisez [exemple
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OU vidéo partagée](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionnez **[!UICONTROL Renommer la branche]** pour définir un autre nom pour la branche.
 
