@@ -9,11 +9,11 @@ docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '5284'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -143,7 +143,7 @@ Après avoir [lancé le processus de ciblage](/help/sites-authoring/content-targ
 
 >[!CAUTION]
 >
->Soyez prudent lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance d’auteur. L’activité correspondante est automatiquement supprimée de l’instance de publication.
+>Faites attention lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance de création. L’activité correspondante est automatiquement supprimée de l’instance de publication.
 
 >[!NOTE]
 >
@@ -397,7 +397,7 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé p
 
 ## Cible : configuration des audiences {#target-configuring-the-audiences}
 
-L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page Cible affiche les audiences que chaque expérience cible. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
+L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page cible affiche les audiences ciblés par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
 
 ### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)… {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -616,7 +616,7 @@ Si du contenu inattendu s’affiche sur la page lors du chargement d’un profil
 
 >[!NOTE]
 >
->Si vous utilisez des tests AB, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Cela est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les auteurs et autrices. (L’activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation lors de la simulation.) Les auteurs et autrices peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
+>Si vous utilisez des tests AB, les expériences de simulation sont affichées en fonction du pourcentage de trafic. Cela est contrôlé par Adobe Target, ce qui peut entraîner des résultats inattendus pour les auteurs et autrices. (L&#39;activité _author est synchronisée avec des paramètres spécifiques qui permettent une réévaluation pendant la simulation.) Les auteurs peuvent avoir besoin d’actualiser pour afficher les autres expériences en fonction de leurs paramètres de trafic.
 
 Pour simuler l’expérience du visiteur ou de la visiteuse, utilisez les outils suivants :
 

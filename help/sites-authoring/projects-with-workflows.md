@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 * **Demander la page de destination** : ce workflow demande une page de destination.
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
 * **Séance photo du produit et séance photo du produit (Commerce)** - Associe les ressources aux produits.
-* **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
+* **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie linguistique** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
 Selon le modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
@@ -39,8 +39,8 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 | Demander le lancement | x |  |  |  |
 | Demander une page de destination | x |  |  |  |
 | Demander un e-mail | x |  |  |  |
-| DAM Créer copie de langue&amp;ast; |  |  |  | x |
-| DAM Créer et traduire copie de langue&amp;ast; |  |  |  | x |
+| DAM Créer copie linguistique&amp;ast; |  |  |  | x |
+| DAM Créer et traduire copie linguistique&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Selon le modèle de projet que vous sélectionnez, certains workflows sont dispo
 
 Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la vignette **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie linguistique ou Gestion des actifs numériques (DAM) – Créer et traduire la copie linguistique). Les informations sur les tâches en attente d’un projet sont répertoriées dans la vignette **Tâches**. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône de l’utilisateur ou de l’utilisatrice.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux documents suivants :
 
@@ -132,6 +132,6 @@ Ce workflow permet de demander un e-mail. Il s’agit du même workflow qui appa
 
 Le workflow commence. La tâche apparaît sur la carte **Tâches**.
 
-## Workflow Créer (et traduire) la copie de la langue pour les ressources {#create-and-translate-language-copy-workflow-for-assets}
+## Workflow Créer (et traduire) la copie linguistique pour les ressources {#create-and-translate-language-copy-workflow-for-assets}
 
-Les workflows **Créer une copie de langue** et **Créer et traduire la copie de langue** sont présentés en détail dans le document [Création de copies de langue pour les ressources.](/help/assets/translation-projects.md)
+Les workflows **Créer une copie linguistique** et **Créer et traduire la copie linguistique** sont présentés en détail dans le document [Création de copies linguistiques pour les ressources.](/help/assets/translation-projects.md)

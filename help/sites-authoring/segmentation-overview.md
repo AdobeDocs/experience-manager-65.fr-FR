@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -42,7 +42,7 @@ Lors de la discussion de la segmentation, la terminologie suivante est utilisée
 
 **Utilisateur** : un utilisateur est un visiteur qui s’inscrit auprès du site web pour recevoir un profil de compte. Pour générer leur profil, ils ou elles fournissent une identification supplémentaire, telle qu’une adresse e-mail et un genre, entre autres. Des informations supplémentaires peuvent également être collectées, notamment l’activité de la communauté et les modèles d’achat, entre autres. En fonction des informations fournies dans le profil, un profil démographique peut être créé.
 
-**Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
+**Caractéristique** : une caractéristique est une particularité ou une propriété d’un visiteur ou d’une visiteuse qui peut être utilisée pour déterminer son appartenance à un segment spécifique.
 
 **Segment** : un segment est un groupe de visiteurs qui partagent certaines caractéristiques. Les segments doivent être distincts, avec un minimum de chevauchement avec les autres segments.
 

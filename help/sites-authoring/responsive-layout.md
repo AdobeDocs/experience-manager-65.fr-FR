@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '1853'
 ht-degree: 100%
 

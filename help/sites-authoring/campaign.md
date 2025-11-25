@@ -8,11 +8,11 @@ topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 100%
+source-wordcount: '2769'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ Pour insérer une personnalisation :
    >
    >**Pour Adobe Campaign Classic :**
    >
-   >* Les champs de contexte disponibles sont extraits dynamiquement à partir du schéma Adobe Campaign **nms:seedMember**. Les données d’extension cible sont extraites dynamiquement du workflow qui contient la diffusion synchronisée avec le contenu. (Reportez-vous à la section [Synchronisation du contenu créé dans AEM avec une diffusion Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
+   >* Les champs de contexte disponibles sont extraits dynamiquement à partir du schéma Adobe Campaign **nms:seedMember**. Les données d’extension cible sont extraites dynamiquement du workflow qui contient la diffusion synchronisée avec le contenu. (Reportez-vous à la section [Synchronisation du contenu créé dans AEM avec une diffusion Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
    >
    >* Pour ajouter ou masquer des éléments de personnalisation, reportez-vous à la section [Gestion des champs et des blocs de personnalisation](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Important** : tous les champs de la table de contrôle doivent également se trouver dans la table des destinataires (ou la table des contacts correspondante).

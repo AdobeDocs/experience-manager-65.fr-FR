@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 100%
@@ -225,7 +225,7 @@ Les **références** affichent toutes les connexions avec la page sélectionnée
 * Copies de langue
 * Liens entrants
 * Utilisation du composant de référence : contenu emprunté et prêté
-* Références aux pages de produit (depuis la console Commerce – Produits)
+* Références aux pages produits (depuis la console Commerce – Produits)
 
 Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez **Références** à l’aide de :
 
@@ -243,7 +243,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 
 * Les instances du contenu emprunté et prêté à l’aide du composant **Référence** vous permettent de naviguer jusqu’à la page de référence.
 
-* [Références aux pages de produit](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
+* [Références aux pages produits](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (depuis la console Commerce – Produits)
 * [Lancements](/help/sites-authoring/launches.md) donne accès aux lancements associés.
 * [Live Copies](/help/sites-administering/msm.md) affiche les chemins d’accès à toutes les Live Copies basées sur la ressource sélectionnée.
 * [Plan directeur](/help/sites-administering/msm-best-practices.md) fournit des détails et les différentes actions possibles.

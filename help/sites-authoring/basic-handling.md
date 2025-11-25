@@ -9,9 +9,9 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 100%
 
@@ -155,7 +155,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Vous pouvez également utiliser la [touche de raccourci](/help/sites-authoring/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
-* [Solutions](https://business.adobe.com/fr/)
+* [Solutions](https://business.adobe.com/)
 
   ![Solutions](do-not-localize/screen_shot_2018-03-23at103552.png)
 

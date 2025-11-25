@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 100%
@@ -99,7 +99,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 La chronologie du projet fournit des informations sur le moment auquel les ressources du projet ont été utilisées pour la dernière fois. Pour afficher la chronologie du projet, procédez comme suit.
 
-1. Dans la console **Projets**, sélectionnez **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
+1. Dans la console **Projets**, cliquez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
    ![Sélection du mode Chronologie](assets/projects-timeline-rail.png)
 2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher la chronologie.
    ![Mode Chronologie du projet](assets/project-timeline-view.png)

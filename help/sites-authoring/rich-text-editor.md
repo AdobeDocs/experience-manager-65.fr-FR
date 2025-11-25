@@ -4,17 +4,17 @@ description: Utilisation de l’éditeur de texte enrichi pour créer du contenu
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 44903bc3e68f46f9880d31c33b7dc9e7598ddc38
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Utilisation de l’éditeur de texte enrichi pour créer du contenu {#use-rich-text-editor-to-author-content}
 
-L’éditeur de texte enrichi (RTE) est une composante essentielle à la saisie de contenu textuel dans AEM. Il constitue la base de divers composants, notamment :
+L’éditeur de texte enrichi (RTE) est une composante essentielle à la saisie de contenu textuel dans AEM. Il constitue la base de divers composants, notamment les suivants :
 
 * [Texte](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/text)
 * [Tableau](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/wcm-components/text#table)

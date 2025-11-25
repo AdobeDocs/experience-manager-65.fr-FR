@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 100%
@@ -59,7 +59,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 * **Émulateur**
 
-  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
+  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre appareil. Cette option passe automatiquement en mode de mise en page.
 
   ![Émulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 

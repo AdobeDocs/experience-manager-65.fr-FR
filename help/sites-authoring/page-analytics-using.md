@@ -10,11 +10,11 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
+1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. À l’extrême droite de la barre d’outils (dans le coin supérieur droit), cliquez sur l’icône pour sélectionner **Vue Liste** (l’icône affichée dépend de la [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. À l’extrémité droite de la barre d’outils (coin supérieur droit), cliquez à nouveau sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.

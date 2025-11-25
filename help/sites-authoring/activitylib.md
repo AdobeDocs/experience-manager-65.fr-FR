@@ -9,11 +9,11 @@ docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1937'
-ht-degree: 100%
+source-wordcount: '1936'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Les activités sont affichées avec un libellé décrivant le type d’activité
 
 >[!CAUTION]
 >
->Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les personnes utilisatrices normales. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+>Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication afin qu’il ne soit pas accessible aux utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
 >Voir [Conditions préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) pour plus d’informations.
 

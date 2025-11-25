@@ -4,8 +4,8 @@ description: Les projets vous permettent de regrouper des ressources dans une se
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 La console Projets est similaire aux autres consoles d’AEM. Elle permet d’agir sur des projets individuels et d’ajuster l’affichage des projets.
 
-### Activation et désactivation de mode {#modes}
+### Activation et désactivation du mode {#modes}
 
 Vous pouvez utiliser le sélecteur de rail pour passer d’un mode console à un autre.
 
@@ -63,7 +63,7 @@ Vous pouvez utiliser le sélecteur d’affichage pour passer de l’affichage de
 
 ### Filtrer votre vue {#filter}
 
-Vous pouvez utiliser le filtre pour afficher tous les projets ou uniquement ceux qui sont actifs.
+Vous pouvez utiliser le filtre pour basculer entre tous les projets et uniquement ceux qui sont actifs.
 
 ![Filtrer](assets/projects-filter.png)
 
@@ -142,9 +142,9 @@ La mosaïque **Informations sur le projet** fournit des informations générales
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque **Tâche de traduction** est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions.
+La vignette **Tâche de traduction** est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions.
 
-![Mosaïque de tâche de traduction](assets/project-tile-translation.png)
+![Vignette de tâche de traduction](assets/project-tile-translation.png)
 
 Pour configurer votre traduction, consultez le document [Création de projets de traduction.](/help/assets/translation-projects.md)
 

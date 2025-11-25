@@ -4,8 +4,8 @@ description: Gestion de vos tâches avec la boîte de réception dans Adobe Expe
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
@@ -61,7 +61,7 @@ Prêt à l’emploi, AEM est préchargé avec quatre tâches affectées au group
 
 * [Configurer Analytics et Targeting](/help/sites-administering/opt-in.md)
 * [Appliquer la liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
-* Autoriser la collecte de statistiques d’utilisation agrégées
+* Activer la collecte de statistiques d’utilisation agrégées
 * [Configurer le HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Ouverture de la boîte de réception {#opening-the-inbox}

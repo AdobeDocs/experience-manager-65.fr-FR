@@ -7,11 +7,11 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1296'
+ht-degree: 98%
 
 ---
 
@@ -129,7 +129,7 @@ Une fois le composant configuré, les styles configurés par les auteurs et autr
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
-Depuis la version 6.5.3.0 d’AEM, un onglet Styles facultatif est désormais disponible dans la boîte de dialogue Modifier. Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
+Depuis la version AEM 6.5.3.0, un onglet Styles facultatif est désormais disponible dans la boîte de dialogue Modifier . Contrairement à l’onglet de la boîte de dialogue Conception, celui de la boîte de dialogue Modifier n’est pas essentiel pour le fonctionnement du système de style. Il s’agit d’une autre interface facultative, utilisable par un auteur de contenu pour définir des styles.
 
 L’onglet de la boîte de dialogue Modifier peut être inclus de la même manière que celui de la boîte de dialogue Conception :
 

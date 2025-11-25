@@ -4,11 +4,11 @@ description: Liste cumulée des fonctionnalités et améliorations clés apport�
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: eef3ad559612c338de0c4232aadc4133c910aaf8
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 100%
 
@@ -69,9 +69,9 @@ L’onglet IPTC prend désormais en charge les champs de texte [!UICONTROL Texte
 
 * **Prise en charge du dimensionnement automatique des polices pour les documents PDF statiques** : AEM Forms Designer,OutputService, et FormsService prennent désormais en charge le dimensionnement automatique des polices dans les fichiers PDF statiques. Si l’utilisateur ou l’utilisatrice définit la taille de police sur 0 pour les champs de texte, numériques, de mot de passe ou de date et heure, elle s’ajuste automatiquement dans ces champs sans modifier la taille globale du champ. Pour utiliser la fonctionnalité, les utilisateurs et utilisatrices transmettent un indicateur dans le fichier xci personnalisé : `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
-#### Nouvelles fonctionnalités bêta d’AEM Forms {#beta-aem-forms-sp22}
+#### Nouvelles fonctionnalités Beta d’AEM Forms {#beta-aem-forms-sp22}
 
-La fonctionnalité bêta d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement. Vous souhaitez activer une fonctionnalité bêta pour vos environnements ? Envoyez un e-mail depuis votre adresse officielle à aem-forms-ea@adobe.com avec la liste des fonctionnalités qui vous intéressent.
+La fonctionnalité Beta d’AEM Forms vous offre une opportunité unique d’accéder de manière exclusive à des innovations de pointe et de contribuer à façonner leur développement. Vous souhaitez activer une fonctionnalité Beta pour vos environnements ? Envoyez un e-mail depuis votre adresse officielle à aem-forms-ea@adobe.com avec la liste des fonctionnalités qui vous intéressent.
 
 * [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) et [services Captcha Cloudflare Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile.md) : AEM Forms prend en charge les services Captcha suivants :
    * Captcha protège les formulaires contre les robots, les spams et les abus automatisés en affichant un widget de case à cocher. Ainsi, seules les vraies personnes peuvent poursuivre, ce qui renforce la sécurité pour les transactions en ligne.
@@ -137,7 +137,7 @@ L’onglet IPTC prend désormais en charge les champs de texte [!UICONTROL Texte
 * **Nouveaux composants principaux de formulaires adaptatifs** : des onglets verticaux, des conditions générales et une case à cocher sont ajoutés pour améliorer l’évolutivité des formulaires.
    * **[Composant de case à cocher](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)** : les formulaires adaptatifs basés sur les composants principaux peuvent désormais inclure un composant de case à cocher. Il permet aux utilisateurs et utilisatrices de faire des choix binaires, en sélectionnant ou en désélectionnant une option particulière. Il s’affiche généralement sous la forme d’une petite case sur laquelle vous pouvez cliquer ou appuyer pour basculer entre deux états : cochée et décochée. La case à cocher est un élément de formulaire courant, utilisé pour présenter un choix oui/non ou vrai/faux.
 
-   * **[Composant des conditions générales](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**- : les formulaires adaptatifs basés sur les composants principaux incluent désormais un composant relatif aux conditions générales. Les créateurs et créatrices de formulaires peuvent ajouter cette section afin d’afficher les conditions ou accords juridiques relatif au service, au produit ou à la plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
+   * **[Composant des conditions générales](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)** : les formulaires adaptatifs basés sur les composants principaux incluent désormais un composant relatif aux conditions générales. Les créateurs et créatrices de formulaires peuvent ajouter cette section afin d’afficher les conditions ou accords juridiques relatif au service, au produit ou à la plateforme. Ce composant est conçu pour informer les utilisateurs et utilisatrices des règles, des réglementations et des obligations qu’ils acceptent en envoyant le formulaire.
 
      ![Composants Onglets verticaux, Conditions générales et Case à cocher](/help/forms/using/assets/forms-components.png)
 
@@ -221,6 +221,6 @@ Nouveau protocole DASH (Dynamic Adaptive Streaming over HTTP) pour le streaming
 
 * Les [formulaires adaptatifs découplés](https://experienceleague.adobe.com/fr/docs/experience-manager-headless-adaptive-forms/using/overview) permettent aux développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.
 
-* Les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sont un ensemble de 24 composants open source compatibles avec BEM qui sont conçus sur la base des composants principaux de la gestion de contenu web d’Adobe Experience Manager. Ces composants sont en open source et fournissent aux développeurs et développeuses la possibilité de les personnaliser et les étendre facilement pour répondre aux besoins spécifiques de leur entreprise. Toute personne disposant de compétences pour personnaliser les [composants principaux de gestion de contenu web](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/get-started/authoring) peut facilement personnaliser et mettre en forme ces composants.
+* Les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) sont un ensemble de 24 composants Open Source compatibles avec BEM qui sont conçus sur la base des composants principaux de la gestion de contenu web d’Adobe Experience Manager. Ces composants sont en open source et fournissent aux développeurs et développeuses la possibilité de les personnaliser et les étendre facilement pour répondre aux besoins spécifiques de leur entreprise. Toute personne disposant de compétences pour personnaliser les [composants principaux de gestion de contenu web](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/get-started/authoring) peut facilement personnaliser et mettre en forme ces composants.
 
 * Le service Reader Extensions sur OSGi fournit désormais des options distinctes permettant d’importer et d’exporter des droits d’utilisation sur un PDF afin d’importer ou d’exporter des données dans Adobe Acrobat Reader.

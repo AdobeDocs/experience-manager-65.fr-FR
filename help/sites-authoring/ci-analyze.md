@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 100%
@@ -53,7 +53,7 @@ Pour modifier la période de création de rapports d’une page Content Insight�
 
 1. Si le délai n’apparaît pas en haut de la page, cliquez sur l’icône Activer/désactiver le délai.
 
-   ![Activer/désactiver le délai.](do-not-localize/chlimage_1-22.png)
+   ![Activer/désactiver la période](do-not-localize/chlimage_1-22.png)
 
 1. Pour modifier la date de début de la période de création de rapports, faites glisser le cercle qui s’affiche sur le côté gauche de la zone ombrée jusqu’à la date de début souhaitée.
 

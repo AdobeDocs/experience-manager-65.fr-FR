@@ -4,10 +4,10 @@ description: Définissez les propriétés requises pour une page dans Adobe Exp
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%
 
@@ -106,7 +106,7 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 #### Paramètres {#settings}
 
 * **Langue** – Langue de la page.
-* **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
+* **Racine de la langue** : cette option doit être activée si la page est la racine d’une copie linguistique.
 * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
 * **Conception** : indique la [conception](/help/sites-developing/designer.md) à utiliser sur cette page.
 * **Alias** : indique un alias à utiliser avec cette page.

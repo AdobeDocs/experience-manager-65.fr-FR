@@ -4,11 +4,11 @@ description: Utilisez AEM pour rendre le contenu Web accessible et utilisable pa
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 100%
+source-wordcount: '13630'
+ht-degree: 99%
 
 ---
 
@@ -193,7 +193,7 @@ Utilisez des sous-titres non intégrés chaque fois que cela est possible, car l
 
 Pour les sous-titres non intégrés, créez et fournissez un fichier de sous-titrage synchronisé dans un format approprié ([SMIL](https://www.w3.org/AudioVideo/), par exemple) avec le fichier vidéo. Ce guide ne décrit pas la procédure à suivre pour ce faire, mais vous trouverez des liens vers des tutoriels dans [En savoir plus – Sous-titres (pré-enregistrés) (1.2.2)](#more-information-captions-prerecorded). Pensez à inclure une note avisant les utilisateurs que des sous-titres sont disponibles pour la vidéo, ou à activer la fonctionnalité de sous-titres.
 
-Si vous devez utiliser des sous-titres intégrés, incorporez le texte à la piste vidéo. Pour ce faire, utilisez des applications de montage vidéo qui permettent de superposer du texte sur la vidéo.
+Si vous devez utiliser des sous-titres intégrés, incorporez le texte dans la piste vidéo. Pour ce faire, utilisez des applications de montage vidéo qui permettent de superposer du texte sur la vidéo.
 
 #### En savoir plus – Sous-titres (pré-enregistrés) (1.2.2) {#more-information-captions-prerecorded}
 
@@ -519,8 +519,8 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 * Critère de réussite 1.4.3
 * Niveau AA
-* Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
-   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
+* Contraste (minimum) : la présentation visuelle du texte et des images du texte a un rapport de contraste d’au moins 4,5:1, à l’exception des éléments suivants :
+   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3 :1.
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément [purement décoratif](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), invisible de tous et toutes ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
@@ -543,9 +543,9 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 
 Veillez à ce que le texte soit suffisamment contrasté par rapport à son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
-* Pour le texte de moins de 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images de texte et l’arrière-plan doit être d’au moins 4.5:1.
-* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
-* Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4.5:1 ou 3:1 soit préservé.
+* Pour un texte dont la taille est inférieure à 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images du texte et l’arrière-plan doit être d’au moins 4,5 :1.
+* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
+* Si un arrière-plan est répété, l’arrière-plan autour de tout texte doit être ombré de sorte que le rapport de 4,5:1 ou 3:1 soit conservé.
 
 >[!NOTE]
 >

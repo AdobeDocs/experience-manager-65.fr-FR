@@ -9,11 +9,11 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
-workflow-type: ht
-source-wordcount: '1097'
-ht-degree: 100%
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    >
    >Si un site contient des racines de langue sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
    >
-   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin source, il échoue et renvoie l’erreur « La destination existe déjà à l’emplacement : chemin d’accès à la page ».
+   >Si vous essayez de créer un lancement avec une page parent ou enfant dans le chemin d’accès source, il échoue et renvoie l’erreur « La destination existe déjà à l’:path dans la page ».
 
 1. Pour chaque entrée, vous pouvez indiquer si :
 

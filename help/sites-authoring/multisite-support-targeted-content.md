@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 100%
@@ -107,7 +107,7 @@ Chaque site partage du contenu personnalisé dans des régions géographiques :
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour le public masculin et il la modifie donc sur le site des États-Unis.
+Pour l’hémisphère nord, une activité d’hiver a été créée, mais le spécialiste marketing en Amérique du Nord souhaiterait une image différente pour l’hiver pour l’audience masculine et il la modifie donc sur le site des États-Unis.
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
