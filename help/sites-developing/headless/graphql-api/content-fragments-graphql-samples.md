@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 99%
 
 ---
 
@@ -1618,11 +1618,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
+### Exemple de requête pour plusieurs fragments de contenu d’un ensemble de paramètres régionaux donné {#sample-wknd-multiple-fragments-given-locale}
 
 Cette requête interroge :
 
-* à la recherche de fragments de contenu de type `article` dans le paramètre régional `fr`
+* à la recherche de fragments de contenu de type `article` dans les paramètres régionaux `fr`
 
 **Exemple de requête**
 
@@ -1720,7 +1720,7 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Croft |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
@@ -1738,10 +1738,10 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 
 | Nom | Pays | Population | Catégories |
 |--- |--- |--- |--- |
-| Bâle | Suisse | 172258 | city:emea |
+| Bâle | Suisse | 172258 | ville :emea |
 | Berlin | Allemagne | 3669491 | city:capital<br>city:emea |
 | Bucarest | Roumanie | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
-| San Jose |  États-Unis |  102635 |  city:na |
-| Stuttgart |  Allemagne |  634830 |  city:emea |
+| San Jose |  États-Unis |  102635 |  ville :na |
+| Stuttgart |  Allemagne |  634830 |  ville :emea |
 |  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |

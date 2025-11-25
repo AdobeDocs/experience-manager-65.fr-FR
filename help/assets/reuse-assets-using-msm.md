@@ -3,12 +3,12 @@ title: Réutilisation des ressources à l’aide de MSM
 description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie primaire. De plus, en quelques clics, elles reçoivent les mises à jour des ressources parents.
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3284'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Vous pouvez créer des Live Copies d’une ressource ou d’un dossier à la foi
 
 Pour créer des Live Copies à l’aide de la première méthode, procédez comme suit :
 
-1. Sélectionnez des ressources ou des dossiers sources. **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
+1. Sélectionnez des ressources ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Live Copy]**.
 
    ![Création d’une Live Copy depuis l’interface d’[!DNL Experience Manager]](assets/create_lc1.png)
 

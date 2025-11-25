@@ -1,13 +1,13 @@
 ---
 title: Utilisation de Media Library pour la gestion de base des ressources numériques
-description: "[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."
+description: '[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources.'
 contentOwner: AG
-role: Architect, Leader
+role: Developer, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 100%
@@ -88,7 +88,7 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez l’Assistance clientèle d’Adobe.
 
-Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, des workflows de modification des ressources ou l’interface utilisateur standard [!DNL Adobe Experience Manager] pour accéder à Media Library sans licence [!DNL Assets].
+Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, des workflows de modification des ressources ou l’interface d’utilisation standard [!DNL Adobe Experience Manager] pour accéder à Media Library sans licence [!DNL Assets].
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

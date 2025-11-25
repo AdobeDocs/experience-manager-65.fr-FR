@@ -1,12 +1,12 @@
 ---
 title: Utilisation du dispositif de suivi de page et du code intégré sur les pages web
-description: Découvrez comment inclure le dispositif de suivi de page et intégrer du code JavaScript dans le code de votre site web pour permettre à Adobe Analytics de capturer des données d’utilisation concernant les ressources.
+description: Découvrez comment inclure le dispositif de suivi de page et incorporer du code JavaScript dans le code de votre site web pour permettre à Adobe Analytics de capturer des données d’utilisation concernant les ressources.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
@@ -81,7 +81,7 @@ Vous ajoutez le code de suivi de page dans la section d’en-tête du code de vo
  </head>
 ```
 
-## Ajout de code incorporé {#add-embed-code}
+## Ajout de code intégré {#add-embed-code}
 
 Vous ajoutez le code intégré dans le corps du code de votre site web. Le fragment de code suivant présente le code intégré inclus dans un exemple de page web :
 

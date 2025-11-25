@@ -4,8 +4,8 @@ description: Découvrez comment organiser votre contenu découplé et comment fo
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 100%

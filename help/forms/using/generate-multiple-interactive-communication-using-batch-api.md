@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 100%
@@ -82,7 +82,7 @@ Pour générer une communication interactive, vous devez combiner un enregistrem
 Pour créer une communication interactive à partir d’enregistrements sauvegardés dans un fichier JSON, procédez comme suit :
 
 1. Créez un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) et configurez-le pour quʼil utilise l’API Batch :
-   1. Connectez-vous à votre instance d’auteur AEM Forms.
+   1. Connectez-vous à votre instance de création AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
@@ -142,7 +142,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Enregistrez et fermez le fichier.
 
 1. Créer et configurer un [Dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md) pour quʼil utilise le service API Batch
-   1. Connectez-vous à votre instance d’auteur AEM Forms.
+   1. Connectez-vous à votre instance de création AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Sélectionnez **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
    1. Sélectionnez lʼoption **[!UICONTROL Service]** dans le champ **[!UICONTROL Traiter le fichier avec]**.
@@ -154,7 +154,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
       | Propriété | Type | Description |
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin dʼaccès du modèle de communication interactive à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
-      | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booléen | Définissez la valeur sur « true ». La valeur par défaut est false. Lorsque la valeur est définie sur « true », l’API Batch lit les données du modèle de données de formulaire configuré et les transmet dans la communication interactive. Lorsque la méthode usePrefillService est définie sur « true », les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. |
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |

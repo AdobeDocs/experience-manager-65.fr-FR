@@ -4,9 +4,9 @@ description: Guide rapide relatif à WCAG version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: ht
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 
@@ -131,13 +131,13 @@ La liste des techniques n’est pas terminée, et WAI la met constamment à jour
 
 Il s’agit d’une série de documents qui fournissent des conseils aux lecteurs et lectrices, en vue de les aider à comprendre l’objectif des recommandations et critères de réussite spécifiques. Vous pouvez [télécharger une introduction, ainsi que des liens vers des informations plus détaillées](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Chaque recommandation et critère de réussite possède également sa propre page « Compréhension », qui fournit des informations sur :
+Chaque recommandation et critère de réussite possède également sa propre page Compréhension, qui fournit des informations sur :
 
 * l’intention de la recommandation ;
 * les critères de réussite spécifiques ;
 * les techniques consultatives qui aident à répondre aux exigences de la recommandation, mais qui ne relèvent d’aucun critère de réussite spécifique.
 
-La page « Compréhension » rattachée à chaque critère de réussite fournit des informations sur :
+La page Compréhension rattachée à chaque critère de réussite fournit des informations sur :
 
 * l’intention du critère de réussite ;
 * des exemples généraux sur la façon dont le critère de réussite peut être rempli ;

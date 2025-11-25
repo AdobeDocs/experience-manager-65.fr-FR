@@ -4,8 +4,8 @@ description: Faites vos premiers pas avec cette visite guidée et découvrez les
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnali
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre audience, où qu’elle se trouve et quel que soit son canal.
 
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences digitales.
 
@@ -36,7 +36,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/overview.md) sont un bon endroit pour commencer.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est conçu pour les architectes de contenu. En tant qu’architecte de contenu, vous serez en charge de la définition de la structure du contenu. Ces définitions seront ensuite utilisées par les auteurs de contenu lorsqu’ils créeront le contenu réel.
 

@@ -8,8 +8,8 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 100%
 
@@ -274,7 +274,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 ## Dynamic Media - Formats d’images pixellisées prises en charge {#supported-raster-image-formats-dynamic-media}
 
-| Format | Charger (format d’entrée) | Créer un paramètre prédéfini d’image (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
+| Format | Charger (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [Image](/help/assets/image-sets.md), [Supports variés](/help/assets/mixed-media-sets.md) et [360°](/help/assets/spin-sets.md) |

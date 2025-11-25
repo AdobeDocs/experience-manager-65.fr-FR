@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '7562'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 100%
          + [Création d’une racine de langue à l’aide de l’interface utilisateur classique](/help/sites-administering/tc-lroot-classic.md)
          + [Connexion à Microsoft Translator](/help/sites-administering/tc-msconf.md)
          + [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md)
-         + [Assistant Copie de langue](/help/sites-administering/tc-wizard.md)
+         + [Assistant Copie linguistique](/help/sites-administering/tc-wizard.md)
          + [Amélioration des traductions](/help/sites-administering/tc-enhancements.md)
          + [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
          + [Configurations et explorateur de configurations](/help/sites-administering/configurations.md)
@@ -375,8 +375,8 @@ ht-degree: 100%
       + [Bonnes pratiques relatives à l’optimisation de la qualité des images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](/help/assets/managing-viewer-presets.md)
       + [Application des paramètres prédéfinis de la visionneuse Dynamic Media](/help/assets/viewer-presets.md)
-      + [Gestion des paramètres prédéfinis d’image Dynamic Media](/help/assets/managing-image-presets.md)
-      + [Application des paramètres d’image prédéfinis Dynamic Media](/help/assets/image-presets.md)
+      + [Gestion des paramètres d’image prédéfinis Dynamic Media](/help/assets/managing-image-presets.md)
+      + [Application de paramètres d’image prédéfinis Dynamic Media](/help/assets/image-presets.md)
       + [Profils vidéo Dynamic Media](/help/assets/video-profiles.md)
       + [Profils d’image Dynamic Media](/help/assets/image-profiles.md)
       + [Imagerie dynamique](/help/assets/imaging-faq.md)
@@ -387,7 +387,7 @@ ht-degree: 100%
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/hotlink-protection.md)
       + [Prise en charge de la 3D](/help/assets/assets-3d.md)
       + [Limites de Dynamic Media](/help/assets/limitations.md)
-      + [Visionneuses d’images](/help/assets/image-sets.md)
+      + [Ensembles d’images](/help/assets/image-sets.md)
       + [Images panoramiques](/help/assets/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/mixed-media-sets.md)
       + [Visionneuses à 360°](/help/assets/spin-sets.md)
@@ -580,11 +580,11 @@ ht-degree: 100%
       + Mettre à niveau AEM Forms sur JEE {#aem-forms-jee-upgrade}
          + [Préparation à la mise à niveau d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_fr)
          + [Aide-mémoire et planification de la mise à niveau d’Adobe Experience Manager Forms sur JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_fr)
-      + [Mettre à niveau vers AEM Forms 6.5 sur JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
-      + [Mise à niveau vers AEM Forms on JEE pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_fr)
-      + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_fr)
-      + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_fr)
+         + [Mettre à niveau vers AEM Forms 6.5 sur JEE](/help/forms/using/upgrade-forms-jee.md)
+         + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
+         + [Mise à niveau vers AEM Forms on JEE pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_fr)
+         + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_fr)
+         + [Mettre à niveau vers Adobe Experience Manager Forms sur JEE pour WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_fr)
    + Gérer AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms sur les groupes et privilèges OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Création de dossiers pour classer les formulaires](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -618,12 +618,12 @@ ht-degree: 100%
       + [Utilisation d’un modèle de données de formulaire](/help/forms/using/using-form-data-model.md)
    + Formulaires adaptatifs - Composants principaux {#adaptive-forms-core-components}
       + [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md)
-      + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
+      + [Créer un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif](/help/forms/using/adaptive-form-fragment-core-components.md)
-      + [Créer des thèmes pour formulaires adaptatifs basés sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+      + [Création de thèmes pour formulaires adaptatifs basés sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [Éditeur de règles](/help/forms/using/rule-editor-core-components.md)
       + [Créer et utiliser une fonction personnalisée dans les composants principaux d’un formulaire adaptatif](/help/forms/using/create-and-use-custom-functions-core-components.md)
-      + [Créer et utiliser un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Création et utilisation d’un gestionnaire d’erreurs personnalisé pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
       + [Ajouter des contrôles de version, des commentaires et des annotations à un formulaire adaptatif](/help/forms/using/add-versioning-reviews-comments.md)
       + [Comparer des formulaires adaptatifs](/help/forms/using/compare-forms-core-components.md)
       + [Bouton (bascule) Activer la fonction](/help/forms/using/enable-feature-toggle.md)
@@ -966,12 +966,12 @@ ht-degree: 100%
          + [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md)
       + Gestion des points d’entrée {#manage-endpoints}
          + [Ajout, activation, modification ou suppression de points d’entrée](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [Configuration des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Configuration de l’authentification oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [Configuration des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Configuration des points d’entrée des dossiers de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Configuration des points d’entrée Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Types de points d’entrée](/help/forms/using/admin-help/types-endpoints.md)
+         + [Configuration des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
+         + [Configuration de l’authentification oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
+         + [Configuration des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+         + [Configuration des points d’entrée des dossiers de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+         + [Configuration des points d’entrée Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+         + [Types de points d’entrée](/help/forms/using/admin-help/types-endpoints.md)
       + Configuration des extensions d’Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
          + [Types de certificats utilisés par les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Identification des certificats valables et des certificats expirés dans les documents PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
@@ -1008,7 +1008,7 @@ ht-degree: 100%
          + [Contrôle des événements](/help/forms/using/admin-help/monitoring-events.md)
          + [Création et gestion des politiques](/help/forms/using/admin-help/creating-policies.md)
          + [Utilisation des pages Web de Document Security](/help/forms/using/admin-help/using-document-security-web-pages.md)
-         + [Création et gestion des jeux de politiques](/help/forms/using/admin-help/creating-policy-sets.md)
+         + [Créer et gérer les ensembles de politiques](/help/forms/using/admin-help/creating-policy-sets.md)
          + [Enregistrement en tant qu’utilisateur](/help/forms/using/admin-help/registering-as-a-user.md)
       + Configuration de Forms {#configure-forms}
          + [Principes de base des formulaires de configuration](/help/forms/using/admin-help/overview-7.md)
@@ -1106,8 +1106,8 @@ ht-degree: 100%
          + Présentation de la programmation avec AEM Forms sur JEE {#introduction-programming-aem-forms-jee}
             + [Présentation du démarrage rapide de lʼAPI Java](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [Appel d’AEM Forms à l’aide d’API](/help/forms/developing/invoking-aem-forms-using-apis.md)
-         + [Présentation des processus AEM Forms](/help/forms/developing/aem-forms-processes.md)
-         + [Conteneur de services](/help/forms/developing/service-container.md)
+            + [Présentation des processus AEM Forms](/help/forms/developing/aem-forms-processes.md)
+            + [Conteneur de services](/help/forms/developing/service-container.md)
          + Développement de SPI pour AEM Forms {#developing-spis-aem-forms}
             + [Créer un gestionnaire d’utilisateurs et d’utilisatrices externes](/help/forms/developing/creating-invite-external-users-handler.md)
          + Démarrage rapide : API Java - Exemples de code {#java-api-quick-start-code-examples}
@@ -1173,7 +1173,7 @@ ht-degree: 100%
             + [Rendre des formulaires par valeur](/help/forms/developing/rendering-forms-value.md)
             + [Effectuer le rendu de formulaires en HTML](/help/forms/developing/rendering-forms-html.md)
             + [Rendu des formulaires au niveau du client](/help/forms/developing/rendering-forms-client.md)
-            + [Restituer des formulaires HTML à l’aide de fichiers CSS personnalisés](/help/forms/developing/rendering-html-forms-using-custom.md)
+            + [Rendu de formulaires HTML à l’aide de fichiers CSS personnalisés](/help/forms/developing/rendering-html-forms-using-custom.md)
             + [Effectuer le rendu des formulaires HTML avec des barres d’outils personnalisées](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
             + [Effectuer le rendu de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
             + [Générer des formulaires définis avec des droits](/help/forms/developing/rendering-rights-enabled-forms.md)
@@ -1208,7 +1208,7 @@ ht-degree: 100%
       + [Impossible d’utiliser les services de sortie, de formulaires ou de document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Atténuer les vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
-      + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur WorkBench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
+      + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur Workbench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Redémarrage correct du SDK AEM](/help/forms/using/restart-aem-sdk.md)
       + [Le service PaperCapture ne réussit pas à effectuer de reconnaissance optique des caractères sur les fichiers PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Atténuation des vulnérabilités du framework Spring pour AEM Forms on JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
@@ -1217,7 +1217,7 @@ ht-degree: 100%
       + [Atténuation des vulnérabilités XXE, de configuration et d’exécution de code à distance pour AEM Forms sur JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
+      + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
       + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
@@ -1226,7 +1226,7 @@ ht-degree: 100%
       + [Génération et utilisation de hachages dans les PDF forms dynamiques](/help/forms/developing/hashing-forms.md)
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
    + Glossaire {#aem-forms-glossary}
-+[Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
+      + [Glossaires AEM Forms](/help/forms/using/aem-forms-glossary.md)
 + IA dans AEM {#ai-in-aem}
    + [Vue d’ensemble](/help/ai-in-aem/overview.md)
    + Assistant IA {#ai-assistant}
@@ -1237,7 +1237,7 @@ ht-degree: 100%
    + [Modifications notables apportées à AEM Content and Commerce](/help/commerce/cif/changes.md)
    + Intégrations {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
-      + [Solution commerciale tierce](/help/commerce/cif/integrating/third-party.md)
+      + [Solution de commerce tierce](/help/commerce/cif/integrating/third-party.md)
    + AEM Storefront {#storefront}
       + [Prise en main](/help/commerce/cif/getting-started.md)
       + Création {#authoring}
@@ -1606,7 +1606,7 @@ ht-degree: 100%
          + [Contrôle et maintien de votre instance AEM](/help/sites-deploying/monitoring-and-maintaining.md)
          + [Tâches de déchargement](/help/sites-deploying/offloading.md)
          + [Mappage de ressource](/help/sites-deploying/resource-mapping.md)
-         + [Vérifications transversales et contrôles de cohérence](/help/sites-deploying/consistency-check.md)
+         + [Vérifications de traversée et contrôles de cohérence](/help/sites-deploying/consistency-check.md)
          + [Instructions de performance](/help/sites-deploying/performance-guidelines.md)
          + [Optimisation des performances](/help/sites-deploying/configuring-performance.md)
          + [Guide de performances des ressources](/help/sites-deploying/assets-performance-sizing.md)

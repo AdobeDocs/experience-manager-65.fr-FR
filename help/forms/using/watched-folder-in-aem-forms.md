@@ -9,10 +9,10 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7164'
-ht-degree: 100%
+source-wordcount: '7136'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **inputProcessorType (chaîne)** : type du processus à démarrer. Vous pouvez spécifier le workflow, le script, ou le service. Il s’agit d’une propriété obligatoire.
 * **inputProcessorId (chaîne)** : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Il s’agit d’une propriété obligatoire. La liste suivante détaille toutes les valeurs possibles de la propriété inputProcessorType et de la condition requise correspondante pour la propriété inputProcessorType :
 
-   * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model.
+   * Pour le workflow, spécifiez le modèle de workflow à exécuter. Par exemple, /etc/workflow/models/&lt;nom_workflow>/jcr:content/model
    * Pour le script, spécifiez le chemin JCR du script à exécuter. Par exemple, /etc/fd/watchfolder/test/testScript.ecma.
    * Pour le service, spécifiez le filtre utilisé pour localiser un service OSGi. Le service est enregistré comme une implémentation de l’interface de com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
@@ -102,11 +102,11 @@ Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder
    * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+      * &#42;.`[dD][aA]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
-Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (chaîne)** : liste dont les éléments sont séparés par des points-virgules (;) utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur input&#42;, tous les fichiers et les dossiers correspondant à input&#42; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc. La valeur par défaut est &#42; et elle désigne tous les fichiers et dossiers. Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
 
@@ -115,10 +115,10 @@ Pour plus d’informations sur les modèles de fichiers, voir [A propos des mod�
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
 
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;.`[dD][aA]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -297,7 +297,7 @@ Si vous souhaitez placer des scripts à un emplacement personnalisé, il est pro
 1. Créez un utilisateur système par programmation ou par l’intermédiaire de la console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser une personne utilisatrice système existante. Ici, il est important de travailler avec des personnes utilisatrices système plutôt qu’avec des personnes utilisatrices normales.
 1. Fournissez des autorisations de lecture à la personne utilisatrice système existante ou qui vient d’être créée pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Indiquez au moins des autorisations de lecture pour tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de la personne utilisatrice de service pour les dossiers de contrôle. Ce mappage ressemble à « Mapping: adobe-aemds-core-watch-folder=... »
-1. Cliquez sur le mappage. Pour l’entrée « adobe-aemds-core-watch-folder:scripts=fd-service », remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
+1. Cliquez sur le mappage. Pour l’entrée « adobe-aemds-core-watch-folder:scripts=fd-service », remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
 
 Vous pouvez désormais utiliser l’emplacement personnalisé configuré pour enregistrer les scripts.
 
@@ -568,9 +568,9 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.&#42;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &#42;.[dD][Aa]&#39;port&#39;
-   * &#42;.[Xx][Mm][Ll]
+   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * &#42;.`[dD][aA]`&#39;port&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * L’administrateur ou l’administratrice peut définir le modèle de fichier du dossier de sortie dans lequel enregistrer les résultats. Concernant les dossiers de sortie (résultats, conservation et échecs), il ou elle peut indiquer l’un des modèles de fichier suivants :
 * %Y = année (complète)
@@ -663,7 +663,7 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
 
 1. Ouvrez CRXDE Lite dans une fenêtre du navigateur. https://&#39;[server]:[port]&#39;/crx/de/
 
-1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un nœud de type nt:unstructured.
+1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un nœud de type nt:unstructured.
 
    ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
@@ -672,7 +672,7 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
    * folderPath (chaîne) : chemin du dossier à analyser à des intervalles de temps définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
 inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le workflow.
 
-   * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
+   * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin d’accès suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (chaîne) : modèle du fichier de sortie. Vous pouvez spécifier un modèle de dossier ou de fichier. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 

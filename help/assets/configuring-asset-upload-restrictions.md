@@ -2,14 +2,14 @@
 title: Configuration des restrictions de chargement des ressources
 description: Restrictions en matière de type de ressources (fichiers) que les utilisateurs peuvent charger
 contentOwner: AG
-role: Developer, Admin, Architect
+role: Developer, Admin
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -26,4 +26,4 @@ Vous pouvez configurer [!DNL Adobe Experience Manager Assets] de sorte à limite
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications. Si vous spécifiez des chaînes MIME pour les types MIME autorisés, l’opération de chargement échoue pour toute ressource de type MIME qui ne correspond pas aux chaînes MIME configurées dans ces champs.
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les modifications. Si vous spécifiez des chaînes MIME pour les types MIME autorisés, l’opération de chargement échoue pour toute ressource de type MIME qui ne correspond pas aux chaînes MIME configurées dans ces champs.

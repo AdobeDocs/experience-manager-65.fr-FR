@@ -10,10 +10,10 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4919'
-ht-degree: 100%
+source-wordcount: '4923'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Une fois toutes les étapes effectuées, vos pages se présentent comme suit :
 
 **Télécharger le résultat final**
 
-Pour suivre le tutoriel plutôt que d’effectuer les exercices, téléchargez le fichier website-1.0.zip. Ce fichier est un package de contenu AEM qui contient les résultats de ce tutoriel. Utilisez le [gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer le package sur votre instance de création.
+Pour suivre le tutoriel plutôt que d’effectuer les exercices, téléchargez le fichier website-1.0.zip. Ce fichier est un module de contenu AEM qui contient les résultats de ce tutoriel. Utilisez le [gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer le package sur votre instance de création.
 
 **REMARQUE** : l’installation de ce package écrase toutes les ressources de votre instance de création que vous avez créées à l’aide de ce tutoriel.
 
-Package de contenu de site web
+Module de contenu de site web
 
 [Obtenir le fichier](assets/website-1_0.zip)
 
@@ -67,7 +67,7 @@ Une fois que vous avez installé AEM, accédez à l’environnement de développ
 
 >[!NOTE]
 >
->L’URL de CRXDE Lite pour une instance de création AEM installée en local à l’aide du port par défaut est [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
+>L’URL de CRXDE Lite pour une instance de création AEM installée localement à l’aide du port par défaut est [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
 
 ### Configurer la structure du projet dans CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
@@ -103,7 +103,7 @@ Exemple de fichier static.css et d’images
 
 1. Si l’élément mywebsite n’apparaît pas dans le tableau, actualisez l’arborescence ou le tableau.
 
-1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md), accédez à l’URL https://localhost:4502, puis copiez l’exemple de fichier `static.css` et le dossier `images` depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
+1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md) accédez à l’URL à l’adresse https://localhost:4502 puis copiez l’exemple de fichier `static.css` et `images` dossier depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -216,7 +216,7 @@ Ajoutez le code au script contentpage.jsp pour définir le contenu de la page.
 
 Dans cette section, vous allez créer les pages suivantes qui utilisent toutes le modèle contentpage : Website, English, Products, Services et Customers.
 
-1. Sur la page d’accueil d’AEM ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), cliquez sur Sites web.
+1. Sur la page d’accueil d’AEM ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), cliquez sur Sites web.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -260,13 +260,13 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
 1. Pour lier vos pages à la conception mywebsite, sélectionnez le nœud `/content/mywebsite/en/jcr:content` dans CRXDE Lite. Dans l’onglet Propriétés, saisissez les valeurs suivantes pour une nouvelle propriété, puis cliquez sur Ajouter :
 
-   * Nom : cq:designPath
+   * Nom : cq:designPath
    * Type : chaîne
    * Valeur : /etc/designs/mywebsite
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
+1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -289,7 +289,7 @@ Par exemple, dans le code JSP de votre composant, vous pouvez référencer les s
    1. Sélectionnez le nœud `/apps/mywebsite/components/contentpage`.
    1. En bas de l’onglet Propriétés, entrez les valeurs de propriété suivantes, puis cliquez sur Ajouter :
 
-      * **Nom :** sling:resourceSuperType
+      * **Nom :** sling:resourceSuperType
       * **Type :** chaîne
       * **Valeur :** foundation/components/page
 
@@ -485,7 +485,7 @@ Le composant Page définit les propriétés qui vous permettent de fournir des s
 1. Répétez les étapes précédentes pour ajouter le sous-titre **about our services** à la page **Services**.
 1. Répétez les étapes précédentes pour ajouter le sous-titre **the trust we earn** à la page **Customers**.
 
-   **Conseil :** dans CRXDE Lite, sélectionnez le noeud /content/mywebsite/en/products/jcr:content pour voir que la propriété subtitle est ajoutée.
+   **Conseil :** dans CRXDE Lite, sélectionnez le nœud /content/mywebsite/en/products/jcr:content pour ajouter la propriété de sous-titre.
 
 #### Amélioration de la navigation supérieure à l’aide de liens d’image {#enhance-top-navigation-by-using-image-links}
 
@@ -493,7 +493,7 @@ Améliorez le script de rendu du composant topnav afin d’utiliser des liens d�
 
 Cet exercice montre le [Traitement des requêtes Sling](/help/sites-developing/the-basics.md#sling-request-processing). Le script topnav.jsp est modifié pour appeler un script qui génère de manière dynamique des images à utiliser pour les liens de navigation de la page. Dans cet exercice, Sling analyse l’URL des fichiers source de l’image pour déterminer le script à utiliser pour effectuer le rendu des images.
 
-Par exemple, la source du lien d’image vers la page Products peut être https://localhost:4502/content/myWebsite/en/products.navimage.png. Sling analyse cette URL pour déterminer le type de ressource et le script à utiliser pour effectuer le rendu de la ressource :
+Par exemple, la source du lien d’image vers la page Produits peut être https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analyse cette URL pour déterminer le type de ressource et le script à utiliser pour effectuer le rendu de la ressource :
 
 1. Sling détermine que le chemin d’accès de la ressource doit être `/content/mwebysite/en/products.png.`.
 1. Sling fait correspondre ce chemin d’accès avec le nœud `/content/mywebsite/en/products`.
@@ -649,11 +649,11 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 
 ### Création du composant listchildren {#creating-the-list-children-component}
 
-Créez le composant listchildren qui génère une liste de liens de page qui incluent le titre, la description et la date des pages (par exemple, des pages de produits). Les liens ciblent les pages enfants de la page active ou d’une page racine spécifiée dans la boîte de dialogue du composant.
+Créez le composant listchildren qui génère une liste de liens de page qui incluent le titre, la description et la date des pages (par exemple, des pages produits). Les liens ciblent les pages enfants de la page active ou d’une page racine spécifiée dans la boîte de dialogue du composant.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-#### Création de pages de produits {#creating-product-pages}
+#### Création de pages produits {#creating-product-pages}
 
 Créez deux pages situées sous la page Produits. Pour chaque page qui décrit deux produits spécifiques, vous définissez un titre, une description et une date.
 
@@ -694,7 +694,7 @@ Créez deux pages situées sous la page Produits. Pour chaque page qui décrit d
    1. Sélectionnez le nœud /content/mywebsite/en/products/product2/jcr:content.
    1. Dans l’onglet **Propriétés**, entrez les valeurs suivantes :
 
-      * Nom : jcr:description
+      * Nom : jcr:description
       * Type : chaîne
       * Valeur : This is a description of the Product 2!.
 
@@ -782,14 +782,14 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
 1. Sélectionnez le nœud tab1 et cliquez sur Créer > Créer un nœud, saisissez les valeurs de propriété suivantes, puis cliquez sur OK :
 
    * Nom : items
-   * Type : cq:WidgetCollection
+   * Type : cq:WidgetCollection
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Créez un nœud sous le nœud items à l’aide des valeurs de propriété suivantes :
 
    * Nom : listroot
-   * Type : cq:Widget
+   * Type : cq:Widget
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
@@ -1172,32 +1172,32 @@ Cette section explique comment créer le script Image.
 
 1. Enregistrez les modifications.
 
-#### Création du nœud d’image cq:editConfig {#creating-the-image-cq-editconfig-node}
+#### Création du nœud Image cq:editConfig {#creating-the-image-cq-editconfig-node}
 
 Le type de nœud `cq:editConfig` vous permet de configurer certains comportements de composants lorsque vous modifiez leurs propriétés.
 
-Dans cette section, vous utilisez un nœud cq:editConfig pour faire glisser des ressources depuis l’outil de recherche de contenu vers votre composant Image.
+Dans cette section, vous utilisez un nœud cq:editConfig pour vous permettre de faire glisser des ressources de l’outil de recherche de contenu vers votre composant d’image.
 
 1. Dans CRXDE Lite, sous le nœud /apps/mywebsite/components/image, créez un nœud comme suit :
 
-   * Nom : cq:editConfig.
-   * Type : cq:EditConfig.
+   * Nom : cq:editConfig.
+   * Type : cq:EditConfig.
 
-1. Sous le nœud cq:editConfig, créez un nœud comme suit :
+1. Sous le nœud cq:editConfig, créez un nœud comme suit :
 
-   * Nom : cq:dropTargets.
-   * Type : cq:DropTargetConfig.
+   * Nom : cq:dropTargets.
+   * Type : cq:DropTargetConfig.
 
-1. Sous le nœud cq:dropTargets, créez un nœud comme suit :
+1. Sous le nœud cq:dropTargets, créez un nœud comme suit :
 
    * Nom : image.
-   * Type : nt:unstructured.
+   * Type : nt:unstructured.
 
 1. Dans CRXDE, définissez les propriétés comme suit :
 
 | Nom | Type | Valeur |
 |---|---|---|
-| accept | Chaîne | image/(gif | jpeg | png) |
+| accept | Chaîne | image/(gif\|jpeg\|png) |
 | groups | Chaîne | media |
 | propertyName | Chaîne | ./imageReference |
 

@@ -10,10 +10,10 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '6662'
-ht-degree: 100%
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
+source-wordcount: '6654'
+ht-degree: 97%
 
 ---
 
@@ -688,7 +688,7 @@ Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en
 |---|---|
 | Chemins pris en charge `/content` | La gestion du contrôle d’accès pour les politiques de CUG est activée. |
 | FALSE activée pour l’évaluation des CUG | L’évaluation des autorisations est désactivée. Les politiques de CUG n’ont aucun effet. |
-| Classement | 200 | Consultez la documentation d’Oak. |
+| Classement \|200 | Consultez la documentation d’Oak. |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en
 |---|---|
 | Chemins pris en charge `/content` | La gestion du contrôle d’accès pour les politiques de CUG est activée sous les chemins configurés. |
 | Évaluation des CUG activée TRUE | L’évaluation des autorisations est activée sous les chemins configurés. Les politiques de CUG prennent effet `Session.save()`. |
-| Classement | 200 | Consultez la documentation d’Oak. |
+| Classement \|200 | Consultez la documentation d’Oak. |
 
 | **« Liste d’exclusion de CUG Apache Jackrabbit Oak »** | **Explication** |
 |---|---|
@@ -802,7 +802,7 @@ Cette transition des propriétés JCR résiduelles vers une politique de contrô
 
 Les politiques CUG sont créées au niveau du nœud JCR définissant la sous-arborescence dont l’accès en lecture est limitée. Il s’agit probablement d’une page AEM au cas où le CUG devrait affecter l’ensemble de l’arborescence.
 
-Notez que le fait de placer la politique de CUG uniquement au nœud jcr:content situé sous une page donnée limite l’accès au contenu s.str d’une page donnée, mais n’aura aucun effet sur les pages enfants ou sœurs. Il peut s’agir d’un cas d’utilisation valide, réalisable avec un éditeur de référentiel qui permet d’appliquer un accès de granularité fine au contenu. Toutefois, cela contraste avec l’ancienne mise en œuvre où le placement d’une propriété cq:cugEnabled sur le nœud jcr:content était remappé en interne sur le nœud de page. Ce mappage n’est plus effectué.
+Le placement de la politique de CUG uniquement au niveau du nœud jcr:content situé en dessous d’une page donnée limite uniquement l’accès au contenu s.str d’une page donnée, mais n’aura aucun effet sur les pages enfants ou frères. Il peut s’agir d’un cas d’utilisation valide, réalisable avec un éditeur de référentiel qui permet d’appliquer un accès de granularité fine au contenu. Toutefois, cela contraste avec l’ancienne mise en œuvre où le placement d’une propriété cq:cugEnabled sur le nœud jcr:content était remis en correspondance en interne sur le nœud de page. Ce mappage n’est plus effectué.
 
 **Évaluation des autorisations avec les politiques CUG**
 
@@ -843,13 +843,13 @@ En ce qui concerne `granite:loginPath`, le même privilège est requis pour ajou
 
 Créez des exigences d’authentification au niveau du nœud JCR définissant la sous-arborescence qui doit être soumise à une connexion forcée. Il s’agira probablement d’une page AEM dans la mesure où le CUG devrait affecter l’ensemble de l’arborescence et que l’interface utilisateur de la nouvelle implémentation ajouterait ainsi le type de mixin d’exigence d’authentification sur le nœud de la page.
 
-Le fait de placer la stratégie de CUG uniquement au niveau du nœud jcr:content situé sous une page donnée limite uniquement l’accès au contenu. Toutefois, cela n’a aucune incidence sur le nœud de page lui-même ni sur les pages enfants.
+Le fait de placer la politique de CUG uniquement au niveau du nœud jcr:content situé sous une page donnée limite uniquement l’accès au contenu. Toutefois, cela n’a aucune incidence sur le nœud de page lui-même ni sur les pages enfants.
 
-Il peut s’agir d’un scénario valide et possible avec un éditeur de référentiel qui permet de placer le mixin au niveau de n’importe quel nœud. Toutefois, le comportement contraste avec l’ancienne mise en œuvre où le placement d’une propriété cq:cugEnabled ou cq:cugLoginPage sur le nœud jcr:content était remis en correspondance en interne sur le nœud de page. Ce mappage n’est plus effectué.
+Il peut s’agir d’un scénario valide et possible avec un éditeur de référentiel qui permet de placer le mixin au niveau de n’importe quel nœud. Cependant, le comportement contraste avec l’ancienne mise en œuvre, où le placement d’une propriété cq:cugEnabled ou cq:cugLoginPage sur le nœud jcr:content était remis en correspondance en interne sur le nœud de page. Ce mappage n’est plus effectué.
 
 #### Chemins pris en charge configurés {#configured-supported-paths}
 
-Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath sont respectés uniquement dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le **Gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite**. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
+Le type de mixin `granite:AuthenticationRequired` et la propriété granite:loginPath ne sont respectés que dans la portée définie par le jeu de l’option de configuration **Chemins pris en charge** présent avec le gestionnaire d’exigence d’authentification et de chemin de connexion Adobe ****. Si aucun chemin n’est spécifié, la fonction d’exigence d’authentification est complètement désactivée. Dans ce cas, ni le type de mixin ni la propriété ne prennent effet lorsqu’ils sont ajoutés ou définis sur un nœud JCR donné.
 
 ### Mappage de contenu JCR, de services OSGi et de configurations {#mapping-of-jcr-content-osgi-services-and-configurations}
 

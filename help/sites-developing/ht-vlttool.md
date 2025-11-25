@@ -9,7 +9,7 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 100%
@@ -387,7 +387,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 vlt import http://localhost:4502/crx . /
 ```
 
-### Checkout (co) {#checkout-co}
+### Extraction (co) {#checkout-co}
 
 Effectue une extraction initiale à partir d’un référentiel JCR en commençant par &lt;uri> dans le système de fichiers local sur &lt;local-path>. Vous pouvez également ajouter un argument &lt;jcrPath> pour extraire un sous-répertoire de l’arborescence distante. Les filtres de l’espace de travail peuvent être spécifiés et copiés dans le répertoire META-INF.
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, ID), par exemple `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, ID), par exemple `[CQ520_HF_%s\|%s]` |
 | `-v (--verbose)` | Sortie verbose |
 | `-q (--quiet)` | Imprime aussi petit que possible. |
 | `<localPaths> [<localPaths> ...]` | chemin local |

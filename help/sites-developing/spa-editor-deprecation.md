@@ -2,10 +2,10 @@
 title: Abandon de l’éditeur de SPA
 description: Bien que l’éditeur de SPA continue d’être pris en charge par Adobe, découvrez ce que son abandon signifie pour votre projet et les options dont vous disposez pour vos futurs projets.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 100%
 
@@ -34,15 +34,15 @@ L’abandon signifie qu’aucune nouvelle fonctionnalité ne sera ajoutée aux S
 * [AEM SPA Page Model Manager](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA Component Mapping](https://github.com/adobe/aem-spa-component-mapping)
 * [Composants React modifiables de SPA d’AEM](https://github.com/adobe/aem-react-editable-components)
-   * [AEM React Core Components](https://github.com/adobe/aem-react-core-wcm-components)
-   * [AEM React Core Components Base](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [AEM React Core Components SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [AEM React Core Components Examples](https://github.com/adobe/aem-react-core-wcm-components-examples)
+   * [Composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components)
+   * [Base des composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
+   * [SPA des composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
+   * [Exemples de composants principaux AEM React](https://github.com/adobe/aem-react-core-wcm-components-examples)
 * [AEM SPA Angular Editable Components](https://github.com/adobe/aem-angular-editable-components)
-   * [AEM Angular Core Components](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [AEM Angular Core Components Base](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [AEM Angular Core Components SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [AEM Angular Core Components Examples](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+   * [Composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components)
+   * [Base des composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-base)
+   * [SPA des composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+   * [Exemples de composants principaux AEM Angular](https://github.com/adobe/aem-angular-core-wcm-components-examples)
 * [AEM SPA Vue Editable Components](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## Options de remplacement de l’éditeur de SPA {#alternatives}
@@ -63,8 +63,8 @@ L’éditeur universel offre de nombreux avantages, c’est pourquoi migrer vers
 
 * **Modification visuelle :** comme pour l’éditeur de SPA, les auteurs et les autrices peuvent modifier le contenu directement dans la prévisualisation et voir instantanément comment leurs modifications affectent l’expérience des visiteurs.
 * **Préparation à l’avenir :** la feuille de route d’AEM donne la priorité à l’éditeur universel en tant qu’éditeur visuel. Son adoption garantit l’accès aux dernières innovations et améliorations.
-* **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit les contraintes de tech stack.
-* **Utilisez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet une adoption sans nécessiter de restructuration complexe.
+* **Intégration plus simple :** aucun SDK spécifique à AEM n’est nécessaire pour utiliser l’éditeur universel, ce qui réduit le verrouillage de tech stack.
+* **Utilisez votre propre application :** l’éditeur universel prend en charge n’importe quelle structure ou architecture web, ce qui permet l’adoption sans nécessiter de refactorisation complexe.
 * **Extensibilité :** l’éditeur universel bénéficie d’un [framework d’extension robuste](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending), qui inclut des intégrations à l’IA générative, Workfront, etc.
 
 Il n’existe pas de chemin de migration direct de l’éditeur de SPA vers l’éditeur universel. Cela est dû à des différences fondamentales entre les deux technologies.

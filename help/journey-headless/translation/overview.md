@@ -4,8 +4,8 @@ description: Faites vos premiers pas avec ce parcours guidé pour découvrir com
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 100%
@@ -18,7 +18,7 @@ Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire
 
 ## Présentation {#introduction}
 
-L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal, sa zone ou ses paramètres géographiques.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre audience, où qu’elle se trouve et quel que soit son canal, sa zone ou ses paramètres régionaux.
 
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. En utilisant les puissants outils de traduction d’AEM, ces fragments réutilisables peuvent être facilement traduits et diffusés à votre audience, où qu’elle soit.
 
@@ -41,7 +41,7 @@ Les parcours de documentation sont conçus autour des principes de bonne pratiqu
 
 Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/overview.md) sont un bon endroit pour commencer.
 
-## Public {#audience}
+## Audience {#audience}
 
 Ce parcours est conçu pour le profil de spécialiste en traduction, souvent appelé gestionnaire de projet de traduction (TPM). Ce parcours présente les exigences, les étapes et les méthodes de traduction du contenu découplé dans AEM. Il définit les personnes supplémentaires avec lesquelles le spécialiste de la traduction doit interagir, mais le point de vue du parcours est celui du spécialiste de la traduction.
 

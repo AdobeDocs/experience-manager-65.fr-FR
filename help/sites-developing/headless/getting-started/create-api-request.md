@@ -4,8 +4,8 @@ description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
@@ -33,10 +33,10 @@ Les architectes d’informations doivent concevoir des requêtes pour leurs poin
 1. Connectez-vous à AEM et accédez à l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) :
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.
 
-1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
+1. GraphiQL est un requêteur intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
    * Le volet de gauche permet de construire votre requête.
    * Le volet de droite affiche les résultats.
-   * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
+   * Le requêteur comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
      ![Éditeur GraphiQL](assets/graphiql.png)
 
 1. En supposant que le modèle que vous avez créé s’appelle `person`, avec les champs `firstName`, `lastName` et `position`, vous pouvez créer une requête simple pour récupérer le contenu du fragment de contenu.

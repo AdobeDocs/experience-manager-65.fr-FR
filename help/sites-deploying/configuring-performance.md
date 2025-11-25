@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '6467'
-ht-degree: 100%
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
+source-wordcount: '6466'
+ht-degree: 99%
 
 ---
 
@@ -233,7 +233,7 @@ Configurez ces services pour limiter le nombre maximal de workflows en cours d�
 
 #### Configuration dans le référentiel {#configuration-in-the-repo}
 
-Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
+Si vous configurez les services [à l’aide d’un nœud sling:OsgiConfig ](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), vous devez trouver le PID des services existants, par exemple : org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Vous pouvez détecter le PID à l’aide de la console web.
 
 Configurez la propriété nommée `queue.maxparallel`.
 
@@ -388,7 +388,7 @@ Dans les deux cas, vous pouvez définir le nombre de transactions attendu par se
 | Page d’accueil - Utilisateur unique | Moyenne | 1 | 1 |  |  |
 |   | Crête | 1 | 3 |  |  |
 | Page d’accueil 100 utilisateurs | Moyenne | 100 | 3 |  |  |
-|   | Crête | 100 | 3 |  |
+|   | Crête | 100 | 3 |  |  |
 
 #### Tests combinés des composants {#combined-component-tests}
 
@@ -682,7 +682,7 @@ Les références de sauvegarde couvrent deux scénarios principaux : des sauveg
 
 La durée des sauvegardes et la taille des sauvegardes qui en résultent sont obtenues à partir des journaux du serveur AEM. Il est généralement recommandé de planifier des sauvegardes pendant des périodes d’interruption lorsqu’AEM est inactif, par exemple au milieu de la nuit. Ce scénario illustre l’approche recommandée.
 
-La charge est composée des ressources suivantes : les pages créées, les pages supprimées, les parcours et les requêtes. Les parcours et requêtes de page ont le plus gros impact sur la charge. L’ajout et la suppression d’un nombre trop élevé de pages augmentent continuellement la taille de l’espace de travail et empêchent les sauvegardes de se terminer. Le script utilise une charge composée de 75 % de parcours de page, 24 % de requêtes et 1 % de pages créées (niveau unique sans sous-pages imbriquées). La moyenne maximale de transactions par seconde sur un système inactif est atteinte avec quatre threads simultanés. Cette approche est utilisée lors des tests de sauvegarde en situation de charge.
+La charge est composée des ressources suivantes : les pages créées, les pages supprimées, les traversées et les requêtes. Les traversées et requêtes de page ont le plus gros impact sur la charge. L’ajout et la suppression d’un nombre trop élevé de pages augmentent continuellement la taille de l’espace de travail et empêchent les sauvegardes de se terminer. Le script utilise une charge composée de 75 % de traversées de pages, 24 % de requêtes et 1 % de pages créées (niveau unique sans sous-pages imbriquées). La moyenne maximale de transactions par seconde sur un système inactif est atteinte avec quatre threads simultanés. Cette approche est utilisée lors des tests de sauvegarde en situation de charge.
 
 L’impact de la charge sur les performances de sauvegarde peut être calculé par la différence de performance avec et sans la charge de l’application. Pour déterminer l’impact de la sauvegarde sur le débit de l’application, comparez le débit du scénario en transactions par heure avec et sans sauvegarde simultanée en cours, tout en utilisant différents paramètres de « délai de sauvegarde ».
 

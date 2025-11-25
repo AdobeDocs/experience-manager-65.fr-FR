@@ -4,8 +4,8 @@ description: Découvrez comment définir des règles de traduction pour identifi
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours de traduction découplée AEM, [Configuration de l’intégration de traduction](configure-connector.md), vous avez appris à installer et à configurer votre intégration de traduction. Vous devez maintenant :
 

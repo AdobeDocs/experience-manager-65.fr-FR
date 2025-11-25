@@ -4,11 +4,11 @@ description: Découvrez comment mettre à jour vos fragments de contenu pour le 
 exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Pour optimiser les performances de vos filtres GraphQL, exécutez une procédure
 
 ## Conditions préalables {#prerequisites}
 
-Assurez-vous que vous disposez au minimum de la version 6.5.17.0 d’AEM.
+Assurez-vous de disposer au minimum de la version 6.5.17.0 d’AEM.
 
 ## Mise à jour des fragments de contenu {#updating-content-fragments}
 
@@ -34,8 +34,8 @@ Pour exécuter la procédure, procédez comme suit :
 
 1. Dans la boîte de dialogue, définissez les deux paramètres de la manière suivante :
 
-   * **ContentFragmentMigration:Enabled** : `1`
-   * **ContentFragmentMigration:Enforce** : `1`
+   * **ContentFragmentMigration:Enabled** : `1`
+   * **ContentFragmentMigration:Enforce** : `1`
 
 1. **Enregistrer** les spécifications - la procédure de mise à jour démarre.
 
@@ -45,8 +45,8 @@ Pour exécuter la procédure, procédez comme suit :
 
    Dans la boîte de dialogue de la **Configuration de la tâche de migration de fragments de contenu**, définissez ces deux paramètres comme suit :
 
-   * **ContentFragmentMigration:Enabled** : `0`
-   * **ContentFragmentMigration:Enforce** : `0`
+   * **ContentFragmentMigration:Enabled** : `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
 ## Limites {#limitations}
 
@@ -54,4 +54,4 @@ Gardez à l’esprit les limites suivantes :
 
 * L’optimisation des performances des filtres GraphQL ne sera possible qu’après une mise à jour complète de tous vos fragments de contenu (indiquée par la présence de la propriété `cfGlobalVersion` pour le nœud JCR `/content/dam`).
 
-* Si des fragments de contenu sont importés à partir d’un package de contenu (à l’aide de `crx/de`) après l’exécution de la procédure de mise à jour, ces fragments de contenu ne seront pas pris en compte dans les résultats de la requête GraphQL, tant que la procédure de mise à jour n’aura pas été exécutée à nouveau.
+* Si des fragments de contenu sont importés à partir d’un module de contenu (à l’aide de `crx/de`) après l’exécution de la procédure de mise à jour, ces fragments de contenu ne seront pas pris en compte dans les résultats de la requête GraphQL, tant que la procédure de mise à jour n’aura pas été exécutée à nouveau.

@@ -10,7 +10,7 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 100%
@@ -76,8 +76,8 @@ Après avoir configuré la publication sélective dans un dossier, vous pouvez e
 
    | Option Mode de publication de média dynamique | Description |
    | --- | --- |
-   | **[!UICONTROL Immédiatement]** | Lorsque des ressources sont chargées dans ce dossier, le système les ingère dans Experience Manager et fournit instantanément le lien d’URL/d’incorporation. Cette option est uniquement liée à la publication Experience Manager et aucune intervention de l’utilisateur n’est nécessaire pour publier des ressources.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossier]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
-   | **[!UICONTROL Lors de l’activation]** | Lorsque des ressources sont chargées dans ce dossier, vous devez d’abord les publier explicitement avant de fournir un lien d’URL/d’incorporation. Cette option est uniquement liée à la publication Experience Manager.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossier]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
+   | **[!UICONTROL Immédiatement]** | Lorsque des ressources sont chargées dans ce dossier, le système les ingère dans Experience Manager et fournit instantanément le lien URL/Embed. Cette option est uniquement liée à la publication Experience Manager et aucune intervention de l’utilisateur n’est nécessaire pour publier des ressources.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossier]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
+   | **[!UICONTROL Lors de l’activation]** | Lorsque des ressources sont chargées dans ce dossier, vous devez d’abord les publier explicitement avant de fournir un lien URL/Embed. Cette option est uniquement liée à la publication Experience Manager.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossier]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
    | **[!UICONTROL Publication sélective]** | Les ressources sont publiées, au choix, dans Experience Manager ou Dynamic Media, pour diffusion dans le domaine public. Les deux méthodes de publication s’excluent mutuellement. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans Experience Manager pour un aperçu sécurisé ; ces mêmes ressources ne sont *pas* publiées dans DMS7 pour diffusion dans le domaine public. Cette option n’est pas disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossier]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer et fermer]**, puis **[!UICONTROL OK]** pour revenir à Experience Manager Assets.
@@ -186,7 +186,7 @@ Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les ca
 1. Sélectionnez l’une des options suivantes dans la liste de menu **[!UICONTROL Publication rapide]**.
 
    | Option Publication rapide | Effets |
-   | --- | --- | 
+   | --- | --- |
    | Publier dans Experience Manager | Publie immédiatement les ressources sélectionnées dans Experience Manager. |
    | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans **[!UICONTROL Brand Portal]**.<br>Cette option n’est disponible que si votre instance Experience Manager Assets dispose déjà de **[!UICONTROL Brand Portal]** configuré. |
    | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossier]**. |

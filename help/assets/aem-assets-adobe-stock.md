@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 18dd655887293188224f51fa713d0345991d20d7
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '2191'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 En tant que développeur ou développeuse, exécutez les étapes suivantes pour intégrer [!DNL Adobe Experience Manager] et [!DNL Adobe Stock].
 
 1. [Configurer un programme dans la  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Ajouter la configuration dans l’instance création  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
+1. [Ajouter la configuration dans l’instance de création  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurer un programme dans la [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -156,7 +156,7 @@ Exécutez les étapes suivantes pour ajouter la configuration cloud et vous conn
 1. Cliquez sur **[!UICONTROL Créer]** et la page **[!UICONTROL Configuration Adobe Stock]** affiche plusieurs champs. Suivez ces instructions pour spécifier les détails dans ces champs :
    * **[!UICONTROL Titre]** : accédez à la page **[!UICONTROL Configuration du compte technique Adobe IMS]** (voir [étape 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), copiez le titre et collez-le ici.
    * **[!UICONTROL Configuration Adobe IMS associée]** : sélectionnez l’intégration [!DNL Adobe Stock] que vous avez créée.
-   * **[!UICONTROL Paramètre régional]** : sélectionnez **[!UICONTROL Anglais (États-Unis)]**.
+   * **[!UICONTROL Paramètres régionaux]** : sélectionnez **[!UICONTROL Anglais (États-Unis)]**.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
    ![utiliser adobe atock avec aem](/help/assets/assets/adobe-stock-config-page.png)
 <!-- old content
@@ -302,7 +302,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. 
  -->
-Votre instance d’auteur [!DNL Experience Manager Assets] est désormais intégrée à [!DNL Adobe Stock]. Vous pouvez créer plusieurs configurations [!DNL Adobe Stock] (par exemple, des configurations basées sur des paramètres régionaux). Vous pouvez désormais accéder aux ressources [!DNL Adobe Stock], en rechercher et en obtenir la licence dans l’interface utilisateur d’[!DNL Experience Manager].
+Votre instance de création [!DNL Experience Manager Assets] est désormais intégrée à [!DNL Adobe Stock]. Vous pouvez créer plusieurs configurations [!DNL Adobe Stock] (par exemple, des configurations basées sur des paramètres régionaux). Vous pouvez désormais accéder aux ressources [!DNL Adobe Stock], en rechercher et en obtenir la licence dans l’interface utilisateur d’[!DNL Experience Manager].
 
 ![rechercher-des-ressources-stock](assets/aem-stock-searchstocks.png)
 

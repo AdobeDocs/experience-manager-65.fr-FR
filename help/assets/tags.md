@@ -8,11 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 feature: Viewers
-role: User, Admin,Developer,Data Engineer,Data Architect
+role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '6677'
 ht-degree: 100%
 

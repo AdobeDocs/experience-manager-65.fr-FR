@@ -4,11 +4,11 @@ description: Découvrez les types de métadonnées et comment gérer les métado
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 100%
@@ -116,7 +116,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    |:---|:---|
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles des métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
-   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
+   | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `\|`. |
    | [!UICONTROL Lancer les workflows] | False par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont utilisés pour le workflow [!UICONTROL Écriture différée des métadonnées de gestion des ressources numériques] (qui inscrit des métadonnées dans les données XMP binaires). L’activation de ces workflows ralentit le système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 

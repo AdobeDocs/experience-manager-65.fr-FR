@@ -4,8 +4,8 @@ description: Cette section présente les fonctionnalités puissantes, flexibles 
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 100%

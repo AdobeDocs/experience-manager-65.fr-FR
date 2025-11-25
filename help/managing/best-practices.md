@@ -9,11 +9,11 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 100%
+source-wordcount: '3212'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Chaque phase contient ses propres jalons. Pour chaque [personnage](#persona) (ou
 
 >[!NOTE]
 >
->Il n’existe pas de relation directe 1:1 entre les documents requis et les éléments livrables.
+>Il n’existe pas de relation directe 1:1 entre les différents documents requis et les éléments livrables.
 
 ### Préparation {#preparation}
 
@@ -205,7 +205,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * la structure de code de base du projet ;
    * les artefacts de code (bundles, packages, etc.) ;
-   * les pannes des modèles/composants et de leurs relations ;
+   * Répartitions des modèles/composants et de leurs relations ;
    * les détails de haut niveau sur les personnalisations requises (des superpositions spécifiques suivront ultérieurement) ;
    * la conception des workflows requis par la solution (par exemple, création de contenu, approbation, publication, transformations, imports et exports) ;
    * la considération spéciale pour tout module complexe, tel que MSM, Commerce, intégration tierce.
@@ -239,7 +239,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   Avant le développement, tous les processus de prise en charge nécessaires au déploiement, à la publication, au test et aux problèmes de rapports doivent être mis en place.
 
-  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support).
+  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
 
 ### Planification et mise en œuvre des opérations {#operations-planning-and-operations}
 
@@ -579,7 +579,7 @@ Le ou la responsable de la sécurité :
 
 Les listes de contrôle couvrent les **documents requis** et les **éléments livrables** pour chaque jalon.
 
-* Il n’existe aucune relation individuelle entre ces deux éléments ; par exemple, un groupe de documents requis peut générer un seul livrable.
+* Il n&#39;existe aucune relation 1:1 entre ces éléments. Par exemple, un groupe de documents requis peut résulter en un seul livrable.
 * Le livrable d’un rôle peut être un document requis par un autre rôle au cours du même jalon.
 
 ### Documents requis {#required-documents}

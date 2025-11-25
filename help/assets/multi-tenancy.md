@@ -2,11 +2,11 @@
 title: Fonction multiclient pour les collections, les fragments de code et les modèles de fragments de code
 description: Découvrez comment la fonction multiclient permet de séparer du contenu dans le référentiel CRX en fonction de l’organisation du client afin d’empêcher tout accès non autorisé.
 contentOwner: AG
-role: Architect, Admin, Leader
+role: Developer, Admin, Leader
 feature: Collections
 exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 100%

@@ -3,11 +3,11 @@ title: Réglage des performances [!DNL Assets]
 description: Suggestions et conseils relatifs à  [!DNL Experience Manager]  pour la configuration, les modifications apportées aux composants matériels, les logiciels et éléments réseau pour éviter les goulets d’étranglement et optimiser les performances d’ [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 99%
@@ -152,7 +152,7 @@ Si la purge s’exécute trop longtemps, elle s’arrête. Par conséquent, vous
 
 Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime immédiatement les instances de workflow redondantes et terminées au lieu d’attendre que le planificateur de purge de workflow Adobe Granite s’exécute.
 
-### Tâches parallèles maximales    {#maximum-parallel-jobs}
+### Nombre maximum de tâches parallèles {#maximum-parallel-jobs}
 
 Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches parallèles qui est égal au nombre de processeurs sur le serveur. Le problème avec ce paramètre est que pendant les périodes de charge importante, tous les processeurs sont occupés par des workflows [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques], ce qui ralentit la réactivité de l’interface utilisateur et empêche [!DNL Experience Manager] d’exécuter d’autres processus qui assurent la stabilité et les performances du serveur. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
@@ -259,7 +259,7 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources, par exemple, lorsqu’ils parcourent le texte des documents PDF, désactivez-la. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
 1. Dans l’interface [!DNL Experience Manager], accédez au [!UICONTROL gestionnaire de modules].
-1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
+1. Chargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
 

@@ -4,8 +4,8 @@ description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Découvrez comment connecter AEM à un service de traduction.
 
-## Un peu d’histoire… {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM, [Prise en main de la traduction découplée AEM](learn-about.md) vous avez appris à organiser votre contenu découplé et la manière dont fonctionnent les outils de traduction AEM et vous devriez maintenant :
 
@@ -86,7 +86,7 @@ Pour créer une configuration de traduction :
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
 
-1. Sélectionnez **Créer**. La fenêtre **Modifier la configuration** apparaît alors. Vous pouvez y configurer les propriétés de configuration.
+1. Cliquez sur **Créer**. La fenêtre **Modifier la configuration** apparaît alors. Vous pouvez y configurer les propriétés de configuration.
 
 1. N’oubliez pas que les fragments de contenu sont stockés en tant que ressources dans AEM. Cliquez sur l’onglet **Ressources**.
 

@@ -4,8 +4,8 @@ description: Créez une configuration comme première étape de prise en main d�
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%

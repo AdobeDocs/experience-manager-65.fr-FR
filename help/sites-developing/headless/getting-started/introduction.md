@@ -4,8 +4,8 @@ description: Grâce à ce guide de démarrage rapide, découvrez les fondamentau
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Les guides de prise en main du mode découplé présentent une méthode simple p
 >
 >Si vous découvrez AEM ou le découplage, reportez-vous à nos [parcours de documentation sur le découplage](/help/journey-headless/overview.md) pour une introduction de bout en bout au mode découplé et à la manière dont AEM le prend en charge.
 
-## Public {#audience}
+## Audience {#audience}
 
 Les tâches décrites dans les Guides de prise en main du découplage sont nécessaires pour une démonstration de base de bout en bout des capacités de découplage d’AEM. Toute personne disposant d’un accès d’administration à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développement est idéale.
 

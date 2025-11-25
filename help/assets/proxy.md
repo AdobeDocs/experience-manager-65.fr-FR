@@ -1,12 +1,12 @@
 ---
-title: « Développement de proxy [!DNL Assets] »
+title: Développement de proxy [!DNL Assets]
 description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy  [!DNL Experience Manager] , les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 100%

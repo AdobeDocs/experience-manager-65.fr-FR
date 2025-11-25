@@ -2,11 +2,11 @@
 title: Remarques et exigences relatives au réseau
 description: Décrit les considérations concernant le réseau lors de la conception d’un déploiement d’ [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 100%

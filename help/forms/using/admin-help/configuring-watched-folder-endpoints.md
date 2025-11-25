@@ -9,10 +9,10 @@ exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7192'
-ht-degree: 100%
+source-wordcount: '7168'
+ht-degree: 99%
 
 ---
 
@@ -67,7 +67,7 @@ Si la tâche contient plusieurs fichiers d’entrée, l’utilisateur ou l’uti
 
 Lorsque l’entrée est un dossier et que la sortie compte plusieurs fichiers, AEM Forms crée un dossier de sortie portant le même nom que le dossier d’entrée, et copie les fichiers de sortie dans ce dossier. Lorsque la sortie est un mappage de documents contenant une paire clé/valeur, comme la sortie d’un processus de sortie, c’est la clé qui est utilisée comme nom du fichier de sortie.
 
-Les noms des fichiers de sortie générés par un processus de point d’entrée ne peuvent pas comporter de caractères autres que des lettres, des chiffres et un point (.) avant l’extension du fichier. AEM forms remplace les autres caractères par leurs valeurs hexadécimales.
+Les noms des fichiers de sortie qui résultent d’un processus de point d’entrée ne peuvent pas contenir de caractères autres que des lettres, des chiffres et un point (.) avant l’extension du fichier. AEM forms remplace les autres caractères par leurs valeurs hexadécimales.
 
 Les applications clientes sélectionnent les documents de résultats dans le dossier des résultats du dossier de contrôle. Les erreurs de traitement sont consignées dans le dossier des échecs du dossier de contrôle.
 
@@ -158,9 +158,9 @@ Vous pouvez utiliser des modèles de fichiers pour exclure les types de fichiers
 * Fichiers portant des noms spécifiques, par exemple data.&amp;ast; exclut les fichiers et dossiers nommés *data1*, *data2*, etc.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -174,9 +174,9 @@ Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers
 * Fichiers portant des noms spécifiques, par exemple data.&amp;ast; inclut les fichiers et dossiers nommés *data1*, *data2*, etc.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -246,9 +246,9 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques. Par exemple : data.&amp;ast;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &amp;ast;.[dD][Aa]&#39;port&#39;
-   * &amp;ast;.[Xx][Mm][Ll]
+   * Données`[0-9][0-9][0-9]``[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[dD][aA]`&#39;port&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 L’administrateur ou l’administratrice peut définir le modèle de fichier du dossier de sortie dans lequel enregistrer les résultats. Concernant les dossiers de sortie (résultats, conservation et échecs), il ou elle peut indiquer l’un des modèles de fichier suivants :
 

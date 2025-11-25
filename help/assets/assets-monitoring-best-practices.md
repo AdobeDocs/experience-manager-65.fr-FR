@@ -1,15 +1,15 @@
 ---
-title: Bonnes pratiques de surveillance du déploiement d’ [!DNL Assets]
+title: 'Bonnes pratiques de surveillance du déploiement d’ [!DNL Assets] '
 description: Bonnes pratiques de surveillance de l’environnement et de la performance de votre déploiement d’ [!DNL Adobe Experience Manager]  après son déploiement.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 100%
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Vous devez effectuer une surveillance en direct pendant la phase de test des per
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation de l’Ethernet/du réseau. Iftop affiche les statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iftop` ou `apt-get install iftop`.
 
-* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à l’exploitation. Pour des informations détaillées, reportez-vous à la section relative à [l’utilisation de Java Flight Recorder pour diagnostiquer les problèmes d’exécution de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements hors production. Pour des informations détaillées, reportez-vous à la section relative à [l’utilisation de Java Flight Recorder pour diagnostiquer les problèmes d’exécution de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * Fichier `error.log` [!DNL Experience Manager] : vous pouvez consulter le fichier `error.log` [!DNL Experience Manager] pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à étudier.
 * [Console d’administration des workflow](/help/sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
 
@@ -131,7 +131,7 @@ Agents de réplication
 Décompte du nombre de sessions
 
 * MBean : `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
+* URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=« OakRepository Statistics »,type*=« RepositoryStats »
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque les sessions ouvertes dépassent la ligne de base de plus de 50 %.
 * Définition de l’alarme : les sessions peuvent être ouvertes par le biais d’un fragment de code et ne jamais se fermer. Cela peut se produire lentement au fil du temps et entraîner des fuites de mémoire dans le système. Le nombre de sessions doit fluctuer sur un système, mais il ne doit pas augmenter de manière continue.

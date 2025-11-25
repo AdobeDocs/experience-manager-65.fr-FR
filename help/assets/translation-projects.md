@@ -2,11 +2,11 @@
 title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans  [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 100%
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 # Création de projets de traduction {#creating-translation-projects}
 
-Pour créer une copie de langue, déclenchez l’un des workflows de copie de langue disponibles sous le rail Références dans l’interface utilisateur d’[!DNL Experience Manager]. 
+Pour créer une copie linguistique, déclenchez l’un des workflows de copie linguistique disponibles sous le rail Références dans l’interface utilisateur d’[!DNL Experience Manager]. 
 
 * **Créer et traduire** : dans ce workflow, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. En outre, en fonction des options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou exécuté automatiquement dès sa création.
 
-* **Mettre à jour les copies de langue** : vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
+* **Mettre à jour les copies linguistiques** : vous exécutez ce workflow afin de traduire un groupe de ressources supplémentaire et de l’intégrer à une copie linguistique pour des paramètres régionaux spécifiques. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
 
 >[!PREREQUISITES]
 >
@@ -60,7 +60,7 @@ Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer 
 
 Si vous utilisez cette option, les ressources à traduire sont copiées dans la racine de la langue vers laquelle vous souhaitez effectuer la traduction. Selon les options que vous choisissez, un projet de traduction est créé pour les ressources dans la console Projets. Selon les paramètres, le projet de traduction peut être démarré manuellement ou s’exécuter automatiquement dès sa création.
 
-1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier source pour lequel vous souhaitez créer une copie de langue.
+1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier source pour lequel vous souhaitez créer une copie linguistique.
 1. Ouvrez le volet **[!UICONTROL Références]** et cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -77,7 +77,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
    ![copies de langue](assets/lang-copy2.png)
 
-1. Pour accéder au dossier, sélectionnez la copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
+1. Pour accéder au dossier, sélectionnez la copie linguistique, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
 
    ![reveal-in-assets](assets/reveal-in-assets.png)
 
@@ -93,7 +93,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**.
+1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la vignette **[!UICONTROL Tâche de traduction]**.
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -107,7 +107,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
    >[!NOTE]
    >
-   >Cette fonctionnalité est disponible à la fois pour les ressources et les dossiers. Lorsqu’une ressource est sélectionnée au lieu d’un dossier, la hiérarchie de dossiers complète jusqu’à la langue racine est copiée afin de créer une copie de langue pour la ressource.
+   >Cette fonctionnalité est disponible à la fois pour les ressources et les dossiers. Lorsqu’une ressource est sélectionnée au lieu d’un dossier, la hiérarchie de dossiers complète jusqu’à la langue racine est copiée afin de créer une copie linguistique pour la ressource.
 
 ### Ajout à un projet de traduction existant {#add-to-existing-translation-project}
 
@@ -137,7 +137,7 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. Cliquez sur les points de suspension en bas de la mosaïque **Tâche de traduction** pour afficher les ressources du workflow de traduction. La liste des tâches de traduction affiche également les entrées des métadonnées et des balises de ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
+1. Cliquez sur les points de suspension en bas de la vignette **Tâche de traduction** pour afficher les ressources du workflow de traduction. La liste des tâches de traduction affiche également les entrées des métadonnées et des balises de ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
 
    >[!NOTE]
    >
@@ -147,13 +147,13 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
    >
    >Si la ressource que vous ajoutez à la tâche de traduction contient des sous-ressources, sélectionnez-les et supprimez-les pour que la traduction se déroule sans problème.
 
-1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
+1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la vignette **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Un message indique le début de la tâche de traduction.
 
-1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**.
+1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la vignette **[!UICONTROL Tâche de traduction]**.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -163,20 +163,20 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 ## Mise à jour des copies de langue {#update-language-copies}
 
-Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie de langue pour des paramètres régionaux donnés. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
+Exécutez ce workflow afin de traduire un ensemble de ressources supplémentaire et de l’intégrer à une copie linguistique pour un ensemble de paramètres régionaux en particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites. Selon le choix des options, un projet de traduction est créé ou un projet de traduction existant est mis à jour pour les nouvelles ressources. Le workflow Màj des copies de langue comprend les options suivantes :
 
 * Créer un projet de traduction
 * Ajouter à un projet de traduction existant
 
 ### Créer un projet de traduction {#create-a-new-translation-project-1}
 
-Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de ressources pour lequel vous voulez mettre à jour une copie de langue.
+Si vous utilisez cette option, un projet de traduction est créé pour l’ensemble de ressources pour lequel vous voulez mettre à jour une copie linguistique.
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier source auquel vous avez ajouté une ressource.
 1. Ouvrez le volet **[!UICONTROL Références]** et cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
-1. Cochez la case située avant **[!UICONTROL Copies de langue]**, puis sélectionnez le dossier cible correspondant au paramètre régional approprié.
+1. Cochez la case située avant **[!UICONTROL Copies de langue]**, puis sélectionnez le dossier cible correspondant aux paramètres régionaux appropriés.
 
-   ![sélectionner la copie de langue](assets/lang-copy1.png)
+   ![sélectionner la copie linguistique](assets/lang-copy1.png)
 
 1. Cliquez sur **[!UICONTROL Mise à jour des copies de langue]** en bas de la page.
 
@@ -197,13 +197,13 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la mosaïque **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
+1. Pour commencer la traduction des ressources, cliquez sur la flèche au niveau de la vignette **[!UICONTROL Tâche de traduction]** et sélectionnez **[!UICONTROL Démarrer]** dans la liste.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Un message indique le début de la tâche de traduction.
 
-1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**.
+1. Pour afficher le statut de la tâche de traduction, cliquez sur les points de suspension en bas de la vignette **[!UICONTROL Tâche de traduction]**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -213,16 +213,16 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
 ### Ajouter à un projet de traduction existant {#add-to-existing-translation-project-1}
 
-Si vous utilisez cette option, l’ensemble de ressources est ajouté à un projet de traduction existant afin de mettre à jour la copie de langue pour les paramètres régionaux que vous sélectionnez.
+Si vous utilisez cette option, l’ensemble de ressources est ajouté à un projet de traduction existant afin de mettre à jour la copie linguistique pour les paramètres régionaux que vous sélectionnez.
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier source auquel vous avez ajouté un dossier de ressources.
 1. Ouvrez le volet **[!UICONTROL Références]** et cliquez sur **[!UICONTROL Copies de langue]** sous **[!UICONTROL Copies]** pour afficher la liste des copies de langue.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies de langue correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
+1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies linguistiques correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
 
-   ![sélectionner la copie de langue](assets/lang-copy1.png)
+   ![sélectionner la copie linguistique](assets/lang-copy1.png)
 
 1. Cliquez sur **[!UICONTROL Mise à jour des copies de langue]** en bas de la page.
 
@@ -235,16 +235,16 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 ## Création de copies de langue temporaires {#creating-temporary-language-copies}
 
-Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie de langue avec les versions modifiées des ressources d’origine, la copie de langue existante est conservée jusqu’à ce que vous approuviezles ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources récemment traduites dans un emplacement temporaire et met à jour la copie de langue existante après votre approbation explicite des ressources. Si vous refusez les ressources, la copie de langue reste inchangée.
+Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie linguistique avec les versions modifiées des ressources d’origine, la copie linguistique existante est conservée jusqu’à ce que vous approuviez les ressources traduites. [!DNL Adobe Experience Manager Assets] stocke les ressources récemment traduites dans un emplacement temporaire et met à jour la copie linguistique existante après votre approbation explicite des ressources. Si vous refusez les ressources, la copie linguistique reste inchangée.
 
-1. Cliquez sur le dossier racine source sous **[!UICONTROL Copies de langue]** pour lequel vous avez déjà créé une copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans [!DNL Experience Manager Assets].
+1. Cliquez sur le dossier racine source sous **[!UICONTROL Copies linguistiques]** pour lequel vous avez déjà créé une copie linguistique, puis cliquez sur **[!UICONTROL Afficher dans Assets]** afin d’ouvrir le dossier dans [!DNL Experience Manager Assets].
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez une ressource que vous avez déjà traduite et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils pour ouvrir la ressource en mode d’édition.
 1. Modifiez la ressource et enregistrez les modifications.
-1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie de langue.
-1. Cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction]**. Dans la liste des ressources sur la page **[!UICONTROL Tâche de traduction]**, vous pouvez voir l’emplacement temporaire dans lequel la version traduite de la ressource est stockée.
+1. Exécutez les étapes 2 à 14 de la procédure [Ajouter à un projet de traduction existant](#add-to-existing-translation-project) pour mettre à jour la copie linguistique.
+1. Cliquez sur les points de suspension en bas de la vignette **[!UICONTROL Tâche de traduction]**. Dans la liste des ressources sur la page **[!UICONTROL Tâche de traduction]**, vous pouvez voir l’emplacement temporaire dans lequel la version traduite de la ressource est stockée.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 

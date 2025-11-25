@@ -9,8 +9,8 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '3063'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 
    >[!TIP]
    >
-   >Utilisez le raccourci clavier `s` pour modifier les recadrages intelligents ou les nuanciers intelligents.
+   >Utilisez le raccourci clavier `s` pour modifier les recadrages intelligents ou les échantillons intelligents.
 
 1. Procédez de l’une des manières suivantes :
 

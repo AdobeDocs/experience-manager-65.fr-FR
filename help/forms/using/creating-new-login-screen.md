@@ -9,10 +9,10 @@ exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
    1. Supprimez le contenu du dossier `/apps/livecycle/core/components/login`.
 
-### Ajout d’un nouveau paramètre régional {#adding-a-new-locale}
+### Ajout de nouveaux paramètres régionaux {#adding-a-new-locale}
 
 1. Copiez le dossier `i18n`
 
@@ -56,13 +56,13 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Sur le dossier `en`, procédez comme suit :
 
-   1. Donnez au dossier le nom du paramètre régional que vous souhaitez prendre en charge. Par exemple, `ar`.
+   1. Donnez au dossier le nom de l’ensemble de paramètres régionaux que vous souhaitez prendre en charge. Par exemple, `ar`.
 
    1. Modifiez la valeur de la propriété `jcr:language` en `ar` (pour le dossier `ar`).
 
    >[!NOTE]
    >
-   >Si le paramètre régional est une combinaison de code langue-pays, tel que `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
+   >Si les paramètres régionaux sont une combinaison de code langue-pays, comme `ar-DZ`, modifiez le nom du dossier et la valeur de la propriété en `ar-DZ`.
 
 1. Copier `login.jsp` :
 
@@ -71,119 +71,119 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
 1. Modifiez le fragment de code suivant pour `/apps/livecycle/core/components/login/login.jsp` :
 
-***Le paramètre régional est un code de langue***
+   ***Les paramètres régionaux sont un code de langue***
 
-```jsp
-String browserLocale = "en";
+   ```jsp
+   String browserLocale = "en";
+   
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   To
 
-To
+   ```jsp
+   String browserLocale = "en";
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("ar")) {
+               browserLocale = "ar";
+               break;
+           }
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-```jsp
-String browserLocale = "en";
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("ar")) {
-            browserLocale = "ar";
-            break;
-        }
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   ```jsp
+   String browserLocale = "en";
+   
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-```jsp
-String browserLocale = "en";
+   To
 
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
+   ```jsp
+   String browserLocale = "en";
+       for(int i=0; i<locales.length; i++)
+       {
+           String prioperty = locales[i];
+           if(prioperty.trim().equalsIgnoreCase("ar-DZ")) {
+               browserLocale = "ar-DZ";
+               break;
+           }
+           if(prioperty.trim().startsWith("en")) {
+               browserLocale = "en";
+               break;
+           }
+           if(prioperty.trim().startsWith("de")){
+               browserLocale = "de";
+               break;
+           }
+           if(prioperty.trim().startsWith("ja")){
+               browserLocale = "ja";
+               break;
+           }
+           if(prioperty.trim().startsWith("fr")){
+               browserLocale = "fr";
+               break;
+           }
+       }
+   ```
 
-To
-
-```jsp
-String browserLocale = "en";
-    for(int i=0; i<locales.length; i++)
-    {
-        String prioperty = locales[i];
-        if(prioperty.trim().equalsIgnoreCase("ar-DZ")) {
-            browserLocale = "ar-DZ";
-            break;
-        }
-        if(prioperty.trim().startsWith("en")) {
-            browserLocale = "en";
-            break;
-        }
-        if(prioperty.trim().startsWith("de")){
-            browserLocale = "de";
-            break;
-        }
-        if(prioperty.trim().startsWith("ja")){
-            browserLocale = "ja";
-            break;
-        }
-        if(prioperty.trim().startsWith("fr")){
-            browserLocale = "fr";
-            break;
-        }
-    }
-```
-
-***Pour modifier le paramètre régional par défaut***.
+***Pour modifier les paramètres régionaux par défaut***.
 
 ```jsp
    String browserLocale = "en";
@@ -202,7 +202,7 @@ String browserLocale = "en";
    * de `/libs/livecycle/core/components/login`
    * vers `/apps/livecycle/core/components/login`
 
-1. Modifiez la valeur de la propriété `sling:message` du nœud (sous le dossier du code du paramètre régional souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
+1. Modifiez la valeur de la propriété `sling:message` du nœud (sous le dossier du code des paramètres régionaux souhaité) pour laquelle vous souhaitez modifier le texte. La traduction est effectuée via la clé mentionnée dans la valeur de la propriété `sling:key` du nœud.
 
 1. Pour ajouter une nouvelle paire clé-valeur, effectuez les opérations suivantes : Vérifiez un exemple dans la capture d’écran qui suit.
 
@@ -263,12 +263,12 @@ Par exemple :
 
 * Ajoutez le code suivant à `/apps/livecycle/core/content/login/login.css`.
 
-```
-css.newLoginContentArea {
-    width: 700px;
-    padding: 100px 0px 0px 100px;
-   }
-```
+  ```
+  css.newLoginContentArea {
+      width: 700px;
+      padding: 100px 0px 0px 100px;
+  }
+  ```
 
 * Modifiez les éléments suivants dans `/apps/livecycle/core/components/login.jsp`.
 
@@ -300,28 +300,28 @@ css.newLoginContentArea {
 1. Ajoutez de nouveaux styles dans `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
 1. Utilisez les nouveaux styles dans `login.jsp` dans `/apps/livecycle/core/components`.
 
-Par exemple :
+   Par exemple :
 
 
-```css
-.newLoginContainerBkg {
+   ```css
+   .newLoginContainerBkg {
+   
+    background-image: url(my_Bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 727px;
+   }
+   ```
 
- background-image: url(my_Bg.gif);
- background-repeat: no-repeat;
- background-position: left top;
- width: 727px;
-}
-```
 
+   * Modifiez les éléments suivants dans /apps/livecycle/core/components/login.jsp.
 
-    * Modifiez l’élément suivant dans /apps/livecycle/core/components/login.jsp.
+   ```jsp
+   <div class="loginContainerBkg">
+   ```
 
-```jsp
-<div class="loginContainerBkg">
-```
+   À
 
-To
-
-```jsp
-<div class="newLginContainerBkg">
-```
+   ```jsp
+   <div class="newLginContainerBkg">
+   ```

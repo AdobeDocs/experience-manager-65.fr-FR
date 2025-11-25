@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f7e0cc48dbee90af2440e83ba82316d8237dcbe4
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3534'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -90,14 +90,14 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
-| Oracle Java™ SE 21 JDK | Z : non pris en charge `[1]` |
-| Oracle Java™ SE 17 JDK | Z : non pris en charge `[1]` |
+| Oracle Java™ SE 21 JDK | Z : non pris en charge `[1]` |  |
+| Oracle Java™ SE 17 JDK | Z : non pris en charge `[1]` |  |
 | Oracle Java™ SE 11 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
-| Oracle Java™ SE 10 JDK | Z : non pris en charge `[1]` |
-| Oracle Java™ SE 9 JDK | Z : non pris en charge `[1]` |
+| Oracle Java™ SE 10 JDK | Z : non pris en charge `[1]` |  |
+| Oracle Java™ SE 9 JDK | Z : non pris en charge `[1]` |  |
 | Oracle Java™ SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
-| Machine virtuelle IBM® J9 - Version 2.9, JRE 1.8.0 | A : prise en charge de `[2]` |
-| Machine virtuelle IBM® J9 - Version 2.8, JRE 1.8.0 | A : prise en charge de `[2]` |
+| Machine virtuelle IBM® J9 - Version 2.9, JRE 1.8.0 | A : prise en charge de `[2]` |  |
+| Machine virtuelle IBM® J9 - Version 2.8, JRE 1.8.0 | A : prise en charge de `[2]` |  |
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
@@ -214,7 +214,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | Oracle Solaris™ 11 | Z : non pris en charge |
 | IBM® AIX® 7.2 | Z : non pris en charge |
 
-1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctionnalités de module complémentaire AEM Forms sont uniquement prises en charge sous Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
+1. Noyau Linux® 2.6.3. x, 4. x, 5. x, 6. x et 9. x contient des dérivés de la distribution Red Hat®, y compris Red Hat® Enterprise Linux, Oracle Linux® et Amazon Linux®. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur Red Hat® Enterprise Linux® 8 et Red Hat® Enterprise Linux® 9.
 2. AEM Forms est pris en charge sous Ubuntu 20.04 et SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
 3. Distribution Linux® prise en charge par Adobe Managed Services.
 

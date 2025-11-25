@@ -2,11 +2,11 @@
 title: Migration des ressources en bloc
 description: Décrit comment importer des ressources dans  [!DNL Adobe Experience Manager], comment appliquer des métadonnées, générer des rendus et les activer en tant qu’instances de publication.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%
@@ -110,7 +110,7 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 1. Sous le chemin d’accès racine du magasin de données, recherchez et supprimez les fichiers `repository-XXX`.
 1. Modifiez `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` et `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` pour qu’ils pointent sur l’emplacement du magasin de données sur le nouvel environnement.
 1. Démarrez l’environnement.
-1. Mettez à jour la configuration de tous les agents de réplication sur le ou les auteurs ou la ou les autrices pour qu’ils pointent vers les instances de publication correctes ou pour que les agents de vidage du dispatcher sur la nouvelle instance pointent vers les dispatchers appropriés pour le nouvel environnement.
+1. Mettez à jour la configuration de tous les agents de réplication sur la ou les instances de création pour qu’ils pointent vers les instances de publication correctes ou pour que les agents de vidage du dispatcher sur la nouvelle instance pointent vers les dispatchers appropriés pour le nouvel environnement.
 
 ### Activation des workflows {#enabling-workflows}
 
@@ -122,9 +122,9 @@ Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quan
 
 Dans ce cas, vos ressources sont déjà renseignées avec des métadonnées et des rendus sont déjà générés. Vous pouvez simplement vous concentrer sur le déplacement des ressources, d’une instance à une autre. Lors de la migration entre les déploiements d’[!DNL Experience Manager], procédez comme suit :
 
-1. Désactivation des workflows : comme vous migrez des rendus avec les ressources, vous souhaitez désactiver les lanceurs pour le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques].
+1. Désactivation des workflows : comme vous migrez des rendus avec les ressources, vous souhaitez désactiver les lanceurs pour le workflows [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques].
 
-1. Migration des balises : comme des balises sont déjà chargées dans le déploiement source d’[!DNL Experience Manager], vous pouvez les créer dans un package de contenu et installer le package sur l’instance cible.
+1. Migration des balises : comme des balises sont déjà chargées dans le déploiement source d’[!DNL Experience Manager], vous pouvez les créer dans un module de contenu et installer le package sur l’instance cible.
 
 1. Migration des ressources : nous recommandons deux outils pour déplacer des ressources d’un déploiement d’[!DNL Experience Manager] à un autre :
 

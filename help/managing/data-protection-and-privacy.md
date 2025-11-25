@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
@@ -49,7 +49,7 @@ En guise de petite introduction, les règlements relatifs à la confidentialité
 
 * Entités commerciales (CCPA) et/ou Contrôleurs de données (RGPD)
 
-* Prestataires (CCPA) et/ou Responsables du traitement des données (GDPR)
+* Prestataires (CCPA) et/ou Responsables du traitement des données (RGPD)
 
 Les principales dispositions de ces règlements sont les suivantes :
 
@@ -117,7 +117,7 @@ Pour plus d’informations, consultez les sections suivantes :
 
 * [Adobe Target – Présentation de la confidentialité](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=fr)
 
-* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=fr)
+* [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Communities {#aem-communities}
 

@@ -9,9 +9,9 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '312'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 Les articles, bannières et collections sont représentés sous la forme cq:Pages dans AEM.
 
-Ils partagent les mêmes propriétés communes que celles trouvées dans n’importe quel cq:Page en plus de plusieurs autres présentées ci-dessous qui représentent les métadonnées des services mobiles On-Demand Adobe Experience Manager (AEM) et les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que celles de n’importe quel cq:Page en plus de plusieurs autres présentées ci-dessous qui représentent les métadonnées des services Mobile On-Demand Adobe Experience Manager (AEM) et les propriétés de prise en charge de l’intégration.
 
 Les tableaux suivants décrivent les propriétés et les nœuds de contenu.
 
@@ -31,7 +31,7 @@ Les tableaux suivants décrivent les propriétés et les nœuds de contenu.
 | **Nom de la propriété** | **Type** | **Valeurs par défaut ou valeurs attendues** | **Description** |
 |---|---|---|---|
 | dps-id | Chaîne |  | affecté par AEM Mobile et stocké par AEM une fois chargé dans AEM Mobile ou importé depuis AEM Mobile |
-| dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d’entité |
+| dps-resourceType | Chaîne | dps:Article | `dps:Banner` * `dps:Collection` * `entity type property` |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans l’aem-id complet) |
 | dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
 | dps-lastUploaded | Date |  | date du dernier chargement d’AEM vers AEM Mobile |

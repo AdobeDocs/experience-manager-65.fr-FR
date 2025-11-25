@@ -4,8 +4,8 @@ description: Découvrez les bases de la modélisation du contenu pour votre CMS 
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -97,7 +97,7 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 ## Références et contenu imbriqué {#references-nested-content}
 
-Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
+Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.

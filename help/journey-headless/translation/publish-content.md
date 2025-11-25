@@ -4,8 +4,8 @@ description: Découvrez comment publier votre contenu traduit et mettre à jour 
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 100%
@@ -46,7 +46,7 @@ AEM est donc physiquement séparé en deux instances.
 1. L’instance **auteur** est le système sur lequel les auteurs et les administrateurs de contenu travaillent à créer et à gérer le contenu.
 1. L’instance de **publication** est le système qui diffuse le contenu aux consommateurs.
 
-Une fois le contenu créé sur l’instance d’auteur, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
+Une fois le contenu créé sur l’instance de création, il doit être transféré sur l’instance de publication pour qu’il puisse être utilisé. Le processus de transfert de l’auteur à la publication est appelé **publication**.
 
 ## Publication de votre contenu traduit {#publishing}
 
@@ -132,7 +132,7 @@ Pour mettre à jour une traduction, vous pouvez ajouter à votre projet existant
 1. Accédez à **Navigation** > **Projets**.
 1. Cliquez sur le projet que vous devez mettre à jour.
 1. Cliquez sur le bouton **Ajouter** en haut de la fenêtre.
-1. Dans la fenêtre **Ajouter une mosaïque**, cliquez sur **Tâche de traduction**, puis sur **Envoyer**.
+1. Dans la fenêtre **Ajouter une vignette**, cliquez sur **Tâche de traduction**, puis sur **Envoyer**.
 
    ![Ajouter une mosaïque](assets/add-translation-job-tile.png)
 

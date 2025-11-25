@@ -4,8 +4,8 @@ description: Présentation des instructions relatives à Adobe Experience Mana
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # AEM et les consignes pour l’accessibilité web{#aem-and-the-web-accessibility-guidelines}
 
-De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. L’accessibilité au web avec Adobe Experience Manager (AEM) est donc un aspect de plus en plus important d’une bonne conception web.
+De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible à l’audience cible, quelles que soient ses situations de handicap ou ses limitations. L’accessibilité au web avec Adobe Experience Manager (AEM) est donc un aspect de plus en plus important d’une bonne conception web.
 
 La création de sites web et de contenu accessibles avec AEM a un impact sur :
 

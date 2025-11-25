@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 7%
+source-wordcount: '547'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ Le diagramme suivant montre le rendu de Content Services.
 
 ## Demande de JSON {#requesting-json}
 
-Utilisez **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** pour demander le format JSON.
+Utilisez **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** pour demander le format JSON.
 
 <table>
  <tbody>
