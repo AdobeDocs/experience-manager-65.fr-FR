@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: b611d044c9dab5aa25a3e58cf2447faa42b4b7b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2350'
+ht-degree: 98%
 
 ---
 
@@ -406,6 +406,12 @@ Celui-ci est ajouté en tant que référence à l’emplacement actuel dans votr
 Les variations vous permettent de prendre le contenu **principal** et le varier en fonction de l’objectif (si nécessaire).
 
 Pour créer une variation :
+
+>[!NOTE]
+>
+>Les variations ajoutent un temps de traitement à un fragment de contenu, dans l’environnement de création et lors de la diffusion également. Il est recommandé de maintenir le nombre de variations à un niveau minimal gérable.
+>
+>Une bonne pratique consiste à ne pas dépasser dix variations par fragment de contenu.
 
 1. Ouvrez votre fragment et assurez-vous que le panneau latéral est visible.
 1. Sélectionnez **Variations** dans la barre d’icônes du panneau latéral.
