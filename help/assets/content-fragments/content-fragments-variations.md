@@ -474,7 +474,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 
 >[!CAUTION]
 >
->La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
+>La synchronisation n’est disponible que pour copier les modifications *du **Maître**&#x200B;dans la variation*.
 >
 >Seul l’élément actif de la variation est synchronisé.
 >
