@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 61d2291418653a8d4f0c805d3722691cbbf8e1c0
 workflow-type: tm+mt
 source-wordcount: '7562'
 ht-degree: 99%
@@ -419,7 +419,7 @@ ht-degree: 99%
       + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
       + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
       + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -446,7 +446,7 @@ ht-degree: 99%
       + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
       + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management dans Assets](/help/assets/drm.md)
       + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -770,7 +770,7 @@ ht-degree: 99%
       + [Utilisation d’un formulaire](/help/forms/using/working-with-form.md)
       + [Utilisation des points de départ](/help/forms/using/working-with-startpoints.md)
       + [Ouverture d’une tâche](/help/forms/using/open-task.md)
-      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon &#x200B;](/help/forms/using/save-as-draft.md)
+      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon ](/help/forms/using/save-as-draft.md)
       + [Utilisation de l’enregistrement automatique dans l’application AEM Forms](/help/forms/using/autosave-data-app.md)
       + [Enregistrer les formulaires sous forme de modèles](/help/forms/using/save-forms-and-start-points-as-templates.md)
       + [Ajout de pièces jointes](/help/forms/using/add-attachments.md)
@@ -1217,7 +1217,7 @@ ht-degree: 99%
       + [Atténuation des vulnérabilités XXE, de configuration et d’exécution de code à distance pour AEM Forms sur JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Problèmes d’affichage liés aux documents PDF forms XFA et protégés par une politique](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
+      + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeds.md)
       + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
