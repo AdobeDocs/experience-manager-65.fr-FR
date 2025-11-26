@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 61d2291418653a8d4f0c805d3722691cbbf8e1c0
+source-git-commit: 0aea56ae4f180e2e4208697a24ee67a716754584
 workflow-type: tm+mt
-source-wordcount: '7562'
+source-wordcount: '7564'
 ht-degree: 99%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 99%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour](/help/release-notes/release-notes.md)
    + Notes de mise à jour précédentes {#service-pack}
+      + [6.5.23](/help/release-notes/previous/6-5-23.md)
       + [6.5.22](/help/release-notes/previous/6-5-22.md)
       + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
@@ -419,7 +420,7 @@ ht-degree: 99%
       + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
       + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
       + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -446,7 +447,7 @@ ht-degree: 99%
       + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
       + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management dans Assets](/help/assets/drm.md)
       + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -770,7 +771,7 @@ ht-degree: 99%
       + [Utilisation d’un formulaire](/help/forms/using/working-with-form.md)
       + [Utilisation des points de départ](/help/forms/using/working-with-startpoints.md)
       + [Ouverture d’une tâche](/help/forms/using/open-task.md)
-      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon &#x200B;](/help/forms/using/save-as-draft.md)
+      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon ](/help/forms/using/save-as-draft.md)
       + [Utilisation de l’enregistrement automatique dans l’application AEM Forms](/help/forms/using/autosave-data-app.md)
       + [Enregistrer les formulaires sous forme de modèles](/help/forms/using/save-forms-and-start-points-as-templates.md)
       + [Ajout de pièces jointes](/help/forms/using/add-attachments.md)
