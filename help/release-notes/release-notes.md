@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6aba1c1d5451adcaa139c15adc2a7056419b8341
+source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 26%
@@ -28,7 +28,7 @@ ht-degree: 26%
 | -------- | ---------------------------- |
 | Version | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | 20 novembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | 26 novembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
