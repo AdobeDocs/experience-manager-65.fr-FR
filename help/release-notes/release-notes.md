@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
+source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 26%
@@ -508,7 +508,7 @@ L’échec de l’installation de ce package peut entraîner des requêtes Graph
 
 ### UberJar{#uber-jar}
 
-UberJar pour [!DNL Experience Manager] 6.5.24.0 est disponible dans le [référentiel central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar pour [!DNL Experience Manager] 6.5.24.0 est disponible dans le [référentiel central Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Pour utiliser UberJar dans un projet Maven, consultez la section [Utilisation d’UberJar](/help/sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans le POM de votre projet : <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
