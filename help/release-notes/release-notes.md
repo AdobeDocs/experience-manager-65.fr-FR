@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
+source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
 workflow-type: tm+mt
-source-wordcount: '8905'
+source-wordcount: '8809'
 ht-degree: 26%
 
 ---
@@ -541,20 +541,6 @@ Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont 
 ## Problèmes connus{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
-
-* **Problème avec le lot de script JSP dans AEM 6.5.21-6.5.24 et AEM 6.5 LTS GA**
-Les versions 6.5.21 à 6.5.24 d’AEM AEM et 6.5 LTS GA sont fournies avec le lot `org.apache.sling.scripting.jsp:2.6.0`, qui contient un problème connu. Le problème se produit généralement sous une charge élevée lorsque l’instance AEM gère de nombreuses requêtes simultanées.
-
-  Lorsque ce problème se produit, l’une des exceptions suivantes peut apparaître dans les journaux d’erreurs avec des références à `org.apache.sling.scripting.jsp:2.6.0` :
-
-   * `java.io.IOException: classFile.delete() failed`
-   * `java.io.IOException: tmpFile.renameTo(classFile) failed`
-   * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-   * `java.io.FileNotFoundException`
-
-  Lorsque cette erreur se produit, la seule méthode de récupération consiste à redémarrer l’instance AEM.
-
-  Contactez le service clientèle d’Adobe et référencez cette note de mise à jour pour obtenir une résolution.
 
 * **Lié à Oak**
 Depuis le pack de services 13 et les versions ultérieures, le journal d’erreur suivant a commencé à s’afficher, ce qui affecte le cache de persistance :
