@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
-ht-degree: 26%
+source-wordcount: '9451'
+ht-degree: 24%
 
 ---
 
@@ -40,11 +40,12 @@ ht-degree: 26%
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## Principales fonctionnalités et améliorations
 
+### Formulaires
+
+* **Prise en charge de la transmission de XCI personnalisés :** Ajout de la prise en charge de la transmission de XCI personnalisés dans les paramètres de l’application cmdline xmlformcmd. Cela permet aux utilisateurs de spécifier des fichiers XCI personnalisés à des fins de test, ce qui améliore la flexibilité et le contrôle du processus de test. (LC-3923248)
 
 
 ## Problèmes corrigés dans le pack de services 24 {#fixed-issues}
@@ -302,25 +303,40 @@ La configuration du gestionnaire d’authentification des jetons de requête a d
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->Les correctifs dans [!DNL Experience Manager] Forms sont fournis par le biais d’un package de module complémentaire distinct une semaine après la date de publication prévue du pack de services [!DNL Experience Manager]. Dans ce cas, les packages de modules complémentaires sont publiés le jeudi 4 décembre 2025. De plus, une liste des correctifs et améliorations de Forms est ajoutée à cette section.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Forms Designer
+
+* Les utilisateurs et utilisatrices ont rencontré des problèmes liés au fait que les liens hypertexte n’étaient pas cliquables dans des cas de test spécifiques, ce qui affectait leur capacité à naviguer et à vérifier les liens dans l’application. (LC-3923505)
+* Les utilisateurs ont rencontré des problèmes d’accessibilité avec les PDF générés à l’aide d’AEM Forms Designer 6.5.23 pour les langues non latines. Les balises de chemin n’étaient pas placées dans un conteneur d’artefacts, ce qui entraînait des échecs dans les contrôles PAC et les lecteurs d’écran. (LC-3923295)
+* Des liens hypertexte ont été rompus dans les zones de texte Portable Document Format (PDF) après l’application de correctifs des versions 6.5.21 à 6.5.23 à l’aide du service Output. (LC-3923290)
+* Les utilisateurs ont rencontré des problèmes d’accessibilité avec les formulaires de document d’enregistrement (DE). Lorsque les champs de saisie étaient vides, les lecteurs d’écran ne lisaient que les légendes des champs et non les valeurs, ce qui rendait difficile la navigation efficace des utilisateurs en situation de handicap dans les formulaires. (LC-3923234)
+* Les utilisateurs rencontraient des problèmes d’accessibilité dans DoR PDF forms où le NVDA lisait incorrectement « indisponible » pour les cases à cocher, les boutons radio et les champs de texte, ce qui répétait souvent le message et semait la confusion chez les utilisateurs de lecteurs d’écran. (LC-3923201)
+* Les utilisateurs et utilisatrices ont rencontré une incohérence d’ordre de tabulation dans le XDP lors de l’ajout de nouveaux champs. L’ordre de tabulation existant a changé de manière inattendue, ce qui a affecté la navigation dans les formulaires. (LC-3923183, LC-3922630)
+* Les utilisateurs ont rencontré des problèmes de rendu HTML. Lors de l’utilisation de l’événement `docReady`, il ne se déclenchait pas correctement dans HTML, ce qui entraînait l’exécution inattendue des scripts. (LC-3923118)
+* Les utilisateurs ont rencontré des problèmes avec les scripts de rendu PDF qui ne fonctionnaient pas dans l’environnement de production AEM Forms Cloud. (LC-3923082 )
+* Les utilisateurs ont rencontré des problèmes avec les champs flottants dans les formulaires. Lors de l’utilisation de différents fichiers de données, les champs flottants s’affichaient correctement avec un fichier mais pas avec l’autre, malgré des différences mineures sans rapport avec les champs. (LC-3923056)
+* Les utilisateurs ont vu une page maître espagnole vierge lorsque seul le contenu en anglais était sélectionné dans un XDP (XML Data Package) avec plusieurs pages maîtres. (LC-3923009)
+* Les utilisateurs ont observé des informations obsolètes sur l’année de copyright dans AEM Designer. Cela s’est produit dans la zone pop-up au démarrage, dans la section « À propos » et dans la section « Informations juridiques », qui affichait « 2003-2024 » au lieu de « 2003-2025 ». (LC-3923005)
+* Les utilisateurs ont rencontré une page PDF vierge lors de l’utilisation de la pagination dans AEM Forms Designer. Le problème s’est produit lors de la sélection de « Haut de la page suivante/Haut de la page » pour WireAdviceHeader, ce qui a perturbé la mise en page des itérations de données. (LC-3922997, LC-3922830)
+* Les utilisateurs ont rencontré un problème en raison duquel la valeur filedigest pour la définition de schéma (XSD) XML (Extensible Markup Language) n’était pas conservée dans la version 64 bits d’AEM Forms Designer. (LC-3922924)
+* Les utilisateurs ont rencontré une mise en forme de lien hypertexte instable dans AEM Designer 6.5.19, où les liens hypertexte d’une zone de texte adoptaient incorrectement des styles du texte environnant, tels que la mise en forme du premier caractère. (LC-3922376)
+* Les utilisateurs ont rencontré des problèmes lors du rendu d’HTML forms via Mobile rendering sur MAC avec AEM Forms OSGI v6.5.22. (LC-3923058)
+* Les utilisateurs ont rencontré des erreurs « path object not tagged » dans les fichiers Portable Document Format (PDF) lors de l’utilisation de champs avec bordure ou arrière-plan dans les modèles XDP créés avec Designer 6.5.23 et analysés avec PAC 2024. (LC-3923013)
+* Les utilisateurs ont rencontré une erreur avec la couleur d’arrière-plan de l’en-tête « Dati Richiedente » dans Composant d’application portable (PAC), et ont reçu le message « objet de chemin non balisé ». (LC-3922912)
+* Les utilisateurs ont rencontré un problème en raison duquel des modèles spécifiques ont remplacé la police prévue par une police condensée. (LC-3922330)
+
+#### Formulaires adaptatifs
+
+* Il manquait des options dans l’éditeur de règles pour les utilisateurs. Lorsque les auteurs écrivaient des règles sur des entrées de nombre, les options Requête, UTM et Détails du navigateur n’étaient pas disponibles. (FORMS-21660)
+* Les utilisateurs ont subi des blocages de l’application lors de l’interaction avec OdataResponse en raison d’une exception de pointeur nul. (FORMS-20344)
+* Les utilisateurs ont rencontré des problèmes lors de la création de règles pour afficher un panneau et définir la cible d’action sur un élément à l’intérieur. La règle setFocus exécutée avant la mise à jour de la visibilité, ce qui entraîne l’échec de l’action de focus. (FORMS-19563)
+* Les utilisateurs ont rencontré des problèmes de sélection de composant dans l’instance de création AEM Forms. Lorsque vous naviguez entre les onglets en mode d’édition, certains conteneurs sont devenus insélectionnables, ce qui empêchait une identification et une interaction faciles. (FORMS-18525)
+* Les utilisateurs ont rencontré une erreur « URL non valide » lors de l’annotation de ressources dans AEM 6.5.22. (NPR-42684)
 
 ### Foundation {#foundation-6524}
 
