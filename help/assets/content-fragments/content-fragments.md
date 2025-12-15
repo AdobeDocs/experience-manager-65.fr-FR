@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 86%
+source-wordcount: '2329'
+ht-degree: 85%
 
 ---
 
@@ -321,7 +321,7 @@ Un nombre trop élevé de modèles complique la gouvernance et peut ralentir les
 
 L’utilisation intensive des références de fragments de contenu peut avoir un impact significatif sur les performances du système, la réactivité de l’interface utilisateur et l’exécution des requêtes GraphQL. Visez à ne pas imbriquer plus de dix niveaux.
 
-### Nombre de champs de données et de types par modèle {#number-of-data-fields-and-types-per-model}
+### Nombre de champs de données et de types de données par modèle {#number-of-data-fields-and-types-per-model}
 
 Incluez uniquement les champs de données et les types dont un modèle a vraiment besoin.
 
@@ -329,9 +329,15 @@ Les modèles trop complexes génèrent des fragments trop complexes qui peuvent 
 
 ### Champs de texte enrichi {#rich-text-fields}
 
-Utilisez les champs de texte enrichi (le **texte multiligne** type de données) avec précaution.
+Utilisez les champs de texte enrichi (le type de données **texte multiligne**) avec précaution :
 
-Limitez le nombre de champs de texte enrichi par modèle. La quantité de texte stockée dans chaque fragment et la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
+* Champs
+
+  Limitez le nombre de champs de texte enrichi par modèle. Pour des raisons de performances, il n’est pas recommandé d’avoir plus de dix champs de texte enrichi dans un modèle. Si nécessaire, il est recommandé d’utiliser des [fragments de contenu imbriqués](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Contenu
+
+  Vous devez également limiter la quantité de texte stockée dans chaque fragment, ainsi que la quantité de mise en forme HTML. Un contenu de texte enrichi très volumineux peut nuire aux performances du système.
 
 ### Nombre de variations {#number-of-variations}
 
