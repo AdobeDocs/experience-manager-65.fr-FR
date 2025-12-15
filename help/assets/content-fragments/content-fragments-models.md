@@ -25,7 +25,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 >[!NOTE]
 >
->Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
