@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e3a35099a48088d5746aa23be45c3e81a1a8b02e
-workflow-type: ht
-source-wordcount: '2339'
-ht-degree: 100%
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+workflow-type: tm+mt
+source-wordcount: '2355'
+ht-degree: 99%
 
 ---
 
@@ -22,6 +22,10 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
 1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
+
+>[!NOTE]
+>
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -237,13 +241,13 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 
 >[!NOTE]
 >
->AEM dispose d’une protection récurrente pour :
+>AEM dispose d’une protection de récurrence pour :
 >
 >* Références du contenu
->Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Références de fragments dans GraphQL
->Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>* Références de fragment dans GraphQL
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
@@ -311,9 +315,9 @@ Indique un chemin racine pour tout fragment référencé.
 
 >[!NOTE]
 >
->Un mécanisme de protection contre les répétitions est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>Un mécanisme de protection de récurrence est en place. Il interdit à l’utilisateur de sélectionner le fragment de contenu actif dans la référence au fragment. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->Il existe également une protection contre les répétitions pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
+>Il existe également une protection de récurrence pour les références de fragments dans GraphQL. Si vous créez une requête profonde entre deux fragments de contenu qui se référencent mutuellement, elle renvoie la valeur « null ».
 
 ## Activation ou désactivation d’un modèle de fragment de contenu {#enabling-disabling-a-content-fragment-model}
 
