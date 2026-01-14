@@ -492,6 +492,6 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 
