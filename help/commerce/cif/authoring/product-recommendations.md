@@ -22,4 +22,4 @@ ht-degree: 62%
 
 Adobe Commerce dispose d’un moteur de recommandations optimisé par l’IA dédiée à Adobe. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342991/?captions=fre_fr&learn=on)
