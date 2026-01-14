@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
-source-wordcount: '2129'
-ht-degree: 100%
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+workflow-type: tm+mt
+source-wordcount: '2130'
+ht-degree: 99%
 
 ---
 
 # Préparation de [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
-Avant de commencer à baliser vos ressources à l’aide des services de contenu intelligent, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour tirer parti du service intelligent d’[!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
+Avant de commencer à baliser vos ressources à l’aide des services de contenu intelligent, intégrez [!DNL Experience Manager Assets] à Adobe Developer Console pour tirer parti du service intelligent d’[!DNL Adobe AI]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise.
 
 <!--
 >[!NOTE]
@@ -151,7 +151,7 @@ Suivez les étapes ci-dessous pour créer la configuration d’un compte techniq
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -170,7 +170,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
    | -------- | ---------------------------- |
    | Titre | Ajoutez le titre du compte IMS de configuration. |
    | Configuration Adobe IMS associée | Choisissez une configuration dans la liste déroulante. |
-   | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance d’auteur Experience Manager est hébergée. |
+   | Service URL (URL du service) | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea` ou `apac` en tant que régions où votre instance de création Experience Manager est hébergée. |
 
    >[!NOTE]
    >
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -368,17 +368,17 @@ The validation results are displayed in the same dialog.
 
 1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Baliser la ressource avec des balises intelligentes]**, disponible dans la section Workflow DAM, et placez-la après l’étape **[!UICONTROL Générer les vignettes]**.
 
-   ![Ajout de l’étape Balisage intelligent de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des ressources numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
+   ![Ajout de l’étape Balise intelligente de la ressource après l’étape Miniatures des processus dans le processus Ressources de mise à jour de gestion des actifs numériques (DAM)](assets/smart-tag-in-dam-update-asset-workflow.png)
 
 1. Ouvrez les propriétés de l’étape pour modifier les détails. Dans **[!UICONTROL Paramètres avancés]**, vérifiez que l’option **[!UICONTROL Avance du gestionnaire]** est sélectionnée.
 
-   ![Configuration du workflow de Ressource de mise à jour de la gestion des ressources numériques et ajout de l’étape de balisage intelligent](assets/smart-tag-step-properties-workflow1.png)
+   ![Configuration du workflow Ressource de mise à jour de la gestion des ressources numériques et ajout de l’étape des balises intelligentes](assets/smart-tag-step-properties-workflow1.png)
 
 1. Dans l’onglet **[!UICONTROL Arguments]**, sélectionnez **[!UICONTROL Ignorer les erreurs]** si vous souhaitez que le workflow se termine même si l’étape de balisage automatique échoue.
 
    De plus, pour baliser les ressources lors de leur chargement, et ce, que le balisage intelligent soit activé ou non dans les dossiers, cochez la case **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
 
-   ![Configuration du workflow de ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape de balisage intelligent et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
+   ![Configuration du workflow Ressource de mise à jour de la gestion des ressources numériques pour ajouter l’étape des balises intelligentes et sélectionner l’avance du gestionnaire](assets/smart-tag-step-properties-workflow2.png)
 
 1. Cliquez sur Terminé ![Icône Terminé](assets/do-not-localize/check-ok-done-icon.png) pour fermer l’étape du processus.
 
@@ -434,7 +434,7 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute toutes les semaines à 00 h 30 le samedi.
+Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute de manière hebdomadaire le samedi à 12 :30.
 
 ### Entraînement à la demande {#on-demand-training}
 
@@ -470,7 +470,7 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
 ## Limites {#limitations}
 
-* Le balisage intelligent amélioré est basé sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
+* Les balises intelligentes améliorées sont basées sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
    * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
    * Impossibilité d’identifier des balises basées sur des motifs ou des éléments minuscules d’une image. Par exemple, des logos sur des t-shirts.

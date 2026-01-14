@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
-workflow-type: ht
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+workflow-type: tm+mt
 source-wordcount: '3730'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -99,7 +99,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
 
 ## À propos de l’utilisation du recadrage intelligent dans les profils vidéo {#about-smart-crop-video}
 
-Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui tire parti de la puissance de l’intelligence artificielle d’Adobe Sensei. Il détecte et recadre automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
+Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui tire parti de la puissance de l’intelligence artificielle de l’IA d’Adobe. Il détecte et recadre automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille.
 
 Les formats vidéo pris en charge par le recadrage intelligent sont MP4, MKV, MOV, AVI, FLV et WMV.
 
@@ -109,7 +109,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 * 30 images par seconde (i/s)
 * Taille de fichier de 300 Mo
 
-Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et par le recadrage intelligent.
+L’IA d’Adobe est limitée à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par l’IA d’Adobe et le recadrage intelligent.
 
 ![Recadrage intelligent de vidéo](assets/smart-crop-video.png)
 
@@ -117,11 +117,11 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition « Paysage mobile » avec des proportions de 16x9 et une définition « Portrait mobile » avec un format de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
+Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Ratio de recadrage intelligent]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition « Paysage mobile » avec des proportions de 16x9 et une définition « Portrait mobile » avec un format de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1×1, 4×3 et 4×5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
-Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Rapport de recadrage intelligent]** dans l’interface utilisateur.
+Vous pouvez activer ou désactiver le recadrage intelligent de vidéo dans le profil vidéo à l’aide du curseur à l’extrémité droite de **[!UICONTROL Ratio de recadrage intelligent]** dans l’interface d’utilisation.
 
 Après avoir créé et enregistré votre profil vidéo, vous pouvez l’appliquer aux dossiers de votre choix.
 
@@ -181,7 +181,7 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
    * Passez à l’étape suivante.
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil est appliqué, procédez comme suit :
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, sélectionnez **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Ratio de recadrage intelligent, sélectionnez **[!UICONTROL Ajouter]**.
    * Dans le champ Nom, entrez un nom qui vous aide à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -237,7 +237,7 @@ Sélectionnez l’icône d’information en regard de chaque option pour accéde
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil est appliqué, procédez comme suit :
 
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, sélectionnez **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Ratio de recadrage intelligent, sélectionnez **[!UICONTROL Ajouter]**.
    * Dans le champ Nom, entrez un nom qui vous aide à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -415,7 +415,7 @@ Consultez également la section [Retraitement des ressources dans un dossier apr
 
 ## Surveillance de la progression d’une tâche de traitement de profil vidéo {#monitoring-the-progress-of-an-encoding-job}
 
-Un indicateur (ou une barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de codage vidéo.
+Un indicateur (ou une barre) de progression s’affiche afin que vous puissiez surveiller visuellement la progression d’une tâche de traitement d’un profil vidéo.
 
 Vous pouvez également consulter le fichier `error.log` pour contrôler la progression d’une tâche de codage, voir si le codage est terminé ou afficher les erreurs d’une tâche. Le fichier `error.log` se trouve dans le dossier `logs` où vous avez installé votre instance d’Experience Manager.
 

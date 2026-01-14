@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Pour que le service de contenu dynamique applique les balises adéquates, entra�
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
-En arrière-plan, le service de contenu dynamique utilise le framework d’intelligence artificielle d’Adobe Sensei pour entraîner son algorithme de reconnaissance d’image sur votre framework de balises et votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, le service de contenu dynamique utilise le framework d’IA d’Adobe pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
 Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe Developer Console]. Pour l’utiliser dans [!DNL Adobe Experience Manager], l’administrateur système doit intégrer votre déploiement [!DNL Experience Manager] avec [!DNL Adobe Developer Console].
 
@@ -107,7 +107,7 @@ Par défaut, la recherche [!DNL Experience Manager] associe les termes de recher
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
 
-* ressources dotées de balises dynamiques avec l’un des mots-clés.
+* Ressources dotées de balises intelligentes avec l’un des mots-clés.
 
 Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche dans les balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
@@ -133,7 +133,7 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou en fonction des
 
 Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés du dossier de ressources, sélectionnez **[!UICONTROL Activer les balises intelligentes]** sous l’onglet **[!UICONTROL Détails]** et enregistrez les modifications.
 
-Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute chaque jour à minuit.
+Lorsque cette option est sélectionnée pour un dossier, le service de contenu dynamique balise automatiquement les ressources au sein du dossier. Par défaut, le workflow de balisage s’exécute tous les jours à 12 :00.
 
 ### Balisage à la demande {#on-demand-tagging}
 
@@ -146,7 +146,7 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 #### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
 1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
-1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques (DAM))]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
+1. Dans la page **[!UICONTROL Modèles de workflow]**, sélectionnez le workflow **[!UICONTROL Balises intelligentes des ressources (gestion des actifs numériques (DAM))]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le workflow]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
@@ -159,13 +159,13 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 
 #### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
-1. Depuis l’interface utilisateur [!DNL Assets], sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
+1. Depuis l’interface d’utilisation [!DNL Assets], sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
 1. Dans le coin supérieur gauche, ouvrez la **[!UICONTROL Chronologie]**.
 1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Démarrer le processus]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques (DAM))]** et spécifiez un titre pour le workflow.
+1. Sélectionnez le workflow **[!UICONTROL Balises intelligentes des ressources (gestion des actifs numériques (DAM))]** et spécifiez un titre pour le workflow.
 1. Cliquez sur **[!UICONTROL Début]**. Le workflow applique des balises aux ressources. Pour vérifier si le service de contenu dynamique a correctement balisé vos ressources, accédez au dossier de ressources et passez en revue les balises.
 
 >[!NOTE]
@@ -176,7 +176,7 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 
 Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos ressources de marque, afin que seules les balises les plus pertinentes s’affichent.
 
-La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images sans lien apparaissent dans les résultats de la recherche.
+La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaît dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images sans lien apparaissent dans les résultats de la recherche.
 
 Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître son degré de pertinence par rapport à une image. La promotion d’une balise pour une image augmente la probabilité que cette image apparaisse dans les résultats de recherche lorsque cette balise spécifique est recherchée.
 

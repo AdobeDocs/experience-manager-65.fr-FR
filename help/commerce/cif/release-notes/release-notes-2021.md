@@ -5,10 +5,10 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 100%
+source-wordcount: '1087'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Les auteurs peuvent créer des recommandations de produits Commerce ad hoc à l’aide de types de recommandations supplémentaires.
 
-* Prise en charge des cartes-cadeaux dans la vitrine AEM
+* Prise en charge des cartes-cadeaux dans le point de vente digital AEM
 
 ## Date de publication : octobre 2021
 
@@ -131,7 +131,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
    * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
    * Nouveau composant sitemap pour pages de contenu et de commerce
 
-* Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/fr/products/magento/product-recommendations.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
+* Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par l’IA d’Adobe](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
 ## Date de publication : juin 2021
 
@@ -146,7 +146,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Nouveaux types de données de référence de catégorie et de produit CIF pour les fragments de contenu (y compris prise en charge de l’interface utilisateur du sélecteur de produits/catégories)
 * Nouveau composant principal de fragment de contenu Commerce
 * Recherche commerciale en texte intégral prise en charge dans AEM serveur principal
-* Les composants principaux de Commerce prennent en charge la collecte de données de recommandations Adobe Commerce
+* Les composants principaux de Commerce prennent en charge la collecte de données des recommandations de l’IA Adobe Commerce
 * Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
