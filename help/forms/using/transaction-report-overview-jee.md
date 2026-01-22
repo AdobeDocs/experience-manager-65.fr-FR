@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 87%
 
 ---
 
+
 # Activation et affichage des rapports de transaction pour AEM Forms sur JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> La fonctionnalité de rapport de transaction est introduite pour AEM Forms on JEE à partir d’AEM Forms 6.5.20.0. Cette fonctionnalité est désactivée par défaut et peut être activée à partir de l’interface utilisateur d’administration.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+Les rapports de transaction dans AEM Forms on JEE vous permettent de tenir le compte de toutes les transactions effectuées sur votre déploiement AEM Forms. L’objectif est de fournir des informations sur l’utilisation des produits et d’aider les parties prenantes à comprendre leurs volumes de traitement numérique. Voici quelques exemples d’une transaction :
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* Soumission d&#39;un document
+* Rendu d’un document
+* Conversion d’un document d’un format de fichier à un autre.
+
+Pour plus d’informations sur ce qui est considéré comme une transaction, voir [API facturables](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Activer les rapports de transaction {#enable-transaction-reporting}
 
@@ -29,7 +32,7 @@ Par défaut, l’enregistrement des transactions est désactivé. Pour activer l
 1. Accédez à `/adminui` sur votre instance AEM Forms sur JEE, par exemple `http://10.14.18.10:8080/adminui`.
 1. Connectez-vous en tant qu’**administrateur ou administratrice**.
 1. Accédez à **Paramètres** > **Paramètres de Core System** > **Configurations**.
-1. Cochez la case pour **Activer la création de rapports de transactions** et **Enregistrer** les paramètres.
+1. Cochez la case pour **Activer la création de rapports de transactions**, puis cliquez sur **Enregistrer** pour enregistrer les paramètres.
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
