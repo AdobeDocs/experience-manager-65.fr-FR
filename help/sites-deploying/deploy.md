@@ -10,8 +10,8 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
+source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 100%
 
@@ -160,7 +160,7 @@ La section qui suit décrit une **installation autonome**. Pour plus d’informa
 
    Emplacement d’installation UNIX® : **/opt/aem**
 
-   Emplacement d’installation de Windows : **`C:\Program Files\aem`**
+   Emplacement d’installation de Windows : **`C:\aem`**
 
    Il est aussi courant d’installer les exemples d’instance dans un dossier sur le bureau. Dans tous les cas, Adobe désigne cet emplacement de manière générique comme :
 
