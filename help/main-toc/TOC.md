@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 0aea56ae4f180e2e4208697a24ee67a716754584
+source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
 workflow-type: tm+mt
-source-wordcount: '7564'
+source-wordcount: '7571'
 ht-degree: 99%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 99%
       + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
       + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
       + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -447,7 +447,7 @@ ht-degree: 99%
       + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
       + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management dans Assets](/help/assets/drm.md)
       + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -771,7 +771,7 @@ ht-degree: 99%
       + [Utilisation d’un formulaire](/help/forms/using/working-with-form.md)
       + [Utilisation des points de départ](/help/forms/using/working-with-startpoints.md)
       + [Ouverture d’une tâche](/help/forms/using/open-task.md)
-      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon &#x200B;](/help/forms/using/save-as-draft.md)
+      + [Enregistrement d’une tâche ou d’un formulaire en tant que brouillon ](/help/forms/using/save-as-draft.md)
       + [Utilisation de l’enregistrement automatique dans l’application AEM Forms](/help/forms/using/autosave-data-app.md)
       + [Enregistrer les formulaires sous forme de modèles](/help/forms/using/save-forms-and-start-points-as-templates.md)
       + [Ajout de pièces jointes](/help/forms/using/add-attachments.md)
@@ -1220,6 +1220,7 @@ ht-degree: 99%
       + [Ouverture d’un PDF forms XFA sur Firefox et Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
       + [Vulnérabilité d’entité externe XML (XXE) dans BlazeDS](/help/forms/using/xxe-vulnerability-blazeds.md)
       + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
+      + [Réduire la vulnérabilité CVE-2025-64775 (Apache Struts)](/help/forms/using/mitigating-cve-apache-struts.md)
    + Documentation héritée {#legacy-documentation}
       + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](/help/forms/developing/building-xml.md)
       + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
