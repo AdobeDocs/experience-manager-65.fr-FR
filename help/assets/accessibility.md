@@ -1,15 +1,15 @@
 ---
-title: Accessibilité des fonctionnalités et des interfaces  [!DNL Experience Manager Assets]
+title: Accessibilité des fonctionnalités et des interfaces  [!DNL Adobe Experience Manager Assets]
 description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager]  6.5 [!DNL Assets]  aident les utilisateurs en situation de handicap.
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 3524c1e6d299576ac9691292fb29eb0cf8a48bc2
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 100%
+source-wordcount: '1881'
+ht-degree: 56%
 
 ---
 
@@ -31,13 +31,13 @@ Possible topics to cover in this article are below.
 
 # Fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu de proposer des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs en situation de handicap en améliorant l’accessibilité d’[!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d’utilisateurs et appliquer les normes internationales afin d’inclure les personnes atteintes d’une déficience visuelle, auditive, de mobilité ou autre.
+[!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu de proposer des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs et créatrices en situation de handicap en améliorant l’accessibilité des [!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d&#39;utilisateurs. Il est conforme aux normes mondiales qui s’appliquent aux personnes atteintes de déficiences visuelles, auditives, de mobilité ou autres.
 
 [!DNL Experience Manager] publie des informations sur la conformité qui décrivent les normes auxquelles il adhère, mettent en avant les fonctionnalités d’accessibilité du produit et définissent le niveau de conformité. Les rapports de conformité pour l’accessibilité aident les utilisateurs d’[!DNL Experience Manager] à comprendre le niveau d’adhésion à diverses normes. Les améliorations apportées à [!DNL Assets] permettent à tous les utilisateurs d’accéder facilement aux interfaces à l’aide d’un clavier, d’un lecteur d’écran, de loupes et d’autres technologies d’assistance.
 
 [!DNL Experience Manager] offre divers niveaux de prise en charge des normes suivantes :
 
-* [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/).
+* [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/wcag/).
 * [Révision de l’article 508 de la loi sur la réadaptation](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines).
 * [Initiative relative à l’accessibilité – Applications Internet riches et accessibles (WAI-ARIA) par W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
@@ -60,14 +60,14 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
-* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Les personnes en situation un handicap peuvent utiliser le contenu à l’aide des technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité Web](/help/managing/web-accessibility.md).
-* [!DNL Experience Manager] permet de plus à ses utilisateurs et à ses administrateurs en situation de handicap d’accéder à l’interface utilisateur et aux contrôles pour créer et gérer du contenu. La personne présentant un handicap peut faire appel aux technologies d’assistance pour naviguer, utiliser et gérer les fonctionnalités d’[!DNL Assets].
+* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Les personnes en situation un handicap peuvent utiliser le contenu à l’aide des technologies d’assistance. Pour plus d’informations, consultez [Directives d’accessibilité Web](/help/managing/web-accessibility.md).
+* [!DNL Experience Manager] permet également à ses utilisateurs et administrateurs en situation de handicap d’accéder à l’interface utilisateur et aux contrôles de création et de gestion de contenu. La personne présentant un handicap peut faire appel aux technologies d’assistance pour naviguer, utiliser et gérer les fonctionnalités d’[!DNL Assets].
 
-Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’auparavant et sont régulièrement mises à jour afin d’améliorer la conformité aux normes mondiales. Les opérations CRUD d’[!DNL Assets] intègrent un certain degré d’accessibilité Les workflows DAM tels que l’ajout, la gestion, la recherche et la distribution de ressources sont accessibles à l’aide de raccourcis clavier, d’un texte de lecteur d’écran, d’un contraste de couleur, etc.
+Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’auparavant et sont régulièrement mises à jour afin d’améliorer la conformité aux normes mondiales. Les opérations de CRUD en [!DNL Assets] sont dotées d&#39;un certain degré d&#39;accessibilité. Les workflows DAM tels que l’ajout, la gestion, la recherche et la distribution de ressources sont accessibles à l’aide de raccourcis clavier, d’un texte de lecteur d’écran, d’un contraste de couleur, etc.
 
 ## Prise en charge de l’utilisation du clavier {#keyboard-use}
 
-De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur en accédant à la commande de l’interface utilisateur via un clavier et en sélectionnant `Return`, puis en sélectionnant le raccourci clavier `Alt + 2`.
+De nombreux éléments de l’interface utilisateur cliquables ou exploitables à l’aide d’un pointeur peuvent également être utilisés à l’aide d’un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher à l’aide du clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur. Accédez à la commande de l’interface utilisateur à l’aide du clavier, puis sélectionnez `Return` et `Alt + 2` raccourci clavier.
 
 <!-- TBD items:
 
@@ -85,7 +85,7 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 |---|---|---|
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accédez aux fichiers et aux dossiers dans la même hiérarchie. |
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accédez aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
-| Navigation dans les dossiers d’[!DNL Assets] | `/` | Lancer la recherche en ouvrant la zone Omni-recherche. |
+| Navigation dans les dossiers d’[!DNL Assets] | `/` | Appelez une recherche en ouvrant la zone Omnisearch. |
 | Console [!DNL Assets] | &grave; | Activer/désactiver les rails |
 | Console [!DNL Assets] | `Alt + 1` | Ouvrir l’arborescence de contenu. |
 | Console [!DNL Assets] | `Alt + 2` | Ouvrez le rail de gauche [!UICONTROL Navigation]. |
@@ -93,24 +93,24 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 | Console [!DNL Assets] | `Alt + 4` | Ouvrir les références Live Copy de la ressource sélectionnée. |
 | Console [!DNL Assets] | `Alt + 5` | Lance la recherche et effectue une recherche dans le dossier sélectionné. |
 | Ressource ou dossier sélectionné | Retour arrière | Supprimer la ressource ou le dossier sélectionné. |
-| Ressource ou dossier sélectionné | `p` | Ouvrir la page Propriétés de la ressource sélectionnée. |
+| Ressource ou dossier sélectionné | `p` | Ouvrez la page Propriétés de la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `e` | Modifier la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `m` | Déplacer la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `Ctrl + c` | Copier la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `Esc` | Annule la sélection. |
-| La boîte de dialogue s’ouvre et est active | `Esc` | Fermer la boîte de dialogue. |
+| La boîte de dialogue s’ouvre et reçoit le focus | `Esc` | Fermez la boîte de dialogue. |
 | Dans un dossier dans DAM | `Ctrl + v` | Coller la ressource copiée. |
 | Console [!DNL Assets] | `Ctrl + A` | Sélectionner tous les fichiers. |
 | Pages de propriétés d’Assets | `Ctrl + S` | Enregistrer les modifications. |
 | Console [!DNL Assets] | `?` | Afficher la liste de raccourcis clavier. |
 
-## Connexion à l’interface utilisateur d’[!DNL Assets] et navigation {#login}
+## Connexion et navigation dans l’interface utilisateur [!DNL Assets] {#login}
 
-Les utilisateurs peuvent se servir du clavier pour accéder au champ de connexion et le renseigner afin de se connecter. Les messages d’erreur dus à des combinaisons de nom d’utilisateur et de mot de passe incorrectes sur la page de connexion sont annoncés par des lecteurs d’écran chaque fois que l’erreur se produit.
+Les utilisateurs peuvent utiliser le clavier pour accéder au champ de connexion et le renseigner afin de se connecter. Les lecteurs d’écran annoncent des messages d’erreur sur la page de connexion chaque fois qu’un utilisateur saisit une combinaison de nom d’utilisateur et de mot de passe incorrecte.
 
-Une fois connectés, les utilisateurs de DAM peuvent accéder à l’interface utilisateur d’[!DNL Assets] à l’aide du clavier. Le clavier permet d’accéder aux éléments de l’interface utilisateur, tels que le rail de gauche, les menus, le profil utilisateur, la barre de recherche, les fichiers et les dossiers, ainsi que les paramètres d’administration et de configuration. L’ordre de navigation via le clavier est de gauche à droite et de haut en bas. Lorsque vous naviguez à l’aide du clavier, une option exploitable sélectionnée est mise en évidence par un contraste accentué des couleurs et est annoncée par un lecteur d’écran. Le cas échéant, un lecteur d’écran annonce l’état (étendu, réduit et mixte, par exemple) des options de menu sélectionnées. En outre, le lecteur d’écran présente le but de l’option utilisable, plutôt que son aspect ou son emplacement sur l’interface.
+Une fois connectés, les utilisateurs de la gestion des ressources numériques peuvent naviguer dans l’interface utilisateur [!DNL Assets] à l’aide du clavier. Le clavier permet d’accéder aux éléments de l’interface utilisateur, tels que le rail de gauche, les menus, le profil utilisateur, la barre de recherche, les fichiers et les dossiers, ainsi que les paramètres d’administration et de configuration. L’ordre de navigation via le clavier est de gauche à droite et de haut en bas. Lorsque les utilisateurs naviguent à l’aide du clavier, l’interface utilisateur met en surbrillance l’option active avec un contraste des couleurs amélioré et les lecteurs d’écran la lisent. Le cas échéant, les lecteurs d’écran annoncent le statut (par exemple, développé, réduit ou mixte) des options de menu sélectionné. En outre, le lecteur d’écran annonce l’objectif de l’option utilisable, au lieu de, par exemple, l’aspect ou l’emplacement de l’interface.
 
-Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut concerné. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
+Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut approprié. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -121,7 +121,7 @@ Si un utilisateur développe l’option d’aide ou de profil utilisateur à par
 
 ## Parcourir les ressources et afficher les informations associées {#browse}
 
-Dans l’interface utilisateur d’[!DNL Assets], les utilisateurs peuvent se servir du clavier pour parcourir la liste des ressources numériques existantes dans le référentiel DAM, prévisualiser ou télécharger une ressource, afficher les rendus générés, changer de vue, afficher la chronologie et l’historique des versions, afficher les commentaires et les références, et afficher et gérer les métadonnées.
+Dans l’interface utilisateur d’[!DNL Assets], les utilisateurs peuvent utiliser le clavier pour parcourir les ressources numériques dans le référentiel de gestion des ressources numériques et prévisualiser ou télécharger une ressource. Les utilisateurs peuvent également afficher les rendus générés, changer de vue et consulter la chronologie, l’historique des versions, les commentaires et les références. En outre, les utilisateurs peuvent afficher et gérer les métadonnées.
 
 <!-- TBD: Not sure about the following list items mean:
 
@@ -139,14 +139,14 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 Lors de la navigation dans le référentiel de ressources, les fonctionnalités suivantes améliorent l’accessibilité :
 
-* Le lecteur d’écran indique des alternatives textuelles qui décrivent l’objectif ou la fonctionnalité des icônes et non pas leur nom.
-* Les utilisateurs peuvent accéder aux options de l’interface utilisateur interactive et les sélectionner dans la liste Références des ressources à l’aide des touches du clavier.
+* Un lecteur d’écran annonce des alternatives textuelles qui décrivent l’objectif ou la fonctionnalité des icônes au lieu de leurs noms.
+* Les utilisateurs peuvent accéder aux options de l’interface utilisateur interactive et en placer le focus dans la liste des ressources Références à l’aide des touches du clavier.
 * Les éléments figurant dans chaque ligne dans la vue Liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
 * Lorsque vous naviguez à l’aide de la touche `Tab`, la sélection peut passer à l’option de fermeture dans l’aperçu de version.
-* Lorsque vous utilisez le clavier pour naviguer, les options exploitables mises en surbrillance dans l’interface utilisateur s’affichent de manière plus visible par un contraste amélioré. L’utilisateur peut ainsi identifier plus facilement la zone sélectionnée.
+* Lorsque vous utilisez le clavier pour naviguer, les options d’interface utilisateur activables mises en surbrillance ont une orientation visuelle plus nette avec un contraste amélioré. L’utilisateur peut ainsi identifier plus facilement la zone sélectionnée.
 * Utiliser la touche `Esc` pour supprimer les icônes d’action rapide du mode Miniature ne supprime pas la sélection via le clavier du dernier élément sélectionné.
 * Une fois une ressource sélectionnée, le raccourci clavier `Alt + 4` ouvre la liste [!UICONTROL Références] dans le rail de gauche. À l’aide de la touche `Tab`, les utilisateurs peuvent parcourir les entrées de référence non nulles. En parcourant uniquement les entrées de référence non nulles, vous réduisez également les efforts nécessaires et les touches actionnées.
-* Les commentaires relatifs à une ressource sont disponibles dans la chronologie de cette ressource, Elle est accessible grâce au rail gauche à l’aide d’un clavier ou d’un raccourci clavier.
+* Les commentaires relatifs à une ressource sont disponibles dans la chronologie de cette ressource, Il est accessible si vous accédez au rail de gauche à l’aide d’un clavier ou d’un raccourci clavier.
 * Les [!UICONTROL Paramètres d’affichage] d’[!DNL Experience Manager] sont accessibles à l’aide du clavier. L’utilisateur peut parcourir les tailles de carte disponibles à l’aide des touches fléchées, naviguer parmi ces tailles via les touches de tabulation et définir d’autres éléments dans la vue Paramètres d’affichage existante.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
@@ -162,35 +162,33 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 
 ## Gestion des ressources numériques {#manage-assets}
 
-De nombreuses tâches de gestion des ressources, telles que les opérations CRUD, le téléchargement d’une ressource et l’ajout de métadonnées, sont accessibles à divers degrés. [!DNL Assets] vous permet d’accomplir les tâches à l’aide de diverses technologies d’assistance, notamment un lecteur d’écran et un clavier.
+De nombreuses tâches de gestion des ressources, telles que les opérations CRUD, le téléchargement d’une ressource et l’ajout de métadonnées, sont accessibles à divers degrés. [!DNL Assets] vous permettent d’accomplir les tâches à l’aide de diverses technologies d’assistance, telles qu’un lecteur d’écran et un clavier.
 
-Regardez une démonstration vidéo indiquant comment utiliser un clavier pour [parcourir le référentiel et télécharger une ressource](https://youtu.be/K3dgqMRQJys).
+Pour les opérations de métadonnées généralement effectuées par des rôles, tels que les spécialistes marketing et les administrateurs, les fonctionnalités suivantes améliorent l’accessibilité :
 
-Pour les opérations de métadonnées généralement effectuées par des rôles tels que les rôles d’administrateur et de spécialiste du marketing, les fonctionnalités suivantes améliorent l’accessibilité :
-
-* L’option [!UICONTROL Enregistrer et fermer] de la page [!UICONTROL Propriétés] d’une ressource est désormais accessible à l’aide du clavier.
-* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL De base] des [!UICONTROL Propriétés] de ressource.
-* Les utilisateurs peuvent utiliser la boîte de dialogue contextuelle du sélecteur de données à l’aide du clavier. L’élément d’interface utilisateur sélecteur de date est utilisé pour définir les heures d’ouverture et de fermeture, et pour sélectionner la date.
-* La fonctionnalité glisser à l’aide du clavier s’exécute correctement dans l’[!UICONTROL éditeur de schéma de métadonnées] dans le mode de navigation du lecteur d’écran.
-* Un utilisateur peut déplacer la sélection à l’aide du clavier vers le champ Ajouter un utilisateur ou Groupe sous [!UICONTROL Groupe d’utilisateurs fermé] dans l’onglet [!UICONTROL Autorisations] du dossier [!UICONTROL Propriétés].
+* L’option [!UICONTROL Enregistrer et fermer] de la page Ressource [!UICONTROL Propriétés] est désormais accessible à l’aide du clavier.
+* Les lecteurs d’écran annoncent les options permettant de supprimer les balises sélectionnées dans l’onglet [!UICONTROL  De base ] de la ressource [!UICONTROL Propriétés].
+* Les utilisateurs peuvent utiliser la boîte de dialogue pop-up du sélecteur de date à l’aide du clavier. L’élément d’interface utilisateur du sélecteur de date permet de définir les heures d’activation et les heures de désactivation, puis de sélectionner une date.
+* La fonctionnalité glisser à l’aide du clavier fonctionne correctement dans l’[!UICONTROL Éditeur de schéma de métadonnées] en mode de navigation du lecteur d’écran.
+* Un utilisateur peut utiliser le clavier pour déplacer la sélection vers le champ **Ajouter un utilisateur ou un groupe**.
 
 ## Recherche de ressources numériques {#search-assets}
 
-Une recherche rapide et transparente de ressource décuple la vitesse du contenu. Les cas d’utilisation de la vitesse du contenu font partie des principales fonctionnalités d’[!DNL Assets]. Pour lancer une recherche à partir de la barre Omni-recherche, les utilisateurs peuvent se servir du raccourci clavier `/` ou de la touche `Tab` parallèlement aux lecteurs d’écran afin de localiser rapidement l’option de recherche. Le lecteur d’écran indique le nom de l’option avec la mention « Bouton de recherche » lorsque la sélection porte sur l’option de recherche ![option de recherche](assets/do-not-localize/search_icon.png). Les utilisateurs peuvent sélectionner `Return` pour ouvrir la boîte de dialogue Omni-recherche. Le lecteur d’écran indique non seulement le mot-clé saisi dans la zone de recherche, mais également les suggestions proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées, la touche `Return` et la touche `Tab` pour accéder aux différentes options permettant de déclencher une recherche.
+Une recherche rapide et transparente de ressource décuple la vitesse du contenu. Les cas d’utilisation de la vitesse du contenu font partie des principales fonctionnalités d’[!DNL Assets]. Pour lancer une recherche à partir de la barre Omnisearch, les utilisateurs peuvent utiliser des `/` de raccourci clavier ou des `Tab` ainsi que des lecteurs d’écran pour localiser rapidement l’option de recherche. Le lecteur d’écran indique le nom de l’option avec la mention « Bouton de recherche » lorsque la sélection porte sur l’option de recherche ![option de recherche](assets/do-not-localize/search_icon.png). Les utilisateurs peuvent sélectionner `Return` pour ouvrir la boîte de dialogue Omni-recherche. Le lecteur d’écran annonce non seulement le mot-clé saisi dans la zone de recherche, mais également les suggestions proposées par [!DNL Experience Manager Assets]. Les utilisateurs peuvent utiliser une combinaison de touches fléchées, la touche `Return` et la touche `Tab` pour accéder aux différentes options permettant de déclencher une recherche.
 
 Les fonctionnalités suivantes permettent d’accéder à l’option de recherche :
 
-* Le titre de la page, tel qu’il est disponible pour un lecteur d’écran, permet d’identifier la page comme page de recherche de ressources.
+* Le titre de la page, disponible pour un lecteur d’écran, permet d’identifier la page en tant que page de recherche de ressources.
 * Les utilisateurs recherchent des ressources dans le champ Omni-recherche. Les utilisateurs peuvent ouvrir l’option de recherche à l’aide du clavier ou d’un raccourci clavier `/`.
 * Les utilisateurs peuvent commencer la saisie d’un mot-clé de recherche, puis sélectionner les suggestions automatiques à l’aide des touches fléchées. Il est possible de sélectionner la suggestion mise en évidence à l’aide de la touche `Return` et la suggestion sélectionnée fait l’objet d’une recherche dans les ressources.
-* Les lecteurs d’écran peuvent identifier et indiquer les cases à cocher à l’état mixte (dans lesquelles, sauf si vous sélectionnez tous les prédicats imbriqués, les cases de premier niveau ne sont pas cochées et sont barrées) dans le panneau Filtres lors du filtrage des résultats de recherche.
-* La sélection de l’utilisateur passe aux options de recherche une fois la zone Omni-recherche fermée.
+* Les lecteurs d’écran peuvent identifier et annoncer les cases à cocher de statut mixte dans le panneau Filtres lorsque les utilisateurs filtrent les résultats de la recherche. En mode mixte, la case à cocher de premier niveau est activée jusqu’à ce que les utilisateurs sélectionnent tous les prédicats imbriqués.
+* Le focus de l’utilisateur se déplace vers les options de recherche une fois la zone Omnisearch fermée.
 
 Lors du filtrage des résultats de recherche :
 
-* La page des résultats de recherche comporte un titre informatif améliorant la compréhension des utilisateurs du lecteur d’écran.
-* Un lecteur d’écran affiche les options du filtre de recherche sous forme d’accordéons extensibles.
-* Les prédicats comportant des options d’état mixte sont annoncés par les lecteurs d’écran.
+* La page des résultats de recherche comporte un titre informatif pour une meilleure compréhension des utilisateurs de lecteurs d’écran.
+* Un lecteur d’écran annonce les options du filtre de recherche sous forme d’accordéons extensibles.
+* Les lecteurs d’écran annoncent des prédicats qui incluent des options d’état mixte.
 
 ## Partage de ressources {#share-assets}
 
@@ -199,12 +197,12 @@ Lors du filtrage des résultats de recherche :
 
 Lors du partage de ressources, les fonctionnalités suivantes améliorent l’accessibilité :
 
-* Un utilisateur peut déplacer la sélection à l’aide du clavier dans les champs Rechercher et Ajouter l’adresse électronique de la boîte de dialogue de partage de liens.
+* Un utilisateur peut déplacer le focus à l’aide du clavier dans le champ Rechercher et ajouter une adresse électronique de la boîte de dialogue partage de liens.
 
-* Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran :
+* Dans la boîte de dialogue Partage de liens, lorsque vous naviguez en mode de navigation, les lecteurs d’écran :
 
-   * N’indique pas les informations du tableau dès que la boîte de dialogue est chargée.
-   * Peut accéder à toutes les suggestions répertoriées.
+   * N’indique pas les informations du tableau lorsque la boîte de dialogue est chargée.
+   * Accédez à toutes les suggestions répertoriées.
    * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
 
 ## Documentation accessible {#accessible-docs}
@@ -212,16 +210,13 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 [!DNL Experience Manager] fournit une documentation accessible pour les personnes en situation de handicap. Les éléments suivants permettent de rendre l’offre de contenu accessible, tandis qu’Adobe continue d’améliorer le modèle et le contenu :
 
 * Les lecteurs d’écran peuvent lire le texte.
-* Un texte alternatif est disponible pour les images et les illustrations.
+* Le texte secondaire des images et illustrations est disponible.
 * La navigation au clavier est possible.
 * Les ratios de contraste permettent de mettre en évidence certaines parties du site web de documentation.
 
 ## Rédiger des commentaires {#a11y-feedback}
 
-Pour rédiger des commentaires, poser des questions et demander des améliorations du produit liées à l’accessibilité, utilisez les méthodes suivantes :
-
-* Complétez le formulaire à l’adresse [www.adobe.com/accessibility/feedback.html](https://www.adobe.com/accessibility/feedback.html).
-* Envoyez-nous un courrier électronique à l’adresse access@adobe.com.
+Pour fournir des commentaires, poser des questions et demander des améliorations du produit liées à l’accessibilité, utilisez les méthodes suivantes, envoyez-nous un e-mail à l’adresse `access@adobe.com`.
 
 >[!MORELIKETHIS]
 >
