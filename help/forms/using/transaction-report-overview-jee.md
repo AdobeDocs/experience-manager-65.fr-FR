@@ -5,7 +5,7 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
+source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 87%
@@ -15,7 +15,7 @@ ht-degree: 87%
 
 # Activation et affichage des rapports de transaction pour AEM Forms sur JEE {#transaction-reports-overview}
 
-<span> La fonctionnalité de rapport de transaction est introduite pour AEM Forms on JEE à partir d’AEM Forms 6.5.20.0. Cette fonctionnalité est désactivée par défaut et peut être activée à partir de l’interface utilisateur d’administration.</span>
+<span> La fonctionnalité de rapport de transaction est introduite pour [AEM Forms on JEE à partir d’AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms). Cette fonctionnalité est désactivée par défaut et peut être activée à partir de l’interface utilisateur d’administration.</span>
 
 Les rapports de transaction dans AEM Forms on JEE vous permettent de tenir le compte de toutes les transactions effectuées sur votre déploiement AEM Forms. L’objectif est de fournir des informations sur l’utilisation des produits et d’aider les parties prenantes à comprendre leurs volumes de traitement numérique. Voici quelques exemples d’une transaction :
 
