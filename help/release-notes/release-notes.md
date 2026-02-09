@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
+source-git-commit: 24e09fd7dd1801dc1511ed91a0b7c550d50eb484
 workflow-type: tm+mt
-source-wordcount: '9486'
-ht-degree: 24%
+source-wordcount: '9709'
+ht-degree: 23%
 
 ---
 
@@ -660,8 +660,6 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
 * AEM Forms comprend désormais une mise à niveau de Struts, de la version 2.5.33 vers la version 6.x, pour le composant de formulaire. Cette mise à niveau fournit des modifications Struts précédemment manquantes qui n&#39;étaient pas incluses dans le SP24. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez télécharger et installer. La dernière version de Struts est alors prise en charge.
 
-#### Autres problèmes connus {#aem-forms-other-known-issues}
-
 * Après l’installation du pack de services AEM Forms JEE 21 (6.5.21.0), vous pouvez trouvez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` sous le dossier `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926). Suivez ces étapes pour résoudre le problème :
 
    1. Arrêtez les localisateurs s’ils sont en cours d’exécution.
@@ -696,7 +694,22 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
 * **FORMS-21378** : lorsque la validation côté serveur (SSV) est activée, les envois de formulaires peuvent échouer. Si vous rencontrez ce problème, contactez l’assistance Adobe pour obtenir de l’aide.
 
-* **FORMS-23703** : lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+* **FORMS-23703** : lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+
+* Les connecteurs de modèle de données de formulaire peuvent ne pas s’authentifier, car les mots-clés requis et le modèle RegEx ne sont pas autorisés par défaut. Pour résoudre le problème, ajoutez les éléments suivants via Configuration Manager (`/system/console/configmgr`) :
+
+   * **Mots-clés :** `fdm-client-secret`, `oauth-client-secret`
+   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+
+     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+
+* **FORMS-23979.** : la conversion d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+
+* **FORMS-23722** (Pièces jointes manquantes dans Affecter une tâche) : lorsqu’un formulaire avec un champ **Pièce jointe** est envoyé à un processus AEM qui utilise une étape **Affecter une tâche**, les pièces jointes n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont enregistrés correctement dans le référentiel et sont visibles dans CRX ; seule l’interface utilisateur de l’étape Affecter une tâche ne les affiche pas.
+
+* **FORMS-23717** Après la mise à niveau vers **AEM Forms6.5.24.0**, `server.log` et `error.log` peuvent être inondés de messages WARN répétés tels que *Échec de la création de la fabrique d&#39;analyseur sécurisé* ou *Attribut de sécurité... n&#39;est pas pris en charge*. Les journaux peuvent augmenter d’environ **5 à 10 lignes par seconde** (des centaines de Mo par heure), ce qui peut remplir le disque et bloquer le déploiement en production. **Correctif :** inclus dans les **6.5.25.0** AEM Forms. **jusque-là :**
+
+  Pour réduire le volume de journalisation, définissez le niveau de journalisation des `com.adobe.util.XMLSecurityUtil` à `ERROR` dans la configuration du serveur d’applications ou via l’argument JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Cela ne fait que masquer les messages et ne corrige pas la cause sous-jacente.
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
