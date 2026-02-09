@@ -27,7 +27,7 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 * Exécuter des calculs complexes sur les données capturées
 * Enregistrer des données de formulaires adaptatifs dans les systèmes de stockage selon un planning prédéfini
 
-L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance de création AEM Forms à Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate).
+L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance de création AEM Forms à Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate).
 
 ## Conditions préalables
 
