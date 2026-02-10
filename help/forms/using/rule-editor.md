@@ -9,10 +9,10 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '6607'
-ht-degree: 100%
+source-wordcount: '6639'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 
 
 Les utilisateurs et utilisatrices ajoutés au groupe des utilisateurs et utilisatrices expérimentés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs et utilisatrices appartenant au groupe d’utilisateurs et d’utilisatrices de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
-## Compréhension d’une règle {#understanding-a-rule}
+## Présentation d’une règle {#understanding-a-rule}
 
 Une règle est une combinaison d’actions et de conditions. Dans l’éditeur de règles, les actions incluent des activités telles que masquer, afficher, activer, désactiver ou calculer la valeur d’un objet dans un formulaire. Les conditions sont des expressions booléennes qui sont évaluées en effectuant des vérifications et des opérations sur l’état, la valeur ou la propriété d’un objet de formulaire. Les actions sont exécutées en fonction de la valeur (`True` ou `False`) renvoyée par l’évaluation d’une condition.
 
@@ -64,7 +64,7 @@ Les types de règles Afficher, Masquer, Activer, Désactiver, Définir la valeur
 >
 >Les types de règles disponibles, y compris les conditions et actions que vous définissez dans l’éditeur de règles, dépendent également du type d’objet de formulaire sur lequel vous créez une règle. L’éditeur de règles affiche uniquement les types de règle et les options valides lors de la création des instructions de condition et d’action pour un type particulier d’objet de formulaire. Par exemple, les types de règle Valider, Définir la valeur de, Activer et Désactiver ne s’affichent pas pour un objet de panneau.
 
-Pour plus d’informations sur les types de règle disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règle disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
+Pour plus d’informations sur les types de règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
 ### Recommandations pour la sélection d’un concept de règle {#guidelines-for-choosing-a-rule-construct}
 
@@ -461,7 +461,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Faites glisser et déposez le champ **Salaire du conjoint** de l’onglet Objets de formulaire vers le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également sélectionner le champ **Déposer l’objet ou sélectionner ici**, puis le champ **Salaire du conjoint ou de la conjointe** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
+1. Faites glisser et déposez le champ **Salaire du conjoint ou de la conjointe** de l’onglet Objets de formulaire vers le champ **Déposez l’objet ou sélectionnez ici**. Vous pouvez également sélectionner le champ **Déposer l’objet ou sélectionner ici**, puis le champ **Salaire du conjoint ou de la conjointe** dans le menu contextuel, qui répertorie tous les objets de formulaire dans le formulaire.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -541,7 +541,7 @@ Effectuez les étapes suivantes pour créer les règles :
 >
 >Vous pouvez également utiliser la règle Définir la valeur de pour calculer l’éligibilité de prêt dans la règle Lorsque que vous avez créée pour afficher ou masquer le champ Salaire du conjoint. La règle combinée résultante, lorsque l’état civil est Célibataire, s’affiche comme suit dans l’éditeur de règles.
 >
->De même, vous pouvez entrer une règle combinée pour contrôler la visibilité du champ Salaire de l’époux ou de l’épouse lorsque la valeur d&#39;état civil est Marié ou Mariée.
+>De même, vous pouvez créer une règle combinée pour contrôler la visibilité du champ Salaire de l’époux ou de l’épouse et calculer l’éligibilité au prêt lorsque la valeur d’état civil est Marié ou Mariée.
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
@@ -563,6 +563,10 @@ Lorsque vous écrivez du code en JavaScript dans l’éditeur de règles, les re
 ![javascriptruleeditor](assets/javascriptruleeditor.png)
 
 #### Fonctions personnalisées dans l’éditeur de règles {#custom-functions}
+
+>[!NOTE]
+>
+> Les fonctions personnalisées doivent être compatibles avec ECMAScript 5 (ES5). Foundation Forms prend uniquement en charge ES5. L’utilisation de versions ECMAScript plus récentes (ES6 et ultérieures) n’est pas prise en charge et peut entraîner des erreurs ou un comportement inattendu.
 
 Outre les fonctionnalités prêtes à l’emploi, comme *Somme de*, qui sont répertoriées sous Fonctions, vous pouvez créer des fonctions personnalisées dont vous avez besoin fréquemment. Assurez-vous de la présence de la balise `jsdoc` au-dessus de la fonction que vous créez.
 
@@ -607,8 +611,8 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 * Syntaxe
 **Type de retour** : `@return {type}`
 Autrement, vous pouvez utiliser `@returns {type}`.
-Ajoute des informations sur la fonction, comme son objectif.
-{type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
+Ajoute des informations sur la fonction, telles que son objectif.
+  {type} représente le type de retour de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
    1. chaîne
    1. nombre
@@ -788,7 +792,7 @@ Voici un exemple de règle imbriquée qui affiche un message concernant l’éli
 
 ![complexexpression](assets/complexexpression.png)
 
-Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
+Vous pouvez également faire glisser et déposer des conditions dans une règle pour la modifier. Appuyez et passez le curseur sur la poignée (![handle](assets/handle.png)) avant une condition. Une fois le pointeur affiché sous forme de main, comme illustré ci-dessous, faites glisser la condition et déposez-la n’importe où dans la règle. La structure de la règle change.
 
 ![glisser-déposer](assets/drag-and-drop.png)
 
@@ -810,7 +814,7 @@ Lorsque la date remplie est antérieure à la date actuelle, le formulaire affic
 
 L’éditeur de règles vous permet de créer des conditions qui comparent deux nombres.
 
-Voici un exemple de condition qui contient un objet de texte statique si le demandeur habite à son adresse actuelle depuis moins de 36 mois.
+Voici un exemple de condition qui contient un objet de texte statique si le demandeur habite à son adresse actuelle depuis moins de 36 mois.
 
 ![numbercomparisoncondition](assets/numbercomparisoncondition.png)
 
@@ -862,7 +866,7 @@ Règle dans l’éditeur de code
 
 ### Utilisation d’une sortie de fonction dans une règle {#using-a-function-output-in-a-rule}
 
-Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel les utilisateurs et les utilisatrices rempliront leurs commandes. Dans ce tableau :
+Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel les utilisateurs et utilisatrices rempliront leurs commandes. Dans ce tableau :
 
 * La première ligne est répétable, de sorte que les utilisateurs et utilisatrices puissent commander plusieurs produits et spécifier différentes quantités. Son nom d’élément est `Row1`.
 * Le titre de la cellule dans la colonne Quantité de produit de la ligne répétable est Quantité. Le nom de l’élément pour cette cellule est `productquantity`.
@@ -886,7 +890,7 @@ Règle dans l’éditeur de code
 
 ### Validation d’une valeur de champ à l’aide d’une expression {#validating-a-field-value-using-expression}
 
-Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher l’utilisateur de commander plus d’une quantité d’un produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
+Dans le formulaire de bon de commande décrit dans l’exemple précédent, vous souhaitez empêcher la commande de plus d’une certaine quantité d’un produit dont le prix est supérieur à 10 000. Pour ce faire, vous pouvez rédiger pour une règle Valider comme illustré ci-dessous.
 
 ![example-validate](assets/example-validate.png)
 

@@ -4,16 +4,20 @@ description: AEM Forms prend en charge les fonctions personnalisées qui permet
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: 23d3796e15294b0fc7486096ea02bcbedbed69f3
-workflow-type: ht
-source-wordcount: '1084'
-ht-degree: 100%
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+workflow-type: tm+mt
+source-wordcount: '1116'
+ht-degree: 96%
 
 ---
 
 # Fonctions personnalisées dans les formulaires adaptatifs
 
 ## Présentation
+
+>[!NOTE]
+>
+> Les fonctions personnalisées doivent être compatibles avec ECMAScript 5 (ES5). Foundation Forms prend uniquement en charge ES5. L’utilisation de versions ECMAScript plus récentes (ES6 et ultérieures) n’est pas prise en charge et peut entraîner des erreurs ou un comportement inattendu.
 
 AEM Forms 6.5 offre la possibilité de définir des fonctions JavaScript pouvant être utilisées pour définir des règles métier complexes à l’aide de l’éditeur de règles. AEM Forms fournit un certain nombre de fonctions personnalisées prêtes à l’emploi, mais vous devrez définir vos propres fonctions personnalisées et les utiliser dans plusieurs formulaires.
 
@@ -87,8 +91,8 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 * Syntaxe
 **Type de retour** : `@return {type}`
 Autrement, vous pouvez utiliser `@returns {type}`.
-Ajoute des informations sur la fonction, comme son objectif.
-{type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
+Ajoute des informations sur la fonction, telles que son objectif.
+  {type} représente le type de retour de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
    1. chaîne
    1. nombre
