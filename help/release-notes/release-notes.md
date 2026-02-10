@@ -694,7 +694,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
 * **FORMS-21378** : lorsque la validation côté serveur (SSV) est activée, les envois de formulaires peuvent échouer. Si vous rencontrez ce problème, contactez l’assistance Adobe pour obtenir de l’aide.
 
-* **FORMS-23703** : lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+* **FORMS-23703** : lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
 
 * Les connecteurs de modèle de données de formulaire peuvent ne pas s’authentifier, car les mots-clés requis et le modèle RegEx ne sont pas autorisés par défaut. Pour résoudre le problème, ajoutez les éléments suivants via Configuration Manager (`/system/console/configmgr`) :
 
@@ -703,7 +703,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.** : la conversion d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.** : la conversion d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (Pièces jointes manquantes dans Affecter une tâche) : lorsqu’un formulaire avec un champ **Pièce jointe** est envoyé à un processus AEM qui utilise une étape **Affecter une tâche**, les pièces jointes n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont enregistrés correctement dans le référentiel et sont visibles dans CRX ; seule l’interface utilisateur de l’étape Affecter une tâche ne les affiche pas.
 
