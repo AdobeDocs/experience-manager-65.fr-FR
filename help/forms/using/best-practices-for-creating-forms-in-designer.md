@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
-workflow-type: ht
-source-wordcount: '11687'
-ht-degree: 100%
+source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+workflow-type: tm+mt
+source-wordcount: '11685'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Pour implémenter cette structure sous-jacente à l’aide de LiveCycle Designer
 
 Pour créer un formulaire accessible, vous devez configurer les propriétés du formulaire de sorte que LiveCycle Designer génère des informations d’accessibilité lors de l’enregistrement de la conception de formulaire en tant que fichier PDF :
 1. Sélectionnez Fichier > Propriétés du formulaire.
-1. Sélectionnez l’onglet Enregistrer les options et, dans la zone PDF, assurez-vous que l’option Générer les informations d’accessibilité (balises) pour Acrobat est sélectionnée.
+1. Cliquez sur l’onglet Enregistrer les options et, dans la zone PDF, assurez-vous que l’option Générer les informations d’accessibilité (balises) pour Acrobat est sélectionnée.
 1. Cliquez sur OK.
 
 Dans LiveCycle Designer, cette option est sélectionnée par défaut.
@@ -130,7 +130,7 @@ Illustration 2 : **spécification d’un texte secondaire pour une image à l�
 Lorsque vous spécifiez un texte secondaire, tenez compte des points suivants :
 * Si l’objet image ou l’image numérisée contient des informations importantes pour le formulaire, créez du texte pour l’image dans la palette Accessibilité qui décrit l’objet et son objectif. Le texte du logo d’une société, par exemple, peut contenir les mots « logo de la société » et le nom de la société.
 * Si l’objet image contient des informations de couleur sémantique, incluez-les également dans la description. Une description d’un feu vert de circulation, par exemple, peut être « Transmission réussie » et la description d’un feu rouge peut être « Transmission échouée ».
-* Si vous utilisez des graphiques complexes, tels que des graphiques à barres, fournissez les informations dans une autre version accessible, telle qu’un tableau ou une description textuelle plus longue.
+* Si vous utilisez des graphiques complexes, tels que des graphiques en barres, fournissez les informations dans une autre version accessible, telle qu’un tableau ou une description textuelle plus longue.
 * Ne créez pas de descriptions de texte pour les images statiques qui ne sont utilisées que pour la décoration.
 * N’utilisez pas les données numérisées comme informations d’arrière-plan. Cela peut se produire lorsqu’un concepteur ou une conceptrice numérise un formulaire imprimé et utilise Adobe LiveCycle Designer pour ajouter de nouveaux champs au formulaire. Les lecteurs d’écran ne peuvent pas détecter les données numérisées dans cet état.
 
@@ -142,7 +142,7 @@ Points de contrôle connexes
 * Section 508 §1194.22
    * (a) Un équivalent textuel pour chaque élément non textuel doit être fourni (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément).
 * WCAG 1.0
-   * 1.1 Proposer un équivalent textuel pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, l’art ascii, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo (P1).
+   * 1.1 Proposer un équivalent textuel pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, l’art ASCII, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo (P1).
 * WCAG 2.0
    * 1.1.1 Contenu non textuel : tout contenu non textuel présenté à l’utilisateur ou à l’utilisatrice possède un texte secondaire qui remplit une fonction équivalente sauf dans les situations énumérées ci-dessous. (Niveau A)
 
@@ -320,7 +320,7 @@ L’ordre de lecture du formulaire comprend tous les objets statiques (texte et 
 
 L’ordre de tabulation par défaut est automatiquement créé lorsque vous enregistrez votre formulaire en tant que PDF balisé. Dans un premier temps, l’ordre de tabulation d’un formulaire est déterminé à partir de la position locale des objets, selon les règles suivantes :
 
-* Tous les objets sont triés de gauche à droite et de haut en bas (ordre local), en commençant par le coin supérieur gauche du formulaire.
+* Tous les objets sont organisés de gauche à droite et de haut en bas (ordre local), en commençant par le coin supérieur gauche du formulaire.
 * Tous les sous-formulaires que vous créez sont traités comme des unités autonomes et sont également navigables de gauche à droite et de haut en bas. Si deux sous-formulaires sont placés côte à côte et que chaque formulaire contient des objets, l’ordre de lecture parcourt tous les objets du premier sous-formulaire avant de passer au sous-formulaire suivant.
 
 Pour les formulaires simples (c’est-à-dire les formulaires avec une disposition de gauche à droite et de haut en bas), l’ordre de tabulation par défaut est généralement correct. Pour vérifier cela, vous devez examiner l’ordre de tabulation par défaut avant de publier votre formulaire. Vous pouvez rendre l’ordre de tabulation visible à l’aide de l’une des méthodes suivantes :
@@ -511,8 +511,8 @@ Recommandations pour l’utilisation des couleurs :
    * 2.2 Assurez-vous que les combinaisons de couleurs de premier plan et d’arrière-plan offrent un contraste suffisant lorsqu’elles sont affichées par une personne ayant un déficit visuel basé sur les couleurs ou sur un écran noir et blanc. [Priorité 2 pour les images, Priorité 3 pour le texte] (P2).
 * WCAG 2.0
    * 1.4.1 Utilisation de la couleur : la couleur n’est pas utilisée comme seul moyen visuel de transmettre des informations, d’indiquer une action, de demander une réponse ou de distinguer un élément visuel. (Niveau A)
-   * 1.4.3 Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants : (Niveau AAA)
-   * 1.4.6 Contraste (amélioré) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 7:1, sauf dans les cas suivants : (Niveau AAA)
+   * 1.4.3 Contraste (minimum) : La présentation visuelle du texte et des images du texte a un rapport de contraste d&#39;au moins 4,5:1, sauf dans les cas suivants : (niveau AA)
+   * 1.4.6 Contraste (amélioré) : La présentation visuelle du texte et des images du texte a un rapport de contraste d&#39;au moins 7:1, sauf dans les cas suivants : (niveau AAA)
 
 
 ## Fourniture de cellules d’en-tête pour les tableaux{#provide-heading-cells}
@@ -695,7 +695,7 @@ Pour les médias basés sur Flash, consultez ce [lien](/help/forms/using/best-pr
 * Section 508 §1194.22
    * (b) Des alternatives équivalentes à toute présentation multimédia doivent être synchronisées avec la présentation.
 * WCAG 1.0
-   * 1.1 Proposer un équivalent textuel pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, l’art ascii, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo (P1).
+   * 1.1 Proposer un équivalent textuel pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, l’art ASCII, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo (P1).
    * 1.3 Tant que les agents utilisateurs ne peuvent pas lire automatiquement à voix haute l’équivalent textuel d’une piste visuelle, fournissez une description auditive des informations importantes de la piste visuelle d’une présentation multimédia (P1).
    * 1.4 Pour toute présentation multimédia basée sur le temps (par exemple, un film ou une animation), synchronisez les alternatives équivalentes (par exemple, les sous-titres ou les descriptions auditives de la piste visuelle) avec la présentation (P1).
 * WCAG 2.0
@@ -715,11 +715,11 @@ Le contenu du formulaire est lu par les technologies d’assistance qui utilisen
 
 Si le texte (ou le texte secondaire) de vos formulaires est présenté dans plusieurs langues, vous devez identifier les zones de votre formulaire dans lesquelles un changement est effectué d’une langue à l’autre.
 
-Dans LiveCycle Designer, la définition de la langue principale est effectuée en définissant la propriété Paramètre régional du formulaire et la propriété Paramètre régional du sous-formulaire de niveau supérieur. Pour identifier les modifications apportées à la langue principale, modifiez la propriété Paramètre régional de tout objet qui utilise une langue autre que la langue du formulaire.
+Dans LiveCycle Designer, la définition de la langue principale est effectuée en définissant la propriété Paramètre régional du formulaire et la propriété Paramètre régional du sous-formulaire de niveau supérieur. Pour identifier les modifications apportées à la langue principale, modifiez la propriété Paramètres régionaux de tout objet qui utilise une langue autre que la langue du formulaire.
 
-Pour définir la propriété Paramètre régional d’un formulaire, procédez comme suit :
+Pour définir la propriété Paramètres régionaux d’un formulaire, procédez comme suit :
 1. Choisissez Fichier > Propriétés du formulaire, puis sélectionnez l’onglet Par défaut.
-2. Sélectionnez la langue appropriée pour le paramètre régional du formulaire (voir l’illustration 17).
+2. Sélectionnez la langue appropriée pour les paramètres régionaux du formulaire (voir l’illustration 17).
 3. Cliquez sur OK.
 
 ![Modification des paramètres régionaux du formulaire dans la boîte de dialogue Propriétés du formulaire](/help/forms/using/assets/image-17.png)
@@ -729,7 +729,7 @@ Illustration 17 : **modification des paramètres régionaux du formulaire dans
 Pour définir la propriété Paramètre régional du sous-formulaire de niveau supérieur ou d’un objet nécessitant une autre langue, procédez comme suit :
 1. Sélectionnez le sous-formulaire ou l’objet de niveau supérieur dans la vue de conception.
 1. Pour afficher la palette Objet, choisissez Fenêtre > Objet.
-1. Dans la palette Objet, sélectionnez l’onglet Champ, puis, dans la liste Paramètre régional, sélectionnez la langue à utiliser pour l’objet (voir l’illustration 18). Lorsque vous appliquez des paramètres régionaux différents à des objets, gardez à l’esprit que les objets situés dans les tableaux et les sous-formulaires reçoivent automatiquement les mêmes paramètres régionaux que le tableau et l’objet de sous-formulaire.
+1. Dans la palette Objet, sélectionnez l’onglet Champ, puis, dans la liste Paramètres régionaux, sélectionnez la langue à utiliser pour l’objet (voir l’illustration 18). Lorsque vous appliquez des paramètres régionaux différents à des objets, gardez à l’esprit que les objets situés dans les tableaux et les sous-formulaires reçoivent automatiquement les mêmes paramètres régionaux que le tableau et l’objet de sous-formulaire.
 
 ![Modification des paramètres régionaux d’un objet](/help/forms/using/assets/image-18.png)
 
