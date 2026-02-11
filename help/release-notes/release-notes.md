@@ -676,7 +676,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
    2. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Redémarrez votre serveur AEM.
 
-* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
 
 * Les connecteurs de modèle de données de formulaire peuvent ne pas s’authentifier, car les mots-clés requis et le modèle RegEx ne sont pas autorisés par défaut. Pour résoudre le problème, ajoutez les éléments suivants via Configuration Manager (`/system/console/configmgr`) :
 
@@ -685,7 +685,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Après la mise à niveau vers **AEM Forms6.5.24.0**, `server.log` et `error.log` peuvent être inondés de messages WARN répétés tels que *Échec de la création de la fabrique d&#39;analyseur sécurisé* ou *Attribut de sécurité... n&#39;est pas pris en charge*. Les journaux peuvent augmenter d’environ **5 à 10 lignes par seconde** (des centaines de Mo par heure), ce qui peut remplir le disque et bloquer le déploiement en production. **Correctif :** inclus dans les **6.5.25.0** AEM Forms. **jusque-là :**
 
