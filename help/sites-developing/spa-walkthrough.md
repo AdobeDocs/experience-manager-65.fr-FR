@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
+source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 100%
 
