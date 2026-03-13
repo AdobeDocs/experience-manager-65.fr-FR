@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 1420f4ee543940b0b95f887d14f9318862219238
+source-git-commit: cd71ed5d9516d330685afee29a86d530a10303aa
 workflow-type: tm+mt
-source-wordcount: '9765'
+source-wordcount: '9811'
 ht-degree: 19%
 
 ---
@@ -666,7 +666,7 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 
 Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
 
-<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+* **FORMS-23881** Sur les déploiements AEM Forms JEE configurés à l’aide du programme d’installation complet 6.5.23.0, le service Output ne parvient pas à traiter les requêtes lorsqu’un fichier XCI personnalisé est fourni dans l’appel. Pour résoudre ce problème, installez le dernier pack de services AEM 6.5.24.0 Forms à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 * **FORMS-23789** (AEM Forms on JEE uniquement) : les utilisateurs ont rencontré des problèmes avec Log4j dans le SP24 d’AEM Forms on JEE, ce qui a entraîné des perturbations de la journalisation et de la surveillance pour les clients Grands comptes. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM Forms sur JEE 6.5.24.0.
 
@@ -694,7 +694,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
    2. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Redémarrez votre serveur AEM.
 
-* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
 
 * **Les connecteurs de modèle de données de formulaire GRANITE-63681** peuvent ne pas s’authentifier, car les mots-clés requis et le modèle RegEx ne sont pas autorisés par défaut. Pour résoudre ce problème, téléchargez et installez le correctif à partir du [lien](/help/release-notes/aem-forms-hotfix.md).
 
@@ -705,7 +705,7 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers le module complémentaire [Forms le plus récent) pour 6.5.24.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers le module complémentaire [Forms le plus récent) pour 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Après la mise à niveau vers **AEM Forms6.5.24.0**, `server.log` et `error.log` peuvent être inondés de messages WARN répétés tels que *Échec de la création de la fabrique d&#39;analyseur sécurisé* ou *Attribut de sécurité... n&#39;est pas pris en charge*. Les journaux peuvent augmenter d’environ **5 à 10 lignes par seconde** (des centaines de Mo par heure), ce qui peut remplir le disque et bloquer le déploiement en production.
 
@@ -725,7 +725,7 @@ Les documents texte suivants répertorient les lots OSGi et les modules de conte
 Ces sites web sont disponibles uniquement pour les clientes et clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
