@@ -5,7 +5,7 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
@@ -71,7 +71,7 @@ L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
