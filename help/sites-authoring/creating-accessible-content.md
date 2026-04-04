@@ -235,7 +235,7 @@ Les détails exacts de la création de vidéos avec description audio ne font pa
 * [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/fr/products/encore.html) - a DVD authoring software tool
 -->
 
 ### Sous-titres (en direct) (1.2.4)  {#captions-live}
