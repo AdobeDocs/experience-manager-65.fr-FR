@@ -32,7 +32,7 @@ Avant d’utiliser le service de contenu dynamique, vérifiez les points suivant
 * [Intégration à la console Adobe Developer](#integrate-adobe-io).
 * [Entraînement du service de contenu dynamique](#training-the-smart-content-service)
 
-* Installez le dernier pack de services [[!DNL Experience Manager] ](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
+* Installez le dernier pack de services [[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ## Mise à niveau SCS pour la prise en charge d’OAuth pour Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
