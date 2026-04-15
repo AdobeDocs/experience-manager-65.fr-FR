@@ -6,7 +6,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 385803015a09a11bcc97fed979d529d85f7facb8
+source-git-commit: 73a5a49cdbdae320c2f33a0516c74e1c7c72c644
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 92%
@@ -18,7 +18,7 @@ ht-degree: 92%
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | Cet article |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
 Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client. Voici quelques exemples de ce que vous pouvez faire après l’intégration d’un formulaire adaptatif à Microsoft® Power Automate :
 
@@ -27,7 +27,7 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Powe
 * Exécuter des calculs complexes sur les données capturées
 * Enregistrer des données de formulaires adaptatifs dans les systèmes de stockage selon un planning prédéfini
 
-L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance de création AEM Forms à Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate).
+L’éditeur de formulaires adaptatifs fournit l’action d’envoi **Appeler un flux Microsoft® Power Automate** pour envoyer des données de formulaires adaptatifs et des pièces jointes, et un document d’enregistrement est envoyé au flux de cloud Power Automate. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [connectez votre instance de création AEM Forms à Microsoft® Power Automate](#connect-forms-server-with-power-automate).
 
 ## Conditions préalables
 
@@ -121,9 +121,9 @@ Votre instance de création AEM Forms est maintenant connectée à Microsoft® 
 
 >[!IMPORTANT]
 >
->Les jetons utilisés pour la connexion de Microsoft® Power Automate expirent après 90 jours.
+>Les jetons utilisés pour la connexion de ® Power Automate expirent après 90 jours.
 >
-> Pour que l’intégration continue à fonctionner, réauthentifiez et republiez les configurations cloud du Dataverse de Microsoft® Power Automate et du service de flux de Microsoft® Power Automate avant ou après l’expiration du jeton, suivez les étapes décrites dans la section [Publication des configurations cloud du Dataverse de Microsoft® Power Automate et du service de flux de Microsoft® Power Automate](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+> Pour que l’intégration continue à fonctionner, réauthentifiez et republiez les configurations cloud du Dataverse de ® Power Automate et du service de flux de Microsoft® Power Automate avant ou après l’expiration du jeton, suivez les étapes décrites dans la section [Publication des configurations cloud du Dataverse de Microsoft® Power Automate et du service de flux de Microsoft® Power Automate](#publish-microsoft-power-automate-dataverse-cloud-configuration).
 >
 > Pour plus d’informations sur les politiques de durée de vie des jetons, consultez la documentation de Microsoft Entra [sur les durées de vie des jetons configurables](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Si le jeton n’est pas renouvelé, les envois de formulaire à Power Automate peuvent échouer.
 
