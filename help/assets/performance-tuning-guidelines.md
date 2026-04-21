@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2721'
 ht-degree: 99%
 
 ---
@@ -144,7 +144,7 @@ Dans la mesure du possible, définissez le workflow [!UICONTROL Ressource de mis
 
 Lorsque les workflows temporaires ne peuvent pas être utilisés, exécutez régulièrement la purge des workflows afin de supprimer les workflows archivés [!UICONTROL Mise à jour de la ressource DAM], et ainsi éviter toute dégradation des performances du système.
 
-En règle générale, exécutez les workflows de purge une fois par semaine. Toutefois, dans les scénarios qui requièrent un important nombre de ressources, comme l’assimilation de ressources à grande échelle, vous pouvez l’exécuter plus fréquemment.
+En règle générale, exécutez les workflows de purge une fois par semaine. Toutefois, dans les scénarios qui requièrent un important nombre de ressources, comme l’ingestion de ressources à grande échelle, vous pouvez l’exécuter plus fréquemment.
 
 Pour configurer la purge des workflows, ajoutez une nouvelle configuration de purge de workflow d’Adobe Granite via la console OSGi. Ensuite, configurez et planifiez le workflow dans le cadre de la fenêtre de maintenance hebdomadaire.
 
@@ -221,7 +221,6 @@ L’écriture différée XMP met à jour les ressources d’origine chaque fois 
 
 * La ressource elle-même est modifiée.
 * Une nouvelle version de la ressource est créée
-* La [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] est exécutée par rapport à la ressource.
 
 Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la désactivation de l’écriture différée XMP si elle n’est pas obligatoire. Pour en savoir plus, consultez la page [Écriture différée XMP](/help/assets/xmp-writeback.md).
 
