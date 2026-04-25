@@ -85,6 +85,6 @@ Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experien
 ## En savoir plus {#learn-more}
 
 * [Fluid Experiences pour les cas d’utilisation découplée](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=fr)
-* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [AEM Content Service : quoi, pourquoi et comment ?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=fr)
 * [FAQ sur l’accès tiers](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=fr)
-* [Utilisation des API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [Utilisation des API Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=fr#sling-models)

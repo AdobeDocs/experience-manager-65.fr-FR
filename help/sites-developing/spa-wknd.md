@@ -25,6 +25,6 @@ Plongez dans le développement de SPA en suivant ce tutoriel en plusieurs partie
 Pour obtenir un exemple complet de création de votre propre application monopage modifiable avec AEM, en commençant par la configuration du projet jusqu’au routage de l’application, reportez-vous aux Tutoriels sur les applications monopages WKND :
 
 * [Prise en main de l’Éditeur de SPA d’AEM et d’Angular](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview)
-* [Prise en main de l’Éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2?lang=fr)
+* [Prise en main de l’Éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/how-to/react-core-components-v2?lang=fr)
 
 Toutefois, avant de vous engager dans votre propre projet de SPA pour AEM, vous pouvez également consulter le document [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md).
