@@ -10,10 +10,10 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
@@ -34,13 +34,13 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
 1. Existe-t-il des restrictions concernant l’utilisation de sous-formulaires répétables ?
 
-   Réponse : les sous-formulaires répétables doivent avoir un nombre initial de 1 ou plus. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et de ne pas l’afficher au chargement du formulaire. Pour réaliser le cas d’utilisation : 
+   Réponse : les sous-formulaires répétables doivent avoir un nombre initial de 1 ou plus. Les sous-formulaires répétables avec un nombre initial de zéro ne sont pas pris en charge. Vous pouvez également choisir d’utiliser un sous-formulaire répétable et de ne pas l’afficher au chargement du formulaire. Pour réaliser le cas d’utilisation :
 
    1. Définissez le nombre initial de sous-formulaire répétable sur 1.
 
       ![intial-count](assets/intial-count.png)
 
-   1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client : 
+   1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client :
 
       ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
@@ -112,9 +112,9 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : oui, les formulaires HTML5 sont soumis à certaines limitations. Si le nombre de chiffres dépasse celui indiqué dans la clause d’image, les numéros ne sont pas traduits et s’affichent dans les paramètres régionaux anglais.
 
-1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
+1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   Réponse : De nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
+   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, ainsi que des objets. Acrobat prend également en charge la disposition et les scripts.
 
@@ -158,10 +158,12 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
    Réponse : lorsqu’un sous-formulaire peut enchaîner un contenu et qu’il présente un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
 
    ```xml
-               <!--<border>
+               <!--
+               <border>
                   <edge presence="hidden"/>
                   <corner thickness="0.175mm" presence="hidden"/>
-               </border> -->
+               </border>
+               -->
    ```
 
 1. Pourquoi les lecteurs d’écran ne fonctionnent-ils pas correctement avec l’objet de champ Date/Heure ?

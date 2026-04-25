@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2857'
-ht-degree: 100%
+source-wordcount: '2879'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour
 
 >[!CAUTION]
 >
->Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, en particulier son contenu et son style, les composants d’e-mail fournis prêts-à-l’emploi par AEM ne sont que rarement réutilisés par les clients car ils ont besoin d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
 >Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 
@@ -66,7 +66,7 @@ Vous pouvez configurer les éléments suivants :
 Si vous souhaitez utiliser un autre nom que le titre de la page, saisissez-le ici.
 
 * **Niveau de titre (1, 2, 3, 4)**
-Niveau de titre d’après la catégorie de titre HTML 1-4.
+Niveau de titre basé sur les tailles de titre HTML 1 à 4.
 
 L’exemple ci-dessous présente le composant Titre (Campaign) affiché.
 
@@ -78,7 +78,7 @@ Le composant image (campagne) affiche une image et le texte qui l’accompagne s
 
 Vous pouvez charger une image, puis la modifier et la manipuler (par exemple, la recadrer, la faire pivoter ou y ajouter un lien/titre/texte).
 
-Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui) directement sur le composant ou sa [boîte de dialogue Configurer](/help/sites-authoring/editing-content.md#editconfigurecopycutdeletepastetouchoptimizedui). Vous pouvez également charger une image à partir de la boîte de dialogue Configurer ; celle-ci contrôle également toutes les définitions, ainsi que la manipulation de l’image :
+Vous pouvez faire glisser et déposer une image à partir de l’[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui) directement sur le composant ou sa [boîte de dialogue de configuration](/help/sites-authoring/editing-content.md#editconfigurecopycutdeletepastetouchoptimizedui). Vous pouvez également télécharger une image à partir de la boîte de dialogue de configuration. Cette boîte de dialogue contrôle également toutes les définitions et la manipulation de l’image :
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -92,7 +92,7 @@ Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification s
 
 >[!NOTE]
 >
->L’éditeur statique utilise la taille et les proportions d’origine de l’image lors de l’édition. Vous pouvez également spécifier des propriétés de hauteur et de largeur. Toute restriction de taille et de proportion définie dans les propriétés est appliquée lorsque vous enregistrez vos modifications.
+>L’éditeur statique utilise la taille et les proportions d’origine de l’image lors de la modification. Vous pouvez également définir les propriétés de hauteur et de largeur. Toutes les restrictions de taille et de format définies dans les propriétés sont appliquées lorsque vous enregistrez vos modifications.
 >
 >Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
 
@@ -102,34 +102,34 @@ Différentes autres options sont disponibles en mode Plein écran. Par exemple, 
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
-* **Mapper**
-Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
+* **Map**
+Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
 
 * **Recadrer**
-Sélectionnez cette option pour recadrer une image à l’aide de la souris.
+Sélectionnez Recadrer pour recadrer une image. Utilisez la souris pour effectuer le recadrage.
 
 * **Rotation**
-Pour faire pivoter une image, sélectionnez Rotation, à plusieurs reprises si nécessaire.
+Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
 
-* **Effacer**
-Permet de supprimer l’image actuelle.
+* **Clear**
+Supprimez l’image actuelle.
 
-* Barre de zoom (IU classique uniquement)
-Pour effectuer un zoom avant ou arrière sur l’image, utilisez le curseur situé sous l’image (au-dessus des boutons OK et Annuler).
+* Barre de zoom (classique uniquement)
+Pour effectuer un zoom arrière et avant sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
 * **Titre**
 Titre de l’image.
 
 * **Texte de remplacement**
-Texte de remplacement à utiliser lors de la création de contenu accessible.
+Texte secondaire à utiliser lors de la création de contenu accessible.
 
 * **Lier à**
-Créez un lien vers les ressources ou d’autres pages de votre site Web.
+Créez un lien vers les ressources ou d’autres pages de votre site web.
 
 * **Description**
 Description de l’image.
 
 * **Taille**
-Permet de définir la hauteur et la largeur de l’image.
+Définit la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -154,8 +154,8 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 * **Info-bulle du lien**
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
-* **LinkType**
-Dans la liste déroulante, sélectionnez une **URL personnalisée** ou un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+* **TypeLien**
+Dans la liste déroulante, choisissez entre une **URL personnalisée** et un **document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
@@ -212,28 +212,28 @@ Voir [Composant Image (Campaign)](#image-campaign) pour plus d’informations su
 Comme pour les composants Texte et personnalisation (Campaign) et Image (Campaign), vous pouvez configurer :
 
 * **Texte**
-Permet de saisir du texte. Utilisez la barre d’outils pour modifier la mise en forme, créer des listes et ajouter des liens.
+Saisissez le texte. Utilisez la barre d’outils pour modifier la mise en forme, créer des listes et ajouter des liens.
 
 * **Image**
-Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Vous pouvez la recadrer ou la faire pivoter le cas échéant.
+Faites glisser une image à partir de l’outil de recherche de contenu ou cliquez pour accéder à une image. Recadrez ou faites pivoter selon les besoins.
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
-Permet de spécifier ce qui suit :
+Permet de spécifier les éléments suivants :
 
    * **Titre**
-Titre du bloc ; il s’affiche lorsque l’utilisateur ou l’utilisatrice pointe dessus avec la souris.
+Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
 
    * **Texte de remplacement**
-Texte de remplacement à afficher lorsque l’image ne peut pas être affichée.
+Texte secondaire à afficher si l’image ne peut pas être affichée.
 
    * **Lier à**
-Créez un lien vers les ressources ou d’autres pages de votre site Web.
+Créez un lien vers les ressources ou d’autres pages de votre site web.
 
    * **Description**
 Description de l’image.
 
    * **Taille**
-Permet de définir la hauteur et la largeur de l’image.
+Définit la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -317,12 +317,12 @@ Le tableau suivant décrit les composants disponibles pour afficher et modifier 
   <tr>
    <td><p>Champ numérique (Campaign)</p> </td>
    <td><p>numérique (octet, court, long, double)</p> </td>
-   <td><p>Âge</p> </td>
+   <td><p>Age</p> </td>
   </tr>
   <tr>
-   <td><p>Champ d’option (Campaign)</p> </td>
+   <td><p>Champ d'option (Campaign)</p> </td>
    <td><p>octet avec valeurs associées</p> </td>
-   <td><p>Genre</p> </td>
+   <td><p>Sexe</p> </td>
   </tr>
   <tr>
    <td><p>Champ de texte (Campaign)</p> </td>
@@ -346,20 +346,20 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 Si vous souhaitez utiliser un autre nom que le nom de l’élément, saisissez-le ici.
 
 * **Masquer le titre**
-Cochez cette case si vous ne voulez pas afficher le titre.
+Cochez cette case si vous ne souhaitez pas afficher le titre.
 
 * **Description**
-Ajoutez une description dans ce champ pour donner des informations supplémentaires pour les utilisateurs.
+Ajoutez une description dans le champ pour fournir des informations supplémentaires pour les utilisateurs.
 
-* **N’afficher que la valeur**
+* **Afficher uniquement la valeur**
 Affiche uniquement la valeur, le cas échéant.
 
 #### Adobe Campaign {#adobe-campaign}
 
 Vous pouvez configurer les éléments suivants :
 
-* **Correspondance**
-Sélectionnez un champ de personnalisation Adobe Campaign, si cela est approprié.
+* **Mappage**
+Sélectionnez un champ de personnalisation Adobe Campaign, le cas échéant.
 
 * **Clé de réconciliation**
 Cochez cette case si ce champ fait partie de la clé de réconciliation.
@@ -376,7 +376,7 @@ Cochez cette case si ce champ fait partie de la clé de réconciliation.
 #### Style {#styling}
 
 * **CSS**
-Indiquez les classes CSS à utiliser pour ce composant.
+Saisissez les classes CSS à utiliser pour ce composant.
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -396,8 +396,8 @@ Utilisez le champ date pour permettre aux personnes destinataires d’indiquer u
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* Liste déroulante **Contraintes – Contrainte**
-Vous pouvez sélectionner **Aucune** ou **Date** pour ajouter une contrainte de date ou aucune contrainte. Si vous sélectionnez Date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
+* Liste déroulante **Contraintes - Contrainte**
+Vous pouvez sélectionner - **Aucune** ou **Date -** pour ajouter une contrainte de date ou aucune contrainte. Si vous sélectionnez Date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
 * **Style – Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes « **+** » et « **-** » ou saisissez un nombre.
@@ -448,7 +448,7 @@ Utilisez le champ numérique pour permettre aux personnes destinataires de saisi
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* Liste déroulante **Contraintes – Contrainte**
+* Liste déroulante **Contraintes - Contrainte**
 Vous pouvez sélectionner - **Aucune** ou **Numérique -** pour ajouter une contrainte de nombre ou aucune contrainte. Si vous sélectionnez Numérique, la réponse saisie par les utilisateurs dans le champ doit être numérique.
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
@@ -492,8 +492,8 @@ Le composant Champ de texte (Campaign) qui vous permet de saisir des données de
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* Liste déroulante **Contraintes – Contrainte**
-Vous pouvez sélectionner - **Aucune,** **E-mail** ou **Nom** (pas de trémas) - pour ajouter une contrainte d’adresse électronique, de nom ou aucune contrainte. Si vous sélectionnez l’option E-mail, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
+* Liste déroulante **Contraintes - Contrainte**
+Vous pouvez sélectionner - **Aucune** **E-mail** ou **Nom** (pas de trémas) - pour ajouter une contrainte d’adresse électronique, de nom ou aucune contrainte. Si vous sélectionnez l’option E-mail, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
 * **Style – Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes « **+** » et « **-** » ou saisissez un nombre.

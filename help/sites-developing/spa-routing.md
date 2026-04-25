@@ -1,5 +1,5 @@
 ---
-title: 'Routage du modèle de SPA '
+title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '468'
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '479'
 ht-degree: 100%
 
 ---
 
 
-# Routage du modèle de SPA {#spa-model-routing}
+# Routage du modèle de SPA{#spa-model-routing}
 
 Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 

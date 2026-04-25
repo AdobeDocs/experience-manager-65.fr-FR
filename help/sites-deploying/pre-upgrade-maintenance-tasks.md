@@ -10,10 +10,10 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '1991'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,8 @@ Toutes les tâches incluses dans l’étape d’optimisation avant la mise à ni
 
 Dans AEM version 6.3 et ultérieure, les tâches d’optimisation de la maintenance avant la mise à niveau sont incluses dans le fichier jar de démarrage rapide.
 
-<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
+<!--
+URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
 If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
@@ -84,13 +85,14 @@ You can find the packages at these locations:
 
 * [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+-->
 
 ### Utilisation {#how-to-use-it}
 
 Le composant OSGi `PreUpgradeTasksMBean` est préconfiguré avec une liste de tâches de maintenance bénéficiant déjà de la mise à niveau, pouvant toutes être exécutées simultanément. Vous pouvez configurer les tâches en suivant la procédure ci-dessous :
 
-1. Accédez à la console web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*
 
 1. Recherchez « **preupgradetasks** », puis cliquez sur le premier composant correspondant. Le nom complet du composant est `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -165,7 +167,7 @@ La fonctionnalité Bean gérée est accessible à l’aide de la [console JMX](/
 
 Vous pouvez accéder aux MBeans en procédant comme suit :
 
-1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*.
+1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*
 1. Recherchez **PreUpgradeTasks** et cliquez sur le résultat.
 
 1. Sélectionnez une méthode à partir de la section **Opérations** et sélectionnez **Invoquer** dans la fenêtre suivante.
@@ -266,7 +268,8 @@ Pour désactiver les modules personnalisés définis dans la configuration JAAS 
                      <param name = "adminId" value ="admin" />
                      <param name = "disableNTLMAuth" value = "true" />
                      <param name = "tokenExpiration" value = "43200000" />
-                     <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
+                     <!--
+param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
                 -->
                  </LoginModule >
          </ Security>

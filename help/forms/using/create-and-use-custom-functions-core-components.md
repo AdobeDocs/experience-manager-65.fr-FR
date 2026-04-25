@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
-workflow-type: ht
-source-wordcount: '3385'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -157,11 +157,11 @@ Le type de retour spécifie le type de valeur que la fonction personnalisée ren
 * Chaîne : représente une seule valeur de chaîne.
 * Nombre : représente une seule valeur numérique.
 * Booléen : représente une seule valeur booléenne (true ou false).
-* string[] : représente un tableau de valeurs de chaîne.
-* number[] : représente un tableau de valeurs numériques.
-* boolean[] : représente un tableau de valeurs booléennes.
+* Chaîne[] : représente un tableau de valeurs de chaîne.
+* Nombre[] : représente un tableau de valeurs numériques.
+* Booléen[] : représente un tableau de valeurs booléennes.
 * Date : représente une seule valeur de date.
-* date[] : représente un tableau de valeurs de date.
+* Date[] : représente un tableau de valeurs de date.
 * array : représente un tableau générique contenant des valeurs de différents types.
 * object : représente l’objet de formulaire au lieu de sa valeur directement.
 
@@ -346,8 +346,8 @@ Avant de commencer à ajouter une fonction personnalisée aux formulaires adapta
 ## Création d’une fonction personnalisée {#create-custom-function}
 
 Les étapes de création de fonctions personnalisées sont les suivantes :
-1. [Créez une bibliothèque côté client à l’aide de l’archétype de projet AEM et ajoutez une fonction personnalisée,](#create-client-library-archetype)
-OU
+1. [Créer une bibliothèque côté client à l’aide de l’archétype de projet AEM et ajouter une fonction personnalisée](#create-client-library-archetype)
+SOIT
    [Créez des fonctions personnalisées via CRXDE.](#create-add-custom-function)
 1. [Ajout d’une bibliothèque cliente à un formulaire adaptatif](#add-client-library)
 1. [Utilisation d’une fonction personnalisée dans un formulaire adaptatif](#use-custom-functions)
@@ -530,7 +530,7 @@ Une fois que vous avez déployé votre bibliothèque cliente dans votre environn
 
 Vous pouvez maintenant créer une règle pour utiliser des fonctions personnalisées dans l’éditeur de règles :
 
-![Ajout de la bibliothèque cliente de fonction personnalisée](/help/forms/using//assets/calculateage-customfunction.png)
+![Ajout de la bibliothèque cliente de fonctions personnalisées](/help/forms/using//assets/calculateage-customfunction.png)
 
 Maintenant, apprenons comment configurer et utiliser une fonction personnalisée à l’aide du [service d’appel de l’éditeur de règles dans AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke).
 
@@ -633,7 +633,8 @@ Les objets Field font référence aux composants ou éléments individuels d’u
 >
 > Le paramètre `param {scope} globals` doit être le dernier paramètre et il ne s’affiche pas dans l’éditeur de règles d’un formulaire adaptatif.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -653,7 +654,8 @@ Les objets Field font référence aux composants ou éléments individuels d’u
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Découvrez comment les fonctions personnalisées utilisent des objets Field et Globals à l’aide d’un formulaire `Contact Us` utilisant différents cas d’utilisation.
 
@@ -816,8 +818,8 @@ Si l’utilisateur ou l’utilisatrice saisit plus de 15 caractères dans la zo
 
 #### **Cas d’utilisation** : envoyer des données modifiées au serveur
 
-La ligne de code suivante :
-`globals.functions.submitForm(globals.functions.exportData(), false);` est utilisée pour envoyer les données de formulaire après la manipulation.
+La ligne de code suivante :
+`globals.functions.submitForm(globals.functions.exportData(), false);` est utilisé pour envoyer les données de formulaire après manipulation.
 * Le premier argument est celui des données à envoyer.
 * Le deuxième argument indique si le formulaire doit être validé avant envoi. Il est `optional` et est défini sur `true` par défaut.
 * Le troisième argument est le `contentType` de l’envoi, qui est également facultatif avec la valeur par défaut `multipart/form-data`. Les autres valeurs peuvent être `application/json` et `application/x-www-form-urlencoded`.

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '2387'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '2476'
+ht-degree: 99%
 
 ---
 
@@ -374,7 +374,7 @@ Le composant RemotePage s’attend à ce que l’implémentation fournisse un m
 Les documents de référence suivants peuvent être utiles pour comprendre le fonctionnement des SPA dans le contexte d’AEM.
 
 * [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
-* [Projet de SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr)
+* [Le projet SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr)
 * [Prise en main des SPA dans AEM avec React](spa-getting-started-react.md)
 * [Documents de référence relatifs aux SPA (référence de l’API)](spa-reference-materials.md)
 * [Plan directeur d’applications sur une seule page (SPA) et PageModelManager](spa-blueprint.md#pagemodelmanager)

@@ -8,18 +8,18 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 98%
 
 ---
 
-# Prévisualisation de ressources 3D dans Adobe Experience Manager  {#previewing-3d-assets-aem}
+# Prévisualisation de ressources 3D dans Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
@@ -28,7 +28,7 @@ La visionneuse 3D interactive est disponible dans la page de détails de la res
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formats pris en charge pour la prévisualisation 3D dans Experience Manager  {#supported-3d-previewing-assets}
+## Formats pris en charge pour la prévisualisation 3D dans Experience Manager {#supported-3d-previewing-assets}
 
 L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
@@ -38,8 +38,8 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 | GLTF | Format de transmission GL | model/gltf+json | Consultez **la remarque** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif | |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl | |
-| DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
+| DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’ingestion uniquement, prévisualisation non disponible. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’ingestion uniquement, prévisualisation non disponible. |
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considérations de performance lors de la prévisualisation de ressources 3D dans Experience Manager {#performance-3d-previewing-assets}
+## Considérations de performance lors de la prévisualisation de ressources 3D dans Experience Manager{#performance-3d-previewing-assets}
 
 Le temps d’ouverture d’un fichier 3D dans la page d’affichage des détails du fichier dépend de plusieurs facteurs, tels que la bande passante, la complexité de l’image et les latences sur le serveur.
 
@@ -68,12 +68,12 @@ Consultez les sections [Formats pris en charge pour la prévisualisation 3D](#su
 
 1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, sélectionnez **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
-   ![Sélection de carte 3D](/help/assets/assets-dm/3d-card-select.png)
+   Sélection de carte ![3D](/help/assets/assets-dm/3d-card-select.png)
    _En mode Carte, sélectionnez la carte du fichier 3D à prévisualiser._
 
 1. Sélectionnez la carte de la ressource 3D.
 
-   ![Prévisualisation 3D interactive](/help/assets/assets-dm/3d-preview.png)
+   ![Aperçu 3D interactif](/help/assets/assets-dm/3d-preview.png)
    _Prévisualisation interactive d’un fichier 3D dans la page d’affichage des détails du fichier._
 1. Sur la page d’affichage des détails de la ressource 3D, effectuez l’une des opérations suivantes :
 

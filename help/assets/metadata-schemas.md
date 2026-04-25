@@ -8,10 +8,10 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 100%
+source-wordcount: '3637'
+ht-degree: 97%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les entreprises disposent d’un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est sacro-sainte pour gérer les workflows et les processus pilotés par les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner sur celles-ci. [!DNL Adobe Experience Manager] Met à disposition des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
+Les entreprises disposent d’un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est sacro-sainte pour gérer les workflows et les processus pilotés par les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs et utilisatrices de la gestion des actifs numériques à s’aligner sur celles-ci. [!DNL Adobe Experience Manager] Met à disposition des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
 Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs spécifiques pour renseigner des informations spécifiques. Il contient également des informations de mise en page pour afficher les champs de métadonnées de manière conviviale. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc. Vous pouvez utiliser l’éditeur de [!UICONTROL formulaires de schéma de métadonnées] pour modifier des schémas existants ou ajouter des schémas de métadonnées personnalisés.
 
@@ -44,14 +44,14 @@ Pour afficher et modifier la page des propriétés d’une ressource, procédez 
 
 Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 
-[!DNL Experience Manager] fournit les modèles de formulaire de schéma de métadonnées suivants.
+[!DNL Experience Manager] fournit les modèles de formulaires de schéma de métadonnées suivants.
 
 | Modèles | | Description |
 |---|---|---|
 | [!UICONTROL default] | | Le formulaire de schéma de métadonnées de base pour les ressources |
 | | Les formulaires enfants suivants héritent des propriétés du formulaire par [!UICONTROL défaut] : | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulaire de schéma pour les vidéos Dynamic Media. |
-| | <ul><li>[!UICONTROL image]</li></ul> | Formulaire de schéma pour les images dotées d’un type MIME telles que `image/jpeg` et `image/png` <br>Le formulaire [!UICONTROL image] possède les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : formulaire de schéma pour les ressources avec le sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : formulaire de schéma pour les ressources avec le sous-type TIFF.</li></ul> |
+| | <ul><li>[!UICONTROL image]</li></ul> | Formulaire de schéma pour les images dotées d’un type MIME telles que `image/jpeg` et `image/png`. <br> Le formulaire [!UICONTROL image] a les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg] : formulaire de schéma pour les ressources avec le sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff] : formulaire de schéma pour les ressources avec le sous-type TIFF.</li></ul> |
 | | <ul><li>[!UICONTROL l’application ;]</li></ul> | Formulaire de schéma pour les ressources dotées du type MIME, par exemple `application/pdf` et `application/zip` <br>[!UICONTROL pdf] : formulaire de schéma pour les ressources avec le sous-type PDF. |
 | | <ul><li>[!UICONTROL vidéo]</li></ul> | Formulaire de schéma pour les ressources vidéo dotées d’un type MIME telles que `video/avi` et `video/mp4` |
 | [!UICONTROL collection] | | Formulaire de schéma pour les collections |
@@ -92,14 +92,14 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 | Nom du composant | Description |
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL En-tête de section] | Permet d’ajouter un en-tête de section pour une liste de composants communs. |
-| [!UICONTROL Une seule ligne de texte] | Permet d’ajouter une propriété d’une seule ligne de texte. Il est stocké sous la forme d’une chaîne. |
-| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous forme de tableau de chaînes. |
+| [!UICONTROL Une seule ligne de texte] | Ajoutez une propriété de texte monoligne. Elle est stockée sous la forme d’une chaîne. |
+| [!UICONTROL Texte à plusieurs valeurs] | Permet d’ajouter une propriété de texte à plusieurs valeurs. Il est stocké sous la forme d’une table de chaînes. |
 | [!UICONTROL Nombre] | Permet d’ajouter un composant de nombre. |
 | [!UICONTROL Date] | Permet d’ajouter un composant de date. |
 | [!UICONTROL Liste déroulante] | Permet d’ajouter une liste déroulante. |
 | [!UICONTROL Balises standard] | Permet d’ajouter une balise. |
 | [!UICONTROL Balises intelligentes] | Ajoutez ce composant pour augmenter les capacités de recherche en ajoutant automatiquement des balises de métadonnées. |
-| [!UICONTROL Champ masqué] | Permet d’ajouter un champ masqué. Il est envoyé en tant que paramètre POST lorsque la ressource est enregistrée. |
+| [!UICONTROL Champ masqué] | Ajoutez un champ masqué. Elle est envoyée en tant que paramètre POST lorsque la ressource est enregistrée. |
 | [!UICONTROL Ressource référencée par] | Ajoutez ce composant pour afficher la liste des ressources référencées par la ressource. |
 | [!UICONTROL Référencement des ressources] | Ajoutez ce composant pour afficher la liste des ressources qui référencent la ressource. |
 | [!UICONTROL Références du produit] | Ajoutez ce composant pour afficher la liste des produits liés à la ressource. |
@@ -125,7 +125,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 * **Espace réservé** : utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
 * **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire sur la page Propriétés.
 * **Désactiver la modification** : utilisez cette propriété pour interdire toute modification apportée à une propriété sur la page des propriétés.
-* **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
+* **Afficher le champ vide en lecture seule** : marquez cette propriété pour afficher une propriété de métadonnées sur la page des propriétés même si elle n’a aucune valeur. Par défaut, lorsqu’une propriété de métadonnées n’a pas de valeur, elle n’est pas répertoriée sur la page des propriétés.
 * **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix.
 * **Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
 * **Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
@@ -176,7 +176,7 @@ Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métad
 
 * Lorsque l’emplacement de l’utilisateur ou de l’utilisatrice est requis, afficher les noms de ville pertinents en fonction du pays de l’utilisateur ou l’utilisatrice.
 * Charger les noms de marque pertinents dans une liste en fonction du choix de catégorie de produits de l’utilisateur ou l’utilisatrice.
-* Activer/désactiver la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, afficher des champs d’adresse de livraison distincts si l’utilisateur ou l’utilisatrice demande un envoi à une autre adresse.
+* Activer/désactiver la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, afficher des champs d’adresse d’expédition distincts si l’utilisateur ou l’utilisatrice demande un envoi à une autre adresse.
 * Désigner un champ comme obligatoire en fonction de la valeur spécifiée dans un autre champ.
 * Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 * Définir la valeur de métadonnées par défaut dans un champ particulier en fonction de la valeur spécifiée dans un autre champ.
@@ -381,5 +381,6 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
    >
    >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur ne peut pas gérer la charge, essayez de désactiver cette tâche.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

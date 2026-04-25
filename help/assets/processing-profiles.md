@@ -10,10 +10,10 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 100%
+source-wordcount: '1398'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique à *Dynamic Media en mode Scene7* uniquement dans Experience Manager 6.4.6.0 ou une version ultérieure.
+>S’applique à *Dynamic Media en mode Scene7* uniquement dans Experience Manager 6.4.6.0 ou version ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -114,7 +114,7 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).
    * Dans le champ **[!UICONTROL Période]**, indiquez un intervalle d’interrogation (en secondes) pour tester la fin du processus externe.
    * Dans le champ **[!UICONTROL Taille du lot]**, saisissez le nombre maximum de ressources (entre 50 et 1 000) à traiter dans une tâche de chargement par lots du serveur Dynamic Media.
-   * Sélectionnez **[!UICONTROL Avancer sur dépassement de délai]** si vous souhaitez avancer à l’expiration du délai. Désélectionnez cette option si vous souhaitez passer à la boîte de réception à l’expiration du délai.
+   * Sélectionnez **[!UICONTROL Avancer sur une temporisation]** si vous souhaitez avancer lors du dépassement du délai d’expiration. Désélectionnez cette option si vous souhaitez passer à la boîte de réception lorsque le délai d’expiration est dépassé.
 
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
@@ -126,7 +126,8 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Retraitement Dynamic Media.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

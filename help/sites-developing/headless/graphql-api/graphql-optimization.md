@@ -5,10 +5,10 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 100%
+source-wordcount: '1993'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Il est vivement recommandé d’utiliser des requêtes GraphQL persistantes.
 
 Les requêtes GraphQL persistantes permettent de réduire les performances d’exécution des requêtes en utilisant le réseau de diffusion de contenu (CDN). Les applications clientes nécessitent des requêtes persistantes avec des requêtes GET pour une exécution rapide prenant en charge Edge.
 
-**Références supplémentaires**
+**Référence supplémentaire**
 
 Voir :
 
@@ -53,8 +53,8 @@ Consultez les notes de mise à jour pour connaître la version appropriée à vo
 >
 >N’installez ce package qu’une seule fois par instance ; il n’est pas nécessaire de le réinstaller avec chaque Pack de services.
 
-**Références supplémentaires**
-Voir :
+**Référence supplémentaire**
+Voir :
 
 * [Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package)
 
@@ -68,7 +68,7 @@ Plusieurs méthodes de mise en cache peuvent également être utilisées à des 
 
 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) est le cache de premier niveau dans le service AEM, avant le cache du réseau CDN.
 
-**Références supplémentaires**
+**Référence supplémentaire**
 
 Voir :
 
@@ -80,11 +80,11 @@ Voir :
 
 Les requêtes GraphQL et leurs réponses JSON peuvent être mises en cache si elles sont ciblées comme requêtes `GET` lors de l’utilisation d’un réseau CDN. En revanche, les requêtes non mises en cache peuvent être très coûteuses (en ressources) et lentes à traiter, avec des effets potentiellement néfastes supplémentaires sur les ressources de l’origine.
 
-**Références supplémentaires**
+**Référence supplémentaire**
 
 Voir :
 
-* [Utiliser le réseau CDN dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn)
+* [Utilisation du réseau CDN dans AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn)
 
 #### Définir des en-têtes de contrôle de cache HTTP {#set-http-cache-control-headers}
 
@@ -105,7 +105,8 @@ $ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+<!--
+or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache).
 -->
 
 **Référence supplémentaire**
@@ -182,12 +183,12 @@ Le temps de réponse des requêtes complexes, avec des jeux de résultats volumi
 
 GraphQL dans AEM prend en charge deux types de pagination :
 
-* [Pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Elle est utilisée pour les requêtes de liste qui se terminent par `List`, par exemple `articleList`.
+* [pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+Il est utilisé pour les requêtes de liste qui se terminent par `List`, par exemple `articleList`.
 Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (le `offset`) et le nombre d’éléments à renvoyer (la variable `limit`, ou la taille de la page).
 
-* La [pagination basée sur le curseur](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (représentée par `first`et `after`).
-Elle fournit un ID unique pour chaque élément ; également appelé curseur.
+* [pagination basée sur le curseur](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (représentée par `first` et `after`)
+Cette action fournit un identifiant unique pour chaque élément, également appelé curseur.
 Dans la requête, vous spécifiez le curseur du dernier élément de la page précédente, ainsi que la taille de la page (le nombre maximal d’éléments à renvoyer).
 
   Comme la pagination basée sur le curseur ne s’intègre pas dans les structures de données des requêtes basées sur des listes, AEM a introduit un type de requête `Paginated` ; par exemple : `articlePaginated`. Les structures et paramètres de données utilisés suivent la [Spécification de connexion du curseur GraphQL](https://relay.dev/graphql/connections.htm).

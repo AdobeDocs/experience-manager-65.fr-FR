@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
-ht-degree: 99%
+source-wordcount: '2152'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,8 @@ Les gestionnaires de médias sont des services d’[!DNL Assets] qui effectuent 
 
 Les gestionnaires de médias suivants sont disponibles dans [!DNL Assets] et gèrent les types MIME les plus courants :
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nom du gestionnaire | Nom du service (dans la console système) | Types MIME pris en charge |
@@ -123,7 +124,7 @@ Les méthodes suivantes doivent être implémentées :
 
 Voici un exemple de modèle :
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
+package my.own.trick; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=« true » &amp;ast; @scr.service &amp;ast;/ classe publique MyMediaHandler étend com.day.cq.dam.core.AbstractAssetHandler { // implémenter les parties pertinentes }
 
 L’interface et les classes sont les suivantes :
 

@@ -9,10 +9,10 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f749892bf7fba9889adfc930771178154b92fa5d
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '766'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe est heureux d’annoncer la disponibilité de HTTP/2 pour la diffusion de 
 >
 >Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
-## Qu’est-ce que le HTTP/2 ?  {#what-is-http}
+## Qu’est-ce que le HTTP/2 ? {#what-is-http}
 
 Le HTTP/2 améliore la communication entre les navigateurs et les serveurs, en accélérant le transfert d’informations tout en réduisant la puissance de traitement nécessaire.
 
@@ -32,7 +32,7 @@ Le site web suivant décrit le HTTP/2 et ses avantages de manière simple et rap
 
 [Ce que vous devez savoir sur le HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
-## Quels sont les principaux avantages de la transition vers le HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## Quels sont les principaux avantages de la transition vers le HTTP/2 pour la diffusion de contenu ? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 L’amélioration des performances peut varier considérablement. Elle repose sur de nombreux facteurs, tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du consommateur.
 
@@ -44,7 +44,8 @@ Les tests effectués par Adobe ont donné les résultats suivants :
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
@@ -58,11 +59,11 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
   Dans le cas contraire, Adobe programmera votre transition vers le HTTP/2 pour 2018.
 
-## Quel est le processus d’activation du HTTP/2 pour mon compte Dynamic Media ?  {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Quel est le processus d’activation du HTTP/2 pour mon compte Dynamic Media ? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédure n’est pas automatique.
 
-1. Pour passer au HTTP/2, envoyez une demande auprès de l’assistance clientèle d’Adobe. Voir [Ouverture d’un ticket d’assistance](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support).
+1. Pour passer au HTTP/2, envoyez une demande auprès de l’assistance clientèle d’Adobe. Voir [Ouverture d’un ticket d’assistance](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
 
    1. Indiquez les informations suivantes dans votre demande de support :
 
@@ -78,7 +79,7 @@ Pour basculer vers le HTTP/2, vous devez en faire la demande, car cette procédu
 
       Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 
-      Pour Firefox et Chrome, il existe une extension appelée « HTTP/2 and SPDY Indicator ». Les navigateurs ne prennent en charge le HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si le HTTP/2 est pris en charge, l’extension comprend un symbole Flash de couleur bleue et un en-tête `X-Firefox-Spdy` : `h2`.
+      Pour Firefox et Chrome, il existe une extension appelée « HTTP/2 and SPDY Indicator ». Les navigateurs ne prennent en charge le HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si le http/2 est pris en charge, l’extension l’indique. L’extension se présente sous la forme d’un symbole Flash bleu et d’un en-tête `X-Firefox-Spdy` : `h2`.
 
 ## Quand puis-je m’attendre à ce que la transition vers HTTP/2 se produise ? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

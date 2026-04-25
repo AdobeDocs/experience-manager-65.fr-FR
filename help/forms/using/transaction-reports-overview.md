@@ -8,16 +8,17 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '490'
 ht-degree: 100%
 
 ---
 
 # Rapports de transaction pour AEM Forms sur OSGi {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,7 +26,8 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
 L’enregistrement des transactions est désactivé par défaut. Vous pouvez [activer l’enregistrement des transactions](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) à partir de la console web d’AEM. Vous pouvez afficher les rapports de transaction sur les instances de création, de traitement ou de publication. Affichez les rapports de transaction sur les instances de création ou de traitement pour obtenir un total combiné de toutes les transactions. Affichez les rapports de transaction sur les instances de publication pour connaître le nombre de toutes les transactions qui ont lieu uniquement sur cette instance de publication à partir de laquelle le rapport est exécuté.
 

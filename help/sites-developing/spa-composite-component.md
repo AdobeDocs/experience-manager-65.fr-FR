@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '783'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -181,4 +181,4 @@ Si le contenu existe dans AEM, il peut être directement inclus dans la SPA en f
 
 ![Chemin composite dans la structure du nœud](assets/composite-path.png)
 
-Le composant `AEMCard` est identique à la valeur définie[ dans le cas d’utilisation précédent.](#content-does-not-exist) Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans la SPA.
+Le composant `AEMCard` est identique à la valeur définie [dans le cas d’utilisation précédent](#content-does-not-exist). Ici, le contenu défini à l’emplacement ci-dessus dans le projet AEM est inclus dans la SPA.

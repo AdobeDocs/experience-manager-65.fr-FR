@@ -8,10 +8,10 @@ feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 100%
+source-wordcount: '1494'
+ht-degree: 94%
 
 ---
 
@@ -28,8 +28,8 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 * [Bibliothèques clientes Adobe Analytics](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
 * [De Microsoft Word classique à la conception de pages web](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
 * [Configurations de l’émulateur d’appareil mobile](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#mobile-device-emulator-configurations)
-* [Configurations de plans directeurs de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
-* [Configurations du déploiement de Multi-site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
+* [Configurations de plans directeurs de Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
+* [Configurations du déploiement de Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
 * [Modèle d’e-mail de notification d’événement de page](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 * [Génération de modèles automatique de pages](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Grille réactive LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
@@ -53,15 +53,15 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Si des segments ContextHub nouveaux ou modifiés sont édités dans le contrôle de source plutôt que dans AEM, ils doivent être migrés vers le nouvel emplacement :</p>
     <ol>
      <li>Copiez les segments ContextHub nouveaux ou modifiés depuis l’emplacement précédent vers le nouvel emplacement approprié (/<code>apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</li>
      <li>Mettez à jour les références aux segments ContextHub de l’emplacement précédent vers les segments ContextHub migrés dans les nouveaux emplacements client (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-    </ol> <p>La requête QueryBuilder ci-dessous recherche toutes les références aux segments ContextHub dans les emplacements précédents.<br /> <br /> <code class="code">path=/content
+    </ol> <p>La requête QueryBuilder suivante recherche toutes les références aux segments ContextHub dans les emplacements précédents.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Elle peut être exécutée dans l’<a href="/help/sites-developing/querybuilder-api.md" target="_blank">interface utilisateur du débogueur QueryBuilder AEM</a>. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en exploitation et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Elle peut être exécutée via l’interface utilisateur <a href="/help/sites-developing/querybuilder-api.md" target="_blank">du débogueur QueryBuilder AEM</a>. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en exploitation et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -89,10 +89,10 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><code>/libs/cq/analytics/clientlibs/analytics</code></td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie, et non par chemin :</p>
     <ol>
-     <li>Toutes les références par chemin d’accès à l’emplacement précédent de la bibliothèque cliente doivent être mises à jour pour utiliser le <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">framework de référencement de la bibliothèque cliente d’AEM</a>.</li>
+     <li>Toutes les références à la bibliothèque client par chemin à l’emplacement précédent doivent être mises à jour pour utiliser le <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">framework de référencement de la bibliothèque client d’AEM</a>.</li>
      <li>Si le framework de référencement de la bibliothèque cliente d’AEM ne peut pas être utilisé, le chemin absolu des bibliothèques clientes peut être référencé via le servlet proxy de bibliothèque cliente d’AEM.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
@@ -104,7 +104,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td>
+   <td><strong>Notes</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud <code>cq:ClientLIbraryFolder</code> via CRXDELite et inspectez la propriété des catégories.</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
@@ -130,7 +130,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><p><code>/libs/settings/wcm/designs/wordDesign</code></p> <p><code>/apps/settings/wcm/designs/wordDesign</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Pour les conceptions gérées dans SCM et qui ne sont pas écrites au moment de l’exécution via les boîtes de dialogue de conception.</p>
     <ol>
      <li>Copiez les conceptions de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>).</li>
@@ -167,27 +167,27 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td>Toute nouvelle configuration d’émulateur d’appareil mobile doit être migrée vers le nouvel emplacement.
     <ol>
      <li>Copiez les nouvelles configurations d’émulateur d’appareil mobile de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d’émulateur d’appareil mobile, mettez à jour le nœud de la page <span class="code">
+     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d’émulateur d’appareil mobile, mettez à jour la <span class="code">
        <code>
         jcr
        </code>
        <code>
         :content
-       </code></span> : <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span> nœud : <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
      <li>Pour les modèles modifiables qui dépendent de ces configurations d’émulateur d’appareil mobile, mettez-les à jour, en faisant pointer <span class="code">
        <code>
         cq
-       </code> :
+       </code>:
        <code>
         deviceGroups
-       </code></span> sur le nouvel emplacement.</li>
+       </code></span> au nouvel emplacement.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td>
+   <td><strong>Notes</strong></td>
    <td><p>La résolution des configurations d’émulateur d’appareil mobile se produit dans l’ordre suivant :</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/mobile</code></li>
@@ -200,7 +200,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
  </tbody>
 </table>
 
-### Configurations de plans directeurs de Multi-site Manager {#multi-site-manager-blueprint-configurations}
+### Configurations de plans directeurs de Multi-Site Manager {#multi-site-manager-blueprint-configurations}
 
 <table>
  <tbody>
@@ -214,20 +214,20 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
   </tr>
   <tr>
    <td><strong>Conseils de restructuration</strong></td>
-   <td><p>Les configurations de plans directeurs de Multi-site Manager nouvelles ou modifiées doivent être migrées vers le nouvel emplacement (<code>/apps</code>).</p>
+   <td><p>Les configurations de plans directeurs de Multi-Site Manager nouvelles ou modifiées doivent être migrées vers le nouvel emplacement (<code>/apps</code>).</p>
     <ol>
-     <li>Copiez les configurations de plans directeurs de Multi-site Manager nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
-     <li>Supprimez les configurations de plans directeurs de Multi-site Manager migrées de l’emplacement précédent.</li>
+     <li>Copiez les configurations de plans directeurs de Multi-Site Manager nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
+     <li>Supprimez les configurations de plans directeurs de Multi-Site Manager migrées de l’emplacement précédent.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td><p>Toutes les configurations de plans directeurs de Multi-site Manager fournies par AEM existent dans le nouvel emplacement de <code>/libs</code>.</p> <p>Le contenu ne fait pas référence aux configurations de plans directeurs de Multi-site Manager, il n’y a donc pas de références de contenu à ajuster.</p> </td>
+   <td><p>Toutes les configurations de plans directeurs de Multi-Site Manager fournies par AEM existent dans le nouvel emplacement de <code>/libs</code>.</p> <p>Le contenu ne fait pas référence aux configurations de plans directeurs de Multi-site Manager, il n’y a donc pas de références de contenu à ajuster.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Configurations du déploiement de Multi-site Manager {#multi-site-manager-rollout-configurations}
+### Configurations du déploiement de Multi-Site Manager {#multi-site-manager-rollout-configurations}
 
 <table>
  <tbody>
@@ -240,16 +240,16 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><p><code>/libs/msm/wcm/rolloutconfigs</code></p> <p><code>/apps/msm/wcm/rolloutconfigs</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
-   <td><p>Toute configuration de déploiement de Multi-site Manager nouvelle ou modifiée doit être migrée vers le nouvel emplacement.</p>
+   <td><strong>Conseil de restructuration</strong></td>
+   <td><p>Toute configuration de déploiement de Multi-Site Manager nouvelle ou modifiée doit être migrée vers le nouvel emplacement.</p>
     <ol>
-     <li>Copiez les configurations de déploiement de Multi-site Manager nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
-     <li>Mettez à jour toutes les références sur les pages AEM vers les configurations de déploiement de Multi-site Manager de l’emplacement précédent, afin qu’elles pointent vers leurs homologues dans les nouveaux emplacements (<code>/libs</code> ou <code>/apps</code>).</li>
-    </ol> <p>Supprimez les configurations de déploiement de Multi-site Manager migrées de l’emplacement précédent.</p> </td>
+     <li>Copiez les configurations de déploiement de Multi-Site Manager nouvelles ou modifiées de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
+     <li>Mettez à jour toutes les références sur les pages AEM vers les configurations de déploiement de Multi-Site Manager de l’emplacement précédent, afin qu’elles pointent vers leurs homologues dans les nouveaux emplacements (<code>/libs</code> ou <code>/apps</code>).</li>
+    </ol> <p>Supprimez les configurations de déploiement de Multi-Site Manager migrées de l’emplacement précédent.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>Si vous ne supprimez pas les configurations de déploiement de Multi-site Manager migrées de l’emplacement précédent, les options de déploiement en double seront affichées aux auteurs et autrices d’AEM.</td>
+   <td>Si vous ne supprimez pas les configurations de déploiement de Multi-Site Manager migrées de l’emplacement précédent, les options de déploiement en double seront affichées aux créateurs et créatrices AEM.</td>
   </tr>
  </tbody>
 </table>
@@ -267,7 +267,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><p><code>/libs/settings/notification-templates/com.day.cq.wcm.core.page</code></p> <p><code>/apps/settings/notification-templates/com.day.cq.wcm.core.page</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Les seuls nouveaux modèles d’e-mail de notification d’événement de page pris en charge sont ceux qui prennent en charge les nouveaux paramètres régionaux.</p> <p>La résolution du modèle d’e-mail de notification d’événement de page s’effectue dans l’ordre suivant :</p>
     <ol>
      <li><code>/etc/notification/email/default/com.day.cq.wcm.core.page</code></li>
@@ -276,7 +276,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td>
+   <td><strong>Notes</strong></td>
    <td><p>Tout modèle d’e-mail de notification d’événement de page nouveau ou modifié doit être migré vers le nouvel emplacement sous <code>/apps</code> :</p>
     <ol>
      <li>Copiez les modèles d’e-mail de notification d’événement de page nouveaux ou modifiés de l’emplacement précédent vers le nouvel emplacement (<code>/apps</code>).</li>
@@ -328,7 +328,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><code>/libs/wcm/foundation/clientlibs/grid/grid_base.less</code></td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Toutes les références à l’emplacement précédent dans les fichiers LESS personnalisés doivent être mises à jour pour être importées à partir du nouvel emplacement.</p>
     <ul>
      <li>Mettez à jour tous les fichiers LESS personnalisés faisant référence à grid_base.less dans l’emplacement précédent pour référencer le nouvel emplacement.</li>
@@ -354,7 +354,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><code>/apps/settings/wcm/designs/&lt;custom-site&gt;</code></td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Pour les conceptions gérées dans SCM et qui ne sont pas écrites au moment de l’exécution via les boîtes de dialogue de conception.</p>
     <ol>
      <li>Copiez les conceptions de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>).</li>
@@ -374,7 +374,8 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
  </tbody>
 </table>
 
-<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
+<!--
+Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -405,7 +406,8 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     </ul> </td>
   </tr>
  </tbody>
-</table> -->
+</table>
+-->
 
 ### Bibliothèques clientes d’intégration d’Adobe Target {#adobe-target-integration-client-libraries}
 
@@ -420,7 +422,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><code>/libs/cq/testandtarget/clientlibs/testandtarget</code></td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie et non par chemin.</p>
     <ol>
      <li>Toutes les références à la bibliothèque cliente par chemin à l’emplacement précédent doivent être mises à jour pour utiliser le <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">cadre de référencement de la bibliothèque cliente d’AEM</a>.</li>
@@ -437,7 +439,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td>
+   <td><strong>Notes</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud cq:ClientLIbraryFolder via CRXDELite et inspectez la propriété des catégories :</p>
     <ul>
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/testandtarget</code></li>
@@ -465,7 +467,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
    <td><code>/libs/wcm/foundation/clientlibs</code></td>
   </tr>
   <tr>
-   <td><strong>Conseils de restructuration</strong></td>
+   <td><strong>Conseil de restructuration</strong></td>
    <td><p>Toute utilisation personnalisée de ces bibliothèques clientes doit référencer la bibliothèque cliente par catégorie et non par chemin.</p>
     <ol>
      <li>Toutes les références à la bibliothèque client par chemin à l’emplacement précédent doivent être mises à jour pour utiliser le <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">framework de référencement de la bibliothèque client d’AEM</a>.</li>
@@ -478,7 +480,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Remarques</strong></td>
+   <td><strong>Notes</strong></td>
    <td><p>La modification de ces bibliothèques clientes n’a jamais été prise en charge.</p> <p>Pour obtenir les catégories des bibliothèques clientes, accédez à chaque nœud <code>cq:ClientLIbraryFolder</code> via CRXDELite et inspectez la propriété des catégories :</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>

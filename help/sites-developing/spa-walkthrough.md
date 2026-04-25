@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 100%
+source-wordcount: '1983'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Cela limite la nécessité d’actualiser la page et offre à l’utilisateur un
 
 L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs et créatrices de contenu de modifier le contenu de SPA aussi facilement qu’un autre contenu AEM.
 
-### Pourquoi une SPA ?  {#why-a-spa}
+### Pourquoi une SPA ? {#why-a-spa}
 
 Plus rapide, fluide et ressemblant davantage à une application native, une SPA, de par son fonctionnement, offre une expérience très attrayante, non seulement pour le visiteur de la page web, mais aussi pour les spécialistes du marketing et les développeurs.
 
@@ -95,7 +95,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >
 >Pour plus d’informations sur le fonctionnement des SPA dans AEM, reportez-vous à l’article [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md). 
+>Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article [Aperçu de l’éditeur de SPA](/help/sites-developing/spa-overview.md).
 
 ## Expérience de modification de contenu avec une SPA {#content-editing-experience-with-spa}
 

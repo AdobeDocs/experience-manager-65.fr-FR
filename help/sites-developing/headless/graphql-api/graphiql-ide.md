@@ -5,10 +5,10 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 97%
 
 ---
 
@@ -37,9 +37,9 @@ L’outil **GraphiQL** permet de tester et de déboguer vos requêtes GraphQL en
 * afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
-Vous pouvez accéder à l’éditeur de requêtes à partir de :
+Vous pouvez accéder au requêteur à partir de :
 
-* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+* **Outils** > **Général** > **Requêteur GraphQL**
 * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -139,14 +139,14 @@ Une fois que vous avez sélectionné votre [requête persistante](/help/sites-de
 
 >[!NOTE]
 >
->La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
+>La définition du `Time To Live` de cache de la requête persistante {« cache-control »:« parameter »:value} a une valeur par défaut de 2 heures (7 200 secondes).
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
 L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

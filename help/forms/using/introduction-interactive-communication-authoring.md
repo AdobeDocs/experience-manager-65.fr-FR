@@ -9,10 +9,10 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 100%
+source-wordcount: '1316'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 L’interface utilisateur de création d’une [Communication interactive](/help/forms/using/interactive-communications-overview.md) est intuitive et fournit les éléments suivants pour la création de canaux d’impression et web de la communication interactive :
 
 * Editeur de document glisser-déposer WYSIWYGM
-* Référentiel intégré des resources : les ressources téléchargées et créées sur le serveur sont disponibles dans l’explorateur des ressources de l’interface de création des communications interactives.
+* Référentiel intégré des ressources : les ressources chargées et créées sur le serveur sont disponibles dans l’explorateur des ressources de l’interface de création des communications interactives.
 
 Lorsque vous [créez une communication interactive ou en modifiez une existante](../../forms/using/create-interactive-communication.md), vous utilisez les éléments suivants de l’interface utilisateur :
 
@@ -40,32 +40,35 @@ Lorsque vous [créez une communication interactive ou en modifiez une existante]
 
 **A.** Explorateur de canaux **B.** Explorateur de contenu **C.** Explorateur de propriétés **D.** Explorateur de ressources **E.** Explorateur de composants **F.** Explorateur des sources de données - Modèle de données **G.** Explorateur des sources de données - Contenu Principal
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 La barre latérale contient les éléments suivants :
 
 * **Explorateur de canaux**
 
-L’explorateur de canaux vous permet de basculer entre les canaux d’impression et les canaux Web de la communication interactive. En fonction du canal que vous avez sélectionné dans l’explorateur de canaux, les navigateurs, tels que Contenu et Composants, affichent les options.
+L’explorateur de canaux vous permet de basculer entre les canaux d’impression et web de la communication interactive. En fonction du canal que vous avez sélectionné dans l’explorateur de canaux, les navigateurs, tels que Contenu et Composants, affichent les options.
 
-* **Explorateur de contenu**
-Dans l’explorateur de contenu, vous pouvez visualiser la hiérarchie des objets du document pour le canal sélectionné. L’auteur ou l’autrice peut accéder au composant spécifique en appuyant sur cet élément dans l’arborescence de l’objet de document. L’auteur ou l’autrice peut alors rechercher des objets dans le canal web et les réorganiser depuis l’arborescence.
+* **Explorateur de contenu**
+Dans l’explorateur de contenu, vous pouvez voir la hiérarchie des objets du document pour le canal sélectionné. L’auteur ou l’autrice peut accéder au composant spécifique en appuyant sur cet élément dans l’arborescence de l’objet de document. L’auteur ou l’autrice peut alors rechercher des objets dans le canal web et les réorganiser depuis l’arborescence.
 
 * **Explorateur de propriétés**
 
-  Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de documents :
-sélectionnez un composant, sélectionnez ![field-level](assets/field-level.png) > **Conteneur de documents** puis ![cmppr](assets/cmppr.png).
+  Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction du composant. Par exemple, pour afficher les propriétés du conteneur de document :
+Sélectionnez un composant, puis sélectionnez ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
-* **L’explorateur de ressources**
-isole différents types de contenu, tels que des fragments de disposition, des images, des documents, des pages ou des séquences vidéo. L’auteur peut glisser-déposer des actifs dans la communication interactive.
+* **Navigateur Assets**
+Isole différents types de contenu, tels que des fragments de disposition, des images, des documents, des pages ou des vidéos. L’auteur peut glisser-déposer des actifs dans la communication interactive.
 
-* **L’explorateur de composants** inclut les composants que vous pouvez utiliser pour créer les canaux d’impression et web d’un document. Vous pouvez faire glisser des composants dans la communication interactive afin d’ajouter des éléments, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants pour les canaux d’impression et web :
+* **Explorateur de composants**
+Inclut des composants que vous pouvez utiliser pour créer les canaux d’impression et web d’un document. Vous pouvez faire glisser des composants dans la communication interactive afin d’ajouter des éléments, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants pour les canaux d’impression et web :
 
 | **Composant** | **Canal d’impression** | **Canal web** | **Fonctionnalité** |
 |---|---|---|---|
-| Graphique | ✓ | ✓ | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles issues d’un élément de collection du modèle de données de formulaire. |
+| Graphique | ✓ | ✓ | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’un élément de collection du modèle de données de formulaire. |
 | Fragment de document | ✓ | ✓ | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
 | Image | ✓ | ✓ | Permet d’insérer une image. |
 | Panneau | - | ✓ | Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants dans une communication interactive. Un composant de panneau vous donne également la possibilité de permettre la répétition d’un groupe de composants pour l’utilisateur ou l’utilisatrice, par exemple dans plusieurs entrées requises pour remplir des informations d’identification pédagogiques. Il est également recommandé d’utiliser un panneau pour chaque onglet d’une communication interactive dotée de plusieurs onglets. |
@@ -77,7 +80,8 @@ isole différents types de contenu, tels que des fragments de disposition, des i
 
 &#42;&#42; Dans le canal d’impression, les zones cibles sont prédéfinies dans le XDP/modèle d’impression. Vous ne pouvez pas ajouter de nouvelles zones cibles à l’aide de l’interface utilisateur de création de communication interactive.
 
-* **Explorateur de sources de données** L’explorateur de sources de données affiche les sources de données disponibles dans le modèle de données de formulaire que vous avez sélectionné lors de la création de la communication interactive.
+* **Explorateur de sources de données**
+L’explorateur de sources de données affiche les sources de données disponibles dans le modèle de données de formulaire que vous avez sélectionné lors de la création de la communication interactive.
 
 ### Points clés pour l’utilisation de composants {#key-points-for-working-with-components}
 
@@ -98,7 +102,7 @@ Les points clés lorsque vous utilisez des composants de communication interacti
 
 Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
-A.**Configurer** : lorsque vous sélectionnez **Configurer**, les propriétés du composant s’affichent dans la barre latérale.
+A. **Configurer** : lorsque vous sélectionnez **Configurer**, les propriétés du composant sont visibles dans la barre latérale.
 
 B.**Modifier les règles** : lorsque vous sélectionnez Modifier les règles, l’éditeur de règles apparaît dans lequel vous pouvez modifier et créer des règles pour le composant sélectionné. Dans l’éditeur de règles, vous pouvez également sélectionner d’autres objets de formulaire (composants) et modifier/créer des règles pour ces objets de formulaire.
 
@@ -122,7 +126,7 @@ K. **Regrouper les objets dans le panneau :** permet de regrouper les composant
 
 L. **Ajouter un panneau enfant** (pour les panneaux uniquement) : permet d’ajouter un panneau enfant au panneau.
 
-M. **Ajouter une barre d’outils de panneau** (pour les panneaux uniquement) : permet d’ajouter la barre dʼoutils du composant Panneau. Vous pouvez ensuite effectuer d’autres actions sur la barre d’outils.
+M : **Barre d’outils Ajouter un panneau** (pour les panneaux uniquement):Lets vous ajoutez la barre d’outils pour le composant Panneau. Vous pouvez ensuite effectuer d’autres actions sur la barre d’outils.
 
 En outre, lʼoption **Remplacer** de la barre d’outils vous permet de remplacer le composant existant par un autre. L’option n’est pas disponible pour le composant Panneau.
 

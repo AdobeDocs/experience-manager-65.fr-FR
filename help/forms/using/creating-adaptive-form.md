@@ -1,15 +1,15 @@
 ---
 title: Comment créer un formulaire adaptatif ?
-description: Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire et un schéma XML ou JSON.
+description: Découvrez comment créer un formulaire adaptatif à l’aide de  [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire, un modèle de formulaire XFA et un schéma XML ou JSON.
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 100%
+source-wordcount: '2048'
+ht-degree: 99%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Créer un formulaire adaptatif {#strong-create-an-adaptive-form-strong}
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms] à `https://'[server]:[port]'/<custom-context-if-any>.`.
+1. Accédez à l’instance de création [!DNL Experience Manager Forms] à `https://'[server]:[port]'/<custom-context-if-any>.`.
 
 1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager.
 
@@ -36,7 +36,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    >
    >Dans le cadre d’une installation par défaut, l’identifiant est `admin` et le mot de passe est `admin`.
 
-1. Sélectionnez **[!UICONTROL Créer]**, puis **[!UICONTROL Formulaire adaptatif]**.
+1. Sélectionnez **[!UICONTROL Créer]** et **[!UICONTROL Formulaire adaptatif]**.
 1. Une option permettant de sélectionner un modèle s’affiche. Pour plus d’informations sur les modèles, voir [Modèles de formulaires adaptatifs](creating-adaptive-form.md#p-adaptive-form-templates-p). Sélectionnez un modèle puis Suivant.
 1. Une option Ajouter des propriétés s’affiche. Spécifiez les valeurs des champs de propriété suivants. Les champs Titre et Nom sont obligatoires :
 
@@ -72,7 +72,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 ## Créer un formulaire adaptatif en fonction du modèle de données de formulaire {#fdm}
 
-[[!DNL Experience Manager Forms] L’intégration de données](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données de formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaire. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
+[[!DNL Experience Manager Forms] L’intégration de données](data-integration.md) vous permet d’intégrer plusieurs sources de données et de rassembler leurs entités et services pour créer un modèle de données de formulaire. Il s’agit d’une extension du schéma JSON. Vous pouvez utiliser un modèle de données de formulaire pour créer un formulaire adaptatif. Les entités ou les objets de modèle de données configurés dans un modèle de données de formulaire sont disponibles en tant qu’objets de modèle de données pour la création de formulaires. Ils sont associés à des sources de données respectives et utilisés pour pré-remplir un formulaire et écrire les données envoyées dans les sources de données respectives. Vous pouvez également appeler des services configurés dans un modèle de données de formulaire à l’aide des règles de formulaire adaptatif.
 
 Pour utiliser un modèle de données de formulaire pour créer un formulaire adaptatif :
 
@@ -92,9 +92,10 @@ Pour utiliser un modèle de données de formulaire pour créer un formulaire ada
 
 ## Créer un formulaire adaptatif basé sur un modèle de formulaire XFA {#create-an-adaptive-form-based-on-an-xfa-form-template}
 
-Vous pouvez réutiliser vos modèles de formulaire XFA pour créer des formulaires adaptatifs. Pour les réutiliser, chargez et associez un modèle de formulaire XFA à un formulaire adaptatif. Les éléments du modèle de formulaire (formulaire XFA) sont disponibles dans l’outil de recherche de contenu au moment de la création des formulaires adaptatifs. Dans l’outil de recherche de contenu, vous pouvez faire glisser et déposer les éléments de modèle de formulaire sur le formulaire.
+Vous pouvez réutiliser vos modèles de formulaires XFA pour créer des formulaires adaptatifs. Pour les réutiliser, chargez et associez un modèle de formulaire XFA à un formulaire adaptatif. Les éléments du modèle de formulaire (formulaire XFA) sont disponibles dans l’outil de recherche de contenu au moment de la création des formulaires adaptatifs. Dans l’outil de recherche de contenu, vous pouvez faire glisser et déposer les éléments de modèle de formulaire sur le formulaire.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -108,11 +109,12 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   -->
 
 ## Créer un formulaire adaptatif en fonction du schéma XML ou JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
+Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet de modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
 
 Consultez les documents suivants pour découvrir comment concevoir un schéma XML ou JSON pour la création de formulaires adaptatifs.
 
@@ -138,7 +140,7 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
 
 1. (Pour le schéma XML uniquement) Après avoir sélectionné ou chargé un schéma XML, spécifiez un élément racine du fichier XSD sélectionné à mapper avec le formulaire adaptatif.
 
-   ![Sélection de l’élément racine de schéma XSD](assets/xsd-root-element.png)
+   ![Sélection de l’élément racine XSD](assets/xsd-root-element.png)
    **Figure :** *Sélection de l’élément racine XSD*
 
 >[!NOTE]

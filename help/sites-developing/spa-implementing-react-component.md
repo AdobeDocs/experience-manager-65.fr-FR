@@ -11,15 +11,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '523'
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
 
 
-# Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
+# Mise en œuvre d’un composant React pour SPA{#implementing-a-react-component-for-spa}
 
 Les applications monopage (SPA) peuvent améliorer considérablement l’expérience des sites web. Le souhait des développeurs et des développeuses est de pouvoir créer des sites avec des structures SPA. Les auteurs et les autrices pour leur part, souhaitent modifier facilement du contenu dans Adobe Experience Manager (AEM) pour un site conçu à l’aide de structures SPA.
 

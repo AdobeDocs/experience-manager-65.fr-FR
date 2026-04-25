@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: bafa8061d73a5c82ba012457fb1133d99341fcd9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3736'
 ht-degree: 97%
 
 ---
@@ -64,7 +64,7 @@ Adobe recommande ces configurations et fournit une prise en charge complète dan
    <td>Adobe fournit une prise en charge et une maintenance complètes de cette configuration. Cette configuration est couverte par le processus d’assurance qualité d’Adobe.</td>
   </tr>
   <tr>
-   <td><strong>R : Prise en charge limitée </strong></td>
+   <td><strong>R : Prise en charge limitée</strong></td>
    <td>Pour garantir la réussite des projets des clients et clientes, Adobe fournit une prise en charge complète dans le cadre d’un programme d’assistance restreint, qui nécessite que des conditions spécifiques soient remplies. La prise en charge au niveau R nécessite une requête formelle de la part du client ou de la cliente et une confirmation par Adobe. Pour plus d’informations, contactez l’assistance clientèle d’Adobe.</td>
   </tr>
  </tbody>
@@ -125,13 +125,13 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 4.4 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.2  | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
+| MongoDB Enterprise 4.2 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Référentiel | Z : non pris en charge |
 | MongoDB Enterprise 3.6 | Référentiel | Z : non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : non pris en charge |
 | IBM® DB2® 10.5 | Référentiel et base de données Forms | R : prise en charge limitée `[5]` |
-| Oracle Database 12c (12.1.x) | Référentiel et base de données Forms | R : prise en charge limitée  |
-| Oracle Database 19c | Référentiel et base de données Forms | R : prise en charge limitée  |
+| Oracle Database 12c (12.1.x) | Référentiel et base de données Forms | R : prise en charge limitée |
+| Oracle Database 19c | Référentiel et base de données Forms | R : prise en charge limitée |
 | Microsoft® SQL Server 2016 | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2019 (obsolète) | Base de données Forms | A : pris en charge |
 | Microsoft® SQL Server 2022 | Base de données Forms | A : pris en charge |
@@ -172,7 +172,8 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+-->
 
 ### Moteurs de servlet/serveurs d’applications {#servlet-engines-application-servers}
 
@@ -205,7 +206,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Plateforme** | **Niveau de prise en charge** |
 |---|---|
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
-| Linux, en fonction de la distribution Debian, incluse Ubuntu  | A : prise en charge de : `[1]` `[2]` |
+| Linux, en fonction de la distribution Debian, incluse Ubuntu | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
 | Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
@@ -531,6 +532,6 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 ### Conditions requises pour qu’AEM Assets traite les ressources lourdes en métadonnées sous Linux® {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Cela améliore les performances de traitement des ressources qui contiennent un grand nombre de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
 Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[AEM Forms](https://business.adobe.com/in/support/main.html)

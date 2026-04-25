@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '6061'
 ht-degree: 100%
 
 ---
@@ -155,7 +155,7 @@ L’éditeur de règles fournit un éditeur visuel et un éditeur de code pour l
 * Les auteurs et autrices de formulaires adaptatifs peuvent avoir besoin d’écrire du code JavaScript pour créer une logique métier dans un formulaire. Bien que JavaScript soit puissant et efficace, il est susceptible de compromettre les attentes en matière de sécurité. Par conséquent, vous devez vous assurer que l’auteur ou l’autrice du formulaire est une personne de confiance et qu’il existe des processus pour examiner et approuver le code JavaScript avant qu’un formulaire ne soit mis en production. L’administrateur ou l’administratrice peut restreindre l’accès à l’éditeur de règles de certains groupes d’utilisateurs et d’utilisatrices en fonction de leur rôle ou de leur fonction. Voir [Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs et d’utilisatrices sélectionnés](/help/forms/using/rule-editor-access-user-groups.md).
 * Vous pouvez utiliser des expressions dans les règles pour rendre les formulaires adaptatifs dynamiques. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour plus d’informations sur les expressions et les meilleures pratiques associées, voir [Expressions des formulaires adaptatifs](/help/forms/using/adaptive-form-expressions.md).
 
-* Adobe recommande d’utiliser des opérations synchrones JavaScript plutôt que asynchrones lors de la création de règles avec l’éditeur de règles. L’utilisation d’opérations asynchrones est fortement déconseillée. Cependant, si vous vous trouvez dans une situation où les opérations asynchrones sont inévitables, il est essentiel de mettre en œuvre les fonctions de fermeture (closures) de JavaScript. Vous pouvez ainsi vous protéger de manière efficace contre toute situation de concurrence potentielle, en veillant à ce que vos mises en œuvre de règles offrent des performances optimales et maintiennent la stabilité. 
+* Adobe recommande d’utiliser des opérations synchrones JavaScript plutôt que asynchrones lors de la création de règles avec l’éditeur de règles. L’utilisation d’opérations asynchrones est fortement déconseillée. Cependant, si vous vous trouvez dans une situation où les opérations asynchrones sont inévitables, il est essentiel de mettre en œuvre les fonctions de fermeture (closures) de JavaScript. Vous pouvez ainsi vous protéger de manière efficace contre toute situation de concurrence potentielle, en veillant à ce que vos mises en œuvre de règles offrent des performances optimales et maintiennent la stabilité.
 
   Supposons, par exemple, que nous devions récupérer des données d’une API externe, puis appliquer certaines règles basées sur ces données. Nous utilisons une fermeture pour gérer l’appel API asynchrone et nous assurer que les règles sont appliquées après la récupération des données. Voici l’exemple de code :
 
@@ -296,7 +296,8 @@ Un document d’enregistrement (DE) est une version PDF aplatie d’un formulair
 * Excluez les champs masqués du document d’enregistrement.
 * Utilisez le paramètre de demande `afAcceptLang` pour afficher le document d’enregistrement dans d’autres paramètres régionaux.
 
-<!--### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
+<!--
+### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
 
 [AEM Chrome Plug-in](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) is a browser extension for Google Chrome that provides tools for debugging adaptive forms. Form authors and developers can use these tools to:
 
@@ -306,7 +307,8 @@ Un document d’enregistrement (DE) est une version PDF aplatie d’un formulair
 * Debug rules and scripts in the form
 * Explore and learn about guideBridge APIs
 
-For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).-->
+For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
+-->
 
 ### Validation des formulaires adaptatifs sur le serveur AEM {#validating-adaptive-forms-on-aem-server}
 

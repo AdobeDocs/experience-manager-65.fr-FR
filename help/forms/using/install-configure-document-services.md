@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10086'
-ht-degree: 99%
+source-wordcount: '10489'
+ht-degree: 98%
 
 ---
 
@@ -226,8 +226,10 @@ Avant d’installer Acrobat, passez en revue ces exigences essentielles. Préreq
 * Privilèges d’administration locale sur la machine exécutant AEM Forms
 * Système d’exploitation Windows 64 bits
 * Connexion Internet stable pour l’activation des licences
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+ -->
 
 
 #### Workflow et chronologie d’implémentation
@@ -236,10 +238,10 @@ Le processus complet prend généralement 1 à 2 heures, selon votre environnem
 
 | Étape | Temps estimé | Prérequis |
 |------|----------------|---------------|
-| &#x200B;1. Créer le package FRL dans Admin Console | 15 à 20 minutes | [Vue d’ensemble d’Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
+| &#x200B;1. Créer un package FRL (dans Admin Console) | 15 à 20 minutes | [Vue d’ensemble d’Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
 | &#x200B;2. Octroyer des autorisations de téléchargement | 5 à 10 minutes | [Vue d’ensemble d’Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
-| &#x200B;3. Désinstaller la version précédente d’Acrobat | 10 à 15 minutes | Accès de l’administration du serveur |
-| &#x200B;4. Télécharger et installer Adobe Acrobat Pro | 10 à 15 minutes | Accès de l’administration du serveur |
+| &#x200B;3. Désinstallation de l’Acrobat précédente | 10 à 15 minutes | Accès de l’administration du serveur |
+| &#x200B;4. Téléchargement et installation d’Adobe Acrobat Pro | 10 à 15 minutes | Accès de l’administration du serveur |
 | &#x200B;5. Télécharger et déployer le package FRL | 20 à 30 minutes | Accès de l’administration du serveur |
 | &#x200B;6. Vérifier l’installation | 5 à 10 minutes | Accès au serveur |
 
@@ -905,7 +907,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -936,7 +938,7 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
    <td><p>C:\WINDOWS\notepad.exe<br /> <strong></strong></p> </td>
   </tr>
   <tr>
-   <td><p><strong>OpenOffice </strong></p> </td>
+   <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
    <td><p>C:\Program Files (x86)\OpenOffice 4</p> </td>
   </tr>
@@ -1080,7 +1082,7 @@ Copiez la police Unicode vers l’un des répertoires suivants, en fonction de v
 
 ## Installation du package complémentaire AEM Forms {#install-aem-forms-add-on-package}
 
-Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des services de document AEM Forms et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit : 
+Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des services de document AEM Forms et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit :
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
@@ -1089,7 +1091,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
 1. Ouvrez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
-1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
+1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
@@ -1099,7 +1101,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
 ### Configuration de Boot Delegation pour les bibliothèques RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Désactivez l’instance AEM. Accédez au dossier [Répertoire d’installation AEM]\crx-quickstart\conf\. Ouvrez le fichier sling.properties pour modification.
+1. Désactivez l’instance AEM. Accédez au dossier [Répertoire d’installation d’AEM]\crx-quickstart\conf\. Ouvrez le fichier sling.properties pour le modifier.
 
    Si vous utilisez `[AEM installation directory]\crx-quickstart\bin\start.bat` pour démarrer une instance AEM, modifiez le fichier sling.properties situé à l’emplacement suivant :`[AEM_root]\crx-quickstart\`.
 
@@ -1140,7 +1142,7 @@ Un compte d’utilisateur local est requis pour exécuter le service PDF Generat
 
 1. Dans [AEM Configuration Manager](http://localhost:4502/system/console/configMgr), recherchez et ouvrez le service **[!UICONTROL Jacorb ORB Provider]**.
 
-   Ajoutez l’élément suivant au champ **[!UICONTROL Properties.name personnalisé]** et cliquez sur **[!UICONTROL Enregistrer]**. Il définit le délai de la réponse en attente (également appelé délai d’attente du client CORBA) à 600 secondes.
+   Ajoutez l’élément suivant au champ **[!UICONTROL Properties.name personnalisé]** et cliquez sur **[!UICONTROL Enregistrer]**. Il définit le délai d’expiration de la réponse en attente (également appelé délai d’attente du client CORBA) à 600 secondes.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
@@ -1156,8 +1158,8 @@ Un compte d’utilisateur local est requis pour exécuter le service PDF Generat
    <td>Valeur par défaut</td>
   </tr>
   <tr>
-   <td>Expiration de conversion sur le serveur</td>
-   <td>Une conversion PDFG reste active pendant le nombre de secondes définies dans le délai de conversion du serveur.</td>
+   <td>Délai d’expiration de la conversion sur le serveur</td>
+   <td>Une conversion PDFG reste active pendant le nombre de secondes définies dans le délai d’expiration de conversion du serveur.</td>
    <td>270 secondes<br /> </td>
   </tr>
   <tr>
@@ -1373,11 +1375,11 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-+++OpenOffice 
++++OpenOffice
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -1453,7 +1455,8 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-<!-- +++ Unable to add a PDF Generator (PDFG) user
+<!--
++++ Unable to add a PDF Generator (PDFG) user
 
 * (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
@@ -1467,7 +1470,8 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 +++
 
-<!-- +++ (Acrobat 2020 only) Multiple user conversion failures 
+<!--
++++ (Acrobat 2020 only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1479,9 +1483,11 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 * Perform a sample conversion.
 
-+++ -->
++++
+-->
 
-<!-- (Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+<!--
+(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1506,13 +1512,14 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
-+++ -->
++++
+-->
 
 +++ Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server.
 
 Lorsque l’utilisateur ou l’utilisatrice tente de convertir des fichiers Word ou Excel en PDF sur Microsoft Windows Server, l’erreur suivante se produit :
 
-*Message d’erreur du convertisseur principal :
+*Message d&#39;erreur du convertisseur principal :
 ALC-PDG-015-003-Le système ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau le fichier ou contactez votre administrateur ou administratrice système.*
 
 Pour résoudre le problème, consultez [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).

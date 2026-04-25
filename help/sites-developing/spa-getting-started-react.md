@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '1127'
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '1169'
 ht-degree: 100%
 
 ---
@@ -274,7 +274,7 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 
 * **Option 1 :** centralisez la logique et procédez à une diffusion vers les composants nécessaires, par exemple en utilisant React Context.
 * **Option 2 :** Partagez des états de composant en utilisant une bibliothèque d’états telle que Redux.
-* **Option 3 :** Tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
+* **Option 3 :** tirez parti de la hiérarchie d’objets en personnalisant et en étendant le composant de conteneur.
 
 ## Étapes suivantes {#next-steps}
 

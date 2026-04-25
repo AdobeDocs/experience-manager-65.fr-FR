@@ -10,10 +10,10 @@ docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3875'
-ht-degree: 100%
+source-wordcount: '4051'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -96,7 +96,7 @@ Pour créer un formulaire adaptatif pouvant être signé, procédez comme suit 
 
    * Sélectionnez lʼoption **[!UICONTROL Générer un document d’enregistrement]**. Si vous utilisez un formulaire adaptatif avec lʼoption Document d’enregistrement activée, le document envoyé pour signature affiche tous les champs du formulaire adaptatif.
 
-1. Sélectionnez **[!UICONTROL Créer.]** Un formulaire adaptatif activé pour Adobe Sign est créé et peut être utilisé pour ajouter des champs [!DNL Adobe Sign].
+1. Sélectionnez **[!UICONTROL Créer.]** Un formulaire adaptatif prenant en charge les signatures est créé et peut être utilisé pour ajouter des champs de [!DNL Adobe Sign].
 
 #### Modifier un formulaire adaptatif pour [!DNL Adobe Sign] {#editafsign}
 
@@ -198,7 +198,7 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
    * **[!UICONTROL Titre] :** spécifiez un titre pour identifier de manière unique un signataire.
 
-   * **[!UICONTROL La personne signataire et la personne remplissant le formulaire sont-elles la même personne ?] :** sélectionnez **Oui** si l’utilisateur ou l’utilisatrice et la première personne destinataire du formulaire sont la même personne. Si l’option est définie sur **Non,** n’utilisez pas le composant d’étape de signature dans le formulaire adaptatif. Si le formulaire contient un composant Étape de signature, le champ est automatiquement défini sur Oui.
+   * **[!UICONTROL Le signataire et la personne remplissant le formulaire sont-ils la même personne ?]:** Sélectionnez **Oui** si le remplisseur du formulaire et le premier signataire sont la même personne. Si l’option est définie sur **Non,** n’utilisez pas le composant d’étape de signature dans le formulaire adaptatif. Si le formulaire contient un composant Étape de signature, le champ est automatiquement défini sur Oui.
 
    * **[!UICONTROL Adresse électronique du signataire] :** précisez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse e-mail fournie dans un champ de formulaire, dans le profil utilisateur AEM de la personne connectée ou d’entrer manuellement une adresse e-mail. Il s’agit d’une étape obligatoire. Assurez-vous que l’adresse e-mail de la première personne signataire ou de la seule personne signataire (s’il n’existe qu’une seule personne signataire) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer AEM Cloud Services.
 
@@ -222,9 +222,10 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
 Après avoir ajouté des champs [!DNL Adobe Sign] à un formulaire adaptatif, activé [!DNL Adobe Sign] à partir du conteneur de formulaires, sélectionné [!DNL Adobe Sign] Cloud Service et ajouté des signataires [!DNL Adobe Sign], sélectionnez une action Envoyer appropriée pour le formulaire adaptatif. Pour plus d’informations sur les actions d’envoi de formulaires adaptatifs, voir [Configuration de l’action d’envoi](../../forms/using/configuring-submit-actions.md).
 
-En outre, un formulaire adaptatif avec [!DNL Adobe Sign] activé n’est envoyé qu’une fois que tous les signataires l’ont signé. Vous pouvez trouver un formulaire partiellement signé dans la section En attente de signature du portail des formulaires. Le service de configuration d’[!DNL Adobe Sign] interroge le serveur [!DNL Adobe Sign] à [intervalles réguliers](../../forms/using/adobe-sign-integration-adaptive-forms.md) pour vérifier le statut des signatures. Si tous les signataires terminent la signature du formulaire, le service d’action d’envoi est démarré et le formulaire est envoyé. Si vous utilisez une action d’envoi personnalisée tandis que le formulaire utilise [!DNL Adobe Sign], mettez à jour votre action d’envoi personnalisée pour utiliser le service d’action d’envoi.
+En outre, un formulaire adaptatif avec [!DNL Adobe Sign] activé n’est envoyé qu’une fois que tous les signataires l’ont signé. Vous trouverez un formulaire partiellement signé dans la section En attente de signature du portail Formulaires. [!DNL Adobe Sign] Le service de configuration d’interroge [!DNL Adobe Sign] serveur à [intervalles réguliers](../../forms/using/adobe-sign-integration-adaptive-forms.md) pour vérifier le statut des signatures. Si tous les signataires terminent la signature du formulaire, le service d’action d’envoi est démarré et le formulaire est envoyé. Si vous utilisez une action d’envoi personnalisée tandis que le formulaire utilise [!DNL Adobe Sign], mettez à jour votre action d’envoi personnalisée pour utiliser le service d’action d’envoi.
 
-<!-- Remove when forms portal goes live
+<!--
+Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the adaptive form is stored temporarily on Forms Portal. Use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
@@ -280,7 +281,7 @@ Un utilisateur ou une utilisatrice peut également signer un formulaire adaptati
 
 ### Ajouter et configurer le composant Étape de signature {#add-and-configure-the-signature-step-component}
 
-Utilisez le composant Étape de signature pour fournir une zone pour signer électroniquement le formulaire rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire rempli. Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature. 
+Utilisez le composant Étape de signature pour fournir une zone pour signer électroniquement le formulaire rempli. Lorsque la section contenant le composant Étape de signature est générée, elle affiche une version PDF à signer du formulaire rempli. Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
 
 Effectuez les étapes suivantes pour configurer le composant Étape de signature :
 
@@ -305,7 +306,7 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
 
    >[!NOTE]
    >
-   >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
+   >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’**[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
    >* Utilisez le composant Étape de résumé après le composant Étape de signature pour une expérience optimale. Le composant Étape de résumé effectue un envoi automatique et immédiat du formulaire après la signature de ce dernier dans le composant Étape de signature. Si vous n’utilisez pas l’étape de résumé, l’envoi automatique n’est déclenché qu’à la fin de l’intervalle défini à l’aide du [Service de configuration d’Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
    >
    >Voici quelques bonnes pratiques :
@@ -323,7 +324,7 @@ Le composant **Étape de résumé** envoie automatiquement le formulaire, indiqu
 
 Maintenant, l’expérience de signature dans le formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature.
 
-## Questions fréquemment posées  {#frequently-asked-questions}
+## Questions fréquemment posées {#frequently-asked-questions}
 
 **Question :** Vous pouvez incorporer un formulaire adaptatif dans un autre formulaire adaptatif. Le formulaire adaptatif incorporé peut-il être activé pour [!DNL Adobe Sign] ?
 **Réponse :** Non, AEM [!DNL Forms] ne prend pas en charge l’utilisation d’un formulaire adaptatif incorporant un formulaire adaptatif activé pour à des fins de signature [!DNL Adobe Sign]
@@ -346,7 +347,7 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 ### Échecs des accords [!DNL Adobe Sign] {#adobe-sign-agreement-failures}
 
 **Problème**
-Lorsque le service [!DNL Adobe Sign] est configuré pour un formulaire adaptatif, il ne parvient pas à créer un accord [!DNL Adobe Sign] pour le formulaire adaptatif sous-jacent.
+Lorsque [!DNL Adobe Sign] service est configuré pour un formulaire adaptatif, il ne parvient pas à créer un accord de [!DNL Adobe Sign] pour le formulaire adaptatif sous-jacent.
 
 **Résolution**
 
@@ -359,7 +360,7 @@ Lorsque le service [!DNL Adobe Sign] est configuré pour un formulaire adaptatif
 ### Le workflow AEM [!DNL Forms] configuré pour un formulaire adaptatif activé pour [!DNL Adobe Sign] ne démarre pas {#adobe-sign-aem-form-workflow-failures}
 
 **Problème**
-Lorsquʼ[!DNL Adobe Sign] est configuré pour un formulaire adaptatif, le workflow configuré à l’aide de l’option Appeler le workflow [!DNL Forms] ne démarre pas.
+Lorsqu’[!DNL Adobe Sign] est configuré pour un formulaire adaptatif, le processus configuré à l’aide de l’option Appeler le processus [!DNL Forms] ne démarre pas.
 
 **Résolution**
 
@@ -370,4 +371,4 @@ Lorsquʼ[!DNL Adobe Sign] est configuré pour un formulaire adaptatif, le workfl
 
 * [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Recommandations relatives à l’utilisation d’Adobe Sign avec des formulaires adaptatifs](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
-* [Utiliser Adobe Sign avec AEM Forms (vidéo)](https://helpx.adobe.com/fr/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Utilisation d’Adobe Sign avec AEM Forms (vidéo)](https://helpx.adobe.com/fr/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

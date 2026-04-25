@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: ht
-source-wordcount: '1072'
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '1106'
 ht-degree: 100%
 
 ---

@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1043'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 [!DNL Adobe Experience Manager Assets] vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs de l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à [!DNL Assets].
@@ -47,7 +47,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    >[!NOTE]
    >
-   >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés à son ID d’e-mail.
+   >Si vous saisissez l’ID d’e-mail d’une personne qui ne fait pas partie de votre entreprise, les mots [!UICONTROL Utilisateur externe] sont ajoutés avant son ID d’e-mail.
 
 1. Dans la zone **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
 
@@ -118,4 +118,4 @@ Lorsque vous téléchargez des ressources via le lien partagé avec la fonction 
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
 
-  Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**. Ouvrez la configuration de **[!UICONTROL l’externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs correspondantes pour : `local`, `author` et `publish`. Pour les propriétés `local` et `author`, saisissez respectivement l’URL du site local et l’URL de l’instance d’auteur. Si vous exécutez une seule Instance de création [!DNL Experience Manager], utilisez la même valeur pour les propriétés `local` et `author`. Pour les instances de Publication, indiquez l’URL de l’instance de publication [!DNL Experience Manager].
+  Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**. Ouvrez la configuration de **[!UICONTROL l’externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs correspondantes pour : `local`, `author` et `publish`. Pour les propriétés `local` et `author`, saisissez respectivement l’URL du site local et l’URL de l’instance de création. Si vous exécutez une seule Instance de création [!DNL Experience Manager], utilisez la même valeur pour les propriétés `local` et `author`. Pour les instances de Publication, indiquez l’URL de l’instance de publication [!DNL Experience Manager].

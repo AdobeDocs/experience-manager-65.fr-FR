@@ -6,9 +6,9 @@ role: Admin, User, Developer
 hidefromtoc: true
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: d42788ed12bd4ea9f00859f5b01ea5ded38f658d
-workflow-type: ht
-source-wordcount: '1773'
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+workflow-type: tm+mt
+source-wordcount: '2818'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Option de déploiement d’AEM Forms qui utilise les serveurs Java Enterprise Ed
 
 ## [AEM Forms sur OSGi](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements)
 
-AEM Forms sur OSGi est un environnement de création ou de publication AEM standard sur lequel est déployé le package AEM Forms. Vous pouvez exécuter AEM Forms sur OSGi dans des configurations à serveur unique ou en ferme ou grappes de serveurs. La configuration en cluster n’est disponible que pour les instances de création AEM.
+AEM Forms sur OSGi est un environnement de création ou de publication AEM standard sur lequel est déployé le package AEM Forms. Vous pouvez exécuter AEM Forms sur OSGi dans des configurations à serveur unique ou en ferme ou grappes de serveurs. La mise en cluster n’est disponible que pour les instances de création AEM.
 
 ## [Adobe Sign dans AEM Forms](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms)
 
@@ -67,7 +67,7 @@ AEM Forms as a Cloud Service fournit des outils avancés pour gérer les formula
 | **Manipulation de documents** | Combine et réorganise des documents PDF. | [Documentation sur la manipulation de documents](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-manipulation) |
 | **Conversion de documents** | Convertissez un PDF en PDF/A et vérifiez la conformité PDF/A. | [Documentation sur la conversion de documents](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#document-conversion) |
 | **Document Assurance** | Ajoutez ou supprimez des champs de signature, signez, certifiez, chiffrez, déchiffrez et appliquez des droits d’utilisation à des documents PDF. | [Documentation sur Document Assurance](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction#doc-assurance) |
-| **Signatures numériques** | Intègre Adobe Sign pour une signature électronique sécurisée des formulaires et des documents. | [Documentation sur les signatures numériques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=fr#digital-signatures) |
+| **Signatures numériques** | Intègre Adobe Sign pour une signature électronique sécurisée des formulaires et des documents. | [Documentation sur les signatures numériques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html#digital-signatures) |
 
 
 ## [AEM Forms Workbench](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/install-workbench)

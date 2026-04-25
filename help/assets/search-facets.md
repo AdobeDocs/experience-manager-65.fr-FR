@@ -7,10 +7,10 @@ feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 100%
+source-wordcount: '2437'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Le déploiement de [!DNL Adobe Experience Manager Assets] à l’échelle de l’entreprise offre la capacité de stocker de nombreuses ressources. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue si vous utilisez uniquement les fonctionnalités de recherche génériques d’[!DNL Experience Manager].
@@ -59,7 +59,7 @@ Pour des recherches de texte intégral, ajoutez le prédicat **[!UICONTROL Texte
 
    Vous pouvez également sélectionner un nœud existant dans la boîte de dialogue de sélection.
 
-   ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété](assets/property_settings.png)
+   ![Associez une propriété de métadonnées à un prédicat dans le champ Nom de la propriété](assets/property_settings.png)
 
    Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété
 
@@ -81,7 +81,7 @@ Le prédicat Options vous permet d’ajouter plusieurs options de recherche dans
 
 Pour mapper les options à la propriété correspondante, créez une structure de nœud pour les options et fournissez le chemin du nœud parent dans la propriété Nom de la propriété du prédicat Options. Le nœud parent doit être du type `sling` : `OrderedFolder`. Les options doivent être du type `nt:unstructured`. Les propriétés `jcr:title` et `value` doivent être configurées pour les nœuds d’option.
 
-La propriété `jcr:title` est un nom convivial de l’option qui apparaît dans le panneau Filtres. Le champ `value` est utilisé dans la demande pour correspondre à la propriété spécifiée.
+La propriété `jcr:title` est un nom convivial de l’option qui apparaît dans le panneau Filtres. Le champ `value` est utilisé dans la requête pour correspondre à la propriété spécifiée.
 
 Lorsque vous sélectionnez une option, la recherche est effectuée en fonction de la propriété `value` du nœud d’option et de ses nœuds enfants, le cas échéant. L’arborescence entière sous le nœud d’option est parcourue et la propriété `value` de chaque nœud enfant est combinée à l’aide d’une opération OR pour former la requête.
 
@@ -118,7 +118,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Utilisez l’une des méthodes suivantes :
 
    * Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez le chemin du fichier JSON où sont définis les nœuds des options et spécifiez les paires clé-valeur correspondantes.
-   * Appuyez sur l’icône `+` à côté du champ Options afin de spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, cliquez sur le symbole `+` et répétez l’étape.
+   * Appuyez sur le symbole `+` en regard du champ Options afin de spécifier le texte affiché et la valeur pour les options que vous souhaitez fournir dans le panneau Filtres. Pour ajouter une autre option, cliquez sur le symbole `+` et répétez l’étape.
 
 1. Assurez-vous que l’option **[!UICONTROL Sélection simple]** est désactivée pour permettre à l’utilisateur de sélectionner plusieurs options à la fois pour les types de fichiers (Images, Documents, Multimédia et Archives, par exemple). Si vous choisissez **[!UICONTROL Sélection simple]**, l’utilisateur ne peut sélectionner qu’une seule option à la fois pour les types de fichiers.
 
@@ -149,7 +149,7 @@ Le prédicat de balise vous permet de rechercher des ressources sur la base des 
 1. Cliquez sur le logo d’[!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **[!UICONTROL Modifier]** ![icône modifier](assets/do-not-localize/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
-1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; *jcr:content/metadata/cq:tags*, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
+1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété en fonction de laquelle la recherche doit être effectuée dans le champ de propriété, par exemple *jcr:content/metadata/cq:tags*. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
 1. Configurez la propriété Chemin d’accès racine aux balises de ce prédicat pour renseigner différentes balises dans la liste Balises.
 1. Sélectionnez **[!UICONTROL Option d’affichage de correspondance de toutes les balises]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
@@ -165,20 +165,20 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 
 | Nom du prédicat | Description | Propriétés |
 |---|---|---|
-| [!UICONTROL Texte intégral] | Prédicat de recherche permettant d’effectuer une recherche de texte intégral dans un nœud de ressource entier. Il est mappé à l’opérateur jcr:contains. Vous pouvez spécifier un chemin d’accès relatif si vous souhaitez effectuer une recherche de texte intégral sur une partie spécifique du nœud de ressource. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Explorateur de chemins d’accès] | Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré. | <ul><li>Espace réservé</li><li>Chemin d’accès racine</li><li>Description</li></ul> |
-| [!UICONTROL Chemin] | Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier plusieurs chemins d’accès en tant qu’options. | <ul><li>Libellé</li><li>Chemin</li><li>Description</li></ul> |
-| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur statut de publication. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Date relative] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur date de création. Vous pouvez, par exemple, configurer des options telles qu’il y a 2 mois, il y a 3 semaines, etc. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Date relative</li></ul> |
-| [!UICONTROL Étendue] | Prédicat de recherche permettant de rechercher des ressources comprises dans une étendue spécifiée. Dans le panneau Rechercher, vous pouvez spécifier des valeurs maximale et minimale pour l’étendue. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Période] | Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau de recherche, vous pouvez spécifier des dates de début et de fin à l’aide du sélecteur de dates. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de la propriété</li><li>Texte de la plage (De)</li><li>Texte de la plage (À)</li><li>Description</li></ul> |
-| [!UICONTROL Date] | Prédicat de recherche permettant de rechercher à l’aide d’un curseur des ressources selon une propriété de date. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Taille de fichier] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur taille. Il s’agit d’un prédicat basé sur un curseur, dans lequel vous sélectionnez les options de curseur à partir d’un nœud configurable. Les options par défaut sont définies sous /libs/dam/options/predicates/filesize dans le référentiel CRXDE. La taille du fichier est exprimée en octets. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Chemin</li><li>Description</li></ul> |
-| [!UICONTROL Dernière modification de la ressource] | Prédicat de recherche permettant de rechercher des ressources récemment modifiées. | <ul><li>Nom de la propriété</li><li>Valeur de propriété</li><li>Description</li></ul> |
-| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur statut de publication. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Évaluation] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur évaluation moyenne. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Chemin d’accès aux options</li><li>Description</li></ul> |
-| [!UICONTROL État d’expiration] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur état d’expiration. | <ul><li>Libellé</li><li>Nom de la propriété</li><li>Description</li></ul> |
-| [!UICONTROL Masqué] | Prédicat de recherche qui définit une propriété de champ masqué pour rechercher des ressources. | <ul><li>Nom de la propriété</li><li>Valeur de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Texte intégral] | Prédicat de recherche permettant d’effectuer une recherche de texte intégral dans un nœud de ressource entier. Il est mappé à l’opérateur jcr:contains. Vous pouvez spécifier un chemin d’accès relatif si vous souhaitez effectuer une recherche de texte intégral sur une partie spécifique du nœud de ressource. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Explorateur de chemins d’accès] | Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré. | <ul><li>Espace réservé</li><li>Chemin racine</li><li>Description</li></ul> |
+| [!UICONTROL Chemin] | Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier plusieurs chemins d’accès en tant qu’options. | <ul><li>Libellé</li><li>Chemin d’accès</li><li>Description</li></ul> |
+| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur statut de publication. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Date relative] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur date de création. Vous pouvez, par exemple, configurer des options telles qu’il y a 2 mois, il y a 3 semaines, etc. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Date relative</li></ul> |
+| [!UICONTROL Étendue] | Prédicat de recherche permettant de rechercher des ressources comprises dans une plage spécifiée. Vous pouvez spécifier, dans le panneau Rechercher, les valeurs minimale et maximale de la plage concernée. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Période] | Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau de recherche, vous pouvez spécifier des dates de début et de fin à l’aide du sélecteur de dates. | <ul><li>Libellé</li><li>Espace réservé</li><li>Nom de propriété</li><li>Texte de la plage (De)</li><li>Texte de la plage (À)</li><li>Description</li></ul> |
+| [!UICONTROL Date] | Prédicat de recherche permettant de rechercher à l’aide d’un curseur des ressources selon une propriété de date. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Taille de fichier] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur taille. Il s’agit d’un prédicat basé sur un curseur, dans lequel vous sélectionnez les options de curseur à partir d’un nœud configurable. Les options par défaut sont définies sous /libs/dam/options/predicates/filesize dans le référentiel CRXDE. La taille du fichier est exprimée en octets. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Chemin d’accès</li><li>Description</li></ul> |
+| [!UICONTROL Dernière modification de la ressource] | Prédicat de recherche permettant de rechercher des ressources récemment modifiées. | <ul><li>Nom de propriété</li><li>Valeur de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Statut de publication] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur statut de publication. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Évaluation] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur évaluation moyenne. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Chemin d’accès aux options</li><li>Description</li></ul> |
+| [!UICONTROL État d’expiration] | Prédicat de recherche permettant de rechercher des ressources en fonction de leur état d’expiration. | <ul><li>Libellé</li><li>Nom de propriété</li><li>Description</li></ul> |
+| [!UICONTROL Masqué] | Prédicat de recherche qui définit une propriété de champ masqué pour rechercher des ressources. | <ul><li>Nom de propriété</li><li>Valeur de propriété</li><li>Description</li></ul> |
 
 ## Restauration des facettes de recherche par défaut {#restoring-default-search-facets}
 

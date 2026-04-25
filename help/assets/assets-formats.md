@@ -8,10 +8,10 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 100%
+source-wordcount: '2045'
+ht-degree: 98%
 
 ---
 
@@ -309,7 +309,8 @@ La liste suivante décrit les sous-types de formats de fichiers d’images matri
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
 
-<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
+<!--
+Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
 The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
@@ -338,7 +339,7 @@ Consultez [Utilisation de ressources 3D dans Dynamic Media](/help/assets/asset
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide d’appareils Safari ou iOS. |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ou interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide d’appareils Safari et iOS. |
 
 >[!MORELIKETHIS]
 >

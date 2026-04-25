@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3480'
 ht-degree: 97%
 
 ---
@@ -22,7 +22,7 @@ L’imagerie dynamique applique les caractéristiques de visualisation uniques d
 
 ## À propos de l’imagerie dynamique {#what-is-smart-imaging}
 
-La technologie d’imagerie dynamique applique les fonctionnalités de l’IA d’Adobe et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+La technologie d’imagerie dynamique applique les fonctionnalités d’Adobe AI et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
 De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (Large Contentful Paint) grâce à l’amélioration de l’imagerie dynamique, qui s’accompagne désormais de la prise en charge d’AVIF et de WebP.
 
@@ -59,12 +59,14 @@ Comparez WebP et AVIF à PNG, vous pouvez constater une réduction de la taille 
 
 Consultez également la section [Optimisation des images avec des formats d’image de nouvelle génération (WebP et AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 ## Avantages de l’imagerie dynamique {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -106,7 +108,7 @@ Actuellement, la densité en pixels de l’affichage provient des valeurs d’en
 >[!NOTE]
 >
 >* Vous pouvez utiliser `dpr=on,dprValue` même si le paramètre DPR au niveau de la société est désactivé.
->* En raison de l’optimisation du DPR, lorsque l’image créée est supérieure au paramètre MaxPix Dynamic Media, la largeur MaxPix est toujours reconnue en conservant les proportions de l’image.
+>* Avec l’optimisation du DPR, lorsque l’image créée est supérieure au paramètre MaxPix Dynamic Media, la largeur MaxPix est toujours reconnue en conservant les proportions de l’image.
 
 | Taille de l’image demandée | Valeur de Ratio pixel de l’appareil (dpr) | Taille de l’image diffusée |
 |---|---|---|
@@ -131,7 +133,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 
 * Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la technologie d’imagerie dynamique la plus récente.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
-* Utilise la technologie d’IA d’Adobe pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
+* Utilise la technologie Adobe AI pour effectuer la conversion en fonction de la qualité (`qlt`) spécifiée dans la demande d’image.
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clientes et les clients qui utilisent des en-têtes personnalisés dans leur ensemble de règles bénéficient de la version de l’imagerie intelligente la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente.
@@ -203,7 +205,8 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -288,7 +291,7 @@ Le service clientèle traite les demandes dans l’ordre dans lequel elles sont 
 
 +++
 
-+++Quels sont les risques liés au passage à l’imagerie dynamique ? 
++++Quels sont les risques liés au passage à l’imagerie dynamique ?
 
 La page web d’un client ne présente aucun risque. Cependant, la transition à l’imagerie dynamique efface votre cache CDN. Cette opération implique de passer à une nouvelle configuration de Dynamic Media Classic ou Dynamic Media sur Experience Manager.
 
@@ -337,8 +340,7 @@ Cet en-tête vous indique ce qui suit :
 >
 >Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que WebP est toujours en cours de diffusion, l’imagerie dynamique est active. Toutefois, les avantages de taille n’étaient pas calculés en raison d’un cache obsolète. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
 >Exemple d’utilisation du modificateur :
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
 
 +++
 
@@ -348,7 +350,7 @@ Si vous souhaitez revenir au service WebP par défaut, créez un dossier de supp
 
 +++
 
-+++Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ? 
++++Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ?
 
 Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modificateurs suivants :
 
@@ -358,7 +360,7 @@ Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modif
 
 +++
 
-+++Quel « réglage » est disponible ? Existe-t-il des paramètres ou des comportements pouvant être définis ? 
++++Quel « réglage » est disponible ? Existe-t-il des paramètres ou des comportements pouvant être définis ?
 
 L’imagerie dynamique offre trois options que vous pouvez activer ou désactiver.
 

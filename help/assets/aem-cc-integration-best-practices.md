@@ -8,18 +8,18 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
-workflow-type: ht
-source-wordcount: '3173'
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '3371'
 ht-degree: 100%
 
 ---
 
-# Bonnes pratiques d’intégration d’[!DNL Adobe Experience Manager] et de [!DNL Creative Cloud]  {#aem-and-creative-cloud-integration-best-practices}
+# Bonnes pratiques d’intégration d’[!DNL Adobe Experience Manager] et de [!DNL Creative Cloud] {#aem-and-creative-cloud-integration-best-practices}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | Cet article |
 
 [!DNL Adobe Experience Manager Assets] est une solution de gestion des ressources numériques (DAM) qui peut s’intégrer à [!DNL Adobe Creative Cloud] pour aider les utilisateurs de la gestion des ressources numériques à travailler avec des équipes créatives, en rationalisant la collaboration en matière de création de contenu.
@@ -54,7 +54,8 @@ Cet article se concentre principalement sur les deux premiers aspects des besoin
 
 ### Correspondance entre cas d’utilisation et solutions Adobe {#mapping-of-use-cases-and-adobe-solutions}
 
-<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+<!--
+TBD: Add some info about XD integration and possibly info about DA v2.0.
 -->
 
 | Cas d’utilisation | [!DNL Adobe Asset Link] | Appli de bureau [!DNL Experience Manager] | Remarques / Autres solutions |
@@ -111,11 +112,11 @@ Voici un bref résumé des bonnes pratiques pour l’intégration d’[!DNL Expe
 
 ### Accès aux ressources [!DNL Adobe Stock] à partir d’[!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
-L’[intégration d’Experience Manager et d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md) permet aux utilisateurs d’[!DNL Experience Manager] de rechercher, de prévisualiser, d’obtenir des licences et d’enregistrer des ressources à partir d’[!DNL Adobe Stock] dans [!DNL Experience Manager]. Les ressources [!DNL Stock] sous licence et enregistrées possèdent des métadonnées [!DNL Stock] qui peuvent être utilisées pour les rechercher avec des filtres supplémentaires. 
+L’[intégration d’Experience Manager et d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md) permet aux utilisateurs d’[!DNL Experience Manager] de rechercher, de prévisualiser, d’obtenir des licences et d’enregistrer des ressources à partir d’[!DNL Adobe Stock] dans [!DNL Experience Manager]. Les ressources [!DNL Stock] sous licence et enregistrées possèdent des métadonnées [!DNL Stock] qui peuvent être utilisées pour les rechercher avec des filtres supplémentaires.
 
 Quelques points importants à savoir concernant cette intégration :
 
-* Lorsque des ressources Adobe Stock sont enregistrées dans [!DNL Experience Manager], elles deviennent des ressources [!DNL Assets] standard, avec un binaire enregistré dans le référentiel [!DNL Experience Manager]. Certaines métadonnées liées à [!DNL Adobe Stock] sont enregistrées pour la ressource dans [!DNL Experience Manager]. Sinon, le processus d’ingestion ressemble à celui de tout autre fichier. Par exemple, si les balises dynamiques sont actives, les balises sont ajoutées à ces fichiers lors de l’enregistrement.
+* Lorsque des ressources Adobe Stock sont enregistrées dans [!DNL Experience Manager], elles deviennent des ressources [!DNL Assets] standard, avec un binaire enregistré dans le référentiel [!DNL Experience Manager]. Certaines métadonnées liées à [!DNL Adobe Stock] sont enregistrées pour la ressource dans [!DNL Experience Manager]. Sinon, le processus d’ingestion ressemble à celui de tout autre fichier. Par exemple, si les balises intelligentes sont actives, les balises sont ajoutées à ces fichiers lors de l’enregistrement.
 * La ressource enregistrée dans [!DNL Experience Manager] est une copie et non un lien vers [!DNL Adobe Stock].
 
 **Utilisation des ressources enregistrées depuis [!DNL Adobe Stock] dans [!DNL Experience Manager], dans[!DNL Creative Cloud]**. Cette intégration est indépendante d’[!DNL Adobe Asset Link], mais [!DNL Adobe Asset Link] reconnaît ces ressources enregistrées depuis [!DNL Stock] de cette manière, et affiche des métadonnées supplémentaires et un logo [!DNL Adobe Stock] sur ces ressources dans l’interface utilisateur d’extension [!DNL Adobe Asset Link] dans [!DNL Photoshop], [!DNL Illustrator] ou [!DNL InDesign]. Les fichiers peuvent être parcourus, ouverts, etc., car ils deviennent des ressources standard lorsqu’ils sont enregistrés dans [!DNL Experience Manager].
@@ -126,7 +127,7 @@ Les [!DNL Assets] d’[!DNL Adobe Stock] sous licence et enregistrées dans [!DN
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
 -->
 
-## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM)  {#about-storing-assets-in-a-dam}
+## À propos du stockage de ressources dans un système de gestion des ressources numériques (DAM) {#about-storing-assets-in-a-dam}
 
 Pour établir un workflow efficace entre les équipes créatives et marketing/métier, et sélectionner les meilleures fonctionnalités de prise en charge, il est important de comprendre quand et pourquoi les ressources sont stockées dans la gestion des ressources numériques (DAM).
 
@@ -167,7 +168,7 @@ Voici des exemples de mises à jour qui ne sont généralement pas pertinentes 
 * Les premières versions des ressources chargées avant qu’elles ne soient prêtes pour la révision marketing.
 * Modifications créatives fréquentes de la ressource au cours de la phase de travail en cours avant que les équipes créatives et marketing ne décident que la ressource est prête
 
-### Accès des utilisateurs à la gestion des ressources numériques (DAM)  {#user-access-to-dam}
+### Accès des utilisateurs à la gestion des ressources numériques (DAM) {#user-access-to-dam}
 
 [!DNL Assets] prend en charge deux types d’utilisateurs selon leur accès au déploiement d’[!DNL Assets]. En règle générale, les utilisateurs à l’intérieur du réseau d’entreprise (pare-feu) ont un accès direct à la gestion des ressources numériques (DAM). Les autres utilisateurs à l’extérieur du réseau d’entreprise n’auront pas d’accès direct. Le type d’utilisateur détermine les intégrations qui peuvent être utilisées du point de vue technique.
 
@@ -195,7 +196,7 @@ Comme nous l’avons vu dans ce document, il est recommandé d’effectuer des m
 Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 
 * Lorsque les utilisateurs de [!DNL Photoshop], de [!DNL InDesign] ou d’[!DNL Illustrator] souhaitent modifier un fichier, ils effectuent une opération d’extraction sur la ressource donnée.
-* La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des utilisateurs synchronisés sur le disque par l’application de bureau Creative Cloud et l’indicateur d’extraction est activé sur la ressource dans [!DNL Experience Manager] afin de minimiser les conflits de modification.
+* La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des utilisateurs et utilisatrices (synchronisé sur le disque par l’application de bureau Creative Cloud) et l’indicateur d’extraction est activé sur la ressource dans [!DNL Experience Manager] afin de minimiser les conflits de modification.
 * À partir de là, la personne travaille dans un fichier qui est stocké localement à l’emplacement synchronisé et peut continuer à travailler et à enregistrer les modifications nécessaires à n’importe quelle fréquence.
 * En outre, puisque la ressource se trouve dans le compte de Creative Cloud, elle est également disponible sur d’autres appareils que la personne peut posséder (par exemple, elle peut être ouverte ou modifiée dans une application mobile de Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs et utilisatrices de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans [!DNL Experience Manager] est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’[!DNL Experience Manager] comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie de ressource d’[!DNL Experience Manager].
@@ -228,7 +229,7 @@ Si vous utilisez des partages de fichiers réseau pour gérer les ressources num
 
 #### Migration de ressources {#asset-migration}
 
-Pour planifier et exécuter des migrations de ressources d’un système existant vers un nouveau système ou la migration d’un grand volume de ressources stockées sur les serveurs, reportez-vous au [Guide de migration](/help/assets/assets-migration-guide.md). L’application de bureau [!DNL Experience Manager] et les intégrations d’[!DNL Experience Manager] avec [!DNL Creative Cloud] ne prennent pas en charge de telles migrations. En raison des grands volumes de ressources à assimiler et des exigences supplémentaires en termes de mappage, de transformation et d’intégration des métadonnées, les migrations doivent être gérées à l’aide d’outils et d’approches différents.
+Pour planifier et exécuter des migrations de ressources d’un système existant vers un nouveau système ou la migration d’un grand volume de ressources stockées sur les serveurs, reportez-vous au [Guide de migration](/help/assets/assets-migration-guide.md). L’application de bureau [!DNL Experience Manager] et les intégrations d’[!DNL Experience Manager] avec [!DNL Creative Cloud] ne prennent pas en charge de telles migrations. En raison des grands volumes de ressources à ingérer et des exigences supplémentaires en termes de mappage, de transformation et d’intégration des métadonnées, les migrations doivent être gérées à l’aide d’outils et d’approches différents.
 
 >[!MORELIKETHIS]
 >

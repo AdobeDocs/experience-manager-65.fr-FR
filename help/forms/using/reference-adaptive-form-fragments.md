@@ -8,9 +8,9 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '399'
 ht-degree: 100%
 
 ---
@@ -42,9 +42,11 @@ Comprend des champs permettant de spécifier l’adresse postale. Les champs dis
 
 ![Fragment d’adresse](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Coordonnées {#contact-information}
 
@@ -52,9 +54,11 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 
 ![Fragment de coordonnées](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Informations de carte de crédit {#credit-card-information}
 
@@ -67,9 +71,11 @@ Comprend des champs permettant de capturer les informations de l’emploi actuel
 
 ![Fragment d’emploi actuel](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Informations sur les personnes à charge {#dependents-information}
 
@@ -77,9 +83,11 @@ Comprend des champs permettant d’indiquer des informations sur une ou plusieur
 
 ![Fragment d’information sur les personnes à charge](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Historique d’emploi {#employment-history}
 
@@ -87,9 +95,11 @@ Comprend des champs permettant de capturer l’historique des emplois. Il permet
 
 ![Fragment d’historique d’emploi](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Recettes et dépenses {#income-expenditure}
 
@@ -97,9 +107,11 @@ Comprend des champs permettant de capturer les dépenses et le flux de trésorer
 
 ![Fragment de recettes et de dépenses](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nom {#name}
 
@@ -107,9 +119,11 @@ Comprend des champs permettant d’indiquer le titre, le prénom, le deuxième p
 
 ![Fragment de nom](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Conditions générales {#terms-conditions}
 
@@ -117,9 +131,11 @@ Indique les conditions générales que les utilisateurs doivent accepter avant d
 
 ![Fragment de conditions générales](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Conditions générales avec saisie tactile {#terms-conditions-with-scribble}
 
@@ -127,6 +143,8 @@ Indique les conditions générales que les utilisateurs doivent accepter et sign
 
 ![Conditions générales avec Scribble](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

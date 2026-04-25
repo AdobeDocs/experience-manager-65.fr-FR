@@ -9,10 +9,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager inclut plus de 100 commandes de diffusion d’images D
 
 * JPG ou PNG sont les meilleurs choix pour diffuser des images de bonne qualité avec une taille et un poids gérables.
 * Si aucune commande de format n’est fournie dans l’URL, la diffusion d’images Dynamic Media est configurée par défaut sur JPG pour la diffusion.
-* Le format JPG se compresse à un ratio de 10:1 et produit généralement des fichiers image de plus petite taille. Le format PNG compresse selon un ratio d’environ 2:1, sauf dans certains cas, par exemple lorsque les images comportent un arrière-plan blanc. En règle générale, les fichiers PNG sont cependant plus volumineux que les fichiers JPG.
+* JPG compresse à un rapport de 10 :1 et produit généralement des tailles de fichier image plus petites. Le format PNG compresse à un rapport d’environ 2 :1, sauf dans certains cas, par exemple lorsque les images contiennent un arrière-plan blanc. En règle générale, les fichiers PNG sont cependant plus volumineux que les fichiers JPG.
 * Le format JPG utilise la compression avec perte, ce qui signifie que les éléments d’image (pixels) sont supprimés pendant la compression. Le format PNG, en revanche, utilise une compression sans perte.
 * Le format JPG compresse souvent les images photographiques avec une meilleure fidélité que les images synthétiques aux contours et au contraste nets.
 * Si vos images contiennent de la transparence, utilisez le format PNG, car le format JPG ne prend pas en charge la transparence.
@@ -48,8 +48,10 @@ L’accentuation des images est l’aspect le plus complexe du contrôle des ima
 
 Le livre blanc de bonnes pratiques [Accentuation des images dans Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) qui s’applique également à Experience Manager
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Avec Experience Manager, vous pouvez accentuer les images lors de l’ingestion, lors de la diffusion, ou les deux. En général, cependant, accentuez les images en utilisant une seule méthode ou l’autre, mais pas les deux. L’accentuation des images lors de la diffusion, sur une URL, vous donne généralement les meilleurs résultats.
 
@@ -63,7 +65,7 @@ Vous pouvez utiliser deux méthodes d’accentuation d’image :
       * **[!UICONTROL *quantité&#x200B;*]**(0 à 5, intensité de l’effet)
       * **[!UICONTROL *rayon *]**(0 à 250, largeur des « lignes d’accentuation » tracées autour de l’objet accentué, mesurées en pixels.)
 
-     Gardez à l’esprit que les paramètres rayon et quantité fonctionnent l’un par rapport à l’autre. La réduction du rayon peut être compensée en augmentant la quantité. Le rayon permet un contrôle plus précis, car une valeur inférieure accentue uniquement les pixels de contour, tandis qu’une valeur supérieure traite une plus grande plage de pixels.
+     Gardez à l’esprit que les paramètres rayon et montant fonctionnent l’un contre l’autre. La réduction du rayon peut être compensée par une augmentation de la quantité. Le rayon permet un contrôle plus fin, car une valeur faible accentue uniquement les pixels de contour, tandis qu’une valeur élevée accentue une bande plus large de pixels.
 
       * **[!UICONTROL *seuil *]**(0 à 255, sensibilité de l’effet)
 
@@ -88,7 +90,7 @@ Augmentez graduellement la valeur de 1,75 à 4. Si l’accentuation ne vous conv
 
 Laissez le paramètre monochrome sur 0.
 
-### Bonnes pratiques relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Recommandations relatives à la compression JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * Ce paramètre contrôle la qualité du codage des JPG. Une valeur élevée produit une image de meilleure qualité, mais un fichier plus volumineux ; en revanche, une valeur faible signifie une image de qualité inférieure mais un fichier plus petit. La plage de ce paramètre est 0 à 100.
 * Pour optimiser la qualité, ne définissez pas la valeur du paramètre sur 100. La différence entre un paramètre de 90, 95 et 100 est presque imperceptible, mais 100 augmente inutilement la taille du fichier image. En conséquence, pour optimiser la qualité, mais éviter que les fichiers image deviennent trop volumineux, définissez `qlt= value` sur 90 ou 95.
@@ -97,15 +99,15 @@ Laissez le paramètre monochrome sur 0.
 * Utilisation du drapeau chromatique dans le paramètre `qlt=`
 
    * Le paramètre `qlt=` possède un deuxième paramètre qui vous permet d’activer le sous-échantillonnage chromatique RVB à l’aide de la valeur `,1` ou de le désactiver à l’aide de la valeur `,0`.
-   * Pour faire simple, commencez par désactiver le sous-échantillonnage chromatique RVB (`,0`). Ce paramètre produit généralement une image de meilleure qualité, en particulier pour les images de synthèse contenant beaucoup de contours nets et un fort contraste.
+   * Pour garder les choses simples, commencez par désactiver le sous-échantillonnage de la résolution chromatique de RGB (`,0`). Ce paramètre permet généralement d’obtenir une meilleure qualité d’image, en particulier pour les images synthétiques avec de nombreux contours et contraste.
 
 La bonne pratique pour la compression JPG consiste à utiliser `&qlt=85,0`.
 
-## Bonnes pratiques relatives au dimensionnement JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Bonnes pratiques relatives au dimensionnement de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 Le paramètre jpegSize est utile pour garantir qu’une image n’excède pas une certaine taille pour sa diffusion sur les appareils dont la mémoire est limitée.
 
-* Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion de l’image.
+* Ce paramètre est défini en kilo-octets (`jpegSize=&lt;size_in_kilobytes&gt;`). Il définit la taille maximale autorisée pour la diffusion d’images.
 * `&jpegSize=` interagit avec le paramètre de compression JPG `&qlt=`. Si la réponse JPG avec le paramètre de compression JPG spécifié (`&qlt=`) ne dépasse pas la valeur jpegSize, l’image est renvoyée avec `&qlt=`, tel que défini. Sinon, `&qlt=` est graduellement diminué jusqu’à ce que l’image soit ajustée à la taille maximale autorisée ou jusqu’à ce que le système détermine qu’il ne peut pas procéder à l’ajustement et renvoie une erreur.
 
 Une bonne pratique consiste à définir `&jpegSize=` et à ajouter le paramètre `&qlt=` si vous diffusez des images JPG vers des appareils dont la mémoire est limitée.
@@ -118,12 +120,12 @@ En règle générale, pour obtenir une image de qualité élevée mais un fichie
 
 Cette combinaison de paramètres produit d’excellents résultats dans la plupart des cas.
 
-Si l’image nécessite davantage d’optimisation, ajustez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez graduellement la quantité de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
+Si l’image nécessite une optimisation plus poussée, affinez progressivement les paramètres d’accentuation (masquage flou) en commençant par un rayon défini sur 0,2 ou 0,3. Ensuite, augmentez progressivement le montant de 1,75 à un maximum de 4 (équivalent à 400 % dans Photoshop). Vérifiez que le résultat souhaité est obtenu.
 
-Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, relancez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
+Si les résultats de l’accentuation ne sont toujours pas satisfaisants, augmentez le rayon par incréments décimaux. Pour chaque incrément décimal, redémarrez la quantité à 1,75 et augmentez-la progressivement à 4. Répétez cette procédure jusqu’à obtenir le résultat souhaité. Bien que les valeurs ci-dessus soient une approche validée par les studios de création, n’oubliez pas que vous pouvez commencer par d’autres valeurs et suivre d’autres stratégies. Que les résultats vous conviennent ou non est une question subjective, par conséquent l&#39;expérimentation structurée est la clé.
 
 Au fur et à mesure que vous testez votre résultat, les suggestions générales suivantes peuvent être utiles pour continuer à optimiser votre workflow :
 
 * Testez différents paramètres en temps réel, directement sur une URL.
 * Gardez à l’esprit que vous pouvez regrouper les commandes de diffusion d’images Dynamic Media dans un paramètre d’image prédéfini. Il s’agit en outre d’une bonne pratique. Un paramètre d’image prédéfini est, en fait, constitué de macros de commande d’URL avec des noms de paramètres prédéfinis personnalisés tels que `$thumb_low$` et `&product_high$`. Le nom du paramètre prédéfini personnalisé dans un chemin URL appelle ces paramètres prédéfinis. Cette fonctionnalité vous aide à gérer les commandes et les paramètres de qualité pour différents modèles d’utilisation des images sur vos sites web et raccourcit la longueur globale des URL.
-* Experience Manager propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’ingestion. Pour les cas d’utilisation plus complexes pour lesquels il existe des options pour affiner et optimiser le rendu, n’hésitez pas à faire appel à [Adobe Professional Services](https://business.adobe.com/fr/customers/consulting-services/main.html).
+* Experience Manager propose également des méthodes plus élaborées permettant d’optimiser la qualité des images, par exemple en accentuant les images lors de l’ingestion. Pour les cas d’utilisation plus complexes pour lesquels il existe des options pour affiner et optimiser le rendu, n’hésitez pas à faire appel à [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).

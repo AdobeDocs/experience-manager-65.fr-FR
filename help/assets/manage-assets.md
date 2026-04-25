@@ -8,10 +8,10 @@ mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10038'
-ht-degree: 100%
+source-wordcount: '10234'
+ht-degree: 97%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Dans [!DNL Adobe Experience Manager Assets], vous pouvez faire plus que stocker et gérer vos ressources. [!DNL Experience Manager] offre des fonctionnalités de gestion des ressources de niveau entreprise. Vous pouvez modifier et partager des ressources, lancer des recherches avancées et créer plusieurs rendus de dizaines de formats de fichiers pris en charge. Vous pouvez également gérer les versions et les droits numériques, automatiser le traitement des ressources, gérer et gouverner les métadonnées, collaborer à l’aide d’annotations, et bien plus.
 
 Cet article décrit les tâches de base de la gestion des ressources, telles que la création ou le chargement, la mise à jour des métadonnées, la copie, le déplacement et la suppression, la publication, la dépublication et la recherche de ressources. Pour comprendre l’interface utilisateur, consultez la [prise en main de l’interface utilisateur d’Assets](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, consultez les ressources [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md).
 
-## Création de dossiers  {#creating-folders}
+## Création de dossiers {#creating-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
@@ -48,7 +48,8 @@ N’incluez pas de caractères spéciaux dans les extensions des noms de fichier
 
 ## Chargement de ressources {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
@@ -63,7 +64,7 @@ Vous pouvez charger différents types de ressource (dont des images, des fichier
 >
 >Les ressources que vous chargez dans Experience Manager dont le nom de fichier est supérieur à 100 caractères ont un nom raccourci lorsqu’elles sont utilisées dans Dynamic Media.
 >
->Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Cela est également prévu pour s’adapter à la longueur maximale du nom du fichier de ressource autorisée dans Dynamic Media.
+>Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Elle est également prévue pour s’adapter à la longueur maximale du nom du fichier de ressource autorisée dans Dynamic Media.
 
 Vous pouvez choisir de charger des ressources dans des dossiers avec ou sans profil de traitement.
 
@@ -170,9 +171,9 @@ Dynamic Media permet de charger des ressources par lots via un serveur FTP. Si 
 
 >[!NOTE]
 >
->Pour charger des ressources via FTP dans Dynamic Media Scene7, installez le pack de fonctionnalités 18912 dans les instances d’auteur [!DNL Experience Manager]. Contactez l’[assistance clientèle Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr#support) pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, consultez la section [Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour charger des ressources via FTP dans Dynamic Media Scene7, installez le pack de fonctionnalités 18912 dans les instances de création [!DNL Experience Manager]. Contactez l’[assistance clientèle Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support) pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, consultez la section [Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 >
->Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de chargement spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers telles que définies dans Dynamic Media Classic sont utilisées à la place. 
+>Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de chargement spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers telles que définies dans Dynamic Media Classic sont utilisées à la place.
 
 **Chargement de ressources par FTP**
 
@@ -185,7 +186,7 @@ Dynamic Media permet de charger des ressources par lots via un serveur FTP. Si 
 1. Cliquez sur **[!UICONTROL Charger]** dans la barre de navigation globale.
 1. Sur la page Charger, près du coin supérieur gauche, cliquez sur l’onglet **[!UICONTROL Via FTP]**.
 1. Sur le côté gauche de la page, sélectionnez un dossier FTP à partir duquel charger les fichiers. Sur le côté droit de la page, sélectionnez un dossier de destination.
-1. Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Options de la tâche]** puis définissez les options de votre choix en fonction des ressources du dossier que vous avez sélectionné.
+1. Dans le coin inférieur droit de la page, cliquez sur **[!UICONTROL Options de la tâche]**, puis définissez les options de votre choix en fonction des ressources du dossier que vous avez sélectionné.
 
    Voir [Options de chargement des tâches](#upload-job-options).
 
@@ -210,15 +211,15 @@ Pour annuler une tâche de chargement en cours, cliquez sur **[!UICONTROL Annule
 | Options de tâche | | Cliquez sur **[!UICONTROL Options de tâche]** afin d’ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche] et de sélectionner des options qui affectent l’ensemble de la tâche de chargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour charger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez l’option **[!UICONTROL Options de chargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche]. |
 | | Quand | Sélectionnez Unique ou Récurrent. Pour définir une tâche récurrente, sélectionnez une option Répéter (Quotidienne, Hebdomadaire, Mensuelle ou Personnalisée) pour indiquer à quel moment la tâche de chargement FTP doit se répéter. Spécifiez ensuite les options de planification selon vos besoins. |
 | | Inclure les sous-dossiers | Chargez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et des sous-dossiers chargés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
-| | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. Le recadrage de l’image dépend du paramètre ppp (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous entrez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Ces options de recadrage sont non destructives. |
+| | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. Le recadrage de l’image dépend du paramètre ppp (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est recadré de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Ces options de recadrage sont non destructives. |
 | | Options de profil colorimétrique | Choisissez une conversion de la couleur lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’y a pas de conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : conserve les couleurs d’origine sans conversion des couleurs à cet endroit. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur dans les fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique d&#39;origine et un espace colorimétrique de destination. Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
-| | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Consultez la section [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
-| | Options Postscript | Vous pouvez rasteriser les fichiers PostScript®, les recadrer; conserver les arrière-plans transparents, choisir une résolution et sélectionner un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Consultez la section [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
-| | Options de PDF | Vous pouvez rasteriser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un eCatalogue, définir la résolution et choisir un espace colorimétrique.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Consultez la section [Définition des options de chargement PDF](#setting-pdf-upload-options).<br>**Remarque** : le nombre maximal de pages de PDF acceptable pour une extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md). |
-| | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un préréglage vidéo.<br> Consultez la section [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
-| | Paramètres prédéfinis de lot | Pour créer un ensemble d’images ou un ensemble de vues à 360° à partir des images téléchargées, cliquez sur la colonne active correspondant au paramètre prédéfini que vous souhaitez utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Consultez la section [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
+| | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
+| | Options Postscript | Vous pouvez pixelliser des fichiers PostScript® et des fichiers de recadrage, conserver les arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Voir [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la manière dont les calques sont nommés, extraire du texte et définir la manière dont les images sont ancrées dans des modèles<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Voir [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
+| | Options de PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace colorimétrique.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Voir [Définition des options de chargement PDF](#setting-pdf-upload-options).<br>**Remarque** : le nombre maximal de pages qu’un PDF doit prendre en compte pour l’extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md). |
+| | Options Illustrator | Vous pouvez pixelliser des fichiers Adobe Illustrator®, conserver les arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Voir [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Options eVideo | Vous pouvez transcoder un fichier vidéo en choisissant un paramètre vidéo prédéfini.<br> Voir [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
+| | Paramètres prédéfinis de lot | Pour créer un ensemble d’images ou une visionneuse à 360° à partir des images chargées, cliquez sur la colonne active correspondant au paramètre prédéfini que vous souhaitez utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis dans la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br> Voir [Configuration des paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot.<br> Voir [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
 
 #### Définition d’options pour les modifications d’image lors du chargement {#setting-image-editing-options-at-upload}
 
@@ -289,7 +290,7 @@ Utilisez les [!UICONTROL options de recadrage] et de [!UICONTROL profil de coule
 
 Lorsque vous chargez un fichier PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer ses pages, extraire des mots de recherche, saisir une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers PDF contiennent souvent une marge de rognage, des traits de coupe, des repères de montage et d’autres repères d’impression. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous téléchargez un fichier PDF.
 
-Le nombre maximal de pages de PDF acceptable pour une extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
+Le nombre maximal de pages pour qu’un PDF soit considéré pour l’extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >
@@ -301,7 +302,7 @@ Faites votre choix parmi les options suivantes :
 |---|---|---|
 | Traitement | Pixelliser | (Par défaut) Pixellise les pages du fichier PDF et convertit les graphiques vectoriels en images bitmap. Choisissez cette option si vous souhaitez créer un catalogue électronique. |
 | Extraire | Mots de recherche | Extrait les mots du fichier PDF afin que le fichier puisse être recherché par mot-clé dans une visionneuse de catalogue électronique. |
-| | Liens | Extrait les liens des fichiers PDF et les convertit en images interactives utilisées dans une visionneuse de catalogue électronique. |
+| | Liens | Extrait les liens des fichiers PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
 | Génération automatique d’un catalogue électronique à partir d’un PDF de plusieurs pages. | | Crée automatiquement un catalogue électronique à partir du fichier PDF. Le catalogue électronique est nommé d’après le fichier PDF que vous avez chargé. (Cette option n’est disponible que si vous pixellisez le fichier PDF au fur et à mesure de son chargement.) |
 | Résolution | | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier PDF. La valeur par défaut est de 150. |
 | Espace colorimétrique | | Sélectionnez le menu Espace colorimétrique et choisissez un espace colorimétrique pour le fichier PDF. La plupart des fichiers PDF comportent des images en couleur RVB et CMJN. L’espace colorimétrique RVB est préférable pour l’affichage en ligne. |
@@ -324,13 +325,13 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 
 #### Définition de paramètres prédéfinis d’ensemble par lot lors du chargement {#setting-batch-set-presets-at-upload}
 
-Si vous souhaitez créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir d’images chargées, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
+Si vous souhaitez créer automatiquement un ensemble d’images ou une visionneuse à 360° à partir d’images chargées, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis.
 
-Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des ensembles d’images et des visionneuses à 360°](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous chargez de nombreuses ressources vers Adobe Experience Manager, les requêtes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner l’expiration de certaines tâches de chargement. [!DNL Experience Manager Assets] prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont directement transférées vers le référentiel. Ainsi, le temps de chargement des ressources volumineuses et la possibilité de dépassements de délai sont réduits. Le chargement en continu est activé par défaut dans [!DNL Assets].
+Si vous chargez de nombreuses ressources vers Adobe Experience Manager, les requêtes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner la temporisation de certaines tâches de chargement. [!DNL Experience Manager Assets] prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont directement transférées vers le référentiel. Ainsi, le temps de chargement des ressources volumineuses et la possibilité de temporisations sont réduits. Le chargement en continu est activé par défaut dans [!DNL Assets].
 
 >[!NOTE]
 >
@@ -399,7 +400,7 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit 
 
    >[!NOTE]
    >
-   >La disposition de la page [!UICONTROL Propriétés] et les propriétés des métadonnées disponibles dépendent du schéma de métadonnées sous-jacent. Pour savoir comment modifier la disposition de la page [!UICONTROL Propriétés], voir [Schémas des métadonnées](/help/assets/metadata-schemas.md).
+   >La disposition de la page [!UICONTROL Propriétés] et les propriétés des métadonnées disponibles dépendent du schéma de métadonnées sous-jacent. Pour savoir comment modifier la disposition de la page [!UICONTROL Propriétés], voir [Schémas de métadonnées](/help/assets/metadata-schemas.md).
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
@@ -661,7 +662,7 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 
 ### Navigation et sélection des ressources {#navigating-and-selecting-assets}
 
-Grâce à l’option **[!UICONTROL Sélectionner]**, vous pouvez afficher des ressources, les parcourir et les sélectionner dans les modes disponibles (Carte, Colonnes et Liste). 
+Grâce à l’option **[!UICONTROL Sélectionner]**, vous pouvez afficher des ressources, les parcourir et les sélectionner dans les modes disponibles (Carte, Colonnes et Liste).
 
 Dans la vue Liste et la vue Colonnes, l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous placez le pointeur sur la miniature de la ressource.
 
@@ -673,7 +674,7 @@ Pour plus d’informations, reportez-vous à la section [Affichage et sélection
 
 ## Modification des images {#editing-images}
 
-Les outils de modification de l’interface d’[!DNL Assets] permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer, faire pivoter, retourner et effectuer d’autres tâches de modification sur les images. Vous pouvez également ajouter des images interactives aux ressources.
+Les outils de modification de l’interface d’[!DNL Assets] permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer, faire pivoter, retourner et effectuer d’autres tâches de modification sur les images. Vous pouvez également ajouter des zones cliquables aux ressources.
 
 >[!NOTE]
 >
@@ -704,7 +705,7 @@ Les outils de modification de l’interface d’[!DNL Assets] permettent d’eff
 >
 >La modification d’images est prise en charge pour les formats de fichiers BMP, GIF, PNG et JPEG.
 
-Vous pouvez également ajouter des images interactives à l’aide de l’éditeur d’images. Pour plus d’informations, voir [Ajout d’images interactives](/help/assets/image-maps.md).
+Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur d’images. Pour plus d’informations, voir [Ajout de zones cliquables](/help/assets/image-maps.md).
 
 >[!NOTE]
 >
@@ -744,7 +745,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-1. Pour informer un utilisateur ou une utilisatrice d’une annotation, indiquez son adresse e-mail et ajoutez le commentaire. Par exemple, pour informer Aaron MacDonald d’une annotation, saisissez @aa. Des conseils à l’attention des utilisateurs concernés apparaissent dans une liste. Sélectionnez l’adresse e-mail d’Aaron dans la liste afin de taguer la personne avec le commentaire. De même, vous pouvez taguer d’autres personnes à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
+1. Pour informer un utilisateur ou une utilisatrice d’une annotation, indiquez son adresse e-mail et ajoutez le commentaire. Par exemple, pour informer Aaron MacDonald d’une annotation, saisissez @aa. Des conseils à l’attention des personnes concernées apparaissent dans une liste. Sélectionnez l’adresse e-mail d’Aaron dans la liste afin de taguer la personne avec le commentaire. De même, vous pouvez taguer d’autres personnes à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
    ![Préciser l’adresse e-mail de l’utilisateur et ajouter un commentaire pour l’en informer](assets/annotate-gif.gif)
 
@@ -763,7 +764,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    >[!NOTE]
    >
-   >Vous pouvez également ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](/help/assets/managing-video-assets.md). Le format vidéo MXF n’est pas encore pris en charge avec les annotations de vidéo.
+   >Vous pouvez également ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](/help/assets/managing-video-assets.md). Le format vidéo MXF n’est pas encore pris en charge avec les annotations de vidéo.
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez sur l’option Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 

@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '2085'
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '2116'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 
 * **Gestion de contenu Web AEM**
 
-  Différents aspects peuvent être configurés directement dans la gestion de contenu Web AEM, à l’aide de la console [Outils](/help/sites-administering/tools-consoles.md) ; par exemple, les agents de réplication.
+  Différents aspects peuvent être configurés directement dans la gestion de contenu web AEM, à l’aide de la console [Outils](/help/sites-administering/tools-consoles.md) ; par exemple, les agents de réplication.
 
 >[!NOTE]
 >
@@ -206,9 +206,11 @@ Les [performances](/help/sites-deploying/configuring-performance.md) sont la cl�
 
 Pour plus de détails, voir [Configurer les performances](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Magasin de données partagé {#shared-data-store}
 
@@ -252,7 +254,7 @@ Pour éviter de telles exceptions, procédez comme suit :
 
    Ce contrôle dépend de la plateforme sur laquelle votre instance est en cours d’exécution. Des utilitaires tels qu’lsof (UNIX®) ou Process Explorer (Windows) peuvent être utilisés.
 
-    Cette valeur doit être contrôlée au cours du développement et du test de façon à :
+   Cette valeur doit être contrôlée au cours du développement et du test de façon à :
 
    * confirmer que les fichiers sont fermés selon les besoins ;
    * pour déterminer la valeur maximale nécessaire (selon diverses circonstances)
@@ -291,7 +293,7 @@ CQ envoie des notifications par e-mail aux utilisateurs et utilisatrices qui :
 
 * Ont souscrit à des événements de page, par exemple une modification ou une réplication.
 * Ont souscrit aux événements de forum.
-* doivent effectuer une opération dans un workflow.
+* Doivent effectuer une opération dans un workflow.
 
 Pour plus d’informations, consultez [Configuration des notifications par e-mail](/help/sites-administering/notification.md).
 

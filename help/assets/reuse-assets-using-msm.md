@@ -8,9 +8,9 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3312'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 La fonctionnalité Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager] permet aux utilisateurs de réutiliser du contenu créé une fois et de le réutiliser à plusieurs emplacements sur le web. Il en est de même pour les ressources numériques que pour la fonctionnalité MSM pour [!DNL Assets]. À l’aide de MSM pour [!DNL Assets], vous pouvez :
@@ -116,7 +116,7 @@ Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 >
 >Conseil : Pour vérifier l’état de quelques copies en direct distinctes, utilisez la première méthode de la page **[!UICONTROL Propriétés]**. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode pour vérifier l’**[!UICONTROL État de la relation]** de la page.
 
-### Informations et état d’une Live Copy   {#statuslcasset}
+### Informations et état d’une Live Copy {#statuslcasset}
 
 Pour vérifier les informations et les statuts d’une ressource ou d’un dossier de Live Copy, procédez comme suit.
 
@@ -162,7 +162,7 @@ Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informat
 * Suspendre la relation ou modifier la configuration du déploiement d’une Live Copy spécifique.
 * Accéder à la console de présentation de la Live Copy.
 
-Sélectionnez la ressource ou le dossier source, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`. 
+Sélectionnez la ressource ou le dossier source, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
 
 ![Actions et informations disponibles dans le rail Références pour la source sélectionnée](assets/referencerail_source.png)
 
@@ -174,7 +174,7 @@ Pour une Live Copy spécifique, cliquez sur **[!UICONTROL Modifier la Live Copy]
 
 *Image : suspension de la relation ou modification de la configuration du déploiement d’une Live Copy spécifique.*
 
-### Actions rapides pour une Live Copy depuis le rail Références   {#ref-rail-lc}
+### Actions rapides pour une Live Copy depuis le rail Références {#ref-rail-lc}
 
 Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informations et effectuer les actions suivantes directement depuis le rail Références :
 
@@ -182,13 +182,13 @@ Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informat
 * Ouvrir ou afficher une Live Copy spécifique dans l’interface utilisateur d’[!DNL Experience Manager].
 * Déployer les mises à jour.
 
-Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`. 
+Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
 
 ![Actions disponibles dans le rail Références pour la Live Copy sélectionnée](assets/referencerail_livecopy.png)
 
 *Image : actions disponibles dans le rail des Références pour la Live Copy sélectionnée.*
 
-## Propagation des modifications de la source vers les Live Copies   {#rolloutsync}
+## Propagation des modifications de la source vers les Live Copies {#rolloutsync}
 
 Une fois une source modifiée, les modifications peuvent être propagées aux Live Copies à l’aide d’une action de synchronisation ou de déploiement. Pour comprendre la différence entre les deux actions, voir le [glossaire](#glossary).
 
@@ -225,7 +225,7 @@ Une action de synchronisation extrait les modifications d’une source uniquemen
 | Barre d’outils dans la page [!UICONTROL Propriétés] | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#sync-lc) |
 | [!UICONTROL Console Aperçu de la Live Copy] | Synchronisez rapidement plusieurs ressources (pas nécessairement toutes) lorsque le dossier source est sélectionné ou que la console [!UICONTROL Aperçu de la Live Copy] est déjà ouverte. L’action de synchronisation est lancée pour une ressource à la fois. Il s’agit toutefois d’une méthode plus rapide pour synchroniser plusieurs ressources simultanément. | Voir [Actions sur plusieurs ressources dans un dossier de Live Copy](#bulk-actions). |
 
-### Synchronisation d’une Live Copy   {#sync-lc}
+### Synchronisation d’une Live Copy {#sync-lc}
 
 Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
@@ -259,7 +259,7 @@ Vous pouvez annuler toutes les modifications locales et rétablir l’état de l
 
 *Image : l’action de réinitialisation remplace les modifications locales et apporte une partie de la Live Copy avec sa source.*
 
-## Suppression d’une relation dynamique   {#detach}
+## Suppression d’une relation dynamique {#detach}
 
 Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide de l’action Désolidariser. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Elle s’affiche en tant que nouvelle ressource dans l’interface [!DNL Experience Manager], immédiatement après la désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit.
 

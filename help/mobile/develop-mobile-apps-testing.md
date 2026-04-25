@@ -9,10 +9,10 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 0%
+source-wordcount: '979'
+ht-degree: 1%
 
 ---
 
@@ -72,7 +72,7 @@ Pour plus d’informations, consultez [https://www.selenium.dev/](https://www.se
 **Testdroid**
 
 * Un service de test basé sur le cloud avec des hooks d’intégration continus et des tests d’appareils réels.
-* Un moteur de recherche d’applications est inclus pour vérifier la compatibilité des appareils, analyser les journaux, parcourir les vues, prendre des captures d’écran et surveiller les performances.
+* Un Robot d&#39;exploration d’application est inclus pour vérifier la compatibilité des appareils, analyser les journaux, parcourir les vues, prendre des captures d’écran et surveiller les performances.
 
 Pour plus d’informations, voir [https://testdroid.com/](https://testdroid.com/).
 
@@ -90,12 +90,14 @@ Pour plus d’informations, voir [https://appium.io/](https://appium.io/).
 
 Pour plus d’informations, voir [https://saucelabs.com/](https://saucelabs.com/).
 
-<!-- **AppTestNow**
+<!--
+**AppTestNow**
 
 * An outsourcing service that tests your mobile apps.
 * Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
+For more information, see [https://apptestnow.com/](https://apptestnow.com/).
+-->
 
 **HockeyApp**
 

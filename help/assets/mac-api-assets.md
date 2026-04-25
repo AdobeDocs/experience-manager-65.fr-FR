@@ -1,5 +1,5 @@
 ---
-title: « API HTTP [!DNL Assets]. »
+title: API HTTP [!DNL Assets].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
@@ -7,9 +7,9 @@ feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1798'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Vue d’ensemble {#overview}
@@ -145,7 +145,7 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-## Créer une ressource  {#create-an-asset}
+## Créer une ressource {#create-an-asset}
 
 Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel de gestion des ressources numériques. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
 
@@ -178,7 +178,7 @@ Met à jour un fichier binaire de ressource (rendu avec le nom d’origine). La 
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété de l’espace de noms `dc:`, l’API met à jour cette même propriété dans l’espace de noms `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 

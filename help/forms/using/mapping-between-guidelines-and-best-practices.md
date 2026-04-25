@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0948231a-bd9e-4d29-946d-2d8c17e27c28
-source-git-commit: 16b46340c5e0775d19f22f57bca5ea9ab584c51e
-workflow-type: ht
-source-wordcount: '3366'
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+workflow-type: tm+mt
+source-wordcount: '4362'
 ht-degree: 100%
 
 ---
@@ -45,8 +45,8 @@ Les sections suivantes mappent les instructions de la section 508 et WCAG aux b
 | (b) | Les alternatives équivalentes à toute présentation multimédia doivent être synchronisées avec la présentation. | 2.12 Assurer l’accessibilité de tout le contenu multimédia | |
 | (c) | Les pages web doivent être conçues de sorte que toutes les informations véhiculées par la couleur soient également disponibles sans couleur, par exemple à partir du contexte ou des balises. | 2.8 Utiliser des couleurs de manière responsable | |
 | (d) | Les documents doivent être organisés de sorte qu’ils soient lisibles sans qu’une feuille de style associée ne soit nécessaire. | Non applicable | |
-| (e) | Des liens de texte redondants doivent être fournis pour chaque zone active d’une image interactive sur le serveur. | Non applicable | |
-| (f) | Les images interactives sur le client doivent être fournies au lieu des images interactives sur le serveur, sauf lorsque les zones ne peuvent pas être définies avec une forme géométrique disponible. | Non applicable | |
+| (e) | Des liens de texte redondants doivent être fournis pour chaque zone active d’une zone cliquable côté serveur. | Non applicable | |
+| (f) | Les zones cliquables côté client doivent être fournies au lieu des zones cliquables côté serveur, sauf lorsque les zones ne peuvent pas être définies avec une forme géométrique disponible. | Non applicable | |
 | (g) | Les en-têtes de ligne et de colonne doivent être identifiés pour les tableaux de données. | 2.9 Fournir des cellules d’en-tête pour les tableaux | |
 | (h) | Les balises doivent être utilisées pour associer des cellules de données et des cellules d’en-tête aux tableaux de données qui comportent deux niveaux logiques ou plus d’en-têtes de ligne ou de colonne. | 2.9 Fournir des cellules d’en-tête pour les tableaux | |
 | (i) | Les cadres doivent être intitulés avec du texte qui facilite leur identification et leur navigation. | Non applicable | |
@@ -62,7 +62,7 @@ Les sections suivantes mappent les instructions de la section 508 et WCAG aux b
 
 | Point de contrôle | Description du point de contrôle | Bonnes pratiques de LiveCycle Designer requises pour la conformité | Notes |
 |------------|------------------------|-----------------------------------------------------------|-------|
-| [1.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent) | Fournir une équivalence de texte pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, les illustrations ASCII, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo et les fichiers vidéo. | <ul><li>2.4 Fournir des équivalents textuels pour les images</li> <li>2.12 Assurer l’accessibilité de tout le contenu multimédia</li> | |
+| [1.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-text-equivalent) | Fournir une équivalence de texte pour chaque élément non textuel (par exemple, par « alt », « longdesc » ou dans le contenu de l’élément). Cela comprend : les images, les représentations graphiques du texte (y compris les symboles), les zones cliquables, les animations (par exemple, les GIF animés), les applets et les objets programmatiques, l’art ASCII, les cadres, les scripts, les images utilisées comme puces de liste, les espaces, les boutons graphiques, les sons (lus avec ou sans interaction de l’utilisateur ou de l’utilisatrice), les fichiers audio autonomes, les pistes audio de vidéo et les fichiers vidéo. | <ul><li>2.4 Fournir des équivalents textuels pour les images</li> <li>2.12 Assurer l’accessibilité de tout le contenu multimédia</li> | |
 | [1.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-redundant-server-links) | Fournir des liens de texte redondants pour chaque zone active d’une zone cliquable côté serveur. | Non applicable | |
 | [1.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-auditory-descriptions) | Tant que les agents utilisateurs ne sont pas en mesure de lire automatiquement à voix haute l’équivalent textuel d’une piste visuelle, fournir une description auditive des informations importantes de la piste visuelle d’une présentation multimédia. | 2.12 Assurer l’accessibilité de tout le contenu multimédia | |
 | [1.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-synchronize-equivalents) | Pour toute présentation multimédia temporisée (par exemple, un film ou une animation), synchroniser les alternatives équivalentes (par exemple, les sous-titres ou la description auditive de la piste visuelle) avec la présentation. | 2.12 Assurer l’accessibilité de tout le contenu multimédia | |
@@ -74,7 +74,7 @@ Les sections suivantes mappent les instructions de la section 508 et WCAG aux b
 | [6.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-dynamic-source) | S’assurer que les équivalences pour le contenu dynamique soient mises à jour lorsque ledit contenu dynamique change. | 2.11 Éviter les scripts perturbateurs | |
 | [6.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | S’assurer que les pages soient visibles lorsque les scripts, les applets ou autres objets de programmation sont désactivés ou non pris en charge. Si cela n’est pas possible, fournissez des informations équivalentes sur une autre page accessible. | 2.11 Éviter les scripts perturbateurs | |
 | [7.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker) | Tant que les agents utilisateurs ne permettent pas aux utilisateurs et utilisatrices de contrôler le clignotement, éviter de faire clignoter l’écran. | 2.1 Simplification et facilité d’utilisation des formulaires | |
-| [9.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | Prévoir des zones cliquables côté client au lieu de zones cliquables côté serveur, sauf lorsque les zones ne peuvent pas être définies par des formes géométriques disponibles. | Non applicable | |
+| [9.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | Fournir des zones cliquables côté client au lieu de zones cliquables côté serveur, sauf lorsque les zones ne peuvent pas être définies par des formes géométriques disponibles. | Non applicable | |
 | [11.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-alt-pages) | Si, malgré vos efforts, vous ne parvenez pas à créer de page accessible, fournissez un lien vers une autre page qui utilise les technologies W3C, est accessible, dispose d’informations (ou de fonctionnalités) équivalentes et est mise à jour aussi souvent que la page inaccessible (d’origine). | Non applicable | |
 | [12.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-frame-titles) | Donner un titre à chaque cadre pour faciliter l’identification et la navigation entre les cadres. | Non applicable | |
 | [14.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-simple-and-straightforward) | Utiliser le langage le plus clair et le plus simple possible adapté au contenu de votre site. | 2.1 Simplification et facilité d’utilisation des formulaires | |
@@ -163,7 +163,7 @@ Les sections suivantes mappent les instructions de la section 508 et WCAG aux b
 | 2.4 [Navigabilité](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
 | 2.4.1 [Contourner des blocs](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Fournir une structure de formulaire navigable | |
 | 2.4.2 [Titre de page](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Aucune technique de LiveCycle spécifique | |
-| 2.4.3 [Parcours du focus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Assurer l’ordre correct de lecture et de tabulation | |
+| 2.4.3 [Ordre de focus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Assurer l’ordre correct de lecture et de tabulation | |
 | 2.4.4 [Fonction du lien (selon le contexte)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Aucune technique de LiveCycle spécifique | La fonction du lien dépend du choix de texte significatif pour les éléments liés de la part des personnes chargées de la création. |
 | 2.4.5 [Accès multiples](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Fournir une structure de formulaire navigable | |
 | 2.4.6 [En-têtes et libellés](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Fournir des libellés appropriés pour les commandes de formulaire</li><li>2.10 Fournir une structure de formulaire navigable</li> | |

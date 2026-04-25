@@ -9,9 +9,9 @@ exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,8 @@ Salesforce.com est une société de cloud computing d’entreprise leader dans l
 
 Pour plus d’informations sur l’intégration d’AEM Site à Salesforce, consultez la section [Intégrer à Salesforce](/help/sites-administering/salesforce.md).
 
-<!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
+<!--
+THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
@@ -49,7 +50,8 @@ Pour plus d’informations sur l’intégration d’AEM Site à Salesforce, con
 
 Silverpop Engage provides marketing automation, email, mobile, and social.
 
-For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md). -->
+For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md).
+-->
 
 ## Intégrer à ExactTarget {#integrating-with-exacttarget}
 

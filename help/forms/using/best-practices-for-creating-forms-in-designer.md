@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '11685'
-ht-degree: 99%
+source-wordcount: '11719'
+ht-degree: 98%
 
 ---
 
@@ -200,8 +200,8 @@ Illustration 4 : **spécification de texte du lecteur d’écran personnalisé
 
 Lorsqu’une personne ayant une déficience visuelle accède à un bouton radio, le lecteur d’écran doit lire deux éléments :
 * Une indication de l’objectif du groupe de boutons radio
-* Un libellé significatif pour chaque bouton radio
-Pour rendre les boutons radio accessibles à l’aide des légendes des boutons, procédez comme suit :
+* Libellé significatif pour chaque bouton radio
+Pour rendre les boutons radio accessibles à l’aide des légendes de bouton :
    1. Dans la palette Hiérarchie, sélectionnez le groupe d’exclusion.
    1. Cliquez sur la palette Accessibilité, puis, dans la zone Texte du lecteur d’écran personnalisé, saisissez le texte à lire pour le groupe. Par exemple, pour un groupe d’exclusion indiquant les options de paiement par différentes cartes de crédit, saisissez Sélectionner un mode de paiement.
    1. Si les légendes de chaque bouton radio fournissent du texte qui aura un sens lorsqu’il sera lu par un lecteur d’écran, sélectionnez l’onglet Liaison de la palette Objet, puis désélectionnez l’option Définir la valeur de l’élément.
@@ -523,13 +523,13 @@ Vous pouvez spécifier les rôles suivants pour les éléments de tableau au fur
 * Tableau
 Attribue le rôle d’un tableau au sous-formulaire sélectionné. Lorsque la personne accède à ce sous-formulaire, la plupart des lecteurs d’écran l’identifient comme un tableau et indiquent le nombre de lignes et de colonnes.
 * Rangée d’en-tête
-Attribue le rôle de rangée d’en-tête au sous-formulaire sélectionné ou à la rangée de tableau sélectionnée. Lorsqu’ils vocalisent le contenu d’une cellule de rangée de contenu, la plupart des lecteurs d’écran identifient d’abord le contenu de la cellule correspondante dans la rangée d’en-tête.
-* Rangée de contenu
-Attribue le rôle d’une rangée de contenu au sous-formulaire ou à la rangée de tableau sélectionné. Si une cellule contient un sous-formulaire, les lecteurs d’écran vocalisent généralement le contenu de la cellule correspondante dans la rangée d’en-tête, suivie des champs du sous-formulaire.
-* Rangée de pied de page
-Attribue le rôle de rangée de pied de page au sous-formulaire sélectionné ou à la rangée de tableau sélectionnée.
-* (Aucun)
-Indique une ligne qui contient des informations sur le tableau ou son contenu. La rangée n’est pas considérée comme faisant partie du tableau ; toutefois, le lecteur d’écran lit son contenu.
+Attribue le rôle d’une ligne d’en-tête à la ligne de sous-formulaire ou de tableau sélectionnée. Lorsqu’ils vocalisent le contenu d’une cellule de rangée de contenu, la plupart des lecteurs d’écran identifient d’abord le contenu de la cellule correspondante dans la rangée d’en-tête.
+* Rangée du corps
+Attribue le rôle d’une ligne de corps à la ligne de sous-formulaire ou de tableau sélectionnée. Si une cellule contient un sous-formulaire, les lecteurs d’écran vocalisent généralement le contenu de la cellule correspondante dans la rangée d’en-tête, suivie des champs du sous-formulaire.
+* Ligne de pied de page
+Attribue le rôle d’une ligne de pied de page à la ligne de sous-formulaire ou de tableau sélectionnée.
+* (Sans)
+Spécifie une ligne qui véhicule des informations sur le tableau ou son contenu. La rangée n’est pas considérée comme faisant partie du tableau ; toutefois, le lecteur d’écran lit son contenu.
 
 Lorsqu’ils sont utilisés correctement, les tableaux constituent un moyen efficace d’organiser et de présenter les informations tabulaires. Évitez les tableaux trop complexes, tels que ceux contenant des tableaux et des sections imbriqués.
 
@@ -560,7 +560,7 @@ Les fonctionnalités prises en charge par le lecteur d’écran déterminent les
 * Contenu de la cellule appropriée dans la rangée d’en-tête du tableau
 * Contenu de la cellule appropriée dans la rangée d’en-tête de la section
 * Contenu de la cellule sélectionnée
-Certains lecteurs d’écran, cependant, peuvent ne pas lire le contenu des deux rangées d’en-tête.
+Certains lecteurs d’écran peuvent toutefois ne pas lire le contenu des deux lignes d’en-tête.
 
 Créez des noms ou des titres visibles significatifs pour vos tableaux. Vous pouvez créer un nom de tableau sous forme de texte statique dans Adobe LiveCycle Designer et le placer devant le tableau. Vous pouvez regrouper un tableau et son nom dans un sous-formulaire. Les sous-formulaires sont particulièrement utiles lorsque vous souhaitez combiner des objets associés dans une mise en page.
 
@@ -598,8 +598,8 @@ Les champs intelligents peuvent être un moyen efficace de faciliter le rempliss
 
 Vous pouvez utiliser la palette Accessibilité pour attribuer des rôles aux objets en fonction de leur objectif. Ces rôles peuvent être appliqués pour créer des en-têtes à différents niveaux.
 
-![Spécification d’un rôle d’en-tête dans la palette Accessibilité](/help/forms/using/assets/image-15.png)
-Illustration 15 : **spécification d’un rôle d’en-tête dans la palette Accessibilité**
+![Définition d’un rôle d’en-tête dans la palette Accessibilité](/help/forms/using/assets/image-15.png)
+Figure 15 : **spécification d’un rôle d’en-tête dans la palette Accessibilité**
 
 Pour créer un en-tête dans votre formulaire, procédez comme suit :
 

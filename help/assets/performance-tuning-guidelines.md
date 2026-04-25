@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2794'
 ht-degree: 99%
 
 ---
@@ -57,7 +57,8 @@ Une fois que le volume temporaire haute performance est prêt, définissez le pa
 
 Adobe recommande de déployer [!DNL Experience Manager Assets] sur Java 8 pour des performances optimales.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### Paramètres JVM {#jvm-parameters}
@@ -76,7 +77,7 @@ Définissez les paramètres JVM suivants :
 
 Nous recommandons à tous les utilisateurs d’[!DNL Experience Manager Assets] de séparer le magasin de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, les tests de charge/performance peuvent vous aider à déterminer le paramètre idéal.
 
-### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configuration de la taille maximale du cache d’images mis en mémoire tampon {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Lors du chargement d’un grand nombre de ressources vers [!DNL Adobe Experience Manager], réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM du fait d’erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (- `Xmx`param) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache en mémoire tampon utiliserait au maximum 1,25 Go de mémoire, ne laissant que 0,75 Go disponibles pour faire face à des pics imprévus.
 
@@ -124,7 +125,7 @@ Votre stratégie d’optimisation du réseau dépend essentiellement de la quant
 * HTTPS : la plupart des utilisateurs et utilisatrices disposent de pare-feu qui détectent le trafic HTTP, ce qui peut avoir un impact négatif sur le chargement des fichiers ou même endommager les fichiers lors de l’opération de chargement.
 * Chargements de fichiers volumineux : assurez-vous que les utilisateurs et utilisatrices disposent de connexions câblées au réseau (les connexions Wi-Fi se saturent rapidement).
 
-## Workflows    {#workflows}
+## Workflows {#workflows}
 
 ### Workflows transitoires {#transient-workflows}
 
@@ -230,7 +231,7 @@ L’importation d’un volume important de métadonnées peut entraîner une act
 
 Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation Sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance de création se réplique sur une instance de publication unique qui, à son tour, se réplique sur les autres instances de publication, libérant ainsi l’instance de création.
 
-### Configuration de la réplication en chaîne    {#configure-chain-replication}
+### Configuration de la réplication en chaîne {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
 1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers les autres instances de publication
@@ -240,7 +241,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant qu’étape finale d’un workflow, généralement Ressource de mise à jour de gestion des ressources numériques.
 
-## Recherche des index    {#search-indexes}
+## Recherche des index {#search-indexes}
 
 Installez [les derniers pack de services](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Consultez les [conseils sur l’optimisation des performances](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) pour certaines optimisations d’index.
 
@@ -276,7 +277,7 @@ De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un m
 
 Pour chaque déploiement d’[!DNL Experience Manager], créez un régime de tests de performances qui permet d’identifier et de résoudre les goulots d’étranglement rapidement. Voici quelques points clés.
 
-### Test réseau    {#network-testing}
+### Test réseau {#network-testing}
 
 Pour toute problématique de performances réseau affectant le client ou la cliente, effectuez les opérations suivantes :
 

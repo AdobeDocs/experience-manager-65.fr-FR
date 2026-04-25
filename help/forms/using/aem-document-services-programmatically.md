@@ -8,10 +8,10 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
-workflow-type: ht
-source-wordcount: '6448'
-ht-degree: 100%
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+workflow-type: tm+mt
+source-wordcount: '6595'
+ht-degree: 99%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 Les extraits et exemples de ce document vous aident à comprendre et à utiliser AEM Document Services dans un environnement AEM Forms sur OSGi. Pour obtenir des extraits et des exemples pour l’environnement d’AEM Forms sur JEE, voir
 
-* [Démarrage rapide API Java du service de signature](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=fr)
+* [Démarrage rapide API Java du service Signature](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=fr)
 
-* [Démarrage rapide API Java du service de chiffrement](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=fr)
+* [Démarrage rapide API Java du service Encryption](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=fr)
 
 * [Démarrage rapide API Java du service d’extensions Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=fr)
 
@@ -75,7 +75,7 @@ Vous pouvez effectuer les opérations suivantes à l’aide du service DocAssura
 
 ### Ajout d’un champ de signature invisible {#adding-an-invisible-signature-field}
 
-Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existant ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document PDF. Cependant, chaque nom de champ de signature doit être unique.
+Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existant ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document PDF. Cependant, chaque nom de champ de signature doit être unique.
 
 **Syntaxe** : `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -274,7 +274,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nom du champ de signature.  Ce paramètre est obligatoire et ne peut pas accepter une valeur nulle.</td>
+   <td>Nom du champ de signature. Ce paramètre est obligatoire et ne peut pas accepter une valeur nulle.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
@@ -871,7 +871,7 @@ public class GetSignatureFields {
 }
 ```
 
-### Modification des champs de signature  {#modifying-signature-fields-nbsp}
+### Modification des champs de signature  {#modifying-signature-fields-nbsp}
 
 Vous pouvez modifier les champs de signature d’un document PDF. La modification d’un champ de signature implique de manipuler ses valeurs de dictionnaire de verrouillage des champs de signature ou ses valeurs du dictionnaire de valeur de départ.
 
@@ -1353,7 +1353,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs et utili
 
 **Chiffrement des documents PDF avec des certificats**
 
-Le chiffrement avec certificat vous permet de chiffrer un document pour des destinataires spécifiques en utilisant la technologie de clé publique. 
+Le chiffrement avec certificat vous permet de chiffrer un document pour des destinataires spécifiques en utilisant la technologie de clé publique.
 
 Différents destinataires peuvent recevoir différents droits pour le document. De nombreux aspects de chiffrement sont possibles grâce à la technologie de clé publique.
 
@@ -2094,7 +2094,7 @@ org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwab
 
 Cela signifie que le service Reader Extension ne peut pas exécuter les scripts JavaScript utilisés dans le document dans le délai d’expiration défini.
 
-Gérez l’intervalle d’expiration défini pour les scripts JavaScript dans le document PDF à l’aide de :
+Gérez l’intervalle de délai d’expiration défini pour les scripts JavaScript dans le document PDF à l’aide de :
 
 ```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
@@ -2460,7 +2460,7 @@ Les signatures numériques peuvent être vérifiées pour vous assurer qu’un d
   <tr>
    <td><code class="code">signatureField
       Name</code><br /> </td>
-   <td>Nom du champ de signature à valider.  un nom qualifié complet ou un nom partiel peut être attribué<br /> </td>
+   <td>Nom du champ de signature à valider. un nom qualifié complet ou un nom partiel peut être attribué<br /> </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
@@ -3178,7 +3178,7 @@ public class ClearSignatureField {
 
 ### Obtention d’un champ de signature avec certification {#getting-certifying-signature-field}
 
-Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxe** : `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3196,7 +3196,7 @@ Vous pouvez récupérer les noms de tous les champs de signature d’un document
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
-   <td>UnlockOptions comprend les paramètres requis pour déverrouiller un fichier chiffré.  Ce paramètre n’est requis que si le fichier est chiffré.</td>
+   <td>UnlockOptions comprend les paramètres requis pour déverrouiller un fichier chiffré. Ce paramètre n’est requis que si le fichier est chiffré.</td>
   </tr>
  </tbody>
 </table>
@@ -3297,7 +3297,7 @@ public class GetCertifyingSignatureField {
 
 ### Obtention du type de chiffrement PDF {#getting-pdf-encryption-type}
 
-Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Vous pouvez récupérer les noms de tous les champs de signature d’un document PDF que vous souhaitez signer ou certifier. Si vous n’avez pas la certitude de connaître les noms de champ de signature d’un document PDF ou si vous souhaitez vérifier leurs noms, vous pouvez programmer leur récupération. Le service Signature renvoie le nom qualifié complet du champ de signature, tel que `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxe** : `void getPDFEncryption(Document inDoc)`
 
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Le service Distiller convertit les fichiers PostScript, Encapsulated PostScript (EPS) et PRN en fichiers PDF. Ce service est généralement utilisé pour convertir en documents électroniques d’importants volumes de documents papier, tels que des factures et des déclarations. La conversion de documents en PDF permet également aux entreprises d’envoyer à leurs client(e)s un document à la fois dans sa version papier et dans sa version électronique. Les formats de fichiers pris en charge sont .ps, .eps et .prn. Le service prend en charge les API suivantes :
+Le service Distiller convertit les fichiers PostScript, Encapsulated PostScript (EPS) et PRN en fichiers PDF. Ce service est généralement utilisé pour convertir en documents électroniques d’importants volumes de documents papier, tels que des factures et des déclarations. La conversion de documents en PDF permet également aux entreprises d’envoyer à leurs clients un document à la fois dans sa version papier et dans sa version électronique. Les formats de fichiers pris en charge sont .ps, .eps et .prn. Le service prend en charge les API suivantes :
 
 Le service createPDF renvoie un fichier java.util.Map avec des résultats. Les clés de la carte sont :
 
@@ -5061,7 +5061,7 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Services utilitaires de document {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
 #### Baliser automatiquement des documents PDF {#auto-tag-api}
 

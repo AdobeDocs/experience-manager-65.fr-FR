@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10481'
-ht-degree: 99%
+source-wordcount: '10813'
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
    * Organisez, parcourez et recherchez des ressources vidéo
 
       * [Organisation des ressources numériques](/help/assets/organize-assets.md)
-En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md)
+En savoir plus sur [Bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md)
 
       * [Recherche de ressources vidéo](search-assets.md#custompredicates) ou [Recherche de ressources](/help/assets/search-assets.md)
 
@@ -162,17 +162,17 @@ Les appareils Windows qui prennent en charge ce format vidéo sont répertoriés
    * des visionneuses de médias mixtes combinant du contenu vidéo et des images.
 
 * Configurez les lecteurs vidéo pour répondre à vos besoins en matière de branding.
-* Intégrez la vidéo à votre site Web ou mobile, ou à votre application mobile à l’aide d’une simple URL ou d’un code intégré.
+* Intégrez la vidéo à votre site Web, site mobile ou application mobile à l’aide d’une simple URL ou d’un code intégré.
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Consultez également la section [Visionneuses pour Experience Manager Assets et Dynamic Media Classic](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) et [Visionneuses pour Experience Manager Assets uniquement](https://experienceleague.adobe.com/fr/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
-## Bonne pratique : utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
+## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
 Les paramètres prédéfinis de la visionneuse de vidéos Dynamic Media HTML5 sont des lecteurs vidéo fiables. Vous pouvez les utiliser pour éviter de nombreux problèmes courants liés à la lecture des vidéos HTML5. De plus, ils minimisent également les problèmes liés aux appareils mobiles, comme l’absence de diffusion en continu à débit adaptatif et une portée limitée du navigateur de bureau.
 
-En ce qui concerne la conception du lecteur, vous pouvez créer des fonctionnalités à l’aide d’outils de développement Web standard. Par exemple, vous pouvez concevoir les boutons, les commandes et l’arrière-plan personnalisé de l’image d’affiche en utilisant HTML5 et CSS pour vous aider à atteindre vos clients et vos clientes à l’aide d’une apparence personnalisée.
+En ce qui concerne la conception du lecteur, vous pouvez concevoir les fonctionnalités du lecteur vidéo à l’aide d’outils de développement web standard. Par exemple, vous pouvez concevoir les boutons, les commandes et l’arrière-plan personnalisé de l’image d’affiche en utilisant HTML5 et CSS pour vous aider à atteindre vos clients et vos clientes à l’aide d’une apparence personnalisée.
 
 En ce qui concerne la relecture, la visionneuse détecte automatiquement les fonctionnalités vidéo du navigateur. Elle diffuse ensuite la vidéo en utilisant HLS (HTTP Live Streaming) ou DASH (Dynamic Adaptive Streaming over HTTP), également appelé diffusion en continu à débit adaptatif. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
 
@@ -188,7 +188,7 @@ Consultez également la section [A propos des visionneuses HTML5](https://experi
 
 ### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-Pour la diffusion en flux continu de la vidéo à débit adaptatif sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos à débit adaptatif.
+Pour la diffusion en continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéo adaptative.
 
 La lecture vidéo se produit à l’aide d’un téléchargement vidéo DASH, HLS ou progressif. Dans les versions antérieures d’Experience Manager, telles que 6.0, 6.1 et 6.2, les vidéos étaient diffusées via HTTP.
 
@@ -287,11 +287,13 @@ Le graphique suivant montre le workflow global de création de vidéos qui sont 
 
 Le processus **Vidéo d’encodage Dynamic Media** encode la vidéo si vous avez activé Dynamic Media et configuré les services cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo d’encodage Dynamic Media]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 
-<!-- DEAD The following are best-practice tips for encoding source video files.
+<!--
+DEAD The following are best-practice tips for encoding source video files.
 
 For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+-->
 
 ### Fichiers vidéo source {#source-video-files}
 
@@ -305,16 +307,16 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
 | 1 024 × 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1 280 × 720 | 16 :9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 × 1 080 | 16 :9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 280 × 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 × 1 080 | 16:9 | 6 000 à 8 000 kbit/s, selon la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
-Vous pouvez récupérer les métadonnées d’un fichier à l’aide d’un outil de montage vidéo ou d’une application dédiée. Vous trouverez ci-dessous les instructions pour récupérer les métadonnées d’un fichier vidéo à l’aide de l’application tierce MediaInfo :
+Vous pouvez récupérer les métadonnées d’un fichier à l’aide d’un outil de montage vidéo ou d’une application dédiée. Vous trouverez ci-après les instructions d’utilisation de MediaInfo, une application tierce permettant d’extraire les métadonnées d’un fichier vidéo :
 
 1. Accédez à [Téléchargement MediaInfo](https://mediaarea.net/fr/MediaInfo/Download).
 1. Sélectionnez et téléchargez le programme d’installation pour la version avec l’interface graphique utilisateur, puis suivez les instructions d’installation.
-1. Après l’installation, cliquez avec le bouton droit sur le fichier vidéo (Windows uniquement) et sélectionnez MediaInfo, ou bien ouvrez MediaInfo et faites glisser votre fichier vidéo dans l’application. Toutes les métadonnées de votre fichier vidéo, telles que sa largeur, sa hauteur et le nombre d’images par seconde, sont alors visibles à l’écran.
+1. Après l’installation, cliquez avec le bouton droit sur le fichier vidéo (Windows uniquement) et sélectionnez MediaInfo, ou ouvrez MediaInfo et faites glisser votre fichier vidéo dans l’application. Toutes les métadonnées associées à votre fichier vidéo s’affichent, notamment la largeur, la hauteur et le nombre d’images par seconde.
 
 ### Format {#aspect-ratio}
 
@@ -330,7 +332,7 @@ Le tableau suivant décrit comment les résultats de la formule se traduisent pa
 |--- |--- |
 | 1,33 | 4:3 |
 | 0,75 | 3:4 |
-| 1,78 | 16 :9 |
+| 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
 Par exemple, une vidéo d’une largeur de 1 440 × d’une hauteur de 1 080 a un format de 1 440/1 080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour coder le fichier vidéo.
@@ -362,7 +364,7 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 |--- |--- |
 | 256 | Connexion d’accès à distance. |
 | 800 | Connexion mobile standard. Pour cette connexion, visez un débit de données de 400 à 800 kbit/s pour les expériences 3G. |
-| 2000 | Connexion haut débit standard de bureau. Pour cette connexion, visez un débit de données de 800 à 2 000 kbit/s, bien qu’un débit de 1 200 à 1 500 kbit/s convienne à la plupart des cibles. |
+| 2000 | Connexion de bureau haut débit standard. Pour cette connexion, ciblez un débit de données compris entre 800 et 2 000 Kbit/s, la plupart des cibles atteignant en moyenne 1 200 à 1 500 Kbit/s. |
 | 5000 | Connexion haut débit standard. Il est déconseillé de coder dans la plage supérieure, car la diffusion vidéo à cette vitesse n’est pas disponible pour la plupart des consommateurs et des consommatrices. |
 
 ### Résolution {#resolution}
@@ -443,7 +445,7 @@ Un tableau de toutes les vidéos *publiées* est également fourni pour vous per
 
 Lorsque vous sélectionnez le nom d’une vidéo dans la liste, le rapport sur la rétention de l’audience (taux de déperdition) de la vidéo s’affiche sous la forme d’un graphique linéaire. Le graphique présente le nombre de vues à un moment donné de la lecture vidéo. Lorsque vous lisez la vidéo, la barre verticale effectue un suivi en synchronisation avec l’indicateur temporel du lecteur. Les baisses des données du graphique linéaire indiquent le moment où votre audience perd son intérêt.
 
-Si la vidéo a été codée en dehors d’Adobe Experience Manager Dynamic Media, le graphique sur la rétention de l’audience (taux de déperdition) et les données de pourcentage de lecture du tableau ne sont pas disponibles.
+Si la vidéo a été codée en dehors d’Adobe Experience Manager Dynamic Media, le graphique sur la rétention de l’audience (taux de déperdition) et les données de pourcentage de lecture du tableau ne sont pas disponibles.
 
 Consultez également la section [Configuration des Services cloud Dynamic Media](/help/assets/config-dynamic.md).
 
@@ -451,7 +453,7 @@ Consultez également la section [Configuration des Services cloud Dynamic Media
 >
 >Le suivi et les données de rapport reposent exclusivement sur l’utilisation du lecteur vidéo Dynamic Media et du paramètre prédéfini du lecteur vidéo associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
 
-Par défaut, la première fois que vous utilisez l’option Rapports vidéo, le rapport affiche des données vidéo du premier jour du mois en cours jusqu’à la date du mois en cours. Vous pouvez toutefois remplacer la période par défaut par la vôtre. La prochaine fois que vous utiliserez l’option Rapports vidéo, la période que vous avez spécifiée sera utilisée.
+Par défaut, la première fois que vous saisissez des rapports vidéo, le rapport affiche les données vidéo à partir du premier jour du mois en cours et se termine par la date du mois en cours. Cependant, vous pouvez remplacer la période par défaut en spécifiant votre propre période. La prochaine fois que vous entrerez des rapports vidéo, la période que vous avez spécifiée sera utilisée.
 
 Pour que les rapports vidéo fonctionnent correctement, un identifiant de suite de rapports est automatiquement créé lors de la configuration des services cloud Dynamic Media. Dans le même temps, l’identifiant de suite de rapports est transmis au serveur de publication pour qu’il soit disponible pour la fonctionnalité de copie d’URL lors de la prévisualisation de ressources. Cette fonctionnalité nécessite toutefois que le serveur de publication soit déjà configuré. Si le serveur de publication n’est pas configuré, vous pouvez tout de même lancer la publication pour afficher le rapport vidéo. Cependant, vous devez revenir à la configuration du cloud Dynamic Media et sélectionner **[!UICONTROL OK]**.
 
@@ -593,7 +595,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 
      | Métadonnées de sous-titres | Description |
      |--- |--- |
-     | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et de pistes audio supplémentaires. |
+     | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères des noms de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de sous-titres et des fichiers de piste audio supplémentaires. |
      | Langue | Sélectionnez la langue des sous-titres. |
      | Type | Sélectionnez le type de sous-titres que vous utilisez.<br>**Sous-titres** : texte des sous-titres affichés dans la vidéo qui traduit ou transcrit les dialogues.<br>**Légende** : le texte de la légende comprend les bruits de fond, la différenciation des locuteurs et locutrices et d’autres détails pertinents. Il fournit également la traduction ou la transcription du dialogue. Tous ces aspects rendent le contenu plus accessible aux personnes sourdes ou malentendantes. |
      | Libellé | Texte affiché pour le nom du sous-titre dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou les sous-titres]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste de sous-titre ou de légende. Par exemple, `English (CC)`. |
@@ -607,7 +609,7 @@ Les sous-titres et légendes ajoutés sont pris en charge avec les formats WebVT
 
      | Métadonnées de piste audio | Description |
      |--- |--- |
-     | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères de nom de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou de sous-titres supplémentaires. |
+     | Nom de fichier | Le nom de fichier par défaut est dérivé du nom de fichier d’origine. Le nom du fichier ne peut être modifié que lors du chargement et ne peut pas l’être plus tard. Les exigences relatives aux caractères des noms de fichier sont les mêmes que pour AEM Assets.<br>Le même nom de fichier ne peut pas être utilisé pour des fichiers de piste audio ou des fichiers de sous-titres supplémentaires. |
      | Langue | Sélectionnez la langue de la piste audio. |
      | Type | Sélectionnez le type de piste audio que vous utilisez.<br>**Original** : piste audio initialement jointe à la vidéo et représentée comme `[Original]` dans le libellé avec la langue `English` sélectionnée par défaut. Bien que **[!UICONTROL Libellé]** et **[!UICONTROL Langue]** peuvent être modifiés dans la boîte de dialogue **[!UICONTROL Modifier la piste audio]**, les valeurs d’origine sont utilisées par défaut si la vidéo principale est retraitée.<br>**Standard** : piste audio complémentaire pour une langue autre que la langue originale.<br>**Audio-description** : piste audio qui comprend également une narration descriptive des actions non verbales et des gestes dans la vidéo, rendant le contenu plus accessible pour les personnes malvoyantes. |
      | Libellé | Texte affiché comme nom de la piste audio dans la liste de fenêtres contextuelles **[!UICONTROL Sélectionner l’audio ou le sous-titre]** du lecteur multimédia. Le libellé correspond à ce qu’un client ou une cliente voit et à une piste audio. Par exemple, `English [Original]`. Le libellé de l’audio associé à une vidéo est défini sur `[Original]` par défaut. |
@@ -816,19 +818,21 @@ Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.
 
    De nombreux sites web proposent des outils et des services gratuits et payants que vous pouvez utiliser pour créer des fichiers de sous-titres WebVTT en dehors de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!--
+[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
+Pour de meilleurs résultats, utilisez l’outil dans Internet Explorer 9 ou une version ultérieure, Google Chrome ou Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
+Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**. Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
+-->
 
-   Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
+Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
 
-   >[!NOTE]
-   >
-   >Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers `.vtt` distincts et des appels pour chaque langue à prendre en charge.
+>[!NOTE]
+>
+>Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers `.vtt` distincts et des appels pour chaque langue à prendre en charge.
 
-   En règle générale, vous devez attribuer au fichier de sous-titres `.vtt` le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
+En règle générale, vous devez attribuer au fichier de sous-titres `.vtt` le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 
 1. Dans Experience Manager, chargez votre fichier de sous-titres WebVTT dans le DAM.
 1. Accédez à la ressource vidéo *publiée* à associer au fichier de sous-titres que vous avez chargé.
@@ -885,7 +889,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre « `The bicycle store behind it all` » est la description réelle du contenu du chapitre. L’identifiant du repère, l’heure de début du repère, ainsi que le titre du chapitre s’affichent tous dans une fenêtre contextuelle du lecteur vidéo lorsque vous pointez la souris sur un point de repère visuel dans la chronologie de la vidéo.
+Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre de `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant du repère, l’heure de début du repère, ainsi que le titre du chapitre s’affichent tous dans une fenêtre contextuelle du lecteur vidéo lorsque vous pointez la souris sur un point de repère visuel dans la chronologie de la vidéo.
 
 Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est `.vtt`. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
@@ -1405,7 +1409,8 @@ Vous pouvez appeler le servlet des façons suivantes :
 
 
 
-<!-- OBSOLETE. REMOVED AS PER EMAIL FROM RIYA MIDHA ON WEDNESDAY, MARCH 5, 2025
+<!--
+OBSOLETE. REMOVED AS PER EMAIL FROM RIYA MIDHA ON WEDNESDAY, MARCH 5, 2025
 
 ### Enable DASH, multiple caption and audio track support on your Dynamic Media account {#enable-dash}
 
@@ -1446,7 +1451,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1459,7 +1464,8 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 1. Now, you can do either one of the following:
 
     * Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
-    * [Add multiple caption and audio tracks](#add-msma) to your video. -->
+    * [Add multiple caption and audio tracks](#add-msma) to your video.
+    -->
 
 
 

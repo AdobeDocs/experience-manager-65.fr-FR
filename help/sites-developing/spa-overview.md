@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Si le composant de page SPA hérite du composant principal de la page, deux opti
 * Si le modèle est modifiable, ajoutez-le à la politique de page.
 * Vous pouvez également ajouter les catégories via `customfooterlibs.html`.
 
-Pour chaque ressource du modèle exporté, la SPA mappe un composant réel chargé d’effectuer le
+Pour chaque ressource du modèle exporté, la SPA mappe un composant réel qui effectue la
 rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aide des mappages de composants dans un conteneur.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 

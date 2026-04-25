@@ -8,18 +8,18 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 100%
+source-wordcount: '2199'
+ht-degree: 98%
 
 ---
 
-# Gestion des collections {#managing-collections}
+# Gérer les collections {#managing-collections}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Une collection est un ensemble de ressources dans [!DNL Adobe Experience Manager Assets]. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
@@ -44,10 +44,10 @@ Vous pouvez créer une collection contenant des [références statiques](#creati
 
 ### Création d’une collection avec des références statiques {#creating-a-collection-with-static-references}
 
-Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des visionneuses d’images.
+Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des ensembles d’images.
 
 1. Accédez à la console **[!UICONTROL Collections]**.
-1. **[!UICONTROL Créer]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer]**.
 1. Sur la page **[!UICONTROL Créer une collection]**, saisissez un titre et une description facultative de la collection.
 1. Ajoutez des membres à la collection et affectez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
 
@@ -130,7 +130,7 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 1. Dans l’interface utilisateur d’[!DNL Assets], cliquez sur l’option de recherche ![option de recherche](assets/do-not-localize/search_icon.png) dans la barre d’outils.
 1. Placez le curseur dans la zone Omnisearch et sélectionnez la touche `Return`.
 1. Dans l’interface d’[!DNL Experience Manager], ouvrez le panneau Filtres.
-1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
+1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique à modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
@@ -277,4 +277,4 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 >[!MORELIKETHIS]
 >
 >* [Configuration des notifications par e-mail d’Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
->* [Création d’une tâche de révision pour les collections](bulk-approval.md)
+>* [Créer une tâche de révision pour les collections](bulk-approval.md)

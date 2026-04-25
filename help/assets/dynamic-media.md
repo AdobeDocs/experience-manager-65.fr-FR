@@ -9,9 +9,9 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
-workflow-type: ht
-source-wordcount: '416'
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,11 @@ ht-degree: 100%
 
 Le logiciel offre des expériences de visionnage interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Il incorpore de manière unique les workflows de la gestion des ressources numériques d’Adobe Experience Manager pour simplifier et rationaliser le processus de gestion des campagnes numériques.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## Ce que vous pouvez effectuer avec le logiciel : {#what-you-can-do-with-dynamic-media}
 
@@ -33,7 +35,7 @@ Le logiciel vous permet de gérer les ressources avant de les publier. L’utili
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 
 * [Bannières de carrousel](carousel-banners.md)
-* [Visionneuses d’images](image-sets.md)
+* [Ensembles d’images](image-sets.md)
 * [Images interactives](interactive-images.md)
 * [Vidéos interactives](interactive-videos.md)
 * [Visionneuses de médias mixtes](mixed-media-sets.md)
@@ -56,7 +58,7 @@ Consultez également [Configuration de Dynamic Media](administering-dynamic-med
 Les caractéristiques suivantes permettent de déterminer si le logiciel est activé ou non :
 
 * Des rendus dynamiques sont disponibles lors du téléchargement ou de la prévisualisation des ressources.
-* Des visionneuses d’images, à 360° et de supports variés sont disponibles.
+* Des ensembles d’images, des visionneuses à 360° et des visionneuses de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
 Lorsque vous cliquez sur une ressource image, l’affichage de la ressource est différent avec le logiciel [activé](config-dynamic.md#enabling-dynamic-media). Il utilise les visionneuses HTML5 à la demande.
@@ -67,9 +69,9 @@ Des rendus dynamiques, tels que des paramètres d’image et de visionneuse pré
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Visionneuses d’images, à 360° et de supports variés {#image-sets-spins-sets-mixed-media-sets}
+### Ensembles d’images, visionneuses à 360° et visionneuses de supports variés {#image-sets-spins-sets-mixed-media-sets}
 
-Des visionneuses d’images, à 360° et de supports variés sont disponibles lorsque le logiciel est activé.
+Des ensembles d’images, des visionneuses à 360° et des visionneuses de supports variés sont disponibles lorsque le logiciel est activé.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 

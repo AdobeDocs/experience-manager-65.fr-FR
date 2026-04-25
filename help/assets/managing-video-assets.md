@@ -7,10 +7,10 @@ feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 100%
+source-wordcount: '5596'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
@@ -53,7 +53,7 @@ Outre la configuration d’[!DNL Assets], modifiez les configurations suivantes 
 Pour configurer une limite de taille de fichier supérieure, procédez comme suit dans le répertoire `/apps`.
 
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
-1. Dans CRXDE Lite, accédez à `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Pour afficher la fenêtre du répertoire, appuyez sur `>>`.
+1. Dans CRXDE Lite, accédez à `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Pour afficher la fenêtre du répertoire, cliquez sur `>>`.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Nœud de recouvrement]**. Vous pouvez également sélectionner **[!UICONTROL Nœud de recouvrement]** dans le menu contextuel.
 1. Dans la boîte de dialogue **[!UICONTROL Nœud de recouvrement]**, cliquez sur **[!UICONTROL OK]**.
 
@@ -65,21 +65,21 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Tout enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la page [!UICONTROL Bundles de la console web [!DNL Adobe Experience Manager]], dans la colonne Nom de la table, recherchez et cliquez sur **[!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite]**.
-1. Dans la page [!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite], définissez les secondes pour les champs de **[!UICONTROL dépassement de délai par défaut]** et de **[!UICONTROL délai dépassé maximum]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans la page [!UICONTROL Gestionnaire des tâches du processus externe de workflow Adobe Granite], définissez les secondes pour les champs de **[!UICONTROL délai d’expiration par défaut]** et de **[!UICONTROL délai d’expiration maximum]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page Modèles de workflow, sélectionnez **[!UICONTROL Vidéo de codage Dynamic Media]**, puis cliquez sur **[!UICONTROL Modifier]**.
-1. Dans la page du workflow, appuyez deux fois sur le composant **[!UICONTROL Processus de service vidéo Dynamic Media]**.
+1. Dans la page du workflow, double-cliquez sur le composant **[!UICONTROL Processus de service vidéo Dynamic Media]**.
 1. Dans la boîte de dialogue [!UICONTROL Propriétés des étapes], sous l’onglet **[!UICONTROL Commun]**, développez les **Paramètres avancés**.
 1. Dans le champ **[!UICONTROL Temporisation]**, spécifiez une valeur de `18000`, puis cliquez sur **[!UICONTROL OK]** pour revenir à la page de workflow **[!UICONTROL Vidéo de codage de Dynamic Media]**.
-1. Dans la partie supérieure de la page, sous le titre de la page [!UICONTROL Vidéo de codage de Dynamic Media], appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans la partie supérieure de la page, sous le titre de la page [!UICONTROL Vidéo de codage de Dynamic Media], cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
-Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les intégrer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
+Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les incorporer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Publication de vidéos sur YouTube {#publishing-videos-to-youtube}
 
-Vous pouvez publier des ressources vidéo Experience Manager on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
+Vous pouvez publier des ressources vidéo Experience Manager sur site directement sur une chaîne YouTube que vous avez précédemment créée.
 
 Pour publier des ressources vidéo sur YouTube, configurez Experience Manager Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
 
@@ -154,11 +154,11 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
+   * Dans la liste **[!UICONTROL Quelle API utilisez-vous ?]** dans la liste déroulante, sélectionnez **[!UICONTROL API de données YouTube v3]**.
 
-   * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
+   * Depuis la **[!UICONTROL D’où appelez-vous l’API ?]** dans la liste déroulante, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données accédez-vous ?Dans la liste déroulante]**, sélectionnez **[!UICONTROL Données utilisateur]**.
+   * Dans la liste **[!UICONTROL À quelles données accédez-vous ?]** dans la liste déroulante, sélectionnez **[!UICONTROL Données utilisateur]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -278,7 +278,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
    Vous pouvez éventuellement ajouter une description.
 
 1. Sélectionnez **[!UICONTROL Ajouter]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
    * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
@@ -311,7 +311,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
 Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y retournerez dans quelques instants.
 
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt au cours de la tâche de configuration des paramètres de Google Cloud.
+1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. **[!UICONTROL Cliquez sur OK]**.
@@ -324,7 +324,7 @@ Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y reto
    Vous pouvez éventuellement ajouter une description.
 
 1. **[!UICONTROL Cliquez sur OK]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
    * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
@@ -375,11 +375,11 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir bes
 Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, cliquez sur **[!UICONTROL Annuler]**.
-1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo d’Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo d’Experience Manager puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
 
 1. Sur la page Profils de métadonnées, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue Ajouter un profil de métadonnées, dans le champ de texte **[!UICONTROL Titre du profil]**, saisissez le nom `YouTube Video`, puis cliquez sur **[!UICONTROL Créer]**.
-1. Sur la page Éditeur de profil de métadonnées, sélectionnez l’onglet **[!UICONTROL Avancé]**.
+1. Sur la page Éditeur de profil de métadonnées, cliquez sur l’onglet **[!UICONTROL Avancé]**.
 1. Ajoutez les valeurs de publication YouTube copiées au profil en procédant comme suit :
 
    * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
@@ -391,7 +391,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir bes
    * Cliquez sur **[!UICONTROL Libellé du champ]** afin de sélectionner le composant.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Ajoutez les valeurs copiées de confidentialité YouTube au profil en procédant comme suit :
+1. Ajoutez les valeurs de confidentialité Youtube copiées dans le profil en procédant comme suit :
 
    * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
    * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
@@ -431,13 +431,13 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, cliquez sur **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez une ou plusieurs balises.
+1. Accédez aux balises à utiliser sur la page Sélectionner des balises, puis sélectionnez une ou plusieurs balises.
 
-   N’oubliez pas que les balises doivent être associées au canal YouTube.
+   N’oubliez pas que les balises doivent être associées à la chaîne YouTube.
 
 1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide]**.
 
    Consultez également [Utilisation de la gestion de la publication avec Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=fr).
 
@@ -489,7 +489,7 @@ Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo 
 
 1. Accédez aux ressources vidéo que vous souhaitez dépublier de votre chaîne YouTube.
 1. Dans un mode de sélection de ressources, sélectionnez une ou plusieurs ressources vidéo publiées.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Sélectionnez l’icône de points de suspension (. . .). dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Sélectionnez l’icône des trois petits points (. . .) dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
 1. Sur la page Gérer la publication, sélectionnez **[!UICONTROL Dépublier]**.
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Suivant]**.
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Dépublier]**.
@@ -510,11 +510,11 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
-   Cette colonne ne s’affiche pas par défaut. Pour activer la colonne, sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** dans le menu déroulant des affichages, ajoutez la colonne **[!UICONTROL Statut du traitement]** et sélectionnez **[!UICONTROL Mettre à jour]**.
+   Cette colonne ne s’affiche pas par défaut. Pour activer la colonne, sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** dans le menu déroulant des affichages, ajoutez la colonne **[!UICONTROL Statut du traitement]** et cliquez sur **[!UICONTROL Mettre à jour]**.
 
    ![chlimage_1-431](assets/chlimage_1-431.png)
 
-1. Consultez la progression dans les détails de la ressource. Lorsque vous sélectionnez une ressource, ouvrez le menu contextuel et sélectionnez **[!UICONTROL Chronologie]**. Pour le réduire à des activités de processus comme le codage ou la publication YouTube, sélectionnez **[!UICONTROL Processus]**.
+1. Consultez la progression dans les détails de la ressource. Lorsque vous cliquez sur une ressource, ouvrez le menu contextuel et sélectionnez **[!UICONTROL Chronologie]**. Pour le réduire à des activités de processus comme le codage ou la publication YouTube, sélectionnez **[!UICONTROL Processus]**.
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
@@ -522,11 +522,11 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
    >[!NOTE]
    >
-   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** à partir de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -554,11 +554,11 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
    >[!NOTE]
    >
-   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL expiration]** à partir de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    >
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
-   >* File d’attente d’expiration du workflow Granite
+   >* File d’attente de temporisation du workflow Granite
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -570,7 +570,7 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
-1. Vous recevez des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
+1. Vous recevez des notifications par e-mail sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
 
 #### Configuration des notifications par e-mail {#configuring-e-mail-notifications}
 
@@ -626,7 +626,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![Recherche d’une heure dans une vidéo à ignorer pendant les secondes spécifiées](assets/seek-in-video.png)
 
-1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
+1. Pour l’afficher dans le journal, cliquez sur une annotation. Pour supprimer l’annotation du journal, cliquez sur **[!UICONTROL Supprimer]**.
 
    ![Affichage des annotations et des détails dans la chronologie](assets/timeline-view-annotation.png)
 

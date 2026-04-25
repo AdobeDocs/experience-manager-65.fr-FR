@@ -1,6 +1,6 @@
 ---
 title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags
-description: Découvrez-en plus sur l’extension Visionneuses Dynamic Media pour Experience Platform Tags et les visionneuses Dynamic Media 5.13. Elle permet aux clients d’Adobe Analytics et aux utilisateurs d’Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration Experience Platform Tags.
+description: Découvrez l’extension Visionneuses Dynamic Media pour les balises Experience Platform et les visionneuses Dynamic Media 5.13. Il permet aux clients Adobe Analytics et Experience Platform Tags d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Experience Platform Tags.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -11,10 +11,10 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6677'
-ht-degree: 100%
+source-wordcount: '6951'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ Consultez [Suivre des visionneuses Dynamic Media à l’aide du code intégré]
 
 L’intégration tire parti de deux types distincts et indépendants de suivi des visionneuses Dynamic Media : *Adobe Analytics* et *Adobe Analytics for Audio and Video*.
 
-### À propos du suivi à l’aide d’Adobe Analytics   {#about-tracking-using-adobe-analytics}
+### À propos du suivi à l’aide d’Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
 Adobe Analytics vous permet d’effectuer le suivi des actions exécutées par l’utilisateur final lorsqu’il interagit avec les visionneuses Dynamic Media de votre site web. Adobe Analytics vous permet également d’effectuer le suivi des données propres à la visionneuse. Vous pouvez, par exemple, effectuer le suivi et enregistrer les événements de chargement des vues avec le nom de la ressource, les actions de zoom survenues et les actions de lecture vidéo.
 
@@ -146,7 +146,8 @@ Pour effectuer le suivi des visionneuses Dynamic Media dans Experience Manager
 
 Une fois la configuration appropriée effectuée, toute visionneuse Dynamic Media que vous ajoutez à une page Sites, à l’aide d’un composant WCM pris en charge par Dynamic Media, effectue automatiquement le suivi des données vers Adobe Analytics ou Adobe Analytics for video, ou les deux.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -160,7 +161,8 @@ Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise e
 
 Consultez [Ajout du code intégré Experience Platform Tags](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Experience Platform Tags.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 
@@ -273,7 +275,7 @@ Il est toutefois possible d’utiliser une autre approche et d’éviter la cré
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-Il existe une différence importante entre l’utilisation des éléments de données et la référence directe à l’argument d’événement. Pour l’élément de données, l’événement qui déclenche l’action Définir les variables importe peu. L’événement qui déclenche la règle peut ne pas être lié à la visionneuse dynamique. Par exemple, en sélectionnant la page web dans l’extension Core. Cependant, lorsque vous utilisez une référence directe à un argument, il est important de s’assurer que l’événement qui déclenche la règle correspond à l’argument d’événement auquel il fait référence.
+Il existe une différence importante entre l’utilisation des éléments de données et la référence directe à l’argument d’événement. Pour l’élément de données, peu importe quel événement déclenche l’action Définir des variables. L’événement qui déclenche la règle peut ne pas être lié à la visionneuse dynamique. Par exemple, en sélectionnant la page web dans l’extension Core. Cependant, lorsque vous utilisez une référence directe à un argument, il est important de s’assurer que l’événement qui déclenche la règle correspond à l’argument d’événement auquel il fait référence.
 
 Par exemple, la référence à `%event.detail.dm.LOAD.asset%` renvoie le nom de ressource correct si la règle est déclenchée par l’événement **[!UICONTROL LOAD]** de l’extension Visionneuse Dynamic Media. Cependant, elle renvoie une valeur vide pour tout autre événement.
 
@@ -757,7 +759,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
 
    Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple : `https://ims-na1.adobelogin.com/`
-(ce nom de serveur est seulement un exemple)
+(le nom du serveur est donné à titre d’exemple uniquement)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

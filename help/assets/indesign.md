@@ -6,10 +6,10 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
-workflow-type: ht
-source-wordcount: '1550'
-ht-degree: 100%
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+workflow-type: tm+mt
+source-wordcount: '1579'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Pour installer et démarrer [!DNL InDesign Server] afin de l’utiliser avec [!D
 * [Extraction de médias](#media-extraction)
 * [Extraction de page](#page-extraction)
 
-Ce workflow est configuré avec des valeurs par défaut pouvant être adaptées à votre configuration sur les différentes instances auteur. (Il s’agit d’un workflow standard ; des informations complémentaires sont disponibles à la section [Modification d’un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
+Ce workflow est configuré avec des valeurs par défaut pouvant être adaptées à votre configuration sur les différentes instances de création. (Il s’agit d’un workflow standard ; des informations complémentaires sont disponibles à la section [Modification d’un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Si vous utilisez les valeurs par défaut (port SOAP compris), aucune configuration n’est nécessaire.
 
 Après la configuration, le chargement de fichiers [!DNL InDesign] dans [!DNL Experience Manager Assets] (via les méthodes habituelles) déclenche le workflow pour le traitement de la ressource et la préparation des différents rendus. Testez votre configuration en chargeant un fichier INDD dans [!DNL Experience Manager Assets] afin de confirmer que vous voyez les différents rendus créés par IDS sous `<*your_asset*>.indd/Renditions`.
 
@@ -115,7 +115,8 @@ Arguments d’extraction de médias et chemins de scripts
 
 * **Développer les scripts** : vous pouvez indiquer ici différentes combinaisons de script. Si vous souhaitez que vos propres scripts soient exécutés sur [!DNL InDesign Server], enregistrez-les sous `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -162,8 +163,8 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **Pool IDS**
-Points de terminaison SOAP utilisés pour communiquer avec le [!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
+   * Pool **IDS**
+Points d’entrée SOAP utilisés pour communiquer avec l’[!DNL InDesign Server]. Vous pouvez ajouter, supprimer ou trier les éléments au besoin.
 
 1. Cliquez sur OK pour enregistrer.
 

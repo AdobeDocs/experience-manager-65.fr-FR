@@ -8,10 +8,10 @@ hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '593'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Contactez l’assistance technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
+>[Contactez l’assistance technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
 
 ## À propos du programme d’installation du correctif {#about-the-patch-installer}
 
@@ -43,7 +43,7 @@ Accédez au répertoire approprié sur le support ou dossier d’installation de
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Accédez au répertoire approprié puis, dans l’invite de commande, saisissez `./aem65_cfp_install.bin`.
+Accédez au répertoire approprié, puis à partir d’une invite de commande, saisissez `./aem65_cfp_install.bin`.
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
@@ -71,8 +71,8 @@ Accédez au répertoire approprié puis, dans l’invite de commande, saisissez 
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
-   * [Installation et déploiement d’AEM Forms pour JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_fr)
-   * [Installation et déploiement d’AEM Forms pour WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_fr)
+   * [Installation et déploiement d’AEM Forms pour JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_fr)
+   * [Installation et déploiement d’AEM Forms pour WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_fr)
 
 1. (JBoss® uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et work du serveur d’applications JBoss®.
 
@@ -89,7 +89,7 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Modules touchés {#impacted-modules}
 
@@ -97,4 +97,4 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 * Document Security
 * Foundation JEE
 
-[Contacter le support technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support)
+[Contacter le support technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
