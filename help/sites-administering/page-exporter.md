@@ -64,7 +64,7 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
 ## Création d’une configuration de l’exportateur de page pour votre site {#creating-a-page-exporter-configuration-for-your-site}
 
-L’exportateur de page repose sur le [framework de synchronisation du contenu. ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
+L’exportateur de page repose sur le [framework de synchronisation du contenu. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) Les configurations disponibles dans la boîte de dialogue **Propriétés de la page** sont des modèles d’exportation qui définissent les dépendances requises pour une page.
 
 Lorsqu’une exportation de page est déclenchée, le modèle d’exportation est référencé. Le chemin d’accès à la page et le chemin d’accès à la conception sont appliqués dynamiquement. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
 

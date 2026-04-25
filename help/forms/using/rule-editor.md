@@ -42,7 +42,7 @@ Some of the key actions that you can perform on adaptive form objects using rule
 * Set property of an object
 -->
 
-L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles. Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](#impact-of-rule-editor-on-existing-scripts).
+L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles. Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[&#x200B; Impact de l’éditeur de règles sur les scripts existants](#impact-of-rule-editor-on-existing-scripts).
 
 Les utilisateurs et utilisatrices ajoutés au groupe des utilisateurs et utilisatrices expérimentés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs et utilisatrices appartenant au groupe d’utilisateurs et d’utilisatrices de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 

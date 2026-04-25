@@ -752,7 +752,7 @@ Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous deve
 
 Si vous souhaitez rediriger des fichiers vers une nouvelle application native, vous devez créer un fichier XML de script pour cette application. Si vous souhaitez modifier la manière dont le service Generate PDF interagit avec une application native déjà prise en charge, vous devez modifier le script de cette application.
 
-Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier qui contient ces informations est `appmon.`[appname]`` `.script.`[locale]`.xml`. Exemple : appmon.notepad.script.en_US.xml.
+Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier qui contient ces informations est `appmon.`[appname]&grave;&grave; `.script.`[locale]`.xml`. Exemple : appmon.notepad.script.en_US.xml.
 
 #### Identifier les étapes que le script doit exécuter {#identifying-steps-the-script-must-execute}
 
