@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: d81e0bbce421f0a63f70457b782f380be149d08c
 workflow-type: tm+mt
-source-wordcount: '3899'
+source-wordcount: '3908'
 ht-degree: 97%
 
 ---
@@ -543,6 +543,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 
 >[!NOTE]
 >
+>- PDF Generator prend en charge Microsoft® Office 2024.
 >- PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >- PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
 >- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
@@ -656,7 +657,7 @@ Pour des conditions requises supplémentaires, voir :
  </tr>
  <tr>
   <td><p>Microsoft® Windows® 10 (Entreprise, Professionnel, Basic)</p> <p>Version 32 bits ou 64 bits</p> <p> </p> </td>
-  <td>Service Packs et mises à jour critiques</td>
+  <td>Packs de services et mises à jour critiques</td>
  </tr>
  <tr>
   <td>Microsoft® Windows® 2019 Server (obsolète)</td>
@@ -824,7 +825,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[AEM Forms](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
 
 <!--
 
@@ -932,6 +933,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Pilote Microsoft® SQL Server JDBC 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bits) | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Red Hat® Enterprise Linux® 9 (noyau 5.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
+| ® Office 2024 | | |
 
 ### Version 6.5.22.0 (29 Novembre 2024)
 
