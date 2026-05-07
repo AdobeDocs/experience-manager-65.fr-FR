@@ -9,7 +9,7 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 5bbec6c99d12054cbc2f9669da4a086779485830
+source-git-commit: bd638125068fd6408a6dde1b51c613a7dc06587d
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 97%
@@ -543,8 +543,8 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 
 >[!NOTE]
 >
->- PDF Generator prend en charge Microsoft® Office 2024.
 >- PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+>- PDF Generator prend en charge Microsoft® Office 2024.
 >- PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
 >- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
 >- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
@@ -933,7 +933,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Pilote Microsoft® SQL Server JDBC 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bits) | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Red Hat® Enterprise Linux® 9 (noyau 5.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
-| ® Office 2024 |  |  |
+| ® Office 2024 | |  |
+
 
 ### Version 6.5.22.0 (29 Novembre 2024)
 
