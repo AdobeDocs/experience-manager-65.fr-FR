@@ -3,12 +3,11 @@ title: Activer la fonction d’activation/désactivation des fonctionnalités po
 description: La fonction d’activation/désactivation des fonctionnalités est une fonctionnalité d’AEM qui permet aux administrateurs et administratrices d’activer de nouvelles fonctionnalités dans un environnement d’exécution.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: e3901bbcb82b3c05d95b0d2bb8addab049dc3a4e
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 90%
+source-wordcount: '441'
+ht-degree: 84%
 
 ---
 

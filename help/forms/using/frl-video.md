@@ -1,10 +1,13 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
-workflow-type: ht
-source-wordcount: '1065'
-ht-degree: 100%
+title: 'Script de la vidéo : configurer une licence avec fonctionnalités restreintes (FRL) pour Adobe Acrobat dans AEM Forms'
+description: Configuration des licences restreintes de fonctionnalités (FRL) pour Adobe Acrobat sur AEM Forms
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
+workflow-type: tm+mt
+source-wordcount: '1095'
+ht-degree: 98%
 
 ---
+
 # Script de la vidéo : configurer une licence avec fonctionnalités restreintes (FRL) pour Adobe Acrobat dans AEM Forms
 
 | Visuel | Titre | Script de narration |
