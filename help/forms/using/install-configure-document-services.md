@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 98%
@@ -887,8 +887,6 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 >[!ENDTABS]
 
-
-
 ### Désactivation du mode protégé au démarrage dans Acrobat
 
 Après avoir activé Feature Restricted Licensing (FRL) et vérifié l’activation d’Acrobat, il est recommandé de désactiver le « Mode protégé au démarrage » dans Adobe Acrobat pour garantir la compatibilité avec AEM Forms PDF Generator.
@@ -907,7 +905,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1379,7 +1377,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
@@ -1543,7 +1541,6 @@ Lorsque vous convertissez des fichiers Microsoft Excel 2019 au format PDF sou
 Pour résoudre le problème, [créez une clé de registre spécifique à une fonctionnalité sous Windows](https://helpx.adobe.com/fr/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## Étapes suivantes {#next-steps}
 

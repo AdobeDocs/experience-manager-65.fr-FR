@@ -4,11 +4,10 @@ description: Découvrez comment utiliser le programme d’installation du correc
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 91%
@@ -19,7 +18,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->[Contactez l’assistance technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
+>[Contactez l’assistance technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support) pour plus d’informations ou pour obtenir le correctif.
 
 ## À propos du programme d’installation du correctif {#about-the-patch-installer}
 
@@ -97,4 +96,4 @@ Si l’authentification SAML est configurée et que vous rencontrez des problèm
 * Document Security
 * Foundation JEE
 
-[Contacter le support technique](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support)
+[Contacter le support technique](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
