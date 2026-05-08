@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: bd638125068fd6408a6dde1b51c613a7dc06587d
+source-git-commit: eaeb4be3cc28ed958b33276f89ebe2302d4330f3
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 97%
+source-wordcount: '3851'
+ht-degree: 94%
 
 ---
 
@@ -527,12 +527,12 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
+   <td>Licences ® Office 2024 Professional Plus, de vente au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
 
@@ -544,29 +544,19 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >[!NOTE]
 >
 >- PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
->- PDF Generator prend en charge Microsoft® Office 2024.
->- PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
->- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
->- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>- PDF Generator nécessite Adobe Acrobat Pro DC 32 bits et Microsoft® Office Professional Plus pour effectuer la conversion.
+>- L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
+>- Si une installation ® Office est désactivée ou n&#39;obtient pas de licence pour une raison quelconque, par exemple une installation sous licence en volume qui ne peut pas localiser un hôte KMS au cours d&#39;une période spécifiée, les conversions peuvent échouer jusqu&#39;à ce que l&#39;installation soit à nouveau sous licence et réactivée.
 >- PDF Generator ne prend pas en charge Microsoft® Office 365.
 >- Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
 >- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->- Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
-
-
-PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
-
-
-L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
-
-
-Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>- PDF Generator ne prend pas en charge Microsoft® Windows 11.
+>- La prise en charge de ® Office 2021 Professional Plus est obsolète.
 
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 -->
-
 
 ### Exceptions de la prise en charge de l’accessibilité {#exceptions-to-accessibility-support}
 
@@ -779,9 +769,7 @@ Pour des conditions requises supplémentaires, voir :
 
 #### Prise en charge des appareils mobiles {#mobile-device-support}
 
-
 L’application AEM Forms est disponible sur les plateformes suivantes :
-
 
 | **Plateforme** | **Appareils pris en charge** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -805,7 +793,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -825,7 +813,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
 
 <!--
 
@@ -836,7 +824,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -907,7 +895,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -924,6 +912,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Version 6.5.24.0 (26 Novembre 2025)
+
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
+| -------------- | --------------- | ------------------- |
+| ® Office 2024 | | Microsoft® Office 2021 |
+
 ### Version 6.5.23.0 (6 juin 2025)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -933,10 +927,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Pilote Microsoft® SQL Server JDBC 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bits) | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Red Hat® Enterprise Linux® 9 (noyau 5.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
-| ® Office 2024 | |  |
 
-
-### Version 6.5.22.0 (29 Novembre 2024)
+### Version 6.5.22.0 (29 Novembre 2024)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -949,7 +941,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | Microsoft® Office 2021 |  |  |
 
-### Version 6.5.19.1 (15 décembre 2023)
+### Version 6.5.19.1 (15 Décembre 2023)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -958,7 +950,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### Version 6.5.18.0 (31 août 2023)
+### Version 6.5.18.0 (31 Août 2023)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
