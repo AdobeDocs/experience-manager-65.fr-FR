@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: bbbbf1549f1a44f4613f6c02c33bada5a0980179
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3755'
 ht-degree: 97%
 
 ---
@@ -491,6 +491,8 @@ Pour Windows x86 :
 
 >[!NOTE]
 >
+>* PDF Generator prend en charge Microsoft® Office 2024.
+>* PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
 >* PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
 >* PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
@@ -534,4 +536,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[AEM Forms](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
