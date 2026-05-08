@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: bd638125068fd6408a6dde1b51c613a7dc06587d
+source-git-commit: eaeb4be3cc28ed958b33276f89ebe2302d4330f3
 workflow-type: tm+mt
-source-wordcount: '3908'
-ht-degree: 97%
+source-wordcount: '3851'
+ht-degree: 94%
 
 ---
 
@@ -527,12 +527,12 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   </tr>
 
 <tr>
-   <td>Licences Microsoft® Office 2021 Professional Plus, licences au détail et en volume</td>
+   <td>Licences ® Office 2024 Professional Plus, de vente au détail et en volume</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF et TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT<br>
 
@@ -544,29 +544,19 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 >[!NOTE]
 >
 >- PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
->- PDF Generator prend en charge Microsoft® Office 2024.
->- PDF Generator nécessite Adobe Acrobat Pro DC (32 bits) pour effectuer la conversion.
->- PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
->- Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>- PDF Generator nécessite Adobe Acrobat Pro DC 32 bits et Microsoft® Office Professional Plus pour effectuer la conversion.
+>- L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
+>- Si une installation ® Office est désactivée ou n&#39;obtient pas de licence pour une raison quelconque, par exemple une installation sous licence en volume qui ne peut pas localiser un hôte KMS au cours d&#39;une période spécifiée, les conversions peuvent échouer jusqu&#39;à ce que l&#39;installation soit à nouveau sous licence et réactivée.
 >- PDF Generator ne prend pas en charge Microsoft® Office 365.
 >- Les conversions PDF Generator pour OpenOffice sont prises en charge sous Windows et Linux®.
 >- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
->- Le service PDF Generator ne prend pas en charge Microsoft® Windows 11.
-
-
-PDF Generator prend uniquement en charge la version 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion.
-
-
-L’installation de Microsoft® Office Professional Plus peut utiliser des licences en volume Retail ou MAK/KMS/AD.
-
-
-Si une installation Microsoft® Office est désactivée ou n’a pas de licence pour une raison quelconque, par exemple si une installation sous licence en volume ne parvient pas à localiser un hôte KMS dans un délai spécifié, les conversions peuvent échouer jusqu’à ce que l’installation reçoive une nouvelle licence et soit réactivée.
+>- PDF Generator ne prend pas en charge Microsoft® Windows 11.
+>- La prise en charge de ® Office 2021 Professional Plus est obsolète.
 
 <!--
 Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 -->
-
 
 ### Exceptions de la prise en charge de l’accessibilité {#exceptions-to-accessibility-support}
 
@@ -779,9 +769,7 @@ Pour des conditions requises supplémentaires, voir :
 
 #### Prise en charge des appareils mobiles {#mobile-device-support}
 
-
 L’application AEM Forms est disponible sur les plateformes suivantes :
-
 
 | **Plateforme** | **Appareils pris en charge** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -924,6 +912,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### Version 6.5.24.0 (26 Novembre 2025)
+
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
+| -------------- | --------------- | ------------------- |
+| ® Office 2024 | | Microsoft® Office 2021 |
+
 ### Version 6.5.23.0 (6 juin 2025)
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -933,10 +927,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Pilote Microsoft® SQL Server JDBC 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bits) | Pilote Microsoft® SQL Server JDBC 8.2 |
 | Red Hat® Enterprise Linux® 9 (noyau 5.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
-| ® Office 2024 | |  |
 
-
-### Version 6.5.22.0 (29 Novembre 2024)
+### Version 6.5.22.0 (29 Novembre 2024)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -949,7 +941,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | Microsoft® Office 2021 |  |  |
 
-### Version 6.5.19.1 (15 décembre 2023)
+### Version 6.5.19.1 (15 Décembre 2023)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
@@ -958,7 +950,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MongoDB Enterprise 5.0 |  |  |
 |  | |  |
 
-### Version 6.5.18.0 (31 août 2023)
+### Version 6.5.18.0 (31 Août 2023)
 
 
 | Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
