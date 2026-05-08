@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
+source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 98%
@@ -81,11 +81,11 @@ Avant de commencer à installer et à configurer les services de document AEM F
 >
 >* Sous Microsoft® Windows, PDF Generator prend en charge les itinéraires de conversion WebKit, Acrobat WebCapture et WebToPDF pour convertir des fichiers HTML en documents PDF.
 >* Sur les systèmes dʼexploitation UNIX, PDF Generator prend en charge les itinéraires de conversion WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF.
->
 
 ### Exigences supplémentaires pour les systèmes d’exploitation UNIX {#extrarequirements}
 
 Si vous utilisez un système d’exploitation UNIX, installez les packages 32 bits suivants à partir des supports d’installation du système d’exploitation correspondant :
+
 <table>
  <tbody>
   <tr>
@@ -188,8 +188,10 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
 
 * (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
 
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
+  `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`
+
+  définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
+
   `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
@@ -905,7 +907,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1377,7 +1379,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
