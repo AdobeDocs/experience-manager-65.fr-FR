@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
+source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 98%
@@ -81,11 +81,11 @@ Avant de commencer à installer et à configurer les services de document AEM F
 >
 >* Sous Microsoft® Windows, PDF Generator prend en charge les itinéraires de conversion WebKit, Acrobat WebCapture et WebToPDF pour convertir des fichiers HTML en documents PDF.
 >* Sur les systèmes dʼexploitation UNIX, PDF Generator prend en charge les itinéraires de conversion WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF.
->
 
 ### Exigences supplémentaires pour les systèmes d’exploitation UNIX {#extrarequirements}
 
 Si vous utilisez un système d’exploitation UNIX, installez les packages 32 bits suivants à partir des supports d’installation du système d’exploitation correspondant :
+
 <table>
  <tbody>
   <tr>
@@ -188,8 +188,10 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
 
 * (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
 
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
+  `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`
+
+  définissez ensuite la variable d’environnement suivante et redémarrez le serveur :
+
   `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
