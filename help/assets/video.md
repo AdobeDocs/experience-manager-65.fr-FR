@@ -11,10 +11,10 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
-source-wordcount: '10813'
-ht-degree: 96%
+source-wordcount: '10724'
+ht-degree: 97%
 
 ---
 
@@ -819,20 +819,20 @@ Voir [Diffuser du contenu statique (sans image)](https://experienceleague.adobe.
    De nombreux sites web proposent des outils et des services gratuits et payants que vous pouvez utiliser pour créer des fichiers de sous-titres WebVTT en dehors de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-Pour de meilleurs résultats, utilisez l’outil dans Internet Explorer 9 ou une version ultérieure, Google Chrome ou Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**. Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
+   Suivez maintenant les instructions à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
 
->[!NOTE]
->
->Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers `.vtt` distincts et des appels pour chaque langue à prendre en charge.
+   >[!NOTE]
+   >
+   >Pour la bonne prise en charge internationale des sous-titres vidéo dans différentes langues, la norme WebVTT implique de créer des fichiers `.vtt` distincts et des appels pour chaque langue à prendre en charge.
 
-En règle générale, vous devez attribuer au fichier de sous-titres `.vtt` le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
+   En règle générale, vous devez attribuer au fichier de sous-titres `.vtt` le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 
 1. Dans Experience Manager, chargez votre fichier de sous-titres WebVTT dans le DAM.
 1. Accédez à la ressource vidéo *publiée* à associer au fichier de sous-titres que vous avez chargé.
