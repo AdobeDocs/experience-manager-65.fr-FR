@@ -19,7 +19,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Le mode hors ligne de l’application d’AEM Forms permet de travailler en toute facilité, même lorsque l’application se déconnecte. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 

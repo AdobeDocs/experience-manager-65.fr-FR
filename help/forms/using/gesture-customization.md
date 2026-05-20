@@ -20,7 +20,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Vous pouvez personnaliser les mouvements de l’application AEM Forms pour interagir différemment avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 

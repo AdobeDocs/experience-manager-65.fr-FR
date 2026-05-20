@@ -19,7 +19,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Vous devez archiver le projet Xcode pour l’application AEM Forms afin de créer le programme d’installation (un fichier .ipa) et un fichier de liste de propriétés (un fichier .plist). Le fichier de liste de propriétés contient des informations de configuration de l’application interne hébergée, telles que le nom et l’emplacement d’hébergement de l’application. Pour plus d’informations sur le fichier de liste de propriétés, voir [À propos des fichiers de liste de propriétés d’informations](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 

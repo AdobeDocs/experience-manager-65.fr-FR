@@ -19,7 +19,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Si l’application Adobe Experience Manager (AEM) Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler sur des tâches qui vous sont assignées. Les tâches sont des étapes du workflow défini dans le Workbench ou dans l’éditeur de workflow AEM.
 

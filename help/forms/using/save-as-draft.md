@@ -19,7 +19,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur l’appareil mobile et synchronisés avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 

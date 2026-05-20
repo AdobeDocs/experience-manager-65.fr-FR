@@ -20,7 +20,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Parfois, lorsque les utilisateurs et utilisatrices remplissent un formulaire, les entrées de quelques champs restent les mêmes. Pour ces types d’instances, vous pouvez remplir les champs nécessitant des valeurs identiques dans chaque instance et enregistrer le formulaire ou le brouillon comme modèle. Ainsi, chaque fois que vous créerez une instance du modèle, les champs spécifiés seront déjà remplis avec les valeurs spécifiées dans le modèle. Cela vous permet de gagner du temps et de fournir moins d’efforts pour remplir le formulaire.
 

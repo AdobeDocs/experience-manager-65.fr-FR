@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms une apparence différente et spécifique de l’entreprise. Vous avez, par exemple, la possibilité de remplacer les images par des logos de votre société. L’application AEM Forms prend en charge les personnalisations suivantes :
 

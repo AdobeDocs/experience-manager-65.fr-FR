@@ -20,7 +20,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 

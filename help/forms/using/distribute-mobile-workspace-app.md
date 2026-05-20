@@ -19,7 +19,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Les solutions MDM (Mobile Device Management) permettent le déploiement à grande échelle des applications sur des appareils mobiles.
 

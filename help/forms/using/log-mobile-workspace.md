@@ -20,7 +20,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Lorsque vous démarrez votre application Adobe Experience Manager (AEM) Forms, vous devez d’abord fournir vos informations de connexion et une URL de serveur AEM Forms.
 

@@ -19,7 +19,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Les formulaires activés pour la synchronisation dans l’application sont téléchargés et peuvent être utilisés directement.
 
