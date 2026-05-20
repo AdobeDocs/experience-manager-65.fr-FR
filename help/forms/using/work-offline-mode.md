@@ -8,14 +8,18 @@ exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 100%
+source-wordcount: '549'
+ht-degree: 97%
 
 ---
 
 # Utiliser en mode hors ligne {#working-in-the-offline-mode}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Le mode hors ligne de l’application d’AEM Forms permet de travailler en toute facilité, même lorsque l’application se déconnecte. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 

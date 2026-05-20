@@ -9,14 +9,18 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '910'
+ht-degree: 98%
 
 ---
 
 # Personnaliser l’identité graphique {#branding-customization}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms une apparence différente et spécifique de l’entreprise. Vous avez, par exemple, la possibilité de remplacer les images par des logos de votre société. L’application AEM Forms prend en charge les personnalisations suivantes :
 
@@ -155,7 +159,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
 
-1. Accédez au dossier `www/wsmobile/images`. 
+1. Accédez au dossier `www/wsmobile/images`.
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
 1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
@@ -164,7 +168,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Ouvrez le projet Android dans Eclipse.
 
-1. Accédez au dossier `assets/www/wsmobile/images`. 
+1. Accédez au dossier `assets/www/wsmobile/images`.
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Android.
@@ -173,7 +177,7 @@ Vérifiez que vous disposez des images suivantes :
 
 1. Ouvrez le projet `MWSWindows.sln` dans Visual Studio.
 
-1. Accédez au dossier `MWSWindows\www\wsmobile\images`. 
+1. Accédez au dossier `MWSWindows\www\wsmobile\images`.
 1. Pour changer le logo, remplacez le fichier `LC-logo.png` par défaut par le fichier `LC-logo.png` personnalisé.
 1. Pour changer l’arrière-plan, remplacez le fichier par défaut `Landing_bg.jpeg` par le fichier personnalisé `Landing_bg.jpeg`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Windows.
@@ -205,7 +209,7 @@ Vérifiez que vous disposez de l’image suivante :
 
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
 
-1. Accédez au dossier `www/wsmobile/images`. 
+1. Accédez au dossier `www/wsmobile/images`.
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
 1. Générez et exécutez l’application AEM Forms sur un appareil ou un simulateur iOS.
 
@@ -213,14 +217,14 @@ Vérifiez que vous disposez de l’image suivante :
 
 1. Ouvrez le projet Android dans Eclipse.
 
-1. Accédez au dossier `assets/www/wsmobile/images`. 
-1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier `aem_icon.png` personnalisé.
+1. Accédez au dossier `assets/www/wsmobile/images`.
+1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Android.
 
 ### Personnalisation des images sur les pages de connexion à l’aide de Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
 1. Ouvrez le projet `MWSWindows.sln` dans Visual Studio.
 
-1. Accédez au dossier `MWSWindows\www\wsmobile\images`. 
+1. Accédez au dossier `MWSWindows\www\wsmobile\images`.
 1. Pour changer le logo, remplacez le fichier par défaut `aem_icon.png` par le fichier personnalisé `aem_icon.png`.
 1. Générez et exécutez l’application AEM Forms sur un appareil Windows.

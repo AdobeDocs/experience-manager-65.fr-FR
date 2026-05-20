@@ -9,14 +9,18 @@ exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
 # Mettre à jour les paramètres généraux{#updating-general-settings}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Les paramètres généraux de l’application AEM Forms vous permettent de définir des paramètres tels que la récupération des pièces jointes, le mode hors ligne, l’écran d’accueil, la catégorie par défaut et la fréquence d’enregistrement automatique.
 
@@ -48,7 +52,7 @@ Vous pouvez apporter les modifications suivantes aux paramètres de votre applic
 * **Extraire les pièces jointes de la tâche** : spécifie le téléchargement ou non des pièces jointes associées lors du téléchargement d’une tâche sur votre application.
 * **Mode hors ligne** : activer ou désactiver le service hors ligne de l’application AEM Forms. Pour plus d’informations, consultez [Travailler en mode hors ligne](/help/forms/using/work-offline-mode.md).
 * **Écran d’accueil** : définir l’emplacement de départ ([écran d’accueil](../../forms/using/home-screen.md)) de l’application.
- Options disponibles :
+Options disponibles :
 
    * Formulaires
    * Tâches

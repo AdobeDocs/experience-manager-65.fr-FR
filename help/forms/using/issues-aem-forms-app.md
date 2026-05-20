@@ -8,14 +8,18 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 94%
 
 ---
 
 # Résolution des problèmes liés à l’application AEM Forms {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Cet article décrit les messages d’erreur qui peuvent s’afficher lors de la création de l’application AEM Forms ainsi que les étapes à suivre pour les résoudre.
 
@@ -64,7 +68,7 @@ Lorsque l’application AEM Forms est connectée à une ancienne version du ser
 
 Exécutez les étapes suivantes afin de résoudre ce problème :
 
-1. Dans l’instance d’auteur, accédez à **Adobe Experience Manager > Outils > Formulaires > Configurer le service hors ligne de l’application Workspace > Configurer maintenant**.
+1. Dans l’instance de création, accédez à **Adobe Experience Manager > Outils > Formulaires > Configurer le service hors ligne de l’application Workspace > Configurer maintenant**.
 1. Dans la page **Service hors ligne de l’application Workspace**, cliquez sur **Cache de ressource manuel**.
 
    URL : https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
@@ -99,7 +103,7 @@ Le message d’erreur s’affiche lorsque vous sélectionnez l’option **Géné
 
 **Résolution :** ouvrez le fichier **Scripts Gradle** > **gradle-wrapper.properties** et modifiez la propriété **distributionUrl**.
 
-Par exemple, la console d’Android Studio recommande de rétrograder la version de Gradle vers la version 3.5. Modifiez la version dans **distributionUrl** du fichier **gradle-wrapper.properties**.
+Par exemple, la console d’Android Studio recommande de rétrograder la version de Gradle vers la version 3.5. Modifiez la version dans le fichier **distributionUrl** of **gradle-wrapper.properties**.
 
 Sélectionnez à nouveau **Générer** > **Générer APK** pour résoudre l’erreur et générer le fichier .apk.
 

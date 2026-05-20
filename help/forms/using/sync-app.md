@@ -10,14 +10,18 @@ exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '388'
+ht-degree: 92%
 
 ---
 
 # Synchronisation de l’application{#synchronizing-the-app}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 ## Synchronisation de l’application {#synchronizing-the-app-1}
 
@@ -44,6 +48,6 @@ Sélectionnez le bouton Synchroniser ![sync-app](assets/sync-app.png) dans le co
 ### Spécifications techniques {#technical-specifications}
 
 * La logique principale de l’envoi de données d’application hors ligne au serveur AEM Forms est incluse dans runtime/offline/util/offline.js.
-* Dans le fichier .js, l’appel de la fonction processOfflineSubmittedSavedTasks(...) envoie vers le serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre boîte d’envoi.
+* Dans le fichier .js, l’appel à processOfflineSubmittedSavedTasks(...) envoie au serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre boîte d’envoi.
 * Les fonctions syncSubmittedTask() et syncSavedTask() effectuent des opérations sur des tâches particulières.
 * L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de liste de tâches lorsqu’un utilisateur ou une utilisatrice choisit de synchroniser l’état hors ligne sur le serveur ou une synchronisation automatique par le thread d’arrière-plan.

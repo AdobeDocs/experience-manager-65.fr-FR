@@ -10,14 +10,18 @@ exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 100%
+source-wordcount: '234'
+ht-degree: 86%
 
 ---
 
 # Configurer l’environnement de l’application AEM Forms{#set-up-environment-for-aem-forms-app}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
 
@@ -32,7 +36,7 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 * Ordinateur Apple Mac à processeur Intel avec macOS X 10.9.5 ou version supérieure
 * SDK iOS 8.4 ou version supérieure
 * Version Xcode : Xcode 6.4 pour OS X ou version supérieure
-* Adhésion au programme pour développeurs et développeuses iOS en entreprise
+* Abonnement au programme pour développeurs et développeuses iOS en entreprise
 * Certificat d’entreprise pour la distribution d’applications iOS en interne
 * Apple iPad avec iOS 8.4 ou version ultérieure
 
@@ -44,4 +48,4 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 
 >[!NOTE]
 >
->Le fichier adobe-lc-mobileworkspace-src.zip contient le PhoneGAP SDK 5.0. Assurez-vous que le PhoneGap SDK n’est pas préinstallé.
+>Le fichier adobe-lc-mobileworkspace-src.zip contient PhoneGap SDK 5.0. Assurez-vous que PhoneGap SDK n’est pas préinstallé.
