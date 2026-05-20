@@ -9,14 +9,18 @@ exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '340'
+ht-degree: 95%
 
 ---
 
 # Enregistrer les formulaires sous forme de modèles {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Parfois, lorsque les utilisateurs et utilisatrices remplissent un formulaire, les entrées de quelques champs restent les mêmes. Pour ces types d’instances, vous pouvez remplir les champs nécessitant des valeurs identiques dans chaque instance et enregistrer le formulaire ou le brouillon comme modèle. Ainsi, chaque fois que vous créerez une instance du modèle, les champs spécifiés seront déjà remplis avec les valeurs spécifiées dans le modèle. Cela vous permet de gagner du temps et de fournir moins d’efforts pour remplir le formulaire.
 

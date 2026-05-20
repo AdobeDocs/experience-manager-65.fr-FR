@@ -9,15 +9,19 @@ exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: dd8748cee7a4b3ba91795a51928bd8590c47ef27
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '249'
+ht-degree: 94%
 
 ---
 
 
 # Utilisation des points de départ{#working-with-startpoints}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Un point de départ appelle un processus créé dans Workbench. Il est associé à un formulaire qui appelle le processus lors de l’envoi du formulaire.
 

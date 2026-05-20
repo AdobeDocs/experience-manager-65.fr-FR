@@ -8,14 +8,18 @@ exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '296'
+ht-degree: 95%
 
 ---
 
 # Ouvrir une tâche {#opening-a-task}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Si l’application Adobe Experience Manager (AEM) Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler sur des tâches qui vous sont assignées. Les tâches sont des étapes du workflow défini dans le Workbench ou dans l’éditeur de workflow AEM.
 

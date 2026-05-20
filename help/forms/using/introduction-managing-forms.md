@@ -9,16 +9,17 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1521'
+ht-degree: 98%
 
 ---
 
 # Présentation de la gestion des formulaires {#introduction-to-managing-forms}
 
-AEM [!DNL Forms] fournit une interface utilisateur simplifiée et puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources associées. Cela leur permet de gérer le cycle de vie complet des formulaires, des documents et des ressources associées, depuis le bureau du développeur jusqu’à sa publication sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l’interface utilisateur AEM [!DNL Forms] pour :
+AEM [!DNL Forms] fournit une interface utilisateur simplifiée et puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources associées. Il permet de gérer le cycle de vie complet des formulaires, des documents et des ressources connexes, depuis le bureau du développeur jusqu’à l’offre
+il est disponible sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l’interface utilisateur AEM [!DNL Forms] pour :
 
 * Accéder aux composants AEM [!DNL Forms].
 * Accéder aux configurations AEM [!DNL Forms].
@@ -43,9 +44,9 @@ Outre les options permettant de créer des formulaires, des documents et des res
 
 Formulaires et documents fournit des options pour créer une communication interactive, un formulaire adaptatif, un fragment de formulaire adaptatif et un jeu de formulaires. Exclusivement pour AEM [!DNL Forms] on JEE, Formulaires et documents propose une option permettant d’importer des fichiers du stockage local et de synchroniser les ressources AEM [!DNL Forms] avec Workbench.
 
-Le bouton Créer est le point de départ du processus de création ou de chargement d’une ressource AEM [!DNL Forms]. Il permet de créer : 
+Le bouton Créer est le point de départ du processus de création ou de chargement d’une ressource AEM [!DNL Forms]. Il permet de créer :
 
-* **Communication interactive** : une communication interactive est une correspondance, une déclaration ou un document numérique HTML personnalisé, interactif et bien adapté aux appareils. Réactives par nature, les communications interactives modifient automatiquement leur mise en page et leur conception en fonction du périphérique et des paramètres de l’utilisateur. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md)
+* **Communication interactive** : une communication interactive est une correspondance, une déclaration ou un document numérique HTML personnalisé, interactif et bien adapté aux appareils. Réactives par nature, les communications interactives modifient automatiquement leur mise en page et leur conception en fonction du périphérique et des paramètres d’utilisation. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md)
 
 * **Formulaire adaptatif :** un formulaire adaptatif est un formulaire engageant et réactif. Vous pouvez en outre créer un formulaire adaptatif qui s’adapte dynamiquement aux entrées utilisateur en ajoutant ou en supprimant des sections de formulaire en fonction des réponses, des appareils et de l’environnement de travail des utilisateurs. L’article [Introduction à la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md) fournit plus d’informations sur les formulaires adaptatifs.
 
@@ -55,7 +56,7 @@ Le bouton Créer est le point de départ du processus de création ou de chargem
 
 * **Dossier :** l’interface utilisateur d’AEM [!DNL Forms] utilise des dossiers pour classer les ressources. Elle prend en charge deux types de dossiers :
 
-   * **Dossier Général :** ces fichiers sont utilisés pour les ressources créées dans l’interface utilisateur AEM [!DNL Forms] Ces dossiers n’ont pas de structure de dossiers stricte. Vous pouvez renommer, créer des sous-dossiers et stocker des formulaires adaptatifs, des communications interactives, des fragments de formulaire adaptatif, des modèles de formulaire (XDP), des formulaires PDF, des documents et les ressources associées dans ces dossiers.
+   * **Dossier Général :** ces fichiers sont utilisés pour les ressources créées dans l’interface utilisateur AEM [!DNL Forms] Ces dossiers n’ont pas de structure de dossiers stricte. Vous pouvez renommer, créer des sous-dossiers et stocker des formulaires adaptatifs, des communications interactives, des fragments de formulaire adaptatif, des modèles de formulaires (XDP), des formulaires PDF, des documents et les ressources associées dans ces dossiers.
    * **Dossiers de processus de formulaires** : ces dossiers sont créés lorsque des processus Workbench (archives LiveCycle) sont migrés et synchronisés avec l’interface utilisateur d’AEM [!DNL Forms] Il est interdit de renommer, de créer un sous-dossier, de créer une communication interactive ou un fragment de formulaire adaptatif. Il est interdit de supprimer un dossier de version ou de créer et charger un formulaire adaptatif, un fragment de formulaire adaptatif ou une communication interactive parallèlement au dossier de version.
 
   ![dossiers](assets/folders.png)
@@ -64,7 +65,7 @@ Le bouton Créer est le point de départ du processus de création ou de chargem
 
 Le panneau Formulaires et documents propose également des options pour effectuer les actions suivantes :
 
-* **Importez des fichiers depuis le stockage local :** vous pouvez importer des formulaires et des documents PDF, des modèles de formulaire (formulaires XFA) et d’autres ressources (schémas d’image et XML pour les schémas XSD). Pour des instructions détaillées, voir [Importation et exportation des ressources dans AEM Forms](../../forms/using/import-export-forms-templates.md).
+* **Importez des fichiers depuis le stockage local :** vous pouvez importer des formulaires et des documents PDF, des modèles de formulaires (formulaires XFA) et d’autres ressources (schémas d’image et XML pour les schémas XSD). Pour des instructions détaillées, voir [Importation et exportation des ressources dans AEM Forms](../../forms/using/import-export-forms-templates.md).
 * **Synchronisation des ressources AEM Forms avec Workbench :** vous pouvez utiliser l’option Fichiers de Workbench pour synchroniser les ressources entre l’interface utilisateur d’AEM Forms et Workbench. Elle garantit que toutes les ressources sont disponibles dans AEM [!DNL Forms] l’interface utilisateur et la sélection de ressources crx-repository de Workbench.
 
 ### Thèmes  {#themes}
@@ -94,17 +95,16 @@ Pour plus d’informations sur la création et l’utilisation de dictionnaires 
 Le panneau d’outils AEM contient des outils pour divers composants. Pour accéder aux outils spécifiques à AEM Forms, cliquez sur le logo Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > outils ![marteau](assets/hammer.png) > **[!UICONTROL Forms]**. Les outils permettant d’exécuter les fonctions suivantes s’affichent :
 
 * **Configurer le dossier de contrôle :** un administrateur ou une administratrice peut configurer un dossier réseau, appelé dossier de contrôle, de sorte que lorsqu’une personne y place un fichier (par exemple un fichier PDF), une opération préconfigurée est lancée et manipule le fichier. Pour de plus amples informations, voir [Créer et configurer un dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md).
-* **Configurer le service hors ligne de l’application :** le service AEM [!DNL Forms] hors ligne de l’application met en cache les chemins ou les URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. Pour configurer le composant hors ligne côté serveur de l’application AEM Forms, voir [Travailler en mode hors ligne](/help/forms/using/work-offline-mode.md).
 
-  ![Outils AEM Forms](assets/aem_forms_tools_new.png)
+  <!-- **Configure Forms App Offline Service:** The AEM [!DNL Forms] app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).![AEM Forms tools](assets/aem_forms_tools_new.png) -->
 
 * **Configurer PDF Generator** : un administrateur ou une administratrice peut configurer les paramètres PDF AEM [!DNL Forms], ajouter des comptes d’utilisateurs, et importer ou exporter la configuration dans PDF Generator.
-* **Publier les actifs de gestion de correspondance :** AEM [!DNL Forms] permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance d’auteur simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publier et dépublier des formulaires et des documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Publier les actifs de gestion de correspondance :** AEM [!DNL Forms] permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance de création simultanément. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publier et dépublier des formulaires et des documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exporter les actifs de gestion de correspondance :** vous pouvez télécharger tous les actifs Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM [!DNL Forms] Pour la procédure détaillée, voir [Importation et exportation des actifs dans AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Éléments courants de l’interface utilisateur {#commonelements}
 
-* **Icône de rail de gauche :** vous pouvez cliquer sur l’icône de rail gauche ![railleftpng](assets/railleftpng.png) afin d’afficher les fonctionnalités de montage et de références d’AEM [!DNL Forms].
+* **Icône de rail de gauche :** vous pouvez cliquer sur l’icône de rail gauche ![railleftpng](assets/railleftpng.png) afin d’afficher les fonctionnalités de chronologie et de références d’AEM [!DNL Forms].
 
    * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](../../forms/using/create-reviews-forms.md).
    * **Références :**  un actif AEM [!DNL Forms] peut être utilisé dans plusieurs actifs AEM [!DNL Forms] Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.

@@ -8,14 +8,18 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 97%
 
 ---
 
 # Enregistrer une tâche ou un formulaire en tant que brouillon {#saving-a-task-or-form-as-a-draft}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 L’option Enregistrer en tant que brouillon enregistre un instantané d’une tâche ou d’un formulaire avec les données renseignées dans le formulaire associé. Vous pouvez également créer un brouillon à partir d’un modèle. Les brouillons sont enregistrés sur l’appareil mobile et synchronisés avec le serveur Adobe Experience Manager Forms pour une récupération ultérieure.
 

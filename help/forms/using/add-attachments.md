@@ -9,14 +9,18 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 97%
 
 ---
 
 # Ajouter des pièces jointes{#adding-attachments}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 
@@ -26,7 +30,7 @@ Vous avez le choix entre :
 
 * **Galerie** : vous permet d’ajouter une image à partir des images enregistrées sur votre appareil.
 
-* **Appareil photo** : vous permet de prendre une photo et de l’ajouter au formulaire. 
+* **Appareil photo** : vous permet de prendre une photo et de l’ajouter au formulaire.
 
 * **Notes** : vous permet d’ajouter une saisie tactile ou une note de texte. Utilisez ![Griffonnage](assets/scribble.png) pour ajouter une note griffonnée et ![Clavier](assets/keyboard.png) pour ajouter une note de texte.
 

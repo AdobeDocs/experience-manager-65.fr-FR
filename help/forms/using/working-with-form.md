@@ -8,14 +8,18 @@ exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 100%
+source-wordcount: '428'
+ht-degree: 96%
 
 ---
 
 # Utiliser un formulaire {#working-with-a-form}
+
+>[!NOTE]
+>
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
 
 Les formulaires activés pour la synchronisation dans l’application sont téléchargés et peuvent être utilisés directement.
 
@@ -23,8 +27,8 @@ Les formulaires sont téléchargés sur votre application et sont disponibles ho
 
 Pour synchroniser votre formulaire dans l’application AEM Forms :
 
-1. Dans l’instance d’auteur, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**. 
-1. Dans la page des propriétés, cliquez sur **Avancé.** 
+1. Dans l’instance de création, sélectionnez un formulaire, puis cliquez sur **Afficher les propriétés**.
+1. Dans la page des propriétés, cliquez sur **Avancé.**
 1. Dans la section Avancé, activez l’option : **Synchroniser avec l’application AEM Forms** et sélectionnez **Enregistrer**.
 
 Pour synchroniser plusieurs formulaires, dans l’instance de création, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et sélectionnez **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
