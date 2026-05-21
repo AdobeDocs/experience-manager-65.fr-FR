@@ -1,18 +1,14 @@
 ---
 title: Bonnes pratiques en matière de workflow
 description: Découvrez les bonnnes pratiques d’utilisation des workflows dans Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 100%
+source-wordcount: '1962'
+ht-degree: 84%
 
 ---
 
@@ -32,13 +28,13 @@ Lors de la configuration de processus de workflows (personnalisés et/ou prêts 
 
 Pour optimiser les charges d’ingestion élevées, vous pouvez définir un [workflow comme transitoire](/help/sites-developing/workflows.md#transient-workflows).
 
-Lorsqu’un workflow est transitoire, les données d’exécution liées aux étapes de travail intermédiaires ne sont pas conservées dans JCR lors de leur exécution (les rendus de sortie sont conservés).
+Lorsqu’un workflow est transitoire, les données d’exécution liées aux étapes de travail intermédiaires ne sont pas conservées dans le JCR lors de leur exécution (les rendus de sortie sont conservés).
 
 Les avantages sont notamment :
 
-* Une réduction du temps de traitement du workflow ; jusqu’à 10 %.
+* Réduction du temps de traitement des workflows pouvant aller jusqu’à 10 %.
 * Une réduction considérable de la croissance du référentiel.
-* Plus aucun workflow CRUD n&#39;est nécessaire pour la purge.
+* Plus besoin de purger les workflows CRUD.
 * Une réduction en outre du nombre de fichiers TAR à compacter.
 
 >[!CAUTION]
@@ -51,7 +47,7 @@ Pour obtenir des instructions sur l’optimisation des performances des workflow
 
 ### Configurer le nombre maximum de workflows simultanés {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM peut permettre à plusieurs threads de workflows de s’exécuter simultanément. Par défaut, le nombre de threads est configuré pour correspondre à la moitié du nombre de cœurs de processeur du système.
+AEM peut permettre à plusieurs threads de workflows de s’exécuter simultanément. Par défaut, le nombre de threads est configuré pour être égal à la moitié du nombre de cœurs de processeur du système.
 
 Dans les cas où les workflows en cours d’exécution sont gourmands en ressources système, cela peut signifier qu’AEM ne peut plus utiliser grand-chose pour d’autres tâches, telles que le rendu de l’interface utilisateur de création. Par conséquent, le système peut être lent lors d’activités telles que le chargement massif d’images.
 
@@ -67,13 +63,13 @@ Il existe, en outre, une configuration distincte pour la **File d’attente des 
 
 ### Configurer des files d’attente de tâches individuelles {#configure-individual-job-queues}
 
-Dans certains cas, il est utile de configurer des files d’attente de tâches individuelles pour contrôler les threads simultanés ou d’autres options de file d’attente, sur une base de tâches individuelles. Vous pouvez ajouter et configurer une file d’attente individuelle depuis la console web via la fabrique de **configuration de la file d’attente de tâches Apache Sling**. Pour localiser la rubrique à répertorier, exécutez le modèle du workflow et recherchez-le dans la console **Tâches Sling** ; par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
+Dans certains cas, il est utile de configurer des files d’attente de tâches individuelles pour contrôler les threads simultanés ou d’autres options de file d’attente, sur une base de tâche individuelle. Vous pouvez ajouter et configurer une file d’attente individuelle depuis la console web via la fabrique de **configuration de la file d’attente de tâches Apache Sling**. Pour localiser la rubrique à répertorier, exécutez le modèle du workflow et recherchez-le dans la console **Tâches Sling** ; par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
 
 Des files d’attente individuelles peuvent également être ajoutées pour les workflows transitoires.
 
 ### Configurer la purge de workflow {#configure-workflow-purging}
 
-Dans une installation standard, AEM fournit une console de maintenance où vous pouvez planifier et configurer les activités de maintenance quotidiennes et hebdomadaires ; par exemple, à :
+Dans une installation standard, AEM fournit une console de maintenance dans laquelle les activités de maintenance quotidiennes et hebdomadaires peuvent être planifiées et configurées. Par exemple, à l’adresse :
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
@@ -128,11 +124,11 @@ Les modèles de workflow sont stockés dans le référentiel selon leur type :
   >
   >Si ces conceptions sont modifiées *à l’aide de l’interface utilisateur d’AEM*, les détails seront alors copiés vers les nouveaux emplacements.
 
-#### Emplacements - Lanceurs de workflow {#locations-workflow-launchers}
+#### Emplacements - Lanceurs de workflows {#locations-workflow-launchers}
 
-Les définitions de lanceur de workflow sont également stockées dans le référentiel selon leur type :
+Les définitions de lanceur de workflows sont également stockées dans le référentiel selon leur type :
 
-* Les lanceurs de workflow prêts à l’emploi sont conservés à l’emplacement suivant :
+* Les lanceurs de workflows prêts à l’emploi sont conservés à l’emplacement suivant :
 
   `/libs/settings/workflow/launcher/`
 
@@ -140,18 +136,18 @@ Les définitions de lanceur de workflow sont également stockées dans le réfé
   >
   >Ne pas :
   >
-  >* placer vos lanceurs de workflow personnalisés dans ce dossier ;
+  >* placer vos lanceurs de workflows personnalisés dans ce dossier ;
   >* modifier des éléments dans `/libs`,
   >
   >Car les modifications peuvent être remplacées lors de la mise à niveau ou lors de l’installation de correctifs, de groupes de correctifs cumulatifs ou de service packs.
 
-* Les lanceurs de workflow personnalisés sont conservés sous :
+* Les lanceurs de workflows personnalisés sont conservés sous :
 
   ```
   /conf/global/settings/workflow/launcher/...
   ```
 
-* Les lanceurs de workflow hérités sont conservés à l’emplacement suivant :
+* Les lanceurs de workflows hérités sont conservés à l’emplacement suivant :
 
   `/etc/workflow/launcher/`
 
@@ -230,8 +226,8 @@ Comme dans tout développement personnalisé, il est toujours recommandé d’ut
 Lors de la mise en œuvre d’un processus de workflow :
 
 * Une session de workflow est fournie et doit être utilisée, sauf s’il y a une bonne raison de ne pas le faire.
-* De nouvelles sessions ne doivent pas être créées à partir d’étapes de workflow, car cela entraîne des incohérences dans les états ainsi que d’éventuels problèmes de simultanéité dans le moteur de workflow.
-* Vous ne devez pas acquérir une nouvelle session JCR à partir d’une étape de processus dans un workflow ; vous devez adapter la session de workflow fournie par l’API Process Step à une session jcr. Par exemple :
+* Les nouvelles sessions ne doivent pas être créées à partir des étapes de workflow, car cela entraîne des incohérences dans le ou les états ainsi que d’éventuels problèmes de simultanéité dans le moteur de workflow.
+* Vous ne devez pas acquérir de nouvelle session JCR à partir d’une étape de processus dans un workflow ; vous devez adapter la session de workflow fournie par l’API Process Step à une session JCR. Par exemple :
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -244,21 +240,21 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Enregistrer une session :
 
-* Dans un processus de workflow, si `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow s’en chargera une fois l’opération terminée.
+* Dans un processus de workflow, si le `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow s’en chargera une fois l’opération terminée.
 * `Session.Save` ne doit pas être appelé depuis l’intérieur d’une étape de workflow :
 
-   * Il est recommandé d’adapter la session JCR du workflow ; une opération `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
-   * Il est déconseillé qu’une étape du processus crée sa propre session jcr.
+   * Il est recommandé d’adapter la session JCR du workflow ; une `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
+   * Il n’est pas recommandé qu’une étape de processus crée sa propre session JCR.
 
 * En éliminant les enregistrements inutiles, vous pouvez réduire le traitement et ainsi rendre les workflows plus efficaces.
 
 >[!CAUTION]
 >
->Si vous créez quand même votre propre session JCR malgré ces recommandations, vous devrez l’enregistrer.
+>Si, malgré les recommandations fournies ici, vous créez votre propre session JCR, elle doit être enregistrée.
 
 ### Minimiser le nombre/la portée des lanceurs {#minimize-the-number-scope-of-launchers}
 
-Il existe un écouteur responsable de tous les [lanceurs de workflow](/help/sites-administering/workflows-starting.md#workflows-launchers) enregistrés :
+Il existe un écouteur responsable de tous les [lanceurs de workflows](/help/sites-administering/workflows-starting.md#workflows-launchers) enregistrés :
 
 * Il écoutera les changements sur tous les chemins spécifiés dans les propriétés glob des autres lanceurs.
 * Lorsqu’un événement est distribué, le moteur de workflow évalue ensuite chaque lanceur pour déterminer s’il doit s’exécuter.
@@ -282,13 +278,13 @@ La [configuration de lanceur](/help/sites-administering/workflows-starting.md#wo
 
 Les workflows peuvent entraîner une surcharge importante, à la fois en termes d’objets créés en mémoire et de nœuds suivis dans le référentiel. Pour cette raison, il est préférable qu’un workflow effectue son traitement lui-même plutôt que de démarrer des workflows supplémentaires.
 
-Par exemple, un workflow qui implémente un processus d’entreprise sur un ensemble de contenu, puis active ce contenu. Il est préférable de créer un processus de workflow personnalisé qui active chacun de ces nœuds, plutôt que de démarrer un modèle **Activer le contenu** pour chacun des nœuds de contenu qui doivent être publiés. Cette approche nécessitera un travail de développement supplémentaire, mais est plus efficace une fois exécutée que le démarrage d’une instance de workflow séparée pour chaque activation.
+Par exemple, un workflow qui implémente un processus d’entreprise sur un ensemble de contenu, puis active ce contenu. Il est préférable de créer un processus de workflow personnalisé qui active chacun de ces nœuds, plutôt que de démarrer un modèle **Activer le contenu** pour chacun des nœuds de contenu qui doivent être publiés. Cette approche nécessitera un travail de développement supplémentaire, mais elle est plus efficace lors de son exécution que le démarrage d’une instance de workflow distincte pour chaque activation.
 
 Un autre exemple serait un workflow qui traite plusieurs nœuds, crée un package de workflow, puis active ce package. Plutôt que de créer le package, puis de démarrer un workflow séparé avec le package défini comme charge utile, vous pouvez modifier la charge utile de votre workflow lors de l’étape de création du package, et appeler ensuite l’étape pour activer le package dans le même modèle de workflow.
 
 ### Avance du gestionnaire {#handler-advance}
 
-Lors de la conception d’un modèle de workflow, vous avez la possibilité d’activer l’avance du gestionnaire dans les étapes de votre workflow. Vous pouvez également ajouter du code à votre étape de workflow pour déterminer la prochaine étape à exécuter, puis l’exécuter.
+Lors de la conception d’un modèle de workflow, vous avez la possibilité d’activer l’avance du gestionnaire sur vos étapes de workflow. Vous pouvez également ajouter du code à votre étape de workflow pour déterminer la prochaine étape à exécuter, puis l’exécuter.
 
 Il est recommandé d’utiliser l’avance du gestionnaire, car elle offre de meilleures performances.
 
@@ -308,7 +304,7 @@ Tenez compte de ce point si vous envisagez d’utiliser cette étape dans le cad
 
 Lors de la mise à niveau de votre instance :
 
-* assurez-vous que tous les modèles de workflow personnalisés ont été sauvegardés avant la mise à niveau d&#39;une instance.
+* assurez-vous que tous les modèles de workflow personnalisés ont été sauvegardés avant la mise à niveau d’une instance.
 * vérifiez qu’aucun de vos workflows personnalisés n’est stocké dans l’[ emplacement](#locations) :
 
    * `/libs/settings/workflow/models/projects`
