@@ -4,10 +4,16 @@ description: Découvrir l’IA dans Adobe Experience Manager 6.5
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: fe05a5f7-8d25-4e1a-b340-9fae3a2ee48a
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+autotag-review: '2026-05-18T18:38:32.215Z'
+TQID: 'https://experienceleague.adobe.com/iAcbty1Qd5INjpOP-mH41s7mqUsFbKtK-NJpL2CcbNA'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: ac5ecfc1-cc78-4ecc-a90a-0362685062ceid: ec4263d9-bf7c-44c7-b3f1-3e664861c8f2
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 45%
+source-wordcount: 103
+ht-degree: 76%
 
 ---
 
@@ -17,7 +23,7 @@ L’IA fait partie intégrante de Adobe Experience Manager. Elle est utilisée p
 
 ## Assistant IA {#ai-assistant}
 
-L’[assistant AI dans Adobe Experience Manager](/help/ai-assistant-in-aem.md) offre une interface de conversation conçue pour rationaliser la recherche de réponses à vos requêtes liées à AEM.
+L’[assistant IA dans Adobe Experience Manager](/help/ai-assistant-in-aem.md) offre une interface de conversation conçue pour rationaliser la recherche de réponses à vos requêtes liées à AEM.
 
 ## Informations supplémentaires {#further-information}
 
