@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1066'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Ce parcours présuppose que le lecteur dispose d’une expérience en traduction
 
 Voici les personnes qui interagissent dans ce parcours.
 
-| Personne | Description | Rôle dans le parcours |
+| Personne | Description | Rôle dans le Parcours |
 |---|---|---|
 | Spécialiste de traduction | Définit le contenu à traduire et gère les workflows. | Audience ciblée de ce parcours |
 | Auteur de contenu | Crée et gère le contenu diffusé de façon découplée | Les auteurs de contenu créent du contenu que le spécialiste de traduction doit traduire. |
@@ -80,7 +80,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours de traduction déc
 
 ## Ressources supplémentaires {#additional-resources}
 
-Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre à un unique besoin d’activité.
+Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la manière dont différentes fonctionnalités s’associent pour répondre à un besoin unique.
 
 Ainsi, les parcours sont conçus pour être autonomes. Toutefois, certains parcours peuvent être associés entre eux. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 

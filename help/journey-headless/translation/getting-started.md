@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1491'
 ht-degree: 100%
 
 ---
@@ -100,7 +100,7 @@ Notez le contenu du champ **Nom de la propriété** pour tous les champs qui doi
 
 ### Fragments de contenu {#content-fragments}
 
-Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les auteurs de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
+Les modèles de contenu sont utilisés par les auteurs de contenu pour créer le véritable contenu découplé. Les créateurs et créatrices de contenu sélectionnent le modèle sur lequel baser leur contenu, puis créent des fragments de contenu. Les fragments de contenu sont des instances de ces modèles et représentent le véritable contenu à diffuser en mode découplé.
 
 Si les modèles de contenu correspondent aux motifs de contenu, les fragments de contenu correspondent au véritable contenu basé sur ces modèles. Les fragments de contenu représentent le contenu qui doit être traduit.
 
@@ -194,5 +194,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Configuration du framework d’intégration de la traduction](/help/sites-administering/tc-tic.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-administering/tc-manage.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

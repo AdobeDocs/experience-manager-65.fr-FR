@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 100%
+source-wordcount: '2121'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Utilisez l’intégration et les règles de traduction pour traduire votre contenu découplé.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours de traduction découplée AEM, intitulé [Configuration des règles de traduction](translation-rules.md), vous avez appris à utiliser les règles de traduction AEM pour identifier votre contenu de traduction. Vous devez maintenant :
 
