@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '897'
+ht-degree: 95%
 
 ---
 
@@ -103,7 +103,7 @@ Deux types de données fournissent des références au contenu en dehors d’un
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**
+* **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
@@ -133,7 +133,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise compte à la fois un PDG et des employés.... et tous ces gens sont définis comme une personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

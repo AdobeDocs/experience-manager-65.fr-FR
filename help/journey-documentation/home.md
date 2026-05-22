@@ -7,8 +7,8 @@ role: Admin, Developer, User, Leader
 feature: Administering
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 100%
+source-wordcount: '1239'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ Les parcours de documentation ont été conçus pour compléter la documentation
 
 | Type de documentation | Objectif | Audience | Suppose | Omet | Type de contenu | Durée |
 |---|---|---|---|---|---|---|
-| Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Environ 1 heure |
+| Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Ca. 1 heure |
 | Documents techniques | Les documents techniques se concentrent sur chaque fonctionnalité individuellement, en détaillant le fonctionnement technique de la fonctionnalité et chaque option disponible pour l’utilisateur. | Utilisateurs AEM expérimentés | Expérience d’AEM | Informations de contexte et d’arrière-plan | Texte | Variable |
 | Tutoriel | Un tutoriel est une présentation détaillée d’un sujet qui montre à un développeur, à une développeuse ou à une personne chargée de l’administration comment atteindre pas à pas un objectif technique (généralement la programmation ou la configuration du système), en fournissant des exemples de cas d’utilisation et de code spécifiques et en n’exploitant généralement qu’un ensemble limité de fonctionnalités. | Développeurs ou administrateurs AEM | Expérience d’AEM | Contexte et théorie | Vidéo | >1 heure |
 | Guide de prise en main | Un guide de prise en main est une présentation rapide d’une nouvelle fonctionnalité d’AEM en particulier. Il s’agit d’un aperçu rapide sur une fonctionnalité individuelle, qui guide l’utilisateur à travers les étapes importantes (bien que non exhaustives) de configuration et d’utilisation d’un cas d’utilisation simple. | Administrateurs AEM | Expérience d’AEM | Contexte, théorie et détails des options | Texte | &lt;1 heure |

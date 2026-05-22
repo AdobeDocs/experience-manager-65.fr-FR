@@ -8,8 +8,8 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
-workflow-type: ht
-source-wordcount: '908'
+workflow-type: tm+mt
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form) |
 | AEM 6.5 | Cet article |
 
 
@@ -39,7 +39,7 @@ Ce tutoriel fournit un cadre de bout en bout pour la création d’un formulaire
 
 Commençons par aborder un cas d’utilisation :
 
-Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses de livraison et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse de livraison sur le site web. Le site Web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses de livraison.
+Un site web propose une gamme de produits pour une clientèle diverse. La clientèle parcourt le portail, sélectionne et commande les produits. Chaque personne crée un compte et fournit des adresses d’expédition et de facturation. Une cliente existante, Sara Rose, cherche à ajouter son adresse d’expédition sur le site web. Le site web fournit un formulaire en ligne pour ajouter et mettre à jour les adresses d’expédition.
 
 Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL Forms] pour la capture et le traitement des données. Le formulaire d’ajout et de mise à jour d’adresse est un formulaire adaptatif. Le site web stocke les détails du client ou de la cliente dans une base de données. Il utilise le formulaire d’ajout et de mise à jour d’adresse pour récupérer et afficher les adresses disponibles. Il utilise également le formulaire adaptatif pour accepter les adresses mises à jour et les nouvelles adresses.
 
@@ -61,7 +61,7 @@ Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs,
 
 Objectifs :
 
-* Créer un formulaire adaptatif permettant à une personne cliente d’ajouter une adresse de livraison.
+* Créer un formulaire adaptatif permettant à un client ou une cliente d’ajouter une adresse d’expédition.
 * Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’une personne cliente.
 * Créer une action d’envoi pour envoyer un e-mail contenant du contenu de formulaire.
 * Prévisualiser et envoyer un formulaire adaptatif.

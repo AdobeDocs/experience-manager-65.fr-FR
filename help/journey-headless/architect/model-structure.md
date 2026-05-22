@@ -7,7 +7,7 @@ feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 100%
 
 ---
@@ -76,7 +76,7 @@ Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
 
 ### Vos auteurs de contenu {#your-content-authors}
 
-Les auteurs de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
+Les créateurs de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
 
 >[!NOTE]
 >
@@ -135,4 +135,4 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * Guides de prise en main
 
-   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés](/help/sites-developing/headless/getting-started/create-content-model.md)
+   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplé](/help/sites-developing/headless/getting-started/create-content-model.md)

@@ -11,7 +11,7 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '761'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ Sarah clique sur **Renouveler maintenant** et est redirigée vers la version web
 
 #### Fonctionnement {#how-it-works}
 
-Les versions web et imprimées de votre lettre d’assurance automobile sont créées à l’aide des fonctionnalités multicanales des communications interactives.
+Les versions web et impression de votre lettre d’assurance automobile sont créées à l’aide des fonctionnalités multicanales des communications interactives.
 
 Le bouton Renouveler maintenant dans l’e-mail est lié à la demande de renouvellement d’assurance automobile qui se présente sous forme de communication interactive sur une instance de publication.
 
