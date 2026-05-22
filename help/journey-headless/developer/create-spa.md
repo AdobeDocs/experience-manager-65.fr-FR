@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
-workflow-type: ht
-source-wordcount: '1248'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Dans cette suite facultative du [Parcours de développement découplé AEM](overview.md), découvrez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du framework de l’éditeur de SPA d’AEM et comment intégrer des SPA externes afin d’utiliser les fonctionnalités d’édition, le cas échéant.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 À ce stade, vous devriez avoir terminé l’ensemble du [Parcours de développement découplé AEM](overview.md) et comprendre les principes de base de la diffusion découplée dans AEM, ainsi que les éléments suivants :
 
@@ -67,7 +67,7 @@ Cela limite la nécessité d’actualiser la page et offre à l’utilisateur un
 
 L’éditeur de SPA d’AEM permet aux développeurs et aux développeuses front-end de créer des SPA qui peuvent être intégrées à un site AEM, ce qui permet aux créateurs et créatrices de contenu de modifier le contenu de SPA aussi facilement qu’un autre contenu AEM.
 
-## Pourquoi une SPA ?  {#why-spa}
+## Pourquoi une SPA ? {#why-spa}
 
 En étant plus rapide, fluide et en ressemblant davantage à une application native, une SPA offre une expérience très attrayante, non seulement pour les personnes visitant la page web, mais aussi pour les personnes spécialisées dans le marketing et les développeurs et développeuses, en raison de la nature de son fonctionnement.
 
@@ -124,7 +124,7 @@ Consultez ci-dessous les [ressources supplémentaires](#additional-resources) qu
 Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondissent certains concepts mentionnés dans ce document.
 
 * [Couplage et découplage dans AEM](/help/sites-developing/headful-headless.md) : description des différents modèles de diffusion disponibles dans AEM
-* [Introduction et présentation des applications monopage (SPA).](/help/sites-developing/spa-walkthrough.md) ; une bonne présentation des SPA en AEM
+* [Introduction et présentation des SPA.](/help/sites-developing/spa-walkthrough.md) - Bonne présentation des SPA dans AEM
 * [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md) : consignes sur la manière de développer des SPA pour AEM
 * [Aperçu sur l’éditeur de SPA](/help/sites-developing/spa-overview.md) : informations détaillées sur le fonctionnement de l’éditeur de SPA
 * [Documents de référence pour les SPA](/help/sites-developing/spa-reference-materials.md) : références et liens de l’API JavaScript vers les projets GitHub de SPA AEM open source

@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '1070'
 ht-degree: 100%
 
 ---
@@ -76,9 +76,9 @@ ht-degree: 100%
 
 * Liaison multi-catalogue pour permettre aux auteurs de lier plusieurs catalogues dans la console de produit AEM. Les auteurs peuvent également modifier et afficher les propriétés de liaison du catalogue après la création de la liaison.
 
-* Achat et panier côté client basé sur React à l’aide de GraphQL pour prendre en charge un parcours d’achat de base complet.
+* Processus de passage en caisse et mini-panier côté client basé sur React à l’aide de GraphQL pour prendre en charge un parcours d’achat de base complet.
 
-* Le composant Passage en caisse comprend les formulaires d’adresse, la sélection des paiements et la sélection du mode de livraison.
+* Le composant Passage en caisse comprend les formulaires d’adresse, la sélection des paiements et la sélection du mode d’expédition.
 
 ### Améliorations {#what-is-improved-september}
 

@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble évident, mais une entreprise compte à la fois un ou une PDG et des employées et employés…Et chaque élément d’entre eux est défini en tant que personne.
+Cela semble assez simple, mais une entreprise compte à la fois un PDG et des employés.... et tous ces gens sont définis comme une personne.
 
 Et une personne peut recevoir une distinction (ou peut-être deux).
 

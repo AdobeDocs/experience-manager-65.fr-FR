@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ Un opérateur de télécommunications envoie des factures mensuelles aux cliente
 
 ## Prérequis {#prerequisites}
 
-* Configurez une instance d’auteur AEM.
+* Configurez une instance de création AEM.
 * Installez le [module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création
 * Configurez la base de données MYSQL.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données MySQL et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’Oracle.
@@ -68,26 +68,26 @@ Pour créer une structure pour la communication interactive avec les modes de sa
 * Données conditionnelles
 * Images
 
-[](/help/forms/using/planning-interactive-communications.md)
+  [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Étape 2 : Créer un modèle de données de formulaire {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour extraire des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
+Un modèle de données de formulaire vous permet de connecter une communication interactive à des sources de données disparates. Par exemple, un profil utilisateur AEM, des services web RESTful, des services web SOAP, des services OData et des bases de données relationnelles. Un modèle de données de formulaire est un schéma de représentation de données unifié des entités et services d’entreprise disponibles dans des sources de données connectées. Vous pouvez utiliser le modèle de données de formulaire avec une communication interactive pour récupérer des données de sources de données connectées. Pour plus d’informations sur le modèle de données de formulaire, consultez la section [Intégration de données AEM Forms](/help/forms/using/data-integration.md).
 
 **Objectifs:**
 
 * Configurer l’instance de base de données (base de données MySQL) en tant que source de données
 * Créer le modèle de données de formulaire à l’aide de la base de données MySQL en tant que source de données
-* Ajouter des objets de modèle de données pour former un modèle de données
+* Ajouter des objets de modèle de données pour former un modèle de données de formulaire
 * Configurer les services de lecture et d’écriture pour le modèle de données de formulaire
 * Créer des associations entre les objets de modèle de données
 * Afficher des données d’exemple générées automatiquement
-* Modifier les exemples de données
+* Modifier les données d’exemple
 * Tester le modèle de données de formulaire et les services configurés avec des données de test
 
-[](/help/forms/using/create-form-data-model0.md)
+  [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Étape 3 : Créer des fragments de document {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ Les fragments de document sont des composants réutilisables d’une corresponda
 * Créer des variables
 * Créer et appliquer des règles
 
-[](/help/forms/using/create-document-fragments.md)
+  [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Étape 4 : Créer des modèles {#step-create-templates}
 
@@ -119,7 +119,7 @@ Les modèles pour le canal web sont créés dans AEM. Les auteurs et les adminis
 * Charger les modèles XDP sur le serveur AEM Forms
 * Créer et activer des modèles pour le canal web
 
-[](/help/forms/using/create-templates-print-web.md)
+  [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Étape 5 : Créer une communication interactive {#step-create-an-interactive-communication}
 
@@ -138,13 +138,13 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 * Créer un graphique de la version web de la communication interactive
 * Créer des hyperliens dans la version web de la communication interactive
 
-[](/help/forms/using/create-interactive-communication0.md)
+  [![voir-le-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## Étape 6 : publier votre communication interactive. {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-Une fois que vous avez créé et testé des communications interactives à l’aide des canaux d’impression et web, vous pouvez publier ces ressources. Le cas d’utilisation décrit dans ce tutoriel se concentre sur l’intégration de ces ressources à un client de messagerie. Le client de messagerie sert de pont pour envoyer les communications interactives à plusieurs adresses électroniques.
+Une fois que vous avez créé et testé des communications interactives à l’aide des canaux d’impression et web, vous pouvez publier ces ressources. Le cas d’utilisation décrit dans ce tutoriel se concentre sur l’intégration de ces ressources à un client de messagerie. Le client de messagerie sert de pont pour envoyer les communications interactives à plusieurs adresses e-mail.
 
 **Objectifs:**
 

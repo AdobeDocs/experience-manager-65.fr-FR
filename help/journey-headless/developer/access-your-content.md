@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 100%
+source-wordcount: '1352'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion découplée).
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment modéliser votre contenu](model-your-content.md), vous avez appris les principes de base de la modélisation de contenu dans AEM. Vous devez donc maintenant comprendre comment modéliser votre structure de contenu, puis réaliser cette structure à l’aide des modèles de fragment de contenu et des fragments de contenu AEM :
 
@@ -27,13 +27,13 @@ Dans le document précédent du parcours découplé AEM, [Comment modéliser vot
 
 Cet article s’appuie sur ces principes de base afin que vous compreniez comment accéder à votre contenu découplé existant dans AEM en utilisant l’API AEM GraphQL.
 
-* **Public** : débutant
+* **Audience**: débutant
 * **Objectif** : apprendre comment accéder au contenu de vos fragments de contenu à l’aide des requêtes GraphQL d’AEM :
    * Présentation de GraphQL et de l’API AEM GraphQL.
    * Découvrir les détails de l’API AEM GraphQL.
    * Regardez quelques exemples de requêtes pour voir comment les choses fonctionnent dans la pratique.
 
-## Vous souhaitez accéder à votre contenu ?  {#so-youd-like-to-access-your-content}
+## Vous souhaitez accéder à votre contenu ? {#so-youd-like-to-access-your-content}
 
 Enfin... Vous disposez de tout ce contenu, soigneusement structuré (dans les fragments de contenu) et vous avez hâte d’en nourrir votre nouvelle application. La question est : comment faire ?
 
@@ -354,7 +354,7 @@ Pour obtenir des détails complets sur l’utilisation de l’API AEM GraphQL, a
 * L’exemple de structure de fragment de contenu ;
 * Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris à accéder à votre contenu en mode découplé et à y effectuer des requêtes à l’aide de l’API AEM GraphQL, vous pouvez [apprendre à utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour](update-your-content.md).
 

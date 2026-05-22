@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 100%
+source-wordcount: '1108'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Dans cette partie du [parcours de développement AEM découplé](overview.md), découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
 Dans le document précédent du parcours découplé AEM, [Comment accéder à votre contenu à l’aide des API de diffusion AEM](access-your-content.md), vous avez appris à accéder à votre contenu en mode découplé via l’API AEM GraphQL et vous devriez maintenant :
 
@@ -24,7 +24,7 @@ Dans le document précédent du parcours découplé AEM, [Comment accéder à vo
 * Comprendre le fonctionnement de l’API AEM GraphQL.
 * Connaître quelques exemples pratiques de requêtes.
 
-Cet article s’appuie sur ces principes de base afin que vous compreniez comment accéder au contenu découplé existant dans AEM à l’aide de l’API AEM.
+Cet article s’appuie sur ces principes de base afin que vous compreniez comment mettre à jour votre contenu découplé existant dans AEM à l’aide de l’API REST.
 
 ## Objectif {#objective}
 
@@ -244,7 +244,7 @@ Le format exact des requêtes prises en charge est défini dans la documentation
 
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
-* Il est vivement recommandé de lier la création à une instance d’auteur (et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API).
+* Il est vivement recommandé de lier la création à une instance de création (et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
    * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
@@ -253,7 +253,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!CAUTION]
 >
->La configuration du Dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
+>La configuration du dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
 
 >[!NOTE]
 >
@@ -305,7 +305,7 @@ Pour plus d’informations sur l’utilisation de l’API REST d’AEM Assets, v
 * API HTTP Assets d’Adobe Experience Manager (ressources supplémentaires)
 * Prise en charge des fragments de contenu dans l’API HTTP AEM Assets (ressources supplémentaires)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
@@ -327,11 +327,11 @@ Poursuivez votre parcours dans AEM découplé en consultant le document [Comment
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 * [API REST de fragments de contenu](/help/assets/assets-api-content-fragments.md)
    * [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference)
-* [API Adobe Experience Manager Assets – Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
-* [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+* [Composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [Vidéo – Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-* [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Vidéo - Développement pour CORS avec AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* Un [Présentation d’AEM en tant que CMS sans affichage](/help/sites-developing/headless/introduction.md)
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

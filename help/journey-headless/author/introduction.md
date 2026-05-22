@@ -7,8 +7,8 @@ feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,6 @@ Maintenant que vous avez découvert les concepts et la terminologie, l’étape 
 
 * [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
 
-* [Portail de développement d’AEM ](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* [Portail du développeur AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 
-* [Tutoriels pour le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+* [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)

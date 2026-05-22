@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '891'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composa
 Ces projets doivent gérer toute la complexité de l’intégration d’une solution de commerce. Une solution de commerce peut être n’importe quelle solution commerciale telle qu’Adobe Commerce ou un ensemble de services commerciaux personnalisés. L’intégration dépend fortement des cas d’utilisation et de l’écosystème du projet. Il touche généralement différents endroits et se présente sous des formes différentes :
 
 * Intégration d’un écosystème complexe et dynamique (exemples de catalogues de produits)
-* Gérer par l’entreprise du contenu d’un produit avec son propre cycle de vie de manière efficace et omnicanal
+* L’entreprise doit gérer le contenu produit avec son propre cycle de vie, de manière efficace et omnicanal
 * Conception de parcours d’achats complexes et personnalisés pour divers intervenants
 * Possibilité d’adapter et d’innover rapidement en front-end comme en back-end
 * Exécution d’une infrastructure de bout en bout évolutive et stable, conçue pour des performances de pointe (ventes flashs, Black Friday, etc.) : inclut la recherche unifiée et la gestion du cache

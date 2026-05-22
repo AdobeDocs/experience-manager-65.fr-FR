@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 100%
+source-wordcount: '1833'
+ht-degree: 98%
 
 ---
 
@@ -194,13 +194,13 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 ### Références et contenu imbriqué {#references-nested-content}
 
-Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
+Deux types de données fournissent des références au contenu en dehors d’un fragment spécifique :
 
 * **Référence de contenu**
 Il s’agit d’une référence simple à tout autre contenu de n’importe quel type.
 Par exemple, vous pouvez référencer une image à un emplacement spécifié.
 
-* **Référence du fragment**
+* **Référence de fragment**
 Cette section fournit des références à d’autres fragments de contenu.
 Ce type de référence est utilisé pour créer du contenu imbriqué, présentant les relations nécessaires au modèle de votre contenu.
 Le type de données peut être configuré pour permettre aux auteurs de fragments de procéder aux opérations suivantes :
@@ -219,7 +219,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 
 Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Ces actions peuvent être réalisées dans Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
-![Modèle de fragment de contenu ](assets/cfm-model.png)
+![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Après avoir sélectionné le modèle approprié, un fragment de contenu est ouv
 
 >[!NOTE]
 >
->Voir Ressources supplémentaires – Utilisation de fragments de contenu.
+>Consultez Ressources supplémentaires – Utilisation de fragments de contenu.
 
 ## Prise en main de quelques exemples {#getting-started-examples}
 
