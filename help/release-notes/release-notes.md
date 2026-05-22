@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 15bdc427d138101a429aeb0c46059ad0492d7739
+source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7116'
 ht-degree: 24%
 
 ---
@@ -632,7 +632,7 @@ Pour réduire le volume de journalisation, définissez le niveau de journalisati
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
-Les documents texte suivants répertorient les lots OSGi et les modules de contenu inclus dans cette version du pack de services [!DNL Experience Manager] 6.5.
+Les fichiers zip suivants contiennent les documents texte qui répertorient les lots OSGi et les packages de contenu inclus dans cette version du pack de services [!DNL Experience Manager] 6.5 :
 
 * [Liste des lots OSGi inclus dans Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
