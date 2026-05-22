@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '845'
 ht-degree: 100%
 
 ---

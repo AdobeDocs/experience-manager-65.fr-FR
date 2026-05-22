@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1336'
+source-wordcount: '1348'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 
-## Un peu d’histoire…  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM, [Traduction du contenu](configure-connector.md), vous avez appris à utiliser les projets de traduction AEM pour traduire votre contenu découplé. Vous devez maintenant :
 
@@ -68,7 +68,7 @@ Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et
 
 1. Accédez à **Navigation** -> **Ressources** -> **Fichiers** et ouvrez le dossier du projet.
 1. Vous pouvez y voir le dossier racine de langue et tous les autres dossiers de langue. Sélectionnez la ou les langues localisées que vous souhaitez publier.
-   ![Sélectionner le dossier de langue](assets/select-language-folder.png)
+   ![Sélection du dossier de langue.](assets/select-language-folder.png)
 1. Cliquez sur **Gérer la publication**.
 1. Dans la fenêtre **Gérer la publication**, assurez-vous que **Publier** est automatiquement sélectionné sous **Action** et que **Maintenant** est sélectionné sous **Planification**. Cliquez sur **Suivant**.
    ![Gérer les options de publication](assets/manage-publication-options.png)

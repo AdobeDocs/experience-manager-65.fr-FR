@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '775'
 ht-degree: 100%
 
 ---
@@ -82,5 +82,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 
 * [MSM et traduction](/help/sites-administering/msm-and-translation.md) – Informations sur AEM Multi-Site Manager et sur le fonctionnement de ses outils de traduction
 * Une [Présentation d’AEM en tant que CMS découplé](/help/sites-developing/headless/introduction.md)
-* Le [Portail de développement AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+* La variable [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
 * [Tutoriels pour Headless dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
