@@ -219,7 +219,7 @@ Au début, vous devez activer les modèles de fragment de contenu pour votre sit
 
 Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Ces actions peuvent être réalisées dans Outils > Ressources > Modèles de fragment de contenu. Par exemple :
 
-![Modèle de fragment de contenu ](assets/cfm-model.png)
+![Modèle de fragment de contenu &#x200B;](assets/cfm-model.png)
 
 >[!NOTE]
 >
