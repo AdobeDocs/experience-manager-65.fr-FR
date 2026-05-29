@@ -9,10 +9,10 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-authoring/basic-handling.md#rail-selector) à afficher |
-|  | ``` ` ``` | Masquer le rail |
+|  | `Backtick` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |

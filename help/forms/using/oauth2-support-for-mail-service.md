@@ -5,10 +5,10 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 95%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 100%
 
 Pour permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée, AEM Forms propose la prise en charge OAuth 2.0 pour l’intégration aux protocoles de serveur de messagerie Microsoft® Office 365. Vous pouvez utiliser le service d’authentification OAuth 2.0 d’Azure Active Directory (Azure AD) pour vous connecter à différents protocoles tels que IMAP, POP ou SMTP et accéder aux données de messagerie des utilisateurs et utilisatrices d’Office 365. Vous trouverez ci-dessous des instructions étape par étape pour configurer les protocoles du serveur de messagerie Microsoft® Office 365 pour s’authentifier via le service OAuth 2.0 :
 
-1. Connectez-vous sur [https://portal.azure.com/](https://portal.azure.com/) et recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
-Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Connectez-vous à [](https://portal.azure.com/) recherchez **Azure Active Directory** dans la barre de recherche et cliquez sur le résultat.
+Vous pouvez également accéder directement à [](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Cliquez sur **Ajouter** > **Enregistrement de l’application** > **Nouvel enregistrement**.
 
    ![Enregistrement de l’application](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
    ![Compte pris en charge](/help/forms/using/assets/azure_suuportedaccountype.png)
-Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel Azure AD Directory - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
+Dans le cas ci-dessus, l’option **Comptes dans n’importe quel répertoire de l’entreprise (n’importe quel répertoire Azure AD - à plusieurs clients) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ Ensuite, vous devez générer le code d’autorisation tel qu’indiqué dans le
 
 1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` par le `<client_id>` et `redirect_uri` par l’URI de redirection de votre application :
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
@@ -116,9 +116,9 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
    > Pour activer le service d’authentification oAuth 2.0, il est obligatoire de cocher la case **Si le serveur SMTP requiert une authentification (authentification SMTP)**.
 
 1. Définir **Paramètres d’authentification oAuth 2.0** sur `True`.
-1. Copiez les valeurs de **ID client** et **Secret client** à partir du portail Azure.
+1. Copiez les valeurs d’**ID client** et de **Secret client** à partir d’Azure Portal.
 1. Copiez la valeur du **jeton d’actualisation** généré.
-1. Connectez-vous à **Workbench** et recherchez **Email 1.0** dans **Sélecteur d’activités**.
+1. Connectez-vous à **Workbench** et recherchez **Email 1.0** dans **Sélecteur d’activités**.
 1. Trois options sont disponibles sous Email 1.0 :
    * **Envoyer avec document** : envoie l’e-mail avec des pièces jointes uniques.
    * **Envoyer avec mappage des pièces jointes** : envoie l’e-mail avec plusieurs pièces jointes.
@@ -137,13 +137,13 @@ Maintenant, configurez le service de messagerie sur le dernier serveur JEE en vo
 
    >[!NOTE]
    >
-   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification OAuth 2.0 en authentification de base pour un processus particulier dans un Workbench. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
+   >Si vous le souhaitez, vous pouvez modifier le paramètre d’authentification OAuth 2.0 en authentification de base pour un processus particulier dans un atelier. Pour ce faire, définissez la valeur **Authentification OAuth 2.0** sur « False » sous **Utiliser les paramètres globaux** dans l’onglet **Paramètres de connexion**.
 
 ## Pour activer les notifications de tâche oAuth {#enable_oauth_task}
 
 1. Accédez à **Accueil** > **Services** > **Workflow de formulaire** > **Paramètres du serveur** > **Paramètres d’e-mail**.
 1. Pour activer les notifications de tâche oAuth, sélectionnez l’option **Activer oAuth**.
-1. Copiez les valeurs de **ID client** et **Secret du client** depuis le portail Azure.
+1. Copiez les valeurs d’**ID client** et de **Secret client** à partir d’Azure Portal.
 1. Copiez la valeur du **jeton d’actualisation** généré.
 1. Cliquez sur **Enregistrer** pour enregistrer les détails.
 
