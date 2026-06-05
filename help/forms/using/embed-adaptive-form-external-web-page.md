@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 76%
@@ -39,7 +39,7 @@ Effectuez les étapes suivantes avant d’inclure un formulaire adaptatif dans u
 
 Vous pouvez incorporer un formulaire adaptatif en insérant quelques lignes de code JavaScript dans la page web. L’API dans le code envoie une requête HTTP au serveur AEM pour les ressources de formulaire adaptatif et injecte le formulaire adaptatif dans le conteneur de formulaire spécifié.
 
-Pour incorporer le formulaire adaptatif :
+Pour incorporer le formulaire adaptatif :
 
 1. Créez une page web sur votre site web avec le code suivant :
 
@@ -144,7 +144,7 @@ est envoyé au serveur AEM en tant que :
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, vous devez également configurer CORS sur l’instance de publication AEM. Suivez les étapes répertoriées dans la section [permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaines](#cross-site).
+Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, vous devez également configurer CORS sur l’instance de publication AEM. Suivez les étapes répertoriées dans la section [permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaines](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Exemple de topologie {#sample-topology}
 
@@ -221,3 +221,4 @@ Lorsque vous utilisez un proxy inverse ou incorporez le formulaire adaptatif san
 1. Dans le champ Hôtes autorisés, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
 
 >[!ENDTABS]
+
