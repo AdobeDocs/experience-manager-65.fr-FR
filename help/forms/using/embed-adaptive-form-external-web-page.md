@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 60cc4096c4fd1b51e1d37b6e6f4cdb8806fd79eb
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 17a9c95166644a2a4e665e97c71b5fb744af6362
+workflow-type: tm+mt
+source-wordcount: '1388'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
 | AEM 6.5 | Cet article |
 
 
@@ -33,7 +33,7 @@ Effectuez les étapes suivantes avant d’inclure un formulaire adaptatif dans u
 
 * Publiez le formulaire adaptatif à intégrer à l’instance de publication du serveur AEM Forms.
 * Créez ou identifiez une page web sur votre site web pour héberger le formulaire adaptatif. Assurez-vous que la page web peut [lire les fichiers jQuery à partir d’un réseau CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) ou dispose d’une copie locale du fichier jQuery incorporé. jQuery est nécessaire pour effectuer le rendu d’un formulaire adaptatif.
-* Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, procédez comme indiqué dans la section ci-dessous [pour permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaine](#cross-site).
+* Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, procédez comme indiqué dans la section [Configurer des URL de requête absolues avec GuideBridge](#configure-base-url) et [permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaines](#cross-site).
 
 ## Incorporation d’un formulaire adaptatif {#embed-adaptive-form}
 
@@ -118,11 +118,39 @@ Le formulaire adaptatif est incorporé dans la page web. Vous pouvez observer ce
 * Le ciblage d’expérience et les tests A/B configurés dans le formulaire adaptatif d’origine ne fonctionnent pas dans le formulaire incorporé.
 * Si Adobe Analytics est configuré sur le formulaire d’origine, les données d’analyse sont capturées dans le serveur Adobe Analytics. En revanche, il ne sera pas disponible dans le rapport d’analyse des formulaires.
 
+## Configurer des URL de requête absolues avec GuideBridge {#configure-base-url}
+
+Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, vous pouvez utiliser l’API GuideBridge pour ajouter une origine de publication AEM absolue aux requêtes générées par les bibliothèques guideruntime. Utilisez la configuration `baseUrl` pour demander à guideruntime de préfixer l’origine absolue spécifiée aux requêtes telles que l’envoi de formulaire, la récupération des données de préremplissage, la génération d’un document d’enregistrement, les chargements de fichiers et les opérations d’envoi internes.
+
+Ajoutez le fragment de code suivant à la page web d’incorporation, ainsi que l’implémentation `guideBridge.connect` existante :
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+Remplacez `https://publish.example.com` par l’URL de publication du serveur AEM Forms.
+
+Avec cette configuration, une URL de requête similaire à l’exemple suivant :
+
+```text
+/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+est envoyé au serveur AEM en tant que :
+
+```text
+https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, vous devez également configurer CORS sur l’instance de publication AEM. Suivez les étapes répertoriées dans la section [permettre à AEM Forms de diffuser des formulaires adaptatifs sur un site interdomaines](#cross-site).
+
 ## Exemple de topologie {#sample-topology}
 
 La page web externe qui incorpore le formulaire adaptatif envoie les requêtes au serveur AEM, qui se trouve généralement derrière le pare-feu dans un réseau privé. Pour garantir que les requêtes sont dirigées de manière sécurisée vers le serveur AEM, il est recommandé de configurer un serveur de proxy inverse.
 
-Examinons un exemple de la manière dont vous pouvez configurer un serveur de proxy inverse Apache 2.4 sans Dispatcher. Dans cet exemple, vous allez héberger le serveur AEM avec le chemin de contexte `/forms` et mapper `/forms` pour le proxy inverse. Cela garantit que toute requête pour `/forms` sur le serveur Apache est redirigée vers une instance AEM. Cette topologie permet de réduire le nombre de règles au niveau de la couche du Dispatcher, car toute requête précédée de `/forms` dirige vers le serveur AEM.
+Examinons un exemple de la manière dont vous pouvez configurer un serveur de proxy inverse Apache 2.4 sans Dispatcher. Dans cet exemple, vous allez héberger le serveur AEM avec le chemin de contexte `/forms` et mapper `/forms` pour le proxy inverse. Cela garantit que toute requête pour `/forms` sur le serveur Apache est redirigée vers une instance AEM. Cette topologie permet de réduire le nombre de règles au niveau de la couche du Dispatcher, car toute demande précédée de `/forms` dirige vers le serveur AEM.
 
 1. Ouvrez le fichier de configuration `httpd.conf` et supprimez les commentaires des lignes de code suivantes. Vous pouvez également ajouter ces lignes de code dans le fichier.
 
@@ -165,12 +193,31 @@ Lorsque vous incorporez un formulaire adaptatif dans une page web, prenez en com
 
 * Assurez-vous que les règles de style définies dans la page web CSS ne sont pas en conflit avec l’objet de formulaire CSS. Pour éviter les conflits, vous pouvez réutiliser la page web CSS dans le thème de formulaire adaptatif en utilisant la bibliothèque cliente AEM. Pour plus d’informations sur l’utilisation de la bibliothèque cliente dans les thèmes de formulaire adaptatif, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 * Assurez-vous que le conteneur du formulaire dans la page web utilise toute la largeur de la fenêtre. Cela permet aux règles CSS configurées pour les appareils mobiles de fonctionner sans aucune modification. Si le conteneur du formulaire ne prend pas toute la largeur de la fenêtre, vous devez écrire un CSS personnalisé pour que le formulaire s’adapte aux différents appareils mobiles.
-* Utilisez l’API `[getData](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour obtenir la représentation XML ou JSON des données de formulaire dans le client.
-* Utilisez l’API `[unloadAdaptiveForm](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour décharger le formulaire adaptatif à partir du DOM HTML.
+* Utilisez l’API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour obtenir la représentation XML ou JSON des données de formulaire dans le client.
+* Utilisez l’API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` pour décharger le formulaire adaptatif à partir du DOM HTML.
 * Configurez l’en-tête access-control-origin lors de l’envoi de la réponse à partir du serveur AEM.
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaine {#cross-site}
 
+Lorsque le serveur AEM et la page web se trouvent dans des domaines différents, configurez l’instance de publication AEM à l’aide de l’une des options suivantes.
+
+>[!BEGINTABS]
+
+>[!TAB Utilisation de la configuration baseUrl de GuideBridge]
+
+Lorsque vous utilisez la configuration [GuideBridge `baseUrl`](#configure-base-url), configurez la politique CORS sur l’instance de publication AEM afin que le serveur AEM renvoie les en-têtes appropriés pour l’envoi, le préremplissage et les points d’entrée de document d’enregistrement.
+
+1. Sur l’instance de publication AEM, accédez au gestionnaire de la console web AEM à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
+1. Recherchez et ouvrez la configuration **Politique de partage de ressources entre origines multiples Adobe Granite** (`com.adobe.granite.cors.impl.CORSPolicyImpl`).
+1. Ajoutez l’origine de la page web d’incorporation aux origines autorisées. Par exemple, `https://www.example.com`.
+1. Assurez-vous que les chemins d’accès autorisés incluent les points d’entrée AEM Forms utilisés par les formulaires adaptatifs incorporés, tels que les URL d’envoi, de préremplissage et de document d’enregistrement sous `/content/forms/af/`.
+
+>[!TAB Filtre de référent Apache Sling]
+
+Lorsque vous utilisez un proxy inverse ou incorporez le formulaire adaptatif sans la configuration GuideBridge `baseUrl`, configurez le filtre de référent Apache Sling sur l’instance de publication AEM.
+
 1. Sur l’instance de publication AEM, accédez au gestionnaire de la console web AEM à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez et ouvrez la configuration **Apache Sling Referrer Filter**.
 1. Dans le champ Hôtes autorisés, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
+
+>[!ENDTABS]
