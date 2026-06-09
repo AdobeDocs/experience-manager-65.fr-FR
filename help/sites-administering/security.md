@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '5412'
-ht-degree: 100%
+source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
+workflow-type: tm+mt
+source-wordcount: '5471'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Le principal objectif des groupes est de simplifier le processus de maintenance 
 
 Par conséquent, les groupes tendent à rester stables, alors que les utilisateurs et utilisatrices vont et viennent plus fréquemment.
 
-Grâce à une planification et une structure propre, l’utilisation de groupes peut refléter votre structure, ce qui vous donne une vue d’ensemble clair et un mécanisme efficace pour les mises à jour.
+Grâce à une planification et une conception épurée, l’utilisation de groupes peut refléter votre structure, ce qui vous donne une vue d’ensemble claire et un mécanisme efficace pour les mises à jour.
 
 ### Utilisateurs, utiliatrices et groupes intégrés {#built-in-users-and-groups}
 
@@ -76,7 +76,7 @@ Les tableaux suivants répertorient chaque élément avec :
    <td>Évitez de supprimer ou de désactiver ce compte, car cela aurait une incidence négative sur le fonctionnement des instances de création. Si vous devez le supprimer pour des raisons de sécurité, assurez-vous d’abord de tester correctement les effets qu’il a sur vos systèmes.</td>
   </tr>
   <tr>
-   <td><p>auteur </p> <p>Mot de passe par défaut : author</p> </td>
+   <td><p>auteur</p> <p>Mot de passe par défaut : author</p> </td>
    <td>Utilisateur</td>
    <td><p>Compte de création autorisé à écrire dans /content. Comprend les privilèges de contributeur et de surfeur.</p> <p>Peut être utilisé comme webmaster, car il a accès à l’ensemble de l’arborescence /content.</p> <p>Ce compte n’est pas un utilisateur intégré, mais un autre utilisateur de démonstration de Geometrixx.</p> </td>
    <td><p>Adobe recommande de supprimer complètement le compte ou de modifier le mot de passe par défaut.</p> <p>De préférence lors de l’installation, bien que vous puissiez le faire par la suite.</p> </td>
@@ -169,7 +169,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
     <ul>
      <li>modifier le contenu existant sur la page et sur les pages enfants ;</li>
      <li>créer de nouveaux paragraphes sur la page ou une page enfant.</li>
-    </ul> <p>Au niveau de JCR, les utilisateurs et utilisatrices peuvent modifier une ressource en modifiant les propriétés, le verrouillage, le contrôle de version, les modifications du type de nœud, et disposer d’une autorisation d’écriture complète sur les nœuds définissant un noeud enfant jcr:content. Par exemple, cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>Au niveau de JCR, les utilisateurs et utilisatrices peuvent modifier une ressource en modifiant les propriétés, le verrouillage, le contrôle de version, les modifications du type de nœud, et disposer d’une autorisation d’écriture complète sur les nœuds définissant un noeud enfant jcr:content. Par exemple, cq:Page, nt:file, cq:Asset, dam:Asset.</p> </td>
   </tr>
   <tr>
    <td>Création</td>
@@ -269,7 +269,7 @@ Lorsque vous placez le pointeur de la souris sur l’astérisque ou le point d�
   </tr>
   <tr>
    <td>Partie inférieure</td>
-   <td>Répertorie les entrées non actives susceptibles d’avoir un effet à un autre endroit de l’arborescence (comme indiqué par un attribut spécial associé à l’entrée de contrôle d’accès correspondante qui limite la portée de l’entrée). Sinon, il s’agit d’une entrée dont l’effet a été révoqué par une autre entrée définie dans le chemin d’accès donné ou au niveau d’un nœud ancêtre.</td>
+   <td>Répertorie les entrées non actives susceptibles d’avoir un effet à un autre endroit de l’arborescence (comme indiqué par un attribut spécial associé à l’entrée de contrôle d’accès correspondante qui limite la portée de l’entrée). Sinon, il s’agit d’une entrée dont l’effet est révoqué par une autre entrée définie au niveau du chemin d’accès donné ou d’un nœud ancêtre.</td>
   </tr>
  </tbody>
 </table>
@@ -284,14 +284,14 @@ Voici des recommandations pour la gestion des listes de contrôle d’accès :
 
 * N’affectez pas d’autorisations directement aux utilisateurs. Attribuez-les uniquement à des groupes.
 
-  Cela simplifie la gestion, dans la mesure où le nombre de groupes est beaucoup plus petit que le nombre d’utilisateurs et d’utilisatrices, et également plus stable.
+  Cela simplifie la maintenance, car le nombre de groupes est beaucoup plus petit que le nombre d’utilisateurs et d’utilisatrices et est également moins volatile.
 
 * Si vous souhaitez qu’un groupe/utilisateur puisse uniquement modifier les pages, ne lui affectez pas de droits de création ou de refus. Accordez-leur uniquement des droits de modification et de lecture.
-* Utilisez l’autorisation Refuser avec modération. Dans la mesure du possible, utilisez uniquement l’action Autoriser.
+* Utilisez l’autorisation Refuser avec modération. Préférez Autoriser autant que possible.
 
   L’utilisation de l’autorisation Autoriser peut avoir des effets inattendus si les autorisations sont appliquées dans un ordre différent de l’ordre prévu. Si un utilisateur ou une utilisatrice est membre de plusieurs groupes, les instructions Refuser d’un groupe peuvent annuler l’instruction Autoriser d’un autre groupe ou vice versa. Il est difficile de garder une vue d’ensemble dans ce genre de situation qui peut facilement donner des résultats imprévus, alors que les attributions Autoriser ne provoquent pas de tels conflits.
 
-  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Consultez les [bonnes pratiques](#best-practices).
+  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Voir [&#x200B; Bonnes pratiques &#x200B;](#best-practices).
 
 Avant de modifier l’une des autorisations, assurez-vous de comprendre son fonctionnement et ses interactions. Consultez la documentation CRX qui explique comment la gestion de contenu web AEM [évalue les droits d’accès](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), ainsi que des exemples sur la configuration des listes de contrôle d’accès.
 
@@ -359,7 +359,7 @@ Cette fonctionnalité permet aux comptes d’emprunteur d’identité d’effect
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Toutefois, une page verrouillée de cette manière peut uniquement être déverrouillée par l’utilisateur dont l’identité a été empruntée ou par un utilisateur disposant des droits d’administration.
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière peut ensuite uniquement être déverrouillée par l’utilisateur ou l’utilisatrice dont l’identité a été empruntée ou par un utilisateur ou une utilisatrice disposant de droits d’administrateur.
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 
@@ -416,7 +416,7 @@ Les onglets permettent d’accéder à diverses configurations :
 | Propriétés | Répertorie les informations sur l’utilisateur ou le groupe pouvant inclure des informations d’e-mail, une description et un nom. Vous permet également de modifier le mot de passe d’un utilisateur ou d’une utilisatrice. Consultez les sections [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés d’utilisateur et de groupe](#modifying-user-and-group-properties) et [Modification d’un mot de passe utilisateur](#changing-a-user-password). |
 | Groupes | Répertorie tous les groupes auxquels l’utilisateur ou le groupe sélectionné appartient. Vous pouvez affecter l’utilisateur ou le groupe sélectionné à d’autres groupes ou les supprimer des groupes. Consultez la section [Groupes](#adding-users-or-groups-to-a-group). |
 | Membres | Disponible uniquement pour les groupes. Répertorie les membres d’un groupe spécifique. Consultez la section [Membres](#members-adding-users-or-groups-to-a-group). |
-| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Les autorisations liées à des pages ou des nœuds spécifiques. Consultez la section [Définition des autorisations](#setting-permissions). </li><li>Les autorisations liées à la création et la suppression de pages et à la modification de hiérarchie. ??? vous permet d’[allouer des privilèges](#settingprivileges), par exemple la modification de hiérarchie, qui permet de créer et supprimer des pages.</li><li>Les autorisations liées aux [droits de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
+| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe, ce qui vous permet de contrôler les éléments suivants :<ul><li>Les autorisations liées à des pages ou des nœuds spécifiques. Consultez la section [Définition des autorisations](#setting-permissions). </li><li>les autorisations liées à la création et à la suppression de pages et à la modification de hiérarchie, qui vous permet d’[allouer des privilèges](#settingprivileges), telles que la modification de hiérarchie, qui vous permet de créer et de supprimer des pages ;</li><li>Les autorisations liées aux [droits de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
 | Emprunteurs d’identité | Permet à un autre utilisateur d’emprunter l’identité d’un compte. Utile lorsque vous avez besoin qu’un utilisateur agisse au nom d’un autre utilisateur. Consultez la section [Emprunt d’identités utilisateurs](#impersonating-another-user). |
 | Préférences | Permet de définir les [préférences d’un groupe ou d’un utilisateur](#setting-user-and-group-preferences). Par exemple, les préférences de langue. |
 
@@ -499,7 +499,7 @@ Utilisez la procédure suivante pour modifier le mot de passe d’un utilisateur
 
 1. Dans la console **Sécurité**, double-cliquez sur le nom de l’utilisateur dont vous souhaitez modifier le mot de passe.
 1. Cliquez sur l’onglet **Propriétés** (s’il n’est pas déjà actif).
-1. Cliquez sur **Définir le mot de passe**. La fenêtre Définir le mot de passe s’ouvre et vous pouvez y modifier votre mot de passe.
+1. Cliquez sur **Définir le mot de passe**. La fenêtre Définir le mot de passe s’ouvre et vous pouvez y modifier le mot de passe.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
@@ -540,7 +540,7 @@ L’onglet **Membres** fonctionne uniquement pour les groupes et indique quels u
 
 ### Ajout d’utilisateurs ou de groupes lors de l’ajout d’autorisations {#adding-users-or-groups-while-adding-permissions}
 
-Pour ajouter des membres à un groupe dans un chemin d’accès spécifique, procédez comme suit :
+Pour ajouter des membres à un groupe à un chemin d’accès donné :
 
 1. Double-cliquez sur le nom du groupe ou de l’utilisateur auquel vous souhaitez ajouter des utilisateurs.
 
@@ -670,11 +670,11 @@ Dans la zone de recherche, vous pouvez effectuer les opérations suivantes :
 | Touche fléchée vers le bas | Redémarre la recherche. |
 | Touche Entrée (Retour) | Sélectionne un sous-nœud et le charge dans la grille d’arborescence. |
 
-* Recherche en texte intégral - Si la chaîne de recherche ne commence pas par le caractère « / », une recherche en texte intégral est effectuée sur tous les nœuds du chemin d’accès « /content ».
+* Recherche en texte intégral - Si la chaîne de recherche ne commence pas par le caractère « / », une recherche en texte intégral est exécutée sur tous les nœuds du chemin d’accès « /content ».
 
 ![cqsecurityfulltextsearch](assets/cqsecurityfulltextsearch.png)
 
-Pour effectuer une recherche sur les chemins d’accès ou le texte intégral, procédez comme suit :
+Pour effectuer une recherche sur des chemins d’accès ou du texte intégral :
 
 1. Dans la console Sécurité, sélectionnez un utilisateur ou un groupe, puis cliquez sur l’onglet **Autorisations**.
 
@@ -736,7 +736,7 @@ La définition et l’enregistrement d’autorisations personnalisées font offi
 
 Le mécanisme d’enregistrement des autorisations est reflété dans l’interface utilisateur sous **Configuration du référentiel**.
 
-L’enregistrement de nouveaux privilèges (personnalisés) est lui-même protégé par un privilège intégré qui doit être accordé au niveau du référentiel. Dans JCR : charger « null » comme paramètre « absPath » dans l’API ac mgt, voir le jsr 333 pour plus de détails. Par défaut, le membre **admin** et tous les membres du groupe d’administrateurs disposent de cette autorisation.
+L’enregistrement de nouvelles autorisations (personnalisées) est lui-même protégé par une autorisation intégrée qui doit être accordée au niveau du référentiel. Dans JCR : transmettre « null » comme paramètre « absPath » dans l’api ac mgt, consultez le jsr 333 pour plus d’informations. Par défaut, le membre **admin** et tous les membres du groupe d’administrateurs disposent de cette autorisation.
 
 >[!NOTE]
 >

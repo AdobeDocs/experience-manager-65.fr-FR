@@ -9,10 +9,10 @@ exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 7ed4f3a4bd5b6a607f2bb29faade9ad248e0acb9
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1766'
+ht-degree: 99%
 
 ---
 
@@ -53,12 +53,12 @@ or
 
 Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l’[IU ContextHub](/help/sites-authoring/ch-previewing.md) sur vos pages. Le PID de ce service est `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-Pour configurer le service, vous pouvez utiliser la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
+Pour configurer le service, vous pouvez utiliser la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’interface utilisateur, désélectionnez la propriété Masquer l’interface utilisateur.
 * **Nœud JCR :** pour afficher l’IU, définissez la propriété booléenne `com.adobe.granite.contexthub.show_ui` sur `true`. Pour masquer l’IU, définissez la propriété sur `false`.
 
-Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
+Si l’UI ContextHub est activée, elle s’affiche uniquement sur les pages des instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
 
 ## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
 
@@ -242,9 +242,9 @@ Une procédure de débogage pour ContextHub peut être activée afin de permettr
 
 ### Via la configuration {#via-the-configuration}
 
-Modifiez la configuration de ContextHub et cochez l’option **Débogage**.
+Modifiez la configuration de ContextHub et cochez l’option **Déboguer**.
 
-1. Dans le rail, cliquez sur **Outils > Sites > ContextHub**.
+1. Dans le rail, cliquez sur **Outils > Sites > ContextHub**
 1. Cliquez sur le **Conteneur de configuration** par défaut.
 1. Sélectionnez la **Configuration ContextHub** et cliquez sur **Modifier l’élément sélectionné**.
 1. Cliquez sur **Déboguer** et sur **Enregistrer**

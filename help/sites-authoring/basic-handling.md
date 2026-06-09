@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
 workflow-type: tm+mt
-source-wordcount: '2965'
-ht-degree: 100%
+source-wordcount: '3016'
+ht-degree: 93%
 
 ---
 
@@ -37,7 +37,7 @@ L’interface utilisateur d’AEM est désormais adaptée aux écrans tactiles. 
 
 ### Premiers pas {#first-steps}
 
-Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel). Sélectionnez l’une des options pour ouvrir la console correspondante.
+Immédiatement après vous être connecté, vous accédez au panneau [Navigation](#navigation-panel). Sélectionnez l’une des options pour ouvrir la console correspondante.
 
 ![Navigation](assets/bh-01.png)
 
@@ -55,7 +55,7 @@ Lorsqu’une personne utilisatrice accède à une console pour la première fois
 
 Cliquez sur **Suivant** pour accéder à la page suivante de la vue d’ensemble. Cliquez sur **Fermer** ou cliquez en dehors de la boîte de dialogue de la vue d’ensemble pour la fermer.
 
-Si vous ne visualisez pas toutes les diapositives ou ne cochez pas l’option **Ne plus afficher**, la vue d’ensemble redémarrera la prochaine fois que vous accéderez à la console.
+L’aperçu redémarre la prochaine fois que vous accédez à la console, sauf si vous affichez toutes les diapositives ou cochez l’option **Ne plus afficher ce message**.
 
 ## Navigation globale {#global-navigation}
 
@@ -67,11 +67,11 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 >[!NOTE]
 >
->Lorsque vous vous connectez pour la première fois, le panneau **Navigation** s’affiche.
+>Lorsque vous vous connectez pour la première fois, le panneau **Navigation** s’affiche
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole
 * **[Outils](/help/sites-authoring/basic-handling.md#tools-panel)** : représenté par un marteau
 
 Consultez les options disponibles dans ces panneaux ci-dessous.
@@ -94,7 +94,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Ressources<br /> </td>
-   <td>Ces consoles permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a>, telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
+   <td>Ces consoles vous permettent d’importer et de <a href="/help/assets/assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -189,7 +189,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Chemins de navigation](assets/bh-05.png)
 
-  Le chemin de navigation est situé au milieu du rail, il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
+  Les chemins de navigation s’affichent au milieu du rail. Ils affichent toujours la description de l’élément sélectionné et vous permettent de naviguer dans une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
 
   Cliquez sur le texte du chemin de navigation pour ouvrir une liste déroulante des niveaux de la hiérarchie de l’élément sélectionné. Pour accéder à cet emplacement, cliquez sur une entrée.
 
@@ -209,7 +209,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 * [Vues](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  L’icône Vues se trouve à l’extrémité droite de la barre d’outils AEM. Comme elle indique également la vue actuelle, elle change. Par exemple, la vue par défaut, **Mode Colonnes** affiche :
+  L’icône Vues se trouve à l’extrémité droite de la barre d’outils AEM. Comme il indique également la vue actuelle, son aspect change. Par exemple, dans la vue par défaut **Vue Colonnes**, elle affiche :
 
   ![Vue Colonnes](assets/bh-07.png)
 
@@ -225,7 +225,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   ![Passer au contenu principal](assets/bh-30.png)
 
-## Accès à l’Aide    {#accessing-help}
+## Accès à l’Aide {#accessing-help}
 
 Plusieurs ressources d’aide sont disponibles :
 
@@ -254,10 +254,10 @@ Plusieurs ressources d’aide sont disponibles :
   Dans la console **Outils**, vous pouvez également accéder aux **Ressources** externes :
 
    * **Documentation**
-Affichez la documentation de Web Experience Management.
+Consulter la documentation de Web Experience Management
 
    * **Ressources pour les développeurs**
-Ressources et téléchargements pour les développeurs.
+Ressources et téléchargements pour les développeurs
 
   >[!NOTE]
   >
@@ -280,7 +280,7 @@ Les actions disponibles dans la barre d’outils change pour tenir compte des ac
 
 La manière dont vous [sélectionnez une ressource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dépend du mode.
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Dans ce cas, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **...**) pour ouvrir un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Dans ce cas, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois petits points ou **...**) ouvre un sélecteur déroulant contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
 ![Barre d’outils Actions](assets/bh-12.png)
 
@@ -441,7 +441,7 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
    * une représentation visuelle du contenu de la page ;
    * Le titre de la page ;
    * Des dates importantes (telles que la date de la dernière modification ou publication) ;
-   * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
+   * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
    * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
 
       * Les marques qui indiquent les actions requises peuvent être liées aux entrées de votre [boîte de réception](/help/sites-authoring/inbox.md).
@@ -555,7 +555,7 @@ La colonne Chronologie permet d’effectuer les opérations suivantes :
 
       * et Afficher tout
 
-* [Ajouter/afficher des commentaires sur l’élément sélectionné. ](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
+* [Ajouter/afficher des commentaires sur l’élément sélectionné. &#x200B;](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
 * Certaines consoles disposent de fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez effectuer les opérations suivantes :
 

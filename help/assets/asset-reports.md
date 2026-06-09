@@ -7,10 +7,10 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 97%
+source-wordcount: '1173'
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Le rapport **[!UICONTROL Partage de liens]** affiche les URL des ressources qui sont partagées avec des utilisateurs externes à partir d’[!DNL Assets]. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
 
-   Le rapport **[!UICONTROL Partage de liens]** n’inclut pas d’options pour les sous-dossiers et les rendus, car il ne publie que les URL partagées qui apparaissent sous `/var/dam/share`.
+   Le rapport **[!UICONTROL Partage de liens]** n’inclut pas d’options pour les sous-dossiers et les rendus, car il publie simplement les URL partagées qui apparaissent sous `/var/dam/share`.
 
    ![Page Détails du rapport Partage de liens](assets/link_share.png)
 
@@ -109,7 +109,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/configure_columns.png)
 
-   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
+   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter via le sélecteur de chemin de propriété.
 
    ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
@@ -164,8 +164,8 @@ Pour supprimer les rapports dont vous n’avez plus besoin, configurez le servic
 
 ## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
 
-* Si certains rapports ou nombres ne sont pas disponibles, ou pas comme prévu, assurez-vous que le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] est activé.
+* Si certains rapports ou nombres ne sont pas disponibles, ou pas comme prévu, assurez-vous que le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] est activé.
 
 * Supprimez les rapports qui ne sont plus nécessaires. Utilisez les options de configuration du service Purge des rapports de la gestion des ressources numériques pour configurer les critères de purge des rapports.
 
-* Si le rapport d’utilisation des disques n’est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
+* Si le rapport d’utilisation des disques n’est pas généré et que vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.

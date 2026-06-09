@@ -10,16 +10,16 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 99%
+source-wordcount: '5344'
+ht-degree: 95%
 
 ---
 
 # Création de contenu ciblé en mode Ciblage{#authoring-targeted-content-using-targeting-mode}
 
-Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences :
+Avec le mode de ciblage, vous pouvez créer du contenu ciblé pour AEM. Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences :
 
 * Identifiez facilement le contenu ciblé qui se trouve sur la page. Une ligne pointillée forme une bordure tout autour du contenu ciblé.
 * Sélectionnez une marque et une activité pour afficher les expériences.
@@ -41,7 +41,7 @@ Les activités et les expériences qui s’affichent en mode Ciblage se répercu
 
 >[!NOTE]
 >
->Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Les noms de campagne ne peuvent pas être réutilisés dans différents types de campagnes.
+>Lorsque vous créez une campagne dans Adobe Target, elle affecte la propriété `thirdPartyId` à chaque campagne. Lorsque vous supprimez la campagne dans Adobe Target, la propriété thirdPartyId n’est pas supprimée. Vous ne pouvez pas réutiliser la propriété `thirdPartyId` pour des campagnes de différents types (AB, XT) et elle ne peut pas être supprimée manuellement. Pour éviter ce problème, attribuez un nom unique à chaque campagne. Les noms de campagne ne peuvent pas être réutilisés dans différents types de campagne.
 >
 >Si vous utilisez le même nom dans le même type de campagne, vous remplacerez la campagne existante.
 >
@@ -72,7 +72,7 @@ Utilisez le mode Ciblage pour ajouter une activité à une marque. Lorsque vous 
 
 Vous pouvez également créer et gérer des activités Adobe Target à partir d’AEM avec la possibilité de sélectionner le moteur de ciblage (AEM ou Adobe Target) et le type d’activité (ciblage d’expérience ou test AB).
 
-En outre, vous pouvez gérer les objectifs et les mesures pour toutes les activités Adobe Target et vos audiences Adobe Target. La création de rapports d’activité d’Adobe Target, y compris la conversion des gagnants pour les tests AB, est également incluse.
+En outre, vous pouvez gérer les objectifs et les mesures pour toutes les activités Adobe Target et vos audiences Adobe Target. Le rapport d’activité d’Adobe Target (y compris la conversion des expériences gagnantes pour les tests A/B) est également inclus.
 
 Lorsque vous ajoutez une activité, elle apparaît également dans la [console Activités](/help/sites-authoring/activitylib.md).
 
@@ -92,7 +92,7 @@ Pour ajouter une activité :
 
    >[!NOTE]
    >
-   >Lorsque vous créez une activité et qu’une configuration cloud Adobe Target est associée à la page ou à une page parente, AEM considère automatiquement Adobe Target comme le moteur.
+   >Lorsque vous créez une activité et qu’une configuration de cloud Adobe Target est associée à la page ou à l’un de ses parents, AEM considère automatiquement Adobe Target comme le moteur.
 
 1. Dans le menu déroulant du moteur **Ciblage**, sélectionnez votre moteur de ciblage.
 
@@ -112,7 +112,7 @@ Pour ajouter une activité :
 Le mode Ciblage permet de configurer plusieurs aspects d’une activité. Procédez en suivant le processus en trois étapes suivant pour créer du contenu ciblé pour une activité de marque :
 
 1. [Créer](#create-authoring-the-experiences) : ajoutez ou supprimez des expériences et ajoutez des offres pour chaque expérience.
-1. [Cible](#diagramtargetconfiguringtheaudiences) : spécifiez l’audience ciblée par chaque expérience. Vous pouvez cibler une audience spécifique et, si vous utilisez des tests AB, déterminer quel pourcentage de trafic va vers quelle expérience.
+1. [Cible](#diagramtargetconfiguringtheaudiences) : spécifiez l’audience ciblée par chaque expérience. Vous pouvez cibler une audience spécifique. Si vous utilisez des tests A/B, vous pouvez décider du pourcentage du trafic qui va à quelle expérience.
 1. [Objectifs et paramètres](#settingsgoalssettingsconfiguringtheactivityandsettinggoals) : planifiez l’activité et définissez la priorité. Vous pouvez également définir des objectifs de mesures de succès.
 
 Procédez comme suit pour lancer le processus de ciblage du contenu pour une activité.
@@ -268,7 +268,7 @@ Pour plus d’informations sur la personnalisation de ce composant, voir [Config
 
 Comme le composant cible est un conteneur, il apparaît comme une zone de dépôt pour d’autres composants.
 
-En mode Cible, le composant cible possède une bordure bleue, et le message de cible de dépôt indique la nature ciblée.
+En mode cible , le composant cible comporte une bordure bleue et le message de cible de dépôt indique la nature ciblée.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -397,7 +397,7 @@ Ouvrez une offre de bibliothèque à partir d’une expérience en mode Ciblé p
 
 ## Cible : configuration des audiences {#target-configuring-the-audiences}
 
-L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page cible affiche les audiences ciblés par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
+L’étape Cibler du [processus de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique le mappage des audiences avec les expériences que vous avez utilisées à l’étape Créer. La page Cible affiche les audiences ciblées par chaque expérience. Vous pouvez spécifier ou modifier l’audience de chaque expérience. Si vous utilisez Adobe Target, vous pouvez également créer des tests A/B qui vous permettent de cibler un pourcentage du trafic pour une audience sur une expérience particulière.
 
 ### Si vous utilisez le ciblage d’AEM ou d’Adobe Target (ciblage d’expériences)… {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -434,12 +434,12 @@ Vous pouvez modifier les pourcentages, à condition que leur somme reste égale 
 1. Cliquez sur la zone déroulante en regard de l’audience mappée à l’expérience.
 1. (Facultatif) Cliquez sur **Modifier**, puis saisissez un mot-clé pour rechercher le segment souhaité.
 1. Cliquez sur **OK**.
-1. Saisissez des pourcentages pour configurer le mode de routage du trafic d’audience vers chaque expérience. Le nombre total doit être égal à 100.
+1. Saisissez des pourcentages pour configurer le routage du trafic de l’audience vers chaque expérience. Le nombre total doit être égal à 100.
 1. (Facultatif) Modifiez le nom de l’expérience en cliquant sur le menu déroulant en regard de son nom.
 
 ## Objectifs et paramètres : configuration de l’activité et définition des objectifs {#goals-settings-configuring-the-activity-and-setting-goals}
 
-L’étape Objectifs et paramètres de la [procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique de configurer le comportement de l’activité de marque. Indiquez le moment où l’activité commence et se termine, ainsi que sa priorité. En outre, vous effectuez également le suivi des objectifs. Plus précisément, vous pouvez décider de ce que vous souhaitez mesurer avec vos activités.
+L’étape Objectifs et paramètres de la [procédure de ciblage](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implique de configurer le comportement de l’activité de marque. Indiquez les dates de début et de fin de l’activité, ainsi que sa priorité. En outre, vous pouvez également suivre les objectifs. Plus précisément, vous pouvez décider de ce que vous souhaitez mesurer avec vos activités.
 
 Les mesures d’objectif ne sont disponibles que si vous utilisez Adobe Target pour votre moteur de ciblage. Définissez au moins une mesure d’objectif. Si Adobe Analytics est configuré et que vous disposez d’une configuration cloud Analytics A4T, vous pouvez choisir la source de création de rapports Adobe Target ou Adobe Analytics.
 
@@ -530,7 +530,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
  </tbody>
 </table>
 
-Pour plus d’informations sur les mesures de succès, voir [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr).
+Consultez la [documentation &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) pour plus d’informations sur les mesures de succès.
 
 ### Paramètres de configuration (ciblage d’AEM) {#configuring-settings-aem-targeting}
 
@@ -691,7 +691,7 @@ Si vous sélectionnez Adobe Target comme moteur :
   </tr>
   <tr>
    <td><strong>Inclure les segments résolus</strong></td>
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans le framework sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
+   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
   </tr>
   <tr>
    <td><strong>Paramètres contextuels hérités</strong></td>

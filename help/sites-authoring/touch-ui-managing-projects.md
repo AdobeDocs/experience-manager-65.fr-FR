@@ -9,10 +9,10 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 100%
+source-wordcount: '971'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ Dans cette console, vous pouvez créer un projet, lui associer des ressources et
 
 ## Conditions d’accès {#access-requirements}
 
-Les projets sont une fonctionnalité d’AEM standard et ne nécessitent aucune configuration supplémentaire.
+Les projets sont une fonctionnalité AEM standard et ne nécessitent aucune configuration supplémentaire.
 
-Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
+Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et `/home/groups`.
 
 Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à `/home/users` et à `/home/groups`.
 
@@ -101,7 +101,7 @@ La chronologie du projet fournit des informations sur le moment auquel les resso
 
 1. Dans la console **Projets**, cliquez sur **Chronologie** dans le sélecteur de rail en haut à gauche de la console.
    ![Sélection du mode Chronologie](assets/projects-timeline-rail.png)
-2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher la chronologie.
+2. Dans la console, sélectionnez le projet pour lequel vous souhaitez afficher sa chronologie.
    ![Mode Chronologie du projet](assets/project-timeline-view.png)
 
 Les ressources s’affichent dans le rail. Utilisez le sélecteur de rail pour revenir à la vue normale lorsque vous avez terminé.
@@ -112,7 +112,7 @@ Pour basculer entre vos projets actifs et [inactifs](#making-projects-inactive-o
 
 ![Icône Activer/désactiver les projets actifs](assets/projects-toggle-active.png)
 
-Par défaut, la console affiche les projets principaux. Cliquez sur le bouton **Activation/désactivation de projets actifs** une fois pour passer à l’affichage des projets inactifs. Cliquez à nouveau dessus pour revenir aux projets principaux.
+Par défaut, la console affiche les projets actifs. Cliquez sur le bouton **Activation/désactivation de projets actifs** une fois pour passer à l’affichage des projets inactifs. Cliquez à nouveau dessus pour revenir aux projets principaux.
 
 ## Organisation des projets {#organizing-projects}
 
@@ -122,7 +122,7 @@ Plusieurs options permettent d’organiser vos projets de manière à faciliter 
 
 Vous pouvez créer des dossiers dans la console **Projets** pour regrouper et organiser des projets similaires.
 
-1. Dans la console **Projets**, cliquez sur **Créer**, puis sur **Créer un dossier**.
+1. Dans la console **Projets**, cliquez sur **Créer** puis sur **Créer un dossier**.
 
    ![Créer un dossier](assets/project-create-folder.png)
 
@@ -134,7 +134,7 @@ Vous pouvez désormais créer des projets dans ce dossier. Vous pouvez créer pl
 
 ### Désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez vouloir désactiver un projet si vous l’avez terminé mais que vous souhaitez conserver ses informations. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
+Vous pouvez marquer un projet comme inactif s’il est terminé, mais vous souhaitez toujours conserver les informations le concernant. [Les projets inactifs s’affichent désormais](#viewing-active-inactive-projects) par défaut dans la console **Projets**.
 
 Pour rendre un projet inactif, procédez comme suit.
 
@@ -161,4 +161,4 @@ Pour supprimer un projet, procédez comme suit.
    ![Options de suppression de projet](assets/project-delete-options.png)
 1. Cliquez sur **Supprimer** pour supprimer le projet avec les options sélectionnées.
 
-Pour en savoir plus sur les groupes créés automatiquement par les projets, consultez la section [Création automatique de groupe](/help/sites-authoring/projects.md#auto-group-creation) pour plus d’informations.
+Pour en savoir plus sur les groupes créés automatiquement par les projets, consultez [Création automatique de groupe](/help/sites-authoring/projects.md#auto-group-creation) pour plus d’informations.

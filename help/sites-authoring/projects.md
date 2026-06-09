@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1373'
+ht-degree: 83%
 
 ---
 
@@ -25,9 +25,9 @@ En tant qu’utilisateur, vous pouvez effectuer les actions suivantes :
 
 ## Conditions d’accès {#access-requirements}
 
-Les projets sont une fonctionnalité d’AEM standard et ne nécessitent aucune configuration supplémentaire.
+Les projets sont une fonctionnalité AEM standard et ne nécessitent aucune configuration supplémentaire.
 
-Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`.
+Cependant, pour que les utilisateurs participant à des projets puissent voir d’autres utilisateurs/groupes lorsqu’ils se servent des fonctionnalités de la console Projets, telles que créer des projets, créer des tâches/workflows ou afficher et gérer l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et `/home/groups`.
 
 Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à `/home/users` et à `/home/groups`.
 
@@ -37,7 +37,7 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 ![Console Projets](assets/screen-shot_2019-03-05at125110.png)
 
-La console Projets est similaire aux autres consoles d’AEM. Elle permet d’agir sur des projets individuels et d’ajuster l’affichage des projets.
+La console Projets est similaire aux autres consoles d’AEM. Il permet d’exécuter plusieurs actions sur des projets individuels et d’ajuster votre vue des projets.
 
 ### Activation et désactivation du mode {#modes}
 
@@ -162,7 +162,7 @@ La mosaïque **pages d’entrée** vous permet de demander une nouvelle page de 
 
 ![Mosaïque Pages de destination](assets/project-tile-landing.png)
 
-Ce workflow est décrit dans le document [Création d’un workflow de page de destination.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Ce workflow est décrit dans le document [Créer un workflow de page de destination](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
 ### E-mails {#emails}
 
@@ -203,14 +203,14 @@ Les modèles servent de base pour démarrer votre projet. AEM fournit ces modèl
 * **[Projet de traduction](/help/sites-administering/translation.md)** - Il s’agit d’un modèle de référence pour gérer les activités liées la traduction. Il comprend des rôles de base et des workflows pour gérer la traduction.
 * **Projet simple** - Il s’agit d’un exemple de référence pour les projets qui ne correspondent pas à d’autres catégories. Il comprend trois rôles de base et quatre workflows AEM généraux.
 
-En fonction du modèle que vous sélectionnez, vous disposez de différentes options disponibles dans le projet, telles que les rôles utilisateur et les workflows fournis.
+En fonction du modèle que vous sélectionnez, différentes options sont disponibles pour le projet, telles que les rôles utilisateur et les workflows fournis.
 
 ## Rôles utilisateur dans un projet {#user-roles-in-a-project}
 
 Différents rôles utilisateur sont définis dans le modèle de projet et utilisés pour deux principales raisons :
 
 1. Autorisations : les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
-1. Workflows : les workflows déterminent l’utilisateur associé à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se la voient attribuer.
+1. Workflows : les workflows déterminent l’utilisateur associé à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être affectée aux photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se voient affecter la tâche.
 
 Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants.
 
@@ -226,9 +226,9 @@ Pour des projets créatifs, des rôles supplémentaires, par exemple, « photog
 
 Lorsque vous créez le projet et ajoutez des utilisateurs aux différents rôles, les groupes associés au projet sont automatiquement créés pour gérer les autorisations associées.
 
-Par exemple, un projet appelé Myproject aurait trois groupes **Propriétaires Myproject**, **Éditeurs Myproject**, **Observateurs Myproject**.
+Par exemple, un projet appelé Myproject aurait trois groupes : **Propriétaires Myproject**, **Éditeurs Myproject**, **Observateurs Myproject**.
 
-Si le projet est supprimé, ces groupes ne sont supprimés que si vous sélectionnez l’option appropriée [ lors de la suppression du projet.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) L’équipe d’administration peut également supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
+Si le projet est supprimé, ces groupes ne sont supprimés que si vous sélectionnez l’option appropriée [lors de la suppression du projet](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project). Un administrateur peut également supprimer manuellement les groupes dans **Outils** > **Sécurité** > **Groupes**.
 
 ## Ressources supplémentaires {#additional-resources}
 
