@@ -10,10 +10,10 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
+workflow-type: tm+mt
+source-wordcount: '777'
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ AEM 6.5 introduit la gestion des autorisations pour les utilisateurs et pour le
 
 ## Utilisation {#how-to-use}
 
-### Accès à l’interface utilisateur {#accessing-the-ui}
+### Accès à l’interface d’utilisation {#accessing-the-ui}
 
 La nouvelle gestion des autorisations basée sur l’interface utilisateur est accessible via la carte Autorisations sous Sécurité, comme illustré ci-dessous :
 
@@ -74,7 +74,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 >
 >Pour obtenir la liste complète des privilèges et descriptions, voir [Administration des utilisateurs et utilisatrices, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Recherche d’autorisations d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour « dam-users », comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
+![Autorisation de recherche pour un chemin d’accès donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour &#39;dam-users&#39; comme illustré par un chemin sélectionné dans des colonnes verticales.](assets/image2019-3-21_0-6-53.png)
 
 Une fois la liste des privilèges sélectionnée, l’utilisateur ou utilisatrice peut choisir le Type d’autorisation : Deny (Refuser) ou Allow (Autoriser), comme illustré ci-dessous.
 
@@ -82,7 +82,7 @@ Une fois la liste des privilèges sélectionnée, l’utilisateur ou utilisatric
 
 ### Utilisation des restrictions {#using-restrictions}
 
-Outre la liste des privilèges et le type d’autorisation d’un chemin donné, cet écran permet également d’ajouter des restrictions pour un contrôle d’accès précis, comme illustré ci-dessous :
+Outre la liste des privilèges et le type d’autorisation sur un chemin donné, cet écran vous permet également d’ajouter des restrictions pour un contrôle d’accès affiné, comme illustré ci-dessous :
 
 ![Ajout de restrictions](assets/image2019-3-21_1-4-14.png)
 
@@ -94,7 +94,7 @@ Vous pouvez ajouter des restrictions comme illustré ci-dessous en choisissant l
 
 ![Ajouter le type de restriction](assets/sapte-1.png) ![Ajouter le type de restriction](assets/opt-1.png)
 
-La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est une autorisation agrégée qui inclut `jcr:removeNode`, qui a été ajouté précédemment, mais qui n’apparaît pas ci-dessous, car il se trouve sous `jcr:write`.
+La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est une autorisation agrégée qui inclut les `jcr:removeNode` qui ont été ajoutées ci-dessus, mais qui ne sont pas affichées ci-dessous, car elles sont couvertes sous `jcr:write`.
 
 ### Modification des ACE {#editing-aces}
 
@@ -112,7 +112,7 @@ Ici, le privilège `addChildNodes` est ajouté pour **dam-users** sur le chemin 
 
 ![Ajouter un privilège](assets/image2019-3-21_0-45-35.png)
 
-Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications sont répercutées sur les nouvelles autorisations pour les **dam-users**, comme illustré ci-dessous :
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Elles sont répercutées dans les nouvelles autorisations pour les **dam-users** comme illustré ci-dessous :
 
 ![Enregistrez les modifications](assets/zece-1.png)
 
@@ -122,7 +122,7 @@ Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’en
 
 ![Supprimer les ACE](assets/image2019-3-21_0-53-19.png) ![Supprimer les ACE](assets/unspe.png)
 
-### Combinaisons de privilèges de l’interface utilisateur classique {#classic-ui-privilege-combinations}
+### Combinaisons de privilèges de l’interface d’utilisation classique {#classic-ui-privilege-combinations}
 
 La nouvelle interface utilisateur des autorisations utilise explicitement l’ensemble de base de privilèges au lieu de combinaisons prédéfinies qui ne reflètent pas vraiment les privilèges sous-jacents exacts qui ont été accordés.
 
@@ -131,7 +131,7 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
 <table>
  <tbody>
   <tr>
-   <th>Combinaisons de privilèges de l’interface utilisateur classique</th>
+   <th>Combinaisons de privilèges de l’interface d’utilisation classique</th>
    <th>Privilège de l’interface utilisateur Autorisations</th>
   </tr>
   <tr>

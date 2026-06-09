@@ -5,10 +5,10 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 93%
 
 ---
 
@@ -101,7 +101,7 @@ La classe JavaScript [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
 
-Les éléments de données individuels sont stockés sous la forme d’un ensemble de paires clé/valeur. Pour stocker et récupérer des valeurs, spécifiez la clé correspondante :
+Les éléments de données individuels sont stockés sous la forme d’un ensemble de paires clé/valeur. Pour stocker et récupérer des valeurs, vous spécifiez la clé correspondante :
 
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
@@ -110,7 +110,7 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 
 >[!NOTE]
 >
->Par défaut, ContextHub ne connaît pas les utilisateurs et utilisatrices actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs et utilisatrices comme étant « anonymes ».
+>Par défaut, ContextHub ne connaît pas l’utilisateur actuellement connecté sur les serveurs de publication. Ces utilisateurs sont considérés comme « anonymes ».
 >
 >Vous pouvez sensibiliser ContextHub aux utilisateurs et utilisatrices connectés en chargeant le magasin de profils. Consultez l’[exemple de code sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
@@ -137,7 +137,7 @@ Les segments suivants sont installés avec le [site de tutoriel WKND](getting-st
 
 Les règles utilisées pour résoudre ces segments sont résumées comme suit :
 
-* Tout d’abord, le magasin [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) est utilisé pour déterminer la latitude de l’utilisateur.
+* Tout d’abord, le magasin [géolocalisation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) est utilisé pour déterminer la latitude de l’utilisateur.
 * Ensuite, l’élément de données du mois du [magasin surferinfo](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) détermine la saison où il se trouve dans cette latitude.
 
 >[!WARNING]

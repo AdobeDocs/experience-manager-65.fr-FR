@@ -6,10 +6,10 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Le fichier s’applique à tous les projets de traduction.
 
 >[!NOTE]
 >
->Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Pour plus d’informations, consultez la section [Restructuration du référentiel commun dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
+>Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Consultez [ Restructuration des référentiels communs dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) pour plus d’informations.
 
 Les règles comprennent les informations suivantes :
 
@@ -80,7 +80,7 @@ La règle d’exemple suivante entraîne la traduction du contenu de toutes les 
 </node>
 ```
 
-L’exemple suivant traduit le contenu de toutes les propriétés `text` et traduit également d’autres propriétés du composant Image de base. Si d’autres composants présentent des propriétés du même nom, la règle ne s’applique pas à eux.
+L’exemple suivant traduit le contenu de toutes les propriétés `text` et également d’autres propriétés du composant Image de base. Si d’autres composants présentent des propriétés du même nom, la règle ne s’applique pas à eux.
 
 ```xml
 <node path="/content">
@@ -170,7 +170,7 @@ Vous pouvez modifier 4 attributs via l’interface utilisateur : `isDeep`, `in
 
 **isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le nœud actif.
 
-Par exemple, les nœuds enfants sont ajoutés dans une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les nœuds enfants sont ajoutés à une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme étant un brouillon. `isDeep` vérifie si la propriété des nœuds parents est `draftOnly` sur true et exclut ces nœuds enfants.
 
 Dans l’éditeur, vous pouvez sélectionner ou désélectionner **Est profond** dans l’onglet **Filtres**.
 
@@ -184,7 +184,7 @@ Voici un exemple du fichier xml obtenu lorsque l’option **Est profond** n’es
 </filter>
 ```
 
-**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée par l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement à ce nœud spécifique.
+**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée par l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement à ce nœud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 
@@ -194,7 +194,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte, mais qui comportent des codes de langue, tels que `jcr:language`. L’utilisateur ou l’utilisatrice ne traduit pas le texte, mais les paramètres régionaux de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
@@ -213,11 +213,11 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 
 Le fichier translation_rules.xml qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles afin que le contenu de vos composants personnalisés soit traduit.
 
-Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un package de contenu. L’installation des service packs AEM ou la réinstallation de certains packages AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
+Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauvegarde dans un module de contenu. L’installation des service packs AEM ou la réinstallation de certains packages AEM peut remplacer le fichier translation_rules.xml actuel par la version originale. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
 
 >[!NOTE]
 >
->Après avoir créé le package de contenu, recréez-le chaque fois que vous modifiez le fichier.
+>Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

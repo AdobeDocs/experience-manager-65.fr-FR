@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 89%
 
 ---
 
@@ -46,7 +46,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 
 Dans le cas des utilisateurs qui doivent modifier/mettre à jour un fragment de contenu, **sans leur permettre de supprimer l’intégralité d’un fragment**, des autorisations spécifiques doivent être attribuées, car l’opération de base de l’éditeur de fragment de contenu nécessite la possibilité de supprimer des sous-éléments transitoires.
 
-Par exemple, lors de la manipulation des variantes, mais également lors de la modification de métadonnées ou de la gestion du contenu associé.
+Par exemple, lors de la manipulation de variations, de la modification de métadonnées ou de la gestion de contenu associé.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Les autorisations nécessaires pour permettre à une personne utilisatrice et/ou
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Pour le nœud `jcr:content` de tous les fragments de contenu :
+* Pour le nœud `jcr:content` de tous les fragments de contenu :
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`
 
@@ -84,7 +84,7 @@ Les autorisations nécessaires pour permettre à une personne utilisatrice et/ou
 
 Ces privilèges `remove` doivent être [administrés à l’aide des listes de contrôle d’accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Les privilèges `add` et `modify` peuvent également être administrés dans CRXDE Lite ou à l’aide de la console de gestion des utilisateurs.
+Les privilèges `add` et `modify` peuvent également être administrés dans CRXDE Lite ou à l’aide de la console de gestion des utilisateurs.
 
 Par exemple, la définition des privilèges `remove` pour un groupe `content-authors-no-delete` :
 

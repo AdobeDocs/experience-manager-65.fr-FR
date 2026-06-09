@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 94%
 
 ---
 
@@ -43,11 +43,11 @@ Le compte Adobe Analytics doit :
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-Avant de commencer, assurez-vous que vos informations d’identification vous permettent de vous connecter à Adobe Analytics. Utilisez l’une des méthodes suivantes :
+Avant de poursuivre, assurez-vous que vos informations d’identification vous permettent de vous connecter à Adobe Analytics par l’une des méthodes suivantes :
 
 * [Se connecter à Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
-* [Se connecter à Adobe Analytics](https://sc.omniture.com/login/)
+* [Se connecter à Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -67,7 +67,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 
 ![aa-07](assets/aa-07.png)
 
-1. Ouvrez la console Web dans votre navigateur Web. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console Web dans votre navigateur Web. ([:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Pour accéder à la console, saisissez vos informations d’identification.
 
    >[!NOTE]
@@ -108,7 +108,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 >
 >La sélection du type d’instance de serveur ne limite pas les appels à Adobe Analytics, elle contrôle simplement les appels qui incluent le RSID.
 >
->Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec la structure, les appels sont toujours émis vers Adobe Analytics, mais ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
+>Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec le framework, les appels sont toujours effectués vers Adobe Analytics. Toutefois, ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
 
 1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
 1. Faites défiler jusqu’à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
@@ -117,7 +117,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 1. Dans la boîte de dialogue **Créer un framework** :
 
    * Spécifiez un **Titre**.
-   * Il est possible de spécifier le **Nom** pour le nœud qui stocke les détails du framework dans le référentiel.
+   * Vous pouvez éventuellement spécifier le **Nom** pour le nœud qui stocke les détails du framework dans le référentiel.
    * Sélectionnez **Framework Adobe Analytics**,
 
    puis cliquez sur **Créer**.
@@ -168,7 +168,7 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas en regard de
 
 ## Associer une page à un framework d’Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont récupérées à partir d’Adobe Analytics.
+Lorsqu’une page est associée à un framework Adobe Analytics, elle envoie des données à Adobe Analytics lors de son chargement. Les variables que la page renseigne sont mappées et récupérées des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont récupérées à partir d’Adobe Analytics.
 
 Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à un framework, toutes les pages du site sont associées au framework.
 
@@ -196,17 +196,17 @@ Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-ana
 
 Configurez l’instance appropriée du service **Importateur Sling de rapports Adobe AEM Analytics** :
 
-* **Tentatives de récupération** :
-nombre de tentatives de récupération d’un rapport en file d’attente.
+* **Tentatives de récupération** :
+Nombre de tentatives de récupération d’un rapport en file d’attente.
 La valeur par défaut est `6`.
 
-* **Délai de récupération** :
-nombre de millisecondes entre les tentatives de récupération d’un rapport en file d’attente.
-La valeur par défaut est de `10000`. Comme la valeur est en millisecondes, cela correspond à 10 secondes.
+* **Délai de récupération** :
+Nombre de millisecondes écoulées entre les tentatives de récupération d’un rapport mis en file d’attente.
+La valeur par défaut est `10000`. Comme cette valeur est exprimée en millisecondes, elle correspond à 10 secondes.
 
-* **Fréquence de récupération** :
-expression `cron` pour déterminer la fréquence de récupération du rapport Analytics.
-La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations par heure.
+* **Fréquence de récupération** :
+Expression `cron` permettant de déterminer la fréquence de récupération du rapport Analytics.
+La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations toutes les heures.
 
 Pour configurer ce service OSGi, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud osgiConfig dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (le PID de service est `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
