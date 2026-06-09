@@ -530,7 +530,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
  </tbody>
 </table>
 
-Consultez la [documentation ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) pour plus d’informations sur les mesures de succès.
+Consultez la [documentation &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) pour plus d’informations sur les mesures de succès.
 
 ### Paramètres de configuration (ciblage d’AEM) {#configuring-settings-aem-targeting}
 

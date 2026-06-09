@@ -291,7 +291,7 @@ Voici des recommandations pour la gestion des listes de contrôle d’accès :
 
   L’utilisation de l’autorisation Autoriser peut avoir des effets inattendus si les autorisations sont appliquées dans un ordre différent de l’ordre prévu. Si un utilisateur ou une utilisatrice est membre de plusieurs groupes, les instructions Refuser d’un groupe peuvent annuler l’instruction Autoriser d’un autre groupe ou vice versa. Il est difficile de garder une vue d’ensemble dans ce genre de situation qui peut facilement donner des résultats imprévus, alors que les attributions Autoriser ne provoquent pas de tels conflits.
 
-  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Voir [ Bonnes pratiques ](#best-practices).
+  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser. Voir [&#x200B; Bonnes pratiques &#x200B;](#best-practices).
 
 Avant de modifier l’une des autorisations, assurez-vous de comprendre son fonctionnement et ses interactions. Consultez la documentation CRX qui explique comment la gestion de contenu web AEM [évalue les droits d’accès](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), ainsi que des exemples sur la configuration des listes de contrôle d’accès.
 

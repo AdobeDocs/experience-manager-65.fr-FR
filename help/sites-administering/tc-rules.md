@@ -29,7 +29,7 @@ Le fichier s’applique à tous les projets de traduction.
 
 >[!NOTE]
 >
->Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Consultez [ Restructuration des référentiels communs dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) pour plus d’informations.
+>Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Consultez [&#x200B; Restructuration des référentiels communs dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) pour plus d’informations.
 
 Les règles comprennent les informations suivantes :
 

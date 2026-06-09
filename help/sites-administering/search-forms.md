@@ -394,7 +394,7 @@ Si cette option est cochée, les options sont rendues sous forme de cases à coc
 * **Noms des propriétés de publication et de Live Copy**
 Les libellés des cases à cocher de publication et de Live Copy pour le prédicat spécifique à Sites.
 
-* L’&amp;ast; figurant dans les libellés de champ de l’onglet **Paramètres** signifie que les champs sont obligatoires et qu’un message d’erreur s’affiche s’ils ne sont pas renseignés.
+* L’&ast; figurant dans les libellés de champ de l’onglet **Paramètres** signifie que les champs sont obligatoires et qu’un message d’erreur s’affiche s’ils ne sont pas renseignés.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 

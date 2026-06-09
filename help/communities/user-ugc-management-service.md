@@ -61,7 +61,7 @@ Par exemple, pour supprimer le contenu créé par l’utilisateur d’un utilisa
 
 ### Supprimer le contenu créé par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Pour supprimer des données utilisateur d’Adobe Analytics, suivez le workflow [RGPD d’Analytics ](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer des données utilisateur d’Adobe Analytics, suivez le workflow [RGPD d’Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=fr), car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
 Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 
@@ -84,4 +84,4 @@ Par exemple, pour supprimer le profil d’un utilisateur dont l’ID autorisable
 
 >[!NOTE]
 >
->L’API `deleteUserAccount()` désactive uniquement un profil utilisateur dans le système et supprime le contenu créé par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **** à l’adresse `https://<server>:<port>/crx/de`, localisez le nœud utilisateur et supprimez-le.
+>L’API `deleteUserAccount()` désactive uniquement un profil utilisateur dans le système et supprime le contenu créé par l’utilisateur. Toutefois, pour supprimer un profil utilisateur du système, accédez à **&#x200B;**&#x200B;à l’adresse `https://<server>:<port>/crx/de`, localisez le nœud utilisateur et supprimez-le.
