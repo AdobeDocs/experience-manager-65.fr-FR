@@ -111,7 +111,7 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
 * **Bons composants**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
+   * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&ast;) pour spécifier un groupe de composants :
 
       * La valeur suivante spécifie le composant de texte de base :
 
