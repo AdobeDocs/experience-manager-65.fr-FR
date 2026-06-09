@@ -9,10 +9,10 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ Dans une installation standard, les paramètres par défaut sont définis en tan
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Ce nœud contient les propriétés `cq.wcm.undo.whitelist` et `cq.wcm.undo.blacklist` ; pour les autres propriétés, les valeurs par défaut sont utilisées.
+Ce nœud contient les propriétés `cq.wcm.undo.whitelist` et `cq.wcm.undo.blacklist`. Pour les autres propriétés, les valeurs par défaut sont utilisées.
 
 >[!CAUTION]
 >
@@ -51,7 +51,7 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
    * **Valeur par défaut** : `Selected`
    * **Type** : `Boolean`
 
-* **Chemin d’accès**
+* **Chemin**
 ( `cq.wcm.undo.path`)
 
    * **Description :** chemin d’accès du référentiel pour conserver les données d’annulation binaires. Lorsque les auteurs modifient les données binaires telles que les images, la version originale des données est conservée ici. Lorsque des modifications apportées à des données binaires sont annulées, ces données d’annulation binaires sont restaurées sur la page.
@@ -62,7 +62,7 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
   >
   >Par défaut, seuls les administrateurs peuvent accéder au nœud `/var/undo`. Les auteurs et autrices ne peuvent effectuer des opérations d’annulation et de restauration sur du contenu binaire qu’après avoir reçu les autorisations d’accès aux données d’annulation binaires.
 
-* **Min. validity**
+* **Min. validité**
 ( `cq.wcm.undo.validity`)
 
    * **Description** : durée de stockage minimal des données d’annulation binaires, en heures. Après cette période, les données binaires peuvent être supprimées, pour préserver l’espace disque.
@@ -97,7 +97,7 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
    * **Valeur par défaut** : `Selected`
    * **Type** : `Boolean`
 
-* **Mode de marquage**
+* **Mode Marqueur**
 ( `cq.wcm.undo.markermode`)
 
    * **Description** : spécifie l’indice visuel à utiliser pour indiquer quels paragraphes sont affectés lorsqu’une opération d’annulation ou de restauration se produit. Les valeurs suivantes sont valides :
@@ -111,7 +111,7 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
 * **Bons composants**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
+   * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
 
       * La valeur suivante spécifie le composant de texte de base :
 
@@ -147,3 +147,4 @@ La liste suivante répertorie les propriétés affichées dans la console web, s
 
    * **Valeur par défaut** : la propriété est renseignée avec plusieurs opérations de composant.
    * **Type** : `String[]`
+
