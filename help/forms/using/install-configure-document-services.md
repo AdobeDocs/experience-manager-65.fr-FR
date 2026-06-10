@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
 workflow-type: tm+mt
-source-wordcount: '10527'
-ht-degree: 98%
+source-wordcount: '10688'
+ht-degree: 96%
 
 ---
 
@@ -909,7 +909,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1128,7 +1128,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    >[!NOTE]
    >
-   >Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vous assurer que vous agissez en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, notamment en ce qui concerne l’utilisation de polices dans des environnements de serveurs.
+   >Votre droit d’utilisation des polices fournies par des sociétés autres qu’Adobe est régi par les contrats de licence accompagnant ces polices. Il n’est pas couvert par votre licence d’utilisation du logiciel Adobe. Adobe vous recommande de vérifier et de vous assurer que vous êtes en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, en particulier en ce qui concerne l’utilisation de polices dans un environnement de serveur.
    >Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
    >
 
@@ -1139,6 +1139,27 @@ Un compte d’utilisateur local est requis pour exécuter le service PDF Generat
 1. Ouvrez la page [Configuration de PDF Generator dans AEM Forms.](http://localhost:4502/libs/fd/pdfg/config/ui.html)
 
 1. Dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**, saisissez les informations d’identification d’un compte d’utilisateur local, puis cliquez sur **[!UICONTROL Envoyer]**. Si Microsoft® Windows vous y invite, autorisez l’accès à l’utilisateur ou à l’utilisatrice. Une fois ajouté, l’utilisateur configuré est affiché sous la section **[!UICONTROL Vos comptes d’utilisateurs]** dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**.
+
+### (Windows uniquement) Activer les conversions PDF Generator multithread
+
+Pour exécuter des conversions de documents multithread lorsqu’AEM Forms s’exécute en tant que service Windows, PDF Generator traite les conversions sous un seul compte utilisateur configuré.
+
+>[!NOTE]
+>
+> Dans ce mode, plusieurs instances de **® Word** (doc/docx) et **Excel** (xls/xlsx) s’exécutent sous le même utilisateur et gèrent les conversions simultanément. **® PowerPoint** (ppt/pptx) ne prend pas en charge ce mode. PDF Generator ne lance qu’une seule instance PowerPoint à la fois. Les conversions multithread ne sont donc pas prises en charge pour PowerPoint.
+
+Pour activer les conversions multithread pour Word et Excel, procédez comme suit :
+
+1. Configurez un [compte utilisateur local](#configure-a-local-user-account-to-run-the-pdf-generator-service) pour PDF Generator.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Outils]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuration de PDF Generator]**. L’URL par défaut est <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Dans l’onglet **[!UICONTROL Configuration générale]**, définissez les options suivantes (configurez PDFMaker pour Word et Native2PDF pour Excel) :
+
+   * **Activer le mode Utilisateur unique pour PDFMaker:** **true**
+   * **Taille du pool de processus pour un seul utilisateur PDFMaker :** à définir selon vos besoins. Cette valeur correspond au nombre maximal d’instances Word pouvant exécuter des conversions en même temps.
+   * **Activer le mode Utilisateur unique pour Native2PDF :** **true**
+   * **Native2PDF Single User Process Pool Taille :** à définir selon vos besoins. Cette valeur correspond au nombre maximal d’instances Excel qui peuvent exécuter des conversions en même temps.
+
+1. Redémarrez le serveur AEM Forms.
 
 ### Configuration des paramètres de délai d’expiration {#configure-the-time-out-settings}
 
@@ -1226,7 +1247,7 @@ Avant de configurer des certificats, assurez -vous que vous disposez des éléme
 
 * Mot de passe de la clé privée, fourni avec le certificat.
 
-* Alias de la clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
+* Alias de clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Mot de passe du fichier KeyStore. Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier KeyStore est toujours identique au mot de passe de la clé privée.
@@ -1380,7 +1401,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :

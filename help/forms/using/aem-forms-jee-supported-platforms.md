@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
+source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
 workflow-type: tm+mt
-source-wordcount: '3839'
-ht-degree: 89%
+source-wordcount: '3920'
+ht-degree: 87%
 
 ---
 
@@ -308,17 +308,17 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virt
   <td>Pack de services et mises à jour critiques</td>
  </tr>
  <tr>
-  <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+  <td><p>JBoss® Enterprise Application Platform (EAP) 7.4.23 <sup>[2] [3] [7]</sup> </p> </td>
   <td><p>A : pris en charge</p> </td>
   <td><p>Correctifs et correctifs cumulatifs pour la version EAP prise en charge</p> </td>
  </tr>
 </tbody>
 </table>
 
-
 >[!NOTE]
 >
->Les clusters IBM® WebSphere® ne sont pris en charge que dans les éditions Network Deployment.
+>- À partir du pack de services 6.5.25.0 d’AEM Forms, JBoss® Enterprise Application Platform (EAP) 7.4.23 est pris en charge. Vous pouvez télécharger JBoss® EAP 7.4.23 à partir du Portail de distribution logicielle en utilisant ce [lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
+>- Les clusters IBM® WebSphere® ne sont pris en charge que dans les éditions Network Deployment.
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
@@ -433,7 +433,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 - AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers conformément à la [&#x200B; Politique de prise en charge des logiciels tiers &#x200B;](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
+- AEM Forms on JEE prend en charge divers logiciels tiers conformément à la [ Politique de prise en charge des logiciels tiers ](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
 @@ -449,274 +376,219 @@ En outre, tenez compte des points suivants lors du choix du logiciel pour Adobe AEM
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
@@ -488,12 +488,8 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
   <td>5.5.2</td>
  </tr>
  <tr>
-  <td>IBM® Content Manager Server (obsolète) </td>
-  <td>8.5 Fix pack 2</td>
- </tr>
-  <tr>
-  <td> IBM® Content Manager Client (obsolète)</td>
-  <td>8.5 </td>
+  <td>Client ® Content Manager</td>
+  <td>8,7</td>
  </tr>
   <td>Microsoft® Sharepoint </td>
   <td>2019<br /> </td>
@@ -676,10 +672,9 @@ Pour des conditions requises supplémentaires, voir :
 ### Concepteur {#designer}
 
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
+- ® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10® 11 ou Microsoft® Windows Terminal Server 2025
 - Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 - Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
-@@ -729,49 +601,45 @@ Pour plus d’informations, voir :
 - Droits d’administration pour l’installation de Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
@@ -795,7 +790,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
 
-La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Accédez à toute la documentation depuis [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/pack de services de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
@@ -815,7 +810,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
 
 <!--
 
@@ -826,7 +821,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -897,7 +892,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -913,6 +908,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 
 -->
+
+### Version 6.5.25.0 (28 Mai 2026)
+
+| Ajout de la prise en charge | Suppression de la prise en charge | Abandon de la prise en charge |
+| -------------- | --------------- | ------------------- |
+| JBoss® Enterprise Application Platform (EAP) 7.4.23 | JBoss® Enterprise Application Platform (EAP) 7.4.10 | |
+| IBM®Content Manager Client 8.7 | ® Content Manager Client 8.5 | |
+| ® Windows Terminal Server 2025 | | |
+
 
 ### Version 6.5.24.0 (26 Novembre 2025)
 
