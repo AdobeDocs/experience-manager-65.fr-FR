@@ -433,7 +433,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 - AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs de correctifs en plus des versions majeures et mineures spécifiées du logiciel pris en charge. Toutefois, la mise à jour à la version majeure ou mineure suivante n’est pas prise en charge sauf indication contraire.
 - Les installations en cluster ne prennent pas en charge la persistance de TarMK. Pour plus d’informations sur la persistance prise en charge, voir [Choix d’un type de persistance pour une installation AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms on JEE prend en charge divers logiciels tiers conformément à la [ Politique de prise en charge des logiciels tiers ](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
+- AEM Forms on JEE prend en charge divers logiciels tiers conformément à la [&#x200B; Politique de prise en charge des logiciels tiers &#x200B;](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p) d’Adobe.
 @@ -449,274 +376,219 @@ En outre, tenez compte des points suivants lors du choix du logiciel pour Adobe AEM
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
@@ -810,7 +810,7 @@ Adobe se réserve le droit de modifier à tout moment les plateformes de fournis
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site de support aux entreprises d’Adobe les articles de la base de connaissances relatifs à votre produit.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
 
 <!--
 
