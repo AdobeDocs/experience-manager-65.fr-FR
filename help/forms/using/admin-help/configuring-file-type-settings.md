@@ -86,7 +86,7 @@ Vous pouvez créer ou modifier un paramètre de type de fichier pour définir la
 
 1. Après avoir renseigné toutes les sections, cliquez sur **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer sous]** puis saisissez le nom du paramètre.
 
-Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
+Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/fr_FR/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
 
 ## Modifier les paramètres par défaut {#change-the-default-settings}
 
@@ -620,7 +620,7 @@ Vous pouvez également définir la manière dont les formulaires sont envoyés. 
 
 ## Paramètres d’autres applications (Windows uniquement) {#other-applications-settings-windows-only}
 
-Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration. Ils indiquent les extensions correspondant aux types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Vous ne pouvez pas modifier les paramètres d’autres applications dans la console d’administration. Ils indiquent les extensions correspondant aux types de fichiers pris en charge. Pour obtenir des instructions sur l’accès à ces paramètres, consultez [Créer ou modifier des paramètres de type de fichier](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect : `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
