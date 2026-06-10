@@ -22,7 +22,7 @@ Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, un volet R
 
 L’espace de travail AEM Forms permet d’afficher une page web de votre choix dans le volet Résumé de la tâche. Un processus peut être créé pour afficher un volet Résumé de la tâche en utilisant Workbench.
 
-1. Créez un processus Affecter une tâche dans Workbench. Pour plus d’informations sur l’opération Affecter une tâche, voir la rubrique Référence de service dans l’[Aide de Workbench](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Créez un processus Affecter une tâche dans Workbench. Pour plus d’informations sur l’opération Affecter une tâche, voir la rubrique Référence de service dans l’[Aide de Workbench](https://help.adobe.com/fr_FR/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >

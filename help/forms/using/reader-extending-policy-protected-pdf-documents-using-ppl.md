@@ -68,7 +68,7 @@ Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Spécifie un objet de type <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L’objet usageRights représente les droits individuels pouvant être appliqués à un document PDF protégé par une politique.</p> </td>
+   <td><p>Spécifie un objet de type <a href="https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L’objet usageRights représente les droits individuels pouvant être appliqués à un document PDF protégé par une politique.</p> </td>
   </tr>
  </tbody>
 </table>

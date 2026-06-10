@@ -25,7 +25,7 @@ L’intégration vidéo de Dynamic Media Classic étend la portée de la vidé
 
 * Le composant **[!UICONTROL vidéo Scene7]** procède automatiquement à la détection de l’appareil et de la bande passante afin de lire la vidéo au format adéquat avec la qualité optimale sur des ordinateurs de bureau, des tablettes et des téléphones mobiles.
 * Assets - Vous pouvez inclure des visionneuses de vidéos adaptatives au lieu de ressources vidéo uniques. Une visionneuse de vidéos adaptatives contient tous les rendus vidéo nécessaires pour lire la vidéo en toute transparence sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez une visionneuse de vidéos adaptatives, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android™ et BlackBerry® et des appareils mobiles Windows.
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/fr_FR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## A propos de FFMPEG et de Dynamic Media Classic {#about-ffmpeg-and-scene}
 
