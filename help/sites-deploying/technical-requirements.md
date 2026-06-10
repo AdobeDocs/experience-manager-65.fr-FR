@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
 workflow-type: tm+mt
-source-wordcount: '3790'
-ht-degree: 93%
+source-wordcount: '3772'
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
-1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe ne prend en charge que les versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la politique de prise en charge de [Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Important : Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
@@ -198,6 +198,7 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
 3. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge de JBoss® EAP 7.1.4 et ajout de la prise en charge de JBoss® EAP 7.4.10.
+   * À partir du pack de services 6.5.25.0 d’AEM Forms, la prise en charge de JBoss® EAP 7.4.23 est ajoutée . Vous pouvez télécharger JBoss® EAP 7.4.23 à partir du Portail de distribution logicielle en utilisant ce [lien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
 
 ### Systèmes d’exploitation de serveur {#server-operating-systems}
 
@@ -206,7 +207,7 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 | **Plateforme** | **Niveau de prise en charge** |
 |---|---|
 | **Linux®, basé sur la distribution Red Hat®** | A : prise en charge de : `[1]` `[3]` |
-| Linux, en fonction de la distribution Debian, incluse Ubuntu | A : prise en charge de : `[1]` `[2]` |
+| Linux®, basé sur la distribution Debian, Ubuntu inclus | A : prise en charge de : `[1]` `[2]` |
 | Linux, en fonction de la distribution SUSE® | A : prise en charge de `[1]` |
 | Microsoft® Windows Server 2022 | R : Prise en charge limitée |
 | Microsoft® Windows Server 2019 `[4]` (obsolète) | R : prise en charge restreinte des nouveaux contrats `[5]` |
@@ -503,7 +504,7 @@ OpenOffice 4.1.15 </td>
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft Windows 10 ou Windows® 11
+* ® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10® 11 ou Microsoft® Windows Terminal Server 2025
 * Processeur d’1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
