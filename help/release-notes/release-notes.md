@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
+source-git-commit: 1a73ae15f03a427f33a748ad2c6c789541206579
 workflow-type: tm+mt
-source-wordcount: '8148'
+source-wordcount: '8188'
 ht-degree: 20%
 
 ---
@@ -59,7 +59,11 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
    * IBM®Content Manager Client 8.7
    * AEM Forms Designer sous Microsoft® Windows Terminal Server 2025
 
-
+  >[!NOTE]
+  >
+  > Pour mettre à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23, reportez-vous à :
+  > * [Mettez à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms sur JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) pour les environnements autonomes.
+  > * [Mettez à niveau le cluster JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) pour les environnements de cluster.
 
 ## Correction de problèmes dans le pack de services 25 {#fixed-issues}
 
