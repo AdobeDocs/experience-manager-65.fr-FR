@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
+source-git-commit: 1a73ae15f03a427f33a748ad2c6c789541206579
 workflow-type: tm+mt
-source-wordcount: '8148'
+source-wordcount: '8188'
 ht-degree: 20%
 
 ---
@@ -59,7 +59,11 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
    * IBM®Content Manager Client 8.7
    * AEM Forms Designer sous Microsoft® Windows Terminal Server 2025
 
-
+  >[!NOTE]
+  >
+  > Pour mettre à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23, reportez-vous à :
+  > * [Mettez à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms sur JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) pour les environnements autonomes.
+  > * [Mettez à niveau le cluster JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) pour les environnements de cluster.
 
 ## Correction de problèmes dans le pack de services 25 {#fixed-issues}
 
@@ -637,9 +641,9 @@ Un correctif logiciel peut être téléchargé et installé pour les problèmes 
    2. Supprimez le lot dont le nom est `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Redémarrez votre serveur AEM.
 
-* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.25.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
+* **FORMS-23703** Lorsque la règle `contains` est configurée sans valeur par défaut, la validation côté serveur d’un formulaire adaptatif échoue. Vous pouvez installer la dernière version du pack de services [AEM Forms 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) pour résoudre le problème.
 * **GRANITE-63681** La configuration système par défaut bloque les mots-clés et les modèles RegEx requis, ce qui empêche les connecteurs de modèle de données de formulaire de s’authentifier. Pour résoudre ce problème, téléchargez et installez le correctif à partir du [lien](/help/release-notes/aem-forms-hotfix.md).
-* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.25.0](https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **La conversion FORMS-23979** d’HTML en PDF (PDFG) peut connaître des délais d’expiration intermittents. Une version plus récente du module complémentaire Forms pour SP24 a ensuite été publiée, qui comprend le correctif. Si vous rencontrez ce problème, mettez à jour votre environnement vers la [dernière version du module complémentaire Forms pour 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Après la mise à niveau vers **AEM Forms6.5.25.0**, `server.log` et `error.log` peuvent être inondés de messages WARN répétés tels que *Échec de la création de la fabrique d&#39;analyseur sécurisé* ou *Attribut de sécurité... n&#39;est pas pris en charge*. Les journaux peuvent augmenter d’environ **5 à 10 lignes par seconde** (des centaines de Mo par heure), ce qui peut remplir le disque et bloquer le déploiement en production.
 
 Pour réduire le volume de journalisation, définissez le niveau de journalisation des `com.adobe.util.XMLSecurityUtil` à `ERROR` dans la configuration du serveur d’applications ou au moyen de l’argument JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Cette fonctionnalité masque uniquement les messages et ne corrige pas la cause sous-jacente.
@@ -660,7 +664,7 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clientes et clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
