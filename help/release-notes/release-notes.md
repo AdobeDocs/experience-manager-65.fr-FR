@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
+source-git-commit: ada1a7e3074515181f78dae914f7a664132c0226
 workflow-type: tm+mt
 source-wordcount: '7373'
 ht-degree: 20%
@@ -602,12 +602,6 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 * **FORMS-23722** Lorsqu’un formulaire contenant un champ **Pièce jointe** qui utilise `bindref` est envoyé à un workflow AEM avec une étape **Affecter une tâche**, les pièces jointes ne s’affichent pas. Par conséquent, ils n’apparaissent pas lorsque la tâche est ouverte à partir de la boîte de réception. Les fichiers sont correctement enregistrés dans le référentiel, mais l’interface utilisateur de l’étape Affecter une tâche ne parvient pas à afficher les pièces jointes.
 
 #### Problèmes connus liés aux correctifs disponibles {#aem-forms-issues-with-hotfixes}
-
-<!--
->[!NOTE]
->
->Avoid upgrading to Service Pack 6.5.25.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.25.0 only after the required hotfixes are released.
--->
 
 Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
 
