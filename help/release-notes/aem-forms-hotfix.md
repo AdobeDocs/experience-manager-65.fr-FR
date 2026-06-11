@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 1b8290b3e1b7e5f62cda1dd45561bc4e3c09703f
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 81%
+source-wordcount: '4289'
+ht-degree: 71%
 
 ---
 
@@ -31,6 +31,22 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
   </tr>
   <tr>
     <td>
+      <strong>8 juin 2026</strong><br>
+      <em>S’applique à : </em> AEM 6.5.25.0 les déploiements WAR/JEE (y compris AEM Forms sur JEE)<br>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-service-pkg-6.5.25-NPR-44100-B0002.zip">Correctif pour AEM Service Pack 6.5.25.0 (NPR-44100)</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>NPR-44100</b> Après l’installation du pack de services 25.0 d’AEM 6.5 sur des déploiements WAR/JEE, le lot <code>com.adobe.cq.screens.sessions</code> reste à l’état Installé et ne devient jamais Actif.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <strong>18 février 2026</strong><br>
       <em>S’applique à :</em> Service Pack AEM Forms on JEE 6.5.24.0<br>
     </td>
@@ -43,8 +59,8 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-win-weblogic.zip">correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur Weblogic JEE</a></li>
     <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-weblogic.tar.gz">correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur Weblogic JEE</a></li>
     <strong>Websphere:</strong>
-    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">Correctif pour le pack de services AEM 6.5.24.0 sur Windows pour le serveur Webshpere JEE</a></li>
-    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">Correctif pour le pack de services AEM 6.5.24.0 sur Linux pour le serveur Websphere JEE</a></li>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur WebSphere JEE</a></li>
+    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur WebSphere JEE</a></li>
     </ul>
     </td>
     <td>
@@ -166,7 +182,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
     <td>
     <ul>
     <li>Amélioration de la sécurité en remédiant à une vulnérabilité d’exécution de code à distance (RCE) dans Adobe Experience Manager (AEM) Forms. Le problème était lié au mode de développement Struts dans l’interface d’utilisation (UI) d’administration, qui permettait une évaluation arbitraire du langage de navigation objet-graphique (OGNL) via la fonctionnalité de débogage. Ce correctif garantit que le mode de développement Struts est désactivé et que des filtres de sécurité appropriés sont appliqués pour empêcher tout accès non autorisé.</li>
-    <li>Amélioration de la protection contre les vulnérabilités d’entité externe (XXE) XML (Extensible Markup Language) dans le module EDC (Electronic Document Component) d’Adobe Experience Manager (AEM) Forms. Ces vulnérabilités étaient dues à une gestion incorrecte des documents XML sans protection XXE, ce qui pouvait entraîner des lectures de fichiers locaux. Le correctif comprend :
+    <li>Amélioration de la protection contre les vulnérabilités d’entité externe (XXE) XML (Extensible Markup Language) dans le module EDC (Electronic Document Component) de Adobe Experience Manager (AEM) Forms. Ces vulnérabilités étaient dues à une gestion incorrecte des documents XML sans protection XXE, ce qui pouvait entraîner des lectures de fichiers locales. Le correctif comprend :
       <ul>
         <li>La vérification que DocumentBuilderFactory utilisé dans la classe SecurityCheckHandler est configuré pour empêcher les attaques XXE.</li>
         <li>La mise à jour du service web EDC pour gérer les documents XML en toute sécurité, empêchant ainsi tout accès non autorisé aux fichiers locaux.</li>
@@ -192,7 +208,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
     <td>
     <ul>
     <li>Amélioration de la sécurité en remédiant à une vulnérabilité d’exécution de code à distance (RCE) dans Adobe Experience Manager (AEM) Forms. Le problème était lié au mode de développement Struts dans l’interface d’utilisation (UI) d’administration, qui permettait une évaluation arbitraire du langage de navigation objet-graphique (OGNL) via la fonctionnalité de débogage. Ce correctif garantit que le mode de développement Struts est désactivé et que des filtres de sécurité appropriés sont appliqués pour empêcher tout accès non autorisé.</li>
-    <li>Amélioration de la protection contre les vulnérabilités d’entité externe (XXE) XML (Extensible Markup Language) dans le module Document Security d’Adobe Experience Manager (AEM) Forms. Ces vulnérabilités étaient dues à une gestion incorrecte des documents XML sans protection XXE, ce qui pouvait entraîner des lectures de fichiers locaux. Le correctif comprend :
+    <li>Amélioration de la protection contre les vulnérabilités d’entité externe (XXE) XML (Extensible Markup Language) dans le module Document Security du Forms Adobe Experience Manager (AEM). Ces vulnérabilités étaient dues à une gestion incorrecte des documents XML sans protection XXE, ce qui pouvait entraîner des lectures de fichiers locales. Le correctif comprend :
       <ul>
         <li>La vérification que DocumentBuilderFactory utilisé dans la classe SecurityCheckHandler est configuré pour empêcher les attaques XXE.</li>
         <li>Mise à jour du service web Document Security pour gérer les documents XML en toute sécurité, empêchant ainsi tout accès non autorisé aux fichiers locaux.</li>
@@ -262,7 +278,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
      </ul>
      </td>
     <td>
-    <ul><li>Lorsqu’une personne effectue une mise à jour vers le pack de services AEM Forms 20 (6.5.20.0) sur le serveur JEE et génère des PDF à l’aide des services Output, le rendu des PDF pose des problèmes d’accessibilité. (LC-3922112)</li><li>Les PDF balisés générés à l’aide du service Output sur AEM Forms JEE affichent un « avertissement de structure inappropriée ». (LC-3922038)</li><li>Lorsqu’un formulaire est envoyé sur AEM Forms JEE, les instances d’un élément XML répétitif sont supprimées des données. (LC-3922017)</li><li>Lorsqu’une personne utilisant un environnement Linux effectue le rendu d’un formulaire adaptatif (sur JEE) en HTML, le rendu ne s’affiche pas correctement. (LC-3921957)</li><li>Lorsqu’une personne convertit un fichier XTG au format PostScript à l’aide du service Output sur AEM Forms JEE, l’opération échoue avec l’erreur : AEM_OUT_001_003 : exception inattendue : Échec PAExecute : XFA_RENDER_FAILURE. (LC-3921720)</li><li>Après la mise à niveau vers le pack de services AEM Forms 18 (6.5.18.0) sur le serveur JEE, lorsqu’une personne envoie un formulaire, elle ne parvient pas à générer des fichiers HTML5 ou PDF Forms et XMLFM se bloque. (LC-3921718)
+    <ul><li>Lorsqu’une personne effectue une mise à jour vers le pack de services AEM Forms 20 (6.5.20.0) sur le serveur JEE et génère des PDF à l’aide des services Output, le rendu des PDF pose des problèmes d’accessibilité. (LC-3922112)</li><li>Les PDF balisés générés à l’aide du service Output sur AEM Forms JEE affichent un « avertissement de structure inappropriée ». (LC-3922038)</li><li>Lorsqu’un formulaire est envoyé sur AEM Forms JEE, les instances d’un élément XML répétitif sont supprimées des données. (LC-3922017)</li><li>Lorsqu’une personne utilisant un environnement Linux effectue le rendu d’un formulaire adaptatif (sur JEE) en HTML, le rendu ne s’affiche pas correctement. (LC-3921957)</li><li>Lorsqu’une personne convertit un fichier XTG au format PostScript à l’aide du service Output sur AEM Forms JEE, l’opération échoue avec l’erreur : AEM_OUT_001_003 : exception inattendue : Échec PAExecute : XFA_RENDER_FAILURE. (LC-3921720)</li><li>Après la mise à niveau vers le pack de services 18 (6.5.18.0) d’AEM Forms sur le serveur JEE, lorsqu’un utilisateur envoie un formulaire, le rendu d’HTML5 ou de PDF forms échoue et XMLFM se bloque. (LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -278,7 +294,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
      </td>
     <td>
     <ul>
-    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0, le service PaperCapture ne parvient pas à effectuer des opérations OCR (reconnaissance optique de caractères) sur les fichiers PDF. Pour obtenir des instructions sur l’installation, reportez-vous à l’article dépannage <a href="/help/forms/using/papercapture-service-resolution.md"></a>.(CQDOC-21680) </li>
+    <li> Après la mise à niveau vers AEM Forms Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0, le service PaperCapture ne parvient pas à effectuer des opérations OCR (reconnaissance optique de caractères) sur les fichiers PDF. Pour obtenir des instructions d’installation, reportez-vous à l’article <a href="/help/forms/using/papercapture-service-resolution.md"> dépannage </a> (CQDOC-21680). </li>
     </ul>
     </td>    
   </tr>
@@ -291,7 +307,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
      </td>
     <td>
     <ul>
-    <li>Les brouillons de lettres contenant des données XML sont bloqués à l’état de chargement lors de la prévisualisation. Pour les instructions de téléchargement et d’installation du correctif, reportez-vous à la section <a href="#install-hotfix">Télécharger et installer le correctif pour le problème de brouillon de lettre</a>.(FORMS-14521)</li>
+    <li>Les brouillons de lettres contenant des données XML sont bloqués à l’état de chargement lors de la prévisualisation. Pour obtenir des instructions sur le téléchargement et l’installation du correctif, reportez-vous à la section <a href="#install-hotfix"> Télécharger et installer le correctif pour le problème de brouillon de lettre </a>. (FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
@@ -312,7 +328,7 @@ Réduire les vulnérabilités XXE, de configuration et d’exécution de code �
      <li>Lorsqu’un formulaire adaptatif est envoyé d’une instance de publication Adobe Experience Manager vers un workflow Adobe Experience Manager, le workflow ne parvient pas à enregistrer les pièces jointes.  (FORMS-14209) </li>
      <li> Lors de l’installation du pack de services 20 d’AEM Forms 6.5 (package de modules complémentaires d’AEM Forms pour SP20), l’interface d’utilisation (IU) d’AEM Sites présente une dégradation significative des performances.  (FORMS-13791) </li>
      <li>Le service de préremplissage échoue avec une exception de pointeur nulle dans les communications interactives. (CQDOC-21355)</li>
-     <li>Les configurations qui utilisent le service cloud hérité pour Adobe Analytics avec une authentification basée sur les informations d’identification de l’utilisateur ou de l’utilisatrice ne fonctionnent pas correctement, ce qui entraîne l’échec de l’exécution des règles d’analyse. (FORMS-15428)
+     <li>Les configurations utilisant l’ancien service cloud d’Adobe Analytics avec l’authentification basée sur les informations d’identification de l’utilisateur ne fonctionnent pas correctement, ce qui entraîne l’échec de l’exécution des règles d’analyse. (FORMS-15428)
     </ul>
     </td>    
   </tr>
