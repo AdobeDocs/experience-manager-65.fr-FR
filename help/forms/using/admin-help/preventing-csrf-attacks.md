@@ -11,8 +11,8 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Imaginons, par exemple, un scénario où vous êtes connecté(e) à la console d
 
 Autorisez la valeur de référent NULL sur les points de fin SOAP et REST. Autorisez également la valeur de référent NULL sur toutes les pages de connexion URI telles que /adminui et /contentspace, ainsi que leurs ressources mappées correspondantes. Par exemple, la servlet mappée pour /contentspace est /contentspace/faces/jsp/login.jsp ; sa valeur de référent doit pouvoir être NULL. Cette exception est obligatoire uniquement si vous activez le filtrage GET pour votre application web. Vos applications peuvent indiquer s’il convient d’autoriser des référents de valeur NULL Voir « Protection contre les attaques multisites par usurpation de requête (CSRF) » dans [Renforcement et sécurité dʼAEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html).
 
-**Exceptions aux référents autorisés :** les exceptions aux référents autorisés constituent une sous-liste de la liste de référents autorisés, dont les requêtes sont bloquées. Les exceptions aux référents autorisés sont spécifiques à une application web. Si vous souhaitez que certains référents de vos référents autorisés ne soient pas en mesure d’appeler une application web spécifique, vous pouvez les mettre sur une liste bloquée à l’aide des exceptions aux référents autorisés. Les exceptions aux référents autorisés peuvent être spécifiées dans le fichier web.xml de votre application (voir « Protection contre les attaques multisites par usurpation de requête (CSRF) » dans Renforcement et sécurité dʼAEM Forms sur la page Aide et tutoriels).
+**Exceptions aux référents autorisés :** les exceptions aux référents autorisés constituent une sous-liste de la liste de référents autorisés, dont les requêtes sont bloquées. Les exceptions aux référents autorisés sont spécifiques à une application web. Si vous souhaitez qu’un sous-ensemble des référents autorisés ne soient pas en mesure d’appeler une application web spécifique, vous pouvez les placer sur la liste bloquée à l’aide des exceptions aux référents autorisés. Les exceptions aux référents autorisés peuvent être spécifiées dans le fichier web.xml de votre application (voir « Protection contre les attaques multisites par usurpation de requête (CSRF) » dans Renforcement et sécurité dʼAEM Forms sur la page Aide et tutoriels).
 
 ## Fonctionnement des référents autorisés {#how-allowed-referers-work}
 
@@ -68,7 +68,7 @@ AEM Forms offre une option de filtrage des référents aidant à prévenir les 
 
 Lorsque vous exécutez Configuration Manager, l’hôte par défaut et l’adresse IP ou le serveur Forms sont ajoutés à la liste de référents autorisés. Vous pouvez modifier cette liste dans la console d’administration.
 
-1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les URL des référents autorisés. La liste de référents autorisés s’affiche en bas de la page.
+1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les URL de référent autorisées. La liste de référents autorisés s’affiche au bas de la page.
 1. Pour ajouter un référent autorisé :
 
    * Saisissez un nom d’hôte ou une adresse IP dans le champ Référents autorisés. Pour ajouter plusieurs référents autorisés en même temps, saisissez chaque nom d’hôte ou adresse IP sur une nouvelle ligne.

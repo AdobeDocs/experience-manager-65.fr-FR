@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 100%
+source-wordcount: '2139'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Le thème Ultramarine-Accessible est un thème de référence. Il permet de mont
 
 Vous devez vous focaliser sur quatre aspects clés : navigation au clavier, contraste des couleurs, texte secondaire éloquent pour les images et libellés appropriés pour les contrôles de formulaires, afin de rendre un formulaire adaptatif accessible. Pour rendre vos formulaires adaptatifs existants accessibles, procédez comme suit :
 
-### 1. Appliquez un thème accessible et effectuer des corrections supplémentaires.
+### &#x200B;1. Appliquer un thème accessible et effectuer des corrections supplémentaires
 
 Appliquez le thème Ultramarine-Accessible à votre formulaire adaptatif existant. Pour appliquer le thème :
 
@@ -97,7 +97,7 @@ Après avoir appliqué un thème accessible, effectuez les corrections suppléme
 
 1. Supprimez les champs de signature tactile, le cas échéant, dans le formulaire adaptatif. Configurez le formulaire adaptatif de sorte qu’il utilise Adobe Sign pour une expérience de signature numérique transparente.
 
-### 2. Fournissez des libellés appropriés pour les commandes de formulaire {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Fourniture de libellés appropriés pour les commandes de formulaire {#provide-proper-labels-for-form-controls}
 
 Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible sur des lecteurs d’écran, le libellé est associé, par programmation, à un composant de formulaire. La commande de formulaire peut également être assortie d’informations d’accessibilité supplémentaires.
 
@@ -127,7 +127,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 >* Le bouton radio et la case à cocher ne possèdent que deux options d’accessibilité : Texte personnalisé et Titre.
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
 
-### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
+### &#x200B;3. Fourniture d’équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
 Les images peuvent aider à améliorer la compréhension pour certaines personnes utilisatrices. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
 
@@ -137,7 +137,7 @@ Sélectionnez un composant d’image, puis ![cmppr](assets/cmppr.png). Dans la b
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
-### 4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
+### &#x200B;4. Fournir un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
 
 Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les créateurs et créatrices de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour certaines personnes en situation de handicap.
 
@@ -147,7 +147,7 @@ Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par d
 
 Pour plus d’informations sur la modification du contraste de couleur et du thème des formulaires adaptatifs, reportez-vous à [Création de thèmes personnalisés pour les formulaires adaptatifs](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
-### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certaines personnes ayant une mobilité réduite ou malvoyantes sont parfois contraintes de n’utiliser que le clavier. De plus, de nombreuses personnes préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs et utilisatrices.
 

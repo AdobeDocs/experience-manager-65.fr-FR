@@ -10,9 +10,9 @@ exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '7415'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '7478'
+ht-degree: 98%
 
 ---
 
@@ -93,19 +93,19 @@ Les paramètres de PDF déterminent précisément le mode de conversion des fich
 1. Cliquez sur Nouveau ou sur le nom d’un paramètre.
 1. Sur la page Nouveau/Modifier le paramètre Adobe PDF, renseignez les informations requises dans les sections suivantes :
 
-[Options générales](configuring-pdf-settings.md#general-options)
+   [Options générales](configuring-pdf-settings.md#general-options)
 
-[Options relatives aux images](configuring-pdf-settings.md#images-options)
+   [Options relatives aux images](configuring-pdf-settings.md#images-options)
 
-[Options relatives aux polices](configuring-pdf-settings.md#fonts-options)
+   [Options relatives aux polices](configuring-pdf-settings.md#fonts-options)
 
-[Options relatives aux couleurs](configuring-pdf-settings.md#color-options)
+   [Options relatives aux couleurs](configuring-pdf-settings.md#color-options)
 
-[Options avancées](configuring-pdf-settings.md#advanced-options)
+   [Options avancées](configuring-pdf-settings.md#advanced-options)
 
-[Options de rapport et de conformité aux normes](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Options de rapport et de conformité aux normes](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Options d’affichage initial](configuring-pdf-settings.md#initial-view-options)
+   [Options d’affichage initial](configuring-pdf-settings.md#initial-view-options)
 
    Pour accéder à une autre section, cliquez sur son lien sur la page web ou utilisez les boutons Suivant ou Précédent.
 
@@ -230,7 +230,7 @@ Ces options permettent de configurer les images monochromes, en niveaux de gris 
 
 **Sous-échantilloner à :** sélectionne un pixel au centre de la zone d’échantillonnage et remplace l’ensemble de la zone par ce pixel à la résolution définie. Le sous-échantillonnage réduit considérablement le temps de conversion par rapport à l’échantillonnage classique, mais il produit également des images moins lisses et continues.
 
-Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous n’alliez pas au-dessous de ce paramètre de résolution recommandé, les images ne contenant aucune ligne droite, aucun schéma géométrique ni aucun schéma répété ne sont pas affectées par une résolution plus faible.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
+Le paramètre de résolution pour la couleur et les niveaux de gris doit être 1,5 à 2 fois le lignage de trame auquel le fichier doit être imprimé. (À condition que vous ne soyez pas en dessous de ce paramètre de résolution recommandé, les images qui ne contiennent pas de lignes droites, ou de motifs géométriques ou répétitifs, ne sont pas affectées par une résolution inférieure.) La résolution des images monochromes doit être identique à celle du périphérique de sortie. Toutefois, le fait d’enregistrer une image monochrome à une résolution supérieure à 1 500 dpi augmente la taille du fichier sans améliorer significativement la qualité de l’image.
 
 Déterminez également si les utilisateurs et utilisatrices doivent agrandir une page. Par exemple, si vous créez un document PDF d’une carte, envisagez d’utiliser une résolution d’image plus élevée afin que les utilisateurs et utilisatrices puissent zoomer sur cette carte.
 
@@ -295,9 +295,10 @@ Les options relatives aux polices permettent de définir les polices à incorpor
 >
 >Lorsque vous combinez des fichiers PDF avec le même sous-ensemble de polices, PDF Generator tente de combiner les sous-ensembles de polices.
 
-**Intégrer toutes les polices :** intègre toutes les polices utilisées dans le fichier. L’incorporation des polices est nécessaire à la conformité avec la norme PDF/X.
+**Incorporer toutes les polices** : incorpore toutes les polices utilisées dans le fichier. L’incorporation des polices est nécessaire à la conformité avec la norme PDF/X.
 
-**Jeux partiels de polices incorporées lorsque le pourcentage de caractères utilisés est inférieur à :** si vous sélectionnez cette option, indiquez un pourcentage seuil pour intégrer uniquement un sous-ensemble de polices. Par exemple, si le seuil est de 35 et que moins de 35 % des caractères sont utilisés, PDF Generator incorpore uniquement ces caractères. Seules les polices avec des bits d’autorisation appropriés sont incorporées.
+**Sous-Ensemble De Polices Incorporées Lorsque Le Pourcentage De Caractères Utilisés
+Est inférieur à :** si vous sélectionnez cette option, indiquez un pourcentage seuil pour n’incorporer qu’un sous-ensemble des polices. Par exemple, si le seuil est de 35 et que moins de 35 % des caractères sont utilisés, PDF Generator incorpore uniquement ces caractères. Seules les polices avec des bits d’autorisation appropriés sont incorporées.
 
 **Lorsque l’incorporation échoue :** définit la manière dont PDF Generator doit répondre s’il ne parvient pas à trouver une police à incorporer lors du traitement d’un fichier. Vous pouvez demander à PDF Generator d’ignorer la demande et de remplacer la police, de vous avertir et de remplacer la police ou d’annuler le traitement du travail en cours.
 
@@ -339,8 +340,8 @@ Si vous avez sélectionné Aucune pour Fichier de paramètres, la zone Politique
 
 **Ne baliser que les images pour Color Management :** incorpore des profils ICC dans les images uniquement et non dans les textes ou les graphiques lors de la conversion des fichiers si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3). Cette option empêche le texte noir de subir une variation chromatique. Cependant, les espaces colorimétriques dépendants du périphérique des images (RVB, Niveaux de gris et CMJN) sont convertis en espaces colorimétriques de référence (CalRVB, CalGray et LAB). Le texte et les graphiques ne sont pas convertis.
 
-**Convertit toutes les couleurs en sRGB ou Convertir toutes les couleurs en 
-CMJN :** calibre la couleur du fichier en la rendant indépendante de l’appareil, comme pour l’option Baliser tout pour Color Management. Si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3) ou version ultérieure et que vous effectuez une conversion en sRVB, les images CMJN et RGB sont converties en sRVB.
+**Convertir toutes les couleurs en sRGB ou Convertir toutes les couleurs en
+CMJN :** calibre la couleur du fichier en la rendant indépendante de l’appareil, comme pour l’option Baliser tout pour Color Management. Si vous avez sélectionné la compatibilité Acrobat 4 (PDF 1.3) ou version ultérieure et que vous effectuez une conversion en sRVB, les images CMJN et RGB sont converties en sRVB.
 
 Quelle que soit l’option de compatibilité choisie, les images en niveaux de gris ne sont pas modifiées. Cela entraîne habituellement une réduction du volume et une augmentation de la vitesse d’affichage des fichiers PDF, car la description des images RVB nécessite une quantité d’informations moins importante que celle des images CMJN. RVB est l’espace colorimétrique natif utilisé sur les écrans, c’est pourquoi aucune conversion de la couleur n’est nécessaire lors de l’affichage, ce qui contribue à accélérer l’affichage en ligne. Cette option est recommandée si le fichier PDF est utilisé en ligne ou avec des imprimantes à faible résolution.
 
@@ -364,7 +365,7 @@ Quelle que soit l’option de compatibilité choisie, les images en niveaux de g
 
 Pour l’ensemble des valeurs de la liste se trouvant sous Politiques de gestion des couleurs, autres que Reproduire les couleurs, sélectionnez les options répertoriées dans les listes situées dans la zone Espace de travail afin de spécifier les profils ICC à utiliser pour la définition et l’étalonnage des espaces colorimétriques en niveaux de gris, RVB et CMJN des fichiers PDF convertis. Voici les options de disponibles :
 
-**Gris :** définit l’espace colorimétrique de toutes les images en niveaux de gris des fichiers. Cette option est disponible uniquement si vous choisissez Référencer les couleurs ou Référencer les images uniquement. Le profil ICC par défaut pour les images en niveaux de gris est Gamma gris 2.2. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en niveaux de gris.
+**Gris :** définit l’espace colorimétrique de toutes les images en niveaux de gris des fichiers. Cette option est disponible uniquement si vous choisissez Référencer les couleurs ou Référencer les images uniquement. Le profil ICC par défaut pour les images grises est Gray Gamma 2.2. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en niveaux de gris.
 
 **RVB :** définit l’espace colorimétrique de toutes les images en RVB des fichiers. La valeur par défaut sRVB IEC61966-2.1 est généralement recommandée, car ce standard est en passe de devenir la référence et de nombreux périphériques de sortie le prennent en charge. Vous pouvez également sélectionner Aucun pour empêcher la conversion des images en RVB.
 

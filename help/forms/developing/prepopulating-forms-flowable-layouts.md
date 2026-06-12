@@ -1,6 +1,6 @@
 ---
 title: Préremplir des formulaires avec des dispositions fluides
-description: Préremplissez des formulaires avec une disposition fluide pour montrer des données aux utilisateurs dans un formulaire rendu à l’aide de l’API Java et de l’API Web Service.
+description: Préremplissez des formulaires avec une disposition fluide pour présenter des données aux utilisateurs et utilisatrices dans un formulaire rendu à l’aide de l’API Java et de l’API Web Service.
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3478'
-ht-degree: 100%
+source-wordcount: '3513'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Préremplir des formulaires avec des dispositions fluides {#prepopulating-forms-with-flowable-layouts2}
 
-Le préremplissage de formulaires montre des données aux utilisateurs dans un formulaire rendu. Supposons, par exemple, qu’un utilisateur se connecte à un site web avec un nom d’utilisateur et un mot de passe. Si l’authentification est réussie, l’application cliente interroge une base de données pour obtenir des informations sur l’utilisateur. Les données sont fusionnées dans le formulaire, puis le formulaire est rendu à l’utilisateur. Par conséquent, l’utilisateur peut visualiser les données personnalisées contenues dans le formulaire.
+Le préremplissage de formulaires présente des données aux utilisateurs et utilisatrices dans un formulaire rendu. Supposons, par exemple, qu’un utilisateur se connecte à un site web avec un nom d’utilisateur et un mot de passe. Si l’authentification est réussie, l’application cliente interroge une base de données pour obtenir des informations sur l’utilisateur. Les données sont fusionnées dans le formulaire, puis le formulaire est rendu à l’utilisateur. Par conséquent, l’utilisateur peut visualiser les données personnalisées contenues dans le formulaire.
 
 Le préremplissage d’un formulaire présente les avantages suivants :
 
@@ -55,7 +55,7 @@ Une fois que vous avez prérempli le formulaire de confirmation avec cette sourc
 
 ### Préremplir des formulaires avec des dispositions fluides {#prepopulating_forms_with_flowable_layouts-1}
 
-Les formulaires avec dispositions fluides servent à montrer une quantité indéterminée de données aux utilisateurs. Étant donné que la disposition du formulaire s’ajuste automatiquement à la quantité de données fusionnées, il n’est pas nécessaire de prédéfinir une disposition ou un nombre fixe de pages pour le formulaire, comme c’est le cas pour un formulaire avec une disposition fixe.
+Les formulaires avec dispositions fluides servent à présenter une quantité indéterminée de données aux utilisateurs et utilisatrices. Étant donné que la disposition du formulaire s’ajuste automatiquement à la quantité de données fusionnées, il n’est pas nécessaire de prédéfinir une disposition ou un nombre fixe de pages pour le formulaire, comme c’est le cas pour un formulaire avec une disposition fixe.
 
 Un formulaire est généralement rempli avec des données obtenues lors de l’exécution. Par conséquent, vous pouvez préremplir un formulaire en créant une source de données XML en mémoire et en plaçant les données directement dans la source de données XML en mémoire.
 
@@ -75,7 +75,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Un utilisateur achète des articles dans une boutique en ligne. </p></td>
+   <td><p>Un utilisateur ou une utilisatrice achète des articles dans une boutique en ligne. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
@@ -87,7 +87,7 @@ Le tableau suivant décrit les étapes de ce diagramme.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Le formulaire de bon de commande est rendu au navigateur web client. </p></td>
+   <td><p>Le formulaire de bon de commande est affiché dans le navigateur web client. </p></td>
   </tr>
  </tbody>
 </table>
@@ -200,11 +200,11 @@ Pour préremplir un formulaire avec une disposition fluide, procédez comme suit
 1. Convertissez la source de données XML.
 1. Générez un formulaire prérempli.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -262,7 +262,7 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de source de données XML, ces champs figurent dans la section A (Consultez la section [Présentation des sous-groupes de données](#understanding-data-subgroups)).
+   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de source de données XML, ces champs figurent dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups).)
    * Créez l’élément de détail de la source de données XML en appelant la méthode `createElement` de lʼobjet `Document`. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ajoutez ensuite l’élément de détail à l’élément racine en appelant la méthode `appendChild` de lʼobjet `root` et transmettez l’objet d’élément de détail comme argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -280,7 +280,7 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
    * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
-   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
+   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`.
    * Renseignez l’objet `ByteArrayOutputStream` Java en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer` et en transmettant les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
    * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
    * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
@@ -290,11 +290,11 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
-   * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution.
-   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Veillez à utiliser l’objet `com.adobe.idp.Document` créé aux étapes 1 et 2.
+   * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution.
+   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
@@ -318,7 +318,7 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
 1. Inclure les fichiers du projet
 
-   * Créez des classes proxy Java qui utilisent le WSDL du service Forms. (Voir [Créer des classes proxy Java à l’aide d’Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * Créez des classes proxy Java qui utilisent le service WSDL de Forms. (Voir [Créer des classes proxy Java à l’aide d’Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
    * Incluez les classes proxy Java dans le chemin d’accès de classe.
 
 1. Créer une source de données XML en mémoire
@@ -334,11 +334,11 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la méthode `createElement` de lʼobjet `Document` et transmettez une valeur de chaîne qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Définissez ensuite une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de lʼobjet `Document` comme argument. Définissez une valeur de chaîne qui apparaîtra comme la valeur de lʼélément enfant. Enfin, ajoutez lʼélément enfant à lʼélément dʼen-tête en appelant la méthode `appendChild` de lʼélément dʼen-tête et en transmettant lʼobjet élément enfant sous forme dʼargument. Les lignes de code suivantes illustrent cette logique dʼapplication :
+   * Créez un élément enfant qui appartient à l’élément d’en-tête en appelant la méthode `createElement` de lʼobjet `Document` et transmettez une valeur de chaîne qui représente le nom de l’élément. Convertissez la valeur de retour en `Element`. Définissez ensuite une valeur pour l’élément enfant en appelant sa méthode `appendChild` et transmettez la méthode `createTextNode` de lʼobjet `Document` comme argument. Définissez une valeur de chaîne qui apparaîtra comme la valeur de lʼélément enfant. Enfin, ajoutez lʼélément enfant à lʼélément dʼen-tête en appelant la méthode `appendChild` de lʼélément dʼen-tête et en transmettant lʼobjet d’élément enfant sous forme dʼargument. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Ajoutez tous les autres éléments à lʼélément dʼen-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de la source de données XML, ces champs figurent dans la section A. Consultez la section [Comprendre les sous-groupes de données](#understanding-data-subgroups)).
+   * Ajoutez tous les éléments restants à l’élément d’en-tête en répétant la dernière sous-étape pour chaque champ apparaissant dans la partie statique du formulaire (dans le diagramme de source de données XML, ces champs figurent dans la section A. (Voir [Présentation des sous-groupes de données](#understanding-data-subgroups).)
    * Créez l’élément de détail de la source de données XML en appelant la méthode `createElement` de lʼobjet `Document`. Transmettez une valeur de chaîne représentant le nom de l’élément à la méthode `createElement`. Convertissez la valeur de retour en `Element`. Ajoutez ensuite l’élément de détail à l’élément racine en appelant la méthode `appendChild` de lʼobjet `root` et transmettez l’objet d’élément de détail comme argument. Les éléments XML ajoutés à l’élément de détail correspondent à la partie dynamique du formulaire. Les lignes de code suivantes illustrent cette logique dʼapplication :
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -356,7 +356,7 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
    * Créez un objet `Transformer` en appelant la méthode `newTransformer` de l’objet `TransformerFactory`.
    * Créez un objet `ByteArrayOutputStream` en utilisant son constructeur.
    * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `org.w3c.dom.Document` qui a été créé à l’étape 1.
-   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`. 
+   * Créez un objet `javax.xml.transform.dom.DOMSource` en utilisant son constructeur et en transmettant l’objet `ByteArrayOutputStream`.
    * Renseignez l’objet `ByteArrayOutputStream` Java en appelant la méthode `transform` de l’objet `javax.xml.transform.Transformer` et en transmettant les objets `javax.xml.transform.dom.DOMSource` et `javax.xml.transform.stream.StreamResult`.
    * Créez un tableau d’octets et affectez la taille de l’objet `ByteArrayOutputStream` au tableau d’octets.
    * Renseignez le tableau dʼoctets en appelant la méthode `toByteArray` de lʼobjet `ByteArrayOutputStream`.
@@ -366,15 +366,15 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
 
    Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
-   * Un objet `BLOB` qui contient des données à fusionner avec le formulaire. Veillez à utiliser lʼobjet `BLOB` créé aux étapes 1 et 2.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Veillez à utiliser lʼobjet `BLOB` créé aux étapes 1 et 2.
    * Un objet `PDFFormRenderSpecc` qui stocke les options dʼexécution. Pour plus dʼinformations, consultez la section [Référence de lʼAPI AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Un objet `URLSpec` qui contient des valeurs URI qui sont requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Il permet de stocker le formulaire PDF rendu.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur du paramètre régional).
-   * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur des paramètres régionaux).
+   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contient les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
@@ -384,7 +384,7 @@ Pour préremplir un formulaire avec une disposition fluide à l’aide de l’AP
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
    >[!NOTE]
    >

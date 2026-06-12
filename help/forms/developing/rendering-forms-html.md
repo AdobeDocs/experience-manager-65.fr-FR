@@ -1,6 +1,6 @@
 ---
 title: Effectuer le rendu de formulaires en HTML
-description: Utilisez le service Forms pour effectuer le rendu des formulaires en format HTML en réponse à une requête HTTP d’un navigateur web. Vous pouvez utiliser l’API Java™ et l’API de service web pour effectuer le rendu des formulaires au format HTML.
+description: Utilisez le service Forms pour effectuer le rendu des formulaires en format HTML en réponse à une requête HTTP d’un navigateur web. Vous pouvez utiliser l’API Java&trade; et l’API de service web pour effectuer le rendu des formulaires en tant qu’HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '4099'
-ht-degree: 100%
+source-wordcount: '4149'
+ht-degree: 96%
 
 ---
 
@@ -53,7 +53,7 @@ Lorsqu’une conception de formulaire est générée sous forme de formulaire HT
 
 Lorsque les conceptions de formulaire sont générées sous forme de formulaires HTML, les panneaux ne sont pas limités à une taille de page particulière. Si vous disposez de sous-formulaires dynamiques, ils doivent être imbriqués dans le sous-formulaire de panneau. Les sous-formulaires dynamiques peuvent s’étendre sur un nombre infini de pages HTML.
 
-Lorsqu’un formulaire est rendu en format HTML, les formats de page (requis pour paginer les formulaires rendus en PDF) n’ont aucune signification. Étant donné qu’un formulaire avec disposition fluide peut atteindre un nombre infini de pages HTML, il est important d’éviter les pieds de page sur le gabarit. Un pied de page situé sous la zone de contenu d’un gabarit peut remplacer le contenu HTML qui s’étend au-delà d’une limite de page.
+Lorsqu’un formulaire est rendu au format HTML, les formats de page (requis pour paginer les formulaires rendus en PDF) n’ont aucune signification. Étant donné qu’un formulaire avec disposition fluide peut atteindre un nombre infini de pages HTML, il est important d’éviter les pieds de page sur le gabarit. Un pied de page situé sous la zone de contenu d’un gabarit peut remplacer le contenu HTML qui s’étend au-delà d’une limite de page.
 
 Vous devez explicitement passer d’un panneau à l’autre à l’aide des méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Vous pouvez modifier les pages en envoyant un formulaire au service Forms et en demandant au service Forms de le rendre à nouveau sur l’appareil client, généralement un navigateur web.
 
@@ -75,7 +75,7 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 
 **`.fsc-ds-popup-bg`** : cette propriété de feuille de style n’est pas utilisée.
 
-**.`fsc-ds-popup-btn`** : cette propriété de feuille de style n’est pas utilisée.
+**.`fsc-ds-popup-btn`** : cette propriété de feuille de style n&#39;est pas utilisée.
 
 ## Exécuter des scripts {#running-scripts}
 
@@ -83,13 +83,13 @@ Un auteur de formulaire indique si un script s’exécute sur le serveur ou sur 
 
 Le service Forms peut exécuter des scripts pendant la génération du formulaire. Par conséquent, vous pouvez préremplir un formulaire avec des données en vous connectant à une base de données ou à des services web qui pourraient ne pas être disponibles côté client. Vous pouvez également définir un événement `Click` de bouton à exécuter sur le serveur afin que le client puisse envoyer et reprendre des données au serveur. Cela permet au client d’exécuter des scripts qui peuvent nécessiter des ressources serveur, telles qu’une base de données d’entreprise, lorsqu’un utilisateur interagit avec un formulaire. Pour les formulaires HTML, les scripts formcalc ne peuvent être exécutés que sur le serveur. Par conséquent, vous devez marquer ces scripts pour qu’ils s’exécutent sur `server` ou `both`.
 
-Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneaux) en appelant les méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Ce script est placé dans l’événement `Click` du bouton et l’attribut `runAt` est défini sur `Both`. Le motif de votre choix de `Both` permet à Adobe Reader ou Acrobat (pour les formulaires rendus en format PDF) de modifier les pages sans passer par le serveur et les formulaires HTML peuvent modifier les pages en envoyant et en reprenant les données au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu en format HTML avec la nouvelle page affichée.
+Vous pouvez concevoir des formulaires qui se déplacent entre les pages (panneaux) en appelant les méthodes `xfa.host.pageUp` et `xfa.host.pageDown`. Ce script est placé dans l’événement `Click` du bouton et l’attribut `runAt` est défini sur `Both`. Le motif de votre choix de `Both` permet à Adobe Reader ou Acrobat (pour les formulaires rendus au format PDF) de modifier les pages sans passer par le serveur et les formulaires HTML peuvent modifier les pages en envoyant et en reprenant les données au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu en format HTML avec la nouvelle page affichée.
 
 Il est recommandé de ne pas donner les mêmes noms aux variables de script et aux champs de formulaire, par exemple élément. Certains navigateurs web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Une bonne pratique consiste à donner des noms différents aux champs de formulaire et aux variables de script.
 
-Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalités de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est rendu), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate au lieu de form:readyevent.
+Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalités de navigation de page et des scripts de formulaire (supposons, par exemple, qu’un script récupère les données de champ d’une base de données chaque fois que le formulaire est rendu), assurez-vous que le script de formulaire se trouve dans l’événement form:calculate et non dans le formulaire:readyevent.
 
-Les scripts de formulaire situés dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
+Les scripts de formulaire se trouvant dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
 
 >[!NOTE]
 >
@@ -186,7 +186,7 @@ Vous pouvez générer un formulaire HTML complet conforme aux directives d’acc
 
 ## Valider des données de formulaire {#validating-form-data}
 
-Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à un champ `Date/Time` qui se trouve dans une conception de formulaire générée sous la forme HTML, il ne fonctionne pas correctement, même si la date est saisie correctement. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
+Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à un champ `Date/Time` qui se trouve dans une conception de formulaire générée en tant que formulaire HTML, il ne fonctionne pas correctement, même si la date est saisie correctement. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
 
 >[!NOTE]
 >
@@ -220,19 +220,19 @@ Vous définissez les options d’exécution HTML lors de la génération d’un 
 
 Lorsqu’une barre d’outils HTML s’affiche sur un formulaire HTML, l’utilisateur ou l’utilisatrice peut sélectionner un maximum de dix fichiers à envoyer avec les données de formulaire. Une fois les fichiers envoyés, le service Forms peut les récupérer.
 
-Lors du rendu d’un formulaire en tant que HTML, vous pouvez spécifier une valeur agent-utilisateur. Une valeur agent-utilisateur fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative que vous pouvez transmettre à une valeur de chaîne vide. Le rendu d’un formulaire au format HTML à l’aide du démarrage rapide de l’API Java indique comment obtenir une valeur d’agent utilisateur et s’en servir pour générer un formulaire au format HTML.
+Lors du rendu d’un formulaire en tant que HTML, vous pouvez spécifier une valeur agent-utilisateur. Une valeur agent-utilisateur fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative que vous pouvez transmettre à une valeur de chaîne vide. Le rendu d’un formulaire HTML à l’aide du démarrage rapide de l’API Java indique comment obtenir une valeur d’agent utilisateur et s’en servir pour générer un formulaire au format HTML.
 
 Les URL HTTP où les données du formulaire sont envoyées peuvent être spécifiées en définissant l’URL cible à l’aide de l’API client du service Forms ou peuvent être spécifiées dans le bouton Envoyer contenu dans la conception de formulaire XDP. Si l’URL cible est spécifiée dans la conception de formulaire, ne définissez pas de valeur à l’aide de l’API client du service Forms.
 
 >[!NOTE]
 >
->Le rendu d’un formulaire de HTML avec une barre d’outils est facultatif.
+>Le rendu d’un formulaire HTML avec une barre d’outils est facultatif.
 
 >[!NOTE]
 >
 >Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de barre d’outils au formulaire.
 
-**Rendre un formulaire au format HTML**
+**Rendre un formulaire HTML**
 
 Pour effectuer le rendu d’un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée en tant que fichier XDP. Sélectionnez un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
@@ -262,7 +262,7 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 ## Rendre un formulaire au format HTML à l’aide de l’API Java {#render-a-form-as-html-using-the-java-api}
 
-Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
+Renvoyez un formulaire HTML à l’aide de l’API Forms (Java) :
 
 1. Inclure les fichiers du projet
 
@@ -293,7 +293,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
    * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * L’objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Une valeur string qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Objet `URLSpec` stockant les valeurs URI requises pour générer un formulaire au format HTML.
+   * Objet `URLSpec` stockant les valeurs URI requises pour générer un formulaire HTML.
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `(Deprecated) renderHTMLForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire pouvant être écrit dans le navigateur web client.
@@ -350,7 +350,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
    * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
    * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplir des formulaires avec des mises en page modulables](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * Objet `HTMLRenderSpec` stockant les options d’exécution HTML.
-   * Valeur de chaîne spécifiant la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
+   * Une valeur string qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Objet `URLSpec` stockant les valeurs URI requises pour générer un formulaire HTML. (Voir [Spécifier des valeurs URI](/help/forms/developing/rendering-interactive-pdf-forms.md).)
    * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire. (Voir [Joindre des fichiers au formulaire](/help/forms/developing/rendering-interactive-pdf-forms.md).)
    * Objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. La valeur de ce paramètre enregistre le formulaire rendu.
@@ -370,7 +370,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

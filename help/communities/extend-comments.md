@@ -1,6 +1,6 @@
 ---
-title: Extension du composant Commentaires
-description: Étendre le composant Commentaires afin de modifier son apparence ou son comportement pour des utilisations spécifiques
+title: Composant Étendre les commentaires
+description: Étendez le composant Commentaires pour modifier son apparence ou son comportement pour des utilisations spécifiques
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -16,26 +16,26 @@ ht-degree: 0%
 
 ---
 
-# Extension du composant Commentaires  {#extend-comments-component}
+# Composant Étendre les commentaires  {#extend-comments-component}
 
-L’intention de [étendre](client-customize.md#extensions) un composant par défaut est de modifier l’apparence ou le comportement d’un composant pour des utilisations spécifiques.
+L’objectif de l’extension [extension](client-customize.md#extensions) d’un composant par défaut est de modifier l’aspect ou le comportement d’un composant pour des utilisations spécifiques.
 
-Le chemin d’accès au composant est unique et référence le composant par défaut comme type de super-ressource. Il y a moins de risque, car la portée est limitée par rapport à la portée globale d’une superposition de composant.
+Le chemin d’accès au composant est unique et fait référence au composant par défaut en tant que type de super ressource. Le risque est moindre car la portée est limitée par rapport à la portée globale d’une superposition de composants.
 
 >[!NOTE]
 >
->L’extension d’un composant [superposé](client-customize.md#overlays) n’est pas prise en charge.
+>L’extension d’un composant [recouvert](client-customize.md#overlays) n’est pas prise en charge.
 
 ## Exemple {#example}
 
-Supposons que l’en-tête du composant de commentaire s’affiche différemment sur un site de l’instance AEM, tout en s’affichant avec l’affichage par défaut sur un autre site. Au lieu de superposer le commentaire par défaut, qui modifie le composant de commentaire pour toutes les instances, une meilleure solution consiste à s’assurer que plusieurs composants de commentaire sont disponibles pour utilisation sur différents sites.
+Supposons que l’en-tête du composant Commentaire doive s’afficher avec une autre apparence sur un site de l’instance AEM, tout en s’affichant avec l’affichage par défaut sur un autre site. Au lieu de remplacer le commentaire par défaut, ce qui modifie le composant de commentaire pour toutes les instances, une meilleure solution consiste à s’assurer que plusieurs composants de commentaire sont disponibles pour une utilisation sur différents sites.
 
-Pour mettre en oeuvre cette solution, créez un composant qui étend (remplace) le composant existant et modifiez le script Handlebars. La zone du site qui utilise les nouveaux commentaires peut utiliser le commentaire étendu, tandis que les sites qui utilisent l’aspect par défaut restent inchangés.
+Pour implémenter cette solution, créez un composant qui étend (remplace) le composant existant et modifiez le script Handlebars. La zone du site qui utilise les nouveaux commentaires peut utiliser le commentaire étendu, tandis que les sites qui utilisent l&#39;apparence par défaut ne sont pas affectés.
 
-Le composant de commentaire est en fait l’un des deux composants qui composent le système de commentaires. Il existe donc deux composants à étendre : *comments* et *comment*. Le script à modifier se trouve dans le fichier `header.hbs` du composant *comment*, tandis que le composant parent *comments* (le système de commentaires) est ce qu’un auteur ajoute réellement à la page.
+Le composant « commentaire » est en fait l’un des deux composants qui composent le système de commentaires. Il existe donc deux composants à étendre : *commentaires* et *commentaire*. Le script à modifier se trouve dans le fichier `header.hbs` du composant *comment*, tandis que le composant parent *comments* (le système de commentaires) est ce qu’un auteur ajoute réellement à la page.
 
-Pour étendre les commentaires, vous devez :
+Pour étendre les commentaires, vous devez effectuer les opérations suivantes :
 
 1. [Création des composants](extend-create-components.md)
-1. [Ajouter un commentaire à un exemple de page](extend-sample-page.md)
-1. [Modification de l’aspect](extend-alter-appearance.md)
+1. [Ajouter un commentaire à l’exemple de page](extend-sample-page.md)
+1. [Modifier l’apparence](extend-alter-appearance.md)

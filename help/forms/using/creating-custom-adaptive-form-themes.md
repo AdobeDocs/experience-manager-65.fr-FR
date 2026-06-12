@@ -10,8 +10,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -41,10 +41,10 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 >
 >La procédure suivante est décrite avec des exemples de noms d’objets AEM comme les nœuds, les propriétés et les dossiers.
 >
->Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
+>Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant :
 
-![Aperçu d’un formulaire adaptatif avec thème Forêt](assets/thumbnail.png)
-**Figure :** *Exemple de thème Forêt*
+![Instantané de formulaire adaptatif avec thème Forêt](assets/thumbnail.png)
+**Image :** *Exemple de thème Forêt*
 
 1. Créez un nœud de type `cq:ClientLibraryFolder` sous le nœud `/apps`.
 
@@ -118,7 +118,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
 
-   Exemple de définition de mixin : 
+   Exemple de définition de mixin :
 
    ```css
    .rounded-corners (@radius) {
@@ -205,7 +205,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Vou
 
 ## Pour utiliser un thème dans un formulaire adaptatif {#to-use-a-theme-in-an-adaptive-form}
 
-Après avoir créé un thème de formulaire adaptatif, effectuez les étapes suivantes pour utiliser ce thème dans un formulaire adaptatif : 
+Après avoir créé un thème de formulaire adaptatif, effectuez les étapes suivantes pour utiliser ce thème dans un formulaire adaptatif :
 
 1. Pour inclure le thème créé dans [Création d’un thème de formulaire adaptatif](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), créez une page personnalisée de type `cq:Component`.
 
@@ -228,7 +228,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    1. **Facultatif** : dans la page personnalisée, remplacez les fichiers header.jsp, footer.jsp, et body.jsp le cas échéant.
 
-1. Créez un modèle personnalisé (par exemple, `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le fichier jcr:content désigne la page personnalisée créée à l’étape précédente (par exemple, `myAfCustomizations/myAfPages/forestPage)`.
+1. Créez un modèle personnalisé (par exemple : `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le jcr:content pointe vers la page personnalisée créée à l’étape précédente (par exemple : `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Instantané du référentiel CRX](assets/2-1.png)
 

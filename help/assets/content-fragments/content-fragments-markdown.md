@@ -6,9 +6,9 @@ role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 2809ae0f2c712ce8e6d94e18211649f2fa6ab8b4
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 
@@ -92,7 +92,7 @@ Par exemple, les images intégrées présentent la syntaxe suivante :
 
 La syntaxe comprend :
 
-* Un point d’exclamation : !;
+* Un point d’exclamation : !;
 * suivi d’un ensemble de crochets, contenant le texte d’attribut alternatif de l’image ;
 * suivi d’un ensemble de parenthèses, contenant l’URL ou le chemin d’accès de l’image, et un attribut de titre facultatif inclus dans des guillemets doubles ou simples.
 
@@ -130,7 +130,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &ast; avant les éléments de la liste. Par exemple :
 
     `* item in list`
 

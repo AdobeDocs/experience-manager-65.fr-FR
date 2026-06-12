@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 100%
+source-wordcount: '1888'
+ht-degree: 98%
 
 ---
 
@@ -150,7 +150,7 @@ Le fichier ACMExtensionsMessages.properties comprend des libellés et des messag
 
    Le fichier ACMExtensionsMessages.properties est copié dans le dossier de paramètres régionaux.
 
-1. Pour localiser les libellés de l’action/du bouton personnalisé(e) nouvellement ajouté(e), créez le fichier ACMExtensionsMessages.properties correspondant au paramètre régional approprié dans `/apps/fd/cm/config/defaultApp/locale/`.
+1. Pour localiser les libellés de l’action/du bouton personnalisé(e) nouvellement ajouté(e), créez le fichier ACMExtensionsMessages.properties correspondant aux paramètres régionaux appropriés dans `/apps/fd/cm/config/defaultApp/locale/`.
 
    Par exemple, pour localiser l’action/le bouton personnalisé(e) créé(e) dans cet article, créez un fichier nommé ACMExtensionsMessages_fr.properties avec l’entrée suivante :
 
@@ -321,7 +321,7 @@ Le traitement de l’action/du bouton lors d’un clic sur l’action/le bouton 
       '</div>';
       ```
 
-### Ajouter le processus LiveCycle pour activer le traitement de l’action <span class="acrolinxCursorMarker"></code>gestion {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Ajouter le processus LiveCycle pour activer le traitement de l’action <span class="acrolinxCursorMarker"></code>traitement  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
@@ -372,7 +372,7 @@ Processus LiveCycle requis permettant l’exécution du processus de service de 
 
    ![Sélection du fichier SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
-1. Cliquez sur **Aperçu**. 
+1. Cliquez sur **Aperçu**.
 
 1. Sélectionnez **Déployer les ressources à l’exécution à la fin de l’importation**.
 
@@ -415,7 +415,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/host:port/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/host:port/[context path]/[URL AEM]
    * **crx.username**= nom d’utilisateur Experience Manager
    * **crx.password**= mot de passe Experience Manager
    * **crx.appRoot**=/content/apps/cm

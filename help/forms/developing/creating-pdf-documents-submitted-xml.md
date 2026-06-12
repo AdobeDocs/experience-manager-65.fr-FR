@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1334'
 ht-degree: 100%
 
 ---
@@ -93,9 +93,9 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
 1. Créer des objets Forms, Output et Document Management
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
    * Créez un objet `OutputClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
-   * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Récupérer des données de formulaire à l’aide du service Forms
 
@@ -104,7 +104,7 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
       * Objet `com.adobe.idp.Document` contenant les données de formulaire.
       * Valeur de chaîne qui spécifie les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer des données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`.
       * Valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, comme `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objet `RenderOptionsSpec` qui stocke les options d’exécution.
+      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -139,7 +139,7 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
    * Valeur de chaîne qui représente le type de nœud. Pour ajouter un nouveau contenu, tel qu’un fichier PDF, spécifiez `{https://www.alfresco.org/model/content/1.0}content`. Cette valeur est un paramètre obligatoire.
    * Objet `com.adobe.idp.Document` qui représente le contenu. Cette valeur est un paramètre obligatoire.
    * Valeur de chaîne qui spécifie la valeur de codage (par exemple, `UTF-8`). Cette valeur est un paramètre obligatoire.
-   * Valeur d’énumération `UpdateVersionType` qui spécifie le mode de gestion des informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version du contenu).  Cette valeur est un paramètre obligatoire.
+   * Valeur d’énumération `UpdateVersionType` qui spécifie le mode de gestion des informations de version (par exemple, `UpdateVersionType.INCREMENT_MAJOR_VERSION` pour incrémenter la version du contenu). Cette valeur est un paramètre obligatoire.
    * Instance `java.util.List` qui spécifie les aspects liés au contenu. Cette valeur est un paramètre facultatif et vous pouvez spécifier `null`.
    * Objet `java.util.Map` qui stocke les attributs de contenu.
 

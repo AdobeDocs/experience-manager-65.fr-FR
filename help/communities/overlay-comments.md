@@ -1,6 +1,6 @@
 ---
-title: Incrustation de composants Communities
-description: Découvrez comment superposer un composant par défaut afin de pouvoir modifier globalement l’aspect ou le comportement d’un composant pour toutes les références relatives au composant.
+title: Composants des communautés de recouvrement
+description: Découvrez comment superposer un composant par défaut afin de pouvoir modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -17,27 +17,27 @@ ht-degree: 0%
 
 ---
 
-# Incrustation de composants Communities {#overlay-communities-components}
+# Composants des communautés de recouvrement {#overlay-communities-components}
 
-L’intention de [superposer](/help/communities/client-customize.md#overlays) un composant par défaut est de modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il repose sur la nature de sling à résoudre dans le dossier /apps avant de rechercher dans le dossier /libs . Par conséquent, le chemin d’accès au composant est identique à celui du composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs .
+L’intention du [recouvrement](/help/communities/client-customize.md#overlays) d’un composant par défaut est de modifier globalement l’aspect ou le comportement d’un composant, pour toutes les références relatives au composant. Il dépend de la nature de sling pour être résolu sur le dossier /apps avant de rechercher dans le dossier /libs. Par conséquent, le chemin d’accès au composant est identique au chemin d’accès au composant par défaut, sauf qu’il se trouve dans le dossier /apps et non dans le dossier /libs.
 
 ## Exemple {#example}
 
-**Composant des commentaires de superposition**
+**Composant Commentaires de recouvrement**
 
-Supposons que vous souhaitiez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site web, en modifiant l’en-tête du commentaire afin qu’il n’affiche plus l’avatar pour un commentaire. Les solutions pour masquer l’avatar utilisent soit CSS, soit, comme décrit ici, le recouvrement du fichier header.jsp dans le dossier des applications afin que l’HTML contenant l’avatar ne soit jamais envoyé au client.
+Supposons que vous souhaitiez modifier la fonction de commentaire afin qu’elle corresponde à la conception de votre site web, en modifiant l’en-tête de commentaire afin qu’elle n’affiche plus l’avatar d’un commentaire. Les solutions pour masquer l’avatar utilisent le CSS ou, comme décrit ici, le recouvrement du fichier header.jsp dans le dossier d’applications afin que l’HTML contenant l’avatar ne soit jamais envoyée au client.
 
 Pour superposer des commentaires, vous devez :
 
-1. [Page Créer un commentaire](/help/communities/overlay-create-comments-page.md)
-1. [Création de noeuds](/help/communities/overlay-create-nodes.md)
-1. [Modification de l’aspect](/help/communities/overlay-alter-appearance.md)
+1. [Page Créer des commentaires](/help/communities/overlay-create-comments-page.md)
+1. [Créer des nœuds](/help/communities/overlay-create-nodes.md)
+1. [Modifier l’apparence](/help/communities/overlay-alter-appearance.md)
 
-**Courriers électroniques de notifications de superposition**
+**E-mails de notification de recouvrement**
 
-Supposons que vous souhaitiez personnaliser le message des notifications par e-mail, vous pouvez le faire en [&#x200B; superposant &#x200B;](/help/communities/client-customize.md#overlays) les modèles sur `/libs/settings/community/templates/email/html`.
+Supposons que vous souhaitiez personnaliser le message de notification par e-mail en [superposant](/help/communities/client-customize.md#overlays) les modèles à l’`/libs/settings/community/templates/email/html`.
 
-Supposons, par exemple, que vous souhaitiez modifier les notifications par courrier électronique relatives aux mentions (pour un composant Communities spécifique dans lequel le contenu créé par l’utilisateur est). Dans ce cas, ajoutez une condition **if** pour le verbe **mentions** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
+Supposons, par exemple, que vous souhaitiez modifier les notifications par e-mail de mentions (pour un composant Communities spécifique dans lequel du contenu créé par l’utilisateur est créé). Dans ce cas, ajoutez une condition **if** pour le verbe **mention** dans les modèles des composants pour lesquels vous avez activé la prise en charge de **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Supposons, par exemple, que vous souhaitiez modifier les notifications par courr
 {{/equals}}\
 ```
 
-Pour modifier le modèle de notifications électroniques pour @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’adresse : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Pour modifier le modèle de notification par e-mail à @mention dans les commentaires de blog, placez le modèle prêt à l’emploi à l’emplacement suivant : `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
