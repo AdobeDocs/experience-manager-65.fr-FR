@@ -34,7 +34,7 @@ De là, la publication, la prévisualisation et la gestion du contenu deviennent
 
 Pour configurer Mobile On-Demand Cloud Services, cliquez sur l’engrenage supérieur dans le coin supérieur droit de la mosaïque **Gérer la connexion** du tableau de bord de l’application.
 
-Vous devriez vous familiariser avec le tableau de bord de l’application et les vignettes disponibles. Voir [Tableau de bord de l’application ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
+Vous devriez vous familiariser avec le tableau de bord de l’application et les vignettes disponibles. Voir [Tableau de bord de l’application &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
 
 ### Configuration d’un lien vers une configuration cloud {#setting-up-link-to-cloud-configuration}
 
