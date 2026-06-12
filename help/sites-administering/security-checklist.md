@@ -324,7 +324,7 @@ Pour empêcher toute utilisation abusive des dénis de service, vous pouvez effe
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&amp;ast;.form.&amp;ast;** dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&ast;.form.&ast;** dans les requêtes.
 
 Pour atténuer ce problème, procédez comme suit :
 
