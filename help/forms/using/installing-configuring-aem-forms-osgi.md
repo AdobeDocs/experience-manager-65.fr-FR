@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 100%
+source-wordcount: '1972'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Forms fournit un ensemble de formulaires permettant d’obtenir des donnée
 
 **Formulaires adaptatifs :** ces formulaires changent d’apparence en fonction de la taille de l’écran de l’appareil, sont engageants et par nature interactifs. Les formulaires adaptatifs peuvent également s’intégrer à Adobe Analytics, Adobe Sign et Adobe Target. Ils vous ont permis de fournir aux utilisateurs et utilisatrices des formulaires personnalisés et des expériences axées sur les processus en fonction de leur démographie et d’autres fonctionnalités. Vous pouvez également intégrer des formulaires adaptatifs à Adobe Sign.
 
-**Les formulaires PDF** conviennent à l’impression parfaitement nette et à la capture d’informations numériques dans un document PDF. Dans l’avatar numérique, vous pouvez utiliser Adobe Acrobat ou Acrobat Reader pour remplir ces formulaires. Vous pouvez héberger ces formulaires sur votre site Web ou utiliser le Portail Formulaires pour répertorier ces formulaires sur un site AEM. Vous pouvez également envoyer ces formulaires en pièces jointes par e-mail. Ces formulaires sont les mieux adaptés aux environnements de bureau.
+**Les formulaires PDF** conviennent à l’impression parfaitement nette et à la capture d’informations numériques dans un document PDF. Dans l’avatar numérique, vous pouvez utiliser Adobe Acrobat ou Acrobat Reader pour remplir ces formulaires. Vous pouvez héberger ces formulaires sur votre site web ou utiliser le Portail Formulaires pour répertorier ces formulaires sur un site AEM. Vous pouvez également envoyer ces formulaires en pièces jointes par e-mail. Ces formulaires sont les mieux adaptés aux environnements de bureau.
 
 Les **formulaires HTML5** sont la version la mieux adaptée au navigateur pour les formulaires PDF. Les formulaires HTML5 conviennent aux environnements qui ne prennent pas en charge les plug-in PDF. Les formulaires HTML5 permettent le rendu des formulaires basés sur XFA sur les appareils mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Ces formulaires sont les mieux adaptés aux tablettes et aux environnements de bureau.
 
@@ -115,15 +115,15 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
-1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
+1. Ouvrez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
+1. Sélectionnez le package, puis cliquez sur **[!UICONTROL Installer]**.
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant de quitter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` et que le journal soit stable.
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 

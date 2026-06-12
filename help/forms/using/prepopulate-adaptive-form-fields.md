@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 100%
+source-wordcount: '2289'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Présentation {#introduction}
@@ -96,7 +96,7 @@ Prefill-Submit-Data-ContentPackage.zip
 [Obtenir le fichier](assets/prefill-submit-data-contentpackage.zip)
 Exemple de données contenant un préremplissage et de données envoyées
 
-### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
+### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
 
 La structure du code XML de préremplissage et du code XML envoyé pour les formulaires adaptatifs basés sur le schéma XML se présente comme suit :
 
@@ -203,7 +203,7 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 
 >[!NOTE]
 >
->L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) **n’est pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
+>L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) **n’est pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champ uniques dans le formulaire, notamment pour les champs non liés.
 
 ### Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
@@ -276,7 +276,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 Les formulaires adaptatifs peuvent être préremplis avec des données utilisateur au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une regex valide :
 
-### Protocole crx://  {#the-crx-protocol}
+### Protocole crx:// {#the-crx-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -292,13 +292,13 @@ https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=fil
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Protocole https://  {#the-http-protocol}
+### Protocole https:// {#the-http-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
-### Protocole service://  {#the-service-protocol}
+### Protocole service:// {#the-service-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -350,7 +350,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 Le service de préremplissage est un service OSGi et fait partie du bundle OSGi. Vous créez le lot OSGi, vous le chargez et l’installez sur les lots AEM Forms. Avant de débuter la création du bundle :
 
-* [Téléchargez l’AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
+* [Télécharger le SDK client AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * Téléchargement du package standard
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.

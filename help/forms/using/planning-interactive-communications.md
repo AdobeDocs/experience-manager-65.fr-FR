@@ -1,5 +1,5 @@
 ---
-title: "Didacticiel\_: Planifier la communication interactive"
+title: 'Didacticiel : planifier la communication interactive'
 description: Planifier la structure de votre communication interactive
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '658'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td>Appels détaillés - sortants</td>
    <td><p>Noms des colonnes :</p>
     <ul>
-     <li>Date </li>
+     <li>Date</li>
      <li>estimé</li>
      <li>Nombre</li>
      <li>Durée</li>

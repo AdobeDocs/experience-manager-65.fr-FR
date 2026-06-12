@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7608'
-ht-degree: 100%
+source-wordcount: '7800'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Le tableau suivant décrit des processus classiques qui permettent de réduire l
   </tr> 
   <tr> 
    <td><p>Adresses IP privées</p> </td> 
-   <td><p>Utilisez la technique NAT (Network Address Translation) avec des adresses IP privées RFC 1918, pour les serveurs de l’application AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile, pour une personne malveillante, le routage du trafic depuis et vers un hôte interne NAT via Internet.</p> </td> 
+   <td><p>Utilisez la technique NAT (Network Address Translation) avec des adresses IP privées RFC 1918, pour les serveurs de l’application AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile, pour un attaquant, le routage du trafic depuis et vers un hôte interne NAT via Internet.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Pare-feux</p> </td> 
@@ -93,7 +93,7 @@ Le tableau suivant décrit plusieurs approches utilisables pour minimiser les vu
  <tbody>
   <tr> 
    <td><p>Correctifs de sécurité</p></td> 
-   <td><p>Le risque qu’une personne non autorisée accède au serveur d’application est accru si les correctifs et les mises à jour de sécurité du fournisseur ne sont pas appliqués en temps voulu. Testez les correctifs de sécurité avant de les appliquer aux serveurs de production.</p><p>De même, créez des politiques et des procédures pour contrôler et installer régulièrement les correctifs.</p></td> 
+   <td><p>Le risque qu’une personne non autorisée accède au serveur d’application est accru si les correctifs et les mises à niveau de sécurité du fournisseur ne sont pas appliqués en temps voulu. Testez les correctifs de sécurité avant de les appliquer aux serveurs de production.</p><p>De même, créez des politiques et des procédures pour contrôler et installer régulièrement les correctifs.</p></td> 
   </tr> 
   <tr> 
    <td><p>Logiciels de protection antivirus</p></td> 
@@ -191,8 +191,8 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms s
    * **Répertoire CRX-Repository** : l’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
    * **Répertoires temporaires AEM Forms** :
       * (Windows) Chemin TMP ou TEMP tel que défini dans les variables d’environnement
-      * (AIX, Linux ou Solaris) Répertoire racine de la personne connectée
-Sur les systèmes de type UNIX, une personne non connectée en tant qu’utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
+      * (AIX, Linux ou Solaris) Répertoire racine de l’utilisateur connecté
+Sur les systèmes UNIX, un utilisateur non connecté comme utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp
@@ -236,7 +236,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
    ```
 
 1. Arrêtez le serveur AEM Forms.
-1. Placez en commentaire les modules adobe-bootstrapper.war et adobe-lcm-bootstrapper-redirectory.  war, comme suit :
+1. Placez en commentaire les modules adobe-bootstrapper.war et adobe-lcm-bootstrapper-redirectory. war, comme suit :
 
    ```java
    <!-- bootstrapper start --> 
@@ -355,13 +355,13 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
 
 #### Configuration de la sécurité intégrée dans SQL Server sur Windows pour JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans l’exemple suivant :
+1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter des `integratedSecurity=true` à l’URL de connexion, comme illustré dans l’exemple suivant :
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
-1. Ajoutez le fichier sqljdbc_auth.dll au chemin d’accès du système Windows sur l’ordinateur exécutant le serveur d’applications. Le fichier sqljdbc_auth.dll se trouve avec les fichiers d’installation du pilote Microsoft SQL JDBC 6.2.1.0.
+1. Ajoutez le fichier sqljdbc_auth.dll au chemin d’accès du système Windows sur l’ordinateur exécutant le serveur d’applications. Le fichier sqljdbc_auth.dll se trouve avec l’installation du pilote 6.2.1.0 JDBC SQL Microsoft.
 1. Modifiez la propriété du service Windows JBoss (JBoss pour AEM Forms on JEE) pour Ouvrir une session en tant que dans le Système local pour un compte utilisateur disposant d’une base de données AEM Forms et d’un ensemble minimum de droits. Si vous exécutez JBoss à partir de la ligne de commande plutôt que comme un service Windows, ignorez cette étape.
 1. Faites passer la sécurité de SQL Server du mode **Mixte** au mode **Authentification Windows**.
 
@@ -378,7 +378,7 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
 1. Dans l’écran suivant, dans l’onglet **Configuration**, cliquez sur l’onglet **Connection Pool** et, dans la zone **Properties**, saisissez `integratedSecurity=true`.
 1. Sous Domain Structure, cliquez sur **[base_domain]** > **Services** > **JDBC** > **Data Sources** et, dans le volet de droite, cliquez sur **RM_DS**.
 1. Dans l’écran suivant, dans l’onglet **Configuration**, cliquez sur l’onglet **Connection Pool** et, dans la zone **Properties**, saisissez `integratedSecurity=true`.
-1. Ajoutez le fichier sqljdbc_auth.dll au chemin d’accès du système Windows sur l’ordinateur exécutant le serveur d’applications. Le fichier sqljdbc_auth.dll se trouve avec les fichiers d’installation du pilote Microsoft SQL JDBC 6.2.1.0.
+1. Ajoutez le fichier sqljdbc_auth.dll au chemin d’accès du système Windows sur l’ordinateur exécutant le serveur d’applications. Le fichier sqljdbc_auth.dll se trouve avec l’installation du pilote 6.2.1.0 JDBC SQL Microsoft.
 1. Faites passer la sécurité de SQL Server du mode **Mixte** au mode **Authentification Windows**.
 
 #### Configuration de la sécurité intégrée dans SQL Server sur Windows pour WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
@@ -470,7 +470,7 @@ Vous pouvez permettre à un utilisateur non administrateur ou une utilisatrice n
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Configuration d’AEM Forms on JEE pour un accès au-delà de l’entreprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -480,7 +480,7 @@ Une fois AEM Forms sur JEE installé avec succès, il est important que vous ass
 
 Un *proxy inverse* peut être utilisé pour garantir qu’un jeu d’URL pour des applications AEM Forms on JEE est disponible à la fois pour des utilisateurs et utilisatrices externes et internes. Cette configuration est plus sûre que si vous autorisiez des utilisateurs à se connecter directement au serveur d’applications sur lequel est exécuté AEM Forms sur JEE. Le proxy inverse exécute toutes les requêtes HTTP pour le serveur d’applications qui exécute AEM Forms sur JEE. Les utilisateurs et utilisatrices disposent d’un accès réseau limité au seul proxy inverse et ne peuvent se connecter qu’aux URL prises en charge par le proxy inverse.
 
-**URL racine AEM Forms on JEE pour une utilisation avec un serveur proxy inverse** 
+**URL racine AEM Forms on JEE pour une utilisation avec un serveur proxy inverse**
 
 Les URL suivantes sont les URL racine de chaque application Web AEM Forms on JEE. Configurez votre proxy inverse pour qu’il n’expose que les URL de fonctionnalités d’applications Web dont vous souhaitez autoriser l’accès aux utilisateurs finaux et utilisatrices finales.
 
@@ -676,7 +676,7 @@ Les caractéristiques suivantes sont communes aux cas de CSRF :
 
 AEM Forms on JEE utilise la fonctionnalité de filtrage des référents pour bloquer les attaques CSRF. Les termes suivants sont utilisés dans cette section pour décrire ce dispositif de filtrage des référents :
 
-* **Référent autorisé :** un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, ce référent est généralement la page précédente dans l’historique de navigation. Les référents pour les images sont généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les référents autorisés à accéder à votre serveur en les ajoutant à la liste de référents autorisés.
+* **Référent autorisé :** un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, ce référent est généralement la page précédente dans l’historique de navigation. Les référents pour les images sont généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les référents autorisés à accéder à vos ressources serveur en les ajoutant à la liste de référents autorisés.
 * **Exceptions aux référents autorisés :** si vous souhaitez restreindre l’accès pour un référent particulier dans votre liste de référents autorisés. Pour mettre en place cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent vers la liste des exceptions aux référents autorisés. Les requêtes provenant de chemins d’accès de la liste des exceptions aux référents autorisés ne peuvent appeler aucune ressource du serveur Forms Server. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et également utiliser une liste globale des exceptions s’appliquant à toutes les applications.
 * **URI autorisés :** il s’agit d’une liste des ressources générées sans vérification de l’en-tête référent. Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources figurant dans la liste des URI autorisés ne sont jamais bloquées par le filtrage des référents, quel que soit le référent.
 * **Référent de valeur NULL (null referer) :** une requête serveur qui n’est pas associée ou ne provient pas d’une page web parente est considérée comme une requête de référent de valeur NULL. Par exemple, lorsque vous ouvrez une nouvelle fenêtre de navigateur, saisissez une adresse puis appuyez sur la touche Entrée, le référent envoyé au serveur est nul. Une application de bureau (.NET ou SWING) envoyant une requête HTTP à un serveur web envoie également un référent de valeur NULL au serveur.
@@ -709,7 +709,7 @@ Le processus de filtrage des référents peut être décrit comme suit :
 
 AEM Forms on JEE effectue un filtrage des référents afin de spécifier les référents qui sont autorisés à accéder aux ressources du serveur. Par défaut, le filtrage des référents ne filtre pas les requêtes qui utilisent une méthode HTTP sécurisée, par exemple GET, sauf si *CSRF_CHECK_GETS* est défini sur true. Si le numéro de port pour un référent autorisé est défini sur 0, AEM Forms on JEE autorisera toutes les requêtes des référents provenant de cet hôte quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
 
-Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur Forms Server dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
+Lorsque vous installez Document Services pour la première fois, la liste de référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste de référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 contiendra les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4, IPv6 ou sans nom de domaine qualifié) la liste autorisée n’est pas mise à jour. Modifiez la liste de référents autorisés en fonction de votre environnement de travail. Ne déployez pas le serveur Forms Server dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié l’un des référents autorisés, l’une des exceptions aux référents ou l’un des URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
 
 **Gérer la liste de référents autorisés**
 
@@ -950,7 +950,7 @@ Cette section décrit les ports par défaut (et les plages de configurations alt
  </tbody> 
 </table>
 
-**Ports WebSphere **
+**Ports WebSphere &#x200B;**
 
 Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE, consultez Configuration des numéros de ports dans l’interface utilisateur de WebSphere Application Server.
 
@@ -960,7 +960,7 @@ En vous référant à l’architecture physique décrite dans la section [Archit
 
 Pour obtenir des instructions sur la manière de configurer SSL sur JBoss, WebLogic et WebSphere, consultez « Configuration de SSL » dans l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_64_fr).
 
-Pour plus d’informations sur l’importation de certificats dans JVM (Java Virtual Machine) configuré pour un serveur AEM Forms, consultez la section Authentification mutuelle dans l’[Aide d’AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_fr).
+Pour plus d’informations sur l’import de certificats dans JVM (Java Virtual Machine) configuré pour un serveur AEM Forms, consultez la section Authentification mutuelle dans l’[Aide d’AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_fr).
 
 ### Configuration de la redirection SSL {#configuring-ssl-redirect}
 
@@ -1017,8 +1017,8 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
    * **Répertoire CRX-Repository** : l’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
    * **Répertoires temporaires AEM Forms** :
       * (Windows) Chemin TMP ou TEMP tel que défini dans les variables d’environnement
-      * (AIX, Linux ou Solaris) Répertoire racine de la personne connectée
-Sur les systèmes de type UNIX, une personne non connectée en tant qu’utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
+      * (AIX, Linux ou Solaris) Répertoire racine de l’utilisateur connecté
+Sur les systèmes UNIX, un utilisateur non connecté comme utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp

@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Cet article détaille les descriptions des sections de recherche de processus/t�
 
 Vous utilisez la recherche de processus/tâches pour définir des filtres pour interroger des instances de processus/tâche.
 
-### Pour créer une demande de recherche de processus/tâches {#to-create-a-process-task-search-query}
+### Pour créer une requête de recherche de processus/tâches {#to-create-a-process-task-search-query}
 
 1. Pour afficher les demandes de recherche de processus/tâches enregistrées ou créer une demande, cliquez sur **Requêtes ad hoc**, puis cliquez sur **Recherche de processus/tâches**.
 
@@ -108,7 +108,7 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
 ### Exécuter une requête {#to-execute-a-search-query}
 
 1. Pour exécuter une requête, cliquez sur le filtre dans le panneau **Mes filtres** ou cliquez sur le bouton **Exécuter** si vous créez ou modifiez un filtre.
-1. Les résultats de la demande s’affichent dans le panneau **Rapport** de la fenêtre **Process Reporting**.
+1. Les résultats de la requête s’affichent dans le panneau **Rapport** de la fenêtre **Process Reporting**.
 
    ![process_search_result](assets/process_search_result.png)
 
@@ -149,7 +149,7 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
    ![task_search_result](assets/task_search_result.png)
 
 1. Cliquez sur le bouton de rail ![lc_pr_rail_button](assets/lc_pr_rail_button.png) dans le coin supérieur gauche pour réduire le panneau **Mes filtres** et agrandir l’espace disponible pour le panneau **Rapport**.
-1. Utilisez les options situées dans le coin supérieur droit du panneau « Rapport » pour effectuer des opérations sur le résultat de la demande.
+1. Utilisez les options situées dans le coin supérieur droit du panneau « Rapport » pour effectuer des opérations sur le résultat de la requête.
 
    * **Actualiser** : actualise le rapport avec les dernières données stockées
 
@@ -182,7 +182,7 @@ Vous pouvez afficher les détails d’un processus/d’une tâche AEM Forms spé
 
 1. Cliquez sur un ID de processus dans la liste pour afficher les détails de ce processus dans le panneau **Détails du processus**.
 
-   Les résultats de la recherche des **Détails du processus / de la tâche** affiche les détails des tâches/formulaires contenus dans le processus / la tâche.
+   Les résultats de la requête des **Détails du processus / de la tâche** affichent les détails des tâches/formulaires contenus dans le processus / la tâche.
 
    Par défaut, le résultat est trié par ID de tâche/formulaire. Toutefois, pour trier le résultat en fonction de l’un des champs, cliquez sur son titre. La colonne selon laquelle les résultats sont triés est indiquée par une flèche foncée en regard de l’en-tête de colonne.
 
