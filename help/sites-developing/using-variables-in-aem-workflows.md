@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 99%
+source-wordcount: '2076'
+ht-degree: 93%
 
 ---
 
@@ -38,7 +38,7 @@ Les variables sont une extension de l’interface [MetaDataMap](https://develope
 
 Vous pouvez créer des variables à l’aide de la section Variables disponible dans le sidekick du modèle de processus. Les variables de workflow AEM prennent en charge les types de données suivants :
 
-* **Types de données primitifs** : Long, Doublon, Boolean, Date et String
+* **Types de données primitifs** : Long, Double, Booléen, Date et Chaîne
 * **Types de données complexes** : [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) et [JSON](https://www.javadoc.io/doc/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
 
 >[!NOTE]
@@ -63,7 +63,7 @@ Pour créer une variable,
    * Modèle de données de formulaire : indiquez un chemin d’accès au modèle de données de formulaire.
    * ArrayList : spécifiez un sous-type pour la collection.
 
-1. Spécifiez une description facultative pour la variable et sélectionnez l’icône Enregistrer![&#x200B; représentée par une case cochée.](assets/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
+1. Spécifiez une description facultative pour la variable et sélectionnez ![Icône Enregistrer indiquée par une coche dans une case.](assets/Done_Icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
@@ -81,8 +81,8 @@ En fonction du type de données de la variable, vous pouvez définir la valeur d
 
 * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier.
 * **Expression** : utilisez l’option lorsque la valeur à utiliser est calculée en fonction d’une expression. L’expression est créée dans l’éditeur d’expressions fourni.
-* **Notation de point JSON** : l’option permet d’extraire une valeur d’une variable de type JSON ou FDM.
-* **XPATH** : l’option permet d’extraire une valeur d’une variable de type XML.
+* **Notation de point JSON** : l’option permet de récupérer une valeur d’une variable de type JSON ou FDM.
+* **XPATH** : l’option permet de récupérer une valeur d’une variable de type XML.
 * **Relatif à la charge** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès relatif à la charge utile.
 * **Chemin d’accès absolu** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès absolu.
 
@@ -93,10 +93,10 @@ Vous pouvez également mettre à jour des éléments spécifiques d’une variab
 Pour ajouter un mappage entre les variables, procédez comme suit :
 
 1. Dans la page de modification du workflow, sélectionnez l’icône Étapes disponible dans le sidekick du modèle de workflow.
-1. Faites un glisser-déposer de l’étape **Définir une variable** vers l’éditeur de workflow, sélectionnez l’étape, puis l’icône ![Configurer représentée par une clé à molette.](assets/configure_icon.png) (Configurer).
+1. Faites glisser l’étape **Définir une variable** vers l’éditeur de workflow, sélectionnez l’étape, puis sélectionnez ![Configurer l’icône indiquée par une clé à molette.](assets/configure_icon.png) (Configurer).
 1. Dans la boîte de dialogue Définir une variable, sélectionnez **[!UICONTROL Mappage]** > **[!UICONTROL Ajouter un mappage]**.
 1. Dans la section **Mapper une variable**, sélectionnez la variable dans laquelle stocker des données, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
-1. Mappez plus de variables afin de pouvoir créer une expression significative. Sélectionnez l’icône ![Enregistrer représentée par une case cochée.](assets/Done_Icon.png) pour enregistrer les modifications.
+1. Mappez plus de variables afin de pouvoir créer une expression significative. Sélectionnez ![Icône Enregistrer indiquée par une coche dans une case.](assets/Done_Icon.png) pour enregistrer les modifications.
 
 ### Exemple 1 : exécutez une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -114,7 +114,7 @@ Dans cet exemple, utilisez l’éditeur d’expressions pour définir une expres
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Vidéo Expression de variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Vidéo sur l’expression des variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Utilisation de l’éditeur d’expressions {#use-expression-editor}
 
@@ -142,7 +142,7 @@ Pour en savoir plus, consultez la section [Éditeur de règles de formulaires ad
 
 ## Utiliser une variable {#use-a-variable}
 
-Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
+Vous pouvez utiliser des variables pour récupérer des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
 
 * Étapes de workflow avec prise en charge des variables
 * Étapes de workflow sans prise en charge des variables
@@ -151,7 +151,7 @@ Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou 
 
 L’étape d’accès, l’étape de Division OU et toutes les étapes de workflow d’AEM Forms prennent en charge les variables.
 
-#### OU étape Fractionner {#or-split-step}
+#### Étape Division OU {#or-split-step}
 
 L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -163,7 +163,7 @@ Dans cet exemple, avant de définir l’expression de routage, utilisez [exemple
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[OU vidéo partagée](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OU la vidéo fractionnée](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions de routage afin d’évaluer la branche principale. Sélectionnez **[!UICONTROL Renommer la branche]** pour définir un autre nom pour la branche.
 
@@ -191,7 +191,7 @@ Toutes les étapes de processus AEM Forms prennent en charge les variables. Pour
 
 Vous pouvez utiliser l’interface [MetaDataMap](https://developer.adobe.com/fr/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de processus qui ne prennent pas en charge les variables.
 
-#### Extraction de la valeur d’une variable {#retrieve-the-variable-value}
+#### Récupération de la valeur d’une variable {#retrieve-the-variable-value}
 
 Pour récupérer des valeurs pour des variables existantes en fonction du type de données, utilisez les API suivantes dans le script ECMA.
 
@@ -205,7 +205,7 @@ Pour plus d’informations sur les API pour d’autres types de données de vari
 
 **Exemple**
 
-Extrayez la valeur du type de données de chaîne à l’aide de l’API suivante :
+Récupérez la valeur du type de données de chaîne à l’aide de l’API suivante :
 
 ```
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modification d’une variable {#edit-a-variable}
 
 1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
-1. Sélectionnez l’icône ![Modifier représentée par un symbole de crayon.](assets/edit.png) Icône (Modifier) en regard du nom de la variable que vous souhaitez modifier.
-1. Modifiez les informations de la variable et sélectionnez l’icône ![Enregistrer représentée par une coche.](assets/Done_Icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
+1. Sélectionnez l’icône ![&#x200B; Modifier indiquée par un symbole de crayon &#x200B;](assets/edit.png). Icône (Modifier) en regard du nom de variable à modifier.
+1. Modifiez les informations de la variable et sélectionnez ![Icône Enregistrer signalée par une coche.](assets/Done_Icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
 ## Supprimer une variable {#delete-a-variable}
 
@@ -262,4 +262,4 @@ Pour supprimer une variable :
 
 1. Dans la page de modification du workflow, sélectionnez l’icône Variables disponible dans le sidekick du modèle de workflow. La section Variables du volet gauche affiche toutes les variables existantes.
 1. Sélectionnez l’icône Supprimer en regard du nom de la variable que vous souhaitez supprimer.
-1. Sélectionnez l’icône ![Terminé représentée par une coche.](assets/Done_Icon.png) pour confirmer et supprimer la variable.
+1. Sélectionnez ![icône Terminé indiquée par une coche.](assets/Done_Icon.png) pour confirmer et supprimer la variable.

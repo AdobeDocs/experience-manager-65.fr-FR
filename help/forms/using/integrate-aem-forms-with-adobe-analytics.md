@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
-workflow-type: ht
-source-wordcount: '1810'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1908'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ La figure suivante illustre les actions que vous devez effectuer avant d’affic
 
 ![Présentation d’Analytics](/help/forms/using/assets/analyticsworkflow.png)
 
-## 1. Configuration d’[!DNL Adobe Analytics] {#Configure-adobe-analytics}
+## &#x200B;1. Configuration de [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
 Avant de configurer [!DNL Adobe Analytics], créez :
 
@@ -165,7 +165,7 @@ Suivez les étapes suivantes pour créer des règles basées sur l’extension *
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez + et indiquez **[!UICONTROL Adobe Analytics]** comme nom d’extension.
 
-1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :
+1. Sélectionnez **[!UICONTROL Effacer les variables]** comme type d’action. Sélectionnez **[!UICONTROL Conserver les modifications]**. Après avoir effectué ces étapes, la section **[!UICONTROL Actions]** s’affiche comme suit :
    ![Configuration des actions](/help/forms/using/assets/actions-config.png)
 
    Personnalisez la section **[!UICONTROL Actions]** en fonction de vos besoins. Par exemple, vous pouvez définir deux étapes **Envoyer la balise** dans un flux Actions pour envoyer des données à [!DNL Adobe Analytics] et les traiter comme une page vue en une seule étape et envoyer des données à [!DNL Adobe Analytics] sans les traiter comme une page vue lors de la seconde étape.
@@ -197,7 +197,7 @@ Pour publier la configuration, procédez comme suit :
 
 ![Flux de publication](/help/forms/using/assets/publish-flow.png)
 
-## 2. Configuration d’AEM Forms {#configure-aem-forms}
+## &#x200B;2. Configurer AEM Forms {#configure-aem-forms}
 
 Avant de créer une configuration Adobe Launch, créez une [configuration Adobe IMS à l’aide d’Adobe Launch en tant que solution cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=fr).
 
@@ -205,7 +205,7 @@ Avant de créer une configuration Adobe Launch, créez une [configuration Adobe 
 
 Pour créer une configuration Adobe Launch, procédez comme suit :
 
-1. Dans l’instance d’auteur AEM Forms, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configurations d’Adobe Launch]**.
+1. Dans l’instance de création AEM Forms, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configurations d’Adobe Launch]**.
 
 1. Sélectionnez un dossier pour créer la configuration et sélectionnez **[!UICONTROL Créer]**.
 
@@ -230,7 +230,7 @@ Pour créer une configuration Adobe Launch, procédez comme suit :
 
 Pour utiliser la configuration [!DNL Adobe Launch] dans un formulaire adaptatif existant, suivez les étapes suivantes :
 
-1. Dans l’instance d’auteur AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Dans l’instance de création AEM Forms, accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez le formulaire adaptatif, puis sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le [conteneur de configuration](#create-adobe-launch-configuration) utilisé lors de la création de la configuration Adobe Launch.
 1. Sélectionnez **[!UICONTROL Enregistrer et fermer]**. Le formulaire adaptatif est activé pour [!DNL Adobe Analytics].
@@ -273,7 +273,7 @@ Pour mapper l’événement à un événement de capture personnalisé dans [!DN
 
 1. Sélectionnez **Conserver les modifications** et effectuez le reste des actions spécifiées dans [Configurer les règles](#configure-rules).
 
-## 3. Configuration et affichage de rapports dans [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
+## &#x200B;3. Configuration et affichage de rapports dans [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
 Après avoir configuré un formulaire adaptatif pour envoyer des données d’événement dans [!DNL Adobe Analytics], vous pouvez commencer à afficher les rapports dans [!DNL Adobe Analytics] :
 

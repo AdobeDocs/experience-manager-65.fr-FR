@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 100%
+source-wordcount: '2996'
+ht-degree: 97%
 
 ---
 
@@ -302,7 +302,7 @@ Le composant de magasin de contexte `/libs/cq/personalization/components/context
 
 Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, vous devez effectuer les opérations suivantes :
 
-* Ajouter la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
+* Ajoutez la balise de personnalisation :storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
 * Implémenter une méthode de rendu sur la classe d’un magasin de sessions.
 
 #### Identification du magasin de sessions genericstore {#identifying-the-genericstore-session-store}
@@ -324,7 +324,7 @@ Le format de la balise est le suivant :
 Votre magasin de sessions a besoin d’une méthode de « moteur de rendu » qui est appelée chaque fois que le rendu du composant doit être effectué. La fonction de rendu est appelée avec deux paramètres :
 
 * @param {String} store
-Magasin dont le rendu doit être effectué.
+Magasin à rendre.
 * @param {String} divId
 Identifiant du div dans lequel le rendu du magasin doit être effectué.
 
@@ -490,9 +490,9 @@ Dans cet exemple, vous créez un composant de magasin de contexte qui récupère
 
 Créez une application CQ et ajoutez le composant geoloc.
 
-1. Ouvrez CRXDE Lite dans votre navigateur Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite dans votre navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &grave;&grave;
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : geoloc
@@ -513,12 +513,12 @@ Le composant de magasin de contexte nécessite une boîte de dialogue Modifier. 
 
    * store
    * properties
-   * thumbnail
+   * miniature
 
 1. Cliquez avec le bouton droit sur le nœud `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` et cliquez sur Créer > Créer un nœud. Saisissez les valeurs de propriété ci-dessous, puis cliquez sur OK :
 
    * Nom : static
-   * Type : cq:Widget
+   * Type : cq:Widget
 
 1. Ajoutez les propriétés suivantes au nœud :
 
@@ -595,7 +595,7 @@ Ajoutez le code au fichier JSP du composant geoloc pour retourner les données d
 
 Ajoutez le composant de lieu de stockage à ClientContext afin qu’il soit initialisé au chargement de la page.
 
-1. Ouvrez la page d’accueil de Geometrixx Outdoors sur l’instance de création ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Ouvrez la page d’accueil de Geometrixx Outdoors sur l’instance de création ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac) pour ouvrir le contexte client.
 1. Cliquez sur l’icône de modification en haut de ClientContext pour ouvrir ClientContext Designer.
 
@@ -624,7 +624,7 @@ Contient le contenu du contexte client personnalisé.
   `/contextstores`
 vous permet de définir des configurations différentes pour les magasins de contexte.
 
-Pour utiliser votre contexte client personnalisé, modifiez la propriété
+Pour utiliser votre contexte client personnalisé, modifiez la propriété .
 `path`
-dans le style de conception du composant contexte client, tels qu’il est inclus dans le modèle de page. Par exemple, comme emplacement standard de :
+dans le style de conception du composant contexte client, tel qu’il est inclus dans le modèle de page. Par exemple, comme emplacement standard de :
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

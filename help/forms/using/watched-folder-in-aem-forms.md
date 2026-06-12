@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7136'
-ht-degree: 99%
+source-wordcount: '7066'
+ht-degree: 95%
 
 ---
 
@@ -24,8 +24,8 @@ Un administrateur peut configurer un dossier réseau, appelé dossier de contrô
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de contrôle sur le système de fichiers :
 
-* Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, indiquez le chemin d’accès complet du répertoire parent dans la propriété folderPath (chemin du fichier) et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant :`C:/MyPDFs/MyWatchedFolder`
-Le dossier `MyWatchedFolder` n’existe pas, AEM Forms tente de créer un dossier à l’emplacement spécifié.
+* Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath (chemin du dossier) et ajoutez le nom du dossier de contrôle à créer, comme illustré dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`
+Le dossier `MyWatchedFolder` n’existe pas, AEM Forms tente de le créer à l’emplacement spécifié.
 
 * Créez un dossier dans le système de fichiers avant de configurer un point d’entrée Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](#watchedfolderproperties).
 
@@ -72,7 +72,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 * **runModes (chaîne)** : liste séparée par des virgules de modes d’exécution autorisés pour l’exécution du workflow. Voici quelques exemples :
 
-   * auteur 
+   * auteur
 
    * publish
 
@@ -90,19 +90,19 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 >[!NOTE]
 >
->Remarque : même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, il se peut que son traitement se poursuive en arrière-plan mais qu’elle prenne simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant que le déclenchement du mécanisme d’expiration, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. En revanche, si le traitement de l’entrée ne s’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de workflow (ce qui constitue le scénario que le mécanisme d’expiration vise à résoudre), aucune de ces deux éventualités ne se produit. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une expiration (recherchez les messages tels que « Fichier non traité après un laps de temps considérable, marqué comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
+>Remarque : même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, il se peut que son traitement se poursuive en arrière-plan mais qu’elle prenne simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant que le déclenchement du mécanisme de temporisation, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. En revanche, si le traitement de l’entrée ne s’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de workflow (ce qui constitue le scénario que le mécanisme d’expiration vise à résoudre), aucune de ces deux éventualités ne se produit. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une temporisation (recherchez les messages tels que « Fichier non traité après un laps de temps considérable, marqué comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valeur par défaut true) :** si le mécanisme d’expiration doit ou non s’activer uniquement lorsque le dossier de contrôle est ralenti. Le mécanisme est plus approprié pour les dossiers de contrôle ralentis car un petit nombre de fichiers qui restent à l’état non traité (en raison d’une tâche intermittente/d’un échec de déclenchement de workflow) risquent potentiellement de freiner le traitement du lot entier lorsque l’option de ralentissement est activée. Si cette propriété est conservée sur true (valeur par défaut), le mécanisme d’expiration ne s’active pas pour les dossiers de contrôle qui ne sont pas ralentis. Si la propriété est conservée sur false, le mécanisme s’active toujours tant que la propriété stageFileExpirationDuration est un nombre positif.
 
 * **pollInterval (Long)** : le laps de temps en secondes pour l’analyse du dossier de contrôle en sortie. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description de la taile de lot. La valeur de pollinterval doit être supérieure ou égale à un.
-* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Aucun fichier ou dossier avec ce modèle n’est analysé en vue d’être traité. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Cela empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».
-Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure les types de fichiers suivants :
+* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Aucun fichier ou dossier avec ce modèle n’est analysé pour traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier portant un nom choisi par le dossier de contrôle. Cela empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est null.
+Vous pouvez utiliser des [modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure les éléments suivants :
 
    * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+      * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
       * &#42;.`[dD][aA]`&#39;port&#39;
       * &#42;.`[Xx][Mm][Ll]`
 
@@ -111,11 +111,11 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 * **includeFilePattern (chaîne)** : liste dont les éléments sont séparés par des points-virgules (;) utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur input&#42;, tous les fichiers et les dossiers correspondant à input&#42; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc. La valeur par défaut est &#42; et elle désigne tous les fichiers et dossiers. Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
 
    * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Fichiers portant des noms spécifiques, par exemple data.&#42; à savoir les fichiers et les dossiers nommés data1, data2, etc.
+   * Fichiers portant des noms spécifiques, par exemple data.&#42; inclut des fichiers et des dossiers nommés data1, data2, etc.
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+   * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
       * &#42;.`[dD][aA]`&#39;port&#39;
       * &#42;.`[Xx][Mm][Ll]`
@@ -182,7 +182,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 En plus des propriétés de configuration du dossier de contrôle répertoriées ci-dessus, vous pouvez également spécifier des paramètres de configuration personnalisés. Les paramètres personnalisés sont transmis au code de traitement des fichiers. Cela permet au code de modifier son comportement à partir de la valeur du paramètre. Pour définir un paramètre :
 
 1. Connectez-vous à CRXDE-Lite et accédez au nœud de configuration du dossier de contrôle.
-1. Ajoutez un paramètre de propriété.&lt;nom_de_propriété> au nœud de configuration du dossier de contrôle. Le type de la propriété peut être Boolean, Date, Decimal, Double, Long et String. Vous pouvez spécifier des propriétés à valeur unique ou à valeurs multiples.
+1. Ajoutez un paramètre de propriété.&lt;property_name> au nœud de configuration du dossier de contrôle. Le type de la propriété peut être Boolean, Date, Decimal, Double, Long et String. Vous pouvez spécifier des propriétés à valeur unique ou à valeurs multiples.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Vous pouvez créer des variables modifiables pour les méthodes de traitement de
 
 1. Connectez-vous à CRXDE-Lite et accédez au nœud de configuration du dossier de contrôle.
 
-1. Ajoutez une propriété workflow.var.&lt;nom_variable> au nœud de configuration du dossier de contrôle.
+1. Ajoutez une propriété workflow.var.&lt;variable_name> au nœud de configuration du dossier de contrôle.
 
    Le type de la propriété peut être Boolean, Date, Decimal, Double, Long et String. Les propriétés à valeurs multiples sont également prises en charge. Pour les propriétés à valeurs multiples, la valeur disponible pour l’étape du workflow est un tableau de type spécifié.
 
@@ -218,13 +218,13 @@ Vous pouvez créer des variables modifiables pour les méthodes de traitement de
 
 Vous pouvez lancer un workflow, un service, ou un script pour traiter les emplacements de documents dans un dossier de contrôle.
 
-### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle  {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Utilisation d’un service pour traiter les fichiers d’un dossier de contrôle   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Un service est une implémentation personnalisée de l’interface de `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. Il est enregistré avec OSGi tout comme certaines propriétés personnalisées. Les propriétés personnalisées de l’implémentation le rendent unique et contribuent à l’identification de l’implémentation.
 
 #### Implémentation personnalisée de l’interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-L’implémentation personnalisée accepte un contexte de traitement (un objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute de nouveau la sortie au 
+L’implémentation personnalisée accepte un contexte de traitement (un objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute de nouveau la sortie au contexte
 contexte. Le ProcessorContext dispose des API suivantes :
 
 * **getWatchFolderId** : renvoie l’ID du dossier de contrôle.
@@ -232,8 +232,8 @@ contexte. Le ProcessorContext dispose des API suivantes :
 * **getConfigParameters** : renvoie un mappage inaltérable de type Map. La carte contient
 les paramètres de configuration d’un dossier de contrôle.
 
-* **setResult** : l’implémentation de ContentProcessor
-utilise l’API pour passer le document de sortie au dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l&#39;API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
+* **setResult** : implémentation de ContentProcessor
+utilise l’API pour écrire le document de sortie dans le dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l&#39;API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les workflows. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 
 Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété foo=bar personnalisée.
 
@@ -307,10 +307,10 @@ Les workflows permettent d’automatiser les activités d’Experience Manager.
 
 * Avant de créer un workflow, tenez compte des points suivants :
 * La sortie d’une étape doit être disponible pour toutes les étapes suivantes.
-Les étapes doivent pouvoir mettre à jour (ou même supprimer) des sorties existantes générées par les étapes précédentes.
+Les étapes doivent pouvoir mettre à jour (ou même supprimer) les sorties existantes générées par les étapes précédentes.
 * Les variables mutables sont utilisées pour transmettre les données dynamiques personnalisées entre les étapes.
 
-Effectuez les étapes suivantes pour traiter des fichiers à l’aide des workflows : 
+Effectuez les étapes suivantes pour traiter des fichiers à l’aide des workflows :
 
 1. Créez une implémentation de l’interface de `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor`. Cette fonction est similaire à l’implémentation créée pour un service.
 
@@ -333,7 +333,7 @@ L’argument du processWorkflowContext () est un objet de type com.adobe.aemfd.
 
 * getWorkItem : renvoie la valeur de la variable WorkItem. Les variables sont transmises à la méthode WorkflowContextService.execute ().
 * getWorkflowSession : renvoie la valeur de la variable WorkflowSession. Les variables sont transmises à la méthode WorkflowContextService.execute ().
-* getMetadata : renvoie la valeur de la variable de métadonnées. Les variables sont transmises à la méthode WorkflowContextService.execute ().
+* getMetadata : renvoie la valeur de la variable de métadonnées. Les variables sont transmises à la méthode WorkflowContextService.execute().
 * getCommittedVariables : renvoie un mappage d’objet en lecture seule représentant les variables définies par des étapes précédentes. Si une variable n’est modifiée dans aucune des étapes précédentes, la valeur par défaut spécifiée lors de la configuration du dossier de contrôle est renvoyée.
 * getCommittedResults : renvoie un mappage en lecture seule du document. La carte représente les fichiers de sortie générés par les étapes précédentes.
 * setVariable : l’implémentation de WorkflowContextProcessor utilise la variable pour manipuler les variables représentant les données dynamiques personnalisées qui transitent entre les étapes. Le nom et le type de variables sont identiques au nom de variables spécifié pendant la [configuration du dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Pour modifier la valeur d’une variable, appelez l’API setVariable avec une valeur non nulle. Pour supprimer une variable, appelez setVariable () avec une valeur nulle.
@@ -355,8 +355,8 @@ Remarque concernant l’API setResult, lorsqu’elle est utilisée dans les work
 >
 >L’appel de l’API setResult avec le contenu « null » dans tout autre scénario peut entraîner une erreur.
 
-L’exemple suivant est implémenté comme étape du workflow. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’instance active du workflow.
-Le nom du dossier de sortie est une combinaison de l’étape actuelle, du nom de fichier original et du préfixe spécifié dans le paramètre outPrefix.
+L’exemple suivant est implémenté comme étape de workflow. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’instance de workflow active.
+Le nom du dossier de sortie est une combinaison de l’étape actuelle, du nom de fichier d’origine et du préfixe spécifié dans le paramètre outPrefix.
 
 ECMAScript obtient une référence du service de contexte du workflow et crée une implémentation de l’interface de WorkflowContextProcessor. L’implémentation de WorkflowContextProcessor accepte les fichiers d’entrée, copie le fichier à un emplacement temporaire, puis renvoie un document représentant le fichier copié. Selon la valeur de la variable booléenne purgePrevious, l’étape actuelle supprime la sortie générée la dernière fois par la même étape lorsque l’étape a été lancée dans l’instance active du workflow. En fin de compte, la méthode wfSvc.execute est appelée pour l’implémentation de WorkflowContextProcessor. Le contenu du document de sortie est enregistré dans le dossier de résultats au chemin d’accès physique mentionné dans le nœud de configuration du dossier de contrôle.
 
@@ -568,7 +568,7 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.&#42;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Données`[0-9][0-9][0-9]` `[dD][aA]`&#39;port&#39;
+   * Données`[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
    * &#42;.`[dD][aA]`&#39;port&#39;
    * &#42;.`[Xx][Mm][Ll]`
 
@@ -611,7 +611,7 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
 
 1. Accédez à /etc/workflow/scripts et créez un dossier nommé PDFG.
 
-1. Dans le dossier PDFG, créez un fichier nommé pdfg-openOffice-sample.ecma, et ajoutez le code suivant dans le fichier : 
+1. Dans le dossier PDFG, créez un fichier nommé pdfg-openOffice-sample.ecma, et ajoutez le code suivant dans le fichier :
 
    ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
@@ -669,8 +669,8 @@ ECMAScript utilise l’API createPDF de PDF Generator pour convertir des docume
 
 1. Ajoutez les propriétés suivantes au nœud :
 
-   * folderPath (chaîne) : chemin du dossier à analyser à des intervalles de temps définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
-inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le workflow.
+   * folderPath (chaîne) : chemin d’accès du dossier à analyser à des intervalles de temps définis. Le dossier doit se trouver à un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
+inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce tutoriel, spécifiez le workflow.
 
    * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un workflow. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin d’accès suivant du workflow PDFG : /etc/workflow/models/pdfg/jcr:content/model
 

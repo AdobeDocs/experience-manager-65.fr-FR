@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
-workflow-type: ht
-source-wordcount: '729'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '743'
+ht-degree: 95%
 
 ---
 
@@ -36,7 +36,7 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 
 >[!CAUTION]
 >
->Le PID du magasin de nœuds de segment a été changé, en remplaçant org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 par org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Assurez-vous que les réglages de configuration nécessaires sont effectués afin que les modifications soient répercutées.
+>Le PID de la boutique de nœuds de segment a été remplacé par org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 par org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Assurez-vous que les ajustements de configuration nécessaires sont effectués afin que les modifications soient répercutées.
 
 Par défaut, AEM 6 utilise le stockage Tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Vous pouvez configurer manuellement ses paramètres de stockage en procédant comme suit :
 

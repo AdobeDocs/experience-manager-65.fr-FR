@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 93%
 
 ---
@@ -78,7 +78,7 @@ De plus, vous pouvez spécifier les instances de secours autorisées à se conne
 
 >[!NOTE]
 >
->Il est recommandé d’ajouter un équilibreur de charge entre Dispatcher et les serveurs qui font partie de la configuration Cold Standby. L’équilibreur de charge doit être configuré pour diriger le trafic de l’utilisateur ou de l’utilisatrice uniquement vers l’instance **principale**. Cela est nécessaire pour garantir la cohérence et empêcher la copie du contenu sur l’instance de secours par d’autres moyens que le mécanisme Cold Standby. 
+>Il est recommandé d’ajouter un équilibreur de charge entre Dispatcher et les serveurs qui font partie de la configuration Cold Standby. L’équilibreur de charge doit être configuré pour diriger le trafic de l’utilisateur ou de l’utilisatrice uniquement vers l’instance **principale**. Cela est nécessaire pour garantir la cohérence et empêcher la copie du contenu sur l’instance de secours par d’autres moyens que le mécanisme Cold Standby.
 
 ## Création d’une configuration TarMK Cold Standby AEM {#creating-an-aem-tarmk-cold-standby-setup}
 
@@ -105,11 +105,11 @@ Vous trouverez ci-dessous la procédure à suivre pour créer une configuration 
    1. Créez un dossier appelé `install.primary` sous `aem-primary/crx-quickstart/install`.
 
    1. Créez les configurations requises pour le magasin de nœuds et le magasin de données de votre choix dans `aem-primary/crx-quickstart/install/install.primary`.
-   1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` au même emplacement et configurez-le conformément aux exigences. Pour plus d’informations sur les options de configuration, consultez la section [Configuration](/help/sites-deploying/tarmk-cold-standby.md#configuration). 
+   1. Créez un fichier nommé `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` au même emplacement et configurez-le conformément aux exigences. Pour plus d’informations sur les options de configuration, consultez la section [Configuration](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
    1. Si vous utilisez une instance AEM TarMK avec magasin de données externe, créez un dossier nommé `crx3` sous `aem-primary/crx-quickstart/install`, nommé `crx3`.
 
-   1. Placez le fichier de configuration du magasin de données dans le dossier `crx3`. 
+   1. Placez le fichier de configuration du magasin de données dans le dossier `crx3`.
 
    Par exemple, si vous exécutez une instance AEM TarMK avec un magasin de données de fichiers externe, vous aurez besoin des fichiers de configuration suivants :
 
@@ -210,7 +210,7 @@ Vous trouverez ci-dessous la procédure à suivre pour créer une configuration 
 
 Le service peut également être configuré à l’aide de la console Web, en procédant comme suit :
 
-1. Accédez à la console web : *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console web : *:serverport/system/console/configMgr*
 1. Recherchez un service nommé **Apache Jackrabbit Oak Segment Tar Cold Standby Service** et double-cliquez dessus pour modifier les paramètres.
 1. Enregistrez les paramètres et redémarrez les instances pour que les nouveaux paramètres puissent prendre effet.
 
@@ -218,7 +218,7 @@ Le service peut également être configuré à l’aide de la console Web, en pr
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **secondaires** dans la console Web des paramètres Sling.
 >
->Pour ce faire, accédez à *https://localhost:4502/system/console/status-slingsettings* et vérifiez la ligne **« Modes d’exécution »**.
+>Pour ce faire, accédez à *:4502/system/console/status-slingsettings* et vérifiez la ligne **« Modes d’exécution »**.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -305,7 +305,7 @@ Si pour une raison quelconque l’instance principale échoue, vous pouvez chois
 >
 >Modifiez les fichiers de configuration afin qu’ils correspondent aux paramètres utilisés pour l’instance principale.
 
-1. Accédez à l’emplacement de l’instance de secours sur votre ordinateur et arrêtez-la. 
+1. Accédez à l’emplacement de l’instance de secours sur votre ordinateur et arrêtez-la.
 
 1. Si vous avez configuré un équilibreur de charge, vous pouvez supprimer l’instance principale à partir de la configuration de l’équilibreur de charge.
 1. Sauvegardez le dossier `crx-quickstart` depuis le dossier d’installation secondaire. Cela peut être utilisé comme point de départ lors de la configuration d’une nouvelle instance secondaire.
@@ -353,7 +353,7 @@ Ce nœud possède cinq attributs en lecture seule :
 * `FailedRequests:` le nombre d’erreurs consécutives.
 * `SecondsSinceLastSuccess:` nombre de secondes depuis la dernière communication réussie avec le serveur. La valeur `-1` s’affiche si aucune communication n’a été effectuée.
 
-Il existe également trois méthodes invocables : 
+Il existe également trois méthodes invocables :
 
 * `start():` lance le processus de synchronisation.
 * `stop():` arrête le processus de synchronisation.

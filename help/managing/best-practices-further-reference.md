@@ -11,7 +11,7 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3750'
 ht-degree: 100%
 
 ---
@@ -539,7 +539,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
    <td><a href="https://www.selenium.dev/">Selenium</a> est un outil de test en open-source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
   </tr>
   <tr>
-   <td>Microsoft® Project </td>
+   <td>Microsoft® Project</td>
    <td>Outil de gestion de projet couramment utilisé.</td>
   </tr>
   <tr>

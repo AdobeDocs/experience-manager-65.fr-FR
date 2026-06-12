@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3371'
-ht-degree: 100%
+source-wordcount: '3263'
+ht-degree: 99%
 
 ---
 
@@ -119,9 +119,9 @@ Quelques points importants à savoir concernant cette intégration :
 * Lorsque des ressources Adobe Stock sont enregistrées dans [!DNL Experience Manager], elles deviennent des ressources [!DNL Assets] standard, avec un binaire enregistré dans le référentiel [!DNL Experience Manager]. Certaines métadonnées liées à [!DNL Adobe Stock] sont enregistrées pour la ressource dans [!DNL Experience Manager]. Sinon, le processus d’ingestion ressemble à celui de tout autre fichier. Par exemple, si les balises intelligentes sont actives, les balises sont ajoutées à ces fichiers lors de l’enregistrement.
 * La ressource enregistrée dans [!DNL Experience Manager] est une copie et non un lien vers [!DNL Adobe Stock].
 
-**Utilisation des ressources enregistrées depuis [!DNL Adobe Stock] dans [!DNL Experience Manager], dans[!DNL Creative Cloud]**. Cette intégration est indépendante d’[!DNL Adobe Asset Link], mais [!DNL Adobe Asset Link] reconnaît ces ressources enregistrées depuis [!DNL Stock] de cette manière, et affiche des métadonnées supplémentaires et un logo [!DNL Adobe Stock] sur ces ressources dans l’interface utilisateur d’extension [!DNL Adobe Asset Link] dans [!DNL Photoshop], [!DNL Illustrator] ou [!DNL InDesign]. Les fichiers peuvent être parcourus, ouverts, etc., car ils deviennent des ressources standard lorsqu’ils sont enregistrés dans [!DNL Experience Manager].
-Les utilisateurs créatifs utilisant les applications [!DNL Creative Cloud] avec l’extension [!DNL Adobe Asset Link] ont accès aux ressources déjà sous licence d’[!DNL Adobe Stock] dans [!DNL Experience Manager] et peuvent aussi utiliser le panneau Bibliothèques de [!DNL Creative Cloud] pour rechercher, prévisualiser et obtenir des licences pour les ressources [!DNL Adobe Stock].
-Les [!DNL Assets] d’[!DNL Adobe Stock] sous licence et enregistrées dans [!DNL Experience Manager] sont accessibles aux équipes élargies qui accèdent à [!DNL Experience Manager Assets], tandis que les équipes créatives obtenant une licence pour des ressources d’[!DNL Adobe Stock] via le panneau Bibliothèques de [!DNL Creative Cloud] y ont uniquement accès par défaut dans leur compte [!DNL Creative Cloud].
+**Utilisation des ressources enregistrées depuis [!DNL Adobe Stock] dans [!DNL Experience Manager] dans[!DNL Creative Cloud]**. Cette intégration est indépendante de [!DNL Adobe Asset Link], mais [!DNL Adobe Asset Link] reconnaît ces ressources enregistrées depuis [!DNL Stock] de cette manière, et affiche des métadonnées supplémentaires et un logo [!DNL Adobe Stock] sur ces ressources dans [!DNL Adobe Asset Link]’interface utilisateur d’extension dans [!DNL Photoshop], [!DNL Illustrator] ou [!DNL InDesign]. Les fichiers peuvent être parcourus, ouverts, etc., car ils deviennent des ressources standard lorsqu’ils sont enregistrés dans [!DNL Experience Manager].
+Les utilisateurs de Creative qui travaillent dans des applications [!DNL Creative Cloud] avec [!DNL Adobe Asset Link] extension ont accès aux ressources déjà sous licence d’[!DNL Adobe Stock] à [!DNL Experience Manager], mais ils peuvent également utiliser [!DNL Creative Cloud] panneau Bibliothèques pour rechercher, prévisualiser et obtenir des licences pour les ressources [!DNL Adobe Stock].
+Les [!DNL Assets] d’[!DNL Adobe Stock] sous licence et enregistrées dans [!DNL Experience Manager] sont accessibles aux équipes élargies qui accèdent à [!DNL Experience Manager Assets] déploiement, tandis que les équipes créatives obtenant une licence pour des ressources d’[!DNL Adobe Stock] via [!DNL Creative Cloud] panneau Bibliothèques de y ont uniquement accès par défaut dans leur compte [!DNL Creative Cloud].
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.

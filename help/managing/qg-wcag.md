@@ -7,8 +7,8 @@ feature: Compliance
 role: Developer, Leader, User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1880'
+ht-degree: 91%
 
 ---
 
@@ -40,14 +40,14 @@ Par conséquent, la compréhension des objectifs de WCAG 2.1 et de la structure
 
 L’objectif de WCAG 2.1 est de fournir des consignes présentant les caractéristiques suivantes :
 
-* **Agnostiques en ce qui concerne la technologie :**
-En d’autres termes, des consignes qui peuvent être appliquées à divers formats de contenu web, pas seulement au format HTML. Ainsi, WCAG 2.1 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures.
+* Sont-ils **indépendants de la technologie :**
+En d’autres termes, il s’agit de directives applicables à tout un éventail de formats de contenu web, et pas seulement à HTML. Ainsi, WCAG 2.1 peut couvrir le contenu généré par ou fourni au format PDF, Flash, JavaScript, ainsi que d’autres technologies web actuelles et futures.
 
-* **Testables** :
-Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
+* Sont **testables :**
+Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de manière générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
-* Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept d’*accessibilité prise en charge* est introduit. Cela permet aux auteurs et autrices de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas prendre en charge l’accessibilité totale, ou peut nécessiter que les utilisateurs et utilisatrices disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+* Prise en charge **implémentation hiérarchisée et contextuelle :**
+Les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du non-respect d’une consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, le concept d’*accessibilité prise en charge* est introduit. Cela permet aux auteurs et autrices de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas prendre en charge l’accessibilité totale, ou peut nécessiter que les utilisateurs et utilisatrices disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
@@ -69,12 +69,12 @@ WCAG 2.1 est constitué de quatre principes clés de conception accessible, par
 Développons :
 * Chaque **principe** se compose d’une ou de plusieurs **recommandations**.
 
-* Les recommandations sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
+* Les directives sont formulées sous forme d’instructions, qui sont soit positives (Faites ceci...) ou négatif (ne le faites pas...).
 * Les recommandations sont numérotées de 1.1 à 4.1, le premier numéro correspondant au principe parent.
 * Chaque recommandation est composée d’un ou de plusieurs **critères de réussite**.
 * Les critères de réussite sont écrits sous la forme d’instructions, qui sont `True` ou `False` pour n’importe quelle page web donnée.
 * Les critères de réussite sont soit des choix soit des exceptions, c’est-à-dire des situations dans lesquelles les critères de réussite ne doivent pas nécessairement être respectés.
-* Les critères de réussite sont numérotés selon la recommandation et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court résumant l’intention du critère, à titre de référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
+* Les critères de réussite sont numérotés selon la ligne directrice et le principe de base, de 1.1.1 à 4.1.1. Ils ont également un nom court résumant l’intention du critère, pour une référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
 * Les critères de réussite incluent une liste de **techniques** associées (décrites plus en détail ci-dessous).
 
 ## Ressources annexes {#supporting-resources}
@@ -86,12 +86,12 @@ En tant que tel, WCAG 2.1 est un document stable qui ne changera pas. Toutefois
 ### Ressources WCAG 2.1 {#wcag-resources}
 
 Cette liste ne vise pas à être exhaustive, mais présente les ressources disponibles :
-* [Présentation de tous les documents relatifs à WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
-* [Résumé des différents documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [Une présentation de tous les documents liés au WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Un résumé des différents documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-* [Nouveautés de WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
-* [Guide de référence rapide pour respecter WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
-* [Questions fréquemment posées concernant WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
+* [Nouveautés de WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [Guide de référence rapide pour la conformité au WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+* [Questions fréquentes sur WCAG 2](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
 
 ### Nouveautés de WCAG 2.1 {#what-is-new}

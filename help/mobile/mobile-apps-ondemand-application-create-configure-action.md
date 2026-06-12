@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Les détails de votre application sont visibles dans le tableau de bord ou dans 
 >
 >Le tableau de bord est une série de mosaïques utiles qui donnent un aperçu du contenu, des métadonnées et de l’état de la connexion On-Demand AEM Mobile de l’application.
 >
->Voir [Tableau de bord de l’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
+>Voir [Tableau de bord de l’application &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
 
 **Pour créer une application à la demande, procédez comme suit**
 
@@ -51,7 +51,7 @@ Les détails de votre application sont visibles dans le tableau de bord ou dans 
 
 ## Utilisation de modèles d’application {#using-app-templates}
 
-Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications au sein d’AEM.
+Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications dans AEM.
 
 Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une ligne de base ou la base d’une application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtenez une application qui dispose d’un point de départ représentatif de l’application à partir de laquelle elle a été créée.
@@ -74,7 +74,7 @@ Les **actions de gestion de contenu** impliquent la création et la gestion des 
 * [Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Chargement des ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Dépublication de contenu par Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publier/Dépublier le contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 

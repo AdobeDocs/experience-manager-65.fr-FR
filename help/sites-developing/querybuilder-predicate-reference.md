@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >
 >Pour obtenir un exemple, reportez-vous à :
 >
->* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Général {#general}
 
@@ -71,10 +71,10 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 #### Propriétés {#properties}
 
 * **boolproperty**
-Chemin d’accès relatif à une propriété, par exemple, `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
+Chemin d’accès relatif à la propriété, par exemple `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`.
 
 * **value**
-Valeur pour laquelle vérifier la propriété, « `true` » ou « `false` ».
+Valeur pour laquelle vérifier la propriété : « `true` » ou « `false` ».
 
 ### contentfragment {#contentfragment}
 
@@ -87,7 +87,7 @@ Ne prend pas en charge l’extraction de facettes.
 #### Propriétés {#properties-1}
 
 * **contentfragment**
-Peut être utilisé avec n’importe quelle valeur pour rechercher des fragments de contenu.
+Elle peut être utilisée avec n’importe quelle valeur pour rechercher des fragments de contenu.
 
 ### dateComparison {#datecomparison}
 
@@ -111,8 +111,8 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’
 
 ### daterange {#daterange}
 
-Met en correspondance les propriétés DATE JCR par rapport à un intervalle de date/heure. Il utilise le format ISO8601
-pour les dates et heures (`YYYY-MM-DDTHH:mm:ss.SSSZ`) et autorise les représentations partielles, comme `YYYY-MM-DD`. Vous pouvez également fournir la date et l’heure sous la forme du nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC, le format d’heure UNIX®.
+Met en correspondance les propriétés DATE JCR par rapport à un intervalle de date/heure. Cette méthode utilise l’ISO8601 .
+format des dates et des heures ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) et autorise les représentations partielles, comme les `YYYY-MM-DD`. Vous pouvez également fournir la date et l’heure sous la forme du nombre de millisecondes écoulées depuis 1970 dans le fuseau horaire UTC, le format d’heure UNIX®.
 
 Vous pouvez rechercher tout ce qui se trouve entre deux horodatages, un élément plus récent ou plus ancien qu’une date donnée, et également choisir entre des intervalles inclusifs et ouverts.
 
@@ -381,7 +381,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&amp;ast;/taille et le nœud/&amp;ast;/&amp;ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
 
 ### rangeproperty {#rangeproperty}
 
@@ -463,7 +463,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.guessTotal**
 
-  Recommandé : évitez de calculer le total des résultats, une opération qui peut s’avérer fastidieuse ; il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1 000, un nombre qui offre aux utilisateurs et utilisatrices suffisamment d’informations sur la taille approximative et des valeurs exactes pour des résultats plus petits), ou « `true` » pour compter seulement jusqu’au minimum requis `p.offset`+`p.limit`.
+  Recommandé : évitez de calculer le total des résultats, une opération qui peut s’avérer fastidieuse ; il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1 000, un nombre qui offre aux utilisateurs et utilisatrices suffisamment de feedback sur la taille approximative et des valeurs exactes pour des résultats plus petits), soit de « `true` » pour compter seulement jusqu’au minimum requis `p.offset`+`p.limit`.
 
 * **p.excerpt**
 
@@ -471,7 +471,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.hits**
 
-   (uniquement pour le servlet JSON) Sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
+  (uniquement pour le servlet JSON) Sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
 
    * **simple** :
 
@@ -483,7 +483,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
    * **selective** :
 
-     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils seront représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
+     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils sont représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
 
 ### savedquery {#savedquery}
 
@@ -509,11 +509,11 @@ Ne prend pas en charge le filtrage. Ne prend pas en charge l’extraction de fac
 
 #### Propriétés {#properties-20}
 
-* **similar**
-Chemin d’accès absolu au nœud pour lequel des nœuds similaires sont recherchés.
+* **similaire**
+Chemin d’accès absolu au nœud pour lequel rechercher des nœuds similaires.
 
 * **local**
-Un chemin relatif vers un nœud descendant ou `.` pour le nœud actif (facultatif, la valeur par défaut est« `.` »).
+Chemin d’accès relatif à un nœud descendant ou `.` pour le nœud actuel (facultatif, la valeur par défaut est « `.` »).
 
 ### tag {#tag}
 

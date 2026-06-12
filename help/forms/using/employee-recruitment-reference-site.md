@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ Sarah clique sur Postuler à une offre d’emploi. Le formulaire de candidature 
 
 ### Fonctionnement {#how-it-works}
 
-La page d’accueil et la page Carrières de We.Finance sont des pages d’AEM Sites. La page Carrières comprend un formulaire adaptatif, qui utilise un panneau répétable pour récupérer les offres d’emploi à l’aide d’un service et les répertorier sur la page. Vous pouvez consulter le formulaire adaptatif à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+La page d’accueil et la page Carrières de We.Finance sont des pages d’AEM Sites. La page Carrières incorpore un formulaire adaptatif, qui utilise un panneau répétable pour récupérer les offres d’emploi à l’aide d’un service et les répertorier sur la page. Vous pouvez consulter le formulaire adaptatif à l’adresse `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Démonstration {#see-it-yourself}
 

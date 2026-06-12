@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
-ht-degree: 100%
+source-wordcount: '3628'
+ht-degree: 98%
 
 ---
 
@@ -131,7 +131,7 @@ Procédez comme suit pour spécifier les valeurs par défaut des champs **Titre*
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le nœud cq:editConfig, consultez [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   >Pour plus d’informations sur le nœud cq:editConfig, voir [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Sous le nœud `cq:EditConfig`, ajoutez le nœud suivant :
 
@@ -175,14 +175,14 @@ Chaque composant d’étape de base permet à l’équipe de développement des 
 
 Pour cibler le composant en vue de l’utiliser dans un scénario de workflow spécifique, configurez la fonctionnalité clé dans la conception et supprimez la possibilité pour les équipes de développement de modèles de la modifier.
 
-1. Sous le nœud cq:component, ajoutez le nœud suivant :
+1. Sous le nœud cq:component, ajoutez le nœud suivant :
 
    * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
 
-   Pour plus d’informations sur le nœud cq:editConfig, consultez [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   Pour plus d’informations sur le nœud cq:editConfig, voir [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
+1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
 
    * Nom : `cq:formParameters`
    * Type : `nt:unstructured`
@@ -215,9 +215,9 @@ Effectuez la procédure suivante sur votre nouveau composant (voir [Création de
    * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
 
-   Pour plus d’informations sur le nœud cq:editConfig, consultez [Configuration du comportement de modification d’un composant](/help/sites-developing/components-basics.md#edit-behavior).
+   Pour plus d’informations sur le nœud cq:editConfig, voir [Configuration du comportement de modification d’un composant](/help/sites-developing/components-basics.md#edit-behavior).
 
-1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
+1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
 
    * Nom : `cq:formParameters`
    * Type : `nt:unstructured`

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '999'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Pour en savoir plus sur les dernières fonctionnalités et améliorations d’AEM Forms, voir [Nouveautés d’AEM Forms](../../forms/using/whats-new.md).

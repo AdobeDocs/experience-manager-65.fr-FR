@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 100%
+source-wordcount: '703'
+ht-degree: 91%
 
 ---
 
@@ -81,7 +81,7 @@ La mise à niveau d’AEM est un processus en plusieurs étapes, parfois sur plu
 
 Le diagramme ci-dessous capture le flux global recommandé pour mettre en évidence l’approche de mise à niveau. Notez la référence aux nouvelles fonctionnalités introduites par Adobe. La mise à niveau doit commencer par le détecteur de modèles (voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de modèles](/help/sites-deploying/pattern-detector.md)) qui vous permet de déterminer la voie à emprunter pour la compatibilité avec AEM 6.4 sur la base des modèles du rapport généré.
 
-Dans la version 6.5, nous avons mis un point d’honneur à ce que toutes les fonctionnalités soient rétrocompatibles. Cependant, si vous constatez des problèmes de rétrocompatibilité, le mode de compatibilité vous permet de différer temporairement le développement, de sorte que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous dispense des activités de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+Dans la version 6.5, nous avons mis un point d’honneur à ce que toutes les nouvelles fonctionnalités soient rétrocompatibles. Cependant, si vous constatez des problèmes de rétrocompatibilité, le mode de compatibilité vous permet de différer temporairement le développement, de sorte que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous permet d’éviter tout effort de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 Enfin, dans le cadre de votre cycle de développement 6.5, les fonctionnalités ajoutées sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques afin de rendre les prochaines mises à niveau encore plus simples et transparentes.
 

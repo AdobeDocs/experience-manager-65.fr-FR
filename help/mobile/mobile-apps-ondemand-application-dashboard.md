@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -79,9 +79,9 @@ La mosaïque **Gérer les bannières** permet de gérer le contenu d’une banni
 * image
 * **TITRE** : nom de la bannière
 * **MODIFIÉ** : dernière modification dans AEM
-* **UPLOADED** : dernier chargement depuis AEM
-* **PUBLIÉ** : dernier formulaire de demande publié par AEM
-* **SOURCE** : source (AEM local ou distant de Mobile On Demand)
+* **CHARGÉ** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernière demande publiée par AEM
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On Demand)
 
 L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau de bord de l’application AEM Mobile :
 
@@ -98,9 +98,9 @@ La mosaïque **Gérer les articles** permet de gérer le contenu d’un article.
 * image
 * **TITRE** : nom de l’article
 * **MODIFIÉ** : dernière modification dans AEM
-* **UPLOADED** : dernier chargement depuis AEM
-* **PUBLIÉ** : dernier formulaire de demande publié par AEM
-* **SOURCE** : source (AEM local ou distant de Mobile On-Demand)
+* **CHARGÉ** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernière demande publiée par AEM
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les articles** dans le tableau de bord de l’application AEM Mobile :
 
@@ -117,9 +117,9 @@ La mosaïque **Gérer les collections** permet de gérer le contenu d’une coll
 * image
 * **TITLE** : nom de la collection
 * **MODIFIÉ** : dernière modification dans AEM
-* **UPLOADED** : dernier chargement depuis AEM
-* **PUBLIÉ** : dernier formulaire de demande publié par AEM
-* **SOURCE** : source (AEM local ou distant de Mobile On-Demand)
+* **CHARGÉ** : dernier chargement depuis AEM
+* **PUBLIÉ** : dernière demande publiée par AEM
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les collections** dans le tableau de bord de l’application AEM Mobile :
 

@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 97%
 
 ---
 
@@ -137,7 +137,7 @@ Bien que cela ne soit pas directement lié à une migration vers l’interface u
 
 * [Modèles](/help/sites-developing/templates.md) - [Modèles modifiables](/help/sites-developing/page-templates-editable.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr)
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ Bien que cela ne soit pas directement lié à une migration vers l’interface u
 Pour plus d’informations sur le développement d’AEM, consultez la collection de ressources sous :
 
 * [Guide de l’utilisateur pour le développement](/help/sites-developing/getting-started.md)
-* [Documentation relative à l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
-* [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr)
+* [Documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
+* [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

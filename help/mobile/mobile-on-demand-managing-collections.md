@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ Les collections représentent un *compartiment* bien défini, rempli d’un cont
 >
 >Consultez les ressources suivantes de l’aide en ligne pour en savoir plus sur les rubriques suivantes des applications AEM Mobile :
 >
->* [Considérations de conception](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gestion des collections](https://helpx.adobe.com/fr/digital-publishing-solution/help/creating-collections.html)
+>* [Gestion des collections](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Création d’une collection {#creating-a-collection}
@@ -69,12 +69,12 @@ Workflow d’importation d’une nouvelle collection
 
 ## Modification d’une collection {#editing-a-collection}
 
-Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
+Utilisez l’éditeur de glisser-déposer intégré d’AEM pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
 
 Workflow de modification d’une collection :
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article d’origine AEM dans la mosaïque **Gérer les collections**.
+1. Sélectionnez un article provenant d’AEM dans la mosaïque **Gérer les collections**.
 1. Cliquez sur la collection en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la collection (manuscrits, images, texte, etc.).
 
@@ -106,7 +106,7 @@ Workflow général de chargement d’une collection :
 
 ## Suppression d’une collection {#deleting-a-collection}
 
-Cette opération supprime la collection sélectionnée de Mobile On-Demand et, éventuellement, de l&#39;instance AEM locale.
+Cette opération supprime la collection sélectionnée de Mobile On-Demand et, éventuellement, de l’instance AEM locale.
 
 Workflow général de suppression d’une collection :
 
@@ -114,7 +114,7 @@ Workflow général de suppression d’une collection :
 1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les collections**.
 1. Assurez-vous qu’il est sélectionné dans la liste. Sélectionnez d’autres éléments à supprimer selon vos besoins.
 1. Cliquez sur **Supprimer** dans la barre d’actions.
-1. Cochez cette case si vous souhaitez supprimer d’AEM et Mobile On-Demand.
+1. Cochez la case si vous souhaitez effectuer une suppression dans AEM et Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre collection est maintenant supprimée de la liste.
 

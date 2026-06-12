@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '4828'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '4949'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ Avant toute discussion sérieuse sur le développement de composants, vous devez
 * **Interface utilisateur optimisée pour les écrans tactiles**
   L’[interface utilisateur standard](/help/sites-developing/touch-ui-concepts.md) repose sur l’expérience utilisateur unifiée d’Adobe Experience Cloud, et utilise les technologies sous-jacentes de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU classique**
-Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 6.4.
+Interface utilisateur basée sur la technologie ExtJS obsolète avec AEM 6.4.
 
 Voir [Recommandations de l’interface utilisateur pour les clientes et clients](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
@@ -62,7 +62,7 @@ Cette page présente les principes de base de ces deux IU et explique comment le
 >
 >Adobe recommande d’utiliser l’interface utilisateur tactile pour bénéficier des dernières technologies. Les [Outils de modernisation d’AEM](modernization-tools.md) peuvent faciliter la migration.
 
-### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
+### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
 Adobe recommande de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -93,11 +93,11 @@ Pour commencer rapidement, une méthode consiste à copier un élément existant
 
 ### Déplacement de composants vers l’instance de publication {#moving-components-to-the-publish-instance}
 
-Les composants de rendu de contenu doivent être déployés sur la même instance AEM que le contenu. Par conséquent, tous les composants utilisés pour la création et le rendu des pages sur l’instance d’auteur doivent être déployés sur l’instance de publication. Une fois déployés, les composants sont disponibles pour le rendu des pages activées.
+Les composants de rendu de contenu doivent être déployés sur la même instance AEM que le contenu. Par conséquent, tous les composants utilisés pour la création et le rendu des pages sur l’instance de création doivent être déployés sur l’instance de publication. Une fois déployés, les composants sont disponibles pour le rendu des pages activées.
 
 Utilisez les outils suivants pour déplacer vos composants vers l’instance de publication :
 
-* [Utilisez le gestionnaire de packages](/help/sites-administering/package-manager.md) pour ajouter vos composants à un package et les déplacer vers une autre instance AEM.
+* [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour ajouter vos composants à un package et les déplacer vers une autre instance AEM.
 * [Utilisez l’outil de réplication Activer l’arborescence](/help/sites-authoring/publishing-pages.md#manage-publication) pour répliquer les composants.
 
 >[!NOTE]
@@ -191,7 +191,7 @@ La définition d’un composant peut être décomposée comme suit :
 
    * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants ou le sidekick.
 
-     Remarque : si le composant possède une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
+     Remarque : si le composant possède une boîte de dialogue, elle s’affiche automatiquement dans l’explorateur de composants ou dans Sidekick, même si le cq:editConfig n’existe pas.
 
    * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
    * Interface utilisateur optimisée pour les écrans tactiles :
@@ -262,14 +262,14 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
    <td><strong>Description <br /> </strong></td>
   </tr>
   <tr>
-   <td><br /> </td>
+   <td>.<br /> </td>
    <td><code>cq:Component</code></td>
    <td>Composant actif. Un composant possède le type de nœud <code>cq:Component</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Groupe sous lequel le composant peut être sélectionné dans le navigateur de composants (IU tactile) ou le sidekick (IU classique).<br />Une valeur <code>.hidden</code> est utilisée pour les composants qui ne sont pas sélectionnables dans l’IU, tels que les systèmes de paragraphes réels.</td>
+   <td>Groupe sous lequel le composant peut être sélectionné dans le navigateur de composants (IU tactile) ou Sidekick (IU classique).<br /> Une valeur <code>.hidden</code> est utilisée pour les composants qui ne sont pas sélectionnables dans l’interface utilisateur, tels que les systèmes de paragraphes réels.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -344,7 +344,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Chemin d’accès à un nœud à utiliser comme modèle de contenu lorsque le composant est ajouté depuis le navigateur de composants ou le sidekick. Il doit s’agir d’un chemin d’accès absolu et non relatif au nœud de composant.<br />Sauf si vous souhaitez réutiliser du contenu déjà disponible ailleurs, cela n’est pas obligatoire, et <code>cq:template</code> est suffisant (voir ci-dessous).</td>
+   <td>Chemin d’accès à un nœud à utiliser comme modèle de contenu lorsque le composant est ajouté depuis le navigateur de composants ou le sidekick. Il doit s’agir d’un chemin d’accès absolu, et non relatif au nœud de composant.<br /> Sauf si vous souhaitez réutiliser du contenu déjà disponible ailleurs, cela n’est pas obligatoire et <code>cq:template</code> est suffisant (voir ci-dessous).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -572,7 +572,7 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
       * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
       * Dans l’IU tactile, une seule cible est autorisée.
 
-   * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
+   * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
    * `cq:formParameters` (type de nœud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de la boîte de dialogue.
    * `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) : définit une configuration de modification en place pour le composant.
    * `cq:listeners` (type de nœud `cq:EditListenersConfig`) : définit ce qui se passe avant ou après une action sur le composant.
@@ -607,8 +607,8 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
 Les composants doivent toujours générer du code HTML visible par l’auteur ou l’autrice, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs et autrices ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
-L’annotation HTML type d’un espace réservé est la suivante :
+Pour cette raison, les composants doivent générer un espace réservé tant qu’ils ne génèrent aucune sortie visible lorsque la page est générée dans l’éditeur de page (lorsque le mode de gestion de contenu Web est `edit` ou `preview`).
+Voici un exemple type de balisage HTML pour un espace réservé :
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -709,11 +709,11 @@ La propriété `cq:layout` (`String`) définit la façon dont le composant peut 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Valeur par défaut. La modification de composant est accessible par survol de la souris, via des clics et/ou un menu contextuel.<br /> Pour une utilisation avancée, l’objet côté client correspondant est : <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Valeur par défaut. La modification du composant est accessible par survol de la souris, via des clics et/ou un menu contextuel.<br /> Pour une utilisation avancée, l’objet côté client correspondant est : <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>L’édition du composant est accessible par le biais d’une barre d’outils.<br /> Pour une utilisation avancée, l’objet côté client correspondant est : <code>CQ.wcm.EditBar</code>.</td>
+   <td>L’édition du composant est accessible par le biais d’une barre d’outils.<br /> Pour une utilisation avancée, l’objet côté client correspondant est : <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -816,7 +816,8 @@ Le `<drag and drop prefix>` est défini par la propriété Java™ :
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-Par exemple, le nom de la classe est défini comme suit dans le JSP du composant Télécharger (`/libs/foundation/components/download/download.jsp`) où `file` correspond au nom de nœud de la cible de dépôt dans la configuration de modification du composant Télécharger :
+Par exemple, le nom de la classe est défini comme suit dans le JSP du composant Télécharger :
+(`/libs/foundation/components/download/download.jsp`), où `file` est le nom de nœud de la cible de dépôt dans la configuration de modification du composant Télécharger :
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -972,7 +973,7 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
   </tr>
   <tr>
    <td><code>beforeinsert</code></td>
-   <td>Le gestionnaire est déclenché avant l’insertion du composant.<br /> Valide uniquement pour l’IU tactile.</td>
+   <td>Le gestionnaire est déclenché avant l’insertion du composant.<br /> Uniquement opérationnel pour l’IU tactile.</td>
    <td> </td>
   </tr>
   <tr>

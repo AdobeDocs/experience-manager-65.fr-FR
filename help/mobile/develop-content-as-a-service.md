@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,14 @@ Cela inclut l’utilisation de ressources, de contenu de site, de contenu CaaS (
 Il existe trois principaux types de documents fournis par Content Services :
 
 1. **Assets**
-1. **Contenu d’HTML empaqueté (HTML/CSS/JS)**
+1. **Contenu HTML empaqueté (HTML/CSS/JS)**
 1. **Contenu indépendant du canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Ressources {#assets}
+## Assets {#assets}
 
-Les collections de ressources sont des éléments AEM qui contiennent des références à d’autres collections.
+Les collections de ressources sont des éléments d’AEM qui contiennent des références à d’autres collections.
 
 Une collection de ressources peut être exposée via Content Services. L’appel d’une collection de ressources dans une requête renvoie un objet qui est une liste des ressources, y compris leurs URL. Les Assets sont accessibles via une URL. L’URL est fournie dans un objet . Par exemple :
 
@@ -54,20 +54,20 @@ L’optimisation des ressources est une fonction côté serveur, basée sur les 
 
 Le workflow des ressources se présente comme suit :
 
-1. Référence des ressources disponible dans AEM prêt à l’emploi
+1. Référence de ressource disponible dans AEM prêt à l’emploi
 1. Créer une entité de référence de ressource en fonction de son modèle
 1. Modifier l’entité
 
    1. Choisir une ressource ou une collection de ressources
    1. Personnaliser le rendu JSON
 
-Le diagramme suivant illustre le workflow de référence **Assets** :
+Le diagramme suivant illustre le workflow de référence **&#x200B;**&#x200B;:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
 ### Gestion des ressources {#managing-assets}
 
-Content Services permet d’accéder aux ressources gérées par AEM qui ne peuvent pas être référencées par d’autres contenus AEM.
+Content Services donne accès aux ressources gérées par AEM qui ne peuvent pas être référencées par d’autres contenus AEM.
 
 #### Managed Assets existant {#existing-managed-assets}
 
@@ -83,7 +83,7 @@ Actuellement, ils sont répartis autour du référentiel Assets. Les fichiers qu
 
 #### Accès aux entités de ressources CS {#accessing-cs-asset-entities}
 
-Mettons de côté les étapes de la mise à disposition de la page par le biais de l’API pour l’instant (elle est couverte par la description de l’interface utilisateur d’AEM) et supposons qu’elle a été effectuée. Des entités de ressource ont été créées et ajoutées à l’espace « appImages ». D’autres dossiers ont été créés sous l’espace à des fins d’organisation. Les entités de ressource sont donc stockées dans le JCR AEM sous la forme :
+Mettons de côté les étapes de la mise à disposition de la page par le biais de l’API pour l’instant (elle est couverte par la description de l’interface utilisateur d’AEM) et supposons qu’elle a été effectuée. Des entités de ressource ont été créées et ajoutées à l’espace « appImages ». D’autres dossiers ont été créés sous l’espace à des fins d’organisation. Les entités de ressource sont donc stockées dans le JCR AEM en tant que :
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark
@@ -105,30 +105,30 @@ Le fichier JSON fournit une URL pour chaque image générée par Content Service
 
 Pour obtenir le fichier binaire de l’image « cart » (panier), la bibliothèque cliente est de nouveau utilisée.
 
-## Contenu d’HTML empaqueté {#packaged-html-content}
+## Contenu HTML empaqueté {#packaged-html-content}
 
-Un contenu HTML est nécessaire pour les clients qui doivent conserver la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web, tel qu’une vue web Cordova, afin d’afficher le contenu.
+Le contenu HTML est nécessaire pour les clients qui doivent conserver la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web, tel qu’une vue web Cordova, afin d’afficher le contenu.
 
-AEM Content Services fournit du contenu HTML à l’application mobile au moyen de l’API . Les clients qui souhaitent exposer du contenu AEM en tant qu’HTML peuvent créer une entité de page d’HTML qui pointe vers la source de contenu AEM.
+AEM Content Services fournit du contenu HTML à l’application mobile au moyen de l’API . Les clients qui souhaitent exposer du contenu AEM en tant qu’HTML peuvent créer une entité de page HTML qui pointe vers la source de contenu AEM.
 
 Les options suivantes sont prises en compte :
 
-* **Fichier Zip :** pour optimiser les chances de s’afficher correctement sur l’appareil, les documents référencés de la page, tels que css, JavaScript, assets, etc., sont inclus dans un seul fichier compressé avec la réponse . Les références de la page d’HTML peuvent être ajustées afin d’utiliser un chemin d’accès relatif à ces fichiers.
-* **Streaming :** obtention d&#39;un manifeste des fichiers requis d&#39;AEM. Utilisez ensuite ce manifeste pour demander tous les fichiers (HTML, CSS, JS, etc.) avec les requêtes suivantes.
+* **Fichier Zip :** pour optimiser les chances de s’afficher correctement sur l’appareil, les documents référencés de la page, tels que css, JavaScript, assets, etc., sont inclus dans un seul fichier compressé avec la réponse . Les références de la page HTML peuvent être ajustées afin d’utiliser un chemin d’accès relatif à ces fichiers.
+* **Streaming :** obtention d&#39;un manifeste des fichiers requis depuis AEM. Utilisez ensuite ce manifeste pour demander tous les fichiers (HTML, CSS, JS, etc.) avec les requêtes suivantes.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
 ## Contenu indépendant du canal {#channel-independent-content}
 
-Le contenu indépendant du canal permet de présenter des éléments de contenu AEM, tels que des pages, sans se soucier de la mise en page, des composants ou d’autres informations spécifiques au canal.
+Le contenu indépendant du canal permet d’exposer les éléments de contenu d’AEM, tels que les pages, sans se soucier de la disposition, des composants ou d’autres informations spécifiques au canal.
 
-Ces entités de contenu sont générées à l’aide d’un modèle de contenu pour traduire les structures AEM au format JSON. Les données JSON obtenues contiennent des informations sur les données du contenu qui sont découplées du référentiel AEM. Cela inclut le renvoi de métadonnées et de liens de référence AEM aux ressources et les relations entre les structures de contenu, y compris la hiérarchie des entités.
+Ces éléments de contenu sont générés à l’aide d’un modèle de contenu pour traduire les structures AEM au format JSON. Les données JSON obtenues contiennent des informations sur les données du contenu qui sont découplées du référentiel AEM. Cela inclut le renvoi des métadonnées et des liens de référence AEM aux ressources et les relations entre les structures de contenu, y compris la hiérarchie des entités.
 
 ### Gestion de contenu indépendant du canal {#managing-channel-independent-content}
 
 Le contenu peut accéder à l’application de plusieurs façons.
 
-1. GET ZIPS par le biais d&#39;AEM Over-the-Air
+1. OBTENIR du contenu ZIP par le biais d’AEM Over-the-Air
 
    * Les gestionnaires de synchronisation de contenu peuvent mettre à jour le package zip directement ou en appelant les moteurs de rendu de contenu existants
 
@@ -136,7 +136,7 @@ Le contenu peut accéder à l’application de plusieurs façons.
       * Gestionnaires AEM
       * Gestionnaires personnalisés
 
-1. GET de contenu directement par le biais de rendus de contenu
+1. OBTENIR du contenu directement au moyen de rendus de contenu
 
    * Rendus Sling par défaut prêts à l’emploi
    * AEM Mobile/Content Services Content Renderers

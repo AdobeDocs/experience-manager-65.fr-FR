@@ -1,6 +1,6 @@
 ---
 title: Textes dans les communications interactives
-description: 'Créer et modifier des fragments de document texte à utiliser dans les communications interactives : le texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de conditions, de listes et de disposition.  '
+description: 'Créer et modifier des fragments de document texte à utiliser dans les communications interactives : le texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de conditions, de listes et de disposition.'
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 100%
 
 ---
@@ -103,7 +103,7 @@ Les variables sont des espaces réservés qui peuvent être liés lors de la cr�
 Vous pouvez utiliser des variables au lieu de propriétés de modèle de données de formulaire lorsque :
 
 * Un fragment de document texte doit être utilisé dans plusieurs communications interactives où la liaison doit être différente pour différentes communications interactives.
-* Le fragment de document texte ne dispose pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ensuite aux propriétés du modèle de données du formulaire au moment de la création de la communication interactive.
+* Le fragment de document texte ne dispose pas de modèle de données de formulaire au moment de sa création. Vous pouvez insérer des variables et les lier ensuite aux propriétés du modèle de données de formulaire au moment de la création de la communication interactive.
 * Vous devez lier et récupérer du texte à partir d’un fragment de document texte. Seuls ces fragments de document texte peuvent être liés à des variables qui ne contiennent aucune variable.
 
 Lors de la création ou de la modification d’un fragment de document texte, vous pouvez créer et insérer des variables. Les variables que vous créez apparaissent dans l’onglet Données de l’interface utilisateur de l’agent. L’agent spécifie les valeurs des variables lors de la [préparation et de l’envoi d’une communication interactive à l’aide de l’interface utilisateur de l’agent](/help/forms/using/prepare-send-interactive-communication.md).

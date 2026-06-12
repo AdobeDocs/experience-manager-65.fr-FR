@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '620'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-authoring/default-components-foundation.md).
 
-## Que sont les composants ?  {#what-exactly-is-a-component}
+## Que sont les composants ? {#what-exactly-is-a-component}
 
 * sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web ;
 * peuvent être réutilisés ;
@@ -66,7 +66,7 @@ Deux ensembles de composants AEM fournis par Adobe sont disponibles :
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Composants de base](/help/sites-authoring/default-components-foundation.md)
 
-**Les composants principaux** ont été introduits dans AEM 6.3. Ils offrent des fonctionnalités de création à la fois souples et particulièrement puissantes. Le [site de référence We.Retail](/help/sites-developing/we-retail.md) illustre la manière dont ces composants peuvent être utilisés et présente les bonnes pratiques en termes de développement de composants.
+**Les composants principaux** ont été introduits dans AEM 6.3. Ils offrent des fonctionnalités de création à la fois souples et particulièrement puissantes. Le [site de référence We.Retail](/help/sites-developing/we-retail.md) illustre la manière dont les composants principaux peuvent être utilisés et présente les bonnes pratiques actuelles en termes de développement de composants.
 
 Les **composants de base** sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Bien que ces composants soient toujours pris en charge, la plupart d’entre eux sont obsolètes, reposent sur des technologies plus anciennes et leur développement a été arrêté.
 

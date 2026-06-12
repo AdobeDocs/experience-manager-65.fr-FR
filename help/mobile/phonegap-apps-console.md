@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2617'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 {{ue-over-mobile}}
 
-Le processus de développement des applications mobiles d&#39;AEM reconnaît que les utilisateurs de différentes expertises contribuent au développement des applications mobiles. La cartographie des processus suivante illustre l’ordre général dans lequel les auteurs de contenu et les développeurs d’applications effectuent les tâches.
+Le processus de développement des applications mobiles AEM reconnaît que les utilisateurs ayant des expertises différentes contribuent au développement des applications mobiles. La cartographie des processus suivante illustre l’ordre général dans lequel les auteurs de contenu et les développeurs d’applications effectuent les tâches.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -72,7 +72,7 @@ Les applications mobiles sont basées sur un plan directeur qui définit une str
 * **Description :** une description de l’application.
 * **URL du serveur :** l’URL qui fournit des mises à jour de contenu par voie hertzienne (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service d’externaliseur). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
-Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser, puis sélectionner la configuration d’analyse des applications mobiles à utiliser. Cette image est uniquement utilisée sous forme de miniature pour représenter votre application mobile dans la console des applications mobiles dans Experience Manager.
+Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de build PhoneGap à utiliser, puis sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image est uniquement utilisée sous forme de miniature pour représenter votre application mobile dans la console applications mobiles d’Experience Manager.
 
 Il existe d’autres onglets (facultatifs) pour créer le service cloud et intégrer le plug-in SDK Adobe Mobile Services dans votre application.
 
@@ -91,7 +91,7 @@ La procédure suivante utilise l’interface utilisateur tactile pour créer une
    ![Icône Créer indiquée par un signe plus à l’intérieur d’un carré.](do-not-localize/chlimage_1-7.png)
 
 1. (Facultatif) Dans l’onglet Avancé , fournissez une description de l’application et modifiez l’URL du serveur si nécessaire.
-1. (Facultatif) Si vous utilisez PhoneGap Build pour compiler l’application, dans l’onglet Créer , sélectionnez la Configuration à utiliser.
+1. (Facultatif) Si vous utilisez PhoneGap Build pour compiler l’application, dans l’onglet Générer , sélectionnez la Configuration à utiliser.
 
    Pour créer une configuration de build PhoneGap, cliquez sur Gérer les configurations.
 
@@ -124,7 +124,7 @@ Après avoir créé une application mobile, vous pouvez modifier les propriété
 #### Configuration d’une variante linguistique de l’application {#configure-a-language-variation-of-the-application}
 
 1. Sur le rail, cliquez sur Applications.
-1. Cliquez pour explorer l’application mobile que vous souhaitez modifier dans l’Admin Console d’applications. Sélectionnez la version linguistique de l’application à configurer et cliquez sur l’icône Afficher les propriétés de l’application .
+1. Cliquez pour explorer l’application mobile que vous souhaitez modifier dans les applications Admin Console. Sélectionnez la version linguistique de l’application à configurer et cliquez sur l’icône Afficher les propriétés de l’application .
 
    ![Icône Afficher les propriétés de l&#39;application indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-11.png)
 
@@ -179,7 +179,7 @@ Le dernier package d’exemples d’AEM Apps 6.1 comprend une version mise à jo
 
 Étapes de création d’une application basée sur un modèle d’application :
 
-1. Assurez-vous d’avoir installé le dernier pack de fonctionnalités et les packages d’exemples de référence d’AEM Apps 6.1
+1. Vérifiez que vous avez installé le dernier pack de fonctionnalités et les packages d’exemples de référence d’AEM Apps 6.1
 1. Cliquez sur Applications dans le rail de gauche.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -212,7 +212,7 @@ Le dernier package d’exemples d’AEM Apps 6.1 comprend une version mise à jo
 
 L’application Geometrixx Outdoors est un exemple d’application PhoneGap qui présente les fonctionnalités du plan directeur de l’application PhoneGap par défaut et les exemples de composants mobiles.
 
-Pour ouvrir l’application, dans le rail, cliquez sur Applications mobiles , puis sélectionnez Application Geometrixx Outdoors .
+Pour ouvrir l’application, dans le rail, cliquez sur Applications mobiles , puis sélectionnez Application Geometrixx Outdoors.
 
 ### Fonctionnalités de page courantes - Application mobile Geometrixx {#common-page-features-geometrixx-mobile-app}
 
@@ -235,7 +235,7 @@ Le contenu de la page d’accueil se compose des outils de navigation suivants :
 * Composant Liste de menus qui fournit des liens vers les pages enfants Engrenage, Révisions, Actualités et À propos de nous .
 * Composant Carrousel de balayage qui affiche les pages enfants.
 
-### La page sur l’engrenage - Application mobile Geometrixx {#the-gear-page-geometrixx-mobile-app}
+### Page d’engrenage - Application mobile Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 La page Engrenage permet aux utilisateurs d’accéder aux pages de produits. Un composant Liste de menus permet d’accéder aux pages enfants de la page Engrenage. Les pages enfants sont des catégories de produits présentées sur le site Web.
 
@@ -258,13 +258,13 @@ Contient un bouton Précédent. Le système de paragraphes permet d’ajouter de
 
 Lorsque vous utilisez l’application, la page Commentaires est disponible à partir du carrousel sur la page en anglais.
 
-### La Page D’Actualités - Application Mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
+### La page d’actualités - Application mobile Geometrixx {#the-news-page-geometrixx-mobile-app}
 
 Contient un bouton Précédent. Le système de paragraphes permet d’ajouter des composants.
 
 Lorsque vous utilisez l’application , la page Informations est disponible à partir du carrousel sur la page en anglais.
 
-### La Page À Propos De Nous - Application Mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### Page À propos de nous - Application mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 La page À propos de nous contient plusieurs composants Deux lignes de colonne. Chaque colonne contient un composant Image ou Texte . Les composants sont modifiables et le système de paragraphe permet d’ajouter des composants.
 
@@ -301,7 +301,7 @@ Configurez le comportement du carrousel :
 Spécifiez le mode de génération de la liste de pages :
 
 * Créer la liste à l’aide de : méthode à utiliser pour spécifier les pages à inclure dans le carrousel. Voir Création de la liste de pages.
-* Classer par : permet de sélectionner une propriété de page à utiliser pour trier la liste de pages. Par exemple, sélectionnez jcr:title pour trier les pages par titre dans l’ordre alphabétique.
+* Classer par : permet de sélectionner une propriété de page à utiliser pour trier la liste de pages. Par exemple, sélectionnez jcr:title pour trier les pages par titre et par ordre alphabétique.
 * Limite : nombre maximal de pages à inclure. Cette propriété est appropriée pour les méthodes de recherche de création de la liste de pages.
 
 #### Création de la liste de pages {#building-the-page-list}

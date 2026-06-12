@@ -1,5 +1,5 @@
 ---
-title: Configuration de votre mot de Cloud Service Adobe Mobile Services
+title: Configuration de votre Cloud Service Adobe Mobile Services
 description: Consultez cette page pour configurer votre Cloud Service Adobe Mobile Services.
 contentOwner: User
 content-type: reference
@@ -12,18 +12,18 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 3%
 
 ---
 
-# Configuration de votre mot de Cloud Service Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
+# Configuration de votre Cloud Service Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
 
 {{ue-over-mobile}}
 
 La **Mosaïque Mesures mobiles** du centre de commande fournit des analyses en temps réel pour votre application mobile.
 
-Le SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) est disponible via un plug-in PhoneGap. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à la connexion de celui-ci. Les données sont ensuite transmises au cloud Mobile Services d’Adobe pour rapport et analyse.
+Le SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) est disponible via un plug-in PhoneGap. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à la connexion de celui-ci. Ensuite, les données sont transmises au cloud Adobe Mobile Services pour création de rapports et analyse.
 
 Adobe Mobile Analytics SDK fournit les éléments suivants :
 
@@ -46,11 +46,11 @@ Mosaïque Mesures du centre de commande AEM
 
 Pour tirer parti d’Adobe Mobile Services Analytics, vous devez configurer le service AEM Mobile Analytics Cloud avec les informations de votre compte Adobe Analytics.
 
-1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les Cloud Service de la mosaïque **Gérer les Cloud Service** du tableau de bord de l’application.
+1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les Services cloud à partir de la mosaïque **Gérer les services cloud** du tableau de bord de l’application.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. L’écran **Ajouter ou modifier des Cloud Service** s’affiche. Sélectionnez **Adobe Mobile Services** puis cliquez sur **Suivant**.
+1. L’écran **Ajouter ou modifier des services cloud** s’affiche. Sélectionnez **Adobe Mobile Services** puis cliquez sur **Suivant**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

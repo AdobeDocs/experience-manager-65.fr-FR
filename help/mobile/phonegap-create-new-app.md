@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '574'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Les applications AEM Mobile sont basées sur un plan directeur qui définit une 
 * **Description :** une description de l’application.
 * **URL du serveur :** l’URL qui fournit des mises à jour de contenu par voie hertzienne (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service d’externaliseur). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
-Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser, puis sélectionner la configuration d’analyse des applications mobiles à utiliser. Cette image est uniquement utilisée sous forme de miniature pour représenter votre application mobile dans la console des applications mobiles dans Experience Manager.
+Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de build PhoneGap à utiliser, puis sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image est uniquement utilisée sous forme de miniature pour représenter votre application mobile dans la console applications mobiles d’Experience Manager.
 
 Il existe d’autres onglets (facultatifs) pour créer le service cloud et intégrer le plug-in SDK Adobe Mobile Services dans votre application.
 
@@ -38,7 +38,7 @@ Il existe d’autres onglets (facultatifs) pour créer le service cloud et inté
 
 ## Utilisation de modèles d’application {#using-app-templates}
 
-Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications au sein d’AEM.
+Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications dans AEM.
 
 Qu’est-ce qu’un modèle d’application ? Considérez-le comme un ensemble de modèles de page et de composants qui représentent une ligne de base ou la base d’une application.
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtiendrez une application qui dispose d’un point de départ représentatif de l’application à partir de laquelle elle a été créée.
