@@ -9,10 +9,10 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 100%
+source-wordcount: '1795'
+ht-degree: 93%
 
 ---
 
@@ -159,7 +159,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné (en sélectionn
 * **Titre**
 *(obligatoire)* Titre affiché pour la balise.
 
-* **Nom**
+* **Name**
 *(facultatif)* Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
 
 * **Description**
@@ -200,7 +200,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, le fait de sé
 Accédez au nouveau chemin d’accès où déplacer la balise.
 
 * **Renommer en**
-Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `name`.
+Affiche d’abord la `name` actuelle de la balise. Vous pouvez saisir un nouveau `name`.
 
 * Sélectionnez **Enregistrer**.
 
@@ -208,7 +208,7 @@ Affiche d’abord le `name` actuel de la balise. Vous pouvez saisir un nouveau `
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les auteurs et autrices.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les créateurs et créatrices.
 
 Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Fusionner**, un panneau s’ouvre dans lequel vous pouvez sélectionner le chemin d’accès à fusionner.
 
@@ -218,7 +218,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélec
   *(lecture seule)* Chemin d’accès à la balise sélectionnée à fusionner dans une autre balise.
 
 * **Fusionner dans**
-Accédez au chemin d’accès de la balise où effectuer la fusion.
+Accédez au chemin d’accès de la balise dans laquelle effectuer la fusion.
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sit
    * connectez-vous avec des droits d’administration ;
    * accédez à la [console de sécurité](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * par exemple, accédez à http://localhost:4502/useradmin
+      * par exemple, accédez à :4502/useradmin
 
    * dans le volet de gauche, sélectionnez le groupe (ou l’utilisateur ou l’utilisatrice) pour lequel l’[autorisation de lecture](/help/sites-administering/security.md#permissions) doit être accordée
    * Dans le volet de droite, localisez le **chemin d’accès** à l’espace de noms de balises,
@@ -269,13 +269,13 @@ Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sit
 
 * assurez-vous que toutes les instances de publication disposent des mêmes autorisations
 
-   * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de nom sur l’auteur ou l’autrice
+   * une approche consiste à [créer un package](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création
 
       * Dans l’onglet `Advanced`, pour `AC Handling` sélectionnez `Overwrite`.
 
    * Répliquez le package.
 
-      * Sélectionnez `Replicate` dans le gestionnaire de packages.
+      * Sélectionnez `Replicate` dans le gestionnaire de modules.
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 
@@ -285,7 +285,7 @@ La propriété `title` d’une balise peut être traduite en plusieurs langues. 
 
 La procédure ci-dessous explique comment traduire le `title` de la balise **Animals** de l’anglais vers l’allemand et le français.
 
-Sélectionnez tout d’abord la balise sous l’espace de noms **Images de photothèque**, puis sélectionnez l’icône **`Edit`** (voir la section [Modification de balises](#editing-tags)).
+Sélectionnez d’abord la balise sous l’espace de noms **Images de photothèque** puis sélectionnez l’icône **`Edit`** (voir la section [&#x200B; Modification de balises](#editing-tags) ).
 
 Le panneau Modifier la balise permet de choisir les langues dans lesquelles le titre de la balise doit être localisé.
 
@@ -303,7 +303,7 @@ Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez la sectio
 
 >[!NOTE]
 >
->Le nuage de balises et les éléments « meta keyword » du composant Page standard utilisent les `titles` des balises localisées en fonction de la langue de la page (si elle est disponible).
+>Le nuage de balises et les méta-mots-clés du composant Page standard utilisent les `titles` de balises localisées en fonction de la langue de la page (si elle est disponible).
 
 ## Ressources {#resources}
 
@@ -312,3 +312,4 @@ Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez la sectio
   Informations sur le framework de balisage et sur l’extension et l’inclusion de balises dans des applications personnalisées.
 
 * [Console Balisage de l’interface utilisateur (IU) classique](/help/sites-administering/classic-console.md)
+
