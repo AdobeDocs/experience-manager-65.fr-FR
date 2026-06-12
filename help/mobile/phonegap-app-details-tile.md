@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1206'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Chaque boutique d’applications fournisseur, par exemple Apple App Store ou Goo
 >
 >L’application AEM Verify vous permet d’envoyer des captures d’écran directement aux détails de votre application dans AEM.
 >
->Voir [Démarrage rapide mobile pour AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
+>Voir [Démarrage rapide mobile pour la vérification AEM](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -61,7 +61,7 @@ Chaque boutique d’applications fournisseur, par exemple Apple App Store ou Goo
 
 >[!NOTE]
 >
->Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [&#x200B; Modification des métadonnées d’application &#x200B;](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
+>Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [ Modification des métadonnées d’application ](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 
@@ -93,9 +93,9 @@ Les métadonnées de toutes les plateformes configurées s’affichent désormai
 
 >[!NOTE]
 >
->Les sections de métadonnées de plateforme ne sont pas utilisées par PhoneGap lors d&#39;une interface de ligne de commande ou d&#39;une version de PhoneGap distant. Au lieu de cela, AEM tente de capturer des métadonnées pour les plateformes afin qu’elles puissent être utilisées ultérieurement lors de l’envoi au magasin d’applications du fournisseur ciblé.
+>Les sections de métadonnées de plateforme ne sont pas utilisées par PhoneGap lors d&#39;une interface de ligne de commande ou d&#39;une version de PhoneGap distant. AEM tente plutôt de capturer des métadonnées pour les plateformes afin qu’elles puissent être utilisées ultérieurement lors de l’envoi au magasin d’applications du fournisseur ciblé.
 
-Pour les plateformes qu’AEM ne comprend pas, il est toujours possible pour un développeur ou une développeuse AEM d’étendre l’interface utilisateur afin de capturer ces métadonnées qui peuvent ensuite être exportées et utilisées pendant le processus d’envoi de la demande.
+Pour les plateformes que ne comprend pas AEM, il est toujours possible pour un développeur AEM d’étendre l’interface utilisateur afin de capturer ces métadonnées qui peuvent ensuite être exportées et utilisées pendant le processus d’envoi de la demande.
 
 #### Métadonnées iOS {#ios-metadata}
 
@@ -109,9 +109,9 @@ La fonctionnalité d’exportation est utilisée pour fournir un moyen pratique 
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Métadonnées Android™ {#android-metadata}
+#### Métadonnées ™ {#android-metadata}
 
-Lors de la sélection de la plateforme Android™, aucune métadonnée personnalisée ne peut être définie à ce stade. Lorsque vous cliquez sur le bouton de téléchargement, un fichier zip est généré avec un fichier de propriétés qui contient toutes les métadonnées et les captures d’écran associées.
+Lors de la sélection de la plateforme ™, aucune métadonnée personnalisée ne peut être définie à ce stade. Lorsque vous cliquez sur le bouton de téléchargement, un fichier zip est généré avec un fichier de propriétés qui contient toutes les métadonnées et les captures d’écran associées.
 
 La fonctionnalité d’exportation est utilisée pour fournir un moyen pratique de collecter les captures d’écran et les métadonnées qui peuvent être transmises à l’éditeur de l’application pour saisie dans le magasin d’applications spécifique au fournisseur.
 
@@ -119,7 +119,7 @@ La fonctionnalité d’exportation est utilisée pour fournir un moyen pratique 
 
 ### URL du serveur de mise à jour du contenu {#content-update-server-url}
 
-L’une des fonctionnalités essentielles des applications AEM est la possibilité pour une application mobile de demander du nouveau contenu via ContentSync, où le contenu peut être du contenu HTML sous forme de ressources, de pages, de vidéos, d’images, de texte, etc. Une fois qu’un auteur de contenu a mis à jour du contenu, puis publie ce contenu, le serveur rend la mise à jour de contenu disponible pour le téléchargement de l’application mobile.
+L’une des fonctionnalités essentielles des applications AEM est la possibilité pour une application mobile de demander du nouveau contenu par le biais de ContentSync, où le contenu peut être des ressources HTML, des pages, des vidéos, des images, du texte, etc. Une fois qu’un auteur de contenu a mis à jour du contenu, puis publie ce contenu, le serveur rend la mise à jour de contenu disponible pour le téléchargement de l’application mobile.
 
 La propriété URL du serveur de mise à jour de contenu est l’URL qui doit pointer vers une instance de publication, directement ou via le Dispatcher ou le réseau CDN. Le format de l’URL est simple :
 

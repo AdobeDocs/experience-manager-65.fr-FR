@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 22%
+source-wordcount: '349'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +31,7 @@ Les tableaux suivants décrivent les propriétés et les nœuds de contenu.
 | **Nom de la propriété** | **Type** | **Valeurs par défaut ou valeurs attendues** | **Description** |
 |---|---|---|---|
 | dps-id | Chaîne |  | affecté par AEM Mobile et stocké par AEM une fois chargé dans AEM Mobile ou importé depuis AEM Mobile |
-| dps-resourceType | Chaîne | dps:Article | `dps:Banner` * `dps:Collection` * `entity type property` |
+| dps-resourceType | Chaîne | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | Chaîne |  | version de l’entité AEM Mobile (également contenue dans l’aem-id complet) |
 | dps-lastSynced | Date |  | date de la dernière synchronisation/importation d’AEM Mobile dans AEM |
 | dps-lastUploaded | Date |  | date du dernier chargement d’AEM vers AEM Mobile |
