@@ -10,9 +10,9 @@ exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '2937'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3000'
+ht-degree: 99%
 
 ---
 
@@ -304,7 +304,7 @@ Dans AEM, les données binaires peuvent être stockées indépendamment des nœu
 
 >[!CAUTION]
 >
->Le micronoyau de la base de données relationnelle est pris en charge de manière limitée. Contactez l’[assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&amp;lang=fr&amp;support-tab=home#support) avant d’utiliser ce type de micronoyau.
+>Le micronoyau de la base de données relationnelle est pris en charge de manière limitée. Contactez l’[assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support) avant d’utiliser ce type de micronoyau.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -318,9 +318,9 @@ Pour plus de détails sur les options de configuration disponibles, consultez la
 >
 >Adobe vous recommande de choisir l’option de déploiement d’AEM sur Azure ou Amazon Web Services (AWS) à l’aide d’Adobe Managed Services. Les clientes et clients bénéficient d’une équipe qui dispose de l’expérience et des compétences nécessaires pour déployer et exploiter AEM dans ces environnements de cloud computing. Consultez les [documents complémentaires sur Adobe Managed Services](https://business.adobe.com/fr/products/experience-manager/managed-services.html?aemClk=t).
 >
->Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de cloud. Vous pouvez également collaborer avec l’un des partenaires d’Adobe qui prend en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le fournisseur ou partenaire cloud sélectionné est responsable du dimensionnement, de la conception et de l’implémentation de l’architecture qu’ils prennent en charge pour répondre à vos besoins spécifiques en termes de performances, de charge, d’évolutivité et de sécurité.
+>Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également collaborer avec l’un des partenaires d’Adobe qui prend en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture qu’ils prennent en charge pour répondre à vos besoins spécifiques en termes de performances, de charge, d’évolutivité et de sécurité.
 >
->>Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>&#x200B;>Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Rechercher {#search-features}
 
@@ -436,7 +436,7 @@ Pour obtenir de bonnes performances, il est recommandé de définir les paramèt
   <tr>
    <td><strong>Configuration</strong></td>
    <td><strong>Paramètre</strong></td>
-   <td><strong>Valeur </strong></td>
+   <td><strong>Valeur</strong></td>
    <td><strong>Description</strong></td>
   </tr>
   <tr>
@@ -539,7 +539,7 @@ Pour tirer le meilleur parti des performances de MongoMK, commencez par l’artc
 
 ### Paramètres MongoMK recommandés {#mongomk-settings-guidelines}
 
-Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
+Pour obtenir de bonnes performances, il est recommandé de définir les paramètres comme suit. Pour obtenir des instructions sur la modification des paramètres, Voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>

@@ -333,7 +333,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
 1. Ajoutez le paramètre « `true`=`binaryless` » dans l’URI de transport. Après la modification, l’URI doit ressembler à ce qui suit :
 
-   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
+   *:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
 1. Redémarrez toutes les instances de création et de publication pour que les modifications soient prises en compte.
 

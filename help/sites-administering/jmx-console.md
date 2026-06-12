@@ -12,8 +12,8 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 100%
+source-wordcount: '4969'
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Traitements terminés
    * Traitements traités
 
-**returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou extraire les informations pour tous les modèles de workflow.
+**returnFailedWorkflowCount** Affiche le nombre d’instances de workflow ayant échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou récupérer des informations pour tous les modèles de workflow.
 
 * Arguments :
 
@@ -252,7 +252,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs suivantes sont valides :
+   <td>Indique la stabilité des identifiants de nœud non référençables. Les valeurs possibles sont les suivantes :
     <ul>
      <li>identifier.stability.indefinite.duration : les identifiants ne changent pas.</li>
      <li>identifier.stability.method.duration : les identifiants peuvent changer entre les appels de méthode.</li>
@@ -557,7 +557,7 @@ Lecture seule.
 
      Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
 
-       Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
+     Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs le sont par rapport au parent du répertoire crx-quickstart.
 
      Lorsque vous ne spécifiez aucune valeur, la valeur par défaut `backup-currentdate.zip` est utilisée, où `currentdate` est au format `yyyyMMdd-HHmm`.
 
@@ -588,7 +588,7 @@ Lecture seule.
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier file index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
+**tarIndexMerge** Fusionne les fichiers d’index de niveau supérieur de tous les ensembles TAR. Les fichiers d’index de niveau supérieur sont des fichiers comportant des versions principales différentes. Par exemple, les fichiers ci-dessous sont fusionnés dans le fichier index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.taret index_3_0.tar sont supprimés).
 
 * Arguments :
 
@@ -611,7 +611,7 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**traversalCheck** Parcourt et corrige, éventuellement, les incohérences d’une sous-arborescence, en commençant par un nœud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
+**traversalCheck** Effectue une traversée et corrige, éventuellement, les incohérences d’une sous-arborescence, en commençant par un nœud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
 
 **consistencyCheck** Vérifie et corrige, éventuellement, les incohérences dans l’entrepôt de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
 
@@ -691,7 +691,7 @@ Surveillez les services pour chaque agent de réplication. Lorsque vous créez u
 * **Domaine** : com.adobe.granite.replication
 * **Type** : agent
 * **Nom** : aucune valeur
-* **Propriétés** : {id=&quot;*Name*&quot;}, où *Name* est la valeur de la propriété Name de l’agent.
+* **Properties:** {id="*Name*"}, où *Name* est la valeur de la propriété Name de l’agent.
 
 ### Attributs {#attributes-3}
 
@@ -723,7 +723,7 @@ Lecture seule.
 
 Lecture-écriture.
 
-**QueueNumEntries** Valeur d’entier (int) représentant le nombre de tâches dans la file d’attente de l’agent. Lecture seule.
+**QueueNumEntries** Valeur d’entier (int) représentant le nombre de traitements dans la file d’attente de l’agent. Lecture seule.
 
 **QueueStatusTime** Valeur Date indiquant le temps passé sur le serveur une fois que les valeurs de statut affichées ont été obtenues. La valeur correspond au délai de chargement de la page. Lecture seule.
 
@@ -886,7 +886,7 @@ Les MBeans déployés avec un service OSGi exposent les attributs et les opérat
 
 La page principale de la console JMX comporte un tableau des services. Chaque ligne du tableau représente un service exposé par un MBean.
 
-1. Ouvrez la console web et cliquez sur l’onglet JMX. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+1. Ouvrez la console web et cliquez sur l’onglet JMX. ([:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Cliquez sur une valeur de cellule pour un service afin d’afficher les attributs et les opérations du service.
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
 4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs d’argument dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.
@@ -916,7 +916,7 @@ JConsole affiche une liste des processus locaux de machine virtuelle Java. La li
 
 Pour se connecter à un processus CRX distant, la JVM qui héberge le processus CRX distant doit être activée pour accepter les connexions JMX distantes.
 
-  Pour activer les connexions JMX à distance, la propriété système ci-dessous doit être définie au démarrage de la machine virtuelle Java :
+Pour activer les connexions JMX à distance, la propriété système ci-dessous doit être définie au démarrage de la machine virtuelle Java :
 
 `com.sun.management.jmxremote.port=portNum`
 

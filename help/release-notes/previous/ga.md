@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 100%
+source-wordcount: '4981'
+ht-degree: 96%
 
 ---
 
@@ -74,9 +74,9 @@ Diverses améliorations ont été apportées à l’UI pour qu’elle soit plus 
 
 #### Mise à niveau {#upgrade}
 
-* La mise à niveau statique directe vers AEM 6.5 est prise en charge pour les client(e)s exécutant AEM 6.2, 6.3 et 6.4. Les client(e)s utilisant les versions 5.x ou 6.0/6.1 qui souhaitent utiliser la mise à niveau statique doivent d’abord effectuer la mise à niveau vers la version 6.4. Ensuite, effectuez une mise à niveau vers la version 6.5 ou effectuez une mise à niveau par le biais du transfert du contenu entre les instances directement vers AEM 6.5.
+* La mise à niveau statique directe vers AEM 6.5 est prise en charge pour les clients exécutant AEM 6.2, 6.3 et 6.4. Les clients et clientes utilisant les versions 5.x ou 6.0/6.1 qui souhaitent utiliser la mise à niveau sur place doivent d’abord effectuer la mise à niveau vers la version 6.4. Ensuite, effectuez une mise à niveau vers la version 6.5 ou effectuez une mise à niveau par le biais du transfert du contenu entre les instances directement vers AEM 6.5.
 * La procédure de mise à niveau reste en grande partie la même dans la version 6.5.
-* Nous continuons à prendre en charge la compatibilité ascendante, l’évaluation de la complexité des mises à niveau et les fonctions de continuité des mises à niveau ajoutées dans la version 6.4. Des mises à jour spécifiques à la version ont été apportées à ces domaines, le cas échéant.
+* Nous continuons à prendre en charge la rétrocompatibilité , l’évaluation de la complexité des mises à niveau et les fonctionnalités de mises à niveau durables introduites dans la version 6.4. Des mises à jour spécifiques à ces versions ont été apportées à ces zones, le cas échéant.
 * Le package du détecteur de motifs est désormais simplifié. Il existe un package qui évalue les mises à niveau vers la version 6.5 pour les versions sources disponibles.
 * Pour plus d’informations sur la procédure de mise à niveau, consultez la [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
@@ -87,7 +87,7 @@ Diverses améliorations ont été apportées à l’UI pour qu’elle soit plus 
 #### Référentiel {#repository}
 
 * La base d’Adobe Experience Manager 6.5 repose sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.10.2.
-* Pour obtenir un aperçu des problèmes résolus, consultez [Apache Jackrabbit Oak Jira v.1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v.1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v.1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* Pour obtenir un aperçu des problèmes résolus, voir [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1 &#x200B;](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, con
 
 #### AEM et Commerce {#aem-commerce}
 
-Les améliorations apportées au Commerce Integration Framework ont un cycle de publication de version plus rapide depuis AEM 6.4. Pour en savoir plus, consultez la section [Intégration d’AEM et d’Adobe Commerce à l’aide de Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=fr).
+Les améliorations apportées à Commerce integration framework bénéficient d’un cycle de publication plus rapide depuis AEM 6.4. En savoir plus sur l’intégration d’[AEM et Adobe Commerce à l’aide de Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=fr).
 
 #### Module complémentaire Communities {#communities-add-on}
 
@@ -263,8 +263,8 @@ Pour obtenir la version la plus récente, consultez la section [Déploiement de 
 
 ##### Améliorations de l’engagement communautaire {#enhancements-to-community-engagement}
 
-**Prise en charge des @Mentions**
-AEM Communities permet désormais aux utilisateurs enregistrés de tagger (mentionner) d’autres membres inscrits pour attirer leur attention, dans le contenu créé par l’utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le contenu créé par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer ou de désactiver les notifications par e-mail et Web.
+Prise en charge de **@Mentions**
+AEM Communities permet désormais aux utilisateurs enregistrés de baliser (mentionner) d’autres membres enregistrés afin d’attirer leur attention, dans le contenu créé par l’utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le contenu créé par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer ou de désactiver les notifications par e-mail et Web.
 
 ![Prise en charge des mentions](/help/release-notes/assets/at-mentions.png)
 
@@ -324,7 +324,7 @@ AEM 6.5 propose les fonctionnalités et améliorations suivantes pour accroîtr
 
 #### Intégration avec [!DNL Adobe Creative Cloud] et les workflows créatifs {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
-[!DNL Adobe Experience Manager] propose différentes manières de s’intégrer à [!DNL Adobe Creative Cloud] et de partager des ressources à utiliser dans des workflows, où les équipes créatives et marketing et les équipes d’entreprise collaborent étroitement. [!DNL Experience Manager] 6.5 continue à améliorer l’intégration et à la rationaliser afin d’exposer davantage de possibilités et de rationaliser les méthodes existantes.
+[!DNL Adobe Experience Manager] propose différentes manières de s’intégrer à [!DNL Adobe Creative Cloud] et de partager des ressources à utiliser dans des workflows, où les équipes créatives et marketing et les équipes d’entreprise collaborent étroitement. [!DNL Experience Manager] 6.5 continue d’améliorer l’intégration et de la rationaliser afin d’exposer davantage de possibilités et de rationaliser les méthodes existantes.
 
 Lisez ce qui suit pour connaître les fonctionnalités et intégrations spécifiques d’[!DNL Experience Manager] 6.5 que vous pouvez utiliser pour prendre en charge les cas d’utilisation de vélocité de contenu.
 
@@ -466,7 +466,7 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées s
 
    * [Allemand](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
    * [Espagnol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Français](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * Suite d’outils de modernisation d’AEM, par exemple Outil de conversion de dialogue. ([Projet GitHub](https://github.com/adobe/aem-modernize-tools))
@@ -479,7 +479,7 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées s
 **Forms**
 
 * [Packages pour les fonctionnalités AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
-* [SDK OSGi client AEM Forms](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
+* [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Langues {#languages}
 
