@@ -126,7 +126,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
