@@ -12,8 +12,8 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 94%
 
 ---
 
@@ -102,7 +102,7 @@ Avec la structure spécifique :
         ... + other variation definitions
 ```
 
-Plus de détails sur les nœuds et leurs propriétés : 
+Plus de détails sur les nœuds et leurs propriétés :
 
 * **Modèle**
 
@@ -158,7 +158,7 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obligatoire</p> </td>
-     <td><p>Nœud contenant la définition des éléments du fragment de contenu. Il est obligatoire et doit contenir au moins un nœud enfant pour l’élément <strong>Principal</strong> mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche des éléments est copiée dans la sous-branche de modèle du fragment.</p> <p>Le premier élément (affiché dans CRXDE Lite) est automatiquement considéré comme l’élément <i>Principal</i> ; le nom du nœud n’a pas d’importance et le nœud lui-même n’a pas de signification particulière, mis à part le fait qu’il est représenté par la ressource principale ; les autres éléments sont traités comme des sous-ressources.</p> </td>
+     <td><p>Nœud contenant la définition des éléments du fragment de contenu. Il est obligatoire et doit contenir au moins un nœud enfant pour l’élément <strong>Main</strong>, mais peut contenir [1..n] nœuds enfants.</p> <p>Lorsque le modèle est utilisé, la sous-branche des éléments est copiée dans la sous-branche de modèle du fragment.</p> <p>Le premier élément (affiché dans CRXDE Lite) est automatiquement considéré comme l’élément <i>Principal</i> ; le nom du nœud n’a pas d’importance et le nœud lui-même n’a pas de signification particulière, mis à part le fait qu’il est représenté par la ressource principale ; les autres éléments sont traités comme des sous-ressources.</p> </td>
     </tr>
    </tbody>
   </table>

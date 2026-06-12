@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '499'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Dans l’environnement de création, les fonctions d’AEM sont accessibles dans
 
 ### Environnement de création {#author-environment}
 
-L’auteur ou l’autrice travaille dans l’**environnement de création**. Cet environnement fournit une interface simple d’utilisation (interface utilisateur graphique ou interface utilisateur) pour la création de contenu.  Cette interface se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et implique que l’auteur ou l’autrice se connecte à l’aide d’un compte doté des droits d’accès appropriés.
+L’auteur ou l’autrice travaille dans l’**environnement de création**. Cet environnement fournit une interface simple d’utilisation (interface utilisateur graphique ou interface utilisateur) pour la création de contenu. Cette interface se trouve derrière le pare-feu d’une entreprise qui fournit une protection complète et implique que l’auteur ou l’autrice se connecte à l’aide d’un compte doté des droits d’accès appropriés.
 
 >[!NOTE]
 >
@@ -70,16 +70,16 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 
 >[!NOTE]
 >
->Il existe malheureusement une interférence dans la terminologie utilisée. Cela peut se produire avec les fonctions suivantes :
+>Malheureusement, il y a parfois un chevauchement dans la terminologie utilisée. Cela peut se produire avec :
 >
->* **Publier/dépublier**
->  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>* **Publier/Dépublier**
+>  Il s’agit des termes principaux des actions qui rendent votre contenu disponible publiquement dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur ou de l’utilisatrice) d’un environnement à un autre, c’est-à-dire lors de la publication ou de la réplication inverse des commentaires d’utilisateurs ou d’utilisatrices.
+>  Termes techniques utilisés pour indiquer le déplacement des données (contenu de page, fichiers, code et commentaires utilisateur, par exemple) d’un environnement à un autre ; c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
 
 #### Dispatcher {#dispatcher}

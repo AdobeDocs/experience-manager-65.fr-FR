@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '666'
 ht-degree: 3%
 
 ---
@@ -30,9 +30,9 @@ Les bannières représentent généralement des liens promotionnels graphiques.
 >
 >Consultez les ressources suivantes de l’aide en ligne pour en savoir plus sur les rubriques suivantes des applications AEM Mobile :
 >
->* [Considérations de conception](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Création de bannières](https://helpx.adobe.com/fr/digital-publishing-solution/help/creating-banners.html)
+>* [Création de bannières](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Création d’une bannière {#creating-a-banner}
@@ -69,7 +69,7 @@ Workflow pour importer un nouvel article
 
 ## Modification d’une bannière {#editing-a-banner}
 
-Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
+Utilisez l’éditeur de glisser-déposer intégré d’AEM pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifie
 Workflow de modification d’un article :
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une bannière AEM depuis la mosaïque **&#x200B; Gérer les bannières &#x200B;**.
+1. Sélectionnez une bannière source AEM dans la mosaïque **&#x200B; Gérer les bannières &#x200B;**.
 1. Cliquez sur la bannière en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la bannière (manuscrits, images, texte, etc.).
 
@@ -120,7 +120,7 @@ Workflow général de suppression d’une bannière :
 1. Sélectionnez la bannière à supprimer dans la mosaïque **Gérer les bannières**.
 1. Assurez-vous qu’il est sélectionné dans la liste (sélectionnez d’autres éléments à supprimer si nécessaire).
 1. Cliquez sur **Supprimer** dans la barre d’actions.
-1. Cochez cette case si vous souhaitez supprimer d’AEM et Mobile On-Demand.
+1. Cochez la case si vous souhaitez effectuer une suppression dans AEM et Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre bannière est maintenant supprimée de la liste.
 
