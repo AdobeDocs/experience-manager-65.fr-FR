@@ -74,11 +74,11 @@ Les paramètres ci-dessous sont disponibles pour le service Barcoded Forms.
 
 Le service Central migration Bridge (`CentralMigrationBridge`) appelle un sous-ensemble de fonctionnalités Adobe Central Pro Output Server (Central), qui comprend les commandes JFMERGE, JFTRANS et XMLIMPORT. Les opérations du service Central Migration Bridge vous permettent de réutiliser les ressources Central suivants dans AEM Forms :
 
-* conception de modèle (&amp;ast;.ifd)
-* modèles de sortie (&amp;ast;.mdf)
-* fichiers de données (&amp;ast;.dat)
-* Fichiers de préambule (&amp;ast;.pre)
-* fichiers de définition de données (&amp;ast;.tdf)
+* conception de modèle (&ast;.ifd)
+* modèles de sortie (&ast;.mdf)
+* fichiers de données (&ast;.dat)
+* Fichiers de préambule (&ast;.pre)
+* fichiers de définition de données (&ast;.tdf)
 
 Le paramètre ci-dessous est disponible pour le service Central Migration Bridge.
 
@@ -162,7 +162,7 @@ Vous pouvez créer des paramètres dans l’interface utilisateur de PDF Generat
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 Le service Document Management (`DocumentManagementService`) permet aux processus d’utiliser la fonctionnalité de gestion de contenu fournie par Content Services (obsolète). Les opérations de Document management fournissent les tâches de base nécessaires pour gérer des espaces et du contenu dans le système de gestion de contenu. Voici quelques exemple de tâches de ce type : copier, supprimer, déplacer, récupérer et stocker du contenu, créer des espaces et des associations, ainsi qu’obtenir et définir des attributs de contenu.
 

@@ -160,7 +160,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 * les conditions dans lesquelles des utilisateurs et utilisatrices professionnelles, comme les experts et expertes en sinistres ou les chargés et chargées d’assistance, sont amenés à modifier tout ou partie du contenu de la lettre.
 * Les scénarios décrivent l’expérience des utilisateurs et utilisatrices, les conditions requises et les avantages de l’utilisation de la solution Lettres.
 * Les scénarios fournissent également :The ensembles de compétences et d’outils requis pour votre projet.
-* les recommandations relatives à la planification de l’implémentation ; ``un bon aperçu général de l’implémentation.
+* les recommandations relatives à la planification de l’implémentation ; &grave;&grave;un bon aperçu général de l’implémentation.
 
 ## Avantages de l’analyse {#benefits-of-performing-the-analysis}
 
