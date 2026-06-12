@@ -71,7 +71,7 @@ Tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis av
 * Apple iPad
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® &#x200B;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -163,7 +163,7 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 >[!NOTE]
 >
 >Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés, mais vous devez les publier.
->Voir [ Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
+>Voir [&#x200B; Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 >
 >Tout nouveau paramètre prédéfini de visionneuse que vous créez et ajoutez doit être activé *et* publié.
 >Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).

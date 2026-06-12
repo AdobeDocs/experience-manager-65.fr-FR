@@ -103,7 +103,7 @@ Le connecteur MySQL doit être obtenu et installé séparément.
 
 Les étapes nécessaires sont les suivantes :
 
-1. Téléchargez l’archive ZIP depuis [](https://dev.mysql.com/downloads/connector/j/)
+1. Téléchargez l’archive ZIP depuis [&#128279;](https://dev.mysql.com/downloads/connector/j/)
 
    * La version doit être >= 5.1.38
 
@@ -139,7 +139,7 @@ Le téléchargement MLS avancé (également appelé `phasetwo`) est disponible �
 
 * AEM-SOLR-MLS-phasetwo
 
-  Pour obtenir le package MLS avancé, consultez [MLS avancé ](deploy-communities.md#aem-advanced-mls) dans la section de déploiement de la documentation.
+  Pour obtenir le package MLS avancé, consultez [MLS avancé &#x200B;](deploy-communities.md#aem-advanced-mls) dans la section de déploiement de la documentation.
 
    * Version 1.2.40, 6 Avril 2016
    * Télécharger AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -156,7 +156,7 @@ Les liens vers les packages de cette page ne nécessitent aucune instance AEM en
 
 Pour installer les packages visibles dans `adobeaemcloud.com` sur une instance AEM locale, le package doit d&#39;abord être téléchargé sur un disque local :
 
-* Sélectionnez l’onglet ****
+* Sélectionnez l’onglet **&#x200B;**
 * Sélectionnez **télécharger sur le disque**
 
 Sur l’instance AEM locale, utilisez le gestionnaire de packages (par exemple, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) pour effectuer le chargement vers le référentiel de packages AEM local.
@@ -169,9 +169,9 @@ Pour plus d’informations, consultez [Utilisation de packages](/help/sites-admi
 
 ## Déploiements recommandés {#recommended-deployments}
 
-Dans AEM Communities, un magasin commun est utilisé pour stocker le contenu créé par l’utilisateur. Il est souvent appelé [ fournisseur de ressources de stockage (SRP)](/help/communities/working-with-srp.md). Le déploiement recommandé est axé sur le choix d’une option SRP pour le magasin commun.
+Dans AEM Communities, un magasin commun est utilisé pour stocker le contenu créé par l’utilisateur. Il est souvent appelé [&#x200B; fournisseur de ressources de stockage (SRP)](/help/communities/working-with-srp.md). Le déploiement recommandé est axé sur le choix d’une option SRP pour le magasin commun.
 
-Le magasin commun prend en charge la modération et l’analyse du contenu créé par l’utilisateur dans l’environnement de publication tout en éliminant la nécessité de [ réplication ](/help/communities/sync.md) du contenu créé par l’utilisateur.
+Le magasin commun prend en charge la modération et l’analyse du contenu créé par l’utilisateur dans l’environnement de publication tout en éliminant la nécessité de [&#x200B; réplication &#x200B;](/help/communities/sync.md) du contenu créé par l’utilisateur.
 
 * [Stockage de contenu de la communauté](/help/communities/working-with-srp.md) : présente les options de stockage SRP pour AEM Communities
 
@@ -187,7 +187,7 @@ Outre la mise à niveau de la plateforme, lisez [Mise à niveau vers AEM Communi
 
 ### Principal Publisher {#primary-publisher}
 
-Lorsque le déploiement choisi est une [ ferme de publication ](/help/communities/topologies.md#tarmk-publish-farm), une instance de publication AEM doit être identifiée comme **`primary publisher`** pour les activités qui ne doivent pas se produire sur toutes les instances. Par exemple, les fonctionnalités qui reposent sur **notifications** ou **Adobe Analytics**.
+Lorsque le déploiement choisi est une [&#x200B; ferme de publication &#x200B;](/help/communities/topologies.md#tarmk-publish-farm), une instance de publication AEM doit être identifiée comme **`primary publisher`** pour les activités qui ne doivent pas se produire sur toutes les instances. Par exemple, les fonctionnalités qui reposent sur **notifications** ou **Adobe Analytics**.
 
 Par défaut, la configuration OSGi `AEM Communities Publisher Configuration` est configurée avec la case à cocher **`Primary Publisher`** activée, de sorte que toutes les instances de publication d’une batterie de publication s’identifient comme étant les instances principales.
 
@@ -313,7 +313,7 @@ Le fait que le matériel de base soit stocké dans le référentiel, comme c’�
 
 Avec le matériel de clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l’auteur vers d’autres instances est la suivante :
 
-Utilisation de [](/help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * Accédez à [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
 * Sélectionnez `/etc/key`.
@@ -326,7 +326,7 @@ Utilisation de [](/help/sites-developing/developing-with-crxde-lite.md) :
 
 #### Actualisez le lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
 
-* Sur chaque instance de publication, accédez à la [ console web ](/help/sites-deploying/configuring-osgi.md)
+* Sur chaque instance de publication, accédez à la [&#x200B; console web &#x200B;](/help/sites-deploying/configuring-osgi.md)
 
    * Par exemple, [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 

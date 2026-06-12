@@ -471,7 +471,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 ## Déplacement ou changement du nom des ressources {#moving-or-renaming-assets}
 
 Lorsque vous déplacez des ressources (ou des dossiers) vers un autre emplacement, les ressources (ou dossiers) ne sont pas dupliquées, contrairement à lors de la copie de la ressource. Les ressources (ou les dossiers) sont placés à l’emplacement cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lors de son déplacement vers le nouvel emplacement.
-Si vous déplacez une ressource publiée vers un autre emplacement, vous pouvez éventuellement la republier. Par défaut, l’opération de déplacement sur une ressource publiée la dépublie automatiquement. Une ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL  Republier ] lors du déplacement de la ressource.
+Si vous déplacez une ressource publiée vers un autre emplacement, vous pouvez éventuellement la republier. Par défaut, l’opération de déplacement sur une ressource publiée la dépublie automatiquement. Une ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL &#x200B; Republier &#x200B;] lors du déplacement de la ressource.
 
 ![Vous pouvez republier une ressource déjà publiée lors de son déplacement.](assets/republish-on-move.png)
 
@@ -601,7 +601,7 @@ Consultez la section [Téléchargement de ressources à partir d’Experience M
 
 Après avoir chargé, traité ou modifié vos ressources sur l’auteur [!DNL Experience Manager], vous publiez la ressource sur le serveur de publication. La publication rend la ressource disponible publiquement. L’action de dépublication a supprimé la ressource du serveur de publication, mais pas du serveur auteur.
 
-Pour plus d’informations spécifiques à [!DNL Dynamic Media], consultez la section [Publication de ressources  [!DNL Dynamic Media] ](/help/assets/publishing-dynamicmedia-assets.md).
+Pour plus d’informations spécifiques à [!DNL Dynamic Media], consultez la section [Publication de ressources  [!DNL Dynamic Media] &#x200B;](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou dépublier dans l’environnement de publication (dépublication).
 

@@ -509,7 +509,7 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
    Pour plus d’informations sur l’utilisation des fragments de disposition, voir [Fragments de disposition](#layoutfragments).
-Pour plus d&#39;informations sur la conception de mises en page, consultez l&#39;aide de [](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
+Pour plus d&#39;informations sur la conception de mises en page, consultez l&#39;aide de [&#128279;](https://help.adobe.com/fr_FR/AEMForms/6.1/DesignerHelp/).
 
    [Obtenir le fichier](assets/static.xdp.zip)
 

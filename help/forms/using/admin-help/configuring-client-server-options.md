@@ -59,13 +59,13 @@ Pour plus d’informations sur le fonctionnement de la synchronisation et du bai
 
 La sélection de cette option permet aux applications clientes d’utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur AEM Forms. Par exemple, les utilisateurs et utilisatrices peuvent désormais tester l’authentification SAML au lieu du nom d’utilisateur ou d’utilisatrice/mot de passe d’AEM Forms, à partir d’Acrobat et du client Reader. Par défaut, l’URL d’entrée contient *localhost* comme nom du serveur. Remplacez le nom du serveur par un nom d’hôte complet. Le nom d’hôte dans l’URL de destination est automatiquement renseigné à partir de l’URL de base, si l’authentification étendue n’est pas encore activée. Voir [Ajouter le fournisseur d’authentification étendue](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***Remarque ** : l’authentification étendue est prise en charge sur Mac OS X doté de la version 11.0.6 d’Adobe Acrobat et ultérieure.*
+***Remarque &#x200B;** : l’authentification étendue est prise en charge sur Mac OS X doté de la version 11.0.6 d’Adobe Acrobat et ultérieure.*
 
 **Largeur de la commande HTML préférée pour l’authentification étendue :** indiquez la largeur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
 **Hauteur de la commande HTML préférée pour l’authentification étendue :** indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-***remarque **: les limites de la largeur et de la hauteur de cette boîte de dialogue sont les suivantes :*
+***remarque &#x200B;**: les limites de la largeur et de la hauteur de cette boîte de dialogue sont les suivantes :*
 Largeur : minimum = 400, maximum = 900
 
 Hauteur : minimum = 450 ; maximum = 800
@@ -88,7 +88,7 @@ La liste des utilisateurs, des utilisatrices et des groupes est visible par la p
 
 1. Après avoir installé et configuré votre environnement d’AEM Forms avec Document Security, configurez tous les domaines appropriés dans User Management. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***Remarque ** : vous devez commencer par créer les domaines avant de pouvoir créer des politiques.*
+   ***Remarque &#x200B;** : vous devez commencer par créer les domaines avant de pouvoir créer des politiques.*
 
 1. Dans la console d’administration, cliquez sur Services > Document Management > Politiques et cliquez sur l’onglet Ensembles de politiques.
 1. Sélectionnez Ensemble de politiques global, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
@@ -489,7 +489,7 @@ Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent dis
 1. Cliquez sur Nouveau.
 1. Dans la zone Nom, saisissez le nom du nouveau filigrane.
 
-   ***Remarque ** : certains caractères spéciaux ne peuvent être utilisés dans le nom ou la description des filigranes ou des éléments de filigrane. Reportez-vous aux restrictions répertoriées dans [Considérations relatives à la modification des politiques](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***Remarque &#x200B;** : certains caractères spéciaux ne peuvent être utilisés dans le nom ou la description des filigranes ou des éléments de filigrane. Reportez-vous aux restrictions répertoriées dans [Considérations relatives à la modification des politiques](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Sous Nom, à côté du signe plus, saisissez un nom significatif pour l’élément de filigrane, tel que En-tête, ajoutez une description, puis développez le signe plus pour afficher les options.
 1. Sous Source, sélectionnez le type de filigrane : Texte ou PDF.
@@ -498,11 +498,11 @@ Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent dis
    * Sélectionnez les types de filigranes à inclure. Si vous sélectionnez Texte personnalisé, dans la zone adjacente, saisissez le texte à afficher pour le filigrane. Gardez à l’esprit la longueur du texte qui apparaîtra en filigrane.
    * Spécifiez les propriétés de mise en forme du texte telles que le nom de la police, la taille de la police, la couleur de premier plan et la couleur d&#39;arrière-plan pour le contenu du texte du filigrane. Spécifiez la couleur de premier plan et d’arrière-plan sous forme de valeurs hexadécimales.
 
-     ***Remarque ** : si vous définissez le cadrage sur Page entière, vous ne pouvez pas modifier la taille de la police.*
+     ***Remarque &#x200B;** : si vous définissez le cadrage sur Page entière, vous ne pouvez pas modifier la taille de la police.*
 
 1. Si vous sélectionnez le format PDF pour les options de filigrane riches, cliquez sur **Parcourir**, à côté de Sélectionner le PDF du filigrane, pour sélectionner le document PDF que vous voulez utiliser en filigrane.
 
-   ***Remarque ** : n’utilisez pas de document PDF protégé par mot de passe. Si vous spécifiez un PDF protégé par mot de passe comme élément de filigrane, le filigrane n’est pas appliqué.*
+   ***Remarque &#x200B;** : n’utilisez pas de document PDF protégé par mot de passe. Si vous spécifiez un PDF protégé par mot de passe comme élément de filigrane, le filigrane n’est pas appliqué.*
 
 1. Sous Utiliser comme arrière-plan, sélectionnez Oui ou Non.
 
@@ -584,9 +584,9 @@ Vous pouvez restreindre l’enregistrement auprès de Document Security pour cer
 
 Les paramètres suivants se trouvent dans la zone Filtre de restriction des e-mails de la page Enregistrement des utilisateurs et utilisatrices invités.
 
-**Exclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour exclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez &amp;ast;.example.com.
+**Exclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour exclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez &ast;.example.com.
 
-**Inclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour inclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs du domaine example.com, saisissez &amp;ast;.example.com.
+**Inclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour inclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs du domaine example.com, saisissez &ast;.example.com.
 
 ### Paramètres des comptes d’enregistrement et du serveur {#server-and-registration-account-parameters}
 
@@ -951,7 +951,7 @@ Dans cet exemple, toutes les demandes provenant d’une installation Microsoft 
 
 Par défaut, vous pouvez spécifier un maximum de cinq éléments dans un filigrane. De plus, la taille maximale du document PDF que vous souhaitez utiliser comme filigrane est limitée à 100 Ko. Vous pouvez modifier ces paramètres dans le fichier config.xml.
 
-***Remarque ** : si vous modifiez ces paramètres, faites-le avec précaution.*
+***Remarque &#x200B;** : si vous modifiez ces paramètres, faites-le avec précaution.*
 
 1. Exportez le fichier de configuration de Document Security. (Voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `ServerSettings`.

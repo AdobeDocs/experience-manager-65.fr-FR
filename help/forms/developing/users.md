@@ -541,7 +541,7 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
 1. Créez un client DirectoryManagerService.
 
-   Créez un objet `DirectoryManagerServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion. Pour plus d’informations, voir [Configuration des propriétés de connexion ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Créez un objet `DirectoryManagerServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion. Pour plus d’informations, voir [Configuration des propriétés de connexion &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Appelez les opérations d’utilisateur, d’utilisatrice ou de groupe appropriées.
 
