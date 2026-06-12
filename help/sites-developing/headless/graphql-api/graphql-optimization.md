@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 97%
+source-wordcount: '1915'
+ht-degree: 99%
 
 ---
 
@@ -185,7 +185,7 @@ GraphQL dans AEM prend en charge deux types de pagination :
 
 * [pagination basée sur les limites/décalages](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Il est utilisé pour les requêtes de liste qui se terminent par `List`, par exemple `articleList`.
-Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (le `offset`) et le nombre d’éléments à renvoyer (la variable `limit`, ou la taille de la page).
+Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (la `offset`) et le nombre d’éléments à renvoyer (la `limit` ou la taille de page).
 
 * [pagination basée sur le curseur](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (représentée par `first` et `after`)
 Cette action fournit un identifiant unique pour chaque élément, également appelé curseur.

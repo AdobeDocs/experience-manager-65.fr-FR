@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 100%
+source-wordcount: '1458'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
 1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
 
-1. En fonction de la version d’Adobe Analytics que vous utilisez, vous devez attendre 45 minutes, en moyenne, pour que le rapport soit mis à jour avec le terme recherché utilisé (« aubergine » dans l’exemple).
+1. En fonction de la version d’Adobe Analytics que vous utilisez, vous devez attendre 45 minutes, en moyenne, pour que le rapport soit mis à jour avec le terme de recherche utilisé (« aubergine » dans l’exemple).
 
 ## Utilisation de l’outil de recherche de contenu (cf#) avec les frameworks Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -198,8 +198,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >La colonne Variable CQ de chaque table peut également être renseignée en ligne en double-cliquant sur le champ et en ajoutant du texte. Ces champs acceptent JavaScript comme entrée.
 >
->Par exemple, à côté de `prop3`, vous pouvez ajouter :
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Par exemple, à côté de `prop3` vous pouvez ajouter :> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 >
 

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1447'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -51,7 +51,7 @@ Les quatre opérations du service Output suivantes peuvent être utilisées :
 * **generatePDFOutputBatch** : fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de fichiers PDF. Il existe également la possibilité de générer un seul PDF en combinant tous les PDF.
 * **generatePrintedOutputBatch** : fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
 
-## Incohérence affectant le service assembleur {#assembler-service}
+## Service Assembler {#assembler-service}
 
 Le service Assembler vous permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP. Grâce à lui, vous pouvez également obtenir des informations sur les documents PDF. Chacun des travaux envoyés au service Assembler inclut un document DDX (Document Description XML), ainsi qu’un ensemble de documents source et de ressources externes (chaînes et graphiques). Le document DDX explique comment utiliser les documents sources pour générer un ensemble de documents cible.
 
@@ -78,8 +78,8 @@ Le document DDX peut spécifier les documents cibles avec ces caractéristiques�
 
 Vous pouvez utiliser DDX pour étendre les documents PDF dans le cadre de l’assemblage et du désassemblage de documents. Vous pouvez spécifier n’importe quelle combinaison des effets suivants :
 
-* ajout ou suppression de filigranes ou d’arrière-plans sur les pages sélectionnées ; 
-* insertion ou suppression d’en-têtes et de pieds de page sur les pages sélectionnées ; 
+* ajout ou suppression de filigranes ou d’arrière-plans sur les pages sélectionnées ;
+* insertion ou suppression d’en-têtes et de pieds de page sur les pages sélectionnées ;
 * suppression de la structure et des capacités de navigation dans un package PDF ou un portfolio PDF ; Le résultat est un document PDF unique.
 * renumérotation des intitulés de page ; Les étiquettes de page servent généralement à numéroter des pages.
 * importation de métadonnées à partir d’un autre document source ;

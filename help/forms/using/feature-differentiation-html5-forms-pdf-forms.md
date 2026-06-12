@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 96%
 
 ---
 
@@ -51,11 +51,11 @@ Le tableau suivant indique les fonctionnalités prises en charge par les formula
   <tr>
    <td>Pagination<br /> </td>
    <td><p>Un formulaire HTML5 est divisé en panneaux et en cadres pour lui donner une apparence similaire aux formulaires PDF. La taille de la page est calculée dynamiquement. Si vous supprimez ou marquez comme masqué tout le contenu d’une page dans un formulaire HTML5, la page vierge est masquée. Aucun espace vide (espace) n’est affiché entre les pages au-dessus et en dessous de la page vierge.</p> <p>Si la fusion de données ou les scripts ajoutent du contenu à une page, la longueur de la page s’agrandit pour s’adapter au nouveau contenu. Aucune nouvelle page n’est ajoutée au formulaire pour s’adapter au nouveau contenu. </p> <p><strong>Remarque :</strong> si vous supprimez ou marquez comme masqué tout le contenu d’une page de formulaire HTML5, la page vierge (espace) reste visible entre la première et la deuxième page mais pas entre les autres pages.</p> </td>
-   <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu de l’utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
+   <td>La pagination des documents PDF dépend du contenu des données fusionnées ou du contenu utilisateur : le nombre de pages est augmenté/réduit en conséquence.</td>
   </tr>
   <tr>
    <td>En-têtes/pieds de page </td>
-   <td>Pris en charge. <br /> <br /> Les formulaires mobiles HTML5 ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois les configurer dans la disposition pour qu’ils apparaissent à plusieurs endroits dans l’aperçu des formulaires mobiles.<br /> </td>
+   <td>Pris en charge. <br /> <br /> Comme HTML5 Mobile Forms ne prend pas en charge les sauts de page, les en-têtes et les pieds de page s’affichent une seule fois. Vous pouvez toutefois les configurer dans la disposition pour qu’ils apparaissent à plusieurs endroits dans l’aperçu des formulaires mobiles.<br /> </td>
    <td>Pris en charge.</td>
   </tr>
   <tr>

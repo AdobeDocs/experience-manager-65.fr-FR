@@ -8,8 +8,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 94%
 
 ---
 
@@ -63,8 +63,8 @@ Pour connecter PWA Studio au point d’entrée GraphQL d’AEM, vous pouvez util
 
    Vous trouverez plus d’informations sur la personnalisation du composant Navigation dans [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) et dans la documentation [Framework d’extensibilité](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) de PWA Studio.
 
-1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point d’entrée à cet emplacement, vous devez personnaliser la configuration UPWARD de votre application PWA Studio :
-a. Sur `pwa-root/.env`, ajoutez la variable AEM_CFM_GRAPHQL et adaptez-la pour qu’elle pointe vers votre point d’entrée GraphQL de fragments de contenu AEM.
+1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point d’entrée à cet emplacement, personnalisez la configuration UPWARD de votre application PWA Studio :
+a. Pour `pwa-root/.env`, ajoutez la variable AEM_CFM_GRAPHQL et adaptez-la pour qu’elle pointe vers votre point d’entrée AEM Content Fragments de contenu GraphQL.
 
    Exemple : AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -107,7 +107,7 @@ Consultez la documentation relative aux fragments de contenu AEM pour configurer
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Pour présenter le point d’entrée GraphQL, nous avons préparé quelques exemples de données et de modèles de fragments de contenu via un package de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
+Pour présenter le point d’entrée GraphQL, nous avons préparé quelques exemples de données et de modèles de fragments de contenu via un module de contenu. Ces composants fonctionnent bien avec les composants React fournis avec l’extension PWA Studio.
 
 ## Utilisation {#how-to-use}
 
@@ -129,4 +129,4 @@ Affichez les publications de blog en fonction de certains modèles de fragments 
 
 ### Enrichissement PDP {#pdp-enrichment}
 
-Permet aux spécialistes du marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu. Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).
+Permet aux spécialistes marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu. Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).

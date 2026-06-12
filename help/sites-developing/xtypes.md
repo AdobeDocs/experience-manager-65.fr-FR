@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
-ht-degree: 100%
+source-wordcount: '7653'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig)
 
-   BlueprintConfig fournit un panneau pour afficher les Live Copies d’un plan directeur et modifier les propriétés de ce plan directeur (déclencheur de synchronisation et actions de synchronisation).
+  BlueprintConfig fournit un panneau pour afficher les Live Copies d’un plan directeur et modifier les propriétés de ce plan directeur (déclencheur de synchronisation et actions de synchronisation).
 
 * blueprintstatus
 
@@ -242,7 +242,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.wcm.CreateSiteWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.CreateSiteWizard)
 
-   CreateSiteWizard est un assistant détaillé pour créer des sites (MSM).
+  CreateSiteWizard est un assistant détaillé pour créer des sites (MSM).
 
 * createversiondialog
 
@@ -260,7 +260,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.CycleButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
-   SplitButton spécialisé contenant un menu d’éléments [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem). Le bouton fait défiler automatiquement chaque élément de menu lors d’un clic, augmentant l’événement [change](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) du bouton (ou appelant la fonction [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) du bouton, si disponible) pour l’élément de menu actif.
+  SplitButton spécialisé contenant un menu d’éléments [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem). Le bouton fait défiler automatiquement chaque élément de menu lors d’un clic, augmentant l’événement [change](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) du bouton (ou appelant la fonction [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) du bouton, si disponible) pour l’élément de menu actif.
 
 * dataview
 
@@ -638,7 +638,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-   Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne dans la grille représente une propriété d’un objet, et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord).
+  Mise en œuvre de grille spécialisée conçue pour imiter la grille de propriété classique figurant généralement dans les IDE de développement. Chaque ligne dans la grille représente une propriété d’un objet, et les données sont stockées sous la forme d’un ensemble de paires nom/valeur dans [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord).
 
 * propgrid
 
@@ -650,7 +650,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip)
 
-   Classe d’info-bulle spécialisée pour les info-bulles pouvant être spécifiées au niveau du balisage et gérées automatiquement par l’instance [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) globale. Consultez l’en-tête de classe QuickTips pour en savoir plus sur l’utilisation et consulter des exemples supplémentaires.
+  Classe d’info-bulle spécialisée pour les info-bulles pouvant être spécifiées au niveau du balisage et gérées automatiquement par l’instance [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) globale. Consultez l’en-tête de classe QuickTips pour en savoir plus sur l’utilisation et consulter des exemples supplémentaires.
 
 * radio
 
@@ -784,7 +784,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   [CQ.Ext.SplitButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.SplitButton)
 
-   Bouton de division qui intègre une flèche déroulante capable de déclencher un événement séparément de l’événement de clic par défaut du bouton. En règle générale, il est utilisé pour afficher un menu déroulant qui fournit des options supplémentaires à l’action du bouton principal, mais tout autre gestionnaire personnalisé peut fournir la mise en œuvre arrowclick.
+  Bouton de division qui intègre une flèche déroulante capable de déclencher un événement séparément de l’événement de clic par défaut du bouton. En règle générale, il est utilisé pour afficher un menu déroulant qui fournit des options supplémentaires à l’action du bouton principal, mais tout autre gestionnaire personnalisé peut fournir la mise en œuvre arrowclick.
 
 * static
 
@@ -842,7 +842,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
   CQ.tagging.TagInputField
   ```
 
-   est un widget de formulaire qui permet de saisir des balises. Il dispose d’un menu contextuel permettant de faire une sélection parmi les balises existantes, et inclut la saisie semi-automatique, ainsi que bien d’autres fonctions.
+  est un widget de formulaire qui permet de saisir des balises. Il dispose d’un menu contextuel permettant de faire une sélection parmi les balises existantes, et inclut la saisie semi-automatique, ainsi que bien d’autres fonctions.
 
 * textarea
 
@@ -862,7 +862,7 @@ Les xtypes disponibles dans Adobe Experience Manager sont répertoriés ci-des
 
   Champ de texte de base. Peut être utilisé comme remplacement direct pour les entrées de texte classiques ou comme classe de base pour des contrôles d’entrée plus sophistiqués (comme [CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea) et [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)).
 
-* thumbnail
+* miniature
 
   [CQ.form.Thumbnail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Thumbnail)
 

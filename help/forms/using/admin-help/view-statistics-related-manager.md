@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 100%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
 # Afficher les statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
 
-L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Ces tâches se trouvent dans différents états, en fonction de l’endroit où elles se trouvent dans leur processus. (Voir [Statut (pour les catégories Par défaut, Workflow ou Événements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Vous pouvez filtrer les informations afin de n’afficher qu’un sous-ensemble des éléments à l’aide des différentes options disponibles (par exemple, Statut ou Catégorie). Vous pouvez trier les tâches ou travaux qui en résultent (par ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne. Vous pouvez également gérer les tâches à l’aide des outils d’opération affichés au-dessus de la liste des tâches.
+L’onglet Work Manager affiche des statistiques relatives aux éléments de Work Manager. Ces tâches se trouvent dans différents états, en fonction de l’endroit où elles se trouvent dans leur processus. (Voir [Statut (pour les catégories Par défaut, Workflow ou Événements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Vous pouvez filtrer les informations pour n’afficher qu’un sous-ensemble des éléments à l’aide des différentes options disponibles (par exemple, Statut ou Catégorie). Vous pouvez trier les tâches ou travaux qui en résultent (par ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne. Vous pouvez également gérer les tâches à l’aide des outils d’opération affichés au-dessus de la liste des tâches.
 
 ## Filtrage des tâches {#filter-the-work-items}
 
@@ -41,11 +41,11 @@ L’onglet Work Manager affiche des statistiques relatives aux éléments de Wo
 
 **Programmé :** affiche toutes les tâches prêtes à être exécutées par le serveur d’applications mais pas encore entamées.
 
-**En pause :** affiche toutes les tâches programmées que l’application cliente a mises en pause. Elles peuvent être exécutées ou supprimées (voir Gestion des tâches). 
+**En pause :** affiche toutes les tâches programmées que l’application cliente a mises en pause. Elles peuvent être exécutées ou supprimées (voir Gestion des tâches).
 
 **En cours :** affiche toutes les tâches que le Work Manager du serveur d’applications a sélectionnées et qui seront menées à bien ou échoueront. Vous ne pouvez pas utiliser d’opérations sur ces tâches.
 
-**Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces éléments à l’aide de l’opération Supprimer les éléments. (voir Gestion des tâches). 
+**Terminé :** affiche toutes les tâches exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces éléments à l’aide de l’opération Supprimer les éléments. (voir Gestion des tâches).
 
 **Échec :** affiche toutes les tâches n’ayant pas été exécutées avec succès en raison d’une erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Échec dans la colonne Statut vous permet d’accéder à des informations détaillées relatives à l’échec.
 
