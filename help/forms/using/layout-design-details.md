@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 100%
 
 ---
 
 # Conception de la mise en page{#layout-design}
 
-Les modèles de formulaire XFA ou XDP sont des modèles pour :
+Les modèles de formulaires XFA ou XDP sont des modèles pour :
 
 * [Lettres](/help/forms/using/create-letter.md)
 * [Canal d’impression](/help/forms/using/web-channel-print-channel.md#printchannel) des [communications interactives](/help/forms/using/interactive-communications-overview.md)

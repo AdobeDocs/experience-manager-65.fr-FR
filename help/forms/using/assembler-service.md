@@ -10,9 +10,9 @@ exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
-workflow-type: ht
-source-wordcount: '2159'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -206,8 +206,9 @@ fragment="myFragment"/>
 
 #### Résoudre des références sur le référentiel CRX {#resolve-references-on-crx-repository}
 
-Vous pouvez spécifier de manière sélective la référence source à résoudre en indiquant le chemin crx de la référence de fragment dans la source XDP. Dans l’exemple ci-dessous, les fragments inclus sont également
-résolus.
+Vous pouvez spécifier de manière sélective la référence source à résoudre en indiquant le chemin crx de la variable
+référence au fragment dans la source XDP. Dans l’exemple donné ci-dessous, les fragments inclus sont également
+résolu.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/"
@@ -296,7 +297,7 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 
 ### Diviser un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
 
-Sur l’illustration suivante, DocA est divisé en plusieurs documents générés. Le premier signet de niveau 1 d’une page identifie le début d’un nouveau document généré.
+Dans l’illustration suivante, le document DocA est divisé en plusieurs documents cible. Le premier signet de niveau 1 d’une page identifie le début d’un nouveau document généré.
 
 ![La division d’un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)
 

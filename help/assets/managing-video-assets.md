@@ -9,8 +9,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5596'
-ht-degree: 97%
+source-wordcount: '5414'
+ht-degree: 96%
 
 ---
 
@@ -260,8 +260,8 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 1. Dans le coin supérieur droit de la page Global, sélectionnez **[!UICONTROL Créer]**.
 1. Sur la page Créer une configuration YouTube, sous Paramètres de plateforme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
-   Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
-Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir dans un instant.
+   Vous avez spécifié l’ID de projet lors de la configuration initiale des paramètres de Google Cloud.
+Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir dans un instant.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -308,8 +308,8 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
 1. Sélectionnez **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue Paramètres du compte YouTube, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
-   Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
-Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y retournerez dans quelques instants.
+   Vous avez spécifié l’ID de projet lors de la [configuration initiale des paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings) précédente.
+Laissez ouverte la boîte de dialogue Paramètres du compte YouTube ; vous y reviendrez dans un instant.
 
 1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
@@ -359,20 +359,20 @@ Pour automatiser la définition des propriétés YouTube par défaut pour vos vi
 1. Sous l’en-tête Publication YouTube, cliquez sur **[!UICONTROL Catégorie YouTube]**.
 1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
 
-   * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+   * Dans le champ de texte **[!UICONTROL Mapper à la propriété]**, sélectionnez et copiez la valeur.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lors de la création de votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
-   * Sous **[!UICONTROL Choix]**, sélectionnez la valeur par défaut à utiliser (comme « Personnes et blogs » ou « Science et technologie ») et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut que vous souhaitez utiliser (telle que Personnes et blogs ou Science et technologie).
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lors de la création de votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Sous l’en-tête Publication YouTube, sélectionnez **[!UICONTROL Confidentialité YouTube]**.
 1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
 
-   * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+   * Dans le champ de texte **[!UICONTROL Mapper à la propriété]**, sélectionnez et copiez la valeur.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lors de la création de votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
-   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont groupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés par paires. Le champ inférieur de la paire est la valeur par défaut que vous souhaitez copier, telle que publique, non répertoriée ou privée.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lors de la création de votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, cliquez sur **[!UICONTROL Annuler]**.
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo d’Experience Manager puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.

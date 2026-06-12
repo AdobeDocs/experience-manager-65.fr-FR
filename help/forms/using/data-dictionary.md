@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3826'
+ht-degree: 97%
 
 ---
 
@@ -23,9 +23,9 @@ Un dictionnaire de données permet aux utilisateurs et utilisatrices professionn
 
 Un dictionnaire de données est une représentation indépendante des métadonnées qui décrivent les structures des données sous-jacentes et leurs attributs associés. Un dictionnaire de données est créé à l’aide d’un vocabulaire métier. Il peut être mappé à un ou plusieurs modèles de données sous-jacents.
 
-Le dictionnaire de données est composé d&#39;éléments de trois types : simple, composite et de collection. Les DDE simples sont des éléments primitifs tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville. Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal. Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client ou une cliente avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
+Le dictionnaire de données est composé d&#39;éléments de trois types : simple, composite et de collection. Les DDE simples sont des éléments primitifs tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville. Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal. Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client ou une cliente avec plusieurs emplacements différents ou des adresses de facturation et d’expédition différentes.
 
-Correspondence Management utilise des données principales, client ou destinataire stockées conformément à la structure du dictionnaire de données pour créer des correspondances destinées à différents utilisateurs et utilisatrices. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
+Correspondence Management utilise des données principales, client ou destinataire stockées conformément à la structure du dictionnaire de données pour créer des correspondances destinées à différents utilisateurs et utilisatrices. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher {First Name} », « Monsieur {Last Name} ».
 
 En règle générale, les utilisateurs et utilisatrices professionnelles n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions.
 
@@ -34,7 +34,7 @@ En règle générale, les utilisateurs et utilisatrices professionnelles n’ont
 1. Un auteur ou une autrice [crée le dictionnaire de données](#createdatadictionary) en chargeant un schéma ou à partir de rien.
 1. L’auteur crée la lettre et les communications interactives en fonction du dictionnaire de données et associe les éléments de dictionnaire de données dans la lettre et les communications interactives là où cela est nécessaire.
 1. Il peut télécharger le fichier XML de données d’exemple, qui repose sur le schéma d’un dictionnaire de données. L’auteur peut modifier le fichier XML de données d’exemple, qui peut être associé en tant que données de test au dictionnaire de données. Le même nœud est utilisé pendant l’aperçu de la lettre.
-1. Durant [l’aperçu d’une lettre](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un auteur choisit de prévisualiser la lettre avec des données (Aperçu personnalisé). La lettre s’ouvre préremplie avec les données que l’auteur a fournies. Elle s’ouvre dans l’interface de création de correspondance. L’agent qui prévisualise cette lettre peut modifier le contenu, les données, les pièces jointes de la lettre et envoyer la lettre finale. Pour plus d’informations sur la création de lettres, voir[ Création de correspondance](../../forms/using/create-letter.md).
+1. Durant [l’aperçu d’une lettre](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un auteur choisit de prévisualiser la lettre avec des données (Aperçu personnalisé). La lettre s’ouvre préremplie avec les données que l’auteur a fournies. Elle s’ouvre dans l’interface de création de correspondance. L’agent qui prévisualise cette lettre peut modifier le contenu, les données, les pièces jointes de la lettre et envoyer la lettre finale. Pour plus d’informations sur la création de lettres, voir[&#x200B; Création de correspondance](../../forms/using/create-letter.md).
 
 ## Prérequis {#prerequisite}
 
@@ -80,7 +80,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 
    * Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal.
    * Les DDE simples sont des éléments tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville.
-   * Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client ou une cliente avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
+   * Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client ou une cliente avec plusieurs emplacements différents ou des adresses de facturation et d’expédition différentes.
 
    Voici quelques règles pour créer un dictionnaire de données :
 
@@ -198,8 +198,8 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
 1. Une fois les entrées de données réalisées, vous pouvez utiliser ce fichier XML lorsque vous prévisualisez une lettre avec des données de test.
 
-   Vous pouvez ajouter ces données de test avec DD (sélectionnez DD, cliquez sur Charger des données de test et chargez ce fichier XML).
-Après cette étape, lorsque vous prévisualiserez une lettre normalement (et non de façon personnalisée), ces données XML seront utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis charger ce fichier XML.
+   Vous pouvez ajouter ces données de test avec DD (sélectionnez DD , puis Télécharger les données de test et téléchargez ce fichier xml)
+Par la suite, lorsque vous prévisualiserez la lettre normalement (et non de manière personnalisée), ces données XML seront utilisées dans la lettre. Vous pouvez également sélectionner Personnalisé, puis charger ce fichier XML.
 
 ## Exemples {#samples}
 
@@ -273,7 +273,7 @@ Le tableau suivant décrit les attributs communs associés à un DDE :
   <tr>
    <td>Nom</td>
    <td>Chaîne</td>
-   <td>Requis.<br /> : nom du DDE. Ce nom doit être unique.</td>
+   <td>Obligatoire.<br /> Nom du DDE. Ce nom doit être unique.</td>
   </tr>
   <tr>
    <td>Nom de référence<br /></td>
@@ -342,7 +342,7 @@ Le tableau suivant décrit les attributs communs associés à un DDE :
 
 Un dictionnaire de données peut également inclure des éléments calculés. Un élément calculé de dictionnaire de données est toujours associé à une expression. Cette expression est évaluée pour obtenir la valeur d’un élément de dictionnaire de données au moment de l’exécution. Une valeur de DDE calculée est une fonction d’autres valeurs ou littéraux de DDE. Par défaut, les expressions EL (Expression Language) JSP sont prises en charge. Les expressions EL utilisent les caractères ${ } et les expressions valides peuvent inclure des littéraux, des opérateurs, des variables (références d’élément de dictionnaire de données) et des appels de fonction. Tout en faisant référence à un élément de dictionnaire de données dans l’expression, le nom de référence de DDE est utilisé. Le chemin d’accès est unique pour chaque élément de dictionnaire de données au sein d’un dictionnaire de données.
 
-Un DDE calculé de type PersonfullName peut être associé à une expression de concaténation EL telle que ${PersonFirstName} ${PersonLastName}.
+Un PersonFullName DDE calculé peut être associé à une expression de concaténation EL telle que ${PersonFirstName} ${PersonLastName}.
 
 ## Mappage de type de données entre XSD et le dictionnaire de données {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -362,7 +362,7 @@ L’exportation d’un schéma XSD nécessite un mappage de données spécifique
   </tr>
   <tr>
    <td><p>xs:élément où maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE de type - COLLECTION-<br /> Un nœud de DDE est créé en regard du DDE COLLECTION qui capture les informations à partir du nœud COLLECTION parent. Le même nœud est également créé pour les deux types de collection de données simples/composites. Pour chaque instance de COLLECTION de type composite, l’arborescence du dictionnaire de données capture les champs élémentaires dans les enfants du DDE créé pour la capture des informations de type.<br /> - DDE (COLLECTION)<br /> - DDE (COMPOSITE pour saisir des informations)<br /> - DDE (STRING) champ1<br /> - DDE (STRING) champ2<br /> <br /> </p> </td>
+   <td>DDE de type - COLLECTION-<br /> Un nœud de DDE est créé en regard du DDE COLLECTION qui capture les informations à partir du nœud COLLECTION parent. Le même nœud est également créé pour les deux types de collection de données simples/composites. Chaque fois que vous disposez d’une COLLECTION de type composite, l’arborescence du dictionnaire de données capture les champs constitutifs dans les enfants du DDE créé pour capturer les informations de type.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE pour les informations de type)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Une fois que vous avez créé un dictionnaire de données, vous pouvez le télé
 
 ## Internationalisation des métadonnées {#internationalization-of-meta-data}
 
-Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votre clientèle, vous pouvez localiser le nom, la description et les valeurs d’énumération du dictionnaire de données et des Éléments du dictionnaire de données.
+Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votre clientèle, vous pouvez localiser le nom d’affichage, la description et les valeurs d’énumération du dictionnaire de données et des Éléments du dictionnaire de données.
 
 ### Localisation du dictionnaire de données {#localize-data-dictionary}
 
@@ -441,7 +441,7 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votr
 
    La structure du fichier de propriétés définit une ligne chacune pour la description et le nom d’affichage pour le dictionnaire de données et chaque élément du dictionnaire de données dans le dictionnaire de données. En outre, le fichier de propriétés définit une ligne pour une valeur d’énumération définie pour chaque élément du dictionnaire de données. Comme avec un dictionnaire de données, le fichier de propriétés correspondant peut avoir plusieurs définitions d’éléments de dictionnaire de données. En outre, le fichier peut contenir des définitions pour un ou plusieurs ensembles de valeur d’énumération.
 
-1. Pour mettre à jour le fichier .properties dans une langue différente, mettez à jour le nom d’affichage et les valeurs de description dans le fichier. Créez plus d’instances du fichier pour chaque langue à localiser. Seuls le français, l’allemand, le japonais et l’anglais sont pris en charge.
+1. Pour mettre à jour le fichier .properties dans d’autres paramètres régionaux, mettez à jour le nom d’affichage et les valeurs de description dans le fichier. Créez plus d’instances du fichier pour chaque langue à localiser. Seuls le français, l’allemand, le japonais et l’anglais sont pris en charge.
 
 1. Enregistrez les différents fichiers de propriétés mis à jour avec les noms suivants :
 
@@ -451,12 +451,12 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à votr
 
    _ja_JA.properties (japonais)
 
-   _en_EN.properties (anglais) 
+   _en_EN.properties (anglais)
 
-1. Archivez le fichier .properties (ou les fichiers si vous avez plusieurs langues) dans un fichier .zip unique.
+1. Archivez le fichier .properties (ou les fichiers si vous avez plusieurs paramètres régionaux) dans un fichier .zip unique.
 
 1. Dans la page du Dictionnaires de données, sélectionnez **Plus** > **Charger les données de localisation** et sélectionnez le fichier .zip contenant des fichiers de propriétés localisés.
-1. Pour afficher les modifications de localisation, modifiez la langue de votre navigateur.
+1. Pour afficher les modifications de localisation, modifiez les paramètres régionaux de votre navigateur.
 
 ## Validations du dictionnaire de données {#ddvalidations}
 
@@ -510,10 +510,10 @@ Les exemples de modèles et de codes indiquant les détails d’implémentation 
 
 Un DDE primitif représente un champ ou un attribut atomique par nature. Les DDE primitifs définis en dehors du cadre d’un type complexe (DDE composite) ou d’un élément répété (DDE de collection) peuvent être stockés à n’importe quel emplacement dans le schéma XML. L’emplacement des données correspondant à un DDE primitif ne dépend pas du mappage de son DDE parent. Les DDE primitifs utilisent les informations de mappage à partir du champ de liaison XML pour déterminer sa valeur et le mappage les traduit par l’un des objets suivants :
 
-* un attribut ; 
-* un élément ; 
-* un contexte de texte ; 
-* rien (un DDE ignoré). 
+* un attribut ;
+* un élément ;
+* un contexte de texte ;
+* rien (un DDE ignoré).
 
 L’exemple suivant illustre un schéma simple.
 
@@ -582,9 +582,9 @@ L’exemple suivant illustre le schéma d’une note.
 
 Un élément Collection est uniquement mappé à un autre élément Collection de cardinalité > 1. Les DDE enfants d’un DDE Collection ont des liaisons XML relatives (locales) par rapport à la liaison XML de leur DDE parent. Étant donné que les DDE enfants d’un élément Collection doivent avoir la même cardinalité que celle du DDE parent, la liaison relative est chargée d’assurer la contrainte de cardinalité de sorte que le DDE enfant ne pointe pas vers un élément de schéma XML non répété. Dans l’exemple ci-dessous, la cardinalité de « TokenID » doit être la même que celle de « Tokens », son DDE Collection parent.
 
-Lors du mappage d’un DDE de collection à un élément de schéma XML : 
+Lors du mappage d’un DDE de collection à un élément de schéma XML :
 
-* La liaison de la DDE correspondant à l’élément Collection doit être le XPath absolu. 
+* La liaison de la DDE correspondant à l’élément Collection doit être le XPath absolu.
 
 * Ne fournissez aucune liaison pour le DDE représentant le type d’élément Collection. Si une liaison est fournie, elle sera ignorée.
 

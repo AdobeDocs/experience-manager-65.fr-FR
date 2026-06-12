@@ -12,15 +12,15 @@ role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
-workflow-type: ht
-source-wordcount: '4397'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '4530'
+ht-degree: 94%
 
 ---
 
 # Gestion des paramètres prédéfinis de visionneuse{#managing-viewer-presets}
 
-Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui détermine comment les utilisateurs voient les ressources multimédias enrichies sur leur écran d’ordinateur et leurs appareils mobiles. En tant qu’administrateur, vous pouvez créer des paramètres prédéfinis de visionneuse. Les paramètres sont disponibles pour un ensemble d’options de configuration de la visionneuse. Vous pouvez, par exemple, modifier la taille d’affichage et le comportement du zoom de la visionneuse.
+Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles. Si vous êtes administrateur, vous pouvez créer des paramètres prédéfinis de visionneuse. Les paramètres sont disponibles pour un tableau d’options de configuration de la visionneuse. Vous pouvez, par exemple, modifier la taille d’affichage de la visionneuse ou le comportement du zoom.
 
 Pour obtenir des instructions sur la création et la personnalisation de vos propres paramètres prédéfinis de visionneuse HTML5, consultez la *Documentation sur l’API du SDK de la visionneuse HTML5*. Le kit SDK est disponible sur le serveur de publication IS intégré au kit SDK lui-même. Chaque version de bibliothèque comporte sa propre documentation SDK.
 
@@ -53,16 +53,16 @@ Vous pouvez ajouter, modifier, supprimer, publier, dépublier et prévisualiser 
 
 ### Prise en charge de la visionneuse pour les pages web en responsive design {#viewer-support-for-responsive-designed-web-pages}
 
-Chaque page web a des besoins différents. Par exemple, vous souhaitez parfois qu‘une page web fournisse un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle peut être « réactive » et son affichage peut être différent en fonction de l’appareil ou de la taille des fenêtres du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
+Chaque page web a des besoins différents. Par exemple, vous souhaitez parfois qu‘une page web fournisse un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’incorporer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle peut être « réactive » et son affichage peut être différent en fonction de l’appareil ou de la taille des fenêtres du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
 
-Consultez la section [Bibliothèque d’images réactive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr) pour plus d’informations sur l’intégration de visionneuses réactives à vos pages web.
+Consultez la section [Bibliothèque d’images réactive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr) pour plus d’informations sur l’incorporation de visionneuses réactives dans vos pages web.
 
 >[!NOTE]
 >
 >Publiez toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
->Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
+>Voir [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
 
-### Compatibilité du système de paramètres prédéfinis de visionneuse  {#viewer-preset-system-compatibility}
+### Compatibilité du système de paramètres prédéfinis de visionneuse {#viewer-preset-system-compatibility}
 
 Tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media sont entièrement compatibles avec les systèmes suivants :
 
@@ -71,7 +71,7 @@ Tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis av
 * Apple iPad
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® &#x200B;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -81,7 +81,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
  <tbody>
   <tr>
    <td><strong>Ensemble de carrousel</strong><br /> </td>
-   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Vous pouvez faire défiler les images vers la gauche ou la droite, puis cliquer sur une zone réactive ou sur une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page de catégorie, d’accueil ou de destination d’un site web.</p> </td>
+   <td><p>Les zones réactives ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Vous pouvez faire défiler les images vers la gauche ou la droite, puis cliquer sur une zone réactive ou sur une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page de catégorie, d’accueil ou de destination d’un site web.</p> </td>
   </tr>
   <tr>
    <td><strong>Dimensionnel</strong><br /> </td>
@@ -96,20 +96,20 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td>Affiche une image de la zone agrandie dans la visionneuse d’origine. Aucune commande à utiliser. En d’autres termes, les utilisateurs et utilisatrices déplacent la sélection sur la zone à afficher.</td>
   </tr>
   <tr>
-   <td><strong>Visionneuse d’images</strong></td>
-   <td>Dans la visionneuse d’images, les utilisateurs peuvent voir différentes vues ou variantes de couleur d’un élément en sélectionnant une image miniature. Cette visionneuse propose également des outils de zoom pour examiner les images de plus près.</td>
+   <td><strong>Ensemble d’images</strong></td>
+   <td>Dans la visionneuse d’ensembles d’images, vous pouvez voir différentes vues ou variantes de couleur d’un élément en sélectionnant une image miniature. Cette visionneuse propose également des outils de zoom pour examiner les images de plus près.</td>
   </tr>
   <tr>
    <td><strong>Image interactive</strong></td>
-   <td>Des zones réactives sont ajoutées aux parties d’une image. Vous pouvez alors les sélectionnez pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
+   <td>Des zones réactives sont ajoutées aux parties d’une image. Vous pouvez alors les sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Vidéo interactive</strong></td>
-   <td>Des miniatures sont ajoutées aux segments de montage d’une vidéo. Le client peut alors la sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
+   <td>Des miniatures sont ajoutées aux segments de montage d’une vidéo. Le client ou la cliente peut alors la sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Supports variés</strong></td>
-   <td>Affiche différents types de médias dans une seule visionneuse. Vous pouvez inclure des visionneuses à 360°, des visionneuses d’images, des images et des vidéos.</td>
+   <td>Affiche différents types de médias dans une seule visionneuse. Vous pouvez inclure des visionneuses à 360°, des ensembles d’images, des images et des vidéos.</td>
   </tr>
   <tr>
    <td><strong>Image panoramique</strong></td>
@@ -129,7 +129,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Vidéo 360</strong></td>
-   <td><p>Utilisez la visionneuse de vidéos 360/VR afin d’effectuer le rendu de la vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage ou d’une procédure médicale.</p> <p>Lors de la lecture sur un écran plat, vous pouvez contrôle l’angle de vue ; la lecture sur les appareils mobiles applique généralement les commandes gyroscopiques intégrées.</p> <p>La visionneuse inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.</p> <p><strong>Important</strong> : cette visionneuse n’est disponible que dans le mode Dynamic Media - Scene7.</p> </td>
+   <td><p>Utilisez la visionneuse de vidéos 360/VR afin d’effectuer le rendu de la vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage ou d’une procédure médicale.</p> <p>Lors de la lecture sur un écran plat, vous pouvez contrôler l’angle de vue ; la lecture sur les appareils mobiles applique généralement les commandes gyroscopiques intégrées.</p> <p>La visionneuse inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.</p> <p><strong>Important</strong> : cette visionneuse n’est disponible que dans le mode Dynamic Media - Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Vidéo</strong></td>
@@ -139,7 +139,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td><strong>Zoom vertical</strong></td>
    <td><p>La visionneuse Zoom vertical vous permet d’optimiser l’expérience d’affichage des images d’un produit, afin de donner à vos utilisateurs et utilisatrices la meilleure représentation d’un produit. L’emplacement vertical des nuanciers effectue les opérations suivantes :</p>
     <ul>
-     <li>Cela garantit que les nuanciers se trouvent en tête de page.<br/> Lorsqu’ils sont horizontaux, en fonction de la taille de l’écran du poste de travail de l’utilisateur ou de l’utilisatrice, les nuanciers ne sont pas visibles tant que l’utilisateur ou l’utilisatrice ne fait pas défiler la page vers le bas. En plaçant les nuanciers verticalement dans la visionneuse, ils sont visibles quelle que soit la taille de l’écran.</li>
+     <li>Garantit que les échantillons se trouvent « au-dessus du pli ».<br/> Avec les échantillons horizontaux, en fonction de la taille de l’écran du poste de travail, ils ne sont pas visibles tant que vous ne faisiez pas défiler la page vers le bas. En plaçant les nuanciers verticalement dans la visionneuse, ils sont visibles quelle que soit la taille de l’écran.</li>
      <li>Optimise la taille de l’image principale.<br /> Avec les nuanciers horizontaux, il est nécessaire de réserver de l’espace sur la page pour s’assurer qu’ils sont visibles. Ce positionnement a réduit la taille de l’image principale. Toutefois, avec une disposition de nuancier verticale, il n’est pas nécessaire d’allouer cet espace. Vous pouvez ainsi agrandir la taille de l’image principale.</li>
     </ul> </td>
   </tr>
@@ -162,10 +162,10 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 
 >[!NOTE]
 >
->Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés mais vous devez les publier.
->Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
+>Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés, mais vous devez les publier.
+>Voir [&#x200B; Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 >
->Tous les nouveaux paramètres prédéfinis de visionneuse que vous créez et ajoutez doivent être activés *et* publiés.
+>Tout nouveau paramètre prédéfini de visionneuse que vous créez et ajoutez doit être activé *et* publié.
 >Voir [Activation ou désactivation des paramètres prédéfinis de visionneuse](#activating-or-deactivating-viewer-presets) et [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 
 <table>
@@ -207,12 +207,12 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
   </tr>
   <tr>
    <td>ImageSet_dark</td>
-   <td>Visionneuse d’images</td>
+   <td>Ensemble d’images</td>
    <td><code>html5_zoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>ImageSet_light</td>
-   <td>Visionneuse d’images</td>
+   <td>Ensemble d’images</td>
    <td><code>html5_zoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -391,7 +391,7 @@ Experience Manager affiche une grande variété de paramètres prédéfinis de 
 
 **Pour augmenter le nombre de paramètres prédéfinis de visionneuse qui s’affichent, procédez comme suit :**
 
-1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Accédez au nœud de liste des paramètres prédéfinis de visionneuse à l’emplacement suivant :
 
    `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -446,7 +446,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
      Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
-     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous souhaitez en savoir plus sur les marqueurs CSS de la visionneuse Zoom, consultez [Personnalisation de la visionneuse Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS continue à fonctionner.
+     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous souhaitez en savoir plus sur les marqueurs CSS de la visionneuse Zoom, voir [Personnalisation de la visionneuse Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il est toutefois possible que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS continue à fonctionner.
 
    >[!NOTE]
    >
@@ -458,12 +458,12 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
    >Pour une illustration de bouton, sélectionnez l’image x2 puis chargez l’illustration haute résolution. Lorsque vous travaillez avec des images interactives et des bannières favorisant les achats, vous pouvez également choisir parmi divers boutons de zone réactive prêts à l’emploi.
 
 1. (Facultatif) Près de la partie supérieure de la page Modification des paramètres de visionneuse prédéfinis, sélectionnez **[!UICONTROL Ordinateur de bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour définir de manière unique les styles visuels pour différents types d’appareils et d’écrans.
-1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
-Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
+1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le configurer.
+Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
 
    * **[!UICONTROL dash]** - Diffusion de vidéos en tant que dash uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner le type **[!UICONTROL hls]** à la place.
    * **[!UICONTROL hls]** - Diffusion de vidéos en tant que hsl uniquement.
-   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu en tant que DASH, HLS ou progressives, comme dans l’exemple suivant :
+   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu en tant que DASH, HLS ou progressives, comme dans l’ordre de lecture suivant :
       * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
       * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
       * Si le navigateur ne prend en charge ni DASH ni HLS, la lecture progressive est utilisée en dernier lieu.
@@ -536,13 +536,13 @@ Le sous-segment vidéo 3 ne s’étend pas au-delà des miniatures qui lui sont
 La logique de la visionneuse derrière le nombre de miniatures affichées dans le panneau en fonction du nombre de positions disponibles est la suivante :
 
 * Nombre de sous-segments = arrondi au sous-segment supérieur (nombre de miniatures/nombre d’emplacements visibles dans le panneau des miniatures, en fonction de la taille de la fenêtre du navigateur).
-En reprenant l’exemple du tableau ci-dessus, 9 miniatures/4 emplacements = 2,25 ; la logique de la visionneuse arrondit donc à trois sous-segments.
+En reprenant l’exemple du tableau ci-dessus, 9 miniatures/4 emplacements = 2,25 ; la logique de la visionneuse arrondit à trois sous-segments.
 
 * Nombre de miniatures = arrondi à la miniature supérieure (nombre de miniatures/nombre de sous-segments vidéo).
-En reprenant l’exemple du tableau ci-dessus, 9 miniatures/3 sous-segments vidéo = 3 miniatures.
+En reprenant l’exemple du tableau ci-dessus, 9 miniatures/3 sous-segments vidéo = 3 miniatures.
 
 * Durée du sous-segment = durée totale de la vidéo / nombre de sous-segments vidéo.
-En reprenant l’exemple du tableau ci-dessus, 30 secondes/3 sous-segments vidéo = 10 secondes d’affichage pour chaque sous-segment vidéo.
+En reprenant l’exemple du tableau ci-dessus, 30 secondes/3 sous-segments vidéo = affichage de 10 secondes de chaque sous-segment vidéo.
 
 #### Remarques spéciales sur la création d’un paramètre prédéfini de visionneuse de bannière de carrousel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
@@ -559,9 +559,9 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 **Pour activer ou désactiver les paramètres prédéfinis de visionneuse, procédez comme suit :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
-1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
+1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le bouton (bascule) pour activer ou désactiver un paramètre de visionneuse prédéfini.
 
-   Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
+   Le bouton (bascule) des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le bouton (bascule) des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
 
 ## Publication de paramètres prédéfinis de visionneuse {#publishing-viewer-presets}
 
@@ -622,7 +622,7 @@ Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les b
 
    >[!NOTE]
    >
-   >Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
+   >Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
 1. Sélectionnez un paramètre prédéfini de visionneuse dans le volet de gauche pour l’appliquer à la ressource.
 

@@ -8,8 +8,8 @@ exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 100%
+source-wordcount: '2751'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Les métadonnées techniques sont utiles pour les applications logicielles qui t
 * débit d’un fichier audio ou vidéo ;
 * résolution (niveau de détail) d’une image.
 
-Les métadonnées descriptives concernent le domaine d’application (par exemple, l’entreprise d’où provient une ressource) et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
+Les métadonnées descriptives sont des métadonnées liées au domaine d’application, par exemple, l’entreprise d’où provient une ressource. Impossible de déterminer automatiquement les métadonnées descriptives. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
 
 La création manuelle d’informations descriptives de métadonnées coûte cher. Des normes ont donc été mises en place pour faciliter l’échange de métadonnées entre les systèmes logiciels et les organisations. [!DNL Experience Manager Assets] prend en charge l’ensemble des normes pertinentes pour la gestion des métadonnées.
 
@@ -167,7 +167,7 @@ La référence ci-après contient des informations sur un schéma de métadonné
 
 La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Assets], Dublin Core décrit les ressources numériques, y compris les vidéos, le son, les images et les documents.
 
-Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
+Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées répertoriés dans le tableau suivant. Chaque élément Dublin Core est facultatif et peut être répété. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques à un type de média.
 
 Outre le DCMES, il existe d’autres éléments de métadonnées créés par la Dublin Core Initiative. Pour plus d’informations, voir la [Dublin Core Initiative](https://dublincore.org/).
 
@@ -213,16 +213,16 @@ La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible au
 
 ### Présentation de la norme XMP {#what-is-xmp}
 
-Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
+Adobe a introduit pour la première fois la norme XMP dans le cadre du produit logiciel Adobe Acrobat. Depuis lors, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
 Les spécialistes de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le référentiel d’[!DNL Assets] extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
 
-XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
+XMP normalise la définition, la création et le traitement des métadonnées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
 Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
-Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à
-une entité spécifique appelée ressource ; c’est-à-dire qu’elles portent sur celle-ci. S’il y a XMP, la ressource est toujours la ressource.
+Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à un
+entité particulière appelée ressource ; en d’autres termes, les propriétés portent sur la ressource. S’il y a XMP, la ressource est toujours la ressource.
 
 ### Écosystème XMP {#xmp-ecosystem}
 
@@ -251,7 +251,8 @@ Les sections ci-après décrivent les notions fondamentales relatives à XMP, no
 
 #### Espaces de noms et schémas {#namespaces-and-schemata}
 
-Un schéma XMP est un ensemble de noms de propriétés défini dans un espace de noms XML commun qui comprend le type des données et des informations descriptives. Un schéma XMP est identifié par l’URI de l’espace de noms XML. L’utilisation des espaces de noms permet d’empêcher tout conflit entre les propriétés dans différents schémas qui portent le même nom, mais ont un sens différent.
+Un schéma XMP est un ensemble de noms de propriétés dans un espace de noms XML commun qui comprend :
+le type de données et des informations descriptives. Un schéma XMP est identifié par son URI d’espace de noms XML. L’utilisation d’espaces de noms empêche les conflits entre les propriétés de différents schémas qui portent le même nom, mais ont une signification différente.
 
 Par exemple, la propriété `Creator` dans deux schémas conçus indépendamment peut correspondre à la personne ou à l’application (Adobe Photoshop, par exemple) ayant créé la ressource.
 
