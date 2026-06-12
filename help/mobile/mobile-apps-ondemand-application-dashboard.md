@@ -58,7 +58,7 @@ La mosaïque **Gérer la connexion** affiche les informations de connexion AEM M
 >
 >Cliquez sur l’engrenage en haut à droite pour configurer un cloud mobile On-Demand.
 >
->Voir [ Configuration des services On-Demand mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
+>Voir [&#x200B; Configuration des services On-Demand mobiles](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) pour plus d’informations.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -81,7 +81,7 @@ La mosaïque **Gérer les bannières** permet de gérer le contenu d’une banni
 * **MODIFIÉ** : dernière modification dans AEM
 * **CHARGÉ** : dernier chargement depuis AEM
 * **PUBLIÉ** : dernière demande publiée par AEM
-* **** : source (AEM local ou distant de Mobile On Demand)
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On Demand)
 
 L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau de bord de l’application AEM Mobile :
 
@@ -89,7 +89,7 @@ L’image suivante montre la mosaïque **Gérer les bannières** dans le tableau
 
 >[!NOTE]
 >
->Pour créer, supprimer ou mettre à jour des bannières ](/help/mobile/mobile-on-demand-managing-banners.md)**reportez-vous à la section**[ Gestion des bannières .
+>Pour créer, supprimer ou mettre à jour des bannières [&#128279;](/help/mobile/mobile-on-demand-managing-banners.md)**reportez-vous à la section** Gestion des bannières .
 
 ### La Mosaïque Gérer Les Articles {#the-manage-articles-tile}
 
@@ -100,7 +100,7 @@ La mosaïque **Gérer les articles** permet de gérer le contenu d’un article.
 * **MODIFIÉ** : dernière modification dans AEM
 * **CHARGÉ** : dernier chargement depuis AEM
 * **PUBLIÉ** : dernière demande publiée par AEM
-* **** : source (AEM local ou distant de Mobile On-Demand)
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les articles** dans le tableau de bord de l’application AEM Mobile :
 
@@ -119,7 +119,7 @@ La mosaïque **Gérer les collections** permet de gérer le contenu d’une coll
 * **MODIFIÉ** : dernière modification dans AEM
 * **CHARGÉ** : dernier chargement depuis AEM
 * **PUBLIÉ** : dernière demande publiée par AEM
-* **** : source (AEM local ou distant de Mobile On-Demand)
+* **&#x200B;**&#x200B;: source (AEM local ou distant de Mobile On-Demand)
 
 L’image suivante montre la mosaïque **Gérer les collections** dans le tableau de bord de l’application AEM Mobile :
 

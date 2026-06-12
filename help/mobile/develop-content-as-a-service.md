@@ -61,7 +61,7 @@ Le workflow des ressources se présente comme suit :
    1. Choisir une ressource ou une collection de ressources
    1. Personnaliser le rendu JSON
 
-Le diagramme suivant illustre le workflow de référence **** :
+Le diagramme suivant illustre le workflow de référence **&#x200B;**&#x200B;:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 

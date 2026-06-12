@@ -61,7 +61,7 @@ Chaque boutique d’applications fournisseur, par exemple Apple App Store ou Goo
 
 >[!NOTE]
 >
->Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [ Modification des métadonnées d’application ](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
+>Une fois que vous connaissez la mosaïque **`Manage App`**, reportez-vous à la section [&#x200B; Modification des métadonnées d’application &#x200B;](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 

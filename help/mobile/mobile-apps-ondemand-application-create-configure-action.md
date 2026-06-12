@@ -30,7 +30,7 @@ Les détails de votre application sont visibles dans le tableau de bord ou dans 
 >
 >Le tableau de bord est une série de mosaïques utiles qui donnent un aperçu du contenu, des métadonnées et de l’état de la connexion On-Demand AEM Mobile de l’application.
 >
->Voir [Tableau de bord de l’application ](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
+>Voir [Tableau de bord de l’application &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
 
 **Pour créer une application à la demande, procédez comme suit**
 

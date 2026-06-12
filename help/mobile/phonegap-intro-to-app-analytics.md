@@ -41,9 +41,9 @@ Adobe Mobile Analytics SDK fournit les éléments suivants :
 1. **Analyse de géolocalisation** - Trouvez où les utilisateurs de votre application lancent et interagissent avec vos expériences mobiles par localisation GPS ou points ciblés.
 1. **Analyse du cheminement** - Découvrez comment les utilisateurs naviguent dans votre application pour déterminer quels écrans et éléments d’interface interagissent avec les utilisateurs et lesquels provoquent le décrochage de ces derniers.
 
-Cette section décrit comment les [développeurs ](#developers) peuvent ensuite apprendre à instrumenter les applications AEM Mobile avec le suivi Analytics.
+Cette section décrit comment les [développeurs &#x200B;](#developers) peuvent ensuite apprendre à instrumenter les applications AEM Mobile avec le suivi Analytics.
 
-Enfin, [les administrateurs ](#administrators) apprennent à :
+Enfin, [les administrateurs &#x200B;](#administrators) apprennent à :
 
 * créer un service cloud pour Adobe Mobile Services
 * créer une configuration de service mobile et associer une suite de rapports
