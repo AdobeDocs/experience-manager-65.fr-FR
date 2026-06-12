@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 100%
+source-wordcount: '2779'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les 
 ## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
-* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champs utilisés lors de l’écriture d’expressions.
+* Utilisez des noms uniques pour les champs et les panneaux du formulaire. Cela permet d’éviter tout conflit possible avec les noms de champ utilisés lors de l’écriture d’expressions.
 * Lors de la création d’expressions multilignes, utilisez un point-virgule à la fin d’une instruction.
 
 ## Recommandations relatives aux expressions impliquant un panneau de répétition {#best-practices-for-expressions-involving-repeating-panel}
@@ -35,7 +35,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 * Pour créer un panneau de répétition, dans la boîte de dialogue du panneau, ouvrez les paramètres, puis paramétrez la valeur du champ de nombre maximal sur un chiffre supérieur à 1.
 * La valeur du nombre minimum des paramètres de répétition du panneau peut être un ou plusieurs, mais ne peut pas être supérieure à la valeur du nombre maximal.
-* Lorsqu’une expression fait référence à un champ de panneau répétable, les noms de champs dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
+* Lorsqu’une expression fait référence à un champ de panneau répétable, les noms de champ dans l’expression sont résolus par rapport à l’élément de répétition le plus proche.
 * Les formulaires adaptatifs fournissent quelques fonctions spéciales pour simplifier le calcul des panneaux répétables comme la somme, le compte, le minimum, le maximum, le filtre, etc. Pour obtenir la liste complète des fonctionnalités, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
 * Les API pour manipuler les instances d’un panneau de répétition sont :
 
@@ -46,7 +46,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 ## Types d’expression {#expression-types}
 
-Dans les formulaires adaptatifs, vous pouvez écrire des expressions afin d’ajouter des comportements tels que l’affichage et le masquage dynamique des champs et panneaux. Vous pouvez également écrire des expressions pour ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Les formulaires adaptatifs prennent en charge les expressions suivantes : 
+Dans les formulaires adaptatifs, vous pouvez écrire des expressions afin d’ajouter des comportements tels que l’affichage et le masquage dynamique des champs et panneaux. Vous pouvez également écrire des expressions pour ajouter des champs calculés, afficher les champs en lecture seule, ajouter une logique de validation, et bien d’autres fonctionnalités. Les formulaires adaptatifs prennent en charge les expressions suivantes :
 
 * **[Expressions d’accès](#access-expression-enablement-expression)** : pour activer/désactiver un champ.
 * **[Expressions de calcul](#calculate-expression)** : pour calculer automatiquement la valeur d’un champ.
@@ -137,8 +137,8 @@ L’expression de validation est utilisée pour valider les champs à l’aide d
 
 **S’applique à** : champs
 
-**Type de valeur renvoyée** : l’expression renvoie une valeur booléenne, représentant l’état de validation du champ. La valeur **false** indique que le champ n’est pas valide et **true** indique que le champ est valide.
-**Exemple** : pour un champ représentant un code postal du Royaume-Uni, l’expression de validation est :
+**Type de valeur renvoyée** : l’expression renvoie une valeur booléenne, représentant l’état de validation du champ. La valeur **false** indique que le champ n’est pas valide et **true** indique que le champ est valide.
+**Exemple** : pour un champ représentant un code postal du Royaume-Uni, l’expression de validation est :
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
 
@@ -184,7 +184,7 @@ L’expression d’achèvement de l’étape est utilisée pour empêcher un uti
 
 **Type de renvoi** : l’expression renvoie une valeur booléenne, qui indique si le panneau est valide ou non. **True** indique que le panneau actuel est valide et l’utilisateur peut accéder au prochain panneau.
 
-**Exemple** : dans un formulaire organisé en différents panneaux, avant d’accéder au panneau suivant, le panneau actif est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Un exemple d’expression d’achèvement de l’étape est :
+**Exemple** : dans un formulaire organisé en différents panneaux, avant de passer au panneau suivant, le panneau actuel est validé. Dans ce cas, les expressions d’achèvement de l’étape sont utilisées. En règle générale, ces expressions utilisent l’API de validation GuideBridge. Voici un exemple d’expression d’achèvement de l’étape :
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validations dans un formulaire adaptatif {#validations-in-adaptive-form}
@@ -227,7 +227,7 @@ GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en i
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 
-#### Utilisation de GuideBridge en dehors des expressions  {#using-guidebridge-outside-expressions-nbsp}
+#### Utilisation de GuideBridge en dehors des expressions  {#using-guidebridge-outside-expressions-nbsp}
 
 Vous pouvez également utiliser les API GuideBridge en dehors des expressions. Par exemple, vous pouvez utiliser les API GuideBridge pour définir la communication entre la page HTML qui héberge le formulaire adaptatif et le modèle de formulaire. En outre, vous pouvez définir la valeur qui provient du parent d’Iframe qui héberge le formulaire.
 
@@ -278,11 +278,11 @@ Comme mentionné ci-dessus, les formulaires adaptatifs permettent à l’auteur 
 Exécutez les étapes suivantes pour créer un modèle personnalisé destiné à un type de champ spécifique et pour le réutiliser avec d’autres champs du même type :
 
 1. Accédez à CRXDE Lite sur votre instance de création.
-1. Créez un dossier pour conserver vos modèles personnalisés. Sous le répertoire /apps , créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
+1. Créez un dossier pour conserver vos modèles personnalisés. Dans le répertoire /apps, créez un nœud de type sling:folder. Par exemple, créez un nœud appelé `customPatterns`. Sous ce nœud, créez un autre nœud du type `nt:unstructed` et appelez-le `textboxpatterns`. Ce nœud contient les différents modèles personnalisés que vous souhaitez ajouter.
 1. Ouvrez l’onglet Propriétés du nœud créé. Par exemple, ouvrez l’onglet Propriétés de `textboxpatterns`. Ajoutez la propriété `guideComponentType` à ce nœud et définissez sa valeur sur *fd/af/components/formatter/guideTextBox*.
 
-1. La valeur de cette propriété dépend du champ pour lequel vous souhaitez définir les modèles. Pour un champ numérique, la valeur de la propriété `guideComponentType` est *fd/af/components/formatter/guideNumericBox*. La valeur du champ de sélecteur de date est *fd/af/components/formatter/guideDatepicker*.
-``
+1. La valeur de cette propriété varie en fonction du champ pour lequel vous souhaitez définir les modèles. Pour un champ numérique, la valeur de la propriété `guideComponentType` est *fd/af/components/formatter/guideNumericBox*. La valeur du champ de sélecteur de date est *fd/af/components/formatter/guideDatepicker*.
+«
 1. Vous pouvez ajouter un modèle personnalisé en affectant une propriété au nœud `textboxpatterns`. Ajoutez une propriété qui dispose d’un nom (par exemple, `pattern1`) et définissez sa valeur sur le modèle que vous voulez ajouter. Par exemple, ajoutez une propriété `pattern1` avec une valeur Fax=text{99-999-9999999}. Le modèle est disponible pour toutes les zones de texte que vous utilisez dans les formulaires adaptatifs.
 
    ![Création de modèles personnalisés pour les champs dans CrxDe](assets/creating-custom-patterns.png)

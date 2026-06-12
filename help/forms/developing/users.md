@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '6201'
-ht-degree: 100%
+source-wordcount: '6236'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser l’API User Management pour créer des applications client
 * API du service Authentication Manager
 * API du service Authorization Manager
 
-User Management vous permet d’affecter, de supprimer et de déterminer des rôles et des autorisations. Il vous permet également d’affecter, de supprimer et d’interroger des domaines, des utilisateurs et des groupes. Enfin, vous pouvez utiliser User Management pour authentifier les utilisateurs.
+User Management vous permet d’affecter, de supprimer et de déterminer des rôles et des autorisations. Il vous permet également d’affecter, de supprimer et d’interroger des domaines, des utilisateurs, des utilisatrices et des groupes. Enfin, vous pouvez utiliser User Management pour authentifier les utilisateurs.
 
 Dans [Ajouter des utilisateurs](users.md#adding-users) vous comprendrez comment ajouter des utilisateurs par programmation. Cette section utilise l’API du service Directory Manager.
 
@@ -182,7 +182,7 @@ Pour ajouter des utilisateurs à l’aide de l’API Directory Manager Service
 
    >[!NOTE]
    >
-   >Appelez une méthode qui appartient à l’objet `UserImpl` pour définir d’autres valeurs. Par exemple, vous pouvez définir la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `UserImpl`.
+   >Appelez une méthode qui appartient à l’objet `UserImpl` pour définir d’autres valeurs. Par exemple, vous pouvez définir la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `UserImpl`.
 
 1. Ajoutez l’utilisateur ou l’utilisatrice à AEM Forms.
 
@@ -280,7 +280,7 @@ Pour supprimer un utilisateur, procédez comme suit :
 1. Spécifiez lʼutilisateur à supprimer.
 1. Supprimez l’utilisateur d’AEM Forms.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
@@ -361,7 +361,7 @@ Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (s
       * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuer la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Spécifiez lʼutilisateur à supprimer.
 
@@ -395,7 +395,7 @@ Pour créer un groupe, procédez comme suit :
 1. Créez le groupe.
 1. Effectuez une action avec le groupe.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires.
 
@@ -406,7 +406,7 @@ Vous devez ajouter les fichiers JAR suivants au chemin d’accès aux classes de
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client DirectoryManagerService**
 
@@ -486,7 +486,7 @@ Créez un groupe à l’aide de l’API Directory Manager Service (Java) :
 
 ## Gestion des utilisateurs et des groupes {#managing-users-and-groups}
 
-Cette rubrique décrit comment utiliser (Java) pour affecter, supprimer et interroger par programmation des domaines, des utilisateurs et des groupes.
+Cette rubrique décrit comment utiliser (Java) pour affecter, supprimer et interroger par programmation des domaines, des utilisateurs, des utilisatrices et des groupes.
 
 >[!NOTE]
 >
@@ -507,7 +507,7 @@ Pour gérer les utilisateurs et les groupes, procédez comme suit :
 1. Créez un client DirectoryManagerService.
 1. Appelez les opérations d’utilisateur ou de groupe appropriées.
 
-**Incluez les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -517,7 +517,7 @@ Avant d’effectuer une opération de service Directory Manager par programmatio
 
 **Appeler les opérations d’utilisateur ou de groupe appropriées**
 
-Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’affecter, de supprimer et de demander des domaines, des utilisateurs, des utilisatrices et des groupes. Notez qu’il est possible d’ajouter un principal de répertoire ou un principal local à un groupe local, mais qu’il n’est pas possible d’ajouter un principal local à un groupe de répertoires.
+Une fois le client de service créé, vous pouvez appeler les opérations de gestion des utilisateurs ou des groupes. Le client de service vous permet d’affecter, de supprimer et d’interroger des domaines, des utilisateurs, des utilisatrices et des groupes. Notez qu’il est possible d’ajouter un principal de répertoire ou un principal local à un groupe local, mais qu’il n’est pas possible d’ajouter un principal local à un groupe de répertoires.
 
 **Voir également**
 
@@ -545,11 +545,11 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
 1. Appelez les opérations d’utilisateur, d’utilisatrice ou de groupe appropriées.
 
-   Pour rechercher un utilisateur ou une utilisatrice ou un groupe, appelez l’une des méthodes de l’objet `DirectoryManagerServiceClient` de recherche des principaux (puisqu’une entité principale peut être un utilisateur ou une utilisatrice ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipals` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`).
+   Pour rechercher un utilisateur ou une utilisatrice ou un groupe, appelez l’une des méthodes de l’objet `DirectoryManagerServiceClient` pour rechercher des principaux (puisqu’un principal peut être un utilisateur ou une utilisatrice ou un groupe). Dans l’exemple ci-dessous, la méthode `findPrincipals` est appelée à l’aide d’un filtre de recherche (un objet `PrincipalSearchFilter`).
 
    Puisque la valeur renvoyée est une `java.util.List` contenant des objets `Principal`, itérez à travers le résultat et convertissez les objets `Principal` en des objets `User` ou `Group`.
 
-   En vous servant de la résultante `User` ou de l’objet `Group` (qui héritent toutes deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique un principal. Elles sont récupérées en appelant les méthodes `getDomainName` et `getCanonicalName`, respectivement, de l’objet `Principal`.
+   En utilisant l’objet `User` ou `Group` obtenu (qui héritent tous deux de l’interface `Principal`), récupérez les informations dont vous avez besoin dans vos workflows. Par exemple, les valeurs de nom de domaine et de nom canonique, combinées, identifient de manière unique un principal. Elles sont récupérées en appelant les méthodes `getDomainName` et `getCanonicalName`, respectivement, de l’objet `Principal`.
 
    Pour supprimer un utilisateur local ou une utilisatrice locale, appelez la méthode `deleteLocalUser` de l’objet `DirectoryManagerServiceClient` et transmettez l’identifiant de l’utilisateur ou de l’utilisatrice.
 
@@ -602,7 +602,7 @@ Pour gérer les utilisateurs, groupes et domaines par programme à l’aide de l
 
 Cette rubrique décrit comment utiliser l’API du service Authorization Manager (Java) pour attribuer, supprimer et déterminer par programmation des rôles et des autorisations.
 
-Dans AEM Forms, un *rôle* est un groupe d’autorisations d’accès à une ou plusieurs ressources au niveau du système. Ces autorisations sont créées via User Management et sont appliquées par les composants de service. Par exemple, un administrateur peut affecter le rôle « Auteur du jeu de politiques » à un groupe d’utilisateurs. Rights Management autoriserait alors les utilisateurs de ce groupe ayant ce rôle à créer des jeux de politiques via la console d’administration.
+Dans AEM Forms, un *rôle* est un groupe d’autorisations d’accès à une ou plusieurs ressources au niveau du système. Ces autorisations sont créées via User Management et sont appliquées par les composants de service. Par exemple, un administrateur ou une administratrice peut affecter le rôle « Auteur de l’ensemble de politiques » à un groupe d’utilisateurs ou d’utilisatrices. Rights Management autoriserait alors les utilisateurs et utilisatrices de ce groupe ayant ce rôle à créer des ensembles de politiques via la console d’administration.
 
 Il existe deux types de rôles : *rôles par défaut* et *rôles personnalisés*. Les rôles par défaut (*rôles système)* sont déjà domiciliés dans AEM Forms. Il est supposé que les rôles par défaut ne peuvent pas être supprimés ni modifiés par l’administrateur et sont donc immuables. Les rôles personnalisés créés par l’administrateur, qui peut ensuite les modifier ou les supprimer, sont donc modifiables.
 
@@ -616,7 +616,7 @@ Pour gérer les rôles et les autorisations, procédez comme suit :
 1. Créez un client AuthorizationManagerService.
 1. Appelez les opérations de rôle ou d’autorisation appropriées.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -656,7 +656,7 @@ Pour gérer les rôles et les autorisations à l’aide de l’API Authorization
 
    Pour attribuer un rôle à un principal, appelez la méthode `assignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `java.lang.String` qui contient l’identifiant de rôle
+   * Objet `java.lang.String` contenant l’identifiant de rôle
    * Un tableau d’objets `java.lang.String` contenant les identifiants des principaux.
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
@@ -690,20 +690,20 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
 
    * Créez un `AuthorizationManagerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AuthorizationManagerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AuthorizationManagerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AuthorizationManagerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuer la valeur de constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Appelez les opérations de rôle ou d’autorisation appropriées.
 
    Pour attribuer un rôle à un principal, appelez la méthode `assignRole` de l’objet `AuthorizationManagerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `string` contenant l’identifiant de rôle
+   * Un objet `string` qui contient l’identifiant de rôle
    * Objet `MyArrayOf_xsd_string` contenant les identifiants des principaux.
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceService` et transmettez les valeurs suivantes :
@@ -769,7 +769,7 @@ Pour authentifier un utilisateur par programmation, procédez comme suit :
 1. Appelez l’opération d’authentification.
 1. Si nécessaire, récupérez le contexte afin que l’application cliente puisse le transférer vers un autre service AEM Forms pour authentification.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -828,7 +828,7 @@ Authentifiez un utilisateur à l’aide de l’API Authentication Manager Servic
 
 1. Incluez les fichiers de projet.
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL d’Authentication Manager. (Voir [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL d’Authentication Manager. (Consultez la section [Appeler AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
    * Référencez l’assemblage client Microsoft .NET. (Voir « Référencer l’assemblage client .NET » dans [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Créez un client AuthenticationManagerService.
@@ -896,7 +896,7 @@ Pour synchroniser les utilisateurs par programme, procédez comme suit :
 1. Appelez l’opération d’authentification.
 1. Déterminer si l’opération de synchronisation est terminée
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 

@@ -13,7 +13,7 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Exemple d’un widget par défaut et d’un widget personnalisé
 
 ## Intégration de widgets personnalisés à des formulaires HTML5 {#integrating-custom-widgets-with-html-forms}
 
-### Création d’un profil {#create-a-profile-nbsp}
+### Création d’un profil  {#create-a-profile-nbsp}
 
 Vous pouvez créer un profil ou choisir un profil existant pour ajouter un widget personnalisé. Pour plus d’informations sur la création de profils, consultez [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
 
@@ -47,7 +47,7 @@ Les formulaires HTML5 fournissent une implémentation du framework des widgets q
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Cet exemple indique que le flou est un événement HTML et que XFA_EXIT_EVENT est l’événement XFA correspondant. </td>
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Cet exemple indique que le flou est un événement HTML et que XFA_EXIT_EVENT est l’événement XFA correspondant. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -74,7 +74,7 @@ Pour créer votre propre widget, dans le profil créé précédemment, ajoutez l
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Enregistrement d’un widget personnalisé avec le moteur de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Enregistrement d’un widget personnalisé avec le moteur de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Lorsque le code d’un widget personnalisé est prêt, enregistrez le widget avec le moteur de script à l’aide de l’API `registerConfig` pour [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
 
@@ -104,5 +104,5 @@ où l’« identifiant » est un sélecteur CSS jQuery qui représente un ch
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
 | Champ particulier avec le nom fieldname | Identifiant : « div.fieldname » | Tous les champs portant le nom « fieldname » sont générés à l’aide du widget. |
-| Tous les champs de type « type » (où type est NumericField, DateField, etc.). : | Identifiant : « div.type » | Dans Timefield et DateTimeField, le type est textfield, ces champs n’étant plus pris en charge. |
+| Tous les champs de type « type » (où type est NumericField, DateField, etc.) : | Identifiant : « div.type » | Dans Timefield et DateTimeField, le type est textfield, ces champs n’étant plus pris en charge. |
 | Tous les champs | Identifiant : « div.field » |  |

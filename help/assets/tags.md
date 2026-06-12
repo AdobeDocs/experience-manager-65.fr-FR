@@ -13,7 +13,7 @@ exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6951'
+source-wordcount: '6942'
 ht-degree: 99%
 
 ---
@@ -728,7 +728,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Une page Informations concernant l’intégration s’affiche, **&#x200B;**&#x200B;comme suit :
+1. Une page Informations concernant l’intégration s’affiche, **** comme suit :
 
    >[!NOTE]
    >
@@ -758,7 +758,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Sélectionnez l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
 
    Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
-Par exemple : `https://ims-na1.adobelogin.com/`
+Par exemple, `https://ims-na1.adobelogin.com/`
 (le nom du serveur est donné à titre d’exemple uniquement)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

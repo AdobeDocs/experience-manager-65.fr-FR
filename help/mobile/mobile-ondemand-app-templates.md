@@ -10,7 +10,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ La sélection de cet exemple de modèle lors de la création d’une application
 
 Un modèle d’application est utilisé pour créer une application et agit comme une collection de modèles de page et de composants qui représentent une ligne de base ou la base d’une application. Le modèle élimine certaines propriétés fondamentales pour diriger l’application de la manière appropriée. En règle générale, un client ne crée pas trop d’applications au total.
 
-Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications au sein d’AEM.
+Les modèles d’application offrent un moyen facile d’utiliser les conceptions existantes créées par les développeurs et développeuses, utilisées pour la création de nouvelles applications dans AEM.
 
 Lors de la création d’une application basée sur le modèle d’une autre application, vous obtiendrez une application qui dispose d’un point de départ représentatif de l’application à partir de laquelle elle a été créée.
 
@@ -44,11 +44,11 @@ Lors de la création d’une application basée sur le modèle d’une autre app
 1. Accédez au catalogue d’applications AEM Mobile : *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Sélectionnez **Créer** > **App** comme illustré ci-dessous
 
-Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour consulter à nouveau, créer des articles, des bannières et des collections, consultez la section [&#x200B; Actions de gestion de contenu &#x200B;](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Une fois que vous avez créé une application à l’aide de ce modèle, vous pouvez ajouter des articles, des bannières et des collections à votre application. Pour consulter à nouveau, créer des articles, des bannières et des collections, consultez la section [ Actions de gestion de contenu ](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
->Vous pouvez également sélectionner un modèle d’application type, par exemple l’application **We.Unlimited**, mise à votre disposition par un développeur ou une développeuse AEM. Si vous utilisez ce modèle type pour votre application, vous obtenez des exemples d’articles et de collections sur lesquels travailler. Vous aurez la possibilité d’utiliser les exemples de modèles et de composants, de personnaliser les modèles existants ou d’en créer de nouveaux pour votre application.
+>Vous pouvez également sélectionner un modèle d’application type, par exemple l’application **We.Unlimited**, mis à votre disposition par un développeur ou une développeuse AEM. Si vous utilisez ce modèle type pour votre application, vous obtenez des exemples d’articles et de collections sur lesquels travailler. Vous aurez la possibilité d’utiliser les exemples de modèles et de composants, de personnaliser les modèles existants ou d’en créer de nouveaux pour votre application.
 
 >[!CAUTION]
 >
@@ -99,9 +99,9 @@ Sélectionnez « **+** » dans le panneau de gauche pour ajouter des composants 
 
 Il n’existe aucun modèle d’article prêt à l’emploi, mais il existe un modèle par défaut que les modèles personnalisés doivent étendre. Consultez [Exemple de modèle d’article](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) de l’application Geometrixx Unlimited.
 
-Les propriétés clés au-delà des propriétés requises normales du modèle AEM sont les suivantes :
+Les propriétés clés au-delà des propriétés normales requises du modèle AEM sont les suivantes :
 
-***dps-resourceType=« dps:Article »***
+***dps-resourceType=« dps:Article«***
 
 Cette propriété garantit que la page AEM est reconnue en tant que page d’article ciblé AEM Mobile.
 
@@ -146,11 +146,11 @@ Une fois que le composant a déjà été inclus dans une page AEM, avec quelques
 
 >[!NOTE]
 >
->Vous pouvez créer un composant dans AEM et le personnaliser à l’aide du [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Une fois que vous avez personnalisé le composant existant en fonction de vos besoins, vous pouvez l’ajouter dans votre page à l’aide de l’option **Modifier** sous **Gérer les articles**, comme illustré dans la figure ci-dessus.
+>Vous pouvez créer un composant dans AEM et le personnaliser à l’aide de l’[Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Une fois que vous avez personnalisé le composant existant en fonction de vos besoins, vous pouvez l’ajouter dans votre page à l’aide de l’option **Modifier** sous **Gérer les articles**, comme illustré dans la figure ci-dessus.
 
 >[!NOTE]
 >
->Reportez-vous à la section [&#x200B; Bonnes pratiques pour le développement de modèles et de composants &#x200B;](/help/mobile/best-practices-aem-mobile.md) dans AEM Mobile.
+>Reportez-vous à la section [ Bonnes pratiques pour le développement de modèles et de composants ](/help/mobile/best-practices-aem-mobile.md) dans AEM Mobile.
 
 ### Les étapes suivantes {#the-next-steps}
 

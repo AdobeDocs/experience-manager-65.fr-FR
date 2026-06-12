@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10234'
-ht-degree: 97%
+source-wordcount: '10112'
+ht-degree: 96%
 
 ---
 
@@ -171,7 +171,7 @@ Dynamic Media permet de charger des ressources par lots via un serveur FTP. Si 
 
 >[!NOTE]
 >
->Pour charger des ressources via FTP dans Dynamic Media Scene7, installez le pack de fonctionnalités 18912 dans les instances de création [!DNL Experience Manager]. Contactez l’[assistance clientèle Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr#support) pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, consultez la section [Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc](/help/assets/bulk-ingest-migrate.md).
+>Pour charger des ressources via FTP dans Dynamic Media Scene7, installez le pack de fonctionnalités 18912 dans les instances de création [!DNL Experience Manager]. Contactez l’[assistance clientèle Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr#support) pour obtenir l’accès au pack de fonctionnalités 18912 et terminer la configuration de votre compte FTP. Pour plus d’informations, consultez la section [Installation du pack de fonctionnalités 18912 pour la migration de ressources en bloc](/help/assets/bulk-ingest-migrate.md).
 >
 >Si vous utilisez le protocole FTP pour charger des ressources, les paramètres de chargement spécifiés dans [!DNL Experience Manager] sont ignorés. Des règles de traitement de fichiers telles que définies dans Dynamic Media Classic sont utilisées à la place.
 
@@ -197,7 +197,7 @@ Dynamic Media permet de charger des ressources par lots via un serveur FTP. Si 
 1. Dans le coin inférieur droit de la boîte de dialogue Charger les options de la tâche, cliquez sur **[!UICONTROL Enregistrer]**.
 1. Dans le coin inférieur droit de la page Charger, cliquez sur **[!UICONTROL Lancer le chargement]**.
 
-   Pour afficher la progression du chargement, dans la barre de navigation globale, cliquez sur **[!UICONTROL Tâches]**. La page Tâches affiche la progression du chargement. Vous pouvez continuer à travailler dans [!DNL Experience Manager] et revenir à tout moment à la page Tâches dans Dynamic Media Classic afin de consulter une tâche en cours.
+   Pour afficher la progression du chargement, sur la barre de navigation générale, cliquez sur **[!UICONTROL Tâches]**. La page Tâches affiche la progression du chargement. Vous pouvez continuer à travailler dans [!DNL Experience Manager] et revenir à tout moment à la page Tâches dans Dynamic Media Classic pour consulter une tâche en cours.
 Pour annuler une tâche de chargement en cours, cliquez sur **[!UICONTROL Annuler]** en regard de la durée.
 
 #### Options de la tâche de chargement {#upload-job-options}
@@ -215,9 +215,9 @@ Pour annuler une tâche de chargement en cours, cliquez sur **[!UICONTROL Annule
 | | Options de profil colorimétrique | Choisissez une conversion de la couleur lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’y a pas de conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : conserve les couleurs d’origine sans conversion des couleurs à cet endroit. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur dans les fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique d&#39;origine et un espace colorimétrique de destination. Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
 | | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
 | | Options Postscript | Vous pouvez pixelliser des fichiers PostScript® et des fichiers de recadrage, conserver les arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Voir [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la manière dont les calques sont nommés, extraire du texte et définir la manière dont les images sont ancrées dans des modèles<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Voir [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
+| | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers ® Photoshop®, conserver les calques, définir la manière dont les calques sont nommés, extraire du texte et définir la manière dont les images sont ancrées dans des modèles<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Voir [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
 | | Options de PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace colorimétrique.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Voir [Définition des options de chargement PDF](#setting-pdf-upload-options).<br>**Remarque** : le nombre maximal de pages qu’un PDF doit prendre en compte pour l’extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md). |
-| | Options Illustrator | Vous pouvez pixelliser des fichiers Adobe Illustrator®, conserver les arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Voir [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Options Illustrator | Vous pouvez pixelliser des fichiers ®, conserver les arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Voir [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 | | Options eVideo | Vous pouvez transcoder un fichier vidéo en choisissant un paramètre vidéo prédéfini.<br> Voir [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
 | | Paramètres prédéfinis de lot | Pour créer un ensemble d’images ou une visionneuse à 360° à partir des images chargées, cliquez sur la colonne active correspondant au paramètre prédéfini que vous souhaitez utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis dans la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br> Voir [Configuration des paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot.<br> Voir [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
 
@@ -290,7 +290,7 @@ Utilisez les [!UICONTROL options de recadrage] et de [!UICONTROL profil de coule
 
 Lorsque vous chargez un fichier PDF, vous pouvez le formater de différentes manières. Vous pouvez recadrer ses pages, extraire des mots de recherche, saisir une résolution en pixels par pouce et choisir un espace colorimétrique. Les fichiers PDF contiennent souvent une marge de rognage, des traits de coupe, des repères de montage et d’autres repères d’impression. Vous pouvez éliminer ces marques sur les côtés des pages lorsque vous téléchargez un fichier PDF.
 
-Le nombre maximal de pages pour qu’un PDF soit considéré pour l’extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+Le nombre maximal de pages pour qu’un PDF soit considéré pour l’extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >
@@ -470,8 +470,8 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 ## Déplacement ou changement du nom des ressources {#moving-or-renaming-assets}
 
-Lorsque vous déplacez des ressources (ou des dossiers) vers un autre emplacement, les ressources (ou dossiers) ne sont pas dupliquées, contrairement à lors de la copie de la ressource. Les ressources (ou les dossiers) sont placés à l’emplacement cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement.
-Si vous déplacez une ressource publiée vers un autre emplacement, vous pouvez éventuellement la republier. Par défaut, l’opération de déplacement sur une ressource publiée la dépublie automatiquement. Une ressource déplacée est republiée si l’auteur sélectionne la variable [!UICONTROL Republier] lors du déplacement de la ressource.
+Lorsque vous déplacez des ressources (ou des dossiers) vers un autre emplacement, les ressources (ou dossiers) ne sont pas dupliquées, contrairement à lors de la copie de la ressource. Les ressources (ou les dossiers) sont placés à l’emplacement cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lors de son déplacement vers le nouvel emplacement.
+Si vous déplacez une ressource publiée vers un autre emplacement, vous pouvez éventuellement la republier. Par défaut, l’opération de déplacement sur une ressource publiée la dépublie automatiquement. Une ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL  Republier ] lors du déplacement de la ressource.
 
 ![Vous pouvez republier une ressource déjà publiée lors de son déplacement.](assets/republish-on-move.png)
 
@@ -601,7 +601,7 @@ Consultez la section [Téléchargement de ressources à partir d’Experience M
 
 Après avoir chargé, traité ou modifié vos ressources sur l’auteur [!DNL Experience Manager], vous publiez la ressource sur le serveur de publication. La publication rend la ressource disponible publiquement. L’action de dépublication a supprimé la ressource du serveur de publication, mais pas du serveur auteur.
 
-Pour plus d’informations spécifiques à [!DNL Dynamic Media], consultez la section [Publication de ressources  [!DNL Dynamic Media] &#x200B;](/help/assets/publishing-dynamicmedia-assets.md).
+Pour plus d’informations spécifiques à [!DNL Dynamic Media], consultez la section [Publication de ressources  [!DNL Dynamic Media] ](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou dépublier dans l’environnement de publication (dépublication).
 

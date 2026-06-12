@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 100%
+source-wordcount: '1381'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Cette personnalisation est illustrée par le scénario qui ajoute une commande �
 
 Pour réaliser le scénario suivant ou un scénario similaire, vous devez connaître :
 
-* CRX 
+* CRX
 * JavaScript
 * Java™
 
@@ -62,7 +62,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **Emplacement :** /apps/
 
@@ -82,7 +82,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       **Nom :** downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nœud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
 
@@ -230,7 +230,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
 1. Dans le dossier d’applications, créez un dossier appelé éléments avec un chemin/une structure semblable au dossier d’éléments dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
-   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** : 
+   1. Faites un clic droit sur le dossier des **éléments** à l’emplacement suivant, puis sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -254,7 +254,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisate
 
       **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété - doit être unique. Si vous utilisez ici un autre nom, spécifiez le même dans la variable ACTION_URL du fichier formaction.js).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
 

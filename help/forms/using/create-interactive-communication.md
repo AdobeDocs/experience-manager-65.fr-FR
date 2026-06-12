@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6130'
-ht-degree: 100%
+source-wordcount: '6132'
+ht-degree: 99%
 
 ---
 
@@ -32,12 +32,12 @@ Les conditions préalables à la création d’une communication interactive son
 
 ## Créer une communication interactive {#createic}
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
+1. Connectez-vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 1. Sélectionnez **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Communication interactive]**. La page Créer une communication interactive s’affiche.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
-1. Saisissez les informations ci-après.  :
+1. Saisissez les informations ci-après. :
 
    * **[!UICONTROL Titre]** : entrez le titre de la communication interactive.
    * **[!UICONTROL Nom]** : le nom de la communication interactive est dérivé du titre que vous avez entré. Modifiez-le, si nécessaire.
@@ -49,11 +49,11 @@ Les conditions préalables à la création d’une communication interactive son
 
    * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez le workflow AEM, fournissez le chemin d’accès de la pièce jointe, le chemin d’accès à la mise en page, le chemin d’accès au fichier PDF, le chemin d’accès aux données d’impression et le chemin de données web.
    * **[!UICONTROL Balises]** : sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
-   * **[!UICONTROL Auteur]** : le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
+   * **[!UICONTROL Auteur]**:The le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
    * **[!UICONTROL Date de dépublication]** : entrez la date de dépublication de la communication interactive.
 
-1. Sélectionnez **[!UICONTROL Suivant]**. L’écran de spécification des informations relatives aux canaux web et d’impression s’affiche.
+1. Sélectionnez **[!UICONTROL Suivant]**. L’écran de spécification des informations relatives aux canaux d’impression et web s’affiche.
 1. Entrez la commande suivante :
 
    * **[!UICONTROL Imprimer]** : sélectionnez cette option pour générer le canal d’impression de la communication interactive.
@@ -62,8 +62,8 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Modèle web de communication interactive]** : recherchez et sélectionnez le modèle web.
    * **[!UICONTROL Thème]** et **[!UICONTROL Sélectionner un thème]** : recherchez et sélectionnez le thème pour définir le style de canal web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Utiliser l’impression en tant que page principale pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
-Si vous sélectionnez l’option **[!UICONTROL Utiliser l’impression comme Principal pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
+   * **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]** : sélectionnez cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression en tant que page principale pour le canal web garantit que le contenu et la liaison de données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous sélectionnez Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, voir [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
+Si vous sélectionnez l’option **[!UICONTROL Utiliser l’impression en tant que Principal pour le canal web]**, vous pouvez sélectionner l’un des modes suivants pour générer le canal web :
 
       * **[!UICONTROL Disposition automatique]** : sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal web à partir du canal d’impression.
       * **[!UICONTROL Organisation manuelle]** : sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments du canal d’impression au canal web à l’aide du contenu principal disponible dans l’onglet **[!UICONTROL Sources de données]**. Pour plus d’informations, voir [Sélectionner les éléments du canal d’impression pour créer le contenu du canal web](#selectprintchannelelements).
@@ -86,7 +86,7 @@ Pour en savoir plus sur l’interface de création de la communication interacti
 
    | **Composant** | **Fonctionnalité** |
    |---|---|
-   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour en savoir plus, consultez la rubrique [Utiliser des graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md). |
+   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’une collection de modèles de données de formulaire. Pour en savoir plus, consultez la rubrique [Utiliser des graphiques dans les communications interactives](/help/forms/using/chart-component-interactive-communications.md). |
    | Fragment de document | Vous permet d’ajouter un composant réutilisable, comme du texte, une liste ou une condition, à une communication interactive. Le composant ajouté peut être basé sur un modèle de données de formulaire ou sans modèle de données de formulaire. |
    | Image | Permet d’insérer une image. |
 
@@ -191,7 +191,7 @@ Sélectionnez le fragment de document, puis ![configure_icon](assets/configure_i
 
    | Composants | Fonctionnalité |
    |---|---|
-   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles extraites d’une collection de modèles de données de formulaire. Pour en savoir plus, voir [Utiliser le composant de graphique](../../forms/using/chart-component-interactive-communications.md). |
+   | Graphique | Ajoute un graphique que vous pouvez utiliser dans une communication interactive pour la représentation visuelle des données bidimensionnelles récupérées d’une collection de modèles de données de formulaire. Pour en savoir plus, voir [Utiliser le composant de graphique](../../forms/using/chart-component-interactive-communications.md). |
    | Fragment de document | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
    | Image | Permet d’insérer une image. |
    | Panneau | Permet d’ajouter un [Panneau](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) à la communication interactive. |
@@ -207,13 +207,13 @@ Sélectionnez le fragment de document, puis ![configure_icon](assets/configure_i
 
 ## Prévisualiser la communication interactive {#previewic}
 
-Vous pouvez utiliser l’**option Prévisualisation** pour évaluer l’apparence de la communication interactive. Le canal web de la communication interactive fournit également une option permettant d’émuler l’expérience d’une communication interactive pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **Aperçu** et ![Règle](assets/ruler.png) d’**émulateur** conjointement pour visualiser un aperçu des sorties web pour les appareils dotés de tailles d’écran différentes. Les exemples de données dans l’aperçu sont renseignés à partir du modèle de données de formulaires spécifié.
+Vous pouvez utiliser l’**option Prévisualisation** pour évaluer l’apparence de la communication interactive. Le canal web de la communication interactive fournit également une option permettant d’émuler l’expérience d’une communication interactive pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **Aperçu** et ![Règle](assets/ruler.png) d’**émulateur** conjointement pour visualiser un aperçu des sorties web pour les appareils dotés de tailles d’écran différentes. Les données d’exemple dans l’aperçu sont renseignées à partir du modèle de données de formulaires spécifié.
 
 1. Sélectionnez le canal (d’impression ou web) à prévisualiser et appuyez sur Aperçu. La communication interactive s’affiche.
 
    >[!NOTE]
    >
-   >L’aperçu est rempli avec les exemples de données du modèle de données de formulaire spécifié. Pour plus d’informations sur la prévisualisation de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, consultez les sections [Utiliser un modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Travailler avec un modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
+   >L’aperçu est rempli avec les données d’exemple du modèle de données de formulaire spécifié. Pour plus d’informations sur la prévisualisation de la communication interactive avec d’autres données ou l’utilisation du service de préremplissage, consultez les sections [Utiliser un modèle de données de formulaire](/help/forms/using/using-form-data-model.md) et [Travailler avec un modèle de données de formulaire](/help/forms/using/work-with-form-data-model.md).
 
 1. Pour le canal web, utilisez ![Règle](assets/ruler.png) pour visualiser l’apparence de la communication interactive sur différents appareils.
 
@@ -302,7 +302,7 @@ Le tableau suivant présente un exemple de valeurs qui s’affichent suite à la
 
 Si aucun modèle d’affichage n’est spécifié pour une variable ou un élément de modèle de données de formulaire, la [configuration globale de fragment de document](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) est utilisée par défaut.
 
-Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, l’aperçu d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration globale de fragment de document par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour le paramètre régional.
+Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, l’aperçu d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration globale de fragment de document par défaut, l’interface d’utilisation de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour les paramètres régionaux.
 
 De même, pour les champs, si le modèle d’affichage n’est pas spécifié, le modèle défini lors de la création du modèle d’impression (XDP) est appliqué au champ. S’il n’existe aucun modèle lors de la création du modèle d’impression, les modèles par défaut basés sur les spécifications XFA sont appliqués aux champs.
 
@@ -414,7 +414,7 @@ Vous pouvez créer un tableau dynamique de canal web uniquement dans une communi
 
 #### Tri des colonnes d’un tableau {#sortcolumns}
 
-Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau du formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
+Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau de la communication interactive Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
 Le tri peut être appliqué aux colonnes du tableau contenant :
 
@@ -431,7 +431,7 @@ Pour activer le tri :
    ![Activer le tri](assets/enable_sorting_new-1.png)
 
 1. Passez au mode **Prévisualisation** pour voir le rendu. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
-1. Appuyez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
+1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut représente :
 
@@ -455,7 +455,7 @@ Utilisez la page **Propriétés** pour :
 
 Pour accéder à la page **Propriétés** :
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance de création AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Sélectionnez la communication interactive, puis **Propriétés**.
 1. Sélectionnez l’onglet **Général** pour modifier les champs **Titre** et **Description**.
 

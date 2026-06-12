@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
-workflow-type: ht
-source-wordcount: '4534'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '4813'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Ce package a été créé pour l’**auteur OSGi AEM Forms 6.4**. Il a été te
 
 Ce package contient la configuration cloud qui prend en charge les versions de plateforme suivantes :
 
-| FOURNISSEUR DE CLOUD | VERSION DU SERVICE | ÉTAT |
+| FOURNISSEUR DE SERVICES CLOUD | VERSION DU SERVICE | ÉTAT |
 |---|---|---|
 | Adobe Sign | API v5 | **Pris en charge** |
 | Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **Pris en charge** |
@@ -88,7 +88,7 @@ Cette section contient des informations sur l’installation du package de démo
    1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Sélectionnez le nom du package **we-gov-forms.pkg.all-&lt;version>.zip**, sélectionnez **[!UICONTROL Accepter les termes du CLUF]**, puis **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Ouvrez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
    ![package de formulaires we gov](assets/wegov_forms_package.jpg)
@@ -115,7 +115,7 @@ Cette section contient des informations sur l’installation du package de démo
 
 ### Installer une nouvelle version de package {#installing-new-package-versions}
 
-Pour installer une nouvelle version de package, suivez les étapes définies aux points 4.1 et 4.2. Il est possible d’installer une version de package plus récente alors qu’un autre package plus ancien est installé. Il est toutefois recommandé de commencer par désinstaller l’ancienne version de package. Pour ce faire, procédez comme suit.
+Pour installer la nouvelle version du package, suivez les étapes définies dans les versions 4.1 et 4.2. L’installation d’une version de package plus récente alors qu’un autre package plus ancien est déjà installé est possible, mais il est recommandé de désinstaller l’ancienne version de package au préalable. Pour ce faire, procédez comme suit.
 
 1. Accédez à *https://&lt;serveur_aem>:&lt;port>/crx/packmgr/index.jsp*.
 1. Recherchez l’ancien fichier **we-gov-forms.pkg.all-&lt;version>.zip**.
@@ -225,14 +225,14 @@ Cette section contient des détails et des instructions sur la configuration clo
 
 **Références :**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configurer Microsoft® Dynamics pour AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=fr)
+1. [Configuration de ® Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configuration de ® Dynamics pour AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=fr)
 
 #### Service cloud OData de MS® Dynamics {#ms-dynamics-odata-cloud-service}
 
 1. Accédez à :
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Assurez-vous d’accéder au serveur à l’aide de la même URL de redirection que celle configurée dans l’enregistrement de l’application MS® Dynamics.
 
@@ -320,7 +320,7 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
 
    >[!NOTE]
    >
-   >Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 #### Tester le modèle de données de formulaire (Derby) {#test-fdm-derby}
 
@@ -429,9 +429,9 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Sélectionnez le « Site We.Gov d’AEM Forms » pour afficher les pages du site.
-1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez « Analytics et Recommendations ».
+1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez « Analytics et Recommandations ».
 
-   ![Analysis et Recommendations](assets/analytics_recommendations.jpg)
+   ![Analytics et Recommandations](assets/analytics_recommendations.jpg)
 
 1. Sur cette page, vous verrez les informations récupérées d’Adobe Analytics qui se rapportent à la page AEM Sites (remarque : par conception, ces informations sont périodiquement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
 
@@ -480,14 +480,14 @@ Pour installer et configurer AEM Forms avec Adobe Forms, les utilisateurs et uti
 
 Consultez les informations suivantes avant de lire d’autres instructions :
 
-* [Configurer le service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=fr)
+* [Configuration du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=fr)
 
 #### Créer une configuration IMS - Partie 1 {#creating-ims-config}
 
 Pour configurer le service afin qu’il communique correctement avec l’outil de conversion de formulaires, les utilisateurs et les utilisatrices doivent configurer le service Identity Management System (IMS) pour pouvoir s’enregistrer auprès d’Adobe I/O.
 
-1. Accédez à https://&lt;serveur_AEM>:&lt;port> > Cliquez sur Adobe Experience 
-Manager en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
+1. Accédez à https://&lt;serveur_aem>:&lt;port> > Cliquez sur Experience Adobe
+Responsable en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
 
 1. Cliquez sur Créer.
 
@@ -653,7 +653,7 @@ Le service Automated Forms Conversion comprend quelques [bonnes pratiques, modè
 
 1. Générez le formulaire avec Générer les formulaires adaptatifs sans liaison de données activée si vous souhaitez lier le formulaire à un FDM après la conversion.
 
-1. Assurez-vous que jcr:read est activé pour toutes les autorisations du dossier de modèles. Autrement, l’utilisateur ou l’utilisatrice du service ne pourra pas lire le modèle à partir du référentiel et la conversion échouera.
+1. Assurez-vous que jcr:read est activé pour toutes les autorisations du dossier de modèles. Autrement, l’utilisateur du service ne pourra pas lire le modèle à partir du référentiel et la conversion échouera.
 
 ## Personnalisations des packages de démonstration {#demo-package-customizations}
 
@@ -774,10 +774,10 @@ Si les utilisateurs et utilisatrices souhaitent l’exporter, ils peuvent clique
 
 ### Thème Ultramarine {#ultramarine-theme}
 
-Le thème Ultramarine, accessible au public et géré par Adobe, est intégré au
+Le thème Ultramarine, accessible au public et géré par Adobe, est intégré dans
 `we-gov-forms.pkg.all-<version>.zip` fichier ZIP installable. Une fois ce package installé à l’aide de CRX.
 
-Gestionnaire de packages, les utilisateurs peuvent accéder au thème Ultramarine dans AEM Forms en accédant à **Forms** > **Thèmes** > **Thèmes de référence** > **Accessible à Ultramarine**.
+Gestionnaire de modules, vous pouvez accéder au thème Ultramarine dans AEM Forms en sélectionnant **Forms** > **Thèmes** > **Thèmes de référence** > **Accessible à Ultramarine**.
 
 ![Thème Ultramarine](assets/aftia-ultramarine-theme.jpg)
 

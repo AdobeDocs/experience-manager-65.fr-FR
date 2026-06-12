@@ -10,9 +10,9 @@ exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '10278'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '10334'
+ht-degree: 98%
 
 ---
 
@@ -35,9 +35,9 @@ Si vous utilisez IPv6, saisissez l’URL de base comme nom d’ordinateur ou nom
 >
 >L’URL de base est incorporée dans des fichiers protégés par une politique. Les applications clientes utilisent l’URL de base pour se reconnecter au serveur. Les fichiers sécurisés contiendront toujours l’URL de base, même si elle est modifiée ultérieurement. Si vous modifiez l’URL de base, les informations de configuration doivent être mises à jour pour l’ensemble des clientes et des clients qui se connectent.
 
-**Période d’ouverture hors connexion par défaut :** durée par défaut pendant laquelle un utilisateur peut utiliser un document protégé hors connexion. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une politique (Voir Création et modification de politiques.) À l’issue de cette période d’ouverture, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période de bail hors ligne par défaut :** durée par défaut pendant laquelle une personne peut utiliser un document protégé hors ligne. Ce paramètre détermine la valeur de départ de la période de bail hors ligne au moment de la création d’une politique (Consultez la section Créer et modifier des politiques). À l’issue de cette période de bail, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
-Pour plus d’informations sur le fonctionnement de la synchronisation et de l’ouverture hors connexion, reportez-vous à la section [Primer on configuring offline lease and synchronization](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
+Pour plus d’informations sur le fonctionnement de la synchronisation et du bail hors ligne, reportez-vous à la section [Primer on configuring offline lease and synchronization](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
 **Période de synchronisation hors connexion par défaut :** durée maximale pendant laquelle un document peut être utilisé hors connexion lors de la mise en place de sa protection.
 
@@ -65,8 +65,8 @@ La sélection de cette option permet aux applications clientes d’utiliser l’
 
 **Hauteur de la commande HTML préférée pour l’authentification étendue :** indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-***Remarque ** : les limites de la largeur et la hauteur de cette boîte de dialogue sont les suivantes :*
-Largeur : minimum = 400, maximum = 900
+***remarque **: les limites de la largeur et de la hauteur de cette boîte de dialogue sont les suivantes :*
+Largeur : minimum = 400, maximum = 900
 
 Hauteur : minimum = 450 ; maximum = 800
 
@@ -82,16 +82,16 @@ Les administrateurs et administratrices doivent également disposer du rôle Uti
 
 ### Configuration des utilisateurs et utilisatrices, et des groupes visibles {#configuring-visible-users-and-groups}
 
-Pour afficher les utilisateurs et utilisatrices, et les groupes des domaines sélectionnés lors des recherches d’utilisateurs de politiques, un super-administrateur ou une super-administratrice ou un administrateur ou administratrice de jeux de politiques doit sélectionner et ajouter des domaines (créés dans User Management) à la liste des utilisateurs et utilisatrices, et groupes visibles pour chaque jeu de politiques créé.
+Pour afficher les utilisateurs et utilisatrices, et les groupes des domaines sélectionnés lors des recherches d’utilisateurs et utilisatrices de politiques, un super-administrateur ou une super-administratrice ou un administrateur ou administratrice d’ensembles de politiques doit sélectionner et ajouter des domaines (créés dans User Management) à la liste des utilisateurs et utilisatrices, et groupes visibles pour chaque ensemble de politiques créé.
 
-La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne coordinatrice de jeux de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne coordinatrice de jeux de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un jeu de politiques peut avoir plusieurs personnes coordinatrices.
+La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne qui coordonne les ensembles de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne qui coordonne les ensembles de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un ensemble de politiques peut avoir plusieurs personnes coordinatrices.
 
 1. Après avoir installé et configuré votre environnement d’AEM Forms avec Document Security, configurez tous les domaines appropriés dans User Management. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***Remarque ** : vous devez commencer par créer les domaines avant de pouvoir créer des politiques.*
 
-1. Dans la console d’administration, cliquez sur Services > Document Management > Politiques et cliquez sur l’onglet Jeux de politiques.
-1. Sélectionnez Jeu de politiques global, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
+1. Dans la console d’administration, cliquez sur Services > Document Management > Politiques et cliquez sur l’onglet Ensembles de politiques.
+1. Sélectionnez Ensemble de politiques global, puis cliquez sur l’onglet Utilisateurs et groupes visibles.
 1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
 1. Accédez à Services > Document Security > Configuration > Mes politiques et cliquez sur l’onglet Utilisateurs et groupes visibles.
 1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
@@ -132,20 +132,20 @@ Lorsque l’authentification étendue est activée, les utilisateurs et utilisat
 
 ## Configuration de la sécurité hors ligne {#configuring-offline-security}
 
-Document Security offre la possibilité d’utiliser des documents protégés par une politique hors ligne, sans connexion Internet ou réseau. Cette capacité nécessite que la politique autorise l’accès hors ligne, comme décrit dans [Spécifier les autorisations de document pour les utilisateurs et utilisatrices, et les groupes](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Avant qu’un document doté d’une telle politique puisse être utilisé hors ligne, les destinataires doivent ouvrir le document en ligne et activer l’accès hors ligne en cliquant sur Oui lorsque l’invite apparaît. Il peut également être demandé aux destinataires d’authentifier leurs identités. Les destinataires peuvent ensuite utiliser les documents hors ligne pendant la durée de la période d’ouverture hors ligne spécifiée dans la politique.
+Document Security offre la possibilité d’utiliser des documents protégés par une politique hors ligne, sans connexion Internet ou réseau. Cette capacité nécessite que la politique autorise l’accès hors ligne, comme décrit dans [Spécifier les autorisations de document pour les utilisateurs et utilisatrices, et les groupes](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Avant qu’un document doté d’une telle politique puisse être utilisé hors ligne, les destinataires doivent ouvrir le document en ligne et activer l’accès hors ligne en cliquant sur Oui lorsque l’invite apparaît. Il peut également être demandé aux destinataires d’authentifier leurs identités. Les destinataires peuvent ensuite utiliser les documents hors ligne pendant la durée de la période de bail hors ligne spécifiée dans la politique.
 
-À la fin de la période d’ouverture hors ligne, les destinataires doivent se synchroniser à nouveau avec Document Security soit en ouvrant un document en ligne, soit en utilisant une commande de menu d’extensions Acrobat ou Acrobat Reader DC pour effectuer la synchronisation. (voir l’*Aide d’Acrobat* ou l’*Aide des extensions Acrobat Reader DC* appropriée).
+À la fin de la période de bail hors ligne, les destinataires doivent se synchroniser à nouveau avec Document Security soit en ouvrant un document en ligne, soit en utilisant une commande de menu d’extensions Acrobat ou Acrobat Reader DC pour effectuer la synchronisation. (voir l’*Aide d’Acrobat* ou l’*Aide des extensions Acrobat Reader DC* appropriée).
 
 Étant donné que les documents permettant un accès hors ligne nécessitent la mise en cache du matériel clé sur l’ordinateur sur lequel les fichiers sont stockés localement, le fichier peut potentiellement être compromis si un utilisateur ou une utilisatrice sans autorisation peut obtenir le matériel clé. Pour compenser cette éventualité, des options de basculement de clé planifiées et manuelles vous sont proposées et vous pouvez les configurer pour empêcher une personne non autorisée d’utiliser la clé pour accéder au document.
 
-### Définir une période de location hors ligne par défaut {#set-a-default-offline-lease-period}
+### Définir une période de bail hors ligne par défaut {#set-a-default-offline-lease-period}
 
-Les destinataires de documents protégés par une politique peuvent mettre les documents hors ligne pendant le nombre de jours spécifié dans la politique. Après avoir initialement synchronisé le document avec Document Security, le ou la destinataire peut utiliser le document hors ligne jusqu’à l’expiration de la période de location hors ligne. À l’expiration de la période de location, le ou la destinataire doit mettre le document en ligne et se connecter pour synchroniser le document avec Document Security afin de continuer à l’utiliser.
+Les destinataires de documents protégés par une politique peuvent mettre les documents hors ligne pendant le nombre de jours spécifié dans la politique. Après avoir initialement synchronisé le document avec Document Security, le ou la destinataire peut utiliser le document hors ligne jusqu’à l’expiration de la période de bail hors ligne. À l’expiration de la période de bail, le ou la destinataire doit mettre le document en ligne et se connecter pour synchroniser le document avec Document Security afin de continuer à l’utiliser.
 
-Vous pouvez configurer une période de location hors ligne par défaut. La durée de la location peut être modifiée par défaut lorsque quelqu’un crée ou modifie une politique.
+Vous pouvez configurer une période de bail hors ligne par défaut. La durée du bail peut être modifiée par défaut lorsque quelqu’un crée ou modifie une politique.
 
 1. Sur la page Document Security, cliquez sur Configuration > Configuration du serveur.
-1. Dans la zone Période de location hors ligne par défaut, saisissez le nombre de jours pour la période de location hors ligne.
+1. Dans la zone Période de bail hors ligne par défaut, saisissez le nombre de jours pour la période de bail hors ligne.
 1. Cliquez sur OK.
 
 ### Gérer les changements de clés {#manage-key-rollovers}
@@ -162,7 +162,7 @@ Pour réduire la menace pesant sur les documents hors ligne, il vaut mieux évit
 
 Cependant, un changement de clé affecte toutes les clés principales, pas une seule. Cela limite également l’évolutivité du système, car les clientes et les clients doivent stocker davantage de clés pour l’accès hors connexion. La fréquence de changement des clés par défaut est de 20 jours. Il est recommandé de ne pas définir une valeur inférieure à 14 jours, car les utilisateurs et les utilisatrices ne pourront plus consulter des documents hors connexion et les performances du système peuvent en pâtir.
 
-Dans l’exemple suivant, Clé1 est la plus ancienne des deux clés principales et Clé2 est la plus récente. Lorsque vous cliquez pour la première fois sur le bouton Exécuter le changement des clés maintenant, Clé1 devient non valide et une clé principale plus récente et valide (Clé3) est générée. Les utilisateurs et les utilisatrices obtiendront Clé3 lors de la synchronisation avec Document Security, généralement en ouvrant un document protégé en ligne. Néanmoins, les utilisateurs et les utilisatrices ne sont pas obligés d’effectuer la synchronisation avec Document Security avant d’avoir atteint la période de location hors connexion maximale indiquée par une politique. Après le premier changement de clés, les utilisateurs et les utilisatrices qui restent hors ligne peuvent continuer à ouvrir des documents hors ligne, dont ceux protégés par Clé3, jusqu’à expiration de la période de location hors ligne maximale. Lorsque vous cliquez une deuxième fois sur le bouton Exécuter le changement de clés maintenant, Clé2 devient non valide et Clé4 est créée. Les utilisateurs et les utilisatrices qui restent hors ligne pendant les deux changements de clé ne peuvent pas ouvrir les documents protégés par Clé3 ou Clé4 jusqu’à ce qu’ils soient synchronisés avec Document Security.
+Dans l’exemple suivant, Clé1 est la plus ancienne des deux clés principales et Clé2 est la plus récente. Lorsque vous cliquez pour la première fois sur le bouton Exécuter le changement des clés maintenant, Clé1 devient non valide et une clé principale plus récente et valide (Clé3) est générée. Les utilisateurs et les utilisatrices obtiendront Clé3 lors de la synchronisation avec Document Security, généralement en ouvrant un document protégé en ligne. Néanmoins, les utilisateurs et les utilisatrices ne sont pas obligés d’effectuer la synchronisation avec Document Security avant d’avoir atteint la période de bail hors connexion maximale indiquée par une politique. Après le premier changement de clés, les utilisateurs et les utilisatrices qui restent hors ligne peuvent continuer à ouvrir des documents hors ligne, dont ceux protégés par Clé3, jusqu’à expiration de la période de bail hors ligne maximale. Lorsque vous cliquez une deuxième fois sur le bouton Exécuter le changement de clés maintenant, Clé2 devient non valide et Clé4 est créée. Les utilisateurs et les utilisatrices qui restent hors ligne pendant les deux changements de clé ne peuvent pas ouvrir les documents protégés par Clé3 ou Clé4 jusqu’à ce qu’ils soient synchronisés avec Document Security.
 
 **Modifier la fréquence de changement des clés**
 
@@ -336,7 +336,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Enregistrer un utilisateur invité :** un utilisateur externe s’enregistre auprès de la Sécurité des documents.
 
-**Ouverture de session réussie :** tentatives d’ouverture de session réussies par des administrateurs ou des utilisateurs. 
+**Ouverture de session réussie :** tentatives d’ouverture de session réussies par des administrateurs ou des utilisateurs.
 
 **Utilisateurs invités :** la Sécurité des documents invite un utilisateur à s’enregistrer.
 
@@ -352,20 +352,19 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Compte verrouillé :** Un administrateur verrouille un compte.
 
-**Evénements de jeu de politique**
+**Événements d’ensemble de politiques**
 
-**Jeu 
+**Créé
+Jeu de politiques** un administrateur ou un coordinateur de jeux de politiques crée un jeu de politiques.
 
-de politiques créé :** un administrateur ou un coordinateur de jeux de politiques crée un jeu de politiques.
+**Ensemble de politiques supprimé :** une personne en charge de l’administration ou une personne chargée de coordonner des ensembles de politiques supprime un ensemble de politiques.
 
-**Jeu de politiques supprimé :** un administrateur ou un coordinateur de jeux de politiques supprime un jeu de politiques.
-
-**Jeu de politiques modifié :** un administrateur ou un coordinateur de jeux de politiques modifie un jeu de politiques.
+**Ensemble de politiques modifié :** une personne en charge de l’administration ou une personne chargée de coordonner des ensembles de politiques modifie un ensemble de politiques.
 
 **Evénements de système**
 
-**Synchronisation 
-des annuaires terminée :** ces informations ne sont pas disponibles à partir de la page Événements. Les informations actuelles de synchronisation de répertoire, y compris l’état de synchronisation actuel et l’heure de la dernière synchronisation, sont affichées sur la page Gestion de domaine. Pour accéder à la page Gestion de domaine dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion de domaine.
+**Répertoire
+Synchronisation terminée :** informations ne sont pas disponibles à partir de la page Événements . Les informations actuelles de synchronisation de répertoire, y compris l’état de synchronisation actuel et l’heure de la dernière synchronisation, sont affichées sur la page Gestion de domaine. Pour accéder à la page Gestion de domaine dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion de domaine.
 
 **Activation d’accès client hors connexion :** une personne a activé l’accès hors connexion à des documents sécurisés par le serveur sur l’ordinateur de l’utilisateur ou de l’utilisatrice.
 
@@ -406,7 +405,7 @@ Pour afficher les événements suivis, vous pouvez utiliser le filtre Événemen
 
 **Personnalisation de la boîte de dialogue de connexion cliente**
 
-Ces paramètres contrôlent le texte affiché dans l’invite de connexion qui apparaît lorsqu’une personne se connecte à Document Security via une application cliente.
+Ces paramètres contrôlent le texte affiché dans le prompt de connexion qui apparaît lorsqu’une personne se connecte à Document Security via une application cliente.
 
 **Texte de bienvenue :** texte du message de bienvenue, par exemple « Veuillez vous connecter à l’aide de votre nom d’utilisateur et de votre mot de passe. ». Le texte du message de bienvenue doit contenir des informations sur la manière de se connecter à Document Security et de contacter un administrateur ou une administratrice ou une autre personne désignée dans votre organisation pour obtenir de l’aide. Par exemple, les utilisateurs et les utilisatrices externes peuvent avoir besoin de contacter un administrateur ou une administratrice s’ils oublient leur mot de passe ou ont besoin d’aide pour le processus d’inscription ou de connexion. La longueur maximale du texte de bienvenue est de 512 caractères.
 
@@ -418,8 +417,8 @@ Ces paramètres contrôlent le texte affiché dans l’invite de connexion qui a
 
 Ces paramètres contrôlent le texte affiché dans la boîte de dialogue d’authentification du certificat.
 
-**Choisir 
-le texte du type d’authentification :** texte affiché pour demander à un utilisateur de sélectionner un type d’authentification.
+**Choisir
+Texte du type d’authentification** texte affiché pour demander à un utilisateur de sélectionner un type d’authentification.
 
 **Choisir le texte de certificat :** texte affiché pour demander à un utilisateur de sélectionner un type de certificat.
 
@@ -427,7 +426,7 @@ le texte du type d’authentification :** texte affiché pour demander à un ut
 
 **Personnalisation de l’affichage du certificat client**
 
-**Afficher uniquement les informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente que les certificats des émetteurs d’informations d’identification de confiance pour lesquels AEM Forms est configuré (voir Gérer des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, seule une liste de tous les certificats présents sur le système s’affiche.
+**Afficher uniquement les informations d’identification de confiance :** lorsque cette option est sélectionnée, l’application cliente ne présente à l’utilisateur que les certificats des émetteurs d’informations d’identification de confiance pour lesquels AEM forms est configuré (voir Gérer des certificats et des informations d’identification). Lorsque cette option n’est pas sélectionnée, l’utilisateur voit s’afficher une liste de tous les certificats du système de l’utilisateur.
 
 ## Configurer les filigranes dynamiques {#configure-dynamic-watermarks}
 
@@ -507,7 +506,7 @@ Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent dis
 
 1. Sous Utiliser comme arrière-plan, sélectionnez Oui ou Non.
 
-   **Remarque** : le filigrane apparaît au premier plan, quelle que soit l’option sélectionnée pour ce paramètre. 
+   **Remarque** : le filigrane apparaît au premier plan, quelle que soit l’option sélectionnée pour ce paramètre.
 
 1. Pour contrôler l’endroit où le filigrane s’affiche sur le document, configurez les options Alignement vertical et Alignement horizontal.
 1. Sélectionnez Ajuster à la page ou sélectionnez % et saisissez un pourcentage dans la zone. La valeur doit être un nombre entier et non une fraction. Pour configurer la taille du filigrane, vous pouvez utiliser une valeur correspondant au pourcentage de la page ou définir le filigrane pour qu’il s&#39;adapte à la taille de la page.
@@ -560,7 +559,7 @@ Document Security génère automatiquement un e-mail d’invitation à l’enreg
 
 L’e-mail d’enregistrement contient un lien vers une page d’enregistrement et des informations sur les modalités d’enregistrement. Une fois la personne invitée enregistrée, Document Security envoie un e-mail d’activation comportant un lien vers une page d’activation. Une fois activé, le compte reste valide jusqu’à ce que vous le désactiviez ou le supprimiez.
 
-Si vous activez l’enregistrement intégré, vous spécifiez une seule fois votre serveur SMTP, les détails de l’e-mail d’enregistrement, les capacités d’accès et les informations de réinitialisation du mot de passe de l’e-mail. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans User Management et que le rôle « Utilisateur invité de Document Security » a été attribué aux utilisateurs, utilisatrices et groupes appropriés de votre organisation. (Voir [Ajouter un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement des utilisateurs et des utilisatrices créé à l’aide du SDK AEM Forms. Consultez l’aide de la section « Développement de SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est recommandé de configurer un message dans l’e-mail d’activation et sur l’écran de connexion du client pour informer les utilisateurs et les utilisatrices sur la façon de contacter l’administration pour obtenir un nouveau mot de passe ou d’autres informations.
+Si vous activez l’enregistrement intégré, vous spécifiez une seule fois votre serveur SMTP, les détails de l’e-mail d’enregistrement, les capacités d’accès et les informations de réinitialisation du mot de passe de l’e-mail. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans User Management et que le rôle « Utilisateur invité de Document Security » a été attribué aux utilisateurs, utilisatrices et groupes appropriés de votre organisation. (Voir [Ajouter un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Créer et configurer des rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement des utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement de SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est recommandé de configurer un message dans l’e-mail d’activation et sur l’écran de connexion du client pour informer les utilisateurs et les utilisatrices sur la façon de contacter l’administration pour obtenir un nouveau mot de passe ou d’autres informations.
 
 **Activer et configurer l’enregistrement des utilisateurs et utilisatrices invités**
 
@@ -585,9 +584,9 @@ Vous pouvez restreindre l’enregistrement auprès de Document Security pour cer
 
 Les paramètres suivants se trouvent dans la zone Filtre de restriction des e-mails de la page Enregistrement des utilisateurs et utilisatrices invités.
 
-**Exclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour exclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez *.example.com.
+**Exclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à exclure. Pour exclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour exclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour exclure tous les utilisateurs du domaine example.com, saisissez &amp;ast;.example.com.
 
-**Inclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour inclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs du domaine example.com, saisissez *.example.com.
+**Inclusion :** saisissez l’adresse électronique d’un utilisateur ou d’un groupe à inclure. Pour inclure plusieurs utilisateurs et utilisatrices ou groupes, saisissez chaque adresse e-mail sur une nouvelle ligne. Pour inclure tous les utilisateurs et utilisatrices appartenant à un domaine particulier, entrez un caractère générique et le nom de domaine. Par exemple, pour inclure tous les utilisateurs du domaine example.com, saisissez &amp;ast;.example.com.
 
 ### Paramètres des comptes d’enregistrement et du serveur {#server-and-registration-account-parameters}
 
@@ -1002,7 +1001,7 @@ Les modifications suivantes apportées au fichier config.xml activent la prise e
 
 1. Définissez la valeur de la clé `SmtpUseTls` du nœud `ExternalUser` sur **true**.
 1. Définissez la valeur de la clé `SmtpUseSsl` du nœud `ExternalUser` sur **false**.
-1. Enregistrez le fichier `config.xml`.
+1. Enregistrez le `config.xml`.
 1. Importez le fichier de configuration. (Voir [Modifier manuellement le fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Désactiver les points d’entrée SOAP pour les documents Document Security {#disable-soap-endpoints-for-document-security-documents}
