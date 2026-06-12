@@ -116,7 +116,7 @@ Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lors
 Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulaires adaptatifs du modèle s’affiche comme un formulaire adaptatif à des fins de modification. Comme lors de la création d’un formulaire adaptatif, vous pouvez spécifier des paramètres initiaux, par exemple en sélectionnant un thème et des actions Envoyer.
 
 Les auteurs l’utilisent comme base pour créer un formulaire. La structure du flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, sélectionnez ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenu initial**.
-![ Calque Contenu initial dans l’éditeur de modèles ](assets/initial-content-layer.png)
+![&#x200B; Calque Contenu initial dans l’éditeur de modèles &#x200B;](assets/initial-content-layer.png)
 
 Calque Contenu initial dans l’éditeur de modèles affichant le conteneur de formulaires adaptatifs sélectionné pour la spécification des propriétés.
 

@@ -96,7 +96,7 @@ I18N.js
 
 ### Ajouter la bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux {#add-adaptive-form-client-library-for-a-locale-br}
 
-Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. ``
+Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &grave;&grave;
 
 Ajouter les fichiers suivants à la bibliothèque cliente :
 
