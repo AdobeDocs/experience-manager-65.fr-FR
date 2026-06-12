@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4434'
-ht-degree: 100%
+source-wordcount: '4415'
+ht-degree: 91%
 
 ---
 
@@ -77,7 +77,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
       **Nom :** GeoLocation (ou le nom que vous souhaitez donner à cette propriété)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
       ![Créez un nœud : Geolocation](assets/geographicallocationcreatenode.png)
 
@@ -113,8 +113,8 @@ Ce scénario indique comment ajouter une propriété personnalisée à tous les 
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. Sous le nœud de recouvrement que vous venez de créer (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
-Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous souhaitez créer une liste déroulante (ici `geographicallocation`) de type nt:unstructured.
+1. Sous le nœud de recouvrement nouvellement créé (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
+Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous devez créer une liste déroulante (ici `geographicallocation`) de type nt:unstructured.
 1. Ajoutez les propriétés suivantes au nœud (ici geographicallocation) et cliquez sur **Enregistrer tout** :
 
    <table>
@@ -132,7 +132,7 @@ Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous souh
    <tr>
       <td>name</td>
       <td>Chaîne</td>
-      <td>./extendedproperties/geographicallocation (conserver la valeur identique au nom du champ que vous avez créé sous le nœud d’éléments).</td>
+      <td>./extendedproperties/geographicallocation (conserver la valeur identique au nom du champ que vous avez créé sous le nœud d’éléments).</td>
    </tr>
    <tr>
       <td>renderReadOnly</td>
@@ -150,7 +150,7 @@ Créez un nœud pour chacune des propriétés (champs) pour lesquelles vous souh
 1. Sous le nœud de propriété (ici : geographicallocation), ajoutez un nouveau nœud portant le nom `items`. Sous le nœud des éléments, ajoutez un nœud pour chaque valeur de la liste déroulante. Il est recommandé d’ajouter le premier nœud en le laissant vide, comme valeur par défaut de la liste déroulante, puis de ne spécifier aucune valeur pour le champ. Pour ajouter plusieurs options/valeurs de liste déroulante, répétez les étapes suivantes :
 
    1. Cliquez avec le bouton droit sur le nœud de propriété (ici geographicallocation) et sélectionnez **Créer** > **Créer un nœud**.
-   1. Entrez comme nom de champ `item1,`, conservez le type nt:unstructured, puis cliquez sur **OK**.
+   1. Saisissez comme nom de champ `item1,` conservez le type nt:unstructured, puis cliquez sur **OK**.
    1. Ajoutez les propriétés suivantes au nœud que vous venez de créer (ici, item1), puis cliquez sur **Enregistrer tout** :
 
       <table>
@@ -220,7 +220,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Nom :** commontab (ou le nom que vous souhaitez donner à cette propriété)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nœud que vous avez créé (ici commontab). CRX affiche les propriétés du nœud.
    1. Ajoutez les propriétés suivantes au nœud (ici commontab) :
@@ -254,7 +254,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Nom :** items
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur **Enregistrer tout:**
 
@@ -265,7 +265,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Nom :** Column1 (ou le nom que vous souhaitez attribuer au nœud, notez que ce nom n’apparaît pas dans l’interface utilisateur).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Ajoutez la propriété suivante au nœud (ici Column1) et cliquez sur **Enregistrer tout** :
 
@@ -291,18 +291,18 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Nom :** items
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Pour créer le champ, procédez comme suit (pour créer d’autres champs/nœuds, répétez ces étapes).:
+1. Pour créer un champ dans l’onglet personnalisé (ici Destinataires), ajoutez un nœud (ici GeographicalLocation). Cette propriété correspond à la colonne que vous avez créée. Procédez comme suit pour créer le champ (pour créer d’autres champs/nœuds, répétez ces étapes) :
 
    1. Cliquez avec le bouton droit sur le nœud d’éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** GeographicalLocation (ou un autre nom pour la propriété de champ)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Ajoutez les propriétés suivantes au nœud de champ (ici GeographicalLocation) et cliquez sur **Enregistrer tout**.
 
@@ -342,7 +342,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Nom :** mytab (ou le nom que vous souhaitez donner à cette propriété).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici mytab). CRX affiche les propriétés du nœud.
    1. Ajoutez les deux propriétés suivantes au nœud (ici commontab) :
@@ -379,7 +379,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
 ### Scénario : ajout de propriétés personnalisées à des types de ressources spécifiques {#scenario-adding-custom-properties-for-specific-asset-types}
 
-Ce scénario vous indique comment ajouter à toutes les ressources de texte une propriété personnalisée à un type de ressource spécifique tel qu’un champ.  Grâce à ce processus, vous pouvez ajouter des propriétés à l’un des éléments suivants :
+Ce scénario vous indique comment ajouter à toutes les ressources de texte une propriété personnalisée à un type de ressource spécifique tel qu’un champ. Grâce à ce processus, vous pouvez ajouter des propriétés à l’un des éléments suivants :
 
 * Texte
 * Condition
@@ -388,7 +388,7 @@ Ce scénario vous indique comment ajouter à toutes les ressources de texte une 
 * Dictionnaire de données
 * Lettre
 
-Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond. ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
+Par exemple, vous souhaitez ajouter une propriété, Emplacement des destinataires, uniquement aux ressources de texte, pour identifier la zone géographique à laquelle une ressource correspond.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
 
 Procédez comme suit pour ajouter une propriété à un type de ressource :
 
@@ -430,7 +430,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
       **Nom :** customtab (ou le nom que vous souhaitez donner à cette propriété).
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici customtab). CRX affiche les propriétés du nœud.
    1. Ajoutez les deux propriétés suivantes au nœud (ici commontab) :
@@ -449,7 +449,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
       **Nom :** items
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur **Enregistrer tout**.
 
@@ -460,7 +460,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
       **Nom :** Column1 (ou le nom que vous souhaitez attribuer au nœud)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Ajoutez la propriété suivante au nœud (ici Column1) et cliquez sur **Enregistrer tout**.
 
@@ -486,7 +486,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
       **Nom :** items
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur **Enregistrer tout:**
 
@@ -497,7 +497,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
       **Nom :** un nom de votre choix (ici GeoLocation)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Ajoutez les propriétés suivantes au nœud et cliquez sur **Enregistrer tout**.
 
@@ -526,7 +526,7 @@ Par défaut, les propriétés personnalisées ajoutées à de nouveaux onglets s
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes pour une lettre. Pour les autres types de ressources, le chemin est indiqué dans le tableau suivant :
 
-   **Chemin :** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
+   **Chemin:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/items/items/letterproperties/items/items
 
    **Emplacement :** /apps/
 
@@ -538,9 +538,9 @@ Par défaut, les propriétés personnalisées ajoutées à de nouveaux onglets s
    |---|---|
    | Texte | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | Liste | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
-   | Condition | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/condition/wizard/items/editproperties/items/properties/items/tabs/items/tab1/items/items/tab1/items |
-   | Fragment | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/items/tabs2/items/tab1/items |
-   | Lettre | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
+   | Condition | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
+   | Fragment | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/tabs2/items/tab1/items |
+   | Lettre | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/items/items/letterproperties/items/letterproperties/items |
 
 1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -599,7 +599,7 @@ Pour afficher la propriété personnalisée dans l’interface utilisateur de la
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
       **Emplacement :** /apps/
 
@@ -616,7 +616,7 @@ Pour afficher la propriété personnalisée dans l’interface utilisateur de la
 
       **Nom :** un nom de votre choix (ici GeographicalLocation)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Ajoutez les propriétés suivantes au nœud et cliquez sur **Enregistrer tout**.
 
@@ -713,7 +713,7 @@ Pour afficher la propriété personnalisée dans l’interface utilisateur de la
       %>
       ```
 
-      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez indiqué le nom de la propriété avec .préfixe /extendedproperties/ : ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
+      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez spécifié le nom de la propriété avec ./extendedproperties/ prefix: ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
 
    1. Pour afficher la nouvelle propriété dans l’interface utilisateur, ajoutez une balise TD comme la suivante avant la balise de fermeture tr (&lt;/tr>) :
 
@@ -750,7 +750,7 @@ Pour afficher la propriété personnalisée dans l’interface utilisateur de la
  </tbody>
 </table>
 
-Lorsque vous ajoutez la propriété sling:orderBefore pour spécifier l’emplacement de la colonne, vous devez également mettre à jour la séquence de la balise &lt;td> correspondante spécifiée à l’étape 6.4 de cette procédure. Par exemple, dans ce cas, vous devez vous assurer que la balise &lt;td> de la position géographique est placée avant la balise &lt;td> de la colonne Version :
+Lorsque vous ajoutez la propriété sling:orderBefore pour spécifier l’emplacement de la colonne, vous devez également mettre à jour l’ordre de la balise &lt;td> correspondante spécifiée à l’étape 6.4 de cette procédure. Par exemple, dans ce cas, vous devez vous assurer que la balise &lt;td> de la position géographique est placée avant la balise &lt;td> de la colonne Version :
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -773,23 +773,23 @@ Pour ce faire, effectuez les étapes suivantes :
 
       **Nom :** aggregates
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Dans le dossier aggregates que vous venez de créer, ajoutez un nœud cm:resource. Sous cm:resource, ajoutez un nœud nommé include0.
+1. Dans le dossier aggregates que vous venez de créer, ajoutez un nœud cm:resource. Sous cm:resource, ajoutez un nœud nommé include0.
 
    1. Cliquez avec le bouton droit sur le dossier aggregates et sélectionnez **Créer** > **Créer un nœud**. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** cm:resource
+      **Nom :** cm:resource
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
-   1. Cliquez avec le bouton droit sur le dossier cm:resource et sélectionnez **Créer** > **Créer un nœud**. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
+   1. Cliquez avec le bouton droit sur le dossier cm:resource et sélectionnez **Créer** > **Créer un nœud**. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** include0
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici include0). CRX affiche les propriétés du nœud.
    1. Ajoutez la propriété suivante au nœud (ici include0) :
@@ -820,7 +820,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
       **Nom :** emplacement (ou le nom de la propriété personnalisée que vous souhaitez ajouter à la recherche)
 
-      **Type :** nt:unstructured
+      **Type:** nt:unstructured
 
    1. Cliquez sur le nouveau nœud que vous avez créé (ici location). CRX affiche les propriétés du nœud.
    1. Ajoutez les propriétés suivantes au nœud (ici location) :
@@ -838,9 +838,9 @@ Pour ce faire, effectuez les étapes suivantes :
 
 >[!NOTE]
 >
->Si vous ne parvenez toujours pas à effectuer une recherche, un problème d’indexation peut en être la cause. Pour indexer de nouveau, accédez au nœud suivant et définissez la valeur de la propriété « re-index » sur true :
+>Si vous ne parvenez toujours pas à effectuer une recherche, un problème d’indexation peut en être la cause. Pour effectuer une nouvelle indexation, accédez au nœud suivant et définissez la valeur de la propriété « re-index » sur true :
 >
->/oak:index/cmLucene&quot; et modifier la valeur de la propriété
+>/oak:index/cmLucene » et modifier la valeur de la propriété
 
 ## Modification de la vue par défaut de la page de recherche {#change-default-view-of-the-search-page}
 
@@ -899,7 +899,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **Chemin d’accès :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
       **Emplacement :** /apps/
 
@@ -932,7 +932,7 @@ Pour ce faire, effectuez les étapes suivantes :
 
 Pour ce faire, effectuez les étapes suivantes :
 
-1. Sous le nœud de propriété personnalisée, tel que geographicallocation, créez un nœud nommé « granite:rendercondition » de type « nt:unstructured ».
+1. Sous le nœud de propriété personnalisée, tel que geographicallocation, créez un nœud nommé « granite :rendercondition » de type « nt :unstructured. »
 1. Ajoutez la propriété suivante au nœud et cliquez sur **Save All** :
 
    <table>

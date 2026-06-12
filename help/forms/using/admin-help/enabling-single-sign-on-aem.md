@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1716'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1719'
+ht-degree: 96%
 
 ---
 
@@ -75,7 +75,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP. (
 >AEM Forms on JEE ne prend pas en charge la configuration de l’authentification unique à l’aide de Kerberos/SPNEGO dans plusieurs environnements d’un domaine enfant.
 
 1. Déterminez le domaine à utiliser pour activer l’authentification unique. Le serveur AEM Forms et les utilisateurs et utilisatrices doivent appartenir au même domaine Windows ou au même domaine de confiance.
-1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte d’utilisateur ou d’utilisatrice](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs et utilisatrices sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
+1. Dans Active Directory, créez un utilisateur ou une utilisatrice qui représente le serveur AEM Forms. (Voir [Créer un compte utilisateur](enabling-single-sign-on-aem.md#create-a-user-account).) Si vous configurez plusieurs domaines pour utiliser SPNEGO, assurez-vous que les mots de passe de chacun de ces utilisateurs sont différents. Si les mots de passe ne sont pas différents, l’authentification unique SPNEGO ne fonctionne pas.
 1. Mappez le nom principal du service. (Voir [Mappage d’un nom principal de service (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurez le contrôleur de domaine. (Voir [Prévention des échecs de contrôle d’intégrité de Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Ajoutez ou modifiez un domaine d’entreprise comme décrit dans la section [Ajout de domaines](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Lorsque vous créez ou modifiez le domaine d’entreprise, effectuez les tâches suivantes :
@@ -155,7 +155,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte d’utilisateur ou d’utilisatrice est créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De plus, le site qui nécessite une authentification SPNEGO doit être un site de confiance.
 
-Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https://lcserver:8080, aucun paramètre n’est nécessaire pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
+Si vous accédez au serveur en utilisant le nom de l’ordinateur, par exemple :8080, aucun paramètre n’est requis pour Internet Explorer. Si vous saisissez une URL qui ne contient aucun point (« . »), Internet Explorer traite le site comme un site intranet local. Si vous utilisez un nom qualifié complet pour le site, celui-ci doit être ajouté en tant que site de confiance.
 
 **Configurer Internet Explorer 6.x**
 
@@ -169,7 +169,7 @@ Si vous accédez au serveur au moyen du nom de l’ordinateur, par exemple https
 
 1. Dans la zone d’URL du navigateur, saisissez `about:config`.
 
-   La boîte de dialogue about:config - Mozilla Firefox s’ouvre.
+   La boîte de dialogue about:config - Mozilla Firefox s’affiche.
 
 1. Dans la zone Filtre, saisissez `negotiate`
 1. Dans la liste qui s’affiche, cliquez sur network.negotiate-auth.trusted-uri, puis saisissez l’une des commandes suivantes selon votre environnement :
@@ -186,7 +186,7 @@ Cliquez pour connaître les étapes permettant d’[attribuer des rôles aux uti
 
 1. Connectez-vous à votre environnement AEM Forms on JEE.
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs et utilisatrices > Gestion des domaines.
-1. Sélectionnez la configuration de votre domaine, par exemple LDAP, et cliquez dessus. Vous trouvez tous les utilisateurs et utilisatrices et les groupes créés dans le répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs et utilisatrices ou groupes.
+1. Sélectionnez la configuration de votre domaine, par exemple LDAP, puis cliquez dessus. Tous les utilisateurs et groupes créés sont répertoriés dans le Répertoire. Si nécessaire, vous pouvez créer de nouveaux utilisateurs, utilisatrices ou groupes.
    ![Page de gestion des domaines](/help/forms/using/assets/domain-mgmt-page.png)
 1. Cliquez sur Authentification. Dans la nouvelle page, sélectionnez un fournisseur d’authentification, tel que LDAP.
 1. Accédez à la page Gestion des domaines, sélectionnez LDAP, puis cliquez sur **Synchroniser maintenant** pour synchroniser le répertoire avec le schéma d’authentification que vous avez configuré pour l’accès AEM.

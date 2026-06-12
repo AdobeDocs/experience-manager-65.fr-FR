@@ -11,7 +11,7 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Avant de créer une action de barre d’outils personnalisée, reportez-vous à [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md) et [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) pour vous familiariser avec ces concepts.
 
-## Qu’est-ce qu’une action ?  {#what-is-an-action-br}
+## Qu’est-ce qu’une action ? {#what-is-an-action-br}
 
 Un formulaire adaptatif fournit une barre d’outils qui permet à un auteur ou à une autrice de formulaires de configurer un ensemble d’options. Ces options sont définies comme des actions pour le formulaire adaptatif. Cliquez sur le bouton Modifier de la barre d’outils pour que le panneau définisse les actions prises en charge par les formulaires adaptatifs.
 
@@ -185,6 +185,6 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
 
 ## Exemples {#samples}
 
-L’archive suivante contient un package de contenu. Le package comprend un formulaire adaptatif associé à la démonstration ci-dessus de l’action de barre d’outils personnalisée.
+L’archive suivante contient un module de contenu. Le package comprend un formulaire adaptatif associé à la démonstration ci-dessus de l’action de barre d’outils personnalisée.
 
 [Obtenir le fichier](assets/customtoolbaractiondemo.zip)

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '280'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Pour éviter des problèmes d’accessibilité avec les lecteurs d’écran qui 
 * Les en-têtes de ligne
 * L’étendue de ligne
 
-Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tableau est complexe. Pour marquer le tableau en tant que tel, ajoutez la balise `extras` dans la source XML du sous-formulaire du tableau comme suit : 
+Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tableau est complexe. Pour marquer le tableau en tant que tel, ajoutez la balise `extras` dans la source XML du sous-formulaire du tableau comme suit :
 
 ```xml
 </extras>

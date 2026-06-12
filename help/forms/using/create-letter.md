@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '4013'
+ht-degree: 99%
 
 ---
 
@@ -31,13 +31,13 @@ Le graphique suivant illustre un workflow type pour la création d’un modèle 
 
 ![Procédure de création d’un modèle de correspondance](assets/01.png)
 
-Dans ce workflow : 
+Dans ce workflow :
 
 1. Les concepteurs de formulaire créent des mises en page et des mises en page de fragments à l’aide d’Adobe Forms Designer et les téléchargent vers un référentiel CRX. Les mises en page contiennent des champs de formulaire classiques, des fonctions de mise en page (en-têtes et pieds de page, par exemple) et des « zones cibles » vides où placer du contenu. Les spécialistes d’applications interviennent ensuite pour mapper le contenu requis vers ces zones cible. En savoir plus sur [la conception de la disposition](/help/forms/using/layout-design-details.md).
 1. Des spécialistes des services juridique, financier ou marketing créent et téléchargent du contenu tel que des clauses de protection légale ou des conditions générales, ainsi que des images, comme des logos, réutilisés dans divers modèles de correspondance.
 1. Les spécialistes d’applications créent des modèles de correspondance. Le spécialiste d’application
 
-   * Mappe des clauses et des images vers les zones cibles des modèles de disposition ;
+   * Mappe des clauses et des images vers les zones cibles des modèles de mise en page ;
    * Définit les conditions et règles de l’inclusion de contenu ;
    * Relie les champs et variables de la mise en page aux modèles de données sous-jacents.
 
@@ -45,7 +45,7 @@ Dans ce workflow :
 
 #### Utilisation de modèles de lettre fournis avec Correspondence Management {#using-letter-templates-provided-with-correspondence-management}
 
-Au lieu de créer un modèle de disposition entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser Designer pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
+Au lieu de créer un modèle de mise en page entièrement nouveau, vous pouvez choisir de modifier et réutiliser des modèles fournis par Correspondence Management. Vous pouvez utiliser le concepteur pour modifier rapidement l’identité graphique et les données et les champs de contenu des modèles en fonction des besoins de votre entreprise. Pour plus d’informations sur les modèles Correspondence Management, voir [Modèles de lettre de référence](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Création de fragments de document {#document-fragment-creation}
 
@@ -159,7 +159,7 @@ Analysez chaque lettre pour déceler ses différentes composantes. C’est au sp
 
 * les conditions dans lesquelles des utilisateurs et utilisatrices professionnelles, comme les experts et expertes en sinistres ou les chargés et chargées d’assistance, sont amenés à modifier tout ou partie du contenu de la lettre.
 * Les scénarios décrivent l’expérience des utilisateurs et utilisatrices, les conditions requises et les avantages de l’utilisation de la solution Lettres.
-* Ils fournissent également : les compétences et les outils requis pour le projet ;
+* Les scénarios fournissent également :The ensembles de compétences et d’outils requis pour votre projet.
 * les recommandations relatives à la planification de l’implémentation ; ``un bon aperçu général de l’implémentation.
 
 ## Avantages de l’analyse {#benefits-of-performing-the-analysis}
@@ -315,7 +315,7 @@ Une fois la correspondance créée, sélectionnez Ouvrir pour afficher dans Corr
 
    Voici quelques champs de liaison importants :
 
-   * **Multiligne** : vous pouvez spécifier si l’entrée de données d’un champ ou d’une variable est multiligne. Si vous sélectionnez cette option, la zone de saisie du champ ou de la variable s’affiche en tant que zone d’entrée multiligne dans la vue Edition de données. Le champ ou la variable est également multiligne dans les vues Données et Contenu de l’interface utilisateur de création de correspondance. Le champ d’entrée multiligne est identique au champ de saisie de commentaire dans un TextModule. L’option multiligne est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
+   * **Multiligne** : vous pouvez spécifier si l’entrée de données d’un champ ou d’une variable est multiligne. Si vous sélectionnez cette option, la zone de saisie du champ ou de la variable s’affiche en tant que zone d’entrée multiligne dans la vue Edition de données. Le champ ou la variable est également multiligne dans les vues Données et Contenu de l’interface de création de correspondance. Le champ d’entrée multiligne est identique au champ de saisie de commentaire dans un TextModule. L’option multiligne est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Eléments du dictionnaire de données non protégés.
    * **Facultatif** : vous pouvez préciser si la valeur du champ ou de la variable est facultative ou obligatoire. L’option de champ facultative est disponible pour les champs et variables avec un type de liaison Utilisateur ou Éléments du dictionnaire de données non protégés.
 
    * **Validation de champ/variable** : pour une validation améliorée de la valeur d’un champ ou d’une variable, vous pouvez affecter une validation au champ ou à la variable. Cette option est disponible uniquement pour les champs et variables avec un type de liaison Utilisateur ou Éléments du dictionnaire de données non protégés.
@@ -420,7 +420,7 @@ Les valeurs suivantes du tableau
    <td>Oui</td> 
    <td>Oui</td> 
    <td>Oui<br /> </td> 
-   <td>N/A</td> 
+   <td>S/O</td> 
    <td>N/A<br /> </td> 
   </tr> 
   <tr> 

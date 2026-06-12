@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 95%
+source-wordcount: '3811'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Tous les points d’entrée d’e-mail sont configurés avec un nom d’utilisat
 
 Si vos utilisateurs envoient des documents dont les noms et les chemins de conversion contiennent des caractères d’alphabet des langues de l’Europe occidentale, ils doivent utiliser une application d’e-mail prenant en charge les types d’encodage requis (Latin1 [ISO-8859-1], Langues de l’Europe occidentale [Windows] ou UTF-8). Pour plus d’informations, consultez le document *Installation et déploiement d’AEM forms* correspondant à votre serveur d’applications.
 
-Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée de courrier électronique par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service de courrier électronique ont deux objectifs :
+Avant de configurer un point d’entrée d’e-mail, vous devez configurer le service E-mail. (Voir [Configurer les paramètres de point d’entrée de courrier électronique par défaut](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Les paramètres de configuration du service de messagerie ont deux objectifs :
 
 * Pour configurer les attributs communs à tous les points d’entrée d’e-mail
 * Pour fournir des valeurs par défaut à tous les points d’entrée d’e-mail
@@ -79,17 +79,17 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Intervalle de répétitions :** nombre de répétitions de l’interrogation du répertoire d’entrée. L’intervalle de répétition par défaut est exprimé en secondes si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur par défaut est 10. Cette valeur ne peut pas être inférieure à 10.
 
-**Nombre de répétitions :** nombre d’interrogations du répertoire d’entrée. Le nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
+**Repeat Count :** nombre d’interrogations du répertoire d’entrée. Le nombre de répétitions par défaut à utiliser si cette valeur n’est pas spécifiée dans la configuration des points d’entrée. La valeur -1 indique une analyse indéfinie du répertoire. La valeur par défaut est -1.
 
 **Retard au début d’une tâche :** valeur par défaut (en secondes) du retard au début de l’analyse du point d’entrée. La valeur par défaut est 0.
 
-**Taille du lot :** nombre d’e-mails que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 indique tous les e-mails. La valeur par défaut est 2.
+**Taille du lot :** nombre d’emails que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 indique tous les e-mails. La valeur par défaut est 2.
 
-**Asynchrone :** identifie le type d’invocation comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est asynchrone.
+**Asynchrone :** identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est asynchrone.
 
 **Modèle de domaine :** modèle de nom de domaine servant à filtrer les e-mails entrants. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Les fichiers portant des extensions particulières (*.dat, *.xml), des noms spécifiques (data) et contenant des expressions composites dans leur nom et leur extension (.``[dD][aA]``&#39;port&#39;). La valeur par défaut est &ast;.&ast;.
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&amp;ast;.dat, &amp;ast;.xml), des noms spécifiques (data) et des expressions composites dans le nom et l’extension (.``[dD][aA]``&#39;port&#39;). La valeur par défaut est &amp;ast;.&amp;ast;.
 
 **Destinataires de tâches effectuées :** une ou plusieurs adresses e-mails utilisées pour envoyer des e-mails afin d’indiquer les tâches effectuées. Par défaut, un message de traitement réussi est toujours envoyé à l’expéditeur ou à l’expéditrice du traitement d’origine. Jusqu’à 100 destinataires sont pris en charge. Pour désactiver ce paramètre, ne renseignez pas ce champ.
 
@@ -125,7 +125,7 @@ Pour que le workflow des formulaires reçoive et traite les e-mails entrants env
 
 **Utiliser la ligne d’objet originelle pour les e-mails de résultat :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de succès et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée. 
+**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
@@ -149,7 +149,7 @@ Définissez les paramètres suivants pour configurer un point d’entrée d’e-
 
 **Nom :** paramètre obligatoire qui identifie le point d’entrée. N’incluez pas de caractère&lt;, car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL comme nom du point d’entrée, assurez-vous qu’elle est conforme aux règles de syntaxe spécifiées dans la RFC1738.
 
-**Description :** description du point d’entrée. N’incluez pas de caractère &lt;, car la description affichée dans Workspace serait tronquée.
+**Description :** fournit une description du point d’entrée. N’incluez pas de caractère &lt;, car la description affichée dans Workspace serait tronquée.
 
 **Expression Cron :** saisissez une expression Cron si l’e-mail doit être programmé en utilisant une expression de ce type.
 
@@ -167,7 +167,7 @@ Définissez les paramètres suivants pour configurer un point d’entrée d’e-
 
 **Modèle de domaine :** spécifie les modèles de domaine d’e-mail entrant qui sont acceptés par le fournisseur. Par exemple, si le domaine adobe.com est utilisé, seuls les messages électroniques de ce domaine sont traités ; ceux provenant d’autres domaines sont ignorés.
 
-**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&ast;.dat, &ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&ast;.`[dD][aA]`&#39;port&#39;).
+**Modèle de fichier :** indique les modèles de pièce jointe de fichier entrant qui sont acceptés par le fournisseur. Cela inclut les fichiers ayant des extensions spécifiques (&amp;ast;.dat, &amp;ast;.xml), des noms spécifiques (data) ou des expressions composites dans le nom et l’extension (&amp;ast;.`[dD][aA]`&#39;port&#39;).
 
 **Destinataires des tâches effectuées :** adresse e-mail à laquelle sont envoyés les messages pour signaler les tâches effectuées. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez sender, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez d’autres destinataires avec des adresses e-mail séparées par des virgules (,).
 
@@ -179,11 +179,11 @@ Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut q
 
 **Hôte de la boîte de réception :** nom ou adresse IP de l’hôte de la boîte de réception du fournisseur de messagerie électronique à analyser.
 
-**Port de la boîte de réception :** port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si le protocole SSL est activé, la valeur POP3 par défaut est 995 et la valeur IMAP par défaut est 993.
+**Port de la boîte de réception :** port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si SSL est activé, la valeur par défaut pour POP3 est 995 et la valeur par défaut pour IMAP est 993.
 
 **Protocole de la boîte de réception :** protocole utilisé par le point d’entrée d’e-mail pour analyser la boîte de réception. Les valeurs sont IMAP ou POP3. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
 
-**Délai d’attente de la boîte de réception :** délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception.
+**Délai d’expiration de la boîte de réception :** délai (en secondes) pendant lequel le fournisseur d’e-mail attend les réponses de la boîte de réception.
 
 **Utilisateur de la boîte de réception :** nom d’utilisateur requis pour se connecter au compte e-mail. En fonction du serveur de messagerie et de la configuration, il peut s’agir uniquement de la partie nom d’utilisateur de l’adresse électronique ou de l’adresse électronique complète.
 
@@ -215,7 +215,7 @@ La valeur par défaut est asynchrone.
 
 **Utiliser la ligne d’objet d’origine pour les e-mails de résultats :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de réussite et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée. 
+**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre e-mail est envoyé avec succès, vous recevez un e-mail de succès. Si l’envoi de votre e-mail échoue, vous recevez un e-mail d’échec vous informant des raisons de cet échec. Ce paramètre vous permet de spécifier l’objet des e-mails de succès envoyés pour ce point d’entrée.
 
 **Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
@@ -229,13 +229,13 @@ La valeur par défaut est asynchrone.
 
 **Valider la boîte de réception avant de créer/mettre à jour ce point d’entrée :** lorsque cette option est sélectionnée, le serveur Forms vérifie que les paramètres SMTP/POP3 sont corrects avant de créer le point d’entrée. Lorsque vous cliquez sur Ajouter, un message s’affiche, indiquant si le compte de la boîte de réception est valide ou non. Si cette option n’est pas sélectionnée, le serveur AEM Forms crée le point d’entrée sans valider la boîte de réception.
 
-**Nom de l’opération :** ce paramètre est obligatoire. Liste des opérations pouvant être affectées au point d’entrée de l’e-mail.  L’opération que vous sélectionnez ici détermine quels champs sont affichés dans les sections Mappages des paramètres d’entrée et Mappages des paramètres de sortie.
+**Nom de l’opération :** ce paramètre est obligatoire. Liste des opérations pouvant être affectées au point d’entrée de l’e-mail. L’opération que vous sélectionnez ici détermine quels champs sont affichés dans les sections Mappages des paramètres d’entrée et Mappages des paramètres de sortie.
 
 **Mappage du paramètre d’entrée :** permet de configurer l’entrée requise pour traiter le service et l’opération. Il existe deux types d’entrées : littéral et variable.
 
 **Littéral :** l’e-mail utilise la valeur saisie dans le champ telle qu’elle est affichée.
 
-**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, le fait de saisir &ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de « &ast; » sélectionne tout document joint. Saisir exemple.pdf sélectionne tout document joint dont le nom est example.pdf.
+**Variable :** vous pouvez associer une chaîne à l’objet, au corps, à l’en-tête ou à l’adresse e-mail de l’expéditeur de l’e-mail. Pour ce faire, utilisez l’un des mots-clés suivants : %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Par exemple, si vous utilisez %SUBJECT%, le contenu de l’objet de l’email est utilisé comme paramètre d’entrée. Pour sélectionner des pièces jointes, saisissez un modèle de fichier que le point d’entrée de l’e-mail peut utiliser pour sélectionner les documents joints. Par exemple, la saisie de &amp;ast;.pdf sélectionne tout document joint dont l’extension est .pdf. La saisie de &amp;ast; sélectionne tout document joint. Saisir exemple.pdf sélectionne tout document joint dont le nom est example.pdf.
 
 **Mappage du paramètre de sortie :** permet de configurer les sorties du service et de l’opération. Les caractères suivants indiqués dans les valeurs de mappage des paramètres de sortie sont développés dans le nom du fichier de la pièce jointe :
 
@@ -245,7 +245,7 @@ La valeur par défaut est asynchrone.
 
 Toute occurrence de la barre oblique inverse (\) est remplacée par %%.
 
-***Remarque &#x200B;** : si le message de demande de service comprend plusieurs fichiers joints, vous ne pouvez pas utiliser les paramètres %F et %E dans des valeurs pour la propriété Mappages des paramètres de sortie du point d’entrée. Si la réponse du service renvoie plusieurs pièces jointes, vous ne pouvez pas spécifier le même nom de fichier pour plusieurs pièces jointes. Si vous ne respectez pas ces recommandations, le service appelé crée les noms des fichiers renvoyés et leurs noms ne sont pas prévisibles.*
+***Remarque ** : si le message de demande de service comprend plusieurs fichiers joints, vous ne pouvez pas utiliser les paramètres %F et %E dans des valeurs pour la propriété Mappages des paramètres de sortie du point d’entrée. Si la réponse du service renvoie plusieurs pièces jointes, vous ne pouvez pas spécifier le même nom de fichier pour plusieurs pièces jointes. Si vous ne respectez pas ces recommandations, le service appelé crée les noms des fichiers renvoyés et leurs noms ne sont pas prévisibles.*
 
 Les valeurs suivantes sont disponibles :
 
