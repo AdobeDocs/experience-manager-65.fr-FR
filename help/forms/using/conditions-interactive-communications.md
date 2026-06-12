@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 100%
+source-wordcount: '1403'
+ht-degree: 97%
 
 ---
 
@@ -75,11 +75,11 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rejeter la modification.** Sélectionnez cette icône pour rejeter les modifications que vous avez apportées à la ressource et à la règle dans la condition.
-   **[B] Accepter la modification.** Sélectionnez cette icône pour accepter les modifications que vous avez apportées à la ressource et à la règle dans la condition.
-   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et la ressource pour la ressource dupliquée. La duplication d’une ressource est utile pour créer des règles similaires afin d’afficher des ressources alternatives basées sur un contexte particulier.
+   **[A] Rejeter la modification.** Sélectionnez cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
+   **[B] Accepter la modification.** Sélectionnez cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
+   **[C] Dupliquer la ressource.** Sélectionnez cette icône pour créer une copie de la ressource avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite procéder à la modification de la règle et de la ressource pour la ressource dupliquée. La duplication d’une ressource est utile pour créer des règles similaires afin d’afficher d’autres ressources en fonction d’un contexte particulier.
    **[D] Afficher l’aperçu.** Sélectionnez cette icône pour afficher un aperçu de la ressource dans la page Créer/Modifier la condition.
-   **Réorganiser le « serveur ».** Appuyez et maintenez cette icône enfoncée pour glisser-déposer des ressources et les réorganiser dans une condition.
+   **&#39;server&#39; Reorder.** Sélectionnez cette icône et maintenez-la enfoncée pour glisser-déposer des ressources et les réorganiser dans une condition.
 
    Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 

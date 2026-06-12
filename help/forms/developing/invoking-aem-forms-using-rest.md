@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 100%
+source-wordcount: '2399'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ La valeur obligatoire `ServiceName` est le nom du service Forms à appeler. La v
 
 Les types de données suivants sont pris en charge lors de l’appel des services AEM Forms à l’aide de requêtes REST :
 
-* Types de données primitifs de Java, tels que les chaînes et les entiers
+* Types de données primitifs Java, tels que les chaînes et les entiers
 * Type de données `com.adobe.idp.Document`
 * Types de données XML tels que `org.w3c.Document` et `org.w3c.Element`
 * Objets de collection, tels que `java.util.List` et `java.util.Map`
@@ -51,7 +51,7 @@ Les types de données suivants sont pris en charge lors de l’appel des service
 
   Si un service Forms est appelé à lʼaide de la méthode de HTTP POST, les arguments sont transmis dans le corps de la requête HTTP. Si la signature du service AEM Forms possède un paramètre d’entrée de type chaîne, le corps de la requête peut contenir la valeur texte du paramètre d’entrée. Si la signature du service définit plusieurs paramètres de chaîne, la requête peut suivre la notation HTTP `application/x-www-form-urlencoded` avec les noms des paramètres utilisés comme noms des champs du formulaire.
 
-  Si un service Forms renvoie un paramètre de chaîne, le résultat est une représentation textuelle du paramètre de sortie. Si un service renvoie plusieurs paramètres de chaîne, le résultat est un document XML encodant les paramètres de sortie au format suivant :
+  Si un service Forms renvoie un paramètre de chaîne, le résultat est une représentation textuelle du paramètre de sortie. Si un service renvoie plusieurs paramètres de chaîne, le résultat est un document XML encodant les paramètres de sortie au format suivant :
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
   >[!NOTE]
@@ -60,7 +60,7 @@ Les types de données suivants sont pris en charge lors de l’appel des service
 
   Si un service Forms requiert un paramètre `com.adobe.idp.Document`, le service ne peut être appelé qu’à l’aide de la méthode HTTP POST. Si le service en nécessite un paramètre `com.adobe.idp.Document`, le corps de la requête HTTP devient le contenu de l’objet Document d’entrée.
 
-  Si un service AEM Forms nécessite plusieurs paramètres d’entrée, le corps de la requête HTTP doit être un message MIME multipartie, tel que défini par la norme RFC 1867. (Les navigateurs web utilisent la norme RFC 1867 pour télécharger des fichiers sur des sites web). Chaque paramètre d’entrée doit être envoyé en tant que partie distincte du message multipartie et codé dans le format `multipart/form-data`. Le nom de chaque partie doit correspondre au nom du paramètre.
+  Si un service AEM Forms nécessite plusieurs paramètres d’entrée, le corps de la requête HTTP doit être un message MIME multipartie, tel que défini par la norme RFC 1867. (La norme RFC 1867 est utilisée par les navigateurs web pour charger des fichiers sur des sites web.) Chaque paramètre d’entrée doit être envoyé en tant que partie distincte du message multipartie et codé dans le format `multipart/form-data`. Le nom de chaque partie doit correspondre au nom du paramètre.
 
   Les listes et les mappages sont également utilisés comme valeurs d’entrée dans les processus AEM Forms créés dans Workbench. Par conséquent, vous pouvez utiliser ces types de données lors de la réalisation d’une requête REST. Les tableaux Java ne sont pas pris en charge, car ils ne sont pas utilisés comme valeur d’entrée dans un processus AEM Forms.
 
@@ -84,7 +84,7 @@ Les types de données suivants sont pris en charge lors de l’appel des service
 * URL pointant vers le contenu du document (si la liste est composée dʼobjets `com.adobe.idp.Document`)
 
   L’exemple suivant est un message XML renvoyé par un service qui a un seul paramètre de sortie nommé *list*, qui est une liste de nombres entiers.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un paramètre de mappage de sortie est représenté dans le message XML résultant comme une série d’éléments XML avec un élément pour chaque enregistrement dans le mappage. Chaque élément reçoit le même nom que la clé de l’enregistrement du mappage. La valeur de chaque élément est une représentation textuelle de la valeur de l’enregistrement du mappage (si le mappage se compose d’enregistrements avec une valeur de type chaîne) ou une URL pointant vers le contenu du document (si le mappage se compose d’enregistrements avec la valeur `com.adobe.idp.Document`). Consultez ci-dessous un exemple de message XML renvoyé par un service qui a un seul paramètre de sortie nommé `map`. Cette valeur de paramètre est un mappage constitué d’enregistrements qui associent des lettres aux objets `com.adobe.idp.Document`.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un paramètre de mappage de sortie est représenté dans le message XML résultant comme une série d’éléments XML avec un élément pour chaque enregistrement dans le mappage. Chaque élément reçoit le même nom que la clé de l’enregistrement du mappage. La valeur de chaque élément est une représentation textuelle de la valeur de l’enregistrement du mappage (si le mappage se compose d’enregistrements avec une valeur de chaîne) ou une URL pointant vers le contenu du document (si le mappage se compose d’enregistrements avec la valeur de `com.adobe.idp.Document`). Vous trouverez ci-dessous un exemple de message XML renvoyé par un service qui a un seul paramètre de sortie nommé `map`. Cette valeur de paramètre est un mappage constitué d’enregistrements qui associent des lettres aux objets `com.adobe.idp.Document`.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Appels asynchrones {#asynchronous-invocations}
@@ -149,15 +149,15 @@ Pour assurer une transmission sécurisée des appels REST, un administrateur ou 
 
 >[!NOTE]
 >
->En tant que développeur Workbench souhaitant exposer ses processus via un point d’entrée REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
+>En tant que responsable du développement Workbench souhaitant exposer ses processus via un point d’entrée REST, gardez à l’esprit le problème de la vulnérabilité XSS. Les vulnérabilités XSS peuvent être exploitées pour voler ou manipuler des cookies, modifier la présentation du contenu et compromettre des informations confidentielles. Il est recommandé d’étendre la logique de processus avec les règles supplémentaires de validation des données d’entrée et de sortie pour éviter les problèmes de vulnérabilité XSS.
 
 ## Services AEM Forms qui prennent en charge les appels REST {#aem-forms-services-that-support-rest-invocation}
 
-Bien qu’il soit recommandé d’appeler directement les processus créés à l’aide de Workbench plutôt que les services, certains services AEM Forms prennent en charge les appels REST. La raison pour laquelle il est recommandé d’appeler un processus plutôt qu’un service directement est qu’il est plus efficace d’appeler un processus. Considérez le scénario suivant. Supposons que vous souhaitiez créer une politique à partir d’un client REST. En d’autres termes, vous souhaitez que le client REST définisse des valeurs telles que le nom de la politique et la période d’ouverture hors ligne.
+Bien qu’il soit recommandé d’appeler directement les processus créés à l’aide de Workbench plutôt que les services, certains services AEM Forms prennent en charge les appels REST. La raison pour laquelle il est recommandé d’appeler un processus plutôt qu’un service directement est qu’il est plus efficace d’appeler un processus. Considérez le scénario suivant. Supposons que vous souhaitiez créer une politique à partir d’un client REST. En d’autres termes, vous souhaitez que le client REST définisse des valeurs telles que le nom de la politique et la période de bail hors ligne.
 
 Pour créer une politique, vous devez définir des types de données complexes tels que l’objet `PolicyEntry`. Un objet `PolicyEntry` définit des attributs tels que les autorisations associées à la politique. (Voir [Créer des politiques](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
 
-Au lieu d’envoyer une requête REST pour créer une politique (ce qui impliquerait de définir des types de données complexes tels qu’un objet `PolicyEntry`), créez un processus qui crée une politique à l’aide de Workbench. Définissez le processus pour qu’il accepte des variables d’entrée primitives telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période d’ouverture hors ligne.
+Au lieu d’envoyer une requête REST pour créer une politique (ce qui impliquerait de définir des types de données complexes tels qu’un objet `PolicyEntry`), créez un processus qui crée une politique à l’aide de Workbench. Définissez le processus pour qu’il accepte des variables d’entrée primitives telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période de bail hors ligne.
 
 De cette façon, vous n’avez pas à créer de requête d’appel REST qui inclut les types de données complexes requis par l’opération. Le processus définit les types de données complexes et tout ce que vous faites à partir du client REST est d’appeler le processus et de transmettre les types de données primitifs. Pour plus d’informations sur l’appel d’un processus à l’aide de REST, voir [Appel du processus MyApplication/EncryptDocument à l’aide de REST](#rest-invocation-examples).
 
@@ -319,7 +319,7 @@ Vous pouvez appeler un processus Forms depuis Acrobat en effectuant une requête
 
 Spécifiez lʼURL dʼappel du processus dans le champ *URL d’envoi* du bouton, comme illustré ci-après.
 
-L’URL complète pour appeler le processus est la suivante : https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
+L’URL complète pour appeler le processus est :8080/rest/services/MyApplication/EncryptDocument.
 
 Si le processus nécessite un document PDF comme valeur d’entrée, veillez à envoyer le formulaire au format PDF, comme illustré ci-dessus. En outre, pour appeler correctement un processus, il doit renvoyer un document PDF. Sinon, Acrobat ne peut pas traiter la valeur renvoyée et une erreur se produit. Il n’est pas nécessaire de spécifier le nom de la variable de processus d’entrée. Par exemple, le processus *MyApplication/EncryptDocument* comporte une variable d’entrée nommée `inDoc`. Si le formulaire est envoyé au format PDF, il n’est pas nécessaire de spécifier inDoc.
 

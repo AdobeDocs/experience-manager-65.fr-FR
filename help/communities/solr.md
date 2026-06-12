@@ -1,6 +1,6 @@
 ---
-title: Configuration Solr pour SRP
-description: Une installation Apache Solr peut être partagée entre le magasin de noeuds (Oak) et le magasin commun (SRP) en utilisant différentes collections.
+title: Configuration de Solr pour SRP
+description: Une installation Apache Solr peut être partagée entre le magasin de nœuds (Oak) et le magasin commun (SRP) à l’aide de différentes collections
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,49 +11,49 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 2%
+source-wordcount: '1534'
+ht-degree: 3%
 
 ---
 
-# Configuration Solr pour SRP {#solr-configuration-for-srp}
+# Configuration de Solr pour SRP {#solr-configuration-for-srp}
 
 ## Solr pour AEM Platform {#solr-for-aem-platform}
 
-Une installation [Apache Solr](https://solr.apache.org/) peut être partagée entre le [magasin de noeuds](../../help/sites-deploying/data-store-config.md) (Oak) et le [magasin commun](working-with-srp.md) (SRP) à l’aide de collections différentes.
+Une installation [Apache Solr](https://solr.apache.org/) peut être partagée entre le [magasin de nœuds](../../help/sites-deploying/data-store-config.md) (Oak) et le [magasin commun](working-with-srp.md) (SRP) à l’aide de collections différentes.
 
 Si les collections Oak et SRP sont utilisées de manière intensive, un second Solr peut être installé pour des raisons de performances.
 
-Pour les environnements de production, le [mode SolrCloud](#solrcloud-mode) offre de meilleures performances par rapport au mode autonome (une seule configuration Solr locale).
+Pour les environnements de production, le [mode SolrCloud](#solrcloud-mode) offre de meilleures performances par rapport au mode autonome (une configuration Solr unique et locale).
 
-### Conditions requises {#requirements}
+### Exigences {#requirements}
 
 Téléchargez et installez Apache Solr :
 
 * [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr requiert Java™ 1.7 ou version ultérieure
-* Aucun service requis
+* Solr nécessite Java™ 1.7 ou une version ultérieure
+* Aucun service n’est nécessaire
 * Choix des modes d’exécution :
 
    * Mode autonome
-   * [Mode SolrCloud](#solrcloud-mode) (recommandé pour les environnements de production)
+   * [mode SolrCloud](#solrcloud-mode) (recommandé pour les environnements de production)
 
 * Choix de la recherche multilingue (MLS)
 
    * [Installation de MLS standard](#installing-standard-mls)
-   * [Installation de MLS avancés](#installing-advanced-mls)
+   * [Installation du MLS avancé](#installing-advanced-mls)
 
 ## Mode SolrCloud {#solrcloud-mode}
 
-Le mode [SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) est recommandé pour les environnements de production. Lors de l’exécution en mode SolrCloud, SolrCloud doit être installé et configuré avant d’installer la recherche multilingue (MLS).
+Le mode [SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) est recommandé pour les environnements de production. En mode SolrCloud, SolrCloud doit être installé et configuré avant d’installer la recherche multilingue (MLS).
 
 Il est recommandé de suivre les instructions d’installation de SolrCloud :
 
-* 3 noeuds SolrCloud sur le même serveur.
-* Un ZooKeeper Apache externe.
+* 3 nœuds SolrCloud sur le même serveur.
+* Un Apache ZooKeeper externe.
 
-Il est également recommandé de configurer JVM pour optimiser l’utilisation de la mémoire et le nettoyage de la mémoire.
+Il est également recommandé de configurer JVM pour ajuster l’utilisation de la mémoire et le nettoyage.
 
 ### Exemple de configuration JVM {#jvm-configuration-example}
 
@@ -61,69 +61,69 @@ Il est également recommandé de configurer JVM pour optimiser l’utilisation d
 JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
-### Commandes de configuration de SolrCloud {#solrcloud-setup-commands}
+### Commandes de configuration SolrCloud {#solrcloud-setup-commands}
 
-Lors de l’exécution en mode SolrCloud, avant l’installation, l’utilisation et la connaissance des commandes de configuration de SolrCloud suivantes sont nécessaires.
+Lors de l’exécution en mode SolrCloud, avant l’installation de MLS, il est nécessaire d’utiliser et de connaître les commandes de configuration SolrCloud suivantes.
 
-#### 1. Télécharger une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### &#x200B;1. Charger une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Référence :
-[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#128279;](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation :
 sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
--zkhost *server:port* \
+-zkhost *serveur:port* \
 -confname *myconfig-name *\
 -solrhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. Créer une collection {#create-a-collection}
+#### &#x200B;2. Création d’une collection {#create-a-collection}
 
 Référence :
-[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
+[&#128279;](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Utilisation :
-./bin/solr create \
+./bin/solr créer \
 -c *mycollection-name*\
 -d *config-dir* \
 -n *myconfig-name* \
 -p *port*\
--s *nombre de éclats* \
--rf *nombre-de-réplication*
+-s *nombre de partitions* \
+-rf *nombre-de-répliques*
 
-#### 3. Lier une collection à un jeu de configuration {#link-a-collection-to-a-configuration-set}
+#### &#x200B;3. Liaison d’une collection à un jeu de configuration {#link-a-collection-to-a-configuration-set}
 
-Liez une collection à une configuration déjà téléchargée sur ZooKeeper.
+Associez une collection à une configuration déjà téléchargée sur ZooKeeper.
 
 Référence :
-[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#128279;](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation :
 sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
--zkhost *server:port* \
+-zkhost *serveur:port* \
 -collection *mycollection-name* \
 -confname *myconfig-name*
 
-### Comparaison des MLS standard et avancés {#comparison-of-standard-and-advanced-mls}
+### Comparaison entre MLS standard et avancé {#comparison-of-standard-and-advanced-mls}
 
 La recherche multilingue (MLS) pour AEM Communities est conçue pour la plateforme Solr afin de fournir une recherche améliorée dans toutes les langues prises en charge, y compris l’anglais.
 
-MLS pour AEM Communities est disponible en tant que MLS standard ou MLS avancé. Le MLS standard inclut uniquement les paramètres de configuration Solr et exclut tous les modules externes ou fichiers de ressources. Le MLS avancé est la solution la plus complète et inclut des paramètres de configuration Solr, des modules externes et des ressources associées.
+MLS pour AEM Communities est disponible en tant que MLS standard ou MLS avancé. Le MLS standard inclut uniquement les paramètres de configuration Solr et exclut tous les plug-ins ou fichiers de ressources. Advanced MLS est la solution la plus complète et comprend les paramètres de configuration Solr, les plug-ins et les ressources associées
 
 Le MLS standard comprend des améliorations pour la recherche de contenu dans les langues suivantes :
 
-* Anglais : recherche de radical améliorée pour tenter de correspondre aux dérivations de mots.
-* Japonais : amélioration de la segmentation en jetons japonais pour les caractères à demi-largeur.
+* Anglais : amélioration de la méthode stemmer pour tenter de faire correspondre les dérivations de mots.
+* Japonais : amélioration de la segmentation en unités lexicales japonaises pour les caractères à demi-largeur.
 
 Le MLS avancé comprend des améliorations pour la recherche de contenu dans les langues suivantes :
 
-* Anglais : recteur remplacé par un lemmatizer.
-* Allemand : ajout d’un décompositeur.
-* Français : ajout de la gestion des élites.
+* Anglais : Remplacé l&#39;étamer par le lemmatizer.
+* Allemand : ajout du décomposeur.
+* Français : ajout de la gestion des émissions.
 * Chinois (simplifié) : ajout d’un jeton plus intelligent.
-* Diverses langues : ajout d’un radical, d’une liste de mots vides et d’un normaliseur.
+* Diverses langues : ajout d’un élément, d’une liste de mots vides et d’un normalisateur.
 
 Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
@@ -140,7 +140,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Finnois | Lette | Thaïlandais |
 | Français | Lituanien | Turc |
 
-#### Comparaison d’AEM 6.1 Solr search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparaison entre la recherche Solr AEM 6.1, le MLS standard et le MLS avancé {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Remarque** : AEM 6.1 fait référence à AEM 6.1 Communities FP3 et versions antérieures.
 
@@ -159,47 +159,47 @@ Fichiers MLS standard (schema.xml, solrconfig.xml) pour Solr 5.x.
 
 Les fichiers MLS standard sont stockés dans le référentiel AEM.
 
-**Remarque** : Bien que les fichiers Solr soient stockés dans le dossier msrp/ , ils sont également destinés au DSRP (aucune modification n’est nécessaire).
+**Remarque** : bien que les fichiers Solr soient stockés dans le dossier msrp/, ils sont également destinés à DSRP (aucune modification n’est nécessaire).
 
-**Télécharger les instructions** : remplacez `solrX` par `solr4` ou `solr5` selon les besoins.
+**Instructions de téléchargement** : remplacez `solrX` par `solr4` ou `solr5`, le cas échéant.
 
 1. À l’aide de CRXDE|Lite, localisez :
 
    * `/libs/social/config/datastore/msrp/solrX/schema.xml`
    * `/libs/social/config/datastore/msrp/solrX/solrconfig.xml`
 
-1. Téléchargez-le sur le serveur local sur lequel Solr est déployé.
+1. Téléchargez sur le serveur local sur lequel Solr est déployé.
 
-   * Recherchez la propriété `jcr:data` du noeud `jcr:content`.
+   * Recherchez la propriété `jcr:data` du nœud `jcr:content`.
    * Pour lancer le téléchargement, sélectionnez `view`.
-   * Vérifiez que les fichiers sont enregistrés avec les noms et le codage appropriés (UTF8).
+   * Assurez-vous que les fichiers sont enregistrés avec les noms et le codage appropriés (UTF8).
 
-1. Suivez les instructions d’installation pour le mode autonome ou SolrCloud .
+1. Suivez les instructions d’installation en mode autonome ou SolrCloud.
 
 #### Mode SolrCloud - MLS standard {#solrcloud-mode-standard-mls}
 
 1. Installez et configurez Solr en mode SolrCloud.
 1. Préparez une nouvelle configuration :
 
-   1. Créez new-config-dir* comme `solr-install-dir*/myconfig/`
+   1. Créez new-config-dir* tel que `solr-install-dir*/myconfig/`
 
-   1. Copiez le contenu du répertoire de configuration Solr existant vers *new-config-dir*
+   1. Copiez le contenu du répertoire de configuration Solr existant dans *new-config-dir*
 
-      * Pour Solr4 : copie `solr-install-dir/example/solr/collection1/conf/`
-      * Pour Solr5 : copie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+      * Pour Solr4 : copier `solr-install-dir/example/solr/collection1/conf/`
+      * Pour Solr5 : copier `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
    1. Copiez les fichiers **schema.xml** et **solrconfig.xml** téléchargés dans *new-config-dir* pour remplacer les fichiers existants.
 
-1. [Téléchargez la nouvelle configuration](#upload-a-configuration-to-zookeeper) vers ZooKeeper.
-1. [Créez une collection](#create-a-collection) spécifiant les paramètres nécessaires, tels que le nombre de partitions, le nombre de répliques et le nom de configuration.
-1. Si le nom de la configuration n’a *pas* été fourni lors de la création de la collection, [liez cette nouvelle collection](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.
+1. [Chargez la nouvelle configuration](#upload-a-configuration-to-zookeeper) sur ZooKeeper.
+1. [Créez une collection](#create-a-collection) en spécifiant les paramètres nécessaires, tels que le nombre de partitions, le nombre de répliques et le nom de la configuration.
+1. Si le nom de la configuration n’a *pas* été fourni lors de la création de la collection, [liez cette collection nouvellement créée](#link-a-collection-to-a-configuration-set) avec la configuration chargée dans ZooKeeper.
 
 1. Pour MSRP, exécutez [MSRP Reindex Tool](msrp.md#msrp-reindex-tool), sauf si cette installation est nouvelle.
 
 #### Mode autonome - MLS standard {#standalone-mode-standard-mls}
 
 1. Installez Solr en mode autonome.
-1. Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
+1. Si vous exécutez Solr5, créez une collection1 (similaire à Solr4) :
 
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
@@ -209,64 +209,64 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
    * Pour Solr4 : `solr-install-dir/example/solr/collection1/conf/`
    * Créé pour Solr5 : `solr-install-dir/server/solr/collection1/conf/`
 
-1. Copiez les fichiers **schema.xml** et **solrconfig.xml** téléchargés dans le même répertoire.
+1. Copiez les fichiers **schema.xml** et **solrconfig.xml** téléchargés dans ce même répertoire.
 
 1. Redémarrez Solr.
 1. Pour MSRP, exécutez [MSRP Reindex Tool](#msrpreindextool), sauf si cette installation est nouvelle.
 
-### Installation de MLS avancés {#installing-advanced-mls}
+### Installation du MLS avancé {#installing-advanced-mls}
 
-Pour que la collection SRP (MSRP ou DSRP) prenne en charge les MLS avancés, de nouveaux modules externes Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont compressés dans un fichier ZIP téléchargeable. En outre, un script d’installation est inclus pour une utilisation lorsque Solr est déployé en mode autonome.
+Pour que la collecte SRP (MSRP ou DSRP) prenne en charge le MLS avancé, de nouveaux plug-ins Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont regroupés dans un fichier zip téléchargeable. En outre, un script d’installation est inclus pour une utilisation lorsque Solr est déployé en mode autonome.
 
-Pour obtenir le package MLS avancé, reportez-vous à la section [AEM MLS avancé](deploy-communities.md#aem-advanced-mls) dans la section déploiement de la documentation.
+Pour obtenir le package MLS avancé, consultez [MLS avancé &#x200B;](deploy-communities.md#aem-advanced-mls) dans la section de déploiement de la documentation.
 
-Pour commencer l’installation pour SolrCloud ou le mode autonome :
+Pour commencer l’installation de en mode SolrCloud ou autonome :
 
 * Téléchargez l’archive zip AEM-SOLR-MLS sur le serveur hébergeant Solr.
 * Décompressez l’archive.
 
 #### Mode SolrCloud - MLS avancé {#solrcloud-mode-advanced-mls}
 
-Instructions d’installation - Notez les quelques différences pour Solr4 et Solr5 :
+Instructions d’installation - notez les quelques différences pour Solr4 et Solr5 :
 
 1. Installez et configurez Solr en mode SolrCloud.
 1. Extrayez le contenu du package MLS avancé sur le disque. Le contenu doit inclure :
 
    * **schema.xml**
    * **solrconfig.xml**
-   * dossier **stopwords/**
-   * Dossier **profiles/**
-   * Dossier **extra-libs/**
+   * **dossier mots vides/**
+   * **dossier profiles/**
+   * **dossier extra-libs/**
 
 1. Préparez une nouvelle configuration :
 
    1. Créez un *new-config-dir*
 
-      * Par exemple : `solr-install-dir/myconfig/`
+      * Par exemple `solr-install-dir/myconfig/`
       * Créer des sous-dossiers `stopwords/` et `lang/`
 
-   1. Copiez le contenu du répertoire de configuration Solr existant vers *new-config-dir*
+   1. Copiez le contenu du répertoire de configuration Solr existant dans *new-config-dir*
 
-      * Pour Solr4 : Copie `solr-install-dir/example/solr/collection1/conf/`
-      * Pour Solr5 : Copie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
+      * Pour Solr4 : Copier `solr-install-dir/example/solr/collection1/conf/`
+      * Pour Solr5 : Copier `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
-   1. Copiez les fichiers **schema.xml** et **solrconfig.xml** extraits dans *new-config-dir* pour remplacer les fichiers existants.
-   1. Pour Solr5 : Copiez `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` vers `new-config-dir/lang/`
-   1. Copiez le dossier **stopwords/** extrait dans *new-config-dir*, ce qui entraîne l&#39;extraction de `new-config-dir/stopwords/*.txt`
+   1. Copiez les **schema.xml** et **solrconfig.xml** extraits dans *new-config-dir* pour remplacer les fichiers existants.
+   1. Pour Solr5 : Copier le `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` dans `new-config-dir/lang/`
+   1. Copiez le dossier **mots vides/** extrait dans *new-config-dir* pour obtenir le `new-config-dir/stopwords/*.txt`
 
-1. [Télécharger la nouvelle configuration](#upload-a-configuration-to-zookeeper) vers ZooKeeper
-1. Copiez le nouveau dossier **profiles/** ...
+1. [Chargez la nouvelle configuration](#upload-a-configuration-to-zookeeper) sur ZooKeeper.
+1. Copiez le nouveau dossier **profils/**...
 
-   * Pour Solr4 : Copiez dans les ressources/dossiers de chaque noeud
-   * Pour Solr5 : copiez dans chaque dossier/serveur/ressources/dossier d’installation Solr. Si tous les noeuds se trouvent dans le même répertoire d’installation Solr, cette étape est effectuée une seule fois.
+   * Pour Solr4 : copie dans le dossier resources/ de chaque nœud
+   * Pour Solr5 : copiez-le dans le dossier server/resources/ de chaque installation Solr. Si tous les nœuds se trouvent dans le même répertoire d’installation Solr, cette étape n’est effectuée qu’une seule fois.
 
-1. Créez un dossier **lib/** dans le répertoire solr-home (contient solr.xml) de chaque noeud dans SolrCloud. Copiez les jars des emplacements suivants dans le nouveau dossier lib/ de chaque noeud :
+1. Créez un dossier **lib/** dans le répertoire solr-home (contient le fichier solr.xml) de chaque nœud dans SolrCloud. Copiez les fichiers jar des emplacements suivants dans le nouveau dossier lib/ sur chaque nœud :
 
-   * **extra-libs/** extrait du package MLS avancé
+   * **extra-libs/** extraits du package MLS avancé
    * *solr-install-dir/contrib/extraction/lib/*.jar
    * *solr-install-dir/dist/solr-cell*.jar
    * *solr-install-dir/contrib/clustering/lib/*.jar
-   * *rép-installation-solr/dist/solr-clustering*.jar
+   * *solr-install-dir/dist/solr-clustering*.jar
    * *solr-install-dir/contrib/langid/lib/*.jar
    * *solr-install-dir/dist/solr-langid*.jar
    * *solr-install-dir/contrib/velocity/lib/*.jar
@@ -274,8 +274,8 @@ Instructions d’installation - Notez les quelques différences pour Solr4 et So
    * *solr-install-dir/contrib/analysis-extras/lib/*.jar
    * *solr-install-dir/contrib/analysis-extras/lucene-libs/*.jar
 
-1. [Créez une collection](#create-a-collection) spécifiant les paramètres nécessaires, tels que le nombre de partitions, le nombre de répliques et le nom de configuration.
-1. Si le nom de la configuration n’a pas été *fourni lors de la création de la collection, [&#x200B; liez cette nouvelle collection &#x200B;](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.*
+1. [Créez une collection](#create-a-collection) en spécifiant les paramètres nécessaires, tels que le nombre de partitions, le nombre de répliques et le nom de la configuration.
+1. Si le nom de la configuration n’a *pas* été fourni lors de la création de la collection, [liez cette collection nouvellement créée](#link-a-collection-to-a-configuration-set) avec la configuration chargée dans ZooKeeper.
 
 1. Pour MSRP, exécutez [MSRP Reindex Tool](#msrpreindextool), sauf si cette installation est nouvelle.
 
@@ -283,32 +283,32 @@ Instructions d’installation - Notez les quelques différences pour Solr4 et So
 
 Un script d’installation est inclus dans le package MLS avancé.
 
-Une fois le contenu du package extrait sur le serveur hébergeant le serveur Solr autonome, exécutez le script d&#39;installation pour installer les ressources et les fichiers de configuration nécessaires.
+Une fois le contenu du package extrait sur le serveur hébergeant le serveur autonome Solr, exécutez le script d’installation pour installer les ressources et fichiers de configuration nécessaires.
 
 * Installez Solr en mode autonome.
-* Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :
+* Si vous exécutez Solr5, créez une collection1 (similaire à Solr4) :
 
    * `./bin/solr start`
    * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
-* Exécutez le script d’installation : installez [-v 4|5] [-d solrhome] [-c collectionpath]
+* Exécutez le script d’installation : Installez [-v 4|5] [-d solrhome] [-c collectionpath .]
 où :
 
    * -d solrhome
 
-     Répertoire d’installation Solr
+     Répertoire d’installation de Solr
 
    * -c collectionpath
 
-     Chemin d’accès de la collection dans solitaire
+     Chemin de la collection dans solr
 
    * --help
 
-     Options de ligne de commande Imprimer
+     Options de ligne de commande d’impression
 
    * -v [4|5]
 
-     Définition de la version pour solder
+     Définir la version de solr
 
 * Exemple pour Solr 4.10.4 :
 
@@ -320,14 +320,14 @@ où :
 
 **Remarque** :
 
-* Le script d’installation sauvegarde schema.xml et solrconfig.xml avant d’installer de nouvelles versions en ajoutant &quot;.orig&quot;
+* Le script d’installation sauvegarde schema.xml et solrconfig.xml avant d’installer de nouvelles versions en ajoutant « .orig »
 
-### A propos de solrconfig.xml {#about-solrconfig-xml}
+### À propos de solrconfig.xml {#about-solrconfig-xml}
 
-Le fichier **solrconfig.xml** contrôle l’intervalle de validation automatique et la visibilité de la recherche, et nécessite des tests et des réglages.
+Le fichier **solrconfig.xml** contrôle l’intervalle de validation automatique et la visibilité de la recherche. Il nécessite des tests et des réglages.
 
-`<autoCommit>` : par défaut, l’intervalle AutoCommit, qui est une validation hard vers un stockage stable, est défini sur 15 secondes. La visibilité de la recherche utilise par défaut l’index de pré-validation.
+`<autoCommit>` : par défaut, l’intervalle AutoCommit, qui correspond à une validation stricte vers un stockage stable, est défini sur 15 secondes. La visibilité de la recherche est définie par défaut sur l’utilisation de l’index de prévalidation.
 
-Pour modifier la recherche afin d’utiliser un index mis à jour pour prendre en compte les modifications dues à la validation, remplacez le `openSearcher` contenu par true.
+Pour modifier la recherche afin d’utiliser un index mis à jour pour refléter les modifications dues à la validation, définissez la `openSearcher` contenue sur true.
 
-`autoSoftCommit` : une validation &quot;soft&quot; garantit que les modifications sont visibles (l’index est mis à jour), mais ne garantit pas que les modifications sont synchronisées avec un stockage stable (hard commit). Les performances s’en trouvent améliorées. Par défaut, `autoSoftCommit` est désactivé avec le `maxTime` contenu défini sur -1.
+`autoSoftCommit` : une validation &#39;soft&#39; garantit que les modifications sont visibles (l&#39;index est mis à jour), mais ne garantit pas que les modifications sont synchronisées avec un stockage stable (validation hard). Il en résulte une amélioration des performances. Par défaut, `autoSoftCommit` est désactivé avec la `maxTime` contenue définie sur -1.

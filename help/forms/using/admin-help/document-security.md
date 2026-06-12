@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3301'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Avec Document Security, vous pouvez facilement créer, stocker et appliquer des
 
 Vous pouvez protéger les documents à l’aide de politiques. Une *politique* est un groupe d’informations comprenant des paramètres de confidentialité et une liste d’utilisateurs et utilisatrices autorisés. Les paramètres de confidentialité que vous spécifiez dans une politique déterminent la mesure dans laquelle un destinataire ou une destinatrice peut utiliser un document auquel vous appliquez cette politique. Par exemple, vous pouvez spécifier si les destinataires et destinatrices sont autorisés à imprimer ou copier du texte, effectuer des modifications ou ajouter des signatures et des commentaires dans des documents protégés.
 
-Les utilisateurs et utilisatrices de Document Security créent des politiques à l’aide de pages Web destinées aux utilisateurs et utilisatrices finaux. Les administrateurs et administratrices utilisent les pages Web de Document Security pour créer des jeux de politiques contenant des politiques partagées, accessibles à tous les utilisateurs et utilisatrices autorisés.
+Les utilisateurs et utilisatrices de Document Security créent des politiques à l’aide de pages Web destinées aux utilisateurs et utilisatrices finaux. Les administrateurs et administratrices utilisent les pages web de Document Security pour créer des ensembles de politiques contenant des politiques partagées, accessibles à l’ensemble des utilisateurs et utilisatrices autorisés.
 
 Bien que les politiques soient stockées dans Document Security, vous les appliquez aux documents par le biais de votre application cliente. Les modalités d’application des politiques aux documents PDF sont décrites en détail dans l’*Aide d’Acrobat*. L’application de politiques à l’aide d’autres applications, telles que Microsoft® Office, est décrite dans l’*Aide des extensions Acrobat Reader DC* de l’application.
 
@@ -54,10 +54,10 @@ Document Security se compose d’un serveur et d’une interface utilisateur :
 
 Étapes représentées dans le schéma :
 
-1. Le ou la propriétaire du document crée des politiques à l’aide des pages Web. Les propriétaires de documents peuvent créer des politiques personnelles auxquelles ils sont les seuls à avoir accès. Les administrateurs et administratrices et les coordinateurs et coordinatrices de jeux de politiques peuvent créer des politiques partagées dans les jeux de politiques qui sont accessibles aux utilisateurs et utilisatrices autorisés.
+1. Le ou la propriétaire du document crée des politiques à l’aide des pages Web. Les propriétaires de documents peuvent créer des politiques personnelles auxquelles ils sont les seuls à avoir accès. Les administrateurs et administratrices et les coordinateurs et coordinatrices d’ensembles de politiques peuvent créer des politiques partagées dans les ensembles de politiques qui sont accessibles aux utilisateurs et utilisatrices autorisés.
 1. Le ou la propriétaire du document applique la politique, puis enregistre et diffuse le document. Le document peut être distribué par e-mail, via un dossier réseau ou sur un site Web.
 1. Le destinataire ou la destinatrice ouvre le document dans l’application cliente appropriée. Il ou elle peut utiliser le document conformément à sa politique.
-1. Le ou la propriétaire du document, le coordinateur ou la coordinatrice de jeux de politiques ou l’administrateur ou l’administratrice peut suivre les documents et modifier l’accès à ces derniers à l’aide des pages Web.
+1. Le ou la propriétaire du document, le coordinateur ou la coordinatrice d’ensembles de politiques ou l’administrateur ou l’administratrice peut suivre les documents et modifier l’accès à ces derniers à l’aide des pages web.
 
 ## À propos des utilisateurs et utilisatrices de Document Security {#about-document-security-users}
 
@@ -65,9 +65,9 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
 * L’administrateur ou administratrice système ou un informaticien ou une informaticienne installe et configure Document Security. Cette personne peut également être chargée de la configuration des paramètres généraux du serveur, des pages Web, des politiques et des documents.
 
-  Ces options peuvent notamment inclure l’URL de base de Document Security, les notifications de contrôle et de confidentialité, les notifications d’enregistrement des utilisateurs et utilisatrices invités et les périodes d’ouverture hors connexion par défaut.
+  Ces options peuvent notamment inclure l’URL de base de Document Security, les notifications de contrôle et de confidentialité, les notifications d’enregistrement des personnes invitées et les périodes de bail hors ligne par défaut.
 
-* Les administrateurs et administratrices de Document Security créent des politiques et des jeux de politiques, et gèrent les documents protégés par une politique pour les utilisateurs et utilisatrices, selon les besoins. Ils et elles créent également des comptes d’utilisateur ou utilisatrice invité et contrôlent les événements concernant le système, les documents, les utilisateurs et utilisatrices, les politiques, les jeux de politiques, ainsi que les événements personnalisés. Ils et elles peuvent également être responsables de la configuration des paramètres généraux du serveur, des pages Web et des politiques, avec un administrateur ou une administratrice système.
+* Les administrateurs et administratrices de Document Security créent des politiques et des ensembles de politiques, et gèrent les documents protégés par une politique pour les utilisateurs et utilisatrices, selon les besoins. Ils et elles créent également des comptes d’utilisateur ou utilisatrice invité et contrôlent les événements concernant le système, les documents, les utilisateurs et utilisatrices, les politiques, les ensembles de politiques, ainsi que les événements personnalisés. Ils et elles peuvent également être responsables de la configuration des paramètres généraux du serveur, des pages Web et des politiques, avec un administrateur ou une administratrice système.
 
   Les administrateurs et administratrices peuvent affecter les rôles ci-après aux utilisateurs et utilisatrices dans la zone User Management de la console d’administration. Les utilisateurs et utilisatrices dotés de ces rôles exécutent leurs tâches dans la zone de l’interface utilisateur Document Security de la console d’administration.
 
@@ -77,7 +77,7 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
    * Gestion de la configuration
    * Gestion de la politique
-   * Gestion des jeux de politiques
+   * Gestion des ensembles de politiques
    * Gestion des documents
    * Gestion des éditeurs et éditrices
    * Gestion des utilisateurs et utilisatrices invités et locaux
@@ -93,12 +93,12 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
   >
   >Les utilisateurs et utilisatrices bénéficiant de ce rôle doivent également disposer du rôle Utilisateur de la console d’administration pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
 
-  **Administrateur ou administratrice de jeux de politiques Document Security**
+  **Administrateur ou administratrice d’ensembles de politiques Document Security**
 
-  Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent utiliser la section Document Security de la console d’administration pour modifier d’autres politiques d’utilisateurs et utilisatrices ainsi que pour créer, modifier et supprimer des jeux de politiques. Lorsqu’un administrateur ou une administratrice de jeux de politiques crée un jeu de politiques, il ou elle peut affecter un coordinateur ou une coordinatrice à ce jeu de politiques. Ces autorisations sont associées au rôle :
+  Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent utiliser la section Document Security de la console d’administration pour modifier d’autres politiques d’utilisateurs et utilisatrices ainsi que pour créer, modifier et supprimer des ensembles de politiques. Lorsqu’un administrateur ou une administratrice d’ensembles de politiques crée un ensemble de politiques, il ou elle peut affecter un coordinateur ou une coordinatrice à cet ensemble. Ces autorisations sont associées au rôle :
 
    * Gestion de la politique
-   * Gestion des jeux de politiques
+   * Gestion des ensembles de politiques
    * Gestion des documents
    * Gestion des éditeurs et éditrices
    * Affichage des événements
@@ -132,7 +132,7 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
   Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent accéder aux pages Web Document Security destinées aux utilisateurs et utilisatrices finaux. Ce rôle peut également être attribué aux administrateurs et administratrices pour leur permettre de créer des politiques à l’aide des pages destinées aux utilisateurs et utilisatrices finaux. Cette autorisation est associée au rôle avec le rôle Accès aux pages Web destinées aux utilisateurs et utilisatrices finaux.
 
 * Les utilisateurs et utilisatrices de l’entreprise qui possèdent des comptes Document Security valides créent leurs propres politiques et utilisent des politiques pour protéger des documents, contrôler et gérer leurs documents protégés par une politique et contrôler les événements concernant leurs documents.
-* Les coordinateurs et coordinatrices de jeux de politiques gèrent les documents, affichent les événements et gèrent d’autres coordinateurs et coordinatrices de jeux de politiques (selon leurs autorisations). Les administrateurs et administratrices désignent, parmi les utilisateurs et utilisatrices, des coordinateurs et coordinatrices pour certains jeux de politiques.
+* Les coordinateurs et coordinatrices d’ensembles de politiques gèrent les documents, affichent les événements et gèrent d’autres coordinateurs et coordinatrices d’ensembles de politiques (selon leurs autorisations). Les administrateurs et administratrices désignent, parmi les utilisateurs et utilisatrices, des coordinateurs et coordinatrices pour certains ensembles de politiques.
 * Les utilisateurs et utilisatrices externes à l’entreprise (partenaires commerciaux, par exemple) peuvent utiliser les documents protégés par une politique s’ils et elles figurent dans l’annuaire de Document Security, si l’administrateur ou l’administratrice leur crée un compte ou s’ils et elles s’enregistrent dans Document Security par l’intermédiaire d’un processus automatisé d’invitation par e-mail. Selon le mode choisi par l’administrateur ou l’administratrice pour activer les paramètres d’accès, les utilisateurs et utilisatrices invités peuvent également être autorisés à appliquer des politiques à des documents, à créer, modifier et supprimer leurs politiques, et à inviter d’autres utilisateurs et utilisatrices externes à utiliser leurs documents protégés par une politique.
 * Les développeurs utilisent le SDK d’AEM Forms pour intégrer des applications personnalisées à Document Security.
 
@@ -140,8 +140,8 @@ Les administrateurs et administratrices de Document Security peuvent créer des
 
 * Gestion de la configuration de Document Security
 * Gestion des utilisateurs et utilisatrices invités et locaux de Document Security
-* Gestion des jeux de politiques Document Security
-* Gestion des jeux de politiques Document Security
+* Gestion des ensembles de politiques Document Security
+* Gestion des ensembles de politiques Document Security
 * Affichage des événements du serveur Document Security
 * Modification du ou de la propriétaire d’une politique Document Security
 
@@ -174,7 +174,7 @@ Les étapes du diagramme sont les suivantes :
 
 1. Le ou la propriétaire du document sécurise le document à partir d’une application cliente prise en charge avec une politique qui autorise l’utilisation en ligne.
 1. Document Security crée une licence de document ainsi que des clés de document, et chiffre la politique. La licence de document, la politique chiffrée et la clé du document sont renvoyées à l’application cliente.
-1. Le document est chiffré avec la clé du document et cette dernière est abandonnée. Le document intègre alors la licence et la politique. Ces tâches sont effectuées dans l’application cliente prise en charge.
+1. Le document est chiffré avec la clé du document et cette dernière est abandonnée. Le document incorpore alors la licence et la politique. Ces tâches sont effectuées dans l’application cliente prise en charge.
 
 Lorsque vous appliquez une politique à un document, les informations contenues dans le document, dont les fichiers (texte, audio ou vidéo) enregistrés dans le document PDF, sont protégées par les paramètres de confidentialité spécifiés dans la politique. Document Security génère une licence et des informations de chiffrement qui sont ensuite intégrées dans le document. Lorsque vous distribuez le document, Document Security peut authentifier les destinataires et destinatrices qui tentent d’ouvrir le document et autoriser l’accès en fonction des privilèges spécifiés dans la politique.
 
@@ -199,41 +199,41 @@ Vous pouvez continuer à utiliser un document dans les conditions suivantes :
 * indéfiniment ou pendant la période de validité spécifiée dans la politique ;
 * jusqu’à ce que l’administrateur/administratrice ou la personne ayant appliqué la politique révoque l’accès au fichier ou modifie la politique.
 
-Vous pouvez également utiliser hors ligne (sans connexion Internet ou réseau) des documents protégés par une politique, dans la mesure où la politique autorise l’accès hors ligne. Connectez-vous d’abord à Document Security pour synchroniser le document. Vous pouvez ensuite utiliser le document pendant la période d’ouverture hors connexion spécifiée dans la politique.
+Vous pouvez également utiliser hors ligne (sans connexion Internet ou réseau) des documents protégés par une politique, dans la mesure où la politique autorise l’accès hors ligne. Connectez-vous d’abord à Document Security pour synchroniser le document. Vous pouvez ensuite utiliser le document pendant la période de bail hors ligne spécifiée dans la politique.
 
-Une fois la période d’ouverture hors connexion terminée, resynchronisez le document avec Document Security, soit en le mettant en ligne et en ouvrant un document protégé par une politique, soit en utilisant une commande dans l’application cliente. (Pour plus dʼinformations, consultez l’*Aide d’Acrobat* ou l’*Aide des extensions Acrobat Reader DC* appropriée).
+Une fois la période de bail hors ligne terminée, resynchronisez le document avec Document Security, soit en le mettant en ligne et en ouvrant un document protégé par une politique, soit en utilisant une commande dans l’application cliente. (Pour plus dʼinformations, consultez l’*Aide d’Acrobat* ou l’*Aide des extensions Acrobat Reader DC* appropriée).
 
 Si vous enregistrez une copie d’un document protégé par une politique à l’aide de la commande de menu Enregistrer ou Enregistrer sous, la politique est automatiquement appliquée au nouveau document. Les événements tels que les tentatives d’ouverture du nouveau fichier sont également contrôlés et enregistrés pour le document d’origine.
 
-## Jeux de politiques {#policy-sets}
+## Ensembles de politiques {#policy-sets}
 
-Les *jeux de politiques* regroupent plusieurs politiques ayant une finalité commune. Ces jeux de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et utilisatrices du système.
+Les *ensembles de politiques* regroupent plusieurs politiques ayant une finalité commune. Ces ensembles de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et utilisatrices du système.
 
-Chaque jeu de politiques peut être associé à un ou plusieurs coordinateurs et coordinatrices de jeux de politiques. Le coordinateur de jeux de politiques est un administrateur ou un utilisateur possédant des autorisations supplémentaires. Au sein de l’organisation, *le coordinateur/la coordinatrice de jeux de politiques* est généralement la personne la plus à même de créer des politiques dans un jeu donné.
+Chaque ensemble de politiques peut être associé à un ou plusieurs coordinateurs et coordinatrices d’ensembles de politiques. Le coordinateur ou la coordinatrice d’ensembles de politiques est un administrateur ou une administratrice, ou une personne possédant des autorisations supplémentaires. Au sein de l’organisation, *le coordinateur ou la coordinatrice d’ensembles de politiques* est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
 
-Les coordinateurs et coordinatrices de jeux de politiques peuvent effectuer les tâches suivantes :
+Les coordinateurs et coordinatrices d’ensembles de politiques peuvent effectuer les tâches suivantes :
 
 * Créer des politiques
-* Modifier et supprimer une politique dans le jeu de politiques
+* Modifier et supprimer une politique dans l’ensemble de politiques
 * Modifier des paramètres de jeux de politiques
-* Ajouter et supprimer des coordinateurs de jeux de politiques
-* Afficher des événements de politique et de document pour n’importe quel document ou politique du jeu de politiques
+* Ajouter et supprimer des coordinateurs ou coordinatrices d’ensembles de politiques
+* Afficher des événements de politique et de document pour n’importe quel document ou politique de l’ensemble de politiques
 * Révoquer l’accès aux documents
 * Changer de politiques pour le document
 
 >[!NOTE]
 >
->Vous pouvez récupérer un maximum de 1 000 noms de jeux de politiques dans la base de données à l’aide d’API `getAllPolicysetnames()`.
+>Vous pouvez récupérer un maximum de 1 000 noms d’ensembles de politiques dans la base de données à l’aide d’API `getAllPolicysetnames()`.
 
-Les jeux de politiques sont créés et supprimés dans les pages web d’administration de Document Security par les administrateurs et administratrices et les coordinateurs et coordinatrices de jeux de politiques bénéficiant des autorisations requises.
+Les ensembles de politiques sont créés et supprimés dans les pages web d’administration de Document Security par les administrateurs et administratrices et les coordinateurs et coordinatrices d’ensembles de politiques bénéficiant des autorisations requises.
 
-Les jeux de politiques sont généralement rendus accessibles à un nombre limité d’utilisateurs et d’utilisatrices, en spécifiant quels utilisateurs et utilisatrices et groupes d’un domaine sont autorisés à se servir des politiques du jeu de politiques défini pour protéger des documents.
+Les ensembles de politiques sont généralement rendus accessibles à un nombre limité d’utilisateurs et d’utilisatrices, en spécifiant quels utilisateurs et utilisatrices et groupes d’un domaine sont autorisés à se servir des politiques de l’ensemble de politiques défini pour protéger des documents.
 
-L’installation de Document Security crée un jeu de politiques par défaut appelé *Jeu de politiques global*. L’administrateur ou l’administratrice qui a installé le logiciel gère ce jeu de politiques.
+L’installation de Document Security crée un ensemble de politiques par défaut appelé *Ensemble de politiques global*. L’administrateur ou l’administratrice qui a installé le logiciel gère cet ensemble de politiques.
 
 ## Bonnes pratiques {#best-practices}
 
-Les politiques sont des jeux réutilisables d’autorisations et de groupes d’utilisateurs qui peuvent être appliqués à divers documents. Pour les documents protégés. Ces politiques garantissent que seuls les utilisateurs autorisés peuvent utiliser les fonctionnalités spécifiées. En règle générale, le nombre de politiques sʼaccroît et reflète lʼaugmentation des différents rôles dʼutilisateurs et des documents au sein d’un même service. Pour créer et gérer des politiques, voici quelques considérations et bonnes pratiques :
+Les politiques sont des jeux réutilisables d’autorisations et de groupes d’utilisateurs qui peuvent être appliqués à divers documents. Pour les documents protégés. Ces politiques garantissent que seuls les utilisateurs autorisés peuvent utiliser les fonctionnalités spécifiées. En règle générale, le nombre de politiques et d’ensembles de politiques sʼaccroît, et reflète lʼaugmentation des différents rôles dʼutilisation et documents au sein d’un même service. Pour créer et gérer des politiques, voici quelques considérations et bonnes pratiques :
 
 * **Créer des politiques réutilisables :** Adobe recommande de réutiliser les politiques dans plusieurs documents. Cela permet de réduire au maximum le nombre de politiques, d’offrir des performances optimales et de faciliter la gestion des politiques. Pour créer une politique réutilisable, procédez comme suit :
 
@@ -241,15 +241,15 @@ Les politiques sont des jeux réutilisables d’autorisations et de groupes d’
 
 1. Créez des groupes d’utilisateurs et ajoutez des utilisateurs à ces groupes.
 
-1. Création d’un jeu de politiques.
+1. Créez un ensemble de politiques.
 
-1. Ouvrez le jeu de politiques et créez une politique. Ajoutez des groupes d’utilisateurs et définissez les paramètres de confidentialité (contrôle d’accès) pour la politique.
+1. Ouvrez l’ensemble de politiques et créez une politique. Ajoutez des groupes d’utilisateurs et définissez les paramètres de confidentialité (contrôle d’accès) pour la politique.
 
 Ajoutez des groupes dʼutilisateurs aux politiques au lieu dʼutilisateurs individuels. Cela facilite la gestion et l’application des politiques à de nombreux utilisateurs et utilisatrices.
 
-* **Créer des jeux de politiques personnalisés :** un jeu de politiques combine plusieurs politiques en une entité gérable. Créez des jeux de politiques personnalisés pour votre organisation ou votre service, utilisez-les pour regrouper les politiques connexes et mettez-les à la disposition dʼun sous-ensemble d’utilisateurs du système.
+* **Créer des ensembles de politiques personnalisés :** un ensemble de politiques combine plusieurs politiques en une entité gérable. Créez des ensembles de politiques personnalisés pour votre organisation ou votre service, utilisez-les pour regrouper les politiques connexes et mettez-les à la disposition dʼun sous-ensemble d’utilisateurs et utilisatrices du système.
 
-  Grâce aux jeux de politiques, l’affectation et la gestion de politiques connexes à des utilisateurs spécifiques d’une organisation ou d’un service est plus facile. Par exemple, des jeux de politiques distincts pour le service des finances et celui des ressources humaines peuvent faciliter la gestion et l’application de politiques connexes aux documents destinés aux services correspondants.
+  L’utilisation d’ensembles de politiques facilite la gestion de politiques connexes, ainsi que leur affectation à des utilisateurs et utilisatrices spécifiques d’une organisation ou d’un service. Par exemple, des ensembles de politiques distincts pour le service des finances et celui des ressources humaines peuvent faciliter la gestion et l’application de politiques connexes aux documents destinés aux services correspondants.
 
 * **Utiliser un agent d’autorisation externe pour appliquer les autorisations de manière dynamique :** vous pouvez utiliser un [agent d’autorisation externe](https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) pour évaluer et appliquer dynamiquement les autorisations en fonction de conditions externes. Lorsque les autorisations sont évaluées de manière dynamique, en fonction de conditions externes, les actions suivantes sont disponibles :
 
@@ -261,18 +261,18 @@ Ajoutez des groupes dʼutilisateurs aux politiques au lieu dʼutilisateurs indiv
 
   Bien qu’il soit possible de remplacer complètement le processus d’évaluation des politiques de Document Security par un gestionnaire d’autorisation externe, il est recommandé d’utiliser le processus d’évaluation des politiques en plus dʼun gestionnaire d’autorisation externe. De cette façon, l’accès aux documents peut être contrôlé par le même mécanisme de contrôle que celui utilisé par votre système de gestion de contenu. Par exemple, lorsque le service Document Security détermine si un utilisateur ou une utilisatrice peut imprimer un document protégé par une politique, il utilise le processus d’évaluation de politique standard. Il utilise également le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu. Pour plus d’informations, consultez la section [Créer des gestionnaires d’autorisation externes](https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
-* **Réduire les jeux de politiques à un nombre limité :** lʼaugmentation constante des politiques et des jeux de politiques est imputable à de nombreux facteurs. Les plus courants sont les suivants :
+* **Réduire les ensembles de politiques à un nombre limité :** lʼaugmentation constante des politiques et des ensembles de politiques est imputable à de nombreux facteurs. Les plus courants sont les suivants :
 
    * Augmentation des rôles utilisateur, des services et des documents au sein d’une organisation sur une période donnée.
    * Les services dʼune organisation travaillent de manière autonome et exercent un contrôle strict sur les politiques qui leur sont propres. Cela conduit à des politiques identiques au sein d’une organisation.
 
-  Adobe recommande de limiter au maximum le nombre de politiques et de jeux de politiques. Cela permet de gérer plus facilement les politiques et les jeux de politiques et d’offrir de meilleures performances. Pour réduire au maximum le nombre de stratégies, procédez comme suit :
+  Adobe recommande de limiter au maximum le nombre de politiques et d’ensembles de politiques. Cela permet de gérer plus facilement les politiques et les ensembles de politiques et d’offrir de meilleures performances. Pour réduire au maximum le nombre de stratégies, procédez comme suit :
 
    * Créez des politiques réutilisables. Elles peuvent être partagées dans plusieurs services.
-   * Pensez à créer des jeux de politiques à l’échelle de l’organisation. Au lieu de créer un jeu de politiques individuel pour chaque service, créez des politiques qui s’appliquent à plusieurs services.
-   * Regroupez les politiques liées dans un jeu de politiques. Ne créez pas de jeu de politiques distinct pour chaque politique.
+   * Pensez à créer des ensembles de politiques à l’échelle de l’organisation. Au lieu de créer un ensemble de politiques pour chaque service, créez des politiques qui s’appliquent à plusieurs services.
+   * Regroupez les politiques liées dans un ensemble de politiques. Ne créez pas d’ensemble de politiques distinct pour chaque politique.
    * Utilisez un agent d’autorisation externe pour contrôler de manière dynamique les autorisations utilisateur.
 
   >[!NOTE]
   >
-  >Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms de jeux de politiques. En interne, l’API récupère un maximum de 1 000 politiques pour lesquelles le demandeur de l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms de jeux de politiques uniques associés aux politiques récupérées. Par exemple, lorsque l’API récupère 1 000 politiques et que les politiques récupérées sont associées à 200 jeux de politiques au total, l’API renvoie uniquement 200 noms de jeux de politiques.
+  >Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms d’ensembles de politiques. En interne, l’API récupère un maximum de 1 000 politiques pour lesquelles l’entité qui appelle l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms d’ensembles de politiques uniques associés aux politiques récupérées. Par exemple, lorsque l’API récupère 1 000 politiques et que les politiques récupérées sont associées à 200 ensembles de politiques au total, l’API renvoie uniquement 200 noms d’ensembles de politiques.

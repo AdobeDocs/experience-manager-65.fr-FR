@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1882'
+workflow-type: tm+mt
+source-wordcount: '1904'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Lorsque l’administrateur ou l’administratrice du serveur d’applications d�
    * Augmentation de capacité
    * Taille du cache d’instruction
 
-1. Cliquez sur Enregistrer, puis sur Activer les modifications.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configurer les paramètres du pool de connexions pour WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
@@ -58,7 +58,7 @@ Lorsque l’administrateur ou l’administratrice du serveur d’applications d�
    * Augmentation de capacité
    * Taille du cache d’instruction
 
-1. Cliquez sur Enregistrer, puis sur Activer les modifications.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configurer les paramètres du pool de connexions pour WebSphere pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
