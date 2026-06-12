@@ -285,7 +285,7 @@ La propriété `title` d’une balise peut être traduite en plusieurs langues. 
 
 La procédure ci-dessous explique comment traduire le `title` de la balise **Animals** de l’anglais vers l’allemand et le français.
 
-Sélectionnez d’abord la balise sous l’espace de noms **Images de photothèque** puis sélectionnez l’icône **`Edit`** (voir la section [ Modification de balises](#editing-tags) ).
+Sélectionnez d’abord la balise sous l’espace de noms **Images de photothèque** puis sélectionnez l’icône **`Edit`** (voir la section [&#x200B; Modification de balises](#editing-tags) ).
 
 Le panneau Modifier la balise permet de choisir les langues dans lesquelles le titre de la balise doit être localisé.
 
