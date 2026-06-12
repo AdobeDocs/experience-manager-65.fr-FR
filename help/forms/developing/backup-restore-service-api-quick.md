@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 92%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 Le démarrage rapide de l’API Java™ (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
 
-[Démarrage rapide : activer le mode de sauvegarde à l’aide de Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Démarrage rapide : passer en mode de sauvegarde à l’aide de l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Démarrage rapide : quitter le mode de sauvegarde à l’aide de Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Démarrage rapide : quitter le mode de sauvegarde à l’aide de l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 

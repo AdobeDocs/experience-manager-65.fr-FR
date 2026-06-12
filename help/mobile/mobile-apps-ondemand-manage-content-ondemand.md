@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 ## Présentation du contenu {#content-overview}
 
-Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et les couvertures. AEM permet de créer trois types principaux de contenu Mobile On-Demand :
+Si vous pensez à un magazine en ligne, le contenu principal comprend des articles, des publicités et les couvertures. Dans AEM, trois principaux types de contenu Mobile On-Demand peuvent être créés :
 
 * **Articles** : texte et art pour véhiculer l&#39;information
 * **Bannières :** liens promotionnels généralement graphiques
@@ -34,7 +34,7 @@ Si vous pensez à un magazine en ligne, le contenu principal comprend des articl
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, consultez [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 ## Création et gestion de contenu {#creating-and-managing-content}
 
@@ -44,7 +44,7 @@ Les rubriques suivantes décrivent la création et la gestion de contenu, à sav
 * [Gestion des bannières](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gestion des collections](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Chargement des ressources partagées](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Dépublication de contenu par Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publier/Dépublier le contenu](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >

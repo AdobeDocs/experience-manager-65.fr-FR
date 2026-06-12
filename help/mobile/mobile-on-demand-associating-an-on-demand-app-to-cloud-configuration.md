@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '406'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-L’association d’une application à la demande à une configuration cloud permet à Adobe Experience Manager (AEM) de communiquer directement avec un projet hébergé sur Mobile On-Demand en établissant une liaison bidirectionnelle. En liant votre application à un projet Mobile On-Demand, vous pouvez créer du contenu, tel que des articles, des bannières et des collections au sein d’AEM, mais également diffuser ce contenu sur Mobile On-Demand.
+L’association d’une application à la demande à une configuration cloud permet à Adobe Experience Manager (AEM) de communiquer directement avec un projet hébergé sur Mobile On-Demand en établissant une liaison bidirectionnelle. En liant votre application à un projet Mobile On-Demand, vous pouvez créer du contenu, tel que des articles, des bannières et des collections dans AEM, mais également diffuser ce contenu sur Mobile On-Demand.
 
 De là, la publication, la prévisualisation et la gestion du contenu deviennent possibles. Vous pouvez également importer du contenu Mobile On-Demand existant dans AEM et effectuer des modifications de contenu.
 
@@ -32,9 +32,9 @@ De là, la publication, la prévisualisation et la gestion du contenu deviennent
 >
 >Pour plus d’informations, consultez la section [Configuration d’AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) dans la section Administration .
 
-Pour configurer les Cloud Service On-Demand mobiles, cliquez sur l’engrenage supérieur dans le coin supérieur droit de la mosaïque **Gérer la connexion** depuis le tableau de bord de l’application.
+Pour configurer Mobile On-Demand Cloud Services, cliquez sur l’engrenage supérieur dans le coin supérieur droit de la mosaïque **Gérer la connexion** du tableau de bord de l’application.
 
-Vous devriez vous familiariser avec le tableau de bord de l’application et les vignettes disponibles. Voir [Tableau de bord de l’application AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
+Vous devriez vous familiariser avec le tableau de bord de l’application et les vignettes disponibles. Voir [Tableau de bord de l’application &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md) pour plus d’informations.
 
 ### Configuration d’un lien vers une configuration cloud {#setting-up-link-to-cloud-configuration}
 

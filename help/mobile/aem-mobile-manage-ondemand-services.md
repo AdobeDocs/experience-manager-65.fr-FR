@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Avec l’application de contrôle en amont On-Demand Mobile, vous pouvez affiche
 ## Aperçu avec contrôle en amont {#previewing-with-preflight-1}
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Cliquez sur les points de suspension (...) de la mosaïque **Gérer les articles** (ou Bannières/Collections).
+1. Cliquez sur les points de suspension (...) à partir de la mosaïque **Gérer les articles** (ou Bannières/Collections).
 1. Sélectionnez **Contrôle en amont** dans la barre d’actions.
 1. Cliquez sur **Activer le contrôle en amont** dans la boîte de dialogue.
 1. Votre application est maintenant prête pour l’aperçu sur l’application de contrôle en amont On-Demand mobile.
@@ -42,7 +42,7 @@ Avec l’application de contrôle en amont On-Demand Mobile, vous pouvez affiche
 
 >[!NOTE]
 >
->L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur l’application de contrôle en amont, cliquez [ici](https://helpx.adobe.com/fr/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>L’application AEM Preflight est utilisée pour prévisualiser le contenu et parcourir les pages. Pour en savoir plus sur l’application de contrôle en amont, cliquez [ici](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Progresser {#getting-ahead}
