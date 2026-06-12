@@ -205,7 +205,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
 **Voir également**
 
 [Assembler plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[ Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[&#x200B; Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

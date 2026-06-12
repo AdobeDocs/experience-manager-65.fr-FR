@@ -68,7 +68,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | MISE À JOUR | Le sujet ou la réponse du forum du membre est modifié |
 | SUPPRIMER | Le sujet du forum du membre ou la réponse est supprimée |
 
-Composant [ Journal](blog-developer-basics.md)
+Composant [&#x200B; Journal](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |

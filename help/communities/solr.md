@@ -68,7 +68,7 @@ Lors de l’exécution en mode SolrCloud, avant l’installation de MLS, il est 
 #### &#x200B;1. Charger une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Référence :
-[](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#128279;](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation :
 sh ./scripts/cloud-scripts/zkcli.sh \
@@ -81,7 +81,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 #### &#x200B;2. Création d’une collection {#create-a-collection}
 
 Référence :
-[](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
+[&#128279;](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Utilisation :
 ./bin/solr créer \
@@ -97,7 +97,7 @@ Utilisation :
 Associez une collection à une configuration déjà téléchargée sur ZooKeeper.
 
 Référence :
-[](https://solr.apache.org/guide/6_6/command-line-utilities.html)
+[&#128279;](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation :
 sh ./scripts/cloud-scripts/zkcli.sh \
@@ -218,7 +218,7 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 
 Pour que la collecte SRP (MSRP ou DSRP) prenne en charge le MLS avancé, de nouveaux plug-ins Solr sont requis en plus d’un schéma personnalisé et d’une configuration Solr. Tous les éléments requis sont regroupés dans un fichier zip téléchargeable. En outre, un script d’installation est inclus pour une utilisation lorsque Solr est déployé en mode autonome.
 
-Pour obtenir le package MLS avancé, consultez [MLS avancé ](deploy-communities.md#aem-advanced-mls) dans la section de déploiement de la documentation.
+Pour obtenir le package MLS avancé, consultez [MLS avancé &#x200B;](deploy-communities.md#aem-advanced-mls) dans la section de déploiement de la documentation.
 
 Pour commencer l’installation de en mode SolrCloud ou autonome :
 

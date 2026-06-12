@@ -134,7 +134,7 @@ Pour plus d’informations sur la configuration, voir [Configuration de Solr pou
 
 Si vous effectuez une mise à niveau à partir d’une version antérieure configurée avec MSRP, il sera nécessaire de :
 
-1. Effectuez la [ mise à niveau vers AEM Communities ](upgrade.md)
+1. Effectuez la [&#x200B; mise à niveau vers AEM Communities &#x200B;](upgrade.md)
 1. Installation de nouveaux fichiers de configuration Solr
    * Pour [MLS standard](solr.md#installing-standard-mls)
    * Pour [MLS avancé](solr.md#installing-advanced-mls)
@@ -214,7 +214,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ## Comment effectuer une démonstration de MSRP {#how-to-demo-msrp}
 
-Pour configurer MSRP pour un environnement de démonstration ou de développement, voir [Comment configurer MongoDB pour la démonstration ](demo-mongo.md).
+Pour configurer MSRP pour un environnement de démonstration ou de développement, voir [Comment configurer MongoDB pour la démonstration &#x200B;](demo-mongo.md).
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -224,7 +224,7 @@ Assurez-vous que MSRP a été configuré pour être le fournisseur par défaut e
 
 Sur toutes les instances d’AEM de création et de publication, revenez sur la [console de configuration de stockage](srp-config.md) ou vérifiez le référentiel AEM :
 
-* Dans JCR, si [/etc/socialconfig ](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
+* Dans JCR, si [/etc/socialconfig &#x200B;](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
    * Ne contient pas de nœud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), ce qui signifie que le fournisseur de stockage est JSRP.
    * Si le nœud srpc existe et contient le nœud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
@@ -262,7 +262,7 @@ Pour résoudre l’erreur, lorsque vous suivez les instructions de la section [I
 
 Si une tentative de connexion sécurisée au serveur MongoDB échoue en raison d’une définition de classe manquante, il est nécessaire de mettre à jour le lot de pilotes MongoDB, `mongo-java-driver`, disponible à partir du référentiel Maven public.
 
-1. Téléchargez le pilote à partir de [](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (version 2.13.2 ou ultérieure).
+1. Téléchargez le pilote à partir de [&#128279;](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (version 2.13.2 ou ultérieure).
 1. Copiez le lot dans le dossier « crx-quickstart/install » pour une instance AEM.
 1. Redémarrez l’instance AEM.
 

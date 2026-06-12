@@ -36,7 +36,7 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 ### Installation de MongoDB {#install-mongodb}
 
-* Téléchargez MongoDB depuis [](https://www.mongodb.com/)
+* Téléchargez MongoDB depuis [&#128279;](https://www.mongodb.com/)
 
    * Choix du système d’exploitation :
 
