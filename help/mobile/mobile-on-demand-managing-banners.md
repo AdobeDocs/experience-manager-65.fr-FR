@@ -78,7 +78,7 @@ Utilisez l’éditeur de glisser-déposer intégré d’AEM pour ajouter ou modi
 Workflow de modification d’un article :
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez une bannière source AEM dans la mosaïque ** Gérer les bannières **.
+1. Sélectionnez une bannière source AEM dans la mosaïque **&#x200B; Gérer les bannières &#x200B;**.
 1. Cliquez sur la bannière en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de la bannière (manuscrits, images, texte, etc.).
 
