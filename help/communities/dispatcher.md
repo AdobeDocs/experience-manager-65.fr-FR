@@ -24,7 +24,7 @@ Pour AEM Communities, il est nécessaire de configurer Dispatcher pour assurer l
 
 Pour savoir ce qui est nécessaire pour votre déploiement et votre conception de site spécifiques
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support)
 
 Consultez également la documentation principale de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
