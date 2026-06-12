@@ -44,7 +44,7 @@ Avant de créer un site communautaire, il est *obligatoire* de :
 Pour vous assurer que le site est prêt à prendre en charge de nombreuses fonctionnalités, il est recommandé de suivre les étapes suivantes :
 
 * Installez le [dernier pack de fonctionnalités](/help/communities/deploy-communities.md#latestfeaturepack).
-* Activez [](/help/communities/analytics.md) pour AEM Communities.
+* Activez [&#128279;](/help/communities/analytics.md) pour AEM Communities.
 * Configurer [e-mail](/help/communities/email.md)
 * Identifiez [les administrateurs de la communauté](/help/communities/users.md#creating-community-members).
 * [Activez le gestionnaire OAuth](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler) pour la connexion au réseau social.
@@ -515,7 +515,7 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes d’ut
 
 ## Erreur de configuration d’pour l’authentification {#configure-for-authentication-error}
 
-Par défaut, un site communautaire redirige vers un exemple de page de connexion lorsque l’utilisateur saisit des informations d’identification incorrectes et ne parvient pas à se connecter. Cet exemple de connexion n’est pas présent sur un [ serveur de production ](/help/sites-administering/production-ready.md).
+Par défaut, un site communautaire redirige vers un exemple de page de connexion lorsque l’utilisateur saisit des informations d’identification incorrectes et ne parvient pas à se connecter. Cet exemple de connexion n’est pas présent sur un [&#x200B; serveur de production &#x200B;](/help/sites-administering/production-ready.md).
 
 Pour rediriger correctement, une fois qu’un site a été configuré et envoyé pour publication, procédez comme suit pour obtenir un échec d’authentification pour rediriger vers le site de la communauté :
 

@@ -148,7 +148,7 @@ Consultez [Installer le Pack de fonctionnalités 18912 pour la migration de res
    * **[!UICONTROL Mode de synchronisation Dynamic Media]**
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Désactivé par défaut]** - La configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
-Pour marquer un dossier sélectionné afin de le synchroniser avec Dynamic Media, sélectionnez un dossier de ressources, puis, sur la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**[!UICONTROL Synchroniser tout le contenu]**plus tôt.* Voir aussi [Travailler avec une publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/selective-publishing.md).
+Pour marquer un dossier sélectionné afin de le synchroniser avec Dynamic Media, sélectionnez un dossier de ressources, puis, sur la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**. Sous l’onglet **[!UICONTROL Détails]**, dans la liste déroulante **[!UICONTROL Mode de synchronisation Dynamic Media]**, choisissez l’une des trois options suivantes. Lorsque vous avez terminé, sélectionnez **[!UICONTROL Enregistrer]**. *À retenir : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**[!UICONTROL Synchroniser tout le contenu]**&#x200B;plus tôt.* Voir aussi [Travailler avec une publication sélective au niveau des dossiers dans Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier. Au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
          * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
          * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
@@ -271,7 +271,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 **Pour configurer Dynamic Media en mode Scene7 pour le chargement de ressources de plus de 2 Go :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
 
 1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
 
@@ -381,7 +381,7 @@ Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-ass
 
 **Pour modifier des types MIME pour les formats pris en charge :**
 
-1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**[!UICONTROL  > ]**Général**[!UICONTROL  > ]**CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**Général**&#x200B;[!UICONTROL &#x200B; > &#x200B;]&#x200B;**CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -512,7 +512,7 @@ Vous pouvez utiliser la méthode de champ de formulaire pour définir un paramè
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
@@ -568,7 +568,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
-1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**[!UICONTROL  > ]**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
+1. Dans la barre de navigation située en haut de la page, accédez à **[!UICONTROL Configuration**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Configuration de l’application]** > **[!UICONTROL Paramètres prédéfinis d’ensemble par lot]** > **[!UICONTROL Paramètre prédéfini d’ensemble par lot]**.
 
    L’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 

@@ -127,7 +127,7 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcul des données de formulaire à l’aide de l’API de service web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-Démarrages rapides de l’API du service Forms [](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+Démarrages rapides de l’API du service Forms [&#128279;](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendu de PDF forms interactive](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Création d’applications web qui effectuent le rendu de Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 

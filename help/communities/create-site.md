@@ -38,7 +38,7 @@ Pour commencer à créer un site communautaire :
 
 ![modèle de création de site](assets/create-site.png)
 
-À l’étape [ Modèle de site ](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description et le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
+À l’étape [&#x200B; Modèle de site &#x200B;](/help/communities/sites-console.md#step2013asitetemplate), saisissez un titre, une description et le nom de l’URL, puis sélectionnez un modèle de site de communauté, par exemple :
 
 * **Titre du site communautaire** : `Getting Started Tutorial`
 * **Description du site de la communauté** : `A site for engaging with the community.`
@@ -97,14 +97,14 @@ Cochez toutes les cases de [Gestion des utilisateurs](/help/communities/sites-co
 
 #### BALISAGE {#tagging}
 
-Les balises appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de noms AEM précédemment définis via la [console de balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, l’espace de noms [ Tutoriel](/help/communities/setup.md#create-tutorial-tags)).
+Les balises appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de noms AEM précédemment définis via la [console de balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, l’espace de noms [&#x200B; Tutoriel](/help/communities/setup.md#create-tutorial-tags)).
 
 La recherche d’espaces de noms est facile à l’aide de la recherche avec saisie semi-automatique. Par exemple :
 
 * Type `tut`
 * Sélectionnez `Tutorial`.
 
-![balisage ](assets/tagging.png)
+![balisage &#x200B;](assets/tagging.png)
 
 #### ROLE {#roles}
 
@@ -127,7 +127,7 @@ Par exemple :
 
 Acceptez les paramètres globaux par défaut pour [modération](/help/communities/sites-console.md#moderation) du contenu créé par l’utilisateur).
 
-![modération ](assets/moderation1.png)
+![modération &#x200B;](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
@@ -139,7 +139,7 @@ Voir [Configuration d’Analytics pour les fonctionnalités de Communities](/hel
 
 #### TRADUCTION {#translation}
 
-Les [ Paramètres de traduction ](/help/communities/sites-console.md#translation) spécifient la langue de base du site, indiquent si le contenu créé par l’utilisateur peut être traduit et dans quelle langue, le cas échéant.
+Les [&#x200B; Paramètres de traduction &#x200B;](/help/communities/sites-console.md#translation) spécifient la langue de base du site, indiquent si le contenu créé par l’utilisateur peut être traduit et dans quelle langue, le cas échéant.
 
 * Cochez **Autoriser la traduction automatique**
 * Laissez les langues par défaut sélectionnées pour la traduction par le service de traduction automatique par défaut

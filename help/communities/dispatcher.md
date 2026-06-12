@@ -26,7 +26,7 @@ Pour savoir ce qui est nécessaire pour votre déploiement et votre conception d
 
 * Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
 
-Consultez également la documentation principale de [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+Consultez également la documentation principale de [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 ## Mise en cache du Dispatcher {#dispatcher-caching}
 
@@ -84,7 +84,7 @@ Voir également :
 >[!NOTE]
 >
 >**Exemples de noms de propriété**
->Tous les noms de propriété affichés, tels que ****/0050 et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration `dispatcher.any` existant.
+>Tous les noms de propriété affichés, tels que **&#x200B;**/0050 et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration `dispatcher.any` existant.
 >
 
 >[!CAUTION]

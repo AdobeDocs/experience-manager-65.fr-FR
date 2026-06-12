@@ -225,7 +225,7 @@ Vérifiez ensuite l’inclusion des bibliothèques clientes sur la page.
 
 1. Sélectionnez le menu **Informations sur la page**, puis cliquez sur **Afficher comme publié(e)** :
 
-   ![Afficher comme publié(e) ](../assets/style-cif-component/view-as-published.png)
+   ![Afficher comme publié(e) &#x200B;](../assets/style-cif-component/view-as-published.png)
 
    La page s’ouvre sans aucun code JavaScript pour l’environnement de création AEM chargé, lequel apparaîtrait sur le site publié. Notez que le paramètre de requête `?wcmmode=disabled` est annexé à l’URL. Lors du développement du code CSS et JavaScript, il est recommandé d’utiliser ce paramètre pour simplifier la page sans intervention sur l’environnement de création AEM.
 

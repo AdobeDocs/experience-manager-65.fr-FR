@@ -130,7 +130,7 @@ Vous pouvez avoir des blocs de citation imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non triée, utilisez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non triée, utilisez le symbole &ast; avant les éléments de la liste. Par exemple :
 
     `* item in list`
 

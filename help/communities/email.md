@@ -184,7 +184,7 @@ Pour que l’e-mail soit importé dans le référentiel, il est nécessaire de c
 
   *(Obligatoire)* Serveur de courrier sortant. Par exemple, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importer dans le chemin d’accès]**&amp;ast;
+* **[!UICONTROL Importer dans le chemin d’accès]**&ast;
 
   *(Obligatoire)* Définir sur `/content/usergenerated/mailFolder/postEmails`
 en accédant au dossier `postEmails` et en sélectionnant **OK**.
@@ -207,7 +207,7 @@ en accédant au dossier `postEmails` et en sélectionnant **OK**.
 
 Une fois la nouvelle configuration d’interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l’importateur d’e-mails d’abonnement pour remplacer le protocole `POP3` par `emailreply`.
 
-Utilisation de [](../../help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation de [&#128279;](../../help/sites-developing/developing-with-crxde-lite.md) :
 
 * Connectez-vous à l’éditeur principal avec le privilège administrateur et accédez à [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/attributes/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Sélectionnez la configuration que vous venez de créer et modifiez les propriétés suivantes :

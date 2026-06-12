@@ -58,7 +58,7 @@ La console Communautés [Badges](/help/communities/badges.md) permet d’ajouter
 
 Les badges basés sur les rôles sont attribués par un administrateur aux membres de la communauté en fonction de leur rôle dans la communauté.
 
-Les badges attribués sont stockés dans le [SRP](/help/communities/srp.md) sélectionné et ne sont pas directement accessibles. Jusqu’à ce qu’une interface utilisateur graphique soit disponible, le seul moyen d’attribuer des badges basés sur les rôles est de le faire avec du code ou cURL. Pour obtenir des instructions sur cURL, consultez la section intitulée [ Attribuer et révoquer des badges ](#assign-and-revoke-badges).
+Les badges attribués sont stockés dans le [SRP](/help/communities/srp.md) sélectionné et ne sont pas directement accessibles. Jusqu’à ce qu’une interface utilisateur graphique soit disponible, le seul moyen d’attribuer des badges basés sur les rôles est de le faire avec du code ou cURL. Pour obtenir des instructions sur cURL, consultez la section intitulée [&#x200B; Attribuer et révoquer des badges &#x200B;](#assign-and-revoke-badges).
 
 Cette version comprend trois badges basés sur les rôles :
 
@@ -136,7 +136,7 @@ Si le nœud est de type `cq:Page` (recommandé), ajoutez les propriétés à son
 
 >[!NOTE]
 >
->Si une règle de notation semble n’avoir aucun effet sur l’attribution de badges, assurez-vous que la règle de notation n’a pas été bloquée par la propriété scoringRules de la règle de notation. Reportez-vous à la section intitulée [ Règles de badge ](#badging-rules).
+>Si une règle de notation semble n’avoir aucun effet sur l’attribution de badges, assurez-vous que la règle de notation n’a pas été bloquée par la propriété scoringRules de la règle de notation. Reportez-vous à la section intitulée [&#x200B; Règles de badge &#x200B;](#badging-rules).
 
 ### Activer les badges pour le composant {#enable-badges-for-component}
 
@@ -413,7 +413,7 @@ par exemple, https://&lt;server>:&lt;port>/home/users/community/riley/profile.so
 >Le *member-profile-url* :
 >
 >* Peut faire référence à une instance de création si le [service de tunnel](/help/communities/users.md#tunnel-service) est activé.
->* Peut être un nom obscur et aléatoire (voir [ Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
+>* Peut être un nom obscur et aléatoire (voir [&#x200B; Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) concernant l’ID autorisable.
 
 ### Exemples : {#examples}
 

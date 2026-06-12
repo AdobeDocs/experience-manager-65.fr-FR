@@ -110,7 +110,7 @@ Les valeurs par défaut de la configuration concernent une seule instance de pub
 
 **Comment le contenu est-il synchronisé ?**
 
-L’instance d’auteur envoie un ping au point d’entrée de l’exportateur des éditeurs. Chaque fois qu’un utilisateur est créé ou mis à jour sur des éditeurs spécifiques (n), l’auteur récupère le contenu à partir des points d’entrée de l’exportateur et [ transmet le contenu](/help/communities/sync.md#main-pars-image-1413756164) à d’autres éditeurs (n-1, distinct des éditeurs à partir desquels le contenu est récupéré).
+L’instance d’auteur envoie un ping au point d’entrée de l’exportateur des éditeurs. Chaque fois qu’un utilisateur est créé ou mis à jour sur des éditeurs spécifiques (n), l’auteur récupère le contenu à partir des points d’entrée de l’exportateur et [&#x200B; transmet le contenu](/help/communities/sync.md#main-pars-image-1413756164) à d’autres éditeurs (n-1, distinct des éditeurs à partir desquels le contenu est récupéré).
 
 Pour configurer les agents de synchronisation Apache Sling, procédez comme suit :
 
@@ -134,7 +134,7 @@ Pour configurer les agents de synchronisation Apache Sling, procédez comme suit
 
 Il permet à l’auteur d’identifier l’utilisateur autorisé comme étant autorisé à synchroniser les données utilisateur de l’auteur à la publication.
 
-L’[ utilisateur autorisé créé](/help/sites-administering/sync.md#createauthuser) sur toutes les instances de publication aide les éditeurs à se connecter à l’auteur et à configurer la distribution Sling sur l’auteur. Cet utilisateur autorisé dispose de toutes les [listes de contrôle d’accès](/help/sites-administering/sync.md#howtoaddacl) requises.
+L’[&#x200B; utilisateur autorisé créé](/help/sites-administering/sync.md#createauthuser) sur toutes les instances de publication aide les éditeurs à se connecter à l’auteur et à configurer la distribution Sling sur l’auteur. Cet utilisateur autorisé dispose de toutes les [listes de contrôle d’accès](/help/sites-administering/sync.md#howtoaddacl) requises.
 
 Chaque fois que des données doivent être installées ou récupérées auprès d’éditeurs, l’auteur se connecte aux éditeurs à l’aide des informations d’identification (nom d’utilisateur et mot de passe) définies dans cette configuration.
 
@@ -180,7 +180,7 @@ Pour configurer les données (chemins de nœud) à synchroniser :
 ### Distribution Adobe Granite - Fabrique d’observateurs Diff {#adobe-granite-distribution-diff-observer-factory}
 
 Cette configuration synchronise l’appartenance à un groupe entre les éditeurs.
-Si la modification de l’appartenance d’un groupe dans un éditeur ne met pas à jour son appartenance sur d’autres éditeurs, assurez-vous que la :members**** ref est ajoutée aux noms de propriétés **regardés**.
+Si la modification de l’appartenance d’un groupe dans un éditeur ne met pas à jour son appartenance sur d’autres éditeurs, assurez-vous que la :members&#x200B;**&#x200B;** ref est ajoutée aux noms de propriétés **regardés**.
 
 Pour assurer la synchronisation des membres :
 
