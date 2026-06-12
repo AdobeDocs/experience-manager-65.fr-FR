@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Le codage en dur du nom et du texte descriptif est suffisant pour les environnem
 
 ### Évaluer par rapport aux critères de filtre {#evaluating-against-filter-criteria}
 
-La fonction `matches` renvoie `true` si les caractéristiques de l’appareil satisfont tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
+La fonction `matches` renvoie `true` si les caractéristiques de l’appareil satisfont tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments :
 
 * Un objet DeviceGroup
 * Le nom de l’agent utilisateur
@@ -188,7 +188,7 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le lot de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le bundle Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
 
-Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer que la version du bundle est déployée dans votre environnement.
+Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du bundle déployée dans votre environnement.
 
 **POM :**(votre code POM utilisera un autre groupId et une autre version).
 
@@ -255,4 +255,4 @@ Au moment de la création, la version 5.5.2 est la version du lot de l’API WC
 </project>
 ```
 
-Ajoutez le profil que la section [Obtention du plug-in Maven pour les packages de contenu](/help/sites-developing/vlt-mavenplugin.md) fournit à votre fichier de paramètres maven pour utiliser le référentiel Adobe public.
+Ajoutez le profil que la section [Obtention du plug-in de module de contenu Maven](/help/sites-developing/vlt-mavenplugin.md) fournit à votre fichier de paramètres maven pour utiliser le référentiel Adobe public.

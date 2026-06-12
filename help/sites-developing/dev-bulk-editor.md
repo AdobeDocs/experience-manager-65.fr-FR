@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 98%
 
 ---
 
@@ -433,7 +433,7 @@ Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>Configuration des métadonnées de colonne. Les propriétés possibles sont (appliquées à toutes les cellules de la colonne) : <br />
+   <td>Configuration des métadonnées de colonne. Les propriétés possibles sont (appliquées à toutes les cellules de la colonne) : <br />
     <ul>
      <li>cellStyle : style html </li>
      <li>cellCls : classe css </li>
@@ -449,7 +449,7 @@ Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant
 
 Vous pouvez configurer les éléments suivants pour chaque colonne :
 
-* les propriétés d’affichage : style html, classe CSS et lecture seule 
+* les propriétés d’affichage : style html, classe CSS et lecture seule
 
 * une case à cocher
 * une position forcée
@@ -529,7 +529,7 @@ Le servlet de requête fonctionne comme suit : il reçoit une requête GQL et l
 
 Dans le cas du composant Liste de produits, les deux paramètres envoyés au servlet de requête sont les suivants :
 
-* Requête : « path: /content/geometrixx/en/customers/jcr:content/par/productlist Cube »
+* requête : « path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube »
 * Cols : « Selection,ProductId,ProductName,Color,CatalogCode,SellingSku »
 
 Et le flux JSON est renvoyé comme suit :
@@ -563,7 +563,7 @@ Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
 * Nom du paramètre : &lt;chemin jcr>/&lt;nom de propriété>
 
-  Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valeur : &lt;valeur>
 

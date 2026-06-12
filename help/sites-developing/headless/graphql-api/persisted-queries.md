@@ -7,8 +7,8 @@ feature: Content Fragments,GraphQL API
 role: Developer
 source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Les requêtes persistantes doivent toujours utiliser le point d’entrée associ
 La requête a accès à tous les modèles de fragment de contenu.
 * Configuration(s) de sites spécifiques et point(s) d’entrée
 La création d’une requête persistante pour une configuration Sites spécifique nécessite un point d’entrée spécifique à la configuration Sites correspondant (pour fournir l’accès aux modèles de fragment de contenu associés).
-Par exemple, pour créer une requête persistante spécifique à la configuration WKND Sites, une configuration de sites spécifique à WKND correspondante et un point d’entrée spécifique à WKND doivent être créés à l’avance.
+Par exemple, pour créer une requête persistante spécifique à la configuration Sites WKND, une configuration Sites spécifique à WKND correspondante et un point d’entrée spécifique à WKND doivent être créés à l’avance.
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Les requêtes persistantes sont recommandées, car elles peuvent être mises en 
 
 Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définies par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
 
-| Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control) | cURL | Configuration OSGi  |
+| Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuration OSGi  |
 |--- |--- |--- |--- |
 | Navigateur | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |

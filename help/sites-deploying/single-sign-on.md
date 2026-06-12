@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
    Par exemple, pour l’ensemble NTLM :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
-   * **Noms d’en -tête** : `LOGON_USER`
+   * **Noms d’en-tête** : `LOGON_USER`
    * **Format d’ID** : `^<DOMAIN>\\(.+)$`
 
      Où `<*DOMAIN*>` est remplacé par le nom de votre propre domaine.
@@ -85,8 +85,7 @@ Pour configurer l’authentification unique pour une instance AEM, vous devez co
 >* `disp_iis.ini`
 >* IIS
 >
->Dans `disp_iis.ini`, définissez les éléments suivants :
->(Voir [Installation de Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr#microsoft-internet-information-server) pour en savoir plus.)
+>Dans `disp_iis.ini` set :>(voir [installation du Dispatcher avec Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=fr#microsoft-internet-information-server) pour plus d’informations)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
@@ -102,7 +101,7 @@ Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’imp
 
 `http://localhost:4502/system/console/slingauth`
 
-Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez le gestionnaire A pour le chemin `/`/ et le gestionnaire B pour le chemin `/content`, alors une demande à `/content/mypage.html` appellera le gestionnaire B en premier.
+Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez le gestionnaire A pour le chemin `/` et le gestionnaire B pour le chemin `/content`, alors une demande à `/content/mypage.html` interrogera le gestionnaire B en premier.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 

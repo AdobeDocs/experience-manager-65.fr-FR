@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 100%
+source-wordcount: '2505'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ En tant qu’auteur ou autrice, effectuez la gestion de votre site web dans AEM.
 
 Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour organiser votre contenu.
 
-La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
+La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
 Vous trouverez ci-dessous un exemple provenant du site We.Retail, qui permet d’accéder à une page de shorts de randonnée (`desert-sky-shorts`) :
 
@@ -153,13 +153,13 @@ Le modèle définit la structure d’une page, y compris une miniature et d’au
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
 * **Titre**
-Titre affiché sur la page web obtenue.
+Titre affiché sur la page web qui en résulte.
 
-* **Nom**
-Utilisé lors de l’attribution du nom de la page.
+* **Name**
+Utilisé pour nommer la page.
 
 * **Modèle**
-Liste des modèles utilisables lors de la génération de la nouvelle page.
+Liste des modèles pouvant être utilisés lors de la génération de la nouvelle page.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. Des [composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) sont fournis avec AEM pour offrir des fonctionnalités complètes. Il s’agit des composants suivants :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Ces informations comprennent les éléments suivants :
 
 * Texte
 * Image
@@ -211,7 +211,7 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
 
    * **Titre** :
 
-      * Il est visible par la personne utilisatrice et est obligatoire.
+      * Il est visible par l’utilisateur ou l’utilisatrice et est obligatoire.
 
    * **Nom** :
 
@@ -416,7 +416,7 @@ Pour consulter le statut des tâches asynchrones, accédez au tableau de bord [*
    * **Supprimer** pour confirmer l’action :
 
       * Si la page ne comporte aucune référence, elle est supprimée.
-      * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
+      * Si la page contient des références, un message vous informe qu’**Une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
 >

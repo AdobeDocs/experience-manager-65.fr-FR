@@ -10,8 +10,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 100%
+source-wordcount: '1788'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,7 @@ Actuellement, le mode de modification intégré est activé pour les éléments 
 
 ## Fonctionnalités de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
 
-L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant. Ces fonctions sont disponibles dans les deux interfaces utilisateur (classique et optimisée pour les écrans tactiles).
+L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles pour les interfaces utilisateur classique et optimisée pour les écrans tactiles.
 
 ### Formats de caractères de base {#basic-character-formats}
 
@@ -106,7 +106,7 @@ Les fonctionnalités standard **[!UICONTROL Couper]** et **[!UICONTROL Copier]**
 * Couper (Ctrl-X)
 * Copier (Ctrl-C)
 * Coller
-Mécanisme de collage par défaut (Ctrl-V) pour le composant ; dans le cas d’une installation standard, il est configuré sur [!UICONTROL Coller à partir de Word].
+Il s’agit du mécanisme de collage par défaut (Ctrl-V) pour le composant ; lorsqu’il est prêt à l’emploi, il est configuré sur [!UICONTROL Coller à partir de Word].
 
 * Coller en tant que texte : supprime tous les styles et options de mise en forme afin de ne coller que le texte brut.
 
@@ -234,7 +234,7 @@ Toute faute d’orthographe est mise en surbrillance :
 
 >[!NOTE]
 >
->Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la vérification sera effectuée en anglais pour la branche `en` et en allemand pour la branche `de`.
+>Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ; Par exemple, la vérification sera effectuée en anglais pour la branche `en` et en allemand pour la branche `de`.
 
 ### Tableaux {#tables}
 
