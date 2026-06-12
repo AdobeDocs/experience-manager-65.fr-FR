@@ -8,8 +8,8 @@ exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 
 La fonction multiclient permet de séparer du contenu dans CRX en fonction du préfixe et de l’identifiant d’organisation, de sorte à protéger le contenu contre tout accès non autorisé par les utilisateurs d’autres organisations.
 
-[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation à un chemin d’accès différent. Le chemin d’accès propre à chaque organisation est identifié par le préfixe d’organisation et l’identifiant d’organisation qui sont inclus à l’emplacement où différents types de ressources sont habituellement stockées dans CRX.
+[!DNL Adobe Experience Manager Assets] stocke les données de chaque organisation à un chemin d’accès différent. Le chemin d’accès propre à chaque organisation est identifié par le préfixe et l’ID d’organisation
+est inclus à l’emplacement traditionnel où différents types de ressources sont stockés dans CRX.
 
 Par exemple, si vous créez un dossier nommé `Demo`, [!DNL Experience Manager] Assets stocke généralement le dossier à l’adresse `../content/dam/Demo`. Lorsque le multiclient est activé, vous pouvez désormais stocker les données à l’adresse `../content/dam/<organization prefix>/<organization id>Demo`.
 

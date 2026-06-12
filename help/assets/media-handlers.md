@@ -124,7 +124,7 @@ Les méthodes suivantes doivent être implémentées :
 
 Voici un exemple de modèle :
 
-package my.own.trick; /&ast;&ast; &ast; @scr.component inherit=« true » &ast; @scr.service &ast;/ classe publique MyMediaHandler étend com.day.cq.dam.core.AbstractAssetHandler { // implémenter les parties pertinentes }
+package my.own.trick; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=« true » &amp;ast; @scr.service &amp;ast;/ classe publique MyMediaHandler étend com.day.cq.dam.core.AbstractAssetHandler { // implémenter les parties pertinentes }
 
 L’interface et les classes sont les suivantes :
 

@@ -7,8 +7,8 @@ feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
-workflow-type: ht
-source-wordcount: '1558'
+workflow-type: tm+mt
+source-wordcount: '1571'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Les modèles de ressources offrent une flexibilité permettant d’apporter des 
 
 En tant que spécialiste marketing, vous pouvez stocker et gérer les modèles dans [!DNL Experience Manager Assets], et utiliser un modèle de base unique pour créer plusieurs documents papier personnalisés en toute simplicité. Il est possible de créer divers supports marketing, notamment brochures, dépliants, cartes postales, cartes de visite, etc., afin de transmettre un message clair à la clientèle. Vous pouvez également assembler des documents papier comportant plusieurs pages à partir de documents papier nouveaux ou existants. Surtout, vous pouvez facilement proposer simultanément des expériences numériques et imprimées pour offrir une expérience cohérente et intégrée aux utilisateurs et utilisatrices.
 
-Si les modèles de ressources sont pour la plupart des fichiers [!DNL Adobe InDesign], il n’est pas nécessaire de maîtriser [!DNL Adobe InDesign] pour réaliser des documents de qualité. Vous n’avez pas besoin de mapper les champs de votre modèle [!DNL Adobe InDesign] avec vos champs produit, comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour qu’[!DNL Adobe InDesign] puisse traiter vos modifications, vous devez configurer [!DNL Experience Manager Assets] pour qu’il intègre [!DNL Adobe InDesign Server].
+Bien que les modèles de ressources soient principalement des fichiers [!DNL Adobe InDesign], il n’est pas nécessaire de maîtriser [!DNL Adobe InDesign] pour produire d’excellents artefacts. Vous n’avez pas besoin de mapper les champs de votre modèle [!DNL Adobe InDesign] avec vos champs produit, comme cela est nécessaire lors de la création de catalogues. Vous pouvez modifier les modèles en mode WYSIWYG directement depuis l’interface Web. Toutefois, pour qu’[!DNL Adobe InDesign] puisse traiter vos modifications, vous devez configurer [!DNL Experience Manager Assets] pour qu’il intègre [!DNL Adobe InDesign Server].
 
 La possibilité de modifier les modèles [!DNL Adobe InDesign] depuis l’interface web favorise une meilleure collaboration entre les équipes créatives et marketing. La vitesse accrue du contenu réduit le délai de mise sur le marché des dérivés marketing.
 
