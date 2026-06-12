@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 100%
+source-wordcount: '1870'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ L’utilisateur saisit des valeurs dans le formulaire et clique ensuite sur le b
 * La personne accède à une page HTML nommée StartLoan.html, qui fait office de page de démarrage de l’application web. Cette page appelle une servlet Java nommée `GetLoanForm`.
 * La servlet `GetLoanForm` renvoie un formulaire de prêt. Ce formulaire contient un script, des champs interactifs, un bouton de calcul et un bouton d’envoi.
 * La personne saisit des valeurs dans les champs du formulaire et clique ensuite sur le bouton Calculer. Le formulaire est envoyé à la servlet Java `CalculateData` où le script est exécuté. Le formulaire est renvoyé à l’utilisateur avec les résultats du calcul affichés dans le formulaire.
-* Lʼutilisateur continue à saisir et calculer des valeurs jusquʼà lʼobtention du résulat désiré. Une fois satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à une autre servlet Java nommée `ProcessForm`, qui est chargée de la récupération des données envoyées. (Consultez la section [Gestion des formulaires envoyés](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
+* Lʼutilisateur ou l’utilisatrice continue à saisir et calculer des valeurs jusquʼà lʼobtention du résultat désiré. Une fois satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à une autre servlet Java nommée `ProcessForm`, qui est chargée de la récupération des données envoyées. (Consultez la section [Gestion des formulaires envoyés](/help/forms/developing/rendering-forms.md#handling-submitted-forms)).
 
 
 Le diagramme suivant montre le flux logique de l’application.
@@ -109,7 +109,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un objet API client Forms**
 
-Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient`. Si vous utilisez l’API du service Web Forms, créez un objet `FormsServiceService`.
+Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient`. Si vous utilisez l’API Web Service Forms, créez un objet `FormsServiceService`.
 
 **Récupération d’un formulaire contenant un script de calcul**
 
@@ -123,13 +123,13 @@ Après avoir vérifié que l’état de traitement associé à un formulaire env
 
 **Voir également**
 
-[Inclusion des fichiers de la bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calcul des données de formulaire à l’aide de l’API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Calcul des données de formulaire à l’aide de l’API Web Service](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Démarrages rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Renvoi de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Création d’applications web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Calcul des données de formulaire à l’aide de l’API de service web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+Démarrages rapides de l’API du service Forms [](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Rendu de PDF forms interactive](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Création d’applications web qui effectuent le rendu de Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcul des données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
 
@@ -151,8 +151,8 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
       * Objet `com.adobe.idp.Document` contenant les données de formulaire.
       * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Indiquez le type de contenu à gérer en spécifiant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objet `RenderOptionsSpec` stockant les options d’exécution.
+      * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.
 
      La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
@@ -160,7 +160,7 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web client.
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
@@ -169,8 +169,8 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
 **Voir également**
 
 
-[Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calculer les données du formulaire en utilisant l’API Web Service {#calculate-form-data-using-the-web-service-api}
 
@@ -193,31 +193,31 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Copiez le contenu de l’objet `java.io.InputStream` dans l’objet `java.io.ByteArrayOutputStream`.
    * Créez un tableau d’octets en appelant la méthode `toByteArray` de l’objet `java.io.ByteArrayOutputStream`.
    * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
-   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
+   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant les données du formulaire.
+      * Objet `BLOB` contenant les données de formulaire.
       * Valeur de chaîne spécifiant les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Par exemple, vous pouvez spécifier la valeur de chaîne suivante : `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`.
       * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Objet `RenderOptionsSpec` stockant les options d’exécution. Pour plus d’informations, .
-      * Objet `BLOBHolder` vide qui est rempli par la méthode.
+      * Un objet `RenderOptionsSpec` qui stocke les options d’exécution. Pour plus d’informations, .
+      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
       * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
       * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
       * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
       * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
       * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
-      * Objet `FormsResultHolder` vide qui est rempli par la méthode avec le formulaire envoyé.
+      * Un objet `FormsResultHolder` vide qui est renseigné par la méthode avec le formulaire envoyé.
 
-     La méthode `processFormSubmission` remplit le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
+     La méthode `processFormSubmission` renseigne le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
    * Vérifiez que l’état de traitement associé à un formulaire envoyé est `1` en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `1`, le calcul a été effectué et les données peuvent être réécrites dans le navigateur web du client.
 
 1. Réécrivez le flux de données de formulaire dans le navigateur web client.
 
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web client.
    * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
-**Consultez également la section**
-[Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Voir également**
+[Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

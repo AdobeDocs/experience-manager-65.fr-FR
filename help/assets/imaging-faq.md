@@ -11,8 +11,8 @@ exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 97%
+source-wordcount: '3434'
+ht-degree: 96%
 
 ---
 
@@ -269,8 +269,8 @@ Lors de la création du cas de prise en charge, spécifiez les fonctionnalités 
       * Indiquez si l’imagerie dynamique doit également fonctionner sur HTTP/2.
 
 1. Le service clientèle d’Adobe active par défaut les fonctionnalités d’imagerie dynamique demandées, éliminant ainsi la nécessité d’ajouter des paramètres manuellement aux URL.
-1. Adobe recommande de définir la durée de vie (TTL) sur au moins 24 heures afin d’optimiser les performances grâce à la mise en cache.
-Pour ajuster la durée de vie (TTL) :
+1. Adobe recommande de définir la durée de vie (TTL) sur au moins 24 heures afin d’optimiser les performances par le biais de la mise en cache.
+Pour ajuster la TTL :
 
    1. Pour **Dynamic Media Classic :**
       1. Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
@@ -338,8 +338,8 @@ Cet en-tête vous indique ce qui suit :
 >
 >**X-Adobe-Smart-Imaging = -1 avec diffusion en WebP**
 >
->Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que WebP est toujours en cours de diffusion, l’imagerie dynamique est active. Toutefois, les avantages de taille n’étaient pas calculés en raison d’un cache obsolète. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
->Exemple d’utilisation du modificateur :
+>Si la valeur de `X-Adobe-Smart-Imaging` est -1 et que le WebP est toujours en cours de diffusion, l’imagerie dynamique est active. Toutefois, les gains de taille n’ont pas été calculés en raison d’un cache obsolète. Vous pouvez utiliser `cache=update` (une seule fois) dans l’URL de l’image pour résoudre ce problème.
+>Exemple d’utilisation du modificateur :
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Pour invalider l’intégralité du cache, vous devez créer un dossier de support.
 
 +++

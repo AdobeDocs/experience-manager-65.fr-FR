@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '882'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Mise en cache de la réponse du composant et de GraphQL {#graphql}
 
-Les composants principaux AEM CIF prennent déjà en charge la mise en cache des réponses GraphQL pour les composants individuels. Cette fonctionnalité peut être utilisée pour réduire considérablement le nombre d’appels d’arrière-plan GraphQL. Une mise en cache efficace peut être réalisée, en particulier pour les requêtes qui se répètent, comme la récupération de l’arborescence des catégories pour un composant de navigation ou la récupération de toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories.
+Les composants principaux AEM CIF offrent déjà une prise en charge intégrée de la mise en cache des réponses GraphQL pour les composants individuels. Cette fonctionnalité peut être utilisée pour réduire considérablement le nombre d’appels d’arrière-plan GraphQL. Une mise en cache efficace peut être réalisée, en particulier pour les requêtes qui se répètent, comme la récupération de l’arborescence des catégories pour un composant de navigation ou la récupération de toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories.
 
 Pour les composants principaux AEM CIF, la mise en cache étant configurée composant par composant, il est possible de contrôler si (et pendant combien de temps) les requêtes/réponses GraphQL sont mises en cache pour chaque composant. Il est également possible de définir le comportement de mise en cache des services OSGi à l’aide du client GraphQL.
 
@@ -65,5 +65,5 @@ Avec la mise en cache TTL, un développeur définit généralement une ou plusie
 ## Ressources supplémentaires
 
 - [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
-- [Configuration de la mise en cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
+- [Configuration de la mise en cache du GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
 - [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)

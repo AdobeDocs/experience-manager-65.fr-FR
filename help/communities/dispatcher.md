@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '666'
 ht-degree: 19%
 
 ---
@@ -24,9 +24,9 @@ Pour AEM Communities, il est nécessaire de configurer Dispatcher pour assurer l
 
 Pour savoir ce qui est nécessaire pour votre déploiement et votre conception de site spécifiques
 
-* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support)
+* Contacter l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support)
 
-Consultez également la documentation principale de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
+Consultez également la documentation principale de [](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr).
 
 ## Mise en cache du Dispatcher {#dispatcher-caching}
 
@@ -54,7 +54,7 @@ La configuration OSGi **ACS AEM Commons - En-tête de contrôle du cache de Disp
 
 * À partir de la [console web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Par exemple, [:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localiser `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Sélectionnez l’icône « + » pour créer une configuration de connexion.
@@ -64,7 +64,7 @@ La configuration OSGi **ACS AEM Commons - En-tête de contrôle du cache de Disp
 * **Modèles de filtre**
   *(obligatoire)* Un ou plusieurs chemins d’accès aux pages de la communauté. Par exemple, `/content/sites/engage/(.*)`.
 
-* Âge Max. Du Contrôle De Cache **&#x200B;**
+* **Âge Max. Du Contrôle De Cache**
   *(obligatoire)* âge maximal (en secondes) à ajouter à l’en-tête du contrôle du cache. La valeur doit être supérieure à zéro (0).
 
 ## Filtres Dispatcher {#dispatcher-filters}
@@ -83,8 +83,8 @@ Voir également :
 
 >[!NOTE]
 >
->Exemples de noms de propriété **&#x200B;**
->Tous les noms de propriété affichés, tels que **/0050** et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration `dispatcher.any` existant.
+>**Exemples de noms de propriété**
+>Tous les noms de propriété affichés, tels que ****/0050 et **/0170**, doivent être ajustés pour s’adapter à un fichier de configuration `dispatcher.any` existant.
 >
 
 >[!CAUTION]
