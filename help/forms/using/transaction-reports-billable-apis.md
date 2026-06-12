@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 100%
+source-wordcount: '2350'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
 | AEM 6.5 | Cet article |
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
@@ -202,7 +202,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Fusionne des données et des modèles pour créer un ensemble de documents PDF.</td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -220,7 +220,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convertit un ensemble de documents XDP et PDF en un ensemble de formats de fichiers PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
   </tr>
  </tbody>
 </table>
@@ -287,14 +287,14 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
-   <td>Décode tous les codes-barres d’un objet Document et renvoie un objet org.w3c.dom.Document contenant les données extraites du code-barre.</td>
+   <td>Décode tous les codes-barres d’un objet Document et renvoie un objet org.w3c.dom.Document contenant les données récupérées du code à barres.</td>
    <td>Documents traités</td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-### Incohérence affectant le service assembleur {#assembler-service}
+### Service Assembler {#assembler-service}
 
 <table>
  <tbody>
