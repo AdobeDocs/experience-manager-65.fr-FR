@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 100%
+source-wordcount: '1179'
+ht-degree: 97%
 
 ---
 
@@ -21,22 +21,23 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
 ## Vue d’ensemble {#overview}
 
-AEM Forms permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une page d’AEM Sites ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif et la communication interactive incorporés sont entièrement fonctionnels et les utilisateurs et utilisatrices peuvent les remplir et les envoyer sans quitter la page. Cela permet à l’utilisateur ou l’utilisatrice de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire ou la communication interactive.
+AEM Forms permet aux équipes de développement de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une page d’AEM Sites ou une page web hébergée en dehors d’AEM. Le formulaire adaptatif et la communication interactive incorporés sont entièrement fonctionnels et les utilisateurs et utilisatrices peuvent les remplir et les envoyer sans quitter la page. Cela permet à l’utilisateur ou l’utilisatrice de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire ou la communication interactive.
 
 Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page web externe, consultez la section [Incorporation d’un formulaire adaptatif dans une page web externe](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Sur une page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide des éléments suivants :
 
-* **[Composant Conteneur AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
-AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le composant Conteneur AEM Forms vous permet d’incorporer un formulaire adaptatif et une communication interactive.
+* **[Composant Conteneur AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+AEM Forms fournit un composant que vous pouvez ajouter aux pages de votre site. Le composant Conteneur AEM Forms vous permet d’incorporer un formulaire adaptatif et une communication interactive.
 
-* **[Explorateur des actifs](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** Tous les formulaires et toutes les communications interactives que vous créez sont disponibles sous Actifs. Vous pouvez faire glisser et déposer le formulaire sous forme de ressource dans votre page.
+* **[Explorateur des ressources](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+Tous les formulaires et communications interactives que vous créez sont disponibles sous Assets. Vous pouvez faire glisser et déposer le formulaire sous forme de ressource dans votre page.
 
 ## Conditions préalables {#prerequisites}
 

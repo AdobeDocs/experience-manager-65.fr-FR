@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
-ht-degree: 96%
+source-wordcount: '4312'
+ht-degree: 95%
 
 ---
 
@@ -257,7 +257,7 @@ Pour créer un modèle de base, procédez comme suit dans AEM Designer.
 1. Enregistrez le formulaire.
 
 Vous pouvez désormais utiliser le formulaire enregistré comme modèle de base de document d’enregistrement.
-Ne modifiez ou ne supprimez aucun des scripts du modèle de base.
+Ne modifiez et ne supprimez aucun script présent dans le modèle de base.
 
 **Modification du modèle de base**
 
@@ -343,7 +343,7 @@ Selon si vous sélectionnez un modèle par défaut ou un modèle personnalisé, 
 
   Si le modèle XDP personnalisé que vous sélectionnez comprend plusieurs gabarits, les propriétés de ces pages apparaissent dans la section **[!UICONTROL contenu]** de l’onglet **[!UICONTROL Document d’enregistrement]**.
 
-  ![Propriétés du gabarit de page &#x200B;](assets/master-page-properties.png)
+  ![Propriétés du gabarit de page ](assets/master-page-properties.png)
 
   Les propriétés du gabarit de page comprennent l’image du logo, le texte de l’en-tête, le titre du formulaire, l’étiquette de la clause de non-responsabilité et le texte de la clause de non-responsabilité. Vous pouvez appliquer les propriétés du formulaire adaptatif ou du modèle XDP au document d’enregistrement. AEM Forms applique par défaut les propriétés des modèles au document d’enregistrement. Vous pouvez également définir des valeurs personnalisées pour les propriétés du gabarit de page. Pour plus d’informations sur la façon d’appliquer plusieurs gabarits de pages dans un document d’enregistrement, voir [Appliquer plusieurs gabarits à un document d’enregistrement](#apply-multiple-master-pages-dor).
 
@@ -465,7 +465,7 @@ Pour appliquer les propriétés du deuxième gabarit de page à un panneau et le
 
 1. Sélectionnez le panneau pour appliquer le deuxième gabarit de page, puis sélectionnez ![Configurer](assets/cmppr.png).
 1. Dans la section **[!UICONTROL Pagination]**, sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
-1. Sélectionnez **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit de page, puis **[!UICONTROL Sélectionner]**.
+1. Sélectionnez **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit de page et sélectionnez **[!UICONTROL Sélectionner]**.
 AEM Forms applique le deuxième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
 1. Dans la section **[!UICONTROL Pagination]**, sélectionnez ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Après]**.
 1. Sélectionnez **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit de page, puis **[!UICONTROL Sélectionner]**.

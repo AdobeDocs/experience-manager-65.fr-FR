@@ -1,6 +1,6 @@
 ---
 title: Modèles de lettres de référence
-description: AEM Forms fournit des modèles de disposition de lettre Correspondence Management que vous pouvez utiliser pour créer des lettres rapidement.
+description: AEM Forms fournit des modèles de mise en page de lettre Correspondence Management que vous pouvez utiliser pour créer des lettres rapidement.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
@@ -10,7 +10,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -29,13 +29,13 @@ Correspondence Management fournit des modèles de lettres dans le [package de m
 * Visuel haut
 * Visuel haut - Classique
 
-Une fois le package installé, les modèles de disposition (XDP) sont répertoriés dans le dossier templates-folder à l’emplacement suivant :
+Une fois le package installé, les modèles de mise en page (XDP) sont répertoriés dans le dossier templates-folder à l’emplacement suivant :
 
 `https://'[server]:[port]'/[context-root]/aem/forms.html/content/dam/formsanddocuments/templates-folder`
 
 Vous trouverez ci-dessous les champs communs à tous les modèles de ce package :
 
-* Date 
+* Date
 * Salutations
 * Texte de clôture
 * Texte de signature

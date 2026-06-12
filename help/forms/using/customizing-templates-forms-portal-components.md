@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 100%
+source-wordcount: '1188'
+ht-degree: 89%
 
 ---
 
@@ -46,14 +46,14 @@ Procédez comme suit pour créer un modèle personnalisé pour divers composants
 
    * Composant Link : /libs/fd/fp/linkTemplate
 
-   Ajoutez un titre à afficher lors de la sélection des modèles de disposition.
+   Ajoutez un titre à afficher lors de la sélection des modèles de mise en page.
 
    >[!NOTE]
    >
-   >Remarque : le titre peut être différent du nom du nœud sling:Folder que vous avez créé.
+   >Le titre peut être différent du nom du nœud sling:Folder que vous avez créé.
 
    L’image ci-après illustre la configuration pour le composant Recherche et énumérateur.
-   ![Création d’un nœud sling:Folder](assets/1.png)
+   ![Création d’un sling:Folder](assets/1.png)
 
 1. Créez un fichier template.html dans ce dossier afin qu’il puisse servir de modèle personnalisé.
 1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme décrit ci-dessous.
@@ -90,7 +90,7 @@ Pour inclure une entrée répétable, configurez l’attribut **data-repeatable*
 
 *Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
 
-Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la **propriété ${metadata_prop}** à cet emplacement.
+Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la propriété **${metadata_prop} à cet emplacement**
 
 *Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
 
@@ -120,8 +120,8 @@ Prise en charge de la localisation et du tri et utilisation des propriétés de 
 1. **Prise en charge de la localisation** : pour localiser du texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle ne l’est déjà.
    *Dans l’exemple présenté, les attributs `${localize-Apply}` et `${localize-Download}` sont utilisés pour localiser les termes Apply et Download.*
 
-1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » sur l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
-Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur de l’en-tête &quot;data-sortKey&quot; est &quot;title&quot;. Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
+1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour implémenter le tri dans une mise en page de tableau, ajoutez l’attribut « data-sortKey » dans l’en-tête particulier du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
+Par exemple, pour l’en-tête « Title » dans la vue Grille, la valeur de l’en-tête « data-sortKey » est « title ». Cliquez sur l’en-tête pour trier les valeurs d’une colonne particulière.
 
 1. **Utilisation des propriétés de configuration** : le composant Recherche et énumérateur possède plusieurs configurations que vous pouvez utiliser dans l’interface utilisateur. Par exemple, pour afficher du texte d’info-bulle HTML enregistré dans la boîte de dialogue Modifier, utilisez l’attribut `${config-htmlLinkText}`. **De même, pour le texte d’info-bulle PDF, utilisez l’attribut** `${config-pdfLinkText}`.
 
@@ -150,15 +150,15 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 *Remarque :*
 
-1. Pour l’option de suppression de la section Brouillons sous le composant Brouillons et envois, nommez la classe CSS « __FP_deleteDraft ». En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
+1. Pour l’option de suppression de la section Brouillons sous le composant Brouillons et envois, nommez la classe CSS « __FP_deleteDraft ». En outre, incluez l’attribut « draftID » avec la valeur **${draftID}**, qui correspond à l’ID du brouillon correspondant.
 
-1. Lors de la création de liens pour ouvrir les brouillons et les envois, vous pouvez spécifier **${path}.html** en tant que valeur de l’attribut **href** pour la balise d’ancrage.
+1. Lors de la création de liens pour ouvrir les brouillons et les envois, vous pouvez spécifier **${path}.html** comme valeur de l’attribut **href** pour la balise d’ancrage.
 
 ![Nœud Drafts and Submission](assets/raw-image-with-index.png)
 
-**A**. Elément conteneur
+**A** Élément de conteneur
 
-**B.** Métadonnées « path » avec hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**B.** Métadonnées « path » avec hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
 **C.** Attribut « data-repeatable » utilisé pour la section du modèle de chaque formulaire.
 

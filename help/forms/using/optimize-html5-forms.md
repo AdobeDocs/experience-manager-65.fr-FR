@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -60,8 +60,8 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    >Lorsque vous utilisez un proxy, les modifications de configuration suivantes sont requises :
    >
    >* Accès : *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Modifier la configuration pour Apache Sling Referrer Filter
-   * Dans le champ Autoriser les hôtes, ajoutez l’entrée pour le serveur proxy.
+   >* Modifier la configuration pour Apache Sling Referrer Filter
+   >* Dans le champ Autoriser les hôtes, ajoutez l’entrée pour le serveur proxy.
 
 1. Activez la compression.
 
@@ -83,4 +83,4 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    </Location>
    ```
 
-1. Pour accéder au serveur AEM, utilisez https://[Apache_server]:80.
+1. Pour accéder au serveur AEM, utilisez https://[Apache_server]:80.

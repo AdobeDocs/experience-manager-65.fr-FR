@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 >
 >Si vous utilisez AEM Dispatcher pour mettre en cache des formulaires adaptatifs, il met également en cache les formulaires adaptatifs qui contiennent des formulaires avec des données préremplies. Si de tels formulaires sont diffusés à partir du cache d’AEM Dispatcher, ils peuvent entraîner la diffusion de données préremplies ou obsolètes aux utilisateurs ou utilisatrices. Ainsi, utilisez AEM Dispatcher pour mettre en cache les formulaires adaptatifs qui n’utilisent pas de données préremplies. De plus, un cache de Dispatcher n’invalide pas automatiquement les fragments mis en cache. Ainsi, ne l’utilisez pas pour mettre en cache des fragments de formulaire. Pour ces formulaires et fragments, utilisez le [cache de formulaires adaptatifs](../../forms/using/configure-adaptive-forms-cache.md).
 
-## Paramètres JVM  {#jvm-parameters}
+## Paramètres JVM {#jvm-parameters}
 
 Pour des performances optimales, il est conseillé d’utiliser les arguments `init` JVM suivants pour configurer `Java heap` et `PermGen`.
 
@@ -58,7 +58,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés sont ceux de Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être adaptés en fonction de la configuration de votre système.
+>Les paramètres recommandés sont ceux de Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) JDK et doivent être adaptés en fonction de la configuration de votre système.
 
 ## Utilisation d’un serveur web {#using-a-web-server}
 
@@ -93,7 +93,7 @@ Apache peut communiquer avec CRX à l’aide du protocole HTTP. Les configuratio
    >Pour Linux®, le répertoire `APACHE_HOME` par défaut est `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
-Ajoutez la configuration suivante dans le fichier de configuration `APACHE_HOME/conf/httpd.conf`.
+Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` fichier de configuration .
 
    ```shell
    ProxyPass / https://<server>:4502/

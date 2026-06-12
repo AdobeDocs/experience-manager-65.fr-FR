@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 98%
+source-wordcount: '831'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer une application AEM Forms personnalisée. L’archive du code source, `adobe-lc-mobileworkspace-src-<version>.zip`, fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` dans Distribution de logiciels.
 

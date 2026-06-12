@@ -19,7 +19,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [&#128279;](mailto:aemformsapp-android@adobe.com).
+>L’application AEM Forms est actuellement obsolète. Pour toute question ou aide, contactez [](mailto:aemformsapp-android@adobe.com).
 
 Cet article est destiné à la création de l’application AEM Forms 6.3.1.1 et versions ultérieures. Pour créer une application à partir du code source de l’application AEM Forms 6.3, voir [Configurer le projet Eclipse et créer l’application Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 

@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 98%
+source-wordcount: '1982'
+ht-degree: 97%
 
 ---
 
@@ -174,8 +174,8 @@ Il existe des questions fréquentes (FAQ) sur la disposition, la prise en charge
 
    Réponse : les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
-1. Quel est le format du champ Date dans les formulaires HTML5 ?
-Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur ou l’utilisatrice n’a pas quitté le champ à l’aide de la touche de tabulation.
+1. Quel est le format du champ Date dans HTML5 Forms ?
+Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ de date n’accepte pas le formatage tant que l’utilisateur n’a pas désélectionné le champ.
 
 ### Scripts {#scripting}
 

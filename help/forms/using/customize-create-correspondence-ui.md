@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1098'
+ht-degree: 90%
 
 ---
 
@@ -46,7 +46,7 @@ Pour toute personnalisation, créez une structure de dossiers parallèle, comme 
 
 La branche `/apps` (structure de dossiers) :
 
-* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau d’un pack de fonctionnalités ou d’un correctif, la branche `/libs` est mise à jour et si vous hébergez vos modifications dans la branche `/libs`, elles sont écrasées.
+* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. Dans le cas d’une mise à niveau, d’un pack de fonctionnalités ou d’un correctif, la branche `/libs` est mise à jour et si vous hébergez vos modifications dans la branche `/libs`, elles sont écrasées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
 * Permet à vos ressources d’obtenir une priorité plus élevée lorsqu’AEM recherche des ressources. AEM est configuré pour rechercher une ressource d’abord dans la branche `/apps` puis dans la branche `/libs`. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
@@ -127,7 +127,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Cliquez sur **Enregistrer tout**.
 
-   Dans le nouveau fichier que vous avez créé (ici CustomLogo.png), la propriété jcr:content s’affiche.
+   Sous le nouveau fichier que vous avez créé (ici CustomLogo.png), la propriété jcr:content s’affiche.
 
 1. Cliquez sur jcr:content dans la structure de dossiers.
 
@@ -137,11 +137,11 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
 1. Double-cliquez sur la propriété **jcr:data**.
 
-   La boîte de dialogue Edit jcr:data s’affiche.
+   La boîte de dialogue Modifier jcr:data s’affiche.
 
-   Cliquez maintenant sur le dossier newlogo.png, puis double-cliquez sur jcr:content (option dim) et définissez le type nt:resource. Dans le cas contraire, créer une propriété du nom de jcr:content.
+   Cliquez maintenant sur le dossier newlogo.png, puis double-cliquez sur jcr:content (option dim) et définissez le type nt:resource. S’il n’est pas présent, créez une propriété nommée jcr:content.
 
-1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
+1. Dans la boîte de dialogue Modifier jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
    Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les formats JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
 
@@ -166,7 +166,7 @@ Effectuez les étapes suivantes pour créer la feuille de style pour le rendu du
 
    1. Faites un clic droit sur le dossier **css** et sélectionnez **Créer > Créer un fichier**.
    1. Dans la boîte de dialogue Nouveau fichier, indiquez le nom du CSS comme `customcss.css`(vous ne pouvez pas utiliser de nom différent), puis cliquez sur **OK**.
-   1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie content:url du code, indiquez le nom de l’image que vous avez téléchargée dans le dossier imgs dans CRXDE.
+   1. Ajoutez le code suivant dans le fichier CSS que vous venez de créer. Dans la partie contenu:url dans le code, indiquez le nom de l’image que vous avez chargée dans le dossier imgs dans CRXDE.
 
       ```css
       .logo, .logo:after {

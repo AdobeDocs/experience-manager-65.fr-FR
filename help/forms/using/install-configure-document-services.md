@@ -909,7 +909,7 @@ Procédez comme suit :
 >
 >La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1401,7 +1401,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
