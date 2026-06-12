@@ -21,8 +21,8 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: 1191
-ht-degree: 92%
+source-wordcount: 1093
+ht-degree: 91%
 
 ---
 
@@ -42,7 +42,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 
 Sélectionnez [Station spatiale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360 degrés. Pendant la lecture vidéo, faites glisser le pointeur de la souris vers un nouvel emplacement pour modifier l’angle de vue.
 
-![Un échantillon d’une vidéo 360 avec la Station spatiale internationale flottant dans l’espace et la terre et le soleil derrière elle.](assets/6_5_360videoiss_simplified.png)
+![360-échantillon vidéo avec la Station spatiale internationale flottant dans l&#39;espace et la terre et le soleil derrière elle.](assets/6_5_360videoiss_simplified.png)
 *Image vidéo de la Station spatiale 360*
 
 ## Vidéo 360/VR et Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -109,9 +109,9 @@ Consultez également [Modification des paramètres prédéfinis de visionneuse](
 
 Lorsque vous êtes satisfait de la vidéo 360, vous pouvez la publier.
 
-Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Consultez [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Pour prévisualiser une vidéo 360 :**
 
@@ -136,7 +136,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
      Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360 degrés.
 
-   ![&#x200B; Capture d’écran d’un gros plan de la Station spatiale internationale flottant dans l’espace avec la terre et le soleil partiellement visibles en arrière-plan](assets/6_5_360video-preview-video360vr.png)
+   ![Capture d’écran d’un gros plan de la Station spatiale internationale flottant dans l’espace avec la terre et le soleil partiellement visibles en arrière-plan.](assets/6_5_360video-preview-video360vr.png)
    *Capture d’écran d’une vidéo 360 VR.*
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
@@ -145,7 +145,7 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
 Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
 
-Consultez [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour savoir comment publier des vidéos 360.
-Consultez également la section [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Consultez [&#x200B; Publication de ressources Dynamic Media &#x200B;](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
+Voir aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Consultez également [Ajout de ressources Dynamic Media à des pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Voir aussi [&#x200B; Ajout de ressources Dynamic Media aux pages &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md).

@@ -10,7 +10,7 @@ role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 100%
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 # Création de projets de traduction pour des fragments de contenu {#creating-translation-projects-for-content-fragments}
 
-Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les workflow de copie de langue pour les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune optimisation supplémentaire n’est nécessaire pour exécuter des workflows de copie de langue sur des fragments de contenu. Dans chaque workflow, l’intégralité du fragment de contenu est envoyée pour traduction.
+Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les workflow de copie linguistique pour les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune optimisation supplémentaire n’est nécessaire pour exécuter des workflows de copie linguistique sur des fragments de contenu. Dans chaque workflow, l’intégralité du fragment de contenu est envoyée pour traduction.
 
 Les types de workflows que vous pouvez exécuter sur des fragments de contenu sont exactement similaires aux types de workflows que vous exécutez pour les ressources. En outre, les options disponibles dans chaque type de workflow correspondent aux options disponibles sous les types de workflow correspondants pour les ressources.
 
-Vous pouvez exécuter les types de workflows de copie de langue suivants sur les fragments de contenu :
+Vous pouvez exécuter les types de workflows de copie linguistique suivants sur les fragments de contenu :
 
 **Créer et traduire**
 
@@ -30,7 +30,7 @@ Dans ce workflow, les fragments de contenu à traduire sont copiés dans la raci
 
 **Mise à jour des copies de langue**
 
-Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment de contenu correspondant spécifique à la langue/aux paramètres régionaux doit être retraduit. Le workflow de mise à jour des copies de langue traduit un groupe de fragments de contenu supplémentaire et l’intégre à une copie de langue pour des paramètres régionaux spécifiques. Dans ce cas, les fragments de contenu traduits sont ajoutées au dossier cible qui contient déjà des fragments de contenu précédemment traduits.
+Lorsque le fragment de contenu source est mis à jour ou modifié, le fragment de contenu correspondant spécifique à la langue/aux paramètres régionaux doit être retraduit. Le workflow de mise à jour des copies linguistiques traduit un groupe de fragments de contenu supplémentaire et l’intègre à une copie linguistique pour des paramètres régionaux spécifiques. Dans ce cas, les fragments de contenu traduits sont ajoutées au dossier cible qui contient déjà des fragments de contenu précédemment traduits.
 
 ## Workflow Créer et traduire {#create-and-translate-workflow}
 
@@ -131,12 +131,12 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
-1. Dans la mosaïque Tâche de traduction, vérifiez le nombre de ressources à traduire.
-1. Dans la mosaïque **[!UICONTROL Tâche de traduction]**, démarrez la tâche de traduction.
+1. Dans la vignette Tâche de traduction, vérifiez le nombre de ressources à traduire.
+1. Dans la vignette **[!UICONTROL Tâche de traduction]**, démarrez la tâche de traduction.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)
 
-1. Cliquez sur les ellipses en bas de la mosaïque Tâche de traduction afin d’afficher le statut de la tâche de traduction.
+1. Cliquez sur les points de suspension en bas de la vignette Tâche de traduction afin d’afficher le statut de la tâche de traduction.
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
@@ -144,7 +144,7 @@ Pour pouvoir traduire des fragments de contenu contenant des supports variés, m
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 
-1. Examinez la copie de langue pour la collection dans la console Collections.
+1. Examinez la copie linguistique pour la collection dans la console Collections.
 
    ![chlimage_1-465](assets/chlimage_1-465.png)
 

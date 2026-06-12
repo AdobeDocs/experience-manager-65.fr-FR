@@ -8,7 +8,7 @@ exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '644'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Grâce à cette fonctionnalité, vous avez la possibilité de partager un fichie
 
 ## Traduire les ressources liées {#translating-related-assets}
 
-La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les workflows de traduction. Lorsque vous exécutez un workflow de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. Ainsi, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Supposons, par exemple, que votre copie en anglais inclue une ressource dérivée et son fichier source, comme illustré ci-dessous.
+La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les workflows de traduction. Lorsque vous exécutez un workflow de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. Ainsi, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Supposons, par exemple, que votre copie linguistique en anglais inclue une ressource dérivée et son fichier source, comme illustré ci-dessous.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 

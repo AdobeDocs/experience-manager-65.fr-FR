@@ -8,8 +8,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '4439'
-ht-degree: 100%
+source-wordcount: '4534'
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ Cependant, généralement, un projet doit développer son propre fournisseur de 
 >
 >Les importateurs de Geometrixx utilisent des fichiers CSV. Une description du schéma est acceptée (avec les propriétés personnalisées autorisées) dans les commentaires au-dessus de leur mise en œuvre.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html?lang=fr) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html?lang=fr) et [CatalogBlueprintImporter. ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html?lang=fr) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
+[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html?lang=fr) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html?lang=fr) et [CatalogBlueprintImporter. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html?lang=fr) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
 Lorsqu’un importateur/fournisseur de commerce spécifique est répertorié dans la liste déroulante, toutes les données complémentaires dont il a besoin doivent être définies (en fonction du type de l’importateur) dans :
 
@@ -221,7 +221,7 @@ Les données des produits peuvent être :
 * créées directement dans AEM (générique) ;
 * gérées dans le moteur eCommerce et mises à disposition dans AEM.
 
-  Selon le type de données, elles sont [synchronisées](#catalog-maintenance-data-synchronization) si nécessaire ou directement accessibles. Par exemple, les données très variables et essentielles, comme les prix des produits, sont extraites du moteur e-commerce pour chaque demande de page afin qu’elles soient toujours à jour.
+  Selon le type de données, elles sont [synchronisées](#catalog-maintenance-data-synchronization) si nécessaire ou directement accessibles. Par exemple, les données très variables et essentielles, comme les prix des produits, sont récupérées du moteur e-commerce pour chaque demande de page afin qu’elles soient toujours à jour.
 
 Dans un cas comme dans l’autre, lorsque les données des produits ont été saisies/importées dans AEM, elles sont visibles dans la console **Produits**. Ici, les vues Carte et Liste d’un produit affichent des informations telles que :
 
@@ -239,7 +239,7 @@ Pour certains produits, il peut exister des informations sur les variantes. Pour
 
 ### Attributs de produit {#product-attributes}
 
-Les différents attributs de produit peuvent dépendre du moteur eCommerce utilisé et de votre mise en œuvre AEM. Ils sont disponibles (le cas échéant) lors de l’affichage de pages de produits et/ou de la modification d’informations sur les produits et peuvent inclure :
+Les différents attributs de produit peuvent dépendre du moteur eCommerce utilisé et de votre mise en œuvre AEM. Ils sont disponibles (le cas échéant) lors de l’affichage de pages produits et/ou de la modification d’informations sur les produits et peuvent inclure :
 
 * **Image**
 
@@ -295,7 +295,7 @@ Un catalogue regroupe des données sur les produits afin de faciliter la gestion
 
 #### Catalogues en plusieurs langues {#catalogs-in-multiple-languages}
 
-AEM prend en charge le contenu du produit en plusieurs langues. Lorsque vous demandez des données, le framework d’intégration extrait la langue de l’arborescence actuelle (par exemple, `en_US` pour les pages sous `/content/geometrixx-outdoors/en_US`).
+AEM prend en charge le contenu du produit en plusieurs langues. Lorsque vous demandez des données, le framework d’intégration récupère la langue de l’arborescence actuelle (par exemple, `en_US` pour les pages sous `/content/geometrixx-outdoors/en_US`).
 
 Pour un magasin multilingue, vous pouvez importer votre catalogue pour chaque arborescence de langues individuellement (ou le copier avec [MSM](/help/sites-administering/msm.md)).
 
@@ -452,18 +452,18 @@ Les sections du catalogue vous fournissent, par exemple :
 
 ![ecommerce_categoryrunning](/help/sites-administering/assets/ecommerce_categoryrunning.png)
 
-### Pages de produits {#product-pages}
+### Pages produits {#product-pages}
 
-Les pages de produits fournissent des informations exhaustives sur des produits spécifiques. Les mises à jour dynamiques sont également répercutées ; par exemple, les modifications de prix enregistrées dans le moteur e-commerce.
+Les pages produits fournissent des informations exhaustives sur des produits spécifiques. Les mises à jour dynamiques sont également répercutées ; par exemple, les modifications de prix enregistrées dans le moteur e-commerce.
 
-Les pages de produits sont des pages AEM qui utilisent le composant **Produit**, par exemple, dans le modèle **Produit Commerce** :
+Les pages produits sont des pages AEM qui utilisent le composant **Produit**, par exemple, dans le modèle **Produit Commerce** :
 
 ![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
 Le composant Produit fournit les éléments suivants :
 
 * Informations générales sur les produits, dont le texte et les images.
-* Tarification. Elle est extraite du moteur e-commerce chaque fois que la page est affichée/actualisée.
+* Tarification. Elle est récupérée du moteur e-commerce chaque fois que la page est affichée/actualisée.
 * Informations sur les variantes des produits, par exemple, couleur et taille.
 
 Ces informations permettent à l’acheteur de sélectionner les éléments ci-dessous lorsqu’il ajoute un article dans son panier :
@@ -473,7 +473,7 @@ Ces informations permettent à l’acheteur de sélectionner les éléments ci-d
 
 #### Pages de destination de produits {#product-landing-pages}
 
-Il s’agit de pages AEM qui fournissent principalement des informations statiques ; par exemple, une introduction et une vue d’ensemble avec des liens vers les pages de produits sous-jacentes.
+Il s’agit de pages AEM qui fournissent principalement des informations statiques ; par exemple, une introduction et une vue d’ensemble avec des liens vers les pages produits sous-jacentes.
 
 ### Composant Produit {#product-component}
 
@@ -538,7 +538,7 @@ Les promotions, ainsi que les bons, vous permettent de réaliser des scénarios 
 
 Les promotions ne sont pas gérées par les responsables des informations sur les produits, mais par les responsables marketing :
 
-* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. ``
+* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. &grave;&grave;
 * Les promotions fournissent :
 
    * Une priorité
@@ -559,7 +559,7 @@ Dans AEM, les promotions sont également intégrées à [Campaign Management](/h
 
 Une promotion peut être contenue dans une expérience ou directement dans la campagne :
 
-* Si une expérience contient une promotion, elle peut alors être appliquée automatiquement à un segment ciblé.
+* Si une expérience contient une promotion, elle peut alors être appliquée automatiquement à un segment d’audience.
 
   Par exemple, dans l’exemple de site geometrixx-outdoors, la promotion :
 
@@ -569,7 +569,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 
 * Si une promotion ne s’affiche pas dans une expérience (seulement dans la campagne), elle ne peut pas être appliquée automatiquement à une audience. Cependant, elle peut se déclencher si l’acheteur saisit un bon dans son panier et que ce bon est associé à la promotion.
 
-  Par exemple, la promotion : 
+  Par exemple, la promotion :
 
   `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
@@ -577,7 +577,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 
 >[!NOTE]
 >
->Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Contenu marketing spécifique aux promotions (bannières, etc.) ne fait pas partie de la promotion Hybris.
+>Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Contenu marketing spécifique à une promotion (comme des bannières, etc.) ne fait pas partie de la promotion Hybris.
 
 ## Personnalisation {#personalization}
 
@@ -596,7 +596,7 @@ Le mécanisme exact peut dépendre du scénario :
 1. Le compte de la personne existe uniquement dans AEM :
 
    1. La personne est créée dans le moteur e-commerce avec le même ID de compte et un mot de passe aléatoire, qui seront stockés dans AEM.
-   1. Le mot de passe aléatoire est nécessaire, car AEM tente de se connecter au moteur eCommerce au premier appel (par exemple, lorsqu’une page de produit est demandée et que le moteur eCommerce est consulté pour le prix). Dans la mesure où cela se produit après la connexion AEM, le mot de passe n’est pas disponible.
+   1. Le mot de passe aléatoire est nécessaire, car AEM tente de se connecter au moteur eCommerce au premier appel (par exemple, lorsqu’une page produit est demandée et que le moteur eCommerce est consulté pour le prix). Dans la mesure où cela se produit après la connexion AEM, le mot de passe n’est pas disponible.
 
 1. Le compte utilisateur existe uniquement dans le moteur e-commerce :
 
@@ -645,7 +645,7 @@ Votre site doit stocker diverses adresses, dont les adresses de livraison et de 
 Ce composant Carnet d’adresses permet de :
 
 * modifier les adresses du carnet ;
-* sélectionner une adresse du carnet comme adresse de livraison ;
+* sélectionner une adresse du carnet comme adresse d’expédition ;
 * sélectionner une adresse du carnet comme adresse de facturation.
 
 Vous pouvez choisir l’adresse par défaut.
@@ -664,8 +664,8 @@ Le carnet d’adresses est utilisé lorsque vous passez en caisse avec votre pan
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-Les adresses sont conservées ci-dessous `user_home/profile/addresses`.
-Par exemple, Alison Parker serait enregistrée sous /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
+Les adresses sont conservées sous `user_home/profile/addresses`.
+Par exemple, pour Alison Parker, cela se trouverait sous /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
 
 Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. La propriété de profil `address.default` est définie avec le chemin d’accès de l’adresse sélectionnée pour la valeur.
 
@@ -675,7 +675,7 @@ Le moteur e-commerce utilise le contexte (essentiellement les informations sur l
 
 ## Panier et commandes {#shopping-cart-and-orders}
 
-Lorsque le nouvel acheteur ou la nouvelle acheteuse effectue des achats, il ou elle parcourt les pages de produits et sélectionne des articles à placer dans son panier. Au passage en caisse, la commande peut être passée.
+Lorsque la personne effectue des achats, elle parcourt les pages produits et sélectionne des articles à placer dans son panier. Au passage en caisse, la commande peut être passée.
 
 ### Acheteurs anonymes {#anonymous-shoppers}
 
@@ -704,7 +704,7 @@ Un client enregistré peut :
 Le panier fournit :
 
 * une vue d’ensemble des éléments sélectionnés ;
-* des liens vers des pages de produits pour les articles sélectionnés ;
+* des liens vers des pages produits pour les articles sélectionnés ;
 * la possibilité de :
 
    * mettre à jour le nombre/la quantité d’éléments individuels ;
@@ -764,7 +764,7 @@ Diverses informations sont stockées, notamment les éléments suivants :
 
 * **Éléments de contenu**
 
-  Liste des éléments triés.
+  Liste des articles commandés.
 
 * **Sous-total**
 
@@ -812,7 +812,7 @@ Diverses informations sont stockées, notamment les éléments suivants :
 
 >[!NOTE]
 >
->Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, elle se trouve sous :
+>Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour l’emplacement. Dans l’exemple générique, elle se trouve sous :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Lorsque la commande est conservée dans AEM, la console Commande affiche les informations ci-dessous pour chaque commande :
@@ -846,7 +846,7 @@ L’e-commerce gère ensuite le processus de passage en caisse avec les entrées
 
 ### Sécurité des paiements {#payment-security}
 
-Les informations de paiement, dont les informations de carte de crédit, sont généralement gérées par le moteur eCommerce. AEM transfère ces informations sur les transactions au moteur (d’où elles sont ensuite transférées à un service de traitement des paiements).
+Les informations de paiement, dont les informations de carte de crédit, sont généralement gérées par le moteur eCommerce. AEM transfère ces informations transactionnelles au moteur (d’où elles sont ensuite transférées à un service de traitement des paiements).
 
 La conformité aux normes de sécurité des données de l’industrie des cartes de paiement peut être obtenue.
 
