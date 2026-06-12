@@ -8,7 +8,7 @@ exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,7 @@ Consultez [Appliquer un workflow à une collection](/help/assets/manage-collecti
 
 Les administrateurs peuvent configurer un workflow pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité est utile pour les utilisateurs et les spécialistes du marketing du secteur, par exemple pour créer un workflow personnalisé sur des dossiers spécifiques. Disons que toutes les ressources de la séance photo d’une agence peuvent recevoir un filigrane ou que toutes les ressources téléchargées par un programme de travail indépendant peuvent être traitées pour créer des rendus spécifiques.
 
-Pour chaque modèle de workflow, les utilisateurs peuvent créer un lanceur de workflow qui l’exécute. Un lanceur de workflow surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux spécialistes marketing pour leur permettre de créer les workflows et de configurer le lanceur. Les utilisateurs peuvent modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
+Pour chaque modèle de workflow, il est possible de créer un lanceur de workflows qui l’exécute. Un lanceur de workflows surveille les modifications du référentiel de contenu et exécute le workflow lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux spécialistes marketing pour leur permettre de créer les workflows et de configurer le lanceur. Les utilisateurs peuvent modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le workflow s’exécute sur toutes les ressources nouvellement chargées. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
 * Effectuez une copie du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] et modifiez-la pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’une [Division OU](/help/sites-developing/workflows-step-ref.md#or-split) qui s’applique de manière conditionnelle au plus grand nombre de dossiers requis.

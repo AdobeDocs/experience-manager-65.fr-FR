@@ -12,8 +12,8 @@ exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 99%
+source-wordcount: '1298'
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,8 @@ Vous devez disposer des droits d’administration pour créer, modifier et suppr
 
 Une fois votre profil de métadonnées, d’image ou de vidéo créé, vous pouvez l’affecter à un ou plusieurs dossiers que vous utilisez comme destination pour les ressources venant d’être chargées.
 
-Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
-Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
+Un concept important concernant l’utilisation des profils dans Experience Manager Assets est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers au sein de ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
+Grâce à des stratégies d’attribution de noms aux fichiers et dossiers cohérentes et appropriées et à de bonnes pratiques en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil approprié.
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Consultez la section [Réglage de la taille du lot du workflow de retraitement](
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow**&#x200B;[!UICONTROL > &#x200B;]&#x200B;**Modèles]**.
+1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow**[!UICONTROL  > ]**Modèles]**.
 1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Retraitement Dynamic Media]**.
 
    ![Page Modèles de workflow avec le workflow Retraitement Dynamic Media sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)

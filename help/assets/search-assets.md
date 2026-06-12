@@ -10,8 +10,8 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
-ht-degree: 98%
+source-wordcount: '5796'
+ht-degree: 97%
 
 ---
 
@@ -87,8 +87,8 @@ Par défaut, la recherche d’[!DNL Experience Manager] associe les termes de re
 * `woman.running`
 * `woman-running`
 
-Toutefois, la requête `woman -running` renvoie des ressources sans `running` dans leurs métadonnées.
-L’utilisation des balises intelligentes ajoute une clause supplémentaire `OR` permettant de retrouver n’importe quel terme de recherche correspondant aux balises intelligentes appliquées. Une ressource étiquetée avec `woman` ou `running` à l’aide des balises intelligentes apparaît également dans ce type de requête. Les résultats de la recherche sont donc une combinaison de :
+Toutefois, la requête renvoie `woman -running` des ressources sans `running` dans leurs métadonnées.
+L’utilisation de balises intelligentes ajoute une clause de `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes appliquées. Une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît également dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées (comportement par défaut) ;
 
@@ -126,7 +126,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources particul
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. Pour plus d’informations, voir [Recherche dans [!DNL Experience Manager]](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336/?captions=fre_fr&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vidéo : Découvrez comment les résultats de recherche sont classés et comment le classement peut être influencé.*
 
@@ -493,6 +493,6 @@ Liez et dissociez les ressources qui s’affichent dans les résultats de recher
 
 >[!MORELIKETHIS]
 >
->* Guide de mise en œuvre des recherches[[!DNL Experience Manager] &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

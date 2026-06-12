@@ -7,8 +7,8 @@ exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 99%
+source-wordcount: '1741'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
->Tenez compte des [&#x200B; Bonnes pratiques &#x200B;](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
+>Tenez compte des [ Bonnes pratiques ](/help/assets/content-fragments/content-fragments.md#best-practices) lorsque vous utilisez vos modèles de fragment de contenu et vos fragments de contenu.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
 * **Enregistrer** permet d’accéder à l’option **Enregistrer et fermer**.
 
-* La liste déroulante marquée des trois points (**...**) donne accès à des actions supplémentaires :
+* Les trois points (**...**) La liste déroulante permet d’accéder à des actions supplémentaires :
    * **Mettre à jour les références de page**
       * Cette option met à jour toutes les références de la page.
    * **[Publication rapide](#publishing-and-referencing-a-fragment)**
@@ -348,7 +348,7 @@ Ces dernières sont affichées dans des versions côte à côte dans lesquelles�
 
 ![comparaison](assets/cfm-managing-06.png)
 
-## Restauration vers une version spécifique   {#reverting-to-a-version}
+## Restauration vers une version spécifique  {#reverting-to-a-version}
 
 Vous pouvez rétablir une version spécifique de votre fragment :
 

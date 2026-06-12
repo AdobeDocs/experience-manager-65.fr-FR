@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Utilisation de sélecteurs {#working-with-selectors}
 
-Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
+Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des ensembles d’images, des visionneuses à 360° et des ensembles multimédias, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
 Cette rubrique décrit comment utiliser les sélecteurs de produits, de sites et de ressources, y compris comment naviguer, filtrer et trier dans les sélecteurs.
 
@@ -90,11 +90,11 @@ Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez
 
 ## Utilisation du sélecteur de ressources {#selecting-assets}
 
-Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous sélectionnez **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une visionneuse d’images, de contenus multimédia variés ou à 360°.
+Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des ensembles d’images, des visionneuses de supports variés et des visionneuses à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous sélectionnez **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les ensembles d’images, les visionneuses de supports variés et les visionneuses à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement un ensemble d’images, une visionneuse de supports variés ou une visionneuse à 360°.
 
 Reportez-vous également à la section [Sélecteur de ressources](search-assets.md#assetpicker) pour plus d’informations.
 
-1. Accédez à l’ensemble de carrousels et créez une diapositive. Ou accédez à la vidéo interactive, accédez à l’onglet **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
+1. Accédez à l’ensemble de carrousels et créez une diapositive. Ou accédez à la vidéo interactive, accédez à l’onglet **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de supports variés, des ensembles d’images ou des visionneuses à 360°.
 1. Sélectionnez l’icône **[!UICONTROL Sélecteur de ressources]** (dossier avec loupe) et accédez à une ressource.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)

@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '586'
 ht-degree: 98%
 
 ---
@@ -60,20 +60,20 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 
 **Pour prévisualiser des ressources 3D dans Experience Manager :**
 
-1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
-Consultez les sections [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Charger des ressources](/help/assets/manage-assets.md#uploading-assets).
+1. Vérifiez que vous avez chargé des ressources 3D dans Experience Manager.
+Voir [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Charger Assets](/help/assets/manage-assets.md#uploading-assets).
 1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/assets-dm/navigation-assets.png)
 
 1. Près du coin supérieur droit de la page, dans la liste déroulante Mode, sélectionnez **[!UICONTROL Mode Carte]**, puis accédez au fichier 3D à prévisualiser.
 
-   Sélection de carte ![3D](/help/assets/assets-dm/3d-card-select.png)
+   ![Sélection de carte 3D](/help/assets/assets-dm/3d-card-select.png)
    _En mode Carte, sélectionnez la carte du fichier 3D à prévisualiser._
 
 1. Sélectionnez la carte de la ressource 3D.
 
-   ![Aperçu 3D interactif](/help/assets/assets-dm/3d-preview.png)
+   ![Prévisualisation 3D interactive](/help/assets/assets-dm/3d-preview.png)
    _Prévisualisation interactive d’un fichier 3D dans la page d’affichage des détails du fichier._
 1. Sur la page d’affichage des détails de la ressource 3D, effectuez l’une des opérations suivantes :
 
