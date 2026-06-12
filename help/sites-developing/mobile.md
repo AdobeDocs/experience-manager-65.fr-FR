@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '3701'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3807'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Pour créer un site mobile, procédez comme suit :
 
 1. Créez le composant de page :
 
-   * Définissez la propriété `sling:resourceSuperType` sur `wcm/mobile/components/page`.
+   * Définissez la propriété `sling:resourceSuperType` sur . `wcm/mobile/components/page`
 De cette façon, le composant repose sur le composant de page mobile.
 
    * Créez le `body.jsp` avec la logique spécifique au projet.
@@ -54,7 +54,7 @@ De cette façon, le composant repose sur le composant de page mobile.
 Le composant de page mobile (`/libs/wcm/mobile/components/page`) :
 
 * Ajoute l’onglet **Mobile** à la boîte de dialogue des propriétés de la page.
-* Grâce à son `head.jsp`, il extrait le groupe d’appareils mobiles actuel de la requête et, si un groupe d’appareils est identifié, il utilise la méthode `drawHead()` du groupe pour ajouter le composant d’initialisation de l’émulateur associé du groupe d’appareils (uniquement en mode de création) et le rendu CSS du groupe d’appareils.
+* Grâce à son `head.jsp`, il récupère le groupe d’appareils mobiles actuel de la requête et, si un groupe d’appareils est identifié, il utilise la méthode `drawHead()` du groupe pour ajouter le composant d’initialisation de l’émulateur associé du groupe d’appareils (uniquement en mode de création) et le rendu CSS du groupe d’appareils.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Le **site mobile de démonstration We.Retail** utilise les composants mobiles su
 
 #### Créer un composant mobile {#creating-a-mobile-component}
 
-Le framework AEM Mobile permet de développer des composants sensibles au type d’appareil émettant la requête. Les exemples de code suivants montrent comment utiliser l’API mobile AEM dans un composant jsp et en particulier comment exécuter les actions suivantes : 
+Le framework AEM Mobile permet de développer des composants sensibles au type d’appareil émettant la requête. Les exemples de code suivants montrent comment utiliser l’API mobile AEM dans un composant jsp et en particulier comment exécuter les actions suivantes :
 
 * Récupérer la classe d’appareil à partir de la requête :
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -170,8 +170,8 @@ Pour créer un émulateur, consultez la section [Créer un émulateur mobile per
 
 **Principales caractéristiques des émulateurs mobiles**
 
-* Un groupe d’appareils est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe d’appareils, par exemple /etc/mobile/groups/touch, contient la propriété `emulators` sous le nœud `jcr:content`.
-Remarque : bien que le même émulateur puisse être affecté à plusieurs groupes d’appareils, ce n’est pas très logique.
+* Un groupe d’appareils est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe d’appareils, par exemple /etc/mobile/groups/touch, contient la propriété `emulators` sous le nœud `jcr:content` .
+Remarque : bien qu’il soit possible que le même émulateur appartienne à plusieurs groupes d’appareils, cela n’a pas beaucoup de sens.
 
 * Dans la boîte de dialogue de configuration du groupe d’appareils, la propriété `emulators` est définie avec le chemin du ou des émulateurs souhaités. Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 
@@ -220,7 +220,7 @@ Pour affecter un groupe d’appareils à votre site :
 
 Les filtres de groupe d’appareils définissent des critères fonctionnels pour déterminer si un appareil appartient ou non à un groupe. Lorsque vous créez un groupe d’appareils, vous pouvez sélectionner les filtres à utiliser pour évaluer les appareils.
 
-Au moment de l’exécution, quand AEM reçoit une requête HTTP d’un appareil, chaque filtre associé à un groupe compare les caractéristiques de l’appareil avec des critères spécifiques. L’appareil est considéré comme appartenant au groupe lorsqu’il possède toutes les caractéristiques que le filtre impose. Les caractéristiques sont extraites de la base de données WURFL™.
+Au moment de l’exécution, quand AEM reçoit une requête HTTP d’un appareil, chaque filtre associé à un groupe compare les caractéristiques de l’appareil avec des critères spécifiques. L’appareil est considéré comme appartenant au groupe lorsqu’il possède toutes les caractéristiques que le filtre impose. Les caractéristiques sont récupérées depuis la base de données WURFL™.
 
 Les groupes d’appareils peuvent utiliser aucun ou plusieurs filtres pour la détection des caractéristiques. De plus, un filtre peut être utilisé avec plusieurs groupes d’appareils. AEM fournit un filtre par défaut qui détermine si l’appareil dispose des fonctionnalités sélectionnées pour un groupe :
 
@@ -250,8 +250,8 @@ Créez un groupe d’appareils lorsque les groupes AEM installés ne répondent 
 1. Dans CRXDE, ajoutez un fichier **static.css** contenant les styles du groupe d’appareils sous le nœud `/etc/mobile/groups/special`.
 
 1. Ouvrez la page **Special Phones**.
-1. Pour configurer le groupe d’appareils, cliquez sur le bouton **Modifier** à côté de **Paramètres**.
-Dans l’onglet **Général** :
+1. Pour configurer le groupe d’appareils, cliquez sur le bouton **Modifier** en regard de **Paramètres**.
+Dans l’onglet **Général** :
 
    * **Titre** : nom du groupe d’appareils mobiles
    * **Description** : description du groupe.
@@ -317,10 +317,10 @@ Lorsqu’un appareil accède à votre site pour appareils mobiles, AEM le détec
 
 #### Installation d’une autre base de données WURFL™ {#installing-a-different-wurfl-database}
 
-La base de données WURFL™ tronquée installée avec AEM est une version antérieure au
-30 août 2011. Si votre version de WURFL a été publiée après le 30 août 2011, assurez-vous que l’utilisation que vous en faites est conforme à votre licence.
+La base de données WURFL™ tronquée installée avec AEM est une version antérieure à
+30 août 2011. Si votre version de WURFL a été publiée après le 30 août 2011, assurez-vous que l’utilisation que vous en faites est conforme à votre licence.
 
-Pour installer une base de données WURFL™, procédez comme suit : 
+Pour installer une base de données WURFL™, procédez comme suit :
 
 1. Dans CRXDE Lite, créez le dossier suivant : `/apps/wcm/mobile/devicespecs`.
 1. Copiez le fichier WURFL™ dans le dossier.
@@ -339,7 +339,7 @@ Ajoutez une chaîne user-agent en tant qu’expression régulière sous /apps/wc
 1. Dans **CRXDE Lite**, créez un noeud dans /apps/wcm/mobile/devicespecs/regexp, par exemple : `apple_ipad_ver1`.
 1. Ajoutez les propriétés suivantes au nœud :
 
-   * **regexp** : expression régulière définissant les agents-utilisateurs, par exemple :&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
+   * **regexp** : expression régulière définissant les user-agents, par exemple .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
    * **deviceId** : ID d’appareil tel que défini dans le fichier wurfl.xml, par exemple : `apple_ipad_ver1`
 
 La configuration ci-dessus provoque le mappage des appareils pour lesquels le user-agent correspond à l’expression régulière fournie avec l’ID d’appareil WURFL™ apple_ipad_ver1, s’il existe.
@@ -381,7 +381,7 @@ Lorsque la valeur de la propriété `cq:variantDomain` d’un nœud `cq:siteVari
 
 ### Définition d’une URL spécifique à un groupe d’appareils {#defining-a-device-group-specific-url}
 
-Si vous ne souhaitez pas utiliser des liens secondaires, vous pouvez configurer une URL globale pour chaque `DeviceGroup`. Adobe vous recommande de créer votre propre bibliothèque cliente qui intègre la bibliothèque cliente `browsermap.standard` mais qui redéfinit les groupes d’appareils.
+Si vous ne souhaitez pas utiliser des liens secondaires, vous pouvez configurer une URL globale pour chaque `DeviceGroup`. Adobe vous recommande de créer votre propre bibliothèque cliente qui incorpore la bibliothèque cliente `browsermap.standard` mais qui redéfinit les groupes d’appareils.
 
 BrowserMap est conçu de telle sorte que les définitions de groupes d’appareils peuvent être remplacées en créant et en ajoutant un groupe d’appareils du même nom à l’objet `BrowserMap` de votre bibliothèque cliente personnalisée.
 
@@ -535,7 +535,7 @@ Par conséquent, vous devez appeler la même `URL` avec la valeur `device` défi
 
 ## Traitement de requête mobile {#mobile-request-processing}
 
-AEM traite les requêtes émises par des appareils mobiles appartenant au groupe d’appareils tactiles comme suit : 
+AEM traite les requêtes émises par des appareils mobiles appartenant au groupe d’appareils tactiles comme suit :
 
 1. Un iPad envoie une requête à l’instance de publication AEM, par ex. `https://localhost:4503/content/geometrixx_mobile/en/products.html`.
 1. AEM détermine si le site de la page demandée est un site pour appareils mobiles (en vérifiant si la page de premier niveau `/content/geometrixx_mobile` étend le composant de page mobile). Si oui :

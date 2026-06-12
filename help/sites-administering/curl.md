@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
-workflow-type: ht
-source-wordcount: '1061'
+workflow-type: tm+mt
+source-wordcount: '1071'
 ht-degree: 100%
 
 ---
@@ -302,9 +302,9 @@ Pour plus d’informations, consultez [MSRP – Fournisseur de ressources de st
 
 Pour plus d’informations, consultez [Activation de CRXDE Lite dans AEM](/help/sites-administering/enabling-crxde-lite.md).
 
-### Nettoyage de la mémoire du magasin de données {#data-store-garbage-collection}
+### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
-Pour plus d’informations, consultez [Nettoyage de la mémoire de magasin de données](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
+Pour plus d’informations, consultez [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 
 ### Intégration d’Analytics à Target {#analytics-and-target-integration}
 
