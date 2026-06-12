@@ -12,9 +12,13 @@ exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
-product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 1093
@@ -141,7 +145,7 @@ Voir [Ajout de Dynamic Media Assets aux pages](/help/assets/adding-dynamic-media
 
 Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
 
-Consultez [ Publication de ressources Dynamic Media ](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
+Consultez [&#x200B; Publication de ressources Dynamic Media &#x200B;](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication de vidéos 360.
 Voir aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
 Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir aussi [ Ajout de ressources Dynamic Media aux pages ](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Voir aussi [&#x200B; Ajout de ressources Dynamic Media aux pages &#x200B;](/help/assets/adding-dynamic-media-assets-to-pages.md).

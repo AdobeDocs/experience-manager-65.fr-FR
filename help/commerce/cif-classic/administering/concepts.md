@@ -150,7 +150,7 @@ Cependant, généralement, un projet doit développer son propre fournisseur de 
 >
 >Les importateurs de Geometrixx utilisent des fichiers CSV. Une description du schéma est acceptée (avec les propriétés personnalisées autorisées) dans les commentaires au-dessus de leur mise en œuvre.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html?lang=fr) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html?lang=fr) et [CatalogBlueprintImporter. ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html?lang=fr) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
+[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html?lang=fr) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html?lang=fr) et [CatalogBlueprintImporter. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html?lang=fr) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
 Lorsqu’un importateur/fournisseur de commerce spécifique est répertorié dans la liste déroulante, toutes les données complémentaires dont il a besoin doivent être définies (en fonction du type de l’importateur) dans :
 
@@ -538,7 +538,7 @@ Les promotions, ainsi que les bons, vous permettent de réaliser des scénarios 
 
 Les promotions ne sont pas gérées par les responsables des informations sur les produits, mais par les responsables marketing :
 
-* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. ``
+* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. &grave;&grave;
 * Les promotions fournissent :
 
    * Une priorité
