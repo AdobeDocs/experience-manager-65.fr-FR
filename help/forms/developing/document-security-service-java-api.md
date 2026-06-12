@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 100%
+source-wordcount: '1076'
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fort
 
 ## Démarrage rapide (mode SOAP) : créer une politique à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer une politique nommée *Autoriser la copie*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Ce jeu de politiques existe par défaut. (Consultez la section [Créer des politiques](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
+L’exemple de code Java suivant permet de créer une politique nommée *Autoriser la copie*. L’ensemble de politiques auquel la politique est ajoutée est nommé *Ensemble de politiques global*. Cet ensemble de politiques existe par défaut. (Consultez la section [Créer des politiques](/help/forms/developing/protecting-documents-policies.md#creating-policies)).
 
 ```java
  /*
@@ -181,7 +181,7 @@ L’exemple de code Java suivant permet de créer une politique nommée *Autoris
 
 ## Démarrage rapide (mode SOAP) : modifier une politique à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de modifier une politique nommée *Autoriser la copie* en définissant la période d’ouverture hors connexion à 40 jours. (Consultez la section [Modifier des politiques](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
+L’exemple de code Java suivant permet de modifier une politique nommée *Autoriser la copie* en définissant la période de bail hors ligne sur 40 jours. (Consultez la section [Modifier des politiques](/help/forms/developing/protecting-documents-policies.md#modifying-policies)).
 
 ```java
  /*
@@ -374,7 +374,7 @@ L’exemple de code Java suivant permet de supprimer une politique nommée *Auto
 
 ## Démarrage rapide (mode SOAP) : appliquer une politique à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document PDF nommé *Loan.pdf*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Le document protégé par une politique est enregistré en tant que fichier PDF nommé *PolicyProtectedLoanDoc.pdf. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
+L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document PDF nommé *Loan.pdf*. L’ensemble de politiques auquel la politique est ajoutée est nommé *Ensemble de politiques global*. Le document protégé par une politique est enregistré en tant que fichier PDF nommé *PolicyProtectedLoanDoc.pdf. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -701,7 +701,7 @@ L’exemple de code Java suivant permet de révoquer un document protégé par u
 
 ## Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une politique à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L’exemple de code Java suivant permet d’inspecter un document PDF protégé par une politique nommé *PolicyProtectedLoanDoc.pdf*. (Consultez la section [Inspecter des documents PDF protégés par une politique](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)).
+L’exemple de code Java suivant permet d’inspecter un document PDF protégé par une politique nommé *PolicyProtectedLoanDoc.pd* f. (Voir [Inspecter des documents PDF protégés par une politique](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
 ```java
  /*
@@ -1530,7 +1530,7 @@ L’exemple de code Java suivant permet de rechercher l’événement de créati
 
 ## Démarrage rapide (SOAP) : appliquer une politique à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document Word nommé *Loan.doc*. Le jeu de politiques auquel la politique est ajoutée est nommé *Jeu de politiques global*. Le document protégé par une politique est enregistré en tant que fichier DOC nommé *PolicyProtectedLoanDoc.doc. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
+L’exemple de code Java suivant permet d’appliquer une politique nommée *Autoriser la copie* à un document Word nommé *Loan.doc*. L’ensemble de politiques auquel la politique est ajoutée est nommé *Ensemble de politiques global*. Le document protégé par une politique est enregistré en tant que fichier DOC nommé *PolicyProtectedLoanDoc.doc. * (Consultez la section [Appliquer des politiques à des documents PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)).
 
 ```java
  /*
@@ -1753,7 +1753,7 @@ L’exemple de code suivant permet de supprimer une politique d’un document Wo
 
 ## Démarrage rapide (mode SOAP) : créer une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de créer une politique abstraite nommée AllowCopy. Le jeu de politiques auquel la politique est ajoutée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
+L’exemple de code Java suivant permet de créer une politique abstraite nommée AllowCopy. L’ensemble de politiques auquel la politique est ajoutée est nommé Ensemble de politiques global. Cet ensemble de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -1870,7 +1870,7 @@ public class CreateAbstractPolicySoap {
 
 ## Démarrage rapide (mode SOAP) : modifier une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de modifier une politique abstraite nommée AllowCopy. Le jeu de politiques dans lequel la politique est modifiée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
+L’exemple de code Java suivant permet de modifier une politique abstraite nommée AllowCopy. L’ensemble de politiques dans lequel la politique est modifiée est nommé Ensemble de politiques global. Cet ensemble de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*
@@ -1969,7 +1969,7 @@ public class ModifyingAbstractPolicySoap {
 
 ## Démarrage rapide (mode SOAP) : supprimer une politique abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
-L’exemple de code Java suivant permet de supprimer une politique abstraite nommée AllowCopy. Le jeu de politiques à partir duquel la politique est supprimée est nommé Jeu de politiques global. Ce jeu de politiques existe par défaut. (Consultez la section Créer des politiques).
+L’exemple de code Java suivant permet de supprimer une politique abstraite nommée AllowCopy. L’ensemble de politiques à partir duquel la politique est supprimée est nommé Ensemble de politiques global. Cet ensemble de politiques existe par défaut. (Consultez la section Créer des politiques).
 
 ```java
 /*

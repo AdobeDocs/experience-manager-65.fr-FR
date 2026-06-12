@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide API Java&trade; (SOAP) du service Barcoded Forms
-description: Découvrez comment le démarrage rapide API Java&trade; (SOAP) du service Barcoded Forms Java dans AEM Forms permet un traitement transparent des codes à barres.
+title: Démarrage rapide API (SOAP) de Java&trade du service Barcoded Forms
+description: Découvrez comment le service Barcoded Forms Java&trade ; API Quick Start (SOAP) d’AEM Forms permet un traitement transparent des codes à barres.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 87%
 
 ---
 

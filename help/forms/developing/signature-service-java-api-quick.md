@@ -1,6 +1,6 @@
 ---
 title: Didacticiel de mise en route (SOAP) de lʼAPI Java du service Signature
-description: 'Le service Signature vous permet dʼeffectuer les actions suivantes : ajout dʼun champ de signature à un document PDF, récupération des noms de champs de signature, modification dʼun champ de signature, signature numérique dʼun document PDF, signature numérique dʼun formulaire XFA, certification dʼun document PDF, vérification dʼune signature numérique, vérification de plusieurs signatures numériques et suppression dʼune signature numérique.'
+description: 'Le service Signature vous permet dʼeffectuer les actions suivantes : ajout dʼun champ de signature à un document PDF, récupération des noms de champ de signature, modification dʼun champ de signature, signature numérique dʼun document PDF, signature numérique dʼun formulaire XFA, certification dʼun document PDF, vérification dʼune signature numérique, vérification de plusieurs signatures numériques et suppression dʼune signature numérique.'
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '871'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ Les didacticiels de mise en route (SOAP) de lʼAPI Java suivants sont disponible
 
 [Didacticiel de mise en route (mode SOAP) : ajout d’un champ de signature à un document PDF à l’aide de l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[Didacticiel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Tutoriel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [Didacticiel de mise en route (mode SOAP) : modification d’un champ de signature à l’aide de l’API Java](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
@@ -162,7 +162,7 @@ L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureF
  
 ```
 
-## Didacticiel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## Tutoriel de mise en route (mode SOAP) : récupération des noms de champ de signature à l’aide de l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
 L’exemple de code Java suivant récupère les noms des champs de signature dans un document PDF nommé *LoanSig.pdf*. (Consultez la section [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)).
 
@@ -270,7 +270,7 @@ L’exemple de code Java suivant récupère les noms des champs de signature dan
 
 ## Didacticiel de mise en route (mode SOAP) : modification d’un champ de signature à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en s’assurant qu’aucune modification n’est autorisée. Une fois le document PDF, qui contient le champ de signature modifié, renvoyé par le service Signature, il est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature). (Consultez la section [Modification des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)).
+L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en s’assurant qu’aucune modification n’est autorisée. Une fois le document PDF, qui contient le champ de signature modifié, renvoyé par le service Signature, il est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature.) (Voir [Modifier les champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*

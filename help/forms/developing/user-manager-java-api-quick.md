@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 100%
+source-wordcount: '494'
+ht-degree: 95%
 
 ---
 
@@ -380,7 +380,7 @@ L’exemple de code suivant permet de trouver un utilisateur local et le groupe 
 
 ## Démarrage rapide (mode SOAP) : gérer des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à un principal, dʼimprimer les rôles dont dispose le principal et de supprimer par la suite le rôle du principal. Ce démarrage rapide appelle deux services : DirectoryManager et AuthorizationManager.(Consultez la section [Gérer les rôles et les autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
+L’exemple de code suivant permet d’affecter le rôle Utilisateur des services à un principal, dʼimprimer les rôles dont dispose le principal et de supprimer par la suite le rôle du principal. Deux services sont appelés pour ce démarrage rapide : le service DirectoryManager et le service AuthorizationManager (voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
 
 ```java
  /*
