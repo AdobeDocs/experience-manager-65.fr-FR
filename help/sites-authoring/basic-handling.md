@@ -555,7 +555,7 @@ La colonne Chronologie permet d’effectuer les opérations suivantes :
 
       * et Afficher tout
 
-* [Ajouter/afficher des commentaires sur l’élément sélectionné. ](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
+* [Ajouter/afficher des commentaires sur l’élément sélectionné. &#x200B;](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
 * Certaines consoles disposent de fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez effectuer les opérations suivantes :
 

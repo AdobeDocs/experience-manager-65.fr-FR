@@ -198,7 +198,7 @@ Par exemple, si un utilisateur ou une utilisatrice crée un modèle de fragment 
    * Trois d’entre eux ont été contrôlés par l’utilisateur ou utilisatrice : `author`, `main` et `referencearticle`.
 
    * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu. Dans cet exemple,
-(les [ champs d’assistance ](#helper-fields)) `_path`, `_metadata`, `_variations`.
+(les [&#x200B; champs d’assistance &#x200B;](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Après qu’un utilisateur a créé un fragment de contenu reposant sur le modèle d’article, il peut être interrogé via GraphQL. Vous trouverez des exemples à la section [Exemples de Requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basée sur un [modèle de structure de fragment de contenu à utiliser avec GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
