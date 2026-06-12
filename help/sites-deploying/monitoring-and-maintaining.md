@@ -1134,7 +1134,7 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
+   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr
 
 ### Détérioration régulière des performances {#regular-performance-degradation}
 
