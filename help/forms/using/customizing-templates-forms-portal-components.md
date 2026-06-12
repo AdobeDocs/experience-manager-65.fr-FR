@@ -88,11 +88,11 @@ Le portail Formulaires fournit une syntaxe permettant aux espaces réservés d�
 
 Pour inclure une entrée répétable, configurez l’attribut **data-repeatable** sur **true**.
 
-*Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**qui figure dans l’élément Div a la valeur **true**.*
+*Dans l’exemple présenté, deux éléments Div se trouvent en haut du modèle personnalisé. La première, avec la classe CSS « __FP_boxes-container », fonctionne comme un élément conteneur pour les formulaires répertoriés. Le second, avec la classe CSS « __FP_boxes », est un modèle pour les entités de base, dans ce cas un formulaire. L’attribut **data-repeatable**&#x200B;qui figure dans l’élément Div a la valeur **true**.*
 
 Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi exclusif. Pour afficher des métadonnées personnalisées à un emplacement spécifique du formulaire, ajoutez la propriété **${metadata_prop} à cet emplacement**
 
-*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**et **path**.*
+*Dans cet exemple, la propriété des métadonnées est utilisée dans plusieurs instances. Elle est utilisée par exemple de façon adéquate dans **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;et **path**.*
 
 ## Métadonnées prêtes à l’emploi {#out-of-the-box-metadata}
 

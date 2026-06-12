@@ -154,7 +154,7 @@ Il permet de faire glisser des éléments du modèle de formulaire sur le formul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Ajoute un champ pour capturer une adresse e-mail. Le composant E-mail, par défaut, valide les adresses e-mail à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Pièce jointe</td>

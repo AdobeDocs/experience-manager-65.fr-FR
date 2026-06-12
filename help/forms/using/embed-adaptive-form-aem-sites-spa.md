@@ -23,7 +23,7 @@ ht-degree: 96%
 
 AEM Forms permet aux équipes de développement de formulaires d’incorporer facilement des formulaires adaptatifs et des communications interactives dans une application monopage AEM Sites. Le formulaire adaptatif et la communication interactive incorporés fonctionnent parfaitement et les utilisateurs peuvent remplir et envoyer le formulaire sans quitter la page. Cela permet à l’utilisateur de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire adaptatif ou la communication interactive.
 
-Dans une application d’une seule page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide du composant [Conteneur SPA AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
+Dans une application d’une seule page AEM Sites, vous pouvez ajouter un formulaire adaptatif ou une communication interactive à l’aide du composant [Conteneur SPA AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Il s’agit d’un composant AEM Forms pour les SPA AEM Sites que vous pouvez ajouter à votre page Sites.
 
 Pour plus d’informations sur l’incorporation d’un formulaire adaptatif dans une page AEM Sites non SPA, consultez la section [Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 

@@ -241,7 +241,7 @@ Pour activer le service de préremplissage, spécifiez la configuration de servi
 >La configuration du service de préremplissage s’applique aux formulaires adaptatifs, aux formulaires HTML5 et aux ensembles de formulaires HTML5.
 
 1. Ouvrez la **[!UICONTROL configuration de la console web d’Adobe Experience Manager]** à l’aide de l’URL :\
-   https://<serveur>:<port>/system/console/configMgr
+   https://&lt;serveur>:&lt;port>/system/console/configMgr
 1. Recherchez et ouvrez la **[!UICONTROL configuration de service de préremplissage par défaut]**.
 
    ![Configuration du préremplissage](assets/prefill_config_new.png)
