@@ -11,9 +11,9 @@ exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '5755'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '5992'
+ht-degree: 97%
 
 ---
 
@@ -125,8 +125,8 @@ Pour purger les versions d’un site web, procédez comme suit :
 
    ![la configuration de la purge de version](assets/version-purge-configuration.png),
 
-   * **la purge des chemins d’accès**.
-Définissez le chemin d’accès de début du contenu à purger. Par exemple, `/content/wknd`.
+   * **Purger les chemins d’accès**
+Définissez le chemin d’accès de début du contenu à purger, par exemple, `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -142,10 +142,10 @@ Définissez le chemin d’accès de début du contenu à purger. Par exemple, `/
    * **Nombre maximal de versions**
 Définissez le nombre maximal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
-   * **Nombre minimal de versions**
-Définissez le nombre minimal de versions (pour chaque noeud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+   * **Nombre minimum de versions**
+Définissez le nombre minimal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
-   * **Âge maximal de la version**
+   * **Âge de version maximal**
 Définissez l’âge maximal de la version en jours (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
    Cliquez ensuite sur **Enregistrer**.
@@ -340,17 +340,17 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >
    >`org.apache.sling.commons.log.pattern` prend en charge jusqu’à six arguments.
    >
-   >{0} Horodatage de type `java.util.Date`
+   >`java.util.Date` Horodatage de type {0}
    >
-   >{1} Le marqueur de journal
+   >{1} du marqueur de journal
    >
-   >{2} Le nom du thread actuel
+   >{2} le nom du thread actuel
    >
-   >{3} Le nom de l’enregistreur
+   >{3} le nom de l’enregistreur
    >
-   >{4} Le niveau de journalisation
+   >{4} le niveau de journalisation
    >
-   >{5} Le message du journal
+   >{5} le message du journal
    >
    >Si l’appel de journal comprend un `Throwable`, la trace de pile est ajoutée au message.
 
@@ -435,13 +435,13 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >* Une taille maximale peut être spécifiée par un nombre. Si aucune unité de taille n’est donnée, il s’agit du nombre d’octets, ou vous pouvez ajouter l’une des unités de taille : `KB`, `MB` ou `GB` (la casse est ignorée).
    >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Il définit la période après laquelle le fichier est pivoté. En outre, le suffixe ajouté au fichier pivoté (pour identification).
    >
-   >La valeur par défaut est de yyyy-MM-dd (pour la rotation quotidienne du journal).
+   >La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    >
    >Par exemple, à minuit, le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette date est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers une version nouvelle et vide de ../logs/error.log jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
    >
    >| `'.'yyyy-MM` | Rotation au début de chaque mois |
    >|---|---|
-   >| `'.'yyyy-ww` | Rotation le premier jour de la semaine (dépend du paramètre régional) |
+   >| `'.'yyyy-ww` | Rotation le premier jour de la semaine (dépend des paramètres régionaux) |
    >| `'.'yyyy-MM-dd` | Rotation à minuit chaque jour |
    >| `'.'yyyy-MM-dd-a` | Rotation à minuit et midi chaque jour |
    >| `'.'yyyy-MM-dd-HH` | Rotation au début de chaque heure |
@@ -503,7 +503,7 @@ Pour surveiller un agent de réplication :
 1. Cliquez sur **Réplication**.
 1. Double-cliquez sur le lien vers les agents pour l’environnement approprié (volet gauche ou droit) ; par exemple, **Agents sur l’auteur**.
 
-   La fenêtre qui s’affiche donne un aperçu de tous vos agents de réplication pour l’environnement de création, y compris leur cible et leur état.
+   La fenêtre qui s’affiche donne un aperçu de tous vos agents de réplication pour l’environnement de création, y compris leur cible et leur statut.
 
 1. Cliquez sur le nom de l’agent approprié (qui est un lien) pour afficher des informations détaillées sur cet agent :
 
@@ -887,7 +887,7 @@ Les informations sur le trafic de requêtes (nombre de requêtes pendant une pé
 
 * des différences significatives dans l’activité (c’est-à-dire la distinction entre « de nombreuses requêtes » et « une faible activité »
 * lorsqu’une instance n’est pas utilisée
-* tout redémarrage (les compteurs sont réinitialisés sur 0)
+* tout redémarrage (compteurs réinitialisés sur 0)
 
 Pour automatiser la collecte des informations, vous pouvez également installer un RequestFilter afin d’incrémenter un compteur pour chaque requête. Plusieurs compteurs peuvent être utilisés pour différentes périodes.
 
@@ -956,9 +956,9 @@ Les informations suivantes peuvent s’avérer utiles :
 
 * [Combien d’auteurs travaillent avec le système ?](#how-many-authors-are-working-with-the-system)
 * [Quel est le nombre moyen d’activations de page par jour ?](#what-is-the-average-number-of-page-activations-per-day)
-* [Combien de pages maintenez-vous actuellement sur ce système ? ](#how-many-pages-do-you-currently-maintain-on-this-system)
-* [Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ? ](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
-* [Quel est le nombre moyen de Live Copies par mois ? ](#what-is-the-average-number-of-live-copies-per-month)
+* [Combien de pages maintenez-vous actuellement sur ce système ?](#how-many-pages-do-you-currently-maintain-on-this-system)
+* [Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
+* [Quel est le nombre moyen de Live Copies par mois ?](#what-is-the-average-number-of-live-copies-per-month)
 * [Si vous utilisez AEM Assets, combien de ressources maintenez-vous actuellement ?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [Quelle est la taille moyenne des ressources ?](#what-is-the-average-size-of-the-assets)
 * [Combien de modèles sont actuellement utilisés ?](#how-many-templates-are-currently-used)
@@ -1134,7 +1134,7 @@ Si votre système manque d’espace disque ou vous constatez une fragmentation d
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr
+   * [Trop De Fichiers Ouverts]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Détérioration régulière des performances {#regular-performance-degradation}
 

@@ -92,7 +92,7 @@ You can find the packages at these locations:
 
 Le composant OSGi `PreUpgradeTasksMBean` est préconfiguré avec une liste de tâches de maintenance bénéficiant déjà de la mise à niveau, pouvant toutes être exécutées simultanément. Vous pouvez configurer les tâches en suivant la procédure ci-dessous :
 
-1. Accédez à la console web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console web en vous rendant sur *:serverport/system/console/configMgr*
 
 1. Recherchez « **preupgradetasks** », puis cliquez sur le premier composant correspondant. Le nom complet du composant est `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -167,7 +167,7 @@ La fonctionnalité Bean gérée est accessible à l’aide de la [console JMX](/
 
 Vous pouvez accéder aux MBeans en procédant comme suit :
 
-1. Accédez à la console JMX à l’adresse *https://serveraddress:serverport/system/console/jmx*
+1. Accédez à la console JMX à l’adresse *:serverport/system/console/jmx*
 1. Recherchez **PreUpgradeTasks** et cliquez sur le résultat.
 
 1. Sélectionnez une méthode à partir de la section **Opérations** et sélectionnez **Invoquer** dans la fenêtre suivante.

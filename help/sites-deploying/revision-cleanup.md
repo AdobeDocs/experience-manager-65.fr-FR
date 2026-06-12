@@ -252,7 +252,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>Quels sont les facteurs qui déterminent la durée du nettoyage des révisions en ligne ?</strong></td>
-   <td>Les facteurs sont les suivants :<br />
+   <td>Les facteurs sont les suivants :<br />
     <ul>
      <li>Taille du référentiel</li>
      <li>Chargement sur le système (requêtes par minute, en particulier opérations d’écriture)</li>
@@ -465,7 +465,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>D’après la vérification d’intégrité et les entrées du journal, le processus de nettoyage des révisions en ligne a échoué trois fois de suite. Que doit-on faire pour assurer le succès du nettoyage des révisions en ligne ?</strong></td>
-   <td>Vous pouvez prendre plusieurs mesures pour trouver et résoudre le problème :<br />
+   <td>Vous pouvez prendre plusieurs mesures pour trouver et résoudre le problème :<br />
     <ul>
      <li>Tout d’abord, vérifiez les entrées du journal.<br /> </li>
      <li>Selon les informations contenues dans les journaux, prenez les mesures appropriées :
@@ -494,7 +494,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
     <ol>
      <li>Une application qui contourne les mécanismes d’accès recommandés (tels que Sling et l’API JCR) et utilise une API/SPI de niveau inférieur pour accéder au référentiel, puis dépasse la durée de conservation d’un segment. En d’autres termes, elle conserve une référence à une entité plus longue que la durée de conservation autorisée par le nettoyage des révisions en ligne (24 heures par défaut). Ce cas est transitoire et ne conduit pas à la corruption des données. Pour effectuer une restauration, l’outil exécuté par Oak doit être utilisé pour confirmer la nature transitoire de l’exception (la vérification exécutée par Oak ne doit signaler aucune erreur). Pour cela, cette instance doit être déconnectée et redémarrée plus tard.</li>
      <li>Un événement externe a provoqué la corruption des données sur le disque. Il peut s’agir d’une défaillance du disque, d’un manque d’espace disque ou d’une modification accidentelle des fichiers de données requis. Dans ce cas, l’instance doit être mise hors ligne et réparée à l’aide de la vérification oak-run. Pour plus d’informations sur la façon de procéder à la vérification exécutée par Oak, lisez la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentation Apache</a> suivante.</li>
-     <li>Traitez toutes les autres occurrences via l’<a href="https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support" target="_blank">Assistance clientèle Adobe</a>.</li>
+     <li>Traitez toutes les autres occurrences via l’<a href="https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr&amp;support-tab=home#support" target="_blank">Assistance clientèle Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -642,7 +642,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Outre les méthodes présentées ci-dessus, vous pouvez déclencher le mécanisme de nettoyage des révisions à l’aide de la console JMX comme suit :
 
-1. Ouvrez la console JMX en accédant à [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
+1. Ouvrez la console JMX en accédant à [:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Cliquez sur le MBean **RevisionGarbageCollection**.
 1. Dans la fenêtre suivante, cliquez sur **startRevisionGC()**, puis sur **Appeler** pour démarrer la tâche de récupération de l’espace mémoire.
 

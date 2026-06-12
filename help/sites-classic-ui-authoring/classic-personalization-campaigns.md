@@ -11,8 +11,8 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 93%
 
 ---
 
@@ -36,13 +36,13 @@ Ce document décrit les différents éléments qui composent les campagnes. Pour
 La gestion de campagnes se compose de plusieurs éléments :
 
 * **Marques**
-Dans Adobe Experience Manager (AEM), les marques constituent l’unité de niveau supérieur et forment un ensemble de **campagnes**.
+Dans Adobe Experience Manager (AEM), les marques constituent l’unité de niveau supérieur et forment un ensemble de **Campagnes**.
 
 * **Campagnes**
 Une campagne est un ensemble d’**expériences** individuelles.
 
 * **Expériences**
-Le contenu ciblé constitue les différentes expériences présentées au visiteur ou à la visiteuse au niveau des **Touchpoints**.  Plusieurs types d’expériences sont disponibles :
+Le contenu ciblé forme les différentes expériences présentées au visiteur aux **points de contact**. Plusieurs types d’expériences sont disponibles :
 
    * **Teasers**
      [Les paragraphes / pages de teaser](#teasers) sont utilisés pour diriger des **Segments** de visiteurs spécifiques vers le contenu qui est centré sur leurs intérêts.

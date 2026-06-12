@@ -11,8 +11,8 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 100%
+source-wordcount: '2225'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ L’approche décrite ici s’applique à la sauvegarde et à la récupération 
 Si vous devez sauvegarder et/ou récupérer une petite quantité de contenu qui a été perdue, une récupération du système n’est pas forcément nécessaire :
 
 * Vous pouvez soit récupérer les données à partir d’un autre système via un package,
-* soit restaurer la sauvegarde sur un système temporaire, créer un package de contenu et le déployer sur le système dans lequel ce contenu est manquant.
+* soit restaurer la sauvegarde sur un système temporaire, créer un module de contenu et le déployer sur le système dans lequel ce contenu est manquant.
 
 Pour plus d’informations, consultez [Sauvegarde de package](/help/sites-administering/backup-and-restore.md#package-backup) ci-dessous.
 
@@ -79,7 +79,7 @@ Une sauvegarde en ligne de votre référentiel permet de créer, de télécharge
 
 >[!CAUTION]
 >
->N’exécutez pas la fonctionnalité Sauvegarde en ligne d’AEM en même temps que le [Nettoyage de la mémoire de magasin de données](/help/sites-administering/data-store-garbage-collection.md) ou le [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
+>N’exécutez pas la fonctionnalité Sauvegarde en ligne d’AEM en même temps que la [Récupération de l’espace mémoire du magasin de données](/help/sites-administering/data-store-garbage-collection.md) ou le [Nettoyage de révision](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Cela affecte les performances du système.
 
 Lors du démarrage d’une sauvegarde, vous pouvez spécifier un **chemin d’accès cible** et un **délai**.
 
@@ -106,8 +106,8 @@ Si le chemin d’**accès cible** est un répertoire, l’image du référentiel
 
 **Délai** Indique un délai (en millisecondes) afin que les performances du référentiel ne soient pas affectées. Par défaut, la sauvegarde du référentiel s’exécute à la vitesse maximale. Vous pouvez ralentir la création d’une sauvegarde en ligne afin de ne pas ralentir d’autres tâches.
 
-Lorsque vous utilisez un délai très important, assurez-vous que la sauvegarde en ligne ne met pas plus de 24 heures. En pareil cas, annulez cette sauvegarde, car elle ne contient peut-être pas tous les fichiers binaires.
- Un délai de 1 ms se traduit généralement par l’utilisation de 10 % du processeur. Un délai de 10 ms se traduit généralement par l’utilisation de moins de 3 % du processeur. Le délai total en secondes peut être évalué comme suit : taille du référentiel en Mo, multiplié par le délai en millisecondes, divisé par 2 (si l’option ZIP est utilisée) ou divisé par 4 (en cas de sauvegarde dans un répertoire). Cela signifie qu’une sauvegarde dans un répertoire d’un référentiel de 200 Mo avec un délai de 1 ms augmente le temps de sauvegarde d’environ 50 secondes.
+Lorsque vous utilisez un délai très important, assurez-vous que la sauvegarde en ligne ne prend pas plus de 24 heures. Si c’est le cas, ignorez cette sauvegarde, car elle peut ne pas contenir tous les fichiers binaires.
+Un délai de 1 milliseconde entraîne généralement une utilisation de 10 % de CPU, et un délai de 10 millisecondes entraîne généralement une utilisation de moins de 3 % de CPU. Le délai total en secondes peut être estimé comme suit : taille du référentiel en Mo, multiplié par le délai en millisecondes, divisé par 2 (si l’option ZIP est utilisée) ou divisé par 4 (en cas de sauvegarde dans un répertoire). Cela signifie qu’une sauvegarde dans un répertoire d’un référentiel de 200 Mo avec un délai d’1 ms augmente le temps de sauvegarde d’environ 50 secondes.
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ La sauvegarde en ligne utilise l’algorithme suivant :
    * Si vous effectuez une sauvegarde dans un fichier ZIP, un répertoire temporaire est créé. Le nom du répertoire commence par `backup.` et se termine par `.temp` ; par exemple `backup.f4d3.temp`.
    * Si vous effectuez une sauvegarde dans un répertoire, le nom spécifié dans le chemin d’accès cible est utilisé. Un répertoire existant peut être utilisé, autrement un nouveau répertoire sera créé.
 
-      Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé une fois la sauvegarde terminée.
+     Un fichier vide nommé « `backupInProgress.txt` » est créé dans le répertoire cible au début de la sauvegarde. Ce fichier est supprimé une fois la sauvegarde terminée.
 
 1. Les fichiers sont copiés du répertoire source vers le répertoire cible (ou vers un répertoire temporaire lors de la création d’un fichier ZIP). L’entrepôt de segments est copié avant le magasin de données afin d’éviter d’altérer le référentiel. Les données d’index et du cache sont omises lors de la création de la sauvegarde. Par conséquent, les données des répertoires `crx-quickstart/repository/cache` et `crx-quickstart/repository/index` ne sont pas incluses dans la sauvegarde. L’indicateur de la barre de progression du processus est compris entre 0 % et 70 % lors de la création d’un fichier ZIP ou entre 0 % et 100 % si aucun fichier ZIP n’est créé.
 
@@ -248,13 +248,13 @@ Vous pouvez restaurer une sauvegarde de la manière suivante :
 
 ## Sauvegarde avec package {#package-backup}
 
-Pour sauvegarder et restaurer du contenu, vous pouvez utiliser l’un des gestionnaires de packages, qui utilise le format de package de contenu pour sauvegarder et restaurer du contenu. Le gestionnaire de packages offre davantage de flexibilité pour définir et gérer les packages.
+Pour sauvegarder et restaurer du contenu, vous pouvez utiliser l’un des gestionnaires de modules, qui utilise le format de module de contenu pour sauvegarder et restaurer du contenu. Le gestionnaire de modules offre davantage de flexibilité pour définir et gérer les packages.
 
-Pour plus d’informations sur les fonctionnalités et les avantages et inconvénients de chacun de ces formats de packages de contenu, consultez [Utilisation des packages](/help/sites-administering/package-manager.md).
+Pour plus d’informations sur les fonctionnalités et les avantages et inconvénients de chacun de ces formats de modules de contenu, consultez [Utilisation des packages](/help/sites-administering/package-manager.md).
 
 ### Étendue des sauvegardes {#scope-of-backup}
 
-Lorsque vous sauvegardez des nœuds à l’aide du gestionnaire de packages ou de Content Zipper, CRX enregistre les informations suivantes :
+Lorsque vous sauvegardez des nœuds à l’aide du gestionnaire de modules ou de Content Zipper, CRX enregistre les informations suivantes :
 
 * Le contenu du référentiel sous l’arborescence que vous avez sélectionnée.
 * Les définitions de type Nœud utilisées pour le contenu sauvegardé.

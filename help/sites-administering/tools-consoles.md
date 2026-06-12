@@ -12,12 +12,12 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 100%
 
 ---
 
-# Consoles Outils {#tools-consoles}
+# Consoles Outils{#tools-consoles}
 
 Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions de la console **Outils** en fonction de l’interface utilisateur que vous utilisez :
 
@@ -206,7 +206,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Références pour les développeurs</td>
+   <td>Ressources de développement</td>
   </tr>
   <tr>
    <td>Déploiement</td>
@@ -421,7 +421,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Packages</td>
-   <td>Autre lien vers le gestionnaire de packages, qui affiche les packages chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td>
+   <td>Autre lien vers le gestionnaire de modules, qui affiche les packages chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td>
   </tr>
   <tr>
    <td>Réplication - Agents de réplication</td>

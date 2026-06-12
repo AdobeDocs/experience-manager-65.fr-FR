@@ -12,7 +12,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '307'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Lorsque vous démarrez AEM pour la première fois, vous pouvez donner votre acco
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. Dans la liste déroulante, cliquez sur **Autoriser la collecte de statistiques d’utilisation agrégées**.
+1. Dans la liste déroulante, cliquez sur **Activer la collecte de statistiques d’utilisation agrégées**.
 
    ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 

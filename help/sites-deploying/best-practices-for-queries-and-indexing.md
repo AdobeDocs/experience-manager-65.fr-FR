@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 100%
+source-wordcount: '4700'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ En outre, lorsque vous traitez un ensemble de résultats petit ou homogène, il 
 
 #### Prérécupération des résultats {#prefetching-results}
 
-Parfois, le contenu ou les exigences liées à un composant ne permettent pas d’utiliser le parcours transversal des nœuds comme méthode de récupération des données requises. Dans ce cas, les requêtes requises doivent être exécutées avant le rendu du composant afin que des performances optimales soient garanties pour les personnes utilisatrices finales.
+Parfois, le contenu ou les exigences liées à un composant ne permettent pas d’utiliser la traversée de nœuds comme méthode de récupération des données requises. Dans ce cas, les requêtes requises doivent être exécutées avant le rendu du composant afin que des performances optimales soient garanties pour les personnes utilisatrices finales.
 
 Si les résultats requis pour le composant peuvent être calculés au moment de sa création et qu’aucun changement de contenu n’est attendu, la requête peut être exécutée lolrsque l’auteur ou l’autrice applique des modifications dans la boîte de dialogue.
 
@@ -66,7 +66,7 @@ Si les données ou le contenu changent régulièrement, la requête peut être e
 
 ## Optimisation des requêtes {#query-optimization}
 
-Lors de l’exécution d’une requête qui n’utilise pas d’index, des avertissements sont consignés concernant le parcours transversal de nœuds. S’il s’agit d’une requête qui va être exécutée fréquemment, créez un index. Pour déterminer l’index qu’utilise une requête donnée, l’outil [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) est recommandé. Pour plus d’informations, la journalisation DEBUG peut être activée pour les API de recherche pertinentes.
+Lors de l’exécution d’une requête qui n’utilise pas d’index, des avertissements sont consignés concernant la traversée de nœuds. S’il s’agit d’une requête qui va être exécutée fréquemment, créez un index. Pour déterminer l’index qu’utilise une requête donnée, l’outil [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) est recommandé. Pour plus d’informations, la journalisation DEBUG peut être activée pour les API de recherche pertinentes.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Vous pouvez également extraire les index de votre système au format JSON. Pour
 
 **Pendant le développement**
 
-Définissez des seuils bas pour `oak.queryLimitInMemory` (par exemple, 10 000) et Oak. `queryLimitReads` (par exemple, 5 000) et optimisez les requêtes coûteuses lorsque vous obtenez une exception UnsupportedOperationException indiquant : « la requête lit plus de x nœuds... ».
+Définissez des seuils bas pour `oak.queryLimitInMemory` (par exemple, 10000) et Oak. `queryLimitReads` (par exemple, 5 000) et d’optimiser la requête coûteuse lors de l’accès à une UnsupportedOperationException indiquant « La requête lit plus de x nœuds... »
 
 Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire sans support d’index ou avec un support d’index moins couvrant). Par exemple, une requête qui lit 1 million de nœuds entraînerait une augmentation des E/S et aurait un impact négatif sur les performances globales de l’application. Toute requête qui échoue en raison des limites ci-dessus doit être analysée et optimisée.
 
@@ -136,7 +136,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimisez la requête pour réduire la consommation de mémoire de tas.
 
-Pour les versions AEM 6.0 à 6.2, vous pouvez ajuster le seuil du parcours transversal des nœuds à l’aide des paramètres JVM du script de démarrage AEM pour éviter que les requêtes volumineuses ne surchargent l’environnement.
+Pour les versions d’AEM 6.0 à 6.2, vous pouvez ajuster le seuil de la traversée de nœuds à l’aide des paramètres JVM du script de démarrage AEM pour éviter que les requêtes volumineuses ne surchargent l’environnement.
 
 Les valeurs recommandées sont les suivantes :
 
@@ -332,7 +332,7 @@ Problèmes possibles et solutions :
 
    * Effectuez une vérification du référentiel de traversée ; par exemple :
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+     [:4502/system/console/repositorycheck ](http://localhost:4502/system/console/repositorycheck)
 
      La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 
@@ -442,7 +442,7 @@ Si AEM fonctionne normalement, par exemple en chargeant des ressources via l’I
 
    * La configuration OSGi de pré-extraction de texte nécessite un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement à partir de l’instance AEM (lecteur local ou montage de partage de fichiers).
 
-#### Comment pré-extraire du texte {#how-to-perform-text-pre-extraction}
+#### Comment procéder à la pré-extraction du texte ? {#how-to-perform-text-pre-extraction}
 
 >[!NOTE]
 >
