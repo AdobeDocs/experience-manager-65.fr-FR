@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -71,7 +71,7 @@ La collecte des statistiques système qui renseignent Health Monitor a un impac
 ## Ajouter des options Java à WebLogic {#add-java-options-to-weblogic}
 
 1. Ouvrez la console d’administration WebLogic en saisissant https://[nom hôte]:&#39;port&#39;/console dans la ligne d’URL d’un navigateur web.
-1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, sélectionnez Se connecter sous Centre des modifications, puis Verrouiller et modifier.
+1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, cliquez sur Se connecter sous Centre des modifications, puis sur Verrouiller et modifier.
 1. Sous Structure du domaine, cliquez sur Environment > Serveurs et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments dont vous avez besoin à la fin du contenu actuel. Par exemple, ajouter ‑ `Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.

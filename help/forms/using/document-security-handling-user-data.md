@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ Le tableau suivant indique comment Document Security organise les données dans
   </tr>
   <tr>
    <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (bases de données Oracle et MS® SQL)</p> </td>
-   <td>Stocke le mappage entre le jeu de politiques et les utilisateurs.</td>
+   <td>Stocke le mappage entre l’ensemble de politiques et les utilisateurs et utilisatrices.</td>
   </tr>
   <tr>
    <td><code>EdcInvitedUserEntity</code></td>
@@ -194,8 +194,8 @@ Procédez comme suit pour supprimer les données Document Security d’un ident
    **Utilisation de la console d’administration**
 
    1. Connectez-vous en tant qu’administrateur ou administratrice à la console d’administration de Forms JEE à l’adresse suivante : //[*server*]:[*port*]/adminui.
-   1. Accédez à **[!UICONTROL Services > Document Security > Jeux de politique]**.
-   1. Ouvrez un jeu de politiques et supprimez l’utilisateur ou l’utilisatrice de la politique.
+   1. Accédez à **[!UICONTROL Services > Document Security > Ensembles de politiques]**.
+   1. Ouvrez un ensemble de politiques et supprimez l’utilisateur ou l’utilisatrice de la politique.
 
    **Utiliser la page web Document Security**
 

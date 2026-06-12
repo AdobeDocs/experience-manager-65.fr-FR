@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1842'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Pour créer un portfolio PDF, procédez comme suit :
 1. Assemblez le portfolio.
 1. Enregistrez le portfolio assemblé.
 
-**Inclusion des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -89,7 +89,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 Avant de pouvoir effectuer une opération Assembler par programmation, créez un client de service Assembler.
 
-**Référence à un document DDX existant**
+**Référencer un document DDX existant**
 
 Un document DDX doit être référencé afin de pouvoir assembler un portfolio PDF. Ce document DDX doit contenir les éléments `Portfolio`, `Navigator` et `PackageFiles`.
 
@@ -107,9 +107,9 @@ Copiez le fichier NAV situé dans le répertoire d’installation d’Acrobat 9
 >
 >Les didacticiels de mise en route traitant de lʼassemblage des portfolios PDF utilisent AdobeOnImage.nav.
 
-**Définition des options d’exécution**
+**Définir des options de temps d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche même en cas d’erreur.
 
 **Assemblage du portfolio**
 
@@ -146,15 +146,15 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (Java) :
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Référencez les documents requis.
 
    * Créez un objet `java.util.Map` qui sert à stocker les documents PDF d’entrée en utilisant un constructeur `HashMap`.
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez l’emplacement du fichier NAV requis (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
    * Créez un objet `com.adobe.idp.Document` et transmettez lʼobjet `java.io.FileInputStream` contenant le fichier NAV (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
-   * Ajoutez une entrée à lʼobjet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
+   * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
       * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément source spécifié dans le document DDX. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
       * Un objet `com.adobe.idp.Document` qui contient le document PDF. (répétez cette tâche pour chaque fichier nécessaire à la création dʼun portfolio).
@@ -162,13 +162,13 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (Java) :
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche lorsquʼune erreur se produit, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement d’une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Assemblez le portfolio.
 
-   Appelez la méthode `invokeDDX` de lʼobjet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
+   Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
 
-   * Un objet `com.adobe.idp.Document` qui représente le document DDX à utiliser.
+   * Objet `com.adobe.idp.Document` représentant le document DDX à utiliser
    * Un objet `java.util.Map` qui contient les fichiers nécessaires à la création dʼun portfolio PDF.
    * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, y compris la police par défaut et le niveau du log de traitement.
 
@@ -178,8 +178,8 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (Java) :
 
    Pour obtenir le portfolio PDF, procédez comme suit :
 
-   * Appelez la méthode `getDocuments` de lʼobjet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
-   * Effectuez une itération au sein de lʼobjet `java.util.Map` jusqu’à ce que vous trouviez lʼobjet `com.adobe.idp.Document` généré.
+   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
+   * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant.
    * Invoquez la méthode `copyToFile` de lʼobjet `com.adobe.idp.Document` afin dʼextraire le portfolio PDF.
 
 **Voir également**
@@ -204,9 +204,9 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -217,29 +217,29 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Remplissez lʼobjet `BLOB` en assignant à sa propriété `MTOM` le contenu du tableau dʼoctets.
+   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `MTOM`.
 
 1. Référencez les documents requis.
 
-   * Pour chaque fichier d’entrée, créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker le fichier d’entrée.
+   * Pour chaque fichier d’entrée, créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le fichier d’entrée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier d’entrée et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez lʼobjet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau dʼoctets.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les fichiers d’entrée nécessaires à la création d’un portfolio PDF.
    * Pour chaque fichier d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à la valeur de l’élément spécifié dans le document DDX. (Répétez cette tâche pour chaque fichier d’entrée).
    * Affectez lʼobjet `BLOB` qui stocke le fichier dʼentrée au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Répétez cette tâche pour chaque document PDF d’entrée).
-   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à lʼobjet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
+   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
 
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche lorsquʼune erreur se produit, affectez `false` au membre de données `failOnError` de lʼobjet `AssemblerOptionSpec`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` aux données membres `failOnError` de l’objet `AssemblerOptionSpec`.
 
 1. Assemblez le portfolio.
 
@@ -247,16 +247,16 @@ Assemblez un portfolio PDF à l’aide de l’API du service Assembler (service 
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
-   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
+   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
-   La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et toutes les exceptions survenues.
+   La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et les exceptions survenues.
 
 1. Enregistrez le portfolio assemblé.
 
    Pour obtenir le portfolio PDF nouvellement créé, procédez comme suit :
 
-   * Accédez au champ `documents` de lʼobjet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF générés.
-   * Effectuez une itération sur l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
+   * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF générés.
+   * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
    * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
 **Voir également**

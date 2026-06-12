@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2621'
-ht-degree: 100%
+source-wordcount: '2678'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
   </tr>
   <tr>
    <td>Série &gt; Objet de modèle de données</td>
-   <td>Nom de l’élément de collecte de modèle de données de formulaire pour ajouter plusieurs séries au graphique.<br /> Choisissez une propriété d’objet de modèle de données de formulaire parent pour les propriétés tracées sur l’axe X et l’axe Y afin de former une série significative. L’objet de modèle de données que vous liez doit être de type Nombre, Chaîne ou Date.</td>
+   <td>Nom de l’élément de collection de modèles de données de formulaire pour ajouter plusieurs séries au graphique.<br /> Choisissez une propriété d’objet de modèle de données de formulaire parent pour les propriétés tracées sur l’axe X et l’axe Y afin de former une série significative. L’objet de modèle de données que vous liez doit être de type Nombre, Chaîne ou Date.</td>
    <td>Impression et web</td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
    <td>Impression et web</td>
   </tr>
   <tr>
-   <td>Axe X &gt; Objet du modèle de données</td>
+   <td>Axe X &gt; Objet de modèle de données</td>
    <td><p>Nom de l’élément de collection de modèles de données de formulaire à tracer sur l’axe X.</p> <p>Choisissez deux propriétés de type collection/tableau du même objet de modèle de données parent significatives l’une par rapport à l’autre à tracer sur les axes X et Y d’un graphique. L’objet de modèle de données que vous liez doit être de type Nombre, Chaîne ou Date.</p> </td>
    <td>Impression et web</td>
   </tr>
@@ -105,7 +105,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
    <td>Impression et web</td>
   </tr>
   <tr>
-   <td>Axe Y &gt; Objet du modèle de données</td>
+   <td>Axe Y &gt; Objet de modèle de données</td>
    <td><p>Élément de collection de modèles de données de formulaire à tracer sur l’axe Y. Dans le canal d’impression, l’objet de modèle de données pour l’axe Y doit être de type Nombre.</p> <p>Choisissez deux propriétés de type collection/tableau du même objet de modèle de données parent significatives l’une par rapport à l’autre à tracer sur les axes X et Y d’un graphique. </p> </td>
    <td>Impression et web</td>
   </tr>
@@ -151,7 +151,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
   </tr>
   <tr>
    <td>Info-bulle</td>
-   <td><p>Format dans lequel l’info-bulle s’affiche lorsque le curseur de la souris survole un point de données du graphique dans le canal web. La valeur par défaut est ${x}(${y}). En fonction du type de graphique, lorsque vous passez le curseur sur un point, une barre ou une tranche du graphique, les variables ${x} et ${y} sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle.</p> <p>Pour désactiver l’info-bulle, laissez le champ <span class="uicontrol">Info-bulle</code>  vide. Cette option ne s’applique pas aux graphiques en ligne ni en points. Par exemple, consultez <a href="#chartoutputprintweb">Exemple 1 : sortie du graphique sur papier et sur le Web</a>.</p> </td>
+   <td><p>Format dans lequel l’info-bulle s’affiche lorsque le curseur de la souris survole un point de données du graphique dans le canal web. La valeur par défaut est ${x}(${y}). En fonction du type de graphique, lorsque vous passez le curseur sur un point, une barre ou une tranche du graphique, les variables ${x} et ${y} sont remplacées de manière dynamique par les valeurs correspondantes sur l’axe X et l’axe Y et elles s’affichent dans l’info-bulle.</p> <p>Pour désactiver l’info-bulle, laissez le champ <span class="uicontrol">Info-bulle</code> vide. Cette option ne s’applique pas aux graphiques en ligne ni en points. Par exemple, consultez <a href="#chartoutputprintweb">Exemple 1 : sortie du graphique sur papier et sur le Web</a>.</p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -167,10 +167,10 @@ Configurez les propriétés suivantes lors de la création de graphiques pour le
      <li><strong>Point de référence &gt; Type de liaison : </strong>disponible pour les graphiques a quadrants pour<strong> </strong>spécifier le type de liaison du point de référence. Utilisez le texte statique ou la propriété de l’objet de modèle de données pour définir la valeur du point de référence.</li>
      <li><strong>Point de référence &gt; Axe X : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe X pour le point de référence.</li>
      <li><strong>Point de référence &gt; Axe Y : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Statique</code> dans la liste déroulante Type de liaison pour spécifier la valeur de l’axe Y du point de référence.</li>
-     <li><strong>Point de référence &gt; Objet de modèle de données pour les séries : </strong>disponible pour plusieurs séries de graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Définissez la propriété de l’objet de modèle de données du formulaire pour identifier la série pour le point de référence. </li>
-     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour les séries : </strong>disponible pour les graphiques à quadrants à séries multiples si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété de l’objet de modèle de données du formulaire pour la série et la valeur définie dans ce champ afin d’identifier la série pour le point de référence.</li>
+     <li><strong>Point de référence &gt; Objet de modèle de données pour les séries : </strong>disponible pour plusieurs séries de graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Définissez la propriété de l’objet de modèle de données de formulaire pour identifier la série pour le point de référence. </li>
+     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour les séries : </strong>disponible pour les graphiques à quadrants à séries multiples si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété de l’objet de modèle de données de formulaire pour la série et la valeur définie dans ce champ afin d’identifier la série pour le point de référence.</li>
      <li><strong>Point de référence &gt; Objet de modèle de données pour le point de référence : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Définissez une propriété d’objet de modèle de données de formulaire qui est apparentée aux propriétés tracées sur l’axe X et l’axe Y. En outre, pour les séries multiples, définissez une propriété d’objet de modèle de données qui est une entité enfant de la propriété d’objet de modèle de données définie pour la série.</li>
-     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour le point de référence : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété d’objet de modèle de données de formulaire pour le point de référence et la valeur définie dans ce champ pour identifier le point de référence du graphique.<br /> <strong>Libellés du quadrant &gt; En haut à gauche :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur gauche.</li>
+     <li><strong>Point de référence &gt; Valeur d’objet de modèle de données pour le point de référence : </strong>disponible pour les graphiques à quadrants si vous sélectionnez <span class="uicontrol">Objet de modèle de données</code> dans la liste déroulante Type de liaison. Utilisez la propriété de l’objet de modèle de données du formulaire pour le point de référence et la valeur définie dans ce champ pour identifier le point de référence du graphique.<br /> <strong>Libellés du quadrant &gt; En haut à gauche :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur gauche.</li>
      <li><strong>Libellés du quadrant &gt; En haut à droite :</strong> disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant supérieur droit.</li>
      <li><strong>Libellés du quadrant &gt; En bas à droite : </strong>disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant inférieur droit.</li>
      <li><strong>Libellés du quadrant &gt; En bas à gauche : </strong>disponible pour les graphiques à quadrants afin de spécifier le nom du quadrant inférieur gauche.</li>
@@ -233,7 +233,7 @@ Une fois que vous avez rédigé une fonction personnalisée, procédez comme sui
    * Ajoutez la propriété `guideComponentType` avec une valeur définie sur `fd/af/reducer`. (mandatory)
 
    * Ajoutez la propriété `value` à un nom complet de la fonction JavaScript™ personnalisée. (obligatoire) et définissez sa valeur sur le nom de la fonction personnalisée, telle que Multiplier.
-   * Ajoutez la propriété `jcr:description` avec la valeur que vous souhaitez afficher comme nom de la fonction personnalisée apparaissant dans le menu déroulant Fonction. Par exemple, **Multiplier**. 
+   * Ajoutez la propriété `jcr:description` avec la valeur que vous souhaitez afficher comme nom de la fonction personnalisée apparaissant dans le menu déroulant Fonction. Par exemple, **Multiplier**.
 
    * Ajoutez la propriété `qtip` avec une valeur représentant une brève description de la fonction personnalisée. Elle s’affiche sous forme d’info-bulle lorsque le curseur est placé sur le nom de la **fonction** dans la liste déroulante.
 
@@ -243,7 +243,7 @@ Cette fonctionnalité est désormais disponible dans le graphique.
 
 ## Exemple 1 : sortie du graphique sur papier et sur le web {#chartoutputprintweb}
 
-Dans l’onglet Réglages de base, définissez le type de graphique, les propriétés de modèle de données du formulaire source contenant des données, les libellés à mapper sur l’axe X et l’axe Y du graphique et éventuellement la fonction statistique pour calculer les valeurs à tracer sur le graphique.
+Dans l’onglet Réglages de base, définissez le type de graphique, les propriétés de modèle de données de formulaire source contenant des données, les libellés à mapper sur l’axe X et l’axe Y du graphique et éventuellement la fonction statistique pour calculer les valeurs à tracer sur le graphique.
 
 Examinons en détail les informations minimales requises de ces propriétés de base à l’aide d’un relevé de carte généré via une communication interactive. Imaginons que vous souhaitez générer un graphique pour décrire le montant total des différentes dépenses dans le relevé. Vous souhaitez utiliser différents types de graphiques pour l’impression et la sortie web de la communication interactive.
 
@@ -266,9 +266,9 @@ Pour ce faire, spécifiez les propriétés suivantes :
 
 * **[!UICONTROL Nom]** : indiquez le nom du graphique.
 * **[!UICONTROL Type de graphique]** : sélectionnez **[!UICONTROL Anneau]** dans la liste déroulante.
-* **[!UICONTROL Objets de modèle de données]** : sélectionnez les propriétés des objets de modèle de données pour créer des liaisons de données pour l’axe X (Type de dépense) et l’axe Y (Montant de la transaction).
+* **[!UICONTROL Objets de modèle de données]** : sélectionnez les propriétés des objets de modèle de données pour créer des liaisons de données pour l’axe X (Type de dépense) et l’axe Y (Montant de la transaction).
 * **[!UICONTROL Rayon interne]** : définissez la valeur du rayon interne sur 150 pour indiquer le rayon (en pixels) du cercle intérieur dans le graphique.
-* **[!UICONTROL Info-bulle]** : utilisez le format par défaut ${x}(${y}) pour afficher l’info-bulle. L’info-bulle s’affiche comme suit : type de dépense (montant de la transaction). Exemple : « Debit for Bitcoin(10000) ».
+* **[!UICONTROL Info-bulle]** - Utilisez le format par défaut ${x}(${y}) pour afficher l’info-bulle. L’info-bulle s’affiche comme suit : type de dépense (montant de la transaction). Exemple : « Debit for Bitcoin(10000) ».
 
 ![Graphique en anneau dans le canal web d’une communication interactive](assets/sample_chart_web_new.png)
 

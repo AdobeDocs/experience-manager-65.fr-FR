@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 100%
+source-wordcount: '1886'
+ht-degree: 98%
 
 ---
 
@@ -126,9 +126,9 @@ Pour assembler plusieurs documents XDP, référencez tous les fichiers XDP util
 
 Le sous-formulaire nommé *subPatientContact* doit se trouver dans le fichier XDP nommé *tuc018_contact.xdp*.
 
-**Définir les options d’exécution**
+**Définir des options de temps d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche même en cas d’erreur.
 
 **Assembler plusieurs documents XDP**
 
@@ -144,7 +144,7 @@ Un document XDP assemblé est renvoyé dans un objet de collection. Effectuez u
 
 [Assembler plusieurs fragments XDP à l’aide de l’API de service Web](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-web-service-api)
 
-[Inclure des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusion des fichiers de bibliothèque Java d’AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -167,30 +167,30 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Référencez les documents XDP.
 
    * Créez un objet `java.util.Map` utilisé pour stocker les documents XDP d’entrée à l’aide d’un constructeur `HashMap`.
    * Créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le fichier XDP d’entrée (répétez cette tâche pour chaque fichier XDP).
-   * Ajoutez une entrée à l’objet `java.util.Map` en invoquant sa méthode `put` et en appelant les arguments suivants :
+   * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
 
       * Une valeur de chaîne qui représente le nom de la clé. Cette valeur doit correspondre à la valeur de l’élément `source` spécifiée dans le document DDX (répétez cette tâche pour chaque fichier XDP).
       * Un objet `com.adobe.idp.Document` qui contient le document XDP correspondant à l’élément `source` (répétez cette tâche pour chaque fichier XDP).
 
 1. Définissez les options d’exécution.
 
-   * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution à l’aide de son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
+   * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement d’une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Assemblez plusieurs documents XDP.
 
    Appelez la méthode `invokeDDX` de l’objet `AssemblerServiceClient` et transmettez les valeurs requises suivantes :
 
-   * Un objet `com.adobe.idp.Document` qui représente le document DDX à utiliser.
+   * Objet `com.adobe.idp.Document` représentant le document DDX à utiliser
    * Un objet `java.util.Map` qui contient les fichiers XDP d’entrée.
-   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau du journal de tâche.
+   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, dont la police par défaut et le niveau du log de traitement.
 
    La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` contenant le document XDP assemblé.
 
@@ -204,10 +204,10 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (Ja
 
 **Voir également**
 
-[Assembler plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[Démarrage rapide (mode SOAP) : Assembler plusieurs fragments XDP à l’aide de l’API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Régler les propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Assembler plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[ Démarrage rapide (mode SOAP) : assembler plusieurs fragments XDP à l’aide de l’API Java.](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Définition des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Assembler plusieurs fragments XDP à l’aide de l’API de service Web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -227,9 +227,9 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms, telle que `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -240,10 +240,10 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Remplissez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Référencez les documents XDP.
@@ -251,8 +251,8 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
    * Pour chaque fichier XDP d’entrée, créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le fichier d’entrée.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier d’entrée et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez lʼobjet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker les fichiers d’entrée nécessaires à la création d’un document XDP assemblé.
    * Pour chaque fichier d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à la valeur de l’élément spécifié dans le document DDX. (Effectuez cette tâche pour chaque fichier XDP d’entrée).
@@ -262,7 +262,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche en cas d’erreur, attribuez `false` au membre de données `failOnError` de lʼobjet `AssemblerOptionSpec`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` aux données membres `failOnError` de l’objet `AssemblerOptionSpec`.
 
 1. Assemblez plusieurs documents XDP.
 
@@ -270,19 +270,19 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Assembler Service (se
 
    * Objet `BLOB` représentant le document DDX.
    * Objet `MyMapOf_xsd_string_To_xsd_anyType` contenant les fichiers requis.
-   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution
+   * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
-   La méthode `invokeDDX` renvoie un objet `AssemblerResult` qui contient les résultats de la tâche et les exceptions éventuelles qui se sont produites.
+   La méthode `invokeDDX` renvoie un objet `AssemblerResult` contenant les résultats de la tâche et les exceptions survenues.
 
 1. Récupérez le document XDP assemblé.
 
    Pour obtenir le document XDP nouvellement créé, effectuez les actions suivantes :
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF générés.
-   * Effectuez une itération sur l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet`BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez retranscrire dans un fichier XDP.
+   * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
+   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez retranscrire dans un fichier XDP.
 
 **Voir également**
 
-[Assemblage de plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Assembler plusieurs fragments XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

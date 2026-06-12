@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Une fois que vous avez inclus le fragment de texte dans une communication intera
 
 ### Exemple : utilisation d’une condition intégrée dans une lettre pour effectuer le rendu de l’adresse appropriée  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
-Vous pouvez insérer une condition intégrée dans une lettre en insérant la condition intégrée dans le module de texte approprié. L’exemple suivant utilise deux conditions pour évaluer et afficher l’adresse appropriée, Monsieur ou Madame, dans une lettre basée sur le sexe de l’élément DD. En utilisant les mêmes étapes, vous pouvez créer d’autres conditions.
+Vous pouvez insérer une condition intégrée dans une lettre en insérant la condition intégrée dans le module de texte approprié. L’exemple suivant utilise deux conditions pour évaluer et afficher la formule appropriée (Monsieur ou Madame) dans une lettre, en fonction de l’élément DD Genre. En utilisant les mêmes étapes, vous pouvez créer d’autres conditions.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
 1. Prévisualisez la lettre appropriée et notez que le texte est rendu en fonction de la condition intégrée. Vous pouvez saisir la valeur du genre de l’élément DD en utilisant :
 
-   * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des exemples de données.
+   * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des données d’exemple.
    * Le fichier de données XML associé au dictionnaire de données approprié.
 
    Pour de plus amples informations, voir [Dictionnaires de données](../../forms/using/data-dictionary.md).
@@ -197,7 +197,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
 1. Affichez l’aperçu de la lettre appropriée et notez que le texte est rendu en fonction de la répétition. Vous pouvez saisir la valeur des éléments DD en utilisant :
 
-   * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des exemples de données.
+   * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des données d’exemple.
    * Le fichier de données XML associé au dictionnaire de données approprié.
 
    Pour de plus amples informations, voir [Dictionnaires de données](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).

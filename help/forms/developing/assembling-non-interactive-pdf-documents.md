@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1819'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Dans le cadre de cette discussion, supposons que le document DDX suivant soit ut
 
 Dans ce document DDX, remarquez que la valeur `inDoc` est attribuée à lʼattribut source. Dans les cas où un seul document PDF d’entrée est transmis au service Assembler et un seul document PDF est renvoyé, et que vous appelez lʼopération `invokeOneDocument`, attribuez la valeur `inDoc` à l’attribut source du PDF. Lors de l’appel de lʼopération `invokeOneDocument`, la valeur `inDoc` est une clé prédéfinie qui doit être spécifiée dans le document DDX.
 
-En revanche, lors de la transmission de plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler lʼopération `invokeDDX`. Dans cette situation, attribuez le nom du fichier du document PDF d’entrée à lʼattribut `source`.
+En revanche, lors de la transmission de plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler lʼopération `invokeDDX`. Dans ce cas, attribuez le nom de fichier du document PDF d’entrée à l’attribut `source`.
 
 Ce document DDX contient lʼélément `NoXFA`, qui indique au service Assembler de renvoyer un document PDF non interactif.
 
@@ -77,7 +77,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utility.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge et différent de JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Créer un client Assembler**
 
@@ -91,9 +91,9 @@ Un document DDX doit être référencé pour assembler un document PDF. Ce docum
 
 Un document PDF interactif doit être référencé et transmis au service Assembler pour obtenir en retour un document PDF non interactif.
 
-**Définir les options d’exécution**
+**Définir des options de temps d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lors de l’exécution d’une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche même en cas d’erreur.
 
 **Assembler le document PDF**
 
@@ -126,8 +126,8 @@ Assemblez un document PDF non interactif à l’aide de l’API du service Assem
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Référencez un document PDF interactif.
 
@@ -143,11 +143,11 @@ Assemblez un document PDF non interactif à l’aide de l’API du service Assem
 
    Appelez la méthode `invokeOneDocument` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `com.adobe.idp.Document` représentant le document DDX. Assurez-vous que ce document DDX contient la valeur `inDoc` pour l’élément de source PDF.
+   * Un objet `com.adobe.idp.Document` représentant le document DDX. Assurez-vous que ce document DDX contient la valeur `inDoc` pour l’élément PDF source.
    * Objet `com.adobe.idp.Document` contenant le document PDF interactif.
    * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau du log de traitement.
 
-   La méthode `invokeOneDocument` renvoie un objet `com.adobe.idp.Document` contenant un document PDF non interactif.
+   La méthode `invokeOneDocument` renvoie un objet `com.adobe.idp.Document` qui contient un document PDF non interactif.
 
 1. Enregistrez le document PDF non interactif.
 
@@ -170,9 +170,9 @@ Assemblez un document PDF non interactif en utilisant l’API du Service Assembl
 
 1. Créez un client Assembler.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -195,7 +195,7 @@ Assemblez un document PDF non interactif en utilisant l’API du Service Assembl
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF d’entrée et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant à son champ `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
 
 1. Définissez les options d’exécution.
 
@@ -206,11 +206,11 @@ Assemblez un document PDF non interactif en utilisant l’API du Service Assembl
 
    Appelez la méthode `invokeOneDocument` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `BLOB` représentant le document DDX.
+   * Un objet `BLOB` représentant le document DDX
    * Un objet `BLOB` qui représente le document PDF interactif.
    * Un objet `AssemblerOptionSpec` qui spécifie les options d’exécution.
 
-   La méthode `invokeOneDocument` renvoie un objet `BLOB` qui contient un document PDF non interactif.
+   La méthode `invokeOneDocument` renvoie un objet `BLOB` contenant un document PDF non interactif.
 
 1. Enregistrez le document PDF non interactif.
 
