@@ -33,7 +33,7 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
    ```html
    <ul class="helpmenu">
      <li>
-       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
+       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63_fr" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```
 
