@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '519'
+ht-degree: 92%
 
 ---
 
@@ -34,40 +34,40 @@ La solution générale consiste à coder toutes les sorties du contenu créé pa
 
 Le XSS est une priorité majeure pendant le test et le développement et les problèmes détectés sont (généralement) résolus immédiatement.
 
-## 3. Authentification interrompue et gestion des sessions {#broken-authentication-and-session-management}
+## &#x200B;3. Authentification interrompue et gestion des sessions {#broken-authentication-and-session-management}
 
 AEM utilise des techniques d’authentification performantes et éprouvées, qui font appel à [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) et [Apache Sling](https://sling.apache.org/). Les sessions de navigateur ou HTTP ne sont pas utilisées dans AEM.
 
-## 4. Références d’objets directs non sécurisées {#insecure-direct-object-references}
+## &#x200B;4. Références d’objet direct non sécurisées {#insecure-direct-object-references}
 
 Tous les accès aux objets de données sont arbitrés par le référentiel et donc restreints par le contrôle d’accès basé sur les rôles.
 
-## 5. Cross-Site Request Forgery (attaque CSRF) {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
 Une attaque Cross-Site Request Forgery (CSRF) est arbitrée en injectant automatiquement un jeton cryptographique dans l’ensemble des formulaires et des requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque requête POST.
 
 En outre, AEM est fourni avec un filtre référent-en-tête, qui peut être configuré pour autoriser *uniquement* les requêtes POST d’hôtes spécifiques (inscrits dans une liste autorisée).
 
-## 6. Erreur de configuration de la sécurité {#security-misconfiguration}
+## &#x200B;6. Erreur de configuration de la sécurité {#security-misconfiguration}
 
 Il est impossible de garantir que tous les logiciels sont toujours correctement configurés. Toutefois, Adobe s’efforce de fournir autant d’assistance que possible et de rendre la configuration aussi simple possible. De plus, AEM comprend des [contrôles d’intégrité de la sécurité intégrés](/help/sites-administering/operations-dashboard.md) qui vous aident à surveiller en un coup d’œil la configuration de la sécurité.
 
 Examinez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour plus d’informations et obtenir des instructions étape par étape.
 
-## 7. Stockage cryptographique non sécurisé {#insecure-cryptographic-storage}
+## &#x200B;7. Stockage cryptographique non sécurisé {#insecure-cryptographic-storage}
 
 Les mots de passe sont stockés sous la forme de hachages cryptographiques dans le nœud utilisateur. Par défaut, ces nœuds ne sont lisibles que par l’administrateur ou l’administratrice et la personne elle-même.
 
 Les données sensibles telles que les informations d’identification tierces sont stockées sous forme chiffrée à l’aide d’une bibliothèque cryptographique certifiée FIPS 140-2.
 
-## 8. Échec de la limitation de l’accès à l’URL {#failure-to-restrict-url-access}
+## &#x200B;8. Échec de la restriction d’accès à l’URL {#failure-to-restrict-url-access}
 
 Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quelle personne ou n’importe quel groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
-## 9. Protection insuffisante de la couche de transfert {#insufficient-transport-layer-protection}
+## &#x200B;9. Protection insuffisante de la couche de transport {#insufficient-transport-layer-protection}
 
 Atténuée par la configuration du serveur (par exemple, en utilisant HTTPS uniquement).
 
-## 10. Redirections et transferts non validés {#unvalidated-redirects-and-forwards}
+## &#x200B;10. Redirections et transferts non valides {#unvalidated-redirects-and-forwards}
 
 Risque atténué en restreignant toutes les redirections à des destinations fournies par l’utilisateur vers des emplacements internes.

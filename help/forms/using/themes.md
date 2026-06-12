@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 100%
+source-wordcount: '5966'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Présentation {#introduction}
@@ -46,8 +46,8 @@ Effectuez les étapes suivantes pour créer un thème :
 
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
-1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
-Un assistant de création de thème se lance.
+1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
+Un assistant permettant de créer un thème est lancé.
 
 1. Dans l’onglet Réglages de base de l’assistant de création de thème, indiquez le **titre** et le **nom** du thème. Il s’agit de champs obligatoires.
 
@@ -82,7 +82,7 @@ Pour charger un thème :
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
 1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
-1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**.
+1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Télécharger**.
 Le thème chargé est disponible dans la page Thèmes.
 
 ## Métadonnées d’un thème {#metadata-of-a-theme}
@@ -180,7 +180,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
      <li>Le chemin du référentiel défini par l’utilisateur ou l’utilisatrice dans « /etc » où sont stockées les bibliothèques clientes correspondant à ce thème.</li>
      <li>Valeur par défaut : « /etc/clientlibs/fd/themes » + chemin d’accès relatif de l’actif du thème.</li>
      <li>Si l’emplacement n’existe pas, la hiérarchie des dossiers est générée automatiquement.</li>
-     <li>Lorsque cette valeur est modifiée, la structure du nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read</code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
+     <li>Lorsque cette valeur est modifiée, la structure du nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read</code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -212,10 +212,12 @@ L’éditeur de thèmes est divisé en deux panneaux :
 
    * **Sélecteur :** affiche le composant sélectionné pour le style, ainsi que ses propriétés dont vous pouvez définir le style. Le sélecteur représente tous les composants d’un type. Si vous sélectionnez un composant de zone de texte dans un thème pour le style, toutes les zones de texte de votre formulaire ou de votre communication interactive héritent du style. Les sélecteurs vous permettent de choisir un composant générique ou un composant spécifique pour le style. Par exemple, un composant de champ est un composant générique, et une zone de texte est un composant spécifique.
 
-     **Mettre en forme un composant générique :** un champ peut être un champ de zone numérique, tel que l’âge, ou un champ de zone de texte, tel qu’une adresse.
+     **Mise en forme du composant générique :**
+Un champ peut être un champ de zone numérique, tel que l’âge, ou un champ de zone de texte, tel qu’une adresse.
 Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom et l’adresse sont stylisés.
 
-     **Mise en forme d’un composant spécifique** : un composant spécifique a un impact sur les objets de la catégorie spécifique. Lorsque vous appliquez un style au composant numérique de la zone dans le thème, seul l’objet numérique de zone hérite du style.
+     **Mise en forme d’un composant spécifique** :
+Un composant spécifique a un impact sur les objets de la catégorie spécifique. Lorsque vous appliquez un style au composant numérique de la zone dans le thème, seul l’objet numérique de zone hérite du style.
 
      Par exemple, un champ de zone de texte tel qu’une adresse est plus long et un champ de zone numérique tel qu’un âge est plus court. Vous pouvez sélectionner un champ de zone numérique, réduire sa longueur et l’appliquer à votre formulaire. La largeur de tous les champs de zone numérique est réduite dans votre formulaire.
 
@@ -228,9 +230,9 @@ Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom
 
    * **Affichage CSS** : vous permet d’afficher le fichier CSS du composant sélectionné
 
-  En outre, dans la barre latérale, vous verrez une flèche dans la partie inférieure. Lorsque vous cliquez sur la flèche, vous bénéficiez de deux options supplémentaires : **Simuler la réussite** et **Simuler une erreur.** Ces options, ainsi que les options décrites ci-dessus, sont expliquées en détails [ci-dessous](../../forms/using/themes.md#using-rail).
+  En outre, dans la barre latérale, vous verrez une flèche dans la partie inférieure. Lorsque vous cliquez sur la flèche, vous bénéficiez de deux options supplémentaires : **Simuler la réussite** et **Simuler une erreur**. Ces options, ainsi que les options décrites ci-dessus, sont expliquées en détail [ci-dessous](../../forms/using/themes.md#using-rail).
 
-[![Éditeur de thèmes où Rail et Zone de travail sont mis en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale **B.** Zone de travail
+[![Éditeur de thèmes avec le rail et la zone de travail mis en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale **B.** Zone de travail
 
 ### Mise en forme des composants {#styling-components}
 
@@ -263,7 +265,7 @@ Les panneaux prêts à l’emploi comprennent :
    * Sans titres de panneau dans l’en-tête
 
 Les sélecteurs varient pour chaque mise en page.
-La mise en forme des dispositions personnalisées à partir de l’éditeur de thèmes implique ce qui suit :
+La mise en forme des mises en page personnalisées à partir de l’éditeur de thèmes implique :
 
 * La définition des composants pour une mise en page pouvant être mise en forme, et les sélecteurs CSS pour identifier de manière unique ces composants
 * La définition des propriétés CSS pouvant être appliquées sur ces composants
@@ -340,8 +342,8 @@ Les boutons Rétablir/annuler apparaissent lorsque vous mettez en forme un compo
 
 L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **Formulaires et documents > Thèmes**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
 
-Comme nous l’avons mentionné ci-dessus, l’éditeur de thèmes présente deux panneaux : Barre latérale et Zone de travail.
-![Éditeur de thèmes](assets/theme-editor.png)
+Comme nous l’avons vu plus haut, l’éditeur de thèmes comporte deux panneaux : Barre latérale et Zone de travail.
+![éditeur-thème](assets/theme-editor.png)
 
 Personnalisation du style de réussite du composant Widget de zone de texte dans l’éditeur de thèmes. Le composant est sélectionné dans la zone de travail, et son état est sélectionné dans la barre latérale. Les options de mise en forme disponibles dans la barre latérale sont utilisées pour personnaliser l’aspect d’un composant.
 
@@ -380,8 +382,8 @@ Barre d’outils des composants sur la zone numérique dans la zone de travail
 
 La barre latérale dans l’éditeur de thèmes fournit des options pour personnaliser les styles pour les composants d’un thème et pour utiliser des sélecteurs. Les sélecteurs vous permettent de sélectionner un groupe de composants ou des composants individuels ; vous pouvez également rechercher des sélecteurs dans la barre latérale. Vous pouvez écrire des sélecteurs pour les composants personnalisés.
 
-Lorsque vous sélectionnez un composant dans la zone de travail ou des sélecteurs dans la barre latérale, cette dernière affiche toutes les options vous permettant de personnaliser les styles.
-Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale lorsque vous sélectionnez un composant :
+Lorsque vous sélectionnez un composant dans la zone de travail ou des sélecteurs dans la barre latérale, celle-ci affiche toutes les options qui vous permettent de personnaliser les styles.
+Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale lorsque vous sélectionnez un composant :
 
 * État
 * Feuille de propriété
@@ -425,7 +427,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
    <td><p>Avancé</p> </td>
    <td><p>Permet d’ajouter :</p>
     <ul>
-     <li>Propriétés pour les pseudo éléments <code>::before</code> et <code>::after</code> pour ajouter du contenu après ou avant le contenu du sélecteur et le mettre en forme.<br /> Voir <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-éléments CSS</a>.</li>
+     <li>Propriétés pour <code>::before</code> et <code>::after</code> pseudo éléments pour ajouter du contenu après ou avant le contenu par défaut dans le sélecteur et le mettre en forme.<br /> Voir <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-éléments CSS</a>.</li>
      <li>Code CSS personnalisé intégré à un composant et écriture de sélecteurs personnalisés. </li>
     </ul> <p>Lorsque vous ajoutez un code CSS personnalisé, il remplace la personnalisation que vous avez ajoutée à l’aide des options de la barre latérale. </p> </td>
   </tr>
@@ -438,11 +440,11 @@ Les options Simuler une erreur et une réussite sont situées en bas de la barre
 
 Par exemple, vous ajoutez un champ numérique dans votre formulaire, puis indiquez son style dans l’éditeur de thèmes. Lorsque les utilisateurs saisissent une valeur alphanumérique dans le champ, vous souhaitez que la couleur d’arrière-plan de la zone de texte change. Sélectionnez le champ numérique dans le thème, et utilisez l’option d’état dans la barre latérale. Vous sélectionnez l’état d’erreur dans la barre latérale et modifiez la couleur d’arrière-plan en rouge. Pour prévisualiser le comportement, vous pouvez utiliser l’option Simuler une erreur disponible dans la barre latérale. Les options Simuler une erreur et une réussite sont décrites en détails ci-dessous :
 
-* **Simuler la réussite** :
-vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état de réussite. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe en suivant tous les conseils que vous avez fournis, la zone de texte se met en vert. Lorsque la zone de texte passe au vert, elle est en état de réussite. Vous pouvez spécifier la mise en forme d’un composant dans l’état de réussite et simuler son aspect à l’aide de l’option Simuler la réussite.
+* **Simuler la réussite** :
+Permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état de réussite. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe en suivant tous les conseils que vous avez fournis, la zone de texte se met en vert. Lorsque la zone de texte passe au vert, elle est en état de réussite. Vous pouvez spécifier la mise en forme d’un composant dans l’état de réussite et simuler son aspect à l’aide de l’option Simuler la réussite.
 
-* **Simuler une erreur**:
-vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état d’erreur. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe qui ne suit pas toutes les directives données, la zone de texte passe au rouge. Lorsque la zone de texte passe au rouge, elle est en état d’erreur. Vous pouvez spécifier la mise en forme d’un composant à l’état d’erreur, et simuler son aspect à l’aide de l’option Simuler une erreur.
+* **Simuler une erreur** :
+Vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état d’erreur. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe qui ne suit pas toutes les directives données, la zone de texte passe au rouge. Lorsque la zone de texte passe au rouge, elle est en état d’erreur. Vous pouvez spécifier la mise en forme d’un composant à l’état d’erreur, et simuler son aspect à l’aide de l’option Simuler une erreur.
 
 ### Mise en forme d’un composant {#styling-a-component}
 
@@ -458,7 +460,7 @@ Effectuez les étapes suivantes pour personnaliser la mise en forme d’un compo
 
 1. Sélectionnez **Widget de zone numérique**.
 1. Le titre de la barre latérale passe à Widget de zone numérique et affiche des options pour personnaliser son aspect.
-Utilisez l’option **Dimension et position** dans la barre latérale pour personnaliser la taille du composant. Vérifiez que l’état est bien **Par défaut**.
+Utilisez l’option **Dimension et position** dans la barre latérale pour personnaliser la taille du composant. Assurez-vous que l’état est **Par défaut**.
 
 Au lieu de sélectionner **Widget de zone numérique**, sélectionnez **Widget de champ** dans la barre d’outils de composants et effectuez les étapes ci-dessus. Quand vous sélectionnez des dimensions pour l’option **Widget de champ**, toutes les zones de texte, à l’exception de la zone numérique, ont la même taille.
 
@@ -468,7 +470,7 @@ Avec la barre d’outils de composants, vous pouvez également spécifier la mis
 
 Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant à un état spécifique :
 
-1. Sélectionnez un composant dans la zone de travail, puis sélectionnez l’option appropriée dans la barre d’outils de composants.
+1. Sélectionnez un composant dans la zone de travail, puis sélectionnez l’option appropriée dans la barre d’outils du composant.
 La barre latérale affiche les options de personnalisation de la mise en forme du composant.
 1. Sélectionnez un état dans la barre latérale. Par exemple, l’état Erreur.
 1. Utilisez des options telles que **Bordure, Arrière-plan** dans la barre latérale pour personnaliser l’aspect des composants.
@@ -478,14 +480,14 @@ Lorsque vous personnalisez la mise en forme d’un composant après avoir spéci
 
 Pour simuler le comportement d’états autres que l’erreur et la réussite, utilisez le mode Aperçu. Pour utiliser le mode Aperçu, cliquez sur **Aperçu** dans la barre d’outils de la page.
 
-### Mise en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
+### Mettre en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
 
 Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les appareils équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/ruler.png) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire ou une communication interactive pour les formats d’affichage de différents appareils, tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
 
 Pour mettre en forme des composants pour différents points d’arrêt :
 
 1. Dans la zone de travail, sélectionnez un point d’arrêt au-dessus de la règle.
-Un point d’arrêt représente un appareil mobile et son format d’affichage.
+Un point d’arrêt représente un appareil mobile et sa taille d’affichage.
 1. Utilisez la barre latérale pour personnaliser la mise en forme des composants de formulaire ou de communication interactive dans le thème pour le format d’affichage sélectionné.
 1. Vérifiez que la personnalisation est enregistrée.
 
@@ -497,7 +499,7 @@ Vous pouvez désormais utiliser les polices disponibles dans un service Web dans
 
 Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![icône des réglages](assets/hammer.png) > Déploiement > Services Cloud.
+1. Dans l’instance de création, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Déploiement > Cloud Services.
 1. Sur la page **Cloud Services**, accédez à l’option **Adobe Fonts** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **Créer**.
 1. Dans la boîte de dialogue **Créer une configuration**, indiquez un titre pour la configuration et cliquez sur **Créer**.
 
@@ -507,7 +509,7 @@ Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
 Pour configurer un thème de sorte qu’il utilise la configuration Adobe Fonts, procédez comme suit :
 
-1. Dans l’instance de l’auteur, ouvrez un thème dans l’éditeur de thèmes.
+1. Dans l’instance de création, ouvrez un thème dans l’éditeur de thèmes.
 1. Dans l’éditeur de thèmes, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Configurer**.
 1. Dans le champ **Configuration d’Adobe Fonts**, sélectionnez un kit et cliquez sur **Enregistrer**.
 
@@ -566,7 +568,7 @@ Pour appliquer un thème à un formulaire adaptatif :
 
 Pour appliquer un thème à une communication interactive :
 
-1. Ouvrez votre communication interactive en mode d’édition. Pour ouvrir une communication interactive en mode d’édition, sélectionnez un formulaire, puis appuyez sur **Ouvrir**.
+1. Ouvrez votre communication interactive en mode d’édition. Pour ouvrir une communication interactive en mode d’édition, sélectionnez un formulaire, puis cliquez sur **Ouvrir**.
 1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.
@@ -649,8 +651,8 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
       1. Dans l’onglet Avancé, dans le champ Emplacement de la bibliothèque cliente, parcourez et sélectionnez la bibliothèque cliente que vous souhaitez utiliser.
       1. Cliquez sur **Enregistrer**.
 
-     Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez le style de la zone de texte, de la zone numérique et du commutateur dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, le style de la zone de texte, de la zone numérique et du commutateur est importé. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.
-Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
+     Le style que vous spécifiez dans la bibliothèque cliente est importé dans le thème qui l’utilise. Par exemple, vous spécifiez la mise en forme de la zone de texte et de la zone numérique, puis vous basculez dans la bibliothèque cliente. Lorsque vous importez votre bibliothèque cliente dans le thème, la mise en forme de la zone de texte, de la zone numérique et du commutateur est importée. Vous pouvez ensuite mettre en forme d’autres composants à l’aide de l’éditeur de thèmes.
+Vous pouvez également créer un thème, créer des copies de ce thème, puis modifier la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
 Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-appearance)
 
    * **Éditeur de thème:**
@@ -672,4 +674,4 @@ Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-
 * **Dans quel cas utiliser l’éditeur de formulaires ou l’éditeur de thèmes pour travailler sur l’en-tête et le pied de page**
 
   Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
-Si vous souhaitez fournir des informations comme une image de logo, le nom de l’entreprise dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.
+Si vous souhaitez fournir des informations telles qu’une image de logo, le nom de la société dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.

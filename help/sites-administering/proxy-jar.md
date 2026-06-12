@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1189'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ## Utilisations de l’outil de serveur proxy {#uses-of-the-proxy-server-tool}
 
-Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de serveur proxy peut être utilisé : 
+Les scénarios ci-dessous indiquent une partie des fins auxquelles l’outil de serveur proxy peut être utilisé :
 
 **Rechercher les cookies et leurs valeurs**
 
@@ -143,7 +143,7 @@ Examinez un modèle simple qui génère le code suivant lorsque cela est demand�
 </html>
 ```
 
-Si AEM s’exécute sur localhost:4303, démarrez le serveur proxy comme suit :
+Si AEM s’exécute sur localhost:4303, démarrez le serveur proxy comme suit :
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

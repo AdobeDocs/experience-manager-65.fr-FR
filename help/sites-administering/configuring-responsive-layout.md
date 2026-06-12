@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1502'
+ht-degree: 96%
 
 ---
 
@@ -50,11 +50,11 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
         Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Une fois que le conteneur de dispositions est positionné sur la page, vous pouvez utiliser le mode **Disposition** pour placer le contenu dans la grille réactive.
+* **[Mode Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+Une fois que le conteneur de dispositions est positionné sur la page, vous pouvez utiliser le mode **Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Cette action vous permet de créer et de modifier des sites web réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
+Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la disposition en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur ou l’utilisatrice peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -329,7 +329,7 @@ Il peut arriver que vous trouviez nécessaire d’imbriquer des grilles réactiv
 
 Lorsque vous ne pouvez pas éviter d’utiliser des grilles réactives imbriquées, assurez-vous des points suivants :
 
-* Tous les conteneurs (conteneurs, onglets, accordéons, etc.) possèdent la propriété `layout = responsiveGrid`.
+* Tous les conteneurs (conteneurs, onglets, accordéons, etc.) la propriété doit être `layout = responsiveGrid`.
 * Ne mélangez pas les `layout = simple` de propriété dans la hiérarchie de conteneur.
 
 Cela inclut tous les conteneurs structurels du modèle de page.

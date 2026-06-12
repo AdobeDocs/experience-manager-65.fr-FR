@@ -253,7 +253,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!CAUTION]
 >
->La configuration du dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
+>La configuration du Dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
 
 >[!NOTE]
 >
