@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Vue d’ensemble {#overview}
 
-La fonction de recherche est une fonctionnalité essentielle des communautés Adobe Experience Manager (AEM). Outre les fonctionnalités de recherche de la plateforme [](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’API de recherche [UGC](#ugc-search-api) pour rechercher du contenu créé par l’utilisateur. Le contenu créé par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément des autres données utilisateur et du contenu AEM.
+La fonction de recherche est une fonctionnalité essentielle des communautés Adobe Experience Manager (AEM). Outre les fonctionnalités de recherche de la plateforme [&#128279;](../../help/sites-deploying/queries-and-indexing.md), AEM Communities fournit l’API de recherche [UGC](#ugc-search-api) pour rechercher du contenu créé par l’utilisateur. Le contenu créé par l’utilisateur possède des propriétés uniques, car il est saisi et stocké séparément des autres données utilisateur et du contenu AEM.
 
 Pour Communities, les deux éléments généralement recherchés sont les suivants :
 
@@ -52,7 +52,7 @@ Pour [ASRP](asrp.md), le contenu créé par l’utilisateur est stocké dans le 
 
 Il n’existe actuellement aucun outil permettant de gérer les recherches ASRP.
 
-Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [ exigences en matière de dénomination ](#naming-of-custom-properties).
+Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [&#x200B; exigences en matière de dénomination &#x200B;](#naming-of-custom-properties).
 
 ### Recherches MSRP {#msrp-searches}
 
@@ -67,7 +67,7 @@ En ce qui concerne MSRP et Solr :
 
 Les fonctionnalités de recherche personnalisées doivent utiliser l’[API de recherche UGC](#ugc-search-api).
 
-Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [ exigences en matière de dénomination ](#naming-of-custom-properties).
+Lors de la création de propriétés personnalisées pouvant faire l’objet de recherches, il est nécessaire de respecter les [&#x200B; exigences en matière de dénomination &#x200B;](#naming-of-custom-properties).
 
 ### Recherches JSRP {#jsrp-searches}
 
@@ -85,9 +85,9 @@ Bien que les index Oak ne soient pas automatiquement créés pour la recherche s
 
 Si des propriétés personnalisées sont en cours d’utilisation et que les recherches sont lentes, des index supplémentaires doivent être créés pour les propriétés personnalisées afin de les rendre plus performantes. Pour maintenir la portabilité, respectez les exigences en matière de [dénomination](#naming-of-custom-properties) lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
 
-Pour modifier des index existants ou créer des index personnalisés, consultez [Requêtes et indexation ](../../help/sites-deploying/queries-and-indexing.md).
+Pour modifier des index existants ou créer des index personnalisés, consultez [Requêtes et indexation &#x200B;](../../help/sites-deploying/queries-and-indexing.md).
 
-Le [gestionnaire d’index ](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible à partir d’ACS AEM Commons. Elle fournit les éléments suivants :
+Le [gestionnaire d’index &#x200B;](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) est disponible à partir d’ACS AEM Commons. Elle fournit les éléments suivants :
 
 * Une vue des index existants.
 * Possibilité de lancer la réindexation.
@@ -165,7 +165,7 @@ Solr est un exemple de langage de requête qui utilise un schéma.
 
 ## Filtres {#filters}
 
-Les composants, qui incluent le [ système de commentaires ](essentials-comments.md), prennent en charge le paramètre de filtre en plus de leurs points d’entrée.
+Les composants, qui incluent le [&#x200B; système de commentaires &#x200B;](essentials-comments.md), prennent en charge le paramètre de filtre en plus de leurs points d’entrée.
 
 La syntaxe de filtre pour la logique AND et OR est exprimée comme suit (affichée avant d’être encodée en URL) :
 

@@ -492,7 +492,7 @@ Créez une application CQ et ajoutez le composant geoloc.
 
 1. Ouvrez CRXDE Lite dans votre navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps`, puis cliquez sur Créer > Créer un dossier. Indiquez le nom `myapp`, puis cliquez sur OK.
-1. De même, sous `myapp`, créez un dossier nommé `contextstores`. ``
+1. De même, sous `myapp`, créez un dossier nommé `contextstores`. &grave;&grave;
 1. Cliquez avec le bouton droit de la souris sur le dossier `/apps/myapp/contextstores`, puis sélectionnez Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : geoloc

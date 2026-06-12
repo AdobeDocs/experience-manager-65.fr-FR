@@ -381,7 +381,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&amp;ast;/taille et le nœud/&amp;ast;/&amp;ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
 
 ### rangeproperty {#rangeproperty}
 

@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Personnalisation côté serveur {#server-side-customization}
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté client ](client-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté client &#x200B;](client-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ des assistants Handlebars SCF ](handlebars-helpers.md)****[ |
+|   | ⇒ des assistants Handlebars SCF [&#128279;](handlebars-helpers.md)**&#x200B;** |
 
 ## API Java™ {#java-apis}
 
@@ -125,6 +125,6 @@ Consultez la section [Consignes de codage](code-guide.md) pour obtenir diverses 
 
 Consultez également la section [Fournisseur de ressources de stockage (SRP) pour le contenu créé par l’utilisateur](srp.md) pour en savoir plus sur l’accès au contenu généré par l’utilisateur.
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté client ](client-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté client &#x200B;](client-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ des assistants Handlebars SCF ](handlebars-helpers.md)****[ |
+|   | ⇒ des assistants Handlebars SCF [&#128279;](handlebars-helpers.md)**&#x200B;** |
