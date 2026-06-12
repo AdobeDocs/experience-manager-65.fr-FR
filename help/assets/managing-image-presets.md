@@ -397,7 +397,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
      <li><strong>Appliquer à</strong> : détermine si l’accentuation s’applique à chaque couleur ou à la luminosité.</li>
     </ul>
     <div>
-      L’accentuation est décrite dans <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Accentuation des images</a>.
+      L’accentuation est décrite dans <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=fr">Accentuation des images</a>.
     </div> </td>
   </tr>
   <tr>

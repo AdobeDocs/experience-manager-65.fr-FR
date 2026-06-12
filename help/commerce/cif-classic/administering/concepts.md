@@ -40,7 +40,7 @@ Cela signifie que :
 
 >[!CAUTION]
 >
->le [framework d’intégration du e-commerce](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
+>le [framework d’intégration du e-commerce](https://business.adobe.com/fr/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
 >
 >Le représentant commercial ou la représente commerciale peuvent vous donner plus de détails, en fonction du moteur approprié.
 
