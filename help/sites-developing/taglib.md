@@ -176,7 +176,7 @@ Elle présente les attributs suivants :
 
 Si l’attribut `source` n’est pas défini :
 
-* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur `` `static`.
+* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur &grave;&grave; `static`.
 
 * Si l’attribut `language` n’est pas défini, l’attribut `source` est défini, par défaut, sur `auto`.
 
