@@ -36,11 +36,11 @@ MCM vous permet d’accéder aux éléments suivants :
 * **[Tableau de bord](#dashboard)**
 Il est divisé en quatre volets :
 
-   * [Listes ](#lists)
+   * [Listes &#x200B;](#lists)
 Ce volet affiche les listes que vous avez déjà créées, ainsi que le nombre de prospects figurant dans ces listes. Ce volet vous permet de créer directement une liste ou d’importer des prospects pour créer une liste.
 Lorsque vous sélectionnez une liste spécifique, vous accédez à la section [Listes](#lists) qui affiche des détails à son sujet.
 
-   * [Segments ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+   * [Segments &#x200B;](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 Ce volet affiche les segments que vous avez définis. Les segments vous permettent de caractériser un ensemble de visiteurs qui partagent certaines caractéristiques.
 La sélection d’un segment spécifique ouvre la page de définition de segment.
 

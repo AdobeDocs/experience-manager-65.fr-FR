@@ -126,7 +126,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### **Après le déploiement** {#post-deployment}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : ``
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : &grave;&grave;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête pour réduire le nombre de nœuds parcourus.
@@ -332,7 +332,7 @@ Problèmes possibles et solutions :
 
    * Effectuez une vérification du référentiel de traversée ; par exemple :
 
-     [:4502/system/console/repositorycheck ](http://localhost:4502/system/console/repositorycheck)
+     [:4502/system/console/repositorycheck &#x200B;](http://localhost:4502/system/console/repositorycheck)
 
      La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 

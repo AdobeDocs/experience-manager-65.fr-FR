@@ -320,7 +320,7 @@ Pour plus de détails sur les options de configuration disponibles, consultez la
 >
 >Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors d’Adobe Managed Services, Adobe recommande de travailler directement avec le fournisseur de services cloud. Vous pouvez également collaborer avec l’un des partenaires d’Adobe qui prend en charge le déploiement d’AEM dans l’environnement cloud de votre choix. Le partenaire ou le fournisseur de services cloud sélectionné est responsable des spécifications de dimensionnement, de la conception et de l’implémentation de l’architecture qu’ils prennent en charge pour répondre à vos besoins spécifiques en termes de performances, de charge, d’évolutivité et de sécurité.
 >
->>Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>&#x200B;>Consultez également la page des [exigences techniques](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Rechercher {#search-features}
 
