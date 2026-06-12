@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1512'
 ht-degree: 96%
 
 ---
@@ -131,7 +131,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
    * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
    * Nouveau composant sitemap pour pages de contenu et de commerce
 
-* Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par l’IA d’Adobe](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
+* Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par Adobe AI](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
 ## Date de publication : juin 2021
 
@@ -180,7 +180,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Prise en charge de l’UID de catégorie – Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
-* Extension AEM pour PWA Studio, avec un exemple d’intégration
+* Extension AEM pour PWA Studio, exemple d’intégration
 
 * Nouveau composant principal de navigation CIF qui étend le composant principal de navigation WCM
 

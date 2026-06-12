@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '9057'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '9584'
+ht-degree: 88%
 
 ---
 
@@ -61,13 +61,13 @@ La section suivante présente les [règles du WCAG 2.0](https://www.w3.org/TR/W
 >* la numérotation utilisée dans les [règles WCAG 2.0](https://www.w3.org/TR/WCAG20/#guidelines) afin de simplifier les références croisées avec le site web WCAG.
 >
 
-## Principe 1 : perceptible  {#principle-perceivable}
+## Principe 1 : perceptible {#principle-perceivable}
 
-[Principe 1 : perceptible – Les informations et les composants de l’interface utilisateur doivent être présentés aux utilisateurs sous des formes qu’ils peuvent percevoir.](https://www.w3.org/TR/WCAG20/#perceivable)
+[Principe 1 : perceptible - Les informations et les composants de l’interface utilisateur doivent pouvoir être présentés aux utilisateurs comme ils peuvent le percevoir.](https://www.w3.org/TR/WCAG20/#perceivable)
 
 ### Équivalents textuels (1.1) {#text-alternatives}
 
-[Règle 1.1 – Les équivalents textuels : ils proposent des équivalents textuels à tout contenu non textuel qui pourra alors être présenté sous d’autres formes selon les besoins de l’utilisateur ou de l’utilisatrice : grands caractères, braille, synthèse vocale, symboles ou langage simplifié.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Règle 1.1 - Les équivalents textuels : ils proposent des équivalents textuels à tout contenu non textuel qui pourra alors être présenté sous d’autres formes selon les besoins de l’utilisateur ou de l’utilisatrice : grands caractères, braille, synthèse vocale, symboles ou langage simplifié.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 ### Contenu non textuel (1.1.1) {#non-text-content}
 
@@ -77,7 +77,7 @@ La section suivante présente les [règles du WCAG 2.0](https://www.w3.org/TR/W
 
 #### Objectif – Contenu non textuel (1.1.1) {#purpose-non-text-content}
 
-Le contenu d’une page web peut être proposé dans différents formats non textuels (photos, vidéos, animations, tableaux et graphiques). Les personnes aveugles ou malvoyantes ne sont pas en mesure de voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou sous forme tactile grâce à un appareil d’affichage en braille. Ainsi, en proposant des alternatives textuelles au contenu au format graphique, les personnes qui ne peuvent pas voir ce contenu graphique peuvent accéder à une version équivalente de l’information fournie par le contenu.
+Les informations d’une page web peuvent être fournies dans différents formats non textuels, tels que des images, des vidéos, des animations, des graphiques et des diagrammes. Les personnes aveugles ou ayant de graves déficiences visuelles ne peuvent pas voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou sous forme tactile grâce à un dispositif d’affichage en braille. Ainsi, en proposant des alternatives textuelles au contenu au format graphique, les personnes qui ne peuvent pas voir ce contenu graphique peuvent accéder à une version équivalente de l’information fournie par le contenu.
 
 Par ailleurs, les alternatives textuelles ont l’avantage de permettre l’indexation du contenu non textuel par la technologie des moteurs de recherche.
 
@@ -184,14 +184,14 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 #### En savoir plus – Contenu non textuel (1.1.1) {#more-information-non-text-content}
 
-* [Compréhension du critère de réussite 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
+* [Comprendre le critère de réussite 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [Comment remplir le critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
-* [W3C : techniques HTML5 permettant de spécifier des équivalents textuels utiles (en anglais)](https://html.spec.whatwg.org/multipage/images.html#alt)
-* [Explication des CAPTCHA et alternatives par le W3C](https://www.w3.org/TR/turingtest/)
+* [W3C : techniques HTML5 permettant de fournir des équivalents textuels utiles](https://html.spec.whatwg.org/multipage/images.html#alt)
+* [Explication du W3C et alternatives aux CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 ### Média temporel (1.2) {#time-based-media}
 
-[Règle 1.2 – Média temporel : propose des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG20/#text-equiv)
+[Règle 1.2 - Média temporel : propose des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
 Ces informations traitent du contenu web *temporel*. Cela concerne le contenu que l’utilisateur ou l’utilisatrice peut lire (contenu vidéo, audio et animé, par exemple) et qui peut être pré-enregistré ou en direct.
 
@@ -216,7 +216,7 @@ Les utilisateurs et utilisatrices de navigateurs ou d’appareils qui ne prennen
 
 Fournir ces informations dans un format différent, tel que du texte (ou de l’audio pour une vidéo sans audio), peut les rendre accessibles aux personnes qui ne peuvent pas accéder au contenu d’origine.
 
-#### Comment procéder – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1)  {#how-to-meet-audio-only-and-video-only-pre-recorded}
+#### Comment procéder – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1) {#how-to-meet-audio-only-and-video-only-pre-recorded}
 
 * Si le contenu est un contenu audio pré-enregistré sans vidéo (podcast par exemple) :
 
@@ -237,20 +237,20 @@ L’insertion de contenu multimédia, en particulier du contenu Flash, dans les 
 
 >[!NOTE]
 >
->Si vous utilisez un contenu multimédia informatif, vous devez également créer des liens vers les équivalents. Par exemple, pour inclure une transcription textuelle, créez une page HTML où afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
+>Lorsque vous utilisez du contenu multimédia informatif, vous devez également créer des liens vers des alternatives. Par exemple, pour inclure une transcription textuelle, créez une page HTML pour afficher la transcription, puis ajoutez un lien en regard ou en dessous du contenu audio.
 
 #### En savoir plus – Contenu seulement audio ou vidéo (pré-enregistré) (1.2.1) {#more-information-audio-only-and-video-only-pre-recorded}
 
-* [Compréhension du critère de réussite 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
-* [Comment remplir le critère de réussite 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
+* [Comprendre le critère de réussite 1.2.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+* [Comment remplir le critère de réussite 1.2.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
 
-### Sous-titres (pré-enregistrés) (1.2.2)  {#captions-pre-recorded}
+### Sous-titres (pré-enregistrés) (1.2.2) {#captions-pre-recorded}
 
 * Critère de réussite 1.2.2
 * Niveau A
 * Sous-titres (pré-enregistrés) : fournir des sous-titres pour tout contenu audio pré-enregistré dans un média synchronisé, excepté lorsque le média est un média de remplacement pour un texte et qu’il est clairement identifié comme tel.
 
-#### Objectif – Sous-titres (pré-enregistrés) (1.2.2)  {#purpose-captions-pre-recorded}
+#### Objectif – Sous-titres (pré-enregistrés) (1.2.2) {#purpose-captions-pre-recorded}
 
 Les personnes sourdes ou malentendantes ne peuvent pas accéder au contenu audio ou ont de grandes difficultés à y accéder. Les sous-titres sont des équivalents textuels pour un son parlé ou non, qui s’affichent à l’écran au moment approprié pendant la vidéo. Ils permettent aux personnes qui ne peuvent pas entendre le son de comprendre ce qui se passe.
 
@@ -258,7 +258,7 @@ Les personnes sourdes ou malentendantes ne peuvent pas accéder au contenu audio
 >
 >Les sous-titres ne sont pas requis lorsque du texte ou des équivalents non textuels appropriés (qui fournissent directement des informations équivalentes) sont disponibles sur la même page que la vidéo ou l’animation.
 
-#### Comment procéder – Sous-titres (pré-enregistrés) (1.2.2)  {#how-to-meet-captions-pre-recorded}
+#### Comment procéder – Sous-titres (pré-enregistrés) (1.2.2) {#how-to-meet-captions-pre-recorded}
 
 Les sous-titres peuvent être :
 
@@ -276,17 +276,17 @@ Si vous devez utiliser des sous-titres ouverts, incorporez le texte dans le suiv
 #### En savoir plus – Sous-titres (pré-enregistrés) (1.2.2) {#more-information-captions-pre-recorded}
 
 * [Compréhension du critère de réussite 1.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) :
-* [Comment remplir le critère de réussite 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
-* [W3C: Synchronized Multimedia (Multimédia synchronisé ; en anglais)](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions (Sous-titres, transcriptions et descriptions audio), par WebAIM (en anglais)](https://webaim.org/techniques/captions/)
+* [Comment remplir le critère de réussite 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#time-based-media)
+* [W3C : Multimédia synchronisé](https://www.w3.org/AudioVideo/)
+* [Sous-titres, transcriptions et descriptions audio - par WebAIM](https://webaim.org/techniques/captions/)
 
-### Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3)  {#audio-description-or-media-alternative-pre-recorded}
+### Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3) {#audio-description-or-media-alternative-pre-recorded}
 
 * Critère de réussite 1.2.3
 * Niveau A
 * Audio-description ou version de remplacement pour un média temporel (pré-enregistré) : une alternative pour un média temporel ou une audio-description du contenu vidéo pré-enregistré est fournie pour un média synchronisé, sauf lorsque le média est un média secondaire pour un texte et qu’il est clairement étiqueté comme tel.
 
-#### Objectif – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3)  {#purpose-audio-description-or-media-alternative-pre-recorded}
+#### Objectif – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3) {#purpose-audio-description-or-media-alternative-pre-recorded}
 
 Les personnes aveugles ou malvoyantes rencontrent des obstacles à l’accessibilité si les informations contenues dans une vidéo ou une animation ne sont fournies que sous une forme visuelle. Cette situation se produit également si la bande sonore ne fournit pas suffisamment d’informations pour permettre de comprendre ce qui se passe visuellement.
 
@@ -306,15 +306,15 @@ Deux méthodes peuvent être adoptées pour satisfaire ce critère de réussite.
 
 1. Fournissez une transcription textuelle formant un équivalent textuel adapté des éléments audio et visuels de la vidéo ou de l’animation. Il peut s’agir, selon les besoins, d’une indication précisant qui parle, d’une description du décor ou d’expressions vocales. Selon sa durée, vous pouvez placer la transcription sur la même page que la vidéo ou l’animation, ou sur une autre. Dans le deuxième cas, fournissez un lien vers la transcription à proximité de la vidéo ou de l’animation.
 
-Les détails exacts de la création de vidéos avec description audio ne sont pas compris dans ce guide. La création de descriptions vidéo et audio peut prendre du temps, mais d’autres produits Adobe peuvent vous aider à accomplir ces tâches. Si vous créez du contenu dans Adobe Flash Professional, vous devez également créer un script pour inviter l’utilisateur à télécharger le plug-in approprié et fournir un texte secondaire via l’élément `<noscript>`.
+Les détails exacts de la création de vidéos avec description audio ne font pas partie de ce guide. La création de descriptions vidéo et audio peut prendre du temps, mais d’autres produits Adobe peuvent vous aider à accomplir ces tâches. Si vous créez du contenu dans Adobe Flash Professional, vous devez également créer un script pour inviter l’utilisateur à télécharger le plug-in approprié et fournir un texte secondaire via l’élément `<noscript>`.
 
 #### En savoir plus – Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
 * [Compréhension du critère de réussite 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) :
-* [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
+* [Comment remplir le critère de réussite 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://helpx.adobe.com/fr/premiere-pro/using/whats-new.html)
 
-### Sous-titres (en direct) (1.2.4)    {#captions-live}
+### Sous-titres (en direct) (1.2.4)  {#captions-live}
 
 * Critère de réussite 1.2.4
 * Niveau AA
@@ -326,39 +326,39 @@ Ce critère de réussite est identique aux [Sous-titres (pré-enregistrés)](#ca
 
 #### Comment procéder – Sous-titres (en direct) (1.2.4) {#how-to-meet-captions-live}
 
-Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#captions-pre-recorded) ci-dessus. Toutefois, en raison de la nature du média (en direct), les sous-titres doivent être créés aussi rapidement que possible, en fonction de ce qui se passe dans la vidéo. Par conséquent, vous devez envisager d’utiliser des outils de sous-titrage en temps réel ou de transcription audio en texte.
+Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#captions-pre-recorded) ci-dessus. Toutefois, en raison de la nature du média (en direct), les sous-titres doivent être créés aussi rapidement que possible et en fonction de ce qui se passe dans la vidéo. Par conséquent, vous devez envisager d’utiliser des outils de sous-titrage en temps réel ou de transcription audio en texte.
 
 Des instructions détaillées dépassent le cadre de ce document, mais la ressource suivante fournit des informations utiles :
 
-* [WebAIM : Real Time Captioning (sous-titrage en temps réel)](https://webaim.org/techniques/captions/realtime)
+* [WebAIM : Sous-titrage en temps réel](https://webaim.org/techniques/captions/realtime)
 
-#### En savoir plus – Sous-titres (en direct) (1.2.4)  {#more-information-captions-live}
+#### En savoir plus – Sous-titres (en direct) (1.2.4) {#more-information-captions-live}
 
-* [Compréhension du critère de réussite 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
-* [Comment remplir le critère de réussite 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
+* [Comprendre les critères de réussite 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
+* [Comment remplir le critère de réussite 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
 
-### Audio-description (pré-enregistrée) (1.2.5)    {#audio-description-pre-recorded}
+### Audio-description (pré-enregistrée) (1.2.5)  {#audio-description-pre-recorded}
 
 * Critère de réussite 1.2.5
 * Niveau AA
 * Audio-description (pré-enregistrée) : une description audio est fournie pour tout le contenu vidéo pré-enregistré dans les médias synchronisés.
 
-#### Objectif – Audio-description (pré-enregistrée) (1.2.5)  {#purpose-audio-description-pre-recorded}
+#### Objectif – Audio-description (pré-enregistrée) (1.2.5) {#purpose-audio-description-pre-recorded}
 
 Ce critère de réussite est identique au critère [Audio-description ou version de remplacement pour un média temporel (pré-enregistré)](#audio-description-or-media-alternative-pre-recorded), excepté que les auteurs doivent fournir une audio-description beaucoup plus détaillée, conforme au niveau AA.
 
-#### Comment procéder – Audio-description (pré-enregistrée) (1.2.5)  {#how-to-meet-audio-description-pre-recorded}
+#### Comment procéder – Audio-description (pré-enregistrée) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
 
 Suivez les instructions de la section [Audio-description ou version de remplacement pour un média temporel (pré-enregistré)](#audio-description-or-media-alternative-pre-recorded).
 
-#### En savoir plus – Audio-description (pré-enregistrée) (1.2.5)  {#more-information-audio-description-pre-recorded}
+#### En savoir plus – Audio-description (pré-enregistrée) (1.2.5) {#more-information-audio-description-pre-recorded}
 
-* [Compréhension du critère de réussite 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
-* [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
+* [Comprendre le critère de réussite 1.2.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html)
+* [Comment remplir le critère de réussite 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc-only)
 
 ### Adaptable (1.3) {#adaptable}
 
-[Règle 1.3 - Adaptable : créer un contenu qui puisse être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
+[Règle 1.3 - Adaptable : créez un contenu qui peut être présenté de différentes manières sans perte d’information ni de structure (par exemple avec une mise en page simplifiée).](https://www.w3.org/TR/WCAG20/#content-structure-separation)
 
 Cette règle couvre les exigences nécessaires pour proposer un contenu adapté aux personnes qui :
 
@@ -366,7 +366,7 @@ Cette règle couvre les exigences nécessaires pour proposer un contenu adapté 
 
 * utilisent peut-être un contenu audio uniquement ou un affichage visuel de remplacement, par exemple un contraste élevé ou une grande taille de texte.
 
-### Informations et relations (1.3.1)    {#info-and-relationships}
+### Informations et relations (1.3.1)  {#info-and-relationships}
 
 * Critère de réussite 1.3.1
 * Niveau A
@@ -378,7 +378,7 @@ Nombre des technologies d’assistance auxquelles ont recours les personnes en s
 
 Ce critère de réussite permet de s’assurer que ces informations structurelles sont fournies par le biais du langage HTML, de sorte que les navigateurs et les technologies d’assistance puissent y accéder et en tirer parti.
 
-#### Comment procéder – Informations et relations (1.3.1)  {#how-to-meet-info-and-relationships}
+#### Comment procéder – Informations et relations (1.3.1) {#how-to-meet-info-and-relationships}
 
 AEM facilite la construction de pages web à l’aide d’éléments HTML appropriés. Ouvrez le contenu de votre page dans l’éditeur de texte enrichi (un composant texte) et utilisez le menu **Format** pour indiquer l’élément structurel approprié (paragraphe, en-tête, etc.).
 
@@ -398,7 +398,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 * **Texte mis en évidence** :
 
-  Mettez le texte en évidence à l’aide des éléments &lt;strong> ou &lt;em>. N’utilisez pas de titres au sein des paragraphes.
+  Utilisez la balise &lt;strong> ou &lt;em> element to indicate emphasis. N’utilisez pas d’en-têtes pour mettre le texte en évidence au sein des paragraphes.
 
    * Surlignez le texte à mettre en évidence.
    * Cliquez sur l’icône **B** (pour &lt;strong>) ou **I** (pour &lt;em>) du panneau **Propriétés** (HTML doit être sélectionné).
@@ -422,7 +422,7 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
      Dans l’éditeur de texte enrichi, cliquez sur l’icône **Liste numérotée**.
 
-  Pour modifier le contenu existant d’un type de liste particulier, surlignez le texte concerné puis sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment est entré le texte du paragraphe, les éléments de liste appropriés sont automatiquement ajoutés au fichier HTML, mais vous pouvez l’afficher en mode d’édition de la source.
+  Si vous souhaitez modifier le contenu existant d’un type de liste spécifique, mettez en surbrillance le texte approprié et sélectionnez le type de liste approprié. Comme dans l’exemple précédent illustrant comment le texte du paragraphe est saisi, les éléments de liste appropriés sont automatiquement ajoutés à votre HTML, mais vous pouvez l’afficher en mode d’édition de la source.
 
   >[!NOTE]
   >
@@ -462,9 +462,9 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
   ![Boîte de dialogue Propriétés de la cellule ; définition d’une ligne (généralement la première) comme ligne d’en-tête.](assets/chlimage_1-21a.png)
 
-* **Tableaux de données complexes :** 
+* **Tableaux de données complexes :**
 
-  Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs d’**en-tête** et d’**identifiant**. Par exemple, dans le tableau ci-dessous, les attributs header et id correspondent pour créer une association de programmation pour les utilisateurs de technologies d’assistance.
+  Dans certains cas, lorsqu’il existe des tableaux complexes comportant deux niveaux ou plus d’en-têtes, les propriétés de base du tableau peuvent ne pas suffire à fournir toutes les informations structurelles nécessaires. Pour ce type de tableaux complexes, il est nécessaire de créer des relations directes entre les en-têtes et leurs cellules associées à l’aide des attributs d’**en-tête** et d’**identifiant**. Par exemple, dans le tableau ci-dessous, les attributs « header » et « id » correspondent pour créer une association de programmation pour les personnes qui utilisent les technologies d’assistance.
 
   >[!NOTE]
   >
@@ -509,10 +509,10 @@ Veillez à ce que vos pages web aient la structure appropriée comme suit :
 
 #### En savoir plus – Informations et relations (1.3.1) {#more-information-info-and-relationships}
 
-* [Compréhension du critère de réussite 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
-* [Comment remplir le critère de réussite 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
+* [Comprendre le critère de réussite 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+* [Comment remplir le critère de réussite 1.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-programmatic)
 
-### Caractéristiques sensorielles (1.3.3)    {#sensory-characteristics}
+### Caractéristiques sensorielles (1.3.3)  {#sensory-characteristics}
 
 * Critère de réussite 1.3.3
 * Niveau A
@@ -541,12 +541,12 @@ Assurez-vous que toutes les informations qui reposent sur les caractéristiques 
 
 #### En savoir plus – Caractéristiques sensorielles (1.3.3) {#more-information-sensory-characteristics}
 
-* [Compréhension du critère de réussite 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
-* [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding)
+* [Comprendre les critères de réussite 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+* [Comment remplir le critère de réussite 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-content-structure-separation-understanding)
 
 ### Perceptible (1.4) {#distinguishable}
 
-[Règle 1.4 – Perceptible : faciliter la perception visuelle et auditive du contenu par l’utilisateur, notamment en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
+[Règle 1.4 - Distinctif : permet aux utilisateurs et aux utilisatrices de voir et d’entendre plus facilement le contenu, y compris en séparant le premier plan de l’arrière-plan.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
 ### Utilisation de la couleur (1.4.1)  {#use-of-color}
 
@@ -597,23 +597,23 @@ Si vous utilisez la couleur comme vecteur d’information, vous devez fournir un
 
 #### En savoir plus – Utilisation de la couleur (1.4.1) {#more-information-use-of-color}
 
-* [Compréhension du critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Comprendre le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Conseils pour obtenir un rapport de contraste de 3 :1, avec une liste de couleurs adaptées au Web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contraste (minimum) (1.4.3) {#contrast-minimum}
 
 * Critère de réussite 1.4.3
 * Niveau AA
-* Contraste (minimum) : la présentation visuelle du texte et des images du texte présente un rapport de contraste d’au moins 4,5:1, sauf dans les cas suivants :
+* Contraste (minimum) : la présentation visuelle du texte et des images du texte a un rapport de contraste d’au moins 4,5:1, à l’exception des éléments suivants :
 
-   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3:1.
+   * Texte grand format : le texte à grande échelle et les images de texte à grande échelle ont un rapport de contraste d’au moins 3 :1.
    * Texte décoratif : aucune exigence de contraste pour le texte ou le texte sous forme d’image intégré à un composant d’interface utilisateur inactif. Il s’agit d’un élément purement décoratif, invisible de tous ou intégré à une partie d’une image contenant un autre contenu significatif.
    * Logotypes : aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque.
 
 #### Objectif – Contraste (minimum) (1.4.3) {#purpose-contrast-minimum}
 
-Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesure de distinguer certaines paires de couleurs à faible contraste. Elles peuvent être confrontées à des obstacles à l’accessibilité si :
+Les personnes atteintes de certaines déficiences visuelles peuvent être incapables de distinguer certaines paires de couleurs à faible contraste. Des problèmes d’accessibilité peuvent survenir pour ces personnes si :
 
 * Le texte est faiblement contrasté avec sa couleur d’arrière-plan.
 * Le codage de la couleur du texte (tel que le texte du lien et le texte hors lien) est important pour distinguer les informations.
@@ -624,11 +624,11 @@ Les personnes avec certaines déficiences visuelles peuvent ne pas être en mesu
 
 #### Comment procéder – Contraste (minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
-Veillez à ce que le texte soit suffisamment contrasté par rapport à son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
+Assurez-vous que le texte contraste suffisamment avec son arrière-plan. Les rapports de contraste dépendent de la taille et du style du texte en question :
 
-* Pour le texte de moins de 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images de texte et l’arrière-plan doit être d’au moins 4.5:1.
-* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
-* Si un arrière-plan a un motif, l’arrière-plan autour du texte doit être ombré, de sorte que le rapport de 4.5:1 ou 3:1 soit préservé.
+* Pour un texte dont la taille est inférieure à 18 points (ou 14 points en gras), le rapport de contraste entre le texte/les images du texte et l’arrière-plan doit être d’au moins 4,5 :1.
+* Pour un texte d’au moins 18 points (ou 14 points en gras), le rapport de contraste doit être d’au moins 3:1.
+* Si un arrière-plan est répété, l’arrière-plan autour de tout texte doit être ombré de sorte que le rapport de 4,5:1 ou 3:1 soit conservé.
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou le [vérificateur de contraste des couleurs WebAIM](https://webaim.org/resources/contrastchecker/). Ces outils vous permettent de vérifier des paires de couleurs et de signaler tout problème de contraste.
 
@@ -638,10 +638,10 @@ S’il est impossible de respecter les niveaux de contraste recommandés, fourni
 
 #### En savoir plus – Contraste (minimum) (1.4.3) {#more-information-contrast-minimum}
 
-* [Compréhension du critère de réussite 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-* [Comment remplir le critère de réussite 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
+* [Comprendre les critères de réussite 1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+* [Comment remplir le critère de réussite 1.4.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-contrast)
 
-### Texte sous forme d’image (1.4.5)  {#images-of-text}
+### Texte sous forme d’image (1.4.5) {#images-of-text}
 
 * Critère de réussite 1.4.5
 * Niveau AA
@@ -664,14 +664,14 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
 
 #### En savoir plus – Texte sous forme d’image (1.4.5) {#more-information-images-of-text}
 
-* [Compréhension du critère de réussite 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
-* [Comment remplir le critère de réussite 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
+* [Comprendre le critère de réussite 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
+* [Comment remplir le critère de réussite 1.4.5](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-visual-audio-contrast-text-presentation)
 
 ## Principe 2 : utilisable {#principle-operable}
 
-[Principe 2 : utilisable – Les composants de l’interface utilisateur et de navigation doivent être utilisables.](https://www.w3.org/TR/WCAG20/#operable)
+[Principe 2 : utilisable - Les composants de l’interface utilisateur et de navigation doivent être utilisables.](https://www.w3.org/TR/WCAG20/#operable)
 
-### Mettre en pause, arrêter, masquer (2.2.2)    {#pause-stop-hide}
+### Mettre en pause, arrêter, masquer (2.2.2)  {#pause-stop-hide}
 
 * Critère de réussite 2.2.2
 * Niveau A
@@ -680,11 +680,11 @@ Si des images de texte doivent être utilisées, utilisez le CSS pour remplacer 
    * Déplacement, clignotement, défilement : pour toute information en mouvement, clignotante ou défilante qui
       * (a) démarre automatiquement,
       * (b) dure plus de cinq secondes, et
-      * (c) est présentée en parallèle à d’autres contenus,
-il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité.
+      * (c) est présenté en parallèle avec d&#39;autres contenus,
+il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de le suspendre, de l’arrêter ou de le masquer, sauf si le mouvement, le clignotement ou le défilement fait partie intégrante de l’activité ;
    * Mise à jour automatique : pour toute information mise à jour automatiquement qui
       * (a) démarre automatiquement, et
-      * (b) est présentée en parallèle à d’autres contenus,
+      * (b) est présenté en parallèle avec d&#39;autres contenus,
 il existe un mécanisme permettant à l’utilisateur ou à l’utilisatrice de la suspendre, de l’arrêter ou de la masquer, ou de contrôler la fréquence de la mise à jour, sauf si la mise à jour automatique fait partie intégrante de l’activité.
 
 Remarques :
@@ -704,20 +704,20 @@ Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestio
 
 * Proposez un moyen de mettre en pause le contenu qui défile pour que les utilisateurs et utilisatrices aient suffisamment de temps pour le lire. Par exemple, des bandeaux d’information en continu ou du texte mis à jour automatiquement.
 * Veillez à ce que le contenu qui clignote s’arrête de clignoter après cinq secondes.
-* Utilisez des technologies appropriées pour afficher le contenu clignotant pouvant être désactivé par le navigateur. Par exemple, des fichiers GIF (Graphics Interchange Format) ou APNG (Animated Portable Network Graphics).
+* Utilisez les technologies appropriées pour afficher du contenu clignotant qui peut être désactivé par le navigateur. notamment des fichiers GIF (Graphics Interchange Format) ou APNG (Animated Portable Network Graphics).
 * Fournissez une commande de formulaire sur la page web pour permettre aux utilisateurs et utilisatrices de désactiver tout contenu clignotant sur la page.
 * Si aucun des actions ci-dessus n’est réalisable, fournissez un lien vers une page contenant l’intégralité du contenu, mais sans clignotement.
 
-#### En savoir plus – Mettre en pause, arrêter, masquer (2.2.2)  {#more-information-pause-stop-hide}
+#### En savoir plus – Mettre en pause, arrêter, masquer (2.2.2) {#more-information-pause-stop-hide}
 
-* [Compréhension du critère de réussite 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
-* [Comment remplir le critère de réussite 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
+* [Comprendre le critère de réussite 2.2.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html)
+* [Comment remplir le critère de réussite 2.2.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-time-limits-pause)
 
-### Crises (2.3)      {#seizures}
+### Crises (2.3) {#seizures}
 
-[Règle 2.3 – Crises : ne pas concevoir de contenu susceptible de provoquer des crises.](https://www.w3.org/TR/WCAG20/#seizure)
+[Règle 2.3 - Crises : Ne pas concevoir le contenu d’une manière connue pour provoquer des crises.](https://www.w3.org/TR/WCAG20/#seizure)
 
-### Pas plus de trois flashs ou sous le seuil critique (2.3.1)  {#three-flashes-or-below-threshold}
+### Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#three-flashes-or-below-threshold}
 
 * Critère de réussite 2.3.1
 * Niveau A
@@ -729,7 +729,7 @@ Selon la nature du contenu, vous pouvez appliquer une ou plusieurs des suggestio
 
 #### Objectif – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
-Il arrive que le contenu qui flashe provoque des crises de photosensibilité. En appliquant ce critère de réussite, les utilisateurs concernés peuvent accéder au contenu et en prendre connaissance sans inquiétude quant au contenu qui flashe.
+Dans certains cas, le contenu clignotant peut provoquer des crises photosensibles. Ce critère de succès permet à ces utilisateurs et utilisatrices d’accéder à tout le contenu et de le tester sans se soucier du flashage du contenu.
 
 #### Comment procéder – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
@@ -740,10 +740,10 @@ Assurez-vous d’appliquer les techniques suivantes :
 
 #### En savoir plus – Pas plus de trois flashs ou sous le seuil critique (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
-* [Compréhension du critère de réussite 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
-* [Comment remplir le critère de réussite 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
+* [Comprendre le critère de réussite 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
+* [Comment remplir le critère de réussite 2.3.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#seizure)
 
-### Titre de page (2.4.2)    {#page-titled}
+### Titre de page (2.4.2)  {#page-titled}
 
 * Critère de réussite 2.4.2
 * Niveau A
@@ -761,10 +761,10 @@ Vous pouvez également changer le titre d’une page que vous modifiez en sélec
 
 #### En savoir plus – Titre de page (2.4.2) {#more-information-page-titled}
 
-* [Compréhension du critère de réussite 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
-* [Comment remplir le critère de réussite 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
+* [Comprendre le critère de réussite 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
+* [Comment remplir le critère de réussite 2.4.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-title)
 
-### Fonction du lien (selon le contexte) (2.4.4)    {#link-purpose-in-context}
+### Fonction du lien (selon le contexte) (2.4.4)  {#link-purpose-in-context}
 
 * Critère de réussite 2.4.4
 * Niveau A
@@ -827,17 +827,17 @@ Vous pouvez également utiliser des scripts, de sorte qu’une quantité minimal
 
 #### En savoir plus – Fonction du lien (selon le contexte) (2.4.4) {#more-information-link-purpose-in-context}
 
-* [Compréhension du critère de réussite 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-* [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
-* [C7 : Utilisation d’une feuille de style CSS pour masquer une portion du texte du lien](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
+* [Comprendre le critère de réussite 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+* [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs)
+* [C7 : Utilisation de CSS pour masquer une partie du texte du lien](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 
-## Principe 3 : compréhensible  {#principle-understandable}
+## Principe 3 : compréhensible {#principle-understandable}
 
-[Principe 3 : compréhensible – Les informations et l’utilisation de l’interface utilisateur doivent être compréhensibles.](https://www.w3.org/TR/WCAG20/#understandable)
+[Principe 3 : compréhensible - Les informations et le fonctionnement de l’interface utilisateur doivent être compréhensibles.](https://www.w3.org/TR/WCAG20/#understandable)
 
 ### Rendre le contenu textuel lisible et compréhensible (3.1) {#make-text-content-readable-and-understandable}
 
-[Règle 3.1 – Lisible : rendre le contenu textuel lisible et compréhensible](https://www.w3.org/TR/WCAG20/#meaning)
+[Règle 3.1 - Lisible : Rendre le contenu textuel lisible et compréhensible.](https://www.w3.org/TR/WCAG20/#meaning)
 
 ### Langue de la page (3.1.1) {#language-of-page}
 
@@ -847,7 +847,7 @@ Vous pouvez également utiliser des scripts, de sorte qu’une quantité minimal
 
 #### Objectif – Langue de la page (3.1.1) {#purpose-language-of-page}
 
-Ce critère de réussite garantit que ce texte et tout autre contenu linguistique est correctement restitué. Pour les utilisateurs de lecteur d’écran, il garantit que le contenu est correctement prononcé, tandis que les navigateurs visuels sont plus susceptibles d’afficher correctement certains jeux de caractères.
+Ce critère de succès a pour but de s’assurer que le texte et les autres contenus linguistiques sont correctement rendus. Pour les utilisateurs et utilisatrices de lecteurs d’écran, cela permet de s’assurer que le contenu est prononcé correctement, tandis que les navigateurs visuels sont plus susceptibles d’afficher correctement certains jeux de caractères.
 
 #### Comment procéder – Langue de la page (3.1.1) {#how-to-meet-language-of-page}
 
@@ -865,8 +865,8 @@ Dans AEM, la langue par défaut de la page est définie lors de sa création, ma
 
 #### En savoir plus – Langue de la page (3.1.1) {#more-information-language-of-page}
 
-* [Compréhension du critère de réussite 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
-* [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
+* [Comprendre le critère de réussite 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+* [Comment remplir le critère de réussite 3.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-doc-lang-id)
 * Les codes sont basés sur la norme ISO 639-1. Une liste plus exhaustive des codes pour chaque langue est disponible sur le [Site W3 Schools](https://www.w3schools.com/tags/ref_language_codes.asp).
 
 ### Langue des parties (3.1.2)  {#language-of-parts}
@@ -897,7 +897,7 @@ L’attribut `lang` peut être utilisé pour identifier les changements de langu
 
 >[!NOTE]
 >
->Les attributs blockquote ne sont pas pris en charge dans une instance prête à l’emploi. Il est toutefois possible de développer un composant personnalisé pour prendre cette fonction en charge.
+>Les guillemets simples ne sont pas pris en charge dans une instance prête à l’emploi. Un composant personnalisé peut être développé pour prendre en charge la fonctionnalité.
 
 De même, le navigateur peut restituer correctement un mot ou une expression emprunté peu courant si l’élément `span` est utilisé comme suit :
 
@@ -913,14 +913,14 @@ Pour ajouter l’élément span, avec un langage approprié, vous pouvez modifie
 
 #### En savoir plus – Langue d’un passage (3.1.2) {#more-information-language-of-parts}
 
-* [Compréhension du critère de réussite 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
-* [Comment remplir le critère de réussite 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
+* [Comprendre le critère de réussite 3.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
+* [Comment remplir le critère de réussite 3.1.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-meaning-other-lang-id)
 
-### Aider l’utilisateur à éviter et à corriger les erreurs de saisie (3.3)  {#help-users-avoid-and-correct-mistakes}
+### Aider l’utilisateur à éviter et à corriger les erreurs de saisie (3.3) {#help-users-avoid-and-correct-mistakes}
 
-[Règle 3.3 – Assistance à la saisie : aider l’utilisateur à éviter et à corriger les erreurs de saisie.](https://www.w3.org/TR/WCAG20/#minimize-error)
+[Règle 3.3 - Aide à la saisie : aide les utilisateurs à éviter et à corriger les erreurs.](https://www.w3.org/TR/WCAG20/#minimize-error)
 
-### Étiquettes ou instructions (3.3.2)  {#labels-or-instructions}
+### Étiquettes ou instructions (3.3.2) {#labels-or-instructions}
 
 * Critère de réussite 3.3.2
 * Niveau A
@@ -934,7 +934,7 @@ Dans AEM, un libellé par défaut est ajouté lorsque vous ajoutez à la page un
 
 ![Onglet Titre et Texte (boîte de dialogue de modification) ; le titre « Description » a été ajouté.](assets/chlimage_1-22a.png)
 
-Utilisez ce champ **Titre** pour les éléments de champ, car il fournit un libellé accessible par les technologies d’assistance. Le simple fait d’écrire un libellé dans le texte en regard du champ ne suffit pas.
+Ce champ **Titre** doit être utilisé pour les éléments de champ, car il fournit un libellé accessible par les technologies d’assistance. Le simple fait d’écrire un libellé dans le texte en regard du champ ne suffit pas.
 
 Pour certains composants de formulaire, il est également possible de masquer visuellement les libellés à l’aide de la case à cocher **Masquer le titre**. Les libellés masqués de cette manière sont toujours disponibles pour les dispositifs d’assistance, mais ne s’affichent pas à l’écran. Bien qu’il s’agisse d’une bonne approche dans certains cas, il est préférable d’inclure, dans la mesure du possible, un libellé visuel. Certaines personnes ne regardent qu’une petite partie de l’écran (un champ à la fois) et ont besoin des libellés pour identifier correctement le champ.
 
@@ -960,7 +960,7 @@ Si la saisie d’un champ de formulaire est obligatoire, indiquez-le en utilisan
 
 ![Ajout d’informations supplémentaires (le mot obligatoire) pour les personnes utilisant un lecteur d’écran dans le champ « Titre ».](assets/chlimage_1-25a.png)
 
-Le positionnement des libellés est également important, car ils permettent de localiser les champs appropriés. Cela est tout particulièrement important lorsque l’utilisateur est confronté à un formulaire complexe. Suivez les conventions ci-dessous :
+Le positionnement des libellés est également important, car ils permettent de localiser les champs appropriés. Cela est particulièrement important lorsque l’utilisateur est confronté à un formulaire complexe. Suivez les conventions ci-dessous :
 
 * Cases à cocher ou boutons radio :
 
@@ -974,5 +974,5 @@ Dans les formulaires simples avec des fonctionnalités limitées, un bouton `Sub
 
 #### En savoir plus – Étiquettes ou instructions (3.3.2) {#more-information-labels-or-instructions}
 
-* [Compréhension du critère de réussite 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
-* [Comment remplir le critère de réussite 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)
+* [Comprendre le critère de réussite 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
+* [Comment remplir le critère de réussite 3.3.2](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-minimize-error-cues)

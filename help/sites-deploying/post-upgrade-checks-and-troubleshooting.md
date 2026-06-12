@@ -11,9 +11,9 @@ exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '1798'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ Voici un exemple de rapport n’affichant aucune erreur lors de la mise à nivea
 
 ![1487887443006](assets/1487887443006.png)
 
-Voici un exemple de rapport affichant un lot n’ayant pas été installé lors de la mise à niveau : 
+Voici un exemple de rapport affichant un lot n’ayant pas été installé lors de la mise à niveau :
 
 ![1487887532730](assets/1487887532730.png)
 
@@ -83,7 +83,7 @@ Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers
 
 Pendant la mise à niveau, AEM tente de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le dossier **to-process** doit être vide et le nœud **overwritten** indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu situé sous le nœud leftovers indique le contenu qui n’a pas pu être fusionné en toute sécurité pendant la mise à niveau. Si votre mise en œuvre dépend de l’un des nœuds enfants (et non déjà installé par votre package de code mis à niveau), ils doivent être fusionnés manuellement.
+Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le dossier **to-process** doit être vide et le nœud **overwritten** indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu situé sous le nœud leftovers indique le contenu qui n’a pas pu être fusionné en toute sécurité pendant la mise à niveau. Si votre mise en œuvre dépend de l’un des nœuds enfants (et que ceux-ci ne sont pas déjà installés par votre package de code mis à niveau), ils doivent être fusionnés manuellement.
 
 Désactivez CRXDE Lite après cet exercice dans un environnement d’évaluation ou de production.
 
@@ -103,7 +103,7 @@ Plusieurs fonctionnalités AEM nécessitent des étapes supplémentaires après 
 
 #### Activer la récupération de l’espace mémoire du magasin de données {#enable-data-store-garbage-collection}
 
-Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de nettoyage de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-administering/data-store-garbage-collection.md).
+Si vous utilisez un magasin de données basé sur les fichiers, assurez-vous que la tâche de récupération de l’espace mémoire du magasin de données est activée et ajoutée à la liste de maintenance hebdomadaire. Les instructions sont décrites sous [Nettoyage des révisions](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Exécutez le plan de test détaillé tel que défini dans [Mise à niveau du cod
 
 ### Activation des agents de réplication {#enable-replication-agents}
 
-Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents sont en mesure de se connecter aux instances de publication respectives. Consultez la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
+Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents sont en mesure de se connecter aux instances de publication respectives. Consultez la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements.
 
 ### Activation des tâches planifiées personnalisées {#enable-custom-scheduled-jobs}
 
@@ -133,7 +133,7 @@ Ces scénarios doivent vous permettre de déterminer la cause principale des pro
 
 ### Échec de la migration du référentiel  {#repository-migration-failing-}
 
-La migration des données de CRX2 à Oak doit être réalisable en toutes situations, à commencer par les instances source basées sur CQ 5.4. Assurez-vous de suivre de près les instructions de mise à niveau de ce document, y compris la préparation du fichier `repository.xml`. Ainsi, vous garantissez qu’aucun authentificateur personnalisé ne puisse démarrer via JAAS et que l’instance a été testée pour éviter les incohérences avant de démarrer la migration.
+La migration des données de CRX2 vers Oak doit être réalisable dans tous les scénarios, à commencer par les instances Source basées sur CQ 5.4. Veillez à suivre scrupuleusement les instructions de mise à niveau de ce document, notamment la préparation de la `repository.xml`. Vérifiez qu’aucun authentificateur personnalisé ne soit démarré via JAAS et que l’instance n’a subi aucune incohérence avant de démarrer la migration.
 
 Si la migration est toujours en échec, vous pouvez déterminer la cause première en consultant le fichier `upgrade.log`. Si le problème n’est pas encore connu, signalez-le au service clientèle.
 

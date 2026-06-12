@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
@@ -105,9 +105,9 @@ Le fichier map.pdf et le fichier directions.pdf doivent être placés dans un ob
 >
 >Un objet `AssemblerResult`, qui contient un objet de collection, est renvoyé si vous appelez l’opération `invokeDDX`. Cette opération est utilisée lorsque vous transmettez au service Assembler au moins deux documents PDF d’entrée. Cependant, si vous ne transmettez qu’un seul PDF d’entrée au service Assembler et ne vous attendez qu’à un seul document de retour, appelez l’opération `invokeOneDocument`. Lorsque vous appelez cette opération, un seul document est renvoyé. Pour plus d’informations sur l’utilisation de cette opération, voir [Assembler des documents PDF chiffrés](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
-**Définir des options d’exécution**
+**Définir des options de temps d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche même en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, consultez référence de la classe `AssemblerOptionSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche même en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de classe `AssemblerOptionSpec` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Assembler les documents PDF d’entrée**
 
@@ -169,8 +169,8 @@ Assemblez un document PDF en utilisant l’API du service Assembler (Java) :
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `java.io.FileInputStream` représentant le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Référencez les documents PDF d’entrée.
 
@@ -185,7 +185,7 @@ Assemblez un document PDF en utilisant l’API du service Assembler (Java) :
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche lorsquʼune erreur se produit, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement d’une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Assemblez les documents PDF d’entrée.
 
@@ -201,8 +201,8 @@ Assemblez un document PDF en utilisant l’API du service Assembler (Java) :
 
    Pour obtenir le document PDF nouvellement créé, procédez comme suit :
 
-   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
-   * Effectuez une itération au sein de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant. (Vous pouvez utiliser l’élément de résultat PDF spécifié dans le document DDX pour obtenir le document).
+   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette fonction renvoie un objet `java.util.Map`.
+   * Effectuez une itération à l’aide de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant. (Vous pouvez utiliser l’élément de résultat PDF spécifié dans le document DDX pour obtenir le document).
    * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
    >[!NOTE]
@@ -231,9 +231,9 @@ Assemblez des documents PDF en utilisant l’API du service Assembler (service W
 
 1. Créez un client Assembler PDF.
 
-   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
@@ -244,11 +244,11 @@ Assemblez des documents PDF en utilisant l’API du service Assembler (service W
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à sa propriété `MTOM`.
+   * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Référencez les documents PDF d’entrée.
 
@@ -256,21 +256,21 @@ Assemblez des documents PDF en utilisant l’API du service Assembler (service W
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez lʼobjet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau dʼoctets.
+   * Renseignez l’objet `BLOB` en attribuant à son champ `MTOM` le contenu du tableau d’octets.
    * Créez un objet `MyMapOf_xsd_string_To_xsd_anyType`. Cet objet de collection est utilisé pour stocker des documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un objet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux objets `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Attribuez une valeur de chaîne qui représente le nom de la clé au champ `key` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. Cette valeur doit correspondre à celle de l’élément source PDF spécifié dans le document DDX. (Répétez cette tâche pour chaque document PDF d’entrée).
    * Attribuez lʼobjet `BLOB` qui stocke le document PDF au champ `value` de lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Répétez cette tâche pour chaque document PDF d’entrée).
-   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à lʼobjet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
+   * Ajoutez lʼobjet `MyMapOf_xsd_string_To_xsd_anyType_Item` à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. Appelez la méthode `Add` de l’objet `MyMapOf_xsd_string_To_xsd_anyType` et transmettez-la à l’objet `MyMapOf_xsd_string_To_xsd_anyType`. (Répétez cette tâche pour chaque document PDF d’entrée).
 
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche en cas d’erreur, attribuez `false` au membre de données `failOnError` de lʼobjet `AssemblerOptionSpec`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` aux données membres `failOnError` de l’objet `AssemblerOptionSpec`.
 
 1. Assemblez les documents PDF d’entrée.
 
-   Appelez la méthode `invoke` de lʼobjet `AssemblerServiceClient` et transmettez les valeurs suivantes :
+   Appelez la méthode `invoke` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` qui représente le document DDX.
    * Le tableau `mapItem` qui contient les documents PDF d’entrée. Ses clés doivent correspondre aux noms des fichiers sources PDF et ses valeurs doivent être les objets `BLOB` qui correspondent à ces fichiers.
@@ -284,7 +284,7 @@ Assemblez des documents PDF en utilisant l’API du service Assembler (service W
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF résultants.
    * Effectuez une itération au sein de l’objet `Map` jusqu’à ce que vous trouviez la clé correspondant au nom du document généré. Convertissez ensuite la `value` de ce membre du tableau en un objet `BLOB`.
-   * Effectuez lʼextraction des données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
+   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
    >[!NOTE]
    >

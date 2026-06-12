@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
-workflow-type: ht
-source-wordcount: '2154'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2182'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ La configuration ressemble à ce qui suit dans la console web :
 
 ## Configuration du canal de notification par e-mail {#configuring-the-email-notification-channel}
 
-Lorsque vous vous abonnez à des notifications d’événement de page ou de forum, l’adresse électronique De est définie sur `no-reply@acme.com` par défaut. Vous pouvez modifier cette valeur en configurant le service **Notification par e-mail** dans la console web.
+Lorsque vous vous abonnez à des notifications d’événement de page ou de forum, l’adresse électronique De est définie sur `no-reply@acme.com` par défaut. Vous pouvez modifier cette valeur en configurant le service **Canal de notification par e-mail** dans la console web.
 
 Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig` au référentiel. Procédez comme suit pour ajouter le nœud directement avec CRXDE Lite :
 
@@ -71,7 +71,7 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 
 1. Cliquez sur **Enregistrer tout**.
 
-Procédez comme suit pour définir le nœud dans les dossiers source de votre package de contenu :
+Procédez comme suit pour définir le nœud dans les dossiers sources de votre module de contenu :
 
 1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
@@ -207,7 +207,7 @@ subject=<text_1>
 >
 >Vous trouverez plus d’informations sur le format des modèles dans les [javadocs de la méthode Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-La méthode `${payload.path.open}` révèle le chemin d’accès au payload de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`.Sans le nom de serveur, raison pour laquelle le modèle fait précéder ceci de `${host.prefix}`.
+La méthode `${payload.path.open}` révèle le chemin d’accès au payload de l’élément de travail. Par exemple, pour une page dans Sites, `payload.path.open` serait similaire à `/bin/wcmcommand?cmd=open&path=…`. Sans le nom de serveur, c’est pourquoi le modèle fait précéder ceci de `${host.prefix}`.
 
 Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
@@ -272,7 +272,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
 
 >[!NOTE]
 >
->Cette procédure est un exemple pour une instance de publication. Si vous souhaitez activer les notifications par e-mail sur une instance d’auteur, vous devez suivre les mêmes étapes sur l’instance d’auteur.
+>Cette procédure est un exemple pour une instance de publication. Si vous souhaitez activer les notifications par e-mail sur une instance de création, vous devez suivre les mêmes étapes sur l’instance de création.
 
 ### Gmail {#gmail}
 
@@ -290,7 +290,7 @@ Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie, comme in
 
 >[!NOTE]
 >
->Les clients d’Adobe Managed Services peuvent collaborer avec leur équipe d’ingénierie de service client pour apporter ces modifications aux environnements d’exploitation.
+>Les clientes et clients d’Adobe Managed Services peuvent collaborer avec leur équipe d’ingénierie du service client pour apporter ces modifications aux environnements de production.
 
 Tout d’abord, configurez le service de messagerie :
 

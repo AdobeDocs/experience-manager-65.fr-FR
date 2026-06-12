@@ -9,8 +9,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1621'
-ht-degree: 100%
+source-wordcount: '1675'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ Le package module [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/exp
 
 **Annotations**
 
-Ajoutez des annotations à l’interface de gestion pour spécifier les métadonnées MBean. Les informations apparaissent dans la console JMX pour chaque classe d’implémentation déployée. Les annotations suivantes sont disponibles (pour plus d’informations, voir les [JavaDocs com.adobe.granite.jmx.annotation ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)) :
+Ajoutez des annotations à l’interface de gestion pour spécifier les métadonnées MBean. Les informations apparaissent dans la console JMX pour chaque classe d’implémentation déployée. Les annotations suivantes sont disponibles (pour plus d’informations, voir les [JavaDocs com.adobe.granite.jmx.annotation &#x200B;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)) :
 
 * **Description :** fournit une description de la classe ou de la méthode MBean. Lorsqu’elle est utilisée dans la déclaration de classe, la description est visible dans la page de la console JMX pour le MBean. Lorsqu’elle est utilisée sur une méthode, la description s’affiche sous forme de texte de survol pour l’attribut ou l’opération correspondant.
 * **Impact :** répercussions d’une méthode. Les valeurs de paramètre valides sont les champs définis par [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
@@ -431,7 +431,7 @@ Par souci de commodité, nous proposons de copier et de coller le code XML suiva
 * Plug-in bundle Apache Felix Maven : crée le bundle et le manifeste.
 * Plug-in SCR Apache Felix Maven : crée le fichier de descripteur de composant et configure l’en-tête de manifeste du composant de service.
 
-**Remarque :** au moment de la rédaction de ce document, le module externe maven scr n’est pas compatible avec le module externe m2e pour Eclipse. (Voir [Bogue Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Pour utiliser l’IDE Eclipse, installez Maven et utilisez l’interface de ligne de commande pour créer des versions.
+**Remarque :** au moment de la rédaction de ce document, le module externe maven scr n’est pas compatible avec le module externe m2e pour Eclipse. (Voir [Bogue Felix 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Pour utiliser l’IDE Eclipse, installez Maven et utilisez l’interface de ligne de commande pour effectuer les versions.
 
 #### Exemple de fichier POM {#example-pom-file}
 

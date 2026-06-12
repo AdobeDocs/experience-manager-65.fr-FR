@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '2959'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3025'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ Le mot de passe doit être modifié *après* l’installation initiale pour gara
 
 **Pour modifier le mot de passe d’administration de la console web OSGi** :
 
-1. À l’aide du menu **Outils**, **Opérations**, ouvrez la **console Web** et accédez à la section **Configuration**.
+1. À l’aide du menu **Outils** **Opérations**, ouvrez la **Console web** et accédez à la section **Configuration**.
 Par exemple, à `<server>:<port>/system/console/configMgr`.
 1. Accédez à l’entrée pour la **console de gestion OSGi Apache Felix** et ouvrez-la.
 1. Modifiez le **nom d’utilisateur** et le **mot de passe**.
@@ -146,7 +146,7 @@ Tous les exemples de contenu et d’utilisateurs et d’utilisatrices, (par exem
 
 >[!NOTE]
 >
->Les exemples d’applications `We.Retail` sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si ce n’est pas le cas, vous pouvez désinstaller l’exemple de contenu en accédant au gestionnaire de packages, puis en recherchant et en désinstallant tous les packages `We.Retail`.
+>Les exemples d’applications `We.Retail` sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si ce n’est pas le cas, vous pouvez désinstaller l’exemple de contenu en accédant au gestionnaire de modules, puis en recherchant et en désinstallant tous les packages `We.Retail`.
 
 Consultez [Utilisation de packages](package-manager.md).
 
@@ -287,7 +287,7 @@ Cette approche rend Sling puissant et flexible, mais comme toujours, c’est la 
 
 Pour empêcher toute utilisation abusive des dénis de service, vous pouvez effectuer les opérations suivantes :
 
-1. Intégrer des contrôles au niveau de l’application. En raison du nombre de variations possibles, une configuration par défaut n’est pas possible.
+1. Intégrez des contrôles au niveau de l’application. En raison du nombre de variations possibles, une configuration par défaut n’est pas possible.
 
    Dans votre application, vous devez :
 
@@ -324,7 +324,7 @@ Pour empêcher toute utilisation abusive des dénis de service, vous pouvez effe
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&amp;ast;.form.&amp;ast;** dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&ast;.form.&ast;** dans les requêtes.
 
 Pour atténuer ce problème, procédez comme suit :
 
@@ -337,7 +337,7 @@ Pour atténuer ce problème, procédez comme suit :
 
 **Atténuer les attaques par déni de service causées par le servlet de téléchargement de ressources**
 
-Le servlet de téléchargement de ressources par défaut permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La création d’archives ZIP volumineuses peut surcharger le serveur et le réseau. Pour atténuer le risque potentiel de déni de service (DoS) provoqué par ce comportement, le composant OSGi `AssetDownloadServlet` est désactivé par défaut sur l’instance de publication d’[!DNL Experience Manager]. Elle est activée sur l’instance auteur par défaut d’[!DNL Experience Manager].
+Le servlet de téléchargement de ressources par défaut permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La création d’archives ZIP volumineuses peut surcharger le serveur et le réseau. Pour atténuer le risque potentiel de déni de service (DoS) provoqué par ce comportement, le composant OSGi `AssetDownloadServlet` est désactivé par défaut sur l’instance de publication d’[!DNL Experience Manager]. Elle est activée sur l’instance de création par défaut d’[!DNL Experience Manager].
 
 Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactivez le servlet sur les déploiements de création et de publication. Si votre configuration nécessite l’activation du téléchargement de ressources, consultez [Télécharger des ressources à partir d’Adobe Experience Manager](/help/assets/download-assets-from-aem.md) pour plus d’informations. En outre, vous pouvez définir une limite de téléchargement maximale que votre déploiement peut prendre en charge.
 

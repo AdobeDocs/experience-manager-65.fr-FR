@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '6216'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '6582'
+ht-degree: 99%
 
 ---
 
@@ -78,8 +78,8 @@ Une mémoire RAM insuffisante entraîne une dégradation importante des performa
 
 Pour faciliter le processus de test de charge, le ratio suivant entre le jeu de travail et la taille totale de la base de données peut être supposé :
 
-* 1:10 pour un stockage sur SSD
-* 1:3 pour un stockage sur disque dur
+* 1:10 pour le stockage sur SSD
+* 1:3 pour le stockage sur disque dur
 
 Ces ratios signifient que, pour les déploiements sur SSD, 200 Go de RAM sont nécessaires pour une base de données de 2 To.
 
@@ -194,7 +194,7 @@ Les blobs fréquemment utilisés peuvent être mis en cache par AEM pour éviter
 
 Le magasin de données sert à stocker des fichiers dont la taille dépasse un certain seuil. En dessous de ce seuil, les fichiers sont stockés en tant que propriétés dans le magasin de nœuds de document. Si le `MongoBlobStore` est utilisé, une collection dédiée est créée dans MongoDB pour stocker les blobs. Cette collection contribue au jeu de travail de l’instance `mongod` et requiert que `mongod` dispose de plus de RAM pour éviter les problèmes de performance. C’est pour cela que nous recommandons d’éviter d’utiliser le `MongoBlobStore` pour les déploiements d’exploitation et d’utiliser `FileDataStore` avec un NAS partagé entre toutes les instances AEM. Comme le cache au niveau du système d’exploitation est efficace pour gérer les fichiers, la taille minimale d’un fichier sur le disque doit être proche de la taille du bloc du disque. Cela permet de s’assurer que le système de fichiers est utilisé de manière efficace et que de nombreux petits documents ne contribuent pas excessivement au jeu de travail de l’instance `mongod`.
 
-Voici une configuration classique de magasin de données pour un déploiement d’AEM minimal avec MongoDB : 
+Voici une configuration classique de magasin de données pour un déploiement d’AEM minimal avec MongoDB :
 
 ```xml
 # org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
@@ -263,7 +263,7 @@ MongoDB s’exécute sur plusieurs systèmes d’exploitation, notamment un larg
    * andkernel.threads-max : valeur définie sur 64000.
 
 * Assurez-vous que votre système dispose d’assez d’espace d’échange. Pour plus d’informations sur la quantité nécessaire, consultez la documentation de votre système d’exploitation.
-* Assurez-vous que la valeur du message TCP keepalive par défaut du système est correctement définie. Une valeur de 300 offre souvent de meilleures performances pour les ensembles de répliques et les clusters partitionnés. Consultez l’article [La durée de TCP keepalive affecte-t-elle les déploiements de MongoDB ?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) dans les questions fréquentes pour obtenir plus d’informations.
+* Assurez-vous que la valeur du message TCP keepalive par défaut du système est correctement définie. Une valeur de 300 offre souvent de meilleures performances pour les ensembles de répliques et les clusters partitionnés. Voir : [La durée de maintien en vie du protocole TCP affecte-t-elle les déploiements de MongoDB ?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) dans les questions fréquentes pour plus d’informations.
 
 #### Windows {#windows}
 
@@ -370,7 +370,7 @@ Cette politique alloue la mémoire de manière séquentielle sur tous les nœuds
 
 ### Problèmes liés à l’accès NUMA {#numa-issues}
 
-Si le processus `mongod` est démarré à partir d’un emplacement autre que le dossier `/etc/init.d`, il est probable qu’il ne soit pas démarré avec une politique NUMA adéquate. En fonction de la politique par défaut, des problèmes peuvent survenir. Cela est dû au fait que les différents programmes d’installation des gestionnaires de packages de Linux® pour MongoDB installent également un service avec des fichiers de configuration situés dans `/etc/init.d` qui effectuent l’étape décrite ci-dessus. Si vous installez et exécutez MongoDB directement à partir d’une archive (`.tar.gz`), vous devrez exécuter manuellement mongod sous le processus `numactl`.
+Si le processus `mongod` est démarré à partir d’un emplacement autre que le dossier `/etc/init.d`, il est probable qu’il ne soit pas démarré avec une politique NUMA adéquate. En fonction de la politique par défaut, des problèmes peuvent survenir. Cela est dû au fait que les différents programmes d’installation des gestionnaires de modules de Linux® pour MongoDB installent également un service avec des fichiers de configuration situés dans `/etc/init.d` qui effectuent l’étape décrite ci-dessus. Si vous installez et exécutez MongoDB directement à partir d’une archive (`.tar.gz`), vous devrez exécuter manuellement mongod sous le processus `numactl`.
 
 >[!NOTE]
 >
@@ -437,7 +437,7 @@ cat /sys/block/sdg/queue/scheduler
 
 Si la réponse est `noop`, il n’y a rien d’autre à faire.
 
-Si NOOP n’est pas le planificateur d’E/S configuré, vous pouvez le modifier en exécutant : 
+Si NOOP n’est pas le planificateur d’E/S configuré, vous pouvez le modifier en exécutant :
 
 ```shell
 echo noop > /sys/block/sdg/queue/scheduler
@@ -453,7 +453,7 @@ sudo blockdev --setra <value> <device>
 
 #### Activer NTP {#enable-ntp}
 
-Vérifiez que NTP est installé et en cours d’exécution sur la machine hébergeant les bases de données MongoDB. Par exemple, vous pouvez l’installer en utilisant le gestionnaire de packages yum sur une machine CentOS :
+Vérifiez que NTP est installé et en cours d’exécution sur la machine hébergeant les bases de données MongoDB. Par exemple, vous pouvez l’installer en utilisant le gestionnaire de modules yum sur une machine CentOS :
 
 ```shell
 sudo yum install ntp
