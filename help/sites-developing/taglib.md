@@ -11,8 +11,8 @@ feature: Developing,Tagging
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 100%
+source-wordcount: '2466'
+ht-degree: 98%
 
 ---
 
@@ -162,28 +162,28 @@ La balise `<cq:setContentBundle>` crée un contexte de localisation i18n et le s
 
 Elle présente les attributs suivants :
 
-**language** - La langue du paramètre régional pour lequel le lot de ressources doit être récupéré.
+**Language** : langue des paramètres régionaux pour lesquels le lot de ressources doit être récupéré.
 
-**source** - Source préconisée du paramètre régional. Les valeurs définies peuvent être les suivantes :
+**Source** : source préconisée des paramètres régionaux. Les valeurs définies peuvent être les suivantes :
 
-* **static** - Le paramètre régional provient de l’attribut `language`, s’il est disponible ; dans le cas contraire, il provient du paramètre régional par défaut du serveur.
+* **Static** : les paramètres régionaux proviennent de l’attribut `language`, s’il est disponible ; dans le cas contraire, ils proviennent des paramètres régionaux par défaut du serveur.
 
-* **page** - Le paramètre régional est issu de la langue de la page ou de la ressource en cours, si elle est disponible, sinon de l’attribut `language` ou bien du paramètre régional par défaut du serveur.
+* **Page** : les paramètres régionaux sont issus de la langue de la page ou de la ressource en cours, si elle est disponible, sinon de l’attribut `language` ou bien des paramètres régionaux par défaut du serveur.
 
-* **request** - Le paramètre régional provient du paramètre régional de la requête (`request.getLocale()`).
+* **Request** : les paramètres régionaux proviennent des paramètres régionaux de la requête (`request.getLocale()`).
 
-* **auto** - Le paramètre régional provient de l’attribut `language`, s’il est disponible, sinon de la page ou de la ressource en cours, si elle est disponible ; si elle ne l’est pas, il est extrait de la requête.
+* **Auto** : les paramètres régionaux proviennent de l’attribut `language`, s’il est disponible, sinon de la page ou de la ressource en cours, si elle est disponible ; si elle ne l’est pas, ils sont extraits de la requête.
 
 Si l’attribut `source` n’est pas défini :
 
-* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur `` `static`.
+* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur &grave;&grave; `static`.
 
 * Si l’attribut `language` n’est pas défini, l’attribut `source` est défini, par défaut, sur `auto`.
 
 Le « lot de contenu » peut simplement être utilisé par des balises `<fmt:message>` JSTL standard. La recherche des messages par clés est double :
 
 1. Tout d’abord, les propriétés JCR de la ressource sous-jacente qui est rendue sont recherchées pour les traductions. Vous pouvez ainsi définir une boîte de dialogue de composant simple pour modifier ces valeurs.
-1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou le paramètre régional de ce lot est défini par les attributs de langue et source de la balise `<cq:setContentBundle>`.
+1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou les paramètres régionaux de ce lot sont définis par les attributs de langue et source de la balise `<cq:setContentBundle>`.
 
 La balise `<cq:setContentBundle>` peut être utilisée comme suit dans un script jsp :
 
@@ -257,7 +257,7 @@ Devriez-vous utiliser `<cq:include>` ou `<sling:include>` ?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` est obsolète depuis AEM 5.6. Vous devez utiliser [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) à la place.
+>`<cq:includeClientLib>` obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) doit être utilisé à la place.
 
 La balise `<cq:includeClientLib>` inclut une bibliothèque cliente HTML AEM qui peut être de type js, css ou thème. Pour plusieurs inclusions de types différents (js et css, par exemple), cette balise doit être utilisée plusieurs fois dans le fichier JSP. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
 
@@ -321,7 +321,7 @@ La balise `<cq:defineObjects>` expose les objets de script suivants, utilisés r
 
 * Objet de style actuel de la cellule en cours (interface com.day.cq.wcm.api.designer.Style).
 
-**designer**
+**concepteur**
 
 * Objet designer utilisé pour accéder aux informations de conception (interface com.day.cq.wcm.api.designer.Designer).
 
@@ -586,8 +586,8 @@ La balise `<sling:defineObjects>` expose les objets de script suivants, utilisé
 
 **slingResponse**
 
-* Objet SlingHttpServletResponse permettant d’accéder à la réponse HTTP créée par le serveur. Il s’agit de la même chose que la valeur HttpServletResponse à partir de laquelle elle s’étend.**request**
-* Objet de requête JSP standard qui est un objet HttpServletRequest pur.**response**
+* Objet SlingHttpServletResponse permettant d’accéder à la réponse HTTP créée par le serveur. Il s’agit du même que l’objet HttpServletResponse à partir duquel il étend.**request**
+* Objet de requête JSP standard qui est un objet HttpServletRequest.**response pur**
 * Objet de réponse JSP standard qui est un objet HttpServletResponse pur.
 
 **resourceResolver**

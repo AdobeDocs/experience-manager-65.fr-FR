@@ -12,7 +12,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4832'
+source-wordcount: '4886'
 ht-degree: 99%
 
 ---
@@ -98,7 +98,7 @@ AEM propose désormais deux types de modèles de base :
 
 * [Modèles modifiables](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**. 
+   * Peuvent être [créés](#creatinganewtemplate) et [modifiés](#editingatemplate) à l’aide de la **console de modèles** et de l’éditeur de modèles. La **console de modèles** est accessible dans la section **Général** de la console **Outils**.
 
    * Une fois la page créée, une connexion dynamique est maintenue entre la page et le modèle. Cela signifie que les modifications apportées à la structure du modèle et/ou au contenu verrouillé seront répercutées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu déverrouillé (c’est-à-dire initial) ne sont pas répercutées.
    * Pour conserver les propriétés de conception, utilisez des politiques de contenu que vous pouvez définir à partir de l’éditeur de modèles. Le mode de conception de l’éditeur de page n’est plus utilisé pour les modèles modifiables.
@@ -182,7 +182,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    >
    >Lorsque vous créez un modèle, il est marqué comme **Brouillon** dans la console pour indiquer qu’il n’est pas encore actif.
 
-### Définition des propriétés des modèles - Créateur de modèles  {#defining-template-properties-template-author}
+### Définition des propriétés des modèles - Créateur de modèles {#defining-template-properties-template-author}
 
 Un modèle peut avoir les propriétés suivantes :
 
@@ -408,7 +408,7 @@ Dans le mode **Structure** de l’éditeur de modèles :
 
   Lorsque vous travaillez en mode **Structure**, une bordure orange signale le composant actuellement sélectionné. Une ligne pointillée indique également le composant parent.
 
-  Par exemple, sur la capture d’écran ci-dessous, le composant **Texte** est sélectionné, dans un **Conteneur de mise en page** (responsivegrid). 
+  Par exemple, sur la capture d’écran ci-dessous, le composant **Texte** est sélectionné, dans un **Conteneur de mise en page** (responsivegrid).
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 

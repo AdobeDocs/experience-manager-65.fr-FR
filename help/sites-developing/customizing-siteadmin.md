@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -109,18 +109,18 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* Votre implémentation doit déterminer, sur la base de la requête et/ou de la ressource fournies, si elle doit ou non ajouter les informations à l’objet JSON.
 >* Si votre implémentation de `ListInfoProvider` définit une propriété qui existe déjà dans l’objet de réponse, sa valeur est remplacée par celle que vous fournissez.
 >
->   Vous pouvez utiliser le [classement de service](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
+>  Vous pouvez utiliser le [classement de service](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
 
 ### Tester le nouveau service {#testing-the-new-service}
 
 Lorsque vous ouvrez la console d’administration Sites web et parcourez votre site, le navigateur émet un appel Ajax pour obtenir l’objet JSON utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx`, la requête suivante est envoyée au serveur AEM pour créer la console :
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Pour vous assurer que le nouveau service s’exécute après le déploiement du lot où il réside, procédez comme suit :
 
 1. Pointez votre navigateur vers l’URL suivante :
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La réponse doit afficher les nouvelles propriétés comme suit :
 
@@ -138,8 +138,8 @@ La dernière étape consiste à adapter la structure de nœuds de la console Adm
 
    * Supprimez **pageText**.
 
-   * Définissez **pathRegex** sur `/content/geometrixx(/.*)?`.
-De cette manière, la configuration de grille sera active pour tous les sites web Geometrixx.
+   * Définissez **pathRegex** sur . `/content/geometrixx(/.*)?`
+Cela rend la configuration de grille active pour tous les sites web Geometrixx.
 
    * Définissez **storeProxySuffix** sur `.pages.json`.
 
@@ -151,7 +151,7 @@ De cette manière, la configuration de grille sera active pour tous les sites we
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Ajoutez un nœud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
+1. Ajoutez un nœud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
    * **dataIndex** : `starred` de type Chaîne
 
@@ -162,10 +162,10 @@ De cette manière, la configuration de grille sera active pour tous les sites we
 1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à l’emplacement suivant : `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`.
 
 1. `/siteadmin` est un chemin vanity qui, par défaut, pointe vers `/libs/wcm/core/content/siteadmin`.
-Pour rediriger l’ensemble vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+Pour le rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour que sa valeur soit supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300. Toute valeur supérieure est donc acceptable.
 
 1. Accédez à la console Administration de sites Web et rendez-vous sur le site de Geometrixx à l’adresse :
-   [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
+   [:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx)
 
 1. La nouvelle colonne nommée **Starred** affiche des informations personnalisées comme suit :
 

@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3293'
+ht-degree: 93%
 
 ---
 
@@ -67,7 +67,7 @@ La **Console de gestion OSGi Apache Felix** configure :
 >Veillez à configurer les éléments suivants :
 >
 >**Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
->Le mot de passe doit être modifié après l’installation initiale pour garantir [la sécurité](/help/sites-administering/security-checklist.md) de votre instance.
+>Le mot de passe doit être modifié après l’installation initiale pour garantir la [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
 
 >[!NOTE]
 >
@@ -83,17 +83,17 @@ Le **Pool de threads d’événement Apache Sling** configure les éléments su
 
 * La **Taille minimale du pool** et la **Taille max. du pool**, les taille du pool utilisées pour contenir les threads d’événement.
 
-* La **Taille de la file d’attente**, taille maximale de la file d’attente de thread si le pool est épuisé.
-La valeur recommandée est la suivante : `-1` car elle définit la file d’attente sur Illimité. Si une limite est définie, des pertes peuvent survenir lorsqu’elle est dépassée.
+* **Taille de la file d’attente**, taille maximale de la file d’attente de thread si le pool est épuisé.
+La valeur recommandée est `-1` car elle définit la file d’attente sur illimitée. Si une limite est définie, des pertes peuvent survenir lorsqu’elle est dépassée.
 
-* La modification de ces paramètres peut améliorer les performances dans des scénarios comportant un grand nombre d’événements ; par exemple, une utilisation importante de la gestion des DAM ou des workflows AEM.
+* La modification de ces paramètres peut améliorer les performances dans des scénarios comportant un grand nombre d’événements. Par exemple, une utilisation importante de la gestion des ressources numériques ou des workflows AEM.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
 * Ces paramètres peuvent avoir une incidence sur les performances de votre instance. Par conséquent, ne les modifiez pas sans raison et sans précautions.
 
 Le **Servlet GET Apache Sling** configure certains aspects du rendu :
 
 * L’**Index automatique** pour activer ou désactiver le rendu du répertoire pour la navigation.
-* **Activez** (ou désactivez) les rendus par défaut, tels qu’**HTML**, **texte brut**, **JSON** ou **XML**.
+* **Activer** (ou désactiver) les rendus par défaut, tels que **HTML**, **Texte brut**, **JSON** ou **XML**.
 Ne désactivez pas JSON.
 
 >[!NOTE]
@@ -112,7 +112,7 @@ Certains paramètres peuvent affecter les performances. Désactivez ces paramèt
 
 **Programme d’installation de JCR Apache Sling** Ces paramètres n’ont pas besoin d’être configurés, mais peuvent être utiles pour savoir quand développer ou déboguer. Par exemple, les dossiers d’installation peuvent être utiles pour archiver ou extraire, ou créer un package.
 
-* **regexp du nom des dossiers d’installation** et **Profondeur de hiérarchie maximale des dossiers d’installation** : indiquez où et dans quelle profondeur les dossiers de référentiel sont recherchés pour les ressources à installer. Lorsqu’un caractère générique est utilisé (comme dans .&#42;/install), toutes les correspondances appropriées seront recherchées, par exemple, `/libs/sling/install` et `/libs/cq/core/install`.
+* **regexp du nom des dossiers d’installation** et **Profondeur de hiérarchie maximale des dossiers d’installation** : indiquez où et dans quelle profondeur les dossiers de référentiel sont recherchés pour les ressources à installer. Lorsqu’un caractère générique est utilisé (comme dans .&#42;/install), toutes les correspondances appropriées sont recherchées, par exemple, `/libs/sling/install` et `/libs/cq/core/install`.
 
 * **Chemin de recherche** : la liste des chemins d’accès recherchés par jcrinstall pour l’installation des ressources, ainsi qu’un nombre indiquant le facteur de pondération pour ce chemin.
 
@@ -151,7 +151,7 @@ La **Configuration de l’enregistreur de journaux Apache Sling (configuration 
 
 * Le **Niveau de journal**, le **Fichier journal** et le **Format de message** pour définir les détails du fichier journal et des messages.
 
-*  L’**Enregistreur** pour définir la catégorie ; par exemple, uniquement le journal pour com.day.cq.
+* L’**Enregistreur** pour définir la catégorie ; par exemple, uniquement le journal pour com.day.cq.
 
 * En utilisant la **Configurations d’usine**, un certain nombre de configurations supplémentaires peuvent être ajoutées pour répondre aux différents niveaux de journal et catégories nécessaires.
 * Ces configurations sont utiles lors du développement. Par exemple, pour consigner des messages TRACE pour un service spécifique dans un fichier journal spécifique.
@@ -234,8 +234,8 @@ Le **Gestionnaire d’erreur et résolveur de script et le servlet Apache Sling
 
 Plusieurs paramètres peuvent être définis, notamment :
 
-* Les **chemins d’exécution** : ils répertorient les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si vous ne configurez aucun chemin, le chemin par défaut est utilisé (`/` = root). Cela permet d’exécuter de tous les scripts.
-Si la valeur configurée du chemin se termine par une barre oblique, la recherche concerne l’arborescence entière. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
+* **Chemins d’exécution** - Répertorie les chemins d’accès à rechercher pour les scripts exécutables. En configurant des chemins spécifiques, vous pouvez limiter les scripts à exécuter. Si aucun chemin n’est configuré, la valeur par défaut est utilisée ( `/` = root), ce qui permet d’exécuter de tous les scripts.
+Si une valeur de chemin configuré se termine par une barre oblique, la recherche porte sur l’ensemble de la sous-arborescence. En l’absence de barre oblique, le script n’est exécuté que s’il s’agit d’une correspondance exacte.
 
 * **Utilisateur du script** : cette propriété facultative peut spécifier le compte d’utilisateur du référentiel utilisé pour lire les scripts. Si vous ne spécifiez aucun compte, l’utilisateur `admin` est utilisé par défaut.
 
@@ -243,7 +243,7 @@ Si la valeur configurée du chemin se termine par une barre oblique, la recherch
 
 **Configuration du proxy de composants HTTP Apache** : il s’agit de la configuration de proxy pour tout le code utilisant le client HTTP Apache, utilisée lorsque du code HTTP est créé. Par exemple, lors de la réplication.
 
-Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible à l’adresse suivante : **https://localhost:4502/system/console/configMgr/**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
+Lors de la création d’une configuration, ne modifiez pas la configuration d’usine. Créez plutôt une configuration d’usine pour ce composant à l’aide du gestionnaire de configuration disponible ici : **:4502/system/console/configMgr/**. La configuration du proxy est disponible à l’adresse **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
@@ -337,37 +337,37 @@ Différentes propriétés de configuration sont disponibles :
 * **Chemin**
 Chemin pour lequel ce gestionnaire d’authentification est actif. Si ce paramètre n’est pas renseigné, le gestionnaire d’authentification est désactivé. Par exemple, si vous utilisez le chemin /, le gestionnaire d’authentification est utilisé pour l’ensemble du référentiel.
 
-* **Classement de service**
-La valeur de classement du service OSGi Framework est utilisée pour indiquer l’ordre d’appel de ce service. Cette valeur est une valeur `int` où les valeurs supérieures désignent une plus grande priorité.
+* **Classement des services**
+La valeur Classement du service de structure OSGi est utilisée pour indiquer l’ordre d’appel de ce service. Il s’agit d’une valeur `int` pour laquelle des valeurs plus élevées désignent une priorité plus élevée.
 La valeur par défaut est `0`.
 
 * **Noms des en-têtes**
-Les noms des en-têtes qui peuvent contenir un identifiant utilisateur.
+Noms des en-têtes qui peuvent contenir un identifiant utilisateur.
 
 * **Noms de cookies**
-Les noms de cookies pouvant contenir un identifiant utilisateur.
+Noms des cookies pouvant contenir un identifiant utilisateur.
 
 * **Noms de paramètres**
-Les noms de paramètres de requête pouvant fournir l’identifiant utilisateur.
+Noms des paramètres de requête pouvant fournir l’identifiant utilisateur.
 
-* **La carte utilisateur**
-Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
+* **Mappage utilisateur**
+Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’identification. Le mappage est défini ici. Si le nom d’utilisateur `admin` apparaît d’un côté ou de l’autre de la carte, le mappage est ignoré. Le caractère « = » doit être placé dans une séquence d’échappement avec un « \ » au début.
 
 * **Format**
-Indique le format dans lequel l’identifiant utilisateur est fourni. Utilisez :
+Indique le format dans lequel l’ID utilisateur est fourni. Utilisez :
 
    * `Basic` si l’identifiant utilisateur est codé au format d’authentification HTTP de base ;
    * `AsIs` si l’identifiant utilisateur est fourni en texte brut ou si une valeur appliquée d’expression régulière doit être utilisée telle quelle.
 
 **Filtre de débogage de la gestion de contenu web Day CQ**
-Utile lors du développement car il permet d’utiliser des suffixes comme ?debug=layout lors de l’accès à une page. Par exemple, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fournit des informations de mise en page qui peuvent intéresser le développeur ou la développeuse.
+Utile lors du développement car il permet d’utiliser des suffixes comme ?debug=layout lors de l’accès à une page. Par exemple, :4502/cf#/content/geometrixx/en/support.html?debug=layout fournit des informations de mise en page qui peuvent intéresser le développeur.
 
 * Pour garantir les performances et la sécurité, désactivez-le sur les instances d’exploitation.
 
 Le **Filtre de gestion de contenu web Day CQ** configure les éléments suivants :
 
 * Le **mode de gestion de contenu web** permet de définir le mode par défaut.
-* Sur une instance de création, ce mode pourrait être `edit`, `disable,preview`, ou `analytics`.
+* Sur une instance de création, ce mode peut être `edit`, `disable,preview` ou `analytics`.
 Les autres modes sont accessibles depuis le sidekick. Vous pouvez également utiliser le suffixe `?wcmmode=disabled` pour simuler un environnement d’exploitation.
 
 * Sur une instance de publication, ce mode doit être défini sur `disabled` afin de vous assurer qu’aucun autre mode n’est accessible.

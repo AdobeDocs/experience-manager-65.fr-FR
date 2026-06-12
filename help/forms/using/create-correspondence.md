@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3832'
-ht-degree: 100%
+source-wordcount: '3902'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
 1. Pour être en mesure de rendre une correspondance lors de la prévisualisation, vous devez être un administrateur ou un membre de l’un des groupes suivants :
 
-   * forms-users (pour prévisualiser sur instance d’auteur)
+   * forms-users (à prévisualiser sur instance de création)
    * cm-agent-users (pour le rendu sur une instance de publication)
 
    Si vous ne disposez pas des autorisations requises, contactez votre administrateur pour obtenir des droits d’accès appropriés. Pour plus d’informations sur la création et l’ajout des utilisateurs aux groupes, voir [Ajouter des utilisateurs ou des groupes à un groupe](/help/sites-administering/security.md). Si vous tentez de rendre une correspondance sans avoir les autorisations appropriées, la page d’erreur 404 s’affiche.
@@ -229,7 +229,7 @@ Vous pouvez effectuer des modifications relatives à la disposition et au conten
 
 1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour activer le module de contenu approprié dans la hiérarchie des contenus, vous pouvez soit sélectionner la ligne ou le paragraphe concerné dans l’aperçu de la lettre, soit sélectionner directement le module de contenu dans la hiérarchie des contenus.
 
-   Par exemple, la ligne « Pour accéder à… » est sélectionnée dans le graphique ci-dessous et le module de contenu correspondant est sélectionné dans l’onglet Contenu.
+   Par exemple, la ligne « Pour nous permettre d’accéder à... » est sélectionné dans le graphique ci-dessous et le module de contenu correspondant est sélectionné dans l’onglet Contenu .
 
    En cliquant sur Mettre les modules sélectionnés en surbrillance dans le contenu ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), vous pouvez activer ou désactiver la fonctionnalité de mise en surbrillance du module de contenu dans l’onglet Contenu lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans la prévisualisation de la lettre.
 
@@ -291,21 +291,21 @@ Avant la publication de lettres ou l’enregistrement de brouillons sur l’inst
 
 Les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* ne sont pas transférées vers l’instance de publication par défaut. Pour transférer les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* vers l’instance de publication, désactivez le composant [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Pour désactiver le composant :
 
-1. Sur l’instance d’auteur, ouvrez la console Composants de la console Web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`.
+1. Sur l’instance de création, ouvrez la console Composants de la console Web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`.
 
 1. Recherchez le composant **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]**.
 
 1. Cliquez sur l’icône ![bouton Désactiver](/help/forms/using/assets/enablebutton.png) pour désactiver le composant [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory].
 
-![Instance d’auteur](/help/forms/using/assets/replicationproperties.png)
+![Instance de création](/help/forms/using/assets/replicationproperties.png)
 
-Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL existante à l’adresse [!UICONTROL URL d’auteur VersionRestoreManager] avec l’URL de votre instance d’auteur. Pour remplacer l’URL :
+Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL existante à l’adresse [!UICONTROL URL de création VersionRestoreManager] avec l’URL de votre instance de création. Pour remplacer l’URL :
 
 1. Sur l’instance de publication, ouvrez [!UICONTROL Configuration de la console Web d’Adobe Manager]. L’URL par défaut est `https://publish-server:port/system/console/configMgr`.
 
-1. Recherchez et ouvrez le composant **[!UICONTROL configurations Correspondence Management - Restauration de la version de l’instance d’auteur]**.
+1. Recherchez et ouvrez le composant **[!UICONTROL configurations Correspondence Management - Restauration de la version de l’instance de création]**.
 
-1. Localisez le champ **[!UICONTROL URL d’auteur VersionRestoreManager]** et spécifiez l’URL de l’instance d’auteur correspondante.
+1. Localisez le champ **[!UICONTROL URL de création VersionRestoreManager]** et spécifiez l’URL de l’instance de création correspondante.
 
 1. Cliquez sur Enregistrer.
 

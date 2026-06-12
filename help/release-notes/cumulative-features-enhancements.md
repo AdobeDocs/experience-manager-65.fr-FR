@@ -9,8 +9,8 @@ exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 100%
+source-wordcount: '3356'
+ht-degree: 97%
 
 ---
 
@@ -155,7 +155,7 @@ L’onglet IPTC prend désormais en charge les champs de texte [!UICONTROL Texte
 
 * Assets, Dynamic Media - [Prise en charge des sous-titres et pistes audio multiples pour les vidéos dans Dynamic Media](/help/assets/video.md#about-msma) : vous pouvez désormais facilement ajouter plusieurs sous-titres et plusieurs pistes audio à une vidéo principale. Cette fonctionnalité signifie que vos vidéos sont accessibles à une audience mondiale. Vous pouvez personnaliser une seule vidéo principale publiée pour une audience mondiale dans plusieurs langues et respecter les directives d’accessibilité pour différentes régions géographiques. Les auteurs et autrices peuvent également gérer les sous-titres et les pistes audio à partir d’un seul onglet de l’interface utilisateur.
 * Ressources - À partir des résultats de recherche, vous pouvez désormais accéder à l’emplacement du dossier contenant une ressource, ce qui vous permet d’effectuer diverses tâches de gestion des ressources numériques.
-* Les performances du sélecteur Polaris de sites dans les fragments de contenu ont été améliorées.
+* Les performances du sélecteur Polaris de sites dans les fragments de contenu ont été améliorées.
 * La personne utilisant l’éditeur de pages/le composant d’images des sites peut référencer des actifs à partir du service cloud d’Assets distant.
 * Pour trouver rapidement un projet en mode Liste où votre système peut contenir de nombreux projets, Adobe prend désormais en charge le tri côté serveur. Les nœuds de projet sont triés sur le serveur principal en fonction de la colonne sélectionnée par l’utilisateur ou l’utilisatrice avant d’effectuer leur rendu dans l’interface utilisateur.
 * AEM 6.5.18.0 prend en charge MongoDB, de la version 5.0 à la version 6.0.
@@ -193,10 +193,10 @@ Si vous installez ou envisagez d’utiliser les derniers logiciels pour votre en
 
   Vous n’avez pas besoin d’accéder à l’emplacement de la ressource et d’afficher ses propriétés pour effectuer ces opérations.
 
-* _L’instantané&#x200B;_****Dynamic Media vous permet de prévisualiser les modificateurs d’image et les optimisations de l’imagerie dynamique, comme la sortie WebP ou AVIF, la compression basée sur la bande passante et la mise à l’échelle du rapport pixel d’appareil, à l’aide d’images de test ou d’URL Dynamic Media. Vous pouvez ensuite comparer immédiatement l’impact de chaque paramètre sur la qualité et la taille du fichier.
-Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+* **Dynamic Media _Snapshot_**&#x200B;vous permet de prévisualiser les modificateurs d’image et les optimisations de l’imagerie dynamique, comme la sortie WebP ou AVIF, la compression basée sur la bande passante et la mise à l’échelle du rapport pixel d’appareil, à l’aide d’images de test ou d’URL Dynamic Media. Vous pouvez ensuite comparer immédiatement l’impact de chaque paramètre sur la qualité et la taille du fichier.
+Voir [Instantané Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH avec Dynamic Media** : nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé). Disponible maintenant dans toutes les régions.
-* **Intégration d’Experience Manager Sites et des fragments de contenu aux ressources Dynamic Media de nouvelle génération** - Les utilisateurs et utilisatrices peuvent désormais utiliser leurs ressources hébergées dans le cloud dans Experience Manager Sites 6.5. Ils peuvent créer et diffuser ces ressources sur des instances On-Premise ou Managed Services.
+* **Intégration de Experience Manager Sites et des fragments de contenu à Assets Dynamic Media nouvelle génération** - Les utilisateurs peuvent désormais utiliser leurs ressources hébergées dans le cloud dans Experience Manager Sites 6.5. Ils peuvent créer et diffuser ces ressources sur des instances on-premise ou Managed Services.
 
 ### [!DNL Forms]
 

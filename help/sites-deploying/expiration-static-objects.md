@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '422'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
 >
 >Faites attention lorsque vous définissez la durée pendant laquelle un objet est considéré comme étant à jour. Comme il n’y a *pas de vérification tant que la durée spécifiée n’a pas expiré*, le client peut finir par présenter de l’ancien contenu à partir du cache.
 
-1. **Pour une instance d’auteur :**
+1. **Pour une instance de création :**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so

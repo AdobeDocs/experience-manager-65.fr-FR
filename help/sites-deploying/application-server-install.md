@@ -11,8 +11,8 @@ feature: Deploying
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1186'
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ Cette section vous explique comment installer Adobe Experience Manager (AEM) a
 
 La procédure d’installation est décrite pour les serveurs d’applications suivants :
 
-* [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
+* [WebSphere® 8.5](#websphere)
+* [JBoss® EAP 6.3.0/6.4.0](#jboss-eap)
 * [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 

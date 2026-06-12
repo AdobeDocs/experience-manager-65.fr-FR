@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
-workflow-type: ht
-source-wordcount: '5272'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '5461'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Concevez vos pages web afin qu’elles s’adaptent à la fenêtre dans laquelle
 * Taille du texte : utilisez une taille de texte plus grande (le cas échéant, comme des en-têtes) dans les fenêtres d’affichage plus grandes.
 * Contenu : incluez uniquement le contenu le plus important lors de l’affichage sur des appareils plus petits.
 * Navigation : des outils spécifiques à l’appareil sont fournis pour accéder à d’autres pages.
-* Images : diffusion de rendus d’image adaptés à la fenêtre d’affichage client en fonction des dimensions de la fenêtre.
+* Images : diffusion de rendus d’image adaptés à la fenêtre d’affichage cliente. en fonction des dimensions de la fenêtre.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -160,7 +160,7 @@ Incluez le dossier de bibliothèque cliente dans le script JSP de votre composan
 
 >[!NOTE]
 >
->Le dossier de bibliothèque cliente `apps.weretail.all` intègre la bibliothèque clientlibs.
+>Le dossier de bibliothèque cliente `apps.weretail.all` incorpore la bibliothèque clientlibs.
 
 Le script JSP génère le code HTML suivant qui référence les feuilles de style :
 
@@ -350,8 +350,8 @@ Lorsque le navigateur charge la page, il demande l’image en utilisant la valeu
 
 Le nœud `image_0` possède une valeur `jcr:resourceType` de `foundation/components/image`, qui a une valeur `sling:resourceSuperType` de `foundation/components/parbase`. Le composant parbase comprend le script img.GET.java qui correspond au sélecteur et l’extension de nom de fichier de l’URL de requête. CQ utilise ce script (servlet) pour effectuer le rendu de l’image.
 
-Pour voir le code source du script, utilisez CRXDE Lite afin d’ouvrir le fichier `/libs/foundation/components/parbase/img.GET.java`.
-
+Pour afficher le code source du script, utilisez CRXDE Lite afin d’ouvrir le `/libs/foundation/components/parbase/img.GET.java`
+fichier .
 
 ## Dimensionnement des images pour la taille actuelle de la fenêtre d’affichage {#scaling-images-for-the-current-viewport-size}
 
@@ -472,7 +472,7 @@ Les valeurs numériques sont respectivement 0,4, 0,82 et 1,0.
 
 **Modification des largeurs prises en charge par défaut**
 
-Utilisez la console web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
+Utilisez la console web ([:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
 
 Pour plus d’informations sur la configuration des services AEM, reportez-vous à la rubrique [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -768,7 +768,7 @@ Les pages de l’exemple d’application Geometrixx Media répartissent horizon
 
 #### Modulariser vos composants de page {#tip-modularize-your-page-components}
 
-Modularisez vos composants afin d’utiliser efficacement le code. Votre site contient certainement plusieurs types de pages, tels qu’une page d’accueil, une page d’article ou une page de produit. Chaque type de page offre un type de contenu spécifique, dans une mise en page propre. Cependant, lorsque certains éléments de la mise en page sont présents sur plusieurs pages, vous pouvez réutiliser le code d’implémentation de cette partie de la mise en page.
+Modularisez vos composants afin d’utiliser efficacement le code. Votre site contient certainement plusieurs types de pages, tels qu’une page d’accueil, une page d’article ou une page produit. Chaque type de page offre un type de contenu spécifique, dans une mise en page propre. Cependant, lorsque certains éléments de la mise en page sont présents sur plusieurs pages, vous pouvez réutiliser le code d’implémentation de cette partie de la mise en page.
 
 **Utiliser les recouvrements de composants de page**
 

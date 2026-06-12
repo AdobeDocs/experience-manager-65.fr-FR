@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '1182'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 92%
 
 ---
 
@@ -72,7 +72,7 @@ Pour résoudre le problème, procédez comme suit :
 
 L’empreinte mémoire de CRX est faible. Si l’application s’exécutant dans CRX a besoin de plus de mémoire ou lance des opérations gourmandes en mémoire (par exemple, des transactions volumineuses), l’instance JVM où CRX s’exécute doit être démarrée avec les paramètres de mémoire appropriés.
 
-Utilisez les options de commande Java™ pour définir les paramètres de mémoire de JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille des segments de mémoire sur 512 Mo).
+Utilisez les options de commande Java™ pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&ast;.jar pour définir la taille du tas sur 512 Mo).
 
 Définissez le paramètre d’allocation de mémoire lors du démarrage de la gestion de contenu web d’AEM à partir de la ligne de commande. Les scripts start/stop de la gestion de contenu web d’AEM ou les scripts personnalisés pour gérer la gestion de contenu web d’AEM peuvent également être modifiés pour définir les paramètres de mémoire requis.
 
@@ -80,7 +80,7 @@ Si vous avez déjà défini les segments de mémoire sur 512 Mo, vous souhaiter
 
 Pour créer automatiquement un vidage de segments de mémoire lorsque la mémoire est insuffisante, utilisez la commande suivante :
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Cette méthode génère un fichier d’image mémoire des segments de mémoire (**java_...hprof**) chaque fois que le processus manque de mémoire. Le processus peut continuer à s’exécuter une fois l’image mémoire des segments de mémoire générée.
 
@@ -101,11 +101,11 @@ Celles-ci peuvent être comparées pour voir les modifications et comment les ob
 
 Dans certains cas, les écrans de bienvenue de la gestion de contenu web d’AEM ne s’affichent pas automatiquement, même si le référentiel s’exécute correctement. Ce problème peut dépendre de la configuration du système d’exploitation, de la configuration du navigateur ou de facteurs similaires.
 
-Dans ce cas, la fenêtre Quickstart affiche le message suivant : « Démarrage de la gestion de contenu web AEM. En attente du démarrage du serveur... » Si ce message s’affiche pendant une période relativement longue, saisissez manuellement l’URL de gestion de contenu web d’AEM dans la fenêtre du navigateur, à l’aide du port 4502 par défaut, ou du port sur lequel l’instance est en cours d’exécution : http://localhost:4502/.
+Dans ce cas, la fenêtre Quickstart affiche le message suivant : « Démarrage de la gestion de contenu web AEM. En attente du démarrage du serveur... » Si ce message s’affiche pendant une période relativement longue, saisissez manuellement l’URL de gestion de contenu web d’AEM dans la fenêtre du navigateur, à l’aide du port 4502 par défaut, ou du port sur lequel l’instance est en cours d’exécution : http://localhost:4502/.
 
 En outre, les journaux peuvent indiquer la raison pour laquelle le navigateur ne démarre pas.
 
-Parfois, la fenêtre de démarrage rapide de la gestion de contenu web d’AEM comporte le message « La gestion de contenu web d’AEM s’exécutant sur http://localhost:port/ » et le navigateur ne démarre pas automatiquement. Dans ce cas, cliquez sur l’URL dans la fenêtre de démarrage rapide de gestion de contenu web d’AEM (il s’agit d’un lien hypertexte) ou saisissez manuellement l’URL dans le navigateur.
+Parfois, la fenêtre de démarrage rapide de la gestion de contenu web d’AEM comporte le message « La gestion de contenu web d’AEM s’exécutant sur http://localhost:port/ » et le navigateur ne démarre pas automatiquement. Dans ce cas, cliquez sur l’URL dans la fenêtre de démarrage rapide de gestion de contenu web d’AEM (il s’agit d’un lien hypertexte) ou saisissez manuellement l’URL dans le navigateur.
 
 Si tout le reste échoue, consultez les journaux pour savoir ce qui s’est passé.
 
