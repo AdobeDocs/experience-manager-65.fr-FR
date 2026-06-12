@@ -10,7 +10,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Un modèle décrit le type de contenu et indique les informations disponibles po
 
 Les modèles servent également à transformer le contenu AEM existant en objets qui peuvent être facilement utilisés par les applications mobiles natives.
 
-Content Services fournit quelques modèles prêts à l’emploi pour les objets courants tels que les ressources, les collections de ressources, les pages d’HTML, les configurations d’application et les pages indépendantes du canal. Ils sont configurables afin de répondre aux besoins spécifiques des clients sans nécessiter d’effort de développement AEM.
+Content Services fournit quelques modèles prêts à l’emploi pour les objets courants tels que les ressources, les collections de ressources, les pages HTML, les configurations d’application et les pages indépendantes du canal. Ils sont configurables afin de répondre aux besoins spécifiques des clients sans nécessiter d’effort de développement AEM.
 
 Les utilisateurs peuvent créer leurs propres modèles. Cela permet la création de nouveaux types de contenu qui ne sont pas déjà gérés par AEM. La création du modèle est effectuée via une interface utilisateur à l’aide de types primitifs existants.
 
@@ -62,7 +62,7 @@ Pour créer des entités personnalisées à partir de modèles, voir **[Utilisat
 
 >[!NOTE]
 >
->Si le modèle ne correspond pas à un contenu AEM existant, comme c’est le cas lorsque le client a créé un modèle, il existe une interface utilisateur permettant au client de créer une entité.
+>Si le modèle ne correspond pas à un contenu AEM existant, tel que la création d’un modèle par le client, il existe une interface utilisateur permettant à ce dernier de créer une entité.
 >
 
 ### Espaces dans le modèle de contenu {#spaces-in-content-model}

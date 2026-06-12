@@ -11,7 +11,7 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Adobe prend officiellement en charge Java™ 6, 7 et 8. Cependant, Adobe compre
 
 1. Installez le lot **com.adobe.cq.cq-serialization-tester**.
 
-1. Accédez à la console Lots web à l’adresse `https://server:port/system/console/bundles`.
+1. Accédez à la console web des bundles à l’adresse `https://server:port/system/console/bundles`.
 1. Recherchez le lot de sérialisation et démarrez-le. Vous chargez ainsi automatiquement et de manière dynamique l’agent NotSoSerial.
 
 ## Installer l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}

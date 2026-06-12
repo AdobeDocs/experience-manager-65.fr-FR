@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
@@ -30,9 +30,9 @@ Les articles représentent le texte basé avec l&#39;art pour transmettre l&#39;
 >
 >Consultez les ressources suivantes de l’aide en ligne pour en savoir plus sur les rubriques suivantes des applications AEM Mobile :
 >
->* [Considérations de conception](https://helpx.adobe.com/fr/digital-publishing-solution/help/design-app.html)
+>* [Considérations de conception](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gestion des articles](https://helpx.adobe.com/fr/digital-publishing-solution/help/creating-articles.html)
+>* [Gestion des articles](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Création d’un article {#creating-an-article}
@@ -70,7 +70,7 @@ Workflow pour importer un nouvel article
 
 ## Modification d’un article {#editing-an-article}
 
-Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
+Utilisez l’éditeur de glisser-déposer intégré d’AEM pour ajouter ou modifier un article. Il est possible d’ajouter ou de supprimer des composants tels que du texte et des images. Vous pouvez insérer des images depuis DAM Assets.
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ Utilisez l’éditeur AEM intégré par glisser-déposer pour ajouter ou modifie
 Workflow de modification d’un article :
 
 1. Dans Mobile, choisissez votre application Mobile On-Demand dans le catalogue.
-1. Sélectionnez un article d’origine AEM dans la mosaïque **Gérer les articles**.
+1. Sélectionnez un article provenant d’AEM dans la mosaïque **Gérer les articles**.
 1. Cliquez sur l’article en surbrillance dans la vue Liste pour l’ouvrir dans l’éditeur de contenu.
 1. Utilisez l’éditeur de contenu pour faire glisser le contenu de l’article (manuscrits, images, texte, etc.).
 
@@ -113,7 +113,7 @@ Workflow général de chargement d’un article :
 
 ## Suppression d’un article {#deleting-an-article}
 
-Cette opération supprime le contenu sélectionné de Mobile On-Demand et, éventuellement, de l’instance AEM locale.
+Cette opération supprime le contenu sélectionné de Mobile On-Demand et éventuellement de l’instance AEM locale.
 
 Workflow général de suppression d’un article :
 
@@ -121,7 +121,7 @@ Workflow général de suppression d’un article :
 1. Sélectionnez l’article à supprimer dans la mosaïque **Gérer les articles**.
 1. Assurez-vous qu’il est sélectionné dans la liste. Sélectionnez d’autres éléments à supprimer selon vos besoins.
 1. Cliquez sur **Supprimer** dans la barre d’actions.
-1. Cochez cette case si vous souhaitez supprimer d’AEM et Mobile On-Demand.
+1. Cochez la case si vous souhaitez effectuer une suppression dans AEM et Mobile On-Demand.
 1. Cliquez sur **Supprimer**.
 1. Votre article est maintenant supprimé de la liste.
 
