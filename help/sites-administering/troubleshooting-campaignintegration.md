@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '826'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Lors du démarrage du service Apache HTTPD pour Adobe Campaign Classic, l’er
 Assurez-vous que `en_CA.ISO-8859-15 locale` est installé sur votre serveur Adobe Campaign Classic.
 
 * Vous pouvez vérifier l’installation à l’aide de `local -a`.
-* Si l’installation n’a pas été effectuée, vous pouvez corriger le script `/usr/local/neolane/nl6/env.sh` et remplacer le paramètre régional par un paramètre installé.
+* Si l’installation n’a pas été effectuée, vous pouvez corriger le script `/usr/local/neolane/nl6/env.sh` et remplacer les paramètres régionaux par des paramètres installés.
 
 ## Si vous obtenez une erreur lors de la compilation du script &#39;get_nms_amcGetSeedMetaData_jssp&#39; {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
 

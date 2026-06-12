@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 97%
+source-wordcount: '2174'
+ht-degree: 96%
 
 ---
 
@@ -233,7 +233,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </tbody> 
     </table>
 
-1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
@@ -251,7 +251,7 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
       <td><b>Valeur</b></td> 
      </tr> 
      <tr> 
-      <td>Arrière-plan</td> 
+      <td>Contexte</td> 
       <td>Couleur d’arrière-plan</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Arrière-plan</td> 
+      <td>Contexte</td> 
       <td>Couleur d’arrière-plan</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Arrière-plan</td> 
+      <td>Contexte</td> 
       <td>Couleur d’arrière-plan</td> 
       <td>F6921E</td> 
      </tr> 
@@ -479,8 +479,8 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
 8. Créez une structure de dossiers dans CRXDE, par exemple `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
 9. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
 10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
-11. Accédez au dossier CSS créé et créez un fichier. Par exemple, créez un fichier en tant que `fonts.css` et collez le code intégré avec l’URL.
-    ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
+11. Accédez au dossier CSS créé et créez un fichier . Par exemple, créez un fichier en tant que `fonts.css` et collez le code incorporé avec l’URL.
+   ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Enregistrez les modifications.
 
 >[!NOTE]

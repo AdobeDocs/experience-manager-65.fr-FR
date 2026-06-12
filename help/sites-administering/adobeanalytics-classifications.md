@@ -11,7 +11,7 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -124,7 +124,7 @@ Les propriétés sont par exemple les suivantes :
    <td>Identifiant de relation du jeu de données pour lequel exécuter la tâche d’importation. </td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>Description</td>
    <td>Description de la tâche. <br /> </td>
   </tr>
   <tr>

@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
 
-# Mise à jour du lien vers la documentation  {#updating-the-link-to-the-documentation}
+# Mise à jour du lien vers la documentation {#updating-the-link-to-the-documentation}
 
 Vous pouvez accéder au contenu de l’aide par défaut pour l’espace de travail AEM Forms en sélectionnant **Aide > Aide de Workspace**. Le chemin pointe vers la documentation en ligne sur le site Web d’Adobe. Cependant, vous pouvez le mettre à jour pour qu’il pointe vers une autre URL.
 
@@ -33,7 +33,7 @@ Pour mettre à jour l’URL de la documentation en ligne, suivez la [Procédure 
    ```html
    <ul class="helpmenu">
      <li>
-       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63_fr" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
+       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```
 

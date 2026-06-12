@@ -11,7 +11,7 @@ feature: Configuring
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Les applications Adobe Experience Manager vous permettent de mettre à jour le
 Pour configurer le service de filtrage de référent, procédez comme suit :
 
 * Ouvrez la console Apache Felix (**Configurations**) dans :
-* https://&lt;server>:&lt;port_number>/system/console/configMgr
+* https://<server>:<port_number>/system/console/configMgr
 * Connectez-vous en tant qu’administrateur.
 * Dans le menu **Configurations**, sélectionnez : *Apache Sling Referrer Filter*
 * Cochez le champ Autoriser vide pour autoriser les en-têtes de référent vides/manquants.

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Le chemin de mise à niveau direct d’**AEM 6.0 Forms, AEM 6.1 Forms** et **AEM
 
 Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.4 Forms vers AEM 6.5 Forms :
 
-1. Mettez à niveau l’instance AEM existante vers AEM 6.5. Les étapes sont énumérées ci-dessous :
+1. Mettez à niveau l’instance AEM existante vers AEM 6.5. Suivez les étapes ci-dessous :
 
    1. Installez le dernier Service Pack et les derniers correctifs pour AEM 6.3 Forms ou AEM 6.4 Forms. Pour plus d’informations, voir [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
    1. Préparez l’instance source pour la mise à niveau. Pour obtenir des instructions détaillées, reportez-vous à l’article [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
@@ -33,7 +33,7 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Mettez à niveau votre instance AEM vers AEM 6.5. Pour obtenir des instructions étape par étape, voir [Mettre à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
+   1. Mettez à niveau votre instance AEM vers AEM 6.3. Pour obtenir des instructions détaillées, voir [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md).
 
       Avant de passer aux étapes suivantes, attendez que le journal &lt;crx-repository>/error.log contiennent les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED.
 
@@ -49,7 +49,7 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
       1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
       1. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
    1. Sélectionnez le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis sélectionnez **[!UICONTROL Télécharger]**.
-   1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+   1. Ouvrez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Charger le package]** pour charger le package.
    1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
       Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
@@ -62,7 +62,7 @@ Effectuez les étapes suivantes pour mettre à niveau AEM 6.3 Forms ou AEM 6.
 
    >[!NOTE]
    >
-   >Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 1. Exécutez les activités postérieures à l’installation.
 

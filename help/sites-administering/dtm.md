@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 100%
+source-wordcount: '2210'
+ht-degree: 97%
 
 ---
 
@@ -28,8 +28,8 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 >
 >Si vous utilisez la gestion dynamique des balises avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient).
->* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
+>* 3.x est configuré avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x est configuré avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
 ## Options de déploiement {#deployment-options}
@@ -163,7 +163,7 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Énoncé de planification</td>
-   <td>(Apparaît et est obligatoire lorsque l’option Activer l’importateur d’interrogations est sélectionnée.) Une expression cron qui contrôle à quel moment les bibliothèques de gestion dynamique des balises sont téléchargées.</td>
+   <td>(Apparaît et est obligatoire lorsque l’option Activer l’importateur d’interrogations est sélectionnée.) Expression cron qui contrôle à quel moment les bibliothèques de gestion dynamique des balises sont téléchargées.</td>
   </tr>
  </tbody>
 </table>

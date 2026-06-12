@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1046'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ Le service Barcoded Forms renvoie le document XML suivant après le décodage de
 
 ### Workflows qui utilisent des formulaires à code-barres {#workflows-that-use-barcoded-forms}
 
-Les créateurs et créatrices de formulaires créent des formulaires à code-barres interactifs à l’aide de Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).) Lorsqu’un utilisateur ou une utilisatrice remplit un formulaire à code-barres en utilisant Adobe Reader ou Acrobat, le code-barres est automatiquement mis à jour afin de coder les données de formulaire.
+Les créateurs et créatrices de formulaires créent des formulaires à code-barres interactifs à l’aide de Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).) Lorsqu’un utilisateur remplit un formulaire à code-barres à l’aide d’Adobe Reader ou Acrobat, le code-barres est automatiquement mis à jour pour coder les données du formulaire.
 
 Le service Barcoded Forms permet de convertir dans un format électronique des données qui existent sur papier. Par exemple, lorsqu’un formulaire à code-barres est rempli et imprimé, la copie imprimée peut être numérisée et utilisée comme entrée du service Barcoded Forms.
 
@@ -127,9 +127,9 @@ En outre, considérez les restrictions suivantes lorsque vous utilisez le servic
 * Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le comme document PDF ou TIFF numérisé.
 * Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le en tant que document PDF ou TIFF numérisé.
 
-En outre, le service peut décoder tout code à barres qui utilise une symbologie prise en charge si les restrictions indiquées ci-dessus sont respectées. Pour plus d’informations sur la manière de créer des formulaires à code-barres interactifs, voir [l’Aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
+En outre, le service peut décoder tout code-barres qui utilise une symbologie prise en charge si les restrictions indiquées ci-dessus sont respectées. Pour plus d’informations sur la manière de créer des formulaires à code-barres interactifs, voir [l’Aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
-## Configurer les propriétés du service {#configureproperties}
+## Configurer les propriétés du service   {#configureproperties}
 
 Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
 
@@ -137,7 +137,7 @@ Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pou
 
 Le service Barcoded Forms fournit les deux API suivantes :
 
-* **[decode](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données extraites à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
+* **[decode](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données récupérées à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
 
 * **[extractToXML](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste de documents XML, un pour chaque code à barres.
 

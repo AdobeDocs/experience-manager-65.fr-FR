@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '710'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Pour appliquer le groupe d’utilisateurs fermé à une ou plusieurs pages, proc
    1. Cochez la case **Activer**.
 
    1. Ajoutez le chemin d’accès à votre **Page de connexion**.
-Cette option est facultative. Si rien n’est indiqué, la page de connexion standard sera utilisée.
+Cette option est facultative. Si rien n’est indiqué dans ce champ, la page de connexion standard est utilisée.
 
    ![Groupe d’utilisateurs fermé ajouté](assets/cug-authentication-requirement.png)
 
@@ -134,8 +134,7 @@ Configurez la [gestion des sessions dans le fichier dispatcher.any](https://expe
 
 >[!NOTE]
 >
->Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any.
->qui gère les pages non CUG.
+>Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any>qui gère les pages non CUG.
 
 1. Configurez [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-secure-sessions-sessionmanagement) en définissant `/directory`, par exemple :
 
