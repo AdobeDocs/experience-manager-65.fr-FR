@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
+source-git-commit: 25928abbff3ed684fd1b7130c3f4f6095c33e0d2
 workflow-type: tm+mt
-source-wordcount: '8270'
+source-wordcount: '8279'
 ht-degree: 96%
 
 ---
@@ -421,7 +421,7 @@ ht-degree: 96%
       + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
       + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
       + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -448,7 +448,7 @@ ht-degree: 96%
       + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
       + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management dans Assets](/help/assets/drm.md)
       + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1007,6 +1007,7 @@ ht-degree: 96%
          + [À propos de Document Security](/help/forms/using/admin-help/document-security.md)
          + [Envoi sécurisé de gros volumes d’information](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Configuration des options du client et du serveur](/help/forms/using/admin-help/configuring-client-server-options.md)
+         + [Configuration de l’authentification étendue à partir d’un navigateur externe pour Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
          + [Gestion des comptes d’utilisateurs invités et locaux](/help/forms/using/admin-help/invited-local-user-accounts.md)
          + [Contrôle de l’accès à un document protégé par une politique](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
          + [Contrôle des événements](/help/forms/using/admin-help/monitoring-events.md)
@@ -1231,7 +1232,7 @@ ht-degree: 96%
       + [Génération et utilisation de hachages dans les PDF forms dynamiques](/help/forms/developing/hashing-forms.md)
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
    + Glossaire {#aem-forms-glossary}
-      + {hide-from-toc}[Glossaires &#x200B;](/help/forms/using/aem-forms-glossary.md)
+      + {hide-from-toc}[Glossaires ](/help/forms/using/aem-forms-glossary.md)
 + IA dans AEM {#ai-in-aem}
    + [Vue d’ensemble](/help/ai-in-aem/overview.md)
    + Assistant IA {#ai-assistant}
