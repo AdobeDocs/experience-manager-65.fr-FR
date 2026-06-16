@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 98a772829d3568a5826ea9e3ae65760f1587040f
+source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 4%
 
 ---
@@ -30,9 +30,13 @@ Lorsque cette option est activée, l’ouverture d’un document protégé par u
 
 Avant de configurer l’authentification du navigateur externe, assurez-vous que les conditions suivantes sont remplies :
 
-* AEM Forms 6.5 on JEE avec le pack de services 6.5.25.0 déployé, ou le pack de services 6.5.24.0 avec le correctif de correctif JEE applicable installé sur un serveur d’applications pris en charge (JBoss, WebLogic ou WebSphere). Consultez la section [&#x200B; Liens de distribution logicielle pour le 6.5.24.0](#software-distribution-links) AEM Forms JEE Hotfix2 .
+* AEM Forms 6.5 on JEE avec le pack de services 6.5.25.0 déployé, ou le pack de services 6.5.24.0 avec le correctif de correctif JEE applicable installé sur un serveur d’applications pris en charge (JBoss, WebLogic ou WebSphere). Consultez la section [ Liens de distribution logicielle pour le 6.5.24.0](#software-distribution-links) AEM Forms JEE Hotfix2 .
 * L’authentification étendue (authentification tierce) est déjà activée et fonctionnelle avec un fournisseur d’identité. Voir [Paramètres de configuration du serveur](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) et [Ajouter le fournisseur d’authentification étendu](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider).
-* Adobe Acrobat Pro ou Adobe Acrobat Reader (64 bits) installé sur le PC client Windows avec la dernière mise à jour
+* Adobe Acrobat Pro ou Adobe Acrobat Reader (64 bits) installé sur le PC client Windows avec la dernière mise à jour.
+
+>[!NOTE]
+>
+> L’authentification du navigateur externe nécessite une version prise en charge d’Adobe Acrobat ou de Adobe Acrobat Reader sur le client. Voir les [notes de mise à jour d’Acrobat (suivi continu de mars 2026)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) pour obtenir des informations sur les versions et les mises à jour.
 
 ### Liens de distribution logicielle pour AEM Forms JEE Hotfix2 6.5.24.0 {#software-distribution-links}
 
@@ -40,10 +44,10 @@ L’authentification du navigateur externe est disponible dans le pack de servic
 
 Si vous utilisez le pack de services 6.5.24.0 ou une version antérieure d’AEM Forms on JEE, effectuez l’une des opérations suivantes :
 
-* Effectuez la mise à niveau vers le pack de services 6.5.25.0[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) d’AEM Forms on JEE.
+* Effectuez la mise à niveau vers le pack de services 6.5.25.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) d’[AEM Forms on JEE.
 * Installez le correctif 6.5.24.0 AEM Forms JEE Hotfix pour votre serveur d’applications et votre plateforme à l’aide des liens ci-dessous.
 
-Téléchargez et installez le correctif 6.5.24.0 AEM Forms JEE Hotfix pour votre plateforme à partir de la [distribution logicielle d’Adobe &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) :
+Téléchargez et installez le correctif 6.5.24.0 AEM Forms JEE Hotfix pour votre plateforme à partir de la [distribution logicielle d’Adobe ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) :
 
 **JBoss**
 
@@ -115,7 +119,7 @@ Cette vidéo montre comment vérifier l’authentification du navigateur externe
 ### Le navigateur intégré s’ouvre à la place du navigateur système {#embedded-browser-opens-instead-of-system-browser}
 
 * Vérifiez que l&#39;authentification du navigateur externe est activée sur le serveur. Voir [Activer l’authentification de navigateur externe](#enable-external-browser-authentication).
-* Vérifiez que la version d’Acrobat ou de Reader prend en charge cette fonctionnalité.
+* Vérifiez que la version d’Acrobat ou de Reader prend en charge cette fonctionnalité. Voir [](#acrobat).
 
 ### L’authentification réussit dans le navigateur, mais le document ne se déverrouille pas {#authentication-succeeds-but-document-does-not-unlock}
 
