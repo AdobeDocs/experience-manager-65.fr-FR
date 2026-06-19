@@ -1,6 +1,6 @@
 ---
 title: Utilisation de Maven pour Communities
-description: Découvrez le jar de l’API Uber Adobe Experience Manager à utiliser dans Communities.
+description: Découvrez le jar de l’API Adobe Experience Manager Uber à utiliser dans Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,9 +9,9 @@ exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,23 @@ ht-degree: 0%
 
 ## Vue d’ensemble {#overview}
 
-Cette section de la documentation de Adobe Experience Manager (AEM) Communities s’ajoute à :
+Cette section de la documentation des communautés Adobe Experience Manager (AEM) comprend les éléments suivants :
 
 * [Création de projets AEM à l’aide d’Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
+Un seul artefact « uber » remplace les artefacts individuels :
 
-* AEM [&#x200B; Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [jar de l’API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->À partir d’AEM version 6.4, les API Communities ne sont pas publiées explicitement. Toutes les API Communities sont désormais incluses dans le jar Uber lui-même.
+>À partir de la version 6.4 d’AEM, les API de Communities ne sont pas publiées explicitement. Toutes les API de Communities sont désormais incluses dans le fichier JAR Uber lui-même.
 >
->Tenez-vous au courant de la version de Communities la plus récente.
+>Restez à jour avec la version la plus récente de Communities.
 >
->Consultez la section [Dernières versions](deploy-communities.md#latest-releases) où vous pouvez identifier la version la plus récente.
+>Consultez la section [Dernières versions](deploy-communities.md#latest-releases) qui vous permet d’identifier la version la plus récente.
 
-## Exemple de dépendance Maven {#maven-dependency-example}
+## Exemple de dépendance Maven
 
 ```xml
 <dependency>
@@ -49,7 +49,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 
 >[!NOTE]
 >
->Voir le [référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) où vous pouvez identifier le dernier artefact Uber jar.
+>Consultez le [référentiel Uber jar d’](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) où vous pouvez identifier le dernier artefact Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:
@@ -87,7 +87,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 >
 >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 The Communities API jar must be specified before the Uber API jar.
 
