@@ -10,10 +10,10 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 98%
+source-wordcount: '3275'
+ht-degree: 96%
 
 ---
 
@@ -56,7 +56,7 @@ La feuille de calcul **Pulsation du projet** offre une vue d’ensemble graphiqu
 
 ## Statut par rôle {#status-by-role}
 
-La feuille de calcul **Statut par rôle** indique le détail de l’[**intégrité**, la **qualité et le &#x200B;** niveau d’achèvement&#x200B;**](#projectheartbeat) par &#x200B;** [phase](#phases-and-milestones)**&#x200B; et &#x200B;** [persona](#persona)**.
+La feuille de calcul **Statut par rôle** affiche la répartition détaillée des [**Santé**, **Qualité** et **Exhaustivité**](#projectheartbeat) par **[Phase](#phases-and-milestones)** et **[Persona](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
@@ -239,7 +239,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
   Avant le développement, tous les processus de prise en charge nécessaires au déploiement, à la publication, au test et aux problèmes de rapports doivent être mis en place.
 
-  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/fr?support-solution=General&lang=fr&support-tab=home#support).
+  Voir aussi le [portail d’assistance Adobe](https://experienceleague.adobe.com/?support-solution=General&lang=fr&support-tab=home#support).
 
 ### Planification et mise en œuvre des opérations {#operations-planning-and-operations}
 
@@ -276,7 +276,7 @@ De la même manière, les opérations doivent être correctement planifiées pou
 
 * **Plan de récupération**
 
-  Assurez-vous que vous disposez d’un plan de récupération. En cas d’urgence, cette option doit être disponible pour garantir l’utilisation d’AEM en production. Cela devrait couvrir des situations telles que la sauvegarde, la restauration, le basculement, etc.
+  Assurez-vous que vous disposez d’un plan de récupération. En cas d’urgence, cela doit être disponible pour sécuriser l’utilisation en production d’AEM. Cela devrait couvrir des situations telles que la sauvegarde, la restauration, le basculement, etc.
 
 ### Développement {#development}
 
@@ -610,7 +610,8 @@ Pour les bonnes pratiques de déploiement, d’administration, de développement
    * [Opérations de développement d’entreprise (DevOps)](/help/managing/enterprise-devops.md)
    * [Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md)
    * [Instructions relatives à AEM et à l’accessibilité Web](/help/managing/web-accessibility.md)
-   * [Règlement général sur la protection des données](/help/managing/data-protection-and-privacy.md)* [Bonnes pratiques de déploiement et de maintenance](/help/sites-deploying/best-practices.md)
+   * [Règlement général sur la protection des données](/help/managing/data-protection-and-privacy.md)
+* [Bonnes pratiques de déploiement et de maintenance](/help/sites-deploying/best-practices.md)
 * [Bonnes pratiques d’administration](/help/sites-administering/administer-best-practices.md)
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
@@ -618,7 +619,7 @@ Pour les bonnes pratiques de déploiement, d’administration, de développement
 ## Principale documentation {#key-documentation-areas}
 
 * Documentation AEM
-Les sections suivantes de la documentation AEM présentent un intérêt particulier (toutefois, cette liste n’est pas exhaustive) :
+En outre, les sections suivantes de la documentation d’AEM présentent un intérêt particulier (toutefois, cette liste n’est pas exhaustive) :
 
    * [Sécurité](/help/sites-developing/security.md)
    * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
@@ -628,7 +629,7 @@ Les sections suivantes de la documentation AEM présentent un intérêt particul
 
       * [Développement – Les principes de base](/help/sites-developing/the-basics.md)
       * [Concepts relatifs au MSM](/help/sites-administering/msm.md)
-      * [Langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
+      * [Langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr)
 
 * Documentation connexe
 
