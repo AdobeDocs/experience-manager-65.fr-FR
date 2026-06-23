@@ -7,9 +7,9 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. Vous pouvez regarder [cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=fr) pour une présentation de l’application.
+« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test.
 
 >[!CAUTION]
 >
@@ -42,7 +42,7 @@ La suite par défaut qui s’exécute après l’ajout des paramètres s’appel
 
 La suite contient 15 % d’actions d’écriture et 85 % d’actions de lecture.
 
-Pour exécuter les tests de la suite, Tough Day 2 installe son package de contenu par défaut. Cela peut être évité en définissant le paramètre `installsamplecontent` sur `false`, mais souvenez-vous que vous devez également modifier les chemins par défaut pour les tests que vous avez l’intention d’exécuter. Si le jar est exécuté sans paramètres, Tough Day 2 affiche les [informations d’aide](/help/sites-developing/tough-day.md#getting-help).
+Pour exécuter les tests de la suite, Tough Day 2 installe son module de contenu par défaut. Cela peut être évité en définissant le paramètre `installsamplecontent` sur `false`, mais souvenez-vous que vous devez également modifier les chemins par défaut pour les tests que vous avez l’intention d’exécuter. Si le jar est exécuté sans paramètres, Tough Day 2 affiche les [informations d’aide](/help/sites-developing/tough-day.md#getting-help).
 
 En règle générale, vous pouvez utiliser l’application en suivant ce modèle :
 
@@ -127,7 +127,7 @@ Vous trouverez les paramètres appropriés dans la liste ci-dessous :
 
 | **Paramètre** | **Description** | **Valeur par défaut** | **Valeurs possibles** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Installe ou ignore le package de contenu Tough Day 2 par défaut. | true | true ou false |
+| `--installsamplecontent=<Val>` | Installe ou ignore le module de contenu Tough Day 2 par défaut. | true | true ou false |
 | `--protocol=<Val>` | Protocole utilisé pour l’hôte. | http | http ou https |
 | `--host=<Val>` | Nom d’hôte ou adresse IP qui sera ciblé. |  |  |
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
