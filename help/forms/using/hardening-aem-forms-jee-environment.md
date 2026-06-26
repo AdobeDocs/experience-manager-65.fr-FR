@@ -8,10 +8,10 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7800'
-ht-degree: 98%
+source-wordcount: '7949'
+ht-degree: 96%
 
 ---
 
@@ -262,7 +262,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 1. Démarrez le serveur AEM Forms.
 1. Entrez l’URL suivante dans un navigateur pour tester la modification et garantir que l’adresse ne fonctionne plus.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Verrouillage de l’accès distant au Trust Store**
 
@@ -808,6 +808,20 @@ Si des requêtes serveur légitimes sont bloquées par le filtre CSRF, essayez l
 * Si le client ou la cliente peut travailler dans un navigateur, essayez ce modèle de déploiement.
 * En dernier recours, vous pouvez ajouter la ressource à la liste des URI autorisés. Ce paramètre n’est pas recommandé.
 
+### Réduire les problèmes de sérialisation {#mitigating-serialization-issues}
+
+Les attaques de désérialisation Java exploitent les applications qui désérialisent des données non approuvées, permettant potentiellement l’exécution de code à distance sur le serveur. AEM Forms sur JEE comprend un pare-feu de désérialisation qui effectue une vérification en amont avant toute tentative de désérialisation d’un objet. Le contrôle teste les noms de classe par rapport à une liste autorisée de type pare-feu, à une liste bloquée ou les deux, et rejette les classes connues pour être exploitables par des attaques de désérialisation.
+
+Sur les installations exécutant **JDK 11 ou version ultérieure**, cette protection est activée par le filtrage de sérialisation natif de la plateforme et ne nécessite aucune étape manuelle. Sur les installations exécutant **JDK 8**, le filtrage de sérialisation natif n’est pas efficace. Par conséquent, l’agent NotSoSerial doit être attaché explicitement à la JVM au démarrage.
+
+Vérifiez que la protection est active en accédant au contrôle de l’intégrité du filtre de désérialisation :
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+Si le contrôle de l’intégrité signale un échec sur une instance JDK 8, joignez et configurez l’agent comme décrit dans la section [Réduction des problèmes de sérialisation dans AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md).
+
 ## Configuration réseau sécurisée {#secure-network-configuration}
 
 Cette section décrit les protocoles et les ports requis par AEM Forms on JEE et fournit des recommandations pour déployer AEM Forms on JEE dans une configuration réseau sécurisée.
@@ -950,7 +964,7 @@ Cette section décrit les ports par défaut (et les plages de configurations alt
  </tbody> 
 </table>
 
-**Ports WebSphere &#x200B;**
+**Ports WebSphere **
 
 Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE, consultez Configuration des numéros de ports dans l’interface utilisateur de WebSphere Application Server.
 
