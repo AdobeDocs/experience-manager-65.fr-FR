@@ -262,7 +262,7 @@ Configuration Manager a utilisé une servlet déployée sur votre serveur d’ap
 1. Démarrez le serveur AEM Forms.
 1. Entrez l’URL suivante dans un navigateur pour tester la modification et garantir que l’adresse ne fonctionne plus.
 
-   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
 **Verrouillage de l’accès distant au Trust Store**
 
@@ -964,7 +964,7 @@ Cette section décrit les ports par défaut (et les plages de configurations alt
  </tbody> 
 </table>
 
-**Ports WebSphere **
+**Ports WebSphere &#x200B;**
 
 Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE, consultez Configuration des numéros de ports dans l’interface utilisateur de WebSphere Application Server.
 
