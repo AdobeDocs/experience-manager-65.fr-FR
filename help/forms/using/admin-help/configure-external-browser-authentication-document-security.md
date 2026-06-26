@@ -51,18 +51,18 @@ Téléchargez et installez le correctif 6.5.24.0 AEM Forms JEE Hotfix pour votre
 
 **JBoss**
 
-* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur JBoss JEE](6.5.24.0-win-jboss.zip)
-* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur JEE JBoss](6.5.24.0-linux-jboss.tar.gz)
+* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur JBoss JEE] (6.5.24.0-win-jboss.zip)
+* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur JEE JBoss] (6.5.24.0-linux-jboss.tar.gz)
 
 **WebSphere**
 
-* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur WebSphere JEE](6.5.24.0-win-websphere.zip)
-* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur WebSphere JEE](6.5.24.0-linux-websphere.tar.gz)
+* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur WebSphere JEE] (6.5.24.0-win-websphere.zip)
+* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur WebSphere JEE] (6.5.24.0-linux-websphere.tar.gz)
 
 **WebLogic**
 
-* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur WebLogic JEE](6.5.24.0-win-weblogic.zip)
-* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur WebLogic JEE](6.5.24.0-linux-weblogic.tar.gz)
+* Windows : [correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur WebLogic JEE] (6.5.24.0-win-weblogic.zip)
+* Linux : [correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur WebLogic JEE] (6.5.24.0-linux-weblogic.tar.gz)
 
 Pour obtenir des instructions d’installation, voir [Installation d’un correctif JEE](/help/release-notes/jee-patch-installer-65.md).
 
