@@ -9,10 +9,10 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10334'
-ht-degree: 98%
+source-wordcount: '10377'
+ht-degree: 97%
 
 ---
 
@@ -58,6 +58,10 @@ Pour plus d’informations sur le fonctionnement de la synchronisation et du bai
 **Autoriser une authentification étendue :** sélectionnez cette option pour activer l’authentification étendue, puis saisissez l’URL d’accueil de l’authentification étendue.
 
 La sélection de cette option permet aux applications clientes d’utiliser l’authentification étendue. L’authentification étendue fournit des processus d’authentification personnalisés et différentes options d’authentification configurées sur le serveur AEM Forms. Par exemple, les utilisateurs et utilisatrices peuvent désormais tester l’authentification SAML au lieu du nom d’utilisateur ou d’utilisatrice/mot de passe d’AEM Forms, à partir d’Acrobat et du client Reader. Par défaut, l’URL d’entrée contient *localhost* comme nom du serveur. Remplacez le nom du serveur par un nom d’hôte complet. Le nom d’hôte dans l’URL de destination est automatiquement renseigné à partir de l’URL de base, si l’authentification étendue n’est pas encore activée. Voir [Ajouter le fournisseur d’authentification étendue](configuring-client-server-options.md#add-the-extended-authentication-provider).
+
+>[!NOTE]
+>
+> L’authentification du navigateur externe est disponible dans le pack de services AEM Forms on JEE 6.5.25.0 et versions ultérieures. Si vous utilisez le pack de services 6.5.24.0 ou une version antérieure, effectuez la mise à niveau vers le pack de services 6.5.25.0 ou installez le correctif JEE approprié. Voir [&#x200B; Configuration de l’authentification étendue à partir d’un navigateur externe pour Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
 
 ***Remarque &#x200B;** : l’authentification étendue est prise en charge sur Mac OS X doté de la version 11.0.6 d’Adobe Acrobat et ultérieure.*
 

@@ -5,14 +5,14 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
-workflow-type: ht
-source-wordcount: '3519'
-ht-degree: 100%
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+workflow-type: tm+mt
+source-wordcount: '3546'
+ht-degree: 99%
 
 ---
 
-# Gestion de projets de traduction {#managing-translation-projects}
+# Gestion de projets de traduction{#managing-translation-projects}
 
 Après avoir préparé le contenu à traduire, vous devez compléter la structure linguistique en créant des copies de langue manquantes et créer des projets de traduction.
 
@@ -40,23 +40,23 @@ Les projets et les tâches de traduction sont créés avec des processus de pré
 
 AEM détecte si un projet de traduction est créé pour la traduction initiale du contenu ou pour mettre à jour des copies de langue déjà traduites. Lorsque vous créez un projet de traduction d’une page et indiquez les copies de langue pour lesquelles vous effectuez la traduction, AEM détecte si la page source existe déjà dans les copies de langue ciblées :
 
-* **La copie de langue n’inclut pas la page :** AEM traite cette situation comme une traduction initiale. La page est copiée immédiatement dans la copie de langue et incorporée au projet. Lorsque la page traduite est importée dans AEM, AEM la copie directement dans la copie de langue.
-* **La copie de langue inclut déjà la page :** AEM traite cette situation comme une traduction mise à jour. Un lancement est créé, et une copie de la page est ajoutée au lancement et incorporée au projet. Les lancements vous permettent de passer en revue les traductions mises à jour avant de les valider dans la copie de langue :
+* **La copie linguistique n’inclut pas la page :** AEM traite cette situation comme une traduction initiale. La page est copiée immédiatement dans la copie linguistique et incorporée au projet. Lorsque la page traduite est importée dans AEM, AEM la copie directement dans la copie linguistique.
+* **La copie linguistique inclut déjà la page :** AEM traite cette situation comme une traduction mise à jour. Un lancement est créé, et une copie de la page est ajoutée au lancement et incorporée au projet. Les lancements vous permettent de passer en revue les traductions mises à jour avant de les valider dans la copie linguistique :
 
    * Lorsque la page traduite est importée dans AEM, elle remplace la page du lancement.
-   * La page traduite ne remplace la copie de langue que lorsque le lancement est converti.
+   * La page traduite ne remplace la copie linguistique que lorsque le lancement est converti.
 
-Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la traduction française de la langue principale /content/geometrixx/en. Il n’y a pas d’autres pages dans la copie de langue française.
+Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la traduction française de la langue principale /content/geometrixx/en. Il n’y a pas d’autres pages dans la copie linguistique française.
 
-* Un projet de traduction est créé pour la page /content/geometrixx/en/products et toutes les pages enfants, ciblant la copie de langue française. Comme la copie de langue ne comprend pas la page /content/geometrixx/fr/products, AEM copie immédiatement la page /content/geometrixx/en/products et toutes les pages enfants dans la copie de langue en français. Les copies sont également incluses dans le projet de traduction.
-* Un projet de traduction est créé pour la page /content/geometrixx/en et toutes les pages enfants, ciblant la copie de langue en français. Comme la copie de langue comprend la page correspondant à la page /content/geometrixx/en (racine de langue), AEM copie la page /content/geometrixx/en et toutes les pages enfants et les ajoute à un lancement. Les copies sont également incluses dans le projet de traduction.
+* Un projet de traduction est créé pour la page /content/geometrixx/en/products et toutes les pages enfants, ciblant la copie linguistique Français. Comme la copie linguistique ne comprend pas la page /content/geometrixx/fr/products, AEM copie immédiatement la page /content/geometrixx/en/products et toutes les pages enfants dans la copie linguistique en français. Les copies sont également incluses dans le projet de traduction.
+* Un projet de traduction est créé pour la page /content/geometrixx/en et toutes les pages enfants, ciblant la copie linguistique Français. Comme la copie linguistique comprend la page correspondant à la page /content/geometrixx/en (racine de langue), AEM copie la page /content/geometrixx/en et toutes les pages enfants et les ajoute à un lancement. Les copies sont également incluses dans le projet de traduction.
 
 ## Création de projets de traduction à l’aide du panneau Références {#creating-translation-projects-using-the-references-panel}
 
 Créez des projets de traduction afin de pouvoir exécuter et gérer le processus pour traduire les ressources de votre gabarit de langue. Lorsque vous créez des projets, vous spécifiez la page dans le gabarit de langue que vous traduisez et les copies de langue pour lesquelles vous effectuez la traduction :
 
 * La configuration cloud du framework d’intégration de traduction associé à la page sélectionnée détermine de nombreuses propriétés des projets de traduction, telles que le workflow de traduction à utiliser.
-* Un projet est créé pour chaque copie de langue sélectionnée.
+* Un projet est créé pour chaque copie linguistique sélectionnée.
 * Une copie de la page sélectionnée et des ressources associées est créée et ajoutée à chaque projet. Ces copies sont ensuite envoyées au fournisseur de traduction pour traduction.
 
 Vous pouvez spécifier que les pages enfants de la page sélectionnée soient elles aussi sélectionnées. Dans ce cas, les copies des pages enfants sont également ajoutées à chaque projet afin d’être traduites. Lorsque des pages enfants sont associées à différentes configurations de la structure d’intégration de traduction, AEM crée des projets supplémentaires.
@@ -69,15 +69,15 @@ Vous pouvez également [créer manuellement des projets de traduction](#creating
 
 **Traductions initiales et mise à jour de traductions**
 
-Le panneau Références indique si vous mettez à jour les copies de langue existantes ou si vous créez la première version des copies de langue. Lorsqu’il existe une copie de langue pour la page sélectionnée, l’onglet Mettre à jour les copies de langue s’affiche pour donner accès aux commandes liées au projet.
+Le panneau Références indique si vous mettez à jour les copies de langue existantes ou si vous créez la première version des copies de langue. Lorsqu’il existe une copie linguistique pour la page sélectionnée, l’onglet Mettre à jour les copies linguistiques s’affiche pour donner accès aux commandes liées au projet.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promoting-updated-content) avant de remplacer la copie de langue. Lorsqu’il n’existe aucune copie de langue pour la page sélectionnée, l’onglet Créer et traduire s’affiche pour donner accès aux commandes liées au projet.
+Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promoting-updated-content) avant de remplacer la copie linguistique. Lorsqu’il n’existe aucune copie linguistique pour la page sélectionnée, l’onglet Créer et traduire s’affiche pour donner accès aux commandes liées au projet.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-### Création de projets de traduction pour une nouvelle copie de langue {#create-translation-projects-for-a-new-language-copy}
+### Création de projets de traduction pour une nouvelle copie linguistique {#create-translation-projects-for-a-new-language-copy}
 
 1. Utilisez la console Sites pour sélectionner la page que vous ajoutez aux projets de traduction.
 
@@ -90,7 +90,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
 1. Sélectionnez Copies de langue, puis sélectionnez les copies de langue pour lesquelles vous traduisez les pages source.
 1. Cliquez sur Créer et traduire, puis configurez la tâche de traduction :
 
-   * Utilisez la liste déroulante Langues pour sélectionner une copie de langue à traduire. Sélectionnez d’autres langues, au besoin. Les langues qui apparaissent dans la liste correspondent aux [racines de langue que vous avez créées](/help/sites-administering/tc-prep.md#creating-a-language-root).
+   * Utilisez la liste déroulante Langues pour sélectionner une copie linguistique à traduire. Sélectionnez d’autres langues, au besoin. Les langues qui apparaissent dans la liste correspondent aux [racines de langue que vous avez créées](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour les projets, sélectionnez Créer un projet de traduction.
    * Saisissez un nom pour le projet.
@@ -99,7 +99,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
 
 1. Cliquez sur Créer.
 
-### Création de projets de traduction pour une copie de langue existante {#create-translation-projects-for-an-existing-language-copy}
+### Création de projets de traduction pour une copie linguistique existante {#create-translation-projects-for-an-existing-language-copy}
 
 1. Utilisez la console Sites pour sélectionner la page que vous ajoutez aux projets de traduction.
 
@@ -110,7 +110,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Sélectionnez Copies de langue, puis sélectionnez les copies de langue pour lesquelles vous traduisez les pages source.
-1. Cliquez sur Mettre à jour des copies de langue, puis configurez la tâche de traduction :
+1. Cliquez sur Mettre à jour des copies linguistiques, puis configurez la tâche de traduction :
 
    * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour les projets, sélectionnez Créer un projet de traduction.
@@ -148,7 +148,7 @@ Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des co
 
    >[!NOTE]
    >
-   >La langue cible définie dans le projet de traduction doit correspondre au chemin d’accès à la copie de langue, comme indiqué dans le panneau Références.
+   >La langue cible définie dans le projet de traduction doit correspondre au chemin d’accès à la copie linguistique, comme indiqué dans le panneau Références.
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
@@ -250,7 +250,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 | État | Description |
 |---|---|
 | Brouillon | La tâche de traduction n’a pas été démarrée. Lors de leur création, les tâches de traduction présentent le statut BROUILLON. |
-| Envoyé | Les fichiers de la tâche de traduction ont ce statut lorsqu’ils ont été correctement envoyés au service de traduction. Ce statut est défini après l’exécution de la commande Demander la portée ou Commencer. |
+| Envoyé | Les fichiers de la tâche de traduction ont ce statut lorsqu’ils ont été correctement envoyés au service de traduction. Ce statut est défini après l’exécution de la commande Demander la portée ou Commencer . |
 | Demander la portée | Pour le workflow de traduction humaine, les fichiers de la tâche ont été soumis au fournisseur de traduction pour la définition de la portée. Ce statut est défini après l’exécution de la commande Demander la portée. |
 | Portée terminée | Le fournisseur a défini la portée de la tâche de traduction. |
 | Engagé pour traduction | Le propriétaire du projet a accepté la portée. Ce statut indique que le fournisseur de traduction doit commencer à traduire les fichiers de la tâche. |
@@ -297,7 +297,7 @@ La procédure suivante définit la date d’échéance d’une tâche de traduct
 
 ## Définition de la portée d’une tâche de traduction {#scoping-a-translation-job}
 
-Définissez la portée de la tâche de traduction afin que le prestataire de services de traduction vous fournisse une estimation du coût de la traduction. Lorsque vous définissez la portée d’une tâche, les fichiers source sont envoyés au fournisseur de traduction, qui compare le texte à son pool de traductions stockées (mémoire de traduction). En règle générale, la portée (ou scope) correspond au nombre de mots à traduire.
+Définissez la portée de la tâche de traduction afin que le prestataire de services de traduction vous fournisse une estimation du coût de la traduction. Lorsque vous définissez la portée d’une tâche, les fichiers sources sont envoyés au fournisseur de traduction, qui compare le texte à son pool de traductions stockées (mémoire de traduction). En règle générale, la portée (ou scope) correspond au nombre de mots à traduire.
 
 Pour obtenir plus d’informations sur les résultats de la portée, contactez votre fournisseur de traduction.
 
@@ -318,9 +318,9 @@ La définition de la portée ne fonctionne correctement que lorsque le fournisse
 
 ## Commencer une tâche de traduction {#starting-a-translation-job}
 
-Commencez une tâche de traduction pour traduire les pages source dans la langue cible. La traduction est effectuée selon les valeurs des propriétés de la mosaïque Résumé de traduction.
+Commencez une tâche de traduction pour traduire les pages dans la langue source vers la langue cible. La traduction est effectuée selon les valeurs des propriétés de la mosaïque Résumé de traduction.
 
-Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de traduction affiche le statut Traduction en cours.
+Une fois que vous avez commencé la tâche de traduction, la vignette Tâche de traduction affiche le statut Traduction en cours.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -333,7 +333,7 @@ Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de
 
 ## Annulation d’une tâche de traduction {#canceling-a-translation-job}
 
-Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche dispose du statut `Committed For Translation` ou `Translation In Progress`.
+Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche a le statut `Committed For Translation` ou `Translation In Progress`.
 
 1. Dans la console Projets, ouvrez le projet de traduction.
 1. Sur la vignette Tâche de traduction, cliquez le menu Commandes, puis sur Annuler.
@@ -353,12 +353,12 @@ Le rejet du contenu le renvoie au fournisseur de traduction, qui peut consulter 
 
 ## Vérifier et promouvoir du contenu mis à jour {#reviewing-and-promoting-updated-content}
 
-Lorsque le contenu est traduit pour une copie de langue existante, révisez les traductions, apportez-y des modifications, si nécessaire, puis convertissez les traductions pour les déplacer vers la copie de langue. Vous pouvez réviser les fichiers traduits lorsque la tâche de traduction possède le statut Prêt pour la révision.
+Lorsque le contenu est traduit pour une copie linguistique existante, révisez les traductions, apportez-y des modifications, si nécessaire, puis convertissez les traductions pour les déplacer vers la copie linguistique. Vous pouvez réviser les fichiers traduits lorsque la tâche de traduction possède le statut Prêt pour la révision.
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
 1. Sélectionnez la page dans le gabarit de langue, cliquez sur Référence, puis sur Copies de langue.
-1. Cliquez sur la copie de langue à réviser.
+1. Cliquez sur la copie linguistique à réviser.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
@@ -374,10 +374,10 @@ Lorsque le contenu est traduit pour une copie de langue existante, révisez les 
 
 Pour comparer des copies de langue au gabarit de langue :
 
-1. Dans la console **Sites**, accédez à la copie de langue à comparer.
+1. Dans la console **Sites**, accédez à la copie linguistique à comparer.
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)**.
 1. Sous le titre **Copies**, sélectionnez **Copies de langue**.
-1. Sélectionnez votre copie de langue. Ensuite, vous pouvez cliquer sur **Comparer au gabarit** ou **Comparer au précédent**, le cas échéant.
+1. Sélectionnez votre copie linguistique. Ensuite, vous pouvez cliquer sur **Comparer au gabarit** ou **Comparer au précédent**, le cas échéant.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -393,11 +393,11 @@ Une fois que vous avez terminé la tâche, celle-ci a le statut Terminé.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Archivez une tâche de traduction une fois qu’elle est terminée et que vous n’avez plus besoin de consulter les détails du statut de cette tâche. Lorsque vous archivez la tâche, la mosaïque Tâche de traduction est supprimée du projet.
+Archivez une tâche de traduction une fois qu’elle est terminée et que vous n’avez plus besoin de consulter les détails du statut de cette tâche. Lorsque vous archivez la tâche, la vignette Tâche de traduction est supprimée du projet.
 
-## Création de la structure d’une copie de langue {#creating-the-structure-of-a-language-copy}
+## Création de la structure d’une copie linguistique {#creating-the-structure-of-a-language-copy}
 
-Remplissez la copie de langue afin qu’elle contienne le contenu de la langue principale que vous traduisez. Avant de remplir la copie de langue, vous devez avoir [créé la racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root) de la copie de langue.
+Remplissez la copie linguistique afin qu’elle contienne le contenu de la langue principale que vous traduisez. Avant de remplir la copie linguistique, vous devez avoir [créé la racine de langue](/help/sites-administering/tc-prep.md#creating-a-language-root) de la copie linguistique.
 
 1. Utilisez la console Sites pour sélectionner la racine de langue de la langue principale utilisée comme source. Par exemple, pour traduire les pages en anglais du site de démonstration Geometrixx, sélectionnez Contenu > Site de démonstration Geometrixx > Anglais.
 1. Dans la barre d’outils, cliquez sur Références.
@@ -419,10 +419,10 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie de langue après le déplacement :
+Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie linguistique en fonction du nouveau nom ou emplacement de la page. L’ancienne copie linguistique basée sur le nom et l’emplacement précédent est toujours là. Pour éviter cela, vous pouvez utiliser la fonctionnalité de mise à jour de la copie linguistique après le déplacement :
 
-1. Déplacez une page qui comporte une copie de langue.
-1. Sélectionnez la racine de la copie de langue.
+1. Déplacez une page qui comporte une copie linguistique.
+1. Sélectionnez la racine de la copie linguistique.
 1. Ouvrez le panneau **Références**.
 1. Sélectionnez **Copies de langue**.
 1. Sélectionnez les langues cibles à mettre à jour.
@@ -438,7 +438,7 @@ Si une page source déjà traduite doit être [renommée ou déplacée](/help/si
 
 1. Cliquez sur le lancement que avez créé, puis sur **Promouvoir le lancement**.
 
-Désormais, la page source a été déplacée, ainsi que la copie de langue associée.
+Désormais, la page source a été déplacée, ainsi que la copie linguistique associée.
 
 ## Création d’un projet de traduction à l’aide de la console Projets {#creating-a-translation-project-using-the-projects-console}
 

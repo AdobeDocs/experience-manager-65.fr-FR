@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 99%
+source-wordcount: '2294'
+ht-degree: 98%
 
 ---
 
@@ -106,8 +106,8 @@ Pour utiliser les API de service de contenu intelligent, créez une intégration
 
 1. Sur la page **[!UICONTROL Add API]**, sélectionnez **[!UICONTROL Experience Cloud]** puis **[!UICONTROL Smart Content]** (Contenu dynamique). Cliquez sur **[!UICONTROL Next]** (Suivant).
 
-1. Sélectionnez **[!UICONTROL OAuth serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
-Pour plus de détails sur la façon d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
+1. Sélectionnez **[!UICONTROL OAuth de serveur à serveur]**. Cliquez sur **[!UICONTROL Suivant]**.
+Pour plus d’informations sur la manière d’effectuer cette configuration, consultez la documentation de Developer Console, en fonction de vos besoins :
 
    * Pour une présentation, voir *Authentification de serveur à serveur* sur developer.adobe.com.
    * Pour créer des informations d’identification OAuth, voir le *guide d’implémentation des informations d’identification OAuth de serveur à serveur* sur developer.adobe.com.
@@ -146,7 +146,7 @@ Suivez les étapes ci-dessous pour créer la configuration d’un compte techniq
 
 1. Confirmez la boîte de dialogue du Contrôle de l’intégrité, puis cliquez sur Fermer une fois la configuration vérifiée comme saine.
 
-### Créer une configuration {#configure-smart-content-service}
+### Créer une configuration
 
 <!--
 >[!CAUTION]
@@ -175,7 +175,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-### Validation de la configuration {#validate-the-configuration}
+### Validation de la configuration
 
 Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour valider la configuration. Pour procéder à la validation, suivez ces étapes.
 
@@ -281,7 +281,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
    *Figure: Details of integration in Adobe Developer Console*
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service
 
 >[!CAUTION]
 >
@@ -338,7 +338,7 @@ An authorization scope is an OAuth string that contains the following prerequisi
 6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 7. Restart the console.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
+source-git-commit: ec3941675081255879065c3be9d5af77474b2072
 workflow-type: tm+mt
-source-wordcount: '8270'
+source-wordcount: '8286'
 ht-degree: 96%
 
 ---
@@ -564,6 +564,7 @@ ht-degree: 96%
          + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_fr)
          + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65_fr)
          + [Configuration d’Adobe Experience Manager Forms on JEE sur une grappe WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65_fr)
+         + [Réduire les problèmes de sérialisation dans AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
       + Configurer AEM Forms {#configure-aem-forms}
          + [Réglage des performances du serveur AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurer le cache de formulaires adaptatifs](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -1007,6 +1008,7 @@ ht-degree: 96%
          + [À propos de Document Security](/help/forms/using/admin-help/document-security.md)
          + [Envoi sécurisé de gros volumes d’information](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Configuration des options du client et du serveur](/help/forms/using/admin-help/configuring-client-server-options.md)
+         + [Configuration de l’authentification étendue à partir d’un navigateur externe pour Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
          + [Gestion des comptes d’utilisateurs invités et locaux](/help/forms/using/admin-help/invited-local-user-accounts.md)
          + [Contrôle de l’accès à un document protégé par une politique](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
          + [Contrôle des événements](/help/forms/using/admin-help/monitoring-events.md)
@@ -1668,3 +1670,4 @@ ht-degree: 96%
       + [Guide rapide relatif à WCAG 2.1](/help/managing/qg-wcag.md)
    + Protection des données {#data-protection}
       + [Préparation d’AEM aux réglementations sur la protection et la confidentialité des données](/help/managing/data-protection-and-privacy.md)
+
