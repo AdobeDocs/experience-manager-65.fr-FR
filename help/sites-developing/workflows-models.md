@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 100%
+source-wordcount: '2502'
+ht-degree: 99%
 
 ---
 
@@ -31,14 +31,12 @@ Lorsqu’un utilisateur ou une utilisatrice démarre un workflow, une instance e
 
 Lorsque vous créez un modèle de workflow pour la première fois, il contient :
 
-* Les étapes **Début de flux** et **Fin de flux**.
-Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
-* Un exemple d’étape **Participant**, dont le nom est **Étape 1**.
-Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
+* Les étapes **Début de flux** et **Fin de flux**.Ces étapes représentent le début et la fin du workflow. Elles sont obligatoires et ne peuvent pas être modifiées ni supprimées.
+* Un exemple d’étape **Participant**, dont le nom est **Étape 1**.Cette étape est configurée pour affecter un élément de travail à l’initiateur de workflow. Vous pouvez modifier ou supprimer cette étape et y ajouter d’autres étapes suivant les besoins.
 
 Pour créer un workflow avec l’éditeur, procédez comme suit :
 
-1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles**, ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
+1. Ouvrez la console **Modèles de workflow** via **Outils**, **Workflow**, **Modèles** ou, par exemple : [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow).
 1. Sélectionnez **Créer**, puis **Créer un modèle**.
 1. La boîte de dialogue **Ajouter un modèle de workflow** s’ouvre. Saisissez le **Titre** et le **Nom** (facultatif) avant de sélectionner **Terminé**.
 1. Le nouveau modèle est répertorié dans la console **Modèles de workflow**.
@@ -86,8 +84,8 @@ Lorsque vous ouvrez un [Modèle par défaut et/ou hérité](/help/sites-developi
 * une action **Modifier** est disponible dans la barre d’outils (côté droit).
 * Au départ, le modèle et ses propriétés sont présentés en mode lecture seule comme suit :
    * Les workflows par défaut sont situés dans `/libs`.
-   * Les workflows hérités se trouvent dans `/etc`.
-Sélectionner **Modifier** aura les effets suivants :
+   * Les workflows hérités se trouvent dans `/etc`
+Sélectionner **Modifier** aura pour effet :
 * une copie du workflow est réalisée dans `/conf` ;
 * le navigateur d’étapes devient accessible ;
 * vous pourrez effectuer des modifications.
@@ -190,8 +188,7 @@ Si un modèle de workflow présent dans l’interface utilisateur classique est 
 
 1. Accédez à **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
 
-1. Sélectionnez **[!UICONTROL Créer > Créer une balise]**. Définissez le **[!UICONTROL titre]** comme `DAM` et le **[!UICONTROL nom]** comme `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
-   ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
+1. Sélectionnez **[!UICONTROL Créer > Créer une balise]**. Définissez le **[!UICONTROL titre]** comme `DAM` et le **[!UICONTROL nom]** comme `dam`. Sélectionnez **[!UICONTROL Envoyer]**.   ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
 
 1. Accédez à **[!UICONTROL Outils > Workflows > Modèles]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
 
@@ -271,7 +268,7 @@ Pour exporter un modèle de workflow dans un package, procédez comme suit :
    1. Spécifiez le **Nom du module**, ainsi que tout autre détail selon les besoins.
    1. Cliquez sur **OK**.
 
-1. Cliquez sur **Modifier** dans la barre d’outils de votre nouveau package. 
+1. Cliquez sur **Modifier** dans la barre d’outils de votre nouveau package.
 
 1. Ouvrez l’onglet **Filtres**.
 
@@ -360,7 +357,7 @@ Pour illustrer certaines des possibilités de création d’un workflow, l’exe
    Vous revenez alors à l’aperçu du modèle de workflow. L’étape de participant y a été renommée `Validate Content`.
 
 1. Faites glisser une **Division OU** sur le workflow et positionnez-la entre `Validate Content` et **Fin de flux**.
-1. Ouvrez la **Division OU** pour la configuration.
+1. Ouvrez la **division OU** pour la configuration.
 1. Configurez les éléments suivants :
 
    * **Commun** : précisez le nom de la division.
@@ -368,7 +365,7 @@ Pour illustrer certaines des possibilités de création d’un workflow, l’exe
 
    * **Branche 2** : vérifiez que **Itinéraire par défaut** n’est pas sélectionné.
 
-1. Confirmez vos mises à jour de la **Division OU**.
+1. Confirmez vos mises à jour de la **division OU**.
 1. Faites glisser une **Étape de participant ou participante** sur la branche de gauche, ouvrez les propriétés, spécifiez les valeurs suivantes, puis confirmez les modifications :
 
    * **Titre** : `Reject Publish Request`
@@ -409,22 +406,20 @@ Pour définir une règle OU, procédez comme suit :
    >
    >Les scripts doivent comporter une [fonction `check()`](#function-check) qui renvoie une valeur booléenne.
 
-1. Modifiez le workflow et ajoutez la **Division OU** au modèle.
-1. Modifiez les propriétés de la **Branche 1** de la **Division OU** :
+1. Modifiez le workflow et ajoutez la **division OU** au modèle.
+1. Modifiez les propriétés de la **branche 1** de la **division OU** :
 
    * Définissez-la comme **Itinéraire par défaut** en configurant la **Valeur** sur `true`.
 
-   * Dans **Règle**, définissez le chemin d’accès au script. Par exemple :
-     `/apps/myapp/workflow/scripts/myscript1.ecma`
+   * Dans **Règle**, définissez le chemin d’accès au script. Par exemple :     `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
    >
    >Vous pouvez changer l’ordre des branches si nécessaire.
 
-1. Modifiez les propriétés de la **Branche 2** de la **Division OU**.
+1. Modifiez les propriétés de la **Branche 2** de la **division OU**.
 
-   * En tant que **Règle**, définissez le chemin d’accès à l’autre script. Par exemple :
-     `/apps/myapp/workflow/scripts/myscript2.ecma`
+   * En tant que **Règle**, définissez le chemin d’accès à l’autre script. Par exemple :     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Définissez les propriétés des différentes étapes de chaque branche. Assurez-vous que la valeur **Utilisateur/Groupe** est définie.
 1. Cliquez sur **Synchronisation** (barre d’outils de l’éditeur) pour conserver vos modifications dans le modèle d’exécution.

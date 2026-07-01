@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 100%
+source-wordcount: '1136'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’Administration de
 | Voir Copies de langue | Complète |  |
 | Rechercher et remplacer | Absente | Utiliser l’IU classique. |
 | Boîte de réception des notifications (événements JCR) | Absente | Utiliser l’IU classique. Remplacée par une autre implémentation à venir. |
-| Références | Complète | Affichez les liens de page entrants ajoutés à AEM 6.5. Pour des raisons de performances, seuls les liens directs vers la page s’affichent. |
+| Références | Complète | Affichage des liens de page entrants ajoutés à AEM 6.5. Seuls les liens directs vers la page s’affichent pour des raisons de performances. |
 
 ## Statut des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
@@ -86,7 +86,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
 |--- |--- |--- |
 | Modifier les pages web | Complète |  |
 | Modifier les pages web mobiles | Complète |  |
-| Modifier le contenu importé via Design Importer  | Complète |  |
+| Modifier le contenu importé via Design Importer | Complète |  |
 | Modifier les e-mails | Complète |  |
 | Modifier les applications mobiles hybrides | Complète |  |
 | Modifier les formulaires | Complète |  |
@@ -116,7 +116,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités de l’éditeur de page 
 | Traduire la page | Supprimé | Utilisez l’Administration de sites pour [ajouter une page aux projets de traduction](/help/sites-administering/tc-manage.md). |
 | Distorsion du temps (choisissez la date/l’heure et parcourez le site tel qu’il était avant) | Complète |  |
 | Définir les autorisations | Complète |  |
-| IU contextuelle du client  | Remplacé | Utilisez dorénavant l’interface utilisateur [ContextHub](/help/sites-authoring/ch-previewing.md). |
+| IU contextuelle du client | Remplacé | Utilisez dorénavant l’interface utilisateur [ContextHub](/help/sites-authoring/ch-previewing.md). |
 | Outil de recherche de contenu pour les différents types de médias | Complète |  |
 | Liste des composants | Complète |  |
 | Copier/coller de composants | Complète |  |
