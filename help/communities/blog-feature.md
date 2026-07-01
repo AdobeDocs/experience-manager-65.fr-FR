@@ -333,4 +333,4 @@ Pour la modération des entrées de blog et des commentaires, voir [Modération 
 
 Pour baliser les entrées de blog et les commentaires, reportez-vous à la section [Balisage du contenu créé par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour la traduction des entrées de blog et des commentaires, voir [ Traduction de contenu créé par l’utilisateur ](/help/communities/translate-ugc.md).
+Pour la traduction des entrées de blog et des commentaires, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](/help/communities/translate-ugc.md).

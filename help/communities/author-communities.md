@@ -53,7 +53,7 @@ Consultez également le [guide interactif des composants de communauté](/help/c
 | Liste des membres de groupes de communautés | [Groupes communautaires](/help/communities/creating-groups.md) |
 | Composer le message | [Messagerie](/help/communities/configure-messaging.md) |
 | Contenu proposé | [Contenu en vedette](/help/communities/featured.md) |
-| Bibliothèque de fichiers | [ Bibliothèque de fichiers ](/help/communities/file-library.md) |
+| Bibliothèque de fichiers | [&#x200B; Bibliothèque de fichiers &#x200B;](/help/communities/file-library.md) |
 | S’abonner | [Graphique Social](/help/communities/socialgraph.md) |
 | Abonnement | [Graphique Social](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |

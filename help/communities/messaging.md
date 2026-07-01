@@ -31,7 +31,7 @@ Pour plus d’informations pour les développeurs, voir [Messaging Essentials](/
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-La configuration [Service des opérations de messagerie ](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point d&#39;entrée qui gère les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, les types de fichiers autorisés.
+La configuration [Service des opérations de messagerie &#x200B;](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point d&#39;entrée qui gère les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, les types de fichiers autorisés.
 
 Pour les sites de la communauté créés à l’aide de l’`Communities Sites console` , une instance du service existe, avec la boîte de réception définie sur `/mail/inbox`.
 
@@ -152,6 +152,6 @@ Pour permettre aux utilisateurs enregistrés d’envoyer des messages directs en
 
 Une façon de résoudre les problèmes est d’activer [débogage des messages dans le journal.](/help/sites-administering/troubleshooting.md)
 
-Voir aussi [ Enregistreurs et rédacteurs pour les services individuels](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+Voir aussi [&#x200B; Enregistreurs et rédacteurs pour les services individuels](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 Le package à surveiller est `com.adobe.cq.social.messaging`.
