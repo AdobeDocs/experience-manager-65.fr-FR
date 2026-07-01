@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: 2f56e44f62994170eb0a2c35272db7cd33eee3c2
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1909'
 ht-degree: 92%
 
 ---
@@ -37,6 +37,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
 | Sites | Prise en charge des fragments de contenu dans l’API REST AEM Assets | AEM 6.5 LTS SP2 fournit des API OpenAPI modernes pour la gestion des fragments de contenu et des modèles, de sorte que les anciens points d’entrée de la prise en charge des fragments de contenu dans l’API REST AEM Assets sont désormais obsolètes.<br>Adobe prévoit de conserver ces anciens points d’entrée disponibles jusqu’à une annonce de fin de vie. Adobe ne prévoit pas d’autres améliorations pour les points d’entrée obsolètes. | 6.5.24 |
+| Sites | Résumé textuel du fragment de contenu | Aucun remplacement n’est disponible. | |
 | Sites | [Éditeur SPA](/help/sites-developing/spa-editor-deprecation.md) | Pour les cas d’utilisation découplés, utilisez l’[éditeur universel](/help/sites-developing/universal-editor/introduction.md) pour la modification visuelle ou l’[éditeur de fragment de contenu](/help/sites-developing/universal-editor/introduction.md) pour la modification basée sur les formulaires. | 6.5.23 |
 | Sites | Le service **Configuration des interrogations gérées par Adobe AEM** : `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | Le service **Importateur Sling de rapports Adobe AEM Analytics**. Voir Connexion à Adobe Analytics et création de frameworks - [Configurer l’intervalle d’import](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ dans Adobe Experience Manager (AEM). ActiveMQ a été utilisé pour la communication entre deux instances de publication AEM. | Adobe recommande aux clientes et clients d’utiliser désormais un équilibreur de charge. | 6.5.18.0 |
