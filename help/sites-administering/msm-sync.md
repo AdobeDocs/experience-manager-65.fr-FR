@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 100%
+source-wordcount: '2681'
+ht-degree: 97%
 
 ---
 
-# Configuration de la synchronisation des Live Copies {#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies{#configuring-live-copy-synchronization}
 
 Effectuez les tâches suivantes pour contrôler le mode et le moment de synchronisation des Live Copy avec leur contenu source.
 
@@ -170,7 +170,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens.<br />Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
+   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références telles que les liens<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -229,8 +229,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>Crée ou met à jour les ressources produit dans un catalogue. Cette action est destinée à être utilisée dans l’une des situations suivantes :
-    <ul>
+   <td>Crée ou met à jour les ressources produit dans un catalogue. Cette action est destinée à être utilisée dans l’une des situations suivantes :<ul>
      <li>Générer ou déployer un catalogue (ou une section de catalogue)</li>
      <li>Un utilisateur ou une utilisatrice restaure l’héritage de synchronisation pour un composant de produit.</li>
     </ul> </td>
@@ -243,12 +242,12 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Exécute les hooks de déploiement spécifiques à la génération de catalogue. Appelle les méthodes executePageRolloutHooks et executeProductRolloutHooks de CatalogGenerator.<br />Consultez com.adobe.cq.commerce.pim.api.CatalogGenerator dans la documentation Javadocs d’AEM.</td>
+   <td>Exécute les hooks de déploiement spécifiques à la génération de catalogue. Appelle les méthodes executePageRolloutHooks et executeProductRolloutHooks de CatalogGenerator.<br /> Voir com.adobe.cq.commerce.pim.api.CatalogGenerator dans les Javadocs d’AEM.</td>
    <td> </td>
   </tr>
   <tr>
    <td>productUpdate</td>
-   <td>Met à jour les pages de produit dans une Live Copy d’un catalogue de produits.</td>
+   <td>Met à jour les pages produits dans une Live Copy d’un catalogue de produits.</td>
    <td> </td>
   </tr>
  </tbody>
@@ -366,7 +365,7 @@ La liste ci-après des emplacements où vous pouvez spécifier les configuration
 
 Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste suivante décrit un scénario différent concernant l’utilisation des configurations de déploiement :
 
-* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration de déploiement système par défaut pour toutes les pages Live Copy. 
+* Aucune des pages de plan directeur ou des pages Live Copy n’est configurée pour utiliser une configuration du déploiement. MSM utilise la configuration de déploiement système par défaut pour toutes les pages Live Copy.
 * La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement. MSM utilise ces configurations de déploiement pour toutes les pages Live Copy.
 * La page principale du site de référence We.Retail est configurée avec plusieurs configurations de déploiement et la page principale du site Live Copy est configurée avec un autre ensemble de configurations de déploiement. MSM utilise les configurations de déploiement configurées sur la page principale du site Live Copy.
 
@@ -411,7 +410,7 @@ Les pages enfants de la page de plan directeur héritent de la configuration. Lo
 Spécifiez une configuration du déploiement à utiliser comme valeur système par défaut. Pour spécifier la valeur par défaut, configurez le service OSGi :
 
 * **Day CQ WCM Live Relationship Manager**
-Le PID du service est `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+le PID du service est `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configurez le service à l’aide de la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d’un [nœud de référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
