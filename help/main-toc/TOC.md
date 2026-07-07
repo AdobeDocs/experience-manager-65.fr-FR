@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilisez la documentation d’Adobe Experience Manager 6.5 pour découvrir son fonctionnement et ce que le logiciel peut vous apporter.
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
-ht-degree: 96%
+source-wordcount: '8300'
+ht-degree: 95%
 
 ---
 
@@ -421,7 +421,7 @@ ht-degree: 96%
       + [Intégration de ressources avec le flux d’activités](/help/assets/extending-activity-stream.md)
       + [Extension de l’éditeur de ressources](/help/assets/asseteditorx.md)
       + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
-      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] &#x200B;](/help/assets/assets-api-content-fragments.md)
+      + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL pour les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -448,7 +448,7 @@ ht-degree: 96%
       + [[!DNL Assets] et MediaLibrary](/help/assets/medialibrary.md)
       + [Utilisation de PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configuration des restrictions de chargement](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Intégration à  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management dans Assets](/help/assets/drm.md)
       + [Utilisation du package de démonstration pour Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -1213,6 +1213,7 @@ ht-degree: 96%
       + [Traitement des documents même si le serveur AEM Forms n’est pas entièrement opérationnel](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossible d’utiliser les services de sortie, de formulaires ou de document d’enregistrement (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Atténuer les vulnérabilités de Struts 2 RCE pour Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Réduire la vulnérabilité du service web Apache Axis Document Security pour Experience Manager Forms sur JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [Échec de la sauvegarde de la base de données lors de la mise à niveau vers la version 6.5.12.0 pour MySQL.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La génération de PDF ne parvient pas à imprimer un grand nombre de PDF sur Workbench.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Redémarrage correct du SDK AEM](/help/forms/using/restart-aem-sdk.md)
@@ -1233,7 +1234,7 @@ ht-degree: 96%
       + [Génération et utilisation de hachages dans les PDF forms dynamiques](/help/forms/developing/hashing-forms.md)
       + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](/help/forms/developing/passing-credentials.md)
    + Glossaire {#aem-forms-glossary}
-      + {hide-from-toc}[Glossaires &#x200B;](/help/forms/using/aem-forms-glossary.md)
+      + {hide-from-toc}[Glossaires ](/help/forms/using/aem-forms-glossary.md)
 + IA dans AEM {#ai-in-aem}
    + [Vue d’ensemble](/help/ai-in-aem/overview.md)
    + Assistant IA {#ai-assistant}
