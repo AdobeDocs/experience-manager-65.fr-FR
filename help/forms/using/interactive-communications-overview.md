@@ -10,7 +10,7 @@ feature: Interactive Communication
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '499'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Les principales fonctionnalités des communications interactives sont indiquées
 - Graphiques de présentation des informations dans des formats visuels facilement compréhensibles sur papier et sur le Web.
 - Les fragments de document prennent en charge l’éditeur de règles et le modèle de données de formulaire.
 - L’interface utilisateur de l’agent affiche un aperçu web et un aperçu avant impression de la communication interactive.
-- Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
+- Glisser-déposer les composants pour construire rapidement les canaux d’impression et web
 
 ## Création de la communication interactive {#interactive-communication-creation}
 
@@ -55,7 +55,7 @@ Pour créer une communication interactive, préparez les [blocs de construction]
    1. [Graphiques](/help/forms/using/chart-component-interactive-communications.md)
    1. [Fragments de document](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
-1. Prévisualisez les canaux Web et d’impression et, si nécessaire, modifiez la communication interactive.
+1. Prévisualisez les canaux d’impression et web et, si nécessaire, modifiez la communication interactive.
 1. L’agent utilise l’interface utilisateur de l’agent pour [préparer la communication interactive](/help/forms/using/prepare-send-interactive-communication.md) en vue de son envoi au ou à la destinataire/en post-traitement.
 
 ### Blocs de création {#buildingblocks}
@@ -85,7 +85,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
    <td>Impression</td>
   </tr>
   <tr>
-   <td>Schema</td>
+   <td>Schéma</td>
    <td>Modèle de données de formulaire </td>
    <td>Dictionnaire de données </td>
   </tr>

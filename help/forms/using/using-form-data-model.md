@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1314'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -36,14 +36,14 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 * [Créer des formulaires adaptatifs et des fragments](#create-af)
 * [Créer des communications interactives et des blocs de construction, comme des fragments de texte, de liste et de condition](#create-ic)
-* [Prévisualiser des communications interactives avec exemples de données](#preview-ic)
+* [Prévisualiser des communications interactives avec données d’exemple](#preview-ic)
 * [Préremplir des formulaires adaptatifs et des communications interactives](#prefill)
 * [Écrire les données de formulaires adaptatifs envoyés dans les sources de données](#write-af)
 * [Appeler les services à l’aide des règles de formulaire adaptatif](#invoke-services)
 
 ## Créer des formulaires adaptatifs et des fragments {#create-af}
 
-Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) basés sur un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données du formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
+Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) basés sur un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -89,17 +89,17 @@ Pour en savoir plus, voir:
 
 [Fragments de liste](/help/forms/using/lists.md)
 
-## Aperçu avec des exemples de données {#preview-ic}
+## Aperçu avec des données d’exemple {#preview-ic}
 
-L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des données d’exemple pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données du formulaire](../../forms/using/work-with-form-data-model.md#sample).
+L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des données d’exemple pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Générez les données d’exemple avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](../../forms/using/work-with-form-data-model.md#sample).
 
 Pour prévisualiser une communication interactive avec des données d’exemple du modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
 1. Sélectionnez une communication interactive et sélectionnez **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
 1. Dans la boîte de dialogue Aperçu du [*canal*], assurez-vous d’avoir sélectionné **[!UICONTROL Tester les données du modèle de données de formulaire]** et sélectionnez **[!UICONTROL Aperçu]**.
 
-La communication interactive s’ouvre avec des exemples de données préremplies.
+La communication interactive s’ouvre avec des données d’exemple préremplies.
 
 ![web-preview](assets/web-preview.png)
 
@@ -107,7 +107,7 @@ De même, pour prévisualiser un formulaire adaptatif avec des données d’exem
 
 ## Préremplir à l’aide du service de modèle de données de formulaire {#prefill}
 
-AEM Forms fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs et les communications interactives en fonction d’un modèle de données de formulaire. Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif et la communication interactive et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
+AEM Forms fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs et les communications interactives en fonction d’un modèle de données de formulaire. Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif et la communication interactive, et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
 
 Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Service de préremplissage]** de l’accordéon De base. Ensuite, enregistrez les propriétés.
 
@@ -144,8 +144,8 @@ Vous pouvez également envoyer des pièces jointes de formulaire à une source d
 
 Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](../../forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. L’opération **[!UICONTROL Appeler des services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **Définir la valeur** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
-Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
+Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Genre correspondants du formulaire.
 
 ![invoke-service](assets/invoke-service.png)
 
-En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus de détails sur l’API, voir [API pour appeler le service de modèle de données](/help/forms/using/invoke-form-data-model-services.md).
+En outre, vous pouvez utiliser l’API `guidelib.dataIntegrationUtils.executeOperation` pour écrire un code JavaScript dans l’éditeur de code pour l’éditeur de règles. Pour plus de détails sur l’API, voir [API pour appeler le service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md).
