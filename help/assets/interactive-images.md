@@ -117,10 +117,10 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de zone réac
     <td><p>SKU unique, trouvé dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête productId =, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU de vos zones réactives doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -136,9 +136,9 @@ Consultez les exemples d’URL d’aperçu rapide et les variables de zone réac
     <td><p>SKU et ID de catégorie dans la chaîne de requête.</p> </td>
     <td><p>Les URL d’aperçu rapide enregistrées incluent ce qui suit :</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>Dans ce cas, l’URL comporte deux parties différentes. Le SKU est stocké dans le paramètre <code>prodId</code> et l’ID de catégorie<code></code> dans le paramètre <code>category=</code>.</p> <p>Les zones réactives sont définies sous la forme de paires. Autrement dit, une valeur de SKU et une variable supplémentaire appelée « <code>categoryId</code> ». Les paires obtenues sont les suivantes :</p>
     <ul>
       <li><p>Le SKU est <strong><code>305466</code></strong> et <code>categoryId</code> est <code>1100004</code>.</p> </li>
@@ -433,27 +433,27 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
  <tbody>
   <tr>
    <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU unique, trouvé dans le chemin d’accès à l’URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

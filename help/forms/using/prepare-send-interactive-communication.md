@@ -47,7 +47,7 @@ Tout en préparant la communication interactive à l’aide de l’interface uti
 
 ### Saisir des données {#enter-data}
 
-1. Dans l’onglet Données, saisissez les données des variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (&amp;ast;) pour activer le bouton **Envoyer**.
+1. Dans l’onglet Données, saisissez les données des variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (&ast;) pour activer le bouton **Envoyer**.
 
    Sélectionnez une valeur de champ de données dans l’aperçu de la communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données et vice versa.
 
@@ -146,7 +146,7 @@ L’interface utilisateur de l’agent ou de l’agente offre une prise en charg
 
 ### Fragments de document {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Flèches haut/bas** : flèches permettant de déplacer les fragments de document vers le haut ou vers le bas dans la communication interactive.
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
