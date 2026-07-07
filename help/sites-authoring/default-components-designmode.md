@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Pour les installations prêtes à l’emploi de l’instance d’AEM, une sélection de composants est immédiatement disponible dans l’explorateur de composants.
 
-D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enable-disable-components). Une fois ces composants activés et situés sur votre page, utilisez le mode de conception pour [configurer différents aspects de la conception](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
+En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [&#x200B; activer/désactiver ces composants &#x200B;](#enable-disable-components). Une fois activé et situé sur votre page, vous pouvez utiliser le mode de conception pour [configurer différents aspects de la conception du composant](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >

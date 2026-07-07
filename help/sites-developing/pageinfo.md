@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 100%
+source-wordcount: '952'
+ht-degree: 99%
 
 ---
 
@@ -479,7 +479,7 @@ Configurez le service Fournisseur d’informations sur le package de workflow de
 
 L’ID du service est `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Pour créer un filtre, indiquez une valeur pour une propriété `workflowpackageinfoprovider.filter`.
 
-Les valeurs de propriété comportent le caractère + ou - , suivi du chemin d’accès au package :
+Les valeurs de propriété sont précédées du caractère + ou - , suivi du chemin d’accès au package :
 
 * Le chemin d’accès est le chemin du nœud racine du package de workflow. Le chemin d’accès utilise la syntaxe FileVault.
 * Pour inclure un package, utilisez le préfixe +.
@@ -498,7 +498,7 @@ Le service applique le résultat cumulé de tous les filtres. Par exemple, les v
 
 Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
-1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Dans le dossier de configuration de votre application, créez un nœud :
 
    * Nom : `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -516,7 +516,7 @@ Pour configurer le service dans la source de votre projet :
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source de votre projet.
 
-   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
+   Par exemple, si vous avez utilisé l’archétype multimodule du plug-in de module de contenu Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Copiez le texte suivant dans le fichier :
 
