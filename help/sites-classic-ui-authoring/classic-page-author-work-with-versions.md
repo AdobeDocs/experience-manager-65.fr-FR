@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 100%
+source-wordcount: '1342'
+ht-degree: 96%
 
 ---
 
@@ -35,9 +35,9 @@ Pour créer une version d’une page :
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
-1. Pour définir un libellé pour la version (facultatif), cliquez sur le bouton **Plus >>** et définissez le **Libellé** pour attribuer un nom à la version. Si le libellé n’est pas défini, la version se voit attribuer un numéro automatiquement incrémenté.
-1. Cliquez sur **Créer la version**. Un message grisé apparaît sur la page, indiquant par exemple :
-Version 1.2 créée pour : Chemises.
+1. Pour définir un libellé pour la version (facultatif), cliquez sur le bouton **Plus >>** et définissez le **Libellé** pour nommer la version. Si le libellé n’est pas défini, la version se voit attribuer un nombre automatiquement incrémenté.
+1. Cliquez sur **Créer la version**. Un message grisé s’affiche sur la page, par exemple :
+Version 1.2 créée pour : Chemises.
 
 >[!NOTE]
 >
@@ -169,9 +169,7 @@ Si vous souhaitez afficher la frise chronologique du document :
 
 1. Pour naviguer dans la frise chronologique du document, procédez par glisser-déplacer.
 
-   * Toutes les lignes indiquent les versions publiées.
-Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.
-Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale. La ligne jaune indique que la page a été modifiée pendant la version rouge, etc.
+   * Toutes les lignes indiquent les versions publiées.Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale. La ligne jaune indique que la page a été modifiée pendant la version rouge, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

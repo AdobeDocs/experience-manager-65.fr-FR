@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
-workflow-type: ht
-source-wordcount: '931'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 89%
 
 ---
 
@@ -101,7 +101,7 @@ Cet onglet répertorie tous les produits. Après avoir créé un paragraphe appr
 
 ### Trouver des pages {#finding-pages}
 
-Cet onglet présente toutes les pages. Double-cliquez sur une page pour l’ouvrir à des fins d’édition.
+Cet onglet affiche toutes les pages. Double-cliquez sur une page pour l’ouvrir afin de la modifier.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -181,7 +181,7 @@ D’autres [relations interpages sont visibles dans la console Sites web](/help/
 
 ## Journal d’audit {#audit-log}
 
-Le **journal d’audit** est accessible depuis l’onglet **Informations** du sidekick. Il répertorie les actions récentes ayant eu lieu sur la page active ; par exemple :
+Le **Journal d’audit** est accessible à partir de l’onglet **Informations** du sidekick. Il répertorie les actions récentes ayant eu lieu sur la page active ; par exemple :
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -198,10 +198,10 @@ Lors de la modification d’une page dans l’IU classique, plusieurs modes sont
 La rangée d’icônes située au bas du sidekick permet de changer de mode pour le traitement des pages :
 
 * [Modifier](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Il s’agit du mode par défaut qui vous permet de modifier la page, d’ajouter ou de supprimer des composants et de réaliser d’autres changements.
+Il s’agit du mode par défaut qui vous permet de modifier la page, d’ajouter ou de supprimer des composants et d’apporter d’autres modifications.
 
 * [Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-Ce mode permet d’afficher un aperçu de la page comme si elle apparaissait sur votre site web sous sa forme définitive.
+Ce mode permet de prévisualiser la page comme si elle apparaissait sur votre site web sous sa forme définitive.
 
 * [Conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 Dans ce mode, vous avez la possibilité de modifier la conception de la page en configurant les composants accessibles.

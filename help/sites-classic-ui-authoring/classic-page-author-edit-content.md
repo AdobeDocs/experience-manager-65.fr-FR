@@ -12,7 +12,7 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1843'
 ht-degree: 100%
 
 ---
@@ -202,7 +202,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 ## Ajouter des annotations {#adding-annotations}
 
-Les [annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent à d’autres auteurs et autrices de réagir sur votre contenu. Elles sont principalement destinées à la révision et à la validation.
+Les [annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent à d’autres personnes de laisser des commentaires sur votre contenu. Elles sont principalement destinées à la révision et à la validation.
 
 ## Aperçu des pages {#previewing-pages}
 
