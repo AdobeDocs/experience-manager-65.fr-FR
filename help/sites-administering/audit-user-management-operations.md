@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Par défaut, les entrées sont écrites dans le fichier `error.log`. Pour facili
 
 Pour rediriger la sortie de la journalisation vers un fichier journal distinct, vous devez créer une configuration **Enregistreur de journalisation Apach Sling**. Dans l’exemple ci-dessous, nous utilisons `useraudit.log` comme nom de fichier distinct.
 
-1. Accédez à la console Web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web en vous rendant sur *:serverport/system/console/configMgr*
 1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur le « + » à droite de l’entrée pour créer une configuration d’usine.
 1. Créez la configuration suivante :
 

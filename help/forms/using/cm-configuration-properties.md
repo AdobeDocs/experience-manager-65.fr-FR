@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 94%
 
 ---
 
@@ -152,13 +152,13 @@ Correspondence Management possède les propriétés de configuration suivantes 
   <tr>
    <td><p>Formats d’affichage des données</p> </td>
    <td><p>Spécifie le format d’affichage des données spécifique des paramètres régionaux.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator= ; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Format de modification des données</p> </td>
    <td><p>Format de modification des données. Cette propriété est utilisée lors de l’écriture de données en tant que chaîne ou de l’analyse des données à partir d’une chaîne.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=fr_FR ; dateFormat=dd-MM-yyyy ; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
    <td>--<p> </p> </td>
   </tr>
   <tr>
@@ -270,7 +270,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Dossier temp </td>
+   <td>Dossier temp</td>
    <td>Emplacement du dossier temporaire.</td>
    <td>acm.tpmFolder</td>
    <td> </td>
