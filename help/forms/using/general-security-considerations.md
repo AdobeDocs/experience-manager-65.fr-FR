@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1135'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Suivez les liens de cette section pour trouver des informations de sécurité sp
 Lorsque vous sécurisez votre système d’exploitation, veillez à implémenter soigneusement les mesures indiquées par le revendeur de votre système d’exploitation, parmi lesquelles :
 
 * Définir et contrôler les utilisateurs et utilisatrices, les rôles et les privilèges
-* Surveiller les journaux et les journaux d’audit
+* Surveiller les logs et les journaux d’audit
 * Supprimer les services et applications inutiles
 * Sauvegarder des fichiers
 

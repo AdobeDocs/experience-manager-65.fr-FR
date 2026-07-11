@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2975'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Utilisez la synchronisation de contenu pour compresser le contenu afin qu’il puisse être utilisé dans les applications mobiles natives. Les pages créées dans Adobe Experience Manager (AEM) peuvent être utilisées comme contenu d’application, même lorsque l’appareil est hors ligne. En outre, comme les pages AEM sont basées sur des normes web, elles fonctionnent sur plusieurs plateformes, ce qui vous permet de les incorporer dans n’importe quel wrapper natif. Cette stratégie réduit les efforts de développement et vous permet de mettre facilement à jour le contenu de l’application.
 
-La structure de synchronisation du contenu crée un fichier d’archive contenant le contenu web. Le contenu peut être constitué de pages simples, d’images, de fichiers de PDF ou d’applications web complètes. L’API de synchronisation du contenu permet d’accéder au fichier d’archive à partir d’applications mobiles ou de processus de création afin que le contenu puisse être récupéré et inclus dans l’application.
+La structure de synchronisation du contenu crée un fichier d’archive contenant le contenu web. Le contenu peut être constitué de pages simples, d’images, de fichiers PDF ou d’applications web complètes. L’API de synchronisation du contenu permet d’accéder au fichier d’archive à partir d’applications mobiles ou de processus de création afin que le contenu puisse être récupéré et inclus dans l’application.
 
 La séquence d’étapes suivante illustre un cas d’utilisation type de la synchronisation de contenu :
 
-1. Le développeur AEM crée une configuration de synchronisation du contenu qui spécifie le contenu à inclure.
+1. Le développeur d’AEM crée une configuration de synchronisation du contenu qui spécifie le contenu à inclure.
 1. Le framework de synchronisation du contenu collecte et met en cache le contenu.
 1. Sur un appareil mobile, l’application mobile est démarrée et demande le contenu au serveur, qui le diffuse dans un fichier ZIP.
 1. Le client décompresse le contenu ZIP dans le système de fichiers local. La structure de dossiers dans le fichier ZIP simule les chemins d’accès qu’un client (par exemple, un navigateur) demande normalement au serveur.
@@ -39,7 +39,7 @@ Voici quelques instructions pour développer des gestionnaires de synchronisatio
 
 * Les gestionnaires doivent mettre en œuvre *com.day.cq.contentsync.handler.ContentUpdateHandler* (directement ou en étendant une classe qui le fait)
 * Les gestionnaires peuvent étendre *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Le gestionnaire ne doit renvoyer la valeur true que s’il met à jour le cache ContentSync. Si la déclaration est fausse, AEM crée une mise à jour alors qu’aucune mise à jour ne s’est réellement produite.
+* Le gestionnaire ne doit renvoyer la valeur true que s’il met à jour le cache ContentSync. Lorsque la valeur true est signalée faussement, AEM crée une mise à jour alors qu’aucune mise à jour ne s’est réellement produite.
 * Le gestionnaire ne doit mettre à jour le cache que si le contenu a été modifié. N’écrivez pas dans le cache si un blanc n’est pas nécessaire. Cela entraîne la création d’une mise à jour inutile.
 
 >[!NOTE]
@@ -140,7 +140,7 @@ Collectez les rendus originaux des ressources.
 
 Le type d’image est utilisé pour inclure le logo We Retail dans le fichier zip.
 
-**pages** - Effectuez le rendu des pages AEM et collectez les ressources référencées.
+**pages** : effectuez le rendu des pages AEM et collectez les ressources référencées.
 
 * **path** - Chemin d’accès à une page.
 * **extension** - Extension qui doit être utilisée dans la requête. Pour les pages, cette fonctionnalité est presque toujours *html*, mais d’autres sont toujours possibles.
@@ -214,7 +214,7 @@ La liste ci-dessous présente un exemple de configuration de la synchronisation 
 
 **etc.designs.default et etc.designs.mobile** - Les deux premières entrées de la configuration sont évidentes. Comme vous allez inclure plusieurs pages mobiles, vous avez besoin des fichiers de conception associés sous /etc/designs. Et puisqu’aucun traitement supplémentaire n’est requis, la copie est suffisante.
 
-**events.plist** - Cette entrée est un peu spéciale. Comme mentionné en introduction, l’application doit fournir une vue cartographique avec des marqueurs des lieux des événements. Les renseignements nécessaires sur l&#39;emplacement seront fournis dans un fichier distinct au format PLIST. Pour que cela fonctionne, le composant Liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l’extension `.plist`. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content , car vous souhaitez utiliser le traitement des requêtes [&#x200B; Sling &#x200B;](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Cette entrée est un peu spéciale. Comme mentionné en introduction, l’application doit fournir une vue cartographique avec des marqueurs des lieux des événements. Les renseignements nécessaires sur l&#39;emplacement seront fournis dans un fichier distinct au format PLIST. Pour que cela fonctionne, le composant Liste d’événements utilisé sur la page d’index comporte un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l’extension `.plist`. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content , car vous souhaitez utiliser le traitement des requêtes [ Sling ](/help/sites-developing/the-basics.md#sling-request-processing).
 
 **events.touch.html** - Viennent ensuite les pages proprement dites qui s’affichent dans l’application. La propriété de chemin est définie sur la page racine des événements. Toutes les pages d’événement situées sous cette page seront également incluses, car la propriété deep est définie par défaut sur true. Vous utilisez les pages comme type de configuration. Ainsi, toutes les images ou autres fichiers pouvant être référencés à partir d’un composant d’image ou de téléchargement sur une page sont inclus. En outre, la définition du sélecteur tactile nous donne une version mobile des pages. La configuration du pack de fonctionnalités contient d’autres entrées de ce type, mais elles sont laissées de côté pour des raisons de simplicité.
 
@@ -282,7 +282,7 @@ Notez que la définition *factory* contient l&#39;interface commune et le type p
 
 ### Mise en œuvre d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
 
-Chaque page We.Retail Mobile contient un logo dans le coin supérieur gauche qui doit être inclus dans le fichier zip. Toutefois, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement le type de configuration **copy**. Vous devez plutôt fournir votre propre type de configuration **logo** qui rend l’image disponible à l’emplacement demandé par AEM. La liste de codes suivante montre l’implémentation complète du gestionnaire de mise à jour du logo :
+Chaque page We.Retail Mobile contient un logo dans le coin supérieur gauche qui doit être inclus dans le fichier zip. Cependant, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement le type de configuration **copy**. Vous devez plutôt fournir votre propre type de configuration **logo** qui rend l’image disponible à l’emplacement demandé par AEM. La liste de codes suivante montre l’implémentation complète du gestionnaire de mise à jour du logo :
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

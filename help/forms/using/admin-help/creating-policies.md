@@ -10,9 +10,9 @@ exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '4725'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '4769'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Une *politique* définit un jeu de paramètres de confidentialité et les utilisateurs et utilisatrices habilités à accéder au document auquel la politique est appliquée. Les *jeux de politiques* regroupent plusieurs politiques ayant une finalité métier commune. Ces jeux de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et d’utilisatrices du système. Pour plus d’informations sur les politiques, voir [Politiques et documents protégés par une politique](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Une *politique* définit un jeu de paramètres de confidentialité et les utilisateurs et utilisatrices habilités à accéder au document auquel la politique est appliquée. Les *ensembles de politiques* regroupent plusieurs politiques ayant une finalité métier commune. Ces ensembles de politiques sont ensuite rendus accessibles à un sous-ensemble d’utilisateurs et utilisatrices du système. Pour plus d’informations sur les politiques, voir [Politiques et documents protégés par une politique](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Types de politiques {#types-of-policies}
 
@@ -36,9 +36,9 @@ Les utilisateurs et utilisatrices invités peuvent également créer, copier et 
 
 **Politiques partagées**
 
-Les équipes d’administration et de coordination des jeux de politiques créent des politiques partagées en fonction des exigences de confidentialité que votre organisation identifie pour différents types de documents et d’utilisateurs et utilisatrices. Les politiques partagées sont contenues dans des jeux de politiques et sont disponibles pour tous les utilisateurs et utilisatrices autorisés (équipes d’édition, de coordination de jeux de politiques et destinataires de documents) pour un jeu de politiques particulier. Les équipes d’administration et de coordination de jeux de politiques peuvent activer et désactiver des politiques partagées. Les politiques partagées apparaissent dans les jeux de politiques, sous l’onglet Jeux de politiques de la page Politiques.
+Les équipes d’administration et de coordination des ensembles de politiques créent des politiques partagées en fonction des exigences de confidentialité que votre organisation identifie pour différents types de documents et d’utilisateurs et utilisatrices. Les politiques partagées sont contenues dans des ensembles de politiques et sont disponibles pour tous les utilisateurs et utilisatrices autorisés (équipes d’édition, de coordination d’ensembles de politiques et destinataires de documents) pour un ensemble de politiques particulier. Les équipes d’administration et de coordination d’ensembles de politiques peuvent activer et désactiver des politiques partagées. Les politiques partagées apparaissent dans les ensembles de politiques, sous l’onglet Ensembles de politiques de la page Politiques.
 
-Lors de sa première installation, Document Security contient une politique partagée nommée *Limiter à toutes les entités*. Lorsque cette politique est appliquée à un document, un utilisateur ou une utilisatrice qui peut se connecter à Document Security peut accéder au document. Cette politique figure dans le jeu de politiques nommé *Jeu de politiques global*. Par défaut, cette politique n’est pas activée. Vous pouvez l’activer si elle correspond aux besoins de votre organisation.
+Lors de sa première installation, Document Security contient une politique partagée nommée *Limiter à toutes les entités*. Lorsque cette politique est appliquée à un document, un utilisateur ou une utilisatrice qui peut se connecter à Document Security peut accéder au document. Cette politique figure dans l’ensemble de politiques nommé *Ensemble de politiques global*. Par défaut, cette politique n’est pas activée. Vous pouvez l’activer si elle correspond aux besoins de votre organisation.
 
 **Politiques générées automatiquement par Microsoft® Outlook**
 
@@ -48,21 +48,21 @@ Acrobat vous permet d’appliquer des politiques aux documents que vous envoyez 
 >
 >Pour qu’une politique soit disponible dans Outlook, vous devez la définir comme favori dans Acrobat. Toutes les autres politiques, y compris celles pour lesquelles vous êtes Éditeur, ne s’affichent pas dans Outlook.
 
-## Personnes habilitées à créer et à gérer des politiques et des jeux de politiques {#who-can-create-and-manage-policies-and-policy-sets}
+## Personnes habilitées à créer et à gérer des politiques et des ensembles de politiques {#who-can-create-and-manage-policies-and-policy-sets}
 
-La manière dont vous interagissez avec les politiques et les jeux de politiques dépend de votre rôle au sein de l’organisation :
+La manière dont vous interagissez avec les politiques et les ensembles de politiques dépend de votre rôle au sein de l’organisation :
 
 **Utilisateurs :** les utilisateurs peuvent créer, modifier et supprimer leurs politiques personnelles. Les utilisateurs invités peuvent également créer des politiques personnelles si l’administrateur active cette fonctionnalité.
 
-**Coordinateurs de jeux de politiques :** les coordinateurs de jeux de politiques peuvent créer et gérer les politiques partagées figurant dans les jeux de politiques pour lesquels ils ont été désignés en tant que coordinateur. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des politiques dans un jeu donné.
+**Coordinateurs et coordinatrices d’ensembles de politiques :** les coordinateurs et coordinatrices d’ensembles de politiques peuvent créer et gérer les politiques partagées figurant dans les ensembles de politiques dont la coordination leur a été confiée. Au sein de l’organisation, c’est généralement la personne la plus à même de créer des politiques dans un ensemble donné.
 
-**Administrateurs et administratrices :** les équipes d’administration peuvent modifier les politiques personnelles de n’importe quel utilisateur ou n’importe quelle utilisatrice. Elles peuvent créer des politiques partagées. Elles peuvent également créer, modifier et supprimer des jeux de politiques, et désigner des coordinateurs et coordinatrices de jeux de politiques.
+**Administrateurs et administratrices :** les équipes d’administration peuvent modifier les politiques personnelles de n’importe quel utilisateur ou n’importe quelle utilisatrice. Elles peuvent créer des politiques partagées. Elles peuvent également créer, modifier et supprimer des ensembles de politiques, et désigner des coordinateurs et coordinatrices d’ensembles de politiques.
 
 Pour plus d’informations sur les différents rôles de Document Security, consultez la section [À propos des utilisateurs de Document Security](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
 ## Créer et modifier des politiques {#creating-and-editing-policies}
 
-Les utilisateurs et utilisatrices peuvent créer ou modifier des politiques personnelles pour leur propre usage. Les équipes d’administration et de coordination de jeux de politiques peuvent créer ou modifier des politiques partagées pour votre organisation.
+Les utilisateurs et utilisatrices peuvent créer ou modifier des politiques personnelles pour leur propre usage. Les équipes d’administration et de coordination d’ensembles de politiques peuvent créer ou modifier des politiques partagées pour votre organisation.
 
 ### Considérations relatives à la modification des politiques {#considerations-for-editing-policies}
 
@@ -80,7 +80,7 @@ Le statut du document détermine le moment où la modification prend effet :
 Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 
 * Les personnes invitées ne peuvent modifier des politiques que si l’administrateur ou l’administratrice active cette fonctionnalité. Si vous ne pouvez pas modifier de politiques, l’option Modifier n’est pas disponible.
-* Les coordinateurs et coordinatrices de jeux de politiques ne peuvent modifier les politiques des jeux de politiques que s’ils disposent des autorisations appropriées. Ces autorisations sont définies par le super-utilisateur ou la super-utilisatrice ou l’administrateur ou administratrice de jeux de politiques dans l’interface d’administration de Document Security.
+* Pour modifier des politiques à l’intérieur d’ensembles de politiques, les coordinateurs et coordinatrices doivent disposer des autorisations appropriées. Ces autorisations sont définies par le super-utilisateur ou la super-utilisatrice ou l’administrateur ou administratrice d’ensembles de politiques dans l’interface d’administration de Document Security.
 * Si un filigrane est configuré pour la politique et que l’administrateur ou l’administratrice l’a supprimé depuis la création de la politique, ce filigrane ne sera plus appliqué aux documents si vous modifiez et enregistrez la politique. Les filigranes supprimés restent en vigueur uniquement pour les politiques existantes tant que vous ne modifiez pas la politique. Si vous modifiez la politique, vous devez sélectionner un autre filigrane pour remplacer celui qui a été supprimé.
 * Vous ne pouvez pas accorder l’accès anonyme à un document en modifiant la politique appliquée. Si vous modifiez la politique, les utilisateurs et utilisatrices doivent toujours ouvrir une session pour accéder au document. Pour autoriser un accès anonyme à ce document, vous devez commencer par supprimer la politique dans l’application cliente, puis appliquer une autre politique autorisant l’accès anonyme.
 * Les politiques générées automatiquement par Adobe pour les destinataires d’un document joint à un e-mail dans Microsoft Outlook n’apparaissent pas dans la liste des politiques. Pour accéder à cette politique, recherchez le document dans la page Documents, ouvrez la page Détails du document et cliquez sur le nom de la politique dans la liste des détails du document.
@@ -90,10 +90,10 @@ Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 1. Dans la page Document Security, cliquez sur Politiques puis sur l’un des onglets suivants :
 
    * Pour créer ou modifier une politique personnelle, cliquez sur l’onglet Ma politique.
-   * Pour créer ou modifier une politique partagée, cliquez sur l’onglet Jeux de politiques si vous en avez l’autorisation, puis sur le nom du jeu de politiques approprié, et enfin sur l’onglet Politiques.
+   * Pour créer ou modifier une politique partagée, cliquez sur l’onglet Ensembles de politiques si vous en avez l’autorisation, puis sur le nom de l’ensemble de politiques approprié, et enfin sur l’onglet Politiques.
 
 1. Cliquez sur Nouveau ou sélectionnez la politique à modifier dans la liste.
-1. Dans la zone Nom, saisissez un nom qui identifie de manière unique la politique. Dans la zone Description, décrivez le rôle de la politique et ses conditions d’utilisation. Si la politique se trouve dans un jeu de politiques, le nom et la description s’affichent dans la liste des politiques pour tous les les utilisateurs et utilisatrices spécifiés. Les politiques personnelles sont disponibles uniquement pour les utilisateurs et utilisatrices et les administrateurs et administratrices.
+1. Dans la zone Nom, saisissez un nom qui identifie de manière unique la politique. Dans la zone Description, décrivez le rôle de la politique et ses conditions d’utilisation. Si la politique se trouve dans un ensemble de politiques, le nom et la description s’affichent dans la liste des politiques pour toutes les personnes spécifiées. Les politiques personnelles sont disponibles uniquement pour les utilisateurs et utilisatrices et les administrateurs et administratrices.
 
    Les caractères suivants ne peuvent pas être utilisés dans le nom ou la description :
 
@@ -126,7 +126,7 @@ Lorsque vous modifiez des politiques, ces restrictions s’appliquent :
 
    Pour mettre la politique à la disposition des utilisateurs et des utilisatrices, activez-la. (Voir [Activation ou désactivation de politiques partagées](creating-policies.md#enable-or-disable-shared-policies).)
 
-### Utilisateurs et groupes  {#users-and-groups}
+### Utilisateurs et groupes {#users-and-groups}
 
 Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utilisateurs et utilisatrices ayant accès aux documents protégés par la politique. Pour chaque utilisateur ou utilisatrice ou groupe que vous spécifiez, vous définissez également les privilèges d’utilisation du document.
 
@@ -150,7 +150,7 @@ Dans la zone Utilisateurs et utilisatrices et groupes, vous spécifiez les utili
 
 Après leur enregistrement, les personnes invitées peuvent utiliser les documents protégés par une politique pour lesquels elles disposent d’une autorisation. Selon les fonctionnalités activées par l’administrateur ou l’administratrice, les utilisateurs et utilisatrices externes peuvent être autorisés à appliquer des politiques à des documents, à créer, à modifier et à supprimer des politiques et à ajouter d’autres utilisateurs et utilisatrices externes aux politiques.
 
-**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security (Voir Configuration de Document Security Server.) Cette option permet à l’ensemble des utilisateurs et des utilisatrices d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
+**Ajouter un utilisateur anonyme :** pour autoriser l’accès d’un utilisateur anonyme, cliquez sur Ajouter un utilisateur anonyme. Cette option n’est disponible que si l’administrateur a activé l’accès Utilisateur anonyme à Document Security Voir Configuration du serveur Document Security. Cette option permet à tous les utilisateurs d’accéder aux documents protégés par cette politique, qu’ils disposent ou non d’un compte Document Security. Si vous sélectionnez cette option, vous ne pouvez pas ajouter d’autres types d’utilisateurs et d’utilisatrices à la politique.
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 **Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements utilisateur associés à diverses opérations effectuées sur un fichier PDF. Vous pouvez accéder à l’objet Document Security à l’aide d’un script Java. Le fait de cliquer sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être envoyés par un fichier PDF protégé par une politique. À l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur ou l’utilisatrice. Le suivi des événements peut être activé sur le serveur Document Security au niveau global ou au niveau de la politique.
 
-**Période d’ouverture hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une politique hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période d’ouverture, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période de bail hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une politique hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période de bail, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 ### Fournisseurs d’autorisations externes {#external-authorization-providers}
 
@@ -296,7 +296,7 @@ La zone Paramètres avancés non modifiables contient les paramètres suivants 
 
 ## Activation ou désactivation de politiques partagées {#enable-or-disable-shared-policies}
 
-Pour qu’une politique partagée soit disponible, l’administrateur ou l’administratrice, ou le coordinateur ou la coordinatrice de jeux de politiques doit l’activer. Vous pouvez activer de nouvelles politiques ou des politiques qui ont été désactivées. Une politique partagée que vous désactivez s’applique toujours aux documents qui sont protégés par celle-ci.
+Pour qu’une politique partagée soit disponible, l’administrateur ou l’administratrice, ou le coordinateur ou la coordinatrice d’ensembles de politiques doit l’activer. Vous pouvez activer de nouvelles politiques ou des politiques qui ont été désactivées. Une politique partagée que vous désactivez s’applique toujours aux documents qui sont protégés par celle-ci.
 
 Une croix (X) rouge apparaît en regard d’une politique désactivée.
 
@@ -304,21 +304,21 @@ Une croix (X) rouge apparaît en regard d’une politique désactivée.
 >
 >Les administrateurs et les administratrices ne peuvent pas désactiver les politiques personnelles, et les utilisateurs et utilisatrices ne peuvent pas activer ni désactiver leurs propres politiques.
 
-1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Jeux de politiques.
-1. Cliquez sur le nom du jeu de politiques approprié, puis sur l’onglet Politiques.
+1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Ensembles de politiques.
+1. Cliquez sur le nom de l’ensemble de politiques approprié, puis sur l’onglet Politiques.
 1. Cochez la case située en regard de la politique appropriée, cliquez sur Activer ou sur Désactiver, puis sur OK.
 
 ## Affichage des informations sur une politique {#view-information-about-a-policy}
 
 L’onglet Mes politiques vous permet de rechercher des politiques personnelles.
 
-Les jeux de politiques créés par les administrateurs et les administratrices sont répertoriés dans l’onglet Jeux de politiques de la page Politiques. Ils contiennent des informations sur le jeu de politiques, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un jeu de politiques pour en afficher les détails. Les coordinateurs et les coordinatrices de jeux de politiques autorisés à gérer les politiques peuvent créer des politiques partagées au sein d’un jeu de politiques spécifique.
+Les ensembles de politiques créés par les administrateurs et les administratrices sont répertoriés dans l’onglet Ensembles de politiques de la page Politiques. Ils contiennent des informations sur l’ensemble de politiques, notamment son nom, la date de création et de modification, ainsi qu’une description. Cliquez sur le nom d’un ensemble de politiques pour en afficher les détails. Les coordinateurs et les coordinatrices d’ensembles de politiques autorisés à gérer les politiques peuvent créer des politiques partagées au sein d’un ensemble de politiques spécifique.
 
 Lorsque vous créez ou modifiez une politique, une page apparaît dans laquelle vous pouvez configurer le nom de la politique, les autorisations, les paramètres de confidentialité et les destinataires à inclure dans la politique.
 
 L’administrateur ou l’administratrice peut configurer les paramètres de confidentialité suivants pour une politique :
 
-* les options de confidentialité générales, comme la période de validité et la période d’ouverture hors connexion des documents ;
+* les options de confidentialité générales, comme la période de validité et la période de bail hors ligne des documents ;
 * les utilisateurs et les utilisatrices autorisés, ainsi que les restrictions et privilèges de document pour ces utilisateurs et utilisatrices ;
 * les options de confidentialité avancées, notamment les filigranes dynamiques et le chiffrement de document.
 
@@ -339,7 +339,7 @@ Vous pouvez afficher d’autres informations plus détaillées sur une politique
 
 Les administrateurs et les administratrices peuvent rechercher des politiques partagées, ainsi que des politiques personnelles créées par d’autres utilisateurs ou utilisatrices.
 
-1. Pour rechercher une politique partagée, cliquez sur Politiques, puis sur l’onglet Jeux de politiques. Cliquez sur un jeu de politiques dans la liste, puis sur l’onglet Politiques.
+1. Pour rechercher une politique partagée, cliquez sur Politiques, puis sur l’onglet Ensembles de politiques. Cliquez sur un ensemble de politiques dans la liste, puis sur l’onglet Politiques.
 
    Pour rechercher une politique personnelle, dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Mes politiques.
 
@@ -387,13 +387,13 @@ Les utilisateurs et utilisatrices externes ne peuvent copier des politiques que 
 
 ## Suppression d’une politique {#delete-a-policy}
 
-Vous pouvez supprimer les politiques que vous avez créées. Les administrateurs et administratrices peuvent supprimer les politiques créées par n’importe quelle personne. Les coordinateurs et coordinatrices de jeux de politiques peuvent supprimer des politiques dans leurs jeux de politiques. Une politique que vous supprimez continue à s’appliquer aux documents protégés par celle-ci. Vous pouvez supprimer plusieurs politiques à la fois.
+Vous pouvez supprimer les politiques que vous avez créées. Les administrateurs et administratrices peuvent supprimer les politiques créées par n’importe quelle personne. Les coordinateurs et coordinatrices d’ensembles de politiques peuvent supprimer des politiques dans leurs ensembles de politiques. Une politique que vous supprimez continue à s’appliquer aux documents protégés par celle-ci. Vous pouvez supprimer plusieurs politiques à la fois.
 
 Les personnes invitées ne peuvent supprimer des politiques que si l’administrateur ou l’administratrice active cette fonctionnalité. Si vous ne pouvez pas supprimer de politiques, l’option de suppression n’est pas disponible.
 
 1. Dans la page Document Security, cliquez sur Politiques.
 1. Cliquez sur l’onglet Ma politique.
-1. Pour supprimer une politique partagée, cliquez sur l’onglet Jeux de politiques, puis sur le nom du jeu de politiques approprié.
+1. Pour supprimer une politique partagée, cliquez sur l’onglet Ensembles de politiques, puis sur le nom de l’ensemble de politiques approprié.
 1. Cochez la case située en regard de l’utilisateur ou de l’utilisatrice, cliquez sur Supprimer, puis sur OK.
 
 >[!NOTE]
@@ -404,7 +404,7 @@ Les personnes invitées ne peuvent supprimer des politiques que si l’administr
 
 Pour faciliter la recherche de politiques, vous pouvez en trier la liste par en-tête de colonne. Une icône en forme de triangle située en regard de l’en-tête de colonne indique la colonne triée. Lorsque le triangle est dirigé vers le haut, l’ordre de tri est croissant et lorsqu’il est dirigé vers le bas, l’ordre de tri est décroissant.
 
-1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Jeu de politiques.
-1. Sélectionnez un jeu de politiques, puis cliquez sur l’onglet Politiques.
+1. Dans la page Document Security, cliquez sur Politiques, puis sur l’onglet Ensemble de politiques.
+1. Sélectionnez un ensemble de politiques, puis cliquez sur l’onglet Politiques.
 1. Cliquez sur l’en-tête de colonne approprié.
 1. Pour modifier l’ordre de tri, cliquez de nouveau sur la colonne.
