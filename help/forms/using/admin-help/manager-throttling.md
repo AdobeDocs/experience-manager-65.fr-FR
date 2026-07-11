@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1042'
+workflow-type: tm+mt
+source-wordcount: '1053'
 ht-degree: 100%
 
 ---
@@ -90,7 +90,7 @@ Vous pouvez configurer le ralentissement pour Work Manager, afin que les tâche
 **Ajouter des options Java à WebLogic**
 
 1. Démarrez la console d’administration WebLogic en saisissant `https://[host name]:[port]/console` dans un navigateur web.
-1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, sélectionnez Se connecter sous Centre des modifications, puis Verrouiller et modifier.
+1. Tapez le nom d’utilisateur et le mot de passe que vous avez créés pour le domaine du serveur WebLogic, cliquez sur Se connecter sous Centre des modifications, puis sur Verrouiller et modifier.
 1. Sous Structure du domaine, cliquez sur Environment > Serveurs et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments dont vous avez besoin à la fin du contenu actuel. Par exemple, pour désactiver Health Monitor, ajoutez :

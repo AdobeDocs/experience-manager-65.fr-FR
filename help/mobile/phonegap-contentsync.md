@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2954'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,11 @@ Utilisez la synchronisation de contenu pour compresser le contenu afin qu’il p
 >
 >Les applications PhoneGap que vous créez à l’aide des outils AEM sont déjà configurées pour utiliser des pages AEM en tant que contenu via la synchronisation de contenu.
 
-La structure de synchronisation du contenu crée un fichier d’archive contenant le contenu web. Le contenu peut être constitué de pages simples, d’images, de fichiers de PDF ou d’applications web complètes. L’API de synchronisation du contenu permet d’accéder au fichier d’archive à partir d’applications mobiles ou de processus de création afin que le contenu puisse être récupéré et inclus dans l’application.
+La structure de synchronisation du contenu crée un fichier d’archive contenant le contenu web. Le contenu peut être constitué de pages simples, d’images, de fichiers PDF ou d’applications web complètes. L’API de synchronisation du contenu permet d’accéder au fichier d’archive à partir d’applications mobiles ou de processus de création afin que le contenu puisse être récupéré et inclus dans l’application.
 
 La séquence d’étapes suivante illustre un cas d’utilisation type de la synchronisation de contenu :
 
-1. Le développeur AEM crée une configuration de synchronisation du contenu qui spécifie le contenu à inclure.
+1. Le développeur d’AEM crée une configuration de synchronisation du contenu qui spécifie le contenu à inclure.
 1. Le framework de synchronisation du contenu collecte et met en cache le contenu.
 1. Sur un appareil mobile, l’application mobile est démarrée et demande le contenu au serveur, qui le diffuse dans un fichier ZIP.
 1. Le client décompresse le contenu ZIP dans le système de fichiers local. La structure de dossiers dans le fichier ZIP simule les chemins d’accès qu’un client (par exemple, un navigateur) demande normalement au serveur.
@@ -147,7 +147,7 @@ Le traitement peut aller du rendu JSON simple au rendu complet des pages, y comp
 
 Le type d’image est utilisé pour inclure le logo We.Retail dans le fichier zip.
 
-**pages** - Effectuez le rendu des pages AEM et collectez les ressources référencées.
+**pages** : effectuez le rendu des pages AEM et collectez les ressources référencées.
 
 * **path** - Chemin d’accès à une page.
 * **extension** - Extension qui doit être utilisée dans la requête. Pour les pages, cette fonctionnalité est presque toujours *html*, mais d’autres sont toujours possibles.
@@ -156,8 +156,7 @@ Le type d’image est utilisé pour inclure le logo We.Retail dans le fichier zi
 
 * **deep** - Propriété booléenne facultative déterminant si les pages enfants doivent également être incluses. La valeur par défaut est *true.*
 
-* **includeImages** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
-Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le **gestionnaire de mise à jour des pages de gestion de contenu web Day CQ** dans la console Web.
+* **includeImages** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le **gestionnaire de mise à jour des pages de gestion de contenu web Day CQ** dans la console Web.
 
 **rewrite** - le nœud rewrite définit la façon dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
 
@@ -288,7 +287,7 @@ Notez que la définition *factory* contient l&#39;interface commune et le type p
 
 ### Mise en œuvre d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
 
-Chaque page We.Retail Mobile contient un logo dans le coin supérieur gauche que nous souhaiterions inclure dans le fichier zip. Toutefois, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement le type de configuration **copy**. Nous devons plutôt fournir notre propre type de configuration **logo** qui rend l’image disponible à l’emplacement demandé par AEM. La liste de codes suivante montre l’implémentation complète du gestionnaire de mise à jour du logo :
+Chaque page We.Retail Mobile contient un logo dans le coin supérieur gauche que nous souhaiterions inclure dans le fichier zip. Cependant, pour l’optimisation du cache, AEM ne fait pas référence à l’emplacement réel du fichier image dans le référentiel, ce qui nous empêche d’utiliser simplement le type de configuration **copy**. Nous devons plutôt fournir notre propre type de configuration **logo** qui rend l’image disponible à l’emplacement demandé par AEM. La liste de codes suivante montre l’implémentation complète du gestionnaire de mise à jour du logo :
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

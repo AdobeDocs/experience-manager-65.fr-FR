@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Un cas dʼutilisation courant consiste à utiliser un ensemble de services AEM Forms sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus correspond à un processus métier que vous souhaitez automatiser. Pour plus d’informations sur la création de processus, consultez la section [Utiliser Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
+Un cas dʼutilisation courant consiste à utiliser un ensemble de services AEM Forms sur un seul document. Vous pouvez envoyer une demande au conteneur de services en créant un processus à l’aide de Workbench. Un processus correspond à un processus métier que vous souhaitez automatiser. Pour plus d’informations sur la création de processus, consultez la section [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).
 
 Une fois quʼun processus est activé, il se mue en service et peut être sollicité à lʼinstar dʼautres services. Une différence entre un service standard, tel que le service Encryption, et un service issu dʼun processus, est que ce dernier possède une opération qui exécute de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération exécute généralement une seule action, comme lʼapplication dʼune politique à un document ou le chiffrement dʼun document.
 
