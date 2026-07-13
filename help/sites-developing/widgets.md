@@ -118,8 +118,8 @@ Parfois, une bibliothèque cliente ne doit être disponible qu’en mode créati
 Pour suivre les tutoriels sur cette page, installez le package **Utilisation des widgets ExtJS** dans une instance locale d’AEM, puis créez un une page d’exemple dans laquelle les composants seront inclus. Pour ce faire, procédez comme suit :
 
 1. Dans votre instance d’AEM, téléchargez le package nommé **Utilisation des widgets ExtJS (v01)** dans le partage de packages, puis installez le package. Il crée le projet `extjstraining` sous `/apps` dans le référentiel.
-1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **** :
-dans **** ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante comme suit :   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **&#x200B;**&#x200B;:
+dans **&#x200B;**&#x200B;ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante comme suit :   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Créez une page dans la branche **Geometrixx** sous `/content/geometrixx/en/products` et nommez-la **Utilisation des widgets ExtJS**.
 1. Passez en mode Création et ajoutez tous les composants du groupe appelé **Utilisation des widgets ExtJS** à la conception de Geometrixx.
 1. Revenez au mode d’édition : les composants du groupe **Utilisation des widgets ExtJS** sont disponibles dans le sidekick.

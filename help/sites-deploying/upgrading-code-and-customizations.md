@@ -42,7 +42,7 @@ Avant de procéder à une mise à niveau, vous devez disposer d’une base de co
 
 Outre la mise à niveau facultative de votre base de code et de vos personnalisations pour qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante, comme décrit dans [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
-Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécutant le [Détecteur de motifs](/help/sites-deploying/pattern-detector.md) dans la première étape, vous pouvez évaluer la complexité globale de la mise à niveau. Il peut également vous aider à décider si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations pour utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md)[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Comme mentionné ci-dessus et illustré dans le diagramme ci-dessous, en exécutant le [Détecteur de motifs](/help/sites-deploying/pattern-detector.md) dans la première étape, vous pouvez évaluer la complexité globale de la mise à niveau. Il peut également vous aider à décider si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations pour utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md) [![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
 
@@ -130,7 +130,7 @@ Vous pouvez préparer les personnalisations de l’interface utilisateur d’Ass
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
-Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
+Pour générer des identifiants pour les ressources existantes, mettez à niveau les ressources lorsque vous mettez à niveau votre instance AEM pour exécuter AEM 6.5. Cette étape est requise pour activer la fonctionnalité Assets Insights [&#128279;](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
 
 Pour mettre à niveau les ressources, configurez le package d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets` peut prendre beaucoup de temps. Selon les tests internes d’Adobe, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
 
