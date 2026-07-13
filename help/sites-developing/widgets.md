@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '4896'
-ht-degree: 100%
+source-wordcount: '5042'
+ht-degree: 94%
 
 ---
 
@@ -56,17 +56,17 @@ Pour créer une bibliothèque cliente, procédez comme suit :
 1. Créez un nœud sous `/apps/<project>` avec les propriétés suivantes :
 
    * name=&quot;clientlib&quot;
-   * jcr:mixinTypes=&quot;[mix:lockable]&quot;
-   * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
-   * sling:resourceType=&quot;widgets/clientlib&quot;
+   * jcr:mixinTypes=« [mix:lockable] »
+   * jcr:primaryType=« cq:ClientLibraryFolder »
+   * sling:resourceType=« widgets/clientlib »
    * categories=&quot;[&lt;category-name>]&quot;
    * dependencies=&quot;[cq.widgets]&quot;
 
    `Note: <category-name> is the name of the custom library (for example, "cq.extjstraining") and is used to include the library on the page.`
 
-1. Sous `clientlib`, créez les dossiers `css` et `js` (nt:folder).
+1. Sous `clientlib` créer les dossiers `css` et `js` (nt:folder).
 
-1. Sous `clientlib`, créez les fichiers `css.txt` et `js.txt` (nt:files). Ces fichiers .txt répertorient les fichiers qui sont inclus dans la bibliothèque.
+1. Vous `clientlib` créer ci-dessous les fichiers `css.txt` et `js.txt` (nt:files). Ces fichiers .txt répertorient les fichiers qui sont inclus dans la bibliothèque.
 
 1. Modifier`js.txt` : il doit commencer par « `#base=js` », suivi de la liste des fichiers qui seront agrégés par le service de bibliothèque cliente CQ, par exemple :
 
@@ -103,7 +103,7 @@ où `<category-nameX>` est le nom de la bibliothèque côté client.
 * pour inclure uniquement le code JavaScript :
   `<ui:includeClientLib js="<category-name>"/>`
 
-Pour plus d’informations, reportez-vous à la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Pour plus d’informations, voir la description de la balise [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) .
 
 Parfois, une bibliothèque cliente ne doit être disponible qu’en mode création et doit être exclue du mode publication. Cela peut se faire comme suit :
 
@@ -118,9 +118,8 @@ Parfois, une bibliothèque cliente ne doit être disponible qu’en mode créati
 Pour suivre les tutoriels sur cette page, installez le package **Utilisation des widgets ExtJS** dans une instance locale d’AEM, puis créez un une page d’exemple dans laquelle les composants seront inclus. Pour ce faire, procédez comme suit :
 
 1. Dans votre instance d’AEM, téléchargez le package nommé **Utilisation des widgets ExtJS (v01)** dans le partage de packages, puis installez le package. Il crée le projet `extjstraining` sous `/apps` dans le référentiel.
-1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **Geometrixx** :
-dans **CRXDE Lite** ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante de la façon suivante :
-   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+1. Incluez la bibliothèque cliente contenant les scripts (js) et la feuille de style (css) dans la balise head du jsp de la page Geometrixx. Vous allez inclure les exemples de composants dans une nouvelle page de la branche **&#x200B;**&#x200B;:
+dans **&#x200B;**&#x200B;ouvrez le fichier `/apps/geometrixx/components/page/headlibs.jsp` et ajoutez la catégorie `cq.extjstraining` à la balise `<ui:includeClientLib>` existante comme suit :   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Créez une page dans la branche **Geometrixx** sous `/content/geometrixx/en/products` et nommez-la **Utilisation des widgets ExtJS**.
 1. Passez en mode Création et ajoutez tous les composants du groupe appelé **Utilisation des widgets ExtJS** à la conception de Geometrixx.
 1. Revenez au mode d’édition : les composants du groupe **Utilisation des widgets ExtJS** sont disponibles dans le sidekick.
@@ -208,8 +207,8 @@ La boîte de dialogue à **plusieurs panneaux** présente le même affichage que
 
 Pour utiliser la boîte de dialogue à plusieurs panneaux, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Éléments de base de la boîte de dialogue** par la boîte de dialogue **à plusieurs panneaux** :
-Suivez la procédure décrite à la section [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Principes de base de la boîte de dialogue** par la boîte de dialogue **à plusieurs panneaux** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant. La boîte de dialogue s’affiche alors comme suit :
 
 ![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
@@ -229,8 +228,8 @@ La boîte de dialogue **enrichie** affiche une fenêtre avec deux onglets. Le pr
 
 Pour utiliser la boîte de dialogue **Riche**, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Éléments de base de boîte de dialogue** par la boîte de dialogue **Riche** :
-Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Principes de base de la boîte de dialogue** par la boîte de dialogue **Riche** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant. La boîte de dialogue s’affiche alors comme suit :
 
 ![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png) ![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
@@ -310,8 +309,7 @@ Ses caractéristiques principales sont les suivantes :
 
 Cette logique est implémentée par le biais de listeners d’événements et de code JavaScript comme suit :
 
-* Le widget `ownerdraw` comporte un listener « `loadcontent` » qui affiche des informations sur la page contenant le composant. En d’autres termes, la ressource référencée par le widget de fichier intelligent lors du chargement du contenu :
-  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+* Le widget `ownerdraw` comporte un listener « `loadcontent` » qui affiche des informations sur la page contenant le composant. En d’autres termes, la ressource référencée par le widget de fichier intelligent lors du chargement du contenu :  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
   `field` est défini avec l’objet `ownerdraw` ;
   `path` est défini avec le chemin d’accès au contenu du composant (par exemple, `/content/geometrixx/en/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs`).
 * L’objet `Ejst.x2` est défini dans le fichier `exercises.js` à l’emplacement suivant :
@@ -325,8 +323,8 @@ Cette logique est implémentée par le biais de listeners d’événements et de
 
 Pour utiliser la boîte de dialogue **Arbitrary**, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Boîte de dialogue dynamique** par la boîte de dialogue **Arbitraire** :
-Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Boîte de dialogue dynamique** par la boîte de dialogue **Arbitraire** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant. La boîte de dialogue s’affiche alors comme suit :
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
@@ -356,13 +354,13 @@ Cette logique est implémentée par le biais de listeners d’événements et de
   `box` est l’objet de sélection ;
   `panel` est le panneau contenant la sélection et les widgets dialogfieldset ;
   `fieldSet` est l’objet dialogfieldset ;
-  `show` est la valeur de la sélection (true ou false) ;
-basée sur « `show` » si dialogfieldset s’affiche ou non.
+  `show` est la valeur de la sélection (true ou false) ;
+en fonction de « `show` », dialogfieldset s’affiche ou non
 
 Pour utiliser la boîte de dialogue **Toggle Fields**, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Boîte de dialogue dynamique** par la boîte de dialogue **Champs de bouton bascule** :
-Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Boîte de dialogue dynamique** par la boîte de dialogue **Toggle Fields** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant. La boîte de dialogue s’affiche alors comme suit :
 
 ![screen_shot_2012-02-01at115518am](assets/screen_shot_2012-02-01at115518am.png)
@@ -378,8 +376,7 @@ Les widgets prêts à l’emploi fournis avec AEM doivent couvrir la plupart des
 Les widgets personnalisés et le module externe sont inclus dans le composant appelé **3. Widgets personnalisés** du package **Utilisation des widgets ExtJS**. Pour inclure ce composant dans l’exemple de page :
 
 1. Ajoutez le composant **3. Widgets personnalisés** à l’exemple de page à partir de l’onglet **Utilisation des widgets ExtJS** dans le **sidekick**.
-1. Le composant affiche un titre, du texte et, lorsque vous cliquez sur le lien **PROPRIÉTÉS**, les propriétés du paragraphe stocké dans le référentiel. Cliquez à nouveau pour masquer les propriétés.
-Le composant se présente sous la forme suivante :
+1. Le composant affiche un titre, du texte et, lorsque vous cliquez sur le lien **PROPRIÉTÉS**, les propriétés du paragraphe stocké dans le référentiel. Cliquez à nouveau pour masquer les propriétés.Le composant se présente sous la forme suivante :
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -394,8 +391,7 @@ La boîte de dialogue basée sur le widget **Custom Multifield** :
 * Le panneau comprend un widget `multifield` (type de nœud = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
 * Le widget `multifield` comprend une option fieldconfig (type de nœud = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) basée sur le xtype personnalisé « `ejstcustom` » :
    * « `fieldconfig` » est une option de configuration de l’objet ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
-   * « `optionsProvider` » est une configuration du widget `ejstcustom`. Elle est définie avec la méthode `Ejst.x3.provideOptions` qui est définie dans `exercises.js` dans :
-     `/apps/extjstraining/clientlib/js/exercises.js`
+   * « `optionsProvider` » est une configuration du widget `ejstcustom`. Elle est définie avec la méthode `Ejst.x3.provideOptions` qui est définie dans `exercises.js` dans :     `/apps/extjstraining/clientlib/js/exercises.js`
 et renvoie deux options.
 * Est défini par le nœud `multifield` à l’adresse :
   `/apps/extjstraining/components/customwidgets/multifield`
@@ -456,8 +452,8 @@ Widget treebrowse personnalisé (xtype = `ejstbrowse`) :
 
 Pour utiliser la boîte de dialogue basée sur le widget **Custom Treebrowse**, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Widgets personnalisés** par la boîte de dialogue **Exploration d’arborescence personnalisée** :
-Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Widgets personnalisés** par la boîte de dialogue **Exploration d’arborescence personnalisée** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant. La boîte de dialogue s’affiche alors comme suit :
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
@@ -493,10 +489,10 @@ Module externe de RTE :
 
 Pour utiliser la boîte de dialogue basée sur le **module externe Éditeur de Texte Enrichi (RTE)**, procédez comme suit :
 
-1. Remplacez la boîte de dialogue du composant **Widgets personnalisés** par la boîte de dialogue basée sur le **module externe Éditeur de Texte Enrichi (RTE)** :
-Suivez la procédure décrite pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog).
+1. Remplacez la boîte de dialogue du composant **Widgets personnalisés** par la boîte de dialogue basée sur le module externe **Éditeur de texte enrichi (RTE)** :
+Suivez les étapes décrites pour [Exemple 2 : boîte de dialogue à un seul panneau](#example-single-panel-dialog)
 1. Modifiez le composant.
-1. Cliquez sur la dernière icône sur la droite (celle qui comporte quatre flèches). Saisissez un chemin d’accès et cliquez ensuite sur **OK** :
+1. Cliquez sur la dernière icône sur la droite (celle qui comporte quatre flèches). Saisissez un chemin d’accès et cliquez sur **OK** :
 Le chemin d’accès est affiché entre crochets ([ ]).
 1. Cliquez sur **OK** pour fermer l’éditeur de texte enrichi.
 
@@ -550,7 +546,7 @@ Le code JavaScript incorporé dans le jsp du composant :
 * L’objet `root` définit le chemin d’accès `apps/extjstraining` en tant que racine de l’arborescence.
 * `tree` (` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`) est défini sur la base du `treePanel` prédéfini et est affiché avec :
   `tree.show();`
-* Si la fenêtre existe déjà, elle est affichée en fonction de la largeur, de la hauteur et des propriétés d’ancrage extraites du référentiel.
+* Si la fenêtre existe déjà, elle est affichée en fonction de la largeur, de la hauteur et des propriétés d’ancrage récupérées du référentiel.
 
 Boîte de dialogue du composant :
 
@@ -577,7 +573,7 @@ Un panneau Grille représente les données sous la forme d’un tableau comprena
 Le composant Grid Overview inclus dans le package **Utilisation des widgets ExtJS** montre comment afficher les données sous la forme d’un tableau :
 
 * L’exemple 1 utilise des données statiques.
-* L’exemple 2 utilise les données extraites du référentiel.
+* L’exemple 2 utilise les données récupérées du référentiel.
 
 Pour inclure le composant Grid Overview dans l’exemple de page :
 
@@ -621,7 +617,7 @@ Le code JavaScript incorporé dans le jsp du composant :
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
 * Si `grid` n’existe pas, un objet [CQ.Ext.grid.GridPanel](https://developer.adobe.com/fr/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) ( `gridPanel`) est défini en appelant la méthode `getGridPanel()` (voir ci-après). Cette méthode est définie dans `defaultgrid.js`.
 * `grid` est un objet ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` basé sur l’objet GridPanel prédéfini et affiché sous la forme : `grid.show();`.
-* Si `grid` existe déjà, il est affiché en fonction de la largeur, de la hauteur et des propriétés d’ancrage extraites du référentiel.
+* Si `grid` existe déjà, il est affiché en fonction de la largeur, de la hauteur et des propriétés d’ancrage récupérées du référentiel.
 
 Le fichier JavaScript (`defaultgrid.js`) référencé dans le jsp du composant définit la méthode `getGridPanel()` qui est appelée par le script incorporé dans le fichier JSP et renvoie un objet ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` sur la base de données statiques. La logique est la suivante :
 
@@ -643,7 +639,7 @@ Lorsque vous installez le package, le fichier `content.jsp` du composant **Grid 
 * Est basé sur les données récupérées du référentiel en appelant une servlet.
 * Les cellules de la dernière colonne peuvent être modifiées. La valeur est conservée dans une propriété `test` sous le nœud défini par le chemin d’accès qui est affiché dans la première colonne.
 
-Comme indiqué à la section précédente, l’objet window obtient son objet ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` en appelant la méthode `getGridPanel()` définie dans le fichier `defaultgrid.js` à l’emplacement suivant : `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Le composant **Grid Overview** fournit une implémentation différente pour la méthode `getGridPanel()` ; elle est définie dans le fichier `referencesearch.js` sous `/apps/extjstraining/components/gridoverview/referencesearch.js`. En changeant le fichier .js qui est référencé dans le jsp du composant, la grille sera basée sur les données extraites du référentiel.
+Comme indiqué à la section précédente, l’objet window obtient son objet ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` en appelant la méthode `getGridPanel()` définie dans le fichier `defaultgrid.js` à l’emplacement suivant : `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Le composant **Grid Overview** fournit une implémentation différente pour la méthode `getGridPanel()` ; elle est définie dans le fichier `referencesearch.js` sous `/apps/extjstraining/components/gridoverview/referencesearch.js`. En changeant le fichier .js qui est référencé dans le jsp du composant, la grille est basée sur les données récupérées du référentiel.
 
 Changez le fichier .js qui est référencé dans le jsp du composant :
 
@@ -658,22 +654,20 @@ Le composant se présente sous la forme suivante :
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-Le code JavaScript référencé dans le jsp du composant (`referencesearch.js`) définit la méthode `getGridPanel()` qui est appelée par le jsp du composant et renvoie un objet ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` sur la base des données qui sont extraites de manière dynamique du référentiel. La logique contenue dans le fichier `referencesearch.js` définit des données dynamiques comme base de l’objet GridPanel :
+Le code JavaScript référencé dans le jsp du composant (`referencesearch.js`) définit la méthode `getGridPanel()` qui est appelée par le jsp du composant et renvoie un objet ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` sur la base des données qui sont récupérées de manière dynamique depuis le référentiel. La logique contenue dans le fichier `referencesearch.js` définit des données dynamiques comme base de l’objet GridPanel :
 
 * `reader` est un objet ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` qui lit la réponse du servlet au format JSON pour trois colonnes.
-* `cm` est un objet ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` pour trois colonnes.
-Les cellules de la colonne « Test » peuvent être modifiées, étant donné qu’elles sont définies avec un éditeur :
-  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+* `cm` est un objet ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` pour trois colonnes.Les cellules de la colonne « Test » peuvent être modifiées, étant donné qu’elles sont définies avec un éditeur :  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * Les colonnes peuvent faire l’objet d’un tri :
   `cm.defaultSortable = true;`
 * `store` est un objet ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` :
    * Il récupère ses données en appelant le servlet enregistré à l’emplacement « `/bin/querybuilder.json` » ; quelques paramètres sont utilisés pour filtrer la requête.
    * Il repose sur l’objet `reader` défini précédemment.
-   * Le tableau est trié selon la colonne **jcr:path** dans l’ordre croissant.
+   * le tableau est trié selon la colonne « **jcr:path** » dans l’ordre croissant.
 * `gridPanel` est un objet ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` qui peut être modifié :
-   * Il repose sur l’objet `store` prédéfini et sur le modèle de colonne `cm`. 
+   * Il repose sur l’objet `store` prédéfini et sur le modèle de colonne `cm`.
    * Une seule ligne peut être sélectionnée à la fois :
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * Le listener `afteredit` vérifie les éléments suivants après la modification d’une cellule de la colonne « **Test** » :
-      * La propriété `test` du nœud situé à l’emplacement défini par la colonne « **jcr:path** » est définie dans le référentiel avec la valeur de la cellule.
+      * la propriété « `test` » du nœud à l’emplacement défini par la colonne « **jcr:path** » est définie dans le référentiel avec la valeur de la cellule
       * Si l’opération POST est réussie, la valeur est ajoutée à l’objet `store` ; dans le cas contraire, elle est rejetée.
