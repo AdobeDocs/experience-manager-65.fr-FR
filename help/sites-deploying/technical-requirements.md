@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
+source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 92%
+source-wordcount: '3853'
+ht-degree: 91%
 
 ---
 
@@ -101,8 +101,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A : prise en charge de `[3]` | |
 
-1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe ne prend en charge que les versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la politique de prise en charge de [Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Important : Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle est passé à un modèle de « support à long terme » (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS fournies par Oracle (consultez la [feuille de route de la prise en charge d’Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Consultez la [Politique de prise en charge Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Important : Oracle Java™ 17 et 21 sont pris en charge sur [AEM 6.5 LTS](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE est pris en charge uniquement avec le serveur d’applications WebSphere®.
 
@@ -123,7 +122,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 | MongoDB Enterprise 8.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 7.0 | Référentiel | A : pris en charge `[3, 4]` |
 | MongoDB Enterprise 6.0 | Référentiel | A : pris en charge `[3, 4]` |
-| MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4]` |
+| MongoDB Enterprise 5.0 | Référentiel | A : pris en charge `[3, 4, 7]` |
 | MongoDB Enterprise 4.4 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 | Référentiel | A : pris en charge `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Référentiel | Z : non pris en charge |
@@ -146,6 +145,7 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 6. Applicable à AEM Forms uniquement :
    * Suppression de la prise en charge d’Oracle Database 12c et ajout de la prise en charge d’Oracle Database 19c.
    * Suppression de la prise en charge de Microsoft® SQL Server 2016 et ajout de la prise en charge de Microsoft® SQL Server 2019 et Microsoft® SQL Server 2022.
+7. Non pris en charge pour AEM Forms.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ La version minimale requise de l’API servlet est Servlet 3.1.
 | JBoss EAP 7.2.x avec le serveur d’applications JBoss® | Z : non pris en charge |
 | JBoss® EAP 7.1.4 avec le serveur d’applications JBoss® | R : prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | JBoss® EAP 7.0.x avec le serveur d’applications JBoss® | Z : non pris en charge |
-| JBoss® EAP 7.4 avec le serveur d’application JBoss® <sup>[2] [3] [7] | A : pris en charge |
+| JBoss® EAP 7.4 avec JBoss® Application Server <sup>[2] [3] | A : pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
 2. Avec les déploiements d’AEM 6.5 sur les serveurs d’applications, la prise en charge limitée sera activée. Les clientes et clients existant(e)s peuvent effectuer une mise à niveau vers AEM 6.5 et continuer à utiliser des serveurs d’applications. Pour les nouveaux clients et nouvelles clientes, des critères et un programme de prise en charge sont inclus, comme indiqué dans la description du niveau R ci-dessus.
@@ -536,4 +536,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux® contenant GLIBC_2.14, par exemple un noyau Linux® version 3.1.x. Il améliore les performances de traitement des ressources contenant une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[&#128279;](https://business.adobe.com/in/support/main.html)
+Pour toute question relative aux formats ou aux versions de plateforme pris en charge, contactez l’assistance technique d’[](https://business.adobe.com/in/support/main.html)
