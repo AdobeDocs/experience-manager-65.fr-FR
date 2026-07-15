@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
@@ -54,13 +54,13 @@ Pour modifier le contenu d’AEM Mobile, les *auteurs AEM* auront besoin d’une
 
 ## La Mosaïque Gérer Les Packages De Contenu {#the-manage-content-packages-tile}
 
-Ici, les *administrateurs d’AEM* peuvent mettre à jour rapidement et facilement leurs applications pour offrir des expériences attrayantes et du contenu à jour afin de stimuler l’engagement de la marque et d’atteindre les objectifs commerciaux, le tout sans avoir besoin d’une nouvelle soumission de la part du développeur ou de l’App Store.
+Ici, les *administrateurs* peuvent rapidement et facilement mettre à jour leurs applications pour offrir des expériences attrayantes et du contenu à jour afin de stimuler l&#39;engagement de la marque et d&#39;atteindre les objectifs commerciaux, le tout sans avoir à demander un nouvel envoi à un développeur ou à une boutique d&#39;applications.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Une fois que les *auteurs AEM* ont ajouté ou modifié du contenu via la mosaïque Gérer le contenu, les *administrateurs AEM* peuvent transmettre ces modifications aux clients avec une mise à jour des packages de contenu.
+Une fois que les *auteurs* ont ajouté ou modifié du contenu via la mosaïque Gérer le contenu, les *administrateurs AEM* peuvent transmettre ces modifications aux clients avec une mise à jour des packages de contenu.
 
-L’action Package de contenu permet à l’*auteur AEM* de créer et de modifier le contenu de la page pendant que l’équipe de développement apporte des modifications à la conception et à l’implémentation de l’application hôte, notamment la navigation, le style, la logique côté serveur, les modèles et les composants, puis de transmettre ces modifications en direct aux clients sans avoir à les soumettre à nouveau aux différents magasins pour distribution.
+L’action Package de contenu permet à l’auteur ** de créer et de modifier le contenu de la page pendant que l’équipe de développement apporte des modifications à la conception et à l’implémentation de l’application hôte, y compris la navigation, le style, la logique côté serveur, les modèles et les composants, puis de transmettre ces modifications en OTA aux clients sans avoir à les soumettre à nouveau aux différents magasins pour distribution.
 
 **Pour publier du contenu nouveau ou mis à jour**
 
@@ -80,11 +80,11 @@ L’évaluation d’une mise à jour de contenu permet d’effectuer plusieurs m
 >
 >Le contenu intermédiaire peut être vérifié à l’aide de l’application AEM Verify avant publication.
 >
->Voir [Démarrage rapide mobile pour AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations sur l’application AEM Verify.
+>Voir [Démarrage rapide mobile pour la vérification AEM](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations sur l’application AEM Verify.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Lorsque vous êtes prêt à diffuser du nouveau contenu aux utilisateurs de votre application avec l’OTA de synchronisation de contenu, sélectionnez **Publish** comme illustré ci-dessous.
+Lorsque vous êtes prêt à diffuser du nouveau contenu aux utilisateurs de votre application avec l’OTA de synchronisation de contenu, sélectionnez **Publier** comme illustré ci-dessous.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

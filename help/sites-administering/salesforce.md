@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 100%
+source-wordcount: '1594'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ L’intégration de Salesforce à Adobe Experience Manager (AEM) fournit des fon
 L’intégration bidirectionnelle et extensible entre AEM et Salesforce permet :
 
 * Aux organisations d’utiliser et de modifier entièrement les données pour améliorer l’expérience client.
-* Une participation des équipes marketing aux activités de vente.
+* Engagement des activités marketing aux activités de vente.
 * Aux organisations de transmettre et de recevoir automatiquement des données d’un magasin de données Salesforce.
 
 Ce document répond aux questions suivantes :
@@ -47,7 +47,7 @@ Pour configurer l’intégration d’AEM à Salesforce :
 
 >[!CAUTION]
 >
->Vous devez installer le package d’intégration de [l’API Salesforce Force](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) pour pouvoir poursuivre la procédure. Pour plus d’informations sur l’utilisation des packages, consultez la page [Utilisation des packages](/help/sites-administering/package-manager.md#package-share)
+>Vous devez installer le package d’intégration de [l’API Salesforce Force](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) pour pouvoir poursuivre la procédure. Pour plus d’informations sur l’utilisation des packages, consultez la page [Utilisation des packages](/help/sites-administering/package-manager.md#package-share)
 
 1. Dans AEM, accédez à **Services cloud**. Dans Services tiers, cliquez sur **Configurer maintenant** dans **Salesforce**.
 
@@ -57,7 +57,7 @@ Pour configurer l’intégration d’AEM à Salesforce :
 
    >[!NOTE]
    >
-   >La nouvelle configuration redirige vers une nouvelle page : **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Il s’agit exactement de la valeur que vous devez spécifier dans l’adresse URL de rappel lors de la création de l’application d’accès à distance dans Salesforce. Ces valeurs doivent correspondre.
+   >La nouvelle configuration redirige vers une nouvelle page : **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Il s’agit exactement de la valeur que vous devez spécifier dans l’adresse URL de rappel lors de la création de l’application d’accès à distance dans Salesforce. Ces valeurs doivent correspondre.
 
 1. Connectez-vous à votre compte Salesforce (ou si vous n’en avez pas, créez-en un, à l’adresse [https://developer.force.com](https://developer.salesforce.com)).
 1. Dans Salesforce, sélectionnez **Créer** > **Applications** pour accéder à **Applications connectées** (dans les anciennes versions de Salesforce, le workflow est **Déployer** > **Accès à distance**).
@@ -161,7 +161,7 @@ Pour effectuer cette opération, configurez les éléments suivants :
 
 1. Liez un utilisateur ou une utilisatrice AEM à un identifiant Salesforce via le composant Salesforce Connect.
 1. Ajoutez les données de profil Salesforce dans la page de contexte client afin de définir les propriétés que vous souhaitez afficher.
-1. (Facultatif) Créez un segment qui utilise les données du magasin de contexte client Salesforce. 
+1. (Facultatif) Créez un segment qui utilise les données du magasin de contexte client Salesforce.
 
 ### Liaison d’un utilisateur ou d’une utilisatrice AEM à un identifiant Salesforce {#linking-an-aem-user-with-a-salesforce-id}
 
@@ -228,7 +228,7 @@ AEM est fourni avec un exemple de composant Recherche, qui cherche des prospects
 
 Pour utiliser ce composant :
 
-1. Accédez à la page dans laquelle vous souhaitez utiliser cette configuration. Ouvrez les propriétés de la page et sélectionnez **Services Cloud.** Cliquez sur **Ajouter des services**, sélectionnez **Salesforce** et la configuration appropriée, puis cliquez sur **OK**.
+1. Accédez à la page dans laquelle vous souhaitez utiliser cette configuration. Ouvrez les propriétés de la page et sélectionnez **Cloud Services.** Cliquez sur **Ajouter des services**, sélectionnez **Salesforce** puis la configuration appropriée et cliquez sur **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

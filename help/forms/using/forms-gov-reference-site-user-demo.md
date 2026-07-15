@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Les groupes suivants sont également inclus :
 1. **Liens** : dans la partie supérieure du menu principal du site We.Gov.
 1. **Instructions utilisateur** : ensemble d’étapes numériques à suivre lors de la navigation dans le scénario de l’utilisateur.
 1. **Portail Forms** : *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Vue mobile** : utilisateur ou utilisatrice We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
+1. **Vue mobile**:We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
 1. **Vue ordinateur de bureau** : utilisateur de We.gov pour afficher une démonstration sur un ordinateur portable ou un ordinateur de bureau.
 1. **Formulaire de pré-filtrage** : formulaire sur la page d’accueil du site We.Gov.
 1. **Formulaire adaptatif** : formulaire de demande d’inscription pour la démonstration de We.gov.
@@ -227,7 +227,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
    1. **Marié.e** : afficher le panneau relatif au mariage
    1. **Divorcé.e** : afficher le panneau des proches parents
    1. **Veuf.ve** : afficher le panneau des proches parents
-   1. **Avez-vous des enfants ?** : bouton radio (Oui/Non) pour afficher le panneau des enfants à charge.
+   1. **Avez-vous des enfants ?** : bouton radio (Oui/Non) pour afficher le panneau des enfants à charge.
 
       1. Bouton (Ajouter/Supprimer) pour ajouter/supprimer plusieurs panneaux d’enfants à charge.
 
@@ -414,7 +414,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
 1. Pour une référence rapide à IC directement :
 
-   *https://&lt;aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
+   *https://&lt;serveur_aem>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
 
    ![Manuel des avantages de bienvenue](/help/forms/using/assets/welcome_benefits_handbook.png) ![Lien de communication interactive](/help/forms/using/assets/interactive_communication.png)
 
@@ -486,7 +486,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Sélectionnez le **Site We.Gov d’AEM Forms** pour afficher les pages du site.
-1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez **Analytics et Recommendations**.
+1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez **Analytics et Recommandations**.
 
    ![Analytics et Recommandations](/help/forms/using/assets/analytics_recommendation.jpg)
 
