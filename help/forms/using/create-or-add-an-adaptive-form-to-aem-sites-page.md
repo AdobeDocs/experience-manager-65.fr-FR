@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2884'
+source-wordcount: '2961'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Avec AEM Forms, vous pouvez facilement incorporer des formulaires adaptatifs dans vos pages web. Vos visiteurs et visiteuses peuvent ainsi remplir et envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils ou elles peuvent continuer à utiliser sans effort d’autres éléments du site web tout en interagissant activement avec le formulaire.
 
-Vous pouvez utiliser l’éditeur de page d’AEM pour créer et ajouter rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page d’AEM permet aux auteurs et autrices de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants des formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation de la gestion commerciale. L’éditeur de page permet également d’utiliser différentes fonctionnalités des pages d’AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+Vous pouvez utiliser l’éditeur de page d’AEM pour créer et ajouter rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page d’AEM permet aux auteurs et autrices de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants des formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation de la gestion commerciale. L’éditeur de page permet également d’utiliser différentes fonctionnalités des pages d’AEM Sites, telles que le contrôle de version, le ciblage, la traduction et Multi-Site Manager.
 
 AEM Forms fournit un conteneur de formulaires adaptatifs et des composants Formulaires adaptatifs - Incorporer. Vous pouvez utiliser le conteneur de formulaires adaptatifs pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites, tandis que le composant Formulaire adaptatif – Incorporer permet d’ajouter un formulaire adaptatif existant ou de créer un formulaire à l’aide de l’éditeur de formulaire adaptatif.
 
@@ -32,7 +32,7 @@ AEM Forms fournit un conteneur de formulaires adaptatifs et des composants Form
 
 ## Avantages de l’utilisation du composant Conteneur de formulaires adaptatifs dans l’éditeur de page d’AEM ou dans un fragment d’expérience
 
-L’utilisation du conteneur de formulaires adaptatifs dans l’éditeur de page d’AEM vous permet de créer des expériences de capture de données transparentes dans une page Sites à l’aide de toute la puissance des composants des formulaires adaptatifs, notamment le comportement dynamique, les validations et l’intégration de données, ainsi que de générer un document d’enregistrement et d’automatiser la gestion commerciale. Le conteneur de formulaires adaptatifs vous permet également d’utiliser les différentes fonctionnalités des pages AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples, améliorant ainsi l’expérience globale de création et de gestion de formulaires. Examinons quelques-unes de ces fonctionnalités :
+L’utilisation du conteneur de formulaires adaptatifs dans l’éditeur de page d’AEM vous permet de créer des expériences de capture de données transparentes dans une page Sites à l’aide de toute la puissance des composants des formulaires adaptatifs, notamment le comportement dynamique, les validations et l’intégration de données, ainsi que de générer un document d’enregistrement et d’automatiser la gestion commerciale. Le conteneur de formulaires adaptatifs vous permet également d’utiliser les différentes fonctionnalités des pages AEM Sites, telles que le contrôle de version, le ciblage, la traduction et Multi-Site Manager, améliorant ainsi l’expérience globale de création et de gestion de formulaires. Examinons quelques-unes de ces fonctionnalités :
 
 * **Contrôle de version :** les pages AEM Sites vous offrent des [fonctionnalités de contrôle de version fiables](/help/sites-authoring/working-with-page-versions.md), ce qui vous permet de suivre et de gérer différentes versions de vos formulaires. Vous pouvez ainsi apporter des modifications et des améliorations aux formulaires tout en conservant la possibilité de restaurer des versions précédentes si nécessaire. Le contrôle de version garantit une approche contrôlée et organisée du développement et de l’évolution des formulaires.
 * **Ciblage (intégration à Adobe Target) :** avec les fonctionnalités de ciblage des pages AEM Sites, vous pouvez également [personnaliser l’expérience du formulaire pour différentes audiences](/help/sites-administering/target.md). En exploitant les segments d’utilisateurs et d’utilisatrices et les critères de ciblage, vous pouvez personnaliser le contenu, la conception ou le comportement du formulaire en fonction de groupes d’utilisateurs et d’utilisatrices spécifiques. Vous pouvez ainsi offrir une expérience de formulaire personnalisée et pertinente, ce qui augmente l’engagement et les taux de conversion.
@@ -61,9 +61,9 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les opt
 
 ## Remarques {#consideration}
 
-* Lorsque vous utilisez le conteneur de formulaires adaptatifs pour créer ou ajouter un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. Le conteneur de formulaires adaptatifs vous permet également d’utiliser diverses fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+* Lorsque vous utilisez le conteneur de formulaires adaptatifs pour créer ou ajouter un formulaire, les formulaires sont traduits et localisés par le biais du flux de traduction AEM Sites. Pour chaque langue, une copie distincte (copie de langue) de la page du site et des formulaires correspondants est générée. Lorsqu’un auteur ou une autrice de contenu modifie une règle dans un formulaire sur la page parente, les mêmes modifications doivent être effectuées dans toutes les copies de langue du formulaire. Le conteneur de formulaires adaptatifs vous permet également d’utiliser diverses fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et Multi-Site Manager.
 
-* Lorsque vous créez ou ajoutez un formulaire à l’aide du composant Formulaire adaptatif - Incorporer, les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. Le composant Formulaire adaptatif - Incorporer ne permet pas d’accéder aux différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
+* Lorsque vous créez ou ajoutez un formulaire à l’aide du composant Formulaire adaptatif - Incorporer, les formulaires sont traduits et localisés à l’aide du flux de traduction AEM Forms. Dans ce cas, un seul formulaire est conservé et référencé dans toutes les copies de langue des pages Sites. Le composant Formulaire adaptatif - Incorporer ne permet pas d’accéder aux différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et Multi-Site Manager.
 
 
 ## Avant de commencer {#before-you-start}
@@ -72,9 +72,9 @@ Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les opt
 
 Assurez-vous que les [composants principaux des formulaires adaptatifs sont activés pour votre environnement](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=fr).
 
-+++
++++ 
 
-+++  Ajout de bibliothèques clientes de formulaires adaptatifs à la page AEM Sites et aux composants de page de fragment d’expérience
++++  Ajout de bibliothèques clientes de formulaires adaptatifs à la page AEM Sites et aux composants de page de fragment d’expérience 
 
 Pour activer la fonctionnalité complète du composant Conteneur de formulaires adaptatifs, ajoutez les bibliothèques clientes Customheaderlibs et Customfooterlibs à votre page AEM Sites à l’aide du pipeline de déploiement. Pour ajouter les bibliothèques :
 
@@ -118,7 +118,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
 
 1. Répétez les étapes ci-dessus pour toutes les instances de création et de publication dans votre environnement.
 
-+++
++++ 
 
 +++ Activation du Conteneur de formulaires adaptatifs
 

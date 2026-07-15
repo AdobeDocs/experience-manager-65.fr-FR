@@ -19,13 +19,13 @@ ht-degree: 2%
 
 # Prise en main d’AEM Communities {#getting-started-with-aem-communities}
 
-AEM Communities permet aux entreprises de créer des expériences communautaires dédiées à partir d’une bibliothèque de modèles de site. Vous pouvez intégrer des forums, des groupes, des blogs, du partage de fichiers, des calendriers, des flux d’activité et des profils d’utilisateur étendus dans votre site web afin d’encourager les interactions entre les prospects, les clients et les entreprises.
+AEM Communities permet aux entreprises de créer des expériences de communauté de marque dédiées à partir d’une bibliothèque de modèles de site. Forums, groupes, blogs, partage de fichiers, calendriers, flux d’activités et profils d’utilisateurs étendus peuvent être intégrés à votre site web afin de favoriser les interactions entre les prospects, les clients et les entreprises.
 
 Vous trouverez ci-dessous un tutoriel sur la configuration rapide d’une [communauté d’engagement](/help/communities/overview.md#engagement-community) à des fins de démonstration ou de développement.
 
 * [Configuration initiale](/help/communities/setup.md)
 
-* [Création d’un site de communauté](/help/communities/create-site.md)
+* [Créer un nouveau site communautaire](/help/communities/create-site.md)
 
 * [Expérience du site publié](/help/communities/published-site.md)
 

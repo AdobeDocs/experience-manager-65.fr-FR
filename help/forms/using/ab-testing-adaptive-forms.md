@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 100%
+source-wordcount: '1613'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Vos clientes et clients sont susceptibles d’abandonner un formulaire si l’ex
 
 AEM Forms s’intègre à Adobe Target, une solution Adobe Experience Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Une des fonctionnalités essentielles de Target est un test A/B qui vous permet de définir rapidement les tests simultanés A/B, de présenter le contenu correspondant aux utilisateurs et utilisatrices cibles, puis d’identifier l’expérience conduisant à un meilleur taux de conversion.
 
-Avec Adobe Experience Manager (AEM) Forms, vous pouvez configurer et exécuter des tests A/B sur des formulaires adaptatifs en temps réel. Il fournit également des fonctionnalités de création de rapports personnalisables et prêtes à l’emploi pour visualiser les performances en temps réel de vos expériences de formulaire et identifier celle qui optimise l’interaction client et la conversion des utilisateurs et utilisatrices.
+Avec Adobe Experience Manager (AEM) Forms, vous pouvez configurer et exécuter des tests A/B sur des formulaires adaptatifs en temps réel. Il fournit également des fonctionnalités de création de rapports personnalisables et prêtes à l’emploi pour visualiser les performances en temps réel de vos expériences de formulaire et identifier celle qui optimise l’engagement client et la conversion des utilisateurs et utilisatrices.
 
 ## Configurer et intégrer Target à AEM Forms {#set-up-and-integrate-target-in-aem-forms}
 
@@ -97,7 +97,7 @@ AEM vous permet de créer une audience et de l’utiliser pour un test A/B. L’
 
    1. Pour catégoriser lʼaudience en fonction de Linux, dans la règle n°2, sélectionnez le type d’attribut **OS**. Dans la liste **déroulante**, sélectionnez **Linux®**, puis cliquez sur **Suivant**.
 
-1. Spécifiez un nom pour le public créé, puis cliquez sur **Enregistrer**.
+1. Spécifiez un nom pour l’audience créée, puis cliquez sur **Enregistrer**.
 
 Vous pouvez sélectionner l’audience lorsque vous configurez le test A/B d’un formulaire, comme illustré ci-dessous.
 
@@ -109,7 +109,7 @@ Vous pouvez sélectionner l’audience lorsque vous configurez le test A/B d’u
 1. Cliquez sur l’outil **Sélectionner** dans la barre d’outils et sélectionnez le formulaire adaptatif.
 1. Cliquez sur **Plus** dans la barre d’outils et sélectionnez **Configurer les tests A/B**. La page de configuration des tests A/B s’ouvre.
 
-[](assets/ab-test-configure-1.png)
+[![Page de configuration du test A/B pour les formulaires adaptatifs](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Spécifiez un **nom d’activité** pour le test A/B.
 
@@ -126,7 +126,7 @@ Vous pouvez sélectionner l’audience lorsque vous configurez le test A/B d’u
    * Description, libellé et texte d’aide pour un champ
    * Scripts qui n’affectent pas ou n’interrompent pas le flux d’envoi
    * Validations (côté client et côté serveur)
-   * Thème de l’expérience B (vous pouvez sélectionner un autre thème pour l’expérience B)
+   * Thème de l’expérience B. (Vous pouvez sélectionner un autre thème pour l’expérience B)
 
 1. Accédez à l’interface utilisateur Formulaires et documents, sélectionnez le formulaire adaptatif, cliquez sur **Plus**, puis sélectionnez **Démarrer le test A/B**.
 
@@ -153,10 +153,10 @@ Pour afficher et analyser le rapport du test A/B :
 
 1. Sélectionnez le formulaire adaptatif, cliquez sur le bouton **Plus**, puis cliquez sur **Rapport du test A/B**. Le rapport s’affiche.
 
-[](assets/ab-test-report-3.png)
+[![Rapport de test A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analysez le rapport et voyez si vous disposez de suffisamment de points de données pour décider quelle expérience a le mieux fonctionné. Vous pouvez choisir de continuer le même test A/B pendant plus longtemps ou de désigner une expérience probante et terminer le test A/B.
 1. Pour déclarer qu’une expérience est probante et terminer les tests A/B, cliquez sur le bouton **Terminer le test A/B** sur le tableau de bord de génération de rapports. Une boîte de dialogue vous invite à choisir celle des deux expériences qui obtient les meilleurs résultats. Sélectionnez l’expérience la plus probante et confirmez la fin du test A/B.
- Autrement, vous pouvez d’abord désigner une expérience gagnante en cliquant sur le bouton **Déclarer gagnante** de l’expérience correspondante. Vous êtes invité(e) à confirmer l’expérience gagnante. Cliquez sur **Oui** pour terminer le test A/B.
+Autrement, vous pouvez d’abord désigner une expérience gagnante en cliquant sur le bouton **Déclarer gagnante** de l’expérience correspondante. Vous êtes invité(e) à confirmer l’expérience gagnante. Cliquez sur **Oui** pour terminer le test A/B.
 
 Si vous considérez que l’expérience A est la meilleure, le test A/B est arrêté, et à partir de ce moment-là, seule l’expérience A est transmise aux audiences.

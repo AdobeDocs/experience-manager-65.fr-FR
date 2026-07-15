@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1271'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ![data-integeration](assets/data-integeration.png)
@@ -145,7 +145,7 @@ Lorsque vous installez le package AEM Forms, un modèle de données de formulai
 
 Lorsque vous ouvrez le modèle de données de formulaire pour la première fois, il se connecte au service Microsoft Dynamics configuré et récupère les entités de votre instance Microsoft Dynamics. Les entités « contact » et « prospect » de Microsoft Dynamics sont déjà ajoutées dans le modèle de données de formulaire.
 
-Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL Formulaires > Intégrations de données]**. Sélectionnez **Microsoft Dynamics FDM** et cliquez sur **Modifier** pour ouvrir le modèle de données de formulaire en mode édition. Vous pouvez également ouvrir le modèle de données de formulaire directement à partir de l’URL suivante : 
+Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL Formulaires > Intégrations de données]**. Sélectionnez **Microsoft Dynamics FDM** et cliquez sur **Modifier** pour ouvrir le modèle de données de formulaire en mode édition. Vous pouvez également ouvrir le modèle de données de formulaire directement à partir de l’URL suivante :
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
@@ -153,7 +153,7 @@ Pour consulter le modèle de données de formulaire, accédez à **[!UICONTROL F
 
 Ensuite, vous pouvez créer un formulaire adaptatif basé sur le modèle de données de formulaire et l’utiliser dans divers cas de formulaires adaptatifs, tels que :
 
-* Remplir le formulaire adaptatif en obtenant des informations des entités et services Microsoft Dynamics
+* Remplir le formulaire adaptatif en demandant des informations des entités et services Microsoft Dynamics
 * Appeler des opérations du serveur Microsoft Dynamics définies dans un modèle de données de formulaire à l’aide de règles de formulaires adaptatifs
 * Écrire les données de formulaire envoyées dans les entités Microsoft Dynamics
 
