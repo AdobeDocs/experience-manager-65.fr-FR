@@ -16,9 +16,9 @@ ht-degree: 5%
 
 # Assistants Handlebars SCF {#scf-handlebars-helpers}
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ de personnalisation côté client ](client-customize.md)****[ |
+|   | ⇒ de personnalisation côté client [&#128279;](client-customize.md)**&#x200B;** |
 
 Les assistants Handlebars (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
@@ -594,10 +594,10 @@ La bibliothèque cliente doit :
 
 * Incluez une dépendance sur `cq.social.scf`.
 * Charger après le chargement de Handlebars.
-* Soyez [ inclus ](clientlibs.md).
+* Soyez [&#x200B; inclus &#x200B;](clientlibs.md).
 
 Remarque : les assistants SCF sont définis dans `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
+| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
 |---|---|
-|   | ⇒ de personnalisation côté client ](client-customize.md)****[ |
+|   | ⇒ de personnalisation côté client [&#128279;](client-customize.md)**&#x200B;** |

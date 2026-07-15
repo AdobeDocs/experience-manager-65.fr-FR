@@ -97,7 +97,7 @@ Créez un utilisateur ou une utilisatrice sur *auteur*, qui se voit attribuer le
    * **[!UICONTROL ID]** : sirius
    * **[!UICONTROL Adresse e-mail]** : sirius.nilson@mailinator.com
    * **[!UICONTROL Mot de passe]** : password
-   * **[!UICONTROL Confirm Password&amp;ast;]** : mot de passe
+   * **[!UICONTROL Confirm Password&ast;]** : mot de passe
    * **[!UICONTROL Prénom]** : Sirius
    * **[!UICONTROL Nom]** : Nilson
 
