@@ -1,23 +1,19 @@
 ---
-title: Comment utiliser hCaptcha® dans AEM Forms 6.5 ?
-description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha®. Guide détaillé inclus.
+title: Comment utiliser hCaptcha&reg; dans un Forms AEM 6.5 ?
+description: Améliorez sans effort la sécurité des formulaires grâce au service hCaptcha&reg;. Guide détaillé inclus.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
-workflow-type: ht
-source-wordcount: '872'
-ht-degree: 100%
+source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+workflow-type: tm+mt
+source-wordcount: '901'
+ht-degree: 95%
 
 ---
 
 # Connecter votre environnement AEM Forms à hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<!--
-<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
--->
-
-<span class="preview">Cette fonctionnalité n’est pas activée par défaut. Vous pouvez écrire à partir de votre adresse officielle à aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.</span>
+<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [ Activer le bouton (bascule) de fonction ](/help/forms/using/enable-feature-toggle.md). </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -48,13 +44,13 @@ Pour intégrer le service hCaptcha® à AEM Forms, procédez comme suit :
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
    1. Dans l’explorateur de configuration, vous pouvez sélectionner un dossier existant ou en créer un nouveau :
       * Pour créer un dossier et activer les configurations cloud :
-         1. Dans l’explorateur de configuration, sélectionnez **[!UICONTROL Créer]**.
-         1. Dans la boîte de dialogue Créer une configuration, spécifiez un nom et un titre et cochez **[!UICONTROL Configurations cloud]**.
-         1. Cliquez sur **[!UICONTROL Créer]**.
+        1. Dans l’explorateur de configuration, sélectionnez **[!UICONTROL Créer]**.
+        1. Dans la boîte de dialogue Créer une configuration, spécifiez un nom et un titre et cochez **[!UICONTROL Configurations cloud]**.
+        1. Cliquez sur **[!UICONTROL Créer]**.
       * Pour activer la configuration cloud pour un dossier existant :
-         1. Dans l’explorateur de configuration, sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
-         1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
-         1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+        1. Dans l’explorateur de configuration, sélectionnez le dossier et cliquez sur **[!UICONTROL Propriétés]**.
+        1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
+        1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
 1. Configurer vos services cloud :
    1. Dans votre instance de création AEM, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Services cloud]**, puis cliquez sur **[!UICONTROL hCaptcha®]**.
