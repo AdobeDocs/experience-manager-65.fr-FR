@@ -13,7 +13,7 @@ ht-degree: 95%
 
 # Connecter votre environnement AEM Forms à hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [ Activer le bouton (bascule) de fonction ](/help/forms/using/enable-feature-toggle.md). </span>
+<span class="preview">Cette fonctionnalité est basée sur l’ID de basculement de fonctionnalité `FT_FORMS-12407`. Pour activer la fonction, procédez comme indiqué dans l’article [&#x200B; Activer le bouton (bascule) de fonction &#x200B;](/help/forms/using/enable-feature-toggle.md). </span>
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatisé ayant pour but de différencier les personnes humaines des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les personnes humaines des programmes automatisés ou des robots. Il présente un test et évalue la réponse de l’utilisateur ou de l’utilisatrice pour déterminer s’il s’agit d’une personne humaine ou d’un robot qui interagit avec le site. Cela empêche l’utilisateur ou l’utilisatrice de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
