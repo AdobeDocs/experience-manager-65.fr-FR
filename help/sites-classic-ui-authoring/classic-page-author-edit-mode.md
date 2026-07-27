@@ -158,7 +158,7 @@ Vous spécifiez ici la manière dont les pages sont incluses dans votre carrouse
 
   * **Créer la liste à l’aide de**
     Il existe plusieurs façons de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous).
-    Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page sous les propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Sinon, le carrousel affiche une page vierge. Voir [ Modification des propriétés de page ](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+    Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page sous les propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Sinon, le carrousel affiche une page vierge. Voir [&#x200B; Modification des propriétés de page &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
     Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
     * **Options des pages enfants**
@@ -1014,7 +1014,7 @@ Ce composant nécessaire définit le début d’un nouveau formulaire sur une pa
 
     Chemin d’accès aux propriétés de nœud utilisé pour charger les valeurs prédéfinies dans les champs du formulaire.
     Ce champ est facultatif et indique le chemin d’accès à un nœud dans le référentiel. Lorsque ce nœud possède des propriétés qui correspondent aux noms des champs, les champs appropriés du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
-    Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Voir [ Préchargement des valeurs de formulaire ](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Voir [&#x200B; Préchargement des valeurs de formulaire &#x200B;](/help/sites-developing/developing-forms.md#preloading-form-values).
 
   * **Validation du client**
 
