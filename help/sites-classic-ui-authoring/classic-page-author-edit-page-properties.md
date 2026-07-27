@@ -11,8 +11,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 98%
 
 ---
 
@@ -36,13 +36,13 @@ Les propriétés sont réparties sur plusieurs onglets :
 
   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
 
-   * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
-   * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
+  * Après avoir sélectionné une balise, celle-ci est-elle répertoriée sous la zone de sélection ? Vous pouvez supprimer une balise de cette liste à l’aide du x.
+  * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
 
-     La nouvelle balise est en réalité créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
+    La nouvelle balise est en réalité créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
 
-   * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
-   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise de cette page.
+  * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
+  * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise de cette page.
 
 * **Masquer dans la navigation**
 
@@ -91,7 +91,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Rediriger l’URL de redirection**
 
-  Indique si vous souhaitez que la page utilise l’URL Vanity.
+  Indique si vous souhaitez que la page utilise l’URL de redirection.
 
 ### Avancé {#advanced}
 
@@ -131,19 +131,19 @@ Les propriétés sont réparties sur plusieurs onglets :
 
   Indiquez une configuration d’exportation.
 
-### Miniature  {#thumbnail}
+### Miniature {#thumbnail}
 
 * **Miniature de page**
 
   Affiche l’image miniature de la page. Vous pouvez :
 
-   * **Générer l’aperçu**
+  * **Générer l’aperçu**
 
-     Générez un aperçu de la page à utiliser comme miniature.
+    Générez un aperçu de la page à utiliser comme miniature.
 
-   * **Charger l’image**
+  * **Charger l’image**
 
-     Chargez une image à utiliser comme miniature.
+    Chargez une image à utiliser comme miniature.
 
 ### Services cloud {#cloud-services}
 

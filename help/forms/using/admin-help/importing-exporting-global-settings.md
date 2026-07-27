@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1208'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 94%
 
 ---
 
@@ -78,13 +78,13 @@ Le fichier de paramètres globaux de Workspace inclut les paramètres suivants 
 
 Les paramètres *specialRoutes* spécifient les propriétés des itinéraires spéciaux, approbation et refus, dans Workspace. Dans certaines situations, les boutons de ces itinéraires s’affichent sur les cartes de tâches dans Workspace. L’utilisateur ou l’utilisatrice peut alors les sélectionner sans ouvrir le formulaire. Vous pouvez modifier les paramètres specialRoutes dans le fichier de paramètres globaux pour ajouter des noms personnalisés à approuver et à refuser, ou pour créer des itinéraires supplémentaires.
 
-**client_specialRoutes_routes_approve_style :** nom du style dans le thème de Workspace, qui identifie les icônes des boutons d’approbation. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Le fichier CSS de Workspace est incorporé au fichier workspace-theme.swf, qui est dans le fichier adobe-workspace-client.ear > adobe-workspace-client.war. Pour modifier l’aspect de Workspace, vous devez recompiler le fichier workspace-theme.swf.
+**client_specialRoutes_routes_approve_style :** nom du style dans le thème de Workspace, qui identifie les icônes des boutons d’approbation. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Le fichier CSS de Workspace est incorporé au fichier workspace-theme.swf, qui se trouve dans le fichier adobe-workspace-client.ear > adobe-workspace-client.war. Pour modifier l’aspect de Workspace, vous devez recompiler le fichier workspace-theme.swf.
 
-**client_specialRoutes_routes_deny_names :** diverses chaînes qu’un utilisateur de Workbench peut utiliser pour être interprétées comme « refuser ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est deny. Si l’utilisateur de Workbench emploie le terme Deny (refuser) dans un processus, ce terme ne sera pas reconnu. Le terme Deny doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
+**client_specialRoutes_routes_deny_names :** diverses chaînes qu’un utilisateur ou une utilisatrice de Workbench peut utiliser pour être interprétées comme « refuser ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est deny. Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Deny (Refuser) dans un processus, ce terme ne sera pas reconnu. Le terme Deny doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
 
-**client_specialRoutes_routes_deny_style :** nom du style dans le fichier de thème de Workspace, qui identifie les icônes des boutons de refus. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** diverses chaînes qu’un utilisateur ou une utilisatrice de Workbench peut utiliser pour être interprétées comme « approuver ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est approve (approuver). Si l’utilisateur de Workbench emploie le terme Approve dans un processus, ce terme ne sera pas reconnu. Le terme Approve doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
+**client_specialRoutes_routes_deny_style :** nom du style dans le fichier de thème de Workspace, qui identifie les icônes des boutons de refus. Le style doit inclure des valeurs pour une icône activée et une icône désactivée. Pour définir un style pour un bouton personnalisé, vous devez utiliser le modèle suivant :
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names :** diverses chaînes qu’un utilisateur de Workbench peut utiliser pour être interprétées comme « approuver ». Les chaînes respectent la casse. Par exemple, la valeur par défaut est approve (approuver). Si l’utilisateur ou l’utilisatrice de Workbench emploie le terme Approve (Approuver) dans un processus, ce terme ne sera pas reconnu. Le terme Approve doit être ajouté à ce paramètre pour que le bouton d’itinéraire soit personnalisé et que le style lui soit appliqué.
 
 **client_specialRoutes_names :** les clés utilisées pour localiser la valeur de chaîne personnalisée dans les fichiers ressource. Chaque entrée de ce paramètre doit inclure les valeurs de noms et de style.
 
@@ -144,4 +144,4 @@ Pour définir le nom personnalisé :
 >
 >Pour l’application de démonstration, la valeur par défaut du nom d’affichage est **Citoyen**. Pour une application personnalisée que vous avez créée, le nom d’affichage par défaut est **Compte de contexte du système**.
 >
->**client_idleTimeout :** lorsqu’un utilisateur reste inactif pendant une durée spécifique, la session AEM Forms Workspace expire. Pour activer la fonction, ajoutez une entrée à Paramètres globaux &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Vous pouvez définir la valeur 0 pour désactiver le délai d’inactivité. La durée est spécifiée en secondes.
+>**client_idleTimeout :** lorsqu’un utilisateur reste inactif pendant une durée spécifique, la session AEM Forms Workspace expire. Pour activer la fonction, ajoutez une entrée à Paramètres globaux &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. Vous pouvez définir la valeur 0 pour désactiver le délai d’expiration pour inactivité. La durée est spécifiée en secondes.

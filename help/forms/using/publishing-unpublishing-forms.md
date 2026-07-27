@@ -12,7 +12,7 @@ feature: Correspondence Management
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 AEM Forms vous permet de créer, publier et dépublier des formulaires en toute facilité. Pour plus d’informations sur AEM Forms, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
 
-Le serveur AEM Forms propose deux instances : création et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication est destinée à conserver les éléments et les ressources connexes disponibles pour les utilisatrices et utilisateurs finaux. Vous pouvez importer des formulaires XDP et PDF en mode Création. Pour plus d’informations, voir [Obtention de documents XDP et PDF dans AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+Le serveur AEM Forms propose deux instances : création et publication. L’instance de création est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance de publication est destinée à conserver les éléments et les ressources connexes disponibles pour les utilisatrices et utilisateurs finaux. Vous pouvez importer des formulaires XDP et PDF en mode Création. Pour plus d’informations, voir [Obtention de documents XDP et PDF dans AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-## Ressources prises en charge  {#supported-assets-nbsp}
+## Ressources prises en charge   {#supported-assets-nbsp}
 
 AEM Forms prend en charge les types d’éléments suivants :
 
@@ -31,7 +31,7 @@ AEM Forms prend en charge les types d’éléments suivants :
 * Documents adaptatifs
 * Fragments de formulaire adaptatif
 * Thèmes
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (documents PDF plats)
 * Ensembles de formulaires
@@ -48,12 +48,12 @@ Vos formulaires adaptatifs peuvent utiliser certaines configurations ou des para
 * Les autres configurations de service cloud ne sont activées que si l’utilisateur ou l’utilisatrice dispose d’autorisations d’administration.
 * Personnalisations. Il s’agit notamment des éléments suivants, mais sans s’y limiter :
 
-   * Dispositions personnalisées
-   * Apparences personnalisées
-   * Fichier CSS : utilisé en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
-   * Catégorie de bibliothèque cliente : utilisée en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
-   * Toute autre bibliothèque cliente pouvant être incluse dans le modèle de formulaire adaptatif.
-   * Chemins de conception
+  * Dispositions personnalisées
+  * Apparences personnalisées
+  * Fichier CSS : utilisé en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
+  * Catégorie de bibliothèque cliente : utilisée en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
+  * Toute autre bibliothèque cliente pouvant être incluse dans le modèle de formulaire adaptatif.
+  * Chemins de conception
 
 ## États d’un élément {#asset-states}
 
