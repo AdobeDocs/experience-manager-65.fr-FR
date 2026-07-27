@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    * Prévisualiser au format HTML
    * Aperçu avec des données
-   * Aperçu au format PDF (disponible pour les modèles de formulaire)
+   * Aperçu au format PDF (disponible pour les modèles de formulaires)
 
 ## Aperçu avec des données {#preview-with-data}
 

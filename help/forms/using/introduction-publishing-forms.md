@@ -11,8 +11,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 100%
+source-wordcount: '1066'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -72,11 +72,11 @@ Le portail Formulaires vous permet de répertorier les formulaires du référent
 
    1. **Répertorier les formulaires sur une page AEM Sites** : ajoutez le composant **[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** à la page et configurez le **[Volet Liste](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** dans la page pour répertorier les formulaires y contenus. Ajoutez et configurez le composant **Volet Recherche** au composant **Search &amp; Lister** pour ajouter également la fonctionnalité de recherche à la page. La page contenant le composant du portail Formulaires est appelée [page du portail Formulaires](../../forms/using/creating-form-portal-page.md).
 
-   1. **Répertorier les formulaires sur une page qui n’est pas AEM Sites :** utilisez les [API de recherche du Portail Formulaires](/help/forms/using/listing-forms-webpage-using-apis.md) pour interroger, récupérer et répertorier des formulaires sur des pages autres qu’AEM Sites.
+   1. **Répertorier les formulaires sur une page non AEM Sites :** utilisez les [API de recherche du Portail Forms](/help/forms/using/listing-forms-webpage-using-apis.md) pour interroger, récupérer et répertorier des formulaires sur des pages autres qu’AEM Sites.
 
 1. **Répertorier les brouillons et les formulaires envoyés sur une page du portail Formulaires** : ajoutez et configurez le composant Brouillons et envois sur la page du portail Formulaires. Le composant dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés.
 
-   Pour activer l’affichage d’un formulaire adaptatif envoyé dans l’onglet des envois, définissez **Action d’envoi** sur **[Action d’envoi du portail Formulaires](configuring-submit-actions.md).** Vous pouvez également activer l’option Envoyer du portail Formulaires. Lorsqu’un utilisateur envoie un formulaire, ce dernier est ajouté à l’onglet des envois.
+   Pour activer l’affichage d’un formulaire adaptatif envoyé dans l’onglet des envois, définissez **Action d’envoi** sur **[Action d’envoi du portail Forms](configuring-submit-actions.md).** Vous pouvez également activer l’option Envoyer du portail Forms. Lorsqu’un utilisateur envoie un formulaire, ce dernier est ajouté à l’onglet des envois.
 
 1. **Configurez le stockage pour les données de brouillons de formulaires et formulaires envoyés :** par défaut, les données des brouillons et des envois sont stockées dans le référentiel AEM. Dans un environnement de production, il est recommandé de ne pas stocker des données de formulaire de brouillon ou envoyées dans le référentiel AEM. [Configurez le composant du portail Formulaires pour enregistrer les données à un emplacement sécurisé](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Facultatif) Personnaliser des composants du portail Formulaires :** [personnalisez des modèles de page du portail Formulaires](../../forms/using/customizing-templates-forms-portal-components.md) pour donner un aspect distinctif aux composants.
