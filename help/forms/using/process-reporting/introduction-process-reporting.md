@@ -9,9 +9,9 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c29c24f3e8b05d12689536376ce1a07798f784e6
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Process Reporting offre également la possibilité d’exporter le rapport et l
 
 ### Rapports ad hoc {#adhoc-reports}
 
-![print-&amp;-colour](assets/print-&-colour.png)
+![print-&amp;-colour](assets/print-and-colour.png)
 
 Utilisez des filtres pour obtenir une vue spécifique des données.
 
