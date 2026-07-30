@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 100%
+source-wordcount: '1471'
+ht-degree: 99%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 100%
 
 ### Nouveautés {#what-is-new-june}
 
-Il s’agit de la première version des composants principaux CIF qui soit prise en charge dans Adobe Experience Manager.
+Il s’agit de la première version des composants principaux CIF qui soit prise en charge dans Adobe Experience Manager.
 
 * Ajout du tri des produits sur les pages Liste des produits et Résultats de la recherche pour permettre aux acheteurs et aux acheteuses de les trier en fonction de la pertinence, du prix et du nom du produit.
 
@@ -154,9 +154,9 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Recherche à facettes optimisée en combinant la requête de catégorie à la requête de recherche de produit.
 
-* Les sélecteurs de catégorie et de produit pour l’aperçu de page respectent le cq:catalogPath.
+* Les sélecteurs de catégorie/produit pour l’aperçu de page respectent cq:catalogPath.
 
-* Plusieurs correctifs de bogues.
+* Plusieurs correctifs de bugs.
 
 ## Date de publication : mai 2020
 
@@ -246,7 +246,7 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 
 * Modification de mot de passe disponible dans Mon compte.
 
-* Prise en charge d’i18n pour les composants principaux côté serveur AEM CIF.
+* Prise en charge de l’internationalisation (i18n) pour les composants principaux côté serveur AEM CIF.
 
 * Composant de produit associé générique disponible.
 

@@ -10,8 +10,8 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '3524'
-ht-degree: 100%
+source-wordcount: '3793'
+ht-degree: 97%
 
 ---
 
@@ -39,53 +39,53 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
 
 * Utilisez des tirets pour séparer les mots.
 
-   * Nommez les pages en utilisant des tirets (-) comme séparateurs.
-   * Évitez d’utiliser la casse mixte, les caractères de soulignement et les espaces.
+  * Nommez les pages en utilisant des tirets (-) comme séparateurs.
+  * Évitez d’utiliser la casse mixte, les caractères de soulignement et les espaces.
 
 * Dans la mesure du possible, évitez d’utiliser des paramètres de requête. Si nécessaire, limitez-les à deux ou moins.
 
-   * Utilisez la structure de répertoire pour indiquer l’architecture des informations, le cas échéant.
-   * Si une structure de répertoires n’est pas désirable, utilisez des sélecteurs Sling dans l’URL plutôt que des chaînes de requêtes. En plus de fournir une valeur pour l’optimisation du moteur de recherche, les sélecteurs Sling permettent la mise en cache des pages pour le Dispatcher.
+  * Utilisez la structure de répertoire pour indiquer l’architecture des informations, le cas échéant.
+  * Si une structure de répertoires n’est pas désirable, utilisez des sélecteurs Sling dans l’URL plutôt que des chaînes de requêtes. En plus de fournir une valeur pour l’optimisation du moteur de recherche, les sélecteurs Sling permettent la mise en cache des pages pour le Dispatcher.
 
-* Plus une URL est lisible, mieux c’est ; faites figurer des mots-clés pour valoriser l’URL.
+* Plus une URL est lisible, mieux c’est. La présence de mots-clés dans l’URL améliore la valeur.
 
-   * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
-   * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
-   * Par exemple :
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-est préférable à `mybrand.com/products/product-detail.1234.html`
+  * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
+  * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
+  * Par exemple :
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    est préférable à `mybrand.com/products/product-detail.1234.html`
 
 * Évitez autant que possible les sous-domaines, car les moteurs de recherche les traitent comme des entités différentes et réduisent la valeur du site pour l’optimisation du moteur de recherche.
 
-   * Utilisez plutôt des sous-chemins de premier niveau. Par exemple, utilisez `es.mybrand.com/home.html` plutôt que `www.mybrand.com/es/home.html`.
+  * Utilisez plutôt des sous-chemins de premier niveau. Par exemple, utilisez `es.mybrand.com/home.html` plutôt que `www.mybrand.com/es/home.html`.
 
-   * Planifiez la hiérarchie de contenu afin qu’elle corresponde à la façon dont le contenu est présenté, conformément à cette consigne.
+  * Planifiez la hiérarchie de contenu afin qu’elle corresponde à la façon dont le contenu est présenté, conformément à cette consigne.
 
 * L’efficacité des mots-clés dans les URL diminue à mesure que la longueur de l’URL et la position du mot-clé augmentent. En d’autres termes, plus c’est court, mieux c’est.
 
-   * Utilisez les techniques et fonctionnalités de raccourcissement d’URL fournies par AEM pour supprimer les éléments d’URL inutiles.
-   * Par exemple, `mybrand.com/en/myPage.html` est préférable à `mybrand.com/content/my-brand/en/myPage.html`.
+  * Utilisez les techniques et fonctionnalités de raccourcissement d’URL fournies par AEM pour supprimer les éléments d’URL inutiles.
+  * Par exemple, `mybrand.com/en/myPage.html` est préférable à `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Utilisez des URL canoniques.
 
-   * Si une URL peut être fournie à partir de différents chemins ou avec différents paramètres ou sélecteurs, veillez à utiliser une balise `rel=canonical` sur la page.
+  * Si une URL peut être fournie à partir de différents chemins ou avec différents paramètres ou sélecteurs, veillez à utiliser une balise `rel=canonical` sur la page.
 
-   * Incluez les URL canoniques dans le code du modèle d’AEM.
+  * Incluez les URL canoniques dans le code du modèle d’AEM.
 
 * Dans la mesure du possible, faites correspondre les URL aux titres des pages.
 
-   * Les personnes créant du contenu doivent être encouragées à suivre cette pratique.
+  * Les personnes créant du contenu doivent être encouragées à suivre cette pratique.
 
 * Prise en charge de l’insensibilité à la casse dans les requêtes d’URL.
 
-   * Configurez le Dispatcher afin de réécrire toutes les requêtes entrantes en minuscules.
-   * Formez les personnes créant du contenu à créer toutes les pages à l’aide de lettres minuscules.
+  * Configurez le Dispatcher afin de réécrire toutes les requêtes entrantes en minuscules.
+  * Formez les personnes créant du contenu à créer toutes les pages à l’aide de lettres minuscules.
 
 * Assurez-vous que chaque page n’est diffusée qu’à partir d’un seul protocole.
 
-   * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder via `https`, le moteur de recherche les suit comme deux pages distinctes.
+  * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder via `https`, le moteur de recherche les suit comme deux pages distinctes.
 
-   * Actuellement, Google préfère les pages `https` aux pages `http`. Elles permettent de simplifier l’utilisation de l’ensemble du site via `https`.
+  * Actuellement, Google préfère les pages `https` aux pages `http`. Elles permettent de simplifier l’utilisation de l’ensemble du site via `https`.
 
 ### Configuration du serveur {#server-configuration}
 
@@ -93,7 +93,7 @@ En termes de configuration du serveur, vous pouvez accomplir les étapes suivant
 
 * Utilisez un fichier `robots.txt` pour empêcher l’analyse de tout contenu qui ne doit pas être indexé.
 
-   * Bloquez **toute** analyse sur les environnements de test.
+  * Bloquez **toute** analyse sur les environnements de test.
 
 * Lors du lancement d’un nouveau site avec des URL mises à jour, implémentez des redirections 301 pour vous assurer que votre classement d’optimisation du moteur de recherche existant n’est pas perdu.
 * Incluez une favicon à votre site.
@@ -196,7 +196,7 @@ Vous pouvez afficher les noms de pages localisés pour les utilisateurs de conte
 * il serait préférable que l’URL soit :
   `www.mydomain.com/es/casa.html`.
 
-La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues pour que le contenu reste synchronisé.
+La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans tous les paramètres régionaux pour que le contenu reste synchronisé.
 
 La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
@@ -206,7 +206,7 @@ La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` 
 * à laquelle vous ajoutez ensuite une propriété :
   `sling:alias` = `casa`
 
-Les outils de traduction d’AEM tels que le gestionnaire multisite peuvent ainsi conserver des relations entre :
+Les outils de traduction d’AEM tels que Multi-Site Manager peuvent ainsi conserver des relations entre :
 
 * `/en/home`
 
@@ -223,8 +223,8 @@ Tout en permettant aux utilisateurs finaux d’interagir avec le nom de la page 
 Dans une installation AEM standard :
 
 * pour la configuration OSGi
-  **Apache Sling Resource Resolver Factory**
-(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Fabrique de résolveur de ressource Apache Sling**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propriété
   **Emplacement de mappage** (`resource.resolver.map.location`)
@@ -245,7 +245,7 @@ Voici un exemple de la manière dont ce problème se produit :
 
 1. Le Dispatcher met la réponse en cache à l’adresse `/my-page.html` et renvoie la réponse à l’utilisateur.
 1. Un créateur/une créatrice de contenu modifie cette page et l’active.
-1. L’agent de vidage du Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que le Dispatcher ne possède pas de page mise en cache dans ce chemin, l’ancien contenu reste en cache et est périmé.
+1. L’agent de vidage Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que le Dispatcher ne dispose pas d’une page mise en cache dans ce chemin, l’ancien contenu reste en cache et est périmé.
 
 Il existe plusieurs façons de configurer des règles de vidage du Dispatcher personnalisées qui mappent les URL plus courtes aux URL plus longues à des fins d’invalidation du cache.
 
@@ -253,7 +253,7 @@ Cependant, il existe également un moyen plus simple de gérer ce problème :
 
 1. **Règles SlingResourceResolver**
 
-   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
+   À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
 
    * **Apache Sling Resource Resolver Factory**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
@@ -365,7 +365,7 @@ AEM utilise le [module de plan de site d’Apache Sling](https://github.com/apa
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible en tant que fonctionnalité de produit depuis la version 6.5.11.0 d’Adobe Experience Manager.
+>Disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager version 6.5.11.0.
 > 
 >Pour les versions plus anciennes, vous pouvez enregistrer vous-même un servlet Sling pour écouter un appel `sitemap.xml`. Utilisez la ressource fournie par le biais de l’API de servlet pour rechercher la page active et ses descendants afin de générer un fichier `sitemap.xml`.
 
