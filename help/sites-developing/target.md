@@ -204,7 +204,7 @@ Par exemple, si vous souhaitez utiliser le [service Marketing Cloud ID](https:/
 >
 >Si une mbox personnalisée est définie dans une configuration Target, vous devez posséder un accès en lecture à **/etc/cloudservices** sur les serveurs de publication. Sans cet accès, le chargement de fichiers mbox.js sur un site web de publication générera une erreur 404.
 
-1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez à la page **Outils** de CQ et sélectionnez ensuite **Services cloud**. ([&#128279;](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. Dans l’arborescence, sélectionnez Adobe Target, puis, dans la liste des configurations, double-cliquez sur votre configuration Target.
 1. Sur la page de configuration, cliquez sur Modifier.
 1. Pour la propriété mbox.js personnalisée, cliquez sur Parcourir et sélectionnez le fichier.

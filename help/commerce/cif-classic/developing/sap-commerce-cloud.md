@@ -409,7 +409,7 @@ public class AxisFilter implements VariantFilter {
 * Le panier est détenu par `CommerceSession:` :
 
   * `CommerceSession` effectue l’ajout, la suppression, etc.
-  * `CommerceSession` effectue également les différents calculs sur le panier. ``
+  * `CommerceSession` effectue également les différents calculs sur le panier. &grave;&grave;
 
 * Bien que n’étant pas directement associé au panier, `CommerceSession` doit également fournir des informations de prix de catalogue (puisqu’il gère les prix).
 
