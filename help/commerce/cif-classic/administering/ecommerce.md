@@ -10,8 +10,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
   </tr>
   <tr>
    <td>Disponibilité</td>
-   <td><p>Oui. SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4).</p> <p>Commerce Cloud Salesforce (Connecteur Open Source pour prendre en charge AEM 6.4)</p> </td>
+   <td><p>Oui. SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4)</p> <p>Commerce Cloud Salesforce (Connecteur Open Source pour prendre en charge AEM 6.4)</p> </td>
    <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et compatible avec la version 2.3.1)</td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@ eCommerce, avec la gestion de l’information sur les produits (PIM), gère les 
 
 AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux. L’environnement de création AEM vous permet de personnaliser les pages et les composants en fonction du contexte du visiteur ou de la visiteuse cible et des stratégies de marchandisage. Par exemple :
 
-* Pages de produits
+* Pages produits
 * Composants de panier
 * Composants de passage en caisse
 
@@ -133,12 +133,12 @@ AEM e-commerce fournit :
 
 * Différents **composants AEM prêts à l’emploi** illustrent ce qu’il est possible d’obtenir pour votre projet :
 
-   * Affichage des produits
-   * Panier
-   * Passage en caisse
-   * Produits récemment consultés
-   * Bons
-   * et autres
+  * Affichage des produits
+  * Panier
+  * Passage en caisse
+  * Produits récemment consultés
+  * Bons
+  * et autres
 
   ![Exemple de composants geometrixx.](/help/sites-administering/assets/chlimage_1-130.png)
 
@@ -148,10 +148,10 @@ AEM e-commerce fournit :
 
 * **Rechercher** avec :
 
-   * La recherche AEM
-   * La recherche du système e-commerce
-   * Une recherche tierce
-   * Ou une combinaison de ces trois fonctions.
+  * La recherche AEM
+  * La recherche du système e-commerce
+  * Une recherche tierce
+  * Ou une combinaison de ces trois fonctions.
 
   ![Exemple de recherche.](/help/sites-administering/assets/chlimage_1-131.png)
 
@@ -165,8 +165,8 @@ AEM e-commerce fournit :
 
 * Possibilité de développer un **commerce axé sur l’expérience en fonction des données et de l’activité des acheteurs**, Vous pouvez ainsi réaliser de nombreux scénarios :
 
-   * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
-   * Vous pouvez également proposer des offres saisonnières qui utilisent les données de profil (par exemple, la localisation). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
+  * Par exemple, une réduction des frais d’expédition proposée lorsque le montant total d’une commande dépasse un montant spécifique.
+  * Vous pouvez également proposer des offres saisonnières qui utilisent les données de profil (par exemple, la localisation). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
 
   Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
 
@@ -178,9 +178,9 @@ AEM e-commerce fournit :
 
 * Et d’autres fonctionnalités, notamment :
 
-   * Contenu du panier conservé d’une session à l’autre
-   * Historique des commandes exhaustif
-   * Mise à jour du catalogue express
+  * Contenu du panier conservé d’une session à l’autre
+  * Historique des commandes exhaustif
+  * Mise à jour du catalogue express
 
 ## Le framework {#the-framework}
 
