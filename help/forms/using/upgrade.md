@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
+source-git-commit: beb40e8e83b52b60d68dffecb95f3d877a47d397
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 88%
+source-wordcount: '427'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -45,7 +45,7 @@ Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 
 Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on JEE :
 
-![Mise à niveau de JEE 6.5](do-not-localize/upgradepathjee.png)
+![Mise à niveau de JEE 6.5](do-not-localize/upgradepathjee.svg)
 
 
 Vous pouvez effectuer une mise à niveau directe depuis :
@@ -78,7 +78,7 @@ Consultez l’article [Instructions d’installation du Pack de services AEM 6.
 
 Migration involves moving only assets (PDF, XDP, images, adaptive forms, correspondence management assets) from one server to another - processes (LCA), settings, configurations, and a few other pieces of metadata are not migrated. Perform the following steps to migrate to AEM 6.3 Forms:
 
-1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63_fr).
+1. Set up a fresh environment of [AEM 6.3 Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 1. Move XDP or other compatible assets to the freshly set instance. For detailed instructions, see [Importing and exporting assets to AEM Forms](../../forms/using/import-export-forms-templates.md). [
    ](../../forms/using/import-export-forms-templates.md)
 1. Build the required services, if any.
