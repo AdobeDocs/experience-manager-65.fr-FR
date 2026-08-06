@@ -75,15 +75,15 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
   Les utilisateurs et utilisatrices bénéficiant de ce rôle ont accès à tous les paramètres Document Security dans la console d’administration. Ces autorisations sont associées au rôle :
 
-   * Gestion de la configuration
-   * Gestion de la politique
-   * Gestion des ensembles de politiques
-   * Gestion des documents
-   * Gestion des éditeurs et éditrices
-   * Gestion des utilisateurs et utilisatrices invités et locaux
-   * Affichage des événements
-   * Déléguer
-   * Invitation d’utilisateurs et utilisatrices externes
+  * Gestion de la configuration
+  * Gestion de la politique
+  * Gestion des ensembles de politiques
+  * Gestion des documents
+  * Gestion des éditeurs et éditrices
+  * Gestion des utilisateurs et utilisatrices invités et locaux
+  * Affichage des événements
+  * Déléguer
+  * Invitation d’utilisateurs et utilisatrices externes
 
   **Administrateur ou administratrice de Document Security**
 
@@ -97,12 +97,12 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
   Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent utiliser la section Document Security de la console d’administration pour modifier d’autres politiques d’utilisateurs et utilisatrices ainsi que pour créer, modifier et supprimer des ensembles de politiques. Lorsqu’un administrateur ou une administratrice d’ensembles de politiques crée un ensemble de politiques, il ou elle peut affecter un coordinateur ou une coordinatrice à cet ensemble. Ces autorisations sont associées au rôle :
 
-   * Gestion de la politique
-   * Gestion des ensembles de politiques
-   * Gestion des documents
-   * Gestion des éditeurs et éditrices
-   * Affichage des événements
-   * Déléguer
+  * Gestion de la politique
+  * Gestion des ensembles de politiques
+  * Gestion des documents
+  * Gestion des éditeurs et éditrices
+  * Affichage des événements
+  * Déléguer
 
   >[!NOTE]
   >
@@ -112,9 +112,9 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
   Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent exécuter les tâches requises pour gérer l’ensemble des utilisateurs et utilisatrices invités et locaux dans les pages Web Document Security appropriées. Ces autorisations sont associées au rôle :
 
-   * Gestion des utilisateurs et utilisatrices invités et locaux
-   * Invitation d’utilisateurs et utilisatrices externes
-   * Accès aux pages Web destinées aux utilisateurs et utilisatrices finaux
+  * Gestion des utilisateurs et utilisatrices invités et locaux
+  * Invitation d’utilisateurs et utilisatrices externes
+  * Accès aux pages Web destinées aux utilisateurs et utilisatrices finaux
 
   >[!NOTE]
   >
@@ -124,8 +124,8 @@ Divers types d’utilisateurs et utilisatrices recourent à Document Security p
 
   Les utilisateurs et utilisatrices bénéficiant de ce rôle peuvent inviter des utilisateurs et utilisatrices. Ces autorisations sont associées au rôle :
 
-   * Invitation d’utilisateurs et utilisatrices externes
-   * Accès aux pages Web destinées aux utilisateurs et utilisatrices finaux
+  * Invitation d’utilisateurs et utilisatrices externes
+  * Accès aux pages Web destinées aux utilisateurs et utilisatrices finaux
 
   **Utilisateur ou utilisatrice final de Document Security**
 
@@ -253,25 +253,25 @@ Ajoutez des groupes dʼutilisateurs aux politiques au lieu dʼutilisateurs indiv
 
 * **Utiliser un agent d’autorisation externe pour appliquer les autorisations de manière dynamique :** vous pouvez utiliser un [agent d’autorisation externe](https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) pour évaluer et appliquer dynamiquement les autorisations en fonction de conditions externes. Lorsque les autorisations sont évaluées de manière dynamique, en fonction de conditions externes, les actions suivantes sont disponibles :
 
-   * Assurez un contrôle dʼaccès centralisé aux documents de votre organisation.
+  * Assurez un contrôle dʼaccès centralisé aux documents de votre organisation.
 
-   * Contrôlez l’accès aux documents protégés par une politique en déterminant de manière dynamique si un utilisateur peut accéder à un document protégé par une politique. Par exemple, décidez de manière dynamique si un utilisateur peut imprimer un document protégé par une politique.
+  * Contrôlez l’accès aux documents protégés par une politique en déterminant de manière dynamique si un utilisateur peut accéder à un document protégé par une politique. Par exemple, décidez de manière dynamique si un utilisateur peut imprimer un document protégé par une politique.
 
-   * Utilisez un mécanisme de contrôle d’accès que votre système de gestion de contenu utilise, en plus du processus standard d’évaluation des politiques. Par exemple, lorsque le service détermine si un utilisateur ou une utilisatrice peut imprimer un document protégé par une politique, il peut utiliser le processus d’évaluation de politique standard. Il peut également utiliser le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu.
+  * Utilisez un mécanisme de contrôle d’accès que votre système de gestion de contenu utilise, en plus du processus standard d’évaluation des politiques. Par exemple, lorsque le service détermine si un utilisateur ou une utilisatrice peut imprimer un document protégé par une politique, il peut utiliser le processus d’évaluation de politique standard. Il peut également utiliser le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu.
 
   Bien qu’il soit possible de remplacer complètement le processus d’évaluation des politiques de Document Security par un gestionnaire d’autorisation externe, il est recommandé d’utiliser le processus d’évaluation des politiques en plus dʼun gestionnaire d’autorisation externe. De cette façon, l’accès aux documents peut être contrôlé par le même mécanisme de contrôle que celui utilisé par votre système de gestion de contenu. Par exemple, lorsque le service Document Security détermine si un utilisateur ou une utilisatrice peut imprimer un document protégé par une politique, il utilise le processus d’évaluation de politique standard. Il utilise également le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu. Pour plus d’informations, consultez la section [Créer des gestionnaires d’autorisation externes](https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Réduire les ensembles de politiques à un nombre limité :** lʼaugmentation constante des politiques et des ensembles de politiques est imputable à de nombreux facteurs. Les plus courants sont les suivants :
 
-   * Augmentation des rôles utilisateur, des services et des documents au sein d’une organisation sur une période donnée.
-   * Les services dʼune organisation travaillent de manière autonome et exercent un contrôle strict sur les politiques qui leur sont propres. Cela conduit à des politiques identiques au sein d’une organisation.
+  * Augmentation des rôles utilisateur, des services et des documents au sein d’une organisation sur une période donnée.
+  * Les services dʼune organisation travaillent de manière autonome et exercent un contrôle strict sur les politiques qui leur sont propres. Cela conduit à des politiques identiques au sein d’une organisation.
 
   Adobe recommande de limiter au maximum le nombre de politiques et d’ensembles de politiques. Cela permet de gérer plus facilement les politiques et les ensembles de politiques et d’offrir de meilleures performances. Pour réduire au maximum le nombre de stratégies, procédez comme suit :
 
-   * Créez des politiques réutilisables. Elles peuvent être partagées dans plusieurs services.
-   * Pensez à créer des ensembles de politiques à l’échelle de l’organisation. Au lieu de créer un ensemble de politiques pour chaque service, créez des politiques qui s’appliquent à plusieurs services.
-   * Regroupez les politiques liées dans un ensemble de politiques. Ne créez pas d’ensemble de politiques distinct pour chaque politique.
-   * Utilisez un agent d’autorisation externe pour contrôler de manière dynamique les autorisations utilisateur.
+  * Créez des politiques réutilisables. Elles peuvent être partagées dans plusieurs services.
+  * Pensez à créer des ensembles de politiques à l’échelle de l’organisation. Au lieu de créer un ensemble de politiques pour chaque service, créez des politiques qui s’appliquent à plusieurs services.
+  * Regroupez les politiques liées dans un ensemble de politiques. Ne créez pas d’ensemble de politiques distinct pour chaque politique.
+  * Utilisez un agent d’autorisation externe pour contrôler de manière dynamique les autorisations utilisateur.
 
   >[!NOTE]
   >

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 97%
 
 ---
@@ -474,10 +474,10 @@ Certaines applications clientes peuvent ne pas prendre en charge les filigranes 
 * Vous ne pouvez pas utiliser un document PDF protégé par mot de passe comme élément de filigrane.
 * Les versions d’Acrobat et d’Adobe Reader antérieures à la version 10 ne prennent pas en charge les fonctionnalités de filigrane suivantes :
 
-   * Filigranes PDF
-   * Éléments multiples dans le filigrane (Texte/PDF)
-   * Options avancées telles que la plage de pages ou les options d’affichage
-   * Options de mise en forme du texte telles que la police, le nom de la police et la couleur spécifiés. Cependant, les versions antérieures d’Acrobat et de Reader afficheront le contenu du texte dans la police et la couleur par défaut.
+  * Filigranes PDF
+  * Éléments multiples dans le filigrane (Texte/PDF)
+  * Options avancées telles que la plage de pages ou les options d’affichage
+  * Options de mise en forme du texte telles que la police, le nom de la police et la couleur spécifiés. Cependant, les versions antérieures d’Acrobat et de Reader afficheront le contenu du texte dans la police et la couleur par défaut.
 
 * Acrobat 9.0 et versions antérieures : Acrobat 9.0 et les versions antérieures ne prennent pas en charge les noms de politique dans les filigranes dynamiques. Si Acrobat 9.0 ouvre un document protégé par une politique avec un filigrane dynamique qui inclut un nom de politique et d’autres données dynamiques, le filigrane s’affiche sans le nom de la politique. Si le filigrane dynamique inclut uniquement le nom de la politique, Acrobat affiche un message d’erreur.
 

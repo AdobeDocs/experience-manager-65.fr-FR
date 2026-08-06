@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2399'
-ht-degree: 95%
+source-wordcount: '2508'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Les types de données suivants sont pris en charge lors de l’appel des service
 
   Si un service Forms est appelé à lʼaide de la méthode de HTTP POST, les arguments sont transmis dans le corps de la requête HTTP. Si la signature du service AEM Forms possède un paramètre d’entrée de type chaîne, le corps de la requête peut contenir la valeur texte du paramètre d’entrée. Si la signature du service définit plusieurs paramètres de chaîne, la requête peut suivre la notation HTTP `application/x-www-form-urlencoded` avec les noms des paramètres utilisés comme noms des champs du formulaire.
 
-  Si un service Forms renvoie un paramètre de chaîne, le résultat est une représentation textuelle du paramètre de sortie. Si un service renvoie plusieurs paramètres de chaîne, le résultat est un document XML encodant les paramètres de sortie au format suivant :
+  Si un service Forms renvoie un paramètre de chaîne, le résultat est une représentation textuelle du paramètre de sortie. Si un service renvoie plusieurs paramètres de chaîne, le résultat est un document XML encodant les paramètres de sortie au format suivant :
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
   >[!NOTE]
@@ -84,7 +84,7 @@ Les types de données suivants sont pris en charge lors de l’appel des service
 * URL pointant vers le contenu du document (si la liste est composée dʼobjets `com.adobe.idp.Document`)
 
   L’exemple suivant est un message XML renvoyé par un service qui a un seul paramètre de sortie nommé *list*, qui est une liste de nombres entiers.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un paramètre de mappage de sortie est représenté dans le message XML résultant comme une série d’éléments XML avec un élément pour chaque enregistrement dans le mappage. Chaque élément reçoit le même nom que la clé de l’enregistrement du mappage. La valeur de chaque élément est une représentation textuelle de la valeur de l’enregistrement du mappage (si le mappage se compose d’enregistrements avec une valeur de chaîne) ou une URL pointant vers le contenu du document (si le mappage se compose d’enregistrements avec la valeur de `com.adobe.idp.Document`). Vous trouverez ci-dessous un exemple de message XML renvoyé par un service qui a un seul paramètre de sortie nommé `map`. Cette valeur de paramètre est un mappage constitué d’enregistrements qui associent des lettres aux objets `com.adobe.idp.Document`.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Un paramètre de mappage de sortie est représenté dans le message XML résultant comme une série d’éléments XML avec un élément pour chaque enregistrement dans le mappage. Chaque élément reçoit le même nom que la clé de l’enregistrement du mappage. La valeur de chaque élément est une représentation textuelle de la valeur de l’enregistrement du mappage (si le mappage se compose d’enregistrements avec une valeur de type chaîne) ou une URL pointant vers le contenu du document (si le mappage se compose d’enregistrements avec la valeur `com.adobe.idp.Document`). Consultez ci-dessous un exemple de message XML renvoyé par un service qui a un seul paramètre de sortie nommé `map`. Cette valeur de paramètre est un mappage constitué d’enregistrements qui associent des lettres aux objets `com.adobe.idp.Document`.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Appels asynchrones {#asynchronous-invocations}
@@ -319,7 +319,7 @@ Vous pouvez appeler un processus Forms depuis Acrobat en effectuant une requête
 
 Spécifiez lʼURL dʼappel du processus dans le champ *URL d’envoi* du bouton, comme illustré ci-après.
 
-L’URL complète pour appeler le processus est :8080/rest/services/MyApplication/EncryptDocument.
+L’URL complète pour appeler le processus est https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
 Si le processus nécessite un document PDF comme valeur d’entrée, veillez à envoyer le formulaire au format PDF, comme illustré ci-dessus. En outre, pour appeler correctement un processus, il doit renvoyer un document PDF. Sinon, Acrobat ne peut pas traiter la valeur renvoyée et une erreur se produit. Il n’est pas nécessaire de spécifier le nom de la variable de processus d’entrée. Par exemple, le processus *MyApplication/EncryptDocument* comporte une variable d’entrée nommée `inDoc`. Si le formulaire est envoyé au format PDF, il n’est pas nécessaire de spécifier inDoc.
 
