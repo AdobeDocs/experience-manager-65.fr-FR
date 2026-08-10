@@ -472,7 +472,7 @@ Les valeurs numériques sont respectivement 0,4, 0,82 et 1,0.
 
 **Modification des largeurs prises en charge par défaut**
 
-Utilisez la console web ([](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
+Utilisez la console web ([&#128279;](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
 
 Pour plus d’informations sur la configuration des services AEM, reportez-vous à la rubrique [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 

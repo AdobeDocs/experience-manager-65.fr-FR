@@ -94,7 +94,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser JavaScript {#using-javascript}
 
@@ -320,7 +320,7 @@ Pour consulter des exemples, voir :
 
 La boîte de dialogue Conception est utilisée lorsqu’un composant possède des détails de conception modifiables en [mode Conception](/help/sites-authoring/default-components-designmode.md).
 
-La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
+La définition est très similaire à celle d’une boîte de dialogue[&#x200B; servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
 * Nom du nœud : `cq:design_dialog`
 * Type : `nt:unstructured`
@@ -364,7 +364,7 @@ Pour ce faire, procédez comme suit :
 
 ## Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[ instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
+AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[&#x200B; instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
 
 Ce comportement, et la relation ressource-à-composant requise, peuvent être configurés :
 
