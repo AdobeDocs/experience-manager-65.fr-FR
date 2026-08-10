@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5464'
 ht-degree: 98%
 
 ---
@@ -472,7 +472,7 @@ Les valeurs numériques sont respectivement 0,4, 0,82 et 1,0.
 
 **Modification des largeurs prises en charge par défaut**
 
-Utilisez la console web ([:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
+Utilisez la console web ([&#128279;](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
 
 Pour plus d’informations sur la configuration des services AEM, reportez-vous à la rubrique [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -934,7 +934,7 @@ Utilisez l’algorithme suivant comme point de départ pour développer les clas
 1. Pour chaque taille de fenêtre d’affichage que vous ciblez, ajoutez la requête de média qui correspond à votre fichier CSS. Ajoutez les éléments suivants dans chaque requête de média :
 
    * Un sélecteur pour la classe `content` ; `.content{}`, par exemple.
-   * Des sélecteurs pour chaque Span class ; `.span3{ }`, par exemple.
+   * Des sélecteurs pour chaque classe de span ; `.span3{ }`, par exemple.
    * Un sélecteur pour la classe `row-fluid` ; `.row-fluid{ }`, par exemple.
    * Des sélecteurs pour les Span class qui se trouvent à l’intérieur des classes row-fluid ; `.row-fluid span3 { }`, par exemple.
 

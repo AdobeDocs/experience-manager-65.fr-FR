@@ -7,7 +7,7 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 96%
 
 ---
@@ -56,7 +56,7 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
    * Le sous-dossier `content`, qui est la racine d’une série de sous-dossiers reflétant le chemin d’accès à la page dans le référentiel.
 
-      * Cette structure comprend le fichier html pour la page sélectionnée (`<page-name>.html`).
+     * Cette structure comprend le fichier html pour la page sélectionnée (`<page-name>.html`).
 
    * D’autres ressources (fichiers `.js`, fichiers `.css`, images, etc.) sont localisées en fonction des paramètres du modèle d’export.
 
@@ -119,16 +119,16 @@ Les nœuds ci-dessous peuvent être utilisés pour créer un modèle de d’expo
 * `page`
 Le nœud page est utilisé pour copier le code HTML de la page dans le fichier compressé. Il possède les caractéristiques suivantes :
 
-   * Nœud obligatoire.
-   * Situé sous `/etc/contentsync/templates/<mysite>`.
-   * Est défini avec la propriété `Name` définie sur `page`.
-   * Le type de nœud est `nt:unstructured`.
+  * Nœud obligatoire.
+  * Situé sous `/etc/contentsync/templates/<mysite>`.
+  * Est défini avec la propriété `Name` définie sur `page`.
+  * Le type de nœud est `nt:unstructured`.
 
   Le nœud `page` possède les propriétés suivantes :
 
-   * Une propriété `type` définie avec la valeur `pages`.
+  * Une propriété `type` définie avec la valeur `pages`.
 
-   * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
+  * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ Le nœud rewrite définit la façon dont les liens sont réécrits dans la page 
 * `design`
 Le nœud design est utilisé pour copier la conception utilisée pour la page exportée. Il possède les caractéristiques suivantes :
 
-   * Facultatif.
-   * Situé sous `/etc/contentsync/templates/<mysite>`.
-   * Est défini avec la propriété `Name` définie sur `design`.
-   * Le type de nœud est `nt:unstructured`.
+  * Facultatif.
+  * Situé sous `/etc/contentsync/templates/<mysite>`.
+  * Est défini avec la propriété `Name` définie sur `design`.
+  * Le type de nœud est `nt:unstructured`.
 
   Le nœud `design` possède les propriétés suivantes :
 
-   * Une propriété `type` définie avec la valeur `copy`.
+  * Une propriété `type` définie avec la valeur `copy`.
 
-   * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
+  * Il ne comporte pas de propriété `path`, car le chemin d’accès actuel à la page est copié dynamiquement dans la configuration.
 
 * `generic`
 Un nœud générique sert à copier des ressources telles que des fichiers `.js` ou `.css` de bibliothèques clientes dans le fichier zip. Il possède les caractéristiques suivantes :
 
-   * Facultatif.
-   * Situé sous `/etc/contentsync/templates/<mysite>`.
-   * Aucun nom spécifique.
-   * Le type de nœud est `nt:unstructured`.
-   * Comporte une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * Facultatif.
+  * Situé sous `/etc/contentsync/templates/<mysite>`.
+  * Aucun nom spécifique.
+  * Le type de nœud est `nt:unstructured`.
+  * Comporte une propriété `type` et des propriétés `type` connexes. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Par exemple, le nœud de configuration ci-dessous copie les fichiers `mysite.clientlibs.js` dans le fichier zip :
 
