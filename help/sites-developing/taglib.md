@@ -162,7 +162,7 @@ La balise `<cq:setContentBundle>` crée un contexte de localisation i18n et le s
 
 Elle présente les attributs suivants :
 
-**Language** : langue des paramètres régionaux pour lesquels le lot de ressources doit être récupéré.
+**Language** : langue des paramètres régionaux pour lesquels le bundle de ressources doit être récupéré.
 
 **Source** : source préconisée des paramètres régionaux. Les valeurs définies peuvent être les suivantes :
 
@@ -176,14 +176,14 @@ Elle présente les attributs suivants :
 
 Si l’attribut `source` n’est pas défini :
 
-* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur &grave;&grave; `static`.
+* Si l’attribut `language` est défini, l’attribut `source` est défini, par défaut, sur `` `static`.
 
 * Si l’attribut `language` n’est pas défini, l’attribut `source` est défini, par défaut, sur `auto`.
 
-Le « lot de contenu » peut simplement être utilisé par des balises `<fmt:message>` JSTL standard. La recherche des messages par clés est double :
+Le « bundle de contenu » peut simplement être utilisé par des balises `<fmt:message>` JSTL standard. La recherche des messages par clés est double :
 
 1. Tout d’abord, les propriétés JCR de la ressource sous-jacente qui est rendue sont recherchées pour les traductions. Vous pouvez ainsi définir une boîte de dialogue de composant simple pour modifier ces valeurs.
-1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un lot de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou les paramètres régionaux de ce lot sont définis par les attributs de langue et source de la balise `<cq:setContentBundle>`.
+1. Si le nœud ne contient pas de propriété dont le nom correspond exactement à celui de la clé, la solution de secours consiste à charger un bundle de ressources à partir de la requête sling (`SlingHttpServletRequest.getResourceBundle(Locale)`). La langue ou les paramètres régionaux de ce bundle sont définis par les attributs de langue et source de la balise `<cq:setContentBundle>`.
 
 La balise `<cq:setContentBundle>` peut être utilisée comme suit dans un script jsp :
 

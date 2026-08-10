@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2954'
+source-wordcount: '2955'
 ht-degree: 1%
 
 ---
@@ -135,11 +135,11 @@ Le traitement peut aller du rendu JSON simple au rendu complet des pages, y comp
 * **path** - Chemin d’accès à un dossier de ressources sous /content/dam.
 * **rendus** - Type est un tableau de chaînes qui permet à l’utilisateur de spécifier les rendus à utiliser au lieu de l’image par défaut. La liste suivante résume certains rendus prêts à l’emploi, mais vous pouvez également utiliser n’importe quel rendu créé par le workflow :
 
-   * *original*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *cq5dam.web.1280.1280.png*
+  * *original*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *cq5dam.web.1280.1280.png*
 
 **image** - Collectez une image.
 
@@ -156,7 +156,8 @@ Le type d’image est utilisé pour inclure le logo We.Retail dans le fichier zi
 
 * **deep** - Propriété booléenne facultative déterminant si les pages enfants doivent également être incluses. La valeur par défaut est *true.*
 
-* **includeImages** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le **gestionnaire de mise à jour des pages de gestion de contenu web Day CQ** dans la console Web.
+* **includeImages** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
+Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le **gestionnaire de mise à jour des pages de gestion de contenu web Day CQ** dans la console Web.
 
 **rewrite** - le nœud rewrite définit la façon dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
 

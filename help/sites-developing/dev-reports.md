@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 100%
+source-wordcount: '5297'
+ht-degree: 94%
 
 ---
 
@@ -27,16 +27,16 @@ Pour les rapports standard fournis avec AEM :
 
 * Ces rapports reposent sur le framework de création de rapports :
 
-   * [Rapport de composants](/help/sites-administering/reporting.md#component-report)
-   * [Rapport d’activité de la page](/help/sites-administering/reporting.md#page-activity-report)
-   * [Rapport de l’utilisateur](/help/sites-administering/reporting.md#user-report)
-   * [Rapport d’instance de workflow](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [Rapport de composants](/help/sites-administering/reporting.md#component-report)
+  * [Rapport d’activité de la page](/help/sites-administering/reporting.md#page-activity-report)
+  * [Rapport de l’utilisateur](/help/sites-administering/reporting.md#user-report)
+  * [Rapport d’instance de workflow](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * Les rapports suivants sont basés sur des principes individuels et ne peuvent donc pas être étendus :
 
-   * [Utilisation du disque](/help/sites-administering/reporting.md#disk-usage)
-   * [Contrôle de l’intégrité](/help/sites-administering/reporting.md#health-check)
-   * [Rapport de workflow](/help/sites-administering/reporting.md#workflow-report)
+  * [Utilisation du disque](/help/sites-administering/reporting.md#disk-usage)
+  * [Contrôle de l’intégrité](/help/sites-administering/reporting.md#health-check)
+  * [Rapport de workflow](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ Pour les rapports standard fournis avec AEM :
 >La notation suivante est utilisée dans les exemples et définitions ci-dessous :
 >
 >* Chaque ligne définit un nœud ou une propriété où :
->  `N:<name> [<nodeType>]`  : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
->  `P:<name> [<propertyType]`  : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
->  `P:<name> = <value>`  : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
+>  `N:<name> [<nodeType>]` : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
+>  `P:<name> [<propertyType]` : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
+>  `P:<name> = <value>` : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
 >
 >* La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
 >* Le caractère | entre des éléments indique une liste d’éléments possibles, comme des types ou des noms. Par exemple, `String|String[]` signifie que la propriété peut être String ou String[].
@@ -113,17 +113,17 @@ La requête :
 
 * Se compose généralement des éléments suivants :
 
-   * Un chemin d’accès racine.
+  * Un chemin d’accès racine.
 
-     Ce chemin spécifie la sous-arborescence du référentiel dans lequel la recherche doit être effectuée.
+    Ce chemin spécifie la sous-arborescence du référentiel dans lequel la recherche doit être effectuée.
 
-     Pour contribuer à réduire l’impact sur les performances, il est conseillé de limiter (dans la mesure du possible) la requête à une sous-arborescence spécifique du référentiel. Le chemin d’accès racine peut soit être prédéfini dans le [modèle de rapport](#report-template), soit être défini par l’utilisateur ou l’utilisatrice dans la [boîte de dialogue Configuration (Modifier)](#configuration-dialog).
+    Pour contribuer à réduire l’impact sur les performances, il est conseillé de limiter (dans la mesure du possible) la requête à une sous-arborescence spécifique du référentiel. Le chemin d’accès racine peut soit être prédéfini dans le [modèle de rapport](#report-template), soit être défini par l’utilisateur ou l’utilisatrice dans la [boîte de dialogue Configuration (Modifier)](#configuration-dialog).
 
-   * [Un ou plusieurs critères](#query-definition).
+  * [Un ou plusieurs critères](#query-definition).
 
-     Ils sont imposés pour générer le jeu de résultats (initial). Il incluent, par exemple, les restrictions concernant les types de nœuds ou les contraintes de propriété.
+    Ils sont imposés pour générer le jeu de résultats (initial). Il incluent, par exemple, les restrictions concernant les types de nœuds ou les contraintes de propriété.
 
-**Le point clé ici est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (relation 1:1, par conséquent).**
+**Le point clé ici est que chaque nœud unique renvoyé dans le jeu de résultats de la requête est utilisé pour générer une seule ligne sur le rapport (donc une relation 1:1).**
 
 Le développeur ou la développeuse doit s’assurer que la requête définie pour un rapport renvoie un jeu de nœuds approprié pour ce rapport. Cependant, le nœud lui-même n’a pas besoin de contenir toutes les informations requises, elles peuvent également être dérivées des nœuds parents et/ou enfants. Par exemple, la requête utilisée pour le [Rapport utilisateur](/help/sites-administering/reporting.md#user-report) sélectionne des nœuds en fonction de leur type (dans ce cas : `rep:user`). Toutefois, la plupart des colonnes de ce rapport ne prélèvent pas directement leurs données de ces nœuds, mais des nœuds enfants `profile`.
 
@@ -139,12 +139,12 @@ Cela permet d’effectuer les opérations suivantes :
 
 * Résoudre les valeurs extraites : cela peut être réalisé de différentes manières.
 
-  Par exemple, des chemins d’accès peuvent être mappés sur un titre (comme dans le contenu plus lisible de la propriété *jcr:title* correspondante).
+  Par exemple, des chemins d’accès peuvent être mappés à un titre (comme dans le contenu plus lisible de la propriété *jcr:title* correspondante).
 
 * Application de filtres à différents points.
 * Création de valeurs composites, si nécessaire.
 
-  Par exemple, dans le cas d’un texte présenté à l’utilisateur, une valeur à utiliser pour le tri et une URL supplémentaire utilisée (du côté client) pour créer un lien.
+  Par exemple, dans le cas d’un texte présenté à l’utilisateur ou l’utilisatrice, une valeur à utiliser pour le tri et une URL supplémentaire utilisée (du côté client) pour créer un lien.
 
 #### Workflow de la file d’attente de traitement {#workflow-of-the-processing-queue}
 
@@ -315,68 +315,68 @@ N:charting
 
   Contient les définitions des graphiques actifs.
 
-   * `active`
+  * `active`
 
-     Comme plusieurs paramètres peuvent être définis, vous pouvez utiliser cette option pour définir ceux qui sont actuellement actifs. Ceux-ci sont définis par un tableau de nœuds (il n’existe pas de convention de nommage obligatoire pour ces nœuds, mais les rapports standard utilisent généralement `0`, `1`... `x`), chacun ayant la propriété suivante :
+    Comme plusieurs paramètres peuvent être définis, vous pouvez utiliser cette option pour définir ceux qui sont actuellement actifs. Ils sont définis par un tableau de nœuds (il n’existe pas de convention de nommage obligatoire pour ces nœuds, mais les rapports standard utilisent souvent `0`, `1`.. `x`), chacun ayant la propriété suivante :
 
-      * `id`
+    * `id`
 
-        L’identification des graphiques actifs. Elle doit correspondre à l’identification de l’une des `definitions` de diagramme.
+      L’identification des graphiques actifs. Elle doit correspondre à l’identification de l’une des `definitions` de diagramme.
 
 * `definitions`
 
   Définit les types de graphiques qui peuvent être disponibles pour le rapport. Les `definitions` à utiliser sont spécifiées par les paramètres `active`.
 
-  Les définitions sont spécifiées à l’aide d’un tableau de nœuds (nommés généralement `0`, `1`... `x`), chacun ayant les propriétés suivantes :
+  Les définitions sont spécifiées à l’aide d’un tableau de nœuds (nommés souvent `0`, `1`.. `x`), chacun ayant les propriétés suivantes :
 
-   * `id`
+  * `id`
 
-     L’identification du graphique.
+    L’identification du graphique.
 
-   * `type`
+  * `type`
 
-     Le type de graphique disponible. Faites un choix parmi les éléments suivants :
+    Le type de graphique disponible. Faites un choix parmi les éléments suivants :
 
-      * `pie`
-Graphique en secteurs. Généré uniquement à partir des données actuelles.
+    * `pie`
+      Graphique en secteurs. Généré uniquement à partir des données actuelles.
 
-      * `lineseries`
-Série de lignes (points reliés représentant les instantanés). Généré uniquement à partir des données d’historique.
+    * `lineseries`
+      Série de lignes (points reliés représentant les instantanés). Généré uniquement à partir des données d’historique.
 
-   * D’autres propriétés sont disponibles, selon le type de graphique :
+  * D’autres propriétés sont disponibles, selon le type de graphique :
 
-      * pour le type de graphique `pie` :
+    * pour le type de graphique `pie` :
 
-         * `maxRadius` (`Double/Long`)
+      * `maxRadius` (`Double/Long`)
 
-           Rayon maximum autorisé pour le graphique en secteurs et donc la taille maximale autorisée pour le graphique (sans légende). Ignoré si `fixedRadius` est défini.
+        Rayon maximum autorisé pour le graphique en secteurs et donc la taille maximale autorisée pour le graphique (sans légende). Ignoré si `fixedRadius` est défini.
 
-         * `minRadius` (`Double/Long`)
+      * `minRadius` (`Double/Long`)
 
-           Rayon minimum autorisé pour le graphique en secteurs. Ignoré si `fixedRadius` est défini.
+        Rayon minimum autorisé pour le graphique en secteurs. Ignoré si `fixedRadius` est défini.
 
-         * `fixedRadius` (`Double/Long`)
-Définit un rayon fixe pour le graphique en secteurs.
+      * `fixedRadius` (`Double/Long`)
+        Définit un rayon fixe pour le graphique en secteurs.
 
-      * pour le type de graphique [`lineseries`](/help/sites-administering/reporting.md#display-limits) :
+    * pour le type de graphique [`lineseries`](/help/sites-administering/reporting.md#display-limits) :
 
-         * `totals` (`Boolean`)
+      * `totals` (`Boolean`)
 
-           True si une ligne supplémentaire affichant le **Total** doit être présentée.
-par défaut : `false`
+        True si une ligne supplémentaire affichant le **Total** doit être présentée.
+        par défaut : `false`
 
-         * `series` (`Long`)
+      * `series` (`Long`)
 
-           Nombre de lignes/séries à afficher.
-Valeur par défaut : `9` (il s’agit également du maximum autorisé)
+        Nombre de lignes/séries à afficher.
+        Valeur par défaut : `9` (il s’agit également du maximum autorisé)
 
-         * `hoverLimit` (`Long`)
+      * `hoverLimit` (`Long`)
 
-           Nombre maximum d&#39;instantanés agrégés (points affichés sur chaque ligne horizontale, représentant des valeurs distinctes) pour lesquels des fenêtres contextuelles doivent être affichées. C&#39;est-à-dire lorsque l&#39;utilisateur ou l’utilisatrice survole avec le curseur une valeur distincte ou un libellé correspondant dans la légende du graphique.
+        Nombre maximum d&#39;instantanés agrégés (points affichés sur chaque ligne horizontale, représentant des valeurs distinctes) pour lesquels des fenêtres contextuelles doivent être affichées. C&#39;est-à-dire lorsque l&#39;utilisateur ou l’utilisatrice survole avec le curseur une valeur distincte ou un libellé correspondant dans la légende du graphique.
 
-           Valeur par défaut : `35` (en d’autres termes, aucune fenêtre contextuelle n’est affichée si plus de 35 valeurs distinctes sont applicables pour les paramètres actuels du graphique).
+        Valeur par défaut : `35` (en d’autres termes, aucune fenêtre contextuelle n’est affichée si plus de 35 valeurs distinctes sont applicables pour les paramètres actuels du graphique).
 
-           Il existe une limite supplémentaire de dix fenêtres contextuelles pouvant être affichées en parallèle (plusieurs fenêtres contextuelles peuvent être affichées lorsque l’utilisateur ou l’utilisatrice survole avec le curseur le texte de la légende).
+        Il existe une limite supplémentaire de dix fenêtres contextuelles pouvant être affichées en parallèle (plusieurs fenêtres contextuelles peuvent être affichées lorsque l’utilisateur ou l’utilisatrice survole avec le curseur le texte de la légende).
 
 ### Boîte de dialogue de configuration {#configuration-dialog}
 
@@ -461,10 +461,10 @@ En outre, un chemin racine peut être défini pour le rapport :
 
   Limite le rapport à une certaine section (arborescence ou sous-arborescence) du référentiel, ce qui est recommandé dans le cadre de l’optimisation des performances. Le chemin d’accès racine est spécifié par la propriété `rootPath` du nœud `report` de chaque page du rapport (extrait du modèle lors de la création de la page).
 
-   Il peut être spécifié par :
+  Il peut être spécifié par :
 
-   * le [modèle de rapport](#report-template) (valeur fixe ou valeur par défaut de la boîte de dialogue de configuration).
-   * l’utilisateur ou l’utilisatrice (à l’aide de ce paramètre)
+  * le [modèle de rapport](#report-template) (valeur fixe ou valeur par défaut de la boîte de dialogue de configuration).
+  * l’utilisateur ou l’utilisatrice (à l’aide de ce paramètre)
 
 ## Composant de base de colonne {#column-base-component}
 
@@ -531,8 +531,8 @@ N:definitions
 
   L’extracteur de valeur correspondant (qui contrôle ici) :
 
-   * vérifie si une propriété jcr:lastModified est disponible et, si tel est le cas, l’utilise.
-   * Si aucune propriété jcr:lastModified n’est disponible, le contenu de jcr:created est utilisé à la place.
+  * Vérifie s’il existe une propriété jcr:lastModified disponible et, le cas échéant, l’utilise.
+  * Si aucune propriété jcr:lastModified n’est disponible, le contenu de jcr:created est utilisé à la place.
 
 * `subPath`
 
@@ -599,81 +599,81 @@ N:definitions
 
   définit le programme de résolution à utiliser. Les programmes de résolution suivants sont disponibles :
 
-   * `const`
+  * `const`
 
-     fait correspondre des valeurs avec d’autres ; il est utilisé, par exemple, pour résoudre une constante telle que `en` sur sa valeur équivalente `English`.
+    fait correspondre des valeurs avec d’autres ; il est utilisé, par exemple, pour résoudre une constante telle que `en` sur sa valeur équivalente `English`.
 
-   * `default`
+  * `default`
 
-     Il s’agit du programme de résolution par défaut. Il s’agit d’un programme de résolution factice qui, en fait, ne résout rien.
+    Il s’agit du programme de résolution par défaut. Il s’agit d’un programme de résolution factice qui, en fait, ne résout rien.
 
-   * `page`
+  * `page`
 
-      résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. Par exemple, `/content/.../page/jcr:content/par/xyz` est résolu en `/content/.../page/jcr:content`.
+    résout une valeur de chemin sur le chemin d’accès de la page appropriée ; plus précisément, sur le nœud `jcr:content` correspondant. Par exemple, `/content/.../page/jcr:content/par/xyz` est résolu en `/content/.../page/jcr:content`.
 
-   * `path`
+  * `path`
 
-     Résout une valeur de chemin en ajoutant éventuellement un sous-chemin et en extrayant la valeur réelle d’une propriété du nœud (tel que défini par `resolverConfig`) au niveau du chemin résolu. Par exemple, un `path` `/content/.../page/jcr:content` peut être résolu sur le contenu de la propriété `jcr:title` ; cela signifie que le chemin de page sera résolu sur le titre de la page.
+    Résout une valeur de chemin en ajoutant éventuellement un sous-chemin et en extrayant la valeur réelle d’une propriété du nœud (tel que défini par `resolverConfig`) au niveau du chemin résolu. Par exemple, un `path` `/content/.../page/jcr:content` peut être résolu sur le contenu de la propriété `jcr:title` ; cela signifie que le chemin de page sera résolu sur le titre de la page.
 
-   * `pathextension`
+  * `pathextension`
 
-     résout une valeur en ajoutant un chemin d’accès en préfixe et en prenant la valeur réelle d’une propriété du nœud au niveau du chemin résolu. Par exemple, une valeur `de` peut être précédée d’un chemin, tel que `/libs/wcm/core/resources/languages`, et prendre la valeur de la propriété `language` pour résoudre le code de pays `de` sur la description de la langue `German`.
+    résout une valeur en ajoutant un chemin d’accès en préfixe et en prenant la valeur réelle d’une propriété du nœud au niveau du chemin résolu. Par exemple, une valeur `de` peut être précédée d’un chemin, tel que `/libs/wcm/core/resources/languages`, et prendre la valeur de la propriété `language` pour résoudre le code de pays `de` sur la description de la langue `German`.
 
 * `resolverConfig`
 
   Fournit des définitions pour le résolveur. Les options disponibles dépendent du `resolver` choisi :
 
-   * `const`
+  * `const`
 
-     Utilisez des propriétés pour spécifier les constantes en vue de la résolution. Le nom de la propriété définit la constante à résoudre ; la valeur de la propriété définit la valeur résolue.
+    Utilisez des propriétés pour spécifier les constantes en vue de la résolution. Le nom de la propriété définit la constante à résoudre ; la valeur de la propriété définit la valeur résolue.
 
-     Par exemple, une propriété avec **Nom**=`1` et **Valeur** `=One` va résoudre 1 sur One.
+    Par exemple, une propriété avec **Nom**=`1` et **Valeur** `=One` va résoudre 1 sur One.
 
-   * `default`
+  * `default`
 
-     Aucune configuration n’est disponible.
+    Aucune configuration n’est disponible.
 
-   * `page`
+  * `page`
 
-      * `propertyName` (facultatif)
+    * `propertyName` (facultatif)
 
-        Définit le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de *jcr:title* (titre de la page) est utilisée ; pour le programme de résolution `page`, cela signifie que le chemin est d’abord résolu sur le chemin d’accès de la page, puis sur le titre de la page.
+      Définit le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de *jcr:title* (titre de la page) est utilisée ; pour le programme de résolution de `page`, cela signifie que le chemin est d’abord résolu sur le chemin d’accès de la page, puis sur le titre de la page.
 
-   * `path`
+  * `path`
 
-      * `propertyName` (facultatif)
+    * `propertyName` (facultatif)
 
-        Spécifie le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de `jcr:title` est utilisée.
+      Spécifie le nom de la propriété qui doit être utilisée pour résoudre la valeur. Si elle n’est pas spécifiée, la valeur par défaut de `jcr:title` est utilisée.
 
-      * `subPath` (facultatif)
+    * `subPath` (facultatif)
 
-        Cette propriété peut être utilisée pour spécifier un suffixe à ajouter au chemin d’accès avant la résolution de la valeur.
+      Cette propriété peut être utilisée pour spécifier un suffixe à ajouter au chemin d’accès avant la résolution de la valeur.
 
-   * `pathextension`
+  * `pathextension`
 
-      * `path` (obligatoire)
+    * `path` (obligatoire)
 
-        Définit le chemin d’accès à ajouter comme préfixe.
+      Définit le chemin d’accès à ajouter comme préfixe.
 
-      * `propertyName` (obligatoire)
+    * `propertyName` (obligatoire)
 
-        Définit la propriété sur le chemin résolu où se situe la valeur réelle.
+      Définit la propriété sur le chemin résolu où se situe la valeur réelle.
 
-      * `i18n` (facultatif ; type booléen)
+    * `i18n` (facultatif ; type booléen)
 
-        Détermine si la valeur résolue doit être *internationalisée* (c’est-à-dire à l’aide des [services d’internationalisation de CQ5](/help/sites-administering/tc-manage.md)).
+      Détermine si la valeur résolue doit être *internationalisée* (c’est-à-dire à l’aide des [services d’internationalisation de CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
   Le prétraitement est facultatif et peut être lié (séparément) aux phases de traitement *apply* ou *applyAfter* :
 
-   * `apply`
+  * `apply`
 
-     Phase de prétraitement initiale ([étape 3 dans l’organigramme de la file d’attente de traitement](#processing-queue)).
+    Phase de prétraitement initiale ([étape 3 dans l’organigramme de la file d’attente de traitement](#processing-queue)).
 
-   * `applyAfter`
+  * `applyAfter`
 
-     Application après le prétraitement ([étape 9 dans l’organigramme de la file d’attente de traitement](#processing-queue)).
+    Application après le prétraitement ([étape 9 dans l’organigramme de la file d’attente de traitement](#processing-queue)).
 
 #### Résolveurs {#resolvers}
 
@@ -694,7 +694,7 @@ N:data
 
 **Page**
 
-Résout une valeur de chemin d’accès sur la propriété jcr:description sur le nœud jcr:content (enfant) de la page correspondante.
+résout une valeur de chemin d’accès sur la propriété jcr:description sur le nœud jcr:content (enfant) de la page correspondante.
 
 Consultez `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
 
@@ -749,8 +749,8 @@ La définition de `preprocessing` peut être appliquée à l’un des éléments
 
 Vous pouvez spécifier l’une des options suivantes à utiliser lors du prétraitement :
 
-* [motifs de recherche et de remplacement](#preprocessing-find-and-replace-patterns)
-Lorsqu’il est trouvé, le motif spécifié (qui est défini sous la forme d’une expression régulière) est remplacé par un autre ; il peut, par exemple, être utilisé pour extraire une sous-chaîne de l’original.
+* [rechercher et remplacer des modèles](#preprocessing-find-and-replace-patterns)
+Lorsqu’il est trouvé, le motif spécifié (qui est défini en tant qu’expression régulière) est remplacé par un autre ; il peut, par exemple, être utilisé pour extraire une sous-chaîne de l’original.
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
@@ -785,23 +785,23 @@ Un exemple de remplacement peut être décomposé comme suit :
 
 * Pour le nœud `definitions/data/preprocessing/apply` avec les deux propriétés suivantes :
 
-   * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+  * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
+  * `replace`: `$1`
 
 * Une chaîne qui arrive en tant que :
 
-   * `/content/geometrixx/en/services/jcr:content/par/text`
+  * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * Divisé en quatre sections :
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+  * `$1` - `(.*)` - `/content/geometrixx/en/services`
+  * `$2` - `(/jcr:content)` - `/jcr:content`
+  * `$3` - `(/|$)` - `/`
+  * `$4` - `(.*)` - `par/text`
 
 * et remplacée par la chaîne représentée par `$1` :
 
-   * `/content/geometrixx/en/services`
+  * `/content/geometrixx/en/services`
 
 #### Prétraitement - Formateurs des types de données {#preprocessing-data-type-formatters}
 
@@ -815,17 +815,17 @@ Actuellement, les formateurs de type de données disponibles sont les suivants 
 
   Formateur de type de données :
 
-   * `duration`
+  * `duration`
 
-     La durée correspond à l’intervalle entre deux dates définies. Par exemple, le début et la fin d’une action de workflow qui a duré 1 heure, lancée le 13/02/2011 à 11 h 23, pour se terminer une heure plus tard, le 13/02/2011 à 12 h 23.
+    La durée correspond à l’intervalle entre deux dates définies. Par exemple, le début et la fin d’une action de workflow qui a duré une heure, commençant le 2/13/11 à 11h23, et se terminant une heure plus tard, le 2/13/11 à 12h23.
 
-     Il convertit une valeur numérique (interprétée en millisecondes) en chaîne de durée ; par exemple, `30000` est formaté comme * `30s`.*
+    Il convertit une valeur numérique (interprétée en millisecondes) en chaîne de durée ; par exemple, `30000` est formaté comme * `30s`.*
 
-   * `datedelta`
+  * `datedelta`
 
-     Datadelta est une période entre une date passée et « maintenant » (le résultat sera donc différent si le rapport est visualisé ultérieurement).
+    Datadelta est une période entre une date passée et « maintenant » (le résultat sera donc différent si le rapport est visualisé ultérieurement).
 
-     Il convertit une valeur numérique (interprétée en tant que différence temporelle en jours) en une chaîne de date relative. Par exemple, 1 est formaté comme étant « il y a 1 jour ».
+    Il convertit une valeur numérique (interprétée en tant que différence temporelle en jours) en une chaîne de date relative. Par exemple, 1 est formaté comme étant « il y a 1 jour ».
 
 L’exemple suivant définit le formatage de `datedelta` pour les agrégats `min` et `max` :
 
@@ -868,35 +868,35 @@ N:definitions
 
   Les options suivantes sont disponibles en standard :
 
-   * `string`
-   * `number`
-   * `int`
-   * `date`
-   * `diff`
-   * `timeslot`
+  * `string`
+  * `number`
+  * `int`
+  * `date`
+  * `diff`
+  * `timeslot`
 
-     Utilisé pour extraire des parties d’une date nécessaires pour l’agrégation (par exemple, un regroupement par année pour obtenir des données agrégées pour chaque année).
+    Utilisé pour extraire des parties d’une date nécessaires pour l’agrégation (par exemple, un regroupement par année pour obtenir des données agrégées pour chaque année).
 
-   * `sortable`
+  * `sortable`
 
-     Utilisé pour des valeurs qui utilisent différentes valeurs (provenant de différentes propriétés) à des fins de tri et d’affichage.
+    Utilisé pour des valeurs qui utilisent différentes valeurs (provenant de différentes propriétés) à des fins de tri et d’affichage.
 
   De plus, l’une des options ci-dessus peut être définie comme valeur multiple ; par exemple, `string[]` définit une séquence de chaînes de caractères.
 
   L’extracteur de valeurs est sélectionné par le type de colonne. Si un extracteur de valeurs est disponible pour un type de colonne, il est utilisé. Dans le cas contraire, l’extracteur de valeur par défaut est utilisé.
 
-   Un type peut (éventuellement) prendre un paramètre. Par exemple, `timeslot:year` extrait l’année d’un champ de date. Types avec leurs paramètres :
+  Un type peut (éventuellement) prendre un paramètre. Par exemple, `timeslot:year` extrait l’année d’un champ de date. Types avec leurs paramètres :
 
-   * `timeslot` - Les valeurs sont comparables aux constantes correspondantes de `java.utils.Calendar`.
+  * `timeslot` - Les valeurs sont comparables aux constantes correspondantes de `java.utils.Calendar`.
 
-      * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+    * `timeslot:year` - `Calendar.YEAR`
+    * `timeslot:month-of-year` - `Calendar.MONTH`
+    * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
+    * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
+    * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
+    * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
+    * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
+    * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
 * `groupable`
 
@@ -906,77 +906,77 @@ N:definitions
 
   Définitions de filtre.
 
-   * `filterType`
+  * `filterType`
 
-     Les filtres disponibles sont les suivants :
+    Les filtres disponibles sont les suivants :
 
-      * `string`
+    * `string`
 
-        Un filtre basé sur une chaîne.
+      Un filtre basé sur une chaîne.
 
-   * `id`
+  * `id`
 
-     Identifiant du filtre.
+    Identifiant du filtre.
 
-   * `phase`
+  * `phase`
 
-     Phases disponibles :
+    Phases disponibles :
 
-      * `raw`
+    * `raw`
 
-        Le filtre est appliqué sur les données brutes.
+      Le filtre est appliqué sur les données brutes.
 
-      * `preprocessed`
+    * `preprocessed`
 
-        Le filtre est appliqué sur les données prétraitées.
+      Le filtre est appliqué sur les données prétraitées.
 
-      * `resolved`
+    * `resolved`
 
-        Le filtre est appliqué sur les données résolues.
+      Le filtre est appliqué sur les données résolues.
 
 * `aggregates`
 
   Définitions d’agrégat.
 
-   * `text`
+  * `text`
 
-     Nom textuel de l’agrégat. Si `text` n’est pas spécifié, alors il prend la description par défaut de l’agrégat. Par exemple, `minimum` est utilisé pour l’agrégat `min`.
+    Nom textuel de l’agrégat. Si `text` n’est pas spécifié, alors il prend la description par défaut de l’agrégat. Par exemple, `minimum` est utilisé pour l’agrégat `min`.
 
-   * `type`
+  * `type`
 
-     Type d’agrégat. Les agrégats disponibles sont les suivants :
+    Type d’agrégat. Les agrégats disponibles sont les suivants :
 
-      * `count`
+    * `count`
 
-        Compte le nombre de lignes.
+      Compte le nombre de lignes.
 
-      * `count-nonempty`
+    * `count-nonempty`
 
-        Compte le nombre de lignes non vides.
+      Compte le nombre de lignes non vides.
 
-      * `min`
+    * `min`
 
-        Fournit la valeur minimale.
+      Fournit la valeur minimale.
 
-      * `max`
+    * `max`
 
-        Fournit la valeur maximale.
+      Fournit la valeur maximale.
 
-      * `average`
+    * `average`
 
-        Fournit la valeur moyenne.
+      Fournit la valeur moyenne.
 
-      * `sum`
+    * `sum`
 
-        Fournit la somme de toutes les valeurs.
+      Fournit la somme de toutes les valeurs.
 
-      * `median`
+    * `median`
 
-        Fournit la valeur médiane.
+      Fournit la valeur médiane.
 
-      * `percentile95`
+    * `percentile95`
 
-        Utilise le 95e percentile de toutes les valeurs.
+      Utilise le 95e percentile de toutes les valeurs.
 
 ### Valeurs par défaut de colonne {#column-default-values}
 
@@ -1029,11 +1029,11 @@ Pour rendre une colonne générique, procédez comme suit :
 
   Consultez `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`.
 
-   * Les champs de la boîte de dialogue doivent faire référence aux mêmes noms que la propriété de composant correspondante (y compris son chemin d’accès).
+  * Les champs de la boîte de dialogue doivent faire référence aux mêmes noms que la propriété de composant correspondante (y compris son chemin d’accès).
 
-     Par exemple, si vous souhaitez que le type de la colonne générique puisse être configuré par le biais de la boîte de dialogue, utilisez un champ avec le nom `./definitions/type`.
+    Par exemple, si vous souhaitez que le type de la colonne générique puisse être configuré par le biais de la boîte de dialogue, utilisez un champ avec le nom `./definitions/type`.
 
-   * Les propriétés définies à l’aide de l’interface utilisateur/la boîte de dialogue sont prioritaires sur celles définies sur le composant `columnbase`.
+  * Les propriétés définies à l’aide de l’interface utilisateur/la boîte de dialogue sont prioritaires sur celles définies sur le composant `columnbase`.
 
 * Définissez la configuration de modification.
 
@@ -1043,15 +1043,15 @@ Pour rendre une colonne générique, procédez comme suit :
 
   Pour les propriétés qui sont définies à la fois sur les instances de composant et de colonne, la valeur définie sur la colonne est prioritaire.
 
-   Les propriétés disponibles pour une colonne générique sont les suivantes :
+  Les propriétés disponibles pour une colonne générique sont les suivantes :
 
-   * `jcr:title` - Nom de la colonne
-   * `definitions/aggregates` - Agrégats
-   * `definitions/filters` - Filtres
-   * `definitions/type` - Type de la colonne (doit être défini dans la boîte de dialogue, soit à l’aide d’un sélecteur ou d’une zone de liste modifiable, soit d’un champ masqué)
-   * `definitions/data/resolver` et `definitions/data/resolverConfig` (mais pas `definitions/data/preprocessing` ou `.../clientFilter`) - Le programme de résolution et la configuration
-   * `definitions/queryBuilder` - Configuration du générateur de requêtes
-   * `defaults/aggregate` - Agrégat par défaut
+  * `jcr:title` - Nom de la colonne
+  * `definitions/aggregates` - Agrégats
+  * `definitions/filters` - Filtres
+  * `definitions/type` - Type de la colonne (doit être défini dans la boîte de dialogue, soit à l’aide d’un sélecteur ou d’une zone de liste modifiable, soit d’un champ masqué)
+  * `definitions/data/resolver` et `definitions/data/resolverConfig` (mais pas `definitions/data/preprocessing` ou `.../clientFilter`) - Le programme de résolution et la configuration
+  * `definitions/queryBuilder` - Configuration du générateur de requêtes
+  * `defaults/aggregate` - Agrégat par défaut
 
   Dans le cas d’une nouvelle instance de la colonne générique dans le **Rapport utilisateur**, les propriétés définies avec la boîte de dialogue sont conservées sous :
 
@@ -1299,7 +1299,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
 
    >[!NOTE]
    >
-   >Dans cet exemple, il n’existe aucune définition de `N:data` ni de `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1 ; ce qui est le comportement par défaut.
+   >Dans cet exemple, il n’existe aucune définition de `N:data` ni de `P:clientFilter`. Cela est dû au fait que la valeur reçue du serveur est renvoyée sur une base 1:1, ce qui est le comportement par défaut.
    >
    >Il s’agit de la même chose que les définitions :
    >
@@ -1391,7 +1391,7 @@ Il est possible de les consulter à l’aide du menu Configuration de la console
 ### Service de base (configuration des rapports Day CQ) {#basic-service-day-cq-reporting-configuration}
 
 * **Fuseau horaire** définit le fuseau horaire pour lequel les données historiques sont créées. Cela permet de s’assurer que le graphique historique affiche les mêmes données pour chaque utilisateur ou utilisatrice dans le monde entier.
-* L’option **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec le **Fuseau horaire** pour les données historiques. Le paramètre régional permet de déterminer certains paramètres du calendrier spécifiques à un paramètre régional (par exemple, si le premier jour de la semaine est un dimanche ou un lundi).
+* L’option **Paramètres régionaux** définit les paramètres régionaux à utiliser conjointement avec le **Fuseau horaire** pour les données historiques. Les paramètres régionaux permettent de déterminer certains paramètres du calendrier spécifiques à des paramètres régionaux (par exemple, si le premier jour de la semaine est un dimanche ou un lundi).
 
 * **Chemin de l’instantané** définit le chemin racine où sont stockés les instantanés des graphiques historiques.
 * **Chemin d’accès aux rapports** définit le chemin d’accès à l’emplacement des rapports. Cela est utilisé par le service d’instantanés pour déterminer les rapports pour lesquels des instantanés doivent être créés.

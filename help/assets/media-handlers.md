@@ -112,9 +112,9 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
-   * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
-   * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling, assurez-vous que vous avez défini l’indicateur inherit sur true.
+  * Cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes, ainsi que la fonctionnalité commune d’extraction de sous-ressources.
+  * La meilleure façon de démarrer une implémentation est d’hériter d’une implémentation abstraite fournie qui prend en charge l’essentiel du traitement et qui fournit un comportement raisonnable par défaut : à savoir la classe com.day.cq.dam.core.AbstractAssetHandler.
+  * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
 Les méthodes suivantes doivent être implémentées :
 
@@ -124,7 +124,7 @@ Les méthodes suivantes doivent être implémentées :
 
 Voici un exemple de modèle :
 
-package my.own.trick; /&ast;&ast; &ast; @scr.component inherit=« true » &ast; @scr.service &ast;/ classe publique MyMediaHandler étend com.day.cq.dam.core.AbstractAssetHandler { // implémenter les parties pertinentes }
+package my.own.trick; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=« true » &amp;ast; @scr.service &amp;ast;/ classe publique MyMediaHandler étend com.day.cq.dam.core.AbstractAssetHandler { // implémenter les parties pertinentes }
 
 L’interface et les classes sont les suivantes :
 
@@ -151,8 +151,8 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
 
       * ID de groupe : `com.day.cq5.myhandler`
       * Id d’artefact : myBundle
-      * Nom : mon lot [!DNL Experience Manager]
-      * Description : Voici mon lot [!DNL Experience Manager].
+      * Nom : mon bundle [!DNL Experience Manager]
+      * Description : Voici mon bundle [!DNL Experience Manager].
 
    1. Cliquez sur **[!UICONTROL Terminer]**.
 
@@ -435,10 +435,10 @@ Lorsque vous téléchargez un fichier TXT dans [!DNL Experience Manager], après
    }
    ```
 
-1. Compilez la classe [!DNL Java™] et créez le lot :
+1. Compilez la classe [!DNL Java™] et créez le bundle :
 
    1. Cliquez avec le bouton droit sur le projet `myBundle`, sélectionnez **[!UICONTROL Exécuter en tant que]**, puis **[!UICONTROL Installation Maven]**.
-   1. Le lot `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
+   1. Le bundle `myBundle-0.0.1-SNAPSHOT.jar` (contenant la classe compilée) est créé sous `myBundle/target`.
 
 1. Dans CRX Explorer, créez un nœud sous `/apps/myApp`. Nom = `install`, type = `nt:folder`.
 1. Copiez le bundle `myBundle-0.0.1-SNAPSHOT.jar` et enregistrez-le sous `/apps/myApp/install` (avec WebDAV, par exemple). Le nouveau gestionnaire de texte est à présent actif dans [!DNL Experience Manager].

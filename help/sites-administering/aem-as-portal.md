@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 96%
 
 ---
@@ -166,12 +166,12 @@ Le portlet, dans sa configuration par défaut, met en cache les réponses qu’i
 
 Le portlet peut être configuré avec son propre cache, de sorte que le contenu dans le portlet s’affiche sans avoir à accéder à AEM. Le portail est disponible sous forme de contenu dans le répertoire /libs/portal/director. Pour accéder au contenu, démarrez une instance AEM et téléchargez le fichier de cet emplacement à l’aide de CRXDE Lite ou Webdav.
 
-Vous pouvez déployer ce lot lors de l’exécution ou l’ajouter à l’application Web du portlet sous `WEB-INF/lib/resources/bundles` avant le déploiement.
+Vous pouvez soit déployer ce bundle lors de l’exécution, soit l’ajouter à l’application web portlet sous `WEB-INF/lib/resources/bundles` avant le déploiement.
 
 Une fois le cache déployé, le portlet met en cache le contenu de l’instance de publication. Le cache du portlet peut être annulé en vidant le Dispatcher d’AEM. Pour configurer le portlet afin qu’il utilise son propre cache, procédez comme suit :
 
 1. Configurez un agent de réplication dans l’instance de création qui cible le serveur de portail.
-1. En supposant que le serveur du portail s’exécute sur l’hôte **localhost**, **port 8080**, et que l’application web du portlet AEM soit montée dans le contexte **cqportlet**, l’adresse URL pour vider le cache est `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
+1. Si le serveur du portail est exécuté sur **localhost**, **port 8080**, et que l’application Web du portlet AEM est montée dans le contexte **cqportlet**, l’adresse URL pour vider le cache de la console Web est `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
    **Remarque :** au lieu d’utiliser un paramètre de demande, vous pouvez envoyer un en-tête HTTP appelé **Path**.
 
 #### Purge du cache via l’agent de réplication {#flushing-the-cache-via-replication-agent}
@@ -389,7 +389,7 @@ Pour afficher la page d’administration du site web ou modifier une page du por
    </LoginModule>
    ```
 
-1. Dans la console de configuration OSGi, située par défaut à l’adresse :4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
+1. Dans la console de configuration OSGi, située par défaut à l’adresse https://localhost:4502/system/console/configMgr, sélectionnez **Gestionnaire d’authentification par code personnel CQ** dans le menu déroulant.
 1. Modifiez le paramètre **Chemin d’accès racine de l’URL** pour qu’il contienne la valeur unique **/**.
 
 ### Autorisations {#privileges}
@@ -444,7 +444,7 @@ META-INF/MANIFEST.MF
 /com/day/cq/portlet/toolbar/layout/toolbar.css
 ```
 
-Le dossier META-INF contient le fichier MANIFEST.MF nécessaire à OSGi afin de l’identifier comme lot. Il se présente comme suit :
+Le dossier META-INF contient le fichier MANIFEST.MF nécessaire à OSGi afin de l’identifier comme bundle. Il se présente comme suit :
 
 ```xml
 Manifest-Version: 1.0
@@ -473,7 +473,7 @@ La barre d’outils du portlet comporte deux états d’affichage. Chaque vue et
 
 #### Vue « Publication » {#publish-view}
 
-L’affichage Publication ne comporte qu’un seul bouton, qui permet d’afficher/de masquer la barre d’outils dans l’affichage Gestion. L’affichage Publication est représenté par le fichier publish.html dans le [lot précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont remplacés par le portlet de contenu correspondant lors du rendu :
+L’affichage Publication ne comporte qu’un seul bouton, qui permet d’afficher/de masquer la barre d’outils dans l’affichage Gestion. La vue de publication est représentée par le fichier publish.html dans le [bundle précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont remplacés par le portlet de contenu correspondant lors du rendu :
 
 #### Espaces réservés de la vue « Publication » {#publish-view-placeholders}
 
@@ -483,7 +483,7 @@ L’affichage Publication ne comporte qu’un seul bouton, qui permet d’affich
 
 #### Gérer la vue {#manage-view}
 
-L’affichage Gestion comporte quatre boutons : Modifier, onglet Sites web, Actualiser et Précédent. L’affichage Gestion est représenté par le fichier manage.html dans le [lot précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont remplacés par le portlet de contenu correspondant lors du rendu :
+L’affichage Gestion comporte quatre boutons : Modifier, onglet Sites web, Actualiser et Précédent. La vue de gestion est représentée par le fichier manage.html dans le [bundle précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le HTML, vous pouvez utiliser les espaces réservés suivants, qui sont remplacés par le portlet de contenu correspondant lors du rendu :
 
 #### Espaces réservés de la vue d’affichage {#manage-view-placeholders}
 
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Installation d’une disposition personnalisée {#installing-a-custom-layout}
 
-Pour installer une disposition personnalisée, accédez à la section **Lots** de la console Web OSGI du portlet et chargez le lot.
+Pour installer une disposition personnalisée, accédez à la section **Bundles** de la console Web OSGI du portlet et chargez le bundle.
 
 #### Packages {#packages}
 
@@ -555,7 +555,7 @@ Si votre site ne comporte pas de règle absolue pour gérer les informations des
 
 ### Services OSGi facultatifs {#optional-osgi-services}
 
-Des services OSGi facultatifs peuvent être mis en œuvre pour personnaliser différentes parties du portlet. Chaque service correspond à une interface Java. Cette interface peut être mise en œuvre et déployée par le biais d’un lot dans le portlet.
+Des services OSGi facultatifs peuvent être mis en œuvre pour personnaliser différentes parties du portlet. Chaque service correspond à une interface Java. Cette interface peut être mise en œuvre et déployée par le biais d’un bundle dans le portlet.
 
 <table>
  <tbody>
@@ -608,7 +608,7 @@ Des services OSGi facultatifs peuvent être mis en œuvre pour personnaliser dif
 
 #### Remplacement des services par défaut {#replacing-default-services}
 
-Les services ci-dessous possèdent une mise en œuvre par défaut dans le portlet de contenu (grâce à une interface Java correspondante). Pour personnaliser, un bundle contenant la nouvelle mise en œuvre du service doit être déployé dans l’application du portlet.
+Les services ci-dessous possèdent une mise en œuvre par défaut dans le portlet de contenu (grâce à une interface Java correspondante). Pour personnaliser, un bundle contenant la nouvelle mise en œuvre du service doit être déployé dans l’application portlet.
 
 En mettant en œuvre ce service, veillez à définir la propriété **service.ranking** du service sur une valeur positive. La mise en œuvre par défaut utilise le classement **0**, et le portlet utilise le service avec le classement le plus élevé.
 
@@ -730,7 +730,7 @@ Utilisez le composant Portail pour ajouter une fenêtre du portlet à votre page
 
 Pour accéder au contenu fourni par AEM WCM, le serveur du portail peut disposer d’AEM Portal Director Portlet. Pour ce faire, installez, configurez et ajoutez le portlet à la page du portail à l’aide des étapes fournies dans cette section.
 
-Par défaut, le portlet se connecte à l’instance de publication sur localhost:4503 et à l’instance de création sur localhost:4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
+Par défaut, le portlet se connecte à l’instance de publication sur localhost 4503 et à l’instance de création sur localhost 4502. Ces valeurs peuvent être modifiées lors du déploiement du portlet. Portal Director est disponible sous forme de contenu dans le référentiel, sous /libs/portal/directory. Téléchargez le fichier war de l’application avant de l’utiliser.
 
 ### Téléchargement du fichier WAR {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ Pour configurer le portlet :
    * **URL de base de la création** : URL de base de l’instance de création AEM.
    * **URL de base de la publication**: URL de base de l’instance de publication AEM.
    * **Création utilisée comme publication** : l’instance de création est-elle utilisée comme publication ?
-instance (pour le développement) ?
+     instance (pour le développement) ?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
