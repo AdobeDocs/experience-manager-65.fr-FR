@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 100%
+source-wordcount: '1468'
+ht-degree: 97%
 
 ---
 
@@ -73,12 +73,12 @@ Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transfor
 
 * [Bonnes pratiques en matière de déploiement et de maintenance d’AEM](/help/sites-deploying/best-practices.md)
 * [Meilleures pratiques pour la création de contenu](/help/sites-authoring/best-practices.md)
-* [Meilleures pratiques d’administration dans AEM ](/help/sites-administering/administer-best-practices.md)
+* [Meilleures pratiques d’administration dans AEM](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques pour le développement de solutions](/help/sites-developing/best-practices.md)
 * [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md)
-* [Le serveur AEM Forms n’incorpore pas de polices à un formulaire PDF dynamique](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
+* [Le serveur AEM Forms n’incorpore pas de polices à un formulaire Dynamic PDF](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Carte de référence rapide {#quick-reference-card}
 
-Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
-[![Carte de référence rapide sur les bonnes pratiques de HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
+[![Carte de référence rapide des bonnes pratiques d’HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

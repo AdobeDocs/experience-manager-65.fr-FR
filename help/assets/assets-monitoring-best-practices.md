@@ -8,7 +8,7 @@ exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1702'
 ht-degree: 99%
 
 ---
@@ -143,51 +143,51 @@ Les contrôles d’intégrité disponibles dans le [tableau de bord des opérati
 Voici quelques contrôles d’intégrité prêts à l’emploi qui s’avèrent utiles à la surveillance :
 
 * Contrôles système
-   * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * Instances : un auteur ou une autrice, tous les serveurs de publication
-   * Seuil d’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * Instances : un auteur ou une autrice, tous les serveurs de publication
+  * Seuil d’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur l’origine du problème.
 
 * File d’attente de réplication
 
-   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * Instances : un auteur ou une autrice, tous les serveurs de publication
-   * Seuil d’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur la file d’attente à l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * Instances : un auteur ou une autrice, tous les serveurs de publication
+  * Seuil d’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur la file d’attente à l’origine du problème.
 
 * Performances des réponses
 
-   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * Instances : tous les serveurs
-   * Durée de l’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur la file d’attente à l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * Instances : tous les serveurs
+  * Durée de l’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : le statut de l’une des mesures est soit AVERTISSEMENT soit CRITIQUE. Vérifiez l’attribut de journal pour plus d’informations sur la file d’attente à l’origine du problème.
 
 * Performances des requêtes
 
-   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * Instances : un auteur ou une autrice, tous les serveurs de publication
-   * Seuil d’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : une ou plusieurs requêtes s’exécutent lentement dans le système. Vérifiez l’attribut de journal pour plus d’informations sur les requêtes à l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * Instances : un auteur ou une autrice, tous les serveurs de publication
+  * Seuil d’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : une ou plusieurs requêtes s’exécutent lentement dans le système. Vérifiez l’attribut de journal pour plus d’informations sur les requêtes à l’origine du problème.
 
-* Bundles actifs
+* Active Bundles
 
-   * MBean : `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * Instances : tous les serveurs
-   * Seuil d’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : présence de bundles OSGi inactifs ou non résolus sur le système. Vérifiez l’attribut de journal pour plus d’informations sur les bundles à l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * Instances : tous les serveurs
+  * Seuil d’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : présence de bundles OSGi inactifs ou non résolus sur le système. Vérifiez l’attribut de journal pour plus d’informations sur les bundles à l’origine du problème.
 
 * Erreurs de journal
 
-   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * Instances : tous les serveurs
-   * Seuil d’alarme : lorsque le statut n’est pas OK
-   * Définition de l’alarme : les fichiers journaux contiennent des erreurs. Vérifiez l’attribut de journal pour plus d’informations sur l’origine du problème.
+  * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * Instances : tous les serveurs
+  * Seuil d’alarme : lorsque le statut n’est pas OK
+  * Définition de l’alarme : les fichiers journaux contiennent des erreurs. Vérifiez l’attribut de journal pour plus d’informations sur l’origine du problème.
 
 ## Problèmes courants et solutions  {#common-issues-and-resolutions}
 

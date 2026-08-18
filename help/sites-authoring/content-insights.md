@@ -30,9 +30,9 @@ La page Content Insight comprend des rapports qui utilisent les données Adobe S
 
 * SiteCatalyst : des rapports pour les mesures suivantes sont disponibles :
 
-   * Pages vues
-   * Durée de consultation moyenne de la page
-   * Sources
+  * Pages vues
+  * Durée de consultation moyenne de la page
+  * Sources
 
 * Target : rapport sur l’activité de campagne pour laquelle votre page contient des offres.
 * BrightEdge : émet des rapports sur les fonctionnalités de la page qui améliorent sa visibilité pour les moteurs de recherche et recommande des fonctionnalités à implémenter.
@@ -62,8 +62,8 @@ Le rapport de vues comprend les fonctionnalités suivantes pour évaluer le traf
 * Nombre total de vues pour une page pendant la période de reporting.
 * Graphe montrant le nombre de vues sur la période de reporting :
 
-   * Nombre total de vues.
-   * Visiteurs ou visiteuses uniques.
+  * Nombre total de vues.
+  * Visiteurs ou visiteuses uniques.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -94,9 +94,9 @@ Pour chaque campagne pour laquelle la page est active, un rapport s’affiche no
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## Rapport de recommendations SEO {#the-seo-recommendations-report}
+## Rapport de recommandations SEO {#the-seo-recommendations-report}
 
-Le rapport de recommendations SEO contient les résultats de l’analyse BrightEdge pour la page. Le rapport est une liste de contrôle des fonctionnalités de page qui indique quelles fonctionnalités la page inclut ou n’inclut pas pour optimiser la recherche à l’aide des moteurs de recherche.
+Le rapport de recommandations SEO contient les résultats de l’analyse BrightEdge pour la page. Le rapport est une liste de contrôle des fonctionnalités de page qui indique quelles fonctionnalités la page inclut ou n’inclut pas pour optimiser la recherche à l’aide des moteurs de recherche.
 
 Le rapport permet de créer des tâches afin d’améliorer la recherche des pages. Les recommandations indiquent que des tâches ont été créées pour la mise en œuvre de la recommandation. Voir [Attribution de tâches pour les recommandations SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 

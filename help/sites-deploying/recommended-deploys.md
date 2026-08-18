@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '1756'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1805'
+ht-degree: 98%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Cette page se rapporte aux topologies recommandées pour AEM. Pour plus d’informations sur les fonctionnalités de mise en cluster et sur leur configuration, reportez-vous à la [documentation sur les API Discovery Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html). 
+>Cette page se rapporte aux topologies recommandées pour AEM. Pour plus d’informations sur les fonctionnalités de mise en cluster et sur leur configuration, reportez-vous à la [documentation sur les API Discovery Apache Sling](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
 
-Les micronoyaux fonctionnent comme des gestionnaires de persistance dans AEM 6.2. Le choix d’un micronoyau adapté à vos besoins dépend de l’objectif de votre instance et du type de déploiement que vous envisagez.
+Les MicroKernels agissent comme des gestionnaires de persistance à partir d’AEM 6.2. Le choix d’une solution adaptée à vos besoins dépend de l’objectif de votre instance et du type de déploiement que vous envisagez.
 
 Les exemples ci-dessous visent à indiquer les utilisations recommandées dans les configurations d’AEM les plus courantes.
 
@@ -33,7 +33,7 @@ Les exemples ci-dessous visent à indiquer les utilisations recommandées dans l
 
 Dans ce scénario, une seule instance TarMK s’exécute sur un seul serveur.
 
-**Il s’agit du déploiement par défaut pour les environnements de création.**
+**Il s’agit du déploiement par défaut pour les instances de création.**
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
@@ -145,8 +145,8 @@ Il est presque impossible de prédire quel sera le modèle exact de simultanéit
 
 1. Nombre d’utilisateurs nommés connectés au cours de la journée : des milliers ou plus.
 1. Nombre d’utilisateurs simultanés : des centaines ou plus.
-1. Volume d’assimilation de ressources par jour : des centaines de milliers, voire plus.
-1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le Multi-site Manager ou des assimilations de flux d’actualité, par exemple).
+1. Volume d’ingestion de ressources par jour : des centaines de milliers, voire plus.
+1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le Multi-Site Manager ou des ingestions de flux d’actualité, par exemple).
 1. Volume de recherches par jour : des dizaines de milliers, voire plus.
 
 >[!NOTE]
@@ -155,7 +155,7 @@ Il est presque impossible de prédire quel sera le modèle exact de simultanéit
 
 Un déploiement minimal avec MongoDB implique généralement la topologie suivante :
 
-* Un ensemble de réplications MongoDB composé d’un nœud principal, de deux nœuds secondaires avec chacune des instances MongoDB s’exécutant dans une zone de disponibilité avec une latence de moins de 15 millisecondes entre chaque nœud ; 
+* Un ensemble de réplications MongoDB composé d’un nœud principal, de deux nœuds secondaires avec chacune des instances MongoDB s’exécutant dans une zone de disponibilité avec une latence de moins de 15 millisecondes entre chaque nœud ;
 * Un cluster d’instances de création avec un nœud leader et un nœud non-leader, les deux étant actifs à tout moment, chacune des instances de création étant exécutée dans chacun des centres de données, où les instances principales et secondaires de MongoDB s’exécutent.
 
 En outre, il est vivement recommandé de configurer le magasin de données sur un système de fichiers partagé ou Amazon S3, de sorte que les ressources ou les fichiers binaires ne soient pas stockés dans MongoDB. Cela garantit des performances optimales dans le cadre du déploiement.
@@ -178,7 +178,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 
 1. L’architecture et le dimensionnement du déploiement MongoDB doivent faire partie de la mise en œuvre du projet avec l’aide des architectes MongoDB ou des services de conseil Adobe qui connaissent bien AEM ;
 1. L’équipe partenaire ou celle du client ou de la cliente doit disposer de l’expertise MongoDB nécessaire pour être en mesure de maintenir et de gérer un environnement MongoDB existant ou nouveau ;
-1. Vous pouvez choisir de déployer la version commerciale ou open source de MongoDB (AEM prend en charge les deux), mais vous devez souscrire un contrat de maintenance et de support MongoDB directement auprès de MongoDB Inc ;
+1. Vous pouvez choisir de déployer la version commerciale ou Open Source de MongoDB (AEM prend en charge les deux), mais vous devez souscrire un contrat de maintenance et de support MongoDB directement auprès de MongoDB Inc ;
 1. Les architectures et infrastructures globales d&#39;AEM et de MongoDB doivent être bien définies et validées par un ou une architecte d&#39;AEM Adobe ;
 1. Examinez le modèle de prise en charge des déploiements d’AEM qui incluent MongoDB.
 
@@ -200,7 +200,7 @@ En utilisant un [magasin commun](/help/communities/working-with-srp.md), le cont
 
 Vous trouverez ci-dessous un ensemble de matrices décisionnelles pour vous aider à choisir le meilleur type de persistance pour votre déploiement :
 
-#### Choix du type de déploiement pour les instances d’auteur {#choosing-the-deployment-type-for-author-instances}
+#### Choix du type de déploiement pour les instances de création {#choosing-the-deployment-type-for-author-instances}
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 

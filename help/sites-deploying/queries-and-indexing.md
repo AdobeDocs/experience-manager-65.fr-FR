@@ -11,9 +11,9 @@ exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
-workflow-type: ht
-source-wordcount: '3051'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3098'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Un indexeur est un **Index de propriété**, pour lequel la définition d’inde
 
 Les implémentations d’**Apache Lucene** et **Solr** sont également disponibles par défaut, et prennent en charge l’indexation du texte intégral.
 
-L’**indexation transversale** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances avec la requête.
+L’**index de traversée** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances avec la requête.
 
 Si plusieurs indexeurs sont disponibles pour une requête, chaque indexeur disponible estime le coût d’exécution de la requête. Oak choisit ensuite l’indexeur avec le coût estimé le plus faible.
 
@@ -70,7 +70,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 Si une réindexation s’avère nécessaire dans des référentiels volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
 
-Les index sont configurés en tant que nœuds dans le référentiel sous le nœud **Oak:index**.
+Les index sont configurés en tant que nœuds dans le référentiel, sous le nœud **:index**.
 
 Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs options de configuration sont disponibles pour chaque indexeur en tant que propriétés de nœud. Pour plus d’informations, voir les détails de configuration pour chaque type d’indexeur ci-dessous.
 
@@ -79,8 +79,8 @@ Le type du nœud d’index doit être **oak:QueryIndexDefinition.** Plusieurs op
 L’index de propriété s’avère utile pour les requêtes qui ont des contraintes de propriété, mais qui ne sont pas en texte intégral. Il peut être configuré en suivant la procédure ci-dessous :
 
 1. Ouvrez CRXDE en accédant à `http://localhost:4502/crx/de/index.jsp`.
-1. Créez un nœud sous **oak:index**.
-1. Nommez le nœud **PropertyIndex**, puis définissez le type de nœud sur **oak:QueryIndexDefinition**.
+1. Créez un nœud sous **oak:index**
+1. Nommez le nœud **PropertyIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Définissez les propriétés suivantes pour le nouveau nœud :
 
    * **Type :**  `property` (de type String)
@@ -94,7 +94,7 @@ L’index de propriété comporte les options de configuration suivantes :
 
 * La propriété **type** spécifie le type d’index. Dans ce cas, il doit être défini sur **property**.
 
-* La propriété **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du nœud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la propriété **jcr:uuid** dont la tâche est d’exposer l’identifiant unique (UUID) de son nœud est ajouté à l’index.
+* La propriété **propertyNames** indique la liste des propriétés qui seront stockées dans l’index. En cas d’absence, le nom du nœud est utilisé comme valeur de référence de nom de propriété. Dans cet exemple, la propriété **jcr:uuid** dont la tâche est de présenter l’identifiant unique (UUID) de son nœud est ajoutée à l’index.
 
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
@@ -118,7 +118,7 @@ Si aucun index de recherche en texte intégral n’est configuré, les requêtes
 Vous pouvez configurer un index de recherche en texte intégral Lucene en suivant la procédure ci-dessous :
 
 1. Ouvrez CRXDE et créez un nœud sous **oak:index**.
-1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**.
+1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Ajoutez les propriétés suivantes au nœud :
 
    * **type :**  `lucene` (de type String)
@@ -316,39 +316,39 @@ Prenez cette structure de nœud comme exemple :
 
 * **Nom :** `analyzers`
 
-   * **Nom :** `default`
+  * **Nom :** `default`
 
-      * **Nom :** `charFilters`
-      * **Type :** `nt:unstructured`
+    * **Nom :** `charFilters`
+    * **Type :** `nt:unstructured`
 
-         * **Nom :** `HTMLStrip`
-         * **Nom :** `Mapping`
+      * **Nom :** `HTMLStrip`
+      * **Nom :** `Mapping`
 
-      * **Nom :** `tokenizer`
+    * **Nom :** `tokenizer`
 
-         * **Nom de la propriété :** `name`
+      * **Nom de la propriété :** `name`
 
-            * **Type :** `String`
-            * **Valeur :** `Standard`
+        * **Type :** `String`
+        * **Valeur :** `Standard`
 
-      * **Nom :** `filters`
-      * **Type :** `nt:unstructured`
+    * **Nom :** `filters`
+    * **Type :** `nt:unstructured`
 
-         * **Nom :** `LowerCase`
-         * **Nom :** `Stop`
+      * **Nom :** `LowerCase`
+      * **Nom :** `Stop`
 
-            * **Nom de la propriété :** `words`
+        * **Nom de la propriété :** `words`
 
-               * **Type :** `String`
-               * **Valeur :** `stop1.txt, stop2.txt`
+          * **Type :** `String`
+          * **Valeur :** `stop1.txt, stop2.txt`
 
-            * **Nom :** `stop1.txt`
+        * **Nom :** `stop1.txt`
 
-               * **Type :** `nt:file`
+          * **Type :** `nt:file`
 
-            * **Nom :** `stop2.txt`
+        * **Nom :** `stop2.txt`
 
-               * **Type :** `nt:file`
+          * **Type :** `nt:file`
 
 Les noms des filtres, charFilters et générateurs de jetons sont formés en supprimant les suffixes d’usine. Ainsi :
 
@@ -425,7 +425,7 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 1. Sélectionnez **Solr distant** dans la liste déroulante sous le fournisseur de serveurs **Oak Solr**.
 
 1. Accédez à CRXDE et connectez-vous en tant qu’administrateur ou administratrice.
-1. Créez un nœud appelé **solrIndex** sous **oak:index** et définissez les propriétés suivantes :
+1. Créez un nœud appelé **solrIndex** sous **oak:index** et définissez les propriétés suivantes :
 
    * **type :** solr (de type Chaîne)
    * **async :** async (de type Chaîne)
@@ -500,7 +500,7 @@ Vous pouvez activer la journalisation en procédant comme suit :
 
 #### Configuration de l’index {#index-configuration}
 
-La configuration de l’index influence largement la manière dont la requête est évaluée. Il est important de faire analyser la configuration de l’index ou de l’envoyer à l’assistance. Vous pouvez obtenir la configuration sous la forme d’un package de contenu ou un rendu JSON.
+La configuration de l’index influence largement la manière dont la requête est évaluée. Il est important de faire analyser la configuration de l’index ou de l’envoyer à l’assistance. Vous pouvez obtenir la configuration sous la forme d’un module de contenu ou un rendu JSON.
 
 En règle générale, la configuration d’indexation est stockée sous le nœud `/oak:index` dans CRXDE. Vous pouvez obtenir la version JSON à l’adresse :
 
@@ -537,5 +537,5 @@ Vous pouvez également fournir une sortie JMX consolidée via `https://serverad
 
 Vous pouvez rassembler des informations supplémentaires pour résoudre le problème, telles que :
 
-1. Version Oak sur laquelle votre instance s’exécute. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du lot `org.apache.jackrabbit.oak-core`.
+1. Version Oak sur laquelle votre instance s’exécute. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du bundle `org.apache.jackrabbit.oak-core`.
 1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l’adresse : `https://serveraddress:port/libs/cq/search/content/querydebug.html`.
