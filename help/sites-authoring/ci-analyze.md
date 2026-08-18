@@ -12,7 +12,7 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '664'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 Ouvrez la page [Content Insight](/help/sites-authoring/content-insights.md) pour analyser les performances de la page que vous créez. Configurez la période de création de rapports pour cibler votre analyse.
 
-## Ouvrir Analytics et recommendations concernant une page {#opening-analytics-and-recommendations-for-a-page}
+## Ouvrir Analytics et Recommandations concernant une page {#opening-analytics-and-recommendations-for-a-page}
 
-Procédez comme suit pour afficher Analytics et recommendations concernant une page :
+Procédez comme suit pour afficher Analytics et Recommandations concernant une page :
 
 1. Accédez à la page que vous souhaitez analyser.
 1. Dans la barre d’outils, cliquez sur **Analyses et recommandations**.

@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1295'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## La difficulté {#the-challenge-br}
 
-Les entreprises autorisent et encouragent de plus en plus leurs clients à avoir recours aux applications numériques en libre service sur plusieurs canaux. Toutefois, en l’absence de mécanisme de commentaire linéaire, il est difficile de mesurer la réussite et de tester les formulaires numériques pour améliorer l’expérience client et augmenter les conversions.
+Les entreprises autorisent et encouragent de plus en plus leurs clients à avoir recours aux applications numériques en libre service sur plusieurs canaux. Toutefois, en l’absence de mécanisme de feedback linéaire, il est difficile de mesurer la réussite et de tester les formulaires numériques pour améliorer l’expérience client et augmenter les conversions.
 
 Pour optimiser le retour sur investissement, les entreprises doivent contrôler la manière dont les utilisateurs et utilisatrices interagissent avec les services, puis tester leurs artefacts numériques (formulaires) pour améliorer les expériences client. Pour mesurer la réussite et définir une stratégie d’amélioration, les entreprises doivent obtenir les réponses aux questions suivantes :
 
@@ -91,7 +91,7 @@ Regardons de plus près les points de données des formulaires qu’Analytics co
 Le rapport d’analyse pour les formulaires adaptatifs capture les indicateurs de performances clés (KPI) suivants au niveau du formulaire :
 
 * **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
-* **Impressions** : nombre de fois que le formulaire s’est affiché dans des résultats de recherche. 
+* **Impressions** : nombre de fois que le formulaire s’est affiché dans des résultats de recherche.
 
 * **Rendus** : nombre de fois que le formulaire a été affiché ou ouvert.
 * **Brouillons** : nombre de fois que le formulaire a été enregistré en tant que brouillon.
@@ -102,9 +102,9 @@ Le rapport d’analyse pour les formulaires adaptatifs capture les indicateurs d
 
 En outre, vous obtenez les informations suivantes pour chaque panneau du formulaire :
 
-* **Temps** : temps moyen passé (exprimé en secondes) dans le panneau et ses champs. 
+* **Temps** : temps moyen passé (exprimé en secondes) dans le panneau et ses champs.
 
-* **Erreurs** : nombre d’erreurs survenues sur le panneau et ses champs par tranche de 1000 rendus de formulaire. 
+* **Erreurs** : nombre d’erreurs survenues sur le panneau et ses champs par tranche de 1000 rendus de formulaire.
 
 * **Aide** : nombre de fois que les utilisateurs ont accédé à l’aide contextuelle pour le panneau et ses champs par tranche de 1000 rendus de formulaire
 

@@ -8,8 +8,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 100%
+source-wordcount: '3070'
+ht-degree: 99%
 
 ---
 
@@ -95,8 +95,8 @@ Cette fonctionnalité est mise à disposition par le biais d’une série de mod
 
 * Propriété `features` :
 
-   * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
-   * configurable selon une procédure normalisée.
+  * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
+  * configurable selon une procédure normalisée.
 
 * Le cas échéant, des propriétés et options supplémentaires nécessitant une configuration spécialisée.
 
@@ -152,9 +152,9 @@ Le tableau suivant répertorie les plug-ins actuels et présente les information
 
 Configurez les propriétés suivantes qui s’appliquent uniquement au mode de modification dans la boîte de dialogue dans l’IU tactile :
 
-* `useFixedInlineToolbar` : configurez cette propriété booléenne définie sur le nœud d’éditeur de texte enrichi (une avec sling:resourceType=`cq/gui/components/authoring/dialog/richtext`) sur `True` pour que la barre d’outils de l’éditeur de texte enrichi reste fixe au lieu d’être flottante.
+* `useFixedInlineToolbar` : définissez cette propriété booléenne définie sur le nœud de l’éditeur de texte enrichi (une avec sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) sur `True` pour que la barre d’outils de l’éditeur de texte enrichi soit fixe au lieu de flottante.
 
-   Lorsque cette propriété est définie sur true, la modification en texte démarre par défaut sur l’événement « foundation-contentloaded ».
+  Lorsque cette propriété est définie sur true, la modification en texte démarre par défaut sur l’événement « foundation-contentloaded ».
 
   Pour éviter cette situation, définissez la propriété `customStart` sur `True` et déclenchez l’événement « rte-start » pour commencer la modification avec l’éditeur de texte enrichi. Lorsque cette propriété est définie sur true, le comportement par défaut (l’éditeur de texte enrichi démarre en cas de clic) ne fonctionne pas.
 
@@ -185,7 +185,7 @@ Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte 
 >
 >Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
->Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation destinée aux développeurs et développeuses de composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+>Pour plus d’informations, consultez la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que la rubrique [Créer des modèles de page](/help/sites-authoring/templates.md) et la [Documentation relative au développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >[!NOTE]
 >
@@ -308,8 +308,8 @@ Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’édite
 1. Recouvrez le nœud `/libs/cq/gui/components/authoring/editors/clientlibs/core` sous `/apps` et procédez comme suit :
 
    * Remplacez `rte.coralui3` par `rte.coralui2` pour la propriété dependencies.
-   * Remplacez `cq.authoring.editor.core.inlineediting.rte.coralui3` par `cq.authoring.editor.core.inlineediting.rte.coralui2` pour la propriété embed.
-   * Remplacez `cq.authoring.rte.coralui3` par `cq.authoring.rte.coralui2` pour la propriété embed.
+   * Remplacez `cq.authoring.editor.core.inlineediting.rte.coralui3` par `cq.authoring.editor.core.inlineediting.rte.coralui2` pour la propriété d’incorporation.
+   * Remplacez `cq.authoring.rte.coralui3` par `cq.authoring.rte.coralui2` pour la propriété d’incorporation.
 
 1. Recouvrez les nœuds `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` sous `/apps`.
 
@@ -332,8 +332,8 @@ En particulier, pour afficher les plug-ins et les options connexes disponibles 
 * Le composant [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître l’ensemble des paramètres disponibles pour le formulaire de texte enrichi, rendez-vous dans les options de configuration.
 * Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
-   * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
-   * consultez les options de configuration pour connaître tous les paramètres de configuration disponibles pour le plug-in approprié.
+  * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
+  * consultez les options de configuration pour connaître tous les paramètres de configuration disponibles pour le plug-in approprié.
 
 * Vous y retrouverez également plus d’informations sur les règles HTML pour les liens.
 

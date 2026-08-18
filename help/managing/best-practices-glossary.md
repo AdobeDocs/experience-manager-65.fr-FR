@@ -12,8 +12,8 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
+source-wordcount: '7022'
+ht-degree: 99%
 
 ---
 
@@ -109,8 +109,8 @@ Assurez-vous que les membres de votre équipe ont reçu une formation approprié
 
 * au moins un développeur en chef certifié AEM ;
 * au moins un architecte certifié AEM ;
-* au moins 75 % de vos développeurs certifiés AEM ;
-Cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir la transparence et le partage des connaissances.
+* au moins 75 % de vos développeurs certifiés AEM ;
+cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors et assure le partage des connaissances et la transparence
 
 ### Diagramme d’architecture {#architecture-diagram}
 
@@ -207,8 +207,8 @@ Les KPI d’entreprise définissent des valeurs mesurables qui montrent l’effi
 
 Un document des exigences de l’entreprise décrit la solution commerciale pour un projet, fournissant une spécification claire des attentes et des besoins commerciaux de la clientèle. Il fait également la distinction entre la solution commerciale et la solution technique.
 
-Lors de l’examen de la solution d’entreprise, le document des exigences de l’entreprise doit répondre à la question suivante :
-« Que souhaite faire l’entreprise ? »
+Lors de l’examen de la solution d’entreprise, la BRD doit répondre à la question suivante :
+« Que veut faire l&#39;entreprise ? »
 
 ### Validation par l’entreprise de tout ajustement requis pour la solution ou l’architecture identifié et aligné par rapport aux attentes en matière de ROI et de KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -313,7 +313,7 @@ Toutes les instructions/exigences de la clientèle concernant la manière dont l
 
 Politiques de la clientèle définissant comment et quand les déploiements/publications peuvent être effectués.
 
-Il s’agit souvent de calendriers, de planifications et d’exigences de validation.
+Il s’agit souvent de chronologies, de planifications et d’exigences de validation.
 
 ### Politiques ou exigences de surveillance de la clientèle {#customer-monitoring-policies-or-requirements}
 
@@ -358,10 +358,10 @@ Toutes les personnalisations et/ou les correctifs appliqués doivent être docum
 * AEM peut être grandement personnalisé en fonction des besoins de l’entreprise. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toutes les modifications majeures de l’interface utilisateur (IU) AEM.
 * Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées. Cela peut inclure :
 
-   * des packs de correctifs cumulatifs (CFP) ;
-   * des service packs (SP) ;
-   * des correctifs ;
-   * des mises à niveau.
+  * des packs de correctifs cumulatifs (CFP) ;
+  * des service packs (SP) ;
+  * des correctifs ;
+  * des mises à niveau.
 
 ### Rapport de test d’acceptation utilisateur quotidien {#daily-user-acceptance-test-report}
 
@@ -917,7 +917,7 @@ Les estimations initiales sont de haut niveau et établies en fonction des exige
 
 La documentation requise pour décrire l’organisation et la structure des rapports du projet et de l’équipe.
 
-Souvent, elle se présente sous la forme d’un graphique, ou en comprend un, pour présenter une vue d’ensemble visuel des calendriers et des responsabilités. De nombreux outils sont disponibles pour vous aider.
+Souvent, elle se présente sous la forme d’un graphique, ou en comprend un, pour présenter une vue d’ensemble visuel de la chronologie et des responsabilités. De nombreux outils sont disponibles pour vous aider.
 
 ### Document sur la portée du projet {#project-scope-document}
 
@@ -1237,7 +1237,7 @@ Identifiez et vérifiez les risques techniques potentiels. Les risques technique
 
 La spécification technique couvre (entre autres informations) les éléments suivants :
 
-* interfaces 
+* interfaces
 * configurations
 * API
 * les services qui prennent en charge les exigences de la solution ;
@@ -1333,9 +1333,9 @@ Par exemple :
 * combien de kilo-octets (Ko) de journaux non envoyés génèrent un avertissement sur l’instance de serveur principale
 * le nombre de millisecondes de délai moyen par transaction toléré avant la génération d’un avertissement sur le serveur principal
 
-### Calendrier et jalons {#timeline-and-milestones}
+### Chronologie et jalons {#timeline-and-milestones}
 
-Cela doit définir les calendriers du projet et les jalons contractuels à utiliser pour :
+Cela doit définir la chronologie du projet et les jalons contractuels à utiliser pour :
 
 * Facturation.
 * Alignement par rapport aux définitions et aux critères de réussite, mais aussi aux KPI.

@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ Les bonnes pratiques relatives aux performances sont répertoriées ici :
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
-   <td>Un réseau de distribution de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
+   <td>Un réseau de diffusion de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
   </tr>
   <tr>
    <td>Optimisation des performances</td>

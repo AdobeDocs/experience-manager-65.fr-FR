@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
-workflow-type: ht
-source-wordcount: '764'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 79%
 
 ---
 
@@ -25,16 +25,19 @@ Ce document est destiné à guider les clientes et clients dans leur choix de l�
 
 Termes d’intérêt :
 
-* **IU (ou IU standard)** Interface utilisateur moderne, introduite avec la version 5.6.0 en tant qu’aperçu technologique, puis développée avec les versions suivantes. Elle est basée sur l’expérience utilisateur unifiée pour Adobe Experience Cloud, connue précédemment sous le nom d’interface utilisateur tactile.
+* **IU (ou IU standard)**
+Interface utilisateur moderne qui a été introduite dans la version 5.6.0 en tant qu’aperçu technologique et qui a été étendue dans les versions ultérieures. Elle est basée sur l’expérience utilisateur unifiée pour Adobe Experience Cloud, connue précédemment sous le nom d’interface utilisateur tactile.
 
 * **IU classique**
-Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1 en 2008.
+Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 5.1 en 2008.
 
-* **Administration du site** Fonctionnalités de gestion de la hiérarchie du site (déplacer, activer, gérer les références) et de création de nouvelles pages.
+* **Administrateur de site**
+Fonctionnalités de gestion de la hiérarchie du site (déplacer, activer, gérer les références) et de création de nouvelles pages.
 
-* **Création de pages** Fonctionnalités d’ajout de contenu et de modification du contenu d’une page.
+* **Création de pages**
+Possibilité d’ajouter ou de modifier le contenu d’une page.
 
-* **Administration de gestion des ressources numériques / de ressources**
+* **Administrateur DAM/Assets**
 Fonctionnalités de gestion des ressources numériques (y compris les images, les vidéos, les documents et les téléchargements).
 
 * **ContextHub**
@@ -44,13 +47,13 @@ Fonctionnalités de regroupement des informations sur le visiteur en vue de les 
 
 Au cours des dernières années, Adobe a mis à jour toutes les solutions Adobe Experience Cloud avec une interface utilisateur unifiée. Les personnes utilisant l’ensemble des solutions Experience Cloud bénéficient d’une expérience cohérente avec des schémas communs sur l’utilisation et le fonctionnement des applications. Avec chaque version, Adobe a amélioré son interface utilisateur en fonction des commentaires de la clientèle travaillant dans les différentes solutions.
 
-L’interface utilisateur d’origine d’Adobe Experience Manager (précédemment connue sous le nom de CQ5), introduite en 2008 et utilisée par les personnes travaillant avec les versions 5.0 à 5.6.1, est présente dans AEM 6.5. Ainsi, la clientèle peut effectuer la mise à jour vers la version 6.5 et bénéficier d’une plateforme mise à jour avec de nouvelles fonctionnalités tout en continuant à utiliser la même interface utilisateur.
+L’interface utilisateur d’origine pour Adobe Experience Manager (auparavant appelée CQ5), introduite en 2008 et utilisée par les clients exécutant les versions 5.0 à 5.6.1, est présente dans AEM 6.5. Cela garantit que les clients peuvent mettre à jour vers la version 6.5 et bénéficier d’une plateforme mise à jour avec de nouvelles fonctionnalités tout en continuant à utiliser la même interface utilisateur.
 
 Adobe recommande aux utilisateurs de planifier le passage à la nouvelle interface utilisateur en 2018 ou 2019. Vous pouvez effectuer cette action pendant la mise à jour vers la version 6.5 ou dans un projet distinct après la mise à jour, ce qui suppose des réglages nécessaires aux personnalisations et aux boîtes de dialogue de composant.
 
 L’interface utilisateur classique est obsolète avec AEM 6.4 et Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. Notez que l’interface utilisateur classique reste complètement prise en charge alors qu’elle est en passe de devenir obsolète.
 
-### Règles et recommandations  {#rules-and-recommendations}
+### Règles et recommandations {#rules-and-recommendations}
 
 Vous trouverez ci-dessous une liste de recommandations provenant de la gestion des produits pour Adobe Experience Manager 6.5 :
 
@@ -69,7 +72,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
    <td>
     <ol>
      <li>Mise à jour vers la version 6.5</li>
-     <li>Utilisez l’interface utilisateur par défaut pour l’administration du site, les ressources, etc. etc.<br /> </li>
+     <li>Utiliser l’interface utilisateur par défaut pour l’administration du site, les ressources, etc.<br /> </li>
      <li>Configurez l’action Modifier la page pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choisir votre interface utilisateur</a>.</li>
     </ol> <p>Ensuite, dans une seconde phase :</p>
     <ol>
@@ -81,7 +84,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
    <td>
     <ol>
      <li>Mise à jour vers la version 6.5</li>
-     <li>Utilisez l’interface utilisateur par défaut pour l’administration du site, les ressources, etc. etc.</li>
+     <li>Utiliser l’interface utilisateur par défaut pour l’administration du site, les ressources, etc.</li>
      <li>Configurez l’action Modifier la page pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choisir votre interface utilisateur</a>.</li>
     </ol> <p>Ensuite, dans une seconde phase :</p>
     <ol>
@@ -91,7 +94,7 @@ Vous trouverez ci-dessous une liste de recommandations provenant de la gestion d
   </tr>
   <tr>
    <td><p>Utilise CQ/AEM depuis de nombreuses années.</p> <p>A étendu l’interface utilisateur du produit (par exemple, l’administrateur de site) et créé des composants avec des boîtes de dialogue de modification complètes.</p> </td>
-   <td><p>Passez à la version 6.5 et configurez l’IU classique en tant qu’interface utilisateur par défaut pour la création de page pour tous les utilisateurs. Voir <a href="#selecting-your-ui">Sélection de l’interface utilisateur</a>.</p> <p>Démarrez ensuite un projet pour appliquer la personnalisation et optimiser les boîtes de dialogue des composants au format Coral 3. Voir <a href="#resources-to-help">Ressources d’aide</a>.<br /> </p> </td>
+   <td><p>Passez à la version 6.5 et configurez l’UI classique en tant qu’interface par défaut pour la création de page pour l’ensemble des utilisateurs et utilisatrices. Voir <a href="#selecting-your-ui">Sélection de l’interface utilisateur</a>.</p> <p>Démarrez ensuite un projet pour appliquer la personnalisation et optimiser les boîtes de dialogue des composants au format Coral 3. Voir <a href="#resources-to-help">Ressources d’aide</a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 100%
+source-wordcount: '1802'
+ht-degree: 99%
 
 ---
 
@@ -41,31 +41,31 @@ De nombreux problèmes peuvent être résolus en restructurant le contenu. Garde
 
 * **Modifier le contrôle d’accès**
 
-   * Assurez-vous que les utilisateurs, les utilisatrices ou les groupes qui ont réellement besoin d’un accès ne rencontrent aucun souci d’accès.
+  * Assurez-vous que les utilisateurs, les utilisatrices ou les groupes qui ont réellement besoin d’un accès ne rencontrent aucun souci d’accès.
 
 * **Affiner la structure du contenu**
 
-   * Déplacez-le vers d’autres emplacements, par exemple lorsque le contrôle d’accès correspond aux sessions de requête disponibles.
-   * Modifiez la granularité du contenu.
+  * Déplacez-le vers d’autres emplacements, par exemple lorsque le contrôle d’accès correspond aux sessions de requête disponibles.
+  * Modifiez la granularité du contenu.
 
 * **Refactorisation du code afin qu’il corresponde à un service approprié**
 
-   * Redéfinissez la logique métier du code JSP en service. Cela permet une modélisation du contenu différente.
+  * Redéfinissez la logique métier du code JSP en service. Cela permet une modélisation du contenu différente.
 
 Veillez également à ce que toutes les nouvelles fonctionnalités que vous développez respectent les principes suivants :
 
 * **Les exigences de sécurité doivent déterminer la structure du contenu**
 
-   * La gestion du contrôle d’accès doit être naturelle.
-   * Le contrôle d’accès doit être appliqué par le référentiel, et non par l’application.
+  * La gestion du contrôle d’accès doit être naturelle.
+  * Le contrôle d’accès doit être appliqué par le référentiel, et non par l’application.
 
 * **Utiliser les types de nœud**
 
-   * Limitez l’ensemble des propriétés qui peuvent être définies.
+  * Limitez l’ensemble des propriétés qui peuvent être définies.
 
 * **Respectez les paramètres de confidentialité**
 
-   * Dans le cas de profils privés, par exemple, n’exposez pas la photo de profil, l’adresse e-mail ni le nom complet figurant sur le nœud `/profile` privé.
+  * Dans le cas de profils privés, par exemple, n’exposez pas la photo de profil, l’adresse e-mail ni le nom complet figurant sur le nœud `/profile` privé.
 
 ## Contrôle d’accès strict {#strict-access-control}
 
@@ -78,11 +78,11 @@ Si vous appliquez le contrôle d’accès lors de la restructuration du contenu 
 * Appliquez des listes de contrôle d’accès pour les types de noeuds.
 * Limitez les autorisations.
 
-   * Par exemple, si vous avez besoin de l’autorisation d’écriture uniquement pour les propriétés, ne donnez pas l’autorisation `jcr:write`, utilisez plutôt `jcr:modifyProperties`.
+  * Par exemple, si vous avez besoin de l’autorisation d’écriture uniquement pour les propriétés, ne donnez pas l’autorisation `jcr:write`, utilisez plutôt `jcr:modifyProperties`.
 
 ## Utilisateurs de services et mises en correspondance {#service-users-and-mappings}
 
-Si ce qui précède échoue, Sling 7 propose un service de mappage des utilisateurs et utilisatrices de service qui permet de configurer un mappage de lot à un utilisateur ou à une utilisatrice et deux méthodes d’API correspondantes :
+Si ce qui précède échoue, Sling 7 propose un service de mappage des utilisateurs et utilisatrices de service qui permet de configurer un mappage de bundle à un utilisateur ou à une utilisatrice et deux méthodes d’API correspondantes :
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -95,7 +95,7 @@ Les méthodes renvoient un résolveur de session/ressource avec les privilèges 
 * `service-id` = `service-name` [&quot;:&quot; subservice-name]
 
 * `service-id` est mis en correspondance avec un résolveur de ressource et/ou un ID d’utilisateur de référentiel JCR pour l’authentification.
-* `service-name` est le nom symbolique du lot qui fournit le service.
+* `service-name` est le nom symbolique du bundle qui fournit le service.
 
 ## Autres recommandations {#other-recommendations}
 
@@ -112,7 +112,7 @@ Pour remplacer la session d’administration par un utilisateur ou une utilisatr
 1. Configurez et testez des ACE pour votre utilisateur ou utilisatrice.
 1. Ajoutez une mise en correspondance `service-user` pour votre service et pour les `user/sub-users`
 
-1. Rendez la fonction Sling d’utilisateur de service disponible pour votre lot : mettez à jour vers la version la plus récente de `org.apache.sling.api`.
+1. Rendez la fonction Sling d’utilisateur de service disponible pour votre bundle : mettez à jour vers la version la plus récente de `org.apache.sling.api`.
 
 1. Remplacez `admin-session` dans votre code par les API `loginService` ou `getServiceResourceResolver`.
 
@@ -122,7 +122,7 @@ Après avoir vérifié qu’aucun utilisateur ni aucune utilisatrice de la liste
 
 Il est recommandé de créer un utilisateur ou une utilisatrice de service pour utiliser l’explorateur de référentiel à l’adresse *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
 
-Le but est d’obtenir une propriété `jcr:uuid` valide qui est obligatoire pour créer l’utilisateur ou l’utilisatrice par l’intermédiaire d’une installation de package de contenu.
+Le but est d’obtenir une propriété `jcr:uuid` valide qui est obligatoire pour créer l’utilisateur ou l’utilisatrice par l’intermédiaire d’une installation de module de contenu.
 
 Vous pouvez créer des utilisateurs de services de la façon suivante :
 
@@ -140,7 +140,7 @@ Vous pouvez créer des utilisateurs de services de la façon suivante :
    >
    >Notez qu’il n’existe aucun type de mixin associé aux utilisateurs ou utilisatrices de services. Cela signifie qu’il n’y a aucune politique de contrôle d’accès pour les utilisateurs et utilisatrices système.
 
-En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
+En ajoutant le fichier content.xml correspondant au contenu du bundle, assurez-vous que vous avez défini le `rep:authorizableId` et que le type principal est `rep:SystemUser`. Il doit ressembler à ceci :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,10 +155,10 @@ En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous
 
 Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices système correspondants, créez une configuration d’usine pour le service [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html). Pour conserver la modularité, une configuration de ce type peut être fournie par le [mécanisme d’amendement de Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer de telles configurations avec votre bundle consiste à utiliser le [Chargement initial du contenu Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) :
 
-1. Créez un sous-dossier SLING-INF/content sous le dossier src/main/resources de votre lot.
+1. Créez un sous-dossier SLING-INF/content sous le dossier src/main/resources de votre bundle.
 1. Dans ce dossier, créez un fichier appelé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;nom unique de votre configuration d’usine>.xml avec le contenu de votre configuration d’usine (incluant tous les mappages d’utilisateurs ou utilisatrices de sous-services). Exemple :
 
-1. Créez un sous-dossier `SLING-INF/content` sous le dossier `src/main/resources` de votre lot.
+1. Créez un sous-dossier `SLING-INF/content` sous le dossier `src/main/resources` de votre bundle.
 1. Dans ce dossier, créez un fichier `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` avec le contenu de votre configuration d’usine, y compris tous les mappages utilisateur de sous-service.
 
    À des fins d’illustration, prenez le fichier nommé `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml` :
@@ -180,7 +180,7 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
    </node>
    ```
 
-1. Référencez le contenu initial Sling dans la configuration de `maven-bundle-plugin` dans le fichier `pom.xml` du lot. Exemple :
+1. Référencez le contenu initial Sling dans la configuration de `maven-bundle-plugin` dans le fichier `pom.xml` du bundle. Exemple :
 
    ```xml
    <Sling-Initial-Content>
@@ -190,7 +190,7 @@ Pour ajouter un mappage de votre service avec les utilisateurs ou utilisatrices 
 
 1. Installez le bundle et assurez-vous que la configuration d’usine a été installée. Vous pouvez le faire en procédant comme suit :
 
-   * Accédez à la console web à l’adresse *https://serverhost:serveraddress/system/console/configMgr*.
+   * Accédez à la console web à l’adresse *:serveraddress/system/console/configMgr*
    * Recherchez **Amendement du service de mappage des utilisateurs de service Apache Sling**.
    * Cliquez sur le lien pour vérifier si la configuration appropriée est en place.
 

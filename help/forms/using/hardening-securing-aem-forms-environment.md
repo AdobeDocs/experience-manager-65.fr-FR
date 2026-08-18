@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1470'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Les vulnérabilités de sécurité des couches de transport comptent parmi les p
 
 ### Limiter les points dʼentrée ouverts  {#limit-open-endpoints}
 
-Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre un utilisateur final et une batterie de publication AEM Forms. L’entreprise peut également avoir un pare-feu interne pour limiter l’accès entre une batterie de publication et d’autres dans des éléments d’entreprise (par exemple, instance de création, instance de traitement, bases de données). Autorisez les pare-feu pour autoriser l’accès à un nombre limité d’URL AEM Forms pour les utilisateurs finaux et au sein des éléments d’entreprise :
+Une entreprise peut configurer un pare-feu externe pour limiter l’accès entre un utilisateur final et une batterie de publication AEM Forms. L’entreprise peut également avoir un pare-feu interne pour limiter l’accès entre une batterie de publication et d’autres dans des éléments d’entreprise (par exemple, instance de création, instance de traitement, bases de données). Autorisez les pare-feu pour permettre l’accès à un nombre limité d’URL AEM Forms pour les utilisateurs finaux et au sein des éléments d’entreprise :
 
 #### Configurer le pare-feu externe  {#configure-external-firewall}
 
@@ -168,22 +168,22 @@ Un ensemble différent de rôles d’utilisateurs et d’utilisatrices est requi
 
 * Il existe un ensemble différent de groupes prédéfinis avec des privilèges spécifiques pour chaque rôle. Attribuer des utilisateurs au groupe.
 
-   * Un utilisateur ou une utilisatrice du groupe forms-user :
+  * Un utilisateur ou une utilisatrice du groupe forms-user :
 
-      * peut créer, remplir, publier et envoyer un formulaire ;
-      * ne peut pas créer de formulaire adaptatif basé sur XDP ;
-      * n’a pas l’autorisation d’écrire des scripts pour les formulaires adaptatifs ;
-      * ne peut pas importer de XDP ou tout package contenant du XDP.
+    * peut créer, remplir, publier et envoyer un formulaire ;
+    * ne peut pas créer de formulaire adaptatif basé sur XDP ;
+    * n’a pas l’autorisation d’écrire des scripts pour les formulaires adaptatifs ;
+    * ne peut pas importer de XDP ou tout package contenant du XDP.
 
-   * Un utilisateur ou une utilisatrice du groupe forms-power-user crée, remplit, publie et envoie tous les types de formulaires, écrit des scripts pour les formulaires adaptatifs, importe des modules contenant du XDP.
-   * Un utilisateur ou une utilisatrice de template-authors et template-power-user peut prévisualiser et créer un modèle.
-   * Un utilisateur ou une utilisatrice de fdm-authors peut créer et modifier un modèle de données de formulaire.
-   * Un utilisateur ou une utilisatrice du groupe cm-user-agent peut créer, prévisualiser et publier des lettres Correspondence Management.
-   * Un utilisateur ou une utilisatrice du groupe workflow-editors peut créer une application de boîte de réception et un modèle de workflow.
+  * Un utilisateur ou une utilisatrice du groupe forms-power-user crée, remplit, publie et envoie tous les types de formulaires, écrit des scripts pour les formulaires adaptatifs, importe des modules contenant du XDP.
+  * Un utilisateur ou une utilisatrice de template-authors et template-power-user peut prévisualiser et créer un modèle.
+  * Un utilisateur ou une utilisatrice de fdm-authors peut créer et modifier un modèle de données de formulaire.
+  * Un utilisateur ou une utilisatrice du groupe cm-user-agent peut créer, prévisualiser et publier des lettres Correspondence Management.
+  * Un utilisateur ou une utilisatrice du groupe workflow-editors peut créer une application de boîte de réception et un modèle de workflow.
 
 **Sur l’instance de traitement de création :**
 
-* Pour les cas d’utilisation d’enregistrement et d’envoi à distance, créez un utilisateur ou une utilisatrice avec des autorisations de lecture, de création et de modification sur le chemin content/form/fp du référentiel crx-repository. 
+* Pour les cas d’utilisation d’enregistrement et d’envoi à distance, créez un utilisateur ou une utilisatrice avec des autorisations de lecture, de création et de modification sur le chemin content/form/fp du référentiel crx-repository.
 * Ajoutez un utilisateur ou une utilisatrice au groupe workflow-user pour permettre à un utilisateur ou une utilisatrice d’utiliser les applications de boîte de réception AEM.
 
 ## Éléments intranet sécurisés d’un environnement AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
@@ -196,4 +196,4 @@ Un cluster de traitement s’exécute en mode création, mais ne l’utilise pas
 
 ### Bonnes pratiques d’utilisation AEM pour sécuriser un environnement AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Ce document fournit des instructions spécifiques à l’environnement AEM Forms. Veillez à ce que votre installation AEM sous-jacente soit sécurisée lors du déploiement. Pour obtenir des instructions détaillées, voir la documentation [Liste de contrôle de la sécurité](/help/sites-administering/security-checklist.md) d’AEM. 
+Ce document fournit des instructions spécifiques à l’environnement AEM Forms. Veillez à ce que votre installation AEM sous-jacente soit sécurisée lors du déploiement. Pour obtenir des instructions détaillées, voir la documentation [Liste de contrôle de la sécurité](/help/sites-administering/security-checklist.md) d’AEM.

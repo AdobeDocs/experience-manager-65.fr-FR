@@ -11,7 +11,7 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1710'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ La personnalisation peut être utilisée dans de nombreuses situations :
 
 ### Sur des sites web de recherche {#search-site}
 
-* La plupart des grands moteurs de recherche sont des outils analytiques très puissants qui enregistrent le comportement des utilisateurs, les termes qu’ils saisissent et les sites web qu’ils visitent. Ces données sont ensuite utilisées pour personnaliser le contenu fourni, notamment par rapport à l’affichage des publicités.
+* La plupart des grands moteurs de recherche sont des outils analytiques très puissants qui enregistrent le comportement des utilisateurs, les termes de recherche qu’ils saisissent et les sites web qu’ils visitent. Ces données sont ensuite utilisées pour personnaliser le contenu fourni, notamment par rapport à l’affichage des publicités.
 
 ### Avantages liés à la personnalisation et aspects à prendre en considération {#strengths-of-personalization-and-points-to-consider}
 

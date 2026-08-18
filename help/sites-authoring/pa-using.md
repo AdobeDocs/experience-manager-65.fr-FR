@@ -11,7 +11,7 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 98%
 
 ---
@@ -68,7 +68,7 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 
 1. Sélectionnez les mesures à présenter aux auteurs dans la console Sites, puis cliquez sur **Ajouter**.
 
-   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
+   Les colonnes affichées sont récupérées depuis Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
@@ -77,9 +77,9 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez afficher des Insights sur le contenu.
-1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommendations.
+1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommandations.
 
-   ![Icône Analytics et Recommendations](do-not-localize/chlimage_1-16a.png)
+   ![Icône Analytics et Recommandations](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visible dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
@@ -137,23 +137,23 @@ La boîte de dialogue **Paramètres de l’Activity Map** propose plusieurs opt
 
 * Général
 
-   * Suite de rapports
-   * Nom de page
-   * Langue
-   * Recouvrements de libellés avec
-   * Taille de police du libellé
-   * Couleur de dégradé
-   * Couleur de bulle
-   * Couleur de dégradé basée sur
-   * Transparence de dégradé
+  * Suite de rapports
+  * Nom de page
+  * Langue
+  * Recouvrements de libellés avec
+  * Taille de police du libellé
+  * Couleur de dégradé
+  * Couleur de bulle
+  * Couleur de dégradé basée sur
+  * Transparence de dégradé
 
 * Standard
 
-   * Affichage (type et nombre de liens)
-   * Masquer les recouvrements pour les liens qui n’ont reçu aucune visite
+  * Affichage (type et nombre de liens)
+  * Masquer les recouvrements pour les liens qui n’ont reçu aucune visite
 
 * En direct
 
-   * Affichage en haut (gagnants ou perdants)
-   * Exclure le % inférieur
-   * Mise à jour automatique (données et période)
+  * Affichage en haut (gagnants ou perdants)
+  * Exclure le % inférieur
+  * Mise à jour automatique (données et période)

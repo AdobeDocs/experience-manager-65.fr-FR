@@ -13,7 +13,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '460'
 ht-degree: 97%
 
 ---
@@ -71,7 +71,7 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 
 1. Sélectionnez les mesures à présenter aux auteurs dans la console Sites, puis cliquez sur **Ajouter**.
 
-   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
+   Les colonnes affichées sont récupérées depuis Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
@@ -80,9 +80,9 @@ Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d
 Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez afficher des Insights sur le contenu.
-1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommendations.
+1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommandations.
 
-   ![Icône Analytics et Recommendations](do-not-localize/chlimage_1-14.png)
+   ![Icône Analytics et Recommandations](do-not-localize/chlimage_1-14.png)
 
 ## Analytics visible dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '150'
 ht-degree: 100%
 
 ---
@@ -25,6 +25,6 @@ PDF Generator convertit de nombreux formats de fichier au format PDF. Il convert
 
 Vous pouvez envoyer des fichiers à traiter à PDF Generator de trois façons différentes :
 
-* Les administrateurs et administratrices peuvent accéder aux pages PDFG dans la console d’administration.  (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
+* Les administrateurs et administratrices peuvent accéder aux pages PDFG dans la console d’administration. (voir [Conversion de fichiers à l’aide de PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)).
 * Les utilisateurs peuvent accéder aux pages des utilisateurs finaux de PDFG en se connectant à `http(s)://'[server]:[port]'/pdfgui.`. De là, ils peuvent accéder aux pages Imprimante réseau PDFG, Créer un PDF, HTML en PDF, Exporter PDF et Optimiser PDF.
 * Vous pouvez configurer les points d’entrée de ce service Voir la section <!--Fix broken link to Managing Endpoints --> [Recommandations relatives au service Generate PDF](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).

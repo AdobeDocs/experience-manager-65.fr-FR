@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
-workflow-type: ht
-source-wordcount: '1351'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1374'
+ht-degree: 96%
 
 ---
 
@@ -20,29 +20,29 @@ Les facteurs de base à prendre en compte sont (dans cet ordre) :
 
 * **Vitesse réseau**
 
-   * Latence réseau
-   * Bande passante disponible
+  * Latence réseau
+  * Bande passante disponible
 
 * **Vitesse de calcul**
 
-   * Efficacité du cache
-   * Trafic attendu
-   * Complexité des modèles, applications et composants
-   * Auteurs et autrices simultanés
-   * Complexité de l’opération de création (édition de contenu simple, déploiement MSM, etc.)
+  * Efficacité du cache
+  * Trafic attendu
+  * Complexité des modèles, applications et composants
+  * Auteurs et autrices simultanés
+  * Complexité de l’opération de création (édition de contenu simple, déploiement MSM, etc.)
 
 * **Performances d’E/S**
 
-   * Performances et efficacité du stockage du fichier ou de la base de données
+  * Performances et efficacité du stockage du fichier ou de la base de données
 
 * **Disque dur**
 
-   * Au moins deux ou trois fois plus grand que la taille du référentiel
+  * Au moins deux ou trois fois plus grand que la taille du référentiel
 
 * **Mémoire**
 
-   * Taille du site Web (nombre d’objets de contenu, de pages et d’utilisateurs et d’utilisatrices)
-   * Nombre d’utilisateurs et d’utilisatrices/sessions actifs en même temps
+  * Taille du site Web (nombre d’objets de contenu, de pages et d’utilisateurs et d’utilisatrices)
+  * Nombre d’utilisateurs et d’utilisatrices/sessions actifs en même temps
 
 ## Architecture {#architecture}
 
@@ -51,7 +51,7 @@ Une configuration d’AEM standard consiste en un environnement de création et 
 Dans une configuration de projet type, vous disposez de plusieurs environnements sur lesquels définir les phases du projet :
 
 * **Environnement de développement**
-Pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. Les bonnes pratiques recommandent de travailler dans un environnement de développement par développeur ou développeuse (généralement des installations locales sur leurs systèmes personnels).
+Pour développer de nouvelles fonctionnalités ou apporter des modifications importantes. Les bonnes pratiques recommandent de travailler dans un environnement de développement par développeur ou développeuse (généralement des installations locales sur leurs systèmes personnels).
 
 * **Environnement de test de création**
 Pour vérifier les modifications. Le nombre d’environnements de test varie selon les exigences du projet (qui nécessite, par exemple, un environnement distinct pour l’assurance qualité, le test de l’intégration ou le test d’acceptation utilisateur).
@@ -60,10 +60,10 @@ Pour vérifier les modifications. Le nombre d’environnements de test varie sel
 Principalement pour tester les cas d’utilisation de collaboration sociale ou l’interaction entre l’instance de création et plusieurs instances de publication.
 
 * **Environnement d’exploitation de création**
-Pour que les auteurs modifient le contenu.
+Pour que les auteurs puissent modifier le contenu.
 
 * **Environnement d’exploitation de publication**
-Pour servir du contenu publié.
+Pour diffuser du contenu publié.
 
 En outre, les environnements peuvent varier, allant d’un système à serveur unique exécutant AEM et un serveur d’applications, à un ensemble d’instances en cluster à plusieurs serveurs et processeurs à très grande échelle. Adobe recommande d’utiliser un ordinateur distinct pour chaque système de production et de ne pas exécuter d’autres applications sur ces ordinateurs.
 
@@ -133,7 +133,7 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 >
 >Voir aussi le[ Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
 
-### Gestionnaire multi-sites {#multi-site-manager}
+### Multi-Site Manager {#multi-site-manager}
 
 La consommation de ressources lors de l’utilisation d’AEM MSM sur un environnement de création dépend fortement des cas d’utilisation spécifiques. Les facteurs de base sont :
 

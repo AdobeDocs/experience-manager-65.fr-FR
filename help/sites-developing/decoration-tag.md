@@ -7,7 +7,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '890'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,8 @@ Lors du rendu d’un composant d’une page web, un élément HTML peut être g�
 * Un composant ne peut être modifié que s’il est encapsulé avec un élément HTML.
 * L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
 
-   * des informations de disposition ;
-   * des informations de style.
+  * des informations de disposition ;
+  * des informations de style.
 
 Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés. Le rendu de la balise décorative est défini par la combinaison de deux facteurs, détaillés sur cette page :
 
@@ -43,9 +43,9 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 * **`cq:htmlTag`nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
 
-   * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
-   * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
-   * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
+  * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
+  * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
+  * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
 ## Contrôles de script {#script-controls}
 
