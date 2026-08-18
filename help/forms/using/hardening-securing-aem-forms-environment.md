@@ -123,9 +123,9 @@ Vous pouvez configurer le pare-feu interne pour permettre à certains composants
 
 Par défaut, les ressources disponibles sur les nœuds de publication sont accessibles à tous. L’accès en lecture seule est activé pour toutes les ressources. Il est nécessaire pour autoriser l’accès anonyme. Si vous envisagez de restreindre l’affichage des formulaires et de n’envoyer l’accès qu’aux utilisateurs et utilisatrices authentifiés, utilisez un groupe commun pour autoriser uniquement les utilisateurs et utilisatrices authentifiés à disposer d’un accès en lecture seule aux ressources disponibles sur les nœuds de publication. Les emplacements/répertoires suivants contiennent des ressources de formulaire qui nécessitent un renforcement (accès en lecture seule pour les utilisateurs et utilisatrices authentifiés) :
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Gérer de manière sécurisée des données de formulaire  {#securely-handle-forms-data}
 

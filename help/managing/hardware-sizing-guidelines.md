@@ -131,7 +131,7 @@ Allouez au moins 16 Go de segment de mémoire et configurez le workflow [!UICON
 
 >[!NOTE]
 >
->Voir aussi le[ Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
+>Voir aussi le[&#x200B; Guide de performance des ressources](/help/sites-deploying/assets-performance-sizing.md).
 
 ### Multi-Site Manager {#multi-site-manager}
 
