@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
 workflow-type: tm+mt
-source-wordcount: '7373'
-ht-degree: 20%
+source-wordcount: '7412'
+ht-degree: 21%
 
 ---
 
@@ -55,9 +55,9 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
 * [Détails au niveau du formulaire dans les journaux de transactions JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee) : AEM Forms sur JEE enregistre désormais les détails au niveau du formulaire dans `transaction_log.log` pour chaque transaction, en plus des informations existantes sur le service et les opérations. Les administrateurs peuvent corréler les données de rapports de transaction avec des formulaires spécifiques lors de l’analyse des envois, des rendus et des conversions. (FORMS-21574)
 
 * [mise à jour de la matrice de plateforme prise en charge](/help/forms/using/aem-forms-jee-supported-platforms.md) : le pack de services 6.5.25.0 d’AEM Forms on JEE prend en charge la compatibilité avec les technologies plus récentes suivantes :
-   * JBoss® Enterprise Application Platform (EAP) 7.4.23
-   * IBM®Content Manager Client 8.7
-   * AEM Forms Designer sous Microsoft® Windows Terminal Server 2025
+  * JBoss® Enterprise Application Platform (EAP) 7.4.23
+  * IBM®Content Manager Client 8.7
+  * AEM Forms Designer sous Microsoft® Windows Terminal Server 2025
 
   >[!NOTE]
   >
@@ -429,7 +429,7 @@ Le statut des projets de traduction est désormais correctement mis à jour apr�
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface d’utilisation du gestionnaire de modules se ferme occasionnellement pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation de la mise à jour complète pour vous assurer que l’installation est réussie. En règle générale, ce problème se produit dans [!DNL Safari], mais peut se produire par intermittence sur n’importe quel navigateur.
+>La boîte de dialogue de l’interface d’utilisation du gestionnaire de modules se ferme occasionnellement pendant l’installation du pack de services. Adobe recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du bundle d’application de mise à jour avant de vous assurer que l’installation a réussi. En règle générale, ce problème se produit dans [!DNL Safari], mais peut se produire par intermittence sur n’importe quel navigateur.
 
 **Installation automatique**
 
@@ -450,7 +450,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-1. Le lot OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.20 ou ultérieure (utilisez la console web : `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE. CHECK WITH SAMEER DHAWAN -->
+1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.20 ou ultérieure (utilisez la console web : `/system/console/bundles`). <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE. CHECK WITH SAMEER DHAWAN -->
 
 ### Installer le pack de services pour [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -537,13 +537,13 @@ Les éditeurs privilégiés pour la gestion du contenu découplé dans AEM sont 
 
   Pour résoudre cette exception, procédez comme suit :
 
-   1. Supprimez les deux dossiers suivants de `crx-quickstart/repository/`
+  1. Supprimez les deux dossiers suivants de `crx-quickstart/repository/`
 
-      * `cache`
-      * `diff-cache`
+     * `cache`
+     * `diff-cache`
 
-   1. Installez le pack de services ou redémarrez Experience Manager as a Cloud Service.
-Les nouveaux dossiers de `cache` et `diff-cache` sont automatiquement créés et vous ne rencontrez plus d’exception liée aux `mvstore` dans le `error.log`.
+  1. Installez le Pack de services ou redémarrez Experience Manager as a Cloud Service.
+     Les nouveaux dossiers `cache` et `diff-cache` sont automatiquement créés et vous ne voyez plus d’exception liée à `mvstore` dans `error.log`.
 
 * Mettez à jour vos requêtes GraphQL qui peuvent avoir utilisé un nom d’API personnalisé pour votre modèle de contenu afin d’utiliser plutôt le nom par défaut du modèle de contenu.
 
@@ -551,24 +551,24 @@ Les nouveaux dossiers de `cache` et `diff-cache` sont automatiquement créés et
 
   Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes sous `/indexRules/dam:Asset/properties` :
 
-   * `contentFragment`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/contentFragment"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="Boolean"`
-   * `model`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/data/cq:model"`
-      * `ordered="{Boolean}true"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="String"`
+  * `contentFragment`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/contentFragment"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="Boolean"`
+  * `model`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/data/cq:model"`
+    * `ordered="{Boolean}true"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="String"`
 
   Une fois la définition d’index modifiée, une réindexation est nécessaire (`reindex` = `true`).
 
   Après ces étapes, les requêtes GraphQL doivent être plus rapides.
 
 * Lorsque vous tentez de déplacer, de supprimer ou de publier des fragments de contenu, des sites ou des pages, un problème se produit lorsque les références aux fragments de contenu sont récupérées. La requête en arrière-plan échoue ; la fonctionnalité ne fonctionne pas.
-Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les propriétés suivantes au nœud de définition d’index `/oak:index/damAssetLucene` (aucune réindexation n’est requise) :
+Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les propriétés suivantes au nœud de définition d’index `/oak:index/damAssetLucene` (aucune réindexation n’est requise) :
 
   ```xml
   "tags": [
@@ -582,14 +582,14 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Les utilisateurs peuvent renommer un dossier dans une hiérarchie dans [!DNL Assets] et publier un dossier imbriqué dans [!DNL Brand Portal]. Toutefois, le titre du dossier n’est pas mis à jour dans [!DNL Brand Portal] jusqu’à ce que le dossier racine soit republié.
 
 * Les erreurs et messages d’avertissement suivants peuvent s’afficher lors de l’installation d’[!DNL Experience Manager] 6.5.x.x :
-   * « Lorsque l’intégration d’Adobe Target est configurée dans [!DNL Experience Manager] à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. » Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
-   * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
-   * La zone réactive d’une image interactive de Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières avec achat.
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : temporisation en attente de modification d’enregistrement pour terminer la désinscription.
+  * « Lorsque l’intégration d’Adobe Target est configurée dans [!DNL Experience Manager] à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. » Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
+  * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
+  * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
+  * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
+  * La zone réactive d’une image interactive de Dynamic Media n’est pas visible lors de la prévisualisation du fichier via la visionneuse de bannières avec achat.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : temporisation en attente de modification d’enregistrement pour terminer la désinscription.
 
-* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le lot `org.apache.servicemix.bundles.rhino` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (`use strict;`) doivent déclarer leurs variables correctes. Dans le cas contraire, elles ne sont pas exécutées et finissent par générer une erreur d’exécution.
+* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le bundle `org.apache.servicemix.bundles.rhino` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (`use strict;`) doivent déclarer leurs variables correctes. Dans le cas contraire, elles ne sont pas exécutées et finissent par générer une erreur d’exécution.
 
 * L’installation du balisage du contenu d’usine par le biais d’un package de mise à jour officiel réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Cette action est vraie pour les packs de services, les packs de services de sécurité, les packs de correctifs, les packs de correctifs cumulatifs, les correctifs, etc. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
 
@@ -606,16 +606,15 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
 
 * **NPR-44100** Après l’installation du pack de services 25 d’AEM 6.5 sur des déploiements WAR/JEE (y compris AEM Forms sur JEE), le lot `com.adobe.cq.screens.sessions` reste à l’état Installé et ne devient jamais Actif. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
+* **Les déploiements FORMS-23491** AEM Forms 6.5.24.0 JEE (JBoss, WebLogic, WebSphere) sont affectés par CVE-2025-64775, une vulnérabilité de déni de service Apache Struts dans le traitement des requêtes multipartie. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.24.0.
 * **FORMS-14926** Après l’installation du pack de services 21 (6.5.21.0) d’AEM Forms JEE, si vous constatez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` dans le dossier `<AEM_Forms_Installation>/lib/caching/lib`, procédez comme suit pour résoudre le problème :
 
-   1. Arrêtez les localisateurs s’ils sont en cours d’exécution.
-   2. Arrêtez le serveur AEM.
-   3. Accédez à `<AEM_Forms_Installation>/lib/caching/lib`.
-   4. Supprimez tous les fichiers de correctifs Geode, à l’exception de `geode-*-1.15.1.2.jar`. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
-   5. Ouvrez l’invite de commande en mode administration.
-   6. Installez le correctif Geode à l’aide du fichier `geode-*-1.15.1.2.jar`.
-
-   * AEM Forms comprend désormais une mise à niveau de Struts, de la version 2.5.33 vers la version 6.x, pour le composant de formulaire. Cette mise à niveau fournit des modifications Struts précédemment manquantes qui n&#39;étaient pas incluses dans le SP24. La prise en charge a été ajoutée via un [correctif](/help/release-notes/aem-forms-hotfix.md) que vous pouvez télécharger et installer. La dernière version de Struts est alors prise en charge.
+  1. Arrêtez les localisateurs s’ils sont en cours d’exécution.
+  2. Arrêtez le serveur AEM.
+  3. Accédez à `<AEM_Forms_Installation>/lib/caching/lib`.
+  4. Supprimez tous les fichiers de correctifs Geode, à l’exception de `geode-*-1.15.1.2.jar`. Confirmez que seuls les fichiers JAR Geode avec `version 1.15.1.2` sont présents.
+  5. Ouvrez l’invite de commande en mode administration.
+  6. Installez le correctif Geode à l’aide du fichier `geode-*-1.15.1.2.jar`.
 
 ## Lots OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
