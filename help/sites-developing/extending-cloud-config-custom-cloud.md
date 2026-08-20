@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 96%
 
 ---
 
@@ -83,12 +83,12 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * **Type** : `cq:Dialog`
    * **Propriétés** :
 
-      * **Nom** : `title`
-      * **Type** : `String`
-      * **Valeur** : `Google Analytics Config`
-      * **Nom** : `xtype`
-      * **Type** : `String`
-      * **Valeur** : `dialog`
+     * **Nom** : `title`
+     * **Type** : `String`
+     * **Valeur** : `Google Analytics Config`
+     * **Nom** : `xtype`
+     * **Type** : `String`
+     * **Valeur** : `dialog`
 
 1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog` :
 
@@ -96,9 +96,9 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * **Type** : `cq:Widget`
    * **Propriétés** :
 
-      * **Nom** : `xtype`
-      * **Type** : `String`
-      * **Valeur** : `tabpanel`
+     * **Nom** : `xtype`
+     * **Type** : `String`
+     * **Valeur** : `tabpanel`
 
 1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items` :
 
@@ -111,9 +111,9 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * **Type** : `cq:Panel`
    * **Propriétés** :
 
-      * **Nom** : `title`
-      * **Type** : `String`
-      * **Valeur** : `Config`
+     * **Nom** : `title`
+     * **Type** : `String`
+     * **Valeur** : `Config`
 
 1. Créez un nœud sous `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1` :
 
@@ -121,23 +121,23 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * **Type** : `nt:unstructured`
    * **Propriétés** :
 
-      * **Nom** : `fieldLabel`
-      * **Type** : chaîne
-      * **Valeur** : ID de compte
+     * **Nom** : `fieldLabel`
+     * **Type** : chaîne
+     * **Valeur** : ID de compte
 
-      * **Nom** : `fieldDescription`
-      * **Type** : `String`
-      * **Valeur** : `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **Nom** : `fieldDescription`
+     * **Type** : `String`
+     * **Valeur** : `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Nom** : `name`
-      * **Type** : `String`
-      * **Valeur** : `./accountID`
-      * **Nom** : `validateOnBlur`
-      * **Type** : `String`
-      * **Valeur** : `true`
-      * **Nom** : `xtype`
-      * **Type** : `String`
-      * **Valeur** : `textfield`
+     * **Nom** : `name`
+     * **Type** : `String`
+     * **Valeur** : `./accountID`
+     * **Nom** : `validateOnBlur`
+     * **Type** : `String`
+     * **Valeur** : `true`
+     * **Nom** : `xtype`
+     * **Type** : `String`
+     * **Valeur** : `textfield`
 
 1. Copiez `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` sur `/apps/acs/analytics/components/googleanalyticspage/body.jsp`, remplacez `libs` par `apps` à la ligne 34 et faites de la référence de script à la ligne 79 un chemin d’accès entièrement qualifié.
 1. Créez un modèle sous `/apps/acs/analytics/templates/` :
@@ -146,9 +146,9 @@ Le jeu de services cloud par défaut peut être étendu avec des types de servic
    * avec comme **Libellé** = `googleanalytics` ;
    * avec comme **Titre**= `Google Analytics Configuration` ;
    * avec comme **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?` ;
-   * avec comme **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics` ;
-   * avec comme **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le nœud template et non sur le nœud jcr:content) ;
-   * avec comme **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content).
+   * Avec **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics` ;
+   * avec comme **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (sur le nœud template et non sur le nœud jcr:content) ;
+   * avec comme **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (sur jcr:content) ;
 
 1. Créez un composant : `/apps/acs/analytics/components/googleanalytics`.
 
