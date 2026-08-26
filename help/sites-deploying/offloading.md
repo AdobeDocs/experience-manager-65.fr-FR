@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 100%
+source-wordcount: '2386'
+ht-degree: 95%
 
 ---
 
@@ -73,12 +73,12 @@ Pour chaque cluster, vous voyez une liste des membres du cluster qui indique l�
 
 Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées à la topologie :
 
-* Une liste autorisée de rubriques pour le client des travaux de l’instance.
+* Une liste autorisée de rubriques pour le consommateur de tâches de l’instance.
 * Points d’entrée exposés pour la connexion à la topologie.
 * Rubriques de traitement pour lesquelles l’instance est enregistrée pour le déchargement.
 * Rubriques de traitement que l’instance traite.
 
-1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([&#128279;](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de topologies.
 
@@ -97,7 +97,7 @@ Vous pouvez également utiliser la console web pour afficher les informations su
 
 Utilisez la procédure suivante pour ouvrir la page de gestion des topologies de la console web :
 
-1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -111,7 +111,7 @@ Le service de découverte envoie des requêtes POST périodiques (pulsations) au
 * Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
 * Pour permettre à une instance de rejoindre une topologie, ajoutez l’instance à la liste autorisée du service Topology Connector du membre racine.
 
-Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
+Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
 
 <table>
  <tbody>
@@ -162,14 +162,14 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
 
 Utilisez la procédure suivante pour connecter une instance CQ au membre racine d’une topologie. La procédure pointe l’instance vers l’URL du Topology Connector du membre de topologie racine. Effectuez cette procédure sur tous les membres de la topologie.
 
-1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 1. Cliquez sur Configurer le service de détection.
 1. Ajoutez un élément à la propriété URL de Topology Connector et spécifiez l’URL du service Topology Connector du membre de topologie racine. L’URL se présente sous la forme https://rootservername:4502/libs/sling/topology/connector.
 
 Effectuez la procédure suivante sur le membre racine de la topologie. La procédure ajoute les noms des autres membres de la topologie à sa liste d’autorisation du service de détection.
 
-1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 1. Cliquez sur Configurer le service de détection.
 1. Pour chaque membre de la topologie, ajoutez un élément à la propriété de liste autorisée de Topology Connector, puis indiquez le nom d’hôte ou l’adresse IP du membre de la topologie.
@@ -180,7 +180,7 @@ Utilisez le navigateur de déchargement pour configurer la consommation de rubri
 
 Les tâches sont réparties entre les instances ayant la rubrique associée activée à l’aide d’une logique circulaire.
 
-1. À l’aide de l’interface utilisateur tactile, appuyez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([&#128279;](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de déchargement.
 
@@ -208,7 +208,7 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 | Rubrique de tâche | PID de service | Description |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propr
 
 | Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
 | Liste bloquée de rubriques | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création d’agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
@@ -235,7 +235,7 @@ Le framework de déchargement utilise la réplication pour transporter les resso
 
 >[!CAUTION]
 >
->Un problème connu avec les agents de réplication générés automatiquement est le fait que vous devez créer manuellement de nouveaux agents de réplication.
+>Un problème connu concernant les agents de réplication générés automatiquement vous oblige à en créer de nouveaux manuellement.
 
 Créez les agents de réplication qui transportent les charges utiles de traitement entre les instances pour le déchargement. L’illustration suivante montre les agents qui doivent être déchargés de l’instance de création vers une instance secondaire. L’auteur a un identifiant Sling de 1, alors que l’identifiant Sling de l’instance de travail est 2 :
 
@@ -251,19 +251,19 @@ Ce schéma de réplication est similaire à celui utilisé entre les instances d
 
 >[!NOTE]
 >
->Le framework de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. Le framework crée ensuite automatiquement les agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
+>Le framework de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. Le framework crée ensuite automatiquement les agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
 Utilisez un format spécifique pour la propriété ***Nom*** des agents de réplication, afin que la structure de déchargement puisse utiliser automatiquement l’agent correct pour les instances de travail spécifiques.
 
-**Nommer un agent sortant sur l’instance d’auteur :** 
+**Nommer un agent sortant sur l’instance de création :**
 
 `offloading_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple : `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
-**Nommer l’agent inverse sur l’instance d’auteur :** 
+**Nommer l’agent inverse sur l’instance de création :**
 
 `offloading_reverse_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
@@ -315,7 +315,7 @@ Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Obtenez l’identifiant Sling d’une instance Experience Manager à l’aide de l’une des méthodes suivantes :
 
-* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
+* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([&#128279;](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
 <!--
