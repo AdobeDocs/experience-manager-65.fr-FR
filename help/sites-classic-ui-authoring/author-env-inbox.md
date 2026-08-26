@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 92%
 
 ---
 
@@ -81,7 +81,7 @@ Pour vous abonner aux notifications :
    * Activé : lorsqu’une page a été activée.
    * Désactivé : lorsqu’une page a été désactivée.
    * Supprimé (syndication) : lorsqu’une page a fait l’objet d’une réplication de suppression ; en d’autres termes, lorsqu’une action de suppression effectuée sur une page est répliquée.
-Lorsqu’une page est supprimée ou déplacée, une action de suppression est automatiquement répliquée : la page est supprimée sur l’instance source sur laquelle l’action de suppression a été effectuée, ainsi que sur l’instance de destination définie par les agents de réplication.
+     Lorsqu’une page est supprimée ou déplacée, une action de suppression est automatiquement répliquée : la page est supprimée sur l’instance source sur laquelle l’action de suppression a été effectuée, ainsi que sur l’instance de destination définie par les agents de réplication.
 
    * Modifié : lorsqu’une page a été modifiée.
    * Créé : lorsqu’une page a été créée.
@@ -93,8 +93,8 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
    * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin, à savoir `/content/docs`.
 
-   * Si vous souhaitez recevoir une notification pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
-Pour ne recevoir des notifications que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
+   * Pour recevoir des notifications pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** à **Non**.
+     Pour ne recevoir des notifications que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** à **Oui**.
 
    * Pour autoriser la règle, définissez la **Règle** sur **Autoriser**. Si elle est définie sur **Refuser**, la règle est refusée, mais pas supprimée. Elle peut être autorisée ultérieurement.
 

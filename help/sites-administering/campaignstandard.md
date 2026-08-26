@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1824'
+ht-degree: 97%
 
 ---
 
@@ -25,19 +25,19 @@ Cette intégration permet d’utiliser AEM et Adobe Campaign Standard indépen
 
 >[!INFO]
 >
->Ce document explique comment intégrer Adobe Campaign Standard à AEM 6.5. Pour les autres intégrations de Campaign, reportez-vous au document . [Intégration d’AEM 6.5 à Adobe Campaign.](campaign.md)
+>Ce document explique comment intégrer Adobe Campaign Standard à AEM 6.5. Pour découvrir les autres intégrations de Campaign, consultez le document [Intégration d’AEM 6.5 à Adobe Campaign.](campaign.md)
 
 ## Étapes d’intégration {#integration-steps}
 
 La configuration de l’intégration entre AEM et Adobe Campaign Standard nécessite plusieurs étapes dans les deux solutions.
 
-1. [Configurez le ](#aemserver-user)
-1. [Vérifiez le ](#resource-type-filter)
+1. [Configuration de l’utilisateur `aemserver` dans Campaign](#aemserver-user)
+1. [Vérification de la `AEMResourceTypeFilter` dans Campaign](#resource-type-filter)
 1. [Créer un modèle de diffusion d’e-mails spécifique à AEM dans Campaign](#aem-email-delivery-template)
 1. [Configurer l’intégration de Campaign dans AEM](#campaign-integration)
 1. [Configurer la réplication sur l’instance de publication AEM](#replication)
 1. [Configurer l’externaliseur AEM](#externalizer)
-1. [Configurez le ](#campaign-remote-user)
+1. [Configuration de l’utilisateur `campaign-remote` dans AEM](#campaign-remote-user)
 1. [Configurer le compte externe AEM dans Campaign](#acc-external-user)
 
 Ce document vous guide de façon détaillée à travers chacune de ces étapes.
@@ -45,7 +45,7 @@ Ce document vous guide de façon détaillée à travers chacune de ces étapes.
 ## Prérequis {#prerequisites}
 
 * Accès de l’administrateur à Adobe Campaign Standard
-   * Si vous avez besoin de détails supplémentaires sur la configuration d’Adobe Campaign Standard, reportez-vous à la [documentation Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=fr).
+  * Si vous avez besoin de détails supplémentaires sur la configuration d’Adobe Campaign Standard, reportez-vous à la [documentation Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=fr).
 * Accès de l’administrateur à AEM
 
 ## Configurer l’utilisateur aemserver dans Campaign {#aemserver-user}
@@ -66,7 +66,7 @@ Par défaut, Adobe Campaign Standard est fourni avec un utilisateur `aemserver
 
 Votre utilisateur `aemserver` dispose désormais des droits nécessaires pour qu’AEM l’utilise pour communiquer avec Adobe Campaign.
 
-Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Cette opération ne peut pas être effectuée via Adobe Campaign. Un ingénieur ou une ingénieure du support Adobe doit s’en charger. [Envoyez un ticket à l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/fr?support-tab=home&amp;lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur ou de l’utilisatrice `aemserver`. Une fois que l’Assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
+Toutefois, avant qu’AEM puisse utiliser l’utilisateur `aemserver`, son mot de passe doit être défini. Cette opération ne peut pas être effectuée via Adobe Campaign. Un ingénieur ou une ingénieure du support Adobe doit s’en charger. [Envoyez un ticket à l’Assistance clientèle d’Adobe](https://experienceleague.adobe.com/?support-tab=home&lang=fr#support) pour demander la réinitialisation du mot de passe de l’utilisateur ou de l’utilisatrice `aemserver`. Une fois que l’Assistance clientèle d’Adobe vous a fourni le mot de passe, conservez-le dans un emplacement sécurisé.
 
 ## Vérifier AEMResourceTypeFilter dans Campaign {#resource-type-filter}
 
@@ -142,7 +142,7 @@ AEM communique avec Adobe Campaign à l’aide d’une intégration et de l’u
 
 1. Une nouvelle fenêtre et boîte de dialogue s’ouvre pour modifier la configuration. Fournissez les informations requises.
 
-   * **Nom d’utilisateur** : il s’agit de [l’utilisateur `aemserver` dans Adobe Campaign que vous avez configuré à l’étape précédente.](#aemserver-user)Par défaut, celui-ci est `aemserver`.
+   * **Nom d’utilisateur** - Il s’agit de [l’utilisateur `aemserver` dans Adobe Campaign que vous avez configuré à l’étape précédente](#aemserver-user). Par défaut, le paramètre est `aemserver`.
    * **Mot de passe** : il s’agit du mot de passe de [l’utilisateur `aemserver` dans Adobe Campaign que vous avez demandé à l’assistance clientèle d’Adobe lors d’une étape précédente.](#aemserver-user)
    * **Point de fin d’API** - Il s’agit de l’URL de l’instance Adobe Campaign.
 
@@ -160,9 +160,9 @@ AEM peut désormais communiquer avec Adobe Campaign.
 
 Le contenu de Campaign est créé par les auteurs de contenu sur l’instance de création AEM. Cette instance est généralement disponible uniquement en interne au sein de votre organisation. Pour que le contenu tel que les images et les ressources soit accessible aux destinataires de votre campagne, vous devez publier ce contenu.
 
-L’agent de réplication est chargé de publier le contenu de l’instance d’auteur AEM vers l’instance de publication et doit être configuré pour que l’intégration fonctionne correctement. Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
+L’agent de réplication est chargé de publier le contenu de l’instance de création AEM vers l’instance de publication et doit être configuré pour que l’intégration fonctionne correctement. Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
 
-Pour configurer la réplication de votre instance d’auteur AEM vers l’instance de publication :
+Pour configurer la réplication de votre instance de création AEM vers l’instance de publication :
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 

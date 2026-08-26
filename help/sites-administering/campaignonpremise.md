@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
-workflow-type: ht
-source-wordcount: '1564'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1594'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Cette intégration permet d’utiliser AEM et Adobe Campaign Classic indépendam
 
 >[!INFO]
 >
->Ce document explique comment intégrer Adobe Campaign Classic à AEM 6.5. Pour les autres intégrations de Campaign, reportez-vous au document . [Intégration d’AEM 6.5 à Adobe Campaign.](campaign.md)
+>Ce document explique comment intégrer Adobe Campaign Classic à AEM 6.5. Pour découvrir les autres intégrations de Campaign, consultez le document [Intégration d’AEM 6.5 à Adobe Campaign.](campaign.md)
 
 ## Étapes d’intégration {#integration-steps}
 
@@ -43,8 +43,8 @@ Ce document vous guide de façon détaillée à travers chacune de ces étapes.
 ## Prérequis {#prerequisites}
 
 * Accès des administrateurs à Adobe Campaign Classic
-   * Pour effectuer l’intégration, vous avez besoin d’une instance Adobe Campaign Classic opérationnelle, y compris d’une base de données configurée.
-   * Si vous avez besoin de détails supplémentaires sur l’installation et la configuration d’Adobe Campaign Classic, consultez la [documentation d’Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr), et particulièrement le Guide d’installation et de configuration.
+  * Pour effectuer l’intégration, vous avez besoin d’une instance Adobe Campaign Classic opérationnelle, y compris d’une base de données configurée.
+  * Si vous avez besoin de détails supplémentaires sur l’installation et la configuration d’Adobe Campaign Classic, consultez la [documentation d’Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=fr), et particulièrement le Guide d’installation et de configuration.
 * Accès de l’administrateur à AEM
 
 ## Installer le module d’intégration AEM dans Campaign {#install-package}
@@ -145,7 +145,7 @@ AEM utilise [l’opérateur que vous avez déjà configuré dans Campaign](#crea
 
 1. Une nouvelle fenêtre et boîte de dialogue s’ouvre pour modifier la configuration. Fournissez les informations requises.
 
-   * **Nom d’utilisateur** : il s’agit de [l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente.](#create-operator) Par défaut, celui-ci est `aemserver`.
+   * **Nom d’utilisateur** - Il s’agit [ l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente](#create-operator). Par défaut, le paramètre est `aemserver`.
    * **Mot de passe** : il s’agit du mot de passe pour [l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente](#create-operator).
    * **Point de fin d’API** - Il s’agit de l’URL de l’instance Adobe Campaign.
 
@@ -163,9 +163,9 @@ AEM peut désormais communiquer avec Adobe Campaign.
 
 Le contenu de Campaign est créé par les auteurs de contenu sur l’instance de création AEM. Cette instance est généralement disponible uniquement en interne au sein de votre organisation. Pour que le contenu tel que les images et les ressources soit accessible aux destinataires de votre campagne, vous devez publier ce contenu.
 
-L’agent de réplication est chargé de publier le contenu de l’instance d’auteur AEM vers l’instance de publication et doit être configuré pour que l’intégration fonctionne correctement. Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
+L’agent de réplication est chargé de publier le contenu de l’instance de création AEM vers l’instance de publication et doit être configuré pour que l’intégration fonctionne correctement. Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
 
-Pour configurer la réplication de votre instance d’auteur AEM vers l’instance de publication :
+Pour configurer la réplication de votre instance de création AEM vers l’instance de publication :
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 
@@ -242,8 +242,8 @@ Lors de [l’installation du package **Intégration AEM** dans Campaign,](#insta
 1. Sous l’onglet **Général** de ce compte, saisissez les informations utilisateur que vous avez définies lors de l’étape [Définir le mot de passe de l’utilisateur campaign-remote](#set-campaign-remote-password).
 
    * **Serveur** : adresse du serveur de création AEM
-      * Le serveur de création AEM doit être accessible à partir de l’instance de serveur Adobe Campaign Classic.
-      * Assurez-vous que l’adresse du serveur ne se termine **pas** par une barre oblique.
+     * Le serveur de création AEM doit être accessible à partir de l’instance de serveur Adobe Campaign Classic.
+     * Assurez-vous que l’adresse du serveur ne se termine **pas** par une barre oblique.
    * **Compte** : par défaut, il s’agit de l’utilisateur `campaign-remote` défini dans AEM lors de l’étape [Définir le mot de passe de l’utilisateur campaign-remote](#set-campaign-remote-password).
    * **Mot de passe** : il est identique à celui défini dans AEM pour l’utilisateur `campaign-remote` lors de l’étape [Définir le mot de passe de l’utilisateur campaign-remote](#set-campaign-remote-password).
 

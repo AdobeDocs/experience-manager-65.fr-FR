@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 100%
+source-wordcount: '533'
+ht-degree: 86%
 
 ---
 
@@ -50,15 +50,15 @@ L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Targe
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
-Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les personnes utilisatrices normales. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+Sécurisez le nœud de paramètres d’activité **cq:ActivitySettings** sur l’instance de publication afin qu’il ne soit pas accessible aux utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le nœud jcr:content des activités,* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`** sous le nœud jcr:content des activités ; * *par exemple, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les ACL suivantes :
+Le nœud **cq:ActivitySettings** sous le jcr de l’activité:content est protégé par les listes de contrôle d’accès suivantes :
 
 * Refuser tout pour tous
-* Autoriser jcr:read,rep:write pour « target-activity-authors » (l’auteur ou l’autrice est membre de ce groupe prêt à l’emploi)
-* Autoriser jcr:read,rep:write pour « targetservice »
+* Autorisez jcr:read,rep:write pour « target-activity-authors » (l’auteur est membre de ce groupe prêt à l’emploi).
+* Autoriser jcr:read,rep:write pour « targetservice »
 
 Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
