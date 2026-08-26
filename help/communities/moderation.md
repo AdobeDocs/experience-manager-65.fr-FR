@@ -72,7 +72,7 @@ Si l’on excepte le rail de navigation de gauche (qui s’affiche sur l’insta
 
 ### Barre de navigation supérieure {#top-navigation-bar}
 
-La barre de navigation supérieure est constante pour toutes les consoles. Pour plus d’informations, voir [ Manipulation de base ](/help/sites-authoring/basic-handling.md).
+La barre de navigation supérieure est constante pour toutes les consoles. Pour plus d’informations, voir [&#x200B; Manipulation de base &#x200B;](/help/sites-authoring/basic-handling.md).
 
 ### Barre d’outils {#toolbar}
 
@@ -100,7 +100,7 @@ La zone de contenu contient des informations sur le contenu créé par l’utili
 * Emplacement du poste
 * Date de publication
 * Nombre de réponses à la publication
-* [Sentiment ](/help/communities/moderate-ugc.md#sentiment) associé à la publication
+* [Sentiment &#x200B;](/help/communities/moderate-ugc.md#sentiment) associé à la publication
 * Si elle est approuvée, une coche s’affiche
 * S’il existe une pièce jointe, un trombone s’affiche
 
@@ -227,9 +227,9 @@ Publié dans la dernière limite le contenu créé par l’utilisateur référen
 
 #### Opinion {#sentiment}
 
-[Sentiment ](/help/communities/moderate-ugc.md#sentiment) limite le contenu créé par l’utilisateur référencé affiché aux publications dont la valeur de sentiment est positive, négative ou neutre.
+[Sentiment &#x200B;](/help/communities/moderate-ugc.md#sentiment) limite le contenu créé par l’utilisateur référencé affiché aux publications dont la valeur de sentiment est positive, négative ou neutre.
 
-![sentiment ](assets/sentiment.png)
+![sentiment &#x200B;](assets/sentiment.png)
 
 ## Filtres personnalisés {#custom-filters}
 
@@ -349,7 +349,7 @@ Lorsque vous travaillez avec une publication unique, une icône Fermer s’affic
 
 #### Historique de modération {#moderation-history}
 
-![modération ](assets/moderation.png)
+![modération &#x200B;](assets/moderation.png)
 
 Lorsque vous travaillez avec une seule publication, une icône d’historique de modération s’affiche lorsque vous passez la souris dessus. Si vous sélectionnez l’icône , un volet affiche l’historique des actions entreprises concernant la publication du contenu créé par l’utilisateur.
 

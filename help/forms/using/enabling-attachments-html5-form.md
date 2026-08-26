@@ -27,7 +27,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
    | multiSelect | vrai ou faux (vrai par défaut) |
    | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
    | buttonText | Texte des boutons de la fenêtre pop-up (« Joindre » par défaut). |
-   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf » par défaut). |
+   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf » par défaut). |
 
    Par exemple :
 

@@ -44,7 +44,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** à côté du package pour l’installer.
-1. Accéder à la configuration de la console web d’AEM ****
+1. Accéder à la configuration de la console web d’AEM **&#x200B;**
 à l’adresse [*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
