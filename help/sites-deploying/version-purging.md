@@ -34,7 +34,7 @@ AEM est fourni avec divers mécanismes pour vous aider à gérer votre référen
 * le [Gestionnaire de versions](#version-manager)
 Cette option peut être configurée pour purger les anciennes versions lorsque de nouvelles versions sont créées.
 
-* l’outil [ Purger les versions ](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+* l’outil [&#x200B; Purger les versions &#x200B;](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
 Il est utilisé dans le cadre de la surveillance et de la maintenance de votre référentiel.
 Il vous permet d’intervenir et de supprimer les anciennes versions d’un nœud ou d’une hiérarchie de nœuds, en fonction des paramètres suivants :
 

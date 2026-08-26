@@ -85,7 +85,7 @@ Les membres du groupe administrateurs sont des administrateurs système qui peuv
 
 Pour les environnements de production, le groupe d’administrateurs par défaut doit être modifié.
 
-Veillez à suivre la [ Liste de contrôle de sécurité ](../../help/sites-administering/security-checklist.md).
+Veillez à suivre la [&#x200B; Liste de contrôle de sécurité &#x200B;](../../help/sites-administering/security-checklist.md).
 
 ## Environnement de publication {#publish-environment}
 

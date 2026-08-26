@@ -78,7 +78,7 @@ Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées 
 * Rubriques de traitement pour lesquelles l’instance est enregistrée pour le déchargement.
 * Rubriques de traitement que l’instance traite.
 
-1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([](http://localhost:4502/tools.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([&#128279;](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de topologies.
 
@@ -97,7 +97,7 @@ Vous pouvez également utiliser la console web pour afficher les informations su
 
 Utilisez la procédure suivante pour ouvrir la page de gestion des topologies de la console web :
 
-1. Ouvrez la console web dans votre navigateur. ([](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -162,14 +162,14 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
 
 Utilisez la procédure suivante pour connecter une instance CQ au membre racine d’une topologie. La procédure pointe l’instance vers l’URL du Topology Connector du membre de topologie racine. Effectuez cette procédure sur tous les membres de la topologie.
 
-1. Ouvrez la console web dans votre navigateur. ([](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 1. Cliquez sur Configurer le service de détection.
 1. Ajoutez un élément à la propriété URL de Topology Connector et spécifiez l’URL du service Topology Connector du membre de topologie racine. L’URL se présente sous la forme https://rootservername:4502/libs/sling/topology/connector.
 
 Effectuez la procédure suivante sur le membre racine de la topologie. La procédure ajoute les noms des autres membres de la topologie à sa liste d’autorisation du service de détection.
 
-1. Ouvrez la console web dans votre navigateur. ([](http://localhost:4502/system/console))
+1. Ouvrez la console web dans votre navigateur. ([&#128279;](http://localhost:4502/system/console))
 1. Cliquez sur Principal > Gestion de la topologie.
 1. Cliquez sur Configurer le service de détection.
 1. Pour chaque membre de la topologie, ajoutez un élément à la propriété de liste autorisée de Topology Connector, puis indiquez le nom d’hôte ou l’adresse IP du membre de la topologie.
@@ -180,7 +180,7 @@ Utilisez le navigateur de déchargement pour configurer la consommation de rubri
 
 Les tâches sont réparties entre les instances ayant la rubrique associée activée à l’aide d’une logique circulaire.
 
-1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([](http://localhost:4502/tools.html))
+1. À l’aide de l’interface d’utilisation tactile, cliquez sur l’onglet Outils. ([&#128279;](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
 1. Dans le panneau de navigation, cliquez sur Navigateur de déchargement.
 
@@ -208,7 +208,7 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 | Rubrique de tâche | PID de service | Description |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
+| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propr
 
 | Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
 | Liste bloquée de rubriques | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création d’agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
@@ -315,7 +315,7 @@ Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Obtenez l’identifiant Sling d’une instance Experience Manager à l’aide de l’une des méthodes suivantes :
 
-* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
+* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([&#128279;](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
 <!--

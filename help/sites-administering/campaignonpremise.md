@@ -145,7 +145,7 @@ AEM utilise [l’opérateur que vous avez déjà configuré dans Campaign](#crea
 
 1. Une nouvelle fenêtre et boîte de dialogue s’ouvre pour modifier la configuration. Fournissez les informations requises.
 
-   * **Nom d’utilisateur** - Il s’agit [ l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente](#create-operator). Par défaut, le paramètre est `aemserver`.
+   * **Nom d’utilisateur** - Il s’agit [&#x200B; l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente](#create-operator). Par défaut, le paramètre est `aemserver`.
    * **Mot de passe** : il s’agit du mot de passe pour [l’opérateur du package d’intégration Adobe Campaign AEM créé à l’étape précédente](#create-operator).
    * **Point de fin d’API** - Il s’agit de l’URL de l’instance Adobe Campaign.
 
