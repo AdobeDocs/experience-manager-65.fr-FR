@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2593'
-ht-degree: 100%
+source-wordcount: '2691'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -79,13 +79,13 @@ Configuration de l’action Envoyer vers le point d’entrée REST
 >
 >Pour transmettre les champs en tant que paramètres dans une URL REST, tous les champs doivent avoir des noms d’éléments différents, même s’ils sont placés sur différents panneaux.
 
-### Publier les données envoyées vers une ressource ou un point d’entrée REST externe {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Publier les données envoyées vers une ressource ou un point d’entrée REST externe  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilisez l’action **Envoyer vers le point d’entrée REST** pour transmettre les données envoyées à l’URL REST. L’URL peut être celle d’un serveur interne (le serveur sur lequel le formulaire est rendu) ou externe.
 
 Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont publiées avec le chemin de la ressource. Par exemple, /content/restEndPoint. Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 
-Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est le suivant : https://host:port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
+Pour publier des données sur un serveur externe, indiquez une URL. Le format de l’URL est :port/path_to_rest_end_point. Assurez-vous de configurer le chemin pour que la requête POST soit traitée anonymement.
 
 ![Mappage pour la transmission des valeurs de champs sous forme de paramètres de page de remerciement](assets/post-enabled-actionconfig.png)
 
@@ -130,7 +130,7 @@ L’action d’envoi **Envoyer à l’aide du modèle de données de formulaire*
 
 En outre, vous pouvez envoyer un formulaire en pièce jointe à l’aide d’un modèle de données de formulaire et d’un document d’enregistrement (DoR) vers la source de données.
 
-Pour plus d’informations sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
+Pour plus d’informations sur le modèle de données de formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
 ## Action d’envoi du portail Forms {#forms-portal-submit-action}
 
@@ -173,7 +173,7 @@ Une fois la configuration réussie, utilisez l’action d’envoi [Appeler un fl
 
 >[!NOTE]
 >
->La fonction Envoyer à une liste Microsoft® SharePoint a été introduite avec AEM 6.5 Forms pack de services 19 (6.5.19.0).
+> La fonctionnalité Envoyer à ® Liste SharePoint a été introduite avec le pack de services 19 (6.5.19.0) d’AEM 6.5 Forms.
 
 L’action d’envoi **[!UICONTROL Envoyer à SharePoint]** connecte un formulaire adaptatif à un stockage Microsoft® SharePoint. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté.
 
@@ -199,7 +199,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
      >[!NOTE]
      >
-     >Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
+     > Le champ du **secret client** est obligatoire ou facultatif selon la configuration de votre application Azure Active Directory. Si votre application est configurée pour utiliser un secret client, vous devez l’indiquer.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, le message `Connection Successful` s’affiche.
 1. Sélectionnez **[!UICONTROL Site SharePoint]** et **[!UICONTROL Liste SharePoint]** dans la liste déroulante.
@@ -209,7 +209,7 @@ Pour connecter AEM Forms à votre liste Microsoft® SharePoint :
 
 Vous pouvez utiliser la configuration de liste SharePoint créée dans un formulaire adaptatif pour enregistrer des données ou un document d’enregistrement généré dans une liste SharePoint. Suivez les étapes ci-dessous pour utiliser une configuration de stockage de listes SharePoint dans un formulaire adaptatif :
 
-1. [Créer un modèle de données de formulaire à l’aide de Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Création d’un modèle de données de formulaire à l’aide de la configuration de liste ® SharePoint](/help/forms/using/create-form-data-model.md)
 1. [Configurer le modèle de données de formulaire pour récupérer et envoyer des données](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Créez un formulaire adaptatif](/help/forms/using/create-adaptive-form.md).
 1. [Configurer l’action de soumission à l’aide d’un modèle de données de formulaire](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -218,16 +218,16 @@ Lorsque vous soumettez le formulaire, les données sont enregistrées dans le st
 
 >[!NOTE]
 >
->Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
->* Colonne image
->* Colonne métadonnées
->* Colonne personne
->* Colonne données externes
+> Dans la liste Microsoft® SharePoint, les types de colonnes suivants ne sont pas pris en charge :
+> * Colonne image
+> * Colonne métadonnées
+> * Colonne personne
+> * Colonne données externes
 
 
 >[!NOTE]
 >
->Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
+> Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 ## Revalidation côté serveur dans un formulaire adaptatif {#server-side-revalidation-in-adaptive-form}
 
@@ -235,7 +235,7 @@ En règle générale, dans n’importe quel système de capture de données en l
 
 La fonction de revalidation côté serveur permet également d’exécuter les validations fournies par un auteur ou une autrice de formulaires adaptatifs lors de la conception d’un formulaire adaptatif sur le serveur. Elle empêche toute erreur lors des envois de données et toute violation des règles de fonctionnement représentées en termes de validations de formulaire.
 
-### Quels éléments valider sur le serveur ?  {#what-to-validate-on-server-br}
+### Quels éléments valider sur le serveur ? {#what-to-validate-on-server-br}
 
 Toutes les validations de champ prêtes à l’emploi d’un formulaire adaptatif qui sont réexécutées sur le serveur sont les suivantes :
 

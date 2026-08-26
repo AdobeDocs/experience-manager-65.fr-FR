@@ -8,8 +8,8 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1901'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -32,7 +32,7 @@ La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant
 
 ## Utilisation d’un schéma JSON comme modèle de formulaire  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation.  Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma JSON existant en tant que modèle de formulaire. Ce schéma JSON représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Le schéma JSON que vous utilisez doit être compatible avec les [spécifications v4](https://json-schema.org/draft-04/schema).
 
 Les fonctionnalités clés de l’utilisation d’un schéma JSON sont les suivantes :
 
@@ -312,7 +312,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 
 ### Définitions de schéma réutilisables {#reusable-schema-definitions}
 
-Les clés de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Elle est similaire à l’identification des types complexes dans XSD.  Un exemple de schéma JSON dont la définition est fournie ci-dessous :
+Les clés de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Elle est similaire à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
 ```json
 {
@@ -343,7 +343,7 @@ L’exemple ci-dessus définit un enregistrement client dans lequel chaque clien
 
 ## Préconfiguration des champs dans la définition du schéma JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON pour mapper vers un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
+Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le champ de schéma JSON et le faire correspondre à un composant de formulaire adaptatif personnalisé. Un exemple est répertorié ci-dessous :
 
 ```json
 {
@@ -367,7 +367,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** pour préconfigurer le 
 
 JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer les objets de formulaire pour [évaluer une expression](adaptive-form-expressions.md) sur un événement de formulaire.
 
-Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaires adaptatifs pour les composants de ces formulaires. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ téléphonique et imprime une valeur dans le journal :
+Utilisez la propriété aem:afproperties pour préconfigurer des expressions ou des scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ téléphonique et imprime une valeur dans le journal :
 
 ```json
 "telephone": {
