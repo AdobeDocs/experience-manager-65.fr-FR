@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7640'
-ht-degree: 100%
+source-wordcount: '7786'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | Cet article |
 
 Vous utilisez des modèles de processus pour convertir une logique métier en processus répétitif automatisé. Un modèle permet de définir et d’exécuter une série d’étapes. Vous pouvez également définir des propriétés de modèle pour déterminer, par exemple, si le processus est transitoire ou s’il utilise plusieurs ressources. Vous pouvez [inclure diverses étapes d’un processus AEM dans un modèle pour appliquer la logique métier](/help/sites-developing/workflows-models.md#extending-aem).
@@ -48,10 +48,10 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Priorité :** la priorité sélectionnée s’affiche dans la boîte de réception AEM. Les options disponibles sont les suivantes : Élevée, Moyenne et Faible. La valeur par défaut est Moyenne.
 * **Date d’expiration :** spécifiez le nombre de jours ou d’heures restant avant que la tâche soit affichée comme En retard. Si vous sélectionnez **Désactivé**, la tâche n’est jamais marquée comme En retard. Vous pouvez également spécifier un gestionnaire de dépassement de délai pour effectuer des tâches spécifiées dès que la tâche est marquée comme En retard.
 
-* **Jours :** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur ou une utilisatrice. Si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours, un gestionnaire de dépassement de délai est déclenché après la date d’expiration.
-* **Heures :** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur ou une utilisatrice. Si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures, un gestionnaire de dépassement de délai est déclenché après l’heure de l’expiration.
+* **Jours :** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur ou une utilisatrice. Si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours, un gestionnaire de délai d’expiration est déclenché après la date d’expiration.
+* **Heures :** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur ou une utilisatrice. Si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures, un gestionnaire de délai d’expiration est déclenché après l’heure de l’expiration.
 * **Expiration après l’échéance :** sélectionnez cette option pour activer le champ Sélection du gestionnaire de dépassement de délai.
-* **Gestionnaire de dépassement de délai :** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
+* **Gestionnaire de délai d’expiration :** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **Type :** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez choisir un formulaire adaptatif, un formulaire adaptatif en lecture seule, un document de PDF non interactif, l’interface utilisateur de l’agent de communication interactive ou un document de canal web de communication interactive.
 * **Utiliser le formulaire adaptatif :** spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Cette option est disponible si vous sélectionnez Formulaire adaptatif ou Formulaire adaptatif en lecture seule dans la liste déroulante Type. Vous pouvez utiliser le formulaire adaptatif soumis au workflow, disponible au niveau d’un chemin absolu, ou disponible au niveau d’un chemin dans une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.\
@@ -68,28 +68,28 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
 * **Prérempli :** les champs répertoriés ci-dessous servent d’entrées à la tâche :
 
-   * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
+  * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
 
-   * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Payload_Directory]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la payload ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif.
+  * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Payload_Directory]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la payload ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif.
 
-      * **Choisir JSON en entrée :** sélectionnez un fichier JSON en entrée en utilisant un chemin d’accès relatif à la payload ou stocké dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible si vous sélectionnez Interface utilisateur de l’agent de communication interactive ou Document du canal Web de communication interactive dans la liste déroulante Type.
-      * **Sélectionner un service de préremplissage personnalisé :** sélectionnez le service de préremplissage pour récupérer les données et préremplir le document du canal web de communication interactive ou l’interface utilisateur de l’agent.
-      * **Utiliser le service de préremplissage de la communication interactive sélectionnée ci-dessus :** utilisez cette option pour utiliser le service de préremplissage de la communication interactive définie dans la liste déroulante Utiliser la communication interactive.
-      * **Mappage des noms des champs de la demande :** utilisez la section Mappage des noms des champs de la demande pour définir le [nom et la valeur de l’attribut de la demande](../../forms/using/work-with-form-data-model.md#bindargument). Récupérez les détails de la source de données en fonction du nom d’attribut et de la valeur spécifiés dans la requête. Vous pouvez définir une valeur d’attribut de requête à l’aide d’une valeur littérale ou d’une variable de type de données Chaîne.\
-        Les options de service de préremplissage et de mappage des noms des champs de la demande sont disponibles uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive ou le document du canal web de communication interactive dans la liste déroulante Type.
+    * **Choisir JSON en entrée :** sélectionnez un fichier JSON en entrée en utilisant un chemin d’accès relatif à la payload ou stocké dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible si vous sélectionnez Interface utilisateur de l’agent de communication interactive ou Document du canal Web de communication interactive dans la liste déroulante Type.
+    * **Sélectionner un service de préremplissage personnalisé :** sélectionnez le service de préremplissage pour récupérer les données et préremplir le document du canal web de communication interactive ou l’interface utilisateur de l’agent.
+    * **Utiliser le service de préremplissage de la communication interactive sélectionnée ci-dessus :** utilisez cette option pour utiliser le service de préremplissage de la communication interactive définie dans la liste déroulante Utiliser la communication interactive.
+    * **Mappage des noms des champs de la demande :** utilisez la section Mappage des noms des champs de la demande pour définir le [nom et la valeur de l’attribut de la demande](../../forms/using/work-with-form-data-model.md#bindargument). Récupérez les détails de la source de données en fonction du nom d’attribut et de la valeur spécifiés dans la requête. Vous pouvez définir une valeur d’attribut de requête à l’aide d’une valeur littérale ou d’une variable de type de données Chaîne.\
+      Les options de service de préremplissage et de mappage des noms des champs de la demande sont disponibles uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive ou le document du canal web de communication interactive dans la liste déroulante Type.
 
 * **Informations envoyées :** les champs répertoriés ci-dessous servent d’emplacement de sortie pour la tâche :
 
-   * **Enregistrer le fichier de données de sortie en utilisant :** enregistrer le fichier de données (.json, .xml, .doc ou modèle de données de formulaire). Le fichier de données contient des informations envoyées via le formulaire associé. Vous pouvez enregistrer le fichier de données de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document, XML ou JSON. Par exemple, [Répertoire_Charge_utile]/Workflow/data, où les données correspondent à un fichier.
-   * **Enregistrer les pièces jointes en utilisant :** enregistrer les pièces jointes du formulaire fournies dans une tâche. Vous pouvez enregistrer les pièces jointes en utilisant un chemin d’accès relatif à la payload ou les stocker dans une variable de tableau de type de données Document.
-   * **Enregistrer le document d’enregistrement en utilisant :** chemin d’accès pour enregistrer un fichier de document d’enregistrement. Par exemple,[ Répertoire_Charge_utile]/DocumentofRecord/credit-card.pdf. Vous pouvez enregistrer le document d’enregistrement à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document. Si vous sélectionnez l’option **Relatif à la charge utile**, le document d’enregistrement n’est pas généré si le champ de chemin d’accès est laissé vide. Cette option n’est disponible que si vous sélectionnez Formulaire adaptatif dans la liste déroulante Type.
+  * **Enregistrez le fichier de données de sortie en utilisant :** enregistrez le fichier de données (.json,. xml, .doc ou modèle de données de formulaire). Le fichier de données contient des informations envoyées via le formulaire associé. Vous pouvez enregistrer le fichier de données de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document, XML ou JSON. Par exemple, [Répertoire_Charge_utile]/Workflow/data, où les données correspondent à un fichier.
+  * **Enregistrer les pièces jointes en utilisant :** enregistrer les pièces jointes du formulaire fournies dans une tâche. Vous pouvez enregistrer les pièces jointes en utilisant un chemin d’accès relatif à la payload ou les stocker dans une variable de tableau de type de données Document.
+  * **Enregistrer le document d’enregistrement en utilisant :** chemin d’accès pour enregistrer un fichier de document d’enregistrement. Par exemple,[ Répertoire_Charge_utile]/DocumentofRecord/credit-card.pdf. Vous pouvez enregistrer le document d’enregistrement à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document. Si vous sélectionnez l’option **Relatif à la charge utile**, le document d’enregistrement n’est pas généré si le champ de chemin d’accès est laissé vide. Cette option n’est disponible que si vous sélectionnez Formulaire adaptatif dans la liste déroulante Type.
 
-   * **Enregistrer les données du canal web en utilisant :** enregistrez le fichier de données du canal web à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
-   * **Enregistrer le document PDF en utilisant :** enregistrez le document PDF à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
-   * **Enregistrer le modèle de mise en page en utilisant :** enregistrez le modèle de mise en page à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Le [modèle de disposition](../../forms/using/layout-design-details.md) fait référence à un fichier XDP que vous créez à l’aide de Forms Designer. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
+  * **Enregistrer les données du canal web en utilisant :** enregistrez le fichier de données du canal web à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
+  * **Enregistrer le document PDF en utilisant :** enregistrez le document PDF à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
+  * **Enregistrer le modèle de mise en page en utilisant :** enregistrez le modèle de mise en page à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Le [modèle de mise en page](../../forms/using/layout-design-details.md) fait référence à un fichier XDP que vous créez à l’aide de Forms Designer. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
 
 * **Personne désignée > options d’affectation :** indiquez la méthode d’affectation de la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
-* **Programme de sélection des participants ou des participantes :** cette option est disponible lorsque l’option **Sélectionner de manière dynamique un utilisateur, une utilisatrice ou un groupe** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour en savoir plus, veuillez consulter [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+* **Programme de sélection des participants ou des participantes :** cette option est disponible lorsque l’option **Sélectionner de manière dynamique un utilisateur, une utilisatrice ou un groupe** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner un utilisateur ou une utilisatrice, ou un groupe de manière dynamique. Pour en savoir plus, veuillez consulter [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&CID=RedirectAEMCommunityKautuk)
 
 * **Participants :** le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Le champ vous permet de sélectionner des utilisateurs, des utilisatrices ou des groupes pour l’option RandomParticipantChooser.
 
@@ -107,8 +107,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Modèle d’e-mail HTML** : sélectionnez le modèle de l’e-mail de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **Autoriser la délégation à :** la boîte de réception AEM permet à la personne connectée de déléguer le workflow affecté à un autre utilisateur ou à une autre utilisatrice. Vous pouvez déléguer au sein du même groupe ou à l’utilisateur ou l’utilisatrice du workflow d’un autre groupe. Si la tâche est affectée à un seul utilisateur ou une seule utilisatrice et que la fonction **Autoriser la délégation aux membres du groupe désigné** est sélectionnée, alors il n’est pas possible de déléguer la tâche à un autre utilisateur ou une autre utilisatrice ou un autre groupe.
 * **Paramètres de partage :** la boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
-   * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, la personne peut sélectionner la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur ou une autre utilisatrice d’AEM.
-   * Lorsque l’option **Autoriser les personnes désignées à partager via le partage de boîte de réception** est sélectionnée et que les utilisateurs partagent leurs éléments de boîte de réception ou permettent à d’autres utilisateurs d’accéder à leurs éléments de boîte de réception, seules les tâches dont l’option mentionnée précédemment est activée sont partagées avec d’autres utilisateurs.
+  * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, la personne peut cliquer sur la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur ou une autre utilisatrice d’AEM.
+  * Lorsque l’option **Autoriser les personnes désignées à partager via le partage de boîte de réception** est sélectionnée et que les utilisateurs partagent leurs éléments de boîte de réception ou permettent à d’autres utilisateurs d’accéder à leurs éléments de boîte de réception, seules les tâches dont l’option mentionnée précédemment est activée sont partagées avec d’autres utilisateurs.
 
 * **Actions et actions par défaut :** les actions Prêt à l’emploi, Envoyer, Enregistrer et Réinitialiser sont disponibles. Par défaut, toutes les actions par défaut sont activées.
 * **Variable d’itinéraire :** nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
@@ -130,7 +130,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Métadonnées personnalisées :** sélectionnez une métadonnée personnalisée pour les modèles de courrier électronique. Les métadonnées personnalisées sont disponibles dans le référentiel crx-repository sous apps/fd/dashboard/scripts/metadataScripts. Le chemin d’accès spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous pouvez également utiliser un service pour les métadonnées personnalisées. Vous pouvez également étendre l’interface WorkitemUserMetadataService afin de fournir des métadonnées personnalisées.
 * **Afficher les données des étapes précédentes** : sélectionnez cette option pour permettre aux personnes désignées d’afficher les personnes désignées précédentes, les actions déjà effectuées sur la tâche, les commentaires ajoutés à la tâche et le document d’enregistrement de la tâche terminée, le cas échéant.
 * **Afficher les données des étapes suivantes :** sélectionnez cette option pour permettre à la personne actuellement désignée d’afficher l’action effectuée et les commentaires ajoutés à la tâche par les personnes désignées suivantes. Cette option permet également à la personne actuellement désignée d’afficher un document d’enregistrement de la tâche terminée, le cas échéant.
-* **Visibilité du type de données :** par défaut, une personne désignée peut afficher un document d’enregistrement, des personnes désignées, une action effectuée et les commentaires des personnes désignées précédentes et suivantes qui ont été ajoutés.  Utilisez l’option de visibilité du type de données pour limiter le type de données visibles pour les personnes désignées.
+* **Visibilité du type de données :** par défaut, une personne désignée peut afficher un document d’enregistrement, des personnes désignées, une action effectuée et les commentaires des personnes désignées précédentes et suivantes qui ont été ajoutés. Utilisez l’option de visibilité du type de données pour limiter le type de données visibles pour les personnes désignées.
 
 >[!NOTE]
 >
@@ -159,8 +159,8 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
 * **Métadonnées de workflow :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de workflow. Après avoir sélectionné l’option, saisissez le nom de la propriété de métadonnées dans la zone de texte vide sous l’option Métadonnées de workflow. Par exemple, emailAddress.
-* **URL de la ressource :** utilisez cette option pour inclure un lien web d’une communication interactive à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à inclure. La ressource peut se trouver sur le serveur de création ou de publication.
-* **Image :** utilisez cette option pour inclure une image à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
+* **URL de la ressource** : utilisez cette option pour incorporer un lien web d’une communication interactive dans l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à incorporer. La ressource peut se trouver sur le serveur de création ou de publication.
+* **Image :** utilisez cette option pour incorporer une image dans l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
 **Adresse e-mail du destinataire/expéditeur** : sélectionnez l’option **Littéral** pour spécifier manuellement une adresse e-mail ou sélectionnez l’option **Récupérer à partir des métadonnées de processus** pour récupérer l’adresse e-mail d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 
@@ -181,7 +181,7 @@ Vous pouvez associer plusieurs formulaires adaptatifs à un workflow. Par consé
 
 **Chemin d’accès du formulaire adaptatif** : indiquez le chemin d’accès du formulaire adaptatif. Le champ est disponible lorsque vous sélectionnez l’option **Disponible à un chemin d’accès absolu** dans le champ **Utiliser le formulaire adaptatif**.
 
-**Sélectionner le chemin d’accès des données d’entrée :** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement relatif à la charge utile, spécifier un chemin d’accès absolu aux données ou récupérer les données stockées dans une variable de type Document, JSON ou XML. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document d’enregistrement.
+**Sélectionner le chemin d’accès des données d’entrée :** chemin d’accès des données d’entrée pour le formulaire adaptatif. Vous pouvez conserver les données à un emplacement relatif à la charge utile, spécifier un chemin d’accès absolu aux données ou récupérer les données stockées dans une variable dont le type de données est Document, JSON ou XML. Les données d’entrée sont fusionnées avec le formulaire adaptatif pour créer un document de référence.
 
 **Sélectionner le chemin de pièce jointe d’entrée en utilisant :** chemin des pièces jointes. Ces pièces jointes sont incluses dans le document d’enregistrement. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
 
@@ -189,7 +189,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **Enregistrer Chemin d’accès du document d’enregistrement généré :** spécifier l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de payload, placer le document d’enregistrement à un emplacement du répertoire de payload ou stocker le document d’enregistrement dans une variable de type de données Document.
 
-**Paramètre régional** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner le paramètre régional dans une liste déroulante ou **Variable** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+**Paramètres régionaux** : spécifiez la langue du document d’enregistrement. Sélectionnez **Littéral** pour sélectionner les paramètres régionaux dans une liste déroulante ou **Variable** pour récupérer les paramètres régionaux à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
@@ -258,20 +258,20 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 * **Service** : liste des services fournit par le modèle de données de formulaire sélectionné.
 * **Entrée des services > Fournir des données d’entrée à l’aide d’un fichier JSON, de l’option Littéral,d’une variable, de métadonnées de processus** : un service peut avoir plusieurs arguments. Sélectionnez cette option pour obtenir la valeur des arguments de service à partir d’une propriété de métadonnées de processus, d’un objet JSON ou d’une variable, ou saisissez directement la valeur dans la zone prévue à cet effet :
 
-   * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, srose@we.info.
-   * **Variable :** utilisez cette option pour récupérer la valeur stockée dans une variable.
-   * **Récupérer à partir des métadonnées de workflow :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de workflow. Par exemple, emailAddress.
-   * **[!UICONTROL Relatif à la charge]** : utilisez cette option pour récupérer le fichier joint enregistré dans un chemin d’accès relatif à la charge. Sélectionnez l’option et indiquez le nom du dossier contenant le fichier joint ou indiquez le nom du fichier joint dans la zone de texte.
+  * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, srose@we.info.
+  * **Variable :** utilisez cette option pour récupérer la valeur stockée dans une variable.
+  * **Récupérer à partir des métadonnées de workflow :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de workflow. Par exemple, emailAddress.
+  * **[!UICONTROL Relatif à la charge]** : utilisez cette option pour récupérer le fichier joint enregistré dans un chemin d’accès relatif à la charge. Sélectionnez l’option et indiquez le nom du dossier contenant le fichier joint ou indiquez le nom du fichier joint dans la zone de texte.
 
-     Par exemple, si le dossier Relatif à la charge dans le référentiel CRX inclut un fichier joint à l’emplacement `attachment\attachment-folder`, spécifiez `attachment\attachment-folder` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relatif à la charge]**.
-   * **JSON Dot Notation :** utilisez cette option lorsque la valeur à utiliser figure dans un fichier JSON. Par exemple, insurance.customerDetails.emailAddress. L’option JSON Dot Notation est uniquement disponible si l’option Mapper les champs d’entrée depuis le fichier JSON d’entrée est sélectionnée.
-   * **Mapper les champs de saisie depuis le fichier JSON d’entrée :** spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée des arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou Modèle de données de formulaire.
+    Par exemple, si le dossier Relatif à la charge dans le référentiel CRX inclut un fichier joint à l’emplacement `attachment\attachment-folder`, spécifiez `attachment\attachment-folder` dans la zone de texte après avoir sélectionné l’option **[!UICONTROL Relatif à la charge]**.
+  * **JSON Dot Notation :** utilisez cette option lorsque la valeur à utiliser figure dans un fichier JSON. Par exemple, insurance.customerDetails.emailAddress. L’option JSON Dot Notation est uniquement disponible si l’option Mapper les champs d’entrée depuis le fichier JSON d’entrée est sélectionnée.
+  * **Mapper les champs de saisie depuis le fichier JSON d’entrée :** spécifiez le chemin d’accès d’un fichier JSON pour obtenir la valeur d’entrée des arguments de service à partir du fichier JSON. Le chemin d’accès du fichier JSON peut être relatif à la charge utile, un chemin absolu, ou vous pouvez sélectionner un document JSON d’entrée à l’aide d’une variable de type JSON ou Modèle de données de formulaire.
 
 * **Entrée des services et fournir des données d’entrée à l’aide d’une variable ou d’un fichier JSON** : sélectionnez cette option pour obtenir des valeurs pour tous les arguments d’un fichier JSON enregistré à un chemin absolu, à un chemin relatif à la payload ou dans une variable.
-* **Sélectionnez le document JSON d’entrée en utilisant** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **relatif à la charge utile** ou à un **chemin d’accès absolu.** Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
+* **Sélectionnez le document JSON d’entrée en utilisant** : fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **relatif à la charge utile** ou un **chemin d’accès absolu.** Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
 
 * **JSON Dot Notation :** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
-* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
+* **Sortie de service et mapper et écrire les valeurs de sortie dans les métadonnées :** sélectionnez cette option pour enregistrer les valeurs de sortie en tant que propriétés du nœud de métadonnées de l’instance de workflow dans le référentiel crx. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable ayant le type de données Long. Lorsque vous sélectionnez une propriété pour l’**[!UICONTROL attribut de sortie de service à mapper]**, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l’option **[!UICONTROL Enregistrer la sortie dans]**.
 
 * **Sortie de service et sélectionner l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON :** sélectionnez l’option pour enregistrer les valeurs de sortie dans un fichier JSON à un chemin absolu, à un chemin relatif à la payload, ou dans une variable.
 * **Enregistrer le document JSON de sortie à l’aide des options suivantes :** enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
@@ -282,7 +282,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 * **Nom du contrat :** indiquez le titre du contrat. Le nom du contrat devient une partie de l’objet et du corps de l’e-mail envoyé aux signataires. Vous pouvez soit stocker le nom dans une variable de type de données Chaîne, soit sélectionner **Littéral** pour l’ajouter manuellement.
 
-* **Paramètre régional :** spécifiez la langue pour les options de messagerie et de vérification. Vous pouvez stocker le paramètre régional dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir le paramètre régional dans la liste des options disponibles. Vous devez définir le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+* **Paramètres régionaux** : spécifiez la langue pour les options d’e-mail et de vérification. Vous pouvez stocker les paramètres régionaux dans une variable de type de données Chaîne ou sélectionner **Littéral** pour choisir les paramètres régionaux dans la liste des options disponibles. Vous devez définir le code des paramètres régionaux lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 * **Configuration cloud Adobe Sign** : sélectionnez une configuration cloud Adobe Sign. Si vous n’avez pas configuré Adobe Sign pour AEM Forms, voir [Intégrer Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -309,7 +309,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 
 * **Script ou service pour sélectionner les destinataires :** cette option n’est disponible que si vous sélectionnez Dynamique dans le champ Sélectionner les destinataires. Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des destinataires et des options de vérification pour un document.
-* **Détails des destinataires :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs **[!UICONTROL E-mail]**, **[!UICONTROL Code de pays]** et **[!UICONTROL Numéro de téléphone]**. Les champs **[!UICONTROL Code pays]** et **[!UICONTROL Numéro de téléphone]** s’affichent uniquement si vous sélectionnez **[!UICONTROL Vérification téléphonique]** dans la liste déroulante de **[!UICONTROL vérification en 2 étapes]**.
+* **Détails des destinataires :** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les destinataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte Adobe Sign configuré. Vous pouvez utiliser une variable de type de données Chaîne pour définir des valeurs pour les champs **[!UICONTROL E-mail]**, **[!UICONTROL Code de pays]** et **[!UICONTROL Numéro de téléphone]**. Les champs **[!UICONTROL Code pays]** et **[!UICONTROL Numéro de téléphone]** s’affichent uniquement si vous sélectionnez **[!UICONTROL Vérification téléphonique]** dans la liste déroulante de **[!UICONTROL vérification en 2 étapes]**.
 * **Variable de statut :** le statut de signature d’un document activé par Adobe Sign est stocké dans une variable de type de données Chaîne. Spécifiez le nom de la variable d’état (adobeSignStatus). Une variable de statut d’une instance est disponible dans CRXDE à l’emplacement /etc/workflow/instances/&lt;server>/&lt;date-heure>/&lt;instance de modèle de processus>/workItems/&lt;node>/metaData. Elle contient le statut d’une variable.
 * **[!UICONTROL Document signé]** : vous pouvez enregistrer le statut du document signé dans la variable. Pour ajouter le journal d’audit des signatures électroniques afin d’accroître la sécurité et la légalité de votre document signé, vous pouvez inclure le rapport d’audit. Vous pouvez enregistrer le document signé à l’aide du dossier Variable ou Payload.
   >[!NOTE]
@@ -366,7 +366,7 @@ Générez un PDF non interactif. Cette étape comprend différentes options de 
 
 >[!NOTE]
 >
->Vous pouvez utiliser des variables pour spécifier le fichier de modèle pour les documents d’entrée. Conservez le chemin d’accès du fichier de modèle dans une variable de type Données de chaîne.
+>Vous pouvez utiliser des variables pour spécifier le fichier de modèle pour les documents d’entrée. Conservez le chemin d’accès du fichier de modèle dans une variable de type de données Chaîne.
 
 ### Étape Importer des données {#import-data-step}
 
@@ -378,7 +378,7 @@ Exécute le fichier DDX sur la carte spécifiée des documents d’entrée et r
 
 >[!NOTE]
 >
->Vous pouvez utiliser des variables pour spécifier le fichier DDX pour les documents d’entrée. Stockez le fichier DDX dans une variable de type Document ou Données XML.
+>Vous pouvez utiliser des variables pour spécifier le fichier DDX pour les documents d’entrée. Stockez le fichier DDX dans une variable de type de données Document ou XML.
 
 ### Étape Optimiser le PDF {#optimize-pdf-step}
 
@@ -400,7 +400,7 @@ Rend un formulaire créé dans Form Designer (XDP) dans un formulaire PDF.
 
 >[!NOTE]
 >
->Vous pouvez utiliser des variables pour spécifier le fichier de modèle pour les documents d’entrée. Conservez le chemin d’accès du fichier de modèle dans une variable de type Données de chaîne.
+>Vous pouvez utiliser des variables pour spécifier le fichier de modèle pour les documents d’entrée. Conservez le chemin d’accès du fichier de modèle dans une variable de type de données Chaîne.
 
 ### Étape Sécuriser le document {#secure-document-step}
 
@@ -429,23 +429,23 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Printer Format]** : une valeur Print Format qui spécifie la langue de description de page à utiliser lorsqu’un fichier XDC n’est pas fourni, afin de générer le flux de sortie. Si vous fournissez une valeur littérale, sélectionnez l’une de ces valeurs :
 
-   * **[!UICONTROL Custom PCL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PCL.
-   * **[!UICONTROL Custom PostScript]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PostScript.
-   * **[!UICONTROL ZPL personnalisé]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour ZPL.
-   * **[!UICONTROL Generic Color PCL (5c)]** : utilisez une couleur générique PCL (5c).
-   * **[!UICONTROL Generic PostScript Level3]** : utilisez PostScript Level 3 générique.
-   * **[!UICONTROL ZPL 300 DPI]** : utilisez ZPL 300 DPI. Le fichier zpl300.xdc est utilisé.
-   * **[!UICONTROL ZPL 600 DPI]** : utilisez ZPL 600 DPI. Le fichier zpl600.xdc est utilisé.
-   * **[!UICONTROL Custom IPL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour IPL.
-   * **[!UICONTROL IPL 300 DPI]** : utilisez IPL 300 DPI. Le fichier ipl300.xdc est utilisé.
-   * **[!UICONTROL IPL 400 DPI]** : utilisez IPL 400 DPI. Le fichier ipl400.xdc est utilisé.
-   * **[!UICONTROL Custom TPCL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour TPCL.
-   * **[!UICONTROL TPCL 305 DPI]** : utilisez TPCL 300 DPI. Le fichier tpcl305.xdc est utilisé.
-   * **[!UICONTROL PCL 600 DPI]** : utilisez TPCL 600 DPI. Le fichier tpcl600.xdc est utilisé.
-   * **[!UICONTROL Custom DPL]** : utilisez l’option pour spécifier un DPL de fichier XDC personnalisé.
-   * **[!UICONTROL DPL300DPI]** : utilisez DPL 300 DPI. Le fichier dpl300.xdc est utilisé.
-   * **[!UICONTROL DPL406DPI]** : utilisez DPL 400 DPI. Le fichier dpl406.xdc est utilisé.
-   * **[!UICONTROL DPL600DPI]** : utilisez DPL 600 DPI. Le fichier dpl600.xdc est utilisé.
+  * **[!UICONTROL Custom PCL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PCL.
+  * **[!UICONTROL Custom PostScript]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour PostScript.
+  * **[!UICONTROL ZPL personnalisé]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour ZPL.
+  * **[!UICONTROL Generic Color PCL (5c)]** : utilisez une couleur générique PCL (5c).
+  * **[!UICONTROL Generic PostScript Level3]** : utilisez PostScript Level 3 générique.
+  * **[!UICONTROL ZPL 300 DPI]** : utilisez ZPL 300 DPI. Le fichier zpl300.xdc est utilisé.
+  * **[!UICONTROL ZPL 600 DPI]** : utilisez ZPL 600 DPI. Le fichier zpl600.xdc est utilisé.
+  * **[!UICONTROL Custom IPL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour IPL.
+  * **[!UICONTROL IPL 300 DPI]** : utilisez IPL 300 DPI. Le fichier ipl300.xdc est utilisé.
+  * **[!UICONTROL IPL 400 DPI]** : utilisez IPL 400 DPI. Le fichier ipl400.xdc est utilisé.
+  * **[!UICONTROL Custom TPCL]** : utilisez cette option pour spécifier un fichier XDC personnalisé pour TPCL.
+  * **[!UICONTROL TPCL 305 DPI]** : utilisez TPCL 300 DPI. Le fichier tpcl305.xdc est utilisé.
+  * **[!UICONTROL PCL 600 DPI]** : utilisez TPCL 600 DPI. Le fichier tpcl600.xdc est utilisé.
+  * **[!UICONTROL Custom DPL]** : utilisez l’option pour spécifier un DPL de fichier XDC personnalisé.
+  * **[!UICONTROL DPL300DPI]** : utilisez DPL 300 DPI. Le fichier dpl300.xdc est utilisé.
+  * **[!UICONTROL DPL406DPI]** : utilisez DPL 400 DPI. Le fichier dpl406.xdc est utilisé.
+  * **[!UICONTROL DPL600DPI]** : utilisez DPL 600 DPI. Le fichier dpl600.xdc est utilisé.
 
 **Propriétés de sortie**
 
@@ -459,15 +459,16 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
-* **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **Utiliser le serveur par défaut** : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur AEM Forms. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
+* **[!UICONTROL Paramètres régionaux]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
+  * **Pour utiliser le serveur par défaut** :
+    (Par défaut) Utilisez le paramètre Paramètre régional configuré sur le serveur AEM Forms. Les paramètres régionaux sont configurés à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
 
-   * **Pour utiliser une valeur personnalisée** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+  * **Pour utiliser une valeur personnalisée** :
+    Saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 
 * **[!UICONTROL Duplex Printing]** : une valeur Pagination qui spécifie l’utilisation de l’impression recto verso ou recto. Les imprimantes prenant en charge PostScript et PCL utilisent cette valeur. Si vous fournissez une valeur littérale, sélectionnez l’une de ces valeurs :
-   * **[!UICONTROL Duplex Long Edge]** : utiliser l’impression recto verso et imprimer à l’aide de la pagination sur le bord long.
-   * **[!UICONTROL Duplex Short Edge]** : utiliser l’impression recto verso et imprimer à l’aide de la pagination sur le bord court.
-   * **[!UICONTROL Simplex]** : utiliser l’impression recto.
+  * **[!UICONTROL Duplex Long Edge]** : utiliser l’impression recto verso et imprimer à l’aide de la pagination sur le bord long.
+  * **[!UICONTROL Duplex Short Edge]** : utiliser l’impression recto verso et imprimer à l’aide de la pagination sur le bord court.
+  * **[!UICONTROL Simplex]** : utiliser l’impression recto.

@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
+source-wordcount: '1356'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Lorsque vous sélectionnez un processus, les onglets Formulaires et Détails s�
 
 1. Sélectionnez un processus en cliquant sur une tâche. Le formulaire associé au processus s’ouvre dans l’onglet Formulaire.
 
-   Chaque formulaire d’un processus comporte une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement l’espace de travail HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. La chaîne &lt;ApplicationName>%2F&lt;ProcessName> est toujours encodée en URL. Voici un exemple d’URL : http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FProcessName de l’exemple est en codage URL.
+   Chaque formulaire d’un processus comporte une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement l’espace de travail HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. La chaîne &lt;ApplicationName>%2F&lt;ProcessName> est toujours encodée en URL. Voici un exemple d’URL : http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FProcessName de l’exemple est en codage URL.
 
 1. Remplissez le formulaire selon les instructions fournies. Si nécessaire, cliquez sur le bouton **Agrandir** pour augmenter la partie visible du formulaire.
 1. Si l’onglet Pièces jointes est disponible, ajoutez des pièces jointes selon les besoins.

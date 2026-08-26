@@ -51,7 +51,7 @@ Pour activer la fonctionnalité Enregistrer en tant que brouillon et l’appliqu
 
 ## Stockage et liste des brouillons {#drafts-storage-and-listing}
 
-Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
+Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez récupérer le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
 Pour activer les listes de formulaires du composant Brouillons et Envois, ajoutez la propriété suivante au nœud de profil :
 

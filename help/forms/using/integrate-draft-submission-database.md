@@ -10,8 +10,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 100%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -37,15 +37,15 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    Exemple de package pour l’intégration à une base de données
 
-[Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Accédez au gestionnaire de package AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
+1. Accédez au gestionnaire de modules AEM à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** à côté du package pour l’installer.
-1. Accédez à la page de **[!UICONTROL configuration de la console web AEM]**
-à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
+1. Accéder à la configuration de la console web d’AEM **&#x200B;**
+à l’adresse [*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
 1. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
@@ -61,7 +61,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    >[!NOTE]
    >
-   >Les services sont résolus par leurs noms indiqués comme valeur de la clé `aem.formsportal.impl.prop` comme suit : 
+   >Les services sont résolus par leurs noms indiqués comme valeur de la clé `aem.formsportal.impl.prop` comme suit :
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -92,7 +92,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Valeur</strong></td>
   </tr>
   <tr>
@@ -304,18 +304,18 @@ L’exemple de mise en œuvre est maintenant configuré. Vous pouvez l’utilise
 Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer le fichier mysql-connector-java-5.1.39-bin.jar :
 
 1. Accédez à `https://'[server]:[port]'/system/console/depfinder` et recherchez le package com.mysql.jdbc.
-1. Dans la colonne Exported by (Exporté par), vérifiez si le package est exporté par un groupe.
+1. Dans la colonne « Exporté par », vérifiez si le package est exporté par un bundle.
 
-   Continuez si le package n’est pas exporté par un groupe.
+   Continuez si le package n’est pas exporté par un bundle.
 
 1. Accédez à `https://'[server]:[port]'/system/console/bundles` et cliquez sur **[!UICONTROL Install/Update]** (Installer/Mettre à jour).
-1. Cliquez sur **[!UICONTROL Choose File]** (Choisir un fichier) et accédez au chemin permettant de sélectionner le fichier mysql-connector-java-5.1.39-bin.jar. Cochez également les cases **[!UICONTROL Start Bundle]** (Démarrer le groupe) et **[!UICONTROL Refresh Packages]** (Actualiser les packages).
+1. Cliquez sur **[!UICONTROL Choose File]** (Choisir un fichier) et accédez au chemin permettant de sélectionner le fichier mysql-connector-java-5.1.39-bin.jar. Cochez également les cases **[!UICONTROL Start Bundle]** (Démarrer le bundle) et **[!UICONTROL Refresh Packages]** (Actualiser les packages).
 1. Cliquez sur **[!UICONTROL Install (Installer) ou Update]** (Mettre à jour). Une fois cette opération effectuée, redémarrez le serveur.
 1. (*Windows uniquement*) Désactivez le pare-feu système pour votre système d’exploitation.
 
 >[!NOTE]
 >
-> Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+> Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
 ## Exemple de code pour le service de données et de métadonnées de portail de formulaires {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -330,7 +330,7 @@ La mise en œuvre de la base de données du portail Forms utilise un tableau de 
 Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/sites-developing/clientlibs.md) et utiliser le script :
 
 1. Connectez-vous à CRXDE et accédez à /etc/clientlibs/
-1. Créez un nœud de type **cq:ClientLibraryFolder** et nommez-le. Par exemple, `validation`.
+1. Créez un nœud de type **cq:ClientLibraryFolder** et indiquez son nom. Par exemple, `validation`.
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
@@ -410,14 +410,14 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    * **[!UICONTROL Valeur :]** fp.validation
 
-   * **[!UICONTROL Option multiple :]** Activé 
+   * **[!UICONTROL Option multiple :]** Activé
 
-1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime` et ajoutez la valeur `fp.validation` à la propriété d’incorporation.
 
-1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.
+1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété d’incorporation.
 
    >[!NOTE]
    >
-   >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
+   >Si vous utilisez des bibliothèques clientes personnalisées au lieu des bibliothèques clientes guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour incorporer la bibliothèque cliente créée dans cette procédure dans vos bibliothèques personnalisées chargées lors de l’exécution.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier contient plus de 150 caractères (extension comprise), un message s’affiche.
+1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom de fichier comporte plus de 150 caractères (extension incluse), un message s’affiche.

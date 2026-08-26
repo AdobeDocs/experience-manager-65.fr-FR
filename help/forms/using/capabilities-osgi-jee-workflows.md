@@ -8,7 +8,7 @@ feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '959'
 ht-degree: 100%
 
 ---
@@ -251,7 +251,7 @@ Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestio
    <td>Pris en charge</td>
   </tr>
   <tr>
-   <td>Incohérence affectant le service assembleur</td>
+   <td>Service Assembler</td>
    <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
@@ -317,7 +317,7 @@ Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestio
   </tr>
   <tr>
    <td>Lancement d’un processus à l’aide des données de processus existantes<br /> </td>
-   <td>Pas de prise en charge</td>
+   <td>Non pris en charge.</td>
    <td>Pris en charge </td>
   </tr>
   <tr>
@@ -394,7 +394,7 @@ Les workflows AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestio
 1. Les services documentaires AEM Forms natifs sont disponibles pour les processus AEM de formulaire sur OSGi et les processus AEM Forms on JEE. AEM Workflow utilise des services documentaires natifs pour les processus AEM de formulaire sur OSGi et les workflows AEM Forms JEE (gestion des processus).
 1. Les workflows AEM Forms JEE peuvent uniquement rendre un formulaire adaptatif. Ils ne prennent pas en charge le rendu d’un formulaire adaptatif comme document PDF.
 1. Les workflows AEM Forms JEE n’ont pas d’étape distincte pour Adobe Sign. Vous avez besoin d’un formulaire adaptatif Adobe Sign pour les workflows AEM Forms JEE. Pour plus d’informations, voir la [documentation d’Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Vous pouvez utiliser l’étape [Appeler le service de modèle de données du formulaire](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service web et publier ou récupérer des données à partir d’une application tierce.
+1. Vous pouvez utiliser l’étape [Appeler le service de modèle de données de formulaire](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) pour appeler un service web et publier ou récupérer des données à partir d’une application tierce.
 1. Vous pouvez utiliser l’étape [Envoyer un e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) pour envoyer des e-mails.
 
 ## Différences entre les fonctionnalités de la boîte de réception AEM et l’application AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
