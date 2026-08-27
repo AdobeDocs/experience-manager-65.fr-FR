@@ -9,9 +9,9 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '484'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '493'
 ht-degree: 100%
 
 ---
@@ -34,9 +34,9 @@ Si vous disposez d’un serveur LDAP compatible SSL, configurez la gestion des u
 
 Créez une personne administratrice disposant des privilèges appropriés pour la création d’utilisateurs, d’utilisatrices et de groupes. Si votre environnement d’AEM Forms comprend Document Security, accordez le droit de gérer les personnes invitées et locales à une personne qui sera l’administratrice de ces utilisateurs et utilisatrices. Attribuez également le rôle Utilisateur ou utilisatrice de la console d’administration pour permettre à la personne d’accéder à la console d’administration. (Voir [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
-Pour afficher les utilisateurs, les utilisatrices et les groupes dans les domaines sélectionnés lors des recherches d’utilisateurs ou utilisatrices de politiques, une personne super-administratrice ou un administrateur ou administratrice de jeux de politiques doit sélectionner et ajouter des domaines (créés dans la gestion des utilisateurs et utilisatrices) à la liste des utilisateurs, des utilisatrices et des groupes visibles pour chaque jeu de politiques créé.
+Pour afficher les utilisateurs, les utilisatrices et les groupes dans les domaines sélectionnés lors des recherches d’utilisateurs ou utilisatrices de politiques, une personne super-administratrice ou un administrateur ou administratrice d’ensembles de politiques doit sélectionner et ajouter des domaines (créés dans la gestion des utilisateurs et utilisatrices) à la liste des utilisateurs, des utilisatrices et des groupes visibles pour chaque ensemble de politiques créé.
 
-La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne coordinatrice de jeux de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne coordinatrice de jeux de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un jeu de politiques peut avoir plusieurs personnes coordinatrices.
+La liste des utilisateurs, des utilisatrices et des groupes est visible par la personne qui coordonne les ensembles de politiques. Elle permet de restreindre les domaines que l’utilisateur ou l’utilisatrice peut parcourir lorsqu’il ou elle choisit des utilisateurs, des utilisatrices ou des groupes à ajouter aux politiques. Si cette tâche n’est pas effectuée, la personne qui coordonne les ensembles de politiques ne trouvera aucun utilisateur, utilisatrice ou groupe à ajouter à la politique. Un ensemble de politiques peut avoir plusieurs personnes coordinatrices.
 
 >[!NOTE]
 >
@@ -46,8 +46,8 @@ La liste des utilisateurs, des utilisatrices et des groupes est visible par la p
 
 Après avoir installé et configuré votre environnement d’AEM Forms avec Document Security, configurez tous les domaines appropriés dans la gestion des utilisateurs et utilisatrices.
 
-1. Dans la console d’administration, cliquez sur Services > Document Security > Politiques, puis sur l’onglet Jeux de politiques.
-1. Sélectionnez Jeu de politiques global, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
+1. Dans la console d’administration, cliquez sur Services > Document Security > Politiques, puis sur l’onglet Ensembles de politiques.
+1. Sélectionnez ensemble de politiques global, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
 1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
 1. Accédez à Services > Document Security > Configuration > Mes politiques, puis cliquez sur l’onglet Utilisateurs, utilisatrices et groupes visibles.
 1. Cliquez sur Ajouter un ou des domaine(s) et ajoutez des domaines existants selon les besoins.
@@ -58,4 +58,4 @@ Pour des raisons de sécurité, les personnes disposant de certains types de pri
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.

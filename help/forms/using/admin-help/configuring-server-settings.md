@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2643'
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2665'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Pour générer des notifications par e-mail pour un groupe, spécifiez une adres
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 ### Configuration des rappels pour les utilisateurs, les utilisatrices ou les groupes {#configure-reminders-for-users-or-groups}
 
@@ -96,8 +96,8 @@ Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur, 
 1. Sous Type de notification, cliquez sur Rappel (pour les utilisateurs et utilisatrices) ou sur Groupe : rappel (pour les groupes).
 1. Sélectionnez Activer le rappel ou Activer le groupe - Rappel.
 1. (Notifications à l’utilisateur ou l’utilisatrice seulement) Pour inclure le formulaire et ses données en pièce jointe dans l’e-mail de rappel, sélectionnez Inclure les données de formulaire.
-1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
@@ -110,8 +110,8 @@ Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateu
 1. Sous Type de notification, cliquez sur Affectation de tâche pour les utilisateurs, les utilisatrices ou le groupe - Affectation de tâche pour les groupes.
 1. Sélectionnez Activer affectation de tâche pour les utilisateurs et les utilisatrices ou Activer le groupe - Affectation de tâche pour les groupes.
 1. (Notifications aux utilisateurs ou utilisatrices seulement) Pour inclure le formulaire et ses données en pièce jointe à l’e-mail d’affectation de tâche, sélectionnez Inclure les données de formulaire.
-1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
@@ -123,8 +123,8 @@ Vous pouvez envoyer des notifications d’échéance à des utilisateurs, à des
 1. Dans la console d’administration, cliquez sur Services > Forms Workflow > Paramètres du serveur > Notifications de tâche.
 1. Sous Type de notification, cliquez sur Échéance (pour les utilisateurs et les utilisatrices) ou sur Groupe : délai (pour les groupes).
 1. Sélectionnez Activer l’échéance ou Activer le groupe - Échéance.
-1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utiliseront. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
@@ -154,8 +154,8 @@ Si une branche se bloque (dont le fonctionnement s’arrête soit délibérémen
 1. Sous Type de notification, cliquez sur Branche bloquée.
 1. Sélectionnez Activer pour les branches bloquées.
 1. Dans la zone adresse e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une branche se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
-1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Dans la liste Format du message , sélectionnez le format d’envoi de l’e-mail, HTML ou Texte. Le format par défaut est HTML.
 1. Dans la liste d’encodage des e-mails , sélectionnez le format d’encodage à utiliser pour l’e-mail. La valeur par défaut est UTF-8, que la plupart des utilisateurs et utilisatrices en dehors du Japon utilisent. Les utilisateurs et utilisatrices japonais peuvent sélectionner ISO2022-JP.
 1. Cliquez sur Enregistrer.
@@ -169,7 +169,7 @@ Si une opération se bloque (dont le fonctionnement s’arrête soit délibéré
 1. Sélectionnez Activer pour les opération bloquées.
 1. Dans la zone e-mail, saisissez les adresses des utilisateurs et utilisatrices à avertir lorsqu’une opération se bloque. Utilisez le format utilisateur@domaine.com et séparez chaque adresse par une virgule. En règle générale, cette adresse e-mail est destinée à un administrateur ou une administratrice.
 1. Dans le champ Objet, saisissez le texte de l’objet de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications)
-1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, reportez-vous à [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Dans le champ Modèle de notification, saisissez le texte du corps de l’e-mail. Ce champ est prérenseigné avec du texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, consultez [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Cliquez sur Enregistrer.
 
 ## Personnalisation du contenu des notifications {#customizing-the-content-of-notifications}

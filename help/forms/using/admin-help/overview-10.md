@@ -9,7 +9,7 @@ exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Dans les pages Workspace d’Administration Console, vous pouvez exécuter les t
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 >[!NOTE]
 >

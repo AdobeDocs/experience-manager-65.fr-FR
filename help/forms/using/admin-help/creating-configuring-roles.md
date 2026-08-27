@@ -9,10 +9,10 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2495'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2503'
+ht-degree: 99%
 
 ---
 
@@ -72,13 +72,13 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 **Gérer les utilisateurs invités et locaux sur Rights Management :** peut effectuer les tâches requises pour gérer tous les utilisateurs invités et locaux sur les pages de Rights Management appropriées.
 
-**Administrateur des jeux de politique sur Rights Management :** exécute toutes les tâches requises pour l’ensemble des jeux de politiques dans les pages Rights Management appropriées.
+**Administrateur ou administratrice des ensembles de politiques sur Rights Management :** exécute toutes les tâches requises pour tous les ensembles de politiques dans les pages Rights Management appropriées.
 
 **Super administrateur Rights Management :** exécute toutes les tâches requises à partir de la page Rights Management.
 
 **Administrateur d’espace de travail AEM Forms :** peut afficher et modifier les paramètres de la page Espace de travail dans la console d’administration.
 
-***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+***remarque **: le Workspace Flex est obsolète pour la version d’AEM forms.*
 
 **Utilisateur Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux.
 
@@ -96,7 +96,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 ## Créer un rôle {#create-a-role}
 
@@ -290,27 +290,27 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Rights Management Manage Invited and Local Users :** permet de gérer les utilisateurs invités et locaux.
 
-**Rights Management Manage Policy Sets :** permet de gérer toutes les politiques et tous les documents au sein d’un jeu de politiques.
+**Rights Management Manage Policy Sets :** permet de gérer toutes les politiques et tous les documents au sein d’un ensemble de politiques.
 
-**Rights Management Policy Set Add Coordinator :** permet d’ajouter, de supprimer et de modifier des autorisations pour les coordinateurs de jeux de politiques.
+**Rights Management Policy Set Add Coordinator :** permet d’ajouter, de supprimer et de modifier des autorisations pour les personnes qui coordonnent des ensembles de politiques.
 
-**Rights Management Policy Set Create Policy :** permet de créer une politique pour un jeu de politiques.
+**Rights Management Policy Set Create Policy :** permet de créer une politique pour un ensemble de politiques.
 
-**Rights Management Policy Set Delete Policy :** permet de supprimer une politique à partir d’un jeu de politiques.
+**Rights Management Policy Set Delete Policy :** permet de supprimer une politique à partir d’un ensemble de politiques.
 
-**Rights Management Policy Set Edit Policy :** permet de modifier une politique dans un jeu de politiques.
+**Rights Management Policy Set Edit Policy :** permet de modifier une politique dans un ensemble de politiques.
 
-**Rights Management Policy Set Manage Document Publisher :** lorsque vous créez des jeux de politiques, vous affectez à des utilisateurs le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une politique.
+**Rights Management Policy Set Manage Document Publisher :** lorsque vous créez des ensembles de politiques, vous affectez à des utilisateurs et utilisatrices le rôle d’éditeur de document. L’éditeur est l’utilisateur qui protège le document avec une politique.
 
-**Rights Management Policy Set Remove Coordinator :** permet de supprimer un coordinateur de jeux de politiques.
+**Rights Management Policy Set Remove Coordinator :** permet de supprimer une entité chargée de la coordination d’ensembles de politiques.
 
-**Rights Management Policy Set Revoke Document :** permet d’appeler l’accès aux documents d’un jeu de politiques.
+**Rights Management Policy Set Revoke Document :** permet de révoquer l’accès aux documents d’un ensemble de politiques.
 
 **Rights Management Policy Set Switch Policy :** permet de changer de politique pour un document.
 
 **Rights Management Policy Set Unrevoke Document :** permet d’annuler la révocation d’un document.
 
-**Rights Management Policy Set View Event :** permet d’afficher des événements de politique et de document pour n’importe quel document ou politique du jeu de politiques.
+**Rights Management Policy Set View Event :** permet d’afficher des événements de politique et de document pour n’importe quel document ou politique de l’ensemble de politiques.
 
 **Rights Management View Server Events :** permet de rechercher et d’afficher tous les événements de contrôle.
 
@@ -344,7 +344,7 @@ Vous pouvez modifier les autorisations de l’un des rôles que vous avez créé
 
 **Ouverture de fichiers dans Workbench**
 
-Pour consulter le contenu de la vue Ressources de Workbench et ouvrir des fichiers, un utilisateur ou une utilisatrice a besoin des autorisations suivantes :
+Pour consulter le contenu de la vue Ressources de Workbench et ouvrir des fichiers, les autorisations suivantes sont nécessaires :
 
 * Repository Read
 * Repository Traverse

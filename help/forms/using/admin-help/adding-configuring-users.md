@@ -7,10 +7,10 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1739'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ Les informations relatives aux utilisateurs, utilisatrices et aux groupes sont g
 
 Lorsque vous créez des utilisateurs pu des utilisatrices, vous pouvez les ajouter à des groupes et leur affecter des rôles.
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > Gestion des utilisateurs > Utilisateurs et groupes]**, puis sur **[!UICONTROL Nouvel utilisateur]**.
 .
 1. Sous **[!UICONTROL Paramètres généraux]**, fournissez les informations requises, puis cliquez sur Suivant. **[!UICONTROL Suivant]**. Pour plus d’informations sur ces paramètres, voir [Paramètres utilisateur](adding-configuring-users.md#user-settings).
 1. (Facultatif) Pour ajouter l’utilisateur à un groupe, cliquez sur **[!UICONTROL Rechercher des groupes]** et procédez comme suit :
@@ -50,7 +50,7 @@ Spécifiez les paramètres ci-dessous lorsque vous créez ou modifiez un utilisa
 
 **Nom canonique :**(obligatoire) identificateur unique de l’utilisateur. Tous les utilisateurs, utilisatrices et groupes d’un domaine doivent disposer d’un nom canonique unique. Cochez la case Généré par le système pour laisser User Management affecter une valeur unique au paramètre Nom canonique ou désélectionnez la case et saisissez une valeur personnalisée.
 
-Évitez l’utilisation de caractères de soulignement (_) dans les noms canoniques, par exemple, `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
+Évitez d’utiliser les caractères de soulignement (_) dans les noms canoniques, par exemple `sample_user`. Lorsque vous recherchez des utilisateurs à l’aide de leur nom canonique, les noms contenant des caractères de soulignement n’apparaissent pas dans les résultats.
 
 **Prénom :**(obligatoire) prénom de l’utilisateur ou de l’utilisatrice.
 
@@ -169,7 +169,7 @@ Si un utilisateur ou une utilisatrice ne disposant pas des autorisations AEM For
 * Solution Correspondence Management
 * Espace de travail AEM Forms
 
-  ***Remarque ** : Flex Workspace est obsolète pour la version d’AEM Forms.*
+  ***remarque **: le Workspace Flex est obsolète pour la version d’AEM forms.*
 
 * gestionnaire de formulaires
 * Rapports de workflow
