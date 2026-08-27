@@ -78,7 +78,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 **Administrateur d’espace de travail AEM Forms :** peut afficher et modifier les paramètres de la page Espace de travail dans la console d’administration.
 
-***remarque **: le Workspace Flex est obsolète pour la version d’AEM forms.*
+***remarque &#x200B;**: le Workspace Flex est obsolète pour la version d’AEM forms.*
 
 **Utilisateur Workspace :** peut se connecter à l’application Workspace destinée aux utilisateurs finaux.
 
