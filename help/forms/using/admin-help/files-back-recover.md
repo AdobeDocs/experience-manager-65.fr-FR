@@ -9,10 +9,10 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '2029'
-ht-degree: 100%
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+workflow-type: tm+mt
+source-wordcount: '2131'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Veuillez tenir compte des points suivants concernant la sauvegarde et la récup�
 
 ## Répertoire de stockage global de documents {#global-document-storage-directory}
 
-Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus. La durée de vie des fichiers de longue durée est destinée à couvrir un ou plusieurs lancements d’un système AEM Forms et peut s’étendre sur plusieurs jours, voire plusieurs années. Ces fichiers de longue durée peuvent inclure des PDF, des politiques et des modèles de formulaire. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable.
+Le répertoire de stockage global de documents est utilisé pour stocker les fichiers de longue durée utilisés dans un processus. La durée de vie des fichiers de longue durée est destinée à couvrir un ou plusieurs lancements d’un système AEM Forms et peut s’étendre sur plusieurs jours, voire plusieurs années. Ces fichiers de longue durée peuvent inclure des PDF, des politiques et des modèles de formulaires. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable.
 
 Les documents d’entrée pour un appel de tâche asynchrone sont également stockés dans le répertoire de stockage global de documents et doivent être disponibles pour traiter les demandes. Il est donc important que vous preniez en compte la fiabilité du système de fichiers hébergeant le répertoire de stockage global de documents et que vous utilisiez une technologie RAID (Redundant Array of Independent Disks) ou toute autre technologie appropriée pour répondre à vos besoins en termes de niveau de qualité et de service.
 
@@ -81,9 +81,9 @@ AEM Forms Workspace correspond aux fonctionnalités de Flex Workspace (obsol�
 
 >[!NOTE]
 >
->L’espace de travail Flex est obsolète pour la version d’AEM Forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
-Il permet la gestion des tâches sur les clients sans Flash Player ni Adobe Reader. Il facilite le rendu des formulaires HTML, en plus des PDF forms et des formulaires Flex.
+Il permet la gestion des tâches sur les clients sans Flash Player ni Adobe Reader. Il facilite le rendu des formulaires HTML, en plus des formulaires PDF et des formulaires Flex.
 
 ## Base de données AEM Forms {#aem-forms-database}
 
@@ -95,7 +95,7 @@ Pour sauvegarder la base de données en temps réel, vous devez utiliser le mode
 
 >[!NOTE]
 >
->Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
+>Remarque : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs et utilisatrices de concevoir, de gérer, de surveiller et d’optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[&#x200B; Document sur le cycle de vie des produits Adobe](https://www.adobe.com/fr/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -114,7 +114,7 @@ DB2 dispose de fonctionnalités intégrées pour sauvegarder une base de donnée
 
 ### Oracle {#oracle}
 
-Utilisez des sauvegardes instantanées ou configurez votre base de données Oracle pour qu’elle s’exécute en mode de consignation en archives. (Voir le document [Oracle Backup: An Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) Pour plus d’informations sur la sauvegarde et la récupération de votre base de données Oracle, consultez les sites suivants :
+Utilisez des sauvegardes instantanées ou configurez votre base de données Oracle pour qu’elle s’exécute en mode de consignation en archives. (Voir [Sauvegarde Oracle : Introduction](https://www.databasedesign-resource.com/oracle-backup.md).) Pour plus d’informations sur la sauvegarde et la récupération de votre base de données Oracle, consultez les sites suivants :
 
 [Oracle Backup and Recovery :](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explique en détail les concepts de sauvegarde et de récupération, les techniques les plus couramment employées pour utiliser Recovery Manager (RMAN) à des fins de sauvegarde, de récupération et de création de rapports, de même que la planification d’une politique de sauvegarde et de récupération.
 

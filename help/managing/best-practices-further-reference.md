@@ -9,7 +9,7 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
 workflow-type: tm+mt
 source-wordcount: '3750'
 ht-degree: 100%
@@ -72,45 +72,45 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
   Les rôles doivent être clairement définis et connus de toutes les personnes qui participent au projet. En outre, il est conseillé de mettre en évidence les rôles suivants :
 
-   * les décideurs et décideuses ;
-   * les points de contact ;
+  * les décideurs et décideuses ;
+  * les points de contact ;
 
 * **les responsabilités**.
 
-   * Pour chaque rôle, une définition claire des responsabilités liées à votre projet permet d’éviter toute confusion.
+  * Pour chaque rôle, une définition claire des responsabilités liées à votre projet permet d’éviter toute confusion.
 
 * **Implication**
 
   En impliquant dès que possible les parties intéressées, vous pouvez les encourager à devenir *parties prenantes* du projet. Vous augmentez ainsi leur engagement en vue du succès du projet.
 
-   * Côté clientèle, ce rôle inclut les personnes qui travaillent au quotidien avec le système.
-   * Au sein de votre propre équipe de projet, cette implication inclut également les personnes responsables de l’assurance qualité. Mieux elles comprennent les exigences de la clientèle, mieux elles peuvent planifier les tests.
+  * Côté clientèle, ce rôle inclut les personnes qui travaillent au quotidien avec le système.
+  * Au sein de votre propre équipe de projet, cette implication inclut également les personnes responsables de l’assurance qualité. Mieux elles comprennent les exigences de la clientèle, mieux elles peuvent planifier les tests.
 
 * **Voies de communication**
 
-   * Les voies de communications ne doivent pas être trop formalisées, mais des définitions spécifiques doivent toutefois veiller à ce que les personnes principales soient toujours informées. Une attention particulière doit être portée à la communication avec les parties externes.
+  * Les voies de communications ne doivent pas être trop formalisées, mais des définitions spécifiques doivent toutefois veiller à ce que les personnes principales soient toujours informées. Une attention particulière doit être portée à la communication avec les parties externes.
 
 * **Processus**
 
   Les processus définis dépendent de votre projet individuel. Là encore, essayez de garder ces processus simples, en tenant compte des éléments suivants :
 
-   * Vous devez définir des processus (et voies de communication) pour interagir avec des tiers, comme les agences de conception et les fournisseurs de logiciels tiers.
-   * Souvent, le client ou la cliente dispose de ses propres procédures et outils de gestion de projet et de création de rapports.
+  * Vous devez définir des processus (et voies de communication) pour interagir avec des tiers, comme les agences de conception et les fournisseurs de logiciels tiers.
+  * Souvent, le client ou la cliente dispose de ses propres procédures et outils de gestion de projet et de création de rapports.
 
 * **Outils de tracking**
 
   De nombreux outils sont disponibles pour effectuer le tracking d’informations sur les bugs, les tâches et d’autres aspects de votre projet. Voir [Vue d’ensemble des outils potentiels](#overview-of-potential-tools) pour plus d’informations.
 
-   * Le point essentiel à noter ici est de ne conserver qu’une seule copie de l’information et de la partager (et donc d’accéder à l’outil utilisé). Ce workflow facilite la maintenance et permet d’éviter les incohérences.
+  * Le point essentiel à noter ici est de ne conserver qu’une seule copie de l’information et de la partager (et donc d’accéder à l’outil utilisé). Ce workflow facilite la maintenance et permet d’éviter les incohérences.
 
 * **Portée**
 
   Définissez clairement ce qui doit être couvert par le projet à différents niveaux :
 
-   * les versions individuelles (si un processus de publication itératif est utilisé, et qu’elles soient diffusées ou non aux clientes et clients ou à votre équipe de test interne) ;
-   * le projet AEM ;
-   * l’ensemble du projet, y compris les logiciels tiers, leur impact sur les tests, les problèmes d’organisation, etc.
-   * Pour certains aspects, il peut également être utile d’indiquer ce qui *n’entre pas* dans le cadre du projet. Cette méthode peut aider à éviter la confusion et les hypothèses incorrectes, bien qu’elle doive se limiter à des questions essentielles.
+  * les versions individuelles (si un processus de publication itératif est utilisé, et qu’elles soient diffusées ou non aux clientes et clients ou à votre équipe de test interne) ;
+  * le projet AEM ;
+  * l’ensemble du projet, y compris les logiciels tiers, leur impact sur les tests, les problèmes d’organisation, etc.
+  * Pour certains aspects, il peut également être utile d’indiquer ce qui *n’entre pas* dans le cadre du projet. Cette méthode peut aider à éviter la confusion et les hypothèses incorrectes, bien qu’elle doive se limiter à des questions essentielles.
 
 * **Création de rapports**
 
@@ -118,11 +118,11 @@ Comme pour tout projet, il est essentiel d’établir des règles de base dès q
 
 * **Terminologie**
 
-   * Définissez les abréviations et/ou la terminologie à utiliser spécifiques à la clientèle.
+  * Définissez les abréviations et/ou la terminologie à utiliser spécifiques à la clientèle.
 
 * **Hypothèses**
 
-   * Définissez les hypothèses faites.
+  * Définissez les hypothèses faites.
 
 Ces informations peuvent être définies dans un manuel de projet ; l’utilisation d’un wiki peut également vous assurer que les modifications en cours sont gérées efficacement. Lorsqu’elles sont définies, les principaux facteurs sont les suivants :
 
@@ -138,13 +138,13 @@ Ces tests peuvent être les éléments suivants :
 
 * Entreprise :
 
-   * permet de mesurer les objectifs d’entreprise clés.
-   * Il est important de choisir les indicateurs de performance clés appropriés à votre entreprise/scénario et de définir clairement ce qu’ils sont, comment ils sont mesurés, comment ils sont utilisés et par qui.
+  * permet de mesurer les objectifs d’entreprise clés.
+  * Il est important de choisir les indicateurs de performance clés appropriés à votre entreprise/scénario et de définir clairement ce qu’ils sont, comment ils sont mesurés, comment ils sont utilisés et par qui.
 
 * Performances :
 
-   * permet de définir comment mesurer les performances du système.
-   * Voici quelques exemples : temps de chargement des pages, temps de réponse du serveur et performances des requêtes de base de données.
+  * permet de définir comment mesurer les performances du système.
+  * Voici quelques exemples : temps de chargement des pages, temps de réponse du serveur et performances des requêtes de base de données.
 
 Certains indicateurs peuvent être basés sur les mesures cibles que vous identifiez et définissez.
 
@@ -222,8 +222,8 @@ Plusieurs facteurs de performances peuvent être évalués :
 
 * le temps de réponse pour des pages individuelles, en tenant compte des éléments suivants :
 
-   * le temps de réponse dans un environnement de création ;
-   * le temps de réponse dans l’environnement de publication ;
+  * le temps de réponse dans un environnement de création ;
+  * le temps de réponse dans l’environnement de publication ;
 
 * le temps de réponse des requêtes de recherche.
 
@@ -243,18 +243,18 @@ Les temps de réponse que vous visez sont différents dans les environnements de
 
   Cet environnement est utilisé par les auteurs et autrices qui saisissent et mettent à jour du contenu. Il doit donc :
 
-   * répondre aux besoins de quelques utilisateurs et utilisatrices qui génèrent un grand nombre de requêtes lors de la mise à jour de pages de contenu et les éléments individuels de ces pages ;
-   * être aussi rapide que possible afin d’optimiser leur productivité pour intégrer du contenu à votre site web.
+  * répondre aux besoins de quelques utilisateurs et utilisatrices qui génèrent un grand nombre de requêtes lors de la mise à jour de pages de contenu et les éléments individuels de ces pages ;
+  * être aussi rapide que possible afin d’optimiser leur productivité pour intégrer du contenu à votre site web.
 
 * **Environnement de publication**
 
   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs et utilisatrices :
 
-   * la vitesse reste essentielle, mais elle est souvent plus faible qu’un environnement de création ;
-   * d’autres mécanismes d’amélioration des performances sont souvent appliqués :
+  * la vitesse reste essentielle, mais elle est souvent plus faible qu’un environnement de création ;
+  * d’autres mécanismes d’amélioration des performances sont souvent appliqués :
 
-      * le contenu est mis en cache ;
-      * l’équilibrage de charge est appliqué.
+    * le contenu est mis en cache ;
+    * l’équilibrage de charge est appliqué.
 
 #### Définir des temps de réponse cibles {#setting-target-response-times}
 
@@ -298,11 +298,11 @@ Les requêtes de recherche peuvent avoir un impact significatif sur votre site w
 
 * Temps de réponse de la recherche réelle
 
-   * Une fonction de recherche rapide est un objectif de qualité pour votre site web.
+  * Une fonction de recherche rapide est un objectif de qualité pour votre site web.
 
 * Impact sur les performances générales
 
-   * Lorsqu’une fonction de recherche doit analyser des sections du contenu (potentiellement importantes), ou analyser un index spécifiquement extrait, cette fonctionnalité peut avoir un impact sur les performances de l’ensemble du système si elle n’est pas optimisée.
+  * Lorsqu’une fonction de recherche doit analyser des sections du contenu (potentiellement importantes), ou analyser un index spécifiquement extrait, cette fonctionnalité peut avoir un impact sur les performances de l’ensemble du système si elle n’est pas optimisée.
 
 La définition de cibles pour les requêtes de recherche est, encore une fois, une question d’expérience dépendant des éléments suivants :
 
@@ -330,12 +330,12 @@ Les cibles pour le nombre d’utilisateurs ou utilisatrices simultané(e)s dépe
 
 * **Environnement de création**
 
-   * Généralement, le nombre d’utilisateurs simultanés peut être estimé avec précision. Vous pouvez savoir combien d’auteurs et autrices vous avez au total, bien que tous et toutes ne soient (probablement) pas actifs ou actives en même temps.
+  * Généralement, le nombre d’utilisateurs simultanés peut être estimé avec précision. Vous pouvez savoir combien d’auteurs et autrices vous avez au total, bien que tous et toutes ne soient (probablement) pas actifs ou actives en même temps.
 
 * **Environnement de publication**
 
-   * L’environnement de publication est plus difficile à prédire. Vous devez donc sélectionner une valeur cible. Là encore, elle doit être basée sur l’expérience de votre site web actuel et sur des attentes réalistes de votre nouveau site web.
-   * Les événements spéciaux (par exemple, lorsque vous publiez du nouveau contenu populaire) peuvent dépasser les attentes, voire même les capacités (comme cela est parfois rapporté dans la presse lorsque des billets pour certains événements sont mis en vente).
+  * L’environnement de publication est plus difficile à prédire. Vous devez donc sélectionner une valeur cible. Là encore, elle doit être basée sur l’expérience de votre site web actuel et sur des attentes réalistes de votre nouveau site web.
+  * Les événements spéciaux (par exemple, lorsque vous publiez du nouveau contenu populaire) peuvent dépasser les attentes, voire même les capacités (comme cela est parfois rapporté dans la presse lorsque des billets pour certains événements sont mis en vente).
 
 ### Capacité et volume {#capacity-and-volume}
 
@@ -343,12 +343,12 @@ Avant de discuter des mesures connexes, une définition rapide des termes :
 
 * **Volume**
 
-   * La quantité en sortie qui est traitée et diffusée par le système.
+  * La quantité en sortie qui est traitée et diffusée par le système.
 
 * **Capacité**
 
-   * Capacité du système à fournir le volume.
-   * À chaque étape, la capacité et le volume sont mesurés différemment, comme le montre le tableau ci-dessous. Pour de meilleures performances, assurez-vous que la capacité correspond au volume à chaque étape et que la capacité et le volume sont partagés à l’échelle de toutes les étapes. Par exemple, vous pouvez calculer la navigation sur l’ordinateur client ou la mettre dans le cache, au lieu de la calculer sur le serveur pour chaque requête.
+  * Capacité du système à fournir le volume.
+  * À chaque étape, la capacité et le volume sont mesurés différemment, comme le montre le tableau ci-dessous. Pour de meilleures performances, assurez-vous que la capacité correspond au volume à chaque étape et que la capacité et le volume sont partagés à l’échelle de toutes les étapes. Par exemple, vous pouvez calculer la navigation sur l’ordinateur client ou la mettre dans le cache, au lieu de la calculer sur le serveur pour chaque requête.
 
 * **Capacité et volume**
 
@@ -414,56 +414,56 @@ Voici quelques points à noter pour chaque catégorie :
 
 * **Développement**
 
-   * Définissez d’abord l’architecture de base.
-   * Utilisez plusieurs itérations (sprints) pour le développement :
+  * Définissez d’abord l’architecture de base.
+  * Utilisez plusieurs itérations (sprints) pour le développement :
 
-      * Le premier sprint correspond au premier cycle de développement complet.
-      * Le premier sprint entraîne le premier déploiement dans votre environnement de test.
-      * Chaque sprint a un résultat exécutable.
-      * Chaque sprint reçoit une approbation client (minimum de test structuré avec commentaires).
+    * Le premier sprint correspond au premier cycle de développement complet.
+    * Le premier sprint entraîne le premier déploiement dans votre environnement de test.
+    * Chaque sprint a un résultat exécutable.
+    * Chaque sprint reçoit une approbation client (minimum de test structuré avec commentaires).
 
-   * Planifiez l’éventualité d’une mise à jour de la version d’AEM disponible au cours du projet.
-   * Planifiez les tests et l’optimisation lors des sprints.
-   * Planifiez les phases de stabilisation et d’optimisation.
-   * Créez un journal des éléments à planifier pour les prochaines versions.
-   * Planifiez la prise en charge et la participation des partenaires.
+  * Planifiez l’éventualité d’une mise à jour de la version d’AEM disponible au cours du projet.
+  * Planifiez les tests et l’optimisation lors des sprints.
+  * Planifiez les phases de stabilisation et d’optimisation.
+  * Créez un journal des éléments à planifier pour les prochaines versions.
+  * Planifiez la prise en charge et la participation des partenaires.
 
 * **Infrastructure**
 
-   * Définissez d’abord l’architecture de base :
+  * Définissez d’abord l’architecture de base :
 
-      * Définissez les exigences de performances.
-      * Définissez les objectifs de performances (cela signifie que vous devez définir clairement les attentes).
-      * Définissez l’architecture du matériel et de l’infrastructure, y compris le dimensionnement.
-      * Définissez le déploiement.
+    * Définissez les exigences de performances.
+    * Définissez les objectifs de performances (cela signifie que vous devez définir clairement les attentes).
+    * Définissez l’architecture du matériel et de l’infrastructure, y compris le dimensionnement.
+    * Définissez le déploiement.
 
-   * Utilisez plusieurs itérations. Pour la préparation du premier sprint et de la configuration initiale, préparez les éléments suivants :
+  * Utilisez plusieurs itérations. Pour la préparation du premier sprint et de la configuration initiale, préparez les éléments suivants :
 
-      * Environnement de développement.
-      * Processus de développement.
-      * Environnement de test.
-      * Processus de déploiement (y compris la gestion de la configuration).
+    * Environnement de développement.
+    * Processus de développement.
+    * Environnement de test.
+    * Processus de déploiement (y compris la gestion de la configuration).
 
-   * Planifiez plusieurs tests de chargement.
-   * Planifiez les tests et l’optimisation lors des sprints.
-   * Planifiez une phase de stabilisation et d’optimisation.
-   * Effectuez le déploiement dans l’environnement de production le plus tôt possible (laissez l’équipe d’exploitation configurer le système pour acquérir de l’expérience).
-   * Utilisez aussi tôt que possible les utilisateurs et utilisatrices nommés et les rôles définis.
-   * Planifiez les formations (formation des administrateurs et administratrices, par exemple).
-   * Planifiez le transfert vers les opérations.
+  * Planifiez plusieurs tests de chargement.
+  * Planifiez les tests et l’optimisation lors des sprints.
+  * Planifiez une phase de stabilisation et d’optimisation.
+  * Effectuez le déploiement dans l’environnement de production le plus tôt possible (laissez l’équipe d’exploitation configurer le système pour acquérir de l’expérience).
+  * Utilisez aussi tôt que possible les utilisateurs et utilisatrices nommés et les rôles définis.
+  * Planifiez les formations (formation des administrateurs et administratrices, par exemple).
+  * Planifiez le transfert vers les opérations.
 
 * **Contenu**
 
-   * L’architecture de base :
-      * Permet d’orienter la hiérarchie du contenu.
-      * Permet de définir le concept du contenu.
-      * Définit l’utilisation et la mise en page MSM.
-      * Définit les rôles, les groupes, les workflows et les autorisations.
-   * Déterminez si la création de pages hors ligne est utile.
-   * Planifiez la création précoce des premières pages et du contenu (à utiliser dans les tests et dans les commentaires).
-   * Planifiez la migration du contenu existant.
-   * Planifiez la « migration interne au sprint » après la refactorisation.
-   * Planifiez le « burndown de contenu » (plan du site pour le contenu de mise en ligne).
+  * L’architecture de base :
+    * Permet d’orienter la hiérarchie du contenu.
+    * Permet de définir le concept du contenu.
+    * Définit l’utilisation et la mise en page MSM.
+    * Définit les rôles, les groupes, les workflows et les autorisations.
+  * Déterminez si la création de pages hors ligne est utile.
+  * Planifiez la création précoce des premières pages et du contenu (à utiliser dans les tests et dans les commentaires).
+  * Planifiez la migration du contenu existant.
+  * Planifiez la « migration interne au sprint » après la refactorisation.
+  * Planifiez le « burndown de contenu » (plan du site pour le contenu de mise en ligne).
 
 ## Estimation du temps et de l’effort {#estimating-time-and-effort}
 
