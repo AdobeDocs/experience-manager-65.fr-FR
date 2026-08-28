@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 94%
+source-wordcount: '1582'
+ht-degree: 91%
 
 ---
 
@@ -63,11 +63,11 @@ Si votre organisation a besoin de collecter ou de récupérer des données d’u
 | Singapour | `https://api4.omniture.com/` |
 | Oregon | `https://api5.omniture.com/` |
 
-Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **client HTTP Adobe AEM Analytics du lot OSGi**. Ajoutez l’**URL du centre de données** du centre de données qui héberge une suite de rapports pour laquelle vos pages AEM collectent des données.
+Utilisez la [console web pour configurer le](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **client HTTP Adobe AEM Analytics du bundle OSGi**. Ajoutez l’**URL du centre de données** du centre de données qui héberge une suite de rapports pour laquelle vos pages AEM collectent des données.
 
 ![aa-07](assets/aa-07.png)
 
-1. Ouvrez la console Web dans votre navigateur Web. ([:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console Web dans votre navigateur Web. ([](https://localhost:4502/system/console/configMgr))
 1. Pour accéder à la console, saisissez vos informations d’identification.
 
    >[!NOTE]
@@ -81,6 +81,10 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 1. Cliquez sur Enregistrer.
 
 ## Configurer la connexion à Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
+
+>[!CAUTION]
+>
+>L’API [Adobe Analytics 1.4 a atteint sa fin de vie](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Par conséquent, les configurations Adobe Analytics qui utilisent des informations d’identification d’utilisateur (nom d’utilisateur et mot de passe) ne sont plus prises en charge.
 
 >[!CAUTION]
 >
@@ -150,21 +154,21 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas en regard de
 
 * **Serveur de suivi**
 
-   * Contient l’URL utilisée pour envoyer les appels Adobe Analytics.
+  * Contient l’URL utilisée pour envoyer les appels Adobe Analytics.
 
-      * `cname` : prend par défaut le *nom d’entreprise* du compte Adobe Analytics.
-      * `d1` : correspond au centre de données auquel les informations sont envoyées (soit `d1`, `d2` ou `d3`).
-      * `sc.omtrdc.net` : nom de domaine.
+    * `cname` : prend par défaut le *nom d’entreprise* du compte Adobe Analytics.
+    * `d1` : correspond au centre de données auquel les informations sont envoyées (soit `d1`, `d2` ou `d3`).
+    * `sc.omtrdc.net` : nom de domaine.
 
 * **Serveur de suivi sécurisé**
 
-   * Comporte les mêmes segments que le serveur de suivi.
-   * Utilisé pour envoyer des données à partir de pages sécurisées (`https://`).
+  * Comporte les mêmes segments que le serveur de suivi.
+  * Utilisé pour envoyer des données à partir de pages sécurisées (`https://`).
 
 * **Espace de noms du visiteur ou de la visiteuse**
 
-   * L’espace de noms détermine la première partie de l’URL de suivi.
-   * Par exemple, si l’espace de noms est redéfini sur **CNAME**, les appels effectués vers Adobe Analytics ressembleront à **CNAME.d1.omtrdc.net** plutôt qu’à la valeur par défaut.
+  * L’espace de noms détermine la première partie de l’URL de suivi.
+  * Par exemple, si l’espace de noms est redéfini sur **CNAME**, les appels effectués vers Adobe Analytics ressembleront à **CNAME.d1.omtrdc.net** plutôt qu’à la valeur par défaut.
 
 ## Associer une page à un framework d’Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -202,11 +206,11 @@ La valeur par défaut est `6`.
 
 * **Délai de récupération** :
 Nombre de millisecondes écoulées entre les tentatives de récupération d’un rapport mis en file d’attente.
-La valeur par défaut est `10000`. Comme cette valeur est exprimée en millisecondes, elle correspond à 10 secondes.
+La valeur par défaut est de `10000`. Comme la valeur est en millisecondes, cela correspond à 10 secondes.
 
 * **Fréquence de récupération** :
 Expression `cron` permettant de déterminer la fréquence de récupération du rapport Analytics.
-La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations toutes les heures.
+La valeur par défaut est `0 0 0/12 * * ?` ; cela correspond à 12 récupérations par heure.
 
 Pour configurer ce service OSGi, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud osgiConfig dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (le PID de service est `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
