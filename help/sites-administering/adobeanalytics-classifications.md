@@ -9,14 +9,18 @@ exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 93%
 
 ---
 
 # Classifications Adobe{#adobe-classifications}
+
+[!BADGE Arrêté]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."}
+
+<div class="preview"> Adobe Classifications nécessite une configuration Adobe Analytics qui utilise les informations d’identification de l’utilisateur (nom d’utilisateur et mot de passe). Celle-ci n’est plus prise en charge maintenant que l’API <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 est arrivée en fin de vie</a>. Par conséquent, les classifications Adobe sont obsolètes. </div>
 
 Adobe Classifications exporte les données de classification dans [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de façon planifiée. L’exportateur est une implémentation de **com.adobe.cq.scheduled.Export.Exporter**.
 
@@ -85,13 +89,13 @@ Dans la mise en œuvre par défaut SAINTDefaultTransformer, les ressources enfan
 
 * id-classification `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Produit = Mon nom de produit (chaîne)
-      * Prix = 120,90 (chaîne)
-      * Taille = M (chaîne)
-      * Couleur = noir (chaîne)
-      * Code couleur = 101 (chaîne)
+    * Produit = Mon nom de produit (chaîne)
+    * Prix = 120,90 (chaîne)
+    * Taille = M (chaîne)
+    * Couleur = noir (chaîne)
+    * Code couleur = 101 (chaîne)
 
 **En-tête et enregistrement de SAINT :**
 
