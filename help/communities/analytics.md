@@ -51,7 +51,7 @@ Les fonctionnalités de communautés prises en charge sont les suivantes :
 Cette section de la documentation décrit comment connecter une suite de rapports Analytics aux fonctionnalités de Communities. Les étapes de base sont les suivantes :
 
 1. [Répliquez la clé de chiffrement](#replicate-the-crypto-key) afin de vous assurer que le chiffrement/déchiffrement se produit correctement sur toutes les instances AEM
-1. Préparation d’une suite de rapports Adobe Analytics](#adobe-analytics-report-suite-for-video-reporting)[
+1. Préparation d’une suite de rapports Adobe Analytics[&#128279;](#adobe-analytics-report-suite-for-video-reporting)
 1. Création d’un service [Cloud](#aem-analytics-cloud-service-configuration) AEM Analytics et d’un [framework](#aem-analytics-framework-configuration)
 
 1. [Activation d’Analytics](#enable-analytics-for-a-community-site) pour un site communautaire
@@ -91,13 +91,13 @@ Grâce au [Gestionnaire de suites de rapports](https://experienceleague.adobe.co
 
 En vous connectant à [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) avec [Nom de société et Nom d’utilisateur](/help/communities/analytics.md#prerequisites), vous pouvez configurer une suite de rapports nouvelle ou existante pour obtenir les éléments suivants :
 
-* [11 Variables de conversion ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=fr) (eVars)
+* [11 Variables de conversion &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=fr) (eVars)
 
   * **`evar1`** via **`evar11`** activé
 
   * Peut réutiliser (renommer) des eVars existantes ou en créer d’autres à utiliser pour les fonctionnalités de Communities
 
-* [7 Événements de succès ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=fr) (événements)
+* [7 Événements de succès &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=fr) (événements)
 
   * **`event1`** via **`event7`** activé
 
@@ -135,7 +135,7 @@ Contactez votre représentant de compte pour toute question concernant les varia
 >
 >**Ensuite, avant la publication du site de la communauté** il est important de restaurer le mappage préexistant en déplaçant les variables AEM qui ont été automatiquement mappées aux variables Analytics lorsqu’Analytics a été activé pour un site de la communauté.
 >
->Pour restaurer le mappage préexistant et déplacer les variables AEM vers d’autres variables Analytics, reportez-vous à la section [ Modification du mappage des variables Analytics ](#modifying-analytics-variable-mapping).
+>Pour restaurer le mappage préexistant et déplacer les variables AEM vers d’autres variables Analytics, reportez-vous à la section [&#x200B; Modification du mappage des variables Analytics &#x200B;](#modifying-analytics-variable-mapping).
 >
 >Si vous ne le faites pas, vous risquez de perdre des données irrécupérables.
 
@@ -145,7 +145,7 @@ Lorsque Video Heartbeat Analytics est sous licence, un `Marketing Cloud Org Id` 
 
 Pour activer le rapport de pulsation vidéo après [configuration de la suite de rapports Analytics pour le rapport vidéo](#adobe-analytics-report-suite-for-video-reporting) :
 
-* Créez un service [](#aem-analytics-cloud-service-configuration)
+* Créez un service [&#128279;](#aem-analytics-cloud-service-configuration)
 * Activer [Analytics pour un site communautaire](#enable-analytics-for-a-community-site)
 * Associer le `Marketing Cloud Org Id` au site de la communauté
 
@@ -166,7 +166,7 @@ Si ce paramètre n’est pas activé, le code de pulsation vidéo n’est jamais
 Pour créer une intégration Analytics qui intègre Adobe Analytics au site de la communauté AEM, à l’aide de l’interface utilisateur standard sur l’instance de création :
 
 * À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**
-* Faites défiler jusqu’à ****
+* Faites défiler jusqu’à **&#x200B;**
 * Sélectionnez **[!UICONTROL Configurer maintenant]** ou **[!UICONTROL Afficher les configurations]**
 
 ![configuration-cloud](assets/cloud-config1.png)
@@ -602,7 +602,7 @@ Pour obtenir des instructions spécifiques, consultez la section sur l’éditeu
 
 Les informations d’identification Adobe Analytics sont chiffrées. Pour faciliter la réplication ou la transmission des informations d’identification d’analyse chiffrées entre l’instance de création et l’instance de publication, toutes les instances AEM doivent partager la même clé de chiffrement principale.
 
-Pour ce faire, suivez les instructions de la section [ Répliquer la clé de chiffrement ](/help/communities/deploy-communities.md#replicate-the-crypto-key).
+Pour ce faire, suivez les instructions de la section [&#x200B; Répliquer la clé de chiffrement &#x200B;](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
 ### Site de la communauté de publication et service Analytics Cloud {#publish-community-site-and-analytics-cloud-service}
 
@@ -639,7 +639,7 @@ Actuellement, pour personnaliser les mesures à suivre, des nœuds sont créés 
 Le sujet du forum est actuellement le seul exemple de cette personnalisation :
 
 * Sur l’éditeur principal, connectez-vous avec les droits d’administrateur.
-* Accédez à [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, [](https://localhost:4503/crx/de).
+* Accédez à [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, [&#128279;](https://localhost:4503/crx/de).
 
 * Sous le nœud `jcr:content` de la racine de langue (par exemple, `/content/sites/engage/en/jcr:content`), accédez au composant configuré pour les rapports Analytics.
 Par exemple, **`analytics/reportConfigs/social_forum_components_hbs_topic`**.
@@ -665,4 +665,4 @@ Adobe Analytics fournit des API qui vous permettent d’accéder aux données ut
 
 * Adobe Experience Cloud : [Aide et référence d’Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 * AEM : [Intégration à Adobe Analytics](/help/sites-administering/adobeanalytics.md)
-* AEM : [ Analytics avec des fournisseurs externes ](/help/sites-administering/external-providers.md)
+* AEM : [&#x200B; Analytics avec des fournisseurs externes &#x200B;](/help/sites-administering/external-providers.md)

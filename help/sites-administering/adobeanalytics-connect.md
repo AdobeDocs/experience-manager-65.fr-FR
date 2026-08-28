@@ -67,7 +67,7 @@ Utilisez la [console web pour configurer le](/help/sites-deploying/configuring-o
 
 ![aa-07](assets/aa-07.png)
 
-1. Ouvrez la console Web dans votre navigateur Web. ([](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console Web dans votre navigateur Web. ([&#128279;](https://localhost:4502/system/console/configMgr))
 1. Pour accéder à la console, saisissez vos informations d’identification.
 
    >[!NOTE]
