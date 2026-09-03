@@ -72,7 +72,7 @@ L’heure d’activation/désactivation d’une page est un moyen pratique de ma
 
 Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
-Lorsque les heures d’activation/de désactivation sont configurées, vous verrez des icônes et des informations supplémentaires relatives aux heures d’activation dans les vues [ Liste et Carte de la console Sites](/help/sites-authoring/basic-handling.md#views) ainsi que dans la vue [ Chronologie du panneau latéral de la console](/help/sites-authoring/basic-handling.md#timeline)
+Lorsque les heures d’activation/de désactivation sont configurées, vous verrez des icônes et des informations supplémentaires relatives aux heures d’activation dans les vues [&#x200B; Liste et Carte de la console Sites](/help/sites-authoring/basic-handling.md#views) ainsi que dans la vue [&#x200B; Chronologie du panneau latéral de la console](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
