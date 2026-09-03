@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 93%
+source-wordcount: '3122'
+ht-degree: 90%
 
 ---
 
@@ -253,11 +253,11 @@ Plusieurs ressources d’aide sont disponibles :
 
   Dans la console **Outils**, vous pouvez également accéder aux **Ressources** externes :
 
-   * **Documentation**
-Consulter la documentation de Web Experience Management
+  * **Documentation**
+    Consulter la documentation de Web Experience Management
 
-   * **Ressources pour les développeurs**
-Ressources et téléchargements pour les développeurs
+  * **Ressources pour les développeurs**
+    Ressources et téléchargements pour les développeurs
 
   >[!NOTE]
   >
@@ -408,29 +408,30 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
 * Vous pouvez naviguer de haut en bas dans l’arborescence en appuyant ou en cliquant sur le nom de la ressource ou sur le chevron situé à droite du nom de la ressource.
 
-   * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
+  * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
 
-     ![Vue Colonnes](assets/bh-17.png)
+    ![Vue Colonnes](assets/bh-17.png)
 
-   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
-   * Si vous cliquez sur un nom de ressource sans enfant, les détails s’affichent dans la dernière colonne.
+  * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de celle-ci.
+  * Si vous cliquez sur un nom de ressource sans enfant, les détails s’affichent dans la dernière colonne.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
-   * Lorsqu’elle est sélectionnée, une coche est apposée sur la miniature et le nom de la ressource est mis en surbrillance.
-   * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
-   * La barre d’outils d’action devient disponible.
+  * Lorsqu’elle est sélectionnée, une coche est apposée sur la miniature et le nom de la ressource est mis en surbrillance.
+  * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
+  * La barre d’outils d’action devient disponible.
 
-     ![Vue Colonne](assets/bh-18.png)
+    ![Vue Colonne](assets/bh-18.png)
 
   Lorsque vous sélectionnez une page dans la vue Colonnes, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
 
-   * Titre de la page
-   * Nom de la page (partie de l’URL de la page)
-   * Modèle sur lequel est basée la page
-   * Détails des modifications
-   * Langue de la page
-   * Détails de la publication
+  * Titre de la page
+  * Nom de la page (partie de l’URL de la page)
+  * Modèle sur lequel est basée la page
+  * Détails des modifications
+  * Langue de la page
+  * Détails de la publication
+  * [Heure d’activation/de désactivation de la page](/help/sites-authoring/editing-page-properties.md#on-off-time) (si définie)
 
 ### Mode Carte {#card-view}
 
@@ -438,13 +439,13 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
 * Le mode Carte affiche des cartes d’informations pour chaque élément au niveau actuel. Elles fournissent des informations telles que :
 
-   * une représentation visuelle du contenu de la page ;
-   * Le titre de la page ;
-   * Des dates importantes (telles que la date de la dernière modification ou publication) ;
-   * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
-   * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
+  * une représentation visuelle du contenu de la page ;
+  * Le titre de la page ;
+  * Des dates importantes (telles que la date de la dernière modification ou publication) ;
+  * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
+  * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
 
-      * Les marques qui indiquent les actions requises peuvent être liées aux entrées de votre [boîte de réception](/help/sites-authoring/inbox.md).
+    * Les marques qui indiquent les actions requises peuvent être liées aux entrées de votre [boîte de réception](/help/sites-authoring/inbox.md).
 
 * Les [actions rapides](#quick-actions) sont également disponibles dans ce mode, comme la sélection et les actions courantes, telles que la modification.
 
@@ -463,26 +464,31 @@ Si vous sélectionnez une ressource dans la colonne la plus à gauche, les resso
 
   ![Vue Liste - Tout sélectionner](assets/bh-20.png)
 
-   * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
+  * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
 
-      * Pour tout désélectionner, cochez la case.
+    * Pour tout désélectionner, cochez la case.
 
-   * Lorsque seuls certains éléments sont sélectionnés, le signe moins apparaît.
+  * Lorsque seuls certains éléments sont sélectionnés, le signe moins apparaît.
 
-      * Pour tout sélectionner, cochez la case.
-      * Pour tout désélectionner, cochez à nouveau la case.
+    * Pour tout sélectionner, cochez la case.
+    * Pour tout désélectionner, cochez à nouveau la case.
 
 * Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
-   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue
-   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice
-   * **Publié** : statut de la publication.
-   * **Modèle** : modèle sur lequel la page est basée.
-   * **Workflow** : workflow actuellement appliqué à la page. Vous pouvez voir davantage d’informations en passant la souris sur un élément ou en ouvrant la chronologie.
+  * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue
+  * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice
+    * L’entrée de colonne est marquée d’une icône d’avertissement si la page a été mise à jour depuis la dernière publication.
+    * ![Modifié depuis la dernière publication](assets/modified.png)
+  * **Publié** : statut de la publication.
+    * L’entrée de colonne est marquée d’un badge avec une icône d’horloge si les [heures d’activation/de désactivation](/help/sites-authoring/editing-page-properties.md#on-time) de la page sont définies.
+    * Pour plus d’informations, pointez sur l’icône.
+    * ![Heure d’activation et de désactivation définie](assets/on-off-time.png)
+  * **Modèle** : modèle sur lequel la page est basée.
+  * **Workflow** : workflow actuellement appliqué à la page. Vous pouvez voir davantage d’informations en passant la souris sur un élément ou en ouvrant la chronologie.
 
-   * **Analyse de la page**
-   * **Visiteurs ou visiteuses uniques**
-   * **Temps passé sur la page**
+  * **Analyse de la page**
+  * **Visiteurs ou visiteuses uniques**
+  * **Temps passé sur la page**
 
   ![Paramètres d’affichage - Configurer les colonnes](assets/bh-21.png)
 
@@ -542,25 +548,27 @@ La colonne Chronologie permet d’effectuer les opérations suivantes :
 
 * [Afficher divers événements liés à un élément sélectionné.](#timelineviewevents)
 
-   * Les types d’événements peuvent être sélectionnés dans la liste déroulante :
+  * Les types d’événements peuvent être sélectionnés dans la liste déroulante :
 
-      * [Commentaires](#timelineaddingandviewingcomments)
-      * Annotations
-      * Activités
-      * [Lancements](/help/sites-authoring/launches.md)
-      * [Versions](/help/sites-authoring/working-with-page-versions.md)
-      * [Workflows](/help/sites-authoring/workflows-applying.md)
+    * [Commentaires](#timelineaddingandviewingcomments)
+    * Annotations
+    * Activités incluant les modifications et la publication
+      * Si des [heures d’activation/de désactivation](/help/sites-authoring/editing-page-properties.md#on-off-time) sont définies pour la page et que l’heure actuelle se situe en dehors de la fenêtre d’heure d’activation/de désactivation, une activité Page non valide peut s’afficher.
+      * Cela indique uniquement que la page se trouve en dehors de sa fenêtre de validité, et pas nécessairement que la page est dépubliée.
+    * [Lancements](/help/sites-authoring/launches.md)
+    * [Versions](/help/sites-authoring/working-with-page-versions.md)
+    * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-         * à l’exception de [workflows transitoires](/help/sites-developing/workflows.md#transient-workflows), car aucune information d’historique n’est enregistrée pour ceux-ci
+      * à l’exception de [workflows transitoires](/help/sites-developing/workflows.md#transient-workflows), car aucune information d’historique n’est enregistrée pour ceux-ci
 
-      * et Afficher tout
+    * et Afficher tout
 
 * [Ajouter/afficher des commentaires sur l’élément sélectionné. &#x200B;](#timelineaddingandviewingcomments) La zone **Commentaire** s’affiche dans la partie inférieure de la liste des événements. Saisissez un commentaire suivi d’un retour à la ligne pour enregistrer le commentaire. Vous pouvez l’afficher en sélectionnant **Commentaires** ou **Tout afficher**.
 
 * Certaines consoles disposent de fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez effectuer les opérations suivantes :
 
-   * [enregistrer une version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui) ;
-   * [démarrer un workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+  * [enregistrer une version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui) ;
+  * [démarrer un workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ **Commentaires**.
 
@@ -576,8 +584,8 @@ Les **références** affichent les liens à la ressource sélectionnée. Par exe
 * [Copies de langue](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 
-   * Liens directs provenant d’autres pages vers la page sélectionnée
-   * Contenu emprunté et/ou prêté à la page sélectionnée par le composant Référence
+  * Liens directs provenant d’autres pages vers la page sélectionnée
+  * Contenu emprunté et/ou prêté à la page sélectionnée par le composant Référence
 
 ![bh-28](assets/bh-28.png)
 

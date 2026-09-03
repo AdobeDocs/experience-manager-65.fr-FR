@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 100%
+source-wordcount: '2559'
+ht-degree: 97%
 
 ---
 
@@ -27,16 +27,16 @@ Les propriétés sont réparties sur plusieurs onglets.
 #### Titre et balises {#tile}
 
 * **Titre** : le titre de la page s’affiche à divers endroits.
-   * Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
-   * Ce champ est obligatoire.
+  * Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
+  * Ce champ est obligatoire.
 * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
-   * Après avoir sélectionné une balise, celle-ci est répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du x.
-   * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
-      * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-      * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
-   * La liste déroulante vous permet de choisir parmi des balises existantes.
-   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
-   * Pour plus d’informations sur les balises, consultez la section [Utilisation des balises.](/help/sites-authoring/tags.md)
+  * Après avoir sélectionné une balise, celle-ci est répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du x.
+  * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
+    * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
+    * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
+  * La liste déroulante vous permet de choisir parmi des balises existantes.
+  * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
+  * Pour plus d’informations sur les balises, consultez la section [Utilisation des balises.](/help/sites-authoring/tags.md)
 * **Masquer dans la navigation** : indique si la page est affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
 #### Branding {#branding}
@@ -44,17 +44,17 @@ Les propriétés sont réparties sur plusieurs onglets.
 Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
 * **Remplacer** : cochez la case pour définir le slug de marque sur cette page.
-   * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
+  * La valeur est héritée par toutes les pages enfants, à moins que leurs valeurs de **remplacement** ne soient également définies.
 * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
-   * La valeur est ajoutée au titre de la page après une barre verticale telle que `Cycling Tuscany | Always ready for the WKND`
+  * La valeur est ajoutée au titre de la page après une barre verticale telle que `Cycling Tuscany | Always ready for the WKND`
 
 #### Autres titres et descriptions {#more}
 
 * **Titre de la page** : titre à utiliser sur la page.
-   * Généralement utilisé par les composants de titre.
-   * Si rien n’est indiqué, le **titre** est utilisé.
+  * Généralement utilisé par les composants de titre.
+  * Si rien n’est indiqué, le **titre** est utilisé.
 * **Titre de navigation** : vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis).
-   * Si rien n’est indiqué, le **titre** est utilisé.
+  * Si rien n’est indiqué, le **titre** est utilisé.
 * **Sous-titre** : sous-titre à utiliser sur la page.
 * **Description** : votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
@@ -64,20 +64,22 @@ L’heure d’activation/désactivation d’une page est un moyen pratique de ma
 
 * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
-   * Si la page est déjà [publiée,](/help/sites-authoring/publishing-pages.md) elle est disponible sur l’instance de publication, mais à l’état inactif (masquée) jusqu’au rendu à l’heure spécifiée. 
-   * Si elle n’est pas publiée et [configurée pour la réplication automatique,](/help/sites-deploying/replication.md) la page est automatiquement publiée, puis rendue au moment spécifié.
-   * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
+  * Si la page est déjà [publiée,](/help/sites-authoring/publishing-pages.md) elle est disponible sur l’instance de publication, mais à l’état inactif (masquée) jusqu’au rendu à l’heure spécifiée.
+  * Si elle n’est pas publiée et [configurée pour la réplication automatique,](/help/sites-deploying/replication.md) la page est automatiquement publiée, puis rendue au moment spécifié.
+  * Si elle n’est pas publiée et n’est pas configurée pour la réplication automatique, la page n’est pas publiée automatiquement. Un message 404 s’affiche lors d’une tentative d’accès à la page.
 
 * **Heure de désactivation** : similaire à l’**heure d’activation**, souvent utilisée en combinaison avec cette dernière, définit l’heure à laquelle la page publiée est masquée dans l’environnement de publication.
 
 Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier et qui sont disponibles immédiatement dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
+
+Lorsque les heures d’activation/de désactivation sont configurées, vous verrez des icônes et des informations supplémentaires relatives aux heures d’activation dans les vues [&#x200B; Liste et Carte de la console Sites](/help/sites-authoring/basic-handling.md#views) ainsi que dans la vue [&#x200B; Chronologie du panneau latéral de la console](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >Si l’**heure d’activation** ou l’**heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
 >[!TIP]
 >
->Les heures d’activation/de désactivation portent uniquement sur le contenu déjà publié (par voie manuelle ou la réplication automatique). Pour cette raison, les workflows de publication tels que ceux d’approbation de contenu ne sont pas déclenchés par les heures d’activation/de désactivation, et ces dernières n’affectent pas le statut de publication de la page. Pour cette raison, les heures d’activation/de désactivation sont les plus appropriées pour afficher/masquer temporairement du contenu déjà approuvé et publié.
+>Les heures d’activation/de désactivation portent uniquement sur le contenu déjà publié (par voie manuelle ou la réplication automatique). Pour cette raison, les workflows de publication tels que ceux d’approbation de contenu ne sont pas déclenchés par les heures d’activation/de désactivation, et ces dernières n’affectent pas le statut de publication de la page. Par conséquent, les heures d’activation/de désactivation sont les plus appropriées pour afficher/masquer temporairement le contenu déjà approuvé et publié.
 >
 >Si vous souhaitez publier du nouveau contenu avec tous les workflows associés ou supprimer entièrement (dépublier) le contenu de votre site, envisagez de procéder à la [gestion de votre instance de publication.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
@@ -110,10 +112,10 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
 * **Conception** : indique la [conception](/help/sites-developing/designer.md) à utiliser sur cette page.
 * **Alias** : indique un alias à utiliser avec cette page.
-   * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
-   * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
-   * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
-   * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names).
+  * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
+  * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
+  * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès.
+  * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 #### Configuration {#configuration}
 
@@ -147,9 +149,9 @@ Configurez Dispatcher pour activer l’accès aux URL de redirection. Consultez 
 #### SEO {#seo}
 
 * **URL canonique** : permet de remplacer l’URL canonique de la page.
-   * Si le champ est vide, l’URL de la page est son URL canonique.
+  * Si le champ est vide, l’URL de la page est son URL canonique.
 * **Balises robots** : utilisez la liste déroulante pour sélectionner les balises robots permettant de gérer le comportement des robots des moteurs de recherche.
-   * Certaines options entrent en conflit avec d&#39;autres. Dans ce cas, l’option la plus permissive prévaut.
+  * Certaines options entrent en conflit avec d&#39;autres. Dans ce cas, l’option la plus permissive prévaut.
 * **Générer un plan de site** : lorsque cette option est sélectionnée, un fichier `sitemap.xml` est généré pour cette page et ses descendants.
 
 ### Images {#images}
@@ -175,14 +177,14 @@ Cette section permet de sélectionner et de configurer la miniature d&#39;image 
 
 * **Configurations du service cloud** : définit la configuration utilisée pour les services cloud de la page.
 * **Hérité de** : pour les Live Copies et les copies de langue, les configurations cloud sont par défaut héritées du plan directeur.
-   * Désélectionner pour remplacer l’héritage
+  * Désélectionner pour remplacer l’héritage
 
 ### Personnalisation {#personalization}
 
 #### Configurations ContextHub {#contexthub}
 
 * **Hérité de** : les configurations ContextHub sont héritées par défaut de la page parent.
-   * Décochez pour remplacer l’héritage.
+  * Décochez pour remplacer l’héritage.
 * **Chemin ContextHub** : définit la [configuration ContextHub.](/help/sites-developing/ch-configuring.md)
 * **Chemin d’accès aux segments** : permet de sélectionner le [chemin d’accès aux segments](/help/sites-administering/segmentation.md).
 
@@ -251,16 +253,16 @@ Vous pouvez définir les propriétés de page :
 
 * Dans la console **Sites** :
 
-   * [Créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
+  * [Créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
 
-   * En cliquant ou en appuyant sur **Propriétés**
+  * En cliquant ou en appuyant sur **Propriétés**
 
-      * Pour une seule page
-      * Pour plusieurs pages (seul un sous-ensemble des propriétés peut être modifié en masse)
+    * Pour une seule page
+    * Pour plusieurs pages (seul un sous-ensemble des propriétés peut être modifié en masse)
 
 * À partir de l’éditeur de page :
 
-   * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
+  * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
 
@@ -322,7 +324,7 @@ Vous ne pouvez modifier en masse que des pages qui :
 * Partagent le même type de ressource.
 * Ne font pas partie d’une Live Copy.
 
-   * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
+  * Si l’une de ces pages fait partie d’une Live Copy, un message s’affiche lorsque les propriétés sont ouvertes.
 
 Une fois en mode de modification en bloc, vous pouvez effectuer les opérations suivantes :
 
@@ -330,23 +332,23 @@ Une fois en mode de modification en bloc, vous pouvez effectuer les opérations 
 
   Lorsque vous affichez les propriétés de page pour plusieurs pages, vous pouvez voir les éléments suivants :
 
-   * Liste des pages affectées
+  * Liste des pages affectées
 
-      * Vous pouvez sélectionner/désélectionner si nécessaire.
+    * Vous pouvez sélectionner/désélectionner si nécessaire.
 
-   * Onglets
+  * Onglets
 
-      * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous les onglets.
+    * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous les onglets.
 
-   * Un sous-ensemble de propriétés
+  * Un sous-ensemble de propriétés
 
-      * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
-      * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
+    * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
+    * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
 
-   * Propriétés communes partageant une valeur commune
+  * Propriétés communes partageant une valeur commune
 
-      * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que si elles sont *toutes* communes. Si seulement certaines d’entre elles sont communes, elles s’affichent uniquement lors de la modification.
+    * Seules les propriétés qui partagent une valeur commune sont visibles en mode Affichage.
+    * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que si elles sont *toutes* communes. Si seulement certaines d’entre elles sont communes, elles s’affichent uniquement lors de la modification.
 
   En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
@@ -354,12 +356,12 @@ Une fois en mode de modification en bloc, vous pouvez effectuer les opérations 
 
   Lors de la modification des propriétés de page pour plusieurs pages :
 
-   * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
+  * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
 
-      * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+    * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
+    * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
 
-   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
+  * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
 
 >[!NOTE]
 >
