@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
 workflow-type: tm+mt
-source-wordcount: '2961'
-ht-degree: 100%
+source-wordcount: '3002'
+ht-degree: 98%
 
 ---
 
@@ -88,6 +88,10 @@ Pour activer la fonctionnalité complète du composant Conteneur de formulaires 
        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
        </sly> 
    ```
+
+   >[!NOTE]
+   >
+   >`core.forms.components.runtime.all` comprend tous les composants prêts à l’emploi. Créez plutôt une bibliothèque cliente personnalisée qui comprend uniquement les composants qui font partie de la politique de conception et qui sont destinés à être inclus dans le formulaire, puis ajoutez-la à la page.
 
 1. Ouvrez le fichier `/apps/[your-sites-project]/components/page/customfooterlibs.html` et ajoutez le code suivant au fichier :
 
