@@ -7,8 +7,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 100%
+source-wordcount: '278'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Le commerce électronique générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure de commerce électronique.
 
-Adobe propose deux versions de framework d’intégration de Commerce :
+Adobe propose deux versions de Commerce integration framework :
 
 |                         | CIF on-Prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -32,7 +32,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
 
 ## Déploiement d’autres mises en œuvre {#deploying-other-implementations}
 
-Pour AEM et Adobe Commerce, consultez [Intégration d’AEM et d’Adobe Commerce](/help/commerce/cif/integrating/magento.md) à l’aide du [framework d’intégration de Commerce (CIF)](/help/commerce/cif/introduction.md).
+Pour AEM et Adobe Commerce, consultez [Intégration d’AEM et d’Adobe Commerce](/help/commerce/cif/integrating/magento.md) à l’aide de [Commerce integration framework (CIF)](/help/commerce/cif/introduction.md).
 
 >[!NOTE]
 >

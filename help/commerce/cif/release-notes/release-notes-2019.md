@@ -152,9 +152,9 @@ ht-degree: 100%
 * Connecteur CIF et outils de création (console de produits, sélecteur de produits et sélecteur de catégorie) pour permettre aux auteurs de créer des expériences dans AEM avec du contenu commercial.
 
 * Première version des composants principaux CIF compatible avec Adobe Commerce 2.3.1 :
-   * Détails du produit
-   * Liste des produits
-   * Teaser de produit
-   * Navigation
-   * Recherche de produit
-   * Panier (REST)
+  * Détails du produit
+  * Liste des produits
+  * Teaser de produit
+  * Navigation
+  * Recherche de produit
+  * Panier (REST)

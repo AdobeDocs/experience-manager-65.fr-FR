@@ -10,7 +10,7 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3800'
 ht-degree: 97%
 
 ---
@@ -255,7 +255,7 @@ Cependant, il existe également un moyen plus simple de gérer ce problème :
 
    À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Fabrique de résolveur de ressource Apache Sling**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.
@@ -359,7 +359,7 @@ Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possibl
 
 ### Création d’un plan de site XML sur AEM {#building-an-xml-sitemap-on-aem}
 
-Les robots d’exploration utilisent des plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur référencement sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez gérer manuellement un fichier XML sur le serveur web à utiliser comme plan du site. Cependant, Adobe vous recommande de générer le plan du site par programmation afin de vous assurer que, lorsque les auteurs et autrices créent du contenu, le plan du site reflète automatiquement leurs modifications.
+Les robots d’exploration utilisent des plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur  sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez gérer manuellement un fichier XML sur le serveur web à utiliser comme plan du site. Cependant, Adobe vous recommande de générer le plan du site par programmation afin de vous assurer que, lorsque les auteurs et autrices créent du contenu, le plan du site reflète automatiquement leurs modifications.
 
 AEM utilise le [module de plan de site d’Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap) pour générer des plans de site XML, un module qui offre un large éventail d’options permettant aux personnes chargées du développement et de l’édition de tenir à jour un plan de site XML Sites.
 

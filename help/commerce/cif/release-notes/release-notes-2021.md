@@ -127,9 +127,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 ### Nouveautés {#what-is-new-july}
 
 * Composants principaux CIF v2
-   * Simplification et amélioration des configurations pour URL PDP/PLP et SEO
-   * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
-   * Nouveau composant sitemap pour pages de contenu et de commerce
+  * Simplification et amélioration des configurations pour URL PDP/PLP et SEO
+  * Indicateur visuel pour les données de produits évaluées en mode création pour une meilleure visibilité des modifications à venir
+  * Nouveau composant sitemap pour pages de contenu et de commerce
 
 * Prise en charge de la recommandation de produit [Adobe Commerce AI, optimisée par Adobe AI](https://business.adobe.com/ai/adobe-genai.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 

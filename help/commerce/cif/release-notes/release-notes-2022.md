@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '962'
 ht-degree: 100%
 
 ---
@@ -122,7 +122,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-march}
 
-* Version bêta : le composant principal de Recherche CIF AEM prend en charge Commerce LiveSearch.
+* Beta : le composant principal de Recherche CIF AEM prend en charge Commerce LiveSearch.
 * Optimisation du référencement pour les scénarios multi-magasin : les formats d’URL pour PDP/PLP peuvent désormais être configurés au niveau du magasin via les propriétés de configuration cloud CIF.
 * Le sélecteur de produit prend en charge les produits intermédiaires par le biais de la nouvelle option de filtre de l’interface utilisateur. Il permet aux personnes spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
 * Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration.
@@ -141,9 +141,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Amélioration des composants myAccount
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
-   * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
-   * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
-   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une politique (par exemple un teaser de produit ou les informations de produit).
-   * Disponible en tant que composant principal et dans AEM Venia Storefront
+  * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
+  * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
+  * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une politique (par exemple un teaser de produit ou les informations de produit).
+  * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)
