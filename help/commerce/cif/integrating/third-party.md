@@ -1,6 +1,6 @@
 ---
 title: Intégration d’AEM et de solutions de commerce tierces à l’aide de Commerce Integration Framework
-description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur storefront. Commerce Integration Framework (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l’aide de l’environnement I/O Runtime.
+description: Les entreprises peuvent avoir besoin de solutions de commerce tierces supplémentaires pour alimenter leur storefront. Commerce Integration Framework (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution de commerce tierce à Adobe Experience Manager à l’aide de l’environnement I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '552'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Il est recommandé de communiquer directement avec la solution tierce afin d’�
 
 Adobe recommande d’utiliser [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html?lang=fr) pour la couche d’intégration. Il est inclus dans le module complémentaire CIF pour les solutions tierces. Comme il fonctionne avec une approche de microservice, il est bien adapté pour intégrer facilement plusieurs solutions.
 
-La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution commerciale. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
+La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution de commerce. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
 
 Cette couche d’intégration n’est pas requise si une couche tierce est disponible (par exemple, Mulesoft) ou si l’intégration est créée sur la solution tierce.
 

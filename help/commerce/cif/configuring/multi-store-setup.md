@@ -11,8 +11,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 85%
 
 ---
 
@@ -22,11 +22,11 @@ Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structur
 
 Présentation vidéo détaillant les options d’intégration de plusieurs vues de magasin Adobe Commerce à Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32820/?quality=12&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32820/?captions=fre_fr&quality=12)
 
-Les fonctionnalités de gestion multi-site AEM de Live Copy et Language Copy sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
+Les fonctionnalités de gestion multisite AEM de Live Copy et Copie linguistique sont utilisées avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
-La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
+La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue du magasin Adobe Commerce.
 
 Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
 
@@ -46,7 +46,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de m
 
    >[!TIP]
    >
-   >Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   >Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM.
 
@@ -59,6 +59,6 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de m
 ## Ressources supplémentaires
 
 * [Sites web, magasins et vues Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr)
-* [Composants principaux AEM CIF – Configuration multi-magasin/site](https://github.com/adobe/aem-core-cif-components/#multi-store--site-configuration?lang=fr)
-* [Utilisation de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=fr)
-* [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-administering/msm.md)
+* [Composants principaux AEM CIF - Configuration multi-magasin/site](https://github.com/adobe/aem-core-cif-components/#multi-store--site-configuration?lang=fr)
+* [Utilisation de Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=fr)
+* [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)

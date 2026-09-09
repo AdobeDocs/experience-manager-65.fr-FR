@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ Ce document met en évidence les différences importantes entre le module compl�
 
 ## Installation et mises à jour
 
-Le package complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de packages AEM.
+Le package complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 
@@ -36,7 +36,7 @@ Le point d’entrée est configuré via la console OSGi.
 
 ## Déploiement du projet CIF Venia
 
-Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de packages AEM.
+Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 

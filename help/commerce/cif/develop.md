@@ -11,8 +11,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '941'
+ht-degree: 94%
 
 ---
 
@@ -41,10 +41,10 @@ Les logiciels suivants doivent être installés localement :
 
 - AEM 6.5 local
 - [Pack de services 7 AEM 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) ou ultérieur
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
-- [LTS Node](https://nodejs.org/en/)
-- [npm 6+](https://www.npmjs.com/)
+- [LTS Node](https://nodejs.org/fr/)
+- [npm 6 et ultérieure](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
 ### Accès au module complémentaire CIF
@@ -73,11 +73,11 @@ Pour le développement de projet CIF local à l’aide d’AEM et du module comp
 
 >[!TIP]
 >
->Le package complémentaire CIF peut également être installé via le gestionnaire de packages.
+>Le package complémentaire CIF peut également être installé via le gestionnaire de modules.
 
 1. Démarrage rapide AEM
 
-Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les lots liés au package complémentaire CIF, le package de contenu et les configurations OSGI. Assurez-vous que tous les lots sont démarrés.
+Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au package complémentaire CIF, le package de contenu et les configurations OSGI. Assurez-vous que tous les bundles sont démarrés.
 
 ## Configuration du projet {#project}
 
@@ -108,7 +108,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le package de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le module de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
 
 ```java
 <dependency>
@@ -148,7 +148,7 @@ Pour commencer à utiliser le magasin de référence Venia AEM, il vous suffit d
 
 >[!NOTE]
 >
->Le projet de magasin de référence Venia contient deux profils de version pour AEM as a Cloud Service et AEM 6.5. Reportez-vous au [fichier readme.md du projet](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) pour savoir comment ces profils sont utilisés. Pour AEM 6.5, utilisez le profil `classic`.
+>Le projet de magasin de référence Venia contient deux profils de version pour AEM as a Cloud Service et AEM 6.5. Vérifiez le [projet readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) pour voir comment ils sont utilisés. Pour AEM 6.5, utilisez le profil `classic`.
 
 ### Connexion d’AEM au système Commerce
 
@@ -167,4 +167,4 @@ Accédez à http://localhost:4502/system/console/configMgr et créez une configu
 ## Ressources supplémentaires
 
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
-- [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Magasin de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia)

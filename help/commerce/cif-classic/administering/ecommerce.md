@@ -20,7 +20,7 @@ ht-degree: 97%
 * [Concepts](/help/commerce/cif-classic/administering/concepts.md)
 * [Administration (générique)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe propose deux versions de framework d’intégration de Commerce :
+Adobe propose deux versions de Commerce integration framework :
 
 <table>
  <tbody>
