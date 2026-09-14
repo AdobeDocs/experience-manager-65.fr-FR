@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 95%
-
 ---
-
 # Création de contenu ciblé en mode Ciblage{#authoring-targeted-content-using-targeting-mode}
 
 Avec le mode de ciblage, vous pouvez créer du contenu ciblé pour AEM. Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences :
@@ -530,7 +528,7 @@ Utilisez les options avancées pour déterminer ce qui se passe **après** qu’
  </tbody>
 </table>
 
-Consultez la [documentation &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) pour plus d’informations sur les mesures de succès.
+Consultez la [documentation ](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) pour plus d’informations sur les mesures de succès.
 
 ### Paramètres de configuration (ciblage d’AEM) {#configuring-settings-aem-targeting}
 
@@ -728,7 +726,7 @@ Si vous sélectionnez ClientContext (côté client) comme moteur :
     <ul>
      <li><strong>Première</strong> : expérience la plus haute dans la liste, telle qu’elle a été classée dans la campagne.</li>
      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
-     <li><strong>Score Clickstream</strong> : les résultats des balises et des balises associées suivis dans le contexte du client sont utilisés. Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.</li>
+     <li><strong>Score Clickstream</strong> : les balises et les hits de balises associés suivis dans le contexte du client sont utilisés. Les taux de hits des balises définies sur la page de teaser sont comparés.</li>
     </ul> </td>
   </tr>
  </tbody>
