@@ -645,7 +645,7 @@ Le référencement d’un serveur d’applications J2EE spécifique n’est pas 
 
 Les applications clients qui utilisent le mode de connexion SOAP peuvent utiliser le port de répartition de charge HTTP pour le cluster. Les applications clients qui utilisent le mode de connexion EJB peuvent se connecter au port EJB d’un serveur d’applications J2EE spécifique. Cette action gère la répartition de la charge entre les nœuds du cluster.
 
-**WebSphere **
+**WebSphere &#x200B;**
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur WebSphere.
 
@@ -664,7 +664,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**JBoss **
+**JBoss &#x200B;**
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur JBoss.
 
