@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
-
+source-wordcount: '1645'
+ht-degree: 94%
 ---
-
 
 # Configurer le suivi des liens Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -80,17 +78,17 @@ Active le suivi des liens externes.
 * **Filtres externes**
 (Facultatif) Définit des filtres pour apparier les URL externes des cibles de lien. Lorsque les liens cibles correspondent au filtre, le lien est suivi. Les filtres externes ne sont utiles que pour effectuer le suivi de certains liens externes sur vos pages.
 
-   Pour spécifier les liens externes à suivre, tapez entièrement ou partiellement l’URL du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples. Si aucune valeur (la valeur par défaut est `''`, deux guillemets simples) n’est entrée, tous les liens externes sont suivis.
+  Pour spécifier les liens externes à suivre, tapez entièrement ou partiellement l’URL du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples. Si aucune valeur (la valeur par défaut est `''`, deux guillemets simples) n’est entrée, tous les liens externes sont suivis.
 
 * **Filtres internes**
 Définit des filtres pour apparier les URL des liens internes. Lorsque le lien cible des URL qui correspondent à ce filtre, le lien n’est pas suivi. La valeur par défaut est une commande JavaScript qui renvoie le nom d’hôte de l’URL pour l’adresse de la fenêtre active.
 
-   Pour spécifier les liens internes qui ne sont pas suivis, tapez entièrement ou partiellement l’URL interne du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples.
+  Pour spécifier les liens internes qui ne sont pas suivis, tapez entièrement ou partiellement l’URL interne du lien cible. S’il y a plusieurs filtres, séparez-les par une virgule. Entourez les chaînes littérales par des guillemets simples.
 
   La valeur par défaut est `'javascript:,'+window.location.hostname`.
 
 * **Laisser la chaîne de requête**
-Inclut les paramètres URL lors de l’évaluation de correspondances avec des filtres internes et externes.
+Inclut les paramètres d’URL lors de l’évaluation de correspondances avec des filtres internes et externes.
 
   Procédez à l’activation pour inclure les paramètres d’URL lors de l’évaluation d’URL du lien cible par rapport aux filtres externes et internes.
 
@@ -121,14 +119,14 @@ Pour envoyer des données de variable avec des clics sur des liens :
 Pour envoyer des propriétés données variables avec des clics sur des liens :
 
 * **Événements de suivi des liens**
-Entrez les variables d’événement Adobe Analytics que vous voulez utiliser pour compter les clics sur les liens.
+Saisissez les variables d’événement Adobe Analytics à utiliser pour compter les clics sur les liens.
 
   S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
   La valeur par défaut de `None` signifie qu’aucun suivi d’événement n’a lieu.
 
 * **Variables de suivi des liens**
-Entrez les variables Adobe Analytics à envoyer à Adobe Analytics lorsque les visiteurs cliquent sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
+Saisissez les variables Adobe Analytics à envoyer à Adobe Analytics lorsque l’utilisateur clique sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
   La valeur par défaut de `None` signifie qu’aucune donnée de variable n’est envoyée.
 

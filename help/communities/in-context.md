@@ -1,6 +1,6 @@
 ---
-title: Modération dans le contexte
-description: Découvrez comment les administrateurs et les membres de communauté approuvés peuvent effectuer des actions de modérateur dans les communautés Adobe Experience Manager.
+title: Modération en contexte
+description: Découvrez comment les administrateurs et administratrices et les membres de communautés de confiance peuvent effectuer des actions de modération dans les communautés Adobe Experience Manager.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,158 +11,156 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
-
 ---
+# Modération en contexte {#in-context-moderation}
 
-# Modération dans le contexte {#in-context-moderation}
+Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de confiance de la communauté directement sur la page publiée sur laquelle le contenu de la communauté a été publié.
 
-Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée où le contenu de la communauté a été publié.
-
-Lors de l’utilisation d’une [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin de permettre l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
+Lors de l’utilisation d’une [console de modération](moderation.md), les informations affichées pour le contenu comprennent un lien vers la page publiée pour permettre l’accès à des actions de modération supplémentaires disponibles lors de la modération en contexte.
 
 ## Actions de modération {#moderation-actions}
 
-Consultez la présentation de la modération pour obtenir une description des [actions de modération](moderate-ugc.md#moderation-actions).
+Consultez la présentation de la modération pour obtenir une description des [&#x200B; actions de modération &#x200B;](moderate-ugc.md#moderation-actions).
 
-## Interface utilisateur de la modération {#moderation-ui}
+## Interface utilisateur de modération {#moderation-ui}
 
-L’interface utilisateur présentée au modérateur sur l’instance de publication se trouve dans la boîte de dialogue pour la publication et la gestion du contenu généré par l’utilisateur. Les éléments de l’interface utilisateur sont déterminés par l’état du visiteur du site, qu’ils soient ou non...
+L’interface utilisateur présentée au modérateur sur l’instance de publication se trouve dans la boîte de dialogue de publication et de gestion du contenu généré par l’utilisateur. Les éléments de l’interface utilisateur sont déterminés par le statut du visiteur du site, qu’il s’agisse de...
 
-1. Le membre qui a publié le contenu.
-1. Un membre modérateur approuvé.
+1. Membre qui a publié le contenu.
+1. Un modérateur de membre de confiance.
 1. Un administrateur.
-1. Connecté, mais pas un administrateur, un modérateur ni un auteur du contenu.
+1. Connecté, mais pas d’administrateur, de modérateur ni d’auteur du contenu.
 1. Non connecté.
 
 ## Exemple {#example}
 
-À l’aide du site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [prise en main d’AEM Communities](getting-started.md), il est possible de configurer un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement Publish. Voir ci-dessous.
+À l’aide du site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [Prise en main d’AEM Communities](getting-started.md), il est possible de configurer un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication. Voir ci-dessous.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) a été identifié en tant que membre de la communauté de confiance en l’ajoutant au groupe de modérateurs de la communauté lors de la création du site.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) a été identifié comme un membre de confiance de la communauté en l&#39;ajoutant au groupe de modérateurs-engagement communautaire lors de la création du site.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) peut être ajouté en tant que membre du groupe community-engage-members à l’aide de la [console Membres](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) peut être ajoutée en tant que membre du groupe des membres de l’engagement communautaire à l’aide de la console [Membres](members.md).
 
-Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez la page [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
+Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez [Gestion des utilisateurs et groupes d’utilisateurs](users.md).
 
-### Création de publications de forum {#create-the-forum-posts}
+### Créer les publications du forum {#create-the-forum-posts}
 
 * Se connecter en tant que Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-   * Sélectionner un forum
-   * Sélectionner Nouveau Post
-   * Saisie de l’objet
+  * Sélectionner un forum
+  * Sélectionner une nouvelle publication
+  * Saisir l’objet
 
-     Quand changer le nectar dans le mangeur d&#39;oiseaux Humming
+    Quand changer le nectar dans la nourrice pour oiseaux
 
-   * Entrez le texte du corps
+  * Saisir le texte du corps
 
-     Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire aux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Dois-je le changer plus tôt ?
+    Je n&#39;ai pas eu beaucoup de succès lorsque j&#39;accroche une mangeoire pour colibris chaque année. On dirait qu&#39;ils viennent un jour ou deux, c&#39;est tout. Je le change une fois par semaine, c&#39;est trop long ? Dois-je le changer plus tôt ?
 
-   * Sélectionner Post
-   * Sélectionner Déconnexion
+  * Sélectionner une publication
+  * Sélectionner Déconnexion
 
-* Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonald@mailinator.com)
+* Se connecter en tant qu&#39;Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-   * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
-   * Saisissez le commentaire correspondant à Post Reply
+  * Sélectionner un forum
+  * Pour le sujet Colibri, sélectionnez Lire la suite
+  * Saisir le commentaire pour Publier la réponse
 
-     Je change la mienne une fois par semaine et je les reçois de mai à octobre.
+    Je change les miennes une fois par semaine et je les reçois de mai à octobre.
 
-   * Sélectionner une réponse
-   * Sélectionner Déconnexion
+  * Sélectionner la réponse
+  * Sélectionner Déconnexion
 
-* Connectez-vous en tant qu’Andrew Schaeffer (andrew.schaeffer@trashymail.com)
+* Se connecter en tant que Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-   * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
-   * Saisissez le commentaire correspondant à Post Reply
+  * Sélectionner un forum
+  * Pour le sujet Colibri, sélectionnez Lire la suite
+  * Saisir le commentaire pour Publier la réponse
 
-     Je vends du nectar et des mangeoires - rendez-vous sur https://my.viral.url/
+    Je vends du nectar et des aliments pour animaux - visitez https://my.viral.url/
 
-   * Sélectionner une réponse
-   * Sélectionner Déconnexion
+  * Sélectionner la réponse
+  * Sélectionner Déconnexion
 
-### Visiteur anonyme du site (#5) {#anonymous-site-visitor}
+### Visiteur de site anonyme (#5) {#anonymous-site-visitor}
 
-Vous trouverez ci-dessous un aperçu du forum consulté par un visiteur du site qui n’est pas connecté (5).
+Voici une vue du forum vue par un visiteur du site qui n’est pas connecté (5).
 
-Un visiteur anonyme du site peut uniquement afficher le forum, mais ne peut pas publier de contenu, ni effectuer d’actions de modération.
+Un visiteur anonyme du site peut uniquement consulter le forum, mais ne peut publier aucun contenu ni effectuer aucune action de modération.
 
 ![community-forum-visitor](assets/community-forum-visitor.png)
 
 ### Nouveau membre (#4) {#new-member}
 
-Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la [console Membres](members.md), puis déconnectez-vous.
+En mode de création, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la console [Members](members.md), puis déconnectez-vous.
 
-Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication colibri.
+Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au fil en sélectionnant `Forum`, puis `Read more` pour le post colibri.
 
 Remarque :
 
 * Boyd n&#39;a pas participé au forum.
 * Boyd ne peut rien supprimer.
-* Boyd est connecté et peut répondre ou marquer le contenu.
+* Le corps est connecté et peut répondre ou marquer le contenu.
 
-Have Boyd sélectionnez Flag pour marquer le contenu publié par Andrew.
+Demandez à Boyd de sélectionner Indicateur pour marquer le contenu publié par Andrew.
 
 Déconnexion
 
-![community-forum-member](assets/community-forum-member.png)
+![membre du forum de la communauté](assets/community-forum-member.png)
 
 ### Administrateur (#3) {#administrator}
 
-Connectez-vous en tant qu’administrateur (admin) et accédez au fil en sélectionnant Forum, puis Lire plus pour une publication.
+Connectez-vous en tant qu’administrateur (admin) et accédez au fil en sélectionnant Forum, puis En savoir plus pour une publication.
 
 Remarque :
 
-* L’administrateur peut marquer, supprimer, modifier, refuser, couper, fermer, épingler, fonction.
+* L’administrateur peut marquer, supprimer, modifier, refuser, couper, fermer, épingler, mettre en évidence.
 * L’administrateur peut sélectionner Administration pour accéder à la console de modération.
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement Publish.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
-Le filtre de recherche est un panneau latéral qui bascule entre ouverture et fermeture.
+Le filtre de recherche est un panneau latéral qui permet d’activer ou de désactiver l’ouverture et la fermeture.
 
-Déconnectez-vous.
+Déconnectez-Vous.
 
-![modération-console-publication](assets/moderation-console-publish.png)
+![modération-console-publish](assets/moderation-console-publish.png)
 
 ### Modérateur de la communauté (#2) {#community-moderator}
 
-Connectez-vous en tant qu’Aaron McDonald (`aaron.mcdonal@mailinator.com`), un modérateur de la communauté, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication colibri.
+Connectez-vous en tant qu&#39;Aaron McDonald (`aaron.mcdonal@mailinator.com`), un modérateur de la communauté, et accédez au fil en sélectionnant Forum, puis Read more pour le post colibri.
 
 Remarque :
 
 * Aaron peut répondre, supprimer, modifier ou refuser sa propre publication.
 * Aaron peut également Marquer/Autoriser, Répondre, Supprimer, Modifier, Refuser tout autre contenu.
-* Aaron peut couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérait.
+* Aaron peut Couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérera.
 * Aaron peut sélectionner Administration pour accéder à la console de modération.
 
-![community-forum-modérator](assets/community-forum-moderator.png)
+![communauté-forum-modérateur](assets/community-forum-moderator.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement Publish.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
 
-Notez que, pour un modérateur de communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
+Notez que, pour un modérateur de la communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 
-Notez que le modérateur de la communauté dispose des mêmes options que l’administrateur (l’image est avec la barre latérale de recherche activée), mais aucun accès aux autres consoles d’AEM.
+Notez que le modérateur de la communauté dispose des mêmes options que l’administrateur (l’image est avec la barre latérale de recherche activée et fermée), mais n’a pas accès aux autres consoles AEM.
 
-Déconnectez-vous.
+Déconnectez-Vous.
 
-![modérator-access](assets/moderator-access.png)
+![accès-modérateur](assets/moderator-access.png)
 
 ### Auteur de contenu (#1) {#content-author}
 
-Connectez-vous en tant que Rebekah Larsen (`rebekah.larsen@mailinator.com`), membre de la communauté qui a démarré le fil, et accédez au fil en sélectionnant Forum, puis En savoir plus pour la publication de colibri.
+Connectez-vous en tant que Rebekah Larsen (`rebekah.larsen@mailinator.com`), un membre de la communauté qui a démarré le fil, et accédez au fil en sélectionnant Forum, puis Lire la suite pour le post colibri.
 
 Remarque :
 
 * Rebekah peut supprimer ou modifier sa propre publication.
-* Rebekah peut également répondre ou marquer d’autres contenus.
+* Rebekah peut également répondre à d’autres contenus ou les signaler.
 * Rebekah ne peut pas accéder à la console de modération.
 
 ![community-forum-author](assets/community-forum-author.png)

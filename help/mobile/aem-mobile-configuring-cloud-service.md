@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1288'
 ht-degree: 1%
-
 ---
-
 # Configuration d’Adobe Target Cloud Service {#configuring-adobe-target-cloud-service}
 
 {{ue-over-mobile}}
@@ -26,7 +24,7 @@ ht-degree: 1%
 
 Plusieurs étapes doivent être franchies avant que les auteurs de contenu puissent commencer à générer du contenu ciblé pour les applications mobiles : il faut obtenir l’ensemble approprié d’autorisations pour les utilisateurs et les groupes, créer des services cloud, configurer l’application pour l’activité et enfin générer le contenu.
 
-À l’avenir, nous partons du principe que l’[application de référence hybride AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
+À l’avenir, nous partons du principe que l’[application de référence hybride &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
 
 ## Autorisations {#permissions}
 
@@ -40,47 +38,47 @@ Pour que le contenu ciblé fonctionne pour les applications mobiles, deux servic
 
 ## Adobe Target Cloud Service {#adobe-target-cloud-service}
 
-Dans le tableau de bord AEM Mobile, recherchez Gérer les Cloud Service et cliquez sur le bouton + .
+Dans le tableau de bord AEM Mobile, localisez Gérer les services cloud et cliquez sur le bouton + .
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-Dans l’assistant Ajouter un Cloud Service , sélectionnez la carte de service cloud « Adobe Target », puis cliquez sur Suivant.
+Dans l’assistant Ajouter Cloud Service , sélectionnez la vignette de service cloud « Adobe Target », puis cliquez sur Suivant.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
 Dans la liste déroulante Sélectionner une configuration , vous pouvez créer une configuration ou en sélectionner une existante. Pour créer une configuration, sélectionnez Créer une configuration dans la liste déroulante. Saisissez un titre pour la configuration Target. Saisissez le code client, l’adresse e-mail et le mot de passe associés à votre compte Target. Si vous ne connaissez pas les valeurs de ces champs, contactez l’assistance technique d’Adobe Target. Cliquez sur le bouton « Vérifier » pour valider les informations d’identification. Une fois la vérification effectuée, cliquez sur le bouton Envoyer pour créer le service cloud.
 
-Le service cloud qui est créé est automatiquement associé à l’application mobile via l’assistant. La valeur de la propriété cq:cloudserviceconfigs est définie sur le nœud jcr:content du nœud du groupe d’applications. Pour l’exemple d’application hybride, il est défini sur /content/mobileapps/hybride-reference-app/jcr:content avec la valeur pointant vers le nœud de framework généré automatiquement qui se trouve dans /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework. Le nœud de framework possède deux propriétés définies par défaut : le genre et l’âge. Le framework est uniquement utilisé par la prévisualisation AEM et n’a aucun impact sur l’appareil.
+Le service cloud qui est créé est automatiquement associé à l’application mobile via l’assistant. La valeur de la propriété cq:cloudserviceconfigs est définie sur le nœud jcr:content du nœud du groupe d’applications. Pour l’exemple d’application hybride, il est défini sur /content/mobileapps/hybride-reference-app/jcr:content avec la valeur pointant vers le nœud de framework généré automatiquement figurant dans /etc/cloudservices/testandtarget/adobe-target—aem-apps/framework. Le nœud de framework possède deux propriétés définies par défaut : le genre et l’âge. Le framework est uniquement utilisé par la prévisualisation AEM et n’a aucun impact sur l’appareil.
 
-Une fois l’assistant terminé, la mosaïque Gérer le Cloud Service contient le service cloud Target, mais elle contient un avertissement concernant un compte Adobe Mobile Service manquant.
+Une fois l’assistant terminé, la mosaïque Gérer Cloud Service contient le service cloud Target, mais elle contient un avertissement concernant un compte Adobe Mobile Service manquant.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ## Adobe Mobile Service {#adobe-mobile-service}
 
-Il est également nécessaire de lier un compte AMS (Adobe Mobile Services) à l’application. Le service AMS fournit le fichier ADBMobileConfig.json requis qui contient les informations de code client Target. Avant de créer une association avec le compte AMS, le compte AMS doit être modifié par un utilisateur disposant d’autorisations sur AMS.
+Il est également nécessaire de lier un compte Adobe Mobile Services (AMS) à l’application. Le service AMS fournit le fichier ADBMobileConfig.json requis qui contient les informations de code client Target. Avant de créer une association avec le compte AMS, le compte AMS doit être modifié par un utilisateur disposant d’autorisations sur AMS.
 
 ### Code client {#client-code}
 
-Pour vous connecter aux services AMS, rendez-vous sur [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, rendez-vous sur [&#128279;](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-Maintenant que le code client a été associé à l’application mobile, lorsque le service cloud AMS est configuré via le tableau de bord mobile d’Adobe, les paramètres des paramètres du service seront diffusés via le fichier ADBMobileConfig.json.
+Maintenant que le code client a été associé à l’application mobile, lorsque le service cloud AMS est configuré via le tableau de bord mobile Adobe, les paramètres des paramètres du service seront diffusés via le fichier ADBMobileConfig.json.
 
-### Adobe Mobile Service Pourrait Servir {#adobe-mobile-service-could-service}
+### Adobe Mobile Service Could Service {#adobe-mobile-service-could-service}
 
-Maintenant qu’AMS est configuré, il est temps d’associer l’application mobile dans le tableau de bord mobile d’Adobe. Dans le tableau de bord AEM Mobile, recherchez Gérer les Cloud Service et cliquez sur le bouton + .
+Maintenant qu&#39;AMS est configuré, il est temps d&#39;associer l&#39;application mobile dans le tableau de bord mobile Adobe. Dans le tableau de bord AEM Mobile, localisez Gérer les services cloud et cliquez sur le bouton + .
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-Sélectionnez la carte Adobe Mobile Services et cliquez sur Suivant.
+Sélectionnez la vignette Adobe Mobile Services , puis cliquez sur Suivant.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 À l’étape de l’assistant Créer ou Sélectionner , sélectionnez le menu déroulant Service mobile et sélectionnez l’entrée Créer une configuration . Indiquez un titre, une société, un nom d’utilisateur et un mot de passe, puis sélectionnez le centre de données approprié. Si vous ne connaissez pas ces valeurs, contactez votre administrateur Adobe Mobile Service pour les obtenir. Une fois tous les champs remplis, cliquez sur **Vérifier**. Le processus de vérification va dans AMS et vérifie les informations d’identification du compte. Une fois la validation réussie, une liste d’applications mobiles est renseignée dans laquelle vous sélectionnez l’application mobile associée dans la liste déroulante. Cliquez sur le bouton Envoyer pour terminer l’assistant. Le processus peut prendre un certain temps pour obtenir les données de configuration et toute analyse associée à l’application. Une fois le processus terminé, cliquez sur **Terminé** dans la boîte de dialogue modale pour revenir au tableau de bord mobile d’Adobe.
 
-Pour revenir au tableau de bord mobile, la mosaïque Gérer les Cloud Service contient le service cloud AMS. En outre, la mosaïque Analyser les mesures est remplie de rapports de cycle de vie.
+De retour au tableau de bord mobile, la mosaïque Gestion des services cloud contient le service cloud AMS. En outre, la mosaïque Analyser les mesures est remplie de rapports de cycle de vie.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -96,9 +94,9 @@ Une fois que le chemin d’accès des activités est défini dans la propriété
 
 ### Mode de rendu {#render-mode}
 
-Le gestionnaire mobileappoffers est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec une valeur de *publish* définie sur le nœud cq:ContentSyncConfig. Le gestionnaire mobileappoffers référence renderMode et, s’il est défini sur publish, modifie l’identifiant de mbox qui est créé. Par défaut, les mbox créées par AEM sont dotées de la valeur —author ajoutée à l’identifiant de mbox. Cela identifie que l&#39;activité n&#39;a pas été publiée et doit utiliser la campagne dépubliée pour les résolutions d&#39;offre.
+Le gestionnaire mobileappoffers est configuré différemment pour les configurations de publication et de développement. Pour les configurations de publication, il existe une propriété appelée *renderMode* avec une valeur de *publish* définie sur le nœud cq:ContentSyncConfig. Le gestionnaire mobileappoffers référence renderMode et, s’il est défini sur publish, modifie l’identifiant de mbox qui est créé. Par défaut, la valeur —author est ajoutée à l’identifiant de mbox pour les mbox créées par AEM. Cela identifie que l&#39;activité n&#39;a pas été publiée et doit utiliser la campagne dépubliée pour les résolutions d&#39;offre.
 
-Lorsque le contenu est évalué via le tableau de bord mobile d’Adobe, le contenu évalué est considéré comme du contenu prêt pour la production et est rendu via la configuration de synchronisation de contenu hors développement. Avec ce rendu, —author est supprimé de tous les identifiants de mbox et une activité publiée est disponible sur le serveur Target. Avant de tester le contenu évalué, assurez-vous que l’activité est publiée.
+Lorsque le contenu est évalué via le tableau de bord mobile Adobe, le contenu évalué est considéré comme du contenu prêt pour la production et est rendu via la configuration de synchronisation de contenu hors développement. Avec ce rendu, —author est supprimé de tous les identifiants de mbox et une activité publiée est disponible sur le serveur Target. Avant de tester le contenu évalué, assurez-vous que l’activité est publiée.
 
 ## Création de contenu {#creating-content}
 

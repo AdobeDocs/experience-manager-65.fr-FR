@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1487'
 ht-degree: 100%
-
 ---
-
 # Exporter des fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Vous pouvez exporter les [Fragments d’expérience](/help/sites-authoring/experience-fragments.md), créés dans Adobe Experience Manager (AEM), vers Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
@@ -187,12 +185,12 @@ Pour éviter de telles situations :
 
   Le message d’erreur apparu dans AEM n’empêche pas à l’utilisateur de forcer la suppression du fragment d’expérience. Lorsque le fragment d’expérience est supprimé :
 
-   * l’offre Target qui utilise le fragment d’expérience AEM peut souffrir d’un comportement indésirable ;
+  * l’offre Target qui utilise le fragment d’expérience AEM peut souffrir d’un comportement indésirable ;
 
-      * l’offre effectue toujours le rendu, car le code HTML du fragment d’expérience a été transmis à Target ;
-      * les références du fragment d’expérience peuvent ne pas fonctionner correctement si les ressources référencées ont également été supprimées dans AEM.
+    * l’offre effectue toujours le rendu, car le code HTML du fragment d’expérience a été transmis à Target ;
+    * les références du fragment d’expérience peuvent ne pas fonctionner correctement si les ressources référencées ont également été supprimées dans AEM.
 
-   * L’apport de toute modification supplémentaire au fragment d’expérience est impossible, car le fragment d’expérience n’existe plus dans AEM.
+  * L’apport de toute modification supplémentaire au fragment d’expérience est impossible, car le fragment d’expérience n’existe plus dans AEM.
 
 
 ## Suppression de bibliothèques clientes des fragments d’expérience exportés vers Target {#removing-clientlibs-from-fragments-exported-target}

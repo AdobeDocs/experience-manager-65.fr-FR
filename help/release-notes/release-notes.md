@@ -1,18 +1,16 @@
 ---
-title: 'Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager] '
-description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
+title: Notes de mise à jour d’[!DNL Adobe Experience Manager] 6.5
+description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '7444'
-ht-degree: 21%
-
+source-wordcount: '7679'
+ht-degree: 20%
 ---
-
 # Notes de mise à jour du dernier pack de services [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
@@ -64,6 +62,8 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
   > Pour mettre à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23, reportez-vous à :
   > * [Mettez à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms sur JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) pour les environnements autonomes.
   > * [Mettez à niveau le cluster JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) pour les environnements de cluster.
+
+* **Invite d’informations d’identification du gestionnaire de configuration (LCM) en mode Express :** lorsque vous configurez AEM Forms sur JEE à l’aide du gestionnaire de configuration (LCM) en mode Express, LCM affiche désormais un nouvel écran vous invitant à saisir les informations d’identification de l’administrateur AEM lors de la configuration au lieu d’utiliser les informations d’identification par défaut intégrées. Cette modification est disponible via le [correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0. Pour connaître les étapes de configuration, voir [Installation et déploiement d’AEM Forms sur JEE à l’aide de JBoss clé en main](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_fr). (FORMS-26365)
 
 ## Correction de problèmes dans le pack de services 25 {#fixed-issues}
 
@@ -461,13 +461,13 @@ Pour obtenir des instructions sur l’installation du pack de services pour Expe
 >
 >La fonctionnalité de formulaires adaptatifs, disponible dans [AEM 6.5 QuickStart](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), est conçue à des fins d’exploration et d’évaluation uniquement. Pour une utilisation à des fins de production, il est essentiel d’obtenir une licence valide pour AEM Forms, car la fonctionnalité de formulaires adaptatifs nécessite une licence appropriée.
 
-### Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager{#install-aem-graphql-index-add-on-package}
+### Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager{#install-aem-graphql-index-add-on-package}
 
 La clientèle qui utilise GraphQL doit installer le [fragment de contenu d’Experience Manager avec le package d’index GraphQL 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip).
 
-Vous pouvez ainsi ajouter la définition d’index requise selon les fonctionnalités que vous utilisez réellement.
+Vous pouvez ainsi ajouter la définition d’index requise selon les fonctionnalités qu’ils utilisent réellement.
 
-L’échec de l’installation de ce package peut entraîner des requêtes GraphQL lentes ou en échec.
+L’échec de l’installation de ce package peut entraîner des requêtes GraphQL lentes ou qui échouent.
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 * Les utilisateurs peuvent renommer un dossier dans une hiérarchie dans [!DNL Assets] et publier un dossier imbriqué dans [!DNL Brand Portal]. Toutefois, le titre du dossier n’est pas mis à jour dans [!DNL Brand Portal] jusqu’à ce que le dossier racine soit republié.
 
 * Les erreurs et messages d’avertissement suivants peuvent s’afficher lors de l’installation d’[!DNL Experience Manager] 6.5.x.x :
-  * « Lorsque l’intégration d’Adobe Target est configurée dans [!DNL Experience Manager] à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. » Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
+  * « Lorsque l’intégration d’Adobe Target est configurée dans [!DNL Experience Manager] à l’aide de l’API Target Standard (authentification IMS), l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. » Au lieu du type « fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
   * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
   * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
   * `com.adobe.granite.maintenance.impl.TaskScheduler` : aucune fenêtre de maintenance n’a été trouvée sur `granite/operations/maintenance`.
@@ -592,7 +592,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par le bundle `org.apache.servicemix.bundles.rhino` a un nouveau comportement d’hébergement. Les scripts qui utilisent le mode strict (`use strict;`) doivent déclarer leurs variables correctes. Dans le cas contraire, elles ne sont pas exécutées et finissent par générer une erreur d’exécution.
 
-* L’installation du balisage du contenu d’usine par le biais d’un package de mise à jour officiel réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Cette action est vraie pour les packs de services, les packs de services de sécurité, les packs de correctifs, les packs de correctifs cumulatifs, les correctifs, etc. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
+* L’installation du balisage du contenu d’usine par le biais d’un package de mise à jour officiel réinitialise la propriété languages du nœud `/content/cq:tags` par défaut. Cette action est vraie pour les packs de services, les packs de services de sécurité, les packs de fonctionnalités étendues, les packs de fonctionnalités cumulatives, les correctifs, etc. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
 
 ### Problèmes connus pour AEM Sites {#known-issues-aem-sites-6525}
 
@@ -607,6 +607,10 @@ Fragments de contenu : la prévisualisation échoue en raison de la protection�
 Un correctif logiciel peut être téléchargé et installé pour les problèmes suivants. Pour résoudre ces problèmes, vous pouvez [télécharger et installer le correctif](/help/release-notes/aem-forms-hotfix.md) :
 
 * **NPR-44100** Après l’installation du pack de services 25 d’AEM 6.5 sur des déploiements WAR/JEE (y compris AEM Forms sur JEE), le lot `com.adobe.cq.screens.sessions` reste à l’état Installé et ne devient jamais Actif. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
+* **FORMS-26802** Après le renforcement de l’authentification SOAP SDK, LCM Configuration Manager, Workbench et Designer ne parviennent pas à se connecter au serveur AEM Forms on JEE avec le `ALC-LCM-200-001` d’erreur, car le point d’entrée `/soap/sdk` rejette les requêtes non authentifiées. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
+* **FORMS-26679** Dans AEM Forms Document Security, les cookies d’authentification sont ignorés après une redirection de Microsoft Entra ID (MFA), provoquant une erreur « Les cookies peuvent ne pas être activés » lors de l’ouverture de documents protégés par une politique. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
+* **FORMS-26617** Sur AEM Forms on JEE avec WebLogic, la configuration de la base de données via Configuration Manager échoue avec « Aucun pilote approprié trouvé » lors de l’utilisation du pilote Microsoft SQL Server JDBC 12.10.0. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
+* Les PDF **FORMS-27869** s’ouvrent lentement après l’installation de la dernière version d’AEM Forms 6.5. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0.
 * **Les déploiements FORMS-23491** AEM Forms 6.5.24.0 JEE (JBoss, WebLogic, WebSphere) sont affectés par CVE-2025-64775, une vulnérabilité de déni de service Apache Struts dans le traitement des requêtes multipartie. Pour résoudre ce problème, [téléchargez et installez le correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.24.0.
 * **FORMS-14926** Après l’installation du pack de services 21 (6.5.21.0) d’AEM Forms JEE, si vous constatez des entrées en double de fichiers JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` dans le dossier `<AEM_Forms_Installation>/lib/caching/lib`, procédez comme suit pour résoudre le problème :
 
@@ -628,7 +632,7 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 
 ## Sites web à accès limité{#restricted-sites}
 
-Ces sites web sont disponibles uniquement pour les clientes et clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
+Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
 * [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).

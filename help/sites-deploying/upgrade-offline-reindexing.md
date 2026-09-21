@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1384'
 ht-degree: 100%
-
 ---
-
 # Utilisation de la réindexation hors ligne pour réduire les temps d’arrêt pendant une mise à niveau {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
 ## Présentation {#introduction}
@@ -107,7 +105,7 @@ Pour créer l’index hors ligne, procédez comme suit :
 
 **1. Générez des définitions d’index Oak Lucene pour la version d’AEM cible**.
 
-Videz les définitions d’index existantes. Les définitions d’index qui ont fait l’objet de modifications ont été générées à l’aide du lot de référentiel Granite Adobe de la version AEM cible et de oak-run.
+Videz les définitions d’index existantes. Les définitions d’index qui ont fait l’objet de modifications ont été générées à l’aide du bundle de référentiel Granite Adobe de la version AEM cible et de oak-run.
 
 Pour vider la définition d’index de l’instance **source** AEM, exécutez la commande suivante :
 
@@ -121,7 +119,7 @@ java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index
 
 Où `datastore path` et `nodestore path` sont issus de l’instance **source** AEM.
 
-Ensuite, générez des définitions d’index à partir de la version **cible** AEM à l’aide du lot de référentiel Granite de la version cible.
+Ensuite, générez des définitions d’index à partir de la version **cible** AEM à l’aide du bundle de référentiel Granite de la version cible.
 
 ```
 java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabbit.oak.index.IndexDefinitionUpdater --in indexing-definitions_source.json --out merge-index-definitions_target.json --initializer com.adobe.granite.repository.impl.GraniteContent
@@ -129,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
->Le processus de création de définition d’index ci-dessus est pris en charge uniquement à partir de `oak-run-1.12.0` et des versions supérieures. Le ciblage est effectué à l’aide du lot de référentiel Granite `com.adobe.granite.repository-x.x.xx.jar`.
+>Le processus de création de définition d’index ci-dessus est pris en charge uniquement à partir de `oak-run-1.12.0` et des versions supérieures. Le ciblage est effectué à l’aide du bundle de référentiel Granite `com.adobe.granite.repository-x.x.xx.jar`.
 
 Les étapes ci-dessus créent un fichier JSON appelé `merge-index-definitions_target.json` qui est la définition d’index.
 

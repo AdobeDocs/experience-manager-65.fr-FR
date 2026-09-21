@@ -13,9 +13,7 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 100%
-
 ---
-
 # Utilisation des workflows{#working-with-workflows}
 
 Les workflows d’AEM vous permettent d’automatiser une série d’étapes exécutées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un workflow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :

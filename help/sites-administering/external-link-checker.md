@@ -7,11 +7,9 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '992'
 ht-degree: 100%
-
 ---
-
 # Vérificateur de lien externe {#the-link-checker}
 
 Les auteurs de contenu ne doivent pas avoir besoin de valider chaque lien qu’ils incluent dans leurs pages de contenu.
@@ -72,14 +70,14 @@ Pour utiliser le Vérificateur de lien externe, procédez comme suit :
 Les informations suivantes s’affichent :
 
 * **Statut** - Le statut de validation du lien, qui peut être l’un des suivants :
-   * **Valide** - Le lien externe est accessible par le vérificateur de liens.
-   * **En attente** - Le lien externe a été ajouté au contenu du site, mais n’a pas encore été validé par le vérificateur de liens.
-   * **Non valide** - Le vérificateur de liens ne peut pas accéder au lien externe.
+  * **Valide** - Le lien externe est accessible par le vérificateur de liens.
+  * **En attente** - Le lien externe a été ajouté au contenu du site, mais n’a pas encore été validé par le vérificateur de liens.
+  * **Non valide** - Le vérificateur de liens ne peut pas accéder au lien externe.
 * **URL** - Lien externe
 * **Référent** - Page de contenu contenant le lien externe
-   * Celle-ci n’est renseignée que [si elle est configurée.](#configuring)
+  * Celle-ci n’est renseignée que [si elle est configurée.](#configuring)
 * **Dernière vérification** - Dernière fois que le vérificateur de lien a validé le lien externe
-   * La fréquence de vérification des liens [est configurable.](#configuring)
+  * La fréquence de vérification des liens [est configurable.](#configuring)
 * **Dernier statut** - Dernier code de statut HTML renvoyé lors de la dernière vérification du lien effectuée sur le lien externe
 * **Dernier disponible** - Temps écoulé depuis la dernière fois que le lien était disponible pour le vérificateur de liens
 * **Dernier accès** - Temps écoulé depuis le dernier accès à la page contenant le lien externe dans l’interface de création

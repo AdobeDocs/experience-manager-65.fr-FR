@@ -1,21 +1,23 @@
 ---
 title: Gestionnaires d’application prêts à l’emploi
-description: Consultez cette page pour en savoir plus sur les gestionnaires prêts à l’emploi d’Adobe PhoneGap Enterprise avec AEM.
+
+description: Consultez cette page pour en savoir plus sur les gestionnaires prêts à l’emploi pour Adobe PhoneGap Enterprise avec AEM.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # Gestionnaires d’application prêts à l’emploi{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -43,17 +45,17 @@ Les listes suivantes répertorient les gestionnaires d’application prêts à l
 
 * ***includeImages - Boolean*** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
 
-   * Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion.
+  * Par défaut, seuls les composants d’image dont le type de ressource est foundation/components/image sont pris en compte pour l’inclusion.
 
 * ***includeVideos - Boolean*** - La propriété booléenne facultative détermine si les vidéos doivent être incluses. La valeur par défaut est *true*.
 
 * ***includeModifiedPagesOnly - Booléen*** - Si la valeur est false ou omise, effectuer le rendu de toutes les pages et vérifier les mises à jour dans le rendu. Si la valeur est true, la base diffère selon les modifications apportées à une page lastModified.
-* ***+ réécriture (nœud)***
+* ***+ rewrite (nœud)***
   ***- relativeParentPath - String*** - Chemin d’écriture de tous les autres chemins d’accès relatifs à.
 
 >[!NOTE]
 >
->Le type de ressource des composants image et vidéo affectés par ce gestionnaire est défini en configurant les propriétés du *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*Service OSGi MobilePagesUpdateHandler*.
+>Le type de ressource des composants image et vidéo affectés par ce gestionnaire est défini en configurant les propriétés du service OSGi *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler*.
 
 **mobilepageassets** Collecte les ressources de page d’application.
 
@@ -86,7 +88,7 @@ Ce gestionnaire doit être ajouté à toute configuration de synchronisation de 
 
 **mobilecontentpackageslisting** Répertorie le package de contenu AEM dans une application donnée et l’URL du serveur vers lequel effectuer les demandes de mise à jour. Il est utilisé par le côté client sur l’appareil pour demander des mises à jour de contenu
 
-Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’interpréteur d’applications AEM (nœud avec page-type=app-instance)
+Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’environnement d’application AEM (nœud avec page-type=app-instance).
 
 * ***type - String - mobilecontentpackageslisting***
 * ***path &#x200B;**-**String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance).
@@ -121,7 +123,7 @@ Le gestionnaire doit être utilisé sur la configuration de la synchronisation d
 
 **widgetconfig** comprend un fichier config.xml mis à jour qui fusionne toutes les modifications effectuées via le centre de commande avec un fichier config.xml fourni. Si ce gestionnaire n’est pas inclus, les détails de l’application qui sont modifiés via l’interface d’administration ne seront pas inclus dans le cache.
 
-Ce gestionnaire doit être utilisé sur une configuration ContentSync d’AEM App Shell (nœud avec pge-type=[app-instance]).
+Ce gestionnaire doit être utilisé sur une configuration ContentSync de Shell d’application AEM (nœud avec pge-type=[app-instance]).
 
 * ***type - Chaîne* - &#x200B;** widgetconfig
 * ***path &#x200B;**-**String*** - Chemin d’accès à un nœud enfant du shell de l’application (nœud avec pge-type=[app-instance]).
@@ -132,7 +134,7 @@ Ce gestionnaire doit être utilisé sur une configuration ContentSync d’AEM Ap
 
 Ces informations sont utilisées au moment de la compilation pour configurer le plug-in AMS pour la prise en charge analytique.
 
-Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’interpréteur d’applications AEM (nœud avec page-type=app-instance)
+Le gestionnaire doit être utilisé sur la configuration de la synchronisation du contenu de l’environnement d’application AEM (nœud avec page-type=app-instance).
 
 * ***type - Chaîne*** - mobileADBMobileConfigJSON
 * ***path - String*** - Chemin d’accès à un shell d’application (nœud avec pge-type=app-instance ou un RT qui étend /libs/mobileapps/core/components/instance)
@@ -140,9 +142,9 @@ Le gestionnaire doit être utilisé sur la configuration de la synchronisation d
 
 **notificationsconfig** Extrait les configurations de notifications requises sur l’appareil. Les propriétés sont extraites de la configuration de service cloud correspondante du service push associée à l’application.
 
-Les propriétés non AEM dans le nœud jcr:content du service cloud sont extraites et ajoutées au fichier JSON **pge-notifications-config.json** pour inclusion dans la racine www du contenu de l’application.
+Les propriétés non AEM dans le nœud jcr:content du service cloud sont extraites et ajoutées au fichier **pge-notifications-config.json** JSON pour être incluses dans la racine www du contenu de l’application.
 
-Les propriétés AEM sont celles dont le nom est espacé de « cq », « sling » ou « jcr ». D’autres propriétés peuvent être exclues à l’aide de la propriété « excludeProperties » sur le nœud de configuration de synchronisation de contenu .
+Les propriétés AEM sont celles dont le nom comporte un espacement « cq », « sling » ou « jcr ». D’autres propriétés peuvent être exclues à l’aide de la propriété « excludeProperties » sur le nœud de configuration de synchronisation de contenu .
 
 * ***type - Chaîne*** - notificationsconfig
 * ***excludeProperties - String[]*** - propriétés à exclure
@@ -152,9 +154,9 @@ Les propriétés AEM sont celles dont le nom est espacé de « cq », « sling �
 * ***type - Chaîne*** - contentsyncconfigcontent
 * ***path - String*** - Chemin d’accès à l’un des éléments suivants :
 
-   * une autre configuration ContentSync ;
-   * vers un package de contenu (utilisera sa propriété phonegap-exportTemplate pour trouver sa configuration ContentSync).
-   * vers une ressource mobile (le de app-content se trouve sous cette ressource et, si ces packages de contenu ont une propriété page-includeInBuild définie sur true, phonegap-exportTemplate est utilisé pour rechercher sa configuration ContentSync).
+  * une autre configuration ContentSync ;
+  * vers un package de contenu (utilisera sa propriété phonegap-exportTemplate pour trouver sa configuration ContentSync).
+  * vers une ressource mobile (le de app-content se trouve sous cette ressource et, si ces packages de contenu ont une propriété page-includeInBuild définie sur true, phonegap-exportTemplate est utilisé pour rechercher sa configuration ContentSync).
 
 * ***autoCreateFirstUpdateBeforeImport - Booléen*** - si vrai, créez une **mise à jour** initiale dans la configuration cible avant l’importation si elle n’existe pas déjà une fois
 
