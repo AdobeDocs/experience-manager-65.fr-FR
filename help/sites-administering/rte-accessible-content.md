@@ -101,7 +101,7 @@ L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la p
 
 ### Instructions détaillées {#step-by-step-instructions}
 
-1. Démarrez CRXDE Lite. Par exemple : [](http://localhost:4502/crx/de/)
+1. Démarrez CRXDE Lite. Par exemple : [&#128279;](http://localhost:4502/crx/de/)
 1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

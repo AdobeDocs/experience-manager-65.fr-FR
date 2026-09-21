@@ -131,7 +131,7 @@ Utilisez le service cloud PhoneGap pour créer votre application. Pour effectuer
 
 Créez une configuration PhoneGap Build afin de pouvoir utiliser les services PhoneGap Build depuis AEM. Indiquez le nom d&#39;utilisateur et le mot de passe du compte PhoneGap Build que vous utiliserez pour créer vos applications mobiles.
 
-1. Ouvrez la page Outils . ([](http://localhost:4502/tools.html)).
+1. Ouvrez la page Outils . ([&#128279;](http://localhost:4502/tools.html)).
 1. Dans la zone Opérations CQ, cliquez sur Services cloud.
 1. Cliquez sur le lien Configurer maintenant pour PhoneGap Build.
 
@@ -144,7 +144,7 @@ Créez une configuration PhoneGap Build afin de pouvoir utiliser les services Ph
 
 Envoyez vos ressources d’application à PhoneGap Build pour la compilation pour les différentes plateformes mobiles.
 
-1. Sur la page Applications mobiles, ouvrez votre application mobile. ([](http://localhost:4502/mobile.html/content/phonegap))
+1. Sur la page Applications mobiles, ouvrez votre application mobile. ([&#128279;](http://localhost:4502/mobile.html/content/phonegap))
 1. (Facultatif) Pour créer l’application pour des installations complètes, sélectionnez l’application et cliquez sur l’icône Effacer le cache .
 
    ![Icône Effacer le cache signalée par un symbole de lien rompu.](do-not-localize/chlimage_1-2.png)

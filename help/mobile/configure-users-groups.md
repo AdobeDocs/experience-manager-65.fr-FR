@@ -47,7 +47,7 @@ Les membres du groupe app-author sont chargés de la création du contenu de l�
 
    Ajouter des auteurs d’applications au groupe Auteurs
 
-1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).[
+1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’Admin Console utilisateur[&#128279;](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 

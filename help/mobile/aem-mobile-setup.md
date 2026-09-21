@@ -30,7 +30,7 @@ Pour configurer AEM Mobile et permettre à l’utilisateur de créer et de gére
 
 Pour commencer à configurer AEM Mobile, vous devez :
 
-* **Demander une clé API** : pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé API, remplissez le formulaire [](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire rempli au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Demander une clé API** : pour accéder à l’API On-Demand Services, vous devez demander une clé API. Pour demander la clé API, remplissez le formulaire [&#128279;](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire rempli au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Générer l’ID d’appareil et le jeton d’appareil** : une fois que vous avez reçu votre clé API, vous pouvez générer l’ID d’appareil et le jeton d’appareil. Accédez à `https://aex.aemmobile.adobe.com` et procédez comme suit :
 
@@ -121,7 +121,7 @@ Pour plus d’informations sur la création de rôles avec différentes autorisa
 >
 >La gestion du contenu de l’application nécessite un effort collectif de la part des développeurs, des auteurs de contenu et des administrateurs. Les auteurs manipulent les pages, qui sont à leur tour basées sur des modèles et des composants générés par les développeurs d’applications. Enfin, les administrateurs publient stratégiquement le contenu de l’application mise à jour. La configuration des groupes et des autorisations AEM définit leurs rôles dans le tableau de bord de l’application ou le Centre de contrôle.
 >
->Voir [Tableau de bord ](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Voir [Tableau de bord &#x200B;](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 Lorsque vous avez terminé de créer des rôles avec des autorisations différentes, par exemple pour la création d’applications ou pour la création et la publication de contenu, consultez [**Configuration de vos utilisateurs et groupes d’utilisateurs**](/help/mobile/aem-mobile-configure-users.md). Cela peut vous aider à configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
 

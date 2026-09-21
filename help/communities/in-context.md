@@ -22,7 +22,7 @@ Lors de l’utilisation d’une [console de modération](moderation.md), les inf
 
 ## Actions de modération {#moderation-actions}
 
-Consultez la présentation de la modération pour obtenir une description des [ actions de modération ](moderate-ugc.md#moderation-actions).
+Consultez la présentation de la modération pour obtenir une description des [&#x200B; actions de modération &#x200B;](moderate-ugc.md#moderation-actions).
 
 ## Interface utilisateur de modération {#moderation-ui}
 
@@ -120,7 +120,7 @@ Remarque :
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [ console de modération ](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
@@ -143,7 +143,7 @@ Remarque :
 
 ![communauté-forum-modérateur](assets/community-forum-moderator.png)
 
-Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [ console de modération ](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément du menu Administration afin de pouvoir accéder à la [&#x200B; console de modération &#x200B;](moderation.md) à partir de l’environnement de publication.
 
 Notez que, pour un modérateur de la communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 

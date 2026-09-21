@@ -26,7 +26,7 @@ La fonctionnalité de personnalisation de contenu d’AEM Mobile permet aux [aut
 
 Dans AEM, pour que les auteurs puissent commencer à créer ce contenu, les administrateurs et les développeurs doivent d’abord préparer l’environnement.
 
-Les [administrateurs ](#administrator) doivent établir une connexion entre AEM Mobile et l&#39;Cloud Service Adobe Target.
+Les [administrateurs &#x200B;](#administrator) doivent établir une connexion entre AEM Mobile et l&#39;Cloud Service Adobe Target.
 
 En attendant, les [développeurs](#developer) d’AEM Mobile doivent modifier leurs scripts existants pour faciliter la création de contenu ciblée.
 
@@ -34,7 +34,7 @@ En attendant, les [développeurs](#developer) d’AEM Mobile doivent modifier le
 
 Plusieurs étapes doivent être franchies avant que les auteurs de contenu puissent commencer à générer du contenu ciblé pour les applications mobiles : il faut obtenir l’ensemble approprié d’autorisations pour les utilisateurs et les groupes, créer des services cloud, configurer l’application pour l’activité et enfin générer le contenu.
 
-Cet article vous guide tout au long du processus de configuration de l’[application de référence hybride ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) pour le ciblage.
+Cet article vous guide tout au long du processus de configuration de l’[application de référence hybride &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) pour le ciblage.
 
 L’hypothèse pour l’avenir est que l’application de référence hybride AEM Mobile a été déployée avec succès et accessible via le tableau de bord AEM Mobile.
 
@@ -78,7 +78,7 @@ Il est également nécessaire de lier un compte Adobe Mobile Services (AMS) à l
 
 ### Code client {#client-code}
 
-Pour vous connecter aux services AMS, rendez-vous sur [](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile et cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, rendez-vous sur [&#128279;](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile et cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -193,7 +193,7 @@ Le dernier bit de code requis se trouve au bas de body.html. Ce bit de code rech
 
 ### Application de référence {#reference-application}
 
-Vous trouverez des exemples de head.html et body.html dans l’[Application de référence hybride ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) indiquant au développeur ou à la développeuse où placer les blocs de script dans les deux scripts.
+Vous trouverez des exemples de head.html et body.html dans l’[Application de référence hybride &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) indiquant au développeur ou à la développeuse où placer les blocs de script dans les deux scripts.
 
 ### Gestionnaires de synchronisation de contenu {#content-sync-handlers}
 
@@ -266,13 +266,13 @@ Lorsque l’auteur du contenu a terminé de créer du contenu pour l’applicati
 
 >[!NOTE]
 >
->L&#39;application de référence hybride [](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) possède la configuration par défaut du gestionnaire mobileappoffer. La propriété path dans l’exemple est vide, car elle dépend de l’emplacement de la campagne. Une fois qu’un auteur Campaign a créé une campagne, l’administrateur des applications doit associer la campagne au gestionnaire en spécifiant la propriété de chemin d’accès pour pointer vers la campagne.
+>L&#39;application de référence hybride [&#128279;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) possède la configuration par défaut du gestionnaire mobileappoffer. La propriété path dans l’exemple est vide, car elle dépend de l’emplacement de la campagne. Une fois qu’un auteur Campaign a créé une campagne, l’administrateur des applications doit associer la campagne au gestionnaire en spécifiant la propriété de chemin d’accès pour pointer vers la campagne.
 
 ### Composant cible {#target-component}
 
 Pour faciliter le rendu du contenu destiné spécifiquement aux applications mobiles, AEM Mobile utilise le composant mobileapps/components/target. Le composant cible mobile étend le composant cq/personalization/components/target et remplace le script engine_tnt.jsp. En remplaçant le fichier engine_tnt.jsp, AEM Mobile peut contrôler l’HTML générée pour le cas d’utilisation des applications mobiles. Pour chaque composant ciblé par un auteur de contenu, une mbox associée est créée par le fichier engine_tnt.jsp.
 
-Pour chaque mbox, un attribut **cq-targeting** est ajouté, ce qui permet aux développeurs d’applications d’écrire du code personnalisé pour consommer et utiliser comme ils le souhaitent. L’application de référence hybride [](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) contient un exemple de directive Angular qui utilise l’attribut cq-targeting. Le concept de remplacement de contenu, quand et comment il est effectué, dépend du développeur ou de la développeuse d’applications mobiles. Il existe un SDK Mobile fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage Adobe. Il appartient au développeur ou à la développeuse d’applications de spécifier le moment où cet appel doit être effectué en fonction de la conception de leur application.
+Pour chaque mbox, un attribut **cq-targeting** est ajouté, ce qui permet aux développeurs d’applications d’écrire du code personnalisé pour consommer et utiliser comme ils le souhaitent. L’application de référence hybride [&#128279;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) contient un exemple de directive Angular qui utilise l’attribut cq-targeting. Le concept de remplacement de contenu, quand et comment il est effectué, dépend du développeur ou de la développeuse d’applications mobiles. Il existe un SDK Mobile fourni via AEM /etc/clientlibs/mobileapps/js/mobileapps.js qui fournit une API pour appeler le service de ciblage Adobe. Il appartient au développeur ou à la développeuse d’applications de spécifier le moment où cet appel doit être effectué en fonction de la conception de leur application.
 
 ## Quelle est la suite ? {#what-s-next}
 

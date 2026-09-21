@@ -624,10 +624,10 @@ Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et le
 Page créée qui référence le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
 
 * Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Le [ modèle et les politiques de contenu associées](#template-definitions) définissent la configuration de la page.
+Le [&#x200B; modèle et les politiques de contenu associées](#template-definitions) définissent la configuration de la page.
 
 * Modèle : lots OSGi
-Les [ lots OSGI ](/help/sites-deploying/osgi-configuration-settings.md) implémentent cette fonctionnalité.
+Les [&#x200B; lots OSGI &#x200B;](/help/sites-deploying/osgi-configuration-settings.md) implémentent cette fonctionnalité.
 
 * Vue - `/apps/<my-site>/components`
 Dans les environnements de création et de publication, le contenu est rendu par des [composants](/help/sites-developing/components.md).

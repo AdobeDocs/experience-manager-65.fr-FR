@@ -26,7 +26,7 @@ Pour configurer votre environnement et commencer, voir [Administration d’AEM p
 
 ## Le Catalogue Des Applications AEM Mobile {#the-aem-mobile-apps-catalog}
 
-Le [Catalogue des applications ](http://localhost:4502/aem/apps.html/content/phonegap) affiche toutes les applications mobiles gérées dans AEM.
+Le [Catalogue des applications &#x200B;](http://localhost:4502/aem/apps.html/content/phonegap) affiche toutes les applications mobiles gérées dans AEM.
 
 Considérez ce catalogue comme la « page de destination » d’AEM Mobile, où les administrateurs peuvent démarrer une nouvelle application AEM Mobile en créant à partir d’un modèle ou en chargeant une application existante déjà démarrée par un développeur ou une développeuse mobile.
 
@@ -36,7 +36,7 @@ Pour accéder à la page de destination du catalogue d’applications, procédez
 
 1. Sélectionnez **Applications** pour ouvrir le catalogue d’applications.
 
-![Catalogue Des Applications ](assets/chlimage_1-135.png)
+![Catalogue Des Applications &#x200B;](assets/chlimage_1-135.png)
 
 ## Tableau de bord de l’application AEM Mobile {#the-aem-mobile-app-dashboard}
 
@@ -44,7 +44,7 @@ La sélection d’une application AEM Mobile dans le catalogue affiche son table
 
 Vous pouvez développer chaque mosaïque du tableau de bord d’AEM Mobile pour afficher ou modifier des détails en cliquant sur le signe « ... » dans le coin inférieur droit.
 
-![Centre de commande des applications ](assets/chlimage_1-136.png)
+![Centre de commande des applications &#x200B;](assets/chlimage_1-136.png)
 
 ### La Mosaïque Gérer L’Application {#the-manage-app-tile}
 

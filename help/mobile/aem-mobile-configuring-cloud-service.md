@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Plusieurs étapes doivent être franchies avant que les auteurs de contenu puissent commencer à générer du contenu ciblé pour les applications mobiles : il faut obtenir l’ensemble approprié d’autorisations pour les utilisateurs et les groupes, créer des services cloud, configurer l’application pour l’activité et enfin générer le contenu.
 
-À l’avenir, nous partons du principe que l’[application de référence hybride ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
+À l’avenir, nous partons du principe que l’[application de référence hybride &#x200B;](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) a été déployée avec succès et accessible au moyen du tableau de bord AEM Mobile.
 
 ## Autorisations {#permissions}
 
@@ -60,7 +60,7 @@ Il est également nécessaire de lier un compte Adobe Mobile Services (AMS) à l
 
 ### Code client {#client-code}
 
-Pour vous connecter aux services AMS, rendez-vous sur [](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
+Pour vous connecter aux services AMS, rendez-vous sur [&#128279;](https://mobilemarketing.adobe.com/), sélectionnez l&#39;application mobile, puis cliquez sur les paramètres. Recherchez le champ Options de SDK Target et placez le code client dans le champ, puis cliquez sur Enregistrer.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
