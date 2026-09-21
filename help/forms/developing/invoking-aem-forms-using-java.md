@@ -1,6 +1,6 @@
 ---
 title: Appel d’AEM Forms à l’aide de l’API Java
-description: Utilisez l’API Java AEM Forms relative au protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, une requête SOAP pour l’appel à distance, une authentification différente, par exemple le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
+description: Utilisez l’API Java AEM Forms relative au protocole de transport RMI pour l’appel à distance, le transport VM pour l’appel local, SOAP pour l’appel à distance, une authentification différente, par exemple le nom d’utilisateur et le mot de passe, ainsi que des demandes d’appel synchrones et asynchrones.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,37 +8,36 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 2856a470ceb45fbdc6852c016386c465ee1b4930
 workflow-type: tm+mt
-source-wordcount: '5557'
-ht-degree: 100%
-
+source-wordcount: '5599'
+ht-degree: 99%
 ---
-
-# Appel d’AEM Forms en utilisant l’API Java {#invoking-aem-forms-using-the-javaapi}
+# Appel d’AEM Forms à l’aide de l’API Java {#invoking-aem-forms-using-the-javaapi}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-AEM Forms peut être appelé à l’aide de l’API Java d’AEM Forms. Lorsque vous utilisez l’API Java d’AEM Forms, vous pouvez utiliser l’API d’appel ou les bibliothèques client Java. Des bibliothèques client Java sont disponibles pour des services tels que le service Rights Management. Ces API fortement typées vous permettent de développer des applications Java qui appellent AEM Forms.
+AEM Forms peut être appelé à l’aide de l’API Java d’AEM Forms. Lorsque vous utilisez l’API Java Adobe Experience Manager Forms, vous pouvez utiliser l’API Invocation ou les bibliothèques client Java. Des bibliothèques client Java sont disponibles pour des services tels que le service Rights Management. Ces API fortement typées vous permettent de développer des applications Java qui invoquent Adobe Experience Manager Forms.
 
-Les API d’appel sont des classes situées dans le package `com.adobe.idp.dsc`. À l’aide de ces classes, vous pouvez envoyer une demande d’appel directement à un service et traiter une réponse d’appel retournée. Utilisez l’API d’appel pour appeler des processus à durées de vie courte ou longue créés à l’aide de Workbench.
+Les API d’appel sont des classes situées dans le package `com.adobe.idp.dsc`. À l’aide de ces classes, vous pouvez envoyer une demande d’invocation directement à un service et traiter une réponse d’invocation retournée. Utilisez l’API d’appel pour appeler des processus à durées de vie courte ou longue créés à l’aide de l’atelier.
 
-La méthode recommandée pour appeler un service par programmation consiste à utiliser une bibliothèque cliente Java correspondant au service, par opposition à l’API d’appel. Par exemple, pour appeler le service Encryption, utilisez la bibliothèque cliente du service Encryption. Pour effectuer une opération de service Encryption, appelez une méthode appartenant à l’objet client du service Encryption. Vous pouvez chiffrer un document PDF avec un mot de passe en appelant la méthode `encryptPDFUsingPassword` de l’objet `EncryptionServiceClient`.
+La méthode recommandée pour appeler un service par programmation consiste à utiliser une bibliothèque cliente Java correspondant au service, par opposition à l’API d’appel. Par exemple, pour appeler le service de chiffrement, utilisez la bibliothèque cliente du service de chiffrement. Pour effectuer une opération de service de chiffrement, appelez une méthode appartenant à l’objet client du service de chiffrement. Vous pouvez chiffrer un document PDF avec un mot de passe en appelant la méthode `encryptPDFUsingPassword` de l’objet `EncryptionServiceClient`.
 
 L’API Java prend en charge les fonctionnalités suivantes :
 
 * Protocole de transport RMI pour appel à distance
 * Transport VM pour l’appel local
 * SOAP pour l’appel à distance
-* Authentification différente, telle qu’un nom d’utilisateur avec un mot de passe
+* Différents modes d’authentification, tels qu’un nom d’utilisateur et un mot de passe
 * Demandes d’appel synchrones et asynchrones
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](#including-aem-forms-java-library-files)
 
 [Appel de processus pour des intervenants humains de longue durée](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
-[Appel d’AEM Forms utilisant des services Web](/help/forms/developing/invoking-aem-forms-using-web.md)
+[Appel d’AEM Forms à l’aide de services web](/help/forms/developing/invoking-aem-forms-using-web.md)
 
 [Réglage des propriétés de la connexion](#setting-connection-properties)
 
@@ -46,9 +45,9 @@ L’API Java prend en charge les fonctionnalités suivantes :
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](#invoking-a-service-using-a-java-client-library)
 
-[Appel d’un processus de courte durée en utilisant l’API d’appel](#invoking-a-short-lived-process-using-the-invocation-api)
+[Appel d’un processus de courte durée à l’aide de l’API d’invocation](#invoking-a-short-lived-process-using-the-invocation-api)
 
-[Création d’une application Web Java qui appelle un processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md)
+[Création d’une appli web Java qui appelle un processus de longue durée centré sur l’intervention humaine](/help/forms/developing/invoking-human-centric-long-lived.md)
 
 ## Inclusion des fichiers de bibliothèque Java d’AEM Forms {#including-aem-forms-java-library-files}
 
@@ -62,6 +61,10 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 >(Clé en main uniquement) Démarrez le serveur AEM Forms à l’aide de la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB.
 
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
+
+>[!NOTE]
+>
+>Si vous rencontrez des problèmes lors de l’utilisation de fichiers de bibliothèque cliente AEM Forms tels que `adobe-livecycle-client.jar`, consultez la page [Correctifs AEM Forms](/help/release-notes/aem-forms-hotfix.md) pour voir si un correctif fournit une version mise à jour du fichier. Si c’est le cas, utilisez le fichier mis à jour dans le chemin d’accès aux classes de votre projet.
 
 ### Fichiers JAR spécifiques au service {#service-specific-jar-files}
 
@@ -133,7 +136,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
-   <td><p>Requis pour appeler le service Encryption.</p></td>
+   <td><p>Requis pour appeler le service de chiffrement.</p></td>
    <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
@@ -178,7 +181,7 @@ Le tableau suivant énumère les fichiers JAR nécessaires pour appeler les serv
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
-   <td><p>Requis pour appeler le service Repository.</p></td>
+   <td><p>Requis pour appeler le service de référentiel.</p></td>
    <td><p>&lt;<i>dossier d’installation</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>répertoire d’installation</i>&gt;/sdk/client-libs/thirdparty</p></td>
   </tr>
   <tr>
@@ -250,13 +253,13 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de conne
      <li>xercesImpl.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
-   <td><p>si AEM Forms est appelé en mode SOAP, incluez ces fichiers JAR.</p> </td>
+   <td><p>si AEM Forms est appelé à l’aide du mode SOAP, incluez ces fichiers JAR.</p> </td>
    <td><p>&lt;<em>dossier d’installation</em>&gt;/sdk/client-libs/thirdparty</p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
    <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classes si jboss-client.jar et les fichiers JAR référencés ne sont pas co-localisés.</p> </td>
-   <td><p>Répertoire de bibliothèque cliente JBoss</p> <p>Si vous déployez votre application cliente sur le même serveur d’applications J2EE, vous n’avez pas besoin d’inclure ce fichier.</p> </td>
+   <td><p>Répertoire de bibliothèque client JBoss</p> <p>Si vous déployez votre application cliente sur le même serveur d’applications J2EE, vous n’avez pas besoin d’inclure ce fichier.</p> </td>
   </tr>
   <tr>
    <td><p>wlclient.jar</p> </td>
@@ -271,7 +274,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de conne
     </ul> </td>
    <td>
     <ul>
-     <li><p>si AEM Forms est déployé sur WebSphere Application Server, incluez ces fichiers JAR.</p> </li>
+     <li><p>si AEM Forms est déployé sur le serveur d’applications WebSphere, incluez ces fichiers JAR.</p> </li>
      <li><p>(com.ibm.ws.webservices.thinclient_6.1.0.jar est requis pour l’appel de service Web).</p> </li>
     </ul> </td>
    <td><p>Répertoire de bibliothèque spécifique à WebSphere (<em>[WAS_HOME]</em>/runtimes)</p> <p>Si vous déployez votre application cliente sur le même serveur d’applications J2EE, vous n’avez pas à inclure ces fichiers.</p> </td>
@@ -281,7 +284,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de conne
 
 ### Appel de scénarios {#invoking-scenarios}
 
-Le tableau suivant indique les scénarios d’appel et répertorie les fichiers JAR requis pour appeler correctement AEM Forms.
+Le tableau suivant indique les scénarios d’appel et répertorie les fichiers JAR requis pour appeler correctement Adobe Experience Manager Forms.
 
 <table>
  <thead>
@@ -311,7 +314,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
+   <td><p>Service Forms</p> <p>Service Extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
    <td><p>EJB</p> </td>
    <td><p>JBoss</p> </td>
    <td>
@@ -359,7 +362,7 @@ Le tableau suivant indique les scénarios d’appel et répertorie les fichiers�
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
+   <td><p>Service Forms</p> <p>Service Extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
    <td><p>SOAP</p> </td>
    <td><p>WebLo gic</p> </td>
    <td>
@@ -404,7 +407,7 @@ En supposant que vous effectuiez une mise à niveau vers AEM Forms. Pour utilis
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -420,31 +423,31 @@ Le mode de connexion peut être SOAP ou EJB. Le mode EJB utilise le protocole
 
 Pour appeler un service AEM Forms avec succès, définissez les propriétés de connexion suivantes :
 
-* **DSC_DEFAULT_EJB_ENDPOINT :** si vous utilisez le mode de connexion EJB, cette valeur représente l’URL du serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour appeler AEM Forms à distance, spécifiez le nom du serveur d’applications J2EE sur lequel AEM Forms est déployé. Si votre application client est située sur le même serveur d’applications J2EE, vous pouvez spécifier `localhost`. Selon le serveur d’application J2EE sur lequel AEM Forms est déployé, spécifiez l’une des valeurs suivantes :
+* **DSC_DEFAULT_EJB_ENDPOINT :** si vous utilisez le mode de connexion EJB, cette valeur représente l’URL du serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour appeler AEM Forms à distance, spécifiez le nom du serveur d’applications J2EE sur lequel AEM Forms est déployé. Si votre application client est située sur le même serveur d’applications J2EE, vous pouvez spécifier `localhost`. Selon le serveur d’applications J2EE sur lequel AEM Forms est déployé, spécifiez l’une des valeurs suivantes :
 
-   * JBoss : `https://<ServerName>:8080 (default port)`
-   * WebSphere: `iiop://<ServerName>:2809 (default port)`
-   * WebLo gic: `t3://<ServerName>:7001 (default port)`
+  * JBoss : `https://<ServerName>:8080 (default port)`
+  * WebSphere: `iiop://<ServerName>:2809 (default port)`
+  * WebLo gic: `t3://<ServerName>:7001 (default port)`
 
 * **DSC_DEFAULT_SOAP_ENDPOINT** : si vous utilisez le mode de connexion SOAP, cette valeur représente le point d’entrée vers lequel une demande d’appel est envoyée. Pour appeler AEM Forms à distance, spécifiez le nom du serveur d’applications J2EE sur lequel AEM Forms est déployé. Si votre application client est située sur le même serveur d’applications J2EE, vous pouvez spécifier `localhost` (par exemple : `http://localhost:8080`.)
 
-   * La valeur du port `8080` est applicable si l’application J2EE est JBoss. Si le serveur d’applications J2EE est IBM® WebSphere®, utilisez le port `9080`. Si le serveur d’applications J2EE est WebLogic, utilisez le port `7001`. (Ces valeurs sont des valeurs de port par défaut. Si vous modifiez la valeur de port, utilisez le numéro de port approprié.)
+  * La valeur du port `8080` est applicable si l’application J2EE est JBoss. Si le serveur d’applications J2EE est IBM® WebSphere®, utilisez le port `9080`. Si le serveur d’applications J2EE est WebLogic, utilisez le port `7001`. (Ces valeurs sont des valeurs de port par défaut. Si vous modifiez la valeur de port, utilisez le numéro de port approprié.)
 
 * **DSC_TRANSPORT_PROTOCOL** : si vous utilisez le mode de connexion EJB, spécifiez `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` pour cette valeur. Si vous utilisez le mode de connexion SOAP, spécifiez `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE** : spécifiez le serveur d’applications J2EE sur lequel AEM Forms est déployé. Les valeurs valides sont `JBoss`, `WebSphere` et `WebLogic`.
 
-   * Si vous définissez cette propriété de connexion sur `WebSphere`, la valeur `java.naming.factory.initial` est définie sur `com.ibm.ws.naming.util.WsnInitCtxFactory`.
-   * Si vous définissez cette propriété de connexion sur `WebLogic`, la valeur `java.naming.factory.initial` est définie sur `weblogic.jndi.WLInitialContextFactory`.
-   * De la même façon, si vous définissez cette propriété de connexion sur `JBoss`, la valeur `java.naming.factory.initial` est définie sur `org.jnp.interfaces.NamingContextFactory`.
-   * Vous pouvez définir la propriété `java.naming.factory.initial` sur une valeur répondant à vos exigences si vous ne souhaitez pas utiliser les valeurs par défaut.
+  * Si vous définissez cette propriété de connexion sur `WebSphere`, la valeur `java.naming.factory.initial` est définie sur `com.ibm.ws.naming.util.WsnInitCtxFactory`.
+  * Si vous définissez cette propriété de connexion sur `WebLogic`, la valeur `java.naming.factory.initial` est définie sur `weblogic.jndi.WLInitialContextFactory`.
+  * De la même façon, si vous définissez cette propriété de connexion sur `JBoss`, la valeur `java.naming.factory.initial` est définie sur `org.jnp.interfaces.NamingContextFactory`.
+  * Vous pouvez définir la propriété `java.naming.factory.initial` sur une valeur répondant à vos exigences si vous ne souhaitez pas utiliser les valeurs par défaut.
 
   >[!NOTE]
   >
   >Au lieu d’utiliser une chaîne pour définir la propriété de connexion `DSC_SERVER_TYPE`, vous pouvez utiliser un élément statique de la classe `ServiceClientFactoryProperties`. Les valeurs suivantes peuvent être utilisées : `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE` ou `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
-* **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur ou d’utilisatrice AEM Forms. Pour qu’un utilisateur ou une utilisatrice puisse appeler un service AEM Forms, il lui faut le rôle Services User. Un utilisateur ou une utilisatrice peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est générée lorsque cette personne tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
+* **DSC_CREDENTIAL_USERNAME :** spécifie le nom d’utilisateur ou d’utilisatrice AEM Forms. Pour qu’un utilisateur ou une utilisatrice puisse appeler un service AEM Forms, il lui faut le rôle Services User. Un utilisateur ou une utilisatrice peut également avoir un autre rôle incluant l’autorisation d’appel de services. Sinon, une exception est générée lorsque cet utilisateur ou cette utilisatrice tente d’appeler un service. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
 * **DSC_CREDENTIAL_PASSWORD :** spécifie la valeur de mot de passe correspondante. Si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier cette propriété de connexion.
-* **DSC_REQUEST_TIMEOUT :** limite du délai d’expiration de requête par défaut pour la demande SOAP est 1 200 000 millisecondes (20 minutes). Parfois, une requête peut nécessiter plus de temps pour terminer l’opération. Par exemple, une requête SOAP qui récupère un grand ensemble d’enregistrements peut nécessiter un délai d’expiration plus long. Vous pouvez utiliser le `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` pour augmenter la limite de délai d’expiration d’appel de demande pour les requêtes SOAP.
+* **DSC_REQUEST_TIMEOUT :** limite du délai d’expiration de requête par défaut pour la demande SOAP est 1 200 000 millisecondes (20 minutes). Parfois, une demande peut nécessiter plus de temps pour terminer l’opération. Par exemple, une requête SOAP qui récupère un grand ensemble d’enregistrements peut nécessiter un délai d’expiration plus long. Vous pouvez utiliser le `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` pour augmenter la limite de délai d’expiration d’appel de demande pour les requêtes SOAP.
 
   **Remarque** : seuls les appels basés sur SOAP prennent en charge la propriété DSC_REQUEST_TIMEOUT.
 
@@ -454,7 +457,7 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 1. Pour définir la propriété de connexion `DSC_DEFAULT_EJB_ENDPOINT`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`
-   * Une valeur string qui spécifie l’URL du serveur d’applications J2EE hébergeant AEM Forms
+   * Une valeur de chaîne qui spécifie l’URL du serveur d’applications J2EE hébergeant AEM Forms
 
    >[!NOTE]
    >
@@ -474,15 +477,15 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
    * Valeur d’énumération `ServiceClientFactoryProperties.DSC_SERVER_TYPE`
    * Valeur string qui spécifie le serveur d’application J2EE hébergeant AEM Forms (par exemple, si AEM Forms est déployé sur JBoss, spécifiez`JBoss`).
 
-      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_USERNAME`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
+     1. Pour définir la propriété de connexion `DSC_CREDENTIAL_USERNAME`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`
-   * Valeur string qui spécifie le nom d’utilisateur requis pour appeler AEM Forms
+   * Valeur de chaîne qui spécifie le nom d’utilisateur requis pour appeler AEM Forms
 
-      1. Pour définir la propriété de connexion `DSC_CREDENTIAL_PASSWORD`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
+     1. Pour définir la propriété de connexion `DSC_CREDENTIAL_PASSWORD`, appelez la méthode `setProperty` de l’objet `java.util.Properties` et transmettez les valeurs suivantes :
 
    * Valeur d’énumération `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`
-   * Valeur string qui spécifie la valeur du mot de passe correspondant
+   * Valeur de chaîne qui spécifie la valeur du mot de passe correspondant
 
 **Régler le mode de connexion EJB pour JBoss**
 
@@ -619,8 +622,8 @@ L’exemple de code suivant montre comment utiliser un objet `com.adobe.idp.Cont
 
 Les scénarios d’appel suivants sont abordés dans cette section :
 
-* Une application client exécutée dans sa propre machine virtuelle Java (JVM) appelant une instance AEM Forms autonome.
-* Une application client exécutée dans sa propre JVM appelant des instances AEM Forms en clusters.
+* Une application client exécutée dans sa propre machine virtuelle Java (JVM) appelle une instance AEM Forms autonome.
+* Une application client exécutée dans sa propre JVM appelle des instances AEM Forms en clusters.
 
 ### Une application client appelant une instance AEM Forms autonome {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
@@ -632,9 +635,9 @@ Dans ce scénario, une application client est exécutée dans sa propre JVM et a
 >
 >Ce scénario est le scénario d’appel sur lequel tous les tutoriels sont basés.
 
-### Application client appelant des instances AEM Forms en clusters {#client-application-invoking-clustered-aem-forms-instances}
+### Application client appelant des instances AEM Forms en cluster {#client-application-invoking-clustered-aem-forms-instances}
 
-Le diagramme suivant montre une application client executée dans sa propre JVM et appelant des instances AEM Forms dans un cluster.
+Le diagramme suivant montre une application client exécutée dans sa propre JVM et appelant des instances AEM Forms dans un cluster.
 
 Ce scénario est similaire à celui d’une application client appelant une instance AEM Forms autonome. Cependant, l’URL du fournisseur est différente. Si une application client souhaite se connecter à un serveur d’applications J2EE spécifique, l’application doit changer l’URL pour référencer le serveur d’applications J2EE spécifique.
 
@@ -681,7 +684,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
 
 [Transmission de données vers les services AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
-[Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[Appeler un service à l’aide d’une bibliothèque cliente Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
 ## Transmettre des données vers les services AEM Forms à l’aide de l’API Java {#passing-data-to-aem-forms-services-using-the-java-api}
 
@@ -689,7 +692,7 @@ Les opérations des services AEM Forms utilisent ou produisent généralement d
 
 Les services AEM Forms n’acceptent aucun autre type de données qu’un document PDF, comme un objet `java.io.InputStream` ou un tableau d’octets. Un objet `com.adobe.idp.Document` peut également être utilisé pour transmettre d’autres types de données aux services, comme des données XML.
 
-Un objet `com.adobe.idp.Document` est un type sérialisable Java, donc il peut être passé sur un appel RMI. Le côté récepteur peut être co-localisé (même hôte, même chargeur de classe), local (même hôte, chargeur de classe différent) ou distant (hôte différent). La transmission du contenu des documents est optimisée pour chaque cas. Par exemple, si la personne expéditrice et la personne destinataire se trouvent sur le même hôte, le contenu est transmis via un système de fichiers local. (Dans certains cas, les documents peuvent être passés en mémoire.)
+Un objet `com.adobe.idp.Document` est un type sérialisable Java, donc il peut être passé sur un appel RMI. Le côté récepteur peut être co-localisé (même hôte, même chargeur de classe), local (même hôte, chargeur de classe différent) ou distant (hôte différent). La transmission du contenu des documents est optimisée pour chaque cas. Par exemple, si la personne expéditrice et la personne destinataire se trouvent sur le même hôte, le contenu est transmis via un système de fichiers local. (Dans certains cas, les documents peuvent être transmis en mémoire.)
 
 En fonction de la taille de l’objet de `com.adobe.idp.Document`, les données sont transmises au sein de l’objet `com.adobe.idp.Document` ou stockées sur le système de fichiers du serveur. Toutes les ressources de stockage temporaires occupées par l’objet du `com.adobe.idp.Document` sont automatiquement supprimées lors de l’élimination de `com.adobe.idp.Document`. (Voir [Élimination d’objets de document](invoking-aem-forms-using-java.md#disposing-document-objects))
 
@@ -744,7 +747,7 @@ Une application peut contenir à la fois les types de données `com.adobe.idp.Do
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -827,7 +830,7 @@ L’URL fournie à l’objet `com.adobe.idp.Document` est toujours lue du côté
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-Le fichier c:/temp/input.pdf doit se trouver sur l’ordinateur client (et non sur l’ordinateur serveur). L’ordinateur client est l’emplacement de lecture de l’URL et de création de l’objet `com.adobe.idp.Document`.
+Le fichier c :/temp/input.pdf doit se trouver sur l’ordinateur client (et non sur l’ordinateur serveur). L’ordinateur client est l’emplacement de lecture de l’URL et de création de l’objet `com.adobe.idp.Document`.
 
 **Création d’un document basé sur un contenu accessible à partir d’une URL**
 
@@ -841,7 +844,7 @@ Le fichier c:/temp/input.pdf doit se trouver sur l’ordinateur client (et non s
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -875,13 +878,13 @@ L’exemple de code suivant copie le contenu d’un objet `com.adobe.idp.Documen
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Détermination du type de contenu d’un document {#determining-the-content-type-of-a-document}
 
-Déterminez le type MIME d’un objet `com.adobe.idp.Document` en appelant la méthode `getContentType` de l’objet `com.adobe.idp.Document`. Cette méthode renvoie une valeur string qui spécifie le type de contenu de l’objet `com.adobe.idp.Document`. Le tableau suivant décrit les différents types de contenu renvoyés par AEM Forms.
+Déterminez le type MIME d’un objet `com.adobe.idp.Document` en appelant la méthode `getContentType` de l’objet `com.adobe.idp.Document`. Cette méthode renvoie une valeur string qui spécifie le type de contenu de l’objet `com.adobe.idp.Document`. Le tableau suivant décrit les différents types de contenu renvoyés par Adobe Experience Manager Forms.
 
 <table>
  <thead>
@@ -938,7 +941,7 @@ L’exemple de code suivant détermine le type de contenu d’un objet `com.adob
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -948,19 +951,19 @@ Lorsque vous n’avez plus besoin d’un objet `Document`, il est recommandé de
 
 **Voir également**
 
-[Appel d’AEM Forms en utilisant l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
+[Appel d’AEM Forms à l’aide de l’API Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[Appeler un service à l’aide d’une bibliothèque cliente Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Appeler un service à l’aide d’une bibliothèque client Java {#invoking-a-service-using-a-java-client-library}
+## Appeler un service à l’aide d’une bibliothèque cliente Java {#invoking-a-service-using-a-java-client-library}
 
-Les opérations des services AEM Forms peuvent être appelées à l’aide de l’API fortement typée d’un service, appelée bibliothèque cliente Java. Une *bibliothèque cliente Java* est un ensemble de classes concrètes permettant d’accéder aux services déployés dans le conteneur de service. Vous instanciez un objet Java qui représente le service à appeler au lieu de créer l’objet `InvocationRequest` en utilisant l’API d’appel. L’API d’appel est utilisée pour appeler des processus, tels que des processus de longue durée, créés dans Workbench. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+Les opérations des services AEM Forms peuvent être appelées à l’aide de l’API fortement typée d’un service, appelée bibliothèque cliente Java. Une *bibliothèque cliente Java* est un ensemble de classes concrètes permettant d’accéder aux services déployés dans le conteneur de service. Vous instanciez un objet Java qui représente le service à appeler au lieu de créer l’objet `InvocationRequest` en utilisant l’API d’appel. L’API d’appel est utilisée pour appeler des processus, tels que des processus de longue durée, créés dans l’atelier. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-Pour effectuer une opération de service, appelez une méthode appartenant à l’objet Java. Une bibliothèque cliente Java contient des méthodes qui correspondent généralement des à des opérations de service. Lorsque vous utilisez une bibliothèque cliente Java, définissez les propriétés de connexion requises. (Voir [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties).)
+Pour effectuer une opération de service, appelez une méthode appartenant à l’objet Java. Une bibliothèque cliente Java contient des méthodes qui correspondent généralement à des opérations de service. Lorsque vous utilisez une bibliothèque cliente Java, définissez les propriétés de connexion requises. (Voir [Réglage des propriétés de la connexion](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-Après avoir défini les propriétés de connexion, créez un objet `ServiceClientFactory` utilisé pour instancier un objet Java qui vous permet d’appeler un service. Chaque service qui a une bibliothèque client Java a un objet client correspondant. Par exemple, pour appeler le service Repository, créez un objet `ResourceRepositoryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. L’objet `ServiceClientFactory` est responsable de la gestion des paramètres de connexion nécessaires pour appeler les services AEM Forms.
+Après avoir défini les propriétés de connexion, créez un objet `ServiceClientFactory` utilisé pour instancier un objet Java qui vous permet d’appeler un service. Chaque service qui a une bibliothèque cliente Java a un objet client correspondant. Par exemple, pour appeler le service Repository, créez un objet `ResourceRepositoryClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. L’objet `ServiceClientFactory` est responsable de la gestion des paramètres de connexion nécessaires pour appeler les services AEM Forms.
 
 Bien que l’obtention d’un objet `ServiceClientFactory` soit généralement rapide, des frais généraux sont à prévoir lorsque l’usine est utilisée pour la première fois. Cet objet est optimisé pour la réutilisation et, par conséquent, le cas échéant, utilisez le même objet `ServiceClientFactory` lorsque vous créez des objets client Java multiples. En d’autres termes, ne créez pas d’objet `ServiceClientFactory` distinct pour chaque objet de bibliothèque client que vous créez.
 
@@ -970,7 +973,7 @@ Un paramètre User Manager contrôle la durée de vie de l’assertion SAML qui 
 >
 >Pour expliquer comment appeler un service à l’aide de l’API Java, l’opération `writeResource` du service Repository est appelée. Cette opération place une nouvelle ressource dans le référentiel.
 
-Vous pouvez appeler le service Repository en utilisant une bibliothèque cliente Java et en effectuant les étapes suivantes :
+Vous pouvez appeler le service Référentiel en utilisant une bibliothèque cliente Java et en effectuant les étapes suivantes :
 
 1. Incluez les fichiers JAR du client, comme adobe-repository-client.jar, dans le chemin d’accès des classes de votre projet Java. Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclusion des fichiers de bibliothèque Java AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Définissez les propriétés de connexion requises pour appeler un service.
@@ -993,7 +996,7 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque cliente
 1. Ajoutez une description de la ressource en appelant la méthode `setDescription` de l’objet `Resource` et en transmettant une valeur string représentant la description de la ressource.
 1. Ajoutez la conception de formulaire au référentiel en appelant la méthode `writeResource` de l’objet `ResourceRepositoryClient` et en transmettant les valeurs suivantes :
 
-   * Valeur string qui spécifie le nouveau chemin vers la collecte de ressources contenant la nouvelle ressource
+   * Valeur de chaîne qui spécifie le chemin d’accès à la collection de ressources contenant la nouvelle ressource
    * L’objet `Resource` qui a été créé
 
 **Voir également**
@@ -1004,9 +1007,9 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque cliente
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Appeler un processus de courte durée en utilisant l’API d’appel {#invoking-a-short-lived-process-using-the-invocation-api}
+## Appel d’un processus de courte durée à l’aide de l’API d’invocation {#invoking-a-short-lived-process-using-the-invocation-api}
 
-Vous pouvez appeler un processus de courte durée à l’aide de l’API d’appel Java. Lorsque vous appelez un processus de courte durée à l’aide de l’API d’appel, vous transmettez les valeurs de paramètre requises à l’aide d’un objet `java.util.HashMap`. Pour chaque paramètre à transmettre à un service, appelez la méthode `put` de l’objet `java.util.HashMap` et spécifiez la paire nom-valeur requise par le service pour effectuer l’opération spécifiée. Spécifiez le nom exact des paramètres appartenant au processus de courte durée.
+Vous pouvez invoquer un processus de courte durée à l’aide de l’API Java Invocation. Lorsque vous appelez un processus de courte durée à l’aide de l’API d’appel, vous transmettez les valeurs de paramètre requises à l’aide d’un objet `java.util.HashMap`. Pour chaque paramètre à transmettre à un service, appelez la méthode `put` de l’objet `java.util.HashMap` et spécifiez la paire nom-valeur requise par le service pour effectuer l’opération spécifiée. Spécifiez le nom exact des paramètres appartenant au processus de courte durée.
 
 >[!NOTE]
 >
@@ -1021,9 +1024,9 @@ La discussion ici porte sur l’utilisation de l’API d’appel pour appeler le
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
-1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
+1. Chiffre le document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
-### Appelez le processus de courte durée MyApplication/EncryptDocument à l’aide de l’API d’appel Java {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
+### Appelez le processus de courte durée MyApplication/EncryptDocument à l’aide de l’API d’invocation Java {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
 Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aide de l’API d’appel Java :
 
@@ -1043,8 +1046,8 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 
 1. Créez un objet `InvocationRequest` en appelant la méthode `createInvocationRequest` de l’objet `ServiceClientFactory` et en transmettant les valeurs suivantes :
 
-   * Valeur string qui spécifie le nom du processus de longue durée à appeler. Pour appeler le processus `MyApplication/EncryptDocument`, spécifiez `MyApplication/EncryptDocument`.
-   * Une valeur string qui représente le nom de l’opération de processus. En général, le nom d’une opération de processus de courte durée est `invoke`.
+   * Valeur de chaîne qui spécifie le nom du processus de longue durée à appeler. Pour appeler le processus `MyApplication/EncryptDocument`, spécifiez `MyApplication/EncryptDocument`.
+   * Une valeur de chaîne qui représente le nom de l’opération de processus. En général, le nom d’une opération de processus de courte durée est `invoke`.
    * L’objet `java.util.HashMap` qui contient les valeurs de paramètre requises par l’opération de service.
    * Une valeur Boolean définie sur `true` qui crée une demande synchrone (cette valeur est applicable pour appeler un processus de courte durée).
 
@@ -1066,7 +1069,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 
 **Voir également**
 
-[Didacticiel de mise en route : appel d’un processus de courte durée en utilisant l’API d’appel](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
+[Quick Start : appel d’un processus de courte durée à l’aide de l’API d’invocation](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
 
 [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 

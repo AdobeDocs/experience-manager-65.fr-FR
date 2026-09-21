@@ -5,13 +5,11 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 81%
-
+source-wordcount: '4751'
+ht-degree: 69%
 ---
-
 # Correctifs Adobe Experience Manager Forms{#aem-form-hotfix}
 
 Cet article répertorie les correctifs critiques mis en œuvre pour résoudre les problèmes connus, améliorer la stabilité du système et optimiser les performances globales d’AEM Forms.
@@ -19,6 +17,8 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
 >[!NOTE]
 >
 > Les correctifs sont conçus pour être cumulatifs, c’est-à-dire qu’ils englobent tous les correctifs précédents. Ainsi, lorsque vous appliquez le dernier correctif à une version, il résout non seulement le problème le plus récent, mais incorpore également tous les correctifs et améliorations antérieurs.
+>
+> Comme le correctif est cumulatif, son application lors de l’utilisation d’un pack de services précédent met à jour votre déploiement avec tous les correctifs publiés jusqu’au pack de services sur lequel le correctif est créé, et pas seulement les problèmes répertoriés pour ce correctif.
 
 ## Correctifs pour AEM Forms {#hotfix-for-aem-forms}
 
@@ -28,6 +28,52 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td><strong>Date</strong></td>
     <td><strong>Lien de téléchargement des correctifs (lien de distribution logicielle AEM)</strong></td>
     <td><strong>Problèmes résolus</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>18 septembre 2026</strong><br>
+      <em>S’applique à : </em> AEM 6.5.25.0 les déploiements Forms JEE (JBoss, WebLogic, WebSphere).<br>
+    </td>
+    <td>
+    <p><strong>Pour installer ce correctif, procédez comme suit :</strong></p>
+    <p><strong>Étape 1 : installation du correctif</strong></p>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-win-jboss.zip">correctif pour AEM Service Pack 6.5.25.0 sur Windows pour le serveur JBoss JEE</a></li>
+    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-jboss.tar.gz">correctif pour AEM Service Pack 6.5.25.0 sur Linux pour le serveur JBoss JEE</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-win-weblogic.zip">correctif pour AEM Service Pack 6.5.25.0 sur Windows pour le serveur Weblogic JEE</a></li>
+    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-weblogic.tar.gz">correctif pour AEM Service Pack 6.5.25.0 sur Linux pour le serveur Weblogic JEE</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix2-6.5.25.0-win-websphere.zip">correctif pour AEM Service Pack 6.5.25.0 sur Windows pour le serveur WebSphere JEE</a></li>
+    <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz">correctif pour AEM Service Pack 6.5.25.0 sous Linux pour le serveur WebSphere JEE</a></li>
+    </ul>
+    <p>Suivez les instructions d’installation standard du correctif JEE d’<a href="/help/release-notes/jee-patch-installer-65.md"></a>.</p>
+    <p><strong>Étape 2 : installer le lot de correctifs de vulnérabilité</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/SP25Bundles_VULN-36670.zip">Lot de correctifs de vulnérabilité pour AEM 6.5.25.0</a></li>
+    </ul>
+    <ol>
+    <li>Ouvrez la console OSGi sur <code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>.</li>
+    <li>Cliquez sur <strong> Installer/Mettre à jour </strong>.</li>
+    <li>Cochez les cases <strong>Démarrer le bundle</strong> et <strong>Actualiser les packages</strong>.</li>
+    <li>Cliquez sur <strong>Choisir un fichier</strong>, puis chargez le lot téléchargé.</li>
+    <li>Patientez jusqu’à ce que le journal se dépose et que le lot s’affiche comme <strong>Actif</strong>.</li>
+    </ol>
+    <p><strong>Étape 3 : mettre à jour le programme d’installation d’AEM Forms Workbench</strong></p>
+    <p>Vous devez mettre à jour vers le dernier programme d’installation d’AEM Forms Workbench (6.5.25.0). Pour plus d’informations, voir <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">Versions d’</a>.</p>
+    <p><strong>Étape 4 : mettre à jour les fichiers de bibliothèque cliente (développeurs)</strong></p>
+    <p>Ce correctif comprend une mise à jour majeure de la <code>adobe-livecycle-client.jar</code> de bibliothèque cliente SDK (voir <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Inclure des fichiers de bibliothèque Java AEM Forms</a>). Si votre projet utilise ce fichier JAR, mettez à jour <code>adobe-livecycle-client.jar</code> dans le chemin d’accès aux classes de votre projet après avoir installé le correctif. La dernière version est disponible à l’adresse <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
+    <p>Le correctif est cumulatif. Vous pouvez donc l’appliquer au pack de services 25 (6.5.25.0) ou à un pack de services antérieur sans installer le pack de services 25 au préalable.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26802</b> Après le renforcement de l’authentification SOAP SDK, LCM Configuration Manager, Workbench et Designer ne parviennent pas à se connecter au serveur avec le <code>ALC-LCM-200-001</code> d’erreur (le point d’entrée <code>/soap/sdk</code> rejette une requête non authentifiée). Ce correctif restaure la connectivité tout en maintenant l’authentification appliquée sur le point d’entrée.</li>
+    <li><b>FORMS-26679</b> Dans AEM Forms Document Security, les cookies d’authentification sont ignorés après une redirection de Microsoft Entra ID (MFA), provoquant une erreur « Les cookies peuvent ne pas être activés » lors de l’ouverture de documents protégés par une politique. Ce correctif conserve les cookies de session sur la redirection intersite.</li>
+    <li><b>FORMS-26617</b> Sur WebLogic, la configuration de la base de données via Configuration Manager échoue avec « Aucun pilote approprié trouvé » lors de l’utilisation du pilote Microsoft SQL Server JDBC 12.10.0. Ce correctif restaure la configuration réussie de la source de données.</li>
+    <li>Les PDF <b>FORMS-27869</b> s’ouvrent lentement après l’installation de la dernière version d’AEM Forms 6.5. Ce correctif améliore les performances d’ouverture des documents.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -53,7 +99,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td>
     <ul>
     <strong>Jboss:</strong>
-    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur JBoss JEE</a></li>
+    <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur JBoss JEE</a></li>
     <li>Linux : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-jboss.gz">correctif pour AEM Service Pack 6.5.24.0 sur Linux pour le serveur JBoss JEE</a></li>
     <strong>Weblogic:</strong>
     <li>Windows : <a href="https://experience.adobe.com/#/downloads/content/software-distribution/fr/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-win-weblogic.zip">correctif pour AEM Service Pack 6.5.24.0 sur Windows pour le serveur Weblogic JEE</a></li>
@@ -238,10 +284,10 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <td>21 juin 2024</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur JBoss JEE </a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 on Weblogic JEE server </a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur Webshpere JEE </a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur OSGi </a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur JBoss JEE </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 on Weblogic JEE server </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur Webshpere JEE </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Correctif pour AEM Service Pack 6.5.21.0 ou AEM Forms Service Pack 6.5.22.0 sur le serveur OSGi </a> </li>
      </ul>
      </td>
     <td>
