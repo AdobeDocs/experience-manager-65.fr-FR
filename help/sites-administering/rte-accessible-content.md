@@ -8,11 +8,9 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
-
+source-wordcount: '970'
+ht-degree: 95%
 ---
-
 # Configuration de l’éditeur de texte enrichi pour créer des pages web et des sites accessibles {#configure-rte-for-accessibility}
 
 Adobe Experience Manager prend en charge de nombreuses fonctions d’accessibilité standard conformément à diverses normes d’accessibilité. En outre, l’équipe de développement peut personnaliser ou étendre des fonctionnalités permettant de créer du contenu accessible à l’aide de composants Experience Manager qui utilisent l’éditeur de texte enrichi (RTE).
@@ -58,11 +56,11 @@ De nouveaux formats block sémantiques peuvent être disponibles pour la sélect
    * à l’aide du paragraphe pied-de-mouche dans l’IU optimisée pour les écrans tactiles ;
    * en utilisant le champ **Format** (sélecteur pop-up) dans l’IU classique.
 
-Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, de plus grandes options pour les utilisateurs et les utilisatrices qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
+Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, plus d’options pour les utilisateurs et les utilisatrices qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
 
 ## Utilisation de la fonction de modification de la source {#use-of-the-source-edit-feature}
 
-Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la fonction [`sourceedit` du module externe `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Pour ce faire, utilisez l’option [modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la fonction [`sourceedit` du module externe `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -103,7 +101,7 @@ L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la p
 
 ### Instructions détaillées {#step-by-step-instructions}
 
-1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Démarrez CRXDE Lite. Par exemple : [](http://localhost:4502/crx/de/)
 1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

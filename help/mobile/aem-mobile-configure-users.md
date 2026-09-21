@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 2%
-
+source-wordcount: '521'
+ht-degree: 3%
 ---
-
 # Configuration des utilisateurs et des groupes d’utilisateurs {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -26,7 +24,7 @@ Ce chapitre décrit les rôles utilisateur et la configuration de vos utilisateu
 
 ### Auteurs de contenu d’application AEM Mobile (groupe app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-Les membres du groupe app-author sont chargés de la création du contenu de l’application mobile AEM, notamment des pages, du texte, des images et des vidéos.
+Les membres du groupe app-author sont chargés de la création du contenu de l’application mobile AEM, notamment des pages, des textes, des images et des vidéos.
 
 #### Configuration de groupe - app-authors {#group-configuration-app-authors}
 
@@ -42,11 +40,11 @@ Les membres du groupe app-author sont chargés de la création du contenu de l�
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’[Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).[
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Ce qui suit vous permet d’ajouter au groupe de créateurs de contenu AEM :
+1. Les éléments suivants vous permettent d’ajouter au groupe Auteurs de contenu AEM :
 
    (Lecture) le
 
@@ -79,7 +77,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
 
    >[!NOTE]
    >
-   >les utilisateurs de workflow sont requis pour créer à distance avec le service PhoneGap Build
+   >Les utilisateurs de workflow doivent effectuer la génération à distance avec le service PhoneGap Build
 
 1. Accédez à la [console Autorisations](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud
 

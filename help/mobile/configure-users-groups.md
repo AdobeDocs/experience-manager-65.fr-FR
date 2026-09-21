@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
-
+source-wordcount: '645'
+ht-degree: 3%
 ---
-
 # Configuration des utilisateurs et des groupes d’utilisateurs {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -31,7 +29,7 @@ Pour vous aider à organiser et gérer le modèle d’autorisation pour les appl
 
 ### Auteurs de contenu d’application AEM Mobile (groupe app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-Les membres du groupe app-author sont chargés de la création du contenu de l’application mobile AEM, notamment des pages, du texte, des images et des vidéos.
+Les membres du groupe app-author sont chargés de la création du contenu de l’application mobile AEM, notamment des pages, des textes, des images et des vidéos.
 
 #### Configuration de groupe - app-authors {#group-configuration-app-authors}
 
@@ -49,7 +47,7 @@ Les membres du groupe app-author sont chargés de la création du contenu de l�
 
    Ajouter des auteurs d’applications au groupe Auteurs
 
-1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’[Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez ajouter des membres d’équipe individuels à ce nouveau groupe via l’Admin Console utilisateur](http://localhost:4502/libs/granite/security/content/useradmin.md).[
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -61,13 +59,13 @@ Les membres du groupe app-author sont chargés de la création du contenu de l�
 
    >[!NOTE]
    >
-   >Les auteurs d’applications étendent le groupe content-authors (Auteurs) par défaut d’AEM, de sorte qu’ils héritent de la possibilité de créer du contenu sous /content/phonegap
+   >L’application Auteurs étend le groupe content-authors (Auteurs) par défaut d’AEM, de sorte qu’ils héritent de la possibilité de créer du contenu sous /content/phonegap
 
 ### Groupe d’administrateurs de l’application AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses dans app-authors **ET**. Ils sont également responsables des éléments suivants :
 
-* Configuration des services cloud PhoneGap Build et Adobe Mobile Services dans AEM
+* Configuration de PhoneGap Build et des services cloud Adobe Mobile Services dans AEM
 * Évaluation, publication et effacement des mises à jour OTA de synchronisation de contenu d’application
 
 >[!NOTE]
@@ -118,7 +116,7 @@ Outre ces autorisations, une action peut également être affichée/masquée en 
 
 La mosaïque ne comporte actuellement aucune action nécessitant des autorisations, mais la page de détails de l’application comporte les actions suivantes :
 
-* *Modifier* pour app-author et app-admin (déclencheur d’interface utilisateur - jcr:write - sur /content/phonegap/{suffix})
+* *Modifier* pour app-author et app-admin (déclencheur d’interface utilisateur - jcr:write - sous /content/phonegap/{suffix})
 * *Télécharger* pour app-author et app-admin (déclencheur d’interface utilisateur - sous /content/phonegap/{suffix})
 
 L’image ci-dessous montre les options Télécharger et Modifier d’une application :
