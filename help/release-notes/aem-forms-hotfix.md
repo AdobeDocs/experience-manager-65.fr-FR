@@ -1,18 +1,20 @@
 ---
-title: Correctifs pour AEM Forms
-description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM Forms.
+title: Correctifs pour AEM 6.5 Forms
+description: Fournit des informations sur la manière de télécharger et d’installer un correctif pour AEM 6.5 Forms. Pour AEM 6.5 LTS, consultez l’article sur les correctifs AEM Forms 6.5 LTS .
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
 workflow-type: tm+mt
-source-wordcount: '4751'
-ht-degree: 69%
+source-wordcount: '4809'
+ht-degree: 68%
 ---
-# Correctifs Adobe Experience Manager Forms{#aem-form-hotfix}
+# Correctifs Forms Adobe Experience Manager 6.5{#aem-form-hotfix}
 
 Cet article répertorie les correctifs critiques mis en œuvre pour résoudre les problèmes connus, améliorer la stabilité du système et optimiser les performances globales d’AEM Forms.
+
+Cet article s’applique à AEM 6.5 Forms (non-LTS). Pour les déploiements LTS d’AEM 6.5, voir [Correctifs LTS d’Adobe Experience Manager Forms 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
 
 >[!NOTE]
 >
@@ -73,6 +75,7 @@ Cet article répertorie les correctifs critiques mis en œuvre pour résoudre le
     <li><b>FORMS-26617</b> Sur WebLogic, la configuration de la base de données via Configuration Manager échoue avec « Aucun pilote approprié trouvé » lors de l’utilisation du pilote Microsoft SQL Server JDBC 12.10.0. Ce correctif restaure la configuration réussie de la source de données.</li>
     <li>Les PDF <b>FORMS-27869</b> s’ouvrent lentement après l’installation de la dernière version d’AEM Forms 6.5. Ce correctif améliore les performances d’ouverture des documents.</li>
     </ul>
+    <p><strong>Build:</strong> AEMForms-6.5.0-0134</p>
     </td>
   </tr>
   <tr>
