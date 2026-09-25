@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
-
+source-wordcount: '687'
+ht-degree: 95%
 ---
-
 # Amélioration des traductions{#translation-enhancements}
 
 Cette page présente des améliorations et des perfectionnements incrémentiels apportés aux fonctionnalités de gestion de la traduction d’AEM.
@@ -80,8 +78,8 @@ Pour utiliser cette fonctionnalité :
 
 * Un TMS doit être configuré pour être utilisé avec AEM.
 * Le connecteur doit implémenter la méthode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * Le code de cette méthode détermine ce qui se passe avec la demande de mise à jour de la mémoire de traduction.
-   * Le framework de traduction AEM renvoie les paires de valeurs de chaîne (traduction d’origine et mise à jour) au TMS via cette implémentation de méthode.
+  * Le code de cette méthode détermine ce qui se passe avec la demande de mise à jour de la mémoire de traduction.
+  * Le framework de traduction AEM renvoie les paires de valeurs de chaîne (traduction d’origine et mise à jour) au TMS via cette implémentation de méthode.
 
 Les mises à jour de la mémoire de traduction peuvent être interceptées et envoyées vers une destination personnalisée, dans les cas où une mémoire de traduction propriétaire est utilisée.
 
@@ -93,12 +91,12 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 
 >[!CAUTION]
 >
->Un seul niveau est autorisé. Par exemple, les adresses suivantes ne permettent pas à la page « es » de se résoudre en copie de langue :
+>Un seul niveau est autorisé. Par exemple, les adresses suivantes ne permettent pas à la page « es » de se résoudre en copie linguistique :
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
 >
->Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
+>Cette copie linguistique `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
 
 >[!NOTE]
 >

@@ -6,12 +6,10 @@ exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
-workflow-type: ht
-source-wordcount: '4177'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '4204'
+ht-degree: 98%
 ---
-
 # Création et synchronisation de Live Copies{#creating-and-synchronizing-live-copies}
 
 Vous pouvez créer une Live Copy depuis une configuration de page ou de plan directeur, puis gérer l’héritage et la synchronisation.
@@ -61,7 +59,7 @@ Pour créer une configuration de plan directeur :
 
 1. L’option **Créer** permet de créer la configuration de plan directeur en fonction de votre spécification.
 
-### Modification ou suppression d’une configuration de plan directeur  {#editing-or-deleting-a-blueprint-configuration}
+### Modification ou suppression d’une configuration de plan directeur {#editing-or-deleting-a-blueprint-configuration}
 
 Vous pouvez modifier ou supprimer une configuration de plan directeur existante :
 
@@ -144,7 +142,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 * **Chapitres initiaux** : pages enfants des branches de langue de plan directeur à inclure dans la Live Copy.
 * **Chemin de destination** : emplacement de la page racine du site Live Copy.
 * **Titre** : titre de la page racine du site Live Copy.
-* **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy. La valeur par défaut est basée sur le titre.
+* **Nom** : (facultatif) nom du nœud JCR qui stocke la page racine de la Live Copy. La valeur par défaut est basée sur le titre.
 * **Personne propriétaire du site** : (facultatif).
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas synchronisée ultérieurement avec la source.
 * **Configurations du déploiement** : (Facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur. Pour plus d’informations, consultez [Spécification de la configuration de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
@@ -169,7 +167,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan d
 
 ### Création d’une Live Copy dans une Live Copy (configuration de plan directeur) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
-Lorsque vous créez une Live Copy à l’intérieur de la Live Copy existante (créée avec une configuration de plan directeur), vous pouvez insérer n’importe quelle copie de langue ou n’importe quel chapitre qui n’était pas inclus lors de la création initiale de la Live Copy.
+Lorsque vous créez une Live Copy à l’intérieur de la Live Copy existante (créée avec une configuration de plan directeur), vous pouvez insérer n’importe quelle copie linguistique ou n’importe quel chapitre qui n’était pas inclus lors de la création initiale de la Live Copy.
 
 ## Surveillance de votre Live Copy {#monitoring-your-live-copy}
 
@@ -181,9 +179,9 @@ Les propriétés d’une page Live Copy affichent les informations suivantes su
 * **État** : l’état de synchronisation de la Live Copy. Le statut indique si la Live Copy est à jour avec la source, la date de la dernière synchronisation et l’auteur ou l’autrice de la synchronisation.
 * **Configuration** :
 
-   * Si la page est encore soumise à l’héritage Live Copy.
-   * Si la configuration est héritée de la page parent.
-   * Toutes les configurations de déploiement utilisées par la Live Copy.
+  * Si la page est encore soumise à l’héritage Live Copy.
+  * Si la configuration est héritée de la page parent.
+  * Toutes les configurations de déploiement utilisées par la Live Copy.
 
 Pour afficher les propriétés :
 
@@ -233,7 +231,7 @@ Les déploiements sont traités en tant que tâches asynchrones et peuvent être
 
 >[!NOTE]
 >
->Le traitement du déploiement asynchrone nécessite AEM version 6.5.3.0 ou ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
+>Le traitement du déploiement asynchrone nécessite AEM 6.5.3.0 ou une version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -259,7 +257,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 >[!NOTE]
 >
->Le traitement du déploiement asynchrone nécessite AEM version 6.5.3.0 ou ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone, sauf si l’option **Déploiement en arrière-plan** était cochée.
+>Le traitement du déploiement asynchrone nécessite AEM 6.5.3.0 ou une version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone, sauf si l’option **Déploiement en arrière-plan** était cochée.
 
 #### Déploiement d’un plan directeur de l’aperçu de la Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -279,7 +277,7 @@ Les déploiements sont traités en tant que tâches asynchrones et peuvent être
 
 >[!NOTE]
 >
->Le traitement du déploiement asynchrone nécessite AEM version 6.5.3.0 ou ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
+>Le traitement du déploiement asynchrone nécessite AEM 6.5.3.0 ou une version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
 
 ### Synchronisation d’une Live Copy {#synchronizing-a-live-copy}
 
@@ -426,20 +424,20 @@ Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, c�
 
 * Le passage à une Live Copy superficielle :
 
-   * prend immédiatement effet et est irréversible.
+  * prend immédiatement effet et est irréversible.
 
-      * Les pages enfants sont explicitement désolidarisées de la Live Copy. Les autres modifications des pages enfants ne peuvent pas être préservées si elles sont annulées.
+    * Les pages enfants sont explicitement désolidarisées de la Live Copy. Les autres modifications des pages enfants ne peuvent pas être préservées si elles sont annulées.
 
-      * Supprime tous les descendants `LiveRelationships` même s’il s’agit de `LiveCopies` imbriquées.
+    * Supprime tous les descendants `LiveRelationships` même s’il s’agit de `LiveCopies` imbriquées.
 
 * Le passage à une Live Copy profonde :
 
-   * laisse les pages enfants inchangées.
-   * Pour visualiser l’effet de la transition, vous pouvez procéder à un déploiement ; toutes les modifications de contenu sont appliquées en fonction de la configuration de déploiement.
+  * laisse les pages enfants inchangées.
+  * Pour visualiser l’effet de la transition, vous pouvez procéder à un déploiement ; toutes les modifications de contenu sont appliquées en fonction de la configuration de déploiement.
 
 * Le passage à une Live Copy superficielle puis le retour à une Live Copy profonde :
 
-   * traite tous les enfants de la Live Copy (anciennement) peu profonde comme s’ils avaient été créés manuellement et les déplace donc en utilisant `[oldname]_msm_moved name`.
+  * traite tous les enfants de la Live Copy (anciennement) peu profonde comme s’ils avaient été créés manuellement et les déplace donc en utilisant `[oldname]_msm_moved name`.
 
 Pour spécifier ou changer la profondeur :
 
@@ -613,16 +611,16 @@ Il existe des implications liées à l’endroit dans l’arborescence où vous 
 
   Lorsque cette opération est effectuée sur une sous-page (ou branche) dans une Live Copy :
 
-   * les relations en direct sont supprimées pour cette sous-page (ou branche) ;
-   * et les sous-pages ou pages dans la branche Live Copy sont traitées comme si elles avaient été créées manuellement.
+  * les relations en direct sont supprimées pour cette sous-page (ou branche) ;
+  * et les sous-pages ou pages dans la branche Live Copy sont traitées comme si elles avaient été créées manuellement.
 
   *Toutefois*, les sous-pages étant encore soumises aux relations en direct de la branche parent, un autre déploiement de la ou des pages de plan directeur aura à la fois pour effet :
 
-   1. de renommer les pages désolidarisées :
+  1. de renommer les pages désolidarisées :
 
-      * En effet, MSM les considère comme des pages créées manuellement provoquant un conflit, car portant le même nom que les pages Live Copy qu’il tente de créer.
+     * En effet, MSM les considère comme des pages créées manuellement provoquant un conflit, car portant le même nom que les pages Live Copy qu’il tente de créer.
 
-   1. Créez une page Live Copy avec le nom d’origine et contenant les modifications du déploiement.
+  1. Créez une page Live Copy avec le nom d’origine et contenant les modifications du déploiement.
 
   >[!NOTE]
   >

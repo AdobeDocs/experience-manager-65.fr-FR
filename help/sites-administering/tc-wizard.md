@@ -1,24 +1,22 @@
 ---
-title: Assistant Copie de langue
-description: Découvrez comment utiliser l’Assistant Copie de langue dans AEM.
+title: Assistant Copie linguistique
+description: Découvrez comment utiliser l’Assistant Copie linguistique dans AEM.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 100%
-
 ---
+# Assistant Copie linguistique{#language-copy-wizard}
 
-# Assistant Copie de langue{#language-copy-wizard}
-
-L’assistant Copie de la langue est une expérience guidée pour créer et gérer la structure du contenu multilingue. Il est désormais beaucoup plus simple et plus rapide de créer une copie de langue.
+L’assistant Copie linguistique est une expérience guidée pour créer et gérer la structure du contenu multilingue. Il est désormais beaucoup plus simple et plus rapide de créer une copie linguistique.
 
 >[!NOTE]
 >
->L’utilisateur ou l’utilisatrice doit être membre du groupe des administrateurs et administratrices de projet pour créer la copie de langue d’un site.
+>L’utilisateur ou l’utilisatrice doit être membre du groupe projects-administrators pour créer la copie linguistique d’un site.
 
 Pour accéder à cet assistant :
 
@@ -26,7 +24,7 @@ Pour accéder à cet assistant :
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
-1. Sélectionnez Copie de la langue pour ouvrir l’assistant.
+1. Sélectionnez Copie linguistique pour ouvrir l’assistant.
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 

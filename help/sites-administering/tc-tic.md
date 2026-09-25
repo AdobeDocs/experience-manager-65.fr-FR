@@ -7,12 +7,10 @@ exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
-workflow-type: ht
-source-wordcount: '1435'
+workflow-type: tm+mt
+source-wordcount: '1461'
 ht-degree: 100%
-
 ---
-
 # Configuration de la structure d’intégration de traduction{#configuring-the-translation-integration-framework}
 
 Le framework d’intégration de traduction s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM.
@@ -27,7 +25,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 Créez une configuration cloud qui connecte AEM à votre fournisseur de services de traduction.
 
-AEM permet d’établir par défaut une [connexion à Microsoft® Translator](/help/sites-administering/tc-msconf.md). D’autres fournisseurs de technologies de traduction disposant de connecteurs AEM et membres du programme de partenariat d’Adobe Exchange sont disponibles [ici](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
+AEM permet d’établir par défaut une [connexion à Microsoft® Translator](/help/sites-administering/tc-msconf.md). D’autres fournisseurs de technologies de traduction disposant de connecteurs AEM et membres du programme de partenariat d’Adobe Exchange sont disponibles [ici](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Une fois que vous avez installé un package de connecteur, vous pouvez créer une configuration de cloud pour le connecteur. En général, vous devez fournir vos informations d’identification afin de vous authentifier auprès du service de traduction. Pour plus d’informations sur l’ajout d’une configuration cloud pour le connecteur Microsoft Translator, voir [Intégration avec Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
@@ -113,7 +111,7 @@ Les propriétés des communautés contrôlent la façon dont le contenu créé p
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
 | Catégorie de contenu | Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
-| Choix d’un paramètre régional à utiliser comme magasin de partage global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue locale comme [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction internationale est désactivée. |
+| Choix des paramètres régionaux à utiliser comme magasin de partage global | (Facultatif) Si vous sélectionnez des paramètres régionaux pour le stockage du contenu créé par l’utilisateur ou l’utilisatrice, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez les paramètres régionaux comme [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction internationale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 

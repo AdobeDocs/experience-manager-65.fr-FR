@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
-
+source-wordcount: '453'
+ht-degree: 97%
 ---
-
 # Exportateur JSON pour Content Services{#json-exporter-for-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
@@ -82,15 +80,15 @@ Voir également :
 
 * API HTTP Assets
 
-   * [API HTTP Assets](/help/assets/mac-api-assets.md)
+  * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
 * Modèles Sling :
 
-   * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+  * [Modèles Sling - Association d’une classe de modèles à un type de ressource depuis la version 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM avec JSON :
 
-   * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
+  * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentation connexe {#related-documentation}
 

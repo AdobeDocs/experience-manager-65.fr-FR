@@ -1,10 +1,14 @@
 ---
 title: Développer des formulaires (IU classique)
+
 description: Découvrez comment développer des formulaires pour l’interface utilisateur classique d’Adobe Experience Manager.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
-
+source-wordcount: '1953'
+ht-degree: 91%
 ---
-
 # Développer des formulaires (IU classique){#developing-forms-classic-ui}
 
 La structure de base d’un formulaire est la suivante :
@@ -67,13 +69,13 @@ Vous pouvez configurer une liste déroulante avec différentes valeurs à sélec
 
 Le **Chemin de chargement des éléments** peut servir à accéder à une liste à partir d’un dossier du référentiel et les précharger dans le champ :
 
-1. Créez un dossier sling (`sling:Folder`)
+1. Créez un dossier sling ( `sling:Folder`)
 par exemple, `/etc/designs/<myDesign>/formlistvalues`
 
 1. Ajoutez une nouvelle propriété (`myList`, par exemple) de type chaîne à plusieurs valeurs (`String[]`) pour contenir la liste déroulante des éléments. Le contenu peut être également importé à l’aide d’un script (script JSP ou curl dans un script shell).
 
-1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments**
-Par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
+1. Utilisez le chemin complet dans le champ **Chemin de chargement des éléments** :
+par exemple, `/etc/designs/geometrixx/formlistvalues/myList`
 
 Notez que si les valeurs de `String[]` sont formatées comme suit :
 
@@ -117,9 +119,9 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 
    * Facultatif :
 
-      * `jcr:title` : indiquez un titre de votre choix ; il sera affiché dans la liste de sélection déroulante. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
+     * `jcr:title` : indiquez un titre de votre choix ; il sera affiché dans la liste de sélection déroulante. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
 
-      * `jcr:description` : indiquez la description de votre choix.
+     * `jcr:description` : indiquez la description de votre choix.
 
 1. Dans ce dossier, créez un nœud de boîte de dialogue :
 
@@ -128,12 +130,12 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 1. Dans le dossier, créez l’une des options suivantes :
 
    1. Créer un script de publication.
-Le nom du script est `post.POST.<extension>`, par exemple `post.POST.jsp`
-Le script de publication est appelé lorsqu’un formulaire est envoyé pour traitement. Il contient le code qui gère les données en provenance du formulaire `POST`.
+      Le nom du script est `post.POST.<extension>`, par exemple, . `post.POST.jsp`
+      Le script de publication est appelé lorsqu’un formulaire est envoyé pour le traiter. Il contient le code qui gère les données en provenance du `POST` de formulaire.
 
    1. Ajouter un script de transfert qui est appelé lors de l’envoi du formulaire.
-Le nom du script est `forward.<extension`>, par exemple `forward.jsp`
-Ce script peut définir un chemin d’accès. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
+      Le nom du script est `forward.<extension`>, par exemple, . `forward.jsp`
+      Ce script peut définir un chemin d’accès. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
 
    L’appel nécessaire est `FormsHelper#setForwardPath` (2 variantes). Un cas de figure classique consiste à effectuer une validation, ou appliquer une logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
 
@@ -148,35 +150,35 @@ Ce script peut définir un chemin d’accès. La requête actuelle est ensuite t
 
    * Lors du rendu du formulaire (`GET`) :
 
-      1. `init.jsp`
-      1. pour toutes les contraintes du champ : `clientvalidation.jsp`
-      1. validationRT du formulaire : `clientvalidation.jsp`
-      1. le formulaire est chargé via la ressource de chargement si elle est définie
-      1. `addfields.jsp` pendant le rendu de `<form></form>`
+     1. `init.jsp`
+     1. pour toutes les contraintes du champ : `clientvalidation.jsp`
+     1. validationRT du formulaire : `clientvalidation.jsp`
+     1. le formulaire est chargé via la ressource de chargement si elle est définie
+     1. `addfields.jsp` pendant le rendu de `<form></form>`
 
    * lors de la gestion d’un formulaire `POST` :
 
-      1. `init.jsp`
-      1. pour toutes les contraintes du champ : `servervalidation.jsp`
-      1. validationRT du formulaire : `servervalidation.jsp`
-      1. `forward.jsp`
-      1. si un chemin de transfert a été défini, (`FormsHelper.setForwardPath`), transférez la requête, puis appelez `cleanup.jsp`
+     1. `init.jsp`
+     1. pour toutes les contraintes du champ : `servervalidation.jsp`
+     1. validationRT du formulaire : `servervalidation.jsp`
+     1. `forward.jsp`
+     1. si un chemin de transfert a été défini, (`FormsHelper.setForwardPath`), transférez la requête, puis appelez `cleanup.jsp`
 
-      1. si aucun chemin de transfert n’a été défini, appelez `post.POST.jsp` (se termine ici, aucun fichier `cleanup.jsp` n’est appelé)
+     1. si aucun chemin de transfert n’a été défini, appelez `post.POST.jsp` (se termine ici, aucun fichier `cleanup.jsp` n’est appelé)
 
 1. De nouveau, dans le dossier, vous pouvez éventuellement ajouter l’un des éléments suivants :
 
    1. Un script pour ajouter des champs.
-Le nom du script est `addfields.<extension>`, par exemple `addfields.jsp`
-Un script `addfields` est appelé immédiatement après l’écriture du HTML pour le début du formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
+      Le nom du script est `addfields.<extension>`, par exemple, . `addfields.jsp`
+      Un script `addfields` est appelé immédiatement après l’écriture de l’HTML pour le début du formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
 
    1. Un script d’initialisation.
-Le nom du script est `init.<extension>`, par exemple `init.jsp`
-Ce script est appelé lors du rendu du formulaire. Il peut être utilisé pour initialiser des caractéristiques d’action.
+      Le nom du script est `init.<extension>`, par exemple, . `init.jsp`
+      Ce script est appelé lors du rendu du formulaire. Il peut être utilisé pour initialiser des caractéristiques d’action.
 
    1. Un script de nettoyage.
-Le nom du script est `cleanup.<extension>`, par exemple `cleanup.jsp`
-Ce script peut être utilisé pour effectuer le nettoyage.
+      Le nom du script est `cleanup.<extension>`, par exemple, . `cleanup.jsp`
+      Ce script peut être utilisé pour effectuer le nettoyage.
 
 1. Utilisez le composant **Forms** dans un système de paragraphes (parsys). La liste déroulante **Type d’action** comprend désormais votre nouvelle action.
 
@@ -212,18 +214,18 @@ Vous pouvez ajouter vos propres contraintes pour un champ spécifique (sous `/ap
 
    * Facultatif :
 
-      * `jcr:title` : indiquez le titre de votre choix ; il sera affiché dans la liste de sélection. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
-      * `hint` : informations supplémentaires à l’intention de l’utilisateur, concernant la façon d’utiliser le champ
+     * `jcr:title` : indiquez le titre de votre choix ; il sera affiché dans la liste de sélection. S’il n’est pas défini, c’est le nom du nœud qui est affiché.
+     * `hint` : informations supplémentaires à l’intention de l’utilisateur, concernant la façon d’utiliser le champ
 
 1. Les scripts suivants peuvent s’avérer nécessaires à l’intérieur de ce dossier :
 
-   * Un script de validation client :
-Le nom du script est `clientvalidation.<extension>`, par exemple `clientvalidation.jsp`
-Il est appelé lorsque le champ de formulaire est rendu. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
+   * Un script de validation client :
+     Le nom du script est `clientvalidation.<extension>`, par exemple, . `clientvalidation.jsp`
+     Elle est appelée lorsque le champ de formulaire est rendu. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
 
-   * Un script de validation du serveur :
-Le nom du script est `servervalidation.<extension>`, par exemple `servervalidation.jsp`
-Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur après son envoi.
+   * Un script de validation du serveur :
+     Le nom du script est `servervalidation.<extension>`, par exemple, . `servervalidation.jsp`
+     Elle est appelée lors de l’envoi du formulaire. Il peut être utilisé pour valider le champ sur le serveur après son envoi.
 
 >[!NOTE]
 >
@@ -246,7 +248,7 @@ Vous pouvez ensuite définir :
 
 Vous pouvez configurer votre formulaire pour afficher ou masquer des composants de formulaire en fonction de la valeur d’autres champs du formulaire.
 
-La modification de la visibilité d’un champ de formulaire est utile lorsque le champ n’est nécessaire que dans des conditions spécifiques. Par exemple, sur un formulaire de commentaire, une question demande aux clientes et aux clients s’ils souhaitent que des informations sur les produits leur soient envoyées par e-mail. Lorsque vous sélectionnez oui, un champ de texte s’affiche pour permettre au client ou à la cliente de saisir son adresse e-mail.
+La modification de la visibilité d’un champ de formulaire est utile lorsque le champ n’est nécessaire que dans des conditions spécifiques. Par exemple, sur un formulaire de feedback, une question demande aux clientes et aux clients s’ils souhaitent que des informations sur les produits leur soient envoyées par e-mail. Lorsque vous sélectionnez oui, un champ de texte s’affiche pour permettre au client ou à la cliente de saisir son adresse e-mail.
 
 Utilisez la boîte de dialogue **Modifier les règles Afficher / Masquer** pour spécifier dans quelles conditions un composant de formulaire est affiché ou masqué.
 
@@ -281,8 +283,8 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
    * Dans la liste déroulante située à la fin de la ligne supérieure, sélectionnez :
 
-      * **all** : si toutes les conditions doivent être vraies pour afficher ou masquer le composant.
-      * **any** : si une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant
+     * **all** : si toutes les conditions doivent être vraies pour afficher ou masquer le composant.
+     * **any** : si une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant
 
    * Sur la ligne de condition (une valeur est présentée par défaut), sélectionnez un composant, un opérateur, puis spécifiez une valeur.
    * Ajoutez d’autres conditions si nécessaire en cliquant sur **Ajouter une condition**.
@@ -311,7 +313,7 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher / Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant qui est supprimé ou dont la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 
-Lorsque la configuration Afficher / Masquer n’est pas valide, elle est uniquement fournie sous la forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
+Lorsque la configuration Afficher / Masquer n’est pas valide, elle est uniquement fournie sous la forme de code JavaScript. Modifiez le code pour résoudre les problèmes.Le code utilise la propriété Nom de l’élément utilisée à l’origine pour référencer les composants.
 
 ### Développement de scripts à utiliser avec des formulaires {#developing-scripts-for-use-with-forms}
 
@@ -322,4 +324,4 @@ Vous pouvez utiliser ceci pour des actions telles que l’appel d’un service a
 * Définissez le type de ressource de validation.
 * Insérez un script pour la validation :
 
-   * Dans le fichier JSP, appelez le service Web et créez un objet `com.day.cq.wcm.foundation.forms.ValidationInfo` contenant vos messages d’erreur. S’il existe des erreurs, les données du formulaire ne sont pas publiées.
+  * Dans le fichier JSP, appelez le service Web et créez un objet `com.day.cq.wcm.foundation.forms.ValidationInfo` contenant vos messages d’erreur. S’il existe des erreurs, les données du formulaire ne sont pas publiées.
