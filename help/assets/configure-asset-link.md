@@ -7,12 +7,10 @@ feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
-workflow-type: ht
-source-wordcount: '3059'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '3255'
+ht-degree: 99%
 ---
-
 # Configuration d’Experience Manager Assets pour Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html) simplifie la collaboration entre les créatifs et les spécialistes du marketing dans le processus de création de contenu. Il connecte Adobe Experience Manager Assets aux applications de bureau du Creative Cloud Adobe InDesign, Adobe Photoshop et Adobe Illustrator. Le panneau Adobe Asset Link permet aux créatifs d’accéder au contenu stocké dans AEM Assets et de le modifier sans quitter les applications de création qui leur sont les plus familières.
@@ -33,7 +31,7 @@ Assurez-vous d’installer le pack de services et le package appropriés, si né
 
 | Fonctionnalité d’Assets | Version d’Experience Manager et configuration requises pour la prise en charge |
 |--- |--- |
-| Asset Link fonctionne par défaut. | Experience Manager 6,5 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6, ou une version ultérieure </br> Adobe recommande d’installer la dernière version du [pack de services (SP) Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
+| Asset Link fonctionne par défaut. | Experience Manager 6.5 et 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6, ou une version ultérieure. </br> Adobe recommande d’installer la dernière version du pack de services (SP) [Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
 | Asset Link fonctionne après l’installation d’un package. | Pour Experience Manager 6.4.0 à 6.4.3, installez le package [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support). |
 | Intégration d’Adobe Stock | Experience Manager 6.4.2 ou version ultérieure |
 | Recherche visuelle ou par analogie | Experience Manager 6.5.0 ou version ultérieure |
@@ -47,7 +45,7 @@ Adobe recommande d’installer le package de configuration [adobe-asset-link-con
 >
 >Si votre instance d’Experience Manager est configurée pour la connexion utilisateur avec des comptes Adobe IMS, n’utilisez pas le package de configuration. Au lieu de cela, [configurez manuellement](#manual-configuration) votre instance d’Experience Manager.
 
-1. Pour ouvrir le gestionnaire de packages, dans l’interface web d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Partage de packages]**. Installer le package `adobe-asset-link-config`.
+1. Pour ouvrir le gestionnaire de modules, dans l’interface web d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Partage de packages]**. Installer le package `adobe-asset-link-config`.
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**. Localisez la configuration du **[!UICONTROL fournisseur IMS OAuth Adobe Granite]** et cliquez pour la modifier.
 
@@ -131,7 +129,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 1. Une instance d’Experience Manager en cours d’exécution avec l’authentification du porteur configurée pour AAL
 1. Installez le package suivant (pack de services 11) sur votre instance Experience Manager 6.5.
 
-   [Télécharger Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Téléchargement d’Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Contactez le [!UICONTROL service clientèle] pour obtenir l’identifiant client et la clé secrète pour l’authentification du porteur de votre organisation IMS.
 
@@ -248,7 +246,7 @@ Pour plus d’informations et pour la configuration d’Experience Manager, con
 
 ## Création d’un index personnalisé dans les versions Experience Manager 6.4.x {#create-custom-index}
 
-Experience Manager contient des index utilisés pour l’interrogation. Créez l’index personnalisé suivant pour la version spécifiée. Experience Manager 6.5.0 contient cet index par défaut. Adobe Asset Link a besoin de cet index pour déterminer les ressources qu’un utilisateur a extraites.
+Experience Manager contient des index utilisés pour les requêtes. Créez l’index personnalisé suivant pour la version spécifiée. Experience Manager 6.5.0 contient cet index par défaut. Adobe Asset Link a besoin de cet index pour déterminer les ressources qu’un utilisateur a extraites.
 
 1. Dans le CRXDE, localisez le nœud `/oak:index`. Créez un nœud nommé `cqDrivelock` et définissez son `Type` sur `oak:QueryIndexDefinition`.
 

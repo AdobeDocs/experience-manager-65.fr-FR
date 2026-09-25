@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 100%
-
 ---
-
 # Journalisation des workflows AEM Forms{#logging-in-aem-forms-workflows}
 
 Les étapes de Forms Workflow fournissent des journaux détaillés pour déboguer facilement les problèmes liés aux workflows. Activez la journalisation de débogage pour les workflows AEM Forms afin d’afficher les journaux.
@@ -81,7 +79,7 @@ Procédez comme suit pour activer la journalisation du débogage pour les workfl
 
 1. Accédez à la page de configuration de la console web AEM à l’adresse:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Sélectionnez **[!UICONTROL Sling]** > **[!UICONTROL Prise en charge du journal]**.
 1. Appuyez sur **[!UICONTROL Ajouter une nouvelle journalisation]**.

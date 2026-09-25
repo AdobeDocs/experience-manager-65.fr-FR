@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 100%
-
+source-wordcount: '1929'
+ht-degree: 99%
 ---
-
 # Créer et utiliser des fragments de formulaires adaptatifs dans un formulaire adaptatif en fonction des composants principaux {#adaptive-form-fragments}
 
 | Version | Lien de l’article |
@@ -158,11 +156,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Aperçu</p> </td>
+   <td><p>Prévisualisation</p> </td>
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a>Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné. Pour plus d’informations, voir <a>Créer et gérer des révisions</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '484'
 ht-degree: 100%
-
 ---
-
 # Application de bureau Adobe Experience Manager (AEM) pour AEM Forms {#aem-desktop-app-for-aem-forms}
 
 L’application de bureau AEM vous permet de mapper le référentiel des actifs Adobe Experience Manager (AEM) et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les ressources synchronisées et les fichiers binaires dans un explorateur de fichiers et utiliser diverses applications pour modifier les fichiers selon vos besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer des fichiers directement dans le logiciel. Vous pouvez, par exemple, ouvrir et modifier un fichier XDP directement dans Designer. Les modifications apportées aux ressources localement sont répercutées dans le référentiel AEM Assets et dans l’interface utilisateur AEM Forms.
@@ -24,7 +22,7 @@ Vous pouvez télécharger l’application à partir d’une instance AEM. Pour o
 
 ## Actifs AEM Forms pris en charge par l’application de bureau AEM {#aem-forms-assets-supported-in-aem-desktop-app}
 
-Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des types suivants : modèles de formulaire (.xdp), formulaire PDF (.pdf), document (.pdf), images, schéma XML (.xsd), feuilles de style (.xfs). L’application répertorie tous les autres fichiers (fichiers non pris en charge) sous la forme de fichiers de 0 octet. L’utilisateur ou l’utilisatrice est ainsi au courant de l’existence des autres ressources disponibles sur le serveur AEM Forms. 
+Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des types suivants : modèles de formulaires (.xdp), formulaire PDF (.pdf), document (.pdf), images, schéma XML (.xsd), feuilles de style (.xfs). L’application répertorie tous les autres fichiers (fichiers non pris en charge) sous la forme de fichiers de 0 octet. L’utilisateur ou l’utilisatrice est ainsi au courant de l’existence des autres ressources disponibles sur le serveur AEM Forms.
 
 >[!NOTE]
 >
@@ -43,6 +41,6 @@ L’application de bureau AEM utilise le protocole WebDAV sous Microsoft® Wind
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
 
    Une fois la connexion établie, l’application remplit les dossiers `content/dam` et `content/dam/formsanddocuments`. En plus de déplacer des fichiers des dossiers ci-dessus vers des dossiers locaux et vice versa, vous pouvez utiliser l’application pour déplacer le contenu entre des dossiers remplis automatiquement.

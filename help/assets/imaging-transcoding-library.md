@@ -8,11 +8,9 @@ exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 98%
-
+source-wordcount: '1015'
+ht-degree: 100%
 ---
-
 # Bibliothèque de transcodage d’imagerie {#imaging-transcoding-library}
 
 La Bibliothèque de transcodage d’imagerie d’Adobe est une solution de traitement d’images propriétaire qui peut exécuter des fonctions essentielles de gestion des images, notamment :
@@ -35,7 +33,7 @@ En plus de prendre en charge un large éventail de formats de fichiers et de pro
 
 ## Plateformes prises en charge {#supported-platforms}
 
-La bibliothèque ITL est disponible uniquement pour les distributions RHEL 8, RHEL 7 et CentOS 7.
+La bibliothèque de transcodage d’imagerie est disponible uniquement pour les distributions RHEL 8, RHEL 7 et CentOS 7.
 
 >[!NOTE]
 >
@@ -72,15 +70,15 @@ Vous pouvez configurer les options suivantes pour le paramètre `-resize` :
 
 Pour configurer le traitement de la bibliothèque de transcodage d’imagerie, créez un fichier de configuration et mettez à jour le workflow pour l’exécuter.
 
-### Création d’un fichier de configuration pour le lot extrait {#create-conf-file}
+### Création d’un fichier de configuration pour le bundle extrait {#create-conf-file}
 
 Pour configurer la bibliothèque, créez un fichier CONF pour indiquer les bibliothèques en procédant comme suit. Vous avez besoin d’autorisations de type administrateur ou racine.
 
-1. Téléchargez le [package de la bibliothèque de transcodage d’imagerie dans la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de packages. Le package est compatible avec [!DNL Experience Manager] 6.5.
+1. Téléchargez le [package de la bibliothèque de transcodage d’imagerie dans la distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide du gestionnaire de modules. Le package est compatible avec [!DNL Experience Manager] 6.5.
 
-1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web, puis cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Lots]**. Pour ouvrir la console des lots, vous pouvez également accéder à l’URL `https://[aem_server:[port]/system/console/bundles/`. Localisez le lot `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
+1. Pour connaître un ID de bundle pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console web, puis cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Pour ouvrir la console des bundles, vous pouvez également accéder à l’URL `https://[aem_server:[port]/system/console/bundles/`. Recherchez le bundle `com.day.cq.dam.cq-dam-switchengine` et son identifiant.
 
-1. Vérifiez que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom du dossier est construit à l’aide de l’ID de lot. Par exemple, la commande sera `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID de lot est `588`.
+1. Vérifiez que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom du dossier est construit à l’aide de l’ID de bundle. Par exemple, la commande sera `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID de bundle est `588`.
 
 1. Créez un fichier `SWitchEngineLibs.conf` pour créer un lien vers la bibliothèque.
 

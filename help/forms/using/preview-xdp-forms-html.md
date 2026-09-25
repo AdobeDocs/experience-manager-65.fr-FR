@@ -1,20 +1,23 @@
 ---
 title: Générer l’aperçu HTML5 d’un formulaire XDP
+
 description: L’onglet Aperçu HTML dans LiveCycle Designer permet de prévisualiser les formulaires tels qu’ils apparaissent dans un navigateur.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '807'
 ht-degree: 100%
-
 ---
-
 # Générer l’aperçu HTML5 d’un formulaire XDP{#generate-html-preview-of-an-xdp-form}
 
 Lors de la conception d’un formulaire dans AEM Forms Designer, en plus de la prévisualisation du rendu du PDF d’un formulaire, vous pouvez également prévisualiser un rendu HTML5 de celui-ci. Vous pouvez utiliser l’onglet **Aperçu HTML** pour prévisualiser un formulaire tel qu’il apparaîtra dans un navigateur.
@@ -33,17 +36,17 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
    `https://'[server]:[port]'/lc/system/console/configMgr` sur AEM Forms s’exécutant sur JEE.
 1. Localisez et cliquez sur la boîte de configuration **Service d’authentification Apache Sling** pour l’ouvrir en mode d’édition.
 
-1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises : 
+1. Selon que vous exécutez AEM Forms sur OSGi ou JEE, ajoutez ce qui suit dans le **champ** Conditions d’authentification requises :
 
-   *  d’AEM Forms sur JEE
+   * d’AEM Forms sur JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms sur OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -56,7 +59,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 Le [mode protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez le désactiver pour qu’un environnement de développement effectue un aperçu HTML5 de formulaires dans Designer. Procédez comme suit pour le désactiver :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
+1. Connectez-vous à la console web AEM en tant qu’administrateur ou administratrice.
 
    * L’URL d’AEM Forms on OSGi est `https://'[server]:[port]'/system/console/configMgr`
    * L’URL d’AEM Forms on JEE est `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -74,14 +77,14 @@ Le [mode protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.
    * **Contexte d’aperçu HTML :** chemin du profil pour le rendu des formulaires XFA. Les profils par défaut suivants sont utilisés pour afficher l’aperçu du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
 
    * **Contexte de Forms Manager :** chemin de contexte du déploiement de l’interface utilisateur de Forms Manager. Les valeurs par défaut sont :
 
-      * `/aem/forms` (AEM Forms on OSGi)
-      * `/lc/forms` (AEM Forms on JEE)
+     * `/aem/forms` (AEM Forms on OSGi)
+     * `/lc/forms` (AEM Forms on JEE)
 
    >[!NOTE]
    >

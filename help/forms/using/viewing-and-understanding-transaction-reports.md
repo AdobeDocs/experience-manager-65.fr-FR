@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # Afficher et comprendre les rapports de transaction pour AEM Forms sur OSGi{#viewing-and-understanding-transaction-reports}
 
 Les rapports de transaction vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L’objectif derrière le suivi de ces transactions est de prendre une décision éclairée concernant l’utilisation du produit et de réévaluer les investissements en matériel et en logiciels. Pour plus d’informations, voir [Présentation des rapports sur les transactions AEM Forms](../../forms/using/transaction-reports-overview.md).
@@ -57,19 +55,19 @@ Seuls les membres du groupe administrateur-fd peuvent voir les rapports des tran
 
 Les transactions sont mises en cache en mémoire avant d’être stockées dans le référentiel. Le processus est suivi pour s’assurer qu’il n’y a pas d’écritures fréquentes dans le référentiel. Par défaut, la période de mise en cache (période de purge des transactions) est définie sur 60 secondes. Vous pouvez modifier la période par défaut en fonction de votre environnement. Effectuez les opérations suivantes pour modifier la période de mise en cache par défaut :
 
-1. Connectez-vous aux instances de création en tant qu’administrateur. Accédez à **Outils** > **Opérations** > **Console web**.
+1. Connectez-vous aux instances de création en tant qu’administrateur ou administratrice. Accédez à **Outils** > **Opérations** > **Console web**.
 1. Recherchez et ouvrez le service **Fournisseur de stockage du référentiel de transactions Forms**.
 1. Spécifiez le nombre de secondes dans le champ **Période de purge des transactions**. Cliquez sur **Enregistrer**.
 
 La réplication inverse copie les données de transaction dans la boîte d’envoi par défaut des instances de création. Vous pouvez placer les données de transaction dans une boîte d’envoi personnalisée. Pour définir une boîte d’envoi personnalisée, procédez comme suit :
 
-1. Connectez-vous aux instances de création en tant qu’administrateur. Accédez à **Outils** > **Opérations** > **Console web**.
+1. Connectez-vous aux instances de création en tant qu’administrateur ou administratrice. Accédez à **Outils** > **Opérations** > **Console web**.
 1. Recherchez et ouvrez le service **Forms Transaction Repository Storage Provider**.
-1. Indiquez le nom de la boîte d’envoi personnalisée le champ **Boîtes dʼenvoi**. Cliquez sur **Enregistrer**. Une boîte d’envoi du nom spécifié est créée sur toutes les instances d’auteur.
+1. Indiquez le nom de la boîte d’envoi personnalisée le champ **Boîtes dʼenvoi**. Cliquez sur **Enregistrer**. Une boîte d’envoi du nom spécifié est créée sur toutes les instances de création.
 
 ## Afficher le rapport de transaction {#viewing-the-transaction-report}
 
-Vous pouvez afficher les rapports de transaction sur les instances d’auteur ou de publication. Le rapport de transaction sur l’instance d’auteur fournit une somme agrégée de toutes les transactions qui ont lieu sur les instances d’auteur et de publication configurées. Le rapport de transaction sur l’instance de publication fournit un décompte des transactions qui ont lieu uniquement sur l’instance de publication sous-jacente. Pour afficher le rapport, procédez comme suit :
+Vous pouvez afficher les rapports de transaction sur les instances d’auteur ou de publication. Le rapport de transaction sur l’instance de création fournit une somme agrégée de toutes les transactions qui ont lieu sur les instances de création et de publication configurées. Le rapport de transaction sur l’instance de publication fournit un décompte des transactions qui ont lieu uniquement sur l’instance de publication sous-jacente. Pour afficher le rapport, procédez comme suit :
 
 1. Connectez-vous au serveur AEM Forms à lʼadresse `https://[hostname]:'port'`.
 1. Accédez à **Outils** > **Forms** > **Afficher le rapport de transaction**.
@@ -80,7 +78,7 @@ AEM Forms affiche les rapports de transaction depuis la date configurée, comme
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* Utilisez les options **Réinitialiser la date à aujourd’hui** pour réinitialiser les enregistrements de transactions. Lorsque vous réinitialisez la date à aujourd’hui, tous les enregistrements des transactions précédentes sont perdus. Lorsque vous réinitialisez la date sur une instance d’auteur, la modification n’affecte pas les rapports de transaction sur les instances de publication et inversement.
+* Utilisez les options **Réinitialiser la date à aujourd’hui** pour réinitialiser les enregistrements de transactions. Lorsque vous réinitialisez la date à aujourd’hui, tous les enregistrements des transactions précédentes sont perdus. Lorsque vous réinitialisez la date sur une instance de création, la modification n’affecte pas les rapports de transaction sur les instances de publication et inversement.
 * Utilisez lʼoption **Afficher les transactions des seules instances de publication** pour afficher toutes les transactions qui se sont produites uniquement sur l’instance de publication ou la batterie de publication configurée.
 * Pour afficher les transactions correspondantes, utilisez les catégories suivantes : **Document traité**, **Documents restitués** et **Formulaires envoyés**. Pour plus dʼinformations sur le type de transactions comptabilisées dans ces catégories, consultez la section [API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md).
 

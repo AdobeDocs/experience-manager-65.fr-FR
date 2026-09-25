@@ -1,21 +1,23 @@
 ---
 title: Prise en charge du chiffrement des propriétés de configuration
+
 description: Découvrez la prise en charge du chiffrement des propriétés de configuration fournie dans AEM.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
+
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '280'
 ht-degree: 100%
-
 ---
-
 # Prise en charge du chiffrement des propriétés de configuration{#encryption-support-for-configuration-properties}
 
 ## du commerce électronique {#overview}

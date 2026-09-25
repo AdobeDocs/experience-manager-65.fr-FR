@@ -1,28 +1,31 @@
 ---
 title: Obtenir des documents XDP et PDF dans AEM Forms
+
 description: AEM Forms vous permet de charger des formulaires et des ressources prises en charge à utiliser avec les formulaires adaptatifs. Vous pouvez également charger en masse des formulaires et des ressources connexes au format ZIP.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 100%
-
 ---
-
 # Obtenir des documents XDP et PDF dans AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Présentation {#overview}
 
 Vous pouvez importer vos formulaires, de votre système de fichiers local vers le référentiel CRX, en les chargeant dans AEM Forms. L’opération de chargement est prise en charge pour les types de ressources suivants :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (documents PDF plats)
 
@@ -66,7 +69,7 @@ Le serveur AEM Forms permet d’exécuter du code JavaScript. Un code JavaScri
 
 Le mode protégé est activé par défaut. Si nécessaire, vous pouvez désactiver le mode protégé :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. L’URL est la suivante : https://&#39;[serveur]:[port]&#39;/system/console/configMgr
+1. Connectez-vous à la console web AEM en tant qu’administrateur ou administratrice. L’URL est la suivante : https://&#39;[serveur]:[port]&#39;/system/console/configMgr
 1. Ouvrez Configurations de Mobile Forms pour modification.
 1. Désélectionnez l’option Mode protégé et cliquez sur **Enregistrer**. Le mode Protégé est désactivé.
 

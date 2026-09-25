@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '502'
 ht-degree: 100%
-
 ---
-
 # Externalisation d’URL{#externalizing-urls}
 
 Dans Adobe Experience Manager (AEM), **Externalizer** est un service OSGi qui vous permet de transformer, par programmation, un chemin d’accès aux ressources (`/path/to/my/page`, par exemple) en une URL externe et absolue (`https://www.mycompany.com/path/to/my/page`, par exemple) en faisant précéder le chemin d’accès d’un DNS préconfiguré.
@@ -51,8 +49,8 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
    * Le **schéma** est http ou https, mais peut également être ftp, etc.
 
-      * Utilisez https pour appliquer des liens https, le cas échéant.
-      * Il est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
+     * Utilisez https pour appliquer des liens https, le cas échéant.
+     * Il est utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
 
    * **Server** est le nom d’hôte (il peut s’agir d’un nom de domaine ou d’une adresse IP).
    * **Port** (facultatif) est le numéro de port.

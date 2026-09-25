@@ -11,11 +11,9 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
-
+source-wordcount: '1015'
+ht-degree: 95%
 ---
-
 # Administration d’instances de workflow{#administering-workflow-instances}
 
 La console de workflows fournit plusieurs outils permettant d’administrer les instances de workflow pour vérifier qu’elles s’exécutent comme prévu.
@@ -33,7 +31,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 * **Échecs** : affichez l’historique des workflows terminés avec des erreurs
 * **Attribution automatique** : configurez l’attribution automatique des workflows aux modèles
 
-## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
+## Su du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
 1. Avec la navigation, sélectionnez **Outils**, puis **Workflows**.
 1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
@@ -96,10 +94,10 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre les mesures appropriées une fois la cause d’origine résolue :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher **Message d’échec**, **Étape**, et **Pile des échecs**.
+Ouvre une fenêtre pour afficher les **Message d’échec**, **Étape** et **Pile des échecs**.
 
 * **Ouvrir l’historique**
-Affiche des détails sur l’historique des workflows.
+Affiche les détails de l’historique du workflow.
 
 * **Relancer l’étape** : exécute à nouveau l’instance du composant de l’étape de script. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
 * **Arrêter** : arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour celui-ci. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
@@ -189,7 +187,7 @@ Les données traitées par les workflows sont stockées dans l’enregistrement 
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne sont pas conservées dans JCR pour les instances de workflow des modèles marqués pour le stockage externe.
 
-La propriété *userMetadataPersistenceEnabled* sera stockée dans le *nœud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* est stockée sur le nœud *jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow sous la forme *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 

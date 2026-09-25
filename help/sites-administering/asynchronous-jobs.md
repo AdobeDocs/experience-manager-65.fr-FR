@@ -7,11 +7,9 @@ feature: Developing
 role: Developer
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 100%
-
+source-wordcount: '806'
+ht-degree: 97%
 ---
-
 # Opérations asynchrones {#asynchronous-operations}
 
 Pour réduire l’impact négatif sur les performances, Adobe Experience Manager traite de manière asynchrone certaines opérations de longue durée et requérant de nombreuses ressources système. Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter en série selon la disponibilité des ressources système.
@@ -36,11 +34,11 @@ Vous pouvez afficher le statut des traitements asynchrones à partir du tableau 
 
 Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-authoring/inbox.md) et par e-mail (si activé).
 
-Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
+Pour afficher le statut des opérations asynchrones en détail, accédez à la page **[!UICONTROL Statut des tâches asynchrones]**.
 
 1. Dans l’interface Experience Manager, cliquez sur **[!UICONTROL Opérations]** > **[!UICONTROL Tâches]**.
 
-1. Sur la page **[!UICONTROL État des tâches asynchrones]**, passez en revue les détails des opérations.
+1. Sur la page **[!UICONTROL Statut des tâches asynchrones]**, passez en revue les détails des opérations.
 
    ![État et détails des opérations asynchrones](assets/async-operation-status.png)
 
@@ -74,7 +72,7 @@ Pour afficher l’état des opérations asynchrones en détail, accédez à la p
 
 ## Purge des tâches terminées {#purging-completed-jobs}
 
-AEM exécute une tâche de purge quotidienne à 1 h du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
+AEM exécute une tâche de purge quotidienne à 1 h du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
 
 Vous pouvez modifier la planification de la tâche de purge et la durée pendant laquelle les détails des tâches terminées sont conservés avant d’être supprimées. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles des détails sont conservés à tout moment.
 
@@ -103,7 +101,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
    ![Seuil de suppression des ressources](assets/async-delete-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de ressources asynchrones {#configuring-asynchronous-move-operations}
@@ -116,14 +114,14 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
 
 1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
+1. Cochez l’option **Activer les notifications par e-mail** pour recevoir des notifications par e-mail concernant le statut de cette tâche, par exemple, succès ou échec.
 
    ![Configuration MSM](assets/async-msm.png)
 

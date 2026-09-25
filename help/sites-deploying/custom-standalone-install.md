@@ -8,12 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
-workflow-type: ht
-source-wordcount: '1614'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1637'
+ht-degree: 99%
 ---
-
 # Installer une instance autonome personnalisée{#custom-standalone-install}
 
 Cette section décrit les options disponibles lors de l’installation d’une instance AEM autonome. Vous pouvez également lire [Éléments de stockage](/help/sites-deploying/storage-elements-in-aem-6.md) pour plus d’informations sur le choix du type de stockage principal après l’installation d’AEM 6.
@@ -62,7 +60,7 @@ Voici à quoi doivent ressembler les paramètres supplémentaires JVM au démarr
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-Enfin, si vous exécutez une instance mise à jour d’AEM 6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
+Enfin, si vous exécutez une instance mise à niveau d’AEM 6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
 
 * `felix.bootdelegation.implicit`
 
@@ -77,13 +75,13 @@ Les **modes d’exécution** vous permettent d’ajuster votre instance d’AEM 
 Par défaut, le dossier `crx-quickstart/install` est surveillé pour les fichiers.
 Ce dossier n’existe pas, mais peut être simplement créé au moment de l’exécution.
 
-En présence d’un lot, la configuration ou le package de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
-Il s’agit d’une autre méthode pour placer des lots, des packages de contenu ou des configurations dans le référentiel.
+En présence d’un bundle, la configuration ou le module de contenu est placé dans ce répertoire. Il est automatiquement sélectionné et installé. S’il est supprimé, il est désinstallé.
+Il s’agit d’une autre méthode pour placer des bundles, des modules de contenu ou des configurations dans le référentiel.
 
 Cela est particulièrement intéressant pour plusieurs cas d’utilisation :
 
 * Au cours du développement, il peut être plus facile de placer un élément dans le système de fichiers.
-* Si un problème se produit, la console web et le référentiel ne sont pas accessibles. Vous pouvez ainsi placer des lots supplémentaires dans ce répertoire et ils doivent être installés.
+* Si un problème se produit, la console web et le référentiel ne sont pas accessibles. Vous pouvez ainsi placer des bundles supplémentaires dans ce répertoire et ils doivent être installés.
 * Vous pouvez créer le dossier `crx-quickstart/install` avant le lancement du démarrage rapide et vous pouvez y placer des packages supplémentaires.
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
@@ -336,7 +334,7 @@ Bien qu’il existe de nombreuses possibilités de configuration de la gestion d
 Une fois la gestion de contenu AEM démarrée, vous pouvez également accéder aux éléments suivants :
 
 * [CRXDE Lite](#accessing-crxde-lite) - utilisé pour accéder au référentiel et le gérer
-* [Console web](#accessing-the-web-console) - utilisée pour gérer ou configurer les lots OSGi (également appelés Console OSGi)
+* [Console web](#accessing-the-web-console) : utilisée pour gérer ou configurer les bundles OSGi (également appelés Console OSGi)
 
 ### Accès à CRXDE Lite {#accessing-crxde-lite}
 

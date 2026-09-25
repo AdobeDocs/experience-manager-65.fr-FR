@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1033'
 ht-degree: 100%
-
 ---
-
 # Connecter AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector permet d’appeler aisément Adobe LiveCycle ES4 Acrobat Services à partir de workflows et d’applications web AEM. LiveCycle fournit un SDK client enrichi, qui permet aux applications clientes de démarrer les services LiveCycle à l’aide d’API Java™. AEM LiveCycle Connector simplifie l’utilisation de ces API dans l’environnement OSGi.
@@ -52,7 +50,7 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 
 AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur LiveCycle offre les fonctionnalités suivantes :
 
-* Instances de client en tant que service OSGi : les clients conditionnés en tant que lots OSGI sont répertoriés dans la section [Liste des services Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
+* Instances de client en tant que service OSGi : les clients conditionnés en tant que bundles OSGI sont répertoriés dans la section [Liste des services Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
 * Service ServiceClientFactory : pour démarrer les processus, l’application cliente peut accéder à l’instance ServiceClientFactory.
 
@@ -376,7 +374,7 @@ Le service suivant est disponible :
 
 ### Bundle du client Adobe LiveCycle Output {#adobe-livecycle-output-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.output.client.OutputClient
 
@@ -430,7 +428,7 @@ Les services suivants sont disponibles :
 
 ### Bundle du client Adobe LiveCycle Signatures {#adobe-livecycle-signatures-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.signatures.client.SignatureServiceClientInterface
 

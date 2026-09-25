@@ -1,21 +1,23 @@
 ---
 title: Personnaliser la console de bienvenue (IU classique)
+
 description: La console de bienvenue fournit une liste de liens vers les différentes consoles et fonctionnalités d’AEM.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '466'
 ht-degree: 100%
-
 ---
-
 # Personnaliser la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
@@ -120,11 +122,11 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/docs/docs</code></td>
   </tr>
   <tr>
-   <td> Références pour les développeurs</td>
+   <td> Ressources de développement</td>
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>
-   <td><strong>Fonctions</strong></td>
+   <td><strong>Fonctionnalités</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -148,7 +150,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/features/backup</code></td>
   </tr>
   <tr>
-   <td> Console Web<br /> </td>
+   <td> Console web<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/config</code></td>
   </tr>
   <tr>

@@ -11,16 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2452'
 ht-degree: 100%
-
 ---
-
 # Fragments de formulaire adaptatif{#adaptive-form-fragments}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -39,7 +37,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
 ### Création d’un fragment à partir de zéro {#create-fragment-from-scratch}
 
-1. Connectez-vous à l’instance d’auteur d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
+1. Connectez-vous à l’instance de création d’AEM Forms à l’adresse https://[*nom_hôte*]:[*port*]/aem/forms.html.
 1. Cliquez sur **Créer > Fragment de formulaire adaptatif**.
 1. Indiquez le titre, le nom, la description et les balises du fragment.
 
@@ -106,7 +104,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**,**modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
    * **Racine du modèle de fragment** : s’affiche uniquement dans les formulaires adaptatifs XSD. Cette action spécifie la racine du modèle de fragment. Vous pouvez choisir **/** ou le type complexe de schéma XSD dans la liste déroulante. Vous ne pouvez réutiliser le fragment dans un autre formulaire adaptatif que si vous avez sélectionné le type complexe sous forme de fragment racine du modèle.
-Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
+     Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence complète de schéma XSD depuis la racine est visible dans l’onglet de modèle de données de formulaire adaptatif. Pour une racine de modèle de fragment de type complexe, seuls les descendants du type complexe sélectionné sont visibles dans l’onglet du modèle de données de formulaire adaptatif. Si vous créez un fragment et choisissez un type complexe comme **Racine du modèle de fragment**, vous pouvez l’utiliser partout où ce type complexe est utilisé, que ce soit dans le même formulaire ou dans plusieurs formulaires.
 
    * **Référence de schéma XSD** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML.
 
@@ -158,7 +156,7 @@ Le fragment de formulaire adaptatif est inséré par référence dans le formula
 
 Vous pouvez choisir d’incorporer un fragment de formulaire adaptatif dans un formulaire adaptatif en cliquant sur le bouton **Inclure la ressource : &lt;&lt;*Nom du fragment*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
 
-![Inclusion d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
+![Incorporation d’un fragment dans un formulaire adaptatif](assets/embed-fragment.png)
 
 >[!NOTE]
 >
@@ -227,11 +225,11 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Télécharge le fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Aperçu</p> </td>
+   <td><p>Prévisualisation</p> </td>
    <td><p>Fournit des options de prévisualisation du fragment en HTML ou un aperçu personnalisé en fusionnant les données d’un fichier XML avec le fragment. Pour plus d’informations, voir <a href="/help/forms/using/previewing-forms.md" target="_blank">Aperçu d’un formulaire</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Démarrage de la révision/Gestion de la révision</p> </td>
+   <td><p>Démarrer la révision/Gérer la révision</p> </td>
    <td><p>Permet de lancer et de gérer la révision du fragment sélectionné. Pour plus d’informations, voir <a href="../../forms/using/create-reviews-forms.md" target="_blank">Créer et gérer des révisions</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>

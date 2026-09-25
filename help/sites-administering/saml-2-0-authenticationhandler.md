@@ -1,22 +1,24 @@
 ---
 title: Gestionnaire d’authentification SAML 2.0
+
 description: Découvrez le gestionnaire d’authentification SAML 2.0 dans AEM.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
-
+source-wordcount: '864'
+ht-degree: 94%
 ---
-
-# Gestionnaire d’authentification SAML 2.0 {#saml-authentication-handler}
+# Gestionnaire d’authentification SAML 2.0{#saml-authentication-handler}
 
 AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire prend en charge le protocole de demande d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 (profil Web-SSO) à l’aide de la liaison `HTTP POST`.
 
@@ -92,7 +94,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 Les assertions SAML sont signées et peuvent éventuellement être chiffrées. Pour que cela fonctionne, vous devez fournir au moins le certificat public de l’IdP dans le référentiel. Pour ce faire, vous devez effectuer les opérations suivantes :
 
-1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*.
+1. Accédez à *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Appuyez sur **[!UICONTROL Créer un lien TrustStore]**.
 1. Saisissez le mot de passe du TrustStore, puis appuyez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Gérer le TrustStore]**.
@@ -107,7 +109,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >
 >Les étapes ci-dessous sont obligatoires, sinon l’exception suivante sera générée : `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`.
 
-1. Accédez à [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html).
+1. Accédez à : [](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Modifiez l’utilisateur `authentication-service`.
 1. Créez un KeyStore en cliquant sur **Créer le KeyStore** sous **Paramètres du compte**.
 
@@ -133,7 +135,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 
 Vous pouvez configurer un journal afin de déboguer tous les problèmes pouvant résulter d’une mauvaise configuration de SAML. Vous pouvez le faire en procédant comme suit :
 
-1. Accédez à la console web à l’adresse *http://localhost:4502/system/console/configMgr*.
+1. Accédez à la console web à l’adresse **
 1. Recherchez l’entrée nommée **Configuration du journal de connexion Sling Apache** et cliquez dessus.
 1. Créez un journal avec la configuration suivante :
 

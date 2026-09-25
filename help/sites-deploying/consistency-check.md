@@ -1,6 +1,6 @@
 ---
-title: Effectuer des vérifications transversales et des contrôles de cohérence
-description: Découvrez comment effectuer des vérifications de cohérence et de parcours.
+title: Vérifications de traversée et contrôles de cohérence
+description: Découvrez comment effectuer des vérifications de traversée et des contrôles de cohérence.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '156'
 ht-degree: 100%
-
 ---
-
-# Effectuer des vérifications transversales et des contrôles de cohérence{#consistency-and-traversal-checks}
+# Vérifications de traversée et contrôles de cohérence{#consistency-and-traversal-checks}
 
 Lors de la mise à niveau, des problèmes peuvent survenir en raison d’incohérences dans l’espace de travail. Vous pouvez exécuter une mise à niveau de test pour voir si ce type d’incohérence pose problème ou exécuter des vérifications de cohérence comme action préventive.
 

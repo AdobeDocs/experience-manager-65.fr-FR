@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
-
+source-wordcount: '532'
+ht-degree: 95%
 ---
-
 # Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 
 ## Vue d’ensemble {#overview}
@@ -30,7 +28,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de packages](/help/sites-administering/package-manager.md).
+L’outil de détection des motifs est publié séparément sous forme de [package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md).
 
 ## Utilisation {#how-to-use}
 
@@ -47,7 +45,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à la console web AEM en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Accédez à la console web AEM en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*
 1. Sélectionnez **Statut – Outil de détection des motifs**, comme illustré ci-dessous :
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -114,7 +112,7 @@ Avec la sortie :
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_fr"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -214,11 +212,11 @@ Avec la sortie :
 
 Actuellement, l’outil de détection des modèles permet de vérifier :
 
-* la discordance des exports et des imports des lots OSGi ;
+* la discordance des exports et des imports des bundles OSGi ;
 * les usages exessifs des types de ressources Sling et super-types (avec superpositions de contenu de chemin de recherche) ;
 * les définitions des index Oak (compatibilité) ;
 * les packages VLT (surutilisation) ;
-* la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth) ;
+* compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth) ;
 
 >[!NOTE]
 >

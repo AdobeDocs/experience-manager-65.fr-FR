@@ -1,6 +1,6 @@
 ---
-title: Limites des contributions des membres
-description: La fonction Limites de contribution permet de limiter les contributions à protéger contre les spams
+title: Limites de contribution des membres
+description: La fonction Limites de contribution permet de limiter les contributions pour se protéger contre le spam
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,76 +11,74 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 0%
-
+source-wordcount: '436'
+ht-degree: 1%
 ---
-
-# Limites des contributions des membres {#member-contribution-limits}
+# Limites de contribution des membres {#member-contribution-limits}
 
 ## Vue d’ensemble {#overview}
 
-La fonctionnalité Limites de contribution permet de limiter les contributions des membres de la communauté afin de les protéger contre le spam.
+La fonction de limites de contribution permet de limiter les contributions des membres de la communauté afin de les protéger contre le spam.
 
-Lorsqu’un membre est limité, toute publication qui dépasse le nombre autorisé de contributions génère une alerte indiquant que la limite a été dépassée et que la publication est rejetée. Le membre de la communauté peut alors se rendre au centre de messagerie de la communauté et contacter un responsable de la communauté qui peut supprimer les limites, le cas échéant.
+Lorsqu&#39;un membre est limité, tout poste qui dépasse le nombre autorisé de contributions donne lieu à une alerte indiquant que la limite a été dépassée et que le poste est rejeté. Le membre de la communauté peut alors se rendre au centre de messagerie de la communauté et contacter un gestionnaire de la communauté qui peut supprimer les limites, le cas échéant.
 
-Les limites de contribution peuvent être activées individuellement à partir de la [console Membres](members.md) et/ou configurées pour être activées automatiquement lorsque les visiteurs du site deviennent de nouveaux membres.
+Les limites de contribution peuvent être activées individuellement à partir de la console [Membres](members.md) et/ou configurées pour être automatiquement activées lorsque les visiteurs du site deviennent de nouveaux membres.
 
-À l’aide de la console Membres, les limites de contribution peuvent être supprimées de manière proactive pour un membre par un responsable de la communauté à tout moment, ou supprimées de manière réactive lorsqu’un membre envoie un message à un responsable de la communauté qui effectue une telle requête.
+À l’aide de la console Membres , les limites de contribution peuvent être supprimées de manière proactive pour un membre par un gestionnaire de communauté à tout moment, ou supprimées de manière réactive lorsqu’un membre envoie un message à un gestionnaire de communauté qui effectue une telle demande.
 
-## Configuration des limites de contribution du contenu généré par l’utilisateur d’AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuration des limites de contribution au contenu générées par l’utilisateur d’AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Cette configuration OSGi :
 
-* Définit les caractéristiques des limites de contribution (nombre de publications au cours d’une période).
-* Identifie le membre qui peut envoyer un message lorsque la limite a été atteinte.
+* Définit les caractéristiques des plafonds de contribution (nombre de postes dans une période donnée).
+* Indique qui le membre peut envoyer un message lorsque la limite a été atteinte.
 * Identifie les domaines qui n’ont jamais besoin d’être limités.
 
-Pour atteindre cette configuration OSGi :
+Pour accéder à cette configuration OSGi :
 
 * Sur l’éditeur principal :
-* Connectez-vous avec les privilèges d’administrateur.
+* Connectez-vous avec des droits d’administrateur.
 * Accédez à la [console web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [](http://localhost:4503/system/console/configMgr)
 
-* Recherchez `AEM Communities User Generated Content Contribution Limits Configuration`.
-* Sélectionnez l’icône de modification.
+* Localisez `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Sélectionnez l’icône Modifier .
 
-![configure-limits](assets/configure-limits.png)
+![configure-limit](assets/configure-limits.png)
 
 * **[!UICONTROL Appliquer automatiquement les limites de contribution du contenu créé par l’utilisateur]**
 
-  Si cette case est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé à partir de la [console membres](members.md). Les nouveaux membres disposant d’une adresse électronique provenant d’une liste autorisée de domaines ne sont jamais contraints.
+  Si cette option est cochée, définissez automatiquement des limites de contribution pour les utilisateurs lorsqu’ils s’enregistrent en tant que membres de la communauté. Cela se reflète dans le profil du membre de la communauté et peut être activé/désactivé à partir de la console [membres](members.md). Les nouveaux membres dont l’adresse e-mail provient d’une place sur la liste autorisée de domaines ne sont jamais limités.
 
-  La case par défaut est décochée.
+  La valeur par défaut n’est pas cochée.
 
 * **[!UICONTROL Limite UGC]**
 
-  Nombre maximum de contributions.
+  Nombre maximal de contributions.
 
   La valeur par défaut est de dix publications.
 
-* **[!UICONTROL Fréquence de limite UGC]**
+* **[!UICONTROL Fréquence limite UGC]**
 
-  La période limitant la limite du contenu généré par l’utilisateur.
+  Période limitant la limite du contenu créé par l’utilisateur.
 
   La valeur par défaut est de 60 minutes.
 
 * **[!UICONTROL Domaines]**
 
-  Liste de liste autorisée d’un ou de plusieurs domaines de messagerie. Sélectionnez l’icône + pour effectuer d’autres entrées.
+  Une liste placée sur la liste autorisée d’un ou plusieurs domaines d’e-mail. Sélectionnez l’icône + pour effectuer des entrées supplémentaires.
 
-  Les utilisateurs dont les adresses électroniques se trouvent dans la liste autorisée des domaines ne sont pas affectés lorsque les limites de contribution du contenu généré par l’utilisateur sont automatiquement appliquées. Par exemple, si le domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec l’adresse électronique `me@mycompany.com` n’est jamais restreint à la publication.
+  Les utilisateurs dont les adresses e-mail se trouvent dans la place sur la liste autorisée de domaines ne sont pas affectés lorsque des limites de contribution du contenu créé par l’utilisateur sont automatiquement appliquées. Par exemple, si la `mycompany.com` de domaine est ajoutée à la liste des domaines, il n’est jamais interdit de publier un membre dont l’adresse e-mail est `me@mycompany.com`.
 
-  La liste autorisée par défaut est vide.
+  La valeur par défaut est une liste autorisée vide.
 
-* **[!UICONTROL Destinataires de messagerie]**
+* **[!UICONTROL Destinataires des messages]**
 
-  Liste d’un ou plusieurs ID autorisables des membres pouvant modifier les limites de contribution des membres. Sélectionnez l’icône + pour effectuer d’autres entrées.
+  Liste d&#39;un ou plusieurs identifiants autorisables des membres pouvant modifier les limites de contribution pour les membres. Sélectionnez l’icône + pour effectuer des entrées supplémentaires.
 
-  Les membres ne peuvent atteindre que les membres spécifiés lorsque leur limite a été atteinte.
+  Les membres ne peuvent contacter des membres spécifiés que lorsque leur limite a été atteinte.
 
-  La valeur par défaut n’est pas un destinataire de messagerie.
+  Par défaut, aucun destinataire de messagerie n&#39;est envoyé.
 
-Remarque : La configuration par défaut génère une limite de dix publications sur une période d’une heure.
+Remarque : la configuration par défaut entraîne une limite de dix publications sur une période d’une heure.

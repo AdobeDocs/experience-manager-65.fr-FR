@@ -1,22 +1,24 @@
 ---
 title: Dépannage d’Adobe Experience Manager
+
 description: Découvrez comment résoudre certains problèmes pouvant survenir avec Adobe Experience Manager.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '527'
+workflow-type: tm+mt
+source-wordcount: '553'
 ht-degree: 100%
-
 ---
-
 # Dépannage d’Adobe Experience Manager {#troubleshooting-aem}
 
 La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM (Adobe Experience Manager), ainsi que des suggestions pour les résoudre.
@@ -115,13 +117,13 @@ Pour commencer à analyser les sessions non fermées, consultez l’article de l
 
 ### Utiliser la console web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
-Le statut des lots OSGi peut également être un signe précurseur de problèmes potentiels.
+Le statut des bundles OSGi peut également être un signe précurseur de problèmes potentiels.
 
 1. Ouvez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
-1. Sélectionnez **Lots** dans l’onglet **OSGI**.
+1. Sélectionnez **Bundles** dans l’onglet **OSGI**.
 1. Vérifier :
 
-   * le statut des lots. Si le statut est Inactif ou Non satisfait, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, essayez une autre méthode.
-   * Si l’un des lots possède des dépendances manquantes. Ces détails sont visibles en cliquant sur le nom du lot, qui consiste en un lien (l’exemple suivant ne présente aucun problème) :
+   * le statut des bundles. Si le statut est Inactif ou Non satisfait, essayez d’arrêter et de redémarrer le bundle. Si le problème persiste, essayez une autre méthode.
+   * Si l’un des bundles possède des dépendances manquantes. Ces détails sont visibles en cliquant sur le nom du lot, qui consiste en un lien (l’exemple suivant ne présente aucun problème) :
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
