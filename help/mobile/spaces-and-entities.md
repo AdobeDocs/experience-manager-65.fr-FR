@@ -116,7 +116,7 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
    >
    >Les nœuds de copie de langue ne peuvent exister qu’en tant qu’enfant direct de l’espace.
 
-1. Choisissez **Content Package Language&amp;ast;** et saisissez le **Title&amp;ast;** dans la boîte de dialogue **Créer une copie de langue**.
+1. Choisissez **Content Package Language&ast;** et saisissez le **Title&ast;** dans la boîte de dialogue **Créer une copie de langue**.
 
    Cliquez sur **Créer**.
 

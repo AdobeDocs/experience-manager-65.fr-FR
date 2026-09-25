@@ -254,7 +254,7 @@ Vous pouvez désormais utiliser votre fragment d’expérience lors de la créat
    >
    >La page doit être basée sur un modèle modifiable.
 
-   Par exemple : [](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Par exemple : [&#128279;](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 

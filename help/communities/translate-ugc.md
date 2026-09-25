@@ -122,7 +122,7 @@ Pour obtenir des instructions détaillées, voir [Création d’une configuratio
   * **[!UICONTROL Choisir Un Paramètre Régional...]**
     (Facultatif) En sélectionnant un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue apparaissent dans une conversation globale. Par convention, choisissez les paramètres régionaux comme [langue de base](sites-console.md#translation) pour le site web. Choisir `No Common Store` désactive la traduction globale. Par défaut, la traduction internationale est désactivée.
 
-* Onglet **** : peut laisser comme valeurs par défaut.
+* Onglet **&#x200B;**&#x200B;: peut laisser comme valeurs par défaut.
 * Sélectionnez **[!UICONTROL OK]**.
 
 #### Activation {#activation}

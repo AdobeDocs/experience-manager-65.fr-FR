@@ -82,7 +82,7 @@ Cette option est disponible à partir de la console [Sites communautaires](sites
 
 Le contenu créé par l’utilisateur et le code personnalisé ne sont pas inclus dans le package du site communautaire.
 
-Pour exporter du contenu créé par l’utilisateur, utilisez l’[Outil de migration du contenu créé par l’utilisateur ](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), un outil de migration open source disponible sur GitHub.
+Pour exporter du contenu créé par l’utilisateur, utilisez l’[Outil de migration du contenu créé par l’utilisateur &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), un outil de migration open source disponible sur GitHub.
 
 ## Suppression d’un site communautaire {#deleting-a-community-site}
 
