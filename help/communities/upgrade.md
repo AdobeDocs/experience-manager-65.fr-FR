@@ -45,7 +45,7 @@ Ainsi, il est possible d’indiquer à ASRP d’utiliser `AEM 6.0 compatability-
 Pour toutes les instances d’auteur et de publication AEM 6.3 :
 
 * Connectez-vous avec des droits d’administrateur.
-* Configurez [ ASRP ](/help/communities/asrp.md).
+* Configurez [&#x200B; ASRP &#x200B;](/help/communities/asrp.md).
 * Pour rendre le contenu créé par l’utilisateur préexistant visible, procédez comme suit :
 
   * Accédez à la console web :
@@ -66,7 +66,7 @@ Pour toutes les instances d’auteur et de publication AEM 6.3 :
 Si le site mis à niveau n’utilisait pas l’espace de stockage dans le cloud, tout contenu créé par l’utilisateur préexistant doit être converti conformément à la nouvelle structure introduite dans les communautés AEM 6.1 pour prendre en charge le magasin commun.
 
 À cet effet, un outil de migration open source est disponible sur GitHub :
-[Outil de migration du contenu créé par l’utilisateur ](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+[Outil de migration du contenu créé par l’utilisateur &#x200B;](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### API Java {#java-apis}
 

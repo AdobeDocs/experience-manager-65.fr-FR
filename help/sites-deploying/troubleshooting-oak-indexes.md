@@ -114,14 +114,14 @@ Pour identifier et corriger un processus de réindexation bloqué, procédez com
 
      * Accédez à le console web OSGi AEM > Principal > JMX > IndexStat > async
 
-       ou rendez-vous sur [](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       ou rendez-vous sur [&#128279;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Utilisez le [mode console de oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour collecter les informations de ce qui se trouve sous le nœud *`/:async`*.
    * Collectez une liste des points de contrôle du référentiel à l’aide du MBean `CheckpointManager` :
 
      * Console web OSGi AEM > Principal > JMX > CheckpointManager > listCheckpoints()
 
-       ou rendez-vous sur [](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       ou rendez-vous sur [&#128279;](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Après la collecte de toutes les informations décrites à l’étape 1, redémarrez AEM.
 

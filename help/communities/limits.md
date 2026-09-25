@@ -40,7 +40,7 @@ Pour accéder à cette configuration OSGi :
 * Connectez-vous avec des droits d’administrateur.
 * Accédez à la [console web](../../help/sites-deploying/configuring-osgi.md).
 
-  * Par exemple, [](http://localhost:4503/system/console/configMgr)
+  * Par exemple, [&#128279;](http://localhost:4503/system/console/configMgr)
 
 * Localisez `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Sélectionnez l’icône Modifier .

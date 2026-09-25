@@ -55,7 +55,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 1. Installez le pilote JDBC pour la base de données [!DNL MySQL] en tant que bundle OSGi :
 
    1. Téléchargez le [!DNL MySQL]bundle OSGi du pilote JDBC à partir de `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Connectez-vous à l’instance de création AEM [!DNL Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [](https://localhost:4502/system/console/bundles).
+   1. Connectez-vous à l’instance de création AEM [!DNL Forms] en tant qu’administrateur ou administratrice et accédez aux bundles de la console web d’AEM. L’URL par défaut est [&#128279;](https://localhost:4502/system/console/bundles).
 
    1. Sélectionnez **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Charger/installer les bundles] s’affiche.
 
@@ -118,7 +118,7 @@ La configuration du modèle de données de formulaire implique :
 
 Pour configurer un modèle de données de formulaire, procédez comme suit :
 
-1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**. L’URL par défaut est [&#128279;](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Le modèle de données de formulaire **customer-shipping-billing-details** que vous avez créé précédemment est répertorié ici. Ouvrez-le en mode d’édition.
 
    La source de données sélectionnée **WeRetailMySQL** est configuré dans le modèle de données de formulaire.

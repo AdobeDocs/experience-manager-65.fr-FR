@@ -453,7 +453,7 @@ Vous pouvez configurer l’aspect de la boîte de dialogue lorsque vous cliquez 
 
 Pour générer un catalogue :
 
-1. Ouvrez la console Sites (par exemple, [](http://localhost:4502/sites.html/content)).
+1. Ouvrez la console Sites (par exemple, [&#128279;](http://localhost:4502/sites.html/content)).
 1. Accédez à l’emplacement où vous souhaitez créer la page.
 1. Pour ouvrir la liste des options, utilisez l’icône **Créer** :
 

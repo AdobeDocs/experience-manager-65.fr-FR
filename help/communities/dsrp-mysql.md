@@ -115,7 +115,7 @@ Le script SQL est obtenu à partir du référentiel AEM :
 
 1. Accéder à CRXDE Lite
 
-   * Par exemple, [](http://localhost:4502/crx/de)
+   * Par exemple, [&#128279;](http://localhost:4502/crx/de)
 
 1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/schema .
 1. Télécharger `init-schema.sql`
@@ -142,7 +142,7 @@ Dans MySQL Workbench
 * Dans le menu déroulant Fichier , sélectionnez l’option **[!UICONTROL Ouvrir le script SQL]**
 * Sélectionner le script de `init_schema.sql` téléchargé
 
-![select-sql-script ](assets/select-sql-script.png)
+![select-sql-script &#x200B;](assets/select-sql-script.png)
 
 #### Etape 2 : exécuter le script SQL {#step-execute-sql-script}
 
@@ -168,9 +168,9 @@ Lorsque MySQL s’exécute sur un serveur différent d’AEM, le nom d’hôte d
 
 * Sur chaque instance AEM de création et de publication.
 * Connecté avec des droits d&#39;administrateur.
-* Accédez à la [ console web ](../../help/sites-deploying/configuring-osgi.md).
+* Accédez à la [&#x200B; console web &#x200B;](../../help/sites-deploying/configuring-osgi.md).
 
-  * Par exemple, [](http://localhost:4502/system/console/configMgr)
+  * Par exemple, [&#128279;](http://localhost:4502/system/console/configMgr)
 
 * Localiser le `Day Commons JDBC Connections Pool`
 * Sélectionnez l’icône `+` pour créer une configuration de connexion.

@@ -26,7 +26,7 @@ Pour plus d’informations sur l’utilisation de tous les composants Dynamic M
 >
 >* La plateforme de la visionneuse DHTML de Dynamic Media Classic a officiellement atteint sa fin de vie le 31 janvier 2014. Pour plus d’informations, consultez la [FAQ sur la fin de vie de la visionneuse DHTML](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* Avant de configurer Dynamic Media Classic pour qu’il fonctionne avec Experience Manager, consultez les [Bonnes pratiques](#best-practices-for-integrating-scene-with-aem) pour intégrer Dynamic Media Classic à Experience Manager.
->* Si vous utilisez Dynamic Media Classic avec une configuration de proxy personnalisée, vous devez paramétrer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Experience Manager utilisent les API 3.x et d’autres les API 4.x. Les versions 3.x sont configurées avec [](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) et 4.x avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
+>* Si vous utilisez Dynamic Media Classic avec une configuration de proxy personnalisée, vous devez paramétrer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Experience Manager utilisent les API 3.x et d’autres les API 4.x. Les versions 3.x sont configurées avec [&#128279;](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) et 4.x avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
 
 ## Intégration d’Experience Manager à Dynamic Media Classic par rapport à Dynamic Media {#aem-scene-integration-versus-dynamic-media}
@@ -358,7 +358,7 @@ Activation du listener de gestion des ressources numériques Dynamic Media Cla
 
 Lorsqu’une instance Experience Manager est configurée pour traiter le codage vidéo via Dynamic Media Classic, par défaut, les tâches de chargement sont soumises à un délai d’expiration de 35 minutes. Pour pouvoir effectuer les tâches de codage vidéo potentiellement plus longues, vous pouvez configurer ce paramètre.
 
-1. Accédez à ****.
+1. Accédez à **&#x200B;**.
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 
