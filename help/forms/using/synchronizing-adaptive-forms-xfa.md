@@ -1,8 +1,10 @@
 ---
-title: Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA
+title: Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA
 description: Découvrez comment synchroniser des formulaires avec des fichiers XFA/XDP. Les champs des formulaires synchronisés sont réutilisés avec les modifications apportées aux champs correspondants dans les fichiers XFA/XDP.
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
@@ -10,12 +12,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1241'
 ht-degree: 100%
-
 ---
-
-# Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Synchronisation de formulaires adaptatifs avec des modèles de formulaires XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
@@ -47,7 +47,7 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur AEM Forms.
 
-Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le package à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le package contient les ressources suivantes :
 
@@ -108,7 +108,7 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 >
 >Le libellé AF Numeric Field n’a pas été modifié, car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajouter du contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
-### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif  {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Les champs qui sont ultérieurement ajoutés au fichier XDP d’origine apparaissent dans l’onglet Hiérarchie du formulaire. Vous pouvez les faire glisser jusqu’au formulaire adaptatif.
 

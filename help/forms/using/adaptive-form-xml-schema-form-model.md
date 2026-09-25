@@ -8,11 +8,9 @@ exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 100%
-
+source-wordcount: '1143'
+ht-degree: 99%
 ---
-
 # Création de formulaires adaptatifs à l’aide d’un schéma XML {#creating-adaptive-forms-using-xml-schema}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -285,7 +283,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
  </tbody>
 </table>
 
-## Questions fréquemment posées  {#frequently-asked-questions}
+## Questions fréquemment posées {#frequently-asked-questions}
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
