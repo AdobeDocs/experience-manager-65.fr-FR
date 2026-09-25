@@ -11,11 +11,9 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1435'
 ht-degree: 100%
-
 ---
-
 # Indexation du fichier Oak-run.jar – Scénarios d’utilisation{#oak-run-jar-indexing-use-cases}
 
 Oak-run prend en charge tous les scénarios d’indexation sur la ligne de commande, sans qu’il faille orchestrer l’exécution de ces scénarios par le biais de la console JMX d’AEM.
@@ -117,7 +115,7 @@ Voici quelques points à noter autour de la réindexation :
 
 * Avec la conception actuelle, la situation est la suivante : pendant la réindexation, le moteur d’indexation asynchrone est bloqué, et tous les autres index deviennent obsolètes et ne sont plus mis à jour pendant la durée de l’indexation. Par conséquent, si le système est en cours d’utilisation, il se peut que les utilisateurs et utilisatrices n’aient pas accès à des résultats actualisés.
 * La réindexation implique la traversée de l’ensemble du référentiel, ce qui peut faire peser une charge importante sur la configuration AEM et, partant, avoir une incidence sur l’expérience utilisateur.
-* Dans le cas d’une installation `DocumentNodeStore` dans laquelle la réindexation peut prendre un temps considérable, si la connexion à la base de données Mongo échoue en plein milieu de l’opération, l’indexation doit être relancée depuis le début.
+* Dans le cas d’une installation `DocumentNodeStore` dans laquelle la réindexation peut prendre un temps considérable, si la connexion à la base de données Mongo échoue en plein milieu de l’opération, l’indexation doit être redémarrée depuis le début.
 
 * Parfois, la réindexation peut prendre beaucoup de temps en raison de l’extraction de texte. Cela est spécifique aux configurations contenant de nombreux fichiers PDF, où le temps consacré à l’extraction de texte peut avoir un impact sur le temps d’indexation.
 
@@ -197,7 +195,7 @@ Dans ce scénario d’utilisation, on part du principe que le magasin de donnée
 
 ## Cas d’utilisation 4 – Mise à jour des définitions d’index {#usecase4updatingindexdefinitions}
 
-Actuellement, vous pouvez envoyer des modifications de définition d’index via le package [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Cela permet d’envoyer les définitions d’index au moyen du package de contenu, ce qui exigera, par la suite, que la réindexation soit effectuée en définissant l’indicateur `reindex` sur `true`.
+Actuellement, vous pouvez envoyer des modifications de définition d’index via le package [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html). Cela permet d’expédier les définitions d’index au moyen du module de contenu, ce qui exigera, par la suite, que la réindexation soit effectuée en définissant l’indicateur `reindex` sur `true`.
 
 Cela fonctionne bien sur des petites installations pour lesquelles la réindexation prend peu de temps. . Cependant, pour les référentiels volumineux, la réindexation est effectuée dans un délai considérablement plus long. Pour de tels cas, nous pouvons désormais utiliser l’outil d’indexation oak-run.
 

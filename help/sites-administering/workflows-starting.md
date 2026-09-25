@@ -11,23 +11,21 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
-
+source-wordcount: '820'
+ht-degree: 98%
 ---
-
 # Démarrage d’un workflow{#starting-workflows}
 
 Lors de l’administration des workflows, vous pouvez les démarrer avec différentes méthodes :
 
 * Manuellement :
 
-   * À partir d’un [Modèle de Workflow](#workflow-models).
-   * Utiliser un package de workflow pour le [traitement par lots](#workflow-packages-for-batch-processing).
+  * À partir d’un [Modèle de Workflow](#workflow-models).
+  * Utiliser un package de workflow pour le [traitement par lots](#workflow-packages-for-batch-processing).
 
 * Automatiquement :
 
-   * En réponse aux changements de nœuds ; [en utilisant un lanceur](#workflows-launchers).
+  * En réponse aux changements de nœuds ; [en utilisant un lanceur](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -65,7 +63,7 @@ Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modific
 * `/var/mobile`
 * `/var/statistics`
 
-   * Exception : les modifications apportées aux nœuds sous `/var/statistics/tracking` *provoquent* le lancement de workflows.
+  * Exception : les modifications apportées aux nœuds sous `/var/statistics/tracking` *provoquent* le lancement de workflows.
 
 Différentes définitions sont incluses avec l’installation standard. Celles-ci sont utilisées pour les tâches de gestion des ressources numériques et de collaboration sociale :
 
@@ -113,7 +111,7 @@ Un package de workflow :
 
 ## Création d’une configuration de lanceur {#creating-a-launcher-configuration}
 
-1. Accédez à la console **Lanceurs de workflow** en sélectionnant **Outils**, **Workflow**, puis **Lanceurs**.
+1. Accédez à la console **Lanceurs de workflows** en sélectionnant **Outils**, **Workflow**, puis **Lanceurs**.
 1. Sélectionnez **Créer**, puis **Ajouter un lanceur** pour ouvrir la boîte de dialogue :
 
    ![wf-105](assets/wf-105.png)
@@ -122,21 +120,21 @@ Un package de workflow :
 
      Type d’événement qui lance le workflow :
 
-      * Créé
-      * Modifié
-      * Supprimé
+     * Créé
+     * Modifié
+     * Supprimé
 
    * **Type de nœud**
 
-     Type de nœud auquel s’applique le lanceur de workflow.
+     Type de nœud auquel s’applique le lanceur de workflows.
 
    * **Chemin**
 
-     Chemin d’accès auquel s’applique le lanceur de workflow.
+     Chemin d’accès auquel s’applique le lanceur de workflows.
 
    * **Mode(s) d’exécution**
 
-     Type de serveur auquel s’applique le lanceur de workflow. Sélectionnez **Auteur**, **Publier** ou **Créer et publier**.
+     Type de serveur auquel s’applique le lanceur de workflows. Sélectionnez **Auteur**, **Publier** ou **Créer et publier**.
 
    * **Conditions**
 
@@ -162,10 +160,10 @@ Un package de workflow :
 
    * **Activer**
 
-     Contrôle si le lanceur de workflow est activé :
+     Contrôle si le lanceur de workflows est activé :
 
-      * Sélectionnez **Activer** pour lancer des workflows lorsque les propriétés de configuration sont satisfaites.
-      * Sélectionnez **Désactiver** lorsque le workflow ne doit pas s’exécuter (pas même lorsque les propriétés de configuration sont satisfaites).
+     * Sélectionnez **Activer** pour lancer des workflows lorsque les propriétés de configuration sont satisfaites.
+     * Sélectionnez **Désactiver** lorsque le workflow ne doit pas s’exécuter (pas même lorsque les propriétés de configuration sont satisfaites).
 
    * **Exclure la liste**
 
@@ -173,8 +171,8 @@ Un package de workflow :
 
      Cette propriété de lanceur est une liste d’éléments séparés par des virgules :
 
-      * `property-name` ignore les événements `jcr` déclenchés avec le nom de propriété spécifié. ``
-      * `event-user-data:<*someValue*>` ignore tout événement contenant les `*<someValue*` > `user-data` définies par le biais de l’API [`ObservationManager` ](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignorez tout événement `jcr` qui s’est déclenché avec le nom de propriété spécifié. &grave;&grave;
+     * `event-user-data:<*someValue*>` ignore tout événement contenant les `*<someValue*` > `user-data` définies par le biais de l’API [`ObservationManager` ] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Par exemple :
 
