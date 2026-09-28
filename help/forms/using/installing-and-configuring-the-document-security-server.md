@@ -1,18 +1,20 @@
 ---
 title: Installer et configurer le serveur Protection du document
+
 description: La protection du document vous permet de distribuer en toute sécurité toute information enregistrée dans un format pris en charge. Seuls les utilisateurs autorisés peuvent accéder aux documents protégés.
+
+
 contentOwner: khsingh
+
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
-
+source-wordcount: '599'
+ht-degree: 89%
 ---
-
 # Installer et configurer le serveur Protection du document {#installing-and-configuring-the-document-security-server}
 
 La protection du document vous permet de distribuer en toute sécurité toute information enregistrée dans un format pris en charge. Seuls les utilisateurs autorisés peuvent accéder aux documents protégés.
@@ -46,11 +48,11 @@ Pour installer et configurer AEM Forms sur JEE, procédez comme suit :
 1. (Installations non clé en main uniquement) Lisez la section [Préparer à l’installation d’AEM Forms sur un seul serveur](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_fr) ou [Préparer à l’installation du cluster de serveurs AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_fr) et préparez votre environnement pour installer et configurer AEM Forms sur JEE.
 1. En fonction de votre environnement et de votre serveur d’application, sélectionnez l’un des documents suivants et suivez les instructions pour terminer l’installation
 
-   * [Installation et déploiement d’AEM Forms on JEE à l’aide de JBoss clé en main](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
-   * [Installation et déploiement d’AEM Forms on JEE pour JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
-   * [Installation et déploiement d’AEM Forms on JEE pour WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
-   * [Installation et déploiement d’AEM Forms on JEE pour Websphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
-   * [Configuration d’AEM Forms on JEE sur une grappe JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_fr)
+   * [Installation et déploiement d’AEM Forms sur JEE à l’aide de JBoss clé en main](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_fr)
+   * [Installation et déploiement d’AEM Forms sur JEE pour JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_fr)
+   * [Installation et déploiement d’AEM Forms sur JEE pour WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_fr)
+   * [Installation et déploiement d’AEM Forms sur JEE pour WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_fr)
+   * [Configuration d’AEM Forms on JEE sur une grappe JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_fr)
    * [Configuration d’AEM Forms on JEE sur une grappe WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_fr)
    * [Configuration d’AEM Forms on JEE sur une grappe WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_fr)
 
@@ -62,4 +64,4 @@ Pour installer et configurer AEM Forms sur JEE, procédez comme suit :
 
 * [Configurer les options du client et du serveur](/help/forms/using/admin-help/configuring-client-server-options.md)
 * [Créer et gérer des politiques](/help/forms/using/admin-help/creating-policies.md)
-* [Créer et gérer des jeux de politiques](/help/forms/using/admin-help/creating-policy-sets.md)
+* [Créer et gérer des ensembles de politiques](/help/forms/using/admin-help/creating-policy-sets.md)

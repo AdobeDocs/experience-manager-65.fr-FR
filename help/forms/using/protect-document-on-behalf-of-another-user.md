@@ -1,6 +1,6 @@
 ---
 title: Protection d’un document au nom d’une autre personne
-description: Découvrez comment le SDK Java&trade; d’AEM Forms Document Security propose des API pour un compte d’utilisateur afin de protéger un document au nom d’un autre utilisateur ou d’une autre utilisatrice.
+description: Découvrez comment AEM Forms Document Security Java&trade ; SDK propose des API pour un compte d’utilisateur afin de protéger un document au nom d’un autre utilisateur.
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
@@ -9,10 +9,8 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 100%
-
+ht-degree: 93%
 ---
-
 # Protection d’un document au nom d’une autre personne {#protect-a-document-on-behalf-of-another-user}
 
 Le SDK Java™ d’AEM Forms Document Security fournit des API pour permettre à un compte d’utilisateur de protéger un document au nom d’un autre utilisateur ou d’une autre utilisatrice sans avoir les autorisations de modifier le document. Vous pouvez utiliser les API dans un processus de workflow ou par programmation en tant que service de document. Les nouvelles API sont les suivantes :
@@ -28,8 +26,8 @@ Le SDK Java™ d’AEM Forms Document Security fournit des API pour permettre �
 
 Procédez comme suit pour protéger un document au nom d’un autre utilisateur ou d’une autre utilisatrice et sans obtenir les autorisations nécessaires pour le modifier :
 
-1. Créez un jeu de politiques Par exemple, JeuPolitiques1.
-1. Créez une politique dans le jeu de politiques nouvellement créé. Par exemple, Politique1 dans JeuPolitiques1.
+1. Créez un ensemble de politiques. Par exemple, JeuPolitiques1.
+1. Créez une politique dans l’ensemble de politiques nouvellement créé. Par exemple, Politique1 dans JeuPolitiques1.
 1. Créez un utilisateur ou une utilisatrice avec le rôle Utilisateur final ou utilisatrice finale de Rights Management. Par exemple, User1. Fournissez les autorisations pour afficher les documents protégés à l’aide de Politique1 pour l’utilisateur nouvellement créé.
 1. Créez un rôle. Par exemple, Role1. Octroyez l’autorisation d’appel de service au rôle nouvellement créé. Créez un utilisateur ou une utilisatrice avec le rôle nouvellement créé. Par exemple, User2. Vous pouvez utiliser User2 ou un administrateur ou une administratrice pour créer une connexion SDK et appeler le service protectDocument.
 

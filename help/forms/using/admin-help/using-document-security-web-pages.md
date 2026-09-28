@@ -1,28 +1,30 @@
 ---
 title: Utilisation des pages Web de la sécurité des documents
+
 description: Découvrez comment vous connecter et parcourir et utiliser les pages web de Document Security.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '933'
+workflow-type: tm+mt
+source-wordcount: '939'
 ht-degree: 100%
-
 ---
-
 # Utilisation des pages Web de la sécurité des documents {#using-the-document-security-webpages}
 
 >[!NOTE]
 > 
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-Les utilisateurs et utilisatrices et les équipes d’administration utilisent les pages web de Document Security pour créer et gérer des politiques, gérer des documents protégés par une politique et contrôler les événements associés aux documents protégés par une politique. Les équipes d’administration utilisent également les pages web pour créer des jeux de politiques et désigner des coordinateurs et coordinatrices de jeux de politiques, configurer les paramètres par défaut de Document Security, gérer l’enregistrement et les comptes des utilisateurs et utilisatrices invités, ainsi que surveiller et gérer les événements liés au serveur, à la politique, à l’utilisateur ou l’utilisatrice et aux documents.
+Les utilisateurs et utilisatrices et les équipes d’administration utilisent les pages web de Document Security pour créer et gérer des politiques, gérer des documents protégés par une politique et  les événements associés aux documents protégés par une politique. Les équipes d’administration utilisent également les pages web pour créer des jeux de politiques et désigner des coordinateurs et coordinatrices de jeux de politiques, configurer les paramètres par défaut de Document Security, gérer l’enregistrement et les comptes des utilisateurs et utilisatrices invités, ainsi que surveiller et gérer les événements liés au serveur, à la politique, à l’utilisateur ou l’utilisatrice et aux documents.
 
 >[!NOTE]
 >
