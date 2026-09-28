@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1139'
 ht-degree: 100%
-
 ---
-
 
 # Configurer la segmentation {#configuring-segmentation}
 
@@ -73,7 +71,7 @@ Les caractéristiques de segment suivantes sont disponibles et prêtes à l’em
    <td>Définit une plage d’adresses IP que le visiteur peut avoir.<br /> </td>
   </tr>
   <tr>
-   <td> Accès à la page<br /> </td>
+   <td> Hits de page<br /> </td>
    <td>Fréquence à laquelle la page a été demandée. <br /> </td>
   </tr>
   <tr>
@@ -109,7 +107,7 @@ Les caractéristiques de segment suivantes sont disponibles et prêtes à l’em
 
 Vous pouvez combiner ces caractéristiques avec les opérateurs booléens OU et ET (voir la rubrique [Création d’un nouveau segment](#creating-a-new-segment)) afin de définir le scénario exact pour sélectionner ce segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, le facteur **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé. 
+Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. S’il existe plusieurs segments applicables, le facteur **[Boost](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
 
 >[!CAUTION]
 >
@@ -172,7 +170,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 
 1. En fonction des caractéristiques définies, les données disponibles pour la page en cours peuvent ou non correspondre à la définition de segment. Le statut de la correspondance s’affiche sous la définition.
 
-Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique indique que le segment a été résolu avec succès :
+Par exemple, une seule définition de segment peut être fonction de l’âge et du genre de l’utilisateur ou de l’utilisatrice. Le chargement d’un profil spécifique indique que le segment a été résolu avec succès :
 
 ![Utilisation de la fenêtre Contexte client pour tester une opération de segmentation ET](assets/screen_shot_2012-02-02at105926am.png)
 

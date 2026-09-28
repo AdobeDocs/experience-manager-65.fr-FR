@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '816'
 ht-degree: 100%
-
 ---
-
 # Cibler votre campagne Adobe Campaign{#targeting-your-adobe-campaign}
 
 Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, qui n’est disponible que dans l’UI classique. Ensuite, vous pouvez créer des expériences ciblées pour Adobe Campaign.

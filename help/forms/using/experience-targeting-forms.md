@@ -10,16 +10,14 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
-
+source-wordcount: '846'
+ht-degree: 96%
 ---
-
 # Création d’expériences ciblées dans AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Intégrer Adobe Target à AEM Forms {#integrate-adobe-target-with-aem-forms}
 
-Adobe Target intégré à AEM vous permet de créer des expériences personnalisées pour un public cible. Avec Adobe Target, vous pouvez créer des tests A/B, mesurer les réponses des utilisateurs et générer du contenu web personnalisé pour les utilisateurs ciblés. Vous pouvez intégrer Adobe Target à AEM Forms pour cibler les composants image des formulaires adaptatifs et des communications interactives.
+Adobe Target intégré à AEM vous permet de créer des expériences personnalisées pour une audience cible. Avec Adobe Target, vous pouvez créer des tests A/B, mesurer les réponses des utilisateurs et générer du contenu web personnalisé pour les utilisateurs ciblés. Vous pouvez intégrer Adobe Target à AEM Forms pour cibler les composants image des formulaires adaptatifs et des communications interactives.
 
 Configurez Adobe Target dans AEM pour l’utiliser avec les formulaires adaptatifs et les communications interactives. Voir [Créer une configuration Target dans AEM](/help/sites-administering/target.md) et [Ajouter un framework](/help/sites-administering/target.md).
 
@@ -36,8 +34,8 @@ Configurez Adobe Target dans AEM pour l’utiliser avec les formulaires adaptati
 1. Dans la page Activités, sélectionnez **Créer > Créer une marque**.
 1. Vous êtes invité à choisir un modèle et à entrer des propriétés.
 
-   Sélectionnez un modèle, puis **Suivant.** Saisissez le titre de votre marque dans la section Propriétés, puis sélectionnez **Créer.**
-Votre marque est désormais répertoriée dans la page Activités.
+   Sélectionnez un modèle, puis sélectionnez **Suivant.** Saisissez le titre de votre marque dans la section Propriétés, puis sélectionnez **Créer.**
+   Votre marque est maintenant répertoriée dans la page Activités.
 
 1. Sélectionnez votre marque dans la page Activités.
 1. Dans la zone principale de votre marque, sélectionnez **Créer** > **Créer une activité**.
@@ -46,7 +44,7 @@ Votre marque est désormais répertoriée dans la page Activités.
 
    La section Détails comprend le nom, le moteur de ciblage et l’objectif. Lorsque vous sélectionnez Adobe Target comme moteur de ciblage, l’option de configuration du cloud Target est activée. Sélectionnez la configuration cloud de Target, le type d’activité, puis indiquez l’objectif de l’activité et appuyez sur **Suivant**. La communication interactive ne prend en charge que le type d’activité de ciblage d’expérience.
 
-   La section Cible vous permet d’ajouter une expérience de public et de la nommer. Cliquez sur **Ajouter une expérience** pour activer les options **Sélectionner un public** et **Nommer l’expérience**. Sélectionnez **Sélectionner une audience** pour afficher une liste des audiences et leur source. Sélectionnez une audience dans la liste Nom de l’audience. Sélectionnez **Ajouter une expérience** pour nommer l’expérience, puis **Suivant**
+   La section Cible vous permet d’ajouter une expérience d’audience et de la nommer. Cliquez sur **Ajouter une expérience** pour activer les options **Sélectionner une audience** et **Nommer l’expérience**. Sélectionnez **Sélectionner une audience** pour afficher une liste des audiences et leur source. Sélectionnez une audience dans la liste Nom de l’audience. Sélectionnez **Ajouter une expérience** pour nommer l’expérience, puis **Suivant**
 
    La section Objectifs et paramètres vous permet de planifier votre activité et de la classer par priorité. Définissez la date de début, la date de fin et la priorité de l’activité, la mesure de l’objectif, une autre mesure, puis appuyez sur **Enregistrer**.
 
@@ -70,7 +68,7 @@ Votre marque est désormais répertoriée dans la page Activités.
 
    `<cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>`
 
-1. Pour activer le framework cible pour les formulaires adaptatifs, accédez à votre formulaire et ouvrez-le en mode d’édition.
+1. Pour activer le framework cible pour les formulaires adaptatifs, accédez à vos formulaires ou communications interactives et ouvrez-les en mode d’édition.
 
    Pour ouvrir un formulaire ou une communication interactive en mode d’édition, sélectionnez **Sélectionner**, puis **Ouvrir**.
 
@@ -90,11 +88,11 @@ Votre marque est désormais répertoriée dans la page Activités.
    >AEM Forms prend uniquement en charge le ciblage des composants d’image. Assurez-vous que le panneau qui héberge le composant d’image ne contient aucun autre composant et que le nombre de colonnes du panneau est défini sur 1.
 
 1. Basculez de **Modifier** au mode **Ciblage**. L’option permettant de changer de mode se trouve dans le coin supérieur droit.
-1. Sélectionnez une **MARQUE**, une **ACTIVITÉ**, puis sélectionnez **Commencer le ciblage**. Le menu **Publics** s’affiche sur le côté droit de l’éditeur.
+1. Sélectionnez une **MARQUE**, une **ACTIVITÉ**, puis sélectionnez **Commencer le ciblage**. Le menu **Audiences** s’affiche sur le côté droit de l’éditeur.
 
    ![Menu de ciblage](assets/targeting-menu.png)
 
-1. Sélectionnez une audience dans le menu **Audiences** et l’image à cibler. Un menu s’affiche. Dans le menu, sélectionnez **Cible**. Sélectionnez l’image et **Configurer**. Dans la fenêtre des propriétés, sélectionnez l’image à afficher pour le public sélectionné. Répétez l’étape pour toutes les audiences. Le ciblage d’expérience est activé pour l’image dans la communication interactive ou le formulaire adaptatif.
+1. Sélectionnez une audience dans le menu **Audiences** et l’image à cibler. Un menu s’affiche. Dans le menu, sélectionnez **Cible**. Sélectionnez l’image et **Configurer**. Dans la fenêtre des propriétés, sélectionnez l’image à afficher pour l’audience sélectionnée. Répétez l’étape pour toutes les audiences. Le ciblage d’expérience est activé pour l’image dans la communication interactive ou le formulaire adaptatif.
 
 ## Vérifier si l’activité créée se synchronise avec le serveur Target {#check-if-the-created-activity-syncs-with-the-target-server}
 
@@ -109,9 +107,9 @@ Pour valider le comportement de Target :
 * Utiliser le ciblage avec `wcmmode preview` en mode création
 * Utiliser le ciblage avec `wcmmode preview` et `wcmmode disabled` en mode de publication
 
-## Contrôler le ciblage pour le composant image {#monitor-targeting-for-the-image-component}
+## le ciblage pour le composant image {#monitor-targeting-for-the-image-component}
 
-Pour contrôler le ciblage pour les composants image sur votre formulaire, publiez vos images, activités et formulaire adaptatif.
+Pour  le ciblage pour les composants image sur votre formulaire, publiez vos images, activités et formulaire adaptatif.
 
 ## Problèmes en cours {#open-issues}
 

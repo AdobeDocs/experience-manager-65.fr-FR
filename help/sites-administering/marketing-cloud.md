@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '868'
 ht-degree: 100%
-
 ---
-
 # Intégrer à Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
 [Adobe Experience Cloud](https://business.adobe.com/fr/products/marketing-cloud/main.html) comprend des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des commerces en ligne. Le cloud se compose d’applications intégrées permettant de collecter et de libérer la puissance des informations sur la clientèle, afin d’optimiser les efforts d’acquisition, de conversion et de rétention de la clientèle, ainsi que la création et la distribution de contenu.
@@ -52,9 +50,9 @@ Vous pouvez également utiliser l’[assistant d’accord préalable](/help/site
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html) est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne.
+[Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html) est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments d’audience à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne.
 
-Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire ce public, il est essentiel que les marketeurs identifient rapidement les offres et les contenus pertinents et attrayants pour leurs publics. Dotées de ces connaissances, les personnes spécialisées dans le marketing ont besoin de la capacité de faire évoluer leurs sites en continu et de cibler le contenu approprié vers les audiences pertinentes.
+Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire une audience en ligne, il est essentiel que les spécialistes marketing identifient rapidement les offres et les contenus pertinents et attrayants pour leurs audiences. Dotées de ces connaissances, les personnes spécialisées dans le marketing ont besoin de la capacité de faire évoluer leurs sites en continu et de cibler le contenu approprié vers les audiences pertinentes.
 
 [Intégration à Adobe Target](/help/sites-administering/target.md) explique comment intégrer votre site à Target.
 
@@ -72,7 +70,7 @@ Pour plus d’informations, consultez la section [Opt-in à Adobe Analytics et 
 
 ## Intégration à Adobe Dynamic Media Classic {#integrating-with-scene}
 
-Adobe Dynamic Media Classic est une solution hébergée permettant la publication, la gestion, l’enrichissement et la diffusion de ressources marketing dynamiques et le merchandising visuel enrichi sur une multiplicité de canaux : web, mobiles, par e-mail, réseaux sociaux, écrans connectés à internet et impression.
+Adobe Dynamic Media Classic est une solution hébergée permettant la publication, la gestion, l’enrichissement et la diffusion de ressources marketing dynamiques et le merchandising visuel enrichi sur une multiplicité de canaux : web, mobiles, e-mail, réseaux sociaux, écrans connectés à internet et impression.
 
 Dans Adobe Experience Manager, vous pouvez publier des ressources numériques directement d’Adobe Experience Manager vers Dynamic Media Classic et vous pouvez publier des ressources numériques de Dynamic Media Classic vers Adobe Experience Manager.
 

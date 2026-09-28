@@ -1,10 +1,14 @@
 ---
 title: Création d’une page de destination efficace pour une newsletter
+
 description: Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 100%
-
+source-wordcount: '612'
+ht-degree: 97%
 ---
-
 # Création d’une page de destination efficace pour une newsletter{#creating-an-effective-newsletter-landing-page}
 
 Une page de destination efficace pour newsletter vous permet d’obtenir plus de personnes inscrites à votre newsletter (ou à toute autre campagne de marketing par e-mail). Vous pouvez utiliser les informations que vous collectez à partir des abonnements à vos newsletters pour obtenir des prospects.
@@ -35,7 +37,7 @@ Pour créer une page de destination efficace pour une newsletter, vous devez eff
 
 ## Créer une liste pour la newsletter {#creating-a-list-for-the-newsletter}
 
-Créez une liste, par exemple, **Newsletter Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs et les utilisatrices doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists). 
+Créez une liste, par exemple, **Newsletter Geometrixx**, dans MCM pour la newsletter à laquelle les utilisateurs et les utilisatrices doivent s’abonner. La création de listes est décrite dans la section [Création de listes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 Voici un exemple de liste :
 
@@ -49,7 +51,7 @@ Pour créer votre propre formulaire de newsletter, reportez-vous aux information
 
 Les champs masqués de l’exemple suivant fournissent le minimum d’informations (e-mail). De plus, vous pourrez ajouter d’autres champs ultérieurement, mais cela aura une incidence sur le taux de conversion.
 
-L’exemple suivant est un formulaire créé à l’adresse URL https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
+L’exemple suivant est un formulaire créé à l’adresse https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
 1. Créez le formulaire.
 
