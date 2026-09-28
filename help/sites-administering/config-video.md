@@ -11,20 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 100%
-
+source-wordcount: '534'
+ht-degree: 98%
 ---
-
 # Configurer le composant vidéo {#configure-the-video-component}
 
 Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer une ressource vidéo prédéfinie et prête à l’emploi sur une page.
 
-Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
+Pour qu’un transcodage correct se produise, un administrateur installe FFmpeg séparément. Consultez [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). De même, les administrateurs et administratrices [configurent vos profils vidéo](#configure-video-profiles) pour les utiliser avec les éléments HTML5.
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Composant intégré](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=fr).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant Incorporer des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=fr).
 
 >[!CAUTION]
 >
@@ -68,7 +66,7 @@ Pour **configurer AEM**, procédez comme suit :
 >
 >Ces étapes ne sont nécessaires que si une personnalisation ultérieure des codecs est requise.
 
-1. Ouvrez [!UICONTROL CRXDE Lite] dans un navigateur Web. Naviguez vers [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Ouvrez [!UICONTROL CRXDE Lite] dans un navigateur Web. Accédez à [&#128279;](http://localhost:4502/crx/de).
 2. Sélectionnez le nœud `/libs/settings/dam/video/format_aac/jcr:content` et vérifiez que les propriétés du nœud sont les suivantes :
 
    * `audioCodec` est `aac`.

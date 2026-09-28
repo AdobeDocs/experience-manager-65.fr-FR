@@ -5,12 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
 source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
-workflow-type: ht
-source-wordcount: '631'
+workflow-type: tm+mt
+source-wordcount: '652'
 ht-degree: 100%
-
 ---
-
 # Contrôle de version, révision et commentaires dans un formulaire adaptatif
 
 <!--
@@ -19,7 +17,7 @@ ht-degree: 100%
 
 <span class="preview">Cette fonctionnalité n’est pas activée par défaut. Vous pouvez écrire à partir de votre adresse officielle à aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.</span>
 
-Les composants principaux d’un formulaire adaptatif permettent aux auteurs et aux autrices de formulaires d’ajouter un contrôle de version, des commentaires et des annotations aux formulaires. Ces fonctionnalités simplifient le développement des formulaires en permettant aux utilisateurs et utilisatrices de créer et de gérer plusieurs versions, de collaborer par le biais de commentaires et d’ajouter des notes à des sections de formulaire spécifiques, améliorant ainsi l’expérience de création de formulaires.
+Les composants principaux d’un formulaire adaptatif permettent aux créateurs et aux créatrices de formulaires d’ajouter un contrôle de version, des commentaires et des annotations aux formulaires. Ces fonctionnalités simplifient le développement des formulaires en permettant aux utilisateurs et utilisatrices de créer et de gérer plusieurs versions, de collaborer par le biais de commentaires et d’ajouter des notes à des sections de formulaire spécifiques, améliorant ainsi l’expérience de création de formulaires.
 
 Consultez cette vidéo détaillée pour découvrir les fonctionnalités de contrôle de version, de commentaires et d’annotations dans un formulaire adaptatif.
 
@@ -27,7 +25,7 @@ Consultez cette vidéo détaillée pour découvrir les fonctionnalités de contr
 
 ## Prérequis {#prerequisite-versioning}
 
-Pour utiliser les fonctions de contrôle de version, de commentaires et d’annotation dans un formulaire adaptatif, assurez-vous que les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement AEM 6.5 Forms.
+Pour utiliser les fonctions de contrôle de version, de commentaires et d’annotation dans un formulaire adaptatif, assurez-vous que les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement AEM 6.5 Forms.
 
 ## Contrôle de version d’un formulaire adaptatif {#adaptive-form-versioning}
 

@@ -8,20 +8,18 @@ exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '423'
 ht-degree: 100%
-
 ---
-
 # Bonnes pratiques relatives à la traduction des ressources {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques dans plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, consultez [Ressources multilingues](multilingual-assets.md).
 
 Pour une gestion efficace des ressources afin de garantir que les différentes versions traduites restent synchronisées, créez des [copies de langue](preparing-assets-for-translation.md) pour les ressources avant d’exécuter des workflows de traduction.
 
-La copie de langue d’une ressource ou d’un groupe de ressources est un parent de langue (ou une version des ressources dans une langue commune) avec une hiérarchie de contenu similaire.
+La copie linguistique d’une ressource ou d’un groupe de ressources est un parent de langue (ou une version des ressources dans une langue commune) avec une hiérarchie de contenu similaire.
 
-Chaque copie de langue est une ressource indépendante. Par conséquent, la traduction de ressources en plusieurs paramètres régionaux peut augmenter considérablement la taille du référentiel CRX. Par exemple, la traduction de ressources d’une taille combinée de 10 Go en deux langues peut augmenter la taille du référentiel d’environ 20 Go (10 Go pour chaque langue).
+Chaque copie linguistique est une ressource indépendante. Par conséquent, la traduction de ressources en plusieurs paramètres régionaux peut augmenter considérablement la taille du référentiel CRX. Par exemple, la traduction de ressources d’une taille combinée de 10 Go en deux langues peut augmenter la taille du référentiel d’environ 20 Go (10 Go pour chaque langue).
 
 Les fichiers binaires des ressources occupent un espace de stockage beaucoup plus important que les métadonnées et les balises. Par conséquent, si la traduction des métadonnées et des balises est adaptée à votre objectif, omettez de traduire les binaires. Vous pouvez conserver la copie d’origine des binaires dans le référentiel pour l’associer aux métadonnées et aux balises traduites dans différents paramètres régionaux. La conservation d’une seule copie de binaires, au lieu de plusieurs versions traduites, réduit l’impact sur la taille du référentiel.
 

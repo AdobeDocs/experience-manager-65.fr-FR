@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '612'
 ht-degree: 100%
-
 ---
-
 # Approvisionnement juste à temps {#just-in-time-user-provisioning}
 
 AEM Forms prend en charge l’approvisionnement juste à temps d’utilisateurs et d’utilisatrices n’existant pas encore dans User Management. Grâce à la fonction d’approvisionnement juste à temps, les utilisateurs et les utilisatrices sont automatiquement ajoutés à User Management une fois leurs informations d’identification authentifiées. En outre, les rôles et groupes appropriés sont affectés dynamiquement au nouvel utilisateur ou à la nouvelle utilisatrice.

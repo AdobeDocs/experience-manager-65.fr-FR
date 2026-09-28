@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 100%
-
+source-wordcount: '570'
+ht-degree: 98%
 ---
-
 # Activation de l’exportateur JSON pour un composant{#enabling-json-export-for-a-component}
 
 Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
@@ -55,7 +53,7 @@ En outre, cela indique que la classe de modèles Sling peut être adaptée dans 
 
 >[!NOTE]
 >
->Les classes `ExporterConstants` et `ComponentExporter` proviennent du lot `com.adobe.cq.export.json`.
+>Les classes `ExporterConstants` et `ComponentExporter` proviennent du bundle `com.adobe.cq.export.json`.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
@@ -85,7 +83,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-core-wcm-components sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components).
+* [Ouvrez le projet aem-core-wcm-components sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip).
 
 ## Documentation connexe {#related-documentation}

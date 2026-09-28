@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 100%
-
+source-wordcount: '825'
+ht-degree: 99%
 ---
-
 # Implémentation de référence We.Retail{#we-retail-reference-implementation}
 
 ## Présentation {#introduction}
@@ -38,7 +36,7 @@ En tant qu’implémentation de référence standard d’AEM, We.Retail présent
 | [HTML Template Language](https://experienceleague.adobe.com/fr/docs/experience-manager-htl/content/overview) | Tous les composants sont basés sur le langage HTL. |  |
 | [Fonctionnalités pour le e-commerce](/help/commerce/cif-classic/developing/ecommerce.md) | Inclut un catalogue de produits |  |
 | [Sites pour communautés](/help/communities/overview.md) | Permet aux visiteurs et visiteuses de participer à des discussions communautaires, de lire des blogs, etc. |  |
-| [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser, prêts à l’emploi et configurables par la personne utilisatrice. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
+| [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/introduction) | Tous les composants sont basés sur les nouveaux composants principaux et sont plus faciles à utiliser, prêts à l’emploi et configurables par la personne qui les utilisent. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
 | [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail illustre la puissance de la réutilisation de contenu à l’aide des fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) | Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. | [Faites un essai !](/help/sites-developing/we-retail-experience-fragments.md) |
 
@@ -107,7 +105,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-sample-we-retail sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail).
+* [Ouvrez le projet aem-sample-we-retail sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master).
 
 La dernière version peut également être [téléchargée directement](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) en tant que package à installer.

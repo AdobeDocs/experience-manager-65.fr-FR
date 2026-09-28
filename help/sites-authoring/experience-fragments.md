@@ -6,12 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
-workflow-type: ht
-source-wordcount: '1505'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1541'
+ht-degree: 99%
 ---
-
 # Fragments d’expérience{#experience-fragments}
 
 Dans Adobe Experience Manager (AEM), un fragment d’expérience est un groupe d’un ou plusieurs composants incluant du contenu et une disposition pouvant être référencés dans des pages. Ils peuvent contenir n’importe quel composant.
@@ -32,12 +30,12 @@ Un fragment d’expérience :
 Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur ou une autrice souhaite réutiliser des parties d’une page (fragment d’une expérience), ils doivent copier et coller ce fragment. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
-* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs et autrices souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu à la clientèle. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
+* Pour gérer le scénario d’utilisation CMS sans interface. Les auteurs et autrices souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu à la clientèle. Un système/point de contact tiers utilise cette expérience, puis la diffuse à la personne utilisatrice finale.
 * Avec la [gestion multisite (MSM, Multi-Site Management)](/help/sites-administering/msm.md) en tant que fragment d’expérience faisant partie d’une page. Cela s’applique à la fois aux fragments individuels et aux dossiers dans lesquels ils résident.
 
 >[!NOTE]
 >
->Dans le cas des fragments d’expérience, l’accès en écriture exige que le compte d’utilisateur soit enregistré dans le groupe :
+>Dans le cas des fragments d’expérience, l’accès en écriture exige que le compte d’utilisateur ou d’utilisatrice soit enregistré dans le groupe :
 >
 >    `experience-fragments-editors`
 >
@@ -49,22 +47,22 @@ Les fragments d’expérience doivent être utilisés :
 
 * Lorsque vous souhaitez réutiliser des expériences.
 
-   * Expériences qui seront réutilisées avec un même contenu ou un contenu similaire.
+  * Expériences qui seront réutilisées avec un même contenu ou un contenu similaire.
 
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
 
-   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
-   * Intégrer du contenu dans des points de contact tiers
+  * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
+  * Intégrer du contenu dans des points de contact tiers
 
 * Si vous disposez d’une expérience avec des variations ou des rendus différents.
 
-   * Variations spécifiques au canal ou au contexte
-   * Expériences qu’il y a lieu de regrouper (par exemple, une campagne avec des expériences différentes sur les canaux).
+  * Variations spécifiques au canal ou au contexte
+  * Expériences qu’il y a lieu de regrouper (par exemple, une campagne avec des expériences différentes sur les canaux).
 
 * Lorsque vous avez recours au commerce omnicanal.
 
-   * Partage de contenu commercial sur les canaux des [réseaux sociaux](/help/sites-developing/experience-fragments.md#social-variations) à grande échelle
-   * Conversion des points de contact en points de transaction
+  * Partage de contenu commercial sur les canaux des [réseaux sociaux](/help/sites-developing/experience-fragments.md#social-variations) à grande échelle
+  * Rendre les points de contact transactionnels
 
 ## Organisation des fragments d’expérience {#organizing-your-experience-fragments}
 
@@ -256,7 +254,7 @@ Vous pouvez désormais utiliser votre fragment d’expérience lors de la créat
    >
    >La page doit être basée sur un modèle modifiable.
 
-   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Par exemple : [&#128279;](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 
@@ -336,31 +334,31 @@ Les détails de votre fragment sont visibles :
 
    * **De base**
 
-      * **Titre** – obligatoire
+     * **Titre** – obligatoire
 
-      * **Description**
-      * **Balises**
-      * **Nombre total de variations** – informations uniquement
+     * **Description**
+     * **Balises**
+     * **Nombre total de variations** – informations uniquement
 
-      * **Nombre de variations web** – informations uniquement
-      * **Nombre de variantes non-Web** - **informations uniquement**
+     * **Nombre de variations web** – informations uniquement
+     * **Nombre de variantes non-Web** - **informations uniquement**
 
-      * **Nombre de pages utilisant ce fragment** – informations uniquement
+     * **Nombre de pages utilisant ce fragment** – informations uniquement
 
    * **Cloud Services**
 
-      * **Configuration du cloud**
-      * **Configuration de Cloud Services**
-      * **Identifiant de page Facebook**
-      * **Panorama Pinterest**
+     * **Configuration du cloud**
+     * **Configuration de Cloud Services**
+     * **Identifiant de page Facebook**
+     * **Panorama Pinterest**
 
    * **Références**
 
-      * Liste de références.
+     * Liste de références.
 
    * **Statut des réseaux sociaux**
 
-      * Détails des variations des réseaux sociaux.
+     * Détails des variations des réseaux sociaux.
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 

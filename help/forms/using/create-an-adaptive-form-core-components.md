@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 100%
-
+source-wordcount: '1928'
+ht-degree: 99%
 ---
-
 # Créer un formulaire adaptatif basé sur des composants principaux {#creating-an-adaptive-form-core-components}
 
 
@@ -24,7 +22,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -93,7 +91,7 @@ Après avoir ouvert le formulaire pour le modifier, vous pouvez utiliser les com
 L’action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur ou une utilisatrice clique sur le bouton Soumettre d’un formulaire adaptatif. Les formulaires adaptatifs incluent certaines actions de soumission prêtes à l’emploi. Vous pouvez également étendre les actions de soumission par défaut pour créer votre propre action de soumission. Pour configurer une action de soumission pour votre formulaire :
 
 1. Ouvrez l’explorateur de contenu, puis sélectionnez le composant **[!UICONTROL Conteneur de guide]** de votre formulaire adaptatif.
-1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/using/assets/configure-icon.svg). La fenêtre du conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur l’icône des propriétés du conteneur de guide ![Propriétés du guide](/help/forms/using/assets/configure-icon.svg). La boîte de dialogue du conteneur de formulaires adaptatifs s’ouvre.
 
 1. Cliquez sur l’onglet **[!UICONTROL Envoi]**.
 
@@ -200,6 +198,6 @@ Pour renommer un formulaire adaptatif, procédez comme suit :
 
 ## Voir également
 
-* [Création d’un formulaire adaptatif basé sur des composants principaux](create-an-adaptive-form-core-components.md)
+* [Créer un formulaire adaptatif basé sur des composants principaux](create-an-adaptive-form-core-components.md)
 * [Création ou ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Exemples de modèles de thèmes et de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=fr)

@@ -1,21 +1,24 @@
 ---
 title: Proxy de service de formulaires HTML5
+
 description: Le proxy de service de formulaires HTML5 est une configuration permettant d’enregistrer un proxy pour le service d’envoi. Pour configurer le proxy de service, spécifiez l’URL du service d’envoi via le paramètre de requête submissionServiceProxy.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Proxy de service de formulaires HTML5{#html-forms-service-proxy}
 
 Le proxy de service de formulaires HTML5 est une configuration permettant d’enregistrer un proxy pour le service d’envoi. Pour configurer le proxy de service, spécifiez l’URL du service d’envoi via le paramètre de requête *submissionServiceProxy*.

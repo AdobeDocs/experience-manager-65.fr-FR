@@ -1,6 +1,8 @@
 ---
 title: Outils de modernisation d’AEM
+
 description: Les outils de modernisation d’AEM vous aident à convertir vos fonctionnalités d’AEM héritées pour qu’elles tirent parti des dernières technologies.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
@@ -9,11 +11,9 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '95'
 ht-degree: 100%
-
 ---
-
 # Outils de modernisation d’AEM {#modernization-tools}
 
 [Les outils de modernisation d’AEM permettent de convertir facilement les éléments suivants :](https://opensource.adobe.com/aem-modernize-tools/)

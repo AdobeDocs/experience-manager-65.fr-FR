@@ -1,5 +1,5 @@
 ---
-title: '« Réutilisation de contenu : Multi-Site Manager et Live Copy »'
+title: 'Réutilisation de contenu : Multi-Site Manager et Live Copy'
 description: Découvrez comment réutiliser du contenu avec des Live Copies et Multi Site Manager.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,28 +11,26 @@ feature: Multi Site Manager
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 100%
-
+source-wordcount: '2681'
+ht-degree: 97%
 ---
-
 # Réutilisation de contenu : Multi-Site Manager et Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) vous permet d’utiliser le même contenu à plusieurs endroits différents. Pour ce faire, MSM utilise sa fonctionnalité Live Copy :
 
 * Avec MSM, vous pouvez :
 
-   * créer une fois un contenu ;
-   * Copiez ce contenu et utilisez-le dans d’autres zones ([Live Copies](#live-copies)) du même site ou d’autres sites.
+  * créer une fois un contenu ;
+  * Copiez ce contenu et utilisez-le dans d’autres zones ([Live Copies](#live-copies)) du même site ou d’autres sites.
 
 * MSM conserve alors les relations (en direct) entre votre contenu source et ses Live Copies afin que :
 
-   * Lorsque vous modifiez le contenu source, la source et les Live Copies sont synchronisées (pour appliquer ces modifications aux Live Copies également).
-   * Vous pouvez ajuster le contenu des Live Copies en rompant la relation en direct pour des sous-pages individuelles, des composants ou les deux. Ce faisant, les modifications apportées à la source ne sont plus appliquées à la Live Copy.
+  * Lorsque vous modifiez le contenu source, la source et les Live Copies sont synchronisées (pour appliquer ces modifications aux Live Copies également).
+  * Vous pouvez ajuster le contenu des Live Copies en rompant la relation en direct pour des sous-pages individuelles, des composants ou les deux. Ce faisant, les modifications apportées à la source ne sont plus appliquées à la Live Copy.
 
 Ces pages et les suivantes abordent les questions connexes :
 
-* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
+* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
 * [Console Aperçu de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configuration de la synchronisation des Live Copies](/help/sites-administering/msm-sync.md)
 * [Conflits de déploiement de MSM](/help/sites-administering/msm-rollout-conflicts.md)
@@ -124,33 +122,33 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 * **Créer un site** (**Sites**)
 
-   * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre.
-   * Cela requiert une configuration de plan directeur prédéfinie pour spécifier la source.
-   * Crée une Live Copy de la source (prédéfinie).
-   * Fournit à l’utilisateur ou l’utilisatrice le bouton **Déploiement**.
+  * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre.
+  * Cela requiert une configuration de plan directeur prédéfinie pour spécifier la source.
+  * Crée une Live Copy de la source (prédéfinie).
+  * Fournit à l’utilisateur ou l’utilisatrice le bouton **Déploiement**.
 
 * **Créer une Live Copy** (**Sites**)
 
-   * MSM vous permet de [créer une Live Copy ad hoc (unique) d’une page ou d’une sous-branche spécifique d’un site web](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page). Par exemple, vous pouvez dupliquer une sous-branche pour fournir des informations sur la nouvelle version d’un produit.
-   * Crée une Live Copy ad hoc (aucune configuration de plan directeur requise).
-   * Peut être utilisé pour créer (immédiatement) une Live Copy pour une page ou une branche.
-   * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
+  * MSM vous permet de [créer une Live Copy ad hoc (unique) d’une page ou d’une sous-branche spécifique d’un site web](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page). Par exemple, vous pouvez dupliquer une sous-branche pour fournir des informations sur la nouvelle version ou la version mise à jour d’un produit.
+  * Crée une Live Copy ad hoc (aucune configuration de plan directeur requise).
+  * Peut être utilisé pour créer (immédiatement) une Live Copy pour une page ou une branche.
+  * Nécessite de **Synchroniser** (ne fournit pas le bouton **Déployer**).
 
 * **Afficher les propriétés** (**Sites**)
 
-   * Le cas échéant, cette option vous permet de [surveiller votre Live Copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) en fournissant des informations sur la **Live Copy** ou le **plan directeur** associé.
+  * Le cas échéant, cette option vous permet de [surveiller votre Live Copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) en fournissant des informations sur la **Live Copy** ou le **plan directeur** associé.
 
 * **Références** (**Sites**)
 
-   * Le rail [Références](/help/sites-authoring/basic-handling.md#references) fournit des informations sur les **Live Copies** ainsi que l’accès aux actions appropriées.
+  * Le rail [Références](/help/sites-authoring/basic-handling.md#references) fournit des informations sur les **Live Copies** ainsi que l’accès aux actions appropriées.
 
 * **Aperçu de la Live Copy** (**Sites**)
 
-   * Cette console vous permet [d’afficher et de gérer votre plan directeur et ses Live Copies](/help/sites-administering/msm-livecopy-overview.md).
+  * Cette console vous permet [d’afficher et de gérer votre plan directeur et ses Live Copies](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Plans directeurs** (**Outils** – **Sites**)
 
-   * Cette console vous permet de [créer et de gérer vos configurations de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+  * Cette console vous permet de [créer et de gérer vos configurations de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -208,7 +206,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Déployer</strong><br /> </td>
-   <td>Synchronise la source avec la Live Copy.<br /> Peut être déclenché par un auteur ou une autrice (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement).</td>
+   <td>Synchronise la source avec la Live Copy.<br /> Il peut être déclenché par un auteur (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement).</td>
    <td> </td>
   </tr>
   <tr>
@@ -270,8 +268,8 @@ Une Live Copy MSM est une copie du contenu spécifique d’un site pour laquell
 * La synchronisation effectue le transfert réel du contenu lorsque des modifications sont apportées à la source.
 * Une Live Copy peut être considérée comme :
 
-   * Superficielle : une seule page
-   * Profonde : la page, ainsi que ses pages enfants
+  * Superficielle : une seule page
+  * Profonde : la page, ainsi que ses pages enfants
 
 * Les règles de synchronisation, appelées configurations de déploiement, déterminent quelles propriétés sont synchronisées et quand la synchronisation a lieu.
 
@@ -290,19 +288,19 @@ Dans l’exemple précédent, `/content/we-retail/language-masters/en` est le si
 >
 >Les graphiques et les descriptions de cette section représentent des instantanés de Live Copies potentielles. Ils ne sont pas exhaustifs, mais offrent un aperçu mettant en évidence les caractéristiques spécifiques.
 
-Lorsque vous créez initialement une Live Copy, les pages sources sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
+Lorsque vous créez initialement une Live Copy, les pages source sélectionnées sont reflétées sur une base 1:1 dans la Live Copy. Par la suite, de nouvelles ressources (pages et/ou paragraphes) peuvent également être créées directement dans la Live Copy. Il est donc utile d’être conscient de ces variations et de savoir comment elles affectent la synchronisation. Les compositions possibles sont les suivantes :
 
 * [Live Copy avec des pages autres que Live Copy](#live-copy-with-non-live-copy-pages)
 * [Live Copies imbriquées](#nested-live-copies)
 
 La forme de base de la Live Copy comprend les éléments suivants :
 
-* Les pages Live Copy qui reflètent les pages sources sélectionnées sur une base 1:1.
+* Pages Live Copy qui reflètent les pages source sélectionnées sur une base 1:1.
 * Une définition de configuration.
 * Une relation en direct définie pour chaque ressource :
 
-   * Liez la ressource de Live Copy à son plan directeur ou sa source.
-   * Utilisées pour les opérations d’héritage et de déploiement.
+  * Liez la ressource de Live Copy à son plan directeur ou sa source.
+  * Utilisées pour les opérations d’héritage et de déploiement.
 
 * Les modifications peuvent être [synchronisées](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) en fonction des besoins.
 
@@ -381,7 +379,7 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies avec
 
 Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement se compose d’un déclencheur et d’une ou de plusieurs actions de synchronisation :
 
-* **Déclencheur** 
+* **Déclencheur**
 
   Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
 

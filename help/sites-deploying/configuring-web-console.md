@@ -10,11 +10,9 @@ feature: Configuring
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '716'
 ht-degree: 100%
-
 ---
-
 # Console web{#web-console}
 
 La console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un travail de la communauté pour mettre en œuvre la plateforme de service OSGi R4, qui inclut le framework OSGi et les services standard.
@@ -25,10 +23,10 @@ La console web d’AEM est basée sur la [Console de gestion web Apache Felix](
 >
 >AEM ayant ses propres paramètres par défaut, ces derniers peuvent être différents de ceux répertoriés dans la console.
 
-La console web propose une sélection d’onglets pour la maintenance des lots OSGi, notamment :
+La console web propose une sélection d’onglets pour la maintenance des bundles OSGi, notamment :
 
-* [Configuration](#configuration) : utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM
-* [Lots](#bundles) : utilisé pour installer des lots
+* [Configuration](#configuration) : utilisé pour configurer les bundles OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM
+* [Bundles](#bundles) : utilisé pour installer des bundles
 * [Composants](#components) : utilisé pour contrôler le statut des composants requis pour AEM
 
 Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Aucun redémarrage n’est requis.
@@ -39,7 +37,7 @@ Cette console est accessible à partir de `../system/console` ; par exemple :
 
 ## Configuration {#configuration}
 
-L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM.
+L’onglet **Configuration** est utilisé pour configurer les bundles OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM.
 
 >[!NOTE]
 >
@@ -65,8 +63,8 @@ Il existe deux types de configurations disponibles à partir des listes déroula
 
   Permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
 
-   * standard ou intégrales pour AEM. Elles sont nécessaires ; si elles sont supprimées, les valeurs sont renvoyées aux paramètres par défaut.
-   * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur ou l’utilisatrice et la suppression supprime l’instance.
+  * standard ou intégrales pour AEM. Elles sont nécessaires ; si elles sont supprimées, les valeurs sont renvoyées aux paramètres par défaut.
+  * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur ou l’utilisatrice et la suppression supprime l’instance.
 
 * **Configurations d’usine**
 
@@ -78,7 +76,7 @@ En sélectionnant une entrée quelconque dans la liste, vous pourrez voir les pa
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-Vous pouvez mettre à jour les paramètres selon vos besoins et : 
+Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Enregistrer**
 
@@ -96,15 +94,15 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Dissocier**
 
-  Dissocie la configuration actuelle du lot.
+  Dissocie la configuration actuelle du bundle.
 
 * **Annuler**
 
   Annule toutes les modifications actuelles.
 
-## Lots {#bundles}
+## Bundles {#bundles}
 
-L’onglet **Lots** correspond au mécanisme permettant d’installer les lots OSGi requis par AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+L’onglet **Bundles** correspond au mécanisme permettant d’installer les bundles OSGi requis par AEM. Cet onglet est accessible via l’une des méthodes suivantes :
 
 * Le menu déroulant :
 
@@ -114,7 +112,7 @@ L’onglet **Lots** correspond au mécanisme permettant d’installer les lots O
 
   `http://localhost:4502/system/console/bundles`
 
-Une liste de lots s’affiche :
+Une liste de bundles s’affiche :
 
 ![screen_shot_2012-02-15at44740pm-1](assets/screen_shot_2012-02-15at44740pm-1.png)
 
@@ -122,7 +120,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Installer ou mettre à jour**
 
-  Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **commencer** immédiatement et à quel **niveau de départ**.
+  Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre bundle et spécifier s’il doit **commencer** immédiatement et à quel **niveau de démarrage**.
 
 * **Recharger**
 
@@ -136,19 +134,19 @@ En utilisant cet onglet vous pouvez :
 
 * **Démarrer**
 
-  Lance un lot en fonction du niveau initial spécifié.
+  Démarre un bundle en fonction du niveau de démarrage spécifié.
 
 * **Arrêter**
 
-  Arrête le lot.
+  Arrête le bundle.
 
 * **Désinstaller**
 
-  Permet de désinstaller le lot du système.
+  Permet de désinstaller le bundle du système.
 
 * **Afficher le statut**
 
-  La liste indique le statut du lot. Cliquez sur le nom d’un lot spécifique pour obtenir des informations supplémentaires.
+  La liste indique le statut du bundle. Cliquez sur le nom d’un bundle spécifique pour obtenir des informations supplémentaires.
 
 >[!NOTE]
 >
@@ -178,4 +176,4 @@ Cliquez sur le nom d’un composant spécifique pour afficher des informations s
 >
 >L’activation ou la désactivation d’un composant ne s’applique que jusqu’au redémarrage d’AEM/CRX.
 >
->L’état de départ est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le lot au moment de la création du lot.
+>L’état de démarrage est défini dans le descripteur de composant, qui est généré pendant le développement et stocké dans le bundle au moment de sa création.

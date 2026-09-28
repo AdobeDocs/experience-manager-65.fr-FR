@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
-
+source-wordcount: '1078'
+ht-degree: 98%
 ---
-
 # Référence sur les processus de workflow{#workflow-process-reference}
 
 AEM fournit plusieurs étapes de processus qui peuvent être utilisées pour créer des modèles de workflow. Des étapes de processus personnalisées peuvent également être ajoutées pour les tâches qui ne sont pas couvertes par les étapes intégrées (voir [Création de modèles de workflow](/help/sites-developing/workflows-models.md)).
@@ -208,7 +206,7 @@ Verrouille la payload du workflow.
 L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà verrouillé.
-* Le nœud de payload ne comporte pas de contenu enfant jcr:content.
+* Le nœud de payload ne contient pas de nœud enfant jcr:content
 
 ### UnlockProcess {#unlockprocess}
 
@@ -223,7 +221,7 @@ Déverrouille la payload du workflow.
 L’étape n’a aucun effet dans les cas suivants :
 
 * Le payload est déjà déverrouillé.
-* Le nœud de payload ne comporte pas de contenu enfant jcr:content.
+* Le nœud de payload ne contient pas de nœud enfant jcr:content
 
 ## Processus de contrôle de version {#versioning-processes}
 

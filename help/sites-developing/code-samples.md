@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '147'
+workflow-type: tm+mt
+source-wordcount: '178'
 ht-degree: 100%
-
 ---
-
 # Exemples de code{#code-samples}
 
 L’équipe Adobe Consulting Services a établi une série d’exemples de code Adobe Experience Manager (AEM). Ces exemples sont des éléments de code bien commentés pour aider les développeurs et développeuses AEM à comprendre les principaux blocs de création d’AEM. Les exemples sont disponibles à l’adresse suivante : [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).

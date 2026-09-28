@@ -1,21 +1,21 @@
 ---
 title: Création de formulaires Adobe Campaign dans AEM
 description: AEM vous permet de créer et d’utiliser sur votre site web des formulaires qui interagissent avec Adobe Campaign. Vous pouvez insérer des champs spécifiques dans vos formulaires et les mapper à la base de données d’Adobe Campaign.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 100%
-
+source-wordcount: '1231'
+ht-degree: 97%
 ---
-
 # Création de formulaires Adobe Campaign dans AEM{#creating-adobe-campaign-forms-in-aem}
 
 AEM vous permet de créer et d’utiliser sur votre site web des formulaires qui interagissent avec Adobe Campaign. Vous pouvez insérer des champs spécifiques dans vos formulaires et les mapper à la base de données d’Adobe Campaign.
@@ -50,7 +50,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 
 >[!NOTE]
 >
->Vérifiez que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile**, lorsque vous utilisez respectivement Adobe Campaign 6.1.x ou Adobe Campaign Standard.
+>Assurez-vous que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile** lorsque vous utilisez Adobe Campaign 6.1.x ou Adobe Campaign Standard, respectivement
 >
 
 ### Création d’un formulaire {#creating-a-form}
@@ -129,7 +129,7 @@ Pour ce faire, vous devez obtenir manuellement l’EPK d’un profil Adobe Camp
 1. Pour obtenir la clé primaire chiffrée (EPK) d’un profil Adobe Campaign :
 
    * Dans Adobe Campaign Standard, accédez à **Profils et audiences** > **Profils**, qui répertorie les profils existants. Assurez-vous que le tableau contient le champ **Identifiant de ressource principale** dans l’une de ses colonnes (cela peut être configuré en cliquant/appuyant sur **Configurer la liste**). Copiez l’identifiant de ressource principale du profil souhaité.
-   * Dans Adobe Campaign 6.11, accédez à **Profils et cibles** > **Destinataires** où les profils existants sont répertoriés. Assurez-vous que le tableau contient le champ **Identifiant chiffré** dans l’une de ses colonnes (cela peut être configuré en cliquant avec le bouton droit sur une entrée et en choisissant **Configurer la liste…**). Copiez l’identifiant chiffré du profil souhaité.
+   * Dans Adobe Campaign 6.11, accédez à **Profils et cibles** > **Destinataires** où les profils existants sont répertoriés. Assurez-vous que le tableau contient le champ **Identifiant chiffré** dans l’une de ses colonnes (cela peut être configuré en cliquant avec le bouton droit sur une entrée et en choisissant **Configurer la liste**). Copiez l’identifiant chiffré du profil souhaité.
 
 1. Dans AEM, ouvrez la page du formulaire sur l’instance de publication et ajoutez l’EPK de l’étape 1 comme paramètre d’URL. Utilisez le même nom que celui précédemment défini dans le composant lors de la création du formulaire (par exemple, `?epk=...`).
 1. Le formulaire peut maintenant être utilisé pour modifier les données et abonnements associés au profil Adobe Campaign lié. Après avoir modifié certains champs et envoyé le formulaire, vous pouvez vérifier dans Adobe Campaign que les données appropriées ont été mises à jour.

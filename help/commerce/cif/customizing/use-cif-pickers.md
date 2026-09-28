@@ -11,12 +11,10 @@ exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 98%
 ---
-
 # Sélecteurs de création dans Content &amp; Commerce AEM {#cif-pickers}
 
 La création dans Content &amp; Commerce AEM fournit un ensemble d’outils de création pour aider les auteurs et spécialistes marketing AEM à travailler efficacement avec les données et les catalogues de produits commerciaux. Le sélecteur de produits et le sélecteur de catégories font partie du module complémentaire CIF et sont utilisés par les composants principaux CIF. Les projets peuvent utiliser ces sélecteurs dans n’importe quelle boîte de dialogue de composant pour sélectionner des produits ou des catégories.
@@ -59,7 +57,7 @@ Vous trouverez un exemple complet de `cifproductfield` dans le projet [Composant
 
 Le sélecteur de catégories peut également être utilisé dans une boîte de dialogue de composant de la même manière que le sélecteur de produits.
 
-Le fragment de code suivant peut être utilisé dans une configuration cq:dialog :
+Le fragment de code suivant peut être utilisé dans une configuration cq:dialog :
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 

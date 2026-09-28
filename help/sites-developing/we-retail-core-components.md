@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '561'
 ht-degree: 100%
-
 ---
-
 # Test des composants principaux dans We.Retail{#trying-out-core-components-in-we-retail}
 
 Les composants principaux sont des composants modernes et flexibles qui offrent une extensibilité facile et permettent une intégration simple à vos projets. Les composants principaux ont été créés selon plusieurs principes de conception majeurs tels que HTL, la convivialité prête à l’emploi, la configurabilité, le contrôle de version et l’extensibilité. We.Retail a été développé sur des composants principaux.
@@ -78,7 +76,7 @@ Les composants principaux sont des composants modernes et flexibles qui offrent 
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Les composants principaux permettent à un créateur ou à une créatrice de modèles de configurer les propriétés disponibles pour les créateurs et créatrices de pages. Il s’agit notamment de fonctionnalités telles que les sources de collage autorisées, les options de mise en forme et les styles de paragraphe disponibles.
+1. Les composants principaux permettent à un créateur ou une créatrice de modèles de configurer les propriétés disponibles pour les créateurs et créatrices de pages. Il s’agit notamment de fonctionnalités telles que les sources de collage autorisées, les options de mise en forme et les styles de paragraphe disponibles.
 
    Ces boîtes de dialogue de conception sont disponibles pour de nombreux composants principaux et fonctionnent main dans la main avec l’éditeur de modèles. Une fois activés, ils sont disponibles pour le créateur ou la créatrice via les éditeurs de composant.
 

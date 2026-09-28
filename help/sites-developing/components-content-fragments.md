@@ -13,11 +13,9 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '1003'
 ht-degree: 100%
-
 ---
-
 # Composants pour les fragments de contenu{#components-for-content-fragments}
 
 ## Composants pour la création de fragment {#components-for-fragment-authoring}
@@ -32,7 +30,7 @@ Consultez [API de gestion des fragments de contenu - Côté client](/help/sites-
 
 >[!CAUTION]
 >
->Le [composant de base Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) est désormais recommandé. Voir [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
+>Le [composant principal Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) est désormais recommandé. Voir [Développement des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 >
 >Cette section décrit le composant d’origine diffusé pour une utilisation avec des fragments de contenu (**Fragment de contenu** dans le groupe **Général**).
 
@@ -81,21 +79,21 @@ Pour illustrer cela, tenez compte des points suivants :
 * Une instance d’un fragment de contenu composé de trois paragraphes
 * Et qu’un certain contenu a déjà été inséré après le deuxième paragraphe
 
-   * Cela signifie que le contenu est stocké dans le second parsys.
+  * Cela signifie que le contenu est stocké dans le second parsys.
 
 Fondamentalement, si la structure de paragraphe de cette instance change (en modifiant la variation, l’élément ou la plage de paragraphes affichés), cela peut affecter le contenu intermédiaire affiché lorsque le contenu du fragment de contenu :
 
 * est modifié et qu’un autre paragraphe est ajouté avant le deuxième paragraphe :
 
-   * Le contenu intermédiaire est affiché après le paragraphe nouvellement créé (le second parsys contient alors le paragraphe nouvellement créé).
+  * Le contenu intermédiaire est affiché après le paragraphe nouvellement créé (le second parsys contient alors le paragraphe nouvellement créé).
 
 * est modifié et que le deuxième paragraphe est supprimé :
 
-   * Le contenu intermédiaire est affiché après le paragraphe qui était précédemment le troisième (le deuxième parsys contient alors le troisième paragraphe précédent).
+  * Le contenu intermédiaire est affiché après le paragraphe qui était précédemment le troisième (le deuxième parsys contient alors le troisième paragraphe précédent).
 
 * est configuré de sorte que seul le premier paragraphe soit affiché :
 
-   * Le contenu intermédiaire ne s’affiche pas (le deuxième parsys n’est plus rendu en raison de la nouvelle configuration).
+  * Le contenu intermédiaire ne s’affiche pas (le deuxième parsys n’est plus rendu en raison de la nouvelle configuration).
 
 ### Personnalisation du composant de fragment de contenu {#customizing-the-content-fragment-component}
 
@@ -104,9 +102,9 @@ Pour utiliser le composant de fragment de contenu prêt à l’emploi comme plan
 * Réutilisez le script de rendu HTL et son POJO associé pour voir comment la fonctionnalité de contenu intermédiaire est implémentée.
 * Réutiliser le nœud du fragment de contenu : `cq:editConfig`
 
-   * Les listeners `afterinsert`/ `afteredit`/ `afterdelete` servent à déclencher des événements JS. Ces événements sont gérés dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` pour afficher le contenu associé dans le panneau latéral.
-   * Les `cq:dropTargets` sont configurés de manière à prendre en charge la gestion des fragments de contenu.
-   * `cq:inplaceEditing` est configuré de sorte à prendre en charge la création d’un fragment de contenu dans l’éditeur de pages. L’éditeur de fragment local est défini dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` et permet à un lien rapide d’ouvrir [l’élément/la variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dans l’[éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md).
+  * Les listeners `afterinsert`/ `afteredit`/ `afterdelete` servent à déclencher des événements JS. Ces événements sont gérés dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` pour afficher le contenu associé dans le panneau latéral.
+  * Les `cq:dropTargets` sont configurés de manière à prendre en charge la gestion des fragments de contenu.
+  * `cq:inplaceEditing` est configuré de sorte à prendre en charge la création d’un fragment de contenu dans l’éditeur de pages. L’éditeur de fragment local est défini dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` et permet à un lien rapide d’ouvrir [l’élément/la variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dans l’[éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Réécriture des ressources avant le rendu {#asset-rewriting-before-rendering}
 

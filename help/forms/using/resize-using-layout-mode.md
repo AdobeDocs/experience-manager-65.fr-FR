@@ -7,18 +7,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1181'
 ht-degree: 100%
-
 ---
-
 # Utilisation du mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/introduction-form-sequence.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -30,7 +28,7 @@ Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants 
 
 Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de l’interface de création de formulaires adaptatifs, à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance de création AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Créez un [formulaire adaptatif](../../forms/using/creating-adaptive-form.md) ou ouvrez-en un déjà existant.
 1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
@@ -38,7 +36,7 @@ Sélectionnez **Disposition** dans la liste déroulante qui apparaît en haut de
 
 ## Redimensionnement des composants {#resize-components}
 
-1. En mode Disposition, sélectionnez le composant à redimensionner.  Les points bleus s’affichent au début et à la fin de la grille réactive.
+1. En mode Disposition, sélectionnez le composant à redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated1.png)

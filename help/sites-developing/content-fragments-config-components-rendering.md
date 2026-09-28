@@ -1,9 +1,13 @@
 ---
 title: Fragments de contenu – Configuration des composants pour le rendu
+
 description: Fragments de contenu – Configuration des composants pour le rendu
+
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Content Fragments
 role: Developer
 source-git-commit: 2e141ab04be33fea09ed7f6608dc9dcfaf2e50f1
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '475'
 ht-degree: 100%
-
 ---
-
 # Fragments de contenu – Configuration des composants pour le rendu{#content-fragments-configuring-components-for-rendering}
 
 Il existe plusieurs [services avancés](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) liés au rendu des fragments de contenu. Pour l’utilisation de ces services, les types de ressources de ces composants doivent être connus de la structure de fragments de contenu.

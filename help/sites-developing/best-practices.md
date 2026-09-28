@@ -1,21 +1,23 @@
 ---
 title: Bonnes pratiques pour les développeurs et développeuses AEM
+
 description: Les équipes d’ingénierie et de conseil d’Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs et développeuses d’AEM.
+
+
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 100%
-
+source-wordcount: '497'
+ht-degree: 93%
 ---
-
 # Bonnes pratiques{#best-practices}
 
 ## Bonnes pratiques pour les développeurs et développeuses - Prise en main {#best-practices-for-developers-getting-started}
@@ -31,7 +33,7 @@ Avant de commencer votre projet de développement AEM, passez en revue ces bonne
 * [Les pièges du codage](/help/sites-developing/code-pitfalls.md)
 * [Interaction JCR](/help/sites-developing/jcr-integration.md)
 * [Bundles OSGi](/help/sites-developing/osgi-bundles.md)
-* [Bonnes pratiques relatives aux API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr)
+* [Bonnes pratiques relatives aux API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=fr)
 
 ### Informations supplémentaires sur les bonnes pratiques {#additional-best-practices-information}
 
@@ -91,7 +93,7 @@ Vous trouverez ici certaines bonnes pratiques pour AEM Communities :
 
 ## Outillage/HTL {#tooling-htl}
 
-Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de modèle préféré d’AEM.
+Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de création de modèles préféré d’AEM.
 
 |  |  |  |
 |---|---|---|
@@ -100,5 +102,5 @@ Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introd
 
 >[!NOTE]
 >
->Le didacticiel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les principaux composants, les modèles modifiables, les bibliothèques clientes et le développement de composants :
+>Le tutoriel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants :
 >[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)

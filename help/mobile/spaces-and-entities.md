@@ -10,11 +10,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 5%
-
 ---
-
 # Espaces et entités{#spaces-and-entities}
 
 {{ue-over-mobile}}
@@ -68,7 +66,7 @@ Vous pouvez afficher les propriétés de l’espace, supprimer l’espace ou pub
 **Publication d’un emplacement** Lorsqu’un emplacement est publié, tous les dossiers et entités de cet emplacement sont également publiés.
 
 1. Sélectionnez l&#39;espace en cliquant sur son icône dans la liste de la console Space
-1. Choisir L&#39;Arborescence De Publish **&#x200B;**
+1. Choisissez **arborescence de publication**.
 
 >[!NOTE]
 >
@@ -94,7 +92,7 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 
 1. Cliquez sur **Créer** pour créer le dossier dans un espace
 
-## Copie de langue {#language-copy}
+## Copie linguistique {#language-copy}
 
 >[!CAUTION]
 >
@@ -124,13 +122,13 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Une fois la copie de langue créée, elle apparaît dans votre espace dans **Principal de langue**.
+1. Une fois la copie de langue créée, elle apparaît dans votre espace dans Principal de langue **.**
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Sélectionnez **Principal de langue** pour afficher les dossiers de copie de langue.
+   >Sélectionnez Principal de langue **pour afficher les dossiers de copie de langue.**
 
 ### Suppression d’un dossier de l’espace {#removing-a-folder-from-the-space}
 
@@ -143,7 +141,7 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
 
 ## Utilisation d’entités dans un espace {#working-with-entities-in-a-space}
 
-Les entités représentent le contenu exposé via le point d’entrée du service web. Les entités sont stockées dans des espaces afin que les puissent être facilement trouvées et qu’elles restent indépendantes de la structure de référentiel AEM qui contient leur contenu associé.
+Les entités représentent le contenu exposé via le point d’entrée du service web. Les entités sont stockées dans des espaces afin que les soient faciles à trouver et qu’elles restent indépendantes de la structure de référentiel AEM qui contient leur contenu associé.
 
 Vous pouvez regrouper des entités dans un regroupement logique. Pour ce faire, vous pouvez créer un nombre illimité de dossiers.
 
@@ -167,7 +165,7 @@ Si des enfants d&#39;entités, qui sont d&#39;autres entités, sont rassemblés 
 
    >[!NOTE]
    >
-   >Vous avez la possibilité de choisir le **modèle Assets**, le **modèle Pages** ou un modèle de type d’entité que vous avez créé précédemment.
+   >Vous avez la possibilité de choisir le **modèle**, le **modèle Pages** ou un modèle de type d’entité que vous avez créé précédemment.
    >
    >Voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md) pour créer votre entité personnalisée.
 
@@ -235,12 +233,12 @@ Si des enfants d&#39;entités, qui sont d&#39;autres entités, sont rassemblés 
 
 ### Publication d’une entité {#publishing-an-entity}
 
-Vous avez la possibilité de choisir **Arborescence de Publish** ou **Publish rapide** pour publier votre entité.
+Vous avez la possibilité de choisir **Publier l’arborescence** ou **Publication rapide** pour publier votre entité.
 
-1. Sélectionnez une entité dans la liste de la console spatiale et cliquez sur l&#39;icône **Arborescence Publish**&#x200B;pour la publier ainsi que ses enfants.
+1. Sélectionnez une entité dans la liste de la console d&#39;espace et cliquez sur **Publier l&#39;arborescence** pour publier cette entité et ses enfants.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **Ou**,
 
-   Cliquez sur **Quick Publish** pour publier cette entité spécifique.
+   Cliquez sur **Publication rapide** pour publier cette entité spécifique.

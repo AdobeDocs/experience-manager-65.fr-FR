@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 100%
-
+source-wordcount: '1625'
+ht-degree: 90%
 ---
-
 # SharePoint Connector{#sharepoint-connector}
 
 Cet article comprend des détails relatifs au connecteur JCR Adobe pour Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0.
@@ -51,7 +49,8 @@ Pour commencer à utiliser le connecteur, procédez comme suit :
 
 ## Installation de SharePoint Connector {#installing-sharepoint-connector}
 
-Le connecteur est un package de contenu qui facilite la configuration. Installez le package à l’aide du gestionnaire de packages, puis définissez l’URL du serveur SharePoint, ainsi que les autres options de configuration. Le contenu SharePoint est disponible dans le référentiel AEM.
+Le connecteur est un module de contenu qui facilite la configuration. Installez le package à l’aide du gestionnaire de packages, puis définissez l’URL du serveur SharePoint
+et d’autres options de configuration. Le contenu SharePoint est disponible dans le référentiel AEM.
 
 ### Configuration requise {#installation-requirements}
 
@@ -71,12 +70,12 @@ Le connecteur prend en charge les éléments suivants :
 
 * Versions d’AEM :
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versions de Microsoft SharePoint :
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * Si vous avez besoin d’assistance pour les déploiements personnalisés du connecteur (OEM, exigences spéciales, méthodes d’authentification personnalisées), contactez le bureau d’Adobe de votre région.
 
@@ -91,7 +90,7 @@ La Distribution logicielle est utilisé pour la distribution des fonctionnalité
 
 #### Intégration à AEM {#integrating-with-aem}
 
-Pour installer le package de contenu connecteur.
+Pour installer le module de contenu connecteur.
 
 1. Ouvrez un ticket d’assistance Adobe pour demander le package de fonctionnalités du connecteur.
 1. Téléchargez le package lorsqu’il est disponible, puis ouvrez le gestionnaire de modules de votre instance AEM.
@@ -112,8 +111,8 @@ Définissez l’URL du serveur SharePoint pour rendre votre référentiel ShareP
 
 Pour définir l’URL du serveur SharePoint et les options avancées, procédez comme suit :
 
-1. Accédez à la console de gestion OSGi : [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Recherchez le lot **Connecteur JCR Day pour Microsoft SharePoint**.
+1. Accédez à la console de gestion OSGi : [&#128279;](http://localhost:4502/system/console/configMgr).
+1. Recherchez le bundle **Day JCR Connector for Microsoft Sharepoint**.
 1. Modifiez les valeurs de configuration.
 1. Définissez l’URL de SharePoint Server comme valeur des **Espaces de travail**.
 1. Cliquez sur **Enregistrer**.
@@ -124,19 +123,19 @@ Paramètres « Espaces de travail » et « Nom de l’espace de travail par d
 
 Par défaut, le connecteur expose un espace de travail JCR unique. Le SharePoint Server exposé par cet espace de travail est défini via le paramètre de configuration « URL de SharePoint Server ».
 
-Le connecteur peut également être configuré pour plusieurs espaces de travail. Dans ce cas, chaque espace de travail est associé à l’URL du serveur SharePoint correspondant qui est exposé par l’espace de travail. Pour ajouter un espace de travail, ajoutez une définition d’espace de travail au paramètre Espaces de travail. La définition d’espace de travail présente le format suivant :
+Le connecteur peut également être configuré pour plusieurs espaces de travail. Dans ce cas, chaque espace de travail est associé à l’URL du serveur SharePoint correspondant qui est exposé par l’espace de travail. Pour ajouter un espace de travail, ajoutez une définition d’espace de travail au paramètre Espaces de travail. La définition d’espace de travail présente le format suivant :
 `<name>`= `<url>` où
-`<name>` est le nom de l’espace de travail JCR, et
+`<name>` est le nom de l’espace de travail JCR et
 `<url>` est l’URL du serveur SharePoint pour cet espace de travail.
 
-Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Ajoutez dans la liste autorisée le lot ’**com.day.cq.dam.cq-dam-jcr-connectors**’.
+Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Placez le bundle « **com.day.cq.dam.cq-dam-jcr-connectors** » sur la liste autorisée.
 
-Pour placer les lots en liste autorisée dans AEM, effectuez les étapes suivantes :
+Pour placer les bundles sur la liste autorisée dans AEM, effectuez les étapes suivantes :
 
-1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
+1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
 1. Recherchez le service Liste autorisée d’administration des connexions Apache Sling.
 1. Sélectionnez **Contourner la liste autorisée**.
-1. Ajoutez `com.day.cq.dam.cq-dam-jcr-connectors` dans la liste autorisée des lots par défaut.
+1. Ajoutez `com.day.cq.dam.cq-dam-jcr-connectors` dans la liste autorisée des bundles par défaut.
 1. Cliquez sur Enregistrer.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -159,7 +158,7 @@ Après avoir configuré le connecteur, vérifiez les éléments suivants :
 
 Pour synchroniser les ressources SharePoint avec AEM, procédez comme suit :
 
-1. Accédez à la console de gestion OSGi : [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Accédez à la console de gestion OSGi : [&#128279;](http://localhost:4502/system/console/configMgr).
 1. Recherchez le service « Default DAMAssetSynchronization ».
 1. Modifiez les valeurs de configuration.
 1. Définissez le nom d’utilisateur ou d’utilisatrice et le mot de passe correspondant de la personne ayant accès au site SharePoint.
@@ -167,13 +166,13 @@ Pour synchroniser les ressources SharePoint avec AEM, procédez comme suit :
 
 Activez le service de synchronisation DAM, qui est désactivé par défaut :
 
-1. Accédez aux composants de la console web OSGi : [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components).
+1. Accédez aux composants de la console web OSGi : [&#128279;](http://localhost:4502/system/console/components)
 1. Recherchez « com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService. »
 1. Cliquez sur Activer.
 
 Vous pouvez éventuellement configurer le délai de synchronisation entre différents cycles de synchronisation :
 
-1. Accédez à la console de gestion OSGi : [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Accédez à la console de gestion OSGi : [&#128279;](http://localhost:4502/system/console/configMgr)
 1. Recherchez « DAY CQ DAM JCR Connector Asset Synchronization Service ».
 1. Modifiez les valeurs de configuration.
 1. Définissez la valeur de la période de synchronisation (en secondes).
@@ -193,14 +192,14 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Basée sur les revendications - classique
 * Basée sur les formulaires - revendications
 
-Le connecteur JCR d’AEM pour Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0., prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
+Connecteur JCR AEM pour Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
 * **Authentification de base/NTLM** : le connecteur tente d’abord de se connecter à l’aide de l’authentification de base. Si cela n’est pas possible, l’authentification s’appuie alors sur NTLM.
 * **Authentification reposant sur les formulaires** : SharePoint valide les utilisateurs en fonction des informations d’identification qu’ils saisissent dans un formulaire de connexion (généralement une page web). Le système émet un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
 
 **Configuration de l’authentification basée sur les formulaires**
 
-Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+Accédez à : [&#128279;](http://localhost:4502/system/console/bundles)
 
 1. Cliquez sur OSGI > Configuration.
 1. Recherchez « Day JCR Connector for Microsoft SharePoint ».
@@ -211,7 +210,7 @@ Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502
 **Configuration de l’authentification de base (Windows)**
 
 1. [Désactivez l’authentification par jeton](#disable-token-authentication).
-1. Allez à : [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Accédez à [&#128279;](http://localhost:4502/system/console/bundles).
 1. Cliquez sur OSGI > Configuration.
 1. Recherchez **Day JCR Connector pour Microsoft Sharepoint**.
 1. Cliquez sur `Edit the configuration values`.
@@ -224,22 +223,22 @@ Vous pouvez également utiliser l’extension de connecteur pour l’authentific
 
 Pour créer un utilisateur dans AEM, procédez comme suit :
 
-1. Connectez-vous à http://localhost:9502/ avec l’utilisateur administrateur.
+1. Connectez-vous à http://localhost:9502/with avec l’utilisateur administrateur.
 1. Cliquez sur Outils.
 1. Cliquez sur Sécurité.
 1. Cliquez sur Utilisateurs.
 1. Cliquez sur **Créer un utilisateur**.
 1. Fournissez l’ID utilisateur (un nom d’utilisateur ayant accès à SharePoint).
 1. Fournissez le mot de passe correspondant.
-1. Cliquez sur la coche verte pour créer l’utilisateur.
+1. Cliquez sur la coche verte pour créer l’utilisateur ou l’utilisatrice.
 
 Pour ajouter l’utilisateur ou l’utilisatrice au groupe d’administration :
 
 1. Accédez à l’administration du groupe.
 1. Cliquez sur le nœud « a ».
 1. Cliquez sur « Administrateurs ».
-1. Saisissez l’ID utilisateur créé plus haut dans la zone de texte en face du bouton **Parcourir**. 
-1. Cliquez sur la coche verte pour ajouter l’utilisateur au groupe administrateur.
+1. Saisissez l’ID utilisateur créé plus haut dans la zone de texte en face du bouton **Parcourir**.
+1. Cliquez sur la coche verte pour ajouter l’utilisateur ou l’utilisatrice au groupe d’administration.
 
 ### Désactivation de l’authentification par jeton {#disable-token-authentication}
 
@@ -259,7 +258,7 @@ Dans sa version standard, le connecteur prend en charge l’authentification **W
 Les étapes suivantes fournissent des instructions permettant d’étendre l’authentification standard afin de prendre en charge différentes méthodes d’authentification du serveur SharePoint :
 
 1. Mettez en œuvre `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` pour gérer le côté client de votre processus d’authentification spécifique.
-1. Installez la mise en œuvre `SharepointConnectionFactory` comme un lot de fragment avec l’hôte de fragment `com.day.crx.spi.crx2sharepoint-bundle`.
+1. Installez l’implémentation `SharepointConnectionFactory` comme un bundle de fragment avec l’hôte de fragment `com.day.crx.spi.crx2sharepoint-bundle`.
 
    Si vous utilisez Maven, adaptez la configuration suivante de `maven-bundle-plugin` aux exigences de votre projet :
 

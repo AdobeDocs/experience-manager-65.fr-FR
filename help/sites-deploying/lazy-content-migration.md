@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 100%
-
 ---
-
 # Migration différée du contenu {#lazy-content-migration}
 
 Pour des raisons de rétrocompatibilité, le contenu et la configuration situés dans **/etc** et **/content** ne seront pas modifiés ni transformés immédiatement par la mise à niveau à partir d’Adobe Experience Manager (AEM) 6.3. Cela permet de s’assurer que les dépendances des applications des clientes et clients sur ces structures restent intactes. Les fonctionnalités relatives à ces structures de contenu restent les mêmes, même si du contenu AEM 6.5 prêt à l’emploi est hébergé à un autre endroit.

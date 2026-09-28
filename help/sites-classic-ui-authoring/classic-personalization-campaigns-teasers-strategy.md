@@ -12,18 +12,16 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 100%
-
+source-wordcount: '1203'
+ht-degree: 93%
 ---
-
 # Teasers et stratégies{#teasers-and-strategies}
 
 Les campagnes utilisent souvent les teasers comme mécanisme pour inciter un segment spécifique de la population de visiteurs et de visiteuses à consulter du contenu axé sur leurs intérêts. Un ou plusieurs teasers sont définis pour une campagne spécifique.
 
 >[!NOTE]
 >
->Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez le [Composant Cible](/help/sites-authoring/content-targeting-touch.md) à la place.
+>Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez plutôt le [composant cible](/help/sites-authoring/content-targeting-touch.md).
 
 * Les **pages de marque** sont stockées dans la section Campagnes du site Web. Une marque contient les différentes campagnes.
 * Les **pages de campagne** sont stockées dans la section Campagnes du site Web. Chaque campagne comporte une page individuelle, sous laquelle sont conservées les définitions de teaser. La page conteneur, ou vue d’ensemble, contient également certaines informations et statistiques concernant les pages de teaser individuelles.
@@ -31,7 +29,7 @@ Les campagnes utilisent souvent les teasers comme mécanisme pour inciter un seg
 Les teasers AEM sont composés de divers éléments :
 
 * Les **pages de teaser** sont stockées dans une page de campagne appropriée et présentent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser, notamment les variations de contenu, le segment à utiliser pour sélectionner une variation et le facteur d’amplification.
-* Le **Composant Teaser** est prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Pour créer votre propre paragraphe de teaser, faites glisser le composant Teaser à partir du sidekick, puis spécifiez votre définition de teaser. **Remarque :** le composant Teaser est obsolète dans AEM 6.2. Utilisez le [composant Cible](/help/sites-authoring/content-targeting-touch.md) à la place.
+* Le **Composant Teaser** est prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Pour créer votre propre paragraphe de teaser, faites glisser le composant Teaser à partir du sidekick, puis spécifiez votre définition de teaser. **Remarque :** le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez plutôt le [composant cible](/help/sites-authoring/content-targeting-touch.md).
 * Les **Paragraphes de teaser** sont des instances de teaser réelles dans une page de contenu. Elles incitent un segment de visiteurs et de visiteuses à consulter du contenu axé sur leurs intérêts.
 * Pages qui contiennent le contenu de la campagne axée sur un segment spécifique de visiteurs et de visiteuses. En règle générale, les paragraphes de teaser conduisent le visiteur ou la visiteuse vers de telles pages.
 
@@ -41,13 +39,13 @@ Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir l
 
 En effet, si plusieurs teasers sont disponibles, la stratégie permet de résoudre leurs segments correspondants. La **Stratégie** spécifie ensuite un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
-* Le **Score Clickstream** est basé sur les balises et les accès aux balises associées dans le contexte du client du visiteur ou de la visiteuse (indique la fréquence à laquelle un visiteur ou une visiteuse a cliqué sur des pages qui contiennent la balise correspondante). Les taux de fréquence d’accès aux balises définis sur la page du teaser sont comparés.
+* Le **Score Clickstream** est basé sur les balises et les hits aux balises associées dans le contexte du client du visiteur ou de la visiteuse (indique la fréquence à laquelle un visiteur ou une visiteuse a cliqué sur des pages qui contiennent la balise correspondante). Les taux de hits des balises définies sur la page de teaser sont comparés.
 * **Aléatoire**, pour la sélection « aléatoire » ; emploie le facteur aléatoire généré pour une page. Celui-ci est visible dans le [contexte client](/help/sites-administering/client-context.md).
 * **Première** dans la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
 
 Le [facteur d’amplification](/help/sites-administering/campaign-segmentation.md#boost-factor) du segment se répercute également sur la sélection. Il s’agit d’un facteur de pondération ajouté à une définition de segment pour augmenter/diminuer la probabilité relative de sa sélection.
 
-Le workflow et les interrelations des divers critères de sélection sont mieux illustrés par un exemple (une méthode qui peut également être utilisée pour assurer que vos teasers atteignent le public requis).
+Le workflow et les interrelations des divers critères de sélection sont mieux illustrés par un exemple (une méthode qui peut également être utilisée pour assurer que vos teasers atteignent l’audience requise).
 
 Si les segments suivants ont déjà été créés et se voient attribuer leur facteur d’amplification respectif :
 
@@ -111,16 +109,16 @@ Nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur ou à une visiteuse où :
 
-* **S1**, **S2 et **S6** sont résolus avec succès ;
+* **S1**, **S2 et** S6** sont résolus avec succès ;
 
-* la balise **marketing** a trois accès ;
-* la balise **entreprise** a six accès.
+* la balise **marketing** a trois hits ;
+* la balise **entreprise** a six hits.
 
 Nous pouvons voir les résultats :
 
 * Succès de la corrsepondance : l’un des segments affectés au teaser est-il résolu avec succès pour le visiteur actuel ou la visiteuse actuelle ?
 * Facteur d’amplification : facteur d’amplification le plus élevé de tous les segments applicables
-* Score Clickstream : total cumulé de tous les accès aux balises applicables.
+* Score Clickstream : total cumulé de tous les hits aux balises applicables.
 
 qui sont calculés avant d’appliquer la stratégie appropriée :
 
@@ -235,7 +233,7 @@ Après avoir créé votre marque et votre campagne, vous pouvez créer et config
 
 >[!NOTE]
 >
->Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez le [Composant cible](/help/sites-authoring/content-targeting-touch.md) à la place.
+>Le composant Teaser est désormais obsolète dans AEM 6.2. Utilisez plutôt le [composant cible](/help/sites-authoring/content-targeting-touch.md).
 
 1. Accédez à la page de contenu dans laquelle vous souhaitez placer le paragraphe de teaser qui mènera à la page de votre campagne.
 1. Ajoutez un composant **Teaser** (disponible dans la section **Personnalisation** du sidekick) à la position requise. Lors de la première création, il indique que le chemin de la campagne n’est pas encore configuré :
@@ -244,11 +242,11 @@ Après avoir créé votre marque et votre campagne, vous pouvez créer et config
 
 1. Modifiez le composant de teaser pour ajouter :
 
-   * **Le chemin de la campagne** ;
-Chemin d’accès à la page de campagne qui comprend la page de teaser individuelle ; les segments déterminent exactement le teaser affiché.
+   * **Chemin de la campagne**
+     Le chemin d’accès à la page de campagne qui contient la page de teaser individuelle ; les segments déterminent exactement le teaser affiché.
 
    * **[Stratégie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Méthode utilisée pour la sélection lorsque plusieurs segments sont résolus avec succès.
+     Méthode utilisée pour la sélection lorsque plusieurs segments sont résolus avec succès.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

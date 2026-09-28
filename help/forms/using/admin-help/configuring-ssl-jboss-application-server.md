@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '908'
 ht-degree: 100%
-
 ---
-
 # Configurer SSL pour JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
 Pour configurer SSL sur le serveur d’applications JBoss, vous avez besoin d’informations d’identification SSL pour l’authentification. Vous pouvez utiliser le keytool Java pour créer un identifiant ou demander et importer un identifiant à partir d’une autorité de certification (CA). Vous devez ensuite activer SSL sur JBoss.
@@ -139,25 +137,25 @@ Dans cette procédure :
 
    * Pour les installations clé en main :
 
-      * Dans le Panneau de configuration Windows, cliquez sur Outils d’administration, puis sur Services.
-      * Sélectionnez JBoss pour les formulaires Adobe Experience Manager.
-      * Sélectionnez Action > Arrêter.
-      * Attendez que le statut du service apparaisse comme arrêté.
-      * Sélectionnez Action > Démarrer.
+     * Dans le Panneau de configuration Windows, cliquez sur Outils d’administration, puis sur Services.
+     * Sélectionnez JBoss pour les formulaires Adobe Experience Manager.
+     * Sélectionnez Action > Arrêter.
+     * Attendez que le statut du service apparaisse comme arrêté.
+     * Sélectionnez Action > Démarrer.
 
    * Pour les installations de JBoss configurées manuellement ou préconfigurées par Adobe :
 
-      * À partir d’une invite de commande, accédez à *`[appserver root]`*\bin.
-      * Arrêtez le serveur en saisissant la commande suivante :
+     * À partir d’une invite de commande, accédez à *`[appserver root]`*\bin.
+     * Arrêtez le serveur en saisissant la commande suivante :
 
-         * (Windows) `shutdown.bat -S`
-         * (Linux) `./shutdown.sh -S`
+       * (Windows) `shutdown.bat -S`
+       * (Linux) `./shutdown.sh -S`
 
-      * Attendez que le processus JBoss soit complètement arrêté (lorsque le processus JBoss rend le contrôle au terminal dans lequel il a été démarré).
-      * Démarrez le serveur en saisissant la commande suivante :
+     * Attendez que le processus JBoss soit complètement arrêté (lorsque le processus JBoss rend le contrôle au terminal dans lequel il a été démarré).
+     * Démarrez le serveur en saisissant la commande suivante :
 
-         * (Windows) `run.bat -c <profile>`
-         * (Linux) `./run.sh -c <profile>`
+       * (Windows) `run.bat -c <profile>`
+       * (Linux) `./run.sh -c <profile>`
 
 1. Pour accéder à la console d’administration en utilisant SSL, saisissez `https://[host name]:'port'/adminui` dans un navigateur Web :
 

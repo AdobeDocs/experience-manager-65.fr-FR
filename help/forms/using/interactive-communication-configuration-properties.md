@@ -1,22 +1,25 @@
 ---
 title: Propriétés de configuration des communications interactives
+
 description: Modification des propriétés de configuration par défaut des communications interactives
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Propriétés de configuration des communications interactives{#interactive-communications-configuration-properties}
 
 Les communications interactives incluent les propriétés qui sont configurées automatiquement après l’installation du package du [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Les auteurs de la communication interactive peuvent modifier ces propriétés de configuration par défaut en utilisant la page de **configuration de la console web d’Adobe Experience Manager**.
@@ -49,7 +52,7 @@ Sélectionnez **Configuration de fragments de document** sur la page **Configura
    <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour les canaux d’impression et web.</td> 
    <td> 
     <ul> 
-     <li>Paramètre régional = en_US, de_DE, fr_FR et ja_JP</li> 
+     <li>Paramètres régionaux = en_US, de_DE, fr_FR et ja_JP</li> 
      <li>dateFormat = dd-MM-yyyy</li> 
      <li>numberDecimalSeparator = .</li> 
      <li>numberGroupSeparator = ,</li> 

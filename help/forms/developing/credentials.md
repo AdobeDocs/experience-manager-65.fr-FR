@@ -1,21 +1,24 @@
 ---
 title: Utiliser des informations d’identification
+
 description: Importez des informations d’identification dans AEM Forms à l’aide des API Trust Manager et Java. Découvrez également comment supprimer des informations d’identification à l’aide de l’API Trust Manager et de l’API Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 100%
-
 ---
-
 # Utiliser des informations d’identification {#working-with-credentials}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -69,7 +72,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classe
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client de service d’identification**
 
@@ -106,7 +109,7 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’
 1. Créer un client de service d’identification
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencer des informations d’identification
 
@@ -118,10 +121,10 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’
    * Créez un tableau de chaîne qui contient un élément. Attribuer la valeur `truststore.usage.type.sign` à l’élément.
    * Appelez la méthode `importCredential` de lʼobjet `CredentialServiceClient` et transmettez les valeurs suivantes :
 
-      * Une valeur de chaîne qui spécifie la valeur de lʼalias pour les informations dʼidentification.
-      * Lʼinstance `com.adobe.idp.Document` qui stocke les informations d’identification.
-      * Une valeur de chaîne qui spécifie le mot de passe associé aux informations d’identification.
-      * Le tableau de chaînes qui contient la valeur d’utilisation. Par exemple, vous pouvez spécifier la valeur suivante `truststore.usage.type.sign`. Pour importer des informations d’identification de Reader Extension, spécifiez `truststore.usage.type.lcre`.
+     * Une valeur de chaîne qui spécifie la valeur de lʼalias pour les informations dʼidentification.
+     * Lʼinstance `com.adobe.idp.Document` qui stocke les informations d’identification.
+     * Une valeur de chaîne qui spécifie le mot de passe associé aux informations d’identification.
+     * Le tableau de chaînes qui contient la valeur d’utilisation. Par exemple, vous pouvez spécifier la valeur suivante `truststore.usage.type.sign`. Pour importer des informations d’identification de Reader Extension, spécifiez `truststore.usage.type.lcre`.
 
 **Voir également**
 
@@ -159,7 +162,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 * adobe-utilities.jar (Requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (Requis si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client de service d’identification**
 
@@ -190,7 +193,7 @@ Supprimez des informations d’identification d’AEM Forms à l’aide de l’A
 1. Créer un client de service d’identification
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Exécuter l’opération de suppression
 

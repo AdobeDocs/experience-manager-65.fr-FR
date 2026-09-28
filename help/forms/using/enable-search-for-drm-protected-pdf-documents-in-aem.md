@@ -1,22 +1,25 @@
 ---
 title: Activer AEM pour rechercher des documents PDF protégés par la sécurité des documents
+
 description: Découvrez comment activer la recherche AEM native pour effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.
+
+
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/working_with_document_security
+
 docset: aem65
+
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
-
+source-wordcount: '743'
+ht-degree: 98%
 ---
-
 # Activez AEM pour rechercher des documents PDF protégés par la sécurité des documents.{#enable-aem-to-search-document-security-protected-pdf-documents}
 
 La recherche AEM permet de rechercher et de localiser des ressources AEM et d’effectuer une recherche de texte dans divers formats de document couramment utilisés, tels que les fichiers texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre la recherche native pour effectuer une recherche de texte intégral sur les [Documents PDF protégés par AEM Document Security](../../forms/using/admin-help/document-security.md). Pour permettre à AEM d’effectuer une recherche de texte intégral sur ces documents, procédez comme suit :
@@ -28,31 +31,31 @@ La recherche AEM permet de rechercher et de localiser des ressources AEM et d�
 
 * Si vous utilisez AEM Forms sur OSGi :
 
-   * Installez le [package de l’indexeur de Document Security AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sur le serveur AEM Forms.
+  * Installez le [package de l’indexeur de Document Security AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sur le serveur AEM Forms.
 
-   * Vérifiez qu’un serveur AEM Forms on JEE est opérationnel et que la sécurité des documents est installée sur le serveur AEM Forms on JEE approprié. Le serveur AEM Forms on JEE est nécessaire pour indexer le document protégé.
+  * Vérifiez qu’un serveur AEM Forms on JEE est opérationnel et que la sécurité des documents est installée sur le serveur AEM Forms on JEE approprié. Le serveur AEM Forms on JEE est nécessaire pour indexer le document protégé.
 
 * Si vous utilisez uniquement un serveur AEM Forms on JEE, le package de l’indexeur est déjà installé.
-* Vérifiez que tous les lots sont en cours d’utilisation. Si tous les bundles ne sont pas actifs, attendez qu’ils soient tous opérationnels.
+* Vérifiez que tous les bundles sont en cours d’utilisation. Si tous les bundles ne sont pas actifs, attendez qu’ils soient tous opérationnels.
 
-   * Pour AEM Forms sur OSGi, les lots sont répertoriés à l’adresse suivante https://&#39;[server]:[port]&#39;/system/console/bundles.
-   * Pour AEM Forms sur JEE, les lots sont répertoriés à l’adresse suivante : https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Par exemple, https://localhost:8080/lc/system/console/bundles.
+  * Pour AEM Forms sur OSGi, les lots sont répertoriés à l’adresse suivante https://&#39;[server]:[port]&#39;/system/console/bundles.
+  * Pour AEM Forms sur JEE, les lots sont répertoriés à l’adresse suivante : https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Par exemple, https://localhost:8080/lc/system/console/bundles.
 
 * Ajoutez le package *sun.util.calendar* à la liste autorisée. Pour ajouter le package à la liste autorisée, procédez comme suit :
 
-   1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
-   1. Recherchez et ouvrez **la configuration du pare-feu de désérialisation.**
+  1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
+  1. Recherchez et ouvrez **la configuration du pare-feu de désérialisation.**
 
-   1. Ajoutez le package sun.util.calendar au champ de préfixes de package ou de classes de placement sur la liste autorisée, puis cliquez sur **Enregistrer**.
+  1. Ajoutez le package sun.util.calendar au champ de préfixes de package ou de classes de placement sur la liste autorisée, puis cliquez sur **Enregistrer**.
 
 ### Créer une connexion sécurisée entre les piles AEM Forms JEE et OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion sécurisée :
 
-* Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administration d’AEM Forms on JEE
-* Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle
+* Configurer bundle Adobe LiveCycle Client SDK avec les informations d’identification d’administration d’AEM Forms on JEE
+* Configurer bundle Adobe LiveCycle Client SDK à l’aide de l’authentification mutuelle
 
-#### Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administration d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+#### Configurer bundle Adobe LiveCycle Client SDK avec les informations d’identification d’administration d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des champs suivants :
@@ -64,7 +67,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
    Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
 
-#### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
+#### Configurer bundle Adobe LiveCycle Client SDK à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
@@ -89,4 +92,4 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
    >[!NOTE]
    >
-   > Il est recommandé d’utiliser la commande « Ctrl + C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.
+   > Il est recommandé d’utiliser la commande « Ctrl+C » pour redémarrer le SDK. Le redémarrage du SDK AEM à l’aide de méthodes alternatives, par exemple l’arrêt des processus Java, peut entraîner des incohérences dans l’environnement de développement AEM.

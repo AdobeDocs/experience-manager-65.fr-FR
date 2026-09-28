@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2350'
 ht-degree: 100%
-
 ---
-
 # Utiliser le traducteur pour gérer les dictionnaires{#using-translator-to-manage-dictionaries}
 
 AEM fournit une console pour gérer les différentes traductions des textes utilisés dans l&#39;interface utilisateur des composants. Cette console est disponible à l’adresse
@@ -178,11 +176,11 @@ La barre de recherche en bas de l’outil de traduction fournit des options de s
 * **Filtre par texte** : motif à faire correspondre à la chaîne, au commentaire ou aux traductions de langue anglaise. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
 * **Modifications : Tous, Modifié, Nouveau, Supprimé** : affiche les éléments qui ont été modifiés, mais pas enregistrés.
 
-   * Tous : affiche les éléments qui ont été modifiés, ajoutés ou supprimés.
-   * Modifié : affiche les éléments modifiés.
-   * Nouveau : affiche les éléments ajoutés.
-   * Supprimé : affiche les éléments qui doivent être supprimés.
-   * Sélections multiples : affiche les éléments qui possèdent toutes les propriétés sélectionnées.
+  * Tous : affiche les éléments qui ont été modifiés, ajoutés ou supprimés.
+  * Modifié : affiche les éléments modifiés.
+  * Nouveau : affiche les éléments ajoutés.
+  * Supprimé : affiche les éléments qui doivent être supprimés.
+  * Sélections multiples : affiche les éléments qui possèdent toutes les propriétés sélectionnées.
 
 * **Contient un commentaire** : affiche les éléments contenant des commentaires pour les traducteurs et les traductrices.
 * **Traductions manquantes** : affiche les éléments pour lesquels il n’existe pas de traduction pour au moins une langue.
@@ -248,7 +246,7 @@ Procédez comme suit pour exporter un fichier XLIFF pour une langue donnée.
 
 Utilisez la procédure suivante pour exporter tout ou partie uniquement des chaînes anglaises.
 
-1. Ouvrez l’outil de traduction `http://<host>:<port>/libs/cq/i18n/translator.html`. 
+1. Ouvrez l’outil de traduction `http://<host>:<port>/libs/cq/i18n/translator.html`.
 1. Utilisez le menu déroulant Dictionnaires pour sélectionner le dictionnaire à exporter.
 1. Si vous exportez un sous-ensemble de chaînes, sélectionnez les éléments du dictionnaire à exporter. La sélection d’aucun élément exporte tous les éléments.
 1. Cliquez sur Exporter > Exporter la sélection au format Xliff (chaînes uniquement).
@@ -292,8 +290,8 @@ Utilisez la procédure suivante pour ajouter ou supprimer des langues.
    * **Type** : `Multi-String`
    * **Valeur** : la liste des langues que vous souhaitez afficher. Par exemple :
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
@@ -336,7 +334,7 @@ Une fois que vous avez défini un dictionnaire pour une nouvelle langue de l’i
 
 Différents pays utilisent la même langue, par exemple les États-Unis, le Royaume-Uni et l’Australie utilisent tous l’anglais. Cette indication est portée par un code qui est composé de la langue et du pays, par exemple `en_GB`, `en_US` et `en_AU`.
 
-Les pays par défaut sont utilisés lors de l’affichage des drapeaux (par exemple, dans la boîte de dialogue de copie de langue), ils sont utilisés pour résoudre le pays pour un code de langue.
+Les pays par défaut sont utilisés lors de l’affichage d’indicateurs (par exemple, dans la boîte de dialogue de copie linguistique), ils sont utilisés pour résoudre le pays pour un code de langue.
 
 >[!NOTE]
 >
@@ -372,7 +370,7 @@ Pour modifier les définitions par défaut, procédez comme suit :
 
 ## Publier des dictionnaires {#publishing-dictionaries}
 
-Intégrez vos dictionnaires dans le processus de gestion des versions de vos applications AEM. Par exemple, incluez le dictionnaire dans le package de contenu de votre application pour le déploiement sur l’instance de publication. Cette stratégie offre les avantages suivants :
+Intégrez vos dictionnaires dans le processus de gestion des versions de vos applications AEM. Par exemple, incluez le dictionnaire dans le module de contenu de votre application pour le déploiement sur l’instance de publication. Cette stratégie offre les avantages suivants :
 
 * Des dictionnaires sont disponibles pour les composants dans leur environnement de publication.
 * Les modifications apportées aux chaînes de l’interface utilisateur des composants sont déployées avec les traductions mises à jour.
@@ -381,7 +379,7 @@ De même, le test des chaînes du dictionnaire doit être effectué dans le cadr
 
 >[!NOTE]
 >
->N’utilisez pas la fonctionnalité de publication ou de réplication standard pour les dictionnaires. Au lieu de cela, les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour suivre les modifications et l’utilisation de packages de contenu pour appliquer les modifications à l’auteur et à la publication.
+>N’utilisez pas la fonctionnalité de publication ou de réplication standard pour les dictionnaires. Au lieu de cela, les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour suivre les modifications et l’utilisation de modules de contenu pour appliquer les modifications à l’instance de création et de publication.
 
 >[!NOTE]
 >

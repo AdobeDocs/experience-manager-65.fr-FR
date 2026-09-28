@@ -11,11 +11,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '714'
 ht-degree: 100%
-
 ---
-
 # Utilisation des balises{#using-tags}
 
 Les balises sont une méthode rapide et facile pour classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des libellés pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
@@ -33,16 +31,16 @@ Les balises sont une méthode rapide et facile pour classer le contenu dans un s
 1. Amélioration de la recherche : dans AEM, le composant de recherche par défaut inclut les balises créées et les balises appliquées auxquelles des filtres peuvent être appliqués pour que seuls les résultats pertinents soient renvoyés.
 1. Optimisation pour les moteurs de recherche : les balises appliquées sous forme de propriétés de page s’affichent automatiquement dans les métabalises de la page pour que les moteurs de recherche puissent les identifier.
 1. Utilisation simple : les balises se créent facilement à partir d’un mot et en cliquant sur un bouton. Ensuite, un titre, une description et un nombre illimité de libellés peuvent être utilisés pour associer plus de termes à la balise.
-1. Cohérence : le système de balisage est un composant central d’AEM. Il est utilisé par toutes les applications AEM pour catégoriser le contenu. En outre, l’API de balisage est mise à la disposition des développeurs pour leur permettre de créer des applications prenant en charge le balisage avec un accès aux mêmes taxonomies.
+1. Cohérence : le système de balisage est un composant principal d’AEM. Il est utilisé par toutes les applications AEM pour catégoriser le contenu. En outre, l’API de balisage est mise à la disposition des développeurs pour leur permettre de créer des applications prenant en charge le balisage avec un accès aux mêmes taxonomies.
 1. Structuration et flexibilité : AEM est idéal pour travailler avec des informations structurées, grâce à l’imbrication des pages et des chemins d’accès. Il est tout aussi puissant lorsqu’il sagit de travailler avec des informations non structurées, grâce à la recherche de texte intégral intégrée. Le balisage combine les avantages de la structuration et de la flexibilité.
 
-Lors de la conception de la structure du contenu d’un site et du schéma des métadonnées pour les ressources, il convient de tenir compte de l’approche légère et accessible qu’offre le balisage.
+Lors de la conception de la structure du contenu d’un site et du schéma de métadonnées pour les ressources, il convient de tenir compte de l’approche légère et accessible qu’offre le balisage.
 
 ## Application de balises {#applying-tags}
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-Pour appliquer les [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le menu déroulant du champ `Tags/Keywords` pour effectuer une sélection dans la liste des balises autorisées pour la page. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de chaîne `namespace-string:` préfixée à la taxonomie.
+Pour appliquer les [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le menu déroulant du champ `Tags/Keywords` pour effectuer une sélection dans la liste des balises autorisées pour la page. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie que le préfixe `namespace-string:` n’est pas ajouté à la taxonomie.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 

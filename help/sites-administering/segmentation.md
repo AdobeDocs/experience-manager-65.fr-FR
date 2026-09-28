@@ -11,11 +11,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1763'
 ht-degree: 100%
-
 ---
-
 # Configuration de la segmentation avec ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -243,8 +241,8 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
    * Le **Nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/sites-developing/naming-conventions.md)
-      * Il peut être adapté si nécessaire.
+     * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/sites-developing/naming-conventions.md)
+     * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](assets/contexthub-create-folder.png)
 
@@ -308,7 +306,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub résout les segments applicables pour la persona sélectionnée.
 
-Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
+Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le genre de l’utilisateur ou de l’utilisatrice. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 

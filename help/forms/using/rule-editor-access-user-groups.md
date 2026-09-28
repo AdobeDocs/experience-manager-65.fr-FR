@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '386'
 ht-degree: 100%
-
 ---
-
 # Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs et d’utilisatrices sélectionnés{#grant-rule-editor-access-to-select-user-groups}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit une approche plus ancienne de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -29,7 +27,7 @@ AEM Forms permet de limiter l’accès à l’éditeur de règles à certains u
 ## Spécification des groupes d’utilisateurs et d’utilisatrices qui peuvent accéder à l’éditeur de règles {#specify-user-groups-that-can-access-rule-editor}
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
+1. Dans l’instance de création, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Opérations > Console web. La console web s’ouvre dans une nouvelle fenêtre.
 
    ![1-2](assets/1-2.png)
 

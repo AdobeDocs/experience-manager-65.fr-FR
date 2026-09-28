@@ -11,16 +11,14 @@ exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
-
+source-wordcount: '1079'
+ht-degree: 92%
 ---
-
 # Activer les composants principaux des formulaires adaptatifs sur AEM Forms 6.5 {#enable-adaptive-forms-core-components}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -29,7 +27,7 @@ L’activation des composants principaux des formulaires adaptatifs vous permet 
 
 Pour activer les composants principaux des formulaires adaptatifs sur votre environnement AEM Forms 6.5, configurez et déployez un [archétype AEM 41 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) basé sur un projet (avec les options de formulaire activées) sur toutes vos instances de création et de publication.
 
-Cet article fournit des instructions détaillées sur la configuration et le déploiement de l’archétype AEM 41 ou version ultérieure sur votre environnement AEM Forms 6.5 pour activer les composants principaux des formulaires adaptatifs. Vous pouvez vous référer à la liste ci-dessous pour les versions compatibles avec **AEM 6.5** pour activer les composants principaux de Forms :
+Cet article fournit des instructions détaillées sur la configuration et le déploiement d’archétype AEM 41 ou version ultérieure sur votre environnement AEM Forms 6.5 pour activer les composants principaux des formulaires adaptatifs. Vous pouvez vous référer à la liste ci-dessous pour les versions compatibles avec **AEM 6.5** pour activer les composants principaux de Forms :
 
 ## Conditions préalables {#prerequisites}
 
@@ -108,7 +106,7 @@ Pour créer un projet d’archétype AEM 41 ou [version ultérieure](https://gi
 
       >[!WARNING]
       >
-      >* Lors de la création d’un projet d’archétype avec la version 45, `[AEM Archetype Project Folder]/pom.xml` définit initialement la version des composants principaux de formulaires sur 1.1.28. Avant de créer ou de déployer le projet d’archétype, mettez à jour la version des composants principaux de formulaires vers la version 1.1.26. Vous trouverez la dernière version dans l’[historique des versions d’AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=fr#aem-as-form-version-history).
+      >* Lors de la création d’un projet d’archétype avec la version 45, le `[AEM Archetype Project Folder]/pom.xml` définit initialement la version des composants principaux de formulaires sur 1.1.28. Avant de créer ou de déployer le projet d’archétype, mettez à jour la version des composants principaux des formulaires vers la version 1.1.26. Vous trouverez la dernière version dans l’historique des versions du Forms d’[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=fr#aem-as-form-version-history).
 
       >[!NOTE]
       >
@@ -152,7 +150,7 @@ Les [composants principaux](https://experienceleague.adobe.com/docs/experience-m
 ### Quelles sont les fonctionnalités des composants principaux ?
 
 
-Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif vierge basé sur les composants principaux et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
+Lorsque les composants principaux des formulaires adaptatifs sont activés pour votre environnement, un modèle de formulaire adaptatif basé sur les composants principaux vierge et le thème Canvas 3.0 sont ajoutés à votre environnement. Après avoir activé les composants principaux des formulaires adaptatifs pour votre environnement, vous pouvez :
 
 * Créer un formulaire adaptatif basé sur des composants principaux.
 * créer des modèles de formulaires adaptatifs basés sur des composants principaux ;
@@ -161,7 +159,7 @@ Lorsque les composants principaux des formulaires adaptatifs sont activés pour 
 
 ## Prochaines étapes
 
-* [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Créer un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Création ou ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Créer des thèmes pour formulaires adaptatifs basés sur les composants principaux](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Création de thèmes pour formulaires adaptatifs basés sur les composants principaux](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Création d’un modèle pour les formulaires adaptatifs basés sur les composants principaux](template-editor.md)

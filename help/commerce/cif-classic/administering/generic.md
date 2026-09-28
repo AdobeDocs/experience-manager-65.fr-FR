@@ -11,11 +11,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
-ht-degree: 100%
-
+source-wordcount: '2961'
+ht-degree: 99%
 ---
-
 # Administration de la solution e-commerce générique {#administering-generic-ecommerce}
 
 La solution Adobe Experience Manager (AEM) générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel (plutôt que d’utiliser un moteur d’e-commerce externe). Cela inclut les éléments suivants :
@@ -197,7 +195,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    ![console produits avec les références ouvertes](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Cliquez sur le type de référence (par exemple, pages de produits) pour développer la liste.
+1. Cliquez sur le type de référence (par exemple, pages produits) pour développer la liste.
 1. Sélectionnez une référence spécifique pour afficher les options :
 
    * Accéder à la page produits
@@ -264,7 +262,7 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 
 1. Cliquez sur l’icône Terminé.
 
-Deux ressources sont désormais stockées dans votre composant de produit. Vous pouvez configurer celle qui apparaît sur la page du produit. Cela fonctionne avec un système de catégorie. Vous devez d’abord ajouter une catégorie aux ressources individuelles :
+Deux ressources sont désormais stockées dans votre composant de produit. Vous pouvez configurer celle qui apparaît sur la page produit. Cela fonctionne avec un système de catégorie. Vous devez d’abord ajouter une catégorie aux ressources individuelles :
 
 1. Sélectionnez **Afficher les données du produit**.
 1. Saisissez une **catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
@@ -277,7 +275,7 @@ Deux ressources sont désormais stockées dans votre composant de produit. Vous 
 
 Désormais, vos ressources dans le composant de produit ont une catégorie. Vous pouvez configurer la catégorie qui s&#39;affichera à trois niveaux différents :
 
-* [Page des produits](#product-page)
+* [Page produit](#product-page)
 * [Catalogue](#catalog)
 * [Console Produits](#products-console)
 
@@ -455,7 +453,7 @@ Vous pouvez configurer l’aspect de la boîte de dialogue lorsque vous cliquez 
 
 Pour générer un catalogue :
 
-1. Ouvrez la console Sites (par exemple, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Ouvrez la console Sites (par exemple, [&#128279;](http://localhost:4502/sites.html/content)).
 1. Accédez à l’emplacement où vous souhaitez créer la page.
 1. Pour ouvrir la liste des options, utilisez l’icône **Créer** :
 

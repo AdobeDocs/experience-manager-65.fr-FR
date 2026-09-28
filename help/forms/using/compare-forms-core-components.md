@@ -5,12 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
 source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
-workflow-type: ht
-source-wordcount: '202'
+workflow-type: tm+mt
+source-wordcount: '222'
 ht-degree: 100%
-
 ---
-
 # Comparer des formulaires adaptatifs {#compare-two-forms}
 
 <!--
@@ -19,11 +17,11 @@ ht-degree: 100%
 
 <span class="preview">Cette fonctionnalité n’est pas activée par défaut. Vous pouvez écrire à partir de votre adresse officielle à aem-forms-ea@adobe.com pour demander l’accès à la fonctionnalité.</span>
 
-La fonction Comparer dans les composants principaux des formulaires adaptatifs permet aux auteurs et aux autrices de formulaires d’identifier les différences entre deux formulaires en analysant les champs, le contenu et les composants.
+La fonction Comparer dans les composants principaux des formulaires adaptatifs permet aux créateurs et aux créatrices de formulaires d’identifier les différences entre deux formulaires en analysant les champs, le contenu et les composants.
 
 ## Prérequis {#prerequisite-versioning}
 
-Pour utiliser la fonction Comparer dans un formulaire adaptatif basé sur des composants principaux, assurez-vous que les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement AEM 6.5 Forms.
+Pour utiliser la fonction Comparer dans un formulaire adaptatif basé sur des composants principaux, assurez-vous que les [composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) sont activés dans votre environnement AEM 6.5 Forms.
 
 ## Comparer des formulaires adaptatifs distincts {#compare-af-65}
 

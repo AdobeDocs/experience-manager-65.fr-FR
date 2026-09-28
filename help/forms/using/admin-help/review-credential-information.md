@@ -11,18 +11,16 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 100%
-
+source-wordcount: '196'
+ht-degree: 94%
 ---
-
 # Vérifier les informations d’identification de l’utilisateur {#review-credential-use-information}
 
 Les informations d’identification contiennent des informations décrivant son utilisation prévue. Elles sont accessibles par le biais de l’application web pour les utilisateurs finaux et utilisatrices finales des extensions d’Acrobat Reader DC. Vous pouvez utiliser ces informations pour déterminer le type d’informations d’identification installées (évaluation ou production) et les dates de validité.
 
 1. Ouvrez un navigateur web et saisissez l’URL suivante :
 
-   http://localhost:port/ReaderExtensions (où *port* correspond au numéro de port du serveur d’applications)
+   :port/ReaderExtensions (où *port* correspond au numéro de port du serveur d’applications)
 
 1. Connectez-vous à l’aide du nom d’utilisateur ou d’utilisatrice et du mot de passe par défaut :
 

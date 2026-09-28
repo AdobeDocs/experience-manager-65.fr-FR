@@ -10,11 +10,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '537'
 ht-degree: 100%
-
 ---
-
 # Configurer des services de stockage pour les brouillons et les envois {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Présentation {#overview}

@@ -1,8 +1,12 @@
 ---
 title: Créer un formulaire adaptatif à l’aide d’un jeu de formulaires adaptatifs
+
 description: Avec AEM Forms, regroupez les formulaires adaptatifs pour générer un seul grand formulaire adaptatif et explorez ses fonctionnalités.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '636'
 ht-degree: 100%
-
 ---
-
 # Créer un formulaire adaptatif à l’aide d’un jeu de formulaires adaptatifs{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 <span class="preview"> Adobe recommande d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) de capture de données modernes et extensibles pour [créer de nouveaux formulaires adaptatifs](/help/forms/using/create-an-adaptive-form-core-components.md) ou [ajouter des formulaires adaptatifs à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de formulaires adaptatifs, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’ancienne approche de la création de formulaires adaptatifs à l’aide de composants de base. </span>
@@ -55,7 +57,7 @@ Par exemple, vos clientes et clients remplissent le formulaire de demande. Les d
 </afData>
 ```
 
-Vous ajoutez un autre formulaire à la demande qui permet aux clientes et clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est `officeAddress`. Appliquez `bindref` `/application/officeAddress` ou `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Examinez le XML du formulaire ci-dessous : 
+Vous ajoutez un autre formulaire à la demande qui permet aux clientes et clients de remplir leur adresse professionnelle. Le schéma racine du formulaire enfant est `officeAddress`. Appliquez `bindref` `/application/officeAddress` ou `/officeAddress`. Si `bindref` n’est pas fourni, le formulaire enfant est ajouté comme sous-arborescence `officeAddress`. Examinez le XML du formulaire ci-dessous :
 
 ```xml
 <afData>

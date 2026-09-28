@@ -1,21 +1,21 @@
 ---
 title: Intégration d’AEM 6.5 à Adobe Campaign
 description: Découvrez la prise en charge d’AEM 6.5 pour les intégrations à Adobe Campaign.
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
-
+source-wordcount: '346'
+ht-degree: 99%
 ---
-
 
 # Intégration d’AEM 6.5 à Adobe Campaign{#integrating-with-adobe-campaign}
 
