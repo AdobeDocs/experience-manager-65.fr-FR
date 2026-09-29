@@ -214,7 +214,7 @@ Ceux-ci, associés aux fonctionnalités standard, vous permettent d’effectuer 
      * type : `String[]`
      * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
-     Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
+     Le caractère générique &ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
 
 * **Réorganiser les nœuds**
 

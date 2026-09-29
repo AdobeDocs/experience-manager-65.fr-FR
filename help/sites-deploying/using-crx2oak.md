@@ -23,7 +23,7 @@ CRX2Oak est un outil conçu pour migrer les données entre différents référen
 Il peut être utilisé pour migrer des données des anciennes versions de CQ basées sur Apache Jackrabbit 2 vers Oak, et il peut également être utilisé pour copier des données entre des référentiels Oak.
 
 Vous pouvez télécharger la version la plus récente de crx2oak à partir du référentiel Adobe public à cet emplacement :
-[](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+[&#128279;](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
