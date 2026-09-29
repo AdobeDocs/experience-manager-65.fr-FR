@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2423'
-ht-degree: 100%
-
+source-wordcount: '2454'
+ht-degree: 95%
 ---
-
 # Planification de la mise à niveau{#planning-your-upgrade}
 
 ## Vue d’ensemble du projet AEM {#aem-project-overview}
@@ -27,11 +25,11 @@ Ce guide permet de définir des objectifs, des phases et des éléments livrable
 
 Le processus de mise à niveau d’AEM nécessite une gestion attentive des phases de planification, d’analyse et d’exécution, avec des éléments livrables clés définis pour chaque phase.
 
-Notez qu’il est possible d’effectuer directement la mise à niveau des versions AEM 6.0 et ultérieures vers la version 6.5. Les clients et clientes qui utilisent AEM 5.6.x ou une versions antérieures doivent d’abord effectuer la mise à niveau vers la version 6.0 ou versions ultérieures, la version 6.0 (SP3) étant recommandée. En outre, le nouveau format Oak Segment Tar est désormais utilisé pour le magasin de nœuds de segments depuis la version 6.3, et la migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
+Il est possible d’effectuer directement la mise à niveau des versions AEM 6.0 et ultérieures vers la version 6.5. Les clients exécutant la version 5.6.x ou une version inférieure doivent d’abord effectuer la mise à niveau vers la version 6.0 ou une version ultérieure, la version 6.0 (SP3) étant recommandée. En outre, le nouveau format Oak Segment Tar est désormais utilisé pour le magasin de nœuds de segments depuis la version 6.3, et la migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
 
 >[!CAUTION]
 >
->Si vous effectuez une mise à niveau d’AEM 6.2 vers AEM 6.3, vous devez effectuer la mise à niveau à partir des versions (**6.2-SP1-CFP1 - 6.2-SP1-CFP12.1**) ou des versions **6.2-SP1-CFP15** et ultérieures. Dans le cas contraire, si vous **effectuez une mise à niveau de 6.2-SP1-CFP13/6.2-SP1CFP14** vers AEM 6.3, vous devez également effectuer une mise à niveau vers la version **6.3.2.2**. Sinon, AEM Sites échouerait après la mise à niveau.
+>Si vous effectuez une mise à niveau d’AEM 6.2 vers AEM 6.3, vous devez effectuer la mise à niveau à partir des versions (**6.2-SP1-CFP1 - 6.2-SP1-CFP12.1**) ou des versions **6.2-SP1-CFP15** et ultérieures. Sinon, si vous effectuez une mise à niveau de **6.2SP1-CFP13/6.2SP1CFP14** vers AEM 6.3, vous devez également effectuer une mise à niveau vers au moins la version **6.3.2.2**. Sinon, AEM Sites échouerait après la mise à niveau.
 
 ## Portée et exigences de la mise à niveau {#upgrade-scope-requirements}
 
@@ -82,7 +80,7 @@ Vous trouverez ci-dessous une liste des domaines concernés par un projet de mis
   <tr>
    <td>Contenu d’applications personnalisées</td>
    <td>Impact faible à élevé</td>
-   <td>Le contenu qui ne sera pas géré par la mise à niveau peut être sauvegardé<br /> avant la mise à niveau puis redéplacé vers le référentiel.<br /> La plupart du contenu peut être géré à l’aide de l’outil de migration.</td>
+   <td>Le contenu qui ne sera pas géré via la mise à niveau peut être sauvegardé<br /> avant que la mise à niveau n’ait lieu, puis déplacé vers le référentiel.<br /> La plupart du contenu peut être géré via l’outil de migration.</td>
   </tr>
  </tbody>
 </table>
@@ -123,7 +121,7 @@ Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre log
 
 [Bonnes pratiques en matière de surveillance des ressources](/help/assets/assets-monitoring-best-practices.md)
 
-[Contrôle des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
+[des ressources de serveur à l’aide de la console JMX](/help/sites-administering/jmx-console.md)
 
 [Nettoyage de révision](/help/sites-deploying/revision-cleanup.md)
 
@@ -169,7 +167,7 @@ Un plan de projet complet doit comprendre les éléments suivants :
 
 * La finalisation du développement et des plans de tests
 * La mise à niveau du développement et des environnements de contrôle qualité
-* La mise à niveau de la base de code personnalisé pour AEM 6.5
+* La mise à jour de la base de code personnalisé pour AEM 6.5
 * Un test de contrôle qualité et une période de mise au point
 * Une mise à niveau de l’environnement d’évaluation
 * Des tests d’intégration, de performances et de chargement
@@ -178,7 +176,7 @@ Un plan de projet complet doit comprendre les éléments suivants :
 
 ### Exécution du développement et de l’assurance qualité {#performing-development-and-qa}
 
-Adobe propose des procédures pour que la [mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.5. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Consultez également la section [Rétrocompatibilité dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour savoir comment conserver la rétrocompatibilité de vos personnalisations sans qu’il faille procéder, généralement, à un développement juste après la mise à niveau.
+Adobe a fourni des procédures pour que [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) soit compatible avec AEM 6.5. Pendant l’exécution de ce processus itératif, le runbook doit être modifié selon les besoins. Consultez également la section [Rétrocompatibilité dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour savoir comment conserver la rétrocompatibilité de vos personnalisations sans qu’il faille procéder, généralement, à un développement juste après la mise à niveau.
 
 ![patru_cropped](assets/patru_cropped.png)
 

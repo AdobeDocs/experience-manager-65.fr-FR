@@ -12,11 +12,9 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 100%
-
+source-wordcount: '816'
+ht-degree: 98%
 ---
-
 # Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Cette section décrit comment étendre [Query Builder](/help/sites-developing/querybuilder-api.md) en implémentant un évaluateur de prédicat personnalisé.
@@ -44,7 +42,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-search-custom-predicate-evaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Ouvrez le projet aem-search-custom-predicate-evaluator sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip).
 
 ### L’évaluateur de prédicat en détail {#predicate-evaluator-in-detail}

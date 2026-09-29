@@ -1,21 +1,23 @@
 ---
 title: Résoudre les problèmes d’intégration
+
 description: Découvrez comment résoudre les problèmes d’intégration à Adobe Experience Manager.
+
+
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
-
+source-wordcount: '1102'
+ht-degree: 97%
 ---
-
 # Résoudre les problèmes d’intégration{#troubleshooting-integration-issues}
 
 ## Conseils pratiques de dépannage {#general-troubleshooting-tips}
@@ -100,11 +102,11 @@ Pour résoudre ce problème, procédez comme suit :
 * Republiez les configurations trouvées dans `/etc/cloudservices/dynamictagmanagement`.
 * Vérifiez les listes de contrôle d’accès sur `/etc/cloudservices`. Les listes de contrôle d’accès (ACL) doivent être les suivantes :
 
-   * allow; jcr:read; webservice-support-service-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
-   * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/defaults`
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * allow; jcr:read; everyone; `rep:glob:`&amp;ast;`/public`
 
 Pour plus d’informations sur la gestion des listes de contrôle d’accès, veuillez consulter la page [Administration et sécurité des utilisateurs et utilisatrices](/help/sites-administering/security.md#permissions-in-aem).
 

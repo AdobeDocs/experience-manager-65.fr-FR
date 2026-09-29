@@ -1,6 +1,6 @@
 ---
 title: Invalidation du cache du réseau de diffusion de contenu par le biais de Dynamic Media Classic
-description: L’invalidation du contenu en cache du réseau de diffusion de continu (CDN) vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
+description: L’invalidation du contenu en cache du réseau de diffusion de contenu (CDN) vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
@@ -11,11 +11,9 @@ exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '737'
 ht-degree: 100%
-
 ---
-
 # Invalidation du cache du réseau de diffusion de contenu par le biais de Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de contenu (CDN) pour une diffusion rapide. Cependant, lorsque vous appliquez des mises à jour à une ressource, vous pouvez faire en sorte qu’elles soient prises immédiatement en compte. L’invalidation du CDN en cache vous permet de mettre à jour rapidement les ressources diffusées par Dynamic Media, au lieu d’attendre l’expiration du cache.
@@ -50,7 +48,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de
 1. Dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
 1. Dans l’interface utilisateur de Dynamic Media Classic, sélectionnez une ou plusieurs ressources, puis accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider le CDN]**. La liste qui s’affiche alors se compose d’une ou de plusieurs URL générées à partir du modèle que vous avez créé et des ressources que vous avez sélectionnées. Elle utilise l’URL du serveur répertoriée sous « Nom du serveur de publication » dans les paramètres généraux de l’application.
 
-   Par exemple, avec le modèle d’invalidation défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation sur le réseau CDN :
+   Par exemple, avec le modèle d’invalidation de CDN défini à l’étape précédente, supposons que vous sélectionniez une seule image de ressource nommée `Backpack_B`. Lorsque vous accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, l’URL suivante est générée dans l’interface utilisateur d’invalidation sur le réseau CDN :
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
@@ -58,7 +56,7 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de
 
    Après avoir sélectionné **[!UICONTROL Continuer]**, un indicateur s’affiche pour vous donner une estimation de la durée nécessaire pour effacer le cache.
 
-   Si vous avez sélectionné plusieurs ressources, puis accédé à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, chaque ressource est référencée dans l’**[!UICONTROL URL du modèle]** enregistrée. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation sur le réseau de diffusion de contenu]** faisant référence à chaque URL de paramètre prédéfini d’image qui figure sur votre site web comme les détails d’un produit et les résultats de recherche. Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
+   Si vous avez sélectionné plusieurs ressources, puis accédé à **[!UICONTROL Fichier]** > **[!UICONTROL Invalider sur le réseau CDN]**, chaque ressource est référencée dans l’**[!UICONTROL URL du modèle]** enregistrée. Par conséquent, vous pouvez définir un **[!UICONTROL modèle d’invalidation sur le réseau de diffusion de contenu]** faisant référence à chaque URL de paramètre d’image prédéfini qui figure sur votre site web comme les détails d’un produit et les résultats de recherche. Par la suite, lorsque vous sélectionnerez une ou plusieurs images à invalider dans le cache, les URL seront automatiquement renseignées dans l’interface.
 
    >[!NOTE]
    >

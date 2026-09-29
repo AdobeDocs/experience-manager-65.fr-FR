@@ -1,10 +1,12 @@
 ---
 title: Ajout de fonctionnalités Dynamic Media Classic (Scene7) à votre page
-description: Adobe Dynamic Media Classic (Scene7) est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur les canaux web, mobiles, par e-mail, sur les appareils connectés à Internet et par impression.
+description: Adobe Dynamic Media Classic (Scene7) est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur les canaux web, mobiles, e-mail, sur les appareils connectés à Internet et par impression.
+
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
+
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +14,12 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3578'
 ht-degree: 100%
-
 ---
-
 # Ajout de fonctionnalités Dynamic Media Classic (Scene7) à votre page{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=fr) est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur les canaux web, mobiles, par e-mail, sur les appareils connectés à Internet et par impression.
+[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=fr) est une solution hébergée pour la gestion, l’amélioration, la publication et la diffusion de contenus multimédias enrichis sur les canaux web, mobiles, e-mail, sur les appareils connectés à Internet et par impression.
 
 Vous pouvez afficher les ressources de Experience Manager publiées dans Dynamic Media Classic (Scene7) dans différentes visionneuses :
 
@@ -233,17 +233,17 @@ Le composant d’image Dynamic Media Classic (Scene7) vous permet d’ajouter 
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-**Paramètre prédéfini de la visionneuse** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**Paramètre prédéfini de la visionneuse** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre d’image prédéfini, vous ne pouvez pas sélectionner de paramètre de visionneuse prédéfini, et inversement.
 
-**Configuration de Dynamic Media Classic (Scene7)** - Sélectionnez la configuration Dynamic Media Classic (Scene7) que vous souhaitez utiliser pour récupérer les paramètres prédéfinis d’image principaux à partir de SPS.
+**Configuration de Dynamic Media Classic (Scene7)** - Sélectionnez la configuration Dynamic Media Classic (Scene7) que vous souhaitez utiliser pour récupérer les paramètres d’image prédéfinis principaux à partir de SPS.
 
-**Paramètre prédéfini d’image** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**Paramètre d’image prédéfini** : sélectionnez un paramètre d’image prédéfini existant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre d’image prédéfini, vous ne pouvez pas sélectionner de paramètre de visionneuse prédéfini, et inversement.
 
-**Format de sortie** : sélectionnez le format de sortie de l’image, par exemple JPEG. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez les Bonnes pratiques relatives aux paramètres prédéfinis d’image.
+**Format de sortie** : sélectionnez le format de sortie de l’image, par exemple JPEG. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Consultez les Bonnes pratiques relatives aux paramètres d’image prédéfinis.
 
-**Accentuation** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détails dans les rubriques Bonnes pratiques relatives aux paramètres prédéfinis d’image et Bonnes pratiques relatives à l’accentuation.
+**Accentuation** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détail dans les rubriques Bonnes pratiques relatives aux paramètres d’image prédéfinis et Bonnes pratiques relatives à l’accentuation.
 
-**Modificateurs d’URL** - Vous pouvez modifier les effets d’image en fournissant des commande d’image S7 supplémentaires. Ces commandes sont décrites dans la section Paramètres prédéfinis d’image et le guide de référence des commandes.
+**Modificateurs d’URL** - Vous pouvez modifier les effets d’image en fournissant des commande d’image S7 supplémentaires. Ces commandes sont décrites dans la section Paramètres d’image prédéfinis et dans le guide de référence des commandes.
 
 **Points d’arrêt** - Si votre site web est réactif, vous pouvez modifier les points d’arrêt. Les points d’arrêt doivent être séparés par des virgules (,).
 

@@ -12,11 +12,9 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 100%
-
+source-wordcount: '1254'
+ht-degree: 96%
 ---
-
 
 # Identity Management{#identity-management}
 
@@ -93,7 +91,7 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
@@ -194,7 +192,7 @@ Dans une configuration standard (création ou publication), chacun possède un a
 
 Ces droits d’accès sont définis par l’ACL de caractères génériques suivante :
 
-/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
+/home tout le monde autorise jcr:read rep:glob = &#42;/profile&#42;
 
 Cela permet :
 
@@ -234,8 +232,8 @@ Ce composant permet à l’utilisateur ou l’utilisatrice de saisir un nom dét
 
 ![Boîte de dialogue de nom détaillé.](assets/dc_profiles_detailedname.png)
 
-### Sexe du profil {#profile-gender}
+### Genre du profil {#profile-gender}
 
-Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son sexe.
+Ce composant permet à l’utilisateur ou l’utilisatrice d’indiquer son genre.
 
 ![Sélecteur de genre.](assets/dc_profiles_gender.png)

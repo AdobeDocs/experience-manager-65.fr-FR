@@ -1,21 +1,23 @@
 ---
 title: Bonnes pratiques pour aider les administrateurs et administratrices à être opérationnels
+
 description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs et administratrices à être opérationnels.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '533'
 ht-degree: 100%
-
 ---
-
 # Bonnes pratiques{#best-practices}
 
 La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
@@ -55,9 +57,9 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
    <td><p>Décrit quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct vers les ressources.</p> </td>
   </tr>
   <tr>
-   <td>Options des paramètres prédéfinis d’image</td>
-   <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres prédéfinis d’image</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les bonnes pratiques en matière de paramètres prédéfinis d’image</a></td>
-   <td>Dans le cadre de la documentation sur la <a href="/help/assets/managing-image-presets.md">Gestion des paramètres prédéfinis d’image</a>, ces rubriques décrivent les paramètres prédéfinis d’image et les bonnes pratiques concernant la sélection des options de paramètres prédéfinis d’image.</td>
+   <td>Options des paramètres d’image prédéfinis</td>
+   <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres d’image prédéfinis</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les bonnes pratiques en matière de paramètres d’image prédéfinis</a></td>
+   <td>Dans le cadre de la documentation sur la <a href="/help/assets/managing-image-presets.md">Gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent les paramètres d’image prédéfinis et les bonnes pratiques concernant la sélection des options de paramètres d’image prédéfinis.</td>
   </tr>
   <tr>
    <td>Dynamic Media ou intégration directe à Scene7</td>
