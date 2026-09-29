@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '1053'
 ht-degree: 100%
-
 ---
-
 # Rapports personnalisés dans Process Reporting{#custom-reports-in-process-reporting}
 
 Vous pouvez utiliser l’interface REST de QueryBuilder ou créer un service OSGi à l’aide de l’API QueryBuilder pour créer un rapport personnalisé.
@@ -36,7 +34,7 @@ L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de
 1. Accédez à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure du nœud de stockage et les propriétés de nœud de Process Reporting.
 
-   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les accès et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
+   Vous pouvez définir des paramètres facultatifs pour spécifier le décalage, la limite, les hits et les propriétés. Vous pouvez coder en dur les arguments pour les rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
 
    Pour récupérer tous les noms de processus, la requête doit être :
 
@@ -135,9 +133,9 @@ Avant de créer un service à l’aide de l’API Query Builder, vous devez [cr
                        out.write(row.toString().getBytes());
    ```
 
-1. Utilisez l’élément `org.apache.felix maven-bundle-plugin` pour créer un groupement OSGi pour le servlet.
+1. Utilisez l’élément `org.apache.felix maven-bundle-plugin` pour créer un bundle OSGi pour le servlet.
 
-1. Déployez le groupement sur le serveur CRX.
+1. Déployez le bundle sur le serveur CRX.
 
 ### Exemple de service {#service-example}
 

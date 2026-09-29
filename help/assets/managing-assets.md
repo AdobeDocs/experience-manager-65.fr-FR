@@ -11,11 +11,9 @@ exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 100%
-
 ---
-
 # À propos de la gestion des ressources Dynamic Media {#managing-assets}
 
 La gestion des ressources Dynamic Media (images, vidéos et ressources interactives) après leur chargement implique de nombreuses tâches, dont la prévisualisation, le téléchargement ou la publication.

@@ -11,11 +11,9 @@ feature: Configuration
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 100%
-
+source-wordcount: '1300'
+ht-degree: 97%
 ---
-
 # Liaison d’URL à votre application web {#linking-urls-to-your-web-application}
 
 Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Après la publication d’une ressource, Dynamic Media active une chaîne d’URL qui référence la ressource. Vous pouvez coller ces URL dans un navigateur Web à des fins de test.
@@ -26,9 +24,9 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 >[!NOTE]
 >
->Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Elles ne sont actuellement pas disponibles pour les ressources statiques qui se trouvent dans DAM et non sur le serveur Dynamic Media. Le bouton URL ne s’affiche pas pour les rendus statiques.
+>Les chaînes URL ne sont disponibles que pour les rendus dynamiques de ressources. Ils ne sont actuellement pas disponibles pour les ressources statiques qui se trouvent dans la gestion des ressources numériques (DAM) et non sur le serveur Dynamic Media. Le bouton URL n’apparaît pas pour les rendus statiques.
 
-Consultez également la section [Intégration de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
+Consultez également la section [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
 Consultez également la section [Liaison d’URL YouTube à une application web](video.md).
 
@@ -38,7 +36,7 @@ Consultez également la section [Chargement de ressources](manage-assets.md#uplo
 
 ## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
 
-Vous pouvez obtenir une chaîne d’URL générée par un paramètre prédéfini d’image ou de visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
+Vous pouvez obtenir une chaîne d’URL générée par un paramètre d’image ou de visionneuse prédéfini. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
 >
@@ -74,7 +72,7 @@ Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les é
 
      ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
+   * Si vous avez sélectionné une visionneuse à 360°, un ensemble d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
 
      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 
@@ -112,9 +110,9 @@ Dynamic Media prend en charge la diffusion de ressources statiques, qui sont des
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        Par exemple, `https://aem.com/is/content/adobe/image.gif`.
+       Par exemple, `https://aem.com/is/content/adobe/image.gif`.
 
    * Sélectionnez **[!UICONTROL Ressource]** > **[!UICONTROL Rendus dynamiques]**, puis sélectionnez un rendu dynamique de la ressource statique et copiez l’URL.
 

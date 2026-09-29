@@ -1,6 +1,6 @@
 ---
-title: Authentification Adobe IMS et prise en charge par l’assistance  [!DNL Admin Console]  d’Adobe Experience Manager Managed Services
-description: Découvrez comment utiliser l’ [!DNL Admin Console]  dans Adobe Experience Manager.
+title: Authentification Adobe IMS et prise en charge de la [!DNL Admin Console] pour Adobe Experience Manager Managed Services
+description: Découvrez comment utiliser le [!DNL Admin Console] dans Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -10,12 +10,10 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '1602'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1700'
+ht-degree: 97%
 ---
-
 # Authentification Adobe IMS et prise en charge par l’assistance d’[!DNL Admin Console] d’AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -24,7 +22,7 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-AEM 6.4.3.0 introduit la prise en charge par l’[!DNL Admin Console] de l’authentification aux instances AEM et basées sur Adobe IMS (système de gestion d’identité) pour les clients **AEM Managed Services**.
+AEM 6.4.3.0 introduit la prise en charge [!DNL Admin Console] des instances AEM et de l’authentification basée sur Adobe IMS (système Identity Management) pour les clients **AEM Managed Services**.
 
 L’intégration d’AEM à l’[!DNL Admin Console] permettra aux clients AEM Managed Services de gérer tous les utilisateurs d’Experience Cloud dans une seule console. Les utilisateurs et utilisatrices peuvent être affectés aux profils de produit associés aux instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
@@ -179,7 +177,7 @@ Il est alors redirigé vers l’écran de connexion IMS et saisit ses informatio
 
 ![screen_shot_2018-09-17at115629pm](assets/screen_shot_2018-09-17at115629pm.png)
 
-Si un fournisseur d’identité fédéré est configuré lors de la configuration initiale d’[!DNL Admin Console], l’utilisateur est redirigé vers le fournisseur d’identité client pour SSO. 
+Si un fournisseur d’identité fédéré est configuré lors de la configuration initiale d’[!DNL Admin Console], l’utilisateur est redirigé vers le fournisseur d’identité client pour SSO.
 
 Le fournisseur d’identité est Okta dans l’exemple ci-dessous :
 
@@ -215,7 +213,7 @@ L’utilisateur fait partie des groupes suivants dans IMS :
 
 ![screen_shot_2018-09-17at94237pm](assets/screen_shot_2018-09-17at94237pm.png)
 
-Lorsque l’utilisateur se connecte, ses adhésions de groupes sont synchronisées, comme illustré ci-dessous :
+Lorsqu’une personne se connecte, ses abonnements à des groupes sont synchronisés, comme illustré ci-dessous :
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
