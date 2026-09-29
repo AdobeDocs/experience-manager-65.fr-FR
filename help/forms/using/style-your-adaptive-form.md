@@ -50,7 +50,7 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 
-   [](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+   [&#128279;](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Ouvrez les propriétés du **[!UICONTROL conteneur de formulaires adaptatifs]**. Dans l’explorateur de propriétés, accédez à **[!UICONTROL De base]** > **[!UICONTROL Thème de formulaire adaptatif]**. Le champ **[!UICONTROL Thème de formulaire adaptatif]** répertorie tous les thèmes prêts à l’emploi et personnalisés. Par défaut, le thème Zone de travail est appliqué.
 1. Sélectionnez votre thème dans le champ **[!UICONTROL Thème de formulaire adaptatif]**. Par exemple, **Thème Enquête**. Sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour appliquer le thème sélectionné.
@@ -73,7 +73,7 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
 
    1. Ouvrez le formulaire dans l’éditeur de formulaires.
 
-      [](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+      [&#128279;](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
    1. Cliquez sur l’image du logo dans le composant d’[!UICONTROL en-tête], puis sur **[!UICONTROL Propriétés]** ![cmppr](assets/cmppr.png). Dans la propriété [!UICONTROL image], sélectionnez X pour supprimer l’image du logo existant.
    1. Cliquez sur **[!UICONTROL charger]**, sélectionnez le fichier logo.png, puis choisissez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start).
@@ -100,7 +100,7 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 
 ### Création d’un thème {#create-a-theme}
 
-1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [&#128279;](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
 
    * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème à partir de la liste des thèmes.
@@ -231,7 +231,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </tbody> 
     </table>
 
-1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
@@ -295,7 +295,7 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
 
 Certains styles s’appliquent uniquement à un composant spécifique. Un style est appliqué à ces composants dans l’éditeur de formulaires adaptatifs.
 
-1. Ouvrez le formulaire adaptatif pour le modifier. [](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+1. Ouvrez le formulaire adaptatif pour le modifier. [&#128279;](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 1. Dans la barre supérieure, sélectionnez l’option **[!UICONTROL Style]**.
 
    ![style-option](assets/style-option.png)
