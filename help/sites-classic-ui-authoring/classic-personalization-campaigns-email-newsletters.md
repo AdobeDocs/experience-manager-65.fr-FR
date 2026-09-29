@@ -1,21 +1,23 @@
 ---
 title: Publier un e-mail sur des services de messagerie
+
 description: Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’ExactTarget et Silverpop Engage.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1135'
 ht-degree: 100%
-
 ---
-
 # Publier un e-mail sur des services de messagerie{#publishing-an-email-to-email-service-providers}
 
 Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’ExactTarget et Silverpop Engage. Ce document décrit comment configurer AEM pour publier une newsletter sur ces services de messagerie.
@@ -27,7 +29,7 @@ Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’E
 Pour publier votre e-mail auprès du fournisseur de services de messagerie, vous devez effectuer les étapes suivantes :
 
 1. Créez un e-mail.
-1. Appliquez la configuration du service de messagerie à cet e-mail. 
+1. Appliquez la configuration du service de messagerie à cet e-mail.
 1. Publiez l&#39;e-mail.
 
 >[!NOTE]
@@ -63,42 +65,42 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
 
 1. Sélectionnez une option dans le menu **Options** :
 
-<table>
- <tbody>
-  <tr>
-   <td>Adresse postale physique (requise)</td>
-   <td>Ce composant insère l’adresse postale physique de votre organisation dans l’e-mail.</td>
-  </tr>
-  <tr>
-   <td>Centre de profils (requis)</td>
-   <td>Le centre de profils est une page web où les personnes abonnées peuvent saisir et gérer les informations personnelles que vous conservez à leur sujet.</td>
-  </tr>
-  <tr>
-   <td>Afficher l’e-mail sous forme d’une page web</td>
-   <td>Ce composant permet à l’utilisateur ou l’utilisatrice d’afficher l’e-mail sous la forme d’une page web.</td>
-  </tr>
-  <tr>
-   <td>Politique de confidentialité</td>
-   <td>Ce composant insère le lien vers votre politique de confidentialité dans l'e-mail.<br /> </td>
-  </tr>
-  <tr>
-   <td>Centre de désabonnement</td>
-   <td>Permet à l’utilisateur ou l’utilisatrice de se désabonner de votre liste de publipostage.</td>
-  </tr>
-  <tr>
-   <td>Centre d’abonnement</td>
-   <td>Un centre d’abonnement est une page Web dans laquelle les abonnés peuvent contrôler les messages qu’ils reçoivent de votre entreprise.</td>
-  </tr>
-  <tr>
-   <td>Suivre les ouvertures d’e-mail</td>
-   <td>Composant masqué qui vous permet d’utiliser la fonctionnalité de suivi d’ExactTarget.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Adresse postale physique (requise)</td>
+      <td>Ce composant insère l’adresse postale physique de votre organisation dans l’e-mail.</td>
+   </tr>
+   <tr>
+      <td>Centre de profils (requis)</td>
+      <td>Le centre de profils est une page web où les personnes abonnées peuvent saisir et gérer les informations personnelles que vous conservez à leur sujet.</td>
+   </tr>
+   <tr>
+      <td>Afficher l’e-mail sous forme d’une page web</td>
+      <td>Ce composant permet à l’utilisateur ou l’utilisatrice d’afficher l’e-mail sous la forme d’une page web.</td>
+   </tr>
+   <tr>
+      <td>Politique de confidentialité</td>
+      <td>Ce composant insère le lien vers votre politique de confidentialité dans l'e-mail.<br /> </td>
+   </tr>
+   <tr>
+      <td>Centre de désabonnement</td>
+      <td>Permet à l’utilisateur ou l’utilisatrice de se désabonner de votre liste de publipostage.</td>
+   </tr>
+   <tr>
+      <td>Centre d’abonnement</td>
+      <td>Un centre d’abonnement est une page Web dans laquelle les abonnés peuvent contrôler les messages qu’ils reçoivent de votre entreprise.</td>
+   </tr>
+   <tr>
+      <td>Suivre les ouvertures d’e-mail</td>
+      <td>Composant masqué qui vous permet d’utiliser la fonctionnalité de suivi d’ExactTarget.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée à l’e-mail. Consultez [Application de la configuration de service de messagerie aux paramètres d’e-mail](#applying-e-mail-service-configuration-to-e-mail-settings) pour plus d’informations.
+   >[!NOTE]
+   >
+   >Des valeurs ne sont renseignées dans le menu déroulant **Options** que si la configuration d’ExactTarget est appliquée à l’e-mail. Consultez [Application de la configuration de service de messagerie aux paramètres d’e-mail](#applying-e-mail-service-configuration-to-e-mail-settings) pour plus d’informations.
 
 1. Publiez l&#39;e-mail sur ExactTarget.
 
@@ -145,7 +147,7 @@ Les e-mails/newsletters peuvent être publiés sur votre service de messagerie e
 1. Avant de publier un e-mail, vérifiez que vous avez appliqué la configuration correcte à celui-ci.
 1. Cliquez sur **Publier**. Vous accédez alors à la fenêtre **Publier la newsletter dans le fournisseur de service d’e-mail**.
 1. Renseignez le champ **Nom de la newsletter** L&#39;e-mail et la newsletter sont publiés sur le fournisseur de services de messagerie avec ce nom. Si aucun nom n’est indiqué, l’e-mail est publié avec le nom de la page de la newsletter défini dans AEM.
-1. Cliquez sur **Publier**. 
+1. Cliquez sur **Publier**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 

@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
@@ -38,6 +38,7 @@ Vous pouvez utiliser le composant **Signature tactile** et le composant **Étape
 Une fois que vous avez sélectionné l’icône Terminé![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez plus modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et la signer à nouveau à l’aide de l’option Pinceau/Clavier ci-dessus.
 
 Vous pouvez sélectionner l’icône **Configurer** ![configurer](assets/configure.png) pour définir les proportions de la zone de travail de la signature tactile.
+
 * Lorsque le rapport d’aspect de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
 
 * Lorsque le rapport d’aspect de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
@@ -48,7 +49,6 @@ Vous pouvez sélectionner l’icône **Configurer** ![configurer](assets/configu
 >[!NOTE]
 >
 >Les signatures sont toujours enregistrées au format PNG.
->
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 

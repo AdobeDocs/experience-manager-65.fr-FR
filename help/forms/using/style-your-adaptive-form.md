@@ -6,13 +6,11 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 96%
-
 ---
-
 # Application d’un style à votre formulaire adaptatif {#do-not-publish-style-your-adaptive-form}
 
 Apprenez à créer un thème personnalisé, à appliquer un style à des composants individuels et à utiliser des polices web dans un thème.
@@ -52,7 +50,7 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 
-   [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+   [](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Ouvrez les propriétés du **[!UICONTROL conteneur de formulaires adaptatifs]**. Dans l’explorateur de propriétés, accédez à **[!UICONTROL De base]** > **[!UICONTROL Thème de formulaire adaptatif]**. Le champ **[!UICONTROL Thème de formulaire adaptatif]** répertorie tous les thèmes prêts à l’emploi et personnalisés. Par défaut, le thème Zone de travail est appliqué.
 1. Sélectionnez votre thème dans le champ **[!UICONTROL Thème de formulaire adaptatif]**. Par exemple, **Thème Enquête**. Sélectionnez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour appliquer le thème sélectionné.
@@ -75,7 +73,7 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
 
    1. Ouvrez le formulaire dans l’éditeur de formulaires.
 
-      [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
+      [](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
    1. Cliquez sur l’image du logo dans le composant d’[!UICONTROL en-tête], puis sur **[!UICONTROL Propriétés]** ![cmppr](assets/cmppr.png). Dans la propriété [!UICONTROL image], sélectionnez X pour supprimer l’image du logo existant.
    1. Cliquez sur **[!UICONTROL charger]**, sélectionnez le fichier logo.png, puis choisissez ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. L’image a été téléchargée dans la section [Avant de commencer](/help/forms/using/style-your-adaptive-form.md#before-you-start).
@@ -102,7 +100,7 @@ Dans ce tutoriel, vous allez appliquer un style aux en-têtes et aux pieds de pa
 
 ### Création d’un thème {#create-a-theme}
 
-1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
 
    * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème à partir de la liste des thèmes.
@@ -233,7 +231,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </tbody> 
     </table>
 
-1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![&#x200B; aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID client]**, puis sur **[!UICONTROL Conteneur de panneau réactif]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Sélectionnez ![ aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
@@ -251,7 +249,7 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
       <td><b>Valeur</b></td> 
      </tr> 
      <tr> 
-      <td>Contexte</td> 
+      <td>Arrière-plan</td> 
       <td>Couleur d’arrière-plan</td> 
       <td>F6921E</td> 
      </tr> 
@@ -297,7 +295,7 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
 
 Certains styles s’appliquent uniquement à un composant spécifique. Un style est appliqué à ces composants dans l’éditeur de formulaires adaptatifs.
 
-1. Ouvrez le formulaire adaptatif pour le modifier. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+1. Ouvrez le formulaire adaptatif pour le modifier. [](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 1. Dans la barre supérieure, sélectionnez l’option **[!UICONTROL Style]**.
 
    ![style-option](assets/style-option.png)
@@ -444,16 +442,18 @@ Certains styles s’appliquent uniquement à un composant spécifique. Un style 
 Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les appareils sur lesquels le formulaire adaptatif est affiché ne disposent peut-être pas des polices utilisées pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices web pour fournir les polices requises à l’appareil cible.
 
 [!DNL Adobe Fonts] est un service de polices web. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser [!DNL Adobe Fonts] dans un formulaire adaptatif, procédez comme suit :
-1. Parcourez la [bibliothèque de polices Adobe](https://fonts.adobe.com/) et choisissez la police à appliquer au formulaire.
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
 
->[!NOTE]
->
-> Vous pouvez ajouter des balises ou des filtres pour affiner la liste des polices.
+1. Parcourez la [bibliothèque de polices Adobe](https://fonts.adobe.com/) et choisissez la police à appliquer au formulaire.
+
+   >[!NOTE]
+   >
+   > Vous pouvez ajouter des balises ou des filtres pour affiner la liste des polices.
 
 1. Cliquez sur le bouton &lt;/> pour ajouter la famille à un projet web, au cas où vous trouveriez une police qui vous convient.
 
@@ -465,23 +465,25 @@ Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif
    >
    > Vous ne pouvez ajouter des polices à votre projet web que si le bouton &lt;/> est disponible.
 
-2. Donnez un nom à votre projet web.
-3. Cochez les cases pour sélectionner les poids et les styles de police que vous souhaitez inclure.
+1. Donnez un nom à votre projet web.
+1. Cochez les cases pour sélectionner les poids et les styles de police que vous souhaitez inclure.
 
    ![ajouter une bibliothèque de polices](assets/add-a-font-window.png)
 
-4. Sélectionner **Clic** pour créer le projet.
-5. Copiez le code intégré et l’URL à partir de l’écran.
+1. Sélectionner **Clic** pour créer le projet.
+1. Copiez le code intégré et l’URL à partir de l’écran.
    ![code intégré et URL](assets/font-add-url.png)
 
-6. Cliquez sur **Terminé** pour fermer la fenêtre de projet web.
-7. Connectez-vous à votre instance AEM et accédez à l’URL `http://server:port/crx/de/index.jsp#`.
-8. Créez une structure de dossiers dans CRXDE, par exemple `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
-10. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
-11. Accédez au dossier CSS créé et créez un fichier . Par exemple, créez un fichier en tant que `fonts.css` et collez le code incorporé avec l’URL.
-    ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Enregistrez les modifications.
+1. Cliquez sur **Terminé** pour fermer la fenêtre de projet web.
+1. Connectez-vous à votre instance AEM et accédez à l’URL `http://server:port/crx/de/index.jsp#`.
+1. Créez une structure de dossiers dans CRXDE, par exemple `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+1. Accédez au dossier `clientlibs` nouvellement créé et ajoutez les propriétés `allowProxy` et `categories`.
+1. Accédez à `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` et créez un dossier CSS.
+1. Accédez au dossier CSS créé et créez un fichier. Par exemple, créez un fichier en tant que `fonts.css` et collez le code intégré avec l’URL.
+
+   ![Structure de dossiers](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. Enregistrez les modifications.
 
 >[!NOTE]
 >

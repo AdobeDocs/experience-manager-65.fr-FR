@@ -8,13 +8,11 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 97%
-
 ---
-
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
 
 | Version | Lien de l’article |
@@ -29,11 +27,11 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés sur [!DNL Experience Manager Assets], la gestion des métadonnées s’intègre aux workflows créatifs. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
+[!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés sur [!DNL Experience Manager Assets], la gestion des métadonnées s’intègre aux workflows créatifs. La possibilité de conserver et de gérer les métadonnées de vos ressources permet aussi d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
 
 ## Métadonnées et leurs origines {#how-to-edit-or-add-metadata}
 
-Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Elles sont ajoutées aux ressources et traitées dans [!DNL Experience Manager] lorsque vous chargez une ressource. Vous pouvez modifier les métadonnées existantes et ajouter de nouvelles propriétés de métadonnées aux champs existants. Les entreprises ont besoin de vocabulaires contrôlés et fiables de métadonnées. Ainsi, [!DNL Experience Manager Assets] ne permet pas l’ajout à la demande de nouvelles propriétés de métadonnées. Seules les équipes d’administration et de développement peuvent ajouter de nouvelles propriétés ou de nouveaux champs contenant des métadonnées. Les utilisateurs peuvent renseigner les champs existants avec des métadonnées.
+Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Elles sont ajoutées aux ressources et traitées dans [!DNL Experience Manager] lorsque vous chargez une ressource. Vous pouvez modifier les métadonnées existantes et ajouter de nouvelles propriétés de métadonnées aux champs existants. Les entreprises ont besoin de vocabulaires contrôlés et fiables de métadonnées. Ainsi, [!DNL Experience Manager Assets] ne permet pas l’ajout à la demande de nouvelles propriétés de métadonnées. Seuls les administrateurs et administratrices et les développeurs et développeuses peuvent ajouter de nouvelles propriétés ou de nouveaux champs contenant des métadonnées. Les utilisateurs peuvent renseigner les champs existants avec des métadonnées.
 
 Vous pouvez utiliser les méthodes suivantes pour ajouter des métadonnées à des ressources numériques :
 
@@ -140,7 +138,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 * Importez les métadonnées dans un système tiers lors de la migration des ressources.
 * Partagez des métadonnées de ressources avec une équipe de projet plus large.
 * Testez ou effectuez un audit des métadonnées à des fins de conformité.
-* Externalisastion de métadonnées pour les localiser séparément.
+* Externalisez les métadonnées pour les localiser séparément.
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 
@@ -152,7 +150,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou certaines propriétés. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Exporter]**. Un message confirme l’exportation de l’image. Fermez le message.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Exporter]**. Un message confirme que les métadonnées sont exportées. Fermez le message.
 
 1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, cliquez sur **[!UICONTROL Téléchargement du CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
@@ -237,7 +235,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir de la 
 
 * Les mises à jour des métadonnées par le biais de l’interface utilisateur modifient les propriétés de métadonnées dans l’espace de noms `dc`. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’espace de noms `jcr`. Consultez la section [mise à jour des métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
-* Le fichier CSV d’importation de métadonnées de ressources est dans un format très spécifique. Pour gagner du temps et s’épargner des efforts, tout en évitant des erreurs, vous pouvez commencer à créer le fichier CSV à l’aide d’un format de fichier CSV exporté.
+* Le fichier CSV d’importation de métadonnées de ressources est dans un format très spécifique. Pour gagner du temps et s’épargner des efforts, tout en évitant des erreurs, vous pouvez commencer à créer le fichier CSV à l’aide du format d’un fichier CSV exporté.
 
 * Lors de l’importation de métadonnées à l’aide d’un fichier CSV, le format de date requis est le suivant : `YYYY-MM-DDThh:mm:ss.fff-00:00`. Si un autre format est utilisé, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
 
