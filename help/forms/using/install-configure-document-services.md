@@ -6,16 +6,14 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '10688'
-ht-degree: 96%
-
+source-wordcount: '10825'
+ht-degree: 95%
 ---
-
 # Installer et configurer des services de document {#installing-and-configuring-document-services}
 
-AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opérations au niveau du document, par exemple, des services pour créer, assembler, publier et archiver des documents PDF, pour ajouter des signatures numériques afin de limiter l’accès aux documents et de décoder les formulaires Barcoded Forms. Ces services sont inclus dans le package du module complémentaire AEM Forms. Ces services sont collectivement désignés par services de document. Les services de document disponibles et leurs fonctionnalités principales sont les suivants :
+AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opérations au niveau du document, par exemple, des services pour créer, assembler, publier et archiver des documents PDF, pour ajouter des signatures numériques afin de limiter l’accès aux documents et de décoder les formulaires Barcoded Forms. Ces services sont inclus dans le package du module complémentaire AEM Forms. Ces services sont collectivement désignés sous le nom de services de documents. Les services de document disponibles et leurs fonctionnalités principales sont les suivants :
 
 * **Service Assembler :** permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP et d’obtenir des informations sur les documents PDF. Ce service permet également de convertir et de valider des documents PDF au format PDF/A standard, il convertit les formulaires PDF et XML aux formats PDF/A-1b, PDF/A-2b et PDFA/A-3b. Pour plus d’informations, consultez la section [Service Assembler](/help/forms/using/assembler-service.md).
 
@@ -23,11 +21,11 @@ AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opé
 
 * **Service Barcoded Forms :** permet d’extraire des données depuis des images électroniques de code-barres. Il accepte en entrée des fichiers PDF et TIFF qui contiennent un ou plusieurs codes à barres et extrait les données de code à barres. Pour plus d’informations, consultez la section [Service Barcoded Forms](/help/forms/using/using-barcoded-forms-service.md).
 
-* **Service DocAssurance :** permet de chiffrer et de déchiffrer des documents, d’ajouter des droits d’utilisation aux fonctionnalités d’Adobe Reader ou encore d’ajouter des signatures numériques à vos documents. Le service Doc Assurance se compose en fait de trois services : Signature, Encryption et Reader Extensions. Pour plus d’informations, consultez la section [Service DocAssurance](/help/forms/using/overview-aem-document-services.md).
+* **Service DocAssurance :** permet de chiffrer et de déchiffrer des documents, d’ajouter des droits d’utilisation aux fonctionnalités d’Adobe Reader ou encore d’ajouter des signatures numériques à vos documents. Le service Doc Assurance se compose de trois services : signature, chiffrement et extension Reader. Pour plus d’informations, consultez la section [Service DocAssurance](/help/forms/using/overview-aem-document-services.md).
 
 * **Service Encryption :** permet de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Un utilisateur ou une utilisatrice autorisé(e) peut déchiffrer le document pour pouvoir accéder à son contenu. Pour plus d’informations, consultez la section [Service Encryption](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
-* **Service Forms :** permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans Forms Designer. Le service Forms restitue sous forme de documents PDF tout type de formulaire que vous créez. Pour plus d’informations, consultez la section [Service Forms](/help/forms/using/forms-service.md).
+* **Service Forms :** permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans Forms Designer. Le service Forms restitue sous forme de documents PDF toute conception de formulaire que vous créez. Pour plus d’informations, consultez la section [Service Forms](/help/forms/using/forms-service.md).
 
 * **Service Output :** permet de créer des documents dans différents formats, y compris PDF et les formats d’imprimantes laser et d’imprimantes d’étiquettes. Les formats d’imprimantes laser sont les suivants : PostScript et PCL (Printer Control Language). Pour plus d’informations, consultez la section [Service Output](/help/forms/using/output-service.md).
 
@@ -37,17 +35,17 @@ AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opé
 
 * **Service Signature :** permet d’utiliser des documents et des signatures numériques sur le serveur AEM. Par exemple, le service Signature est généralement utilisé dans les situations suivantes :
 
-   * Le serveur AEM certifie un formulaire avant que ce dernier ne soit envoyé à un utilisateur ou une utilisatrice et ouvert avec Acrobat ou Adobe Reader.
-   * Le serveur AEM valide la signature apposée sur un formulaire via Acrobat ou Adobe Reader.
-   * Le serveur AEM signe un formulaire au nom d’un notaire.
+  * Le serveur AEM certifie un formulaire avant que ce dernier ne soit envoyé à un utilisateur ou une utilisatrice et ouvert avec Acrobat ou Adobe Reader.
+  * Le serveur AEM valide la signature apposée sur un formulaire via Acrobat ou Adobe Reader.
+  * Le serveur AEM signe un formulaire au nom d’un notaire.
 
-  Le service Signature accède aux certificats et aux informations d’identification stockées dans le Trust Store. Pour plus d’informations, consultez la section [Service Signature](/help/forms/using/aem-document-services-programmatically.md).
+  Le service Signature accède aux certificats et aux informations d’identification stockées dans le trust store. Pour plus d’informations, consultez la section [Service Signature](/help/forms/using/aem-document-services-programmatically.md).
 
 AEM Forms est une plateforme d’entreprise performante et les services de documents ne sont quʼune des fonctionnalités proposées. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologie de déploiement {#deployment-topology}
 
-Le module complémentaire AEM Forms est une application déployée sur AEM. En général, une seule instance AEM (de création ou de publication) suffit pour exécuter les services de document AEM Forms. La topologie suivante est recommandée pour exécuter les services de document d’AEM Forms. Pour plus d’informations sur les topologies, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Le package complémentaire AEM Forms est une application déployée sur AEM. En général, une seule instance AEM (de création ou de publication) suffit pour exécuter les services de document AEM Forms. La topologie suivante est recommandée pour exécuter les services de document d’AEM Forms. Pour plus d’informations sur les topologies, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![Topologies d’architecture et de déploiement pour AEM Forms](do-not-localize/document-services.png)
 
@@ -64,18 +62,18 @@ Avant de commencer à installer et à configurer les services de document AEM F
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
 * Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. En général, une seule instance AEM (création ou publication) suffit pour exécuter les services de document AEM Forms :
 
-   * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+  * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
+  * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
-   * 15 Go d’espace temporaire pour les installations Microsoft® Windows.
-   * 6 Go d’espace temporaire pour les installations Unix.
+  * 15 Go d’espace temporaire pour les installations Microsoft® Windows.
+  * 6 Go d’espace temporaire pour les installations UNIX.
 
 * Les logiciels client requis pour que PDF Generator effectue la conversion sous Microsoft® Windows et Linux® sont installés :
 
-   * **Microsoft® Windows** : installez [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
-   * **Linux®** : installez [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
+  * **Microsoft® Windows** : installez [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
+  * **Linux®** : installez [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
 
 >[!NOTE]
 >
@@ -165,26 +163,30 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
 
 * **(PDF Generator uniquement**) Installez la version 32 bits des bibliothèques libcurl, libcrypto et libssl et créez les liens symboliques ci-dessous. Les liens symboliques pointent vers la dernière version des bibliothèques respectives :
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
-* **(PDF Generator uniquement)** Le service PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF. Pour activer la conversion pour l’itinéraire WebToPDF, installez les bibliothèques 64 bits répertoriées ci-dessous. Ces bibliothèques sont généralement déjà installées. Si une bibliothèque est manquante, installez-la manuellement :
+* **(PDF Generator uniquement)** Le service PDF Generator prend en charge les itinéraires WebKit et WebToPDF pour convertir des fichiers HTML en documents PDF. Pour activer la conversion pour l’acheminement WebToPDF, installez les bibliothèques 64 bits répertoriées ci-dessous. Ces bibliothèques sont généralement déjà installées. Si une bibliothèque est manquante, installez-la manuellement :
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 * (PDF Generator uniquement) Pour activer l’itinéraire WebKit sur les configurations RHEL 8 ou RHEL 9, SLES15, la bibliothèque `nspr` 32 bits peut ne pas être disponible par défaut ; installez-la si elle n’est pas présente.
+
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 * (PDF Generator uniquement) Si la conversion WebToPDF échoue sur le serveur Unix® avec l’erreur suivante :
 
@@ -196,11 +198,11 @@ Si vous utilisez un système d’exploitation UNIX, installez les packages 32 b
 
 >[!NOTE]
 >
-> La fonctionnalité de graphique utilise également WebToPDF dans les communications interactives. Par conséquent, il est nécessaire de suivre les étapes de configuration de WebToPDF décrites ci-dessus afin de s’assurer que la fonctionnalité de graphique fonctionne correctement.
+> WebToPDF est également utilisé par la fonctionnalité de graphique dans les communications interactives. Par conséquent, il est nécessaire de suivre les étapes de configuration de WebToPDF décrites ci-dessus afin de s’assurer que la fonctionnalité de graphique fonctionne correctement.
 
 ## Configurations de pré-installation {#preinstallationconfigurations}
 
-Les configurations répertoriées dans la section Configurations de pré-installation s’appliquent uniquement au service PDF Generator. Si vous ne configurez pas le service PDF Generator, vous pouvez ignorer la section Configurations de pré-installation.
+Les configurations répertoriées dans la section Configurations de pré-installation s’appliquent uniquement au service PDF Generator. Si vous ne configurez pas le service PDF Generator, vous pouvez ignorer la section de configuration pré‑installation.
 
 ### Installation d’Adobe Acrobat et d’applications tierces {#install-adobe-acrobat-and-third-party-applications}
 
@@ -220,7 +222,7 @@ Pour connaître les produits et versions Acrobat pris en charge pour PDF Generat
 
 #### Prérequis
 
-Avant d’installer Acrobat, passez en revue ces exigences essentielles. Prérequis :
+Avant d’installer Acrobat, vérifiez ces exigences essentielles. Prérequis :
 
 * Familiarité avec [Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html)
 * Compréhension de votre [architecture de déploiement AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
@@ -236,7 +238,7 @@ Backup solution for existing Acrobat settings
  -->
 
 
-#### Workflow et chronologie d’implémentation
+#### Workflow et chronologie de mise en œuvre
 
 Le processus complet prend généralement 1 à 2 heures, selon votre environnement :
 
@@ -264,7 +266,7 @@ Chaque onglet contient des instructions personnalisées optimisées pour votre c
 
 >[!NOTE]
 >
->La vidéo présente le processus d’installation d’une configuration Licence au détail - Utilisation unique. Pour les autres scénarios de déploiement (Au détail - Utilisations multiples, En volume - Utilisation unique ou en volume - Utilisations multiples), reportez-vous aux instructions spécifiques de l’étape 9 dans les onglets correspondants ci-dessous pour garantir le démarrage correct du serveur et l’activation de la licence pour votre type de déploiement.
+>La vidéo présente le processus d’installation pour une configuration Licence au détail - Utilisateur ou utilisatrice unique. Pour les autres scénarios de déploiement (Au détail - Utilisateurs ou utilisatrices multiples, En volume - Utilisateur ou utilisatrice unique ou En volume - Utilisateurs ou utilisatrices multiples), reportez-vous aux instructions spécifiques de l’étape 9 dans les onglets correspondants ci-dessous pour garantir le démarrage correct du serveur et l’activation de la licence pour votre type de déploiement.
 
 >[!BEGINTABS]
 
@@ -274,19 +276,19 @@ Chaque onglet contient des instructions personnalisées optimisées pour votre c
 
 Ces étapes supposent que vous disposiez des privilèges d’administration nécessaires sur Adobe Admin Console et le serveur exécutant AEM Forms.
 
-##### Préparation du package FRL (Adobe Admin Console)
+##### Préparer le package FRL (Adobe Admin Console)
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
-###### Étape 1 : se connecter à Adobe Admin Console
+###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
 1. Connectez-vous à l’aide d’un compte avec des privilèges d’*administration système*.
-1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur est déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
+1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur serait déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
 
-###### Étape 1 : créer le package FRL
+###### Étape 2 : créer le package FRL
 
-1. Dans Admin Console, accédez à l’onglet Package. Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
+1. Dans Admin Console, accédez à l’onglet « Packages ». Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
 1. Sélectionnez la vignette **Licence avec fonctionnalités restreintes** et cliquez sur le bouton **Commencer**. Assurez-vous de sélectionner le type de licence approprié.
 1. Sur l’écran **Créer un package**, configurez les paramètres du package :
 
@@ -312,13 +314,13 @@ Il est recommandé de créer un compte de service dédié pour gérer les packag
 Une fois que vous disposez du compte approprié, procédez comme suit pour accorder des autorisations de téléchargement :
 
 1. Dans Admin Console, accédez à l’onglet **Utilisateurs et utilisatrices**.
-2. Recherchez ou créez un compte d’utilisation pour accorder des autorisations de téléchargement.
-3. Cliquez sur le nom de la personne pour ouvrir son profil.
+2. Recherchez ou créez un compte d’utilisateur pour accorder des autorisations de téléchargement.
+3. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice pour ouvrir son profil.
 4. Cliquez sur l’icône en regard de **Modifier les droits d’administration** correspondant à la personne.
 5. Attribuez le rôle **Administration de déploiement** à la personne. D’autres rôles d’administration peuvent également fonctionner, mais le rôle Administration de déploiement est recommandé. Cliquez sur **Enregistrer**.
 
 
-##### Déployer le package FRL (serveur AEM Forms)
+##### Déployer le package FRL (Serveur Formulaires AEM)
 
 Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
 
@@ -326,7 +328,7 @@ Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droit
 
 Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée. Assurez-vous d’utiliser un compte disposant des privilèges d’administration locale pour accéder au serveur.
 
-###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
+###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
 
 **Important :** sauvegardez tous les paramètres, profils ou configurations Acrobat personnalisés avant de procéder à la désinstallation.
 
@@ -336,15 +338,15 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 4. Sélectionnez **Désinstaller** et suivez les invites pour supprimer l’application. Le cas échéant, redémarrez le serveur.
 5. Vérifiez que toutes les versions Classic du programme sont désinstallées. Utilisez l’[outil Adobe Acrobat Cleaner](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si nécessaire pour en effectuer la suppression complète.
 
-###### Étape 6 : télécharger et installer Adobe Acrobat Pro
+###### Étape 6 : télécharger et installer Adobe Acrobat Pro
 
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
 2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
-4. Suivez ensuite les instructions d’installation fournies dans cette page :
-   * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
+4. Suivez les instructions d’installation fournies sur cette page :
+   * Procédez à l’extraction du fichier .zip téléchargé dans un dossier de votre ordinateur.
    * Accédez au fichier Setup.exe (n’exécutez pas le fichier Setup.exe à partir du fichier .zip).
    * Double-cliquez sur Setup.exe pour démarrer l’installation.
    * Suivez les instructions à l’écran pour terminer l’installation.
@@ -402,7 +404,7 @@ Après avoir désinstallé la version précédente, vous devez télécharger et 
    | `-i` | Indique à l’outil d’installer et d’activer la licence. |
    | `-f` | Indique le chemin d’accès au fichier de licence JSON. |
 
-###### Étape 9 : tester le service PDF Generator
+###### Étape 9 : Test du service PDF Generator
 
 Une fois tous les processus terminés, effectuez un test d’action rapide pour confirmer que l’installation est valide :
 
@@ -424,19 +426,19 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 Ces étapes supposent que vous disposiez des privilèges d’administration nécessaires sur Adobe Admin Console et le serveur exécutant AEM Forms.
 
-##### Préparation du package FRL (Adobe Admin Console)
+##### Préparer le package FRL (Adobe Admin Console)
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
-###### Étape 1 : se connecter à Adobe Admin Console
+###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
 1. Connectez-vous à l’aide d’un compte avec des privilèges d’*administration système*.
-1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur est déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
+1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur serait déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
 
-###### Étape 1 : créer le package FRL
+###### Étape 2 : créer le package FRL
 
-1. Dans Admin Console, accédez à l’onglet Package. Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
+1. Dans Admin Console, accédez à l’onglet « Packages ». Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
 1. Sélectionnez la vignette **Licence avec fonctionnalités restreintes** et cliquez sur le bouton **Commencer**. Assurez-vous de sélectionner le type de licence approprié.
 1. Sur l’écran **Créer un package**, configurez les paramètres du package :
 
@@ -462,13 +464,13 @@ Il est recommandé de créer un compte de service dédié pour gérer les packag
 Une fois que vous disposez du compte approprié, procédez comme suit pour accorder des autorisations de téléchargement :
 
 1. Dans Admin Console, accédez à l’onglet **Utilisateurs et utilisatrices**.
-2. Recherchez ou créez un compte d’utilisation pour accorder des autorisations de téléchargement.
-3. Cliquez sur le nom de la personne pour ouvrir son profil.
+2. Recherchez ou créez un compte d’utilisateur pour accorder des autorisations de téléchargement.
+3. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice pour ouvrir son profil.
 4. Cliquez sur l’icône en regard de **Modifier les droits d’administration** correspondant à la personne.
 5. Attribuez le rôle **Administration de déploiement** à la personne. D’autres rôles d’administration peuvent également fonctionner, mais le rôle Administration de déploiement est recommandé. Cliquez sur **Enregistrer**.
 
 
-##### Déployer le package FRL (serveur AEM Forms)
+##### Déployer le package FRL (Serveur Formulaires AEM)
 
 Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
 
@@ -476,7 +478,7 @@ Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droit
 
 Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée. Assurez-vous d’utiliser un compte disposant des privilèges d’administration locale pour accéder au serveur.
 
-###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
+###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
 
 **Important :** sauvegardez tous les paramètres, profils ou configurations Acrobat personnalisés avant de procéder à la désinstallation.
 
@@ -486,15 +488,15 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 4. Sélectionnez **Désinstaller** et suivez les invites pour supprimer l’application. Le cas échéant, redémarrez le serveur.
 5. Vérifiez que toutes les versions Classic du programme sont désinstallées. Utilisez l’[outil Adobe Acrobat Cleaner](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si nécessaire pour en effectuer la suppression complète.
 
-###### Étape 6 : télécharger et installer Adobe Acrobat Pro
+###### Étape 6 : télécharger et installer Adobe Acrobat Pro
 
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
 2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
-4. Suivez ensuite les instructions d’installation fournies dans cette page :
-   * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
+4. Suivez les instructions d’installation fournies sur cette page :
+   * Procédez à l’extraction du fichier .zip téléchargé dans un dossier de votre ordinateur.
    * Accédez au fichier Setup.exe (n’exécutez pas le fichier Setup.exe à partir du fichier .zip).
    * Double-cliquez sur Setup.exe pour démarrer l’installation.
    * Suivez les instructions à l’écran pour terminer l’installation.
@@ -560,7 +562,7 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 2. Gardez la session d’utilisation active après le démarrage du serveur. Ne vous déconnectez pas de l’ordinateur, car cela mettrait fin au processus du serveur. Vous pouvez fermer en toute sécurité la fenêtre Bureau à distance (RDP) sans vous déconnecter ; le serveur continue à fonctionner tant que la session reste active.
 3. Pour une meilleure fiabilité, configurez une tâche de démarrage ou une tâche planifiée pour lancer automatiquement le serveur AEM Forms lorsque la personne se connecte.
 
-###### Étape 10 : tester le service PDF Generator
+###### Étape 10 : test du service PDF Generator
 
 1. Ouvrez l’interface d’administration d’AEM Forms.
 2. Accédez au service PDF Generator.
@@ -580,19 +582,19 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 Ces étapes supposent que vous disposiez des privilèges d’administration nécessaires sur Adobe Admin Console et le serveur exécutant AEM Forms.
 
-##### Préparation du package FRL (Adobe Admin Console)
+##### Préparer le package FRL (Adobe Admin Console)
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
-###### Étape 1 : se connecter à Adobe Admin Console
+###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
 1. Connectez-vous à l’aide d’un compte avec des privilèges d’*administration système*.
-1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur est déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
+1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur serait déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
 
-###### Étape 1 : créer le package FRL
+###### Étape 2 : créer le package FRL
 
-1. Dans Admin Console, accédez à l’onglet Package. Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
+1. Dans Admin Console, accédez à l’onglet « Packages ». Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
 1. Sélectionnez la vignette **Licence avec fonctionnalités restreintes** et cliquez sur le bouton **Commencer**. Assurez-vous de sélectionner le type de licence approprié.
 1. Sur l’écran **Créer un package**, configurez les paramètres du package :
 
@@ -618,13 +620,13 @@ Il est recommandé de créer un compte de service dédié pour gérer les packag
 Une fois que vous disposez du compte approprié, procédez comme suit pour accorder des autorisations de téléchargement :
 
 1. Dans Admin Console, accédez à l’onglet **Utilisateurs et utilisatrices**.
-2. Recherchez ou créez un compte d’utilisation pour accorder des autorisations de téléchargement.
-3. Cliquez sur le nom de la personne pour ouvrir son profil.
+2. Recherchez ou créez un compte d’utilisateur pour accorder des autorisations de téléchargement.
+3. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice pour ouvrir son profil.
 4. Cliquez sur l’icône en regard de **Modifier les droits d’administration** correspondant à la personne.
 5. Attribuez le rôle **Administration de déploiement** à la personne. D’autres rôles d’administration peuvent également fonctionner, mais le rôle Administration de déploiement est recommandé. Cliquez sur **Enregistrer**.
 
 
-##### Déployer le package FRL (serveur AEM Forms)
+##### Déployer le package FRL (Serveur Formulaires AEM)
 
 Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
 
@@ -632,7 +634,7 @@ Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droit
 
 Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée. Assurez-vous d’utiliser un compte disposant des privilèges d’administration locale pour accéder au serveur.
 
-###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
+###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
 
 **Important :** sauvegardez tous les paramètres, profils ou configurations Acrobat personnalisés avant de procéder à la désinstallation.
 
@@ -642,15 +644,15 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 4. Sélectionnez **Désinstaller** et suivez les invites pour supprimer l’application. Le cas échéant, redémarrez le serveur.
 5. Vérifiez que toutes les versions Classic du programme sont désinstallées. Utilisez l’[outil Adobe Acrobat Cleaner](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si nécessaire pour en effectuer la suppression complète.
 
-###### Étape 6 : télécharger et installer Adobe Acrobat Pro
+###### Étape 6 : télécharger et installer Adobe Acrobat Pro
 
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
 2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
-4. Suivez ensuite les instructions d’installation fournies dans cette page :
-   * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
+4. Suivez les instructions d’installation fournies sur cette page :
+   * Procédez à l’extraction du fichier .zip téléchargé dans un dossier de votre ordinateur.
    * Accédez au fichier Setup.exe (n’exécutez pas le fichier Setup.exe à partir du fichier .zip).
    * Double-cliquez sur Setup.exe pour démarrer l’installation.
    * Suivez les instructions à l’écran pour terminer l’installation.
@@ -729,7 +731,7 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 1. Ouvrez Adobe Acrobat Pro DC sur le serveur.
 2. Accédez à l’Aide → À propos d’Adobe Acrobat Pro DC.
 3. Vérifiez que le numéro de version correspond à la version attendue.
-4. Confirmez que le statut de licence s’affiche comme étant activé.
+4. Confirmez que le statut de la licence indique qu’elle est activée.
 
 >[!TAB Licence en volume - Utilisations multiples]
 
@@ -737,19 +739,19 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 Ces étapes supposent que vous disposiez des privilèges d’administration nécessaires sur Adobe Admin Console et le serveur exécutant AEM Forms.
 
-##### Préparation du package FRL (Adobe Admin Console)
+##### Préparer le package FRL (Adobe Admin Console)
 
 Ces étapes doivent être effectuées avec un accès d’*administration système* à Adobe Admin Console.
 
-###### Étape 1 : se connecter à Adobe Admin Console
+###### Étape 1 : Se connecter à Adobe Admin Console
 
 1. Ouvrez un navigateur web et accédez à [Adobe Admin Console](https://adminconsole.adobe.com/).
 1. Connectez-vous à l’aide d’un compte avec des privilèges d’*administration système*.
-1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur est déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
+1. (Facultatif) Si votre organisation a accès à plusieurs organisations IMS, utilisez l’option de sélection d’organisation dans le coin supérieur droit d’Admin Console pour choisir l’organisation appropriée. Dans la plupart des scénarios client, cette valeur serait déjà définie sur la valeur par défaut de votre organisation, car les personnes n’ont généralement accès qu’à leur propre organisation.
 
-###### Étape 1 : créer le package FRL
+###### Étape 2 : créer le package FRL
 
-1. Dans Admin Console, accédez à l’onglet Package. Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
+1. Dans Admin Console, accédez à l’onglet « Packages ». Il s’agit d’un package Adobe Admin Console, et non d’un package AEM.
 1. Sélectionnez la vignette **Licence avec fonctionnalités restreintes** et cliquez sur le bouton **Commencer**. Assurez-vous de sélectionner le type de licence approprié.
 1. Sur l’écran **Créer un package**, configurez les paramètres du package :
 
@@ -775,13 +777,13 @@ Il est recommandé de créer un compte de service dédié pour gérer les packag
 Une fois que vous disposez du compte approprié, procédez comme suit pour accorder des autorisations de téléchargement :
 
 1. Dans Admin Console, accédez à l’onglet **Utilisateurs et utilisatrices**.
-2. Recherchez ou créez un compte d’utilisation pour accorder des autorisations de téléchargement.
-3. Cliquez sur le nom de la personne pour ouvrir son profil.
+2. Recherchez ou créez un compte d’utilisateur pour accorder des autorisations de téléchargement.
+3. Cliquez sur le nom de l’utilisateur ou de l’utilisatrice pour ouvrir son profil.
 4. Cliquez sur l’icône en regard de **Modifier les droits d’administration** correspondant à la personne.
 5. Attribuez le rôle **Administration de déploiement** à la personne. D’autres rôles d’administration peuvent également fonctionner, mais le rôle Administration de déploiement est recommandé. Cliquez sur **Enregistrer**.
 
 
-##### Déployer le package FRL (serveur AEM Forms)
+##### Déployer le package FRL (Serveur Formulaires AEM)
 
 Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droits d’*administration locale* sur la machine.
 
@@ -789,7 +791,7 @@ Les étapes suivantes sont effectuées sur le serveur AEM Forms, avec les droit
 
 Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée. Assurez-vous d’utiliser un compte disposant des privilèges d’administration locale pour accéder au serveur.
 
-###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
+###### Étape 5 : désinstaller la version précédente d’Acrobat (le cas échéant)
 
 **Important :** sauvegardez tous les paramètres, profils ou configurations Acrobat personnalisés avant de procéder à la désinstallation.
 
@@ -799,15 +801,15 @@ Accédez au serveur exécutant AEM Forms à l’aide de la méthode appropriée
 4. Sélectionnez **Désinstaller** et suivez les invites pour supprimer l’application. Le cas échéant, redémarrez le serveur.
 5. Vérifiez que toutes les versions Classic du programme sont désinstallées. Utilisez l’[outil Adobe Acrobat Cleaner](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si nécessaire pour en effectuer la suppression complète.
 
-###### Étape 6 : télécharger et installer Adobe Acrobat Pro
+###### Étape 6 : télécharger et installer Adobe Acrobat Pro
 
 Après avoir désinstallé la version précédente, vous devez télécharger et installer une version compatible d’Adobe Acrobat Pro :
 
 1. Accédez à la page [Téléchargements Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
 2. Accédez à la section **Programme d’installation d’Acrobat Pro**.
 3. Pour une utilisation avec AEM Forms PDF Generator, téléchargez le programme d’installation « Pour Windows (32 bits) », car il s’agit de la version prise en charge avec AEM Forms PDF Generator.
-4. Suivez ensuite les instructions d’installation fournies dans cette page :
-   * Procédez à l’extraction du fichier .zip téléchargé dans un répertoire de votre ordinateur.
+4. Suivez les instructions d’installation fournies sur cette page :
+   * Procédez à l’extraction du fichier .zip téléchargé dans un dossier de votre ordinateur.
    * Accédez au fichier Setup.exe (n’exécutez pas le fichier Setup.exe à partir du fichier .zip).
    * Double-cliquez sur Setup.exe pour démarrer l’installation.
    * Suivez les instructions à l’écran pour terminer l’installation.
@@ -871,9 +873,9 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 1. Démarrez le serveur AEM Forms à partir d’une console de ligne de commande dans une session d’utilisation interactive. (Connectez-vous au serveur et lancez manuellement AEM Forms à partir de la ligne de commande.)
 2. Gardez la session d’utilisation active après le démarrage du serveur. Ne vous déconnectez pas de l’ordinateur, car cela mettrait fin au processus du serveur. Vous pouvez fermer en toute sécurité la fenêtre Bureau à distance (RDP) sans vous déconnecter ; le serveur continue à fonctionner tant que la session reste active.
-3. Pour une meilleure fiabilité, configurez une tâche de démarrage ou une tâche planifiée pour lancer automatiquement le serveur AEM Forms lorsque la personne se connecte.
+3. Pour une meilleure fiabilité, configurez une tâche de démarrage ou une tâche planifiée pour lancer automatiquement le serveur AEM Forms lorsque l’utilisateur ou l’utilisatrice se connecte.
 
-###### Étape 10 : tester le service PDF Generator
+###### Étape 10 : Tester le service PDF Generator
 
 Une fois tous les processus terminés, effectuez un test d’action rapide pour confirmer que l’installation est valide :
 
@@ -891,7 +893,7 @@ Une fois tous les processus terminés, effectuez un test d’action rapide pour 
 
 >[!ENDTABS]
 
-### Désactivation du mode protégé au démarrage dans Acrobat
+### Désactiver le mode protégé au démarrage dans Acrobat
 
 Après avoir activé Feature Restricted Licensing (FRL) et vérifié l’activation d’Acrobat, il est recommandé de désactiver le « Mode protégé au démarrage » dans Adobe Acrobat pour garantir la compatibilité avec AEM Forms PDF Generator.
 
@@ -907,9 +909,9 @@ Procédez comme suit :
 
 >[!NOTE]
 >
->La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisateurs finaux et utilisatrices finales.
+>La désactivation du mode protégé est requise pour les scénarios d’automatisation côté serveur, tels qu’AEM Forms PDF Generator. Ce paramètre ne doit être modifié que sur les environnements de serveur dédiés, et non sur les ordinateurs de bureau des utilisatrices et utilisateurs finaux.
 
-Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/fr/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Pour plus d’informations, voir la documentation d’[Adobe en mode protégé](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -932,7 +934,7 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
+   <td><p>C :\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
   </tr>
   <tr>
    <td><p><strong>Bloc-notes</strong></p> </td>
@@ -952,8 +954,8 @@ Définissez des variables d’environnement pour Java Development Kit 64 bits, 
 >* Toutes les variables d’environnement et les chemins respectifs sont sensibles à la casse.
 >* JAVA_HOME et Acrobat_PATH (Windows uniquement) sont des variables d’environnement obligatoires.
 >* La variable d’environnement OpenOffice_PATH est définie sur le dossier d’installation et non pas sur le chemin d’accès au fichier exécutable.
->* Ne définissez pas de variables d’environnement pour des applications Microsoft® Office telles que Word, PowerPoint, Excel et Project, ni pour des applications AutoCAD. Si ces applications sont installées sur le serveur, le service Generate PDF les démarre automatiquement.
->* Sur les plates-formes UNIX, installez OpenOffice en tant que /root. Si OpenOffice n’est pas installé en tant qu’utilisateur ou utilisatrice root, le service PDF Generator ne parvient pas à convertir les documents OpenOffice en documents PDF. Si vous devez installer et exécuter OpenOffice en tant qu’utilisateur non root, indiquez les droits sudo pour l’utilisateur non-root.
+>* Ne définissez pas de variables d’environnement pour des applications Microsoft® Office telles que Word, PowerPoint, Excel et Project, ni pour AutoCAD. Si ces applications sont installées sur le serveur, le service Generate PDF les démarre automatiquement.
+>* Sur les plateformes UNIX, installez OpenOffice en tant qu’utilisateur ou utilisatrice root (dans /root). Si OpenOffice n’est pas installé en tant qu’utilisateur ou utilisatrice root, le service PDF Generator ne parvient pas à convertir les documents OpenOffice en documents PDF. Si vous devez installer et exécuter OpenOffice en tant qu’utilisateur non root, indiquez les droits sudo pour l’utilisateur non-root.
 >* Si vous utilisez OpenOffice sur une plateforme UNIX, exécutez la commande suivante pour définir la variable de chemin :\
 > `export OpenOffice_PATH=/opt/openoffice.org4`
 >* Sur les plateformes SUSE® Linux® (SLES 15 SP6 ou ultérieures), procédez comme suit pour configurer OpenOffice :
@@ -996,7 +998,7 @@ Pour configurer le fournisseur de socket SSL IBM®, procédez comme suit :
 
 ### (Windows uniquement) Configurer les paramètres de blocage des fichiers pour Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
-Modifiez les paramètres du Centre de gestion de la confidentialité Microsoft® Office pour permettre au service PDF Generator de convertir des fichiers créés avec des versions précédentes de Microsoft® Office.
+Modifiez les paramètres du Centre de confiance Microsoft® Office pour activer le service PDF Generator afin de convertir des fichiers créés avec des versions précédentes de Microsoft® Office.
 
 1. Ouvrez une application Microsoft® Office. Par exemple, Microsoft® Word. Accédez à **[!UICONTROL Fichier]** >**[!UICONTROL Options]**. La boîte de dialogue Options s’affiche.
 
@@ -1006,9 +1008,9 @@ Modifiez les paramètres du Centre de gestion de la confidentialité Microsoft®
 
 ### (Windows uniquement) Accorder le droit Remplacer un jeton de niveau processus {#grant-the-replace-a-process-level-token-privilege}
 
-Le compte utilisateur utilisé pour démarrer le serveur d’applications doit avoir le droit de **Remplacer un jeton de niveau processus**. Le compte système local possède le droit de **Remplacer un jeton de niveau processus** par défaut. Pour les serveurs s’exécutant avec un utilisateur ou une utilisatrice du groupe d’administration locale, le droit doit être accordé explicitement. Effectuez les étapes suivantes pour accorder le droit :
+Le compte utilisateur utilisé pour démarrer le serveur d’applications doit avoir le droit de **Remplacer un jeton de niveau processus**. Le compte système local possède le droit de **Remplacer un jeton de niveau processus** par défaut. Pour les serveurs s’exécutant avec un utilisateur ou une utilisatrice du groupe d’administration locale, le droit doit être accordé explicitement. Effectuez les étapes suivantes pour accorder le privilège :
 
-1. Ouvrez l’éditeur de politique de groupe de Microsoft® Windows. Pour ouvrir l’éditeur de politique de groupe, cliquez sur **[!UICONTROL Démarrer]**, saisissez **gpedit.msc** dans la zone Lancer la recherche, puis cliquez sur **[!UICONTROL Éditeur de politique de groupe]**.
+1. Ouvrez l’Éditeur de politique de groupe de Microsoft® Windows. Pour ouvrir l’éditeur de politique de groupe, cliquez sur **[!UICONTROL Démarrer]**, saisissez **gpedit.msc** dans la zone Lancer la recherche, puis cliquez sur **[!UICONTROL Éditeur de politique de groupe]**.
 1. Accédez à **[!UICONTROL Politique d’ordinateur local]** > **[!UICONTROL Configuration d’ordinateur]** > **[!UICONTROL Paramètres Windows]** > **[!UICONTROL Paramètres de sécurité]** > **[!UICONTROL Politiques locales]** > **[!UICONTROL Attribution des droits utilisateur]** et modifiez la politique **[!UICONTROL Remplacer un jeton de niveau processus]** pour y inclure le groupe Administrateurs et administratrices.
 1. Ajoutez l’utilisateur ou l’utilisatrice à l’entrée Remplacer un jeton de niveau processus.
 
@@ -1021,7 +1023,7 @@ Le compte utilisateur utilisé pour démarrer le serveur d’applications doit a
 Vous pouvez permettre à un utilisateur non-administrateur d’utiliser le service PDF Generator. Normalement, seuls les utilisateurs disposant de droits d’administrateur peuvent utiliser le service :
 
 1. Créez une variable d’environnement PDFG_NON_ADMIN_ENABLED.
-1. Définissez la valeur de la variable d’environnement sur TRUE.
+1. Définissez la valeur de la variable d’environnement sur VRAI.
 1. Redémarrez l’instance AEM Forms.
 
 >[!NOTE]
@@ -1076,15 +1078,15 @@ Copiez la police Unicode vers l’un des répertoires suivants, en fonction de v
 >
 >* Sous Red Hat® Enterprise Linux® 6.x et versions ultérieures, les polices Courier ne sont pas disponibles. Pour installer les polices Courier, téléchargez l’archive font-ibm-type1-1.0.3.zip. Extrayez le fichier d&#39;archives sur /usr/share/fonts. Créez un lien symbolique de /usr/share/X11/fonts vers /usr/share/fonts.
 >* Supprimez tous les fichiers de mémoire cache des polices .lst dans les répertoires Html2PdfSvc/bin et /usr/share/fonts.
->* Vérifiez que les répertoires /usr/lib/X11/fonts et /usr/share/fonts existent. Si les répertoires n’existent pas, utilisez la commande ln pour créer un lien symbolique de /usr/share/X11/fonts vers /usr/lib/X11/fonts et un autre lien symbolique à partir de /usr/share/fonts vers /usr/share/X11/fonts. Vérifiez également que les polices Courier sont disponibles à l’emplacement /usr/lib/X11/fonts
+>* Vérifiez que les répertoires /usr/lib/X11/fonts et /usr/share/fonts existent. Si les répertoires n’existent pas, utilisez la commande ln pour créer un lien symbolique de /usr/share/X11/fonts vers /usr/lib/X11/fonts et un autre lien symbolique à partir de /usr/share/fonts vers /usr/share/X11/fonts. Vérifiez également que les polices Courier sont disponibles à l’emplacement /usr/lib/X11/fonts.
 >* Vérifiez que toutes les polices (Unicode et non Unicode) sont disponibles dans le répertoire /usr/share/fonts ou /usr/share/X11/fonts.
 >* Lorsque vous exécutez le service PDF Generator en tant qu’utilisateur non root, donnez à l’utilisateur non root un accès en lecture et en écriture à tous les répertoires de polices.
 >* À chaque installation de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
 >
 
-## Installation du package complémentaire AEM Forms {#install-aem-forms-add-on-package}
+## Installez le module complémentaire AEM Forms {#install-aem-forms-add-on-package}
 
-Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des services de document AEM Forms et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit :
+Le module complémentaire AEM Forms est une application déployée sur AEM. Le package contient les services de documents AEM Forms et d’autres fonctionnalités AEM Forms. Pour installer le package, procédez comme suit :
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Sélectionnez **[!UICONTROL Adobe Experience Manager]** situé dans le menu d’en-tête.
@@ -1103,7 +1105,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
 ### Configuration de Boot Delegation pour les bibliothèques RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Désactivez l’instance AEM. Accédez au dossier [Répertoire d’installation d’AEM]\crx-quickstart\conf\. Ouvrez le fichier sling.properties pour le modifier.
+1. Arrêtez l’instance AEM. Accédez au dossier [Répertoire d’installation d’AEM]\crx-quickstart\conf\. Ouvrez le fichier sling.properties pour le modifier.
 
    Si vous utilisez `[AEM installation directory]\crx-quickstart\bin\start.bat` pour démarrer une instance AEM, modifiez le fichier sling.properties situé à l’emplacement suivant :`[AEM_root]\crx-quickstart\`.
 
@@ -1128,7 +1130,7 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    >[!NOTE]
    >
-   >Votre droit d’utilisation des polices fournies par des sociétés autres qu’Adobe est régi par les contrats de licence accompagnant ces polices. Il n’est pas couvert par votre licence d’utilisation du logiciel Adobe. Adobe vous recommande de vérifier et de vous assurer que vous êtes en conformité avec tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec des logiciels Adobe, en particulier en ce qui concerne l’utilisation de polices dans un environnement de serveur.
+   >Vos droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vérifier et de vous assurer que vous agissez en conformité avec tous les contrats de licence non Adobe applicables avant d’utiliser des polices non Adobe avec des logiciels Adobe, notamment en ce qui concerne l’utilisation de polices dans un environnement de serveur.
    >Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
    >
 
@@ -1138,7 +1140,7 @@ Un compte d’utilisateur local est requis pour exécuter le service PDF Generat
 
 1. Ouvrez la page [Configuration de PDF Generator dans AEM Forms.](http://localhost:4502/libs/fd/pdfg/config/ui.html)
 
-1. Dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**, saisissez les informations d’identification d’un compte d’utilisateur local, puis cliquez sur **[!UICONTROL Envoyer]**. Si Microsoft® Windows vous y invite, autorisez l’accès à l’utilisateur ou à l’utilisatrice. Une fois ajouté, l’utilisateur configuré est affiché sous la section **[!UICONTROL Vos comptes d’utilisateurs]** dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**.
+1. Dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**, saisissez les informations d’identification d’un compte d’utilisateur local, puis cliquez sur **[!UICONTROL Envoyer]**. Si Microsoft® Windows vous y invite, autorisez l’accès à l’utilisateur ou l’utilisatrice. Une fois ajouté, l’utilisateur configuré est affiché sous la section **[!UICONTROL Vos comptes d’utilisateurs]** dans l’onglet **[!UICONTROL Comptes d’utilisateurs]**.
 
 ### (Windows uniquement) Activer les conversions PDF Generator multithread
 
@@ -1203,14 +1205,14 @@ Pour activer les conversions multithread pour Word et Excel, procédez comme sui
 Sous Microsoft® Windows, le service PDF Generator utilise Adobe Acrobat pour convertir les formats de fichiers pris en charge en document PDF. Pour configurer Adobe Acrobat pour le service PDF Generator, procédez comme suit :
 
 1. Ouvrez Acrobat et sélectionnez **[!UICONTROL Modifier]** > **[!UICONTROL Préférences]** > **[!UICONTROL Mises à jour]**. Dans Rechercher les mises à jour maintenant, décochez **[!UICONTROL Installer automatiquement les mises à jour]** et cliquez sur **[!UICONTROL OK]**. Fermez Acrobat.
-1. Cliquez deux fois sur un document PDF sur votre système. Lors du premier démarrage d’Acrobat, les boîtes de dialogue de connexion, l’écran de bienvenue et le CLUF s’affichent. Fermez ces boîtes de dialogue pour tous les utilisateurs et utilisatrices configurés pour utiliser PDF Generator.
-1. Exécutez le fichier de commandes de l’utilitaire PDF Generator pour configurer Acrobat pour le service PDF Generator :
+1. Double-cliquez sur un document PDF sur votre système. Lors du premier démarrage d’Acrobat, les boîtes de dialogue de connexion, l’écran de bienvenue et le CLUF s’affichent. Fermez ces boîtes de dialogue pour tous les utilisateurs et utilisatrices configurés pour utiliser PDF Generator.
+1. Exécutez le fichier de lot de l’utilitaire PDF Generator pour configurer Acrobat pour le service PDF Generator :
 
    1. Ouvrez [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) et téléchargez le fichier `adobe-aemfd-pdfg-common-pkg-[version].zip` depuis le gestionnaire de modules.
    1. Décompressez le fichier .zip téléchargé. Ouvrez l’invite de commande avec des droits d’administration.
    1. Accédez à `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`.
    1. Décompressez le fichier `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Accédez au répertoire `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Exécutez le fichier de commandes suivant :
+   1. Accédez au répertoire `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Exécutez le fichier de lot suivant :
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -1231,7 +1233,7 @@ L’itinéraire principal par défaut pour les conversions HTML en PDF est WebKi
 
 ### Initialisez Global Trust Store {#intialize-global-trust-store}
 
-Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour valider des signatures numériques et l’authentification de certificats. Vous pouvez en importer et en exporter autant que vous le souhaitez. Une fois qu’un certificat a été importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Pour initialiser un Trust Store, procédez comme suit :
+Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour valider des signatures numériques et l’authentification de certificats. Vous pouvez en importer et en exporter autant que vous le souhaitez. Une fois qu’un certificat a été importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Pour initialiser un trust store, procédez comme suit :
 
 1. Connectez-vous à une instance AEM Forms en tant qu’administrateur.
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Trust Store]**.
@@ -1241,13 +1243,13 @@ Trust Store Management vous permet d’importer, de modifier et de supprimer d
 
 Le service DocAssurance peut appliquer des droits d’utilisation aux documents PDF. Pour appliquer des droits d’utilisation aux documents PDF, configurez les certificats :
 
-Avant de configurer des certificats, assurez -vous que vous disposez des éléments suivants :
+Avant de configurer les certificats, assurez-vous que vous disposez des éléments suivants :
 
 * Fichier de certificat (.pfx).
 
 * Mot de passe de la clé privée, fourni avec le certificat.
 
-* Alias de clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
+* Alias de la clé privée. Vous pouvez exécuter la commande Java keytool pour afficher l’alias de la clé privée :
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Mot de passe du fichier KeyStore. Si vous utilisez le certificat Reader Extensions d’Adobe, le mot de passe du fichier KeyStore est toujours identique au mot de passe de la clé privée.
@@ -1271,7 +1273,7 @@ Pour configurer les certificats, procédez comme suit :
 
 Pour utiliser le chiffrement AES 256 pour les fichiers PDF, récupérez et installez les fichiers Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Remplacez les fichiers local_policy.jar et US_export_policy.jar dans le dossier jre/lib/security. Par exemple, si vous utilisez Sun JDK, copiez les fichiers téléchargés dans le dossier `[JAVA_HOME]/jre/lib/security`.
 
-Le service Assembler dépend des services Reader Extensions, Signatures, Forms et Output. Pour vérifier que les services requis sont opérationnels, procédez comme suit :
+Le service Assembler dépend des services Reader Extensions, Signature, Forms et Output. Pour vérifier que les services requis sont opérationnels, procédez comme suit :
 
 1. Connectez-vous à lʼadresse `https://'[server]:[port]'/system/console/bundles` en tant qu’administrateur.
 1. Recherchez les services suivants et vérifiez qu’ils sont en cours d’exécution :
@@ -1303,7 +1305,7 @@ Le service Assembler dépend des services Reader Extensions, Signatures, Forms e
 
 ### (Windows uniquement) Configurer l’entrée de registre pour Microsoft® Project {#configure-registry-entry-for-microsoft-project}
 
-Après avoir installé le module complémentaire AEM Forms et Microsoft® Project sur votre ordinateur, enregistrez une entrée pour Microsoft® Project dans l’emplacement 64 bits. Cela facilite l’exécution des tests de conversion de Project en PDFG. Vous trouverez ci-dessous les étapes décrivant le processus d’entrée du registre :
+Après avoir installé le module complémentaire AEM Forms et Microsoft® Project sur votre ordinateur, enregistrez une entrée pour Microsoft® Project dans l’emplacement 64 bits. Cela facilite l’exécution des tests de conversion de projet en PDFG. Vous trouverez ci-dessous les étapes décrivant le processus d’entrée du registre :
 
 1. Ouvrez l’éditeur du registre Microsoft® Windows (regedit). Pour ouvrir l’éditeur du registre, accédez à Démarrer > Exécuter, saisissez regedit, puis cliquez sur OK.
 1. Accédez à `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, puis créez un registre de **valeur binaire** et renommez-le **Project**.
@@ -1329,17 +1331,17 @@ Après avoir installé le module complémentaire AEM Forms et Microsoft® Proje
 
 1. Installez manuellement les bibliothèques manquantes.
 
-## Outil System Readiness (SRT) {#SRT}
+## System Readiness Tool (SRT) {#SRT}
 
-L’[outil System Readiness](#srt-configuration) vérifie si l’ordinateur est correctement configuré pour exécuter les conversions de PDF Generator. L’outil génère un rapport à l’emplacement spécifié. Pour exécuter l’outil :
+L’[outil System Readiness](#srt-configuration) vérifie si l’ordinateur est correctement configuré pour exécuter les conversions de PDF Generator. L’outil génère un rapport au chemin d’accès spécifié. Pour exécuter l’outil :
 
 1. Ouvrez l’invite de commande. Accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
-1. Exécutez la commande suivante à partir de l’invite de commande :
+1. Exécutez la commande suivante à partir de l’invite de commandes :
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   La commande génère un rapport et crée également le fichier srt_config.yaml. Vous pouvez l’utiliser pour configurer les options de l’outil SRT. Il est facultatif de configurer les options de l’outil SRT.
+   La commande génère un rapport et crée également le fichier srt_config.yaml. Vous pouvez l’utiliser pour configurer les options de l’outil SRT. La configuration des options de l’outil SRT est facultative.
 
    >[!NOTE]
    >
@@ -1378,7 +1380,7 @@ Vous pouvez utiliser le fichier srt_config.yaml pour configurer différents para
 
 * **Paramètres régionaux :** ce paramètre est obligatoire. Il prend en charge l’anglais (en), l’allemand (de), le français (fr) et le japonais (ja). La valeur par défaut est en. Cela n’a aucun impact sur les services PDF Generator s’exécutant sur AEM Forms sur OSGi.
 * **aemTempDir :** ce paramètre est facultatif. Il spécifie l’emplacement de stockage temporaire d’Adobe Experience Manager.
-* **Utilisateurs :** ce paramètre est facultatif. Vous pouvez spécifier un utilisateur ou une utilisatrice pour vérifier s’il ou elle dispose des autorisations requises et d’un accès en lecture/écriture sur les répertoires obligatoires pour exécuter PDF Generator. Si aucun(e) utilisateur ou utilisatrice n’est spécifié(e), les vérifications spécifiques à l’utilisateur ou à l’utilisatrice sont ignorées et affichées comme ayant échoué dans le rapport.
+* **Utilisateurs :** ce paramètre est facultatif. Vous pouvez spécifier un utilisateur ou une utilisatrice pour vérifier s’il ou elle dispose des autorisations requises et d’un accès en lecture/écriture sur les répertoires obligatoires pour exécuter PDF Generator. Si aucun utilisateur ou utilisatrice n’est spécifié, les vérifications spécifiques à l’utilisateur ou à l’utilisatrice sont ignorées et indiquées comme ayant échoué dans le rapport.
 * **outputDir :** indiquez l’emplacement d’enregistrement du rapport SRT. L’emplacement par défaut est le répertoire de travail actuel de l’outil SRT.
 
 ## Résolution des problèmes
@@ -1401,17 +1403,17 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 **Microsoft® Windows**
 
-* Assurez-vous que la [version 32 bits prise en charge &#x200B;](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la [version 32 bits prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installée et que les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur ou qu’une utilisatrice de PDF Generator est ajouté(e) à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur ou l’utilisatrice de PDF Generator est membre du groupe d’administrateurs et que le privilège [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur ou l’utilisatrice.
 * Assurez-vous que l’utilisateur ou l’utilisatrice est configuré(e) dans l’interface utilisateur de PDF Generator et qu’il ou elle effectue les actions suivantes :
-   1. Se connecter à Microsoft® Windows en tant qu’utilisateur ou utilisatrice de PDF Generator.
-   1. Ouvrir les applications Microsoft® Office ou OpenOffice et annuler toutes les boîtes de dialogue.
-   1. Définir AdobePDF comme imprimante par défaut.
-   1. Définir Acrobat comme programme par défaut pour les fichiers PDF.
-   1. Effectuer une conversion manuelle à l’aide des options Fichier > Imprimer et ruban Acrobat dans les applications Microsoft Office et annuler toutes les boîtes de dialogue.
-   1. Arrêter tous les processus liés à la conversion tels que winword.exe, powerpoint.exe et excel.exe.
-   1. Redémarrer le serveur AEM Forms.
+  1. Se connecter à Microsoft® Windows en tant qu’utilisateur ou utilisatrice de PDF Generator.
+  1. Ouvrir les applications Microsoft® Office ou OpenOffice et annuler toutes les boîtes de dialogue.
+  1. Définir AdobePDF comme imprimante par défaut.
+  1. Définir Acrobat comme programme par défaut pour les fichiers PDF.
+  1. Effectuer une conversion manuelle à l’aide des options Fichier > Imprimer et ruban Acrobat dans les applications Microsoft Office et annuler toutes les boîtes de dialogue.
+  1. Arrêter tous les processus liés à la conversion tels que winword.exe, powerpoint.exe et excel.exe.
+  1. Redémarrer le serveur AEM Forms.
 
 **Linux®**
 
@@ -1419,6 +1421,10 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 
 * Créez une variable d’environnement `OpenOffice_PATH` et définissez-la pour qu’elle pointe vers l’installation OpenOffice définie dans la [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence des appareils).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que les [bibliothèques 32 bits](#extrarequirements) requises pour l’installation d’OpenOffice sont disponibles.
+
+* Sous Red Hat® Enterprise Linux® 9, la version 32 bits d’OpenOffice nécessite `libcrypt.so.1`, qui n’est pas installé par défaut. S’il est manquant, OpenOffice ne démarre pas avec le `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` d’erreur et les conversions OpenOffice en PDF échouent. Installez le package `libxcrypt-compat` (32 bits) pour fournir la bibliothèque :
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1451,29 +1457,29 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que l’[outil Sy
 * Assurez-vous que les dernières versions des bibliothèques libssl, libcrypto et lib curl 32 bits sont installées sur le système. Créez également des liens symboliques `/usr/lib/libcurl.so` (ou libcurl.a pour AIX®), `/usr/lib/libcrypto.so` (ou libcrypto.a pour AIX®) et `/usr/lib/libssl.so` (ou libssl.a pour AIX®) pointant vers les dernières versions (32 bits) des bibliothèques respectives.
 
 * Pour configurer le fournisseur de socket SSL IBM®, procédez comme suit :
-   1. Copiez le fichier java.security de `<WAS_Installed_JAVA>\jre\lib\security` à n’importe quel emplacement de votre serveur AEM Forms. L’emplacement par défaut est Default Location = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+  1. Copiez le fichier java.security de `<WAS_Installed_JAVA>\jre\lib\security` à n’importe quel emplacement de votre serveur AEM Forms. L’emplacement par défaut est Default Location = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Modifiez le fichier java.security à l’emplacement copié et modifiez les fabriques de socket SSL par défaut avec les usines JSSE2 (utilisez les fabriques JSSE2 au lieu de WebSphere®).
+  1. Modifiez le fichier java.security à l’emplacement copié et modifiez les fabriques de socket SSL par défaut avec les usines JSSE2 (utilisez les fabriques JSSE2 au lieu de WebSphere®).
 
-      Modifiez les fabriques de socket JSSE par défaut suivantes :
+     Modifiez les fabriques de socket JSSE par défaut suivantes :
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      par
+     par
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 
@@ -1568,8 +1574,8 @@ Pour résoudre le problème, [créez une clé de registre spécifique à une fon
 
 ## Étapes suivantes {#next-steps}
 
-Vous disposez d’un environnement de documents de services AEM Forms fonctionnel. Vous pouvez utiliser les services de document via :
+Vous disposez d’un environnement de services de documents AEM Forms fonctionnel. Vous pouvez utiliser les services de document via :
 
-* [Processus basés sur l’utilisation de Forms on OSGi](/help/forms/using/aem-forms-workflow.md)
+* [Workflows centrés sur les formulaires sur OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Dossiers de contrôle](/help/forms/using/watched-folder-in-aem-forms.md)
 * [API de services de document](/help/forms/using/aem-document-services-programmatically.md)
