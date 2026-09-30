@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 95%
-
+source-wordcount: '5032'
+ht-degree: 94%
 ---
-
 # Créer un site web complet (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -95,7 +93,7 @@ Exemple de fichier static.css et d’images
 
 [Obtenir le fichier](assets/mywebsite.zip)
 
-1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Sur la page d’accueil d’AEM, cliquez sur **Outils**. ([](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -103,7 +101,7 @@ Exemple de fichier static.css et d’images
 
 1. Si l’élément mywebsite n’apparaît pas dans le tableau, actualisez l’arborescence ou le tableau.
 
-1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md) accédez à l’URL à l’adresse https://localhost:4502 puis copiez l’exemple de fichier `static.css` et `images` dossier depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
+1. [À l’aide de WebDAV](/help/sites-administering/webdav-access.md) accédez à l’URL https://localhost:4502, puis copiez l’exemple de fichier `static.css` et `images` dossier depuis le fichier mywebsite.zip téléchargé dans le dossier `/etc/designs/mywebsite`.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -140,7 +138,7 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   La valeur de la propriété de chemin autorisée est une *expression régulière.* Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin du dossier **/content** et à toutes ses sous-pages.
+   La valeur de la propriété de chemin autorisée est une *expression régulière*. Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin du dossier **/content** et à toutes ses sous-pages.
 
    Lorsqu’un auteur crée une page sous /content, le modèle **contentpage** apparaît dans la liste des modèles pouvant être utilisés.
 
@@ -266,7 +264,7 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
+1. Dans un nouvel onglet ou une nouvelle fenêtre de navigateur web, ouvrez [](https://localhost:4502/content/mywebsite/en/products.html) pour afficher la page Produits :
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -523,9 +521,9 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 
 1. Copiez le code suivant dans `navimage.png.java.`Le code étend la classe AbstractImageServlet :
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crée un objet ImageContext qui stocke les propriétés de la ressource active.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crée un objet ImageContext qui stocke les propriétés de la ressource active.
    * La page parente de la ressource est extraite de l’objet ImageContext. On obtient ensuite le titre et le sous-titre de la page.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) sert à générer l’image à partir du fichier navimage_bg.jpg de la conception du site, du titre de la page et du sous-titre de la page.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) sert à générer l’image à partir du fichier navimage_bg.jpg de la conception du site, du titre de la page et du sous-titre de la page.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -716,8 +714,8 @@ Pour créer le composant listchildren, procédez comme suit :
 1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Suivant :
 
    * Libellé : listchildren.
-   * Titre : My Listchildren Component.
-   * Description : This is My Listchildren Component.
+   * Titre : Mon composant Listchildren
+   * Description : Il s’agit de mon composant Listchildren
 
 1. Continuez à cliquer sur Suivant jusqu’à ce que le panneau Enfants autorisés s’affiche, puis cliquez sur OK.
 
@@ -1214,7 +1212,7 @@ Dans cette section, ajoutez l’icône qui apparaîtra à côté du composant Im
 
 Dans cette section, vous allez afficher la page **Produits** et ajouter votre composant Image au système de paragraphes.
 
-1. Dans votre navigateur, rechargez la page **Products**. 
+1. Dans votre navigateur, rechargez la page **Products**.
 1. Dans le sidekick, cliquez sur l’icône du **mode de conception**.
 1. Cliquez sur le bouton Modifier pour modifier la boîte de dialogue de conception de paragraphe.
 1. Dans la boîte de dialogue, vous trouverez une liste de **Composants autorisés**. Accédez à **MyWebsite**, sélectionnez **Mon composant Image** et cliquez sur **OK.**
@@ -1289,7 +1287,7 @@ Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter
 1. Copiez les nœuds suivants et collez-les dans le nœud apps/mywebsite/components/search :
 
    * `/libs/foundation/components/search/dialog`
-   * &grave;&grave; `/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

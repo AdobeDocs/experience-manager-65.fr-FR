@@ -10,13 +10,11 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5464'
-ht-degree: 98%
-
+source-wordcount: '5471'
+ht-degree: 96%
 ---
-
 # Responsive Design pour les pages web{#responsive-design-for-web-pages}
 
 {{ue-over-mobile}}
@@ -472,7 +470,7 @@ Les valeurs numériques sont respectivement 0,4, 0,82 et 1,0.
 
 **Modification des largeurs prises en charge par défaut**
 
-Utilisez la console web ([&#128279;](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
+Utilisez la console web ([](http://localhost:4502/system/console/configMgr)) ou un nœud sling:OsgiConfig pour configurer les largeurs prises en charge du servlet Adaptive Image Component Servlet d’Adobe CQ.
 
 Pour plus d’informations sur la configuration des services AEM, reportez-vous à la rubrique [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -506,7 +504,7 @@ Pour plus d’informations sur la configuration des services AEM, reportez-vous 
 
 #### Détails de mise en œuvre {#implementation-details}
 
-La classe `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` étend la classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Le code source AdaptiveImageComponentServlet se trouve dans le dossier `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
+La classe `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` étend la classe [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Le code source AdaptiveImageComponentServlet se trouve dans le dossier `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
 
 La classe utilise les annotations Felix SCR pour configurer le type de ressource et l’extension de fichier auxquels le servlet est associé, ainsi que le nom du premier sélecteur.
 
@@ -539,11 +537,11 @@ Le servlet utilise l’annotation Property SCR pour définir la qualité et les
             description = "List of widths this component is permitted to generate.")
 ```
 
-La classe `AbstractImageServlet` fournit la méthode `doGet` qui traite la requête HTTP. Cette méthode détermine la ressource associée à la requête, récupère les propriétés de la ressource à partir du référentiel et les renvoie dans un objet [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
+La classe `AbstractImageServlet` fournit la méthode `doGet` qui traite la requête HTTP. Cette méthode détermine la ressource associée à la requête, récupère les propriétés de la ressource à partir du référentiel et les renvoie dans un objet [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
 >[!NOTE]
 >
->Remarque : la classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fournit la `getFileReference method`. Celle-ci récupère la valeur de la propriété `fileReference` de la ressource.
+>Remarque : la classe [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fournit la `getFileReference method`. Celle-ci récupère la valeur de la propriété `fileReference` de la ressource.
 
 La classe `AdaptiveImageComponentServlet` remplace la méthode `createLayer`. La méthode récupère le chemin d’accès de la ressource d’image et la largeur d’image demandée auprès de l’objet `ImageContext`. Elle appelle ensuite les méthodes de la classe `info.geometrixx.commons.impl.AdaptiveImageHelper`, qui effectue la mise à l’échelle proprement dite de l’image.
 
@@ -611,7 +609,7 @@ Lorsque vous créez une page, utilisez le **sidekick** pour spécifier l’image
 
 #### Détails de mise en œuvre {#implementation-details-1}
 
-La classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet étend la classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Si le package cq-geometrixx-commons-pkg est installé, le code source ImageReferenceModificationServlet est situé dans le dossier `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
+La classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet étend la classe [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Si le package cq-geometrixx-commons-pkg est installé, le code source ImageReferenceModificationServlet est situé dans le dossier `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
 
 La classe utilise les annotations Felix SCR pour configurer le type de ressource et l’extension de fichier auxquels le servlet est associé, ainsi que le nom du premier sélecteur.
 
@@ -651,12 +649,12 @@ Le servlet utilise l’annotation Property SCR pour définir la qualité et les
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-La classe `AbstractImageServlet` fournit la méthode `doGet` qui traite la requête HTTP. Cette méthode détermine la ressource associée à l’appel, récupère les propriétés de la ressource à partir du référentiel et les enregistre dans un objet [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
+La classe `AbstractImageServlet` fournit la méthode `doGet` qui traite la requête HTTP. Cette méthode détermine la ressource associée à l’appel, récupère les propriétés de la ressource à partir du référentiel et les enregistre dans un objet [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
-La classe `ImageReferenceModificationServlet` remplace la méthode `createLayer` et implémente la logique qui détermine la ressource d’images dont le rendu doit être effectué. La méthode récupère un nœud enfant du nœud `jcr:content` de la page, nommé `image`. Un objet [Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) est créé à partir de ce nœud `image` et la méthode `getFileReference` renvoie le chemin d’accès au fichier image à partir de la propriété `fileReference` du nœud image.
+La classe `ImageReferenceModificationServlet` remplace la méthode `createLayer` et implémente la logique qui détermine la ressource d’images dont le rendu doit être effectué. La méthode récupère un nœud enfant du nœud `jcr:content` de la page, nommé `image`. Un objet [Image](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) est créé à partir de ce nœud `image` et la méthode `getFileReference` renvoie le chemin d’accès au fichier image à partir de la propriété `fileReference` du nœud image.
 
 >[!NOTE]
->Remarque : la classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fournit la méthode getFileReference.
+>Remarque : la classe [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fournit la méthode getFileReference.
 >
 
 ## Développement d’une grille fluide {#developing-a-fluid-grid}

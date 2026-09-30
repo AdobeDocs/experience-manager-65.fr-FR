@@ -1,23 +1,25 @@
 ---
 title: Développer des composants AEM
+
 description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3593'
-ht-degree: 99%
-
+source-wordcount: '3605'
+ht-degree: 93%
 ---
-
 # Développer des composants AEM{#developing-aem-components}
 
 Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
@@ -94,7 +96,7 @@ Le mécanisme permettant de séparer la logique de l’aspect aide à définir c
 
 ### Utilisation de Java {#using-java}
 
-[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+[L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 
 ### Utiliser JavaScript {#using-javascript}
 
@@ -116,13 +118,13 @@ La [configuration du comportement de modification d’un composant](/help/sites-
 
 ## Configurer le comportement de prévisualisation {#configuring-the-preview-behavior}
 
-Le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) est défini lors du passage en mode **Aperçu** même lorsque la page n’est pas rafraîchie.
+Le cookie [Mode Gestion de contenu Web](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) est défini lors du passage en mode **Aperçu** même lorsque la page n’est pas rafraîchie.
 
 Pour les composants dont le rendu est sensible au Mode Gestion de contenu Web, ils doivent être définis de manière à s’actualiser eux-mêmes, puis s’appuyer sur la valeur du cookie.
 
 >[!NOTE]
 >
->Dans l’IU tactile, seules les valeurs `EDIT` et `PREVIEW` sont utilisées pour le cookie [Mode Gestion de contenu Web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>Dans l’IU tactile, seules les valeurs `EDIT` et `PREVIEW` sont utilisées pour le cookie [Mode Gestion de contenu Web](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Créer et configurer une boîte de dialogue {#creating-and-configuring-a-dialog}
 
@@ -130,9 +132,9 @@ Les boîtes de dialogue permettent à l’auteur d’interagir avec le composant
 
 ### IU Coral et IU Granite {#coral-ui-and-granite-ui}
 
-[Coral UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) et [Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) définissent l’aspect moderne d’AEM.
+[Coral UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html) et [Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) définissent l’aspect moderne d’AEM.
 
-[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
+[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
 
 Pour plus d’informations, consultez :
 
@@ -140,13 +142,13 @@ Pour plus d’informations, consultez :
 
   * Fournit une interface utilisateur uniforme dans toutes les solutions cloud.
   * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-  * [Guide de l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * [Guide de l’IU Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html)
 
 * IU Granite
 
   * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue.
   * [Concepts de l’IU tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-  * [Documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * [Documentation sur l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -209,13 +211,13 @@ Pour créer un widget à utiliser dans une boîte de dialogue de composant pour 
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’IU Granite, consultez la [documentation sur l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Pour plus d’informations sur l’IU Granite, consultez la [documentation sur l’IU Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Plus précisément, l’IU Granite offre divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue (ou, de manière plus générale, dans des [formulaires](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+Plus précisément, l’IU Granite offre divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue (ou, de manière plus générale, dans des [formulaires](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -267,7 +269,7 @@ Pour injecter une logique dans votre champ, vous devez :
 1. Faites en sorte que votre champ soit marqué d’une classe CSS donnée (le *hook*).
 1. Définissez, dans votre bibliothèque client, un listener JS lié à ce nom de classe CSS (cela garantit que votre logique personnalisée ne concerne que votre champ et n’affecte pas d’autres champs du même type).
 
-Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Cette opération est très similaire au processus que vous deviez effectuer avec ExtJS dans le passé : recherchez la page de documentation d’un widget donné, puis vérifiez les détails de son API d’événement.
+Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Cette opération est très similaire au processus que vous deviez effectuer avec ExtJS dans le passé : recherchez la page de documentation d’un widget donné, puis vérifiez les détails de son API d’événement.
 
 Pour consulter un exemple, reportez-vous à :
 
@@ -306,7 +308,7 @@ Pour consulter un exemple, reportez-vous à :
 
 #### Validation de champ (UI Granite) {#field-validation-granite-ui}
 
-La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Consultez la `foundation-valdiation`documentation de Granite pour plus de détails.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+La validation du champ dans l’IU Granite et les composants de l’IU Granite (équivalent aux widgets) est effectuée à l’aide de l’API `foundation-validation`. [Consultez la `foundation-valdiation`documentation de Granite pour plus de détails.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Pour consulter des exemples, voir :
 
@@ -320,7 +322,7 @@ Pour consulter des exemples, voir :
 
 La boîte de dialogue Conception est utilisée lorsqu’un composant possède des détails de conception modifiables en [mode Conception](/help/sites-authoring/default-components-designmode.md).
 
-La définition est très similaire à celle d’une boîte de dialogue[&#x200B; servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
+La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
 * Nom du nœud : `cq:design_dialog`
 * Type : `nt:unstructured`
@@ -364,7 +366,7 @@ Pour ce faire, procédez comme suit :
 
 ## Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[&#x200B; instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
+AEM offre la possibilité de configurer un système de paragraphes sur votre page afin qu’une[ instance de votre nouveau composant soit automatiquement créée lorsqu’un utilisateur ou une utilisatrice fait glisser une ressource (appropriée) sur une instance de cette page](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (au lieu d’avoir toujours à faire glisser un composant vide sur la page).
 
 Ce comportement, et la relation ressource-à-composant requise, peuvent être configurés :
 
@@ -464,7 +466,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
   * Les [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) sont fournis pour vous aider à étendre les composants existants.
   * Le [mappage d’ExtJS aux composants de l’IU Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fournit une présentation pratique des xtypes ExtJS et des types de nœud avec les types de ressources équivalents dans l’IU Granite.
   * Personnalisation des champs ; pour plus d’informations, consultez la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
-  * Migration des types vers la [Validation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Migration des types vers la [Validation de l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
   * Utilisation des listeners JS ; pour plus d’informations, voir [Gestion des événements de champ](#handling-field-events) et la session AEM Gems sur la [Personnalisation des champs de boîte de dialogue](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=fr).
 
 ### Migration du code cq:listener {#migrating-cq-listener-code}

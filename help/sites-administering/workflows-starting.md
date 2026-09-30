@@ -9,10 +9,10 @@ exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '821'
+ht-degree: 95%
 ---
 # Démarrage d’un workflow{#starting-workflows}
 
@@ -171,8 +171,8 @@ Un package de workflow :
 
      Cette propriété de lanceur est une liste d’éléments séparés par des virgules :
 
-     * `property-name` ignorez tout événement `jcr` qui s’est déclenché avec le nom de propriété spécifié. &grave;&grave;
-     * `event-user-data:<*someValue*>` ignore tout événement contenant les `*<someValue*` > `user-data` définies par le biais de l’API [`ObservationManager` ] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignorez tout événement `jcr` qui s’est déclenché avec le nom de propriété spécifié. ``
+     * `event-user-data:<*someValue*>` ignore tout événement contenant les `user-data` `*<someValue*`> définies via l’API [`ObservationManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)).
 
      Par exemple :
 

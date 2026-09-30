@@ -9,13 +9,11 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 99%
-
 ---
-
 # Contribution à AEM{#contributing-to-aem}
 
 ## Méthodologie de développement {#development-methodology}
@@ -44,7 +42,7 @@ Au plus haut niveau, vous devez maîtriser les concepts suivants :
 * les cookies de navigateur
 * et d’autres concepts de développement web modernes
 
-La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) avec le framework web [Apache Sling](https://sling.apache.org/index.html). Elle incorpore un référentiel de contenu Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Vous devez vous familiariser avec ces projets particuliers, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
+La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) avec le framework web [Apache Sling](https://sling.apache.org/index.html). Elle incorpore un référentiel de contenu Java™ ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Vous devez vous familiariser avec ces projets particuliers, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
 
 ## Connaissances internes {#tribal-knowledge}
 

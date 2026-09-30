@@ -1,29 +1,29 @@
 ---
 title: Tester votre IU
 description: AEM fournit un framework pour l’automatisation des tests pour votre IU AEM
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 100%
-
+source-wordcount: '795'
+ht-degree: 96%
 ---
-
 # Tester votre IU{#testing-your-ui}
 
 >[!NOTE]
 >
 >À partir de la version 6.5 d’AEM, le framework de test de l’interface utilisateur hobbes.js est obsolète. Adobe ne prévoit pas d’y apporter d’autres améliorations et recommande à sa clientèle d’utiliser l’automatisation Selenium.
 >
->Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md). 
+>Consultez les [Fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md).
 
 AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur web. Ce framework fournit une API Javascript dédiée à la création de tests.
 
@@ -31,7 +31,7 @@ Le framework de test AEM utilise Hobbes.js, une bibliothèque de tests développ
 
 >[!NOTE]
 >
->Reportez-vous à la [documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) Hobbes.js pour obtenir plus de détails sur l’API.
+>Reportez-vous à la [documentation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) Hobbes.js pour obtenir plus de détails sur l’API.
 
 ## Structure des tests {#structure-of-tests}
 
@@ -104,9 +104,9 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests sur le [contenu We.Retail](/help/sites-developing/we-retail.md). Toutefois, vous pouvez facilement modifier le test pour utiliser une autre page web.
 
-Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
-1. Ouvrez CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. Ouvrez CRXDE Lite. ([](https://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.
 1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un nœud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 

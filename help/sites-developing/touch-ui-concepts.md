@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 97%
-
+source-wordcount: '2240'
+ht-degree: 96%
 ---
-
 # Concepts de l’interface utilisateur tactile d’Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) dispose d’une interface d’utilisation tactile en [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçue pour fonctionner sur les appareils tactiles et de bureau.
@@ -28,24 +26,24 @@ Adobe Experience Manager (AEM) dispose d’une interface d’utilisation tactile
 L’interface utilisateur tactile se compose des éléments suivants :
 
 * L’en-tête de la suite qui :
-   * affiche le logo,
-   * fournit un lien vers la navigation globale,
-   * fournit le lien vers d’autres actions génériques, comme Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
+  * affiche le logo,
+  * fournit un lien vers la navigation globale,
+  * fournit le lien vers d’autres actions génériques, comme Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
 * Le rail de gauche (affiché lorsque cela s’avère nécessaire et pouvant être masqué) qui peut afficher les options suivantes :
-   * Chronologie
-   * Références
-   * Filtres
+  * Chronologie
+  * Références
+  * Filtres
 * En-tête de navigation, qui est à nouveau contextuel et peut afficher les éléments suivants :
-   * La console en cours d’utilisation et/ou la position au sein de cette console
-   * Sélection pour le rail gauche.
-   * Chemin de navigation
-   * Accès aux actions **Créer** appropriées
-   * Afficher les sélections
+  * La console en cours d’utilisation et/ou la position au sein de cette console
+  * Sélection pour le rail gauche.
+  * Chemin de navigation
+  * Accès aux actions **Créer** appropriées
+  * Afficher les sélections
 * La zone de contenu qui :
-   * répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de messages de forum, etc.) ;
-   * peut être formatée comme demandé, par exemple, colonne, carte ou liste ;
-   * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre) ;
-   * utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés sur une seule fenêtre).
+  * répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de messages de forum, etc.) ;
+  * peut être formatée comme demandé, par exemple, colonne, carte ou liste ;
+  * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre) ;
+  * utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés sur une seule fenêtre).
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
 
 ### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Les [composants de base de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments de base nécessaires à la création de n’importe quelle interface utilisateur. Ils comprennent entre autres les éléments suivants :
+Les [composants de base de l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments de base nécessaires à la création de n’importe quelle interface utilisateur. Ils comprennent entre autres les éléments suivants :
 
 * Bouton
 * Lien hypertexte
@@ -245,19 +243,19 @@ Lors de la mise à niveau du code ExtJS pour utiliser l’IU Granite, la liste s
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Type de nœud** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Composants d’administration de l’IU Granite {#granite-ui-administration-components}
 
-Les [composants d’administration de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Il peut s’agir, entre autres :
+Les [composants d’administration de l’IU Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Il peut s’agir, entre autres :
 
 * Barre de navigation globale
 * Rail (squelette)

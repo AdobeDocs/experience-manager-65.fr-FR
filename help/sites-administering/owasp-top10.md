@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
-
+source-wordcount: '520'
+ht-degree: 90%
 ---
-
 # Les 10 plus grands risques de sécurité OWASP{#owasp-top}
 
 Le projet [Open Web Application Security Project](https://owasp.org/) (OWASP) conserve une liste de ce qu’il considère comme les [dix plus grands risques de sécurité des applications web](https://owasp.org/www-project-top-ten/).
@@ -62,7 +60,7 @@ Les données sensibles telles que les informations d’identification tierces so
 
 ## &#x200B;8. Échec de la restriction d’accès à l’URL {#failure-to-restrict-url-access}
 
-Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quelle personne ou n’importe quel groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
+Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quelle personne ou n’importe quel groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
 ## &#x200B;9. Protection insuffisante de la couche de transport {#insufficient-transport-layer-protection}
 

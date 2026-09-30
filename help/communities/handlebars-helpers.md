@@ -7,18 +7,16 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 5%
-
+source-wordcount: '1534'
+ht-degree: 3%
 ---
-
 # Assistants Handlebars SCF {#scf-handlebars-helpers}
 
-| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
+| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
 |---|---|
-|   | ⇒ de personnalisation côté client [&#128279;](client-customize.md)**&#x200B;** |
+|   | ⇒ de personnalisation côté client ](client-customize.md)****[ |
 
 Les assistants Handlebars (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
@@ -180,7 +178,7 @@ Helper permettant de renvoyer du contenu en fonction d’une condition d’égal
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Assistant de bloc qui teste la valeur actuelle du [mode de gestion de contenu web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) par rapport à une liste de modes séparés par une chaîne.
+Assistant de bloc qui teste la valeur actuelle du [mode de gestion de contenu web](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) par rapport à une liste de modes séparés par une chaîne.
 
 ### Paramètres {#parameters-4}
 
@@ -190,7 +188,7 @@ Assistant de bloc qui teste la valeur actuelle du [mode de gestion de contenu we
 
 * **mode** : chaîne
 
-  (Facultatif) Liste séparée par des virgules de [modes de gestion de contenu web](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) à tester si elle est définie.
+  (Facultatif) Liste séparée par des virgules de [modes de gestion de contenu web](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) à tester si elle est définie.
 
 ### Exemple {#example-2}
 
@@ -458,10 +456,10 @@ REMARQUE : cet helper peut renvoyer une chaîne vide.
 
 * Les barres de contrôle fournissent un paramètre final aux assistants nommés « options ». L&#39;objet spécial &#39;options&#39; comprend
 
-   * Données privées facultatives (options.data)
-   * Propriétés clé-valeur facultatives de l’appel (options.hash)
-   * Possibilité d’appeler elle-même (options.fn())
-   * Possibilité d’appeler l’inverse de lui-même (options.inverse())
+  * Données privées facultatives (options.data)
+  * Propriétés clé-valeur facultatives de l’appel (options.hash)
+  * Possibilité d’appeler elle-même (options.fn())
+  * Possibilité d’appeler l’inverse de lui-même (options.inverse())
 
 * Il est recommandé que le contenu de chaîne HTML renvoyé par un helper soit une chaîne SafeString.
 
@@ -523,7 +521,7 @@ Les assistants personnalisés doivent être implémentés côté serveur et côt
 
 ### Assistants personnalisés côté serveur {#server-side-custom-helpers}
 
-Pour implémenter et enregistrer un assistant SCF personnalisé côté serveur, il vous suffit d’implémenter l’interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), d’en faire un [service OSGi](../../help/sites-developing/the-basics.md#osgi) et de l’installer dans le cadre d’un lot OSGi.
+Pour implémenter et enregistrer un assistant SCF personnalisé côté serveur, il vous suffit d’implémenter l’interface Java™ [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), d’en faire un [service OSGi](../../help/sites-developing/the-basics.md#osgi) et de l’installer dans le cadre d’un lot OSGi.
 
 Par exemple :
 
@@ -594,10 +592,10 @@ La bibliothèque cliente doit :
 
 * Incluez une dépendance sur `cq.social.scf`.
 * Charger après le chargement de Handlebars.
-* Soyez [&#x200B; inclus &#x200B;](clientlibs.md).
+* Soyez [ inclus ](clientlibs.md).
 
 Remarque : les assistants SCF sont définis dans `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| ⇐ Feature Essentials [&#128279;](essentials.md)**&#x200B;**|[&#x200B;  ⇒ de personnalisation côté serveur &#x200B;](server-customize.md)**&#x200B;** |
+| ⇐ Feature Essentials ](essentials.md)****[ | ⇒ de personnalisation côté serveur ](server-customize.md)****[ |
 |---|---|
-|   | ⇒ de personnalisation côté client [&#128279;](client-customize.md)**&#x200B;** |
+|   | ⇒ de personnalisation côté client ](client-customize.md)****[ |

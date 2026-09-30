@@ -5,13 +5,11 @@ exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
-
+source-wordcount: '419'
+ht-degree: 96%
 ---
-
 # Sécurité{#security}
 
 La sécurité des applications commence pendant la phase de développement. Adobe recommande d’appliquer les bonnes pratiques de sécurité suivantes.
@@ -34,7 +32,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 
 >[!NOTE]
 >
->Adobe recommande vivement de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe recommande vivement de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 En outre, un pare-feu d’application web, tel que le [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 

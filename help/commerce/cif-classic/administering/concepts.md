@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 99%
-
+source-wordcount: '4567'
+ht-degree: 98%
 ---
-
 # Concepts{#concepts}
 
 Le framework d’intégration fournit les mécanismes et les composants pour les éléments suivants :
@@ -40,7 +38,7 @@ Cela signifie que :
 
 >[!CAUTION]
 >
->le [framework d’intégration du e-commerce](https://business.adobe.com/fr/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
+>le [framework d’intégration du e-commerce](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html?lang=fr) est un module complémentaire d’AEM.
 >
 >Le représentant commercial ou la représente commerciale peuvent vous donner plus de détails, en fonction du moteur approprié.
 
@@ -60,33 +58,33 @@ Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chac
 
 * AEM peut :
 
-   * Requête :
+  * Requête :
 
-      * Informations sur les produits du moteur e-commerce.
+    * Informations sur les produits du moteur e-commerce.
 
-   * Fournissez les détails suivants :
+  * Fournissez les détails suivants :
 
-      * Vue des personnes sur des informations relatives aux produits, le panier et le passage en caisse.
-      * Informations sur le panier et le passage en caisse pour le moteur e-commerce.
-      * Optimisation du moteur de recherche (SEO).
-      * Fonctionnalités de la communauté.
-      * Interactions marketing non structurées.
+    * Vue des personnes sur des informations relatives aux produits, le panier et le passage en caisse.
+    * Informations sur le panier et le passage en caisse pour le moteur e-commerce.
+    * Optimisation du moteur de recherche (SEO).
+    * Fonctionnalités de la communauté.
+    * Interactions marketing non structurées.
 
 * Le moteur eCommerce peut :
 
-   * fournir les détails suivants :
+  * fournir les détails suivants :
 
-      * Informations produit de la base de données.
-      * Gestion des variantes de produits.
-      * Gestion des commandes.
-      * la planification des ressources de l’entreprise (ERP) ;
-      * Recherche au sein des informations sur les produits.
+    * Informations produit de la base de données.
+    * Gestion des variantes de produits.
+    * Gestion des commandes.
+    * la planification des ressources de l’entreprise (ERP) ;
+    * Recherche au sein des informations sur les produits.
 
-   * Processus :
+  * Processus :
 
-      * Le panier.
-      * Le passage en caisse.
-      * Exécution des commandes.
+    * Le panier.
+    * Le passage en caisse.
+    * Exécution des commandes.
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM eCommerce est implémenté avec un moteur d’e-commerce :
 >
 >AEM eCommerce implémenté dans AEM à l’aide d’un développement générique basé sur JCR est :
 >
->* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, Ceci peut être utilisé pour contrôler les données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif d’AEM (mise en œuvre Adobe de [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, Ceci peut être utilisé pour contrôler les données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif d’AEM (mise en œuvre Adobe de [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)).
 >
 >  L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique d’e-commerce](/help/commerce/cif-classic/administering/generic.md).
 
@@ -150,7 +148,7 @@ Cependant, généralement, un projet doit développer son propre fournisseur de 
 >
 >Les importateurs de Geometrixx utilisent des fichiers CSV. Une description du schéma est acceptée (avec les propriétés personnalisées autorisées) dans les commentaires au-dessus de leur mise en œuvre.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html?lang=fr) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html?lang=fr) et [CatalogBlueprintImporter. &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html?lang=fr) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) conserve (par le biais d’[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) une liste des mises en œuvre des interfaces [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) et [CatalogBlueprintImporter. ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) Celles-ci sont répertoriées dans le champ de liste déroulante **Importateur/Fournisseur de commerce** de l’assistant d’importation (à l’aide de la propriété `commerceProvider` comme nom).
 
 Lorsqu’un importateur/fournisseur de commerce spécifique est répertorié dans la liste déroulante, toutes les données complémentaires dont il a besoin doivent être définies (en fonction du type de l’importateur) dans :
 
@@ -169,24 +167,24 @@ Le système intégré gère les rôles suivants pour traiter les données :
 
 * Utilisateur de la gestion d’informations sur les produits, qui gère les éléments suivants :
 
-   * Informations sur les produits.
-   * Taxonomie, catégorisation, approbation.
-   * Interagit avec la gestion des ressources numériques.
-   * Tarifs : souvent issus d’un système ERP, ils ne sont pas explicitement pris en charge dans le système commercial.
+  * Informations sur les produits.
+  * Taxonomie, catégorisation, approbation.
+  * Interagit avec la gestion des ressources numériques.
+  * Tarifs : souvent issus d’un système ERP, ils ne sont pas explicitement pris en charge dans le système commercial.
 
 * Auteur/autrice/responsable marketing qui conserve :
 
-   * Contenu marketing pour tous les canaux.
-   * Promotions.
-   * Bons.
-   * Campagnes.
+  * Contenu marketing pour tous les canaux.
+  * Promotions.
+  * Bons.
+  * Campagnes.
 
 * Surfeur ou surfeuse/acheteur ou acheteuse qui :
 
-   * affiche les informations sur votre produit ;
-   * place les articles dans le panier ;
-   * vérifie ses commandes ;
-   * attend l’exécution de la commande.
+  * affiche les informations sur votre produit ;
+  * place les articles dans le panier ;
+  * vérifie ses commandes ;
+  * attend l’exécution de la commande.
 
 Bien que l’emplacement réel puisse dépendre de votre implémentation, par exemple, générique ou avec un moteur e-commerce :
 
@@ -265,15 +263,15 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
   Informations sur la planification des ressources de l’entreprise.
 
-   * **SKU**
+  * **SKU**
 
-     Informations sur les unités de gestion des stocks (SKU).
+    Informations sur les unités de gestion des stocks (SKU).
 
-   * **Couleur**
-   * **Taille**
-   * **Prix**
+  * **Couleur**
+  * **Taille**
+  * **Prix**
 
-     Prix du produit à l’unité.
+    Prix du produit à l’unité.
 
 * **Résumé**
 
@@ -394,19 +392,19 @@ Notez que ce test de performance nécessite des connaissances et une analyse de 
 
 * Volumes de contenu
 
-   * Assets
-   * Produits et SKU localisés I18ned
+  * Assets
+  * Produits et SKU localisés I18ned
 
 * Activité de la personne :
 
-   * Modification en bloc
-   * Publication en bloc
-   * Requêtes de recherche intensives
+  * Modification en bloc
+  * Publication en bloc
+  * Requêtes de recherche intensives
 
 * Processus en arrière-plan
 
-   * Importations
-   * Mises à jour de la synchronisation (par exemple, tarification)
+  * Importations
+  * Mises à jour de la synchronisation (par exemple, tarification)
 
 * Exigences de maintenance (sauvegarde, optimisation Tar PM, récupération de l’espace mémoire du magasin de données, etc.)
 
@@ -505,9 +503,9 @@ Les bons sont une méthode éprouvée d’offre de remise pour inciter les achet
 
 * Envoi des bons :
 
-   * Un code de bon (à saisir dans le panier par l’acheteur ou l’acheteuse).
-   * Le libellé du bon (à afficher une fois que l’acheteur ou l’acheteuse l’a saisi dans le panier).
-   * Un chemin de promotion (qui définit l’action appliquée par le bon).
+  * Un code de bon (à saisir dans le panier par l’acheteur ou l’acheteuse).
+  * Le libellé du bon (à afficher une fois que l’acheteur ou l’acheteuse l’a saisi dans le panier).
+  * Un chemin de promotion (qui définit l’action appliquée par le bon).
 
 * Les moteurs de commerce externes peuvent également fournir des bons.
 
@@ -516,9 +514,9 @@ Dans AEM :
 * Un bon est un composant basé sur une page, créé/modifié avec la console Sites web.
 * Le composant **Bon** fournit :
 
-   * Un moteur de rendu pour l’administration des bons qui affiche tous les bons actuellement dans le panier.
-   * Les boîtes de dialogue de modification (formulaire) pour l’administration (ajout/suppression) des bons.
-   * Actions requises pour l’ajout/la suppression de bons dans le panier.
+  * Un moteur de rendu pour l’administration des bons qui affiche tous les bons actuellement dans le panier.
+  * Les boîtes de dialogue de modification (formulaire) pour l’administration (ajout/suppression) des bons.
+  * Actions requises pour l’ajout/la suppression de bons dans le panier.
 
 * Les bons n’ont pas leurs propres dates/heures d’activation et de désactivation. Ils utilisent ceux de leurs campagnes parents.
 
@@ -538,19 +536,19 @@ Les promotions, ainsi que les bons, vous permettent de réaliser des scénarios 
 
 Les promotions ne sont pas gérées par les responsables des informations sur les produits, mais par les responsables marketing :
 
-* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. &grave;&grave;
+* Une promotion est un composant basé sur une page, créé/modifié avec la console Sites web. ``
 * Les promotions fournissent :
 
-   * Une priorité
-   * Un chemin de gestionnaire de promotions
+  * Une priorité
+  * Un chemin de gestionnaire de promotions
 
 * Vous pouvez lier des promotions à une campagne pour définir leur date/heure d’activation/de désactivation.
 * Vous pouvez lier des promotions à une expérience pour définir leurs segments.
 * Les promotions non liées à une expérience ne se déclenchent pas toutes seules, mais peuvent toujours être déclenchées par un bon.
 * Le composant Promotion contient les éléments suivants :
 
-   * des rendus et boîtes de dialogue pour l’administration des promotions ;
-   * des sous-composants pour le rendu et la modification des paramètres de configuration spécifiques aux gestionnaires de promotions.
+  * des rendus et boîtes de dialogue pour l’administration des promotions ;
+  * des sous-composants pour le rendu et la modification des paramètres de configuration spécifiques aux gestionnaires de promotions.
 
 Dans AEM, les promotions sont également intégrées à [Campaign Management](/help/sites-authoring/personalization.md) :
 
@@ -664,8 +662,8 @@ Le carnet d’adresses est utilisé lorsque vous passez en caisse avec votre pan
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-Les adresses sont conservées sous `user_home/profile/addresses`.
-Par exemple, pour Alison Parker, cela se trouverait sous /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
+Les adresses sont conservées ci-dessous `user_home/profile/addresses`.
+Par exemple, Alison Parker serait enregistrée sous /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
 
 Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. La propriété de profil `address.default` est définie avec le chemin d’accès de l’adresse sélectionnée pour la valeur.
 
@@ -707,8 +705,8 @@ Le panier fournit :
 * des liens vers des pages produits pour les articles sélectionnés ;
 * la possibilité de :
 
-   * mettre à jour le nombre/la quantité d’éléments individuels ;
-   * supprimer des éléments individuels
+  * mettre à jour le nombre/la quantité d’éléments individuels ;
+  * supprimer des éléments individuels
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
@@ -812,7 +810,7 @@ Diverses informations sont stockées, notamment les éléments suivants :
 
 >[!NOTE]
 >
->Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour l’emplacement. Dans l’exemple générique, elle se trouve sous :
+>Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, elle se trouve sous :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Lorsque la commande est conservée dans AEM, la console Commande affiche les informations ci-dessous pour chaque commande :

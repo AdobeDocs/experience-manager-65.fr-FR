@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 93%
-
+source-wordcount: '2385'
+ht-degree: 92%
 ---
-
 # Référence des prédicats de Query Builder{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -23,11 +21,11 @@ ht-degree: 93%
 >Les informations contenues dans cette page ne sont pas exhaustives.
 >
 >Pour plus d’informations, reportez-vous à la liste figurant dans **Prédicats disponibles** dans la console de débogage Query Builder, par exemple, à l’adresse :
->* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>* [](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Pour obtenir un exemple, reportez-vous à :
 >
->* [:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Général {#general}
 
@@ -229,7 +227,7 @@ Il s’agit conceptuellement de `fulltext AND ( (path AND type) OR (path AND typ
 
 ### hasPermission {#haspermission}
 
-Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
+Limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 
@@ -269,7 +267,7 @@ Prend en charge l’extraction des facettes et fournit deux compartiments pour l
 
 ### memberOf {#memberof}
 
-Recherche les éléments membres d’une [collection de ressources Sling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
+Recherche les éléments membres d’une [collection de ressources Sling](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas utiliser d’index de recherche. Ne prend pas en charge l’extraction de facettes.
 
@@ -381,7 +379,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&amp;ast;/taille et le nœud/&amp;ast;/&amp;ast;/taille).
 
 ### rangeproperty {#rangeproperty}
 
@@ -473,17 +471,17 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
   (uniquement pour le servlet JSON) Sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
 
-   * **simple** :
+  * **simple** :
 
-     Éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis).
+    Éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis).
 
-   * **full** :
+  * **full** :
 
-     Rendu JSON Sling du nœud, avec `jcr:path` qui indique le chemin de l’accès : par défaut, seules les propriétés directes du nœud sont répertoriées, inclure une arborescence plus profonde avec `p.nodedepth=N`, 0 signifiant l’ensemble de la sous-arborescence infinie ; ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Rendu JSON Sling du nœud, avec `jcr:path` qui indique le chemin du hit : par défaut, seules les propriétés directes du nœud sont répertoriées, inclure une arborescence plus profonde avec `p.nodedepth=N`, 0 signifiant l’ensemble de la sous-arborescence infinie ; ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **selective** :
+  * **selective** :
 
-     Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils sont représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
+    Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser « + » dans les URL) ; si le chemin d’accès relatif a une profondeur > 1, ils sont représentés sous la forme d’objets enfants ; la propriété jcr:path spéciale inclut le chemin de l’accès.
 
 ### savedquery {#savedquery}
 

@@ -9,13 +9,11 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
-
+source-wordcount: '1189'
+ht-degree: 85%
 ---
-
 # Manipulation de base{#basic-handling}
 
 >[!NOTE]
@@ -50,11 +48,11 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Ressources numériques</strong><br /> </td>
-   <td>Ces consoles permettent d’importer et de <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gérer des ressources numériques</a>, telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
+   <td>Ces consoles vous permettent d’importer et de <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Ces ressources peuvent ensuite être utilisées par n’importe quel site web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td><strong>Lancements</strong></td>
-   <td>Avec cette console, vous pouvez gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a> et élaborer ainsi le contenu pour une prochaine version d’une ou de plusieurs pages Web activées.<br /> <i>Remarque : dans l’IU activée pour les écrans tactiles, la plupart des fonctionnalités sont également disponibles dans la console Sites, avec le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
+   <td>Cela vous permet de gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a> ; ils vous permettent de développer le contenu pour une prochaine version d’une ou de plusieurs pages web activées.<br /> <i>Remarque : dans l’IU activée pour les écrans tactiles, la plupart des fonctionnalités sont également disponibles dans la console Sites, avec le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
    <td><strong>Boîte de réception </strong></td>
@@ -62,7 +60,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Balisage</strong></td>
-   <td>Les consoles Balisage permettent de gérer les balises. Les balises sont des noms ou expressions courts servant à classer et à annoter des segments de contenu, afin qu’il soit plus facile de les rechercher et de les organiser. Pour plus d’informations, voir <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Utilisation et gestion des balises</a>.</td>
+   <td>Les consoles Balisage permettent de gérer les balises. Les balises sont des noms ou expressions courts que vous pouvez utiliser pour classer et annoter des éléments de contenu, ce qui facilite leur recherche et leur organisation. Pour plus d’informations, voir <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Utilisation et gestion des balises</a>.</td>
   </tr>
   <tr>
    <td><strong>Outils</strong></td>
@@ -74,7 +72,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Sites web</strong></td>
-   <td>Les consoles Sites/Sites web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, lancer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
+   <td>Les consoles Sites/Sites web vous permettent de <a href="/help/sites-classic-ui-authoring/classic-page-author.md">créer, afficher et gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, démarrer des workflows et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
@@ -117,10 +115,10 @@ La console **Sites web** répertorie vos pages de contenu dans une arborescence 
 
 * Cliquez sur le nom de la page dans le volet de gauche effectue les opérations suivantes :
 
-   * Répertorie les pages enfants dans le volet de droite.
-   * Développe la structure dans le volet de gauche.
+  * Répertorie les pages enfants dans le volet de droite.
+  * Développe la structure dans le volet de gauche.
 
-     Pour des raisons de performances, cette action dépend du nombre de nœuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
+    Pour des raisons de performances, cette action dépend du nombre de nœuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
 
 * Un double-clic sur le nom de la page (volet de gauche) développe l’arborescence. Cependant, étant donné que la page est ouverte en même temps, cet effet est moins visible.
 
@@ -141,7 +139,7 @@ La console **Sites web** répertorie vos pages de contenu dans une arborescence 
 >dans :
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Voir [SiteAdmin dans l’API Widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
+>Voir [SiteAdmin dans l’API Widget CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
 
 ## Informations sur la page dans la console Sites web {#page-information-on-the-websites-console}
 
@@ -187,7 +185,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
   </tr>
   <tr>
    <td>Impressions</td>
-   <td>Affiche l’activité sur une page en nombre d’accès.</td>
+   <td>Affiche l’activité sur une page en nombre de hits.</td>
   </tr>
   <tr>
    <td>Modèle</td>
