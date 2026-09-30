@@ -170,7 +170,7 @@ Les étapes de cette procédure téléchargent et créent le serveur Hybris. Ell
 
 1. Dans votre navigateur, accédez à la **console d’administration Hybris** à l’emplacement :
 
-   [](http://localhost:9002)
+   [&#128279;](http://localhost:9002)
 
 1. Cliquez sur **Initialiser**, puis confirmez l’action d’initialisation (car elle va supprimer les données existantes).
 
@@ -193,7 +193,7 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 1. Dans votre navigateur, accédez à la **console de gestion Hybris** à l’emplacement :
 
-   [](https://localhost:9002/backoffice)
+   [&#128279;](https://localhost:9002/backoffice)
 
    Utilisez les informations d’identification suivantes :
    * Nom d’utilisateur : admin
@@ -237,4 +237,4 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 1. À présent, vous pouvez utiliser le cockpit du produit pour afficher les catalogues et les produits importés :
 
-   [](http://localhost:9002/productcockpit)
+   [&#128279;](http://localhost:9002/productcockpit)
