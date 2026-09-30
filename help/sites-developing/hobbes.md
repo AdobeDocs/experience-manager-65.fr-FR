@@ -106,7 +106,7 @@ La procédure suivante vous guide tout au long de la création et de l’exécut
 
 Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
-1. Ouvrez CRXDE Lite. ([](https://localhost:4502/crx/de))
+1. Ouvrez CRXDE Lite. ([&#128279;](https://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.
 1. Cliquez avec le bouton droit sur le dossier `/etc/clientlibs/myTests` et cliquez sur **Créer > Créer un nœud**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 

@@ -180,7 +180,7 @@ La nouvelle configuration de déploiement est alors disponible pour vous lors de
 ### Créer la configuration de déploiement {#create-the-rollout-configuration}
 
 1. Ouvrez CRXDE Lite, par exemple :
-   [](http://localhost:4502/crx/de)
+   [&#128279;](http://localhost:4502/crx/de)
 
 1. Accédez à :
    `/apps/msm/<your-project>/rolloutconfigs`
@@ -246,7 +246,7 @@ Suivez les procédures de cette section pour développer une `LiveActionFactory`
 
 1. [Créez le projet Maven](#create-the-maven-project) et importez-le dans Eclipse.
 1. [Ajoutez des dépendances](#add-dependencies-to-the-pom-file) au fichier POM.
-1. [Implémentez l’interface `LiveActionFactory` ](#implement-liveactionfactory) et déployez le bundle OSGi.
+1. [Implémentez l’interface `LiveActionFactory` &#x200B;](#implement-liveactionfactory) et déployez le bundle OSGi.
 1. [Créez la configuration de déploiement](#create-the-example-rollout-configuration).
 1. [Créez la Live Copy](#create-the-live-copy).
 
@@ -532,7 +532,7 @@ La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregist
 
    Le fichier AEM `error.log` doit indiquer que le bundle est démarré.
 
-   Par exemple, [](https://localhost:4502/system/console/status-slinglogs).
+   Par exemple, [&#128279;](https://localhost:4502/system/console/status-slinglogs).
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED

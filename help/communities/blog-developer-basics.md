@@ -70,7 +70,7 @@ La fonction de blog est composée de deux composants principaux qui sont disponi
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **modèles** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propriétés** | voir [ Fonctionnalité de blog ](/help/communities/blog-feature.md) |
+| **propriétés** | voir [&#x200B; Fonctionnalité de blog &#x200B;](/help/communities/blog-feature.md) |
 
 * [Personnalisations côté client](/help/communities/client-customize.md)
 

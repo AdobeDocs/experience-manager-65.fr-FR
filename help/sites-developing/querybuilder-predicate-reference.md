@@ -21,11 +21,11 @@ ht-degree: 92%
 >Les informations contenues dans cette page ne sont pas exhaustives.
 >
 >Pour plus d’informations, reportez-vous à la liste figurant dans **Prédicats disponibles** dans la console de débogage Query Builder, par exemple, à l’adresse :
->* [](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>* [&#128279;](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Pour obtenir un exemple, reportez-vous à :
 >
->* [](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [&#128279;](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## Général {#general}
 
@@ -379,7 +379,7 @@ Prend en charge l’extraction de facettes. Fournit des compartiments pour chaqu
 
 * **depth**
 
-  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&amp;ast;/taille et le nœud/&amp;ast;/&amp;ast;/taille).
+  Nombre de niveaux de caractères génériques sous lesquels le chemin de propriété/relatif peut exister (par exemple, `property=size depth=2` vérifie le nœud/la taille, le nœud/&ast;/taille et le nœud/&ast;/&ast;/taille).
 
 ### rangeproperty {#rangeproperty}
 

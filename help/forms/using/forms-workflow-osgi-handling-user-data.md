@@ -135,7 +135,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
    * Chemins d’accès aux payloads des instances de workflow
    * Chemins d’accès aux brouillons et à l’historique des instances de workflow
 
-1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **** OBSOLÈTE :
+1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **&#x200B;**&#x200B;OBSOLÈTE :
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.

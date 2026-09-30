@@ -91,7 +91,7 @@ Voir aussi [Personnalisations côté client](/help/communities/client-customize.
 
 * [Configuration de la messagerie](/help/communities/configure-messaging.md)
 * [API clientes de messagerie](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) pour les composants SCF
-* [ API de messagerie ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) pour le service
+* [&#x200B; API de messagerie &#x200B;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) pour le service
 * [Points d’entrée de messagerie](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
