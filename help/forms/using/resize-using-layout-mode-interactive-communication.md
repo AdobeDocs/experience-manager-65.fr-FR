@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '898'
 ht-degree: 100%
-
 ---
-
 # Utilisation du mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
 
 L’interface de création du canal Web de communication interactive vous permet de redimensionner les composants en utilisant le mode Disposition. Faites glisser et déposez des points bleus dans les colonnes pour définir les points de départ et d’arrivée afin de positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu différencie une colonne d’une l’autre.
@@ -26,7 +24,7 @@ Vous pouvez utiliser le mode Mise en page afin de redimensionner les composants 
 
 Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut de l’interface de création de Communication interactive à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
-1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Connectez-vous à l’instance de création AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
 1. Créez une [Communication interactive](../../forms/using/create-interactive-communication.md) ou ouvrez-en une déjà existante.
 1. Sélectionnez **Mise en page** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualiser**. Le formulaire s’affiche en mode Mise en page.
 
@@ -34,7 +32,7 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 
 ## Redimensionnement des composants {#resize-components}
 
-1. En mode Disposition, sélectionnez le composant à redimensionner.  Les points bleus s’affichent au début et à la fin de la grille réactive.
+1. En mode Disposition, sélectionnez le composant à redimensionner. Les points bleus s’affichent au début et à la fin de la grille réactive.
 1. Faites glisser les points bleus pour définir la position du composant dans la grille réactive.
 
    ![Redimensionnement en mode Mise en page](assets/layout_mode_resize_new_updated.png)
