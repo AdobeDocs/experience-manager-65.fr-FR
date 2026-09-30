@@ -8,13 +8,11 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 97%
-
 ---
-
 # Exemple d’intégration d’un composant brouillons &amp; envois à la base de données {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Vue d’ensemble de l’exemple {#sample-overview}
@@ -89,79 +87,79 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 1. La connexion à la base de données peut être effectuée via la source de données mise en pool de la connexion Apache Sling.
 1. Pour la connexion Apache Sling, recherchez **[!UICONTROL Apache Sling Connection Pooled DataSource]** et cliquez dessus pour l’ouvrir en mode de modification dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Propriété</strong></td>
    <td><strong>Valeur</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nom de la source de données</td>
    <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données</p> <p><strong>Remarque : </strong><em>l’exemple de mise en œuvre utilise FormsPortal comme nom de la source de données.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Classe de pilote JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>URI de connexion JDBC<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nom d’utilisateur</td>
    <td>Nom d’utilisateur pour l’authentification et l’exécution d’actions sur les tables de base de données</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Mot de passe</td>
    <td>Mot de passe associé au nom d’utilisateur</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Isolation des transactions</td>
    <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nombre max. de connexions actives</td>
    <td>1 000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nombre max. de connexions inactives</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nombre min. de connexions inactives</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Taille initiale</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Attente max.</td>
    <td>100 000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test lors de l’emprunt</td>
    <td>Cochée</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Test en mode inactif</td>
    <td>Cochée</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Requête de validation</td>
    <td>Exemples de valeurs : SELECT 1(mysql), select 1 from dual (oracle), SELECT 1 (MS Sql Server) (validationQuery).</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Délai d’expiration des requêtes de validation</td>
    <td>10 000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous que vous avez fourni les informations requises pour configurer le pool de connexions JDBC.
->* Pointez vos instances de création et de publication pour qu’elles utilisent la même base de données. La valeur du champ URI de connexion JDBC doit être identique pour toutes les instances de création et de publication.
+   >[!NOTE]
+   >
+   >* Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous que vous avez fourni les informations requises pour configurer le pool de connexions JDBC.
+   >* Pointez vos instances de création et de publication pour qu’elles utilisent la même base de données. La valeur du champ URI de connexion JDBC doit être identique pour toutes les instances de création et de publication.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 

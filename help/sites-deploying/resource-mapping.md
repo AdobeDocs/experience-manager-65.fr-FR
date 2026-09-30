@@ -12,18 +12,16 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 100%
-
+source-wordcount: '542'
+ht-degree: 81%
 ---
-
 # Mappage de ressource{#resource-mapping}
 
 Le mappage de ressources permet de définir des redirections, des URL de redirection et des hôtes virtuels pour Adobe Experience Manager (AEM).
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
+* faire précéder toutes les demandes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
 Un mappage HTTP possible consiste à préfixer toutes les demandes à `localhost:4503` avec le répertoire `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
@@ -38,7 +36,7 @@ En effet, le mappage ajoute automatiquement le préfixe `/content` à `/we-retai
 
 >[!CAUTION]
 >
->Les URL Vanity ne prennent pas en charge les modèles regex.
+>Les URL de redirection ne prennent pas en charge les expressions régulières.
 
 >[!NOTE]
 >
@@ -50,14 +48,17 @@ Les mappages forment deux listes que le résolveur de ressources JCR évalue (de
 
 Ces listes peuvent être visualisées (ainsi que des informations de configuration) sous l’option **JCR ResourceResolver** de la console Felix ; par exemple, `https://<*host*>:<*port*>/system/console/jcrresolver` :
 
-* Configuration indique la configuration actuelle (telle que définie pour le [résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)). 
+* Configuration
+Affiche la configuration actuelle (telle que définie pour le [résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
 * Test de configuration
-Cela permet de saisir une URL ou un chemin d’accès vers la ressource. Cliquez sur **Resolve (Résoudre)** ou **Map (Mapper)** pour confirmer la façon dont le système transforme l’entrée.
+Permet de saisir une URL ou un chemin d’accès à la ressource. Cliquez sur **Resolve (Résoudre)** ou **Map (Mapper)** pour confirmer la façon dont le système transforme l’entrée.
 
-* **Resolver Map Entries (Entrées de mappage du résolveur)** La liste des entrées utilisées par les méthodes ResourceResolver.resolve pour mapper les URL aux ressources. 
+* **Entrées de mappage du résolveur**
+La liste des entrées utilisées par les méthodes ResourceResolver.resolve pour mapper les URL aux ressources.
 
-* **Mapping Map Entries (Entrées de mappage)** La liste des entrées utilisées par les méthodes ResourceResolver.map pour mapper les chemins d’accès des ressources aux URL.
+* **Mappage des entrées de mappage**
+Liste des entrées utilisées par les méthodes ResourceResolver.map pour mapper les chemins d’accès des ressources aux URL.
 
 Les deux listes affichent différentes entrées, y compris celles définies par défaut par les applications. Ces entrées visent souvent à simplifier les URL pour la personne qui les utilise.
 
@@ -73,7 +74,7 @@ déclenche :
 
 Pour rediriger une requête :
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &grave;&grave;
 
 Pour :
 
@@ -95,13 +96,14 @@ Il s’agit de la structure utilisée lors de la définition des mappages pour l
 
 #### Configuration d’une redirection interne vers /content {#configuring-an-internal-redirect-to-content}
 
-Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ avec `/content` :
+Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ avec `/content` :
 
 1. À l’aide de CRXDE, accédez à `/etc/map/http`.
 
 1. Créez un nœud :
 
-   * **Type** `sling:Mapping` ce type de nœud est conçu pour de tels mappages, même si son utilisation n’est pas obligatoire.
+   * **Type** `sling:Mapping`
+     Ce type de nœud est destiné à de tels mappages, bien que son utilisation ne soit pas obligatoire.
 
    * **Nom** `localhost_any`
 
@@ -110,21 +112,21 @@ Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ ave
 
    * **Nom** `sling:match`
 
-      * **Type** `String`
+     * **Type** `String`
 
-      * **Valeur** `localhost.4503/`
+     * **Valeur** `localhost.4503/`
 
    * **Nom** `sling:internalRedirect`
 
-      * **Type** `String[]`
+     * **Type** `String[]`
 
-      * **Valeur** `/content/`
+     * **Valeur** `/content/`
 
 1. Cliquez sur **Enregistrer tout**.
 
-Cela permet de gérer une demande telle que :
+Il gère une requête telle que :
 `localhost:4503/geometrixx/en/products.html`
-comme si :
+comme si :
 `localhost:4503/content/geometrixx/en/products.html`
 avait été demandé.
 

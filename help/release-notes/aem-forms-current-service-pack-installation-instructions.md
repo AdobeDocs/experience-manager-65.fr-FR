@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 91%
-
+source-wordcount: '2149'
+ht-degree: 92%
 ---
-
 # Instructions d’installation pour le pack de services AEM 6.5 Forms {#aem-form-patch-installation-instructions}
 
 ## Informations sur la version
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extrayez l’**archive du programme d’installation du Service Pack AEM Forms on JEE** sur votre disque dur :
 
    * **Windows**
-Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis double-cliquez sur le fichier `aemforms65_cfp_install.exe`.
+     Accédez au répertoire approprié sur le support ou dossier d’installation de votre disque dur dans lequel le programme d’installation a été copié, puis double-cliquez sur le fichier `aemforms65_cfp_install.exe`.
 
-      * (Windows 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Accédez au répertoire approprié, puis à partir d’un shell et saisissez `./aem65_cfp_install.bin`.
+     Accédez au répertoire approprié, puis à partir d’un shell et saisissez `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Vous lancez ainsi un assistant d’installation qui vous guide tout au long de l’installation.
 
@@ -154,9 +152,9 @@ Pour télécharger et installer le fragment de servlet :
 
 1. Si vous n’avez pas téléchargé le fragment, téléchargez-le à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
-2. Démarrez le serveur d’applications, attendez que les journaux se stabilisent et vérifiez l’état du lot.
+2. Démarrez le serveur d’applications, attendez que les journaux se stabilisent et vérifiez l’état du bundle.
 
-3. Ouvrez les lots de la console web. L’URL par défaut est `http://[Server]:[Port]/system/console/bundles`.
+3. Ouvrez les bundles de la console web. L’URL par défaut est `http://[Server]:[Port]/system/console/bundles`.
 
 4. Cliquez sur Installer/Mettre à jour. Sélectionnez le fragment téléchargé, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Cliquez sur **Install** (Installer) ou **Update** (Mettre à jour). Attendez que le serveur d’applications se stabilise.
 
@@ -176,7 +174,7 @@ Pour télécharger et installer le fragment de servlet :
 
 Vous pouvez utiliser deux méthodes différentes pour installer automatiquement le Service Pack [!DNL ExperienceManager].<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* Placez le package dans `../crx-quickstart/install` dossier lorsque le serveur est disponible en ligne.
+* Placez le package dans le dossier `../crx-quickstart/install` lorsque le serveur est disponible en ligne.
 Le package est automatiquement installé.
 
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
@@ -189,9 +187,9 @@ Le package est automatiquement installé.
 
   Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-   1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
-   1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utilisez la console web : `/system/console/bundles`).
+  1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés].<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utiliser la console web : `/system/console/bundles`).
+  1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utilisez la console web : `/system/console/bundles`).
 
 +++
 
@@ -262,11 +260,11 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
   Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-   1. La page d’informations sur les produits (`/system/console/productinfo`) affiche le numéro de version mis à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->.
+  1. La page d’informations sur les produits (`/system/console/productinfo`) affiche le numéro de version mis à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->.
 
-   1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
+  1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-      1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utiliser la console Web : `/system/console/bundles`).
+     1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utiliser la console Web : `/system/console/bundles`).
 
 +++
 

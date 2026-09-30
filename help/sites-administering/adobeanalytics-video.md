@@ -10,13 +10,11 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '1758'
-ht-degree: 100%
-
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+workflow-type: tm+mt
+source-wordcount: '1817'
+ht-degree: 99%
 ---
-
 # Configuration du suivi vidéo pour Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Il existe différentes méthodes pour assurer le suivi des événements vidéo, dont deux sont des options héritées de versions précédentes d’Adobe Analytics. Ces options existantes sont : Jalons hérités et Secondes héritées.
@@ -41,7 +39,7 @@ Appliquez la procédure ci-dessous pour configurer un framework pour le suivi de
 
    * Les exemples dans les sections qui suivent utilisent le nom **my-sc-configuration** pour la configuration et **videofw** pour le framework.
 
-1. Dans la page du framework, sélectionnez un RSID et définissez l’utilisation sur Tout. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. Dans la page du framework, sélectionnez un RSID et définissez l’utilisation sur Tout. ([&#128279;](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Dans la catégorie Général du sidekick, faites glisser le composant vidéo dans le framework.
 1. Sélectionnez une méthode de suivi :
 
@@ -227,7 +225,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Le **premier appel**à Adobe Analytics contient les valeurs suivantes :*
+*Le **premier appel**&#x200B;à Adobe Analytics contient les valeurs suivantes :*
 
 * *prop1 et eVar1 pour eventdata.a.media.name,*
 * *props2-4, avec eVar2 et eVar3 contenant contentType (vidéo) et segment (1:O:1-4)*
@@ -235,13 +233,13 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se pré
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-***Troisième appel**vers Adobe Analytics :*
+***Troisième appel**&#x200B;vers Adobe Analytics :*
 
 * *prop1 et eVar1 contiennent a.media.name ;*
 * *event1 car un segment a été visionné ;*
 * *event2 envoyé avec un temps de lecture = 4 ;*
-* *event11 envoyé car eventdata.events.milestone8 a été atteint ;* 
-* *prop2 à 4 ne sont pas envoyés (car eventdata.events.a.media.view n’a pas été déclenché).* 
+* *event11 envoyé car eventdata.events.milestone8 a été atteint ;*
+* *prop2 à 4 ne sont pas envoyés (car eventdata.events.a.media.view n’a pas été déclenché).*
 
 ## Jalons non hérités {#non-legacy-milestones}
 
@@ -293,26 +291,26 @@ Cette méthode est similaire à la méthode Milestones, à la différence que le
 
    De même, les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+   >[!NOTE]
+   >
+   >Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables aux variables props 1 à 3.
 
@@ -322,7 +320,7 @@ Cette méthode est similaire à la méthode Milestones, à la différence que le
 
    ![lmilestones1](assets/lmilestones1.png)
 
-   *La variable **pev3**envoyée dans l’appel contient les informations suivantes :*
+   *La variable **pev3**&#x200B;envoyée dans l’appel contient les informations suivantes :*
 
    * *Nom* : nom du fichier vidéo (*film.avi*)
 
@@ -350,26 +348,26 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
    Les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>La variable mappée à cette propriété contient le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>La variable mappée à cette propriété contient le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+   >[!NOTE]
+   >
+   >Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables sur prop1, prop2 et prop3.
 

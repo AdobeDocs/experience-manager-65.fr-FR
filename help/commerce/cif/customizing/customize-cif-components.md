@@ -5,13 +5,11 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 95%
-
 ---
-
 # Personnaliser les composants principaux CIF d’Adobe Experience Manager {#customize-cif-components}
 
 Le [projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) est une base de code de référence pour l’utilisation des [composants principaux CIF](https://github.com/adobe/aem-core-cif-components). Dans ce tutoriel, vous allez étendre davantage le composant [Teaser de produit](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) pour afficher un attribut personnalisé d’Adobe Commerce. Vous allez également en apprendre davantage sur l’intégration de GraphQL entre Adobe Experience Manager (AEM) et Adobe Commerce, et sur les hooks d’extension fournis par les composants principaux CIF.
@@ -395,7 +393,7 @@ Dans ce cas, vous devez générer une bannière au-dessus du teaser pour indique
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
+1. Ouvrez une nouvelle fenêtre de navigateur et accédez à AEM et à la **console OSGi** > **Statut** > **Modèles Sling** : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. Recherchez `MyProductTeaserImpl` ; une ligne semblable à la suivante devrait apparaître :
 

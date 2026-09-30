@@ -10,11 +10,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
-
+source-wordcount: '742'
+ht-degree: 98%
 ---
-
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
@@ -58,18 +56,18 @@ Pour installer la fonctionnalité eCommerce, vous avez besoin des éléments sui
 * Votre serveur Hybris
 * Le framework d’AEM eCommerce :
 
-   * fait partie d’une installation d’AEM standard.
+  * fait partie d’une installation d’AEM standard.
 
 * Le package Geometrixx-all d’AEM :
 
-   * `cq-geometrixx-all-pkg`
+  * `cq-geometrixx-all-pkg`
 
-* Packages de contenu AEM Hybris : 
+* Modules de contenu AEM Hybris :
 
-   * `cq-hybris-content-6.3.2`
-   * Implémentation de l’API spécifique à Hybris
-   * `cq-geometrixx-hybris-content-6.3.2`
-   * Implémentation de référence permettant d’illustrer l’utilisation d’Hybris (`geometrixx-outdoors/en_US`)
+  * `cq-hybris-content-6.3.2`
+  * Implémentation de l’API spécifique à Hybris
+  * `cq-geometrixx-hybris-content-6.3.2`
+  * Implémentation de référence permettant d’illustrer l’utilisation d’Hybris (`geometrixx-outdoors/en_US`)
 
 ### Installer eCommerce avec Hybris {#installation-of-ecommerce-with-hybris}
 
@@ -80,7 +78,7 @@ Pour installer une configuration complète (à l’aide du catalogue de démonst
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installez les packages de contenu de démonstration à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md) :
+1. Installez les modules de contenu de démonstration à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md) :
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -143,7 +141,7 @@ Les étapes de cette procédure téléchargent et créent le serveur Hybris. Ell
    ```
 
 
-[Obtenir le fichier](/help/sites-deploying/assets/setup.groovy)
+   [Obtenir le fichier](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -151,7 +149,7 @@ Les étapes de cette procédure téléchargent et créent le serveur Hybris. Ell
 
    5.6.0 et versions ultérieures
 
-[Obtenir le fichier](/help/sites-deploying/assets/setup-1.groovy)
+   [Obtenir le fichier](/help/sites-deploying/assets/setup-1.groovy)
 
 1. Dans la ligne de commande, exécutez la commande ci-dessous pour :
 
@@ -172,7 +170,7 @@ Les étapes de cette procédure téléchargent et créent le serveur Hybris. Ell
 
 1. Dans votre navigateur, accédez à la **console d’administration Hybris** à l’emplacement :
 
-   [http://localhost:9002](http://localhost:9002)
+   [&#128279;](http://localhost:9002)
 
 1. Cliquez sur **Initialiser**, puis confirmez l’action d’initialisation (car elle va supprimer les données existantes).
 
@@ -195,7 +193,7 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 1. Dans votre navigateur, accédez à la **console de gestion Hybris** à l’emplacement :
 
-   [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
+   [&#128279;](https://localhost:9002/backoffice)
 
    Utilisez les informations d’identification suivantes :
    * Nom d’utilisateur : admin
@@ -204,16 +202,16 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 1. À partir de la navigation de la barre latérale, développez **Système** et **Outils**. Sélectionnez ensuite **Importer** pour ouvrir la fenêtre **Assistant : Importation CSV**.
 1. Dans l’onglet **Configuration**, **téléchargez** le **fichier d’importation** suivant :
 
-[Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
+   [Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
-1. Définissez le **paramètre régional** sur :
+1. Définissez les **paramètres régionaux** sur :
 
    `en_US - English (United States)`
 
 1. Ouvrez l’onglet **Ressources**.
 1. **Téléchargez** le **Media-Zip** suivant :
 
-[Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
+   [Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Pour importer les fichiers spécifiés, cliquez sur **Démarrer**. L’onglet **Résultat** affiche des entrées de journal.
 
@@ -223,13 +221,13 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 1. **Chargez** le **fichier d’importation** suivant :
 
-[Obtenir le fichier](/help/sites-deploying/assets/base-store.csv)
+   [Obtenir le fichier](/help/sites-deploying/assets/base-store.csv)
 
    Pour Hybris 5.7, utilisez le fichier suivant :
 
-[Obtenir le fichier](/help/sites-deploying/assets/base-store-5_7.csv)
+   [Obtenir le fichier](/help/sites-deploying/assets/base-store-5_7.csv)
 
-1. Définissez le **paramètre régional** sur :
+1. Définissez les **paramètres régionaux** sur :
 
    `en_US - English (United States)`
 
@@ -239,4 +237,4 @@ Cette procédure télécharge et configure le magasin de démonstration - Geomet
 
 1. À présent, vous pouvez utiliser le cockpit du produit pour afficher les catalogues et les produits importés :
 
-   [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
+   [&#128279;](http://localhost:9002/productcockpit)

@@ -10,7 +10,7 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 95%
@@ -656,82 +656,82 @@ Vous pouvez personnaliser le composant cible en accédant aux options du composa
 
 1. Configurez les paramètres du composant cible, comme indiqué dans les tableaux suivants.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Emplacement</strong></td>
-   <td><p>L’emplacement est une chaîne qui attribue un nom à l’emplacement du contenu ciblé et connecte les offres aux lieux (ou aux emplacements ou composants) dans la page où ces offres doivent être positionnées.</p> <p>Ce champ est une valeur générique.</p> <p>Si vous placez une offre dans un composant, elle mémorise l’identifiant de l’emplacement. Lorsque la page est exécutée, le moteur évalue les segments de l’utilisateur ou de l’utilisatrice et, en fonction de cela, résout les expériences des campagnes actives qui doivent être affichées. Ensuite, il vérifie les identifiants d’emplacement sur la page et tente de faire correspondre les offres avec ceux-ci.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Moteur</strong></td>
-   <td>Choisissez entre <strong>Règles côté client (sans suivi), Adobe Target, ContextHub </strong>et<strong> Adobe Campaign </strong>en fonction du moteur que vous souhaitez utiliser.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Emplacement</strong></td>
+      <td><p>L’emplacement est une chaîne qui attribue un nom à l’emplacement du contenu ciblé et connecte les offres aux lieux (ou aux emplacements ou composants) dans la page où ces offres doivent être positionnées.</p> <p>Ce champ est une valeur générique.</p> <p>Si vous placez une offre dans un composant, elle mémorise l’identifiant de l’emplacement. Lorsque la page est exécutée, le moteur évalue les segments de l’utilisateur ou de l’utilisatrice et, en fonction de cela, résout les expériences des campagnes actives qui doivent être affichées. Ensuite, il vérifie les identifiants d’emplacement sur la page et tente de faire correspondre les offres avec ceux-ci.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Moteur</strong></td>
+      <td>Choisissez entre <strong>Règles côté client (sans suivi), Adobe Target, ContextHub </strong>et<strong> Adobe Campaign </strong>en fonction du moteur que vous souhaitez utiliser.</td>
+   </tr>
+   </tbody>
+   </table>
 
-Si vous sélectionnez Adobe Target comme moteur :
+   Si vous sélectionnez Adobe Target comme moteur :
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+   ![chlimage_1-39](assets/chlimage_1-39.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Ciblage précis</strong></td>
-   <td><p>L’activation d’un ciblage précis indique au composant d’attendre que les données ClientContext ou ContextHub soient disponibles avant d’envoyer la demande à Adobe Target. Cela peut augmenter le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne cochez pas la case <strong>Ciblage précis</strong>, la mbox effectue une opération <code>mboxCreate</code> entraînant immédiatement une demande synchrone (dans ce cas, les données de contexte ne sont pas toutes encore disponibles).</p> <p><strong>Remarque :</strong> l’activation ou la désactivation du ciblage précis sur un composant spécifique n’a pas incidence sur les paramètres que vous avez définis au niveau global. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Inclure les segments résolus</strong></td>
-   <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Paramètres contextuels hérités</strong></td>
-   <td>Répertorie les paramètres de contexte hérités de l’infrastructure Adobe Target, le cas échéant, associés à la page sélectionnée.</td>
-  </tr>
-  <tr>
-   <td><strong>Paramètres de contexte</strong></td>
-   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans le framework.</td>
-  </tr>
-  <tr>
-   <td><strong>Paramètres statiques</strong></td>
-   <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres statiques ajoutés au composant concernent <i>uniquement</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à le framework. Les paramètres statiques ne proviennent pas du contexte (contexte client du contenu du hub).</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Ciblage précis</strong></td>
+      <td><p>L’activation d’un ciblage précis indique au composant d’attendre que les données ClientContext ou ContextHub soient disponibles avant d’envoyer la demande à Adobe Target. Cela peut augmenter le temps de chargement. Pour la création, le ciblage précis est toujours activé.</p> <p>Si vous cochez la case <strong>Ciblage précis</strong>, la mbox commence par effectuer une opération <code>mboxDefine</code>, puis une opération <code>mboxUpdate</code> dans une demande Ajax une fois que les données sont disponibles.</p> <p>Si vous ne cochez pas la case <strong>Ciblage précis</strong>, la mbox effectue une opération <code>mboxCreate</code> entraînant immédiatement une demande synchrone (dans ce cas, les données de contexte ne sont pas toutes encore disponibles).</p> <p><strong>Remarque :</strong> l’activation ou la désactivation du ciblage précis sur un composant spécifique n’a pas incidence sur les paramètres que vous avez définis au niveau global. Vous pouvez toujours remplacer les paramètres globaux en sélectionnant Ciblage précis dans le composant.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Inclure les segments résolus</strong></td>
+      <td><p>Si vous cochez cette case, tous les segments résolus dans l’appel de mbox et les paramètres configurés dans la page et dans l’infrastructure sont inclus.</p> <p>Cela ne fonctionne que dans les situations où vous utilisez une API XML, pour synchronisez les segments AEM. Si des segments dans AEM ne sont pas gérés par Adobe Target (comme les segments de script), cette option vous permet de résoudre le segment dans AEM et d’envoyer à Adobe Target des informations indiquant que le segment est actif.</p> </td>
+   </tr>
+   <tr>
+      <td><strong>Paramètres contextuels hérités</strong></td>
+      <td>Répertorie les paramètres de contexte hérités de l’infrastructure Adobe Target, le cas échéant, associés à la page sélectionnée.</td>
+   </tr>
+   <tr>
+      <td><strong>Paramètres de contexte</strong></td>
+      <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres de contexte supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres de contexte ajoutés au composant ne concernent <i>que</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres de contexte directement dans le framework.</td>
+   </tr>
+   <tr>
+      <td><strong>Paramètres statiques</strong></td>
+      <td>Cliquez sur <strong>Ajouter un champ</strong> pour configurer des paramètres statiques supplémentaires (comme ceux disponibles dans le framework de Target). Les paramètres statiques ajoutés au composant concernent <i>uniquement</i> ce composant et non un autre composant, comme ce serait le cas si vous ajoutiez des paramètres statiques directement à le framework. Les paramètres statiques ne proviennent pas du contexte (contexte client du contenu du hub).</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
+   >[!NOTE]
+   >
+   >Lorsque vous sélectionnez un composant et le rendez ciblable, AEM remplace également le composant et injecte un composant Adobe Target. (Le composant Adobe Target est non seulement utilisé lorsque vous l’ajoutez manuellement à la page, mais également lorsque vous ciblez un composant existant.)
 
-Si vous sélectionnez ClientContext (côté client) comme moteur :
+   Si vous sélectionnez ClientContext (côté client) comme moteur :
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+   ![chlimage_1-40](assets/chlimage_1-40.png)
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td><strong>Options côté client – Stratégie</strong></td>
-   <td><p>Sélectionnez l’une des options suivantes :</p>
-    <ul>
-     <li><strong>Première</strong> : expérience la plus haute dans la liste, telle qu’elle a été classée dans la campagne.</li>
-     <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
-     <li><strong>Score Clickstream</strong> : les balises et les hits de balises associés suivis dans le contexte du client sont utilisés. Les taux de hits des balises définies sur la page de teaser sont comparés.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Option</strong></td>
+      <td><strong>Description</strong></td>
+   </tr>
+   <tr>
+      <td><strong>Options côté client – Stratégie</strong></td>
+      <td><p>Sélectionnez l’une des options suivantes :</p>
+      <ul>
+      <li><strong>Première</strong> : expérience la plus haute dans la liste, telle qu’elle a été classée dans la campagne.</li>
+      <li><strong>Aléatoire</strong> : n’importe quelle expérience est utilisée.</li>
+      <li><strong>Score Clickstream</strong> : les balises et les hits de balises associés suivis dans le contexte du client sont utilisés. Les taux de hits des balises définies sur la page de teaser sont comparés.</li>
+      </ul> </td>
+   </tr>
+   </tbody>
+   </table>
 
-Vous sélectionnez **Adobe Campaign** comme moteur si vous intégrez AEM à Adobe Campaign. Pour plus d’informations, consultez [Intégration d’AEM à Adobe Campaign](/help/sites-administering/campaign.md).
+   Vous sélectionnez **Adobe Campaign** comme moteur si vous intégrez AEM à Adobe Campaign. Pour plus d’informations, consultez [Intégration d’AEM à Adobe Campaign](/help/sites-administering/campaign.md).
 
-Sélectionnez **ContextHub** comme moteur si vous utilisez le ciblage ContextHub. Voir [Configuration de ContextHub.](/help/sites-developing/ch-configuring.md)
+   Sélectionnez **ContextHub** comme moteur si vous utilisez le ciblage ContextHub. Voir [Configuration de ContextHub.](/help/sites-developing/ch-configuring.md)

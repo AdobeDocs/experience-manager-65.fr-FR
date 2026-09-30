@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 100%
-
 ---
-
 # Utilisation de CAPTCHA dans les formulaires adaptifs{#using-captcha-in-adaptive-forms}
 
 | Version | Lien de l’article |
@@ -84,7 +82,7 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 ### Configurer Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obtenir la [paire de clés de l’API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Elle comprend une **clé de site** et une **clé secrète**.
-1. Créez un conteneur de configurations pour les services cloud.
+1. Créez un conteneur de configuration pour les services cloud.
    1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
 
@@ -238,7 +236,7 @@ Sélectionnez le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et 
 
 >[!NOTE]
 >
-> * Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme **[!UICONTROL Invisible]** ou les clés basées sur un score reCAPTCHA Enterprise, l’option afficher/masquer n’est pas applicable.
+>* Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme **[!UICONTROL Invisible]** ou les clés basées sur un score reCAPTCHA Enterprise, l’option afficher/masquer n’est pas applicable.
 
 ### Valider le CAPTCHA {#validate-captcha}
 

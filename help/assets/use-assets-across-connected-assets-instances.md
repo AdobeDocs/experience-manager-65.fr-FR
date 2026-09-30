@@ -1,6 +1,6 @@
 ---
-title: Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Sites]
-description: Utilisez les ressources disponibles sur un déploiement [!DNL Adobe Experience Manager Assets] à distance lorsque vous créez vos pages Web sur un autre déploiement [!DNL Adobe Experience Manager Sites] .
+title: Utilisation des ressources connectées pour partager des ressources de gestion des ressources numériques dans [!DNL Sites]
+description: Utilisez les ressources disponibles sur un déploiement [!DNL Adobe Experience Manager Assets] distant lors de la création de vos pages web sur un autre déploiement [!DNL Adobe Experience Manager Sites].
 contentOwner: AK
 mini-toc-levels: 2
 role: User, Admin, Leader
@@ -10,11 +10,9 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4025'
 ht-degree: 98%
-
 ---
-
 # Utilisation des ressources connectées pour partager des ressources de gestion des ressources numériques dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Version | Lien de l’article |
@@ -162,8 +160,8 @@ Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 
 Pour configurer les déploiements [!DNL Dynamic Media] sur [!DNL Assets] et [!DNL Sites] :
 
-1. Activez et configurez [!DNL Dynamic Media] en tant que configuration globale pour le déploiement de l’auteur de [!DNL Assets] à distance. Pour configurer Dynamic Media, voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
-Sur le déploiement [!DNL Assets] distant, dans [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
+1. Activez et configurez [!DNL Dynamic Media] en tant que configuration globale pour le déploiement de l’auteur [!DNL Assets] à distance. Pour configurer Dynamic Media, consultez la section [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+Sur le déploiement [!DNL Assets] distant, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
 
 1. Créez une configuration de ressources connectées comme décrit dans la section [Configuration de la connexion entre les sites et des déploiements de ressources](#configure-a-connection-between-sites-and-assets-deployments). Sélectionnez également l’option **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées Dynamic Media]**.
 

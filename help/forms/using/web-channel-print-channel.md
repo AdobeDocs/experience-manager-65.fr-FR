@@ -1,20 +1,23 @@
 ---
 title: Canal d’impression et canal web
+
 description: Importation de modèles de canaux d’impression et création et activation de modèles de canaux web
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 100%
-
 ---
-
 # Canal d’impression et canal web{#print-channel-and-web-channel}
 
 Les communications interactives peuvent être fournies par deux canaux : impression et web. Le canal d’impression est utilisé pour créer des documents PDF et des communications papier, comme une lettre imprimée comme rappel pour le paiement de primes d’assurance, tandis que le canal web est utilisé pour fournir des expériences en ligne, comme un relevé de carte de crédit sur un site web.
@@ -45,7 +48,7 @@ Les créateurs et créatrices de modèles et les administrateurs et administratr
 
 Pour créer un modèle de canal web, vous devez d’abord créer un dossier modèle. Une fois que vous avez créé un modèle web dans un dossier de modèles, vous devez l’activer pour permettre aux utilisateurs de formulaires de créer le canal web d’une communication interactive en fonction du modèle.
 
-Pour créer un modèle de canal web, effectuez les étapes suivantes : 
+Pour créer un modèle de canal web, effectuez les étapes suivantes :
 
 1. Créez un dossier Modèle pour conserver vos modèles web de communication interactive, si vous n’en avez pas déjà un. Pour plus d’informations, reportez-vous à Dossiers de modèles dans [Modèles de page modifiables](/help/sites-developing/page-templates-editable.md).
 
