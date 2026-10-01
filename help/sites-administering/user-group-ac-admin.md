@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
-ht-degree: 100%
-
+source-wordcount: '3109'
+ht-degree: 99%
 ---
-
 # Administration des utilisateurs, des utilisatrices, des groupes et des droits d’accès{#user-group-and-access-rights-administration}
 
 Plusieurs thèmes sont associés à l’activation de l’accès à un référentiel CRX :
@@ -60,7 +58,7 @@ CRX permet de configurer les droits d’accès pour des comptes utilisateur et d
 
 >[!NOTE]
 >
->CRX implémente le [contrôle d’accès tel que défini par JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implémente le [contrôle d’accès tel que défini par JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >L’installation standard du référentiel CRX est configurée de manière à utiliser des listes de contrôle d’accès dépendant des ressources. Il s’agit d’une implémentation possible du contrôle d’accès JSR-283 et de l’une des implémentations présentes avec Jackrabbit.
 
@@ -70,22 +68,22 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
 * Un **principal de sécurité** est une entité qui transfère des droits d’accès. Les entités incluent :
 
-   * Un compte d’utilisateur
-   * Un compte de groupe
+  * Un compte d’utilisateur
+  * Un compte de groupe
 
-     Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacun de ces principaux du groupe.
+    Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacun de ces principaux du groupe.
 
 * Un **objet** est utilisé pour représenter la source de la demande.
 
   Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
 
-   * le principal de sécurité de l’utilisateur ;
+  * le principal de sécurité de l’utilisateur ;
 
-     Les droits affectés directement au compte d’utilisateur
+    Les droits affectés directement au compte d’utilisateur
 
-   * tous les principaux de sécurité des groupes associés à cet utilisateur.
+  * tous les principaux de sécurité des groupes associés à cet utilisateur.
 
-     Tous les droits sont affectés aux groupes auxquels appartient l’utilisateur ou l’utilisatrice.
+    Tous les droits sont affectés aux groupes auxquels appartient l’utilisateur ou l’utilisatrice.
 
   Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
 
@@ -124,8 +122,8 @@ Les droits d’accès dans CRX sont évalués comme suit :
 
 * Les entités d’utilisateur ou d’utilisatrice ont toujours la priorité sur les entités de groupe, indépendamment de :
 
-   * leur ordre dans la liste de contrôle d’accès ;
-   * leur position dans la hiérarchie des nœuds.
+  * leur ordre dans la liste de contrôle d’accès ;
+  * leur position dans la hiérarchie des nœuds.
 
 * Pour un principal donné, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
 
@@ -491,7 +489,7 @@ Les politiques peuvent être sélectionnées pour les éléments suivants :
 
 ### Autorisations {#privileges}
 
-Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d’une entrée de contrôle d’accès (pour plus d’informations, voir [API de sécurité](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)) :
+Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d’une entrée de contrôle d’accès (pour plus d’informations, voir [API de sécurité](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)) :
 
 <table>
  <tbody>

@@ -9,13 +9,11 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3252'
 ht-degree: 1%
-
 ---
-
 # Notifications Push{#push-notifications}
 
 {{ue-over-mobile}}
@@ -77,7 +75,7 @@ Les étapes suivantes présentent une autre méthode de création des clés API 
 
 1. Connectez-vous à Google et accédez à la page du développeur de Google [&#128279;](https://developers.google.com/mobile/add?platform=android&cntapi=gcm).
 1. Choisissez votre application dans la liste (ou créez-en une).
-1. Sous Nom du package Android™, saisissez votre ID d’application, c’est-à-dire `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec « test.test ».)
+1. Sous Nom du package ™, saisissez votre ID d’application, c’est-à-dire `com.adobe.cq.mobile.weretail.outdoorsapp`. (Si cela ne fonctionne pas, réessayez avec « test.test ».)
 1. Cliquez sur **Continuer pour choisir et configurer les services**
 1. Sélectionnez Cloud Messaging, puis cliquez sur **Activer Google Cloud Messaging**.
 1. La nouvelle clé API du serveur et l’ID d’expéditeur (nouveau ou existant) s’affichent alors.
@@ -94,7 +92,7 @@ AEM est configuré pour utiliser l’un des trois services pour les notification
 * Pushwoosh
 * Adobe Mobile Services
 
-Les configurations *Amazon SNS* et *Pushwoosh* permettent d’envoyer des notifications push depuis les écrans AEM.
+Les configurations *Amazon SNS* et *Pushwoosh* vous permettent d’envoyer des notifications push depuis les écrans AEM.
 
 La configuration *Adobe Mobile Services* vous permet de configurer et d’envoyer des notifications push depuis Adobe Mobile Services à l’aide d’un compte Adobe Analytics (mais l’application doit être créée avec cette configuration définie pour activer les notifications push AMS).
 
@@ -170,7 +168,7 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> « Version » : « 2012-10-17 »,</p> <p> « Instruction » : [</p> <p> {</p> <p> « Action » : [</p> <p> « mobileanalytics:PutEvents »,</p> <p> « cognito-sync:* »,</p> <p> « SNS:CreatePlatformEndpoint »,</p> <p> « SNS:Subscribe »</p> <p> ],</p> <p> « Effect » : « Allow »,</p> <p> « Ressource » : [</p> <p> « * »</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> « Version » : « 2012-10-17 »,</p> <p> « Instruction » : [</p> <p> {</p> <p> « Action » : [</p> <p> « mobileanalytics:PutEvents »,</p> <p> « cognito-sync:* »,</p> <p> « SNS:CreatePlatformEndpoint »,</p> <p> « SNS:Subscribe »</p> <p> ],</p> <p> « Effect » : « Allow »,</p> <p> « Ressource » : [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -193,7 +191,7 @@ Pour utiliser Pushwoosh :
 
 1. **Créer une application**
 
-   1. Pour la prise en charge d’Android™, vous devez fournir votre clé API GCM.
+   1. Pour la prise en charge d’™, vous devez fournir votre clé API GCM.
    1. Lors de la configuration de l’application, choisissez Cordova comme framework.
    1. Pour la prise en charge d’iOS, vous devez fournir le fichier de certificat (.cer), le certificat push (.p12) et le mot de passe de la clé privée ; ceux-ci doivent avoir été obtenus auprès du site APNS d’Apple. Pour Framework, choisissez Cordova.
    1. Pushwoosh génère un ID d’application pour cette application, sous la forme « XXXXX-XXXXX », où chaque X est une valeur hexadécimale (0 à F).
@@ -212,9 +210,9 @@ Créez deux nœuds de contenu (l’un dans app-config et l’autre dans app-conf
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 Avec ces propriétés (fichiers .content.xml) :
-&lt;jcr:root xmlns:jcr= » [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html) » xmlns:nt= » [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html) »
+&lt;jcr:root xmlns:jcr= » [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html) » xmlns:nt= » [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html) »
 jcr:primaryType=« nt:unstructured »
-excludeProperties= »[appAPIAccessToken] »
+excludeProperties=« [appAPIAccessToken] »
 path= »../../../.. »
 targetRootDirectory=« www »
 type=« notificationsconfig »/>
@@ -227,7 +225,7 @@ type=« notificationsconfig »/>
 
 Les bibliothèques clientes des notifications push doivent être ajoutées à l’application en procédant comme suit :
 
-En CRXDE Lite :
+Dans CRXDE Lite :
 
 1. Accédez à */etc/designs/phonegap/&lt;app name>/clientlibsall.*
 1. Double-cliquez sur la section incorporer dans le volet des propriétés.
@@ -254,19 +252,19 @@ Avec XCode 8.1, avant d’utiliser les notifications push, vous devez accéder �
 
 #### Android™ {#android}
 
-Pour installer l’application sur un téléphone Android™ à l’aide de l’interface de ligne de commande (voir ci-dessous : **Étape 6 - Créer et déployer l’application**), vous devez d’abord placer le téléphone en « mode développeur ». Voir [Activation des options du développeur sur l’appareil](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations.
+Pour installer l’application sur un téléphone ™ à l’aide de l’interface de ligne de commande (voir ci-dessous : **Étape 6 - Créer et déployer l’application**), vous devez d’abord placer le téléphone en « mode développeur ». Voir [Activation des options du développeur sur l’appareil](https://developer.android.com/tools/device.html#developer-device-options) pour plus d’informations.
 
 ### Étape 5 : configuration des notifications push sur les applications AEM {#step-configure-push-on-aem-apps}
 
 Avant de créer et de déployer sur l’appareil mobile configuré, vous devez configurer les paramètres de notification du service de messagerie que vous avez décidé d’utiliser.
 
 1. Créez les groupes d’autorisations appropriés pour les notifications push.
-1. Connectez-vous à AEM en tant qu’utilisateur approprié, puis cliquez sur l’onglet Applications .
+1. Connectez-vous à AEM en tant qu’utilisateur approprié et cliquez sur l’onglet Applications .
 1. Cliquez sur l’application .
-1. Recherchez la mosaïque Gestion des Cloud Service et cliquez sur le crayon pour modifier vos configurations cloud.
-1. Sélectionnez Amazon SNS Connection, Pushwoosh Connection ou Adobe Mobile Services comme configuration de notification.
+1. Recherchez la mosaïque Gestion des services cloud et cliquez sur le crayon pour modifier vos configurations cloud.
+1. Sélectionnez Amazon SNS Connection, Pushwoosh Connection ou Adobe Mobile Services, comme configuration de notification.
 1. Saisissez les propriétés du fournisseur et cliquez sur Envoyer pour les enregistrer, puis sur Terminé. Ils ne sont pas vérifiés à distance à ce stade, sauf s’il existe AMS.
-1. Vous devriez maintenant voir la configuration que vous venez de saisir sur la mosaïque Gestion des Cloud Service .
+1. Vous devriez maintenant voir la configuration que vous venez de saisir dans la mosaïque Gestion des services cloud .
 
 ### Étape 6 : créer et déployer l’application {#step-build-and-deploy-the-app}
 
@@ -276,7 +274,7 @@ Il existe deux façons de créer et de déployer votre application à l’aide d
 
 **Remarque :** pour les tests de notification push, les émulateurs ne suffiront pas, car les notifications push utilisent un protocole distinct entre le fournisseur push (Apple ou Google) et l&#39;appareil. Le matériel et les émulateurs Mac/PC actuels ne prennent pas en charge cette fonctionnalité.
 
-1. *PhoneGap Build* est un service offert par PhoneGap qui créera votre application pour vous sur leurs serveurs, et vous permettra de la télécharger directement sur votre appareil. Consultez la documentation de PhoneGap Build à l’adresse `https://build.phonegap.com/` pour savoir comment configurer et utiliser PhoneGap Build.
+1. *PhoneGap Build* est un service proposé par PhoneGap qui créera votre application pour vous sur leurs serveurs, et vous permettra de la télécharger directement sur votre appareil. Consultez la documentation PhoneGap Build à l’adresse `https://build.phonegap.com/` pour savoir comment configurer et utiliser PhoneGap Build.
 
 1. L’interface de ligne de commande *PhoneGap Command Line Interface* (CLI) vous permet d’utiliser un jeu riche de commandes PhoneGap sur votre ligne de commande pour créer, déboguer et déployer votre application. Reportez-vous à la documentation PhoneGap destinée aux développeurs (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) pour savoir comment configurer et utiliser l’interface de ligne de commande PhoneGap.
 
@@ -302,8 +300,8 @@ Pour créer une notification et l’envoyer, procédez comme suit.
    * Si l’envoi push échoue, la boîte de dialogue affiche un message indiquant le problème. Dans la liste des notifications, le statut de cette notification est marqué comme Erreur, mais si le problème est corrigé, la notification peut être envoyée à nouveau. En cas d’erreur, des informations supplémentaires sur l’erreur doivent apparaître dans le journal des erreurs du serveur.
    * Notez qu’il existe des différences de plateforme entre les notifications push iOS et Android™. Parmi eux :
 
-      * La création avec l’interface de ligne de commande démarre l’application après son déploiement sur Android™. Sur iOS, vous devez le démarrer manuellement. Comme l’étape d’enregistrement push se produit au démarrage, les applications Android™ peuvent recevoir immédiatement des notifications push (car elles ont déjà démarré et sont enregistrées), contrairement aux applications iOS.
-      * Dans Android™, le texte du bouton OK est en majuscules (et dans tout autre bouton ajouté à la notification in-app), ce qui n’est pas le cas dans iOS.
+     * La création avec l’interface de ligne de commande démarre l’application après son déploiement sur ™. Sur iOS, vous devez le démarrer manuellement. Comme l’étape d’enregistrement push se produit au démarrage, les applications ™ peuvent recevoir immédiatement des notifications push (car elles ont déjà démarré et sont enregistrées), contrairement aux applications iOS.
+     * Dans ™, le texte du bouton OK est en majuscules (et dans tout autre bouton ajouté à la notification in-app), ce qui n’est pas le cas dans iOS.
 
 Pour les notifications push AMS, les notifications doivent être composées et envoyées à partir du serveur AMS. AMS fournit des fonctionnalités de notification push supplémentaires en plus de celles fournies par les notifications AEM avec AWS et Pushwoosh.
 
@@ -325,7 +323,7 @@ Créez la notification, ajoutez un texte de bouton et le chemin du lien pour le 
 >
 >Pour accéder à la mosaïque Notification push dans votre tableau de bord, procédez comme suit.
 
-1. Cliquez sur le bouton Modifier dans le coin supérieur droit de la mosaïque **Gérer les Cloud Service**.
+1. Cliquez sur le bouton de modification situé dans le coin supérieur droit de la mosaïque **Gérer les services cloud**.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 

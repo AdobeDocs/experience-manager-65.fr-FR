@@ -9,13 +9,11 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
-
+source-wordcount: '550'
+ht-degree: 93%
 ---
-
 # Créer un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
 
 L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires. Ils sont appelés *champs* selon la terminologie de l’IU Granite. Les composants de formulaire Granite standard sont disponibles sous :
@@ -28,35 +26,35 @@ L’IU Granite fournit toute une gamme de composants conçus pour être utilisé
 
 >[!NOTE]
 >
->Pour plus d’informations sur les champs, reportez-vous à la [documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Pour plus d’informations sur les champs, reportez-vous à la [documentation sur l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilisez le framework de base de l’interface utilisateur de Granite pour développer et/ou étendre les composants Granite. Il comporte deux éléments :
 
 * côté serveur :
 
-   * une collection de composants de base
+  * une collection de composants de base
 
-      * base : modulaire, composable, lisible, réutilisable
-      * Composants : composants Sling
+    * base : modulaire, composable, lisible, réutilisable
+    * Composants : composants Sling
 
-   * aide au développement des applications
+  * aide au développement des applications
 
 * côté client :
 
-   * une collection de bibliothèques clientes fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des modèles d’interaction génériques par le biais d’une interface utilisateur pilotée par Hypermedia.
+  * une collection de bibliothèques clientes fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des modèles d’interaction génériques par le biais d’une interface utilisateur pilotée par Hypermedia.
 
 Le composant d’IU Granite générique `field` se compose de deux fichiers d’intérêt :
 
 * `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous avez besoin lors du rendu du champ.
 * `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué, il doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
 
-Voir [Documentation de l’interface utilisateur Granite - Champ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
+Voir [Documentation de l’interface utilisateur Granite - Champ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
 
 Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 

@@ -1,5 +1,5 @@
 ---
-title: Notions fondamentales sur les blogs
+title: Blog Essentials
 description: Découvrez comment ajouter la fonction Blog à une page afin que les membres de la communauté connectés puissent publier des articles de blog.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,28 +10,26 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '475'
 ht-degree: 3%
-
 ---
+# Blog Essentials {#blog-essentials}
 
-# Notions fondamentales sur les blogs {#blog-essentials}
+Depuis AEM 6.1 Communities, un blog est une activité de la communauté. Les articles de blog sont désormais publiés à partir de l’environnement de publication, où, auparavant, ils ne pouvaient être créés et publiés que dans l’environnement de création.
 
-Depuis AEM 6.1 Communities, un blog est une activité communautaire. Les articles de blog sont maintenant publiés à partir de l’environnement de publication, où auparavant, les articles de blog ne pouvaient être créés que dans l’environnement de création et publiés.
+Les articles de blog peuvent maintenant être créés par n&#39;importe quel membre de la communauté, sauf s&#39;ils sont réservés aux membres privilégiés.
 
-Les articles de blog peuvent maintenant être créés par n&#39;importe quel membre de la communauté, sauf si cela est limité aux membres privilégiés.
-
-Cette page fournit les informations essentielles pour utiliser la fonction de blog.
+Cette page fournit des informations essentielles sur l’utilisation de la fonctionnalité de blog.
 
 >[!NOTE]
 >
->L&#39;infrastructure sous-jacente de la fonction de blog est la fonction de journal.
+>L’infrastructure sous-jacente de la fonction de blog est la fonction de journal.
 
-## Principes élémentaires pour le côté client {#essentials-for-client-side}
+## Essentials pour le côté client {#essentials-for-client-side}
 
-La fonction de blog est composée de deux composants principaux disponibles en ajoutant la [fonction de blog](/help/communities/functions.md#blog-function) ou en ajoutant les composants à une page en mode d’édition de création.
+La fonction de blog est composée de deux composants principaux qui sont disponibles en ajoutant la [fonction de blog](/help/communities/functions.md#blog-function) ou en ajoutant les composants à une page en mode d’édition création.
 
 ### Blog {#blog}
 
@@ -42,7 +40,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
    <td>social/journal/components/hbs/journal</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>includable</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -50,8 +48,8 @@ La fonction de blog est composée de deux composants principaux disponibles en a
    <td>cq.ckeditor<br /> cq.social.hbs.votes<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
-   <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
+   <td> <strong>modèles</strong></td>
+   <td> <br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
    <td> <strong>css</strong></td>
@@ -59,7 +57,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>voir <a href="/help/communities/blog-feature.md">Fonctionnalité de blog</a></td>
+   <td>voir <a href="/help/communities/blog-feature.md"> Fonctionnalité de blog </a></td>
   </tr>
  </tbody>
 </table>
@@ -68,56 +66,56 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
-| [**includable**](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
+| [**inclusible**](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **modèles** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propriétés** | voir [Fonctionnalité de blog](/help/communities/blog-feature.md) |
+| **propriétés** | voir [&#x200B; Fonctionnalité de blog &#x200B;](/help/communities/blog-feature.md) |
 
 * [Personnalisations côté client](/help/communities/client-customize.md)
 
-## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
+## Essentials pour côté serveur {#essentials-for-server-side}
 
-* [API de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API de blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Points d’entrée de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Points d’entrée de blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 ### Fonction Blog {#blog-function}
 
-Une structure de site de communauté qui inclut la [fonction de blog](/help/communities/functions.md#blog-function) a des composants `Blog` et `Blog Sidebar` configurés. La fonction Blog prend en charge l’identification d’un [groupe d’utilisateurs privilégiés](/help/communities/users.md#privileged-members-group).
+Une structure de site de communauté qui inclut la [fonction Blog](/help/communities/functions.md#blog-function) comporte des composants `Blog` et `Blog Sidebar` configurés. La fonction Blog prend en charge l’identification d’un [groupe d’utilisateurs membre privilégié](/help/communities/users.md#privileged-members-group).
 
 ### Accès aux entrées de blog (UGC) {#accessing-blog-entries-ugc}
 
-Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
-Voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Le contenu créé par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
+Voir [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](/help/communities/working-with-srp.md) pour le contenu créé par l’utilisateur inclut l’accès programmatique au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](/help/communities/working-with-srp.md) pour le contenu créé par l’utilisateur inclut un accès programmatique au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (telle que ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu généré par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - Présentation et utilisation du référentiel.
-* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Exemples et méthodes de l’utilitaire SRP.
+* [Présentation du fournisseur de ressources de stockage](/help/communities/srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Méthodes et exemples d’utilitaires SRP.
 * [Accès au contenu créé par l’utilisateur avec SRP](/help/communities/accessing-ugc-with-srp.md) - Instructions de codage.
-* [Refactorisation de SocialUtils](/help/communities/socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - Mappage des méthodes utilitaires obsolètes aux méthodes utilitaires SRP actuelles.
 
-## Éditeur de Principal {#primary-publisher}
+## Principal Publisher {#primary-publisher}
 
-Lorsque le déploiement est une ferme de publication, il est nécessaire d’identifier un éditeur principal qui interroge les articles planifiés pour publication.
+Lorsque le déploiement est une ferme de publication, il est nécessaire d’identifier un éditeur principal qui recherche les articles devant être publiés.
 
-Pour plus d’informations, voir [Éditeur de Principal](/help/communities/deploy-communities.md#primary-publisher) .
+Voir [Principal Publisher](/help/communities/deploy-communities.md#primary-publisher) pour plus d&#39;informations.
 
-## Autoriser les médias riches {#allowing-rich-media}
+## Autorisation des médias riches {#allowing-rich-media}
 
-La plateforme AEM bloque les liens d’autres sites Web afin d’éviter les attaques XSS, comme décrit dans la section
+La plateforme AEM bloque les liens d’autres sites web afin d’empêcher les attaques XSS, comme décrit dans la section
 
 * [la fonctionnalité Protection contre les failles cross-site scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-À compter de la version AEM 6.2, les modifications qui devaient auparavant être effectuées manuellement sont incluses dans le fichier de configuration AntiSamy par défaut.
+Depuis AEM 6.2, les modifications précédemment requises pour être effectuées manuellement sont incluses dans le fichier de configuration AntiSamy par défaut.
 
 Les médias riches sont incorporés dans un article de blog en sélectionnant l’icône `Embed Media from External Sites` :
 
-![media](assets/media-icon.png)
+![média](assets/media-icon.png)

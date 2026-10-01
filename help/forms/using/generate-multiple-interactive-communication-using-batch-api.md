@@ -9,13 +9,11 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 100%
-
+source-wordcount: '2265'
+ht-degree: 97%
 ---
-
 # Générer plusieurs communications interactives à l’aide de l’API Batch {#use-batch-api-to-generate-multiple-ic}
 
 Vous pouvez utiliser l’API Batch pour générer plusieurs communications interactives à partir d’un modèle. Le modèle consiste en une communication interactive sans données. L’API Batch combine des données avec un modèle pour créer une communication interactive. L’API est utile pour la production en masse de communications interactives. Par exemple, les factures de téléphone ou les relevés de cartes de crédit pour plusieurs clients.
@@ -95,7 +93,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin dʼaccès du modèle de communication interactive à utiliser. Par exemple, `/content/dam/formsanddocuments/testsample/mediumic`. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin dʼaccès du champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ ID devient le nom de la communication interactive correspondante. La valeur par défaut est une valeur [UUID aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booléen | Donnez la valeur False à cette propriété. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec des données récupérées à partir du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON en entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false.  |
+      | usePrefillService | Booléen | Donnez la valeur False à cette propriété. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec des données récupérées à partir du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON en entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false. |
       | batchType | Chaîne | Définissez la valeur sur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option des paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
 
@@ -171,7 +169,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
 ## Appeler l’API par lot à l’aide de requêtes REST
 
-Vous pouvez appeler [l’API par lot](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Cela vous permet de fournir un point d’entrée REST aux autres utilisateurs et utilisatrices pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
+Vous pouvez appeler [l’API par lot](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) par le biais de requêtes REST (Representational State Transfer). Cela vous permet de fournir un point d’entrée REST aux autres utilisateurs et utilisatrices pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
 
 Avant de déployer le servlet Java, vérifiez que vous disposez d’une communication interactive et que les fichiers de données correspondants sont prêts. Effectuez les étapes suivantes pour créer et déployer le servlet Java™ :
 
@@ -338,14 +336,14 @@ Lorsque vous définissez le batchType pour effectuer le rendu du canal web, l’
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Exemple**
-Si votre fichier JSON se trouve à l’emplacement `C:\batch\mergedJsonPath.json` et que vous utilisez le modèle de communication interactive ci-dessous : `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`.
+Si votre fichier JSON se trouve à l’emplacement `C:\batch\mergedJsonPath.json` et que vous utilisez le modèle de communication interactive ci-dessous : `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Alors, l’URL suivante sur le nœud de publication affiche le canal Web de la communication interactive
+Ensuite, l’URL suivante sur le nœud de publication affiche le canal web de la communication interactive
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Outre l’enregistrement des données sur le système de fichiers, vous pouvez stocker les fichiers JSON dans le référentiel CRX, le système de fichiers, le serveur Web ou vous pouvez accéder aux données via le service de préremplissage OSGI. Les syntaxes pour fusionner les données en utilisant les différents protocoles sont les suivantes :
 
-* **Protocole CRX**
+* Protocole **CRX**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocole de fichier**
@@ -356,9 +354,9 @@ Outre l’enregistrement des données sur le système de fichiers, vous pouvez s
 
   SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir Création et exécution d’un service de préremplissage.
 
-  IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de la personne connectée est un exemple de métadonnées pouvant être utilisées.
+  IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant à la personne connectée est un exemple de métadonnées qui pourraient être utilisées.
 
-* **Protocole HTTP**
+* Protocole **HTTP**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

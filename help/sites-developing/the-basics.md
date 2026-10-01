@@ -9,13 +9,11 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 96%
-
+source-wordcount: '3377'
+ht-degree: 93%
 ---
-
 # Concepts de base d’AEM {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +26,10 @@ Vous avez besoin des compétences suivantes pour développer sur AEM :
 
 * Connaissances de base des techniques des applications web, notamment :
 
-   * le cycle de requête-réponse (XMLHttpRequest/XMLHttpResponse)
-   * HTML
-   * CSS
-   * JavaScript
+  * le cycle de requête-réponse (XMLHttpRequest/XMLHttpResponse)
+  * HTML
+  * CSS
+  * JavaScript
 
 * connaissance du fonctionnement d’Experience Server (CRX), y compris de l’explorateur de contenu
 * Pour développer dans l’interface utilisateur classique, des connaissances de base de JSP (JavaServer Pages), notamment la capacité à comprendre et modifier des exemples JSP simples, sont également requises.
@@ -40,11 +38,11 @@ Il est également recommandé de lire et de suivre les [Recommandations et bonne
 
 ## Java™ Content Repository {#java-content-repository}
 
-La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
+La norme Java™ Content Repository (JCR), [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
 
 La spécification est gérée par Adobe Research (Suisse) AG.
 
-Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +84,8 @@ En raison de son approche centrée sur le contenu, Sling implémente un serveur 
 * Niveau RESTful, et pas seulement en surface ; les ressources et les représentations sont correctement modélisées dans le serveur
 * Supprime un ou plusieurs modèles de données.
 
-   * Auparavant, les éléments suivants étaient nécessaires : structure de l’URL, objets métier, schéma de base de données ;
-   * Cela est désormais réduit à : URL = ressource = structure JCR
+  * Auparavant, les éléments suivants étaient nécessaires : structure de l’URL, objets métier, schéma de base de données ;
+  * Cela est désormais réduit à : URL = ressource = structure JCR
 
 ### Décomposition d’URL {#url-decomposition}
 
@@ -160,11 +158,11 @@ Un certain nombre d’autres points sont à noter :
 * Si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par exemple jobs.POST.esp (voir ci-dessous).
 * Plusieurs moteurs de script sont pris en charge :
 
-   * HTL (HTML Template Language : il s’agit du système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour le langage HTML) : `.html`
-   * Pages ECMAScript (JavaScript) (exécution côté serveur) : `.esp, .ecma`
-   * Pages de serveur Java™ (exécution côté serveur) : `.jsp`
-   * Compileur de servlet Java™ (exécution côté serveur) : `.java`
-   * Modèles JavaScript (exécution côté client) : `.jst`
+  * HTL (HTML Template Language : il s’agit du système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour le langage HTML) : `.html`
+  * Pages ECMAScript (JavaScript) (exécution côté serveur) : `.esp, .ecma`
+  * Pages de serveur Java™ (exécution côté serveur) : `.jsp`
+  * Compileur de servlet Java™ (exécution côté serveur) : `.java`
+  * Modèles JavaScript (exécution côté client) : `.jst`
 
 La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
 
@@ -198,19 +196,19 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
 * Si aucun sling n:resourceTypeest défini, alors :
 
-   * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif) ;
+  * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif) ;
 
-     par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
+    par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
 
-   * le type de nœud principal est utilisé.
+  * le type de nœud principal est utilisé.
 
 * Si aucun script n’est trouvé, le script par défaut est utilisé.
 
   Le rendu par défaut est pris en charge sous la forme de texte brut (.txt), HTML (.html) et JSON (.json) qui répertorie toutes les propriétés du nœud (correctement mises en forme). Le rendu par défaut pour l’extension .res, ou les requêtes sans extension de requête, consiste à spouler la ressource (si possible).
 * Pour la gestion des erreurs HTTP (codes 403 ou 404), Sling recherche un script dans :
 
-   * l’emplacement /apps/sling/servlet/errorhandler pour les [scripts personnalisés](/help/sites-developing/customizing-errorhandler-pages.md)
-   * ou l’emplacement des scripts standard /libs/sling/servlet/errorhandler/403.esp, ou 404.esp, respectivement.
+  * l’emplacement /apps/sling/servlet/errorhandler pour les [scripts personnalisés](/help/sites-developing/customizing-errorhandler-pages.md)
+  * ou l’emplacement des scripts standard /libs/sling/servlet/errorhandler/403.esp, ou 404.esp, respectivement.
 
 Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux c’est. En d’autres termes, plus il y a de correspondances avec les sélecteurs, mieux c’est, indépendamment de toute correspondance entre l’extension de la requête ou le nom de la méthode.
 
@@ -243,30 +241,30 @@ Par exemple :
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 La hiérarchie de type de :
 
 * `/x`
-   * est `[ c, b, a, <default>]`
+  * est `[ c, b, a, <default>]`
 * alors que pour `/y`
-   * la hiérarchie est `[ c, a, <default>]`.
+  * la hiérarchie est `[ c, a, <default>]`.
 
 Ceci est dû au fait que `/y` possède la propriété `sling:resourceSuperType` contrairement à `/x`, et donc son super-type est issu de son type de ressource.
 
@@ -278,8 +276,8 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 * Le traitement automatique des méthodes HTTP autres que GET, notamment :
 
-   * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling ;
-   * le script `POST.jsp` dans votre emplacement sling:resourceType
+  * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling ;
+  * le script `POST.jsp` dans votre emplacement sling:resourceType
 
 * L’architecture de votre code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle.
 
@@ -308,7 +306,7 @@ OSGi désigne une architecture permettant de développer et de déployer des app
 
 Ces services et contrats fournissent une architecture qui permet à des éléments particuliers de se découvrir dynamiquement les uns les autres à des fins de collaboration.
 
-Un framework OSGi vous offre ensuite le chargement/déchargement dynamique, la configuration et le contrôle de ces lots, sans nécessiter de redémarrage.
+Un framework OSGi vous offre ensuite le chargement/déchargement dynamique, la configuration et le contrôle de ces bundles, sans nécessiter de redémarrage.
 
 >[!NOTE]
 >
@@ -336,7 +334,7 @@ Les éléments suivants présentent un intérêt pour le développement :
 
 **Élément** Un élément est un nœud ou une propriété.
 
-Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
+Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
 
 **Nœud (et leurs propriétés)** Les nœuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu ainsi que d’autres données.
 
@@ -352,7 +350,7 @@ Par exemple, pour obtenir les propriétés du nœud actif, vous pouvez utiliser 
 
 currentNode étant l’objet du nœud actif.
 
-Pour plus d’informations sur la manipulation d’objets de nœud, voir [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Pour plus d’informations sur la manipulation d’objets de nœud, voir [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ils sont souvent utilisés pour contrôler la modification d’un élément de contenu.
 
@@ -391,7 +389,7 @@ Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code
 
 S`tring pageName = currentPage.getName();`
 
-currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, voir les [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, voir les [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestionnaire de pages** Le gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
@@ -399,7 +397,7 @@ Par exemple, pour obtenir la page contenant une ressource, vous pouvez utiliser 
 
 Page myPage = pageManager.getContainerPage(myResource);
 
-pageManager étant l’objet de gestionnaire de pages et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de pages, reportez-vous aux [documents Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager étant l’objet de gestionnaire de pages et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de pages, reportez-vous aux [documents Java™](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
@@ -470,9 +468,9 @@ Par exemple, les sites web sont souvent proposés dans plusieurs langues à l’
 * Gérez efficacement les différentes versions linguistiques d’un site web.
 * Mettez automatiquement à jour un ou plusieurs sites à partir d’un site source :
 
-   * Appliquez une structure de base et diffusez du contenu similaire sur plusieurs sites.
-   * Optimisez l’utilisation des ressources disponibles.
-   * Conservez une harmonie visuelle entre les sites.
-   * Concentrez vos efforts sur la gestion du contenu qui diffère entre les sites.
+  * Appliquez une structure de base et diffusez du contenu similaire sur plusieurs sites.
+  * Optimisez l’utilisation des ressources disponibles.
+  * Conservez une harmonie visuelle entre les sites.
+  * Concentrez vos efforts sur la gestion du contenu qui diffère entre les sites.
 
 Pour plus d’informations, consultez la section [Multi Site Manager](/help/sites-administering/msm.md).

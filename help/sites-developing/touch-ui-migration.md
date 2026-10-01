@@ -10,13 +10,11 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 97%
-
+source-wordcount: '702'
+ht-degree: 95%
 ---
-
 # Migration vers l’interface utilisateur tactile{#migration-to-the-touch-ui}
 
 À compter de la version 6.0, Adobe Experience Manager (AEM) a introduit une nouvelle interface utilisateur appelée *IU optimisée pour les écrans tactiles* (également appelée simplement *IU tactile*). Elle respecte les directives concernant l’interface utilisateur d’Adobe Experience Cloud et plus généralement d’Adobe. Il s’agit dorénavant de l’interface utilisateur standard d’AEM, l’ancienne interface orientée bureau désormais appelée *IU classique*.
@@ -119,7 +117,7 @@ Les boîtes de dialogue constituent un élément majeur de la migration de vos c
 * [Migration à partir d’un composant classique](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) - Pour vous aider à convertir les boîtes de dialogue de vos composants d’IU classique en IU tactile
 
-   * Il existe une couche de compatibilité dans l’IU tactile permettant d’ouvrir une boîte de dialogue d’IU classique dans un « wrapper d’IU tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
+  * Il existe une couche de compatibilité dans l’IU tactile permettant d’ouvrir une boîte de dialogue d’IU classique dans un « wrapper d’IU tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
 * [Personnalisation des champs de boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md)
@@ -148,7 +146,7 @@ Bien que cela ne soit pas directement lié à une migration vers l’interface u
 Pour plus d’informations sur le développement d’AEM, consultez la collection de ressources sous :
 
 * [Guide de l’utilisateur pour le développement](/help/sites-developing/getting-started.md)
-* [Documentation sur l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentation sur l’interface utilisateur Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
 * [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=fr)

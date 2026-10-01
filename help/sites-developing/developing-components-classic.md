@@ -10,13 +10,11 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 100%
-
+source-wordcount: '2450'
+ht-degree: 98%
 ---
-
 # Développer des composants Adobe Experience Manager (AEM) (IU classique){#developing-aem-components-classic-ui}
 
 L’IU classique utilise ExtJS pour créer des widgets qui donnent l’aspect des composants. En raison de la nature de ces widgets, il existe des différences entre la manière dont les composants interagissent avec l’IU classique et l’[IU tactile](/help/sites-developing/developing-components.md).
@@ -63,20 +61,20 @@ Résumé :
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` – Objet Requête enveloppé (`SlingHttpServletRequest`)
-   * `slingResponse` – Objet Réponse enveloppé (`SlingHttpServletResponse`)
-   * `resource` – Objet Ressource Sling (`slingRequest.getResource();`)
-   * `resourceResolver` – Objet Résolveur de ressources Sling (`slingRequest.getResoucreResolver();`)
-   * `currentNode`– Nœud JCR résolu pour la requête
-   * `log` – Enregistreur par défaut ().
-   * `sling` – Assistant de script Sling
-   * `properties` – Propriétés de la ressource gérée (`resource.adaptTo(ValueMap.class);`)
-   * `pageProperties` – Propriétés de la page de la ressource gérée
-   * `pageManager` – Gestionnaire de pages permettant d’accéder aux pages de contenu AEM (`resourceResolver.adaptTo(PageManager.class);`)
-   * `component` : objet du composant AEM en cours
-   * `designer` : objet Designer permettant de récupérer des informations de conception (`resourceResolver.adaptTo(Designer.class);`)
-   * `currentDesign` – Conception de la ressource gérée
-   * `currentStyle` – Style de la ressource gérée
+  * `slingRequest` – Objet Requête enveloppé (`SlingHttpServletRequest`)
+  * `slingResponse` – Objet Réponse enveloppé (`SlingHttpServletResponse`)
+  * `resource` – Objet Ressource Sling (`slingRequest.getResource();`)
+  * `resourceResolver` – Objet Résolveur de ressources Sling (`slingRequest.getResoucreResolver();`)
+  * `currentNode`– Nœud JCR résolu pour la requête
+  * `log` – Enregistreur par défaut ().
+  * `sling` – Assistant de script Sling
+  * `properties` – Propriétés de la ressource gérée (`resource.adaptTo(ValueMap.class);`)
+  * `pageProperties` – Propriétés de la page de la ressource gérée
+  * `pageManager` – Gestionnaire de pages permettant d’accéder aux pages de contenu AEM (`resourceResolver.adaptTo(PageManager.class);`)
+  * `component` : objet du composant AEM en cours
+  * `designer` : objet Designer permettant de récupérer des informations de conception (`resourceResolver.adaptTo(Designer.class);`)
+  * `currentDesign` – Conception de la ressource gérée
+  * `currentStyle` – Style de la ressource gérée
 
 ### Accès au contenu {#accessing-content}
 
@@ -164,8 +162,8 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
 
    * ajout d’un champ dans la boîte de dialogue
 
-      * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
-      * `dialog` : boîte de dialogue pour l’interface utilisateur classique
+     * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
+     * `dialog` : boîte de dialogue pour l’interface utilisateur classique
 
    * Remplacer le fichier `.jsp` (lui donner le nom du nouveau composant) ou
    * Retravailler complètement le composant, si vous le souhaitez
@@ -176,8 +174,8 @@ Pour développer de nouveaux composants pour AEM à partir d’un composant exis
    >
    >Un composant pour :
    >
-   >* l’interface utilisateur tactile utilise des composants [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
-   >* l’interface utilisateur classique utilise des [Widgets ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+   >* l’interface utilisateur tactile utilise des composants [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
+   >* l’interface utilisateur classique utilise des [Widgets ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
 
    >[!NOTE]
    >
@@ -278,16 +276,16 @@ Pour créer le composant, nous utilisons le composant textimage standard que nou
 
    * Nom du composant
 
-      * Définissez `jcr:description` sur `Text Image Component (Extended)`.
-      * Définissez `jcr:title` sur `Text Image (Extended)`.
+     * Définissez `jcr:description` sur `Text Image Component (Extended)`.
+     * Définissez `jcr:title` sur `Text Image (Extended)`.
 
    * Groupe où le composant est répertorié dans le sidekick (laisser tel quel)
 
-      * Conservez la définition de `componentGroup` sur `General`.
+     * Conservez la définition de `componentGroup` sur `General`.
 
    * Composant parent pour le nouveau composant (le composant textimage standard)
 
-      * Définissez `sling:resourceSuperType` sur `foundation/components/textimage`.
+     * Définissez `sling:resourceSuperType` sur `foundation/components/textimage`.
 
    Après cette étape, le nœud de composant ressemble à ceci :
 
@@ -305,24 +303,24 @@ Pour créer le composant, nous utilisons le composant textimage standard que nou
 
    * Pour les deux premiers onglets (tab1 et tab2) :
 
-      * Modifiez xtype en cqinclude (pour hériter du composant standard).
-      * Ajoutez une propriété path avec les valeurs `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` et `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivement.
-      * Supprimez toutes les autres propriétés ou sous-nœuds.
+     * Modifiez xtype en cqinclude (pour hériter du composant standard).
+     * Ajoutez une propriété path avec les valeurs `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` et `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivement.
+     * Supprimez toutes les autres propriétés ou sous-nœuds.
 
    * Pour tab3 :
 
-      * Ne modifiez pas les propriétés et les sous-nœuds.
-      * Ajoutez une définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
-      * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
+     * Ne modifiez pas les propriétés et les sous-nœuds.
+     * Ajoutez une définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
+     * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Ajoutez un sous-nœud `position/options` de type `cq:WidgetCollection` pour représenter les deux options de positionnement d’images. En dessous, créez deux nœuds, o1 et o2, de type `nt:unstructured`.
-      * Pour le nœud `position/options/o1`, définissez les propriétés : `text` sur `Left` et `value` sur `left.`
-      * Pour le nœud `position/options/o2`, définissez les propriétés : `text` sur `Right` et `value` sur `right`.
+     * Ajoutez un sous-nœud `position/options` de type `cq:WidgetCollection` pour représenter les deux options de positionnement d’images. En dessous, créez deux nœuds, o1 et o2, de type `nt:unstructured`.
+     * Pour le nœud `position/options/o1`, définissez les propriétés : `text` sur `Left` et `value` sur `left.`
+     * Pour le nœud `position/options/o2`, définissez les propriétés : `text` sur `Right` et `value` sur `right`.
 
    * Supprimez tab4.
 

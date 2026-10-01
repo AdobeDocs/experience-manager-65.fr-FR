@@ -1,19 +1,20 @@
 ---
 title: Workflows basés sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
+
 description: Workflows basés sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
-
+source-wordcount: '1033'
+ht-degree: 97%
 ---
-
 # Workflows basés sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Les workflows d’AEM basés sur Forms vous permettent d’automatiser des processus d’entreprise réels basés sur Forms. Les workflows se composent d’une série d’étapes qui s’exécutent dans un ordre spécifié dans le modèle de workflow associé. Chaque étape exécute une action spécifique, comme affecter une tâche à un utilisateur ou une utilisatrice ou envoyer un e-mail. Les workflows peuvent interagir avec des ressources du référentiel, les comptes d’utilisateurs et d’utilisatrices et les services. Par conséquent, les workflows peuvent coordonner des activités complexes qui impliquent tous les aspects d’Experience Manager.
@@ -81,7 +82,7 @@ Toutefois, dans les scénarios suivants d’identification des workflows associ�
 
 Pour identifier et accéder aux données utilisateur stockées pour une instance de workflow, procédez comme suit :
 
-1. Sur l’instance d’auteur AEM, accédez à `https://'[server]:[port]'/crx/de` puis à **[!UICONTROL Outils > Requête]**.
+1. Sur l’instance de création AEM, accédez à `https://'[server]:[port]'/crx/de`, puis à **[!UICONTROL Outils > Requête]**.
 
    Sélectionnez **[!UICONTROL SQL2]** dans le menu déroulant **[!UICONTROL Type]**.
 
@@ -134,7 +135,7 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
    * Chemins d’accès aux payloads des instances de workflow
    * Chemins d’accès aux brouillons et à l’historique des instances de workflow
 
-1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **** OBSOLÈTE :
+1. Effectuez cette étape pour des instances de workflow à l’état **EN COURS**,**SUSPENDU** ou **&#x200B;**&#x200B;OBSOLÈTE :
 
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Workflow > Instances]**.
@@ -157,5 +158,5 @@ Vous devez être administrateur ou administratrice AEM pour supprimer les donné
 Vous pouvez également utiliser des API pour accéder aux nœuds et propriétés et les supprimer. Consultez la documentation suivante pour en savoir plus.
 
 * [Comment accéder au JCR AEM par programmation](/help/sites-developing/access-jcr.md)
-* [Suppression des nœuds et propriétés](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Guide de référence des API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [Suppression de nœuds et de propriétés](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Référence d’API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)

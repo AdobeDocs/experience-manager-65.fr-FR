@@ -11,13 +11,11 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3807'
-ht-degree: 97%
-
+source-wordcount: '3844'
+ht-degree: 96%
 ---
-
 # Créer des sites adaptés aux appareils mobiles{#creating-sites-for-mobile-devices}
 
 {{ue-over-mobile}}
@@ -33,7 +31,7 @@ Pour créer un site mobile, procédez comme suit :
 1. Créez le composant de page :
 
    * Définissez la propriété `sling:resourceSuperType` sur . `wcm/mobile/components/page`
-De cette façon, le composant repose sur le composant de page mobile.
+     De cette façon, le composant repose sur le composant de page mobile.
 
    * Créez le `body.jsp` avec la logique spécifique au projet.
 
@@ -68,11 +66,11 @@ Utilisez Multi Site Manager (MSM) pour créer une Live Copy mobile à partir d�
 
 Les packages Java™ contenant les classes mobiles sont les suivants :
 
-* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - Définit MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - Définit Device, DeviceGroup et DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capability](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - Définit DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - Définit WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - Définit MobileUtil, qui fournit diverses méthodes utilitaires relatives à WCM Mobile.
+* [com.day.cq.wcm.mobile.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - Définit MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - Définit Device, DeviceGroup et DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capability](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - Définit DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - Définit WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - Définit MobileUtil, qui fournit diverses méthodes utilitaires relatives à WCM Mobile.
 
 ### Composants mobiles {#mobile-components}
 
@@ -170,8 +168,8 @@ Pour créer un émulateur, consultez la section [Créer un émulateur mobile per
 
 **Principales caractéristiques des émulateurs mobiles**
 
-* Un groupe d’appareils est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe d’appareils, par exemple /etc/mobile/groups/touch, contient la propriété `emulators` sous le nœud `jcr:content` .
-Remarque : bien qu’il soit possible que le même émulateur appartienne à plusieurs groupes d’appareils, cela n’a pas beaucoup de sens.
+* Un groupe d’appareils est composé d’un ou de plusieurs émulateurs : la page de configuration du groupe d’appareils, par exemple /etc/mobile/groups/touch, contient la propriété `emulators` sous le nœud `jcr:content`.
+Remarque : bien que le même émulateur puisse être affecté à plusieurs groupes d’appareils, ce n’est pas très logique.
 
 * Dans la boîte de dialogue de configuration du groupe d’appareils, la propriété `emulators` est définie avec le chemin du ou des émulateurs souhaités. Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 
@@ -250,8 +248,8 @@ Créez un groupe d’appareils lorsque les groupes AEM installés ne répondent 
 1. Dans CRXDE, ajoutez un fichier **static.css** contenant les styles du groupe d’appareils sous le nœud `/etc/mobile/groups/special`.
 
 1. Ouvrez la page **Special Phones**.
-1. Pour configurer le groupe d’appareils, cliquez sur le bouton **Modifier** en regard de **Paramètres**.
-Dans l’onglet **Général** :
+1. Pour configurer le groupe d’appareils, cliquez sur le bouton **Modifier** à côté de **Paramètres**.
+Dans l’onglet **Général** :
 
    * **Titre** : nom du groupe d’appareils mobiles
    * **Description** : description du groupe.
@@ -300,7 +298,7 @@ Pour plus d’informations, consultez la section [Création de filtres de groupe
 
 AEM utilise une version tronquée de la base de données [WURFL](https://wurfl.sourceforge.net/)™ pour interroger les caractéristiques des appareils, telles que la résolution d’écran ou la prise en charge de JavaScript, selon l’agent-utilisateur de l’appareil.
 
-Le code XML de la base de données WURFL™ est représenté sous la forme de nœuds sous `/var/mobile/devicespecs` en analysant le fichier `wurfl.xml` sous `/libs/wcm/mobile/devicespecs/wurfl.xml.`. L’extension aux nœuds se produit la première fois que le lot `cq-mobile-core` est démarré.
+Le code XML de la base de données WURFL™ est représenté sous la forme de nœuds sous `/var/mobile/devicespecs` en analysant le fichier `wurfl.xml` sous `/libs/wcm/mobile/devicespecs/wurfl.xml.`. L’extension aux nœuds se produit la première fois que le bundle `cq-mobile-core` est démarré.
 
 Les caractéristiques des appareils sont stockées en tant que propriétés de nœud. Les nœuds représentent les modèles d’appareil. Vous pouvez utiliser des requêtes pour récupérer les caractéristqiues d’un appareil ou d’un agent utilisateur.
 

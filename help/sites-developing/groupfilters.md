@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 97%
-
+source-wordcount: '785'
+ht-degree: 92%
 ---
-
 # Création de filtres de groupe d’appareils{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration d
 
 ## Classe de filtre Java™ {#the-filter-java-class}
 
-Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
+Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Lorsqu’elle est déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
 La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component` et `@Service`. La classe présente la structure suivante :
 
@@ -94,7 +92,7 @@ La fonction `matches` renvoie `true` si les caractéristiques de l’appareil sa
 * Le nom de l’agent utilisateur
 * Un objet Map qui contient les caractéristiques de l’appareil. Les clés Map sont les noms des caractéristiques WURFL™ et les valeurs sont les valeurs correspondantes issues de la base de données WURFL™.
 
-L’interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contient un sous-ensemble des noms des caractéristiques WURFL™ dans les champs statiques. Utilisez ces constantes de champ en tant que clés lors de la récupération de valeurs à partir du mappage des caractéristiques de l’appareil.
+L’interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contient un sous-ensemble des noms des caractéristiques WURFL™ dans les champs statiques. Utilisez ces constantes de champ en tant que clés lors de la récupération de valeurs à partir du mappage des caractéristiques de l’appareil.
 
 Par exemple, l’exemple de code suivant détermine si l’appareil prend en charge CSS :
 
@@ -186,9 +184,9 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 * `org.apache.felix.scr.annotations.jar` : fournit les annotations de composants et de services.
 
-Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le lot de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le bundle Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
+Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le bundle de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le bundle Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
 
-Au moment de la création, la version 5.5.2 est la version du lot de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du bundle déployée dans votre environnement.
+Au moment de la création, la version 5.5.2 est la version du bundle de l’API WCM Mobile qui figure dans la dernière version d’AEM. Utilisez la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer que la version du bundle est déployée dans votre environnement.
 
 **POM :**(votre code POM utilisera un autre groupId et une autre version).
 

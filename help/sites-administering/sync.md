@@ -10,13 +10,11 @@ exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2553'
 ht-degree: 89%
-
 ---
-
 
 # Synchronisation des utilisateurs{#user-synchronization}
 
@@ -34,7 +32,7 @@ Depuis AEM 6.1, lorsque la synchronisation des utilisateurs et des utilisatrice
 
 ## Distribution Sling {#sling-distribution}
 
-Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
+Les données utilisateur, avec leurs [ACL](/help/sites-administering/security.md), sont stockées dans le [cœur Oak](/help/sites-deploying/platform.md), la couche située en dessous du JCR Oak, et sont accessibles via l’[API Oak](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Du fait de mises à jour peu fréquentes, il est judicieux que les données utilisateur soient synchronisées avec d’autres instances de publication à l’aide de la [Distribution de contenu Sling](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md).
 
 Les avantages de la synchronisation des utilisateurs à l’aide de la distribution Sling par rapport à la réplication traditionnelle sont les suivants :
 
@@ -79,24 +77,24 @@ Une fois la synchronisation des utilisateurs et des utilisatrices activée, seul
 * [Mises à jour de la plateforme AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr)
 * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
-### &#x200B;1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Agent de distribution Apache Sling - Agents de synchronisation en usine {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Activer la synchronisation des utilisateurs et utilisatrices**
 
 * **en mode de création**
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
-   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
+  * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * sélectionnez la configuration existante pour pouvoir l’ouvrir en vue de la modifier (icône en forme de crayon)
-Vérifier `name` : **`socialpubsync`**
+    * sélectionnez la configuration existante pour pouvoir l’ouvrir en vue de la modifier (icône en forme de crayon)
+      Vérifier `name` : **`socialpubsync`**
 
-      * sélectionnez la case à cocher `Enabled`
-      * sélectionnez `Save`
+    * sélectionnez la case à cocher `Enabled`
+    * sélectionnez `Save`
 
 ![Agent de distribution Apache Sling](assets/chlimage_1-20.png)
 
@@ -108,19 +106,19 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
 
 * **sur chaque instance de publication**
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console de sécurité](/help/sites-administering/security.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console de sécurité](/help/sites-administering/security.md)
 
-      * par exemple, [:4503/useradmin](https://localhost:4503/useradmin)
+    * par exemple, [&#128279;](https://localhost:4503/useradmin)
 
-   * créer un utilisateur ou une utilisatrice
+  * créer un utilisateur ou une utilisatrice
 
-      * par exemple, `usersync-admin`
+    * par exemple, `usersync-admin`
 
-   * ajoutez cet utilisateur au groupe d’utilisateurs **`administrators`**
-   * [ajoutez l’ACL de cet utilisateur à /home](#howtoaddacl)
+  * ajoutez cet utilisateur au groupe d’utilisateurs **`administrators`**
+  * [ajoutez l’ACL de cet utilisateur à /home](#howtoaddacl)
 
-      * `Allow jcr:all` avec restriction `rep:glob=*/activities/*`
+    * `Allow jcr:all` avec restriction `rep:glob=*/activities/*`
 
 >[!CAUTION]
 >
@@ -134,17 +132,17 @@ L’utilisateur ou l’utilisatrice autorisé(e) intervient à l’étape 3 pou
 
 * accédez à CRXDE Lite
 
-   * par exemple, [:4503/crx/de](https://localhost:4503/crx/de)
+  * par exemple, [&#128279;](https://localhost:4503/crx/de)
 
 * sélectionnez le nœud `/home`
 * dans le volet de droite, sélectionnez l’onglet `Access Control`
 * pour ajouter une entrée ACL, sélectionnez le bouton `+`
 
-   * **Principal** : *recherchez l’utilisateur créé pour la synchronisation des utilisateurs*
-   * **Type** : `Allow`
-   * **Autorisations** : `jcr:all`
-   * **Restrictions** `rep:glob`: `*/activities/*`
-   * sélectionnez **OK**
+  * **Principal** : *recherchez l’utilisateur créé pour la synchronisation des utilisateurs*
+  * **Type** : `Allow`
+  * **Autorisations** : `jcr:all`
+  * **Restrictions** `rep:glob`: `*/activities/*`
+  * sélectionnez **OK**
 
 * sélectionnez **Enregistrer tout**
 
@@ -155,7 +153,7 @@ Voir également
 * [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Section de résolution des incidents [Modification de l’exception d’opération pendant le traitement de la réponse](#modify-operation-exception-during-response-processing)
 
-### &#x200B;3. Distribution Granite Adobe - Fournisseur De Secret De Transport Avec Mot De Passe Chiffré {#adobegraniteencpasswrd}
+### &#x200B;3. Distribution Adobe Granite - Fournisseur de secrets de transport de mot de passe chiffré {#adobegraniteencpasswrd}
 
 **Configurer les autorisations**
 
@@ -163,18 +161,18 @@ Une fois qu’un utilisateur ou une utilisatrice autorisé(e), membre du groupe 
 
 * **en mode de création**
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
-   * localisez `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
-   * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
-Vérifier `property name` : **`socialpubsync-publishUser`**
+  * localisez `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
+  * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+    Vérifier `property name` : **`socialpubsync-publishUser`**
 
-   * définissez le nom d’utilisateur et le mot de passe de l’[utilisateur autorisé](#createauthuser) créé en mode de publication à l’étape 2
+  * définissez le nom d’utilisateur et le mot de passe de l’[utilisateur autorisé](#createauthuser) créé en mode de publication à l’étape 2
 
-      * par exemple, `usersync-admin`
+    * par exemple, `usersync-admin`
 
 ![Prestataire secret de transport de mot de passe chiffré](assets/chlimage_1-22.png)
 
@@ -184,20 +182,20 @@ Vérifier `property name` : **`socialpubsync-publishUser`**
 
 * **sur chaque instance de publication** :
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
-   * localisez `Apache Sling Distribution Agent - Queue Agents Factory`
+  * localisez `Apache Sling Distribution Agent - Queue Agents Factory`
 
-      * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
-Vérifier `Name` : `socialpubsync-reverse`
+    * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+      Vérifier `Name` : `socialpubsync-reverse`
 
-      * sélectionnez la case à cocher `Enabled`
-      * sélectionnez `Save`
+    * sélectionnez la case à cocher `Enabled`
+    * sélectionnez `Save`
 
-   * **répétez** pour chaque instance de publication
+  * **répétez** pour chaque instance de publication
 
 ![Fabrique d’agents de file d’attente](assets/chlimage_1-23.png)
 
@@ -207,19 +205,19 @@ Vérifier `Name` : `socialpubsync-reverse`
 
 * **sur chaque instance de publication** :
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
-   * localisez **`Adobe Social Sync - Diff Observer Factory`**
+  * localisez **`Adobe Social Sync - Diff Observer Factory`**
 
-      * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+    * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
 
-        Vérifier `agent name` : `socialpubsync-reverse`
+      Vérifier `agent name` : `socialpubsync-reverse`
 
-      * sélectionnez la case à cocher `Enabled`
-      * sélectionnez `Save`
+    * sélectionnez la case à cocher `Enabled`
+    * sélectionnez `Save`
 
 ![Fabrique d’observateurs diff](assets/screen-shot_2019-05-24at090809.png)
 
@@ -231,19 +229,19 @@ Par défaut, l’instance de création interroge les modifications toutes les 30
 
 * **en mode de création**
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
-   * localisez `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
+  * localisez `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
-      * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+    * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
 
-         * Vérifier `Name` : `socialpubsync-scheduled-trigger`
+      * Vérifier `Name` : `socialpubsync-scheduled-trigger`
 
-      * définissez l’`Interval in Seconds` à l’intervalle souhaité.
-      * sélectionnez `Save`
+    * définissez l’`Interval in Seconds` à l’intervalle souhaité.
+    * sélectionnez `Save`
 
 ![Fabrique de déclencheurs planifiés](assets/chlimage_1-24.png)
 
@@ -251,35 +249,35 @@ Par défaut, l’instance de création interroge les modifications toutes les 30
 
 La configuration par défaut couvre une instance de publication unique. Puisque l’objectif de l’activation de la synchronisation des utilisateurs et des utilisatrices est de synchroniser plusieurs instances de publication (par exemple, pour une ferme de publication), les instances de publication supplémentaires doivent être ajoutées à la fabrique d’agents de synchronisation.
 
-### &#x200B;7. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Agent de distribution Apache Sling - Agents de synchronisation en usine {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Ajoutez des instances de publication :**
 
 * **en mode de création**
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, [:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * par exemple, [&#128279;](https://localhost:4502/system/console/configMgr)
 
-   * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
+  * localisez `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
-Vérifier `Name` : `socialpubsync`
+    * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+      Vérifier `Name` : `socialpubsync`
 
 ![Fabrique d’agents de synchronisation](assets/chlimage_1-25.png)
 
 * **Points d’entrée de l’exportateur**
 Il doit y avoir un point d’entrée d’exportateur pour chaque instance de publication. Par exemple, s’il existe deux instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
 
-   * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
-   * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
+  * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
+  * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Points d’entrée de l’importateur**
 Il doit y avoir un point d’entrée d’importateur pour chaque instance de publication. Par exemple, s’il existe deux instances de publication, localhost:4503 et 4504, il doit y avoir deux entrées :
 
-   * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
-   * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
+  * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
+  * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * sélectionnez `Save`
 
@@ -291,41 +289,45 @@ S’il existe des données personnalisées à synchroniser sur plusieurs instanc
 
 * **Sur chaque instance de publication** :
 
-   * connexion avec droits d’administrateur
-   * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
+  * connexion avec droits d’administrateur
+  * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-      * par exemple, `https://localhost:4503/system/console/configMgr`
+    * par exemple, `https://localhost:4503/system/console/configMgr`
 
-   * localisez `AEM Communities User Sync Listener`
-   * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
-Vérifier `Name` : `socialpubsync-scheduled-trigger`
+  * localisez `AEM Communities User Sync Listener`
+  * pour ouvrir une configuration pour modification, sélectionnez la configuration existante (icône de crayon).
+    Vérifier `Name` : `socialpubsync-scheduled-trigger`
 
 ![Écouteur de synchronisation des utilisateurs et utilisatrices d’AEM Communities](assets/chlimage_1-26.png)
 
 * **Types de nœuds**
-Il s’agit de la liste des types de nœuds synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est géré séparément).Liste par défaut des types de nœuds à synchroniser :
+Il s’agit de la liste des types de nœuds synchronisés. Tout type de nœud autre que sling:Folder doit être répertorié ici (sling:folder est géré séparément).
+Liste par défaut des types de nœuds à synchroniser :
 
-   * rep:User
-   * nt:unstructured
-   * nt:resource
+  * rep:User
+  * nt:unstructured
+  * nt:resource
 
 * **Propriétés à ignorer**
-Il s’agit de la liste des propriétés qui sont ignorées si une modification est détectée. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.Propriété par défaut à ignorer :
+Il s’agit de la liste des propriétés qui sont ignorées si une modification est détectée. Les modifications apportées à ces propriétés peuvent être synchronisées comme effet secondaire d’autres modifications (la synchronisation ayant toujours lieu au niveau du nœud), mais les modifications apportées à ces propriétés ne déclenchent pas en elles-mêmes de synchronisation.
+Propriété par défaut à ignorer :
 
-   * cq:lastModified
+  * cq:lastModified
 
 * **Nœuds à ignorer**
-Sous-chemins ignorés lors de la synchronisation. Aucun élément figurant dans ces sous-chemins d’accès n’est synchronisé à un moment donné.Nœuds par défaut à ignorer :
+Sous-chemins ignorés lors de la synchronisation. Aucun élément figurant dans ces sous-chemins d’accès n’est synchronisé à un moment donné.
+Nœuds par défaut à ignorer :
 
-   * .tokens
-   * system
+  * .tokens
+  * system
 
 * **Dossiers distribués**
-La plupart des :Folders sling sont ignorés, car la synchronisation n’est pas nécessaire. Les quelques exceptions sont répertoriées ici.Dossiers par défaut à synchroniser
+La plupart des :Folders sling sont ignorés, car la synchronisation n’est pas nécessaire. Les quelques exceptions sont répertoriées ici.
+Dossiers par défaut à synchroniser
 
-   * segments/notation
-   * social/relations
-   * activities
+  * segments/notation
+  * social/relations
+  * activities
 
 ### &#x200B;9. ID Sling unique {#unique-sling-id}
 
@@ -349,11 +351,11 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
 
    * recherchez et supprimez le fichier nommé *sling.id.file*
 
-      * par exemple, sur un système Linux® :
-        `rm -i $(find . -type f -name sling.id.file)`
+     * par exemple, sur un système Linux® :
+       `rm -i $(find . -type f -name sling.id.file)`
 
-      * par exemple, sur un système Windows :
-        `use windows explorer and search for *sling.id.file*`
+     * par exemple, sur un système Windows :
+       `use windows explorer and search for *sling.id.file*`
 
 1. démarrez l’instance de publication
 
@@ -370,27 +372,27 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 * sur chaque instance de publication AEM
 * accédez à la [console web](/help/sites-deploying/configuring-osgi.md)
 
-   * par exemple, [:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * par exemple, [&#128279;](https://localhost:4503/system/console/configMgr)
 
 * localisez `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
-   * `Builder name: socialpubsync-vlt`
+  * `Builder name: socialpubsync-vlt`
 
 * sélectionnez l’icône de modification
 * ajouter deux `Package Node Filters` :
 
-   * `/home/users|-.*/.tokens`
-   * `/home/users|-.*/rep:cache`
+  * `/home/users|-.*/.tokens`
+  * `/home/users|-.*/rep:cache`
 
 * gestion des politiques :
 
-   * pour remplacer les nœuds rep:policy existants par de nouveaux nœuds, ajoutez un troisième filtre de package :
+  * pour remplacer les nœuds rep:policy existants par de nouveaux nœuds, ajoutez un troisième filtre de package :
 
-      * `/home/users|+.*/rep:policy`
+    * `/home/users|+.*/rep:policy`
 
-   * pour empêcher la distribution des politiques, définissez
+  * pour empêcher la distribution des politiques, définissez
 
-      * `Acl Handling:` `IGNORE`
+    * `Acl Handling:` `IGNORE`
 
 ![Fabrique de générateur de packages vault](assets/vault-package-builder-factory.png)
 
@@ -418,30 +420,30 @@ Pour vérifier le statut de la file d’attente de distribution :
 
 * En mode de création :
 
-   * utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+  * utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
-      * recherchez des entrées dans `/var/sling/distribution/packages`
+    * recherchez des entrées dans `/var/sling/distribution/packages`
 
-         * nœuds de dossier nommés selon le motif `distrpackage_*`
+      * nœuds de dossier nommés selon le motif `distrpackage_*`
 
-   * à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md)
+  * à l’aide du [gestionnaire de modules](/help/sites-administering/package-manager.md)
 
-      * recherchez les packages en attente (pas encore installés)
+    * recherchez les packages en attente (pas encore installés)
 
-         * nommés selon le motif `socialpubsync-vlt*`
-         * créés par `communities-user-admin`
+      * nommés selon le motif `socialpubsync-vlt*`
+      * créés par `communities-user-admin`
 
 Lorsque la file d’attente de distribution est vide, désactivez la synchronisation des utilisateurs :
 
 * En mode de création
 
-   * *décochez* la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)
+  * *décochez* la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)
 
 Une fois les tâches accomplies, pour réactiver la synchronisation des utilisateurs et des utilisatrices :
 
 * En mode de création
 
-   * cochez la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)
+  * cochez la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### Diagnostics de synchronisation des utilisateurs et utilisatrices {#user-sync-diagnostics}
 
@@ -533,19 +535,19 @@ Voir la section [9. Identifiant Sling unique](#unique-sling-id)
 
 * sur les instances de publication sur lesquelles les utilisateurs, utilisatrices, groupes d’utilisateurs et d’utilisatrices existent :
 
-   * [si elle est activée, désactivez la synchronisation des utilisateurs](#how-to-take-user-sync-offline)
-   * [créez un package](/help/sites-administering/package-manager.md#creating-a-new-package) de `/home`
+  * [si elle est activée, désactivez la synchronisation des utilisateurs](#how-to-take-user-sync-offline)
+  * [créez un package](/help/sites-administering/package-manager.md#creating-a-new-package) de `/home`
 
-      * lors de la modification du package
+    * lors de la modification du package
 
-         * Onglet Filtres : Ajouter un filtre : Chemin racine : `/home`
-         * Onglet Avancé : Traitement AC : `Overwrite`
+      * Onglet Filtres : Ajouter un filtre : Chemin racine : `/home`
+      * Onglet Avancé : Traitement AC : `Overwrite`
 
-   * [exportez le package](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
+  * [exportez le package](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 * sur d’autres instances de publication :
 
-   * [importez le package](/help/sites-administering/package-manager.md#installing-packages)
+  * [importez le package](/help/sites-administering/package-manager.md#installing-packages)
 
 Pour configurer ou activer la synchronisation des groupes, allez à l’étape 1 : [Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory).
 
@@ -571,12 +573,12 @@ Pour supprimer une instance de publication de l’[Agent de distribution Apache 
 
 * En mode de création :
 
-   * [Mettre la synchronisation des utilisateurs et utilisatrices hors ligne](#how-to-take-user-sync-offline)
-   * suivez l’[étape 7](#apache-sling-distribution-agent-sync-agents-factory) pour supprimer l’instance de publication des deux listes de serveurs :
+  * [Mettre la synchronisation des utilisateurs et utilisatrices hors ligne](#how-to-take-user-sync-offline)
+  * suivez l’[étape 7](#apache-sling-distribution-agent-sync-agents-factory) pour supprimer l’instance de publication des deux listes de serveurs :
 
-      * `Exporter Endpoints`
-      * `Importer Endpoints`
+    * `Exporter Endpoints`
+    * `Importer Endpoints`
 
-   * réactivez la synchronisation des utilisateurs
+  * réactivez la synchronisation des utilisateurs
 
-      * cochez la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)
+    * cochez la case `Enabled` de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory)

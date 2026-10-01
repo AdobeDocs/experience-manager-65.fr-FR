@@ -9,13 +9,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 95%
-
+source-wordcount: '1471'
+ht-degree: 90%
 ---
-
 # Personnaliser la création de pages{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,16 +26,16 @@ Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre
 
   Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` La nouvelle bibliothèque cliente doit :
 
-   * dépendre de la bibliothèque cliente de création `cq.authoring.editor.sites.page` ;
-   * faire partie de la catégorie `cq.authoring.editor.sites.page.hook` appropriée.
+  * dépendre de la bibliothèque cliente de création `cq.authoring.editor.sites.page` ;
+  * faire partie de la catégorie `cq.authoring.editor.sites.page.hook` appropriée.
 
 * Recouvrements
 
-  Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement:1 une copie 1 de l’original n’est pas nécessaire, car la fusion de ressources [sling](/help/sites-developing/sling-resource-merger.md) permet l’héritage.
+  Les recouvrements sont basés sur les définitions de nœuds et vous permettent de recouvrir les fonctionnalités standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’une superposition, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources [sling](/help/sites-developing/sling-resource-merger.md) permet l’héritage.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=fr).
+>Pour plus d’informations, voir [Jeu de documentation JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Il est possible de les utiliser de différentes manières pour étendre la fonctionnalité de création de pages dans votre instance AEM. Une sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -47,7 +45,7 @@ Il est possible de les utiliser de différentes manières pour étendre la fonct
 >
 >* Utiliser et créer des [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utiliser et créer des [recouvrements](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 >
 
@@ -107,9 +105,9 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Lors de la création de pages, l’utilisateur ou l’utilisatrice doit souvent effectuer une sélection parmi des ressources (par exemple, des pages, des composants et des ressources). Cela peut prendre la forme d’une liste, par exemple, à partir de laquelle l’auteur ou l’autrice doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en œuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
 
-* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html?lang=fr).
+* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
 Pour plus d’informations sur la création d’un prédicat personnalisé, voir [Mettre en œuvre un évaluateur de prédicat personnalisé pour Query Builder.](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -151,12 +149,12 @@ Dans une installation AEM standard :
 
      par exemple :
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * property : `editorType`
+       * property : `editorType`
 
-           Définit le type d’éditeur en ligne utilisé lorsqu’une édition statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
+         Définit le type d’éditeur en ligne utilisé lorsqu’une édition statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
 1. Les informations de configuration supplémentaires de l’éditeur peuvent être définies à l’aide d’un nœud `config` contenant des configurations, ainsi qu’un nœud `plugin` additionnel pour contenir les informations nécessaires à la configuration du plug-in.
 
@@ -192,7 +190,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 >[!NOTE]
 >
->Par exemple, consultez :
+>Pour obtenir un exemple, reportez-vous à :
 >`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implémentez les éléments suivants :

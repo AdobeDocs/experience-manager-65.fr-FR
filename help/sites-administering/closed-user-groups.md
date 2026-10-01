@@ -10,13 +10,11 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6780'
-ht-degree: 97%
-
+source-wordcount: '6781'
+ht-degree: 96%
 ---
-
 # Groupes d’utilisateurs fermés dans AEM{#closed-user-groups-in-aem}
 
 ## Présentation {#introduction}
@@ -101,10 +99,10 @@ Les bonnes pratiques suivantes doivent être prises en compte pour définir un a
 * Créez un modèle de menace pour les données ou le contenu qui doivent être protégés afin d’identifier les limites des menaces et d’avoir une idée claire de la sensibilité des données et des rôles associés à l’accès autorisé.
 * Modélisez le contenu du référentiel et les CUG en gardant à l’esprit les aspects généraux liés aux autorisations et les bonnes pratiques :
 
-   * N’oubliez pas que l’autorisation de lecture ne sera accordée que si un CUG donné et l’évaluation des autres modules déployés dans la configuration permettent à un sujet donné de lire un élément donné du référentiel.
-   * Évitez de créer des CUG redondants où l’accès en lecture est déjà restreint par d’autres modules d’autorisation.
-   * Le besoin excessif de CUG imbriqués peut potentiellement mettre en évidence des problèmes dans la conception du contenu.
-   * Un besoin excessif de CUG (par exemple, sur chaque page) peut indiquer la nécessité d’un modèle d’autorisation personnalisé potentiellement mieux adapté aux besoins de sécurité spécifiques de l’application et du contenu en question.
+  * N’oubliez pas que l’autorisation de lecture ne sera accordée que si un CUG donné et l’évaluation des autres modules déployés dans la configuration permettent à un sujet donné de lire un élément donné du référentiel.
+  * Évitez de créer des CUG redondants où l’accès en lecture est déjà restreint par d’autres modules d’autorisation.
+  * Le besoin excessif de CUG imbriqués peut potentiellement mettre en évidence des problèmes dans la conception du contenu.
+  * Un besoin excessif de CUG (par exemple, sur chaque page) peut indiquer la nécessité d’un modèle d’autorisation personnalisé potentiellement mieux adapté aux besoins de sécurité spécifiques de l’application et du contenu en question.
 
 * Limitez les chemins pris en charge pour les politiques de CUG à un petit nombre d’arborescences dans le référentiel afin d’optimiser les performances. Par exemple, autorisez uniquement les CUG sous le nœud /content tel qu’établi par défaut depuis AEM 6.3.
 * Les politiques de CUG sont conçues pour autoriser l’accès en lecture à un petit ensemble d’entités de sécurité. La nécessité d’un grand nombre d’entités peut mettre en évidence des problèmes liés à la conception du contenu ou de l’application et devrait être reconsidérée.
@@ -146,10 +144,10 @@ En appelant `AuthenticationHandler.requestCredentials`, ce gestionnaire tente de
 * Faites la distinction entre un mot de passe expiré et la nécessité de vous connecter régulièrement comme raison de la redirection ;
 * S’il s’agit d’une connexion régulière, teste si un chemin de connexion peut être obtenu dans l’ordre suivant :
 
-   * À partir du LoginPathProvider mis en œuvre par le nouveau `com.adobe.granite.auth.requirement.impl.RequirementService`
-   * À partir de l’ancienne mise en œuvre CUG obsolète
-   * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
-   * Enfin, le retour vers la page de connexion par défaut, telle qu’elle est définie avec `LoginSelectorHandler`.
+  * À partir du LoginPathProvider mis en œuvre par le nouveau `com.adobe.granite.auth.requirement.impl.RequirementService`
+  * À partir de l’ancienne mise en œuvre CUG obsolète
+  * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
+  * Enfin, le retour vers la page de connexion par défaut, telle qu’elle est définie avec `LoginSelectorHandler`.
 
 * Dès qu’un chemin de connexion valide est obtenu par les appels répertoriés ci-dessus, la requête de la personne est redirigée vers cette page.
 
@@ -158,10 +156,10 @@ Cette documentation traite de l’évaluation du chemin de connexion tel qu’il
 * L’enregistrement des chemins de connexion dépend de la distinction entre le mot de passe expiré et la nécessité d’une connexion régulière comme raison de la redirection.
 * En cas de connexion régulière, teste si un chemin de connexion peut être obtenu dans l’ordre suivant :
 
-   * À partir du `LoginPathProvider` mis en œuvre par le nouveau `com.adobe.granite.auth.requirement.impl.RequirementService`
-   * À partir de l’ancienne mise en œuvre CUG obsolète
-   * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
-   * Enfin, le retour vers la page de connexion par défaut, telle qu’elle est définie avec `LoginSelectorHandler`.
+  * À partir du `LoginPathProvider` mis en œuvre par le nouveau `com.adobe.granite.auth.requirement.impl.RequirementService`
+  * À partir de l’ancienne mise en œuvre CUG obsolète
+  * À partir des mises en correspondance de page de connexion, telles que définies avec `LoginSelectorHandler`
+  * Enfin, le retour vers la page de connexion par défaut, telle qu’elle est définie avec `LoginSelectorHandler`.
 
 * Dès qu’un chemin de connexion valide est obtenu par les appels répertoriés ci-dessus, la requête de la personne est redirigée vers cette page.
 
@@ -179,9 +177,9 @@ Les bonnes pratiques suivantes doivent être prises en compte lors de la défini
 * Modélisez le contenu de référentiel, de telle façon que les exigences d’authentification s’appliquent à l’arborescence entière sans avoir à exclure à nouveau de l’exigence les sous-arborescences imbriquées.
 * Pour éviter de spécifier et d’enregistrer ensuite des chemins de connexion redondants :
 
-   * Utilisez l’héritage et évitez de définir des chemins de connexion imbriqués.
-   * Ne définissez pas le chemin de connexion facultatif sur une valeur qui correspond à la valeur par défaut ou à la valeur héritée.
-   * Les développeurs d’applications doivent identifier les mises en correspondance de connexion qui doivent être configurées dans les fonctions de chemin de connexion globales (par défaut et mise en correspondance) associées à `LoginSelectorHandler`.
+  * Utilisez l’héritage et évitez de définir des chemins de connexion imbriqués.
+  * Ne définissez pas le chemin de connexion facultatif sur une valeur qui correspond à la valeur par défaut ou à la valeur héritée.
+  * Les développeurs d’applications doivent identifier les mises en correspondance de connexion qui doivent être configurées dans les fonctions de chemin de connexion globales (par défaut et mise en correspondance) associées à `LoginSelectorHandler`.
 
 ## Représentation dans le référentiel {#representation-in-the-repository}
 
@@ -205,7 +203,7 @@ La page associée au chemin de connexion peut être placée à l’intérieur ou
 
 ### Gérer les politiques CUG {#managing-cug-policies}
 
-Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+Le nouveau type de politiques de contrôle d’accès destiné à limiter l’accès en lecture pour un CUG est géré à l’aide de l’API de gestion du contrôle d’accès JCR et suit les mécanismes décrits par la [Spécification JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Définir une nouvelle politique CUG {#set-a-new-cug-policy}
 
@@ -488,7 +486,7 @@ Consultez également la documentation relative à la mise en correspondance de C
 
 ### Autorisation : installation et configuration {#authorization-setup-and-configuration}
 
-Les nouveaux composants liés à l’autorisation figurent dans le lot **Oak CUG Authorization** (`org.apache.jackrabbit.oak-authorization-cug`), qui fait partie de l’installation par défaut d’AEM. Le lot définit un modèle d’autorisation séparé destiné à être déployé comme un autre moyen de gérer l’accès en lecture.
+Les nouveaux composants liés à l’autorisation figurent dans le bundle **Oak CUG Authorization** (`org.apache.jackrabbit.oak-authorization-cug`), qui fait partie de l’installation par défaut d’AEM. Le bundle définit un modèle d’autorisation séparé destiné à être déployé comme un autre moyen de gérer l’accès en lecture.
 
 #### Configuration de l’autorisation de CUG {#setting-up-cug-authorization}
 
@@ -584,7 +582,7 @@ Les options de configuration disponibles associées au module d’autorisation C
 
 #### Exclusion des principaux de l’évaluation CUG {#excluding-principals-from-cug-evaluation}
 
-L’exemption de principaux de l’évaluation de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est fourni avec une mise en œuvre par défaut qui exclut un ensemble fixe de principaux, ainsi qu’une mise en œuvre étendue qui permet de configurer les noms des différents principaux. Ce dernier est configuré dans les instances de publication AEM.
+L’exemption de principaux de CUG a été adoptée à partir de l’ancienne mise en œuvre. La nouvelle autorisation de CUG couvre cette fonction avec une interface dédiée nommée CugExclude. Apache Jackrabbit Oak 1.4 est fourni avec une mise en œuvre par défaut qui exclut un ensemble fixe de principaux, ainsi qu’une mise en œuvre étendue qui permet de configurer les noms des différents principaux. Ce dernier est configuré dans les instances de publication AEM.
 
 La valeur par défaut depuis AEM 6.3 empêche les principaux suivants d’être affectés par les politiques CUG :
 
@@ -600,7 +598,7 @@ Sinon, il est possible de fournir et de déployer une mise en œuvre personnalis
 
 ### Authentification : installation et configuration {#authentication-setup-and-configuration}
 
-Les nouveaux composants liés à l’authentification figurent dans le lot **Gestionnaire d’authentification Adobe Granite** (`com.adobe.granite.auth.authhandler` version 5.6.48). Ce lot fait partie de l’installation par défaut d’AEM.
+Les nouveaux composants liés à l’authentification figurent dans le bundle **Gestionnaire d’authentification Adobe Granite** (`com.adobe.granite.auth.authhandler` version 5.6.48). Ce bundle fait partie de l’installation par défaut d’AEM.
 
 Pour installer l’exigence d’authentification de remplacement pour la prise en charge de CUG obsolète, certains composants OSGi doivent être présents et actifs dans une configuration d’AEM donnée. Pour plus de détails, consultez les **Caractéristiques des composants OSGi** ci-dessous.
 

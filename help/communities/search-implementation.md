@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 3%
-
+source-wordcount: '1210'
+ht-degree: 4%
 ---
-
 # Rechercher dans Essentials {#search-essentials}
 
 ## Vue d’ensemble {#overview}
@@ -26,11 +24,11 @@ Pour Communities, les deux éléments généralement recherchés sont les suivan
 
 * Contenu publié par les membres de la communauté
 
-   * Il utilise l’API de recherche du contenu créé par l’utilisateur d’AEM Communities.
+  * Il utilise l’API de recherche du contenu créé par l’utilisateur d’AEM Communities.
 
 * Utilisateurs et groupes d’utilisateurs (données utilisateur)
 
-   * Il utilise les fonctionnalités de recherche de la plateforme AEM.
+  * Il utilise les fonctionnalités de recherche de la plateforme AEM.
 
 Cette section de la documentation est destinée aux développeurs et développeuses qui créent des composants personnalisés qui créent ou gèrent du contenu créé par l’utilisateur.
 
@@ -44,7 +42,7 @@ Consultez [SRP et UGC Essentials](srp-and-ugc.md) pour plus d’informations sur
 
 ## API de recherche UGC {#ugc-search-api}
 
-Le [magasin commun du contenu créé par l’utilisateur](working-with-srp.md) est fourni par l’un des différents fournisseurs de ressources de stockage (SRP), chacun pouvant avoir un langage de requête natif différent. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du package d’API [UGC](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appelle le langage de requête approprié au SRP choisi.
+Le [magasin commun du contenu créé par l’utilisateur](working-with-srp.md) est fourni par l’un des différents fournisseurs de ressources de stockage (SRP), chacun pouvant avoir un langage de requête natif différent. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du package d’API [UGC](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) qui appelle le langage de requête approprié au SRP choisi.
 
 ### Recherches ASRP {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr est un exemple de langage de requête qui utilise un schéma.
 
 * Pour les types à plusieurs valeurs, ajoutez « s » au suffixe, par exemple :
 
-   * `viewDate_dt` : propriété de date unique
-   * `viewDates_dts` : propriété de liste de dates
+  * `viewDate_dt` : propriété de date unique
+  * `viewDates_dts` : propriété de liste de dates
 
 ## Filtres {#filters}
 
@@ -171,13 +169,13 @@ La syntaxe de filtre pour la logique AND et OR est exprimée comme suit (affich�
 
 * Pour spécifier OU utiliser un paramètre de filtre avec des valeurs séparées par des virgules :
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * Pour spécifier ET utiliser plusieurs paramètres de filtre :
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-L’implémentation par défaut du [composant Recherche](search.md) utilise cette syntaxe, comme vous pouvez le voir dans l’URL qui ouvre la page Résultats de la recherche dans le guide [Composants de communauté](components-guide.md). Pour tester, accédez à [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
+L’implémentation par défaut du [composant Recherche](search.md) utilise cette syntaxe, comme vous pouvez le voir dans l’URL qui ouvre la page Résultats de la recherche dans le guide [Composants de communauté](components-guide.md). Pour tester, accédez à [&#128279;](http://localhost:4503/content/community-components/en/search.html).
 
 Les opérateurs de filtre sont les suivants :
 
@@ -193,9 +191,9 @@ Les opérateurs de filtre sont les suivants :
 Il est important que l’URL fasse référence au composant de communautés (ressource) et non à la page sur laquelle le composant est placé :
 
 * Correct : composant de forum
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Incorrect : page de forum
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## Outils SRP {#srp-tools}
 
