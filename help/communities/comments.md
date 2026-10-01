@@ -176,7 +176,7 @@ Sous l’onglet **Types de ressources**, spécifiez le type de ressource personn
 
 * **Commenter le type de ressource système**
 
-  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant ](/help/communities/handlebars-helpers.md#include).[`{{include}}`
+  Accédez au type de ressource d’un composant `comments`système de commentaires) étendu dans /apps. Laissez ce champ vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (nœud comments). En savoir plus en consultant la section sur l’assistant [&#128279;](/help/communities/handlebars-helpers.md#include).`{{include}}`
 
 ### Expérience du visiteur du site {#site-visitor-experience}
 
@@ -203,4 +203,4 @@ Vous trouverez plus d’informations à ce sujet sur la page [Comments Essential
 
 Pour la modération des commentaires publiés, voir [Modération du contenu créé par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour la traduction des commentaires publiés, voir [ Traduction de contenu créé par l’utilisateur ](/help/communities/translate-ugc.md).
+Pour la traduction des commentaires publiés, voir [&#x200B; Traduction de contenu créé par l’utilisateur &#x200B;](/help/communities/translate-ugc.md).

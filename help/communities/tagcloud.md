@@ -120,4 +120,4 @@ Pour modifier l’affichage du **nuage de balises sociales**, saisissez le [mode
 
 Vous trouverez plus d’informations à ce sujet sur la page [Tag Essentials](tag.md) destinée aux développeurs et développeuses.
 
-Pour plus d’informations sur la création et la gestion des balises](tag-ugc.md) voir [ Balisage de contenu créé par l’utilisateur (UGC) .
+Pour plus d’informations sur la création et la gestion des balises[&#128279;](tag-ugc.md) voir  Balisage de contenu créé par l’utilisateur (UGC) .

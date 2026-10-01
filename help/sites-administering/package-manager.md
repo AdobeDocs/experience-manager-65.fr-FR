@@ -145,7 +145,7 @@ Extension ou installation officielle AEM
 
 Pack de services officiel
 
-![Icône de pack de services officiel d’AEM ](assets/official-service-pack.png)
+![Icône de pack de services officiel d’AEM &#x200B;](assets/official-service-pack.png)
 
 Utilisez une icône unique pour votre package. Ne réutilisez pas une icône utilisée par Adobe.
 

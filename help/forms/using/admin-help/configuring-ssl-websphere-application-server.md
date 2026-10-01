@@ -69,7 +69,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 1. Dans Sécurité administrative, sélectionnez **Rôles des utilisateurs d’administration**.
 1. Cliquez sur Ajouter et procédez comme suit :
 
-   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur Rechercher.
+   1. Saisissez **&ast;** dans la zone de recherche, puis cliquez sur Rechercher.
    1. Sous les rôles, cliquez sur **Administrateur**.
    1. Ajoutez l’utilisateur que vous venez de créer à Mappé au rôle et mappez-le à l’administrateur.
 

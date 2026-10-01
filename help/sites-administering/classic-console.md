@@ -29,7 +29,7 @@ Pour accéder à la console de balisage de l’interface utilisateur classique 
 * en mode de création
 * connectez-vous avec des droits d’administration ;
 * accédez à la console
-par exemple, [](https://localhost:4502/tagging)
+par exemple, [&#128279;](https://localhost:4502/tagging)
 
 ![Fenêtre de la console classique](assets/managing_tags_usingthetagasministrationconsole.png)
 

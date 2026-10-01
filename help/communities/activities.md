@@ -74,7 +74,7 @@ Sous l’onglet **Activités utilisateur**, spécifiez les activités à affiche
 
 ### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent d’effectuer les opérations suivantes sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md)[, [file library](/help/communities/file-library.md) et ](/help/communities/comments.md)comments.
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent d’effectuer les opérations suivantes sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md) [&#128279;](/help/communities/comments.md), [file library](/help/communities/file-library.md) et &#x200B;comments.
 
 ![vue suivante](assets/following-activities.png)
 

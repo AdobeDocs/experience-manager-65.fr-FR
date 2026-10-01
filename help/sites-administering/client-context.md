@@ -228,7 +228,7 @@ Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à
 
 Ajoutez le composant Magasin JSONP à ClientContext et utilisez-le pour récupérer et stocker les informations de géolocalisation du client web.
 
-1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([&#128279;](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 1. Cliquez sur l’icône de modification en haut de ClientContext pour ouvrir ClientContext Designer.
 
