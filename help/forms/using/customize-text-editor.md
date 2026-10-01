@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 98%
 ---
-
 # Personnalisation de l’éditeur de texte{#customize-text-editor}
 
 ## Présentation {#overview}
@@ -41,7 +39,7 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Créez un dossier appelé config dans le dossier des applications dont le chemin ou la structure sont semblables au dossier de configuration (situé dans libs/fd/cm/config) en suivant les étapes ci-dessous :
 
-   1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant puis sélectionnez **Nœud de recouvrement** : 
+   1. Faites un clic droit sur le dossier des éléments à l’emplacement suivant puis sélectionnez **Nœud de recouvrement** :
 
       `/libs/fd/cm/config`
 
@@ -179,7 +177,7 @@ Lorsque vous accédez à une police dans l’éditeur de texte Correspondence Ma
 Pour plus d’informations sur l’installation des polices, consultez les articles suivants :
 
 * [Installation et désinstallation de polices sous Windows](https://windows.microsoft.com/fr-fr/windows-vista/install-or-uninstall-fonts)
-* [Principes de base sur Mac : livre des polices](https://support.apple.com/fr-fr/HT201749)
+* [Principes de base de Mac : livre des polices](https://support.apple.com/fr-fr/HT201749)
 
 ## Accéder à la personnalisation des polices {#access-font-customizations}
 

@@ -1,26 +1,29 @@
 ---
 title: Gérer les métadonnées de formulaire
+
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 100%
-
+source-wordcount: '1998'
+ht-degree: 97%
 ---
-
 # Gérer les métadonnées de formulaire{#manage-form-metadata}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 ## Présentation  {#overview-nbsp}
@@ -39,7 +42,7 @@ Dans AEM Forms, la liste des propriétés de métadonnées associées à une res
 
 Les types de ressources suivants sont pris en charge dans les AEM Forms :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Document (PDF plats)
 * Formulaires adaptatifs
@@ -295,11 +298,11 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants :
 
    1. Indiquez un libellé de champ à utiliser comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service)
-   1. Sous le champ Associer à la propriété, vous pouvez voir une valeur préremplie **./jcr:content/metadata/default&#39;**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple, &#39;./jcr:content/metadata/department&#39;)
+   1. Sous Mapper à la propriété , vous pouvez voir une valeur préremplie **’./jcr:content/metadata/default’**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple : &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe « ./jcr:content/metadata/ » car il définit le chemin où la propriété est stockée.
+      >Ne modifiez pas le préfixe « ./jcr:content/metadata/ » car il définit le chemin d’accès où la propriété est stockée.
       >
       >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
 

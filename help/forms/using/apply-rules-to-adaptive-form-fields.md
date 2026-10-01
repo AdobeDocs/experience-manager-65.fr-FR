@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
-
+source-wordcount: '1176'
+ht-degree: 99%
 ---
-
 # Didacticiel : application de règles aux champs de formulaires adaptatifs {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -32,7 +30,7 @@ Pour en savoir plus sur l’éditeur de règles, consultez [Éditeur de règles 
 * appeler un service de modèle de données de formulaire pour ajouter des données à la base de données ;
 * exécuter une vérification des validations et afficher les messages d’erreur.
 
-Les images GIF interactives à la fin de chaque section du didacticiel vous aident à apprendre et à valider les fonctionnalités du formulaire que vous créez, à la volée. 
+Les images GIF interactives à la fin de chaque section du didacticiel vous aident à apprendre et à valider les fonctionnalités du formulaire que vous créez, à la volée.
 
 ## Étape 1 : récupération d’un enregistrement client à partir de la base de données {#retrieve-customer-record}
 
@@ -42,7 +40,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
 
 1. Ouvrez le formulaire adaptatif pour le modifier.
 
-   [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+   [&#128279;](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
 1. Sélectionnez le champ **[!UICONTROL Identifiant client]** et sélectionnez l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
 1. Sélectionnez l’icône **[!UICONTROL + Créer]** pour ajouter une règle. L’éditeur visuel s’ouvre.
@@ -54,7 +52,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
 1. Dans l’instruction **[!UICONTROL THEN]**, sélectionnez **[!UICONTROL Appeler un service]** dans la liste déroulante **[!UICONTROL Sélectionner une action]**.
-1. Sélectionnez le service **[!UICONTROL Extraire l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le service **[!UICONTROL Récupérer l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 1. Faites glisser et déposez le champ **[!UICONTROL ID du client]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** dans la zone **[!UICONTROL ENTREE]**.
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
@@ -71,7 +69,7 @@ Chaque client ou cliente se voit attribuer un numéro d’identification client 
 
 ## Étape 2 : ajout de l&#39;adresse client mise à jour dans la base de données {#updated-customer-address}
 
-Une fois les détails du client ou de la cliente extraits de la base de données, vous pouvez mettre à jour l’adresse de livraison, l’État et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client dans la base de données :
+Une fois les détails du client ou de la cliente récupérés de la base de données, vous pouvez mettre à jour l’adresse d’expédition, l’État et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client dans la base de données :
 
 1. Sélectionnez le champ **[!UICONTROL Envoyer]** et sélectionnez l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
 1. Sélectionnez la règle **[!UICONTROL Envoyer - Cliquer]**, puis l’icône **[!UICONTROL Modifier]**. Les options permettant de modifier la règle Envoi s’affichent.
@@ -83,9 +81,9 @@ Une fois les détails du client ou de la cliente extraits de la base de données
    ![envoi-est-activé](assets/submit-is-clicked.png)
 
 1. Dans l’option **[!UICONTROL ALORS]**, sélectionnez l’option **[!UICONTROL + Ajouter l’instruction]**. Sélectionnez **[!UICONTROL Appel du service]** dans le menu déroulant **[!UICONTROL Sélectionner une action]**.
-1. Sélectionnez le service **[!UICONTROL Mettre à jour l’adresse de livraison]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le service **[!UICONTROL Mettre à jour l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 
-   ![mettre-à-jour-l’adresse-de-livraison](assets/update-shipping-address.png)
+   ![update-shipping-address](assets/update-shipping-address.png)
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
@@ -97,7 +95,7 @@ Une fois les détails du client ou de la cliente extraits de la base de données
 
 1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet [!UICONTROL Objets de formulaire] vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** dans ce cas d’utilisation identifie de manière unique un enregistrement dans la tableau **customerdetails**.
 1. Sélectionnez **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, sélectionnez **[!UICONTROL Fermer]**.
-1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client ou d’une cliente, mettez à jour l’adresse de livraison et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client ou de la même cliente, l’adresse de livraison mise à jour s’affiche.
+1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client ou d’une cliente, mettez à jour l’adresse d’expédition et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client ou de la même cliente, l’adresse d’expédition mise à jour s’affiche.
 
 ## Étape 3 : (section bonus) utilisation de l’éditeur de code pour exécuter des validations et afficher les messages d’erreur {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 

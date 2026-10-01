@@ -1,9 +1,13 @@
 ---
 title: Catalog Producer
+
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 description: Catalog Producer
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
-
+source-wordcount: '859'
+ht-degree: 97%
 ---
-
 # Catalog Producer{#catalog-producer}
 
 Découvrez comment utiliser Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
@@ -94,8 +96,8 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 1. Cliquez sur **Suivant**. Pour ajouter un fichier InDesign existant sous forme de page de couverture, cliquez sur **Parcourir** en regard de la zone **Choisir la page de couverture** et spécifiez le chemin d’accès au modèle de page de couverture.
 1. Cliquez sur **Enregistrer**, puis sur **Terminé** pour fermer la boîte de dialogue de confirmation.
 Lorsque vous sélectionnez l’option **Terminé**, une boîte de dialogue s’ouvre pour vous demander si vous souhaitez un rendu .pdf.
-   ![exportation au format pdf](assets/CatalogPDF.png)
-Si l’option Acrobat(PDF) est sélectionnée, un rendu pdf est créé dans  **/jcr:content/renditions**, en plus du rendu indesign. Vous pouvez télécharger tous les rendus en cochant la case « Rendus » dans la boîte de dialogue de téléchargement.
+   ![exporter au format pdf](assets/CatalogPDF.png)
+   Si l’option Acrobat(PDF) est sélectionnée, un rendu pdf est créé dans **/jcr:content/renditions** en plus du rendu indesign. Vous pouvez télécharger tous les rendus en cochant la case « Rendus » dans la boîte de dialogue de téléchargement.
 
 1. Pour générer un aperçu du catalogue que vous venez de créer, sélectionnez-le dans la console **Catalogues**, puis cliquez sur l’icône **Aperçu** de la barre d’outils.
 

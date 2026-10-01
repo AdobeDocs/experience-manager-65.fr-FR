@@ -1,9 +1,13 @@
 ---
 title: Création d’une page de portail Formulaires
+
 description: Le portail Formulaires met à disposition des développeurs et développeuses web des composants, qui permettent de créer et de personnaliser un portail Formulaires sur les sites web créés à l’aide d’Adobe Experience Manager (AEM).
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
+
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
@@ -11,16 +15,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1702'
 ht-degree: 100%
-
 ---
-
 # Création d’une page de portail Formulaires{#creating-a-forms-portal-page}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Les composants du portail Formulaires permettent aux développeurs et développeuses web de créer et de personnaliser un portail de formulaires sur les sites web créés à l’aide d’Adobe Experience Manager (AEM). Pour obtenir un aperçu rapide du portail Formulaires, consultez [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
@@ -184,7 +186,7 @@ Pour configurer l’attribut de prédicat de date :
 
    * **Libellé Date de début** : libellé ou légende correspondant au champ de date de début.
    * **Libellé Date de fin** : libellé ou légende correspondant au champ de date de fin.
-   * **Masquer** : permet d’appliquer le filtre de date par défaut permettant de répertorier les formulaires. 
+   * **Masquer** : permet d’appliquer le filtre de date par défaut permettant de répertorier les formulaires.
 
 1. Sélectionnez **OK**.
 

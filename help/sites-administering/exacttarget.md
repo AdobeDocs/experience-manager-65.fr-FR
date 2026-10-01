@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 100%
-
+source-wordcount: '471'
+ht-degree: 97%
 ---
-
 # Intégrer à ExactTarget{#integrating-with-exacttarget}
 
 L’intégration d’Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer un e-mail créé dans AEM par le biais d’ExactTarget. Elle vous permet également d’utiliser les fonctionnalités de gestion des prospects d’ExactTarget par le biais de formulaires AEM dans des pages AEM.
@@ -46,7 +44,7 @@ Pour créer une configuration Exact Target dans les services cloud :
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Saisissez le nom d’utilisateur ou d’utilisatrice et le mot de passe, puis sélectionnez un point d’entrée d’API (par exemple, **https://webservice.exacttarget.com/Service.asmx**).
-1. Cliquez sur **Se connecter à Exact Target.** Une boîte de dialogue s’affiche pour confirmer l’établissement de la connexion. Cliquez sur **OK** pour fermer la fenêtre.
+1. Cliquez sur **Se connecter à ExactTarget.**. Une fois la connexion établie, une boîte de dialogue de confirmation s’affiche. Cliquez sur **OK** pour fermer la fenêtre.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -54,7 +52,7 @@ Pour créer une configuration Exact Target dans les services cloud :
 
    ExactTarget a été configuré. Si vous souhaitez modifier la configuration, cliquez sur **Modifier**. Pour accéder à ExactTarget, cliquez sur **Accéder à ExactTarget**.
 
-1. AEM propose désormais la fonctionnalité Extension de données. Celle-ci permet d’importer des colonnes d’extensions de données ExactTarget. Pour la configurer, cliquez sur le signe « + » en regard de la configuration ExactTarget créée. Vous pouvez sélectionner l’une des extensions de données existantes dans la liste déroulante. Pour plus d’informations sur la configuration des extensions de données, voir la [documentation ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
+1. AEM propose désormais la fonctionnalité Extension de données. Celle-ci permet d’importer des colonnes d’extensions de données ExactTarget. Pour la configurer, cliquez sur le signe « + » en regard de la configuration ExactTarget créée. Vous pouvez sélectionner l’une des extensions de données existantes dans la liste déroulante. Pour plus d’informations sur la configuration des extensions de données, voir la [documentation ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
 
    Les colonnes d’extension de données importées peuvent être utilisées ultérieurement par le biais du composant **Texte et personnalisation**.
 

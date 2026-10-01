@@ -12,16 +12,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 # Fonctionnalité Flux d’activités {#activity-streams-feature}
 
 ## Présentation {#introduction}
 
-Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant `Activity Streams`.
+Les activités d’un membre de la communauté connecté, telles que la publication sur un forum ou un blog, sont rassemblées dans un flux qui peut être filtré et affiché de différentes manières par le biais de la configuration du composant `Activity Streams`.
 
 La possibilité de suivre ajoute une autre vue des activités lorsque les membres de la communauté suivent des messages d’intérêt ou suivent les activités d’autres membres de la communauté.
 
@@ -32,69 +30,69 @@ Le document décrit :
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
-Si vous souhaitez ajouter un composant `Activity Streams` à une page en mode création, utilisez l’explorateur de composants pour accéder à
+Si vous souhaitez ajouter un composant `Activity Streams` à une page en mode de création, utilisez l’explorateur de composants pour localiser .
 
 * `Communities / Activity Streams`
 
-Faites-le glisser sur la page où les flux d’activités doivent apparaître.
+Et faites-le glisser sur une page où les flux d’activité doivent apparaître.
 
-Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
+Pour plus d’informations, consultez [Principes de base des composants de communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client demandées](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, voici comment le composant `Activity Streams` apparaît :
+Lorsque les [bibliothèques côté client requises](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, le composant `Activity Streams` s’affiche de la manière suivante :
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configuration des flux d’activités {#configuring-activity-streams}
 
-Sélectionnez le composant `Activity Streams` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant de `Activity Streams` placé afin de pouvoir accéder à l’icône de `Configure` qui ouvre la boîte de dialogue de modification et de la sélectionner.
 
-![configure](assets/configure-new.png)
+![configurer](assets/configure-new.png)
 
-Sous l’onglet **Activités utilisateurs** , spécifiez les activités à afficher :
+Sous l’onglet **Activités utilisateur**, spécifiez les activités à afficher :
 
-![user-activities](assets/user-activities.png)
+![activités-utilisateur](assets/user-activities.png)
 
-* **Nombre max. d’activités**
+* **Nb max d&#39;activités**
 
-  Le nombre d’activités à afficher
+  Nombre d’activités à afficher
 
-* **Chemin d’accès aux ressources de diffusion**
+* **Chemin d’accès à la ressource du flux**
 
-  Laissez ce champ vide par défaut pour le site de la communauté ou le groupe de la communauté. Le chemin d’accès à la ressource de flux identifie la source des activités. La valeur par défaut est vide.
+  Laissez vide pour définir par défaut le site ou le groupe de la communauté. Le chemin d’accès à la ressource de flux identifie la source des activités. La valeur par défaut est vide.
 
-* **Afficher la vue des activités utilisateur**
+* **Afficher La Vue Des Activités Utilisateur**
 
-  Si cette case est cochée, la page des activités comprend un onglet qui filtre les activités en fonction de celles générées au sein de la communauté par le membre actuel. La valeur par défaut est cochée.
+  Si cette case est cochée, la page des activités comprend un onglet qui filtre les activités en fonction de celles générées dans la communauté par le membre actuel. La valeur par défaut est cochée.
 
-* **Afficher toutes les activités**
+* **Afficher la vue Toutes les activités**
 
-  Si cette case est cochée, la page des activités comprend un onglet qui inclut toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. La valeur par défaut est cochée.
+  Si cette case est cochée, la page des activités comprend un onglet comprenant toutes les activités générées dans la communauté à laquelle le membre actuel a accès. La valeur par défaut est cochée.
 
 * **Afficher la vue suivante**
 
-  Si cette case est cochée, la page Activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est cochée.
+  Si cette case est cochée, la page des activités comprend un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est cochée.
 
 ### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [Q&amp;R](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [bibliothèque de fichiers](/help/communities/file-library.md) et [commentaires](/help/communities/comments.md).
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent d’effectuer les opérations suivantes sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md) [&#128279;](/help/communities/comments.md), [file library](/help/communities/file-library.md) et &#x200B;comments.
 
-![following-view](assets/following-activities.png)
+![vue suivante](assets/following-activities.png)
 
-Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md) ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La sélection `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md) ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La sélection `Email Subscriptions` n’est présente que lors de la configuration.
 
-Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
+Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
 Le bouton **Suivre** s’affiche :
 
-* Lors de l’affichage du profil d’un autre membre.
-* Sur une page principale, comme les forums, les Q&amp;R et les blogs.
+* Lors de l&#39;affichage du profil d&#39;un autre membre.
+* Sur une page de fonctionnalités principale, telle que les forums, QnA et les blogs.
 
-   * Suit toutes les activités pour cette fonction générale.
+  * Suit toutes les activités pour cette fonctionnalité générale.
 
-* Pour une entrée spécifique, comme un sujet de forum, une question Q&amp;R ou un article de blog.
+* Pour une entrée spécifique, telle qu’un sujet de forum, une question ou un article de blog.
 
-   * Suit toutes les activités pour cette entrée spécifique.
+  * Suit toutes les activités pour cette entrée spécifique.
 
 ### Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les flux d’activités](/help/communities/essentials-activities.md) pour les développeurs.
+Pour plus d’informations, consultez la page [Activity Streams Essentials](/help/communities/essentials-activities.md) destinée aux développeurs.

@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 94%
 ---
-
 
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
@@ -30,7 +28,8 @@ Pour accéder à la console de balisage de l’interface utilisateur classique 
 
 * en mode de création
 * connectez-vous avec des droits d’administration ;
-* Accédez à la console par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging).
+* accédez à la console
+par exemple, [&#128279;](https://localhost:4502/tagging)
 
 ![Fenêtre de la console classique](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -49,18 +48,19 @@ Pour accéder à la console de balisage de l’interface utilisateur classique 
 1. Dans les deux cas, saisissez :
 
    * **Titre**
-(*obligatoire*) Titre de la balise affiché. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
+     (*Obligatoire*) Titre affiché pour la balise. Tout caractère peut être saisi,
+     il est recommandé de ne pas utiliser les caractères spéciaux suivants :
 
-      * `colon (:)` - Délimiteur d’espace de noms
-      * `forward slash (/)` - Délimiteur de sous-balises
+     * `colon (:)` - Délimiteur d’espace de noms
+     * `forward slash (/)` - Délimiteur de sous-balises
 
      Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Name**
-(*obligatoire*) Nom du nœud de la balise.
+     (*Obligatoire*) Nom du nœud pour la balise .
 
    * **Description**
-(*facultatif*) Description de la balise.
+     (*Facultatif*) Description de la balise.
 
    * Sélectionnez **Créer**.
 
@@ -113,7 +113,7 @@ La boîte de dialogue **Déplacer la balise** se présente de la manière suivan
 
 ## Fusion de balises {#merging-tags}
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est alors plus disponible pour les auteurs et les autrices.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est alors plus disponible pour les créateurs et les créatrices.
 
 Pour fusionner une balise dans une autre balise :
 

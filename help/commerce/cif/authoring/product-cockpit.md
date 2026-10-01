@@ -7,11 +7,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 100%
-
+source-wordcount: '433'
+ht-degree: 95%
 ---
-
 # Console du produit {#product-cockpit}
 
 ## Vue d’ensemble {#overview}
@@ -76,7 +74,7 @@ Cliquez sur l’icône des propriétés d’un produit ou d’une catégorie pou
 
 ### Onglets Commerce {#tabs}
 
-Les onglets Général et Variante affichent les propriétés commerciales prédéfinies provenant du serveur principal de Commerce. Ces données (y compris les variantes) est en lecture seule dans AEM, car le système d’enregistrement est le serveur principal de Commerce. L’onglet Variante ne s’affiche que pour les produits comportant des variantes et présente une liste de toutes les variantes.
+Les onglets Général et Variante affichent les propriétés commerciales prédéfinies provenant du serveur principal de Commerce. Ces données (y compris les variantes) sont en lecture seule dans AEM, car le système d’enregistrement est le serveur principal de Commerce. L’onglet Variante ne s’affiche que pour les produits comportant des variantes et présente une liste de toutes les variantes.
 
 ![propriétés de catalogue](/help/commerce/cif/assets/catalog-properties.png)
 

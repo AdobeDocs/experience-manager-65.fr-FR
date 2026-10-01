@@ -11,11 +11,9 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '987'
 ht-degree: 100%
-
 ---
-
 # Extension AEM Brackets{#aem-brackets-extension}
 
 ## Vue d’ensemble {#overview}
@@ -76,7 +74,7 @@ Dans le menu **Fichier** de Brackets, choisissez **Ouvrir le dossier...** et sé
 
 >[!NOTE]
 >
->Si votre projet n’a pas de package de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le package de contenu** comme indiqué plus bas dans la section Synchronisation complète des packages de contenu du projet.
+>Si votre projet n’a pas de package de contenu, vous pouvez essayer d’appliquer l’[exemple HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). Sur GitHub, cliquez sur **Télécharger le fichier ZIP**, extrayez les fichiers localement et, comme indiqué ci-dessus, ouvrez le dossier `jcr_root` dans Brackets. Suivez ensuite les étapes ci-dessous pour configurer les **paramètres du projet** et enfin téléchargez le package entier vers votre instance de développement AEM en **exportant le module de contenu** comme indiqué plus bas dans la section Synchronisation complète des modules de contenu du projet.
 >
 >Après ces étapes, vous devriez être en mesure d’accéder à l’URL `/content/todo.html` sur votre instance de développement AEM, d’apporter des modifications au code dans Brackets et de voir comment, après une actualisation dans le navigateur Web, les modifications ont été immédiatement synchronisées avec le serveur AEM.
 
@@ -113,7 +111,7 @@ Dans l’Explorateur de projet, ouvrez le menu contextuel en cliquant avec le bo
 
 ### Synchronisation complète des packages de contenu {#full-content-package-synchronization}
 
-Dans le menu **AEM**, les options **Exporter le package de contenu** ou **Importer le package de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
+Dans le menu **AEM**, les options **Exporter le module de contenu** ou **Importer le module de contenu** permettent de synchroniser l’ensemble du projet avec le serveur.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

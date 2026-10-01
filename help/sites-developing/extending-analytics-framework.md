@@ -11,11 +11,9 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
-ht-degree: 100%
-
+source-wordcount: '1638'
+ht-degree: 99%
 ---
-
 # Personnalisation du framework Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
 Le framework Adobe Analytics détermine les informations suivies avec Adobe Analytics. Afin de personnaliser le framework par défaut, utilisez JavasSript pour ajouter un suivi personnalisé, intégrer les modules externes Adobe Analytics et modifier les paramètres généraux dans le framework utilisé pour le suivi.
@@ -267,13 +265,13 @@ Le dossier de bibliothèque cliente /libs/cq/analytics/clientlibs/sitecatalyst/p
 
 Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente de vos modules externes. Vous n’avez à réaliser cette opération qu’une seule fois. Pour ajouter un module externe au dossier de bibliothèque cliente, procédez comme suit.
 
-1. Dans un navigateur Web, ouvrez CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Dans un navigateur Web, ouvrez CRXDE Lite. ([&#128279;](http://localhost:4502/crx/de))
 
 1. Cliquez avec le bouton droit sur le dossier /apps/my-app/clientlibs puis sur Créer > Créer un nœud. Entrez les valeurs de propriété suivantes, puis cliquez sur OK :
 
    * Nom : nom de votre dossier de bibliothèque cliente, par exemple, mes-modules-externes
 
-   * Type : cq:ClientLibraryFolder
+   * Type : cq:ClientLibraryFolder
 
 1. Sélectionnez le dossier de bibliothèque cliente que vous avez créé et utilisez la barre de propriétés en bas à droite pour ajouter la propriété suivante :
 

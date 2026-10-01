@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
-
+source-wordcount: '3376'
+ht-degree: 91%
 ---
-
 # Pages de destination{#landing-pages}
 
 La fonction Pages de destination permet d’importer rapidement et facilement les conceptions et les contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des pages de destination marketing qui ne sont actives que pendant une durée limitée et qui doivent être créées rapidement.
@@ -32,7 +30,7 @@ La préparation du package de conception à importer est traitée dans la sectio
 
 >[!CAUTION]
 >
->L’importateur de conception, utilisé pour importer des pages de destination, [a été abandonné avec AEM 6.5.](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>L’importateur de conception utilisé pour importer les pages de destination [a été abandonné avec AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -82,8 +80,8 @@ Pour rendre des parties HTML importées modifiables dans AEM, vous pouvez mapper
 * Image, pour les images qui doivent être échangeables
 * Appel à action :
 
-   * Lien des clics publicitaires
-   * Lien graphique
+  * Lien des clics publicitaires
+  * Lien graphique
 
 * Formulaire de piste CTA, pour capturer des informations sur l’utilisateur ou l’utilisatrice
 * Système de paragraphe (Parsys), pour permettre l’ajout ou la conversion de composants
@@ -139,7 +137,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter un lien textuel sur la page 
 
 **Libellé** Il s’agit du texte visible par les utilisateurs. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**Cible URL** Saisissez l’URI à laquelle les utilisateurs accéderont s’ils cliquent sur le texte. 
+**Cible URL** Saisissez l’URI à laquelle les utilisateurs accéderont s’ils cliquent sur le texte.
 
 **Options de rendu** Décrit les options de rendu. Vous pouvez effectuer une sélection parmi les options suivantes :
 
@@ -192,12 +190,12 @@ Voici un exemple de formulaire de prospect CTA :
 Les formulaires de prospect CTA se composent de plusieurs composants différents :
 
 * **Formulaire de prospect**
-Le composant Formulaire de prospect définit le début et la fin d’un nouveau formulaire dans une page. D’autres composants peuvent être placés entre ces éléments, tels que « ID d’e-mail », « Prénom », etc.
+Le composant de formulaire de prospect définit le début et la fin d’un nouveau formulaire de prospect sur une page. D’autres composants peuvent être placés entre ces éléments, tels que « ID d’e-mail », « Prénom », etc.
 
-* **Champs et éléments de formulaires**
-Les champs et les éléments de formulaires peuvent inclure des zones textuelles, des cases d’option, des images, etc. L’utilisateur effectue souvent une action dans un champ de formulaire, comme saisir du texte. Consultez chaque élément de formulaires pour plus d’informations.
+* **Champs et éléments de formulaire**
+Les champs et éléments de formulaire peuvent inclure des zones de texte, des boutons radio, des images, etc. L’utilisateur exécute souvent une action dans un champ de formulaire (saisie de texte, par exemple). Pour plus d’informations, reportez-vous à la section Éléments de formulaire individuels.
 
-* **Composants Profil**
+* **Composants de profil**
 Les composants Profil sont associés aux profils des visiteurs utilisés pour la collaboration sociale et pour tout autre domaine où la personnalisation des visiteurs est requise.
 
 Vous découvrez un exemple de formulaire ci-dessus. Il comprend le composant **Formulaire de prospect** (début et fin), avec les champs **Prénom** et **ID d’e-mail** utilisés comme données d’entrée et un champ **Envoyer**.
@@ -213,13 +211,13 @@ Bien que chacun des composants de formulaire de prospect ait un objectif différ
 Lors de la configuration de l’un des composants de formulaire, les onglets suivants sont disponibles dans la boîte de dialogue :
 
 * **Titre et texte**
-Cet onglet vous invite à renseigner des informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
+Vous devez spécifier les informations de base, telles que le titre du composant et tout texte d’accompagnement. Le cas échéant, il vous permet également d’apporter d’autres informations essentielles ; par exemple, s’il s’agit d’un champ à sélection multiple ou encore les différents éléments pouvant être sélectionnés.
 
 * **Valeurs initiales**
-Permet d’indiquer une valeur par défaut.
+Permet de définir une valeur par défaut.
 
 * **Contraintes**
-Permet d’indiquer si un champ est obligatoire et les contraintes qui lui sont appliquées (doit être numérique, par exemple).
+Vous pouvez indiquer ici si un champ est obligatoire et y placer des contraintes (par exemple, doit être numérique, etc.).
 
 * **Style**
 Indique la taille et le style des champs.
@@ -276,7 +274,7 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-**Page de remerciement** Page à référencer pour remercier les visiteurs qui ont saisi des données. Si ce champ est laissé vide, le formulaire est réaffiché après la soumission.
+**Page de remerciement** Page à référencer pour remercier les visiteurs pour leur message. Si rien n’est indiqué, le formulaire se réaffiche après l’envoi.
 
 **Démarrer le workflow** Détermine quel workflow est déclenché une fois le formulaire de prospect envoyé.
 
@@ -296,7 +294,7 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 
 Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
-**Validation du client** Indique si la validation du client est obligatoire pour ce formulaire (la validation de serveur a toujours lieu). Ceci peut être réalisé en conjonction avec le composant Captcha de formulaires.
+**Validation du client** Indique si la validation du client est requise pour ce formulaire (la validation du serveur a toujours lieu). Cela peut être réalisé conjointement avec le composant Captcha de Forms.
 
 **Type de ressource de validation** Définit le type de ressource de validation si vous souhaitez valider la totalité du formulaire de prospect (au lieu de chaque champ).
 
@@ -315,16 +313,16 @@ Si vous validez le formulaire dans son intégralité, vous devez également incl
 * **Afficher le bouton Envoyer**
 Indique si le bouton Envoyer doit être visible ou non.
 
-* **Nom du bouton Envoyer**
+* **Soumettre le nom**
 Identifiant à spécifier si vous utilisez plusieurs boutons Envoyer dans un formulaire.
 
-* **Titre du bouton Envoyer**
+* **Soumettre le titre**
 Nom qui apparaît sur le bouton, Envoyer ou Soumettre, par exemple.
 
 * **Afficher le bouton Réinitialiser**
 Cochez la case pour que le bouton Réinitialiser soit visible.
 
-* **Titre du bouton Réinitialiser**
+* **Réinitialiser le titre**
 Nom qui apparaît sur le bouton Réinitialiser.
 
 * **Description**
@@ -448,7 +446,7 @@ Pour ajouter des composants sur la page de destination, faites-les glisser et d�
 
 >[!NOTE]
 >
->Si un composant de la page de destination ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que pendant l’import, les parties non modifiables n’ont pas été converties en composants AEM.
+>Si un composant de la page de destination ne peut pas être modifié, vous devez réimporter le fichier zip après [modification du fichier HTML](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Cela signifie que pendant l’importation, les parties non modifiables n’ont pas été converties en composants AEM.
 
 ### Supprimer une page de destination {#deleting-a-landing-page}
 

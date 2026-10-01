@@ -9,9 +9,7 @@ source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 100%
-
 ---
-
 # Arborescence de la structure du fragment de contenu {#content-fragment-structure-tree}
 
 Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour mieux comprendre votre contenu découplé.

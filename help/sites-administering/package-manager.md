@@ -1,6 +1,6 @@
 ---
-title: Gestionnaire de packages
-description: Découvrez les principes de base de la gestion des packages AEM avec le gestionnaire de packages.
+title: Gestionnaire de modules
+description: Découvrez les principes de base de la gestion des packages AEM avec le gestionnaire de modules.
 feature: Administering
 role: Admin
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,31 +11,29 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 100%
-
+source-wordcount: '3576'
+ht-degree: 98%
 ---
 
-
-# Gestionnaire de packages {#working-with-packages}
+# Gestionnaire de modules {#working-with-packages}
 
 Les packages permettent d’importer et d’exporter le contenu du référentiel. Vous pouvez utiliser des packages pour installer un nouveau contenu, une nouvelle fonctionnalité, transférer du contenu entre les instances et sauvegarder le contenu du référentiel.
 
-À l’aide du gestionnaire de packages, vous pouvez transférer des packages entre votre instance AEM et votre système de fichiers local à des fins de développement.
+À l’aide du gestionnaire de modules, vous pouvez transférer des packages entre votre instance AEM et votre système de fichiers local à des fins de développement.
 
 ## Que sont les packages ? {#what-are-packages}
 
 Un package est un fichier zip contenant le contenu du référentiel dans un formulaire de sérialisation de système de fichiers, appelé sérialisation du coffre, fournissant une représentation des fichiers et des dossiers facile à utiliser et à modifier. Le contenu inclus dans le package est défini à l’aide de filtres.
 
-Un package contient également les méta-informations du coffre, notamment les définitions des filtres et les informations de configuration de l’importation. Des propriétés de contenu supplémentaires, qui ne sont pas utilisées pour l’extraction du package, peuvent être incluses dans le package, telles qu’une description, une image visuelle ou une icône. Ces propriétés de contenu supplémentaires sont destinées au consommateur du package de contenu et ne sont fournies qu’à titre d’informations.
+Un package contient également les méta-informations du coffre, notamment les définitions des filtres et les informations de configuration de l’importation. Des propriétés de contenu supplémentaires, qui ne sont pas utilisées pour l’extraction du package, peuvent être incluses dans le package, telles qu’une description, une image visuelle ou une icône. Ces propriétés de contenu supplémentaires sont destinées au consommateur du module de contenu et ne sont fournies qu’à titre d’informations.
 
 >[!NOTE]
 >
 >Les packages représentent la version actuelle du contenu au moment où le package est créé. Ils n’incluent aucune version précédente du contenu que AEM conserve dans le référentiel.
 
-## Gestionnaire de packages {#package-manager}
+## Gestionnaire de modules {#package-manager}
 
-Le Gestionnaire de packages gère les packages de votre installation AEM. Après avoir [attribué les autorisations nécessaires](#permissions-needed-for-using-the-package-manager), vous pouvez utiliser le Gestionnaire de packages pour différentes actions, comme la configuration, la création, le téléchargement et l’installation des packages.
+Le gestionnaire de modules gère les packages de votre installation AEM. Après avoir [attribué les autorisations nécessaires](#permissions-needed-for-using-the-package-manager), vous pouvez utiliser le gestionnaire de modules pour différentes actions, comme la configuration, la création, le téléchargement et l’installation des packages.
 
 ### Autorisations requises {#required-permissions}
 
@@ -50,26 +48,26 @@ Pour créer, modifier, charger et installer des packages, les utilisateurs doive
 >
 >Pour limiter ces risques, il est vivement recommandé d’accorder des autorisations à des groupes spécifiques sur des sous-arborescences dédiées uniquement.
 
-### Accéder au gestionnaire de packages {#accessing}
+### Accéder au gestionnaire de modules {#accessing}
 
-Vous pouvez accéder au gestionnaire de packages de trois façons :
+Vous pouvez accéder au gestionnaire de modules de trois façons :
 
 1. À partir du menu principal d’AEM > **Outils** > **Déploiement** > **Packages**
 1. Depuis [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en utilisant la barre de sélection supérieure
 1. Directement en accédant à `http://<host>:<port>/crx/packmgr/`
 
-### Interface utilisateur du gestionnaire de packages {#ui}
+### Interface d’utilisation du gestionnaire de modules {#ui}
 
-Le gestionnaire de packages est divisé en quatre zones fonctionnelles principales :
+Le gestionnaire de modules est divisé en quatre zones fonctionnelles principales :
 
 * **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
 * **Liste de packages** - Il s’agit de la liste des packages de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
-* **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
-   * **Effacer le journal**
-   * **Afficher/Masquer**
+* **Journal d’activité** : ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de modules, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
+  * **Effacer le journal**
+  * **Afficher/Masquer**
 * **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste des packages, ainsi que des boutons pour rechercher, créer et charger des packages.
 
-![Interface utilisateur du gestionnaire de packages](assets/package-manager-ui.png)
+![Interface d’utilisation du gestionnaire de modules](assets/package-manager-ui.png)
 
 Cliquez sur une option dans le panneau de navigation de gauche pour filtrer immédiatement la liste des packages.
 
@@ -143,11 +141,11 @@ Correctif officiel
 
 Extension ou installation officielle AEM
 
-![Module officiel d’installation ou d’extension d’AEM ](assets/official-installation.png)
+![Miniature officielle d’extension ou d’installation d’AEM](assets/official-installation.png)
 
 Pack de services officiel
 
-![Icône de pack de services officiel d’AEM ](assets/official-service-pack.png)
+![Icône de pack de services officiel d’AEM &#x200B;](assets/official-service-pack.png)
 
 Utilisez une icône unique pour votre package. Ne réutilisez pas une icône utilisée par Adobe.
 
@@ -175,7 +173,7 @@ Lors de la création de règles, vous définissez une expression régulière (é
 | inclusion | Inclusion inclut tous les fichiers et dossiers du répertoire spécifié qui correspondent à l’expression régulière. Inclusion **n’inclura pas** d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
 | Exclusion | Exclusion exclut tous les fichiers et dossiers correspondant à l’expression régulière. |
 
-Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
+Les filtres de package sont le plus souvent définis lors de la première [création du package](#creating-a-new-package). Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
 >[!TIP]
 >
@@ -220,7 +218,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
 ### Création d’un package {#creating-a-new-package}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Cliquez sur **Créer un package**.
 
@@ -244,7 +242,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
    ![Nouveau package](assets/new-package.png)
 
-1. Cliquez sur **Modifier** pour définir le [contenu du package.](#package-contents) Une fois que vous avez fini de modifier les paramètres, cliquez sur **Enregistrer**.
+1. Cliquez sur **Modifier** pour définir le [contenu du package.](#package-contents) Cliquez sur **Enregistrer** une fois la modification des paramètres terminée.
 
 1. Vous pouvez maintenant [créer](#building-a-package) votre package.
 
@@ -254,7 +252,7 @@ Il n’est pas obligatoire de concevoir immédiatement le package après lʼavoi
 
 Un package est souvent conçu au moment où vous [créez le package](#creating-a-new-package), mais vous pouvez y revenir ultérieurement pour concevoir ou reconcevoir le package. Cela peut s’avérer utile si le contenu du référentiel ou les filtres du package ont été modifiés.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -266,7 +264,7 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 
 Une fois quʼun package est téléchargé dans AEM, vous pouvez modifier ses paramètres.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -280,7 +278,7 @@ En fonction des modifications que vous avez apportées, vous devrez peut-être [
 
 Une fois qu’un package a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du package telles que la miniature, la description, etc., sans toucher à son contenu.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -292,9 +290,9 @@ Une fois qu’un package a été créé, il peut être réencapsulé. La réenca
 
 ### Afficher d’autres versions de package {#other-versions}
 
-Comme chaque version d’un package apparaît dans la liste comme n’importe quel autre package, le gestionnaire de packages peut trouver d’autres versions d’un package sélectionné.
+Comme chaque version d’un package apparaît dans la liste comme n’importe quel autre package, le gestionnaire de modules peut trouver d’autres versions d’un package sélectionné.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -304,7 +302,7 @@ Comme chaque version d’un package apparaît dans la liste comme n’importe qu
 
 Une fois un package créé, vous pouvez afficher son contenu.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -318,7 +316,7 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 ### Télécharer des packages sur votre système de fichiers {#downloading-packages-to-your-file-system}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -328,11 +326,11 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 ### Partage d’un package {#share}
 
-Le partage de packages était un service public centralisé pour distribuer des packages de contenu. Le partage de packages a été remplacé par la [Distribution logicielle](#software-distribution) et ce bouton ne fonctionne plus.
+Le partage de packages était un service public centralisé pour distribuer des modules de contenu. Le partage de packages a été remplacé par la [Distribution logicielle](#software-distribution) et ce bouton ne fonctionne plus.
 
 ### Chargement des packages à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Sélectionnez le dossier de groupe dans lequel vous souhaitez que le package soit chargé.
 
@@ -355,7 +353,7 @@ Les packages pouvant modifier le contenu existant, il est souvent utile de valid
 
 #### Options de validation {#validation-options}
 
-Le gestionnaire de packages peut effectuer les validations suivantes :
+Le gestionnaire de modules peut effectuer les validations suivantes :
 
 * [Imports de packages OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
@@ -365,19 +363,19 @@ Le gestionnaire de packages peut effectuer les validations suivantes :
 
 **Éléments inspectés**
 
-Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
+Cette validation inspecte le package pour tous les fichiers JAR (bundles OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles repose le bundle OSGi) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
 **Établissement des rapports**
 
-Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de packages.
+Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du gestionnaire de modules.
 
 **États d’erreur**
 
-Si les dépendances ne sont pas satisfaites, les lots OSGi du package avec ces dépendances ne démarrent pas. Cela entraîne un déploiement d’application interrompu, car tout ce qui repose sur le lot OSGi non démarré ne fonctionnera pas correctement.
+Si les dépendances ne sont pas satisfaites, les bundles OSGi du package avec ces dépendances ne démarrent pas. Cela entraîne un déploiement d’application interrompu, car tout ce qui repose sur le bundle OSGi non démarré ne fonctionnera pas correctement.
 
 **Résolution d’erreurs**
 
-Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster la version dépendante du lot avec des importations non satisfaites.
+Pour résoudre des erreurs dues à des bundles OSGi non satisfaits, la version de la dépendance dans le bundle comportant des importations non satisfaites doit être ajustée.
 
 ##### Valider les recouvrements {#overlays}
 
@@ -389,7 +387,7 @@ Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/er
 
 **Établissement des rapports**
 
-Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de packages.
+Ces recouvrements sont décrits dans le Journal d’activités du gestionnaire de modules.
 
 **États d’erreur**
 
@@ -411,7 +409,7 @@ Cette validation vérifie quelles autorisations sont ajoutées, comment elles so
 
 **Établissement des rapports**
 
-Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de packages.
+Les autorisations sont décrites dans le Journal d’activités du gestionnaire de modules.
 
 **États d’erreur**
 
@@ -434,9 +432,9 @@ La validation des packages peut se faire de deux manières différentes :
 
 La validation doit toujours avoir lieu après le chargement du package, mais avant son installation.
 
-##### Validation de packages via le Gestionnaire de packages {#via-package-manager}
+##### Validation de packages via le gestionnaire de modules {#via-package-manager}
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -444,7 +442,7 @@ La validation doit toujours avoir lieu après le chargement du package, mais ava
 
 1. Dans la boîte de dialogue modale qui s’affiche alors, utilisez les cases à cocher pour sélectionner le ou les types de validation et commencez la validation en cliquant sur **Valider**.
 
-1. La ou les validations sélectionnées sont ensuite exécutées et les résultats sont affichés dans le Journal d’activité du Gestionnaire de packages.
+1. La ou les validations sélectionnées sont ensuite exécutées et les résultats sont affichés dans le Journal d’activité du gestionnaire de modules.
 
 ##### Validation de packages via une requête HTTP POST {#via-post-request}
 
@@ -472,9 +470,9 @@ Lors de la validation par le biais dʼune requête POST, la réponse est renvoy�
 
 ### Affichage de la couverture du package {#package-coverage}
 
-Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnaire de packages d’appliquer les filtres d’un package au contenu de votre référentiel existant, afin de montrer le contenu du référentiel qui est couvert par la définition du filtre du package.
+Les packages sont définis par leurs filtres. Vous pouvez demander au gestionnaire de modules d’appliquer les filtres d’un package à votre contenu de référentiel existant, afin de montrer le contenu du référentiel qui est couvert par la définition du filtre du package.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
@@ -490,7 +488,7 @@ Le chargement d’un package ajoute uniquement le contenu du package au référe
 >
 >L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous avez la certitude qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
 
-Avant l’installation de votre package, le Gestionnaire de packages crée automatiquement un package instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
+Avant l’installation de votre package, le gestionnaire de modules crée automatiquement un package instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
 
 >[!CAUTION]
 >
@@ -502,7 +500,7 @@ Avant l’installation de votre package, le Gestionnaire de packages crée autom
 >
 >La désactivation de WorkflowLauncher garantit que le framework de l’importateur de ressources ne manipule pas (involontairement) les ressources lors de l’installation.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package que vous souhaitez installer à partir de la liste des packages en cliquant sur le nom du package.
 
@@ -528,13 +526,13 @@ La réinstallation des packages effectue les mêmes étapes sur un package déj�
 
 ### Chargement et installation basés sur le système de fichiers {#file-system-based-upload-and-installation}
 
-Vous pouvez complètement renoncer au gestionnaire de packages lors de l’installation de packages. AEM peut détecter les packages placés à un emplacement spécifique du système de fichiers local de l’ordinateur hôte et les charger et installer automatiquement.
+Vous pouvez complètement renoncer au gestionnaire de modules lors de l’installation de packages. AEM peut détecter les packages placés à un emplacement spécifique du système de fichiers local de l’ordinateur hôte et les charger et installer automatiquement.
 
 1. Sous le dossier d’installation d’AEM, il y a un dossier `crx-quicksart` à côté du fichier jar et du fichier `license.properties`. Créez un dossier nommé `install` sous `crx-quickstart` résultant au chemin d’accès `<aem-home>/crx-quickstart/install`.
 
 1. Dans ce dossier, ajoutez vos packages. Ils sont chargés et installés automatiquement sur votre instance.
 
-1. Une fois le chargement et l’installation terminés, vous pouvez voir les packages dans Gestionnaire de packages comme si vous aviez utilisé l’interface utilisateur du Gestionnaire de packages pour les installer.
+1. Une fois le chargement et l’installation terminés, vous pouvez voir les packages dans gestionnaire de modules comme si vous aviez utilisé l’interface d’utilisation du gestionnaire de modules pour les installer.
 
 Si l’instance est en cours d’exécution, le chargement et l’installation démarrent immédiatement lorsque vous l’ajoutez au package dans le dossier `install`.
 
@@ -542,9 +540,9 @@ Si l’instance n’est pas en cours d’exécution, les packages placés dans l
 
 ### Désinstaller les packages {#uninstalling-packages}
 
-La désinstallation d’un package ramène le contenu du référentiel à l’instantané réalisé automatiquement par le gestionnaire de packages avant l’installation.
+La désinstallation d’un package ramène le contenu du référentiel à l’instantané réalisé automatiquement par le gestionnaire de modules avant l’installation.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package que vous souhaitez désinstaller à partir de la liste des packages en cliquant sur le nom du package.
 
@@ -556,13 +554,13 @@ La désinstallation d’un package ramène le contenu du référentiel à l’in
 
 ### Supprimer des packages {#deleting-packages}
 
-La suppression d’un package supprime uniquement ses détails du gestionnaire de packages. Si ce package a déjà été installé, le contenu installé n’est pas supprimé.
+La suppression d’un package supprime uniquement ses détails du gestionnaire de modules. Si ce package a déjà été installé, le contenu installé n’est pas supprimé.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package que vous souhaitez supprimer de la liste des packages en cliquant sur le nom du package.
 
-1. Le Gestionnaire de packages vous invite à confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
+1. Le gestionnaire de modules vous invite à confirmer que vous souhaitez supprimer le package. Cliquez sur **OK** pour confirmer la suppression.
 
 1. Les informations sur le package sont supprimées et les détails sont signalés dans le journal d’activité.
 
@@ -570,7 +568,7 @@ La suppression d’un package supprime uniquement ses détails du gestionnaire d
 
 Répliquez le contenu d’un package afin de l’installer dans l’instance de publication.
 
-1. [Accédez au Gestionnaire de packages.](#accessing)
+1. [Accédez au gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du package que vous souhaitez répliquer depuis la liste des packages en cliquant sur le nom du package.
 
@@ -588,4 +586,4 @@ Pour plus d’informations, consultez la [documentation sur la distribution logi
 
 >[!NOTE]
 >
->Le gestionnaire de packages n’est actuellement pas intégré à Distribution logicielle, comme c’était le cas avec l’ancien service de partage de packages. Par conséquent, les boutons de partage et autres liens vers le partage de packages dans le gestionnaire de packages ne fonctionnent plus. La solution consiste à télécharger des packages sur votre disque local.
+>Le gestionnaire de modules n’est actuellement pas intégré à Distribution logicielle, comme c’était le cas avec l’ancien service de partage de packages. Par conséquent, les boutons de partage et autres liens vers le partage de packages dans le gestionnaire de modules ne fonctionnent plus. La solution consiste à télécharger des packages sur votre disque local.
