@@ -11,11 +11,9 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '478'
 ht-degree: 100%
-
 ---
-
 # Éditeur de boîtes de dialogue{#dialog-editor}
 
 L’éditeur de boîtes de dialogue fournit une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.

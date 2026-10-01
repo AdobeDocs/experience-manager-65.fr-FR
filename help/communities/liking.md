@@ -1,6 +1,6 @@
 ---
-title: Utilisation de l’option J’aime
-description: Découvrez comment ajouter et configurer le composant J’aime afin que les utilisateurs puissent exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire.
+title: Utilisation de la mention J'aime
+description: Découvrez comment ajouter et configurer le composant Liaison afin que les utilisateurs et utilisatrices puissent exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -11,50 +11,48 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 1%
-
 ---
+# Utilisation de la mention J&#39;aime {#using-liking}
 
-# Utilisation de l’option J’aime {#using-liking}
+Le composant `Liking` est un outil utile qui permet aux utilisateurs et aux utilisatrices d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le composant `Liking`, les membres sélectionnent l&#39;icône de cœur pour indiquer une opinion positive.
 
-Le composant `Liking` est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, comme un commentaire dans un forum. Avec le composant `Liking`, les membres sélectionnent l’icône représentant un coeur pour indiquer une opinion positive.
+## Ajout d’un lien à une page {#adding-liking-to-a-page}
 
-## Ajout de mentions J’aime à une page {#adding-liking-to-a-page}
-
-Pour ajouter un composant `Liking` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Pour ajouter un composant `Liking` à une page en mode création, utilisez l’explorateur de composants pour localiser .
 
 * `Communities / Liking`
 
-Faites-le glisser sur la page, par exemple à une position relative à la fonction que les utilisateurs peuvent aimer.
+Et faites-le glisser sur une page, par exemple une position relative à la fonction pour que les utilisateurs l’aiment.
 
-Pour plus d’informations, consultez la page [Principes de base des composants Communities](basics.md).
+Pour plus d’informations, consultez [Principes de base des composants de communautés](basics.md).
 
-Lorsque les [bibliothèques côté client demandées](essentials-liking.md#essentials-for-client-side) sont incluses, voici comment le composant `Liking` apparaît.
+Lorsque les [bibliothèques côté client requises](essentials-liking.md#essentials-for-client-side) sont incluses, le composant `Liking` s’affiche de cette manière.
 
 ![liking-component](assets/liking-component.png)
 
-## Configuration de l’option J’aime {#configuring-liking}
+## Configuration des préférences {#configuring-liking}
 
-Sélectionnez le composant `Liking` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant de `Liking` placé afin de pouvoir accéder à l’icône de `Configure` qui ouvre la boîte de dialogue de modification et de la sélectionner.
 
 ![configure-new](assets/configure-new.png)
 
-Sous l’onglet **[!UICONTROL Textes et libellés]**, spécifiez les propriétés utilisées pour enregistrer les mentions &quot;J’aime&quot;.
+Sous l’onglet **[!UICONTROL Textes et libellés]**, spécifiez les propriétés utilisées pour enregistrer les mentions J’aime.
 
-![configure-liking](assets/configure-liking.png)
+![configurer-aimer](assets/configure-liking.png)
 
-* **[!UICONTROL Étiquette de réponse positive]**
+* **[!UICONTROL Libellé de réponse positive]**
 
-  (*Obligatoire*) Nom de propriété d’une réponse positive.
+  (*Obligatoire*) Nom de propriété pour une réponse positive.
 
-* **[!UICONTROL Étiquette de réponse négative]**
+* **[!UICONTROL Libellé de réponse négative]**
 
-  (*Obligatoire*) Nom de propriété d’une réponse négative.
+  (*Obligatoire*) Nom de propriété pour une réponse négative.
 
-* **[!UICONTROL Nom Tally]**
+* **[!UICONTROL Tally Name]**
 
-  (*Obligatoire*) Nom de propriété interne identifiable de cette instance d’un composant Vote.
+  (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant votant.
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 
@@ -64,8 +62,8 @@ Les membres peuvent changer leurs goûts à tout moment.
 
 ### Anonyme {#anonymous}
 
-Les liens anonymes ne sont pas pris en charge. Les visiteurs du site doivent s’inscrire (devenir membres) et se connecter pour participer à l’activité de votre choix.
+La mention aimé anonyme n’est pas prise en charge. Les visiteurs et visiteuses du site doivent s’inscrire (devenir membre) et se connecter pour participer aux mentions J’aime.
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la mention J’aime](essentials-liking.md) pour les développeurs.
+Vous trouverez plus d’informations à ce sujet sur la page [Liking Essentials](essentials-liking.md) destinée aux développeurs et développeuses.

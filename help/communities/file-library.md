@@ -1,6 +1,6 @@
 ---
-title: Fonctionnalité Bibliothèque de fichiers
-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
+title: Fonction de bibliothèque de fichiers
+description: La fonction Bibliothèque de fichiers permet aux visiteurs connectés de charger, gérer et télécharger des fichiers.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,39 +12,37 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '754'
 ht-degree: 2%
-
 ---
-
-# Fonctionnalité Bibliothèque de fichiers{#file-library-feature}
+# Fonction de bibliothèque de fichiers{#file-library-feature}
 
 ## Présentation {#introduction}
 
-La fonctionnalité Bibliothèque de fichiers fournit un emplacement où les visiteurs connectés du site (membres de la communauté) peuvent charger, gérer et télécharger des fichiers dans le site de la communauté.
+La fonction de bibliothèque de fichiers permet aux visiteurs du site connectés (membres de la communauté) de charger, gérer et télécharger des fichiers sur le site de la communauté.
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit les éléments suivants :
 
-* Ajout de la fonction Bibliothèque de fichiers à un site AEM.
+* Ajout de la fonction de bibliothèque de fichiers à un site AEM.
 * Paramètres de configuration du composant `File Library`.
 
 ### Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-Pour ajouter un composant `File Library` à une page en mode création, localisez le composant :
+Pour ajouter un composant `File Library` à une page en mode création, localisez-le :
 
 * `Communities / File Library`
 
-Et faites-le glisser sur la page.
+Et faites-le glisser sur une page.
 
-Pour plus d’informations, consultez la page [Principes de base des composants Communities](/help/communities/basics.md).
+Pour plus d’informations, consultez [Principes de base des composants de communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client demandées](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c&#39;est comme cela que le composant `File Library` apparaît :
+Lorsque les [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, le composant `File Library` s’affiche comme suit :
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le composant `File Library` inséré afin que vous puissiez accéder à l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le composant de `File Library` placé afin de pouvoir accéder à l’icône de `Configure` qui ouvre la boîte de dialogue de modification et de la sélectionner.
 
 ![configure-new](assets/configure-new.png)
 
@@ -52,31 +50,31 @@ Sélectionnez le composant `File Library` inséré afin que vous puissiez accéd
 
 #### Onglet Commentaires {#comments-tab}
 
-Sous l’onglet **Comments** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
+Sous l’onglet **Commentaires**, indiquez si et comment les commentaires des fichiers chargés s’affichent :
 
 * **Autoriser les commentaires sur les fichiers**
 
-  Si cette option est cochée, les commentaires sur les fichiers chargés sont autorisés. La case par défaut est décochée.
+  Si cette case est cochée, autoriser les commentaires sur les fichiers chargés. La valeur par défaut n’est pas cochée.
 
 * **Commentaires par page**
 
-  Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. La valeur par défaut est **10**.
+  Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. La valeur par défaut est de **10**.
 
-* **Taille de fichier max.**
+* **Taille de fichier max**
 
-  Cette valeur limite la taille du fichier téléchargé. La limite par défaut est 104857600 (10 Mo).
+  Cette valeur limite la taille du fichier chargé. La limite par défaut est de 104857600 (10 Mo).
 
-* **Longueur de message max.**
+* **Longueur max. du message**
 
   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
 
 * **Types de fichiers autorisés**
 
-  Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, les types qui ne sont pas spécifiés ne sont pas autorisés. La valeur par défaut n’est pas spécifiée de sorte que tous les types de fichiers soient autorisés.
+  Liste d’extensions de fichier séparées par des virgules avec le séparateur « point ». Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne le sont pas ne sont pas autorisés. La valeur par défaut n’est pas spécifiée pour que tous les types de fichiers soient autorisés.
 
 * **Éditeur de texte enrichi**
 
-  Si cette case est cochée, les commentaires peuvent être saisis avec une annotation. La case par défaut est décochée.
+  Si cette case est cochée, les commentaires peuvent être saisis avec des balises. La valeur par défaut n’est pas cochée.
 
 * **Supprimer les commentaires**
 
@@ -84,47 +82,47 @@ Sous l’onglet **Comments** , indiquez si et comment les commentaires des fichi
 
 * **Autoriser le balisage**
 
-  Si cette case est cochée, la possibilité d’ajouter une balise au fichier est activée. La case par défaut est décochée.
+  Si cette case est cochée, la possibilité d’ajouter une balise au fichier est activée. La valeur par défaut n’est pas cochée.
 
 * **Espaces de noms autorisés**
 
   Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun espace de noms n’est coché, tous sont autorisés. La valeur par défaut est tous les espaces de noms.
 
-* **Limite de suggestion**
+* **Limite de suggestions**
 
-  Si l’option Autoriser le balisage est cochée, ce paramètre limite le nombre de balises suggérées à afficher. S’il est défini sur -1, il n’y a aucune limite. La valeur par défaut est -1.
+  Si l’option Autoriser le balisage est cochée, ce paramètre limite le nombre de balises suggérées à afficher. S&#39;il est défini sur -1, il n&#39;y a pas de limite. La valeur par défaut est -1.
 
 * **Autoriser le vote**
 
-  Si cette case est cochée, la possibilité de voter pour un fichier est activée. La case par défaut est décochée.
+  Si cette case est cochée, la possibilité de voter pour un fichier est activée. La valeur par défaut n’est pas cochée.
 
-* **Autoriser l’abonnement**
+* **Autoriser les éléments suivants**
 
-  Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La case par défaut est décochée.
+  Si cette case est cochée, incluez la fonctionnalité suivante pour les articles de blog, qui permet aux membres d’être [avertis](/help/communities/notifications.md) de nouvelles publications. La valeur par défaut n’est pas cochée.
 
 * **Activer la mention**
 
-  S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications sur leurs mentions.
+  Si cette option est activée, elle permet aux utilisateurs de la communauté enregistrés d’identifier d’autres membres enregistrés (à l’aide de leur prénom, de leur nom et de leur nom d’utilisateur) et de les baliser en utilisant la syntaxe de @user-name commune. Les utilisateurs identifiés reçoivent des notifications sur leurs mentions.
 
-* **Nombre maximal de mentions**
+* **Mentions max**
 
   Limitez le nombre maximal de mentions autorisées dans une publication. La valeur par défaut est 10.
 
-* **Modèle de mention d’interface utilisateur**
+* **Modèle de mention de l’interface utilisateur**
 
-  Spécifiez la chaîne de modèle autorisée afin de marquer (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
+  Spécifiez la chaîne de modèle autorisée afin de baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
-* **Autoriser les réponses à threads**
+* **Autoriser les réponses avec thread**
 
-  Si cette case est cochée, les réponses aux commentaires publiés sont autorisées. La case par défaut est décochée.
+  Si cette case est cochée, autoriser les réponses aux commentaires publiés. La valeur par défaut n’est pas cochée.
 
-#### Onglet Modération d’utilisateur {#user-moderation-tab}
+#### Onglet Modération des utilisateurs {#user-moderation-tab}
 
-Sous l’onglet **Modération d’utilisateur** , configurez la modération des commentaires si les commentaires sont autorisés :
+Sous l’onglet **Modération utilisateur**, configurez la modération des commentaires, si les commentaires sont autorisés :
 
-* **Pré-modération**
+* **Pré-Modération**
 
-  Si cette case est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La case par défaut est décochée.
+  Si cette option est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La valeur par défaut n’est pas cochée.
 
 * **Supprimer les commentaires**
 
@@ -132,42 +130,42 @@ Sous l’onglet **Modération d’utilisateur** , configurez la modération des 
 
 * **Refuser les commentaires**
 
-  Si cette case est cochée, autorisez les modérateurs de membres approuvés à refuser des commentaires. La case par défaut est décochée.
+  Si cette case est cochée, autorisez les modérateurs de membres approuvés à refuser les commentaires. La valeur par défaut n’est pas cochée.
 
-* **Fermer/rouvrir les commentaires**
+* **Fermer/Rouvrir les commentaires**
 
-  Si cette case est cochée, autorisez les modérateurs de membres approuvés à fermer et rouvrir les commentaires. La case par défaut est décochée.
+  Si cette case est cochée, autorisez les modérateurs de membres de confiance à fermer et rouvrir les commentaires. La valeur par défaut n’est pas cochée.
 
-* **Flag Comments**
+* **Signaler les commentaires**
 
-  Si cette case est cochée, autorisez les visiteurs à signaler les commentaires comme inappropriés. La case par défaut est décochée.
+  Si cette case est cochée, autorisez les visiteurs à signaler les commentaires comme inappropriés. La valeur par défaut n’est pas cochée.
 
-* **Liste des motifs de l’indicateur**
+* **Liste des motifs de l&#39;indicateur**
 
-  Si cette case est cochée, les visiteurs ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué un commentaire comme étant inapproprié. La case par défaut est décochée.
+  Si cette case est cochée, permet aux visiteurs de choisir, dans une liste déroulante, la raison pour laquelle ils signalent un commentaire comme inapproprié. La valeur par défaut n’est pas cochée.
 
-* **Motif d’indicateur personnalisé**
+* **Motif de l’indicateur personnalisé**
 
-  Si cette case est cochée, autorisez les visiteurs à indiquer leur propre raison de signaler un commentaire comme inapproprié. La case par défaut est décochée.
+  Si cette case est cochée, autorisez les visiteurs à saisir leur propre raison pour laquelle un commentaire n’est pas approprié. La valeur par défaut n’est pas cochée.
 
 * **Seuil de modération**
 
-  Saisissez le nombre de fois qu’un commentaire doit être marqué par les visiteurs avant que les modérateurs ne soient informés. La valeur par défaut est une fois (**1**).
+  Saisissez le nombre de fois où un commentaire doit être marqué par des visiteurs avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (**1**).
 
 * **Limite de marquage**
 
-  Saisissez le nombre de fois qu’un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Ce nombre doit être supérieur ou égal au **seuil de modération**. La valeur par défaut est 5.
+  Permet d&#39;entrer le nombre de fois où un commentaire doit être marqué avant d&#39;être masqué de la vue publique. Ce nombre doit être supérieur ou égal au **seuil de modération**. La valeur par défaut est 5.
 
 ### Onglet Paramètres de tri {#sort-settings-tab}
 
 Trier par
 
-Définir par défaut
+Définir comme valeur par défaut
 
 ### Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la bibliothèque de fichiers](/help/communities/essentials-file-library.md) pour les développeurs.
+Pour plus d’informations, consultez la page [Principes de base de la bibliothèque de fichiers](/help/communities/essentials-file-library.md) destinée aux développeurs et développeuses.
 
-Pour la modération des sujets et des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
+Pour la modération des rubriques et commentaires publiés, voir [Modération du contenu créé par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour baliser les rubriques et commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser les rubriques publiées et les commentaires, consultez [Balisage du contenu créé par l’utilisateur](/help/communities/tag-ugc.md).

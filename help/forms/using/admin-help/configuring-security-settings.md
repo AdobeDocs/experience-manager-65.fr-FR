@@ -1,21 +1,21 @@
 ---
 title: Configuration des paramètres de sécurité
 description: Découvrez comment configurer les paramètres de sécurité. Vous pouvez protéger les documents PDF en limitant l’accès. Vous pouvez chiffrer, certifier ou protéger le document par mot de passe.
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1430'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1443'
+ht-degree: 88%
 ---
-
 # Configuration des paramètres de sécurité{#configuring-security-settings}
 
 Vous pouvez limiter l’accès aux documents PDF en définissant des mots de passe et en limitant certaines fonctionnalités, telles que l’impression et la modification. Lorsqu’un document PDF comporte des fonctionnalités restreintes, les outils et les éléments de menu associés à ces fonctionnalités sont grisés. Vous pouvez utiliser d’autres méthodes pour créer des documents sécurisés, tels que le chiffrement ou la certification. Un paramètre de sécurité contient le mot de passe et des options spécifiques à utiliser pour certaines conversions de PDF.
@@ -61,11 +61,11 @@ Assurez-vous que le niveau de compatibilité est cohérent avec celui du PDF pou
 
 **Chiffrer tout le contenu du document :** chiffre le document et ses métadonnées. Lorsque cette option est sélectionnée, les moteurs de recherche n’ont pas accès aux métadonnées du document.
 
-**Chiffrer tout le contenu du document à l’exception des métadonnées (compatible avec Acrobat
-6 et versions ultérieures) :** chiffre le contenu d’un document tout en permettant aux moteurs de recherche d’accéder aux métadonnées du document. Cette option n’est disponible que si Acrobat 6.0 ou versions ultérieures, Acrobat 7.0 ou versions ultérieures, ou Acrobat 9.0 ou versions ultérieures est affecté à l’option Compatibilité.
+**Chiffrer Tout Le Contenu Du Document À L’Exception Des Métadonnées (Acrobat
+6 et versions ultérieures (compatible) :** chiffre le contenu d’un document tout en permettant aux moteurs de recherche d’accéder aux métadonnées du document. Cette option n’est disponible que si Acrobat 6.0 ou versions ultérieures, Acrobat 7.0 ou versions ultérieures, ou Acrobat 9.0 ou versions ultérieures est affecté à l’option Compatibilité.
 
-**Chiffrer uniquement les pièces jointes (compatible avec Acrobat 7
-et versions ultérieures) :** les utilisateurs peuvent ouvrir le document sans mot de passe, mais ils doivent saisir un mot de passe pour ouvrir les pièces jointes. Cette option n’est disponible que si l’option Compatibilité est définie sur Acrobat 7.0 ou version ultérieure, ou Acrobat 9.0 ou version ultérieure.
+**Chiffrer Uniquement Les Pièces Jointes (Acrobat 7 Et Versions Ultérieures)
+Compatible) :** les utilisateurs peuvent ouvrir le document sans mot de passe, mais ils doivent saisir un mot de passe pour ouvrir les pièces jointes. Cette option n’est disponible que si l’option Compatibilité est définie sur Acrobat 7.0 ou version ultérieure, ou Acrobat 9.0 ou version ultérieure.
 
 Ces paramètres permettent de configurer la protection par mot de passe :
 
@@ -87,10 +87,10 @@ Ces paramètres permettent de configurer la protection par mot de passe :
 
 Ces options permettent de configurer les autorisations :
 
-**Utiliser un mot de passe pour restreindre l’impression et la modification 
-du document et de ses paramètres de protection :** permet de restreindre les autorisations.
+**Utilisez Un Mot De Passe Pour Restreindre L’Impression Et La Modification De
+Le document et ses paramètres de sécurité :** permet de restreindre les autorisations.
 
-**Mot de passe d’accès aux droits :** empêche les utilisateurs d’imprimer et de modifier. Les utilisateurs et utilisatrices ne peuvent pas modifier ces paramètres de sécurité à moins de saisir le mot de passe que vous avez spécifié. Vous ne pouvez pas utiliser le même mot de passe que celui utilisé pour l’ouverture du document. Lorsque vous définissez un mot de passe d’autorisation, seules les personnes qui saisissent ce mot de passe peuvent modifier les paramètres de sécurité. Si le document PDF a les deux types de mots de passe, il suffit de saisir l’un ou l’autre pour l’ouvrir. Toutefois, un utilisateur ou une utilisatrice a besoin du mot de passe d’accès aux droits pour définir ou modifier les fonctionnalités à accès restreint. Si le document PDF ne dispose que d’un mot de passe d’accès aux droits ou si une personne ouvre le document à l’aide du mot de passe d’ouverture du document, l’invite de saisie du mot de passe s’affiche dès que la personne tente de modifier les paramètres de protection.
+**Mot de passe d’accès aux droits :** empêche les utilisateurs d’imprimer et de modifier. Les utilisateurs et utilisatrices ne peuvent pas modifier ces paramètres de sécurité à moins de saisir le mot de passe que vous avez spécifié. Vous ne pouvez pas utiliser le même mot de passe que celui utilisé pour l’ouverture du document. Lorsque vous définissez un mot de passe d’autorisation, seules les personnes qui saisissent ce mot de passe peuvent modifier les paramètres de sécurité. Si le document PDF a les deux types de mots de passe, il suffit de saisir l’un ou l’autre pour l’ouvrir. Toutefois, un utilisateur ou une utilisatrice a besoin du mot de passe d’accès aux droits pour définir ou modifier les fonctionnalités à accès restreint. Si le document PDF ne dispose que d’un mot de passe d’accès aux droits ou si une personne ouvre le document à l’aide du mot de passe d’ouverture du document, le prompt de saisie du mot de passe s’affiche dès que la personne tente de modifier les paramètres de protection.
 
 **Saisir à nouveau le mot de passe d’accès aux droits :** vérifie que le mot de passe d’accès aux droits est correct.
 
@@ -108,20 +108,21 @@ du document et de ses paramètres de protection :** permet de restreindre les a
 
 **Insertion, suppression et rotation de pages :** permet aux utilisateurs et utilisatrices d’insérer, de supprimer et de faire pivoter des pages, ainsi que de créer des signets et des pages miniatures. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.
 
-**Remplir des champs de formulaire et signer des 
-champs de signature existants :** permet aux utilisateurs de remplir des formulaires et d’ajouter des signatures numériques. Toutefois, les utilisateurs et utilisatrices ne peuvent pas ajouter de commentaires ni créer de champs de formulaire. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.
+**Remplir Des Champs De Formulaire Et Signer Une Signature Existante
+Champs :** permet aux utilisateurs de remplir des formulaires et d’ajouter des signatures numériques. Toutefois, les utilisateurs et utilisatrices ne peuvent pas ajouter de commentaires ni créer de champs de formulaire. Cette option n’est disponible que si un niveau de chiffrement élevé (Acrobat 5.0, 6.0, 7.0 ou 9.0) est sélectionné.
 
-**Commentaires, remplissage de champs de formulaire et signature de champs de signature existants :** permet aux utilisateurs de remplir des formulaires et d’ajouter des commentaires et des signatures numériques.
+**Commentaires, Remplissage De Champs De Formulaire Et Signature D’Existants
+Champs de signature :** permet aux utilisateurs de remplir des formulaires et d’ajouter des commentaires et des signatures numériques.
 
-**Mise en page, retouche, remplissage de champs de formulaire et signature
-de champs de signature existants :** permet aux utilisateurs d’insérer, de faire pivoter ou de supprimer des pages, ainsi que de créer des signets ou des images miniatures, de remplir des formulaires et d’ajouter des signatures numériques. Cette option ne permet pas aux utilisateurs et aux utilisatrices de créer des champs de formulaire. Cette option est uniquement disponible si un niveau de chiffrement faible (Acrobat 3.0) est sélectionné.
+**Mise En Page, Retouche, Remplissage De Champs De Formulaire Et Signature
+Champs de signature existants :** permet aux utilisateurs d’insérer, de faire pivoter ou de supprimer des pages, ainsi que de créer des signets ou des images miniatures, de remplir des formulaires et d’ajouter des signatures numériques. Cette option ne permet pas aux utilisateurs et aux utilisatrices de créer des champs de formulaire. Cette option est uniquement disponible si un niveau de chiffrement faible (Acrobat 3.0) est sélectionné.
 
 **Tout sauf extraire des pages :** permet aux utilisateurs de modifier le document à l’aide de la méthode répertoriée dans la liste Modifications autorisées, mais pas de supprimer des pages.
 
 **Activer la copie de texte, d’images et d’autres contenus :** permet aux utilisateurs de sélectionner et de copier le contenu du document PDF. Elle permet également aux utilitaires ayant besoin du contenu d’un fichier PDF, comme un catalogue Acrobat, d’y avoir accès. Cette option est uniquement disponible si un niveau de chiffrement élevé est sélectionné.
 
-**Activer l’accès au texte pour les lecteurs d’écran destinés aux
-malvoyants :** permet aux utilisateurs ayant une déficience visuelle de lire le document à l’aide de lecteurs d’écran. Toutefois, les utilisateurs et utilisatrices ne peuvent pas copier ni extraire le contenu du document. Cette option est uniquement disponible si un niveau de chiffrement élevé est sélectionné.
+**Activer L’Accès Au Texte Des Appareils Reader D’Écran Pour Le
+Malvoyants :** permet aux utilisateurs ayant une déficience visuelle de lire le document à l’aide de lecteurs d’écran. Toutefois, les utilisateurs et utilisatrices ne peuvent pas copier ni extraire le contenu du document. Cette option est uniquement disponible si un niveau de chiffrement élevé est sélectionné.
 
 ## Suppression d’un paramètre de sécurité {#delete-a-security-setting}
 

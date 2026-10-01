@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 100%
-
+source-wordcount: '1802'
+ht-degree: 96%
 ---
-
 
 # Marketing par e-mail{#e-mail-marketing}
 
@@ -73,25 +71,25 @@ Ce document décrit les principes de base de la création de newsletters dans AE
    ![Boîte de dialogue Propriétés de la page](assets/mcm_newnewsletterdialog.png)
 
    * **Nom de l’expéditeur**
-Nom qui doit apparaître comme celui de l’expéditeur de la newsletter.
+     Nom qui doit apparaître comme celui de l’expéditeur de la newsletter.
 
-   * **Adresse de l’expéditeur**
-Adresse électronique qui doit apparaître comme celle de l’expéditeur de la newsletter.
+   * **Adresse d&#39;origine**
+     Adresse postale qui doit apparaître comme celle de l’expéditeur de la newsletter.
 
    * **Objet**
-Objet de la newsletter.
+     Objet de la newsletter.
 
    * **Répondre à**
-Adresse électronique pour le traitement des réponses à la newsletter envoyée.
+     Adresse électronique utilisée pour le traitement des réponses à la newsletter envoyée.
 
    * **Description**
-Description de la newsletter.
+     Description de la newsletter.
 
    * **Heure d’activation**
-Heure d’activation pour l’envoi de la newsletter.
+     Heure d’activation pour l’envoi de la newsletter.
 
    * **Liste des destinataires par défaut**
-Liste par défaut des destinataires qui doivent recevoir la newsletter.
+     Liste par défaut devant recevoir la newsletter.
 
    Elles peuvent être mises à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**.
 

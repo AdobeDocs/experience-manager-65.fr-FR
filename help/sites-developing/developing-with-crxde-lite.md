@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '2114'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '2116'
+ht-degree: 97%
 ---
-
 # Développement dans CRXDE Lite{#developing-with-crxde-lite}
 
 Cette section décrit comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite.
@@ -28,7 +26,7 @@ CRXDE Lite est recommandé lorsque vous ne disposez pas d’accès direct au se
 
 >[!NOTE]
 >
->À partir de la version 6.5.5.0 d’AEM, l’accès anonyme de CRXDE Lite n’est plus possible.
+>À partir de la 6.5.5.0 AEM, l’accès anonyme à CRXDE Lite n’est plus possible.
 >Les utilisateurs sont redirigés vers l’écran de connexion.
 
 
@@ -72,7 +70,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Volet de modification</td>
-   <td><p>Onglet <strong>Accueil</strong> : vous permet de rechercher du contenu et/ou de la documentation et d’accéder aux ressources des développeurs et développeuses (documentation, blog de développement, base de connaissances) et à l’assistance (page d’accueil et centre d’assistance d’Adobe).<br /> </p> <p>Double-cliquez sur un fichier dans le volet <strong>Explorateur</strong> pour afficher son contenu. Par exemple, un fichier .jsp ou .java. Vous pouvez ensuite le modifier et enregistrer les modifications.</p> <p>Une fois le fichier modifié dans le volet de <strong>modification</strong>, les outils suivants sont disponibles dans la barre d’outils :<br /> </p> - <strong>Afficher dans l’arborescence :</strong> affiche le fichier dans l’arborescence du référentiel.<br /> - <strong>Rechercher/Remplacer...</strong> : permet d’effectuer une recherche ou un remplacement.<br /> <br /> Double-cliquez sur la ligne de statut du volet <strong>Modifier</strong> pour ouvrir la boîte de dialogue <strong>Aller à la ligne</strong> et entrer un numéro de ligne spécifique.<br /> </td>
+   <td><p>Onglet <strong>Accueil</strong> : vous permet de rechercher du contenu et/ou de la documentation et d’accéder aux ressources des développeurs et développeuses (documentation, blog de développement, base de connaissances) et à l’assistance (page d’accueil et centre d’assistance d’Adobe).<br /> </p> <p>Double-cliquez sur un fichier dans le volet <strong>Explorateur</strong> pour afficher son contenu. Par exemple, un fichier .jsp ou .java. Vous pouvez ensuite le modifier et enregistrer les modifications.</p> <p>Une fois le fichier modifié dans le volet de <strong>modification</strong>, les outils suivants sont disponibles dans la barre d’outils :<br /> </p> - <strong>Afficher dans l’arborescence : </strong>affiche le fichier dans l’arborescence du référentiel.<br /> - <strong>Rechercher/Remplacer ...</strong> : effectuez une recherche ou remplacez.<br /> <br /> Double-cliquez sur la ligne d’état du volet <strong>Modifier</strong> pour ouvrir la boîte de dialogue <strong>Accéder à la ligne</strong> et saisir un numéro de ligne spécifique à atteindre.<br /> </td>
   </tr>
   <tr>
    <td>Onglet Propriétés<br /> </td>
@@ -92,7 +90,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Onglet Infos sur le build<br /> </td>
-   <td>Affiche des informations lorsqu’un lot est en cours de création.<br /> </td>
+   <td>Affiche des informations lorsqu’un bundle est en cours de création.<br /> </td>
   </tr>
   <tr>
    <td>Actualiser<br /> </td>

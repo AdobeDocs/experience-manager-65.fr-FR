@@ -1,10 +1,12 @@
 ---
 title: Publier des pages
 description: Une fois que vous avez créé et révisé votre contenu dans l’environnement de création, rendez-le disponible sur votre site web public.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
-
+source-wordcount: '1032'
+ht-degree: 90%
 ---
-
 # Publier des pages{#publishing-pages}
 
 Une fois le contenu créé et révisé dans l’environnement de création, rendez-le disponible sur votre site web public (votre environnement de publication).
@@ -29,7 +29,7 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >
 >Certains termes liés à la publication peuvent être déroutants :
 >
->* **Publier/dépublier**
+>* **Publier/Dépublier**
 >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
@@ -115,7 +115,7 @@ Pour désactiver une page :
 Pour planifier l’activation à une heure ultérieure :
 
 1. Dans la console Sites web, accédez au menu **Activer** et sélectionnez ensuite **Activer plus tard**.
-1. Dans la boîte de dialogue qui s’ouvre, indiquez la date et l’heure d’activation, puis cliquez sur **OK**. Ceci crée une version de la page qui sera activée à l’heure spécifiée.
+1. Dans la boîte de dialogue qui s’ouvre alors, indiquez la date et l’heure d’activation, puis cliquez sur **OK**. Cela crée une version de la page qui est activée à l’heure spécifiée.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -159,7 +159,7 @@ Dans l’onglet **Sites web**, vous pouvez activer les pages individuelles. Lors
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Entrez le **Chemin de début**. Ceci permet de spécifier le chemin d’accès à la racine de la section à activer (publier). Cette page, et toutes les pages sous-jacentes, sont prises en compte pour l’activation (ou utilisées dans le cadre de l’émulation si une Exécution d’essai est sélectionnée).
+1. Saisissez le **chemin de début**. Ceci permet de spécifier le chemin d’accès à la racine de la section à activer (publier). Cette page et toutes les pages sous sont prises en compte pour l’activation (ou utilisées dans l’émulation si une Exécution d’essai est sélectionnée).
 1. Activez les critères de sélection suivant vos besoins :
 
    * **Modifié uniquement** : active uniquement les pages qui ont été modifiées.
@@ -168,6 +168,6 @@ Dans l’onglet **Sites web**, vous pouvez activer les pages individuelles. Lors
 
 1. Sélectionnez l’action à effectuer :
 
-   1. Sélectionnez **Exécution d’essai** pour vérifier quelles pages *devraient* être activées. Il s’agit seulement d’une émulation, aucune page ne sera activée.
+   1. Sélectionnez **Exécution d’essai** si vous souhaitez vérifier quelles pages *seraient* activées. Il s’agit uniquement d’une émulation, aucune page ne sera activée.
 
    1. Sélectionnez **Activer** pour activer les pages.

@@ -1,21 +1,23 @@
 ---
 title: Opérations Granite - Administration des utilisateurs et des groupes
+
 description: Découvrez l’administration des utilisateurs et utilisatrices et des groupes Granite.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 100%
-
+source-wordcount: '956'
+ht-degree: 98%
 ---
-
 
 # Opérations Granite - Administration des utilisateurs et des groupes{#granite-operations-user-and-group-administration}
 
@@ -35,9 +37,9 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
 
   Les listes de la console **Utilisateurs** :
 
-   * le nom d’utilisateur ou d’utilisatrice
-   * l’identifiant de connexion de l’utilisateur (nom de compte)
-   * tout titre attribué au compte
+  * le nom d’utilisateur ou d’utilisatrice
+  * l’identifiant de connexion de l’utilisateur (nom de compte)
+  * tout titre attribué au compte
 
 * [Administration des groupes](#group-administration)
 
@@ -45,9 +47,9 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
 
   Les listes de la console **Groupes** :
 
-   * le nom du groupe
-   * la description du groupe
-   * le nombre d’utilisateurs et utilisatrices/de groupes dans le groupe
+  * le nom du groupe
+  * la description du groupe
+  * le nombre d’utilisateurs et utilisatrices/de groupes dans le groupe
 
 ## Administration des utilisateurs {#user-administration}
 
@@ -91,8 +93,8 @@ Choisir soit **Utilisateurs** soit **Groupes** dans la console Outils ouvre la c
    * **À propos**
    * **Paramètres du compte**
 
-      * **Statut**
-Vous pouvez marquer le compte comme **actif** ou **inactif**.
+     * **Statut**
+       Vous pouvez marquer le compte comme étant **actif** ou **inactif**.
 
    * **Photo**
 

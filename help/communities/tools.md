@@ -1,6 +1,6 @@
 ---
 title: Outils de communautés
-description: Découvrez comment accéder à la console des outils de Communities par le biais de votre instance d’auteur.
+description: Découvrez comment accéder à la console Outils de Communities par le biais de votre instance de création.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -14,25 +14,23 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
-
 ---
-
 # Outils de communautés {#communities-tools}
 
-Pour accéder à la console des outils Communities, connectez-vous à votre instance d’auteur :
+Pour accéder à la console Outils de Communities, connectez-vous à votre instance de création :
 
-* Dans la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
+* À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
 
-  ![communities](assets/communities-home.png)
+  ![communautés](assets/communities-home.png)
 
 * [Modèles de site](sites.md) - Console pour la création et la gestion de modèles de site.
 
 * [Modèles de groupe](tools-groups.md) - Console pour la création et la gestion de modèles de groupe.
 
-* [Fonctions de communauté](functions.md) - Console pour la création et la gestion de fonctions de communauté.
+* [Community Functions](functions.md) - Console pour la création et la gestion de fonctions de communauté.
 
-* [Configuration de stockage](srp-config.md) - Console pour la configuration et la sélection de la [SRP par défaut](working-with-srp.md).
+* [Configuration du stockage](srp-config.md) - Console de configuration et de sélection du [SRP par défaut](working-with-srp.md).
 
-* [Guide des composants](components-guide.md) - Ouvre un site interactif qui permet d’expérimenter le fonctionnement des composants SCF et leur configuration ou personnalisation.
+* [Guide des composants](components-guide.md) - Ouvre un site interactif qui permet de tester le fonctionnement des composants SCF et leur configuration ou personnalisation.
 
-* [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour une utilisation dans les [règles de notation et de badge](implementing-scoring.md)
+* [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour être utilisés dans les [règles de score et de badge](implementing-scoring.md)

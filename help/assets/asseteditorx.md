@@ -8,11 +8,9 @@ exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
-
+source-wordcount: '694'
+ht-degree: 95%
 ---
-
 # Extension de l’éditeur de ressources {#extending-asset-editor}
 
 L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur clique sur une ressource trouvée par le biais du partage de ressources, ce qui lui permet de modifier certains aspects de la ressource, tels que les métadonnées, la miniature, le titre et les balises.
@@ -59,7 +57,7 @@ Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour un
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx  {#geometrixx-style-sheet}
+### Feuille de style Geometrixx {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
@@ -69,8 +67,8 @@ L’éditeur de ressources utilise le sélecteur de formulaire, qui permet de mo
 
 Par exemple :
 
-* Page de formulaire simple : [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* Ressource chargée dans la page de formulaire : [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Page au format brut : [](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* Ressource chargée dans la page de formulaire : [](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 Les exemples de gestionnaires dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) procèdent ainsi :
 
@@ -205,7 +203,7 @@ Cet exemple illustre comment créer un composant qui affiche les métadonnées d
 
 ## Modification des options de métadonnées {#modifying-metadata-options}
 
-Vous pouvez modifier les espaces de noms disponibles [sous forme de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+Vous pouvez modifier les espaces de noms disponibles dans le [formulaire de métadonnées](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
 Les métadonnées actuellement disponibles sont définies dans`/libs/dam/options/metadata` :
 

@@ -1,6 +1,6 @@
 ---
 title: Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov
-description: Consultez la présentation du site de référence pour comprendre comment AEM Forms aide les administrations à recevoir et donner les informations demandées par les utilisateurs et utilisatrices dans le cadre de la loi sur l’accès à l’information.
+description: Consultez la présentation du site de référence pour comprendre comment AEM Forms aide les administrations à recevoir et donner les informations demandées par les  dans le cadre de la loi sur l’accès à l’information.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '854'
 ht-degree: 100%
-
 ---
-
 # Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov {#we-gov-reference-site-foia-walkthrough}
 
 ## Scénario de la loi sur l’accès à l’information pour le site de référence {#reference-site-freedom-of-information-act-scenario}
@@ -107,6 +105,6 @@ Gloria ouvre la demande et examine les détails de la demande dans le cadre de l
 
 ## Sarah reçoit la notification que sa demande est approuvée. {#sarah-receives-notification-that-her-request-is-approved}
 
-Après que Gloria ait approuvé la demande dans le cadre de la loi sur l’accès à l’information, Sarah reçoit un e-mail l’informant que sa demande est approuvée. L&#39;e-mail comprend également des informations sur le délai d’attente attendu pour la fourniture du document et des coordonnées pour le suivi de la demande.
+Après que Gloria ait approuvé la demande dans le cadre de la loi sur l’accès à l’information, Sarah reçoit un e-mail l’informant que sa demande est approuvée. L&#39;e-mail comprend également des informations sur le délai prévu pour la fourniture du document et des coordonnées pour le suivi de la demande.
 
 ![sarahroseemailapproval](assets/sarahroseemailapproval.png)

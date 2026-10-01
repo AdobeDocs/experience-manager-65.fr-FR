@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 100%
-
+source-wordcount: '2007'
+ht-degree: 97%
 ---
-
 
 # ClientContext{#client-context}
 
@@ -41,10 +39,10 @@ Les icônes (disponibles uniquement dans l’environnement de création) vous pe
 ![Icônes Modifier, Charger et Réinitialiser de la fenêtre ClientContext](do-not-localize/clientcontext_icons.png)
 
 * **Modifier**
-Une nouvelle page s’ouvre, vous permettant de [modifier, d’ajouter ou de supprimer une propriété de profil](#editingprofiledetails).
+Une nouvelle page s’ouvre, vous permettant de [modifier, ajouter ou supprimer une propriété de profil](#editingprofiledetails).
 
 * **Charger**
-Vous pouvez [effectuer un choix dans une liste de profils et charger le profil](#loading-a-new-user-profile) que vous souhaitez tester.
+Vous pouvez [sélectionner dans une liste de profils et charger le profil](#loading-a-new-user-profile) à tester.
 
 * **Réinitialiser**
 Vous pouvez [réinitialiser le profil](#resetting-the-profile-to-the-current-user) sur celui de l’utilisateur actuel.
@@ -94,7 +92,7 @@ Lorsqu’il est affiché dans le cloud contextuel, le composant utilise une API 
 
 La norme JSONP est un complément de JSON qui permet de contourner la politique de même origine (ce qui empêche les applications Web de communiquer avec les serveurs se trouvant sur un autre domaine). Elle consiste à envelopper l’objet JSON dans un appel de fonction afin de pouvoir le charger sous forme de `<script>` à partir de l’autre domaine (ce qui est une exception autorisée de la politique de même origine).
 
-  La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Consultez l’exemple figurant dans la section [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+La boutique JSONP est semblable à n’importe quelle autre boutique, mais elle charge des informations issues d’un autre domaine sans avoir besoin d’un proxy pour ces informations sur le domaine actuel. Consultez l’exemple figurant dans la section [Stockage de données dans le contexte client via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
 >
@@ -230,7 +228,7 @@ Cet exemple utilise l’exemple de site web Geometrixx Outdoors pour accéder à
 
 Ajoutez le composant Magasin JSONP à ClientContext et utilisez-le pour récupérer et stocker les informations de géolocalisation du client web.
 
-1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Ouvrez la page d’accueil en anglais du site Geometrixx Outdoors sur l’instance de création AEM. ([](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Pour ouvrir le contexte client, appuyez sur Ctrl+Alt+C (Windows) ou Ctrl+Option+C (Mac).
 1. Cliquez sur l’icône de modification en haut de ClientContext pour ouvrir ClientContext Designer.
 

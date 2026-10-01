@@ -1,6 +1,6 @@
 ---
 title: Accéder aux fonctionnalités de l’appareil
-description: Consultez cette page pour en savoir plus sur la création de composants Adobe Experience Manager (AEM) qui accèdent aux fonctionnalités des appareils. Le référentiel GitHub de l’évier de cuisine d’AEM PhoneGap fournit aux développeurs une application AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova principales.
+description: Consultez cette page pour en savoir plus sur la création de composants Adobe Experience Manager (AEM) qui accèdent aux fonctionnalités des appareils. Le référentiel GitHub du récepteur de cuisine PhoneGap d’AEM fournit aux développeurs une application AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova principales.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,18 +11,16 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 3%
-
+source-wordcount: '174'
+ht-degree: 2%
 ---
-
 # Accéder aux fonctionnalités de l’appareil{#access-device-features}
 
 {{ue-over-mobile}}
 
-## Création de composants Adobe Experience Manager (AEM) qui accèdent aux fonctions de l’appareil {#building-aem-components-that-access-device-features}
+## Création de composants Adobe Experience Manager (AEM) qui accèdent aux fonctionnalités de l’appareil {#building-aem-components-that-access-device-features}
 
-Le référentiel GitHub [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application AEM fonctionnelle qui illustre l&#39;utilisation de plusieurs API Cordova principales. Lorsqu’elle est exécutée sur iOS ou Android™ via l’interface de ligne de commande PhoneGap, l’application s’ouvre sur la page suivante qui comprend un lien vers chaque API d’appareil qu’elle illustre :
+Le référentiel GitHub [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fournit aux développeurs une application AEM fonctionnelle qui illustre l’utilisation de plusieurs API Cordova principales. Lorsqu’elle est exécutée sur iOS ou Android™ via l’interface de ligne de commande PhoneGap, l’application s’ouvre sur la page suivante qui comprend un lien vers chaque API d’appareil qu’elle illustre :
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 

@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '412'
 ht-degree: 100%
-
 ---
-
 # Intégrer le composant Link dans une page{#embedding-link-component-in-a-page}
 
 ## Prérequis {#prerequisites}
@@ -36,9 +34,9 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
 
    * **Légende du lien** : texte ou légende du lien.
    * **Info-bulle du lien** : info-bulle du lien.
-   * **Modèle de disposition** : modèle de disposition du composant Link.
+   * **Modèle de mise en page** : modèle de mise en page du composant Link.
 
-1. Ouvrez l’onglet **Informations de ressource** et spécifiez le type de ressource. Une ressource peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent : 
+1. Ouvrez l’onglet **Informations de ressource** et spécifiez le type de ressource. Une ressource peut être un **formulaire**. Selon le type de fichier sélectionné, les options ci-dessous s’affichent :
 
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
 
@@ -56,6 +54,6 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
 * Veillez à sélectionner PDF comme type de rendu si le chemin spécifié dans Chemin d’accès au formulaire pointe vers un document dont le format de rendu autorisé est PDF.
 * L’URL d’envoi d’un formulaire peut être spécifiée à plusieurs emplacements et l’ordre de priorité s’établit comme suit :
 
-   1. L’URL d’envoi intégrée dans le formulaire (dans le bouton d’envoi) a la priorité la plus élevée.
-   1. L’URL d’envoi mentionnée dans Forms Manager a une priorité moyenne.
-   1. La valeur Submit URL mentionnée dans Forms Portal a la priorité la plus faible.
+  1. L’URL d’envoi intégrée dans le formulaire (dans le bouton d’envoi) a la priorité la plus élevée.
+  1. L’URL d’envoi mentionnée dans Forms Manager a une priorité moyenne.
+  1. La valeur Submit URL mentionnée dans Forms Portal a la priorité la plus faible.

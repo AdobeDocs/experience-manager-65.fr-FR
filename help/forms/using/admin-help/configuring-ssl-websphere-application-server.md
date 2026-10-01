@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 100%
-
+source-wordcount: '1237'
+ht-degree: 99%
 ---
-
 # Configurer SSL pour WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
 Cette section décrit la procédure permettant de configurer SSL sur IBM WebSphere Application Server.
@@ -71,7 +69,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 1. Dans Sécurité administrative, sélectionnez **Rôles des utilisateurs d’administration**.
 1. Cliquez sur Ajouter et procédez comme suit :
 
-   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur le bouton de recherche.
+   1. Saisissez **&amp;ast;** dans la zone de recherche, puis cliquez sur Rechercher.
    1. Sous les rôles, cliquez sur **Administrateur**.
    1. Ajoutez l’utilisateur que vous venez de créer à Mappé au rôle et mappez-le à l’administrateur.
 
@@ -85,7 +83,7 @@ Pour activer SSL, WebSphere doit accéder à un compte utilisateur dans le regis
 1. Assurez-vous de cocher la case **Activation de la sécurité des applications** pour l’activer. Cliquez sur **Suivant**.
 1. Sélectionnez **Référentiels fédérés** et cliquez sur **Suivant**.
 1. Indiquez les informations d’identification à définir, puis cliquez sur **Suivant**.
-1. Cliquez sur **Finish** (Terminer). 
+1. Cliquez sur **Finish** (Terminer).
 1. Redémarrez le profil WebSphere.
 
    WebSphere commence à utiliser le KeyStore et le TrustStore par défaut.
