@@ -63,7 +63,7 @@ Les fragments de contenu et l’API GraphQL bénéficient également d’amélio
   > * [Mettez à niveau JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms sur JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) pour les environnements autonomes.
   > * [Mettez à niveau le cluster JBoss EAP de la version 7.4.10 vers la version 7.4.23 pour AEM Forms on JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) pour les environnements de cluster.
 
-* **Invite d’informations d’identification du gestionnaire de configuration (LCM) en mode Express :** lorsque vous configurez AEM Forms sur JEE en mode Express, LCM vous invite à saisir les informations d’identification de l’administrateur AEM au lieu d’utiliser les valeurs par défaut. Cette modification est disponible via le [correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0. Pour connaître les étapes de configuration, voir [Installation et déploiement d’AEM Forms 6.5 on JEE à l’aide de JBoss clé en main](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
+* **Invite d’informations d’identification du gestionnaire de configuration (LCM) en mode Express :** lorsque vous configurez AEM Forms sur JEE en mode Express, LCM vous invite à saisir les informations d’identification de l’administrateur AEM au lieu d’utiliser les valeurs par défaut. Cette modification est disponible via le [correctif](/help/release-notes/aem-forms-hotfix.md) pour le pack de services d’AEM 6.5.25.0. Pour connaître les étapes de configuration, voir [Installation et déploiement d’AEM Forms 6.5 on JEE à l’aide de JBoss clé en main](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
 
 ## Correction de problèmes dans le pack de services 25 {#fixed-issues}
 
@@ -635,7 +635,7 @@ Les fichiers zip suivants contiennent les documents texte qui répertorient les 
 Ces sites web sont disponibles uniquement pour les clients et clientes. Si vous êtes client et avez besoin d’un accès, contactez votre gestionnaire de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Contacter l’assistance clientèle Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
