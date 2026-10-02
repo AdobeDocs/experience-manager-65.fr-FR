@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
-
+source-wordcount: '549'
+ht-degree: 96%
 ---
-
 # Création d’une mise en page de barre d’outils personnalisée{#creating-custom-toolbar-layout}
 
 ## Dispositions de barre d’outils {#layout}
@@ -38,12 +36,12 @@ Vous pouvez en outre créer une disposition de barre d’outils personnalisée.
 
 La procédure suivante décrit les étapes pour créer une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et d’autres actions dans une liste déroulante de la barre d’outils.
 
-Le package de contenu joint contient le code complet décrit ci-dessous. Une fois le package de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration relative à la mise en page de la barre d’outils personnalisée.
+Le module de contenu joint contient le code complet décrit ci-dessous. Une fois le module de contenu installé, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour afficher la démonstration relative à la mise en page de la barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
 [Obtenir le fichier](assets/customtoolbarlayoutdemo.zip)
-Démonstration relative à la mise en page de la barre d’outils personnalisée
+Démonstration de la disposition de la barre d’outils personnalisée
 
 ## Pour créer une disposition de barre d’outils personnalisée {#layout-1}
 
@@ -65,7 +63,7 @@ Démonstration relative à la mise en page de la barre d’outils personnalisée
 
 1. Renommez le nœud copié, de `mobileFixedToolbarLayout` à `customToolbarLayout.`.
 
-   Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Disposition personnalisée pour la barre d’outils**.
+   Fournissez également une description appropriée pour le nœud. Par exemple, modifiez le jcr:description du nœud en **Mise en page personnalisée pour la barre d’outils**.
 
    La propriété `guideComponentType` du nœud détermine le type de mise en page. Dans le cas présent, le type de mise en page est toolbar. Il apparaît par conséquent dans la liste déroulante de sélection des mises en page de barre d’outils.
 

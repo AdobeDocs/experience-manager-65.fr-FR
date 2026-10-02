@@ -11,16 +11,14 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 100%
-
+source-wordcount: '351'
+ht-degree: 99%
 ---
-
 # Remplissage dynamique des listes déroulantes {#dynamically-populating-drop-down-lists}
 
 ## Prérequis {#prerequisites}
 
-* [Créer des lots OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+* [Création de lots OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&CID=RedirectAEMCommunityKautuk)
 * [Développement de composants AEM](/help/sites-developing/components.md)
 * [Création de formulaires adaptatifs](../../forms/using/creating-adaptive-form.md)
 * [Création d’un formulaire adaptatif](../../forms/using/introduction-forms-authoring.md)
@@ -31,7 +29,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
 1. Créez un projet avec les modules suivants :
 
-   * Le lot contenant la logique pour remplir la liste déroulante, qui dans ce cas est un servlet.
+   * Le bundle contenant la logique pour remplir la liste déroulante, qui dans ce cas est un servlet.
    * Le contenu, qui incorpore le fichier .jar et dispose d’une ressource de liste déroulante. Le servlet pointe vers cette ressource.
 
 1. Créez un servlet basé sur le paramètre de requête Pays, qui renvoie un tableau contenant les noms des états du pays.
@@ -172,6 +170,6 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
    .responseText);
    ```
 
-Package de contenu contenant un exemple de formulaire adaptatif (demo/AFdemo) avec le code ci-dessus implémenté.
+Module de contenu contenant un exemple de formulaire adaptatif (demo/AFdemo) avec le code ci-dessus implémenté.
 
 [Obtenir le fichier](assets/dropdown-demo-content-1.0.1-snapshot.zip)

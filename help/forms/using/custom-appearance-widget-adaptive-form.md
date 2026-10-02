@@ -11,16 +11,14 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 100%
-
+source-wordcount: '1744'
+ht-degree: 98%
 ---
-
 # Création d’apparences personnalisées pour les champs de formulaire adaptatif{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Présentation {#introduction}
 
-Les formulaires adaptatifs utilisent le [cadre d’apparence](/help/forms/using/introduction-widgets.md) pour vous aider à créer des apparences personnalisées pour les champs de formulaire adaptatif et offrir une expérience différente à l’utilisateur ou l’utilisatrice. Par exemple, remplacez des boutons radio et des cases à cocher par les boutons de basculement ou utilisez des modules externes jQuery pour limiter les entrées d’utilisateurs dans les champs tels que les numéros de téléphone ou l’ID de courrier électronique. 
+Les formulaires adaptatifs utilisent le [cadre d’apparence](/help/forms/using/introduction-widgets.md) pour vous aider à créer des apparences personnalisées pour les champs de formulaire adaptatif et offrir une expérience différente à l’utilisateur ou l’utilisatrice. Par exemple, remplacez des boutons radio et des cases à cocher par les boutons de basculement ou utilisez des modules externes jQuery pour limiter les entrées d’utilisateurs dans les champs tels que les numéros de téléphone ou l’ID de courrier électronique.
 
 Ce document explique comment utiliser un module externe jQuery pour créer ces expériences différentes pour les champs de formulaire adaptatif. En outre, il présente un exemple pour créer une apparence personnalisée afin que le composant de champ numérique s’affiche sous la forme d’une procédure pas à pas numérique ou d’un curseur.
 
@@ -40,16 +38,16 @@ Commençons par examiner les termes et concepts clés utilisés dans cet article
 
 Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont les suivantes :
 
-1. **Créer un projet** : créez un projet Maven qui génère un package de contenu à déployer sur AEM.
+1. **Créer un projet** : créez un projet Maven qui génère un module de contenu à déployer sur AEM.
 1. **Étendre une classe de widget existante** : étendez une classe de widget existante et remplacez les classes requises.
 1. **Créer une bibliothèque cliente** : créez une bibliothèque `clientLib: af.customwidget` et ajoutez les fichiers Javascript et CSS requis.
 
-1. **Générer et installer le projet** : générez le projet Maven et installez le package de contenu généré sur AEM.
+1. **Générer et installer le projet** : générez le projet Maven et installez le module de contenu généré sur AEM.
 1. **Mettre à jour le formulaire adaptatif** : mettez à jour les propriétés de champ de formulaire adaptatif pour utiliser l’apparence personnalisée.
 
 ### Créer un projet {#create-a-project}
 
-Un archétype Maven est un point de départ pour créer une apparence personnalisée.   Les détails de l’archétype à utiliser sont les suivants :
+Un archétype Maven est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
 
 * **Référentiel** : https://repo1.maven.org/maven2/com/adobe/
 * **ID d’artefact** : custom-appearance-archetype.
@@ -70,7 +68,7 @@ La commande télécharge les modules externes experts et des informations sur l�
 * **packageGroup** : groupe de packages du package AEM généré.
 * **widgetName** : nom de l’apparence utilisé comme référence.
 
-Le projet généré présente la structure suivante : 
+Le projet généré présente la structure suivante :
 
 ```java
 ─<artifactId>
@@ -132,7 +130,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
    <td><code>getEventMap</code></td>
    <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Cet exemple indique que <code>blur</code> est un événement HTML et que <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
+      }</code><br /> Cet exemple montre que <code>blur</code> est un événement HTML et <code>XFA_EXIT_EVENT</code> est l’événement XFA correspondant. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -222,9 +220,9 @@ Examinons maintenant un exemple de création d’apparence personnalisée pour q
 
    1. Sélectionnez **[!UICONTROL Fichier > Importer > Projets existants dans l’espace de travail]**.
 
-   1. Recherchez et sélectionnez le dossier dans lequel vous avez exécuté la commande `archetype:generate`. 
+   1. Recherchez et sélectionnez le dossier dans lequel vous avez exécuté la commande `archetype:generate`.
 
-   1. Cliquez sur **[!UICONTROL Finish]** (Terminer). 
+   1. Cliquez sur **[!UICONTROL Finish]** (Terminer).
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
@@ -311,11 +309,11 @@ Examinons maintenant un exemple de création d’apparence personnalisée pour q
 
    `mvn clean install`
 
-1. Installez le package à l’aide d’AEM Package Manager. 
+1. Installez le package à l’aide du gestionnaire de modules AEM.
 
 1. Ouvrez le formulaire adaptatif en mode d’édition auquel vous souhaitez appliquer l’apparence personnalisée et procédez comme suit :
 
-   1. Cliquez avec le bouton droit de la souris sur le champ sur lequel vous souhaitez appliquer l’apparence et cliquez sur **[!UICONTROL Modifier]** pour ouvrir la boîte de dialogue Modifier le composant. 
+   1. Cliquez avec le bouton droit de la souris sur le champ sur lequel vous souhaitez appliquer l’apparence et cliquez sur **[!UICONTROL Modifier]** pour ouvrir la boîte de dialogue Modifier le composant.
 
    1. Dans l’onglet Style, mettez à jour la propriété **[!UICONTROL classe CSS]** pour ajouter `widget_numericStepper`.
 
