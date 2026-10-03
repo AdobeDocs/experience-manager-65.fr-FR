@@ -1,9 +1,13 @@
 ---
 title: Télécharger un modèle de formulaire XFA ou PDF
+
 description: Vous pouvez exporter des formulaires du référentiel vers le système local et migrer les formulaires téléchargés vers le nouveau référentiel.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
@@ -12,16 +16,14 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
-
 ---
-
 # Télécharger un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L’opération de téléchargement, comme son nom l’indique, vous permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de chargement, cette opération vous permet de migrer vos formulaires d’un référentiel vers un autre.
 
 Dans AEM Forms, l’opération de téléchargement est prise en charge pour les types de ressource suivants :
 
-* Modèles de formulaire (formulaires XFA)
+* Modèles de formulaires (formulaires XFA)
 * Formulaires PDF
 * Documents (fichiers PDF plats)
 
@@ -53,4 +55,4 @@ Outre ces ressources, vous pouvez télécharger le type `Resource` de ressources
 
 * Vous pouvez charger le fichier ZIP vers n’importe quel autre emplacement du même référentiel ou d’un autre référentiel.
 * La hiérarchie des ressources d’un dossier est conservée pendant l’opération de chargement.
-* Toute modification des métadonnées apportée aux ressources téléchargées avant le téléchargement est répercutée lors du transfert. 
+* Toute modification des métadonnées apportée aux ressources téléchargées avant le téléchargement est répercutée lors du transfert.

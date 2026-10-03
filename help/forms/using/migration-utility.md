@@ -13,11 +13,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 100%
-
+source-wordcount: '1789'
+ht-degree: 99%
 ---
-
 # Migration de ressources et de documents AEM Forms{#migrate-aem-forms-assets-and-documents}
 
 L’utilitaire de migration convertit les [ressources des formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md), les [configurations du cloud](/help/sites-developing/extending-cloud-config.md), et les [ressources de Correspondence Management](/help/forms/using/cm-overview.md), du format utilisé dans les versions antérieures vers le format utilisé dans Adobe Experience Manager (AEM) 6.5 Forms. L’exécution de l’utilitaire de migration engendre la migration des éléments suivants :
@@ -53,7 +51,7 @@ En raison de changements [liés à la rétrocompatibilité](/help/sites-deployin
 
 Pour les ressources de Correspondence Management :
 
-* Pour les ressources importées de la plateforme précédente, une propriété est ajoutée : **fd:version=1.0**.
+* Pour les ressources importées de la plateforme précédente, une propriété est ajoutée : **fd:version=1.0**.
 * Depuis AEM 6.1 Forms, les commentaires ne sont pas disponibles hors champ. Les commentaires ajoutés précédemment sont disponibles dans les actifs mais ne sont pas automatiquement affichés sur l’interface. Vous devez personnaliser la propriété extendedProperties dans l’interface utilisateur d’AEM Forms pour rendre les commentaires visibles.
 * Dans certaines versions précédentes, telles que LiveCycle ES4, le texte était modifié à l’aide de Flex RichTextEditor, mais depuis AEM 6.1 Forms, c’est l’éditeur de HTML qui est utilisé. En raison de ce rendu et de l’aspect des polices, les tailles et les marges des polices peuvent différer des versions précédentes de l’interface utilisateur de création. Toutefois, l’aspect des lettres est identique lors du rendu.
 * Les listes dans les modules de texte sont améliorées et le rendu est désormais différent. Il peut y avoir des différences visuelles. Adobe vous recommande d’afficher et de vérifier les lettres lorsque vous utilisez des listes dans des modules de texte.
@@ -95,11 +93,11 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Pour migrer les **ressources**, sélectionnez Migration des ressources d’AEM Forms et dans l’écran suivant, sélectionnez **Lancer la migration**. Les éléments suivants sont migrés :
 
-      * Formulaires adaptatifs
-      * Fragments de document
-      * Thèmes
-      * Lettres
-      * Dictionnaires de données
+     * Formulaires adaptatifs
+     * Fragments de document
+     * Thèmes
+     * Lettres
+     * Dictionnaires de données
 
    >[!NOTE]
    >
@@ -107,12 +105,12 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Pour migrer les composants personnalisés des formulaires adaptatifs, sélectionnez **Migration des composants personnalisés des formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
-      * Composants personnalisés écrits pour les formulaires adaptatifs
-      * Superpositions de composants, le cas échéant.
+     * Composants personnalisés écrits pour les formulaires adaptatifs
+     * Superpositions de composants, le cas échéant.
 
    * Pour migrer les modèles de formulaires adaptatifs, sélectionnez **Migration des modèles de formulaires adaptatifs**. Sur la page Migration des composants personnalisés, sélectionnez **Démarrer la migration**. Les éléments suivants sont migrés :
 
-      * Les modèles de formulaire adaptatif créés sous `/apps` ou `/conf` à l’aide de l’éditeur de modèles AEM.
+     * Les modèles de formulaires adaptatifs créés sous `/apps` ou `/conf` à l’aide de l’éditeur de modèles AEM.
 
    * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous `/conf`). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans `/etc` sont déplacés vers `/conf`. Si aucune de vos personnalisations de services cloud ne dépendent de chemins d’accès existants (`/etc`), Adobe recommande d’exécuter l’utilitaire de migration après la mise à niveau vers la version 6.5 et d’utiliser l’interface utilisateur tactile de la configuration cloud pour tout travail ultérieur. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (`/conf`), puis exécutez l’utilitaire de migration.
 
@@ -120,23 +118,23 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
    * Services cloud du modèle de données de formulaire
 
-      * Chemin d’accès source : `/etc/cloudservices/fdm`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/fdm`.
+     * Chemin d’accès source : `/etc/cloudservices/fdm`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/fdm`.
 
    * Recaptcha
 
-      * Chemin d’accès source : `/etc/cloudservices/recaptcha`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/recaptcha`.
+     * Chemin d’accès source : `/etc/cloudservices/recaptcha`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/recaptcha`.
 
    * Adobe Sign
 
-      * Chemin d’accès source : `/etc/cloudservices/echosign`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/echosign`.
+     * Chemin d’accès source : `/etc/cloudservices/echosign`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/echosign`.
 
    * Services cloud typekit
 
-      * Chemin d’accès source : `/etc/cloudservices/typekit`.
-      * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/typekit`.
+     * Chemin d’accès source : `/etc/cloudservices/typekit`.
+     * Chemin d’accès cible : `/conf/global/settings/cloudconfigs/typekit`.
 
    La fenêtre du navigateur affiche les éléments suivants pendant le processus de migration :
 
@@ -156,15 +154,15 @@ Ces composants peuvent être migrés en les ouvrant dans l’éditeur de règles
 
 * Pour migrer les règles et les scripts (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3) dans les composants personnalisés, sélectionnez Migration des composants personnalisés des formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
-   * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
+  * Règles et scripts créés à l’aide de éditeur de règles (6.1 FP1 et versions ultérieures)
 
-   * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
+  * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
 
 * Pour migrer les modèles (ce n’est pas nécessaire si vous effectuez une mise à niveau à partir de la version 6.3 ou 6.4), sélectionnez Migration de modèles de formulaires adaptatifs. Sur l’écran suivant, sélectionnez Démarrer la migration. Les éléments suivants sont migrés :
 
-   * Anciens modèles : les modèles de formulaires adaptatifs créés sous /apps en utilisant AEM 6.1 Forms ou une version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
+  * Anciens modèles : les modèles de formulaires adaptatifs créés sous /apps en utilisant AEM 6.1 Forms ou une version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
 
-   * Nouveaux modèles : les modèles de formulaires adaptatifs créés en utilisant l’éditeur de modèles sous `/conf`. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
+  * Nouveaux modèles : les modèles de formulaires adaptatifs créés en utilisant l’éditeur de modèles sous `/conf`. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
 
 ### Tâches de maintenance après l’exécution de l’utilitaire de migration {#housekeepingtasks}
 

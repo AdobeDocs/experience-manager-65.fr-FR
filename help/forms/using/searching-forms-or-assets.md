@@ -1,21 +1,24 @@
 ---
 title: Rechercher des formulaires et des ressources
+
 description: Vous pouvez rechercher des formulaires et des ressources dans votre instance AEM à l’aide de la recherche AEM. Les modes de recherche de base et avancé vous permettent de localiser rapidement vos ressources.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Rechercher des formulaires et des ressources{#searching-for-forms-and-assets}
 
 Vous pouvez rechercher vos formulaires ou ressources de formulaire à l’aide d’une chaîne de texte ou d’une chaîne de texte accompagnée de caractères génériques. Vous pouvez également préciser la recherche à l’aide des critères disponibles dans différentes catégories du panneau Rechercher.
@@ -78,7 +81,7 @@ Vous pouvez rechercher des ressources en utilisant l’un des états suivants :
 
 ### Type de ressource {#asset-type}
 
-Vous pouvez choisir un grand nombre de types de ressources. La recherche renvoie tous les types de ressources sélectionnés réunis.
+Vous pouvez choisir un grand nombre de types de ressources. La recherche renvoie l’union de tous les types de ressources sélectionnés.
 
 <table>
  <tbody>
@@ -88,7 +91,7 @@ Vous pouvez choisir un grand nombre de types de ressources. La recherche renvoie
   </tr>
   <tr>
    <td>Modèle de formulaire<br /> </td> 
-   <td>Recherche dans tous les modèles de formulaire.<br /> </td> 
+   <td>Recherche dans tous les modèles de formulaires.<br /> </td> 
   </tr>
   <tr>
    <td>Formulaire PDF</td> 

@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '825'
 ht-degree: 100%
-
 ---
-
 # Créer des styles CSS pour des formulaires HTML5 {#creating-css-styles-for-html-forms}
 
 Le rendu HTML5 d’un modèle de formulaire basé sur XFA se compose de plusieurs éléments HTML. Ces éléments sont organisés dans un ordre. Chaque élément comporte des classes CSS bien définies. Vous pouvez utiliser cette classe CSS pour sélectionner et modifier l’apparence d’un élément.
@@ -49,7 +47,7 @@ L’élément widget contient l’élément d’interface utilisateur pour l’i
 
 * **Widget** : chaque widget comporte cette classe.
 * **nom** : tous les widgets fournis avec AEM contiennent la classe de nom widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
-* **type** : chaque widget comporte un élément d’interface utilisateur. Cette classe définit le type de l’élément d’interface utilisateur. 
+* **type** : chaque widget comporte un élément d’interface utilisateur. Cette classe définit le type de l’élément d’interface utilisateur.
 
 ```xml
 <!--field with caption-->
@@ -139,7 +137,7 @@ Chaque champ est associé à un widget représentant l’élément de l’interf
   </tr>
   <tr>
    <td>Bouton<br type="_moz" /> </td>
-   <td>s.o.</td>
+   <td>S/O</td>
    <td>xfaButton<br type="_moz" /> </td>
    <td>buttonfieldwidget<br type="_moz" /> </td>
    <td>input type=button<br type="_moz" /> </td>
