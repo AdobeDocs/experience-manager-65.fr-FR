@@ -11,11 +11,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 100%
-
 ---
-
 # ContextHub{#contexthub}
 
 ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. L’API Javascript côté client vous permet d’accéder aux données pour personnaliser le contenu.
