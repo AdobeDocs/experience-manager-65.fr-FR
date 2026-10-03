@@ -11,11 +11,9 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
 Les opérations de développement (DevOps) couvrent les processus, les méthodes et les communications requis pour :
@@ -63,7 +61,7 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 Cet environnement est utilisé par l’équipe d’assurance qualité afin de [tester](/help/sites-developing/test-plan.md) entièrement votre nouveau système, autant sur sa conception que ses fonctions. Il doit comporter des environnements de création et de publication, avec du contenu approprié, et fournir tous les services nécessaires pour activer une suite complète de tests.
 
-### Évaluation  {#staging}
+### Évaluation {#staging}
 
 L’environnement d’évaluation doit être un miroir de l’environnement de production : configuration, code et contenu :
 
@@ -71,7 +69,7 @@ L’environnement d’évaluation doit être un miroir de l’environnement de p
 * Il peut être utilisé pour les tests finaux (conception, fonctionnalités et interfaces) avant le déploiement dans les environnements de production.
 * Bien qu’il ne soit pas toujours possible que l’environnement d’évaluation soit identique à l’environnement de production, il doit être aussi proche que possible pour activer les tests de performance et de charge.
 
-### Production : création et publication  {#production-author-and-publish}
+### Production : création et publication {#production-author-and-publish}
 
 L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) votre mise en œuvre.
 
@@ -106,7 +104,7 @@ Un environnement de publication se trouve dans la « zone démilitarisée » (
 
 L’environnement de publication génère votre contenu dynamiquement en temps réel et le contenu peut être personnalisé pour chaque personne.
 
-## Mouvement de code  {#code-movement}
+## Mouvement de code {#code-movement}
 
 Propagez toujours le code du bas vers le haut :
 

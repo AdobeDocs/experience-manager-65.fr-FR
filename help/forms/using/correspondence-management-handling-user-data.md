@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 100%
-
 ---
-
 # Correspondence Management | Gestion des données utilisateur {#correspondence-management-handling-user-data}
 
 AEM Forms Correspondence Management vous permet de créer, gérer et rationaliser les correspondances clientes sécurisées et personnalisées. Il fournit une interface utilisateur intuitive permettant aux utilisateurs et utilisatrices professionnels de créer des correspondances à l’aide de blocs de contenu et d’éléments multimédias pré-approuvés. Pour obtenir plus d’informations sur la création de correspondances, reportez-vous à la section [Créer une correspondance](/help/forms/using/create-correspondence.md).
@@ -80,6 +78,6 @@ Vous pouvez également accéder à l’instance de lettre dans le référentiel 
 Pour rechercher une instance de lettre contenant les données d’une personne spécifique, vous pouvez procéder des manières suivantes :
 
 * Utilisez les API Correspondence Management si le nom de l’instance de lettre ou la personne qui a enregistré le brouillon ou envoyé la correspondance est connue.
-* Utilisez l’option de recherche du référentiel AEM et saisissez des informations d’identification personnelles telles que l’identifiant ou le nom de l’adresse électronique pour trouver le nœud dans lequel l’information est stockée. 
+* Utilisez l’option de recherche du référentiel AEM et saisissez des informations d’identification personnelles telles que l’identifiant ou le nom de l’adresse électronique pour trouver le nœud dans lequel l’information est stockée.
 
 Pour supprimer définitivement des données utilisateur de correspondances sous forme de brouillon et envoyées dans les systèmes AEM, vous devez supprimer manuellement le nœud d’instance de lettre de toutes les instances AEM applicables.
