@@ -23,7 +23,7 @@ Créez un dossier de bibliothèque cliente appelé `clientlibs` qui contient les
 
 La valeur de propriété `categories` donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer dans d’autres bibliothèques clientes.
 
-1. À l’aide de ****, développez `/etc/designs`
+1. À l’aide de **&#x200B;**, développez `/etc/designs`
 
 1. Cliquez avec le bouton droit sur `an-scf-sandbox` et sélectionnez `Create Node`
 
@@ -122,7 +122,7 @@ L’instruction d’inclusion appartient à la section `head` du script `html`. 
 
 **Copiez headlibs.jsp et incluez clientlibs:**
 
-1. À l&#39;aide de ****, sélectionnez **`/libs/foundation/components/page/headlibs.jsp`**
+1. À l&#39;aide de **&#x200B;**, sélectionnez **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Cliquez avec le bouton droit et sélectionnez **Copier** (ou sélectionnez Copier dans la barre d’outils)
 1. Sélectionnez **`/apps/an-scf-sandbox/components/playpage`**.
@@ -145,7 +145,7 @@ L’instruction d’inclusion appartient à la section `head` du script `html`. 
 
 Chargez votre site web dans le navigateur et vérifiez si l’arrière-plan n’est pas une nuance de bleu.
 
-[](https://localhost:4502/content/an-scf-sandbox/en/play.html)
+[&#128279;](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
 ![jeu communautaire](assets/community-play.png)
 
@@ -157,7 +157,7 @@ Ce package figure dans le tutoriel [Créer un exemple de page](/help/communities
 
 Pour créer un package :
 
-* Dans CRXDE Lite, cliquez sur l’icône [ Package ](https://localhost:4502/crx/packmgr/)
+* Dans CRXDE Lite, cliquez sur l’icône [&#x200B; Package &#x200B;](https://localhost:4502/crx/packmgr/)
 * Cliquez sur **Créer un package**
 
   * Nom du package : an-scf-sandbox-minimal-pkg
