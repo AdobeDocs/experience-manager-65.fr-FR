@@ -11,18 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '543'
 ht-degree: 100%
-
 ---
-
 # Rendu du modèle de formulaire pour des formulaires HTML5 {#rendering-form-template-for-html-forms}
 
 ## Point d’entrée de rendu {#render-endpoint}
 
-Les formulaires HTML5 intègrent la notion de **Profils**, lesquels sont exposés en tant que points d’entrée REST pour activer le rendu sur périphériques mobile des modèles de formulaire. Ces profils sont associés à des **rendus de profil**. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point d’entrée du rendu. Le point d’netrée de rendu par défaut du formulaire pointant vers le profil « default » ressemble à :
+Les formulaires HTML5 intègrent la notion de **Profils**, lesquels sont exposés en tant que points d’entrée REST pour activer le rendu sur périphériques mobile des modèles de formulaires. Ces profils sont associés à des **rendus de profil**. Ce sont des pages JSP chargées de générer la représentation HTML du formulaire en appelant le service Forms OSGi. Le chemin d’accès JCR du nœud de profil détermine l’URL du point d’entrée du rendu. Le point d’netrée de rendu par défaut du formulaire pointant vers le profil « default » ressemble à :
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containg form xdp*>&amp;template=&lt;*name of the xdp*>
+https://<*host*>:<*port*>/content/xfaforms/profiles/default.html?contentRoot=<*path of the folder containg form xdp*>&template=<*name of the xdp*>
 
 Par exemple, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

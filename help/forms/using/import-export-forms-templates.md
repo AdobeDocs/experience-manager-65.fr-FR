@@ -1,24 +1,27 @@
 ---
 title: Importer et exporter des ressources dans AEM Forms
+
 description: Vous pouvez importer et exporter les formulaires adaptatifs et les modèles depuis des instances AEM ou dans celles-ci. Cela permet de migrer ou de déplacer facilement les formulaires vers d’autres systèmes.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2540'
 ht-degree: 100%
-
 ---
-
 # Importer et exporter des ressources dans AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
-Vous pouvez déplacer des formulaires ainsi que les ressources, thèmes, dictionnaires de données, fragments de document et lettres associés entre différentes instances AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les ressources pour lesquelles le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur de Forms est recommandée pour l’exportation ou l’importation. L’utilisation du gestionnaire de packages d’AEM pour l’exportation ou l’importation de ces ressources n’est pas recommandée.
+Vous pouvez déplacer des formulaires ainsi que les ressources, thèmes, dictionnaires de données, fragments de document et lettres associés entre différentes instances AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les ressources pour lesquelles le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur de Forms est recommandée pour l’exportation ou l’importation. L’utilisation du gestionnaire de modules d’AEM pour l’exportation ou l’importation de ces ressources n’est pas recommandée.
 
 >[!NOTE]
 >
@@ -29,7 +32,7 @@ Vous pouvez déplacer des formulaires ainsi que les ressources, thèmes, diction
 
 L’interface utilisateur d’AEM Forms vous permet d’exporter des ressources d’une instance AEM en les téléchargeant sous forme de package CRX ou de fichiers binaires AEM. Vous pouvez ensuite importer le package CRX ou le fichier binaire AEM téléchargé dans une autre instance AEM.
 
-L’exportation et l’importation via l’interface utilisateur AEM Forms sont prises en charge pour toutes les ressources, à l’exception des modèles et des politiques de contenu de formulaires adaptatifs. Par conséquent, lors de l’export d’un formulaire adaptatif depuis l’interface utilisateur d’AEM Forms, le modèle de formulaire adaptatif associé et les politiques de contenus ne sont pas automatiquement exportés comme d’autres ressources associées.
+L’export et l’import via l’interface utilisateur AEM Forms sont pris en charge pour toutes les ressources, à l’exception des politiques de contenu et des modèles de formulaires adaptatifs. Par conséquent, lors de l’export d’un formulaire adaptatif depuis l’interface utilisateur d’AEM Forms, le modèle de formulaire adaptatif associé et les politiques de contenus ne sont pas automatiquement exportés comme d’autres ressources associées.
 
 Pour ces types de ressources, vous devez utiliser le gestionnaire de modules d’AEM pour créer un package CRX sur le serveur AEM source et pour installer le module sur le serveur de destination. Pour plus d’informations sur la création et l’installation des packages, voir [Utilisation des packages](/help/sites-administering/package-manager.md).
 
@@ -43,10 +46,10 @@ Pour télécharger des ressources de formulaires et de documents :
 1. Dans la/les ressources de téléchargement, choisissez l’une des options suivantes, puis sélectionnez **Télécharger**.
 
    * **Télécharger sous forme de package CRX :** utilisez cette option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance AEM Forms vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Toutes les ressources de formulaires, y compris les formulaires créés dans AEM (formulaires adaptatifs, communications interactives et fragments de formulaires adaptatifs), les ensembles de formulaires, les modèles de formulaires, les documents PDF et les ressources (fichiers XSD, XFS et images), peuvent être téléchargés en tant que packages depuis l’interface utilisateur d’AEM Forms.
-L’avantage du téléchargement des ressources sous forme de package est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous avez un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
+     L’avantage du téléchargement des ressources sous forme de package est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous avez un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et une image. Lorsque vous sélectionnez ce formulaire adaptatif et le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
 
-   * **Télécharger la/les ressources sous forme de fichiers binaires :** utilisez cette option pour télécharger uniquement les modèles de formulaire (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Cette option permet de télécharger les ressources de formulaires qui possèdent des fichiers binaires, telles que des fichiers XSD, XDP, des images, des fichiers PDF et XDP comme un fichier .zip.
-Vous ne pouvez pas télécharger de formulaires adaptatifs, de communications interactives, de fragments de formulaires adaptatifs, de thèmes ni de jeux de formulaires avec l’option **Télécharger des ressources en tant que fichiers binaires**. Pour télécharger ces ressources, vous devez utiliser l’option **Télécharger sous forme de package CRX**.
+   * **Télécharger la (les) ressource(s) sous forme de fichiers binaires** : utilisez cette option pour télécharger uniquement les modèles de formulaires (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Cette option permet de télécharger les ressources de formulaires qui possèdent des fichiers binaires, telles que des fichiers XSD, XDP, des images, des fichiers PDF et XDP comme un fichier .zip.
+     Vous ne pouvez pas télécharger de formulaires adaptatifs, de communications interactives, de fragments de formulaires adaptatifs, de thèmes ni de jeux de formulaires avec l’option **Télécharger des ressources en tant que fichiers binaires**. Pour télécharger ces ressources, vous devez utiliser l’option **Télécharger sous forme de package CRX**.
 
    Les ressources sélectionnées sont téléchargées sous forme d’archive (fichier .zip).
 
@@ -176,7 +179,7 @@ Vous pouvez importer des ressources qui sont exportées dans un fichier .cmp. Un
 
 Vous pouvez utiliser le gestionnaire de packages AEM pour exporter des applications de workflow. Pour ce faire, procédez comme suit :
 
-1. Ouvrez le gestionnaire de packages AEM Forms. L’URL du gestionnaire de packages est https://&lt;server>:&lt;port>/crx/packmgr.
+1. Ouvrez le gestionnaire de modules AEM Forms. L’URL du gestionnaire de modules est https://&lt;server>:&lt;port>/crx/packmgr.
 1. Cliquez sur **[!UICONTROL Créer un package]**. La boîte de dialogue **[!UICONTROL Nouveau package]** apparaît.
 1. Indiquez le nom, la version et le groupe du package. Cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Ajouter un filtre]**. Spécifiez le chemin d’accès de l’application du workflow. Par exemple, /etc/fd/dashboard/startpoints/homemortgage. Cliquez sur **[!UICONTROL Ajouter une règle]**.

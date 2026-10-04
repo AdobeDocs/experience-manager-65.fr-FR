@@ -10,15 +10,13 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '684'
+workflow-type: tm+mt
+source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Répertoire de stockage global de documents{#global-document-storage-directory}
 
-Le répertoire de *stockage global de documents (GDS)* est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers incluent des fichiers PDF, des politiques et des modèles de formulaire. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire GDS et doivent être disponibles pour traiter les requêtes. Il est important de prendre en compte la fiabilité du système de fichiers qui héberge le répertoire GDS. Utilisez la technologie RAID ou une autre technologie adaptée à vos besoins en matière de qualité et de niveau de service.
+Le répertoire de *stockage global de documents (GDS)* est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans un processus. Ces fichiers incluent des fichiers PDF, des politiques et des modèles de formulaires. Les fichiers de longue durée constituent un élément essentiel de l’état général de nombreux déploiements d’AEM Forms. Si une partie ou la totalité de ces documents est perdue ou corrompue, le serveur Forms peut devenir instable. Les documents d’entrée pour les appels de tâches asynchrones sont également stockés dans le répertoire GDS et doivent être disponibles pour traiter les requêtes. Il est important de prendre en compte la fiabilité du système de fichiers qui héberge le répertoire GDS. Utilisez la technologie RAID ou une autre technologie adaptée à vos besoins en matière de qualité et de niveau de service.
 
 Les fichiers de longue durée peuvent contenir des informations utilisateur sensibles. Ces informations peuvent nécessiter des informations d’identification spéciales lorsqu’elles sont accessibles à l’aide des API ou des interfaces utilisateur d’AEM Forms. Il est important que le répertoire GDS soit correctement sécurisé via le système d’exploitation. Seul le compte d’administrateur ou d’administratrice utilisé pour exécuter le serveur d’applications doit disposer d’un accès en lecture/écriture au répertoire GDS.
 
@@ -94,7 +92,7 @@ Vous pouvez modifier l’emplacement GDS dans la console d’administration une 
 
 ## À propos des fichiers de déploiement {#about-deployment-files}
 
-AEM Forms se compose de deux types de fichiers de déploiement, les conteneurs de services et les fichiers EAR Java 2 Platform, Enterprise Edition (J2EE). Les fichiers EAR sont constitués de lots d’applications J2EE standard qui contiennent les fonctionnalités de base d’AEM Forms. Les fichiers EAR spécifiques au serveur d’applications sont les suivants :
+AEM Forms se compose de deux types de fichiers de déploiement, les conteneurs de services et les fichiers EAR Java 2 Platform, Enterprise Edition (J2EE). Les fichiers EAR sont constitués de bundles d’applications J2EE standard qui contiennent les fonctionnalités de base d’AEM Forms. Les fichiers EAR spécifiques au serveur d’applications sont les suivants :
 
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear

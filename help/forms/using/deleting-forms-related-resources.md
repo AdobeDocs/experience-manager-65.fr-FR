@@ -1,9 +1,13 @@
 ---
 title: Supprimer des formulaires et des ressources associées
+
 description: Découvrez comment supprimer un formulaire ou une ressource dans AEM Forms et quel est l’impact de cette suppression sur les ressources et les formulaires XFA référencés et de référence.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
@@ -12,9 +16,7 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
-
 ---
-
 # Supprimer des formulaires et des ressources associées {#deleting-forms-and-related-resources}
 
 Vous pouvez supprimer des formulaires et des ressources pour supprimer ces dernières du référentiel. L’opération de suppression fonctionne pour tous les types de ressources et les dossiers.

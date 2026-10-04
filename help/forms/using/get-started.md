@@ -11,16 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '236'
 ht-degree: 100%
-
 ---
-
 # Prise en main des formulaires HTML5 {#getting-started-with-html-forms}
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cela vous permet d’étendre vos solutions et workflows actuels aux tablettes ou smartphones disposant de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
-* **Rendu au format HTML5 des modèles de formulaire XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/using/introduction.md). 
+* **Rendu au format HTML5 des modèles de formulaires XFA :** outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plateforme cliente sur les appareils mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. Pour plus d’informations sur la fonctionnalité de rendu au format HTML5, voir [Introduction aux formulaires HTML5](/help/forms/using/introduction.md).
 
 * **Gestion des formulaires :** en outre, AEM comprend de nouvelles fonctionnalités pour simplifier le processus d’organisation et de gestion des formulaires. Vous pouvez activer, désactiver, publier, et prévisualiser des formulaires. Pour en savoir plus, reportez-vous à [Présentation de la gestion des formulaires](/help/forms/using/introduction-managing-forms.md).
 

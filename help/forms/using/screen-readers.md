@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '333'
 ht-degree: 100%
-
 ---
-
 # Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
 
 Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard prenant en charge HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire dans les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires HTML5.
