@@ -11,11 +11,9 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 100%
-
+source-wordcount: '1279'
+ht-degree: 95%
 ---
-
 # Créer des pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences e-commerce où un pop-up s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les pop-ups. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
@@ -83,7 +81,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
    **Exemple**
-Supposons que vous utilisiez le code d’intégration suivant dans votre page Web pour une image interactive :
+   Supposons que vous utilisiez le code d’intégration suivant dans votre page web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -91,7 +89,7 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
+   **En utilisant l’exemple de code intégré ci-dessus, vous obtenez le code suivant :**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -111,13 +109,14 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
 
 1. Configurez le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code d’intégration fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code intégré fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
 
-   **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
+   **Mappage de variables**
+   Mappez les variables utilisables dans votre page web à la valeur de SKU et aux variables génériques contenues dans l’aperçu rapide :
 
    `var *variable1*= inData.*quickviewVariable*`
 
-   Le code d’intégration fourni comporte un exemple de mise en correspondance pour la variable SKU :
+   Le code intégré fourni comporte un exemple de mise en correspondance pour la variable SKU :
 
    `var sku=inData.sku`
 
@@ -128,7 +127,8 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Appel de fonction** Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code intégré fournit un exemple d’appel de fonction :
+   **Appel de fonction**
+   Le gestionnaire nécessite également un appel de fonction pour que l’aperçu rapide fonctionne. La fonction est supposée être accessible par votre page hôte. Le code intégré fournit un exemple d’appel de fonction :
 
    `loadQuickView(sku)`
 
@@ -145,7 +145,7 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
    * Supprimez les commentaires de la section setHandlers du code intégré.
    * Mappez toutes les variables supplémentaires contenues dans l’aperçu rapide.
 
-      * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez des variables supplémentaires.
+     * Mettez à jour l’appel `loadQuickView(sku,*var1*,*var2*)` si vous ajoutez des variables supplémentaires.
 
    * Créez une fonction `loadQuickView` () simple sur la page, à l’extérieur de la visionneuse.
 
@@ -259,8 +259,8 @@ Supposons que vous utilisiez le code d’intégration suivant dans votre page We
    `*viewerInstance.*init()`
 
    **Exemple**
-Cet exemple utilise la visionneuse d’images interactives.
+   Cet exemple utilise la visionneuse d’images interactives.
 
    `s7interactiveimageviewer.init()`
 
-   Après avoir intégré la visionneuse dans votre page hôte, assurez-vous que l’instance de la visionneuse est créée et que les gestionnaires sont chargés avant l’appel de celle-ci à l’aide de `init()`.
+   Après avoir incorporé la visionneuse dans votre page hôte, assurez-vous que l’instance de la visionneuse est créée et que les gestionnaires sont chargés avant l’appel de celle-ci à l’aide de `init()`.

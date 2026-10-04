@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '263'
 ht-degree: 100%
-
 ---
-
 # Présentation du service de sortie {#overview-of-output-service}
 
 Output permet de fusionner des données de formulaire XML dans une conception de formulaire créée dans Designer afin de créer un flux de sortie de documents dans différents formats. Le flux de sortie peut être envoyé vers une imprimante réseau, une imprimante locale ou un fichier de disque.

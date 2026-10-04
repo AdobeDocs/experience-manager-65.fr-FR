@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
-workflow-type: ht
-source-wordcount: '2791'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '2898'
+ht-degree: 96%
 ---
-
 # Utilisation de bibliothèques côté client{#using-client-side-libraries}
 
 Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
@@ -97,11 +95,11 @@ La page HTML générée contient le code suivant :
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Pour obtenir des informations complètes, y compris des attributs pour le filtrage des bibliothèques JS, CSS ou de thème, voir [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Pour obtenir des informations complètes, notamment des attributs pour le filtrage des bibliothèques JS, CSS ou de thèmes, voir [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) doit être utilisé à la place comme décrit ci-dessus.
+>`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) doit être utilisé à la place comme décrit ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -133,7 +131,7 @@ Dans les versions précédentes, les dossiers de bibliothèques clientes se trou
 
 >[!NOTE]
 >
->Les ressources statiques situées sous le dossier de bibliothèque cliente doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que des images, sous le dossier *ressources*, il ne peut pas être référencé sur une instance de publication. Voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+>Les ressources statiques situées sous le dossier de bibliothèque cliente doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que des images, sous le dossier *ressources*, il ne peut pas être référencé sur une instance de publication. Voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -163,7 +161,7 @@ Vous pouvez définir la propriété `allowProxy` sur `foo` sur true.
 
 ### Création d’un dossier de bibliothèques clientes {#create-a-client-library-folder}
 
-1. Ouvrez CRXDE Lite dans un navigateur Web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Ouvrez CRXDE Lite dans un navigateur web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Sélectionnez le dossier dans lequel vous souhaitez placer le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un nœud**.
 1. Attribuez un nom au fichier de bibliothèque, puis sélectionnez `cq:ClientLibraryFolder` dans la liste Type. Cliquez sur **OK**, puis sur **Enregistrer tout**.
 1. Pour spécifier la ou les catégories auxquelles appartient la bibliothèque, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
@@ -206,7 +204,7 @@ Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour ide
 
 * **Nom :** dependencies
 * **Type :** chaîne[]
-* **Valeurs :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques en cours.
+* **Values :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques actif.
 
 Par exemple, `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance sur la bibliothèque `cq.jquery`. Le JSP qui fait référence à la bibliothèque cliente principale génère un fichier HTML qui comprend le code suivant :
 
@@ -393,7 +391,7 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
 
-1. Accédez à Apache Felix Config Manager à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Accédez à Apache Felix Config Manager à l’adresse [](https://localhost:4502/system/console/configMgr)
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
 1. Activez l’option **Minifier** (le cas échéant).
 1. Définissez la valeur **Configuration par défaut du processeur JS** sur `min:gcc`.
@@ -446,7 +444,7 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
    * Ouvrez l’URL suivante dans votre navigateur web (utilisez un hôte et un port différents, le cas échéant) :
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    La page par défaut affiche le résultat pour les balises ne comportant aucune valeur pour l’attribut categories.
 
