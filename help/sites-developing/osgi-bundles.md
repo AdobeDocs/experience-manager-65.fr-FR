@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '359'
 ht-degree: 100%
-
 ---
-
 # Bundles OSGi{#osgi-bundles}
 
 ## Utiliser le contrôle de version sémantique {#use-semantic-versioning}
@@ -26,15 +24,15 @@ Les bonnes pratiques de numérotation de version sémantique sont disponibles à
 
 Les bibliothèques courantes doivent être prises en compte dans des bundles distincts. Cela leur permet d’être réutilisées dans vos bundles. Lors de l’encapsulation d’un fichier *JAR* dans un bundle OSGi, veillez à vérifier les sources en ligne pour voir si quelqu’un a déjà fait cela auparavant. Voici quelques emplacements courants pour trouver les wrappers de bundle existants : Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes et le référentiel SpringSource Enterprise Bundle Repository.
 
-## Dépendre des versions de bundles les plus anciennes nécessaires {#depend-on-the-lowest-needed-bundle-versions}
+## Dépendre des versions de bundles les plus basses nécessaires {#depend-on-the-lowest-needed-bundle-versions}
 
 Pour les dépendances au moment de la compilation dans les fichiers POM, utilisez toujours la plus ancienne version possible exposant l’API requise. Cela permet davantage de compatibilité ascendante et facilite les correctifs de rétroportage des versions plus anciennes.
 
-## Exportez un ensemble restreint de packages à partir des bundles OSGi. {#export-a-minimal-set-of-packages-from-osgi-bundles}
+## Exporter un ensemble minimal de packages à partir des bundles OSGi {#export-a-minimal-set-of-packages-from-osgi-bundles}
 
 Lorsqu’un package a été exporté, une API a été créée pour que d’autres puissent en dépendre. Veillez à exporter le moins possible et à vérifier que ce qui est exporté est une API. Il est beaucoup plus facile de rendre publique une méthode/classe privée que de rendre privé un élément précédemment exporté.
 
-Placez toujours les implémentations dans un package *impl* distinct. Par défaut, le *maven-bundle-plugin* exporte tout élément du projet qui n’a pas de *impl* dans son nom.
+Placez toujours les implémentations dans un package *impl* distinct. Par défaut, le *maven-bundle-plugin* exporte l’ensemble des éléments du projet dont le nom ne contient pas *impl*.
 
 ## Définissez toujours explicitement une version sémantique pour chaque package exporté. {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 

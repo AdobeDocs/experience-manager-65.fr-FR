@@ -1,28 +1,31 @@
 ---
 title: Intégration d’un objet Form Bridge à un portail personnalisé pour les formulaires HTML5
+
 description: Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 100%
-
 ---
-
 # Intégration d’un objet Form Bridge à un portail personnalisé pour les formulaires HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge est une API Forms Bridge d&#39;HTML5 qui vous permet d’interagir avec un formulaire. Pour plus d’informations sur la référence à l’API FormBridge, reportez-vous à [Référence à l’API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Vous pouvez utiliser l’API FormBridge pour obtenir ou définir des valeurs de champs de formulaire à partir de la page HTML et envoyer le formulaire. Par exemple, vous pouvez utiliser l’API pour créer une expérience semblable à un assistant.
 
-Une application HTML existante peut utiliser l’API FormBridge pour interagir avec un formulaire et l’intégrer à la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
+Une application HTML existante peut utiliser l’API FormBridge pour interagir avec un formulaire et l’incorporer dans la page HTML. Vous pouvez utiliser les étapes suivantes pour définir la valeur d’un champ à l’aide de l’API Form Bridge.
 
 ## Intégration de formulaires HTML5 à une page web {#integrating-html-forms-to-a-web-page}
 
@@ -36,7 +39,7 @@ Une application HTML existante peut utiliser l’API FormBridge pour interagir a
 
 1. **Modifier un profil HTML**
 
-   Ajoutez l’exécution de XFA, la bibliothèque XFA locale et l’extrait de formulaire XFA en HTML dans le rendu du profil, concevez votre page Web et placez le formulaire dans la page Web.
+   Ajoutez l’exécution de XFA, la bibliothèque de paramètres régionaux XFA et l’extrait de formulaire XFA en HTML dans le rendu du profil, concevez votre page web et placez le formulaire dans la page web.
 
    Par exemple, utilisez l’extrait de code suivant, pour créer une application avec deux champs de saisie et un formulaire pour démontrer l’interaction entre le formulaire et une application externe.
 

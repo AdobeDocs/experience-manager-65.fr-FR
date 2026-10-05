@@ -5,17 +5,16 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
+
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1725'
 ht-degree: 100%
-
 ---
-
 # Vidéo{#video}
 
 Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez charger des vidéos directement dans les ressources pour un codage automatique sur Dynamic Media Classic et accéder aux vidéos Dynamic Media Classic directement depuis Assets à des fins de création de page.
@@ -32,7 +31,7 @@ Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une i
 * Miniatures FFMPEG
 * Encodage FFMPEG
 
-Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow de [!UICONTROL mise à jour de la ressource de gestion des DAM] prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide d’Experience Manager Assets est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow d’ingestion [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide d’Experience Manager Assets est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration Dynamic Media Classic.
 
 Si le codage vidéo FFMPEG est configuré dans Experience Manager et que FFMPEG est installé, Adobe recommande de supprimer les deux workflows FFMPEG des workflows de mise à jour des ressources de [!UICONTROL gestion des DAM].
 
@@ -118,7 +117,7 @@ Le tableau suivant explique les cas d’utilisation de chaque composant :
 
 >[!NOTE]
 >
->Prêt à l’emploi, le composant vidéo Dynamic Media Classic utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 pour l’utiliser avec Experience Manager. Dans Dynamic Media Classic, copiez le code incorporé du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
+>Prêt à l’emploi, le composant vidéo Dynamic Media Classic utilise le profil vidéo universel. Vous pouvez toutefois obtenir le lecteur vidéo HTML5 pour l’utiliser avec Experience Manager. Dans Dynamic Media Classic, copiez le code intégré du lecteur vidéo HTML5 prêt à l’emploi et placez-le dans votre page Experience Manager.
 >
 
 ## Composant vidéo Experience Manager {#aem-video-component}
