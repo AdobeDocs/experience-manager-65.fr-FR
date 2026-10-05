@@ -23,7 +23,7 @@ PDF Generator peut exécuter plusieurs conversions de fichiers simultanément po
 | Mode multi-utilisateur | OpenOffice | Un compte utilisateur distinct exécute chaque instance OpenOffice. |
 | Mode Utilisateur unique | ® Word et Microsoft® Excel | Un compte utilisateur exécute plusieurs instances Word et Excel. Les conversions PowerPoint restent sérialisées. |
 
-Avant d’activer l’un ou l’autre mode, effectuez la configuration de préinstallation de [](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) pour les applications et le système d’exploitation que vous utilisez. Pour connaître les versions d’application prises en charge, voir [Prise en charge logicielle de PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
+Avant d’activer l’un ou l’autre mode, effectuez la configuration de préinstallation de [&#128279;](/help/forms/using/install-configure-document-services.md#preinstallationconfigurations) pour les applications et le système d’exploitation que vous utilisez. Pour connaître les versions d’application prises en charge, voir [Prise en charge logicielle de PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator).
 
 ## Mode multi-utilisateur {#multi-user-mode}
 
@@ -46,7 +46,7 @@ Dans ce mode, plusieurs instances de ® Word (DOC et DOCX) et Excel (XLS et XLSX
 Pour activer le mode utilisateur unique pour les conversions Word et Excel :
 
 1. Dans Administration Console, accédez à **Accueil > Services > Applications et services > Gestion des services**.
-1. Filtrez pour **** et sélectionnez **GeneratePDFService**.
+1. Filtrez pour **&#x200B;**&#x200B;et sélectionnez **GeneratePDFService**.
 1. Dans l’onglet **Configuration**, configurez les options suivantes :
 
    * Définissez **Activer le mode Utilisateur unique pour PDFMaker** sur **true**.
