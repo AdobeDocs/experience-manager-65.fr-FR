@@ -195,15 +195,15 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
+     `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U`&#x200B;`[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l 1 -R`*&lt;nom_base_de_données>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_base_de_données>*
+     `[NetWorker_database_module_root]` `-s`&#x200B;`<NetWorker_Server_Name>` `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l incr -R`*&lt;nom_base_de_données>*
 
      Où :
 
