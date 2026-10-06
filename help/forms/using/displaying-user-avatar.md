@@ -11,18 +11,16 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
-
+source-wordcount: '196'
+ht-degree: 94%
 ---
-
 # Affichage de l’avatar de l’utilisateur {#displaying-the-user-avatar}
 
 L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droit de l’espace de travail AEM Forms. Les avatars de rapports directs dans la hiérarchie de l’entreprise sont affichés également dans la vue du gestionnaire. Vous pouvez configurer l’espace de travail AEM Forms pour choisir les images de l’utilisateur dans la base de données, par exemple le serveur LDAP.
 
 >[!NOTE]
 >
->le rapport d’aspect des images de l’utilisateur est de 1:1.
+>Le rapport d’aspect des images de l’utilisateur est de 1:1.
 
 1. Créez un DSC, à l’aide des détails mentionnés dans l’étape suivante. Pour plus d’informations, voir la section « Développement des composants d’AEM Forms » dans le guide [Programmer avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
 1. Dans le DSC, définissez une nouvelle SPI qui expose les méthodes getCurrentUserImageUrl et getUserImageUrl afin d’obtenir l’URL d’image d’un utilisateur d’AEM Forms. Voici un exemple d’extrait de code Java™ :

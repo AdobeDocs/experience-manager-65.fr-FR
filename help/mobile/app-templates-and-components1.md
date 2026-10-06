@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 51%
-
+source-wordcount: '382'
+ht-degree: 31%
 ---
-
 # Modèles et composants d’application{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -29,13 +27,13 @@ Chaque modèle vous présente une sélection de composants disponibles pour util
 
 >[!NOTE]
 >
->Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, consultez [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modèle sert de fondement pour une page.
 
 Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) vers la position correspondante dans l’arborescence : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites web**.
 
-Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
+Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour effectuer le rendu de la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
 ## Structure d’un modèle {#structure-of-a-template}
 
@@ -48,8 +46,8 @@ Un modèle est créé sous un nœud de type **cq:Template**.
 
 Différentes propriétés peuvent être définies, notamment :
 
-* **jcr:title** : titre du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
-* **jcr:description** : description du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
+* **jcr:title** - Titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
+* **jcr:description** - Description du modèle. Elle s’affiche dans la boîte de dialogue lors de la création d’une page.
 
 Ce nœud contient *un nœud jcr:content (cq:PageContent)* qui sert de base au nœud de contenu des pages résultantes. Cette propriété référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 

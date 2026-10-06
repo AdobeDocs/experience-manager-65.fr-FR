@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
-
 ---
-
 # Import et export du fichier de configuration {#importing-and-exporting-the-configuration-file}
 
 >[!NOTE]

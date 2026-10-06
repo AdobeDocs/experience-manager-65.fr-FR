@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 98%
 ---
-
 # Sauvegarde des données Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -55,19 +53,19 @@ Outre ces vérifications, observez les recommandations ci-dessous relatives au p
 
   Considérez les points suivants lors de la sauvegarde des instances de création et de publication :
 
-   * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances de création et de publication soit terminée avant de publier de nouvelles ressources.
-   * La sauvegarde complète du nœud Création inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
-   * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Il n’est pas nécessaire de déployer de nouveaux processus au cours de la phase de sauvegarde.
-   * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM Forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
+  * Assurez-vous que la sauvegarde des instances de création et de publication est synchronisée pour démarrer simultanément. Bien que vous puissiez continuer à utiliser les instances de création et de publication lorsque la sauvegarde est en cours, il est recommandé de ne pas publier de ressource pendant la sauvegarde afin d’éviter des modifications non enregistrées. Patientez jusqu’à ce que la sauvegarde des instances de création et de publication soit terminée avant de publier de nouvelles ressources.
+  * La sauvegarde complète du nœud Création inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
+  * Les développeurs et développeuses de Workbench peuvent continuer à travailler sur leurs processus localement. Il n’est pas nécessaire de déployer de nouveaux processus au cours de la phase de sauvegarde.
+  * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM Forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
 
 Sauvegardez la base de données AEM Forms, y compris tous les journaux de transactions. Voir [Base de données AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Pour plus d’informations, voir l’article de votre base de données dans la base de connaissances :
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Oracle - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403624)
-* [MySQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403623)
-* [DB2® - Sauvegarde et récupération AEM Forms](https://www.adobe.com/go/kb403626)
+* [Sauvegarde et récupération d’Oracle pour AEM Forms](https://www.adobe.com/go/kb403624)
+* [MySQL Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403625)
+* [® SQL - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403623)
+* [DB2® - Sauvegarde et récupération pour AEM Forms](https://www.adobe.com/go/kb403626)
 
 Ces articles vous aident à utiliser les fonctions de sauvegarde et de récupération de base de la base de données. Ils ne constituent en aucun cas des guides techniques expliquant de manière exhaustive les fonctions de sauvegarde et de récupération de bases de données spécifiques à certains fournisseurs. Ils présentent simplement les commandes nécessaires à la création d’une stratégie de sauvegarde fiable des bases de données pour les données de l’application AEM Forms.
 

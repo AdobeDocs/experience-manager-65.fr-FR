@@ -1,21 +1,23 @@
 ---
 title: Importer et exporter des fichiers de configuration de PDF Generator
+
 description: Découvrez comment importer et exporter des fichiers de configuration PDF Generator.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '384'
+workflow-type: tm+mt
+source-wordcount: '390'
 ht-degree: 100%
-
 ---
-
 # Importer et exporter des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
 
 >[!NOTE]

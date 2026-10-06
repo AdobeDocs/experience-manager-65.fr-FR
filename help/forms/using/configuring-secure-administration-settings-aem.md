@@ -1,20 +1,22 @@
 ---
 title: Configurer les paramètres d’administration sécurisée d’AEM Forms sur JEE
+
 description: Découvrez comment administrer des comptes d’utilisateurs et services qui, contrairement à un environnement de développement privé, ne sont pas nécessaires dans un environnement de production AEM Forms sur JEE.
+
+
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '852'
 ht-degree: 100%
-
 ---
-
 # Configurer les paramètres d’administration sécurisée d’AEM Forms sur JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Découvrez comment administrer des comptes d’utilisateurs et services qui, contrairement à un environnement de développement privé, ne sont pas nécessaires dans un environnement de production AEM Forms sur JEE.
@@ -66,7 +68,7 @@ Suivez cette procédure à l’aide de la page web Applications et services dans
 
 ## Désactivation des accès anonymes non essentiels pour des services {#disabling-non-essential-anonymous-access-to-services}
 
-Certains services du serveur Forms Server permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non. 
+Certains services du serveur Forms Server permettent d’effectuer des appels non authentifiés (anonymes) pour certaines opérations. Cela signifie qu’une ou plusieurs opérations exposées par le service peuvent être appelées par une personne authentifiée ou non.
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur web :
 

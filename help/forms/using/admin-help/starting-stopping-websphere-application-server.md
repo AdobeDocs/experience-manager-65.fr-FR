@@ -12,10 +12,8 @@ role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 100%
-
+ht-degree: 95%
 ---
-
 # Démarrer et arrêter WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
 Plusieurs procédures nécessitent d’arrêter ou de démarrer l’instance de WebSphere sur laquelle vous souhaitez déployer les produits AEM Forms. Si vous ne savez pas si le serveur d’applications a démarré, vous pouvez d’abord afficher le statut de WebSphere Application Server.

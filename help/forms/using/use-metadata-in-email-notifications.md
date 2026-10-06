@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
-
+source-wordcount: '899'
+ht-degree: 96%
 ---
-
 # Utilisation de métadonnées dans une notification électronique {#use-metadata-in-an-email-notification}
 
 Vous pouvez utiliser l’étape Affecter une tâche pour créer et affecter des tâches à un utilisateur ou une utilisatrice ou à un groupe. Lorsqu’une tâche est affectée à un utilisateur, une utilisatrice ou un groupe, une notification est envoyée par e-mail à la personne définie ou à chaque membre du groupe défini. Une [notification par e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) classique contient le lien de la tâche affectée et des informations relatives à la tâche.
@@ -22,7 +20,7 @@ Vous pouvez utiliser des métadonnées dans un modèle d’e-mail pour remplir d
 
 ![Modèle d’e-mail par défaut](assets/default_email_template_metadata_new.png)
 
-Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle d’e-mail et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification par e-mail est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
+Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle d’e-mail et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification par e-mail est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -184,8 +182,8 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
    Si vous ne spécifiez pas le titre, le champ Métadonnées personnalisées affiche le chemin d’accès complet au fichier ECMAScript. Pour définir un titre significatif pour le script, procédez comme suit :
 
-   1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
-   1. Saisissez mix:title dans la boîte de dialogue Modifier les mixins, puis cliquez sur **+**.
+   1. Développez le nœud du script, cliquez avec le bouton droit sur le nœud **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
+   1. Saisissez mix:title dans la boîte de dialogue Modifier les mixins , puis cliquez sur **+**.
    1. Ajoutez une propriété avec les valeurs suivantes.
 
       | Nom | jcr:title |
@@ -249,4 +247,4 @@ Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers jar [SD
 
 1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser le gestionnaire de modules AEM pour importer le bundle dans le serveur AEM Forms.
 
-Une fois le bundle importé, vous pouvez sélectionner les métadonnées dans l’étape Affecter une tâche et les utiliser dans un modèle de courrier électronique.
+Une fois le bundle importé, vous pouvez sélectionner les métadonnées dans l’étape Affecter une tâche et les utiliser dans un modèle d’e-mail.

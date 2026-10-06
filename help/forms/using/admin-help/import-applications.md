@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '852'
+workflow-type: tm+mt
+source-wordcount: '855'
 ht-degree: 100%
-
 ---
-
 # Importer et gérer des applications{#import-and-manage-applications}
 
 Dans AEM Forms, une *application* est un conteneur destiné à stocker les ressources requises pour la mise en œuvre d’une solution AEM Forms. Les conceptions de formulaire, les fragments de formulaire, les images, les processus, les fichiers DDX, les guides de formulaire, les pages de HTML et les fichiers SWF constituent des exemples de ressources. Pendant la phase de développement d’un projet, les utilisateurs et utilisatrices de Workbench peuvent déployer des applications directement à partir de la vue Applications de Workbench. Une fois déployées, ces applications s’affichent dans la console d’administration, dans l’onglet Applications de la page Gestion des applications.

@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
-workflow-type: ht
-source-wordcount: '1767'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 95%
 ---
-
 # Modélisation des données - Modèle de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Source {#source}
@@ -46,7 +44,7 @@ J’aimerais commencer à combler ce vide en exprimant mes opinions sur la mani�
 
 Je recommande de ne pas vous soucier d’une structure de données déclarée au sens ERD. Dans un premier temps.
 
-Apprenez à aimer nt:unstructured (et ses amis) dans le développement.
+Apprenez à aimer nt:unstructured (&amp; amis) en développement.
 
 Ma conclusion : la structure coûte cher et il est souvent totalement inutile de déclarer explicitement la structure au stockage sous-jacent.
 
@@ -173,11 +171,11 @@ Je pense qu’il existe des cas d’utilisation dans lesquels un système ne peu
 
 Si un modèle de contenu expose quelque chose qui, même de loin, ressemble à un fichier ou un dossier, j’essaie d’utiliser (ou de développer à partir de) `nt:file`, `nt:folder` et `nt:resource`.
 
-D’après mon expérience, de nombreuses applications génériques permettent une interaction implicite avec nt:folder et nt:files et savent comment gérer et afficher ces événements s’ils sont enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers telles que CIFS ou WebDAV reposant sur JCR devient implicite.
+Selon mon expérience, de nombreuses applications génériques permettent une interaction avec nt:folder et nt:files implicitement et savent comment gérer et afficher ces événements s’ils sont enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers telles que CIFS ou WebDAV reposant sur JCR devient implicite.
 
-Je pense qu’il est judicieux d’appliquer la méthode suivante : si vous devez stocker le nom de fichier et le type MIME, `nt:file`/`nt:resource` convient parfaitement. Si vous pouvez avoir plusieurs « fichiers », nt:folder constitue l’emplacement de stockage idéal.
+Je pense qu’il est judicieux d’appliquer la méthode suivante : si vous devez stocker le nom de fichier et le type MIME, `nt:file`/`nt:resource` convient parfaitement. Si vous pouvez avoir plusieurs « fichiers » et nt:folder est un bon endroit pour les stocker.
 
-Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur ou autrice », par exemple), étendez `nt:resource` et non `nt:file`. J’étends rarement un nt:file, mais souvent un `nt:resource`.
+Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur ou autrice », par exemple), étendez `nt:resource` et non `nt:file`. J&#39;étends rarement des nt:file et souvent des `nt:resource`.
 
 #### Exemple {#example-6}
 
@@ -209,7 +207,7 @@ Il est vrai que certains nœuds ont besoin d’une identification stable tout au
 
 Gardez également à l’esprit que les éléments peuvent être identifiés par chemin. Et, même si les « liens symboliques » ont bien plus de sens pour la plupart des utilisateurs et utilisatrices que les liens physiques dans un système de fichiers UNIX®, un chemin a du sens pour la plupart des applications lorsqu’il fait référence à un nœud cible.
 
-Plus important encore : **mix**:referenceable signifie qu’il peut être appliqué à un nœud au moment où il est vraiment nécessaire de le référencer.
+Plus important encore, il s’agit de **mix**:referenceable ce qui signifie qu’il peut être appliqué à un nœud au moment où vous devez le référencer.
 
 Ainsi, ce n’est pas parce que vous aimeriez pouvoir potentiellement référencer un nœud de type « Document » que votre type de nœud « Document » doit s’étendre de `mix:referenceable` de façon statique. En effet, il peut être ajouté dynamiquement à n’importe quelle instance du « Document ».
 

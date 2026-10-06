@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '941'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 97%
 ---
-
 # Ajouter des domaines {#adding-domains}
 
 >[!NOTE]
@@ -27,7 +25,7 @@ ht-degree: 100%
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise.
 1. Dans la zone ID, saisissez un identifiant unique pour le domaine et dans la zone Nom, saisissez un nom descriptif pour le domaine. (Voir [Remarques importantes concernant les noms et les ID de domaine](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Spécifiez s’il convient ou non d’activer le verrouillage des comptes. (Voir [Configuration des paramètres de verrouillage de compte](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Par défaut, l’option Activer le verrouillage de compte est sélectionnée.
+1. Spécifiez s’il convient ou non d’activer le verrouillage des comptes. (Voir [Configurer les paramètres de verrouillage des comptes](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Par défaut, Activer le verrouillage de compte est sélectionné.
 1. Cliquez sur Ajouter une authentification puis, dans la liste Fournisseur d’authentification, sélectionnez un fournisseur, selon le mécanisme d’authentification utilisé par votre entreprise. Les valeurs possibles sont LDAP, Kerberos, SAML ou un fournisseur d’authentification personnalisé.
 
    Si vous sélectionnez LDAP, vous pouvez utiliser le serveur LDAP spécifié dans la configuration de l’annuaire, ou vous pouvez choisir un serveur LDAP différent à utiliser pour l’authentification. Si vous choisissez un serveur différent, les utilisateurs doivent exister sur les deux serveurs LDAP.
@@ -43,7 +41,7 @@ Après avoir créé un domaine d’entreprise, synchronisez manuellement l’ann
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine local.
 1. Dans la zone ID, saisissez un identifiant unique pour le domaine et, dans la zone Nom, saisissez un nom descriptif pour le domaine. (Voir [Remarques importantes concernant les noms et les ID de domaine](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Spécifiez s’il convient d’activer le verrouillage des comptes, puis cliquez sur OK. (Voir [Configuration des paramètres de verrouillage de compte](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Par défaut, l’option Activer le verrouillage de compte est sélectionnée.
+1. Spécifiez s’il convient d’activer le verrouillage des comptes, puis cliquez sur OK. (Voir [Configurer les paramètres de verrouillage des comptes](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Par défaut, Activer le verrouillage de compte est sélectionné.
 
 ## Ajout d’un domaine hybride {#add-a-hybrid-domain}
 

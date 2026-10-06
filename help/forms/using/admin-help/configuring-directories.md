@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
-workflow-type: ht
-source-wordcount: '3241'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '3263'
+ht-degree: 99%
 ---
-
 
 # Configuration des annuaires {#configuring-directories}
 
@@ -31,25 +29,25 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 >
 > Vérifiez que l’utilisateur ou l’utilisatrice dispose de droits d’administration pour accéder à la console d’administration.
 
-1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console d’administration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Dans la zone Nom du profil, saisissez un nom permettant de distinguer cet annuaire, puis cliquez sur Suivant.
 1. Configurez les paramètres du serveur d’annuaire. (Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).)
-1. Cliquez sur Tester pour vérifier qu’il est possible d’établir une connexion avec le serveur LDAP. Si le test échoue, consultez l’exception dans le fichier journal du serveur d’applications pour déterminer la cause initiale de l’échec. Cliquez sur Fermer, puis sur Suivant.
+1. Cliquez sur Tester pour vérifier qu’il est possible d’établir une connexion avec le serveur LDAP. Si le test échoue, consultez l’exception dans le fichier journal du serveur d’applications pour déterminer la cause profonde de l’échec. Cliquez sur Fermer, puis sur Suivant.
 1. Sélectionnez Paramètres utilisateur et configurez les paramètres selon les besoins. (Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).)
 1. Pour vérifier que le nom distinctif de base et les autres attributs configurés collectent le lot correct d’utilisateurs et d’utilisatrices, cliquez sur Tester. LDAP tente de récupérer les 200 premiers enregistrements à l’aide des paramètres fournis (nom distinctif de base, filtre de recherche et tous les attributs).
 
-   Si des utilisateurs et utilisatrices sont renvoyés, les résultats affichent les valeurs affectées à chaque champ conformément au jeu d’attributs. Si le test échoue en raison d’un nom de serveur non existant, d’informations d’identification erronées ou d’attributs incorrects, le message d’erreur suivant apparaît : « Les critères de recherche spécifiés ne renvoient aucun résultat. ». Pour déterminer la cause initiale de l’échec, consultez l’exception dans le fichier journal du serveur d’applications. Cliquez sur Fermer, puis sur Suivant.
+   Si des utilisateurs et utilisatrices sont renvoyés, les résultats affichent les valeurs affectées à chaque champ conformément au jeu d’attributs. Si le test échoue en raison d’un nom de serveur non existant, d’informations d’identification erronées ou d’attributs incorrects, le message d’erreur suivant apparaît : « Le critère de recherche spécifié ne renvoie aucun résultat ». Pour déterminer la cause profonde de l’échec, consultez l’exception dans le fichier journal du serveur d’applications. Cliquez sur Fermer, puis sur Suivant.
 
 1. Sélectionnez Paramètres de groupe et procédez à la configuration requise. (Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).)
 1. Cliquez sur Tester pour vérifier que le nom distinctif de base et que les autres attributs configurés collectent le lot de groupes correct. Si des groupes sont renvoyés, les résultats affichent les valeurs affectées à chaque champ conformément au jeu d’attributs. Cliquez sur Fermer.
 
-### Ajout d’une interface SPI personnalisée {#add-a-custom-spi}
+### Ajouter une interface SPI personnalisée {#add-a-custom-spi}
 
-Pour plus d’informations sur la création d’une interface SPI personnalisée, consultez la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr). Pour rendre une interface SPI personnalisée déployée récemment disponible pour une association au domaine, redémarrez le serveur.
+Pour plus d’informations sur la création d’une interface SPI personnalisée, consultez la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr). Pour rendre une interface SPI personnalisée récemment déployée disponible pour l’associer au domaine, redémarrez le serveur.
 
-1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Saisissez un nom dans la zone Nom du profil, sélectionnez Fournisseur SPI personnalisé, puis cliquez sur Suivant.
@@ -61,13 +59,13 @@ Pour plus d’informations sur la création d’une interface SPI personnalisée
 Vous pouvez modifier les détails d’un annuaire que vous avez précédemment configuré.
 
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
-1. Cliquez sur le domaine approprié dans la liste, puis, dans la page qui apparaît, sélectionnez l’annuaire approprié dans la liste.
+1. Cliquez sur le domaine approprié dans la liste, puis, sur la page qui apparaît, sélectionnez l’annuaire approprié dans la liste.
 1. Configurez les paramètres relatifs à l’annuaire, à l’utilisateur ou à l’utilisatrice et au groupe selon les besoins. (Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).)
 1. Cliquez sur OK.
 
 ## Suppression d’un annuaire {#delete-a-directory}
 
-Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, l’ensemble des utilisateurs, des utilisatrices et des groupes de cet annuaire sont marqués comme obsolètes dans la base de données. Ils ne sont renvoyés dans aucune recherche effectuée à partir d’Administration Console.
+Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, l’ensemble des utilisateurs, des utilisatrices et des groupes de cet annuaire est marqué comme obsolète dans la base de données. Ils ne sont renvoyés dans aucune recherche effectuée à partir de la console d’administration.
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, l�
 1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le domaine approprié dans la liste.
 1. Cochez la case correspondant à l’annuaire approprié, puis cliquez sur Supprimer.
-1. Cliquez sur OK dans la page de confirmation qui s’affiche, puis de nouveau sur OK.
+1. Cliquez sur OK sur la page de confirmation qui s’affiche, puis de nouveau sur OK.
 
 ## Paramètres d’annuaire {#directory-settings}
 
@@ -92,7 +90,7 @@ Lorsque vous ajoutez un annuaire à un domaine, spécifiez les paramètres d’a
 
 **Anonyme :** aucun nom d’utilisateur ni mot de passe requis. Une personne anonyme peut ne récupérer qu’une quantité limitée de données. Cette option peut se révéler utile pour le test initial.
 
-**Utilisateur :** authentification requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte d’utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, saisissez le mot de passe associé. Ces paramètres sont requis lorsque vous sélectionnez Utilisateur comme option de liaison.
+**Utilisateur :** authentification requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (DN) du compte d’utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, saisissez le mot de passe associé. Ces paramètres sont requis lorsque vous sélectionnez Utilisateur comme option de liaison.
 
 **Nom :** nom pouvant être utilisé pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé. Pour Active Directory 2003, spécifiez `[domain name]\[userid]`. Pour Sun™ One, eDirectory ou IBM Tivoli Directory Server, spécifiez le nom qualifié complet de l’utilisateur, comme uid=lcuser,ou=it,o=company.com.
 
@@ -110,11 +108,11 @@ Lorsque vous ajoutez un annuaire à un domaine, spécifiez les paramètres d’a
 
 ### Paramètres utilisateur {#user-settings}
 
-**Identifiant unique :** (obligatoire) attribut unique et constant utilisé pour identifier les utilisateurs. Utilisez un attribut non ND comme identificateur unique, car le ND d’une personne peut changer si cette dernière évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est objectGUID pour Active Directory 2003, nsuniqueID pour Sun™ One et guid pour eDirectory.
+**Identifiant unique :** (obligatoire) attribut unique et constant utilisé pour identifier les utilisateurs. Utilisez un attribut non DN comme identifiant unique, car le DN d’une personne peut changer si cette dernière évolue au sein de l’entreprise. Ce paramètre dépend du serveur d’annuaire. La valeur est objectGUID pour Active Directory 2003, nsuniqueID pour Sun™ One et guid pour eDirectory.
 
 >[!NOTE]
 >
->Vérifiez que vous spécifiez un attribut unique au sein de votre organisation. La saisie d’une valeur incorrecte peut en effet entraîner de graves dysfonctionnements au niveau du système.
+>Assurez-vous de saisir un attribut dont l’unicité est garantie dans votre organisation. La saisie d’une valeur incorrecte peut en effet entraîner de graves dysfonctionnements au niveau du système.
 
 **ND de base :** défini comme point de départ pour la synchronisation des utilisateurs et des groupes à partir de la hiérarchie LDAP. Il est préférable de spécifier un DN de base au niveau le plus bas de la hiérarchie qui englobe l’ensemble des utilisateurs, des utilisatrices et des groupes devant être synchronisés pour les services.
 
@@ -122,11 +120,11 @@ Si vous avez sélectionné l’option Activer la référence dans les paramètre
 
 >[!NOTE]
 >
->N’incluez pas le ND de l’utilisateur ou de l’utilisatrice dans ce paramètre. Pour synchroniser un utilisateur ou une utilisatrice spécifique, utilisez le paramètre Filtre de recherche.
+>N’incluez pas le DN de l’utilisateur ou de l’utilisatrice dans ce paramètre. Pour synchroniser un utilisateur ou une utilisatrice spécifique, utilisez le paramètre Filtre de recherche.
 
-Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server peuvent requérir un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server peuvent requérir un ND de base vide. Pour spécifier un DN de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory.
+**Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche ou RFC 2254.) Pour plus d’informations sur le schéma Microsoft AD, voir Schéma Active Directory .
 
 **Description :** attribut de schéma pour la description de l’utilisateur.
 
@@ -140,7 +138,7 @@ Bien que le paramètre ND de base soit obligatoire dans la console d’administr
 
 **Initiales :** attribut de schéma pour les initiales de l’utilisateur ou de l’utilisatrice.
 
-**Calendrier professionnel :** permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé du calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs et utilisatrices en fonction du domaine utilisé (domaine d’entreprise, local ou hybride). Voir Configuration des calendriers professionnels. 
+**Calendrier professionnel :** permet d’associer un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé du calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. La manière dont vous attribuez les clés de calendrier professionnel aux utilisateurs et utilisatrices dépend du type de domaine utilisé (domaine d’entreprise, local ou hybride). (Voir Configuration des calendriers professionnels.)
 
 Si vous utilisez un domaine d’entreprise, vous pouvez associer le paramètre Calendrier professionnel à un champ du répertoire LDAP. Par exemple, si chaque personne enregistrée dans votre répertoire dispose d’un champ *pays* et que vous souhaitez affecter des calendriers professionnels en fonction du pays dans lequel la personne se trouve, spécifiez le nom du champ *pays* en tant que valeur du paramètre Calendrier professionnel. Vous pouvez ensuite associer les clés de calendrier professionnel (valeurs définies pour le champ *pays* dans le répertoire LDAP) aux calendriers professionnels dans Forms Workflow.
 
@@ -168,11 +166,11 @@ L’espace utilisé pour afficher le nom de la clé de calendrier professionnel 
 >
 >Pour activer le contrôle VLV, configurez Sun One. Voir [Configurer User Management pour utiliser Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut (UID, par exemple) spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
+**Champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut (uid, par exemple) spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
 
 ### Paramètres du groupe {#group-settings}
 
-**Identifiant unique :** (obligatoire) attribut unique et constant utilisé pour identifier les groupes. Utilisez un attribut non ND comme identifiant unique. Ce paramètre dépend du serveur d’annuaire. La valeur est objectGUID pour Active Directory 2003, nsuniqueID pour Sun One et guid pour eDirectory.
+**Identifiant unique :** (obligatoire) attribut unique et constant utilisé pour identifier les groupes. Utilisez un attribut non-DN comme identifiant unique. Ce paramètre dépend du serveur d’annuaire. La valeur est objectGUID pour Active Directory 2003, nsuniqueID pour Sun One et guid pour eDirectory.
 
 >[!NOTE]
 >
@@ -180,7 +178,7 @@ L’espace utilisé pour afficher le nom de la clé de calendrier professionnel 
 
 **ND de base :** (obligatoire) identifiant de base du répertoire.
 
-Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server requièrent un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+Bien que le paramètre ND de base soit obligatoire dans la console d’administration, certains serveurs d’annuaire tels que IBM Domino Enterprise Server requièrent un ND de base vide. Pour spécifier un ND de base vide, exportez le fichier config.xml, modifiez le paramètre dans le fichier config.xml, puis réimportez-le. (Voir [Import et export du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
 **Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé au groupe. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs.
 
@@ -190,11 +188,11 @@ Bien que le paramètre ND de base soit obligatoire dans la console d’administr
 
 **ND de membre :** (obligatoire) attribut de schéma pour le nom distinctif des membres d’un groupe.
 
-**Identifiant unique de membre :** identifiant unique d’un utilisateur ou d’un groupe qui est membre du groupe sélectionné. La valeur de ce paramètre dépend du serveur d’annuaire. La valeur est objectSID pour Active Directory 2003, nsuniqueID pour Sun One et guid pour eDirectory.
+**Identifiant unique de membre :** identifiant unique d’un utilisateur ou d’un groupe qui est membre du groupe sélectionné. La valeur de ce paramètre dépend du serveur d’annuaire. La valeur est objectSID pour AD2003, nsuniqueID pour Sun One et guid pour eDirectory.
 
-Si un attribut non ND est spécifié pour l’option ND de membre, User Management utilise l’identifiant unique de membre pour effectuer une requête LDAP en vue de collecter le ND de l’utilisateur ou de l’utilisatrice, car il correspond à une valeur d’identifiant unique.
+Si un attribut non-DN est spécifié pour l’option DN de membre, User Management utilise l’identifiant unique de membre pour effectuer une requête LDAP en vue de collecter le DN de l’utilisateur ou de l’utilisatrice, car il correspond à une valeur d’identifiant unique.
 
-Si le ND est spécifié comme identifiant unique, il n’est pas nécessaire de configurer l’identifiant unique du membre.
+Si le DN est spécifié comme identifiant unique, il n’est pas nécessaire de configurer l’identifiant unique du membre.
 
 **Organisation :** attribut de schéma pour le nom de la société à laquelle appartient le groupe.
 
@@ -210,11 +208,11 @@ Si le ND est spécifié comme identifiant unique, il n’est pas nécessaire de 
 >
 >Pour activer le contrôle VLV, configurez Sun One. Voir [Configurer User Management pour utiliser Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Nom de champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
+**Nom du champ de tri :** si vous avez sélectionné Activer le contrôle VLV (Virtual List View), indiquez le nom de l’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
 
 >[!NOTE]
 >
->cliquez sur Tester pour vérifier que les paramètres de l’utilisateur et du groupe sont collectés en fonction du ND de base et des critères de recherche.
+>Cliquez sur Tester pour vérifier que les paramètres de l’utilisateur ou de l’utilisatrice et du groupe sont collectés en fonction du DN de base et des critères de recherche.
 
 Si des utilisateurs, des utilisatrices et des groupes sont renvoyés, les résultats affichent les valeurs affectées à chaque champ conformément au jeu d’attributs.
 
@@ -226,7 +224,7 @@ Si des utilisateurs, des utilisatrices et des groupes sont renvoyés, les résul
 
 La synchronisation des annuaires est une exigence importante de User Management. Les utilisateurs, les utilisatrices et les groupes sont synchronisés d’un annuaire d’entreprise vers la base de données d’AEM Forms pour attribuer des rôles et des autorisations. Le nombre d’utilisateurs et d’utilisatrices varie de 100 à plus de 100 000 en fonction des exigences et cela pose un véritable défi technique lorsqu’il s’agit de synchroniser les données efficacement.
 
-Le protocole LDAP fournit un mécanisme destiné à interroger les ensembles de données volumineux. Ce mécanisme utilise une liste paginée et des contrôles de demande. Si vous utilisez Microsoft Active Directory, la synchronisation entre le protocole LDAP et la base de données AEM Forms fait appel à PagedResultsControl pour récupérer les données dans des lots de taille particulière. Le serveur d’annuaire Sun ONE ne prend pas en charge ce contrôle. Pour terminer une requête paginée sur le serveur d’annuaire Sun ONE, veuillez utiliser le contrôle VLV (Virtual List View). Ce contrôle implique à la fois une configuration des annuaires côté serveur et une mise en œuvre côté client.
+Le protocole LDAP fournit un mécanisme destiné à interroger les ensembles de données volumineux. Ce mécanisme utilise une liste paginée et des contrôles de demande. Si vous utilisez Microsoft Active Directory, la synchronisation entre le protocole LDAP et la base de données AEM Forms fait appel à PagedResultsControl pour récupérer les données par lots d’une taille donnée. Le serveur d’annuaire Sun ONE ne prend pas en charge ce contrôle. Pour terminer une requête paginée sur le serveur d’annuaire Sun ONE, utilisez le contrôle VLV (Virtual List View). Ce contrôle implique à la fois une configuration des annuaires côté serveur et une mise en œuvre côté client.
 
 >[!NOTE]
 >
@@ -236,7 +234,7 @@ Le protocole LDAP fournit un mécanisme destiné à interroger les ensembles de 
 1. Utilisez la console d’administration Sun ONE ou un script de ligne de commande pour créer les entrées VLV LDAP pour les utilisateurs, les utilisatrices et les groupes. Si vous utilisez un script de ligne de commande, vous pouvez utiliser les fichiers LDIF utilisateurs et groupes fournis à titre d’exemple. (Voir [Configuration du serveur d’annuaire Sun ONE pour VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Arrêtez le serveur et créez l’index requis. Voir [Création de l’index du serveur d’annuaire pour VLV](configuring-directories.md#create-the-directory-server-index-for-vlv).
 
-### Configuration du serveur d’annuaire Sun ONE pour VLV {#configuring-the-sun-one-directory-server-for-vlv}
+### Configurer le serveur d’annuaire Sun ONE pour VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
 La création d’un contrôle VLV exige une paire d’entrées intégrant les classes d’objet `vlvSearch` et `vlvIndex`. L’entrée vlvSearch inclut une base de recherche et l’attribut `vlvFilter` qui définit la classe d’objet contenant les attributs à trier. La classe d’objet `vlvIndex` inclut l’attribut `vlvSort` qui spécifie un ou plusieurs attributs à trier et l’ordre dans lequel les trier. (Un signe moins (-) indique l’ordre alphabétique inverse). L’utilisation de VLV avec AEM Forms nécessite des entrées distinctes pour les utilisateurs, les utilisatrices et les groupes.
 
@@ -289,7 +287,7 @@ Voici un exemple de script LDIF pour une entrée VLV pour les utilisateurs et 
 
    `D:\tools\ldap\sun\shared\bin> -v -a -h localhost -p 55850 -D "uid=admin,ou=administrators,ou=topologymanagement,o=netscaperoot" -w "admin" -f "D:\tools\ldap\data\vlv feature\users.ldif"`
 
-### Création de l’index de serveur d’annuaire pour VLV {#create-the-directory-server-index-for-vlv}
+### Créer l’index de serveur d’annuaire pour VLV {#create-the-directory-server-index-for-vlv}
 
 Lorsque vous avez configuré les paramètres d’annuaire et créé les entrées VLV LDAP pour les utilisateurs, les utilisatrices et les groupes, arrêtez le serveur et créez l’index requis.
 
@@ -317,7 +315,7 @@ Lorsque vous avez configuré les paramètres d’annuaire et créé les entrées
 
    *sun one server directory* `\shared\bin>ldapsearch -h`*hostname* `-p`*port no* `-s base -b "" objectclass=*`
 
-   Une sortie du type de celle des données fournies à titre d’exemple est générée :
+   Une sortie telle que les données d’exemple suivantes est générée :
 
    ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*

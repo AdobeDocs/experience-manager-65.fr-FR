@@ -11,11 +11,9 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '306'
 ht-degree: 100%
-
 ---
-
 # Configurer le mot de passe d’administration sur l’installation{#configure-the-admin-password-on-installation}
 
 ## Vue d’ensemble {#overview}
@@ -46,7 +44,7 @@ Une fois l’instance exécutée à partir de la ligne de commande, vous avez la
 
 >[!NOTE]
 >
->L’invite de modification du mot de passe d’administration s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
+>Le prompt de modification du mot de passe d’administration s’affiche uniquement lors de l’installation d’une nouvelle instance AEM.
 
 ## Utiliser l’indicateur -nointeractive {#using-the-nointeractive-flag}
 

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
-
+source-wordcount: '792'
+ht-degree: 98%
 ---
-
 # Sauvegarder et récupérer le référentiel EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
 Cette section décrit les tâches requises pour sauvegarder et récupérer le référentiel EMC Documentum configuré pour votre environnement AEM Forms.
@@ -45,7 +43,7 @@ Vous avez besoin des modules EMC NetWorker suivants :
 * Module NetWorker pour le type de base de données utilisé par votre serveur de contenu
 * Module NetWorker pour Documentum
 
-## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération  {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## Préparation d’EMC Document Content Server pour la sauvegarde et la récupération {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 Cette section décrit l’installation et la configuration du logiciel EMC NetWorker sur le serveur de contenu.
 
@@ -193,7 +191,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
    * Ouvrez une invite de commande, puis modifiez la valeur sur `[NetWorker_root]\Legato\nsr\bin`.
    * Exécutez la commande suivante : `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;mot de passe>*
 
-1. Créez les fichiers de commandes exécutables (.bat) utilisés pour sauvegarder la base de données. (Voir la documentation sur NetWorker.) Définissez les fichiers de commandes en fonction de votre installation.
+1. Créez les fichiers de commandes exécutables (.bat) utilisés pour sauvegarder la base de données. (Voir la documentation de NetWorker.) Définissez les détails dans les fichiers de commandes en fonction de votre installation.
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
