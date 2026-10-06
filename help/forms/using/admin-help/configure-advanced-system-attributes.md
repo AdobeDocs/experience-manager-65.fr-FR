@@ -13,9 +13,7 @@ source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
-
 ---
-
 # Configurer les attributs système avancés {#configure-advanced-system-attributes}
 
 Utilisez la page Configurer les attributs système avancés pour modifier certains paramètres du fichier de configuration sans qu’il soit nécessaire de l’exporter, de le modifier et de l’importer. (Voir [Importation et exportation du fichier de configuration](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
@@ -27,7 +25,7 @@ Utilisez la page Configurer les attributs système avancés pour modifier certai
 
    >[!NOTE]
    >
-   >Vous ne devez pas définir un délai d’attente de session inférieur à 10 minutes, sinon le système risque de ne pas se comporter correctement. Il est recommandé de choisir une valeur comprise entre 10 et 120 (minutes).
+   >Vous ne devez pas définir un délai d’expiration de session inférieur à 10 minutes, sinon le système risque de ne pas se comporter correctement. Il est recommandé de choisir une valeur comprise entre 10 et 120 (minutes).
 
    **Seuil d’identification (en secondes) :** cette valeur indique une durée de mise en mémoire pour compenser les retards dus aux différences de temps système entre le serveur d’applications AEM forms d’une grappe. AEM forms antidate la durée de connexion d’un utilisateur en fonction de la durée (en secondes) spécifiée dans cette propriété. Les valeurs valides sont comprises entre `0` et `3600`. La valeur par défaut est `60`. Ce paramètre met à jour la clé d’entrée `SAML/Producer/assertionThresholdInSeconds` dans le fichier de configuration.
 

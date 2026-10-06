@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '703'
 ht-degree: 100%
-
 ---
-
 # Rapports prédéfinis dans Process Reporting {#pre-defined-reports-in-process-reporting}
 
 ## Rapports prédéfinis dans Process Reporting {#pre-defined-reports-in-process-reporting-1}
@@ -76,7 +74,7 @@ Le rapport Durée du processus affiche le nombre d’instances d’un processus 
 
    Paramètres:
 
-   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
+   * **Sélectionnez un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
 
 1. Cliquez sur **Lancer** pour exécuter le rapport.
 
@@ -107,19 +105,19 @@ Le rapport Volume des workflows affiche le nombre d’instances en cours d’ex�
 
    Paramètres:
 
-   * **Sélectionnez un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
+   * **Sélectionner un processus** (*obligatoire*) : sélectionnez un processus AEM Forms.
 
    * **Démarré après** (*facultatif*) : sélectionnez une date. Filtre le rapport afin d’afficher les instances de processus démarrées après la date spécifiée.
 
    * **Démarré avant** (*facultatif*) : sélectionnez une date. Filtre le rapport pour afficher les instances de processus qui ont démarré avant la date spécifiée.
 
-1. Cliquez sur **Aller** pour exécuter le rapport.
+1. Cliquez sur **Lancer** pour exécuter le rapport.
 
-   Le rapport s’affiche dans l’onglet **Rapport** à droite de la fenêtre **Process Reporting**.
+   Le rapport s’affiche dans le panneau **Rapport** à droite de la fenêtre **Process Reporting**.
 
    ![workflow_volume_report](assets/workflow_volume_report.png)
 
-   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour y effectuer les opérations suivantes.
+   Utilisez les options situées dans le coin supérieur droit du panneau **Rapport** pour effectuer les opérations suivantes sur le rapport.
 
    * **Actualiser** : permet d’actualiser le rapport avec les dernières données stockées.
    * **Changer la couleur de la légende** : permet de sélectionner et de modifier la couleur de la légende du rapport.

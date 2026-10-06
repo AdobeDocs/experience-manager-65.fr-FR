@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '348'
 ht-degree: 100%
-
 ---
-
 # Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue de gestionnaire{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge sur les tâches des personnes subordonnées directes sont les suivantes :

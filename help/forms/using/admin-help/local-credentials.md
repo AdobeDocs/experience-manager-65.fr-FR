@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '533'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 98%
 ---
-
 # Gestion des informations d’identification locales {#managing-local-credentials}
 
 >[!NOTE]
@@ -33,7 +31,7 @@ Pour obtenir des informations et des instructions concernant les extensions Acro
 ## Importation d’informations d’identification {#import-a-credential}
 
 1. Dans la console d’administration, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
-1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
+1. Cliquez sur Importer. Sous Type de Trust Store, sélectionnez l’une des options suivantes :
 
    * **Informations d’identification de signature de document :** informations d’identification utilisées pour émettre une signature numérique sur un document.
    * **Informations d’identification des extensions Acrobat Reader DC :** certificat numérique spécifique des extensions Acrobat Reader DC qui permet l’activation de droits Adobe Reader dans les documents PDF générés.

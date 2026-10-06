@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 100%
-
 ---
-
 # Service Forms {#forms-service}
 
 ## Présentation {#overview}
@@ -29,7 +27,7 @@ Utilisez le service Forms pour effectuer les opérations suivantes :
 * Intégration de données de formulaire pour importer des données dans des formulaires PDF et les en extraire.
 * Rendu des formulaires basés sur des fragments.
 
-## Création de formulaires PDF {#creating-pdf-forms-nbsp}
+## Création de formulaires PDF  {#creating-pdf-forms-nbsp}
 
 Utilisez le service Forms pour créer des formulaires PDF pour la capture de données. En général, vous commencez avec un modèle AEM Forms Designer. Utilisez l’opération `renderPDFForm` (lien vers Javadoc) du service Forms pour convertir ce modèle en formulaire PDF.
 
@@ -37,7 +35,7 @@ Le premier paramètre de l’opération `renderPDFForm` est le nom du fichier de
 
 L’opération `renderPDFForm` peut également accepter des données XML. Les données XML sont fusionnées avec le modèle lors de la création d’un formulaire PDF. Le formulaire PDF généré contient ainsi les données spécifiées. Le deuxième paramètre pour l’opération `renderPDFForm` peut accepter un objet de document (Javadoc) qui contient des données XML.
 
-## Extraction de données des formulaires PDF  {#extracting-data-from-pdf-forms-nbsp}
+## Extraction de données des formulaires PDF  {#extracting-data-from-pdf-forms-nbsp}
 
 Utilisez l’opération `exportData` (Javadoc) du service Forms pour extraire les données XML d’un formulaire PDF. Cette opération accepte un document comme son premier paramètre. Vous pouvez exporter les données au format de document XDP ou de fichier XML. Si vous exportez des données au format XML, les données exportées suppriment l’enveloppe XDP et renvoient un fichier XML brut. Vous pouvez spécifier cet arrangement à l’aide du second paramètre.
 

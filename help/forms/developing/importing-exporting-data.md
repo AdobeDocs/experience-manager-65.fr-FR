@@ -1,21 +1,24 @@
 ---
 title: Importer et exporter des données
+
 description: Utilisez le service d’intégration des données de formulaire pour importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF à l’aide de l’API Java et de l’API Web Service.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 100%
-
+source-wordcount: '2784'
+ht-degree: 98%
 ---
-
 # Importer et exporter des données {#importing-and-exporting-data}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -156,12 +159,12 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencez un formulaire PDF.
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne spécifiant l’emplacement du formulaire PDF.
-   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez l’objet `java.io.FileInputStream` qui contient le formulaire PDF au constructeur.
+   * Créez un objet `com.adobe.idp.Document` qui stocke le formulaire PDF à l’aide du constructeur `com.adobe.idp.Document`. Transmettez au constructeur l’objet `java.io.FileInputStream` qui contient le formulaire PDF.
 
 1. Référencez une source de données XML.
 
@@ -180,7 +183,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Enregistrez le formulaire au format PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est « .PDF ».
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `importData`).
 
 **Voir également**
 
@@ -207,15 +210,15 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
-   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
+   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `FormDataIntegrationClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référencez un formulaire PDF.
 
@@ -326,7 +329,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Référencez un formulaire PDF.
 
@@ -340,7 +343,7 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 1. Enregistrez le formulaire au format PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est XML.
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` renvoyé par la méthode `exportData`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `exportData`).
 
 **Voir également**
 
@@ -365,15 +368,15 @@ Pour exporter les données de formulaire à l’aide de l’API Form Data Inte
 1. Créez un client de service d’intégration des données de formulaire.
 
    * Créez un objet `FormDataIntegrationClient` en utilisant son constructeur par défaut.
-   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
+   * Créez un objet `FormDataIntegrationClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Toutefois, spécifiez `?blob=mtom` pour utiliser MTOM.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `FormDataIntegrationClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référencez un formulaire PDF.
 

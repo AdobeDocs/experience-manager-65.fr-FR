@@ -1,6 +1,6 @@
 ---
-title: '« Base de données DB2® : exécution d’un processus hebdomadaire »'
-description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2®.
+title: 'DB2&reg ; base de données : exécution d''un processus hebdomadaire'
+description: Découvrez comment améliorer les performances de votre base de données AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 100%
-
+source-wordcount: '149'
+ht-degree: 85%
 ---
-
 # Base de données DB2® : exécution d’un processus hebdomadaire{#db-database-running-a-process-weekly}
 
 Si votre base de données DB2® AEM Forms commence à s’exécuter lentement, l’exécution hebdomadaire du processus suivant peut améliorer ses performances :

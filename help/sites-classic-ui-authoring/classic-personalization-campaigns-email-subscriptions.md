@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
-
+source-wordcount: '947'
+ht-degree: 96%
 ---
-
 # Gérer les abonnements{#managing-subscriptions}
 
 >[!NOTE]
@@ -57,7 +55,7 @@ Pour créer un formulaire d’inscription et le configurer pour les abonnements 
    >
    >Votre boîte de dialogue peut varier en fonction du fournisseur de services de messagerie.
 
-1. Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs et utilisatrices après avoir envoyé le formulaire (si rien n’est indiqué, le formulaire s’affiche de nouveau lors de l’envoi). Cliquez sur **OK**. Un **ID d&#39;e-mail** s’affiche dans le formulaire, ce qui vous permet de créer un formulaire dans lequel les utilisateurs et utilisatrices peuvent envoyer leur adresse e-mail pour s’abonner ou se désabonner d’une liste de publipostage.
+1. Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs après avoir envoyé le formulaire (si ce champ est laissé vide, le formulaire est réaffiché après envoi). Cliquez sur **OK**. Un **ID d&#39;e-mail** s’affiche dans le formulaire, ce qui vous permet de créer un formulaire dans lequel les utilisateurs et utilisatrices peuvent envoyer leur adresse e-mail pour s’abonner ou se désabonner d’une liste de publipostage.
 1. Ajoutez le composant de bouton **Envoyer** dans la section **Formulaire** du sidekick.
 
    Le formulaire est prêt. Publiez la page configurée dans les étapes ci-dessus avec la page de **remerciement** sur l’instance de publication. Une personne qui consulte la page peut remplir le formulaire et s’abonner à la liste fournie dans la configuration.
@@ -74,7 +72,7 @@ Pour que l’abonnement et le désabonnement au service de messagerie fonctionne
 1. Créez un package. Définissez le filtre en tant que `/etc/key`.
 1. Générez et téléchargez le package.
 1. Accédez au gestionnaire de modules sur l’instance de publication et chargez ce package.
-1. Accédez à la console de publication OSGi et redémarrez le lot nommé **Adobe Granite Crypto Support**.
+1. Accédez à la console de publication OSGi et redémarrez le bundle nommé **Adobe Granite Crypto Support**.
 
 ## Désabonner les utilisateurs et utilisatrices des listes {#unsubscribing-users-from-lists}
 
@@ -105,7 +103,7 @@ Pour configurer un message de répondeur automatique pour vos abonnés et abonn�
 1. **Sélectionnez une classification** (cette classification est utilisée pour envoyer le e-mail).
 1. Sélectionnez la page de **remerciement** (il s’agit de la page vers laquelle les utilisateurs sont redirigés après avoir envoyé le formulaire).
 
-   Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs après avoir envoyé le formulaire. (Si aucune donnée n’est saisie, le formulaire s’affiche à nouveau lors de l’envoi.) Cliquez sur **OK**.
+   Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs après avoir envoyé le formulaire. (Si rien n’est indiqué, le formulaire se réaffiche lors de l’envoi.) Cliquez sur **OK**.
 
 1. Exportez les clés de l’instance de création vers l’instance de publication.
 1. Ajoutez le composant de bouton **Envoyer** dans la section **Formulaire** du sidekick.

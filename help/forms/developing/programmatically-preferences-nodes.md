@@ -1,21 +1,24 @@
 ---
 title: Gestion par programmation des nœuds de préférences
+
 description: Utilisez l’API de service du Gestionnaire de Préférences (Java) pour gérer par programmation les nœuds de préférences.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '243'
 ht-degree: 100%
-
 ---
-
 # Gestion par programmation des nœuds de préférences {#programmatically-managing-the-preferencesnodes}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**

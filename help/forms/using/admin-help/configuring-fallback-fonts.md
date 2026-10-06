@@ -1,21 +1,21 @@
 ---
 title: Configuration des polices de réserve
 description: Découvrez comment configurer des polices de réserve pour AEM Forms. Vous pouvez utiliser le fichier FontManagerResources.properties pour mapper manuellement les polices par défaut aux polices de réserve.
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '271'
 ht-degree: 100%
-
 ---
-
 # Configuration des polices de réserve {#configuring-fallback-fonts}
 
 Cette section explique comment configurer manuellement le fichier FontManagerResources.properties pour associer les polices par défaut d’AEM forms à des polices de remplacement (ou de substitution), qui seront utilisées si les polices par défaut ne sont pas disponibles sur le serveur. Ce fichier de propriétés se trouve dans le fichier adobe-fontmanager.jar.

@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 100%
-
 ---
-
 # User Management Forms | Gestion des données utilisateur {#forms-user-management-handling-user-data}
 
 User Management est un composant d’AEM Forms JEE qui permet de créer, de gérer et d’autoriser les utilisateurs et utilisatrices d’AEM Forms à accéder à AEM Forms. User Management utilise des domaines en tant qu’annuaires pour obtenir des informations sur les utilisateurs et utilisatrices. Les types de domaine suivants sont pris en charge :
@@ -174,7 +172,7 @@ Les utilisateurs et les utilisatrices de Forms JEE disposent de leurs données 
 
 #### Accès aux données utilisateur {#access-user-data}
 
-Pour afficher un utilisateur créé dans le référentiel AEM, connectez-vous à `https://'[server]:[port]'/lc/useradmin` à l’aide des informations d’identification de l’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance d’auteur AEM. Ici, vous pouvez rechercher des utilisateurs et des utilisatrices avec leur nom d’utilisateur ou d’utilisatrice. Double-cliquez sur un utilisateur ou une utilisatrice pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur ou de l’utilisatrice. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
+Pour afficher un utilisateur créé dans le référentiel AEM, connectez-vous à `https://'[server]:[port]'/lc/useradmin` à l’aide des informations d’identification de l’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance de création AEM. Ici, vous pouvez rechercher des utilisateurs et des utilisatrices avec leur nom d’utilisateur ou d’utilisatrice. Double-cliquez sur un utilisateur ou une utilisatrice pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur ou de l’utilisatrice. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
 
 #### Suppression de données utilisateur {#delete-aem}
 

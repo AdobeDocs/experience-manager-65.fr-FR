@@ -1,21 +1,23 @@
 ---
 title: Création de la configuration d’exportation d’articles
+
 description: Consultez cette page pour en savoir plus sur l’exportation de contenu à partir de Adobe Experience Manager (AEM) pour le chargement vers AEM Mobile.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
+
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
 solution: Experience Manager
 feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '294'
 ht-degree: 0%
-
 ---
-
 # Création de la configuration d’exportation d’articles{#creating-article-export-configuration}
 
 {{ue-over-mobile}}

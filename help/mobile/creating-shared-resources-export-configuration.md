@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '293'
 ht-degree: 0%
-
 ---
-
 # Création d’une configuration d’exportation de ressources partagées{#creating-shared-resources-export-configuration}
 
 {{ue-over-mobile}}
@@ -32,7 +30,7 @@ La propriété ***dps-exportTemplate*** mentionnée dans le tableau ci-dessus, d
 
 Les ressources suivantes décrivent l’exportation de ressources partagées depuis AEM pour chargement vers AEM Mobile.
 
-Les ressources d’HTML partagées permettent aux articles de partager des ressources d’HTML qui seraient autrement dupliquées pour tous les articles. Elles peuvent inclure des icônes, des polices, des JavaScript et des feuilles css.
+Les ressources HTML partagées permettent aux articles de partager des ressources HTML qui seraient autrement dupliquées pour tous les articles. Ces ressources peuvent inclure des icônes, des polices, des JavaScript et des feuilles css.
 
 La configuration de la synchronisation de contenu disponible dans **&lt;dps-exportTemplate>/dps-HTMLResources>** doit être configurée pour exporter tout le contenu et l’article requis pour le rendu statique des propriétés sur l’appareil.
 

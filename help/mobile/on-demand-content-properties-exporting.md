@@ -1,28 +1,30 @@
 ---
 title: Utilisation des propriétés de contenu pour exporter du contenu
+
 description: La page suivante affiche les propriétés et les nœuds de l’application.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
+
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
-
 ---
-
 # Utilisation des propriétés de contenu pour exporter du contenu{#using-content-properties-to-export-content}
 
 {{ue-over-mobile}}
 
 Les applications sont représentées sous la forme *cq:Pages* dans AEM.
 
-Ils partagent les mêmes propriétés communes que celles de n’importe quel *cq:Page* en plus des autres affichées ci-dessous qui représentent les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que celles de n’importe quel *cq:Page* en plus des autres illustrées ci-dessous qui représentent des propriétés de prise en charge de l’intégration.
 
 ## Propriétés d’application {#app-properties}
 
@@ -48,7 +50,7 @@ Le tableau suivant présente **Propriétés et nœuds de l’application**.
   <tr>
    <td>dps-projectId</td>
    <td>Chaîne</td>
-   <td><p>ID/URI du projet Mobile On-Demand auquel cette application est liée.</p> <p>Cette association est configurée via la mosaïque Gérer la connexion lorsqu’un auteur sélectionne le projet dans une liste de projets disponibles pour le Cloud Service mobile à la demande associé.</p> </td>
+   <td><p>ID/URI du projet Mobile On-Demand auquel cette application est liée.</p> <p>Cette association est configurée via la mosaïque Gérer la connexion lorsqu’un auteur sélectionne le projet dans une liste de projets disponibles pour la Cloud Service Mobile On-Demand associée.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -63,12 +65,12 @@ Le tableau suivant présente **Propriétés et nœuds de l’application**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Date</td>
-   <td>Date du dernier chargement des ressources partagées d'AEM vers AEM Mobile.</td>
+   <td>Date du dernier chargement des ressources partagées depuis AEM vers AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>String:userid</td>
-   <td>Identifiant de l’utilisateur ayant effectué le dernier chargement de la demande de ressources partagées d’AEM vers AEM Mobile.</td>
+   <td>Identifiant de l'utilisateur qui a effectué le dernier chargement de la demande de ressources partagées depuis AEM vers AEM Mobile.</td>
   </tr>
   <tr>
    <td>page-dashboard-config</td>

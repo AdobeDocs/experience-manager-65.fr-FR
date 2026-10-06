@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 100%
-
+source-wordcount: '282'
+ht-degree: 94%
 ---
-
 # Configurer User Management pour un serveur LDAP compatible SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 Pour que la synchronisation fonctionne correctement sur LDAPS, les certificats LDAP émis par l’autorité de certification doivent être présents dans l’environnement d’exécution Java (JRE) du serveur d’applications. Importez le certificat dans le fichier cacerts de l’environnement JRE du serveur d’applications, fichier se trouvant généralement dans le répertoire *[JAVA_HOME]*/jre/lib/security/cacerts.
@@ -26,7 +24,7 @@ Pour que la synchronisation fonctionne correctement sur LDAPS, les certificats L
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. Lorsque le système vous y invite, saisissez le mot de passe. (Pour Java, le mot de passe par défaut est : `changeit`.) Une fois le certificat importé, un message vous confirme la réussite de l’opération.
+1. Lorsque le système vous y invite, saisissez le mot de passe. (Pour Java, le mot de passe par défaut est `changeit`.) Un message s’affiche indiquant que l’importation du certificat a réussi.
 1. Lorsque vous y êtes invité, saisissez`Yes` pour approuver le certificat.
 1. Activez SSL dans User Management et, lors de la configuration des paramètres d’annuaire, sélectionnez Oui pour l’option SSL puis modifiez la définition du port en conséquence. Le numéro de port par défaut est 636.
 

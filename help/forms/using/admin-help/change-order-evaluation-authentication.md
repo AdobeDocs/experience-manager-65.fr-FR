@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 100%
-
 ---
-
 # Modifier l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
 
 >[!NOTE]

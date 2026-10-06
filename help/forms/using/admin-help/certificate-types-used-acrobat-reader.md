@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 100%
-
+source-wordcount: '947'
+ht-degree: 96%
 ---
-
 # Types de certificats utilisés par les extensions d’Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 La visionneuse de certificats fournit les informations suivantes sur le certificat :
@@ -37,7 +35,7 @@ La chaîne comprend les éléments suivants :
 
 **Type de déploiement :** indique l’utilisation prévue du certificat, par exemple en mode Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
 
-**Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation que le certificat peut utiliser, par exemple V6.1. Il ne s’agit cependant pas de la version d’Acrobat ni des extensions Acrobat Reader DC.
+**Version des droits d’utilisation :** décrit la version de l’algorithme des droits d’utilisation que le certificat peut utiliser, par exemple V6.1. Cette version ne correspond pas à la version des extensions Acrobat ou Acrobat Reader DC.
 
 **Code de profil :** le code de profil est une description brève des propriétés complètes du certificat (par exemple, P8). Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
 
