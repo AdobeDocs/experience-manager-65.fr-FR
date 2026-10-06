@@ -1,10 +1,15 @@
 ---
 title: Configurer le planificateur de synchronisation
+
 description: Découvrez comment migrer et synchroniser des ressources, configurer le planificateur de synchronisation et utiliser des dossiers pour classer les ressources.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
+
 docset: aem65
+
 role: Admin,User
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 solution: Experience Manager, Experience Manager Forms
@@ -12,10 +17,8 @@ feature: Workbench,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
-
+ht-degree: 88%
 ---
-
 # Configurer le planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
 Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires ou des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
@@ -26,7 +29,7 @@ Effectuez les étapes suivantes pour modifier l’intervalle du planificateur de
 
 1. Connectez-vous à AEM Configuration Manager. L’URL de Configuration Manager est la suivante : `https://'[server]:[port]'/lc/system/console/configMgr`.
 
-1. Recherchez et ouvrez le lot **FormsManagerConfiguration**.
+1. Recherchez et ouvrez le bundle **FormsManagerConfiguration**.
 
 1. Choisissez une nouvelle valeur pour l’option de fréquence du **planificateur de synchronisation**.
 
@@ -52,7 +55,7 @@ Vous pouvez utiliser l’option **Synchroniser les ressources à partir du réf�
 
 Vous pouvez créer de nouvelles applications dans le concepteur de workflow (LiveCycle Workbench).
 
-Si une application que vous venez de créer et un dossier se trouvant sous /content/dam/formsanddocuments portent le même nom, une erreur « *Une ressource portant le même nom que l’application existe déjà au niveau racine.* » est consignée.
+Si une application que vous venez de créer et un dossier se trouvant sous /content/dam/formsanddocuments portent le même nom, une erreur « *Une ressource portant le même nom que cette application existe déjà au niveau racine.* » s’affiche. est consignée.
 
 Pour résoudre le conflit, renommez l’application puis synchronisez manuellement les actifs.
 
