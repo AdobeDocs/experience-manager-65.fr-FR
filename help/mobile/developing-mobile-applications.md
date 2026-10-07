@@ -31,7 +31,7 @@ AEM s’intègre au service de build Adobe PhoneGap (`https://build.phonegap.com
 
 **Adobe ContentSync** permet aux utilisateurs de télécharger facilement des mises à jour de page et de contenu par les airs sur leurs appareils sans avoir à réinstaller l’application ou à la télécharger depuis l’appStore, Google Play ou d’autres sources d’application.
 
-**** est entièrement intégré aux applications AEM et permet le suivi détaillé de la distribution, de la géolocalisation, des systèmes d’exploitation, des appareils, des flux de clics, du suivi iBeacon, etc.
+**&#x200B;**&#x200B;est entièrement intégré aux applications AEM et permet le suivi détaillé de la distribution, de la géolocalisation, des systèmes d’exploitation, des appareils, des flux de clics, du suivi iBeacon, etc.
 
 ## Création d’applications {#creating-apps}
 
