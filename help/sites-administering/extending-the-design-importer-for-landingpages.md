@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '3442'
-ht-degree: 100%
-
+workflow-type: tm+mt
+source-wordcount: '3524'
+ht-degree: 94%
 ---
-
 # Extension et configuration de l’importateur de conception pour les pages de destination{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 Cette section décrit la configuration et, si vous le souhaitez, l’extension de l’importateur de conception pour les pages de destination. L’utilisation de pages de destination après l’import est traitée dans [Pages de destination.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -41,7 +39,7 @@ Voici les étapes logiques pour que l’importateur de conception reconnaisse vo
 
 >[!CAUTION]
 >
->L’importateur de conception utilisé pour importer les pages de destination [a été abandonné avec AEM 6.5.](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>L’importateur de conception utilisé pour importer les pages de destination [a été abandonné avec AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 ## Préparer le code HTML pour l’import {#preparing-the-html-for-import}
 
@@ -114,7 +112,7 @@ La section suivante décrit la modification de votre fichier HTML de manière à
 
 Avant l’importation, veuillez noter les restrictions suivantes :
 
-### Tout attribut de classe ou d’id appliqué à la balise &lt;body> n’est pas conservé.  {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### Les attributs tels que class ou id appliqués à la balise &lt;body> ne sont pas conservés {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Si un attribut d’id ou de classe est appliqué à la balise body, par exemple `<body id="container">`, il n’est pas conservé après l’importation. La conception importée ne doit donc avoir aucune dépendance sur les attributs appliqués à la balise `<body>`.
 
@@ -322,11 +320,11 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 **Fonctionnalités prises en charge**
 
-* Champs de prospect prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
-* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur ou utilisatrice peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
+* Champs de lead prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, Genre, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
+* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
 * Mappez les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
-* Les champs qui ne sont pas mappés sur un formulaire de prospect le sont sur des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
-* L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
+* Les champs qui ne sont pas mappés à des composants de formulaire de prospect sont mappés à des composants cq:form (texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe).
+* L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de lead CTA).
 * La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
 
   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -335,7 +333,7 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 * Des contraintes (telles qu’« Obligatoire ») peuvent être fournies à partir de la configuration de modification de chaque composant.
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici, « firstName » est mappé sur le firstName du formulaire de prospect, etc., à l’exception des cases à cocher : ces deux cases à cocher sont mappées sur le composant déroulant cq:form.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici, « firstName » est mappé sur le prospect de firstName, etc., à l’exception des cases à cocher - ces deux cases à cocher sont mappées au composant de liste déroulante cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +417,11 @@ En plus de spécifier si les composants importés sont des composants AEM modifi
 
 ### Définition des propriétés de page en extrayant les métadonnées définies dans le HTML importé {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-Les métadonnées suivantes déclarées dans l’en-tête du HTML importé doivent être extraites et conservées par l’importateur de conception en tant que propriété « jcr:description » :
+Les métadonnées suivantes déclarées dans l’en-tête de l’HTML importée doivent être extraites et conservées par l’importateur de conception en tant que propriété « jcr :description » :
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-L’attribut Lang défini dans la balise HTML doit être extrait et conservé par l’importateur de conception en tant que propriété « jcr:language ».
+L’importateur de conception extrait et conserve l’attribut Lang défini dans la balise HTML en tant que propriété « jcr :language »
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -457,7 +455,7 @@ Le chemin d’accès dans le composant data-cq-component doit être le resourceT
 
 L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommandée avec les éléments marqués pour la conversion de composants lors de l’import.
 
-| E > F | un élément F immédiatement précédé par un élément E | [Combinateur enfant](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | un élément F enfant d’un élément E | [Combinateur enfant](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | un élément F qui est le fils d’un élément E | [Combinateur frère adjacent](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un élément F précédé d’un élément E | [Combinateur frère général](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
@@ -470,7 +468,7 @@ L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommand
 En effet, des éléments HTML supplémentaires tels que les balises &lt;div> sont ajoutés au fichier Html généré après l’import.
 
 * Les scripts reposant sur une structure similaire à ci-dessus ne sont pas non plus recommandés pour une utilisation avec des éléments marqués pour conversion en composants AEM.
-* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
+* Il n’est pas recommandé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=« &amp;ast;« >.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
@@ -494,7 +492,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
   <tr>
    <td>Importateur de conception de page de destination</td>
    <td>Extraire le filtre</td>
-   <td>Liste des expressions régulières à utiliser pour le filtrage des fichiers de l’extraction. <br />Les entrées zip correspondant à l’un des modèles spécifiés sont exclues de l’extraction.</td>
+   <td>Liste des expressions régulières à utiliser pour filtrer les fichiers de l’extraction. <br /> Les entrées zip correspondant à l’un des modèles spécifiés sont exclues de l’extraction</td>
   </tr>
   <tr>
    <td>Générateur de page de destination</td>
@@ -514,7 +512,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
   <tr>
    <td>Préprocesseur de saisie de page de destination</td>
    <td>Motif de recherche </td>
-   <td>Motif à rechercher, dans le contenu d’entrée de l’archive. Dans le cas de cette expression régulière, une correspondance est effectuée, ligne par ligne, avec le contenu de l’entrée. En cas de correspondance, le texte concerné est remplacé par le modèle de remplacement spécifié.<br /> <br /> Reportez-vous à la remarque ci-dessous concernant les limitations actuelles du préprocesseur de saisie de pages d’entrée.</td>
+   <td>Motif à rechercher, dans le contenu d’entrée de l’archive. Dans le cas de cette expression régulière, une correspondance est effectuée, ligne par ligne, avec le contenu de l’entrée. En cas de correspondance, le texte correspondant est remplacé par le modèle de remplacement spécifié.<br /> <br /> Consultez la remarque ci-dessous concernant les limites actuelles du préprocesseur d’entrée de page de destination.</td>
   </tr>
   <tr>
    <td> </td>
@@ -526,7 +524,7 @@ Le tableau ci-dessous décrit brièvement les propriétés :
 
 >[!NOTE]
 >
->**Limites actuelles du préprocesseur de saisie de page de destination :**
+>**Limitation actuelle du préprocesseur d’entrée de page de destination :**
 >Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés Felix, vous devez ajouter manuellement des barres obliques inversées pour utiliser les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, la regex est considérée comme non valide et ne remplacera pas l’ancienne.
 >
 >Par exemple, si la configuration par défaut est

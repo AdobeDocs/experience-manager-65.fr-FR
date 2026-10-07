@@ -12,18 +12,16 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 100%
-
+source-wordcount: '2564'
+ht-degree: 84%
 ---
-
 # Composants d’Adobe Campaign{#adobe-campaign-components}
 
 Lors de l’intégration à Adobe Campaign, des composants sont disponibles pour l’utilisation de newsletters et de formulaires. Tous deux sont décrits dans ce document.
 
 >[!CAUTION]
 >
->Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, en particulier son contenu et son style, les composants d’e-mail fournis prêts-à-l’emploi par AEM ne sont que rarement réutilisés par les clients car ils ont besoin d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants d’e-mail AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne contenu et style, les composants d’e-mail fournis prêts à l’emploi par AEM ne sont que rarement réutilisés, car il est nécessaire d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
 >Les composants d’e-mail peuvent être implémentés au niveau du projet. Les composants d’e-mail AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, n’utilisez pas ces composants obsolètes sur les projets.
 
@@ -62,7 +60,7 @@ Vous pouvez configurer les éléments suivants :
 Si vous souhaitez utiliser un autre nom que le titre de la page, saisissez-le ici.
 
 * **Niveau de titre (1, 2, 3, 4)**
-Niveau de titre d’après la catégorie de titre HTML 1-4.
+Niveau de titre basé sur les tailles de titre HTML 1 à 4.
 
 L’exemple ci-dessous présente le composant Titre (Campaign) affiché.
 
@@ -74,40 +72,40 @@ Le composant image (campagne) affiche une image et le texte qui l’accompagne s
 
 Vous pouvez charger une image, puis la modifier et la manipuler (par exemple, la recadrer, la faire pivoter ou y ajouter un lien/titre/texte).
 
-Vous pouvez charger une image, puis la modifier et la manipuler (par exemple, la recadrer, la faire pivoter ou y ajouter un lien/titre/texte). Vous pouvez faire glisser et déposer une image à partir de l’[Outil de recherche de contenu](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directement sur le composant ou sa boîte de dialogue d’édition. Vous pouvez également double-cliquer dans la zone centrale de la boîte de dialogue d’édition pour parcourir votre système de fichiers local et charger une image. Les deux onglets de la boîte de dialogue d’édition contrôlent également toutes les définitions, ainsi que la manipulation de l’image :
+Vous pouvez charger une image, puis la modifier et la manipuler (par exemple, la recadrer, la faire pivoter ou y ajouter un lien/titre/texte). Vous pouvez faire glisser et déposer une image à partir de l’[outil de recherche de contenu](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) directement sur le composant ou sa boîte de dialogue de modification. Vous pouvez également double-cliquer dans la zone centrale de la boîte de dialogue Modifier pour parcourir votre système de fichiers local et charger une image. Les deux onglets de la boîte de dialogue Modifier contrôlent également toutes les définitions, ainsi que la manipulation de l’image :
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
-* **Mapper**
-Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer l’image interactive (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
+* **Map**
+Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
 
 * **Recadrer**
-Sélectionnez cette option pour recadrer une image à l’aide de la souris.
+Sélectionnez Recadrer pour recadrer une image. Utilisez la souris pour effectuer le recadrage.
 
 * **Rotation**
-Pour faire pivoter une image, sélectionnez Rotation, à plusieurs reprises si nécessaire.
+Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
 
-* **Effacer**
-Permet de supprimer l’image actuelle.
+* **Clear**
+Supprimez l’image actuelle.
 
-* Barre de zoom (IU classique uniquement)
-Pour effectuer un zoom avant ou arrière sur l’image, utilisez le curseur situé sous l’image (au-dessus des boutons OK et Annuler).
+* Barre de zoom (classique uniquement)
+Pour effectuer un zoom arrière et avant sur l’image, utilisez le curseur situé en dessous de l’image (et au-dessus des boutons OK et Annuler).
 * **Titre**
 Titre de l’image.
 
 * **Texte de remplacement**
-Texte de remplacement à utiliser lors de la création de contenu accessible.
+Texte secondaire à utiliser lors de la création de contenu accessible.
 
 * **Lier à**
-Créez un lien vers les ressources ou d’autres pages de votre site Web.
+Créez un lien vers les ressources ou d’autres pages de votre site web.
 
 * **Description**
 Description de l’image.
 
 * **Taille**
-Permet de définir la hauteur et la largeur de l’image.
+Définit la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -134,8 +132,8 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 * **Info-bulle du lien**
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
-* **LinkType**
-Dans la liste déroulante, sélectionnez une **URL personnalisée** ou un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+* **TypeLien**
+Dans la liste déroulante, choisissez entre une **URL personnalisée** et un **document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
@@ -168,28 +166,28 @@ Le composant Texte et image (Campaign) permet d’ajouter un bloc de texte et un
 Comme pour les composants Texte et personnalisation (Campaign) et Image (Campaign), vous pouvez configurer :
 
 * **Texte**
-Permet de saisir du texte. Utilisez la barre d’outils pour modifier la mise en forme, créer des listes et ajouter des liens.
+Saisissez le texte. Utilisez la barre d’outils pour modifier la mise en forme, créer des listes et ajouter des liens.
 
 * **Image**
-Faites glisser une image à partir de l’Outil de recherche de contenu ou cliquez pour accéder à une image. Vous pouvez la recadrer ou la faire pivoter le cas échéant.
+Faites glisser une image à partir de l’outil de recherche de contenu ou cliquez pour accéder à une image. Recadrez ou faites pivoter selon les besoins.
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
-Permet de spécifier ce qui suit :
+Permet de spécifier les éléments suivants :
 
-   * **Titre**
-Titre du bloc ; il s’affiche lorsque l’utilisateur ou l’utilisatrice pointe dessus avec la souris.
+  * **Titre**
+    Titre du bloc de texte ; il s’affiche lorsque l’utilisateur pointe dessus avec la souris.
 
-   * **Texte de remplacement**
-Texte de remplacement à afficher lorsque l’image ne peut pas être affichée.
+  * **Texte de remplacement**
+    Texte secondaire à afficher si l’image ne peut pas être affichée.
 
-   * **Lier à**
-Créez un lien vers les ressources ou d’autres pages de votre site Web.
+  * **Lier à**
+    Créez un lien vers les ressources ou d’autres pages de votre site web.
 
-   * **Description**
-Description de l’image.
+  * **Description**
+    Description de l’image.
 
-   * **Taille**
-Permet de définir la hauteur et la largeur de l’image.
+  * **Taille**
+    Définit la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -289,20 +287,20 @@ Dans la plupart des composants, vous pouvez configurer les éléments suivants 
 Si vous souhaitez utiliser un autre nom que le nom de l’élément, saisissez-le ici.
 
 * **Masquer le titre**
-Cochez cette case si vous ne voulez pas afficher le titre.
+Cochez cette case si vous ne souhaitez pas afficher le titre.
 
 * **Description**
-Ajoutez une description dans ce champ pour donner des informations supplémentaires pour les utilisateurs.
+Ajoutez une description dans le champ pour fournir des informations supplémentaires pour les utilisateurs.
 
-* **N’afficher que la valeur**
+* **Afficher uniquement la valeur**
 Affiche uniquement la valeur, le cas échéant.
 
 #### Adobe Campaign {#adobe-campaign}
 
 Vous pouvez configurer les éléments suivants :
 
-* **Correspondance**
-Sélectionnez un champ de personnalisation Adobe Campaign, si cela est approprié.
+* **Mappage**
+Sélectionnez un champ de personnalisation Adobe Campaign, le cas échéant.
 
 * **Clé de réconciliation**
 Cochez cette case si ce champ fait partie de la clé de réconciliation.
@@ -315,7 +313,7 @@ Cochez cette case si ce champ fait partie de la clé de réconciliation.
 #### Style {#styling}
 
 * **CSS**
-Indiquez les classes CSS à utiliser pour ce composant.
+Saisissez les classes CSS à utiliser pour ce composant.
 
 ### Case à cocher (Campaign) {#checkbox-campaign}
 
@@ -384,7 +382,7 @@ Utilisez le champ numérique pour permettre aux personnes destinataires de saisi
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* Liste déroulante **Contraintes – Contrainte**
+* Liste déroulante **Contraintes - Contrainte**
 Vous pouvez sélectionner - **Aucune** ou **Numérique -** pour ajouter une contrainte de nombre ou aucune contrainte. Si vous sélectionnez Numérique, la réponse saisie par les utilisateurs dans le champ doit être numérique.
 
 * **Message de contrainte** - De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.

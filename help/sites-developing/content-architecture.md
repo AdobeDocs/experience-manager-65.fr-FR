@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
-
+source-wordcount: '425'
+ht-degree: 92%
 ---
-
 # Architecture de contenu{#content-architecture}
 
 ## Suivre le modèle de David {#follow-david-s-model}
@@ -46,7 +44,7 @@ Les servlets doivent être définis en fonction des types de ressource plutôt q
 
 ### Évitez de définir de nouveaux types de nœud {#avoid-defining-new-node-types}
 
-Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastructure. Il est, en outre, possible de répondre à la plupart des exigences en utilisant une propriété sling:resourceType affectée à un type de nœud nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Les types de nœud correspondent au schéma dans le référentiel. Changer de type de nœud peut s’avérer coûteux à terme.
+Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastructure et la plupart des exigences peuvent être satisfaites en utilisant un type de nœud sling:resourceType affecté à un type de nœud nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Les types de nœud correspondent au schéma dans le référentiel. Changer de type de nœud peut s’avérer coûteux à terme.
 
 ### Respect des conventions de nommage dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 
@@ -54,14 +52,14 @@ Le respect des conventions de nommage ajoute de l’homogénéité à votre code
 
 * Noms des nœuds
 
-   * Tout en minuscules
-   * Séparation des mots à l’aide de tirets
+  * Tout en minuscules
+  * Séparation des mots à l’aide de tirets
 
 * Noms des propriétés
 
-   * Camel case, commençant par une lettre minuscule
+  * Camel case, commençant par une lettre minuscule
 
 * Composants (JSP/HTML)
 
-   * Tout en minuscules
-   * Séparation des mots à l’aide de tirets
+  * Tout en minuscules
+  * Séparation des mots à l’aide de tirets

@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '834'
+workflow-type: tm+mt
+source-wordcount: '838'
 ht-degree: 100%
-
 ---
-
 # Configuration des emplacements pour Forms {#configuring-locations-for-forms}
 
 >[!NOTE]
@@ -30,7 +28,7 @@ Vous pouvez spécifier les emplacements URL, URI et fichier des attributs, tels 
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est requise pour les transformations de HTML qui incluent des références HREF à des dépendances externes, telles que des images ou des scripts. xfasubset.js est l’un de ces scripts, nécessaire pour que les formulaires de HTML puissent effectuer des opérations d’intelligence XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
+**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est requise pour les transformations de HTML qui incluent des références HREF à des dépendances externes, telles que des images ou des scripts. xfasubset.js est l’un de ces scripts, nécessaire pour que les formulaires HTML puissent effectuer des opérations d’intelligence XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
 
 >[!NOTE]
 >
