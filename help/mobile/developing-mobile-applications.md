@@ -11,29 +11,27 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '600'
 ht-degree: 1%
-
 ---
-
 # Développement d’applications mobiles dans AEM {#developing-mobile-applications-in-aem}
 
 {{ue-over-mobile}}
 
-AEM utilise les solutions de publication Adobe PhoneGap et Adobe, qui vous permettent de créer et de gérer des applications mobiles multiplateformes riches en contenu et basées sur des utilitaires :
+AEM utilise Adobe PhoneGap et les solutions de publication Adobe, ce qui vous permet de créer et de gérer des applications mobiles multi-plateformes riches en contenu et basées sur des utilitaires :
 
 * Gérez toutes les applications mobiles de votre entreprise en un seul endroit.
 * Examinez les applications dans les environnements de développement et d’évaluation sans la complexité des profils d’approvisionnement et les efforts supplémentaires nécessaires pour créer et charger votre application pour le partage.
 * Utilisez l’environnement de création AEM pour créer et gérer du contenu riche pour vos applications.
 * Utilisez HTML5 avec Adobe PhoneGap pour créer des expériences riches avec des fonctionnalités natives sur les appareils.
-* Introduisez les Webviews HTML 5 dans les applications **natives** nouvelles ou préexistantes via Cordova WebViews.
+* Présentation des Webviews HTML5 aux applications **natives** nouvelles ou préexistantes via les Webviews Cordova.
 * Créez, organisez et partagez du contenu multimédia enrichi sur tous les canaux de diffusion, y compris le web, le web mobile, les applications mobiles et l’impression.
 
-AEM s’intègre au service Adobe PhoneGap Build (`https://build.phonegap.com/`) pour simplifier le processus de création et de déploiement de l’application.
+AEM s’intègre au service de build Adobe PhoneGap (`https://build.phonegap.com/`) pour simplifier le processus de build et de déploiement de l’application.
 
-**Adobe ContentSync** permet aux utilisateurs de télécharger facilement des mises à jour de pages et de contenus par les airs sur leurs appareils sans avoir à réinstaller l&#39;application ou à la télécharger à partir de l&#39;appStore, de Google Play ou d&#39;autres sources d&#39;application.
+**Adobe ContentSync** permet aux utilisateurs de télécharger facilement des mises à jour de page et de contenu par les airs sur leurs appareils sans avoir à réinstaller l’application ou à la télécharger depuis l’appStore, Google Play ou d’autres sources d’application.
 
-**Adobe Analytics** est entièrement intégré aux applications AEM et permet le suivi détaillé de la distribution, de la géolocalisation, des systèmes d’exploitation, des appareils, des flux de clics, du suivi iBeacon et plus encore.
+**&#x200B;**&#x200B;est entièrement intégré aux applications AEM et permet le suivi détaillé de la distribution, de la géolocalisation, des systèmes d’exploitation, des appareils, des flux de clics, du suivi iBeacon, etc.
 
 ## Création d’applications {#creating-apps}
 
@@ -53,7 +51,7 @@ Le fichier Lisez-moi du référentiel Git du Starter Kit comprend un tutoriel ex
 
 ## Développement pour les hôtes IOS 9 et HTTP {#developing-for-ios-and-http-hosts}
 
-Les développeurs IOS doivent être informés qu’un problème lié aux applications Cordova s’exécutant sur iOS 9 est en cours d’exécution. Ce problème empêche les demandes d&#39;être envoyées à des hôtes non sécurisés (comme *http://localhost:4502*). Ce problème sera résolu dans une prochaine version de cordova-ios (utilisée par l’interface de ligne de commande Cordova), mais en attendant, deux solutions de contournement sont disponibles :
+Les développeurs IOS doivent être informés qu’un problème lié aux applications Cordova s’exécutant sur iOS 9 est en cours d’exécution. Ce problème empêche les demandes d&#39;être envoyées à des hôtes non sécurisés (comme **). Ce problème sera résolu dans une prochaine version de cordova-ios (utilisée par l’interface de ligne de commande Cordova), mais en attendant, deux solutions de contournement sont disponibles :
 
 1. Pour pallier ce problème, vous pouvez toujours utiliser n’importe quel simulateur iOS 8 sans problème.
 1. Si vous devez utiliser iOS 9, le fichier apps -Info.plist (qui se trouve après l’exécution de `cordova platform add ios` dans « &lt;app root>/platform/ios/&lt;app name>/&lt;app name>-Info.plist ») peut être modifié manuellement pour inclure la propriété suivante :
