@@ -86,6 +86,6 @@ Dans la mesure du possible, évitez toute référence directe à une version sp�
 
 ### Utilisation de Day, AEM, CQ, CRX
 
-Le produit doit toujours être désigné par son nom complet **** pour la première fois dans un article et peut ensuite être appelé **AEM**.
+Le produit doit toujours être désigné par son nom complet **&#x200B;**&#x200B;pour la première fois dans un article et peut ensuite être appelé **AEM**.
 
 N’utilisez pas Day, Day Software, CQ et CRX sauf si cela est inévitable, comme dans les noms de classe ou en référence à l’historique d’AEM.

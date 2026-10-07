@@ -56,7 +56,7 @@ Le bouton **Suivre** inclut l’option `Email Subscriptions` uniquement lorsqu�
 
 ## Répondre par e-mail {#reply-by-email}
 
-Lorsque l’adresse e-mail est [ configurée pour répondre par e-mail](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un e-mail contenant le contenu publié et un lien vers le contenu en ligne.
+Lorsque l’adresse e-mail est [&#x200B; configurée pour répondre par e-mail](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un e-mail contenant le contenu publié et un lien vers le contenu en ligne.
 
 S’ils répondent à l’e-mail, le contenu qu’ils saisissent dans la réponse s’affiche en tant que contenu en ligne.
 
