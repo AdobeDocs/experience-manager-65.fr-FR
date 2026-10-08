@@ -113,7 +113,7 @@ La connaissance des produits englobe les concepts et les sujets issus de la docu
 | Apprentissage par points | <ul><li>Qu’est-ce que l’éditeur universel ?</li><li>Comment créer un programme dans Cloud Manager ?</li></ul> |
 | Découverte ouverte | <ul><li>Comment utiliser l’éditeur universel ?</li><li>Existe-t-il un moyen de copier du contenu d’un environnement à un autre ?</li></ul> |
 | Résolution des problèmes | <ul><li>Pourquoi ne puis-je pas accéder à l’éditeur universel ?</li><li>Pourquoi mon pipeline échoue-t-il ?</li></ul> |
-| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs et administratrices **<br>**Exemples** |
+| **Création de ticket d’assistance** | **Disponible uniquement pour les administrateurs et administratrices &#x200B;**<br>**Exemples** |
 | Création automatisée de tickets d’assistance capturant l’historique et le contexte de la conversation de l’assistant IA | <ul><li>Créez un ticket d’assistance pour moi.</li></ul> |
 | Récupération du statut du ticket d’assistance | <ul><li>Montre-moi tous les tickets d’assistance que j’ai ouverts.</li><li>Montre-moi le statut du ticket « E----------- ».</li></ul> |
 
