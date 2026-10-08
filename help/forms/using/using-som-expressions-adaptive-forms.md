@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '354'
 ht-degree: 100%
-
 ---
-
 # Utiliser des expressions SOM dans des formulaires adaptatifs{#using-som-expressions-in-adaptive-forms}
 
 Les formulaires adaptatifs sont modélisés comme des pages AEM, représentées par des structures de contenu JCR dans le référentiel AEM. L’élément clé de la structure de contenu est le nœud guideContainer. Sous guideContainer, il existe un rootPanel qui peut contenir un panneau et des champs imbriqués.

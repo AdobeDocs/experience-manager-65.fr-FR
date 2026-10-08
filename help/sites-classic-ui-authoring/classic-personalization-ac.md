@@ -1,21 +1,21 @@
 ---
 title: Utiliser Adobe Campaign
 description: Adobe Campaign est un ensemble de solutions qui vous permet de personnaliser et de diffuser des campagnes sur l’ensemble de vos canaux en ligne et hors ligne.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
-workflow-type: ht
-source-wordcount: '126'
+workflow-type: tm+mt
+source-wordcount: '128'
 ht-degree: 100%
-
 ---
-
 # Utiliser Adobe Campaign{#working-with-adobe-campaign}
 
 Adobe Campaign est un ensemble de solutions qui vous permet de personnaliser et de diffuser des campagnes sur l’ensemble de vos canaux en ligne et hors ligne.

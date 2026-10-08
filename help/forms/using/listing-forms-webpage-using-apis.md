@@ -10,14 +10,12 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 100%
-
 ---
-
 # Afficher une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points d’entrée de rendu.
+AEM Forms fournit une API de recherche basée sur REST que les équipes de développement web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points d’entrée de rendu.
 
 Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’adresse `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
@@ -37,11 +35,11 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du nœud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête. Plusieurs chemins distincts avec une barre verticale (|).  </p> </td>
+   <td><p>Spécifie le chemin d’accès à l’application pour rechercher des formulaires. Par défaut, l’attribut appPath recherche toutes les applications disponibles au niveau du nœud racine.<br /> </p> <p>Vous pouvez spécifier plusieurs chemins d’application dans une seule requête. Plusieurs chemins distincts avec une barre verticale (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
+   <td><p>Indique les propriétés à récupérer avec les ressources. Vous pouvez utiliser l’astérisque (*) pour récupérer toutes les propriétés simultanément. Utilisez la barre verticale (|) pour indiquer plusieurs propriétés. </p> <p>Par exemple : <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Remarque</strong> : </p>
     <ul>
      <li><em>Les propriétés telles que l’ID, le chemin et le nom sont toujours récupérées. </em></li>
      <li><em>Chaque ressource possède un ensemble de propriétés différent. Les propriétés telles que formUrl, pdfUrl et guideUrl ne dépendent pas de l’attribut cutPoints. Elles dépendent du type de ressource et sont récupérées en conséquence. </em></li>
@@ -70,7 +68,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>statements</td>
-   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Indique la liste d’instructions. Les requêtes sont des exécutions sur la liste des instructions spécifiées au format JSON. </p> <p>Par exemple :</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");

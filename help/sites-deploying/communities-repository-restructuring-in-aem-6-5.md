@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
-
+source-wordcount: '1034'
+ht-degree: 94%
 ---
-
 # Restructuration des référentiels pour AEM Communities dans la version 6.5 {#repository-restructuring-for-aem-communities-in}
 
 Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Communities. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers une version future.
@@ -127,7 +125,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     <ol>
      <li>Créez un compartiment contextuel de site à l’aide de la variable <strong>Explorateur de configuration</strong> dans <strong>Outils</strong>.</li>
      <li>Accédez à la racine du site.</li>
-     <li>Définissez <code>cq:confproperty</code> sur le chemin du compartiment où vous souhaitez stocker tous vos paramètres. Le même résultat peut être obtenu par le biais de l’<strong>assistant de modification - Définir l’entrée de configuration du cloud</strong>.</li>
+     <li>Définissez <code>cq:confproperty</code> sur le chemin du compartiment où vous souhaitez stocker tous vos paramètres. Le même résultat peut être obtenu par le biais de l’<strong>assistant de modification - Définir l’entrée de configuration du cloud</strong> du site.</li>
      <li>Déplacez les règles de badge et de score appropriées depuis <code>/etc/community/*</code> vers le compartiment contextuel de site créé à l’étape précédente.</li>
      <li>Ajustez les propriétés des règles de badge et de score à la racine du site pour avoir des références relatives aux nouveaux emplacements de règles.
       <ol>
@@ -185,7 +183,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
-       <li>Recréez manuellement de nouvelles configurations de connexion sociale à Facebook via l’interface utilisateur de création d’AEM en suivant le chemin <strong>Outils &gt; Cloud Services &gt; Configurations des connexions au réseau social Facebook</strong>.<br /> ou <br /> </li>
+       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Facebook via l’interface utilisateur de création d’AEM sous <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Facebook</strong>.<br /> ou <br /> </li>
        <li>Copiez toute nouvelle configuration de cloud Facebook depuis l’emplacement précédent dans le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Mettez à jour n’importe quelle racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Facebook en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>
@@ -241,7 +239,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
-       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Pinterest via l’interface utilisateur de création AEM dans <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Pinterest</strong>.<br /> ou</li>
+       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Pinterest via l’interface utilisateur de création d’AEM sous <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Pinterest</strong>.<br /> ou</li>
        <li>Copiez toute nouvelle configuration de cloud Pinterest depuis l’emplacement précédent vers le nouvel emplacement approprié sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion du réseau social Pinterest en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>

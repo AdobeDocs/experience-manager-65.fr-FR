@@ -1,22 +1,25 @@
 ---
 title: Transmission de documents au service Forms
+
 description: Transmettez au service Forms un objet com.adobe.idp.Document contenant la conception du formulaire. Le service Forms effectue le rendu de la conception de formulaire située dans l’objet com.adobe.idp.Document.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1689'
 ht-degree: 100%
-
 ---
-
 # Transmettre des documents au service Forms {#passing-documents-to-the-formsservice}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -59,7 +62,7 @@ Pour effectuer le rendu d’un formulaire interactif, transmettez l’instance `
 
 >[!NOTE]
 >
->Vous pouvez transmettre au service Forms un `com.adobe.idp.Document` qui contient la conception du formulaire. Deux nouvelles méthodes appelées `renderPDFForm2` et `renderHTMLForm2` acceptent un objet `com.adobe.idp.Document` qui contient une conception de formulaire.
+>Vous pouvez transmettre au service Forms un `com.adobe.idp.Document` qui contient la conception du formulaire. Deux nouvelles méthodes nommées `renderPDFForm2` et `renderHTMLForm2` acceptent un objet `com.adobe.idp.Document` contenant une conception de formulaire.
 
 **Exécuter une action avec le flux de données du formulaire**
 
@@ -85,7 +88,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
-   * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
+   * Créez un objet `DocumentManagementServiceClientImpl` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 
 1. Récupérer la conception du formulaire à partir de Content Services (obsolète)
 
@@ -102,8 +105,8 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `com.adobe.idp.Document` contenant la conception du formulaire récupéré à partir de Content Services (obsolète).
-   * Un objet `com.adobe.idp.Document` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
-   * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
+   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
@@ -117,7 +120,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream`. Transmettez le tableau d’octets comme argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur Web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de lʼobjet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -137,7 +140,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    Utilisez la définition WSDL suivante pour la référence de service associée au service Document Management : `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Étant donné que le type de données `BLOB` est commun aux deux références de service, il qualifie entièrement le type de données `BLOB` lors de son utilisation. Dans le démarrage rapide du service web correspondant, toutes les instances `BLOB` sont entièrement qualifiées.
+   Puisque le type de données `BLOB` est commun aux deux références de service, qualifiez pleinement le type de données `BLOB` lors de son utilisation. Dans le démarrage rapide du service web correspondant, toutes les instances `BLOB` sont entièrement qualifiées.
 
    >[!NOTE]
    >
@@ -151,9 +154,9 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM forms au champ `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur de mot de passe correspondante au champ `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Attribuez le nom d’utilisateur AEM forms au champ `FormsServiceClient.ClientCredentials.UserName.UserName`.
+     * Attribuez la valeur de mot de passe correspondante au champ `FormsServiceClient.ClientCredentials.UserName.Password`.
+     * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -178,12 +181,12 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` contenant la conception du formulaire récupéré à partir de Content Services (obsolète).
-   * Un objet `BLOB` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `BLOB`.
-   * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `BLOB`.
+   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `Map` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un paramètre de sortie long qui est utilisé pour stocker le nombre de pages.
-   * Un paramètre de sortie de chaîne qui est utilisé pour stocker la valeur du paramètre régional.
+   * Un paramètre de sortie de chaîne qui est utilisé pour stocker la valeur des paramètres régionaux.
    * Un paramètre de sortie `FormsResult` qui est utilisé pour stocker le formulaire PDF interactif `.`.
 
    La méthode `renderPDFForm2` renvoie un objet `FormsResult` qui contient le formulaire PDF interactif.

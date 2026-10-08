@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 100%
-
+source-wordcount: '1585'
+ht-degree: 82%
 ---
-
 # Modèles de page - Statiques{#page-templates-static}
 
 Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée. Un modèle est une hiérarchie de nœuds ayant la même structure que la page à créer, mais sans contenu réel.
@@ -32,7 +30,7 @@ Chaque modèle vous présente une sélection de composants disponibles pour util
 
 ## Propriétés et nœuds enfants d’un modèle {#properties-and-child-nodes-of-a-template}
 
-Un modèle est un nœud de type cq:Template et possède les propriétés et les nœuds enfants suivants :
+Un modèle est un nœud de type cq:Template et possède les propriétés suivantes ainsi que des nœuds enfants :
 
 <table>
  <tbody>
@@ -103,7 +101,7 @@ Un modèle sert de fondement pour une page.
 
 Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/template/<mytemplate>`) vers la position correspondante dans l’arborescence : c’est ce qui se passe si une page est créée en utilisant l’onglet **Sites web**.
 
-Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
+Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling:resourceType, le chemin d’accès au composant de page utilisé pour effectuer le rendu de la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
 ## Structure des modèles {#how-templates-are-structured}
 
@@ -120,10 +118,10 @@ Un modèle est créé sous un nœud de type **cq:Template**.
 
 Différentes propriétés peuvent être définies, notamment :
 
-* **jcr:title** : titre du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
-* **jcr:description** : description du modèle ; apparaît dans la boîte de dialogue lors de la création d’une page.
+* **jcr:title** - Titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
+* **jcr:description** - Description du modèle. Elle s’affiche dans la boîte de dialogue lors de la création d’une page.
 
-Ce nœud contient un nœud jcr:content (cq:PageContent) qui est utilisé comme base pour le nœud de contenu des pages obtenues ; cela fait référence, en utilisant sling:resourceType, au composant à utiliser pour restituer le contenu réel d’une nouvelle page.
+Ce nœud contient un nœud jcr:content (cq:PageContent) qui sert de base au nœud de contenu des pages créées. Il fait référence, à l’aide de sling:resourceType, au composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -135,7 +133,7 @@ Ce composant est utilisé pour définir la structure et la conception du contenu
 
 Les modèles servent à créer des pages de type `cq:Page` (comme mentionné précédemment, une page est un type spécial de composant). Chaque page AEM possède un nœud structuré `jcr:content`. Celui-ci :
 
-* est de type cq:PageContent ;
+* est de type cq:PageContent
 * est un type de nœud structuré contenant une définition de contenu définie ;
 * possède une propriété `sling:resourceType` pour référencer le composant contenant les scripts sling utilisés pour le rendu du contenu.
 
@@ -159,14 +157,14 @@ Pour voir une liste de tous les modèles du référentiel, procédez comme suit�
 1. Dans l’onglet Requête
 1. Comme **Type**, sélectionnez **XPath**.
 
-1. Dans le champ de saisie **Requête**, entrez la chaîne suivante :
+1. Dans la zone de saisie **Requête**, entrez la chaîne suivante :
 //element(&#42;, cq:Template)
 
 1. Cliquez sur **Exécuter**. La liste s’affiche dans la zone de résultat.
 
 Dans la plupart des cas, c’est à partir d’un modèle existant que vous élaborez un nouveau modèle pour votre usage personnel. Pour plus d’informations, voir [Développer des modèles de page](#developing-page-templates).
 
-Afin d’activer un modèle existant pour votre site web et de l’afficher dans la boîte de dialogue **Créer une page** lors de la création d’une page directement sous **Sites web** à partir de la console **Sites web**, définissez la propriété allowedPaths du nœud de modèle sur : **/content(/.&#42;)?**
+Pour activer un modèle existant pour votre site web et l’afficher dans la boîte de dialogue **Créer une page** lors de la création d’une page directement sous **Sites web** à partir de la console **Sites web**, définissez la propriété allowedPaths du nœud de modèle sur : **/content(/.&#42;)?**
 
 ## Application de conceptions de modèle {#how-template-designs-are-applied}
 
@@ -182,7 +180,7 @@ Si les conceptions ne sont appliquées qu’en mode de conception, les sections 
 
 ### Résolution du chemin de conception {#design-path-resolution}
 
-Lors du rendu du contenu à partir d’un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents pour le contenu, en parcourant la hiérarchie du contenu.
+Lors du rendu du contenu à partir d’un modèle statique, AEM tentera d’appliquer la conception et les styles les plus pertinents pour le contenu, sur la base de la traversée de la hiérarchie du contenu.
 
 AEM détermine le style le plus pertinent pour un nœud de contenu dans l’ordre suivant :
 
@@ -265,11 +263,11 @@ Le tableau suivant décrit comment AEM choisit une conception.
 
 ## Développer des modèles de page {#developing-page-templates}
 
-Les modèles de pages AEM sont simplement des modèles utilisés pour créer des pages. Ils peuvent contenir aussi peu ou autant de contenu initial que nécessaire, leur rôle étant de créer les structures de nœuds initiales correctes, avec les propriétés requises (principalement sling:resourceType) définies pour permettre l’édition et le rendu.
+Les modèles de pages AEM sont simplement des modèles utilisés pour créer des pages. Ils peuvent contenir autant ou moins de contenu initial que nécessaire. Leur rôle est de créer les structures de nœud initiales appropriées, avec les propriétés requises (principalement sling:resourceType) définies pour permettre la modification et le rendu.
 
 ### Créer un modèle (basé sur un modèle existant) {#creating-a-new-template-based-on-an-existing-template}
 
-Un nouveau modèle peut être entièrement créé de toutes pièces, mais en pratique, un modèle existant est copié et modifié pour faire gagner du temps. Par exemple, les modèles de Geometrixx peuvent être utilisés pour vous aider à démarrer.
+Un nouveau modèle peut être entièrement créé de toutes pièces, mais en pratique, un modèle existant est copié et mis à jour pour vous permettre de gagner du temps. Par exemple, les modèles de Geometrixx peuvent être utilisés pour vous aider à démarrer.
 
 Pour créer un modèle basé sur un modèle existant :
 
@@ -281,7 +279,7 @@ Pour créer un modèle basé sur un modèle existant :
    >
    >La liste des modèles disponibles dépend de l’emplacement de la nouvelle page et des restrictions de positionnement spécifiées dans chaque modèle. Voir [Disponibilité du modèle](#templateavailibility).
 
-1. Changez le **jcr:title** du nouveau nœud de modèle de manière à refléter son nouveau rôle. Vous pouvez également mettre à jour **jcr:description** si nécessaire. Assurez-vous de modifier la disponibilité du modèle de la page, le cas échéant.
+1. Modifiez le **jcr:title** du nouveau nœud de modèle pour refléter son nouveau rôle. Vous pouvez également mettre à jour le **jcr:description** si nécessaire. Assurez-vous de modifier la disponibilité du modèle de la page, le cas échéant.
 
    >[!NOTE]
    >
@@ -289,13 +287,13 @@ Pour créer un modèle basé sur un modèle existant :
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Copiez le composant sur lequel est basé le modèle (cela est indiqué par la propriété **sling:resourceType** du nœud **jcr:content** dans le modèle) pour créer une instance.
+1. Copiez le composant sur lequel le modèle est basé (cela est indiqué par la propriété **sling:resourceType** du nœud **jcr:content** dans le modèle) pour créer une instance .
 
    Les composants sont stockés dans **/apps/&lt;website-name>/components/&lt;component-name>**.
 
-1. Mettez à jour les propriétés **jcr:title** et **jcr:description** du nouveau composant.
+1. Mettez à jour les **jcr:title** et **jcr:description** du nouveau composant.
 1. Remplacez le fichier thumbnail.png si vous souhaitez qu’une nouvelle image miniature soit affichée dans la liste de sélection du modèle (taille 128x98 px).
-1. Mettez à jour la propriété **sling:resourceType** du nœud **jcr:content** du modèle pour référencer le nouveau composant.
+1. Mettez à jour le **sling:resourceType** du nœud **jcr:content** du modèle pour référencer le nouveau composant.
 1. Apportez des modifications supplémentaires à la fonctionnalité ou à la conception du modèle, ou à son composant sous-jacent, ou aux deux.
 
    >[!NOTE]

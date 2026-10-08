@@ -1,6 +1,6 @@
 ---
 title: Configurer Microsoft Dynamics 365 pour le workflow de prêt immobilier du site de référence We.Finance
-description: Découvrez comment utiliser les services Microsoft® Dynamics 365 via des formulaires adaptatifs pour le workflow de crédit immobilier du site de référence We.Finance.
+description: Découvrez comment utiliser les services Microsoft&reg ; Dynamics 365 par le biais de formulaires adaptatifs pour le workflow de prêt immobilier du site de référence We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 100%
-
+source-wordcount: '415'
+ht-degree: 94%
 ---
-
 # Configurer Microsoft Dynamics 365 pour le workflow de prêt immobilier du site de référence We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Découvrez comment utiliser les services Microsoft® Dynamics 365 via des formulaires adaptatifs pour le workflow de crédit immobilier du site de référence We.Finance.

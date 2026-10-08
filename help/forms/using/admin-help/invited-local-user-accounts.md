@@ -1,21 +1,23 @@
 ---
 title: Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux
+
 description: Grâce à Document Security, vous pouvez rechercher, afficher, modifier, verrouiller, déverrouiller et supprimer des comptes d’utilisateurs invités et locaux.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1208'
+workflow-type: tm+mt
+source-wordcount: '1211'
 ht-degree: 100%
-
 ---
-
 # Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -132,6 +134,6 @@ Vous pouvez trouver des personnes plus facilement en triant la liste des utilisa
 * Un triangle pointant vers le haut indique un ordre croissant.
 * Un triangle pointant vers le bas indique un ordre décroissant.
 
-   1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux.
-   1. Pour trier les personnes invitées, cliquez sur l’onglet Utilisateurs invités et cliquez sur l’en-tête de colonne approprié.
-   1. Pour trier les personnes locales, cliquez sur l’onglet Utilisateurs locaux et cliquez sur l’en-tête de colonne approprié.
+  1. Dans la console d’administration, cliquez sur Services > Document Security > Utilisateurs invités et locaux.
+  1. Pour trier les personnes invitées, cliquez sur l’onglet Utilisateurs invités et cliquez sur l’en-tête de colonne approprié.
+  1. Pour trier les personnes locales, cliquez sur l’onglet Utilisateurs locaux et cliquez sur l’en-tête de colonne approprié.

@@ -7,11 +7,9 @@ exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
-
+source-wordcount: '697'
+ht-degree: 96%
 ---
-
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de contenu avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir du contenu structuré à utiliser dans vos applications, en mode découplé. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
@@ -27,7 +25,7 @@ Avec Adobe Experience Manager (AEM), vous pouvez utiliser des fragments de con
 >GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) :
 >
 >* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce/cif/integrating/magento.md).
->* [AEM Content Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir un contenu structuré à utiliser dans vos applications](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+>* [Les fragments de contenu AEM fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir un contenu structuré à utiliser dans vos applications](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 ## CMS découplé {#headless-cms}
 
@@ -39,7 +37,7 @@ Un système de gestion de contenu (CMS) découplé est :
 
 En termes de création de fragments de contenu dans AEM, cela signifie que :
 
-* Vous pouvez utiliser des fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
+* Vous pouvez utiliser les fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
 
 * Le contenu de vos fragments de contenu sera structuré d’une manière prédéterminée, selon les modèles de fragments de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
 
@@ -99,7 +97,7 @@ La **[référence à un fragment](/help/assets/content-fragments/content-fragmen
 
 * Permet de récupérer des données structurées.
 
-   * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
+  * Lorsqu’elle est définie comme **référence à sources multiples**, plusieurs sous-fragments peuvent être référencés (récupérés) par le fragment principal.
 
 ### Prévisualisation JSON {#json-preview}
 

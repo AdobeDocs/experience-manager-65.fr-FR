@@ -9,14 +9,13 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1848'
 ht-degree: 100%
-
 ---
-
 # Rendre des formulaires par valeur {#rendering-forms-by-value}
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
@@ -107,7 +106,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
    Incluez les fichiers clients JAR, tels qu’adobe-forms-client.jar, dans votre chemin de classe de projet Java.
 
-1. Créer un objet API Forms client
+1. Créer un objet API client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
@@ -115,7 +114,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 1. Référencer la conception de formulaire
 
    * Créez un `java.io.FileInputStream` représentant la conception de formulaire à rendre en utilisant son constructeur et en transmettant une valeur de chaîne spécifiant l’emplacement du fichier XDP.
-   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
+   * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`.
 
 1. Rendre un formulaire par valeur
 
@@ -123,9 +122,9 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
 
    * Une valeur de chaîne vide. (Normalement, ce paramètre nécessite une valeur de chaîne qui indique le nom de la conception de formulaire.)
    * Un objet `com.adobe.idp.Document` contenant la conception de formulaire. Normalement, cette valeur de paramètre est réservée aux données fusionnées avec le formulaire.
-   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
-   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
+   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire pouvant être écrit dans le navigateur web client.
 
@@ -138,7 +137,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (Java) :
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et affectez la taille de l’objet `InputStream`. Appelez la méthode `available` de l’objet `InputStream` pour obtenir la taille de l’objet `InputStream`.
    * Renseignez le tableau d’octets avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -157,7 +156,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
 1. Inclure les fichiers du projet
 
    * Créez des classes proxy Java qui utilisent le service WSDL de Forms.
-   * Incluez les classes proxy Java dans le chemin d’accès de classe.
+   * Incluez les classes proxy Java dans votre classpath.
 
 1. Créer un objet API Forms client
 
@@ -177,13 +176,13 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
 
    * Une valeur de chaîne vide. (Normalement, ce paramètre nécessite une valeur de chaîne qui indique le nom de la conception de formulaire.)
    * Un objet `BLOB` contenant la conception de formulaire. Normalement, cette valeur de paramètre est réservée aux données fusionnées avec le formulaire.
-   * Un objet `PDFFormRenderSpec` stockant les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
-   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
+   * Un objet `PDFFormRenderSpec` prévu pour stocker les options d’exécution. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
+   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
+   * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Il permet de stocker le formulaire PDF rendu.
-   * Objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument stocke le nombre de pages dans le formulaire.)
+   * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument stocke le nombre de pages dans le formulaire.)
    * Objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument stocke la valeur des paramètres régionaux.)
-   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
+   * Objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contient les résultats de cette opération.
 
    La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
@@ -195,7 +194,7 @@ Rendre un formulaire par valeur à l’aide de l’API Forms (service web) :
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire vers le navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

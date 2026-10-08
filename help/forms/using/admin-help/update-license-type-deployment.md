@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '282'
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
-
 ---
-
 # Mise à jour du type de licence pour le déploiement {#update-the-license-type-for-the-deployment}
 
 >[!NOTE]

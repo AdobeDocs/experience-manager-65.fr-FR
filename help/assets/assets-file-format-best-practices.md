@@ -8,11 +8,9 @@ exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 100%
-
+source-wordcount: '481'
+ht-degree: 97%
 ---
-
 # Bonnes pratiques relatives aux formats de fichier des ressources {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques Adobe prises en charge comprennent [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer et [!DNL Adobe InDesign Server]. En outre, [!DNL Experience Manager Assets] prend en charge les bibliothèques tierces, y compris [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.

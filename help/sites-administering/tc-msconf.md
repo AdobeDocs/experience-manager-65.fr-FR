@@ -6,12 +6,10 @@ role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
-workflow-type: ht
-source-wordcount: '258'
+workflow-type: tm+mt
+source-wordcount: '270'
 ht-degree: 100%
-
 ---
-
 # Connexion à Microsoft Translator {#connecting-to-microsoft-translator}
 
 AEM fournit un connecteur intégré pour [Microsoft Translator](https://www.microsoft.com/fr-fr/translator/business/) afin de traduire le contenu des pages ou des ressources. Après obtention d’une licence Microsoft pour utiliser Microsoft Translator, configurez le connecteur en suivant les instructions de cette page.
