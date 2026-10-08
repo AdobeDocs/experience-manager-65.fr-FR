@@ -32,7 +32,7 @@ Bien qu’AEM Forms ne stocke pas les données de l’utilisateur final par déf
 
 Pour sécuriser la connexion entre le navigateur et AEM, activez HTTPS sur l’instance AEM. Pour connaître les étapes, voir [SSL/TLS par défaut](/help/sites-administering/ssl-by-default.md).
 
-En outre, assurez-vous que les points d’entrée auxquels AEM Forms envoie des données, tels que les configurations cloud, les URL d’action d’envoi et les sources de données du modèle de données de formulaire, utilisent des points d’entrée HTTPS sécurisés. Comme AEM Forms ne stocke pas les données qu’il transmet, le chiffrement au repos ne s’applique pas à ces données. Pour plus d’informations sur la sécurisation de la connexion, voir [ Couche de transport sécurisée ](/help/forms/using/hardening-securing-aem-forms-environment.md#secure-transport-layer).
+En outre, assurez-vous que les points d’entrée auxquels AEM Forms envoie des données, tels que les configurations cloud, les URL d’action d’envoi et les sources de données du modèle de données de formulaire, utilisent des points d’entrée HTTPS sécurisés. Comme AEM Forms ne stocke pas les données qu’il transmet, le chiffrement au repos ne s’applique pas à ces données. Pour plus d’informations sur la sécurisation de la connexion, voir [&#x200B; Couche de transport sécurisée &#x200B;](/help/forms/using/hardening-securing-aem-forms-environment.md#secure-transport-layer).
 
 ## Modèle de données de formulaire pour les magasins de données externes {#form-data-model}
 
@@ -58,7 +58,7 @@ Le code personnalisé peut écrire des données dans les journaux. Si vous ajout
 
 ## Questions fréquentes sur la conservation des données dans AEM Forms {#faq}
 
-AEM Forms stocke-t-il les données de formulaire ?****
+AEM Forms stocke-t-il les données de formulaire ?**&#x200B;**
 
 Non. Par défaut, Adobe Experience Manager (AEM) Forms agit comme un serveur intermédiaire pour les données capturées par le biais d’Adaptive Forms et ne stocke pas les données de l’utilisateur final dans le référentiel AEM. Le serveur transmet les données envoyées à la destination que vous possédez et configurez, telle qu’une source de données de modèle de données de formulaire, une cible d’action d’envoi ou une API externe. Ce comportement par défaut s’applique à la fois à AEM Forms sur OSGi et à AEM Forms sur JEE.
 
@@ -70,7 +70,7 @@ Les données de formulaire adaptatif envoyées sont stockées dans la destinatio
 
 Les processus de workflow de longue durée dans Adobe Experience Manager (AEM) Forms peuvent enregistrer temporairement les données dans le cadre de la payload du workflow, stockée dans les métadonnées de l’instance de workflow dans le référentiel AEM. Pour conserver ces données dans un référentiel que vous possédez et gérez, tel que le stockage Blob d’Azure, plutôt que sur AEM, utilisez la [fonctionnalité d’externalisation des données d’AEM pour les variables de workflow](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
-AEM Forms écrit-il des données dans les journaux ?****
+AEM Forms écrit-il des données dans les journaux ?**&#x200B;**
 
 Non. Grâce aux fonctionnalités par défaut, Adobe Experience Manager (AEM) Forms n’écrit pas les données de l’utilisateur final dans les journaux. AEM étant une plateforme personnalisable, le code personnalisé peut écrire des données dans les journaux. Si vous ajoutez le suivi ou la journalisation pendant le développement, supprimez ces traces et toutes les données enregistrées avant le déploiement dans les environnements d’évaluation et de production. Une personnalisation ne doit pas stocker de données dans le référentiel ou les journaux AEM.
 
