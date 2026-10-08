@@ -62,7 +62,7 @@ Il est directement incorporé à AEM et accessible à partir de l’interface d�
 
 La vidéo de 3 minutes et 25 secondes qui suit fait une présentation détaillée de l’assistant IA d’AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475360/?captions=fre_fr&learn=on&enablevpops)
 
 ## Accéder à l’assistant IA dans AEM{#get-access}
 
