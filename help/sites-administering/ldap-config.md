@@ -292,12 +292,12 @@ Pour activer la journalisation du débogage, procédez comme suit :
 
 * Niveau de journal : débogage
 * Fichier journal logs/ldap.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Niveau de journal : débogage
 * Fichier journal : logs/external.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &ast;{4}&ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Une remarque sur l’appartenance à un groupe {#a-word-on-group-affiliation}

@@ -75,10 +75,10 @@ La partie modèle d’une règle est utilisée pour faire correspondre les noms 
 | Préfixe | Effet |
 |---|---|
 | / | Indique un chemin JCR. Par conséquent, ce préfixe correspond aux fichiers situés dans le répertoire jcr_root. |
-| &amp;ast; | Indique un fichier ordinaire sur le système de fichiers. |
+| &ast; | Indique un fichier ordinaire sur le système de fichiers. |
 | aucune | L’absence de préfixe, ou un motif commençant par un nom de dossier ou de fichier, indique un fichier ordinaire sur le système de fichiers. |
 
-Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répertoire et le caractère &amp;ast; correspond à tous les éléments. Le tableau suivant répertorie plusieurs exemples de règles.
+Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répertoire et le caractère &ast; correspond à tous les éléments. Le tableau suivant répertorie plusieurs exemples de règles.
 
 <table>
  <tbody>
