@@ -9,13 +9,25 @@ exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
-
+source-wordcount: '1657'
+ht-degree: 98%
 ---
-
 # Configurer LDAP avec AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de faciliter la gestion des comptes d’utilisateurs et d’utilisatrices, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
@@ -30,7 +42,7 @@ L’utilisation de tels comptes est transparente pour vos utilisateurs et utilis
 
 Dans AEM 6, la prise en charge de LDAP s’accompagne d’une nouvelle implémentation qui nécessite un type de configuration différent de celui des versions précédentes.
 
-Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Elles peuvent être configurées via la console de gestion web à l’adresse suivante :
+Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Ils peuvent être configurés via la console de gestion web à l’adresse suivante :
 `https://serveraddress:4502/system/console/configMgr`
 
 Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations d’OSGi :
@@ -43,11 +55,11 @@ Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations d’OS
 >
 >Regardez la vidéo [Module de connexion externe Oak - Authentification avec LDAP, et au-delà](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=fr) pour découvrir en détail les modules de connexion externes.
 >
->Pour lire un exemple de configuration d’Experience Manager avec Apache DS, consultez la section [Configuration d’Adobe Experience Manager 6.5 pour l’utilisation d’Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=fr) (en anglais).
+>Pour lire un exemple de configuration d’Experience Manager avec Apache DS, consultez la section [Configuration d’Adobe Experience Manager 6.5 pour l’utilisation d’Apache Directory Service](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805) (en anglais).
 
 ## Configuration du fournisseur d’identités LDAP {#configuring-the-ldap-identity-provider}
 
-Le fournisseur d’identités LDAP est utilisé pour définir la manière dont les utilisateurs sont extraits du serveur LDAP.
+Le fournisseur d’identités LDAP est utilisé pour définir la manière dont les utilisateurs sont récupérés du serveur LDAP.
 
 Il figure dans la console de gestion sous le nom **Fournisseur d’identités LDAP Oak Apache Jackrabbit**.
 
@@ -88,7 +100,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Mot de passe de l’utilisateur pour l’authentification</td>
   </tr>
   <tr>
-   <td><strong>Délai de recherche</strong></td>
+   <td><strong>Délai d’expiration de recherche</strong></td>
    <td>Durée jusqu’à ce que la recherche expire</td>
   </tr>
   <tr>
@@ -177,11 +189,11 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
    <td>Préfixe de chemin d’accès utilisé lors de la création d’utilisateurs et d’utilisatrices.</td>
   </tr>
   <tr>
-   <td><strong>Expiration de l’appartenance de l’utilisateur</strong></td>
-   <td>Heure à partir de laquelle l’appartenance expire.<br /> </td>
+   <td><strong>Expiration de l’abonnement de l’utilisateur</strong></td>
+   <td>Heure à partir de laquelle l’abonnement expire.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Niveau d’imbrication de l’appartenance de l’utilisateur</strong></td>
+   <td><strong>Niveau d’imbrication de l’abonnement de l’utilisateur</strong></td>
    <td>Renvoie la profondeur maximale de l’imbrication de groupes lorsque les relations d’appartenance sont synchronisées. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur n’a aucun effet sur la synchronisation de groupes individuels, mais uniquement sur la synchronisation d’une ascendance d’abonnement d’utilisateurs et d’utilisatrices.</td>
   </tr>
   <tr>
@@ -280,12 +292,12 @@ Pour activer la journalisation du débogage, procédez comme suit :
 
 * Niveau de journal : débogage
 * Fichier journal logs/ldap.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Niveau de journal : débogage
 * Fichier journal : logs/external.log
-* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Modèle de message : {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Une remarque sur l’appartenance à un groupe {#a-word-on-group-affiliation}
