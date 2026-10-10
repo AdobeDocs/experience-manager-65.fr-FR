@@ -9,13 +9,26 @@ exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 100%
-
 ---
-
 # Composant Drafts &amp; Submissions{#drafts-and-submissions-component}
 
 Le composant Drafts &amp; Submissions dresse la liste de tous les formulaires qui sont à l’état de brouillon et des formulaires déjà envoyés. Le composant dispose de sections distinctes (onglets) pour les brouillons et les formulaires envoyés. Les personnes peuvent afficher leurs brouillons et leurs formulaires envoyés uniquement.
@@ -76,7 +89,7 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
   </tr>
   <tr>
    <td> </td>
-   <td>Modèle de disposition</td>
+   <td>Modèle de mise en page</td>
    <td>Spécifie la disposition à utiliser pour la liste Brouillons de formulaires.</td>
   </tr>
   <tr>
